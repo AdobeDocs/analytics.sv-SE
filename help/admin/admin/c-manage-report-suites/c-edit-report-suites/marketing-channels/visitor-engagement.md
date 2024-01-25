@@ -4,10 +4,11 @@ subtopic: Marketing channels
 title: Utgångsdatum för marknadsföringskanal
 feature: Marketing Channels
 exl-id: a9df659b-3b6a-4bdb-bd77-f4490d2b7c79
-source-git-commit: 2eff7656741bdba3d5d7d1f33e9261b59f8e6083
+role: Admin
+source-git-commit: def7d071de1765acf524a638a8f8d13ae69e1a1f
 workflow-type: tm+mt
-source-wordcount: '354'
-ht-degree: 1%
+source-wordcount: '363'
+ht-degree: 0%
 
 ---
 
@@ -53,4 +54,4 @@ Ange besökarens anställningsperiod.
    ![](assets/mchannel_expiration.png)
 
 3. Konfigurera fälten för besökarens interaktionsperiod.
-4. Klicka på **[!UICONTROL Save.]**
+4. Klicka **[!UICONTROL Save.]**

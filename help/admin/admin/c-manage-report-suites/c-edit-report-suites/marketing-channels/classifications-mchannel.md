@@ -3,10 +3,11 @@ title: Klassificeringar i marknadsföringskanaler
 description: Använd klassificeringar för att kategorisera värden i relaterade grupper och för att rapportera på gruppnivå. Du kan till exempel klassificera alla betalsökningskampanjer i en kategori som videokort. Sedan kan du rapportera om resultatet för den kategorin i förhållande till mätvärden som instanser (eller klickningar).
 feature: Marketing Channels
 exl-id: eaae9d60-21f8-42ff-b574-cb1710c68cdf
-source-git-commit: 2eff7656741bdba3d5d7d1f33e9261b59f8e6083
+role: Admin
+source-git-commit: def7d071de1765acf524a638a8f8d13ae69e1a1f
 workflow-type: tm+mt
 source-wordcount: '285'
-ht-degree: 4%
+ht-degree: 1%
 
 ---
 

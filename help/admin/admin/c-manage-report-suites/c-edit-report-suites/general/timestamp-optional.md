@@ -4,10 +4,11 @@ title: Tidsstämplar (valfritt)
 feature: Admin Tools
 uuid: 0fa63658-1cc2-4adc-8d51-a0662d0aa941
 exl-id: 4d64225a-5eb8-4b7b-ba13-3cdc12dd6651
-source-git-commit: a17297af84e1f5e7fe61f886eb3906c462229087
+role: Admin
+source-git-commit: def7d071de1765acf524a638a8f8d13ae69e1a1f
 workflow-type: tm+mt
-source-wordcount: '319'
-ht-degree: 1%
+source-wordcount: '322'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +24,7 @@ Tidsstämplar Valfritt gör att du kan:
 
 >[!WARNING]
 >
->Om du använder Tidsstämplar (valfritt) ska du inte ange [s.visitorID](/help/implement/vars/config-vars/visitorid.md) på data som redan är tidsstämplade. Detta kan leda till inaktuella data och negativt påverka tidsberäkningar (t.ex. tidsåtgång), attribuering (beständighet av eVar), antal besök/besök samt kundvägsrapporter.
+>Om du använder Tidsstämplar (valfritt) ska du inte ange [s.visitorID](/help/implement/vars/config-vars/visitorid.md) på data som redan är tidsstämplade. Detta kan leda till inordnade data och negativt påverka tidsberäkningar (t.ex. tidsåtgång), attribuering (eVarnas beständighet), antal besök/besök och kundvägsrapporter.
 
 >[!NOTE]
 >
@@ -33,7 +34,7 @@ Tidsstämplar Valfritt gör att du kan:
 
 * Om det skapas från en mall används som standard tidsstämplar som valfria i en ny rapportserie.
 
-   (Du kan skapa en ny rapportserie från en mall på **Admin > Report Suite > Create New > Report Suite**.)
+  (Du kan skapa en ny rapportserie från en mall på **Admin > Report Suite > Create New > Report Suite**.)
 * Om du kopierar från en befintlig rapportserie ärver den nya rapportsviten tidsstämpelinställningen från originalet, inklusive:
 
    * **Tidsstämplar tillåts inte** (inställning för s.visitorID stöds)

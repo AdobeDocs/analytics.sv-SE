@@ -3,9 +3,9 @@ description: Visar webbsidans trafik och rangordnar sidvyerna i realtid. Tillhan
 title: Realtidsrapporter
 feature: Real-time
 exl-id: 267246ba-617f-4284-aaad-d0ace0f6a8cf
-source-git-commit: dc9cd6bb45af0c992c37ffe20ea22eab67789ec5
+source-git-commit: def7d071de1765acf524a638a8f8d13ae69e1a1f
 workflow-type: tm+mt
-source-wordcount: '566'
+source-wordcount: '576'
 ht-degree: 0%
 
 ---
@@ -13,6 +13,8 @@ ht-degree: 0%
 # Realtidsrapporter
 
 Visar webbsidans trafik och rangordnar sidvyerna i realtid. Tillhandahåller användbara data som underlag för era affärsbeslut.
+
+
 
 >[!NOTE]
 >
@@ -24,11 +26,11 @@ Här är en videoöversikt:
 
 **[!UICONTROL Site Metrics]** > **[!UICONTROL Real-Time]**
 
-Realtid besvarar följande frågor: Vad är trender på min webbplats och varför? Som marknadsförare kan ni snabbt reagera på och aktivt hantera resultatet av ert marknadsföringsinnehåll och era kampanjer. Realtidsdata som rapporteras är mindre än två minuter latent och automatiska uppdateringar en minut i taget.
+Realtidsfrågor besvarar följande frågor: Vad är trender på min webbplats och varför? Som marknadsförare kan ni snabbt reagera på och aktivt hantera resultatet av ert marknadsföringsinnehåll och era kampanjer. Realtidsdata som rapporteras är mindre än två minuter latent och automatiska uppdateringar en minut i taget.
 
 ![](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/realtime/assets/report-realtime.png)
 
-Kontrollpanelen innehåller Adobe Analytics högfrekventa mätvärden och webbplatsanalyser för att visuellt rapportera trafik- och sidvytrender för dynamiska nyheter och butikswebbplatser. Realtid förstår trender i data från minut till minut, inom sekunder från insamlingen. Den samlar in och strömmar data till ett automatiskt uppdaterat användargränssnitt med hjälp av korrelation i realtid och spårning av innehåll och viss konvertering.
+Kontrollpanelen innehåller Adobe Analytics högfrekventa mätvärden och webbplatsanalyser för att visuellt rapportera trafik- och sidvytrender för dynamiska nyheter och butikswebbplatser. Realtid förstår trender i era data från minut till minut, inom sekunder från insamlingen. Den samlar in och strömmar data till ett automatiskt uppdaterat användargränssnitt med hjälp av korrelation i realtid och spårning av innehåll och viss konvertering.
 
 Två av de vanligaste användningsscenarierna är utgivare som vill marknadsföra/nedgradera artiklar när användaraktiviteten ändras, och marknadsförare som vill spåra lanseringen av en ny produktlinje.
 
@@ -39,10 +41,10 @@ Som administratör kan du
 * Använd en anpassad händelse, varukorshändelse eller instans.
 * Visa upp till två timmars historikdata i realtid och ändra den här inställningen:
 
-   * De senaste 15 minuterna: 1 minut granularitet
-   * De senaste 30 minuterna: 1 minut granularitet
-   * Senaste timmen: 2-minuters granularitet
-   * De senaste två timmarna: 4 minuters granularitet
+   * Senaste 15 minuterna: 1 minut granularitet
+   * Senaste 30 minuterna: 1 minut granularitet
+   * Senaste timmen: 2 minuters granularitet
+   * Senaste 2 timmarna: 4-minuters granularitet
 
 * Jämför till exempel förra veckans värden med förra årets värden (liksom med dagens totala värde).
 

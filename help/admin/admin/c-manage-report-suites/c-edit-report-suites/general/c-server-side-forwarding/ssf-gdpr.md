@@ -1,16 +1,17 @@
 ---
 description: Beskriver förbättringar av vidarebefordran på serversidan som har gjorts av EU:s regler för cookie-kompatibilitet.
-title: GDPR/ePrivacy-efterlevnad och vidarebefordran på serversidan
+title: GDPR/ePrivacy compliance och vidarebefordran på serversidan
 feature: Server-Side Forwarding
 exl-id: 54e43a16-8f15-4ee8-9aa2-579af30be2c9
-source-git-commit: 15f1cd260709c2ab82d56a545494c31ad86d0ab0
+role: Admin
+source-git-commit: def7d071de1765acf524a638a8f8d13ae69e1a1f
 workflow-type: tm+mt
-source-wordcount: '546'
-ht-degree: 2%
+source-wordcount: '549'
+ht-degree: 0%
 
 ---
 
-# GDPR/ePrivacy-efterlevnad och vidarebefordran på serversidan
+# GDPR/ePrivacy compliance och vidarebefordran på serversidan
 
 I det här avsnittet förklaras de förbättringar av vidarebefordran på serversidan som uppmanades av [EU:s regler om överensstämmelse med cookies](https://wikis.ec.europa.eu/display/WEBGUIDE/04.+Cookies+and+similar+technologies), som trädde i kraft den 30 september 2017.
 
@@ -42,7 +43,7 @@ Om du vill konfigurera den här typen av rapportering mappar du den nya kontextv
 1. Använd bearbetningsregler för att mappa kontextvariabeln till säljaren.
 
    1. Gå till  **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]** väljer du sedan en rapportserie.
-   1. Klicka på  **[!UICONTROL Edit Report Suite]** > **[!UICONTROL General]** > **[!UICONTROL Processing Rules]** .
-   1. Klicka på **[!UICONTROL Add Rule.]**
+   1. Klicka  **[!UICONTROL Edit Report Suite]** > **[!UICONTROL General]** > **[!UICONTROL Processing Rules]** .
+   1. Klicka **[!UICONTROL Add Rule.]**
    1. Under **[!UICONTROL Always Execute]** skriver du över värdet för det uttryck du aktiverat med kontextvariabeln &quot;cm.ssf(Context Data)&quot;.
    1. Klicka på **[!UICONTROL Save]**.

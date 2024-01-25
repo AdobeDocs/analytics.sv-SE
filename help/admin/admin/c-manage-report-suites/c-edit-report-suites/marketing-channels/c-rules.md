@@ -3,10 +3,11 @@ title: Bearbetningsregler för marknadsföringskanaler
 description: Bearbetningsreglerna för marknadsföringskanaler avgör om en besökarträff uppfyller kriterierna som tilldelats en kanal. Reglerna bearbetar varje träff en besökare gör på er webbplats. När en regel inte uppfyller villkoren för en kanal, eller om reglerna inte är korrekt konfigurerade, tilldelar systemet träffen Ingen kanal identifierad.
 feature: Marketing Channels
 exl-id: 825f70a5-cce3-4b1c-bb42-828388348216
-source-git-commit: 2eff7656741bdba3d5d7d1f33e9261b59f8e6083
+role: Admin
+source-git-commit: def7d071de1765acf524a638a8f8d13ae69e1a1f
 workflow-type: tm+mt
-source-wordcount: '1827'
-ht-degree: 1%
+source-wordcount: '1822'
+ht-degree: 0%
 
 ---
 
@@ -37,7 +38,7 @@ Ytterligare information om bearbetning:
 Skapa regler för bearbetning av marknadsföringskanaler, som avgör om en besökarträff uppfyller kriterierna som tilldelats en kanal.
 
 1. Klicka på **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]**.
-2. Välja en rapportsvit.
+2. Välj en rapportsvit.
 
    Om din rapportsvit inte har definierade kanaler [!UICONTROL Marketing Channels: Auto Setup] visas.
 
@@ -53,7 +54,7 @@ Skapa regler för bearbetning av marknadsföringskanaler, som avgör om en besö
 
 5. Om du vill fortsätta skapa regler klickar du på **[!UICONTROL Add New Rule SetRule]**.
 6. Om du vill prioritera regler drar och släpper du dem till önskad plats.
-7. Klicka på **[!UICONTROL Save.]**
+7. Klicka **[!UICONTROL Save.]**
 
 ### Ange värdet för marknadsföringskanalen
 
@@ -94,7 +95,7 @@ Den här referenstabellen definierar de fält, alternativ och träffattribut som
 | Refererande parameter | En frågesträngsparameter på referensens URL. Om dina besökare till exempel kommer från `example.com/?page=12345&cat=1`, så är page och cat de refererande parametrarna. |
 | Refererande rotdomän | Referensens rotdomän. Det finns en referent utanför den definierade domänen. |
 | Sökmotor | En sökmotor som Google eller Yahoo! som förde besökare till er webbplats. |
-| Sökord | Ett ord som används för att utföra en sökning med en sökmotor. |
+| Sök nyckelord | Ett ord som används för att utföra en sökning med en sökmotor. |
 | Sökmotor + nyckelord | En sammanfogning av söknyckelordet och sökmotorn för att unikt identifiera sökmotorn. Om du t.ex. söker efter ordet dator identifieras sökmotorn och nyckelordet enligt följande: `Search Tracking Code = "<search_type>:<search engine>:<search keyword>" where    search_type = "n" or "p", search_engine = "Google", and search_keyword = "computer"`**Obs!** n = naturlig; p = betald |
 | Ställ in kanalens värde på | Anger [Information om marknadsföringskanal](/help/components/dimensions/marketing-detail.md) dimension. Du bestämmer vilket värde som är bäst i regelsammanhang. Exempel är banners-ID, söknyckelord eller e-postkampanj. |
 
@@ -108,7 +109,7 @@ Nedan visas den rekommenderade ordningen för kanalregler och exempeldefinitione
 
 Betalsökning är ett ord eller en fras som du betalar en sökmotor för placering i sökresultat. Den här kanalen definieras vanligtvis baserat på frågesträngsparametrar (se Exempel på visningskanal) eller regler för betalsökningsidentifiering.
 
-#### Betald sökdetektering
+#### Påvisande av betald sökning
 
 Marknadskanalen använder inställningar som konfigurerats på [!UICONTROL Paid Search Detection] sida. ( **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]** > **[!UICONTROL Edit Settings]** > **[!UICONTROL General]** > **[!UICONTROL Paid Search Detection]**). Mål-URL:en matchar den befintliga regeln för avkänning av betald sökning för den sökmotorn.
 

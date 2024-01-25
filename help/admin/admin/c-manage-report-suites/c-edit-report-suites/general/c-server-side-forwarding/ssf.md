@@ -4,9 +4,10 @@ solution: Analytics
 title: Översikt över vidarebefordran på serversidan
 feature: Server-Side Forwarding
 exl-id: e3cd72d2-9588-4770-a7c2-64b13a1e9519
-source-git-commit: 15f1cd260709c2ab82d56a545494c31ad86d0ab0
+role: Admin
+source-git-commit: def7d071de1765acf524a638a8f8d13ae69e1a1f
 workflow-type: tm+mt
-source-wordcount: '826'
+source-wordcount: '795'
 ht-degree: 0%
 
 ---
@@ -19,7 +20,7 @@ Vidarebefordran på serversidan förbättrar datainsamlingen eftersom den:
 
 * Minskar samtal från sidan. Med vidarebefordran på serversidan [!DNL Audience Manager] Kunder behöver inte längre använda DIL för datainsamling eftersom den vidarebefordras från Analytics. Att ta bort DIL innebär att eliminera en `"/event"` ring. Färre samtal hjälper till att förbättra sidans laddningstid, vilket ger en bättre kundupplevelse på er webbplats.
 * Gör att du kan utnyttja datadelning mellan Experience Cloud.
-* Följer våra bästa metoder för implementering och driftsättning av kod i Audience Manager.
+* Följer de bästa metoderna för implementering och driftsättning av kod i Audience Manager.
 
 >[!TIP]
 >
@@ -43,18 +44,18 @@ Kontrollera att ett ECID-värde anges på fliken Begäran. Detta anger att ident
 
 Kontrollera om du redan har en version av vidarebefordran på serversidan implementerad av [inspektera Analytics-spårningsbegäran](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/c-server-side-forwarding/ssf-verify.md).
 
-Kontrollera att svaret innehåller Audience Manager data på fliken&quot;Svar&quot;. Om du ser:
+Kontrollera att svaret innehåller data från Audience Manager på fliken&quot;Svar&quot;. Om du ser:
 
 * A **JSON-svar från Audience Manager som innehåller bl.a. &quot;postback&quot; eller &quot;dcs_region&quot;**: någon form av vidarebefordran på serversidan är redan aktiverad. Fortsätt till steg 3.
-* The **&quot;status&quot;:&quot;SUCCESS&quot;**: du har implementerat Audience Management Module, men inte har vidarebefordring på serversidan korrekt konfigurerat. Fortsätt till steg 3.
-* A **2 x 2 bilder**: du inte har vidarebefordring på serversidan eller Audience Management Module implementerad. Så här korrigerar du det:
+* The **&quot;status&quot;:&quot;SUCCESS&quot;**: du har implementerat Audience Management Module, men har inte vidarebefordring på serversidan korrekt konfigurerat. Fortsätt till steg 3.
+* A **2 x 2 bilder**: du har inte vidarebefordring på serversidan eller Audience Management Module implementerad. Så här korrigerar du det:
 
-   * **Adobe Audience Manager-kunder med DIL**: koordinera följande två objekt i nära samverkan:
+   * **Adobe Audience Manager-kunder med DIL**: koordinerar följande två objekt i nära samverkan:
 
-      1. Ta bort DIL-koden och installera [Audience Management Module](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/audience-management-module.html) sidkod.
+      1. Ta bort DIL-koden och installera [Modul för målgruppshantering](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/audience-management-module.html) sidkod.
       1. Aktivera vidarebefordran på serversidan i gränssnittet för Analytics Admin enligt beskrivningen i steg 3. Om du aktiverar den här inställningen innan du tar bort DIL-kod dupliceras data och ytterligare fakturerade serversamtal skapas till Audience Manager.
 
-   * **Nya Adobe Audience Manager-kunder** - installera [Audience Management Module](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/audience-management-module.html) sidkod och fortsätt till steg 3. Data skickas inte till Audience Manager förrän vidarebefordran på serversidan är aktiverat i steg 3.
+   * **Nya Adobe Audience Manager-kunder** - installera [Modul för målgruppshantering](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/audience-management-module.html) sidkod och fortsätt till steg 3. Data skickas inte till Audience Manager förrän vidarebefordran på serversidan är aktiverat i steg 3.
 
 ## ![step3_icon.png image](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/c-server-side-forwarding/assets/step3_icon.png) Verifiera implementering av vidarebefordring på serversidan för rapportsviten
 
@@ -64,8 +65,8 @@ Vidarebefordran på rapportsvitnivå på serversidan rekommenderas framför den 
 
 Gå till **Analyser** > **Administratör** > **Rapportsviter** > (välj **rapportsviter**) > **Redigera inställningar** > **Allmänt** > **Vidarebefordran på serversidan**. Om kryssrutan är:
 
-* **Inaktiv** (Du kan inte göra en markering eller så finns inte menyn): du inte har de valda rapportsviterna mappade till ett organisations-ID. Kontakta kundtjänst för att kontrollera att rapportsviten är korrekt mappad.
-* **Handikappade**: Vidarebefordran på serversidan är inte aktiverad. Läs innehållet på sidan och fortsätt sedan med att aktivera funktionen.
+* **Inaktiv** (Du kan inte göra ett val eller så finns inte menyn): du har inte den valda rapportsviten mappad till ett organisations-ID. Kontakta kundtjänst för att kontrollera att rapportsviten är korrekt mappad.
+* **Handikappade**: Du har inte aktiverat vidarebefordran på serversidan. Läs innehållet på sidan och fortsätt sedan med att aktivera funktionen.
 * **Aktiverad**: Du har etablerats för vidarebefordran på serversidan. Du kan också konfigurera den här integreringen med Audience Analytics.
 
 >[!NOTE]

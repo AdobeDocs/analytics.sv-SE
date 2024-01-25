@@ -1,11 +1,12 @@
 ---
-description: Kalenderalternativ i andra format än den gregorianska modellen. Alternativen är kalendermodellerna 4-4-5, 4-5-4 och 5-4-4, som alla används som standard för detaljhandeln. Dessutom erbjuder rapportering ett alternativ för en helt anpassningsbar kalender som du kan konfigurera själv.
+description: Kalenderalternativ i andra format än den gregorianska modellen. Alternativen är kalendermodellerna 4-4-5, 4-5-4 och 5-4-4, som alla används som standard för detaljhandeln. Rapporteringen innehåller också en helt anpassningsbar kalender som du kan konfigurera själv.
 title: Anpassa kalender
 feature: Admin Tools
 exl-id: 2196c7b7-7183-43a8-bb91-5a1e479819d4
-source-git-commit: 71ff81a0ae67c6f4cc9a8df567e27223cc63f18c
+role: Admin
+source-git-commit: def7d071de1765acf524a638a8f8d13ae69e1a1f
 workflow-type: tm+mt
-source-wordcount: '506'
+source-wordcount: '555'
 ht-degree: 0%
 
 ---
@@ -27,9 +28,9 @@ Du kan använda kalendern för att definiera den första dagen i veckan och åre
 | Kalender | Beskrivning |
 |--- |--- |
 | Gregoriansk kalender | Använder det traditionella kalenderformatet (januari till december, med 30 eller 31 dagar och ett varierande antal veckor i varje månad). |
-| Ändrad gregoriansk kalender | Använder den traditionella gregorianska kalendern men du kan välja den första månaden på året och den första dagen i veckan. |
-| 4-5-4 butikskalender | Varje månad delas upp med antalet veckor i månaden. Betydelse: Januari har fyra veckor och så vidare. National Retail Federation använder kalenderformatet 4-5-4. |
+| Ändrad gregoriansk kalender | Använder den traditionella gregorianska kalendern, men du kan välja den första månaden på året och den första dagen i veckan. |
+| 4-5-4 butikskalender | Varje månad delas upp med antalet veckor i månaden. Betydelse: Januari har fyra veckor och så vidare. The National Retail Federation använder kalenderformatet 4-5-4. |
 | Anpassad kalender | Erbjuder tre format baserat på antalet veckor varje månad. Antalet veckor i varje månad beror på den valda första dagen på året.  Ett år har 52 veckor. Dela upp det i 4 kvartal så får du 13 veckor per kvartal. Men det finns tre månader på en kvart. 13 är inte delbart med tre, så det slutar med att du sätter den extra veckan i en av månaderna så att den alltid är konsekvent.<ul><li>5/4/4 betyder att den första månaden i kvartalet har den extra veckan. 4/5/4 betyder att den andra månaden har den extra veckan osv. I kalendern 5-4-4 läggs den 53:e veckan till på årets sista kvartal.</li><li>4-5-4:Januari har fyra veckor, februari har fem veckor, mars har fyra veckor och så vidare.</li><li>4-4-5: Januari har fyra veckor, februari har fyra veckor, mars har fem veckor och så vidare.</li><li>5-4-4: Januari har fem veckor, februari har fyra veckor, mars har fyra veckor och så vidare.</li></ul> |
 
 >[!NOTE]
->De här kalenderalternativen stöds i alla Adobe Analytics-verktyg (Analysis Workspace, Rapporter och analyser, Report Builder, Activity Map), utom för Data warehouse. data warehouse stöder endast den gregorianska kalendern. När du väljer en icke-gregoriansk kalender använder Data warehouse det förväntade datumintervallet för den icke-gregorianska kalendern, men dag-/vecka-/månadsuppdelningarna inom rapportens rader kanske inte är vad som förväntas av en icke-gregoriansk kalender.
+>De här kalenderalternativen stöds i alla Adobe Analytics-verktyg (Analysis Workspace, Rapporter och analyser, Report Builder, Activity Map), utom för Data Warehouse. Datan Warehouse stöder endast den gregorianska kalendern. När Datan Warehouse väljer en icke-gregoriansk kalender används det förväntade datumintervallet för den icke-gregorianska kalendern, men dag-/vecka-/månadsuppdelningarna inom rapportens rader kanske inte är vad som förväntas av en icke-gregoriansk kalender.
