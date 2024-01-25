@@ -3,9 +3,9 @@ description: Steg som beskriver hur du skapar en begäran om Data Warehouse.
 title: Konfigurera ett rapportmål för en Data Warehouse-begäran
 feature: Data Warehouse
 exl-id: 3c7faea3-4d90-4274-88f3-e9337c94155f
-source-git-commit: 7edee01a5a5399762f10037cf920863af35cc4d7
+source-git-commit: bd192c3c985a41676b3b0f0faa13757eabb7e335
 workflow-type: tm+mt
-source-wordcount: '2232'
+source-wordcount: '2185'
 ht-degree: 0%
 
 ---
@@ -22,11 +22,10 @@ Mer information om hur du börjar skapa en begäran och länkar till andra vikti
 >
 >* Vi rekommenderar att du använder ett molnkonto eller ett e-postmeddelande för rapportdestinationen. Äldre FTP- och SFTP-konton är tillgängliga, men rekommenderas inte.
 >
->* Förfrågningar om Data Warehouse är kopplade till ditt Adobe Analytics-användarkonto. Andra användare kan som standard inte använda eller visa de begäranden som du konfigurerar. Du kan göra förfrågningar om Data Warehouse tillgängliga för andra användare i din organisation genom att aktivera **Visa alla mål** växla enligt beskrivningen i [Allmänna inställningar för begäran om Data Warehouse](/help/export/data-warehouse/create-request/dw-general-settings.md).
+>* Alla molnkonton som du tidigare konfigurerat för [Dataflöden](/help/export/analytics-data-feed/create-feed.md) eller för [importera Adobe Analytics klassificeringsdata](/help/components/locations/locations-manager.md) är tillgängliga för Data Warehouse. Eventuella platser som har konfigurerats för import av klassificeringsdata kan dock inte användas.
 >
->* Alla molnkonton som du tidigare använt [konfigurerad för dataflöden](/help/export/analytics-data-feed/create-feed.md) är tillgängliga för Data Warehouse.
+>* Molnkonton är kopplade till ditt Adobe Analytics-användarkonto. Andra användare kan inte använda eller visa molnkonton som du konfigurerar.
 >
->* Molnkonton som är konfigurerade för [importera Adobe Analytics klassificeringsdata](/help/components/locations/locations-manager.md) från ett molnmål kan användas när du konfigurerar ett rapportmål. Eventuella platser som har konfigurerats för import av klassificeringsdata kan dock inte användas.
 
 Så här konfigurerar du målet dit Data Warehouse-rapporter skickas:
 
