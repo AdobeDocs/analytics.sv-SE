@@ -3,9 +3,9 @@ description: Steg som beskriver hur du skapar en begäran om Data Warehouse.
 title: Konfigurera ett rapportmål för en Data Warehouse-begäran
 feature: Data Warehouse
 exl-id: 3c7faea3-4d90-4274-88f3-e9337c94155f
-source-git-commit: baac0c0384b714cf2ca536149ca10eec3a7065ad
+source-git-commit: 7edee01a5a5399762f10037cf920863af35cc4d7
 workflow-type: tm+mt
-source-wordcount: '2201'
+source-wordcount: '2232'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Mer information om hur du börjar skapa en begäran och länkar till andra vikti
 >
 >* Vi rekommenderar att du använder ett molnkonto eller ett e-postmeddelande för rapportdestinationen. Äldre FTP- och SFTP-konton är tillgängliga, men rekommenderas inte.
 >
->* Molnkonton är kopplade till ditt Adobe Analytics-användarkonto. Andra användare kan inte använda eller visa molnkonton som du konfigurerar.
+>* Förfrågningar om Data Warehouse är kopplade till ditt Adobe Analytics-användarkonto. Andra användare kan som standard inte använda eller visa de begäranden som du konfigurerar. Du kan göra förfrågningar om Data Warehouse tillgängliga för andra användare i din organisation genom att aktivera **Visa alla mål** växla enligt beskrivningen i [Allmänna inställningar för begäran om Data Warehouse](/help/export/data-warehouse/create-request/dw-general-settings.md).
 >
 >* Alla molnkonton som du tidigare använt [konfigurerad för dataflöden](/help/export/analytics-data-feed/create-feed.md) är tillgängliga för Data Warehouse.
 >
