@@ -3,10 +3,10 @@ description: Segmenthanteraren erbjuder många sätt att strukturera segment, so
 title: Hantera segment (segmenthanteraren)
 feature: Segmentation
 exl-id: be182a55-23cb-415f-a7d0-3c1efeead1a1
-source-git-commit: 9a6c2e7c2f83882f6df630f975b0c44e75a2ed7a
+source-git-commit: df9c6d59ef5f5c43d0e1ef822bd23bc0e09ff20e
 workflow-type: tm+mt
-source-wordcount: '736'
-ht-degree: 3%
+source-wordcount: '744'
+ht-degree: 0%
 
 ---
 
@@ -34,7 +34,7 @@ I segmenthanteraren kan du:
 
 * [Markera segment som favoriter](/help/components/segmentation/segmentation-workflow/t-seg-favorite.md)
 
-* [Godkänna segment](/help/components/segmentation/segmentation-workflow/seg-approve.md)
+* [Godkänn segment](/help/components/segmentation/segmentation-workflow/seg-approve.md)
 
 * [Tagga segment](/help/components/segmentation/segmentation-workflow/seg-tag.md)
 
@@ -67,8 +67,8 @@ Så här konfigurerar du synliga kolumner i segmenthanteraren:
    | Taggar (inte incheckad i kolumnväljare, därför visas inte kolumnen) | Taggar som har tillämpats på segmentet, antingen av dig eller av personer som delat segmentet med dig. |
    | Delas med | Visar enskilda personer eller grupper (endast Admin) eller Alla (endast Admin) som du har delat segmentet med. <p>När ett segment delas av dig eller med dig visas en delningsikon bredvid segmentnamnet.</p> |
    | Ändrat den | Visar datumet då segmentet senast ändrades. |
-   | Används i | Visar hur många komponenter segmentet används i. <p>Om segmentet till exempel används i 40 projekt och 2 varningar visas värdet för den här kolumnen som [!UICONTROL **42 komponenter**].</p> <p>Välj värdet i den här kolumnen för att se hur segmentet delas upp (till exempel [!UICONTROL **Projekt (40)**], [!UICONTROL **Varningar (2)**]).</p><p>Segment kan användas i följande komponenttyper:</p> <ul><li>Larm</li><li>Projekt</li><li>Schemalagda projekt</li><li>Beräknade värden</li></ul><p>Den här informationen kan hjälpa dig att avgöra om en komponent är värdefull för användare i organisationen, var den används och om den behöver tas bort eller ändras.</p><p>Tänk på följande när du visar den här kolumnen:</p><ul><li>Den här informationen inkluderar inte användning från API, Report Builder eller Data Warehouse.</li><li>The [!UICONTROL **Används i**] -kolumnen visas inte som standard. [Konfigurera kolumner](#configure-columns) för att visa den.</li><li>Om det inte finns några data i den här kolumnen för en viss komponent, men den har en [!UICONTROL **Senast använd**] datum kan komponenten ha använts i en analys utan att sparas.</li></ul><p>Du kan använda [Dataordlista](/help/analyze/analysis-workspace/components/data-dictionary/data-dictionary-overview.md) tillsammans med den här informationen för att hjälpa dig att hålla reda på och bättre förstå hur komponenter används i organisationen.</p> |
-   | Senast använd | Visar datumet då segmentet senast användes i någon av följande komponenttyper: <ul><li>Larm</li><li>Beräknade värden</li><li>Projekt</li><li>Schemalagda projekt</li><li>Segment</li></ul> <p>Den här informationen kan hjälpa dig att avgöra om en komponent är värdefull för användare i organisationen, var den används och om den behöver tas bort eller ändras.</p><p>Tänk på följande när du visar den här kolumnen:</p><ul><li>Den här informationen inkluderar inte användning från API, Report Builder eller Data Warehouse.</li><li>För vissa komponenter kanske den här kolumnen inte innehåller data om komponenten senast användes före september 2023.</li></ul><p>Du kan använda [Dataordlista](/help/analyze/analysis-workspace/components/data-dictionary/data-dictionary-overview.md) tillsammans med den här informationen för att hjälpa dig att hålla reda på och bättre förstå hur komponenter används i organisationen. |
+   | Används i | Visar hur många komponenter segmentet används i. <p>Om segmentet till exempel används i 40 projekt och 2 varningar visas värdet för den här kolumnen som [!UICONTROL **42 komponenter**].</p> <p>Välj värdet i den här kolumnen för att se hur segmentet delas upp (till exempel [!UICONTROL **Projekt (40)**], [!UICONTROL **Varningar (2)**]).</p><p>Segment kan användas i följande komponenttyper:</p> <ul><li>Larm</li><li>Projekt</li><li>Schemalagda projekt</li><li>Beräknade mått</li></ul><p>Den här informationen kan hjälpa dig att avgöra om en komponent är värdefull för användare i organisationen, var den används och om den behöver tas bort eller ändras.</p><p>Tänk på följande när du visar den här kolumnen:</p><ul><li>Den här informationen inkluderar inte användning från API, Report Builder eller Data Warehouse.</li><li>The [!UICONTROL **Används i**] -kolumnen visas inte som standard. [Konfigurera kolumner](#configure-columns) för att visa den.</li><li>Om det inte finns några data i den här kolumnen för en viss komponent, men den har en [!UICONTROL **Senast använd**] datum kan komponenten ha använts i en analys utan att sparas.</li><li>Den här informationen är endast tillgänglig för systemadministratörer.</li></ul><p>Du kan använda [Dataordlista](/help/analyze/analysis-workspace/components/data-dictionary/data-dictionary-overview.md) tillsammans med den här informationen för att hjälpa dig att hålla reda på och bättre förstå hur komponenter används i organisationen.</p> |
+   | Senast använd | Visar datumet då segmentet senast användes i någon av följande komponenttyper: <ul><li>Larm</li><li>Beräknade mått</li><li>Projekt</li><li>Schemalagda projekt</li><li>Segment</li></ul> <p>Den här informationen kan hjälpa dig att avgöra om en komponent är värdefull för användare i organisationen, var den används och om den behöver tas bort eller ändras.</p><p>Tänk på följande när du visar den här kolumnen:</p><ul><li>Den här informationen inkluderar inte användning från API, Report Builder eller Data Warehouse.</li><li>För vissa komponenter kanske den här kolumnen inte innehåller data om komponenten senast användes före september 2023.</li><li>Den här informationen är endast tillgänglig för systemadministratörer.</li></ul><p>Du kan använda [Dataordlista](/help/analyze/analysis-workspace/components/data-dictionary/data-dictionary-overview.md) tillsammans med den här informationen för att hjälpa dig att hålla reda på och bättre förstå hur komponenter används i organisationen. |
 
    {style="table-layout:auto"}
 

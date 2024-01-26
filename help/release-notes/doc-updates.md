@@ -5,10 +5,10 @@ short-title: Analytics documentation updates
 feature: Release Notes
 exl-id: fe8e3c4c-6782-46f7-8e28-4f8f54807788
 mini-toc-levels: 3
-source-git-commit: 99156dd9d898ce0abf214561cb0040c647d7e6ab
+source-git-commit: df9c6d59ef5f5c43d0e1ef822bd23bc0e09ff20e
 workflow-type: tm+mt
-source-wordcount: '4925'
-ht-degree: 23%
+source-wordcount: '4978'
+ht-degree: 22%
 
 ---
 
@@ -26,6 +26,8 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | Funktion | Beskrivning |
 | --- | --- |
 | **Januari 2024** | |
+| Komponentmigrering gäller för enskilda IMS-organ | Klarade att [komponentmigrering](/help/admin/admin/component-migration/component-migration.md) stöder inte migrering mellan IMS-plattformar. |
+| Klarade att viss information endast är tillgänglig för administratörer | Tillagd information om att kolumnerna &quot;Senast använd&quot; och &quot;Används i&quot; beskrivs i [Beräknat måttansvarig](/help/components/c-calcmetrics/c-workflow/cm-workflow/cm-manager.md) och [Segmenthanterare](/help/components/segmentation/segmentation-workflow/seg-manage.md) är bara tillgängliga för systemadministratörer. |
 | Uppdateringar av medieminarium - dokumentation om den genomsnittliga minuten-målgruppen | Uppdaterad information i [Mediemedelets minutmålspanel](/help/analyze/analysis-workspace/c-panels/average-minute-audience-panel.md) för att förbättra klarheten.<p>Bland förbättringarna finns:</p> <ul><li>Förbättrad organisation av information</li><li>Tillagda steg för att ange uppgiftsbaserad information</li></ul> |
 
 ### 2023 {#23}
