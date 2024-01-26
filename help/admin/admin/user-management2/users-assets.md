@@ -2,13 +2,14 @@
 description: Hantera Analytics-användare och deras resurser i Adobe Admin Console.
 title: Hantera Analytics-användare och -resurser
 feature: Admin Tools
-source-git-commit: 48ca87747093efe72476de739f0ee5b1b3fd291a
+exl-id: 849a8279-4850-4458-bdd2-85052a17ee21
+role: Admin
+source-git-commit: 938795c7378cb1f0537ff84eddeab3feddf8d073
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '359'
 ht-degree: 0%
 
 ---
-
 
 # Överför användarresurser eller ange förfallodatum för konton
 
@@ -16,7 +17,7 @@ De flesta funktionerna för användar- och produkthantering har flyttats till [A
 
 De flesta användar- och produkthanteringsfunktionerna är nu bara tillgängliga i Adobe Admin Console, men de administrativa funktioner som beskrivs på den här sidan är bara tillgängliga i Adobe Analytics Admin.
 
-## Överför resurser från en Analytics-användare till en annan
+## Överför resurser från en Analytics-användare till en annan {#transfer}
 
 1. Gå till **Administratör** > [!UICONTROL **Analysanvändare och -resurser**].
 Sidan Användare visas.
@@ -32,7 +33,7 @@ Sidan Användare visas.
    Alla resurser som du har valt överförs till den angivna användaren.
 
 
-## Ange ett förfallodatum för ett användarkonto
+## Ange ett förfallodatum för ett användarkonto {#expiration}
 
 1. Gå till **Administratör** > [!UICONTROL **Analysanvändare och -resurser**].
 Sidan Användare visas.

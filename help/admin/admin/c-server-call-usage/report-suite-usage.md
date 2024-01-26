@@ -1,16 +1,17 @@
 ---
 description: Fliken Report Suite-användning innehåller serveranvändningsdata för varje rapportsvit i alla inloggningsföretag som är kopplade till ditt faktureringsföretag, för den aktuella användningsperioden.
-title: Visa användning av rapportsvit
+title: Visa rapportsvitanvändning
 feature: Server Call Usage
 exl-id: bedd4ed8-1c8b-45fd-a059-fed88e9fbe73
-source-git-commit: a17297af84e1f5e7fe61f886eb3906c462229087
+role: Admin
+source-git-commit: 938795c7378cb1f0537ff84eddeab3feddf8d073
 workflow-type: tm+mt
-source-wordcount: '418'
-ht-degree: 2%
+source-wordcount: '424'
+ht-degree: 0%
 
 ---
 
-# Visa användning av rapportsvit
+# Visa rapportsvitanvändning
 
 Fliken Report Suite-användning innehåller serveranvändningsdata för varje rapportsvit i alla inloggningsföretag som är kopplade till ditt faktureringsföretag, för den aktuella användningsperioden.
 
@@ -18,7 +19,7 @@ Fliken Report Suite-användning innehåller serveranvändningsdata för varje ra
 
 >[!IMPORTANT]
 >
->Om en rapportsvit inte är länkad till en Experience Cloud-organisation visas inte dess användningsdata på den här instrumentpanelen. Ett fakturerings-ID kan även vara knutet till flera Experience Cloud Orgs. det inte alltid finns en 1:1-relation mellan en organisation och ett fakturerings-ID.
+>Om en rapportsvit inte är länkad till en Experience Cloud-organisation visas inte dess användningsdata på den här instrumentpanelen. Ett fakturerings-ID kan även vara knutet till flera Experience Cloud Orgs. Det finns inte alltid en 1:1-relation mellan en organisation och ett fakturerings-ID.
 
 Kontrollpanelen för användning av Report Suite
 
@@ -30,6 +31,8 @@ Kontrollpanelen för användning av Report Suite
 
 ![](/help/admin/admin/c-server-call-usage/assets/report-suite-usage.png)
 
+## Inställningar för instrumentpanel {#settings}
+
 | Kolumn | Definition |
 |--- |--- |
 | Namn på rapportsvit | Namn på rapportsviten |
@@ -39,12 +42,13 @@ Kontrollpanelen för användning av Report Suite
 | Primär mobil (%) | Alla mobilprimära serveranrop (och deras procentandel av det totala) som uppstått under den aktuella användningsperioden. |
 | Sekundär mobil (%) | Alla anrop till sekundära mobilservrar (och deras procentandel av det totala) som uppstått under den aktuella användningsperioden. |
 
+{style="table-layout:auto"}
 
-## Hämta användningsrapport {#section_D7345660B5E043CD8850954216509A3D}
+## Hämta användningsrapport {#download}
 
 Med det här alternativet kan du hämta aktuella användningsdata och data från tidsperioder före den aktuella användningsperioden (från januari 2015). Rapporten hämtas som en CSV-fil.
 
-1. Välj minst en rapportserie.
+1. Välj minst en rapportsvit.
 1. Klicka på **[!UICONTROL Download Report]**.
 
    ![](/help/admin/admin/c-server-call-usage/assets/download_report.png)
@@ -53,8 +57,10 @@ Med det här alternativet kan du hämta aktuella användningsdata och data från
 |--- |--- |
 | Filnamn | Hårdkodat namn: Användningsrapport `day and time of report creation.csv` |
 | Inkluderade rapportsviter | Alla rapportsviter som du har valt på sidan Report Server-användning ingår i den här listan. |
-| Inkluderade samtalstyper | Ange en kombination av dessa: Alla samtal (standard), primära, sekundära, primära, primära, sekundära, mobila. |
+| Inkluderade samtalstyper | Ange en kombination av dessa: Alla samtal (standard), Primär, Sekundär, Primär, Mobil, Primär, Sekundär mobil. |
 | Tidsintervall | Du kan välja den aktuella användningsperioden eller ange ett anpassat intervall.  Ange intervallstart och intervallslut för ett anpassat intervall. <br>**Obs!** Du kan inte hämta användningsdata före januari 2015 </br>. |
+
+{style="table-layout:auto"}
 
 1. Klicka på **[!UICONTROL Download]**.
 

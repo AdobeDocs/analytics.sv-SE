@@ -1,22 +1,17 @@
 ---
-description: Beskrivningar av rapporttyper och jämförelse av globala rapportsviter och sammanfattningsrapportsviter.
-title: Rapportera metoder för programsvit
+description: Beskrivningar av globala rapportsviter
+title: Globala rapportsviter
 feature: Report Suite Settings
 exl-id: 97bdc9bd-2212-436b-b3b4-ec518624f9e6
-source-git-commit: 4545c3839586231918ba5ebbf17fcac5a366abab
+role: Admin
+source-git-commit: 938795c7378cb1f0537ff84eddeab3feddf8d073
 workflow-type: tm+mt
-source-wordcount: '444'
+source-wordcount: '400'
 ht-degree: 0%
 
 ---
 
-# Rapportera metoder för programsvit
-
-<!-- change filename since page name changed? -->
-
-Du kan konfigurera dina rapportsviter som antingen *globala rapportsviter* eller *rapportsviter för sammanslagning*.
-
-## Globala rapportsviter
+# Globala rapportsviter
 
 En global rapportserie samlar in data från alla domäner och appar som organisationen äger. Implementeringen kräver att alla bildbegäranden skickas till en enda rapportserie.
 
@@ -38,13 +33,13 @@ Du kan tillhandahålla delmängder av företagets globala rapportsvitsdata till 
 
 Att använda virtuella rapportsviter i stället för taggning i flera sviter är ofta en bra metod, men virtuella rapportsviter har vissa begränsningar. Se &quot;[Virtuella rapportsviter och taggar för flera programsviter](/help/components/vrs/vrs-considerations.md)&quot; för att avgöra vilken rapportsviter som är det bästa valet för era affärsbehov. En detaljerad jämförelse av virtuella rapportsviter och taggningsfunktioner för flera sviter finns i &quot;[Virtuella rapportsviter jämfört med märkning för flera programsviter](/help/components/vrs/vrs-about.md#section_317E4D21CCD74BC38166D2F57D214F78).&quot;
 
-## Sammanslagningsrapporter
+<!---## Rollup reports
 
 >[!NOTE]
 >
->[!DNL Reports & Analytics] är det enda verktyg som stöder sammanslagningsrapporter. Rapporter och analyser upphörde den 17 januari 2024.
+>[!DNL Reports & Analytics] is the only tool that supported rollup reports. Reports & Analytics was end-of-lifed on January 17, 2024.
 
-<!---### Limitations of Rollup Reports {#limitations-rollups}
+Limitations of Rollup Reports {#limitations-rollups}
 
 * Rollups provide total data, but they do not report individual values in reports. For example, eVar1 values are not included, but their aggregate total can be.
 * Data is not deduplicated when the rollup combines data across report suites.

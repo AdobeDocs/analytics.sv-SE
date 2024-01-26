@@ -1,11 +1,12 @@
 ---
 description: Vad du behöver veta om migreringen av användar-ID:n för Analytics till Admin Console i Adobe Experience Cloud.
-title: Migrering av Analytics-användare till Admin Console
+title: Användarmigrering av analyser till Admin Console
 feature: Admin Tools
 exl-id: f4bc0e92-af53-40db-8138-44d29e4b25fe
-source-git-commit: 34ba0e09cd909951a777b0ad3da080958633f97e
+role: Admin
+source-git-commit: 938795c7378cb1f0537ff84eddeab3feddf8d073
 workflow-type: tm+mt
-source-wordcount: '3156'
+source-wordcount: '3081'
 ht-degree: 0%
 
 ---
@@ -34,7 +35,7 @@ Fördelarna med att använda Adobe Admin Console är bland annat:
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Enkel inloggning </p> </td> 
-   <td colname="col2"> <p>Analysanvändare kan logga in på Experience Cloud och alla lösningar med sina Adobe ID eller Enterprise ID. Denna inloggning ger tillgång till integrerade lösningar och bastjänster i Experience Cloud. </p> <p>Efter migreringen försöker användare logga in via äldre inloggningar (<span class="filepath"> my.omniture.com</span> och <span class="filepath"> sc.omniture.com</span>) omdirigeras till <span class="filepath"> experience.loud.adobe.com</span>. </p> </td> 
+   <td colname="col2"> <p>Analysanvändare kan logga in på Experience Cloud och alla lösningar med sina Adobe ID eller Enterprise ID. Denna inloggning ger tillgång till integrerade lösningar och bastjänster i Experience Cloud. </p> <p>Efter migreringen försöker användare logga in via äldre inloggningar (<span class="filepath"> my.omniture.com</span> och <span class="filepath"> sc.omniture.com</span>) omdirigeras till <span class="filepath"> experiencecloud.adobe.com</span>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Hantera användaridentitet och behörigheter </p> </td> 
@@ -70,12 +71,12 @@ Svar på frågor som du kan ha innan migreringen.
    <td colname="col2"> <p>Kontrollera att du har en Adobe ID och har tillgång till <a href="https://adminconsole.adobe.com/enterprise/"> Experience Cloud Admin Console</a>. </p> <p>Om inte, kontakta <a href="https://helpx.adobe.com/marketing-cloud/contact-support.html"> Adobe kundtjänst</a>. (Kontakta först system- eller produktadministratören som kan bjuda in dig till rätt organisation.) </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>AEM integreringar med Analytics </p> </td> 
+   <td colname="col1"> <p>AEM med Analytics </p> </td> 
    <td colname="col2"> <p> AEM användare som är integrerade med Analytics måste ändra konfigurationen för att kunna använda den delade Analytics-hemligheten i stället för lösenordet. </p> <p> Du bör göra detta innan migreringen aktiveras. När migreringen har inaktiverats blir det ursprungligen konfigurerade lösenordet inte längre giltigt. </p> <p><b>För att få reda på den delade hemligheten i Analytics</b> </p> <p> Den delade hemligheten kan hämtas från Analytics (<span class="uicontrol"> Analyser</span> &gt; <span class="uicontrol"> Användarhantering</span>) och skiljer sig åt för varje användare. </p> <p><b>Så här uppdaterar du AEM med den delade hemligheten</b> </p> <p>Se <a href="https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/adobeanalytics-connect.html"> Ansluta till Adobe Analytics och skapa ramverk</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Uppdatera Report Builder </p> </td> 
-   <td colname="col2"> <p> <p>Viktigt: Uppdatera installationen av <a href="https://experienceleague.adobe.com/docs/analytics/analyze/report-builder/report-builder-setup/t-install-arb.html"> Report Builder</a> till den senaste versionen. </p> </p> </td> 
+   <td colname="col2"> <p> <p>Viktigt: Uppdatera din installation av <a href="https://experienceleague.adobe.com/docs/analytics/analyze/report-builder/report-builder-setup/t-install-arb.html"> Report Builder</a> till den senaste versionen. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>När börjar migreringen? </p> </td> 
@@ -96,22 +97,22 @@ Svar på frågor som du kan ha innan migreringen.
     <ul id="ul_25D1DBDF5C804D048E741F31550FF5F3"> 
      <li id="li_418476105FE341229CE146E730AAB33D">Befintliga behörighetsgrupper i Analytics replikeras automatiskt i Adobe Admin Console som produktprofiler, inklusive deras beskrivning och detaljerade behörigheter i rapportsviter, mätvärden, dimensioner, analyser och Report Suite-verktyg. </li> 
      <li id="li_412F88C454B0455A8F3BC8016226855C">Om någon av dina nuvarande Analytics-användare har skapats i Adobe Admin Console (det vill säga att de har ett länkat Adobe/Enterprise ID) läggs de till i rätt produktprofiler i Adobe Admin Console. </li> 
-     <li id="li_8A05137EC05C4FD5910E73FE58300DCB">Avsnittet Användarhantering på fliken Admin i Analytics är inställt på <span class="term"> skrivskyddad</span>. Du kommer inte längre att kunna skapa nya användare eller behörighetsgrupper här och du måste utföra båda dessa funktioner i Adobe Admin Console. Se <a href="/help/admin/admin/user-management2/user-migration/c-migration-tool.md#section-928ffba27a0446e0af575b720434ef56"> Analysfunktionerna i Adobe Admin Console stöds inte</a> för mer information. </li> 
+     <li id="li_8A05137EC05C4FD5910E73FE58300DCB">Avsnittet Användarhantering på fliken Admin i Analytics är inställt på <span class="term"> skrivskyddad</span>. Du kommer inte längre att kunna skapa nya användare eller behörighetsgrupper här och du kommer att behöva utföra båda dessa funktioner i Adobe Admin Console. Se <a href="/help/admin/admin/user-management2/user-migration/c-migration-tool.md#section-928ffba27a0446e0af575b720434ef56"> Analysfunktionerna i Adobe Admin Console stöds inte</a> för mer information. </li> 
      <li id="li_2742DE69E9B547198A58E1F33E908361">Som administratör får du åtkomst till <a href="https://experienceleague.adobe.com/docs/analytics/admin/user-product-management/user-management/migrate-users/t-migrate-users.html">Migreringsverktyg för användar-ID</a>. Dessutom visas ett meddelande i produkten som innehåller slutdatumet för migreringen (vanligtvis 60 dagar i framtiden) utöver länkar till hjälpinnehåll och vanliga frågor. </li> 
      <li id="li_095D42E3A3544FC59A60A8C8F94C971B">Du får tillgång till fliken Behörigheter i Adobe Admin Console där du kan skapa produktprofiler med alla detaljerade alternativ du känner till i Analytics. </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Hur migrerar jag användar-ID:n? </p> </td> 
-   <td colname="col2"> <p> Klicka <a href="/help/admin/admin/user-management2/user-migration/t-migrate-users.md#task-f3355f3b14a340feae58cfa04c0ba1c9"> Migrera användar-ID:n</a> på sidan Admin, under Användarhantering. Använd verktyget för att lägga till användare i produktprofiler i Adobe Admin Console (replikerade från behörighetsgrupper i Analytics). Du kan migrera användar-ID:n i din egen takt. </p> <p>Administrationsprivilegier krävs. När migreringen är klar kan den inte ångras. </p> <p>Vid migreringens slutdatum <span class="filepath"> my.omniture.com</span> åtkomst inaktiveras för användare i deras inloggningsföretag. Användare (även de som ännu inte har migrerats) omdirigeras till inloggning via den nya Experience Cloud-URL:en (<span class="filepath"> experience.loud.adobe.com</span>) </p> <p>Obs! Adobe rekommenderar att du tar tillfället i akt att utföra en granskning av dina användare och grupper innan du migrerar. Ta bort gamla och oanvända konton, eller konton som inte längre ska ha tillgång till produkten (t.ex. anställda som inte längre ingår i organisationen). </p> <p>Relaterat ämne: <a href="/help/admin/admin/user-management2/user-migration/migrate-enterprise.md"> Migrera Analytics-användarkonton för Enterprise ID och Federated ID</a>. </p> </td> 
+   <td colname="col2"> <p> Klicka <a href="/help/admin/admin/user-management2/user-migration/t-migrate-users.md#task-f3355f3b14a340feae58cfa04c0ba1c9"> Migrera användar-ID:n</a> på sidan Admin, under Användarhantering. Använd verktyget för att lägga till användare i produktprofiler i Adobe Admin Console (replikerade från behörighetsgrupper i Analytics). Du kan migrera användar-ID i din egen takt. </p> <p>Administrationsprivilegier krävs. När migreringen är klar kan den inte ångras. </p> <p>Vid migreringens slutdatum <span class="filepath"> my.omniture.com</span> åtkomst inaktiveras för användare i deras inloggningsföretag. Användare (även de som ännu inte har migrerats) omdirigeras till inloggning via den nya Experience Cloud-URL:en (<span class="filepath"> experiencecloud.adobe.com</span>) </p> <p>Obs! Adobe rekommenderar att du tar tillfället i akt att utföra en granskning av dina användare och grupper innan du migrerar. Ta bort gamla och oanvända konton, eller konton som inte längre ska ha tillgång till produkten (t.ex. anställda som inte längre ingår i organisationen). </p> <p>Relaterat ämne: <a href="/help/admin/admin/user-management2/user-migration/migrate-enterprise.md"> Migrera Analytics-användarkonton för Enterprise ID och Federated ID</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Kommer migreringen att påverka min Analytics-implementering eller hur data samlas in? </p> </td> 
-   <td colname="col2"> <p>Nej. </p> <p>Migreringsverktyget finns för att hjälpa dig att övergå användar-ID:n och behörigheter från användarhantering i Analytics till <a href="https://adminconsole.adobe.com/enterprise/"> Experience Cloud Admin Console</a>. </p> </td> 
+   <td colname="col2"> <p>Nej. </p> <p>Migreringsverktyget finns för att hjälpa dig att övergå användar-ID och behörigheter från användarhantering i Analytics till <a href="https://adminconsole.adobe.com/enterprise/"> Experience Cloud Admin Console</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Hur lång tid tar migreringsprocessen? </p> </td> 
-   <td colname="col2"> <p>Alla aktuella Analytics-administratörer får ett e-postmeddelande före migreringen fyra veckor innan migreringen. (Det faktiska startdatumet visas i analysgränssnittet.) </p> <p>När migreringen påbörjas har administratörerna 60 dagar på sig att slutföra processen. </p> </td> 
+   <td colname="col2"> <p>Alla aktuella Analytics-administratörer får ett e-postmeddelande före migreringen fyra veckor innan migreringen. (Det faktiska startdatumet visas i Analytics-gränssnittet.) </p> <p>När migreringen påbörjas har administratörerna 60 dagar på sig att slutföra processen. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Kan jag påskynda min migrering? </p> </td> 
@@ -136,7 +137,7 @@ Svar på frågor som du kan ha innan migreringen.
    </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> När kan jag implementera enkel inloggning med Federated ID? </p> </td> 
+   <td colname="col1"> <p> När kan jag implementera enkel inloggning med Federated ID:n? </p> </td> 
    <td colname="col2"> <p> Ett verktyg kommer snart att vara tillgängligt i Adobe Admin Console som gör att du kan ändra ID-typer från Adobe ID till Federated ID. Under migreringen kan du inte migrera användare som Federated ID:n. </p> </td> 
   </tr> 
  </tbody> 
@@ -226,7 +227,7 @@ Viktig information om migreringsprocessen och hur den påverkar den aktuella anv
   </tr> 
   <tr> 
    <td colname="col1"> <p>Jag har inte kunnat migrera alla mina användare vid migreringens slutdatum. Skulle icke-migrerade användare förlora åtkomsten till Analytics? </p> </td> 
-   <td colname="col2"> <p>Användare som inte har migrerats vid slutdatumet omdirigeras till inloggningssidan för Experience Cloud (experienceCloud.adobe.com) och kan inte komma åt Analytics. Du har dock fortfarande tillgång till migreringsverktyget så att du kan hitta och migrera dem för att återställa deras åtkomst. </p> </td> 
+   <td colname="col2"> <p>Användare som inte har migrerats före slutdatumet omdirigeras till inloggningssidan för Experience Cloud (experiencecloud.adobe.com) och kan inte komma åt Analytics. Du har dock fortfarande tillgång till migreringsverktyget så att du kan hitta och migrera dem för att återställa deras åtkomst. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -247,7 +248,7 @@ Viktig information om migreringsprocessen och hur den påverkar den aktuella anv
   </tr> 
   <tr> 
    <td colname="col1"> <p>Utgångsdatum för konto </p> </td> 
-   <td colname="col2"> <p> Du kan ange ett kontots förfallodatum manuellt i Analytics i Admin Tools. När förfallodatumet är uppfyllt kommer användaren inte att kunna komma åt Analytics, utan själva Experience Cloud-användarkontot (t.ex. Adobe ID, Enterprise ID, Federated ID osv.) går inte ut. De kan fortfarande logga in på Experience Cloud, de kan bara inte klicka in i Analytics. </p> </td> 
+   <td colname="col2"> <p> Du kan ange ett kontots förfallodatum manuellt i Analytics i Admin Tools. När förfallodatumet är uppfyllt kommer användaren inte att kunna komma åt Analytics, utan själva Experience Cloud-användarkontot (t.ex. Adobe ID, Enterprise ID, Federated ID) går inte ut. De kan fortfarande logga in på Experience Cloud, de kommer bara inte att kunna klicka in i Analytics. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -315,9 +316,9 @@ Om du vill skicka e-post till alla användare går du till **[!UICONTROL Analyti
 
 **Brödtext:** Hej Adobe Analytics!
 
-Vårt företag börjar migrera alla Adobe Analytics-konton från [!DNL https://my.omniture.com/login/] till Adobe Experience Cloud ([experience.loud.adobe.com](https://experiencecloud.adobe.com/)). Med den här migreringen kommer ditt Adobe Analytics-konto att uppgraderas för att ge åtkomst till Analytics via Adobe Experience Cloud. Metoden för åtkomst till Analytics ändras, men alla dina befintliga behörigheter till rapportsviterna och verktygen bevaras.
+Vårt företag kommer att börja migrera alla Adobe Analytics-konton från [!DNL https://my.omniture.com/login/] till Adobe Experience Cloud ([experiencecloud.adobe.com](https://experiencecloud.adobe.com/)). Med den här migreringen kommer ditt Adobe Analytics-konto att uppgraderas för att ge åtkomst till Analytics via Adobe Experience Cloud. Metoden för åtkomst till Analytics ändras, men alla dina befintliga behörigheter till rapportsviterna och verktygen bevaras.
 
-**Nästa steg:** Vi börjar migrera användare från **INFOGA DATUM**. Håll utkik efter ett välkomstmeddelande med din nya inloggning adresserad till e-post-ID:t som listas under ditt analyskonto. Om du inte har konfigurerat [Adobe ID](https://helpx.adobe.com/x-productkb/global/adobe-id-account-change.html) länkad till din e-postadress uppmanas du att skapa ett konto.
+**Nästa steg:** Vi börjar migrera användare från **INFOGA DATUM**. Håll utkik efter ett välkomstmeddelande med din nya inloggning adresserad till e-post-ID:t som listas under ditt analyskonto. Om du inte har konfigurerat [Adobe ID](https://helpx.adobe.com/x-productkb/global/adobe-id-account-change.html) som är länkad till din e-postadress uppmanas du att skapa ett konto.
 
 **Användbara resurser:**
 

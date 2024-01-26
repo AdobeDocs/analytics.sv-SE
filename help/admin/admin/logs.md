@@ -3,7 +3,8 @@ description: Logga filer som hjälper dig att se när användare loggar in, dera
 title: Loggar
 feature: Admin Tools
 exl-id: 43f79e2a-2cb9-47eb-982a-54714c9cbafc
-source-git-commit: d173a6c6c9751a86f4218ec842da17da14f8485b
+role: Admin
+source-git-commit: 938795c7378cb1f0537ff84eddeab3feddf8d073
 workflow-type: tm+mt
 source-wordcount: '570'
 ht-degree: 2%

@@ -3,10 +3,11 @@ description: Med kodhanteraren kan du hämta datainsamlingskod för webb- och mo
 title: Kodhanteraren
 feature: Admin Tools
 exl-id: 90591e91-0830-46e3-a8a1-f09c4f108eb2
-source-git-commit: 2c0aef13bdb88b0a7aa9f100c72c21f66a14c8dd
+role: Admin
+source-git-commit: 938795c7378cb1f0537ff84eddeab3feddf8d073
 workflow-type: tm+mt
-source-wordcount: '127'
-ht-degree: 3%
+source-wordcount: '122'
+ht-degree: 0%
 
 ---
 
@@ -24,5 +25,5 @@ När du har hämtat biblioteket måste du konfigurera koden så att den skickar 
 |--- |--- |
 | [!UICONTROL Name] | Namnet matchar plattformen där du vill aktivera datainsamling. Inbyggda bibliotek tillhandahålls för varje plattform som visas i den här kolumnen. |
 | [!UICONTROL Type] | Typ av program som kan mätas med varje bibliotek. |
-| [!UICONTROL Version] | Lista den senaste versionen av biblioteket. Klicka på versionsnumret för att visa [versionshistorik](https://experienceleague.adobe.com/docs/analytics/implementation/appmeasurement-updates.html). |
+| [!UICONTROL Version] | Lista den senaste versionen av biblioteket. Klicka på versionsnumret för att visa [versionsinformation](https://experienceleague.adobe.com/docs/analytics/implementation/appmeasurement-updates.html). |
 | [!UICONTROL Documentation] | Visa biblioteksreferensdokumentationen. |

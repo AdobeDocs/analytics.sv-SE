@@ -3,18 +3,17 @@ description: Lägg till eller hantera alla användningsvarningar för servern. N
 title: Varningar om användning av serversamtal
 feature: Server Call Usage
 exl-id: 35926566-c570-4ed2-9bbc-0906518bcf64
-source-git-commit: a17297af84e1f5e7fe61f886eb3906c462229087
+role: Admin
+source-git-commit: 938795c7378cb1f0537ff84eddeab3feddf8d073
 workflow-type: tm+mt
-source-wordcount: '508'
-ht-degree: 2%
+source-wordcount: '505'
+ht-degree: 1%
 
 ---
 
 # Varningar om användning av serversamtal
 
 När du skapar en avisering gäller den alla rapportsviter i alla inloggningsföretag för ett faktureringsföretag.
-
-## Översikt
 
 En ny aviseringskategori som heter **[!UICONTROL Server Calls Usage Alert]** är en del av den befintliga [Varningshantering](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/virtual-analyst/intelligent-alerts/intellligent-alerts.html) användargränssnitt.
 
@@ -31,11 +30,11 @@ Du kan få åtkomst till varningar om användning av serversamtal på två sätt
 * Klicka **[!UICONTROL Manage Alerts]** i det övre högra hörnet på fliken Aktuell användning eller fliken Användning i Report Suite, eller
 * Navigera till **[!UICONTROL Components]** > **[!UICONTROL Alerts]** i Adobe Analytics.
 
-## Skapa användningsaviseringar för serversamtal {#section_2A2882C6D48D47C1944D52FB7C766BEC}
+## Skapa användningsaviseringar för serversamtal {#create}
 
 Om du vill skapa ytterligare aviseringar
 
-1. Klicka på **[!UICONTROL + Add]** och välj **[!UICONTROL Server Call Usage Alert]**.
+1. Klicka **[!UICONTROL + Add]** och markera **[!UICONTROL Server Call Usage Alert]**.
 
    ![](/help/admin/admin/c-server-call-usage/assets/server_call_alert.png)
 
@@ -44,7 +43,7 @@ Om du vill skapa ytterligare aviseringar
    ![](/help/admin/admin/c-server-call-usage/assets/sc_alert.png)
 
    * **Titel**: Ange ett beskrivande namn. Du kan inte spara aviseringen utan ett namn.
-   * **Tidsgranularitet**: Anger hur ofta varningen ska kontrolleras. *Vi stöder endast granularitet varje vecka just nu.* Detta innebär att registreringen kontrolleras varje vecka och att uppgifterna från den aktuella användningsperioden kommer att återkomma.
+   * **Tidsnoggrannhet**: Avser hur ofta varningen ska kontrolleras. *Vi stöder endast granularitet varje vecka just nu.* Detta innebär att registreringen kontrolleras varje vecka och att uppgifterna från den aktuella användningsperioden kommer att återkomma.
    * **Mottagare**: Ange alla i organisationen som ska få ett e-postmeddelande när aviseringen utlöser det angivna tröskelvärdet.
    * **Förfallodatum**: Som standard är förfallodatumet ett år från det datum då varningen skapades.
    * **Skicka en varning när**:
@@ -52,11 +51,11 @@ Om du vill skapa ytterligare aviseringar
       * Alla dessa mått för utlösare Lägg till typen av serveranrop som ett mått och ange aviseringströskeln genom att välja modifierare och tröskelvärde:
          * är över eller lika med
          * är under eller lika med
-      * Med Ange tröskelvärde och villkor (ligger över eller är lika med eller under) för den använda användningsperioden.
+      * Med Ange tröskelvärde och villkor (ligger över eller är lika med eller under eller lika med) för den använda perioden.
 
 1. Klicka på **[!UICONTROL Save]**.
 
-## Hantera användningsaviseringar för serveranrop {#section_8FF98170763C4B5CBEC6DD43F893177A}
+## Hantera användningsaviseringar för serveranrop {#manage}
 
 ![](/help/admin/admin/c-server-call-usage/assets/alert_mgmt.png)
 
@@ -75,3 +74,5 @@ Så här hanterar du aviseringar:
    | Aktivera/inaktivera | Du kan aktivera eller inaktivera alla aviseringar, även standardaviseringar. |
    | Förnya | När en eller flera aviseringar har valts kan de förnyas. Detta förlänger deras förfallodatum till 1 år från dagen [!UICONTROL Renew] har klickats, oavsett ursprungligt förfallodatum. |
    | Exportera till CSV | Se [Hämta användningsrapport](/help/admin/admin/c-server-call-usage/report-suite-usage.md) |
+
+   {style="table-layout:auto"}

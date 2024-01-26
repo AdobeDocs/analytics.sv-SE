@@ -3,7 +3,8 @@ title: Adobe Analytics första administrationshandbok
 description: Förstå hur den första administrationsprovisioneringsprocessen utförs och nästa steg
 exl-id: fbbbd335-0d22-473e-adef-f92f8eab7bf0
 feature: Admin Tools
-source-git-commit: 7cde90a15dc97468a70f8120bec46915eab7c1bb
+role: Admin
+source-git-commit: 938795c7378cb1f0537ff84eddeab3feddf8d073
 workflow-type: tm+mt
 source-wordcount: '185'
 ht-degree: 1%

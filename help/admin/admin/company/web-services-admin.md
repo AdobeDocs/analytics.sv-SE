@@ -3,10 +3,11 @@ description: Webbtjänstens API:er ger programmatisk åtkomst till marknadsföri
 title: Webbtjänster
 feature: Company Settings
 exl-id: d003d40e-b0b6-44f3-b9ef-ce6af61f5eb5
-source-git-commit: 45fbd7f7502abe4b579135d100c7e3618546c0f5
+role: Admin
+source-git-commit: 938795c7378cb1f0537ff84eddeab3feddf8d073
 workflow-type: tm+mt
-source-wordcount: '285'
-ht-degree: 5%
+source-wordcount: '280'
+ht-degree: 0%
 
 ---
 
@@ -19,13 +20,13 @@ Webbtjänstens API:er ger programmatisk åtkomst till marknadsföringsrapporter 
 
 ## API:er för Analytics 2.0
 
-För att få tillgång till API:erna i Analytics 2.0 behöver ni det globala företags-ID:t för ert Analytics-företag. Du hittar det globala företags-ID:t i **fet** högst upp på [!UICONTROL API Access] -avsnitt. Här är ett exempel: &quot;Det globala företags-ID:t för det Analytics-företag du är inloggad på är **adobe1234**.&quot;
+För att få tillgång till API:erna i Analytics 2.0 behöver ni det globala företags-ID:t för ert Analytics-företag. Du hittar det globala företags-ID:t i **fet** högst upp på [!UICONTROL API Access] -avsnitt. Här är ett exempel:&quot;Det globala företags-ID:t för det Analytics-företag som du för närvarande är inloggad på är **adobe1234**.&quot;
 
 ## Hantera äldre webbtjänster (borttagna)
 
 I [Adobe Admin Console](https://helpx.adobe.com/se/enterprise/using/admin-console.html) Du kan uppdatera behörigheterna så att de omfattar de användare som behöver åtkomst till webbtjänstens API:er.
 
-## WSDL: Ladda ned Web Services API WSDL för webbtjänstutvecklare
+## WSDL: Hämta WSDL för webbtjänstutvecklare för API:t för webbtjänster
 
 Besök [Adobe Developer](https://developer.adobe.com/analytics-apis/docs/2.0/), som innehåller dokumentation, exempelkod och forum för webbtjänsternas API:er. Klicka på Webbtjänstens API:er - översikt för mer information.
 

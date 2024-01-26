@@ -4,9 +4,9 @@ audience: admin
 user-guide-title: Administratörshandbok för Analytics
 breadcrumb-title: Användarhandbok om Admin
 user-guide-description: Lär dig mer om administrationsåtgärder i Analytics, som att hantera användare och produkter i Experience Cloud Admin Console, konfigurera rapportsviter med mera.
-source-git-commit: 4545c3839586231918ba5ebbf17fcac5a366abab
+source-git-commit: 938795c7378cb1f0537ff84eddeab3feddf8d073
 workflow-type: tm+mt
-source-wordcount: '633'
+source-wordcount: '631'
 ht-degree: 13%
 
 ---
@@ -127,7 +127,7 @@ ht-degree: 13%
             + [Konfiguration av rapporter i realtid](admin/c-manage-report-suites/c-edit-report-suites/realtime/t-realtime-admin.md)
             + [Mätvärden och dimensioner som stöds i realtid](admin/c-manage-report-suites/c-edit-report-suites/realtime/realtime-metrics.md)
       + [Hantera rapportsviter](admin/c-manage-report-suites/report-suites-admin.md)
-      + [Sammanslagning och globala rapportsviter](admin/c-manage-report-suites/rollup-report-suite.md)
+      + [Globala rapportsviter](admin/c-manage-report-suites/rollup-report-suite.md)
       + [Spara en sökning i en rapportserie](admin/c-manage-report-suites/t-report-suite-saved-search.md)
       + [Hämta inställningar för rapportsviten](admin/c-manage-report-suites/t-download-rs-settings.md)
       + Ny rapportsvit {#c-new-report-suite}

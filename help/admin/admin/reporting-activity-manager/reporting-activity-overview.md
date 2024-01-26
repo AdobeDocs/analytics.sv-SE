@@ -2,7 +2,9 @@
 description: Lär dig mer om hur du använder Rapporteringsaktivitetshanteraren för att diagnostisera och åtgärda kapacitetsproblem under perioder med hög rapporteringsnivå.
 title: Översikt över Reporting Activity Manager
 feature: Admin Tools
-source-git-commit: 3c65e50bbfdbb011ef7b08d48a0ac3c87d7666b7
+exl-id: 18293404-3a41-42d4-bbce-ad520ec66a62
+role: Admin
+source-git-commit: 938795c7378cb1f0537ff84eddeab3feddf8d073
 workflow-type: tm+mt
 source-wordcount: '268'
 ht-degree: 0%
@@ -38,4 +40,3 @@ Mer information om hur du visar rapporteringsaktivitet i Rapporteringsaktivitets
 ## Avbryt rapporteringsbegäranden
 
 Mer information om hur du avbryter rapportbegäranden i Rapporteringsaktivitetshanteraren finns i [Avbryt rapportbegäranden i Rapporteringsaktivitetshanteraren](/help/admin/admin/reporting-activity-manager/reporting-activity-cancel-requests.md).
-
