@@ -3,10 +3,10 @@ description: Administrativa steg för att skapa realtidsrapporter.
 title: Konfiguration av rapporter i realtid
 feature: Real-time
 exl-id: e039ed67-3694-40fc-a4d9-3cb576e0535c
-source-git-commit: b8efacacf7fca792b4a4fa41dd3f9d6ac1448578
+source-git-commit: f1dde3a475fe1276fd9abbe1bdafd6723701f2cb
 workflow-type: tm+mt
-source-wordcount: '262'
-ht-degree: 0%
+source-wordcount: '207'
+ht-degree: 1%
 
 ---
 
@@ -18,19 +18,10 @@ Du skapar realtidsrapporter i Adobe Analytics genom att välja rapportsviten och
 
 1. Välj den rapportsvit som du vill aktivera realtidsrapporter för.
 
-   Navigera till **[!UICONTROL Analytics]** > **[!UICONTROL Reports]** > **[!UICONTROL View All Reports > Site Metrics]** > **[!UICONTROL Real-Time]** och väljer rapportsviten i listrutan högst upp:
+   Navigera till **[!UICONTROL Analytics]** > **[!UICONTROL Admin > Report Suites]**.
 
-   ![](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/realtime/assets/report_suite_selector.png)
+1. Klicka **[!UICONTROL Edit Settings]** > **[!UICONTROL Real-Time]**.
 
-   Om du försöker visa realtidsrapporter för en rapportserie som inte har konfigurerats för realtidsrapportering visas ett meddelande som gör att du kan konfigurera rapportsviten.
-
-   ![](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/realtime/assets/rep_suite_not_set_up.png)
-
-1. Klicka **[!UICONTROL Configure]** (kugghjulsikon) som kör [!UICONTROL Report Suite Manager].
-
-   (Även tillgängligt under **[!UICONTROL Analytics]** > **[!UICONTROL Admin > Report Suites]** > **[!UICONTROL Edit Settings]** > **[!UICONTROL Real-Time]**.)
-
-1. Aktivera **[!UICONTROL Enable Real-Time]** inställning.
 1. Ställ in datainsamling i realtid för upp till tre rapporter, med ett mått och tre dimensioner eller klassificeringar per rapport.
 
    ![](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/realtime/assets/real_time_admin.png)
