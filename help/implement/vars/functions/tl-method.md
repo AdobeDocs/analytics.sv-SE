@@ -3,9 +3,10 @@ title: tl
 description: Skicka ett länkspårningsanrop till Adobe.
 feature: Variables
 exl-id: 470662b2-ce07-4432-b2d5-a670fbb77771
-source-git-commit: 6de20d2fbbab6ded6c92f0c6f3536671f4b2ae46
+role: Admin, Developer
+source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
 workflow-type: tm+mt
-source-wordcount: '694'
+source-wordcount: '692'
 ht-degree: 0%
 
 ---
@@ -14,13 +15,13 @@ ht-degree: 0%
 
 The `tl()` är en viktig komponent i Adobe Analytics. Den tar alla analysvariabler som definieras på sidan, kompilerar dem till en bildbegäran och skickar data till datainsamlingsservrarna i Adobe. Det fungerar på liknande sätt som [`t()`](t-method.md) den här metoden ökar dock inte sidvisningen. Den är användbar för att spåra länkar och andra element som inte skulle betraktas som en fullständig sidinläsning.
 
-If [`trackDownloadLinks`](../config-vars/trackdownloadlinks.md) eller [`trackExternalLinks`](../config-vars/trackexternallinks.md) är aktiverade, AppMeasurement anropar automatiskt `tl()` metod för att skicka hämtningslänk och avsluta länkspårningsdata. Om din organisation föredrar att ha större kontroll över länkarna och deras beteende kan du anropa `tl()` -metoden manuellt. Anpassade länkar kan bara spåras manuellt.
+If [`trackDownloadLinks`](../config-vars/trackdownloadlinks.md) eller [`trackExternalLinks`](../config-vars/trackexternallinks.md) aktiveras, AppMeasurementet anropar automatiskt `tl()` metod för att skicka hämtningslänk och avsluta länkspårningsdata. Om din organisation föredrar att ha större kontroll över länkarna och deras beteende kan du anropa `tl()` -metoden manuellt. Anpassade länkar kan bara spåras manuellt.
 
 ## Länkspårning med Web SDK
 
-Web SDK skiljer inte mellan sidvisningsanrop och länkspårningsanrop. båda använder `sendEvent` -kommando. Om du vill att Adobe Analytics ska räkna en viss XDM-händelse som ett länkspårningsanrop, kontrollerar du att dina XDM-data innehåller eller är mappade till `web.webInteraction.name`, `web.webInteraction.URL`och `web.webInteraction.type`.
+Web SDK skiljer inte mellan sidvisningsanrop och länkspårningsanrop. Båda använder `sendEvent` -kommando. Om du vill att Adobe Analytics ska räkna en viss XDM-händelse som ett länkspårningsanrop, kontrollerar du att dina XDM-data innehåller eller är mappade till `web.webInteraction.name`, `web.webInteraction.URL`och `web.webInteraction.type`.
 
-* Länka namn mappar till `web.webInteraction.name`.
+* Länka namnmappningar till `web.webInteraction.name`.
 * Länka URL-mappar till `web.webInteraction.URL`.
 * Länka typmappningar till `web.webInteraction.type`. Giltiga värden är `other` (Anpassade länkar), `download` (Hämta länkar) och `exit` (Avsluta länkar).
 
@@ -51,7 +52,7 @@ Adobe Analytics-tillägget har en dedikerad plats där ett länkspårningsanrop 
 
 Du kan inte ange några valfria argument i Analytics-tillägget.
 
-## s.tl()-metoden i AppMeasurement och den anpassade kodredigeraren i Analytics-tillägget
+## s.tl()-metoden i AppMeasurementet och den anpassade kodredigeraren för Analytics-tillägget
 
 Ring `s.tl()` när du vill skicka ett spårningsanrop till Adobe.
 
@@ -65,9 +66,9 @@ Argumentet för läntobjekt avgör om webbläsaren väntar upp till 500 ms innan
 
 >[!NOTE]
 >
->AppMeasurement aktiverar automatiskt [`useBeacon`](../config-vars/usebeacon.md) variabel för att avsluta länkar, vilket gör att det här argumentet inte längre behövs i moderna webbläsare. Det här argumentet användes oftare i tidigare versioner av AppMeasurement.
+>AppMeasurementet aktiverar automatiskt [`useBeacon`](../config-vars/usebeacon.md) variabel för att avsluta länkar, vilket gör att det här argumentet inte längre behövs i moderna webbläsare. Detta argument användes oftare i tidigare versioner av AppMeasurement.
 
-* `this`: Vänta i upp till 500 ms för att ge AppMeasurement tid att skicka en bildbegäran. Standardvärde.
+* `this`: Vänta upp till 500 ms för att ge AppMeasurementet tid att skicka en bildbegäran. Standardvärde.
 * `true`: Vänta inte.
 
 ```JavaScript
@@ -153,7 +154,7 @@ Du kan sedan anropa funktionen när du vill spåra en viss länk:
 
 ### Undvik att spåra dubblettlänkar
 
-If `trackDownloadLinks` eller `trackExternalLinks` är aktiverade gör AppMeasurement automatiskt ett länkspårningsanrop om rätt filter matchar. Om du även ringer manuellt `s.tl()` för dessa länkklick kan du skicka duplicerade data till Adobe. Duplicerade data ökar rapportnummer och gör dem mindre exakta.
+If `trackDownloadLinks` eller `trackExternalLinks` om de är aktiverade, gör AppMeasurementet automatiskt ett länkspårningsanrop om rätt filter matchar. Om du även ringer manuellt `s.tl()` för dessa länkklick kan du skicka duplicerade data till Adobe. Duplicerade data ökar rapportnummer och gör dem mindre exakta.
 
 Följande funktion skickar till exempel två länkspårningsanrop för samma länkklickning (manuella och automatiska hämtningslänkar):
 

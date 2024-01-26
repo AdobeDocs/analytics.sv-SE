@@ -3,9 +3,10 @@ title: getPreviousValue
 description: Hämta det sista värdet som skickades till en variabel.
 feature: Variables
 exl-id: 235c504b-ba97-4399-a07b-b0bfc764f1ba
-source-git-commit: bbb138d979968ec2536e53ff07001b43156df095
+role: Admin, Developer
+source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
 workflow-type: tm+mt
-source-wordcount: '731'
+source-wordcount: '728'
 ht-degree: 0%
 
 ---
@@ -24,7 +25,7 @@ Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-program
 1. Klicka **[!UICONTROL Tags]** till vänster och klicka sedan på den önskade taggegenskapen.
 1. Klicka **[!UICONTROL Extensions]** till vänster och klicka sedan på **[!UICONTROL Catalog]** tab
 1. Leta rätt på och installera **[!UICONTROL Common Web SDK Plugins]** tillägg.
-1. Klicka **[!UICONTROL Data Elements]** till vänster och klicka sedan på det önskade dataelementet.
+1. Klicka **[!UICONTROL Data Elements]** till vänster och klicka sedan på dataelementet.
 1. Ange det önskade dataelementnamnet med följande konfiguration:
    * Tillägg: Vanliga SDK-plugin-program för webben
    * Dataelement: `getPreviousValue`
@@ -44,10 +45,10 @@ Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-program
 1. Gå till [!UICONTROL Extensions] klickar du på [!UICONTROL Catalog] knapp
 1. Installera och publicera [!UICONTROL Common Analytics Plugins] extension
 1. Om du inte redan har det skapar du en regel med namnet&quot;Initiera plugin-program&quot; med följande konfiguration:
-   * Villkor: Ingen
+   * Villkor: Inget
    * Händelse: Kärna - Bibliotek inläst (sidan ovanpå)
 1. Lägg till en åtgärd i ovanstående regel med följande konfiguration:
-   * Tillägg: Plugin-program för vanlig analys
+   * Tillägg: Plugin-program för gemensam analys
    * Åtgärdstyp: Initiera getPreviousValue
 1. Spara och publicera ändringarna i regeln.
 
@@ -62,9 +63,9 @@ Om du inte vill använda tillägget för Common Analytics-plugin-program kan du 
 1. Öppna den anpassade kodredigeraren och klistra in den plugin-kod som finns nedan i redigeringsfönstret.
 1. Spara och publicera ändringarna i Analytics-tillägget.
 
-## Installera plugin-programmet med AppMeasurement
+## Installera plugin-programmet med AppMeasurementet
 
-Kopiera och klistra in följande kod var som helst i AppMeasurement-filen när Analytics-spårningsobjektet har instansierats (med [`s_gi`](../functions/s-gi.md)). Genom att bevara kommentarer och versionsnummer i koden i implementeringen kan Adobe felsöka eventuella problem.
+Kopiera och klistra in följande AppMeasurement var som helst i analysfilen efter att Analytics-spårningsobjektet har initierats (med [`s_gi`](../functions/s-gi.md)). Genom att bevara kommentarer och versionsnummer i koden i implementeringen kan Adobe felsöka eventuella problem.
 
 ```js
 /* Adobe Consulting Plugin: getPreviousValue v3.0 */
@@ -76,7 +77,7 @@ function getPreviousValue(v,c){var k=v,d=c;if("-v"===k)return{plugin:"getPreviou
 
 The `getPreviousValue` funktionen använder följande argument:
 
-* **`v`** (sträng, obligatoriskt): Variabeln som har värdet som du vill skicka till nästa bildförfrågan. En vanlig variabel som används är `s.pageName` för att hämta föregående sidvärde.
+* **`v`** (sträng, obligatoriskt): Variabeln som har värdet som du vill skicka till nästa bildbegäran. En vanlig variabel används `s.pageName` för att hämta föregående sidvärde.
 * **`c`** (sträng, valfritt): Namnet på den cookie som lagrar värdet.  Om det här argumentet inte anges används standardvärdet `"s_gpv"`.
 
 När du anropar den här funktionen returneras strängvärdet som finns i cookien. Plugin-programmet återställer sedan förfallotiden för cookie och tilldelar det variabelvärdet från `v` argument. Kakan går ut efter 30 minuters inaktivitet.
@@ -127,7 +128,7 @@ s.t();
 
 När `t()` funktionen körs, skapar en bildbegäran där `pageName` är &quot;Page 2&quot; och `prop7` är &quot;New value&quot;, vilket var värdet för `pageName` när senaste samtal till `getPreviousValue` har ägt rum. The `prop7` värde för `"Home"` ingick aldrig i en bildbegäran trots att&quot;Hem&quot; var det första värdet som skickades till `pageName`.
 
-## Versionshistorik
+## Tidigare versioner
 
 ### 3.0 (19 mars 2021)
 

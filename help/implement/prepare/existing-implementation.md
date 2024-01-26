@@ -3,9 +3,10 @@ title: Ta hand om en befintlig Adobe Analytics-implementering
 description: Instruktioner för administratörer som inte har använt en befintlig Adobe Analytics-implementering tidigare.
 feature: Implementation Basics
 exl-id: 4cf804f2-18a8-4be4-a18c-7ce663b8d145
-source-git-commit: ff719a996260aea108afb80665cacb6a7dbbf923
+role: Admin, Developer, Leader
+source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '161'
 ht-degree: 0%
 
 ---

@@ -3,7 +3,8 @@ title: hänvisare
 description: Åsidosätt den automatiskt insamlade referenten för en träff.
 feature: Variables
 exl-id: 09a76de9-0689-424a-aead-3fdff1709fd9
-source-git-commit: a37d6b26c2789211a9ed5602b708ef72768e289c
+role: Admin, Developer
+source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
 workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 0%

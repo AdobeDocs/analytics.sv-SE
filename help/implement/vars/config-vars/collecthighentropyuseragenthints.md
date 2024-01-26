@@ -3,16 +3,17 @@ title: collectHighEntropyUserAgentHints
 description: Använd variabeln collectHighEntropyUserAgentHints för att avgöra om Adobe ska begära höga entropittips från Chromium-webbläsare (t.ex. Google Chrome och Microsoft Edge).
 exl-id: 97cfa0f9-b35d-4c73-822f-adf30d0b7efc
 feature: Variables
-source-git-commit: 811e321ce96aaefaeff691ed5969981a048d2c31
+role: Admin, Developer
+source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
 workflow-type: tm+mt
-source-wordcount: '210'
+source-wordcount: '201'
 ht-degree: 0%
 
 ---
 
 # collectHighEntropyUserAgentHints
 
-Högupplösta klienttips används av Adobe Analytics för att förbättra enhets- och webbläsaridentifieringen. Det här alternativet är tillgängligt från och med version 2.23.0 av AppMeasurement.js. Läs mer om kundtips i [denna översikt och vanliga frågor](/help/technotes/client-hints.md) och [Google blogg](https://web.dev/user-agent-client-hints/).
+Högupplösta klienttips används av Adobe Analytics för att förbättra enhets- och webbläsaridentifieringen. Det här alternativet är tillgängligt från och med version 2.23.0 av AppMeasurement.js. Läs mer om kundtips i [den här översikten och vanliga frågor](/help/technotes/client-hints.md) och [Google blogg](https://web.dev/user-agent-client-hints/).
 
 ## Samla in tips för entropi med Web SDK
 
@@ -24,7 +25,7 @@ Högupplösta klienttips ingår i kontextkategorierna i Web SDK. Se [Konfigurera
 
 1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/#/@adobepm/data-collection) med inloggningsuppgifterna för ditt AdobeID.
 1. Klicka på önskat [!UICONTROL tag property].
-1. Gå till [!UICONTROL Extensions] tabbtangenten och sedan klicka [!UICONTROL Configure] under Adobe Analytics.
+1. Gå till [!UICONTROL Extensions] tabbtangenten och klicka sedan på [!UICONTROL Configure] under Adobe Analytics.
 1. Expandera [!UICONTROL General] dragspelspanel, som visar [!UICONTROL Collect high entropy user-agent hints] kryssruta. Den är avmarkerad som standard.
 
 ## collectHighEntropyUserAgentHints in AppMeasurement

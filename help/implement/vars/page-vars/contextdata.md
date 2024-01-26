@@ -3,9 +3,10 @@ title: contextData
 description: Med kontextdatavariabler kan du definiera anpassade variabler på varje sida som bearbetningsregler kan läsa.
 feature: Variables
 exl-id: f2c747a9-1a03-4f9f-8025-9f4745403a81
-source-git-commit: 35e7c8bccb8524fa5e87cae223f0854956c7528a
+role: Admin, Developer
+source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
 workflow-type: tm+mt
-source-wordcount: '509'
+source-wordcount: '503'
 ht-degree: 0%
 
 ---
@@ -24,9 +25,9 @@ Om ett XDM-fält inte är tillgängligt [mappas för Adobe Analytics](https://ex
 
 ## Sammanhangsdatavariabler med Adobe Analytics-tillägget
 
-Adobe Experience Platform Data Collection har ingen dedikerad plats för att ange kontextdatavariabler. Använd den anpassade kodredigeraren efter AppMeasurement-syntax.
+Adobe Experience Platform Data Collection har ingen dedikerad plats för att ange kontextdatavariabler. Använd den anpassade kodredigeraren enligt AppMeasurementen syntax.
 
-## s.contextData i AppMeasurement och den anpassade kodredigeraren för Analytics-tillägget
+## s.contextData i AppMeasurementet och den anpassade kodredigeraren för Analytics-tillägget
 
 The `s.contextData` variabeln får inte ett värde direkt. Ange i stället variabelns egenskaper som en sträng.
 

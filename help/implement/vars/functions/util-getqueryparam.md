@@ -1,11 +1,12 @@
 ---
 title: Util.getQueryParam
-description: Returnerar värdet för en frågesträngsparameter.
+description: Returnerar värdet för en frågesträngparameter.
 feature: Variables
 exl-id: d29d6cd9-f85f-475b-a7a8-73785aa4ae7b
-source-git-commit: 6de20d2fbbab6ded6c92f0c6f3536671f4b2ae46
+role: Admin, Developer
+source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
 workflow-type: tm+mt
-source-wordcount: '260'
+source-wordcount: '258'
 ht-degree: 0%
 
 ---
@@ -24,9 +25,9 @@ Du kan hämta parameterdata för frågesträngar genom att ange värden i datael
 4. Ange [!UICONTROL Extension] nedrullningsbar lista till **[!UICONTROL Core]** och [!UICONTROL Data Element Type] till **[!UICONTROL Query String Parameter]**.
 5. Ange frågesträngsparametern i textfältet.
 
-Frågesträngens parametervärde lagras i dataelementet. Du kan sedan referera till dataelementet i regler för att tilldela de önskade variablerna.
+Frågesträngens parametervärde lagras i dataelementet. Du kan sedan referera till dataelementet i regler för att tilldela önskade variabler.
 
-## s.Util.getQueryParam() i AppMeasurement och den anpassade kodredigeraren för Analytics-tillägget
+## s.Util.getQueryParam() i AppMeasurementet och i den anpassade kodredigeraren för Analytics-tillägget
 
 Ring `s.Util.getQueryParam()` metod för att hämta ett frågesträngsvärde från webbläsarens URL. Strängargumentet som innehåller en frågesträngsparameter krävs. Den här metoden returnerar en sträng som du kan tilldela Analytics-variabler:
 
@@ -55,4 +56,4 @@ s.eVar1 = s.Util.getQueryParam("q2",customString,";");
 
 >[!TIP]
 >
->Ett liknande plugin-program med namnet [`s.getQueryParam`](../plugins/getqueryparam.md) är tillgängligt. Detta plugin-program innehåller mer avancerade funktioner, men är också mer komplext och ingår inte i AppMeasurement som standard.
+>Ett liknande plugin-program med namnet [`s.getQueryParam`](../plugins/getqueryparam.md) är tillgängligt. Detta plugin-program innehåller mer avancerade funktioner, men är också mer komplext och ingår inte i AppMeasurementet som standard.

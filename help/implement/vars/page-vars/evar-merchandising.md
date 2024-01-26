@@ -4,14 +4,15 @@ description: Egna variabler som knyts till enskilda produkter.
 feature: Variables
 exl-id: 26e0c4cd-3831-4572-afe2-6cda46704ff3
 mini-toc-levels: 3
-source-git-commit: 68389772dec0420a66767bb0af9dea3122e1cb0f
+role: Admin, Developer
+source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '528'
 ht-degree: 0%
 
 ---
 
-# eVar (Merchandising)
+# eVar (varuexponering)
 
 *Den här hjälpsidan beskriver hur du implementerar eVars för varuexponering. Mer information om hur eVars marknadsförs fungerar som en dimension finns i [eVars (marknadsföringsdimension)](/help/components/dimensions/evar-merchandising.md) i användarhandboken för komponenter.*
 
@@ -19,7 +20,7 @@ Mer information om hur du marknadsför eVars finns i [Merchandising eVars and pr
 
 ## Konfigurera eVars i inställningarna för rapportsviten
 
-Innan du använder eVars i implementeringen måste du konfigurera eVar till önskad syntax i rapportsvitens inställningar. Se [Konverteringsvariabler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/conversion-var-admin.md) i administrationshandboken.
+Innan du använder eVars i implementeringen måste du konfigurera eVarna till önskad syntax i rapportsvitens inställningar. Se [Konverteringsvariabler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/conversion-var-admin.md) i administrationshandboken.
 
 >[!WARNING]
 >
@@ -40,7 +41,7 @@ s.products = "Example category;Example product;1;5.99;event1=1;eVar1=Turtles";
 s.products = "Birds;Scarlet Macaw;1;4200;;eVar1=talking bird,Birds;Turtle dove;2;550;;eVar1=love birds";
 ```
 
-Värdet för `eVar1` har tilldelats produkten. Alla efterföljande lyckade händelser som berör den här produkten krediteras eVar.
+Värdet för `eVar1` är tilldelad produkten. Alla efterföljande lyckade händelser som berör den här produkten krediteras eVarna.
 
 ### Produktsyntax med Web SDK
 
@@ -88,9 +89,9 @@ Ovanstående exempelobjekt skickas till Adobe Analytics som `";Bahama Shirt;3;12
 
 ## Implementera med konverteringsvariabelsyntax
 
-Konverteringsvariabelsyntaxen används när eVar inte är tillgängligt för att anges i `products` variabel. Det här scenariot innebär vanligtvis att sidan inte har något sammanhang för försäljningskanalen eller sökmetoden. I dessa fall ställer du in variabeln för försäljning innan du kommer till produktsidan, och värdet kvarstår tills bindningshändelsen inträffar.
+Konverteringsvariabelsyntaxen används när eVarna inte är tillgänglig för att anges i `products` variabel. Det här scenariot innebär vanligtvis att sidan inte har något sammanhang för försäljningskanalen eller sökmetoden. I dessa fall ställer du in variabeln för försäljning innan du kommer till produktsidan, och värdet kvarstår tills bindningshändelsen inträffar.
 
-När bindningshändelsen som väljs under konfigurationen inträffar, associeras det beständiga värdet för eVar med produkten. Om `prodView` anges som bindningshändelse, är marknadsföringskategorin knuten till den aktuella produktlistan endast när händelsen inträffar. Endast efterföljande bindningshändelser kan uppdatera en försäljningsprodukt som redan har tilldelats en eVar.
+När bindningshändelsen som valts under konfigurationen inträffar, kopplas eVarnas beständiga värde till produkten. Om `prodView` anges som bindningshändelse, är marknadsföringskategorin knuten till den aktuella produktlistan endast när händelsen inträffar. Endast efterföljande bindningshändelser kan uppdatera en eVar som redan har tilldelats en produkt.
 
 ```js
 // Place on the same or previous page before the binding event:
@@ -103,14 +104,14 @@ s.products = ";Canary";
 
 Värdet `"Aviary"` for `eVar1` har tilldelats produkten `"Canary"`. Alla efterföljande lyckade händelser som berör den här produkten krediteras `"Canary"`. Dessutom är det aktuella värdet av variabeln merchandising knutet till alla efterföljande produkter tills något av följande villkor uppfylls:
 
-* eVar förfaller (baserat på inställningen &quot;Förfaller efter&quot;)
-* eVar för försäljning skrivs över med ett nytt värde.
+* EVarna förfaller (baserat på inställningen &quot;Förfaller efter&quot;)
+* Försäljningsvärdet skrivs över med ett nytt eVar.
 
 ### Konvertera variabelsyntax med Web SDK
 
 Konvertering av variabelsyntax med Web SDK fungerar på samma sätt som implementering av andra [eVars](evar.md) och [händelser](events/events-overview.md). XDM-speglingen av exemplet ovan skulle se ut så här:
 
-Ange eVar för samma eller föregående händelseanrop:
+Ange eVarna för samma eller föregående händelseanrop:
 
 ```js
 "_experience": {

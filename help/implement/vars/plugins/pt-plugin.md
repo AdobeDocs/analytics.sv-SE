@@ -3,9 +3,10 @@ title: pt
 description: Kör en funktion i en lista med variabler.
 feature: Variables
 exl-id: 2ab24a8e-ced3-43ea-bdb5-7c39810e4102
-source-git-commit: bbb138d979968ec2536e53ff07001b43156df095
+role: Admin, Developer
+source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
 workflow-type: tm+mt
-source-wordcount: '569'
+source-wordcount: '572'
 ht-degree: 0%
 
 ---
@@ -29,10 +30,10 @@ Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-program
 1. Gå till [!UICONTROL Extensions] klickar du på [!UICONTROL Catalog] knapp
 1. Installera och publicera [!UICONTROL Common Analytics Plugins] extension
 1. Om du inte redan har det skapar du en regel med namnet&quot;Initiera plugin-program&quot; med följande konfiguration:
-   * Villkor: Ingen
+   * Villkor: Inget
    * Händelse: Kärna - Bibliotek inläst (sidan ovanpå)
 1. Lägg till en åtgärd i ovanstående regel med följande konfiguration:
-   * Tillägg: Plugin-program för vanlig analys
+   * Tillägg: Plugin-program för gemensam analys
    * Åtgärdstyp: Initiera pt
 1. Spara och publicera ändringarna i regeln.
 
@@ -47,9 +48,9 @@ Om du inte vill använda tillägget för Common Analytics-plugin-program kan du 
 1. Öppna den anpassade kodredigeraren och klistra in den plugin-kod som finns nedan i redigeringsfönstret.
 1. Spara och publicera ändringarna i Analytics-tillägget.
 
-## Installera plugin-programmet med AppMeasurement
+## Installera plugin-programmet med AppMeasurementet
 
-Kopiera och klistra in följande kod var som helst i AppMeasurement-filen när Analytics-spårningsobjektet har instansierats (med [`s_gi`](../functions/s-gi.md)). Genom att bevara kommentarer och versionsnummer i koden i implementeringen kan Adobe felsöka eventuella problem.
+Kopiera och klistra in följande AppMeasurement var som helst i analysfilen efter att Analytics-spårningsobjektet har initierats (med [`s_gi`](../functions/s-gi.md)). Genom att bevara kommentarer och versionsnummer i koden i implementeringen kan Adobe felsöka eventuella problem.
 
 ```js
 /******************************************* BEGIN CODE TO DEPLOY *******************************************/
@@ -64,7 +65,7 @@ The `pt` funktionen använder följande argument:
 
 * **`l`** (required, string): En lista med variabler som funktionen i `cf` -argument kan köras mot.
 * **`de`** (valfri, sträng): Avgränsaren som avgränsar variabellistan i `l` argument. Standardvärdet är ett komma (`,`).
-* **`cf`** (required, string): Namnet på återanropsfunktionen i AppMeasurement-objektet som ska anropas mot var och en av variablerna i `l` argument.
+* **`cf`** (required, string): Namnet på callback-funktionen som finns i AppMeasurementet som ska anropas mot var och en av variablerna i `l` argument.
 * **`fa`** (valfri, sträng): Om funktionen i `cf` argument kräver ytterligare argument när det körs, ta med dem här. Standardvärdet är `undefined`.
 
 Anrop till den här funktionen returnerar ett värde om callback-funktionen (i `cf` argument) returnerar ett värde.
@@ -92,7 +93,7 @@ for(var i = 0; i < parametersLength; i++)
 }
 ```
 
-## Versionshistorik
+## Tidigare versioner
 
 ### 3.0 (19 mars 2021)
 

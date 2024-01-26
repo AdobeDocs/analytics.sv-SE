@@ -3,9 +3,10 @@ title: registerPreTrackCallback
 description: Skapa callback-funktioner innan du skickar en träff till Adobe.
 feature: Variables
 exl-id: 11c960d7-ded4-441a-822f-463d3a137d2d
-source-git-commit: 12d35a0f503ef79eabd55c169d9642c049542798
+role: Admin, Developer
+source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
 workflow-type: tm+mt
-source-wordcount: '410'
+source-wordcount: '401'
 ht-degree: 0%
 
 ---

@@ -3,9 +3,10 @@ title: getQueryParam
 description: Extrahera värdet för en URL:s frågesträngsparameter.
 feature: Variables
 exl-id: d2d542d1-3a18-43d9-a50d-c06d8bd473b8
-source-git-commit: bbb138d979968ec2536e53ff07001b43156df095
+role: Admin, Developer
+source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
 workflow-type: tm+mt
-source-wordcount: '736'
+source-wordcount: '738'
 ht-degree: 0%
 
 ---
@@ -16,7 +17,7 @@ ht-degree: 0%
 
 The `getQueryParam` Med plugin-programmet kan du extrahera värdet för alla frågesträngsparametrar som finns i en URL. Det är användbart för att extrahera kampanjkoder, både interna och externa, från URL:er för landningssidor. Det är också värdefullt när du extraherar söktermer eller andra frågesträngsparametrar.
 
-Detta plugin-program innehåller robusta funktioner för att analysera komplexa URL:er, inklusive hashvärden och URL:er som innehåller flera frågesträngsparametrar. Om du bara behöver ha en enkel frågesträngsparameter rekommenderar Adobe att du använder URL-parameterfunktionerna med hjälp av Web SDK eller Adobe Analytics-tillägget eller [`Util.getQueryParam()`](../functions/util-getqueryparam.md) som ingår i AppMeasurement.
+Detta plugin-program innehåller robusta funktioner för att analysera komplexa URL:er, inklusive hashvärden och URL:er som innehåller flera frågesträngsparametrar. Om du bara behöver ha en enkel frågesträngsparameter rekommenderar Adobe att du använder URL-parameterfunktionerna med hjälp av Web SDK eller Adobe Analytics-tillägget eller [`Util.getQueryParam()`](../functions/util-getqueryparam.md) som ingår i AppMeasurementet.
 
 ## Installera plugin-programmet med Web SDK-tillägget
 
@@ -26,7 +27,7 @@ Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-program
 1. Klicka **[!UICONTROL Tags]** till vänster och klicka sedan på den önskade taggegenskapen.
 1. Klicka **[!UICONTROL Extensions]** till vänster och klicka sedan på **[!UICONTROL Catalog]** tab
 1. Leta rätt på och installera **[!UICONTROL Common Web SDK Plugins]** tillägg.
-1. Klicka **[!UICONTROL Data Elements]** till vänster och klicka sedan på det önskade dataelementet.
+1. Klicka **[!UICONTROL Data Elements]** till vänster och klicka sedan på dataelementet.
 1. Ange det önskade dataelementnamnet med följande konfiguration:
    * Tillägg: Vanliga SDK-plugin-program för webben
    * Dataelement: `getQueryParam`
@@ -46,10 +47,10 @@ Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-program
 1. Gå till [!UICONTROL Extensions] klickar du på [!UICONTROL Catalog] knapp
 1. Installera och publicera [!UICONTROL Common Analytics Plugins] extension
 1. Om du inte redan har det skapar du en regel med namnet&quot;Initiera plugin-program&quot; med följande konfiguration:
-   * Villkor: Ingen
+   * Villkor: Inget
    * Händelse: Kärna - Bibliotek inläst (sidan ovanpå)
 1. Lägg till en åtgärd i ovanstående regel med följande konfiguration:
-   * Tillägg: Plugin-program för vanlig analys
+   * Tillägg: Plugin-program för gemensam analys
    * Åtgärdstyp: Initiera getQueryParam
 1. Spara och publicera ändringarna i regeln.
 
@@ -126,7 +127,7 @@ s.eVar1 = "https://example.com/?cid=trackingcode&ecid=123#location&pos=300";
 s.eVar2 = getQueryParam('ecid,cid,location,pos','|',s.eVar1);
 ```
 
-## Versionshistorik
+## Tidigare versioner
 
 ### 4.0.1 (26 mars 2021)
 
@@ -159,18 +160,18 @@ s.eVar2 = getQueryParam('ecid,cid,location,pos','|',s.eVar1);
 
 * Kompatibel med både H-kod och AppMeasurement (kräver `s.pt` med AppMeasurement).
 
-### 2.4
+### 2,4
 
-* Lagt till `h` -parameter, som gör att koden kan hitta frågesträngsparametrar som hittas efter hash (`#`)-tecken
+* Lagt till `h` -parameter, som gör att koden kan hitta frågesträngsparametrar som hittas efter hash (`#`)
 
-### 2.3
+### 2,3
 
 * Korrigerade ett regressionsproblem där plugin-programmet bara fungerade när hashen fanns efter spårningskoden
 
-### 2.2
+### 2,2
 
 * Tar nu bort hash-tecken (och allt efteråt) från returvärdet
 
-### 2.1
+### 2,1
 
 * Kompatibel med H.10-kod

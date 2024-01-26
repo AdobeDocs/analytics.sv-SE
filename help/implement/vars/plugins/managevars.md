@@ -3,9 +3,10 @@ title: manageVars
 description: Ändra värdena för mer än en Analytics-variabel åt gången.
 feature: Variables
 exl-id: b80d1c43-7e79-443e-84fb-1f1edffca461
-source-git-commit: bbb138d979968ec2536e53ff07001b43156df095
+role: Admin, Developer
+source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
 workflow-type: tm+mt
-source-wordcount: '663'
+source-wordcount: '668'
 ht-degree: 0%
 
 ---
@@ -29,10 +30,10 @@ Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-program
 1. Gå till [!UICONTROL Extensions] klickar du på [!UICONTROL Catalog] knapp
 1. Installera och publicera [!UICONTROL Common Analytics Plugins] extension
 1. Om du inte redan har det skapar du en regel med namnet&quot;Initiera plugin-program&quot; med följande konfiguration:
-   * Villkor: Ingen
+   * Villkor: Inget
    * Händelse: Kärna - Bibliotek inläst (sidan ovanpå)
 1. Lägg till en åtgärd i ovanstående regel med följande konfiguration:
-   * Tillägg: Plugin-program för vanlig analys
+   * Tillägg: Plugin-program för gemensam analys
    * Åtgärdstyp: Initiera manageVars
 1. Spara och publicera ändringarna i regeln.
 
@@ -47,9 +48,9 @@ Om du inte vill använda tillägget för Common Analytics-plugin-program kan du 
 1. Öppna den anpassade kodredigeraren och klistra in den plugin-kod som finns nedan i redigeringsfönstret.
 1. Spara och publicera ändringarna i Analytics-tillägget.
 
-## Installera plugin-programmet med AppMeasurement
+## Installera plugin-programmet med AppMeasurementet
 
-Kopiera och klistra in följande kod var som helst i AppMeasurement-filen när Analytics-spårningsobjektet har instansierats (med [`s_gi`](../functions/s-gi.md)). Genom att bevara kommentarer och versionsnummer i koden i implementeringen kan Adobe felsöka eventuella problem.
+Kopiera och klistra in följande AppMeasurement var som helst i analysfilen efter att Analytics-spårningsobjektet har initierats (med [`s_gi`](../functions/s-gi.md)). Genom att bevara kommentarer och versionsnummer i koden i implementeringen kan Adobe felsöka eventuella problem.
 
 ```js
 /******************************************* BEGIN CODE TO DEPLOY *******************************************/
@@ -63,7 +64,7 @@ function manageVars(cb,l,il){var g=cb,c=l,d=il;if("-v"===g)return{plugin:"manage
 The `manageVars` funktionen använder följande argument:
 
 * **`cb`** (required, string): Namnet på en callback-funktion som plugin-programmet använder för att ändra Analytics-variablerna. Du kan använda en Adobe-funktion som `cleanStr` eller en egen funktion.
-* **`l`** (valfri, sträng): En kommaavgränsad lista med Analytics-variabler som du vill ändra. Standardvärdet är ALLA Adobe Analytics-variabler när de inte anges, vilket inkluderar:
+* **`l`** (valfri sträng): En kommaavgränsad lista med Analytics-variabler som du vill ändra. Standardvärdet är ALLA Adobe Analytics-variabler när de inte är inställda, vilket inkluderar:
    * `pageName`
    * `purchaseID`
    * `channel`
@@ -80,7 +81,7 @@ The `manageVars` funktionen använder följande argument:
    * Alla hierarkivariabler
    * Alla listvariabler
    * Alla kontextdatavariabler
-* **`Il`** (valfritt, boolesk): Ange till `false` om du vill *exclude* förteckningen över variabler som deklarerats i `l` i stället för att ta med dem. Standardvärdet är `true`.
+* **`Il`** (valfritt, booleskt): Ange som `false` om du vill *exclude* förteckningen över variabler som deklarerats i `l` i stället för att ta med dem. Standardvärdet är `true`.
 
 Anrop till den här funktionen returnerar ingenting. I stället ändras värdena för Analytics-variabler baserat på den önskade callback-funktionen.
 
@@ -104,7 +105,7 @@ Följande kod...
 manageVars("lowerCaseVars", "events", false);
 ```
 
-...ger i stort sett exakt samma resultat som det första exemplet eftersom händelsvariabeln inte sänks som standard.
+...ger i stort sett exakt samma resultat som det första exemplet eftersom variabeln events inte sänks som standard.
 
 ### Exempel 3
 
@@ -114,7 +115,7 @@ Följande kod...
 manageVars("lowerCaseVars", "eVar1,eVar2,eVar3,list2");
 ```
 
-...ändrar (t.ex. gemener) endast värdena för eVar1, eVar2, eVar3 och list2
+... ändrar (t.ex. gemener) endast värdena för eVar1, eVar2, eVar3 och list2
 
 ### Exempel 4
 
@@ -124,7 +125,7 @@ Följande kod...
 manageVars("lowerCaseVars", "eVar1,eVar2,eVar3,list2", false);
 ```
 
-...kommer att ändra (t.ex. gemener) värdena för alla variabler som beskrivs ovan, EXCEPT för eVar1, eVar2, eVar3 och list2
+... kommer att ändra (t.ex. gemener) värdena för alla de variabler som beskrivs ovan, EXCEPT för eVar1, eVar2, eVar3 och list2
 
 ### Exempel 5
 
@@ -134,7 +135,7 @@ Följande kod...
 manageVars("cleanStr");
 ```
 
-...ändrar värdena för alla de variabler som beskrivs ovan, inklusive händelsvariablerna.  Callback-funktionen clearStr gör följande med varje variabels värde:
+...ändrar värdena för alla de variabler som beskrivs ovan, inklusive händelsevariablerna.  Callback-funktionen clearStr gör följande med varje variabels värde:
 
 * Tar bort kodningen HTML
 * Tar bort blanksteg som hittats i början och slutet av värdet
@@ -142,7 +143,7 @@ manageVars("cleanStr");
 * Ersätter tabbtecken, radmatningstecken och radmatningstecken med blanksteg
 * Ersätter alla dubbla (eller tre, osv.) blanksteg med enkla blanksteg
 
-## Versionshistorik
+## Tidigare versioner
 
 ### 3.0 (19 mars 2021)
 
@@ -151,9 +152,9 @@ manageVars("cleanStr");
 ### 2.1 (14 januari 2019)
 
 * Felkorrigering för Internet Explorer 11-webbläsare.
-* Ändringar för `s.cleanStr`, som nu använder `cleanStr` funktion.
+* Ändringar för `s.cleanStr`som nu använder den vanliga `cleanStr` funktion.
 
 ### 2.0 (7 maj 2018)
 
-* Point release (inklusive fullständig omanalys/omskrivning av plugin-program)
+* Point-release (inklusive fullständig omanalys/omskrivning av plugin-program)
 * Tillagd `cleanStr` callback-funktion

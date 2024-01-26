@@ -4,10 +4,10 @@ audience: all
 user-guide-title: Implementeringshandbok för Analytics
 breadcrumb-title: Implementeringshandbok
 user-guide-description: Lär dig hur du implementerar Adobe Analytics. Anpassa vilka data som samlas in för att få ut så mycket som möjligt av Analytics-data.
-source-git-commit: 44830c4e68c4d6f9cace620e81d7adeda1de3563
+source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
 workflow-type: tm+mt
-source-wordcount: '412'
-ht-degree: 73%
+source-wordcount: '402'
+ht-degree: 17%
 
 ---
 
@@ -16,12 +16,12 @@ ht-degree: 73%
 
 + [Implementera Adobe Analytics](home.md)
 + [Versionsinformation om Analytics](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html)
-+ [Versionsinformation för AppMeasurement](appmeasurement-updates.md)
++ [Versionsinformation om AppMeasurement](appmeasurement-updates.md)
 + Variabler, funktioner och metoder för Analytics {#vars}
    + [Översikt](vars/overview.md)
    + Konfigurationsvariabler {#config-vars}
       + [Översikt över konfigurationsvariabler](vars/config-vars/configuration-variables.md)
-      + [avbryt](vars/config-vars/abort.md)
+      + [avbryta](vars/config-vars/abort.md)
       + [konto](vars/config-vars/account.md)
       + [charSet](vars/config-vars/charset.md)
       + [collectHighEntropyUserAgentHints](vars/config-vars/collecthighentropyuseragenthints.md)
@@ -60,28 +60,28 @@ ht-degree: 73%
       + [contextData](vars/page-vars/contextdata.md)
       + [Dynamiska variabler](vars/page-vars/dynamic-variables.md)
       + [eVar](vars/page-vars/evar.md)
-      + [eVar (Merchandising)](vars/page-vars/evar-merchandising.md)
+      + [eVar (varuexponering)](vars/page-vars/evar-merchandising.md)
       + händelser {#events}
          + [Översikt över händelser](vars/page-vars/events/events-overview.md)
          + [Inköpshändelse](vars/page-vars/events/event-purchase.md)
          + [Händelseserialisering](vars/page-vars/events/event-serialization.md)
-      + [hierarki](vars/page-vars/hier.md)
-      + [lista](vars/page-vars/list.md)
+      + [hövding](vars/page-vars/hier.md)
+      + [list](vars/page-vars/list.md)
       + [pageName](vars/page-vars/pagename.md)
       + [pageType](vars/page-vars/pagetype.md)
       + [pageURL](vars/page-vars/pageurl.md)
       + [produkter](vars/page-vars/products.md)
-      + [egenskap](vars/page-vars/prop.md)
+      + [prop](vars/page-vars/prop.md)
       + [purchaseID](vars/page-vars/purchaseid.md)
-      + [referent](vars/page-vars/referrer.md)
+      + [hänvisare](vars/page-vars/referrer.md)
       + [s_objectID](vars/page-vars/s-objectid.md)
       + [server](vars/page-vars/server.md)
-      + [tillstånd](vars/page-vars/state.md)
+      + [läge](vars/page-vars/state.md)
       + [tidsstämpel](vars/page-vars/timestamp.md)
       + [transactionID](vars/page-vars/transactionid.md)
       + [zip](vars/page-vars/zip.md)
    + Funktioner och metoder {#functions}
-      + [Översikt över funktioner](vars/functions/overview.md)
+      + [Funktioner - översikt](vars/functions/overview.md)
       + [s_gi](vars/functions/s-gi.md)
       + [t](vars/functions/t-method.md)
       + [tl](vars/functions/tl-method.md)
@@ -101,7 +101,7 @@ ht-degree: 73%
       + [addProductEvar](vars/plugins/addproductevar.md)
       + [addProductEvent](vars/plugins/addproductevent.md)
       + [apl](vars/plugins/apl.md)
-      + [cleanStr](vars/plugins/cleanstr.md)
+      + [clearStr](vars/plugins/cleanstr.md)
       + [formatTime](vars/plugins/formattime.md)
       + [getAndPersistValue](vars/plugins/getandpersistvalue.md)
       + [getGeoCoordinates](vars/plugins/getgeocoordinates.md)
@@ -130,16 +130,16 @@ ht-degree: 73%
 + Förberedelser inför att implementera Adobe Analytics {#prepare}
    + [Skapa ett datalager](prepare/data-layer.md)
    + [Jämför implementeringsmetoder](prepare/comparison.md)
-   + [Att tänka på för den globala rapportsviten](prepare/global-rs.md)
+   + [Överväganden för globala rapportsviter](prepare/global-rs.md)
    + [Implementera märkning för flera programsviter](prepare/multi-suite-tagging.md)
    + [Skapa ett dokument för lösningsdesign](prepare/solution-design.md)
    + [Ta hand om en befintlig Adobe Analytics-implementering](prepare/existing-implementation.md)
 + Implementera analyser med Experience Platform Edge {#aep-edge}
    + [Översikt över Experience Edge](aep-edge/overview.md)
    + [Variabelmappning](aep-edge/variable-mapping.md)
-   + Webb-SDK {#web-sdk}
-      + [Översikt över webb-SDK](aep-edge/web-sdk/overview.md)
-   + Mobil-SDK {#mobile-sdk}
+   + Web SDK {#web-sdk}
+      + [Web SDK - översikt](aep-edge/web-sdk/overview.md)
+   + Mobile SDK {#mobile-sdk}
       + [Mobile SDK - översikt](aep-edge/mobile-sdk/overview.md)
    + Server-API {#server-api}
       + [Översikt över server-API](aep-edge/server-api/overview.md)
@@ -151,40 +151,39 @@ ht-degree: 73%
    + [Mappa datalagerobjekt till dataelement](launch/layer-to-elements.md)
    + [Mappa taggdataelement till analysvariabler](launch/elements-to-variable.md)
 + Implementera Analytics med JavaScript {#js}
-   + [Översikt över JavaScript](js/overview.md)
+   + [JavaScript - översikt](js/overview.md)
    + [Implementera länkar för avanmälan](js/opt-out.md)
    + [Variabla åsidosättningar](js/overrides.md)
    + [Migrera från H-kod](js/migrate-from-hcode.md)
    + H-kod {#h-code}
-      + [Översikt över H-kod](js/h-code/overview.md)
+      + [H-kodöversikt](js/h-code/overview.md)
       + Dynamiska konton {#dynamicaccount}
          + [Översikt över dynamiska konton](js/h-code/dynamicaccount/overview.md)
          + [dynamicAccountList](js/h-code/dynamicaccount/dynamicaccountlist.md)
          + [dynamicAccountMatch](js/h-code/dynamicaccount/dynamicaccountmatch.md)
          + [dynamicAccountSelection](js/h-code/dynamicaccount/dynamicaccountselection.md)
-      + [Felsök H-kod](js/h-code/troubleshooting.md)
+      + [Felsök H-koden](js/h-code/troubleshooting.md)
    + Identifiering av olika äldre enheter {#xdevice-visid}
-      + [Översikt över hur man ansluter användare på flera olika enheter](js/xdevice-visid/xdevice-connecting.md)
+      + [Ansluta användare till olika enheter - översikt](js/xdevice-visid/xdevice-connecting.md)
       + [Variabel beständighet](js/xdevice-visid/variable-persistence.md)
-      + [Besök exempel](js/xdevice-visid/visit-example.md)
-      + [Vanliga frågor om olika äldre enheter](js/xdevice-visid/xdevice-faq.md)
-   + [Felsök AppMeasurement](js/troubleshooting.md)
+      + [Exempel på besök](js/xdevice-visid/visit-example.md)
+      + [Vanliga frågor och svar om äldre enheter](js/xdevice-visid/xdevice-faq.md)
+   + [Felsök AppMeasurementet](js/troubleshooting.md)
 + Implementera Analytics på andra plattformar {#other}
-   + [Implementera Analytics med hårdkodade bildbegäranden](other/hardcoded.md)
-   + [Implementera Analytics med DTM](other/dtm-implementation-overview.md)
-   + [Implementera Analytics på Ajax](other/ajax.md)
-   + [Implementera Analytics på AMP](other/amp.md)
-   + [Implementera Analytics på digitala assistenter](other/digital-assistants.md)
-   + [Implementera Analytics på Facebook Instant Articles](other/fb-instant-articles.md)
-+ [Implementera Analytics på mobila enheter](mobile-device-sdk.md)
+   + [Implementera analyser med hårdkodade bildförfrågningar](other/hardcoded.md)
+   + [Implementera analyser på Ajax](other/ajax.md)
+   + [Implementera analyser på AMP](other/amp.md)
+   + [Implementera analyser om digitala assistenter](other/digital-assistants.md)
+   + [Implementera analyser på Facebook Instant Articles](other/fb-instant-articles.md)
++ [Implementera analyser på mobila enheter](mobile-device-sdk.md)
 + Användningsfall för implementering {#use-cases}
    + [Använd AppMeasurement med iFrames](use-cases/iframe.md)
-   + [Spåra på olika implementeringstyper](use-cases/cross-type-implementation.md)
+   + [Spåra olika implementeringstyper](use-cases/cross-type-implementation.md)
    + [Arbetsflöde för kampanjspårning](use-cases/campaign-tracking.md)
 + Validera din implementering {#validate}
-   + [Äldre Adobe Experience Cloud-felsökare](validate/debugger.md)
+   + [Äldre Adobe Experience Cloud-felsökning](validate/debugger.md)
    + [Frågeparametrar för datainsamling](validate/query-parameters.md)
-   + [Paketövervakare](validate/packet-monitor.md)
+   + [Packet monitor](validate/packet-monitor.md)
    + [Hash-kollisioner](validate/hash-collisions.md)
 + [Frågor och svar](faq.md)
 + Granska implementeringen {#review}

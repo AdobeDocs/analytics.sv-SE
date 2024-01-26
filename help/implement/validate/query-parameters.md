@@ -3,10 +3,11 @@ title: Frågeparametrar för datainsamling
 description: Visar alla frågesträngsparametrar som används i bildbegäranden.
 feature: Validation
 exl-id: 2eb2ade7-a3db-4b00-8a70-2632d1c0aaaf
-source-git-commit: 74920ff0e518d18697df9aaac8de92e831bb7c03
+role: Admin, Developer, Leader, User
+source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
 workflow-type: tm+mt
-source-wordcount: '718'
-ht-degree: 5%
+source-wordcount: '722'
+ht-degree: 4%
 
 ---
 
@@ -49,9 +50,9 @@ I följande tabell visas alla frågesträngsparametrar som Adobe använder i bil
 | `l1` - `l3` | [`list1` - `list3`](../vars/page-vars/list.md) | Listvariabler. |
 | `lrt` | Ingen | Tidsåtgången för senaste begäran, som är tidsåtgången vid växling till och från den senaste begäran, i millisekunder. Det skickas bara när mer än en begäran går ut från en sida eller när sidan är ett ensidigt program (SPA). |
 | `mid` | Ingen | Experience Cloud besökar-ID. |
-| `ndh` | Ingen | En flagga som anger om bildbegäran härstammar från AppMeasurement. |
+| `ndh` | Ingen | En flagga som anger om bildbegäran kom från AppMeasurementet. |
 | `ns` | [`visitorNameSpace`](../vars/config-vars/visitornamespace.md) | Hjälper till att avgöra var cookies är inställda. |
-| `oid` | [`s_objectID`](../vars/page-vars/s-objectid.md) | Objektidentifierare för den sista sidan. Används i Activity Map. |
+| `oid` | [`s_objectID`](../vars/page-vars/s-objectid.md) | Objekt-ID för den sista sidan. Används i Activity Map. |
 | `ot` | Ingen | Objektnamn för den sista sidan. Används i tidigare versioner av Activity Map. |
 | `p` | Ingen | Används inte längre. Lista över plugin-program som används i webbläsaren. |
 | `pageName` | [`pageName`](../vars/page-vars/pagename.md) | Används i [Sida](/help/components/dimensions/page.md) dimension. |
@@ -61,13 +62,13 @@ I följande tabell visas alla frågesträngsparametrar som Adobe använder i bil
 | `pev1` | Ingen | Den URL som den anpassade länken inträffade på. |
 | `pev2` | [`tl()`](../vars/functions/tl-method.md) | Eget länknamn. |
 | `pev3` | Ingen | Används inte längre. Spårade milstolpar i tidigare versioner av videorapporter. |
-| `pf` | Ingen | Plattformsflagga. endast för Adobe. Får ej ändras. |
-| `pid` | Ingen | Sididentifierare för sista sidan. Används i tidigare versioner av Activity Map. |
+| `pf` | Ingen | Plattformsflagga, endast för Adobe. Får ej ändras. |
+| `pid` | Ingen | Sid-ID för sista sidan. Används i tidigare versioner av Activity Map. |
 | `pidt` | Ingen | Sididentifierartyp för sista sidan. Används i tidigare versioner av Activity Map. |
 | `pl` | [`products`](../vars/page-vars/products.md) | Shorthand for the `products` frågesträng. |
 | `products` | [`products`](../vars/page-vars/products.md) | Variabeln Produkter. Används i [Produkt](/help/components/dimensions/product.md) och [Kategori](/help/components/dimensions/category.md) dimensioner. |
 | `purchaseID` | [`purchaseID`](../vars/page-vars/purchaseid.md) | Används för att deduplicera inköp. |
-| `r` | [`referrer`](../vars/page-vars/referrer.md) | URL för träffen. Används i dimensionerna för trafikkällor, t.ex. [Referent](/help/components/dimensions/referrer.md) och [Refererande domän](/help/components/dimensions/referring-domain.md) |
+| `r` | [`referrer`](../vars/page-vars/referrer.md) | URL för träffen. Används i dimensionerna för trafikkällor, till exempel [Referent](/help/components/dimensions/referrer.md) och [Refererande domän](/help/components/dimensions/referring-domain.md) |
 | `s` | Ingen | Skärmupplösning, i `width x height`. Används i [Övervaka upplösningar](/help/components/dimensions/monitor-resolution.md) dimension. |
 | `server` | [`server`](../vars/page-vars/server.md) | [Server](/help/components/dimensions/server.md) dimension. |
 | `sv` | [`server`](../vars/page-vars/server.md) | Shorthand for the `server` frågesträng. |
@@ -78,7 +79,7 @@ I följande tabell visas alla frågesträngsparametrar som Adobe använder i bil
 | `v0` | [`campaign`](../vars/page-vars/campaign.md) | [Spårningskod](/help/components/dimensions/tracking-code.md) dimension. |
 | `v1` - `v250` | [`evar1` - `eVar250`](../vars/page-vars/evar.md) | [eVars](/help/components/dimensions/evar.md)eller anpassade konverteringsdimensioner. |
 | `vid` | [`visitorID`](../vars/config-vars/visitorid.md) | Variabel för besökar-ID. |
-| `vidn` | Ingen | Ange som AppMeasurement för nya besökare. Innehåller ID-värdet som lagras i besökarens cookie. |
+| `vidn` | Ingen | Ange efter AppMeasurement för nya besökare. Innehåller ID-värdet som lagras i besökarens cookie. |
 | `vmk` | `vmk` | Används inte längre. Nyckel för migrering av besökare, som hjälper till att migrera implementeringar från tredje part till cookies från första part. |
 | `vvp` | `variableProvider` | Används i Data Connectors. |
 | `xact` | [`transactionID`](../vars/page-vars/transactionid.md) | Används tillsammans med datakällor för att knyta samman online- och offlinedata. |

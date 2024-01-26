@@ -3,10 +3,11 @@ title: trackingServer
 description: Ange vilken plats bildbegäranden ska skickas till.
 feature: Variables
 exl-id: bcc23286-4dd5-45ac-ac6f-7b60e95cb798
-source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
+role: Admin, Developer
+source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
 workflow-type: tm+mt
-source-wordcount: '543'
-ht-degree: 1%
+source-wordcount: '521'
+ht-degree: 0%
 
 ---
 
@@ -16,7 +17,7 @@ Adobe samlar in data på er webbplats genom att ta emot en bildförfrågan som g
 
 >[!WARNING]
 >
->Om du ändrar det här värdet får AppMeasurement att söka efter cookies på en annan plats. Unikt besökarantal kan tillfälligt öka i rapporteringen när besökarcookies anges på den nya platsen.
+>Om du ändrar det här värdet söker AppMeasurementet efter cookies på en annan plats. Unikt besökarantal kan tillfälligt öka i rapporteringen när besökarcookies anges på den nya platsen.
 
 ## Edge domain using the Web SDK extension
 
@@ -27,11 +28,11 @@ Web SDK använder [!UICONTROL Edge domain] för att hantera både spårningsserv
 1. Gå till [!UICONTROL Extensions] klickar du på **[!UICONTROL Configure]** knapp under [!UICONTROL Adobe Experience Platform Web SDK].
 1. Ange önskat **[!UICONTROL Edge domain]** textfält.
 
-Se [Konfigurera Adobe Experience Platform Web SDK-tillägget](https://experienceleague.adobe.com/docs/experience-platform/edge/extension/web-sdk-extension-configuration.html) i Web SDK-dokumentationen om du vill ha mer information.
+Se [Konfigurera Adobe Experience Platform Web SDK-tillägget](https://experienceleague.adobe.com/docs/experience-platform/edge/extension/web-sdk-extension-configuration.html) finns i Web SDK-dokumentationen.
 
 >[!TIP]
 >
->Om organisationen går över till Web SDK från en AppMeasurement- eller Analytics-tilläggsimplementering kan det här fältet använda samma värde som i `trackingServerSecure` (eller `trackingServer`).
+>Om din organisation går över till Web SDK från en implementering av ett AppMeasurement- eller Analytics-tillägg kan det här fältet använda samma värde som i `trackingServerSecure` (eller `trackingServer`).
 
 ## Edge domain implementerar Web SDK manuellt
 
@@ -54,7 +55,7 @@ Spårningsservern är ett fält under [!UICONTROL General] när du konfigurerar 
 
 Om fältet lämnas tomt blir standardvärdet `[rsid].data.adobedc.net`.
 
-## s.trackingServer i AppMeasurement och den anpassade kodredigeraren i Analytics-tillägget
+## s.trackingServer i AppMeasurementet och den anpassade kodredigeraren för Analytics-tillägget
 
 The `s.trackingServer` variabeln är en sträng som innehåller platsen där data ska skickas.
 

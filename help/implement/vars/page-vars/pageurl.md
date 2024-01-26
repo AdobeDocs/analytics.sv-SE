@@ -3,20 +3,21 @@ title: pageURL
 description: Åsidosätt den automatiskt insamlade sidans URL på din webbplats.
 feature: Variables
 exl-id: 411f894d-c31f-4d07-9568-b0b02786735d
-source-git-commit: 6de20d2fbbab6ded6c92f0c6f3536671f4b2ae46
+role: Admin, Developer
+source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
 workflow-type: tm+mt
-source-wordcount: '300'
+source-wordcount: '292'
 ht-degree: 0%
 
 ---
 
 # pageURL
 
-AppMeasurement samlar automatiskt in sidans URL i varje träff. Om du vill åsidosätta sidans URL som samlas in automatiskt av AppMeasurement kan du använda den här variabeln. I de flesta fall behöver du inte ange den här variabeln.
+AppMeasurementet samlar automatiskt in sidans URL i varje träff. Om du vill åsidosätta sidans URL som samlas in automatiskt som AppMeasurement kan du använda den här variabeln. I de flesta fall behöver du inte ange den här variabeln.
 
 >[!NOTE]
 >
->Den här variabeln är inte en tillgänglig dimension i Analysis Workspace. Det är bara tillgängligt i Data warehouse och Dataflöden. Dessutom kan datainsamlingsservrar i Adobe ta bort den här dimensionen från alla [länkspårning](/help/implement/vars/functions/tl-method.md) bildbegäranden. Om du vill använda sidans URL som en dimension i Analysis Workspace eller om du vill använda den här dimensionen i länkspårningsträffar bör du skicka `pageURL` variabel till [eVar](evar.md) på varje träff.
+>Denna variabel är inte en tillgänglig dimension i Analysis Workspace. Det är bara tillgängligt i Data Warehouse- och datafeeds. Dessutom kan datainsamlingsservrar i Adobe ta bort den här dimensionen från alla [länkspårning](/help/implement/vars/functions/tl-method.md) bildbegäranden. Om du vill använda sidans URL som en dimension i Analysis Workspace eller om du vill använda den här dimensionen i länkspårningsträffar bör du skicka `pageURL` variabel till [eVar](evar.md) på varje träff.
 
 ## Sid-URL med Web SDK
 
@@ -35,9 +36,9 @@ Analystillägget i Adobe Experience Platform Data Collection fyller automatiskt 
 
 Du kan ange sidans URL till valfritt strängvärde.
 
-## s.pageURL i AppMeasurement och den anpassade kodredigeraren för Analytics-tillägget
+## s.pageURL i AppMeasurementet och den anpassade kodredigeraren för Analytics-tillägget
 
-The `s.pageURL` variabeln är en sträng som innehåller sidans URL. AppMeasurement samlar automatiskt in den här variabeln, men du kan åsidosätta dess värde om du vill.
+The `s.pageURL` variabeln är en sträng som innehåller sidans URL. AppMeasurementet samlar automatiskt in den här variabeln, men du kan åsidosätta dess värde om du vill.
 
 ```js
 s.pageURL = "https://example.com";

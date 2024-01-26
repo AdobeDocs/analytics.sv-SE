@@ -3,7 +3,8 @@ title: addProductEvar
 description: Lägger till eVars för försäljning i variabeln products.
 feature: Variables
 exl-id: 6be94a15-78c9-4cbc-8b33-4a16f1b73b96
-source-git-commit: bbb138d979968ec2536e53ff07001b43156df095
+role: Admin, Developer
+source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
 workflow-type: tm+mt
 source-wordcount: '512'
 ht-degree: 0%
@@ -14,7 +15,7 @@ ht-degree: 0%
 
 {{plug-in}}
 
-The `addProductEvar` Med plugin-programmet kan du enkelt lägga till en Adobe Analytics-eVar som använder produktsyntax i variabeln products utan att behöva bekymra dig om det redan befintliga innehållet i variabeln products ska ändras/flyttas/tas bort. Adobe rekommenderar att du använder denna plugin om du enkelt vill lägga till produktsyntax för varuexponering för eVars i [`products`](../page-vars/products.md) variabel. Du behöver inte använda `addProductEvar` plugin-program om du inte använder varuexponering för eVars med produktsyntax.
+The `addProductEvar` Med plugin-programmet kan du enkelt lägga till en Adobe Analytics-eVar som använder produktsyntax i variabeln products utan att behöva oroa dig för om det redan befintliga innehållet i variabeln products ska ändras/flyttas/tas bort. Adobe rekommenderar att du använder denna plugin om du enkelt vill lägga till produktsyntax för varuexponering för eVars i [`products`](../page-vars/products.md) variabel. Du behöver inte använda `addProductEvar` plugin-program om du inte använder varuexponering för eVars med produktsyntax.
 
 >[!NOTE]
 >
@@ -33,10 +34,10 @@ Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-program
 1. Gå till [!UICONTROL Extensions] klickar du på [!UICONTROL Catalog] knapp
 1. Installera och publicera [!UICONTROL Common Analytics Plugins] extension
 1. Om du inte redan har det skapar du en regel med namnet&quot;Initiera plugin-program&quot; med följande konfiguration:
-   * Villkor: Ingen
+   * Villkor: Inget
    * Händelse: Kärna - Bibliotek inläst (sidan ovanpå)
 1. Lägg till en åtgärd i ovanstående regel med följande konfiguration:
-   * Tillägg: Plugin-program för vanlig analys
+   * Tillägg: Plugin-program för gemensam analys
    * Åtgärdstyp: Initiera addProductEvar
 1. Spara och publicera ändringarna i regeln.
 
@@ -51,9 +52,9 @@ Om du inte vill använda tillägget för Common Analytics-plugin-program kan du 
 1. Öppna den anpassade kodredigeraren och klistra in den plugin-kod som finns nedan i redigeringsfönstret.
 1. Spara och publicera ändringarna i Analytics-tillägget.
 
-## Installera plugin-programmet med AppMeasurement
+## Installera plugin-programmet med AppMeasurementet
 
-Kopiera och klistra in följande kod var som helst i AppMeasurement-filen när Analytics-spårningsobjektet har instansierats (med [`s_gi`](../functions/s-gi.md)). Genom att bevara kommentarer och versionsnummer i koden i implementeringen kan Adobe felsöka eventuella problem.
+Kopiera och klistra in följande AppMeasurement var som helst i analysfilen efter att Analytics-spårningsobjektet har initierats (med [`s_gi`](../functions/s-gi.md)). Genom att bevara kommentarer och versionsnummer i koden i implementeringen kan Adobe felsöka eventuella problem.
 
 ```js
 /******************************************* BEGIN CODE TO DEPLOY *******************************************/
@@ -66,11 +67,11 @@ function addProductEvar(en,ev,ap){var e=en,f=ev,d=ap;if("-v"===e)return{plugin:"
 
 The `addProductEvar` I plugin-programmet används följande argument:
 
-* **`en`** (required, string): eVar som ska läggas till i den sista posten som finns i variabeln products. Om variabeln products är tom skapar plugin-programmet en tom produktpost med det eVar som är bifogat till slutet av posten.
-* **`ev`** (required, string): Värdet som tilldelats eVar.
-* **`ap`** (valfritt, boolesk): Om variabeln products för närvarande innehåller mer än en produktpost läggs eVar till med värdet true (eller 1) **alla** produktposterna.  Standardvärdet är false (eller 0), vilket innebär att eVar läggs till endast i **sista** som ingår i variabeln products.
+* **`en`** (required, string): Den eVar som ska läggas till i den sista posten som finns i variabeln products. Om variabeln products är tom skapar plugin-programmet en&quot;tom&quot; produktpost med eVarna kopplad till slutet av posten.
+* **`ev`** (required, string): Det värde som tilldelats eVarna.
+* **`ap`** (valfritt, booleskt): Om variabeln products innehåller mer än en produktpost läggs värdet true (eller 1) till eVarna i **alla** produktposterna.  Standardvärdet är false (eller 0), vilket innebär att eVarna endast läggs till i **sista** som ingår i variabeln products.
 
-The `addProductEvar` plugin-programmet returnerar ingenting. I stället läggs eVar (och eVar) som anges i `en` och `ev` argument till `products` variabel.
+The `addProductEvar` plugin-programmet returnerar ingenting. I stället läggs eVar- (och eVar-värdet) som anges i `en` och `ev` argument till `products` variabel.
 
 ## Exempel
 
@@ -99,7 +100,7 @@ addProductEvar("eVar1", "red", true);
 addProductEvar("eVar1", "blue");
 ```
 
-## Versionshistorik
+## Tidigare versioner
 
 ### 2.0 (19 mars 2021)
 

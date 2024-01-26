@@ -1,16 +1,17 @@
 ---
-title: avbryt
+title: avbryta
 description: Variabeln abort är en boolesk variabel som förhindrar att en träff skickas till datainsamlingsservrar i Adobe.
 feature: Variables
 exl-id: e4e25a89-272b-4444-b52b-c7fe2478ff30
-source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
+role: Admin, Developer
+source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '310'
 ht-degree: 0%
 
 ---
 
-# avbryt
+# avbryta
 
 The `abort` är en boolesk variabel som kan förhindra att nästa spårningsanrop skickas till Adobe. Liknande funktioner finns i Web SDK, som gör att du kan returnera `false` innan en XDM-händelse skickas.
 
@@ -30,7 +31,7 @@ return false;
 
 ## Avbryt sändning av en händelse som implementerar Web SDK manuellt
 
-Använd `onBeforeEventSend` callback och return `false`. Se [Ändra händelser globalt](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/tracking-events.html#modifying-events-globally) i Web SDK-dokumentationen om du vill ha mer information.
+Använd `onBeforeEventSend` callback och return `false`. Se [Ändra händelser globalt](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/tracking-events.html#modifying-events-globally) finns i Web SDK-dokumentationen.
 
 ```js
 alloy("configure"), {
@@ -42,7 +43,7 @@ alloy("configure"), {
 
 ## Använda variabeln abort i Adobe Analytics-tillägget
 
-Det finns inget dedikerat fält i Adobe Analytics-tillägget som kan använda den här variabeln. Använd den anpassade kodredigeraren efter AppMeasurement-syntax.
+Det finns inget dedikerat fält i Adobe Analytics-tillägget som kan använda den här variabeln. Använd den anpassade kodredigeraren enligt AppMeasurementen syntax.
 
 ## s.abort in AppMeasurement and the Analytics extension custom code editor
 
@@ -59,7 +60,7 @@ s.abort = true;
 >
 >The `abort` variabeln återställs till `false` efter varje spårningssamtal. Om du behöver avbryta efterföljande spårningsanrop på samma sida anger du `abort` till `true` igen.
 
-Till exempel `abort` kan anges i [`doPlugins()`](../functions/doplugins.md) -funktion, som är den sista funktionen som körs innan en bildbegäran skickas till Adobe. Det här exemplet fungerar på liknande sätt som `onBeforeEventSend` återanrop med Web SDK.
+Till exempel `abort` variabeln kan anges i [`doPlugins()`](../functions/doplugins.md) -funktion, som är den sista funktionen som körs innan en bildbegäran skickas till Adobe. Det här exemplet fungerar ungefär som `onBeforeEventSend` återanrop med Web SDK.
 
 ```js
 s.doPlugins = function(s) {

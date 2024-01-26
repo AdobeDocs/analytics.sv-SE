@@ -3,9 +3,10 @@ title: t
 description: Skicka ett spårningsanrop för sidvy till Adobe.
 feature: Variables
 exl-id: c4f5b9e2-57a3-4d89-8378-39b7a4737afc
-source-git-commit: 6de20d2fbbab6ded6c92f0c6f3536671f4b2ae46
+role: Admin, Developer
+source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '432'
 ht-degree: 0%
 
 ---
@@ -14,7 +15,7 @@ ht-degree: 0%
 
 The `t()` är en viktig komponent i Adobe Analytics. Den tar alla analysvariabler som definieras på sidan, kompilerar dem till en bildbegäran och skickar data till datainsamlingsservrarna i Adobe.
 
-Titta på följande JavaScript-kod:
+Ta till exempel följande JavaScript-kod:
 
 ```js
 // Instantiate the tracking object
@@ -46,7 +47,7 @@ Använd en åtgärd för att konfigurera sändning av XDM-händelsedata till Ado
 1. Under [!UICONTROL Actions]klickar du på funktionsmakrot eller klickar på **&#39;+&#39;** om du vill lägga till ett funktionsmakro.
 1. Ange [!UICONTROL Extension] nedrullningsbar lista till **[!UICONTROL Adobe Experience Platform Web SDK]** och [!UICONTROL Action Type] till **[!UICONTROL Send event]**.
 
-## Skicka händelse manuellt som implementerar Web SDK
+## Skicka händelse manuellt för att implementera Web SDK
 
 Använd `sendEvent` för att skicka data till Adobe. Datastream tar emot dessa data, tillämpar konfigurerade mappningar och vidarebefordrar dessa data till Adobe Analytics om det är en tillagd tjänst till det dataflödet.
 
@@ -56,7 +57,7 @@ alloy("sendEvent", {
 });
 ```
 
-Se [Spåra händelser](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/tracking-events.html) i Web SDK-dokumentationen om du vill ha mer information.
+Se [Spåra händelser](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/tracking-events.html) finns i Web SDK-dokumentationen.
 
 ## Anrop om spårning av sidvy med Adobe Analytics-tillägget
 
@@ -69,7 +70,7 @@ Adobe Analytics-tillägget i Adobe Experience Platform Data Collection har en de
 1. Ange [!UICONTROL Extension] nedrullningsbar lista till **[!UICONTROL Adobe Analytics]** och [!UICONTROL Action Type] till **[!UICONTROL Send Beacon]**.
 1. Klicka på `s.t()` alternativknapp.
 
-## s.t()-metoden i AppMeasurement och den anpassade kodredigeraren för Analytics-tillägget
+## s.t()-metoden i AppMeasurementet och den anpassade kodredigeraren för Analytics-tillägget
 
 Ring `s.t()` när du vill skicka ett spårningsanrop till Adobe.
 
@@ -87,4 +88,4 @@ s.t(y);
 
 >[!NOTE]
 >
->I tidigare versioner av AppMeasurement användes flera kodrader för att anropa den här funktionen. Den extra koden rymmer temporärt tillfälliga lösningar för olika webbläsare. Det här kodblocket behövs inte längre för standardisering och bästa praxis i moderna webbläsare. Endast metodanropet `s.t()` behövs nu.
+>I tidigare versioner av AppMeasurementet anropades funktionen med flera kodrader. Den extra koden rymmer temporärt tillfälliga lösningar för olika webbläsare. Det här kodblocket behövs inte längre för standardisering och bästa praxis i moderna webbläsare. Endast metodanropet `s.t()` behövs nu.

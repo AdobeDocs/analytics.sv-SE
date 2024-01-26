@@ -3,16 +3,17 @@ title: Hash-kollisioner
 description: Beskriver vad en hash-kollision är och hur den kan visa sig.
 feature: Validation
 exl-id: 693d5c03-4afa-4890-be4f-7dc58a1df553
-source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
+role: Admin, Developer
+source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
 workflow-type: tm+mt
-source-wordcount: '443'
-ht-degree: 2%
+source-wordcount: '462'
+ht-degree: 0%
 
 ---
 
 # Hash-kollisioner
 
-Adobe behandlar prop- och eVar-värden som strängar, även om värdet är ett tal. Ibland är strängarna hundratals tecken långa, andra gånger korta. Strängarna används inte direkt i bearbetningen för att spara utrymme, förbättra prestanda och göra allting jämnt. I stället beräknas en 32- eller 64-bitars hash för varje värde. Alla rapporter körs på dessa hashvärden, där varje hash ersätts med den ursprungliga texten. Hash-kodning ökar prestandan för Analytics-rapporter drastiskt.
+Adobe behandlar prop- och eVar-värden som strängar, även om värdet är ett tal. Ibland är de här strängarna hundratals tecken långa, andra gånger korta. Strängarna används inte direkt i bearbetningen för att spara utrymme, förbättra prestanda och göra allting jämnt. I stället beräknas en 32- eller 64-bitars hash för varje värde. Alla rapporter körs på dessa hashvärden, där varje hash ersätts med den ursprungliga texten. Hash-kodning ökar prestandan för Analytics-rapporter drastiskt.
 
 För de flesta fält konverteras strängen först till enbart små bokstäver (vilket minskar antalet unika värden). Värden hashas månadsvis (första gången de visas varje månad). Från månad till månad finns det en liten möjlighet att två unika variabelvärden hash-kodas till samma värde. Detta koncept kallas *hash-kollision*.
 

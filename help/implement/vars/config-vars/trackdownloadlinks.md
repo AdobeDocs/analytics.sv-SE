@@ -3,9 +3,10 @@ title: trackDownloadLinks
 description: Aktivera eller inaktivera automatisk länkspårning för nedladdningslänkar.
 feature: Variables
 exl-id: d92f722b-d605-40ad-bb55-ec71219a47e3
-source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
+role: Admin, Developer
+source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
 workflow-type: tm+mt
-source-wordcount: '307'
+source-wordcount: '296'
 ht-degree: 0%
 
 ---
@@ -14,11 +15,11 @@ ht-degree: 0%
 
 Adobe ger möjlighet att spåra nedladdningslänkar utan att behöva ställa in [`tl()`](../functions/tl-method.md) för varje nedladdningslänk. Aktivera den här variabeln om du vill använda automatisk länkspårning för hämtningslänkar.
 
-När det är aktiverat jämför AppMeasurement alla klickade länk-URL:er med värden i [`linkDownloadFileTypes`](linkdownloadfiletypes.md). Om det finns en matchning aktiveras ett spårningsanrop för nedladdningslänk automatiskt.
+När det här alternativet är aktiverat jämför AppMeasurementet alla klickade länk-URL:er med värden i [`linkDownloadFileTypes`](linkdownloadfiletypes.md). Om det finns en matchning aktiveras ett spårningsanrop för nedladdningslänk automatiskt.
 
 ## Aktivera eller inaktivera klicksamling med Web SDK-tillägget
 
-Använd [!UICONTROL Enable click data collection] när du konfigurerar Web SDK. Den här kryssrutan hanterar både avslutnings- och hämtningslänkar.
+Använd [!UICONTROL Enable click data collection] när du konfigurerar Web SDK. Den här kryssrutan hanterar både avslutnings- och nedladdningslänkar.
 
 1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
 1. Klicka på den önskade taggegenskapen.

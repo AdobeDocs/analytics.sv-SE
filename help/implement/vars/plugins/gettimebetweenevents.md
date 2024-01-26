@@ -3,9 +3,10 @@ title: getTimeBetweenEvents
 description: Mät tiden mellan två händelser.
 feature: Variables
 exl-id: 15887796-4fe4-4b3a-9a65-a4672c5ecb34
-source-git-commit: bbb138d979968ec2536e53ff07001b43156df095
+role: Admin, Developer
+source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
 workflow-type: tm+mt
-source-wordcount: '761'
+source-wordcount: '772'
 ht-degree: 0%
 
 ---
@@ -29,10 +30,10 @@ Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-program
 1. Gå till [!UICONTROL Extensions] klickar du på [!UICONTROL Catalog] knapp
 1. Installera och publicera [!UICONTROL Common Analytics Plugins] extension
 1. Om du inte redan har det skapar du en regel med namnet&quot;Initiera plugin-program&quot; med följande konfiguration:
-   * Villkor: Ingen
+   * Villkor: Inget
    * Händelse: Kärna - Bibliotek inläst (sidan ovanpå)
 1. Lägg till en åtgärd i ovanstående regel med följande konfiguration:
-   * Tillägg: Plugin-program för vanlig analys
+   * Tillägg: Plugin-program för gemensam analys
    * Åtgärdstyp: Initiera getTimeBetweenEvents
 1. Spara och publicera ändringarna i regeln.
 
@@ -47,9 +48,9 @@ Om du inte vill använda tillägget för Common Analytics-plugin-program kan du 
 1. Öppna den anpassade kodredigeraren och klistra in den plugin-kod som finns nedan i redigeringsfönstret.
 1. Spara och publicera ändringarna i Analytics-tillägget.
 
-## Installera plugin-programmet med AppMeasurement
+## Installera plugin-programmet med AppMeasurementet
 
-Kopiera och klistra in följande kod var som helst i AppMeasurement-filen när Analytics-spårningsobjektet har instansierats (med [`s_gi`](../functions/s-gi.md)). Genom att bevara kommentarer och versionsnummer i koden i implementeringen kan Adobe felsöka eventuella problem.
+Kopiera och klistra in följande AppMeasurement var som helst i analysfilen efter att Analytics-spårningsobjektet har initierats (med [`s_gi`](../functions/s-gi.md)). Genom att bevara kommentarer och versionsnummer i koden i implementeringen kan Adobe felsöka eventuella problem.
 
 ```js
 /* Adobe Consulting Plugin: getTimeBetweenEvents v3.0 (AppMeasurement highly recommended) */
@@ -62,15 +63,15 @@ function getTimeBetweenEvents(ste,rt,stp,res,cn,etd,fmt,bml,rte){var v=ste,B=rt,
 The `getTimeBetweenEvents` funktionen använder följande argument:
 
 * **`ste`** (required, string): Starta timerhändelser. En kommaavgränsad sträng med Analytics-händelser för att&quot;starta timern&quot;.
-* **`rt`** (obligatoriskt, booleskt): Starta om tidsinställningen. Ange till `true` om du vill starta om timern varje gång `events` variabeln innehåller en start-timer-händelse. Ange till `false` om du inte vill att timern ska startas om när en starttidsinställningshändelse visas.
+* **`rt`** (obligatoriskt, booleskt): alternativet Starta om timern. Ange till `true` om du vill starta om timern varje gång `events` variabeln innehåller en start-timer-händelse. Ange till `false` om du inte vill att timern ska startas om när en starttidsinställningshändelse visas.
 * **`stp`** (required, string): Stoppa timerhändelser. En kommaavgränsad sträng med Analytics-händelser som&quot;stoppar timern&quot;.
-* **`res`** (obligatoriskt, booleskt): Återställ alternativet Timer. Ange till `true` om du vill registrera tiden sedan timern startades OCH återställa timern när den stoppats. Ange till `false` om du vill spela in tiden men inte stoppa timern. Om inställt på `false`fortsätter tidtagaren att köras efter att händelsemabeln har registrerat en stop-händelse.
+* **`res`** (obligatoriskt, booleskt): Återställ timer-alternativet. Ange till `true` om du vill registrera tiden sedan timern startades OCH återställa timern efter att den stoppats. Ange till `false` om du vill spela in tiden men inte stoppa timern. Om inställt på `false`fortsätter tidtagaren att köras efter att händelsemabeln har registrerat en stop-händelse.
 
-   >[!TIP]
-   >
-   >Om du ställer in det här argumentet på `false`, ange `rte` rekommenderas.
-* **`cn`** (valfri, sträng): Det cookie-namn där tidpunkten för den första händelsen lagras. Standardvärdet är `"s_tbe"`.
-* **`etd`** (valfritt, heltal): Förfallotid för cookien i dagar. Ange till `0` förfaller när webbläsarsessionen är slut. Standardvärdet är 1 dag om den inte anges.
+  >[!TIP]
+  >
+  >Om du ställer in det här argumentet på `false`, ställer in `rte` rekommenderas.
+* **`cn`** (valfri sträng): Det cookie-namn där tidpunkten för den första händelsen lagras. Standardvärdet är `"s_tbe"`.
+* **`etd`** (valfritt, heltal): Giltighetstiden för cookien i dagar. Ange till `0` förfaller när webbläsarsessionen är slut. Standardvärdet är 1 dag om den inte anges.
 * **`fmt`** (valfri, sträng): Formatet på den tid som antalet sekunder returneras i (standardvärdet är ingenting)
    * `"s"` i sekunder
    * `"m"` i minuter
@@ -81,8 +82,8 @@ The `getTimeBetweenEvents` funktionen använder följande argument:
       * Allt som är mellan en minut och en timme avrundas till närmaste 1/2-minuters test. Exempel: 30,5 minuter, 31 minuter
       * Allt som är mellan en timme och en dag avrundas till närmaste kvartalstimmar. Exempel: 2,25 timmar, 3,5 timmar
       * Allt som är större än en dag avrundas till närmaste dag. Exempel: 1 dag, 3 dagar, 9 dagar
-* **`bml`** (valfritt, antal): Längden på avrundningsriktmärket enligt formatet för `fmt` argument. Om `fmt` argument `"s"` och det här argumentet `2`, avrundas returvärdet till närmaste 2-sekunders riktmärke. If `fmt` argument `"m"` och det här argumentet `0.5`, avrundas returvärdet till närmaste halveringstips.
-* **`rte`** (valfri, sträng): Kommaavgränsad sträng med Analytics-händelser som tar bort eller tar bort timern. Standardvärdet är ingenting.
+* **`bml`** (valfritt, antal): Längden på avrundningsriktmärket enligt formatet för `fmt` argument. Om `fmt` argument `"s"` och argumentet `2`, avrundas returvärdet till närmaste 2-sekunders riktmärke. If `fmt` argument `"m"` och argumentet `0.5`, avrundas returvärdet till närmaste halveringstips.
+* **`rte`** (valfri sträng): Kommaavgränsad sträng med analyshändelser som tar bort eller tar bort timern. Standardvärdet är ingenting.
 
 När den här funktionen anropas returneras ett heltal som representerar tiden mellan starthändelsen och stopphändelsen timer i det önskade formatet.
 
@@ -107,7 +108,7 @@ s.eVar4 = getTimeBetweenEvents("event1", false, "event2", false, "s_20", 20, "h"
 s.eVar4 = getTimeBetweenEvents("event1", true, "event2", true);
 ```
 
-## Versionshistorik
+## Tidigare versioner
 
 ### 3.0 (19 mars 2021)
 

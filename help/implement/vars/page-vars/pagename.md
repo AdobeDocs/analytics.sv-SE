@@ -3,16 +3,17 @@ title: pageName
 description: Namnet på sidan på webbplatsen.
 feature: Variables
 exl-id: 24ac40a9-f0e7-4534-abf2-2397f5fe16c2
-source-git-commit: 6de20d2fbbab6ded6c92f0c6f3536671f4b2ae46
+role: Admin, Developer
+source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
 workflow-type: tm+mt
-source-wordcount: '251'
+source-wordcount: '244'
 ht-degree: 0%
 
 ---
 
 # pageName
 
-The `pageName` variabeln lagrar vanligtvis namnet på en viss sida. Det är praktiskt att avgöra vilka enskilda sidor som är mest populära. Den här variabeln fyller i [Sida](/help/components/dimensions/page.md) dimension.
+The `pageName` variabeln lagrar vanligtvis namnet på en viss sida. Det är praktiskt att avgöra vilka enskilda sidor som är mest populära. Denna variabel fyller i [Sida](/help/components/dimensions/page.md) dimension.
 
 Om variabeln inte definieras för ett visst sidspårningsanrop [`pageURL`](pageurl.md) används i stället.
 
@@ -37,9 +38,9 @@ Du kan ange sidnamn antingen när du konfigurerar Analytics-tillägget (globala 
 
 Du kan ange sidnamn till valfritt strängvärde, inklusive dataelement.
 
-## s.pageName i AppMeasurement och den anpassade kodredigeraren i Analytics-tillägget
+## s.pageName i AppMeasurementet och den anpassade kodredigeraren för Analytics-tillägget
 
-The `s.pageName` variabeln är en sträng som vanligtvis innehåller sidans namn. Den har ett maxvärde på 100 byte. längre värden trunkeras. Den här trunkeringen innehåller instanser där den återgår till `pageURL` om variabeln är tom.
+The `s.pageName` variabeln är en sträng som vanligtvis innehåller sidans namn. Det har ett maxvärde på 100 byte. Ju längre värde, desto trunkeras. Den här trunkeringen innehåller instanser där den återgår till `pageURL` om variabeln är tom.
 
 ```js
 // Set page name to a static value

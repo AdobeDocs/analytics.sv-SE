@@ -3,16 +3,17 @@ title: linkDownloadFileTypes
 description: Fastställ filtillägg som automatiskt spåras som nedladdningslänkar.
 feature: Variables
 exl-id: 5089571a-d387-4ac7-838f-8bc95b2856fb
-source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
+role: Admin, Developer
+source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '368'
 ht-degree: 0%
 
 ---
 
 # linkDownloadFileTypes
 
-När [`trackDownloadLinks`](trackdownloadlinks.md) (AppMeasurement) eller [`clickCollectionEnabled`](trackdownloadlinks.md) (Web SDK) är aktiverat och en besökare klickar på en länk, så kontrollerar AppMeasurement länkens URL för att se om det finns filtypstillägg. Om länk-URL:en innehåller en matchande filtyp skickas en begäran om hämtning av länkbild automatiskt.
+När [`trackDownloadLinks`](trackdownloadlinks.md) (AppMeasurement) eller [`clickCollectionEnabled`](trackdownloadlinks.md) (Web SDK) är aktiverat och en besökare klickar på en länk. AppMeasurementet kontrollerar länkens URL för att se om det finns filtypstillägg. Om länk-URL:en innehåller en matchande filtyp skickas en begäran om hämtning av länkbild automatiskt.
 
 Använd `linkDownloadFileTypes` om du vill anpassa vilka filtillägg du vill räkna som hämtningslänkar.
 
@@ -57,11 +58,11 @@ Hämtningstillägg är en lista med filtillägg med ett fält där du kan lägga
 3. Gå till [!UICONTROL Extensions] klickar du på **[!UICONTROL Configure]** under Adobe Analytics.
 4. Expandera [!UICONTROL Link Tracking] dragspelspanel, som visar **[!UICONTROL Download Extensions]** fält.
 
-Lägg till filtillägg i listan genom att skriva text i fältet och klicka på **[!UICONTROL Add]**. Ta bort filtillägg från listan genom att klicka på deras respektive **&#39;X&#39;** ikon.
+Lägg till filtillägg i listan genom att skriva text i fältet och klicka på **[!UICONTROL Add]**. Ta bort filtillägg från listan genom att klicka på deras respektive **&#39;X&#39;** -ikon.
 
-## s.linkDownloadFileTypes i AppMeasurement och den anpassade kodredigeraren i Analytics-tillägget
+## s.linkDownloadFileTypes i AppMeasurementet och den anpassade kodredigeraren i Analytics-tillägget
 
-The `s.linkDownloadFileTypes` är en sträng med kommaavgränsade filtillägg. Använd inte blanksteg.
+The `s.linkDownloadFileTypes` variabeln är en sträng med kommaavgränsade filtillägg. Använd inte blanksteg.
 
 Om variabeln inte är definierad fungerar inte automatisk länkspårning för hämtning (även om [`trackDownloadLinks`](trackdownloadlinks.md) är `true`).
 

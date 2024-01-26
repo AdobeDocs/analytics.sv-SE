@@ -3,10 +3,11 @@ title: Jämför implementeringsmetoder
 description: Se fördelarna med varje metod som skickar data till Adobe Analytics.
 exl-id: 19353255-6356-4426-a2ef-5a2672a00eca
 feature: Implementation Basics
-source-git-commit: d64f6687dd6e6f688d332926e6d90fa699cac968
+role: Admin, Developer, Leader
+source-git-commit: c476a1a19ae514f75fce8bd8e6d447d85de67a84
 workflow-type: tm+mt
-source-wordcount: '501'
-ht-degree: 1%
+source-wordcount: '489'
+ht-degree: 0%
 
 ---
 
@@ -16,7 +17,7 @@ Jämför de olika metoderna för att implementera Adobe Analytics med varandra. 
 
 ## Webb
 
-| | [AppMeasurement](/help/implement/js/overview.md) | [Adobe Analytics-tillägg](/help/implement/launch/overview.md) | [Webb-SDK](/help/implement/aep-edge/web-sdk/overview.md#web-sdk) | [Web SDK-tillägg](/help/implement/aep-edge/web-sdk/overview.md#web-sdk-extension) |
+| | [AppMeasurement](/help/implement/js/overview.md) | [Adobe Analytics-tillägg](/help/implement/launch/overview.md) | [Web SDK](/help/implement/aep-edge/web-sdk/overview.md#web-sdk) | [Web SDK-tillägg](/help/implement/aep-edge/web-sdk/overview.md#web-sdk-extension) |
 | --- | --- | --- | --- | --- |
 | Implementeringskrav | Referens `AppMeasurement.js` på varje sida, definiera variabler, skicka data med `s.t()` till Adobe Analytics | Läs in referenstaggar på varje sida med användargränssnittet för datainsamling för att definiera variabler och skicka data till Adobe Analytics | Referens `Alloy.js` på varje sida använder `alloy("sendEvent",{})` för att skapa XDM-objekt och skicka önskade data med Edge Network till Adobe Analytics | Inläsare av referenstaggar på varje sida använder användargränssnittet för datainsamling för att komponera XDM-objekt och skicka önskade data med Edge Network till Adobe Analytics |
 | Datamål | Skickat direkt till Adobe Analytics | Skickat direkt till Adobe Analytics | Skickat till Adobe Experience Platform Edge som vidarebefordrar data till Adobe Analytics | Skickat till Adobe Experience Platform Edge som vidarebefordrar data till Adobe Analytics |
@@ -33,7 +34,7 @@ Jämför de olika metoderna för att implementera Adobe Analytics med varandra. 
 >Stöd för version 4 Mobile SDK upphörde den 31 augusti 2021. Se [Adobe Mobile Services - frågor och svar](https://experienceleague.adobe.com/docs/discontinued/using/mobile-services.html) för mer information.
 
 
-| | [Mobil-SDK](/help/implement/aep-edge/mobile-sdk/overview.md) | [Server-API](/help/implement/aep-edge/server-api/overview.md) |
+| | [Mobile SDK](/help/implement/aep-edge/mobile-sdk/overview.md) | [Server-API](/help/implement/aep-edge/server-api/overview.md) |
 | --- | --- | --- |
 | Implementeringskrav | Läs in referenstaggar i appen och använd sedan direkta API-anrop eller regler i användargränssnittet för datainsamling för att skapa XDM-objekt och skicka önskade data med Edge Network till Adobe Analytics | Använd Edge Network Server-API:er för att komponera XDM-objekt och skicka önskade data med Edge Network till Adobe Analytics |
 | Datamål | Skickat till Adobe Experience Platform Edge som vidarebefordrar data till Adobe Analytics | Skickat till Adobe Experience Platform Edge som vidarebefordrar data till Adobe Analytics |

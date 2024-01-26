@@ -3,9 +3,10 @@ title: s_objectID
 description: Hjälp Activity Map att identifiera unika länkar på din webbplats.
 feature: Variables
 exl-id: 7c0cb750-2bfe-41ca-ab27-30dda4b3a7fa
-source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
+role: Admin, Developer
+source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
 workflow-type: tm+mt
-source-wordcount: '406'
+source-wordcount: '404'
 ht-degree: 0%
 
 ---
@@ -14,13 +15,13 @@ ht-degree: 0%
 
 The `s_objectID` variabeln ger en unik identifierare för en länk. Det används för att skapa rapporter i [Activity Map](/help/analyze/activity-map/activity-map.md) exaktare. Om du har länkar på en sida som ändras ofta kan du använda `s_objectID` variabel som anger Activity Map för en unik länkplats så att data kan grupperas korrekt efter behov.
 
-Om Activity Map är viktigt för er organisation rekommenderar Adobe att man inkluderar `s_objectID` variabeln i `onClick` händelse för länkar på din webbplats. Se [Användningsexempel för spårning av länkar i Activity Map](/help/analyze/activity-map/activitymap-link-tracking/activitymap-link-tracking-use-case.md) i användarhandboken Analyze om du vill ha mer information.
+Om Activity Map är viktigt för er organisation rekommenderar Adobe att man inkluderar `s_objectID` i `onClick` händelse för länkar på din webbplats. Se [Användningsexempel för spårning av länkar i Activity Map](/help/analyze/activity-map/activitymap-link-tracking/activitymap-link-tracking-use-case.md) i användarhandboken Analyze om du vill ha mer information.
 
-## Objekt-ID med Adobe Analytics-tillägget
+## Objekt-ID som använder Adobe Analytics-tillägget
 
-Det finns inget dedikerat fält i Adobe Analytics-tillägget som kan använda den här variabeln. Använd den anpassade kodredigeraren efter AppMeasurement-syntax.
+Det finns inget dedikerat fält i Adobe Analytics-tillägget som kan använda den här variabeln. Använd den anpassade kodredigeraren enligt AppMeasurementen syntax.
 
-## s_objectID i AppMeasurement och den anpassade kodredigeraren för Analytics-tillägget
+## s_objectID i AppMeasurementet och den anpassade kodredigeraren för Analytics-tillägget
 
 The `s_objectID` är en global variabel, vilket innebär att den fungerar oberoende av objektet Analytics tracking (`s` som standard). Giltiga värden för den här variabeln kan vara valfri sträng som är upp till 100 byte lång. Om variabeln inte är definierad använder Activity Map länkens URL som identifierare för länken.
 

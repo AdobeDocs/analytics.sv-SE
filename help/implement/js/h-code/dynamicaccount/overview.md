@@ -3,10 +3,11 @@ title: Översikt över dynamiska konton
 description: Lär dig arbetsflödet om hur du dynamiskt väljer en rapportserie med H-kod.
 feature: Implementation Basics
 exl-id: 6f35dd71-29ad-4923-b1f7-9c7d6ca45bd8
-source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
+role: Developer
+source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
 workflow-type: tm+mt
-source-wordcount: '240'
-ht-degree: 4%
+source-wordcount: '241'
+ht-degree: 1%
 
 ---
 
@@ -14,7 +15,7 @@ ht-degree: 4%
 
 >[!IMPORTANT]
 >
->Dynamiska konton stöds bara med äldre JavaScript-implementeringar (H-kod). Dessa variabler stöds inte i aktuella AppMeasurement-bibliotek eller -taggar i Adobe Experience Platform.
+>Dynamiska konton stöds bara med äldre JavaScript-implementeringar (H-kod). Dessa variabler stöds inte i de aktuella AppMeasurementen bibliotek eller taggar i Adobe Experience Platform.
 
 Dynamiska konton är en implementeringsfunktion som gör att du kan avgöra vilken rapportsvit som ska användas baserat på kriterier som du anger. Om din organisation behöver mer än en rapportserie men vill använda samma implementering mellan dina webbplatser är dynamiska konton en bra lösning.
 

@@ -3,9 +3,10 @@ title: getPageName
 description: Skapa ett lättläst pageName från den aktuella webbplatssökvägen.
 feature: Variables
 exl-id: a3aaeb5d-65cd-45c1-88bb-f3c0efaff110
-source-git-commit: bbb138d979968ec2536e53ff07001b43156df095
+role: Admin, Developer
+source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
 workflow-type: tm+mt
-source-wordcount: '663'
+source-wordcount: '661'
 ht-degree: 0%
 
 ---
@@ -14,7 +15,7 @@ ht-degree: 0%
 
 {{plug-in}}
 
-The `getPageName` plugin-programmet skapar en lättläst, användarvänlig formaterad version av den aktuella URL-adressen. Adobe rekommenderar att du använder denna plugin om du vill ha en [`pageName`](../page-vars/pagename.md) värde som är lätt att ställa in och förstå vid rapportering. Denna plugin behövs inte om du redan har en namnstruktur för `pageName` variabel, till exempel via ett datalager. Den används bäst när du inte har någon annan lösning för att ställa in `pageName` variabel.
+The `getPageName` plugin-programmet skapar en lättläst, användarvänlig formaterad version av den aktuella URL-adressen. Adobe rekommenderar att du använder denna plugin om du vill ha en [`pageName`](../page-vars/pagename.md) värde som är lätt att ställa in och förstå vid rapportering. Denna plugin behövs inte om du redan har en namnstruktur för `pageName` -variabel, till exempel via ett datalager. Den används bäst när du inte har någon annan lösning för att ställa in `pageName` variabel.
 
 ## Installera plugin-programmet med Web SDK-tillägget
 
@@ -24,7 +25,7 @@ Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-program
 1. Klicka **[!UICONTROL Tags]** till vänster och klicka sedan på den önskade taggegenskapen.
 1. Klicka **[!UICONTROL Extensions]** till vänster och klicka sedan på **[!UICONTROL Catalog]** tab
 1. Leta rätt på och installera **[!UICONTROL Common Web SDK Plugins]** tillägg.
-1. Klicka **[!UICONTROL Data Elements]** till vänster och klicka sedan på det önskade dataelementet.
+1. Klicka **[!UICONTROL Data Elements]** till vänster och klicka sedan på dataelementet.
 1. Ange det önskade dataelementnamnet med följande konfiguration:
    * Tillägg: Vanliga SDK-plugin-program för webben
    * Dataelement: `getPageName`
@@ -44,10 +45,10 @@ Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-program
 1. Gå till [!UICONTROL Extensions] klickar du på [!UICONTROL Catalog] knapp
 1. Installera och publicera [!UICONTROL Common Analytics Plugins] extension
 1. Om du inte redan har det skapar du en regel med namnet&quot;Initiera plugin-program&quot; med följande konfiguration:
-   * Villkor: Ingen
+   * Villkor: Inget
    * Händelse: Kärna - Bibliotek inläst (sidan ovanpå)
 1. Lägg till en åtgärd i ovanstående regel med följande konfiguration:
-   * Tillägg: Plugin-program för vanlig analys
+   * Tillägg: Plugin-program för gemensam analys
    * Åtgärdstyp: Initiera getPageName
 1. Spara och publicera ändringarna i regeln.
 
@@ -62,9 +63,9 @@ Om du inte vill använda tillägget för Common Analytics-plugin-program kan du 
 1. Öppna den anpassade kodredigeraren och klistra in den plugin-kod som finns nedan i redigeringsfönstret.
 1. Spara och publicera ändringarna i Analytics-tillägget.
 
-## Installera plugin-programmet med AppMeasurement
+## Installera plugin-programmet med AppMeasurementet
 
-Kopiera och klistra in följande kod var som helst i AppMeasurement-filen när Analytics-spårningsobjektet har instansierats (med [`s_gi`](../functions/s-gi.md)). Genom att bevara kommentarer och versionsnummer i koden i implementeringen kan Adobe felsöka eventuella problem.
+Kopiera och klistra in följande AppMeasurement var som helst i analysfilen efter att Analytics-spårningsobjektet har initierats (med [`s_gi`](../functions/s-gi.md)). Genom att bevara kommentarer och versionsnummer i koden i implementeringen kan Adobe felsöka eventuella problem.
 
 ```js
 /******************************************* BEGIN CODE TO DEPLOY *******************************************/
@@ -77,10 +78,10 @@ var getPageName=function(si,qv,hv,de){var a=si,b=qv,f=hv,e=de;if("-v"===a)return
 
 The `getPageName` funktionen använder följande argument:
 
-* **`si`** (valfri, sträng): Ett ID infogat i början av strängen som representerar platsens ID. Värdet kan antingen vara ett numeriskt ID eller ett eget namn. Om den inte anges används den aktuella domänen som standard.
+* **`si`** (valfri sträng): Ett ID infogat i början av strängen som representerar platsens ID. Värdet kan antingen vara ett numeriskt ID eller ett eget namn. Om den inte anges används den aktuella domänen som standard.
 * **`qv`** (valfri, sträng): En kommaavgränsad lista med frågesträngsparametrar som, om de finns i URL:en, läggs till i strängen
-* **`hv`** (valfri, sträng): En kommaavgränsad lista med parametrar i URL-hash som, om de hittas i URL:en, läggs till i strängen
-* **`de`** (valfri, sträng): Avgränsaren för att dela upp enskilda delar av strängen. Standardvärdet är ett rör (`|`).
+* **`hv`** (valfri, sträng): En kommaavgränsad lista med parametrar i URL-hash som, om de finns i URL:en, läggs till i strängen
+* **`de`** (valfri sträng): avgränsaren som delar upp enskilda delar av strängen. Standardvärdet är ett rör (`|`).
 
 Funktionen returnerar en sträng som innehåller en användarvänlig version av URL:en. Strängen tilldelas vanligtvis till `pageName` men kan även användas i andra variabler.
 
@@ -111,9 +112,9 @@ s.pageName = getPageName("example","cid","arrive,numGuests",": ");
 
 ## Uppgradera från tidigare versioner
 
-Version 4.0+ av `getPageName` plug-in-programmet är inte beroende av att det finns ett AppMeasurement-objekt i Adobe Analytics (dvs. `s` -objekt). Om du uppgraderar till den här versionen ändrar du koden som anropar plugin-programmet genom att ta bort alla instanser av `s` objekt från anropet. Ändra till exempel `s.getPageName();` till `getPageName();`.
+Version 4.0+ av `getPageName` plug-in-filen är inte beroende av Adobe Analytics AppMeasurement-objekt (dvs. `s` -objekt). Om du uppgraderar till den här versionen ändrar du koden som anropar plugin-programmet genom att ta bort alla instanser av `s` objekt från anropet. Ändra till exempel `s.getPageName();` till `getPageName();`.
 
-## Versionshistorik
+## Tidigare versioner
 
 ### 4.2 (19 mars 2021)
 

@@ -3,9 +3,10 @@ title: Implementera med AMP
 description: Implementera Adobe Analytics på AMP-sidor.
 feature: Implementation Basics
 exl-id: 51a2662e-2a24-48f1-b17a-d1e1a57a394b
-source-git-commit: 4c75275f9abbff6b9a5a25be370eabc2801eb7fb
+role: Developer
+source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
 workflow-type: tm+mt
-source-wordcount: '928'
+source-wordcount: '917'
 ht-degree: 0%
 
 ---

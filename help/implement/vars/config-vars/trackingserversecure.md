@@ -3,9 +3,10 @@ title: trackingServerSecure
 description: Bestäm var bildbegäranden ska skickas på HTTPS-sidor.
 feature: Variables
 exl-id: d5b112f9-f3f6-43ac-8ee5-d9ad8062e380
-source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
+role: Admin, Developer
+source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '408'
 ht-degree: 0%
 
 ---
@@ -16,7 +17,7 @@ Adobe samlar in data på er webbplats genom att ta emot en bildförfrågan som g
 
 >[!WARNING]
 >
->Om du ändrar det här värdet får AppMeasurement att söka efter cookies på en annan plats. Unikt besökarantal kan tillfälligt öka i rapporteringen när besökarcookies anges på den nya platsen.
+>Om du ändrar det här värdet söker AppMeasurementet efter cookies på en annan plats. Unikt besökarantal kan tillfälligt öka i rapporteringen när besökarcookies anges på den nya platsen.
 
 ## Edge domain using the Web SDK extension
 
@@ -27,11 +28,11 @@ Web SDK använder [!UICONTROL Edge domain] för att hantera både spårningsserv
 1. Gå till [!UICONTROL Extensions] klickar du på **[!UICONTROL Configure]** knapp under [!UICONTROL Adobe Experience Platform Web SDK].
 1. Ange önskat **[!UICONTROL Edge domain]** textfält.
 
-Se [Konfigurera Adobe Experience Platform Web SDK-tillägget](https://experienceleague.adobe.com/docs/experience-platform/edge/extension/web-sdk-extension-configuration.html) i Web SDK-dokumentationen om du vill ha mer information.
+Se [Konfigurera Adobe Experience Platform Web SDK-tillägget](https://experienceleague.adobe.com/docs/experience-platform/edge/extension/web-sdk-extension-configuration.html) finns i Web SDK-dokumentationen.
 
 >[!TIP]
 >
->Om organisationen går över till Web SDK från en AppMeasurement- eller Analytics-tilläggsimplementering kan det här fältet använda samma värde som i `trackingServerSecure` (eller `trackingServer`).
+>Om din organisation går över till Web SDK från en implementering av ett AppMeasurement- eller Analytics-tillägg kan det här fältet använda samma värde som i `trackingServerSecure` (eller `trackingServer`).
 
 ## Edge domain implementerar Web SDK manuellt
 
@@ -54,7 +55,7 @@ alloy("configure", {
 
 Om fältet lämnas tomt blir standardvärdet i [`trackingServer`](trackingserver.md) variabel.
 
-## s.trackingServerSecure i AppMeasurement och den anpassade kodredigeraren i Analytics-tillägget
+## s.trackingServerSecure in AppMeasurement och den anpassade kodredigeraren för Analytics-tillägget
 
 The `s.trackingServerSecure` variabeln är en sträng som innehåller platsen där bildbegäranden ska skickas. Det är nästan alltid en underdomän till din webbplats. Modern sekretesspraxis i webbläsare gör oftast cookies från tredje part otillförlitliga. Om variabeln är tom används värdet i `s.trackingServer` variabel.
 

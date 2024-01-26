@@ -3,16 +3,17 @@ title: sa
 description: Ändra rapportsviten när som helst i implementeringen.
 feature: Variables
 exl-id: 524857a7-c820-4985-86c7-fcf21a0809bd
-source-git-commit: 6de20d2fbbab6ded6c92f0c6f3536671f4b2ae46
+role: Admin, Developer
+source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
 workflow-type: tm+mt
-source-wordcount: '418'
+source-wordcount: '408'
 ht-degree: 0%
 
 ---
 
 # sa
 
-The `sa()` kan du när som helst på sidan dynamiskt ändra en rapportserie. Om du vill skicka data till olika rapportsviter utan att behöva läsa in en sida igen kan du använda den här metoden.
+The `sa()` kan du när som helst på sidan dynamiskt ändra en rapportserie. Om du vill skicka data till olika rapportsviter utan att behöva läsa in en sida på nytt kan du använda den här metoden.
 
 ## Hantera rapportsviter med Web SDK
 
@@ -37,7 +38,7 @@ Tillägget Web SDK innehåller en listruta för datastream för varje miljö. Du
 
 ## Ange önskad dataström som ska implementera Web SDK manuellt
 
-Ange `edgeConfigId` konfigurationsvariabel till dataström-ID. DataStream-ID:t finns till höger när du visar ett datastream i Adobe Experience Platform Data Collection.
+Ange `edgeConfigId` konfigurationsvariabel till dataström-ID. DataStream-ID:t finns till höger när du visar ett dataström i Adobe Experience Platform Data Collection.
 
 ```js
 alloy("configure", {
@@ -45,13 +46,13 @@ alloy("configure", {
 });
 ```
 
-Se [Konfigurera Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html) i Web SDK-dokumentationen om du vill ha mer information.
+Se [Konfigurera Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html) finns i Web SDK-dokumentationen.
 
 ## Ändra rapportsvit med Adobe Analytics-tillägget
 
-Det finns inget flexibelt sätt att ändra rapportsviten i gränssnittet. Du kan ange rapportsviten under [!UICONTROL Library Management] när du konfigurerar Adobe Analytics-tillägget. Du kan dock inte ändra eller uppdatera rapportsviten med hjälp av regler. Om du vill uppdatera rapportsvitens värden när de har angetts använder du den anpassade kodredigeraren efter AppMeasurement-syntaxen.
+Det finns inget flexibelt sätt att ändra rapportsviten i gränssnittet. Du kan ställa in rapportsviten under [!UICONTROL Library Management] när du konfigurerar Adobe Analytics-tillägget. Du kan dock inte ändra eller uppdatera rapportsviten med hjälp av regler. Om du vill uppdatera rapportsvitens värden när de har angetts använder du den anpassade kodredigeraren efter AppMeasurementets syntax.
 
-## s.sa() i AppMeasurement och den anpassade kodredigeraren för Analytics-tillägget
+## s.sa() i AppMeasurementet och den anpassade kodredigeraren för Analytics-tillägget
 
 Ring `s.sa()` metod för att ändra målrapportsviten. Det enda argumentet är en sträng som innehåller ett rapportsuite-ID, eller flera rapportsuite-ID:n avgränsade med kommatecken. Argumentet för rapportsvitens ID krävs. Använd inte blanksteg i strängargumentet.
 

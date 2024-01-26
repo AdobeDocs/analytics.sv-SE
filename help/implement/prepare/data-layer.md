@@ -1,12 +1,13 @@
 ---
 title: Skapa ett datalager
-description: Lär dig vad ett datalager är i Analytics-implementeringen och hur det kan användas för att mappa variabler i Adobe Analytics.
+description: Lär dig vad ett datalager är i er Analytics-implementering och hur det kan användas för att mappa variabler i Adobe Analytics.
 feature: Implementation Basics
 exl-id: 271dd8fa-3ba1-4a7f-b16a-c48a736a5bb5
-source-git-commit: 571192e27972f2bc15912481f9a578427e1c1cfb
+role: Admin, Developer, Leader
+source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
 workflow-type: tm+mt
-source-wordcount: '468'
-ht-degree: 2%
+source-wordcount: '460'
+ht-degree: 0%
 
 ---
 
@@ -28,18 +29,18 @@ Implementering av Adobe Analytics med ett datalager följer vanligtvis dessa ste
    >
    >Följande Adobe rekommenderade datalagerspecifikationer är valfria. Om du redan har ett datalager, eller på annat sätt väljer att inte följa Adobe specifikationer, måste du se till att din organisation anpassar sig efter vilken specifikation som ska följas.
 
-1. **Validera datalagret med en webbläsarkonsol**: När ett datalager har skapats kan du validera att det fungerar med hjälp av en webbläsares utvecklarkonsol. Du kan öppna utvecklarkonsolen i de flesta webbläsare med `F12` nyckel. Ett exempel på variabelvärde skulle vara `adobeDataLayer.page.title`.
+1. **Validera datalagret med en webbläsarkonsol**: När ett datalager har skapats kan du validera att det fungerar med hjälp av en webbläsares utvecklarkonsol. Du kan öppna utvecklarkonsolen i de flesta webbläsare med `F12` -tangenten. Ett exempel på variabelvärde skulle vara `adobeDataLayer.page.title`.
 1. **Använd Adobe Experience Platform Data Collection för att mappa datalager-objekt till dataelement**: Det här steget varierar beroende på organisationens implementeringsmetod:
-   * **Om du använder Web SDK**: Mappa önskade datalagerobjekt till önskade XDM-fält i Adobe Experience Platform Edge. Se [Variabelmappning för analyser](../aep-edge/variable-mapping.md) för att fastställa den önskade datalagermappningen.
+   * **Om du använder Web SDK**: Mappa önskade datalagretobjekt till önskade XDM-fält i Adobe Experience Platform Edge. Se [Variabelmappning för analyser](../aep-edge/variable-mapping.md) för att fastställa den önskade datalagermappningen.
    * **Om Analytics-tillägget används**: Skapa dataelement under Taggar i Adobe Experience Platform Data Collection och tilldela dem till önskade datalager-objekt. Tilldela sedan varje dataelement till rätt Analytics-variabel i Analytics-tillägget.
 
 ## Specifikationer
 
 Adobe rekommenderar att du använder [Adobe-klientdatalager](https://github.com/adobe/adobe-client-data-layer/wiki) för nya eller omstrukturerade implementeringar.
 
-Din organisation kan använda andra datalagerspecifikationer, som [Customer Experience Digital Data Layer](https://www.w3.org/2013/12/ceddl-201312.pdf)eller en annan anpassad specifikation helt och hållet. Det viktigaste är att anpassa sig till ett konsekvent datalager som uppfyller organisationens behov.
+Din organisation kan använda andra datalagerspecifikationer, som [Kundupplevelsens digitala datalager](https://www.w3.org/2013/12/ceddl-201312.pdf)eller en annan anpassad specifikation helt och hållet. Det viktigaste är att anpassa sig till ett konsekvent datalager som uppfyller organisationens behov.
 
-Datalager är utökningsbara. om du har särskilda krav för organisationen, kan du inkludera objekt i datalagret för att tillgodose dessa behov.
+Datalager är utökningsbara. Om du har särskilda krav för organisationen kan du inkludera objekt i datalagret för att tillgodose dessa behov.
 
 ## Ange datalagervärden
 

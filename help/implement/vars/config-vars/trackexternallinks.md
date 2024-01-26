@@ -3,22 +3,23 @@ title: trackExternalLinks
 description: Aktivera eller inaktivera automatisk länkspårning för att avsluta länkar.
 feature: Variables
 exl-id: a34d4ffa-ff82-460e-af7d-1a4be85fc631
-source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
+role: Admin, Developer
+source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
 workflow-type: tm+mt
-source-wordcount: '309'
+source-wordcount: '298'
 ht-degree: 0%
 
 ---
 
 # trackExternalLinks
 
-Adobe har möjlighet att spåra utgående länkar utan att behöva ställa in [`tl()`](../functions/tl-method.md) metod för varje avslutningslänk. Aktivera den här variabeln om du vill använda automatisk länkspårning för slutlänkar.
+Adobe har möjlighet att spåra utgående länkar utan att behöva ställa in [`tl()`](../functions/tl-method.md) metod för varje avslutningslänk. Aktivera den här variabeln om du vill använda automatisk länkspårning för att avsluta länkar.
 
-När det är aktiverat jämför AppMeasurement alla klickade länk-URL:er med värden i [`linkInternalFilters`](linkinternalfilters.md) och [`linkExternalFilters`](linkexternalfilters.md). Om det finns en matchning utlöses ett avslutningslänkspårningsanrop automatiskt.
+När det här alternativet är aktiverat jämför AppMeasurementet alla klickade länk-URL:er med värden i [`linkInternalFilters`](linkinternalfilters.md) och [`linkExternalFilters`](linkexternalfilters.md). Om det finns en matchning utlöses ett avslutningslänkspårningsanrop automatiskt.
 
 ## Aktivera eller inaktivera klicksamling med Web SDK-tillägget
 
-Använd [!UICONTROL Enable click data collection] när du konfigurerar Web SDK. Den här kryssrutan hanterar både avslutnings- och hämtningslänkar.
+Använd [!UICONTROL Enable click data collection] när du konfigurerar Web SDK. Den här kryssrutan hanterar både avslutnings- och nedladdningslänkar.
 
 1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
 1. Klicka på den önskade taggegenskapen.

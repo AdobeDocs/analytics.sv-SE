@@ -1,20 +1,21 @@
 ---
-title: tillstånd
+title: läge
 description: Fyll i 'Visitor State Report' i Reports and Analytics.
 feature: Variables
 exl-id: a6e3f30b-b5d1-48f8-8961-8e9c6d4d29da
-source-git-commit: 6de20d2fbbab6ded6c92f0c6f3536671f4b2ae46
+role: Admin, Developer
+source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
 workflow-type: tm+mt
-source-wordcount: '212'
+source-wordcount: '211'
 ht-degree: 0%
 
 ---
 
-# tillstånd
+# läge
 
 >[!IMPORTANT]
 >
->Den här variabeln har tagits bort och är inte en tillgänglig dimension i Analysis Workspace. Använd dimensionen &#39;USA&#39; i stället, som AppMeasurement automatiskt samlar in baserat på besökarens plats.
+>Den här variabeln har tagits bort och är inte en tillgänglig dimension i Analysis Workspace. Använd dimensionen &#39;USA&#39; i stället, som AppMeasurementet automatiskt samlar in baserat på besökarens plats.
 
 I tidigare versioner av Adobe Analytics `state` variabeln användes när besökarna fyllde i leveransinformation på butikssajter. Den är funktionellt identisk med en prop, men är inte tillgänglig i Analysis Workspace.
 
@@ -33,7 +34,7 @@ Du kan ange tillstånd till valfritt strängvärde eller dataelement.
 
 ## s.state in AppMeasurement and the Analytics extension custom code editor
 
-The `s.state` variabeln är en sträng som vanligtvis innehåller besökarens delstat eller provins. Fulla lägesnamn eller tvåbokstavskoder är båda giltiga. Den får innehålla högst 50 byte. längre värden trunkeras. Dess standardvärde är en tom sträng.
+The `s.state` variabeln är en sträng som vanligtvis innehåller besökarens delstat eller provins. Fulla lägesnamn eller tvåbokstavskoder är båda giltiga. Den har ett maxvärde på 50 byte. De längre värdena trunkeras. Dess standardvärde är en tom sträng.
 
 ```js
 s.state = "Utah";

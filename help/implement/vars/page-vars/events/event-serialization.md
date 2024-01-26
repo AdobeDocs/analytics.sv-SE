@@ -1,11 +1,12 @@
 ---
 title: Händelseserialisering
-description: Hjälper dig att deduplicera mätvärden på din webbplats.
+description: Ta bort dubbletter av mätvärden på webbplatsen.
 feature: Variables
 exl-id: 54de0fd7-9056-44af-bd59-b8eb55fc816e
-source-git-commit: 6de20d2fbbab6ded6c92f0c6f3536671f4b2ae46
+role: Admin, Developer
+source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
 workflow-type: tm+mt
-source-wordcount: '402'
+source-wordcount: '399'
 ht-degree: 0%
 
 ---
@@ -26,7 +27,7 @@ När du använder händelse-ID:n utförs borttagning av dubbletter på följande
 
 * Varje variabel använder sin egen tabell för borttagning av dubbletter. Till exempel: `event1:ABC` och `event2:ABC` räknas båda i rapporteringen.
 * Deduplicering sker globalt för alla besökare. Om besökare A skickar `event1:ABC` besökare B skickar också `event1:ABC`ignorerar Adobe den andra instansen från besökaren B.
-* Borttagning av dubbletter upphör inte att gälla. Om en besökare skickar `event1:ABC` kommer tillbaka 2 år senare och skickar `event1:ABC` Adobe ignorerar återigen den andra instansen.
+* Avdupliceringen upphör inte att gälla. Om en besökare skickar `event1:ABC` kommer tillbaka 2 år senare och skickar `event1:ABC` Adobe ignorerar återigen den andra instansen.
 
 >[!TIP]
 >
@@ -51,9 +52,9 @@ Du kan ange fältet för händelse-ID när du konfigurerar Analytics-tillägget 
 
 Giltiga värden är alfanumeriska tecken som är upp till 20 byte långa. Om du anger ett värde som är längre än 20 byte trunkeras det till de första 20 byten.
 
-## Använd händelse-ID:n i AppMeasurement och den anpassade kodredigeraren för Analytics-tillägget
+## Använd händelse-ID:n i AppMeasurementet och den anpassade kodredigeraren för Analytics-tillägget
 
-Händelseserialisering är en del av `s.events` variabel. Tilldela ett ID till varje händelse med ett kolon i strängen.
+Händelseserialisering ingår i `s.events` variabel. Tilldela ett ID till varje händelse med ett kolon i strängen.
 
 ```js
 // Assign custom ID serialization to a single value

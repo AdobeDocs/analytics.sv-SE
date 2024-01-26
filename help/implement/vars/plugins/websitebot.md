@@ -3,9 +3,10 @@ title: websiteBot
 description: Identifiera botar dynamiskt med musrörelser.
 feature: Variables
 exl-id: de997254-c604-4ca0-bdda-5920f3a4fa57
-source-git-commit: f3c656b0b631d655159ae89d4622990937cf84ef
+role: Admin, Developer
+source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
 workflow-type: tm+mt
-source-wordcount: '375'
+source-wordcount: '377'
 ht-degree: 0%
 
 ---
@@ -23,20 +24,20 @@ Denna plug-in utför två kontroller:
 
 Om användaragenten finns på skrivbordet och ingen musrörelse identifieras kan plugin-programmet
 
-* ringa ett samtal direkt med hjälp av Web SDK eller Adobe Analytics-tillägget, eller
+* ringa ett samtal direkt med hjälp av Web SDK eller Adobe Analytics, eller
 * Anropa länkspårning för att ange att besökaren inte är en robot.
 
 ## Förutsättningar
 
 Adobe rekommenderar följande innan denna plugin används:
 
-* **Konfigurera eVar**: Konfigurera en eVar under [Konverteringsvariabler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/conversion-var-admin.md) i Rapportsvitens inställningar. Ange förfallodatum till **Aldrig** eller **Besök** och allokera till **&quot;Originalvärde (första)&quot;**. Denna eVar bör fastställas under båda dessa omständigheter: när [!UICONTROL Direct Call] regel eller `s.tl` samtalet avfyras.
+* **Konfigurera inställningar för eVar**: Konfigurera en eVar under [Konverteringsvariabler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/conversion-var-admin.md) i Rapportsvitens inställningar. Ange förfallodatum till **Aldrig** eller **Besök** och allokera till **&quot;Originalvärde (första)&quot;**. Denna eVar bör fastställas under båda dessa omständigheter: när [!UICONTROL Direct Call] regel eller `s.tl` samtalet avfyras.
 * **Samla in användaragent i en separat variabel**: Samla in användaragentsträngen i en separat variabel för att övervaka effekten av plugin-programmet. Ange en eVar till `navigator.UserAgent` på varje träff för att samla in dessa data.
 
 ## Installera plugin-programmet med en anpassad kodredigerare
 
 1. Lägg till en ny `websiteBot` regel.
-1. Lägg till en **Avlyssnare för musrörelse** till `websiteBot` rule, med den här anpassade koden:
+1. Lägg till en **Avlyssnare för musrörelse** -händelsen till `websiteBot` rule, med den här anpassade koden:
 
    ```js
    trigger(document.addEventListener('mousemove', function detectMouseMove() {   
@@ -80,9 +81,9 @@ Adobe rekommenderar följande innan denna plugin används:
    ![Skicka Beacon-åtgärder](assets/websitebot2.png)
 
 
-## Installera plugin-programmet med AppMeasurement
+## Installera plugin-programmet med AppMeasurementet
 
-Kopiera och klistra in följande kod var som helst i AppMeasurement-filen när Analytics-spårningsobjektet har instansierats (med [`s_gi`](../functions/s-gi.md)). Genom att bevara kommentarer och versionsnummer i koden i implementeringen kan Adobe felsöka eventuella problem.
+Kopiera och klistra in följande AppMeasurement var som helst i analysfilen efter att Analytics-spårningsobjektet har initierats (med [`s_gi`](../functions/s-gi.md)). Genom att bevara kommentarer och versionsnummer i koden i implementeringen kan Adobe felsöka eventuella problem.
 
 ```js
 /******************************************* BEGIN CODE TO DEPLOY *******************************************/
@@ -105,7 +106,7 @@ s.eVar1 = websiteBot;
 s.eVar1 = websiteBot ? "Bot detected" : "Not a bot";
 ```
 
-## Versionshistorik
+## Tidigare versioner
 
 ### 0.1 (19 januari 2021)
 
@@ -113,6 +114,6 @@ s.eVar1 = websiteBot ? "Bot detected" : "Not a bot";
 
 ### 0.11 (3 juni 2021)
 
-* Uppdaterad kod för plugin-programmet AppMeasurement
+* Uppdaterad AppMeasurement-plugin-kod
 * Anpassad kodredigeringssektion med utökade instruktioner har uppdaterats.
-* Uppdaterat avsnittet Använda plugin-programmet.
+* Uppdaterat avsnittet &quot;Använda plugin-programmet&quot;.

@@ -3,16 +3,17 @@ title: doPlugins
 description: Konfigurera logik precis innan en träff kompileras och skickas till Adobe.
 feature: Variables
 exl-id: c5113be3-04b3-4dd2-8481-ba13149750ca
-source-git-commit: 41154580c272514e504c5478215bb67795488de3
+role: Admin, Developer
+source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
 workflow-type: tm+mt
-source-wordcount: '302'
+source-wordcount: '293'
 ht-degree: 0%
 
 ---
 
 # doPlugins
 
-The `doPlugins` variabeln fungerar som ett&quot;sista anrop&quot; för att ange värden i implementeringen. Det är den idealiska platsen att ringa [Metoder för plugin-program](../plugins/impl-plugins.md) och ange önskade variabler innan en bildbegäran skickas. If [`usePlugins`](../config-vars/useplugins.md) är aktiverat körs den automatiskt precis innan någon typ av bildbegäran kompileras och skickas till Adobe, inklusive:
+The `doPlugins` variabeln fungerar som ett&quot;sista anrop&quot; för att ange värden i implementeringen. Det är det bästa stället att ringa [Metoder för plugin-program](../plugins/impl-plugins.md) och ange önskade variabler innan en bildbegäran skickas. If [`usePlugins`](../config-vars/useplugins.md) är aktiverat körs den automatiskt precis innan någon typ av bildbegäran kompileras och skickas till Adobe, inklusive:
 
 * All sidvy ([`t()`](t-method.md)) samtal
 * All länkspårning ([`tl()`](tl-method.md)), inklusive automatiska nedladdningslänkar och avslutningslänkar
@@ -31,7 +32,7 @@ I stället för `doPlugins`används `onBeforeEventSend` med liknande funktionali
 
 ## Använd `onBeforeEventSend` implementera Web SDK manuellt
 
-I stället för `doPlugins`används `onBeforeEventSend` med liknande funktionalitet. Se [Ändra händelser globalt](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/tracking-events.html#modifying-events-globally) i Web SDK-dokumentationen om du vill ha mer information.
+I stället för `doPlugins`används `onBeforeEventSend` med liknande funktionalitet. Se [Ändra händelser globalt](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/tracking-events.html#modifying-events-globally) finns i Web SDK-dokumentationen.
 
 ```js
 // Set the trackingCode XDM field to "New value"
@@ -44,11 +45,11 @@ alloy("configure", {
 
 ## Plugin-program som använder tillägget Adobe Analytics
 
-Det finns inget dedikerat fält i Adobe Analytics-tillägget som kan använda den här variabeln. Använd den anpassade kodredigeraren efter AppMeasurement-syntax.
+Det finns inget dedikerat fält i Adobe Analytics-tillägget som kan använda den här variabeln. Använd den anpassade kodredigeraren enligt AppMeasurementen syntax.
 
-## s.doPlugins in AppMeasurement and custom code
+## s.doPlugins i AppMeasurement och egen kod
 
-Ange `s.doPlugins` till en funktion som innehåller önskad kod. Funktionen körs automatiskt när du gör ett spårningsanrop.
+Ange `s.doPlugins` till en funktion som innehåller önskad kod. Funktionen körs automatiskt när du anropar spårning.
 
 ```js
 s.doPlugins = function() {/* Desired code */};
@@ -74,4 +75,4 @@ s.doPlugins = function() {
 
 >[!NOTE]
 >
->Tidigare versioner av AppMeasurement hade något annorlunda `doPlugins()` kod. Adobe rekommenderar att du använder formatet ovan som en god praxis.
+>Tidigare versioner av AppMeasurementet hade något annorlunda `doPlugins()` kod. Adobe rekommenderar att du använder formatet ovan som en god praxis.

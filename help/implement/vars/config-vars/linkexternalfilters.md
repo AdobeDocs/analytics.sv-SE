@@ -3,9 +3,10 @@ title: linkExternalFilters
 description: Använd variabeln linkExternalFilters om du vill ha hjälp med automatisk spårning av avslutningslänk.
 feature: Variables
 exl-id: 7d4e8d96-17ee-4a04-9a57-37d2056ee9a7
-source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
+role: Admin, Developer
+source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '379'
 ht-degree: 0%
 
 ---
@@ -26,7 +27,7 @@ Om du använder båda `linkInternalFilters` och `linkExternalFilters` samtidigt 
 
 Länkarna kvalificeras automatiskt som en avslutningslänk om länkmåldomänen skiljer sig från den aktuella `window.location.hostname`. Web SDK innehåller inga konfigurationsvariabler som kan ändra automatisk avslutningslänksidentifiering. Om du behöver anpassa domänerna som kvalificerar som en avslutningslänk kan du använda anpassad logik i `onBeforeEventSend` återanrop.
 
-Se [Automatisk länkspårning](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/track-links.html#automaticLinkTracking) i Web SDK-dokumentationen om du vill ha mer information.
+Se [Automatisk länkspårning](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/track-links.html#automaticLinkTracking) finns i Web SDK-dokumentationen.
 
 ## Utgående länkar - Spåra med Adobe Analytics-tillägget
 
@@ -37,9 +38,9 @@ Fältet Spåra är en kommaavgränsad lista med filter (vanligtvis domäner) und
 3. Gå till [!UICONTROL Extensions] klickar du på **[!UICONTROL Configure]** under Adobe Analytics.
 4. Expandera [!UICONTROL Link Tracking] dragspelspanel, som visar [!UICONTROL Outbound Links - Track] fält.
 
-Placera filter som du alltid vill ta hänsyn till externt i det här fältet. Avgränsa flera domäner med kommatecken utan mellanslag.
+Placera filter som du alltid vill ska vara externa i det här fältet. Avgränsa flera domäner med kommatecken utan mellanslag.
 
-## s.linkExternalFilters i AppMeasurement och den anpassade kodredigeraren i Analytics-tillägget
+## s.linkExternalFilters i AppMeasurementet och den anpassade kodredigeraren för Analytics-tillägget
 
 The `s.linkExternalFilters` variabeln är en sträng som innehåller filter (t.ex. domäner) som du betraktar som avslutslänkar. Avgränsa flera domäner med kommatecken utan mellanslag.
 

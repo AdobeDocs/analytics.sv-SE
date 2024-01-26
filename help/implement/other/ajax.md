@@ -3,7 +3,8 @@ title: Implementera med AJAX
 description: Lär dig implementera Adobe Analytics på en webbplats med AJAX.
 feature: Implementation Basics
 exl-id: 3286bf97-3a66-4f68-9053-bf84269962fd
-source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
+role: Developer
+source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 0%
@@ -37,7 +38,7 @@ Variabelvärden finns kvar på sidor som använder AJAX eftersom sidan inte läs
 
 >[!TIP]
 >
->The `clearVars()` funktionen är inte tillgänglig i H-koden. Om du inte har uppgraderat till AppMeasurement anger du en tom sträng för varje Analytics-variabelvärde.
+>The `clearVars()` funktionen är inte tillgänglig i H-koden. Om du inte har uppgraderat till AppMeasurement anger du varje Analytics-variabelvärde till en tom sträng.
 
 ## Exempel
 

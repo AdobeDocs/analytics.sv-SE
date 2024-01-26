@@ -3,9 +3,10 @@ title: getValOnce
 description: Förhindra att en Analytics-variabel ställs in på samma värde två gånger i rad.
 feature: Variables
 exl-id: 23bc5750-43a2-4693-8fe4-d6b31bc34154
-source-git-commit: bbb138d979968ec2536e53ff07001b43156df095
+role: Admin, Developer
+source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
 workflow-type: tm+mt
-source-wordcount: '649'
+source-wordcount: '645'
 ht-degree: 0%
 
 ---
@@ -14,7 +15,7 @@ ht-degree: 0%
 
 {{plug-in}}
 
-The `getValOnce` plugin-programmet förhindrar att en variabel ställs in på samma värde mer än en gång. Adobe rekommenderar att du använder denna plugin när du vill ta bort dubbletter av förekomster där en besökare uppdaterar en sida eller på annat sätt besöker en viss sida flera gånger. Denna plugin behövs inte om du inte är orolig för förekomstmåttet i Analysis Workspace.
+The `getValOnce` plugin-programmet förhindrar att en variabel ställs in som lika med samma värde mer än en gång. Adobe rekommenderar att du använder denna plugin när du vill ta bort dubbletter av förekomster där en besökare uppdaterar en sida eller på annat sätt besöker en viss sida flera gånger. Denna plugin behövs inte om du inte är orolig för förekomstmåttet i Analysis Workspace.
 
 ## Installera plugin-programmet med Web SDK-tillägget
 
@@ -24,7 +25,7 @@ Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-program
 1. Klicka **[!UICONTROL Tags]** till vänster och klicka sedan på den önskade taggegenskapen.
 1. Klicka **[!UICONTROL Extensions]** till vänster och klicka sedan på **[!UICONTROL Catalog]** tab
 1. Leta rätt på och installera **[!UICONTROL Common Web SDK Plugins]** tillägg.
-1. Klicka **[!UICONTROL Data Elements]** till vänster och klicka sedan på det önskade dataelementet.
+1. Klicka **[!UICONTROL Data Elements]** till vänster och klicka sedan på dataelementet.
 1. Ange det önskade dataelementnamnet med följande konfiguration:
    * Tillägg: Vanliga SDK-plugin-program för webben
    * Dataelement: `getValOnce`
@@ -44,10 +45,10 @@ Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-program
 1. Gå till [!UICONTROL Extensions] klickar du på [!UICONTROL Catalog] knapp
 1. Installera och publicera [!UICONTROL Common Analytics Plugins] extension
 1. Om du inte redan har det skapar du en regel med namnet&quot;Initiera plugin-program&quot; med följande konfiguration:
-   * Villkor: Ingen
+   * Villkor: Inget
    * Händelse: Kärna - Bibliotek inläst (sidan ovanpå)
 1. Lägg till en åtgärd i ovanstående regel med följande konfiguration:
-   * Tillägg: Plugin-program för vanlig analys
+   * Tillägg: Plugin-program för gemensam analys
    * Åtgärdstyp: Initiera getValOnce
 1. Spara och publicera ändringarna i regeln.
 
@@ -62,9 +63,9 @@ Om du inte vill använda tillägget för Common Analytics-plugin-program kan du 
 1. Öppna den anpassade kodredigeraren och klistra in den plugin-kod som finns nedan i redigeringsfönstret.
 1. Spara och publicera ändringarna i Analytics-tillägget.
 
-## Installera plugin-programmet med AppMeasurement
+## Installera plugin-programmet med AppMeasurementet
 
-Kopiera och klistra in följande kod var som helst i AppMeasurement-filen när Analytics-spårningsobjektet har instansierats (med [`s_gi`](../functions/s-gi.md)). Genom att bevara kommentarer och versionsnummer i koden i implementeringen kan Adobe felsöka eventuella problem.
+Kopiera och klistra in följande AppMeasurement var som helst i analysfilen efter att Analytics-spårningsobjektet har initierats (med [`s_gi`](../functions/s-gi.md)). Genom att bevara kommentarer och versionsnummer i koden i implementeringen kan Adobe felsöka eventuella problem.
 
 ```js
 /******************************************* BEGIN CODE TO DEPLOY *******************************************/
@@ -77,12 +78,12 @@ function getValOnce(vtc,cn,et,ep){var e=vtc,i=cn,t=et,n=ep;  if(arguments&&"-v"=
 
 The `getValOnce` funktionen använder följande argument:
 
-* **`vtc`** (required, string): Variabeln som ska kontrolleras och se om den precis har ställts in på ett identiskt värde
-* **`cn`** (valfri, sträng): Namnet på den cookie som innehåller värdet som ska kontrolleras. Standardvärdet är `"s_gvo"`
-* **`et`** (valfritt, heltal): Cookie-filens utgångsdatum i dagar (eller minuter) beroende på `ep` argument). Standardvärdet är `0`som upphör i slutet av webbläsarsessionen
+* **`vtc`** (required, string): Variabeln som ska kontrolleras och se om den precis tidigare var inställd på ett identiskt värde
+* **`cn`** (valfri sträng): Namnet på den cookie som innehåller värdet som ska kontrolleras. Standardvärdet är `"s_gvo"`
+* **`et`** (valfritt, heltal): cookie-filens förfallodatum i dagar (eller minuter, beroende på `ep` argument). Standardvärdet är `0`, som upphör i slutet av webbläsarsessionen
 * **`ep`** (valfri, sträng): Ange bara det här argumentet om `et` -argumentet ställs också in. Ange det här argumentet som `"m"` om du vill ha `et` argument om att förfalla om några minuter i stället för dagar. Standardvärdet är `"d"`, som ställer in `et` argument i dagar.
 
-Om `vtc` argument och cookie-värdesmatchning returnerar den här funktionen en tom sträng. Om `vtc` -argument och cookie-värde matchar inte, funktionen returnerar `vtc` argument som en sträng.
+Om `vtc` argument och cookie-värde matchar. Funktionen returnerar en tom sträng. Om `vtc` -argument och cookie-värde matchar inte, funktionen returnerar `vtc` argument som en sträng.
 
 ## Exempel
 
@@ -97,7 +98,7 @@ s.eVar2 = getValOnce(s.eVar2,"s_ev2");
 s.eVar8 = getValOnce(s.eVar8,"s_ev8",10,"m");
 ```
 
-## Versionshistorik
+## Tidigare versioner
 
 ### 3.1 (22 september 2022)
 
@@ -107,15 +108,15 @@ s.eVar8 = getValOnce(s.eVar8,"s_ev8",10,"m");
 
 * Versionsnummer har lagts till som kontextdata.
 
-### 2.01
+### 2,01
 
 * Ett problem med att skriva cookies har korrigerats.
 
-### 2.0
+### 2,0
 
 * Punktrelease (omkompilerad, mindre kodstorlek).
 
-### 1.1
+### 1,1
 
 * Lagt till alternativet att välja minuter eller dagar för förfallodatum via `t` parameter.
 * Omfånget för `k` variabel som används för att begränsa den till plugin-programmet. Den här ändringen förhindrar eventuell störning av annan kod på sidan.

@@ -3,18 +3,19 @@ title: kampanj
 description: Fyll i dimensionen 'Spårningskod'.
 feature: Variables
 exl-id: 2278d2b8-8d60-4634-a176-f027a237bc12
-source-git-commit: 6de20d2fbbab6ded6c92f0c6f3536671f4b2ae46
+role: Admin, Developer
+source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
 workflow-type: tm+mt
-source-wordcount: '233'
+source-wordcount: '227'
 ht-degree: 0%
 
 ---
 
 # kampanj
 
-The `campaign` variabeln används för att samla in spårningskoder på din webbplats. I tidigare versioner av Adobe Analytics hade programmet en speciell behandling där det kunde användas som en uppdelning på de flesta dimensioner. I den aktuella versionen av Adobe Analytics fungerar den likadant som en eVar.
+The `campaign` variabeln används för att samla in spårningskoder på din webbplats. I tidigare versioner av Adobe Analytics hade programmet en speciell behandling där det kunde användas som en uppdelning på de flesta dimensioner. I den nuvarande versionen av Adobe Analytics fungerar den likadant som en eVar.
 
-Den här variabeln fyller i [Spårningskod](/help/components/dimensions/tracking-code.md) dimension. Det hämtar vanligtvis sitt värde från en frågesträng med [`getQueryParam`](/help/implement/vars/plugins/getqueryparam.md) utility-metod. Din organisation bestämmer dock exakt hur variabeln ska ställas in.
+Denna variabel fyller i [Spårningskod](/help/components/dimensions/tracking-code.md) dimension. Det hämtar vanligtvis sitt värde från en frågesträng med [`getQueryParam`](/help/implement/vars/plugins/getqueryparam.md) utility-metod. Din organisation bestämmer dock exakt hur variabeln ska ställas in.
 
 ## Campaign med Web SDK
 
@@ -33,9 +34,9 @@ Du kan ange kampanj antingen när Analytics-tillägget (globala variabler) konfi
 
 Du kan ställa in kampanjen på ett värde eller en frågesträngsparameter.
 
-## s.campaign i AppMeasurement och den anpassade kodredigeraren för Analytics-tillägget
+## s.campaign in AppMeasurement and the Analytics extension custom code editor
 
-The `s.campaign` variabeln är en sträng som vanligtvis innehåller en spårningskod som används i marknadsföringsaktiviteter. Dess största längd är 255 byte. värden som är längre än 255 byte trunkeras automatiskt när de skickas till Adobe.
+The `s.campaign` variabeln är en sträng som vanligtvis innehåller en spårningskod som används i marknadsföringsaktiviteter. Dess största längd är 255 byte. Värden som är längre än 255 byte trunkeras automatiskt när de skickas till Adobe.
 
 ```js
 // Set the campaign variable to a static value

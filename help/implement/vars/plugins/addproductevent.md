@@ -3,9 +3,10 @@ title: addProductEvent
 description: Lägger till anpassade händelser i variabeln products and events.
 feature: Variables
 exl-id: 74f4cb93-714a-4d2b-88f3-408d032f6811
-source-git-commit: bbb138d979968ec2536e53ff07001b43156df095
+role: Admin, Developer
+source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
 workflow-type: tm+mt
-source-wordcount: '479'
+source-wordcount: '477'
 ht-degree: 0%
 
 ---
@@ -29,10 +30,10 @@ Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-program
 1. Gå till [!UICONTROL Extensions] klickar du på [!UICONTROL Catalog] knapp
 1. Installera och publicera [!UICONTROL Common Analytics Plugins] extension
 1. Om du inte redan har det skapar du en regel med namnet&quot;Initiera plugin-program&quot; med följande konfiguration:
-   * Villkor: Ingen
+   * Villkor: Inget
    * Händelse: Kärna - Bibliotek inläst (sidan ovanpå)
 1. Lägg till en åtgärd i ovanstående regel med följande konfiguration:
-   * Tillägg: Plugin-program för vanlig analys
+   * Tillägg: Plugin-program för gemensam analys
    * Åtgärdstyp: Initiera addProductEvent
 1. Spara och publicera ändringarna i regeln.
 
@@ -47,9 +48,9 @@ Om du inte vill använda tillägget för Common Analytics-plugin-program kan du 
 1. Öppna den anpassade kodredigeraren och klistra in den plugin-kod som finns nedan i redigeringsfönstret.
 1. Spara och publicera ändringarna i Analytics-tillägget.
 
-## Installera plugin-programmet med AppMeasurement
+## Installera plugin-programmet med AppMeasurementet
 
-Kopiera och klistra in följande kod var som helst i AppMeasurement-filen när Analytics-spårningsobjektet har instansierats (med [`s_gi`](../functions/s-gi.md)). Genom att bevara kommentarer och versionsnummer i koden i implementeringen kan Adobe felsöka eventuella problem.
+Kopiera och klistra in följande AppMeasurement var som helst i analysfilen efter att Analytics-spårningsobjektet har initierats (med [`s_gi`](../functions/s-gi.md)). Genom att bevara kommentarer och versionsnummer i koden i implementeringen kan Adobe felsöka eventuella problem.
 
 ```js
 /******************************************* BEGIN CODE TO DEPLOY *******************************************/
@@ -62,9 +63,9 @@ function addProductEvent(en,ev,ap){var f=en,g=ev,c=ap;if("-v"===f)return{plugin:
 
 The `addProductEvent` funktionen använder följande argument:
 
-* **`en`** (required, string): Händelsen som ska läggas till i den sista posten i `products` variabel. Om `products` variabeln är tom, sedan skapas en&quot;tom&quot; produktpost med händelsen (och dess värde) bifogad.
-* **`ev`** (required, string): Värdet som tilldelats den numeriska händelsen eller valutakurshändelsen i `en` argument.  Standardvärdet är `1` när den inte är inställd. Tal som inte är inkapslade i strängcitattecken är också giltiga.
-* **`ap`** (valfritt, boolesk): Om variabeln products för närvarande innehåller mer än en produktpost, är värdet `true` (eller `1`) lägger till händelsen i alla produktposter.  Standardvärdet är `false` när den inte är inställd.
+* **`en`** (required, string): Den händelse som ska läggas till i den sista posten i `products` variabel. Om `products` variabeln är tom, sedan skapas en&quot;tom&quot; produktpost med händelsen (och dess värde) bifogad.
+* **`ev`** (required, string): Det värde som tilldelas till den numeriska händelsen eller valutakurshändelsen i `en` argument.  Standardvärdet är `1` när den inte är inställd. Tal som inte är inkapslade i strängcitattecken är också giltiga.
+* **`ap`** (valfritt, booleskt): Om variabeln products innehåller mer än en produktpost, är värdet `true` (eller `1`) lägger till händelsen i alla produktposter.  Standardvärdet är `false` när den inte är inställd.
 
 The `addProductEvent` returnerar ingenting. I stället läggs händelsen och dess värde till i `products` variabel. Plugin-programmet lägger automatiskt till händelsen i [`events`](../page-vars/events/events-overview.md) variabel, eftersom den också krävs där.
 
@@ -106,7 +107,7 @@ addProductEvent("event35", "15", 1);
 addProductEvent("event35", "25");
 ```
 
-## Versionshistorik
+## Tidigare versioner
 
 ### 2.0 (19 mars 2021)
 

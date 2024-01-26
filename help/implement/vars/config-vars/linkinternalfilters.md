@@ -3,9 +3,10 @@ title: linkInternalFilters
 description: Använd variabeln linkInternalFilters om du vill ha hjälp med automatisk spårning av avslutningslänk.
 feature: Variables
 exl-id: eaa6e64a-ebd5-4e6b-913f-1a6c315579c8
-source-git-commit: 71ff81a0ae67c6f4cc9a8df567e27223cc63f18c
+role: Admin, Developer
+source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
 workflow-type: tm+mt
-source-wordcount: '421'
+source-wordcount: '412'
 ht-degree: 0%
 
 ---
@@ -28,7 +29,7 @@ Aktivitetskartan använder den här variabeln för att avgöra vilka länkar som
 
 Länkarna kvalificeras automatiskt som en avslutningslänk om länkmåldomänen skiljer sig från den aktuella `window.location.hostname`. Web SDK innehåller inga konfigurationsvariabler som kan ändra automatisk avslutningslänksidentifiering. Om du behöver anpassa domänerna som kvalificerar som en avslutningslänk kan du använda anpassad logik i `onBeforeEventSend` återanrop.
 
-Se [Automatisk länkspårning](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/track-links.html#automaticLinkTracking) i Web SDK-dokumentationen om du vill ha mer information.
+Se [Automatisk länkspårning](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/track-links.html#automaticLinkTracking) finns i Web SDK-dokumentationen.
 
 ## Utgående länkar - Spåra aldrig med Adobe Analytics-tillägget
 
@@ -41,7 +42,7 @@ Fältet Aldrig spårning är en kommaavgränsad lista med filter (vanligtvis dom
 
 Placera filter som du aldrig vill ska spåras som avslutningslänkar i det här fältet. Avgränsa flera domäner med kommatecken utan mellanslag.
 
-## s.linkInternalFilters i AppMeasurement och den anpassade kodredigeraren i Analytics-tillägget
+## s.linkInternalFilters i AppMeasurementet och den anpassade kodredigeraren för Analytics-tillägget
 
 The `s.linkInternalFilters` variabeln är en sträng som innehåller filter (till exempel domäner) som du anser vara interna för din plats. Separera flera filter med kommatecken utan mellanslag.
 

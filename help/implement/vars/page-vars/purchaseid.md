@@ -3,9 +3,10 @@ title: purchaseID
 description: Deduplicera träffar baserat på en unik inköpsidentifierare.
 feature: Variables
 exl-id: 7a4d7f08-65ae-4541-a94e-cc6c445c01db
-source-git-commit: befa9b1e17a07160fd29feef1676832164bec3fb
+role: Admin, Developer
+source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
 workflow-type: tm+mt
-source-wordcount: '283'
+source-wordcount: '280'
 ht-degree: 0%
 
 ---

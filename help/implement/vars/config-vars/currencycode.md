@@ -1,20 +1,21 @@
 ---
 title: Vad är variabeln currencyCode och hur använder jag den?
-description: För e-handelswebbplatser anger den valuta som sidan handlar i.
+description: För eCommerce-webbplatser anger den valuta som sidan handlar i.
 feature: Variables
 exl-id: 3332c366-c472-4778-96c8-ef0aa756cca8
-source-git-commit: beef45403f3c3eb7ac423ca8e0b6db0143ff1b9b
+role: Admin, Developer
+source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '939'
 ht-degree: 0%
 
 ---
 
 # currencyCode
 
-För webbplatser som använder e-handel är intäkter och valuta en viktig del av Analytics. Många webbplatser, särskilt de som spänner över flera länder, använder olika valutor. Använd `currencyCode` variabel för att säkerställa att intäktsattributen är rätt valuta.
+För webbplatser som använder e-handel är intäkter och valuta en viktig del av Analytics. Många webbplatser, särskilt de som omfattar flera länder, använder olika valutor. Använd `currencyCode` variabel för att säkerställa att intäktsattributen är rätt valuta.
 
-Vid valutakonvertering används följande logik för varje träff. De här stegen gäller för intäktsvärden som anges i [`products`](../page-vars/products.md) variabel och alla händelser listade som Currency i [Slutförda händelser](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/c-success-events/success-event.md) under Rapportsvitens inställningar.
+Vid valutakonvertering används följande logik för varje träff. De här stegen gäller för intäktsvärden som anges i [`products`](../page-vars/products.md) variabeln och alla händelser listade som Currency i [Slutförda händelser](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/c-success-events/success-event.md) under Rapportsvitens inställningar.
 
 * If `currencyCode` är inte definierat, antar Adobe att alla valutavärden är rapportsvitens valuta. Se [Allmänna kontoinställningar](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/general-acct-settings-admin.md) i Rapportsvitens inställningar för att se rapportsvitens valuta.
 * If `currencyCode` är definierad och matchar rapportsvitens valuta, ingen valutakonvertering används.
@@ -49,12 +50,12 @@ Du kan antingen använda en förinställd valutakod eller en anpassad valutakod.
 Valutakoden skickas till Adobe Experience Platform Mobile SDK:er via kontextdatavariabler i tillägget Adobe Analytics.
 
 1. Ange valutakoden i en kontextdatavariabel under någon av `trackState` eller `trackAction`.
-1. Skapa en bearbetningsregel i Adobe Analytics Admin Tools för rapportsviten. Ställ in regeln så att variabeln Valutakod skrivs över.
+1. Skapa en bearbetningsregel i Adobe Analytics Admin Tools för rapportserien. Ställ in regeln så att variabeln Valutakod skrivs över.
 1. Skicka valutakoden till `products` variabel i ditt anrop till `trackState` eller `trackAction`.
 
 Du kan antingen använda en förinställd valutakod eller en anpassad valutakod. Kontrollera att koden är giltig om du använder en anpassad valutakod.
 
-## s.currencyCode i AppMeasurement och den anpassade kodredigeraren i Analytics-tillägget
+## s.currencyCode i AppMeasurementet och den anpassade kodredigeraren för Analytics-tillägget
 
 The `s.currencyCode` variabeln är en sträng som innehåller en 3-bokstavskod som representerar valutan på sidan. Värdena är skiftlägeskänsliga.
 
@@ -89,7 +90,7 @@ Följande valutakoder är giltiga:
 | `BSD` | Bahamas-dollar |
 | `BTN` | Bhutan Ngultrum |
 | `BWP` | Botswana Pulas |
-| `BYR` | Vitryssland Rubles |
+| `BYR` | Vitryssland-rubel |
 | `BZD` | Belize Dollars |
 | `CAD` | Kanadensiska dollar |
 | `CDF` | Congo/Kinshasa Francs |
@@ -114,7 +115,7 @@ Följande valutakoder är giltiga:
 | `EUR` | Euro |
 | `FJD` | Fiji-dollar |
 | `FKP` | Falklandsöarna |
-| `GBP` | United Kingdom Pounds |
+| `GBP` | Storbritannien |
 | `GEL` | Georgia Lari |
 | `GGP` | Guernsey Pounds |
 | `GHC` | Ghana Cedis |
@@ -123,7 +124,7 @@ Följande valutakoder är giltiga:
 | `GNF` | Guineanska franc |
 | `GTQ` | Guatemala Quetzales |
 | `GYD` | Guyana-dollar |
-| `HKD` | Hongkongdollar |
+| `HKD` | Hongkong-dollar |
 | `HNL` | Honduras Lempiras |
 | `HRK` | Kroatien Kuna |
 | `HTG` | Haitiska Gourdes |
@@ -196,7 +197,7 @@ Följande valutakoder är giltiga:
 | `SEK` | Sverige Kronor |
 | `SGD` | Singapore-dollar |
 | `SHP` | Saint Helena Pounds |
-| `SIT` | Slovenska tolarer |
+| `SIT` | Slovenien Tolars |
 | `SKK` | Slovakien Koruny |
 | `SLL` | Sierra Leone Leones |
 | `SOS` | Somalia Shillings |
@@ -236,6 +237,6 @@ Följande valutakoder är giltiga:
 | `XPF` | Comptoirs Français du Pacific Francs |
 | `XPT` | Platinum Ounes |
 | `YER` | Jemen-rialer |
-| `ZAR` | Sydafrika, Rand |
+| `ZAR` | Sydafrika Rand |
 | `ZMK` | Zambia Kwacha |
 | `ZWD` | Zimbabwes dollar |

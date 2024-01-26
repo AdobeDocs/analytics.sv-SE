@@ -3,9 +3,10 @@ title: zip
 description: Fyll i dimensionen 'Postnummer' manuellt om inställningarna för rapportsviten tillåter det.
 feature: Variables
 exl-id: 1acf4bf7-3788-46bd-bcdb-9885c7b93b59
-source-git-commit: 6de20d2fbbab6ded6c92f0c6f3536671f4b2ae46
+role: Admin, Developer
+source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
 workflow-type: tm+mt
-source-wordcount: '234'
+source-wordcount: '233'
 ht-degree: 0%
 
 ---
@@ -16,7 +17,7 @@ The `zip` kan du fylla i postnummer manuellt om [!UICONTROL Zip Option] i rappor
 
 >[!IMPORTANT]
 >
->Se till att [!UICONTROL Zip Option] i rapportsvitens inställningar är inställda på önskat värde. Du kan inte använda den här variabeln om [!UICONTROL geo zip] används alltid. Se [Allmänna kontoinställningar](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/general-acct-settings-admin.md) i användarhandboken för Admin om du vill ha mer information.
+>Se till att [!UICONTROL Zip Option] i rapportsvitens inställningar är inställda på önskat värde. Du kan inte använda variabeln om [!UICONTROL geo zip] används alltid. Se [Allmänna kontoinställningar](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/general-acct-settings-admin.md) i användarhandboken för Admin om du vill ha mer information.
 
 ## Zippa med Adobe Analytics-tillägget
 
@@ -31,7 +32,7 @@ Du kan ange Postnummer antingen när du konfigurerar Analytics-tillägget (globa
 
 Du kan ställa in postkoden på valfritt strängvärde, inklusive dataelement.
 
-## s.zip i AppMeasurement och den anpassade kodredigeraren i Analytics-tillägget
+## s.zip i AppMeasurementet och den anpassade kodredigeraren för Analytics-tillägget
 
 The `s.zip` variabeln är en sträng som vanligtvis innehåller en ZIP-kod, men som kan innehålla önskat värde upp till 50 byte.
 

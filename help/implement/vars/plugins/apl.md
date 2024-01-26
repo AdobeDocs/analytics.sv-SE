@@ -1,11 +1,12 @@
 ---
 title: apl (appendToList)
-description: Lägg till värden i variabler som har stöd för flera värden.
+description: Lägg till värden i variabler som stöder flera värden.
 feature: Variables
 exl-id: 08ca43f4-f2cc-43fb-a8eb-7c9dd237dfba
-source-git-commit: bbb138d979968ec2536e53ff07001b43156df095
+role: Admin, Developer
+source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
 workflow-type: tm+mt
-source-wordcount: '656'
+source-wordcount: '658'
 ht-degree: 0%
 
 ---
@@ -35,10 +36,10 @@ Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-program
 1. Gå till [!UICONTROL Extensions] klickar du på [!UICONTROL Catalog] knapp
 1. Installera och publicera [!UICONTROL Common Analytics Plugins] extension
 1. Om du inte redan har det skapar du en regel med namnet&quot;Initiera plugin-program&quot; med följande konfiguration:
-   * Villkor: Ingen
+   * Villkor: Inget
    * Händelse: Kärna - Bibliotek inläst (sidan ovanpå)
 1. Lägg till en åtgärd i ovanstående regel med följande konfiguration:
-   * Tillägg: Plugin-program för vanlig analys
+   * Tillägg: Plugin-program för gemensam analys
    * Åtgärdstyp: Initiera APL (Bifoga till lista)
 1. Spara och publicera ändringarna i regeln.
 
@@ -53,9 +54,9 @@ Om du inte vill använda tillägget för Common Analytics-plugin-program kan du 
 1. Öppna den anpassade kodredigeraren och klistra in den plugin-kod som finns nedan i redigeringsfönstret.
 1. Spara och publicera ändringarna i Analytics-tillägget.
 
-## Installera plugin-programmet med AppMeasurement
+## Installera plugin-programmet med AppMeasurementet
 
-Kopiera och klistra in följande kod var som helst i AppMeasurement-filen när Analytics-spårningsobjektet har instansierats (med [`s_gi`](../functions/s-gi.md)). Genom att bevara kommentarer och versionsnummer i koden i implementeringen kan Adobe felsöka eventuella problem.
+Kopiera och klistra in följande AppMeasurement var som helst i analysfilen efter att Analytics-spårningsobjektet har initierats (med [`s_gi`](../functions/s-gi.md)). Genom att bevara kommentarer och versionsnummer i koden i implementeringen kan Adobe felsöka eventuella problem.
 
 ```js
 /******************************************* BEGIN CODE TO DEPLOY *******************************************/
@@ -70,9 +71,9 @@ The `apl` funktionen använder följande argument:
 
 * **`lv`** (required, string): Variabeln som innehåller en avgränsad lista med objekt som ett nytt värde ska läggas till i
 * **`vta`** (required, string): En kommaavgränsad lista över nya värden som ska läggas till i `lv` argumentets värde.
-* **`d1`** (valfri, sträng): Avgränsaren som används för att separera de enskilda värden som redan finns i `lv` argument.  Standardvärdet är ett komma (`,`) när den inte är inställd.
+* **`d1`** (valfri, sträng): Den avgränsare som används för att separera de enskilda värden som redan finns i `lv` argument.  Standardvärdet är ett komma (`,`) när den inte är inställd.
 * **`d2`** (valfri, sträng): Utdataavgränsaren. Standardvärdet är samma som `d1` när den inte är inställd.
-* **`cc`** (valfritt, boolesk): En flagga som anger om en skiftlägeskänslig kontroll används. If `true`, är dubbelkontrollen skiftlägeskänslig. If `false` Om du inte anger det är dubblettkontrollen inte skiftlägeskänslig. Standardvärdet är `false`.
+* **`cc`** (valfritt, booleskt): En flagga som anger om en skiftlägeskänslig kontroll används. If `true`, är dubbelkontrollen skiftlägeskänslig. If `false` Om du inte anger det är dubblettkontrollen inte skiftlägeskänslig. Standardvärdet är `false`.
 
 The `apl` funktionen returnerar värdet för `lv` argument plus icke-duplicerade värden i `vta` argument.
 
@@ -128,7 +129,7 @@ s.list3 = "value1,value1,value1";
 s.list3 = apl(s.list3,"value1");
 ```
 
-## Versionshistorik
+## Tidigare versioner
 
 ### 4.0 (19 mars 2021)
 

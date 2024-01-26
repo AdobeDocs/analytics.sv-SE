@@ -1,16 +1,17 @@
 ---
-title: egenskap
+title: prop
 description: Anpassade variabler som du kan använda i implementeringen.
 feature: Variables
 exl-id: 0d0ff8cd-1d8c-4263-866d-e51ad66148b0
-source-git-commit: 6de20d2fbbab6ded6c92f0c6f3536671f4b2ae46
+role: Admin, Developer
+source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '590'
 ht-degree: 0%
 
 ---
 
-# egenskap
+# prop
 
 *På den här hjälpsidan beskrivs hur du implementerar props. Mer information om hur utkast fungerar som en dimension finns i [prop](/help/components/dimensions/prop.md) i användarhandboken för komponenter.*
 
@@ -39,15 +40,15 @@ Du kan ange props antingen när du konfigurerar Analytics-tillägget (globala va
 
 Du kan ställa in ett uttryck på ett värde eller ett dataelement. Du kan också kopiera värdet från en annan Analytics-variabel.
 
-## s.prop1 - s.prop75 in AppMeasurement and the Analytics extension custom code editor
+## s.prop1 - s.prop75 i AppMeasurementet och den anpassade kodredigeraren för Analytics-tillägget
 
-Varje prop-variabel är en sträng som innehåller anpassade värden som är specifika för din organisation. Deras maximala längd är 100 byte. värden som är längre än 100 byte trunkeras automatiskt när de skickas till Adobe.
+Varje prop-variabel är en sträng som innehåller anpassade värden som är specifika för din organisation. Deras maximala längd är 100 byte. Värden som är längre än 100 byte trunkeras automatiskt när de skickas till Adobe.
 
 ```js
 s.prop1 = "Example custom value";
 ```
 
-## Visa utkast
+## Listtecken
 
 Listtecken är en inställning som används för att tillåta variabeln att innehålla flera värden i samma träff. Om den här inställningen inte är aktiverad, eller om fel avgränsare används, behandlas variabeln som ett enskilt värde.
 
@@ -63,7 +64,7 @@ Aktivera inledande lista [Trafikvariabler](/help/admin/admin/c-manage-report-sui
 
 När du har konfigurerat proppar i rapportsvitens inställningar med den önskade avgränsaren mappas listproppar för Adobe Analytics under `_experience.analytics.customDimensions.listProps.prop1.values[]` till `_experience.analytics.customDimensions.listProps.prop75.values[]`. Web SDK använder automatiskt rätt avgränsare som anges under inställningarna för rapportsviten. Om du anger avgränsaren i XDM-fältet (till exempel `_experience.analytics.customDimensions.props.prop1.delimiter`), som åsidosätter avgränsaren som hämtas automatiskt från inställningarna för rapportsviten och kan leda till felaktig tolkning av listpropsträngen.
 
-### Ange listförsprång med Adobe Analytics-tillägget och AppMeasurement
+### Ange visningsinställningar med Adobe Analytics-tillägget och AppMeasurementet
 
 När du har konfigurerat liststeg i rapportsvitens inställningar med den önskade avgränsaren finns det inga andra implementeringsskillnader än att använda avgränsaren.
 

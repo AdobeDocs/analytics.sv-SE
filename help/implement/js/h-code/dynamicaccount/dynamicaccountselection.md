@@ -3,10 +3,11 @@ title: dynamicAccountSelection
 description: Variabeln dynamicAccountSelection aktiverar eller inaktiverar dynamiskt kontoval.
 feature: Implementation Basics
 exl-id: ccb530f9-b128-4d2d-9b5d-9b305272f0a4
-source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
+role: Developer
+source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
 workflow-type: tm+mt
 source-wordcount: '86'
-ht-degree: 3%
+ht-degree: 0%
 
 ---
 
@@ -22,7 +23,7 @@ Om inställt på `true`, tittar JavaScript-filen på `dynamicAccountMatch` och `
 
 Om inställt på `false`eller om variabeln inte är definierad `dynamicAccountMatch` och `dynamicAccountList` variabler ignoreras.
 
-Om variabeln inte är definierad är standardvärdet `false`.
+Om variabeln inte definieras är standardvärdet `false`.
 
 ## Syntax
 

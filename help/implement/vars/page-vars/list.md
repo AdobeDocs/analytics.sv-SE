@@ -1,16 +1,17 @@
 ---
-title: lista
+title: list
 description: Anpassade variabler som innehåller flera värden i samma träff.
 feature: Variables
 exl-id: 612f6f10-6b68-402d-abb8-beb6f44ca6ff
-source-git-commit: 84a4d38a65769f028bac4aa5817cb4002c4b1f97
+role: Admin, Developer
+source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '477'
 ht-degree: 0%
 
 ---
 
-# lista
+# list
 
 Listvariabler är anpassade variabler som du kan använda hur du vill. De fungerar på liknande sätt som eVars, förutom att de kan innehålla flera värden i samma träff. Listvariabler har ingen teckengräns.
 
@@ -26,45 +27,45 @@ Se till att du konfigurerar varje listvariabel i inställningarna för rapportsv
 
 ## Visa variabler med Web SDK
 
-Listvariabler är [mappas för Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html) under XDM-fälten `_experience.analytics.customDimensions.lists.list1.list[]` till `_experience.analytics.customDimensions.lists.list3.list[]`. Varje arrayelement innehåller en `"value"` -objekt som innehåller varje sträng. Ingen avgränsare behövs; det inkluderas automatiskt med det värde som anges i [Rapportsvitsinställningar](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/list-var-admin.md). Om ett komma (&#39;`,`&#39;) är konfigurerad som avgränsare för listvariabel 1, fylls följande XDM-objekt i `list1` variabel med `"Example value 1,Example value 2,Example value 3"`.
+Listvariabler är [mappas för Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html) under XDM-fälten `_experience.analytics.customDimensions.lists.list1.list[]` till `_experience.analytics.customDimensions.lists.list3.list[]`. Varje arrayelement innehåller en `"value"` -objekt som innehåller varje sträng. Du behöver inte ange en avgränsare. Den inkluderas automatiskt med det värde som anges i [Rapportsvitsinställningar](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/list-var-admin.md). Exempel: ett komma (&#39;`,`&#39;) är konfigurerad som avgränsare för listvariabel 1, fylls följande XDM-objekt i `list1` variabel med `"Example value 1,Example value 2,Example value 3"`.
 
 ```json
 "xdm": {
-    "_experience": {
-        "analytics": {
-            "customDimensions": {
-                "lists": {
-                    "list1": {
-                        "list": [
-                            {
-                                "value": "Example value 1"
-                            },
-                            {
-                                "value": "Example value 2"
-                            },
-                            {
-                                "value": "Example value 3"
-                            }
-                        ]
-                    }
-                }
-            }
+  "_experience": {
+    "analytics": {
+      "customDimensions": {
+        "lists": {
+          "list1": {
+            "list": [
+              {
+                "value": "Example value 1"
+              },
+              {
+                "value": "Example value 2"
+              },
+              {
+                "value": "Example value 3"
+              }
+            ]
+          }
         }
+      }
     }
+  }
 }
 ```
 
 >[!NOTE]
 >
->Adobe XDM-schemat innehåller `key` förutom `value` objekt i varje `list[]` array. Adobe använder inte dessa `key` objekt när data skickas till Adobe Analytics.
+>Adobe XDM-schemat innehåller `key` förutom objekt `value` objekt i varje `list[]` array. Adobe använder inte dessa `key` objekt när data skickas till Adobe Analytics.
 
 ## Visa variabler med Adobe Analytics-tillägget
 
-Det finns inget dedikerat fält i Adobe Analytics-tillägget som kan använda den här variabeln. Använd den anpassade kodredigeraren efter AppMeasurement-syntax.
+Det finns inget dedikerat fält i Adobe Analytics-tillägget som kan använda den här variabeln. Använd den anpassade kodredigeraren enligt AppMeasurementen syntax.
 
-## s.list1 - s.list3 i AppMeasurement och den anpassade kodredigeraren i Analytics-tillägget
+## s.list1 - s.list3 i AppMeasurementet och den anpassade kodredigeraren i Analytics-tillägget
 
-Varje listvariabel är en sträng som innehåller anpassade värden som är specifika för din organisation. De har inte ett högsta antal byte. Varje värde får dock innehålla högst 255 byte. Avgränsaren som du använder bestäms när du ställer in variabeln i [Rapportsvitsinställningar](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/list-var-admin.md). Använd inte blanksteg när du avgränsar flera objekt.
+Varje listvariabel är en sträng som innehåller anpassade värden som är specifika för din organisation. De har inte ett maximalt antal byte, men varje enskilt värde har maximalt 255 byte. Avgränsaren som du använder bestäms när du ställer in variabeln i [Rapportsvitsinställningar](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/list-var-admin.md). Använd inte blanksteg när du avgränsar flera objekt.
 
 ```js
 // A list variable configured with a comma as a delimiter

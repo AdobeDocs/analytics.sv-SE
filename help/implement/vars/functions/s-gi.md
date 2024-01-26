@@ -3,16 +3,17 @@ title: s_gi()
 description: Skapa och spåra instanser av AppMeasurement.
 feature: Variables
 exl-id: f87eff07-7e60-480b-8334-3db538c1030e
-source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
+role: Admin, Developer
+source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
 workflow-type: tm+mt
-source-wordcount: '480'
+source-wordcount: '467'
 ht-degree: 0%
 
 ---
 
 # s_gi
 
-The `s_gi()` funktionen instansierar eller hittar en instans av AppMeasurement med rapportsvitens-ID. AppMeasurement håller reda på alla instanser som skapas och `s_gi()` returnerar den befintliga instansen för en rapportserie om en sådan finns. Om en instans inte finns skapas en ny instans.
+The `s_gi()` funktionen instansierar eller söker efter en instans av AppMeasurementet med hjälp av ett rapportsvit-ID. AppMeasurementet håller reda på alla förekomster som skapas, och `s_gi()` returnerar den befintliga instansen för en rapportserie om en sådan finns. Om en instans inte finns skapas en ny instans.
 
 ## Instansiera ett spårningsobjekt med hjälp av Web SDK-tillägget
 
@@ -37,7 +38,7 @@ Följande kod läser in Web SDK och instansierar ett spårningsobjekt. Du kan an
 <script src="https://cdn1.adoberesources.net/alloy/2.6.4/alloy.min.js" async></script>
 ```
 
-Se [Installera SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html) i Web SDK-dokumentationen om du vill ha mer information.
+Se [Installera SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html) finns i Web SDK-dokumentationen.
 
 ## Instansiera ett spårningsobjekt med Adobe Analytics-tillägget
 
@@ -50,7 +51,7 @@ Tillägget Analytics instansierar och hanterar spårningsobjektet åt dig. Du ka
 
 I det globala textfältet för variabeln kan du ange ett anpassat spårningsobjekt. Standardvärdet är `s`.
 
-## s_gi() i AppMeasurement och den anpassade kodredigeraren för Analytics-tillägget
+## s_gi() i AppMeasurementet och den anpassade kodredigeraren för Analytics-tillägget
 
 Ring `s_gi()` för att instansiera ett spårningsobjekt. Dess enda argument innehåller en kommaavgränsad sträng med ID:n för rapportsviten. Argumentet för rapportsvitens ID krävs.
 
@@ -90,7 +91,7 @@ s.t();
 z.t();
 ```
 
-## Återställ AppMeasurement-variabler när objektet skrivs över
+## Återställa variabler för AppMeasurementet när objektet har skrivits över
 
 Vissa tredjepartsverktyg kan också använda JavaScript `s` -objekt. Om du råkar skriva över `s` objekt på din webbplats kan du ringa `s_gi` med samma RSID-strängargument för att återställa alla överskrivna variabler och metoder.
 

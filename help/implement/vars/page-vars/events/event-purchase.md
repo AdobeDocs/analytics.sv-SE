@@ -3,10 +3,11 @@ title: Inköpshändelse
 description: Använd inköpshändelsen för att samla in data för måtten"Beställningar","Enheter" och"Intäkter".
 feature: Variables
 exl-id: 5ad148d6-cf45-4dea-846a-255004300bc2
-source-git-commit: 6de20d2fbbab6ded6c92f0c6f3536671f4b2ae46
+role: Admin, Developer
+source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
 workflow-type: tm+mt
-source-wordcount: '441'
-ht-degree: 1%
+source-wordcount: '437'
+ht-degree: 0%
 
 ---
 
@@ -14,7 +15,7 @@ ht-degree: 1%
 
 Inköpshändelsen är ett värde i `events` variabel. Det här värdet är användbart för organisationer som vill samla in data kring de intäkter som deras webbplats genererar. Den är starkt beroende av [`products`](../products.md) och [`purchaseID`](../purchaseid.md) variabler.
 
-När du anger en köphändelse påverkas följande mått:
+När du ställer in en köphändelse påverkas följande mått:
 
 * Måtten för &quot;Beställningar&quot; ökar med 1
 * Måttet Enheter ökas med antalet produkter i `products` variabel
@@ -22,7 +23,7 @@ När du anger en köphändelse påverkas följande mått:
 
 >[!NOTE]
 >
->Intäkter multipliceras inte med kvantitetsfältet. Till exempel: `s.products="Womens;Socks;5;4.50"` inte för över 22,50 dollar till intäkter, den skickar 4,50 dollar. Se till att implementeringen överför de totala intäkterna för den angivna kvantiteten. Exempel, `s.products="Womens;Socks;5;22.50"`.
+>Intäkter multipliceras inte med kvantitetsfältet. Till exempel: `s.products="Womens;Socks;5;4.50"` skickar inte 22,50 USD till intäkter, utan 4,50 USD. Se till att implementeringen överför de totala intäkterna för den angivna kvantiteten. Till exempel: `s.products="Womens;Socks;5;22.50"`.
 
 ## Ange inköpshändelsen med Web SDK
 
@@ -41,9 +42,9 @@ Inköpshändelsen är [mappas för Adobe Analytics](https://experienceleague.ado
 5. Ange [!UICONTROL Extension] nedrullningsbar lista till Adobe Analytics och [!UICONTROL Action Type] till [!UICONTROL Set Variables].
 6. Leta reda på [!UICONTROL Events] och ange [!UICONTROL Events] nedrullningsbar lista till [!UICONTROL purchase].
 
-Andra beroende variabler som `products` och `purchaseID` har inte dedikerade fält i Analytics-tillägget i Adobe Experience Platform Data Collection. Använd den anpassade kodredigeraren efter AppMeasurement-syntax för dessa variabler.
+Andra beroende variabler som `products` och `purchaseID` har inte dedikerade fält i Analytics-tillägget i Adobe Experience Platform Data Collection. Använd den anpassade kodredigeraren efter AppMeasurementen syntax för dessa variabler.
 
-## Ange inköpshändelsen i AppMeasurement och den anpassade kodredigeraren för Analytics-tillägget
+## Ange inköpshändelsen i AppMeasurementet och den anpassade kodredigeraren för Analytics-tillägget
 
 Inköpshändelsen är en sträng som anges som en del av händelsemariabeln.
 
@@ -55,7 +56,7 @@ s.events = "purchase";
 s.events = "purchase,event1,event2";
 ```
 
-## Avduplicering av inköpshändelser
+## Deduplicering av inköpshändelser
 
 När du utlöser en köphändelse kontrollerar Adobe följande:
 

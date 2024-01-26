@@ -1,20 +1,21 @@
 ---
 title: Implementera Adobe Analytics med AppMeasurement för JavaScript
-description: Lär dig hur du implementerar Adobe Analytics med JavaScript utan ett tagghanteringssystem.
+description: Lär dig implementera Adobe Analytics med JavaScript utan tagghanteringssystem.
 feature: Implementation Basics
 exl-id: 25b9d768-c641-4f6c-a4ae-0d6c238c4776
-source-git-commit: bef853934683f647e05d42e1a751217c8f9b5dc4
+role: Developer
+source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
 workflow-type: tm+mt
 source-wordcount: '206'
-ht-degree: 6%
+ht-degree: 4%
 
 ---
 
 # Implementera Adobe Analytics med AppMeasurement för JavaScript
 
-AppMeasurementet för JavaScript har historiskt sett varit ett vanligt sätt att implementera Adobe Analytics. Men Tag Management Systems blir allt populärare med [taggar i Adobe Experience Platform](../launch/overview.md) rekommenderas.
+AppMeasurementet för JavaScript har historiskt sett varit ett vanligt sätt att implementera Adobe Analytics. Men Tag Management Systems blir allt populärare och använder [taggar i Adobe Experience Platform](../launch/overview.md) rekommenderas.
 
-Översikt över implementeringsuppgifterna:
+Översikt över implementeringsuppgifterna på hög nivå:
 
 ![Så här implementerar du Adobe Analytivs med AppMeasurement för Javascript, enligt beskrivningen i det här avsnittet.](../assets/appmeasurement-annotated.png)
 
@@ -25,7 +26,7 @@ AppMeasurementet för JavaScript har historiskt sett varit ett vanligt sätt att
 </tr>
 
 <tr>
-<td>1</td><td>Se till att du har <b>har definierat en rapportserie</b></td><td><a href="../../admin/admin/c-manage-report-suites/report-suites-admin.md">Hanterare för rapportsvit</a></td>
+<td>1</td><td>Se till att du har <b>har definierat en rapportsvit</b></td><td><a href="../../admin/admin/c-manage-report-suites/report-suites-admin.md">Report Suite Manager</a></td>
 </tr>
 
 <tr>
@@ -57,7 +58,7 @@ var s=s_gi(s_account);
 s.trackingServer = "example.data.adobedc.net";
 ```
 
-</td><td><a href="../vars/config-vars/configuration-variables.md">Konfigurationsvariabler</a></td>
+</td><td><a href="../vars/config-vars/configuration-variables.md">Konfigurationsvarabler</a></td>
 </tr>
 
 <tr>

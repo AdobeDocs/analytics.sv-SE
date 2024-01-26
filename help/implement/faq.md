@@ -3,10 +3,11 @@ title: Vanliga frågor om implementering
 description: Vanliga frågor om implementering och länkar till mer information.
 feature: Implementation Basics
 exl-id: 4bab6d51-0077-42ce-8091-f75207d4c4db
-source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
+role: Admin, Developer, Leader, User
+source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
 workflow-type: tm+mt
-source-wordcount: '507'
-ht-degree: 41%
+source-wordcount: '503'
+ht-degree: 33%
 
 ---
 
@@ -14,7 +15,7 @@ ht-degree: 41%
 
 Vanliga frågor om implementering och länkar till mer information.
 
-## Vad är skillnaden mellan Experience Clouds besökar-ID och Analytics besökar-ID?
+## Vad är skillnaden mellan besökar-ID:t för Experience Cloud och besökar-ID:t för Analytics?
 
 Identitetstjänsten tilldelar en unik, beständig identifierare som kan delas till andra lösningar i Experience Cloud. Analytics besökar-ID används bara av Analytics. Adobe rekommenderar att du använder Experience Clouds besökar-ID i din implementering.
 
@@ -22,7 +23,7 @@ Identitetstjänsten tilldelar en unik, beständig identifierare som kan delas ti
 
 Se [Mäta ljud och video i Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html).
 
-## Kan ett avbrott i tjänsten hos Adobe påverka prestandan?
+## Kan ett avbrott i tjänsten i Adobe påverka prestanda?
 
 Nej. JavaScript-filen finns inte på Adobes servrar, så ett driftavbrott hos Adobe påverkar inte ditt AppMeasurement-biblioteket. Om du använder taggar i Adobe Experience Platform lagras JavaScript-filen av Akamai eller på en serverplats som bestäms av din organisation.
 
@@ -34,8 +35,8 @@ AppMeasurement skapar ett bildobjekt på HTML-sidan och webbläsaren begär seda
 
 Ibland vill en organisation ta bort en implementering på grund av kontraktets förfallodatum eller minska antalet serversamtal.
 
-* **Implementeringar med Adobe Experience Platform Data Collection**: Inaktivera eller avinstallera tillämpliga Adobe Analytics-, Web SDK- eller Mobile SDK-tillägg i [!UICONTROL Extensions] och sedan publicera.
-* **Äldre AppMeasurement-implementeringar**: Ersätta hela innehållet i `s_code.js` -fil med följande kodrad:
+* **Implementeringar med Adobe Experience Platform Data Collection**: Inaktivera eller avinstallera det tillämpliga Adobe Analytics-, Web SDK- eller Mobile SDK-tillägget i [!UICONTROL Extensions] och sedan publicera.
+* **Implementeringar av äldre AppMeasurement**: Ersätt allt innehåll i `s_code.js` -fil med följande kodrad:
 
 ```js
 var s = new Object();
@@ -47,15 +48,14 @@ var s = new Object();
 >
 >* Ändra rapportsviten till ett ogiltigt värde, eftersom den skapar onödig belastning på Adobe-servrar.
 >* Ta bort `s_code.js` om du inte också tar bort alla referenser till filen på varje sida.
->* Ändra `trackingServer` variabel för att peka bort från Adobe. AppMeasurement skickar fortfarande bildbegäranden som returnerar 404 fel.
-
+>* Ändra `trackingServer` variabel för att peka bort från Adobe. AppMeasurementet skickar fortfarande bildbegäranden som returnerar 404 fel.
 
 ## Jag körde AppMeasurement via en kodanalys och flaggade användningen av `Math.random()` som en potentiell säkerhetsrisk. Är `Math.random()` används med känsliga data?
 
 Nej. Siffrorna som använder `Math.random()` används inte för att maskera, skicka eller ta emot känsliga data. Data som skickas till datainsamlingsservrar för Adobe är beroende av säkerheten för den underliggande HTTPS-anslutningen. <!-- AN-173590 -->
 
-AppMeasurement använder `Math.random()` tre huvudområden:
+AppMeasurementet använder `Math.random()` inom tre huvudområden:
 
-* **Provtagning**: Beroende på hur implementeringen fungerar kan viss information samlas in för endast en liten andel av besökarna på webbplatsen. `Math.random()` används för att avgöra om en viss besökare ska skicka data. I de flesta implementeringar används inte samplingar.
-* **ID för reservbesökare**: Om besökar-ID:t inte kan hämtas från cookies genereras ett slumpmässigt besökar-ID. Den här delen av AppMeasurement använder två anrop till `Math.random()`.
+* **Provtagning**: Beroende på implementeringen kan viss information samlas in för endast en liten andel av besökarna på webbplatsen. `Math.random()` används för att avgöra om en viss besökare ska skicka data. I de flesta implementeringar används inte samplingar.
+* **ID för reservbesökare**: Om besökar-ID:t inte kan hämtas från cookies genereras ett slumpmässigt besökar-ID. I den här delen av AppMeasurementet används två anrop till `Math.random()`.
 * **Cachebuskning**: Ett slumpmässigt tal läggs till i slutet av URL:er för bildbegäran för att förhindra webbläsarcachelagring.

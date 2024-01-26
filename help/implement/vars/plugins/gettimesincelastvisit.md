@@ -3,10 +3,11 @@ title: getTimeSinceLastVisit
 description: Mät hur lång tid det tar mellan två besök.
 feature: Variables
 exl-id: c5cef219-8a8a-4e57-a372-f2e063325a67
-source-git-commit: bbb138d979968ec2536e53ff07001b43156df095
+role: Admin, Developer
+source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
 workflow-type: tm+mt
-source-wordcount: '568'
-ht-degree: 1%
+source-wordcount: '565'
+ht-degree: 0%
 
 ---
 
@@ -24,7 +25,7 @@ Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-program
 1. Klicka **[!UICONTROL Tags]** till vänster och klicka sedan på den önskade taggegenskapen.
 1. Klicka **[!UICONTROL Extensions]** till vänster och klicka sedan på **[!UICONTROL Catalog]** tab
 1. Leta rätt på och installera **[!UICONTROL Common Web SDK Plugins]** tillägg.
-1. Klicka **[!UICONTROL Data Elements]** till vänster och klicka sedan på det önskade dataelementet.
+1. Klicka **[!UICONTROL Data Elements]** till vänster och klicka sedan på dataelementet.
 1. Ange det önskade dataelementnamnet med följande konfiguration:
    * Tillägg: Vanliga SDK-plugin-program för webben
    * Dataelement: `getTimeSinceLastVisit`
@@ -43,10 +44,10 @@ Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-program
 1. Gå till [!UICONTROL Extensions] klickar du på [!UICONTROL Catalog] knapp
 1. Installera och publicera [!UICONTROL Common Analytics Plugins] extension
 1. Om du inte redan har det skapar du en regel med namnet&quot;Initiera plugin-program&quot; med följande konfiguration:
-   * Villkor: Ingen
+   * Villkor: Inget
    * Händelse: Kärna - Bibliotek inläst (sidan ovanpå)
 1. Lägg till en åtgärd i ovanstående regel med följande konfiguration:
-   * Tillägg: Plugin-program för vanlig analys
+   * Tillägg: Plugin-program för gemensam analys
    * Åtgärdstyp: Initiera getTimeSinceLastVisit
 1. Spara och publicera ändringarna i regeln.
 
@@ -61,9 +62,9 @@ Om du inte vill använda tillägget för Common Analytics-plugin-program kan du 
 1. Öppna den anpassade kodredigeraren och klistra in den plugin-kod som finns nedan i redigeringsfönstret.
 1. Spara och publicera ändringarna i Analytics-tillägget.
 
-## Installera plugin-programmet med AppMeasurement
+## Installera plugin-programmet med AppMeasurementet
 
-Kopiera och klistra in följande kod var som helst i AppMeasurement-filen när Analytics-spårningsobjektet har instansierats (med [`s_gi`](../functions/s-gi.md)). Genom att bevara kommentarer och versionsnummer i koden i implementeringen kan Adobe felsöka eventuella problem.
+Kopiera och klistra in följande AppMeasurement var som helst i analysfilen efter att Analytics-spårningsobjektet har initierats (med [`s_gi`](../functions/s-gi.md)). Genom att bevara kommentarer och versionsnummer i koden i implementeringen kan Adobe felsöka eventuella problem.
 
 ```js
 /******************************************* BEGIN CODE TO DEPLOY *******************************************/
@@ -76,9 +77,9 @@ function getTimeSinceLastVisit(){if(arguments&&"-v"===arguments[0])return{plugin
 
 The `getTimeSinceLastVisit` funktionen använder inte några argument. Den returnerar den tid som gått sedan besökaren senast kom till webbplatsen och som är paketerad i följande format:
 
-* Tid mellan 30 minuter och en timme sedan det senaste besöket är inställt på närmaste halvminuters test. Exempel, `"30.5 minutes"`, `"53 minutes"`
-* Tiden mellan en timme och en dag avrundas till närmaste kvartalstimme. Exempel, `"2.25 hours"`, `"7.5 hours"`
-* Tiden som är större än en dag avrundas till närmsta dagstidsinställning. Exempel, `"1 day"`, `"3 days"`, `"9 days"`, `"372 days"`
+* Tid mellan 30 minuter och en timme sedan det senaste besöket är inställt på närmaste halvminuters test. Till exempel: `"30.5 minutes"`, `"53 minutes"`
+* Tiden mellan en timme och en dag avrundas till närmaste kvartalstimme. Till exempel: `"2.25 hours"`, `"7.5 hours"`
+* Tiden som är större än en dag avrundas till närmsta dagstidsinställning. Till exempel: `"1 day"`, `"3 days"`, `"9 days"`, `"372 days"`
 * Om en besökare inte har besökt tidigare eller om den förflutna tiden är längre än två år, anges värdet till `"New Visitor"`.
 
 >[!NOTE]
@@ -103,7 +104,7 @@ s.prop1 = getTimeSinceLastVisit();
 s.prop1 = getTimeSinceLastVisit();
 ```
 
-## Versionshistorik
+## Tidigare versioner
 
 ### 2.0 (19 mars 2021)
 

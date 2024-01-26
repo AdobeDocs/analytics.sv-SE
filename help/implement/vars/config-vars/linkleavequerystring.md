@@ -3,22 +3,23 @@ title: linkLeaveQueryString
 description: Tillåter lagring av frågesträngar i länkspårningsdimensioner.
 feature: Variables
 exl-id: 266f7d9c-803d-4dbe-95a1-282230012878
-source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
+role: Admin, Developer
+source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
 workflow-type: tm+mt
-source-wordcount: '318'
+source-wordcount: '316'
 ht-degree: 0%
 
 ---
 
 # linkLeaveQueryString
 
-AppMeasurement rensar frågesträngar från URL:er för länkspårning som standard. Använd `linkLeaveQueryString` variabel för att bevara frågesträngar i länkspårningsdimensioner.
+AppMeasurementet raderar frågesträngar från URL:er för länkspårning som standard. Använd `linkLeaveQueryString` variabel för att bevara frågesträngar i länkspårningsdimensioner.
 
 För vissa avslutslänkar och hämtningslänkar kan den viktiga delen av URL-adressen finnas i frågesträngen. En nedladdningslänk som `https://example.com/download.asp?filename=myfile.exe` innehåller viktig länkinformation i frågesträngen.
 
 Om länkspårningsinformation inte finns i URL:er på din webbplats är det inte nödvändigt att använda den här variabeln. Genom att radera frågesträngar från URL:er för länkspårning kan du begränsa antalet unika värden som dimensionen innehåller.
 
-Aktivering `linkLeaveQueryString` används för alla dimensioner av länkspårning (inklusive anpassade länkar, avslutslänkar och hämtningslänkar).
+Aktivering `linkLeaveQueryString` används för alla dimensioner av länkspårning (inklusive anpassade länkar, slutlänkar och hämtningslänkar).
 
 >[!TIP]
 >
@@ -39,7 +40,7 @@ Frågesträngar tas inte bort från XDM-fältet `web.webInteraction.URL`. Om du 
 
 Markera den här rutan om du vill inkludera frågesträngar i dimensioner för länkspårning.
 
-## s.linkLeaveQueryString i AppMeasurement och den anpassade kodredigeraren i Analytics-tillägget
+## s.linkLeaveQueryString i AppMeasurementet och den anpassade kodredigeraren för Analytics-tillägget
 
 The `s.linkLeaveQueryString` är en boolesk variabel. Standardvärdet är `false`.
 

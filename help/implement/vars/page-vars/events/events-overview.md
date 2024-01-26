@@ -3,9 +3,10 @@ title: händelser
 description: Ange variabeln events, som styr de flesta mätvärden på din webbplats.
 feature: Variables
 exl-id: 6ef99ee5-40c3-4ff2-a75d-c97f2e8ec1f8
-source-git-commit: d252b0e99a7d38d171eab181718fa60780489652
+role: Admin, Developer
+source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
 workflow-type: tm+mt
-source-wordcount: '803'
+source-wordcount: '802'
 ht-degree: 0%
 
 ---
@@ -35,7 +36,7 @@ Anpassade händelser är [mappas för Adobe Analytics](https://experienceleague.
 
 >[!NOTE]
 >
->Om en händelse anges under `productListItems` (t.ex. `productListItems._experience.analytics.event1.value`) och den händelsen ännu inte finns i det här fältet läggs händelsen automatiskt till i det här fältet.
+>Om en händelse anges under `productListItems` (till exempel `productListItems._experience.analytics.event1.value`) och den händelsen ännu inte finns i det här fältet läggs händelsen automatiskt till i det här fältet.
 
 ## Händelser som använder Adobe Analytics-tillägget
 
@@ -59,8 +60,8 @@ Flera funktioner är tillgängliga:
 
 The `s.events` variabeln är en sträng som innehåller en kommaavgränsad lista med händelser som ska ingå i träffen. Variabeln tillåter upp till 64 000 byte, vilket ger så många händelser som en träff behöver. Giltiga värden är:
 
-* `event1` - `event1000`: Ange anpassade händelser hur du vill. Registrera hur du använder varje händelse i organisationens [konstruktionsdokument](../../../prepare/solution-design.md). Antalet tillgängliga händelser beror på organisationens Analytics-kontrakt. De flesta organisationer som har kontrakt som inte är äldre har 1 000 anpassade händelser tillgängliga. Kontakta kontoteamet på Adobe om du inte är säker på hur många anpassade händelser som är tillgängliga för dig.
-* `purchase`: Ökar [&#39;Beställningar&#39;](/help/components/metrics/orders.md) metrisk med 1 och tar värden som anges i `products` variabel att beräkna [&#39;Enheter&#39;](/help/components/metrics/units.md) och [Intäkter](/help/components/metrics/revenue.md). Se [köphändelse](event-purchase.md) för mer information.
+* `event1` - `event1000`: Anpassade händelser, ange hur du vill. Registrera hur du använder varje händelse i organisationens [konstruktionsdokument](../../../prepare/solution-design.md). Antalet tillgängliga händelser beror på organisationens Analytics-kontrakt. De flesta organisationer som har kontrakt som inte är äldre har 1 000 anpassade händelser tillgängliga. Kontakta kontoteamet på Adobe om du inte är säker på hur många anpassade händelser som är tillgängliga för dig.
+* `purchase`: Ökar [&#39;Beställningar&#39;](/help/components/metrics/orders.md) metrisk med 1 och tar värden som anges i `products` variabel som ska beräknas [&#39;Enheter&#39;](/help/components/metrics/units.md) och [Intäkter](/help/components/metrics/revenue.md). Se [köphändelse](event-purchase.md) för mer information.
 * `prodView`: Ökar [&#39;Produktvyer&#39;](/help/components/metrics/product-views.md) mätvärden.
 * `scOpen`: Ökar [&quot;Carts&quot;](/help/components/metrics/carts.md) mätvärden.
 * `scAdd`: Ökar [&quot;Cart Additions&quot;](/help/components/metrics/cart-additions.md) mätvärden.
@@ -98,7 +99,7 @@ s.events = "event1=2,event2";
 
 ### Använd valutakändelser
 
-Du kan ändra en anpassad händelse så att den använder valuta i stället för heltal. Valutahändelser konverteras automatiskt till rapportsvitens valuta om rapportsvitens valuta och `currencyCode` variabeln matchar inte. De är användbara för att beräkna fraktkostnader, rabatter eller återbetalningar. Du kan ställa in valutakurshändelser i `products` om du vill att händelsen bara ska tilldelas den produkten.
+Du kan ändra en anpassad händelse så att den använder valuta i stället för heltal. Valutahändelser konverteras automatiskt till rapportsvitens valuta om rapportsvitens valuta och `currencyCode` variabeln matchar inte. De är användbara för att beräkna fraktkostnader, rabatter eller återbetalningar. Du kan ställa in valutatjänster i dialogrutan `products` om du vill att händelsen bara ska tilldelas den produkten.
 
 Innan du implementerar valutakurser måste du ställa in den önskade händelsen till &quot;Valuta&quot; under [Slutförda händelser](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/c-success-events/success-event.md) i Rapportsvitens inställningar.
 
@@ -121,7 +122,7 @@ s.products = "Example category;Example product;1;0;event1=9.99";
 
 Du kan ändra en anpassad händelse och acceptera decimalvärden i stället för heltal. Numeriska händelser fungerar på ungefär samma sätt som valutakändelser, förutom att de inte använder valutakonvertering. Du kan ange numeriska händelser i dialogrutan `products` om du vill att händelsen bara ska tilldelas den produkten.
 
-Innan du implementerar numeriska händelser måste du ställa in den önskade händelsen på &quot;Numeric&quot; under [Slutförda händelser](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/c-success-events/success-event.md) i Rapportsvitens inställningar.
+Innan du implementerar numeriska händelser måste du ställa in den önskade händelsen på Numeric under [Slutförda händelser](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/c-success-events/success-event.md) i Rapportsvitens inställningar.
 
 ```js
 // Send 4.5 in event1 using the events variable. Make sure the event type for event1 is Numeric in Report suite settings

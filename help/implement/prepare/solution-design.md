@@ -3,10 +3,11 @@ title: Skapa ett dokument för lösningsdesign
 description: Lär dig vad ett designdokument är och hur du kan använda det i din organisation.
 feature: Implementation Basics
 exl-id: 0b5c5ddd-5f53-4790-a649-1381135dacda
-source-git-commit: 34ba0e09cd909951a777b0ad3da080958633f97e
+role: Admin, Developer, Leader
+source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
 workflow-type: tm+mt
 source-wordcount: '697'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -31,19 +32,19 @@ När man avgör vilka data som ska samlas in är det enkelt att säga&quot;allt&
 1. **Ta reda på vilka data som är viktigast att samla in.** Ställ affärsfrågor som du vill ha specifika svar på. Svar på dessa frågor ger insikt i hur ni kan förbättra era nyckeltal.
 1. **Ta reda på vilka behov ni har av spårning.** Gruppera dem i mått och mätvärden.
    * Dimensioner är variabler som innehåller text. Exempel är ett internt sökord, en produktkategori eller namnet på ett område som besökaren klickade på.
-   * Mätvärden är specifika händelser som du vill att en besökare ska göra - när de utför en åtgärd som du vill ska numret vara ett. Exempel är att skicka en beställning, prenumerera på ett nyhetsbrev eller skicka ett enkätsvar.
+   * Mätvärden är specifika händelser som du vill att en besökare ska göra - när de utför en åtgärd som du vill ska siffran ökas med ett. Exempel är att skicka en beställning, prenumerera på ett nyhetsbrev eller skicka ett enkätsvar.
 1. **Mappa mått och mätvärden till en sida eller ett kalkylblad.** Den här sidan eller tabellen blir i slutändan ditt designdokument för lösningen. Några praktiska spalter eller punkter att ta med:
-   * Implementeringsstatus: Planerade, aktiva, inaktiva, problem osv. Detta informerar läsarna om dokumentet om variabelns status, om den har implementerats, eller om det finns problem med datainsamlingen.
-   * Variabelnamn: Exempel: &quot;Interna söktermer&quot;. Detta värde är vad analytikerna ser när de arbetar i Analytics.
-   * Analysvariabeln mappas till: Vilken standardvariabel eller anpassad analysvariabel du väljer att tilldela värden till. Dimensioner faller vanligtvis under eVars medan mätvärden faller under händelser.
+   * Implementeringsstatus: Planerad, aktiv, inaktiv, problem osv. Detta informerar läsarna om dokumentet om variabelns status, om den har implementerats, eller om det finns problem med datainsamlingen.
+   * Variabelnamn: Till exempel&quot;Intern sökning&quot;. Detta värde är vad analytikerna ser när de arbetar i Analytics.
+   * Analysvariabeln mappas till: Vilken standardvariabel eller anpassad analysvariabel du väljer att tilldela värden till. Dimensioner faller vanligtvis under eVars, medan mätvärden faller under händelser.
    * Logic: En beskrivning av hur variabeln ställs in och vad som avgör dess värde. Exempel:&quot;Endast angivet på interna söksidor. Tar värdet på frågesträngsparametern q.&quot;
-   * Andra anteckningar som du vill ta med som hör till variabeln
+   * Andra anteckningar som du vill ta med gäller variabeln
 
 ## Ytterligare resurser
 
 Att definiera ett designdokument är ett ganska komplext projekt, särskilt för organisationer som inte har skapat ett tidigare. Om du behöver ytterligare hjälp kan Adobe ge dig specialkonsultationer som hjälper dig att komma igång med Adobe Analytics. Kontakta Adobe Account Team om du vill anmäla dig till Adobe professionella tjänster. A [Teknisk förimplementeringsenkät](assets/technical-pre-implementation-questionnaire.pdf) kan fyllas i så att Adobe vet exakt hur man kan hjälpa efter organisationens behov.
 
-Det finns också ett flertal partners på Adobe som specialiserar sig på att skapa ett designdokument och implementera Adobe Analytics på er webbplats.
+Det finns också flera partners på Adobe som specialiserar sig på att skapa ett dokument för lösningsdesign samt implementera Adobe Analytics på er webbplats.
 
 ## Nästa steg
 

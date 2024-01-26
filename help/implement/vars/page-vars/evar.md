@@ -3,9 +3,10 @@ title: eVar (variabel)
 description: Anpassade variabler som du kan använda i implementeringen.
 feature: Variables
 exl-id: f89457b2-4186-4276-8637-9992070e3a73
-source-git-commit: 6de20d2fbbab6ded6c92f0c6f3536671f4b2ae46
+role: Admin, Developer
+source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
 workflow-type: tm+mt
-source-wordcount: '395'
+source-wordcount: '390'
 ht-degree: 0%
 
 ---
@@ -37,11 +38,11 @@ Du kan ange eVars antingen när du konfigurerar Analytics-tillägget (globala va
 5. Ange [!UICONTROL Extension] nedrullningsbar lista till Adobe Analytics och [!UICONTROL Action Type] till [!UICONTROL Set Variables].
 6. Leta reda på [!UICONTROL eVars] -avsnitt.
 
-Du kan ange ett värde eller ett dataelement som eVar. Du kan också kopiera värdet från en annan Analytics-variabel.
+Du kan ställa in en eVar på ett värde eller ett dataelement. Du kan också kopiera värdet från en annan Analytics-variabel.
 
-## s.eVar1 - s.eVar250 i AppMeasurement och den anpassade kodredigeraren för Analytics-tillägget
+## s.eVar1 - s.eVar250 i AppMeasurementet och den anpassade kodredigeraren för Analytics-tillägget
 
-Varje eVar är en sträng som innehåller anpassade värden som är specifika för din organisation. Deras största längd är 255 byte. värden som är längre än 255 byte trunkeras automatiskt när de skickas till Adobe.
+Varje eVar är en sträng som innehåller anpassade värden som är specifika för din organisation. Deras maxlängd är 255 byte. Värden som är längre än 255 byte trunkeras automatiskt när de skickas till Adobe.
 
 ```js
 s.eVar1 = "Example custom value";
@@ -49,7 +50,7 @@ s.eVar1 = "Example custom value";
 
 ## Counter eVars
 
-eVar innehåller vanligtvis ett strängvärde. Du kan dock konfigurera eVars så att den i stället innehåller en räknare. Du vill till exempel räkna antalet interna sökningar som gjorts före ett köp. I stället för att ange ett textvärde använder du följande syntax:
+eVar-värden innehåller vanligtvis ett strängvärde. Du kan dock konfigurera eVars så att den i stället innehåller en räknare. Du vill till exempel räkna antalet interna sökningar som gjorts före ett köp. I stället för att ange ett textvärde använder du följande syntax:
 
 ```js
 // Increment a counter eVar by 1
@@ -59,7 +60,7 @@ s.eVar1 = "+1";
 s.eVar1 = "+12.49";
 ```
 
-Om fler än två decimaler anges avrundas eVar till två decimaler. En räknare kan inte innehålla negativa tal.
+Om fler än två decimaler anges avrundas eVarna till två decimaler. En eVar-räknare får inte innehålla negativa tal.
 
 >[!IMPORTANT]
 >

@@ -3,9 +3,10 @@ title: tidsstämpel
 description: Ange tidsstämpeln manuellt.
 feature: Variables
 exl-id: 9d5ce5ef-2d84-4f65-b2e3-7aa3e219bc34
-source-git-commit: 4f9af1b3a1337b0e24b718362a502ff3f0acb5ef
+role: Admin, Developer
+source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
 workflow-type: tm+mt
-source-wordcount: '278'
+source-wordcount: '267'
 ht-degree: 0%
 
 ---

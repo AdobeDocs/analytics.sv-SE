@@ -3,9 +3,10 @@ title: Numbers Suite
 description: Producera och ändra tal för användning i andra JavaScript-variabler.
 feature: Variables
 exl-id: 7af88dce-baf3-4581-b5b6-0d6e41922266
-source-git-commit: bbb138d979968ec2536e53ff07001b43156df095
+role: Admin, Developer
+source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
 workflow-type: tm+mt
-source-wordcount: '605'
+source-wordcount: '604'
 ht-degree: 0%
 
 ---
@@ -18,7 +19,7 @@ Numbers Suite är en serie JavaScript-funktioner. Den innehåller följande plug
 
 * **`zeroPad`**: Lägg till ett visst antal nollor i början av ett tal. Detta plugin-program är användbart om en variabel kräver ett visst antal siffror, t.ex. om du arbetar med JavaScript-datumobjekt och vill formatera datumets månad och dag med två siffror i stället för bara en siffra. Till exempel: `01/09/2020` i stället för `1/9/2020`.
 * **`randomNumber`**: Generera ett slumpmässigt tal med ett visst antal siffror. Detta plugin-program är användbart om du distribuerar taggar från tredje part och vill ha ett slumpmässigt cachelagrat nummer.
-* **`twoDecimals`**: Avrunda ett tal till hundradelsdelen av garderoben. Detta plugin-program är användbart för valutamaterial, så att du kan avrunda ett tal till ett giltigt valutavärde.
+* **`twoDecimals`**: Avrunda ett tal till hundradelsvärdet. Detta plugin-program är användbart för valutamaterial, så att du kan avrunda ett tal till ett giltigt valutavärde.
 
 ## Installera plugin-programmet med Web SDK- eller Web SDK-tillägget
 
@@ -33,11 +34,11 @@ Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-program
 1. Gå till [!UICONTROL Extensions] klickar du på [!UICONTROL Catalog] knapp
 1. Installera och publicera [!UICONTROL Common Analytics Plugins] extension
 1. Om du inte redan har det skapar du en regel med namnet&quot;Initiera plugin-program&quot; med följande konfiguration:
-   * Villkor: Ingen
+   * Villkor: Inget
    * Händelse: Kärna - Bibliotek inläst (sidan ovanpå)
 1. Lägg till en åtgärd i ovanstående regel med följande konfiguration:
-   * Tillägg: Plugin-program för vanlig analys
-   * Åtgärdstyp: Initiera Numbers Suite
+   * Tillägg: Plugin-program för gemensam analys
+   * Åtgärdstyp: Initiera sifferserie
 1. Spara och publicera ändringarna i regeln.
 
 ## Installera plugin-programmet med en anpassad kodredigerare
@@ -51,9 +52,9 @@ Om du inte vill använda tillägget för Common Analytics-plugin-program kan du 
 1. Öppna den anpassade kodredigeraren och klistra in den plugin-kod som finns nedan i redigeringsfönstret.
 1. Spara och publicera ändringarna i Analytics-tillägget.
 
-## Installera plugin-programmet med AppMeasurement
+## Installera plugin-programmet med AppMeasurementet
 
-Kopiera och klistra in följande kod var som helst i AppMeasurement-filen när Analytics-spårningsobjektet har instansierats (med [`s_gi`](../functions/s-gi.md)). Genom att bevara kommentarer och versionsnummer i koden i implementeringen kan Adobe felsöka eventuella problem.
+Kopiera och klistra in följande AppMeasurement var som helst i analysfilen efter att Analytics-spårningsobjektet har initierats (med [`s_gi`](../functions/s-gi.md)). Genom att bevara kommentarer och versionsnummer i koden i implementeringen kan Adobe felsöka eventuella problem.
 
 ```js
 /******************************************* BEGIN CODE TO DEPLOY *******************************************/
@@ -72,8 +73,8 @@ function twoDecimals(v){return"undefined"===typeof v||void 0===v||isNaN(v)?0:Num
 
 The `zeroPad` funktionen använder följande argument:
 
-* **num** (obligatoriskt, heltal): Numret som ska fyllas ut. Funktionen avrundar värdet för det här argumentet om det innehåller decimaler.
-* **nod** (obligatoriskt, heltal): Antalet siffror i det slutliga returvärdet. Om siffran som ska fyllas på har färre siffror än antalet siffror att fylla i, lägger plugin-programmet till nollor i början av `num` argument.
+* **num** (required, integer): Det tal som ska fyllas ut. Funktionen avrundar värdet för det här argumentet om det innehåller decimaler.
+* **nod** (required, integer): Antalet siffror i det slutliga returvärdet. Om siffran som ska fyllas på har färre siffror än antalet siffror att fylla i, lägger plugin-programmet till nollor i början av `num` argument.
 
 The `randomNumber` funktionen använder följande argument:
 
@@ -81,7 +82,7 @@ The `randomNumber` funktionen använder följande argument:
 
 The `twoDecimals` funktionen använder följande argument:
 
-* **val** (obligatoriskt, tal): Ett tal (som representeras av antingen en sträng eller ett nummerobjekt) som du vill avrunda till närmaste hundradel.
+* **val** (required, number): Ett tal (som representeras av antingen en sträng eller ett nummerobjekt) som du vill avrunda till närmaste hundradel.
 
 ## Returnerar
 
@@ -121,7 +122,7 @@ var fivehundredthirtytwo = twoDecimals(532.000000001) //sets the variable fivehu
 s.eVar65 = twoDecimals("672132.9699736457") //sets s.eVar65 equal to 672132.97
 ```
 
-## Versionshistorik
+## Tidigare versioner
 
 ### 1.0 (25 maj 2019)
 

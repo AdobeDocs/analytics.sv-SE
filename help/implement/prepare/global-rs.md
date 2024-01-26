@@ -3,14 +3,15 @@ title: Globala rapportsviter i Adobe Analytics
 description: Förstå fördelarna och kraven med att använda ett globalt rapporteringsprogram.
 feature: Implementation Basics
 exl-id: fa949b1e-80bd-41cf-a294-c840503b568f
-source-git-commit: 9057cc83881a72fa039e9398ed3daaf4259ef2bf
+role: Admin, Developer, Leader
+source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
 workflow-type: tm+mt
-source-wordcount: '871'
+source-wordcount: '854'
 ht-degree: 0%
 
 ---
 
-# Att tänka på för den globala rapportsviten
+# Överväganden för globala rapportsviter
 
 En global rapportserie är en rapportserie som samlar in data från alla domäner och appar som organisationen äger. Denna datainsamlingsteknik kräver förberedelse och kan kräva samordning mellan team inom organisationen.
 
@@ -19,9 +20,9 @@ En global rapportserie är en rapportserie som samlar in data från alla domäne
 Adobe rekommenderar att man i de flesta fall genomför en global rapportserie.
 
 * **Sammanställda data:** Med globala rapportsviter kan du se KPI:er och framgångshändelser på egna webbplatser. Segmentering och virtuella rapportsviter kan användas för att visa platsspecifika data.
-* **Stöd för enhetsövergripande analys:** CDA kräver en rapportserie som samlar in data från flera platser, till exempel din webbplats och mobilapp. Separata enheter kan sammanfoga data om de implementeras på rätt sätt. Se [Enhetsövergripande analys](../../components/cda/overview.md) i användarhandboken för Komponenter om du vill ha mer information.
+* **Stöd för enhetsövergripande analys:** CDA kräver en rapportserie som samlar in data från flera platser, till exempel din webbplats och mobilapp. Separata enheter kan sammanfoga data om de implementeras på rätt sätt. Se [Enhetsövergripande analys](../../components/cda/overview.md) i användarhandboken för komponenter om du vill ha mer information.
 * **Du behöver inte mer än en rapportserie:** Alla data kan samlas in i en enda rapportserie, så det är mindre troligt att en utvecklare av misstag skickar data till fel rapportserie.
-* **Inga sammanslagningar:** Sammanslagningar är en funktion som är ganska daterad och som sammanställer data från enskilda rapporteringsprogram dagligen. Upplysta listor tar inte bort besöks- eller besöksdata, vilket kan leda till ett högt antal. Se [Samlingar](../../admin/admin/c-manage-report-suites/rollup-report-suite.md) i användarhandboken för Admin om du vill ha mer information.
+* **Inga sammanslagningar behövs:** Sammanslagningar är en funktion som är ganska daterad och som sammanställer data från enskilda rapporteringsprogram dagligen. Upplysta listor tar inte bort besöks- eller besöksdata, vilket kan leda till ett högt antal. Se [Samlingar](../../admin/admin/c-manage-report-suites/rollup-report-suite.md) i användarhandboken för Admin om du vill ha mer information.
 * **Spara tid:** Arbetsyteprojekt, klassificeringar, segment och beräknade värden är kopplade till samma globala rapportserie. Administratörer lägger mindre tid på att hantera dessa komponenter och datastyrning.
 * **Exaktare varumärkesattribuering:** Om ett besök börjar på en webbplats och sedan klickar på en annan av dina ägda webbplatser innan en lyckad händelse utlöses, samlas attribueringen in korrekt. En besökare klickar till exempel på en betald söklänk och hamnar på plats A. De klickar sedan på en länk till webbplats B och gör sedan ett köp. En global rapportsvit har korrekta attribut som återgår till betalsökningar.
 * **Förenklad implementering:** Eftersom alla varumärken/webbplatser skickar data till samma rapporteringsprogram justeras implementeringarna för varje webbplats. Denna tvingande styrning säkerställer att en viss dimension eller mätvärden sparas i samma eVar eller händelse. Administratörer, testare, tagghanteringsägare och analytiker drar nytta av denna förenkling.
@@ -40,9 +41,9 @@ Använd följande allmänna riktlinjer för att förstå hur man implementerar e
 
    >[!IMPORTANT]
    >
-   >Se till att alla anpassade variabler används på samma sätt i alla domäner. Använd inte samma eVar eller händelse för olika syften på alla era webbplatser.
+   >Se till att alla anpassade variabler används på samma sätt i alla domäner. Använd inte samma eVar eller händelse för olika syften på era webbplatser.
 1. Se till att varje domän har ett datalager som förenklar datainsamlingen. Data kan fortfarande samlas in utan ett datalager, men tillförlitligheten och varaktigheten i implementeringen minskar, särskilt när sajten genomgår omformningar.
-1. Använd taggar i Adobe Experience Platform för att implementera Analytics. Olika webbplatser kommer troligtvis att kräva olika dataelement. Använd regler som är specifika för varje domän för att säkerställa att varje dataelement fylls i korrekt, och tilldela sedan dessa dataelement till deras respektive eVars och händelser. Se [taggöversikt](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html).
+1. Använd taggar i Adobe Experience Platform för att implementera Analytics. Olika webbplatser kommer troligtvis att kräva olika dataelement. Använd regler som är specifika för varje domän för att säkerställa att varje dataelement är korrekt ifyllt och tilldela sedan dessa dataelement till deras respektive eVars- och händelser. Se [taggöversikt](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html).
 1. Inkludera [Adobe Experience Cloud ID-tjänst](https://experienceleague.adobe.com/docs/id-service/using/home.html) och använder [appendVisitorIDsTo](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/methods/appendvisitorid.html) funktion. Den här funktionen sammanfogar besökardata när användare klickar från en domän till en annan.
 
 ## Ändra en befintlig implementering med en global rapportserie
@@ -50,7 +51,7 @@ Använd följande allmänna riktlinjer för att förstå hur man implementerar e
 Processen med att flytta en befintlig implementering över flera webbplatser till en enda global rapportserie kräver mer tid och samordning mellan teamen i organisationen.
 
 1. Bestäm om du vill använda någon av dina befintliga rapportsviter eller börja om från början med en ny rapportserie. Om du vill ändra användningsområdena för befintliga variabler i implementeringen rekommenderar vi att du börjar med en ny rapportserie.
-2. Ange ett brytdatum för när du vill byta till en global rapportserie. Det bästa tillfället att göra en övergång är mellan två signifikanta rapportperioder eller tillsammans med större förändringar på er webbplats. Exempel är början av ett räkenskapskvartal eller räkenskapsår, under en webbplatsuppdatering eller ändring till ett nytt tagghanteringssystem.
+2. Fastställ ett brytdatum för när du vill byta till en global rapportserie. Det bästa tillfället att göra en övergång är mellan två signifikanta rapportperioder eller tillsammans med större förändringar på er webbplats. Exempel är början av ett räkenskapskvartal eller räkenskapsår, under en webbplatsuppdatering eller ändring till ett nytt tagghanteringssystem.
 3. Följ stegen ovan (skapa en rapportsserie, samla in rapporteringskrav i ett lösningsdesigndokument och skapa ett datalager på varje webbplats). När du implementerar taggar i Adobe Experience Platform validerar du implementeringen med en utvecklingsversion av din webbplats.
 4. När du har bekräftat att implementeringen fungerar på dev, publicera taggimplementeringen på brytdatumet.
 

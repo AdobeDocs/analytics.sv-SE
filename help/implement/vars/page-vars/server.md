@@ -3,10 +3,11 @@ title: server
 description: Fyll i dimensionen Servrar.
 feature: Variables
 exl-id: 7904c3c2-9a91-497e-89d0-9eed9ae7a902
-source-git-commit: 6de20d2fbbab6ded6c92f0c6f3536671f4b2ae46
+role: Admin, Developer
+source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
 workflow-type: tm+mt
-source-wordcount: '178'
-ht-degree: 1%
+source-wordcount: '171'
+ht-degree: 0%
 
 ---
 
@@ -31,9 +32,9 @@ Du kan ange server antingen när Analytics-tillägget (globala variabler) konfig
 
 Du kan ställa in servern på valfritt strängvärde eller dataelement.
 
-## s.server i AppMeasurement och den anpassade kodredigeraren i Analytics-tillägget
+## s.server i AppMeasurementet och den anpassade kodredigeraren för Analytics-tillägget
 
-The `s.server` variabeln är en sträng som vanligtvis innehåller värdnamnet för platsen. Den har ett maxvärde på 100 byte. längre värden trunkeras.
+The `s.server` variabeln är en sträng som vanligtvis innehåller värdnamnet för platsen. Det har ett maxvärde på 100 byte. Ju längre värde, desto trunkeras.
 
 ```js
 // Set the server variable to a static string

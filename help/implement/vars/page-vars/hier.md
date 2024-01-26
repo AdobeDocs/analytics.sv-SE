@@ -1,22 +1,23 @@
 ---
-title: hierarki
+title: hövding
 description: Implementera hierarkivariabler i Adobe Analytics.
 feature: Variables
 exl-id: 72bdab8f-a001-4ada-b5e2-453a8e3f24a6
-source-git-commit: 6de20d2fbbab6ded6c92f0c6f3536671f4b2ae46
+role: Admin, Developer
+source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
 workflow-type: tm+mt
-source-wordcount: '341'
+source-wordcount: '338'
 ht-degree: 0%
 
 ---
 
-# hierarki
+# hövding
 
 >[!IMPORTANT]
 >
 >Den här variabeln har tagits bort och är inte en tillgänglig dimension i Analysis Workspace. Adobe rekommenderar att du använder [eVars](evar.md) och klassificeringar istället.
 
-Hierarkivariabler är anpassade variabler som du kan använda för att visa en webbplats struktur. Adobe stöder upp till 5 hierarkivariabler i implementeringen.
+Hierarkivariabler är anpassade variabler som du kan använda för att visa strukturen för en plats. Adobe stöder upp till 5 hierarkivariabler i implementeringen.
 
 Den här variabeln är användbar för platser som har mer än tre nivåer i platsstrukturen. En mediewebbplats kan till exempel ha fyra nivåer till avsnittet Sport: `Sports`, `Local Sports`, `Baseball`och `Team name`. Om någon besöker Baseball-sidan, Sport, Local Sports och Baseball återspeglar alla nivåer detta besök.
 
@@ -39,11 +40,11 @@ Du kan ange hierarkier antingen när du konfigurerar Analytics-tillägget (globa
 
 Du kan ställa in ett hierarkivärde på en statisk sträng eller referera till ett dataelement. Du kan också ange önskad avgränsare. Kontrollera att avgränsaren som du anger här matchar avgränsaren som anges i inställningarna för rapportsviten.
 
-## s.hier1 - s.hier5 i AppMeasurement och den anpassade kodredigeraren i Analytics-tillägget
+## s.hier1 - s.hier5 i AppMeasurementet och den anpassade kodredigeraren i Analytics-tillägget
 
-Varje hierarki är en sträng som innehåller anpassade värden som är specifika för din organisation. Deras största längd är 255 byte. värden som är längre än 255 byte trunkeras automatiskt när de skickas till Adobe.
+Varje hierarki är en sträng som innehåller anpassade värden som är specifika för din organisation. Deras maxlängd är 255 byte. Värden som är längre än 255 byte trunkeras automatiskt när de skickas till Adobe.
 
-Kontrollera att inga av avsnittsnamnen har avgränsaren. Om till exempel ett av avsnitten anropas `Coach Griffin, Jim`väljer du en annan avgränsare än ett komma. Den totala variabelgränsen är 255 byte. Avgränsare kan bestå av flera tecken, t.ex. `||` eller `/|\`, vilket är mindre troligt att de visas i variabelvärden.
+Kontrollera att inga av avsnittsnamnen har avgränsaren. Om till exempel ett av avsnitten anropas `Coach Griffin, Jim`väljer du en annan avgränsare än ett komma. Den totala variabelgränsen är 255 byte. Avgränsare kan bestå av flera tecken, till exempel `||` eller `/|\`, vilket är mindre troligt att de visas i variabelvärden.
 
 ```js
 s.hier1 = "Toys|Boys 6+|Legos|Super Block Tub";

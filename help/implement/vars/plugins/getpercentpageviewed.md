@@ -3,7 +3,8 @@ title: getPercentPageViewed
 description: Hämta den procentandel av sidan som besökaren visade.
 feature: Variables
 exl-id: 7a842cf0-f8cb-45a9-910e-5793849bcfb8
-source-git-commit: bbb138d979968ec2536e53ff07001b43156df095
+role: Admin, Developer
+source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
 workflow-type: tm+mt
 source-wordcount: '728'
 ht-degree: 0%
@@ -29,10 +30,10 @@ Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-program
 1. Gå till [!UICONTROL Extensions] klickar du på [!UICONTROL Catalog] knapp
 1. Installera och publicera [!UICONTROL Common Analytics Plugins] extension
 1. Om du inte redan har det skapar du en regel med namnet&quot;Initiera plugin-program&quot; med följande konfiguration:
-   * Villkor: Ingen
+   * Villkor: Inget
    * Händelse: Kärna - Bibliotek inläst (sidan ovanpå)
 1. Lägg till en åtgärd i ovanstående regel med följande konfiguration:
-   * Tillägg: Plugin-program för vanlig analys
+   * Tillägg: Plugin-program för gemensam analys
    * Åtgärdstyp: Initiera getPercentPageViewed
 1. Spara och publicera ändringarna i regeln.
 
@@ -47,9 +48,9 @@ Om du inte vill använda tillägget för Common Analytics-plugin-program kan du 
 1. Öppna den anpassade kodredigeraren och klistra in den plugin-kod som finns nedan i redigeringsfönstret.
 1. Spara och publicera ändringarna i Analytics-tillägget.
 
-## Installera plugin-programmet med AppMeasurement
+## Installera plugin-programmet med AppMeasurementet
 
-Kopiera och klistra in följande kod var som helst i AppMeasurement-filen när Analytics-spårningsobjektet har instansierats (med [`s_gi`](../functions/s-gi.md)). Genom att bevara kommentarer och versionsnummer i koden i implementeringen kan Adobe felsöka eventuella problem.
+Kopiera och klistra in följande AppMeasurement var som helst i analysfilen efter att Analytics-spårningsobjektet har initierats (med [`s_gi`](../functions/s-gi.md)). Genom att bevara kommentarer och versionsnummer i koden i implementeringen kan Adobe felsöka eventuella problem.
 
 ```js
 /******************************************* BEGIN CODE TO DEPLOY *******************************************/
@@ -62,17 +63,17 @@ function getPercentPageViewed(pid,ch){var e=pid,i=ch;if("-v"===e)return{plugin:"
 
 The `getPercentPageViewed` funktionen använder följande argument:
 
-* **`pid`** (valfri, sträng): En variabel eller ett värde som är lika med den aktuella sidan. Standardvärdet är Analytics AppMeasurement `pageName` variabeln ELLER den aktuella URL:en om variabeln AppMeasurement pageName inte har angetts.
-* **`ch`** (valfritt, boolesk): Ange detta till `false` (eller `0`) om du inte vill att plugin-programmet ska ta hänsyn till ändringar som gjorts i sidstorleken efter den första inläsningen. Om det utelämnas används det här argumentet som standard `true`. Adobe rekommenderar att detta argument utelämnas i de flesta fall.
+* **`pid`** (valfri sträng): En variabel eller ett värde som är lika med den aktuella sidan. Standardvärdet är Analytics-AppMeasurementet `pageName` variabeln OR the current URL if the AppMeasurement pageName variable is not set.
+* **`ch`** (valfritt, booleskt): Ange detta till `false` (eller `0`) om du inte vill att plugin-programmet ska ta hänsyn till ändringar som gjorts i sidstorleken efter den första inläsningen. Om det utelämnas används det här argumentet som standard `true`. Adobe rekommenderar att detta argument utelämnas i de flesta fall.
 
-När funktionen anropas returneras ingenting; i stället anges följande variabler:
+Om du anropar den här funktionen returneras ingenting. I stället anges följande variabler:
 
-* `window._ppvPreviousPage`: Namnet på föregående sida som visades. Slutliga rullningsmått för den aktuella sidan är inte tillgängliga förrän en ny sida har lästs in.
+* `window._ppvPreviousPage`: Namnet på den föregående sida som visas. Slutliga rullningsmått för den aktuella sidan är inte tillgängliga förrän en ny sida har lästs in.
 * `window._ppvInitialPercentViewed`: Den procentandel av föregående sida som var synlig när föregående sida först lästes in. Om hela sidan är synlig när den läses in första gången, är det här värdet `100`.
 * `window._ppvHighestPercentViewed`: Den högsta procentandel av föregående sida som besökaren visade (höjdvis). Den längst punkten som besökaren rullade ned till på föregående sida. Om hela sidan är synlig när den läses in första gången, är det här värdet `100`.
 * `window._ppvFinalPercentViewed`: Den procentandel av föregående sida som var synlig vid den punkt besökaren flyttade till den aktuella sidan. Värdet är lika med eller större än den ursprungliga procentandelen som visas och är lika med eller mindre än den högsta procentsidan som visas.
-* `window._ppvHighestPixelsSeen`: Det högsta antalet pixlar som visas (höjdvis) när besökaren rullade nedåt på föregående sida.
-* `window._ppvFoldsAvailable`: Det totala antalet&quot;sidvikningar&quot; som är tillgängliga för rullning nedåt på föregående sida. Om hela sidan är synlig när den läses in första gången, är det här värdet `1`.
+* `window._ppvHighestPixelsSeen`: Det högsta antalet totala pixlar som visas (höjdvis) när besökaren rullade nedåt på föregående sida.
+* `window._ppvFoldsAvailable`: Det totala antalet&quot;sidvikningar&quot; som kan rullas nedåt på föregående sida. Om hela sidan är synlig när den läses in första gången, är det här värdet `1`.
 * `window._ppvFoldsSeen`: Det högsta antalet sidvikningar som nås när besökaren rullade nedåt på föregående sida. Den här variabeln innehåller &quot;top-of-page&quot;-vikningen. Om hela sidan är synlig när den läses in första gången, är det här värdet `1`.
 
 Tilldela en eller flera av dessa variabler till eVars för att visa dimensionsdata i rapporter.
@@ -104,7 +105,7 @@ if(_ppvPreviousPage)
 }
 ```
 
-## Versionshistorik
+## Tidigare versioner
 
 ### 5.1 (8 december 2022)
 
@@ -124,7 +125,7 @@ if(_ppvPreviousPage)
 
 ### v3.01 (13 augusti 2018)
 
-* Ett problem har korrigerats för sidor som har flera AppMeasurement-objekt på en sida
+* Ett problem har korrigerats för sidor som har flera AppMeasurement på en sida
 
 ### v3.0 (13 april 2018)
 

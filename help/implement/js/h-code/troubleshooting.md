@@ -3,7 +3,8 @@ title: Felsöka implementeringar av H-kod
 description: Lär dig några vanliga problem med äldre JavaScript-implementeringar.
 feature: Implementation Basics
 exl-id: 51d6e286-7008-4736-a196-bd8ac4e3e9cb
-source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
+role: Developer
+source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
 workflow-type: tm+mt
 source-wordcount: '244'
 ht-degree: 0%
@@ -22,7 +23,7 @@ Följande är felsökningssteg som är specifika för H-kodimplementeringar.
 
 Analyskoden skapar en osynlig 1x1-pixelbild. Tidigare var en vanlig implementeringspraxis att placera `s_code.js` i `<head>` -tagg. Om du placerar koden här förhindrar du att bilden påverkar sidlayouten på något sätt. Den körs också tidigare, vilket gör att du kan räkna sidvisningar för partiell sidinläsning mer effektivt.
 
-Vissa element i koden kräver dock att det finns `<body>` -objekt. Om JavaScript-koden för Analytics finns i `<head>` -taggen körs den före `<body>` finns. Därför samlar implementeringen inte in [!UICONTROL ClickMap] data, automatisk spårning av filhämtningar eller avslutslänkar, eller anslutningstypdata. Skriptreferensen placeras på `s_code.js` i `<head>` -taggen fungerar, men resultatet är en mycket begränsad version av Analytics.
+Vissa element i koden kräver dock att det finns `<body>` -objekt. Om JavaScript-koden för Analytics finns i `<head>` -taggen körs den före `<body>` objektet finns. Därför samlar implementeringen inte in [!UICONTROL ClickMap] data, automatisk spårning av filhämtningar eller avslutslänkar, eller anslutningstypdata. Skriptreferensen placeras på `s_code.js` i `<head>` -taggen fungerar, men resultatet är en mycket begränsad version av Analytics.
 
 Analyskoden kan placeras var som helst inuti `<body>` -taggen för en välformaterad HTML-sida. Adobe rekommenderar att Analytics-koden placeras så nära överkanten av `<body>` tagga så mycket som möjligt. Se till att alla sidvariabler anges efter `s_code.js` filen läses in.
 

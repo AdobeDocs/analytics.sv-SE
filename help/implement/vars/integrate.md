@@ -3,9 +3,10 @@ title: Integrera modul
 description: Med Integrate Module kan Adobe partners integrera sina datainsamlingsaktiviteter med din organisation.
 feature: Variables
 exl-id: 378ba77b-be81-49af-8f36-81c65bd01a53
-source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
+role: Admin, Developer
+source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
 workflow-type: tm+mt
-source-wordcount: '881'
+source-wordcount: '878'
 ht-degree: 2%
 
 ---
@@ -22,7 +23,7 @@ Med Integrate Module kan Adobe partners integrera sina datainsamlingsaktiviteter
 
 1. En besökare på webbplatsen läser in en sida som initierar en `get` begäran om partnerdata.
 2. Adobe-partnern får `get` begär och paketerar lämpliga variabler i ett JSON-objekt. JSON-objektet returneras.
-3. Din webbplats tar emot JSON-objektet och anropar `setVars` för att tilldela Adobe Analytics-variabler den information som finns i JSON-objektet
+3. Din webbplats tar emot JSON-objektet och anropar `setVars` för att tilldela Adobe Analytics-variabler informationen i JSON-objektet
 4. En bildbegäran skickas till datainsamlingsservrar i Adobe.
 
 ## Integrera modulimplementering
@@ -36,7 +37,7 @@ För att få tillgång till modulkod krävs en användare med produktadministrat
 1. Logga in på [experiencecloud.adobe.com](https://experiencecloud.adobe.com) med inloggningsuppgifterna för ditt Adobe ID.
 1. Klicka på ikonen med nio kvadrater i det övre högra hörnet och klicka sedan på den färgade Analytics-logotypen.
 1. I den övre navigeringen klickar du på **[!UICONTROL Admin]** > **[!UICONTROL All admin]** > **[!UICONTROL Code manager]**.
-1. Hämta det senaste JavaScript AppMeasurement-biblioteket.
+1. Ladda ned det senaste JavaScript-biblioteket för AppMeasurement.
 1. När du laddat ned filen packar du upp den och letar upp `AppMeasurement_Module_Integrate.js`.
 
 ### Placera integreringsmodulen i implementeringen
@@ -53,7 +54,7 @@ Du måste ha tillgång till Adobe Experience Platform Data Collection för att k
 
 När integreringsmodulen har implementerats använder du dessa metoder för att konfigurera den så att den skickar och tar emot data från den önskade Adobe-partnern.
 
-### add
+### lägg till
 
 The `add` -metoden instansierar ett partnerobjekt, som fungerar som ett mellanlager av variabeldata när data delas mellan partnersystem och implementeringen. Den här metoden krävs för alla integreringar. Ett separat partnerobjekt måste användas för varje unik partner om flera partner används i en och samma implementering.
 
@@ -87,7 +88,7 @@ s.Integrate.<partner_name>.get("<url_to_json_object>?pid=value1&pid2=value2");
 
 * **Partnernamn:** Din organisation arbetar vanligtvis tillsammans med Adobe-partnern för att fastställa värdet för partnernamnet.
 * **URL till JSON-objekt:** URL:en till ett JSON-objekt som innehåller de partnervariabler som ska inkluderas i en bildbegäran.
-* **Frågesträngsparametrar:** Partnerkontoinformation som identifierar din organisation i partnersystemet. Adobe partner använder den här informationen för att identifiera din datauppsättning.
+* **Frågesträngsparametrar:** Partnerkontoinformation som identifierar din organisation i partnersystemet. Adobe-partnern använder den här informationen för att identifiera din datauppsättning.
 
 Modulen Integrera lägger automatiskt till fler frågesträngar till URL:en. En var-frågesträng anger namnet på det JSON-objekt som modulen förväntar sig från partnern. Ett slumpmässigt tal läggs också till för att förhindra webbläsarcachelagring.
 
@@ -97,7 +98,7 @@ Adobe samarbetar internt med team för att få denna metod dokumenterad.
 
 ### useVars
 
-The `useVars` kan klientens variabelvärden delas med en Adobe-partner.
+The `useVars` gör att klientens variabelvärden kan delas med en Adobe-partner.
 
 ```JavaScript
 s.Integrate.<partner_name>.useVars = function (s,p) {

@@ -3,9 +3,10 @@ title: Arbetsflöde för kampanjspårning
 description: Använd Adobe Analytics för att spåra era marknadsföringssatsningar.
 feature: Implementation Basics
 exl-id: 9f7920e0-471c-46bc-9314-7b0a7c93fdce
-source-git-commit: c118d42667c4a1af55929834b87d148a5973bed9
+role: Admin, Developer, Leader
+source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '574'
 ht-degree: 0%
 
 ---
@@ -23,13 +24,13 @@ Om din organisation vill följa upp resultatet och klickfrekvens för marknadsf�
 
 ## Upprätta en process för att generera spårningskod
 
-Alla organisationer har olika behov av att spåra koder. Vissa organisationer kan ha minimala behov där manuellt skapade spårningskoder är mer än tillräckliga. Andra organisationer kanske vill ha större kontroll över spårning och har flera system för att skapa önskade spårningskoder. Om din organisation använder Google Analytics tillsammans med Adobe Analytics kan din organisation redan ha en `utm` spårningskodmodellen har upprättats.
+Alla organisationer har olika behov av att spåra koder. Vissa organisationer kan ha minimala behov där manuellt skapade spårningskoder är mer än tillräckliga. Andra organisationer kanske vill ha större kontroll över spårning och har flera system för att skapa önskade spårningskoder. Om din organisation använder Google Analytics tillsammans med Adobe Analytics kan din organisation redan ha en `utm` en spårningskodmodell har upprättats.
 
 Oberoende av hur du väljer att skapa eller generera spårningskoder kan organisationen lättare gruppera spårningskoder när du vill rapportera på ett enhetligt sätt. Med konsekventa strukturerade spårningskoder kan du skapa [Klassificeringsregler](/help/components/classifications/crb/classification-rule-builder.md) så att ni kan få insikt i kategoriernas prestanda.
 
 ## Lägg till önskad spårningskod i en URL
 
-När du har fått det önskade värdet för spårningskod kan du lägga till det i alla länkar som du publicerar online, till exempel annonser, sociala medier eller e-post. Dessa spårningskoder läggs vanligtvis till i en länks frågesträng. Vilken frågesträngsparameter du använder beror på organisationens spårningskrav; en vanlig frågesträngsparameter är `cid` (kort för kampanj-ID). Vissa organisationer som också använder Google Analytics kanske redan har flera frågesträngsparametrar som `utm_source`, `utm_medium`och andra.
+När du har fått det önskade värdet för spårningskod kan du lägga till det i alla länkar som du publicerar online, till exempel annonser, sociala medier eller e-post. Dessa spårningskoder läggs vanligtvis till i en länks frågesträng. Vilken frågesträngsparameter du använder beror på organisationens spårningskrav. En vanlig frågesträngsparameter är `cid` (kort för kampanj-ID). Vissa organisationer som också använder Google Analytics kanske redan har flera frågesträngsparametrar som `utm_source`, `utm_medium`och andra.
 
 Om du lägger till frågesträngar i en länk i ett e-postmeddelande ser det ut ungefär så här:
 
@@ -45,7 +46,7 @@ Om organisationen ännu inte har ställt in kampanjspårning kan du justera impl
 
 Om organisationen samlar in `utm` frågesträngar kan du välja mellan:
 
-* Skicka alla `utm` frågesträngar i spårningskoddimensionen som sammanfogade värden. Du kan sedan använda [Klassificeringsregler](/help/components/classifications/crb/classification-rule-builder.md) för att skapa ytterligare dimensioner som fokuserar på varje `utm` parameter. Den här metoden har en mer komplex inlärningskurva, men använder inga extra eVars-variabler.
+* Skicka alla `utm` frågesträngar i spårningskoddimensionen som sammanfogade värden. Du kan sedan använda [Klassificeringsregler](/help/components/classifications/crb/classification-rule-builder.md) skapa ytterligare dimensioner som fokuserar på varje `utm` parameter. Den här metoden har en mer komplex inlärningskurva, men använder inga extra eVars-variabler.
 * Skicka varje `utm` frågesträng i en separat [eVar](/help/components/dimensions/evar.md). Den här metoden är enklare att implementera generellt, men kräver att extra eVars används.
 
 ## Visa rapporter i Analysis Workspace
@@ -54,7 +55,7 @@ När du har konfigurerat implementeringen för att samla in spårningskoddata ka
 
 1. Logga in på [Adobe Experience Cloud](https://experience.adobe.com) och markera [!UICONTROL Adobe Analytics].
 1. Skapa en [Arbetsyteprojekt](/help/analyze/analysis-workspace/build-workspace-project/freeform-overview.md).
-1. Dra i komponentlistan till vänster [Spårningskod](/help/components/dimensions/tracking-code.md) till arbetsytans arbetsyta.
+1. Dra i listan med komponenter till vänster [Spårningskod](/help/components/dimensions/tracking-code.md) dimension till arbetsytan.
 1. Dra mätvärdena, till exempel [Besök](/help/components/metrics/visits.md) eller [Beställningar](/help/components/metrics/orders.md) till höger om arbetsytan.
 
 ![Kampanjspårningsrapport](../assets/campaign-tracking-report.png)

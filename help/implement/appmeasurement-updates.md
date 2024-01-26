@@ -3,10 +3,11 @@ title: AppMeasurement för versionsinformation för JavaScript
 description: Cumulative release notes for AppMeasurement for JavaScript.
 feature: Appmeasurement Implementation
 exl-id: 80b935f0-3ec5-4ffa-9858-f83ae9a6b763
-source-git-commit: 13d1809d1e32bc0470c77b7c04061db4a8f2c80e
+role: Admin, Developer, Leader, User
+source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
 workflow-type: tm+mt
-source-wordcount: '2362'
-ht-degree: 2%
+source-wordcount: '2614'
+ht-degree: 3%
 
 ---
 
@@ -95,7 +96,7 @@ Utgivningsdatum: **13 februari 2020**
 
 ## Version 2.17.0
 
-Releasedatum: **23 augusti 2019**
+Utgivningsdatum: **23 augusti 2019**
 
 * Stöd för ändring av frågesträngar i Baidu har lagts till. (AN-182483)
 * Korrigerade ett problem som orsakade inaktuella besökarvärden i träffar som placerades i kö i väntan på deltagande. (AN-184391)
@@ -216,21 +217,21 @@ Utgivningsdatum: **21 september 2017**
 
 ## Version 2.4.0
 
-Releasedatum: **17 augusti 2017**
+Utgivningsdatum: **17 augusti 2017**
 
 * Inkludera dil.js v6.11
 * Inkludera Visitor API 2.4.0
 
 ## Version 2.3.0
 
-Releasedatum: **20 juli 2017**
+Utgivningsdatum: **20 juli 2017**
 
 * Korrigerat fel där `s.Util.getQueryParam` fångad `#`
 * Lagt till v6.10 av `dil.js` (AN-145701)
 
 ## Version 2.2.0
 
-Releasedatum: **8 juni 2017**
+Utgivningsdatum: **8 juni 2017**
 
 * Stöd för flera [!DNL AppMeasurement] instansieringsordning. (AN-138237)
 * Inkludering av version 2.2.0 Visitor API. (AN-144042)
@@ -272,7 +273,7 @@ Uppdaterat: **11 november 2016**
 
 ## Version 1.6.4
 
-Uppdaterades: **18 augusti 2016**
+Uppdaterat: **18 augusti 2016**
 
 * Uppdaterat [!DNL AppMeasurement] läsa och skriva AMCV-cookies. (AN-127098)
 * Inkludering av Visitor API 1.7.0.
@@ -283,7 +284,7 @@ Uppdaterades: **18 augusti 2016**
 
 ## Version 1.6.3
 
-Uppdaterades: **4 augusti 2016**
+Uppdaterat: **4 augusti 2016**
 
 * Ett problem där [!DNL AppMeasurement] anslutningar för begäranden som avslutades i förtid. (AN-126448)
 
@@ -301,7 +302,7 @@ Utgivningsdatum: **21 juli 2016**
 
 ## Version 1.6.1
 
-Releasedatum: **16 juni 2016**
+Utgivningsdatum: **16 juni 2016**
 
 * Inkludering av Visitor API 1.5.7.
 * Hanteringen av länkklicksspårning i Firefox som inte utlöste complete-händelsen har åtgärdats.

@@ -3,9 +3,10 @@ title: pageType
 description: Kontrollera om den aktuella sidan är ett 404-fel.
 feature: Variables
 exl-id: e61ef82d-b583-4230-b904-5ea3584910be
-source-git-commit: 8a6c639af7427a9975ccd061d059696d4611dff3
+role: Admin, Developer
+source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
 workflow-type: tm+mt
-source-wordcount: '208'
+source-wordcount: '205'
 ht-degree: 0%
 
 ---
@@ -20,13 +21,13 @@ The `pageType` variabeln är en flagga som används för att ange felsidor på d
 
 ## Sidtyp med Web SDK
 
-Sidtypen är [mappas för Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html) under XDM-fältet `web.webPageDetails.isErrorPage`. Detta XDM-fält är booleskt; ange att `true` för att flagga det som en felsida, eller `false` om det inte är en felsida. Adobe översätter automatiskt booleskt värde till strängvärdet `errorPage` när det skickas till en analysrapportsserie.
+Sidtypen är [mappas för Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html) under XDM-fältet `web.webPageDetails.isErrorPage`. Det här XDM-fältet är booleskt; ange det till `true` för att flagga det som en felsida, eller `false` om det inte är en felsida. Adobe översätter automatiskt booleskt värde till strängvärdet `errorPage` när det skickas till en analysrapportsserie.
 
 ## Sidtyp med Adobe Analytics-tillägg
 
-Det finns inget dedikerat fält i Adobe Analytics-tillägget som kan använda den här variabeln. Använd den anpassade kodredigeraren efter AppMeasurement-syntax.
+Det finns inget dedikerat fält i Adobe Analytics-tillägget som kan använda den här variabeln. Använd den anpassade kodredigeraren enligt AppMeasurementen syntax.
 
-## s.pageType i AppMeasurement och den anpassade kodredigeraren för Analytics-tillägget
+## s.pageType i AppMeasurementet och den anpassade kodredigeraren för Analytics-tillägget
 
 The `s.pageType` variabeln är en sträng där värdet `errorPage` är dess enda giltiga värde. Ange den här variabeln till det här värdet på alla felsidor på webbplatsen, till exempel på 404 sidor.
 

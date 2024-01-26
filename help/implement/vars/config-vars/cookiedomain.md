@@ -3,9 +3,10 @@ title: cookieDomain
 description: Variabeln cookieDomain hjälper till att avgöra vilken domän cookies ska användas på.
 feature: Variables
 exl-id: 7e8c26b8-d1a7-49f7-9c12-45fb1633c9d7
-source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
+role: Admin, Developer
+source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '199'
 ht-degree: 0%
 
 ---
@@ -16,7 +17,7 @@ ht-degree: 0%
 >
 >Den här variabeln har tagits bort. Använd [`trackingServer`](trackingserver.md) i stället.
 
-The `cookieDomain` variabeln bestämmer den domän där AppMeasurement anger cookies. Du kan använda den här variabeln för att explicit ange cookie-domänen i stället för att använda [`cookieDomainPeriods`](cookiedomainperiods.md) variabel.
+The `cookieDomain` variabeln anger domänen där AppMeasurementet anger cookies. Du kan använda den här variabeln för att explicit ange cookie-domänen i stället för att använda [`cookieDomainPeriods`](cookiedomainperiods.md) variabel.
 
 Den här variabeln behöver bara användas när **båda** av följande villkor är uppfyllda:
 
@@ -31,9 +32,9 @@ Web SDK kan identifiera rätt cookie-lagringsdomän utan den här variabeln.
 
 ## Cookie-domän med Adobe Analytics-tillägg
 
-Det finns inget dedikerat fält i Adobe Analytics-tillägget som kan använda den här variabeln. Använd den anpassade kodredigeraren efter AppMeasurement-syntax.
+Det finns inget dedikerat fält i Adobe Analytics-tillägget som kan använda den här variabeln. Använd den anpassade kodredigeraren enligt AppMeasurementen syntax.
 
-## s.cookieDomain i AppMeasurement och den anpassade kodredigeraren i Analytics-tillägget
+## s.cookieDomain i AppMeasurementet och den anpassade kodredigeraren för Analytics-tillägget
 
 The `cookieDomain` variabeln är en sträng och ställs in på den domän där du vill lagra cookies.
 

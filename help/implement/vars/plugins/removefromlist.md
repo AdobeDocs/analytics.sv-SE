@@ -3,14 +3,15 @@ title: rfl
 description: Ta bort ett specifikt värde från en teckenavgränsad sträng.
 feature: Variables
 exl-id: d66b757e-b39f-4b6e-9999-6fbde87505af
-source-git-commit: bbb138d979968ec2536e53ff07001b43156df095
+role: Admin, Developer
+source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
 workflow-type: tm+mt
-source-wordcount: '1004'
+source-wordcount: '1019'
 ht-degree: 0%
 
 ---
 
-# Adobe plug-in: rfl (Ta bort från lista)
+# Adobe plug-in: rfl (Remove From List)
 
 {{plug-in}}
 
@@ -34,11 +35,11 @@ Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-program
 1. Gå till [!UICONTROL Extensions] klickar du på [!UICONTROL Catalog] knapp
 1. Installera och publicera [!UICONTROL Common Analytics Plugins] extension
 1. Om du inte redan har det skapar du en regel med namnet&quot;Initiera plugin-program&quot; med följande konfiguration:
-   * Villkor: Ingen
+   * Villkor: Inget
    * Händelse: Kärna - Bibliotek inläst (sidan ovanpå)
 1. Lägg till en åtgärd i ovanstående regel med följande konfiguration:
-   * Tillägg: Plugin-program för vanlig analys
-   * Åtgärdstyp: Initiera anbudsförfrågan (ta bort från lista)
+   * Tillägg: Plugin-program för gemensam analys
+   * Åtgärdstyp: Initiera offertförfrågan (ta bort från lista)
 1. Spara och publicera ändringarna i regeln.
 
 ## Installera plugin-programmet med en anpassad kodredigerare
@@ -52,9 +53,9 @@ Om du inte vill använda tillägget för Common Analytics-plugin-program kan du 
 1. Öppna den anpassade kodredigeraren och klistra in den plugin-kod som finns nedan i redigeringsfönstret.
 1. Spara och publicera ändringarna i Analytics-tillägget.
 
-## Installera plugin-programmet med AppMeasurement
+## Installera plugin-programmet med AppMeasurementet
 
-Kopiera och klistra in följande kod var som helst i AppMeasurement-filen när Analytics-spårningsobjektet har instansierats (med [`s_gi`](../functions/s-gi.md)). Genom att bevara kommentarer och versionsnummer i koden i implementeringen kan Adobe felsöka eventuella problem.
+Kopiera och klistra in följande AppMeasurement var som helst i analysfilen efter att Analytics-spårningsobjektet har initierats (med [`s_gi`](../functions/s-gi.md)). Genom att bevara kommentarer och versionsnummer i koden i implementeringen kan Adobe felsöka eventuella problem.
 
 ```js
 /******************************************* BEGIN CODE TO DEPLOY *******************************************/
@@ -68,10 +69,10 @@ function rfl(lv,vr,d1,d2,df){var b=lv,f=vr,e=d1,h=d2,g=df;if("-v"===b)return{plu
 The `rfl` funktionen använder följande argument:
 
 * **`lv`** (required, string): En variabel (eller sträng) som innehåller en lista med avgränsade värden
-* **`vr`** (required, string): Värdet som du vill ta bort från `lv` argument. Adobe rekommenderar att du inte tar bort flera värden under en enda `rfl` ring.
-* **`d1`** (valfri, sträng): Avgränsaren som `lv` -argument används. Standardvärdet är ett komma (`,`).
-* **`d2`** (valfri, sträng): Avgränsaren som du vill att retursträngen ska använda. Standardvärdet är samma som `d1` argument.
-* **`df`** (valfritt, boolesk): If `true`, framtvingar endast dubblettinstanser av `vr` argument från `lv` i stället för alla instanser. Standardvärdet är `false` när den inte är inställd.
+* **`vr`** (required, string): Det värde du vill ta bort från `lv` argument. Adobe rekommenderar att du inte tar bort flera värden under en enda `rfl` ring.
+* **`d1`** (valfri, sträng): avgränsaren som `lv` -argument används. Standardvärdet är ett komma (`,`).
+* **`d2`** (valfri, sträng): Den avgränsare som du vill att retursträngen ska använda. Standardvärdet är samma som `d1` argument.
+* **`df`** (valfritt, boolesk): Om `true`, framtvingar endast dubblettinstanser av `vr` argument från `lv` i stället för alla instanser. Standardvärdet är `false` när den inte är inställd.
 
 Anrop till den här funktionen returnerar en modifierad sträng som innehåller `lv` -argument, men utan instanser (eller dubblettinstanser) av det värde som anges i `vr` argument.
 
@@ -91,7 +92,7 @@ s.events = "event22,event24,event25";
 s.events = rfl(s.events,"event24");
 ```
 
-...det slutliga värdet för s.events blir:
+... det slutliga värdet för s.events blir:
 
 ```js
 s.events = "event22,event25";
@@ -111,13 +112,13 @@ s.events = "event22,event24,event25";
 s.events = rfl(s.events,"event26");
 ```
 
-...det slutliga värdet för s.events blir:
+... det slutliga värdet för s.events blir:
 
 ```js
 s.events = "event22,event24,event25";
 ```
 
-I det här exemplet har rfl-anropet inte gjort några ändringar i s.events eftersom s.events inte innehöll &quot;event26&quot;
+I det här exemplet gjorde rfl-anropet inga ändringar i s.events eftersom s.events inte innehöll &quot;event26&quot;
 
 ### Exempel 3
 
@@ -133,7 +134,7 @@ s.events = "event22,event24,event25";
 s.events = rfl(s.events);
 ```
 
-...det slutliga värdet för s.events blir:
+... det slutliga värdet för s.events blir:
 
 ```js
 s.events = "";
@@ -155,19 +156,19 @@ s.prop4 = "hello|people|today";
 s.eVar5 = rfl(s.prop4,"people","|");
 ```
 
-...det slutliga värdet för s.prop4 kommer fortfarande att vara ...
+...slutvärdet för s.prop4 kommer fortfarande att vara ...
 
 ```js
 s.prop4 = "hello|people|today";
 ```
 
-...men slutvärdet för s.eVar5 blir:
+... men slutvärdet för s.eVar5 blir:
 
 ```js
 s.eVar5 = "hello|today";
 ```
 
-Tänk på att plugin-programmet bara returnerar ett värde. det inte &quot;återställer&quot; variabeln som skickas via `lv` argument.
+Tänk på att plugin-programmet bara returnerar ett värde. Det återställer inte variabeln som skickas via `lv` argument.
 
 ### Exempel 5
 
@@ -183,13 +184,13 @@ s.prop4 = "hello|people|today";
 s.prop4 = rfl(s.prop4,"people");
 ```
 
-...det slutliga värdet för s.prop4 kommer fortfarande att vara ...
+...slutvärdet för s.prop4 kommer fortfarande att vara ...
 
 ```js
 s.prop4 = "hello|people|today";
 ```
 
-Var noga med att ange `d1` argument i de fall där `lv` argumentvärdet innehåller en annan avgränsare än standardvärdet (t.ex. komma).
+Var noga med att ställa in `d1` argument i de fall där `lv` argumentvärdet innehåller en annan avgränsare än standardvärdet (t.ex. komma).
 
 ### Exempel 6
 
@@ -205,7 +206,7 @@ s.events = "event22,event23,event25";
 s.events = rfl(s.events,"EVenT23");
 ```
 
-...det slutliga värdet för s.events blir:
+... det slutliga värdet för s.events blir:
 
 ```js
 s.events = "event22,event23,event25";
@@ -227,7 +228,7 @@ s.events = "event22,event23:12345,event25";
 s.events = rfl(s.events,"event23");
 ```
 
-...det slutliga värdet för s.events blir:
+... det slutliga värdet för s.events blir:
 
 ```js
 s.events = "event22,event25";
@@ -247,7 +248,7 @@ s.events = "event22,event23:12345,event25";
 s.events = rfl(s.events,"event23:12345");
 ```
 
-...det slutliga värdet för s.events blir:
+... det slutliga värdet för s.events blir:
 
 ```js
 s.events = "event22,event23:12345,event25";
@@ -269,7 +270,7 @@ s.events = "event22,event23,event23,event23,event24,event25";
 s.events = rfl(s.events,"event23");
 ```
 
-...det slutliga värdet för s.events blir:
+... det slutliga värdet för s.events blir:
 
 ```js
 s.events = "event22,event24,event25");
@@ -289,7 +290,7 @@ s.events = "event22,event23,event23,event23,event24,event25";
 s.events = rfl(s.events,"event23", "", "",true);
 ```
 
-...det slutliga värdet för s.events blir:
+... det slutliga värdet för s.events blir:
 
 ```js
 s.events = "event22,event23,event24,event25");
@@ -309,7 +310,7 @@ s.events = "event22,event23,event23,event23,event24,event25";
 s.events = rfl(s.events,"event23", "", "|",true);
 ```
 
-...det slutliga värdet för s.events blir:
+... det slutliga värdet för s.events blir:
 
 ```js
 s.events = "event22|event23|event24|event25");
@@ -329,13 +330,13 @@ s.events = "event22,event23,event24,event25";
 s.events = rfl(s.events,"event23,event24");
 ```
 
-...det slutliga värdet för s.events blir:
+... det slutliga värdet för s.events blir:
 
 ```js
 s.events = "event22,event23,event24,event25";
 ```
 
-Ställa in flera värden i `vr` argument stöds inte. The `rfl` logiken i ovanstående exempel skulle först dela upp värdena i `lv` argument (d.v.s. s.events) försöker sedan matcha varje avgränsat värde mot det fullständiga `vr` argumentvärde (dvs. `"event23,event24"`).
+Ange flera värden i `vr` argument stöds inte. The `rfl` logiken i ovanstående exempel skulle först dela upp värdena i `lv` argument (d.v.s. s.events) försöker sedan matcha varje avgränsat värde mot det fullständiga `vr` argumentvärde (dvs. `"event23,event24"`).
 
 ### Exempel 13
 
@@ -352,7 +353,7 @@ s.events = rfl(s.events,"event23");
 s.events = rfl(s.events,"event24");
 ```
 
-...det slutliga värdet för s.events blir:
+... det slutliga värdet för s.events blir:
 
 ```js
 s.events = "event22,event25");
@@ -374,7 +375,7 @@ s.linkTrackVars = "events,eVar1,eVar2,eVar3";
 s.linkTrackVars = rfl(s.linkTrackVars,"eVar2", ",", ",", false);
 ```
 
-...det slutliga värdet för s.linkTrackVars blir:
+... det slutliga värdet för s.linkTrackVars blir:
 
 ```js
 s.linkTrackVars = "events,eVar1,eVar3";
@@ -396,15 +397,15 @@ s.events = "event22,event23,event24";
 rfl(s.events,"event23");
 ```
 
-...det slutliga värdet för s.events kommer fortfarande att vara:
+... det slutliga värdet av s.events kommer fortfarande att vara:
 
 ```js
 s.events = "event22,event23,event24";
 ```
 
-Kom ihåg att plugin-programmet bara returnerar ett värde. det inte &quot;återställer&quot; variabeln som skickas via `lv` argument.
+Kom ihåg att plugin-programmet bara returnerar ett värde. Det återställer inte variabeln som skickas via `lv` argument.
 
-## Versionshistorik
+## Tidigare versioner
 
 ### 2.1 (19 mars 2021)
 

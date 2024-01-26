@@ -3,7 +3,8 @@ title: getAndPersistValue
 description: Lagra ett värde som kan hämtas senare när som helst.
 feature: Variables
 exl-id: b562f9ad-3844-4535-b729-bd3f63f6f0ae
-source-git-commit: bbb138d979968ec2536e53ff07001b43156df095
+role: Admin, Developer
+source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
 workflow-type: tm+mt
 source-wordcount: '650'
 ht-degree: 0%
@@ -24,7 +25,7 @@ Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-program
 1. Klicka **[!UICONTROL Tags]** till vänster och klicka sedan på den önskade taggegenskapen.
 1. Klicka **[!UICONTROL Extensions]** till vänster och klicka sedan på **[!UICONTROL Catalog]** tab
 1. Leta rätt på och installera **[!UICONTROL Common Web SDK Plugins]** tillägg.
-1. Klicka **[!UICONTROL Data Elements]** till vänster och klicka sedan på det önskade dataelementet.
+1. Klicka **[!UICONTROL Data Elements]** till vänster och klicka sedan på dataelementet.
 1. Ange det önskade dataelementnamnet med följande konfiguration:
    * Tillägg: Vanliga SDK-plugin-program för webben
    * Dataelement: `getAndPersistValue`
@@ -44,10 +45,10 @@ Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-program
 1. Gå till [!UICONTROL Extensions] klickar du på [!UICONTROL Catalog] knapp
 1. Installera och publicera [!UICONTROL Common Analytics Plugins] extension
 1. Om du inte redan har det skapar du en regel med namnet&quot;Initiera plugin-program&quot; med följande konfiguration:
-   * Villkor: Ingen
+   * Villkor: Inget
    * Händelse: Kärna - Bibliotek inläst (sidan ovanpå)
 1. Lägg till en åtgärd i ovanstående regel med följande konfiguration:
-   * Tillägg: Plugin-program för vanlig analys
+   * Tillägg: Plugin-program för gemensam analys
    * Åtgärdstyp: Initiera getAndPersistValue
 1. Spara och publicera ändringarna i regeln.
 
@@ -62,9 +63,9 @@ Om du inte vill använda tillägget för Common Analytics-plugin-program kan du 
 1. Öppna den anpassade kodredigeraren och klistra in den plugin-kod som finns nedan i redigeringsfönstret.
 1. Spara och publicera ändringarna i Analytics-tillägget.
 
-## Installera plugin-programmet med AppMeasurement
+## Installera plugin-programmet med AppMeasurementet
 
-Kopiera och klistra in följande kod var som helst i AppMeasurement-filen när Analytics-spårningsobjektet har instansierats (med [`s_gi`](../functions/s-gi.md)). Genom att bevara kommentarer och versionsnummer i koden i implementeringen kan Adobe felsöka eventuella problem.
+Kopiera och klistra in följande AppMeasurement var som helst i analysfilen efter att Analytics-spårningsobjektet har initierats (med [`s_gi`](../functions/s-gi.md)). Genom att bevara kommentarer och versionsnummer i koden i implementeringen kan Adobe felsöka eventuella problem.
 
 ```js
 /******************************************* BEGIN CODE TO DEPLOY *******************************************/
@@ -79,7 +80,7 @@ The `getAndPersist` funktionen använder följande argument:
 
 * **`vtp`** (obligatoriskt): Värdet som ska behållas från sida till sida
 * **`cn`** (valfritt): Namnet på den cookie som värdet ska lagras i. Om det här argumentet inte anges får cookien ett namn `"s_gapv"`
-* **`ex`** (valfritt): Antalet dagar innan cookien förfaller. Om det här argumentet är `0` eller inte är inställd upphör cookien att gälla när besöket är slut (30 minuters inaktivitet).
+* **`ex`** (valfritt): Antalet dagar innan cookien förfaller. Om argumentet är `0` eller inte är inställd upphör cookien att gälla när besöket är slut (30 minuters inaktivitet).
 
 Om variabeln i `vtp` -argumentet är inställt, anger plugin-programmet cookien och returnerar sedan cookie-värdet. Om variabeln i `vtp` -argumentet är inte inställt. Plugin-programmet returnerar bara cookie-värdet.
 
@@ -107,7 +108,7 @@ s.eVar30 = "shopping";
 s.eVar30 = getAndPersistValue(s.eVar30);
 ```
 
-## Versionshistorik
+## Tidigare versioner
 
 ### 3.0 (19 mars 2021)
 

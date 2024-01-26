@@ -1,12 +1,13 @@
 ---
 title: clearVars
-description: Tar bort följande värden från instansobjektet. Den här funktionen tar bort elementen (anger dem som "undefined").
+description: Rensa värden från instansobjektet.
 feature: Variables
 exl-id: 8ecb2b2d-7b66-4232-b0ea-b8c6cdcc1515
-source-git-commit: 6de20d2fbbab6ded6c92f0c6f3536671f4b2ae46
+role: Admin, Developer
+source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
 workflow-type: tm+mt
-source-wordcount: '192'
-ht-degree: 1%
+source-wordcount: '179'
+ht-degree: 0%
 
 ---
 
@@ -40,10 +41,10 @@ Ange åtgärden Rensa variabler när du konfigurerar en regel.
 1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
 2. Klicka på den önskade taggegenskapen.
 3. Gå till [!UICONTROL Rules] och sedan klicka på önskad regel (eller skapa en regel).
-4. Under [!UICONTROL Actions]klickar du på plustecknet (+)
+4. Under [!UICONTROL Actions]klickar du på +-ikonen
 5. Ange [!UICONTROL Extension] nedrullningsbar lista till Adobe Analytics och [!UICONTROL Action Type] till [!UICONTROL Clear Variables].
 
-## s.clearVars() i AppMeasurement och den anpassade kodredigeraren i Analytics-tillägget
+## s.clearVars() i AppMeasurementet och den anpassade kodredigeraren för Analytics-tillägget
 
 Du kan ringa `s.clearVars()` var som helst i implementeringen efter att du har initierat objektinstansen i Analytics.
 

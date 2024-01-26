@@ -3,10 +3,11 @@ title: Konfigurationsvariabler
 description: Använd konfigurationsvariabler för att avgöra hur data samlas in.
 feature: Variables
 exl-id: 3f017a94-b71d-47da-8ab4-daf32475ed34
-source-git-commit: ef82c34f97a0c8172f097b83b521860a1897c82c
+role: Admin, Developer
+source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
 workflow-type: tm+mt
-source-wordcount: '123'
-ht-degree: 4%
+source-wordcount: '121'
+ht-degree: 0%
 
 ---
 

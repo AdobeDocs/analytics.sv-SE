@@ -3,9 +3,10 @@ title: charSet
 description: Variabeln charSet avgör vilken kodning Adobe använder för att analysera bildbegäran.
 feature: Variables
 exl-id: 2a2660c6-809d-4b33-a846-01e49dd99c7f
-source-git-commit: ef82c34f97a0c8172f097b83b521860a1897c82c
+role: Admin, Developer
+source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
 workflow-type: tm+mt
-source-wordcount: '224'
+source-wordcount: '221'
 ht-degree: 0%
 
 ---
@@ -31,9 +32,9 @@ Teckenuppsättning är ett fält under [!UICONTROL General] när du konfigurerar
 
 Du kan antingen använda en förinställd teckenuppsättning eller en anpassad teckenuppsättning. Undvik att ändra värdet från `UTF-8` om du inte ser förvrängda värden i rapporter.
 
-## s.charSet i AppMeasurement och den anpassade kodredigeraren för Analytics-tillägget
+## s.charSet i AppMeasurementet och den anpassade kodredigeraren för Analytics-tillägget
 
-The `charSet` variabeln är en sträng. Om du har förvrängda värden i Adobe Analytics anger du variabeln till samma värde som `<meta charset="">` HTML-tagg på din webbplats.
+The `charSet` är en sträng. Om du har förvrängda värden i Adobe Analytics anger du variabeln till samma värde som `<meta charset="">` HTML-tagg på din webbplats.
 
 ```js
 s.charSet = "UTF-8";

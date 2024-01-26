@@ -4,9 +4,10 @@ keywords: Implementering av analyser
 title: Attribution och persistence
 feature: Implementation Basics
 exl-id: 7a6305f6-c8ec-4f26-8373-45ce586bc69d
-source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
+role: Developer
+source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
 workflow-type: tm+mt
-source-wordcount: '544'
+source-wordcount: '550'
 ht-degree: 0%
 
 ---
@@ -41,7 +42,7 @@ På den första dataanslutningen som innehåller en tidigare okänd `s.visitorID
 
 * Varor som förfaller vid besök kopieras inte till den autentiserade profilen. Notera värdet `car` ovan är inte beständig.
 * Varor som har satts till att upphöra att gälla av andra åtgärder kopieras till den autentiserade profilen. Notera värdet `apple` är beständig.
-* Inga instansvärden registreras för de eVars som är beständiga. Det innebär att när du använder identifieringen av besökare på olika enheter är det möjligt att se rapporter där det unika besöksmåttet för ett eVar är större än förekomstmåttet.
+* Inga instansvärden registreras för de eVars som är beständiga. Det innebär att när du använder identifieringen av besökare på olika enheter är det möjligt att se rapporter där det unika besöksmåttet för ett eVar-värde är större än förekomstmåttet.
 
 >[!NOTE]
 >

@@ -3,9 +3,10 @@ title: Implementera analyser för digitala assistenter
 description: Implementera Adobe Analytics på Digital Assistants, som Amazon Alexa eller Google Home.
 feature: Implementation Basics
 exl-id: ebe29bc7-db34-4526-a3a5-43ed8704cfe9
-source-git-commit: 25eccb2b9fe3827e62b0ae98d9bebf7a97b239f5
+role: Developer
+source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
 workflow-type: tm+mt
-source-wordcount: '1265'
+source-wordcount: '1258'
 ht-degree: 0%
 
 ---
@@ -26,7 +27,7 @@ Den här sidan innehåller en översikt över hur du bäst använder Adobe Analy
 
 De flesta digitala assistenter har idag en liknande högnivåarkitektur:
 
-1. **Enhet**: Det finns en enhet (som Amazon Echo eller en telefon) med en mikrofon som gör att användaren kan ställa en fråga.
+1. **Enhet**: Det finns en enhet (som Amazon Echo eller en telefon) med en mikrofon som användaren kan ställa en fråga på.
 1. **Digital assistent**: Den enheten interagerar med den tjänst som driver den digitala assistenten. Det är där talet konverteras till maskinläsliga återgivningar och detaljerna i begäran tolkas. När användarens avsikt är klar skickar den digitala assistenten förfrågningens avsikt och information till det program som hanterar begäran.
 1. **&quot;App&quot;**: Appen kan antingen vara en app på telefonen eller en röstapp. Programmet ansvarar för att svara på begäran. Den svarar på den digitala assistenten och den digitala assistenten svarar sedan på användaren.
 
@@ -90,7 +91,7 @@ Eftersom digitala assistenter är konversationer har de ofta begreppet session. 
 
 **Konsument:** &quot;Okej, Google, ring en taxi åt mig&quot;
 
-**Google:**: &quot;Vilken tid vill du ha?&quot;
+**Google:**:&quot;Vilken tid vill du ha?&quot;
 
 **Konsument:** &quot;20:30&quot;
 
@@ -99,7 +100,7 @@ Eftersom digitala assistenter är konversationer har de ofta begreppet session. 
 Sessioner är viktiga för att hålla sammanhanget och för att hjälpa till att samla in mer information för att göra den digitala assistenten mer naturlig. När Analytics implementeras i en konversation finns det två saker att göra när en ny session startas:
 
 1. **Nå ut till Audience Manager**: Hämta relevanta segment som en användare är en del av så att du kan anpassa svaret. (Den här personen är till exempel berättigad till rabatt i flera kanaler.)
-2. **Skicka i en ny session eller en starthändelse**: När du skickar det första svaret till Analytics ska du inkludera en starthändelse. Vanligtvis kan detta skickas genom att kontextdata för `a.LaunchEvent=1`.
+2. **Skicka i en ny session eller en starthändelse**: När du skickar det första svaret till Analytics ska du ta med en starthändelse. Vanligtvis kan detta skickas genom att kontextdata för `a.LaunchEvent=1`.
 
 ```text
 GET /b/ss/examplersid1,examplersid2/1?vid=[UserID]&c.a.LaunchEvent=1&c.Intent=[intent]&pageName=[intent]  HTTP/1.1
@@ -113,7 +114,7 @@ Var och en av de digitala assistenterna har algoritmer som identifierar metoder 
 
 Om en användare till exempel säger&quot;Siri, Skicka John $20 för middag igår kväll från min bankapp&quot; kan avsikten vara ungefär som *sendMoney*.
 
-Genom att skicka in var och en av dessa förfrågningar som eVar kan du köra målningsrapporter för var och en av avsikterna med konversationsappar. Se till att appen även kan hantera förfrågningar utan avsikt. Adobe rekommenderar att du skickar &quot;Ingen metod har angetts&quot; till datavariabeln för intent-kontext i stället för att utelämna variabeln.
+Genom att skicka in var och en av dessa förfrågningar som eVar kan du köra målningsrapporter för var och en av avsikterna med konversationsappar. Se till att appen även kan hantera förfrågningar utan avsikt. Adobe rekommenderar att du skickar &quot;Ingen metod har angetts&quot; till datavariabeln för intent-kontext, i stället för att utelämna variabeln.
 
 ```text
 GET /b/ss/examplersid1,examplersid2/1?vid=[UserID]&c.a.AppID=Penmo1.0&c.a.LaunchEvent=1&c.Intent=SendPayment&pageName=[intent]  HTTP/1.1
@@ -174,7 +175,7 @@ Inledande och avslutande kolon är till hjälp när du skapar segment. Visa till
 |---|---|---|---|
 | Installera Spoofify | Inget svar | Installera | `GET /b/ss/examplersid1,examplersid2/1?vid=[UserID]&c.a.InstallEvent=1&c.a.InstallDate=[currentDate]&c.a.AppID=Spoofify1.0&c.OSType=Alexa&c.Intent=Install&pageName=Install  HTTP/1.1`<br>`Host: example.data.adobedc.net`<br>`Cache-Control: no-cache` |
 | Spela upp Spoofify | &quot;Okej, spela Spoofify&quot; | Spela upp | `GET /b/ss/examplersid1,examplersid2/1?vid=[UserID]&c.a.AppID=Spoofify1.0&c.a.LaunchEvent=1&c.Intent=Play&pageName=PlayApp  HTTP/1.1`<br>`Host: example.data.adobedc.net`<br>`Cache-Control: no-cache` |
-| Ändra låt | &quot;Okej, vilken låt vill du ha?&quot; | ChangeSong | `GET /b/ss/examplersid1,examplersid2/1?vid=[UserID]&c.a.AppID=Spoofify1.0&c.Intent=ChangeSong&pageName= Ask%20For%20Song  HTTP/1.1`<br>`Host: example.data.adobedc.net`<br>`Cache-Control: no-cache` |
+| Ändra låt | &quot;Vilken låt vill du ha?&quot; | ChangeSong | `GET /b/ss/examplersid1,examplersid2/1?vid=[UserID]&c.a.AppID=Spoofify1.0&c.Intent=ChangeSong&pageName= Ask%20For%20Song  HTTP/1.1`<br>`Host: example.data.adobedc.net`<br>`Cache-Control: no-cache` |
 | Spela &quot;Baby Shark&quot; | &quot;Okej, spela &quot;Baby Shark&quot; av PinkFong&quot; | ChangeSong | `GET /b/ss/examplersid1,examplersid2/1?vid=[UserID]&c.a.AppID=Spoofify1.0&c.Intent=ChangeSong&pageName=Action%20Play%20Song&c.SongID=[012345]  HTTP/1.1`<br>`Host: example.data.adobedc.net`<br>`Cache-Control: no-cache` |
 | Ändra spelningslista | &quot;Vilken spellista vill du ha?&quot; | ChangePlaylist | `GET /b/ss/examplersid1,examplersid2/1?vid=[UserID]&c.a.AppID=Spoofify1.0&c.Intent=ChangePlaylist&pageName=Ask%20For%20Playlist  HTTP/1.1`<br>`Host: example.data.adobedc.net`<br>`Cache-Control: no-cache` |
 | Spela upp min favoritspellista | &quot;Okej, spela din favoritspellista&quot; | ChangePlaylist | `GET /b/ss/examplersid1,examplersid2/1?vid=[UserID]&c.a.AppID=Spoofify1.0&c.Intent=ChangePlaylist&pageName=Action%20Play%20Playlist&c.Playlist=My%20Favorite%20Songs  HTTP/1.1`<br>`Host: example.data.adobedc.net`<br>`Cache-Control: no-cache` |

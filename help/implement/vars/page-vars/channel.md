@@ -1,18 +1,19 @@
 ---
 title: kanal
-description: Fyll i dimensionen 'Platsavsnitt'.
+description: Fyll i dimensionen Webbplatsavsnitt.
 feature: Variables
 exl-id: f494a051-a296-4f1c-9044-04a8b59376fa
-source-git-commit: 6de20d2fbbab6ded6c92f0c6f3536671f4b2ae46
+role: Admin, Developer
+source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
 workflow-type: tm+mt
-source-wordcount: '188'
-ht-degree: 1%
+source-wordcount: '181'
+ht-degree: 0%
 
 ---
 
 # kanal
 
-The `channel` variabeln lagrar vanligtvis den del av webbplatsen där en viss sida finns. Det är praktiskt att avgöra vilka grupper på din webbplats som är populärast. Den här variabeln fyller i dimensionen &#39;Platsavsnitt&#39;.
+The `channel` variabeln lagrar vanligtvis den del av webbplatsen där en viss sida finns. Det är praktiskt att avgöra vilka grupper på din webbplats som är populärast. Den här variabeln fyller i dimensionen Webbplatsavsnitt.
 
 ## Kanal med Web SDK
 
@@ -33,7 +34,7 @@ Du kan ställa in kanalen på valfritt strängvärde eller dataelement.
 
 ## s.channel in AppMeasurement and the Analytics extension custom code editor
 
-The `s.channel` variabeln är en sträng som vanligtvis innehåller sidans webbplatsavsnitt. Den har ett maxvärde på 100 byte. längre värden trunkeras.
+The `s.channel` variabeln är en sträng som vanligtvis innehåller sidans webbplatsavsnitt. Det har ett maxvärde på 100 byte. Ju längre värde, desto trunkeras.
 
 ```js
 s.channel = "Example site section";

@@ -3,7 +3,8 @@ title: dynamicAccountList
 description: Upprätta logik för hur implementeringen avgör dess rapportserie.
 feature: Implementation Basics
 exl-id: ccff24a1-4b9a-4f62-adb5-09ab60e9b93e
-source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
+role: Developer
+source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
 workflow-type: tm+mt
 source-wordcount: '259'
 ht-degree: 0%
@@ -28,7 +29,7 @@ s.dynamicAccountList = "[rsid]=[valuetomatch],[rsid2]=[valuetomatch]";
 
 Giltiga indata är en semikolonavgränsad lista med paren rsid och value. Varje lista innehåller följande objekt:
 
-* Ett eller flera rapportsvit-ID:n (avgränsade med kommatecken)
+* Ett eller flera rapportsvit-ID (avgränsade med kommatecken)
 * Ett likhetstecken
 * En eller flera strängar som ska matchas (avgränsade med kommatecken)
 
