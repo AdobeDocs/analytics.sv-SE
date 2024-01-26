@@ -3,9 +3,9 @@ description: Administrativa steg för att skapa realtidsrapporter.
 title: Konfiguration av rapporter i realtid
 feature: Real-time
 exl-id: e039ed67-3694-40fc-a4d9-3cb576e0535c
-source-git-commit: def7d071de1765acf524a638a8f8d13ae69e1a1f
+source-git-commit: b8efacacf7fca792b4a4fa41dd3f9d6ac1448578
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '262'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Administrativa steg för att skapa realtidsrapporter.
 
-Du skapar realtidsrapporter i Adobe Analytics genom att välja rapportsviten och konfigurera upp till tre rapporter för den.
+Du skapar realtidsrapporter i Adobe Analytics genom att välja rapportsviten och konfigurera upp till tre rapporter för den. Som standard har alla användare åtkomst till realtidsrapporter.
 
 1. Välj den rapportsvit som du vill aktivera realtidsrapporter för.
 
@@ -53,8 +53,11 @@ Du skapar realtidsrapporter i Adobe Analytics genom att välja rapportsviten och
 
    ![](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/realtime/assets/warning_dimensions.png)
 
-1. Klicka **[!UICONTROL Save]** eller **[!UICONTROL Save and View Report]**.
+1. Klicka på **[!UICONTROL Save]**.
 
    Efter den här initiala rapportkonfigurationen kan det ta upp till 20 minuter innan data börjar strömmas. Från och med då blir data omedelbart tillgängliga.
 
-1. Som standard har alla användare åtkomst till realtidsrapporter.
+1. Om du vill visa realtidsrapporten går du till:
+
+   **[!UICONTROL Workspace]** > **[!UICONTROL Reports]** > **[!UICONTROL Engagement]** > **[!UICONTROL Real-Time]**.
+
