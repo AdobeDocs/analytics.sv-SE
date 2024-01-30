@@ -4,9 +4,9 @@ keywords: Virtual Report Suite
 title: Virtuella rapportsviter och taggar för flera programsviter
 feature: VRS
 exl-id: 7e0a1f5b-26ac-438c-b481-33669039efe5
-source-git-commit: 93099d36a65ca2bf16fbd6342f01bfecdc8c798e
+source-git-commit: 6e9ea48df286b2bde6a071ab3d0f29a764382c6d
 workflow-type: tm+mt
-source-wordcount: '1650'
+source-wordcount: '1634'
 ht-degree: 0%
 
 ---
@@ -31,13 +31,13 @@ Delning av segment till Adobe Experience Cloud stöds inte för virtuella rappor
 
 Segment kan ännu inte publiceras till Adobe Experience Cloud från en virtuell rapportsvit för personalisering och målinriktning. Alla användare som publicerar segment måste ha tillgång till källrapportsviten för detta ändamål. Du vill t.ex. att användarna bara ska ha tillgång till data för sina geografiska regioner, men du vill att de ska kunna skapa och dela segment från Adobe Analytics till Adobe Experience Cloud för målinriktning i Adobe Target. I det här fallet rekommenderar Adobe att du använder taggar för flera programsviter. Om du inte har något emot att användare har tillgång till den globala rapportsviten eller att du inte behöver publicera segment för användning i andra lösningar, kan virtuella rapportsviter användas.
 
-### Unika gränser
+### Unika (lågtrafik) gränser
 
 Om du har en global rapportserie som kombinerar ett stort antal webbplatser kan det hända att du stöter på [lågtrafik](/help/technotes/low-traffic.md) radartikel ofta. Om du använder taggar för flera programsviter är detta bara ett problem för den globala rapportsviten (det är mindre troligt att lågtrafik visas i enskilda rapportsviter). Om du använder virtuella rapportsviter delas unika gränser, vilket gör att enskilda rapportsviter även visar låg trafik. Överväg att använda flera svittaggar om du vill undvika att lagra data i låg trafik.
 
-En stor medieorganisation äger till exempel 100 webbegenskaper. Varje fastighet publicerar ett fåtal tusen nyhetsartiklar varje månad, förutom att ha alla artiklar från föregående månader. Den här organisationen använder en global rapportserie där eVar1 är &#39;Artikelnamn&#39;. I den här rapporten finns det ungefär 4 miljoner unika artikelnamn varje månad från de olika egenskaperna. Om man använder sig av en virtuell rapportserie ingår de 500 000 värden som utgör merparten av trafiken i de virtuella rapporteringssviterna. De återstående 3,5 miljoner inkluderas under lågtrafik. Om du använder taggar för flera programsviter kan varje enskild rapportserie se sina egna 500 kB-värden. Den globala rapportsvitens unika gränser är densamma när du använder taggar för flera sviter och virtuella rapportsviter.
+En stor medieorganisation äger till exempel 100 webbegenskaper. Varje fastighet publicerar ett fåtal tusen nyhetsartiklar varje månad, förutom att ha alla artiklar från föregående månader. Den här organisationen använder en global rapportserie där eVar1 är &#39;Artikelnamn&#39;. Anta att det i den här rapporten finns ungefär 5 miljoner unika artikelnamn varje månad från de olika egenskaperna. Om du använder ett virtuellt rapportpaket inkluderas bara en del av de 5 miljoner värdena i det virtuella rapportpaketet. Resten inkluderas under lågtrafik. Om du använder taggar för flera programsviter kan varje enskild rapportserie se sin egen uppsättning med unika värden.
 
-Adobe kundtjänst kan öka de unika värdegränserna för ett litet antal dimensioner, vilket helt kan eliminera detta problem. Kontakta ditt kontoteam och kundtjänst för mer information.
+Adobe kundtjänst kan ibland öka unika värdegränser för ett litet antal dimensioner, vilket helt kan eliminera problemet. Kontakta ditt kontoteam och kundtjänst för mer information.
 
 ### Delade variabler i olika rapportsviter
 
