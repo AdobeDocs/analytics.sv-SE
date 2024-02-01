@@ -4,7 +4,7 @@ title: Kör bidragsanalys
 role: User, Admin
 exl-id: 20d1ba8d-3e4e-4702-ae28-5eb6bf00847b
 feature: Anomaly Detection
-source-git-commit: d173a6c6c9751a86f4218ec842da17da14f8485b
+source-git-commit: ee4772913c8b702658646755a2a11598c8530236
 workflow-type: tm+mt
 source-wordcount: '540'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 [Bidragsanalys](/help/analyze/analysis-workspace/c-anomaly-detection/anomaly-detection.md#contribution-analysis) är en intensiv maskininlärningsprocess som är utformad för att upptäcka vilka som bidragit till en konstaterad avvikelse i Adobe Analytics. Avsikten är att hjälpa användaren att hitta fokusområden eller möjligheter till ytterligare analys mycket snabbare än vad som annars skulle vara möjligt.
 
-## Kör bidragsanalys {#section_7D2C5E48A5664727941DF4C90976D9DC}
+## Kör bidragsanalys {#run}
 
 Det finns två sätt att anropa bidragsanalys i ett projekt:
 
@@ -31,7 +31,7 @@ Det finns två sätt att anropa bidragsanalys i ett projekt:
 
   ![](assets/contribution-analysis.png)
 
-1. (Valfritt) När du har klickat **[!UICONTROL Run Contribution Analysis]** i antingen linjediagrammet eller en tabell kan du begränsa omfattningen av (och därmed snabba upp) analysen med [exklusive dimensioner](#section_F6932F4BF74544B5872164E7B1E0C6FC).
+1. (Valfritt) När du har klickat **[!UICONTROL Run Contribution Analysis]** i antingen linjediagrammet eller en tabell kan du begränsa omfattningen av (och därmed snabba upp) analysen med [exklusive dimensioner](#exclude).
 
 1. Vänta medan din bidragsanalys läses in. Detta kan ta lång tid, beroende på rapportsvitens storlek och antalet dimensioner. Bidragsanalys utför analyser på de 50 000 främsta objekten per dimension.
 1. Analysis Workspace läser sedan in en ny bidragsanalyspanel direkt i projektet.
@@ -56,7 +56,7 @@ Det finns två sätt att anropa bidragsanalys i ett projekt:
 >
 >Vi belyser den avvikelse som analyseras med en blå prick i bidragsanalysen och de intelligenta aviseringsprojekt som är kopplade till den. Detta ger en tydligare bild av den avvikelse som analyseras.
 
-## Uteslut dimensioner från bidragsanalys {#section_F6932F4BF74544B5872164E7B1E0C6FC}
+## Uteslut dimensioner från bidragsanalys {#exclude}
 
 Det kan finnas tillfällen när du vill utesluta vissa dimensioner från bidragsanalysen. Du kanske inte bryr dig om webbläsar- eller maskinvarurelaterade dimensioner alls och du vill snabba upp analysen genom att ta bort dem.
 

@@ -3,9 +3,10 @@ title: Ställ in enhetsövergripande analys
 description: Konfigurera en virtuell rapportsvit för att aktivera CDA.
 exl-id: e6d4e0c2-6b85-4f89-b51f-c0eed7a4e3da
 feature: CDA
-source-git-commit: 266cf18050d60f08f7e170c56453d1e1d805cb7b
+role: Admin
+source-git-commit: be5a73347d417c8dc6667d4059e7d46ef5f0f5cd
 workflow-type: tm+mt
-source-wordcount: '528'
+source-wordcount: '529'
 ht-degree: 0%
 
 ---
@@ -18,7 +19,7 @@ När alla förutsättningar är uppfyllda gör du följande för att aktivera en
 >
 >Alla förutsättningar måste vara uppfyllda innan du följer dessa steg. Om alla förutsättningar inte uppfylls är funktionen inte tillgänglig eller fungerar inte. Se [översiktssida](overview.md) och önskad sammanfogningsmetod ([Fältbaserad stygn](field-based-stitching.md) eller [Enhetsdiagram](device-graph.md),) för krav och begränsningar.
 
-## Öppna en biljett hos Kundtjänst om du vill att CDA ska vara etablerat på din enhetsövergripande rapportsvit
+## 1. Öppna en biljett hos Kundtjänst om du vill att CDA ska vara etablerat på din enhetsövergripande rapportsvit.
 
 CDA tillhandahålls av Adobe Engineering på ditt enhetsövergripande rapportpaket. Kontakta Kundtjänst och be om följande information för att starta processen:
 
@@ -31,7 +32,7 @@ Standardinställningen är veckovis uppspelning med 7-dagars uppslagsfönster. I
 
 När du har försett kundtjänst med den här informationen arbetar de tillsammans med Adobe Engineering för att aktivera den rapportserie du valt för CDA-bearbetning.
 
-## Skapa en virtuell rapportsvit för olika enheter för att se vyn över olika enheter
+## 2. Skapa en virtuell rapportserie för olika enheter för att se vyn över olika enheter.
 
 Administratörer med behörighet att skapa virtuella rapportsviter kan skapa virtuella CDA-rapportsviter enligt följande:
 

@@ -4,10 +4,11 @@ title: Schemalagd rapportkö
 feature: Admin Tools
 uuid: 3fcf92d3-a472-465f-ad7a-c48cd9a8238b
 exl-id: 7287e6c7-e354-48a0-9343-35dccfc46e63
-source-git-commit: 24ae07993e8f51b8220f817873fbd8dc1df70cda
+role: Admin
+source-git-commit: be5a73347d417c8dc6667d4059e7d46ef5f0f5cd
 workflow-type: tm+mt
-source-wordcount: '291'
-ht-degree: 2%
+source-wordcount: '292'
+ht-degree: 0%
 
 ---
 

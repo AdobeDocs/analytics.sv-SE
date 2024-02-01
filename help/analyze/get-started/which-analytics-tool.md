@@ -3,9 +3,9 @@ description: Den här hjälpsidan innehåller rekommenderade användningsexempel
 title: Vilket Adobe Analytics-verktyg ska jag använda?
 feature: Analytics Basics
 exl-id: d65575df-19c6-4129-89c8-d36de7bb6b2f
-source-git-commit: 4545c3839586231918ba5ebbf17fcac5a366abab
+source-git-commit: ee4772913c8b702658646755a2a11598c8530236
 workflow-type: tm+mt
-source-wordcount: '1146'
+source-wordcount: '1155'
 ht-degree: 1%
 
 ---
@@ -55,7 +55,7 @@ Här är en video som jämför olika Adobe Analytics-verktyg:
 
 **[API för datainfogning](/help/import/c-data-insertion-api/c-data-insertion-api.md)** ska användas:
 
-* När du behöver överföra data till Adobe Analytics och inte kan använda Adobe AppMeasurement eller mobil SDK-kod.
+* När du behöver överföra data till Adobe Analytics och inte kan använda Adobe AppMeasurement eller mobil SDK-kod. Vi rekommenderar att du använder API för datainfogning i grupp (se nedan).
 
 **[API för massdatainmatning](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/bdia.md)**
 

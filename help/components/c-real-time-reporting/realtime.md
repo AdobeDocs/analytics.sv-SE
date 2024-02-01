@@ -1,17 +1,17 @@
 ---
 description: Visar webbsidans trafik och rangordnar sidvyerna i realtid. Tillhandahåller användbara data som underlag för era affärsbeslut.
-title: Översikt över rapporter i realtid
+title: Översikt över rapportering i realtid
 topic-fix: Reports
 feature: Real-time
 exl-id: 056235bc-42ea-4118-aa54-bc7666044fe3
-source-git-commit: ee55349a8c676023a5ce33b56592cad7642199b8
+source-git-commit: be5a73347d417c8dc6667d4059e7d46ef5f0f5cd
 workflow-type: tm+mt
-source-wordcount: '581'
-ht-degree: 1%
+source-wordcount: '590'
+ht-degree: 0%
 
 ---
 
-# Översikt över rapporter i realtid
+# Översikt över rapportering i realtid
 
 Realtidsrapportering visar webbsidans trafik och rangordnar sidvyerna i realtid. Tillhandahåller användbara data som underlag för era affärsbeslut.
 
@@ -19,7 +19,7 @@ Realtidsrapportering visar webbsidans trafik och rangordnar sidvyerna i realtid.
 >
 >Realtidsrapporten kräver ingen ytterligare implementering eller taggning. Det utnyttjar er befintliga implementering av Adobe Analytics. Information om hur du konfigurerar realtidsrapporter finns i [Konfiguration av realtidsrapporter](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/realtime/t-realtime-admin.md).
 
-## Få åtkomst till realtidsrapporter
+## Få åtkomst till realtidsrapportering
 
 1. I Analysis Workspace väljer du [!UICONTROL **Arbetsyta**] -fliken.
 
@@ -53,7 +53,7 @@ Tänk på att eVars (konverteringsmått) inte stöds eftersom det inte finns nå
 
 Det är endast administratörer eller användare i behörighetsgrupperna All Report Access och Advanced Reporting som kan konfigurera och visa realtidsrapporter. Real-Time respekterar dock behörigheter. Om du till exempel inte har rätt att se intäkter kan du inte visa en realtidsrapport som innehåller intäktsdata.
 
-## Datasvarstid som ett resultat av A4T-konfiguration {#section_806CE36354FC4C539A0DED9266A5C704}
+## Datasvarstid som ett resultat av A4T-konfiguration {#latency-a4t}
 
 När A4T-integreringen har aktiverats i Adobe [!DNL Target]kommer du att uppleva ytterligare 5-10 minuters fördröjning i Adobe Analytics. Den här latensökningen tillåter data från analyser och [!DNL Target] som ska lagras på samma träff, vilket gör att du kan dela upp testerna per sida och webbplatsavsnitt.
 

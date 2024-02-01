@@ -1,12 +1,13 @@
 ---
 title: Enhetsdiagram
-description: Förstå förutsättningarna och begränsningarna med att sammanfoga data med hjälp av enhetsdiagrammet.
+description: Förstå förutsättningarna och begränsningarna med att sammanfoga data med enhetsdiagrammet.
 exl-id: b8408a7d-6aff-4fff-b535-f10d422bcf0d
 feature: CDA
-source-git-commit: 811e321ce96aaefaeff691ed5969981a048d2c31
+role: Admin
+source-git-commit: be5a73347d417c8dc6667d4059e7d46ef5f0f5cd
 workflow-type: tm+mt
-source-wordcount: '321'
-ht-degree: 2%
+source-wordcount: '296'
+ht-degree: 1%
 
 ---
 
@@ -20,7 +21,7 @@ Om du tänker implementera korsenhetsanalys med enhetens diagrammetod krävs fö
 
 >[!WARNING]
 >
->Om du inte uppfyller alla krav kan det leda till att det inte går att aktivera enhetsövergripande analys eller dåliga resultat när data sammanfogas.
+>Om du inte uppfyller alla krav kan det leda till att det inte går att aktivera enhetsövergripande analys eller dåliga resultat när du sammanfogar data.
 
 * Alla krav som anges på [översiktssida](overview.md).
 * Din organisation måste använda [Privat Adobe Experience Platform Identity Service Graph](https://business.adobe.com/products/experience-platform/identity-service.html). Se även [Hemsida](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=sv) i användarhandboken för identitetstjänsten.

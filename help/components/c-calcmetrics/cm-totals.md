@@ -3,14 +3,14 @@ title: Beräknade mätsummor
 description: Läs om beräknade mätvärden i Analysis Workspace
 feature: Calculated Metrics
 exl-id: 3e4429de-3e0c-49a5-b32c-3a4d24a29816
-source-git-commit: 93099d36a65ca2bf16fbd6342f01bfecdc8c798e
+source-git-commit: be5a73347d417c8dc6667d4059e7d46ef5f0f5cd
 workflow-type: tm+mt
-source-wordcount: '140'
+source-wordcount: '143'
 ht-degree: 0%
 
 ---
 
-# Beräknade mätsummor [!DNL Analysis Workspace]
+# Beräknade mätvärden i Analysis Workspace
 
 När du visar data i Analysis Workspace visas i de flesta fall beräknade mätvärden. I vissa fall går det inte att ange en summa, till exempel när raderna i rapporten har blandat format (t.ex. decimal och valuta).
 

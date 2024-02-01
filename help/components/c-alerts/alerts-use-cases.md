@@ -1,28 +1,22 @@
 ---
 description: Använd exempel för att skapa och hantera intelligenta aviseringar.
-title: Intelligenta aviseringar – användningsexempel
+title: Intelligenta aviseringar - användningsfall
 feature: Alerts
 exl-id: 81c47b62-a57e-4ee4-8043-3e3290e44269
-source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
+source-git-commit: be5a73347d417c8dc6667d4059e7d46ef5f0f5cd
 workflow-type: tm+mt
 source-wordcount: '88'
-ht-degree: 9%
+ht-degree: 0%
 
 ---
 
-# Intelligenta aviseringar – användningsexempel
+# Intelligenta aviseringar - användningsfall
 
-## Skapa en enkel avisering filtrerad av två segment {#section_2E96FFFA93D44F7D8DBCEC97203204AA}
-
-<!-- 
-
-Update screenshots for better readability.
-
- -->
+## Skapa en enkel avisering filtrerad av två segment {#filter}
 
 ![](assets/alerts_example1.png)
 
-## Skapa en avisering från ett tabellval {#section_AE6D42E1255D498D908A2FA60370A419}
+## Skapa en avisering från ett tabellval {#from-selection}
 
 I frihandstabeller kan du nu skapa snabbmeddelanden genom att högerklicka på en tabellrad och välja **[!UICONTROL Create Alert from Selection]**.
 
@@ -32,7 +26,7 @@ Detta fyller i varningsfunktionen automatiskt för att skapa en avisering med r�
 
 ![](assets/prepopulated_alert.png)
 
-## Konsolidera (hög) aviseringar i stället för att skapa flera aviseringar {#section_B27B0856BA104B9FB6D0BBB317633F18}
+## Konsolidera (hög) aviseringar i stället för att skapa flera aviseringar {#stacking}
 
 Med staplingsmeddelanden kan du vara säker på att varningar kombineras och du inte får ett antal separata varningar.
 

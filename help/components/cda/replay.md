@@ -3,9 +3,10 @@ title: Så här spelar du upp
 description: Förstå begreppet"replay" i enhetsövergripande analys
 exl-id: 0b7252ff-3986-4fcf-810a-438d9a51e01f
 feature: CDA
-source-git-commit: 811e321ce96aaefaeff691ed5969981a048d2c31
+role: Admin
+source-git-commit: be5a73347d417c8dc6667d4059e7d46ef5f0f5cd
 workflow-type: tm+mt
-source-wordcount: '619'
+source-wordcount: '649'
 ht-degree: 0%
 
 ---
@@ -15,7 +16,7 @@ ht-degree: 0%
 Enhetsövergripande analys gör att data kan skickas vidare i en virtuell rapportserie:
 
 * **Live-syn**: CDA försöker sy ihop varje träff när den kommer in. Nya Net-enheter i rapportsviten som aldrig har loggat in sammanfogas vanligtvis inte på den här nivån. Enheter som redan känns igen sammanfogas omedelbart.
-* **Spela upp**: CDA&quot;spelar upp&quot; data ungefär en gång i veckan baserat på unika identifierare som man har lärt sig. I det här skedet sammanfogas nya enheter i rapportsviten.
+* **Spela upp**: CDA&quot;spelar upp&quot; data ungefär en gång i veckan baserat på unika identifierare som den har lärt sig. I det här skedet sammanfogas nya enheter i rapportsviten.
 
 ## Exempeltabell
 
@@ -29,11 +30,11 @@ Så snart en träff har samlats försöker CDA sy ihop den till kända enheter. 
 
 | Tidsstämpel | ECID | eVar1 eller CustomerID | Förklaring av träffen | Personmått (kumulativt) med Device Graph | Personmått (kumulativt) med fältbaserad sytning |
 | --- | --- | --- | --- | --- | --- |
-| `1` | `246` | - | Bob på sin dator, oautentiserad | `1` (246) | `1` (246) |
-| `2` | `246` | `Bob` | Bob loggar in på sitt skrivbord | `1` (246) | `2` (246 och Bob) |
+| `1` | `246` | - | Bob på sin dator, oautentiserad | `1` 246 | `1` 246 |
+| `2` | `246` | `Bob` | Bob loggar in på sitt skrivbord | `1` 246 | `2` (246 och Bob) |
 | `3` | `3579` | - | Bob på sin mobila enhet, oautentiserad | `2` (246 och 3579) | `3` (246, Bob och 3579) |
 | `4` | `3579` | `Bob` | Bob loggar in på mobilen | `2` (246 och 3579) | `3` (246, Bob och 3579) |
-| `5` | `246` | - | Bob öppnar din webbplats på skrivbordet igen, oautentiserad | `2` (246 och 3579) | `3` (246, Bob och 3579) |
+| `5` | `246` | - | Bob kommer åt din webbplats på skrivbordet igen, oautentiserad | `2` (246 och 3579) | `3` (246, Bob och 3579) |
 | `6` | `246` | `Bob` | Bob loggar in igen via skrivbordet | `2` (246 och 3579) | `3` (246, Bob och 3579) |
 | `7` | `3579` | - | Bob kommer åt din webbplats igen på mobilen | `2` (246 och 3579) | `3` (246, Bob och 3579) |
 | `8` | `3579` | `Bob` | Bob loggar in igen via mobilen | `2` (246 och 3579) | `3` (246, Bob och 3579) |
@@ -55,7 +56,7 @@ Både oautentiserade och autentiserade träffar på nya enheter räknas som sepa
 
 ### Spela upp sammanfogning
 
-Uppspelningen sker antingen varje dag eller varje vecka, beroende på hur du har begärt att CDA ska konfigureras. Under uppspelning försöker CDA att omfördela historiska data i ett definierat uppslagsfönster:
+Uppspelningen sker antingen varje dag eller varje vecka, beroende på hur du har begärt att CDA ska konfigureras. Under uppspelning försöker CDA att omfördela historiska data inom ett definierat uppslagsfönster:
 
 * Daglig uppspelning använder ett 1-dagars uppslagsfönster
 * Veckovis omspelning använder ett 7-dagars uppslagsfönster.
@@ -70,7 +71,7 @@ Om en enhet till att börja med skickar data utan att vara autentiserad och seda
 | `2` | `246` | `Bob` | Bob loggar in på sitt skrivbord | `1` (kluster1) | `1` (Bob) |
 | `3` | `3579` | - | Bob på sin mobila enhet, oautentiserad | `1` (kluster1) | `1` (Bob) |
 | `4` | `3579` | `Bob` | Bob loggar in på mobilen | `1` (kluster1) | `1` (Bob) |
-| `5` | `246` | - | Bob öppnar din webbplats på skrivbordet igen, oautentiserad | `1` (kluster1) | `1` (Bob) |
+| `5` | `246` | - | Bob kommer åt din webbplats på skrivbordet igen, oautentiserad | `1` (kluster1) | `1` (Bob) |
 | `6` | `246` | `Bob` | Bob loggar in igen via skrivbordet | `1` (kluster1) | `1` (Bob) |
 | `7` | `3579` | - | Bob kommer åt din webbplats igen på mobilen | `1` (kluster1) | `1` (Bob) |
 | `8` | `3579` | `Bob` | Bob loggar in igen via mobilen | `1` (kluster1) | `1` (Bob) |
