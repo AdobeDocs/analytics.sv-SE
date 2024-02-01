@@ -1,13 +1,14 @@
 ---
 title: API för insättning av data i bulk
-description: BDIA (Bulk Data Insertion API) är en Adobe Analytics-funktion som gör att du kan överföra serveranropsdata i grupper av filer i stället för att använda klientbibliotek som AppMeasurement. Serveranropen i dessa gruppfiler kan antingen vara aktuella (livedata) eller historiska data. Det är en mer skalbar efterföljare till API:t för datainfogning i tidigare versioner av Adobe Analytics API.
+description: BDIA (Bulk Data Insertion API) är en Adobe Analytics-funktion som gör att du kan överföra serveranropsdata i grupper av filer i stället för att använda klientbibliotek som AppMeasurement.
 solution: Analytics
 feature: API
 exl-id: c9d23fae-2800-42bb-8f8d-adf915cadc62
-source-git-commit: b1ebf6e3548ef73217ffff1cbfb66af82e38fb8f
+role: Admin
+source-git-commit: 27bcbd638848650c842ad8d8aaa7ab59e27e900e
 workflow-type: tm+mt
-source-wordcount: '231'
-ht-degree: 8%
+source-wordcount: '186'
+ht-degree: 4%
 
 ---
 
@@ -17,7 +18,7 @@ Inmatning av massdata löser flera problem, t.ex.:
 
 * Inhämta historiska data från ett tidigare analyssystem
 
-* Ett internt analyssamlingssystem som gör det omöjligt att använda AppMeasurement. Du kan använda ETL-processer (Extract-Transform-Load) för att lägga in data i gruppfiler och sedan använda BDIA för att överföra dem till Adobe Analytics.
+* Ett internt analysinsamlingssystem som gör det omöjligt att använda AppMeasurement. Du kan använda ETL-processer (Extract-Transform-Load) för att lägga in data i gruppfiler och sedan använda BDIA för att överföra dem till Adobe Analytics.
 
 * Datainsamling från enheter som bara har intermittent anslutning till Internet. De här enheterna lagrar interaktionerna tills de får en anslutning. Enheten kan sedan överföra alla data på en gång via BDIA.
 

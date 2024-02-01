@@ -3,10 +3,11 @@ description: Länk till API-dokumentationen för datainfogning.
 title: API för datainfogning
 feature: API
 exl-id: d0ed201a-4bc9-49e2-919b-8cea4fcff587
-source-git-commit: 9f83d5670d717aa1aaa4b9e10d5e79d20655c762
+role: Admin
+source-git-commit: 27bcbd638848650c842ad8d8aaa7ab59e27e900e
 workflow-type: tm+mt
-source-wordcount: '106'
-ht-degree: 5%
+source-wordcount: '91'
+ht-degree: 6%
 
 ---
 

@@ -3,9 +3,10 @@ title: Vanliga frågor om datakällor
 description: Vanliga frågor och svar om datakällor.
 exl-id: a948dfe9-289f-43e2-a9e7-7990cf609f5c
 feature: Data Sources
-source-git-commit: 811e321ce96aaefaeff691ed5969981a048d2c31
+role: Admin
+source-git-commit: 27bcbd638848650c842ad8d8aaa7ab59e27e900e
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '409'
 ht-degree: 0%
 
 ---
@@ -19,7 +20,7 @@ Datakällor medför inga avgifter och räknar inte heller med användning av ser
 +++
 
 +++Hur påverkar datakällor attribuering och förfallodatum för eVars?
-Om ett transaktionsID matchar mellan en datakälla och en onlineträff får de associerade eVar samma attribuering och förfallodatum som om de hade angetts vid onlinetötet.
+Om ett transaktionsID matchar mellan en datakälla och en onlineträff får de associerade eVarna samma attribuering och förfallodatum som om de hade angetts vid onlinetötet.
 
 Alla andra data som överförs via datakällor har ingen form av attribuering eller förfallodatum.
 +++

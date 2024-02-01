@@ -1,11 +1,12 @@
 ---
 title: Datakällfilformat
-description: Generera en fil för användning i datakällor korrekt.
+description: Generera en fil som kan användas i datakällor korrekt.
 exl-id: 6632b970-e931-4272-a69b-c1130ad6475f
 feature: Data Sources
-source-git-commit: 811e321ce96aaefaeff691ed5969981a048d2c31
+role: Admin
+source-git-commit: 27bcbd638848650c842ad8d8aaa7ab59e27e900e
 workflow-type: tm+mt
-source-wordcount: '534'
+source-wordcount: '533'
 ht-degree: 3%
 
 ---
@@ -28,7 +29,7 @@ Alla rader som börjar med &#39;`#`&#39; är en kommentar. När du hämtar en da
 * Den första kommentaren anger vilken typ av mall du har konfigurerat för datakällan, det användar-ID för backend-objektet som skapade datakällan samt datakällans-ID.
 * Den andra kommentaren ger egna namn för vart och ett av de rubriker som finns i mallfilen.
 
-Alla kommentarsrader ignoreras av Adobe när filen bearbetas, så du kan ta bort mallkommentarerna eller lägga till egna i hela filen. Endast hela rader kan kommenteras; kan du inte kommentera ut enskilda fält eller delar av rader.
+Alla kommentarsrader ignoreras av Adobe när filen bearbetas, så du kan ta bort mallkommentarerna eller lägga till egna i hela filen. Endast hela rader kan kommenteras. Du kan inte kommentera i enskilda fält eller delar av rader.
 
 ## Sidhuvuden
 
@@ -36,7 +37,7 @@ När du överför datakällfiler krävs kolumnrubriker. De här kolumnrubrikerna
 
 >[!TIP]
 >
->Du kan skapa en datakällfil från grunden om du tar med rätt rubriker i datakällfilen. Det finns ingen gräns för hur många rubriker du kan inkludera i en enda fil. Varje rad kan dock bara innehålla maximalt 4 096 byte.
+>Du kan skapa en datakällfil från grunden om du tar med rätt rubriker i datakällfilen. Det finns ingen gräns för hur många rubriker du kan ta med i en enda fil. Varje rad kan dock bara innehålla maximalt 4 096 byte.
 
 | Dimension | Datakällrubrik |
 | --- | --- |
@@ -67,7 +68,7 @@ Dimensioner och mätvärden placeras i samma rubrikrad.
 
 {style="table-layout:auto"}
 
-Adobe stöder inte datakällor för andra mått eller mätvärden. Om variabler utöver vad som anges i tabellerna ovan är obligatoriska bör du överväga att använda [API för massdatainfogning](https://developer.adobe.com/analytics-apis/docs/2.0/guides/endpoints/bulk-data-insertion/) i stället.
+Adobe stöder inte datakällor för andra mått eller mätvärden. Om variabler utöver vad som anges i tabellerna ovan är obligatoriska bör du använda [API för massdatainfogning](https://developer.adobe.com/analytics-apis/docs/2.0/guides/endpoints/bulk-data-insertion/) i stället.
 
 ## Datum
 
@@ -82,7 +83,7 @@ En enda datakällfil har stöd för upp till 90 unika dagar. Om du vill inkluder
 
 ## Dimensions- och mätdata
 
-Efterföljande värden efter datumet i varje rad innehåller de data som du vill överföra. Varje rad motsvarar den aktuella tidsstämpeln. Se till att samma antal flikar finns på varje rad. Kolumner kan vara i vilken ordning som helst. Se till att data på varje rad justeras mot rubrikerna överst. Den maximala mängden data som en rad kan innehålla är 4 096 byte.
+Efterföljande värden efter datumet i varje rad innehåller de data som du vill överföra. Varje rad motsvarar den aktuella tidsstämpeln. Se till att samma antal flikar finns på varje rad. Kolumner kan vara i vilken ordning som helst. Kontrollera att data i varje rad justeras mot rubrikerna överst. Den maximala mängden data som en rad kan innehålla är 4 096 byte.
 
 Dimensionen får inte innehålla semikolon (`;`). Rader som innehåller semikolon hoppas över.
 
