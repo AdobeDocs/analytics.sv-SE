@@ -3,9 +3,9 @@ description: Allmän översiktsinformation om Adobe Analytics, inklusive informa
 title: Förstå analysgränssnittet
 feature: Analytics Basics
 exl-id: 61ae6aa6-96e4-4794-8ce3-0d6e0ec47e0a
-source-git-commit: d173a6c6c9751a86f4218ec842da17da14f8485b
+source-git-commit: 4de9fe6725210e18ce06ab33cda7daf856f1cc54
 workflow-type: tm+mt
-source-wordcount: '2097'
+source-wordcount: '2062'
 ht-degree: 5%
 
 ---
@@ -50,7 +50,6 @@ The [!UICONTROL Components] -fliken innehåller funktioner som hjälper dig att 
    | Datumintervall | Analysis Workspace innehåller en lista med standarddatumintervall som användare kan använda när de skapar analyser. Dessutom kan du skapa anpassade datumintervall och göra dem tillgängliga för användare i Analysis Workspace. | [Skapa anpassade datumintervall](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/components/calendar-date-ranges/custom-date-ranges.html?lang=en) <!-- should create an article in the Components Guide for managing/creating date ranges. This article in the Tools Guide needs updating. --> |
    | Virtuella rapportsviter | Virtuella rapportsviter segmenterar era Adobe Analytics-data så att ni kan styra åtkomsten till varje segment. | [Översikt över Virtual Report Suites](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-about.html?lang=en) |
    | Larm | Intelligenta aviseringar ger mer exakt kontroll över aviseringar och integrerar avvikelseidentifiering med varningssystemet. | [Intelligenta aviseringar](https://experienceleague.adobe.com/docs/analytics/components/alerts/intellligent-alerts.html?lang=en) |
-   | Kalenderhändelser | För rapporter som utvecklats över tid kan du med kalenderhändelser visa händelser grafiskt och se om kampanjer eller andra händelser har påverkat webbplatsens trafik, intäkter eller andra mätvärden. | [Kalenderhändelser](https://experienceleague.adobe.com/docs/analytics/components/t-calendar-event.html?lang=en) |
    | Anteckningar | Anteckningar i Workspace gör att du effektivt kan kommunicera kontextuella datanunkter och insikter till din organisation. De gör att du kan koppla kalenderhändelser till specifika dimensioner och mätvärden. | [Hantera anteckningar](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/components/annotations/manage-annotations.html?lang=en) |
    | Klassificeringsuppsättningar | Klassificeringsuppsättningar har ett enda gränssnitt för att hantera klassificeringar och regler. <p>En klassificering är ett sätt att kategorisera Analytics-variabeldata och sedan visa data på olika sätt när du genererar rapporter. Du upprättar en relation mellan ett variabelvärde och metadata som är relaterade till det värdet. Klassificeringar kan användas för de flesta anpassade dimensioner, som spårningskod, props och eVars.</p> | [Översikt över klassificeringsuppsättningar](https://experienceleague.adobe.com/docs/analytics/components/classifications/sets/overview.html?lang=en) |
    | Platser | För att kunna importera Adobe Analytics-klassificeringsdata från ett molnmål måste du först lägga till och konfigurera platsen där du vill att klassificeringsdata ska samlas in. Du kan skapa, redigera och ta bort platser. | [Platshanteraren](https://experienceleague.adobe.com/docs/analytics/components/locations/locations-manager.html?lang=en) |

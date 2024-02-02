@@ -1,16 +1,16 @@
 ---
-description: Upptäck allt du kan göra med Advertising Analytics i den här detaljerade guiden, inklusive behörigheter som krävs och tillgängliga mått och mätvärden.
-title: A Guide to Advertising Analytics
+description: Upptäck allt du kan göra med Advertising Analytics, inklusive behörigheter som krävs och tillgängliga mått och mätvärden.
+title: Advertising Analytics
 feature: Advertising Analytics
 exl-id: bc18b74a-0317-4871-b2e0-ec0977ef1731
-source-git-commit: 93099d36a65ca2bf16fbd6342f01bfecdc8c798e
+source-git-commit: 4de9fe6725210e18ce06ab33cda7daf856f1cc54
 workflow-type: tm+mt
-source-wordcount: '1212'
+source-wordcount: '1170'
 ht-degree: 88%
 
 ---
 
-# A guide to Advertising Analytics
+# Advertising Analytics
 
 Med Advertising Analytics kan du se alla dina Google- och Bing Paid Search-data sida vid sida, inifrån Adobe Analytics. Tidigare måste alla Google AdWords/DFA- och Microsoft Bing Ads-data visas i Adobe Advertising Cloud (AMO) eller i Google/Bing. Du kan nu hämta följande data i Adobe Analytics: Impressions, Clicks, Costs data direkt från sökmotorerna och en AMO ID-instans (Click Instances). Kvalitetsresultat och genomsnittliga positioner samlas inte längre in eftersom Google ersatt dessa värden i september 2019.
 
@@ -27,19 +27,16 @@ Denna integrering riktar sig till följande målgrupper:
 * Den **analytiker** som behöver samla in resultatrapporter för Paid Search Marketer.
 * Den **Paid Search Marketer** som söker svar på följande frågor: Hur mycket trafik skickar jag till vår webbplats och konverterar kunderna? Vilka är mina kostnadseffektiva annonskampanjer?
 
-## Förutsättningar {#section_C25E0CA3474C4EDEAEAA9A5B8AAC9299}
+## Förutsättningar {#prerequisites}
 
 * Advertising Analytics finns endast för SKU:erna Adobe Analytics [Select](https://www.adobe.com/se/data-analytics-cloud/analytics/select.html), [Prime](https://www.adobe.com/se/data-analytics-cloud/analytics/prime.html) och [Ultimate](https://www.adobe.com/se/data-analytics-cloud/analytics/ultimate.html).
-
 * Den här funktionen är tillgänglig för kunder som inte använder Advertising Cloud eller AMO.
-* Du måste vara Adobe Analytics-administratör för att få tillgång till Advertising Analytics. Därefter kan du [ge icke-administratörer åtkomstbehörigheter](/help/integrate/c-advertising-analytics/overview.md#section_FCC58EB635954A32990D4E67B52B4369).
+* Du måste vara Adobe Analytics-administratör för att få tillgång till Advertising Analytics. Därefter kan du [ge icke-administratörer åtkomstbehörigheter](/help/integrate/c-advertising-analytics/overview.md#permissions).
 * För alla rapportsviter där du vill visa Google-/Bing-sökdata måste du [aktivera dessa rapportsviter för Advertising Analytics](/help/integrate/c-advertising-analytics/c-adanalytics-workflow/aa-provision-rs.md) ( **[!UICONTROL Admin]** > **[!UICONTROL Edit Settings]** > **[!UICONTROL Advertising Analytics Configuration]**).
-
 * Du behöver inloggningsuppgifter för en användare med redigeringsbehörighet för sökkonton som du vill integrera med Adobe Analytics, till exempel ett Google-konto-ID och ett lösenord.
 * När det gäller Bing Ads behöver du också Bing Customer ID.
-* Om du använder Internet Explorer 11 (eller tidigare) kommer du inte att kunna [konfigurera ett annonskonto](/help/integrate/c-advertising-analytics/c-adanalytics-workflow/aa-create-ad-account.md) för någon av de tre sökmotorerna. Använd i stället andra webbläsare.
 
-## Advertising Analytics-behörigheter {#section_FCC58EB635954A32990D4E67B52B4369}
+## Advertising Analytics-behörigheter {#permissions}
 
 Analyserna har två behörigheter som automatiskt tilldelas Analytics-administratörer. Administratörer kan sedan välja att ge dessa behörigheter till icke-administratörer.
 
@@ -68,11 +65,11 @@ Analyserna har två behörigheter som automatiskt tilldelas Analytics-administra
  </tbody> 
 </table>
 
-## Advertising Analytics Dimensioner och statistik {#section_C0DF4A08EA9E46ADABE9E465AFC11E32}
+## Advertising Analytics Dimensioner och statistik {#dimensions-metrics}
 
 Advertising Analytics lägger till följande mått och mätvärden i Analysis Workspace, Report Builder och API:t för analysrapporter.
 
-**Dimensioner**
+### Mått
 
 >[!IMPORTANT]
 >
@@ -101,7 +98,7 @@ Advertising Analytics lägger till följande mått och mätvärden i Analysis Wo
 | Optimering (AMO-ID) | Detta används inte av Advertising Analytics. Det används endast av Advertising Cloud-kunder. |
 | Enhet (AMO-ID) | Används inte i dag. Platshållare för potentiell framtida produktförbättring av angiven målenhetstyp (t.ex. mobil, dator) för annons (inte besökarens faktiska enhet). |
 
-**Mätvärden**
+### Mätvärden
 
 >[!IMPORTANT]
 >
