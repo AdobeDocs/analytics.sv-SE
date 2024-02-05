@@ -4,7 +4,7 @@ description: Generera en fil som kan användas i datakällor korrekt.
 exl-id: 6632b970-e931-4272-a69b-c1130ad6475f
 feature: Data Sources
 role: Admin
-source-git-commit: 27bcbd638848650c842ad8d8aaa7ab59e27e900e
+source-git-commit: cc25fe304d9cab3db3fa2ddd306338ff3bb88a55
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 3%
@@ -74,8 +74,8 @@ Adobe stöder inte datakällor för andra mått eller mätvärden. Om variabler 
 
 Det första värdet i varje rad **måste** vara datumet. Datumformatet måste ha något av följande format:
 
-* **`MM/DD/YY/HH/mm/SS`**
-* **`MM/DD/YY`**
+* **`MM/DD/YYYY/HH/mm/SS`**
+* **`MM/DD/YYYY`**
 
 Om du utelämnar timmar/minuter/sekunder anges tidsstämpeln automatiskt till 12 PM för den dagen.
 
