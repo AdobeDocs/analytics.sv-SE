@@ -3,9 +3,9 @@ title: Felsöka sessioner i Adobe Analytics
 description: Lär dig hur du löser problem med utloggning från Adobe Analytics.
 feature: Analytics Basics
 exl-id: 191250ef-8313-47be-9717-046cce870998
-source-git-commit: d64f6687dd6e6f688d332926e6d90fa699cac968
+source-git-commit: d3d5b01fe17f88d07a748fac814d2161682837c2
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '339'
 ht-degree: 0%
 
 ---
@@ -16,13 +16,13 @@ Den här sidan handlar om felsökningssessioner, vilket innebär att du kan logg
 
 Nästan alla sessionsbaserade problem kommer från en organisations anpassade företagsnätverk. Om du kan logga in på Adobe Analytics men inte kan vara inloggad kan du använda den här artikeln för att fastställa orsaken.
 
-## Kontrollera om problemet beror på din organisations nätverk
+## Kontrollera om problemet beror på din organisations nätverk {#network}
 
 Många organisationer använder ytterligare nätverksfunktioner för att förbättra säkerheten, som proxyservrar eller brandväggar. Dessa anpassningar kan ibland påverka möjligheten att behålla en aktiv session i Adobe Analytics.
 
 Använd inloggningsuppgifterna för Experience Cloud på en enhet utanför företagsnätverket för att avgöra om det företagsnätverk du är ansluten till orsakar problem med att använda Adobe Analytics. Exempel på enheter kan vara via ditt hemnätverk eller en mobilenhets dataplan. Om du kan gå från sida till sida utan att vara utloggad är det troligtvis din organisations nätverk som är orsaken till varför du loggar ut från Adobe Analytics.
 
-## Problem på grund av proxy
+## Problem på grund av proxy {#proxy}
 
 Adobe använder en auktoriseringshuvud när begäranden görs till Adobe. Vissa proxies, till exempel Edge Secure Web Gateway (tidigare Bluecoat), tar bort viktig auktoriseringsrubrikinformation som används av Adobe Analytics. När Adobe inte ser auktoriseringshuvudet förfaller sessionen.
 

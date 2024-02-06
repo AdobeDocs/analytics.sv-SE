@@ -5,10 +5,10 @@ title: Migrering av besökare
 topic-fix: Developer and implementation
 feature: Analytics Basics
 exl-id: d44628c8-902f-4e60-b819-41d5537407d8
-source-git-commit: 21bbb59cdc630823cf342ff7dd0142b83f89a314
+source-git-commit: d3d5b01fe17f88d07a748fac814d2161682837c2
 workflow-type: tm+mt
-source-wordcount: '465'
-ht-degree: 1%
+source-wordcount: '689'
+ht-degree: 0%
 
 ---
 
@@ -28,11 +28,11 @@ Med migrering av besökare kan du bevara cookies för identifiering av besökare
 
 * Flyttar till en namngiven datainsamling/datainsamling från första part ( [Cookies från första part)](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-first-party.html).
 
-* Flyttar från en CNAME till en annan (föränderliga domäner).
+* Gå från en CNAME till en annan (föränderliga domäner).
 
 När migrering av besökare har konfigurerats och en användare besöker den nya domänen utan en cookie för besökar-ID, dirigeras servern om till det tidigare värdnamnet för datainsamling, hämtar eventuella tillgängliga cookies för besöks-ID och dirigerar sedan om tillbaka till den nya domänen. Om inget besökar-ID hittas på det tidigare värdnamnet genereras ett nytt ID. Detta inträffar endast en gång per besökare.
 
-## Migreringsprocess för besökare {#section_FF0C5C5CAEF343FFA1892B29311F7160}
+## Migreringsprocess för besökare {#process}
 
 I följande tabell visas de uppgifter som krävs för migrering av besökare:
 
@@ -61,8 +61,15 @@ I följande tabell visas de uppgifter som krävs för migrering av besökare:
    <td colname="col3"> <p>Använd en <a href="../implement/validate/packet-monitor.md"> paketskärm</a> för att verifiera att när du ansluter till platsen för första gången, eller efter att du har rensat cookies, visas två 302 (omdirigering) HTTP-statuskoder före HTTP-statuskoden 200 (OK). Om någon av dessa omdirigeringar misslyckas kontaktar du kundtjänst omedelbart för att säkerställa att migreringen är korrekt konfigurerad. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <b>För hela migreringsperioden</b>: Låt DNS-posten för det föregående värdnamnet vara aktiv. </p> </td> 
+   <td colname="col1"> <p> <b>För hela migreringsperioden</b>: Låt DNS-posten för föregående värdnamn vara aktiv. </p> </td> 
    <td colname="col3"> <p>Det tidigare värdnamnet måste matchas via DNS, annars kommer inte cookie-migreringen att ske. </p> </td> 
   </tr> 
  </tbody> 
 </table>
+
+| Uppgift | Beskrivning |
+|--- |--- |
+| Så här kommer du igång: Kontakta kundtjänst för de domäner du vill migrera och den migreringsperiod du vill aktivera (30, 60 eller 90 dagar). Se till att du inkluderar de osäkra och säkra domänerna. | Skapa en lista med exakt syntax för de domäner du vill migrera till och migrera från.<ul><li>example.112.2o7.net > metrics.example.com</li><li>example.102.112.2o7.net > smetrics.example.com</li></ul>Migreringsvärdnamnen har konfigurerats på Adobe datainsamlingsserver. Kundtjänst meddelar när ändringen är klar så att du kan planera för nästa steg. |
+| 6+ timmar efter konfigurationsändring: Uppdatera `s.trackingServer` och `s.trackingServerSecure` variabler i din Analytics JavaScript-kod för att använda de nya datainsamlingsservrarna. | När du har gjort den här ändringen använder du [Experience Cloud-felsökning](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html) för att verifiera att Analytics-bildbegäran går till den uppdaterade datainsamlingsservern. |
+| Omedelbart efter att du har uppdaterat din Analytics-kod: Testa webbplatsen för att verifiera att omdirigeringen till den tidigare datainsamlingsdomänen sker. | Använd en [paketskärm](../implement/validate/packet-monitor.md) för att verifiera att när du ansluter till platsen för första gången, eller efter att du har rensat cookies, visas två 302 (omdirigering) HTTP-statuskoder före HTTP-statuskoden 200 (OK). Om någon av dessa omdirigeringar misslyckas kontaktar du kundtjänst omedelbart för att säkerställa att migreringen är korrekt konfigurerad. |
+| För hela migreringsperioden: Låt DNS-posten för det föregående värdnamnet vara aktiv. | Det tidigare värdnamnet måste matchas via DNS, annars kommer inte cookie-migreringen att ske. |

@@ -3,9 +3,10 @@ title: Adobe Analytics och webbläsarcookies
 description: Läs om hur spårningsförebyggande åtgärder påverkar cookies från tredje part och från första part som anges av Adobe Analytics.
 feature: Data Configuration and Collection
 exl-id: c4a4751e-49fc-40c3-aa39-f0f0b20bda1b
-source-git-commit: ac9e4934cee0178fb00e4201cc3444d333a74052
+role: Admin
+source-git-commit: d3d5b01fe17f88d07a748fac814d2161682837c2
 workflow-type: tm+mt
-source-wordcount: '1981'
+source-wordcount: '1914'
 ht-degree: 0%
 
 ---
@@ -19,7 +20,7 @@ I det här dokumentet förklaras hur de viktigaste åtgärderna för att spåra 
 >[!NOTE]
 >[Enhetsövergripande analys](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html#cda) och [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html#comparing-cja-to-traditional-adobe-analytics) kan sammanfogas mellan cookies med ett person-ID, t.ex. ett hashade inloggnings-ID, om ett sådant finns.
 
-### Begränsningar för cookies från tredje part
+### Begränsningar för cookie-filer från tredje part
 
 Cookies som används i en tredjepartskontext är ofta föråldrade. Firefox och Safari började som standard blockera cookies från tredje part från och med 2019 respektive 2020. Chrome har meddelat att man under 2023 kommer att upphöra med stödet för cookies från tredje part. När de gör det blir cookies från tredje part oanvändbara.
 
@@ -41,7 +42,7 @@ För närvarande gäller ITP-principer för alla cookies från första part som 
 
 #### Tidslinje för större ändringar av ITP-policyn {#ITP-timeline}
 
-* Februari 2019 med [ITP 2.1](https://webkit.org/blog/8613/intelligent-tracking-prevention-2-1/): Kakor på klientsidan var begränsade till sju dagars upphörande
+* Februari 2019 med [ITP 2.1](https://webkit.org/blog/8613/intelligent-tracking-prevention-2-1/): Cookies på klientsidan var begränsade till ett sjudagars förfallodatum
 * April 2019 med [ITP 2.2](https://webkit.org/blog/8828/intelligent-tracking-prevention-2-2/): Klientsidans cookies var begränsade till 24 timmar för annonsklickningar när den refererande domänen var a) involverad i spårning av webbplatser och b) den slutliga URL:en innehöll en frågesträng och/eller en fragment-ID.
 * November 2020 med [CNAME Dolda och studsspårningsförsvar](https://webkit.org/blog/11338/cname-cloaking-and-bounce-tracking-defense/): ITP-begränsningarna utökades till CNAME-implementeringar.
 
@@ -74,7 +75,7 @@ Om dessa begränsningar påverkar dina data kommer du att se:
 
 Tredjepartscookies skapas inte av de webbplatser som användarna besöker.
 
-Även om webbläsare för närvarande behandlar alla cookies från tredje part på samma sätt och lagrar dem så kan cookies från tredje part bete sig på olika sätt. Med en kunds implementering av cookies från tredje part i Analytics kan webbläsarna lagra Adobe [demdex.net](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html) ID som en cookie från tredje part, men klienten gör bara anrop till Adobe och inte för okända eller misstänkta tredjepartsdomäner. Denna cookie ger beständiga identifierare över domäner och möjliggör säkert (HTTPS) innehåll. Mer information finns i [Cookies och Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html).
+Även om webbläsare för närvarande behandlar alla cookies från tredje part på samma sätt och lagrar dem så kan cookies från tredje part bete sig på olika sätt. Med en kunds Analytics-implementering av cookies från tredje part lagrar webbläsarna Adobe [demdex.net](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html) ID som en cookie från tredje part, men klienten gör bara anrop till Adobe och inte för okända eller misstänkta tredjepartsdomäner. Denna cookie ger beständiga identifierare över domäner och möjliggör säkert (HTTPS) innehåll. Mer information finns i [Cookies och Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html).
 
 I Analytics-implementeringar används cookies från tredje part för domänövergripande spårning och för annonseringsanvändning, inklusive återannonsering. Med cookies från tredje part kan du identifiera besökare när de besöker olika domäner som du äger eller som de visas på annonser på webbplatser som du inte äger.<!--  Without these cookies, you cannot identify visitors as they visit different domains that you own or as they are shown ads on sites that you do not own unless your implementation can stitch other types of cookies and   -->
 
@@ -90,13 +91,13 @@ Mer information finns i [Om cookies från första part](https://experienceleague
 
 ## Vad är cookie-attributet SameSite och hur påverkar det Analytics-cookies? {#samesite-effect}
 
-I och med att webbläsaren Chrome 80 släpptes i februari 2020 - och i efterföljande versioner av Firefox- och Edge-webbläsare - tillämpar attributet SameSite cookie specifikationen för tre olika värden som styr om cookies kan användas i en tredjepartsmiljö:
+I och med att webbläsaren Chrome 80 släpptes i februari 2020 - och i efterföljande versioner av Firefox- och Edge-webbläsare - tillämpar attributet SameSite cookie specifikationen för tre olika värden som styr om cookies kan användas i ett tredjepartssammanhang:
 
-* `None`: Med den här inställningen aktiveras åtkomst över flera webbplatser och cookies kan skickas i en tredjepartssituation. Om du vill ange det här attributet måste du också ange `Secure` och alla webbläsarbegäranden måste följa HTTPS. När du till exempel anger cookie-filen parar du värdena för attributet enligt följande: `Set-Cookie: example_session=test12; SameSite=None; Secure`. Om de inte är korrekt märkta kan cookies inte användas i de nyare webbläsarna och de avvisas.
+* `None`: Den här inställningen aktiverar åtkomst över webbplatser och gör att cookies kan skickas i en tredjepartssituation. Om du vill ange det här attributet måste du också ange `Secure` och alla webbläsarbegäranden måste följa HTTPS. När du till exempel anger cookie-filen parar du värdena för attributet enligt följande: `Set-Cookie: example_session=test12; SameSite=None; Secure`. Om de inte är korrekt märkta kan cookies inte användas i de nyare webbläsarna och de avvisas.
 
 * `Lax`: Tillåter att begäranden mellan webbplatser skickas med cookies för samma webbplats endast för navigering på den översta nivån med *säker* (skrivskyddad, till exempel `GET`) HTTP-metoder.
 
-* `Strict`: Samma webbplats-cookie skickas inte för någon begäran från tredje part. Cookien skickas bara om webbplatsen för cookien matchar webbplatsen i URL-fältet.
+* `Strict`: En cookie för samma webbplats skickas inte för webbplatsförfrågningar från tredje part. Cookien skickas bara om webbplatsen för cookien matchar webbplatsen i URL-fältet.
 
 Standardbeteendet i de här webbläsarversionerna är att hantera cookies som inte har någon angiven `SameSite` samma attribut som `SameSite=Lax`.
 
@@ -104,7 +105,7 @@ Standardbeteendet i de här webbläsarversionerna är att hantera cookies som in
 
 För kunder som använder Visitor ID-tjänsten har cookies egenskaperna `SameSite=None` och `secure` anges som standard, vilket gör att dessa cookies kan användas med stöd för tredjepartsanvändning.
 
-För kunder som använder äldre Analytics-identifierare (&quot;s_vi&quot; och&quot;s_fid&quot;-cookies) ställs cookies in så att även tredjepartsanvändningsfall med standardsamlingsdomäner kan aktiveras: adobedc.net, 2o7.net och omtrdc.net. För kunder som använder en CNAME-implementering anges i Analytics `SameSite=Lax`.
+För kunder som använder äldre Analytics-identifierare (&quot;s_vi&quot; och&quot;s_fid&quot;-cookies) ställs cookies in på att aktivera användningsfall från tredje part med standardsamlingsdomäner: adobedc.net, 2o7.net och omtrdc.net. För kunder som använder en CNAME-implementering anges i Analytics `SameSite=Lax`.
 
 >[!NOTE]
 >
@@ -168,11 +169,11 @@ Om ditt företag påverkas av förhindrande av ITP-spårning kan du vidta följa
 
 * Skapa ett segment för att filtrera ut ITP-användare.
 
-   ![Segment för icke-ITP-besökare](/help/technotes/assets/non-itp-visitor-segment.png)
+  ![Segment för icke-ITP-besökare](/help/technotes/assets/non-itp-visitor-segment.png)
 
 * Skapa ett beräknat mätvärde för att justera den kända besökarinflationen.
 
-   ![Beräknade mätvärden som justeras för besökarinflationen](/help/technotes/assets/estimated-itp-visitors-metric.png)
+  ![Beräknade mätvärden som justeras för besökarinflationen](/help/technotes/assets/estimated-itp-visitors-metric.png)
 
 >[!MORELIKETHIS]
 >

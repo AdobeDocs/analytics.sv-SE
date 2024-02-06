@@ -3,14 +3,16 @@ description: Lär dig hur du aktiverar Adobe Campaign Standard-rapportering i Ad
 title: Hur integrerar jag Adobe Campaign Standard Reporting i Adobe Analytics?
 feature: Campaign Integration
 exl-id: 63bae5ee-f94d-43fa-87ce-6380236745d6
-source-git-commit: 0a039668af52a0e5433f9b0c4e643db566b95702
+role: Admin
+source-git-commit: d3d5b01fe17f88d07a748fac814d2161682837c2
 workflow-type: tm+mt
-source-wordcount: '471'
-ht-degree: 68%
+source-wordcount: '465'
+ht-degree: 64%
 
 ---
 
-# Adobe Campaign Standard
+
+# Adobe Campaign Standard-rapportering
 
 Mer information om hur du konfigurerar den här integreringen finns i [dokumentationen för Adobe Campaign](https://helpx.adobe.com/se/campaign/standard/integrating/using/about-campaign-analytics-integration.html).
 
@@ -42,7 +44,7 @@ Integrationen mellan Adobe Campaign Standard och Adobe Analytics ger följande r
 
 * **[!UICONTROL Adobe Campaign Executed Delivery ID]**: Visar data som importerats från Adobe Campaign om e-postmeddelanden som skickats från Adobe Campaign. |
 
-## Steg 3. Använd Adobe Campaign-klassificeringar {#section_74A28AF3F4CA4091943789DE4D8B2B63}
+## Steg 3. Använda Adobe Campaign-klassificeringar {#section_74A28AF3F4CA4091943789DE4D8B2B63}
 
 **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]** > **`<select report suite>`** > **[!UICONTROL Edit Settings]** > **[!UICONTROL Adobe Campaign]** > **[!UICONTROL Adobe Campaign Classifications]**
 
@@ -52,7 +54,7 @@ När rapportsviten har aktiverats för Adobe Campaign finns följande klassifice
 | --- | --- |
 | [!UICONTROL Delivery ID] | Namn på intern leverans som visas i Campaign |
 | [!UICONTROL Delivery Label] | Leverans i kampanj - enskild leverans/återkommande leverans/transaktionsleverans |
-| [!UICONTROL Campaign ID] | Internt kampanjnamn som visas i Campaign |
+| [!UICONTROL Campaign ID] | Internt kampanjnamn som du ser i Campaign |
 | [!UICONTROL Campaign Label] | Campaign i Adobe Campaign |
 | [!UICONTROL Executed Delivery Label] | Lista över enskilda utförda leveranser |
 

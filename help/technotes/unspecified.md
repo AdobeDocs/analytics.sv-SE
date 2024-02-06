@@ -3,7 +3,7 @@ description: Olika rapporter i Adobe Analytics kan visa Ospecificerad, Ingen, An
 title: Ospecificerad, Ingen, Annan och Okänd vid rapportering
 feature: Analytics Basics
 exl-id: 35451239-91f3-400a-981e-8c3fbc0e4185
-source-git-commit: c8faf29262b9b04fc426f4a26efaa8e51293f0ec
+source-git-commit: d3d5b01fe17f88d07a748fac814d2161682837c2
 workflow-type: tm+mt
 source-wordcount: '515'
 ht-degree: 0%
@@ -14,30 +14,30 @@ ht-degree: 0%
 
 Olika rapporter i Adobe Analytics kan visa &quot;Ospecificerad&quot;, &quot;Annan&quot; eller &quot;Okänd&quot;, beroende på vilken rapport som visas. I allmänhet innebär det här radobjektet att variabeln inte var definierad eller på annat sätt otillgänglig. Nedan finns en omfattande lista över hur varje rapport kan innehålla en av dessa radposter.
 
-## &quot;Ospecificerad&quot; (eller &quot;Ingen&quot;) vid rapportering
+## &quot;Ospecificerad&quot; (eller &quot;Ingen&quot;) vid rapportering {#reporting}
 
 &quot;Ospecificerad&quot; är ett vanligt radobjekt i rapporter. Den kallas även&quot;ingen&quot;.
 
-* **En händelse utlöses utan en konverteringsvariabel:** En användare kommer till exempel till din webbplats och gör ett köp utan något värde för eVar1. Om du visar order med dimensionen eVar1 finns det inget värde att tilldela ordern till. Därför tilldelas den automatiskt till&quot;Ospecificerad&quot;.
+* **En händelse utlöses utan en konverteringsvariabel:** En användare kommer till exempel till din webbplats och gör ett köp utan något eVar1-värde. Om du visar order med dimensionen eVar1 finns det inget värde att tilldela ordern till. Därför tilldelas den automatiskt till&quot;Ospecificerad&quot;.
 * **Oklassificerade data i klassificeringsrapporter:** När klassificeringsdata visas returneras &quot;Ospecificerad&quot; om ett värde inte har data associerade med den aktuella klassificeringen. Du löser det här problemet genom att klassificera det överordnade variabelvärdet.
 * **Uppdelningsrapporter där endast en variabel utlöses:** När du tillämpar en uppdelning på en variabel måste alla instanser av variabeln tas med i beräkningen. Om den andra variabeln inte kunde ses eller om den bestod från en tidigare träff är dimensionsobjektet &quot;Ospecificerat&quot;.
 * **Icke-mobila träffar i mobilrapporter:** Alla träffar som inte är mobila i mobilrapporter listas som&quot;Ospecificerade&quot; (&quot;Inte mobilt&quot; i Reports and Analytics).
 
-## ’Övrigt’ i rapporteringen
+## ’Övrigt’ i rapporteringen {#other}
 
 Även om det är något sällsynt i rapporteringen kan &quot;Annat&quot; förekomma under flera omständigheter:
 
 * **Sidor utlöses utanför interna URL-filter:** Detta värde finns på plats för att skydda dig mot databedrägeri, som om en annan organisation stjäl din källkod och implementerar den på sin egen webbplats. Kontrollera att alla URL:er som koden är implementerad på matchar de interna URL-filtren i rapportsvitens inställningar för att åtgärda problemet.
 * **Besökare som använder en webbläsare som inte används så ofta:** I rapporten Webbläsartyper visas&quot;Annat&quot; som en uppdelning om besökarna använder en webbläsare som inte är en populär webbläsartyp. Det finns många organisationer som producerar webbläsare. Alla webbläsare som inte har skapats av större organisationer är inkapslade i &quot;Annat&quot; för att förhindra att rapporten blir rörig.
 
-## &quot;Okänd&quot; i rapportering
+## &quot;Okänd&quot; i rapportering {#unknown}
 
 &quot;Okänd&quot; kan inträffa under flera omständigheter:
 
-* **Träffar som inte är webbläsare vid visning av tekniska rapporter:** Om ett AppMeasurement-bibliotek inte kan avgöra om en funktion stöds visas Okänd i rapporteringen.
+* **Träffar som inte är webbläsare vid visning av tekniska rapporter:** Om det inte går att avgöra om en AppMeasurement stöds visas&quot;Okänd&quot; i rapporten.
 * **Använda segment där komponenter inte är tillgängliga:** Kontrollera att variabler som används i ett segment är aktiverade och att användarna har tillgång till dem. Om en användare inte har åtkomst till en segmentkomponent, eller om en variabel är inaktiverad, visas Okänd.
 
-## Filtrera dessa värden vid rapportering {#section_5536E2B419D445D39C932E8F12C0070C}
+## Filtrera dessa värden vid rapportering {#filter}
 
 I de flesta fall är det säkert att ignorera dessa radobjekt. Du kan använda sökfiltret för att ta bort dem om du vill.
 

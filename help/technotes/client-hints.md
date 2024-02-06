@@ -3,10 +3,11 @@ title: Klienttips
 description: Lär dig mer om hur klienttips gradvis ersätter användaragenten som källa för enhetsinformation.
 exl-id: e0a74daa-12a2-4999-9920-2636b061dcc8
 feature: Data Configuration and Collection
-source-git-commit: c697530103ea7cd279cc3560c1daec796759e7a1
+role: Admin
+source-git-commit: d3d5b01fe17f88d07a748fac814d2161682837c2
 workflow-type: tm+mt
-source-wordcount: '1295'
-ht-degree: 1%
+source-wordcount: '1184'
+ht-degree: 0%
 
 ---
 
@@ -16,7 +17,7 @@ Klienttips är individuell information om en användares enhet. De tillhandahål
 
 ## Klienttips för låg entropi och hög entropi
 
-Google delar upp klienttips för User-Agent i två kategorier: Tips för låg entropi och hög entropi.
+Google delar upp klienttips för användaragenter i två kategorier: tips för låg entropi och hög entropi.
 
 * **Tips för låg entropi** innehåller mer allmän information om enheter. Dessa tips tillhandahålls automatiskt av Chromium-webbläsare.
 
@@ -94,7 +95,7 @@ Dessa fält härleds direkt från användaragenten, men användaragenten kan anv
 * [Typ av webbläsare](https://experienceleague.adobe.com/docs/analytics/components/dimensions/browser-type.html)
 * [Operativsystem](https://experienceleague.adobe.com/docs/analytics/components/dimensions/operating-systems.html)
 * [Operativsystemstyper](https://experienceleague.adobe.com/docs/analytics/components/dimensions/operating-system-types.html)
-* [Mobil enhet och mobilenhetstyp](https://experienceleague.adobe.com/docs/analytics/components/dimensions/mobile-dimensions.html)
+* [Mobil enhet och typ av mobil enhet](https://experienceleague.adobe.com/docs/analytics/components/dimensions/mobile-dimensions.html)
 
 +++
 
@@ -114,7 +115,7 @@ Enhetsinformation i rapporter hämtas från användaragenten. Vi har uppdaterat 
 
 +++**Vilka analysrapporteringsfält härleds från värden som lagras i höga entropitups?**
 
-Detta ändras med tiden eftersom Google fryser fler delar av användaragenten. Det första fältet som ska påverkas direkt är&quot;operativsystem&quot;, som innehåller operativsystemversionen Enligt Google publicerade tidslinje för&quot;frysning&quot; av användaragenttips, kommer operativsystemsversionen att frysas från slutet av oktober 2022 med Chromium version 107. Då blir operativsystemversionen i användaragenten i vissa fall felaktig.
+Detta ändras med tiden eftersom Google fryser fler delar av användaragenten. Det första fältet som ska påverkas direkt är&quot;operativsystem&quot;, som innehåller operativsystemversionen Enligt Google publicerade tidslinje för&quot;frysning&quot; av användaragenttips, kommer operativsystemsversionen att frysas från slutet av oktober 2022 med Chromium version 107. Då kommer operativsystemversionen i användaragenten att vara felaktig i vissa fall.
 
 Se [tidslinje som publicerats av Google](https://blog.chromium.org/2021/09/user-agent-reduction-origin-trial-and-dates.html) om du vill se tidpunkten för frysning av andra delar av användaragenten.
 
