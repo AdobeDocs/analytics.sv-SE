@@ -3,9 +3,9 @@ description: Frågor och svar om Advertising Analytics.
 title: Frågor och svar om reklamanalyser
 feature: Advertising Analytics
 exl-id: 664a5641-1c79-439f-a9fb-2ff134574412
-source-git-commit: 591b82e271cc7474e9b413015804d4fe37d9050c
+source-git-commit: c947de8eaa4e4dc3a0c10989ef6ae450cebc1f3e
 workflow-type: tm+mt
-source-wordcount: '1307'
+source-wordcount: '1297'
 ht-degree: 0%
 
 ---
@@ -161,29 +161,18 @@ Nej, för närvarande har vi inga planer på dessa andra kanaler på färdplanen
 
 ## Automatisk kontra manuell spårning {#section_7437C4698A6D482EB7ED94A948390119}
 
-<table id="table_9738FF8459574ED2937A860A665BE739"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Fråga </th> 
-   <th colname="col2" class="entry"> Svar </th> 
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <p>F: När mitt Advertising-konto konfigureras anges följande:<b> Automatisk spårning</b> kan leda till oavsiktliga konsekvenser. Vilka typer av följder kan inträffa? </p> </td> 
-   <td colname="col2"> <p>S: 
-     <ul id="ul_59EFF4A2ECE947EBBDB6A9FF6D072FE0"> 
-      <li id="li_8731E4B7D6ED4F0996B3630A35D5BAC4">I det automatiska läget görs ett försök att lägga till URL-parametrar i slutet av spårningsmallarna/mål-URL:erna i rätt format. <b>Det är dock ditt ansvar att se till att de URL-parametrar som läggs till behålls korrekt på den slutliga landningssidan. </b> </li> 
-      <li id="li_1202FE1FC88342378A60E8FE65E5426B">I det automatiska läget kan nyckelord infogas i landnings-URL:en, och webbservern kanske inte stöder nyckelord med specialtecken. </li> 
-     </ul> </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>F: Om jag först ställer in manuell eller automatisk spårning, <b>kan jag växla</b> till det andra spårningsläget senare? Vilka följder får det? </p> </td> 
-   <td colname="col2"> <p>S: Ja, du kan växla, men du måste ta bort den gamla spårningslogiken innan du kan byta. Detta kan resultera i en viss driftstopp för spårning på den dag som switchen görs (särskilt om man går från manuell till automatisk). Därför bör du inte byta om det inte är absolut nödvändigt. </p> 
-    <ul id="ul_3F3CADD1C97B4947A13837CEE63A599D"> 
-     <li id="li_CB9265951FD040388AEAB9EAD790A36E"><b>Växla från manuell till automatisk</b>: Ta bort de manuella tilläggen i spårningsmallarna och växla sedan från manuell till automatisk i Advertising Analytics-gränssnittet och spara inställningen. Observera att det kan ta upp till x timmar för systemet att fylla i de automatiska spårningskoderna. </li> 
-     <li id="li_2B6ED1342E2D443B8AF26D03532AB8E4"><b>Växla från Automatiskt till Manuellt</b>: Uppdatera växlingen från manuell till automatisk i Advertising Analytics installationsgränssnitt och distribuera sedan de manuella spårningskoderna så snabbt som möjligt. När du distribuerar de manuella spårningskoderna ska du ta bort dem om du ser de automatiska spårningskoderna i sökmotorns spårningsmallar. </li> 
-    </ul> </td> 
-  </tr> 
- </tbody> 
-</table>
++++ När mitt Advertising-konto konfigureras anges följande:<b> Automatisk spårning</b> kan leda till oavsiktliga konsekvenser. Vilka typer av följder kan inträffa?
+
+I det automatiska läget görs ett försök att lägga till URL-parametrar i slutet av spårningsmallarna/mål-URL:erna i rätt format. <b>Det är dock ditt ansvar att se till att de URL-parametrar som läggs till behålls korrekt på den slutliga landningssidan. I det automatiska läget kan nyckelord infogas i landnings-URL:en, och webbservern kanske inte stöder nyckelord med specialtecken.
+
++++
+
++++ Om jag ställer in manuell eller automatisk spårning från början, kan jag då växla till det andra spårningsläget senare? Vilka följder får det?
+
+Ja, du kan växla spårningsläge, men du måste ta bort den gamla spårningslogiken innan du byter läge. Detta kan resultera i en viss driftstopp för spårning på den dag som switchen görs (särskilt om man går från manuell till automatisk). Därför rekommenderar vi att man inte byter om det inte är absolut nödvändigt.
+
+* Växla från Manuell till Automatisk: Ta bort manuella tillägg till spårningsmallarna och växla sedan från manuell till Automatisk i Advertising Analytics-användargränssnittet och spara inställningen. Observera att det kan ta flera timmar för systemet att fylla i de automatiska spårningskoderna.
+
+* Byta från Automatiskt till Manuellt: Uppdatera växlingen från manuell till automatisk i Advertising Analytics-installationsgränssnittet och distribuera sedan de manuella spårningskoderna så snabbt som möjligt. När du distribuerar de manuella spårningskoderna ska du ta bort dem om du ser de automatiska spårningskoderna i sökmotorns spårningsmallar.
+
++++
