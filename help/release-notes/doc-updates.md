@@ -5,9 +5,9 @@ short-title: Analytics documentation updates
 feature: Release Notes
 exl-id: fe8e3c4c-6782-46f7-8e28-4f8f54807788
 mini-toc-levels: 3
-source-git-commit: df9c6d59ef5f5c43d0e1ef822bd23bc0e09ff20e
+source-git-commit: 206f601b2bce76dd51564d839135fbdcea1186fa
 workflow-type: tm+mt
-source-wordcount: '4978'
+source-wordcount: '5026'
 ht-degree: 22%
 
 ---
@@ -25,6 +25,8 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 
 | Funktion | Beskrivning |
 | --- | --- |
+| **Februari 2024** | |
+| Lagt till behörighetskrav för att överföra filer till Amazon S3- och GCP-kretsar i Data Warehouse- och dataflöden | Exakta behörighetskrav för överföring av filer till Amazon S3 och Google Cloud Platform har lagts till när [konfigurera mål för Data Warehouse](/help/export/data-warehouse/create-request/dw-request-report-destinations.md) och [när mål för datafeeds konfigureras](/help/export/analytics-data-feed/create-feed.md). |
 | **Januari 2024** | |
 | Komponentmigrering gäller för enskilda IMS-organ | Klarade att [komponentmigrering](/help/admin/admin/component-migration/component-migration.md) stöder inte migrering mellan IMS-plattformar. |
 | Klarade att viss information endast är tillgänglig för administratörer | Tillagd information om att kolumnerna &quot;Senast använd&quot; och &quot;Används i&quot; beskrivs i [Beräknat måttansvarig](/help/components/c-calcmetrics/c-workflow/cm-workflow/cm-manager.md) och [Segmenthanterare](/help/components/segmentation/segmentation-workflow/seg-manage.md) är bara tillgängliga för systemadministratörer. |

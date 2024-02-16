@@ -3,10 +3,10 @@ title: Skapa en datafeed
 description: Lär dig hur du skapar en datafeed.
 feature: Data Feeds
 exl-id: 36c8a40e-6137-4836-9d4b-bebf17b932bc
-source-git-commit: d8bfad5d388f906c7c7301a9126813f5c2a5dbaa
+source-git-commit: 206f601b2bce76dd51564d839135fbdcea1186fa
 workflow-type: tm+mt
-source-wordcount: '3159'
-ht-degree: 1%
+source-wordcount: '3211'
+ht-degree: 0%
 
 ---
 
@@ -34,7 +34,7 @@ När du skapar en datafeed kan du ge Adobe:
    En sida visas med tre huvudkategorier: [!UICONTROL **Feedinformation**], [!UICONTROL **Mål**] och [!UICONTROL **Datakolumdefinitioner**].
 1. I [!UICONTROL **Feedinformation**] fyller du i följande fält:
 
-   | Fält |  -funktion |
+   | Fält | Funktion |
    |---------|----------|
    | [!UICONTROL **Namn**] | Dataflödets namn. Måste vara unikt i den valda rapportsviten och får innehålla upp till 255 tecken. |
    | [!UICONTROL **Rapportsvit**] | Rapportsviten som dataflödet baseras på. Om flera dataflöden skapas för samma rapportserie måste de ha olika kolumndefinitioner. Endast källrapportsviter stöder dataflöden. Virtuella rapportsviter stöds inte. |
@@ -89,7 +89,7 @@ När du skapar en datafeed kan du ge Adobe:
 
       1. Välj [!UICONTROL **Lägg till konto**] och ange sedan följande information:
 
-         | Fält |  -funktion |
+         | Fält | Funktion |
          |---------|----------|
          | [!UICONTROL **Kontonamn**] | Ett namn för kontot. Det kan vara vilket namn du vill. |
          | [!UICONTROL **Kontobeskrivning**] | En beskrivning av kontot. |
@@ -98,14 +98,14 @@ När du skapar en datafeed kan du ge Adobe:
 
          {style="table-layout:auto"}
 
-         1. Välj [!UICONTROL **Lägg till plats**] och ange sedan följande information:
+      1. Välj [!UICONTROL **Lägg till plats**] och ange sedan följande information:
 
-         | Fält |  -funktion |
+         | Fält | Funktion |
          |---------|----------|
          | [!UICONTROL **Namn**] | Ett namn för kontot. |
          | [!UICONTROL **Beskrivning**] | En beskrivning av kontot. |
-         | [!UICONTROL **Bucket**] | Den bucket på ditt Amazon S3-konto där du vill att Adobe Analytics-data ska skickas. Se till att användar-ARN som tillhandahålls av Adobe har åtkomst till att överföra filer till den här bucket. |
-         | [!UICONTROL **Prefix**] | Mappen inom hakparentesen där du vill placera data. Ange ett mappnamn och lägg sedan till ett omvänt snedstreck efter namnet för att skapa mappen. Exempel, `folder_name/` |
+         | [!UICONTROL **Bucket**] | Den bucket på ditt Amazon S3-konto där du vill att Adobe Analytics-data ska skickas. <p>Se till att användar-ARN som tillhandahålls av Adobe har `S3:PutObject` behörighet för att överföra filer till denna bucket. Med den här behörigheten kan användaren ARN överföra initiala filer och skriva över filer för efterföljande överföringar.</p> |
+         | [!UICONTROL **Prefix**] | Mappen inom hakparentesen där du vill placera data. Ange ett mappnamn och lägg sedan till ett omvänt snedstreck efter namnet för att skapa mappen. Exempel: `folder_name/` |
 
          {style="table-layout:auto"}
 
@@ -147,7 +147,7 @@ När du skapar en datafeed kan du ge Adobe:
 
       1. Välj [!UICONTROL **Lägg till konto**] och ange sedan följande information:
 
-         | Fält |  -funktion |
+         | Fält | Funktion |
          |---------|----------|
          | [!UICONTROL **Kontonamn**] | Ett namn för Azure RBAC-kontot. Det här namnet visas i dialogrutan [!UICONTROL **Välj konto**] nedrullningsbart fält och kan vara vilket namn du vill. |
          | [!UICONTROL **Kontobeskrivning**] | En beskrivning av Azure RBAC-kontot. Beskrivningen visas i [!UICONTROL **Välj konto**] nedrullningsbart fält och kan vara vilket namn du vill. |
@@ -159,13 +159,13 @@ När du skapar en datafeed kan du ge Adobe:
 
       1. Välj [!UICONTROL **Lägg till plats**] och ange sedan följande information:
 
-         | Fält |  -funktion |
+         | Fält | Funktion |
          |---------|----------|
          | [!UICONTROL **Namn**] | Ett namn för platsen. Det här namnet visas i dialogrutan [!UICONTROL **Välj plats**] nedrullningsbart fält och kan vara vilket namn du vill. |
          | [!UICONTROL **Beskrivning**] | En beskrivning av platsen. Beskrivningen visas i [!UICONTROL **Välj plats**] nedrullningsbart fält och kan vara vilket namn du vill. |
          | [!UICONTROL **Konto**] | Azure-lagringskontot. |
          | [!UICONTROL **Behållare**] | Behållaren i det konto du angav där du vill att Adobe Analytics-data ska skickas. Se till att du ger behörighet att överföra filer till Azure-programmet som du skapade tidigare. |
-         | [!UICONTROL **Prefix**] | Mappen i behållaren där du vill placera data. Ange ett mappnamn och lägg sedan till ett omvänt snedstreck efter namnet för att skapa mappen. Exempel, `folder_name/` |
+         | [!UICONTROL **Prefix**] | Mappen i behållaren där du vill placera data. Ange ett mappnamn och lägg sedan till ett omvänt snedstreck efter namnet för att skapa mappen. Exempel: `folder_name/` |
 
          {style="table-layout:auto"}
 
@@ -207,7 +207,7 @@ När du skapar en datafeed kan du ge Adobe:
 
       1. Välj [!UICONTROL **Lägg till konto**] och ange sedan följande information:
 
-         | Fält |  -funktion |
+         | Fält | Funktion |
          |---------|----------|
          | [!UICONTROL **Kontonamn**] | Ett namn för Azure SAS-kontot. Det här namnet visas i dialogrutan [!UICONTROL **Välj konto**] nedrullningsbart fält och kan vara vilket namn du vill. |
          | [!UICONTROL **Kontobeskrivning**] | En beskrivning av Azure SAS-kontot. Beskrivningen visas i [!UICONTROL **Välj konto**] nedrullningsbart fält och kan vara vilket namn du vill. |
@@ -221,12 +221,12 @@ När du skapar en datafeed kan du ge Adobe:
 
       1. Välj [!UICONTROL **Lägg till plats**] och ange sedan följande information:
 
-         | Fält |  -funktion |
+         | Fält | Funktion |
          |---------|----------|
          | [!UICONTROL **Namn**] | Ett namn för platsen. Det här namnet visas i dialogrutan [!UICONTROL **Välj plats**] nedrullningsbart fält och kan vara vilket namn du vill. |
          | [!UICONTROL **Beskrivning**] | En beskrivning av platsen. Beskrivningen visas i [!UICONTROL **Välj plats**] nedrullningsbart fält och kan vara vilket namn du vill. |
          | [!UICONTROL **Behållare**] | Behållaren i det konto du angav där du vill att Adobe Analytics-data ska skickas. |
-         | [!UICONTROL **Prefix**] | Mappen i behållaren där du vill placera data. Ange ett mappnamn och lägg sedan till ett omvänt snedstreck efter namnet för att skapa mappen. Exempel, `folder_name/` |
+         | [!UICONTROL **Prefix**] | Mappen i behållaren där du vill placera data. Ange ett mappnamn och lägg sedan till ett omvänt snedstreck efter namnet för att skapa mappen. Exempel: `folder_name/` |
 
          {style="table-layout:auto"}
 
@@ -266,7 +266,7 @@ När du skapar en datafeed kan du ge Adobe:
 
       1. Välj [!UICONTROL **Lägg till konto**] och ange sedan följande information:
 
-         | Fält |  -funktion |
+         | Fält | Funktion |
          |---------|----------|
          | [!UICONTROL **Kontonamn**] | Ett namn för kontot. Det kan vara vilket namn du vill. |
          | [!UICONTROL **Kontobeskrivning**] | En beskrivning av kontot. |
@@ -274,15 +274,15 @@ När du skapar en datafeed kan du ge Adobe:
 
          {style="table-layout:auto"}
 
-         1. Välj [!UICONTROL **Lägg till plats**] och ange sedan följande information:
+      1. Välj [!UICONTROL **Lägg till plats**] och ange sedan följande information:
 
-         | Fält |  -funktion |
+         | Fält | Funktion |
          |---------|----------|
          | [!UICONTROL **kapitalbelopp**] | Huvudmannen tillhandahålls av Adobe. Du måste ge den här huvudmannen behörighet att ta emot feeds. |
          | [!UICONTROL **Namn**] | Ett namn för kontot. |
          | [!UICONTROL **Beskrivning**] | En beskrivning av kontot. |
-         | [!UICONTROL **Bucket**] | Den bucket på ditt GCP-konto där du vill att Adobe Analytics-data ska skickas. Se till att du har gett Adobe tillåtelse att överföra filer till denna bucket till säkerhetsobjektet. |
-         | [!UICONTROL **Prefix**] | Mappen inom hakparentesen där du vill placera data. Ange ett mappnamn och lägg sedan till ett omvänt snedstreck efter namnet för att skapa mappen. Exempel, `folder_name/` |
+         | [!UICONTROL **Bucket**] | Den bucket på ditt GCP-konto där du vill att Adobe Analytics-data ska skickas. <p>Se till att du har beviljat någon av följande behörigheter till säkerhetsobjektet som tillhandahålls av Adobe:<ul><li>`roles/storage.objectCreator`: Använd den här behörigheten om du vill begränsa säkerhetsobjektet till att endast skapa filer i ditt GCP-konto. </br>**Viktigt:** Om du använder den här behörigheten för schemalagd rapportering måste du använda ett unikt filnamn för varje ny schemalagd export. Annars misslyckas rapportgenereringen eftersom huvudkontot inte har åtkomst att skriva över befintliga filer.</li><li>(Rekommenderas) `roles/storage.objectUser`: Använd den här behörigheten om du vill att säkerhetsobjektet ska ha tillgång till visa, lista, uppdatera och ta bort filer i ditt GCP-konto.</br>Med den här behörigheten kan huvudmannen skriva över befintliga filer för efterföljande överföringar, utan att behöva generera unika filnamn automatiskt för varje ny schemalagd export.</li></ul><p>Mer information om att bevilja behörigheter finns i [Lägga till ett huvudnamn i en princip på paketnivå](https://cloud.google.com/storage/docs/access-control/using-iam-permissions#bucket-add) i Google Cloud-dokumentationen.</p> |
+         | [!UICONTROL **Prefix**] | Mappen inom hakparentesen där du vill placera data. Ange ett mappnamn och lägg sedan till ett omvänt snedstreck efter namnet för att skapa mappen. Exempel: `folder_name/` |
 
          {style="table-layout:auto"}
 
@@ -294,7 +294,7 @@ När du skapar en datafeed kan du ge Adobe:
 
 1. I  [!UICONTROL **Datakolumndefinitioner**] väljer du den senaste [!UICONTROL **Alla Adobe Columns**] i listrutan och fyll sedan i följande fält:
 
-   | Fält |  -funktion |
+   | Fält | Funktion |
    |---------|----------|
    | [!UICONTROL **Ta bort escape-tecken**] | När du samlar in data kan vissa tecken (till exempel nya rader) orsaka problem. Markera den här rutan om du vill att dessa tecken ska tas bort från feed-filerna. |
    | [!UICONTROL **Komprimeringsformat**] | Den typ av komprimering som används. **Gzip** skickar filer i `.tar.gz` format. **Postnummer** skickar filer i `.zip` format. |
@@ -326,7 +326,7 @@ Data från dataflöden kan levereras till en FTP-plats som är värd för Adobe 
 
 Använd följande information när du fyller i de tillgängliga fälten:
 
-* [!UICONTROL **Värd**]: Ange önskad mål-URL för FTP. Exempel, `ftp://ftp.omniture.com`.
+* [!UICONTROL **Värd**]: Ange önskad mål-URL för FTP. Till exempel: `ftp://ftp.omniture.com`.
 * [!UICONTROL **Bana**]: Kan lämnas tomt
 * [!UICONTROL **Användarnamn**]: Ange användarnamn för att logga in på FTP-platsen.
 * [!UICONTROL **Lösenord och bekräfta lösenord**]: Ange lösenordet för att logga in på FTP-platsen.
