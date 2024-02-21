@@ -5,9 +5,9 @@ title: Dela projekt
 feature: Curate and Share
 role: User, Admin
 exl-id: da106eb1-7f5c-469a-a8aa-8497fc3706dc
-source-git-commit: c779035b4f1bfbde6da90b2bc6aa2864bb6353f0
+source-git-commit: 5a670a6ef16a6dcfae12c9eb9801c51f4f1ea54c
 workflow-type: tm+mt
-source-wordcount: '1730'
+source-wordcount: '1844'
 ht-degree: 0%
 
 ---
@@ -55,36 +55,48 @@ När du delar en specifik projektroll med användare och grupper i organisatione
 
 * En användare som placeras i flera roller får alltid den högsta upplevelsen. Detta kan inträffa om en användare läggs till både som en individ och som en del av en grupp. Om en användare till exempel får **[!UICONTROL Edit original]** som individ och **[!UICONTROL Read only]** som medlem i en grupp får de **[!UICONTROL Edit original]** projekterfarenhet.
 
-* Administratörer i **[!UICONTROL Edit copy]** eller **[!UICONTROL Read only]** får de begränsade upplevelserna när de öppnar ett projekt. En administratör kan ändra sin roll till **[!UICONTROL Edit original]** genom att dela projektet med sig själva och bevilja redigeringsrollen enligt beskrivningen i följande procedur.
+* Administratörer i **[!UICONTROL Edit copy]** eller **[!UICONTROL Read only]** får de begränsade upplevelserna när de öppnar ett projekt. En administratör kan ändra sin roll till **[!UICONTROL Edit original]** genom att dela projektet med sig själva och bevilja **Redigera** roll, enligt beskrivningen i följande procedur.
+
+* Om du väljer att dela flera projekt läggs mottagarna till i den befintliga listan med mottagare för varje projekt.
+
+  Projekt A delas till exempel redan med mottagare 1, 2 och 3, medan projekt B redan delas med mottagare 4, 5 och 6.
+
+  Projekten A och B delas sedan med mottagarna 4 och 7. Den nya resurslistan för projekt A är nu 1, 2, 3, 4 och 7, medan den nya resurslistan för projekt B är 4, 5, 6 och 7.
 
 Så här delar du en specifik projektroll med användare eller grupper i organisationen:
 
-1. Gå till projektet som du vill dela och klicka sedan på **[!UICONTROL Share]** > **[!UICONTROL Share with Workspace users]**.
+1. I Adobe Analytics väljer du [!UICONTROL **Arbetsyta**] tabbtangenten och sedan välja [!UICONTROL **Projekt**] till vänster.
+
+1. Markera kryssrutan bredvid ett eller flera projekt som du vill dela och markera sedan [!UICONTROL **Dela**].
+
+   eller
+
+   Om du bara vill dela ett enskilt projekt kan du öppna det projekt som du vill dela och sedan välja **[!UICONTROL Share]** > **[!UICONTROL Share with Workspace users]**.
 Om det finns ändringar som inte har sparats uppmanas du att spara projektet först.
 
-   ![](assets/share-proj-modal.png)
+   Dialogrutan Dela projekt visas. The [!UICONTROL **Dela via länk**] och [!UICONTROL **Inställningar**] -avsnitt i dialogrutan visas bara när du delar ett projekt.
 
-   Mer information om hur du delar flera projekt samtidigt finns i [Dela projekt i projektledaren](#share-projects-in-the-project-manager).
+   ![](assets/share-proj-modal.png)
 
 1. Lägg till mottagare eller grupper av mottagare i något av de tillhandahållna rollfälten:
 
    **Redigera original:** Mottagarna kan **[!UICONTROL Save]** ändringar i ett projekt och fungerar som medägare. Den här rollen är användbar om du vill samhantera ett projekt med andra kollegor. Detta inkluderar redigering, borttagning och ändring av mottagarlistor för ett delat projekt. <br>Obs! Analysis Workspace stöder för närvarande inte live-samarbete, så vi rekommenderar att endast en användare redigerar ett projekt åt gången. Om projekt sparas samtidigt behålls den senaste versionen.
 
-   **Redigera kopia:** Mottagarna kan **[!UICONTROL Save as]** och ha tillgång till den vänstra listen. Projektinteraktioner är inte begränsade i den här rollen. Den här rollen är användbar om du vill dela ett projekt med användare som förstår organisationens data och hur du använder Analysis Workspace, men inte vill att ditt projekt ska ändras.
+   **Redigera kopia:** Mottagarna kan **[!UICONTROL Save as]** och ha tillgång till den vänstra listen. Projektinteraktioner är inte begränsade i den här rollen. Den här rollen är användbar om du vill dela ett projekt med användare som förstår organisationens data och hur du använder Analysis Workspace, men du inte vill att ditt projekt ska ändras.
 
    **Skrivskyddad:** Mottagarna kan inte **[!UICONTROL Save]** eller **[!UICONTROL Save as]** och inte har tillgång till den vänstra listen. Projektinteraktionen är också begränsad. Den här rollen är användbar om du vill dela ett projekt med användare som inte är lika bekanta med organisationens datastruktur, Analysis Workspace eller Adobe Analytics i allmänhet. Men ni vill ändå att de ska konsumera data och insikter i en säker miljö. Läs mer om [Skrivskyddad projekterfarenhet](/help/analyze/analysis-workspace/curate-share/view-only-projects.md).
 
-1. Välj om du vill aktivera följande alternativ när du delar projektet:
+1. (Villkorligt) Om du delar ett projekt ska du välja om du vill aktivera följande alternativ när du delar projektet:
 
    * **Dela inbäddade projektkomponenter:** Delar segment, beräknade värden och datumintervall med alla mottagare. När komponenterna har delats visas de i listrutan Komponenter på mottagarens arbetsyta. Den här inställningen kvarstår inte - det är en engångsåtgärd vid tidpunkten för delningen.
 
    * **Ange som landningssida för mottagare:** Anger den här sidan som landningssida för mottagare. Den här inställningen kvarstår inte - det är en engångsåtgärd vid tidpunkten för delningen.
 
-1. Klicka på **[!UICONTROL Share]**. (Om projektet redan har delats klickar du på [!UICONTROL **Uppdatera**].)
+1. Välj **[!UICONTROL Share]**. (Om projektet redan har delats väljer du [!UICONTROL **Uppdatera**].)
 
    eller
 
-   Klicka **[!UICONTROL Curate and Share]** för att automatiskt lägga in projekturval. (Om projektet redan har delats klickar du på **[!UICONTROL Curate & Update]**.) Läs mer om [projekturval](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/curate.html).
+   Välj **[!UICONTROL Curate and Share]** för att automatiskt lägga in projekturval. (Om projektet redan har delats väljer du **[!UICONTROL Curate & Update]**.) Läs mer om [projekturval](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/curate.html).
 
 ## Dela en länk till ett projekt
 
@@ -134,7 +146,7 @@ Så här delar du ett Analysis Workspace-projekt med personer som inte har tillg
 
 1. Öppna det Analysis Workspace-projekt som du vill dela.
 
-1. Klicka på **[!UICONTROL Share]** > **[!UICONTROL Share with anyone]**.
+1. Klicka **[!UICONTROL Share]** > **[!UICONTROL Share with anyone]**.
 
    Om det finns ändringar som inte har sparats uppmanas du att spara projektet.
 
@@ -168,21 +180,11 @@ Så här delar du ett Analysis Workspace-projekt med personer som inte har tillg
 
 1. Välj **[!UICONTROL Close]** för att stänga delningsdialogrutan. Ändringarna sparas automatiskt.
 
-## Dela projekt i projektledaren {#Manager}
+## Visa projekt som delas med dig
 
-Du kan även dela projekt från **[!UICONTROL Components]>[!UICONTROL Projects]**. Ett enskilt projekt kan delas enligt samma steg ovan.  Om du väljer att dela flera projekt läggs mottagarna till i den befintliga listan med mottagare för varje projekt.
+När någon delar ett projekt med dig av [dela en specifik projektroll](#share-a-specific-project-role)kan du komma åt de delade projekten från [Fliken Projekt på landningssidan för Analytics](/help/analyze/landing.md#navigate-the-projects-tab).
 
-Exempel:
-
-* Projekt A delas med mottagare 1, 2, 3
-* Projekt B delas med mottagare 4, 5, 6
-
-När du har valt Projekt A och B läggs mottagarna 4 och 7 till i resurslistorna. Den nya resurslistan för varje projekt är nu:
-
-* Projekt A: 1, 2, 3, 4, 7
-* Projekt B: 4, 5, 6, 7
-
-![](assets/mult-proj-sharing.png)
+När någon delar ett projekt med dig genom att dela en länk (antingen från [Dela projektflik](#share-a-link-to-a-project) eller använda en [dela med vem som helst](#share-a-project-with-anyone-no-login-required) länk) måste du använda länken som delades med dig för att komma åt projektet. Länken kan till exempel ha delats i ett e-postmeddelande, på en intern webbplats och så vidare.
 
 ## Dela inbäddade komponenter
 
