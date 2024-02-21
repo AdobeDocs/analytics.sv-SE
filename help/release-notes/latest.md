@@ -3,16 +3,16 @@ title: Aktuella versionsinformation för Adobe Analytics
 description: Visa den aktuella versionsinformationen för Adobe Analytics
 feature: Release Notes
 exl-id: 97d16d5c-a8b3-48f3-8acb-96033cc691dc
-source-git-commit: e9abbc03cf01abecab4ea0627624b5272b503d5c
+source-git-commit: bb2b0f715941135d119d862b64c02f05800b3fdd
 workflow-type: tm+mt
-source-wordcount: '722'
+source-wordcount: '745'
 ht-degree: 1%
 
 ---
 
 # Aktuell versionsinformation för Adobe Analytics (februari 2024)
 
-**Senaste uppdatering**: 16 februari 2024
+**Senaste uppdatering**: 21 februari 2024
 
 Versionsanteckningarna gäller frisläppningsperioden 14 februari 2024 till 11 mars 2024. Adobe Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.md) vilket ger en mer skalbar, stegvis metod för driftsättning av funktioner. Därför uppdateras versionsinformationen flera gånger i månaden. Kontrollera dem regelbundet.
 
@@ -20,6 +20,7 @@ Versionsanteckningarna gäller frisläppningsperioden 14 februari 2024 till 11 m
 
 | Funktion | Beskrivning | [Startar](releases.md) | [Allmän tillgänglighet](releases.md) |
 | ----------- | ---------- | ------- | ---- |
+| **Datas Warehouse-API-dokumentation** | Läs mer i [Adobe Analytics Data Warehouse API 2.0](https://adobedocs.github.io/analytics-2.0-apis/?urls.primaryName=Data%20Warehouse%20APIs#/Data%20Warehouse%20Scheduled%20Requests%20API) för mer information. Gå till [!UICONTROL Select a definition] och markera [!UICONTROL Data Warehouse APIs]. | | 19 februari 2024 |
 | **Activity Map för Web SDK utan extra kostnad** | För närvarande räknas länkarhändelser i Activity Map som sina egna händelser och medför extra kostnader. Den här förbättringen tar några länkhändelser och paketerar dem i nästa träff, ungefär som hur händelser hanteras av AppMeasurementet. |  | 6 mars 2024 |
 | **Ökning av standardtröskelvärden för låg trafik** | I **mitten av april 2024** kommer Adobe att börja öka standardrapporteringsprogrammets lågtrafiktrösklar enligt följande: ![lågtrafiktrösklar](assets/thresholds.png) Detta påverkar endast variabler som för närvarande ligger under de nya tröskelvärdena. Dessa ändringar kommer att göras stegvis, och vi förväntar oss att arbetet ska vara slutfört av **slutet av maj**. När dessa ökningar introduceras kan du märka förändringar för variabler med hög kardinalitet:<ul><li>Fler dimensionsvärden kan vara tillgängliga för rapportering.</li><li>Segment och beräknade värden kan innehålla mer data.</li><li>Virtuella rapportsviter baserade på segment kan innehålla mer data.</li><li>Export av klassificeringar kan innehålla mer data.</li></ul> | Mid April, 2024 | I slutet av maj 2024 |
 

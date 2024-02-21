@@ -4,9 +4,9 @@ description: Lär dig hur du skapar en implementerad länk för avanmälan för 
 feature: Implementation Basics
 exl-id: 08b8c7cc-28c6-45e3-ab44-77471eea8ef1
 role: Developer
-source-git-commit: e196e94e891ca7a6b4b1f50482cb342f2339ea8f
+source-git-commit: bb2b0f715941135d119d862b64c02f05800b3fdd
 workflow-type: tm+mt
-source-wordcount: '580'
+source-wordcount: '579'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
-> Den här artikeln innehåller **Adobe Analytics-kunder som (planerar att) implementerar Adobe Analytics** på deras webbplats med instruktioner om hur man ger användare av webbplatserna möjlighet att välja bort länkar. <p><p>
+> Den här artikeln innehåller **Adobe Analytics-kunder som (planerar att) implementerar Adobe Analytics** på sin webbplats med instruktioner om hur man ger webbplatsanvändare möjlighet att välja bort länkar. <p><p>
 > Om du **besöka en webbplats som har implementerat Adobe Analytics** och du vill avanmäla dig, **<span style="color:red">den här artikeln är INTE till dig</span>**. Se [Sekretessalternativ för Adobe](https://www.adobe.com/privacy/opt-out.html) för att styra hur Adobe använder informationen.
 
 Vissa besökare på din webbplats föredrar att inte ha sin surfinformation med i din datauppsättning. Adobe erbjuder möjlighet att ge besökare på er webbplats möjlighet att avanmäla sig från den information de analyserar.
