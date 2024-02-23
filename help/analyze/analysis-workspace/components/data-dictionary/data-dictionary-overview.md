@@ -4,9 +4,9 @@ title: Översikt över dataordlistan
 feature: Components
 role: User, Admin
 exl-id: ecc62287-dc20-41b3-9430-f14ea9fc05e6
-source-git-commit: 8b10464e8950a9afd647f6d8e08dd75ebdecb46e
+source-git-commit: 48e75fc4e9cc60bfd6865f7e80060c07ecf25ad8
 workflow-type: tm+mt
-source-wordcount: '532'
+source-wordcount: '526'
 ht-degree: 0%
 
 ---
@@ -49,9 +49,9 @@ Här följer några exempel på hur Analytics-administratörer kan använda Data
 
 * Uppdatera komponentbeskrivningar direkt i Analysis Workspace. Alla uppdateringar som görs av komponentbeskrivningarna i Data Dictionary återspeglas i Report Suite.
 
-   På samma sätt återspeglas alla uppdateringar av komponentbeskrivningarna i Report Suite i Analysis Workspace.
+  På samma sätt återspeglas alla uppdateringar av komponentbeskrivningarna i Report Suite i Analysis Workspace.
 
-   Mer information om hur du lägger till komponentbeskrivningar i antingen Analysis Workspace eller i en Report Suite finns i [Lägga till komponentbeskrivningar](/help/analyze/analysis-workspace/components/add-component-descriptions.md).
+  Mer information om hur du lägger till komponentbeskrivningar i antingen Analysis Workspace eller i en Report Suite finns i [Lägga till komponentbeskrivningar](/help/analyze/analysis-workspace/components/add-component-descriptions.md).
 
 ## Åtkomst till dataordlistan
 
@@ -59,14 +59,12 @@ Du kan komma åt datamodlistan på något av följande sätt i Analysis Workspac
 
 * Från **Dataordlista** ikonen i den vänstra listen.
 
-   ![Ikon för datamordlista i den vänstra listen](assets/data-dictionary-access-icon.png)
+  ![Ikon för datamordlista i den vänstra listen](assets/data-dictionary-access-icon.png)
 
 * Från **Dataordlista** -ikonen i infoportören för en komponent.
 
-   ![Ikon för datamordlista i infopobjekt](assets/data-dictionary-access-infopopover.png)
-   <!--update screenshot; this was taken from a mock-->
-
-* Från menyn: [!UICONTROL **Hjälp**] > [!UICONTROL **Dataordlista**].
+  ![Ikon för datamordlista i infopobjekt](assets/data-dictionary-access-infopopover.png)
+  <!--update screenshot; this was taken from a mock-->
 
 Mer information om de olika alternativen som finns i ordlistan finns i [Visa komponentinformation i Data Dictionary](/help/analyze/analysis-workspace/components/data-dictionary/view-data-dictionary.md).
 
@@ -84,12 +82,12 @@ Du kan ändra fönstret för datamordlistan på något av följande sätt:
 
 * Dra det till valfri plats i Analysis Workspace
 
-   Om du stänger och öppnar Analysis Workspace igen finns fönstret Datamordlista kvar på den plats där du senast flyttade det. <!--True?-->
+  Om du stänger och öppnar Analysis Workspace igen finns fönstret Datamordlista kvar på den plats där du senast flyttade det. <!--True?-->
 
 * Minimera
 
-   När värdet är minimerat visas datamordlistan som en blå flik i det nedre högra hörnet av Analysis Workspace.
+  När värdet är minimerat visas datamordlistan som en blå flik i det nedre högra hörnet av Analysis Workspace.
 
-   När du väljer den blå fliken öppnas Data Dictionary för den komponent som du senast visade.
+  När du väljer den blå fliken öppnas Data Dictionary för den komponent som du senast visade.
 
-* Stäng
+* Stäng den
