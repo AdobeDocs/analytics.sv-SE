@@ -4,7 +4,7 @@ description: Lär dig hur du använder Adobe Experience Platform-taggar för att
 feature: Tags
 exl-id: 2f5bcfee-d75e-4dac-bea9-91c6cc545173
 role: Admin, Developer
-source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
+source-git-commit: e35210582e94037cf286b98e7e0a6b06040a8c6f
 workflow-type: tm+mt
 source-wordcount: '599'
 ht-degree: 0%
@@ -23,7 +23,7 @@ När taggbiblioteket är i produktion kan ni börja använda Adobe Analytics fö
 
 Felsökaren Experience Cloud är ett tillägg som visar alla Experience Cloud-taggar som finns på en sida.
 
-1. Installera tillägget för antingen [Krom](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) eller Firefox.
+1. Installera tillägget för antingen [Krom](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) eller Firefox.
 2. Navigera till den utvecklingswebbplats där du har implementerat taggar.
 3. Klicka på Adobe Experience Cloud felsökningsikon i webbläsaren.
 4. Om allt är korrekt implementerat bör du se innehåll i Adobe Analytics, taggar och tjänsten Adobe Experience Cloud Visitor ID.

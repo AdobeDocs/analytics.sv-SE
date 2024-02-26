@@ -5,7 +5,7 @@ keywords: paketsniffer, http-status, 200, 302, charles
 feature: Validation
 exl-id: db077293-f72c-4933-8a30-f1e1963f332e
 role: Admin, Developer, Leader
-source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
+source-git-commit: e35210582e94037cf286b98e7e0a6b06040a8c6f
 workflow-type: tm+mt
 source-wordcount: '632'
 ht-degree: 0%
@@ -35,7 +35,7 @@ I mycket sällsynta fall rapporterar felsökaren en bildbegäran, men ingen beg�
 |---|---|---|---|
 | [Observera punkt](https://www.observepoint.com/product#plugin) (taggläsare) | [HttpWatch](https://www.httpwatch.com/) | [Observera punkt](https://www.observepoint.com/product#plugin) (taggläsare) | [Charles](https://www.charlesproxy.com/) |
 | [HttpFox](https://addons.thunderbird.net/en-us/firefox/addon/httpfox/) |  | [Verktyg för Chrome Developer](https://code.google.com/chrome/devtools/docs/overview.html) | [Fiddler](https://www.fiddler2.com/fiddler2/) |
-| [Manipuleringsdata](https://addons.mozilla.org/en-US/firefox/addon/tamper-data-for-ff-quantum/) |  | [Firebug Lite](https://chrome.google.com/webstore/detail/firebug-lite-for-google-c/ehemiojjcpldeipjhjkepfdaohajpbdo) | [Wireshark](https://www.wireshark.org/) |
+| [Manipuleringsdata](https://addons.mozilla.org/en-US/firefox/addon/tamper-data-for-ff-quantum/) |  | [Firebug Lite](https://chromewebstore.google.com/detail/firebug-lite-for-google-c/ehemiojjcpldeipjhjkepfdaohajpbdo) | [Wireshark](https://www.wireshark.org/) |
 | [HttpWatch](https://www.httpwatch.com/) |  |  |  |
 | [Firebug](https://getfirebug.com/) |  |  |  |
 

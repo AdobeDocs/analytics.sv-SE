@@ -5,10 +5,10 @@ feature: Activity Map
 role: Admin
 exl-id: 0b2b9f3d-0c75-4eb8-9235-c9c98eb035d3
 mini-toc-levels: 3
-source-git-commit: ae1c2ff1987e2fe5d147bfe74874b53492d48b5e
+source-git-commit: e35210582e94037cf286b98e7e0a6b06040a8c6f
 workflow-type: tm+mt
-source-wordcount: '590'
-ht-degree: 2%
+source-wordcount: '559'
+ht-degree: 1%
 
 ---
 
@@ -40,7 +40,7 @@ Interagera samtal med fliken Developer Console Network:
 
 Adobe Experience Platform Debugger:
 
-1. Hämta och installera [Adobe Experience Platform debugger](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob).
+1. Hämta och installera [Adobe Experience Platform debugger](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob).
 1. Gå till [!UICONTROL Logs] > [!UICONTROL Edge] > [!UICONTROL Connect to Edge].
 
    ![](assets/validation2.jpg)
