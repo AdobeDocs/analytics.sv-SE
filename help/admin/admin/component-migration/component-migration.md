@@ -3,9 +3,9 @@ description: Beskriver hur du migrerar komponenter och projekt från Adobe Analy
 title: Migrera komponenter och projekt från Adobe Analytics till Customer Journey Analytics
 feature: Admin Tools
 exl-id: 49c7e47a-464b-4465-9b30-d77f886ca6dc
-source-git-commit: df9c6d59ef5f5c43d0e1ef822bd23bc0e09ff20e
+source-git-commit: 86e4856ec44ee0c6b676e2f145f4e63587368d4c
 workflow-type: tm+mt
-source-wordcount: '1389'
+source-wordcount: '1390'
 ht-degree: 0%
 
 ---
@@ -124,7 +124,7 @@ Läs mer om hur du migrerar projekt i [Förbereda för att migrera komponenter o
 
 Om en migrering misslyckas kan du försöka migrera igen.
 
-Innan du försöker utföra en misslyckad migrering måste du ta bort alla [element som inte stöds](#understand-unsupported-elements-that-cause-errors) från projektet.
+Innan du försöker utföra en misslyckad migrering måste du ta bort alla [element som inte stöds](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html?lang=en#understand-unsupported-elements-that-cause-errors) från projektet.
 
 >[!NOTE]
 >
