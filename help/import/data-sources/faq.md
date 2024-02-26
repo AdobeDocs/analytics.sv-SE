@@ -4,9 +4,9 @@ description: Vanliga frågor och svar om datakällor.
 exl-id: a948dfe9-289f-43e2-a9e7-7990cf609f5c
 feature: Data Sources
 role: Admin
-source-git-commit: 27bcbd638848650c842ad8d8aaa7ab59e27e900e
+source-git-commit: f7d07525c97f4aa145dc46198f883a37cde80158
 workflow-type: tm+mt
-source-wordcount: '409'
+source-wordcount: '400'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Data som överförs via datakällor påverkar inte [Sidvyer](/help/components/me
 
 +++Kan jag ta bort data som har importerats från datakällor?
 
-**Nej.** Data som överförs till rapporter med datakällor är **permanent**. Den kan inte tas bort, inte ens av Adobe, när den har importerats. Adobe rekommenderar starkt att du överför data från datakällor till en testrapportssvit innan du överför den till en produktionsrapportsvit.
+Ja. Du kan ta bort dessa data med [API för datareparation](https://developer.adobe.com/analytics-apis/docs/2.0/guides/endpoints/data-repair/). Dessutom rekommenderar Adobe starkt att du överför data från datakällor till en testrapportssvit innan du överför den till en produktionsrapportsvit.
 +++
 
 +++Hur mycket data kan jag importera samtidigt?
