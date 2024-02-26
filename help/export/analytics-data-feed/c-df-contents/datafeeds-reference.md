@@ -5,9 +5,9 @@ subtopic: data feeds
 title: Referens för datakolumn
 feature: Data Feeds
 exl-id: e1492147-6e7f-4921-b509-898e7efda596
-source-git-commit: 93099d36a65ca2bf16fbd6342f01bfecdc8c798e
+source-git-commit: dfec68a0ecdf691ab1005919fa3df01158a9cec9
 workflow-type: tm+mt
-source-wordcount: '3897'
+source-wordcount: '3899'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ Tidigare uppdateringar av tabellen finns på den här sidans [implementeringshis
 | **`clickmaplinkbyregion`** | Activity Map länk per region | varchar(255) |
 | **`clickmappage`** | Activity Map page | varchar(255) |
 | **`clickmapregion`** | Activity Map | varchar(255) |
-| **`code_ver`** | AppMeasurementen biblioteksversion som används för att kompilera och skicka bildbegäran. | char(16) |
+| **`code_ver`** | API- eller klient-SDK-version som används för att kompilera och skicka bildbegäran. | char(16) |
 | **`color`** | ID för färgdjup baserat på värdet för `c_color` kolumn. Refererar till `color_depth.tsv` uppslagstabell. | smallint unsigned |
 | **`connection_type`** | Numeriskt ID som representerar anslutningstypen. Variabel som används i [Anslutningstyp](/help/components/dimensions/connection-type.md) dimension. Refererar till `connection_type.tsv` uppslagstabell. | tinyint unsigned |
 | **`cookies`** | Variabel som används i [Cookie-stöd](/help/components/dimensions/cookie-support.md) dimension.<br>Y: Aktiverad<br>N: Inaktiverad<br>U: Okänd | char(1) |
@@ -67,7 +67,7 @@ Tidigare uppdateringar av tabellen finns på den här sidans [implementeringshis
 | **`cust_visid`** | Om ett anpassat besökar-ID anges fylls det i i den här kolumnen. | varchar(255) |
 | **`daily_visitor`** | Flagga som avgör om träffen är en ny daglig besökare. | tinyint unsigned |
 | **`dataprivacyconsentoptin`** | Variabel som används i [Medgivandehanteringsanmälan](/help/components/dimensions/cm-opt-in.md) dimension. Flera värden kan förekomma per träff, avgränsade med ett rör (`\|`). Giltiga värden är `DMP` och `SELL`. | varchar(100) |
-| **`dataprivacyconsentoptout`** | Variabel som används i [Avanmäl dig till hantering av samtycke](/help/components/dimensions/cm-opt-out.md) dimension. Flera värden kan finnas per träff, avgränsade med ett lodstreck (`\|`). Giltiga värden är `SSF`, , `DMP`och `SELL`. | varchar(100) |
+| **`dataprivacyconsentoptout`** | Variabel som används i [Avanmäl dig till hantering av samtycke](/help/components/dimensions/cm-opt-out.md) dimension. Flera värden kan finnas per träff, avgränsade med ett lodstreck (`\|`). Giltiga värden är `SSF`, `DMP`, och `SELL`. | varchar(100) |
 | **`date_time`** | Tidpunkten för träffen i läsbart format, baserat på rapportsvitens tidszon. | datetime |
 | **`domain`** | Variabel som används i [Domän](/help/components/dimensions/domain.md) dimension. Baserat på besökarens internetanslutning. | varchar(100) |
 | **`duplicate_events`** | Listar varje händelse som räknats som en dubblett. | varchar(255) |
