@@ -3,9 +3,9 @@ description: Frågor och svar om Advertising Analytics.
 title: Frågor och svar om reklamanalyser
 feature: Advertising Analytics
 exl-id: 664a5641-1c79-439f-a9fb-2ff134574412
-source-git-commit: c947de8eaa4e4dc3a0c10989ef6ae450cebc1f3e
+source-git-commit: 02b6c4f4504785353f9b2457099d3332cd25a852
 workflow-type: tm+mt
-source-wordcount: '1297'
+source-wordcount: '1294'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,9 @@ ht-degree: 0%
 
 +++ Måste jag vara kund hos Adobe Advertising Cloud eller Adobe Advertising Cloud (AMO) för att få tillgång till den här funktionen?
 
-Nej, den här funktionaliteten är tillgänglig för kunder utanför Advertising Cloud och AMO. </p> <p>AMO-kunder kan utnyttja den befintliga integreringen mellan Analytics och AMO; de kommer inte att kunna använda Ad Analytics.
+Nej, den här funktionaliteten är tillgänglig för kunder utanför Advertising Cloud och AMO.
+
+AMO-kunder kan utnyttja den befintliga integreringen mellan Analytics och AMO; de kommer inte att kunna använda Ad Analytics.
 
 +++
 
@@ -104,7 +106,7 @@ Nej, de råa sökdata kommer in som en oberoende datauppsättning. Det finns doc
 +++ Jag försöker mappa mina Advertising Analytics-konton till en specifik rapportsserie, men den är inte tillgänglig i modalmetoden för Report Suite. Varför?
 
 Innan du kan tilldela ett Advertising Analytics-konto en rapportssvit måste du [tillhandahålls för Advertising Analytics-rapportering](/help/integrate/c-advertising-analytics/c-adanalytics-workflow/aa-provision-rs.md)
-Detta görs via en separat admin-sida som är tillgänglig från: Admin > Rapportsviter > [välj rapportsvit] > Redigera inställningar > Advertising Analytics-konfiguration.
+Detta görs via en separat admin-sida som är tillgänglig från: Admin > Rapportsviter > `[select report suite]` > Redigera inställningar > Advertising Analytics-konfiguration.
 
 +++
 
@@ -114,7 +116,7 @@ Virtuella rapportsviter samlar inte in data, så du kan inte direkt mappa ett Ad
 
 +++
 
-+++ Rapporteras Advertising Analytics-statistik i <b>Marknadsföringskanaler</b> rapportera?
++++ Rapporteras Advertising Analytics-statistik i *Marknadsföringskanaler* rapportera?
 
 Nej, de ingår inte i rapporten om marknadsföringskanaler.
 
@@ -126,13 +128,13 @@ Sökdata hämtas från sökmotorerna runt 6.00 (06.00) i tidszonen i datacentret
 
 +++
 
-+++ Vad kan <b>som tagits före klickningen</b>? Ger vi intryck, kostnader, genomsnittlig position osv. även utan att klicka? </p> </td>
++++ Vad kan *som tagits före klickningen*? Ger vi intryck, kostnader, genomsnittlig position osv. även utan att klicka?
 
 AMO-ID:t hämtar sökmotorns mått: Impressions, Cost, Clicks, Average Position och Average Quality Score. Om det inte finns några klick, men det finns intryck, skickas fortfarande data för utfall/position/kvalitet till Analytics. Vanligtvis kostar det inget om du inte klickar.
 
 +++
 
-+++ På vilken nivå hämtas dessa data? <b>Besökare? Träffa?</b>
++++ På vilken nivå hämtas dessa data? *Besökare? Träffa?*
 
 Sökmotorns mätvärden hämtas på träffnivå och kopplas till AMO-ID:t (och dess klassificeringar). Det är data på sammanfattningsnivå och är inte kopplat till besök/besökare. Därför kan sökmotorns mått bara användas i segment som är träffnivåomfång och som baseras på AMO-ID (eller dess klassificeringar).
 
@@ -140,7 +142,7 @@ AMO-ID:t registreras också på landningssidan i träffen för den sidan (som ko
 
 +++
 
-+++ Kan vi bara hämta google.com eller <b>landversioner</b> (som google.co.uk, google.it, google.fr eller google.de) också?
++++ Kan vi bara hämta google.com eller *landversioner* (som google.co.uk, google.it, google.fr eller google.de) också?
 
 Ad Platform-klassificeringen fångar följande värden:&quot;Google Adwords&quot; och&quot;Bing Ads&quot;. Ett vanligt tillvägagångssätt är att inkludera landskoden som en del av namngivningen av kampanjer. Du kan sedan filtrera ned eller segmentera (t.ex. om alla kampanjer börjar med countrycode_ och sedan skapar du ett segment där Campaigns (AMO-ID) börjar med &quot;UK_&quot;, vilket ger dig endast data för Storbritannien).
 
@@ -152,7 +154,7 @@ Ad Platform-klassificeringen fångar följande värden:&quot;Google Adwords&quot
 
 +++
 
-+++ Finns det några planer på att inkludera andra annonskanaler som <b>Visa</b> eller <b>Social</b>?
++++ Finns det några planer på att inkludera andra annonskanaler som *Visa* eller *Social*?
 
 Nej, för närvarande har vi inga planer på dessa andra kanaler på färdplanen.
 
@@ -161,9 +163,9 @@ Nej, för närvarande har vi inga planer på dessa andra kanaler på färdplanen
 
 ## Automatisk kontra manuell spårning {#section_7437C4698A6D482EB7ED94A948390119}
 
-+++ När mitt Advertising-konto konfigureras anges följande:<b> Automatisk spårning</b> kan leda till oavsiktliga konsekvenser. Vilka typer av följder kan inträffa?
++++ När mitt Advertising-konto konfigureras anges följande: *Automatisk spårning* kan leda till oavsiktliga konsekvenser. Vilka typer av följder kan inträffa?
 
-I det automatiska läget görs ett försök att lägga till URL-parametrar i slutet av spårningsmallarna/mål-URL:erna i rätt format. <b>Det är dock ditt ansvar att se till att de URL-parametrar som läggs till behålls korrekt på den slutliga landningssidan. I det automatiska läget kan nyckelord infogas i landnings-URL:en, och webbservern kanske inte stöder nyckelord med specialtecken.
+I det automatiska läget görs ett försök att lägga till URL-parametrar i slutet av spårningsmallarna/mål-URL:erna i rätt format. Det är dock ditt ansvar att se till att de URL-parametrar som läggs till behålls korrekt på den slutliga landningssidan. I det automatiska läget kan nyckelord infogas i landnings-URL:en, och webbservern kanske inte stöder nyckelord med specialtecken.
 
 +++
 
