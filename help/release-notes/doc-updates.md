@@ -5,9 +5,9 @@ short-title: Analytics documentation updates
 feature: Release Notes
 exl-id: fe8e3c4c-6782-46f7-8e28-4f8f54807788
 mini-toc-levels: 3
-source-git-commit: 9fbe0f8a7933e5ff047a270523ea53d9489b223c
+source-git-commit: 4c9451c1df31ec22bf3f7b0198f294d8e57d79d5
 workflow-type: tm+mt
-source-wordcount: '5092'
+source-wordcount: '5117'
 ht-degree: 22%
 
 ---
@@ -26,6 +26,7 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | Funktion | Beskrivning |
 | --- | --- |
 | **Februari 2024** | |
+| Uppdateringar av information om hantering av Data Warehouse | Tydligare är att användare som standard bara kan visa de förfrågningar de skapar när [hantera förfrågningar från Data Warehouse](/help/export/data-warehouse/data-warehouse-requests-manage.md). |
 | Uppdateringar av projektdelningsdokumentation | Lagt till information om hur [visa delade projekt](/help/analyze/analysis-workspace/curate-share/share-projects.md#view-projects-shared-with-you).<p>Effektivare information om [dela enskilda eller flera projekt](/help/analyze/analysis-workspace/curate-share/share-projects.md#share-a-specific-project-role).</p> |
 | Lagt till behörighetskrav för att överföra filer till Azure SAS och Azure RBAC i Data Warehouse och dataflöden | Exakta behörighetskrav för överföring av filer till Azure SAS och Azure RBAC har lagts till när [konfigurera mål för Data Warehouse](/help/export/data-warehouse/create-request/dw-request-report-destinations.md) och [när mål för datafeeds konfigureras](/help/export/analytics-data-feed/create-feed.md). |
 | Lagt till behörighetskrav för att överföra filer till Amazon S3- och GCP-kretsar i Data Warehouse- och dataflöden | Exakta behörighetskrav för överföring av filer till Amazon S3 och Google Cloud Platform har lagts till när [konfigurera mål för Data Warehouse](/help/export/data-warehouse/create-request/dw-request-report-destinations.md) och [när mål för datafeeds konfigureras](/help/export/analytics-data-feed/create-feed.md). |

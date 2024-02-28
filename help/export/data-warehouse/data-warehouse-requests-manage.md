@@ -4,9 +4,9 @@ title: Hantera förfrågningar från Data Warehouse
 feature: Data Warehouse
 uuid: cdeb764f-56f9-43ec-9228-8ed5a2b58909
 exl-id: a399d366-8402-4f4f-9b9f-14b218cd074a
-source-git-commit: abfc67abdba5e35b12a583fafe9a6e42192af631
+source-git-commit: 4c9451c1df31ec22bf3f7b0198f294d8e57d79d5
 workflow-type: tm+mt
-source-wordcount: '1103'
+source-wordcount: '1148'
 ht-degree: 0%
 
 ---
@@ -19,9 +19,13 @@ I följande avsnitt beskrivs aktiviteter som du kan utföra när du hanterar beg
 
 ## Visa förfrågningar
 
+Som standard kan du bara visa de förfrågningar du skapar, såvida inte användarna har valt att göra deras förfrågningar synliga för andra i organisationen (enligt beskrivningen i [Allmänna inställningar för begäran om Data Warehouse](/help/export/data-warehouse/create-request/dw-general-settings.md)). Systemadministratörer kan visa alla begäranden.
+
+Så här visar du förfrågningar från Data Warehouse:
+
 1. I Adobe Analytics: [!UICONTROL **verktyg**] > [!UICONTROL **Data Warehouse**].
 
-   På sidan Data Warehouse visas alla förfrågningar du har gjort. <!-- just those you have made? -->Data visas i varje kolumn. Du kan [konfigurera vilka kolumner](#configure-columns) är synliga.
+   På sidan Data Warehouse visas alla förfrågningar som du har gjort. Data visas i varje kolumn. Du kan [konfigurera vilka kolumner](#configure-columns) är synliga.
 
    <!-- add screenshot of main page -->
 
