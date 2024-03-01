@@ -4,10 +4,10 @@ description: Implementera Adobe Analytics på din webbplats eller i en egenskap 
 feature: Implementation Basics
 exl-id: 2b629369-2d69-4dc6-861a-ff21a46d39e0
 role: Admin, Developer, Leader, User
-source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
+source-git-commit: e033f32fb3394bb9e2a9ec47766febfbe8d5bfd7
 workflow-type: tm+mt
-source-wordcount: '827'
-ht-degree: 29%
+source-wordcount: '752'
+ht-degree: 10%
 
 ---
 
@@ -15,24 +15,13 @@ ht-degree: 29%
 
 ![Banderoll](../../assets/doc_banner_implement.png)
 
-Adobe kräver kod på din webbplats eller i din app för att kunna skicka data till Adobes datainsamlingsservrar. Följande steg visar hur en vanlig implementering fungerar.
-
-1. När en besökare kommer till din webbplats, skickas en begäran till din webbserver.
-2. Webbplatsens webbserver skickar sidkodsinformationen och sidan visas i webbläsaren.
-3. Sidan läses in och Analytics JavaScript-kod körs.
-JavaScript-koden skickar en bildbegäran till Adobe datainsamlingsservrar. Siddata som du har definierat under implementeringen skickas som en del av en frågesträng i den här bildbegäran.
-
-4. Adobe returnerar en transparent pixelbild.
-5. Adobe-servrar lagrar insamlade data i en eller flera *rapportsviter*.
-6. Rapportsvitens data fyller i de rapporter som du kan få åtkomst till i en webbläsare.
-
-JavaScript-koden körs snabbt och påverkar inte sidinläsningstiden märkbart. På så sätt kan du räkna de sidor som visas när en besökare klickar på **[!UICONTROL Reload]** eller **[!UICONTROL Back]** för att komma till en sida, eftersom JavaScript-skriptet körs även när sidan hämtas från cache.
-
 Adobe Analytics kräver kod på din webbplats eller i din mobilapp eller annat program för att kunna skicka data till datainsamlingsservrar. Det finns flera metoder för att implementera den här koden, beroende på plattform och organisationens behov.
 
 ## Implementeringsmetoder för webbplatser
 
 För **webbplats**, finns följande implementeringsmetoder:
+
+### Klientsidan
 
 * **Web SDK-tillägg**: Den standardiserade och rekommenderade metoden för att implementera Adobe Analytics för nya kunder. Lägg till **Adobe Experience Platform Web SDK-tillägg** i Adobe Experience Platform Data Collection **Taggar** placerar du sedan en loader-tagg på varje sida. Taggen skickar data till Adobe Experience Platform **Edge Network**, som vidarebefordrar dessa data till Adobe Analytics.
   ![Web SDK-tillägg](./assets/websdk-extension-implementation.png)
@@ -50,7 +39,7 @@ Se [Implementera Adobe Analytics med Analytics-tillägget](launch/overview.md) f
   ![Implementera Adobe Analytics med äldre JavaScript](./assets/appmeasurement-implementation.png)
 Den här implementeringsmetoden kan vara användbar för implementeringar med anpassad kod och är idealisk för implementeringstyper som inte finns någon annanstans, till exempel för [AMP-sidor](other/amp.md).
 
-Följande beslutsflöde kan hjälpa dig att välja en implementeringsmetod:
+Följande beslutsflöde kan hjälpa dig att välja en implementeringsmetod på klientsidan:
 
 ![Ett beslutsträd för att välja en implementeringsmetod, vilket beskrivs i detta avsnitt.](./assets/decision-tree.png)
 
@@ -58,6 +47,18 @@ Följande beslutsflöde kan hjälpa dig att välja en implementeringsmetod:
 >[!TIP]
 >
 >Kontakta kontoteamet på Adobe för råd och bästa praxis för implementering baserat på din nuvarande situation.
+
+### Serversidan
+
+För att implementera Adobe Analytics serversida finns följande alternativ:
+
+* **Edge Server-API**: Du implementerar kod på servern som använder Adobe Experience Platform Edge Server API för att kommunicera med Adobe Analytics via en datastream.
+  ![Implementering på serversidan](assets/edge-network-server-api.svg)
+Se [Implementera Adobe Analytics med Adobe Experience Platform Edge Network Server API](/help/implement/aep-edge/server-api/overview.md) för mer information.
+
+* **(Massor) API för datainmatning**: Du använder API:erna för datainfogning i Adobe Analytics (Bulk) för att samla in data på serversidan direkt till Adobe Analytics.
+  ![API:er för datainfogning](assets/analytics-apis.png)
+Se [API för datainfogning](../import/c-data-insertion-api/c-data-insertion-api.md) för mer information.
 
 ## Implementeringsmetoder för mobilappar
 
@@ -76,7 +77,7 @@ För **mobilapp**, finns följande implementeringsmetoder:
 
 >[!CAUTION]
 >
->Stöd för version 4 Mobile SDK upphörde den 31 augusti 2021. Mer information finns i [Vanliga frågor om att supporten ska upphöra för SDK:er för version 4 för mobila enheter](https://developer.adobe.com/client-sdks/resources/upgrade-platform-sdks/v4-faq/).
+>Se om du har stöd för äldre versioner av Adobe mobila SDK:er på [SDK:er - meddelanden om att supporten upphör](https://developer.adobe.com/client-sdks/resources/sdks-end-of-support/).
 
 ## Viktiga artiklar om implementering av Analytics
 
@@ -84,13 +85,13 @@ För **mobilapp**, finns följande implementeringsmetoder:
 * [Adobe Debugger](validate/debugger.md)
 * [Skapa en taggegenskap i Experience Platform](launch/create-analytics-property.md)
 * [AppMeasurement](appmeasurement-updates.md)
+* [Konfigurera Adobe Analytics med Platform Web SDK, genomgång](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-analytics.html)
+* [Implementera Adobe Experience Cloud i mobilappar, genomgång](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html)
 
-## Fler användarhandböcker för Analytics
-
-[Användarhandböcker för Analytics](https://experienceleague.adobe.com/docs/analytics.html)
 
 ## Viktiga Analytics-resurser
 
 * [Kontakta kundtjänst](https://experienceleague.adobe.com/?support-solution=Analytics&amp;lang=sv#support)
 * [Analytics-forum](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community)
 * [Adobe Analytics-resurser](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-resources/m-p/276666)
+* [Senaste versionsinformation](../release-notes/latest.md)

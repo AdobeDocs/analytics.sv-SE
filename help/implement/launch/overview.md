@@ -4,16 +4,16 @@ description: Lär dig implementera Adobe Analytics med hjälp av taggar och Anal
 feature: Tags
 exl-id: 52990731-8a68-4779-ad42-6ec94b0aabd1
 role: Admin, Developer
-source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
+source-git-commit: 9d9212313f54e4b44c5341754942ac0e0c78b84c
 workflow-type: tm+mt
-source-wordcount: '364'
+source-wordcount: '365'
 ht-degree: 3%
 
 ---
 
 # Implementera Adobe Analytics med Analytics-tillägget
 
-Under Adobe Analytics livstid har Adobe erbjudit flera olika metoder för att implementera kod på er webbplats för datainsamling. Den rekommenderade metoden för Adobe är via taggar i Adobe Experience Platform.
+Under Adobe Analytics livstid har Adobe erbjudit flera olika metoder för att implementera kod på er webbplats för datainsamling. Den rekommenderade metoden för Adobe är igenom [Taggar](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=en) i Adobe Experience Platform.
 
 Taggar i Adobe Experience Platform är en tagghanteringslösning som gör att ni kan driftsätta Analytics-kod tillsammans med andra taggningskrav. Adobe erbjuder integreringar med andra lösningar och produkter och låter er driftsätta anpassad kod. Alla dessa uppgifter kan utföras utan att någon utvecklingsteam i organisationen behöver uppdatera koden på er webbplats.
 
@@ -48,7 +48,7 @@ Alla kunder som har ett aktivt Adobe Experience Cloud-kontrakt kan använda tagg
 <tr>
 <td>3</td>
 <td><b><b>Skapa en taggegenskap</b>. Egenskaper är överliggande behållare som används för att referera till tagghanteringsdata.</td>
-<td><a ref="../launch/create-analytics-property.md">Skapa en Adobe Analytics-taggegenskap</a></td>
+<td><a href="../launch/create-analytics-property.md">Skapa en Adobe Analytics-taggegenskap</a></td>
 </tr>
 
 <tr>

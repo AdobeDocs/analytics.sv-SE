@@ -4,22 +4,22 @@ description: Använd API:t för Adobe Experience Platform Edge Network Server f�
 exl-id: 1ede95b7-4f17-4d69-aba6-62b253b6693a
 feature: Implementation Basics
 role: Admin, Developer, Leader
-source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
+source-git-commit: c72ca1da5491ff3afde8b401b2e4e140744eecf2
 workflow-type: tm+mt
-source-wordcount: '260'
+source-wordcount: '268'
 ht-degree: 1%
 
 ---
 
 # Implementera Adobe Analytics med Adobe Experience Platform Edge Network Server API
 
-Du använder vanligtvis Experience Platform Edge Network Server API för att samla in data från enheter som IoT-enheter, digitalboxar och datorprogram. Skicka sedan dessa data till Edge-nätverket och sedan till tjänster som Adobe Analytics.
+Du använder vanligtvis Experience Platform Edge Network Server API för att samla in data på serversidan i stället för på klientsidan och när du samlar in data från enheter som IoT-enheter, digitalboxar och datorprogram. Sedan skickar du dessa data till Edge-nätverket och till tjänster som Adobe Analytics.
 
 Överväg också Edge Network Server API när du kräver att känsliga data samlas in säkert och autentiseras i nätverket. Se [Autentisering](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/authentication.html?lang=en) för mer information.
 
 Översikt över implementeringsuppgifterna på hög nivå:
 
-![Adobe Analytics med hjälp av arbetsflödet för Analytics-tillägget](../../assets/edge-network-server-api.png)
+![Adobe Analytics med hjälp av arbetsflödet för Analytics-tillägget](../../assets/edge-network-server-api-annotated.png)
 
 <table style="width:100%">
 
