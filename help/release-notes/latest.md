@@ -3,9 +3,9 @@ title: Aktuella versionsinformation för Adobe Analytics
 description: Visa den aktuella versionsinformationen för Adobe Analytics
 feature: Release Notes
 exl-id: 97d16d5c-a8b3-48f3-8acb-96033cc691dc
-source-git-commit: bb2b0f715941135d119d862b64c02f05800b3fdd
+source-git-commit: efe0f96db6a65389c94faf4f8d24b026e53a403c
 workflow-type: tm+mt
-source-wordcount: '745'
+source-wordcount: '897'
 ht-degree: 1%
 
 ---
@@ -20,6 +20,9 @@ Versionsanteckningarna gäller frisläppningsperioden 14 februari 2024 till 11 m
 
 | Funktion | Beskrivning | [Startar](releases.md) | [Allmän tillgänglighet](releases.md) |
 | ----------- | ---------- | ------- | ---- |
+| **AppMeasurement** | [AppMeasurement version v2.26.0](/help/implement/appmeasurement-updates.md) är tillgängligt. | | 4 mars 2024 |
+| **Data Warehouse** | Följande förbättringar av Datan Warehouse är nu tillgängliga:<ul><li>När en begäran om Data Warehouse skapas kan användare nu göra begäranden tillgängliga för alla användare i organisationen genom att aktivera den nya växeln som kallas [!UICONTROL **Gör tillgänglig för användare i din organisation**].<p>Mer information finns i [Allmänna inställningar för begäran om Data Warehouse](/help/export/data-warehouse/create-request/dw-general-settings.md).</p></li><li>När systemadministratörer skapar eller hanterar destinationer för Data Warehouse-rapporter kan de nu visa konton och platser som har skapats av användare i organisationen genom att aktivera det anropade [!UICONTROL **Visa alla mål**].<p>Mer information finns i [Konfigurera ett rapportmål för en Data Warehouse-begäran](/help/export/data-warehouse/create-request/dw-request-report-destinations.md).</p></li> | Ej tillämpligt | 10 januari 2024 |
+| **Uppdateringar av visualisering av sammanfattning av nyckelmått** | När du använder visualisering av nyckelmätningssammanfattning kan datumintervallet för jämförelsen nu uppdateras automatiskt, beroende på om det alternativ för jämförelsedatumintervall du väljer är relativt till det primära datumintervallet eller fasta. [Läs mer](/help/analyze/analysis-workspace/visualizations/key-metric.md). | Ej tillämpligt | 17 januari 2024 |
 | **Datas Warehouse-API-dokumentation** | Läs mer i [Adobe Analytics Data Warehouse API 2.0](https://adobedocs.github.io/analytics-2.0-apis/?urls.primaryName=Data%20Warehouse%20APIs#/Data%20Warehouse%20Scheduled%20Requests%20API) för mer information. Gå till [!UICONTROL Select a definition] och markera [!UICONTROL Data Warehouse APIs]. | | 19 februari 2024 |
 | **Activity Map för Web SDK utan extra kostnad** | För närvarande räknas länkarhändelser i Activity Map som sina egna händelser och medför extra kostnader. Den här förbättringen tar några länkhändelser och paketerar dem i nästa träff, ungefär som hur händelser hanteras av AppMeasurementet. |  | 6 mars 2024 |
 | **Ökning av standardtröskelvärden för låg trafik** | I **mitten av april 2024** kommer Adobe att börja öka standardrapporteringsprogrammets lågtrafiktrösklar enligt följande: ![lågtrafiktrösklar](assets/thresholds.png) Detta påverkar endast variabler som för närvarande ligger under de nya tröskelvärdena. Dessa ändringar kommer att göras stegvis, och vi förväntar oss att arbetet ska vara slutfört av **slutet av maj**. När dessa ökningar introduceras kan du märka förändringar för variabler med hög kardinalitet:<ul><li>Fler dimensionsvärden kan vara tillgängliga för rapportering.</li><li>Segment och beräknade värden kan innehålla mer data.</li><li>Virtuella rapportsviter baserade på segment kan innehålla mer data.</li><li>Export av klassificeringar kan innehålla mer data.</li></ul> | Mid April, 2024 | I slutet av maj 2024 |

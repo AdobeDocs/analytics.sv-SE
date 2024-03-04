@@ -5,9 +5,9 @@ short-title: Analytics documentation updates
 feature: Release Notes
 exl-id: fe8e3c4c-6782-46f7-8e28-4f8f54807788
 mini-toc-levels: 3
-source-git-commit: 4c9451c1df31ec22bf3f7b0198f294d8e57d79d5
+source-git-commit: efe0f96db6a65389c94faf4f8d24b026e53a403c
 workflow-type: tm+mt
-source-wordcount: '5117'
+source-wordcount: '5136'
 ht-degree: 22%
 
 ---
@@ -25,6 +25,8 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 
 | Funktion | Beskrivning |
 | --- | --- |
+| **Mars 2024** | |
+| AppMeasurement | [Versionsinformation](/help/implement/appmeasurement-updates.md) på AppMeasurementet update v2.26.0.<br/>Innehåller referens till och uppdatering av [`cookieDomainPeriods`](/help/implement/vars/config-vars/cookiedomainperiods.md) dokumentation för config variable. |
 | **Februari 2024** | |
 | Uppdateringar av information om hantering av Data Warehouse | Tydligare är att användare som standard bara kan visa de förfrågningar de skapar när [hantera förfrågningar från Data Warehouse](/help/export/data-warehouse/data-warehouse-requests-manage.md). |
 | Uppdateringar av projektdelningsdokumentation | Lagt till information om hur [visa delade projekt](/help/analyze/analysis-workspace/curate-share/share-projects.md#view-projects-shared-with-you).<p>Effektivare information om [dela enskilda eller flera projekt](/help/analyze/analysis-workspace/curate-share/share-projects.md#share-a-specific-project-role).</p> |

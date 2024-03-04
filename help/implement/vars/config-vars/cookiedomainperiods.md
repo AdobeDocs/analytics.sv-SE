@@ -4,9 +4,9 @@ description: Hjälp AppMeasurementet att förstå vilken domän cookies ska lagr
 feature: Variables
 exl-id: c426d6a7-4521-4d50-bb7d-1664920618d8
 role: Admin, Developer
-source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
+source-git-commit: fe33da47c109adacb8162c7165ad4c63bd65c08d
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '659'
 ht-degree: 0%
 
 ---
@@ -21,15 +21,43 @@ The `cookieDomainPeriods` variabeln hjälper AppMeasurementet att avgöra var An
 * För domäner som `example.com` eller `www.example.com`behöver den här variabeln inte anges. Om det behövs kan du ange variabeln till `"2"`.
 * För domäner som `example.co.uk` eller `www.example.co.jp`, ange variabeln till `"3"`.
 
+
 >[!IMPORTANT]
 >
 >Ta inte underdomäner med i beräkningen för variabeln. Ange till exempel inte `cookieDomainPeriods` på exempelwebbadressen `store.toys.example.com`. AppMeasurementet känner som standard igen att cookies ska lagras på `example.com`, även på URL:er med många underdomäner.
 
-## Domänperioder som använder Web SDK
+
+## Cookie-domänperioder, cookies från tredje part och identifiering av äldre besökare
+
+Endast när du använder den gamla Adobe Analytics-besökaridentifieraren (i stället för den rekommenderade Experience Cloud Identity-tjänsten) är den implicita eller explicita konfigurationen av `cookieDomainPeriods` kan påverka hur besökare identifieras, beroende på om cookies från tredje part blockeras eller inte.
+
+I följande tabell visas fyra möjliga scenarier.
+
+| Scenario | `cookieDomainPeriods` konfigurationen är ... | Är cookies från tredje part blockerade? | Resultat vid användning av tidigare Adobe Analytics besöksidentifieringstjänst |
+|:---:|---|---|---|
+| 1 | <span style="color:green">Korrigera</span> | Nej | Besökarna identifieras med en `s_vi` cookie, serversidan. |
+| 2 | <span style="color:green">Korrigera</span> | Ja | Besökarna identifieras med en reservlinje `s_fid` cookie, ange klientsida (siddomän från första part). |
+| 3 | <span style="color:red">Felaktig</span> | Nej | Besökare identifieras med en reservidentifierare som baseras på en kombination av användaragent och IP-adress. <br/>AppMeasurementet måste ange cookies som cookies från tredje part.<br/> The `s_vi` cookie kan anges när `cookieDomainPeriods` inte överförs korrekt. |
+| 4 | <span style="color:red">Felaktig</span> | Ja | Besökare identifieras med en reservidentifierare som baseras på en kombination av användaragent och IP-adress.<br/>AppMeasurementet måste ange cookies som blockerade cookies från tredje part, så inga cookies anges. |
+
+>[!CAUTION]
+>
+>Du kan ha konfigurerat av misstag `cookieDomainPeriods` <span style="color:red">felaktig</span> (lämna standardvärdet `"2"`) när du använder domäner som `example.co.uk`. Detta implicita felaktiga konfigurationsresultat som identifierar besökare efter scenario 3 eller 4.
+>
+>AppMeasurementen version 2.26.x eller senare konfigureras `cookieDomainPeriods` automatiskt med rätt värde så att endast scenarierna 1 eller 2 är möjliga. När du uppdaterar till AppMeasurement version 2.26.x eller senare, och för närvarande identifierar besökare felaktigt (scenario 3 eller 4), får uppdateringen större konsekvenser.
+>
+>* Besöksidentifierare återställs och besökarna visas som nya besökare. Det finns inget sätt att koppla ny aktivitet till den tidigare besökaridentifieraren.
+>* Cookies anges (t.ex. för länkspårning eller aktivitetskarta).`s_sq` cookie), vilket leder till plötsliga skillnader i rapporteringen.
+>
+>Vid korrekt konfigurering `cookieDomainPeriods` kommer att förbättra funktionaliteten för AppMeasurement och analys, vi rekommenderar att du utvärderar om du påverkas av ändringarna som uppstår när du uppgraderar ditt AppMeasurement-bibliotek.
+>
+> Se [Analytics-cookies](https://experienceleague.adobe.com/docs/core-services/interface/administration/ec-cookies/cookies-analytics.html?lang=en) om du vill ha mer information om de cookies som AppMeasurementet använder.
+
+## Cookie-domänperioder som använder Web SDK
 
 Web SDK kan identifiera rätt cookie-lagringsdomän utan den här variabeln.
 
-## Domänperioder som använder Adobe Analytics-tillägget
+## Cookie-domänperioder med Adobe Analytics-tillägg
 
 Domänperioder är ett fält under [!UICONTROL Cookies] när du konfigurerar Adobe Analytics-tillägget.
 
@@ -40,7 +68,9 @@ Domänperioder är ett fält under [!UICONTROL Cookies] när du konfigurerar Ado
 
 Ange att fältet ska `3` endast på domäner som innehåller en punkt i suffixet. Annars kan fältet lämnas tomt.
 
-## s.cookieDomainPeriods i AppMeasurementet och den anpassade kodredigeraren för Analytics-tillägget
+## Cookie-domänperioder i AppMeasurementet code och den anpassade kodredigeraren för Analytics-tillägget
+
+Du kan ange `cookieDomainPeriods` i AppMeasurementets JavaScript-bibliotek eller i den anpassade kodredigeraren för Analytics-tillägget.
 
 The `cookieDomainPeriods` variabeln är en sträng som vanligtvis är inställd på `"3"`, endast i domäner som innehåller en punkt i suffixet. Standardvärdet är `"2"`, som rymmer de flesta domäner.
 
