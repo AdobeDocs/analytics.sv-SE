@@ -4,9 +4,9 @@ title: Förstå och konfigurera robotregler
 feature: Bot Removal
 role: Admin
 exl-id: 1c0009f6-2746-4ef1-8dcb-e2693617e91e
-source-git-commit: 429aaa43fdae669350bdb5a5a54a7d4b9b1c65f2
+source-git-commit: b5cca97861216751c5feae23e3c0121fa9c356b1
 workflow-type: tm+mt
-source-wordcount: '1568'
+source-wordcount: '1624'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,10 @@ När båda reglerna har definierats jämförs all inkommande trafik med de defin
 Att ta bort robottrafik minskar vanligen mängden trafik och konverteringsmått. Många kunder tycker att om man tar bort både trafik ökar konverteringsgraden och ökar användbarheten.
 
 Punkttrafikdata lagras i en separat databas för visning i rapporter om start- och startsidor.
+
+>[!NOTE]
+>
+>Adobe Experience Edge ger en [söktidentifieringstjänst](https://experienceleague.adobe.com/docs/experience-platform/datastreams/bot-detection.html) vilka etiketter träffar som identifieras som om de kommer från bottar. Adobe Analytics objektidentifieringsprocess är skild från detta och refererar inte till robotpoängen som ingår i data som hämtas via Experience Edge. De två systemen använder samma IAB-robotlista, så de bör bete sig likadant i detta avseende.
 
 ## Uppdatera eller överföra robotregler
 
