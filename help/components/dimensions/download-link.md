@@ -3,7 +3,7 @@ title: Hämta länk
 description: Namnet på nedladdningslänken.
 feature: Dimensions
 exl-id: 078014a2-1f09-4177-9575-b44c5da25816
-source-git-commit: d095628e94a45221815b1d08e35132de09f5ed8f
+source-git-commit: 33d837cfa7909bd93d5a4f675aa0d8894a403266
 workflow-type: tm+mt
 source-wordcount: '184'
 ht-degree: 0%
@@ -22,7 +22,11 @@ The &#39;Download link&#39; [dimension](overview.md) rapporterar namnen på nedl
 
 Den här dimensionen samlar in data från [`pev2` frågesträng](/help/implement/validate/query-parameters.md) i bildförfrågningar för träffar som också har `pe` frågesträng med värdet för `lnk_d`. Om `pe` frågesträngen har ett annat värde i träffen, den här dimensionen samlar inte in data.
 
-Om du vill skicka data till den här dimensionen med AppMeasurement skickar du en [`tl()`](/help/implement/vars/functions/tl-method.md) bildbegäran med ett länktypargument av `"d"`. Fyll i länknamnsargumentet med det önskade värdet.
+Om du vill skicka data till den här dimensionen med AppMeasurement skickar du en [`tl()`](/help/implement/vars/functions/tl-method.md) bildbegäran med ett länktypargument av `"d"`. Fyll i länknamnsargumentet med det önskade värdet:
+
+```js
+s.tl(true,"d","Example download link");
+```
 
 ## Dimensioner
 
