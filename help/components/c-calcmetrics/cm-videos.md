@@ -1,22 +1,24 @@
 ---
-description: Dessa korta videoklipp (8 minuter eller mindre) ger en översikt över hur du optimerar användningen av verktygen för beräknade mätvärden.
-title: Instruktionsvideor
+description: I dessa korta videoklipp får du en översikt över hur du optimerar användningen av verktygen för beräknade mätvärden.
+title: Instruktionsfilmer
 feature: Calculated Metrics
+role: User
+level: Beginner
 exl-id: 1227f68f-b4cd-4fa6-8fa9-0e8cc4e86cb3
-source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
+source-git-commit: 36d74c4cc579b8bacabb62288addd49fa1cde4a7
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '61'
 ht-degree: 0%
 
 ---
 
-# Instruktionsvideor
+# Instruktionsfilmer
 
-Dessa korta videoklipp (8 minuter eller mindre) ger en översikt över hur du optimerar användningen av verktygen för beräknade mätvärden.
+I dessa korta videoklipp får du en översikt över hur du optimerar användningen av verktygen för beräknade mätvärden.
 
-* [Mätväljare](https://youtu.be/jCJ7XEJxcYo)
-* [Metric Builder](https://youtu.be/wpdWYWaf0uo)
-* [Segmenterade mått](https://youtu.be/YtikkXvOrS8)
-* [Implementering - mindre mått](https://youtu.be/CuQTm9RaUpY)
-* [Funktioner](https://youtu.be/SSyWvomnewI)
-* [Administratörsspecifika tips](https://youtu.be/-wqHOvzz0P0)
+* [Snabbberäknade mätvärden i Analysis Workspace](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/components/calculated-metrics/quick-calculated-metrics-in-analysis-workspace.html){target="_blank"}
+* [Metric builder](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/components/calculated-metrics/calculated-metrics-metric-builder.html){target="_blank"}
+* [Segmenterade mätvärden](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/components/calculated-metrics/calculated-metrics-segmented-metrics.html){target="_blank"}
+* [Implementeringsfria mätvärden](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/components/calculated-metrics/calculated-metrics-implementationless-metrics.html){target="_blank"}
+* [Funktioner](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/components/calculated-metrics/calculated-metrics-functions.html){target="_blank"}
+* [Hantera dina beräknade mätvärden](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/components/calculated-metrics/manage-your-calculated-metrics.html){target="_blank"}
