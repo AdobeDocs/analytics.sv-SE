@@ -3,10 +3,11 @@ description: Allmän översiktsinformation om Adobe Analytics, inklusive informa
 short-description: Lär dig viktiga funktioner, vanliga användningsexempel och första steg för analytiker, slutanvändare och administratörer.
 title: Adobe Analytics - översikt
 feature: Analytics Basics
-source-git-commit: 8adf512522d89ab1f2187c6f9be7373c0a430f17
+exl-id: ac8c00a7-3652-4ac4-a294-5b626472215c
+source-git-commit: 43c39b99cbae3e714b7f017dec14dd02fa350790
 workflow-type: tm+mt
-source-wordcount: '461'
-ht-degree: 3%
+source-wordcount: '447'
+ht-degree: 11%
 
 ---
 
@@ -19,7 +20,7 @@ Med Adobe Analytics kan organisationer samla in data och få åtgärdbara insikt
 Använd följande resurser för att lära dig grunderna i Adobe Analytics:
 
 
-| Dokumentationsresurs |  -funktion |
+| Dokumentationsresurs | Funktion |
 |---------|----------|
 | [Kom igång (efter roll)](/help/analyze/get-started/get-started-by-role.md) | Innehåller detaljerad information som förklarar viktiga funktioner och uppgifter som du behöver känna till, oavsett om du är administratör, analytiker, slutanvändare eller utvecklare. |
 | [Förstå analysgränssnittet](/help/analyze/get-started/analytics-interface.md) | Visar viktiga områden i analysgränssnittet. |
@@ -50,5 +51,4 @@ Nedan följer några av fördelarna med Customer Journey Analytics framför Adob
 
 * **Data för flera rapporter**: Befintliga implementeringar från flera datauppsättningar kan kombineras i Platform.
 
-Mer information finns i [Customer Journey Analytics - översikt](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=en).
-
+Mer information finns i [Customer Journey Analytics - översikt](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html).

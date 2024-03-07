@@ -4,7 +4,7 @@ description: Hjälp AppMeasurementet att förstå vilken domän cookies ska lagr
 feature: Variables
 exl-id: c426d6a7-4521-4d50-bb7d-1664920618d8
 role: Admin, Developer
-source-git-commit: fe33da47c109adacb8162c7165ad4c63bd65c08d
+source-git-commit: 43c39b99cbae3e714b7f017dec14dd02fa350790
 workflow-type: tm+mt
 source-wordcount: '659'
 ht-degree: 0%
@@ -51,7 +51,7 @@ I följande tabell visas fyra möjliga scenarier.
 >
 >Vid korrekt konfigurering `cookieDomainPeriods` kommer att förbättra funktionaliteten för AppMeasurement och analys, vi rekommenderar att du utvärderar om du påverkas av ändringarna som uppstår när du uppgraderar ditt AppMeasurement-bibliotek.
 >
-> Se [Analytics-cookies](https://experienceleague.adobe.com/docs/core-services/interface/administration/ec-cookies/cookies-analytics.html?lang=en) om du vill ha mer information om de cookies som AppMeasurementet använder.
+> Se [Analytics-cookies](https://experienceleague.adobe.com/docs/core-services/interface/administration/ec-cookies/cookies-analytics.html) om du vill ha mer information om de cookies som AppMeasurementet använder.
 
 ## Cookie-domänperioder som använder Web SDK
 

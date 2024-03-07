@@ -1,17 +1,17 @@
 ---
-title: Variabelmappning för analyser i Adobe Experience Edge
+title: Variabelmappning för analys med Web SDK XDM-objektet
 description: Visa vilka XDM-fält som Edge automatiskt mappar till analysvariabler.
 exl-id: fbff5c38-0f04-4780-b976-023e207023c6
 feature: Implementation Basics
 role: Admin, Developer
-source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
+source-git-commit: bc1311171e7cec6538dcdb44ad13761b0d39851b
 workflow-type: tm+mt
-source-wordcount: '1141'
+source-wordcount: '1145'
 ht-degree: 0%
 
 ---
 
-# Variabelmappning för analyser i Adobe Experience Edge
+# Variabelmappning för analys med Web SDK XDM-objektet
 
 Följande tabell visar de variabler som Adobe Experience Platform Edge Network automatiskt mappar till Adobe Analytics. Om du använder dessa XDM-fältsökvägar behövs ingen ytterligare konfiguration för att skicka data till Adobe Analytics. Dessa fält ingår i **[!UICONTROL Adobe Analytics ExperienceEvent Template]** fältgrupp.
 

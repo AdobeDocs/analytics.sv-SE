@@ -4,7 +4,7 @@ title: Hur integrerar jag Adobe Campaign Standard Reporting i Adobe Analytics?
 feature: Campaign Integration
 exl-id: 63bae5ee-f94d-43fa-87ce-6380236745d6
 role: Admin
-source-git-commit: d3d5b01fe17f88d07a748fac814d2161682837c2
+source-git-commit: 43c39b99cbae3e714b7f017dec14dd02fa350790
 workflow-type: tm+mt
 source-wordcount: '465'
 ht-degree: 64%
@@ -17,7 +17,7 @@ ht-degree: 64%
 Mer information om hur du konfigurerar den här integreringen finns i [dokumentationen för Adobe Campaign](https://helpx.adobe.com/se/campaign/standard/integrating/using/about-campaign-analytics-integration.html).
 
 >[!IMPORTANT]
->Den här artikeln gäller Adobe Campaign **Standard** enbart rapportering. Se [här](https://experienceleague.adobe.com/docs/analytics/integration/analytics-to-campaign-classic.html?lang=en) för att lägga till Adobe Campaign **Klassisk** rapportering.
+>Den här artikeln gäller Adobe Campaign **Standard** enbart rapportering. Se [här](https://experienceleague.adobe.com/docs/analytics/integration/analytics-to-campaign-classic.html) för att lägga till Adobe Campaign **Klassisk** rapportering.
 
 Integrationen mellan Adobe Analytics och Adobe Campaign Standard:
 

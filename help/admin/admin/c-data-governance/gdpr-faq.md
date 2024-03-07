@@ -4,7 +4,7 @@ title: Frågor och svar om datahantering
 feature: Data Governance
 role: Admin
 exl-id: 57399c1b-cf08-405b-8c1b-9d23e4c38716
-source-git-commit: 429aaa43fdae669350bdb5a5a54a7d4b9b1c65f2
+source-git-commit: 43c39b99cbae3e714b7f017dec14dd02fa350790
 workflow-type: tm+mt
 source-wordcount: '2042'
 ht-degree: 38%
@@ -85,7 +85,7 @@ Som personuppgiftsansvarig ansvarar du för att få uttryckligt medgivande från
 
 Personuppgifter bör i allmänhet inte lagras längre än nödvändigt för att uppnå det syfte för vilket de samlades in. Adobe allmänna villkor tillämpar en 25-månaders standardplan för datalagring, såvida inte en annan avtalsperiod för datalagring har överenskommits. Kunderna måste ange sin datalagringspolicy innan Adobe kan behandla en begäran om dataskydd.
 
-Varje rapportsvits aktuella policy för datalagring visas i det nya användargränssnittet för datastyrningsadministratörer. Kunderna bör kontakta sin Adobe-representant om de behöver ändra sin datalagringspolicy. Se [Vanliga frågor om Adobe Analytics datalagring](https://experienceleague.adobe.com/docs/analytics/technotes/data-retention.html?lang=en).
+Varje rapportsvits aktuella policy för datalagring visas i det nya användargränssnittet för datastyrningsadministratörer. Kunderna bör kontakta sin Adobe-representant om de behöver ändra sin datalagringspolicy. Se [Vanliga frågor om Adobe Analytics datalagring](https://experienceleague.adobe.com/docs/analytics/technotes/data-retention.html).
 
 +++
 

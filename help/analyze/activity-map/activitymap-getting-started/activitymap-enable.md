@@ -5,7 +5,7 @@ feature: Activity Map
 role: Admin
 exl-id: 0b2b9f3d-0c75-4eb8-9235-c9c98eb035d3
 mini-toc-levels: 3
-source-git-commit: e35210582e94037cf286b98e7e0a6b06040a8c6f
+source-git-commit: 43c39b99cbae3e714b7f017dec14dd02fa350790
 workflow-type: tm+mt
 source-wordcount: '559'
 ht-degree: 1%
@@ -54,7 +54,7 @@ Med klickdatainsamlingen i ett samlarsamtal måste vi filtrera med antingen &quo
 Samlingsanropet är utformat på ett sådant sätt att spårningen inte påverkar navigeringen till andra webbplatser, så att dokumentborttagningsfunktionen kan användas för samlarsamtal. Detta påverkar inte din datainsamling, men om du behöver validera på sidan lägger du till target = &quot;_blank&quot; till respektive element. Länken öppnas sedan på en ny flik.
 
 * **Hur ignorerar jag samlingen av PII?**
-Lägg till respektive villkor i&lt;&lt; före länk klicka på skicka återanrop>> och returnera false om du vill ignorera dessa värden. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html?lang=en)
+Lägg till respektive villkor i&lt;&lt; före länk klicka på skicka återanrop>> och returnera false om du vill ignorera dessa värden. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html)
 
   Exempelkod:
 

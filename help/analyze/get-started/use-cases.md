@@ -2,10 +2,11 @@
 description: Allmän översiktsinformation om Adobe Analytics, inklusive information om Analytics-gränssnittet samt komma igång-information för administratörer, analytiker, användare och utvecklare.
 title: Användningsexempel för analyser
 feature: Analytics Basics
-source-git-commit: 5ee4e5aa970bb24828092c04fc31cc53f43c4ade
+exl-id: 2b5f03f3-f9f9-46e8-b4ef-0796e6f4780a
+source-git-commit: 43c39b99cbae3e714b7f017dec14dd02fa350790
 workflow-type: tm+mt
-source-wordcount: '291'
-ht-degree: 1%
+source-wordcount: '264'
+ht-degree: 9%
 
 ---
 
@@ -32,13 +33,13 @@ Adobe Analytics hjälper organisationer att förstå var kunderna interagerar me
 
 Följande viktiga funktioner i Adobe Analytics:
 
-* [Samling av flerkanalsdata](https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/reporting-interface/overview-data-collection.html?lang=en)
+* [Samling av flerkanalsdata](https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/reporting-interface/overview-data-collection.html)
 
-* [Integrering av offlinedata](https://experienceleague.adobe.com/docs/analytics/import/data-sources/overview.html?lang=en)
+* [Integrering av offlinedata](https://experienceleague.adobe.com/docs/analytics/import/data-sources/overview.html)
 
 * [Ad hoc-analys i Analysis Workspace](/help/analyze/analysis-workspace/home.md)
 
-## Attribuering
+## Tillskrivning
 
 Med attribuering kan organisationer se hur olika interaktioner under kundresan påverkar konverteringen. Förutom att tillhandahålla fler traditionella attribueringsalternativ, som Linear- eller First Touch-modeller, använder Attribution i Adobe Analytics även maskininlärning och avancerade statistiska modeller för att förstå den exakta effekten av varje beröring.
 

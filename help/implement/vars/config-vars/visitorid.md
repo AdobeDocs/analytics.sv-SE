@@ -4,9 +4,9 @@ description: Använd ett anpassat besökar-ID.
 feature: Variables
 exl-id: cb336042-01a1-4a66-a947-a221a7919c1b
 role: Admin, Developer
-source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
+source-git-commit: 914b822aae659d1d0f0b8a98480090ead99e102a
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '326'
 ht-degree: 0%
 
 ---
@@ -46,6 +46,6 @@ s.visitorID = "abc123";
 >
 >En ogiltig implementering av anpassade besökar-ID:n kan leda till felaktiga data och dålig rapportprestanda. Om variabeln innehåller ett standardvärde (till exempel `"0"` eller `"NULL"`), Adobe behandlar de här träffarna som om de vore samma besökare. Detta resulterar i felaktiga data, med låga besökarantal och segment på besökarnivå som inte fungerar som förväntat. Felaktigt implementerade anpassade besökar-ID:n medför också stor belastning på bearbetningsservrar, vilket ökar [latens](/help/technotes/latency.md) och minska rapportens prestanda.
 
-## Besökar-ID som använder Web SDK och Experience Edge
+## Besökar-ID som använder Web SDK
 
-Med Experience Edge kan ni tillhandahålla flera identifierare med hjälp av XDM:s [Identitetskarta](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/overview.html?lang=en#using-identitymap). Varje identitet i en identitetskarta har ett eget namnutrymme. Du kan ange vilket namnutrymme som ska användas för besökar-ID som en del av [datastream-konfiguration](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#analytics). När detta är konfigurerat används den automatiskt som besökar-ID i Analytics när du skickar en händelse med ett värde angivet för det här namnutrymmet.
+Med Adobe Experience Platform Edge Network kan du tillhandahålla flera identifierare med hjälp av XDM:s [Identitetskarta](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/overview.html#using-identitymap). Varje identitet i en identitetskarta har ett eget namnutrymme. Du kan ange vilket namnutrymme som ska användas för besökar-ID som en del av [datastream-konfiguration](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html#analytics). När detta är konfigurerat används den automatiskt som besökar-ID i Analytics när du skickar en händelse med ett värde angivet för det här namnutrymmet.

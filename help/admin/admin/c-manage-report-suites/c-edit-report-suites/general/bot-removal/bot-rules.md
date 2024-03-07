@@ -4,9 +4,9 @@ title: Förstå och konfigurera robotregler
 feature: Bot Removal
 role: Admin
 exl-id: 1c0009f6-2746-4ef1-8dcb-e2693617e91e
-source-git-commit: b5cca97861216751c5feae23e3c0121fa9c356b1
+source-git-commit: 914b822aae659d1d0f0b8a98480090ead99e102a
 workflow-type: tm+mt
-source-wordcount: '1624'
+source-wordcount: '1623'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Punkttrafikdata lagras i en separat databas för visning i rapporter om start- o
 
 >[!NOTE]
 >
->Adobe Experience Edge ger en [söktidentifieringstjänst](https://experienceleague.adobe.com/docs/experience-platform/datastreams/bot-detection.html) vilka etiketter träffar som identifieras som om de kommer från bottar. Adobe Analytics objektidentifieringsprocess är skild från detta och refererar inte till robotpoängen som ingår i data som hämtas via Experience Edge. De två systemen använder samma IAB-robotlista, så de bör bete sig likadant i detta avseende.
+>Adobe Experience Platform Edge Network har en [söktidentifieringstjänst](https://experienceleague.adobe.com/docs/experience-platform/datastreams/bot-detection.html) vilka etiketter träffar som identifieras som om de kommer från bottar. Processen för att identifiera robotar som används i Adobe Analytics är separat och refererar inte till robotpoängen som ingår i data som hämtas via Edge Network. De två systemen använder dock samma IAB-robotlista.
 
 ## Uppdatera eller överföra robotregler
 

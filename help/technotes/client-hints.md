@@ -4,7 +4,7 @@ description: Lär dig mer om hur klienttips gradvis ersätter användaragenten s
 exl-id: e0a74daa-12a2-4999-9920-2636b061dcc8
 feature: Data Configuration and Collection
 role: Admin
-source-git-commit: d3d5b01fe17f88d07a748fac814d2161682837c2
+source-git-commit: 43c39b99cbae3e714b7f017dec14dd02fa350790
 workflow-type: tm+mt
 source-wordcount: '1184'
 ht-degree: 0%
@@ -25,11 +25,11 @@ Google delar upp klienttips för användaragenter i två kategorier: tips för l
 
 Från och med oktober 2022 började nya versioner av Chromium-webbläsare&quot;frysa&quot; operativsystemversionen som representerades i användaragentsträngen. Operativsystemsversionen är ett tips för hög entropi, så för att operativsystemsversionen ska vara korrekt i din rapportering måste du konfigurera ditt samlingsbibliotek så att du kan samla in dessa tips för hög entropi. Med tiden kommer annan enhetsinformation för användaragenten att frysas, vilket kräver att klienttipsen upprätthåller enhetens rapporteringsnoggrannhet.
 
-Klienttips kommer att införlivas i processen för sökning efter enheter i Analytics från och med den 27 februari 2023 och avslutas den 2 mars 2023. Både AppMeasurement och Web SDK stöder för närvarande insamling av tipsdata, men det kommer inte att användas i enhetssökning förrän i mitten av februari. Så som anges nedan var operativsystemsversionen fryst från och med oktober men på grund av en gradvis utrullning och det faktum att många användaragenter redan har en fryst OS-version (se mer [här](https://experienceleague.adobe.com/docs/analytics/components/dimensions/operating-systems.html?lang=en)) uppskattar vi att detta påverkar &lt;3 % av Chrome-besökarna.
+Klienttips kommer att införlivas i processen för sökning efter enheter i Analytics från och med den 27 februari 2023 och avslutas den 2 mars 2023. Både AppMeasurement och Web SDK stöder för närvarande insamling av tipsdata, men det kommer inte att användas i enhetssökning förrän i mitten av februari. Så som anges nedan var operativsystemsversionen fryst från och med oktober men på grund av en gradvis utrullning och det faktum att många användaragenter redan har en fryst OS-version (se mer [här](https://experienceleague.adobe.com/docs/analytics/components/dimensions/operating-systems.html)) uppskattar vi att detta påverkar &lt;3 % av Chrome-besökarna.
 
 >[!NOTE]
 >
-> Från och med januari 2023 är vissa versioner av Mac och Windows felaktigt representerade i användaragenten, men korrekt representerade i klienttips med hög entropi. Se [Operativsystem](https://experienceleague.adobe.com/docs/analytics/components/dimensions/operating-systems.html?lang=en) för mer information.
+> Från och med januari 2023 är vissa versioner av Mac och Windows felaktigt representerade i användaragenten, men korrekt representerade i klienttips med hög entropi. Se [Operativsystem](https://experienceleague.adobe.com/docs/analytics/components/dimensions/operating-systems.html) för mer information.
 
 Adobe Audience Manager kräver att högentropi-tips samlas in för att bevara alla funktioner. Om du använder [vidarebefordran på serversidan till Adobe Audience Manager](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf.html) kan du aktivera en samling med tips för entropi.
 
@@ -47,7 +47,7 @@ Tips om låg entropi tillhandahålls automatiskt av webbläsaren och hämtas fö
 
 För båda biblioteken är samlingen med höga entropytips **inaktiverad som standard**.
 
-För data som skickas via API, till exempel via [API för datainfogning](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/index.md) eller [API för massdatainmatning](https://experienceleague.adobe.com/docs/analytics/import/bulk-data-insert.html?lang=en), måste tips uttryckligen inkluderas i nyttolasten. Mer information finns i respektive dokumentation.
+För data som skickas via API, till exempel via [API för datainfogning](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/index.md) eller [API för massdatainmatning](https://experienceleague.adobe.com/docs/analytics/import/bulk-data-insert.html), måste tips uttryckligen inkluderas i nyttolasten. Mer information finns i respektive dokumentation.
 
 +++
 
@@ -109,7 +109,7 @@ Se [tidslinje som publicerats av Google](https://blog.chromium.org/2021/09/user-
 
 Enhetsinformation i rapporter hämtas från användaragenten. Vi har uppdaterat våra processer så att vi kan använda både användaragenten och klienttips där det finns tillgängliga.
 
-Återställnings-ID ([s_fd](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/analytics-ids.html?lang=en)) härleds från användaragenten och IP-adressen. Detta ID används endast om en cookie inte kan anges så används inte i någon större utsträckning
+Återställnings-ID ([s_fd](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/analytics-ids.html)) härleds från användaragenten och IP-adressen. Detta ID används endast om en cookie inte kan anges så används inte i någon större utsträckning
 
 +++
 

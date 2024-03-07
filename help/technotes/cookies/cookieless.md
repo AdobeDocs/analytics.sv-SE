@@ -4,7 +4,7 @@ description: Lär dig hur du minskar effekten av webbläsar-cookie-begränsninga
 feature: Data Configuration and Collection
 exl-id: 81cf3f0c-4871-435d-bcc9-bcff5c682f05
 role: Admin
-source-git-commit: d3d5b01fe17f88d07a748fac814d2161682837c2
+source-git-commit: 43c39b99cbae3e714b7f017dec14dd02fa350790
 workflow-type: tm+mt
 source-wordcount: '515'
 ht-degree: 0%
@@ -35,7 +35,7 @@ Du kan skicka data till Analytics-servern via [API för datainfogning](https://g
 
 ## FPID (First Party Device ID) med Web SDK
 
-Med Adobe Experience Platform Web SDK kan du välja att ställa in och hantera egna enhetsidentifierare i stället för Adobe-genererade Experience Cloud-ID:n (ECID). Dessa kallas för FPID (First-party device ID). Läs mer [här](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html?lang=en).
+Med Adobe Experience Platform Web SDK kan du välja att ställa in och hantera egna enhetsidentifierare i stället för Adobe-genererade Experience Cloud-ID:n (ECID). Dessa kallas för FPID (First-party device ID). Läs mer [här](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html).
 
 ## Mer information
 

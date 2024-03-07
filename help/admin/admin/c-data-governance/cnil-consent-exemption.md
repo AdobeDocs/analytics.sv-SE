@@ -4,7 +4,7 @@ title: Vilka är CNIL-riktlinjerna för användarens samtycke och cookies?
 feature: Data Governance
 role: Admin
 exl-id: 04179e58-dbba-45e2-ba57-7fe5fdedc483
-source-git-commit: 429aaa43fdae669350bdb5a5a54a7d4b9b1c65f2
+source-git-commit: 43c39b99cbae3e714b7f017dec14dd02fa350790
 workflow-type: tm+mt
 source-wordcount: '646'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Riktlinjerna ger ett begränsat undantag från kravet på samtycke (&quot;medgiv
 * Begränsad omfattning. Cookie-filen måste begränsas till en enda plats eller tillämpning. [Webbläsarcookies](https://experienceleague.adobe.com/docs/analytics/technotes/cookies/cookies.html#third-party-cookie-limitations)
 * Anonymisering. Anonymisera IP-adressens sista oktett. [Allmänna kontoinställningar](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/general-acct-settings-admin.md)
 * Dölj besökar-ID från rapportering.  Besökar-ID:n visas inte som standard i Adobe Workspace och Adobe Reports and Analytics.  Besökar-ID:n är tillgängliga i Datautflöden och Data Warehouse.  Åtkomsten till datafeeds och Data Warehouse kan begränsas av [Åtkomstbehörigheter i Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html) och [Kolumnreferens för datafeed](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html#columns%2C-descriptions%2C-and-data-types)
-* Parametrar för geopositionering. Geolokalisering kan inte vara mer exakt än postnummernivå. [Postalternativ](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/zip.html?lang=en) och [Allmänna kontoinställningar](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/general-acct-settings-admin.html)
+* Parametrar för geopositionering. Geolokalisering kan inte vara mer exakt än postnummernivå. [Postalternativ](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/zip.html) och [Allmänna kontoinställningar](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/general-acct-settings-admin.html)
 * Ange alternativ för deltagande.  Med anmälningstjänsten kan du ange besökarprotokoll för att avgöra om du kan ange en cookie på användarens enhet eller webbläsare när du besöker webbplatsen. [Anmälningstjänst](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/optin-overview.html)
 * Förhindra datadelning.  Om du vill förhindra datadelning till Adobe Audience Manager använder du `opt.dmp` kontextvariabel för [Sekretessrapportering](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/privacy-reporting.md) för att förhindra att träffar delas.
 * Åtkomst och radering. Använd Privacy Servicen för att få åtkomst och ta bort begäranden. [Analyser och Privacy Service](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-overview.html)

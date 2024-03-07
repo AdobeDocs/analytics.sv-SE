@@ -3,9 +3,9 @@ title: Bearbetningsordning för data i Adobe Analytics
 description: Lär dig ordningen på komponenter och tjänster som bearbetar data i Adobe Analytics.
 exl-id: a8dc9c12-07d3-4dc8-b2df-136f7a7a1e77
 feature: Data Configuration and Collection
-source-git-commit: c697530103ea7cd279cc3560c1daec796759e7a1
+source-git-commit: 914b822aae659d1d0f0b8a98480090ead99e102a
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '585'
 ht-degree: 0%
 
 ---
@@ -21,10 +21,10 @@ Adobe erbjuder många sätt att ändra eller ändra data innan de visas i rappor
 Innan data skickas till Adobe kompileras den vanligtvis på klientsidan på något av följande sätt:
 
 * **AppMeasurement**: En JavaScript-fil som finns på din webbplats och som refereras till på varje sida. Data skickas direkt till Adobe Analytics.
-* **Adobe Experience Platform Web SDK**: En JavaScript-fil som finns på din webbplats och som refereras till på varje sida. Data skickas till Adobe Experience Edge.
-* **Taggar i Adobe Experience Cloud Data Collection**: En JavaScript-fil som refereras till på varje sida och som innehåller regler som skapats i användargränssnittet för datainsamling. Adobe Analytics-tillägget är ett enklare sätt att implementera AppMeasurement. Web SDK-tillägget är ett enklare sätt att implementera Web SDK.
+* **Adobe Experience Platform Web SDK**: En JavaScript-fil som finns på din webbplats och som refereras till på varje sida. Data skickas till Adobe Experience Platform Edge Network.
+* **Taggar i Adobe Experience Cloud Data Collection**: En JavaScript-fil som refereras på varje sida och som innehåller regler som skapats i användargränssnittet för datainsamling. Adobe Analytics-tillägget är ett enklare sätt att implementera AppMeasurement. Web SDK-tillägget är ett enklare sätt att implementera Web SDK.
 
-Om du skickar data till Adobe Experience Edge kan du konfigurera det för att vidarebefordra data till Adobe Analytics (och många andra Adobe Experience Cloud-lösningar). Oavsett implementeringsmetod skickas i slutändan en bildbegäran med önskade variabler till datainsamlingsservrarna i Adobe.
+Om du skickar data till Edge Network kan du konfigurera det för att vidarebefordra data till Adobe Analytics (och många andra Adobe Experience Cloud-lösningar). Oavsett implementeringsmetod skickas i slutändan en bildbegäran med önskade variabler till datainsamlingsservrarna i Adobe.
 
 ## Data som kommer till Adobe Analytics datainsamlingsservrar
 
@@ -39,13 +39,13 @@ När data kommer till Adobe Analytics kan du justera data efter behov med följa
 7. **Geolokaliseringsdata**: Dimensioner som förlitar sig på IP-adresssökning (till exempel [Länder](/help/components/dimensions/countries.md) dimension) fylls i.
 8. [**IP-förvrängning**](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/general-acct-settings-admin.md): Om din organisation har valt att dölja IP-adresser i rådata, görs det när alla andra bearbetningsfunktioner har slutförts.
 
-I det här skedet registreras den enskilda träffen i rapportsvitens datatabeller. Efter standarden [latens](latency.md) kan rapporteras.
+I det här skedet registreras den enskilda träffen i rapportsvitens datatabeller. Efter standarden [latens](latency.md) intervall, är det tillgängligt för rapportering.
 
 ## Ändra data efter att de har bearbetats
 
-Data i Adobe Analytics är mestadels permanenta. Det finns dock vissa funktioner som kan möjliggöra selektiv datainjustering eller -borttagning:
+Data i Adobe Analytics är i huvudsak permanenta, men det finns vissa funktioner som kan möjliggöra selektiv datainjustering eller -borttagning:
 
 * [**API för datareparation**](https://developer.adobe.com/analytics-apis/docs/2.0/guides/endpoints/data-repair/): Redigera vissa kolumner eller ta bort önskade datarader.
-* [**Datastyrning**](/help/admin/admin/c-data-governance/an-gdpr-workflow.md): Ta bort data permanent.
+* [**Datastyrning**](/help/admin/admin/c-data-governance/an-gdpr-workflow.md): Hantera sekretessbegäranden om permanent radering av data.
 * [**Klassificeringar**](/help/components/classifications/c-classifications.md): Skapa dimensioner baserat på regler eller överförda data som gör att du kan ordna data på ett annat sätt. Den underliggande rapportsvitens data ändras inte, så du kan fritt redigera eller skriva över klassificeringsdata.
 * [**Virtuella rapportsviter**](/help/components/vrs/vrs-about.md): Skapa en alternativ rapportsvy som kan ändra tidsgränsen för besök eller tillåta [Enhetsövergripande analys](/help/components/cda/overview.md).

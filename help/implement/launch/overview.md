@@ -4,7 +4,7 @@ description: Lär dig implementera Adobe Analytics med hjälp av taggar och Anal
 feature: Tags
 exl-id: 52990731-8a68-4779-ad42-6ec94b0aabd1
 role: Admin, Developer
-source-git-commit: 9d9212313f54e4b44c5341754942ac0e0c78b84c
+source-git-commit: 43c39b99cbae3e714b7f017dec14dd02fa350790
 workflow-type: tm+mt
 source-wordcount: '365'
 ht-degree: 3%
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 # Implementera Adobe Analytics med Analytics-tillägget
 
-Under Adobe Analytics livstid har Adobe erbjudit flera olika metoder för att implementera kod på er webbplats för datainsamling. Den rekommenderade metoden för Adobe är igenom [Taggar](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=en) i Adobe Experience Platform.
+Under Adobe Analytics livstid har Adobe erbjudit flera olika metoder för att implementera kod på er webbplats för datainsamling. Den rekommenderade metoden för Adobe är igenom [Taggar](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html) i Adobe Experience Platform.
 
 Taggar i Adobe Experience Platform är en tagghanteringslösning som gör att ni kan driftsätta Analytics-kod tillsammans med andra taggningskrav. Adobe erbjuder integreringar med andra lösningar och produkter och låter er driftsätta anpassad kod. Alla dessa uppgifter kan utföras utan att någon utvecklingsteam i organisationen behöver uppdatera koden på er webbplats.
 
@@ -53,7 +53,7 @@ Alla kunder som har ett aktivt Adobe Experience Cloud-kontrakt kan använda tagg
 
 <tr>
 <td>4</td><td><b>Installera Analytics-tillägget</b> i taggegenskapen. Konfigurera Analytics-tillägget för att skicka data till Adobe Analytics.</td>
-<td><a href="https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/analytics/overview.html?lang=en">Översikt över Adobe Analytics-tillägg</a></td>
+<td><a href="https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/analytics/overview.html">Översikt över Adobe Analytics-tillägg</a></td>
 </tr>
 
 <tr>
@@ -65,7 +65,7 @@ Alla kunder som har ett aktivt Adobe Experience Cloud-kontrakt kan använda tagg
 <tr>
 <td>6</td> 
 <td><b>Validera och publicera i produktion</b>. Bädda in kod för att inkludera taggegenskapen på webbplatsens sidor. Använd sedan dataelement, regler och så vidare för att anpassa implementeringen.</td>
-<td><a href="https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=en#embed-code">Bädda in kod</a><br/><a href="./validate-publish-prod.md">Validera en utvecklingsimplementering och publicera till produktion</a></td>
+<td><a href="https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html#embed-code">Bädda in kod</a><br/><a href="./validate-publish-prod.md">Validera en utvecklingsimplementering och publicera till produktion</a></td>
 </tr>
 
 </table>
