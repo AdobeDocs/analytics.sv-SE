@@ -4,7 +4,7 @@ solution: Experience Cloud
 title: Frågor och svar för Audience Analytics
 feature: Audience Analytics
 exl-id: 86e7967c-030c-44d6-8294-e7e6d41f6fc3
-source-git-commit: c947de8eaa4e4dc3a0c10989ef6ae450cebc1f3e
+source-git-commit: 750c4b0ffb52c3f2cf25abcd76ef149a4521109e
 workflow-type: tm+mt
 source-wordcount: '1079'
 ht-degree: 0%
@@ -105,7 +105,7 @@ Du har troligtvis konflikter mellan Adobe Audience Manager sekretesskontroller m
 
 +++
 
-+++ Varför ser jag&quot;Målgruppsgräns nådd&quot; i min Analytics-rapport? (Obs! Detta kommer också att representeras som Audience ID = -1 och &quot;::max_audiences_exceeded::&quot; i Data Warehouse)
++++ Varför ser jag&quot;Målgruppsgräns nådd&quot; i min Analytics-rapport? (Obs! detta kommer också att representeras som Audience ID = -1 och `::max_audiences_exceeded::` i Data Warehouse)
 
 Som standard skickas alla segment som en besökare kvalificerar för till Analytics via integreringen Audience Analytics för Adobe Audience Manager. Om en besökare tillhör mer än 150 Adobe Audience Manager-segment i en enda träff visas **150 senast kvalificerade segment** skickas till Analytics, medan den återstående listan trunkeras. En extra flagga skickas till Analytics som anger att segmentlistan trunkerades och visas som&quot;Målgruppsgräns nådd&quot; i dimensionen Målgruppsnamn och&quot;-1&quot; i dimensionen Målgrupps-ID.
 

@@ -4,10 +4,10 @@ title: Datasekretessetiketter för analysvariabler
 feature: Data Governance
 role: Admin
 exl-id: b8c2143a-6e8e-465a-979b-aa8176e8d4e8
-source-git-commit: 429aaa43fdae669350bdb5a5a54a7d4b9b1c65f2
+source-git-commit: 750c4b0ffb52c3f2cf25abcd76ef149a4521109e
 workflow-type: tm+mt
-source-wordcount: '3539'
-ht-degree: 63%
+source-wordcount: '3532'
+ht-degree: 62%
 
 ---
 
@@ -262,4 +262,4 @@ Det finns fem standardvariabler som innehåller tidsstämplar:
 
 Koden för att generera de filer som returneras för åtkomstbegäranden om datasekretess kräver att minst en av de tre första tidsstämpelvariablerna inkluderas i åtkomstbegäran (har en ACC-etikett som gäller för typen av begäran). Om ingen av dessa inkluderas behandlas anpassad tid för träff i UTC som om den har en ACC-ALL-etikett.
 
-Den CSV-fil på träffnivå som returneras för datasekretessåtkomstbegäranden konverterar värdena i dessa fält från unika tidsstämplar till datum-/tidsfält i formatet ÅÅÅ-MM-DD HH:MM:SS (till exempel 2018-05-01 13:49:2). I den sammanfattande HTML-filen trunkeras dessa tidsstämpelvärden så att endast datumet ÅÅÅÅ-MM-DD inkluderas, vilket minskar antalet unika värden som finns för dessa fält.
+Den CSV-fil på träffnivå som returneras för åtkomstbegäranden för datasekretess konverterar värdena i dessa fält från unika tidsstämplar till datum-/tidsfält i formatet `YYYY-MM-DD HH:MM:SS` (till exempel `2018-05-01 13:49:22`). I den sammanfattande HTML-filen kommer dessa tidsstämpelvärden att trunkeras så att endast datumet anges. `YYYY-MM-DD`, för att minska antalet unika värden som förekommer för dessa fält.
