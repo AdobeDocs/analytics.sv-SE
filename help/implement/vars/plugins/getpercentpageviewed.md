@@ -4,9 +4,9 @@ description: Hämta den procentandel av sidan som besökaren visade.
 feature: Variables
 exl-id: 7a842cf0-f8cb-45a9-910e-5793849bcfb8
 role: Admin, Developer
-source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
+source-git-commit: d53a2aba80455c2d807bc47e579cad4483c99c3b
 workflow-type: tm+mt
-source-wordcount: '728'
+source-wordcount: '750'
 ht-degree: 0%
 
 ---
@@ -78,7 +78,11 @@ Om du anropar den här funktionen returneras ingenting. I stället anges följan
 
 Tilldela en eller flera av dessa variabler till eVars för att visa dimensionsdata i rapporter.
 
-Denna plugin skapar en cookie från första part som kallas `s_ppv` som innehåller ovanstående värden. Den förfaller i slutet av webbläsarsessionen.
+Detta plugin-program skapar tre cookies från första part som upphör i slutet av en webbläsarsession:
+
+* `s_ppv`: Lagrar alla värden som visas genom att funktionen anropas
+* `s_tp`: Sparar den totala pixelhöjden för föregående sida
+* `s_ips`: Sparar den inledande procentandelen rullad från föregående sida
 
 ## Exempel
 
