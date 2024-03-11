@@ -4,7 +4,7 @@ description: Använd API:t för Adobe Experience Platform Edge Network Server f�
 exl-id: 1ede95b7-4f17-4d69-aba6-62b253b6693a
 feature: Implementation Basics
 role: Admin, Developer, Leader
-source-git-commit: 43c39b99cbae3e714b7f017dec14dd02fa350790
+source-git-commit: 2e5171842794d7acc7bb67048b734f47a438cf1c
 workflow-type: tm+mt
 source-wordcount: '268'
 ht-degree: 1%
@@ -53,7 +53,7 @@ Du använder vanligtvis Experience Platform Edge Network Server API för att sam
 
 <td>5</td>
 <td><b>Lägg till en Adobe Analytics-tjänst</b> till din datastream. Tjänsten styr om och hur data skickas till Adobe Analytics.</td>
-<td><a href="https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/interacting-other-adobe-solutions/interacting-adobe-analytics.htmls">Interagera med Adobe Analytics</a></td>
+<td><a href="https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/interacting-other-adobe-solutions/interacting-adobe-analytics.html">Interagera med Adobe Analytics</a></td>
 </tr>
 
 
