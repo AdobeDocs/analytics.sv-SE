@@ -1,13 +1,13 @@
 ---
-description: Tabelldata som beskriver kolumnerna i datafeeden.
-keywords: Dataflöde; Kolumner
+description: Tabelldata som beskriver kolumnerna i dataflödet.
+keywords: Datafeed;kolumner
 subtopic: data feeds
 title: Referens för datakolumn
 feature: Data Feeds
 exl-id: e1492147-6e7f-4921-b509-898e7efda596
-source-git-commit: dfec68a0ecdf691ab1005919fa3df01158a9cec9
+source-git-commit: 6fbfaf295899b77fc22f79ee58b70a19c7e5563c
 workflow-type: tm+mt
-source-wordcount: '3899'
+source-wordcount: '3928'
 ht-degree: 0%
 
 ---
@@ -30,8 +30,8 @@ Tidigare uppdateringar av tabellen finns på den här sidans [implementeringshis
 
 | Kolumnnamn | Kolumnbeskrivning | Datatyp |
 | --- | --- | --- |
-| **`accept_language`** | Visar alla godkända språk enligt HTTP-huvudet Accept-Language i en bildbegäran. | char(20) |
-| **`adload`** | Inläsningar av mediaannonser | varchar(255) |
+| **`accept_language`** | Visar alla godkända språk enligt HTTP-huvudet Accept-Language i en bildbegäran. | Röding(20) |
+| **`adload`** | Medieannons läses in | Varchar(255) |
 | **`aemassetid`** | En variabel med flera värden som motsvarar tillgångs-ID:n (GUID:n) för en uppsättning Adobe Experience Manager Assets. Ökar imponeringshändelser. | text |
 | **`aemassetsource`** | Identifierar resurshändelsens källa. Används i Adobe Experience Manager. | varchar(255) |
 | **`aemclickedassetid`** | Tillgångs-ID för en Adobe Experience Manager-resurs. Ökningar Klicka på händelser. | varchar(255) |
@@ -49,14 +49,14 @@ Tidigare uppdateringar av tabellen finns på den här sidans [implementeringshis
 | **`click_context`** | Används inte längre. Sidnamn där länkklickningen inträffade. En del av det gamla ClickMapet-verktyget. | varchar(255) |
 | **`click_context_type`** | Används inte längre. Anger om `click_context` har ett sidnamn eller har en sidadress som standard.<br>0: Sidans URL<br>1: Sidnamn | tinyint unsigned |
 | **`click_sourceid`** | Används inte längre. Numeriskt ID för platsen på den sida där länken klickades. En del av det gamla ClickMapet-verktyget. | int unsigned |
-| **`click_tag`** | Används inte längre. Typ av HTML-element som användaren klickade på. | Röding(10) |
-| **`clickmaplink`** | Länk till Activity Map | varchar(255) |
+| **`click_tag`** | Används inte längre. Typ av HTML-element som du klickade på. | char(10) |
+| **`clickmaplink`** | Activity Map link | varchar(255) |
 | **`clickmaplinkbyregion`** | Activity Map länk per region | varchar(255) |
 | **`clickmappage`** | Activity Map page | varchar(255) |
 | **`clickmapregion`** | Activity Map | varchar(255) |
 | **`code_ver`** | API- eller klient-SDK-version som används för att kompilera och skicka bildbegäran. | char(16) |
-| **`color`** | ID för färgdjup baserat på värdet för `c_color` kolumn. Refererar till `color_depth.tsv` uppslagstabell. | smallint unsigned |
-| **`connection_type`** | Numeriskt ID som representerar anslutningstypen. Variabel som används i [Anslutningstyp](/help/components/dimensions/connection-type.md) dimension. Refererar till `connection_type.tsv` uppslagstabell. | tinyint unsigned |
+| **`color`** | ID för färgdjup baserat på värdet för `c_color` kolumn. Refererar till `color_depth.tsv` uppslagstabell. | smallint osignerad |
+| **`connection_type`** | Numeriskt ID som representerar anslutningstypen. Variabel som används i dimensionen [Anslutningstyp](/help/components/dimensions/connection-type.md) . Refererar till uppslagstabellen `connection_type.tsv` . | tinyint unsigned |
 | **`cookies`** | Variabel som används i [Cookie-stöd](/help/components/dimensions/cookie-support.md) dimension.<br>Y: Aktiverad<br>N: Inaktiverad<br>U: Okänd | char(1) |
 | **`country`** | Numeriskt ID som representerar värden som finns i `country.tsv` sökning. | smallint unsigned |
 | **`ct_connect_type`** | Relaterat till `connection_type` kolumn. De vanligaste värdena är LAN/Wifi, mobiloperatör och modem. | char(20) |
@@ -67,17 +67,18 @@ Tidigare uppdateringar av tabellen finns på den här sidans [implementeringshis
 | **`cust_visid`** | Om ett anpassat besökar-ID anges fylls det i i den här kolumnen. | varchar(255) |
 | **`daily_visitor`** | Flagga som avgör om träffen är en ny daglig besökare. | tinyint unsigned |
 | **`dataprivacyconsentoptin`** | Variabel som används i [Medgivandehanteringsanmälan](/help/components/dimensions/cm-opt-in.md) dimension. Flera värden kan förekomma per träff, avgränsade med ett rör (`\|`). Giltiga värden är `DMP` och `SELL`. | varchar(100) |
-| **`dataprivacyconsentoptout`** | Variabel som används i [Avanmäl dig till hantering av samtycke](/help/components/dimensions/cm-opt-out.md) dimension. Flera värden kan finnas per träff, avgränsade med ett lodstreck (`\|`). Giltiga värden är `SSF`, `DMP`, och `SELL`. | varchar(100) |
+| **`dataprivacyconsentoptout`** | Variabel som används i [Avanmäl dig till hantering av samtycke](/help/components/dimensions/cm-opt-out.md) dimension. Flera värden kan förekomma per träff, avgränsade med ett rör (`\|`). Giltiga värden är `SSF`, `DMP`och `SELL`. | varchar(100) |
+| **`dataprivacydmaconsent`** | Värde som identifierar om samtycke inhämtas för att skicka data från Adobe Analytics via Adobe Advertising till tredjepartsleverantörer av annonser (som Google). Se [Annonsmedgivande](/help/components/dimensions/ad-consent.md) för mer information. | varchar(100) |
 | **`date_time`** | Tidpunkten för träffen i läsbart format, baserat på rapportsvitens tidszon. | datetime |
 | **`domain`** | Variabel som används i [Domän](/help/components/dimensions/domain.md) dimension. Baserat på besökarens internetanslutning. | varchar(100) |
 | **`duplicate_events`** | Listar varje händelse som räknats som en dubblett. | varchar(255) |
 | **`duplicate_purchase`** | Flagga som anger att köphändelsen för den här träffen ignoreras eftersom den är en dubblett. | tinyint unsigned |
 | **`duplicated_from`** | Används endast i rapportsviter som innehåller VISTA-regler för träffkopior. Anger vilken rapportsvit som träffen kopierades från. | varchar(40) |
 | **`ef_id`** | The `ef_id` används i integreringar med Adobe Advertising. | varchar(255) |
-| **`evar1 - evar250`** | Egna variabler 1-250. Används i [eVar](/help/components/dimensions/evar.md) dimensioner. Varje organisation använder eVars på olika sätt. Det bästa stället att få mer information om hur er organisation fyller i respektive eVars är ett dokument som är specifikt för er organisation. | Varchar(255) |
-| **`event_list`** | Kommaavgränsad lista med numeriska ID:n som representerar händelser som utlöses vid träffen. Innehåller både standardhändelser och anpassade händelser 1–1000. Använder `event.tsv` uppslag. | SMS |
-| **`exclude_hit`** | Flagga som anger att träffen är exkluderad från rapportering. The `visit_num` kolumnen ökas inte för uteslutna träffar.<br>1: Används inte. En del av en skrapad funktion.<br>2: Används inte. En del av en skrapad funktion.<br>3: Används inte längre. Undantag för användaragent<br>4: Uteslutning baserad på IP-adress<br>5: Information om vitala träffar saknas, till exempel `page_url`, `pagename`, `page_event`, eller `event_list`<br>6: JavaScript bearbetade inte träffen korrekt<br>7: Kontospecifikt undantag, t.ex. i VISTA-regler<br>8: Används inte. Alternativt kontospecifikt undantag.<br>9: Används inte. En del av en skrapad funktion.<br>10: Ogiltig valutakod<br>11: Träffen saknade en tidsstämpel i en rapportsvit med endast tidsstämpling, eller en träff innehöll en tidsstämpel i en rapportsserie utan tidsstämpel<br>12: Används inte. En del av en skrapad funktion.<br>13: Används inte. En del av en skrapad funktion.<br>14: Målträff som inte matchar en Analytics-träff<br>15: Används inte för närvarande.<br>16: Advertising Cloud slog till som inte matchade en Analytics-träff | tinyint unsigned |
-| **`first_hit_page_url`** | Besökarens allra första URL. | Varchar(255) |
+| **`evar1 - evar250`** | Egna variabler 1-250. Används i [eVar](/help/components/dimensions/evar.md) dimensioner. Varje organisation använder eVars på olika sätt. Det bästa stället att få mer information om hur er organisation fyller i respektive eVars är ett dokument som är specifikt för er organisation. | varchar(255) |
+| **`event_list`** | Kommaavgränsad lista med numeriska ID:n som representerar händelser som utlöses vid träffen. Innehåller både standardhändelser och anpassade händelser 1-1000. Användningsområden `event.tsv` sökning. | text |
+| **`exclude_hit`** | Flagga som anger att träffen är exkluderad från rapportering. The `visit_num` kolumnen ökas inte för uteslutna träffar.<br>1: Används inte. En del av en skrapad funktion.<br>2: Används inte. En del av en skrapad funktion.<br>3: Används inte längre. Undantag för användaragent<br>4: Uteslutning baserad på IP-adress<br>5: Information om vitala träffar saknas, till exempel `page_url`, `pagename`, `page_event`, eller `event_list`<br>6: JavaScript bearbetade inte träffen korrekt<br>7: Kontospecifikt undantag, t.ex. i VISTA-regler<br>8: Används inte. Alternativt kontospecifikt undantag.<br>9: Används inte. En del av en skrapad funktion.<br>10: Ogiltig valutakod<br>11: Träffen saknade en tidsstämpel i en rapportsvit med endast tidsstämpling, eller en träff innehöll en tidsstämpel i en rapportsserie utan tidsstämpel<br>12: Används inte. En del av en skrapad funktion.<br>13: Används inte. En del av en skrapad funktion.<br>14: Målträff som inte matchar en Analytics-träff<br>15: Används inte för närvarande.<br>16: Annonsmolnträff som inte matchade en Analytics-träff | Tinyint osignerad |
+| **`first_hit_page_url`** | Besökarens allra första URL. | varchar(255) |
 | **`first_hit_pagename`** | Variabel som används i [Startsida, original](/help/components/dimensions/entry-dimensions.md) dimension. Besökarens ursprungliga startsidnamn. | varchar(100) |
 | **`first_hit_ref_domain`** | Variabel som används i [Ursprunglig hänvisande domän](/help/components/dimensions/original-referring-domain.md) dimension. Baserat på `first_hit_referrer`. Den första refererande domänen för besökaren. | varchar(100) |
 | **`first_hit_ref_type`** | Numeriskt ID som representerar referenstypen för besökarens allra första referent. Användningsområden `referrer_type.tsv` sökning. | tinyint unsigned |
@@ -96,12 +97,12 @@ Tidigare uppdateringar av tabellen finns på den här sidans [implementeringshis
 | **`homepage`** | Används inte längre. Anger om den aktuella URL:en är webbläsarens hemsida. | char(1) |
 | **`hourly_visitor`** | Flagga för att avgöra om träffen är en ny timbesökare. | tinyint unsigned |
 | **`ip`** | IPv4-adressen, baserad på HTTP-huvudet i bildbegäran. Endast för `ipv6`; om den här kolumnen innehåller en icke-komplicerad IP-adress, `ipv6` är tom. | char(20) |
-| **`ip2`** | Används inte. Backend-referensvariabel för rapportsviter som innehåller VISTA-regler baserat på IP-adress. | Röding(20) |
-| **`ipv6`** | Den komprimerade IPv6-adressen, om den är tillgänglig. Ömsesidigt uteslutande för `ip`; om den här kolumnen innehåller en icke-dold IP-adress, `ip` är tom. | varchar(40) |
+| **`ip2`** | Används inte. Referensvariabel för serverdel för rapportsviter som innehåller VISTA-regler baserade på IP-adress. | char(20) |
+| **`ipv6`** | Den komprimerade IPv6-adressen, om den är tillgänglig. Endast för `ip`; om den här kolumnen innehåller en icke-komplicerad IP-adress, `ip` är tom. | varchar(40) |
 | **`j_jscript`** | Den version av JavaScript som stöds av webbläsaren. | char(5) |
 | **`java_enabled`** | Flagga som anger om Java är aktiverat. <br>Y: Aktiverad <br>N: Inaktiverad <br>U: Okänd | char(1) |
 | **`javascript`** | Uppslags-ID för JavaScript-version, baserat på `j_jscript`. Refererar till `javascript_version` uppslagstabell. | tinyint unsigned |
-| **`language`** | Numeriskt ID för språk. Användningsområden `languages.tsv` uppslagstabell. | smallint unsigned |
+| **`language`** | Numeriskt ID för språk. Använder `languages.tsv` uppslagstabell. | smallint osignerad |
 | **`last_hit_time_gmt`** | Tidsstämpel (i UNIX®-tid) för föregående träff. Används för att beräkna [Dagar sedan senaste besök](/help/components/dimensions/days-since-last-visit.md) dimension. | int |
 | **`last_purchase_num`** | Variabel som används i [Kundlojalitet](/help/components/dimensions/customer-loyalty.md) dimension. Antalet tidigare inköp som besökaren har gjort. <br>0: Inga tidigare inköp (inte en kund) <br>1: 1 föregående köp (ny kund) <br>2: 2 tidigare inköp (returkund) <br>3: 3 eller fler tidigare inköp (lojal kund) | int unsigned |
 | **`last_purchase_time_gmt`** | Används i [Dagar sedan senaste köp](/help/components/dimensions/days-since-last-purchase.md) dimension. Tidsstämpel (i UNIX®-tid) för det senaste köpet. För förstagångsköp och besökare som inte har gjort något inköp tidigare är det här värdet `0`. | int |
@@ -113,7 +114,7 @@ Tidigare uppdateringar av tabellen finns på den här sidans [implementeringshis
 | **`mobile_id`** | Om användaren använder en mobil enhet anger du enhetens numeriska ID. Nyckelvärdet för `mobile_attributes.tsv` [Dynamisk sökning](dynamic-lookups.md). | int |
 | **`mobileaction`** | Mobilåtgärd. Samlas in automatiskt när `trackAction` anropas i Mobiltjänster. Tillåter automatisk åtgärdspunkt i appen. | varchar(100) |
 | **`mobileappid`** | ID för mobilapp. Lagrar programnamnet och versionen i följande format: `[AppName] [BundleVersion]` | varchar(255) |
-| **`mobileappperformanceappid`** | Används i Apteligent-dataanslutningen. App-ID:t som används i Apteligent. | varchar(255) |
+| **`mobileappperformanceappid`** | Används i Apteligent-dataanslutningen. Program-ID som används i Apteligent. | varchar(255) |
 | **`mobileappperformancecrashid`** | Används i Apteligent-dataanslutningen. Det krasch-ID som används i Apteligent. | varchar(255) |
 | **`mobileappstoreobjectid`** | Används i Appfigurations dataanslutning. Objekt-ID för App Store. | varchar(255) |
 | **`mobilebeaconmajor`** | Mobiltjänster är viktiga | varchar(100) |
@@ -122,10 +123,10 @@ Tidigare uppdateringar av tabellen finns på den här sidans [implementeringshis
 | **`mobilebeaconuuid`** | Beacon UUID för mobiltjänster | varchar(100) |
 | **`mobilecampaigncontent`** | Namnet eller ID för innehållet som visade länken. Fylls i av Anskaffning av mobilapp. | varchar(255) |
 | **`mobilecampaignmedium`** | Marknadsföringsmedium, som banner eller e-post. Fylls i av Anskaffning av mobilapp. | varchar(255) |
-| **`mobilecampaignname`** | Namnet på kampanjen, lagras också i kampanjvariabeln. Fylls i av Förvärv av mobilapp. | Varchar(255) |
+| **`mobilecampaignname`** | Namnet på kampanjen, som också lagras i kampanjvariabeln. Fylls i av Anskaffning av mobilapp. | varchar(255) |
 | **`mobilecampaignsource`** | Ursprunglig hänvisare, t.ex. nyhetsbrev eller sociala medier. Fylls i av Anskaffning av mobilapp. | varchar(255) |
 | **`mobilecampaignterm`** | Betalnyckelord eller andra termer som du vill spåra med förvärvet. Fylls i av Anskaffning av mobilapp. | varchar(255) |
-| **`mobiledayofweek`** | Nummer på den veckodag då appen startades. | Varchar(255) |
+| **`mobiledayofweek`** | Nummer på den veckodag då appen startades. | varchar(255) |
 | **`mobiledayssincefirstuse`** | Antal dagar sedan appen kördes för första gången. | varchar(255) |
 | **`mobiledayssincelastupgrade`** | RETIRED - Samlades in från kontextdatavariabeln a.DaysSinceLastUpgrade. Antalet dagar som har gått sedan föregående session. | varchar(255) |
 | **`mobiledayssincelastuse`** | Antal dagar sedan appen senast kördes. | varchar(255) |
@@ -139,7 +140,7 @@ Tidigare uppdateringar av tabellen finns på den här sidans [implementeringshis
 | **`mobilemessagebuttonname`** | Samlas in från kontextdatavariabeln `a.message.button.id`. Används för meddelanden i appen för att identifiera knappen som stängde meddelandet. | varchar(100) |
 | **`mobilemessageid`** | Meddelande-ID i appen | varchar(255) |
 | **`mobilemessageonline`** | Meddelande i appen online | varchar(255) |
-| **`mobilemessagepushoptin`** | Samlas in från kontextdatavariabeln `a.push.optin`. Ställ in på &quot;true&quot; när användaren väljer att skicka push-meddelanden. Annars är värdet &quot;false&quot;. | varchar(255) |
+| **`mobilemessagepushoptin`** | Samlas in från kontextdatavariabeln `a.push.optin`. Ange som&quot;true&quot; när användaren väljer att skicka meddelanden, annars är värdet&quot;false&quot;. | varchar(255) |
 | **`mobilemessagepushpayloadid`** | Samlas in från kontextdatavariabeln `a.push.payloadid`. Används i push-meddelanden som nyttolast-ID. | varchar(255) |
 | **`mobileosenvironment`** | RETIRED - Samlad från kontextdatavariabeln `a.OSEnvironment`. Lägesmiljö, t.ex. Android eller iOS. | varchar(255) |
 | **`mobileosversion`** | Mobiltjänstens operativsystemversion | varchar(255) |
@@ -165,16 +166,16 @@ Tidigare uppdateringar av tabellen finns på den här sidans [implementeringshis
 | **`page_event_var1`** | Används endast vid förfrågningar om länkspårningsbilder. URL-adressen till den nedladdningslänk, den avslutningslänk eller anpassade länk som du klickar på. | text |
 | **`page_event_var2`** | Används endast vid förfrågningar om länkspårningsbilder. Länkens anpassade namn (om det anges). | varchar(100) |
 | **`page_event_var3`** | Används inte längre. Behållna data från undersökningen och mediemodulen. Fyllda gamla videorapporter i tidigare versioner av Adobe Analytics. | text |
-| **`page_type`** | Används för att fylla i dimensionen [Sidor hittades](/help/components/dimensions/pages-not-found.md) inte. Används uteslutande för 404 sidor. Den här variabeln ska antingen vara tom eller innehålla värdet `ErrorPage`. | Röding(20) |
-| **`page_url`** | Webbadressen till träffen. Observera att `post_page_url` det tas bort för bildbegäranden om länkspårning och använder datatypen varchar(255). | text |
-| **`pagename`** | Används för att fylla i [Sida](/help/components/dimensions/page.md) dimension. Om [`pagename`](/help/implement/vars/page-vars/pagename.md) variabeln är tom, Analytics använder `page_url` i stället. | varchar(100) |
+| **`page_type`** | Används för att fylla i [Sidorna hittades inte](/help/components/dimensions/pages-not-found.md) dimension. Används endast för 404 sidor. Variabeln ska antingen vara tom eller innehålla värdet `ErrorPage`. | Röding(20) |
+| **`page_url`** | Webbadressen till träffen. Observera att `post_page_url` det tas bort för bildbegäranden om länkspårning och använder datatypen varchar(255). | SMS |
+| **`pagename`** | Används för att fylla i dimensionen [Sida](/help/components/dimensions/page.md) . Om variabeln [`pagename`](/help/implement/vars/page-vars/pagename.md) är tom används `page_url` Analytics i stället. | varchar(100) |
 | **`pagename_no_url`** | Liknar `pagename`, förutom att den inte går tillbaka till `page_url`. Endast `post` -kolumnen är tillgänglig. | varchar(100) |
 | **`paid_search`** | Flagga som anges om träffen matchar betald sökningsidentifiering. | tinyint unsigned |
 | **`partner_plugins`** | Används inte. En del av en skrapad funktion. | varchar(255) |
 | **`persistent_cookie`** | Används i [Stöd för permanenta cookies](/help/components/dimensions/persistent-cookie-support.md) dimension. Anger om besökaren stöder cookies som inte tas bort efter varje träff. | char(1) |
 | **`plugins`** | Används inte längre. Lista med numeriska ID:n som motsvarar plugin-program som är tillgängliga i webbläsaren. Användningsområden `plugins.tsv` sökning. | varchar(180) |
 | **`pointofinterest`** | Intressepunktsnamn för mobiltjänster | varchar(255) |
-| **`pointofinterestdistance`** | Avstånd för mobiltjänster till intressanta center | Varchar(255) |
+| **`pointofinterestdistance`** | Avstånd för mobiltjänster till intressanta center | varchar(255) |
 | **`post_`** kolumner | Innehåller det värde som används i rapporterna. Varje inläggskolumn fylls i efter serversidans logik, bearbetningsregler och VISTA-regler. Adobe rekommenderar att du i de flesta fall använder inläggskolumner. | Se respektive icke-postkolumn |
 | **`prev_page`** | Används inte. Adobe-ID för föregående sida. | int unsigned |
 | **`product_list`** | Produktlistan har skickats in via [`products`](/help/implement/vars/page-vars/products.md) variabel. Produkterna avgränsas med kommatecken medan de enskilda produktegenskaperna avgränsas med semikolon. | text |
@@ -183,14 +184,14 @@ Tidigare uppdateringar av tabellen finns på den här sidans [implementeringshis
 | **`purchaseid`** | Unik identifierare för ett köp, enligt inställningen med [`purchaseID`](/help/implement/vars/page-vars/purchaseid.md) variabel. Används av `duplicate_purchase` kolumn. | char(20) |
 | **`quarterly_visitor`** | Flagga som avgör om träffen är en ny kvartalsbesökare. | tinyint unsigned |
 | **`ref_domain`** | Baserat på refererarkolumnen. Den refererande domänen för träffen. Används i [Refererande domän](/help/components/dimensions/referring-domain.md) dimension. | varchar(100) |
-| **`ref_type`** | Ett numeriskt ID som representerar typen av referens för träffen. Används i [Referenstyp](/help/components/dimensions/referrer-type.md) dimension. <br>1: Inuti din webbplats<br>2: Andra webbplatser <br>3: Sökmotorer <br>4: hårddisk <br>5: USENET <br>6: Typed/Bookmarked (ingen referent) <br>7: E-post <br>8: Inget JavaScript <br>9: Sociala nätverk | Tinyint osignerad |
-| **`referrer`** | Sidans URL för föregående sida. Används i dimensionen [Referent](/help/components/dimensions/referrer.md) . Observera att while `referrer` använder datatypen varchar(255) `post_referrer` och datatypen varchar(244). | Varchar(255) |
-| **`resolution`** | Numeriskt ID som representerar bildskärmens upplösning. Används i [Bildskärmsupplösning](/help/components/dimensions/monitor-resolution.md) dimension. Använder `resolution.tsv` uppslagstabell. | smallint osignerad |
-| **`s_kwcid`** | Nyckelords-ID som används i Adobe Advertising-integreringar. | Varchar(255) |
-| **`s_resolution`** | Värde för rå skärmupplösning. Samlas in med hjälp av JavaScript-funktionen `screen.width x screen.height`. | char(20) |
-| **`search_engine`** | Numeriskt ID som representerar sökmotorn som hänvisade besökaren till din webbplats. Använder `search_engines.tsv` uppslag. | smallint osignerad |
-| **`search_page_num`** | Används av dimensionen [All Search Page Rank](/help/components/dimensions/all-search-page-rank.md) . Anger vilken sida med sökresultat som din webbplats visades på innan användaren klickade sig vidare till din webbplats. | smallint unsigned |
-| **`secondary_hit`** | Flagga som spårar sekundära träffar. Ursprungligen kommer taggar för flera programsviter och VISTA-regler som kopierar träffar. | tinyint unsigned |
+| **`ref_type`** | Ett numeriskt ID som representerar typen av referens för träffen. Används i [Referenstyp](/help/components/dimensions/referrer-type.md) dimension. <br>1: Inuti din webbplats<br>2: Andra webbplatser <br>3: Sökmotorer <br>4: hårddisk <br>5: USENET <br>6: Typed/Bookmarked (ingen referent) <br>7: E-post <br>8: Inget JavaScript <br>9: Sociala nätverk | tinyint unsigned |
+| **`referrer`** | Föregående sidas URL. Används i dimensionen [Referent](/help/components/dimensions/referrer.md) . Observera att while `referrer` använder datatypen varchar(255) `post_referrer` och datatypen varchar(244). | varchar(255) |
+| **`resolution`** | Numeriskt ID som representerar bildskärmens upplösning. Används i [Bildskärmsupplösning](/help/components/dimensions/monitor-resolution.md) dimension. Användningsområden `resolution.tsv` uppslagstabell. | smallint unsigned |
+| **`s_kwcid`** | Nyckelord-ID som används i integreringar med Adobe Advertising. | Varchar(255) |
+| **`s_resolution`** | Upplösningsvärde för Raw-skärm. Samlas in med JavaScript-funktionen `screen.width x screen.height`. | char(20) |
+| **`search_engine`** | Numeriskt ID som representerar sökmotorn som refererade besökaren till webbplatsen. Användningsområden `search_engines.tsv` sökning. | smallint osignerad |
+| **`search_page_num`** | Används av dimensionen [All Search Page Rank](/help/components/dimensions/all-search-page-rank.md) . Anger vilken sida med sökresultat som din webbplats visades på innan användaren klickade sig vidare till din webbplats. | smallint osignerad |
+| **`secondary_hit`** | Flagga som spårar sekundära träffar. Kommer vanligtvis från taggning av flera programsviter och VISTA-regler som kopierar träffar. | tinyint unsigned |
 | **`service`** | Används inte. Använd `page_event` i stället. | char(2) |
 | **`socialaccountandappids`** | Används inte längre. Socialt konto och program-ID | varchar(255) |
 | **`socialassettrackingcode`** | Används inte längre. Variabel för social kampanj | varchar(255) |
@@ -207,14 +208,14 @@ Tidigare uppdateringar av tabellen finns på den här sidans [implementeringshis
 | **`socialownedpropertyid`** | Används inte längre. ID för socialt ägd egendom | varchar(255) |
 | **`socialownedpropertyname`** | Används inte längre. Namn på egendom som ägs av sociala medier | varchar(255) |
 | **`socialownedpropertypropertyvsapp`** | Används inte längre. Egendom i sociala medier kontra app | varchar(255) |
-| **`sourceid`** | Käll-ID | int osignerad |
-| **`state`** | Tillståndsvariabel. | varchar(50) |
-| **`stats_server`** | Inte till nytta. Adobe intern server som bearbetade träffen. | char(30) |
-| **`survey`** | Används inte längre. Adobe Survey-variabel. Endast kolumnen `post` är tillgänglig. | SMS |
-| **`survey_instances`** | Används inte längre. Adobe Survey-instansvariabel. | text |
+| **`sourceid`** | Käll-ID | int unsigned |
+| **`state`** | State-variabel. | varchar(50) |
+| **`stats_server`** | Inte till användning. Adobe intern server som bearbetade träffen. | char(30) |
+| **`survey`** | Används inte längre. Adobe Survey-variabel. Endast `post` -kolumnen är tillgänglig. | SMS |
+| **`survey_instances`** | Används inte längre. Variabel för Adobe Survey-instanser. | text |
 | **`t_time_info`** | Lokal tid för besökaren. Formatet är: `M/D/YYYY HH:MM:SS Month (0-11, 0=January) Timezone offset (in minutes)` | varchar(100) |
-| **`tnt`** | Används i Adobe Target-integreringar. Representerar alla tester som du för närvarande är kvalificerad för. Formatet är: `TargetCampaignID:TargetRecipeID:TargetType\|Event/Action`. | text |
-| **`tnt_action`** | Används i Adobe Target integreringar. Representerar alla tester som träffen är kvalificerad för. | text |
+| **`tnt`** | Används i Adobe Target-integreringar. Representerar alla tester som du för närvarande är kvalificerad för. Formatet är: `TargetCampaignID:TargetRecipeID:TargetType\|Event/Action`. | SMS |
+| **`tnt_action`** | Används i Adobe Target-integreringar. Representerar alla tester som träffen har kvalificerat sig för. | text |
 | **`tnt_instances`** | Används i Adobe Target integreringar. Målförekomstvariabel. | text |
 | **`tnt_post_vista`** | Används inte längre. Använd `post_tnt` i stället. | text |
 | **`transactionid`** | En unik identifierare där olika datapunkter kan överföras senare via datakällor. Samlas med [`transactionID`](/help/implement/vars/page-vars/transactionid.md) variabel. | text |
@@ -222,8 +223,8 @@ Tidigare uppdateringar av tabellen finns på den här sidans [implementeringshis
 | **`ua_color`** | Används inte längre. Används tidigare som reserv för färgdjup. | char(20) |
 | **`ua_os`** | Används inte längre. Används tidigare som reserv för operativsystemet. | char(80) |
 | **`ua_pixels`** | Används inte längre. Används tidigare som reserv för webbläsarens höjd och bredd. | char(20) |
-| **`user_agent`** | Användaragentsträng som skickas i HTTP-huvudet i bildbegäran. | text |
-| **`user_hash`** | Inte till användning. Hash för rapportens Suite-ID. Använd `username` i stället. | int osignerad |
+| **`user_agent`** | Användaragentsträng som skickas i HTTP-huvudet i bildbegäran. | SMS |
+| **`user_hash`** | Inte till nytta. Hash på rapportsvitens ID. Använd `username` istället. | int osignerad |
 | **`user_server`** | Används i [Server](/help/components/dimensions/server.md) dimension. | varchar(100) |
 | **`userid`** | Inte till användning. Det numeriska ID:t för rapportsvitens ID. Använd `username` i stället. | int unsigned |
 | **`username`** | Rapportsvitens ID för träffen. | char(40) |
@@ -251,8 +252,8 @@ Tidigare uppdateringar av tabellen finns på den här sidans [implementeringshis
 | **`videocampaign`** | Videokurs | varchar(255) |
 | **`videochannel`** | Videokanal | varchar(255) |
 | **`videochapter`** | Namn på videokapitel | varchar(255) |
-| **`videocontenttype`** | Videoinnehållstyp. Ange automatiskt som Video för alla videovyer | varchar(255) |
-| **`videodaypart`** | Video day part | Varchar(255) |
+| **`videocontenttype`** | Videoinnehållstyp. Ställ in på Video automatiskt för alla videovisningar | Varchar(255) |
+| **`videodaypart`** | Video dag del | Varchar(255) |
 | **`videoepisode`** | Videoavsnitt | varchar(255) |
 | **`videofeedtype`** | Typ av videofeed | varchar(255) |
 | **`videogenre`** | Videogenre | text |
@@ -276,13 +277,13 @@ Tidigare uppdateringar av tabellen finns på den här sidans [implementeringshis
 | **`videosegment`** | Videosegment | varchar(255) |
 | **`videoshow`** | Videoprogram | varchar(255) |
 | **`videoshowtype`** | Videovisningstyp | varchar(255) |
-| **`videostreamtype`** | Typ av videoström | Varchar(255) |
+| **`videostreamtype`** | Typ av videoström | varchar(255) |
 | **`visid_high`** | Används med `visid_low` för att unikt identifiera en besökare. | bigint unsigned |
 | **`visid_low`** | Används med `visid_high` för att unikt identifiera en besökare. | bigint unsigned |
 | **`visid_new`** | Flagga som identifierar om träffen innehåller ett nyligen genererat besökar-ID. | char(1) |
 | **`visid_timestamp`** | Om besökar-ID nyligen genererades, anger tidsstämpeln (i UNIX®-tid) för när besökar-ID genererades. | int |
-| **`visid_type`** | Ej för extern användning; används internt av Adobe för optimering av bearbetning. Numeriskt ID som representerar den metod som används för att identifiera besökaren.<br>`0`: Anpassat besökar-ID eller Okänt/ej tillämpligt<br>`1`: IP- och användaragentåtergång <br>`2`: HTTP Mobile Subscriber Header <br>`3`: Äldre cookie-värde (`s_vi`) <br>`4`: Reservcookie-värde (`s_fid`) <br>`5`: Identitetstjänst | tinyint unsigned |
-| **`visit_keywords`** | Variabel som används i [Söknyckelord](/help/components/dimensions/search-keyword.md) dimension. I den här kolumnen används en teckenbegränsning som inte är standard för varchar(244) för att hantera backend-logik som används av Adobe. | varchar(244) |
+| **`visid_type`** | Ej för extern användning; används internt av Adobe för optimering av bearbetning. Numeriskt ID som representerar den metod som används för att identifiera besökaren.<br>`0`: Anpassat besökar-ID eller Okänt/ej tillämpligt<br>`1`: IP- och användaragentåtergång <br>`2`: HTTP Mobile Subscriber Header <br>`3`: Äldre cookie-värde (`s_vi`) <br>`4`: Reservcookie-värde (`s_fid`) <br>`5`: Identitetstjänst | Tinyint osignerad |
+| **`visit_keywords`** | Variabel som används i sökordsdimensionen[](/help/components/dimensions/search-keyword.md). I den här kolumnen används en teckenbegränsning som inte är standard för varchar(244) för att hantera backend-logik som används av Adobe. | varchar(244) |
 | **`visit_num`** | Variabel som används i [Besöksnummer](/help/components/dimensions/visit-number.md) dimension. Börjar vid 1 och ökar stegvis varje gång ett nytt besök påbörjas per besökare. | int unsigned |
 | **`visit_page_num`** | Variabel som används i [Träffdjup](/help/components/dimensions/hit-depth.md) dimension. Ökar med 1 för varje träff som användaren skapar. Återställer varje besök. | int unsigned |
 | **`visit_ref_domain`** | Baserat på `visit_referrer` kolumn. Den första refererande domänen för besöket. | varchar(100) |
