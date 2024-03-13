@@ -3,53 +3,54 @@ title: Aktuella versionsinformation för Adobe Analytics
 description: Visa den aktuella versionsinformationen för Adobe Analytics
 feature: Release Notes
 exl-id: 97d16d5c-a8b3-48f3-8acb-96033cc691dc
-source-git-commit: 3c6e11dd9d0044dbf79fa0ba97e55a547966d120
+source-git-commit: 401365705caed37cff219d8000c86a0b05495050
 workflow-type: tm+mt
-source-wordcount: '897'
+source-wordcount: '1052'
 ht-degree: 1%
 
 ---
 
-# Aktuell versionsinformation för Adobe Analytics (februari 2024)
+# Aktuell versionsinformation för Adobe Analytics (mars 2024)
 
-**Senaste uppdatering**: 21 februari 2024
+**Senaste uppdatering**: 13 mars 2024
 
-Versionsanteckningarna gäller frisläppningsperioden 14 februari 2024 till 11 mars 2024. Adobe Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.md) vilket ger en mer skalbar, stegvis metod för driftsättning av funktioner. Därför uppdateras versionsinformationen flera gånger i månaden. Kontrollera dem regelbundet.
+Versionsinformationen gäller den 12 mars 2024 till april 2024. Adobe Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.md) vilket ger en mer skalbar, stegvis metod för driftsättning av funktioner. Därför uppdateras versionsinformationen flera gånger i månaden. Kontrollera dem regelbundet.
 
 ## Nya funktioner eller förbättringar {#features}
 
 | Funktion | Beskrivning | [Startar](releases.md) | [Allmän tillgänglighet](releases.md) |
 | ----------- | ---------- | ------- | ---- |
 | **AppMeasurement** | [AppMeasurement version v2.26.0](/help/implement/appmeasurement-updates.md) är tillgängligt. | | 4 mars 2024 |
-| **Data Warehouse** | Följande förbättringar av Datan Warehouse är nu tillgängliga:<ul><li>När en begäran om Data Warehouse skapas kan användare nu göra begäranden tillgängliga för alla användare i organisationen genom att aktivera den nya växeln som kallas [!UICONTROL **Gör tillgänglig för användare i din organisation**].<p>Mer information finns i [Allmänna inställningar för begäran om Data Warehouse](/help/export/data-warehouse/create-request/dw-general-settings.md).</p></li><li>När systemadministratörer skapar eller hanterar destinationer för Data Warehouse-rapporter kan de nu visa konton och platser som har skapats av användare i organisationen genom att aktivera det anropade [!UICONTROL **Visa alla mål**].<p>Mer information finns i [Konfigurera ett rapportmål för en Data Warehouse-begäran](/help/export/data-warehouse/create-request/dw-request-report-destinations.md).</p></li> | Ej tillämpligt | 10 januari 2024 |
-| **Uppdateringar av visualisering av sammanfattning av nyckelmått** | När du använder visualisering av nyckelmätningssammanfattning kan datumintervallet för jämförelsen nu uppdateras automatiskt, beroende på om det alternativ för jämförelsedatumintervall du väljer är relativt till det primära datumintervallet eller fasta. [Läs mer](/help/analyze/analysis-workspace/visualizations/key-metric.md). | Ej tillämpligt | 17 januari 2024 |
-| **Datas Warehouse-API-dokumentation** | Läs mer i [Adobe Analytics Data Warehouse API 2.0](https://adobedocs.github.io/analytics-2.0-apis/?urls.primaryName=Data%20Warehouse%20APIs#/Data%20Warehouse%20Scheduled%20Requests%20API) för mer information. Gå till [!UICONTROL Select a definition] och markera [!UICONTROL Data Warehouse APIs]. | | 19 februari 2024 |
-| **Activity Map för Web SDK utan extra kostnad** | För närvarande räknas länkarhändelser i Activity Map som sina egna händelser och medför extra kostnader. Den här förbättringen tar några länkhändelser och paketerar dem i nästa träff, ungefär som hur händelser hanteras av AppMeasurementet. |  | 3 april 2024 |
-| **Ökning av standardtröskelvärden för låg trafik** | I **mitten av april 2024** kommer Adobe att börja öka standardrapporteringsprogrammets lågtrafiktrösklar enligt följande: ![lågtrafiktrösklar](assets/thresholds.png) Detta påverkar endast variabler som för närvarande ligger under de nya tröskelvärdena. Dessa ändringar kommer att göras stegvis, och vi förväntar oss att arbetet ska vara slutfört av **slutet av maj**. När dessa ökningar introduceras kan du märka förändringar för variabler med hög kardinalitet:<ul><li>Fler dimensionsvärden kan vara tillgängliga för rapportering.</li><li>Segment och beräknade värden kan innehålla mer data.</li><li>Virtuella rapportsviter baserade på segment kan innehålla mer data.</li><li>Export av klassificeringar kan innehålla mer data.</li></ul> | Mid April, 2024 | I slutet av maj 2024 |
+| **Ny kolumn som är tillgänglig på startsidan för projekt** | The **[!UICONTROL Last used]** -kolumnen är nu tillgänglig när du visar fliken Projekt på fliken [Adobe Analytics landningssida](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html). <p>Den här informationen kan hjälpa dig att avgöra om ett projekt är värdefullt för användare i organisationen genom att visa datum och tid när projektet senast öppnades.</p> <p>Tidigare **[!UICONTROL Last used]** kolumnen var bara tillgänglig i Beräknat mått-hanteraren, Segment-hanteraren och Alerts-hanteraren.</p> |  | 13 mars 2024 |
+| **Analysstöd för godkännandeflaggor som krävs av Google för DMA** | På grund av nya europeiska sekretessbestämmelser kräver Google att uppgifter som samlats in i Europa och som skickats till dem måste ange om två olika typer av samtycke har beviljats. **Från 6 mars**, kommer Google inte längre att godkänna händelsedata som inte tyder på att relevant samtycke beviljats. Adobe Analytics planerar att släppa stöd för att hämta in dessa data i mitten av mars. Vi kommer att informera om fler detaljer inom kort. |  | Mid March, 2024 |
+| **Använd samma molnkonton för datafeeds, Data Warehouse och klassificeringsuppsättningar** | Molnkonton och platser som du skapar kan nu användas för att exportera data (med datafeeds och Data Warehouse) och importera data (med klassificeringsgrupper).<p> **Ändringar när konton konfigureras:** Användare kan konfigurera molnimport- och exportkonton och konfigurera platser för molnimport och -export som kan användas i något av följande syften:<ul><li>Importera data med klassificeringsuppsättningar</li><li>Exportera data med dataflöden</li><li>Exportera data med Data Warehouse.</li></ul><p>**Ändringar när konton hanteras**: Användare kan använda sidan Platser (under Komponenter > Platser) för att visa och hantera alla konton och platser som de skapar, oavsett var de skapades. <p>Tidigare tillämpades sidan Platser bara på konton som skapades för import av data med klassificeringsuppsättningar.</p> | | April 2024 |
+| **Administratörer kan hantera alla platser i sin organisation** | Med ett nytt alternativ på sidan Platser kan administratörer visa och hantera alla platser i organisationen. <p>Tidigare kunde administratörer bara visa och hantera de platser som de skapade.</p> |  | April 2024 |
+| **Activity Map använder färre serveranrop till Web SDK** | För närvarande räknas länkarhändelser i Activity Map som sina egna händelser och medför extra kostnader. <p>Den här förbättringen tar några länkhändelser och paketerar dem i nästa träff, ungefär som hur händelser hanteras av AppMeasurementet.</p> |  | 3 april 2024 |
+| **Ökning av standardtröskelvärden för låg trafik** | I **mitten av april 2024** kommer Adobe att börja öka standardrapporteringsprogrammets lågtrafiktrösklar enligt följande: ![lågtrafiktrösklar](assets/thresholds.png) Detta påverkar endast variabler som för närvarande ligger under de nya tröskelvärdena. Dessa ändringar kommer att göras stegvis, och vi förväntar oss att arbetet ska vara slutfört av **slutet av maj**. När dessa ökningar introduceras kan du märka förändringar för variabler med hög kardinalitet:<ul><li>Fler dimensionsvärden kan vara tillgängliga för rapportering.</li><li>Segment och beräknade värden kan innehålla mer data.</li><li>Virtuella rapportsviter baserade på segment kan innehålla mer data.</li><li>Export av klassificeringar kan innehålla mer data.</li></ul> | | Mid April, 2024 |
 
 {style="table-layout:auto"}
 
 ## Korrigeringar i Adobe Analytics
 
-* Åtgärdade följande klassificeringsproblem: AN-319515; AN-337559; AN-338149; AN-338702; AN-338769; AN-338891; AN-339 327; AN-339649; AN-339668; AN-339669; AN-339776; AN-339822; AN-340017; AN-3402 02; AN-340476;
-* Åtgärdade följande fel i klassificeringsregelbyggaren: AN-338385; AN-338399; AN-338592; AN-338810; AN-338893; AN-339431; AN-33 9894; AN-339933; AN-340201; AN-340309;
-* Åtgärdade följande A4T-problem: AN-334830; AN-336194; AN-338309; AN-338650;
-* Åtgärdade följande datainsamlingsproblem: AN-339323
-* Åtgärdade följande problem med Datan Warehouse: AN-335542; AN-331425; AN-337215; AN-338445; AN-338643; AN-338651; AN-399 461; AN-340066; AN-340207; AN-340460
-* Åtgärdade följande dataflödesproblem: AN-335952; AN-338653; AN-339508; AN-339681; AN-340418
-* Åtgärdade följande problem med datakällor: AN-338648
-* Följande Analysis Workspace-problem har korrigerats: AN-326509; AN-336186; AN-336190; AN-336309; AN-337922; AN-338094; AN-383; AN-338556; AN-339600; AN-340445
+* Åtgärdade följande klassificeringsproblem: AN-335632; AN-337559; AN-340164; AN-340370; AN-341089; AN-341211; AN-341 284; AN-341469; AN-341481; AN-341760; AN-341778; AN-342144; AN-342258; AN-3423 38, AN-342400
+* Åtgärdade följande fel i klassificeringsregelbyggaren: AN-340921; AN-341269; AN-341292; AN-341467; AN-341666; AN-342145; AN-34 2329
+* Åtgärdade följande problem med intelligenta aviseringar: AN-340736
+* Åtgärdade följande segmenteringsproblem: AN-336242
+* Följande problem med Datan Warehouse har korrigerats: AN-335354; AN-339446; AN-339774; AN-340221; AN-340599; AN-341277; AN-342 009; AN-342088; AN-342592
+* Åtgärdade följande dataflödesproblem: AN-335508; AN-340887; AN-341050; AN-341208; AN-341403; AN-341479; AN-341 524; AN-341661; AN-342000; AN-342125; AN-342256; AN-342301; AN-342410; AN-3425 02; AN-342525
+* Åtgärdade följande problem med Report Builder: AN-340540
+* Följande Analysis Workspace-problem har korrigerats: AN-295889; AN-330981; AN-338818; AN-339730; AN-341114; AN-341520;
 
 ### Korrigeringar för andra analyser
 
-AN-328239; AN-332908; AN-335449; AN-335517; AN-336075; AN-336100; AN-336128; AN-4 338088; AN-338270; AN-338393; AN-338494; AN-339326; AN-339742; AN-339883; AN-3 40419,
+AN-312198; AN-338009; AN-339549; AN-333970; AN-334790; AN-336461; AN-336572; AN-4 339549; AN-34119; AN-341246; AN-341268; AN-341272; AN-341475; AN-341547; AN-34 41558; AN-341680; AN-342017;
 
 ## Viktiga meddelanden för Adobe Analytics-administratörer {#admin}
 
 | Meddelande | Datum tillagt eller uppdaterat | Beskrivning |
 | ----------- | ---------- | ---------- |
-| Tillägg för Adobe API-objektmedlemmar | 17 januari 2024 | Adobe kan när som helst och utan föregående meddelande eller ändringar i versionshanteringen lägga till medlemmar för begäran och svar (namn/värde-par) i befintliga API-objekt. Adobe rekommenderar att du läser API-dokumentationen för alla tredjepartsverktyg som du integrerar med våra API:er så att sådana tillägg ignoreras vid bearbetningen, om de inte tolkas. Om de implementeras på rätt sätt är sådana tillägg fasta ändringar för implementeringen. Adobe tar inte bort parametrar eller lägger till obligatoriska parametrar utan att först skicka standardmeddelanden via versionsinformation. |
-| `getPageLoadTime` insticksprogrammet är inaktuellt | 10 januari 2024 | Detta plugin-program stöds inte längre. I koden används metoden performance.timing som (enligt MDN) har [inaktuell](https://developer.mozilla.org/en-US/docs/Web/API/PerformanceTiming). Arbetet med ett uppdaterat plugin-program har startats. |
+| **Tillägg för Adobe API-objektmedlemmar** | 17 januari 2024 | Adobe kan när som helst och utan föregående meddelande eller ändringar i versionshanteringen lägga till medlemmar för begäran och svar (namn/värde-par) i befintliga API-objekt. Adobe rekommenderar att du läser API-dokumentationen för alla tredjepartsverktyg som du integrerar med våra API:er så att sådana tillägg ignoreras vid bearbetningen, om de inte tolkas. Om de implementeras på rätt sätt är sådana tillägg fasta ändringar för implementeringen. Adobe tar inte bort parametrar eller lägger till obligatoriska parametrar utan att först skicka standardmeddelanden via versionsinformation. |
+| **`getPageLoadTime`insticksprogrammet är inaktuellt** | 10 januari 2024 | Detta plugin-program stöds inte längre. I koden används metoden performance.timing som (enligt MDN) har [inaktuell](https://developer.mozilla.org/en-US/docs/Web/API/PerformanceTiming). Arbetet med ett uppdaterat plugin-program har startats. |
 
 {style="table-layout:auto"}
 
@@ -63,7 +64,7 @@ AN-328239; AN-332908; AN-335449; AN-335517; AN-336075; AN-336100; AN-336128; AN-
 
 ## AppMeasurement
 
-De senaste uppdateringarna av AppMeasurement (version 2.25.0) finns på [AppMeasurement för versionsinformation för JavaScript](https://experienceleague.adobe.com/docs/analytics/implementation/appmeasurement-updates.html).
+De senaste uppdateringarna av AppMeasurement (version 2.26.0) finns på [AppMeasurement för versionsinformation för JavaScript](https://experienceleague.adobe.com/docs/analytics/implementation/appmeasurement-updates.html).
 
 
 ## Relaterade resurser
