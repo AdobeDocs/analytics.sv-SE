@@ -3,9 +3,9 @@ title: Aktuella versionsinformation för Adobe Analytics
 description: Visa den aktuella versionsinformationen för Adobe Analytics
 feature: Release Notes
 exl-id: 97d16d5c-a8b3-48f3-8acb-96033cc691dc
-source-git-commit: 401365705caed37cff219d8000c86a0b05495050
+source-git-commit: 7cb7953e3321f2e8fa814ef6f1607cbe8d0f44de
 workflow-type: tm+mt
-source-wordcount: '1052'
+source-wordcount: '1081'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,7 @@ Versionsinformationen gäller den 12 mars 2024 till april 2024. Adobe Analytics-
 | ----------- | ---------- | ------- | ---- |
 | **AppMeasurement** | [AppMeasurement version v2.26.0](/help/implement/appmeasurement-updates.md) är tillgängligt. | | 4 mars 2024 |
 | **Ny kolumn som är tillgänglig på startsidan för projekt** | The **[!UICONTROL Last used]** -kolumnen är nu tillgänglig när du visar fliken Projekt på fliken [Adobe Analytics landningssida](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html). <p>Den här informationen kan hjälpa dig att avgöra om ett projekt är värdefullt för användare i organisationen genom att visa datum och tid när projektet senast öppnades.</p> <p>Tidigare **[!UICONTROL Last used]** kolumnen var bara tillgänglig i Beräknat mått-hanteraren, Segment-hanteraren och Alerts-hanteraren.</p> |  | 13 mars 2024 |
-| **Analysstöd för godkännandeflaggor som krävs av Google för DMA** | På grund av nya europeiska sekretessbestämmelser kräver Google att uppgifter som samlats in i Europa och som skickats till dem måste ange om två olika typer av samtycke har beviljats. **Från 6 mars**, kommer Google inte längre att godkänna händelsedata som inte tyder på att relevant samtycke beviljats. Adobe Analytics planerar att släppa stöd för att hämta in dessa data i mitten av mars. Vi kommer att informera om fler detaljer inom kort. |  | Mid March, 2024 |
+| **Analysstöd för godkännandeflaggor som krävs av Google för DMA** | På grund av nya europeiska sekretessbestämmelser kräver Google att uppgifter som samlats in i Europa och som skickats till dem måste ange om två olika typer av samtycke har beviljats. **Från 6 mars**, kommer Google inte längre att godkänna händelsedata som inte tyder på att relevant samtycke beviljats. Adobe Analytics har släppt stöd för att hämta in dessa data via en ny variabel, adConsent. Du kan se den nya variabeln i listan i [Sekretessrapporteringsgränssnitt](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/privacy-reporting.md). Om du vill aktivera detta och redan har sekretess aktiverat för föregående medgivandevariabler måste du aktivera sekretess igen. |  | 13 mars 2024 |
 | **Använd samma molnkonton för datafeeds, Data Warehouse och klassificeringsuppsättningar** | Molnkonton och platser som du skapar kan nu användas för att exportera data (med datafeeds och Data Warehouse) och importera data (med klassificeringsgrupper).<p> **Ändringar när konton konfigureras:** Användare kan konfigurera molnimport- och exportkonton och konfigurera platser för molnimport och -export som kan användas i något av följande syften:<ul><li>Importera data med klassificeringsuppsättningar</li><li>Exportera data med dataflöden</li><li>Exportera data med Data Warehouse.</li></ul><p>**Ändringar när konton hanteras**: Användare kan använda sidan Platser (under Komponenter > Platser) för att visa och hantera alla konton och platser som de skapar, oavsett var de skapades. <p>Tidigare tillämpades sidan Platser bara på konton som skapades för import av data med klassificeringsuppsättningar.</p> | | April 2024 |
 | **Administratörer kan hantera alla platser i sin organisation** | Med ett nytt alternativ på sidan Platser kan administratörer visa och hantera alla platser i organisationen. <p>Tidigare kunde administratörer bara visa och hantera de platser som de skapade.</p> |  | April 2024 |
 | **Activity Map använder färre serveranrop till Web SDK** | För närvarande räknas länkarhändelser i Activity Map som sina egna händelser och medför extra kostnader. <p>Den här förbättringen tar några länkhändelser och paketerar dem i nästa träff, ungefär som hur händelser hanteras av AppMeasurementet.</p> |  | 3 april 2024 |
