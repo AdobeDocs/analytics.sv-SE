@@ -3,9 +3,9 @@ description: När en rapport har många unika värden använder Adobe måttobjek
 title: Lågtrafikvärde i Adobe Analytics
 feature: Metrics, Data Configuration and Collection
 exl-id: 6c3d8258-cf75-4716-85fd-ed8520a2c9d5
-source-git-commit: d3a959d128f4740fd98ff40e5b92a3ea983d3c05
+source-git-commit: fe6b1a2d503bbc423d3ebcacad2ce3c29e1ebbed
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '848'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,8 @@ När en rapport har många unika värden tillhandahåller Adobe funktioner som s
 * Adobe Analytics använder två tröskelvärden för att avgöra vilka unika värden som visas i rapporter varje månad: A **[!UICONTROL low threshold]** och **[!UICONTROL high threshold]**. Dessa tröskelvärden kan justeras av Adobe då och då. De nuvarande tröskelvärdena är:
    * **[!UICONTROL Low threshold]**: >500 000 unika värden under månaden.
    * **[!UICONTROL High threshold]**: >1 000 000 unika värden under månaden.
+* I **mitten av april 2024** kommer Adobe att börja öka standardrapporteringsprogrammets lågtrafiktrösklar enligt följande: ![lågtrafiktrösklar](assets/thresholds.png)
+Detta påverkar endast variabler som för närvarande ligger under de nya tröskelvärdena. Dessa ändringar kommer att göras stegvis, och vi förväntar oss att arbetet ska vara slutfört av **slutet av maj**. När dessa ökningar introduceras kan du märka förändringar för variabler med hög kardinalitet:<ul><li>Fler dimensionsvärden kan vara tillgängliga för rapportering.</li><li>Segment och beräknade värden kan innehålla mer data.</li><li>Virtuella rapportsviter baserade på segment kan innehålla mer data.</li><li>Export av klassificeringar kan innehålla mer data.</li></ul>
 * Rapporteringen påverkas inte om variabeln inte når det låga tröskelvärdet under en viss månad.
 * När en variabel når det låga tröskelvärdet börjar data att paketeras under [!UICONTROL Low-Traffic]. Varje värde som ligger utanför detta tröskelvärde följer följande logik:
    * Om ett värde redan visas i rapporter lägger du till det värdet som vanligt.
@@ -35,7 +37,7 @@ Observera att den lågtrafiklogik som beskrivs ovan fungerar bäst med variabler
 
 ## Ändra unika gränströsklar
 
-Tröskelvärdena kan ibland ändras för varje variabel. Kontakta Adobe kundtjänst eller ditt kontoteam på Adobe för att begära denna ändring. I vilken utsträckning tröskelvärdena kan höjas beror på flera faktorer och Adobe kanske inte kan anpassa sig till tröskelökningar i alla fall. När du begär en ändring, inkludera:
+Tröskelvärdena kan ibland ändras för varje variabel. Kontakta Adobe kundtjänst eller ditt kontoteam på Adobe för att begära denna ändring. I vilken utsträckning tröskelvärdena kan höjas beror på flera faktorer och Adobe kanske inte kan anpassa sig till tröskelökningar i samtliga fall. När du begär en ändring, inkludera:
 
 * Rapportsvitens ID
 * Variabeln som du vill öka tröskelvärdet för
