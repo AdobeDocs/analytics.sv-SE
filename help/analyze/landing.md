@@ -4,9 +4,9 @@ title: Adobe Analytics landningssida
 role: User, Admin
 feature: Analytics Basics
 exl-id: 0a2fb778-491a-4dc3-aae4-afadb3ab1a1e
-source-git-commit: a75c807c1f54676e359cf502781ba1de5fd6c51c
+source-git-commit: 416725e01f469e3fafc1d52971535ab63e998f5f
 workflow-type: tm+mt
-source-wordcount: '1745'
+source-wordcount: '1760'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ De tillgängliga kolumnerna är:
 | [!UICONTROL **Delas med**] | Visar vem projektet delas med. |
 | [!UICONTROL **Senast ändrad**] | Datum och tid då projektet senast ändrades. |
 | [!UICONTROL **Senast öppnad**] | Identifierar det datum då ett projekt senast öppnades av den användare som för närvarande visar projektsidan. |
-| [!UICONTROL **Senast använd**] | Hjälper till att avgöra om ett projekt är värdefullt för användare i organisationen genom att visa datum och tid när projektet senast öppnades av någon användare i organisationen.<p>Den här kolumnen är bara tillgänglig för systemadministratörer.</p> |
+| [!UICONTROL **Senast använd**] | Hjälper till att avgöra om ett projekt är värdefullt för användare i organisationen genom att visa datum och tid när projektet senast öppnades av någon användare i organisationen.<p>Tänk på följande när du visar den här kolumnen:</p><ul><li>Användningsinformation finns tillgänglig från och med september 2023.</li><li>Den här kolumnen är bara tillgänglig för systemadministratörer.</li></ul> |
 | [!UICONTROL **Projekt-ID**] | Kan användas för felsökning. |
 | [!UICONTROL **Senaste datumintervall**] | Längre datumintervall ökar projektets komplexitet och kan öka bearbetnings- och inläsningstiderna. |
 | [!UICONTROL **Antal frågor**] | Det totala antalet begäranden som gjorts till Analytics när projektet läses in. Ett högre antal projektfrågor ökar projektets komplexitet och kan öka bearbetnings- och inläsningstiden. Dessa data är bara tillgängliga när ett projekt har lästs in eller när ett schemalagt projekt har skickats. |
