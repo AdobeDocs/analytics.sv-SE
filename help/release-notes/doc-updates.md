@@ -5,7 +5,7 @@ short-title: Analytics documentation updates
 feature: Release Notes
 exl-id: fe8e3c4c-6782-46f7-8e28-4f8f54807788
 mini-toc-levels: 3
-source-git-commit: 416725e01f469e3fafc1d52971535ab63e998f5f
+source-git-commit: 674f8a0002834d9765fbb41a598c71d432088cfa
 workflow-type: tm+mt
 source-wordcount: '5174'
 ht-degree: 22%
@@ -141,7 +141,7 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | Uppdaterad dokumentation om visualisering av flöde | Baserat på [nytt användargränssnitt](/help/analyze/analysis-workspace/visualizations/c-flow/create-flow.md) |
 | Dokumentation om att dela anteckningar i mobilstyrkort | Du kan visa [anteckningar som har skapats i Workspace - i Mobile Scorecards](/help/analyze/analysis-workspace/components/annotations/mobile-annotations.md). |
 | **Maj 2022** | |
-| Fylla i livscykeldimensioner och mätvärden via Edge Network | Mobila livscykeldata som skickas till Edge Network visas nu i Analytics-rapporter. Se [Variabelmappning för analyser](/help/implement/aep-edge/variable-mapping.md) för information om vilka XDM-fält som mappar till befintliga mobila livscykelrapporter. |
+| Fylla i livscykeldimensioner och mätvärden via Edge Network | Mobila livscykeldata som skickas till Edge Network visas nu i Analytics-rapporter. Se [Variabelmappning för analyser](/help/implement/aep-edge/xdm-var-mapping.md) för information om vilka XDM-fält som mappar till befintliga mobila livscykelrapporter. |
 | **April 2022** | |
 | Uppdateringar av Adobe Analytics landningssida | Uppdateringar av leden [Startsida för arbetsyta/rapporter och analyser](/help/analyze/landing.md) som förbättrar användbarheten och underlättar navigeringen. |
 | Nytt ämne [!UICONTROL Page Summary] panel | [Panelen Sidsammanfattning](/help/analyze/analysis-workspace/c-panels/page-summary.md) |

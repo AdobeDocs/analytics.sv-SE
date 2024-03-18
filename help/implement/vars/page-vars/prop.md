@@ -4,9 +4,9 @@ description: Anpassade variabler som du kan använda i implementeringen.
 feature: Variables
 exl-id: 0d0ff8cd-1d8c-4263-866d-e51ad66148b0
 role: Admin, Developer
-source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
+source-git-commit: 5ef92db2f5edb5fded497dddedd56abd49d8a019
 workflow-type: tm+mt
-source-wordcount: '590'
+source-wordcount: '603'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,10 @@ Om du har en [konstruktionsdokument](/help/implement/prepare/solution-design.md)
 
 ## Proppar med Web SDK
 
-Profiler är [mappas för Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html) under XDM-fälten `_experience.analytics.customDimensions.props.prop1` till `_experience.analytics.customDimensions.props.prop75`. Listutkast anges i en separat uppsättning fält.
+Props mappas till följande variabler:
+
+* [XDM-objekt](/help/implement/aep-edge/xdm-var-mapping.md): `xdm._experience.analytics.customDimensions.props.prop1` - `xdm._experience.analytics.customDimensions.props.prop75` - listproppar anges i en [separata fältuppsättningar](#list-props-web-sdk).
+* [Dataobjekt](/help/implement/aep-edge/data-var-mapping.md): `data.__adobe.analytics.prop1` - `data.__adobe.analytics.prop75`eller `data.__adobe.analytics.c1` - `data.__adobe.analytics.c75` - listproppar finns i dessa fält.
 
 ## Proppar som använder Adobe Analytics-tillägget
 
@@ -60,9 +63,11 @@ Aktivera inledande lista [Trafikvariabler](/help/admin/admin/c-manage-report-sui
 >
 >Vanliga avgränsare som används i implementeringar är kommatecken (`,`), kolon (`:`), semikolon (`;`), eller rör (`|`). Du kan använda valfri icke-utökad ASCII-avgränsare som passar din implementering bäst.
 
-### Ange listproffs med Web SDK
+### Ange listproffs med Web SDK {#list-props-web-sdk}
 
-När du har konfigurerat proppar i rapportsvitens inställningar med den önskade avgränsaren mappas listproppar för Adobe Analytics under `_experience.analytics.customDimensions.listProps.prop1.values[]` till `_experience.analytics.customDimensions.listProps.prop75.values[]`. Web SDK använder automatiskt rätt avgränsare som anges under inställningarna för rapportsviten. Om du anger avgränsaren i XDM-fältet (till exempel `_experience.analytics.customDimensions.props.prop1.delimiter`), som åsidosätter avgränsaren som hämtas automatiskt från inställningarna för rapportsviten och kan leda till felaktig tolkning av listpropsträngen.
+Om du använder [**XDM-objekt**](/help/implement/aep-edge/xdm-var-mapping.md), listavhopp mappas till `xdm._experience.analytics.customDimensions.listProps.prop1.values[]` - `xdm._experience.analytics.customDimensions.listProps.prop75.values[]`. Web SDK använder automatiskt rätt avgränsare som anges under inställningarna för rapportsviten. Om du anger avgränsaren i XDM-fältet (till exempel `xdm._experience.analytics.customDimensions.props.prop1.delimiter`), som åsidosätter avgränsaren som hämtas automatiskt från inställningarna för rapportsviten och kan leda till felaktig tolkning av listpropsträngen.
+
+Om du använder [**dataobjekt**](/help/implement/aep-edge/data-var-mapping.md) används samma fält som standarduttryck och AppMeasurementets syntax följs.
 
 ### Ange visningsinställningar med Adobe Analytics-tillägget och AppMeasurementet
 

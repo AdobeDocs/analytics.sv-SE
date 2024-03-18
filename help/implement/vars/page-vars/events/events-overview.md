@@ -4,9 +4,9 @@ description: Ange variabeln events, som styr de flesta mätvärden på din webbp
 feature: Variables
 exl-id: 6ef99ee5-40c3-4ff2-a75d-c97f2e8ec1f8
 role: Admin, Developer
-source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
+source-git-commit: 12347957a7a51dc1f8dfb46d489b59a450c2745a
 workflow-type: tm+mt
-source-wordcount: '802'
+source-wordcount: '833'
 ht-degree: 0%
 
 ---
@@ -19,24 +19,26 @@ Innan du implementerar händelser måste du skapa och konfigurera dem under [Slu
 
 ## Händelser som använder Web SDK
 
-Anpassade händelser är [mappas för Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html) under följande XDM-fält:
+Om du använder [**XDM-objekt**](/help/implement/aep-edge/xdm-var-mapping.md) används följande XDM-fält för anpassade händelser:
 
-* Anpassade händelser 1-100 mappas till `_experience.analytics.event1to100.event1` - `_experience.analytics.event1to100.event100`.
-* Anpassade händelser 101-200 mappas till `_experience.analytics.event101to200.event100` - `_experience.analytics.event101to200.event200`.
-* Det här mönstret upprepas var 100:e händelse till `_experience.analytics.event901to1000.event901` - `_experience.analytics.event901to1000.event1000`. `eventx.value` används för att ange mängden som ska ökas. `eventx.id` används för [serialisering](event-serialization.md).
-* Order mappas till `commerce.purchases.value`.
+* Anpassade händelser 1-100 mappas till `xdm._experience.analytics.event1to100.event1` - `xdm._experience.analytics.event1to100.event100`.
+* Anpassade händelser 101-200 mappas till `xdm._experience.analytics.event101to200.event100` - `xdm._experience.analytics.event101to200.event200`.
+* Det här mönstret upprepas var 100:e händelse till `xdm._experience.analytics.event901to1000.event901` - `xdm._experience.analytics.event901to1000.event1000`. `eventx.value` används för att ange mängden som ska ökas. `eventx.id` används för [serialisering](event-serialization.md).
+* Order mappas till `xdm.commerce.purchases.value`.
 * Enheter mappas till summan av alla `productListItems[].quantity` fält.
 * Intäkterna är mappade till summan av alla `productListItems[].priceTotal` fält.
-* Produktvyer mappas till `commerce.productListViews.value`.
-* Korten mappas till `commerce.productListOpens.value`.
-* Kundtillägg mappas till `commerce.productListAdds.value`.
-* Cart Removals är mappade till `commerce.productListRemovals.value`.
-* Vyer för kundvagn mappas till `commerce.productListViews.value`.
-* Utcheckningar är mappade till `commerce.checkouts.value`.
+* Produktvyer mappas till `xdm.commerce.productListViews.value`.
+* Korten mappas till `xdm.commerce.productListOpens.value`.
+* Kundtillägg mappas till `xdm.commerce.productListAdds.value`.
+* Cart Removals är mappade till `xdm.commerce.productListRemovals.value`.
+* Vyer för kundvagn mappas till `xdm.commerce.productListViews.value`.
+* Utcheckningar är mappade till `xdm.commerce.checkouts.value`.
 
 >[!NOTE]
 >
 >Om en händelse anges under `productListItems` (till exempel `productListItems._experience.analytics.event1.value`) och den händelsen ännu inte finns i det här fältet läggs händelsen automatiskt till i det här fältet.
+
+Om du använder [**dataobjekt**](/help/implement/aep-edge/data-var-mapping.md) används alla händelser `data.__adobe.analytics.events`, efter AppMeasurementen strängsyntax. Om du anger det här fältet skrivs alla händelser som anges i XDM-objektet över och skickas inte till Adobe Analytics.
 
 ## Händelser som använder Adobe Analytics-tillägget
 

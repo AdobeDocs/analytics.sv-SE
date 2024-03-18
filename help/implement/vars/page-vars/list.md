@@ -4,9 +4,9 @@ description: Anpassade variabler som innehåller flera värden i samma träff.
 feature: Variables
 exl-id: 612f6f10-6b68-402d-abb8-beb6f44ca6ff
 role: Admin, Developer
-source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
+source-git-commit: 5ef92db2f5edb5fded497dddedd56abd49d8a019
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '482'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Se till att du konfigurerar varje listvariabel i inställningarna för rapportsv
 
 ## Visa variabler med Web SDK
 
-Listvariabler är [mappas för Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html) under XDM-fälten `_experience.analytics.customDimensions.lists.list1.list[]` till `_experience.analytics.customDimensions.lists.list3.list[]`. Varje arrayelement innehåller en `"value"` -objekt som innehåller varje sträng. Du behöver inte ange en avgränsare. Den inkluderas automatiskt med det värde som anges i [Rapportsvitsinställningar](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/list-var-admin.md). Exempel: ett komma (&#39;`,`&#39;) är konfigurerad som avgränsare för listvariabel 1, fylls följande XDM-objekt i `list1` variabel med `"Example value 1,Example value 2,Example value 3"`.
+Om du använder [**XDM-objekt**](/help/implement/aep-edge/xdm-var-mapping.md) används XDM-fält för listvariabler `xdm._experience.analytics.customDimensions.lists.list1.list[]` till `xdm._experience.analytics.customDimensions.lists.list3.list[]`. Varje arrayelement innehåller en `"value"` -objekt som innehåller varje sträng. Du behöver inte ange en avgränsare. Datainsamlingsservrar i Adobe identifierar och tar automatiskt med rätt avgränsare i [Rapportsvitsinställningar](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/list-var-admin.md).
 
 ```json
 "xdm": {
@@ -58,6 +58,18 @@ Listvariabler är [mappas för Adobe Analytics](https://experienceleague.adobe.c
 >[!NOTE]
 >
 >Adobe XDM-schemat innehåller `key` förutom objekt `value` objekt i varje `list[]` array. Adobe använder inte dessa `key` objekt när data skickas till Adobe Analytics.
+
+Om du använder [**dataobjekt**](/help/implement/aep-edge/data-var-mapping.md), listvariabler använder `data.__adobe.analytics.list1` - `data.adobe.analytics.list3` efter AppMeasurementets syntax. Se till att du använder rätt avgränsningsuppsättning i [Rapportsvitsinställningar](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/list-var-admin.md).
+
+```json
+"data": {
+  "__adobe": {
+    "analytics": {
+      "list1": "Example value 1,Example value 2,Example value 3"
+    }
+  }
+}
+```
 
 ## Visa variabler med Adobe Analytics-tillägget
 

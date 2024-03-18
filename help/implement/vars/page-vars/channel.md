@@ -4,9 +4,9 @@ description: Fyll i dimensionen Webbplatsavsnitt.
 feature: Variables
 exl-id: f494a051-a296-4f1c-9044-04a8b59376fa
 role: Admin, Developer
-source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
+source-git-commit: 12347957a7a51dc1f8dfb46d489b59a450c2745a
 workflow-type: tm+mt
-source-wordcount: '181'
+source-wordcount: '182'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,10 @@ The `channel` variabeln lagrar vanligtvis den del av webbplatsen där en viss si
 
 ## Kanal med Web SDK
 
-Kanalen är [mappas för Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html) under XDM-fältet `web.webPageDetails.siteSection`.
+Kanalen mappas till följande variabler:
+
+* [XDM-objekt](/help/implement/aep-edge/xdm-var-mapping.md): `web.webPageDetails.siteSection`
+* [Dataobjekt](/help/implement/aep-edge/data-var-mapping.md): `data.__adobe.analytics.channel` eller `data.__adobe.analytics.ch`
 
 ## Kanal med Adobe Analytics-tillägget
 

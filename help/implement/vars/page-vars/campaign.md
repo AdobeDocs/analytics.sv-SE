@@ -4,9 +4,9 @@ description: Fyll i dimensionen 'Spårningskod'.
 feature: Variables
 exl-id: 2278d2b8-8d60-4634-a176-f027a237bc12
 role: Admin, Developer
-source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
+source-git-commit: 12347957a7a51dc1f8dfb46d489b59a450c2745a
 workflow-type: tm+mt
-source-wordcount: '227'
+source-wordcount: '228'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,10 @@ Denna variabel fyller i [Spårningskod](/help/components/dimensions/tracking-cod
 
 ## Campaign med Web SDK
 
-Campaign är [mappas för Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html) under XDM-fältet `marketing.trackingCode`.
+Campaign mappas till följande variabler:
+
+* [XDM-objekt](/help/implement/aep-edge/xdm-var-mapping.md): `marketing.trackingCode`
+* [Dataobjekt](/help/implement/aep-edge/data-var-mapping.md): `data.__adobe.analytics.campaign` eller `data.__adobe.analytics.v0`
 
 ## Campaign med Adobe Analytics-tillägget
 

@@ -4,9 +4,9 @@ description: Ange det maximala antalet träffar som ska köas för spårning off
 feature: Variables
 exl-id: de6478b3-b95f-4edc-8427-7b915a46b3ba
 role: Admin, Developer
-source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
+source-git-commit: 12347957a7a51dc1f8dfb46d489b59a450c2745a
 workflow-type: tm+mt
-source-wordcount: '160'
+source-wordcount: '175'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,11 @@ Spårning offline är ett valfritt sätt att samla in data i Adobe Analytics. Om
 
 The `offlineHitLimit` variabeln sätter en övre gräns för hur många träffar enheten lagrar lokalt. Den här variabeln fungerar bara om [`trackOffline`](trackoffline.md) är aktiverat.
 
-## Offline Hit Limit med Adobe Analytics-tillägget
+## Offline-träffgräns med Web SDK
+
+Web SDK stöder inte offlinespårning.
+
+## Offline-träffgräns med Adobe Analytics-tillägget
 
 Det finns inget dedikerat fält i Adobe Analytics-tillägget som kan använda den här variabeln. Använd den anpassade kodredigeraren enligt AppMeasurementen syntax.
 

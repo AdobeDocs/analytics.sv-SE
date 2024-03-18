@@ -4,9 +4,9 @@ description: Gör att du kan anpassa strängen som identifierar dynamiska variab
 feature: Variables
 exl-id: fe208723-0cf2-4899-be7a-8f23c6501c11
 role: Admin, Developer
-source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
+source-git-commit: 12347957a7a51dc1f8dfb46d489b59a450c2745a
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '266'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,10 @@ Som standard använder dynamiska variabler prefixet `D=`. The `dynamicVariablePr
 ## Dynamiskt variabelprefix med Web SDK
 
 I Web SDK används inte dynamisk variabelformatering. I stället kan du använda Datastream-mappning för att fylla i flera målfält med ett enda källfält. Se [Dynamiska variabler med Web SDK](../page-vars/dynamic-variables.md#dynamic-variables-using-the-web-sdk) för mer information.
+
+Om du skickar data direkt till Adobe Analytics utan att följa ett schema, används följande variabel:
+
+* [Dataobjekt](/help/implement/aep-edge/data-var-mapping.md): `data.__adobe.dynamicVariablePrefix`
 
 ## Dynamiskt variabelprefix med Adobe Analytics-tillägget
 

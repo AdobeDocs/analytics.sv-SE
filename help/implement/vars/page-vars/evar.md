@@ -4,9 +4,9 @@ description: Anpassade variabler som du kan använda i implementeringen.
 feature: Variables
 exl-id: f89457b2-4186-4276-8637-9992070e3a73
 role: Admin, Developer
-source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
+source-git-commit: 12347957a7a51dc1f8dfb46d489b59a450c2745a
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '393'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,10 @@ Innan du använder eVars i implementeringen måste du konfigurera varje eVar i r
 
 ## eVars med Web SDK
 
-eVars are [mappas för Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html) under XDM-fälten `_experience.analytics.customDimensions.eVars.eVar1` till `_experience.analytics.customDimensions.eVars.eVar250`.
+Variabler mappas till följande variabler:
+
+* [XDM-objekt](/help/implement/aep-edge/xdm-var-mapping.md): `xdm._experience.analytics.customDimensions.eVars.eVar1` till `xdm._experience.analytics.customDimensions.eVars.eVar250`
+* [Dataobjekt](/help/implement/aep-edge/data-var-mapping.md): `data.__adobe.analytics.eVar1` till `data.__adobe.analytics.eVar250`eller `data.__adobe.analytics.v1` till `data.__adobe.analytics.v250`
 
 ## eVars med Adobe Analytics-tillägget
 

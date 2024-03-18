@@ -3,10 +3,10 @@ title: Dimensioner för mobil livscykel
 description: Dimensioner baserade på data som samlats in med Mobile SDK.
 feature: Dimensions
 exl-id: b7ba45d7-7d30-48a3-a747-ea9fbb253abb
-source-git-commit: d940428e1cbe1be6d8263e986e8b641ec18aace1
+source-git-commit: 4c472d9a99f15ed253b68124aa31bdc88554d9a5
 workflow-type: tm+mt
-source-wordcount: '64'
-ht-degree: 1%
+source-wordcount: '103'
+ht-degree: 0%
 
 ---
 
@@ -26,9 +26,9 @@ ht-degree: 1%
 | [!UICONTROL Acquisition Term] | | `a.referrer.campaign.term` |
 | [!UICONTROL Acquisition Content] | | `a.refferer.campaign.content` |
 | [!UICONTROL Acquisition Name] | | `a.referrer.campaign.name` |
-| [!UICONTROL Location (down to 10 km)] | | `a.loc.lat.a` + `a.loc.lon.a` |
-| [!UICONTROL Location (down to 100 m)] | | `a.loc.lat.b` + `a.loc.lon.b` |
-| [!UICONTROL Location (down to 1 m)] | | `a.loc.lat.c` + `a.loc.lon.c` |
+| [!UICONTROL Location (down to 10 km)] | Besökarens latitud och longitud, med decimalnoggrannhet. Till exempel: `040.9` `-111.9`. | `a.loc.lat.a` + `a.loc.lon.a` |
+| [!UICONTROL Location (down to 100 m)] | Besökarens latitud och longitud, med tre decimaler. Till exempel: `040.932` `-111.931`. | `a.loc.lat.a` + `a.loc.lat.b` + `a.loc.lon.a` + `a.loc.lon.b` |
+| [!UICONTROL Location (down to 1 m)] | Besökarens latitud och longitud, exakt på femte decimalen. Till exempel: `040.93231` `-111.93152`. | `a.loc.lat.a` + `a.loc.lat.b` + `a.loc.lat.c` + `a.loc.lon.a` + `a.loc.lon.b` + `a.loc.lon.c` |
 | [!UICONTROL Point of Interest Name] | | `a.loc.poi` |
 | [!UICONTROL Distance to Point of Interest Center] | | `a.loc.dist` |
 | [!UICONTROL Launch Number] | | `a.Launches` |

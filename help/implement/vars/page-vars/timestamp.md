@@ -4,7 +4,7 @@ description: Ange tidsstämpeln manuellt.
 feature: Variables
 exl-id: 9d5ce5ef-2d84-4f65-b2e3-7aa3e219bc34
 role: Admin, Developer
-source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
+source-git-commit: 12347957a7a51dc1f8dfb46d489b59a450c2745a
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 0%
@@ -21,7 +21,7 @@ The `timestamp` variabeln ställer in tidsstämpeln för träffen för tidsstäm
 
 ## Tidsstämpla med Web SDK
 
-Tidsstämpeln är [mappas för Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html) under XDM-fältet `xdm.timestamp`. Det här fältet har bara stöd för Unix-tid.
+Tidsstämpeln är [mappas för Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/xdm-var-mapping.html) under XDM-fältet `xdm.timestamp`. Det här fältet har bara stöd för Unix-tid.
 
 ## Tidsstämpla med Adobe Analytics-tillägget
 
@@ -33,7 +33,7 @@ The `s.timestamp` variabeln är en sträng som innehåller datum och tid för tr
 
 ```js
 // Timestamp using ISO 8601
-s.timestamp = "2020-01-01T00:00:00Z";
+s.timestamp = "2024-01-01T00:00:00Z";
 
 // Timestamp using Unix timestamp
 s.timestamp = "1577836800";
@@ -52,19 +52,19 @@ Datum och tid uttryckt i [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) kan 
 * Både datum och tid måste anges, åtskilda med `T`.
 * Timmar och minuter krävs. Sekunder är valfria men rekommenderas.
 * Veckodatum och ordningstal stöds inte.
-* Datumet kan vara i standardformat eller utökat format. Till exempel: `2020-01-01T00:00:00Z` och `20200101T000000Z` är båda giltiga.
+* Datumet kan vara i standardformat eller utökat format. Till exempel: `2024-01-01T00:00:00Z` och `20240101T000000Z` är båda giltiga.
 * Andel minuter och sekunder är tekniskt giltiga, men bråktalen ignoreras av Adobe.
 * Tidszoner stöds i standardformat och utökat format.
 
 Följande är giltiga ISO 8601-värden i `timestamp` variabel:
 
 ```text
-2020-01-01T00:00:00+00:00
-2020-01-01T00:00:00Z
-2020-01-01T00:00:00
-2020-01-01T00:00
-20200101T000000+0000
-20200101T000000Z
-20200101T000000
-20200101T0000
+2024-01-01T00:00:00+00:00
+2024-01-01T00:00:00Z
+2024-01-01T00:00:00
+2024-01-01T00:00
+20240101T000000+0000
+20240101T000000Z
+20240101T000000
+20240101T0000
 ```

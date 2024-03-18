@@ -5,9 +5,9 @@ feature: Variables
 exl-id: 26e0c4cd-3831-4572-afe2-6cda46704ff3
 mini-toc-levels: 3
 role: Admin, Developer
-source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
+source-git-commit: 12347957a7a51dc1f8dfb46d489b59a450c2745a
 workflow-type: tm+mt
-source-wordcount: '528'
+source-wordcount: '574'
 ht-degree: 0%
 
 ---
@@ -45,10 +45,10 @@ Värdet för `eVar1` är tilldelad produkten. Alla efterföljande lyckade hände
 
 ### Produktsyntax med Web SDK
 
-Variabler för produktsyntax: [mappas för Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html) under flera olika XDM-fält.
+Om du använder [**XDM-objekt**](/help/implement/aep-edge/xdm-var-mapping.md), används följande XDM-fält för variabler för produktsyntaxmarknadsföring:
 
-* Produktsyntaxmarknadsföring eVars mappas under `productListItems[]._experience.analytics.customDimensions.eVars.eVar1` till `productListItems[]._experience.analytics.customDimensions.eVars.eVar250`.
-* Försäljningshändelser för produktsyntax mappas under `productListItems[]._experience.analytics.event1to100.event1.value` till `productListItems[]._experience.analytics.event901to1000.event1000.value`. [Händelseserialisering](events/event-serialization.md) XDM-fält mappas under `productListItems[]._experience.analytics.event1to100.event1.id` till `productListItems[]._experience.analytics.event901to1000.event1000.id`.
+* Produktsyntaxmarknadsföring eVars mappas under `xdm.productListItems[]._experience.analytics.customDimensions.eVars.eVar1` till `xdm.productListItems[]._experience.analytics.customDimensions.eVars.eVar250`.
+* Försäljningshändelser för produktsyntax mappas under `xdm.productListItems[]._experience.analytics.event1to100.event1.value` till `xdm.productListItems[]._experience.analytics.event901to1000.event1000.value`. [Händelseserialisering](events/event-serialization.md) XDM-fält mappas under `xdm.productListItems[]._experience.analytics.event1to100.event1.id` till `xdm.productListItems[]._experience.analytics.event901to1000.event1000.id`.
 
 >[!NOTE]
 >
@@ -56,36 +56,38 @@ Variabler för produktsyntax: [mappas för Adobe Analytics](https://experiencele
 
 I följande exempel visas en [produkt](products.md) använda flera eVars och events:
 
-```js
+```json
 "productListItems": [
-    {
-        "name": "Bahama Shirt",
-        "priceTotal": "12.99",
-        "quantity": 3,
-        "_experience": {
-            "analytics": {
-                "customDimensions" : {
-                    "eVars" : {
-                        "eVar10" : "green",
-                        "eVar33" : "large"
-                    }
-                },
-                "event1to100" : {
-                    "event4" : {
-                        "value" : 1
-                    },
-                    "event10" : {
-                        "value" : 2,
-                        "id" : "abcd"
-                    }
-                }
-            }
+  {
+    "name": "Bahama Shirt",
+    "priceTotal": "12.99",
+    "quantity": 3,
+    "_experience": {
+      "analytics": {
+        "customDimensions" : {
+          "eVars" : {
+            "eVar10" : "green",
+            "eVar33" : "large"
+          }
+        },
+        "event1to100" : {
+          "event4" : {
+            "value" : 1
+          },
+          "event10" : {
+            "value" : 2,
+            "id" : "abcd"
+          }
         }
+      }
     }
+  }
 ]
 ```
 
 Ovanstående exempelobjekt skickas till Adobe Analytics som `";Bahama Shirt;3;12.99;event4|event10=2:abcd;eVar10=green|eVar33=large"`.
+
+Om du använder [**dataobjekt**](/help/implement/aep-edge/data-var-mapping.md), eVar varuexponering `data.__adobe.analytics.eVar1` - `data.__adobe.analytics.eVar250` efter AppMeasurementets syntax.
 
 ## Implementera med konverteringsvariabelsyntax
 
@@ -109,33 +111,60 @@ Värdet `"Aviary"` for `eVar1` har tilldelats produkten `"Canary"`. Alla efterf�
 
 ### Konvertera variabelsyntax med Web SDK
 
-Konvertering av variabelsyntax med Web SDK fungerar på samma sätt som implementering av andra [eVars](evar.md) och [händelser](events/events-overview.md). XDM-speglingen av exemplet ovan skulle se ut så här:
+Om du använder [**XDM-objekt**](/help/implement/aep-edge/xdm-var-mapping.md) fungerar syntaxen på ungefär samma sätt som andra [eVars](evar.md) och [händelser](events/events-overview.md). XDM-speglingen av exemplet ovan skulle se ut så här:
 
 Ange eVarna för samma eller föregående händelseanrop:
 
-```js
+```json
 "_experience": {
-    "analytics": {
-        "customDimensions": {
-            "eVars": {
-                "eVar1" : "Aviary"
-            }
-        }
+  "analytics": {
+    "customDimensions": {
+      "eVars": {
+        "eVar1" : "Aviary"
+      }
     }
+  }
 }
 ```
 
 Ange bindningshändelse och värden för produktsträngen:
 
-```js
+```json
 "commerce": {
-    "productViews" : {
-        "value" : 1
-    }
+  "productViews" : {
+    "value" : 1
+  }
 },
 "productListItems": [
-    {
-        "name": "Canary"
-    }
+  {
+    "name": "Canary"
+  }
 ]
+```
+
+Om du använder [**dataobjekt**](/help/implement/aep-edge/data-var-mapping.md) ser dataobjekten som motsvarar exemplet ovan ut så här:
+
+Ange eVarna för samma eller föregående händelseanrop:
+
+```json
+"data": {
+  "__adobe": {
+    "analytics": {
+      "eVar1": "Aviary"
+    }
+  }
+}
+```
+
+Ange bindningshändelse och värden för produktsträngen:
+
+```json
+"data": {
+  "__adobe": {
+    "analytics": {
+      "events": "prodView",
+      "products": ";Canary"
+    }
+  }
+}
 ```

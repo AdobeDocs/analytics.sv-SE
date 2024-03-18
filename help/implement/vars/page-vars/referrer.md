@@ -4,9 +4,9 @@ description: Åsidosätt den automatiskt insamlade referenten för en träff.
 feature: Variables
 exl-id: 09a76de9-0689-424a-aead-3fdff1709fd9
 role: Admin, Developer
-source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
+source-git-commit: 5ef92db2f5edb5fded497dddedd56abd49d8a019
 workflow-type: tm+mt
-source-wordcount: '281'
+source-wordcount: '282'
 ht-degree: 0%
 
 ---
@@ -17,9 +17,12 @@ The `referrer` variabeln åsidosätter den automatiskt insamlade referenten i ra
 
 ## Referent med Web SDK
 
-Referenten är [mappas för Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html) under XDM-fältet `web.webReferrer.URL`.
+Referenten är mappad till följande variabler:
 
-Web SDK innehåller den här dimensionen vid varje händelsemöte.
+* [XDM-objekt](/help/implement/aep-edge/xdm-var-mapping.md): `xdm.web.webReferrer.URL`
+* [Dataobjekt](/help/implement/aep-edge/data-var-mapping.md): `data.__adobe.analytics.referrer`
+
+Web SDK innehåller automatiskt `web.webReferrer.URL` för varje händelse som skickas, om det är tillgängligt.
 
 ## Referent som använder Adobe Analytics-tillägget
 

@@ -4,9 +4,9 @@ description: Med kontextdatavariabler kan du definiera anpassade variabler på v
 feature: Variables
 exl-id: f2c747a9-1a03-4f9f-8025-9f4745403a81
 role: Admin, Developer
-source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
+source-git-commit: 12347957a7a51dc1f8dfb46d489b59a450c2745a
 workflow-type: tm+mt
-source-wordcount: '503'
+source-wordcount: '509'
 ht-degree: 0%
 
 ---
@@ -19,9 +19,26 @@ Kontextdatavariabler är användbara för utvecklingsteam som samlar in data i n
 
 ## Sammanhangsdatavariabler med Web SDK
 
-Om ett XDM-fält inte är tillgängligt [mappas för Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html)inkluderas den automatiskt som en kontextdatavariabel. Du kan sedan använda [Bearbetar regler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/c-processing-rules/processing-rules.md) om du vill tilldela kontextdatavariabeln till den önskade Analytics-variabeln.
+Om du använder [**XDM-objekt**](/help/implement/aep-edge/xdm-var-mapping.md) alla fält som inte mappar till en Adobe Analytics-variabel inkluderas automatiskt som en kontextdatavariabel. Du kan sedan använda [Bearbetar regler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/c-processing-rules/processing-rules.md) om du vill tilldela kontextdatavariabeln till den önskade Analytics-variabeln.
 
-Även om det är en god vana att mappa data till rätt XDM-fält i DataStream, uppnår den här metoden liknande resultat.
+Om du använder [**dataobjekt**](/help/implement/aep-edge/data-var-mapping.md) finns alla kontextdatavariabler inom `data.__adobe.analytics.contextData` som nyckelvärdepar:
+
+```js
+alloy("sendEvent", {
+  "data": {
+    "__adobe": {
+      "analytics": {
+        "contextData": {
+          "example_variable": "Example value",
+          "second_example": "Another value"
+        }
+      }
+    }
+  }
+});
+```
+
+The [Bearbetar regler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/c-processing-rules/processing-rules.md) gränssnittet skulle visa `c.example_variable` och `c.second_example` i tillämpliga listrutor.
 
 ## Sammanhangsdatavariabler med Adobe Analytics-tillägget
 

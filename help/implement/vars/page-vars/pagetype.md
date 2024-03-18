@@ -4,9 +4,9 @@ description: Kontrollera om den aktuella sidan är ett 404-fel.
 feature: Variables
 exl-id: e61ef82d-b583-4230-b904-5ea3584910be
 role: Admin, Developer
-source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
+source-git-commit: 5ef92db2f5edb5fded497dddedd56abd49d8a019
 workflow-type: tm+mt
-source-wordcount: '205'
+source-wordcount: '201'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,10 @@ The `pageType` variabeln är en flagga som används för att ange felsidor på d
 
 ## Sidtyp med Web SDK
 
-Sidtypen är [mappas för Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html) under XDM-fältet `web.webPageDetails.isErrorPage`. Det här XDM-fältet är booleskt; ange det till `true` för att flagga det som en felsida, eller `false` om det inte är en felsida. Adobe översätter automatiskt booleskt värde till strängvärdet `errorPage` när det skickas till en analysrapportsserie.
+Kanalen mappas till följande variabler:
+
+* [XDM-objekt](/help/implement/aep-edge/xdm-var-mapping.md): `xdm.web.webPageDetails.isErrorPage` - det här XDM-fältet är booleskt; ange det till `true` för att flagga det som en felsida, eller `false` om det inte är en felsida.
+* [Dataobjekt](/help/implement/aep-edge/data-var-mapping.md): `data.__adobe.analytics.pageType` - det här dataobjektfältet är en sträng; ange det till `"errorPage"` för att flagga den som sådan.
 
 ## Sidtyp med Adobe Analytics-tillägg
 

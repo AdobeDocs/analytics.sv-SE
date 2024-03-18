@@ -4,9 +4,9 @@ description: Fastställer frekvensen för träffar när en enhet ansluts igen.
 feature: Variables
 exl-id: fa484638-bb1f-4df9-9ba1-e9763fa6ad27
 role: Admin, Developer
-source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
+source-git-commit: 12347957a7a51dc1f8dfb46d489b59a450c2745a
 workflow-type: tm+mt
-source-wordcount: '180'
+source-wordcount: '195'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,11 @@ Spårning offline är ett valfritt sätt att samla in data i Adobe Analytics. Om
 
 När en enhet ansluts igen skickas alla träffar som är lagrade på enheten till datainsamlingsservrarna i Adobe. Ett stort antal köade träffar kan påverka prestanda på äldre enheter. Använd `offlineThrottleDelay` variabel som anger hur ofta köade träffar skickas till Adobe.
 
-## Fördröjning för offlinebegränsning med Adobe Analytics-tillägget
+## Fördröjning för offlinebegränsning med Web SDK
+
+Web SDK stöder inte offlinespårning.
+
+## Fördröjning med offlinerastning med Adobe Analytics-tillägget
 
 Det finns inget dedikerat fält i Adobe Analytics-tillägget som kan använda den här variabeln. Använd den anpassade kodredigeraren enligt AppMeasurementen syntax.
 

@@ -4,9 +4,9 @@ description: Skicka data runt vilka produkter som visas eller i kundvagnen.
 feature: Variables
 exl-id: f26e7c93-f0f1-470e-a7e5-0e310ec666c7
 role: Admin, Developer
-source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
+source-git-commit: 5ef92db2f5edb5fded497dddedd56abd49d8a019
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '686'
 ht-degree: 0%
 
 ---
@@ -21,18 +21,20 @@ The `products` variabelspårar produkter och egenskaper som är knutna till dem.
 
 ## Produkter som använder Web SDK
 
-Produkterna är [mappas för Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html) under flera XDM-fält:
+Om du använder [**XDM-objekt**](/help/implement/aep-edge/xdm-var-mapping.md), mappas produkterna till följande variabler:
 
-* Kategorin är mappad till `productListItems[].productCategories[].categoryID`. Det använder det första objektet i `productCategories[]` array. `lineItemId` mappar korrekt, men vi rekommenderar `categoryID` eftersom detta är standard-XDM. Om båda XDM-fälten finns `lineItemId` har företräde.
-* Produkten är mappad till `productListItems[].SKU` eller `productListItems[].name`. Om båda XDM-fälten finns, `productListItems[].SKU` används.
-* Kvantitet har mappats till `productListItems[].quantity`.
-* Priset är mappat till `productListItems[].priceTotal`.
-* Merchandising eVars mappas till `productListItems._experience.analytics.customDimensions.eVars.eVar1` till `productListItems._experience.analytics.customDimensions.eVars.eVar250`, beroende på vilken eVar du vill binda till en produkt.
-* Marknadsföringshändelser mappas till `productListItems[]._experience.analytics.event1to100.event1.value` till `productListItems._experience.analytics.event901to1000.event1000.value`, beroende på vilken händelse du vill binda till en produkt. Om du anger en händelse i något av dessa fält inkluderas den automatiskt i [event](events/events-overview.md) sträng skickad till Adobe Analytics.
+* Kategorin är mappad till `xdm.productListItems[].productCategories[].categoryID`. Det använder det första objektet i `productCategories[]` array. `lineItemId` mappar också korrekt, men Adobe rekommenderar `categoryID` eftersom det är standard-XDM. Om båda XDM-fälten finns, `lineItemId` har företräde.
+* Produkten är mappad till `xdm.productListItems[].SKU` eller `xdm.productListItems[].name`. Om båda XDM-fälten finns, `xdm.productListItems[].SKU` används.
+* Kvantitet har mappats till `xdm.productListItems[].quantity`.
+* Priset är mappat till `xdm.productListItems[].priceTotal`.
+* Merchandising eVars mappas till `xdm.productListItems._experience.analytics.customDimensions.eVars.eVar1` till `xdm.productListItems._experience.analytics.customDimensions.eVars.eVar250`, beroende på vilken eVar du vill binda till en produkt.
+* Marknadsföringshändelser mappas till `xdm.productListItems[]._experience.analytics.event1to100.event1.value` till `xdm.productListItems._experience.analytics.event901to1000.event1000.value`, beroende på vilken händelse du vill binda till en produkt. Om du anger en händelse i något av dessa fält inkluderas den automatiskt i [event](events/events-overview.md) sträng skickad till Adobe Analytics.
 
 >[!NOTE]
 >
 >`lineItemId` måste läggas till som ett anpassat fält eftersom det ännu inte ingår i standardschemat för analyshändelser. Adobe planerar att lägga till ett dedikerat kategorifält i framtiden.
+
+Om du använder [**dataobjekt**](/help/implement/aep-edge/data-var-mapping.md), produktvariabeln använder `data.__adobe.analytics.products` efter AppMeasurementets syntax. Om du anger det här fältet skrivs alla produkter som anges i XDM-objektet över och skickas inte till Adobe Analytics.
 
 ## Produkter som använder Adobe Analytics-tillägget
 

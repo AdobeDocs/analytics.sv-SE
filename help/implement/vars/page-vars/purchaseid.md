@@ -4,7 +4,7 @@ description: Deduplicera träffar baserat på en unik inköpsidentifierare.
 feature: Variables
 exl-id: 7a4d7f08-65ae-4541-a94e-cc6c445c01db
 role: Admin, Developer
-source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
+source-git-commit: 5ef92db2f5edb5fded497dddedd56abd49d8a019
 workflow-type: tm+mt
 source-wordcount: '280'
 ht-degree: 0%
@@ -21,7 +21,10 @@ Inköp-ID gäller för alla besökare och upphör efter 37 månader. Om en besö
 
 ## Inköps-ID med Web SDK
 
-Inköps-ID är [mappas för Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html) under XDM-fältet `commerce.order.purchaseID`.
+Inköps-ID är mappat till följande variabler:
+
+* [XDM-objekt](/help/implement/aep-edge/xdm-var-mapping.md): `xdm.commerce.order.purchaseID`
+* [Dataobjekt](/help/implement/aep-edge/data-var-mapping.md): `data.__adobe.analytics.purchaseID`
 
 ## Inköps-ID med Adobe Analytics-tillägget
 

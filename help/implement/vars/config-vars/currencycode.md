@@ -4,9 +4,9 @@ description: För eCommerce-webbplatser anger den valuta som sidan handlar i.
 feature: Variables
 exl-id: 3332c366-c472-4778-96c8-ef0aa756cca8
 role: Admin, Developer
-source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
+source-git-commit: 12347957a7a51dc1f8dfb46d489b59a450c2745a
 workflow-type: tm+mt
-source-wordcount: '939'
+source-wordcount: '940'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,10 @@ En period **måste** användas som valutaavgränsare för alla valutor när vari
 
 ## Valutakod med Web SDK
 
-Valutakoden är [mappas för Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html) under XDM-fältet `commerce.order.currencyCode`.
+Valutakoden mappas till följande variabler:
+
+* [XDM-objekt](/help/implement/aep-edge/xdm-var-mapping.md): `xdm.commerce.order.currencyCode`
+* [Dataobjekt](/help/implement/aep-edge/data-var-mapping.md): `data.__adobe.analytics.currencyCode` eller `data.__adobe.analytics.cc`
 
 ## Valutakod som använder Adobe Analytics-tillägget
 

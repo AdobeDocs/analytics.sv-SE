@@ -4,9 +4,9 @@ description: Använd inköpshändelsen för att samla in data för måtten"Best�
 feature: Variables
 exl-id: 5ad148d6-cf45-4dea-846a-255004300bc2
 role: Admin, Developer
-source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
+source-git-commit: 12347957a7a51dc1f8dfb46d489b59a450c2745a
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '450'
 ht-degree: 0%
 
 ---
@@ -27,11 +27,13 @@ När du ställer in en köphändelse påverkas följande mått:
 
 ## Ange inköpshändelsen med Web SDK
 
-Inköpshändelsen är [mappas för Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html) under flera XDM-fält:
+Om du använder [**XDM-objekt**](/help/implement/aep-edge/xdm-var-mapping.md) används följande XDM-fält för köphändelsen:
 
-* Order mappas till `commerce.purchases.value`.
-* Enheter mappas till summan av alla `productListItems[].quantity` fält.
-* Intäkterna är mappade till summan av alla `productListItems[].priceTotal` fält.
+* Order mappas till `xdm.commerce.purchases.value`.
+* Enheter mappas till summan av alla `xdm.productListItems[].quantity` fält.
+* Intäkterna är mappade till summan av alla `xdm.productListItems[].priceTotal` fält.
+
+Om du använder [**dataobjekt**](/help/implement/aep-edge/data-var-mapping.md), som köphändelsen använder `data.__adobe.analytics.events`, efter AppMeasurementen strängsyntax.
 
 ## Ange inköpshändelsen med Adobe Analytics-tillägget
 

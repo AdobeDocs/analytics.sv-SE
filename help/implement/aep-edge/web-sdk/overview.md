@@ -4,7 +4,7 @@ description: Använd Web SDK-tillägget i Adobe Experience Platform Data Collect
 exl-id: 97f8d650-247f-4386-b4d2-699f3dab0467
 feature: Implementation Basics
 role: Admin, Developer, Leader
-source-git-commit: 0eafb750d63b89ea27a8773810ce79614f0abc63
+source-git-commit: 10ecae46424758fc5b19b58b733b49bb23cda222
 workflow-type: tm+mt
 source-wordcount: '670'
 ht-degree: 3%
@@ -65,7 +65,7 @@ Du kan använda [Adobe Experience Platform Web SDK](https://experienceleague.ado
 <tr>
 <td>7</td>
 <td><b>Konfigurera Web SDK</b>. Se till att biblioteket som du installerade i steg 4 är korrekt konfigurerat med dataStream ID (kallades tidigare edge configuration id (<code>edgeConfigId</code>)), organisations-ID (<code>orgId</code>) och andra tillgängliga alternativ. Kontrollera att variablerna mappas korrekt. </td>
-<td><a href="https://experienceleague.adobe.com/docs/experience-platform/web-sdk/commands/configure/overview.html">Konfigurera Web SDK</a><br/><a href="../variable-mapping.md">Variabelmappning för XDM-objekt</a></td>
+<td><a href="https://experienceleague.adobe.com/docs/experience-platform/web-sdk/commands/configure/overview.html">Konfigurera Web SDK</a><br/><a href="../xdm-var-mapping.md">Variabelmappning för XDM-objekt</a></td>
 </tr>
 
 <tr>

@@ -4,9 +4,9 @@ description: Åsidosätt den automatiskt insamlade sidans URL på din webbplats.
 feature: Variables
 exl-id: 411f894d-c31f-4d07-9568-b0b02786735d
 role: Admin, Developer
-source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
+source-git-commit: 5ef92db2f5edb5fded497dddedd56abd49d8a019
 workflow-type: tm+mt
-source-wordcount: '292'
+source-wordcount: '293'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,10 @@ AppMeasurementet samlar automatiskt in sidans URL i varje träff. Om du vill ås
 
 ## Sid-URL med Web SDK
 
-Sidans URL är [mappas för Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html) under XDM-fältet `web.webPageDetails.URL`.
+Sidans URL mappas till följande variabler:
+
+* [XDM-objekt](/help/implement/aep-edge/xdm-var-mapping.md): `xdm.web.webPageDetails.URL`
+* [Dataobjekt](/help/implement/aep-edge/data-var-mapping.md): `data.__adobe.analytics.pageURL` eller `data.__adobe.analytics.g`
 
 ## Sidans URL med Adobe Analytics-tillägget
 

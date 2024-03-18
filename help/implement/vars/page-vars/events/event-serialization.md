@@ -4,9 +4,9 @@ description: Ta bort dubbletter av mätvärden på webbplatsen.
 feature: Variables
 exl-id: 54de0fd7-9056-44af-bd59-b8eb55fc816e
 role: Admin, Developer
-source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
+source-git-commit: 12347957a7a51dc1f8dfb46d489b59a450c2745a
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '404'
 ht-degree: 0%
 
 ---
@@ -35,9 +35,11 @@ När du använder händelse-ID:n utförs borttagning av dubbletter på följande
 
 ## Använd händelse-ID:n med Web SDK
 
-Händelseserialiseringen är [mappas för Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html) under den önskade händelsens XDM-fält `id`. Den fullständiga XDM-sökvägen beror på vilken händelse du vill serialisera.
+Om du använder [**XDM-objekt**](/help/implement/aep-edge/xdm-var-mapping.md) används händelsens XDM-fält för händelseserialisering `id`. Den fullständiga XDM-sökvägen beror på vilken händelse du vill serialisera.
 
-Om du till exempel vill serialisera måttet för kundvagnstillägg anger du `commerce.productListAdds.id` XDM-fält till önskat serialiseringsvärde. Om du vill serialisera anpassad händelse 20 anger du `_experience.analytics.event1to100.event20` XDM-fält till önskat serialiseringsvärde.
+Om du till exempel vill serialisera måttet för kundvagnstillägg anger du `xdm.commerce.productListAdds.id` till önskat serialiseringsvärde. Om du vill serialisera anpassad händelse 20 anger du `xdm._experience.analytics.event1to100.event20` till önskat serialiseringsvärde.
+
+Om du använder [**dataobjekt**](/help/implement/aep-edge/data-var-mapping.md), används för händelseserialisering `data.__adobe.analytics.events`, efter AppMeasurementen strängsyntax.
 
 ## Använd händelse-ID:n med Adobe Analytics-tillägget
 

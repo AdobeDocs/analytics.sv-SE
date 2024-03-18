@@ -4,9 +4,9 @@ description: Skicka ett länkspårningsanrop till Adobe.
 feature: Variables
 exl-id: 470662b2-ce07-4432-b2d5-a670fbb77771
 role: Admin, Developer
-source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
+source-git-commit: 12347957a7a51dc1f8dfb46d489b59a450c2745a
 workflow-type: tm+mt
-source-wordcount: '692'
+source-wordcount: '740'
 ht-degree: 0%
 
 ---
@@ -19,11 +19,13 @@ If [`trackDownloadLinks`](../config-vars/trackdownloadlinks.md) eller [`trackExt
 
 ## Länkspårning med Web SDK
 
-Web SDK skiljer inte mellan sidvisningsanrop och länkspårningsanrop. Båda använder `sendEvent` -kommando. Om du vill att Adobe Analytics ska räkna en viss XDM-händelse som ett länkspårningsanrop, kontrollerar du att dina XDM-data innehåller eller är mappade till `web.webInteraction.name`, `web.webInteraction.URL`och `web.webInteraction.type`.
+Web SDK skiljer inte mellan sidvisningsanrop och länkspårningsanrop. Båda använder `sendEvent` -kommando.
 
-* Länka namnmappningar till `web.webInteraction.name`.
-* Länka URL-mappar till `web.webInteraction.URL`.
-* Länka typmappningar till `web.webInteraction.type`. Giltiga värden är `other` (Anpassade länkar), `download` (Hämta länkar) och `exit` (Avsluta länkar).
+Om du använder ett XDM-objekt och vill att Adobe Analytics ska räkna en viss händelse som ett länkspårningsanrop, ska du kontrollera att dina XDM-data innehåller:
+
+* Länknamn: mappat till `xdm.web.webInteraction.name`.
+* Länk-URL: mappad till `xdm.web.webInteraction.URL`.
+* Länktyp: mappad till `xdm.web.webInteraction.type`. Giltiga värden är `other` (Anpassade länkar), `download` (Hämta länkar) och `exit` (Avsluta länkar).
 
 ```js
 alloy("sendEvent", {
@@ -33,6 +35,26 @@ alloy("sendEvent", {
         "name": "My Custom Link",
         "URL": "https://example.com",
         "type": "other"
+      }
+    }
+  }
+});
+```
+
+Om du använder ett dataobjekt och vill att Adobe Analytics ska räkna en viss händelse som ett länkspårningsanrop, ska du se till att dataobjektet innehåller:
+
+* Länknamn: mappat till `data.__adobe.analytics.linkName`.
+* Länk-URL: mappad till `data.__adobe.analytics.linkURL`.
+* Länktyp: mappad till `data.__adobe.analytics.linkType`. Giltiga värden är `o` (Anpassade länkar), `d` (Hämta länkar) och `e` (Avsluta länkar).
+
+```js
+alloy("sendEvent", {
+  "data": {
+    "__adobe": {
+      "analytics": {
+        "linkName": "My custom link",
+        "linkURL": "https://example.com",
+        "linkType": "o"
       }
     }
   }

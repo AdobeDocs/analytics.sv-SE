@@ -4,9 +4,9 @@ description: Använd den här variabeln för att länka samman online- och offli
 feature: Variables
 exl-id: 525e90d8-99a7-4f4f-9bce-1395bf72fd8f
 role: Admin, Developer
-source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
+source-git-commit: 5ef92db2f5edb5fded497dddedd56abd49d8a019
 workflow-type: tm+mt
-source-wordcount: '406'
+source-wordcount: '407'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,10 @@ Som standard kommer Adobe ihåg alla transaktions-ID-värden (länkade och olän
 
 ## Transaktions-ID med Web SDK
 
-Transaktions-ID är [mappas för Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html) under XDM-fältet `commerce.order.payments[0].transactionID`.
+Transaktions-ID mappas till följande variabler:
+
+* [XDM-objekt](/help/implement/aep-edge/xdm-var-mapping.md): `xdm.commerce.order.payments[0].transactionID`
+* [Dataobjekt](/help/implement/aep-edge/data-var-mapping.md): `data.__adobe.analytics.transactionID` eller `data.__adobe.analytics.xact`
 
 ## Transaktions-ID med Adobe Analytics-tillägg
 

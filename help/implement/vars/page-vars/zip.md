@@ -4,9 +4,9 @@ description: Fyll i dimensionen 'Postnummer' manuellt om inställningarna för r
 feature: Variables
 exl-id: 1acf4bf7-3788-46bd-bcdb-9885c7b93b59
 role: Admin, Developer
-source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
+source-git-commit: 5ef92db2f5edb5fded497dddedd56abd49d8a019
 workflow-type: tm+mt
-source-wordcount: '233'
+source-wordcount: '252'
 ht-degree: 0%
 
 ---
@@ -17,11 +17,18 @@ The `zip` kan du fylla i postnummer manuellt om [!UICONTROL Zip Option] i rappor
 
 >[!IMPORTANT]
 >
->Se till att [!UICONTROL Zip Option] i rapportsvitens inställningar är inställda på önskat värde. Du kan inte använda variabeln om [!UICONTROL geo zip] används alltid. Se [Allmänna kontoinställningar](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/general-acct-settings-admin.md) i användarhandboken för Admin om du vill ha mer information.
+>Se till att [!UICONTROL Zip Option] i rapportsvitens inställningar är inställda på önskat värde. Du kan inte använda variabeln om [!UICONTROL Geo zip] används alltid. Se [Allmänna kontoinställningar](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/general-acct-settings-admin.md) i användarhandboken för Admin om du vill ha mer information.
 
-## Zippa med Adobe Analytics-tillägget
+## Postnummer med Web SDK
 
-Du kan ange Postnummer antingen när du konfigurerar Analytics-tillägget (globala variabler) eller enligt regler.
+Postnumret mappas till följande variabler:
+
+* [XDM-objekt](/help/implement/aep-edge/xdm-var-mapping.md): `xdm.placeContext.geo.postalCode`
+* [Dataobjekt](/help/implement/aep-edge/data-var-mapping.md): `data.__adobe.analytics.zip`
+
+## Postnummer med Adobe Analytics-tillägg
+
+Du kan ange postnummer antingen när du konfigurerar Analytics-tillägget (globala variabler) eller enligt regler.
 
 1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
 2. Klicka på den önskade taggegenskapen.
