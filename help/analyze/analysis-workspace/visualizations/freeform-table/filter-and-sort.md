@@ -4,9 +4,9 @@ title: Filtrera och sortera tabeller på frihand
 feature: Freeform Tables
 role: User, Admin
 exl-id: 15fea9e2-f8d8-4489-9a44-e74a351b8f36
-source-git-commit: b1fbc2ce3387f44a49882e99a03d8bbf3906ee0c
+source-git-commit: 461497d6c01866237dccacb9e34d7402ac1012ef
 workflow-type: tm+mt
-source-wordcount: '915'
+source-wordcount: '876'
 ht-degree: 0%
 
 ---
@@ -48,12 +48,14 @@ Så här exkluderar du snabbt vissa rader från en friformstabell:
 
    Håll ned Skift-tangenten om du vill markera flera rader eller håll ned Kommando-tangenten (Mac) eller Ctrl-tangenten (Windows) om du vill markera flera rader.
 
-### Högerklicka > Ta bort markerade rader
+<!--### Right-click > Delete selected rows
 
-1. Markera en eller flera rader.
-1. Högerklicka och välj **[!UICONTROL Delete Selected Rows]**.
+Note: this option does not seem to work. AN-338422
 
-   Den här åtgärden tar bort raderna från tabellen och tillämpar ett tabellfilter.
+1. Select 1 or more rows. 
+1. Right-click and select **[!UICONTROL Delete Selected Rows]**. 
+
+   This action will remove the rows from the table and apply a table filter.-->
 
 ### Använda ett enkelt eller avancerat filter på en tabell
 
@@ -67,7 +69,7 @@ Så här filtrerar du data i frihandstabeller:
 
    Följande alternativ är tillgängliga:
 
-   | Alternativ |  -funktion |
+   | Alternativ | Funktion |
    |---------|----------|
    | [!UICONTROL **Sök efter ord eller fras**] | Ange ett ord eller en fras som du vill filtrera efter. Endast rader som innehåller det angivna ordet eller den exakta frasen visas. |
    | [!UICONTROL **Inkludera ospecificerad (ingen)**] | Välj det här alternativet om du vill visa data i tabellen som inte faller inom någon av tabellens dimensioner. <!--what is this?--> |
@@ -76,7 +78,7 @@ Så här filtrerar du data i frihandstabeller:
 
    Följande avancerade filteralternativ är tillgängliga:
 
-   | Alternativ |  -funktion |
+   | Alternativ | Funktion |
    |---------|----------|
    | [!UICONTROL **Inkludera ospecificerad (ingen)**] | Välj det här alternativet om du vill visa data i tabellen som inte faller inom någon av tabellens dimensioner. <!--what is this?--> |
    | [!UICONTROL **Matcha**] | <p>Välj [!UICONTROL **Om alla villkor är uppfyllda**] om du bara vill visa data som uppfyller alla villkor som du anger. Det här alternativet ger vanligtvis mer förfinade data.</p> <p>Välj [!UICONTROL **Om något villkor uppfylls**] om du vill visa data som uppfyller något av de filtervillkor som du anger. Det här alternativet ger vanligtvis mindre förfinade data.</p> |
