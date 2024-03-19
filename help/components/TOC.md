@@ -4,9 +4,9 @@ audience: end-user
 user-guide-title: Komponenthandbok för Analytics
 breadcrumb-title: Användarhandbok om komponenter
 user-guide-description: Hantera data med komponenter som segment, beräknade värden, virtuella rapportsviter, marknadsföringskanaler och klassificeringar. Lär dig mer om Analytics över flera enheter.
-source-git-commit: 5887202603b10d7058ef82a7ced28517bc1a7efa
+source-git-commit: 043f2c2b2e3e50570e2f0367680274a1f2670492
 workflow-type: tm+mt
-source-wordcount: '751'
+source-wordcount: '752'
 ht-degree: 7%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 7%
 + Dimensioner {#dimensions}
    + [Översikt över Dimensioner](dimensions/overview.md)
    + [Kompatibilitet med Dimensioner](dimensions/compatibility.md)
-   + [Annonsmedgivande](dimensions/ad-consent.md)
+   + [Godkännande av annonsplattform](dimensions/ad-consent.md)
    + [Alla söksidor rankade](dimensions/all-search-page-rank.md)
    + [AM/PM](dimensions/am-pm.md)
    + [Punktnamn](dimensions/bot-name.md)

@@ -3,16 +3,16 @@ description: Aktivera dimensioner för innehållshantering.
 title: Sekretessrapportering
 feature: Admin Tools
 exl-id: 307c9ae2-2135-4a0b-9d2d-3c13a27b8361
-source-git-commit: b5aba8a42f524ef3367a779e6fb1a731de680750
+source-git-commit: d7e2667bc232435881107f31d25843ef224a96b2
 workflow-type: tm+mt
-source-wordcount: '123'
-ht-degree: 0%
+source-wordcount: '100'
+ht-degree: 1%
 
 ---
 
 # Sekretessrapportering
 
-Sekretessrapporteringen gör att du kan aktivera [Medgivandehantering - anmälan](/help/components/dimensions/cm-opt-in.md), [Medgivandehantering avanmäl dig](/help/components/dimensions/cm-opt-out.md) och [Annonsmedgivande](/help/components//dimensions/ad-consent.md) dimensioner för rapportering.
+Sekretessrapporteringen gör att du kan aktivera [Medgivandehantering - anmälan](/help/components/dimensions/cm-opt-in.md), [Medgivandehantering avanmäl dig](/help/components/dimensions/cm-opt-out.md) och [Godkännande av annonsplattform](/help/components//dimensions/ad-consent.md) dimensioner för rapportering.
 
 >[!NOTE]
 >
@@ -36,7 +36,3 @@ Så här öppnar du den här sidan:
 1. När det är aktiverat visas ett bekräftelsemeddelande. Dimensionerna är tillgängliga i rapporter.
 
    ![Rapport](assets/consent-management.png)
-
-## Dimension för annonsmedgivande
-
-The [Dimension för annonsmedgivande](/help/components/dimensions/ad-consent.md) visar om samtycke samlas in för att skicka data till tredjepartsleverantörer av annonser, som Google, Meta och andra.

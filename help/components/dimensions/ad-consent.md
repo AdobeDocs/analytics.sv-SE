@@ -1,17 +1,17 @@
 ---
-title: Annonsmedgivande
+title: Godkännande av annonsplattform
 description: Se konfigurationen för annonsmedgivande för tredjeparts annonsleverantörer.
 feature: Dimensions
-source-git-commit: b5aba8a42f524ef3367a779e6fb1a731de680750
+source-git-commit: 043f2c2b2e3e50570e2f0367680274a1f2670492
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '326'
 ht-degree: 0%
 
 ---
 
-# Annonsmedgivande
+# Godkännande av annonsplattform
 
-Ad Consent [dimension](overview.md) visar om samtycke samlas in för att skicka data till tredjepartsleverantörer av annonser, som Google, Meta och andra.
+Ad Platform-medgivande [dimension](overview.md) visar om samtycke samlas in för att skicka data till tredjepartsleverantörer av annonser, som Google, Meta och andra.
 
 För närvarande används den här dimensionen endast för Google. På grund av EU:s sekretessbestämmelser, Digital Markets Act (DMA), kräver Google att data som skickas till deras servrar och som samlas in i Europa måste ange om samtycke samlas in. Vissa Analytics-kunder skickar händelsedata via Adobe Advertising som konverteringshändelser till Google.
 
@@ -52,7 +52,6 @@ Du kan använda insamlade data för annonsgodkännande:
 
 * Dataflöden: data om annonsmedgivande är tillgängliga med `dataprivacydmaconsent` [kolumn](/help/export/analytics-data-feed/c-df-contents/datafeeds-reference.md).
 * Data Warehouse-rapporter: data om annonsmedgivande finns tillgängliga med **[!UICONTROL Ad Platform Consent]** dimension.
-
 
 Organisationen bestämmer logiken för att implementera den här kontextdatavariabeln. Värdet finns inte kvar efter den träff det är aktiverat, så du måste ange kontextdatavariabeln på varje sida.
 
