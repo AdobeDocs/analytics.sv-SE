@@ -2,9 +2,9 @@
 title: Annonsmedgivande
 description: Se konfigurationen för annonsmedgivande för tredjeparts annonsleverantörer.
 feature: Dimensions
-source-git-commit: 31f61c64fef707e2d2499b853a9b54caf847634b
+source-git-commit: b5aba8a42f524ef3367a779e6fb1a731de680750
 workflow-type: tm+mt
-source-wordcount: '317'
+source-wordcount: '323'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,6 @@ Ad Consent [dimension](overview.md) visar om samtycke samlas in för att skicka 
 För närvarande används den här dimensionen endast för Google. På grund av EU:s sekretessbestämmelser, Digital Markets Act (DMA), kräver Google att data som skickas till deras servrar och som samlas in i Europa måste ange om samtycke samlas in. Vissa Analytics-kunder skickar händelsedata via Adobe Advertising som konverteringshändelser till Google.
 
 I framtiden kan den här dimensionen användas som stöd för kodning av ytterligare medgivandeinformation för andra tredjepartsleverantörer av annonser.
-
 
 ## Fyll den här dimensionen med data
 
@@ -51,10 +50,12 @@ Tecken efter det första och andra tecknet ignoreras.
 
 Du kan använda insamlade data för annonsgodkännande:
 
-* Dataflöden: data om annonsmedgivande finns tillgängliga med `dataprivacydmaconsent` [kolumn](/help/export/analytics-data-feed/c-df-contents/datafeeds-reference.md).
-* Datalagerrapporter: data för annonsmedgivande är tillgängliga med **[!UICONTROL Ad Platform Consent]** dimension.
+* Dataflöden: data om annonsmedgivande är tillgängliga med `dataprivacydmaconsent` [kolumn](/help/export/analytics-data-feed/c-df-contents/datafeeds-reference.md).
+* Data Warehouse-rapporter: data om annonsmedgivande finns tillgängliga med **[!UICONTROL Ad Platform Consent]** dimension.
 
 
 Organisationen bestämmer logiken för att implementera den här kontextdatavariabeln. Värdet finns inte kvar efter den träff det är aktiverat, så du måste ange kontextdatavariabeln på varje sida.
 
 När du skickar annonsdata från Adobe Analytics via Adobe Advertising som konverteringsevenemang till Google, konsultera Adobe Advertising-teamet för att få hjälp med integreringen.
+
+Mer information finns i [Sekretessrapportering](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/privacy-reporting.md).
