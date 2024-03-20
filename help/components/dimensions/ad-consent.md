@@ -2,9 +2,9 @@
 title: Godkännande av annonsplattform
 description: Se konfigurationen för annonsmedgivande för tredjeparts annonsleverantörer.
 feature: Dimensions
-source-git-commit: 043f2c2b2e3e50570e2f0367680274a1f2670492
+source-git-commit: ba892374710bc24c379e0c53e5fd00ff4c39d906
 workflow-type: tm+mt
-source-wordcount: '326'
+source-wordcount: '328'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Ad Platform-medgivande [dimension](overview.md) visar om samtycke samlas in för
 
 För närvarande används den här dimensionen endast för Google. På grund av EU:s sekretessbestämmelser, Digital Markets Act (DMA), kräver Google att data som skickas till deras servrar och som samlas in i Europa måste ange om samtycke samlas in. Vissa Analytics-kunder skickar händelsedata via Adobe Advertising som konverteringshändelser till Google.
 
-I framtiden kan den här dimensionen användas som stöd för kodning av ytterligare medgivandeinformation för andra tredjepartsleverantörer av annonser.
+I framtiden kan denna dimension användas för att stödja kodning av ytterligare information om samtycke för andra tredjepartsleverantörer av annonsmaterial.
 
 ## Fyll den här dimensionen med data
 
