@@ -3,16 +3,16 @@ title: Aktuella versionsinformation för Adobe Analytics
 description: Visa den aktuella versionsinformationen för Adobe Analytics
 feature: Release Notes
 exl-id: 97d16d5c-a8b3-48f3-8acb-96033cc691dc
-source-git-commit: 043f2c2b2e3e50570e2f0367680274a1f2670492
+source-git-commit: 2a79bd4a752217c8c7b129700bc230952b5739df
 workflow-type: tm+mt
-source-wordcount: '1185'
+source-wordcount: '1219'
 ht-degree: 1%
 
 ---
 
 # Aktuell versionsinformation för Adobe Analytics (mars 2024)
 
-**Senaste uppdatering**: 19 mars 2024
+**Senaste uppdatering**: 20 mars 2024
 
 Versionsinformationen gäller den 12 mars 2024 till april 2024. Adobe Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.md) vilket ger en mer skalbar, stegvis metod för driftsättning av funktioner. Därför uppdateras versionsinformationen flera gånger i månaden. Kontrollera dem regelbundet.
 
@@ -25,7 +25,7 @@ Versionsinformationen gäller den 12 mars 2024 till april 2024. Adobe Analytics-
 | **Analysstöd för godkännandeflaggor som krävs av Google för DMA** | På grund av nya europeiska sekretessbestämmelser kräver Google att uppgifter som samlats in i Europa och som skickats till dem måste ange om två olika typer av samtycke har beviljats. **Från 6 mars**, kommer Google inte längre att godkänna händelsedata som inte tyder på att relevant samtycke beviljats. Adobe Analytics har släppt stöd för att hämta in dessa data via en ny variabel, adConsent. Du kan se den nya variabeln i listan i [Sekretessrapporteringsgränssnitt](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/privacy-reporting.md). Om du vill aktivera detta och redan har sekretess aktiverat för föregående medgivandevariabler måste du aktivera sekretess igen.<p>The [Dimensionen för godkännande av annonsplattform](/help/components/dimensions/ad-consent.md) visar om samtycke samlas in för att skicka data till tredjepartsleverantörer av annonser, som Google, Meta och andra. |  | 13 mars 2024 |
 | **Användning av Report Builder ingår i kolumnen&quot;Används i&quot; i Beräknat mått-hanteraren och segmenthanteraren** | När du visar **Används i** -kolumnen i Calculated Metrics Manager eller Segments Manager är nu användningsdata tillgängliga för Report Builder.<p>Tidigare var användningsdata i segmenthanteraren bara tillgängliga för aviseringar, projekt, schemalagda projekt och beräknade mätvärden, medan användningsdata i hanteraren för beräknade mätvärden endast var tillgängliga för aviseringar, projekt och schemalagda projekt.</p> |  | Sent mars eller tidig april |
 | **Använd samma molnkonton för datafeeds, Data Warehouse och klassificeringsuppsättningar** | Molnkonton och platser som du skapar kan nu användas för att exportera data (med datafeeds och Data Warehouse) och importera data (med klassificeringsgrupper).<p> **Ändringar när konton konfigureras:** Användare kan konfigurera molnimport- och exportkonton och konfigurera platser för molnimport och -export som kan användas i något av följande syften:<ul><li>Importera data med klassificeringsuppsättningar</li><li>Exportera data med dataflöden</li><li>Exportera data med Data Warehouse.</li></ul><p>**Ändringar när konton hanteras**: Användare kan använda sidan Platser (under Komponenter > Platser) för att visa och hantera alla konton och platser som de skapar, oavsett var de skapades. <p>Tidigare tillämpades sidan Platser bara på konton som skapades för import av data med klassificeringsuppsättningar.</p> | | April 2024 |
-| **Administratörer kan hantera alla platser i sin organisation** | Med ett nytt alternativ på sidan Platser kan administratörer visa och hantera alla platser i organisationen. <p>Tidigare kunde administratörer bara visa och hantera de platser som de skapade.</p> |  | April 2024 |
+| **Administratörer kan hantera alla platser och konton i sin organisation** | Ett nytt alternativ på fliken Platser (på sidan Komponenter > Platser) gör att administratörer kan visa och hantera alla platser i organisationen.<p>Ett nytt alternativ på fliken Platskonton (på sidan Komponenter > Platser) gör att administratörer kan visa och hantera alla konton i organisationen.</p> <p>Tidigare kunde administratörer bara visa och hantera de platser och konton som de skapade.</p> |  | April 2024 |
 | **Activity Map använder färre serveranrop till Web SDK** | För närvarande räknas länkarhändelser i Activity Map som sina egna händelser och medför extra kostnader. <p>Den här förbättringen tar några länkhändelser och paketerar dem i nästa träff, ungefär som hur händelser hanteras av AppMeasurementet.</p> |  | 3 april 2024 |
 | **Ökning av standardtröskelvärden för låg trafik** | I **mitten av april 2024** kommer Adobe att börja öka standardrapporteringsprogrammets lågtrafiktrösklar enligt följande: ![lågtrafiktrösklar](assets/thresholds.png) Detta påverkar endast variabler som för närvarande ligger under de nya tröskelvärdena. Dessa ändringar kommer att göras stegvis, och vi förväntar oss att arbetet ska vara slutfört av **slutet av maj**. När dessa ökningar introduceras kan du märka förändringar för variabler med hög kardinalitet:<ul><li>Fler dimensionsvärden kan vara tillgängliga för rapportering.</li><li>Segment och beräknade värden kan innehålla mer data.</li><li>Virtuella rapportsviter baserade på segment kan innehålla mer data.</li><li>Export av klassificeringar kan innehålla mer data.</li></ul> | | Mid April, 2024 |
 
