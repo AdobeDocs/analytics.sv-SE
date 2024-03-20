@@ -3,9 +3,9 @@ title: Aktuella versionsinformation för Adobe Analytics
 description: Visa den aktuella versionsinformationen för Adobe Analytics
 feature: Release Notes
 exl-id: 97d16d5c-a8b3-48f3-8acb-96033cc691dc
-source-git-commit: 9636b8e4e8596449cb37bbab9bc46d660fac4a4b
+source-git-commit: 06d1dcf1c6823555f044842a1cc5c10c2bbc12a0
 workflow-type: tm+mt
-source-wordcount: '1216'
+source-wordcount: '1299'
 ht-degree: 1%
 
 ---
@@ -50,6 +50,7 @@ AN-312198; AN-338009; AN-339549; AN-333970; AN-334790; AN-336461; AN-336572; AN-
 
 | Meddelande | Datum tillagt eller uppdaterat | Beskrivning |
 | ----------- | ---------- | ---------- |
+| **13 månaders förfallodatum för sparat`cust_visids`** | 20 mars 2024 | En kommande version av motorn för Analytics Hit processing, som är avsedd för april eller maj, kommer att börja tillämpa en 13-månaders förfallotid för sparade `cust_visids`. Om rapportsviten har Aktivera besökarinställning aktiverat, används den här inställningen för att hitta `cust_visid` för `visid_high/visid_low value` med nej `cust_visid` på träffen. Mappningen av en `cust_visid` för `visid_high/visid_low`. I den här versionen, om minst 13 månader har gått sedan `visid_high/visid_low` har haft en `cust_visid` vid en träff förfaller mappningen. |
 | **Tillägg för Adobe API-objektmedlemmar** | 17 januari 2024 | Adobe kan när som helst och utan föregående meddelande eller ändringar i versionshanteringen lägga till medlemmar för begäran och svar (namn/värde-par) i befintliga API-objekt. Adobe rekommenderar att du läser API-dokumentationen för alla tredjepartsverktyg som du integrerar med våra API:er så att sådana tillägg ignoreras vid bearbetningen, om de inte tolkas. Om de implementeras på rätt sätt är sådana tillägg fasta ändringar för implementeringen. Adobe tar inte bort parametrar eller lägger till obligatoriska parametrar utan att först skicka standardmeddelanden via versionsinformation. |
 | **`getPageLoadTime`insticksprogrammet är inaktuellt** | 10 januari 2024 | Detta plugin-program stöds inte längre. I koden används metoden performance.timing som (enligt MDN) har [inaktuell](https://developer.mozilla.org/en-US/docs/Web/API/PerformanceTiming). Arbetet med ett uppdaterat plugin-program har startats. |
 
