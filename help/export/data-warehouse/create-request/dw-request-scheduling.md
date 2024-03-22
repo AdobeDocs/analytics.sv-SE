@@ -3,9 +3,9 @@ description: Steg som beskriver hur du skapar en begäran om Data Warehouse.
 title: Konfigurera ett rapportmål för en Data Warehouse-begäran
 feature: Data Warehouse
 exl-id: e5f8acaa-156f-41fb-a0fc-bc5475f1f3b7
-source-git-commit: 1bd46f104c5ebcca78d624b49c56b2992c3d62cb
+source-git-commit: 4e4b5e1c362778223be01f78b173a698c53f9b32
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '288'
 ht-degree: 2%
 
 ---
@@ -18,7 +18,7 @@ Mer information om hur du börjar skapa en begäran och länkar till andra vikti
 
 Så här konfigurerar du schemaläggningsalternativ för en Data Warehouse:
 
-1. Börja skapa en begäran i Adobe Analytics genom att välja **[!UICONTROL Tools]** > **[!UICONTROL Data Warehouse]** > [!UICONTROL **Lägg till**].
+1. Om du inte redan har gjort det börjar du skapa en förfrågan i Adobe Analytics genom att välja **[!UICONTROL Tools]** > **[!UICONTROL Data Warehouse]** > [!UICONTROL **Lägg till**].
 
    Mer information finns i [Skapa en begäran om Data Warehouse](/help/export/data-warehouse/create-request/t-dw-create-request.md).
 
