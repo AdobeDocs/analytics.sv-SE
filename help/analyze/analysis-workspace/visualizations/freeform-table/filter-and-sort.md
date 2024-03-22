@@ -4,9 +4,9 @@ title: Filtrera och sortera tabeller på frihand
 feature: Freeform Tables
 role: User, Admin
 exl-id: 15fea9e2-f8d8-4489-9a44-e74a351b8f36
-source-git-commit: 461497d6c01866237dccacb9e34d7402ac1012ef
+source-git-commit: 398d4ae264ce108c16a03cef086ae2614b442a2b
 workflow-type: tm+mt
-source-wordcount: '876'
+source-wordcount: '872'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,6 @@ Med filter i Analysis Workspace hittar du den viktigaste informationen.
 Du kan använda flera metoder för att filtrera rader från en frihandstabell. 
 
 - Klicka på X i raden
-- Högerklicka > Borttagna markerade rader
 - Tabellfilter
 - Segmentering
 
