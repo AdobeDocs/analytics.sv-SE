@@ -3,7 +3,7 @@ title: Aktuella versionsinformation för Adobe Analytics
 description: Visa den aktuella versionsinformationen för Adobe Analytics
 feature: Release Notes
 exl-id: 97d16d5c-a8b3-48f3-8acb-96033cc691dc
-source-git-commit: b3f2f503cabd45aebd3bc200c8f9abaeb033d419
+source-git-commit: aac32bdda365ce4534f1d4c04e816eb6f03b991c
 workflow-type: tm+mt
 source-wordcount: '1347'
 ht-degree: 1%
@@ -20,7 +20,7 @@ Versionsinformationen gäller den 12 mars 2024 till april 2024. Adobe Analytics-
 
 | Funktion | Beskrivning | [Startar](releases.md) | [Allmän tillgänglighet](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **Ändra till borttagningsprotokoll för arbetsyteprojekt** | Tidigare rensades aldrig borttagna projekt från systemet. Vi börjar nu rensa borttagna projekt efter 180 dagar. Under de 180 dagarna efter borttagningen kan användarna fortfarande komma åt ett projekt via webbgränssnittet om de har en URL till det direkta projektet. | | 14 mars 2024 |
+| **Ändra till borttagningsprotokoll för arbetsyteprojekt** | Tidigare rensades aldrig borttagna projekt från systemet. Vi börjar nu rensa borttagna projekt efter 180 dagar. Under de 180 dagarna efter borttagningen kan användarna fortfarande komma åt ett borttaget projekt via webbgränssnittet om de har en URL till projektet. | | 14 mars 2024 |
 | **AppMeasurement** | [AppMeasurement version v2.26.0](/help/implement/appmeasurement-updates.md) är tillgängligt. | | 4 mars 2024 |
 | **Ny kolumn som är tillgänglig på startsidan för projekt** | The **[!UICONTROL Last used]** -kolumnen är nu tillgänglig när du visar fliken Projekt på fliken [Adobe Analytics landningssida](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html). <p>Den här informationen kan hjälpa dig att avgöra om ett projekt är värdefullt för användare i organisationen genom att visa datum och tid när projektet senast öppnades.</p> <p>Tidigare **[!UICONTROL Last used]** kolumnen var bara tillgänglig i Beräknat mått-hanteraren, Segment-hanteraren och Alerts-hanteraren.</p> |  | 13 mars 2024 |
 | **Analysstöd för godkännandeflaggor som krävs av Google för DMA** | På grund av nya europeiska sekretessbestämmelser kräver Google att uppgifter som samlats in i Europa och som skickats till dem måste ange om två olika typer av samtycke har beviljats. **Från 6 mars**, kommer Google inte längre att godkänna händelsedata som inte tyder på att relevant samtycke beviljats. Adobe Analytics har släppt stöd för att hämta in dessa data via en ny variabel, adConsent. Du kan se den nya variabeln i listan i [Sekretessrapporteringsgränssnitt](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/privacy-reporting.md). Om du vill aktivera detta och redan har sekretess aktiverat för föregående medgivandevariabler måste du aktivera sekretess igen.<p>The [Dimensionen för godkännande av annonsplattform](/help/components/dimensions/ad-consent.md) visar om samtycke samlas in för att skicka data till tredjepartsleverantörer som Google. |  | 13 mars 2024 |
