@@ -1,11 +1,12 @@
 ---
 title: Variabelmappning för dataobjekt till Adobe Analytics
-description: Visa vilka dataobjektfält som Edge automatiskt mappar till analysvariabler.
+description: Visa vilka dataobjektfält Experience Platform Edge automatiskt mappar till analysvariabler.
 feature: Implementation Basics
 role: Admin, Developer
-source-git-commit: 12347957a7a51dc1f8dfb46d489b59a450c2745a
+exl-id: 45b2fbbc-73ca-40b3-9484-b406ae99fdad
+source-git-commit: 3a530e3e47ac9d6cf2b711cecd07f2c33765d63c
 workflow-type: tm+mt
-source-wordcount: '558'
+source-wordcount: '559'
 ht-degree: 0%
 
 ---
@@ -14,7 +15,7 @@ ht-degree: 0%
 
 Följande tabell visar de dataobjektsvariabler som Adobe Experience Platform Edge Network automatiskt mappar till Adobe Analytics. Om du använder dessa sökvägar för dataobjektfält behövs ingen ytterligare konfiguration för att skicka data till Adobe Analytics.
 
-Du bör använda dessa fält om du tänker använda Customer Journey Analytics i framtiden. Med den här implementeringsmetoden kan din organisation skicka data till Adobe med hjälp av Web SDK utan att följa ett XDM-schema. När ni är redo att skicka data till Adobe Experience Platform kan ni använda [Datastream-mappning](https://experienceleague.adobe.com/docs/experience-platform/datastreams/data-prep.html#mapping) för att peka dataobjektfält mot deras respektive XDM-fält.
+Du bör använda dessa fält om du tänker använda Customer Journey Analytics i framtiden. Med den här implementeringsmetoden kan din organisation skicka data till Adobe med Web SDK utan att följa ett XDM-schema. När ni är redo att skicka data till Adobe Experience Platform kan ni använda [Datastream-mappning](https://experienceleague.adobe.com/docs/experience-platform/datastreams/data-prep.html#mapping) för att peka dataobjektfält mot deras respektive XDM-fält.
 
 ## Värdeprioriteringar
 
