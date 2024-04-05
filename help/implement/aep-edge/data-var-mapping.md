@@ -4,9 +4,9 @@ description: Visa vilka dataobjektfält Experience Platform Edge automatiskt map
 feature: Implementation Basics
 role: Admin, Developer
 exl-id: 45b2fbbc-73ca-40b3-9484-b406ae99fdad
-source-git-commit: 3a530e3e47ac9d6cf2b711cecd07f2c33765d63c
+source-git-commit: 97d830653bfb9ad68d1d885dd8dff0ecf49055d7
 workflow-type: tm+mt
-source-wordcount: '559'
+source-wordcount: '555'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,6 @@ Tidigare uppdateringar av tabellen finns på den här sidans [implementeringshis
 | `data.__adobe.analytics.referrer` | The [Referent](/help/components/dimensions/referrer.md) dimension. |
 | `data.__adobe.analytics.resolution` | The [Bildskärmsupplösning](../../components/dimensions/monitor-resolution.md) dimension. Kortkommandofältet `data.__adobe.analytics.s` stöds också. |
 | `data.__adobe.analytics.server` | The [Server](/help/components/dimensions/server.md) dimension. |
-| `data.__adobe.analytics.tnta` | Används i A4T-integreringar. |
 | `data.__adobe.analytics.transactionID` | The [`transactionID`](../vars/page-vars/transactionid.md) implementeringsvariabel. Kortkommandofältet `data.__adobe.analytics.xact` stöds också. |
 | `data.__adobe.analytics.zip` | The [Postnummer](../../components/dimensions/zip-code.md) dimension. |
 
