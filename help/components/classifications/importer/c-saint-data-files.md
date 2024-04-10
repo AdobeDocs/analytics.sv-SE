@@ -3,9 +3,9 @@ description: Importören låter dig ladda upp klassificeringsdata gruppvis för 
 title: Klassificeringsdatafiler
 feature: Classifications
 exl-id: aa919a03-d461-4d12-adc1-6441fb467e63
-source-git-commit: 93099d36a65ca2bf16fbd6342f01bfecdc8c798e
+source-git-commit: eb6703dc4079678020954984905ee210cbcbbf8f
 workflow-type: tm+mt
-source-wordcount: '1727'
+source-wordcount: '1746'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ En datafil måste följa följande strukturregler:
 
 * Klassificeringar kan inte innehålla cirkumflex (^) eftersom det här tecknet används för att ange en underklassificering.
 * Var försiktig när du använder bindestreck. Om du till exempel använder ett bindestreck (-) i en social term tolkas bindestrecket som ett [!DNL Not] -operatorn (minustecknet). Om du till exempel anger *`fragrance-free`* som en term som använder importen, identifierar Social termen som fragment *`minus`* kostnadsfria och samlar in inlägg som innehåller *`fragrance`*, men inte *`free`*.
-* Teckengränser används för att klassificera rapportdata. Om du till exempel överför en klassificeringstextfil för produkter ( *`s.products`*) med produktnamn som är längre än 100 tecken (byte) visas inte produkterna i rapporter. Spårningskoder och alla anpassade konverteringsvariabler (eVars) tillåter 255 byte.
+* Teckengränser används för att klassificera rapportdata. Om du till exempel överför en klassificeringstextfil för produkter ( *`s.products`*) med produktnamn som är längre än 100 tecken (byte) visas inte produkterna i rapporter. Spårningskoder och alla anpassade konverteringsvariabler (eVars) tillåter 255 byte. Denna policy omfattar även kolumnvärden för klassificering och underklassificering, som omfattas av samma gräns på 255 byte.
 * Tabbavgränsad datafil (skapa mallfilen med valfritt kalkylbladsprogram eller textredigeringsprogram).
 * Antingen [!DNL .tab] eller [!DNL .txt] filtillägg.
 * Ett nummertecken (#) identifierar raden som en användarkommentar. Adobe ignorerar alla rader som börjar med #.
