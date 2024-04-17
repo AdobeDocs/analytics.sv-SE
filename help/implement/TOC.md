@@ -4,10 +4,10 @@ audience: all
 user-guide-title: Implementeringshandbok för Analytics
 breadcrumb-title: Implementeringshandbok
 user-guide-description: Lär dig hur du implementerar Adobe Analytics. Anpassa vilka data som samlas in för att få ut så mycket som möjligt av Analytics-data.
-source-git-commit: 5ef8ba686a13f8b4ab592c0b48a9c074b0477fcf
+source-git-commit: 8727d6167a2c161ba646ae2217b0a6e7c4656dd1
 workflow-type: tm+mt
-source-wordcount: '408'
-ht-degree: 17%
+source-wordcount: '430'
+ht-degree: 16%
 
 ---
 
@@ -140,6 +140,10 @@ ht-degree: 17%
    + [Variabelmappning för XDM-objekt](aep-edge/xdm-var-mapping.md)
    + Web SDK {#web-sdk}
       + [Web SDK - översikt](aep-edge/web-sdk/overview.md)
+      + [Migrera till Web SDK med hjälp av taggar](aep-edge/web-sdk/analytics-extension-to-web-sdk.md)
+      + [Migrera till Web SDK med JavaScript](aep-edge/web-sdk/appmeasurement-to-web-sdk.md)
+      + [Ny implementering med taggar](aep-edge/web-sdk/web-sdk-tag-extension.md)
+      + [Ny implementering med JavaScript](aep-edge/web-sdk/web-sdk-javascript-library.md)
    + Mobile SDK {#mobile-sdk}
       + [Mobile SDK - översikt](aep-edge/mobile-sdk/overview.md)
    + Server-API {#server-api}
