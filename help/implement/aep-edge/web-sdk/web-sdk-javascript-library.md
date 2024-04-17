@@ -3,9 +3,9 @@ title: Skicka data till Adobe Analytics med JavaScript-biblioteket för Web SDK
 description: Börja med en ren Web SDK-implementering för att skicka data till Adobe Analytics med hjälp av JavaScript-biblioteket.
 hide: true
 hidefromtoc: true
-source-git-commit: d4c9bddf18311e13d025ed9d62c0636a33eb7b85
+source-git-commit: d6c16d8841110e3382248f4c9ce3c2f2e32fe454
 workflow-type: tm+mt
-source-wordcount: '602'
+source-wordcount: '1070'
 ht-degree: 0%
 
 ---
@@ -25,3 +25,76 @@ Att använda JavaScript-biblioteket Web SDK för att skicka data till Adobe Anal
 | Fördelar | Nackdelar |
 | --- | --- |
 | <ul><li>**Direkt metod**: Den här implementeringsvägen är enklare än strategier som flyttar befintliga Adobe Analytics-implementeringar. Om du inte har någon Adobe Analytics-implementering att tänka på fyller du i de tillämpliga Web SDK XDM-fälten.</li><li>**Fördefinierat schema**: Om din organisation inte behöver ett eget schema kan du helt enkelt använda det schema som är avsett för Adobe Analytics. Det här konceptet gäller även när du går mot Customer Journey Analytics; konceptet med props och eVars gäller inte Customer Journey Analytics, men du kan fortsätta använda props och eVars som enkla anpassade dimensioner.</li></ul> | <ul><li>**Implementeringsändringar kräver åtgärd från utvecklaren**: Om du vill göra ändringar i Web SDK-implementeringen måste du samarbeta med ditt utvecklingsteam för att redigera koden på din webbplats. Metoden som använder [SDK-taggtillägg för webben](web-sdk-tag-extension.md) undviker denna nackdel.</li><li>**Låst till att använda ett specifikt schema**: När din organisation flyttar till Customer Journey Analytics måste du välja att fortsätta använda Adobe Analytics-schemat eller migrera till din egen organisations schema (som skulle vara en separat datauppsättning). Om din organisation vill undvika både Adobe Analytics-schemat och migrering till en separat datauppsättning när den flyttar till Customer Journey Analytics rekommenderar Adobe en av följande två metoder:</li><ul><li>Använd `data` objekt: `data` kan du skicka data till Adobe Analytics utan att följa ett XDM-schema. När din organisations schema har skapats kan du mappa dataStream-mappningen `data` till XDM. Båda [Analystillägg till Web SDK-tillägg](analytics-extension-to-web-sdk.md) och [AppMeasurement till Web SDK JavaScript-bibliotek](appmeasurement-to-web-sdk.md) använd denna `data` -objekt.</li><li>Hoppa över Adobe Analytics helt: Om du implementerar Web SDK kan du skicka dessa data till en datauppsättning i Adobe Experience Platform för användning i Customer Journey Analytics. Du kan använda vilket schema som helst. Adobe Analytics är inte involverat alls i det här arbetsflödet och därför krävs inte fältgruppen Adobe Analytics ExperienceEvent. Den här metoden medför minst teknisk skuld, men lämnar också Adobe Analytics helt utanför bilden.</li></ul></ul> |
+
+>[!CAUTION]
+>
+>Den här implementeringsmetoden kräver att du använder ett schema som konfigurerats för Adobe Analytics. Om din organisation planerar att använda ditt eget schema med Customer Journey Analytics i framtiden kan Adobe Analytics-schemat skapa förvirring för dataadministratörer och arkitekter. Det finns flera alternativ för att minska detta hinder:
+>
+>* Du kan använda Adobe Analytics-schemat i CJA. Observera att CJA inte har något koncept för props eller eVars. De behandlas som andra schemafält. Observera också att användningen av Adobe Analytics-schemat i CJA kan göra det svårare att använda andra plattformstjänster, som Adobe Journey Optimizer och Real-time Customer Data Platform.
+>* Du kan använda dataobjektet, ungefär som ett migreringsarbetsflöde. Observera att användningen av dataobjektet kräver att du mappar varje dataobjektfält till ett XDM-schemafält.
+>* Du kan hoppa över Adobe Analytics-implementeringen helt och skicka data till Adobe Experience Platform med ditt eget schema. Den här metoden är idealisk på lång sikt och gör att din organisation kan börja använda Customer Journey Analytics.
+
+## Steg som krävs för att implementera JavaScript-biblioteket för Web SDK
+
+Översikt över implementeringsuppgifterna på hög nivå:
+
+![Så här implementerar du Adobe Analytics med hjälp av Web SDK-arbetsflöde, vilket beskrivs i det här avsnittet.](../../assets/websdk-annotated.png)
+
+<table style="width:100%">
+
+<tr>
+<th style="width:5%"></th><th style="width:60%"><b>Uppgift</b></th><th style="width:35%"><b>Mer information</b></th>
+</tr>
+
+<tr>
+<td>1</td>
+<td>Se till att du har <b>har definierat en rapportsvit</b>.</td>
+<td><a href="/help/admin/admin/c-manage-report-suites/report-suites-admin.md">Report Suite Manager</a></td>
+</tr>
+
+<tr>
+<td>2</td>
+<td><b>Konfigurera scheman</b>. För att standardisera datainsamlingen för användning i olika program som utnyttjar Adobe Experience Platform har Adobe skapat den öppna och offentligt dokumenterade standarden Experience Data Model (XDM).</td>
+<td><a href="https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html">Översikt över schemaanvändargränssnittet</a></td>
+</tr>
+
+<tr>
+<td>3</td>
+<td><b>Skapa ett datalager</b> för att hantera spårning av data på din webbplats.</td>
+<td><a href="../../prepare/data-layer.md">Skapa ett datalager</a></td>
+</tr>
+
+<tr>
+<td> 4</td>
+<td><b>Installera den fördefinierade fristående versionen</b>. Du kan referera till biblioteket (<code>alloy.js</code>) på CDN direkt på din sida eller ladda ned och lagra den i din egen infrastruktur. Du kan också använda NPM-paketet.</td>
+<td><a href="https://experienceleague.adobe.com/docs/experience-platform/web-sdk/install/library.html">Installera den fördefinierade fristående versionen</a> och <a href="https://experienceleague.adobe.com/docs/experience-platform/web-sdk/install/npm.html">Använda NPM-paketet</a></td>
+</tr>
+
+<tr>
+<td>5</td>
+<td><b>Konfigurera ett datastream</b>. En datastream representerar konfigurationen på serversidan när Adobe Experience Platform Web SDK implementeras.</td>
+<td><a href="https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html">Konfigurera ett datastream<a></td> 
+</tr>
+
+<td>6</td>
+<td><b>Lägg till en Adobe Analytics-tjänst</b> till din datastream. Tjänsten styr om och hur data skickas till Adobe Analytics och till vilka rapporteringsprogram.</td>
+<td><a href="https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html#analytics">Lägg till Adobe Analytics-tjänst i ett datastream</a></td>
+</tr>
+
+<tr>
+<td>7</td>
+<td><b>Konfigurera Web SDK</b>. Se till att biblioteket som du installerade i steg 4 är korrekt konfigurerat med dataStream ID (kallades tidigare edge configuration id (<code>edgeConfigId</code>)), organisations-ID (<code>orgId</code>) och andra tillgängliga alternativ. Kontrollera att variablerna mappas korrekt. </td>
+<td><a href="https://experienceleague.adobe.com/docs/experience-platform/web-sdk/commands/configure/overview.html">Konfigurera Web SDK</a><br/><a href="../xdm-var-mapping.md">Variabelmappning för XDM-objekt</a></td>
+</tr>
+
+<tr>
+<td>8</td>
+<td><b>Kör kommandon</b> och/eller <b>spåra händelser</b>. När baskoden har implementerats på webbsidan kan du börja köra kommandon och spåra händelser med SDK.
+</td>
+<td><a href="https://experienceleague.adobe.com/docs/experience-platform/web-sdk/commands/sendevent/overview.html">Skicka händelser</a></td>
+</tr>
+
+<tr>
+<td>9</td><td><b>Utöka och validera implementeringen</b> innan det går till produktion.</td><td></td> 
+</tr>
+</table>
