@@ -3,10 +3,10 @@ description: Så här överför du datafiler via FTP.
 title: FTP-import
 feature: Classifications
 exl-id: 3e93b35c-6f65-4a93-887d-d94e4d359bdc
-source-git-commit: f71b80dce9d447c431130901d86947d23e28d378
+source-git-commit: 95767d10f63e20d5943fa95be3f2fe8f88e67e97
 workflow-type: tm+mt
-source-wordcount: '698'
-ht-degree: 1%
+source-wordcount: '701'
+ht-degree: 0%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 1%
 >
 >FTP rekommenderas inte eftersom det är en okrypterad metod för att dela filer, vilket innebär att alla kan fånga upp filinnehållet samt användarnamnet och lösenordet som används för kontot.
 >
->Konfigurera istället ett molnkonto enligt beskrivningen i [Konfigurera molnimportkonton](/help/components/locations/configure-import-accounts.md).
+>Konfigurera istället ett molnkonto enligt beskrivningen i [Konfigurera molnimport- och exportkonton](/help/components/locations/configure-import-accounts.md).
 
 Steg som beskriver hur du överför datafiler via FTP.
 
@@ -52,7 +52,7 @@ Skapa ett FTP-konto innan du överför data via FTP. >
 
 Se [FTP och sFTP](/help/export/ftp-and-sftp/ftp-overview.md) om du vill ha mer information om FTP-servrar i Adobe.
 
-1. Klicka på **[!UICONTROL Admin]** > **[!UICONTROL Classification Importer]**.
+1. Klicka **[!UICONTROL Admin]** > **[!UICONTROL Classification Importer]**.
 1. Klicka **[!UICONTROL Import File]** och sedan klicka **[!UICONTROL FTP Import]**.
 1. På **[!UICONTROL Import File]** flik, klicka **[!UICONTROL Add New]**.
 1. Ange information om FTP-kontot:
@@ -81,7 +81,7 @@ Du kan använda ett FTP-konto för att importera klassificeringar till Adobe Ana
 
 Så här importerar du klassificeringar via FTP:
 
-1. Klicka på **[!UICONTROL Admin]** > **[!UICONTROL Classification Importer]**.
+1. Klicka **[!UICONTROL Admin]** > **[!UICONTROL Classification Importer]**.
 1. Klicka **[!UICONTROL Import File]** och sedan klicka **[!UICONTROL FTP Import]**.
 1. Klicka på bredvid det FTP-konto som du vill använda **[!UICONTROL View]**.
 1. Använd FTP-åtkomstinformationen (värd, inloggning, lösenord) för att komma åt FTP-servern via en valfri FTP-klient.

@@ -3,9 +3,9 @@ description: Steg som beskriver hur du skapar en begäran om Data Warehouse.
 title: Konfigurera ett rapportmål för en Data Warehouse-begäran
 feature: Data Warehouse
 exl-id: 3c7faea3-4d90-4274-88f3-e9337c94155f
-source-git-commit: 4e4b5e1c362778223be01f78b173a698c53f9b32
+source-git-commit: b960aaa60569d65cb8501cf041341a3a132929b1
 workflow-type: tm+mt
-source-wordcount: '2427'
+source-wordcount: '2581'
 ht-degree: 0%
 
 ---
@@ -20,12 +20,19 @@ Mer information om hur du börjar skapa en begäran och länkar till andra vikti
 >
 >Tänk på följande när du konfigurerar ett rapportmål:
 >
->* Vi rekommenderar att du använder ett molnkonto eller ett e-postmeddelande för rapportdestinationen. Äldre FTP- och SFTP-konton är tillgängliga, men rekommenderas inte.
+>* Vi rekommenderar att du använder ett molnkonto eller ett e-postmeddelande för rapportdestinationen. [Äldre FTP- och SFTP-konton](#legacy-destinations) finns tillgängliga men rekommenderas inte.
 >
->* Alla molnkonton som du tidigare konfigurerat för [Dataflöden](/help/export/analytics-data-feed/create-feed.md) eller för [importera Adobe Analytics klassificeringsdata](/help/components/locations/locations-manager.md) är tillgängliga för Data Warehouse. Eventuella platser som har konfigurerats för import av klassificeringsdata kan dock inte användas.
+>* Alla molnkonton som du tidigare konfigurerat är tillgängliga för Data Warehouse. Du kan konfigurera molnkonton på något av följande sätt:
+>
+>   * Vid konfigurering [Dataflöden](/help/export/analytics-data-feed/create-feed.md)
+>   
+>   * När [importera Adobe Analytics klassificeringsdata](/help/components/locations/locations-manager.md) (Konton kan användas, men det går inte att konfigurera platser för dessa konton.)
+>   
+>   * Från Platshanteraren, i [Komponenter > Platser](/help/components/locations/configure-import-accounts.md).
 >
 >* Molnkonton är kopplade till ditt Adobe Analytics-användarkonto. Andra användare kan inte använda eller visa molnkonton som du konfigurerar.
 >
+>* Du kan redigera alla platser som du skapar från Platshanteraren i [Komponenter > Platser](/help/components/locations/configure-import-accounts.md)
 
 Så här konfigurerar du målet dit Data Warehouse-rapporter skickas:
 
@@ -37,17 +44,27 @@ Så här konfigurerar du målet dit Data Warehouse-rapporter skickas:
 
    ![Målflik för rapport](assets/dw-report-destination.png)
 
-1. (Villkorligt) Om ett konto (och ett mål för det kontot) redan har konfigurerats som du vill använda som rapportmål:
+1. (Villkorligt) Om ett molnkonto (och ett mål för det kontot) redan har konfigurerats i Adobe Analytics kan du använda det som rapportmål:
 
-   1. (Valfritt) Om du är systemadministratör väljer du [!UICONTROL **Visa alla mål**] är tillgängligt. Aktivera det här alternativet om du vill ha åtkomst till alla konton och platser som har skapats av någon användare i organisationen.
+   >[!NOTE]
+   >
+   >Konton är bara tillgängliga för dig om du har konfigurerat dem eller om de delats med en organisation som du är en del av.
+   >
+   >Om du är systemadministratör [!UICONTROL **Visa alla mål**] är tillgängligt. Aktivera det här alternativet om du vill ha åtkomst till alla konton och platser som har skapats av någon användare i organisationen.
 
    1. Välj konto på [!UICONTROL **Välj konto**] listruta.
 
-      Alla molnkonton som du har konfigurerat för [importera Adobe Analytics klassificeringsdata](/help/components/locations/locations-manager.md) från ett molnmål visas här och kan användas. Eventuella platser som har konfigurerats för import av klassificeringsdata kan dock inte användas. Lägg i stället till ett nytt mål enligt beskrivningen nedan.
+      Alla molnkonton som du har konfigurerat i något av följande områden i Adobe Analytics kan användas:
+
+      * Vid import av klassificeringsdata från Adobe Analytics, enligt beskrivningen i [Schema](/help/components/classifications/sets/manage/schema.md).
+
+        Eventuella platser som har konfigurerats för import av klassificeringsdata kan dock inte användas. Lägg i stället till ett nytt mål enligt beskrivningen nedan.
+
+      * När konton och platser konfigureras i området Platser, enligt beskrivningen i [Konfigurera molnimport- och exportkonton](/help/components/locations/configure-import-accounts.md) och [Konfigurera platser för molnimport och -export](/help/components/locations/configure-import-locations.md).
 
    1. Välj det mål som är associerat med kontot på menyn [!UICONTROL **Välj mål**] listruta. <!-- Is this correct? -->
 
-1. (Villkorligt) Om du inte tidigare har konfigurerat ett konto:
+1. (Villkorligt) Om du inte har tillgång till ett molnkonto som redan är konfigurerat i Adobe Analytics kan du konfigurera ett:
 
    1. Välj [!UICONTROL **Lägg till konto**] och ange sedan följande information:
 
@@ -63,7 +80,7 @@ Så här konfigurerar du målet dit Data Warehouse-rapporter skickas:
 
       +++Amazon S3
 
-      Ange följande information för att konfigurera ett Amazon S3 Role ARN-konto:
+      Om du vill konfigurera ett Amazon S3 Role ARN-konto anger du följande information:
 
       | Fält | Funktion |
       |---------|----------|
@@ -76,7 +93,7 @@ Så här konfigurerar du målet dit Data Warehouse-rapporter skickas:
 
       +++Google Cloud Platform
 
-      Ange följande information för att konfigurera ett Google Cloud Platform-konto:
+      Om du vill konfigurera ett Google Cloud Platform-konto anger du följande information:
 
       | Fält | Funktion |
       |---------|----------|
@@ -88,7 +105,7 @@ Så här konfigurerar du målet dit Data Warehouse-rapporter skickas:
 
       +++Azure SAS
 
-      Ange följande information för att konfigurera ett Azure SAS-konto:
+      Om du vill konfigurera ett Azure SAS-konto anger du följande information:
 
       | Fält | Funktion |
       |---------|----------|
@@ -104,7 +121,7 @@ Så här konfigurerar du målet dit Data Warehouse-rapporter skickas:
 
       +++Azure RBAC
 
-      Ange följande information för att konfigurera ett Azure RBAC-konto:
+      Om du vill konfigurera ett Azure RBAC-konto anger du följande information:
 
       | Fält | Funktion |
       |---------|----------|
@@ -118,7 +135,7 @@ Så här konfigurerar du målet dit Data Warehouse-rapporter skickas:
 
       +++E-post
 
-      Ange följande information för att konfigurera ett e-postkonto:
+      Om du vill konfigurera ett e-postkonto anger du följande information:
 
       | Fält | Funktion |
       |---------|----------|
@@ -132,11 +149,11 @@ Så här konfigurerar du målet dit Data Warehouse-rapporter skickas:
 
       +++Amazon S3
 
-      Ange följande information för att konfigurera en Amazon S3-plats:
+      Om du vill konfigurera en Amazon S3-plats anger du följande information:
 
       | Fält | Funktion |
       |---------|----------|
-      | [!UICONTROL **Buckennamn**] | Den bucket på ditt Amazon S3-konto där du vill att Adobe Analytics-data ska skickas. <p>Se till att användar-ARN som tillhandahålls av Adobe har `S3:PutObject` behörighet för att överföra filer till denna bucket. Med den här behörigheten kan användaren ARN överföra initiala filer och skriva över filer för efterföljande överföringar.</p> |
+      | [!UICONTROL **Buckennamn**] | Den bucket på ditt Amazon S3-konto där du vill att Adobe Analytics-data ska skickas. <p>Se till att användar-ARN som tillhandahålls av Adobe har `S3:PutObject` behörighet för att överföra filer till denna bucket. Med den här behörigheten kan användaren ARN överföra initiala filer och skriva över filer för efterföljande överföringar.</p><p>Bucket-namn måste uppfylla specifika namnregler. De måste till exempel innehålla mellan 3 och 63 tecken, får endast bestå av gemener, siffror, punkter (.) och bindestreck (-) och måste börja och sluta med en bokstav eller en siffra. [En fullständig lista över namnregler finns i AWS-dokumentationen](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucketnamingrules.html). </p> |
       | [!UICONTROL **Nyckelprefix**] | Mappen inom hakparentesen där du vill placera data. Ange ett mappnamn och lägg sedan till ett omvänt snedstreck efter namnet för att skapa mappen. Till exempel folder_name/ |
 
       {style="table-layout:auto"}
@@ -145,7 +162,7 @@ Så här konfigurerar du målet dit Data Warehouse-rapporter skickas:
 
       +++Google Cloud Platform
 
-      Ange följande information för att konfigurera en plats för Google Cloud-plattformen:
+      Ange följande information om du vill konfigurera en plats för Google Cloud-plattformen:
 
       | Fält | Funktion |
       |---------|----------|
@@ -158,7 +175,7 @@ Så här konfigurerar du målet dit Data Warehouse-rapporter skickas:
 
       +++Azure SAS
 
-      Ange följande information för att konfigurera en Azure SAS-plats:
+      Om du vill konfigurera en Azure SAS-plats anger du följande information:
 
       | Fält | Funktion |
       |---------|----------|
@@ -171,7 +188,7 @@ Så här konfigurerar du målet dit Data Warehouse-rapporter skickas:
 
       +++Azure RBAC
 
-      Ange följande information för att konfigurera en Azure RBAC-plats:
+      Om du vill konfigurera en Azure RBAC-plats anger du följande information:
 
       | Fält | Funktion |
       |---------|----------|

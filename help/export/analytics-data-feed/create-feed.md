@@ -3,9 +3,9 @@ title: Skapa en datafeed
 description: Lär dig hur du skapar en datafeed.
 feature: Data Feeds
 exl-id: 36c8a40e-6137-4836-9d4b-bebf17b932bc
-source-git-commit: 9fbe0f8a7933e5ff047a270523ea53d9489b223c
+source-git-commit: 0cd9f21771acd634ad8389882c2cc48c9a7fce6f
 workflow-type: tm+mt
-source-wordcount: '3344'
+source-wordcount: '4039'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ När du skapar en datafeed kan du ge Adobe:
 
 >[!NOTE]
 >
->Innan du skapar en datafeed är det viktigt att du har en grundläggande förståelse för dataflöden och att du uppfyller alla nödvändiga krav. Mer information finns i [Översikt över dataflöden](data-feed-overview.md).
+>Innan du skapar en datafeed är det viktigt att du har en grundläggande förståelse för dataflöden och att du ser till att alla krav uppfylls. Mer information finns i [Översikt över dataflöden](data-feed-overview.md).
 
 ## Skapa och konfigurera en datafeed
 
@@ -39,7 +39,7 @@ När du skapar en datafeed kan du ge Adobe:
    | [!UICONTROL **Namn**] | Dataflödets namn. Måste vara unikt i den valda rapportsviten och får innehålla upp till 255 tecken. |
    | [!UICONTROL **Rapportsvit**] | Rapportsviten som dataflödet baseras på. Om flera dataflöden skapas för samma rapportserie måste de ha olika kolumndefinitioner. Endast källrapportsviter stöder dataflöden. Virtuella rapportsviter stöds inte. |
    | [!UICONTROL **E-post när slutförd**] | E-postadressen som ska meddelas när en feed har bearbetats. E-postadressen måste vara korrekt formaterad. |
-   | [!UICONTROL **Feedintervall**] | Välj **Dagligen** för bakåtfyllnad eller historiska data. Dagliga matningar innehåller data för en hel dag, från midnatt till midnatt i rapportsvitens tidszon.  Välj **Varje timme** för att fortsätta med data (Daily finns också tillgängligt för att fortsätta feeds om du vill). Timmatningar innehåller en timmes data. |
+   | [!UICONTROL **Feedintervall**] | Välj **Dagligen** för bakåtfyllnad eller historiska data. Dagliga matningar innehåller data för en hel dag, från midnatt till midnatt i rapportsvitens tidszon. Välj **Varje timme** för att fortsätta med data (Daily finns också tillgängligt för att fortsätta feeds om du vill). Timmatningar innehåller en timmes data. |
    | [!UICONTROL **Fördröjd bearbetning**] | Vänta en viss tid innan du bearbetar en datafeedfil. En fördröjning kan vara användbar för att ge mobila implementeringar möjlighet att komma online och skicka data på offlineenheter. Den kan också användas för att hantera serverprocesser i organisationen när tidigare bearbetade filer hanteras. I de flesta fall behövs ingen fördröjning. En feed kan fördröjas med upp till 120 minuter. |
    | [!UICONTROL **Start- och slutdatum**] | Startdatumet anger det datum då du vill att dataflödet ska börja. Om du omedelbart vill börja bearbeta dataflöden för historiska data anger du det här datumet till ett tidigare datum när data samlas in. Start- och slutdatumen baseras på rapportsvitens tidszon. |
    | [!UICONTROL **Kontinuerlig feed**] | Den här kryssrutan tar bort slutdatumet, vilket gör att en feed kan köras på obestämd tid. När en feed har avslutat bearbetningen av historiska data väntar en feed på data för att slutföra insamlingen under en given timme eller dag. När den aktuella timmen eller dagen är slut börjar bearbetningen efter den angivna fördröjningen. |
@@ -51,9 +51,17 @@ När du skapar en datafeed kan du ge Adobe:
    >Tänk på följande när du konfigurerar ett rapportmål:
    >
    >* Vi rekommenderar att du använder ett molnkonto för rapportdestinationen. [Äldre FTP- och SFTP-konton](#legacy-destinations) är tillgängliga, men rekommenderas inte.
+   >* Alla molnkonton som du tidigare konfigurerat är tillgängliga för datafeeds. Du kan konfigurera molnkonton på något av följande sätt:
+   >
+   >   * När molnkonton konfigureras för [Data Warehouse](/help/export/data-warehouse/create-request/dw-request-report-destinations.md)
+   >   
+   >   * När [importera Adobe Analytics klassificeringsdata](/help/components/locations/locations-manager.md) (Eventuella platser som har konfigurerats för import av klassificeringsdata kan inte användas.)
+   >   
+   >   * Från Platshanteraren, i [Komponenter > Platser](/help/components/locations/configure-import-accounts.md)
    >
    >* Molnkonton är kopplade till ditt Adobe Analytics-användarkonto. Andra användare kan inte använda eller visa molnkonton som du konfigurerar.
    >
+   >* Du kan redigera alla platser som du skapar från Platshanteraren i [Komponenter > Platser](/help/components/locations/configure-import-accounts.md)
 
    ![Listruta för mål för datafeed](assets/datafeed-destinations-dropdown.png)
 
@@ -67,7 +75,9 @@ När du skapar en datafeed kan du ge Adobe:
 
    Så här konfigurerar du en Amazon S3-bucket som mål för en datafeed:
 
-   1. På Adobe Analytics Admin Console i [!UICONTROL **Mål**] avsnitt, markera [!UICONTROL **Amazon S3**].
+   1. Börja skapa en datafeed enligt beskrivningen i [Skapa och konfigurera en datafeed](#create-and-configure-a-data-feed).
+
+   1. I [!UICONTROL **Mål**] i [!UICONTROL **Typ**] nedrullningsbar meny, välja [!UICONTROL **Amazon S3**].
 
       ![Amazon S3-mål](assets/datafeed-destination-amazons3.png)
 
@@ -75,15 +85,27 @@ När du skapar en datafeed kan du ge Adobe:
 
       Sidan Amazon S3 Export Locations (Exportplatser) visas.
 
-   1. (Villkorligt) Om du tidigare har lagt till ett Amazon S3-konto och en plats:
+   1. (Villkorligt) Om ett Amazon S3-konto (och en plats för det kontot) redan har konfigurerats i Adobe Analytics kan du använda det som mål för dataflödet:
+
+      >[!NOTE]
+      >
+      >Konton är bara tillgängliga för dig om du har konfigurerat dem eller om de delats med en organisation som du är en del av.
 
       1. Välj konto på [!UICONTROL **Välj konto**] listruta.
+
+         Alla molnkonton som konfigurerats i något av följande områden i Adobe Analytics är tillgängliga att använda:
+
+         * Vid import av klassificeringsdata från Adobe Analytics, enligt beskrivningen i [Schema](/help/components/classifications/sets/manage/schema.md).
+
+           Eventuella platser som har konfigurerats för import av klassificeringsdata kan dock inte användas. Lägg i stället till ett nytt mål enligt beskrivningen nedan.
+
+         * När konton och platser konfigureras i området Platser, enligt beskrivningen i [Konfigurera molnimport- och exportkonton](/help/components/locations/configure-import-accounts.md) och [Konfigurera platser för molnimport och -export](/help/components/locations/configure-import-locations.md).
 
       1. Välj plats på menyn [!UICONTROL **Välj plats**] listruta.
 
       1. Välj [!UICONTROL **Spara**] > [!UICONTROL **Spara**].
 
-         Målet är nu konfigurerat att skicka data till den Amazon S3-plats som du har angett.
+      Målet är nu konfigurerat att skicka data till den Amazon S3-plats som du har angett.
 
    1. (Villkorligt) Om du inte tidigare har lagt till ett Amazon S3-konto:
 
@@ -104,7 +126,7 @@ När du skapar en datafeed kan du ge Adobe:
          |---------|----------|
          | [!UICONTROL **Namn**] | Ett namn för kontot. |
          | [!UICONTROL **Beskrivning**] | En beskrivning av kontot. |
-         | [!UICONTROL **Bucket**] | Den bucket på ditt Amazon S3-konto där du vill att Adobe Analytics-data ska skickas. <p>Se till att användar-ARN som tillhandahålls av Adobe har `S3:PutObject` behörighet för att överföra filer till denna bucket. Med den här behörigheten kan användaren ARN överföra initiala filer och skriva över filer för efterföljande överföringar.</p> |
+         | [!UICONTROL **Bucket**] | Den bucket på ditt Amazon S3-konto där du vill att Adobe Analytics-data ska skickas. <p>Se till att användar-ARN som tillhandahålls av Adobe har `S3:PutObject` behörighet för att överföra filer till denna bucket. Med den här behörigheten kan användaren ARN överföra initiala filer och skriva över filer för efterföljande överföringar.</p><p>Bucket-namn måste uppfylla specifika namnregler. De måste till exempel innehålla mellan 3 och 63 tecken, får endast bestå av gemener, siffror, punkter (.) och bindestreck (-) och måste börja och sluta med en bokstav eller en siffra. [En fullständig lista över namnregler finns i AWS-dokumentationen](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucketnamingrules.html). </p> |
          | [!UICONTROL **Prefix**] | Mappen inom hakparentesen där du vill placera data. Ange ett mappnamn och lägg sedan till ett omvänt snedstreck efter namnet för att skapa mappen. Exempel: `folder_name/` |
 
          {style="table-layout:auto"}
@@ -112,6 +134,8 @@ När du skapar en datafeed kan du ge Adobe:
       1. Välj [!UICONTROL **Skapa**] > [!UICONTROL **Spara**].
 
          Målet är nu konfigurerat att skicka data till den Amazon S3-plats som du har angett.
+
+      1. (Villkorligt) Om du behöver hantera målet (kontot och platsen) som du nyss skapade, är det tillgängligt i [Platshanteraren](/help/components/locations/locations-manager.md).
 
 +++
 
@@ -125,7 +149,7 @@ När du skapar en datafeed kan du ge Adobe:
 
       Mer information finns i [Microsoft Azure-dokumentation om hur du skapar ett Azure Active Directory-program](https://learn.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal).
 
-   1. På Adobe Analytics Admin Console i [!UICONTROL **Mål**] avsnitt, markera [!UICONTROL **Azure RBAC**].
+   1. På Adobe Analytics Admin Console i [!UICONTROL **Mål**] i [!UICONTROL **Typ**] nedrullningsbar meny, välja [!UICONTROL **Azure RBAC**].
 
       ![Azure RBAC-mål](assets/datafeed-destination-azurerbac.png)
 
@@ -133,9 +157,21 @@ När du skapar en datafeed kan du ge Adobe:
 
       Sidan med Azure RBAC-exportplatser visas.
 
-   1. (Villkorligt) Om du tidigare har lagt till ett Azure RBAC-konto och en plats:
+   1. (Villkorligt) Om ett Azure RBAC-konto (och en plats för det kontot) redan har konfigurerats i Adobe Analytics kan du använda det som mål för din datafeed:
+
+      >[!NOTE]
+      >
+      >Konton är bara tillgängliga för dig om du har konfigurerat dem eller om de delats med en organisation som du är en del av.
 
       1. Välj konto på [!UICONTROL **Välj konto**] listruta.
+
+      Alla molnkonton som du har konfigurerat i något av följande områden i Adobe Analytics kan användas:
+
+      * Vid import av klassificeringsdata från Adobe Analytics, enligt beskrivningen i [Schema](/help/components/classifications/sets/manage/schema.md).
+
+        Eventuella platser som har konfigurerats för import av klassificeringsdata kan dock inte användas. Lägg i stället till ett nytt mål enligt beskrivningen nedan.
+
+      * När konton och platser konfigureras i området Platser, enligt beskrivningen i [Konfigurera molnimport- och exportkonton](/help/components/locations/configure-import-accounts.md) och [Konfigurera platser för molnimport och -export](/help/components/locations/configure-import-locations.md).
 
       1. Välj plats på menyn [!UICONTROL **Välj plats**] listruta.
 
@@ -173,11 +209,13 @@ När du skapar en datafeed kan du ge Adobe:
 
          Målet är nu konfigurerat att skicka data till den Azure RBAC-plats som du angav.
 
+      1. (Villkorligt) Om du behöver hantera målet (kontot och platsen) som du nyss skapade, är det tillgängligt i [Platshanteraren](/help/components/locations/locations-manager.md).
+
 +++
 
    +++Azure SAS
 
-   Du kan skicka feeds direkt till en Azure-behållare med SAS-autentisering. Den här måltypen kräver ett program-ID, klientorganisations-ID, nyckelvalvs-URI, nyckelvalvets hemliga namn och hemlighet.
+   Du kan skicka feeds direkt till en Azure-behållare genom att använda SAS-autentisering. Den här måltypen kräver ett program-ID, klientorganisations-ID, nyckelvalvs-URI, nyckelvalvets hemliga namn och hemlighet.
 
    Så här konfigurerar du Azure SAS som mål för en datafeed:
 
@@ -193,9 +231,21 @@ När du skapar en datafeed kan du ge Adobe:
 
       Sidan med Azure SAS-exportplatser visas.
 
-   1. (Villkorligt) Om du tidigare har lagt till ett Azure SAS-konto och en plats:
+   1. (Villkorligt) Om ett Azure SAS-konto (och en plats för det kontot) redan har konfigurerats i Adobe Analytics kan du använda det som mål för din datafeed:
+
+      >[!NOTE]
+      >
+      >Konton är bara tillgängliga för dig om du har konfigurerat dem eller om de delats med en organisation som du är en del av.
 
       1. Välj konto på [!UICONTROL **Välj konto**] listruta.
+
+         Alla molnkonton som du har konfigurerat i något av följande områden i Adobe Analytics kan användas:
+
+         * Vid import av klassificeringsdata från Adobe Analytics, enligt beskrivningen i [Schema](/help/components/classifications/sets/manage/schema.md).
+
+           Eventuella platser som har konfigurerats för import av klassificeringsdata kan dock inte användas. Lägg i stället till ett nytt mål enligt beskrivningen nedan.
+
+         * När konton och platser konfigureras i området Platser, enligt beskrivningen i [Konfigurera molnimport- och exportkonton](/help/components/locations/configure-import-accounts.md) och [Konfigurera platser för molnimport och -export](/help/components/locations/configure-import-locations.md).
 
       1. Välj plats på menyn [!UICONTROL **Välj plats**] listruta.
 
@@ -234,6 +284,8 @@ När du skapar en datafeed kan du ge Adobe:
 
          Målet är nu konfigurerat att skicka data till den Azure SAS-plats som du angav.
 
+      1. (Villkorligt) Om du behöver hantera målet (kontot och platsen) som du nyss skapade, är det tillgängligt i [Platshanteraren](/help/components/locations/locations-manager.md).
+
 +++
 
    +++Google Cloud Platform
@@ -252,15 +304,27 @@ När du skapar en datafeed kan du ge Adobe:
 
       Sidan GCP-exportplatser visas.
 
-   1. (Villkorligt) Om du tidigare har lagt till ett GCP-konto och en plats:
+   1. (Villkorligt) Om ett Google Cloud Platform-konto (och en plats för det kontot) redan har konfigurerats i Adobe Analytics kan du använda det som mål för datafeeden:
+
+      >[!NOTE]
+      >
+      >Konton är bara tillgängliga för dig om du har konfigurerat dem eller om de delats med en organisation som du är en del av.
 
       1. Välj konto på [!UICONTROL **Välj konto**] listruta.
+
+         Alla molnkonton som du har konfigurerat i något av följande områden i Adobe Analytics kan användas:
+
+         * Vid import av klassificeringsdata från Adobe Analytics, enligt beskrivningen i [Schema](/help/components/classifications/sets/manage/schema.md).
+
+           Eventuella platser som har konfigurerats för import av klassificeringsdata kan dock inte användas. Lägg i stället till ett nytt mål enligt beskrivningen nedan.
+
+         * När konton och platser konfigureras i området Platser, enligt beskrivningen i [Konfigurera molnimport- och exportkonton](/help/components/locations/configure-import-accounts.md) och [Konfigurera platser för molnimport och -export](/help/components/locations/configure-import-locations.md).
 
       1. Välj plats på menyn [!UICONTROL **Välj plats**] listruta.
 
       1. Välj [!UICONTROL **Spara**] > [!UICONTROL **Spara**].
 
-         Målet är nu konfigurerat att skicka data till den GCP-plats som du angav.
+         Målet är nu konfigurerat att skicka data till den plats för Google Cloud-plattformen som du angav.
 
    1. (Villkorligt) Om du inte tidigare har lagt till ett GCP-konto:
 
@@ -290,6 +354,8 @@ När du skapar en datafeed kan du ge Adobe:
 
          Målet är nu konfigurerat att skicka data till den GCP-plats som du angav.
 
+      1. (Villkorligt) Om du behöver hantera målet (kontot och platsen) som du nyss skapade, är det tillgängligt i [Platshanteraren](/help/components/locations/locations-manager.md).
+
 +++
 
 1. I  [!UICONTROL **Datakolumndefinitioner**] väljer du den senaste [!UICONTROL **Alla Adobe Columns**] i listrutan och fyll sedan i följande fält:
@@ -298,8 +364,8 @@ När du skapar en datafeed kan du ge Adobe:
    |---------|----------|
    | [!UICONTROL **Ta bort escape-tecken**] | När du samlar in data kan vissa tecken (till exempel nya rader) orsaka problem. Markera den här rutan om du vill att dessa tecken ska tas bort från feed-filerna. |
    | [!UICONTROL **Komprimeringsformat**] | Den typ av komprimering som används. **Gzip** skickar filer i `.tar.gz` format. **Postnummer** skickar filer i `.zip` format. |
-   | [!UICONTROL **Förpackningstyp**] | Välj **Flera filer** för de flesta dataflöden. Med det här alternativet numreras data till okomprimerade 2 GB-segment. (Om flera filer är markerade och okomprimerade data för rapportfönstret är mindre än 2 GB skickas en fil.) Markera **En fil** ger `hit_data.tsv` i en enda, potentiellt enorm fil. |
-   | [!UICONTROL **Manifest**] | Om Adobe ska leverera en [manifestfil](c-df-contents/datafeeds-contents.md#feed-manifest) till målet när inga data samlas in för ett feed-intervall. Om du väljer **Manifest-fil** får du en manifestfil som liknar den här när inga data samlas in:<p>`text`</p><p>`Datafeed-Manifest-Version: 1.0`</p><p>`Lookup-Files: 0`</p><p>`Data-Files: 0`</p><p> `Total-Records: 0`</p> |
+   | [!UICONTROL **Förpackningstyp**] | Välj [!UICONTROL **Flera filer**] för de flesta dataflöden. Med det här alternativet numreras data till okomprimerade 2 GB-segment. (Om [!UICONTROL **Flera filer**] är valt och okomprimerade data för rapportfönstret är mindre än 2 GB, en fil skickas.) Markera **En fil** ger `hit_data.tsv` i en enda, potentiellt enorm fil. |
+   | [!UICONTROL **Manifest**] | Avgör om Adobe ska leverera en [manifestfil](c-df-contents/datafeeds-contents.md#feed-manifest) till målet när inga data samlas in för ett feed-intervall. Om du väljer **Manifest-fil** får du en manifestfil som liknar den här när inga data samlas in:<p>`text`</p><p>`Datafeed-Manifest-Version: 1.0`</p><p>`Lookup-Files: 0`</p><p>`Data-Files: 0`</p><p> `Total-Records: 0`</p> |
    | [!UICONTROL **Kolumnmallar**] | När du skapar många dataflöden rekommenderar Adobe att du skapar en kolumnmall. Om du väljer en kolumnmall inkluderas automatiskt de angivna kolumnerna i mallen. Adobe har också flera mallar som standard. |
    | [!UICONTROL **Tillgängliga kolumner**] | Alla tillgängliga datakolumner i Adobe Analytics. Klicka [!UICONTROL Add all] om du vill ta med alla kolumner i en datafeed. |
    | [!UICONTROL **Inkluderade kolumner**] | De kolumner som ska inkluderas i en datafeed. Klicka [!UICONTROL Remove all] om du vill ta bort alla kolumner från en datafeed. |
