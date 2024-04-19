@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: Konfigurera platser för molnimport och -export
 feature: Classifications
 exl-id: 55179868-6228-44ff-835c-f4a7b38e929b
-source-git-commit: de1aaf1cc4f59567582c7802117226e859e52b08
+source-git-commit: 9b36cfef9fbc3f6ce4e1fc1485a3eb8c2240a96c
 workflow-type: tm+mt
-source-wordcount: '1189'
+source-wordcount: '1465'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Du kan konfigurera ett molnkonto (och en plats för det kontot). En enda plats k
 
 Du måste konfigurera Adobe Analytics med den information som krävs för att komma åt ditt molnkonto. Den här processen består av att lägga till och konfigurera kontot (som Amazon S3 Role ARN, Google Cloud Platform o.s.v.) enligt beskrivningen i [Konfigurera molnimport- och exportkonton](/help/components/locations/configure-import-accounts.md)och sedan lägga till och konfigurera platsen inom det kontot (enligt beskrivningen i den här artikeln).
 
-Så här konfigurerar du en ny import- eller exportplats i molnet eller redigerar en befintlig plats:
+## Börja skapa eller redigera en molnexportplats
 
 1. I Adobe Analytics: [!UICONTROL **Komponenter**] > [!UICONTROL **Platser**].
 1. På [!UICONTROL Locations] väljer du [!UICONTROL **Platser**] -fliken.
@@ -38,13 +38,15 @@ Dialogrutan Plats visas.
 
 1. I [!UICONTROL **Platsegenskaper**] anger du information som är specifik för kontotypen för ditt platskonto.
 
-   För konfigurationsinstruktioner expanderar du det avsnitt nedan som motsvarar kontotypen som du valde i dialogrutan [!UICONTROL **Platskonton**] fält. (Ytterligare äldre kontotyper är också tillgängliga, men rekommenderas inte.)
+   Fortsätt med det avsnitt nedan som motsvarar kontotypen som du valde i dialogrutan [!UICONTROL **Platskonton**] fält. (Ytterligare äldre kontotyper är också tillgängliga, men rekommenderas inte.)
 
-   **Kontotyper**
 
-   +++Amazon S3 Roll ARN
 
-   Ange följande information om du vill konfigurera en ARN-plats för en Amazon S3-roll:
+### Amazon S3 Role ARN
+
+Ange följande information om du vill konfigurera en ARN-plats för en Amazon S3-roll:
+
+1. [Börja skapa eller redigera en molnexportplats](#begin-creating-or-editing-a-cloud-export-location), enligt beskrivningen ovan.
 
    | Fält | Funktion |
    |---------|----------|
@@ -53,11 +55,22 @@ Dialogrutan Plats visas.
 
    {style="table-layout:auto"}
 
-+++
+1. Välj [!UICONTROL **Spara**].
 
-   +++Google Cloud Platform
+   Du kan nu importera eller exportera data till eller från kontot och platsen som du konfigurerade. Använd om du vill exportera data [Dataflöden](/help/export/analytics-data-feed/create-feed.md) eller [Data Warehouse](/help/export/data-warehouse/create-request/dw-request-report-destinations.md). Importera data med [Klassificeringsuppsättningar](/help/components/classifications/sets/overview.md).
 
-   Ange följande information om du vill konfigurera en plats för Google Cloud-plattformen:
+   Importerade data tas inte bort från molnmålet när de har importerats.
+
+   >[!NOTE]
+   >
+   >   Om du tidigare använt [FTP för att importera klassificeringar](/help/components/classifications/importer/c-uploading-saint-data-files-via-ftp.md) till Adobe Analytics måste du överföra en FIN-fil. Den här FIN-filen behövs inte vid import från molnkonton.
+
+
+### Google Cloud Platform
+
+Ange följande information om du vill konfigurera en plats för Google Cloud-plattformen:
+
+1. [Börja skapa eller redigera en molnexportplats](#begin-creating-or-editing-a-cloud-export-location), enligt beskrivningen ovan.
 
    | Fält | Funktion |
    |---------|----------|
@@ -66,11 +79,22 @@ Dialogrutan Plats visas.
 
    {style="table-layout:auto"}
 
-+++
+1. Välj [!UICONTROL **Spara**].
 
-   +++Azure SAS
+   Du kan nu importera eller exportera data till eller från kontot och platsen som du konfigurerade. Använd om du vill exportera data [Dataflöden](/help/export/analytics-data-feed/create-feed.md) eller [Data Warehouse](/help/export/data-warehouse/create-request/dw-request-report-destinations.md). Importera data med [Klassificeringsuppsättningar](/help/components/classifications/sets/overview.md).
 
-   Om du vill konfigurera en Azure SAS-plats anger du följande information:
+   Importerade data tas inte bort från molnmålet när de har importerats.
+
+   >[!NOTE]
+   >
+   >   Om du tidigare använt [FTP för att importera klassificeringar](/help/components/classifications/importer/c-uploading-saint-data-files-via-ftp.md) till Adobe Analytics måste du överföra en FIN-fil. Den här FIN-filen behövs inte vid import från molnkonton.
+
+
+### Azure SAS
+
+Om du vill konfigurera en Azure SAS-plats anger du följande information:
+
+1. [Börja skapa eller redigera en molnexportplats](#begin-creating-or-editing-a-cloud-export-location), enligt beskrivningen ovan.
 
    | Fält | Funktion |
    |---------|----------|
@@ -79,11 +103,22 @@ Dialogrutan Plats visas.
 
    {style="table-layout:auto"}
 
-+++
+1. Välj [!UICONTROL **Spara**].
 
-   +++Azure RBAC
+   Du kan nu importera eller exportera data till eller från kontot och platsen som du konfigurerade. Använd om du vill exportera data [Dataflöden](/help/export/analytics-data-feed/create-feed.md) eller [Data Warehouse](/help/export/data-warehouse/create-request/dw-request-report-destinations.md). Importera data med [Klassificeringsuppsättningar](/help/components/classifications/sets/overview.md).
 
-   Om du vill konfigurera en Azure RBAC-plats anger du följande information:
+   Importerade data tas inte bort från molnmålet när de har importerats.
+
+   >[!NOTE]
+   >
+   >   Om du tidigare använt [FTP för att importera klassificeringar](/help/components/classifications/importer/c-uploading-saint-data-files-via-ftp.md) till Adobe Analytics måste du överföra en FIN-fil. Den här FIN-filen behövs inte vid import från molnkonton.
+
+
+### Azure RBAC
+
+Om du vill konfigurera en Azure RBAC-plats anger du följande information:
+
+1. [Börja skapa eller redigera en molnexportplats](#begin-creating-or-editing-a-cloud-export-location), enligt beskrivningen ovan.
 
    | Fält | Funktion |
    |---------|----------|
@@ -93,88 +128,87 @@ Dialogrutan Plats visas.
 
    {style="table-layout:auto"}
 
-+++
-
-   **Äldre kontotyper**
-
-   De här äldre kontotyperna är bara tillgängliga när du exporterar data med [Dataflöden](/help/export/analytics-data-feed/create-feed.md) och [Data Warehouse](/help/export/data-warehouse/create-request/t-dw-create-request.md). Dessa alternativ är inte tillgängliga vid import av data med [Klassificeringsuppsättningar](/help/components/classifications/sets/manage/schema.md).
-
-   +++FTP
-
-   Data från dataflöden kan levereras till en FTP-plats som är värd för Adobe eller kunder. Ange katalogen Använd sökvägsfältet för att placera feed-filer i en mapp.
-
-   | Fält | Funktion |
-   |---------|----------|
-   | [!UICONTROL **Katalogsökväg**] | Ange sökvägen till katalogen på FTP-servern. Mappar måste redan finnas. Flöden genererar ett fel om den angivna sökvägen inte finns. </br>Till exempel: `/folder_name/folder_name`. |
-
-   {style="table-layout:auto"}
-
-+++
-
-   +++SFTP
-
-   Data från dataflödet kan levereras till en SFTP-plats som är värd för Adobe eller kund. Målplatsen måste innehålla en giltig offentlig RSA- eller DSA-nyckel. Du kan hämta lämplig offentlig nyckel när du skapar flödet.
-
-   | Fält | Funktion |
-   |---------|----------|
-   | [!UICONTROL **Katalogsökväg**] | Ange sökvägen till katalogen på FTP-servern. Mappar måste redan finnas. Flöden genererar ett fel om den angivna sökvägen inte finns. </br>Till exempel: `/folder_name/folder_name`. |
-
-   {style="table-layout:auto"}
-
-+++
-
-   +++S3
-
-   Du kan skicka lagerdata direkt till Amazon S3-butiker. Den här måltypen kräver ett Bucket-namn, ett Access Key ID och en Secret Key. Se [Krav för Amazon S3-bucket](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-s3-bucket-naming-requirements.html) i Amazon S3-dokumenten för mer information.
-
-   Användaren som du anger för överföring av datalagerdata måste ha följande [behörigheter](https://docs.aws.amazon.com/AmazonS3/latest/API/API_Operations_Amazon_Simple_Storage_Service.html):
-
-   * s3:GetObject
-   * s3:PutObject
-   * s3:PutObjectAcl
-
-   Följande 16 AWS-standardregioner stöds (med lämplig signaturalgoritm där det behövs):
-
-   * us-east-2
-   * us-east-1
-   * us-west-1
-   * us-west-2
-   * ap-soud-1
-   * ap-northeast-2
-   * ap-southeast-1
-   * ap-southeast-2
-   * ap-northeast-1
-   * ca-central-1
-   * eu-central-1
-   * eu-west-1
-   * eu-west-2
-   * eu-west-3
-   * eu-nord-1
-   * sa-east-1
-
-   >[!NOTE]
-   >
-   >Regionen cn-North-1 stöds inte.
-
-+++
-
-   +++Azure Blob
-
-   Datalagret stöder Azure Blob-mål. Kräver en behållare, ett konto och en nyckel. Amazon krypterar automatiskt vilande data. När du hämtar data dekrypteras de automatiskt. Se [Skapa ett lagringskonto](https://docs.microsoft.com/en-us/azure/storage/common/storage-quickstart-create-account?tabs=azure-portal#view-and-copy-storage-access-keys) i Microsoft Azure-dokumenten om du vill ha mer information.
-
-   >[!NOTE]
-   >
-   >Du måste implementera en egen process för att hantera diskutrymme på datalagermålet. Adobe tar inte bort några data från servern.
-
-+++
-
 1. Välj [!UICONTROL **Spara**].
 
-   Du kan nu importera eller exportera data till eller från kontot och platsen som du konfigurerade.
+   Du kan nu importera eller exportera data till eller från kontot och platsen som du konfigurerade. Använd om du vill exportera data [Dataflöden](/help/export/analytics-data-feed/create-feed.md) eller [Data Warehouse](/help/export/data-warehouse/create-request/dw-request-report-destinations.md). Importera data med [Klassificeringsuppsättningar](/help/components/classifications/sets/overview.md).
 
    Importerade data tas inte bort från molnmålet när de har importerats.
 
    >[!NOTE]
    >
    >   Om du tidigare använt [FTP för att importera klassificeringar](/help/components/classifications/importer/c-uploading-saint-data-files-via-ftp.md) till Adobe Analytics måste du överföra en FIN-fil. Den här FIN-filen behövs inte vid import från molnkonton.
+
+### Äldre kontotyper
+
+De här äldre kontotyperna är bara tillgängliga när du exporterar data med [Dataflöden](/help/export/analytics-data-feed/create-feed.md) och [Data Warehouse](/help/export/data-warehouse/create-request/t-dw-create-request.md). Dessa alternativ är inte tillgängliga vid import av data med [Klassificeringsuppsättningar](/help/components/classifications/sets/manage/schema.md).
+
++++FTP
+
+Data från dataflöden kan levereras till en FTP-plats som är värd för Adobe eller kunder. Ange katalogen Använd sökvägsfältet för att placera feed-filer i en mapp.
+
+| Fält | Funktion |
+|---------|----------|
+| [!UICONTROL **Katalogsökväg**] | Ange sökvägen till katalogen på FTP-servern. Mappar måste redan finnas. Flöden genererar ett fel om den angivna sökvägen inte finns. </br>Till exempel: `/folder_name/folder_name`. |
+
+{style="table-layout:auto"}
+
++++
+
++++SFTP
+
+Data från dataflödet kan levereras till en SFTP-plats som är värd för Adobe eller kund. Målplatsen måste innehålla en giltig offentlig RSA- eller DSA-nyckel. Du kan hämta lämplig offentlig nyckel när du skapar flödet.
+
+| Fält | Funktion |
+|---------|----------|
+| [!UICONTROL **Katalogsökväg**] | Ange sökvägen till katalogen på FTP-servern. Mappar måste redan finnas. Flöden genererar ett fel om den angivna sökvägen inte finns. </br>Till exempel: `/folder_name/folder_name`. |
+
+{style="table-layout:auto"}
+
++++
+
++++S3
+
+Du kan skicka lagerdata direkt till Amazon S3-butiker. Den här måltypen kräver ett Bucket-namn, ett Access Key ID och en Secret Key. Se [Krav för Amazon S3-bucket](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-s3-bucket-naming-requirements.html) i Amazon S3-dokumenten för mer information.
+
+Användaren som du anger för överföring av datalagerdata måste ha följande [behörigheter](https://docs.aws.amazon.com/AmazonS3/latest/API/API_Operations_Amazon_Simple_Storage_Service.html):
+
+* s3:GetObject
+* s3:PutObject
+* s3:PutObjectAcl
+
+Följande 16 AWS-standardregioner stöds (med lämplig signaturalgoritm där det behövs):
+
+* us-east-2
+* us-east-1
+* us-west-1
+* us-west-2
+* ap-soud-1
+* ap-northeast-2
+* ap-southeast-1
+* ap-southeast-2
+* ap-northeast-1
+* ca-central-1
+* eu-central-1
+* eu-west-1
+* eu-west-2
+* eu-west-3
+* eu-nord-1
+* sa-east-1
+
+>[!NOTE]
+>
+>Regionen cn-North-1 stöds inte.
+
++++
+
++++Azure Blob
+
+Datalagret stöder Azure Blob-mål. Kräver en behållare, ett konto och en nyckel. Amazon krypterar automatiskt vilande data. När du hämtar data dekrypteras de automatiskt. Se [Skapa ett lagringskonto](https://docs.microsoft.com/en-us/azure/storage/common/storage-quickstart-create-account?tabs=azure-portal#view-and-copy-storage-access-keys) i Microsoft Azure-dokumenten om du vill ha mer information.
+
+>[!NOTE]
+>
+>Du måste implementera en egen process för att hantera diskutrymme på datalagermålet. Adobe tar inte bort några data från servern.
+
++++
+
 

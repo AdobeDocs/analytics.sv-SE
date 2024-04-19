@@ -5,10 +5,10 @@ short-title: Analytics documentation updates
 feature: Release Notes
 exl-id: fe8e3c4c-6782-46f7-8e28-4f8f54807788
 mini-toc-levels: 3
-source-git-commit: 674f8a0002834d9765fbb41a598c71d432088cfa
+source-git-commit: 9b36cfef9fbc3f6ce4e1fc1485a3eb8c2240a96c
 workflow-type: tm+mt
-source-wordcount: '5174'
-ht-degree: 22%
+source-wordcount: '5204'
+ht-degree: 21%
 
 ---
 
@@ -25,6 +25,8 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 
 | Funktion | Beskrivning |
 | --- | --- |
+| **April 2024** | |
+| Komprimerbara avsnitt har tagits bort i dokumentationen om hur du konfigurerar platser för molnimport och -export | Borttagna komprimerbara avsnitt i [Konfigurera platser för molnimport och -export](/help/components/locations/configure-import-locations.md) för information om olika typer av molnkonton. |
 | **Mars 2024** | |
 | AppMeasurement | [Versionsinformation](/help/implement/appmeasurement-updates.md) på AppMeasurementet update v2.26.0.<br/>Innehåller referens till och uppdatering av [`cookieDomainPeriods`](/help/implement/vars/config-vars/cookiedomainperiods.md) dokumentation för config variable. |
 | Användningsinformation om kolumnen Används i är tillgänglig först från och med september 2023. | Tydligare användningsinformation om **Används i** kolumn på [landningssida för projekt](/help/analyze/landing.md) går tillbaka endast till september 2023. |
@@ -58,7 +60,7 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | Förbättringar av dokumentationen för Media Analytics-rapportering | Omorganiserat en del av innehållet i avsnittet Rapportering i guiden Direktuppspelande media, bland annat genom att konsolidera API-dokumentationen i ett eget avsnitt och justera ordningen för vissa artiklar. <p>Namnet på artikeln Mallar för arbetsytor för media har ändrats till [Medierapporter i arbetsytan](https://experienceleague.adobe.com/docs/media-analytics/using/media-reports/media-workspace-templates.html) för att bättre anpassa till namngivningen i produkten. </p> |
 | **Augusti 2023** | |
 | Förtydligande av dataflöde | Uppdaterat [definitionen av start- och slutdatum](/help/export/analytics-data-feed/create-feed.md) för att förtydliga att när du bearbetar dataflöden för historiska data kan du ange startdatumet till vilket datum som helst tidigare när data samlas in. |
-| Datahantering i Adobe Experience Platform Edge Network | Lagt till innehåll om hur Adobe Analytics [hanterar data från Edge Network](../implement/aep-edge/overview.md). |
+| Adobe Experience Platform Edge Network datahantering | Lagt till innehåll om hur Adobe Analytics [hanterar data från Edge Network](../implement/aep-edge/overview.md). |
 | Medieuppspelningstid spenderad panel | Uppdaterat innehåll för  [Medieuppspelningstid spenderad panel](/help/analyze/analysis-workspace/c-panels/media-playback-time-spent.md) för att förbättra läsbarheten. |
 | Flyttat innehåll om hantering av schemalagda projekt | Skapade en ny artikel i Analytics Components Guide med namnet [Schemalagda projekt](/help/components/scheduled-projects-manager.md). Innehållet fanns tidigare i [Schemalägg projekt](/help/analyze/analysis-workspace/curate-share/t-schedule-report.md) artikel i Analytics Tools Guide. |
 | Jämför implementeringsmetoder | Uppdaterad dokumentation som jämför olika implementeringsmetoder. [Läs mer](../implement/prepare/comparison.md) |
@@ -286,7 +288,7 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | 22 juli 2019 | Tillägg för Magento: Mall för marknadsföring och handel i [dokumentationen om Analysis Workspace-mallarna](/help/analyze/analysis-workspace/build-workspace-project/starter-projects.md). |
 | 18 juli 2019 | Uppdaterade [inställningar för kohorttabeller](/help/analyze/analysis-workspace/visualizations/cohort-table/t-cohort.md). |
 | 18 juli 2019 | I den vänstra listen i Workspace kan användarna nu välja att _Visa objekt från de senaste 18 månaderna_. Tidigare var den perioden högst 6 månader. Detta gör det enklare att jämföra med sidor eller kampanjer från föregående år, upp till för 18 månader sedan. |
-| 18 juli 2019 | Dokumentation om en ny arbetsytemall som kallas [&quot;Magento: Marknadsföring och handel&quot;](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html) till Analysis Workspace. Den är särskilt utformad för Magentos e-handelskunder, men alla återförsäljare kan använda den för att få unika insikter i e-handelsverksamheten. |
+| 18 juli 2019 | Dokumentation om en ny arbetsytemall som kallas [&quot;Magento: Marketing &amp; Commerce&quot;](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html) till Analysis Workspace. Den är särskilt utformad för Magentos e-handelskunder, men alla återförsäljare kan använda den för att få unika insikter i e-handelsverksamheten. |
 | 13 juni 2019 | Nya färdiga filter har lagts till i den vänstra fältsökningen i Workspace. Utöver det som redan finns (mått, mätvärden, godkända med mera) har vi lagt till nya filter, som beräknade värden, kundattribut, evariabler, egenskaper och video, för att det ska vara enklare att hitta de komponenter du behöver. |
 | 4 juni 2019 | Ny handbok har skrivits med namnet [Migrera från en analysplattform från tredje part till Adobe Analytics](/help/technotes/ga-to-aa/home.md). |
 | 30 maj 2019 | [Referensen för datafeed-kolumner](/help/export/analytics-data-feed/c-df-contents/datafeeds-reference.md) har setts över. |
