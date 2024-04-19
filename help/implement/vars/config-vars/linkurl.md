@@ -4,9 +4,9 @@ description: Åsidosätt det automatiskt genererade länk-URL-AppMeasurementet s
 feature: Variables
 exl-id: 15d6e423-d9fc-4f84-ad39-0bd91399cde4
 role: Admin, Developer
-source-git-commit: 12347957a7a51dc1f8dfb46d489b59a450c2745a
+source-git-commit: 8be75c04177e97949811c17c7a87b04cce7b3de4
 workflow-type: tm+mt
-source-wordcount: '139'
+source-wordcount: '158'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,8 @@ ht-degree: 0%
 # linkURL
 
 När ett anrop om länkspårning skickas till Adobe identifierar datainsamlingsservrarna automatiskt URL:en. Använd `linkURL` variabel som åsidosätter den identifierade URL:en.
+
+Det finns inga dimensioner i Analysis Workspace som rapporterar om den här variabeln. Den fyller i `page_event_var1` kolumn i [Dataflöden](/help/export/analytics-data-feed/data-feed-overview.md).
 
 ## Länk-URL med Web SDK
 

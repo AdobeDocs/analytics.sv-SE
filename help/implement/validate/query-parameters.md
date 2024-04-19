@@ -4,10 +4,10 @@ description: Visar alla frågesträngsparametrar som används i bildbegäranden.
 feature: Validation
 exl-id: 2eb2ade7-a3db-4b00-8a70-2632d1c0aaaf
 role: Admin, Developer, Leader, User
-source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
+source-git-commit: 8be75c04177e97949811c17c7a87b04cce7b3de4
 workflow-type: tm+mt
-source-wordcount: '722'
-ht-degree: 4%
+source-wordcount: '721'
+ht-degree: 3%
 
 ---
 
@@ -59,7 +59,7 @@ I följande tabell visas alla frågesträngsparametrar som Adobe använder i bil
 | `pageType` | [`pageType`](../vars/page-vars/pagetype.md) | Används i [Sidorna hittades inte](/help/components/dimensions/pages-not-found.md) dimension. |
 | `pccr` | Ingen | Endast för nya besökare och alltid inställt på `true`. Förhindra oändliga omdirigeringar om en besökare avvisar cookies. |
 | `pe` | [`tl()`](../vars/functions/tl-method.md) | Anger typen av anpassad länk. Krävs för [Egna länkar](/help/components/dimensions/custom-link.md), [Hämta länkar](/help/components/dimensions/download-link.md)och [Avsluta länkar](/help/components/dimensions/exit-link.md). |
-| `pev1` | Ingen | Den URL som den anpassade länken inträffade på. |
+| `pev1` | [`linkURL`](../vars/config-vars/linkurl.md) | Den URL som den anpassade länken inträffade på. |
 | `pev2` | [`tl()`](../vars/functions/tl-method.md) | Eget länknamn. |
 | `pev3` | Ingen | Används inte längre. Spårade milstolpar i tidigare versioner av videorapporter. |
 | `pf` | Ingen | Plattformsflagga, endast för Adobe. Får ej ändras. |

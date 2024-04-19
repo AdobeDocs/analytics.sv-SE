@@ -1,7 +1,8 @@
 ---
 title: Migrera från AppMeasurement till Web SDK
 description: Uppdatera din Adobe Analytics-implementering från AppMeasurementets JavaScript-bibliotek till Web SDK JavaScript-biblioteket.
-source-git-commit: d4c9bddf18311e13d025ed9d62c0636a33eb7b85
+exl-id: c90246e8-0f04-4655-9204-33c0ef611b13
+source-git-commit: 7bd4a188e5a2171260f1f0696d8bebad854dba4a
 workflow-type: tm+mt
 source-wordcount: '1323'
 ht-degree: 0%
@@ -46,7 +47,7 @@ Skapa ett datastream i Adobe Experience Platform Data Collection. När du skicka
 1. Välj **[!UICONTROL Adobe Analytics]**.
 1. Ange samma rapportsviter-ID som den webbplats du för närvarande skickar analysdata till. Klicka på **[!UICONTROL Save]**.
 
-![Lägg till Adobe Analytics](assets/datastream-rsid.png) {style="border:1px solid gray"}
+![Lägg till Adobe Analytics](assets/datastream-rsid.png) {style="border:1px solid lightslategray"}
 
 Din datastream är nu redo att ta emot och skicka data till Adobe Analytics. Observera dataStream ID, eftersom detta ID krävs när du konfigurerar Web SDK i koden.
 

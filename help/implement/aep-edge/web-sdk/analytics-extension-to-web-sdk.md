@@ -1,7 +1,8 @@
 ---
 title: Migrera från Adobe Analytics-taggtillägget till Web SDK-taggtillägget
 description: Uppdatera Analytics-implementeringen för Adobe Experience Platform Data Collection-taggar så att de använder Web SDK-tillägget.
-source-git-commit: d4c9bddf18311e13d025ed9d62c0636a33eb7b85
+exl-id: 691c29ca-d169-4ef8-9f91-d0375166796d
+source-git-commit: 7bd4a188e5a2171260f1f0696d8bebad854dba4a
 workflow-type: tm+mt
 source-wordcount: '1596'
 ht-degree: 0%
@@ -46,7 +47,7 @@ Skapa ett datastream i Adobe Experience Platform Data Collection. När du skicka
 1. Välj **[!UICONTROL Adobe Analytics]**.
 1. Ange samma rapportsviter-ID som den webbplats du för närvarande skickar analysdata till. Klicka på **[!UICONTROL Save]**.
 
-![Lägg till Adobe Analytics](assets/datastream-rsid.png) {style="border:1px solid gray"}
+![Lägg till Adobe Analytics](assets/datastream-rsid.png) {style="border:1px solid lightslategray"}
 
 Din datastream är nu redo att ta emot och skicka data till Adobe Analytics.
 
@@ -62,11 +63,11 @@ I det här avsnittet förbereds taggen för den mesta migreringen som görs i n�
 1. Välj **[!UICONTROL Catalog]** i det övre hörnet om du vill se en lista över alla tillgängliga tillägg.
 1. Sök efter och välj **[!UICONTROL Adobe Experience Platform Web SDK]** tillägg, klicka sedan på **[!UICONTROL Install]** till höger.
 
-   ![Katalog](assets/catalog.png) {style="border:1px solid gray"}
+   ![Katalog](assets/catalog.png) {style="border:1px solid lightslategray"}
 
 1. Konfigurationsinställningarna för tillägget visas. Leta reda på avsnittet Datastreams och markera datastream som du skapade i föregående steg.
 
-   ![Val av datastam](assets/datastream-select.png) {style="border:1px solid gray"}
+   ![Val av datastam](assets/datastream-select.png) {style="border:1px solid lightslategray"}
 
 1. Välj **[!UICONTROL Save]**.
 
@@ -83,14 +84,14 @@ Dataobjektets dataelement tillhandahåller ett intuitivt ramverk för att konfig
 1. Ge dataelementet följande inställningar:
    * [!UICONTROL Name]: Allt du vill, t.ex.&quot;Datalager&quot; eller&quot;Dataobjekt&quot;
    * [!UICONTROL Extension]: [!UICONTROL Adobe Experience Platform Web SDK]
-   * [!UICONTROL Variable]: [!UICONTROL Variable]
+   * [!UICONTROL Data Element Type]: [!UICONTROL Variable]
    * Kryssrutor kan behållas som de är
 1. Välj följande inställningar till höger:
    * Egenskapsalternativknapp: [!UICONTROL Data]
    * Lösning: [!UICONTROL Adobe Analytics]
 1. Välj **[!UICONTROL Save]**.
 
-![Skapa dataelement](assets/create-data-element.png) {style="border:1px solid gray"}
+![Skapa dataelement](assets/create-data-element.png) {style="border:1px solid lightslategray"}
 
 Din taggegenskap har nu allt som behövs för att uppdatera varje regel.
 
@@ -103,7 +104,7 @@ Det här steget innehåller det mesta som krävs för att migrera till Web SDK o
 1. Välj i den vänstra navigeringen i tagggränssnittet **[!UICONTROL Rules]**.
 1. Markera en regel som du vill redigera.
 1. Välj åtgärd **[!UICONTROL Adobe Analytics - Set Variables]**
-1. Observera alla analysvariabler som anges i den här regeln. Observera båda variablerna som anges i listrutorna och variablerna som anges i anpassad kod.
+1. Observera alla analysvariabler som anges i den här regeln. Inkludera båda variablerna som angetts i listrutorna och variablerna som angetts i anpassad kod.
 1. Ändra [!UICONTROL Action Configuration] till följande inställningar:
    * [!UICONTROL Extension]: [!UICONTROL Adobe Experience Platform Web SDK]
    * [!UICONTROL Action type]: Uppdateringsvariabel
@@ -146,7 +147,7 @@ Publicering av uppdaterade regler följer samma arbetsflöde som andra ändringa
 1. Testa ändringarna i utvecklingsmiljön för att säkerställa att alla regler aktiveras korrekt och att dataobjektet fylls med förväntade värden.
 1. När det är klart skickar du biblioteket för godkännande, bygg till staging, och sedan godkänner och publicerar det i produktion.
 
-![Publiceringsflöde](assets/publishing-flow.png) {style="border:1px solid gray"}
+![Publiceringsflöde](assets/publishing-flow.png) {style="border:1px solid lightslategray"}
 
 +++
 
