@@ -4,7 +4,7 @@ description: Ange variabeln events, som styr de flesta mätvärden på din webbp
 feature: Variables
 exl-id: 6ef99ee5-40c3-4ff2-a75d-c97f2e8ec1f8
 role: Admin, Developer
-source-git-commit: 12347957a7a51dc1f8dfb46d489b59a450c2745a
+source-git-commit: 7723e064a572b33d71cf298f87dca599f7cf9d14
 workflow-type: tm+mt
 source-wordcount: '833'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Om du använder [**XDM-objekt**](/help/implement/aep-edge/xdm-var-mapping.md) an
 * Order mappas till `xdm.commerce.purchases.value`.
 * Enheter mappas till summan av alla `productListItems[].quantity` fält.
 * Intäkterna är mappade till summan av alla `productListItems[].priceTotal` fält.
-* Produktvyer mappas till `xdm.commerce.productListViews.value`.
+* Produktvyer mappas till `xdm.commerce.productViews.value`.
 * Korten mappas till `xdm.commerce.productListOpens.value`.
 * Kundtillägg mappas till `xdm.commerce.productListAdds.value`.
 * Cart Removals är mappade till `xdm.commerce.productListRemovals.value`.

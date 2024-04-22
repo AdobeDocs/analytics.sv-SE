@@ -4,7 +4,7 @@ keywords: Analysis Workspace
 title: Konfigurera platser för molnimport och -export
 feature: Classifications
 exl-id: 55179868-6228-44ff-835c-f4a7b38e929b
-source-git-commit: 9b36cfef9fbc3f6ce4e1fc1485a3eb8c2240a96c
+source-git-commit: 5bf6ed9b71a87d79fec960b6618667238019ac7f
 workflow-type: tm+mt
 source-wordcount: '1465'
 ht-degree: 0%
