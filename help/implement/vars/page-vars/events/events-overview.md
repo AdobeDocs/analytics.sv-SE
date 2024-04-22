@@ -4,7 +4,7 @@ description: Ange variabeln events, som styr de flesta mätvärden på din webbp
 feature: Variables
 exl-id: 6ef99ee5-40c3-4ff2-a75d-c97f2e8ec1f8
 role: Admin, Developer
-source-git-commit: 7723e064a572b33d71cf298f87dca599f7cf9d14
+source-git-commit: 3e72235ce1455177efeb21017f61af25d21bd500
 workflow-type: tm+mt
 source-wordcount: '833'
 ht-degree: 0%
@@ -19,7 +19,7 @@ Innan du implementerar händelser måste du skapa och konfigurera dem under [Slu
 
 ## Händelser som använder Web SDK
 
-Om du använder [**XDM-objekt**](/help/implement/aep-edge/xdm-var-mapping.md) används följande XDM-fält för anpassade händelser:
+Om du använder [XDM-objekt](/help/implement/aep-edge/xdm-var-mapping.md)används följande XDM-fält för anpassade händelser:
 
 * Anpassade händelser 1-100 mappas till `xdm._experience.analytics.event1to100.event1` - `xdm._experience.analytics.event1to100.event100`.
 * Anpassade händelser 101-200 mappas till `xdm._experience.analytics.event101to200.event100` - `xdm._experience.analytics.event101to200.event200`.
