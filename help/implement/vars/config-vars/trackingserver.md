@@ -4,9 +4,9 @@ description: Ange vilken plats bildbegäranden ska skickas till.
 feature: Variables
 exl-id: bcc23286-4dd5-45ac-ac6f-7b60e95cb798
 role: Admin, Developer
-source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
+source-git-commit: 284f121428ce9d682b42309dd85cfd117285a7e5
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '683'
 ht-degree: 0%
 
 ---
@@ -59,9 +59,14 @@ Om fältet lämnas tomt blir standardvärdet `[rsid].data.adobedc.net`.
 
 The `s.trackingServer` variabeln är en sträng som innehåller platsen där data ska skickas.
 
-## Bestäm värdet för `trackingServer`
+## Att tänka på vid bestämning av värdet för `trackingServer`
 
-Värdet för den här variabeln beror på om du använder cookies från första part eller cookies från tredje part. Adobe rekommenderar starkt att du använder cookies från första part i implementeringen.
+Du kan välja att använda Adobe spårningsserverdomäner (t.ex. `adobedc.net`) eller du kan gå igenom en särskild process för att konfigurera en spårningsserver som matchar din webbplatsdomän (t.ex. `data.mydomain.com`), även känd som en CNAME-implementering. En spårningsserver som matchar din webbplatsdomän kan ha vissa fördelar beroende på andra aspekter av implementeringen. Om spårningsservern inte matchar domänen för den aktuella sidan måste cookies som anges av AppMeasurementet anges som tredjepartsserver. Om webbläsaren inte stöder cookies från tredje part kan den här felmatchningen påverka vissa analysfunktioner:
+
+- Inställning av identifierare: Om du använder Experience Cloud Identity Service har spårningsservern ingen effekt på hur cookies anges. Men om du använder äldre Analytics-identifierare (även `s_vi` cookie) och samlingsservern inte matchar den aktuella domänen, måste cookies anges som tredje part. I det här fallet, om cookies från tredje part blockeras av webbläsaren, ställer Analytics in ett reservations-ID (`s_fid`) istället för standarden `s_vi` cookie.
+- Länkspårning fungerar inte för interna länkar.
+- Activity Map fungerar inte för interna länkar.
+- Cookie-check.
 
 ### cookies från första part
 
@@ -73,7 +78,7 @@ Den person som initialt konfigurerar cookie-implementeringen från första part 
 s.trackingServer = "data.example.com";
 ```
 
-### cookies från tredje part
+### Spårningsserver från tredje part
 
 >[!TIP]
 >
