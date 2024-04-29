@@ -5,9 +5,9 @@ short-title: Analytics documentation updates
 feature: Release Notes
 exl-id: fe8e3c4c-6782-46f7-8e28-4f8f54807788
 mini-toc-levels: 3
-source-git-commit: 9b36cfef9fbc3f6ce4e1fc1485a3eb8c2240a96c
+source-git-commit: 2b81c0df0e2bb68a73f9d24888758a433c6f5423
 workflow-type: tm+mt
-source-wordcount: '5204'
+source-wordcount: '5246'
 ht-degree: 21%
 
 ---
@@ -26,6 +26,7 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | Funktion | Beskrivning |
 | --- | --- |
 | **April 2024** | |
+| Borttagen dokumentation för &quot;ägare&quot; i klassificeringsuppsättningar | Filtret och kolumnen Ägare har tagits bort från [Klassificeringsuppsättningshanterare](/help/components/classifications/sets/manage/set-manager.md) och fältet Ägare har tagits bort från [Inställningar för klassificeringsuppsättning](/help/components/classifications/sets/manage/settings.md). <p>Dokumentationen uppdaterades för att ta bort filtret, kolumnen och fältet.</p> |
 | Komprimerbara avsnitt har tagits bort i dokumentationen om hur du konfigurerar platser för molnimport och -export | Borttagna komprimerbara avsnitt i [Konfigurera platser för molnimport och -export](/help/components/locations/configure-import-locations.md) för information om olika typer av molnkonton. |
 | **Mars 2024** | |
 | AppMeasurement | [Versionsinformation](/help/implement/appmeasurement-updates.md) på AppMeasurementet update v2.26.0.<br/>Innehåller referens till och uppdatering av [`cookieDomainPeriods`](/help/implement/vars/config-vars/cookiedomainperiods.md) dokumentation för config variable. |

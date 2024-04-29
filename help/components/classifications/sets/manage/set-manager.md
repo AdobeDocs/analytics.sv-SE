@@ -1,11 +1,11 @@
 ---
 title: Klassificeringsuppsättningshanterare
-description: Hantera klassificeringsuppsättningar i Adobe Analytics.
+description: Hantera klassificeringsgrupper i Adobe Analytics.
 exl-id: b1a6721b-8e5d-4ee6-af6b-cda31c9f8b00
 feature: Classifications
-source-git-commit: 811e321ce96aaefaeff691ed5969981a048d2c31
+source-git-commit: 2b81c0df0e2bb68a73f9d24888758a433c6f5423
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: '318'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Klassificeringsuppsättningar består av **Prenumerationer** (rapportpaket och d
 
 ## Filterklassificeringsuppsättningar
 
-Den vänstra sidan av klassificeringsuppsättningshanteraren innehåller filterinställningar för att hitta önskad klassificeringsuppsättning. När du klickar på filterikonen växlas synligheten för filterinställningarna. Du kan filtrera klassificeringsuppsättningar efter **[!UICONTROL Tags]**, **[!UICONTROL Report suite]**, eller **[!UICONTROL Owner]**.
+Den vänstra sidan av klassificeringsuppsättningshanteraren innehåller filterinställningar för att hitta önskad klassificeringsuppsättning. När du klickar på filterikonen växlas synligheten för filterinställningarna. Du kan filtrera klassificeringsuppsättningar efter **[!UICONTROL Tags]** eller **[!UICONTROL Report suite]**.
 
 ![Filter för klassificeringsuppsättning](../../assets/classification-set-filters.png)
 
@@ -30,7 +30,6 @@ Följande kolumner är tillgängliga i Klassificeringsuppsättningshanteraren:
 
 * **[!UICONTROL Classification set]**: Klassificeringsuppsättningens namn. Klicka på ett namn på en klassificeringsuppsättning [redigeringsinställningar](settings.md).
 * **[!UICONTROL Subscriptions]**: Antalet prenumerationer som den här klassificeringsuppsättningen gäller för.
-* **[!UICONTROL Owner]**: Klassificeringsuppsättningens ägare.
 * **[!UICONTROL Classifications]**: Antalet klassificeringsdimensioner som klassificeringsuppsättningen innehåller.
 * **[!UICONTROL Automated]**: Avgör om klassificeringsuppsättningen är konfigurerad att automatiskt importera data från en molnplats. Automatisering kan konfigureras i klassificeringsuppsättningens [schema](schema.md).
 * **[!UICONTROL Last Modified]**: Det datum och den tidpunkt då klassificeringsuppsättningen senast ändrades.
@@ -39,9 +38,9 @@ Följande kolumner är tillgängliga i Klassificeringsuppsättningshanteraren:
 
 Följande knappar är tillgängliga i Klassificeringsuppsättningshanteraren:
 
-* **[!UICONTROL Add]**: [Skapa](create.md) en klassificeringsuppsättning.
+* **[!UICONTROL Add]**: [Skapa](create.md) en klassificeringsgrupp.
 * **[!UICONTROL Search by title]**: Sök efter klassificeringsuppsättningar efter namn.
-* **[!UICONTROL Load more]**: Klassificeringsuppsättningshanteraren visar först upp till 1 000 klassificeringsuppsättningar. Den här knappen läser in ytterligare 1 000 klassificeringsuppsättningar.
+* **[!UICONTROL Load more]**: Hanteraren för klassificeringsuppsättningar visar först upp till 1 000 klassificeringsuppsättningar. Den här knappen läser in ytterligare 1 000 klassificeringsuppsättningar.
 * **Visa/dölj kolumner**: Växla synlighet för alla kolumner förutom [!UICONTROL Classification set].
 
 Välj en eller flera klassificeringsuppsättningar genom att klicka i kryssrutan bredvid önskad klassificeringsuppsättning. Om du väljer en klassificeringsuppsättning visas följande alternativ:
