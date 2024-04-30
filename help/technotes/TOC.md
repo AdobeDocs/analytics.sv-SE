@@ -4,10 +4,10 @@ audience: all
 user-guide-title: Tekniska anteckningar för Analytics
 breadcrumb-title: Tekniska anteckningar
 user-guide-description: Bläddra i en kunskapsbas som innehåller användbara artiklar som inte tillhör ett visst verktyg eller en viss komponent i Analytics.
-source-git-commit: abd4d1a4b8076de225e37a375dfe387c998deb01
+source-git-commit: f9d06b8222f557e40792e1fad4714ce97b9a02c9
 workflow-type: tm+mt
-source-wordcount: '204'
-ht-degree: 77%
+source-wordcount: '190'
+ht-degree: 23%
 
 ---
 
@@ -16,12 +16,12 @@ ht-degree: 77%
 
 + [Tekniska anteckningar för Analytics](home.md)
 + Adobe Analytics för Google Analytics-användare {#ga-to-aa}
-   + [Adobe Analytics för Google Analytics-användare - hjälp](ga-to-aa/home.md)
+   + [Hjälp för användare av Adobe Analytics for Google Analytics](ga-to-aa/home.md)
    + [Konton och rapportsviter](ga-to-aa/accounts.md)
    + [Anpassa rapportvyer](ga-to-aa/customization.md)
    + Google Analytics-rapporter {#reports}
       + [Skapa en grundläggande rapport i Analysis Workspace för GA-användare](ga-to-aa/reports/create-report.md)
-      + [Vanliga mätvärden som används på andra Analytics-plattformar](ga-to-aa/reports/common-metrics.md)
+      + [Vanliga mätvärden används på andra Analytics-plattformar](ga-to-aa/reports/common-metrics.md)
       + [Realtid](ga-to-aa/reports/realtime-reports.md)
       + [Målgrupp](ga-to-aa/reports/audience-reports.md)
       + [Förvärv](ga-to-aa/reports/acquisition-reports.md)
@@ -34,8 +34,8 @@ ht-degree: 77%
    + [Analysera data som påverkas av händelser - översikt](event/overview.md)
    + [Felsöka tagningar/fall i data](event/spikes-drops.md)
    + [Exkludera specifika datum i analysen](event/segments.md)
-   + [Jämföra datum med tidigare intervall](event/compare-dates.md)
-   + [Härleda data som påverkats av händelser](event/calcmetrics.md)
+   + [Jämför datum med tidigare intervall](event/compare-dates.md)
+   + [Härleda data som påverkas av händelser](event/calcmetrics.md)
    + [Kommunicera händelser till användare](event/communicate.md)
 + [Klienttips](client-hints.md)
 + Cookies {#cookies}
@@ -49,17 +49,13 @@ ht-degree: 77%
 + [Migrera bearbetningsregler för mobila tjänster till Adobe Analytics](migrate-mobile.md)
 + [Stöd för flera valutor](multicurrency.md)
 + [Sekretessöversikt](privacy-overview.md)
-+ [Behandlingsorder](processing-order.md)
-+ [Progressive Web Apps](pwa.md)
++ [Bearbetningsorder](processing-order.md)
++ [Progressiva webbprogram](pwa.md)
 + [Omdirigering och alias](redirects.md)
-+ Regional datainsamling {#rdc}
-   + [Regional datainsamling - hjälp](rdc/regional-data-collection.md)
-   + [SSL-certifieringslicensiering](rdc/ssl-cert-licensing.md)
-   + [HTTPS-krypteringsalgoritmer som stöds](rdc/encryption-algos.md)
 + [Säkerhetsresurser](security.md)
 + [Termer som används (ordlista)](terms.md)
 + [Tidsstämplar (valfritt)](timestamps-optional.md)
-+ [Felsökningsloggning](troubleshoot-login.md)
++ [Felsöka inloggning](troubleshoot-login.md)
 + [Felsök utloggning](troubleshoot-sessions.md)
 + [Ospecificerad, annan och okänd](unspecified.md)
 + [Migrering av besökare](visitor-migration.md)

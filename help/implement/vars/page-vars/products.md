@@ -4,9 +4,9 @@ description: Skicka data runt vilka produkter som visas eller i kundvagnen.
 feature: Variables
 exl-id: f26e7c93-f0f1-470e-a7e5-0e310ec666c7
 role: Admin, Developer
-source-git-commit: 5ef92db2f5edb5fded497dddedd56abd49d8a019
+source-git-commit: 7c8ffe8f4ccf0577136e4d7ee96340224897d2a4
 workflow-type: tm+mt
-source-wordcount: '686'
+source-wordcount: '656'
 ht-degree: 0%
 
 ---
@@ -30,11 +30,42 @@ Om du använder [**XDM-objekt**](/help/implement/aep-edge/xdm-var-mapping.md), m
 * Merchandising eVars mappas till `xdm.productListItems._experience.analytics.customDimensions.eVars.eVar1` till `xdm.productListItems._experience.analytics.customDimensions.eVars.eVar250`, beroende på vilken eVar du vill binda till en produkt.
 * Marknadsföringshändelser mappas till `xdm.productListItems[]._experience.analytics.event1to100.event1.value` till `xdm.productListItems._experience.analytics.event901to1000.event1000.value`, beroende på vilken händelse du vill binda till en produkt. Om du anger en händelse i något av dessa fält inkluderas den automatiskt i [event](events/events-overview.md) sträng skickad till Adobe Analytics.
 
->[!NOTE]
->
->`lineItemId` måste läggas till som ett anpassat fält eftersom det ännu inte ingår i standardschemat för analyshändelser. Adobe planerar att lägga till ett dedikerat kategorifält i framtiden.
+```json
+{
+  "xdm": {
+    "productListItems": [{
+      "productCategories": [{
+        "categoryID": "Men's"
+      }],
+      "name": "Hiking boot",
+      "quantity": 1,
+      "priceTotal": 49.99
+    },
+    {
+      "productCategories": [{
+        "categoryID": "Camping"
+      }],
+      "name": "Hunting blind",
+      "quantity": 3,
+      "priceTotal": 699.69
+    }]
+  }
+}
+```
 
 Om du använder [**dataobjekt**](/help/implement/aep-edge/data-var-mapping.md), produktvariabeln använder `data.__adobe.analytics.products` efter AppMeasurementets syntax. Om du anger det här fältet skrivs alla produkter som anges i XDM-objektet över och skickas inte till Adobe Analytics.
+
+```json
+{
+  "data": {
+    "__adobe": {
+      "analytics": {
+        "products": "Archery;Fletched arrow;12;159.99"
+      }
+    }
+  }
+}
+```
 
 ## Produkter som använder Adobe Analytics-tillägget
 

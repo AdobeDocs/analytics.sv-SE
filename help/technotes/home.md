@@ -3,10 +3,10 @@ title: Analytics Tech Notes
 description: Den här handboken innehåller användbar information om ämnen som inte tillhör ett visst analysverktyg eller en viss komponent.
 exl-id: 4cb084f8-5cec-4c46-a584-614217d42431
 feature: Attribution, Visualizations, Segmentation, Real-time
-source-git-commit: 93099d36a65ca2bf16fbd6342f01bfecdc8c798e
+source-git-commit: ac9221bd7d9397ed0f085245663f1f0056f7d68f
 workflow-type: tm+mt
-source-wordcount: '419'
-ht-degree: 16%
+source-wordcount: '416'
+ht-degree: 17%
 
 ---
 
@@ -41,7 +41,6 @@ Här är en videoöversikt över Adobe Analytics:
 ## Viktiga artiklar om tekniska anteckningar
 
 * [Övergång från en analysplattform från tredje part till Adobe Analytics](ga-to-aa/home.md)
-* [Regional datainsamling](/help/technotes/rdc/regional-data-collection.md)
 
 ## Fler användarhandböcker för Analytics
 

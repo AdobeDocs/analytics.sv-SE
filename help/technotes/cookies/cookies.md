@@ -4,9 +4,9 @@ description: Läs om hur spårningsförebyggande åtgärder påverkar cookies fr
 feature: Data Configuration and Collection
 exl-id: c4a4751e-49fc-40c3-aa39-f0f0b20bda1b
 role: Admin
-source-git-commit: d3d5b01fe17f88d07a748fac814d2161682837c2
+source-git-commit: ac9221bd7d9397ed0f085245663f1f0056f7d68f
 workflow-type: tm+mt
-source-wordcount: '1914'
+source-wordcount: '1909'
 ht-degree: 0%
 
 ---
@@ -105,7 +105,7 @@ Standardbeteendet i de här webbläsarversionerna är att hantera cookies som in
 
 För kunder som använder Visitor ID-tjänsten har cookies egenskaperna `SameSite=None` och `secure` anges som standard, vilket gör att dessa cookies kan användas med stöd för tredjepartsanvändning.
 
-För kunder som använder äldre Analytics-identifierare (&quot;s_vi&quot; och&quot;s_fid&quot;-cookies) ställs cookies in på att aktivera användningsfall från tredje part med standardsamlingsdomäner: adobedc.net, 2o7.net och omtrdc.net. För kunder som använder en CNAME-implementering anges i Analytics `SameSite=Lax`.
+För kunder som använder äldre Analytics-identifierare (`s_vi` och `s_fid` cookies) ställs cookies in för att aktivera användningsfall från tredje part med standardsamlingsdomäner: `adobedc.net`, `2o7.net`och `omtrdc.net`. För kunder som använder en CNAME-implementering anges i Analytics `SameSite=Lax`.
 
 >[!NOTE]
 >

@@ -5,7 +5,7 @@ short-title: Analytics documentation updates
 feature: Release Notes
 exl-id: fe8e3c4c-6782-46f7-8e28-4f8f54807788
 mini-toc-levels: 3
-source-git-commit: 2b81c0df0e2bb68a73f9d24888758a433c6f5423
+source-git-commit: ac9221bd7d9397ed0f085245663f1f0056f7d68f
 workflow-type: tm+mt
 source-wordcount: '5246'
 ht-degree: 21%
@@ -150,7 +150,7 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | Nytt ämne [!UICONTROL Page Summary] panel | [Panelen Sidsammanfattning](/help/analyze/analysis-workspace/c-panels/page-summary.md) |
 | Nytt ämne [!UICONTROL Next/Previous item] panel | [Panelen Nästa/föregående dimensionsobjekt](/help/analyze/analysis-workspace/c-panels/next-previous.md) |
 | **Mars 2022** | |
-| Nytt avsnitt om vilka HTTPS-krypteringsalgoritmer som stöds | [HTTPS-krypteringsalgoritmer som stöds](/help/technotes/rdc/encryption-algos.md) för kunder med chiffersäkerhetsnivån inställd på&quot;Hög&quot;. |
+| Nytt avsnitt om vilka HTTPS-krypteringsalgoritmer som stöds | HTTPS-krypteringsalgoritmer som stöds för kunder med krypteringssäkerhetsnivån &quot;Hög&quot;. |
 | Ny dokumentation om anteckningar i arbetsytan | [Anteckningar i arbetsytan](/help/analyze/analysis-workspace/components/annotations/overview.md) kan ni effektivt kommunicera kontextuella datanunkter och insikter till er organisation. |
 | Uppdateringar av Adobe Analytics landningssida | [Uppdateringar](/help/analyze/landing.md) till landningssidan för gemensam arbetsyta/rapporter och analyser som förbättrar användbarheten och underlättar navigeringen. |
 | [!UICONTROL Next item] eller [!UICONTROL Previous item] Panelen Arbetsyta | På den här panelen kan du utforska objekt som följer eller föregår ett av de önskade dimensionsobjekten. |
@@ -296,7 +296,7 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | 9 maj 2019 | En ny inställning har lagts till i inställningarna för Flödesvisualisering: Inkludera upprepningsinstanser. Se [Flödesinställningar](/help/analyze/analysis-workspace/visualizations/c-flow/create-flow.md) |
 | 11 apr 2019 | Förbättringar av de bästa sätten att optimera arbetsytan: [Optimera prestanda](/help/analyze/analysis-workspace/new-features-in-analysis-workspace.md) |
 | 11 apr 2019 | Uppdateringar av [Optimera Workspace-prestanda](/help/analyze/analysis-workspace/workspace-faq/optimizing-performance.md). |
-| 14 mars 2019 | Större uppdatering av [Regional datainsamling](/help/technotes/rdc/regional-data-collection.md). |
+| 14 mars 2019 | Större uppdatering av regional datainsamling. |
 | 7 februari 2019 | Mindre uppdatering av inställningarna Ersätt den sista oktetten i IP-adresser med 0 och Dölj IP i [Allmänna kontoinställningar](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/general-acct-settings-admin.md). |
 | 1 februari 2019 | Större uppdatering av implementeringsplugin-programmet [getPercentPageViewed](../implement/vars/plugins/getpercentpageviewed.md). |
 | 17 januari 2019 | [Kohortanalys](/help/analyze/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) - Större förbättringar av kohortanalysen gör att du kan:<ul><li>Använda segmentinkludering och returnera mätvärden separat. </li><li>Visa bortfall i stället för lojalitet.</li><li>Visa latenstabeller (förfluten tid före och efter en inkluderingshändelse).</li><li>Anpassa kohortmått (för att gruppera besökare baserat på en evariabel, inte bara tid).</li><li>Utföra en rullande kohortberäkning: beräkna lojalitet/bortfall baserat på tidigare tidsperiod, inte ursprunglig kohort. </li><li>Lägga till flera mätvärden i inkluderings- och returfält samt använda segment. (Beräknade värden stöds inte.)</li></ul> |
