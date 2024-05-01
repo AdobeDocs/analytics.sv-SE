@@ -4,10 +4,10 @@ audience: all
 user-guide-title: Tekniska anteckningar för Analytics
 breadcrumb-title: Tekniska anteckningar
 user-guide-description: Bläddra i en kunskapsbas som innehåller användbara artiklar som inte tillhör ett visst verktyg eller en viss komponent i Analytics.
-source-git-commit: f9d06b8222f557e40792e1fad4714ce97b9a02c9
+source-git-commit: 5ac6da2eb53d2748e8838ef2c6334a771abc26c9
 workflow-type: tm+mt
-source-wordcount: '190'
-ht-degree: 23%
+source-wordcount: '186'
+ht-degree: 24%
 
 ---
 
@@ -42,8 +42,9 @@ ht-degree: 23%
    + [Webbläsarcookies](cookies/cookies.md)
    + [Alternativ för att minska effekten av webbläsar-cookie-begränsningar](cookies/cookieless.md)
 + [Datalagring](data-retention.md)
++ [Domäner](domains.md)
 + [Uteslut data](exclude-data.md)
-+ [IP-adresser och domäner som används av Adobe Analytics](ip-addresses.md)
++ [IP-adresser](ip-addresses.md)
 + [Latens](latency.md)
 + [Lågtrafikvärde](low-traffic.md)
 + [Migrera bearbetningsregler för mobila tjänster till Adobe Analytics](migrate-mobile.md)

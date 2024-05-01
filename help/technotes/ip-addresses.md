@@ -1,41 +1,20 @@
 ---
-title: IP-adresser och domäner som används av Adobe Analytics
+title: IP-adresser som används av Adobe Analytics
 description: Om brandväggen blockerar IP-adresser som kommer från Adobe kan du uppdatera brandväggsinställningarna i den här listan.
 feature: Data Configuration and Collection
 exl-id: e24a70e4-9ed4-4b87-8bab-4ed0aebedd1f
-source-git-commit: ea859717c6a40b4eeeb9eca54b95718859af9c7b
+source-git-commit: 5ac6da2eb53d2748e8838ef2c6334a771abc26c9
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '186'
 ht-degree: 0%
 
 ---
 
-# IP-adresser och domäner som används av Adobe Analytics
+# IP-adresser som används av Adobe Analytics
 
-Vissa brandväggskonfigurationer blockerar domäner som Adobe Analytics förlitar sig på för sitt produktgränssnitt. Du kan använda den här listan med domäner för att ändra organisationens nätverksinställningar och tillåta produktåtkomst inifrån organisationen.
+Vissa brandväggskonfigurationer blockerar IP-adresser som kommer från Adobe datainsamlingsservrar eller servrar som är ansvariga för dataåtkomst. Du kan använda den här listan med intervall för att ändra organisationens brandväggsinställningar så att åtkomst tillåts och data skickas inifrån organisationen.
 
-## Tillåt beroende teknikdomäner
-
-Adobe Analytics använder följande värdar för att förbättra prestanda och produktupplevelse. Adobe rekommenderar att du tillåter dessa domäner genom organisationens brandvägg för att få en optimal upplevelse med Adobe Analytics.
-
-| Teknik | Domän |
-| --- | --- |
-| Adobe Analytics domäner | `adobe.com`, `adobe.net`, `adobe.io` |
-| Adobe Analytics äldre domän | `omniture.com` |
-| Amazon AWS | `aaui-879784980514.s3.us-east-2.amazonaws.com` |
-| Amazon CloudFront | `d30ln29764hddd.cloudfront.net` |
-| Gainsight | `esp.aptrinsic.com`, `esp-m.aptrinsic.com` |
-| LaunchMörkt | `app.launchdarkly.com` |
-| Microsoft Azure Blob Storage | `awaascicdprodva7.blob.core.windows.net` |
-| Microsoft Azure CDN | `aauicdnva7.azureedge.net` |
-
-{style="table-layout:auto"}
-
-## Adobe Experience Cloud IP-adressblock
-
-Förutom ovanstående domäner använder Adobe Analytics flera IP-adressblock för datainsamling och export av rapporter.
-
-En fullständig lista över IP-intervall finns i Adobe Experience Cloud IP-adresser.
+Alla IP-adresser som används av Adobe Analytics ingår i [IP-adresser som används av Adobe Experience Cloud](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/ip-addresses), med undantag för tilläggspaketet för Kina-prestandaoptimering.
 
 ## IP-adresser för prestandaoptimering i Kina
 
@@ -54,3 +33,9 @@ Regionala datainsamlingsservrar i Kina använder följande IP-adresser:
 | Kina | `54.223.199.8` |
 
 {style="table-layout:auto"}
+
+>[!MORELIKETHIS]
+>
+>[IP-adresser som används av Adobe Experience Cloud](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/ip-addresses)
+>
+>[Domäner som används av Adobe Analytics](domains.md)
