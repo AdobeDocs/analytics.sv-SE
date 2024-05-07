@@ -4,21 +4,29 @@ title: Starta Activity Map
 feature: Activity Map
 role: User, Admin
 exl-id: ecd6921f-2071-4abf-9d0f-c408b5adb5be
-source-git-commit: ab6d3267bd6b503fe96ceea2b870c2e7cdf5d9f4
+source-git-commit: 83f199a3bb76147b98aba014b62ea3c02c766ddd
 workflow-type: tm+mt
-source-wordcount: '63'
-ht-degree: 9%
+source-wordcount: '73'
+ht-degree: 4%
 
 ---
 
 
 # Starta Activity Map
 
-Förutsatt att du har installerat rätt webbläsarplugin kan du starta Activity Map direkt från webbsidan.
+Anta att rätt webbläsare/tillägg är [installerat](/help/analyze/activity-map/activitymap-getting-started/activitymap-install.md)kan du starta Activity Map direkt från webbsidan.
 
-1. Klicka på ikonen Adobe Analytics till höger om webbläsarens adressfält:\
-   <br/><img src="./assets/an_icon.png" width="150px"/><br/>
+## Starta i Chrome
 
-2. Logga in med ditt inloggningsföretag, användarnamn och lösenord.
+1. 
+   1. Klicka på ikonen Chrome Extensions längst upp till höger.
+      ![Activity Map](assets/chrome2.png)
+1. Klicka på Activity Map.
+   ![Starta Activity Map](assets/chrome3.png)
+1. Logga in med din profil, ditt användarnamn och lösenord.
+1. Programmet ska startas och verktygsfältet och övertäckningarna visas.
 
-3. Programmet ska startas och verktygsfältet och övertäckningarna visas.
+## Starta i Firefox
+
+
+
