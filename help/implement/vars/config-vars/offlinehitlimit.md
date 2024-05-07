@@ -4,9 +4,9 @@ description: Ange det maximala antalet träffar som ska köas för spårning off
 feature: Variables
 exl-id: de6478b3-b95f-4edc-8427-7b915a46b3ba
 role: Admin, Developer
-source-git-commit: 12347957a7a51dc1f8dfb46d489b59a450c2745a
+source-git-commit: 8bc5e649c5b5852232f4baddcddad0766bc1569a
 workflow-type: tm+mt
-source-wordcount: '175'
+source-wordcount: '193'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Det finns inget dedikerat fält i Adobe Analytics-tillägget som kan använda de
 
 ## s.offlineHitLimit i AppMeasurementet och den anpassade kodredigeraren för Analytics-tillägget
 
-The `s.offlineHitLimit` variabeln är ett heltal som representerar maximalt antal träffar som en enhet lagrar när de är offline. Om variabeln inte är definierad finns det ingen gräns för hur många träffar en enhet lagrar när den är offline.
+The `s.offlineHitLimit` variabeln är ett heltal som representerar maximalt antal träffar som en enhet lagrar när de är offline. Om variabeln inte är definierad blir den som standard `10`. Du kan ange det till valfritt heltalsvärde. När du anger höga värden bör du tänka på lokala lagringshöljen i besökarens webbläsare. Den här gränsen är vanligtvis 5-10 MB.
 
 ```js
 s.offlineHitLimit = 100;
