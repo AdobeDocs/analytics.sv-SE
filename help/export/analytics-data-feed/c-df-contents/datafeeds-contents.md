@@ -5,9 +5,9 @@ subtopic: data feeds
 title: Innehåll i datafeed - översikt
 feature: Data Feeds
 exl-id: 7456ed99-c2f3-4b19-a63e-6b4e457e7d55
-source-git-commit: 43e483f157f1c2527f671eb43a165db86c77a7ce
+source-git-commit: 6b8366b451be1612331f517ee80fd57744deafdc
 workflow-type: tm+mt
-source-wordcount: '981'
+source-wordcount: '1002'
 ht-degree: 0%
 
 ---
@@ -67,7 +67,7 @@ Datafeed-Manifest-Version: 1.0
 
 Varje manifestfil innehåller en rubrik som anger det totala antalet sökfiler, datafiler och det totala antalet poster i alla datafiler. Rubriken följs av flera avsnitt som innehåller information för varje fil som ingår i leveransen av dataflödet.
 
-Vissa feeds har konfigurerats för att ta emot en `.fin` i stället för en `.txt` manifest. The `.fin` anger att överföringen är slutförd, men den innehåller inga metadata om överföringen.
+Vissa feeds har konfigurerats för att ta emot en `.fin` i stället för en `.txt` manifest. The `.fin` anger att överföringen är slutförd, men att de metadata som den innehåller är i ett äldre format.
 
 ## Sök efter filer
 
@@ -81,32 +81,33 @@ Uppslagsfilerna levereras tillsammans i en komprimerad zip-fil med följande nam
 [rsid]_[YYYY-mm-dd]-lookup_data.[compression_suffix]
 ```
 
-* **`column_headers.tsv`**: En rad som innehåller kolumnrubriker för `hit_data.tsv`.
+* **`column_headers.tsv`**: En enda rad som innehåller kolumnrubriker för `hit_data.tsv`.
 * **`browser.tsv`**: Mappar webbläsar-ID:t ( `browser` feed-kolumn) till webbläsarens egna namn.
 * **`browser_type.tsv`**: Mappar webbläsar-ID:t ( `browser` flödeskolumn) till webbläsartyp.
-* **`color_depth.tsv`**: Mappar färgdjup-ID:t ( `color` flödeskolumn) till färgdjup.
-* **`connection_type.tsv`**: Mappar anslutningstyp-ID:t ( `connection_type` feed-kolumn) till anslutningstypen.
+* **`color_depth.tsv`**: Mappar färgdjup-ID ( `color` flödeskolumn) till färgdjup.
+* **`connection_type.tsv`**: Mappar anslutningens typ-ID ( `connection_type` feed-kolumn) till anslutningstypen.
 * **`country.tsv`**: Mappar lands-ID:t ( `country` feed-kolumn) till landsnamnet.
-* **`javascript_version.tsv`**: Mappar JavaScript-versions-ID:t ( `javascript` feed-kolumn) till JavaScript-versionen.
-* **`languages.tsv`**: Mappar språk-ID:t ( `language` flödeskolumn) till språk.
-* **`operating_systems.tsv`**: Mappar operativsystems-ID:t (på `os` feed-kolumn) till operativsystemets namn.
+* **`javascript_version.tsv`**: Mappar JavaScript-versions-ID ( `javascript` feed-kolumn) till JavaScript-versionen.
+* **`languages.tsv`**: Mappar språk-ID ( `language` flödeskolumn) till språk.
+* **`operating_systems.tsv`**: Mappar operativsystems-ID ( `os` feed) till operativsystemets namn.
 * **`plugins.tsv`**: Mappar plug-in-ID:n ( `plugin` feed-kolumn) till varje plugin-programnamn.
 * **`resolution.tsv`**: Mappar upplösnings-ID:t ( `resolution` feed-kolumn) till skärmupplösningen.
 * **`referrer_type.tsv`**: Mappar referensens typ-ID ( `ref_type` feed-kolumn) till referenstypen.
-* **`search_engines.tsv`**: Mappar sökmotor-ID:t ( `search_engine` feed-kolumn) till sökmotorns namn.
+* **`search_engines.tsv`**: Mappar sökmotor-ID ( `search_engine` feed-kolumn) till sökmotorns namn.
 * **`event.tsv`**: Mappar varje händelse-ID ( `event_list` feed-kolumn) till dess respektive händelsenamn.
 
 ## Träffa datafiler
 
-Träffdata finns i `hit_data.tsv` -fil. Mängden data i den här filen avgörs av leveransformatet (varje timme eller dag samt en eller flera filer). Den här filen innehåller bara träffdata. Kolumnrubrikerna levereras separat tillsammans med sökfilerna. Varje rad i den här filen innehåller ett enda serveranrop.
+Träffdata finns i `hit_data.tsv` -fil. Mängden data i den här filen avgörs av leveransformatet (varje timme eller dag samt en eller flera filer). Den här filen innehåller bara träffdata. Kolumnrubrikerna levereras separat tillsammans med sökfilerna. Varje rad i filen innehåller ett enda serveranrop.
 
 Filer som levereras med Adobe varierar beroende på vilken typ av datafeed du har konfigurerat. Alla filer är kodade med ISO-8859-1.
 
-* `[rsid]` refererar till det rapportpaket-ID som dataflödet kommer från.
+* `[rsid]` refererar till det rapportpaket-ID som datafeeden kommer från.
 * `[index]` används endast i flera filflöden och refererar till rätt ordning för sidnumrerade filer.
 * `[YYYY-mm-dd]` avser den första dag som dataflödet är avsett för.
 * `[HHMMSS]` används endast i timmatningar och avser den starttid som datamatningen är avsedd för.
 * `[compression_suffix]` avser den komprimeringstyp som används. Vanligtvis komprimeras dataflöden till `tar.gz` eller `zip` filer.
+* `[format_suffix]` avser filformattypen. Filformatet för datafeed är vanligtvis `.tsv`.
 
 ### En fil varje dag
 
@@ -114,7 +115,7 @@ När data har samlats in för en dag får du en enda komprimerad datafil och en 
 
 `[rsid]_[YYYY-mm-dd].[compression_suffix]`
 
-När filen extraheras innehåller den en `hit_data.tsv` med alla data för den dagen, samt söka efter filer efter eventuella kolumner.
+När den extraheras innehåller datafilen en `hit_data.tsv` med alla data för den dagen, samt söka efter filer efter eventuella kolumner.
 
 ### Flera filer dagligen
 
@@ -122,7 +123,7 @@ När data har samlats in för en dag får du en eller flera komprimerade datafil
 
 `[index]-[rsid]_[YYYY-mm-dd].[compression_suffix]`
 
-När de extraheras innehåller varje datafil en enda `hit_data.tsv` som innehåller ungefär 2 GB okomprimerade data, samt filer för eventuella nödvändiga kolumner.
+När de extraheras innehåller varje datafil en enda `[index]-[rsid]_[YYYY-mm-dd].[format_suffix]` som innehåller ungefär 2 GB okomprimerade data, samt filer för eventuella nödvändiga kolumner.
 
 ### En fil varje timme
 
@@ -130,15 +131,15 @@ När data har samlats in under en timme får du en enda komprimerad datafil och 
 
 `[rsid]_[YYYYmmdd]-[HHMMSS].[compression_suffix]`
 
-När filen extraheras innehåller den en `hit_data.tsv` med alla data för den timmen, samt söka efter filer efter eventuella kolumner.
+När den extraheras innehåller datafilen en `hit_data.tsv` med alla data för den timmen, samt söka efter filer efter eventuella kolumner.
 
 ### Varje timme, flera filer
 
-När data har samlats in under en timme får du en eller flera komprimerade datafiler och en manifestfil. Datafilen heter:
+När data har samlats in under en timme får du en eller flera komprimerade datafiler och en manifestfil. Datafilerna har följande namn:
 
-`[index]-[rsid]_[YYYYmmdd]-[HHMMSS].[compression_suffix]`
+`[index]-[rsid]_[YYYYmmdd]-[HHMMSS].[format_suffix].[compression_suffix]`
 
-När de extraheras innehåller varje datafil en enda `hit_data.tsv` som innehåller ungefär 2 GB okomprimerade data, samt filer för eventuella nödvändiga kolumner.
+När de extraheras innehåller varje datafil en enda `[index]-[rsid]_[YYYYmmdd]-[HHMMSS].[format_suffix]` -fil som innehåller ungefär 2 GB okomprimerade data, samt filer som söker efter nödvändiga kolumner.
 
 ## Datafilens storlek
 

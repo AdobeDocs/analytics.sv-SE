@@ -1,11 +1,11 @@
 ---
 title: Dynamiska sökningar
 description: Lär dig mer om vad dynamiska sökningar är och hur du aktiverar dem. Innefattar bärare, mobilattribut och operativsystemstyper.
-exl-id: 644bf34b-312d-483a-a590-2dd8d6a773a5
+exl-id: 12327239-06a2-4092-b27d-b94da39abf30
 feature: Data Feeds
-source-git-commit: 811e321ce96aaefaeff691ed5969981a048d2c31
+source-git-commit: 6b8366b451be1612331f517ee80fd57744deafdc
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '266'
 ht-degree: 0%
 
 ---
@@ -14,8 +14,8 @@ ht-degree: 0%
 
 Med dynamiska sökningar kan du ta emot ytterligare sökfiler i din datafeed som annars inte är tillgänglig. Med den här inställningen kan följande uppslagstabeller skickas med varje dataflödesfil:
 
-* **Transportföretagets namn**: Tillhandahåller ytterligare kontext för `carrier` kolumn. Filnamnet som ingår är `carrier.tsv`.
-* **Mobilattribut**: Tillhandahåller ytterligare kontext för `mobile_id` -kolumn, inklusive alla funktioner som spåras för varje mobil enhet. Filnamnet som ingår är `mobile_attributes.tsv`.
+* **Transportföretagets namn**: Anger ytterligare kontext för `carrier` kolumn. Filnamnet som ingår är `carrier.tsv`.
+* **Mobilattribut**: Anger ytterligare kontext för `mobile_id` -kolumn, inklusive alla funktioner som spåras för varje mobil enhet. Filnamnet som ingår är `mobile_attributes.tsv`.
 * **Operativsystemtyp**: Anger en alternativ kontext för `os` kolumn. Båda `operating_systems.tsv` och `operating_system_type.tsv` använder `os` kolumn som tangent, men bara `operating_system_type.tsv` är en dynamisk sökning.
 
 ## Aktivera dynamiska sökningar
@@ -26,7 +26,7 @@ Om du vill få de uppslagsfiler som nämns måste du uppfylla följande krav:
    * För `carrier.tsv`måste du ta med `carrier`.
    * För `mobile_attributes.tsv`måste du ta med `mobile_id`.
    * För `operating_system_type.tsv`måste du ta med `os`.
-* Följande kolumner måste vara **exkluderad**. Om någon av dessa kolumner ingår i dataflödet inkluderas inte de extra uppslagstabellerna.
+* Följande kolumner måste vara **exkluderad**. Om någon av dessa kolumner ingår i dataflödet visas `mobile_attributes.tsv` dynamisk sökning ingår inte.
    * `user_agent`
    * `ch_hdr`
    * `ch_js`
@@ -38,14 +38,14 @@ När din datafeed uppfyller kraven för kolumninkludering och exkludering kontak
 Kolumnrubrikerna för de här sökfilerna ändras inte över tid, så rubrikerna tas inte med i varje dataflödesfil. Använd de här kolumnrubrikerna som referens eller hämta deras respektive rubriker `.tsv` -fil.
 
 +++**Transportföretagets namn**
-Hämta [bärare_huvuden.tsv](assets/carrier_headers.tsv) eller referera till rubrikerna nedan.
+Ladda ned [bärare_huvuden.tsv](assets/carrier_headers.tsv) eller referera till rubrikerna nedan.
 
 `carrier`
 `Carrier Name`
 +++
 
 +++**Mobilattribut**
-Hämta [mobile_attributes_headers.tsv](assets/mobile_attributes_headers.tsv) eller referera till rubrikerna nedan.
+Ladda ned [mobile_attributes_headers.tsv](assets/mobile_attributes_headers.tsv) eller referera till rubrikerna nedan.
 
 `mobile_id`
 `Manufacturer`
@@ -100,7 +100,7 @@ Hämta [mobile_attributes_headers.tsv](assets/mobile_attributes_headers.tsv) ell
 +++
 
 +++**Operativsystemtyp**
-Hämta [operating_system_type_headers.tsv](assets/operating_system_type_headers.tsv) eller referera till rubrikerna nedan.
+Ladda ned [operating_system_type_headers.tsv](assets/operating_system_type_headers.tsv) eller referera till rubrikerna nedan.
 
 `os`
 `Operating System Type`
