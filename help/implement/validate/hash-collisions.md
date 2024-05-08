@@ -4,80 +4,44 @@ description: Beskriver vad en hash-kollision är och hur den kan visa sig.
 feature: Validation
 exl-id: 693d5c03-4afa-4890-be4f-7dc58a1df553
 role: Admin, Developer
-source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
+source-git-commit: 06f61fa7b39faacea89149650e378c8b8863ac4f
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '453'
 ht-degree: 0%
 
 ---
 
 # Hash-kollisioner
 
-Adobe behandlar prop- och eVar-värden som strängar, även om värdet är ett tal. Ibland är de här strängarna hundratals tecken långa, andra gånger korta. Strängarna används inte direkt i bearbetningen för att spara utrymme, förbättra prestanda och göra allting jämnt. I stället beräknas en 32- eller 64-bitars hash för varje värde. Alla rapporter körs på dessa hashvärden, där varje hash ersätts med den ursprungliga texten. Hash-kodning ökar prestandan för Analytics-rapporter drastiskt.
+Dimensioner i Adobe Analytics samlar in strängvärden. Ibland är de här strängarna hundratals tecken långa, medan andra gånger de är korta. För att förbättra prestandan används dessa strängvärden inte direkt i bearbetningen. I stället beräknas en hash för varje värde så att alla värden får en enhetlig storlek. Alla rapporter körs på dessa hash-kodade värden, vilket drastiskt ökar deras prestanda.
 
-För de flesta fält konverteras strängen först till enbart små bokstäver (vilket minskar antalet unika värden). Värden hashas månadsvis (första gången de visas varje månad). Från månad till månad finns det en liten möjlighet att två unika variabelvärden hash-kodas till samma värde. Detta koncept kallas *hash-kollision*.
+För de flesta fält konverteras strängen först till gemener. Vid konvertering med gemener minskas antalet unika värden. Värden hashas månadsvis - för ett givet värde används det första värdet som visas varje månad. Från månad till månad finns det en liten möjlighet att två unika variabelvärden hash-kodas till samma värde. Detta koncept kallas *hash-kollision*.
 
-Hash-kollisioner kan visa sig i rapporter på följande sätt:
+Hash-kollisioner kan visas i rapporter på följande sätt:
 
-* Om du trendar ett värde och ser en toppning under en månad, är det troligt att ytterligare värden för den variabeln hash-kodas till samma värde som det du tittar på.
-* Samma sak händer för segment med ett visst värde.
+* Om du visar en rapport över tiden och ser en oväntad topp, är det möjligt att flera unika värden för den variabeln använder samma hash.
+* Om du använder ett segment och ser ett oväntat värde är det möjligt att det oväntade dimensionsobjektet använder samma hash som en annan dimensionsobjekt som matchade ditt segment.
 
-## Exempel på hash-kollision
+## Oddsen för en hash-kollision
 
-Sannolikheten för hash-kollisioner ökar med antalet unika värden i en dimension. Ett av värdena som kommer in sent i månaden kan till exempel få samma hash-värde som ett värde tidigare i månaden. Följande exempel kan förklara hur detta kan få segmentresultaten att ändras. Anta att eVar62 får värdet 100 den 18 februari. Analyserna kommer att ha en tabell som kan se ut så här:
+Adobe Analytics använder 32-bitars hash för de flesta dimensioner, vilket betyder att det finns 2<sup>32</sup> möjliga hash-kombinationer (cirka 4,3 miljarder). En ny hash-tabell för varje dimension skapas varje månad. De ungefärliga oddsen för en hash-kollision baserad på antalet unika värden är följande. Oddsen baseras på en enda dimension för en månad.
 
-<table id="table_6A49D1D5932E485DB2083154897E5074"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> eVar62-strängvärde </th> 
-   <th colname="col2" class="entry"> Hash </th> 
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <p> Värde 99 </p> </td> 
-   <td colname="col2"> <p> 111 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p> <b> Värde 100</b> </p> </td> 
-   <td colname="col2"> <p> <b> 123</b> </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p> Värde 101 </p> </td> 
-   <td colname="col2"> <p> 222 </p> </td> 
-  </tr> 
- </tbody> 
-</table>
+| Unika värden | Oddning |
+| --- | --- |
+| 1 000 | 0,01 % |
+| 10 000 | 1 % |
+| 50 000 | 26 % |
+| 100 000 | 71 % |
 
-Om du skapar ett segment som letar efter besök där eVar62=&quot;value 500&quot; används avgör Analytics om &quot;value 500&quot; innehåller en hash. Eftersom värdet 500 inte finns returnerar Analytics noll besök. Den 23 februari får eVar62&quot;value 500&quot; och hash for det är också 123. Tabellen ser ut så här:
+{style="table-layout:auto"}
 
-<table id="table_5FCF0BCDA5E740CCA266A822D9084C49"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> eVar62-strängvärde </th> 
-   <th colname="col2" class="entry"> Hash </th> 
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <p> Värde 99 </p> </td> 
-   <td colname="col2"> <p> 111 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p> <b> Värde 100</b> </p> </td> 
-   <td colname="col2"> <p> <b> 123</b> </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p> Värde 101 </p> </td> 
-   <td colname="col2"> <p> 222 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p> <b> Värde 500</b> </p> </td> 
-   <td colname="col2"> <p> <b> 123</b> </p> </td> 
-  </tr> 
- </tbody> 
-</table>
+Liknar [födelsedagsparadox](https://en.wikipedia.org/wiki/Birthday_problem)Sannolikheten för hash-kollisioner ökar drastiskt när antalet unika värden ökar. Vid 1 miljon unika värden är det troligt att det förekommer minst 100 hash-kollisioner för den dimensionen.
 
-När samma segment körs igen letar programmet efter hash-värdet 500, hittar 123 och rapporten returnerar alla besök som innehåller hash 123. Nu kommer besök som gjordes den 18 februari att ingå i resultaten.
+## Minska hashkollisioner
 
-Den här situationen kan skapa problem när Analytics används. Adobe fortsätter att undersöka sätt att minska sannolikheten för dessa hash-kollisioner i framtiden. Förslag för att undvika detta är att hitta sätt att sprida unika värden mellan variabler, ta bort onödiga värden med bearbetningsregler eller på annat sätt minska antalet värden per variabel.
+De flesta hash-kollisioner inträffar med två mindre vanliga värden, som inte har någon meningsfull inverkan på rapporter. Även om en hash kolliderar med ett vanligt och ovanligt värde är resultatet försumbart. I sällsynta fall där två populära värden upplever en hash-kollision är det dock möjligt att se effekten tydligt. Adobe rekommenderar följande för att minska effekten i rapporter:
+
+* **Ändra datumintervall**: Hash-tabeller ändras varje månad. Om du ändrar datumintervallet så att det sträcker sig över en annan månad kan du ge varje värde olika hash-värden som inte kolliderar.
+* **Minska antalet unika värden**: Du kan justera implementeringen eller användningen [Bearbetar regler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/c-processing-rules/processing-rules.md) för att minska antalet unika värden som en dimension samlar in. Om dimensionen till exempel samlar in en URL-adress kan du ta bort frågesträngar eller protokoll.
+
+<!-- https://wiki.corp.adobe.com/pages/viewpage.action?spaceKey=OmniArch&title=Uniques -->
