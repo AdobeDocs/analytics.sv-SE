@@ -5,9 +5,9 @@ short-title: Analytics documentation updates
 feature: Release Notes
 exl-id: fe8e3c4c-6782-46f7-8e28-4f8f54807788
 mini-toc-levels: 3
-source-git-commit: ac9221bd7d9397ed0f085245663f1f0056f7d68f
+source-git-commit: 1ec261929c1a1b62b1aeb8f01189fe5f2368fa14
 workflow-type: tm+mt
-source-wordcount: '5246'
+source-wordcount: '5379'
 ht-degree: 21%
 
 ---
@@ -25,6 +25,9 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 
 | Funktion | Beskrivning |
 | --- | --- |
+| **Maj 2024** | |
+| Ny dokumentation för uppgradering från Adobe Analytics till Customer Journey Analytics | För organisationer som uppgraderar från Adobe Analytics till Customer Journey Analytics finns det flera uppgraderingsalternativ och många överväganden att tänka på baserat på organisationens nuvarande Adobe Analytics-implementering och långsiktiga mål.<p>Nu finns det nya dokumentationsresurser som hjälper dig att förstå:</p><ul><li>De olika uppgraderingssökvägarna som finns</li><li>Vilka uppgraderingsalternativ som finns tillgängliga baserat på en organisations aktuella implementering av Adobe Analytics</li><li>Fördelar och nackdelar med varje uppgraderingsväg</li><li>Stegvisa anvisningar för varje uppgraderingsväg</li><li>Att tänka på vid hantering av historiska data</li><li>Och mycket mer!</li></ul><p>[Kom igång med uppgraderingen till Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/compare-aa-cja/upgrade-to-cja/cja-upgrade-getstarted).</p> |
+| Uppdaterad dokumentation om anpassade datumintervall | Uppdaterade skärmdumpar och procedurer för [skapa anpassade datumintervall](/help/analyze/analysis-workspace/components/calendar-date-ranges/custom-date-ranges.md) för att matcha de nuvarande produktfunktionerna och designen. |
 | **April 2024** | |
 | Borttagen dokumentation för &quot;ägare&quot; i klassificeringsuppsättningar | Filtret och kolumnen Ägare har tagits bort från [Klassificeringsuppsättningshanterare](/help/components/classifications/sets/manage/set-manager.md) och fältet Ägare har tagits bort från [Inställningar för klassificeringsuppsättning](/help/components/classifications/sets/manage/settings.md). <p>Dokumentationen uppdaterades för att ta bort filtret, kolumnen och fältet.</p> |
 | Komprimerbara avsnitt har tagits bort i dokumentationen om hur du konfigurerar platser för molnimport och -export | Borttagna komprimerbara avsnitt i [Konfigurera platser för molnimport och -export](/help/components/locations/configure-import-locations.md) för information om olika typer av molnkonton. |
