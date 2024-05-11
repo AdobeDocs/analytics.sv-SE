@@ -4,28 +4,28 @@ description: Visa vilka dataobjektfält Experience Platform Edge automatiskt map
 feature: Implementation Basics
 role: Admin, Developer
 exl-id: 45b2fbbc-73ca-40b3-9484-b406ae99fdad
-source-git-commit: 97d830653bfb9ad68d1d885dd8dff0ecf49055d7
+source-git-commit: 59d9dd8055a13046d05ac4c3b5261a6c5a919b5c
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '541'
 ht-degree: 0%
 
 ---
 
 # Variabelmappning för dataobjekt till Adobe Analytics
 
-Följande tabell visar de dataobjektsvariabler som Adobe Experience Platform Edge Network automatiskt mappar till Adobe Analytics. Om du använder dessa sökvägar för dataobjektfält behövs ingen ytterligare konfiguration för att skicka data till Adobe Analytics.
+I följande tabell visas dataobjektsvariablerna som Adobe Experience Platform Edge Network automatiskt mappar till Adobe Analytics. Om du använder dessa sökvägar för dataobjektfält behövs ingen ytterligare konfiguration för att skicka data till Adobe Analytics.
 
-Du bör använda dessa fält om du tänker använda Customer Journey Analytics i framtiden. Med den här implementeringsmetoden kan din organisation skicka data till Adobe med Web SDK utan att följa ett XDM-schema. När ni är redo att skicka data till Adobe Experience Platform kan ni använda [Datastream-mappning](https://experienceleague.adobe.com/docs/experience-platform/datastreams/data-prep.html#mapping) för att peka dataobjektfält mot deras respektive XDM-fält.
+Du bör använda dessa fält om du tänker använda Customer Journey Analytics i framtiden. Med den här implementeringsmetoden kan din organisation skicka data till Adobe med Web SDK utan att följa ett XDM-schema. När ni är redo att skicka data till Adobe Experience Platform kan ni använda [Datastream-mappning](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep#mapping) för att peka dataobjektfält mot deras respektive XDM-fält.
 
 ## Värdeprioriteringar
 
-De flesta dataobjektfält i den här tabellen sammanfaller med en [mappat XDM-fält](xdm-var-mapping.md). Om du anger båda `data` objektfält och dess respektive XDM-fält, dataobjektfältet har prioritet. Om du använder både XDM-objektfältet och dataobjektfältet rekommenderar Adobe att du ställer in anpassade händelser med dataobjektfältet. Om fältet `data.__adobe.analytics.events` skriver den över alla XDM-objektfält som är relaterade till handel och anpassade händelser.
+De flesta dataobjektfält i den här tabellen sammanfaller med en [mappat XDM-fält](xdm-var-mapping.md). Om du anger både ett givet dataobjektfält och dess respektive XDM-fält får dataobjektfältet prioritet. Om till exempel fältet `data.__adobe.analytics.events` skriver den över alla händelserelaterade XDM-objektfält.
 
 Vissa dataobjektfält stöder också deras respektive fält [Frågeparametervärde](../validate/query-parameters.md) som kortskriftsvärden. Du kan använda standardobjektsfält och dataobjektfält i kortskrift på ett utbytbart sätt, förutsatt att de är båda för unika variabler. Undvik att ställa in både ett standardobjektfält och dess respektive dataobjektfält i kortskrift samtidigt. Adobe kan inte garantera vilket fält som prioriteras.
 
 ## Mappning av dataobjektfält
 
-Tidigare uppdateringar av tabellen finns på den här sidans [implementeringshistorik på GitHub](https://github.com/AdobeDocs/analytics.en/commits/main/help/implement/aep-edge/data-var-mapping.md).
+Tidigare uppdateringar av tabellen finns på den här sidans [implementeringshistorik på GitHub](https://github.com/AdobeDocs/analytics.en/commits/main/help/implement/aep-edge/data-var-mapping.md). På samma sätt som för AppMeasurement är alla dataobjektfält skiftlägeskänsliga.
 
 | Sökväg till dataobjektfält | Analysvariabel och beskrivning |
 | --- | --- |
