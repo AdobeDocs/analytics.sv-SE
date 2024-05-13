@@ -3,10 +3,10 @@ description: Hantera konton i Advertising Analytics.
 title: Hantera annonskonton
 feature: Advertising Analytics
 exl-id: fe75cd3d-aa84-414a-a9d1-c2ab25def575
-source-git-commit: 79294cfc6f86e5a41a39504099cd730f53668725
+source-git-commit: c53b533a1d037ab3ed811bcc0960418f037a708f
 workflow-type: tm+mt
-source-wordcount: '162'
-ht-degree: 7%
+source-wordcount: '164'
+ht-degree: 3%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 7%
 
 Du kommer åt hanteringsgränssnittet genom att gå till **[!UICONTROL Admin]** > **[!UICONTROL Advertising Accounts]**.
 
-![](assets/manage_ad_accounts.png)
+![Annonskonton](assets/manage_ad_accounts.png)
 
 <table id="table_BE318026CF024E94A885EED86AA7077F"> 
  <thead> 
@@ -30,7 +30,7 @@ Du kommer åt hanteringsgränssnittet genom att gå till **[!UICONTROL Admin]** 
   </tr> 
   <tr> 
    <td colname="col1"> <p>+ Lägg till </p> </td> 
-   <td colname="col2"> <p>Tar dig till <a href="/help/integrate/c-advertising-analytics/c-adanalytics-workflow/aa-create-ad-account.md"  > Konfigurera annonskonto</a> Gränssnitt. </p> </td> 
+   <td colname="col2"> <p>Tar dig till <a href="/help/integrate/c-advertising-analytics/c-adanalytics-workflow/aa-create-ad-account.md" >Konfigurera annonskonto</a> Gränssnitt. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Byt namn </p> </td> 
@@ -42,7 +42,7 @@ Du kommer åt hanteringsgränssnittet genom att gå till **[!UICONTROL Admin]** 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Pausa </p> </td> 
-   <td colname="col2"> <p>Inaktiverar kontot. Om du vill aktivera den igen klickar du på <span class="uicontrol"> Aktivera</span>. </p> </td> 
+   <td colname="col2"> <p>Inaktiverar kontot. Om du vill aktivera den igen väljer du <span class="uicontrol">Aktivera</span>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>Kolumnrubriker</b> </p> </td> 
@@ -54,15 +54,15 @@ Du kommer åt hanteringsgränssnittet genom att gå till **[!UICONTROL Admin]** 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Rapportsviter </p> </td> 
-   <td colname="col2"> <p>Rapportsviten som är mappad till det här annonskontot. </p> </td> 
+   <td colname="col2"> <p>Rapportsviterna som är mappade till det här annonskontot. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Typ </p> </td> 
-   <td colname="col2"> <p>Vi stöder för närvarande endast en typ: Sök. </p> </td> 
+   <td colname="col2"> <p>Endast en typ stöds: Sök. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Konto </p> </td> 
-   <td colname="col2"> <p>Visar en av de två kontotyper som stöds: Google Adwords or Bing Ads. </p> </td> 
+   <td colname="col2"> <p>Visar en av de två kontotyper som stöds: Google Adwords eller Bing Ads. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Status </p> </td> 

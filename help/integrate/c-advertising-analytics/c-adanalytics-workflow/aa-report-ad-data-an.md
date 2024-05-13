@@ -3,28 +3,28 @@ description: Information om Analysis Workspace-mallen och rapportering i Report 
 title: Rapport om reklamdata i Adobe Analytics
 feature: Advertising Analytics
 exl-id: bbc830d9-e168-471d-a1ba-308277aab415
-source-git-commit: 93099d36a65ca2bf16fbd6342f01bfecdc8c798e
+source-git-commit: c53b533a1d037ab3ed811bcc0960418f037a708f
 workflow-type: tm+mt
-source-wordcount: '356'
+source-wordcount: '347'
 ht-degree: 1%
 
 ---
 
-# Rapport om reklamdata i Adobe Analytics
+# Rapport om reklamdata
 
-Information om Analysis Workspace-mallen och rapportering i Report Builder.
-
->[!NOTE]
->
->Du bör vänta minst 24 timmar innan sökmotordata börjar fylla i era Analytics-rapporter. Observera också att analysrapporter inte returnerar data för timgranularitet eftersom AMO-data inte stöder timgranularitet.
-
-## Analysis Workspace: Sökmotorer {#section_8173F42B2C784F41B9FD82CBB66F9ADF}
-
-Med den här mallen kan alla som implementerar den här sökmotorintegreringen få tillgång till kopierade sökmotordata i Analytics. Du kommer åt den via **[!UICONTROL Workspace]** > **[!UICONTROL Templates]** > **[!UICONTROL Advertising]** > **[!UICONTROL Search Engines.]**
+Den här artikeln innehåller information om Analysis Workspace-rapporten och rapporteringen i Report Builder.
 
 >[!NOTE]
 >
->Kategorin Advertising Template är synlig för alla kunder, även om du inte har implementerat något Advertising Accounts. Om du försöker öppna mallen Sökmotorer för ett företag som inte har etablerats visas ett felmeddelande om att du inte har konfigurerat några sökmotorkonton än. I det här fallet klickar du på **[!UICONTROL Configure Now]** som tar dig till [Konfigurera annonskonto](/help/integrate/c-advertising-analytics/c-adanalytics-workflow/aa-create-ad-account.md) skärm.
+>Du bör vänta minst 24 timmar innan sökmotordata fylls i i era Analytics-rapporter. Observera också att analysrapporter inte returnerar data för timgranularitet eftersom Advertising Cloud-data inte stöder timgranularitet.
+
+## Betalsökrapport {#section_8173F42B2C784F41B9FD82CBB66F9ADF}
+
+Den här rapporten ger alla som implementerar sökmotorintegration tillgång till sökmotordata i Analytics. Du kommer åt den via **[!UICONTROL Workspace]** > **[!UICONTROL Reports]** > **[!UICONTROL Acquisition]** > **[!UICONTROL Advertising Analytics: paid search]**
+
+>[!NOTE]
+>
+>Sökrapporten Betald visas för alla kunder, även om du inte har implementerat några annonskonton. Om du försöker öppna den betalda sökrapporten för ett företag som inte har etablerats visas ett felmeddelande om att du inte har konfigurerat något sökmotorkonto. Välj **[!UICONTROL Configure Now]** som tar dig till [Konfigurera annonskonto](/help/integrate/c-advertising-analytics/c-adanalytics-workflow/aa-create-ad-account.md) skärm.
 
 ![](assets/aa_aw.png)  ![](assets/aa_aw2.png) ![](assets/aa_aw3.png) ![](assets/aa_aw4.png)  ![](assets/aa_aw5.png) ![](assets/aa_aw6.png)
 
@@ -46,4 +46,4 @@ Med den här mallen kan alla som implementerar den här sökmotorintegreringen f
 
 ## Report Builder {#section_8E0371CF81144C33990D909685D1726E}
 
-När du har skapat ett Advertising Analytics-konto kommer Advertising Analytics-rapporten att bli tillgänglig.
+Så snart du har skapat ett Advertising Analytics-konto blir Advertising Analytics-rapporten tillgänglig.

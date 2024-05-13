@@ -3,10 +3,10 @@ description: Här beskrivs hur du kan hjälpa dig att hitta dina konto-ID:n för
 title: Hitta ditt konto-ID
 feature: Advertising Analytics
 exl-id: 2faccfd1-df7b-4b0c-a2f3-23138c39a838
-source-git-commit: 79294cfc6f86e5a41a39504099cd730f53668725
+source-git-commit: c53b533a1d037ab3ed811bcc0960418f037a708f
 workflow-type: tm+mt
-source-wordcount: '235'
-ht-degree: 3%
+source-wordcount: '230'
+ht-degree: 0%
 
 ---
 
@@ -14,11 +14,16 @@ ht-degree: 3%
 
 Här beskrivs hur du kan hjälpa dig att hitta dina konto-ID:n för Google och Bing.
 
-## Google AdWords {#section_2A62AD448BD949889DB77C2AF3E04C33}
+## Google AdWord {#section_2A62AD448BD949889DB77C2AF3E04C33}
 
 >[!IMPORTANT]
 >
->Google AdWords använder två typer av konton: a) MCC-konto (My Client Center) och b) standardkonto. För denna integrering med Adobe Analytics **du måste använda en standardkontoinloggning, inte en MCC-kontoinloggning**. Orsaken är att ett MCC-konto fungerar som ett&quot;paraply&quot;-konto som kan komma åt flera AdWords-konton med en enda inloggning, medan standardkontoinloggningen bara kan komma åt ett AdWords-konto per inloggning. Google stöder länkning av ett e-postmeddelande för hantering av fem konton, men Advertising Analytics stöder inte den här funktionen ännu. Ett e-postmeddelande kan bara länkas med ett Adwords-konto.
+>Google AdWords använder två typer av konton:
+>
+>- MCC-konto (My Client Center) och
+>- Standardkonto.
+>
+>För denna integrering med Adobe Analytics **du måste använda en standardkontoinloggning**, inte en MCC-kontoinloggning. Orsaken är att ett MCC-konto fungerar som ett&quot;paraply&quot;-konto som kan komma åt flera AdWords-konton med en enda inloggning, medan standardkontoinloggningen bara kan komma åt ett AdWords-konto per inloggning. Google stöder länkning av ett e-postmeddelande för hantering av fem konton, men Advertising Analytics stöder inte den här funktionen ännu. Ett e-postmeddelande kan bara länkas med ett Adwords-konto.
 
 Klicka på kontoikonen längst upp till höger för att visa AdWords-kontonumret (Kund-ID).
 
