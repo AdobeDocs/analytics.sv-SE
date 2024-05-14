@@ -4,9 +4,9 @@ description: Visa vilka XDM-fält som Edge automatiskt mappar till analysvariabl
 exl-id: fbff5c38-0f04-4780-b976-023e207023c6
 feature: Implementation Basics
 role: Admin, Developer
-source-git-commit: 4c472d9a99f15ed253b68124aa31bdc88554d9a5
+source-git-commit: 95c79a3085f87cbc1e28f14993f56feb4582a081
 workflow-type: tm+mt
-source-wordcount: '1316'
+source-wordcount: '1418'
 ht-degree: 0%
 
 ---
@@ -143,7 +143,11 @@ Tidigare uppdateringar av tabellen finns på den här sidans [implementeringshis
 
 ## Mappa andra XDM-fält till analysvariabler
 
-Om det finns mått eller mätvärden som du vill lägga till i Adobe Analytics kan du göra det genom [Kontextdatavariabler](../vars/page-vars/contextdata.md). Alla XDM-fältelement som inte mappas automatiskt skickas till Adobe Analytics som kontextdata med prefixet a.x. Du kan sedan mappa den här kontextvariabeln till den önskade Analytics-variabeln med [Bearbetar regler](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html). Om du till exempel skickar följande händelse:
+Om det finns mått eller mätvärden som du vill lägga till i Adobe Analytics kan du göra det genom [Kontextdatavariabler](../vars/page-vars/contextdata.md).
+
+### Implicit mappning
+
+Alla XDM-fältelement som inte mappas automatiskt skickas till Adobe Analytics som kontextdata med prefixet `a.x.` Du kan sedan mappa den här kontextvariabeln till den önskade Analytics-variabeln med [Bearbetar regler](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html). Om du till exempel skickar följande händelse:
 
 ```js
 alloy("event",{
@@ -157,6 +161,28 @@ alloy("event",{
 })
 ```
 
-Web SDK skickar dessa data till Adobe Analytics som kontextdatavariabel `a.x._atag.search.term`. Du kan sedan använda en bearbetningsregel för att tilldela det kontextdatavariabelvärdet till den önskade analysvariabeln, till exempel en eVar:
+Web SDK skickar dessa data till Adobe Analytics som kontextdatavariabel `a.x._atag.search.term`. Du kan sedan använda en bearbetningsregel för att tilldela det kontextdatavariabelvärdet till den önskade analysvariabeln, till exempel ett `eVar`:
 
 ![Bearbetningsregel för sökterm](assets/examplerule.png)
+
+## Explicit mappning
+
+Du kan också mappa XDM-fältelement explicit som kontextdata. Alla XDM-fältelement som uttryckligen mappas med `contextData` skickas till Adobe Analytics som kontextdata utan prefix. Du kan sedan mappa den här kontextvariabeln till den önskade Analytics-variabeln med [Bearbetar regler](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html). Om du till exempel skickar följande händelse:
+
+```js
+alloy("event",{
+    "xdm":{
+        "_atag":{
+            "analytics": {
+                "contextData" : {
+                    "someValue" : "1"
+                }
+            }
+        }
+    }
+})
+```
+
+Web SDK skickar dessa data till Adobe Analytics som kontextdatavariabel `somevalue` med värde `1`.  Du kan sedan använda en bearbetningsregel för att tilldela det kontextdatavariabelvärdet till den önskade analysvariabeln, till exempel ett `eVar`:
+
+![Bearbetningsregel för sökterm](assets/examplerule-explicit.png)
