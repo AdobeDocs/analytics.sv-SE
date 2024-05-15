@@ -5,9 +5,9 @@ short-title: Analytics documentation updates
 feature: Release Notes
 exl-id: fe8e3c4c-6782-46f7-8e28-4f8f54807788
 mini-toc-levels: 3
-source-git-commit: 1ec261929c1a1b62b1aeb8f01189fe5f2368fa14
+source-git-commit: e33d5ed955109f01949d95d826d5f7d48b572131
 workflow-type: tm+mt
-source-wordcount: '5379'
+source-wordcount: '5402'
 ht-degree: 21%
 
 ---
@@ -21,11 +21,12 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 
 ## Information om större dokumentationsuppdateringar
 
-### 2024 {#24}
+### 2024 {#year2024}
 
 | Funktion | Beskrivning |
 | --- | --- |
 | **Maj 2024** | |
+| Explicit mappa XDM-objektvariabler till kontextdatavariabler | Dokumenterad möjlighet att [explicit ange kontextdatavariabler med hjälp av XDM-objektvariabelmappning](/help/implement/aep-edge/xdm-var-mapping.md#explicit-mapping). |
 | Ny dokumentation för uppgradering från Adobe Analytics till Customer Journey Analytics | För organisationer som uppgraderar från Adobe Analytics till Customer Journey Analytics finns det flera uppgraderingsalternativ och många överväganden att tänka på baserat på organisationens nuvarande Adobe Analytics-implementering och långsiktiga mål.<p>Nu finns det nya dokumentationsresurser som hjälper dig att förstå:</p><ul><li>De olika uppgraderingssökvägarna som finns</li><li>Vilka uppgraderingsalternativ som finns tillgängliga baserat på en organisations aktuella implementering av Adobe Analytics</li><li>Fördelar och nackdelar med varje uppgraderingsväg</li><li>Stegvisa anvisningar för varje uppgraderingsväg</li><li>Att tänka på vid hantering av historiska data</li><li>Och mycket mer!</li></ul><p>[Kom igång med uppgraderingen till Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/compare-aa-cja/upgrade-to-cja/cja-upgrade-getstarted).</p> |
 | Uppdaterad dokumentation om anpassade datumintervall | Uppdaterade skärmdumpar och procedurer för [skapa anpassade datumintervall](/help/analyze/analysis-workspace/components/calendar-date-ranges/custom-date-ranges.md) för att matcha de nuvarande produktfunktionerna och designen. |
 | **April 2024** | |
@@ -44,7 +45,7 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | Klarade att viss information endast är tillgänglig för administratörer | Tillagd information om att kolumnerna &quot;Senast använd&quot; och &quot;Används i&quot; beskrivs i [Beräknat måttansvarig](/help/components/c-calcmetrics/c-workflow/cm-workflow/cm-manager.md) och [Segmenthanterare](/help/components/segmentation/segmentation-workflow/seg-manage.md) är bara tillgängliga för systemadministratörer. |
 | Uppdateringar av medieminarium - dokumentation om den genomsnittliga minuten-målgruppen | Uppdaterad information i [Mediemedelets minutmålspanel](/help/analyze/analysis-workspace/c-panels/average-minute-audience-panel.md) för att förbättra klarheten.<p>Bland förbättringarna finns:</p> <ul><li>Förbättrad organisation av information</li><li>Tillagda steg för att ange uppgiftsbaserad information</li></ul> |
 
-### 2023 {#23}
+### 2023 {#year2023}
 
 | Funktion | Beskrivning |
 | --- | --- |
@@ -118,7 +119,7 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | Spara automatiskt för projekt | Uppdaterat innehåll som inkluderar autosparfunktion i [Spara projekt](/help/analyze/analysis-workspace/build-workspace-project/save-projects.md). |
 | Landningssida | Nytt [uppdatering av landningssida](/help/analyze/landing.md) |
 
-### 2022 {#22}
+### 2022 {#year22}
 
 | Funktion | Beskrivning |
 | --- | --- |
@@ -139,13 +140,13 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | Kundtips med hög entropi | Nytt avsnitt om hur Adobe använder [klienttips](/help/technotes/client-hints.md) utöver User-Agent för att fastställa enhetsinformation. |
 | Bearbetningsorder | Olika hjälpsidor har sammanställts för att ge ett enda hjälpavsnitt om [Bearbetningsorder](/help/technotes/processing-order.md). |
 | **Augusti 2022** | |
-| Stöd för listvariabler i XDM för Edge Collection | Gör det möjligt för kunder att samla in data med Web SDK att använda XDM för att ange innehåll i listvariabler. [Läs mer](../implement/vars/page-vars/list.md#list-variables-using-the-web-sdk) | 18 augusti 2022 |
+| Stöd för listvariabler i XDM för Edge Collection | Gör det möjligt för kunder att samla in data med Web SDK att använda XDM för att ange innehåll i listvariabler. [Läs mer](../implement/vars/page-vars/list.md#list-variables-using-the-web-sdk) |
 | Användning av SKU-fält i XDM för Edge Collection när produktsträngsvariabler anges | Gör det möjligt för kunder att samla in data med hjälp av Web SDK att använda SKU-värdet för att ställa in produktfältet i variabeln products. [Läs mer](../implement/vars/page-vars/products.md#products-using-the-web-sdk) |
 | **Juni 2022** |  |
 | Marknadsföringsvariabler i XDM för Edge Collection | Dokumentation på [stöd för Merchandising-variabler i XDM för Edge Collection](/help/components/dimensions/evar-merchandising.md) |
 | Experience Platform Edge-dokumentation | Nya artiklar om Adobe Analytics implementering via [Web SDK](/help/implement/aep-edge/web-sdk/overview.md), [Mobile SDK](/help/implement/aep-edge/mobile-sdk/overview.md)och [Edge API](/help/implement/aep-edge/server-api/overview.md). |
 | Uppdaterad dokumentation om visualisering av flöde | Baserat på [nytt användargränssnitt](/help/analyze/analysis-workspace/visualizations/c-flow/create-flow.md) |
-| Dokumentation om att dela anteckningar i mobilstyrkort | Du kan visa [anteckningar som har skapats i Workspace - i Mobile Scorecards](/help/analyze/analysis-workspace/components/annotations/mobile-annotations.md). |
+| Dokumentation om att dela anteckningar i mobilstyrkort | Du kan visa [anteckningar som har skapats i Workspace i Mobile Scorecards](/help/analyze/analysis-workspace/components/annotations/mobile-annotations.md). |
 | **Maj 2022** | |
 | Fylla i livscykeldimensioner och mätvärden via Edge Network | Mobila livscykeldata som skickas till Edge Network visas nu i Analytics-rapporter. Se [Variabelmappning för analyser](/help/implement/aep-edge/xdm-var-mapping.md) för information om vilka XDM-fält som mappar till befintliga mobila livscykelrapporter. |
 | **April 2022** | |
@@ -159,12 +160,12 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | [!UICONTROL Next item] eller [!UICONTROL Previous item] Panelen Arbetsyta | På den här panelen kan du utforska objekt som följer eller föregår ett av de önskade dimensionsobjekten. |
 | [!UICONTROL Page Summary] Panelen Arbetsyta | Panelen innehåller en djupgående analys av en sida som du väljer. |
 | Nytt avsnitt om att pausa äldre schemalagda rapporter | Effektivt **15 april 2022** kommer Adobe att pausa alla schemalagda rapporter som har ett skapandedatum som är längre än två år |
-| **Februari 2022** |
+| **Februari 2022** | |
 | Förhandsgranskningsläge för mobilstyrda projekt | The [förhandsgranskningsläge](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/create-scorecard.html#preview) I kan du förhandsgranska upplevelsen innan du sparar och delar ett styrkort. |
 | Slutpunkt för API-projekt | Lägg till, redigera eller ta bort Analysis Workspace-projekt med API:t. [Läs mer](https://developer.adobe.com/analytics-apis/docs/2.0/guides/endpoints/projects/) |
 | Uppdaterat ämne om att pausa äldre schemalagda Report Builder-aktiviteter | **Gäller från 15 april 2022**, Adobe tänker [pausa alla schemalagda aktiviteter i Report Builder som skapades för mer än två år sedan](/help/analyze/report-builder/r-arb-scheduled-reports.md). |
 
-### 2021 {#21}
+### 2021 {#year2021}
 
 | Funktion | Beskrivning |
 | --- | --- |
@@ -200,7 +201,7 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | 14 januari 2021 | Lagt till dokumentation om hur du kan lägga till bilder i Workspace-projekt genom att referera till en offentlig bild-URL. |
 | 14 januari 2021 | Kombinerad käll- och inställningshanterare för arbetsytevisualiseringar: [!UICONTROL Data Source] hanteraren (punkt) och inställningshanteraren (kugghjulet) för visualiseringar har kombinerats till en enda leverantör, så att du enkelt kan hantera källan och inställningarna från samma plats. |
 
-### 2020 {#20}
+### 2020 {#year2020}
 
 | Funktion | Beskrivning |
 | --- | --- |
@@ -267,7 +268,7 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | 13 januari 2020 | [Adobe Analytics och webbläsarcookies](/help/technotes/cookies/cookies.md) har lagts till. |
 | 13 januari 2020 | Ändrad [Vilket Adobe Analytics-verktyg ska jag använda](/help/analyze/get-started/which-analytics-tool.md) sida. |
 
-### 2019 {#19}
+### 2019 {#year2019}
 
 | Funktion | Beskrivning |
 | --- | --- |
@@ -287,7 +288,8 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | 12 september 2019 | Uppdatera [Beräknade mätsummor](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetrics-reference/cm-totals.html) -dokument. |
 | 28 augusti 2019 | Ny artikel om [progressiva webbappar (PWA) för Analytics](/help/technotes/pwa.md). |
 | 8 augusti 2019 | Ny artikel om [summor för beräknade mätvärden](/help/components/c-calcmetrics/cm-totals.md). |
-| 8 augusti 2019 | Förtydligande av [sessionsdata med aktiverade tidsstämplar](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/timestamp-optional.md). | 8 augusti 2019 | I Workspace har Adobe ökat gränsen för objekt som kan placeras i ett statiskt nedrullningsbart filter från 50 till 200. Den här förbättringen kommer till nytta i flera olika sammanhang, till exempel kan du nu lägga till alla länder (195) eller alla delstater och provinser i USA (52) i ett filter. |
+| 8 augusti 2019 | Förtydligande av [sessionsdata med aktiverade tidsstämplar](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/timestamp-optional.md). |
+| 8 augusti 2019 | I Workspace har Adobe ökat gränsen för objekt som kan placeras i ett statiskt nedrullningsbart filter från 50 till 200. Den här förbättringen kommer till nytta i flera olika sammanhang, till exempel kan du nu lägga till alla länder (195) eller alla delstater och provinser i USA (52) i ett filter. |
 | 2 augusti 2019 | Större uppdatering av [Analytics-ordlistan](/help/technotes/terms.md). |
 | 22 juli 2019 | Tillägg för Magento: Mall för marknadsföring och handel i [dokumentationen om Analysis Workspace-mallarna](/help/analyze/analysis-workspace/build-workspace-project/starter-projects.md). |
 | 18 juli 2019 | Uppdaterade [inställningar för kohorttabeller](/help/analyze/analysis-workspace/visualizations/cohort-table/t-cohort.md). |
