@@ -3,7 +3,7 @@ title: Så här konfigurerar du ett annonskonto i Advertising Analytics
 description: I den här artikeln beskrivs hur du skapar nya annonskonton och mappar flera konton till flera rapportsviter.
 feature: Advertising Analytics
 exl-id: f593c714-e85f-4000-85b2-6294cad81e25
-source-git-commit: c53b533a1d037ab3ed811bcc0960418f037a708f
+source-git-commit: a34dfc63c47b6fe4b91b2b67ea21cdddafb0bfd0
 workflow-type: tm+mt
 source-wordcount: '763'
 ht-degree: 3%
@@ -23,7 +23,7 @@ Administratörer kan även [ge icke-administratörer åtkomst](/help/integrate/c
 1. I Adobe Analytics navigerar du till **[!UICONTROL Admin]** > **[!UICONTROL Advertising Accounts]**.
 1. (Endast första gången) Godkänn villkoren i slutanvändaravtalet.
 1. Välj **[!UICONTROL + Add]**.
-1. The [!UICONTROL New search engine setting] visas:
+1. The [!UICONTROL New search engine setting] visas.
 
    ![](assets/aa-new-se-account.png)
 
