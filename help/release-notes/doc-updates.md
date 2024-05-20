@@ -5,9 +5,9 @@ short-title: Analytics documentation updates
 feature: Release Notes
 exl-id: fe8e3c4c-6782-46f7-8e28-4f8f54807788
 mini-toc-levels: 3
-source-git-commit: e33d5ed955109f01949d95d826d5f7d48b572131
+source-git-commit: 556f2131de980362094c691e8de61c6b077b5c15
 workflow-type: tm+mt
-source-wordcount: '5402'
+source-wordcount: '5419'
 ht-degree: 21%
 
 ---
@@ -26,6 +26,7 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | Funktion | Beskrivning |
 | --- | --- |
 | **Maj 2024** | |
+| Uppdaterad Advertising Analytics-dokumentation | Uppdaterad dokumentation i linje med uppdateringar av [Advertising Analytics](/help/integrate/c-advertising-analytics/c-adanalytics-workflow/aa-workflow.md) användargränssnitt. |
 | Explicit mappa XDM-objektvariabler till kontextdatavariabler | Dokumenterad möjlighet att [explicit ange kontextdatavariabler med hjälp av XDM-objektvariabelmappning](/help/implement/aep-edge/xdm-var-mapping.md#explicit-mapping). |
 | Ny dokumentation för uppgradering från Adobe Analytics till Customer Journey Analytics | För organisationer som uppgraderar från Adobe Analytics till Customer Journey Analytics finns det flera uppgraderingsalternativ och många överväganden att tänka på baserat på organisationens nuvarande Adobe Analytics-implementering och långsiktiga mål.<p>Nu finns det nya dokumentationsresurser som hjälper dig att förstå:</p><ul><li>De olika uppgraderingssökvägarna som finns</li><li>Vilka uppgraderingsalternativ som finns tillgängliga baserat på en organisations aktuella implementering av Adobe Analytics</li><li>Fördelar och nackdelar med varje uppgraderingsväg</li><li>Stegvisa anvisningar för varje uppgraderingsväg</li><li>Att tänka på vid hantering av historiska data</li><li>Och mycket mer!</li></ul><p>[Kom igång med uppgraderingen till Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/compare-aa-cja/upgrade-to-cja/cja-upgrade-getstarted).</p> |
 | Uppdaterad dokumentation om anpassade datumintervall | Uppdaterade skärmdumpar och procedurer för [skapa anpassade datumintervall](/help/analyze/analysis-workspace/components/calendar-date-ranges/custom-date-ranges.md) för att matcha de nuvarande produktfunktionerna och designen. |
