@@ -4,9 +4,9 @@ audience: end-user
 user-guide-title: Handbok om Analytics-verktyg
 breadcrumb-title: Användarhandbok om verktyg
 user-guide-description: Lär dig hur du använder verktyg i Analytics som Analysis Workspace, Analytics Dashboards, Report Builder och Activity Map.
-source-git-commit: a2e69b5f39de3c964381bb5dd5ecd4d9714e9249
+source-git-commit: efad9aa1ac204f0ded52ab8253bf1fcbfbf39e9c
 workflow-type: tm+mt
-source-wordcount: '1008'
+source-wordcount: '1007'
 ht-degree: 11%
 
 ---
@@ -27,7 +27,6 @@ ht-degree: 11%
 + [Landningssida](landing.md)
 + Analysis Workspace {#analysis-workspace}
    + [Översikt över Analysis Workspace](analysis-workspace/home.md)
-   + [Nyheter i Analysis Workspace](analysis-workspace/new-features-in-analysis-workspace.md)
    + Projekt {#build-workspace-project}
       + [Projektöversikt](analysis-workspace/build-workspace-project/freeform-overview.md)
       + [Skapa projekt](analysis-workspace/build-workspace-project/create-projects.md)
@@ -49,6 +48,7 @@ ht-degree: 11%
       + [Skapa och hantera företagsrapporter](analysis-workspace/reports/create-company-reports.md)
    + Komponenter {#components}
       + [Komponenter - översikt](analysis-workspace/components/analysis-workspace-components.md)
+      + [Använda komponenter i arbetsytan](analysis-workspace/components/use-components-in-workspace.md)
       + [Lägga till komponentbeskrivningar](analysis-workspace/components/add-component-descriptions.md)
       + Anteckningar {#annotations}
          + [Översikt över anteckningar](analysis-workspace/components/annotations/overview.md)

@@ -3,10 +3,10 @@ description: Lär dig grunderna i att skapa projekt i Analysis Workspace
 title: Skapa projekt
 feature: Workspace Basics
 role: User, Admin
-exl-id: 6130b1d8-078c-46d8-9fce-eb39739a9570
-source-git-commit: fabe043264e4567d54dc497897fff0aaad77eaaf
+exl-id: 24193013-1361-43fc-b129-c44f207d9101
+source-git-commit: 273fea86cde8880d9c9e03ac9c6a99b75f70f6cd
 workflow-type: tm+mt
-source-wordcount: '703'
+source-wordcount: '768'
 ht-degree: 0%
 
 ---
@@ -98,13 +98,21 @@ Lägga till en visualisering:
 >
 >Om du vill ha information om de olika komponenterna väljer du ikonen Info bredvid en komponents namn i den vänstra listen. Du kan också se ikonen [Handbok för analyskomponenter](/help/components/home.md).
 
-Så här lägger du till en komponent:
+Här följer grundläggande information om hur du lägger till en komponent i ett projekt i Analysis Workspace. Mer information om hur du lägger till olika typer av komponenter (mått, mått, segment och datumintervall) finns i [Använda komponenter i Analysis Workspace](/help/analyze/analysis-workspace/components/use-components-in-workspace.md).
+
+Så här lägger du till en komponent i ett projekt i Analysis Workspace:
 
 1. Välj **[!UICONTROL Components]** ikonen i den vänstra listen.
 
    ![](assets/build-components.png)
 
-1. Sök efter komponenten som du vill lägga till. När den visas i den vänstra listen drar du den till en panel eller visualisering i projektet.
+1. Bläddra till eller sök efter komponenten som du vill lägga till och dra den sedan till en panel eller visualisering i projektet.
+
+   Du kan till exempel dra ett segment till segmentets släppzon i ett panelhuvud.
+
+   ![släppa ett segment i släppzonen](assets/segment-dropzone.png)
+
+   Mer information om hur du lägger till komponenter i projekt finns i [Använda komponenter i Analysis Workspace](/help/analyze/analysis-workspace/components/use-components-in-workspace.md).
 
 1. (Valfritt) Dela projektet enligt beskrivningen i [Spara och dela projektet](#save-and-share-the-project).
 

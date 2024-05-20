@@ -5,10 +5,10 @@ short-title: Analytics documentation updates
 feature: Release Notes
 exl-id: fe8e3c4c-6782-46f7-8e28-4f8f54807788
 mini-toc-levels: 3
-source-git-commit: 556f2131de980362094c691e8de61c6b077b5c15
+source-git-commit: 0928628c9cffa91f90fa5d8af535eb834bb7502d
 workflow-type: tm+mt
-source-wordcount: '5419'
-ht-degree: 21%
+source-wordcount: '5442'
+ht-degree: 20%
 
 ---
 
@@ -26,6 +26,7 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | Funktion | Beskrivning |
 | --- | --- |
 | **Maj 2024** | |
+| Dokumentation om hur du lägger till komponenter i projekt | Lagt till allmän information om hur du [lägga till olika typer av komponenter i projekt i Analysis Workspace](/help/analyze/analysis-workspace/components/use-components-in-workspace.md). |
 | Uppdaterad Advertising Analytics-dokumentation | Uppdaterad dokumentation i linje med uppdateringar av [Advertising Analytics](/help/integrate/c-advertising-analytics/c-adanalytics-workflow/aa-workflow.md) användargränssnitt. |
 | Explicit mappa XDM-objektvariabler till kontextdatavariabler | Dokumenterad möjlighet att [explicit ange kontextdatavariabler med hjälp av XDM-objektvariabelmappning](/help/implement/aep-edge/xdm-var-mapping.md#explicit-mapping). |
 | Ny dokumentation för uppgradering från Adobe Analytics till Customer Journey Analytics | För organisationer som uppgraderar från Adobe Analytics till Customer Journey Analytics finns det flera uppgraderingsalternativ och många överväganden att tänka på baserat på organisationens nuvarande Adobe Analytics-implementering och långsiktiga mål.<p>Nu finns det nya dokumentationsresurser som hjälper dig att förstå:</p><ul><li>De olika uppgraderingssökvägarna som finns</li><li>Vilka uppgraderingsalternativ som finns tillgängliga baserat på en organisations aktuella implementering av Adobe Analytics</li><li>Fördelar och nackdelar med varje uppgraderingsväg</li><li>Stegvisa anvisningar för varje uppgraderingsväg</li><li>Att tänka på vid hantering av historiska data</li><li>Och mycket mer!</li></ul><p>[Kom igång med uppgraderingen till Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/compare-aa-cja/upgrade-to-cja/cja-upgrade-getstarted).</p> |
@@ -300,7 +301,7 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | 4 juni 2019 | Ny handbok har skrivits med namnet [Migrera från en analysplattform från tredje part till Adobe Analytics](/help/technotes/ga-to-aa/home.md). |
 | 30 maj 2019 | [Referensen för datafeed-kolumner](/help/export/analytics-data-feed/c-df-contents/datafeeds-reference.md) har setts över. |
 | 9 maj 2019 | En ny inställning har lagts till i inställningarna för Flödesvisualisering: Inkludera upprepningsinstanser. Se [Flödesinställningar](/help/analyze/analysis-workspace/visualizations/c-flow/create-flow.md) |
-| 11 apr 2019 | Förbättringar av de bästa sätten att optimera arbetsytan: [Optimera prestanda](/help/analyze/analysis-workspace/new-features-in-analysis-workspace.md) |
+| 11 apr 2019 | Förbättringar av bästa praxis för optimering av arbetsyta: Optimera prestanda |
 | 11 apr 2019 | Uppdateringar av [Optimera Workspace-prestanda](/help/analyze/analysis-workspace/workspace-faq/optimizing-performance.md). |
 | 14 mars 2019 | Större uppdatering av regional datainsamling. |
 | 7 februari 2019 | Mindre uppdatering av inställningarna Ersätt den sista oktetten i IP-adresser med 0 och Dölj IP i [Allmänna kontoinställningar](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/general-acct-settings-admin.md). |

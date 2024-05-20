@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: Platshanteraren
 feature: Classifications
 exl-id: ace70568-220a-44e8-8e5f-f73002b9e2a2
-source-git-commit: 7b293c962428c7b8fac62a9f70ce62a0fe8f0cea
+source-git-commit: 273fea86cde8880d9c9e03ac9c6a99b75f70f6cd
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: '622'
 ht-degree: 0%
 
 ---
@@ -73,13 +73,15 @@ Mer information om hur du redigerar en plats finns i [Konfigurera platser för m
 >
 >Om du tar bort en plats bör du [redigera dina dataflöden](/help/export/analytics-data-feed/create-feed.md), [Data Warehouse](/help/export/data-warehouse/create-request/dw-request-report-destinations.md)och [Klassificeringsuppsättningar - scheman](/help/components/classifications/sets/manage/schema.md) för att använda en fungerande plats.
 
-Så här tar du bort en plats:
+Så här tar du bort en plats i Platshanteraren i Adobe Analytics:
+
+1. Välj **[!UICONTROL Components]** > **[!UICONTROL Locations]** väljer du [!UICONTROL **Platser**] -fliken.
 
 1. Välj menyn med tre punkter i dialogrutan [!UICONTROL **Platsnamn**] kolumn för den plats som du vill ta bort.
 
 1. Välj [!UICONTROL **Ta bort**].
 
-## Redigera konton
+## Redigera ett konto
 
 1. Om du vill redigera konton i Platshanteraren i Adobe Analytics väljer du **[!UICONTROL Components]** > **[!UICONTROL Locations]** väljer du [!UICONTROL **Platskonton**] -fliken.
 
@@ -100,7 +102,7 @@ Så här visar du nycklar som är kopplade till ett exportkonto:
 
 1. Markera ikonen med tre punkter på det konto som du vill redigera och välj sedan [!UICONTROL **Kontonycklar**].
 
-## Ta bort konton
+## Ta bort ett konto
 
 1. I Adobe Analytics: **[!UICONTROL Components]** > **[!UICONTROL Locations]** väljer du [!UICONTROL **Platskonton**] -fliken.
 

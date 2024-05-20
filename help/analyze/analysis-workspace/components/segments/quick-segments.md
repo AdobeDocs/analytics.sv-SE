@@ -4,9 +4,9 @@ title: Snabbsegment
 feature: Segmentation
 role: User, Admin
 exl-id: 680e7772-10d3-4448-b5bf-def3bc3429d2
-source-git-commit: d64f6687dd6e6f688d332926e6d90fa699cac968
+source-git-commit: 0610cb263f2c5e7cc337b9a8f8df5766736f4fb8
 workflow-type: tm+mt
-source-wordcount: '1127'
+source-wordcount: '1102'
 ht-degree: 0%
 
 ---
@@ -33,9 +33,11 @@ Så här skapar du ett snabbsegment:
 
 1. Välj en av följande metoder för att börja skapa snabbsegmentet:
 
-   * **Ad hoc (dra och släpp):** Dra en komponent från den vänstra listen till släppzonen intill **Segment** -ikonen i panelhuvudet och välj sedan **Redigera** om du vill justera segmentet.
+   * **Ad hoc (dra och släpp):** Dra en komponent från den vänstra listen till segmentets släppzon i panelhuvudet.
 
-     ![Redigera ad hoc-segment](assets/filter-adhoc-edit.png)
+     ![släppa ett segment i släppzonen](assets/segment-dropzone.png)
+
+     Du kan redigera segmentet enligt beskrivningen i [Redigera snabbsegment](#edit-quick-segments).
 
      >[!NOTE]
      >
