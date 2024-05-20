@@ -4,9 +4,9 @@ title: Vanliga felmeddelanden i Analysis Workspace
 feature: Workspace Basics
 role: User, Admin
 exl-id: e5c6f710-a205-48db-aeee-ee5b83c42795
-source-git-commit: 2eff7656741bdba3d5d7d1f33e9261b59f8e6083
+source-git-commit: b844fb354c16a80e4044e3bae8cb47aa042a0d59
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '349'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,7 @@ Det kan uppstå fel vid interaktion med Analysis Workspace som också påverkar 
 
 | Felmeddelande | Varför inträffar detta? | Optimering |
 | --- | --- | --- |
+| [!UICONTROL The report suite is currently exceeding its reporting capacity. Please simplify the request or try again later.] | Din rapporteringsförfrågan är för komplex och behöver förenklas. | Begränsa rapportvillkoren och försök igen. |
 | [!UICONTROL A system error has occurred. Please log a Customer Care request under Help > Submit Support Ticket and include your error code.] | Adobe har ett problem som måste lösas. | Skicka felkoden till kundtjänst. |
 | [!UICONTROL An unexpected error has occurred; try refreshing your project again. If the problem persists, please submit this error ID to Adobe Customer Care for further diagnosis.] | Adobe har ett problem som måste lösas. | Prova att uppdatera projektet. Om problemet kvarstår skickar du felkoden till Kundtjänst. |
 | [!UICONTROL Error 500: Failed to load page] | Problem med ditt lokala nätverk, till exempel företag [brandväggsinställningar](https://experienceleague.adobe.com/docs/analytics/technotes/ip-addresses.html), är en bidragande faktor till det här felet. Dessutom kan Adobe ha ett problem som måste lösas. | Försök logga in igen efter flera minuter. Om problemet kvarstår skickar du EIM-instans-ID-koden till Kundtjänst. |
