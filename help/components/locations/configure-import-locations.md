@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: Konfigurera platser för molnimport och -export
 feature: Classifications
 exl-id: 55179868-6228-44ff-835c-f4a7b38e929b
-source-git-commit: 5bf6ed9b71a87d79fec960b6618667238019ac7f
+source-git-commit: 66c846dd64ee3ed8f421c834ab82b53b1f0f00a5
 workflow-type: tm+mt
-source-wordcount: '1465'
+source-wordcount: '1449'
 ht-degree: 0%
 
 ---
@@ -23,16 +23,15 @@ Du kan konfigurera ett molnkonto (och en plats för det kontot). En enda plats k
 
 Du måste konfigurera Adobe Analytics med den information som krävs för att komma åt ditt molnkonto. Den här processen består av att lägga till och konfigurera kontot (som Amazon S3 Role ARN, Google Cloud Platform o.s.v.) enligt beskrivningen i [Konfigurera molnimport- och exportkonton](/help/components/locations/configure-import-accounts.md)och sedan lägga till och konfigurera platsen inom det kontot (enligt beskrivningen i den här artikeln).
 
-## Börja skapa eller redigera en molnexportplats
+Mer information om hur du hanterar befintliga platser, inklusive visning, redigering och borttagning av platser, finns i [Platshanteraren](/help/components/locations/locations-manager.md).
+
+## Börja skapa en molnexportplats
 
 1. I Adobe Analytics: [!UICONTROL **Komponenter**] > [!UICONTROL **Platser**].
 1. På [!UICONTROL Locations] väljer du [!UICONTROL **Platser**] -fliken.
-1. Om du vill skapa en ny plats väljer du [!UICONTROL **Lägg till plats**]. (Om du inte redan har lagt till ett konto lägger du till ett enligt beskrivningen i [Konfigurera molnimport- och exportkonton](/help/components/locations/configure-import-accounts.md).)
+1. Välj [!UICONTROL **Lägg till plats**]. (Om du inte redan har lagt till ett konto lägger du till ett enligt beskrivningen i [Konfigurera molnimport- och exportkonton](/help/components/locations/configure-import-accounts.md).)
 
-   eller
-
-   Om du vill redigera en befintlig plats väljer du menyn med tre punkter på panelen [!UICONTROL **Platsnamn**] kolumn för platsen som du vill redigera och markera [!UICONTROL **Redigera**].
-Dialogrutan Plats visas.
+   Dialogrutan Plats visas.
 
 1. Ange följande information: |Fält | Funktion | |—|—| | [!UICONTROL **Namn**] | Namnet på platsen.  | | [!UICONTROL **Beskrivning**] | Ange en kort beskrivning av kontot för att hjälpa till att skilja det från andra konton av samma kontotyp. | | [!UICONTROL **Använd med**] | Välj om du vill använda den här platsen med [!UICONTROL **Dataflöden**], [!UICONTROL **Data Warehouse**], eller [!UICONTROL **Klassificeringsuppsättningar**]. <p>Tänk på följande när du gör en markering:</p><ul><li>En enda plats kan inte användas för flera syften. En plats som till exempel används för datafeeds kan inte också användas för Data Warehouse- eller klassificeringsuppsättningar.</li><li>Om du vill undvika filkonflikter på en plats ska du inte ändra värdet på [!UICONTROL **Använd med**] efter att platsen har använts.</li></ul> | | [!UICONTROL **Platskonto**] | Välj det platskonto där du vill skapa den här platsen. Mer information om hur du skapar ett konto finns i [Lägg till ett konto](#add-an-account). |
 

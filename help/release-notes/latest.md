@@ -3,16 +3,16 @@ title: Aktuella versionsinformation för Adobe Analytics
 description: Visa den aktuella versionsinformationen för Adobe Analytics
 feature: Release Notes
 exl-id: 97d16d5c-a8b3-48f3-8acb-96033cc691dc
-source-git-commit: 97a63c42a121204e043d308525518d16e44b21f9
+source-git-commit: 66c846dd64ee3ed8f421c834ab82b53b1f0f00a5
 workflow-type: tm+mt
-source-wordcount: '960'
+source-wordcount: '1139'
 ht-degree: 1%
 
 ---
 
 # Aktuell versionsinformation för Adobe Analytics (maj 2024)
 
-**Senaste uppdatering**: 15 maj 2024
+**Senaste uppdatering**: 21 maj 2024
 
 Versionsanteckningarna gäller releaseserien 15 maj 2024 till juni. Adobe Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.md) vilket ger en mer skalbar, stegvis metod för driftsättning av funktioner. Därför uppdateras versionsinformationen flera gånger i månaden. Kontrollera dem regelbundet.
 
@@ -25,6 +25,8 @@ Versionsanteckningarna gäller releaseserien 15 maj 2024 till juni. Adobe Analyt
 | **API för realtidsrapportering för Analytics 2.0** | Det nya API:t för realtidsrapportering i Adobe Analytics 2.0 förbättrar kundintegreringen och ger snabba rapportresultat. Dessa resultat kan användas programmatiskt för att arbeta med enkla, trendmässiga och uppdelade rapporter. [Läs mer](https://developer.adobe.com/analytics-apis/docs/2.0/guides/endpoints/reports/real-time/) | | 30 maj 2024 |
 | **Direktuppspelningsmedia: Skicka webbdata till Adobe Experience Platform Edge Network med Web SDK** | Nu kan du använda Adobe Experience Platform Web SDK för att skicka Streaming Media-webbdata till Adobe Experience Platform Edge Network. Den här förbättringen gör att ni kan skapa mer personaliserade kampanjer och leverera mer personaliserat innehåll, vilket resulterar i mer spårningsdata att rapportera om.<p>Den här ändringen ger en enhetlig insamlingsmetod för webbimplementeringar i alla plattformslösningar, till exempel Customer Journey Analytics, Adobe CDP, Adobe Journey Optimizer och händelsevidarebefordring i realtid. Tidigare var det enda sättet att skicka Streaming Media-webbdata till Edge Network att använda Media Edge API. [Läs mer här] | | 31 maj 2024 |
 | **Ökning av standardtröskelvärden för låg trafik** | I **mitten av april 2024** kommer Adobe att börja öka standardrapporteringsprogrammets lågtrafiktrösklar enligt följande: ![lågtrafiktrösklar](assets/thresholds.png) Detta påverkar endast variabler som för närvarande ligger under de nya tröskelvärdena. Dessa ändringar kommer att göras stegvis, och vi förväntar oss att arbetet ska vara slutfört av **slutet av maj**. När dessa ökningar introduceras kan du märka förändringar för variabler med hög kardinalitet:<ul><li>Fler dimensionsvärden kan vara tillgängliga för rapportering.</li><li>Segment och beräknade värden kan innehålla mer data.</li><li>Virtuella rapportsviter baserade på segment kan innehålla mer data.</li><li>Export av klassificeringar kan innehålla mer data.</li></ul> | Mid April, 2024 | 31 maj 2024 |
+| **Administratörsinställningar för att styra konton och platser som används för export och import** | Den nya fliken Administratörsinställningar i Platshanteraren ger administratörer kontroll över om användare kan skapa och redigera konton och platser. De här inställningarna gäller när användare konfigurerar molnimport- och exportkonton och konfigurerar platser för molnimport och -export. <p>Administratörer kan också begränsa vilka typer av konton (Google Cloud Platform, Azure RBAC, Amazon S3 och så vidare) som användare kan skapa och använda.</p><p>Tidigare kunde alla användare skapa, redigera och använda konton och platser för alla typer av konton.</p> | Juni 2024 | Juni 2024 |
+| **Dela konton och platser som används för export och import** | Användarna kan nu göra de konton och platser de skapar tillgängliga för alla användare i organisationen. Endast konto- och platsägare och systemadministratörer kan redigera och ta bort konton och platser.<p>Tidigare kunde konton och platser bara användas av den användare som skapade dem.</p><p>Dessa inställningar är tillgängliga när användare [konfigurera molnimport- och exportkonton](/help/components/locations/configure-import-accounts.md) och [konfigurera platser för molnimport och -export](/help/components/locations/configure-import-locations.md). </p> | Juni 2024 | Juni 2024 |
 | **Activity Map för att använda färre serveranrop för Web SDK** | För närvarande räknas länkarhändelser i Activity Map som sina egna händelser och medför extra kostnader. Den här förbättringen tar några länkhändelser och paketerar dem i nästa träff, ungefär som hur händelser hanteras av AppMeasurementet. (Dokumentation att följa) | Beta börjar 31 maj 2024 | TBD |
 
 {style="table-layout:auto"}

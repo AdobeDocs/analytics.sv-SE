@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: Konfigurera molnimport- och exportkonton
 feature: Classifications
 exl-id: 40d3d3f1-1047-4c37-8caf-6b0aabaa590a
-source-git-commit: 888f7bef389f113538f0e62ab0098d9e809a905e
+source-git-commit: 66c846dd64ee3ed8f421c834ab82b53b1f0f00a5
 workflow-type: tm+mt
-source-wordcount: '1223'
+source-wordcount: '1204'
 ht-degree: 0%
 
 ---
@@ -23,21 +23,15 @@ Du kan konfigurera ett molnkonto som används för något eller alla av följand
 
 Du måste konfigurera Adobe Analytics med den information som krävs för att komma åt ditt molnkonto. Den här processen består av att lägga till och konfigurera kontot (till exempel Amazon S3 Role ARN, Google Cloud Platform o.s.v.) enligt beskrivningen i den här artikeln, och sedan lägga till och konfigurera platsen inom det kontot (till exempel en mapp inom kontot) enligt beskrivningen i [Konfigurera platser för molnimport och -export](/help/components/locations/configure-import-locations.md).
 
+Mer information om hur du hanterar befintliga konton, inklusive visning, redigering och borttagning av konton, finns i [Platshanteraren](/help/components/locations/locations-manager.md).
+
 Så här konfigurerar du ett molnimport- eller exportkonto:
 
 1. I Adobe Analytics: [!UICONTROL **Komponenter**] > [!UICONTROL **Platser**].
 1. På [!UICONTROL Locations] väljer du [!UICONTROL **Platskonton**] -fliken.
-1. Om du vill skapa ett nytt konto väljer du [!UICONTROL **Lägg till konto**].
+1. Välj [!UICONTROL **Lägg till konto**].
 
    Dialogrutan Lägg till konto visas.
-
-   eller
-
-   Om du vill redigera ett befintligt konto väljer du [!UICONTROL **Visa detaljer**] på panelen som visar det konto som du vill redigera.
-Dialogrutan Plats visas.
-
-   Dialogrutan Platskontoinformation visas
-
 
 1. Ange följande information: |Fält | Funktion | |—|—| | [!UICONTROL **Platskontonamn**] | Namnet på platskontot. Det här namnet visas när du skapar en plats | | [!UICONTROL **Beskrivning av platskonto**] | Ange en kort beskrivning av kontot för att hjälpa till att skilja det från andra konton av samma kontotyp. | | [!UICONTROL **Kontotyp**] | Välj typ av molnkonto. Vi rekommenderar att du har ett enda konto för varje kontotyp, med flera platser efter behov inom det kontot. |
 1. I [!UICONTROL **Kontoegenskaper**] anger du information som är specifik för den kontotyp som du har valt.
