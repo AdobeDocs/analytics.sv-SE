@@ -3,16 +3,16 @@ title: Aktuella versionsinformation för Adobe Analytics
 description: Visa den aktuella versionsinformationen för Adobe Analytics
 feature: Release Notes
 exl-id: 97d16d5c-a8b3-48f3-8acb-96033cc691dc
-source-git-commit: 9821150194e6bc89a5a2dec15a7957aaa177948e
+source-git-commit: 49e7e64254a6466af852ee6dd48c7b37a15c744c
 workflow-type: tm+mt
-source-wordcount: '1151'
+source-wordcount: '1150'
 ht-degree: 1%
 
 ---
 
 # Aktuell versionsinformation för Adobe Analytics (maj 2024)
 
-**Senaste uppdatering**: 21 maj 2024
+**Senaste uppdatering**: 22 maj 2024
 
 Versionsanteckningarna gäller releaseserien 15 maj 2024 till juni. Adobe Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.md) vilket ger en mer skalbar, stegvis metod för driftsättning av funktioner. Därför uppdateras versionsinformationen flera gånger i månaden. Kontrollera dem regelbundet.
 
@@ -48,8 +48,8 @@ AN-327749; AN-332949; AN-342881; AN-343171; AN-343708; AN-344034; AN-34559; AN-3
 
 | Meddelande | Datum tillagt eller uppdaterat | Beskrivning |
 | ----------- | ---------- | ---------- |
+| **13 månaders förfallodatum för sparat`cust_visids`** | 22 maj 2024 | En kommande version av Analytics Träffbehandlarmotorn, **riktad mot juli 2024**, börjar tillämpa 13-månaders förfallodatum för sparade `cust_visids`. Om rapportsviten har Aktivera besökarinställning aktiverat, används den här inställningen för att hitta `cust_visid` för `visid_high/visid_low value` med nej `cust_visid` på träffen. Mappningen av en `cust_visid` för `visid_high/visid_low`. I den här versionen, om minst 13 månader har gått sedan `visid_high/visid_low` har haft en `cust_visid` vid en träff upphör mappningen. |
 | **Uppdateringar av ISO-område** | 10 maj 2024 | Adobe kommer att genomföra 2024 ISO-regionsuppdateringar den 7 juni 2024. Efter den här versionen förväntas mindre uppdateringar av geoinformation (region) visas. |
-| **13 månaders förfallodatum för sparat`cust_visids`** | 20 mars 2024 | En kommande version av motorn för Analytics Hit processing, som är avsedd för april eller maj, kommer att börja tillämpa en 13-månaders förfallotid för sparade `cust_visids`. Om rapportsviten har Aktivera besökarinställning aktiverat, används den här inställningen för att hitta `cust_visid` för `visid_high/visid_low value` med nej `cust_visid` på träffen. Mappningen av en `cust_visid` för `visid_high/visid_low`. I den här versionen, om minst 13 månader har gått sedan `visid_high/visid_low` har haft en `cust_visid` vid en träff upphör mappningen. |
 
 {style="table-layout:auto"}
 
