@@ -3,9 +3,9 @@ title: Skapa en datafeed
 description: Lär dig hur du skapar en datafeed.
 feature: Data Feeds
 exl-id: 36c8a40e-6137-4836-9d4b-bebf17b932bc
-source-git-commit: 40c64e104dbc3ba97807ef9fee653252d2fdd55e
+source-git-commit: 23d519975111dc43b515c6c5bc67d7001d05c0d8
 workflow-type: tm+mt
-source-wordcount: '4039'
+source-wordcount: '4070'
 ht-degree: 0%
 
 ---
@@ -345,7 +345,7 @@ När du skapar en datafeed kan du ge Adobe:
          | [!UICONTROL **kapitalbelopp**] | Huvudmannen tillhandahålls av Adobe. Du måste ge den här huvudmannen behörighet att ta emot feeds. |
          | [!UICONTROL **Namn**] | Ett namn för kontot. |
          | [!UICONTROL **Beskrivning**] | En beskrivning av kontot. |
-         | [!UICONTROL **Bucket**] | Den bucket på ditt GCP-konto där du vill att Adobe Analytics-data ska skickas. <p>Se till att du har beviljat någon av följande behörigheter till säkerhetsobjektet som tillhandahålls av Adobe:<ul><li>`roles/storage.objectCreator`: Använd den här behörigheten om du vill begränsa säkerhetsobjektet till att endast skapa filer i ditt GCP-konto. </br>**Viktigt:** Om du använder den här behörigheten för schemalagd rapportering måste du använda ett unikt filnamn för varje ny schemalagd export. Annars misslyckas rapportgenereringen eftersom huvudkontot inte har åtkomst att skriva över befintliga filer.</li><li>(Rekommenderas) `roles/storage.objectUser`: Använd den här behörigheten om du vill att säkerhetsobjektet ska ha tillgång till visa, lista, uppdatera och ta bort filer i ditt GCP-konto.</br>Med den här behörigheten kan huvudmannen skriva över befintliga filer för efterföljande överföringar, utan att behöva generera unika filnamn automatiskt för varje ny schemalagd export.</li></ul><p>Mer information om att bevilja behörigheter finns i [Lägga till ett huvudnamn i en princip på paketnivå](https://cloud.google.com/storage/docs/access-control/using-iam-permissions#bucket-add) i Google Cloud-dokumentationen.</p> |
+         | [!UICONTROL **Bucket**] | Den bucket på ditt GCP-konto där du vill att Adobe Analytics-data ska skickas. <p>Se till att du har beviljat någon av följande behörigheter till säkerhetsobjektet som tillhandahålls av Adobe: (Information om hur du beviljar behörigheter finns i [Lägga till ett huvudnamn i en princip på paketnivå](https://cloud.google.com/storage/docs/access-control/using-iam-permissions#bucket-add) i Google Cloud-dokumentationen.)<ul><li>`roles/storage.objectCreator`: Använd den här behörigheten om du vill begränsa säkerhetsobjektet till att endast skapa filer i ditt GCP-konto. </br>**Viktigt:** Om du använder den här behörigheten för schemalagd rapportering måste du använda ett unikt filnamn för varje ny schemalagd export. Annars misslyckas rapportgenereringen eftersom huvudkontot inte har åtkomst att skriva över befintliga filer.</li><li>(Rekommenderas) `roles/storage.objectUser`: Använd den här behörigheten om du vill att säkerhetsobjektet ska ha tillgång till visa, lista, uppdatera och ta bort filer i ditt GCP-konto.</br>Med den här behörigheten kan huvudmannen skriva över befintliga filer för efterföljande överföringar, utan att behöva generera unika filnamn automatiskt för varje ny schemalagd export.</li></ul><p>Om din organisation använder [Begränsningar för organisationsprinciper](https://cloud.google.com/storage/docs/org-policy-constraints) Om du bara vill tillåta Google Cloud Platform-kontot i tillåtelselista behöver du följande Adobe-ägda Google Cloud Platform-organisations-ID: <ul><li>`DISPLAY_NAME`: `adobe.com`</li><li>`ID`: `178012854243`</li><li>`DIRECTORY_CUSTOMER_ID`: `C02jo8puj`</li></ul> </p> |
          | [!UICONTROL **Prefix**] | Mappen inom hakparentesen där du vill placera data. Ange ett mappnamn och lägg sedan till ett omvänt snedstreck efter namnet för att skapa mappen. Exempel: `folder_name/` |
 
          {style="table-layout:auto"}
