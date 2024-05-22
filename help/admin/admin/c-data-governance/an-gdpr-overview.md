@@ -4,10 +4,10 @@ title: Adobe Analytics och GDPR
 feature: Data Governance
 role: Admin
 exl-id: 4cb19f63-119f-4853-84bf-5c1e8f9af9f0
-source-git-commit: 429aaa43fdae669350bdb5a5a54a7d4b9b1c65f2
+source-git-commit: 48f1974a0c379a4e619d9a04ae80e43cce9527c1
 workflow-type: tm+mt
-source-wordcount: '581'
-ht-degree: 86%
+source-wordcount: '580'
+ht-degree: 77%
 
 ---
 
@@ -31,7 +31,7 @@ Som personuppgiftsansvarig bestämmer du vilka personuppgifter Adobe behandlar o
 
 ## Hur Adobe hanterar GDPR-data {#section_A20BCC08A80B410D97601BFB1CAF83F1}
 
-Adobe Cloud Platform (ACP) är en integrerad lösning som kopplar samman ert varumärkes datastyrningsinfrastruktur med de Adobe-verktyg det använder för att skapa och hantera kundupplevelser. Funktionerna för datastyrning i Adobe Cloud Platform gör det möjligt att koppla policyn för datastyrning direkt till dataanvändningen.
+Adobe Experience Cloud erbjuder en integrerad lösning som kopplar samman ert varumärkes infrastruktur för datastyrning med de Adobe-verktyg som används för att skapa och hantera kundupplevelser. Adobe Experience Cloud datastyrningsfunktioner möjliggör en direkt koppling mellan datastyrningspolicyn och dataanvändningen.
 
 Bekanta dig med [hur Adobe Analytics hanterar GDPR](https://www.adobe.com/data-analytics-cloud/analytics/general-data-protection-regulation.html), som diskuterar steg för GDPR-beredskap och hur ni kan integrera med GDPR-API:t för Adobe Experience Cloud.
 

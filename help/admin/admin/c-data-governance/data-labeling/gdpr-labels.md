@@ -4,7 +4,7 @@ title: Datasekretessetiketter för analysvariabler
 feature: Data Governance
 role: Admin
 exl-id: b8c2143a-6e8e-465a-979b-aa8176e8d4e8
-source-git-commit: 750c4b0ffb52c3f2cf25abcd76ef149a4521109e
+source-git-commit: 79f650a7168e0cc44194445f3164a3f981e39a91
 workflow-type: tm+mt
 source-wordcount: '3532'
 ht-degree: 62%
@@ -93,9 +93,9 @@ När du etiketterar en variabel som ID-DEVICE eller ID-PERSON uppmanas du att an
 Du kan välja ett av de befintliga namnutrymmena om du tidigare har tilldelat en ID-etikett till andra variabler i någon av rapportsviterna i ditt inloggningsföretag. Återanvänd namnutrymmet om den här variabeln innehåller samma typ av ID:n som andra variabler som redan är etiketterade med det här namnutrymmet och du vill söka igenom dem alla när du skickar en begäran.
 
 1. Klicka på **[!UICONTROL Select Namespace]** och välj ett av de befintliga namnutrymmena.
+   ![](assets/namespace.png)
 1. Klicka på **[!UICONTROL Apply]**.
 
-![](assets/namespace.png)
 
 ### Definiera ett nytt namnutrymme
 
@@ -218,7 +218,7 @@ Följande tabell beskriver hur olika variabler tas bort. Det här är inte en fu
 
 | Variabler | Borttagningsmetod |
 | --- | --- |
-| <ul><li>Trafikvariabler (props)</li><li>Handelsvariabler (eVars)</li></ul> | Befintligt värde ersätts med ett nytt värde i formatet&quot;Data Privacy-356396D55C4F9C7AB3FBB2F2FA223482&quot;, där det 32-siffriga hexadecimala värdet efter prefixet&quot;Data Privacy-&quot; är ett kryptografiskt starkt 128-bitars pseudvärde Orandomnummer.<p>Eftersom det i princip ersätts av en slumpmässig sträng finns det inget sätt att avgöra det ursprungliga värdet utifrån det nya värdet och inget sätt att härleda det nya värdet i vetskap om det ursprungliga värdet.  Om det identiska värdet som ersätts för en viss variabel förekommer i andra träffar som också tas bort som en del av samma begäran om datasekretess, kommer alla instanser av det värdet att ersättas med samma nya värde.<p>Om vissa förekomster av ett värde ersätts med en borttagningsbegäran och en senare begäran tar bort andra (nya) förekomster av det ursprungliga värdet, kommer det nya ersättningsvärdet att vara ett annat värde än det ursprungliga ersättningsvärdet. |
+| <ul><li>Trafikvariabler (props)</li><li>Commerce Variables (eVars)</li></ul> | Befintligt värde ersätts med ett nytt värde i formatet&quot;Data Privacy-356396D55C4F9C7AB3FBB2F2FA223482&quot;, där det 32-siffriga hexadecimala värdet efter prefixet&quot;Data Privacy-&quot; är ett kryptografiskt starkt 128-bitars pseudvärde Orandomnummer.<p>Eftersom det i princip ersätts av en slumpmässig sträng finns det inget sätt att avgöra det ursprungliga värdet utifrån det nya värdet och inget sätt att härleda det nya värdet i vetskap om det ursprungliga värdet.  Om det identiska värdet som ersätts för en viss variabel förekommer i andra träffar som också tas bort som en del av samma begäran om datasekretess, kommer alla instanser av det värdet att ersättas med samma nya värde.<p>Om vissa förekomster av ett värde ersätts med en borttagningsbegäran och en senare begäran tar bort andra (nya) förekomster av det ursprungliga värdet, kommer det nya ersättningsvärdet att vara ett annat värde än det ursprungliga ersättningsvärdet. |
 | Inköps-ID | Befintligt värde ersätts med ett nytt värde i formatet ”G-7588FCD8642718EC50”, där de 18 hexadecimala siffrorna efter ”G-”-prefixet är de första 18 siffrorna i ett kryptografiskt starkt 128-bitars pseudoslumpmässigt nummer. Alla kommentarer som gäller borttagning av trafikvariabler och handelsvariabler gäller också här.<p>Inköps-ID är ett transaktions-ID vars främsta syfte är att se till att ett inköp inte krediteras två gånger, till exempel när någon uppdaterar sin sida för inköpsbekräftelse. Själva ID:t kan knyta köpet till en rad i din egen databas där köpet registreras. I de flesta fall är det inte nödvändigt att ta bort detta ID, så det tas inte bort som standard.<p>Om du fortfarande kan knyta köpet till en användare efter att ha tagit bort din egen begäran om datasekretess, kan du behöva ta bort det här fältet, så att analysdata för den här besökaren inte kan knytas tillbaka till köparen. |
 | Besökar-ID | Värdet är ett 128-bitars heltal och ersätts med ett kryptografiskt starkt 128-bitars pseudoslumpmässigt värde. |
 | <ul><li>MCID</li><li>Anpassat besökar-ID</li><li>IP-adress</li><li>IP-adress 2 | Värdet rensas (anges till antingen den tomma strängen eller 0 beroende på variabeltypen). |

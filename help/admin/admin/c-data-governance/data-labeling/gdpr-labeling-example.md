@@ -4,10 +4,10 @@ title: Exempel på etiketter
 feature: Data Governance
 role: Admin
 exl-id: 9bea8636-c79c-4998-8952-7c66d31226e3
-source-git-commit: 429aaa43fdae669350bdb5a5a54a7d4b9b1c65f2
+source-git-commit: 48f1974a0c379a4e619d9a04ae80e43cce9527c1
 workflow-type: tm+mt
-source-wordcount: '862'
-ht-degree: 54%
+source-wordcount: '932'
+ht-degree: 46%
 
 ---
 
@@ -35,12 +35,14 @@ Anta att du har följande träffdata:
 
 ## Exempel på åtkomstbegäran {#access}
 
-Om jag skickar en åtkomstbegäran innehåller den sammanfattande filen de värden som anges i tabellen nedan. En begäran kan bara returnera en enhetsfil, endast en personfil eller en av varje fil. Två sammanfattningsfiler returneras bara om ett person-ID används och expandIds är Sant.
+Om du skickar in en begäran om åtkomst får du två filer som du kan returnera till den registrerade. En fil är en CSV-fil som innehåller en rad för varje träff som tagits emot för den registrerade och en kolumn för varje variabel med lämplig åtkomstetikett. Den andra filen är en sammanfattande HTML-fil som listar varje variabel, följt av alla unika värden som ses för variabeln för den registrerade och antalet gånger som varje unikt värde sågs.
+
+Sammanfattningsfilen innehåller till exempel värdena som anges i tabellen nedan. En begäran kan bara returnera en enhetsfil, endast en personfil eller en av varje fil. Två sammanfattningsfiler returneras bara om ett person-ID används och `expandIds` är sant.
 
 <table>
   <tr>
     <th colspan="2" style="text-align:center">API-värden</th>
-    <th rowspan="2">Returnerad<br>Filtyp</th>
+    <th rowspan="2">Sammanfattning<br/>filtyp<br/>returnerade</th>
     <th colspan="5" style="text-align:center">Data i sammanfattad åtkomstfil</th>
   </tr>
   <tr>
@@ -140,7 +142,7 @@ Om jag skickar en åtkomstbegäran innehåller den sammanfattande filen de värd
   </tr>
 </table>
 
-Observera att inställningen för expandID:n inte spelar någon roll för utdata när ett cookie-ID används.
+Observera att inställningen för `expandIDs` spelar ingen roll för utdata när ett cookie-ID används.
 
 ## Ta bort exempelbegäranden {#delete}
 
@@ -217,7 +219,7 @@ Om en borttagningsbegäran använder API-värdena i den första raden i tabellen
 
 >[!NOTE]
 >
->Endast celler på rader som innehåller AID = 77 och en DEL-DEVICE-etikett påverkas.
+>Endast kolumner på rader som innehåller `AAID=77` och `DEL-DEVICE` etiketten påverkas.
 
 <table>
   <tr>
@@ -290,7 +292,7 @@ Om en borttagningsbegäran använder API-värdena i den första raden i tabellen
 
 >[!NOTE]
 >
->Endast celler på rader som innehåller user=Mary och etiketten DEL-PERSON påverkas. I praktiken är variabeln som innehåller A_ID antagligen en prop eller en eVar. Dess ersättningsvärde skulle vara en sträng som börjar med&quot;Sekretess-&quot;, följt av ett slumpmässigt tal (GUID), i stället för att ersätta det numeriska värdet med ett annat slumpmässigt numeriskt värde.
+>Endast kolumnrader som innehåller `user=Mary` och `DEL-PERSON` etiketten påverkas. I praktiken innehåller variabeln `A_ID` är antagligen en propp eller en eVar. Dess ersättningsvärde skulle vara en sträng som börjar med `Privacy-`, följt av ett slumpmässigt tal (GUID) i stället för att ersätta det numeriska värdet med ett annat slumpmässigt numeriskt värde.
 
 <table>
   <tr>

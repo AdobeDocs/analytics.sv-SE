@@ -4,10 +4,10 @@ title: Namnutrymmen
 feature: Data Governance
 role: Admin
 exl-id: 421572c2-2789-48bc-b530-d48216799724
-source-git-commit: 429aaa43fdae669350bdb5a5a54a7d4b9b1c65f2
+source-git-commit: 79f650a7168e0cc44194445f3164a3f981e39a91
 workflow-type: tm+mt
-source-wordcount: '881'
-ht-degree: 83%
+source-wordcount: '896'
+ht-degree: 80%
 
 ---
 
@@ -21,17 +21,17 @@ Namnutrymmessträngen används för att identifiera de fält som du vill söka i
 * Ett typfält som för de flesta Adobe Analytics-begäranden innehåller värdet ”analytics”.
 * Ett värdefält som innehåller det ID som Analytics ska söka efter i de associerade namnutrymmesvariablerna från var och en av rapportsviterna.
 
-Mer information finns i dokumentationen [API för Experience Cloud-datasekretess](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html).
+Se [API-dokumentation för dataskydd i Experience Cloud](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html) för mer information och en [lista med vanliga ID-namnutrymmen](https://experienceleague.adobe.com/en/docs/experience-platform/privacy/api/appendix#standard-namespaces). Se [Skapa ett åtkomst-/borttagningsjobb](https://experienceleague.adobe.com/en/docs/experience-platform/privacy/api/privacy-jobs#access-delete) för en exempelbegäran.
 
 ## Cookie-ID
 
 Cookie för spårning av äldre analyser, även känt som Adobe Analytics ID (AAID):
 
-```
+```json
 {
-   namespace: "AAID",
-   type: "standard",
-   value: "2CCEEAE88503384F-1188000089CA"
+   "namespace": "AAID",
+   "type": "standard",
+   "value": "2CCEEAE88503384F-1188000089CA"
 }
 ```
 
@@ -41,25 +41,23 @@ Det går också att använda `"namespaceId": 10` istället för, eller som till�
 
 ## Spårningscookie för äldre analyser: borttagen form
 
-```
+```json
 {
-   "namespace": "visitorId",
-   "type": "analytics",
+   "namespace": "visitorId",
+   "type": "analytics",
    "value": "2cceeae88503384f-00001188000089ca"
 }
 ```
-
-Inaktuellt formulär:
 
 Värdet ska anges som två 16-siffriga hexadecimala tal eller som två 19-siffriga decimaltal. Siffrorna ska separeras med ett bindestreck, understreck eller kolon. Nollor med inledande nolla ska läggas till om någon av dem inte har tillräckligt många siffror.
 
 ## Identitetstjänstens cookie
 
-```
+```json
 {
-    namespace: "ECID",
-    type: "standard",
-    value: "00497781304058976192356650736267671594"
+   "namespace": "ECID",
+   "type": "standard",
+   "value": "00497781304058976192356650736267671594"
 }
 ```
 
@@ -81,11 +79,11 @@ JavaScript-koden fyller i JSON med andra nyckel-/värdepar utöver de som anges 
 
 ## Anpassat besökar-ID
 
-```
+```json
 {
-     namespace: "customVisitorID",
-     type: "analytics",
-     value: "<ID>"
+    "namespace": "customVisitorID",
+    "type": "analytics",
+    "value": "<ID>"
 }
 ```
 
@@ -93,15 +91,16 @@ Namnutrymmet är också fördefinierat för det anpassade besökar-ID:t.
 
 ## ID:n i anpassade variabler
 
-```
+```json
 {
-    namespace: "Email Address",
-    type: "analytics", 
-    value: "john@xyz.com" }, 
+"namespace":"Email Address",
+"type": "analytics", 
+"value": "john@xyz.com" 
+}, 
 {
-    namespace: "CRM ID", 
-    type: "analytics", 
-    value: "123456-ABCD" 
+    "namespace": "CRM ID", 
+    "type": "analytics",
+    "value": "123456-ABCD" 
 }
 ```
 
@@ -115,6 +114,6 @@ Du kan också se namnutrymmen som du tidigare har definierat för andra variable
 
 >[!CAUTION]
 >
->Namnutrymmena&quot;visitorId&quot; och&quot;customVisitorId&quot; är reserverade för att identifiera den äldre Analytics-spårningscookien och Analytics-kundens besökar-ID. Använd inte dessa namnutrymmen för anpassade trafikvariabler och konverteringsvariabler.
+>Namnutrymmen `visitorId` och `customVisitorId` är reserverade för att identifiera den gamla Analytics-cookien för spårning och Analytics-kundens besökar-ID. Använd inte dessa namnutrymmen för anpassade trafikvariabler och konverteringsvariabler.
 
 Mer information finns i [Ange ett namnutrymme när du anger en variabel som ID-DEVICE eller ID-PERSON.](/help/admin/admin/c-data-governance/data-labeling/gdpr-labels.md)

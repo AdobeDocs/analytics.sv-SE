@@ -4,10 +4,10 @@ title: Bästa praxis för etikettering
 feature: Data Governance
 role: Admin
 exl-id: 00da58b0-d613-4caa-b9c1-421b1b541f47
-source-git-commit: 429aaa43fdae669350bdb5a5a54a7d4b9b1c65f2
+source-git-commit: 0fd0fad17cf6dcaa042e53d86dfabc5792a065b6
 workflow-type: tm+mt
-source-wordcount: '2676'
-ht-degree: 78%
+source-wordcount: '2692'
+ht-degree: 75%
 
 ---
 
@@ -103,15 +103,15 @@ Borttagningsetiketterna DEL-DEVICE och DEL-PERSON ska användas sparsamt. När d
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Endast enhets-ID </p> </td> 
-   <td colname="col2"> <p>Om de enda ID:n du använder är cookie ID:n eller de med ID-DEVICE-etikett, ska du bara använda ACC-ALL-etiketten. </p> <p>Du får ett par filer för varje åtkomstbegäran, en som innehåller en rad för varje matchande träff med alla angivna ACC-ALL-fält och den andra som innehåller en sammanfattning av dessa data. </p> </td> 
+   <td colname="col2"> <p>Om de enda ID:n du använder är cookie ID:n eller de med ID-DEVICE-etikett, ska du bara använda ACC-ALL-etiketten. </p> <p>Du får ett par filer för varje åtkomstbegäran: en fil som innehåller en rad för varje matchande träff med alla angivna ACC-ALL-fält och en sammanfattningsfil som innehåller en sammanfattning av dessa data. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Person-ID:n utan ID-expansion </p> </td> 
-   <td colname="col2"> <p>Om du bara använder anpassade ID:n som har ID-PERSON-etiketten och inte gör ID-expansion ska du använda ACC-PERSON-etiketter. Men du behöver inte ändra standardetiketterna för ACC-ALL. Dessa fält inkluderas automatiskt i åtkomstbegäran. </p> <p>Du får ett par filer för varje åtkomstbegäran: en som innehåller en rad för varje matchande träff med alla angivna fält för ACC-DEVICE och ACC-PERSON och en andra som innehåller en sammanfattning av dessa data. </p> </td> 
+   <td colname="col2"> <p>Om du bara använder anpassade ID:n som har ID-PERSON-etiketten och inte gör ID-expansion ska du använda ACC-PERSON-etiketter. Men du behöver inte ändra standardetiketterna för ACC-ALL. Dessa fält inkluderas automatiskt i åtkomstbegäran. </p> <p>Du får ett par filer för varje åtkomstbegäran: en fil som innehåller en rad för varje matchande träff med alla angivna fält för ACC-DEVICE och ACC-PERSON samt en sammanfattningsfil som innehåller en sammanfattning av dessa data. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Blandade ID:n och/eller ID-expansion </p> </td> 
-   <td colname="col2"> <p>Om du inkluderar både enhets- och person-ID:n i begäranden om datasekretess, eller om du använder anpassade ID:n (anpassade besökar-ID:n eller ID:n i en prop eller eVar), måste du vara uppmärksam på de ACC-etiketter som du använder. Varje åtkomstbegäran returnerar två par datafiler, ett par som innehåller data från träffar som innehöll ett matchande person-ID och det andra innehållande data från träffar som inte matchade ett person-ID, men som matchade ett enhets-ID. </p> <p>”person-ID”-filerna innehåller data om alla träffar som matchade person-ID:n med alla fält som har antingen en ACC-PERSON- eller ACC-ALL-etikett (en fil med alla matchade träffar och den andra som en sammanfattning). </p> <p>Filparet ”enhets-ID” innehåller bara fält som har en ACC-ALL-etikett och bara träffar som inte innehöll något matchande person-ID. Dessa filer kan innehålla data som har genererats av andra användare av en delad enhet, så du bör noga tänka på den uppsättning fält som innehåller etiketten ACC-ALL. Standardetiketten i Analytics använder bara den här etiketten för generiska informationsfält som hör till enheten (enhetstyp, operativsystem, webbläsare, o.s.v.) plus datum/tid för varje träff. </p> <p>Du kan välja att ta emot både uppsättningar av enhets- och personfiler från Adobe och sedan bara dela personfilerna, så att du inte delar data som kan ha genererats av andra användare av en delad enhet. Eller så kanske du vill kombinera data från en eller båda uppsättningar med annan information som du känner till om den registrerade och returnera den i ditt eget format. </p> </td> 
+   <td colname="col2"> <p>Om du inkluderar både enhets- och person-ID:n i begäranden om datasekretess, eller om du använder anpassade ID:n (anpassade besökar-ID:n eller ID:n i en prop eller eVar), måste du vara uppmärksam på de ACC-etiketter som du använder. Varje åtkomstbegäran returnerar två par datafiler. <p>Ett par filer som innehåller en fil med data från träffar som innehöll ett matchande person-ID och en annan fil som innehåller data från träffar som inte matchade ett person-ID, men som matchade ett enhets-ID. </p> <p>De andra två filerna ("person-ID") innehåller data om alla träffar som matchade person-ID:n med alla fält som har antingen en ACC-PERSON- eller ACC-ALL-etikett. En fil med alla matchade träffar och en annan sammanfattningsfil med en sammanfattning av dessa data. </p> <p>Filparet ”enhets-ID” innehåller bara fält som har en ACC-ALL-etikett och bara träffar som inte innehöll något matchande person-ID. Dessa filer kan innehålla data som har genererats av andra användare av en delad enhet, så du bör noga tänka på den uppsättning fält som innehåller etiketten ACC-ALL. Standardetiketten i Analytics använder bara den här etiketten för generiska informationsfält som hör till enheten (enhetstyp, operativsystem, webbläsare, o.s.v.) plus datum/tid för varje träff. </p> <p>Du kan välja att ta emot både uppsättningar av enhets- och personfiler från Adobe och sedan bara dela personfilerna, så att du inte delar data som kan ha genererats av andra användare av en delad enhet. Eller så kanske du vill kombinera data från en eller båda uppsättningar med annan information som du känner till om den registrerade och returnera den i ditt eget format. </p> </td> 
   </tr> 
  </tbody> 
 </table>
