@@ -4,7 +4,7 @@ description: Se över implementeringen var sjätte månad för att säkerställa
 feature: Implementation Basics
 exl-id: 235fc86e-e1b0-4b1a-a270-0dfba457a832
 role: Admin, Leader
-source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
+source-git-commit: 4cbc654b6a17a84b373c254a0dd0e44a1740872d
 workflow-type: tm+mt
 source-wordcount: '385'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Träffa företagsägaren och/eller analytikerna för att se hur verksamhetens be
 Granska kortfattat alla mätvärden och variabler, i den ordning de är viktiga för företaget, för att säkerställa att data samlas in på rätt sätt. Börja med era viktigaste mätvärden och variabler - de som är kopplade till er [de 5 främsta KPI:erna](https://experienceleague.adobe.com/docs/analytics/implementation/review/define-kpis.html#review). Så här gör du:
 
 * Skapa instrumentpaneler för att se månatliga trender över mätvärden och variabler (eller konfigurera [intelligenta aviseringar](https://experienceleague.adobe.com/docs/analytics/components/alerts/intellligent-alerts.html) för var och en av dem) för att säkerställa att ni får de data ni förväntar er och att data är korrekta. Om du hittar avvikelser bör du undersöka datalagret, tagghanteringsreglerna och bearbetningsreglerna för att ta reda på varför.
-* Kör om [Kontrollpanel för analyshälsa](https://assets.adobe.com/public/9549dbe7-765a-4899-77b8-85cbba1a4252) för att övervaka breda trender för mätvärden och variabler.
+* Kör om [Kontrollpanel för analyshälsa](https://assets.adobe.com/public/8ff304bb-18e0-434b-54d1-39199422ba1c) för att övervaka breda trender för mätvärden och variabler.
 
 Tillåt inte implementeringen att bli fullödig med mätvärden och variabler som du inte behöver. Inaktivera mått eller variabler som företaget inte längre behöver eller använder. Du kanske vill ta bort eller återanvända dem senare.
 
