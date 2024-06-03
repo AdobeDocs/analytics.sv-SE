@@ -3,16 +3,16 @@ title: Genomsnittlig tid på plats
 description: Genomsnittlig tid mellan träffar för en given dimensionsartikel.
 feature: Metrics
 exl-id: bf9056e2-4f6d-4c4f-b641-d3146ce269ff
-source-git-commit: d095628e94a45221815b1d08e35132de09f5ed8f
+source-git-commit: 9e140a6be5ab151d7a4e88e317c59eafea4d6e1d
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '558'
 ht-degree: 0%
 
 ---
 
 # Genomsnittlig tid på plats
 
-Genomsnittlig tid på plats [mått](overview.md) visa den tid som passerat mellan träffar för en given dimensionsuppgift. Det här måttet är användbart när du vill se den genomsnittliga tiden för specifika dimensionsobjekt. Du kan också trender för detta mätresultat över tiden för att se hur den totala tiden som används ändras. Det här måttet visas i `HH:MM:SS` format.
+Genomsnittlig tid på plats [mått](overview.md) visar den tid som passerat mellan träffar för en given dimensionsuppgift. Det här måttet är användbart när du vill se den genomsnittliga tiden för specifika dimensionsobjekt. Du kan också trender för detta mätresultat över tiden för att se hur den totala tiden som används ändras. Det här måttet visas i `HH:MM:SS` format.
 
 Detta mått är relaterat till [Tid per besök](../dimensions/time-spent-per-visit.md) dimension.
 
@@ -74,13 +74,13 @@ Beräknar genomsnittlig tid på plats för dimensionsposten `Home` använder fö
 Om du tillämpade en nedbrytning med [Platsavsnitt](../dimensions/site-section.md) -dimensionen skulle den använda följande beräkning:
 
 ```text
-(30 + 10) / 1 = 40 seconds average time on site
+(30 + 100 + 10) / 1 = 140 seconds (2 minutes 20 seconds) average time on site
 ```
 
 Eftersom det fanns en enda sekvens i uppdelningsdimensionen används en annan nämnare än dess överordnade dimension. Dessa mätvärden ger vanligtvis liknande resultat på besöksnivå, men kan vara annorlunda på en träffnivå.
 
 ## Procent över 100 %
 
-Det här måttet innehåller ofta procenttal över 100 %. Nämnaren är hela dimensionens genomsnittliga tid på platsen, och täljaren är dimensionsobjektets genomsnittliga tid på platsen. Om hela dimensionens genomsnittliga tid på platsen är lägre än en given dimensionsposts genomsnittliga tid på platsen, visas procentsatser över 100 %. Sortering av rankade rapporter efter det här måttet visar en onormal genomsnittlig tid på webbplatsvärden, vilket vanligtvis inte är värdefullt. Adobe rekommenderar sortering med ett annat mått, som [Besök](visits.md), i rankade rapporter.
+Det här måttet innehåller ofta procenttal över 100 %. Nämnaren är hela dimensionens genomsnittliga tid på platsen, och täljaren är dimensionsobjektets genomsnittliga tid på platsen. Om hela dimensionens genomsnittliga tid på platsen är lägre än en given dimensionsobjekts genomsnittliga tid på platsen, visas procentsatser över 100 %. Sortering av rankade rapporter efter det här måttet visar en onormal genomsnittlig tid på webbplatsvärden, vilket vanligtvis inte är värdefullt. Adobe rekommenderar sortering med ett annat mått, som [Besök](visits.md), i rankade rapporter.
 
 Se [Tidsåtgång - översikt](time-spent.md) om du vill ha mer allmän information om hur länge du har tillbringat.
