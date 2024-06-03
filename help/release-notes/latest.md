@@ -3,16 +3,16 @@ title: Aktuella versionsinformation för Adobe Analytics
 description: Visa den aktuella versionsinformationen för Adobe Analytics
 feature: Release Notes
 exl-id: 97d16d5c-a8b3-48f3-8acb-96033cc691dc
-source-git-commit: 47893ea714f0a0baaccce66578c9f9175c59511f
+source-git-commit: 258ef488f5bcf2ea2057ad3da605679f9e3438b6
 workflow-type: tm+mt
-source-wordcount: '1144'
+source-wordcount: '1145'
 ht-degree: 1%
 
 ---
 
 # Aktuell versionsinformation för Adobe Analytics (maj 2024)
 
-**Senaste uppdatering**: 22 maj 2024
+**Senaste uppdatering**: 3 juni 2024
 
 Versionsanteckningarna gäller releaseserien 15 maj 2024 till juni. Adobe Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.md) vilket ger en mer skalbar, stegvis metod för driftsättning av funktioner. Därför uppdateras versionsinformationen flera gånger i månaden. Kontrollera dem regelbundet.
 
@@ -27,7 +27,7 @@ Versionsanteckningarna gäller releaseserien 15 maj 2024 till juni. Adobe Analyt
 | **Ökning av standardtröskelvärden för låg trafik** | I **mitten av april 2024** kommer Adobe att börja öka standardrapporteringsprogrammets lågtrafiktrösklar enligt följande: ![lågtrafiktrösklar](assets/thresholds.png) Detta påverkar endast variabler som för närvarande ligger under de nya tröskelvärdena. Dessa ändringar kommer att göras stegvis, och vi förväntar oss att arbetet ska vara slutfört av **slutet av maj**. När dessa ökningar introduceras kan du märka förändringar för variabler med hög kardinalitet:<ul><li>Fler dimensionsvärden kan vara tillgängliga för rapportering.</li><li>Segment och beräknade värden kan innehålla mer data.</li><li>Virtuella rapportsviter baserade på segment kan innehålla mer data.</li><li>Export av klassificeringar kan innehålla mer data.</li></ul> | Mid April, 2024 | 31 maj 2024 |
 | **Administratörsinställningar för att styra konton och platser som används för export och import** | Den nya fliken Administratörsinställningar i Platshanteraren ger administratörer kontroll över om användare kan skapa och redigera konton och platser. De här inställningarna gäller när användare konfigurerar molnimport- och exportkonton och konfigurerar platser för molnimport och -export. <p>Administratörer kan också begränsa vilka typer av konton (Google Cloud Platform, Azure RBAC, Amazon S3 och så vidare) som användare kan skapa och använda.</p><p>Tidigare kunde alla användare skapa, redigera och använda konton och platser för alla typer av konton.</p><p>(Länk till uppdaterad dokumentation följer)</p> | 12 juni 2024 | 30 juni 2024 |
 | **Dela konton och platser som används för export och import** | Användarna kan nu göra de konton och platser de skapar tillgängliga för alla användare i organisationen. Endast konto- och platsägare och systemadministratörer kan redigera och ta bort konton och platser.<p>Tidigare kunde konton och platser bara användas av den användare som skapade dem.</p><p>De här inställningarna är tillgängliga när användare konfigurerar molnimport- och exportkonton och konfigurerar platser för molnimport och -export. </p> <p>(Länk till uppdaterad dokumentation följer)</p> | 12 juni 2024 | 30 juni 2024 |
-| **Activity Map för att använda färre serveranrop för Web SDK** | För närvarande räknas länkarhändelser i Activity Map som sina egna händelser och medför extra kostnader. Den här förbättringen tar några länkhändelser och paketerar dem i nästa träff, ungefär som hur händelser hanteras av AppMeasurementet. <p>(Länk till uppdaterad dokumentation följer)</p> | Beta börjar 31 maj 2024 | TBD |
+| **Activity Map för att använda färre serveranrop för Web SDK** | För närvarande räknas länkarhändelser i Activity Map som sina egna händelser och medför extra kostnader. Den här förbättringen tar några länkhändelser och paketerar dem i nästa träff, ungefär som hur händelser hanteras av AppMeasurementet. <p>(Länk till uppdaterad dokumentation följer)</p> | Open Beta börjar 19 juni 2024 | TBD |
 
 {style="table-layout:auto"}
 
