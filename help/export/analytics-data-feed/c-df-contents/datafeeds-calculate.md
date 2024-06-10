@@ -1,12 +1,12 @@
 ---
 description: Beskriver hur man beräknar vanliga mätvärden med hjälp av dataflöden.
 keywords: Datafeed;jobb;mått;förkolumn;efterkolumn;bots;datumfiltrering;händelsesträng;vanliga;formler
-title: Beräkna mätvärden
+title: Beräkna mått
 feature: Data Feeds
 exl-id: f9b0d637-7a6e-416a-adff-3c7e533bfac7
-source-git-commit: ce71de7cdcde722fcfbc9ff04d22e5770c89e33d
+source-git-commit: 4bd46fd5a9b98bcca67a66c87c9bca67fa00061a
 workflow-type: tm+mt
-source-wordcount: '457'
+source-wordcount: '467'
 ht-degree: 0%
 
 ---
@@ -23,14 +23,18 @@ Beskriver hur man beräknar vanliga mätvärden med hjälp av dataflöden.
 
 1. Räkna antalet rader där ett värde finns `post_pagename` eller `post_page_url`.
 
+## Förekomster
+
+1. Räkna det totala antalet rader.
+
 ## Besök
 
 1. Sammanfoga `post_visid_high`, `post_visid_low`, `visit_num`och `visit_start_time_gmt`.
 1. Räkna det unika antalet värden.
 
->[!NOTE]
+>[!TIP]
 >
->Internet-oegentligheter, systemoegentligheter eller användning av anpassade besökar-ID:n kan sällan använda samma `visit_num` värden för olika besök. Använd `visit_start_time_gmt` vid inventering av besök för att säkerställa att dessa besök räknas.
+>Internet-oegentligheter, systemoegentligheter eller användning av anpassade besökar-ID:n kan sällan använda samma `visit_num` värden för olika besök. Om du vill kan du använda `visit_start_time_gmt` vid inventering av besök för att säkerställa att dessa besök räknas.
 
 ## Besökare
 
@@ -41,10 +45,10 @@ Alla metoder som Adobe använder för att identifiera unika besökare (anpassat 
 
 ## Anpassade länkar, nedladdningslänkar och avslutande länkar
 
-1. Räkna antalet rader där:
+1. Antal rader där:
    * `post_page_event = 100` för anpassade länkar
    * `post_page_event = 101` för nedladdningslänkar
-   * `post_page_event = 102` för slutlänkar
+   * `post_page_event = 102` för avslutningslänkar
 
 ## Anpassade händelser
 
@@ -52,9 +56,9 @@ Alla mått räknas i `post_event_list` kolumn som kommaavgränsade heltal. Anvä
 
 1. Antal gånger som värdet för händelsesökning visas i `post_event_list`.
 
-## Tid
+## Tidsåtgång
 
-Träffarna måste först grupperas efter besök och sedan sorteras efter träffnumret på besöket.
+Träffarna måste först grupperas efter besök och sedan beställas enligt träffnumret.
 
 1. Sammanfoga `post_visid_high`, `post_visid_low`, `visit_num`och `visit_start_time_gmt`.
 2. Sortera efter det här sammanfogade värdet och tillämpa sedan en andra sortering efter `visit_page_num`.
@@ -67,7 +71,7 @@ Om en träff `currency` värdet matchar inte rapportsvitens valuta, det konverte
 
 1. Uteslut alla rader där `duplicate_purchase = 1`.
 2. Inkludera endast rader där `event_list` innehåller köphändelsen.
-3. Tolka `post_product_list` kolumn för att extrahera alla prisdata. The `post_product_list` kolumnen är formaterad på samma sätt som `s.products` variabel.
+3. Tolka `post_product_list` kolumn för att extrahera alla prisdata. The `post_product_list` kolumnen har samma format som `s.products` variabel.
 4. Beräkna det önskade måttet:
    * Räkna antalet rader för att beräkna order
    * Summa antalet `quantity` i produktsträngen för att beräkna enheter

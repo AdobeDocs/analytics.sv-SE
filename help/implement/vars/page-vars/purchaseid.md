@@ -4,9 +4,9 @@ description: Deduplicera träffar baserat på en unik inköpsidentifierare.
 feature: Variables
 exl-id: 7a4d7f08-65ae-4541-a94e-cc6c445c01db
 role: Admin, Developer
-source-git-commit: 5ef92db2f5edb5fded497dddedd56abd49d8a019
+source-git-commit: 4bd46fd5a9b98bcca67a66c87c9bca67fa00061a
 workflow-type: tm+mt
-source-wordcount: '280'
+source-wordcount: '348'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,16 @@ Inköps-ID är mappat till följande variabler:
 
 ## Inköps-ID med Adobe Analytics-tillägget
 
-Det finns inget dedikerat fält i Adobe Analytics-tillägget som kan använda den här variabeln. Använd den anpassade kodredigeraren enligt AppMeasurementen syntax.
+Du kan ange inköps-ID när du konfigurerar Analytics-tillägget (globala variabler) eller enligt regler.
+
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+2. Klicka på den önskade taggegenskapen.
+3. Gå till [!UICONTROL Rules] och sedan klicka på önskad regel (eller skapa en regel).
+4. Under [!UICONTROL Actions]klickar du på en befintlig [!UICONTROL Adobe Analytics - Set Variables] eller klicka på +-ikonen.
+5. Ange [!UICONTROL Extension] nedrullningsbar lista till Adobe Analytics och [!UICONTROL Action Type] till [!UICONTROL Set Variables].
+6. Leta reda på [!UICONTROL Purchase ID] -avsnitt.
+
+Du kan ange ett inköps-ID till ett värde eller ett dataelement. Du kan också kopiera värdet från en annan Analytics-variabel.
 
 ## s.purchaseID i AppMeasurementet och den anpassade kodredigeraren för Analytics-tillägget
 

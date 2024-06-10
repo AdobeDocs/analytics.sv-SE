@@ -4,9 +4,9 @@ description: Visa vilka XDM-fält som Edge automatiskt mappar till analysvariabl
 exl-id: fbff5c38-0f04-4780-b976-023e207023c6
 feature: Implementation Basics
 role: Admin, Developer
-source-git-commit: 95c79a3085f87cbc1e28f14993f56feb4582a081
+source-git-commit: 4bd46fd5a9b98bcca67a66c87c9bca67fa00061a
 workflow-type: tm+mt
-source-wordcount: '1418'
+source-wordcount: '1406'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,6 @@ Tidigare uppdateringar av tabellen finns på den här sidans [implementeringshis
 | --- | --- |
 | `xdm.application.isClose` | Hjälper till att definiera den mobila livscykelns mått [Krascher](https://developer.adobe.com/client-sdks/documentation/mobile-core/lifecycle/metrics/). |
 | `xdm.application.isInstall` | Hjälper till att avgöra när den mobila livscykelns mått ska höjas [Första starten](https://developer.adobe.com/client-sdks/documentation/mobile-core/lifecycle/metrics/). |
-| `xdm.application.isLaunch` | Hjälper till att avgöra när den mobila livscykelns mått ska höjas [Första starten](https://developer.adobe.com/client-sdks/documentation/mobile-core/lifecycle/metrics/). |
 | `xdm.application.closeType` | Avgör om en close-händelse är en krasch eller inte. Giltiga värden är `close` (En livscykelsession avslutas och en pause-händelse togs emot för föregående session) och `unknown` (En livscykelsession avslutas utan en pause-händelse). Hjälper till att ställa in mätvärden för mobilens livscykel [Krascher](https://developer.adobe.com/client-sdks/documentation/mobile-core/lifecycle/metrics/) mätvärden. |
 | `xdm.application.isInstall` | Den mobila livscykelns mått [Installationer](https://developer.adobe.com/client-sdks/documentation/mobile-core/lifecycle/metrics/). |
 | `xdm.application.isLaunch` | Den mobila livscykelns mått [Startar](https://developer.adobe.com/client-sdks/documentation/mobile-core/lifecycle/metrics/). |
