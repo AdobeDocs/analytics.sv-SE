@@ -3,7 +3,7 @@ title: Referenstyp
 description: Vilken typ av referent det är, beroende på varifrån besökaren kom.
 feature: Dimensions
 exl-id: a6cfcbf4-cd08-4e7f-8e86-47488ceb0ea3
-source-git-commit: d095628e94a45221815b1d08e35132de09f5ed8f
+source-git-commit: 375948a8a1d638ab4331b2437462c43c73ddfd6a
 workflow-type: tm+mt
 source-wordcount: '423'
 ht-degree: 0%
@@ -184,6 +184,7 @@ Följande lista refererar till uppslagstabellen&quot;Sociala nätverk&quot; som 
 * `weourfamily.com`
 * `wer-kennt-wen.de`
 * `wordpress.com`
+* `x.com`
 * `xanga.com`
 * `xing.com`
 * `yammer.com`
