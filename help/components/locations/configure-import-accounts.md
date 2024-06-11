@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: Konfigurera molnimport- och exportkonton
 feature: Classifications
 exl-id: 40d3d3f1-1047-4c37-8caf-6b0aabaa590a
-source-git-commit: 66c846dd64ee3ed8f421c834ab82b53b1f0f00a5
+source-git-commit: 82c6d1e6d748a9b52b5988af5abb78d2c27ca077
 workflow-type: tm+mt
-source-wordcount: '1204'
+source-wordcount: '1512'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,10 @@ ht-degree: 0%
 # Konfigurera molnimport- och exportkonton
 
 <!-- This page is almost duplicated with the "Configure cloud export locations" article in CJA. Differences are that Snowflake isn't supported here and there is a Suffix field for each account type. -->
+
+>[!NOTE]
+>
+>Tänk på följande när du skapar och redigerar konton: <ul><li>Systemadministratörer kan hindra användare från att skapa konton, vilket beskrivs i [Konfigurera om användare kan skapa konton](/help/components/locations/locations-manager.md#configure-whether-users-can-create-accounts). Kontakta systemadministratören om du inte kan skapa konton enligt beskrivningen i det här avsnittet.</li><li>Ett konto kan bara redigeras av den användare som skapade det eller av en systemadministratör.</li></ul>
 
 Du kan konfigurera ett molnkonto som används för något eller alla av följande syften:
 
@@ -23,17 +27,25 @@ Du kan konfigurera ett molnkonto som används för något eller alla av följand
 
 Du måste konfigurera Adobe Analytics med den information som krävs för att komma åt ditt molnkonto. Den här processen består av att lägga till och konfigurera kontot (till exempel Amazon S3 Role ARN, Google Cloud Platform o.s.v.) enligt beskrivningen i den här artikeln, och sedan lägga till och konfigurera platsen inom det kontot (till exempel en mapp inom kontot) enligt beskrivningen i [Konfigurera platser för molnimport och -export](/help/components/locations/configure-import-locations.md).
 
-Mer information om hur du hanterar befintliga konton, inklusive visning, redigering och borttagning av konton, finns i [Platshanteraren](/help/components/locations/locations-manager.md).
+Mer information om hur du visar och tar bort befintliga konton finns i [Platshanteraren](/help/components/locations/locations-manager.md).
 
 Så här konfigurerar du ett molnimport- eller exportkonto:
 
 1. I Adobe Analytics: [!UICONTROL **Komponenter**] > [!UICONTROL **Platser**].
 1. På [!UICONTROL Locations] väljer du [!UICONTROL **Platskonton**] -fliken.
-1. Välj [!UICONTROL **Lägg till konto**].
+1. (Villkorligt) Om du är systemadministratör kan du aktivera [!UICONTROL **Visa konton för alla användare**] för att visa konton som har skapats av alla användare i organisationen.
+   ![visa konton för alla användare](assets/accounts-all-users.png)
+1. Om du vill skapa ett nytt konto väljer du [!UICONTROL **Lägg till konto**].
 
-   Dialogrutan Lägg till konto visas.
+   The [!UICONTROL **Information om platskonto**] visas.
 
-1. Ange följande information: |Fält | Funktion | |—|—| | [!UICONTROL **Platskontonamn**] | Namnet på platskontot. Det här namnet visas när du skapar en plats | | [!UICONTROL **Beskrivning av platskonto**] | Ange en kort beskrivning av kontot för att hjälpa till att skilja det från andra konton av samma kontotyp. | | [!UICONTROL **Kontotyp**] | Välj typ av molnkonto. Vi rekommenderar att du har ett enda konto för varje kontotyp, med flera platser efter behov inom det kontot. |
+   eller
+
+   Om du vill redigera ett befintligt konto letar du reda på det konto du vill redigera och väljer sedan [!UICONTROL **Redigera information**] -knappen.
+
+   The [!UICONTROL **Lägg till konto**] visas.
+
+1. Ange följande information: |Fält | Funktion | |—|—| | [!UICONTROL **Platskontonamn**] | Namnet på platskontot. Det här namnet visas när du skapar en plats | | [!UICONTROL **Beskrivning av platskonto**] | Ange en kort beskrivning av kontot för att hjälpa till att skilja det från andra konton av samma kontotyp. | | [!UICONTROL **Gör kontot tillgängligt för alla användare i organisationen**] | **Obs!** Den här funktionen är i den begränsade testfasen och är kanske inte tillgänglig än i din miljö. Den här anteckningen tas bort när funktionen är allmänt tillgänglig. Mer information om Analytics-processen finns i [Adobe Analytics funktionsreleaser](/help/release-notes/releases.md). <p>Aktivera det här alternativet om du vill tillåta andra användare i organisationen att använda kontot.</p> <p>Tänk på följande när du delar konton:</p><ul><li>Konton som du delar kan inte tas bort.</li><li>Delade konton kan bara redigeras av kontoägaren.</li><li>Vem som helst kan skapa en plats för det delade kontot.</li></ul> | | [!UICONTROL **Kontotyp**] | Välj typ av molnkonto. Vi rekommenderar att du har ett enda konto för varje kontotyp, med flera platser efter behov inom det kontot.<p>Systemadministratörer kan begränsa vilka kontotyper som användare kan skapa enligt beskrivningen i [Konfigurera om användare kan skapa konton](/help/components/locations/locations-manager.md#configure-whether-users-can-create-accounts). Kontakta systemadministratören om du inte kan skapa konton enligt beskrivningen i det här avsnittet.</p> |
 1. I [!UICONTROL **Kontoegenskaper**] anger du information som är specifik för den kontotyp som du har valt.
 
    Utöka det avsnitt nedan som motsvarar [!UICONTROL **Kontotyp**] som du valde. (Ytterligare äldre kontotyper är också tillgängliga, men rekommenderas inte.)
@@ -89,6 +101,22 @@ Så här konfigurerar du ett molnimport- eller exportkonto:
    | [!UICONTROL **Program-ID**] | Kopiera det här ID:t från det Azure-program som du skapade. I Microsoft Azure finns den här informationen på **Ökning** -fliken i programmet. Mer information finns i [Microsoft Azure-dokumentation om hur du registrerar ett program med Microsoft identitetsplattform](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app). |
    | [!UICONTROL **Klient-ID**] | Kopiera det här ID:t från det Azure-program som du skapade. I Microsoft Azure finns den här informationen på **Ökning** -fliken i programmet. Mer information finns i [Microsoft Azure-dokumentation om hur du registrerar ett program med Microsoft identitetsplattform](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app). |
    | [!UICONTROL **Hemlighet för platskonto**] | Kopiera hemligheten från Azure-programmet som du skapade. I Microsoft Azure finns den här informationen på **Certifikat och hemligheter** -fliken i programmet. Mer information finns i [Microsoft Azure-dokumentation om hur du registrerar ett program med Microsoft identitetsplattform](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app). |
+
+   {style="table-layout:auto"}
+
++++
+
+   +++E-post
+
+   >[!NOTE]
+   >
+   >E-postkonton kan bara användas med [Dataflöden](/help/export/analytics-data-feed/create-feed.md). (E-postkonton stöds inte med [Data Warehouse](/help/export/data-warehouse/create-request/dw-request-report-destinations.md) eller [Klassificeringsuppsättningar](/help/components/classifications/sets/overview.md)).
+
+   Om du vill konfigurera ett Azure RBAC-konto anger du följande information:
+
+   | Fält | Funktion |
+   |---------|----------|
+   | [!UICONTROL **Mottagare**] | E-postmeddelanden kan skickas till specifika användare när rapporten skickas. Ange en e-postadress eller en kommaavgränsad lista med e-postadresser. |
 
    {style="table-layout:auto"}
 

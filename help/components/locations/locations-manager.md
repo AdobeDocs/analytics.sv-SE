@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: Platshanteraren
 feature: Classifications
 exl-id: ace70568-220a-44e8-8e5f-f73002b9e2a2
-source-git-commit: 273fea86cde8880d9c9e03ac9c6a99b75f70f6cd
+source-git-commit: 82c6d1e6d748a9b52b5988af5abb78d2c27ca077
 workflow-type: tm+mt
-source-wordcount: '622'
+source-wordcount: '1443'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Med Platshanteraren kan du visa, skapa, redigera och ta bort konton och platser.
 
 ## Visa, filtrera och söka efter platser
 
-Med Platshanteraren kan du visa alla platser som du har skapat. Systemadministratörer kan visa platser som skapats av alla användare.
+Med Platshanteraren kan du visa alla platser som du har skapat eller alla som delas med organisationen. Systemadministratörer kan visa platser som skapats av alla användare, oavsett om de delas.
 
 1. Om du vill komma åt Platshanteraren i Adobe Analytics väljer du **[!UICONTROL Components]** > **[!UICONTROL Locations]**.
 
@@ -63,6 +63,8 @@ Mer information om hur du skapar en plats finns i [Konfigurera platser för moln
 
 ### Redigera en plats
 
+En plats kan bara redigeras av den användare som skapade den eller av en systemadministratör.
+
 Mer information om hur du redigerar en plats finns i [Konfigurera platser för molnimport och -export](/help/components/locations/configure-import-locations.md).
 
 ### Ta bort en plats
@@ -73,6 +75,8 @@ Mer information om hur du redigerar en plats finns i [Konfigurera platser för m
 >
 >Om du tar bort en plats bör du [redigera dina dataflöden](/help/export/analytics-data-feed/create-feed.md), [Data Warehouse](/help/export/data-warehouse/create-request/dw-request-report-destinations.md)och [Klassificeringsuppsättningar - scheman](/help/components/classifications/sets/manage/schema.md) för att använda en fungerande plats.
 
+En plats kan bara tas bort av den användare som skapade den eller av en systemadministratör.
+
 Så här tar du bort en plats i Platshanteraren i Adobe Analytics:
 
 1. Välj **[!UICONTROL Components]** > **[!UICONTROL Locations]** väljer du [!UICONTROL **Platser**] -fliken.
@@ -81,18 +85,21 @@ Så här tar du bort en plats i Platshanteraren i Adobe Analytics:
 
 1. Välj [!UICONTROL **Ta bort**].
 
-## Redigera ett konto
+## Skapa och hantera konton
 
-1. Om du vill redigera konton i Platshanteraren i Adobe Analytics väljer du **[!UICONTROL Components]** > **[!UICONTROL Locations]** väljer du [!UICONTROL **Platskonton**] -fliken.
+Du kan skapa, redigera och ta bort konton.
 
-1. (Villkorligt) Om du är systemadministratör kan du aktivera [!UICONTROL **Visa konton för alla användare**] om du vill visa platser som har skapats av alla användare i organisationen. <!-- Maybe add a screenshot? This is new functionality -->
+### Skapa ett konto
 
+Mer information om hur du skapar ett konto finns i [Konfigurera molnimport- och exportkonton](/help/components/locations/configure-import-accounts.md).
 
-1. Välj [!UICONTROL **Visa detaljer**] på kontot som du vill redigera.
+### Redigera ett konto
 
-1. Gör önskade ändringar och välj sedan [!UICONTROL **Spara**].
+Ett konto kan bara redigeras av den användare som skapade det eller av en systemadministratör.
 
-## Visa kontonycklar
+Mer information om hur du redigerar ett konto finns i [Konfigurera molnimport- och exportkonton](/help/components/locations/configure-import-accounts.md).
+
+### Visa kontonycklar
 
 När du har skapat ett konto kan du visa alla associerade kontonycklar för det kontot. Du kan behöva visa den här informationen om du inte har slutfört konfigurationen av kontot med din molnleverantör när du [konfigurerade kontot från början](/help/components/locations/configure-import-accounts.md).
 
@@ -100,10 +107,114 @@ Så här visar du nycklar som är kopplade till ett exportkonto:
 
 1. I Adobe Analytics: **[!UICONTROL Components]** > **[!UICONTROL Locations]** väljer du [!UICONTROL **Platskonton**] -fliken.
 
+1. (Villkorligt) Om du är systemadministratör kan du aktivera [!UICONTROL **Visa platser för alla användare**] om du vill visa platser som har skapats av alla användare i organisationen. <!-- Maybe add a screenshot? This is new functionality -->
+
 1. Markera ikonen med tre punkter på det konto som du vill redigera och välj sedan [!UICONTROL **Kontonycklar**].
 
-## Ta bort ett konto
+### Ta bort ett konto
+
+>[!IMPORTANT]
+>
+>Konton kan bara tas bort om det inte finns några platser där de används. Innan du tar bort ett konto måste du först ta bort alla platser på kontot enligt beskrivningen i [Ta bort en plats](#delete-a-location).
+
+Ett konto kan bara tas bort av den användare som skapade det eller av en systemadministratör.
+
+Ta bort ett konto:
 
 1. I Adobe Analytics: **[!UICONTROL Components]** > **[!UICONTROL Locations]** väljer du [!UICONTROL **Platskonton**] -fliken.
 
+1. (Villkorligt) Om du är systemadministratör kan du aktivera [!UICONTROL **Visa konton för alla användare**] om du vill visa platser som har skapats av alla användare i organisationen.
+
 1. Markera ikonen med tre punkter på det konto som du vill redigera och välj sedan [!UICONTROL **Ta bort konto**]
+
+## Konfigurera företagsinställningar (endast administratörer)
+
+{{release-limited-testing-section}}
+
+Systemadministratörer kan hindra användare från att skapa konton och platser eller begränsa vilka typer av konton som användare kan skapa och använda.
+
+### Konfigurera om användare kan skapa och redigera konton
+
+Som standard kan alla användare i organisationen skapa konton och redigera konton som de skapar i din Adobe Analytics-miljö, vilket beskrivs i [konfigurera molnimport- och exportkonton](/help/components/locations/configure-import-accounts.md).
+
+Du kan hindra användare från att skapa konton. När du gör det kan användare fortfarande använda konton som de redan har skapat, men de kan inte längre redigera dem. Du kan ta bort konton som användare har skapat enligt beskrivningen i [Ta bort ett konto](#delete-an-account).
+
+Så här begränsar du alla användare från att skapa och redigera konton:
+
+1. I Adobe Analytics: **[!UICONTROL Components]** > **[!UICONTROL Locations]** väljer du [!UICONTROL **Administratörsinställningar**] -fliken.
+
+1. I [!UICONTROL **Platskonton**] avmarkera alternativet, [!UICONTROL **Tillåt användare att skapa och hantera platskonton**].
+
+1. Välj [!UICONTROL **Spara**].
+
+1. (Valfritt) Ta bort konton som användare har skapat och som du inte längre vill att de ska använda enligt beskrivningen i [Ta bort ett konto](#delete-an-account).
+
+### Konfigurera om användare kan skapa och redigera platser
+
+Som standard kan alla användare i organisationen skapa platser och redigera platser som de skapar i din Adobe Analytics-miljö, enligt beskrivningen i [konfigurera platser för molnimport och -export](/help/components/locations/configure-import-locations.md).
+
+Du kan hindra användare från att skapa platser. När du gör det kan användare fortfarande använda platser som de redan har skapat, men de kan inte längre redigera dem. Du kan ta bort platser som användare har skapat enligt beskrivningen i [Ta bort platser](#delete-a-location).
+
+Så här begränsar du alla användare från att skapa och redigera platser:
+
+1. I Adobe Analytics: **[!UICONTROL Components]** > **[!UICONTROL Locations]** väljer du [!UICONTROL **Administratörsinställningar**] -fliken.
+
+1. I [!UICONTROL **Platser**] avmarkera alternativet, [!UICONTROL **Tillåt användare att skapa och hantera platser**].
+
+1. Välj [!UICONTROL **Spara**].
+
+1. (Valfritt) Ta bort alla platser som användare har skapat och som du inte längre vill att de ska använda enligt beskrivningen i [Ta bort en plats](#delete-a-location).
+
+### Begränsa vilka kontotyper som användare kan skapa och använda
+
+Du kan begränsa vilka kontotyper som användare kan se under följande omständigheter:
+
+* När [skapa nya konton](/help/components/locations/configure-import-accounts.md).
+
+* När du väljer vilka konton som ska användas vid export av filer med [Dataflöden](/help/export/analytics-data-feed/create-feed.md), exportera rapporter med [Data Warehouse](/help/export/data-warehouse/create-request/dw-request-report-destinations.md)eller importera scheman med [Klassificeringsuppsättningar](/help/components/classifications/sets/overview.md).
+
+När du begränsar kontotyper enligt beskrivningen i det här avsnittet, visas inte längre konton av den typ som du begränsar för användarna. Det innebär att det inte går att skapa nya konton av den typen och att befintliga konton av den typen inte kan användas när du skapar datafeeds, Data Warehouse eller klassificeringsuppsättningar.
+
+Befintliga konton som är konfigurerade för schemalagd export måste dock tas bort om du vill begränsa användningen av dem.
+
+#### Se till att konton inte används för schemalagd export
+
+När du begränsar kontotyper döljs befintliga konton, inte tas bort.
+
+Om scheman redan har konfigurerats för att skicka data till ett konto av den typ som du begränsar, kommer scheman att fortsätta att köras även efter att du har begränsat kontotypen och data kommer att fortsätta skickas till kontot.  Om en datafeed till exempel är schemalagd att skicka data till en kontotyp som du begränsar, kommer schemat att fortsätta att köras.
+
+Om du behöver vara säker på att konton av en viss typ inte används i schemalagda exporter kan du ta bort kontona innan du [begränsa kontotyperna](#limit-the-account-types-that-are-available-to-users).
+
+Så här tar du bort konton:
+
+1. Leta reda på kontona för den kontotyp som du vill begränsa och som används för schemalagd export.
+
+1. Ta bort konton enligt beskrivningen i [Ta bort ett konto](#delete-an-account).
+
+1. Fortsätt med följande avsnitt, [Begränsa de kontotyper som är tillgängliga för användare](#limit-the-account-types-that-are-available-to-users).
+
+#### Begränsa de kontotyper som är tillgängliga för användare
+
+Så här begränsar du de kontotyper som är tillgängliga för användare när de skapar och använder konton:
+
+1. I Adobe Analytics: **[!UICONTROL Components]** > **[!UICONTROL Locations]** väljer du [!UICONTROL **Administratörsinställningar**] -fliken.
+
+1. Leta reda på [!UICONTROL **Tillåtna kontotyper**] -avsnitt.
+
+   Följande kontotyper är tillgängliga som standard för användare. Avmarkera någon av de kontotyper som du vill hindra användare från att använda.
+
+   * [!UICONTROL **Amazon S3 Role ARN**]
+
+   * [!UICONTROL **Google Cloud Platform**]
+
+   * [!UICONTROL **Azure SAS**]
+
+   * [!UICONTROL **Azure RBAC**]
+
+   * [!UICONTROL **E-post**]
+
+   * Äldre kontotyper, inklusive [!UICONTROL **Amazon S3**], [!UICONTROL **Azure**], [!UICONTROL **FTP**] och [!UICONTROL **SFTP**]
+
+1. Välj [!UICONTROL **Spara**].
+
+
