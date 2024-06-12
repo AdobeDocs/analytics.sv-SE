@@ -3,9 +3,9 @@ title: Aktuella versionsinformation för Adobe Analytics
 description: Visa den aktuella versionsinformationen för Adobe Analytics
 feature: Release Notes
 exl-id: 97d16d5c-a8b3-48f3-8acb-96033cc691dc
-source-git-commit: 6349edc65b953ce7f41d5a5990c8afd6efa20d8d
+source-git-commit: a85150e1299e0d5164c4eaa0fe9d5d6f67ef15b3
 workflow-type: tm+mt
-source-wordcount: '987'
+source-wordcount: '969'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ Versionsanteckningarna gäller frisläppningsperioden 12 juni 2024 till juli. Ad
 
 | Funktion | Beskrivning | [Startar](releases.md) | [Allmän tillgänglighet](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **Markera flera filter när de är tillgängliga i listrutan i en frihandstabell** | När flera filter har lagts till i en frihandstabell som en listruta kan användare av frihandstabellen nu markera mer än ett filter i taget. Frihandstabellen filtreras så att den innehåller något av de markerade filtren. Tidigare kunde användarna bara välja ett filter åt gången i en listruta för filter.<p>(Dokumentationslänk som ska följas.) |  | 19 juni 2024 |
+| **Markera flera fält i ett nedrullningsbart filter** | När flera fält har lagts till i ett nedrullningsbart filter kan användare nu markera mer än ett fält i taget. Panelen filtreras så att den innehåller något av de markerade fälten. <p>Tidigare kunde användaren bara markera ett fält i taget i ett droppfilter.</p><p>(Dokumentationslänk som ska följas.)</p> |  | 19 juni 2024 |
 | **Innehållsförteckning för arbetsyteprojekt** | En ny innehållsförteckning är nu tillgänglig för projekt. Innehållsförteckningen innehåller länkar som gör att användare snabbt kan gå till paneler och visualiseringar i projektet. Innehållsförteckningen kan aktiveras för enskilda projekt eller för alla projekt för en viss användare.<p>(Dokumentationslänk som ska följas.) |  | 19 juni 2024 |
 | **Skapa hyperlänkar för dimensionsobjekt i en frihandstabell** | Du kan skapa hyperlänkar för ett eller flera dimensionsobjekt för att göra dem klickbara i en frihandstabell i Analysis Workspace. <p>Du kan skapa hyperlänkar för dimensionsobjekt som har URL-värden, eller så kan du skapa anpassade URL:er för dimensionsobjekt som inte har URL-värden.</p><p>Du kan skapa dynamiska anpassade URL:er för flera dimensionsobjekt med hjälp av variabler. Variabler kan referera till värdet för en dimensionsartikel eller referera till uppdelningsdimensionen.</p><p>(Dokumentationslänk som ska följas.)<!--For more information, see "Add hyperlinks to dimensions in a freeform table."--></p> |  | 19 juni 2024 |
 | **Administratörsinställningar för att styra konton och platser som används för export och import** | En ny [fliken Administratörsinställningar i Platshanteraren](/help/components/locations/locations-manager.md#configure-company-wide-settings-administrators-only) ger administratörer kontroll över om användare kan skapa och redigera konton och platser. De här inställningarna gäller när användare [konfigurera molnimport- och exportkonton](/help/components/locations/configure-import-accounts.md) och [konfigurera platser för molnimport och -export](/help/components/locations/configure-import-locations.md). <p>Administratörer kan också begränsa vilka typer av konton (Google Cloud Platform, Azure RBAC, Amazon S3 och så vidare) som användare kan skapa och använda.</p><p>Tidigare kunde alla användare skapa, redigera och använda konton och platser för alla typer av konton.</p> | 12 juni 2024 | 30 juni 2024 |

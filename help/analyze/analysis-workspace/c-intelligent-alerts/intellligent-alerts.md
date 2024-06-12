@@ -4,20 +4,18 @@ title: Översikt över intelligenta aviseringar
 feature: Alerts
 role: User, Admin
 exl-id: 49d47896-bf93-4960-b647-2765c935eb25
-source-git-commit: 93099d36a65ca2bf16fbd6342f01bfecdc8c798e
+source-git-commit: d48f74d4fa642e34de601466737f16fc228a8199
 workflow-type: tm+mt
-source-wordcount: '312'
+source-wordcount: '279'
 ht-degree: 0%
 
 ---
 
 # Översikt över intelligenta aviseringar
 
-Intelligenta aviseringar ger mer exakt kontroll över aviseringar och integrerar avvikelseidentifiering med varningssystemet.
+Med intelligenta aviseringar (eller bara &quot;aviseringar&quot;) i Adobe Analytics kan du få meddelanden direkt när onormala händelser inträffar i dina data.
 
-Här är en självstudiekurs om [Intelligenta aviseringar](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/data-science/intelligent-alerts.html) (5:34)
-
-## Översikt
+Du kan ange att aviseringar ska utlösas baserat på avvikelsetrösklar, ändrade procentsatser eller specifika datapunkter. Varningar ger detaljstyrda kontroller som kan integreras med [Analysidentifiering](/help/analyze/analysis-workspace/c-anomaly-detection/anomaly-detection.md), som aktiveras när du behöver dem som mest.
 
 Med intelligenta aviseringar kan du:
 
@@ -26,19 +24,7 @@ Med intelligenta aviseringar kan du:
 * Skicka aviseringar via e-post eller SMS med länkar till autogenererade Analysis Workspace-projekt
 * Skapa&quot;staplade&quot; aviseringar som fångar in flera mätvärden i en enda avisering
 
-Det finns tre sätt att komma åt Varningsverktyget:
-
-| Metod | Information |
-| --- | --- |
-| Gå direkt till Varningsverktyget | **[!UICONTROL Components]** > **[!UICONTROL Alerts]** |
-| Använda kortkommandot i arbetsytan | `Ctrl + Shift + A` (Windows) eller `Cmd + Shift + A` (Mac) |
-| Markera ett eller flera frihandsritningsobjekt | Högerklicka och välj **[!UICONTROL Create Alert from Selection]**. Då öppnas [!UICONTROL Alert Builder] och fyller i de värden och filter som används från tabellen i förväg. Du kan redigera varningen om det behövs. ![Skapa avisering från markering](assets/create-alert-from-selection.png) |
-
-Procenttröskelvärdena är standardavvikelser. Exempel: 95 % = 2 standardavvikelser och 99 % = 3 standardavvikelser. Beroende på hur lång tid du väljer kan [olika modeller](/help/analyze/analysis-workspace/c-anomaly-detection/statistics-anomaly-detection.md) används för att beräkna hur långt bort (hur många standardavvikelser) varje datapunkt ligger från normen. Om du anger ett lägre tröskelvärde (till exempel 90 %) får du fler avvikelser än om du anger ett högre tröskelvärde (99,75 %).
-
->[!IMPORTANT]
->
->Om du använder tidsstämplade data för att skapa varningar kan det leda till att varningar utlöses felaktigt. Adobe rekommenderar att man använder data som inte är tidsstämplade för intelligenta aviseringar.
+I följande videofilm visas en grundläggande översikt över varningar: [Intelligenta aviseringar](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/data-science/intelligent-alerts.html) (5:34)
 
 ## Anomalsökning efter aviseringar
 
@@ -49,4 +35,18 @@ Om en varning använder avvikelseidentifiering varierar utbildningsperioden bero
 * Daglig kornighet: 35 dagar + samma intervall förra året
 * Timgranularitet: 336 timmar
 
-Se [Statistiska tekniker som används vid avvikelseidentifiering](/help/analyze/analysis-workspace/c-anomaly-detection/statistics-anomaly-detection.md) för mer information.
+Mer information finns i [Statistiska tekniker som används vid avvikelseidentifiering](/help/analyze/analysis-workspace/c-anomaly-detection/statistics-anomaly-detection.md).
+
+## Skapa aviseringar
+
+Mer information om hur du skapar varningar i Adobe Analytics finns i [Skapa aviseringar](/help/analyze/analysis-workspace/c-anomaly-detection/statistics-anomaly-detection.md).
+
+>[!IMPORTANT]
+>
+>Om du använder tidsstämplade data för att skapa varningar kan det leda till att varningar utlöses felaktigt. Adobe rekommenderar att man använder data som inte är tidsstämplade för intelligenta aviseringar.
+
+## Hantera aviseringar
+
+Du kan hantera befintliga aviseringar i Varningshanteraren. Du kan utföra olika hanteringsåtgärder för varningar, som taggning, namnbyte, borttagning med mera.
+
+Mer information om hur du hanterar befintliga aviseringar i Adobe Analytics finns i [Hantera aviseringar](/help/analyze/analysis-workspace/c-intelligent-alerts/alert-manager.md).
