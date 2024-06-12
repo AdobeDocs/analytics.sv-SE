@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: Platshanteraren
 feature: Classifications
 exl-id: ace70568-220a-44e8-8e5f-f73002b9e2a2
-source-git-commit: 82c6d1e6d748a9b52b5988af5abb78d2c27ca077
+source-git-commit: c42ad8d3e0c21cc1fb13f9a8993aca4825286d4f
 workflow-type: tm+mt
-source-wordcount: '1443'
+source-wordcount: '1446'
 ht-degree: 0%
 
 ---
@@ -132,6 +132,8 @@ Ta bort ett konto:
 {{release-limited-testing-section}}
 
 Systemadministratörer kan hindra användare från att skapa konton och platser eller begränsa vilka typer av konton som användare kan skapa och använda.
+
+![Fliken Administratörsinställningar](assets/locations-admin-settings.png)
 
 ### Konfigurera om användare kan skapa och redigera konton
 
