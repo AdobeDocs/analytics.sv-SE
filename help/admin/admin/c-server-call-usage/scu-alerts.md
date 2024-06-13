@@ -4,18 +4,18 @@ title: Varningar om användning av serversamtal
 feature: Server Call Usage
 exl-id: 35926566-c570-4ed2-9bbc-0906518bcf64
 role: Admin
-source-git-commit: 938795c7378cb1f0537ff84eddeab3feddf8d073
+source-git-commit: 58e1d3025b455de7fa07037b3b0659330c8324c7
 workflow-type: tm+mt
-source-wordcount: '505'
+source-wordcount: '501'
 ht-degree: 1%
 
 ---
 
-# Varningar om användning av serversamtal
+# Användningsvarningar för serversamtal
 
 När du skapar en avisering gäller den alla rapportsviter i alla inloggningsföretag för ett faktureringsföretag.
 
-En ny aviseringskategori som heter **[!UICONTROL Server Calls Usage Alert]** är en del av den befintliga [Varningshantering](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/virtual-analyst/intelligent-alerts/intellligent-alerts.html) användargränssnitt.
+Användningsaviseringar om serveranrop ingår i [Varningar](/help/analyze/analysis-workspace/c-intelligent-alerts/alert-manager.md) användargränssnitt.
 
 Den är förifylld med **1 standardvarning** som visas i ett inloggningsföretag som har åtkomst till funktionen Serversamtalsanvändning. Den här varningen utlöser ett meddelande adresserat till alla inloggningsföretagets administratörer om något av följande villkor uppfylls:
 
@@ -30,7 +30,7 @@ Du kan få åtkomst till varningar om användning av serversamtal på två sätt
 * Klicka **[!UICONTROL Manage Alerts]** i det övre högra hörnet på fliken Aktuell användning eller fliken Användning i Report Suite, eller
 * Navigera till **[!UICONTROL Components]** > **[!UICONTROL Alerts]** i Adobe Analytics.
 
-## Skapa användningsaviseringar för serversamtal {#create}
+## Skapa varningsmeddelanden om användning av serversamtal {#create}
 
 Om du vill skapa ytterligare aviseringar
 

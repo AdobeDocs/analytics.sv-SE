@@ -4,9 +4,9 @@ title: Alert Builder (Analysis Workspace)
 feature: Alerts
 role: User, Admin
 exl-id: aae28c90-bfdf-49ff-bd38-c9ef63880bf4
-source-git-commit: d48f74d4fa642e34de601466737f16fc228a8199
+source-git-commit: 58e1d3025b455de7fa07037b3b0659330c8324c7
 workflow-type: tm+mt
-source-wordcount: '558'
+source-wordcount: '606'
 ht-degree: 0%
 
 ---
@@ -17,11 +17,11 @@ ht-degree: 0%
 >
 >Intelligenta aviseringar är endast tillgängliga för Adobe Analytics Prime- och Adobe Analytics Ultimate-kunder.
 
-Med intelligenta aviseringar (eller bara &quot;aviseringar&quot;) i Adobe Analytics kan du få meddelanden direkt när onormala händelser inträffar i dina data.
+Med intelligenta aviseringar (eller bara &quot;aviseringar&quot;) i Adobe Analytics kan du få meddelanden direkt när onormala händelser inträffar i dina data. (Varningar om användning av serversamtal är en annan typ av varning som bara är tillgänglig för Analytics-administratörer. Dessa varningar meddelar dig om risken för eller förekomsten av en överbelastning i serversamtalsförbrukning och åtagandedata. Mer information finns i [Användningsvarningar för serversamtal](/help/admin/admin/c-server-call-usage/scu-alerts.md).)
 
 Mer detaljerad översiktsinformation om intelligenta aviseringar finns i [Översikt över intelligenta aviseringar](/help/analyze/analysis-workspace/c-intelligent-alerts/intellligent-alerts.md).
 
-Så här skapar du en varning:
+Så här skapar du en intelligent varning:
 
 1. Börja skapa en avisering med hjälp av varningsverktyget. Du kan öppna varningsverktyget på något av följande sätt:
 
@@ -32,7 +32,7 @@ Så här skapar du en varning:
    * Öppna ett projekt i Analysis Workspace, markera ett eller flera linjeobjekt i en frihandstabell, högerklicka och välj **[!UICONTROL Create alert from selection]**.
 
      Varningsbyggaren fylls i automatiskt för att skapa en avisering med rätt mätvärden och filter.
-   * I Adobe Analytics: **[!UICONTROL Components]** > [!UICONTROL **Varningar**] > **[!UICONTROL Create new alert]**.
+   * Skapa en avisering [från aviseringshanteraren](/help/analyze/analysis-workspace/c-intelligent-alerts/alert-manager.md#create-alerts).
 
    Varningsbyggaren visas. Det här gränssnittet är bekant för dem som har skapat segment eller beräknade värden i Analytics:
 

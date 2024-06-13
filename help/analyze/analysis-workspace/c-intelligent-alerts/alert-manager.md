@@ -4,9 +4,9 @@ title: Varningshanteraren (Analysis Workspace)
 feature: Alerts
 role: User, Admin
 exl-id: c33a9a30-f53f-443c-96b7-6a87d03573c7
-source-git-commit: d6d42b079a013eb5608ad85ae311d8bf0f7a5d21
+source-git-commit: 58e1d3025b455de7fa07037b3b0659330c8324c7
 workflow-type: tm+mt
-source-wordcount: '229'
+source-wordcount: '323'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,22 @@ Så här skapar du aviseringar från Alerts Manager:
 
 1. Välj [!UICONTROL **Lägg till**] (eller [!UICONTROL **Skapa ny avisering**] om du inte har några befintliga aviseringar).
 
-1. Fortsätt med [Skapa aviseringar](/help/analyze/analysis-workspace/c-intelligent-alerts/alert-builder.md) om du vill ha mer information om hur du skapar varningar.
+1. Välj den varningstyp som motsvarar den varning som du vill skapa:
+
+   * [!UICONTROL **Varning om analysdata**]: En varning som meddelar dig när onormala händelser inträffar i dina data.
+
+     Om du väljer det här alternativet fortsätter du med [Skapa aviseringar](/help/analyze/analysis-workspace/c-intelligent-alerts/alert-builder.md) om du vill ha mer information om hur du skapar varningar.
+
+   * [!UICONTROL **Användningsvarning för serversamtal**]: En varning som meddelar dig om risken eller förekomsten av en överbelastning i serveranropets förbrukning och åtagandedata.
+
+     Om du väljer det här alternativet fortsätter du med [Användningsvarningar för serversamtal](/help/admin/admin/c-server-call-usage/scu-alerts.md).
+
+     >[!NOTE]
+     >
+     >Du måste vara Analytics-administratör eller en användare med användarbehörighet för serversamtal för att få åtkomst till serversamtalsanvändning.
+
+
+
 
 ## Hantera befintliga aviseringar
 

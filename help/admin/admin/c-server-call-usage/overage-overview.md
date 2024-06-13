@@ -4,35 +4,33 @@ title: Översikt över användning av serversamtal
 feature: Server Call Usage
 exl-id: d3d64f1e-f01b-4b9e-9aee-c14e574fc40b
 role: Admin
-source-git-commit: 938795c7378cb1f0537ff84eddeab3feddf8d073
+source-git-commit: 58e1d3025b455de7fa07037b3b0659330c8324c7
 workflow-type: tm+mt
-source-wordcount: '1021'
+source-wordcount: '993'
 ht-degree: 1%
 
 ---
 
-# Användning av serversamtal
+# Serversamtalsanvändning
 
-Adobe Analytics Server Call Usage behandlar dina förfrågningar om genomskinlighet både i webbläsare och i mobilserverns anropsdata. Du får tillgång till
+Adobe Analytics serveranrop åtgärdar dina krav på genomskinlighet, både vad gäller webbläsare och mobilserveranrop. Du får tillgång till
 
-* En kontrollpanel för användning av serversamtal som spårar dina förbrukningsdata för serversamtal och jämför dem med din avtalsgräns. (**[!UICONTROL Analytics > Admin > Server Call Usage]**)
-* En varningstyp för användning av serveranrop i varningsverktyget som gör att du kan konfigurera varningar för att förhindra överbelastning (**[!UICONTROL Analytics > Components >Alerts]**)
+* En kontrollpanel för användning av serveranrop som spårar dina förbrukningsdata för serveranrop och jämför dem med din avtalsgräns. (I Adobe Analytics väljer du > [!UICONTROL **Administratör**] > [!UICONTROL **Serversamtalsanvändning**])
+* En varningstyp för användning av serveranrop i varningsverktyget som gör att du kan konfigurera varningar för att förhindra överbelastning (i Adobe Analytics väljer du [!UICONTROL **Komponenter**] > [!UICONTROL **Varningar**])
 
 De viktigaste fördelarna med användning av serversamtal är:
 
 * **Synlighet** i era serversamtalskonsumtions- och åtagandedata, inklusive mobilförbrukning i förhållande till era avtalsenliga användningsgränser för serversamtal.
 * **Varningar** för att informera dig om risken eller förekomsten av ett överskott och förbereda för/vidta åtgärder för att upptäcka eventuella överskjutande delar.
 
-Tidigare kunde du få åtkomst till månatliga serversamtalsförbrukningsdata under  **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Billing]** uppdaterades dessa data endast 6 dagar efter att faktureringen hade stängts för den månaden. Uppgifterna inkluderade inte heller mobilförbrukning. Den här funktionen kommer även att ersätta den aktuella **[!UICONTROL Billing Information]** rapport enligt  **[!UICONTROL Analytics]** > **[!UICONTROL Reports]** .
-
 ## Förutsättningar {#section_49AE590FFC7C4E8A83C640C4AAA581AA}
 
-* **Behörigheter:** För att få åtkomst till kontrollpanelen för användning av serversamtal och varningsbyggaren/hanteraren måste du vara en Adobe Analytics-administratör.
-* **Behörigheter:** Administratörer kan bevilja åtkomst till icke-administratörer: behörigheten anropas **[!UICONTROL Server Call Usage]**. Se [Användarbehörighet för serveranrop](/help/admin/admin/c-server-call-usage/overage-overview.md#section_FCC58EB635954A32990D4E67B52B4369).
+* **Behörigheter:** För att få åtkomst till kontrollpanelen för användning av serversamtal och varningsverktyget eller varningsguiden måste du vara en Adobe Analytics-administratör.
+* **Behörigheter:** Administratörer kan bevilja åtkomst till icke-administratörer: behörigheten anropas **[!UICONTROL Server call usage]**. Se [Användarbehörighet för serversamtal](#server-call-usage-permission).
 
 ## Viktig terminologi {#terminology}
 
-Här är en kort introduktion till viktig terminologi för användning av serversamtal:
+Följande termer är viktiga när det gäller att förstå användningen av serversamtal:
 
 <table id="table_4E97F85F13344A2C962FA4FA5A51642E"> 
  <thead> 
@@ -65,7 +63,7 @@ Här är en kort introduktion till viktig terminologi för användning av server
    <td colname="col2"> <p>En organisation är den enhet som gör det möjligt för en administratör att konfigurera grupper och användare samt att styra enkel inloggning i Experience Cloud. Organisationen fungerar som ett inloggningsföretag som omfattar alla produkter och lösningar från Experience Cloud. </p> <p>Oftast är en organisation ditt företagsnamn. Ett företag kan dock ha många organisationer. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Serversamtalsåtagande </p> </td> 
+   <td colname="col1"> <p>Utfästelse vid serveranrop </p> </td> 
    <td colname="col2"> <p>När ditt företag tecknar ett kontrakt med Adobe identifierar säljteamet på Adobe tillsammans med dig, kunden, typerna (primär, sekundär, Mobile Primary, Mobile Secondary) och det ungefärliga antalet serversamtal som du förväntar dig under avtalsperioden. Detta är din totala bindningstid för serversamtal. </p> </td> 
   </tr> 
   <tr> 
@@ -79,9 +77,9 @@ Här är en kort introduktion till viktig terminologi för användning av server
  </tbody> 
 </table>
 
-## Användarbehörighet för serveranrop {#permission}
+## Användarbehörighet för serversamtal {#permission}
 
-Behörighet för användning av serveranrop beviljas automatiskt till Analytics-administratörer. Det gör att användarna kan visa kontrollpanelen och skapa serversamtalsaviseringar. Administratörer kan välja att ge icke-administratörer denna behörighet.
+Användarbehörighet för serveranrop beviljas automatiskt till Analytics-administratörer. Det gör att användarna kan visa kontrollpanelen och skapa serversamtalsaviseringar. Administratörer kan välja att ge icke-administratörer denna behörighet.
 
 >[!NOTE]
 >
@@ -97,17 +95,17 @@ Behörighet för användning av serveranrop beviljas automatiskt till Analytics-
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>Användning av serversamtal </p> </td> 
+   <td colname="col1"> <p>Serversamtalsanvändning </p> </td> 
    <td colname="col3"> 
     <ol id="ol_13A984328D264488B7045DC7521A5F55"> 
      <li id="li_ACDA518C7D184084AC1DFA7B38C67314">Logga in på Analytics via sc.omniture.com. </li> 
-     <li id="li_066D90AB071941C3869EDAFCE981707A">Navigera till <span class="ignoretag"> <span class="uicontrol"> Administratör </span>  &gt; <span class="uicontrol"> Alla administratörer </span>  &gt; <span class="uicontrol"> Användarhantering </span>  &gt; <span class="uicontrol"> Grupper </span>  &gt; <span class="uicontrol"> Redigera all rapportåtkomst </span>  &gt; <span class="uicontrol"> Analysverktyg </span>  &gt; <span class="uicontrol"> Anpassa </span>  &gt; <span class="uicontrol"> Användning av serversamtal </span> </span> </li> 
+     <li id="li_066D90AB071941C3869EDAFCE981707A">Navigera till <span class="ignoretag"> <span class="uicontrol"> Administratör </span>  &gt; <span class="uicontrol"> Alla administratörer </span>  &gt; <span class="uicontrol"> Användarhantering </span>  &gt; <span class="uicontrol"> Grupper </span>  &gt; <span class="uicontrol"> Redigera all rapportåtkomst </span>  &gt; <span class="uicontrol"> Analysverktyg </span>  &gt; <span class="uicontrol"> Anpassa </span>  &gt; <span class="uicontrol"> användning av serversamtal </span> </span> </li> 
     </ol> </td> 
    <td colname="col4"> 
     <ol id="ol_518673ED323A4C5993A3B9F4BA09E405"> 
      <li id="li_56FF685A3B454ECEA5F16BB591A60034">Logga in på login.experiencecloud.adobe.com.</li> 
      <li id="li_FA1AE0F19DEF4AB2AA77B22CCA2995F9">Klicka <span class="uicontrol"> Analyser </span>. </li> 
-     <li id="li_22A4CBB84B5A451780873BBE67E6E6EF">Navigera till <span class="ignoretag"> <span class="uicontrol"> Produkter </span>  &gt; <span class="uicontrol"> Produktprofil </span>  &gt; <span class="uicontrol"> Behörigheter </span>  &gt; <span class="uicontrol"> Analysverktyg </span>  &gt; <span class="uicontrol"> Användning av serversamtal </span> </span> </li> 
+     <li id="li_22A4CBB84B5A451780873BBE67E6E6EF">Navigera till <span class="ignoretag"> <span class="uicontrol"> Produkter </span>  &gt; <span class="uicontrol"> Produktprofil </span>  &gt; <span class="uicontrol"> Behörigheter </span>  &gt; <span class="uicontrol"> Analysverktyg </span>  &gt; <span class="uicontrol"> användning av serversamtal </span> </span> </li> 
     </ol> </td> 
   </tr> 
  </tbody> 
