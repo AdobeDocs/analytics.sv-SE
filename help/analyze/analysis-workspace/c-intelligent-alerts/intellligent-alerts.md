@@ -4,7 +4,7 @@ title: Översikt över intelligenta aviseringar
 feature: Alerts
 role: User, Admin
 exl-id: 49d47896-bf93-4960-b647-2765c935eb25
-source-git-commit: d48f74d4fa642e34de601466737f16fc228a8199
+source-git-commit: a012aca08740428671f216793dbd12aa15f21448
 workflow-type: tm+mt
 source-wordcount: '279'
 ht-degree: 0%
@@ -39,7 +39,7 @@ Mer information finns i [Statistiska tekniker som används vid avvikelseidentifi
 
 ## Skapa aviseringar
 
-Mer information om hur du skapar varningar i Adobe Analytics finns i [Skapa aviseringar](/help/analyze/analysis-workspace/c-anomaly-detection/statistics-anomaly-detection.md).
+Mer information om hur du skapar varningar i Adobe Analytics finns i [Skapa aviseringar](/help/analyze/analysis-workspace/c-intelligent-alerts/alert-builder.md).
 
 >[!IMPORTANT]
 >
