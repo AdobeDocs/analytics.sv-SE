@@ -1,17 +1,17 @@
 ---
 description: En panel är en samling tabeller och visualiseringar
-title: Översikt över paneler
+title: Paneler - översikt
 feature: Panels
 role: User, Admin
 exl-id: dd1a3c40-8b5b-47dd-86d9-da766575ee46
-source-git-commit: 2eff7656741bdba3d5d7d1f33e9261b59f8e6083
+source-git-commit: 77401e3e4f69c67d1010905be15bc9ccb4b73e90
 workflow-type: tm+mt
-source-wordcount: '1404'
-ht-degree: 1%
+source-wordcount: '1539'
+ht-degree: 0%
 
 ---
 
-# Översikt över paneler
+# Paneler - översikt
 
 A [!UICONTROL panel] är en samling tabeller och visualiseringar. Du kommer åt panelerna från den övre vänstra ikonen i Workspace eller en [tom panel](blank-panel.md). Paneler är användbara när du vill ordna dina projekt efter tidsperioder, rapportsviter eller användningsfall för analyser.
 
@@ -24,7 +24,7 @@ Följande paneltyper är tillgängliga i Analysis Workspace:
 | [Tom panel](blank-panel.md) | Välj bland tillgängliga paneler och visualiseringar för att starta analysen. |
 | [Panelen Snabbinsikter](quickinsight.md) | Bygg snabbt ett frihandsbord och en medföljande visualisering för att analysera och hitta insikter snabbare. |
 | [Analyser för målpanelen](a4t-panel.md) | Analysera Target-aktiviteter och -upplevelser i Analysis Workspace. |
-| [Panelen Attribution](attribution.md) | Jämför och visualisera snabbt valfritt antal attribueringsmodeller med alla mått och konverteringsvärden. |
+| [Attributionspanelen](attribution.md) | Jämför och visualisera snabbt valfritt antal attribueringsmodeller med alla mått och konverteringsvärden. |
 | [Frihandspanel](freeform-panel.md) | Utför obegränsade jämförelser och uppdelningar och lägg sedan till visualiseringar för att berätta en utförlig databerättelse. |
 | [Panelen Mediegenomsnitt för miniatyrmålgrupp](average-minute-audience-panel.md) | Analysera den genomsnittliga minuten-publiken över tiden, med information om toppvyer och möjlighet att dela upp och jämföra. |
 | [Panelen för samtidiga medieanvändare](media-concurrent-viewers.md) | Analysera samtidiga tittare över tid, med information om maximal samtidighet och möjlighet att dela upp och jämföra. |
@@ -58,13 +58,13 @@ Du kan använda ett datumintervall på minutnivå under de avancerade inställni
 
 ## Släppzon {#dropzone}
 
-Med panelens listzon kan du tillämpa segment- och listrutefilter på alla tabeller och visualiseringar i en panel. Du kan använda ett eller flera filter på en panel. Titeln ovanför varje filter kan ändras genom att du klickar på redigeringspennan eller så kan du högerklicka för att ta bort den helt.
+Med panelens listzon kan du tillämpa segment- och listrutefilter på alla tabeller och visualiseringar i en panel. Du kan använda ett eller flera filter på en panel.
 
 ### Segmentfilter
 
-Dra och släpp ett segment från den vänstra listen i panelens släppzon för att börja filtrera panelen.
+Dra och släpp segment från den vänstra listen i panelens släppzon för att börja filtrera panelen. Upprepa den här processen om du vill lägga till fler filter på panelen. Filter visas sida vid sida högst upp på panelen.
 
-![Filter](/help/admin/admin/assets/filter.png)
+![Filter](assets/segment-filter.png)
 
 ### Ad hoc-segmentfilter
 
@@ -74,45 +74,60 @@ Ad hoc-segment är en typ av snabbsegment och är lokala för projektet. De visa
 
 Mer information finns i [Snabbsegment](/help/analyze/analysis-workspace/components/segments/quick-segments.md).
 
-### Statiska nedrullningsbara filter
+### Statiska rullgardinssegment
 
-Med nedrullningsbara filter kan du interagera med data på ett kontrollerat sätt. Du kan t.ex. lägga till ett nedrullningsbart filter för mobila enhetstyper så att du kan segmentera panelen via Surfplatta, Mobiltelefon eller Skrivbord.
+Med statiska rullgardinssegment kan du interagera med data på ett kontrollerat sätt. Du kan till exempel lägga till ett nedrullningsbart segment för mobila enhetstyper så att du kan segmentera panelen via Surfplatta, Mobiltelefon eller Skrivbord.
 
-Nedrullningsbara filter kan även användas för att konsolidera flera projekt till ett. Om du till exempel har många versioner av samma projekt med olika landssegment tillämpade, kan du konsolidera alla versioner till ett enda projekt och lägga till ett nedrullningsbart landsfilter.
+Statiska rullgardinssegment kan också användas för att konsolidera många projekt till ett. Om du till exempel har många versioner av samma projekt med olika landssegment tillämpade, kan du konsolidera alla versioner till ett enda projekt och lägga till ett nedrullningsbart landssegment.
 
 ![](assets/dropdown-filter-intro.png)
 
-Så här skapar du ett statiskt nedrullningsbart filter:
+#### Skapa statiska rullgardinssegment
 
-* För nedrullningsbara filter som använder dimensionsobjekt klickar du på högerpilsikonen bredvid önskad dimension i den vänstra listen. Den här åtgärden visar alla tillgängliga dimensionsobjekt. Välj flera dimensionsobjekt från den här listan med `[Shift + Click]` eller `[Ctrl + Click]`och sedan släppa dem i panelens dropzone **samtidigt som du håller`[Shift]`**.
-* För nedrullningsbara filter som använder andra komponenter som mått, segment eller datumintervall väljer du flera komponenter med `[Shift + Click]` eller `[Ctrl + Click]`. Släpp markeringen i panelens dropzone **samtidigt som du håller`[Shift]`**. Alla komponenttyper behandlas som segment i det här sammanhanget.
-* Ett enda nedrullningsbart filter kan bara innehålla en enda komponenttyp. Om du inkluderar flera komponenttyper i markeringen skapas ett separat nedrullningsbart filter per komponenttyp. Om du till exempel inkluderar både mått och dimensionsobjekt i markeringen skapas två separata nedrullningsbara filter. Ett nedrullningsbart filter innehåller dimensionsobjekt och det andra innehåller mått.
+* För rullgardinsmenyer som använder dimensionsobjekt väljer du en dimension från den vänstra listen och släpper den i panelens listruta **samtidigt som du håller`[Shift]`**. Detta skapar ett nedrullningsbart segment med alla dimensionsobjekt som är kopplade till den dimensionen.
 
-Välj ett av alternativen i listrutan om du vill ändra data på panelen. Du kan också välja att inte filtrera paneldata genom att markera **[!UICONTROL No filter]**.
+  Om du vill att listrutesegmentet endast ska innehålla specifika dimensionsobjekt som är kopplade till en dimension, klickar du på högerpilsikonen bredvid önskad dimension i den vänstra listen. Den här åtgärden visar alla tillgängliga dimensionsobjekt. Välj flera dimensionsobjekt från den här listan med `[Shift + Click]` eller `[Ctrl + Click]`och sedan släppa dem i panelens dropzone **samtidigt som du håller** `[Shift]`.
 
-![](assets/create-dropdown.png)
+* För rullgardinsmenyer som använder en enda komponenttyp (t.ex. bara dimensioner, eller endast segment, eller endast mått), väljer du flera objekt av samma typ i den vänstra listen med `[Shift + Click]` eller `[Ctrl + Click]`och sedan släppa dem i panelens dropzone **samtidigt som du håller`[Shift]`**.
 
-Om du högerklickar på ett nedrullningsbart filter finns följande alternativ:
+  Ett enskilt nedrullningsbart segment skapas med de komponenter som du har valt.
 
-* **[!UICONTROL Add label]**: När du lägger till ett nedrullningsbart filter i ett projekt ställs en etikett automatiskt in på komponentnamnet. Om du tar bort etiketten kan du lägga till den igen med det här alternativet.
-* **[!UICONTROL Delete label]**: Ta bort texten ovanför ett nedrullningsbart filter.
-* **[!UICONTROL Delete drop-down filter]**: Tar bort det nedrullningsbara filtret från panelen.
+* För nedrullningsbara segment som använder en blandning av komponenttyper (till exempel 2 mätvärden och 3 filter) väljer du flera komponenter med `[Shift + Click]` eller `[Ctrl + Click]`. Släpp markeringen i panelens dropzone **samtidigt som du håller`[Shift]`**. I det här sammanhanget behandlas alla komponenttyper som separata nedrullningsbara segment. Om du till exempel inkluderar både mått och dimensionsobjekt i markeringen skapas två separata nedrullningsbara segment: ett nedrullningsbart segment innehåller dimensionsobjekt och det andra innehåller mått.
+
+  ![Panelfönstret med segmentfältet Mobilkunder tillgängligt för att släppa ett statiskt nedrullningsbart segment. ](assets/create-dropdown.png)
+
+Om du högerklickar på ett nedrullningsbart segment finns följande alternativ:
+
+* **[!UICONTROL Delete drop-down]**: Tar bort det nedrullningsbara segmentet från panelen.
+* **[!UICONTROL Delete label]**: Ta bort texten ovanför ett nedrullningsbart segment. Om du vill ändra etiketten väljer du pennikonen .
+* **[!UICONTROL Add label]**: När du lägger till ett nedrullningsbart segment i ett projekt ställs en etikett automatiskt in på komponentnamnet. Om du tar bort etiketten kan du lägga till den igen med det här alternativet.
+* **[!UICONTROL Require selection]**: Kräver att ett segment är inställt på panelen.
 
 [Se videon](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-panels-to-organize-your-analysis-workspace-projects.html) om du vill veta mer om hur du lägger till nedrullningsbara filter i ett projekt.
 
-### Dynamiska nedrullningsbara filter
+#### Använda statiska rullgardinssegment
 
-Med dynamiska nedrullningsbara filter kan du bestämma tillgängliga värden baserat på data i panelens rapporteringsintervall och värden i andra nedrullningsbara filter. Du kan till exempel skapa två dynamiska listrutor med [Länder](/help/components/dimensions/countries.md) dimension och [Städer](/help/components/dimensions/cities.md) dimension. När du väljer ett land i dialogrutan [!UICONTROL Countries] nedrullningsbar lista [!UICONTROL Cities] listrutan justeras dynamiskt till att endast visa städer i det landet.
+Användare kan använda den nedrullningsbara segmentmenyn på något av följande sätt för att filtrera panelen:
 
-Samma koncept gäller för alla dimensioner. Endast dimensionsobjekt som visas inom panelens datumintervall och markerade filter visas. De Dimensioner som markeras i statiska nedrullningsbara filter påverkar tillgängliga värden i dynamiska nedrullningsbara filter. Inverteringen är emellertid inte true. De Dimensioner som markeras i dynamiska listrutefilter påverkar inte tillgängliga värden i statiska listrutefilter.
+* Använd ett segment på panelen genom att välja segmentet på den nedrullningsbara menyn.
 
-Manuellt urval av dimensionsobjekt är tillgängligt om du förväntar dig att en viss dimensionsobjekt ska samlas in i framtiden. Du kan även rensa ett dynamiskt nedrullningsbart filter så att det inte innehåller något värde, vilket innebär att andra dynamiska nedrullningsbara filter kan innehålla fler värden. Välj **[!UICONTROL Reset all]** för att ta bort markeringen från alla nedrullningsbara filter för den panelen.
+* Använd flera segment på panelen genom att markera flera segment i listrutan. Panelen filtreras så att den innehåller något av de markerade segmenten.
 
-Så här skapar du ett dynamiskt nedrullningsbart filter:
+  ![Markera flera segment](assets/dropdown-filter-multiselect.png)
+
+### Dynamiska rullgardinsmenyer
+
+Med dynamiska listrutesegment kan du fastställa tillgängliga värden baserat på data i panelens rapporteringsintervall och värden i andra nedrullningsbara segment. Du kan till exempel skapa två dynamiska listrutor med [Länder](/help/components/dimensions/countries.md) dimension och [Städer](/help/components/dimensions/cities.md) dimension. När du väljer ett land i dialogrutan [!UICONTROL Countries] nedrullningsbar lista [!UICONTROL Cities] listrutan justeras dynamiskt till att endast visa städer i det landet.
+
+Samma koncept gäller för alla dimensioner. Endast dimensionsobjekt som visas inom panelens datumintervall och markerade segment visas. Dimension som är markerad i statiska rullgardinssegment påverkar tillgängliga värden i dynamiska rullgardinssegment. Inverteringen är emellertid inte true. De Dimensioner som markeras i dynamiska rullgardinssegment påverkar inte tillgängliga värden i statiska rullgardinssegment.
+
+Manuellt urval av dimensionsobjekt är tillgängligt om du förväntar dig att en viss dimensionsobjekt ska samlas in i framtiden. Du kan även rensa ett dynamiskt nedrullningsbart segment så att det inte innehåller något värde, vilket innebär att andra dynamiska nedrullningsbara segment kan innehålla fler värden. Välj **[!UICONTROL Reset all]** om du vill ta bort markeringen från alla nedrullningsbara segment för den panelen.
+
+Så här skapar du ett dynamiskt nedrullningsbart segment:
 
 * Dra och släpp en dimension till panelens dropzone **samtidigt som du håller`[Shift]`**.
-* Dynamiska nedrullningsbara filter är inte tillgängliga för mått, segment eller datumintervall.
-* Högerklicka på ett nedrullningsbart filter och välj **[!UICONTROL Delete filter]** för att ta bort den.
+* Dynamiska rullgardinsmenyer är inte tillgängliga för mått, segment eller datumintervall.
+* Högerklicka på ett nedrullningsbart segment och välj **[!UICONTROL Delete dropdown]** för att ta bort den.
 
 Om du högerklickar på ett dynamiskt nedrullningsbart filter finns samma alternativ som för statiska nedrullningsbara filter.
 
