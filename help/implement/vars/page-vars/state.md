@@ -1,12 +1,12 @@
 ---
 title: läge
-description: Fyll i 'Visitor State Report' i Reports and Analytics.
+description: (Borttaget) Fyllde i 'Visitor State Report', som inte längre är tillgänglig.
 feature: Variables
 exl-id: a6e3f30b-b5d1-48f8-8961-8e9c6d4d29da
 role: Admin, Developer
-source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
+source-git-commit: 75ae77c1da1b578639609888e794e13d965ef669
 workflow-type: tm+mt
-source-wordcount: '211'
+source-wordcount: '213'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Den här variabeln har tagits bort och är inte en tillgänglig dimension i Analysis Workspace. Använd dimensionen &#39;USA&#39; i stället, som AppMeasurementet automatiskt samlar in baserat på besökarens plats.
+>Den här variabeln har tagits bort och är inte en tillgänglig dimension i Analysis Workspace. Använd [USA](/help/components/dimensions/us-states.md) i stället, vilket AppMeasurement som automatiskt samlas in baserat på besökarens plats.
 
 I tidigare versioner av Adobe Analytics `state` variabeln användes när besökarna fyllde i leveransinformation på butikssajter. Den är funktionellt identisk med en prop, men är inte tillgänglig i Analysis Workspace.
 

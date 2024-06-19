@@ -5,7 +5,7 @@ subtopic: data feeds
 title: Referens för datakolumn
 feature: Data Feeds
 exl-id: e1492147-6e7f-4921-b509-898e7efda596
-source-git-commit: 6fbfaf295899b77fc22f79ee58b70a19c7e5563c
+source-git-commit: 75ae77c1da1b578639609888e794e13d965ef669
 workflow-type: tm+mt
 source-wordcount: '3928'
 ht-degree: 0%
@@ -161,7 +161,7 @@ Tidigare uppdateringar av tabellen finns på den här sidans [implementeringshis
 | **`namespace`** | Används inte. En del av en skrapad funktion. | varchar(50) |
 | **`new_visit`** | Flagga som avgör om träffen är ett nytt besök. Anges av Adobe-servrar efter 30 minuters besöksinaktivitet. | tinyint unsigned |
 | **`os`** | Numeriskt ID som representerar besökarens operativsystem. Baserat på `user_agent` kolumn. Nyckelvärdet för `operating_system.tsv` standardsökning och `operating_system_type.tsv` [Dynamisk sökning](dynamic-lookups.md). | int unsigned |
-| **`p_plugins`** | Används inte längre. Lista över plugin-program som är tillgängliga för webbläsaren. Använda JavaScript-funktionen `navigator.plugins()`. | text |
+| **`p_plugins`** | Används inte längre. Lista med plugin-program som är tillgängliga för webbläsaren. Använda JavaScript-funktionen `navigator.plugins()`. | text |
 | **`page_event`** | Den typ av träff som skickas i bildbegäran (standardträff, nedladdningslänk, anpassad länk, slutlänk). Se [Sökning efter sidhändelse](datafeeds-page-event.md). | tinyint unsigned |
 | **`page_event_var1`** | Används endast vid förfrågningar om länkspårningsbilder. URL-adressen till den nedladdningslänk, den avslutningslänk eller anpassade länk som du klickar på. | text |
 | **`page_event_var2`** | Används endast vid förfrågningar om länkspårningsbilder. Länkens anpassade namn (om det anges). | varchar(100) |

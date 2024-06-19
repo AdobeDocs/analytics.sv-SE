@@ -3,7 +3,7 @@ title: Termer som används i Adobe Analytics
 description: Ordlista för Adobe Analytics, definiera vanliga termer som används.
 exl-id: 07507ba1-a512-48d9-8022-6084de4ae262
 feature: Implementation Basics
-source-git-commit: 43c39b99cbae3e714b7f017dec14dd02fa350790
+source-git-commit: 75ae77c1da1b578639609888e794e13d965ef669
 workflow-type: tm+mt
 source-wordcount: '2541'
 ht-degree: 0%
@@ -34,7 +34,7 @@ Använd den här ordlistan för att förstå sammanhanget för många termer som
    * Variabeln Kanal, som fyller i dimensionen Platsavsnitt. Se [Sidvariabler](/help/implement/vars/page-vars/page-variables.md) i Implementeringshandboken.
    * Marknadsföringskanaler, en komponent som hjälper er att förstå hur användarna kommer till er webbplats. Se [Marknadsföringskanaler](/help/components/c-marketing-channels/c-getting-started-mchannel.md) i användarhandboken för komponenter.
 * **Klassificering:** En funktion i Adobe Analytics som tillåter gruppering av dimensionsobjekt. Se [Klassificeringar](/help/components/classifications/c-classifications.md) i användarhandboken för komponenter.
-* **Klickkarta:** Används inte längre. Ett äldre plugin-program för webbläsare som visar vilka områden på webbplatsen som du klickade mest på. Det här verktyget har tagits bort till förmån för aktivitetskarta.
+* **Klickkarta:** Används inte längre. Ett äldre plugin-program för webbläsare som visar vilka områden på webbplatsen som du klickade mest på. Det här verktyget har tagits bort till förmån för Activity Map.
 * **Klickströmsdatafeed:** Se Dataflöde.
 * **Kohort:** En grupp personer som delar gemensamma egenskaper under en viss tidsperiod. Se [Vad är kohortanalys?](/help/analyze/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) i användarhandboken för Analysera.
 * **Samlingsserver:** Se Datainsamlingsserver.

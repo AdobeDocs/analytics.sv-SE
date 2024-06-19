@@ -3,7 +3,7 @@ title: Hur tidsåtgången beräknas i Adobe Analytics
 description: En sammanställd sida med tid för mått och mått.
 feature: Metrics
 exl-id: 71e9b856-8a0a-47be-a73f-4dc7d639a5de
-source-git-commit: 750c4b0ffb52c3f2cf25abcd76ef149a4521109e
+source-git-commit: 75ae77c1da1b578639609888e794e13d965ef669
 workflow-type: tm+mt
 source-wordcount: '1612'
 ht-degree: 4%
@@ -24,7 +24,7 @@ Olika [!UICONTROL 'time spent'] [mått](overview.md) och finns för alla Adobe A
 | [!UICONTROL Time Spent/User (State)] | Ungefär *Totalt antal mobilappssekunder som använts/unika mobilappsbesökare*<br> Representerar den genomsnittliga tiden mobilappsbesökare interagerar med ett visst dimensionsobjekt under besökarens livstid (längden på deras cookie). **Anteckning**: Det här måttet kan inte beräknas oberoende av varandra eftersom nämnaren för den här funktionen är ett internt mått. | Analysis Workspace |
 | [!UICONTROL Average time spent on site] (sekunder) | Representerar den totala tiden som besökare interagerar med en viss dimensionspost, per sekvens med en dimensionspost. Det är inte bara begränsat till &quot;webbplats&quot;-medelvärden som namnet antyder. Mer information om sekvenser finns i avsnittet &quot;Hur tidsåtgången beräknas&quot;.<br>**Anteckning**: Detta mätresultat skiljer sig med största sannolikhet från&quot;Time Spent per Visit&quot; på en dimensionspostnivå på grund av skillnaderna i nämnaren i beräkningen. | Analysis Workspace, Report Builder (visas på några minuter) |
 | [!UICONTROL Average time on site] | Detta är samma mätvärde som *Genomsnittlig tid på plats (sekunder)*, förutom formaterad som Tid (`hh:mm:ss`) | Analysis Workspace |
-| [!UICONTROL Average time spent on page] | Undertryckt mätvärde.<br> I stället rekommenderar vi att du använder&quot;Genomsnittlig tid på plats&quot; om en dimensionspost behöver genomsnittstid. | Report Builder (när det finns en dimension i begäran) |
+| [!UICONTROL Average time spent on page] | Undertryckt mätvärde.<br> I stället rekommenderar Adobe att du använder&quot;Genomsnittlig tid på plats&quot; om medeltiden för ett dimensionsobjekt behövs. | Report Builder (när det finns en dimension i begäran) |
 | [!UICONTROL Total session length], alias. [!UICONTROL Previous session length] | Endast Mobile App SDK. <br>Fastställd nästa gång appen startas för föregående session. Det här måttet beräknas i sekunder och räknas inte när programmet körs i bakgrunden. Detta är ett mått på sessionsnivå.<br>Exempel: Vi installerar programmet ABC och startar och använder det i 2 minuter och stänger sedan programmet. Inga data skickas om den här sessionstiden. Nästa gång vi startar programmet, [!UICONTROL Previous Session Length] skickas med värdet 120. | Analysis Workspace, Report Builder, användargränssnittet för mobiltjänster |
 | [!UICONTROL Average session length] (mobil) | *Total sessionslängd / (startar - första starten)*<br> Endast Mobile App SDK. Detta är ett mått på sessionsnivå. | Report Builder, användargränssnitt för mobiltjänster |
 

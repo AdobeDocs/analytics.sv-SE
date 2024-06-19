@@ -1,12 +1,12 @@
 ---
 title: cookieDomain
-description: Variabeln cookieDomain hjälper till att avgöra vilken domän cookies ska användas på.
+description: (Borttaget) Hjälper till att avgöra vilken domän som cookies ska anges på.
 feature: Variables
 exl-id: 7e8c26b8-d1a7-49f7-9c12-45fb1633c9d7
 role: Admin, Developer
-source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
+source-git-commit: 75ae77c1da1b578639609888e794e13d965ef669
 workflow-type: tm+mt
-source-wordcount: '199'
+source-wordcount: '197'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,6 @@ ht-degree: 0%
 # cookieDomain
 
 >[!IMPORTANT]
->
 >Den här variabeln har tagits bort. Använd [`trackingServer`](trackingserver.md) i stället.
 
 The `cookieDomain` variabeln anger domänen där AppMeasurementet anger cookies. Du kan använda den här variabeln för att explicit ange cookie-domänen i stället för att använda [`cookieDomainPeriods`](cookiedomainperiods.md) variabel.

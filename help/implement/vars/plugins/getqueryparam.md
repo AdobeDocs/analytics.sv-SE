@@ -4,9 +4,9 @@ description: Extrahera värdet för en URL:s frågesträngsparameter.
 feature: Variables
 exl-id: d2d542d1-3a18-43d9-a50d-c06d8bd473b8
 role: Admin, Developer
-source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
+source-git-commit: 75ae77c1da1b578639609888e794e13d965ef669
 workflow-type: tm+mt
-source-wordcount: '738'
+source-wordcount: '737'
 ht-degree: 0%
 
 ---
@@ -136,7 +136,7 @@ s.eVar2 = getQueryParam('ecid,cid,location,pos','|',s.eVar1);
 ### 4.0 (19 mars 2021)
 
 * Versionsnummer har lagts till som kontextdata.
-* Tog bort beroenden för pt-plugin.
+* Tog bort beroenden för `pt` plugin-program.
 
 ### 3.3 (24 september 2019)
 

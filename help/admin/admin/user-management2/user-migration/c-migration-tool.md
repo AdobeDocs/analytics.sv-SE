@@ -4,9 +4,9 @@ title: Användarmigrering av analyser till Admin Console
 feature: Admin Tools
 exl-id: f4bc0e92-af53-40db-8138-44d29e4b25fe
 role: Admin
-source-git-commit: 938795c7378cb1f0537ff84eddeab3feddf8d073
+source-git-commit: 75ae77c1da1b578639609888e794e13d965ef669
 workflow-type: tm+mt
-source-wordcount: '3081'
+source-wordcount: '3078'
 ht-degree: 0%
 
 ---
@@ -269,7 +269,7 @@ Viktig information om migreringsprocessen och hur den påverkar den aktuella anv
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Logga in som </p> </td> 
-   <td colname="col2"> <p> Administratörer som migrerar till Adobe Admin Console kommer inte längre att kunna använda funktionen "Logga in som" för att få åtkomst till icke-administratörskonton som har migrerats till Adobe Admin Console. Den här funktionen har tagits bort från Analytics. </p> </td> 
+   <td colname="col2"> <p> Administratörer som migrerar till Adobe Admin Console kommer inte längre att kunna använda funktionen "Logga in som" för att få åtkomst till icke-administratörskonton som har migrerats till Adobe Admin Console. Den här funktionen har tagits bort. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Användarens förfallodatum och överföring av tillgångar </p> </td> 

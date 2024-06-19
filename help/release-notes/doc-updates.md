@@ -5,7 +5,7 @@ short-title: Analytics documentation updates
 feature: Release Notes
 exl-id: fe8e3c4c-6782-46f7-8e28-4f8f54807788
 mini-toc-levels: 3
-source-git-commit: d48f74d4fa642e34de601466737f16fc228a8199
+source-git-commit: 75ae77c1da1b578639609888e794e13d965ef669
 workflow-type: tm+mt
 source-wordcount: '5517'
 ht-degree: 20%
@@ -140,7 +140,7 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | VISTA | Ny sida som förklarar grunderna i [VISTA-regler](/help/technotes/vista.md). |
 | **September 2022** | |
 | Kombinationsdiagram | Nytt ämne på [kombinationsdiagram](/help/analyze/analysis-workspace/visualizations/combo-charts.md) visualisering. |
-| Uppdaterat plugin-program | Uppdaterad version av [getvalonce](/help/implement/vars/plugins/getvalonce.md) implementerings-plugin. |
+| Uppdaterat plugin-program | Uppdaterad version av [getvalonce](/help/implement/vars/plugins/getvalonce.md) implementeringsplugin. |
 | Ny konfigurationsvariabel | Dokumentation på [collectHighEntropyUserAgentHints](/help/implement/vars/config-vars/collecthighentropyuseragenthints.md) |
 | Kundtips med hög entropi | Nytt avsnitt om hur Adobe använder [klienttips](/help/technotes/client-hints.md) utöver User-Agent för att fastställa enhetsinformation. |
 | Bearbetningsorder | Olika hjälpsidor har sammanställts för att ge ett enda hjälpavsnitt om [Bearbetningsorder](/help/technotes/processing-order.md). |

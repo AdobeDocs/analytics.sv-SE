@@ -4,9 +4,9 @@ title: Om den schemalagda aktivitetshanteraren
 feature: Report Builder
 role: User, Admin
 exl-id: 8bacd7e4-ab50-4b36-842c-a8b6130a58d9
-source-git-commit: 66b7de0b008364e47253d319785c204ca479ab26
+source-git-commit: 75ae77c1da1b578639609888e794e13d965ef669
 workflow-type: tm+mt
-source-wordcount: '741'
+source-wordcount: '745'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Den 21 april 2022 introducerade vi förändringar av schemalagda arbetsuppgifter
 
 Du kommer även fortsättningsvis att kunna schemalägga aktiviteter per Report Builder och låta dem sluta efter högst 99 tillfällen. Observera att återställningen endast gäller för timuppgifter. &quot;slut efter x förekomster&quot; kommer inte att vara tillgängligt för alla andra leveransintervall (dag, vecka, månad och år).
 
-Observera att detta alternativ kommer att vara inaktuellt den 31 januari 2023.
+Observera att detta alternativ upphör den 31 januari 2023.
 Om du har frågor eller support kan du kontakta Adobe kundtjänst.
 
 Den här pausen gäller särskilt för **uppgifter som skapats före den 31 januari 2020**. Inga uppgifter, arbetsböcker eller data tas bort. Aktiviteter som är äldre än två år pausas och inga ytterligare schemalagda aktiviteter skickas.

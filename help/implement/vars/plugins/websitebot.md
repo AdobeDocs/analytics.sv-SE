@@ -4,7 +4,7 @@ description: Identifiera botar dynamiskt med musrörelser.
 feature: Variables
 exl-id: de997254-c604-4ca0-bdda-5920f3a4fa57
 role: Admin, Developer
-source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
+source-git-commit: 75ae77c1da1b578639609888e794e13d965ef669
 workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 0%
@@ -94,7 +94,7 @@ Kopiera och klistra in följande AppMeasurement var som helst i analysfilen efte
 
 ## Använda plugin-programmet
 
-The `websiteBot` plugin utlöser en `s.tl` anrop om icke-robottrafik upptäcks.
+The `websiteBot` plugin-program utlöser en `s.tl` anrop om icke-robottrafik upptäcks.
 
 ## Exempel
 
