@@ -4,9 +4,9 @@ description: (Föråldrat) AppMeasurementet Hjälp avgör var cookies ska lagras
 feature: Variables
 exl-id: c426d6a7-4521-4d50-bb7d-1664920618d8
 role: Admin, Developer
-source-git-commit: 75ae77c1da1b578639609888e794e13d965ef669
+source-git-commit: c7e525b68898a6663f3b40e2293f959d4bd129b2
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '364'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,13 @@ ht-degree: 0%
 # cookieDomainPeriods
 
 >[!IMPORTANT]
->Den här variabeln är inaktuell. Om du använder AppMeasurementet v2.26.x eller senare, eller Adobe Analytics-tillägget v1.9.4 eller senare, identifierar biblioteket automatiskt den domän som cookies ska användas på.
+>Den här variabeln är inaktuell. Om du använder något av följande:
+>
+>* AppMeasurement v2.26.x eller senare
+>* Adobe Analytics-tillägg v1.9.4 eller senare
+>* Adobe Experience Cloud ID-tjänst
+>
+>Den här variabeln gör ingenting eftersom det tillämpliga biblioteket automatiskt identifierar den domän som cookies ska användas på.
 
 The `cookieDomainPeriods` variabeln hjälpte AppMeasurementet att avgöra var Analytics-cookies ska ställas in genom att ange att domänen på den översta nivån hade en extra period. Den här variabeln tillät AppMeasurement för den extra perioden i den översta domänen och ställer in cookies på rätt plats. Om webbplatsens toppnivådomän inte innehåller någon extra period är den här variabeln inte obligatorisk.
 
