@@ -5,9 +5,9 @@ short-title: Analytics documentation updates
 feature: Release Notes
 exl-id: fe8e3c4c-6782-46f7-8e28-4f8f54807788
 mini-toc-levels: 3
-source-git-commit: 75ae77c1da1b578639609888e794e13d965ef669
+source-git-commit: 9a44c2df3cb65a23c0e38a8af3892d045a279818
 workflow-type: tm+mt
-source-wordcount: '5517'
+source-wordcount: '5548'
 ht-degree: 20%
 
 ---
@@ -27,6 +27,8 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | --- | --- |
 | **Juni 2024** | |
 | Förbättrad dokumentation för intelligenta aviseringar | Uppdaterad och förbättrad dokumentation om varningar. Uppdateringarna innehåller information om [skapa aviseringar](/help/analyze/analysis-workspace/c-intelligent-alerts/alert-builder.md), [hantera aviseringar](/help/analyze/analysis-workspace/c-intelligent-alerts/alert-manager.md)och [översiktsinformation](/help/analyze/analysis-workspace/c-intelligent-alerts/intellligent-alerts.md). |
+| Föråldrat `cookieDomainPeriods` | Nu när AppMeasurementet automatiskt hittar rätt domän att ange cookies på [`cookieDomainPeriods`](/help/implement/vars/config-vars/cookiedomainperiods.md) variabeln är inaktuell. |
+| Dokumentation för Data Connectors | Flyttade Data Connectors-sidan för upphörande av livscykeln till [Avbrutna produkter](https://experienceleague.adobe.com/en/docs/discontinued/using/data-connectors). |
 | **Maj 2024** | |
 | Nödvändig information vid användning av organisationsprincipbegränsningar med Google Cloud Platform i Data Feeds och Data Warehouse | Lagt till Google Cloud-plattformens organisations-ID som ägs av Adobe i [Dataflöden](/help/export/analytics-data-feed/create-feed.md) och [Data Warehouse](/help/export/data-warehouse/create-request/dw-request-report-destinations.md) dokumentation. <p>Den här informationen krävs endast för organisationer som använder [Begränsningar för organisationsprinciper](https://cloud.google.com/storage/docs/org-policy-constraints) i Google Cloud Platform.</p> |
 | Dokumentation om hur du lägger till komponenter i projekt | Lagt till allmän information om hur du [lägga till olika typer av komponenter i projekt i Analysis Workspace](/help/analyze/analysis-workspace/components/use-components-in-workspace.md). |

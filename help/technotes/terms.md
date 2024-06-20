@@ -3,9 +3,9 @@ title: Termer som används i Adobe Analytics
 description: Ordlista för Adobe Analytics, definiera vanliga termer som används.
 exl-id: 07507ba1-a512-48d9-8022-6084de4ae262
 feature: Implementation Basics
-source-git-commit: 75ae77c1da1b578639609888e794e13d965ef669
+source-git-commit: f68cf0de5e7689d8245572b060a3d81c3bf85072
 workflow-type: tm+mt
-source-wordcount: '2541'
+source-wordcount: '2528'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ Använd den här ordlistan för att förstå sammanhanget för många termer som
 * **Kundattribut:** En Experience Cloud-funktion som tillåter överföring av attributdata. Se [Kundattribut](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html) i användarhandboken för bastjänsterna.
 * **Kundsupportrepresentant:** En utsedd användare som har rätt att interagera direkt med Adobe kundtjänst. Se [Kundsupportrepresentanter](https://helpx.adobe.com/experience-cloud/supported-users.html) i Experience Cloud Knowledgebase.
 * **Datainsamlingsserver:** Adobe-ägda servrar som tar emot och bearbetar data. Bildbegäranden skickas till Adobe datainsamlingsservrar för användning vid rapportering.
-* **Dataanslutningar:** En komplett utvecklingslösning som gör att en tredje part kan automatisera överföringen av data till Adobe Analytics. Kunder från den tredje parten kan använda en dataanslutning för att förbättra sina data i Adobe Analytics. De flesta dataanslutningar använder ett liknande arbetsflöde som används i datakällor. Se [Data Connectors](/help/import/data-connectors/data-connectors-eol.md) i importhandboken.
+* **Dataanslutningar:** En pensionerad utvecklingslösning som gör att en tredje part kan automatisera överföringen av data till Adobe Analytics. Kunder från den tredje parten kan använda en dataanslutning för att förbättra sina data i Adobe Analytics. Ersatt med Adobe Exchange Marketplace.
 * **Dataflöde:** En export av rådata som visar alla träffar som rader och variabler som separata kolumner. De vanligaste är att exportera Adobe Analytics-data till en tredjepartsdatabas. Se [Dataflöden](/help/export/analytics-data-feed/data-feed-overview.md) i Exportera användarhandbok.
 * **Datakällor:** Användare kan överföra data från en fil till Adobe Analytics. Filen hämtas vanligtvis från en FTP-plats. Se [Datakällor](/help/import/data-sources/overview.md) i importhandboken.
 * **Data Warehouse:** En funktion i Adobe Analytics som gör att du kan begära större rapporter. Se [Data Warehouse](/help/export/data-warehouse/data-warehouse.md) i Exportera användarhandbok.

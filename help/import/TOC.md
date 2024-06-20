@@ -4,10 +4,10 @@ audience: end-user
 user-guide-title: Importguide för Analytics
 breadcrumb-title: Användarhandbok om import
 user-guide-description: Hämta in data till Adobe Analytics från externa källor, antingen i stora volymer eller i realtid.
-source-git-commit: 8343c67a01cc04884b73cdcb934911ade81c5a20
+source-git-commit: f68cf0de5e7689d8245572b060a3d81c3bf85072
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '64'
+ht-degree: 53%
 
 ---
 
@@ -24,10 +24,8 @@ ht-degree: 0%
    + [Filformat](data-sources/file-format.md)
    + [Filöverföring](data-sources/file-upload.md)
    + [Transaktions-ID](data-sources/transactionid.md)
-   + [Vanliga frågor](data-sources/faq.md)
+   + [Vanliga frågor och svar](data-sources/faq.md)
 + [API för insättning av data i bulk](bulk-data-insertion-api/bulk-data-insert.md)
 + [API för datainfogning](c-data-insertion-api/c-data-insertion-api.md)
-+ Data Connectors {#dataconnectors}
-   + [Slutet av livscykeln för Analytics Data Connectors](data-connectors/data-connectors-eol.md)
 + Importera användningsfall {#use-cases}
    + [Importera mått för betald sökning med datakällor](use-cases/paid-search-metrics.md)
