@@ -3,9 +3,10 @@ title: Skapa hyperlänkar i en frihandstabell i Analysis Workspace
 description: Lär dig skapa hyperlänkar för dimensionsobjekt i en frihandstabell i Analysis Workspace
 feature: Freeform Tables
 role: User, Admin
-source-git-commit: 9fcebd7a8fb3a3d98eebef53a748c8ac585cbcd1
+exl-id: df846a73-e3e3-4376-844e-48153a20e5d6
+source-git-commit: 00a0288616401045585f70c768a20fc122e584c9
 workflow-type: tm+mt
-source-wordcount: '1722'
+source-wordcount: '1730'
 ht-degree: 0%
 
 ---
@@ -35,6 +36,8 @@ Tänk på följande när du skapar hyperlänkar för dimensionsobjekt:
   Om du skapar en hyperlänk som har en ogiltig URL, eller om du skapar en hyperlänk som refererar till ett dimensionsobjekt som inte har något URL-värde (genom att referera dimensionsobjektet direkt eller med `$value` eller `$breakdown` -variabler) kommer användare som klickar på hyperlänken att se ett felmeddelande om att URL:en är ogiltig.
 
 * Hyperlänkar som skapas för ett enskilt dimensionsobjekt åsidosätter hyperlänkar som skapas på dimensionen.
+
+* Hyperlänkar fungerar inte i [hämtade PDF-filer](/help/analyze/analysis-workspace/curate-share/download-send.md).
 
 Så här skapar du hyperlänkar för ett eller flera dimensionsobjekt:
 
@@ -130,4 +133,3 @@ Så här tar du bort hyperlänkar från dimensionsobjekt:
    Hyperlänken tas bort från den enskilda dimensionsposten (om du har valt en enskild dimensionspost) eller från alla dimensionsposter (om du har valt dimensionsnamnet i dimensionskolumnens rubrik).
 
 1. [Spara projektet](/help/analyze/analysis-workspace/build-workspace-project/save-projects.md) för att spara ändringarna.
-
