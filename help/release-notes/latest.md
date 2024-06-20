@@ -3,16 +3,16 @@ title: Aktuella versionsinformation för Adobe Analytics
 description: Visa den aktuella versionsinformationen för Adobe Analytics
 feature: Release Notes
 exl-id: 97d16d5c-a8b3-48f3-8acb-96033cc691dc
-source-git-commit: df9470f1870879ac91f00a021ed890bc6fb10cda
+source-git-commit: 54be0400a76b1f8dbbf2aab99ed8d771d67e5bc3
 workflow-type: tm+mt
-source-wordcount: '987'
-ht-degree: 1%
+source-wordcount: '1051'
+ht-degree: 0%
 
 ---
 
 # Aktuell versionsinformation för Adobe Analytics (juni 2024)
 
-**Senaste uppdatering**: 13 juni 2024
+**Senaste uppdatering**: 20 juni 2024
 
 Versionsanteckningarna gäller frisläppningsperioden 12 juni 2024 till juli. Adobe Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.md) vilket ger en mer skalbar, stegvis metod för driftsättning av funktioner. Därför uppdateras versionsinformationen flera gånger i månaden. Kontrollera dem regelbundet.
 
@@ -26,6 +26,8 @@ Versionsanteckningarna gäller frisläppningsperioden 12 juni 2024 till juli. Ad
 | **Administratörsinställningar för att styra konton och platser som används för export och import** | En ny [fliken Administratörsinställningar i Platshanteraren](/help/components/locations/locations-manager.md#configure-company-wide-settings-administrators-only) ger administratörer kontroll över om användare kan skapa och redigera konton och platser. De här inställningarna gäller när användare [konfigurera molnimport- och exportkonton](/help/components/locations/configure-import-accounts.md) och [konfigurera platser för molnimport och -export](/help/components/locations/configure-import-locations.md). <p>Administratörer kan också begränsa vilka typer av konton (Google Cloud Platform, Azure RBAC, Amazon S3 och så vidare) som användare kan skapa och använda.</p><p>Tidigare kunde alla användare skapa, redigera och använda konton och platser för alla typer av konton.</p> | 12 juni 2024 | 20 juni 2024 |
 | **Dela konton och platser som används för export och import** | Användarna kan nu göra de konton och platser de skapar tillgängliga för alla användare i organisationen. Endast konto- och platsägare och systemadministratörer kan redigera och ta bort konton och platser.<p>Tidigare kunde konton och platser bara användas av den användare som skapade dem.</p><p>Dessa inställningar är tillgängliga när användare [konfigurera molnimport- och exportkonton](https://experienceleague.adobe.com/en/docs/analytics/components/locations/configure-import-accounts) och [konfigurera platser för molnimport och -export](https://experienceleague.adobe.com/en/docs/analytics/components/locations/configure-import-locations). </p> | 12 juni 2024 | 20 juni 2024 |
 | **Activity Map för att använda färre serveranrop för Web SDK** | För närvarande räknas länkarhändelser i Activity Map som sina egna händelser och medför extra kostnader. Den här förbättringen tar några länkhändelser och paketerar dem i nästa träff, ungefär som hur händelser hanteras av AppMeasurementet. <p>(Länk till uppdaterad dokumentation följer)</p> | Open Beta börjar 19 juni 2024 | TBD |
+| **API-guide för nya datakällor** | The [API för Adobe Analytics 2.0-datakällor](https://developer.adobe.com/analytics-apis/docs/2.0/guides/endpoints/data-sources/) slutpunkter innehåller metoder för att skapa, visa, ta bort och överföra till konton för datakällor. |  | Ute nu |
+| **Nya metoder i API-handboken för klassificeringar** | Två nya metoder för att hämta filpartitioner har lagts till i API-guiden för klassificeringar.<ul><li>[Hämta filpartition för klassificeringsjobb](https://developer.adobe.com/analytics-apis/docs/2.0/guides/endpoints/classifications/#get-classification-job-file-partition-list)</li><li>[Hämta del av klassificeringsexportjobbfil](https://developer.adobe.com/analytics-apis/docs/2.0/guides/endpoints/classifications/#get-classification-export-job-file-part)</li></ul> |  | Ute nu |
 
 {style="table-layout:auto"}
 
