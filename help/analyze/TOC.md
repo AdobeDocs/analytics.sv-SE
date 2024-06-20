@@ -4,9 +4,9 @@ audience: end-user
 user-guide-title: Handbok om Analytics-verktyg
 breadcrumb-title: Användarhandbok om verktyg
 user-guide-description: Lär dig hur du använder verktyg i Analytics som Analysis Workspace, Analytics Dashboards, Report Builder och Activity Map.
-source-git-commit: d48f74d4fa642e34de601466737f16fc228a8199
+source-git-commit: 9fcebd7a8fb3a3d98eebef53a748c8ac585cbcd1
 workflow-type: tm+mt
-source-wordcount: '1005'
+source-wordcount: '1017'
 ht-degree: 11%
 
 ---
@@ -31,6 +31,7 @@ ht-degree: 11%
       + [Projektöversikt](analysis-workspace/build-workspace-project/freeform-overview.md)
       + [Skapa projekt](analysis-workspace/build-workspace-project/create-projects.md)
       + [Spara projekt](analysis-workspace/build-workspace-project/save-projects.md)
+      + [Innehållsförteckning för projekt](/help/analyze/analysis-workspace/build-workspace-project/project-table-of-contents.md)
       + Mappar på arbetsytan {#workspace-folders}
          + [Om mappar i arbetsytan](analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
          + [Skapa mappar och undermappar](analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)
@@ -78,6 +79,7 @@ ht-degree: 11%
       + [Hantera datakällor](analysis-workspace/visualizations/t-sync-visualization.md)
       + Frihandsregister {#freeform-table}
          + [Frihandsregister](analysis-workspace/visualizations/freeform-table/freeform-table.md)
+         + [Skapa hyperlänkar för dimensioner i en frihandstabell](/help/analyze/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md)
          + Kolumn- och radinställningar {#column-row-settings}
             + [Kolumninställningar](analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)
             + [Radinställningar](analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)

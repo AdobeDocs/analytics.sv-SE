@@ -3,9 +3,10 @@ description: Lär dig lägga till komponenter i ett projekt i Analysis Workspace
 title: Använda komponenter i Analysis Workspace
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: 0928628c9cffa91f90fa5d8af535eb834bb7502d
+exl-id: fb56e794-67e3-4f85-960e-b90684300fa0
+source-git-commit: 9fcebd7a8fb3a3d98eebef53a748c8ac585cbcd1
 workflow-type: tm+mt
-source-wordcount: '988'
+source-wordcount: '872'
 ht-degree: 0%
 
 ---
@@ -34,7 +35,11 @@ Mer information om de typer av komponenter du kan lägga till finns i [Komponent
 
 1. Bläddra till eller sök efter komponenten som du vill lägga till och dra den sedan till en panel eller visualisering i projektet.
 
-   Du kan till exempel dra ett segment till segmentets släppzon i ett panelhuvud.
+1. (Valfritt) Dra en komponent till segmentets släppzon i ett panelhuvud.
+
+   Segmenten gäller för allt innehåll på panelen.
+
+   Mer information om hur du kan använda segmentets släppzon på en panel för att filtrera panelen finns i [Släppzon](/help/analyze/analysis-workspace/c-panels/panels.md#drop-zone) in [Paneler - översikt](/help/analyze/analysis-workspace/c-panels/panels.md).
 
    ![släppa ett segment i släppzonen](assets/segment-dropzone.png)
 
@@ -64,6 +69,10 @@ Mer information om de typer av komponenter du kan lägga till finns i [Komponent
 
      ![släppa ett segment i släppzonen](assets/segment-dropzone.png)
 
+1. (Valfritt) Du kan dela upp dimensioner och dimensionsobjekt i Analysis Workspace med andra komponenter.
+
+   Mer information finns i [Dela upp dimensioner](/help/analyze/analysis-workspace/components/dimensions/t-breakdown-fa.md).
+
 Mer information om hur du använder dimensioner i Analysis Workspace finns i [Förhandsvisa dimensioner](/help/analyze/analysis-workspace/components/dimensions/view-dimensions.md), [Dela upp dimensioner](/help/analyze/analysis-workspace/components/dimensions/t-breakdown-fa.md)och [Tidsdelningsdimensioner](/help/analyze/analysis-workspace/components/dimensions/time-parting-dimensions.md).
 
 ## Lägga till mätvärden i ett projekt
@@ -92,31 +101,23 @@ Mer information om hur du använder mätvärden i Analysis Workspace finns i [M�
 
 [Segment](/help/components/segmentation/seg-overview.md) gör att du kan identifiera undergrupper av besökare baserat på egenskaper eller specifika interaktioner.
 
-Så här lägger du till ett segment i ett projekt i Analysis Workspace:
+Du kan använda segment i Analysis Workspace på något av följande sätt:
 
-1. Börja lägga till ett segment i ditt projekt i Analysis Workspace, enligt beskrivningen i [Börja lägga till komponenter i ett projekt](#begin-adding-components-to-a-project).
+### Lägga till segment i en panel
 
-1. Välj en av följande metoder för att börja filtrera panelen:
-
-   * Dra ett enskilt segment från den vänstra listen till segmentets släppzon.
-
-     ![släppa ett segment i släppzonen](assets/segment-dropzone.png)
-
-   * Håll ned Skift eller Ctrl om du vill markera flera segment i den vänstra listen och håll sedan ned Skift när du släpper dem i segmentets släppzon.
-
-     ![släppa flera segment i släppzonen](assets/segment-dropzoone-multiple.png)
-
-     Då skapas en nedrullningsbar meny där användarna på panelen kan välja vilket filter de vill använda. Den nedrullningsbara menyn innehåller en [!UICONTROL **Inget filter**] som användare kan markera, vilket lämnar panelen ofiltrerad.
-
-     Du kan välja (x) för att ta bort ett alternativ från listrutan. Om du tar bort [!UICONTROL **Inget filter**] måste du ange ett filter.
-
-   * Skapa ad hoc-segment genom att dra icke-segmentkomponenter till släppzonen. Detta kan spara tid och arbete när du går till segmentbyggaren. Segment som skapas på det här sättet definieras automatiskt som träffnivåsegment. Du kan ändra den här definitionen genom att klicka på informationsikonen (i) bredvid segmentet, sedan den pennformade redigeringsikonen och redigera den i segmentbyggaren.
-
-     Ad hoc-segment är en typ av snabbsegment och är lokala för projektet. De visas inte i den vänstra listen om du inte gör dem offentliga.
-
-     Mer information finns i [Snabbsegment](/help/analyze/analysis-workspace/components/segments/quick-segments.md).
+När du lägger till segment på en panel används segmenten på allt innehåll på panelen.
 
 Mer information om hur du kan använda segmentets släppzon på en panel för att filtrera panelen finns i [Släppzon](/help/analyze/analysis-workspace/c-panels/panels.md#drop-zone) in [Paneler - översikt](/help/analyze/analysis-workspace/c-panels/panels.md).
+
+### Lägga till segment i en kolumn i en frihandstabell
+
+När du lägger till segment i en kolumn i en frihandstabell används segmenten på allt innehåll i tabellkolumnen.
+
+### Använd segment när du skapar beräknade värden
+
+I verktyget Beräknade mätvärden kan du använda segment i måttdefinitionen.
+
+Mer information finns i [Segmenterade mätvärden](/help/components/c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/metrics-with-segments.md).
 
 ## Lägga till datumintervall i ett projekt
 
