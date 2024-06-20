@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: Konfigurera molnimport- och exportkonton
 feature: Classifications
 exl-id: 40d3d3f1-1047-4c37-8caf-6b0aabaa590a
-source-git-commit: 82c6d1e6d748a9b52b5988af5abb78d2c27ca077
+source-git-commit: df9470f1870879ac91f00a021ed890bc6fb10cda
 workflow-type: tm+mt
-source-wordcount: '1512'
+source-wordcount: '1469'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ Så här konfigurerar du ett molnimport- eller exportkonto:
 
    The [!UICONTROL **Lägg till konto**] visas.
 
-1. Ange följande information: |Fält | Funktion | |—|—| | [!UICONTROL **Platskontonamn**] | Namnet på platskontot. Det här namnet visas när du skapar en plats | | [!UICONTROL **Beskrivning av platskonto**] | Ange en kort beskrivning av kontot för att hjälpa till att skilja det från andra konton av samma kontotyp. | | [!UICONTROL **Gör kontot tillgängligt för alla användare i organisationen**] | **Obs!** Den här funktionen är i den begränsade testfasen och är kanske inte tillgänglig än i din miljö. Den här anteckningen tas bort när funktionen är allmänt tillgänglig. Mer information om Analytics-processen finns i [Adobe Analytics funktionsreleaser](/help/release-notes/releases.md). <p>Aktivera det här alternativet om du vill tillåta andra användare i organisationen att använda kontot.</p> <p>Tänk på följande när du delar konton:</p><ul><li>Konton som du delar kan inte tas bort.</li><li>Delade konton kan bara redigeras av kontoägaren.</li><li>Vem som helst kan skapa en plats för det delade kontot.</li></ul> | | [!UICONTROL **Kontotyp**] | Välj typ av molnkonto. Vi rekommenderar att du har ett enda konto för varje kontotyp, med flera platser efter behov inom det kontot.<p>Systemadministratörer kan begränsa vilka kontotyper som användare kan skapa enligt beskrivningen i [Konfigurera om användare kan skapa konton](/help/components/locations/locations-manager.md#configure-whether-users-can-create-accounts). Kontakta systemadministratören om du inte kan skapa konton enligt beskrivningen i det här avsnittet.</p> |
+1. Ange följande information: |Fält | Funktion | |—|—| | [!UICONTROL **Platskontonamn**] | Namnet på platskontot. Det här namnet visas när du skapar en plats | | [!UICONTROL **Beskrivning av platskonto**] | Ange en kort beskrivning av kontot för att hjälpa till att skilja det från andra konton av samma kontotyp. | | [!UICONTROL **Gör kontot tillgängligt för alla användare i organisationen**] | Aktivera det här alternativet om du vill tillåta andra användare i organisationen att använda kontot.<p>Tänk på följande när du delar konton:</p><ul><li>Konton som du delar kan inte tas bort.</li><li>Delade konton kan bara redigeras av kontoägaren.</li><li>Vem som helst kan skapa en plats för det delade kontot.</li></ul> | | [!UICONTROL **Kontotyp**] | Välj typ av molnkonto. Vi rekommenderar att du har ett enda konto för varje kontotyp, med flera platser efter behov inom det kontot.<p>Systemadministratörer kan begränsa vilka kontotyper som användare kan skapa enligt beskrivningen i [Konfigurera om användare kan skapa konton](/help/components/locations/locations-manager.md#configure-whether-users-can-create-accounts). Kontakta systemadministratören om du inte kan skapa konton enligt beskrivningen i det här avsnittet.</p> |
 1. I [!UICONTROL **Kontoegenskaper**] anger du information som är specifik för den kontotyp som du har valt.
 
    Utöka det avsnitt nedan som motsvarar [!UICONTROL **Kontotyp**] som du valde. (Ytterligare äldre kontotyper är också tillgängliga, men rekommenderas inte.)
