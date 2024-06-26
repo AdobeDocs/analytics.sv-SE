@@ -4,9 +4,9 @@ title: Paneler - översikt
 feature: Panels
 role: User, Admin
 exl-id: dd1a3c40-8b5b-47dd-86d9-da766575ee46
-source-git-commit: 77401e3e4f69c67d1010905be15bc9ccb4b73e90
+source-git-commit: aacba26d0eb612146a9e0bf6386f9e755a9e8f07
 workflow-type: tm+mt
-source-wordcount: '1539'
+source-wordcount: '1551'
 ht-degree: 0%
 
 ---
@@ -107,11 +107,13 @@ Om du högerklickar på ett nedrullningsbart segment finns följande alternativ:
 
 #### Använda statiska rullgardinssegment
 
-Användare kan använda den nedrullningsbara segmentmenyn på något av följande sätt för att filtrera panelen:
+Använd den nedrullningsbara segmentmenyn på något av följande sätt för att filtrera panelen:
 
 * Använd ett segment på panelen genom att välja segmentet på den nedrullningsbara menyn.
 
 * Använd flera segment på panelen genom att markera flera segment i listrutan. Panelen filtreras så att den innehåller något av de markerade segmenten.
+
+  Om du vill ta bort ett segment från listan markerar du det igen i listrutan.
 
   ![Markera flera segment](assets/dropdown-filter-multiselect.png)
 
