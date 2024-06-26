@@ -3,7 +3,7 @@ title: Aktuella versionsinformation för Adobe Analytics
 description: Visa den aktuella versionsinformationen för Adobe Analytics
 feature: Release Notes
 exl-id: 97d16d5c-a8b3-48f3-8acb-96033cc691dc
-source-git-commit: 54be0400a76b1f8dbbf2aab99ed8d771d67e5bc3
+source-git-commit: 95ef9207bcde3b0a8ecfd8ff525103e251c4920e
 workflow-type: tm+mt
 source-wordcount: '1051'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Aktuell versionsinformation för Adobe Analytics (juni 2024)
 
-**Senaste uppdatering**: 20 juni 2024
+**Senaste uppdatering**: 26 juni 2024
 
 Versionsanteckningarna gäller frisläppningsperioden 12 juni 2024 till juli. Adobe Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.md) vilket ger en mer skalbar, stegvis metod för driftsättning av funktioner. Därför uppdateras versionsinformationen flera gånger i månaden. Kontrollera dem regelbundet.
 
@@ -21,11 +21,11 @@ Versionsanteckningarna gäller frisläppningsperioden 12 juni 2024 till juli. Ad
 | Funktion | Beskrivning | [Startar](releases.md) | [Allmän tillgänglighet](releases.md) |
 | ----------- | ---------- | ------- | ---- |
 | **Markera flera fält i ett nedrullningsbart filter** | När flera fält har lagts till i ett nedrullningsbart filter kan användare nu markera mer än ett fält i taget. Panelen filtreras så att den innehåller något av de markerade fälten. <p>Tidigare kunde användaren bara markera ett fält i taget i ett droppfilter.</p><p>Mer information finns i [Statiska rullgardinssegment](/help/analyze/analysis-workspace/c-panels/panels.md#static-drop-down-segments) in [Paneler - översikt](/help/analyze/analysis-workspace/c-panels/panels.md).</p> |  | 19 juni 2024 |
-| **Innehållsförteckning för arbetsyteprojekt** | En ny innehållsförteckning är nu tillgänglig för projekt. Innehållsförteckningen innehåller länkar som gör att användare snabbt kan gå till paneler och visualiseringar i projektet. Innehållsförteckningen kan aktiveras för enskilda projekt eller för alla projekt för en viss användare.<p>Mer information finns i [Innehållsförteckning för projekt](/help/analyze/analysis-workspace/build-workspace-project/project-table-of-contents.md).</p> |  | 19 juni 2024 |
+| **Innehållsförteckning för Workspace-projekt** | En ny innehållsförteckning är nu tillgänglig för projekt. Innehållsförteckningen innehåller länkar som gör att användare snabbt kan gå till paneler och visualiseringar i projektet. Innehållsförteckningen kan aktiveras för enskilda projekt eller för alla projekt för en viss användare.<p>Mer information finns i [Innehållsförteckning för projekt](/help/analyze/analysis-workspace/build-workspace-project/project-table-of-contents.md).</p> |  | 19 juni 2024 |
 | **Skapa hyperlänkar för dimensionsobjekt i en frihandstabell** | Du kan skapa hyperlänkar för ett eller flera dimensionsobjekt för att göra dem klickbara i en frihandstabell i Analysis Workspace. <p>Du kan skapa hyperlänkar för dimensionsobjekt som har URL-värden, eller så kan du skapa anpassade URL:er för dimensionsobjekt som inte har URL-värden.</p><p>Du kan skapa dynamiska anpassade URL:er för flera dimensionsobjekt med hjälp av variabler. Variabler kan referera till värdet för en dimensionsartikel eller referera till uppdelningsdimensionen.</p><p>Mer information finns i [Skapa hyperlänkar för dimensioner i en frihandstabell](/help/analyze/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md).</p> |  | 19 juni 2024 |
 | **Administratörsinställningar för att styra konton och platser som används för export och import** | En ny [fliken Administratörsinställningar i Platshanteraren](/help/components/locations/locations-manager.md#configure-company-wide-settings-administrators-only) ger administratörer kontroll över om användare kan skapa och redigera konton och platser. De här inställningarna gäller när användare [konfigurera molnimport- och exportkonton](/help/components/locations/configure-import-accounts.md) och [konfigurera platser för molnimport och -export](/help/components/locations/configure-import-locations.md). <p>Administratörer kan också begränsa vilka typer av konton (Google Cloud Platform, Azure RBAC, Amazon S3 och så vidare) som användare kan skapa och använda.</p><p>Tidigare kunde alla användare skapa, redigera och använda konton och platser för alla typer av konton.</p> | 12 juni 2024 | 20 juni 2024 |
 | **Dela konton och platser som används för export och import** | Användarna kan nu göra de konton och platser de skapar tillgängliga för alla användare i organisationen. Endast konto- och platsägare och systemadministratörer kan redigera och ta bort konton och platser.<p>Tidigare kunde konton och platser bara användas av den användare som skapade dem.</p><p>Dessa inställningar är tillgängliga när användare [konfigurera molnimport- och exportkonton](https://experienceleague.adobe.com/en/docs/analytics/components/locations/configure-import-accounts) och [konfigurera platser för molnimport och -export](https://experienceleague.adobe.com/en/docs/analytics/components/locations/configure-import-locations). </p> | 12 juni 2024 | 20 juni 2024 |
-| **Activity Map för att använda färre serveranrop för Web SDK** | För närvarande räknas länkarhändelser i Activity Map som sina egna händelser och medför extra kostnader. Den här förbättringen tar några länkhändelser och paketerar dem i nästa träff, ungefär som hur händelser hanteras av AppMeasurementet. <p>(Länk till uppdaterad dokumentation följer)</p> | Open Beta börjar 19 juni 2024 | TBD |
+| **Activity Map för att använda färre serveranrop för Web SDK** | För närvarande räknas länkarhändelser i Activity Map som sina egna händelser och medför extra kostnader. Den här förbättringen tar några länkhändelser och paketerar dem i nästa träff, ungefär som hur händelser hanteras av AppMeasurementet. <p>(Länk till uppdaterad dokumentation följer)</p> | Öppna Beta från 10 juli 2024 | TBD |
 | **API-guide för nya datakällor** | The [API för Adobe Analytics 2.0-datakällor](https://developer.adobe.com/analytics-apis/docs/2.0/guides/endpoints/data-sources/) slutpunkter innehåller metoder för att skapa, visa, ta bort och överföra till konton för datakällor. |  | Ute nu |
 | **Nya metoder i API-handboken för klassificeringar** | Två nya metoder för att hämta filpartitioner har lagts till i API-guiden för klassificeringar.<ul><li>[Hämta filpartition för klassificeringsjobb](https://developer.adobe.com/analytics-apis/docs/2.0/guides/endpoints/classifications/#get-classification-job-file-partition-list)</li><li>[Hämta del av klassificeringsexportjobbfil](https://developer.adobe.com/analytics-apis/docs/2.0/guides/endpoints/classifications/#get-classification-export-job-file-part)</li></ul> |  | Ute nu |
 
@@ -64,7 +64,7 @@ AN-346470; AN-346850; AN-347227; AN-348145; AN-348564; AN-349001; AN-349008; AN-
 
 ## AppMeasurement
 
-De senaste uppdateringarna av AppMeasurement (version 2.26.0) finns på [AppMeasurement för versionsinformation för JavaScript](https://experienceleague.adobe.com/docs/analytics/implementation/appmeasurement-updates.html).
+De senaste uppdateringarna av AppMeasurement (version 2.26.0) finns på [AppMeasurement för JavaScript versionsinformation](https://experienceleague.adobe.com/docs/analytics/implementation/appmeasurement-updates.html).
 
 
 ## Relaterade resurser
