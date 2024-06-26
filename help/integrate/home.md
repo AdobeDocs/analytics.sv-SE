@@ -1,20 +1,20 @@
 ---
-title: Analytics-integrering
+title: Analysintegrering
 description: Lär dig hur du kan integrera data från andra platser i Adobe Analytics.
 exl-id: 89debfb1-347b-4f0a-9f3a-4a82df51c8de
 feature: Audience Analytics, Advertising Analytics, Campaign Integration, AEM Assets Reporting, Activity Map
-source-git-commit: d9948fbb63d44c851e08745c77af5618de84a89c
+source-git-commit: cf7a3abc5e9d4bea834767d074eb5e66f30ea332
 workflow-type: tm+mt
-source-wordcount: '178'
-ht-degree: 61%
+source-wordcount: '165'
+ht-degree: 54%
 
 ---
 
-# Analytics-integrering
+# Analysintegrering
 
 ![Banderoll](../../assets/doc_banner_integrate.png)
 
-Den här guiden fokuserar på att integrera flera Adobe Experience Cloud-lösningar, som Audience Manager, Advertising Cloud eller Target. Den innehåller följande uppgifter:
+Den här guiden fokuserar på att integrera flera Adobe Experience Cloud-lösningar, t.ex. Audience Manager, Advertising Cloud eller Target. Den innehåller följande uppgifter:
 
 * **Audience Analytics:** Integrera Adobe Audience Manager med Adobe Analytics.
 * **Advertising Analytics:** Se betalda sökdata sida vid sida med Adobe Analytics-data.
@@ -41,6 +41,6 @@ Här är en videoöversikt över Adobe Analytics:
 ## Viktiga Analytics-resurser
 
 * [Kontakta kundtjänst](https://experienceleague.adobe.com/?support-solution=Analytics&amp;lang=sv#support)
-* [Analytics-forum](https://forums.adobe.com/community/experience-cloud/analytics-cloud/analytics)
+* [Adobe Analytics Community på Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community)
 * [Adobe Analytics-resurser](https://forums.adobe.com/message/10660755)
 * [Experience League](https://landing.adobe.com/experience-league/)

@@ -3,10 +3,10 @@ title: Komponenthandbok för Analytics
 description: Läs om de olika komponenterna som Adobe Analytics erbjuder.
 exl-id: 172f816a-b90e-4a5a-8c92-f92f2b1663f3
 feature: Components
-source-git-commit: 811e321ce96aaefaeff691ed5969981a048d2c31
+source-git-commit: cf7a3abc5e9d4bea834767d074eb5e66f30ea332
 workflow-type: tm+mt
-source-wordcount: '223'
-ht-degree: 76%
+source-wordcount: '211'
+ht-degree: 73%
 
 ---
 
@@ -21,7 +21,7 @@ Analytics-komponenterna hjälper er att finjustera och förbättra dataanalysen.
 * **Segmentering:** Fokusera på en delmängd av data.
 * **Beräknade mätvärden:** Använd enkla formler för att kombinera mätvärden eller avancerade funktioner för statistiska analyser.
 * **Virtuella rapportsviter:** Skapa en virtuell datasilo baserat på en rapportsvit. Möjlighet att rensa eller segmentera data för en bättre användarupplevelse. Vissa funktioner kan bara användas i virtuella rapportsviter.
-* **Enhetsövergripande analys**: Med en särskild typ av virtuellt rapportpaket kan du konfigurera enhetsövergripande analys.
+* **Enhetsövergripande analys**: En särskild typ av virtuellt rapportpaket gör att du kan konfigurera enhetsövergripande analys.
 * **Varningar:** Få aviseringar när tidsdata överskrider eller underskrider ett tröskelvärde.
 * **Klassificeringar:** Ordna om och gruppera dimensioner för fler insikter.
 * **Realtidsrapportering:** Få rapporter och trender så fort de blir tillgängliga.
@@ -43,6 +43,6 @@ Här är en videoöversikt över Adobe Analytics:
 ## Viktiga Analytics-resurser
 
 * [Kontakta kundtjänst](https://experienceleague.adobe.com/?support-solution=Analytics&amp;lang=sv#support)
-* [Analytics-forum](https://forums.adobe.com/community/experience-cloud/analytics-cloud/analytics)
+* [Adobe Analytics Community på Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community)
 * [Adobe Analytics-resurser](https://forums.adobe.com/message/10660755)
 * [Experience League](https://landing.adobe.com/experience-league/)

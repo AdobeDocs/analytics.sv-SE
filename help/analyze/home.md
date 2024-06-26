@@ -4,10 +4,10 @@ description: Produktdokumentation och självhjälp för Analysis Workspace, kont
 feature: Workspace Basics
 role: User, Admin
 exl-id: 8ed81356-626e-4334-9e20-b481e6ba654a
-source-git-commit: 11ef092984f37547ed408bedb977fccb8b53dba8
+source-git-commit: cf7a3abc5e9d4bea834767d074eb5e66f30ea332
 workflow-type: tm+mt
-source-wordcount: '456'
-ht-degree: 10%
+source-wordcount: '460'
+ht-degree: 9%
 
 ---
 
@@ -38,7 +38,7 @@ Mer information om Adobe Analytics funktioner och hur du använder dem finns i [
 ## Viktiga Analytics-resurser
 
 * [Kontakta kundtjänst](https://experienceleague.adobe.com/?support-solution=Analytics&amp;lang=sv#support)
-* [Analytics-forum](https://forums.adobe.com/community/experience-cloud/analytics-cloud/analytics)
+* [Adobe Analytics Community på Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community)
 * [Adobe Analytics-resurser](https://forums.adobe.com/message/10660755)
 * [Experience League](https://landing.adobe.com/experience-league/)
 

@@ -1,12 +1,12 @@
 ---
 title: Exporthandbok för Analytics
-description: I den här guiden beskrivs olika sätt att hämta data från Adobe Analytics med dataflöden och Data warehouse.
+description: I den här guiden beskrivs olika sätt att hämta data från Adobe Analytics med hjälp av dataflöden och Data Warehouse.
 exl-id: 0e4014a7-3354-4111-ab74-64d9fa37b9cc
 feature: Data Feeds, FTP Export, Data Warehouse
-source-git-commit: 811e321ce96aaefaeff691ed5969981a048d2c31
+source-git-commit: cf7a3abc5e9d4bea834767d074eb5e66f30ea332
 workflow-type: tm+mt
-source-wordcount: '174'
-ht-degree: 76%
+source-wordcount: '162'
+ht-degree: 68%
 
 ---
 
@@ -26,7 +26,7 @@ Här är en videoöversikt över Adobe Analytics:
 
 ## Viktiga artiklar om export i Analytics
 
-* [Kolumnreferens för datafeeds](/help/export/analytics-data-feed/c-df-contents/datafeeds-reference.md)
+* [Kolumnreferens för datafeed](/help/export/analytics-data-feed/c-df-contents/datafeeds-reference.md)
 * [Data Warehouse](data-warehouse/data-warehouse.md)
 * [Exportera till FTP](ftp-and-sftp/ftp-overview.md)
 
@@ -37,6 +37,6 @@ Här är en videoöversikt över Adobe Analytics:
 ## Viktiga Analytics-resurser
 
 * [Kontakta kundtjänst](https://experienceleague.adobe.com/?support-solution=Analytics&amp;lang=sv#support)
-* [Analytics-forum](https://forums.adobe.com/community/experience-cloud/analytics-cloud/analytics)
+* [Adobe Analytics Community på Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community)
 * [Adobe Analytics-resurser](https://forums.adobe.com/message/10660755)
 * [Experience League](https://landing.adobe.com/experience-league/)
