@@ -2,13 +2,13 @@
 description: Du kan visa data från Document Cloud i Adobe Analytics
 title: Konfigurera Document Cloud Analytics
 feature: Admin Tools
-source-git-commit: 01aa0959a7ddd8d5a29c838bdbc771435784c9e6
+exl-id: 4bcc5be7-cad1-4969-9d19-0db8f3f6a374
+source-git-commit: 1382d8901b980db016521a3051de23d8d5b71f57
 workflow-type: tm+mt
-source-wordcount: '98'
+source-wordcount: '101'
 ht-degree: 0%
 
 ---
-
 
 # Konfigurera Document Cloud med Adobe Analytics
 
@@ -20,8 +20,8 @@ Följande alternativ för hantering av Document Cloud är tillgängliga när du 
 
 * [!UICONTROL **Document Cloud Reporting**]
 
-   Rapporter som är specifika för direktuppspelningsmedia finns på sidan Medierapportering. Mer information om Media Reporting finns i [Konfigurera rapportering för Document Cloud](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/document-cloud-config.md).
+  Rapporter som är specifika för tillägget Streaming Media Collection finns på sidan Media Reporting. Mer information om Media Reporting finns i [Konfigurera rapportering för Document Cloud](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/document-cloud-config.md).
 
 * [!UICONTROL **Document Cloud-klassificeringar**]
 
-   Specifika klassificeringar för Document Cloud finns på sidan Klassifikationer för Document Cloud. Mer information om klassificeringar finns i [Konverteringsklassificeringar](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/conversion-classifications.md).
+  Specifika klassificeringar för Document Cloud finns på sidan Klassifikationer för Document Cloud. Mer information om klassificeringar finns i [Konverteringsklassificeringar](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/conversion-classifications.md).

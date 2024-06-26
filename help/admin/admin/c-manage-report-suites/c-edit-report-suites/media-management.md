@@ -4,9 +4,9 @@ title: Mediehantering
 feature: Admin Tools
 uuid: a841a5a8-6d47-478d-b02b-6c1647fb04ce
 exl-id: b6dc8d93-3f89-4671-a4c3-18614667bf4e
-source-git-commit: 43c39b99cbae3e714b7f017dec14dd02fa350790
+source-git-commit: 1382d8901b980db016521a3051de23d8d5b71f57
 workflow-type: tm+mt
-source-wordcount: '155'
+source-wordcount: '164'
 ht-degree: 0%
 
 ---
@@ -21,10 +21,10 @@ Följande alternativ för mediehantering är tillgängliga när du redigerar en 
 
 * [!UICONTROL **Medierapportering**]
 
-  Rapporter som är specifika för direktuppspelningsmedia finns på sidan Medierapportering. Mer information om Media Reporting finns i [Aktivera medierapporter](https://experienceleague.adobe.com/docs/media-analytics/using/media-reports/media-reports-enable.html).
+  Rapporter som är specifika för tillägget Streaming Media Collection finns på sidan Media Reporting. Mer information om Media Reporting finns i [Aktivera medierapporter](https://experienceleague.adobe.com/docs/media-analytics/using/media-reports/media-reports-enable.html).
 
 * [!UICONTROL **Medieklassificeringar**]
 
-  Specifika klassificeringar för direktuppspelningsmedia finns på sidan Medieklassificeringar. Mer information om klassificeringar finns i [Konverteringsklassificeringar](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/conversion-classifications.md).
+  Specifika klassificeringar för tillägget Direktuppspelad mediesamling finns på sidan Medieklassificeringar. Mer information om klassificeringar finns i [Konverteringsklassificeringar](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/conversion-classifications.md).
 
-Allmän information om Streaming Media Analytics finns i [Adobe Analytics per contenuti in streaming Guide](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html).
+Allmän information om hur du integrerar strömmande mediedata i Adobe Analytics finns i [Tilläggsguide för direktuppspelad mediesamling](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html).

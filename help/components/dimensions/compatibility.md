@@ -3,9 +3,9 @@ title: Analytics-Dimensioners kompatibilitet
 description: Referens för analysdimensioner och rapporter.
 feature: Dimensions
 exl-id: 1884bc20-b04d-4f9a-b057-2b2fbe53190d
-source-git-commit: 93099d36a65ca2bf16fbd6342f01bfecdc8c798e
+source-git-commit: 4633225cc35658a7de39a40cd77df00137a54461
 workflow-type: tm+mt
-source-wordcount: '887'
+source-wordcount: '890'
 ht-degree: 2%
 
 ---
@@ -157,7 +157,7 @@ Den här sidlistan [dimensioner](overview.md) stöds i deras respektive Analytic
 
 ## Innehållsmedvetna dimensioner som stöds av Analysis Workspace
 
-### Video (Media Analytics)
+### Video (tillägget Streaming Media Collection)
 
 | Dimensionens namn (visas i analysgränssnittet) | Dimension-ID (används i API-begäranden) |
 |--- |--- |
@@ -218,12 +218,12 @@ Den här sidlistan [dimensioner](overview.md) stöds i deras respektive Analytic
 | Latitud/longitud | `sociallatlong` |
 | Spåra tillgångar | `socialassettrackingcode` |
 | Ägda sociala egenskaper | `socialaccountandappids` |
-| Ägda post-ID:n | `socialownedpostids` |
+| Ägda Post-id:n | `socialownedpostids` |
 | Ägda sociala definitioner | `socialinteractiontype` |
 | Ägda egenskaps-ID | `socialownedpropertyid` |
 | Ägd egenskap kontra program | `socialownedpropertypropertyvsapp` |
 | Namn på ägd egenskap | `socialownedpropertyname` |
-| Ägd definitionsegenskap kontra post | `socialowneddefinitionpropertyvspost` |
+| Ägd definitionsegenskap jämfört med Post | `socialowneddefinitionpropertyvspost` |
 | Insiktstyp för ägardefinition | `socialowneddefinitioninsighttype` |
 | Insiktsvärde för ägardefinition | `socialowneddefinitioninsightvalue` |
 | Ägardefinitionsmått | `socialowneddefinitionmetric` |
@@ -310,7 +310,7 @@ Mer information om hur du implementerar integreringen finns i [Nielsen Extension
 | Dimensionens namn (visas i analysgränssnittet) | Dimension-ID (används i API-begäranden) |
 |--- |--- |
 | Tillgångs-ID | `aemassetid` |
-| Resurskälla | `aemassetsource` |
+| Resurs-Source | `aemassetsource` |
 | Klickat på resurs-ID | `aemclickedassetid` |
 | Inmatningstillgångs-ID | `entryaemassetid` |
 | Avsluta resurs-ID | `exitaemassetid` |

@@ -1,23 +1,23 @@
 ---
-title: Panelen för samtidiga medieanvändare
+title: Media Concurrent Viewers panel
 description: Så här använder och tolkar du panelen Media Concurrent Viewer i Analysis Workspace.
 feature: Panels
 role: User, Admin
 exl-id: 29575b51-e319-4156-9834-aa0b671afb31
-source-git-commit: 0515636dfae6c42d76211e1cbbc7faf424054271
+source-git-commit: 4633225cc35658a7de39a40cd77df00137a54461
 workflow-type: tm+mt
-source-wordcount: '1012'
-ht-degree: 1%
+source-wordcount: '1029'
+ht-degree: 0%
 
 ---
 
-# Panelen för samtidiga medieanvändare
+# Media Concurrent Viewers panel
 
-Media Analytics-kunder kan analysera samtidiga tittare för att förstå var maximal samtidighet har inträffat eller var bortfall har skett för att ge värdefull insikt i kvaliteten på innehåll och tittarengagemang och för att hjälpa till med felsökning eller planering av volym eller skala.
+Kunder som har köpt tillägget Streaming Media Collection kan analysera samtidiga tittare för att förstå var maximal samtidighet har inträffat eller var bortfall har skett för att ge värdefull insikt i kvaliteten på innehåll och tittarengagemang samt för att hjälpa till med felsökning eller planering av volym eller skala.
 
 I Analysis Workspace är Concurrent Viewers antalet unika besökare som visar medieströmmarna vid en viss tidpunkt, oavsett antalet sessioner.
 
-Med Media Concurrent Viewers-panelen kan man analysera samtidiga visningsprogram över tiden, med detaljer om maximal samtidighet och möjlighet att dela upp och jämföra.  Om du vill få åtkomst till panelen Medievisningsprogram för samtidiga media går du till en rapportsvit med Media Analytics-komponenter aktiverade. Klicka sedan på panelikonen längst till vänster och dra panelen till ditt Analysis Workspace-projekt.
+Med Media Concurrent Viewers-panelen kan man analysera samtidiga visningsprogram över tiden, med detaljer om maximal samtidighet och möjlighet att dela upp och jämföra.  Om du vill få åtkomst till panelen Medievisningsprogram för samtidiga media går du till en rapportserie med mediekomponenter för direktuppspelning aktiverade. Klicka sedan på panelikonen längst till vänster och dra panelen till ditt Analysis Workspace-projekt.
 
 Här är en videoöversikt av den här panelen:
 
@@ -53,7 +53,7 @@ Om du har valt seriebrytning visas en rad i linjediagrammet och ett sammanfattni
 
 ![samtidiga visningsprogram](assets/concurrent-viewers-output.png)
 
-### Datakälla
+### Data Source
 
 Det enda mätvärdet som kan användas i den här panelen är samtidiga visningsprogram:
 
@@ -76,7 +76,7 @@ Det finns ingen friformstabell i den här vyn.  Om du vill visa datakällan kan 
 | Hur jämför jag datumintervall? | Om du vill jämföra datumintervall i en enda visualisering använder du serieuppdelningarna genom att dra två eller flera datumintervall.  Dessa datumintervall åsidosätter panelens datumintervall. |
 | Hur ändrar jag visualiseringstypen? | På den här panelen kan du endast använda linjevisualisering för tidsserien. |
 | Kan jag köra avvikelseidentifiering? | Nej.  Anomalsidentifiering är inte tillgängligt för den här panelen. |
-| Varför använda unika besökare istället för aktiva sessioner? | Genom att använda unika besökare kan du ta bort oönskade toppar vid visningsgränserna (där sessionerna avslutas och börjar samtidigt). |
+| Varför använda unika besökare istället för aktiva sessioner? | Med unika besökare kan du ta bort oönskade toppar vid visningsgränserna (där sessionerna avslutas och börjar samtidigt). |
 | Vad innebär det att ha samtidiga visningsprogram med högre granularitet än en minut? | Med en granularitet som är större än en minut är samtidiga visningsprogram summan av unika samtidiga visningsprogram för alla minuter inom det tidsintervallet.  På timnivå är till exempel samtidiga visningsprogram summan av unika samtidiga visningsprogram för alla minuter inom timmen. |
 | Visar arbetsytan samma information som rapporten Samtidiga visningsprogram? | Nej.  I Analysis Workspace definieras samtidiga visningsprogram som antalet unika besökare som visar medieströmmen vid en viss tidpunkt, oavsett antalet sessioner.<br><br>Detta skiljer sig från Concurrent Viewer-rapporteringen i avsnittet Rapporter, där Concurrent Active Sessions används.  Med unika besökskonton kan du ta bort oönskade toppar vid visningsgränserna, där sessionerna avslutas och börjar samtidigt. |
 

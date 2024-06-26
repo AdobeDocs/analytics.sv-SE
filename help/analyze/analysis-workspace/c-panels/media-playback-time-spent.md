@@ -4,9 +4,9 @@ description: Så här använder och tolkar du panelen Medieuppspelningstid för 
 feature: Panels
 role: User, Admin
 exl-id: 9268baf7-b50b-4c09-a722-7bfcd4172f15
-source-git-commit: 750c4b0ffb52c3f2cf25abcd76ef149a4521109e
+source-git-commit: 4633225cc35658a7de39a40cd77df00137a54461
 workflow-type: tm+mt
-source-wordcount: '922'
+source-wordcount: '928'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ I Analysis Workspace är uppspelningstid den tid som du har lagt på att visa me
 
 Med panelen Medieuppspelningstid för spenderad kan du analysera uppspelningen över tid, med detaljer om maximal samtidighet och möjlighet att bryta ned och jämföra.
 
-Media Analytics-kunder kan analysera den uppspelningstid som används för att få värdefulla insikter om kvaliteten på innehåll och tittarengagemang och för att hjälpa till vid felsökning eller planering av volym eller skala.
+Kunder som har köpt tillägget Streaming Media Collection kan analysera den uppspelningstid som spenderas för att få värdefulla insikter om innehållets och tittarens kvalitet och för att hjälpa till vid felsökning eller planering av volym eller skala.
 
 Den uppspelningstid du tillbringar kan hjälpa dig att förstå:
 
@@ -31,7 +31,7 @@ Här följer en videoöversikt av den här panelen:
 
 ## Använda panelen Medieuppspelningstid för spenderad tid
 
-1. Gå till en rapportsvit med Media Analytics-komponenter aktiverade.
+1. Gå till en rapportsvit med aktiverade mediekomponenter för direktuppspelning.
 1. Välj panelikonen längst till vänster och dra sedan panelen till ditt Analysis Workspace-projekt.
 1. Fortsätt med följande avsnitt för att anpassa panelen Medieuppspelningstid för spenderad tid
 
@@ -65,7 +65,7 @@ Om du har valt seriebrytning visas en rad i linjediagrammet och ett sammanfattni
 
 ![mediespelningstid för utdata](assets/mpts_outputs1.png)
 
-### Datakälla
+### Data Source
 
 Det enda mätvärdet som kan användas i den här panelen är Använd uppspelningstid.
 
