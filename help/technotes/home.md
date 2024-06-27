@@ -3,7 +3,7 @@ title: Analytics Tech Notes
 description: Den här handboken innehåller användbar information om ämnen som inte tillhör ett visst analysverktyg eller en viss komponent.
 exl-id: 4cb084f8-5cec-4c46-a584-614217d42431
 feature: Attribution, Visualizations, Segmentation, Real-time
-source-git-commit: cf7a3abc5e9d4bea834767d074eb5e66f30ea332
+source-git-commit: 9e3354569b2e748b3194be34c9119062300ca609
 workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 16%
@@ -50,5 +50,5 @@ Här är en videoöversikt över Adobe Analytics:
 
 * [Kontakta kundtjänst](https://experienceleague.adobe.com/?support-solution=Analytics&amp;lang=sv#support)
 * [Adobe Analytics Community på Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community)
-* [Adobe Analytics-resurser](https://forums.adobe.com/message/10660755)
+* [Adobe Analytics-resurser](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-resources/m-p/276666)
 * [Experience League](https://landing.adobe.com/experience-league/)

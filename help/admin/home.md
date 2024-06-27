@@ -4,10 +4,10 @@ description: Administrationshjälp för Adobe Analytics-administratörer, inklus
 feature: Admin Tools
 exl-id: d1491139-592b-44ec-aa45-dfdd00f416af
 role: Admin
-source-git-commit: cf7a3abc5e9d4bea834767d074eb5e66f30ea332
+source-git-commit: 9e3354569b2e748b3194be34c9119062300ca609
 workflow-type: tm+mt
 source-wordcount: '310'
-ht-degree: 84%
+ht-degree: 83%
 
 ---
 
@@ -46,5 +46,5 @@ Den här guiden täcker inte många av de allmänna funktioner som finns i Adobe
 
 * [Kontakta kundtjänst](https://experienceleague.adobe.com/?support-solution=Analytics&amp;lang=sv#support)
 * [Adobe Analytics Community på Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community)
-* [Adobe Analytics-resurser](https://forums.adobe.com/message/10660755)
+* [Adobe Analytics-resurser](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-resources/m-p/276666)
 * [Experience League](https://landing.adobe.com/experience-league/)
