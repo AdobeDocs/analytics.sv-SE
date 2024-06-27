@@ -1,13 +1,13 @@
 ---
-description: Vanliga frågor om arbetsytan
-title: Vanliga frågor och felsökningsarbetsyta
+description: Vanliga frågor om Workspace
+title: Vanliga frågor och felsökning av Workspace
 feature: Workspace Basics
 role: User, Admin
 exl-id: cf7a9a73-bcbe-4bf5-b5dc-913199ab229c
-source-git-commit: d173a6c6c9751a86f4218ec842da17da14f8485b
+source-git-commit: 8eb15d8211bf2a5418465baa902e533198637a4a
 workflow-type: tm+mt
-source-wordcount: '537'
-ht-degree: 25%
+source-wordcount: '542'
+ht-degree: 24%
 
 ---
 
@@ -33,10 +33,6 @@ Nu kan du skapa projekt i Analysis Workspace med data från fler [flera rapports
 Ingen särskild implementering krävs. Analysis Workspace är tillgängligt för alla företag med Analytics Standard eller Premium. Standardbehörigheter för innehåll (till exempel rapportsviter och projektkomponenter) gäller, och för att strukturera och dela projekt. Se [Krav för administration och åtkomst](/help/analyze/analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md).
 +++
 
-+++Ändrar Analysis Workspace förkonfigurerade rapporter i Adobe Analytics?
-Nej. Eftersom det här är en separat miljö finns det inga ändringar i dina befintliga eller förkonfigurerade rapporter i Adobe Analytics. Du kan fortfarande använda Report Builder-standardrapporter med Analysis Workspace.
-+++
-
 +++Kan jag använda Analysis Workspace som Data Warehouse?
 Analysis Workspace rekommenderas inte för bulkdataexport. Det är en visualiseringsarbetsyta som skapar kontrollpanelsliknande analysprojekt.
 +++
@@ -52,7 +48,7 @@ Se den här videon:
 
 +++
 
-+++ Hur spårar jag arbetsytans användning?
++++ Hur kan jag spåra Workspace användning?
 
 Se den här videon om loggspårning av användningsloggar för Analysis Workspace:
 
@@ -71,4 +67,8 @@ Om du har skapat en rapport om arbetsytan men det inte finns några data kan du 
 * Om du tillämpade ett segment i rapporten kanske segmentvillkoren inte matchar några data. Prova med att ta bort segmentet eller justera segmentdefinitionen.
 * Kontrollera datumintervallet i det övre högra hörnet och se till att det har ett förväntat värde.
 * Navigera till webbplatsen och använd [Felsökning](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html) för att validera att data samlas in.
++++
+
++++Vilka åtgärder kan jag utföra i Analysis Workspace som skrivskyddad användare?
+När ett projekt delas som skrivskyddat är alla redigeringsfunktioner och -funktioner helt inaktiverade och mottagarna kan bara ändra listrutan för att använda ett filter på panelen på ett fördefinierat sätt.
 +++
