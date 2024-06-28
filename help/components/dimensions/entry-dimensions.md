@@ -4,9 +4,9 @@ description: Visar postdimensioner och deras användning.
 keywords: startsida, startwebbplatsavsnitt, startserver, anpassad information
 feature: Dimensions
 exl-id: 424e2a9a-05ac-4397-921b-c8d7567348ed
-source-git-commit: d095628e94a45221815b1d08e35132de09f5ed8f
+source-git-commit: 66be48d0f41061d259cc53fb835ebd155294a710
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '289'
 ht-degree: 0%
 
 ---
@@ -16,6 +16,9 @@ ht-degree: 0%
 *Den här hjälpsidan beskriver hur poster fungerar som [dimension](overview.md). Mer information om hur poster fungerar som mått finns i [Poster](../metrics/entries.md) mätvärden.*
 
 Postdimensionerna är [besöksbaserad](../metrics/visits.md). De registrerar den första dimensionsposten och behåller den under hela besökets längd. Postdimensioner är tillgängliga för alla variabler med panorering aktiverad under [Trafikvariabler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/c-traffic-variables/traffic-var.md) i Rapportsvitens inställningar.
+
+>[!TIP]
+>Om du vill se data baserat på första träffen av ett besök istället för det första värdet som visas under ett besök kan du använda en [segment](/help/components/segmentation/seg-overview.md). Använd en träffbehållare där [Träffdjup](hit-depth.md) är lika med 1 och använd sedan segmentet med den önskade variabeln.
 
 ## Fyll i postdimensioner med data
 
