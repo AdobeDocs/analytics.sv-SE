@@ -5,9 +5,9 @@ title: Innehållsförteckning för projekt
 feature: Workspace Basics
 role: User, Admin
 exl-id: e17c0308-15c1-4c7b-a1e2-a9ab48ea267a
-source-git-commit: 4633225cc35658a7de39a40cd77df00137a54461
+source-git-commit: b440fd6a0cd04b411489e6b7346be6b1b0a9f4f8
 workflow-type: tm+mt
-source-wordcount: '143'
+source-wordcount: '142'
 ht-degree: 1%
 
 ---
@@ -16,9 +16,11 @@ ht-degree: 1%
 
 Du kan visa en innehållsförteckning i varje projekt i Analysis Workspace, så att du snabbt kan gå mellan olika paneler och visualiseringar som finns i projektet. Detta är särskilt användbart när du visar större projekt som innehåller många paneler och visualiseringar.
 
-Här följer en videodemonstration av den här funktionen:
++++Visa en videodemonstration av den här funktionen.
 
->[!VIDEO](https://video.tv.adobe.com/v/3430412/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/26990/?learn=on)
+
++++
 
 Så här visar du innehållsförteckningen i ett projekt:
 

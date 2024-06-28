@@ -4,9 +4,9 @@ description: Lär dig skapa hyperlänkar för dimensionsobjekt i en frihandstabe
 feature: Freeform Tables
 role: User, Admin
 exl-id: df846a73-e3e3-4376-844e-48153a20e5d6
-source-git-commit: 4633225cc35658a7de39a40cd77df00137a54461
+source-git-commit: b440fd6a0cd04b411489e6b7346be6b1b0a9f4f8
 workflow-type: tm+mt
-source-wordcount: '1738'
+source-wordcount: '1737'
 ht-degree: 0%
 
 ---
@@ -23,9 +23,11 @@ Den här funktionen är särskilt användbar när du skapar hyperlänkar för f�
 
 * Dimension av objekt eller uppdelningar som har värden som är en del av en URL som du vill länka till (t.ex. en sidnamnsdimension som är en del av en URL)
 
-Här följer en videodemonstration av den här funktionen:
++++ Visa en videodemonstration av den här funktionen.
 
->[!VIDEO](https://video.tv.adobe.com/v/3430412/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3430411/?learn=on)
+
++++
 
 ## Skapa hyperlänkar för ett eller flera dimensionsobjekt
 
