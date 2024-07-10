@@ -4,43 +4,44 @@ title: Hantera Analytics-användare och -resurser
 feature: Admin Tools
 exl-id: 849a8279-4850-4458-bdd2-85052a17ee21
 role: Admin
-source-git-commit: 938795c7378cb1f0537ff84eddeab3feddf8d073
+source-git-commit: 869b44b826de5cb35d13000133092397cb16ccaa
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: '369'
 ht-degree: 0%
 
 ---
 
-# Överför användarresurser eller ange förfallodatum för konton
+# Hantera äldre användarkonton, resurser och förfallodatum
 
-De flesta funktionerna för användar- och produkthantering har flyttats till [Adobe Admin Console](https://helpx.adobe.com/se/enterprise/using/admin-console.html). (Information om hur du börjar hantera användarbehörigheter för Adobe Analytics-användare finns i [Analyser i Adobe Admin Console](/help/admin/admin-console/home.md).)
+Du kan hantera äldre användarkonton, deras migreringsstatus, utgångsdata, överföring av resurser till andra användare och mycket annat med hjälp av **[!UICONTROL Admin]> [!UICONTROL All Admin] >[!UICONTROL Analytics users & admin]**.
 
-De flesta användar- och produkthanteringsfunktionerna är nu bara tillgängliga i Adobe Admin Console, men de administrativa funktioner som beskrivs på den här sidan är bara tillgängliga i Adobe Analytics Admin.
+På skärmen Användare visas en lista över aktuella Adobe Analytics-användare, med följande kolumner:
 
-## Överför resurser från en Analytics-användare till en annan {#transfer}
+| Kolumn | Beskrivning |
+|---|---|
+| [!UICONTROL User ID] | Det användar-ID som användaren använder för att logga in på Adobe Analytics. |
+| [!UICONTROL Name] | Användarens namn. |
+| [!UICONTROL Migration status] | Status för migreringen från ett äldre användarkonto till ett Enterprise ID eller Adobe ID.  Status kan inte initieras, ställas i kö eller migreras. |
+| [!UICONTROL Email] | Användarens e-postadress. |
+| [!UICONTROL Legacy login] | Status för äldre inloggning, som kan aktiveras eller inaktiveras. |
+| [!UICONTROL Date created] | Tidsstämpel när användarkontot skapades i Adobe Analytics. |
+| [!UICONTROL Last Analytics access] | Tidsstämpel för senaste åtkomst av användarkontot till Adobe Analytics, |
+| [!UICONTROL Expiration] | Utgångsdatum för användarkontot eller Ingen om användarkontot inte har förfallit. |
 
-1. Gå till **Administratör** > [!UICONTROL **Analysanvändare och -resurser**].
-Sidan Användare visas.
-1. (Valfritt) Använd något av följande alternativ för att enklare hitta de användare du letar efter:
-   * I sökfältet börjar du skriva namnet på den användare som du vill ange ett kontos förfallodatum för.
-   * Välj **Filter** icon ![Filterikon](assets/filter-users-page.png) om du vill visa eller dölja filterinställningarna. Du kan filtrera efter migreringsstatus eller äldre inloggningsstatus.
-1. Välj den användare vars resurser du vill överföra.
-   ![Ange förfallodatum för användarkonto](assets/manage-user-assets.png)
-1. Välj [!UICONTROL **Överför resurser**].
-1. På sidan Överför resurser, i [!UICONTROL **Överför resurser till**] börjar du skriva namnet på användaren som du vill överföra resurserna till och väljer sedan namnet när det visas i listrutan.
-1. I [!UICONTROL **Välj kontoartiklar att överföra**] navigera till och markera de resurser du vill överföra och markera sedan [!UICONTROL **Överför**].
+![Användare](assets/users.png)
 
-   Alla resurser som du har valt överförs till den angivna användaren.
+- Använd kommandot ![Sök](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) *Sök efter titel* fält.
+- Om du vill filtrera listan över migreringsstatus väljer du ![Chevron](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize100.svg) **[!UICONTROL Migration status]**.
+- Om du vill filtrera listan över äldre inloggningsstatus väljer du ![Chevron](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize100.svg) **[!UICONTROL Legacy login]**.
+- Om du vill ändra visningen av kolumner väljer du ![Kolumninställningar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg) och markera kolumnerna i popup-fönstret.
 
+Du kan använda olika åtgärder när du väljer en eller flera användare i listan:
 
-## Ange ett förfallodatum för ett användarkonto {#expiration}
+| Åtgärd | Beskrivning |
+|---|---|
+| ![Migrera](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Briefcase_18_N.svg) **[!UICONTROL Migrate]** | Du kan migrera en eller flera användare till Enterprise ID:n eller Adobe ID:n. |
+| ![Kalendern är låst](https://spectrum.adobe.com/static/icons/workflow_18/Smock_CalendarLocked_18_N.svg) **[!UICONTROL Set expiration]** | Du kan ange ett förfallodatum för användning av äldre Adobe Analytics-inloggning för de valda användarna.  Välj det datum som ska användas i en kalender-popup för att ange datumet. Välj **[!UICONTROL Done]** för att bekräfta förfallodatumet. |
+| ![Överför resurser](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Switch_18_N.svg) **[!UICONTROL Transfer assets]** | Den här åtgärden är bara tillgänglig när du väljer en användare. Om användaren har resurser som kan överföras kan du markera kontoobjekten (som bokmärken, instrumentpaneler med mera). Välj **[!UICONTROL Transfer]** för att slutföra överföringen.<br/>![Överför tillgångar](assets/transfer-assets.png) |
+| ![Ta bort konton](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) **[!UICONTROL Delete accounts]** | En dialogruta visas där du kan bekräfta borttagningen av de markerade kontona. Välj **[!UICONTROL OK]** för att ta bort kontona. Välj **[!UICONTROL Cancel]** för att avbryta. |
+| ![Exportera till CSV](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FileCSV_18_N.svg) **[!UICONTROL Export to CSV]** | Den här åtgärden hämtar omedelbart en fil som innehåller en kommaavgränsad värdelista med information om de valda användarna (namn, migreringsstatus, e-post med mera). |
 
-1. Gå till **Administratör** > [!UICONTROL **Analysanvändare och -resurser**].
-Sidan Användare visas.
-(Valfritt) Använd något av följande alternativ för att enklare hitta de användare du letar efter:
-   * I sökfältet börjar du skriva namnet på den användare som du vill ange ett kontos förfallodatum för.
-   * Välj **Filter** icon ![Filterikon](assets/filter-users-page.png) om du vill visa eller dölja filterinställningarna. Du kan filtrera efter migreringsstatus eller äldre inloggningsstatus.
-1. Välj den användare som du vill ange ett kontos förfallodatum för.
-   ![Ange förfallodatum för användarkonto](assets/manage-user-assets.png)
-1. Välj [!UICONTROL **Ange förfallodatum**].
-1. Välj förfallodatum och sedan [!UICONTROL **Klar**].

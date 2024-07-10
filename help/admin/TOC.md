@@ -4,7 +4,7 @@ audience: admin
 user-guide-title: Administratörshandbok för Analytics
 breadcrumb-title: Användarhandbok om Admin
 user-guide-description: Lär dig mer om administrationsåtgärder i Analytics, som att hantera användare och produkter i Experience Cloud Admin Console, konfigurera rapportsviter med mera.
-source-git-commit: 938795c7378cb1f0537ff84eddeab3feddf8d073
+source-git-commit: 869b44b826de5cb35d13000133092397cb16ccaa
 workflow-type: tm+mt
 source-wordcount: '631'
 ht-degree: 13%
@@ -175,7 +175,7 @@ ht-degree: 13%
       + [Vanliga frågor om användning av serversamtal](admin/c-server-call-usage/overage-faq.md)
    + Användar- och produkthantering (äldre) {#user-product-management}
       + [Användar- och produkthantering (äldre)](admin/user-management2/user-management.md)
-      + [Överför användarresurser eller ange förfallodatum för konton](admin/user-management2/users-assets.md)
+      + [Hantera äldre användarkonton, resurser och förfallodatum](admin/user-management2/users-assets.md)
       + Use: Migrera användare till Adobe Admin Console {#migrate-users}
          + [Användarmigrering av analyser till Admin Console](admin/user-management2/user-migration/c-migration-tool.md)
          + [Migrera användarkonton för Analytics för Adobe-ID:n](admin/user-management2/user-migration/t-migrate-users.md)
