@@ -5,9 +5,9 @@ short-title: Analytics documentation updates
 feature: Release Notes
 exl-id: fe8e3c4c-6782-46f7-8e28-4f8f54807788
 mini-toc-levels: 3
-source-git-commit: 1382d8901b980db016521a3051de23d8d5b71f57
+source-git-commit: b60a25d7b9ff28b7b9f0488acaa4380c4093d78f
 workflow-type: tm+mt
-source-wordcount: '5626'
+source-wordcount: '5640'
 ht-degree: 20%
 
 ---
@@ -25,6 +25,8 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 
 | Funktion | Beskrivning |
 | --- | --- |
+| **Juli 2024** | |
+| Uppdaterade vanliga felmeddelanden | Mindre uppdateringar av [vanliga felmeddelanden](/help/analyze/analysis-workspace/workspace-faq/error-messages.md). |
 | **Juni 2024** | |
 | Uppdaterat produktnamn som hänvisar till funktioner för direktuppspelande media | Ersatte instanser av&quot;Media Analytics&quot; och&quot;Streaming Media&quot; med namnet&quot;Streaming Media Collection Add-on&quot; när de refererar till en uppsättning funktioner för direktuppspelande media som samlar in strömmande mediedata och visar dem i Analysis Workspace. <p>Uppdateringarna finns tillgängliga i hela Adobe Analytics-dokumentationen och i [Dokumentation för tilläggsprogrammet för direktuppspelad media Collection](https://experienceleague.adobe.com/en/docs/media-analytics/using/media-overview).</p> |
 | Förbättrad dokumentation för intelligenta aviseringar | Uppdaterad och förbättrad dokumentation om varningar. Uppdateringarna innehåller information om [skapa aviseringar](/help/analyze/analysis-workspace/c-intelligent-alerts/alert-builder.md), [hantera aviseringar](/help/analyze/analysis-workspace/c-intelligent-alerts/alert-manager.md)och [översiktsinformation](/help/analyze/analysis-workspace/c-intelligent-alerts/intellligent-alerts.md). |
