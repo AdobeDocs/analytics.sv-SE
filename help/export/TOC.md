@@ -4,10 +4,10 @@ audience: end-user
 user-guide-title: Exporthandbok för Analytics
 breadcrumb-title: Användarhandbok om export
 user-guide-description: Lär dig hur du använder Data Feeds för att exportera rådata, och hur du använder Data Warehouse för att hämta data från kalkylblad. Lär dig hur du använder FTP och SFTP för att överföra filer.
-source-git-commit: f68cf0de5e7689d8245572b060a3d81c3bf85072
+source-git-commit: 29f9ab575a5fcb09e64356bff0997fc8737b93cd
 workflow-type: tm+mt
-source-wordcount: '284'
-ht-degree: 22%
+source-wordcount: '282'
+ht-degree: 23%
 
 ---
 
@@ -15,10 +15,10 @@ ht-degree: 22%
 # Adobe Analytics Export Guide {#export}
 
 + [Exporthandbok för Analytics](home.md)
-+ [Versionsinformation om Analytics](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html)
++ [Versionsinformation för analyser](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html)
 + Analytics-datafeed {#analytics-data-feed}
    + [Översikt över dataflöden](analytics-data-feed/data-feed-overview.md)
-   + [Skapa eller redigera en datafeed](analytics-data-feed/create-feed.md)
+   + [Skapa en datafeed](analytics-data-feed/create-feed.md)
    + [Hantera dataflöden](analytics-data-feed/df-manage-feeds.md)
    + [Hantera datafeedjobb](analytics-data-feed/df-manage-jobs.md)
    + Innehåll i datafeeds {#data-feed-contents}
@@ -36,7 +36,7 @@ ht-degree: 22%
 + Data Warehouse {#data-warehouse}
    + [Översikt över Datan Warehouse](data-warehouse/data-warehouse.md)
    + [Lägg till användargrupp för Data Warehouse](data-warehouse/t-dw-group.md)
-   + Skapa en begäran om Data Warehouse {#dw-create-request}
+   + Skapa en Data Warehouse-förfrågan {#dw-create-request}
       + [Skapa en begäran om Data Warehouse](/help/export/data-warehouse/create-request/t-dw-create-request.md)
       + [Allmänna inställningar](/help/export/data-warehouse/create-request/dw-general-settings.md)
       + [Bygg din rapport](/help/export/data-warehouse/create-request/dw-request-build-report.md)
@@ -75,5 +75,5 @@ ht-degree: 22%
       + [Skicka begäranden om Data Warehouse till SFTP-servrar](ftp-and-sftp/c-sftp/ftp-sftp-dw.md)
       + [Anslut till Adobe via SFTP utan lösenord](ftp-and-sftp/c-sftp/ftp-sftp-cert-auth.md)
 + [Analysis Workspace nedladdningar](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/download-send.html)
-+ [ADOBE ANALYTICS API](https://www.adobe.io/apis/experiencecloud/analytics/docs.html)
++ [Adobe Analytics API](https://www.adobe.io/apis/experiencecloud/analytics/docs.html)
 + [Report Builder](https://experienceleague.adobe.com/docs/analytics/analyze/report-builder/home.html)

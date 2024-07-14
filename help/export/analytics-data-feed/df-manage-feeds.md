@@ -3,10 +3,10 @@ title: Användargränssnitt för datafeed
 description: Lär dig navigera i dataflödesgränssnittet.
 feature: Data Feeds
 exl-id: 4d4f0062-e079-48ff-9464-940c6425ad54
-source-git-commit: 6b8366b451be1612331f517ee80fd57744deafdc
+source-git-commit: 293af518a8d190acbd5d3e10010f338ec6baa23a
 workflow-type: tm+mt
-source-wordcount: '685'
-ht-degree: 1%
+source-wordcount: '1087'
+ht-degree: 0%
 
 ---
 
@@ -14,54 +14,130 @@ ht-degree: 1%
 
 Med dataflödeshanteraren kan du skapa, redigera och ta bort dataflöden för din organisation. Om du har behörighet att komma åt dataflödeshanteraren kan du hantera dataflöden för alla rapportsviter som är synliga för dig.
 
-Här är en video om gränssnittet för hantering av dataflöden:
++++Visa en video om dataflödeshantering.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25452/?quality=12)
 
-Få åtkomst till dataflödeshantering genom att följa dessa steg:
++++
+
+## Visa dataflöden
 
 1. Logga in på [experiencecloud.adobe.com](https://experiencecloud.adobe.com) med inloggningsuppgifterna för ditt Adobe ID.
-1. Markera ikonen med nio kvadrater i det övre högra hörnet och välj sedan [!UICONTROL **Analyser**].
-1. I det övre navigeringsfältet går du till [!UICONTROL **Administratör**] > [!UICONTROL **Dataflöden**].
+1. Markera ikonen med nio kvadrater i det övre högra hörnet och välj sedan [!UICONTROL **Analytics**].
+1. Gå till [!UICONTROL **Admin**] > [!UICONTROL **Dataflöden**] i det övre navigeringsfältet.
 
-## Navigera i gränssnittet
+   Dataflöden för alla rapportsviter som du har åtkomst till visas. Om inga feeds har konfigurerats visas knappen [!UICONTROL Create New Data Feed] på sidan.
 
-Gränssnittet ser ut ungefär så här när du kommer till sidan för dataflödeshanteraren:
+   ![Dataflöden](assets/feeds.png)
 
-![Dataflöden](assets/feeds.png)
+## Skapa en datafeed
 
-Om inga feeds har konfigurerats visas en [!UICONTROL Create New Data Feed] -knappen.
+Med knappen [!UICONTROL Add] kan du skapa en ny feed. Mer information finns i [Skapa en datafeed](create-feed.md).
 
-### Filter och sökning
+## Redigera en datafeed
 
-Använd sökning eller filter för att hitta en viss feed.
+1. I Adobe Analytics väljer du [!UICONTROL **Admin**] > [!UICONTROL **Dataflöden**].
 
-* Börja skriva namnet på en feed i sökfältet. Endast de feeds som matchar visas i listan över tillgängliga feeds.
+1. Leta reda på den datafeed som du vill redigera. Om du vill söka efter en datafeed kan du [filtrera och söka i listan med datafeeds](#filter-and-search-the-list-of-data-feeds).
 
-* Klicka på filterikonen längst till vänster om du vill visa eller dölja filteralternativen. Filter ordnas efter kategori. Du kan komprimera eller utöka filtreringskategorier. Markera kryssrutan bredvid de filter du vill använda.
+1. Markera datafeeden i kolumnen [!UICONTROL **Feed name**].
 
-  ![Filter](assets/filters.png)
+1. Gör eventuella ändringar i dataflödet.
 
-### Feeds och jobb
+   När du uppdaterar avsnittet [!UICONTROL **Mål**] för en datafeed som du redigerar kan du välja ett annat konto och en annan plats att använda för den nya datafeeden i listrutorna [!UICONTROL **Konto**] och [!UICONTROL **Plats**] .
 
-Välj [!UICONTROL **Jobb**] för att visa enskilda jobb som var och en av dina feeds skapar. Se [Hantera datafeedjobb](df-manage-jobs.md).
+   Om du vill redigera kontot och platsen för alla dataflöden där de används kan du redigera konton och platser direkt, vilket beskrivs i [Konfigurera molnimport- och exportkonton](/help/components/locations/configure-import-accounts.md) och [Konfigurera molnimport och exportplatser](/help/components/locations/configure-import-locations.md). Konton och platser som inte är i molnet kan inte redigeras.
 
-### Lägg till
+1. Välj [!UICONTROL **Spara**].
 
-The [!UICONTROL Add] kan du skapa en ny feed. Se [Skapa en datafeed](create-feed.md) för mer information.
+## Filtrera och söka i listan med dataflöden
 
-### Kolumner
+1. I Adobe Analytics väljer du [!UICONTROL **Admin**] > [!UICONTROL **Dataflöden**].
+
+1. Använd sökning eller filter för att hitta en viss feed.
+
+   * Börja skriva namnet på en feed i sökfältet. Endast de feeds som matchar visas i listan över tillgängliga feeds.
+
+   * Klicka på filterikonen längst till vänster om du vill visa eller dölja filteralternativen. Filter ordnas efter kategori. Du kan komprimera eller utöka filtreringskategorier. Markera kryssrutan bredvid de filter du vill använda.
+
+![Filter](assets/filters.png)
+
+## Visa dataflödesjobb
+
+1. I Adobe Analytics väljer du [!UICONTROL **Admin**] > [!UICONTROL **Dataflöden**].
+
+1. Välj fliken [!UICONTROL **Jobb**] om du vill visa enskilda jobb som var och en av dina feeds skapar.
+
+   eller
+
+   Om du vill visa jobb för specifika dataflöden markerar du kryssrutan bredvid en eller flera dataflöden och väljer sedan [!UICONTROL **Jobbhistorik**].
+
+   Mer information finns i [Hantera datafeedjobb](df-manage-jobs.md).
+
+## Kopiera en datafeed
+
+1. I Adobe Analytics väljer du [!UICONTROL **Admin**] > [!UICONTROL **Dataflöden**].
+
+1. Markera kryssrutan bredvid den datafeed som du vill kopiera och välj sedan [!UICONTROL **Kopiera**].
+
+   Tar dig till [skapa en ny feed](create-feed.md) med alla inställningar för den aktuella feeden. Det här alternativet är inte synligt om mer än en datafeed har valts.
+
+   När du uppdaterar avsnittet [!UICONTROL **Mål**] för en datafeed som du kopierar kan du välja ett annat konto och en annan plats att använda för den nya datafeeden i listrutorna [!UICONTROL **Konto**] och [!UICONTROL **Plats**] .
+
+   Om du vill redigera kontot och platsen för alla dataflöden där de används kan du redigera konton och platser direkt, vilket beskrivs i [Konfigurera molnimport- och exportkonton](/help/components/locations/configure-import-accounts.md) och [Konfigurera molnimport och exportplatser](/help/components/locations/configure-import-locations.md). Konton och platser som inte är i molnet kan inte redigeras.
+
+## Pausa en datafeed
+
+Du kan stoppa bearbetningen för feeden och ange dess status till [!UICONTROL Inactive].
+
+1. I Adobe Analytics väljer du [!UICONTROL **Admin**] > [!UICONTROL **Dataflöden**].
+
+1. Markera kryssrutan bredvid den datafeed som du vill pausa och välj sedan [!UICONTROL **Paus**].
+
+## Aktivera en datafeed
+
+Du kan aktivera inaktiva feeds.
+
+Förifyllda feeds (feeds som endast bearbetar historiska data) återupptar bearbetningen av data från där de stoppades och fyller eventuellt inte i alla datum om det behövs. Live-flöden återupptar också databearbetning från där de stoppades.
+
+>[!AVAILABILITY]
+>
+>Följande ändring av hur live-flöden återupptar databearbetning finns i den begränsade testfasen av releasen:
+> 
+>**Live-flöden återupptar databearbetning från den aktuella tiden.**
+>
+>Den här ändringen kanske inte är tillgänglig än i din miljö.
+>
+>Den här anteckningen tas bort när den här ändringen är allmänt tillgänglig. Mer information om Analytics-releaser finns i [Adobe Analytics-funktionsreleaser](/help/release-notes/releases.md).
+
+Så här aktiverar du en datafeed:
+
+1. I Adobe Analytics väljer du [!UICONTROL **Admin**] > [!UICONTROL **Dataflöden**].
+
+1. Markera kryssrutan bredvid den inaktiva datafeed som du vill aktivera och välj sedan [!UICONTROL **Aktivera**].
+
+## Ta bort en datafeed
+
+När du tar bort en datafeed anges dess status till [!UICONTROL Deleted].
+
+1. I Adobe Analytics väljer du [!UICONTROL **Admin**] > [!UICONTROL **Dataflöden**].
+
+1. Markera kryssrutan bredvid den datafeed som du vill ta bort och välj sedan [!UICONTROL **Ta bort**].
+
+## Konfigurera kolumner i dataflödeshanteraren
 
 Varje feed som skapas visar flera kolumner med information om den. Välj en kolumnrubrik om du vill sortera den i stigande ordning. Välj en kolumnrubrik igen om du vill sortera den i fallande ordning. Om du inte kan se en viss kolumn klickar du på kolumnikonen i det övre högra hörnet.
 
 ![Kolumnikon](assets/cols.jpg)
 
-* **Feednamn**: Obligatorisk kolumn. Visar feed-namnet.
+Följande kolumner är tillgängliga:
+
+* **Feed-namn**: Obligatorisk kolumn. Visar feed-namnet.
 * **Feed-ID**: Visar feed-ID:t, en unik identifierare.
-* **Report Suite**: Rapportsviten innehåller de data som matningen refererar till.
-* **Report Suite-ID**: Rapportsvitens unika identifierare.
+* **Rapportsviten**: Rapportsviten som matningsreferensdata kommer från.
+* **Rapportsvitens ID**: Rapportsvitens unika identifierare.
 * **Datakolumner**: Vilka datakolumner som är aktiva för feeden. I de flesta fall finns det för många kolumner att visa i det här formatet.
-* **Intervall**: Anger om matningen är timme eller dag.
+* **Intervall**: Indikerar om matningen är timme eller dag.
 * **Måltyp**: Måltypen för feeden. Exempel: Amazon S3, GCP eller Azure.
 * **Målvärd**: Platsen där filen placeras.
 * **Ägare**: Användarkontot som skapade feeden.
@@ -71,17 +147,8 @@ Varje feed som skapas visar flera kolumner med information om den. Välj en kolu
    * Borttagen: Matningen tas bort.
    * Slutförd: Flödet har bearbetats färdigt. En ifylld feed kan redigeras, stoppas eller avbrytas.
    * Väntande: Matningen har skapats men är ännu inte aktiv. Feeds finns kvar i detta tillstånd under en kort övergångsperiod.
-   * Inaktiv: Motsvarar ett pausat eller spärrat läge. Om en återfyllningsfeed (en feed som endast bearbetar historiska data) återaktiveras, kommer den att fortsätta leverera jobb från när den stoppas. Om en livefeed återaktiveras fortsätter den att leverera jobb från och med när den stoppas.
+   * Inaktiv: Motsvarar ett pausat eller spärrat läge. Mer information om vad som händer med födofyllnadsflöden och livefeeds när en inaktiv feed återaktiveras finns i [Aktivera en datafeed](#activate-a-data-feed).
 * **Senast ändrad**: Det datum då feeden senast ändrades. Datum och tid visas i rapportsvitens tidszon med GMT-förskjutning.
 * **Startdatum**: Datumet för det första jobbet för denna feed. Datum och tid visas i rapportsvitens tidszon med GMT-förskjutning.
-* **Slutdatum**: Datum för det senaste jobbet för denna feed. Pågående dataflöden har inget slutdatum.
+* **Slutdatum**: Datumet för det senaste jobbet för denna feed. Pågående dataflöden har inget slutdatum.
 
-## Åtgärder för datafeed
-
-Klicka i kryssrutan bredvid en datafeed för att visa tillgängliga åtgärder.
-
-* **Jobbhistorik**: Visa alla jobb som är kopplade till dessa dataflöden. Tar dig automatiskt till [gränssnitt för hantering av jobb](df-manage-jobs.md).
-* **Ta bort**: Tar bort dataflödet och anger dess status till [!UICONTROL Deleted].
-* **Kopiera**: Tar dig till [skapa en ny feed](create-feed.md) med alla inställningar för aktuell feed. Du kan inte kopiera en datafeed om mer än en har valts.
-* **Pausa**: Stoppar bearbetningen av feeden och anger dess status som [!UICONTROL Inactive].
-* **Aktivera**: Endast tillgängligt för inaktiva feeds. Förifyllda feeds (feeds som endast bearbetar historiska data) återupptar bearbetningen av data från där de stoppades och fyller eventuellt inte i alla datum om det behövs. Live-flöden återupptar bearbetning av data från den aktuella tiden.
