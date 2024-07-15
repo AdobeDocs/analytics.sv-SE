@@ -3,9 +3,9 @@ title: Användargränssnitt för datafeed
 description: Lär dig navigera i dataflödesgränssnittet.
 feature: Data Feeds
 exl-id: 4d4f0062-e079-48ff-9464-940c6425ad54
-source-git-commit: 293af518a8d190acbd5d3e10010f338ec6baa23a
+source-git-commit: 3916115169f526bb91442d251e6159496efd547f
 workflow-type: tm+mt
-source-wordcount: '1087'
+source-wordcount: '1135'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,9 @@ Med knappen [!UICONTROL Add] kan du skapa en ny feed. Mer information finns i [S
 
    När du uppdaterar avsnittet [!UICONTROL **Mål**] för en datafeed som du redigerar kan du välja ett annat konto och en annan plats att använda för den nya datafeeden i listrutorna [!UICONTROL **Konto**] och [!UICONTROL **Plats**] .
 
-   Om du vill redigera kontot och platsen för alla dataflöden där de används kan du redigera konton och platser direkt, vilket beskrivs i [Konfigurera molnimport- och exportkonton](/help/components/locations/configure-import-accounts.md) och [Konfigurera molnimport och exportplatser](/help/components/locations/configure-import-locations.md). Konton och platser som inte är i molnet kan inte redigeras.
+   Konton och platser kan redigeras på det sätt som beskrivs i [Konfigurera molnimport- och exportkonton](/help/components/locations/configure-import-accounts.md) och [Konfigurera molnimport- och exportplatser](/help/components/locations/configure-import-locations.md). Om du redigerar ett konto eller en plats påverkas alla objekt som är kopplade till kontot eller platsen.
+
+   I tidigare versioner av dataflödeshanteraren kunde du skapa FTP-, SFTP-, S3- och Azure-blobmål. Destinationer som skapades i dessa tidigare versioner av dataflödeshanteraren kan inte redigeras eller kopieras.
 
 1. Välj [!UICONTROL **Spara**].
 
@@ -84,7 +86,9 @@ Med knappen [!UICONTROL Add] kan du skapa en ny feed. Mer information finns i [S
 
    När du uppdaterar avsnittet [!UICONTROL **Mål**] för en datafeed som du kopierar kan du välja ett annat konto och en annan plats att använda för den nya datafeeden i listrutorna [!UICONTROL **Konto**] och [!UICONTROL **Plats**] .
 
-   Om du vill redigera kontot och platsen för alla dataflöden där de används kan du redigera konton och platser direkt, vilket beskrivs i [Konfigurera molnimport- och exportkonton](/help/components/locations/configure-import-accounts.md) och [Konfigurera molnimport och exportplatser](/help/components/locations/configure-import-locations.md). Konton och platser som inte är i molnet kan inte redigeras.
+   Konton och platser kan redigeras på det sätt som beskrivs i [Konfigurera molnimport- och exportkonton](/help/components/locations/configure-import-accounts.md) och [Konfigurera molnimport- och exportplatser](/help/components/locations/configure-import-locations.md). Om du redigerar ett konto eller en plats påverkas alla objekt som är kopplade till kontot eller platsen.
+
+   I tidigare versioner av dataflödeshanteraren kunde du skapa FTP-, SFTP-, S3- och Azure-blobmål. Destinationer som skapades i dessa tidigare versioner av dataflödeshanteraren kan inte redigeras eller kopieras.
 
 ## Pausa en datafeed
 
