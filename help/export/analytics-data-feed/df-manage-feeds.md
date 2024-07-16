@@ -3,9 +3,9 @@ title: Användargränssnitt för datafeed
 description: Lär dig navigera i dataflödesgränssnittet.
 feature: Data Feeds
 exl-id: 4d4f0062-e079-48ff-9464-940c6425ad54
-source-git-commit: 3916115169f526bb91442d251e6159496efd547f
+source-git-commit: e7e03531454bd56ebe6152edc08765f42ebec728
 workflow-type: tm+mt
-source-wordcount: '1135'
+source-wordcount: '1153'
 ht-degree: 0%
 
 ---
@@ -122,7 +122,9 @@ Så här aktiverar du en datafeed:
 
 ## Ta bort en datafeed
 
-När du tar bort en datafeed anges dess status till [!UICONTROL Deleted].
+När du tar bort en datafeed anges dess status till [!UICONTROL Deleted]. Dataflöden måste ha statusen Aktiv innan de kan tas bort.
+
+Så här tar du bort en datafeed:
 
 1. I Adobe Analytics väljer du [!UICONTROL **Admin**] > [!UICONTROL **Dataflöden**].
 

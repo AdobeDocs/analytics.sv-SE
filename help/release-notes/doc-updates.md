@@ -5,10 +5,10 @@ short-title: Analytics documentation updates
 feature: Release Notes
 exl-id: fe8e3c4c-6782-46f7-8e28-4f8f54807788
 mini-toc-levels: 3
-source-git-commit: 293af518a8d190acbd5d3e10010f338ec6baa23a
+source-git-commit: e7e03531454bd56ebe6152edc08765f42ebec728
 workflow-type: tm+mt
-source-wordcount: '5702'
-ht-degree: 20%
+source-wordcount: '5719'
+ht-degree: 19%
 
 ---
 
@@ -26,7 +26,7 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | Funktion | Beskrivning |
 | --- | --- |
 | **Juli 2024** | |
-| Uppdaterad dokumentation för hantering av dataflöden | Uppdaterad information i [Hantera dataflöden](/help/export/analytics-data-feed/df-manage-feeds.md) för att förbättra tydligheten. <p>Bland uppdateringarna finns:</p><ul><li>Skapade separata avsnitt för olika uppgifter för att göra informationen enklare att skanna och använda.</li><li>Lagt till information om förändringar i beteendet för liveflöden som återaktiveras. Dessa ändringar är för närvarande begränsade och är ännu inte tillgängliga för alla kunder.</li> |
+| Uppdaterad dokumentation för hantering av dataflöden | Uppdaterad information i [Hantera dataflöden](/help/export/analytics-data-feed/df-manage-feeds.md) för att förbättra tydligheten. <p>Bland uppdateringarna finns:</p><ul><li>Skapade separata avsnitt för olika uppgifter för att göra informationen enklare att skanna och använda.</li><li>Lagt till information om förändringar i beteendet för liveflöden som återaktiveras. Dessa ändringar är för närvarande begränsade och är ännu inte tillgängliga för alla kunder.</li><li>Tillagd information som anger att dataflöden måste ha statusen Aktiv innan de kan tas bort.</li> |
 | Uppdaterade vanliga felmeddelanden | Mindre uppdateringar av de [vanliga felmeddelandena](/help/analyze/analysis-workspace/workspace-faq/error-messages.md) har gjorts. |
 | **Juni 2024** | |
 | Uppdaterat produktnamn som hänvisar till funktioner för direktuppspelande media | Ersatte instanser av&quot;Media Analytics&quot; och&quot;Streaming Media&quot; med namnet&quot;Streaming Media Collection Add-on&quot; när de refererar till en uppsättning funktioner för direktuppspelande media som samlar in strömmande mediedata och visar dem i Analysis Workspace. <p>Dessa uppdateringar är tillgängliga i hela Adobe Analytics-dokumentationen samt i [dokumentationen för tilläggsprogrammet för direktuppspelad media](https://experienceleague.adobe.com/en/docs/media-analytics/using/media-overview).</p> |
