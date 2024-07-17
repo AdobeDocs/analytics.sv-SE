@@ -4,9 +4,9 @@ audience: admin
 user-guide-title: Administratörshandbok för Analytics
 breadcrumb-title: Användarhandbok om Admin
 user-guide-description: Lär dig mer om administrationsåtgärder i Analytics, som att hantera användare och produkter i Experience Cloud Admin Console, konfigurera rapportsviter med mera.
-source-git-commit: 869b44b826de5cb35d13000133092397cb16ccaa
+source-git-commit: 8bb879b86126c59b7d22505657ecdb46106822e8
 workflow-type: tm+mt
-source-wordcount: '631'
+source-wordcount: '637'
 ht-degree: 13%
 
 ---
@@ -15,8 +15,8 @@ ht-degree: 13%
 # Adobe Analytics Admin Guide {#admin}
 
 + [Administratörshandbok för Analytics](home.md)
-+ [Versionsinformation om Analytics](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html)
-+ Admin Console för Adobe {#admin-console}
++ [Versionsinformation för analyser](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html)
++ Administratörskonsolen för Adobe {#admin-console}
    + [Översikt](admin-console/home.md)
    + [Adobe Analytics första administrationshandbok](admin-console/first-admin-guide.md)
    + [Administratörsroller i Adobe Analytics](admin-console/admin-roles-in-analytics.md)
@@ -37,13 +37,13 @@ ht-degree: 13%
    + Komponentmigrering {#component-migration}
       + [Förbered för migrering](admin/component-migration/prepare-component-migration.md)
       + [Arbetsflöde för migrering](admin/component-migration/component-migration.md)
-   + Report Suite-hanterare {#manage-report-suites}
+   + Report Suite-hanteraren {#manage-report-suites}
       + Redigera inställningar för en rapportserie {#edit-report-suite}
          + Allmänt {#report-suite-general}
             + [Allmänna kontoinställningar](admin/c-manage-report-suites/c-edit-report-suites/general/general-acct-settings-admin.md)
             + [Interna URL-filter](admin/c-manage-report-suites/c-edit-report-suites/general/internal-url-filter-admin.md)
             + [Anpassa kalender](admin/c-manage-report-suites/c-edit-report-suites/general/custom-calendar.md)
-            + Betalsökningsidentifiering {#paid-search-detection}
+            + Identifiering av betald sökning {#paid-search-detection}
                + [Översikt över betald sökningsidentifiering](admin/c-manage-report-suites/c-edit-report-suites/general/paid-search-detection/paid-search-detection.md)
                + [Konfigurera identifiering av betald sökning](admin/c-manage-report-suites/c-edit-report-suites/general/paid-search-detection/t-paid-search-detection.md)
             + Bearbetar regler {#c-processing-rules}
@@ -90,10 +90,10 @@ ht-degree: 13%
             + [Konverteringsvariabler](admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/conversion-var-admin.md)
             + [Sökmetoder](admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/finding-methods.md)
             + [Konverteringsklassificeringar](admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/conversion-classifications.md)
-            + Unik besöksvariabel {#unique-visitor-variable}
+            + Unik besökarvariabel {#unique-visitor-variable}
                + [Ange variabeln Unik besökare](admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/unique-visitor-variable-admin/t-unique-visitor-variable.md)
                + [Användningsfall - extrahera besökar-ID:n](admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/unique-visitor-variable-admin/extract-visitorids-usecase.md)
-            + Success Events {#success-events}
+            + Slutförda händelser {#success-events}
                + [Success events overview](admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/c-success-events/success-event.md)
                + [Konfigurera lyckade händelser](admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/c-success-events/t-success-events.md)
                + [Om att ändra händelsetyp](admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/c-success-events/event-type.md)
@@ -118,7 +118,7 @@ ht-degree: 13%
          + [AEM](admin/c-manage-report-suites/c-edit-report-suites/adobe-experience-manager.md)
          + [Adobe Campaign](admin/c-manage-report-suites/c-edit-report-suites/adobe-campaign.md)
          + [Sekretessrapportering](admin/c-manage-report-suites/c-edit-report-suites/privacy-reporting.md)
-         + hantering av Document Cloud {#doc-cloud-mgt}
+         + Hantering av Document Cloud {#doc-cloud-mgt}
             + [Konfigurera Document Cloud med Adobe Analytics](admin/c-manage-report-suites/c-edit-report-suites/document-cloud-mgt.md)
             + [Konfigurera rapportering för Document Cloud](admin/c-manage-report-suites/c-edit-report-suites/document-cloud-config.md)
          + [Konfiguration av Advertising Analytics](admin/c-manage-report-suites/c-edit-report-suites/advertising-analytics-config.md)
@@ -155,10 +155,10 @@ ht-degree: 13%
       + [Inställningshanteraren](admin/company/preferences-manager.md)
       + [Väntande åtgärder](admin/company/pending-actions-admin.md)
       + [Åtkomstnivåer](admin/company/feature-access-levels.md)
-   + Etikettering av integritetsskydd för datahantering {#data-governance}
+   + Sekretessmärkning för datastyrning {#data-governance}
       + [Adobe Analytics arbetsflöde för datasekretess](admin/c-data-governance/an-gdpr-workflow.md)
       + [Frågor och svar](admin/c-data-governance/gdpr-faq.md)
-      + Dataetiketter {#data-labels}
+      + Dataetikett {#data-labels}
          + [Dataintegritetsetiketter för analyskomponenter](admin/c-data-governance/data-labeling/gdpr-labels.md)
          + [Data i etikettrapportsvit](admin/c-data-governance/data-labeling/gdpr-setup-reportsuite.md)
          + [Visa/hantera integritetsetiketter för rapportsviten](admin/c-data-governance/data-labeling/gdpr-view-settings.md)
@@ -183,4 +183,5 @@ ht-degree: 13%
          + [Inaktivera äldre inloggningar](admin/user-management2/user-migration/t-disable-legacy-login.md)
          + [API:er som påverkas av migreringen](admin/user-management2/user-migration/developer.md)
 + [Admin-API](c-admin-api/c-admin-api.md)
++ [Vanliga frågor om Adobe Analytics 1.4 API EOL](c-admin-api/c-admin-14-api-eol.md)
 
