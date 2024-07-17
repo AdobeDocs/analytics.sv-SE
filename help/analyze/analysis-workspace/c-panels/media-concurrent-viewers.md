@@ -51,7 +51,7 @@ Du kan när som helst redigera och återskapa panelen genom att klicka på redig
 
 Om du har valt seriebrytning visas en rad i linjediagrammet och ett sammanfattningsnummer för varje rad:
 
-![samtidiga visningsprogram](assets/concurrent-viewers-output.png)
+![samtidiga visningsprogramutdata](assets/concurrent-viewers-output.png)
 
 ### Data Source
 
@@ -59,12 +59,12 @@ Det enda mätvärdet som kan användas i den här panelen är samtidiga visnings
 
 | Mått | Beskrivning |
 |---|---|
-| Samtidiga visningsprogram | Antal unika besökare som visar medieströmmar vid en viss tidpunkt, oavsett antalet sessioner.<br><br>Detta skiljer sig från Concurrent Viewer-rapporteringen i avsnittet Rapporter, där Concurrent Active Sessions används.  Använda unika besökskonton för att ta bort oönskade toppar vid visningsgränserna (där sessionerna avslutas och börjar samtidigt). |
+| Samtidiga visningsprogram | Antal unika besökare som visar medieströmmar vid en viss tidpunkt, oavsett antalet sessioner.<br><br>Det här skiljer sig från Concurrent Viewer-rapportering i avsnittet Rapporter, där Concurrent Active Sessions används.  Använda unika besökskonton för att ta bort oönskade toppar vid visningsgränserna (där sessionerna avslutas och börjar samtidigt). |
 
 Det finns ingen friformstabell i den här vyn.  Om du vill visa datakällan kan du högerklicka på linjediagrammet och hämta som en CSV-fil.  Serieuppdelningar inkluderas.
 
 
-![samtidiga visningsprogram](assets/concurrent-viewers-download-csv.png)
+![samtidiga visningsprogramutdata](assets/concurrent-viewers-download-csv.png)
 
 ## Vanliga frågor {#FAQ}
 
@@ -78,6 +78,6 @@ Det finns ingen friformstabell i den här vyn.  Om du vill visa datakällan kan 
 | Kan jag köra avvikelseidentifiering? | Nej.  Anomalsidentifiering är inte tillgängligt för den här panelen. |
 | Varför använda unika besökare istället för aktiva sessioner? | Med unika besökare kan du ta bort oönskade toppar vid visningsgränserna (där sessionerna avslutas och börjar samtidigt). |
 | Vad innebär det att ha samtidiga visningsprogram med högre granularitet än en minut? | Med en granularitet som är större än en minut är samtidiga visningsprogram summan av unika samtidiga visningsprogram för alla minuter inom det tidsintervallet.  På timnivå är till exempel samtidiga visningsprogram summan av unika samtidiga visningsprogram för alla minuter inom timmen. |
-| Visar arbetsytan samma information som rapporten Samtidiga visningsprogram? | Nej.  I Analysis Workspace definieras samtidiga visningsprogram som antalet unika besökare som visar medieströmmen vid en viss tidpunkt, oavsett antalet sessioner.<br><br>Detta skiljer sig från Concurrent Viewer-rapporteringen i avsnittet Rapporter, där Concurrent Active Sessions används.  Med unika besökskonton kan du ta bort oönskade toppar vid visningsgränserna, där sessionerna avslutas och börjar samtidigt. |
+| Visar arbetsytan samma information som rapporten Samtidiga visningsprogram? | Nej.  I Analysis Workspace definieras samtidiga visningsprogram som antalet unika besökare som visar medieströmmen vid en viss tidpunkt, oavsett antalet sessioner.<br><br>Det här skiljer sig från Concurrent Viewer-rapportering i avsnittet Rapporter, där Concurrent Active Sessions används.  Med unika besökskonton kan du ta bort oönskade toppar vid visningsgränserna, där sessionerna avslutas och börjar samtidigt. |
 
 <!-- For more information about Media Concurrent Viewers, visit [MA doc page]( https://url). -->

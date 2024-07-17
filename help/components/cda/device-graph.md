@@ -23,10 +23,10 @@ Om du tänker implementera korsenhetsanalys med enhetens diagrammetod krävs fö
 >
 >Om du inte uppfyller alla krav kan det leda till att det inte går att aktivera enhetsövergripande analys eller dåliga resultat när du sammanfogar data.
 
-* Alla krav som anges på [översiktssida](overview.md).
-* Din organisation måste använda [Privat Adobe Experience Platform Identity Service Graph](https://business.adobe.com/products/experience-platform/identity-service.html). Se även [Hemsida](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=sv) i användarhandboken för identitetstjänsten.
-* Implementeringen måste använda den senaste versionen av Experience Cloud ID Service (ECID). Se [Hemsida](https://experienceleague.adobe.com/docs/id-service/using/home.html) i användarhandboken för ID-tjänsten. De flesta implementeringar som använder [Taggar](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html) i Adobe Experience Platform har förmodligen redan en ID-tjänst distribuerad.
-* Implementeringen måste anropa `setCustomerIDs` -funktion (eller SDK-motsvarighet) när en individ kan identifieras, till exempel när en användare loggar in eller öppnar ett e-postmeddelande. Detta krav gäller alla plattformar, inklusive mobilappar om de används. Se [`setCustomerIDs`](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/methods/setcustomerids.html) i användarhandboken för ID-tjänsten.
+* Alla krav som anges på [översiktssidan](overview.md).
+* Din organisation måste använda [Adobe Experience Platform Identity Service Private Graph](https://business.adobe.com/products/experience-platform/identity-service.html). Se även [hemsidan](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=sv) i användarhandboken för identitetstjänsten.
+* Implementeringen måste använda den senaste versionen av Experience Cloud ID Service (ECID). Se [hemsidan](https://experienceleague.adobe.com/docs/id-service/using/home.html) i användarhandboken för ID-tjänsten. I de flesta implementeringar som använder [taggar](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html) i Adobe Experience Platform har ID-tjänsten antagligen redan distribuerats.
+* Implementeringen måste anropa funktionen `setCustomerIDs` (eller motsvarande SDK) när en individ kan identifieras, till exempel när en användare loggar in eller öppnar ett e-postmeddelande. Detta krav gäller alla plattformar, inklusive mobilappar om de används. Se [`setCustomerIDs`](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/methods/setcustomerids.html) i användarhandboken för ID-tjänsten.
 
 ## Begränsningar som är specifika för enhetsdiagrammet
 
@@ -36,4 +36,4 @@ Om du tänker implementera korsenhetsanalys med enhetens diagrammetod krävs fö
 
 ## Nästa steg
 
-När organisationen uppfyller alla krav och förstår begränsningarna kan du börja [Konfigurera enhetsövergripande analys](setup.md).
+När din organisation uppfyller alla krav och förstår begränsningarna kan du starta [Konfigurera korsanalys](setup.md).

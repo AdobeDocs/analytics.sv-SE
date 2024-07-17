@@ -1,26 +1,26 @@
 ---
 title: Besök
-description: En sekvens med sidvisningar under en session.
+description: En sekvens med sidvyer i ett möte.
 feature: Metrics
 exl-id: 4f78f2b5-f958-44fe-876a-83f07980beec
 source-git-commit: d095628e94a45221815b1d08e35132de09f5ed8f
 workflow-type: tm+mt
-source-wordcount: '657'
-ht-degree: 1%
+source-wordcount: '672'
+ht-degree: 0%
 
 ---
 
 # Besök
 
-&#39;Besök&#39; [mått](overview.md) visar antalet sessioner för alla besökare på webbplatsen.
+Besöken [](overview.md) visar antalet sessioner för alla besökare på webbplatsen.
 
 ## Hur det här måttet beräknas
 
 Ett besök hör alltid till en tidsperiod, så du vet om du ska räkna med ett nytt besök om samma person kommer tillbaka till din webbplats. Ett besök börjar när användaren först kommer till din webbplats. Ett besök avslutas när något av följande villkor uppfylls:
 
 * **30 minuters inaktivitet**: Nästan alla sessioner avslutas på det här sättet. Om det tar mer än 30 minuter mellan träffarna börjar ett nytt besök.
-* **12 timmars aktivitet**: Om en användare konsekvent skickar bildförfrågningar utan 30 minuters mellanrum i mer än 12 timmar, startar ett nytt besök automatiskt.
-* **2 500 träffar**: Om en användare skapar ett stort antal träffar utan att starta en ny session räknas ett nytt besök efter 2 500 bildförfrågningar.
+* **12 timmars aktivitet**: Om en användare konsekvent utlöser bildbegäranden utan 30 minuters mellanrum i mer än 12 timmar, startar ett nytt besök automatiskt.
+* **2500 träffar**: Om en användare genererar ett stort antal träffar utan att starta en ny session räknas ett nytt besök efter 2 500 bildförfrågningar.
 * **100 träffar på 100 sekunder**: Om ett besök har fler än 100 träffar under de första 100 sekunderna av besöket avslutas besöket automatiskt. Detta beteende indikerar vanligtvis båda aktiviteterna och begränsningen används för att öka rapportens prestanda.
 
 Ett besök sammanfaller inte nödvändigtvis med en webbläsarsession på grund av ovanstående kriterier. En av de vanligaste skillnaderna är var en besökare navigerar till webbplatsen, lämnar fliken öppen i mer än 30 minuter och sedan fortsätter surfningen. Även om denna åtgärd tekniskt sett ingår i samma surfsession anser Adobe att denna åtgärd är två separata besök.
@@ -34,7 +34,7 @@ Om en besökare utför någon av dessa åtgärder, kommer ett nytt besök att p�
 * Öppnar en annan webbläsare och navigerar till din webbplats på samma dator
 * Samma person som surfar på din webbplats på olika enheter
 
-Om en besökare utför någon av dessa åtgärder gör ett nytt besök **not** starta så länge som det är mindre än 30 minuter mellan efterföljande träffar:
+Om en besökare utför någon av dessa åtgärder börjar ett nytt besök **inte** så länge det är mindre än 30 minuter mellan efterföljande träffar:
 
 * Stänger webbläsaren och navigerar sedan till webbplatsen igen
 * Startar om datorn, öppnar samma webbläsare och navigerar till webbplatsen igen
@@ -45,7 +45,7 @@ Om en besökare utför någon av dessa åtgärder gör ett nytt besök **not** s
 
 Du kan ändra definitionen för ett besök till en annan tidpunkt än 30 minuter.
 
-* För [Virtuella rapportsviter](../vrs/vrs-about.md)kan du ändra tidsgränsen för besök med [!UICONTROL Visit timeout] listruta. Du kan ändra tidsgränsen för besök till ett rimligt värde.
+* För [virtuella rapportsviter](../vrs/vrs-about.md) kan du ändra tidsgränsen för besök med hjälp av listrutan [!UICONTROL Visit timeout]. Du kan ändra tidsgränsen för besök till ett rimligt värde.
 * Om du vill ha en standardrapport kontaktar du Kundtjänst för att begära att besökslängden ska förkortas för en viss rapportserie. Du kan bara korta ned längden för standardrapportsviter med 30 minuter.
 
 ## Besök som sträcker sig över en datumgräns
@@ -54,7 +54,7 @@ Ett besök räknas för varje berörd tidsperiod. Om du till exempel har en bes�
 
 ## Besök på en dimension jämfört med totalt antal besök
 
-Besök i samband med en dimension (till exempel [Marknadsföringskanal](../dimensions/marketing-channel.md)) visar antalet besök som vid något tillfälle innehöll en viss dimensionspost. Det finns ofta flera dimensionsobjekt i olika träffar på samma besök. Försök att summera besök som rapporterar om dimensionsobjekt är vanligtvis inte rimligt.
+Besök i samband med en dimension (till exempel [Marknadskanal](../dimensions/marketing-channel.md)) visar antalet besök som innehåller en viss dimensionspost vid något tillfälle. Det finns ofta flera dimensionsobjekt i olika träffar på samma besök. Försök att summera besök som rapporterar om dimensionsobjekt är vanligtvis inte rimligt.
 
 ## Besök alla besökare i Datan Warehouse
 

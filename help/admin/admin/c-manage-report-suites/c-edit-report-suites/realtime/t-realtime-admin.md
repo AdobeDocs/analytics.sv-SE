@@ -20,13 +20,13 @@ Du skapar realtidsrapporter i Adobe Analytics genom att välja rapportsviten och
 
    Navigera till **[!UICONTROL Analytics]** > **[!UICONTROL Admin > Report Suites]**.
 
-1. Klicka **[!UICONTROL Edit Settings]** > **[!UICONTROL Real-Time]**.
+1. Klicka på **[!UICONTROL Edit Settings]** > **[!UICONTROL Real-Time]**.
 
 1. Ställ in datainsamling i realtid för upp till tre rapporter, med ett mått och tre dimensioner eller klassificeringar per rapport.
 
    ![](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/realtime/assets/real_time_admin.png)
 
-   Information om vilka realtidsvärden och -dimensioner som stöds finns i [Mätvärden och Dimensioner som stöds](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/realtime/realtime-metrics.md).
+   Mer information om vilka realtidsmått och -mått som stöds finns i [Metrisk och Dimensioner som stöds](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/realtime/realtime-metrics.md).
 
    Om du har skapat klassificeringar visas de med indrag under den dimension som de definierats för:
 

@@ -18,9 +18,9 @@ Ni kan aktivera Document Cloud Analytics för att göra PDF-specifika dimensione
 
 Följande alternativ för hantering av Document Cloud är tillgängliga när du redigerar en rapportsvit:
 
-* [!UICONTROL **Document Cloud Reporting**]
+* [!UICONTROL **Rapportering från Document Cloud**]
 
-  Rapporter som är specifika för tillägget Streaming Media Collection finns på sidan Media Reporting. Mer information om Media Reporting finns i [Konfigurera rapportering för Document Cloud](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/document-cloud-config.md).
+  Rapporter som är specifika för tillägget Streaming Media Collection finns på sidan Media Reporting. Mer information om Media Reporting finns i [Konfigurera Document Cloud-rapportering](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/document-cloud-config.md).
 
 * [!UICONTROL **Document Cloud-klassificeringar**]
 

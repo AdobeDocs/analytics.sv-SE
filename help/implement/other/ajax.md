@@ -23,10 +23,10 @@ När du har vidtagit åtgärder för att rensa variabelvärden är implementerin
 
 Eftersom sidor som använder AJAX vanligtvis inte läses in på nytt finns det flera interaktioner som en användare kan utföra på din plats. När du implementerar Adobe Analytics ska du se till att skilja sidvisningar från länkspårningsanrop. Tänk på följande fråga för varje interaktion som en användare kan utföra på din plats:
 
-*När en användare interagerar med min webbplats, ändras den interaktionen tillräckligt mycket av innehållet på sidan för att kvalificera sig som en ny sida?*
+*När en användare interagerar med min webbplats, ändrar den interaktionen tillräckligt mycket av innehållet på sidan för att kvalificera sig som en ny sida?*
 
-* Om svaret är **ja** kan du använda ett spårningsanrop för sidvy (`s.t()`).
-* Om svaret är **no** bör du överväga att spåra interaktionen med hjälp av ett länkspårningsanrop (`s.tl()`).
+* Om svaret är **ja** kan du använda ett spårningsanrop för sidvyn (`s.t()`).
+* Om svaret är **no** bör du spåra interaktionen med ett länkspårningsanrop (`s.tl()`).
 
 >[!NOTE]
 >
@@ -34,11 +34,11 @@ Eftersom sidor som använder AJAX vanligtvis inte läses in på nytt finns det f
 
 ## Rensa variabler på varje sida
 
-Variabelvärden finns kvar på sidor som använder AJAX eftersom sidan inte läses in igen. Det krävs därför en särskild inkvartering för att rensa variabla värden så att de inte kvarstår felaktigt i träffar. Adobe erbjuder [`clearVars`](../vars/functions/clearvars.md) för att enkelt ta bort variabelvärden. Kontrollera att du använder den här funktionen när du har skickat varje träff till Adobe och innan du anger variabelvärden för nästa träff.
+Variabelvärden finns kvar på sidor som använder AJAX eftersom sidan inte läses in igen. Det krävs därför en särskild inkvartering för att rensa variabla värden så att de inte kvarstår felaktigt i träffar. Adobe erbjuder funktionen [`clearVars`](../vars/functions/clearvars.md) för att enkelt ta bort variabelvärden. Kontrollera att du använder den här funktionen när du har skickat varje träff till Adobe och innan du anger variabelvärden för nästa träff.
 
 >[!TIP]
 >
->The `clearVars()` funktionen är inte tillgänglig i H-koden. Om du inte har uppgraderat till AppMeasurement anger du varje Analytics-variabelvärde till en tom sträng.
+>Funktionen `clearVars()` är inte tillgänglig i H-koden. Om du inte har uppgraderat till AppMeasurement anger du varje Analytics-variabelvärde till en tom sträng.
 
 ## Exempel
 
@@ -51,7 +51,7 @@ s.eVar1="Example value";
 void(s.t());
 ```
 
-I följande exempel visas ett spårningsanrop i `done` återanrop till JQuery `.ajax` funktion:
+I följande exempel visas ett spårningsanrop i `done`-återanropet för JQuery `.ajax` -funktionen:
 
 ```js
 $.ajax({

@@ -34,7 +34,7 @@ Integreringen av Audience Analytics har följande viktiga fördelar:
 ![](assets/mc-aud-dataflow.png)
 
 1. Varje gång en besökare kommer till era digitala resurser samlas träffar in och skickas till Analytics.
-1. Med [vidarebefordran på serversidan](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/c-server-side-forwarding/ssf.md)skickas varje träff som Analytics tar emot automatiskt till Adobe Audience Manager i realtid.
+1. Med [vidarebefordran på serversidan](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/c-server-side-forwarding/ssf.md) skickas varje träff som Analytics tar emot automatiskt till Adobe Audience Manager i realtid.
 1. Genom integreringen av Audience Analytics görs en sökning efter besökarens målgruppsmedlemskap i Adobe Audience Manager och en lista över segment-ID returneras till Analytics för bearbetning i realtid.
 
 Eftersom Adobe Audience Manager-segment infogas på samma träffbasis, kan du vara säker på att alla data som finns tillgängliga i Adobe Audience Manager om en besökare inte går förlorade och är aktuella för träffen. Detta är överlägset ett plugin-program för AppMeasurement eftersom ett plugin-program bara kan göra dessa segment tillgängliga vid nästa träff (i stället för vid den aktuella träffen).
@@ -49,6 +49,6 @@ Kontrollera att följande krav är uppfyllda:
 * Du är Audience Manager-administratör.
 * Du använder identitetstjänsten v1.5 eller senare.
 * Adobe Audience Manager och Adobe Analytics rapportsviter mappas till samma Experience Cloud-organisation.
-* Du använder [vidarebefordran på serversidan](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/c-server-side-forwarding/ssf.md) och har implementerat [Målgruppshanteringsmodul](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/audience-management-module.html) (ingen DIL-kod) - AppMeasurement 1.5 eller senare.
+* Du använder [vidarebefordran på serversidan](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/c-server-side-forwarding/ssf.md) och har implementerat modulen [Målgruppshantering](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/audience-management-module.html) (ingen DIL-kod) - AppMeasurement 1.5 eller senare.
 
-Dessa krav beskrivs i [Audience Analytics Workflow](/help/integrate/c-audience-analytics/c-workflow/audiences-workflow.md).
+Dessa krav beskrivs i arbetsflödet [Audience Analytics](/help/integrate/c-audience-analytics/c-workflow/audiences-workflow.md).

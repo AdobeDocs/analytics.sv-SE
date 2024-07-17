@@ -2,7 +2,8 @@
 title: Godkännande av annonsplattform
 description: Se konfigurationen för annonsmedgivande för tredjeparts annonsleverantörer.
 feature: Dimensions
-source-git-commit: ba892374710bc24c379e0c53e5fd00ff4c39d906
+exl-id: bf63112d-7d20-4e35-9a59-5be21135ae51
+source-git-commit: 5df5cffbb6abf712cb36fd807ef54b8ebaae1c73
 workflow-type: tm+mt
 source-wordcount: '328'
 ht-degree: 0%
@@ -11,7 +12,7 @@ ht-degree: 0%
 
 # Godkännande av annonsplattform
 
-Ad Platform-medgivande [dimension](overview.md) visar om samtycke samlas in för att skicka data till tredjepartsleverantörer av annonser, som Google, Meta och andra.
+Ad Platform Consent [dimension](overview.md) visar om samtycke samlas in för att skicka data till tredjepartsannonsleverantörer som Google, Meta med flera.
 
 För närvarande används den här dimensionen endast för Google. På grund av EU:s sekretessbestämmelser, Digital Markets Act (DMA), kräver Google att data som skickas till deras servrar och som samlas in i Europa måste ange om samtycke samlas in. Vissa Analytics-kunder skickar händelsedata via Adobe Advertising som konverteringshändelser till Google.
 
@@ -19,7 +20,7 @@ I framtiden kan denna dimension användas för att stödja kodning av ytterligar
 
 ## Fyll den här dimensionen med data
 
-Den här dimensionen samlar in data från följande [Sammanhangsdatavariabler](/help/implement/vars/page-vars/contextdata.md)
+Den här dimensionen samlar in data från följande [kontextdatavariabler](/help/implement/vars/page-vars/contextdata.md)
 
 * `contextData.['adConsent']`
 
@@ -28,7 +29,7 @@ Du fyller i kontextdatavariabeln med relevanta värden för Google medgivandefä
 * `ad_user_data` (första tecknet) och
 * `ad_personalization` (andra tecknet).
 
-Se [Godkännande i API-referensen för Google Ads](https://developers.google.com/google-ads/api/reference/rpc/v15/Consent) för mer information.
+Mer information finns i [Godkännande i API-referensen för Google Ads](https://developers.google.com/google-ads/api/reference/rpc/v15/Consent).
 
 Möjliga värden för dessa fält kan vara:
 
@@ -50,8 +51,8 @@ Tecken efter det första och andra tecknet ignoreras.
 
 Du kan använda insamlade data för annonsgodkännande:
 
-* Dataflöden: data om annonsmedgivande är tillgängliga med `dataprivacydmaconsent` [kolumn](/help/export/analytics-data-feed/c-df-contents/datafeeds-reference.md).
-* Data Warehouse-rapporter: data om annonsmedgivande finns tillgängliga med **[!UICONTROL Ad Platform Consent]** dimension.
+* Datafeeds: Information om annonsmedgivande finns tillgänglig i kolumnen `dataprivacydmaconsent` [2}.](/help/export/analytics-data-feed/c-df-contents/datafeeds-reference.md)
+* Data Warehouse-rapporter: annonsmedgivandedata är tillgängliga med dimensionen **[!UICONTROL Ad Platform Consent]**.
 
 Organisationen bestämmer logiken för att implementera den här kontextdatavariabeln. Värdet finns inte kvar efter den träff det är aktiverat, så du måste ange kontextdatavariabeln på varje sida.
 

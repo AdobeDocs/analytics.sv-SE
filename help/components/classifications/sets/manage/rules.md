@@ -1,9 +1,9 @@
 ---
 title: Klassificeringsuppsättningsregler
-description: Visa och redigera regler för en enskild klassificeringsuppsättning.
-exl-id: b3518aaa-382f-47ad-860f-b6af6ddb3cbc
+description: Visa och redigera regler för en enskild klassificeringsgrupp.
+exl-id: 1ccb6a20-1993-4fd3-90eb-9154d12d0ec7
 feature: Classifications
-source-git-commit: 811e321ce96aaefaeff691ed5969981a048d2c31
+source-git-commit: 9f70dbeb9dfe54897915213480f05cbdfaf920ef
 workflow-type: tm+mt
 source-wordcount: '424'
 ht-degree: 0%
@@ -14,16 +14,16 @@ ht-degree: 0%
 
 Klassificeringsuppsättningsregler gör att du automatiskt kan klassificera värden baserat på värdet som variabeln är inställd på. Dessa regler gäller för alla inkommande variabelvärden för alla prenumerationer av klassificeringsuppsättningen.
 
-**[!UICONTROL Components]** > **[!UICONTROL Classification sets]** > **[!UICONTROL Sets]** > Klicka på önskat namn > **[!UICONTROL Rules]**
+**[!UICONTROL Components]** > **[!UICONTROL Classification sets]** > **[!UICONTROL Sets]** > Klicka på önskat namn på klassificeringsmängden > **[!UICONTROL Rules]**
 
 ## Regelinställningar
 
 Inställningar som gäller för hela uppsättningen regler.
 
-* **[!UICONTROL Rules overwrite]**: Bestämmer beteendet för alla regler i fall där det finns ett klassificeringsvärde.
+* **[!UICONTROL Rules overwrite]**: Anger beteendet för alla regler i fall där det finns ett klassificeringsvärde.
    * **[!UICONTROL Apply to all values]**: Om en regel matchar skriver du alltid över klassificeringsvärdet.
    * **[!UICONTROL Apply only to unset values]**: Om en regel matchar skriver du bara klassificeringsvärdet om det är tomt. Om det finns ett klassificeringsvärde gör du ingenting.
-* **[!UICONTROL Lookback window]**: När den här regeln är aktiverad körs alla regler mot alla unika värden som visas i det uppslagsfönster som anges här.
+* **[!UICONTROL Lookback window]**: När den här regeln aktiveras körs alla regler mot alla unika värden som visas i det uppslagsfönster som anges här.
 
 ## Regler
 
@@ -40,10 +40,10 @@ Markera en eller flera regler genom att klicka i kryssrutan bredvid önskad rege
 
 ## Regelregister
 
-Regeltabellen är lodrätt uppdelad i två huvuddelar: matchningsvillkor och klassificeringsåtgärd. Varje rad (en enskild regel) innehåller ett matchande villkor och en klassificeringsåtgärd.
+Regeltabellen är lodrätt uppdelad i två huvuddelar: matchande villkor och klassificeringsåtgärd. Varje rad (en enskild regel) innehåller ett matchande villkor och en klassificeringsåtgärd.
 
-* **Regelnummer**: Regler körs i samma ordning som du konfigurerar regeltabellen. If [!UICONTROL Rules overwrite] är inställd på [!UICONTROL Apply to all values], skriver den senaste matchande regeln över alla tidigare regler för samma klassificeringsdimension. If [!UICONTROL Rules overwrite] är inställd på [!UICONTROL Apply to only unset values], gäller den första regeln som anger ett klassificeringsvärde.
-* **[!UICONTROL Select rule type]**: Regelvillkoret. Alternativen inkluderar [!UICONTROL Contains], [!UICONTROL Ends with], [!UICONTROL Regular expression], [!UICONTROL Regular expression]och [!UICONTROL Starts with].
-* **[!UICONTROL Enter match criteria]**: Textsträngen som ska matchas. Om du väljer [!UICONTROL Regular expression] Som regeltyp visas en övertäckning där du kan ange värdet, testa det reguljära uttrycket och ange exempelsyntax.
-* **[!UICONTROL Set classification]**: En nedrullningsbar lista som anger den klassificeringsdimension som du vill tilldela ett värde till. Giltiga alternativ innehåller element i [schema](schema.md).
-* **[!UICONTROL To]**: Textsträngen som det klassificerade värdet ska anges till. Om regeltypen är [!UICONTROL Regular expression]kan du inkludera en kombination av text och matchningsgrupper.
+* **Regelnummer**: Reglerna körs i samma ordning som du konfigurerar regeltabellen. Om [!UICONTROL Rules overwrite] är inställt på [!UICONTROL Apply to all values] skriver den senaste matchande regeln över alla tidigare regler för samma klassificeringsdimension. Om [!UICONTROL Rules overwrite] är inställt på [!UICONTROL Apply to only unset values] gäller den första regeln som anger ett klassificeringsvärde.
+* **[!UICONTROL Select rule type]**: Regelvillkoren. Alternativen är [!UICONTROL Contains], [!UICONTROL Ends with], [!UICONTROL Regular expression], [!UICONTROL Regular expression] och [!UICONTROL Starts with].
+* **[!UICONTROL Enter match criteria]**: Textsträngen som ska matchas. Om du väljer [!UICONTROL Regular expression] som regeltyp visas en övertäckning där du kan ange värdet, testa det reguljära uttrycket och ange exempelsyntax.
+* **[!UICONTROL Set classification]**: En listruta som anger den klassificeringsdimension som du vill tilldela ett värde till. Giltiga alternativ innehåller element i ditt [schema](schema.md).
+* **[!UICONTROL To]**: Textsträngen som det klassificerade värdet ska anges till. Om regeltypen är [!UICONTROL Regular expression] kan du inkludera en kombination av text och matchningsgrupper.

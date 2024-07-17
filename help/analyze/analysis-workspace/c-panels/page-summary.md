@@ -17,16 +17,16 @@ På den här panelen kan du enkelt utforska nyckelstatistik om specifika sidor.
 
 ## Öppna panelen
 
-Du kommer åt panelen inifrån [!UICONTROL Reports] eller inom [!UICONTROL Workspace].
+Du kan komma åt panelen inifrån [!UICONTROL Reports] eller i [!UICONTROL Workspace].
 
 | Åtkomstpunkt | Beskrivning |
 | --- | --- |
-| [!UICONTROL Reports] | <ul><li>Panelen har redan släppts i ett projekt.</li><li>Den vänstra listen är komprimerad.</li><li>Endast siddimensionen stöds.</li><li>En standardinställning har redan använts, i det här fallet den översta besökta sidan för[!UICONTROL Page] dimension. Du kan ändra den här inställningen.</li></ul> |
-| Arbetsyta | Skapa ett nytt projekt och välj panelikonen i den vänstra listen. Dra [!UICONTROL Page summary] ovanför friformstabellen. Observera att sidan [!UICONTROL Dimension Item] fältet är tomt. Välj en dimensionsobjekt i listrutan. |
+| [!UICONTROL Reports] | <ul><li>Panelen har redan släppts i ett projekt.</li><li>Den vänstra listen är komprimerad.</li><li>Endast siddimensionen stöds.</li><li>En standardinställning har redan tillämpats, i det här fallet den översta besökta sidan för dimensionen [!UICONTROL Page]. Du kan ändra den här inställningen.</li></ul> |
+| Workspace | Skapa ett nytt projekt och välj panelikonen i den vänstra listen. Dra panelen [!UICONTROL Page summary] ovanför friformstabellen. Observera att fältet Sida [!UICONTROL Dimension Item] är tomt. Välj en dimensionsobjekt i listrutan. |
 
 ## Panelindata {#Input}
 
-Du kan konfigurera [!UICONTROL Page summary] med dessa indatainställningar:
+Du kan konfigurera panelen [!UICONTROL Page summary] med följande indatainställningar:
 
 | Inställning | Beskrivning |
 | --- | --- |
@@ -35,11 +35,11 @@ Du kan konfigurera [!UICONTROL Page summary] med dessa indatainställningar:
 
 {style="table-layout:auto"}
 
-Klicka **[!UICONTROL Build]** för att skapa panelen.
+Klicka på **[!UICONTROL Build]** för att skapa panelen.
 
 ## Panelutdata {#output}
 
-The [!UICONTROL Page summary] panelen returnerar en mängd mätdata och visualiseringar som hjälper dig att förstå statistik om specifika sidor bättre.
+Panelen [!UICONTROL Page summary] returnerar en mängd mätdata och visualiseringar som hjälper dig att förstå statistik om specifika sidor bättre.
 
 | Mätning/visualisering | Beskrivning |
 | --- | --- |
@@ -50,10 +50,10 @@ The [!UICONTROL Page summary] panelen returnerar en mängd mätdata och visualis
 | [!UICONTROL Percentage of all page views] | Ett sammanfattningsnummer för procentandelen av alla sidvyer som gick till den här sidan. |
 | [!UICONTROL Time spent on page] | Ett vågrätt stapeldiagram med en lista över hur lång tid som har tillbringats på sidan. |
 | [!UICONTROL Single page visits] | Ett sammanfattningsnummer med en lista över antalet sidvyer där det här var den enda sidan som besöktes. |
-| [!UICONTROL Reloads] | The [!UICONTROL Reloads] mått visar antalet gånger en dimensionsobjekt fanns under en omladdning. En besökare som uppdaterar sin webbläsare är det vanligaste sättet att utlösa en omladdning. |
-| [!UICONTROL Entries] | The [!UICONTROL Entries] mått visar hur många gånger en viss dimensionspost hämtas som det första värdet i ett besök. |
-| [!UICONTROL Exits] | The [!UICONTROL Exits] mått visar hur många gånger en given dimensionspost hämtas som det sista värdet i ett besök. |
-| [!UICONTROL Flow] | Ett flödesdiagram med den valda sidan som fokalpunkt. Du kan fördjupa dig i data precis som i [Flödesdiagram](/help/analyze/analysis-workspace/visualizations/c-flow/create-flow.md). |
+| [!UICONTROL Reloads] | Måttet [!UICONTROL Reloads] visar hur många gånger ett dimensionsobjekt fanns under en omläsning. En besökare som uppdaterar sin webbläsare är det vanligaste sättet att utlösa en omladdning. |
+| [!UICONTROL Entries] | Måttet [!UICONTROL Entries] visar hur många gånger ett angivet dimensionsobjekt hämtas som det första värdet i ett besök. |
+| [!UICONTROL Exits] | Måttet [!UICONTROL Exits] visar hur många gånger ett angivet dimensionsobjekt har hämtats som det sista värdet i ett besök. |
+| [!UICONTROL Flow] | Ett flödesdiagram med den valda sidan som fokalpunkt. Du kan fördjupa dig i data precis som i ett [flödesdiagram](/help/analyze/analysis-workspace/visualizations/c-flow/create-flow.md). |
 
 {style="table-layout:auto"}
 

@@ -28,7 +28,7 @@ Här är en videosjälvstudiekurs om Flow-visualisering:
 
 ## Mellandimensionella flöden {#section_7AA325E432C846B0AC51E70CCE79B4C0}
 
-Du kan visa [flöde mellan dimensioner](/help/analyze/analysis-workspace/visualizations/c-flow/multi-dimensional-flow.md). Du kan till exempel kombinera sidor och avdelningar i ett diagram. I det här fallet kan ditt flöde gå från startsidan, till sidan Mens och sedan till avdelningen Shoes.
+Du kan visa [flödet mellan dimensioner](/help/analyze/analysis-workspace/visualizations/c-flow/multi-dimensional-flow.md). Du kan till exempel kombinera sidor och avdelningar i ett diagram. I det här fallet kan ditt flöde gå från startsidan, till sidan Mens och sedan till avdelningen Shoes.
 
 Varje kolumn kan ha olika dimensioner. Dra en dimension och släpp den i en släppzon för att lägga till den dimensionen i diagrammet.
 

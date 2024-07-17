@@ -13,16 +13,16 @@ ht-degree: 0%
 
 # avbryta
 
-The `abort` är en boolesk variabel som kan förhindra att nästa spårningsanrop skickas till Adobe. Liknande funktioner finns i Web SDK, som gör att du kan returnera `false` innan en XDM-händelse skickas.
+Variabeln `abort` är en boolesk variabel som kan förhindra att nästa spårningsanrop skickas till Adobe. Det finns liknande funktioner i Web SDK som gör att du kan returnera `false` innan en XDM-händelse skickas.
 
 ## Avbryt sändning av en händelse med Web SDK-tillägget
 
-Använd [!UICONTROL On before event send callback] kodredigerare och returnera `false`.
+Använd kodredigeraren [!UICONTROL On before event send callback] och returnera `false`.
 
-1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med dina inloggningsuppgifter för AdobeID.
 1. Klicka på den önskade taggegenskapen.
-1. Gå till [!UICONTROL Extensions] klickar du på **[!UICONTROL Configure]** knapp under [!UICONTROL Adobe Experience Platform Web SDK].
-1. Under [!UICONTROL Data Collection]klickar du på **[!UICONTROL Edit on before event send callback code]** -knappen.
+1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen **[!UICONTROL Configure]** under [!UICONTROL Adobe Experience Platform Web SDK].
+1. Klicka på knappen **[!UICONTROL Edit on before event send callback code]** under [!UICONTROL Data Collection].
 1. I kodredigeraren placerar du följande kod under de förhållanden som du vill avbryta när du skickar data till Edge:
 
 ```js
@@ -31,7 +31,7 @@ return false;
 
 ## Avbryt sändning av en händelse som implementerar Web SDK manuellt
 
-Använd `onBeforeEventSend` callback och return `false`. Se [Ändra händelser globalt](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/tracking-events.html#modifying-events-globally) finns i Web SDK-dokumentationen.
+Använd motringningen `onBeforeEventSend` och returnera `false`. Mer information finns i [Ändra händelser globalt](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/tracking-events.html#modifying-events-globally) i Web SDK-dokumentationen.
 
 ```js
 alloy("configure"), {
@@ -47,10 +47,10 @@ Det finns inget dedikerat fält i Adobe Analytics-tillägget som kan använda de
 
 ## s.abort in AppMeasurement and the Analytics extension custom code editor
 
-The `s.abort` är en boolesk variabel. Standardvärdet är `false`.
+Variabeln `s.abort` är boolesk. Dess standardvärde är `false`.
 
-* Om inställt på `true`, nästa spårningsanrop ([`t()`](../functions/t-method.md) eller [`tl()`](../functions/tl-method.md)) skickar inga data till Adobe.
-* Om inställt på `false` eller inte är definierad gör den här variabeln ingenting.
+* Om värdet är `true` skickas inga data till Adobe vid nästa spårningsanrop ([`t()`](../functions/t-method.md) eller [`tl()`](../functions/tl-method.md)).
+* Om värdet är `false` eller inte definierat händer ingenting.
 
 ```js
 s.abort = true;
@@ -58,9 +58,9 @@ s.abort = true;
 
 >[!NOTE]
 >
->The `abort` variabeln återställs till `false` efter varje spårningssamtal. Om du vill avbryta efterföljande spårningsanrop på samma sida anger du `abort` till `true` igen.
+>Variabeln `abort` återställs till `false` efter varje spårningsanrop. Om du vill avbryta efterföljande spårningsanrop på samma sida anger du `abort` till `true` igen.
 
-The `abort` variabeln kan anges i [`doPlugins()`](../functions/doplugins.md) -funktion, som är den sista funktionen som körs innan en bildbegäran skickas till Adobe. Det här exemplet fungerar ungefär som `onBeforeEventSend` återanrop med Web SDK.
+Variabeln `abort` kan anges i funktionen [`doPlugins()`](../functions/doplugins.md) som är den sista funktionen som körs innan en bildbegäran skickas till Adobe. Det här exemplet fungerar på ungefär samma sätt som `onBeforeEventSend`-återanropet med Web SDK.
 
 ```js
 s.doPlugins = function(s) {

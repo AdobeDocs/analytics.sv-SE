@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Segmentfunktionaliteten skiljer sig oftast mellan användare på administratörsnivå och icke-administratörer.
 
-|  | Administratörsanvändare | Icke-administratörer |
+| | Administratörer | Icke-administratörer |
 | --- | --- | --- |
 | Använda segment | Ägda segment eller delade segment. Men kan dela segment från alla användare till sig och använda dem | Endast ägda segment eller delade segment |
 | Visa segment i segmenthanteraren | Alla segment i organisationen | Endast ägda segment eller delade segment |

@@ -1,20 +1,20 @@
 ---
 title: Översikt över panelen Segmentjämförelse
 description: Lär dig hur du använder segmentjämförelsepanelen som en del av segmentanalysen i Analysis Workspace.
-keywords: Analysis Workspace;Segmentanalys
+keywords: Analysis Workspace;Segment IQ
 feature: Segmentation
 role: User, Admin
 exl-id: 1f5df6fb-1e9f-4b8f-885c-bf9e68d88c89
 source-git-commit: 1ee50c6a2231795b2ad0015a79e09b7c1c74d850
 workflow-type: tm+mt
-source-wordcount: '1137'
+source-wordcount: '1146'
 ht-degree: 4%
 
 ---
 
 # Översikt över panelen Segmentjämförelse
 
-Panelen Segmentjämförelse är en verktygsdel av [Segmentanalys](../../segment-iq.md) som upptäcker de mest statistiskt signifikanta skillnaderna mellan ett obegränsat antal segment. Funktionen itererar genom en automatisk analys av alla dimensioner och mätvärden som du har tillgång till. Den identifierar automatiskt de viktigaste egenskaperna hos de målgruppssegment som driver företagets nyckeltal och låter er se hur mycket som överlappar alla segment.
+Panelen Segmentjämförelse är en verktygsdel av [Segmentanalys](../../segment-iq.md) som identifierar de mest statistiskt signifikanta skillnaderna mellan ett obegränsat antal segment. Funktionen itererar genom en automatisk analys av alla dimensioner och mätvärden som du har tillgång till. Den identifierar automatiskt de viktigaste egenskaperna hos de målgruppssegment som driver företagets nyckeltal och låter er se hur mycket som överlappar alla segment.
 
 Här är en videofilm om segmentjämförelse:
 
@@ -29,34 +29,34 @@ Här är en videofilm om segmentjämförelse:
 1. Kontrollera att Tomt projekt är markerat i det modala popup-fönstret och klicka sedan på Skapa.
 1. Klicka på panelknappen till vänster och dra sedan segmentjämförelsepanelen ovanför eller nedanför den automatiskt skapade friformstabellpanelen.
 
-   ![Panelen Jämför](assets/seg-compare-panel.png)
+   ![Jämför panel](assets/seg-compare-panel.png)
 
 1. Markera segment som ska jämföras och släpp dem på panelen.
 
    ![Jämför målgrupper](assets/compare-audiences.png)
 
-   När du har dragit ett segment till panelen skapas en [!UICONTROL 'Everyone Else'] som innehåller alla NOT i det segment du valde. Det är ett segment som används ofta på jämförelsepanelen, men du kan ta bort det och jämföra ett annat urvalssegment.
+   När du har dragit ett segment till panelen skapas automatiskt ett [!UICONTROL 'Everyone Else']-segment som innehåller alla NOT i det valda segmentet. Det är ett segment som används ofta på jämförelsepanelen, men du kan ta bort det och jämföra ett annat urvalssegment.
 
    ![Alla andra](assets/everyone-else.png)
 
-1. När du har bestämt vilka två segment du vill jämföra klickar du på [!UICONTROL Build].
+1. När du har fastställt vilka två segment som ska jämföras klickar du på [!UICONTROL Build].
 
    Den här åtgärden startar en backend-process som letar efter statistiska skillnader mellan de två valda segmenten och alla dimensioner, mått och andra segment. En förloppsindikator högst upp på panelen anger återstående tid tills alla mått och mått analyseras. De mest använda mätvärdena, dimensionerna och segmenten prioriteras så att de mest relevanta resultaten returneras i tid.
 
 ## Uteslut komponenter från jämförelse
 
-Ibland är det önskvärt att utesluta vissa dimensioner, mätvärden eller segment från segmentjämförelser. Du kan till exempel jämföra segmentet&quot;Användare av mobiltelefoner i USA&quot; med&quot;Användare av mobiltelefoner i Tyskland&quot;. Att inkludera geografiskt orienteringsrelaterade dimensioner skulle inte vara rimligt eftersom dessa segment redan antyder dessa skillnader.
+Ibland är det önskvärt att utesluta vissa dimensioner, mätvärden eller segment från segmentjämförelser. Du kan till exempel jämföra segmentet&quot;Användare av mobilenheter i USA&quot; med&quot;Användare av mobilenheter i Tyskland&quot;. Att inkludera geografiskt orienteringsrelaterade dimensioner skulle inte vara rimligt eftersom dessa segment redan antyder dessa skillnader.
 
-1. Klicka på [!UICONTROL 'Show Advanced Options'].
-1. Dra och släpp komponenter som du vill utesluta i [!UICONTROL Excluded Components] -panelen.
+1. Klicka på [!UICONTROL 'Show Advanced Options'] när de önskade två segmenten finns på panelen.
+1. Dra och släpp komponenter som du vill utesluta till panelen [!UICONTROL Excluded Components].
 
    ![Exkluderade komponenter](assets/excluded-components.png)
 
-Klicka [!UICONTROL 'Set as default'] för att automatiskt utesluta de aktuella komponenterna i alla framtida segmentjämförelser. Om du vill redigera uteslutna komponenter klickar du på en komponenttyp och sedan på X bredvid en komponent för att ta med den i analysen. Klicka på Rensa alla om du vill ta med alla komponenter i segmentjämförelsen.
+Klicka på [!UICONTROL 'Set as default'] för att automatiskt exkludera dina aktuella komponenter i alla framtida segmentjämförelser. Om du vill redigera uteslutna komponenter klickar du på en komponenttyp och sedan på X bredvid en komponent för att ta med den i analysen. Klicka på Rensa alla om du vill ta med alla komponenter i segmentjämförelsen.
 
-![Exkluderade dimensioner](assets/excluded-dimensions.png)
+![Undantagna dimensioner](assets/excluded-dimensions.png)
 
-## Visa en segmentjämförelserapport
+## Visa en segmentjämförelse
 
 När Adobe har analyserat de två önskade segmenten visas resultatet i flera visualiseringar:
 
@@ -76,9 +76,9 @@ Till höger om visualisering av storlek och överlappning visas det totala antal
 
 ![Populationssammanfattningar](assets/population_summaries.png)
 
-### Toppvärden
+### De viktigaste mätvärdena
 
-Visar de mest statistiskt signifikanta mätvärdena mellan de två segmenten. Varje rad i den här tabellen representerar ett differentierande mått, rankat efter hur olika det är mellan varje segment. Skillnaden på 1 betyder att den är statistiskt signifikant, medan differensvärdet 0 betyder att det inte finns någon statistisk signifikans.
+Visar de mest statistiskt signifikanta mätvärdena mellan de två segmenten. Varje rad i den här tabellen representerar ett differentierande mått, som rangordnas efter hur olika det är mellan varje segment. Skillnaden på 1 betyder att den är statistiskt signifikant, medan differensvärdet 0 betyder att det inte finns någon statistisk signifikans.
 
 Den här visualiseringen liknar frihandstabeller i Analysis Workspace. Om du vill ha mer detaljerad analys av ett visst mått för du muspekaren över ett radobjekt och klickar på Skapa visuellt. En ny tabell skapas för att analysera det specifika måttet. Om ett mätvärde inte är relevant för din analys håller du pekaren över radobjektet och klickar på X för att ta bort det.
 
@@ -96,7 +96,7 @@ Till höger om måtttabellen finns en länkad visualisering. Du kan klicka på e
 
 ### Övre dimensioner
 
-Visar de mest statistiskt signifikanta dimensionsobjekten i alla dimensioner. Varje rad visar procentandelen för varje segment som har denna dimensionspost. Den här tabellen kan till exempel visa att 100 % av besökarna i segment A hade dimensionsobjektet Browser Type: Google&quot;, medan endast 19,6 % av Segment B hade denna dimensionspost. Skillnaden på 1 betyder att den är statistiskt signifikant, medan differensvärdet 0 betyder att det inte finns någon statistisk signifikans.
+Visar de mest statistiskt signifikanta dimensionsobjekten i alla dimensioner. Varje rad visar procentandelen för varje segment som har denna dimensionspost. Den här tabellen kan till exempel visa att 100 % av besökarna i segment A hade dimensionsobjektet Browser Type: Google, medan endast 19,6 % av Segment B hade detta dimensionsobjekt. Skillnaden på 1 betyder att den är statistiskt signifikant, medan differensvärdet 0 betyder att det inte finns någon statistisk signifikans.
 
 Den här visualiseringen liknar frihandstabeller i Analysis Workspace. Om du vill göra en djupgående analys av ett visst dimensionsobjekt håller du pekaren över ett radobjekt och klickar på Skapa visuellt. En ny tabell skapas för att analysera den specifika dimensionsobjektet. Om en dimensionspost inte är relevant för din analys håller du pekaren över radobjektet och klickar på X för att ta bort den.
 
@@ -122,10 +122,10 @@ Den här visualiseringen liknar frihandstabeller i Analysis Workspace. Om du vil
 >
 >Segment som läggs till i den här tabellen efter att segmentjämförelsen har slutförts får inte en Differenspoäng.
 
-![De vanligaste segmenten](assets/top-segments.png)
+![Toppsegment](assets/top-segments.png)
 
 ### Segmentöverlappning
 
-Till höger om segmenttabellen finns en länkad vinjettvisualisering. Här visas det segment som är mest statistiskt signifikant för dina jämförda segment. Exempel:&quot;Segment A&quot; +&quot;Statistiskt signifikant segment&quot; jämfört med &#39;Segment B&#39; + &#39;Statistiskt signifikant segment&#39;. Om du klickar på ett segmentradsobjekt i tabellen till vänster uppdateras venndiagrammet till höger.
+Till höger om segmenttabellen finns en länkad vinjettvisualisering. Här visas det segment som är mest statistiskt signifikant för dina jämförda segment. Exempel:&quot;Segment A&quot; +&quot;Statistiskt signifikant segment&quot; jämfört med&quot;segment B&quot; +&quot;Statistiskt signifikant segment&quot;. Om du klickar på ett segmentradsobjekt i tabellen till vänster uppdateras venndiagrammet till höger.
 
-![Fogdiagram för övre segment](assets/segment-overlap.png)
+![Vagndiagram för övre segment](assets/segment-overlap.png)

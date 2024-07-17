@@ -27,7 +27,7 @@ Den här sidan innehåller en översikt över hur du bäst använder Adobe Analy
 
 De flesta digitala assistenter har idag en liknande högnivåarkitektur:
 
-1. **Enhet**: Det finns en enhet (som Amazon Echo eller en telefon) med en mikrofon som användaren kan ställa en fråga på.
+1. **Enhet**: Det finns en enhet (som Amazon Echo eller en telefon) med en mikrofon som gör att användaren kan ställa en fråga.
 1. **Digital assistent**: Den enheten interagerar med den tjänst som driver den digitala assistenten. Det är där talet konverteras till maskinläsliga återgivningar och detaljerna i begäran tolkas. När användarens avsikt är klar skickar den digitala assistenten förfrågningens avsikt och information till det program som hanterar begäran.
 1. **&quot;App&quot;**: Appen kan antingen vara en app på telefonen eller en röstapp. Programmet ansvarar för att svara på begäran. Den svarar på den digitala assistenten och den digitala assistenten svarar sedan på användaren.
 
@@ -44,7 +44,7 @@ Om du bara är intresserad av att spela in vad som hände med kunden för framti
 
 ## Nya installationer
 
-För vissa digitala assistenter får du ett meddelande när någon installerar kompetensen, särskilt när det gäller autentisering. Adobe rekommenderar att du skickar en Install-händelse genom att ställa in kontextdatavariabeln `a.InstallEvent=1`. Den här funktionen är inte tillgänglig för alla digitala assistenter, men den är användbar när den är till för att se lojalitet. Följande kodexempel skickar värdena Install event, Install Date och AppID till kontextdatavariabler.
+För vissa digitala assistenter får du ett meddelande när någon installerar kompetensen, särskilt när det gäller autentisering. Adobe rekommenderar att du skickar en Install-händelse genom att ange kontextdatavariabeln `a.InstallEvent=1`. Den här funktionen är inte tillgänglig för alla digitala assistenter, men den är användbar när den är till för att se lojalitet. Följande kodexempel skickar värdena Install event, Install Date och AppID till kontextdatavariabler.
 
 ```text
 GET
@@ -59,7 +59,7 @@ Host:
 
 ## Flera assistenter eller flera appar
 
-Det är troligt att din organisation vill ha appar för flera plattformar. Det bästa sättet är att inkludera ett program-ID i varje begäran. Den här variabeln kan anges i `a.AppID` kontextdatavariabel. Följ formatet för `[AppName] [BundleVersion]`till exempel BigMac för Alexa 1.2:
+Det är troligt att din organisation vill ha appar för flera plattformar. Det bästa sättet är att inkludera ett program-ID i varje begäran. Den här variabeln kan anges i datavariabeln `a.AppID` context. Följ formatet för `[AppName] [BundleVersion]`, till exempel BigMac för Alexa 1.2:
 
 ```text
 GET /b/ss/examplersid1,examplersid2/1?vid=[UserID]&c.a.AppID=Spoofify1.0&c.a.Launches=1&c.Product=AmazonEcho&c.OSType=Alexa&pageName=install  HTTP/1.1
@@ -75,9 +75,9 @@ Cache-Control: no-cache
 
 ## Användar-/besökaridentifiering
 
-Adobe Analytics använder [Adobe Experience Cloud Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html) för att knyta interaktioner över tiden till samma person. De flesta digitala assistenter ger `userID` som du kan använda för att behålla aktiviteten för olika användare. I de flesta fall är det här värdet vad du kan skicka in som en unik identifierare. Vissa plattformar returnerar en identifierare som är längre än 100 tecken. I dessa fall rekommenderar Adobe att du hash-kodar den unika identifieraren till ett fast längdvärde med hjälp av en standardhash-algoritm som MD5 eller Sha1.
+Adobe Analytics använder [Adobe Experience Cloud identitetstjänst](https://experienceleague.adobe.com/docs/id-service/using/home.html) för att knyta interaktioner över tiden till samma person. De flesta digitala assistenter returnerar en `userID` som du kan använda för att behålla aktiviteten för olika användare. I de flesta fall är det här värdet vad du kan skicka in som en unik identifierare. Vissa plattformar returnerar en identifierare som är längre än 100 tecken. I dessa fall rekommenderar Adobe att du hash-kodar den unika identifieraren till ett fast längdvärde med hjälp av en standardhash-algoritm som MD5 eller Sha1.
 
-Att använda ID-tjänsten ger mest värde när du mappar ECID:n på olika enheter (till exempel webb till digital assistent). Om din app är en mobilapp använder du Experience Platform SDK:n i befintligt skick och skickar användar-ID:t med `setCustomerID` -metod. Om din app är en tjänst använder du användar-ID:t som tillhandahålls av tjänsten som ECID, och anger det i `setCustomerID`.
+Att använda ID-tjänsten ger mest värde när du mappar ECID:n på olika enheter (till exempel webb till digital assistent). Om din app är en mobilapp använder du Experience Platform SDK:n som den är och skickar användar-ID:t med metoden `setCustomerID`. Om din app är en tjänst använder du användar-ID:t som tillhandahålls av tjänsten som ECID och anger det i `setCustomerID`.
 
 ```text
 GET /b/ss/examplersid1,examplersid2/1?vid=[UserID]&pageName=[intent]  HTTP/1.1
@@ -89,18 +89,18 @@ Cache-Control: no-cache
 
 Eftersom digitala assistenter är konversationer har de ofta begreppet session. Exempel:
 
-**Konsument:** &quot;Okej, Google, ring en taxi åt mig&quot;
+**Kund:** &quot;OK Google, ring mig en taxi&quot;
 
-**Google:**:&quot;Vilken tid vill du ha?&quot;
+**Google:**: &quot;Visst, vilken tid vill du ha?&quot;
 
 **Konsument:** &quot;20:30&quot;
 
-**Google:** &quot;Låter bra, drivrutinen är vid klockan 20.30&quot;
+**Google:** &quot;Låter bra, drivrutinen är vid 08:30&quot;
 
 Sessioner är viktiga för att hålla sammanhanget och för att hjälpa till att samla in mer information för att göra den digitala assistenten mer naturlig. När Analytics implementeras i en konversation finns det två saker att göra när en ny session startas:
 
 1. **Nå ut till Audience Manager**: Hämta relevanta segment som en användare är en del av så att du kan anpassa svaret. (Den här personen är till exempel berättigad till rabatt i flera kanaler.)
-2. **Skicka i en ny session eller en starthändelse**: När du skickar det första svaret till Analytics ska du ta med en starthändelse. Vanligtvis kan detta skickas genom att kontextdata för `a.LaunchEvent=1`.
+2. **Skicka i en ny session eller en starthändelse**: När du skickar det första svaret till Analytics inkluderar du en starthändelse. Vanligtvis kan detta skickas genom att kontextdata för `a.LaunchEvent=1` anges.
 
 ```text
 GET /b/ss/examplersid1,examplersid2/1?vid=[UserID]&c.a.LaunchEvent=1&c.Intent=[intent]&pageName=[intent]  HTTP/1.1
@@ -112,7 +112,7 @@ Cache-Control: no-cache
 
 Var och en av de digitala assistenterna har algoritmer som identifierar metoder och sedan skickar metoden vidare till&quot;appen&quot; så att appen vet vad den ska göra. Dessa metoder är en kort representation av begäran.
 
-Om en användare till exempel säger&quot;Siri, Skicka John $20 för middag igår kväll från min bankapp&quot; kan avsikten vara ungefär som *sendMoney*.
+Om en användare till exempel säger&quot;Siri, Skicka John $20 för middag igår kväll från min bankapp&quot; kan avsikten vara något som *sendMoney*.
 
 Genom att skicka in var och en av dessa förfrågningar som eVar kan du köra målningsrapporter för var och en av avsikterna med konversationsappar. Se till att appen även kan hantera förfrågningar utan avsikt. Adobe rekommenderar att du skickar &quot;Ingen metod har angetts&quot; till datavariabeln för intent-kontext, i stället för att utelämna variabeln.
 
@@ -164,10 +164,10 @@ De flesta plattformar visar inte den enhet som användaren pratade med, men de v
 
 Exempel: `":Audio:Camera:Screen:Video:"`
 
-Inledande och avslutande kolon är till hjälp när du skapar segment. Visa till exempel alla träffar med `:Audio:` funktioner.
+Inledande och avslutande kolon är till hjälp när du skapar segment. Visa till exempel alla träffar med `:Audio:`-funktioner.
 
 * [Amazon Capabilities](https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/alexa-skills-kit-interface-reference) med Amazon Alexa
-* [Google Capabilities](https://developers.google.com/actions/assistant/surface-capabilities) använda funktionsmakron i Google
+* [Google Capabilities](https://developers.google.com/actions/assistant/surface-capabilities) med funktionsmakron i Google
 
 ## Exempel
 

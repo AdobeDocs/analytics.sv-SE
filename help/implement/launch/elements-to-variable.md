@@ -18,9 +18,9 @@ När du har en databas med taggdataelement kan du tilldela dem till Analytics-di
 
 ## Förutsättningar
 
-[Mappa datalagerobjekt till dataelement](layer-to-elements.md): Se till att du förstår taggdataelementen och att du har flera att arbeta med.
+[Mappa datalagerobjekt till dataelement](layer-to-elements.md): Kontrollera att du förstår taggdataelement och att du har flera att arbeta med.
 
-[Skapa ett dokument för lösningsdesign](../prepare/solution-design.md): Ett dokument för utformning av lösningar är avgörande för att hålla sig välorganiserat. Genom att följa ert lösningsdesigndokument förenklas tilldelningen av dataelement till analysvariabler.
+[Skapa ett lösningsdesigndokument](../prepare/solution-design.md): Ett lösningsdesigndokument är nödvändigt för att du ska kunna hålla ordning. Genom att följa ert lösningsdesigndokument förenklas tilldelningen av dataelement till analysvariabler.
 
 ## Tilldela dataelement till analysvariabler
 
@@ -30,27 +30,27 @@ Om du publicerar ett taggbibliotek efter att du har utfört de här stegen kan d
 
 Globala variabler är idealiska om du vill ange variabelvärden på alla sidor där dataelementet finns.
 
-1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med dina inloggningsuppgifter för AdobeID.
 1. Klicka på den önskade taggegenskapen.
-1. Klicka på [!UICONTROL Extensions tab]och sedan klicka [!UICONTROL Configure] under Adobe Analytics-tillägget.
-1. Klicka på [!UICONTROL Global variables] , som visar gränssnittet för att tilldela globala variabler.
+1. Klicka på [!UICONTROL Extensions tab] och sedan på [!UICONTROL Configure] under Adobe Analytics-tillägget.
+1. Klicka på dragspelsfliken [!UICONTROL Global variables], som visar gränssnittet för att tilldela globala variabler.
 
 ### Ange variabler i regler
 
 Variabler som ställs in i regler är idealiska om du inte vill ha variabler som ställs in på varje sida. Du definierar villkoren i regeln. Se [Regler](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html) i dokumentationen för Adobe Experience Platform-taggar.
 
-1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med dina inloggningsuppgifter för AdobeID.
 1. Klicka på den önskade taggegenskapen.
-1. Klicka på [!UICONTROL Rules] och sedan klicka på önskad regel (eller skapa en).
-1. Klicka på [!UICONTROL Add] knapp under [!UICONTROL Actions].
-1. Ange [!UICONTROL Extension] nedrullningsbar lista till Adobe Analytics och [!UICONTROL Action Type] för att ange variabler.
-1. Klicka på ![Dataelement](assets/data-element.png) till höger om den önskade Analytics-variabeln. Din organisations [konstruktionsdokument](../prepare/solution-design.md) anger vilken Analytics-variabel som ska användas.
+1. Klicka på fliken [!UICONTROL Rules] och klicka sedan på önskad regel (eller skapa en).
+1. Klicka på knappen [!UICONTROL Add] under [!UICONTROL Actions].
+1. Ställ in listrutan [!UICONTROL Extension] på Adobe Analytics och listrutan [!UICONTROL Action Type] på Ange variabler.
+1. Klicka på ikonen ![Dataelement](assets/data-element.png) till höger om den önskade Analytics-variabeln. Organisationens [lösningsdesigndokument](../prepare/solution-design.md) anger vilken Analytics-variabel som ska användas.
 1. Markera det önskade dataelementet i det modala fönstret. Klicka på [!UICONTROL Select].
-1. Dataelementnamnet läggs till i textfältet omgivet av `%` skyltar. Om du t.ex. gav dataelementet namnet&quot;Sidnamn&quot; visas strängen `%Page name%` när ett dataelement tilldelas till en variabel.
+1. Dataelementnamnet läggs till i textfältet omgivet av `%` tecken. Om du till exempel gav dataelementet namnet&quot;Sidnamn&quot;, skulle du se strängen `%Page name%` när du tilldelar ett dataelement till en variabel.
 
 >[!TIP]
 >
->Du kan sammanfoga dataelement i samma variabel. Om du till exempel har ett dataelement av typen Värdnamn och ett dataelement av typen Sökväg kan du kombinera båda i en enda variabel med `%Hostname%%Pathname%`.
+>Du kan sammanfoga dataelement i samma variabel. Om du till exempel har ett dataelement av typen Värdnamn och ett dataelement av typen Sökväg, kan du kombinera båda i en enda variabel med `%Hostname%%Pathname%`.
 
 ## Nästa steg
 

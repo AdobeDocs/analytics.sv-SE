@@ -15,17 +15,17 @@ ht-degree: 0%
 
 {{plug-in}}
 
-The `getPreviousValue` Med plugin-programmet kan du ställa in en variabel på ett värde som ställts in för en tidigare träff. Detta plugin-program behövs inte om implementeringen innehåller alla önskade värden i den aktuella träffen.
+Med plugin-programmet `getPreviousValue` kan du ange en variabel till ett värde som angetts vid en tidigare träff. Detta plugin-program behövs inte om implementeringen innehåller alla önskade värden i den aktuella träffen.
 
 ## Installera plugin-programmet med Web SDK-tillägget
 
 Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-programmen med Web SDK.
 
-1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
-1. Klicka **[!UICONTROL Tags]** till vänster och klicka sedan på den önskade taggegenskapen.
-1. Klicka **[!UICONTROL Extensions]** till vänster och klicka sedan på **[!UICONTROL Catalog]** tab
-1. Leta rätt på och installera **[!UICONTROL Common Web SDK Plugins]** tillägg.
-1. Klicka **[!UICONTROL Data Elements]** till vänster och klicka sedan på dataelementet.
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med dina inloggningsuppgifter för AdobeID.
+1. Klicka på **[!UICONTROL Tags]** till vänster och klicka sedan på den önskade taggegenskapen.
+1. Klicka på **[!UICONTROL Extensions]** till vänster och sedan på fliken **[!UICONTROL Catalog]**
+1. Leta reda på och installera tillägget **[!UICONTROL Common Web SDK Plugins]**.
+1. Klicka på **[!UICONTROL Data Elements]** till vänster och klicka sedan på det önskade dataelementet.
 1. Ange det önskade dataelementnamnet med följande konfiguration:
    * Tillägg: Vanliga SDK-plugin-program för webben
    * Dataelement: `getPreviousValue`
@@ -40,10 +40,10 @@ Denna plugin stöds ännu inte för användning i en manuell implementering av W
 
 Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-programmen med Adobe Analytics.
 
-1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med dina inloggningsuppgifter för AdobeID.
 1. Klicka på den önskade taggegenskapen.
-1. Gå till [!UICONTROL Extensions] klickar du på [!UICONTROL Catalog] knapp
-1. Installera och publicera [!UICONTROL Common Analytics Plugins] extension
+1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Catalog]
+1. Installera och publicera tillägget [!UICONTROL Common Analytics Plugins]
 1. Om du inte redan har det skapar du en regel med namnet&quot;Initiera plugin-program&quot; med följande konfiguration:
    * Villkor: Inget
    * Händelse: Kärna - Bibliotek inläst (sidan ovanpå)
@@ -56,10 +56,10 @@ Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-program
 
 Om du inte vill använda tillägget för Common Analytics-plugin-program kan du använda den anpassade kodredigeraren.
 
-1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med dina inloggningsuppgifter för AdobeID.
 1. Klicka på önskad egenskap.
-1. Gå till [!UICONTROL Extensions] klickar du på **[!UICONTROL Configure]** under Adobe Analytics-tillägget.
-1. Expandera [!UICONTROL Configure tracking using custom code] dragspelspanel, som visar [!UICONTROL Open Editor] -knappen.
+1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen **[!UICONTROL Configure]** under Adobe Analytics-tillägget.
+1. Expandera dragspelsfliken [!UICONTROL Configure tracking using custom code] som visar knappen [!UICONTROL Open Editor].
 1. Öppna den anpassade kodredigeraren och klistra in den plugin-kod som finns nedan i redigeringsfönstret.
 1. Spara och publicera ändringarna i Analytics-tillägget.
 
@@ -75,12 +75,12 @@ function getPreviousValue(v,c){var k=v,d=c;if("-v"===k)return{plugin:"getPreviou
 
 ## Använda plugin-programmet
 
-The `getPreviousValue` funktionen använder följande argument:
+Funktionen `getPreviousValue` använder följande argument:
 
-* **`v`** (sträng, obligatoriskt): Variabeln som har värdet som du vill skicka till nästa bildbegäran. En vanlig variabel används `s.pageName` för att hämta föregående sidvärde.
-* **`c`** (sträng, valfritt): Namnet på den cookie som lagrar värdet.  Om det här argumentet inte anges används standardvärdet `"s_gpv"`.
+* **`v`** (sträng, krävs): Variabeln som har värdet som du vill skicka till nästa bildbegäran. En vanlig variabel som används är `s.pageName` för att hämta föregående sidvärde.
+* **`c`** (sträng, valfritt): Namnet på den cookie som lagrar värdet.  Om det här argumentet inte anges är standardvärdet `"s_gpv"`.
 
-När du anropar den här funktionen returneras strängvärdet som finns i cookien. Plugin-programmet återställer sedan förfallotiden för cookie och tilldelar det variabelvärdet från `v` argument. Kakan går ut efter 30 minuters inaktivitet.
+När du anropar den här funktionen returneras strängvärdet som finns i cookien. Plugin-programmet återställer sedan förfallotiden för cookie och tilldelar det variabelvärdet från argumentet `v`. Kakan går ut efter 30 minuters inaktivitet.
 
 ## Exempel
 
@@ -102,7 +102,7 @@ s.eVar10 = getPreviousValue(s.eVar1);
 
 ## Osannolikt fel
 
-Om variabeln som är associerad med `v` -argumentet är inställt på ett nytt värde och `getPreviousValue` plug-in-program körs MEN ett Analytics-serveranrop skickas INTE samtidigt som det nya `v` argumentvärdet betraktas fortfarande som&quot;föregående värde&quot; nästa gång plugin-programmet körs.
+Om variabeln som är associerad med argumentet `v` är inställd på ett nytt värde och plugin-programmet `getPreviousValue` körs MEN ett serveranrop från Analytics INTE skickas samtidigt, betraktas det nya argumentvärdet `v` fortfarande som&quot;föregående värde&quot; nästa gång plugin-programmet körs.
 Anta till exempel att följande kod körs på den första sidan av besöket:
 
 ```js
@@ -111,14 +111,14 @@ s.prop7 = getPreviousValue(s.pageName,"gpv_Page");
 s.t();
 ```
 
-Den här koden skapar ett serveranrop där `pageName` är &quot;Home&quot; och prop7 är inte inställt.  Anropet till `getPreviousValue` lagrar värdet för `pageName` i `gpv_Page` cookie. Anta att följande kod körs omedelbart därefter på samma sida:
+Den här koden skapar ett serveranrop där `pageName` är Home och prop7 inte är inställt.  Anropet till `getPreviousValue` lagrar dock värdet för `pageName` i `gpv_Page`-cookien. Anta att följande kod körs omedelbart därefter på samma sida:
 
 ```js
 s.pageName = "New value";
 s.prop7 = getPreviousValue(s.pageName,"gpv_Page");
 ```
 
-Sedan `t()` funktionen körs inte i det här kodblocket, en annan bildbegäran skickas inte.  När `getPreviousValue` funktionskoden körs den här gången, `prop7` är inställt på föregående värde för `pageName` (&quot;Hem&quot;), lagrar sedan det nya värdet för `pageName` (&quot;Nytt värde&quot;) i `gpv_Page` cookie. Anta sedan att besökaren navigerar till en annan sida och att följande kod körs på den här sidan:
+Eftersom funktionen `t()` inte körs i det här kodblocket skickas ingen annan bildbegäran.  När funktionskoden `getPreviousValue` körs den här gången ställs `prop7` in på det tidigare värdet `pageName` (&quot;Hem&quot;) och sedan sparas det nya värdet `pageName` (&quot;Nytt värde&quot;) i cookien `gpv_Page`. Anta sedan att besökaren navigerar till en annan sida och att följande kod körs på den här sidan:
 
 ```js
 s.pageName = "Page 2";
@@ -126,7 +126,7 @@ s.prop7 = getPreviousValue(s.pageName,"gpv_Page");
 s.t();
 ```
 
-När `t()` funktionen körs, skapar en bildbegäran där `pageName` är &quot;Page 2&quot; och `prop7` är &quot;New value&quot;, vilket var värdet för `pageName` när senaste samtal till `getPreviousValue` har ägt rum. The `prop7` värde för `"Home"` ingick aldrig i en bildbegäran trots att&quot;Hem&quot; var det första värdet som skickades till `pageName`.
+När funktionen `t()` körs skapas en bildbegäran där `pageName` är &quot;Sida 2&quot; och `prop7` är &quot;Nytt värde&quot;, vilket var värdet `pageName` när det senaste anropet till `getPreviousValue` ägde rum. Värdet `prop7` för `"Home"` fanns aldrig i en bildbegäran, även om Home var det första värdet som skickades till `pageName`.
 
 ## Tidigare versioner
 

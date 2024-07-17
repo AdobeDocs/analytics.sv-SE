@@ -6,7 +6,7 @@ feature: Progressive Web Apps
 exl-id: f28e0bfc-0e3e-4f28-9533-6788a36d37fe
 source-git-commit: c8faf29262b9b04fc426f4a26efaa8e51293f0ec
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '275'
 ht-degree: 0%
 
 ---
@@ -23,11 +23,11 @@ Adobe Analytics fungerar lika smidigt med PWA som med traditionella webbplatser.
 
 ## Hämta data från PWA Analytics
 
-Samla in och analysera data från PWA med [!UICONTROL Analytics]behöver du inte göra några konfigurationsändringar. [!UICONTROL Analytics] har automatiskt samma funktioner och funktioner som en traditionell webbplats.
+Om du vill samla in och analysera dina PWA-data med [!UICONTROL Analytics] behöver du inte göra några konfigurationsändringar. [!UICONTROL Analytics] har automatiskt samma funktioner och funktioner som en traditionell webbplats.
 
 ## Lägg till offline-spårning för att öka effektiviteten i PWA
 
-Du kan öka effekten av PWA genom att använda Adobe Analytics [spårningsfunktioner offline](/help/implement/vars/config-vars/trackoffline.md) med den. Som standard är den här funktionen inaktiverad, men du kan lägga till följande egenskap i filen AppMeasurement.js för att aktivera den: `s.trackOffline=true;`.
+Du kan öka effektiviteten för PWA genom att använda Adobe Analytics [offlinespårningsfunktioner](/help/implement/vars/config-vars/trackoffline.md) tillsammans med programmet. Som standard är den här funktionen inaktiverad, men du kan lägga till följande egenskap i filen AppMeasurement.js för att aktivera den: `s.trackOffline=true;`.
 
 I följande AppMeasurement.js-fil läggs egenskapen till i slutet av `CONFIG SECTION`:
 
@@ -49,4 +49,4 @@ s.trackOffline=true
 
 Mer information om hur du konfigurerar filen AppMeasurement.js finns i [Översikt över konfigurationsvariabler](/help/implement/vars/config-vars/configuration-variables.md) och de enskilda variabelspecifika sidorna i samma underkapitel.
 
-Mer information om egenskaperna för filen AppMeasurement.js finns i [Översikt över JavaScript-implementering](/help/implement/js/overview.md).
+Mer information om egenskaperna för filen AppMeasurement.js finns i [JavaScript-implementeringsöversikt](/help/implement/js/overview.md).

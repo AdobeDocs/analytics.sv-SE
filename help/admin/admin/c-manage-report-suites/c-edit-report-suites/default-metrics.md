@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # Standardmått
 
-[!UICONTROL **Redigera inställningar**] > [!UICONTROL **Inställningar för enskilda rapportsviter**] > [!UICONTROL **Standardmått**]
+[!UICONTROL **Redigera inställningar**] > [!UICONTROL **Inställningar för enskilda rapportsviter**] > [!UICONTROL **Standardvärden**]
 
 Analyser visar en standarduppsättning med mätvärden i alla rapporter och projekt, såvida inte en användare väljer en anpassad uppsättning mätvärden. De valda mätvärdena visas för alla användare i den associerade rapportsviten. Du kan bara uppdatera en rapportsvits standardvärden åt gången. De här inställningarna garanterar inte i vilken ordning standardmåtten visas.
 

@@ -15,7 +15,7 @@ ht-degree: 0%
 
 {{plug-in}}
 
-The `formatTime` Med plugin-programmet kan du ta valfritt antal sekunder och presentera dem i ett paketerat format, avrundat till ett önskat referensvärde. Adobe rekommenderar att du använder denna plugin om du vill hämta ett tidsvärde i sekunder och konvertera det till ett bucket-format (till exempel minuter, dagar eller veckor). Detta plugin-program behövs inte om du inte vill bucket med sekundbaserade värden i ett tidsrundat format.
+Med plugin-programmet `formatTime` kan du ta ett valfritt antal sekunder och presentera dem i ett paketerat format, avrundat till ett önskat referensvärde. Adobe rekommenderar att du använder denna plugin om du vill hämta ett tidsvärde i sekunder och konvertera det till ett bucket-format (till exempel minuter, dagar eller veckor). Detta plugin-program behövs inte om du inte vill bucket med sekundbaserade värden i ett tidsrundat format.
 
 ## Installera plugin-programmet med Web SDK- eller Web SDK-tillägget
 
@@ -25,10 +25,10 @@ Det här plugin-programmet stöds ännu inte för användning i Web SDK.
 
 Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-programmen med Adobe Analytics.
 
-1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med dina inloggningsuppgifter för AdobeID.
 1. Klicka på den önskade taggegenskapen.
-1. Gå till [!UICONTROL Extensions] klickar du på [!UICONTROL Catalog] knapp
-1. Installera och publicera [!UICONTROL Common Analytics Plugins] extension
+1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Catalog]
+1. Installera och publicera tillägget [!UICONTROL Common Analytics Plugins]
 1. Om du inte redan har det skapar du en regel med namnet&quot;Initiera plugin-program&quot; med följande konfiguration:
    * Villkor: Inget
    * Händelse: Kärna - Bibliotek inläst (sidan ovanpå)
@@ -41,10 +41,10 @@ Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-program
 
 Om du inte vill använda tillägget för Common Analytics-plugin-program kan du använda den anpassade kodredigeraren.
 
-1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med dina inloggningsuppgifter för AdobeID.
 1. Klicka på önskad egenskap.
-1. Gå till [!UICONTROL Extensions] klickar du på **[!UICONTROL Configure]** under Adobe Analytics-tillägget.
-1. Expandera [!UICONTROL Configure tracking using custom code] dragspelspanel, som visar [!UICONTROL Open Editor] -knappen.
+1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen **[!UICONTROL Configure]** under Adobe Analytics-tillägget.
+1. Expandera dragspelsfliken [!UICONTROL Configure tracking using custom code] som visar knappen [!UICONTROL Open Editor].
 1. Öppna den anpassade kodredigeraren och klistra in den plugin-kod som finns nedan i redigeringsfönstret.
 1. Spara och publicera ändringarna i Analytics-tillägget.
 
@@ -61,17 +61,17 @@ function formatTime(ns,tf,bml){var f=ns,d=tf,e=bml;function h(b,d,c,e){if("strin
 
 ## Använda plugin-programmet
 
-The `formatTime` funktionen använder följande argument:
+Funktionen `formatTime` använder följande argument:
 
 * **`ns`** (obligatoriskt, heltal): Antalet sekunder som ska konverteras eller formateras
-* **`tf`** (valfri, sträng): Den typ av format som sekunder ska returneras i. Standardvärdet är sekunder
+* **`tf`** (valfritt, sträng): Den typ av format som sekunder ska returneras i. Standardvärdet är sekunder
    * Ange till `"d"` om du vill ha tiden i dagar (avrundat till närmaste 1/4-dagars test som standard)
-   * Ange till `"h"` om du vill ha tiden i timmar (avrundat till närmaste 1/4-timmars test som standard)
+   * Ange till `"h"` om du vill ha tiden i timmar (avrundat till närmaste 1/4-timmars riktmärke som standard)
    * Ange till `"m"` om du vill ha tiden i minuter (avrundat till närmaste 1/2-minuters test som standard)
    * Ange till `"s"` om du vill ha tiden i sekunder (avrundat till närmaste 5 sekunder som standard)
-* **`bml`** (valfritt, antal): Längden på avrundningsriktmärkena. Standardvärdet är de riktmärken som anges i `tf` argument
+* **`bml`** (valfritt, antal): Längden på avrundningsriktmärkena. Standardvärdet är de prestandatester som anges i argumentet `tf`
 
-Funktionen returnerar antalet sekunder som har formaterats med den enhet som du anger i dialogrutan `tf` argument. Om `tf` argument har inte angetts:
+Funktionen returnerar antalet sekunder som har formaterats med den enhet som du anger i argumentet `tf`. Om argumentet `tf` inte har angetts:
 
 * Allt som är mindre än en minut avrundas till närmaste 5-sekunders test
 * Allt som är mellan en minut och en timme avrundas till närmaste 1/2-minuters test
@@ -114,7 +114,7 @@ s.eVar55 = formatTime(145, "m", .4);
 
 ### 1.1 (21 maj 2018)
 
-* Lagt till `bml` argument som ger större flexibilitet vid avrundning
+* Argumentet `bml` har lagts till för att ge mer flexibilitet vid avrundning
 
 ### 1.0 (15 april 2018)
 

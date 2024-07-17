@@ -12,11 +12,11 @@ ht-degree: 1%
 
 # Produkt
 
-The &#39;Product&#39; [dimension](overview.md) rapporterar namnet på produkten i träffen. Det är användbart för implementeringar som använder `products` variabel och vill se mätvärden runt produkter, t.ex. bästsäljare eller de mest visade. Den här dimensionen kan vara tom om du inte har några produkter på din webbplats.
+Produktdimensionen [dimension](overview.md) rapporterar namnet på produkten i träffen. Det är användbart för implementeringar som använder variabeln `products` och som vill se mätvärden runt produkter, till exempel de främsta säljarna eller de mest visade. Den här dimensionen kan vara tom om du inte har några produkter på din webbplats.
 
 ## Fyll den här dimensionen med data
 
-Den här dimensionen refererar till den andra delen av strängen i [`products`](/help/implement/vars/page-vars/products.md) variabel. Tecken mellan det första och det andra semikolon (`;`) fyller i den här dimensionen.
+Den här dimensionen refererar till den andra delen av strängen i variabeln [`products`](/help/implement/vars/page-vars/products.md). Tecken mellan det första och andra semikolon (`;`) fyller i den här dimensionen.
 
 ## Dimensioner
 

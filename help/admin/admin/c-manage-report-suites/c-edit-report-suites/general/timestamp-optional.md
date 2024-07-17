@@ -24,7 +24,7 @@ Tidsstämplar Valfritt gör att du kan:
 
 >[!WARNING]
 >
->Om du använder Tidsstämplar (valfritt) ska du inte ange [s.visitorID](/help/implement/vars/config-vars/visitorid.md) på data som redan är tidsstämplade. Detta kan leda till inordnade data och negativt påverka tidsberäkningar (t.ex. tidsåtgång), attribuering (eVarnas beständighet), antal besök/besök och kundvägsrapporter.
+>Om du använder Tidsstämplar som valfria ska du inte ange [s.visitorID](/help/implement/vars/config-vars/visitorid.md) för data som redan är tidsstämplade. Detta kan leda till inordnade data och negativt påverka tidsberäkningar (t.ex. tidsåtgång), attribuering (eVarnas beständighet), antal besök/besök och kundvägsrapporter.
 
 >[!NOTE]
 >
@@ -34,20 +34,20 @@ Tidsstämplar Valfritt gör att du kan:
 
 * Om det skapas från en mall används som standard tidsstämplar som valfria i en ny rapportserie.
 
-  (Du kan skapa en ny rapportserie från en mall på **Admin > Report Suite > Create New > Report Suite**.)
+  (Du kan skapa en ny rapportserie från en mall på **Admin > Rapportsviter > Skapa nytt > Rapportsviten**.)
 * Om du kopierar från en befintlig rapportserie ärver den nya rapportsviten tidsstämpelinställningen från originalet, inklusive:
 
-   * **Tidsstämplar tillåts inte** (inställning för s.visitorID stöds)
-   * **Tidsstämplar krävs** (inställning för s.visitorID stöds inte)
-   * **Tidsstämplar (valfritt)** (inställning för s.visitorID stöds men inte för tidsstämplade träffar)
+   * **Tidsstämplar är inte tillåtna** (inställning för s.visitorID stöds)
+   * **Tidsstämplar krävs** (inställningen s.visitorID stöds inte)
+   * **Tidsstämplar är valfria** (inställningen s.visitorID stöds men inte i tidsstämplade träffar)
 
 ## Ändra befintliga rapportsviter till tidsstämplar (valfritt) {#section_40BCD3B4639241DEA716F7640ED33E72}
 
-1. Gå till **Admin > Report Suites > Edit Settings > General > Timestamp Configuration**.
-1. Välj **Konvertera valda rapportsviter till tidsstämplar (valfritt)** box.
+1. Gå till **Admin > Rapportsviter > Redigera inställningar > Allmänt > Tidsstämpelkonfiguration**.
+1. Markera rutan **Konvertera markerade rapportsviter till tidsstämplar (valfritt)**.
 
    Detta ändrar rapportsviten till Tidsstämplar (valfritt).
 
 >[!NOTE]
 >
->Om en rapportsvit var inställd på **Tidsstämplar (valfritt)** Om du vill ändra detta till något annat kontaktar du Adobe Client Care.
+>Om en rapportsvit var inställd på **Tidsstämplar (valfritt)** kan du ändra den till en annan inställning genom att kontakta Adobe kundtjänst.

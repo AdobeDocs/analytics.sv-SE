@@ -12,9 +12,9 @@ ht-degree: 0%
 
 # Besök enstaka sidor
 
-*Den här hjälpsidan beskriver hur&quot;Enkelsidiga besök&quot; fungerar som en [dimension](overview.md). Se [Besök enstaka sidor](../metrics/single-page-visits.md) för mer information.*
+*Den här hjälpsidan beskriver hur Enkelsidiga besök fungerar som en [dimension](overview.md). Mer information finns i måtten för [besök på en sida](../metrics/single-page-visits.md).*
 
-Dimensionen för besök på en sida visar antalet besök som bestod av en enda unik [Sida](page.md) dimensionsobjekt. Det är dimensionsformen för [Besök enstaka sidor](../metrics/single-page-visits.md) mätvärden.
+Dimensionen för besök på en sida rapporterar antalet besök som bestod av ett enda unikt [Page](page.md)-dimensionsobjekt. Det är dimensionsformen för måttet [Enkelsidiga besök](../metrics/single-page-visits.md).
 
 Den här dimensionen används oftast som en komponent i [segmentering](../segmentation/seg-home.md). Det används vanligtvis inte som en dimension i rapporter.
 
@@ -24,4 +24,4 @@ Den här dimensionen fungerar som den ska för alla implementeringar. Om en rapp
 
 ## Dimensioner
 
-Den enda dimensionsartikeln är `"Enabled"`. Om ett besök består av en enda sida ställs träffen in på det här värdet. Alla andra träffar utelämnas i den här rapporten.
+Den enda dimensionsobjektet är `"Enabled"`. Om ett besök består av en enda sida ställs träffen in på det här värdet. Alla andra träffar utelämnas i den här rapporten.

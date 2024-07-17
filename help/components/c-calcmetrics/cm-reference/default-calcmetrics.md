@@ -21,8 +21,8 @@ Här följer en lista över alla beräknade mätvärden som tillhandahålls av A
 >Förutom de standardvärden för beräknade värden som beskrivs på den här sidan kan du även lägga till ytterligare beräknade värden i en rapportserie.
 >
 >Ni kan:
-> * Lägg till beräknade standardvärden för tillägget Streaming Media Collection enligt beskrivningen i [Beräknade mått](https://experienceleague.adobe.com/docs/media-analytics/using/implementation/variables/calculated-metrics.html)
-> * Skapa anpassade beräknade mätvärden från befintliga mätvärden, vilket beskrivs i [Beräknade och avancerade beräknade (härledda) mätvärden](/help/components/c-calcmetrics/cm-overview.md).
+> * Lägg till beräknade standardvärden för tillägget för direktuppspelad mediasamling, enligt beskrivningen i [Beräknade mått](https://experienceleague.adobe.com/docs/media-analytics/using/implementation/variables/calculated-metrics.html)
+> * Skapa anpassade beräknade mått från befintliga mått, enligt beskrivningen i [Beräknade och avancerade beräknade (härledda) värden](/help/components/c-calcmetrics/cm-overview.md).
 
 
 | Namn på beräknat mätvärde | Funktion | Formel |
@@ -37,7 +37,7 @@ Här följer en lista över alla beräknade mätvärden som tillhandahålls av A
 | Innehållshastighet | Hur snabbt nytt innehåll skapas och publiceras på webbplatsen och hur snabbt det genererar användarengagemang. | `[Page Views] / [Visits]` |
 | Konverteringsgrad | Andelen besökare som vidtagit en önskad åtgärd, t.ex. gjort ett köp. | `[Orders] / [Visits]` |
 | Ankomstfrekvens | Andelen besökare som kom in på webbplatsen på en viss sida, jämfört med det totala antalet sessioner på webbplatsen. | `[Entries] / [Visits]` |
-| Beräknade unika besökare (ITP 2.1) | För ITP-besökare (användare i Safari-webbläsare), dividera unika besökare med 2 eller mindre. Detta beräknade mätresultat förutsätter att du anger cookies med JavaScript på klientsidan (inte med en CNAME-implementering). Implementeringar som ställer in cookies med JavaScript på klientsidan påverkades från och med ITP 2.1. Se [Förebyggande av intelligent spårning](https://webkit.org/blog/8613/intelligent-tracking-prevention-2-1/) för mer information. | `[Unique Visitors (metric) with ITP Visitors (ITP 2.1, Non-CNAME implementations) segment] / [Unique Visitors metric + Non-ITP Visitors (ITP 2.1, Non-CNAME implementations) segment]` |
+| Beräknade unika besökare (ITP 2.1) | För ITP-besökare (användare i Safari-webbläsare), dividera unika besökare med 2 eller mindre. Detta beräknade mätresultat förutsätter att du anger cookies med JavaScript på klientsidan (inte med en CNAME-implementering). Implementeringar som ställer in cookies med JavaScript på klientsidan påverkades från och med ITP 2.1. Mer information finns i [Förebyggande av intelligent spårning](https://webkit.org/blog/8613/intelligent-tracking-prevention-2-1/). | `[Unique Visitors (metric) with ITP Visitors (ITP 2.1, Non-CNAME implementations) segment] / [Unique Visitors metric + Non-ITP Visitors (ITP 2.1, Non-CNAME implementations) segment]` |
 | Experience Cloud ID-täckning | Andelen besökare som har ett Experience Cloud-ID. | `[Visitors with Experience Cloud ID] / [Unique Visitors]` |
 | Avsluta | Andelen besökare som lämnar webbplatsen efter att ha visat en viss sida. | `[Exits] / [Visits]` |
 | ITP 2.1 Unika besökare/unika besökare | Andelen unika besökare som använder en webbläsare som påverkas av ITP 2.1-cookie-begränsningar. | `[Unique Visitors metric with ITP Visitors segment] / [Unique Visitors]` |

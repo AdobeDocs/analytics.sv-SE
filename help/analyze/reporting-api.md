@@ -14,7 +14,7 @@ ht-degree: 5%
 
 # API för analysrapportering
 
-Dokumentationen för Adobe Analytics API:er är aktiverad [Adobe Developer](https://developer.adobe.com/analytics-apis/docs/2.0/).
+Dokumentation för Adobe Analytics API:er finns på [Adobe Developer](https://developer.adobe.com/analytics-apis/docs/2.0/).
 
 ## Jämförelse av API:er i Analytics
 
@@ -22,7 +22,7 @@ Dokumentationen för Adobe Analytics API:er är aktiverad [Adobe Developer](http
 | --- | --- | --- | --- | --- |
 | **Beskrivning** | Fullständigt bearbetade, slutförda data som är tillgängliga i alla Analytics-gränssnitt. | Delvis bearbetade, begränsade mätvärden är tillgängliga inom några sekunder efter insamlingen. | Delvis bearbetade träffdata är tillgängliga inom några sekunder efter insamlingen. | Fullständigt bearbetade, slutförda data som används för att dra igång stora dataexporter. |
 | [**Latens**](/help/technotes/latency.md) | 30-90 minuter | Sekunder - 10 minuter | Sekunder - 10 minuter | 90+ minuter |
-| **Slutförd bearbetning** | Fullständig | Delvis | Delvis | Fullständig |
+| **Bearbetning slutförd** | Fullständig | Delvis | Delvis | Fullständig |
 | **Rapporteringsgränssnitt** | Analysis Workspace, Report Builder, API | Realtidsrapport i Report Builder, 1.4 API | Endast API | Data Warehouse, API |
 | **Datagranularitet** | Sammanfattad | Sammanfattad | Träffnivå | Sammanfattad |
 | **Bearbetning av besökarprofiler** | Ja | Nej | Nej | Ja |

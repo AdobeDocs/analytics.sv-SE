@@ -1,17 +1,17 @@
 ---
-title: Vanliga frågor om attribuering
+title: Vanliga frågor om attribut
 description: Få svar på vanliga frågor om attribuering.
 feature: Attribution
 role: User, Admin
 exl-id: 8e05957a-f954-4e61-aeed-cd2bd2fe11f8
 source-git-commit: 2eff7656741bdba3d5d7d1f33e9261b59f8e6083
 workflow-type: tm+mt
-source-wordcount: '1212'
-ht-degree: 1%
+source-wordcount: '1232'
+ht-degree: 0%
 
 ---
 
-# Vanliga frågor om attribuering
+# Vanliga frågor om attribut
 
 
 ++## Vad är radobjektet &quot;Inget&quot; när attribut används?
@@ -23,13 +23,13 @@ Radobjektet Ingen är ett objekt som fångar upp alla konverteringar som sker ut
 
 ++## Varför ser jag datum utanför mitt rapporteringsfönster när jag använder attribueringsmodeller?
 
-Vissa besöksbaserade mätvärden, som [Poster](/help/components/metrics/entries.md) eller [Studsfrekvens](/help/components/metrics/bounce-rate.md)kan attributera data till en period före rapportfönstrets startdatumintervall. Den här situationen beror på attribueringsmodeller som använder ett uppslagsfönster, som avgör hur långt bakåtattribueringen ska vara för att ge betyg för mätvärden. Det vanligaste scenariot är när besök sträcker sig över midnatt. Exempel:
+Vissa besöksbaserade mätvärden, som [Poster](/help/components/metrics/entries.md) eller [Studsfrekvens](/help/components/metrics/bounce-rate.md), kan attribuera data till en period före rapportfönstrets startdatumintervall. Den här situationen beror på attribueringsmodeller som använder ett uppslagsfönster, som avgör hur långt bakåtattribueringen ska vara för att ge betyg för mätvärden. Det vanligaste scenariot är när besök sträcker sig över midnatt. Exempel:
 
 1. En användare besöker din hemsida kl. 23.55 den 7 september.
 1. De besöker flera sidor, varav det sista inträffade kl. 8.05.
 1. En vecka senare kommer du att köra en rapport med en daglig trendfrekvens mellan 8 och 14 september.
 
-Träffbaserade mätvärden, som [Sidvyer](/help/components/metrics/page-views.md), skulle generera förväntat resultat; data trendas varje dag från 8 september till 14 september. Besöksbaserade mätvärden visar dock även ovanstående besök den 7 september. Besöken fick sitt tillskrivna inlägg den 7 september, och som standard är återsökningsfönstret 1 september-31 september.
+Träffbaserade mätvärden, som [Sidvyer](/help/components/metrics/page-views.md), skulle generera förväntade utdata, data som trendas varje dag från 8 september till 14 september. Besöksbaserade mätvärden visar dock även ovanstående besök den 7 september. Besöken fick sitt tillskrivna inlägg den 7 september, och som standard är återsökningsfönstret 1 september-31 september.
 
 Studsfrekvensen visar alltid 0 % den 7 september i detta exempel. Det här måttet definieras som `Bounces divided by Entries`, ett träffbaserat mätvärde delat med ett besöksbaserat mätvärde. Satser består av en enda bildbegäran, så de kan inte sträcka sig över flera dagar. Eventuella studsar den 7 september inträffade utanför rapportfönstret, vilket orsakade den garanterade studsfrekvensen på 0 % för den dagen. Andra träffbaserade mätvärden skulle också visa 0 för den 7 september i den här rapporten, eftersom dessa träffar inte heller ligger inom rapportfönstret.
 
@@ -60,7 +60,7 @@ Attributionen beräknas om vid rapportkörning, så det finns ingen skillnad mel
 
 +++## Finns det attribueringsmodeller i andra analysfunktioner, som dataflöden eller Data Warehouse?
 
-Nej. I attribueringsmodeller används rapporttidshantering, som bara är tillgänglig i Analysis Workspace. Se [Bearbetning av rapporttid](/help/components/vrs/vrs-report-time-processing.md) för mer information.
+Nej. I attribueringsmodeller används rapporttidshantering, som bara är tillgänglig i Analysis Workspace. Mer information finns i [Tidsbearbetning för rapport](/help/components/vrs/vrs-report-time-processing.md).
 
 +++
 
@@ -85,12 +85,12 @@ Attributpanelen har stöd för alla dimensioner. Mätvärden som inte stöds är
 * Tidsåtgång - mått
 * Studsar
 * Studsfrekvens
-* Första besökssida
-* Sista besökssida
-* Sidor som inte hittades
+* Poster
+* Avslutar
+* Sidorna hittades inte
 * Sökningar
 * Besök på en sida
-* Enkelt besök
+* Enkel åtkomst
 
 +++
 
@@ -126,7 +126,7 @@ Metadata-dimensioner, som matchningstyp och nyckelord, fungerar med attribuering
 
 +++## Hur fungerar attribuering med marknadsföringskanaler?
 
-När marknadsföringskanalerna lanserades för första gången fick de bara första och sista touch-dimensioner. Explicit första/sista beröringsdimensioner behövs inte längre med den aktuella versionen av attribuering. Adobe tillhandahåller generiska [!UICONTROL Marketing Channel] och [!UICONTROL Marketing Channel Detail] så att du kan använda dem med den önskade attribueringsmodellen. De här allmänna dimensionerna är identiska med [!UICONTROL Last Touch Channel] men är märkta på olika sätt för att undvika förvirring när du använder marknadsföringskanaler med en annan attribueringsmodell.
+När marknadsföringskanalerna lanserades för första gången fick de bara första och sista touch-dimensioner. Explicit första/sista beröringsdimensioner behövs inte längre med den aktuella versionen av attribuering. Adobe tillhandahåller allmänna [!UICONTROL Marketing Channel]- och [!UICONTROL Marketing Channel Detail]-dimensioner så att du kan använda dem med den önskade attribueringsmodellen. Dessa generiska dimensioner är identiska med [!UICONTROL Last Touch Channel] dimensioner, men de är märkta annorlunda för att förhindra förvirring när marknadsföringskanaler med en annan attribueringsmodell används.
 
 Eftersom dimensionerna för marknadsföringskanalen är beroende av en traditionell besöksdefinition (som definieras av deras bearbetningsregler), kan deras besöksdefinition inte ändras med hjälp av virtuella rapportsviter.
 
@@ -148,7 +148,7 @@ Attribuering körs alltid före segmentering, och segmentering körs innan rappo
 
 Om du t.ex. skapar en virtuell rapportserie med segmentet &quot;Visa träffar&quot; kan du se andra kanaler i en tabell med hjälp av vissa attribueringsmodeller.
 
-![Virtuellt rapportpaket endast för visning](assets/vrs-aiq-example.png)
+![Virtuellt rapportpaket som bara kan visas](assets/vrs-aiq-example.png)
 
 >[!NOTE]
 >

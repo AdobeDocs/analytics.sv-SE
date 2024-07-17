@@ -30,13 +30,13 @@ Tidsstämplar Valfria är standardinställningen för alla nya rapportsviter.
 >
 >Tidsstämplar Valfria är standardinställningen för alla nya rapportsviter som genereras från en mall. Nya rapportsviter som kopierats från en befintlig rapportserie ärver inställningar från originalet.
 
-Se [Tidsstämplar (valfritt)](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/timestamp-optional.html) om du vill ha ytterligare installationsinformation.
+Se [Tidsstämplar (valfritt)](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/timestamp-optional.html) om du vill ha mer installationsinformation.
 
 ## Tidsstämplar Valfritt: Integrera tidsstämplade och tidsstämplade data {#integrate}
 
 Med funktionen Tidsstämplar (valfritt) kan du kombinera icke-tidsstämplade data med tidsstämplade data utan att data går förlorade. Offlinedata med tidsstämplar som genererats från en mobil enhet kan kombineras med live, tidstämplade data från en webbsida - eller integreras med data från vilken plattform som helst med ett tidsstämpelanrop på klientsidan.
 
-* **Tidsstämpeldata**. Klientsidans tidsstämpeldata hämtas och skickas direkt med enhetsdata med hjälp av klientsidans tidsstämpelvariabler: Javascript på en webbsida eller med ett Mobile SDK-anrop ( [!DNL offlineEnabled=true]) i en mobilapp.
+* **Tidsstämpeldata**. Tidsstämpeldata på klientsidan hämtas och skickas direkt med enhetsdata med hjälp av klientsidans tidsstämpelvariabler: Javascript på en webbsida eller med ett Mobile SDK-anrop ( [!DNL offlineEnabled=true]) i en mobilapp.
 * **Ej tidsstämpeldata**. Adobe ställer in en tidsstämpel för icke tidsstämplade data i en rapportsvit när data träffar samlingsservrarna.
 
 En rapportsvit kan ha någon av följande tidsstämpelinställningar:
@@ -51,9 +51,9 @@ Tidsstämplar Valfritt gör att du kan integrera och rapportera i flera rapports
 
 | I tidigare versioner... | Dessutom... |
 |--- |--- |
-| Det gick inte att skicka tidsstämplade data till en global rapportserie som inte är tidsstämplad. Följaktligen släpptes träffdata som skickades från offlineenheter när de lades till i en rapportserie som inte är tidsstämplad. <br/><br/>Följaktligen togs träffdata som skickades från offlinedata bort när de lades till i en rapportserie som inte är tidsstämplad. | När du uppdaterar en app för att samla in och använda tidsstämplar måste du använda en ny rapportserie. <br/>Du kunde inte spara till den befintliga rapportsviten eller integrera befintliga data när du uppdaterar appen för att använda tidsstämplar. |
+| Det gick inte att skicka tidsstämplade data till en global rapportserie som inte är tidsstämplad. Följaktligen släpptes träffdata som skickades från offlineenheter när de lades till i en rapportserie som inte är tidsstämplad. <br/><br/>Följaktligen togs träffdata som skickades från offlinedata bort när de lades till i en rapportserie som inte är tidsstämplad. | När du uppdaterar en app för att samla in och använda tidsstämplar måste du använda en ny rapportserie. <br/>Det gick inte att spara till den befintliga rapportsviten eller integrera befintliga data när appen uppdaterades för att använda tidsstämplar. |
 
-**Med tidsstämplar som tillval** kan ni integrera icke-tidsstämplade data från en livewebbplats med offlinedata från mobila enheter, eller uppdatera en tidsstämplad app till en tidsstämplad app.
+**Med tidsstämplar (valfritt)** kan du integrera data som inte är tidsstämplade från en aktiv webbplats med offlinedata från mobila enheter, eller uppdatera en app som inte är tidsstämplad till en tidsstämplad app.
 
 ## Kombinera data i en Global Report Suite {#combine}
 
@@ -71,7 +71,7 @@ Nedan följer god praxis och några krav och begränsningar som du bör känna t
 
   Data som inte är i ordning kan omfatta sena data från offlinedatainsamling och sena träffar, eller osynkroniserade klockor på offline-mobilenheter. Oordnade data kan påverka tidsberäkningar negativt (t.ex. tidsåtgång), attribuering (eVarnas beständighet), antal besök/besök samt kundvägsrapporter.
 
-* Använda tidsstämplar vid inställning av en [s.visitorID](/help/implement/vars/config-vars/visitorid.md) rekommenderas inte. Det kan leda till oordnade data.
+* Du bör inte använda tidsstämplar när du anger ett [s.visitorID](/help/implement/vars/config-vars/visitorid.md). Det kan leda till oordnade data.
 
 * Hybridappar som består av en app (tidsstämplade, offlinedata) som öppnar en webbläsare (utan tidsstämpel, livedata) bör inte använda tidsstämplar. Det resulterar i felaktig rapportering av sessionen.
 

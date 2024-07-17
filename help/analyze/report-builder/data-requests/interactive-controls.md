@@ -6,8 +6,8 @@ role: User, Admin
 exl-id: 2340ff31-1478-4a54-a4c3-c51e73c39109
 source-git-commit: d218d07ec16e981d7e148092b91fbbd5711e840f
 workflow-type: tm+mt
-source-wordcount: '576'
-ht-degree: 1%
+source-wordcount: '579'
+ht-degree: 0%
 
 ---
 
@@ -33,14 +33,14 @@ Interaktiva kontroller skapades som svar på ett gemensamt arbetsflöde där ana
 
 ## Implementera interaktiv kontroll för datumintervall {#section_39B228F2D2C44985863D31424C953280}
 
-1. I steg 1 i begärandeguiden väljer du till exempel **[!UICONTROL Page]** rapport.
-1. Intill **[!UICONTROL Commonly Used Dates]** nedrullningsbar meny, klicka på **[!UICONTROL Control Settings]** ikon:
+1. I steg 1 i begärandeguiden väljer du till exempel rapporten **[!UICONTROL Page]**.
+1. Klicka på ikonen **[!UICONTROL Control Settings]** bredvid listrutan **[!UICONTROL Commonly Used Dates]**:
 
-   ![Skärmbild av Request Wizard Steg 1 som markerar ikonen Control Settings (Kontrollinställningar). ](assets/date_range_control.png)
+   ![Skärmbild av begärandeguiden Steg 1 som markerar ikonen Kontrollinställningar. ](assets/date_range_control.png)
 
 1. I dialogrutan Kontrollinställningar markerar du alla datumintervallobjekt som du vill ska visas i den interaktiva kontrollen. Ange dessutom kontrollens placering i den övre vänstra cellen.
 
-   ![Skärmbild som visar de valda datumintervallobjekten och cellens övre vänstra placering.](assets/control_settings.png)
+   ![Skärmbild som visar de valda datumintervallobjekten och cellplatsen i det övre vänstra hörnet.](assets/control_settings.png)
 
 1. Observera alternativet &quot;Uppdatera länkade begäranden automatiskt när objekt väljs&quot;.
 
@@ -67,14 +67,14 @@ Interaktiva kontroller skapades som svar på ett gemensamt arbetsflöde där ana
 
 Att implementera den interaktiva segmentkontrollen liknar att implementera datumintervallkontrollen.
 
-1. I steg 1 i begärandeguiden, bredvid **[!UICONTROL Segment]** väljer du ikonen Inställningar för segmentkontroll:
+1. I steg 1 i guiden Begäran, bredvid listrutan **[!UICONTROL Segment]**, väljer du ikonen Inställningar för segmentkontroll:
 
    ![Skärmbild av ikonen Inställningar för segmentkontroll.](assets/segment_interactive_1.png)
 
 1. I dialogrutan Inställningar för segmentkontroll markerar du de segment som du vill ta med i listrutan. Ange dessutom kontrollens placering i den övre vänstra cellen.
 
-   ![Skärmbild som visar inställningar för segmentkontroll med valda segment och cellens placering.](assets/segment_drop_down_properties.png)
+   ![Skärmbild som visar inställningar för segmentkontroll med valda segment och cellplacering.](assets/segment_drop_down_properties.png)
 
 1. Den nya interaktiva kontrollen visas nu i arbetsboken:
 
-   ![Skärmbild med den nya interaktiva kontrollen vald.](assets/segment_interactive_3.png)
+   ![Skärmbild med den nya interaktiva kontrollen markerad.](assets/segment_interactive_3.png)

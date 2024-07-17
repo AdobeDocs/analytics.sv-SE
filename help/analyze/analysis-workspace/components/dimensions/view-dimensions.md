@@ -6,8 +6,8 @@ role: User, Admin
 exl-id: 897edc76-6744-4d8c-ab0e-20672838f7b3
 source-git-commit: 10ae8213b8745439ab5968853f655a1176b8c38a
 workflow-type: tm+mt
-source-wordcount: '186'
-ht-degree: 29%
+source-wordcount: '193'
+ht-degree: 26%
 
 ---
 
@@ -29,4 +29,4 @@ Som standard visas nu dynamiska värden i stället för statiska, med möjlighet
 
 När du håller muspekaren över ett mått och klickar på den grå högerpilen bredvid det visas en lista med dimensionsobjekt. Alla listor med dimensionsobjekt visar vanligtvis de översta artiklarna de senaste 30 dagarna.
 
-Om du bläddrar nedåt till listan visas en **[!UICONTROL Show Top Items From Last 6 Months]**. Klicka på det här alternativet om du vill visa de översta dimensionsobjekten från de senaste 180 dagarna.
+Om du bläddrar nedåt i listan visas en **[!UICONTROL Show Top Items From Last 6 Months]**. Klicka på det här alternativet om du vill visa de översta dimensionsobjekten från de senaste 180 dagarna.

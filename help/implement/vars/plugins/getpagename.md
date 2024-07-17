@@ -15,17 +15,17 @@ ht-degree: 0%
 
 {{plug-in}}
 
-The `getPageName` plugin-programmet skapar en lättläst, användarvänlig formaterad version av den aktuella URL-adressen. Adobe rekommenderar att du använder denna plugin om du vill ha en [`pageName`](../page-vars/pagename.md) värde som är lätt att ställa in och förstå vid rapportering. Denna plugin behövs inte om du redan har en namnstruktur för `pageName` -variabel, till exempel via ett datalager. Den används bäst när du inte har någon annan lösning för att ställa in `pageName` variabel.
+Plugin-programmet `getPageName` skapar en lättläst, användarvänlig formaterad version av den aktuella URL:en. Adobe rekommenderar att du använder det här plugin-programmet om du vill ha ett [`pageName`](../page-vars/pagename.md)-värde som är enkelt att ställa in och förstå vid rapportering. Detta plugin-program behövs inte om du redan har en namnstruktur för variabeln `pageName`, till exempel via ett datalager. Det används bäst när du inte har någon annan lösning för att ställa in variabeln `pageName`.
 
 ## Installera plugin-programmet med Web SDK-tillägget
 
 Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-programmen med Web SDK.
 
-1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
-1. Klicka **[!UICONTROL Tags]** till vänster och klicka sedan på den önskade taggegenskapen.
-1. Klicka **[!UICONTROL Extensions]** till vänster och klicka sedan på **[!UICONTROL Catalog]** tab
-1. Leta rätt på och installera **[!UICONTROL Common Web SDK Plugins]** tillägg.
-1. Klicka **[!UICONTROL Data Elements]** till vänster och klicka sedan på dataelementet.
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med dina inloggningsuppgifter för AdobeID.
+1. Klicka på **[!UICONTROL Tags]** till vänster och klicka sedan på den önskade taggegenskapen.
+1. Klicka på **[!UICONTROL Extensions]** till vänster och sedan på fliken **[!UICONTROL Catalog]**
+1. Leta reda på och installera tillägget **[!UICONTROL Common Web SDK Plugins]**.
+1. Klicka på **[!UICONTROL Data Elements]** till vänster och klicka sedan på det önskade dataelementet.
 1. Ange det önskade dataelementnamnet med följande konfiguration:
    * Tillägg: Vanliga SDK-plugin-program för webben
    * Dataelement: `getPageName`
@@ -40,10 +40,10 @@ Denna plugin stöds ännu inte för användning i en manuell implementering av W
 
 Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-programmen med Adobe Analytics.
 
-1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med dina inloggningsuppgifter för AdobeID.
 1. Klicka på den önskade taggegenskapen.
-1. Gå till [!UICONTROL Extensions] klickar du på [!UICONTROL Catalog] knapp
-1. Installera och publicera [!UICONTROL Common Analytics Plugins] extension
+1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Catalog]
+1. Installera och publicera tillägget [!UICONTROL Common Analytics Plugins]
 1. Om du inte redan har det skapar du en regel med namnet&quot;Initiera plugin-program&quot; med följande konfiguration:
    * Villkor: Inget
    * Händelse: Kärna - Bibliotek inläst (sidan ovanpå)
@@ -56,10 +56,10 @@ Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-program
 
 Om du inte vill använda tillägget för Common Analytics-plugin-program kan du använda den anpassade kodredigeraren.
 
-1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med dina inloggningsuppgifter för AdobeID.
 1. Klicka på önskad egenskap.
-1. Gå till [!UICONTROL Extensions] klickar du på **[!UICONTROL Configure]** under Adobe Analytics-tillägget.
-1. Expandera [!UICONTROL Configure tracking using custom code] dragspelspanel, som visar [!UICONTROL Open Editor] -knappen.
+1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen **[!UICONTROL Configure]** under Adobe Analytics-tillägget.
+1. Expandera dragspelsfliken [!UICONTROL Configure tracking using custom code] som visar knappen [!UICONTROL Open Editor].
 1. Öppna den anpassade kodredigeraren och klistra in den plugin-kod som finns nedan i redigeringsfönstret.
 1. Spara och publicera ändringarna i Analytics-tillägget.
 
@@ -76,14 +76,14 @@ var getPageName=function(si,qv,hv,de){var a=si,b=qv,f=hv,e=de;if("-v"===a)return
 
 ## Använda plugin-programmet
 
-The `getPageName` funktionen använder följande argument:
+Funktionen `getPageName` använder följande argument:
 
-* **`si`** (valfri sträng): Ett ID infogat i början av strängen som representerar platsens ID. Värdet kan antingen vara ett numeriskt ID eller ett eget namn. Om den inte anges används den aktuella domänen som standard.
-* **`qv`** (valfri, sträng): En kommaavgränsad lista med frågesträngsparametrar som, om de finns i URL:en, läggs till i strängen
-* **`hv`** (valfri, sträng): En kommaavgränsad lista med parametrar i URL-hash som, om de finns i URL:en, läggs till i strängen
-* **`de`** (valfri sträng): avgränsaren som delar upp enskilda delar av strängen. Standardvärdet är ett rör (`|`).
+* **`si`** (valfri sträng): Ett ID infogades i början av strängen som representerar platsens ID. Värdet kan antingen vara ett numeriskt ID eller ett eget namn. Om den inte anges används den aktuella domänen som standard.
+* **`qv`** (valfri, sträng): En kommaavgränsad lista med frågesträngsparametrar som, om de hittas i URL:en, läggs till i strängen
+* **`hv`** (valfri, sträng): En kommaavgränsad lista med parametrar i URL-hash som, om de hittas i URL:en, läggs till i strängen
+* **`de`** (valfri sträng): Avgränsaren för att dela upp enskilda delar av strängen. Standardvärdet är en pipe (`|`).
 
-Funktionen returnerar en sträng som innehåller en användarvänlig version av URL:en. Strängen tilldelas vanligtvis till `pageName` men kan även användas i andra variabler.
+Funktionen returnerar en sträng som innehåller en användarvänlig version av URL:en. Den här strängen tilldelas vanligtvis variabeln `pageName`, men kan även användas i andra variabler.
 
 ## Exempel
 
@@ -112,7 +112,7 @@ s.pageName = getPageName("example","cid","arrive,numGuests",": ");
 
 ## Uppgradera från tidigare versioner
 
-Version 4.0+ av `getPageName` plug-in-filen är inte beroende av Adobe Analytics AppMeasurement-objekt (dvs. `s` -objekt). Om du uppgraderar till den här versionen ändrar du koden som anropar plugin-programmet genom att ta bort alla instanser av `s` objekt från anropet. Ändra till exempel `s.getPageName();` till `getPageName();`.
+Version 4.0+ av plugin-programmet `getPageName` är inte beroende av om Adobe Analytics AppMeasurement-objektet finns (dvs. `s` -objektet). Om du uppgraderar till den här versionen ändrar du koden som anropar plugin-programmet genom att ta bort alla instanser av objektet `s` från anropet. Ändra till exempel `s.getPageName();` till `getPageName();`.
 
 ## Tidigare versioner
 

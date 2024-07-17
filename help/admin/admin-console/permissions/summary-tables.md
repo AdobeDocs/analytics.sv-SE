@@ -84,9 +84,9 @@ Använd följande sammanfattningstabeller för att identifiera Adobe Analytics-b
 | Support | x |  |  |  | Ger åtkomst till Admin > All admin > Company settings > Support Information. |
 | Trafikhantering | x |  |  |  | Ger åtkomst till Admin > All admin > Traffic Management. |
 | Webbtjänster | x |  |  |  | Ger åtkomst till Admin > All admin > Company settings > Web Services. |
-| Dela projektlänkar med vem som helst | x |  |  |  | Ger användare åtkomst att Dela med vem som helst under ett Workspace-projekt -> Dela -> Dela med vem som helst. |
+| Dela projektlänkar med vem som helst | x |  |  |  | Ger användare åtkomst att Dela med vem som helst i ett Workspace-projekt -> Dela -> Dela med vem som helst. |
 | Activity Map |  | x |  |  | Ger åtkomst till Verktyg > Activity Map. Tillåter användaren att använda tillägget Activity Map. |
-| Ad Hoc Analysis License Users |  | x |  |  | Ad Hoc Analysis har blivit uppsagd. [Mer info](https://spark.adobe.com/page/S9Bhp66VJ2fEn/). |
+| Ad Hoc Analysis License Users |  | x |  |  | Ad Hoc Analysis har blivit uppsagd. [Mer information](https://spark.adobe.com/page/S9Bhp66VJ2fEn/). |
 | Analysis Workspace Access |  | x |  |  | Ger åtkomst till Analysis Workspace. |
 | Analysis Workspace: Spara som mall |  | x |  |  | Ger åtkomst till Projekt > Spara som mall i Analysis Workspace. |
 | Skapande av beräknade mätvärden |  | x |  |  | Ger möjlighet att skapa beräknade värden för alla Analytics-funktioner. |

@@ -19,6 +19,6 @@ Bearbetningsregler kan återställas från historiken.
 1. Klicka på **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]**.
 1. Välj en rapportsvit.
 1. Klicka på **[!UICONTROL Edit Settings]** > **[!UICONTROL General]** > **[!UICONTROL Processing Rules]**.
-1. På **[!UICONTROL Processing Rules]** klickar du på **[!UICONTROL View History]** -fliken.
+1. Klicka på fliken **[!UICONTROL View History]** på sidan **[!UICONTROL Processing Rules]**.
 1. Markera den senast kända arbetsregeluppsättningen och klicka på **[!UICONTROL Copy to Current Ruleset]**.
 1. Klicka på **[!UICONTROL Save]**.

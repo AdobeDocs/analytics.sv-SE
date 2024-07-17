@@ -7,7 +7,7 @@ role: User, Admin
 exl-id: b412f2b5-affe-4297-af4b-85e8c6dfd257
 source-git-commit: 66b7de0b008364e47253d319785c204ca479ab26
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '485'
 ht-degree: 0%
 
 ---
@@ -34,13 +34,13 @@ Följande tabell visar vilka funktioner som visas.
 | AsyncRefreshWorksheetAltTextParam(); | string | Uppdaterar alla Report Builder-begäranden som finns i det specifika kalkylbladsnamnet som skickades via den alternativa texten i MS-formulärkontrollen |
 | tring GetLastRunStatus() | string | Returnerar en sträng som beskriver statusen för den senaste körningen. |
 
-Om du vill komma åt funktionerna i Report Builder går du till **[!UICONTROL Formulas]** > **[!UICONTROL Insert Function]**. Använd sökfältet för att söka efter en funktion eller välj en kategori för att lista funktionerna i den kategorin.
+Gå till **[!UICONTROL Formulas]** > **[!UICONTROL Insert Function]** om du vill komma åt funktionerna i Report Builder. Använd sökfältet för att söka efter en funktion eller välj en kategori för att lista funktionerna i den kategorin.
 
 ![Skärmbild som visar fönstret Infoga funktion med kategorilistan utökad.](assets/arb_functions.png)
 
 ## Exempel {#section_034311081C8D4D7AA9275C1435A087CD}
 
-I följande exempel visas *Om värdet i cell P5 är text eller tomt, uppdaterar du intervallet som finns i cell P9*.
+I följande exempel visas *Om värdet i cell P5 är text eller tomt uppdaterar du intervallet som finns i cell P9*.
 
 ```
 =IF(OR(ISTEXT(P5),ISBLANK(P5)),AsyncRefreshRange("P9"),"")
@@ -58,7 +58,7 @@ Du kan tilldela ett makro till en kontroll som du har skapat och den kontrollen 
 
 ## Skicka parametrar till Report Builder-funktioner med formatkontroll {#section_ECCA1F4990D244619DFD79138064CEF0}
 
-Två funktioner som tar en parameter kan användas med Formatkontroll. Du måste använda **Alternativ text:** fält:
+Två funktioner som tar en parameter kan användas med Formatkontroll. Du måste använda fältet **Alternativ text:**:
 
 * AsyncRefreshRange(strängintervallAddressInA1Format)
 * AsyncRefreshWorksheet(string worksheetName)
@@ -67,11 +67,11 @@ Skicka parametrar till Report Builder-funktioner med formatkontroll
 
 1. Högerklicka på kontrollen och välj **[!UICONTROL Format Control]**.
 
-   ![Skärmbild med Formatkontroll valt.](assets/format_control.png)
+   ![Skärmbild med formatkontroll vald.](assets/format_control.png)
 
-1. Klicka på **[!UICONTROL Alt Text]** -fliken.
+1. Klicka på fliken **[!UICONTROL Alt Text]**.
 
-   ![Skärmbild som visar fliken Alt Text och fältet Alternativ text:.](assets/alt_text.png)
+   ![Skärmbild som visar fliken Alt-text och fältet Alternativ text:.](assets/alt_text.png)
 
 1. Under **[!UICONTROL Alternative text]** anger du cellområdet som du vill uppdatera.
 1. Öppna listan över Report Builder-parametrar under **[!UICONTROL Formulas]** > **[!UICONTROL Insert Function]**> **[!UICONTROL Adobe.ReportBuilder.Bridge]**.

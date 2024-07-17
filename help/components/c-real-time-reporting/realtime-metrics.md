@@ -6,8 +6,8 @@ feature: Real-time
 exl-id: 736a3caf-ee04-4aa4-8d9b-ba891cabda61
 source-git-commit: ee55349a8c676023a5ce33b56592cad7642199b8
 workflow-type: tm+mt
-source-wordcount: '107'
-ht-degree: 18%
+source-wordcount: '111'
+ht-degree: 1%
 
 ---
 
@@ -21,10 +21,10 @@ Visar mått och dimensioner som stöds av realtidsrapporter. Klassificeringar st
 * Beställningar
 * Enheter
 * Korgar
-* Kundvagnsvisningar
+* Vyer
 * Utcheckningar
-* Tillägg i kundvagn
-* Raderingar i kundvagn
+* Cart Additions
+* Cart Removals
 * Instanser
 * Anpassade händelser 1-100 (om det är aktiverat i rapportsviten)
 
@@ -42,7 +42,7 @@ Visar mått och dimensioner som stöds av realtidsrapporter. Klassificeringar st
 * Server
 * Platsavsnitt
 * Spårningskod
-* Anpassad länk
+* Egen länk
 * Filhämtning
 * Avsluta länk
 * Custom Insight-variabler (props) 1-75 (om de är aktiverade i rapportsviten)

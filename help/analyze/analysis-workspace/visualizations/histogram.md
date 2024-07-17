@@ -7,14 +7,14 @@ role: User, Admin
 exl-id: f3dd7507-db2c-495c-b6b9-6c770c7c7ddc
 source-git-commit: 38fb7ec39495b2b8cde4955bd1b3c1d3487632c3
 workflow-type: tm+mt
-source-wordcount: '367'
+source-wordcount: '388'
 ht-degree: 0%
 
 ---
 
 # Histogram
 
-Ett histogram liknar ett stapeldiagram, men det grupperar nummer i intervall (intervall). Med Analytics automatiseras&quot;buffring&quot; av tal till intervall, men du kan ändra inställningarna i [Avancerade inställningar](#section_09D774C584864D4CA6B5672DC2927477).
+Ett histogram liknar ett stapeldiagram, men det grupperar nummer i intervall (intervall). Analytics automatiserar&quot;paketeringen&quot; av tal i intervall, men du kan ändra inställningarna i [Avancerade inställningar](#section_09D774C584864D4CA6B5672DC2927477).
 
 Här är en video om hur du använder histogram:
 
@@ -22,9 +22,9 @@ Här är en video om hur du använder histogram:
 
 ## Skapa ett histogram {#section_74647707CC984A1CB6D3097F43A30B45}
 
-Så här skapar du ett histogram:
+Skapa ett histogram:
 
-1. Klicka **[!UICONTROL Visualizations]** till vänster.
+1. Klicka på **[!UICONTROL Visualizations]** i den vänstra listen.
 1. Dra **[!UICONTROL Histogram]** till panelen.
 1. Välj ett mått som du vill dra till histogramvisualiseringen och klicka på **[!UICONTROL Build]**.
 
@@ -47,14 +47,14 @@ Om du vill justera histograminställningarna klickar du på inställningsikonen 
 | Startar Bucket | Anger vilken bucket histogrammet börjar med. &quot;1&quot; är standardvärdet. Du kan ange startnummer från 0 till oändlighet (inga negativa tal). |
 | Mätbuffertar | Gör att du kan öka/minska antalet dataintervall (bucket). Det högsta antalet bucklor är 50. |
 | Storlek på mätpyts | Gör att du kan ange storleken för varje bucket. Du kan till exempel ändra bucketstorleken från en sidvy till två sidvyer. |
-| Inventeringsmetod | Här kan du välja bland [Besökare](/help/components/metrics/unique-visitors.md), [Besök](/help/components/metrics/visits.md), eller [Träfftyp](/help/components/dimensions/hit-type.md). Exempel: sidvisningar per besök eller sidvisningar per besökare eller sidvisningar per träff. För Träff används&quot;Förekomster&quot; som y-axelmått i en friformstabell. |
+| Inventeringsmetod | Gör att du kan välja mellan [besökare](/help/components/metrics/unique-visitors.md), [besök](/help/components/metrics/visits.md) eller [träfftyp](/help/components/dimensions/hit-type.md). Exempel: sidvisningar per besök eller sidvisningar per besökare eller sidvisningar per träff. För Träff används&quot;Förekomster&quot; som y-axelmått i en friformstabell. |
 
 <!--Russ or Meike - Check Hit Type link above. -->
 
 **Exempel**:
 
-* Startar Bucket: 1. Mätbuffertar: 5. Måttpytsstorlek: 2 resulterar i detta histogram: 1-2, 3-4, 5-6, 7-8, 9-10.
-* Startar Bucket: 0; Mätbuffertar: 3. Måttpytsstorlek: 5 kommer att resultera i detta histogram: 0-4, 5-9, 10-14
+* Startpyts: 1; Måttfel: 5; Måttpytsstorlek: 2 resulterar i detta histogram: 1-2, 3-4, 5-6, 7-8, 9-10.
+* Startpyts: 0; Måttfel: 3; Måttpytsstorlek: 5 ger detta histogram: 0-4, 5-9, 10-14
 
 ## Visa och redigera histogramdata {#section_B2CD7CDF0F6B432F928103AE7AAA3617}
 
@@ -62,7 +62,7 @@ Om du vill visa eller ändra datakällan för histogramdiagrammet klickar du på
 
 ![](assets/manage-data-source.png)
 
-Färdiga segment som visas i tabellen är interna segment och visas inte i segmentväljaren. Klicka på ikonen&quot;i&quot; bredvid segmentnamnet och klicka sedan på **[!UICONTROL Make public]** för att göra segmentet offentligt.
+Färdiga segment som visas i tabellen är interna segment och visas inte i segmentväljaren. Klicka på ikonen i bredvid segmentnamnet och klicka sedan på **[!UICONTROL Make public]** för att göra segmentet offentligt.
 
 ![](assets/prebuilt_segments.png)
 

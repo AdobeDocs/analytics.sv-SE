@@ -13,14 +13,14 @@ ht-degree: 0%
 
 # currencyCode
 
-För webbplatser som använder e-handel är intäkter och valuta en viktig del av Analytics. Många webbplatser, särskilt de som omfattar flera länder, använder olika valutor. Använd `currencyCode` variabel för att säkerställa att intäktsattributen är rätt valuta.
+För webbplatser som använder e-handel är intäkter och valuta en viktig del av Analytics. Många webbplatser, särskilt de som omfattar flera länder, använder olika valutor. Använd variabeln `currencyCode` för att kontrollera att intäktsattributen är rätt valuta.
 
-Vid valutakonvertering används följande logik för varje träff. De här stegen gäller för intäktsvärden som anges i [`products`](../page-vars/products.md) variabeln och alla händelser listade som Currency i [Slutförda händelser](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/c-success-events/success-event.md) under Rapportsvitens inställningar.
+Vid valutakonvertering används följande logik för varje träff. De här stegen gäller för intäktsvärden som anges av variabeln [`products`](../page-vars/products.md) och för alla händelser som anges som&quot;Valuta&quot; i [Slutfört-händelser](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/c-success-events/success-event.md) under inställningarna för rapportsviten.
 
-* If `currencyCode` är inte definierat, antar Adobe att alla valutavärden är rapportsvitens valuta. Se [Allmänna kontoinställningar](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/general-acct-settings-admin.md) i Rapportsvitens inställningar för att se rapportsvitens valuta.
-* If `currencyCode` är definierad och matchar rapportsvitens valuta, ingen valutakonvertering används.
-* If `currencyCode` är definierad och skiljer sig från rapportsvitens valuta, använder Adobe en valutakonvertering som baseras på den aktuella dagens växelkurs. Adobe samarbetar med [XE](https://xe.com) för att konvertera valuta varje dag. Alla värden som lagras i rapportsviten finns i rapportsvitens valuta.
-* If `currencyCode` är inställt på ett ogiltigt värde, **hela träffen tas bort, vilket orsakar dataförlust.** Kontrollera att variabeln är korrekt definierad när den används.
+* Om `currencyCode` inte har definierats antar Adobe att alla valutavärden är rapportsvitens valuta. Se [Allmänna kontoinställningar](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/general-acct-settings-admin.md) i Rapportsvitens inställningar för att se rapportsvitens valuta.
+* Om `currencyCode` har definierats och matchar rapportsvitens valuta används ingen valutakonvertering.
+* Om `currencyCode` har definierats och skiljer sig från rapportsvitens valuta, använder Adobe en valutakonvertering som baseras på den aktuella dagens växelkurs. Adobe samarbetar med [XE](https://xe.com) för att konvertera valuta varje dag. Alla värden som lagras i rapportsviten finns i rapportsvitens valuta.
+* Om `currencyCode` är inställt på ett ogiltigt värde ignoreras **hela träffen vilket orsakar dataförlust.** Kontrollera att variabeln är korrekt definierad när den används.
 
 Den här variabeln finns inte kvar över träffar. Kontrollera att den här variabeln är definierad på varje sida som innehåller intäkt- eller valutahändelser som inte matchar rapportsvitens standardvaluta.
 
@@ -28,7 +28,7 @@ Den här variabeln finns inte kvar över träffar. Kontrollera att den här vari
 >
 >Även om valutakoder kan ändras mellan sidor måste alla valutamått för en enda träff använda samma valuta.
 
-En period **måste** användas som valutaavgränsare för alla valutor när variabeln implementeras. Svensk krona, som vanligtvis visar en kommaavgränsare, måste ändras för att använda en punkt i `products` variabel och alla valutakurshändelser. Adobe visar rätt valutavaldare vid rapportering.
+En period **måste** användas som valutasparator för alla valutor när variabeln implementeras. Svensk krona, som vanligtvis visar en kommaavgränsare, måste ändras för att använda en punkt i variabeln `products` och alla valutakändelser. Adobe visar rätt valutavaldare vid rapportering.
 
 ## Valutakod med Web SDK
 
@@ -39,12 +39,12 @@ Valutakoden mappas till följande variabler:
 
 ## Valutakod som använder Adobe Analytics-tillägget
 
-Valutakod är ett fält under [!UICONTROL General] när du konfigurerar Adobe Analytics-tillägget.
+Valutakod är ett fält under dragspelet [!UICONTROL General] när du konfigurerar Adobe Analytics-tillägget.
 
-1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med dina inloggningsuppgifter för AdobeID.
 1. Klicka på den önskade taggegenskapen.
-1. Gå till [!UICONTROL Extensions] klickar du på **[!UICONTROL Configure]** under Adobe Analytics.
-1. Expandera [!UICONTROL General] dragspelspanel, som visar [!UICONTROL Currency Code] fält.
+1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen **[!UICONTROL Configure]** under Adobe Analytics.
+1. Expandera dragspelsfliken [!UICONTROL General] som visar fältet [!UICONTROL Currency Code].
 
 Du kan antingen använda en förinställd valutakod eller en anpassad valutakod. Kontrollera att koden är giltig om du använder en anpassad valutakod.
 
@@ -52,15 +52,15 @@ Du kan antingen använda en förinställd valutakod eller en anpassad valutakod.
 
 Valutakoden skickas till Adobe Experience Platform Mobile SDK:er via kontextdatavariabler i tillägget Adobe Analytics.
 
-1. Ange valutakoden i en kontextdatavariabel under någon av `trackState` eller `trackAction`.
+1. Ange valutakoden i en kontextdatavariabel under antingen `trackState` eller `trackAction`.
 1. Skapa en bearbetningsregel i Adobe Analytics Admin Tools för rapportserien. Ställ in regeln så att variabeln Valutakod skrivs över.
-1. Skicka valutakoden till `products` variabel i ditt anrop till `trackState` eller `trackAction`.
+1. Skicka valutakoden till variabeln `products` i ditt anrop till `trackState` eller `trackAction`.
 
 Du kan antingen använda en förinställd valutakod eller en anpassad valutakod. Kontrollera att koden är giltig om du använder en anpassad valutakod.
 
 ## s.currencyCode i AppMeasurementet och den anpassade kodredigeraren för Analytics-tillägget
 
-The `s.currencyCode` variabeln är en sträng som innehåller en 3-bokstavskod som representerar valutan på sidan. Värdena är skiftlägeskänsliga.
+Variabeln `s.currencyCode` är en sträng som innehåller en 3-bokstavskod som representerar valutan på sidan. Värdena är skiftlägeskänsliga.
 
 ```js
 s.currencyCode = "USD";

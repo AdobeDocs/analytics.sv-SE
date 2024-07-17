@@ -20,9 +20,9 @@ Realtidsrapporter är en av de få funktioner som ännu inte lagts in i Analysis
 
 Så här når du rapportkonfigurationssidan i realtid (administratörsbehörighet krävs):
 
-1. Klicka **[!UICONTROL Workspace]** i Adobe Analytics övre navigeringsfält.
+1. Klicka på **[!UICONTROL Workspace]** i navigeringsfältet högst upp i Adobe Analytics.
 1. Välj **[!UICONTROL Reports]** i det vänstra navigeringsfältet.
-1. Välj **[!UICONTROL Enagement]** ![Chevron](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronRight_18_N.svg) **[!UICONTROL Real-Time]**. Du kan också ![Sök](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) sök i realtid.
+1. Välj **[!UICONTROL Enagement]** ![Sparron](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronRight_18_N.svg) **[!UICONTROL Real-Time]**. Du kan även ![söka](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) efter realtidssökning.
 1. Om rapportsviten ännu inte har aktiverats i realtid visas ett meddelande med en länk för att konfigurera rapportsviten.
 
 Med Adobe kan upp till tre realtidsrapporter samla in data samtidigt. Alla måste konfigureras innan de kan börja samla in data i realtid.
@@ -33,7 +33,7 @@ Med Adobe kan upp till tre realtidsrapporter samla in data samtidigt. Alla måst
 
 Platser i realtid talar om var besökarna befinner sig när de besöker er webbplats just nu. Så här konfigurerar du en av dina tre realtidsrapporter så att platsdata visas:
 
-1. Klicka [!UICONTROL Configure] nära realtidsrapportens titel.
+1. Klicka på [!UICONTROL Configure] nära rubriken för realtidsrapporten.
 2. Under en av rapportplatserna i realtid:
    * Ge realtidsrapporten ett namn, till exempel&quot;Platser&quot;.
    * Förekomster används vanligtvis som mått. Användare/unika besökare är för närvarande inte tillgängliga i realtidsrapporter.
@@ -57,7 +57,7 @@ I realtid visar trafikkällor var besökarna kom från när de besökte er webbp
 
 I realtid visas vilka sidor besökarna tittar på. Så här konfigurerar du en av dina tre realtidsrapporter så att innehållsdata visas:
 
-1. Klicka [!UICONTROL Configure] nära realtidsrapportens titel.
+1. Klicka på [!UICONTROL Configure] nära rubriken för realtidsrapporten.
 2. Under en av rapportplatserna i realtid:
    * Ge realtidsrapporten ett namn, till exempel&quot;Innehåll&quot;.
    * Förekomster används vanligtvis som mått. Användare/unika besökare är för närvarande inte tillgängliga i realtidsrapporter.
@@ -77,7 +77,7 @@ Händelser i realtid talar om vilka händelser som inträffar mest på er webbpl
 
 Realtidskonverteringar genererar data på olika plattformar. Målen i Google Analytics liknar mätvärden och framgångsrika händelser i Adobe Analytics. Du kan använda de flesta mätvärden i Adobe Analytics (både anpassade mätvärden som framgångshändelser och standardmätvärden som intäkter) i Real Time Reports. På samma sätt som för Google Analytics kan du även tillämpa dimensioner som produktnamn, spårningskod och kampanjresultat i realtidsrapporter.
 
-1. Klicka [!UICONTROL Configure] nära realtidsrapportens titel.
+1. Klicka på [!UICONTROL Configure] nära rubriken för realtidsrapporten.
 2. Under en av rapportplatserna i realtid:
    * Ge realtidsrapporten ett namn, till exempel&quot;Konverteringar&quot;.
    * Förekomster används vanligtvis som mått. Användare/unika besökare är för närvarande inte tillgängliga i realtidsrapporter.

@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Med intelligenta aviseringar (eller bara &quot;aviseringar&quot;) i Adobe Analytics kan du få meddelanden direkt när onormala händelser inträffar i dina data.
 
-Du kan ange att aviseringar ska utlösas baserat på avvikelsetrösklar, ändrade procentsatser eller specifika datapunkter. Varningar ger detaljstyrda kontroller som kan integreras med [Analysidentifiering](/help/analyze/analysis-workspace/c-anomaly-detection/anomaly-detection.md), som aktiveras när du behöver dem som mest.
+Du kan ange att aviseringar ska utlösas baserat på avvikelsetrösklar, ändrade procentsatser eller specifika datapunkter. Varningar innehåller detaljerade kontroller som integreras med [avvikelseidentifiering](/help/analyze/analysis-workspace/c-anomaly-detection/anomaly-detection.md) och aktiveras när du behöver dem som mest.
 
 Med intelligenta aviseringar kan du:
 
@@ -24,7 +24,7 @@ Med intelligenta aviseringar kan du:
 * Skicka aviseringar via e-post eller SMS med länkar till autogenererade Analysis Workspace-projekt
 * Skapa&quot;staplade&quot; aviseringar som fångar in flera mätvärden i en enda avisering
 
-I följande videofilm visas en grundläggande översikt över varningar: [Intelligenta aviseringar](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/data-science/intelligent-alerts.html) (5:34)
+I följande videofilm visas en grundläggande översikt över aviseringar: [Intelligenta aviseringar](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/data-science/intelligent-alerts.html) (5:34)
 
 ## Anomalsökning efter aviseringar
 
@@ -39,7 +39,7 @@ Mer information finns i [Statistiska tekniker som används vid avvikelseidentifi
 
 ## Skapa aviseringar
 
-Mer information om hur du skapar varningar i Adobe Analytics finns i [Skapa aviseringar](/help/analyze/analysis-workspace/c-intelligent-alerts/alert-builder.md).
+Mer information om hur du skapar aviseringar i Adobe Analytics finns i [Skapa aviseringar](/help/analyze/analysis-workspace/c-intelligent-alerts/alert-builder.md).
 
 >[!IMPORTANT]
 >

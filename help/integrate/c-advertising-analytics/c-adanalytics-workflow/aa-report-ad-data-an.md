@@ -24,13 +24,13 @@ Den här rapporten ger alla som implementerar sökmotorintegration tillgång til
 
 >[!NOTE]
 >
->Sökrapporten Betald visas för alla kunder, även om du inte har implementerat några annonskonton. Om du försöker öppna den betalda sökrapporten för ett företag som inte har etablerats visas ett felmeddelande om att du inte har konfigurerat något sökmotorkonto. Välj **[!UICONTROL Configure Now]** som tar dig till [Konfigurera annonskonto](/help/integrate/c-advertising-analytics/c-adanalytics-workflow/aa-create-ad-account.md) skärm.
+>Sökrapporten Betald visas för alla kunder, även om du inte har implementerat några Advertising-konton. Om du försöker öppna den betalda sökrapporten för ett företag som inte har etablerats visas ett felmeddelande om att du inte har konfigurerat något sökmotorkonto. Välj **[!UICONTROL Configure Now]**, som tar dig till skärmen [Advertising-kontoinställningar](/help/integrate/c-advertising-analytics/c-adanalytics-workflow/aa-create-ad-account.md).
 
 ![](assets/aa_aw.png)  ![](assets/aa_aw2.png) ![](assets/aa_aw3.png) ![](assets/aa_aw4.png)  ![](assets/aa_aw5.png) ![](assets/aa_aw6.png)
 
 | Tabell/visualisering | Beskrivning |
 |--- |--- |
-| Annonstrender | Översikt över dagliga trender för AMO Impressions, AMO Clicks och AMO Cost. |
+| Advertising Trends | Översikt över dagliga trender för AMO Impressions, AMO Clicks och AMO Cost. |
 | Annonsplattformar | Diagram över kostnaden för de två främsta plattformarna (Google, Bing). |
 | Summor för annonsplattform | Frihandstabell över de översta plattformarna uppdelade efter AMO Impressions, AMO Clicks, AMO Costs, AMO Avg. Position, AMO Avg. Quality Score. |
 | Konton | Staplad kostnadsyta. |

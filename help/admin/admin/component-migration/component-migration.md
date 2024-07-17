@@ -26,59 +26,59 @@ Migreringsprocessen omfattar:
 
 ## Förbereda för migrering
 
-Läs mer om hur du migrerar projekt i [Förbereda för att migrera komponenter och projekt från Adobe Analytics till Customer Journey Analytics](/help/admin/admin/component-migration/prepare-component-migration.md).
+Innan du migrerar några projekt till Customer Journey Analytics bör du lära dig mer om hur du migrerar projekt i [Förbered för att migrera komponenter och projekt från Adobe Analytics till Customer Journey Analytics](/help/admin/admin/component-migration/prepare-component-migration.md).
 
 ## Migrera Adobe Analytics-projekt till Customer Journey Analytics
 
 >[!IMPORTANT]
 >
->Läs mer om hur du migrerar projekt i [Förbereda för att migrera komponenter och projekt från Adobe Analytics till Customer Journey Analytics](/help/admin/admin/component-migration/prepare-component-migration.md).
+>Innan du migrerar några projekt till Customer Journey Analytics enligt beskrivningen i det här avsnittet bör du lära dig mer om hur du migrerar projekt i [Förbered för att migrera komponenter och projekt från Adobe Analytics till Customer Journey Analytics](/help/admin/admin/component-migration/prepare-component-migration.md).
 >
 >**Alla dimensioner eller mätvärden som du mappar är permanenta, både för det här projektet och för alla framtida projekt som migreras i hela IMS-organisationen, oavsett vilken användare som utför migreringen. Dessa mappningar kan inte ändras eller ångras förutom genom att kontakta kundtjänst.**
 
-1. I Adobe Analytics väljer du [!UICONTROL **Administratör**] tabbtangenten och sedan välja [!UICONTROL **Alla administratörer**].
+1. I Adobe Analytics väljer du fliken [!UICONTROL **Admin**] och sedan [!UICONTROL **All admin**].
 
-1. Under [!UICONTROL **Datakonfiguration och insamling**], markera [!UICONTROL **Komponentmigrering**].
+1. Välj [!UICONTROL **Komponentmigrering**] under [!UICONTROL **Datakonfiguration och samling**].
 
 1. Leta reda på det projekt som du vill migrera. Du kan filtrera, sortera och söka i projektlistan.
 
-   Som standard visas endast projekt som delas med dig. Om du vill visa alla projekt i organisationen väljer du **Filter** ikon och sedan expandera [!UICONTROL **Andra filter**] och markera [!UICONTROL **Visa alla**]. (Mer information om filtrering, sortering och sökning i projektlistan finns i [Filtrera, sortera och söka i projektlistan](#filter-sort-and-search-the-list-of-projects).)
+   Som standard visas endast projekt som delas med dig. Om du vill visa alla projekt i organisationen väljer du ikonen **Filter** , expanderar [!UICONTROL **Andra filter**] och väljer [!UICONTROL **Visa alla**] . (Mer information om filtrering, sortering och sökning i projektlistan finns i [Filtrera, sortera och söka i listan med projekt](#filter-sort-and-search-the-list-of-projects).)
 
-1. För musen över projektet som du vill migrera och välj sedan **Migrera** icon ![Migrera projekt](assets/migrate.svg).
+1. För musen över projektet som du vill migrera och välj sedan ikonen **Migrera** ![Migrera projekt](assets/migrate.svg) .
 
    eller
 
-   Välj det projekt som du vill migrera och välj sedan [!UICONTROL **Migrera till Customer Journey Analytics**].
+   Markera det projekt som du vill migrera och välj sedan [!UICONTROL **Migrera till Customer Journey Analytics**].
 
    Du kan bara välja ett projekt åt gången för migrering.
 
-   The [!UICONTROL **Migrera project_name till Customer Journey Analytics**] visas.
+   Dialogrutan [!UICONTROL **Migrera project_name till Customer Journey Analytics**] visas.
 
    <!-- add screenshot -->
 
-1. I [!UICONTROL **Projektägare**] börjar du skriva namnet på den användare som du vill ange som projektägare i Customer Journey Analytics och väljer sedan namnet i listrutan.
+1. I fältet [!UICONTROL **Projektägare**] börjar du skriva namnet på den användare som du vill ange som projektägare i Customer Journey Analytics och markerar sedan namnet i listrutan.
 
    Ägaren som du anger har fullständig behörighet till projektet.
 
-1. I [!UICONTROL **Kartschema för rapportsviter**] väljer du en rapportsvit.
+1. Välj en rapportsvit i [!UICONTROL **Kartschemat för rapportsviter**].
 
-1. I [!UICONTROL **Datavy**] väljer du datavyn i Customer Journey Analytics där du vill att projektet och komponenterna ska migreras.
+1. I listrutan [!UICONTROL **Datavy**] väljer du datavyn i Customer Journey Analytics där du vill att projektet och komponenterna ska migreras.
 
 1. Välj [!UICONTROL **Kartschema**].
 
-1. I [!UICONTROL **Kartschema**] -avsnittet expanderar du [!UICONTROL **Dimensioner**] och [!UICONTROL **Mått**] -avsnitt.
+1. Expandera avsnitten [!UICONTROL **Dimensioner**] och [!UICONTROL **Metrisk**] i avsnittet [!UICONTROL **Kartschema**].
 
    Vissa mått och mätvärden i Adobe Analytics mappas automatiskt till en dimension eller ett mätvärde i Customer Journey Analytics. Andra måste mappas manuellt.
 
-   **Mappa dimensioner och mätvärden automatiskt**
+   **Mappa dimensioner och mått automatiskt**
 
    >[!NOTE]
    >
-   >   Om du använde WebSDK för att importera data till Adobe Experience Platform kan mått och mått inte mappas automatiskt. Mer information finns i [Förutsättningar](/help/admin/admin/component-migration/prepare-component-migration.md#prerequisites) in [Förbereda för att migrera komponenter och projekt från Adobe Analytics till Customer Journey Analytics](/help/admin/admin/component-migration/prepare-component-migration.md).
+   >   Om du använde WebSDK för att importera data till Adobe Experience Platform kan mått och mått inte mappas automatiskt. Mer information finns i [Förutsättningar](/help/admin/admin/component-migration/prepare-component-migration.md#prerequisites) i [Förbereda för att migrera komponenter och projekt från Adobe Analytics till Customer Journey Analytics](/help/admin/admin/component-migration/prepare-component-migration.md).
 
    Vissa mått och mätvärden i Adobe Analytics mappas automatiskt till en dimension eller ett mätvärde i Customer Journey Analytics. Du kan inte fatta några mappningsbeslut för de här dimensionerna och måtten.
 
-   Till exempel **Besök** i Adobe Analytics mappas automatiskt med **Sessioner** mätvärden i Customer Journey Analytics.
+   Måttet **Besök** i Adobe Analytics mappas till exempel automatiskt med måttet **Sessioner** i Customer Journey Analytics.
 
    Du kan välja vilken dimension eller vilket mätvärde som helst för att visa deras associerade ID:n.
 
@@ -90,25 +90,25 @@ Läs mer om hur du migrerar projekt i [Förbereda för att migrera komponenter o
 
    Vissa mått och mätvärden i Adobe Analytics kan inte automatiskt mappas till en dimension eller ett mätvärde i Customer Journey Analytics.
 
-   När en dimension eller ett mått inte kan mappas automatiskt visas en orange räknare bredvid [!UICONTROL **Dimensioner**] eller [!UICONTROL **Mått**] avsnittsrubrik, som anger antalet dimensioner eller mått som måste mappas manuellt. I tabellen visas en varningsikon ![varningsikon](assets/schema-warning.png) visas bredvid varje dimension eller mätvärde som behöver mappas manuellt.
+   När en dimension eller ett mätvärde inte kan mappas automatiskt visas en orange räknare bredvid avsnittshuvudet [!UICONTROL **Dimensions**] eller [!UICONTROL **Metrics**] som anger antalet dimensioner eller mätvärden som behöver mappas manuellt. I tabellen visas en varningsikon ![varningsikon](assets/schema-warning.png) bredvid varje dimension eller mätvärde som behöver mappas manuellt.
 
-   Dessutom är [!UICONTROL **Status**] kolumn säger [!UICONTROL **Ej mappad**].
+   Dessutom står det [!UICONTROL **Inte mappat**] i kolumnen [!UICONTROL **Status**].
 
    <!-- update screenshot after I can see the Status column -->
 
    ![Manuell karta för migreringsschema](assets/schema-manual-map.png)
 
-1. Om du vill mappa mått och mått manuellt väljer du en dimension eller ett mått som innehåller en varningsikon ![varningsikon](assets/schema-warning.png)och sedan i [!UICONTROL **Mappat Customer Journey Analytics-mått**] fält (eller [!UICONTROL **Mappad Customer Journey Analytics-dimension**] om du mappar en dimension), markerar du den dimension eller det mått i Customer Journey Analytics som du vill mappa till den dimension eller det mått som du har valt.
+1. Om du vill mappa dimensioner och mått manuellt markerar du en dimension eller ett mått som innehåller en varningsikon ![varningsikon](assets/schema-warning.png). I fältet [!UICONTROL **Mappat Customer Journey Analytics-mått**] (eller fältet [!UICONTROL **Mappat Customer Journey Analytics-mått**] om du mappar en dimension) markerar du den dimension eller det mått i Customer Journey Analytics som du vill mappa till den dimension eller det mätvärde du har valt.
 
-   ![kartmått och mätvärden](assets/schema-manual-map-drop-down.png)
+   ![kartdimensioner och mått](assets/schema-manual-map-drop-down.png)
 
-   När en dimension eller ett mått har mappats försvinner varningsikonen och [!UICONTROL **Status**] kolumn ändras till [!UICONTROL **Mappat**] med en grön punkt. (Status för [!UICONTROL **Mappat**] med en grå punkt anger att dimensionen eller måttet mappades under en tidigare migrering. Det går inte att uppdatera tidigare mappningar.)
+   När en dimension eller ett mått har mappats försvinner varningsikonen och kolumnen [!UICONTROL **Status**] ändras till [!UICONTROL **Mappad**] med en grön punkt. (Statusen [!UICONTROL **Mappad**] med en grå punkt anger att dimensionen eller måttet mappades under en tidigare migrering. Det går inte att uppdatera tidigare mappningar.)
 
    Upprepa den här processen för varje dimension eller mätvärde som innehåller varningsikonen.
 
-   När alla dimensioner och mått i Adobe Analytics rapportsserie har mappats till en dimension eller ett mått i datavyn i Customer Journey Analytics, visas en grön bock ![bock](assets/report-suite-check.png) visas bredvid rapportsvitens namn i [!UICONTROL **Kartschema för rapportsviter**] -avsnitt.
+   När alla dimensioner och mätvärden i Adobe Analytics rapportserie har mappats till en dimension eller ett mätvärde i datavyn i Customer Journey Analytics, visas en grön bockmarkering ![bockmarkering](assets/report-suite-check.png) bredvid rapportsvitens namn i [!UICONTROL **schemat för rapportsviter**] .
 
-1. (Villkorligt) Om projektet som du migrerar innehåller mer än en rapportsvit väljer du en annan rapportsvit i [!UICONTROL **Kartschema för rapportsviter**] och sedan upprepa steg 6 genom steg 10. <!-- double-check that the step numbers are still correct -->
+1. (Villkorligt) Om projektet som du migrerar innehåller mer än en rapportsvit väljer du en annan rapportsvit i [!UICONTROL **Kartschemat för rapportsviter**] och upprepar sedan steg 6 till steg 10. <!-- double-check that the step numbers are still correct -->
 
 1. Välj [!UICONTROL **Migrera**].
 
@@ -116,15 +116,15 @@ Läs mer om hur du migrerar projekt i [Förbereda för att migrera komponenter o
    >
    >   Ett varningsmeddelande visas när du har valt [!UICONTROL **Migrera**]. Innan du fortsätter bör du vara medveten om att alla dimensioner och mätvärden som du mappar är permanenta, både för det här projektet och för alla framtida projekt som migreras i hela organisationen. Om du fortsätter går det inte att ändra de mappningar du gör.
 
-   När migreringen är klar [!UICONTROL **Migreringsstatus**] sidan innehåller en sammanfattning av vad som migrerades.
+   När en migrering har slutförts ger sidan [!UICONTROL **Migreringsstatus**] en sammanfattning av vad som migrerades.
 
-   Om migreringen misslyckas, se [Försök att utföra migreringen igen](#retry-a-failed-migration) för mer information.
+   Om migreringen misslyckas finns mer information i avsnittet [Försök igen med en misslyckad migrering](#retry-a-failed-migration) nedan.
 
 ## Försök att utföra migreringen igen
 
 Om en migrering misslyckas kan du försöka migrera igen.
 
-Innan du försöker utföra en misslyckad migrering måste du ta bort alla [element som inte stöds](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html#understand-unsupported-elements-that-cause-errors) från projektet.
+Innan du försöker utföra en misslyckad migrering igen måste du ta bort alla [element som inte stöds](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html#understand-unsupported-elements-that-cause-errors) från projektet.
 
 >[!NOTE]
 >
@@ -132,17 +132,17 @@ Innan du försöker utföra en misslyckad migrering måste du ta bort alla [elem
 
 Så här gör du om en misslyckad migrering:
 
-1. I Adobe Analytics väljer du [!UICONTROL **Administratör**] tabbtangenten och sedan välja [!UICONTROL **Alla administratörer**].
+1. I Adobe Analytics väljer du fliken [!UICONTROL **Admin**] och sedan [!UICONTROL **All admin**].
 
-1. Under [!UICONTROL **Datakonfiguration och insamling**], markera [!UICONTROL **Komponentmigrering**].
+1. Välj [!UICONTROL **Komponentmigrering**] under [!UICONTROL **Datakonfiguration och samling**].
 
-1. Välj [!UICONTROL **Misslyckades**] i [!UICONTROL **Migreringsstatus**] -kolumnen bredvid projektet som du vill försöka igen.
+1. Välj [!UICONTROL **Misslyckades**] i kolumnen [!UICONTROL **Migreringsstatus**] bredvid projektet som du vill försöka igen.
 
-   ![migreringsstatuskolumnen misslyckades](assets/migration-failed.png)
+   ![Kolumnen för migreringsstatus misslyckades](assets/migration-failed.png)
 
-   The [!UICONTROL **Migreringsstatus**] visas.
+   Sidan [!UICONTROL **Migreringsstatus**] visas.
 
-   Den här sidan visas även omedelbart efter att migreringsstegen som beskrivs i avsnittet har slutförts [Migrera Adobe Analytics-projekt till Customer Journey Analytics](#migrate-adobe-analytics-projects-to-customer-journey-analytics) ovan.
+   Den här sidan visas också omedelbart efter att migreringsstegen som beskrivs i avsnittet [Migrera Adobe Analytics-projekt till Customer Journey Analytics](#migrate-adobe-analytics-projects-to-customer-journey-analytics) ovan har slutförts.
 
 1. Välj [!UICONTROL **Försök migrera igen**].
 
@@ -156,11 +156,11 @@ Du kan filtrera efter följande kriterier:
 
 | Filter | Beskrivning |
 |---------|----------|
-| [!UICONTROL **Status**] | Flyttningens status: <ul><li>[!UICONTROL **Inte startat**]</li><li>[!UICONTROL **Startat**]</li><li>[!UICONTROL **Slutförd**]</li><li>[!UICONTROL **Misslyckades**]</li></ul>. |
+| [!UICONTROL **Status**] | Flyttningens status: <ul><li>[!UICONTROL **Inte igång**]</li><li>[!UICONTROL **Startades**]</li><li>[!UICONTROL **Slutförd**]</li><li>[!UICONTROL **Misslyckades**]</li></ul>. |
 | [!UICONTROL **Taggar**] | Markera eventuella taggar i listan med taggar. Endast projekt där de markerade taggarna används visas. |
-| [!UICONTROL **Rapportsvit**] | Välj en rapportsvit i listan med rapportsviter. Endast projekt som använder de valda rapportsviterna visas. |
+| [!UICONTROL **Rapportsviten**] | Välj en rapportsvit i listan med rapportsviter. Endast projekt som använder de valda rapportsviterna visas. |
 | [!UICONTROL **Ägare**] | Välj en ägare i listan över ägare. Endast projekt som ägs av de användare du väljer visas. |
-| [!UICONTROL **Andra filter**] | Följande ytterligare filter är tillgängliga: <ul><li>[!UICONTROL **Min**]: Visar endast projekt där du har angetts som ägare.</li><li>[!UICONTROL **Delas med mig**]: Visar endast projekt som har delats med dig.</li><li>[!UICONTROL **Favoriter**]: Visar endast projekt som har markerats som favoriter. (Du kan markera ett projekt som en favorit på menyn [projektstartsida](/help/analyze/landing.md).)</li><li>[!UICONTROL **Månadsvis**]</li><li>[!UICONTROL **Årsvis**]</li></ul> |
+| [!UICONTROL **Andra filter**] | Följande ytterligare filter är tillgängliga: <ul><li>[!UICONTROL **Min**]: Visar endast projekt där du har angetts som ägare.</li><li>[!UICONTROL **Delad med mig**]: Visar endast projekt som har delats med dig.</li><li>[!UICONTROL **Favoriter**]: Visar endast projekt som har markerats som favoriter. (Du kan markera ett projekt som en favorit på [projektstartsidan](/help/analyze/landing.md).)</li><li>[!UICONTROL **Månadsvis**]</li><li>[!UICONTROL **År**]</li></ul> |
 
 {style="table-layout:auto"}
 

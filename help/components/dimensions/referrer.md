@@ -16,7 +16,7 @@ Referenten [dimension](overview.md) rapporterar vilka URL:er besökarna var på 
 
 >[!IMPORTANT]
 >
->Du måste konfigurera rapportsvitens [Interna URL-filter](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/internal-url-filter-admin.md) om du vill använda den här dimensionen. Om du inte konfigurerar interna URL-filter kan det antingen innehålla interna URL:er eller förhindra att externa URL:er visas.
+>Du måste konfigurera rapportsvitens [interna URL-filter](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/internal-url-filter-admin.md) för att kunna använda den här dimensionen. Om du inte konfigurerar interna URL-filter kan det antingen innehålla interna URL:er eller förhindra att externa URL:er visas.
 
 Samma rapport kan visa olika resultat mellan Analysis Workspace och Data Warehouse. Analysis Workspace rapporterar referenten för varje enskild sida, exklusive värden som matchar interna URL-filter. Datan Warehouse rapporterar endast den första referenten av besöket och ignorerar interna URL-filter.
 
@@ -24,16 +24,16 @@ Samma rapport kan visa olika resultat mellan Analysis Workspace och Data Warehou
 
 Den här dimensionen kräver konfiguration i analysgränssnittet och data i bildbegäranden.
 
-* I implementeringen hämtar den här dimensionen data från [`r` frågesträng](/help/implement/validate/query-parameters.md) i bildbegäranden. AppMeasurementet samlar in dessa data med JavaScript-variabeln `document.referrer` i webbläsaren. Du kan använda [`referrer`](/help/implement/vars/page-vars/referrer.md) variabelåsidosättning för att manuellt ange den. Om du använder ett AppMeasurementen bibliotek (till exempel via taggar i Adobe Experience Platform) fungerar den här dimensionen automatiskt. Om du använder en datainsamlingsmetod utanför AppMeasurementet (till exempel via API:t) måste du ta med `r` frågesträngsparameter i bildbegäranden.
-* I Analytics-gränssnittet måste du konfigurera rapportsvitens [Interna URL-filter](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/internal-url-filter-admin.md). Om du inte konfigurerar interna URL-filter kan det antingen innehålla interna URL:er eller förhindra att externa URL:er visas.
+* I implementeringen hämtar den här dimensionen data från [`r`-frågesträngen ](/help/implement/validate/query-parameters.md) i bildbegäranden. AppMeasurementet samlar in dessa data med JavaScript-variabeln `document.referrer` i webbläsaren. Du kan använda variabelåsidosättningen [`referrer`](/help/implement/vars/page-vars/referrer.md) om du vill ange den manuellt. Om du använder ett AppMeasurementen bibliotek (till exempel via taggar i Adobe Experience Platform) fungerar den här dimensionen automatiskt. Om du använder en datainsamlingsmetod utanför AppMeasurementet (till exempel via API:t), måste du ta med frågesträngsparametern `r` i bildbegäranden.
+* I Analytics-gränssnittet måste du konfigurera rapportsvitens [interna URL-filter](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/internal-url-filter-admin.md). Om du inte konfigurerar interna URL-filter kan det antingen innehålla interna URL:er eller förhindra att externa URL:er visas.
 
 ## Dimensioner
 
-Dimensionen innehåller URL:er som besökarna klickar igenom till webbplatsen. Om en träff inte har några referensdata grupperas den under dimensionsobjektet `"Typed/Bookmarked"`. Dimensionsobjektet betyder att det inte fanns något referensvärde, till exempel om besökaren skrev webbläsaradressen manuellt i adressfältet eller klickade på ett bokmärke. The `"Typed/Bookmarked"` Dimensionsobjekt visas också för omdirigeringar som inte stöder Analytics. Se [Omdirigering och alias](/help/technotes/redirects.md) i Technotes-handboken.
+Dimensionen innehåller URL:er som besökarna klickar igenom till webbplatsen. Om en träff inte har några referensdata grupperas den under dimensionsobjektet `"Typed/Bookmarked"`. Dimensionsobjektet betyder att det inte fanns något referensvärde, till exempel om besökaren skrev webbläsaradressen manuellt i adressfältet eller klickade på ett bokmärke. Dimensionsobjektet `"Typed/Bookmarked"` visas också för omdirigeringar som inte stöder Analytics. Se [Omdirigeringar och alias](/help/technotes/redirects.md) i användarhandboken för Technotes.
 
-### Dimensioner som innehåller `googleusercontent.com`
+### Dimension som innehåller `googleusercontent.com`
 
 Användare kan se dimensionsobjekt med domänen `googleusercontent.com`.
 
-* **Cachelagrade sidor**: Google spindel krypterar hela tiden webben och lagrar kopior av webbsidor om de tas offline. De här cachelagrade sidorna är tillgängliga bredvid de flesta sökresultaten genom att klicka på länken &quot;Cached&quot;. När en användare klickar på den här länken och visar det innehåll som Google har cachelagrat, `webcache.googleusercontent.com` är en vanlig dimensionsobjekt.
+* **Cachelagrade sidor**: Google spindel crawlar hela tiden webben och lagrar kopior av sidor om de är offline. De här cachelagrade sidorna är tillgängliga bredvid de flesta sökresultaten genom att klicka på länken &quot;Cached&quot;. När en användare klickar på den här länken och visar innehållet som Google cachade är `webcache.googleusercontent.com` ett vanligt dimensionsobjekt.
 * **Översatta sidor**: Google erbjuder en robust och bekväm översättningstjänst. När du visar en webbplats med den här tjänsten kommer den från `translate.googleusercontent.com`. Dimensionsobjektet visas om användaren klickar på en länk för att återgå till det ursprungliga innehållet.

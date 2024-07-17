@@ -7,8 +7,8 @@ role: User, Admin
 exl-id: 51785d9a-fdd1-42f1-8f44-4ca135d97d99
 source-git-commit: fb39f906d6c08713e4dc8211c917b2942502868e
 workflow-type: tm+mt
-source-wordcount: '131'
-ht-degree: 1%
+source-wordcount: '133'
+ht-degree: 0%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 Kopiera ett kalkylblad till ett annat i samma arbetsbok.
 
-1. Högerklicka på en cell var som helst i kalkylbladet och välj **[!UICONTROL Copy Worksheet w/Requests]**.
+1. Högerklicka på en cell någonstans i kalkylbladet och välj **[!UICONTROL Copy Worksheet w/Requests]**.
 1. Högerklicka igen och välj **[!UICONTROL Paste Worksheet w/Requests]**.
 
    Ett nytt kalkylblad läggs till i arbetsboken. Som standard har kalkylbladet samma namn som det ursprungliga kalkylbladet, men suffixet (2). Om du upprepar inklistringsåtgärden har det nya kalkylbladet suffixet (3) och så vidare. När du klistrar in ett kalkylblad som du har kopierat, placeras det nya kalkylbladet till höger om (omedelbart efter) det aktiva kalkylbladet.

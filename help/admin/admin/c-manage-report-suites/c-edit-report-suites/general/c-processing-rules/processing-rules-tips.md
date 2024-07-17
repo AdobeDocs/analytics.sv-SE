@@ -20,13 +20,13 @@ Det här avsnittet innehåller riktlinjer för testning av bearbetningsregler oc
 
 Det här avsnittet innehåller riktlinjer som kan hjälpa dig att testa bearbetningsregler innan de distribueras till produktion.
 
-**Testregler som läser sökvillkor**
+**Testregler som läser söktermer**
 
 Om du vill se villkor som baseras på en sökning, t.ex. om prop1 innehåller &quot;news&quot;, går du till prop 1-rapporten och söker efter &quot;news&quot; och ser om det finns några träffar du inte förväntade dig.
 
 **Testregler som läser variabler**
 
-Skapa en tom HTML-sida på skrivbordet, inkludera s_code från webbplatsen och ange `s.account` variabel till en dev-rapportsserie. Om dina regler baseras på en referent, refererande domän och så vidare, kan du ta några exempel på URL:er från rapporten med live-referenter och ange `s.referrer` variabel med ett av dessa värden och läser in sidan. Om regeln baseras på sidans URL-värde kan du också ange `s.pageURL`. Samma process kan användas för alla variabler.
+Skapa en tom HTML-sida på skrivbordet, ta med s_code från webbplatsen och ställ in variabeln `s.account` på en dev-rapportserie. Om dina regler baseras på en referent, refererande domän och så vidare, tar du några exempel-URL:er från direktreferensrapporten, anger variabeln `s.referrer` med ett av dessa värden och läser in sidan. På samma sätt kan du ange `s.pageURL` om regeln baseras på sidans URL-värde. Samma process kan användas för alla variabler.
 
 **Använda en Dev Report Suite**
 

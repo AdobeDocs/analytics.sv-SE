@@ -12,7 +12,7 @@ ht-degree: 1%
 
 # Sekretessrapportering
 
-Sekretessrapporteringen gör att du kan aktivera [Medgivandehantering - anmälan](/help/components/dimensions/cm-opt-in.md), [Medgivandehantering avanmäl dig](/help/components/dimensions/cm-opt-out.md) och [Godkännande av annonsplattform](/help/components//dimensions/ad-consent.md) dimensioner för rapportering.
+Med sekretessrapportering kan du aktivera dimensionerna [Medgivandehantering, ](/help/components/dimensions/cm-opt-in.md), [Medgivandehantering, avanmälan](/help/components/dimensions/cm-opt-out.md) och [Godkännande av annonsplattform](/help/components//dimensions/ad-consent.md) för rapportering.
 
 >[!NOTE]
 >
@@ -20,8 +20,8 @@ Sekretessrapporteringen gör att du kan aktivera [Medgivandehantering - anmälan
 
 Så här öppnar du den här sidan:
 
-1. Logga in på Adobe Analytics och navigera till **[!UICONTROL Admin]** > **[!UICONTROL Report suites]**.
-1. Välj en eller flera önskade rapportsviter och välj sedan **[!UICONTROL Edit settings]** > **[!UICONTROL Privacy management]** > **[!UICONTROL Privacy reporting]**.
+1. Logga in på Adobe Analytics och gå till **[!UICONTROL Admin]** > **[!UICONTROL Report suites]**.
+1. Markera en eller flera önskade rapportsviter och välj sedan **[!UICONTROL Edit settings]** > **[!UICONTROL Privacy management]** > **[!UICONTROL Privacy reporting]**.
 
    ![Redigera inställningar](assets/rsm-privacy-select.png)
 

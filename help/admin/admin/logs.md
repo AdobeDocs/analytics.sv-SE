@@ -23,7 +23,7 @@ Administratörsloggen rapporterar alla ändringar som gjorts av administratörer
 
 ## Logg för användning och åtkomst {#section_6FBAF92D9EA244809C45A78A2F0A7232}
 
-The [!UICONTROL Usage and Access Log] Med kan du utvärdera rapportanvändning på användarkontonivå. Den spårar till exempel åtgärder som är öppna, skapa, uppdatera, dela upp och ta bort i Analysis Workspace. Detta ger bättre synlighet för vem som använder Workspace och hur ofta.
+Med [!UICONTROL Usage and Access Log] kan du utvärdera rapportanvändning på användarkontonivå. Den spårar till exempel åtgärder som är öppna, skapa, uppdatera, dela upp och ta bort i Analysis Workspace. På så sätt blir det lättare att se vilka som använder Workspace, och hur ofta.
 
 | Element | Beskrivning |
 |---|---|
@@ -60,7 +60,7 @@ The [!UICONTROL Usage and Access Log] Med kan du utvärdera rapportanvändning p
 | Namnge sidor | Föråldrat. |
 | Klassificeringar | En klassificering hanterades. |
 | Datakällor | En datakälla hanterades. |
-| Arbetsyteprojekt | Ett Workspace-projekt har visats eller redigerats. |
+| Workspace Project | Ett Workspace-projekt har visats eller redigerats. |
 | Segment | Ett segment skapades/redigerades. |
 | Beräknade mått | Ett beräknat mått skapades/redigerades. |
 | Datumintervall | Ett datumintervall skapades/redigerades. |
@@ -73,7 +73,7 @@ The [!UICONTROL Usage and Access Log] Med kan du utvärdera rapportanvändning p
 
 Ändringsloggen för Report Suite visar ändringar som gjorts i rapportsviterna utanför Admin.
 
-Verktyg som kan ändra en rapportserie utanför [!UICONTROL Admin Tools] inkludera:
+Verktyg som kan ändra en rapportserie utanför [!UICONTROL Admin Tools] är:
 
 * Klassificeringar som överförts i en webbläsare (klassificeringar som överförts via FTP inkluderas inte i ändringsloggen)
 * Ändringar som gjorts i tidigare versioner.

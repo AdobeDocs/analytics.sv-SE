@@ -8,7 +8,7 @@ exl-id: 2e02d469-13a4-416d-823d-c8693cb0359b
 source-git-commit: 66b7de0b008364e47253d319785c204ca479ab26
 workflow-type: tm+mt
 source-wordcount: '142'
-ht-degree: 2%
+ht-degree: 0%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 2%
 
 Överför en Report Builder Excel-arbetsbok som du vill dela.
 
-The [!UICONTROL Workbook Library] I kan du överföra en Report Builder Excel-arbetsbok som du vill dela. Du kan även hämta och redigera delade arbetsböcker. När du migrerar från ExcelClient till Report Builder bör du hämta arbetsböcker från ExcelClient-databasen och sedan överföra dem till Report Builder-databasen.
+Med [!UICONTROL Workbook Library] kan du överföra en Report Builder Excel-arbetsbok som du vill dela. Du kan även hämta och redigera delade arbetsböcker. När du migrerar från ExcelClient till Report Builder bör du hämta arbetsböcker från ExcelClient-databasen och sedan överföra dem till Report Builder-databasen.
 
 >[!NOTE]
 >
@@ -24,5 +24,5 @@ The [!UICONTROL Workbook Library] I kan du överföra en Report Builder Excel-ar
 
 1. Skapa och kör en begäran.
 1. När du har sparat rapporten klickar du på **[!UICONTROL Share]**.
-1. Klicka **[!UICONTROL Browse]** för att hitta arbetsboken.
-1. I **[!UICONTROL Description]** fält, skriv en beskrivning och klicka sedan **[!UICONTROL Upload]**.
+1. Klicka på **[!UICONTROL Browse]** för att hitta arbetsboken.
+1. Skriv en beskrivning i fältet **[!UICONTROL Description]** och klicka sedan på **[!UICONTROL Upload]**.

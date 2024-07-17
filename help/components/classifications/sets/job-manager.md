@@ -5,7 +5,7 @@ exl-id: 0470e131-79c6-4906-85f0-530d360ac227
 feature: Classifications
 source-git-commit: 811e321ce96aaefaeff691ed5969981a048d2c31
 workflow-type: tm+mt
-source-wordcount: '369'
+source-wordcount: '371'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Du kan inte skapa jobb från det här gränssnittet. Skapa jobb genom att överf
 
 ## Filterklassificeringsuppsättningar
 
-Vänster sida av jobbhanteraren för klassificeringsuppsättningen innehåller filterinställningar för att hitta det önskade jobbet. När du klickar på filterikonen växlas synligheten för filterinställningarna. Du kan filtrera klassificeringsuppsättningar efter **[!UICONTROL Classification set]**, **[!UICONTROL Completion time]**, **[!UICONTROL Status]**, **[!UICONTROL Job Type]**, eller **[!UICONTROL Source]**.
+Vänster sida av jobbhanteraren för klassificeringsuppsättningen innehåller filterinställningar för att hitta det önskade jobbet. När du klickar på filterikonen växlas synligheten för filterinställningarna. Du kan filtrera klassificeringsgrupper efter **[!UICONTROL Classification set]**, **[!UICONTROL Completion time]**, **[!UICONTROL Status]**, **[!UICONTROL Job Type]** eller **[!UICONTROL Source]**.
 
 ![Jobbfilter för klassificeringsuppsättning](../assets/classification-set-job-filters.png)
 
@@ -34,8 +34,8 @@ Ytterligare filteralternativ är tillgängliga ovanför kolumnerna för jobbhant
 
 Följande kolumner är tillgängliga i jobbhanteraren för klassificeringsuppsättningen:
 
-* **[!UICONTROL Filename]**: Namnet på överförings- eller nedladdningsfilen.
-* **[!UICONTROL Classification set]**: Namnet på den klassificeringsuppsättning som filen gäller för. Du kan klicka på klassificeringsuppsättningens namn för att nå klassificeringsuppsättningens namn [Inställningar](manage/settings.md).
+* **[!UICONTROL Filename]**: Namnet på överförings- eller hämtningsfilen.
+* **[!UICONTROL Classification set]**: Namnet på klassificeringsmängden som filen gäller för. Du kan klicka på klassificeringsuppsättningens namn för att nå klassificeringsuppsättningens [inställningar](manage/settings.md).
 * **[!UICONTROL Size]**: Filens storlek.
 * **[!UICONTROL Status]**: Status för jobbet som bearbetar filen.
    * **[!UICONTROL Created]**: Jobbet skickades.
@@ -48,7 +48,7 @@ Följande kolumner är tillgängliga i jobbhanteraren för klassificeringsuppsä
    * **[!UICONTROL Failed]**: Allmänt fel som inte är relaterat till validering eller bearbetning.
 * **[!UICONTROL Job type]**: Typ av jobb.
 * **[!UICONTROL Source]**: Jobbkällan.
-* **[!UICONTROL File download]**: Gäller endast för nedladdningsjobb, t.ex. nedladdning av klassificeringsdata eller nedladdning av mallar. När nedladdningen är klar visas en nedladdningslänk i den här kolumnen.
+* **[!UICONTROL File download]**: Gäller endast för nedladdningsjobb, som att hämta klassificeringsdata eller hämta mallar. När nedladdningen är klar visas en nedladdningslänk i den här kolumnen.
 * **[!UICONTROL Modified lines]**: Antalet ändrade rader.
 * **[!UICONTROL Completed lines]**: Antalet slutförda rader.
 * **[!UICONTROL Completion time]**: Datum och tid då jobbet slutfördes (eller misslyckades).

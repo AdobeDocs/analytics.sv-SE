@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # År
 
-&#39;År&#39; [dimension](overview.md) rapporterar det år då ett visst mått inträffade. Den första dimensionsuppgiften är det första året i datumintervallet och den sista dimensionsuppgiften är det senaste året i datumintervallet.
+År [dimension](overview.md) rapporterar året som ett givet mätresultat inträffade. Den första dimensionsuppgiften är det första året i datumintervallet och den sista dimensionsuppgiften är det senaste året i datumintervallet.
 
 ## Fyll den här dimensionen med data
 

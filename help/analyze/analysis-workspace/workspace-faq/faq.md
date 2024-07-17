@@ -14,7 +14,7 @@ ht-degree: 24%
 # Frågor och svar
 
 +++Vilka är förutsättningarna för att använda Analysis Workspace?
-[Skicka data till Adobe Analytics med Adobe Analytics-tillägget](/help/implement/launch/validate-publish-prod.md): Analysis Workspace kräver en fungerande implementering. Se till att din organisation skickar data till Adobe innan du använder verktyget. Andra implementeringar, som till exempel äldre manuella implementeringar, kan också fungera.
+[Skicka data till Adobe Analytics med Adobe Analytics-tillägget](/help/implement/launch/validate-publish-prod.md): En fungerande implementering krävs för att använda Analysis Workspace. Se till att din organisation skickar data till Adobe innan du använder verktyget. Andra implementeringar, som till exempel äldre manuella implementeringar, kan också fungera.
 +++
 
 +++Vilka är kraven för administration och åtkomst för Analysis Workspace?
@@ -66,7 +66,7 @@ Om du har skapat en rapport om arbetsytan men det inte finns några data kan du 
 * Kontrollera att rapportsviten är ifylld med data.
 * Om du tillämpade ett segment i rapporten kanske segmentvillkoren inte matchar några data. Prova med att ta bort segmentet eller justera segmentdefinitionen.
 * Kontrollera datumintervallet i det övre högra hörnet och se till att det har ett förväntat värde.
-* Navigera till webbplatsen och använd [Felsökning](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html) för att validera att data samlas in.
+* Navigera till webbplatsen och använd [Felsökning](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html) för att verifiera att data samlas in.
 +++
 
 +++Vilka åtgärder kan jag utföra i Analysis Workspace som skrivskyddad användare?

@@ -13,63 +13,63 @@ ht-degree: 0%
 
 # händelser
 
-Dimensioner och mätvärden är viktiga komponenter i rapporter. The `events` variabeln ansvarar för datainsamling av många mätvärden på din webbplats. Händelser som vanligen ökar [mått](/help/components/metrics/overview.md) i rapporter.
+Dimensioner och mätvärden är viktiga komponenter i rapporter. Variabeln `events` ansvarar för datainsamling av många mätvärden på din webbplats. Händelser ökar vanligtvis [måtten](/help/components/metrics/overview.md) i rapporter.
 
-Innan du implementerar händelser måste du skapa och konfigurera dem under [Slutförda händelser](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/c-success-events/success-event.md) i Rapportsvitens inställningar. Om du tänker använda anpassade händelser i länkspårningstips måste du se till att [`linkTrackVars`](../../config-vars/linktrackvars.md) och [`linkTrackEvents`](../../config-vars/linktrackevents.md) är korrekt inställda.
+Innan du implementerar händelser måste du skapa och konfigurera dem under [Slutförda händelser](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/c-success-events/success-event.md) i inställningarna för rapportsviten. Om du tänker använda anpassade händelser i länkspårningsträffar kontrollerar du att [`linkTrackVars`](../../config-vars/linktrackvars.md) och [`linkTrackEvents`](../../config-vars/linktrackevents.md) har angetts korrekt.
 
 ## Händelser som använder Web SDK
 
-Om du använder [XDM-objekt](/help/implement/aep-edge/xdm-var-mapping.md)används följande XDM-fält för anpassade händelser:
+Om du använder [XDM-objektet](/help/implement/aep-edge/xdm-var-mapping.md) använder anpassade händelser följande XDM-fält:
 
 * Anpassade händelser 1-100 mappas till `xdm._experience.analytics.event1to100.event1` - `xdm._experience.analytics.event1to100.event100`.
 * Anpassade händelser 101-200 mappas till `xdm._experience.analytics.event101to200.event100` - `xdm._experience.analytics.event101to200.event200`.
 * Det här mönstret upprepas var 100:e händelse till `xdm._experience.analytics.event901to1000.event901` - `xdm._experience.analytics.event901to1000.event1000`. `eventx.value` används för att ange mängden som ska ökas. `eventx.id` används för [serialisering](event-serialization.md).
-* Order mappas till `xdm.commerce.purchases.value`.
+* Beställningar har mappats till `xdm.commerce.purchases.value`.
 * Enheter mappas till summan av alla `productListItems[].quantity` fält.
-* Intäkterna är mappade till summan av alla `productListItems[].priceTotal` fält.
-* Produktvyer mappas till `xdm.commerce.productViews.value`.
-* Korten mappas till `xdm.commerce.productListOpens.value`.
-* Kundtillägg mappas till `xdm.commerce.productListAdds.value`.
+* Intäkter mappas till summan av alla `productListItems[].priceTotal` fält.
+* Produktvyer har mappats till `xdm.commerce.productViews.value`.
+* Kortplatser har mappats till `xdm.commerce.productListOpens.value`.
+* Kundvagnstillägg mappas till `xdm.commerce.productListAdds.value`.
 * Cart Removals är mappade till `xdm.commerce.productListRemovals.value`.
 * Vyer för kundvagn mappas till `xdm.commerce.productListViews.value`.
-* Utcheckningar är mappade till `xdm.commerce.checkouts.value`.
+* Utcheckningar har mappats till `xdm.commerce.checkouts.value`.
 
 >[!NOTE]
 >
->Om en händelse anges under `productListItems` (till exempel `productListItems._experience.analytics.event1.value`) och den händelsen ännu inte finns i det här fältet läggs händelsen automatiskt till i det här fältet.
+>Om en händelse anges under `productListItems` (till exempel `productListItems._experience.analytics.event1.value`) och den händelsen ännu inte finns i det här fältet, läggs den händelsen automatiskt till i det här fältet.
 
-Om du använder [**dataobjekt**](/help/implement/aep-edge/data-var-mapping.md) används alla händelser `data.__adobe.analytics.events`, efter AppMeasurementen strängsyntax. Om du anger det här fältet skrivs alla händelser som anges i XDM-objektet över och skickas inte till Adobe Analytics.
+Om du använder [**dataobjektet**](/help/implement/aep-edge/data-var-mapping.md) använder alla händelser `data.__adobe.analytics.events` och följande AppMeasurement strängsyntax. Om du anger det här fältet skrivs alla händelser som anges i XDM-objektet över och skickas inte till Adobe Analytics.
 
 ## Händelser som använder Adobe Analytics-tillägget
 
 Du kan ange händelser antingen när du konfigurerar Analytics-tillägget (globala variabler) eller under regler.
 
-1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med dina inloggningsuppgifter för AdobeID.
 2. Klicka på den önskade taggegenskapen.
-3. Gå till [!UICONTROL Rules] och sedan klicka på önskad regel (eller skapa en regel).
-4. Under [!UICONTROL Actions]klickar du på en befintlig [!UICONTROL Adobe Analytics - Set Variables] eller klicka på +-ikonen.
-5. Ange [!UICONTROL Extension] nedrullningsbar lista till Adobe Analytics och [!UICONTROL Action Type] till [!UICONTROL Set Variables].
-6. Leta reda på [!UICONTROL Events] -avsnitt.
+3. Gå till fliken [!UICONTROL Rules] och klicka sedan på önskad regel (eller skapa en regel).
+4. Klicka på en befintlig [!UICONTROL Adobe Analytics - Set Variables]-åtgärd under [!UICONTROL Actions] eller klicka på +-ikonen.
+5. Ange Adobe Analytics i listrutan [!UICONTROL Extension] och [!UICONTROL Action Type] till [!UICONTROL Set Variables].
+6. Leta reda på avsnittet [!UICONTROL Events].
 
 Flera funktioner är tillgängliga:
 
 * En nedrullningsbar lista där du kan välja vilken händelse som ska inkluderas
-* Ett valfritt textfält för serialisering. Se [händelseserialisering](event-serialization.md) för mer information.
-* Ett valfritt textfält för ett händelsevärde. Du kan inkludera valuta för valutakurshändelser eller ett heltal för händelser som inte är valutaväxlar om du vill öka den flera gånger. Välj till exempel `event1` i den nedrullningsbara listan med `10` i detta fält stegvis `event1` efter 10 i rapporteringen.
+* Ett valfritt textfält för serialisering. Mer information finns i [händelseserialisering](event-serialization.md).
+* Ett valfritt textfält för ett händelsevärde. Du kan inkludera valuta för valutakurshändelser eller ett heltal för händelser som inte är valutaväxlar om du vill öka den flera gånger. Om du t.ex. väljer `event1` under listrutan och inkluderar `10` i det här fältet ökas `event1` med 10 i rapporteringen.
 * En knapp för att lägga till en annan händelse. Du kan lägga till så många händelser som du vill för en enskild regel av olika skäl.
 
 ## s.events i AppMeasurementet och den anpassade kodredigeraren för Analytics-tillägget
 
-The `s.events` variabeln är en sträng som innehåller en kommaavgränsad lista med händelser som ska ingå i träffen. Variabeln tillåter upp till 64 000 byte, vilket ger så många händelser som en träff behöver. Giltiga värden är:
+Variabeln `s.events` är en sträng som innehåller en kommaavgränsad lista med händelser som ska ingå i träffen. Variabeln tillåter upp till 64 000 byte, vilket ger så många händelser som en träff behöver. Giltiga värden är:
 
-* `event1` - `event1000`: Anpassade händelser, ange hur du vill. Registrera hur du använder varje händelse i organisationens [konstruktionsdokument](../../../prepare/solution-design.md). Antalet tillgängliga händelser beror på organisationens Analytics-kontrakt. De flesta organisationer som har kontrakt som inte är äldre har 1 000 anpassade händelser tillgängliga. Kontakta kontoteamet på Adobe om du inte är säker på hur många anpassade händelser som är tillgängliga för dig.
-* `purchase`: Ökar [&#39;Beställningar&#39;](/help/components/metrics/orders.md) metrisk med 1 och tar värden som anges i `products` variabel som ska beräknas [&#39;Enheter&#39;](/help/components/metrics/units.md) och [Intäkter](/help/components/metrics/revenue.md). Se [köphändelse](event-purchase.md) för mer information.
-* `prodView`: Ökar [&#39;Produktvyer&#39;](/help/components/metrics/product-views.md) mätvärden.
-* `scOpen`: Ökar [&quot;Carts&quot;](/help/components/metrics/carts.md) mätvärden.
-* `scAdd`: Ökar [&quot;Cart Additions&quot;](/help/components/metrics/cart-additions.md) mätvärden.
-* `scRemove`: Ökar [&quot;Cart Removals&quot;](/help/components/metrics/cart-removals.md) mätvärden.
-* `scView`: Ökar [&quot;Vyer för kundvagn&quot;](/help/components/metrics/cart-views.md) mätvärden.
-* `scCheckout`: Ökar [&#39;Utcheckningar&#39;](/help/components/metrics/checkouts.md) mätvärden.
+* `event1` - `event1000`: Ange anpassade händelser hur du vill. Registrera hur du använder varje händelse i din organisations [lösningsdesigndokument](../../../prepare/solution-design.md). Antalet tillgängliga händelser beror på organisationens Analytics-kontrakt. De flesta organisationer som har kontrakt som inte är äldre har 1 000 anpassade händelser tillgängliga. Kontakta kontoteamet på Adobe om du inte är säker på hur många anpassade händelser som är tillgängliga för dig.
+* `purchase`: Ökar måttet [&#39;Orders&#39;](/help/components/metrics/orders.md) med 1 och tar värden som anges i variabeln `products` för att beräkna [&#39;Units&#39;](/help/components/metrics/units.md) och [&#39;Revenue&#39;](/help/components/metrics/revenue.md). Mer information finns i [köphändelse](event-purchase.md).
+* `prodView`: Ökar måttet för [&#39;Produktvyer&#39;](/help/components/metrics/product-views.md).
+* `scOpen`: Ökar måttet [&#39;Carts&#39;](/help/components/metrics/carts.md).
+* `scAdd`: Ökar måttet [&#39;Cart Additions&#39; ](/help/components/metrics/cart-additions.md).
+* `scRemove`: Ökar måttet [&#39;Cart Removals&#39;](/help/components/metrics/cart-removals.md).
+* `scView`: Ökar måttet ](/help/components/metrics/cart-views.md) för [ kundvagnsvyer.
+* `scCheckout`: Ökar måttet [&#39;Checkouts&#39;](/help/components/metrics/checkouts.md).
 
 >[!NOTE]
 >
@@ -101,9 +101,9 @@ s.events = "event1=2,event2";
 
 ### Använd valutakändelser
 
-Du kan ändra en anpassad händelse så att den använder valuta i stället för heltal. Valutahändelser konverteras automatiskt till rapportsvitens valuta om rapportsvitens valuta och `currencyCode` variabeln matchar inte. De är användbara för att beräkna fraktkostnader, rabatter eller återbetalningar. Du kan ställa in valutatjänster i dialogrutan `products` om du vill att händelsen bara ska tilldelas den produkten.
+Du kan ändra en anpassad händelse så att den använder valuta i stället för heltal. Valutahändelser konverteras automatiskt till rapportsvitens valuta om rapportsvitens valuta och variabeln `currencyCode` inte matchar. De är användbara för att beräkna fraktkostnader, rabatter eller återbetalningar. Du kan ange valutakändelser i variabeln `products` om du bara vill tilldela händelsen till den produkten.
 
-Innan du implementerar valutakurser måste du ställa in den önskade händelsen till &quot;Valuta&quot; under [Slutförda händelser](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/c-success-events/success-event.md) i Rapportsvitens inställningar.
+Innan du implementerar valutakändelser måste du se till att du ställer in den önskade händelsen på Currency under [Success events](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/c-success-events/success-event.md) i inställningarna för rapportsviten.
 
 ```js
 // Send $9.99 USD in event1 using the events variable. Make sure the event type for event1 is Currency in Report suite settings
@@ -118,13 +118,13 @@ s.products = "Example category;Example product;1;0;event1=9.99";
 
 >[!NOTE]
 >
->Om du anger ett valutavärde i båda `events` variabeln och `products` variabel, valutavärdet i `events` används. Undvik att ange valutavärden i båda `events` och `products` variabler.
+>Om du anger ett valutavärde i både variabeln `events` och variabeln `products` används valutavärdet i `events`. Undvik att ange valutavärden i både variabeln `events` och `products`.
 
 ### Använd numeriska händelser
 
-Du kan ändra en anpassad händelse och acceptera decimalvärden i stället för heltal. Numeriska händelser fungerar på ungefär samma sätt som valutakändelser, förutom att de inte använder valutakonvertering. Du kan ange numeriska händelser i dialogrutan `products` om du vill att händelsen bara ska tilldelas den produkten.
+Du kan ändra en anpassad händelse och acceptera decimalvärden i stället för heltal. Numeriska händelser fungerar på ungefär samma sätt som valutakändelser, förutom att de inte använder valutakonvertering. Du kan ange numeriska händelser i variabeln `products` om du vill att händelsen bara ska vara den produkten.
 
-Innan du implementerar numeriska händelser måste du ställa in den önskade händelsen på Numeric under [Slutförda händelser](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/c-success-events/success-event.md) i Rapportsvitens inställningar.
+Innan du implementerar numeriska händelser bör du kontrollera att du har angett den önskade händelsen till Numeric under [Success events](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/c-success-events/success-event.md) i inställningarna för rapportsviten.
 
 ```js
 // Send 4.5 in event1 using the events variable. Make sure the event type for event1 is Numeric in Report suite settings
@@ -137,4 +137,4 @@ s.products = "Example category;Example product;1;0;event1=4.5";
 
 >[!NOTE]
 >
->Om du anger ett numeriskt värde i båda `events` variabeln och `products` variabel, det numeriska värdet i `events` används. Undvik att ange numeriska värden i båda `events` och `products` variabler.
+>Om du anger ett numeriskt värde i både variabeln `events` och variabeln `products` används det numeriska värdet i `events`. Undvik att ange numeriska värden i både variabeln `events` och `products`.

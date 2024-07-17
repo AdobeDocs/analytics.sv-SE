@@ -15,7 +15,7 @@ ht-degree: 0%
 
 {{plug-in}}
 
-The `pt` plugin-programmet kör en funktion eller metod i en lista med Analytics-variabler. Du kan till exempel selektivt köra [`clearVars`](../functions/clearvars.md) på flera variabler utan att funktionen anropas manuellt varje gång. Flera andra plugin-program är beroende av att den här koden körs korrekt. Detta plugin-program är inte nödvändigt om du inte behöver köra en specifik funktion på mer än en Analytics-variabel åt gången, eller om du inte använder några beroende plugin-program.
+Plugin-programmet `pt` kör en funktion eller metod i en lista med Analytics-variabler. Du kan till exempel selektivt köra funktionen [`clearVars`](../functions/clearvars.md) på flera variabler utan att manuellt anropa funktionen varje gång. Flera andra plugin-program är beroende av att den här koden körs korrekt. Detta plugin-program är inte nödvändigt om du inte behöver köra en specifik funktion på mer än en Analytics-variabel åt gången, eller om du inte använder några beroende plugin-program.
 
 ## Installera plugin-programmet med Web SDK- eller Web SDK-tillägget
 
@@ -25,10 +25,10 @@ Det här plugin-programmet stöds ännu inte för användning i Web SDK.
 
 Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-programmen med Adobe Analytics.
 
-1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med dina inloggningsuppgifter för AdobeID.
 1. Klicka på den önskade taggegenskapen.
-1. Gå till [!UICONTROL Extensions] klickar du på [!UICONTROL Catalog] knapp
-1. Installera och publicera [!UICONTROL Common Analytics Plugins] extension
+1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Catalog]
+1. Installera och publicera tillägget [!UICONTROL Common Analytics Plugins]
 1. Om du inte redan har det skapar du en regel med namnet&quot;Initiera plugin-program&quot; med följande konfiguration:
    * Villkor: Inget
    * Händelse: Kärna - Bibliotek inläst (sidan ovanpå)
@@ -41,10 +41,10 @@ Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-program
 
 Om du inte vill använda tillägget för Common Analytics-plugin-program kan du använda den anpassade kodredigeraren.
 
-1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med dina inloggningsuppgifter för AdobeID.
 1. Klicka på önskad egenskap.
-1. Gå till [!UICONTROL Extensions] klickar du på **[!UICONTROL Configure]** under Adobe Analytics-tillägget.
-1. Expandera [!UICONTROL Configure tracking using custom code] dragspelspanel, som visar [!UICONTROL Open Editor] -knappen.
+1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen **[!UICONTROL Configure]** under Adobe Analytics-tillägget.
+1. Expandera dragspelsfliken [!UICONTROL Configure tracking using custom code] som visar knappen [!UICONTROL Open Editor].
 1. Öppna den anpassade kodredigeraren och klistra in den plugin-kod som finns nedan i redigeringsfönstret.
 1. Spara och publicera ändringarna i Analytics-tillägget.
 
@@ -61,14 +61,14 @@ function pt(l,de,cf,fa){var b=l,d=de,f=cf,g=fa;if("-v"===b)return{plugin:"pt",ve
 
 ## Använda plugin-programmet
 
-The `pt` funktionen använder följande argument:
+Funktionen `pt` använder följande argument:
 
-* **`l`** (required, string): En lista med variabler som funktionen i `cf` -argument kan köras mot.
-* **`de`** (valfri, sträng): Avgränsaren som avgränsar variabellistan i `l` argument. Standardvärdet är ett komma (`,`).
-* **`cf`** (required, string): Namnet på callback-funktionen som finns i AppMeasurementet som ska anropas mot var och en av variablerna i `l` argument.
-* **`fa`** (valfri, sträng): Om funktionen i `cf` argument kräver ytterligare argument när det körs, ta med dem här. Standardvärdet är `undefined`.
+* **`l`** (obligatoriskt, sträng): En lista med variabler som funktionen i argumentet `cf` kan köras mot.
+* **`de`** (valfri, sträng): Avgränsaren som avgränsar listan med variabler i argumentet `l`. Standardvärdet är ett komma (`,`).
+* **`cf`** (required, string): Namnet på callback-funktionen som finns i AppMeasurementet som ska anropas mot alla variabler som finns i `l` -argumentet.
+* **`fa`** (valfri, sträng): Om funktionen i argumentet `cf` anropar ytterligare argument när den körs, ska du inkludera dem här. Standardvärdet är `undefined`.
 
-Anrop till den här funktionen returnerar ett värde om callback-funktionen (i `cf` argument) returnerar ett värde.
+Om funktionen anropas returneras ett värde om återanropsfunktionen (i argumentet `cf`) returnerar ett värde.
 
 ## Exempelanrop
 

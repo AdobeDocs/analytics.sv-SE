@@ -12,11 +12,11 @@ ht-degree: 0%
 
 # Produktvyer
 
-Produktvyer [mått](overview.md) visar hur många gånger en produkt har visats. Det här måttet är användbart när du vill se de mest visade produkterna eller se hur den totala produktvyn ser ut över tiden.
+Produktvyerna [Mått](overview.md) visar antalet gånger som en produkt visades. Det här måttet är användbart när du vill se de mest visade produkterna eller se hur den totala produktvyn ser ut över tiden.
 
 ## Hur det här måttet beräknas
 
 Det här måttet räknar antalet träffar som matchar **antingen** av följande:
 
-* Värdet `prodView` finns i [`events`](/help/implement/vars/page-vars/events/events-overview.md) variabel, eller
-* The [`products`](/help/implement/vars/page-vars/products.md) -variabeln är inställd och `events` variabeln är tom.
+* Värdet `prodView` finns i variabeln [`events`](/help/implement/vars/page-vars/events/events-overview.md) eller
+* Variabeln [`products`](/help/implement/vars/page-vars/products.md) har angetts och variabeln `events` är tom.

@@ -23,7 +23,7 @@ Här beskrivs hur du kan hjälpa dig att hitta dina konto-ID:n för Google och B
 >- MCC-konto (My Client Center) och
 >- Standardkonto.
 >
->För denna integrering med Adobe Analytics **du måste använda en standardkontoinloggning**, inte en MCC-kontoinloggning. Orsaken är att ett MCC-konto fungerar som ett&quot;paraply&quot;-konto som kan komma åt flera AdWords-konton med en enda inloggning, medan standardkontoinloggningen bara kan komma åt ett AdWords-konto per inloggning. Google stöder länkning av ett e-postmeddelande för hantering av fem konton, men Advertising Analytics stöder inte den här funktionen ännu. Ett e-postmeddelande kan bara länkas med ett Adwords-konto.
+>För den här integreringen med Adobe Analytics måste **du använda en standardkontoinloggning**, inte en MCC-kontoinloggning. Orsaken är att ett MCC-konto fungerar som ett&quot;paraply&quot;-konto som kan komma åt flera AdWords-konton med en enda inloggning, medan standardkontoinloggningen bara kan komma åt ett AdWords-konto per inloggning. Google stöder länkning av ett e-postmeddelande för hantering av fem konton, men Advertising Analytics stöder inte den här funktionen ännu. Ett e-postmeddelande kan bara länkas med ett Adwords-konto.
 
 Klicka på kontoikonen längst upp till höger för att visa AdWords-kontonumret (Kund-ID).
 

@@ -5,18 +5,18 @@ feature: Dimensions
 exl-id: 58ce54c3-cc45-4e84-a14d-5fec0b70f50f
 source-git-commit: d095628e94a45221815b1d08e35132de09f5ed8f
 workflow-type: tm+mt
-source-wordcount: '145'
+source-wordcount: '146'
 ht-degree: 0%
 
 ---
 
 # Alla söksidor rankade
 
-Alla söksidor rankas [dimension](overview.md) ger dig insikt i vilken sida av sökresultat en besökare klickade igenom till din webbplats. Om din webbplats till exempel visas på den andra sidan av sökresultatet i en sökmotor är dimensionsobjektet för den här variabeln&quot;Söksida 2&quot;.
+Med dimensionen [Alla söksidor rankade](overview.md) får du information om vilken sida av sökresultat en besökare klickade igenom på din webbplats. Om din webbplats till exempel visas på den andra sidan av sökresultatet i en sökmotor är dimensionsobjektet för den här variabeln&quot;Söksida 2&quot;.
 
 ## Fyll den här dimensionen med data
 
-För att få den här dimensionen att fungera måste rapportsviten ha [Interna URL-filter](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/internal-url-filter-admin.md) korrekt konfigurerad. AppMeasurementet fyller automatiskt i den här dimensionen utan att några implementeringskodändringar görs.
+För att den här dimensionen ska fungera måste rapportsviten ha [interna URL-filter](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/internal-url-filter-admin.md) korrekt konfigurerade. AppMeasurementet fyller automatiskt i den här dimensionen utan att några implementeringskodändringar görs.
 
 ## Dimensioner
 

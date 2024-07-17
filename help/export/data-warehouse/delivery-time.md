@@ -29,7 +29,7 @@ Om det tar lång tid att begära Data Warehouse bör du ändra dina önskemål. 
 
 Om du vill snabba upp leveransen av en begäran om Data Warehouse kan du ändra den på något av följande sätt:
 
-* **Använd ett segment som innehåller ett mindre dataprov**: Ju mindre data en begäran fungerar med, desto snabbare returneras en rapport.
+* **Använd ett segment som innehåller ett mindre dataurval**: Ju mindre data en begäran fungerar med, desto snabbare returneras en rapport.
 * **Kör begäranden i 14-dagarsintervall eller mindre**: Mindre begäranden behandlas snabbare än stora begäranden.
 * **Använd färre uppdelningar:** Många uppdelningar i en begäran ökar tiden det tar att bearbeta den exponentiellt.
 
@@ -37,6 +37,6 @@ Om du vill snabba upp leveransen av en begäran om Data Warehouse kan du ändra 
 
 Om du behöver dessa typer av rapporter i tid bör du överväga följande alternativ:
 
-* **Analysis Workspace**: Även om ett obegränsat antal dimensionsobjekt inte är tillgängligt innehåller det nästan alla andra användningsfall som Datan Warehouse tillhandahåller.
-* **Datafeed**: Tar dagligen med alla rådata i en rapportsserie och skickar den till ett molnmål. Du kan sedan importera data till din egen databas och köra frågor för att få de data du behöver.
-* **Anpassade tekniktjänster**: Adobe Engineering Services kan tillhandahålla en anpassad lösning för er organisation till en extra kostnad. Kontakta kontoteamet på Adobe om du vill ha mer information.
+* **Analysis Workspace**: Även om ett obegränsat antal dimensionsobjekt inte är tillgängliga innehåller det nästan alla andra användningsfall som Datan Warehouse tillhandahåller.
+* **Datafeed**: Tar dagligen emot alla rådata i en rapportsvit och skickar den till ett molnmål. Du kan sedan importera data till din egen databas och köra frågor för att få de data du behöver.
+* **Anpassade ingenjörstjänster**: Adobe Engineering Services kan tillhandahålla en anpassad lösning för din organisation till en extra kostnad. Kontakta kontoteamet på Adobe om du vill ha mer information.

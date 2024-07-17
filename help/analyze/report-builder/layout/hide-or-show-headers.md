@@ -8,14 +8,14 @@ exl-id: d643b55d-dfe8-4f34-bb49-044c1166536c
 source-git-commit: fb39f906d6c08713e4dc8211c917b2942502868e
 workflow-type: tm+mt
 source-wordcount: '43'
-ht-degree: 9%
+ht-degree: 0%
 
 ---
 
-# Dölj eller visa sidhuvuden
+# Dölj eller visa rubriker
 
 I den här proceduren beskrivs hur du döljer eller visar rubriker.
 
-Klicka **[!UICONTROL Hide/Show]** i [!UICONTROL Pivot Layout] eller [!UICONTROL Custom Layout] utdata på [!UICONTROL Request Wizard: Step 2] formulär.
+Klicka på **[!UICONTROL Hide/Show]** i [!UICONTROL Pivot Layout]- eller [!UICONTROL Custom Layout]-utdata i formuläret [!UICONTROL Request Wizard: Step 2].
 
-![Skärmbild med ikonen Dölj/Visa för metriska rubriker.](assets/hide_show_header.png)
+![Skärmbild med ikonen Dölj/Visa för måttrubriker.](assets/hide_show_header.png)

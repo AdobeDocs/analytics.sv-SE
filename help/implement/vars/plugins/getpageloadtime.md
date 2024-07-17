@@ -15,6 +15,6 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Detta plugin-program stöds inte längre. Koden använder [`PerformanceTiming`](https://developer.mozilla.org/en-US/docs/Web/API/PerformanceTiming) -gränssnittet, som används i de flesta moderna webbläsare.
+>Detta plugin-program stöds inte längre. Koden använder gränssnittet [`PerformanceTiming`](https://developer.mozilla.org/en-US/docs/Web/API/PerformanceTiming) som är inaktuellt i de flesta moderna webbläsare.
 
-The `getPageLoadTime` I plugin-programmet används JavaScript-prestandaobjektet för att du ska kunna mäta hur lång tid det tar att läsa in en sida helt. Eftersom det här plugin-programmet inte längre stöds är installationsanvisningar och plugin-kod inte längre tillgängliga.
+Plugin-programmet `getPageLoadTime` använde JavaScript prestandaobjekt för att du skulle kunna mäta hur lång tid det tar att läsa in en sida helt. Eftersom det här plugin-programmet inte längre stöds är installationsanvisningar och plugin-kod inte längre tillgängliga.

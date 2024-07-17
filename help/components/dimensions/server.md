@@ -12,14 +12,14 @@ ht-degree: 0%
 
 # Server
 
-Servern [dimension](overview.md) anger vanligtvis webbplatsens värdnamn. För rapportsviter som kombinerar flera domäner eller underdomäner är den här dimensionen värdefull för att se vilka domäner eller underdomäner som fungerar bäst.
+Serverdimensionen [dimension](overview.md) visar vanligtvis webbplatsens värdnamn. För rapportsviter som kombinerar flera domäner eller underdomäner är den här dimensionen värdefull för att se vilka domäner eller underdomäner som fungerar bäst.
 
-Den här dimensionen är relaterad till [Sida](page.md) och [Site section](site-section.md) dimensioner. Sidan är mest granulerad, servern är minst granulerad och Site-avsnittet är mellan de två.
+Den här dimensionen är relaterad till dimensionerna för [Sidan](page.md) och [webbplatsavsnittet](site-section.md). Sidan är mest granulerad, servern är minst granulerad och Site-avsnittet är mellan de två.
 
 ## Fyll den här dimensionen med data
 
-Den här dimensionen hämtar data från [`server` frågesträng](/help/implement/validate/query-parameters.md) i bildbegäranden. AppMeasurementet samlar in dessa data med [`server`](/help/implement/vars/page-vars/server.md) variabel.
+Den här dimensionen hämtar data från [`server`-frågesträngen ](/help/implement/validate/query-parameters.md) i bildbegäranden. AppMeasurementet samlar in dessa data med variabeln [`server`](/help/implement/vars/page-vars/server.md).
 
 ## Dimensioner
 
-Bland Dimensionerna finns servrar på din plats. Din organisation avgör vilka specifika dimensionsobjekt du vill använda. Vissa organisationer använder `window.location.hostname`medan andra formulerar egna värden. Oavsett vilken metod du använder måste du se till att den är konsekvent och att du spelar in den i en [konstruktionsdokument](/help/implement/prepare/solution-design.md).
+Bland Dimensionerna finns servrar på din plats. Din organisation avgör vilka specifika dimensionsobjekt du vill använda. Vissa organisationer använder `window.location.hostname`, medan andra formulerar egna värden. Oavsett vilken metod du använder måste du se till att den är konsekvent och att du spelar in den i ett [lösningsdesigndokument](/help/implement/prepare/solution-design.md).

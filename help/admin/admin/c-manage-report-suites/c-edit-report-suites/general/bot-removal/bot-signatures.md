@@ -25,7 +25,7 @@ Bots har vanligtvis ingen hänvisande URL. I segmentering kan detta filtreras so
 
 ## Konstiga användaragenter
 
-Bok använder ofta anpassade användaragenter som inte är klassificerade i webbläsardimensionen eller visas som en `unknown` version av en standardwebbläsare. Okänd Safari och okänd Opera har en extremt hög sannolikhet för att vara botar.
+Bots använder ofta anpassade användaragenter som inte är klassificerade i webbläsardimensionen eller visas som en `unknown`-version av en standardwebbläsare. Okänd Safari och okänd Opera har en extremt hög sannolikhet för att vara botar.
 
 ## Linux eller&quot;Ej specificerad&quot; operativsystem
 
@@ -33,7 +33,7 @@ Vi vill inte misskreditera det fantastiska Linux-operativsystemet med öppen kä
 
 ## Sidvyer = besök = unika besökare
 
-Detta gäller särskilt användaragentrapporten. Som du ser i skärmbilden nedan har den&quot;okända versionen&quot; av dessa webbläsare nästan samma antal besökare som unika besökare (och nästan samma antal sidvisningar). Detta kan isoleras i segmenteringen genom att man bygger upp en [!UICONTROL Include] behållare för `Single Page Visits equals Enabled` eller `Hit Depth is less than 2`.
+Detta gäller särskilt användaragentrapporten. Som du ser i skärmbilden nedan har den&quot;okända versionen&quot; av dessa webbläsare nästan samma antal besökare som unika besökare (och nästan samma antal sidvisningar). Detta kan isoleras i segmentering genom att en [!UICONTROL Include]-behållare för `Single Page Visits equals Enabled` eller `Hit Depth is less than 2` skapas.
 
 ![](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/bot-removal/assets/bots-browsers-unknown.png)
 
@@ -73,5 +73,6 @@ Ibland försöker bots att bust cache-lagra eller på annat sätt bryta webbplat
 
 ## IP-adresser som härstammar från distribuerade datorplattformar
 
-Webbhotell som Amazon Web Services eller Google Cloud kan missbrukas som båda gårdar. De här IP-adresserna löper stor risk att bli vanliga: &#x200B;
+Webbhotell som Amazon Web Services eller Google Cloud kan missbrukas som båda gårdar. De här IP-adresserna löper stor risk att bli botar:
+&#x200B;
 * [Google Cloud](https://cloud.google.com/compute/): IP-adressen börjar med `&#x200B;35.199` eller `35.194&#x200B;`

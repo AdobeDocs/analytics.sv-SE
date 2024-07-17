@@ -23,7 +23,7 @@ Om du använder taggar i Adobe Experience Platform måste du se till att spårni
 
 ## Få åtkomst till AppMeasurement som finns i en iframe
 
-Du kan komma åt AppMeasurementets variabler via iframe-objektet. De här exemplen har angetts [pageName](../vars/page-vars/pagename.md) och ringa [t(), metod](../vars/functions/t-method.md) använder du två olika sätt att referera till iframe-objektet.
+Du kan komma åt AppMeasurementets variabler via iframe-objektet. I de här exemplen anges [pageName](../vars/page-vars/pagename.md) och metoden [t()](../vars/functions/t-method.md) anropas på två olika sätt för att referera till iframe-objektet.
 
 ```js
 // Reference AppMeasurement code that resides within an iframe and send an image request
@@ -37,7 +37,7 @@ window.frames[0].contentWindow.s.t();
 
 ## Få åtkomst till AppMeasurementet inifrån en iframe
 
-Du kan komma åt AppMeasurementets variabler på en överordnad sida inifrån en iframe. Det här exemplet anger [pageName](../vars/page-vars/pagename.md) och anropar [t(), metod](../vars/functions/t-method.md) med [`parent`](https://www.w3schools.com/jsref/prop_win_parent.asp) -egenskap.
+Du kan komma åt AppMeasurementets variabler på en överordnad sida inifrån en iframe. I det här exemplet ställs [pageName](../vars/page-vars/pagename.md) in och metoden [t()](../vars/functions/t-method.md) anropas med egenskapen [`parent`](https://www.w3schools.com/jsref/prop_win_parent.asp).
 
 ```js
 // Reference AppMeasurement code on a parent page from within an iframe and send an image request
@@ -65,7 +65,7 @@ window.top.postMessage("Example page view call","https://example.com");
 
 ## Begränsningar
 
-* Precis som med annan JavaScript-kod kan iframes bara kommunicera när domäner och protokoll matchar. De här exemplen fungerar inte om iframe-innehållet finns i en annan domän än det överordnade.
-* Om AppMeasurementet finns i en iframe visas [`referrer`](../vars/page-vars/referrer.md) variabeln ställs in på den överordnade URL:en, inte den faktiska refererande URL:en. Du kan ställa in `referrer` variabel som löser problemet.
-* The [Adobe Experience Cloud debugger](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html) känner inte igen bildbegäranden som utlöses inom iframes.
+* Liksom med annan JavaScript-kod kan iframes bara kommunicera när domäner och protokoll matchar. De här exemplen fungerar inte om iframe-innehållet finns i en annan domän än det överordnade.
+* Om AppMeasurementet finns i en iframe anges variabeln [`referrer`](../vars/page-vars/referrer.md) till den överordnade URL:en, inte till den faktiska refererande URL:en. Du kan ställa in variabeln `referrer` manuellt för att lösa problemet.
+* [Adobe Experience Cloud-felsökaren](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html) känner inte igen bildbegäranden som utlösts inom iframes.
 * Activity Map visar inte heatmap-kartan över länkar som klickats i iframes. Hela iframe markeras i stället.

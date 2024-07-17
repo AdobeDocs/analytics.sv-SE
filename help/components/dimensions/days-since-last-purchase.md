@@ -12,13 +12,13 @@ ht-degree: 0%
 
 # Dagar sedan senaste köp
 
-Dagar sedan senaste köp [dimension](overview.md) mäter hur lång tid som passerat mellan besökarens aktuella träff och deras senaste köp vid den tidpunkten. Den här dimensionen hjälper dig att förstå det beteende besökare gör efter att ha köpt något på din webbplats.
+Dagar sedan senaste köp [dimension](overview.md) mäter den tid som gått mellan besökarens aktuella träff och deras senaste köp vid den tidpunkten. Den här dimensionen hjälper dig att förstå det beteende besökare gör efter att ha köpt något på din webbplats.
 
 Besökare som aldrig köpt något ingår inte i denna dimension. Dessutom kommer träffar som utlösts innan besökarens första inköp inte heller att inkluderas. Endast träffar efter besökarens första köp.
 
 ## Fyll den här dimensionen med data
 
-Adobe fyller automatiskt i dimensionen baserat på [`purchase`](/help/implement/vars/page-vars/events/event-purchase.md) i implementeringen. Om du implementerar `purchase` den här dimensionen fungerar alltid på din webbplats.
+Adobe fyller automatiskt i den här dimensionen baserat på [`purchase`](/help/implement/vars/page-vars/events/event-purchase.md)-händelsen i din implementering. Om du implementerar `purchase`-händelsen på din webbplats fungerar alltid den här dimensionen.
 
 ## Dimensioner
 

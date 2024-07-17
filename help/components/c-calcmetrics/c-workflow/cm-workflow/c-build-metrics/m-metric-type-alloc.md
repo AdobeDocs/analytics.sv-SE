@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Mättyp och attribuering
 
-När [bygga ett beräknat mätvärde](/help/components/c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-build-metrics.md)kan du ange måtttyp och attribueringsmodell.
+När du [skapar ett beräknat mått](/help/components/c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-build-metrics.md) kan du ange måtttypen och attribueringsmodellen.
 
 ## Mätningstyp
 
@@ -26,14 +26,14 @@ Så här anger du måtttypen när du skapar ett beräknat mått:
 
    | Mätningstyp | Definition |
    |---|---|
-   | Standard | Dessa mått är samma som de som används i standard [!DNL Analytics] rapportering. Om en formel består av ett enda standardmått visas data som är identiska med den icke-beräknade metriska motsvarigheten. Standardvärden är användbara när du vill skapa beräknade värden som är specifika för varje enskilt radobjekt. Till exempel: [Beställningar] / [Besök] tar emot order för den specifika radartikeln och dividerar den med antalet besök för den specifika radartikeln. |
-   | Summa | Använd totalsumma för rapporteringsperioden i varje radartikel. Om en formel består av ett enda totalmått visas samma totaltal på varje radartikel. Summavärden är användbara när du vill skapa beräknade värden som jämför med webbplatsens totala data. Till exempel: [Beställningar] / [Totalt antal besök] visar hur stor andel av beställningarna som gäller för ALLA besök på er webbplats, inte bara besöken till den specifika radobjektet. |
+   | Standard | Dessa mått är samma mått som används i [!DNL Analytics]-standardrapporter. Om en formel består av ett enda standardmått visas data som är identiska med den icke-beräknade metriska motsvarigheten. Standardvärden är användbara när du vill skapa beräknade värden som är specifika för varje enskilt radobjekt. Till exempel tar [Beställningar] / [Besök] order för det specifika radobjektet och dividerar det med antalet besök för det specifika radobjektet. |
+   | Summa | Använd totalsumma för rapporteringsperioden i varje radartikel. Om en formel består av ett enda totalmått visas samma totaltal på varje radartikel. Summavärden är användbara när du vill skapa beräknade värden som jämför med webbplatsens totala data. Till exempel visar [Beställningar] / [Totalt antal besök] andelen order mot ALLA besök på webbplatsen, inte bara besöken till det specifika radobjektet. |
 
 ## Så här fungerar linjär allokering
 
-[Attribut](/help/analyze/analysis-workspace/attribution/overview.md) är hur allokeringsmodeller i beräknade värden utvärderas.
+[Attribution](/help/analyze/analysis-workspace/attribution/overview.md) är hur allokeringsmodeller i beräknade värden utvärderas.
 
-En fullständig lista över icke-standardattribueringsmodeller och uppslagsfönster som stöds finns i [Attributmodeller och uppslagsfönster](/help/analyze/analysis-workspace/attribution/models.md).
+En fullständig lista över icke-standardattribueringsmodeller och uppslagsfönster som stöds finns i [Attribution models and lookback windows](/help/analyze/analysis-workspace/attribution/models.md).
 
 I följande exempel visas hur beräknade mätvärden med linjära tilldelningar fungerar vid rapportering:
 

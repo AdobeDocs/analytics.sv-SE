@@ -16,9 +16,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> Allmän information om marknadsföringskanaler finns på [Kom igång med marknadsföringskanaler](/help/components/c-marketing-channels/c-getting-started-mchannel.md).
+> Allmän information om marknadsföringskanaler finns i [Kom igång med marknadsföringskanaler](/help/components/c-marketing-channels/c-getting-started-mchannel.md).
 >
-> För att maximera effekten av marknadsföringskanaler för Attribution och Customer Journey Analytics har vi publicerat några [reviderad bästa praxis](/help/components/c-marketing-channels/mchannel-best-practices.md).
+> För att maximera effekten av marknadsföringskanaler för attribuering och Customer Journey Analytics har vi publicerat [reviderade best practices](/help/components/c-marketing-channels/mchannel-best-practices.md).
 
 **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]** > **[!UICONTROL Edit Settings]** > **[!UICONTROL Marketing Channels]** > **[!UICONTROL Marketing Channel Expiration]**.
 
@@ -49,9 +49,9 @@ Förfallotidsinställningar består av följande:
 Ange besökarens anställningsperiod.
 
 1. Klicka på **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]**.
-2. I [!UICONTROL Report Suite Manager], klicka **[!UICONTROL Edit Settings]** > **[!UICONTROL Marketing Channels]** > **[!UICONTROL Marketing Channel Expiration]**.
+2. I [!UICONTROL Report Suite Manager] klickar du på **[!UICONTROL Edit Settings]** > **[!UICONTROL Marketing Channels]** > **[!UICONTROL Marketing Channel Expiration]**.
 
    ![](assets/mchannel_expiration.png)
 
 3. Konfigurera fälten för besökarens interaktionsperiod.
-4. Klicka **[!UICONTROL Save.]**
+4. Klicka på **[!UICONTROL Save.]**

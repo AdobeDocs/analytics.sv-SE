@@ -13,13 +13,13 @@ ht-degree: 0%
 
 # decodeLinkParameters
 
-The `decodeLinkParameters` variabeln är en boolesk variabel som avgör om länkspårningsvariabler kodas en gång (om de anges till `true`) eller två gånger (om inställt på `false`). Det påverkar bara `linkName` (del av [`tl()`](../functions/tl-method.md) metod) och [`linkURL`](linkurl.md). AppMeasurementet v2.24.0 eller senare krävs för att kunna användas. Standardvärdet för variabeln är `false`.
+Variabeln `decodeLinkParameters` är en boolesk variabel som avgör om länkspårningsvariabler kodas en gång (om den är `true`) eller två gånger (om den är `false`). Den påverkar bara `linkName` (del av metoden [`tl()`](../functions/tl-method.md)) och [`linkURL`](linkurl.md). AppMeasurementet v2.24.0 eller senare krävs för att kunna användas. Standardvärdet för variabeln är `false`.
 
-I tidigare versioner av AppMeasurementet än v2.24.0 var länkspårningsvariabler alltid URL-kodade två gånger. Även om det inte är något problem för implementeringar som vanligtvis kräver tecken med en byte, så har dubbelkodningen skapat felaktigt kodade värden för flerbytetecken i rapporter. Anger variabeln till `true` kodar värden för länkspårning en gång, vilket vanligtvis är det önskade beteendet.
+I tidigare versioner av AppMeasurementet än v2.24.0 var länkspårningsvariabler alltid URL-kodade två gånger. Även om det inte är något problem för implementeringar som vanligtvis kräver tecken med en byte, så har dubbelkodningen skapat felaktigt kodade värden för flerbytetecken i rapporter. Om variabeln anges till `true` kodas länkspårningsvärden en gång, vilket vanligtvis är det önskade beteendet.
 
-* Om implementeringen använder flerbytetecken och länkspårningsvariabler är URL-avkodade för att förskjuta AppMeasurementets dubbelkodning anger du den här variabeln till `false`. Detta värde bevarar AppMeasurementets befintliga funktioner.
-* Om flerbytetecken används i implementeringen och du inte anger länkspårningsvärden för URL-avkodning rekommenderar Adobe att variabeln anges till `true`.
-* Om implementeringen inte använder flerbytetecken behövs inte den här variabeln. Adobe rekommenderar dock att variabeln ställs in på `true` om flerbytetecken kan skickas.
+* Om implementeringen använder flerbytetecken och länkspårningsvariablerna är URL-avkodade för att förskjuta AppMeasurementets dubbelkodning anger du den här variabeln till `false`. Detta värde bevarar AppMeasurementets befintliga funktioner.
+* Om flerbytetecken används i implementeringen och du inte anger länkspårningsvärden för URL-avkodning rekommenderar Adobe att variabeln ställs in på `true`.
+* Om implementeringen inte använder flerbytetecken behövs inte den här variabeln. Adobe rekommenderar dock att variabeln ställs in på `true` om flerbytetecken skickas.
 
 ## Dubbelkoda länkparametrar med Web SDK
 
@@ -31,7 +31,7 @@ Det finns inget dedikerat fält i Adobe Analytics-tillägget som kan använda de
 
 ## s.decodeLinkParameters i AppMeasurementet och den anpassade kodredigeraren för Analytics-tillägget
 
-The `s.decodeLinkParameters` variabeln är en boolesk variabel som avgör om länkspårningsvärden kodas två gånger. Om variabeln inte är definierad är standardvärdet `false` för att bevara funktionaliteten i befintliga implementeringar. Adobe rekommenderar att du anger det här värdet till `true` för alla nya implementeringar, särskilt om du ser URL-kodade värden i länkspårningsrapporter.
+Variabeln `s.decodeLinkParameters` är en boolesk variabel som avgör om länkspårningsvärden kodas två gånger. Om variabeln inte definieras är standardvärdet `false` för att bevara funktionaliteten för befintliga implementeringar. Adobe rekommenderar att det här värdet anges till `true` för alla nya implementeringar, särskilt om URL-kodade värden visas i länkspårningsrapporter.
 
 ```js
 s.decodeLinkParameters = true;

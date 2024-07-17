@@ -18,13 +18,13 @@ Mer information om hur du börjar skapa en begäran och länkar till andra vikti
 
 Så här konfigurerar du allmänna inställningar för en Data Warehouse:
 
-1. Börja skapa en begäran om Data Warehouse i Adobe Analytics genom att markera **[!UICONTROL Tools]** > **[!UICONTROL Data Warehouse]** > [!UICONTROL **Lägg till**].
+1. Börja skapa en begäran om Data Warehouse i Adobe Analytics genom att välja **[!UICONTROL Tools]** > **[!UICONTROL Data Warehouse]** > [!UICONTROL **Lägg till**].
 
    Mer information finns i [Skapa en begäran om Data Warehouse](/help/export/data-warehouse/create-request/t-dw-create-request.md).
 
-1. På sidan Ny Data Warehouse väljer du [!UICONTROL **Allmänna inställningar**] -fliken.
+1. Markera fliken [!UICONTROL **Allmänna inställningar**] på sidan Ny Data Warehouse.
 
-   ![Målflik för rapport](assets/dw-general-settings.png)
+   ![Fliken Rapportmål](assets/dw-general-settings.png)
 
 1. Ange följande fält:
 
@@ -37,4 +37,4 @@ Så här konfigurerar du allmänna inställningar för en Data Warehouse:
 
    {style="table-layout:auto"}
 
-1. Fortsätt konfigurera din Data Warehouse-förfrågan på [!UICONTROL **Bygg din rapport**] -fliken. Mer information finns i [Skapa en rapport för en Data Warehouse-förfrågan](/help/export/data-warehouse/create-request/dw-request-build-report.md).
+1. Fortsätt konfigurera din Data Warehouse-förfrågan på fliken [!UICONTROL **Bygg din rapport**]. Mer information finns i [Skapa en rapport för en Data Warehouse](/help/export/data-warehouse/create-request/dw-request-build-report.md).

@@ -24,7 +24,7 @@ Innan du kan använda Adobe Analytics måste du ha
 
 * En webbläsare som stöds
 
-  Alla användare som använder Adobe Analytics måste använda en webbläsare som stöds. Mer information finns i [Systemkrav för Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/admin-overview/sys-reqs.html).
+  Alla användare som använder Adobe Analytics måste använda en webbläsare som stöds. Mer information finns i [Adobe Analytics systemkrav](https://experienceleague.adobe.com/docs/analytics/analyze/admin-overview/sys-reqs.html).
 
 ## Systemkrav
 

@@ -35,8 +35,8 @@ AppMeasurement skapar ett bildobjekt på HTML-sidan och webbläsaren begär seda
 
 Ibland vill en organisation ta bort en implementering på grund av kontraktets förfallodatum eller minska antalet serversamtal.
 
-* **Implementeringar med Adobe Experience Platform Data Collection**: Inaktivera eller avinstallera det tillämpliga Adobe Analytics-, Web SDK- eller Mobile SDK-tillägget i [!UICONTROL Extensions] och sedan publicera.
-* **Implementeringar av äldre AppMeasurement**: Ersätt allt innehåll i `s_code.js` -fil med följande kodrad:
+* **Implementeringar med Adobe Experience Platform Data Collection**: Inaktivera eller avinstallera det tillämpliga tillägget Adobe Analytics, Web SDK eller Mobile SDK på fliken [!UICONTROL Extensions] och publicera sedan.
+* **Implementeringar av tidigare AppMeasurement**: Ersätt hela innehållet i `s_code.js`-filen med följande kodrad:
 
 ```js
 var s = new Object();
@@ -47,15 +47,15 @@ var s = new Object();
 >Gör inte:
 >
 >* Ändra rapportsviten till ett ogiltigt värde, eftersom den skapar onödig belastning på Adobe-servrar.
->* Ta bort `s_code.js` om du inte också tar bort alla referenser till filen på varje sida.
->* Ändra `trackingServer` variabel för att peka bort från Adobe. AppMeasurementet skickar fortfarande bildbegäranden som returnerar 404 fel.
+>* Ta bort filen `s_code.js` helt, såvida du inte också tar bort alla referenser till filen på varje sida.
+>* Ändra variabeln `trackingServer` så att den pekar bort från Adobe. AppMeasurementet skickar fortfarande bildbegäranden som returnerar 404 fel.
 
-## Jag körde AppMeasurement via en kodanalys och flaggade användningen av `Math.random()` som en potentiell säkerhetsrisk. Är `Math.random()` används med känsliga data?
+## Jag körde AppMeasurement via en kodanalys och flaggade användningen av `Math.random()` som en potentiell säkerhetsrisk. Används `Math.random()` med känsliga data?
 
 Nej. Siffrorna som använder `Math.random()` används inte för att maskera, skicka eller ta emot känsliga data. Data som skickas till datainsamlingsservrar för Adobe är beroende av säkerheten för den underliggande HTTPS-anslutningen. <!-- AN-173590 -->
 
-AppMeasurementet använder `Math.random()` inom tre huvudområden:
+AppMeasurementet använder `Math.random()` i tre huvudområden:
 
-* **Provtagning**: Beroende på implementeringen kan viss information samlas in för endast en liten andel av besökarna på webbplatsen. `Math.random()` används för att avgöra om en viss besökare ska skicka data. I de flesta implementeringar används inte samplingar.
-* **ID för reservbesökare**: Om besökar-ID:t inte kan hämtas från cookies genereras ett slumpmässigt besökar-ID. I den här delen av AppMeasurementet används två anrop till `Math.random()`.
-* **Cachebuskning**: Ett slumpmässigt tal läggs till i slutet av URL:er för bildbegäran för att förhindra webbläsarcachelagring.
+* **Exempel**: Beroende på implementeringen kan viss information samlas in för endast en liten andel av besökarna på webbplatsen. `Math.random()` används för att avgöra om en viss besökare ska skicka data. I de flesta implementeringar används inte samplingar.
+* **Återställningsbesökar-ID**: Om besökar-ID inte kan hämtas från cookies genereras ett slumpmässigt besökar-ID. Den här delen av AppMeasurementet använder två anrop till `Math.random()`.
+* **Cachepublicering**: Ett slumpmässigt tal läggs till i slutet av URL:er för bildbegäran för att förhindra webbläsarcachelagring.

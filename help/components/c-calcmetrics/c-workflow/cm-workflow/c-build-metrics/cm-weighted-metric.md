@@ -5,8 +5,8 @@ feature: Calculated Metrics
 exl-id: bea46e03-7d05-44c8-b654-c61b1e32becc
 source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
 workflow-type: tm+mt
-source-wordcount: '143'
-ht-degree: 5%
+source-wordcount: '146'
+ht-degree: 0%
 
 ---
 

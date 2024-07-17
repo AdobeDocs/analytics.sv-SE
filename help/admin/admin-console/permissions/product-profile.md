@@ -33,7 +33,7 @@ Mer information om hur du tilldelar produktprofiladministratörer finns i avsnit
 Följande behörigheter krävs i en produktprofil för att få tillgång till Adobe Analytics:
 
 * Produktprofilen måste ha tillgång till minst en rapportserie
-* Produktprofilen måste tillhöra behörighetsobjektet Analytics Tools **Analysis Workspace Access**.
+* Produktprofilen måste tillhöra behörighetsobjektet **Analysis Workspace Access** för Analytics-verktygen.
 
 ### Rapportsviter
 
@@ -53,14 +53,14 @@ Anpassade variabler, som eVars, har etiketten Custom Conversion 1-250 för att d
 
 ### Report Suite-verktyg
 
-Rapportsvitens verktyg ger behörighetsobjekt åtkomst till funktioner som är specifika för de rapportsviter som användaren har tillgång till. Se [Report Suite-verktyg](report-suite-tools.md) för en fullständig lista över behörighetsobjekt och beskrivningar.
+Rapportsvitens verktyg ger behörighetsobjekt åtkomst till funktioner som är specifika för de rapportsviter som användaren har tillgång till. En fullständig lista över behörighetsobjekt och beskrivningar finns i [Report Suite-verktygen](report-suite-tools.md).
 
 ### Analysverktyg
 
-Behörighetsobjekt för analysverktyg ger åtkomst till funktioner som är oberoende av inställningarna för rapportsviten. Se [Produktprofilbehörigheter för analysverktyg](analytics-tools.md) för en fullständig lista över behörighetsobjekt och beskrivningar.
+Behörighetsobjekt för analysverktyg ger åtkomst till funktioner som är oberoende av inställningarna för rapportsviten. En fullständig lista över behörighetsobjekt och beskrivningar finns i [Produktprofilbehörigheter för analysverktyg](analytics-tools.md).
 
 ## Produktprofilutvecklare
 
-Utvecklare liknar användare, men de har möjlighet att använda Experience Cloud API på Adobe-utvecklare. Se [Hantera utvecklare](https://helpx.adobe.com/se/enterprise/using/manage-developers.html) i användarhandboken för Enterprise om du vill ha mer information. Om en användare beviljas Developer Access för någon profil kan han/hon få åtkomst till Dev Console (console.adobe.io) och redigera Adobe Analytics-integreringar. De API-anrop och svar för Analytics som är auktoriserade för användaren är beroende av nettobehörigheten för alla profiler där användaren har Developer Access.
+Utvecklare liknar användare, men de har möjlighet att använda Experience Cloud API på Adobe-utvecklare. Mer information finns i [Hantera utvecklare](https://helpx.adobe.com/se/enterprise/using/manage-developers.html) i användarhandboken för Enterprise. Om en användare beviljas Developer Access för någon profil kan han/hon få åtkomst till Dev Console (console.adobe.io) och redigera Adobe Analytics-integreringar. De API-anrop och svar för Analytics som är auktoriserade för användaren är beroende av nettobehörigheten för alla profiler där användaren har Developer Access.
 
 Med till exempel profilbehörigheter som omfattar alla mått, alla dimensioner och en rapportsvit kan en utvecklaråtkomstmedlem i profilen göra API-anrop relevanta för alla komponenter i den relevanta sviten. När avvikelseidentifiering har lagts till kan rapporterna innehålla fler svar, vilket lägger till mer avvikelsedata. Som tumregel gäller att om en profil beviljar åtkomst till ett scenario i Adobe Analytics-gränssnittet, så aktiverar Developer Access för en profil som är definierad på liknande sätt motsvarande API-anrop och svar.

@@ -13,128 +13,128 @@ ht-degree: 0%
 
 # XDM-objektvariabelmappning till Adobe Analytics
 
-Följande tabell visar de XDM-variabler som Adobe Experience Platform Edge Network automatiskt mappar till Adobe Analytics. Om du använder dessa sökvägar för XDM-fält behövs ingen ytterligare konfiguration för att skicka data till Adobe Analytics. Dessa fält ingår i **[!UICONTROL Adobe Analytics ExperienceEvent Template]** fältgrupp. Du bör använda dessa fält om du tänker skicka data till både Adobe Analytics och Adobe Experience Platform.
+Följande tabell visar de XDM-variabler som Adobe Experience Platform Edge Network automatiskt mappar till Adobe Analytics. Om du använder dessa sökvägar för XDM-fält behövs ingen ytterligare konfiguration för att skicka data till Adobe Analytics. Dessa fält ingår i fältgruppen **[!UICONTROL Adobe Analytics ExperienceEvent Template]**. Du bör använda dessa fält om du tänker skicka data till både Adobe Analytics och Adobe Experience Platform.
 
-Om din organisation planerar att flytta till Customer Journey Analytics rekommenderar Adobe att du använder `data` objekt som skickar data direkt till Adobe Analytics utan att följa ett schema. Med den här strategin kan din organisation använda ditt eget schema i stället för att använda [!UICONTROL Adobe Analytics ExperienceEvent Template] (som inte är tillämpligt för Customer Journey Analytics). Se [Variabelmappning för dataobjekt till Adobe Analytics](data-var-mapping.md) för en liknande mappningstabell.
+Om din organisation planerar att flytta till Customer Journey Analytics rekommenderar Adobe att du i stället använder objektet `data` för att skicka data direkt till Adobe Analytics utan att följa ett schema. Med den här strategin kan din organisation använda ditt eget schema, i stället för att använda [!UICONTROL Adobe Analytics ExperienceEvent Template] (som inte gäller Customer Journey Analytics). En liknande mappningstabell finns i [Variabelmappning för dataobjekt till Adobe Analytics](data-var-mapping.md).
 
 ## Värdeprioriteringar
 
-De flesta XDM-objektfälten i den här tabellen sammanfaller med en [dataobjektfält](data-var-mapping.md). Om du anger både ett givet XDM-objektfält och dess respektive dataobjektfält får dataobjektfältet prioritet. Om du använder både XDM-objektfältet och dataobjektfältet rekommenderar Adobe att du ställer in anpassade händelser med dataobjektfältet. Om fältet `data.__adobe.analytics.events` skriver den över alla XDM-objektfält som är relaterade till handel och anpassade händelser.
+De flesta XDM-objektfält i den här tabellen sammanfaller med ett [dataobjektfält](data-var-mapping.md). Om du anger både ett givet XDM-objektfält och dess respektive dataobjektfält får dataobjektfältet prioritet. Om du använder både XDM-objektfältet och dataobjektfältet rekommenderar Adobe att du ställer in anpassade händelser med dataobjektfältet. Om fältet `data.__adobe.analytics.events` finns skriver det över alla XDM-objektfält som är relaterade till handel och anpassade händelser.
 
 ## Mappning av XDM-objektfält
 
-Tidigare uppdateringar av tabellen finns på den här sidans [implementeringshistorik på GitHub](https://github.com/AdobeDocs/analytics.en/commits/main/help/implement/aep-edge/xdm-var-mapping.md).
+Tidigare uppdateringar av den här tabellen finns på den här sidans [implementeringshistorik på GitHub](https://github.com/AdobeDocs/analytics.en/commits/main/help/implement/aep-edge/xdm-var-mapping.md).
 
 | Sökväg till XDM-fält | Analysvariabel och beskrivning |
 | --- | --- |
 | `xdm.application.isClose` | Hjälper till att definiera den mobila livscykelns mått [Krascher](https://developer.adobe.com/client-sdks/documentation/mobile-core/lifecycle/metrics/). |
-| `xdm.application.isInstall` | Hjälper till att avgöra när den mobila livscykelns mått ska höjas [Första starten](https://developer.adobe.com/client-sdks/documentation/mobile-core/lifecycle/metrics/). |
-| `xdm.application.closeType` | Avgör om en close-händelse är en krasch eller inte. Giltiga värden är `close` (En livscykelsession avslutas och en pause-händelse togs emot för föregående session) och `unknown` (En livscykelsession avslutas utan en pause-händelse). Hjälper till att ställa in mätvärden för mobilens livscykel [Krascher](https://developer.adobe.com/client-sdks/documentation/mobile-core/lifecycle/metrics/) mätvärden. |
-| `xdm.application.isInstall` | Den mobila livscykelns mått [Installationer](https://developer.adobe.com/client-sdks/documentation/mobile-core/lifecycle/metrics/). |
-| `xdm.application.isLaunch` | Den mobila livscykelns mått [Startar](https://developer.adobe.com/client-sdks/documentation/mobile-core/lifecycle/metrics/). |
-| `xdm.application.name` | Hjälper till att ställa in den mobila livscykeldimensionen [Program-ID](https://developer.adobe.com/client-sdks/documentation/mobile-core/lifecycle/metrics/). |
+| `xdm.application.isInstall` | Hjälper till att avgöra när den mobila livscykelns mått [Första starten](https://developer.adobe.com/client-sdks/documentation/mobile-core/lifecycle/metrics/) ska höjas. |
+| `xdm.application.closeType` | Avgör om en close-händelse är en krasch eller inte. Giltiga värden är `close` (en livscykelsession avslutas och en pause-händelse togs emot för föregående session) och `unknown` (en livscykelsession avslutas utan en pause-händelse). Hjälper dig att ställa in mätvärdet för mobil livscykel [kraschar](https://developer.adobe.com/client-sdks/documentation/mobile-core/lifecycle/metrics/). |
+| `xdm.application.isInstall` | Det mobila livscykelmåttet [Installerar](https://developer.adobe.com/client-sdks/documentation/mobile-core/lifecycle/metrics/). |
+| `xdm.application.isLaunch` | Det mobila livscykelmåttet [Startar](https://developer.adobe.com/client-sdks/documentation/mobile-core/lifecycle/metrics/). |
+| `xdm.application.name` | Hjälper dig att ange den mobila livscykeldimensionen [Program-ID](https://developer.adobe.com/client-sdks/documentation/mobile-core/lifecycle/metrics/). |
 | `xdm.application.isUpgrade` | Den mobila livscykelns mått [Uppgraderingar](https://developer.adobe.com/client-sdks/documentation/mobile-core/lifecycle/metrics/). |
-| `xdm.application.version` | Hjälper till att ställa in den mobila livscykeldimensionen [Program-ID](https://developer.adobe.com/client-sdks/documentation/mobile-core/lifecycle/metrics/). |
-| `xdm.application.sessionLength` | Den mobila livscykelns mått [Längd på föregående session](https://developer.adobe.com/client-sdks/documentation/mobile-core/lifecycle/metrics/). |
-| `xdm.commerce.checkouts.id` | Gäller [händelseserialisering](../vars/page-vars/events/event-serialization.md) till [Utcheckningar](../../components/metrics/checkouts.md) mätvärden. |
-| `xdm.commerce.checkouts.value` | Ökar [Utcheckningar](../../components/metrics/checkouts.md) mått med önskad mängd. |
-| `xdm.commerce.order.currencyCode` | Anger [currencyCode](../vars/config-vars/currencycode.md) konfigurationsvariabel. |
-| `xdm.commerce.order.purchaseID` | Anger [purchaseID](../vars/page-vars/purchaseid.md) sidvariabel. |
-| `xdm.commerce.order.payments[0].transactionID` | Anger [transactionID](../vars/page-vars/transactionid.md) sidvariabel. |
-| `xdm.commerce.productListAdds.id` | Gäller [händelseserialisering](../vars/page-vars/events/event-serialization.md) till [Cart Additions](../../components/metrics/cart-additions.md) mätvärden. |
-| `xdm.commerce.productListAdds.value` | Ökar [Cart Additions](../../components/metrics/cart-additions.md) mätvärden. |
-| `xdm.commerce.productListOpens.id` | Gäller [händelseserialisering](../vars/page-vars/events/event-serialization.md) till [Korgar](../../components/metrics/carts.md) mätvärden. |
-| `xdm.commerce.productListOpens.value` | Ökar [Korgar](../../components/metrics/carts.md) mätvärden. |
-| `xdm.commerce.productListRemovals.id` | Gäller [händelseserialisering](../vars/page-vars/events/event-serialization.md) till [Cart Removals](../../components/metrics/cart-removals.md) mätvärden. |
-| `xdm.commerce.productListRemovals.value` | Ökar [Cart Removals](../../components/metrics/cart-removals.md) mätvärden. |
-| `xdm.commerce.productListViews.id` | Gäller [händelseserialisering](../vars/page-vars/events/event-serialization.md) till [Vyer](../../components/metrics/cart-views.md) mätvärden. |
-| `xdm.commerce.productListViews.value` | Ökar [Vyer](../../components/metrics/cart-views.md) mätvärden. |
-| `xdm.commerce.productViews.id` | Gäller [händelseserialisering](../vars/page-vars/events/event-serialization.md) till [Produktvyer](../../components/metrics/product-views.md) mätvärden. |
-| `xdm.commerce.productViews.value` | Ökar [Produktvyer](../../components/metrics/product-views.md) mätvärden. |
-| `xdm.commerce.purchases.value` | Ökar [Beställningar](../../components/metrics/orders.md) mätvärden. |
+| `xdm.application.version` | Hjälper dig att ange den mobila livscykeldimensionen [Program-ID](https://developer.adobe.com/client-sdks/documentation/mobile-core/lifecycle/metrics/). |
+| `xdm.application.sessionLength` | Den mobila livscykelns mått [Tidigare sessionslängd](https://developer.adobe.com/client-sdks/documentation/mobile-core/lifecycle/metrics/). |
+| `xdm.commerce.checkouts.id` | Tillämpar [händelseserialisering](../vars/page-vars/events/event-serialization.md) på måttet [Utcheckningar](../../components/metrics/checkouts.md). |
+| `xdm.commerce.checkouts.value` | Ökar måttet för [Utcheckningar](../../components/metrics/checkouts.md) med önskad mängd. |
+| `xdm.commerce.order.currencyCode` | Anger konfigurationsvariabeln [currencyCode](../vars/config-vars/currencycode.md). |
+| `xdm.commerce.order.purchaseID` | Anger sidvariabeln [purchaseID](../vars/page-vars/purchaseid.md). |
+| `xdm.commerce.order.payments[0].transactionID` | Anger sidvariabeln [transactionID](../vars/page-vars/transactionid.md). |
+| `xdm.commerce.productListAdds.id` | Tillämpar [händelseserialisering](../vars/page-vars/events/event-serialization.md) på måttet för [kundvagnstillägg](../../components/metrics/cart-additions.md). |
+| `xdm.commerce.productListAdds.value` | Ökar måttet [Cart Additions](../../components/metrics/cart-additions.md). |
+| `xdm.commerce.productListOpens.id` | Tillämpar [händelseserialisering](../vars/page-vars/events/event-serialization.md) på måttet [Carts](../../components/metrics/carts.md). |
+| `xdm.commerce.productListOpens.value` | Ökar måttet [Carts](../../components/metrics/carts.md). |
+| `xdm.commerce.productListRemovals.id` | Tillämpar [händelseserialisering](../vars/page-vars/events/event-serialization.md) på måttet för [kundvagnsborttagningar](../../components/metrics/cart-removals.md). |
+| `xdm.commerce.productListRemovals.value` | Ökar måttet för [kundvagnsborttagningar](../../components/metrics/cart-removals.md). |
+| `xdm.commerce.productListViews.id` | Tillämpar [händelseserialisering](../vars/page-vars/events/event-serialization.md) på måttet för [kundvagnsvyer](../../components/metrics/cart-views.md). |
+| `xdm.commerce.productListViews.value` | Ökar måttet för [kundvagnsvyer](../../components/metrics/cart-views.md). |
+| `xdm.commerce.productViews.id` | Tillämpar [händelseserialisering](../vars/page-vars/events/event-serialization.md) på måttet för [produktvyer](../../components/metrics/product-views.md). |
+| `xdm.commerce.productViews.value` | Ökar måttet för [produktvyer](../../components/metrics/product-views.md). |
+| `xdm.commerce.purchases.value` | Ökar måttet [Beställningar](../../components/metrics/orders.md). |
 | `xdm.device.model` | Den mobila livscykeldimensionen [Enhetsnamn](https://developer.adobe.com/client-sdks/documentation/mobile-core/lifecycle/metrics/). |
-| `xdm.device.colorDepth` | Hjälper dig att ange [Färgdjup](../../components/dimensions/color-depth.md) dimension. |
-| `xdm.device.screenHeight` | Hjälper dig att ange [Bildskärmsupplösning](../../components/dimensions/monitor-resolution.md) dimension. |
-| `xdm.device.screenWidth` | Hjälper dig att ange [Bildskärmsupplösning](../../components/dimensions/monitor-resolution.md) dimension. |
+| `xdm.device.colorDepth` | Hjälper dig att ange dimensionen [Färgdjup](../../components/dimensions/color-depth.md). |
+| `xdm.device.screenHeight` | Hjälper dig att ange dimensionen [Bildskärmsupplösning](../../components/dimensions/monitor-resolution.md). |
+| `xdm.device.screenWidth` | Hjälper dig att ange dimensionen [Bildskärmsupplösning](../../components/dimensions/monitor-resolution.md). |
 | `xdm.device.type` | Typ av mobil enhet. |
-| `xdm.environment.browserDetails.acceptLanguage` | Hjälper dig att ange [Språk](../../components/dimensions/language.md) dimension. |
-| `xdm.environment.browserDetails.cookiesEnabled` | Anger [Cookie-stöd](../../components/dimensions/cookie-support.md) dimension. Giltiga värden är `Y` (webbläsaren accepterar cookies) och `N` (webbläsaren avvisar cookies). |
-| `xdm.environment.browserDetails.javaEnabled` | Anger [Java aktiverat](../../components/dimensions/java-enabled.md) dimension. Giltiga värden är `Y` (Java är aktiverat) och `N` (Java är inaktiverat). |
-| `xdm.environment.browserDetails.userAgent` | Används som reserv [unik besökare](../../components/metrics/unique-visitors.md) identifieringsmetod. Används vanligtvis med `User-Agent` HTTP-begärandehuvud. Du kan mappa det här fältet till en eVar om du vill använda det i rapporter. |
-| `xdm.environment.browserDetails.viewportHeight` | Anger [Webbläsarhöjd](../../components/dimensions/browser-height.md) dimension. |
-| `xdm.environment.browserDetails.viewportWidth` | Anger [Bredd på webbläsare](../../components/dimensions/browser-width.md) dimension. |
+| `xdm.environment.browserDetails.acceptLanguage` | Hjälper dig att ange dimensionen [Språk](../../components/dimensions/language.md). |
+| `xdm.environment.browserDetails.cookiesEnabled` | Anger dimensionen [Cookie-stöd](../../components/dimensions/cookie-support.md). Giltiga värden är `Y` (webbläsaren accepterar cookies) och `N` (webbläsaren avvisar cookies). |
+| `xdm.environment.browserDetails.javaEnabled` | Anger dimensionen [Java aktiverad](../../components/dimensions/java-enabled.md). Giltiga värden är `Y` (Java är aktiverat) och `N` (Java är inaktiverat). |
+| `xdm.environment.browserDetails.userAgent` | Används som en identifieringsmetod för [unik besökare](../../components/metrics/unique-visitors.md) som reservalternativ. Vanligtvis ifylld med HTTP-begärandehuvudet `User-Agent`. Du kan mappa det här fältet till en eVar om du vill använda det i rapporter. |
+| `xdm.environment.browserDetails.viewportHeight` | Anger dimensionen [Webbläsarhöjd](../../components/dimensions/browser-height.md). |
+| `xdm.environment.browserDetails.viewportWidth` | Anger dimensionen [Webbläsarbredd](../../components/dimensions/browser-width.md). |
 | `xdm.environment.carrier` | Den mobila livscykeldimensionen [Transportföretagets namn](https://developer.adobe.com/client-sdks/documentation/mobile-core/lifecycle/metrics/). |
-| `xdm.environment.connectionType` | Hjälper dig att ange [Anslutningstyp](../../components/dimensions/connection-type.md) dimension. |
-| `xdm.environment.ipV4` | Används som reserv [unik besökare](../../components/metrics/unique-visitors.md) identifieringsmetod. Används vanligtvis med `X-Forwarded-For` HTTP-huvud. |
+| `xdm.environment.connectionType` | Hjälper dig att ange dimensionen [Anslutningstyp](../../components/dimensions/connection-type.md). |
+| `xdm.environment.ipV4` | Används som en identifieringsmetod för [unik besökare](../../components/metrics/unique-visitors.md) som reservalternativ. Vanligtvis ifylld med HTTP-huvudet `X-Forwarded-For`. |
 | `xdm.environment.language` | Mobildimensionen Locale. |
 | `xdm.environment.operatingSystem` | Den mobila livscykeldimensionen [Operativsystem](https://developer.adobe.com/client-sdks/documentation/mobile-core/lifecycle/metrics/). |
-| `xdm.environment.operatingSystemVersion` | Hjälper till att ställa in den mobila livscykeldimensionen [Operativsystemsversion](https://developer.adobe.com/client-sdks/documentation/mobile-core/lifecycle/metrics/). |
-| `xdm._experience.analytics.customDimensions.`<br/>`eVars.eVar1`<br/>`[...]`<br/>`xdm._experience.analytics.customDimensions.`<br/>`eVars.eVar250` | Anger respektive [eVar](../../components/dimensions/evar.md) dimension. |
-| `xdm._experience.analytics.customDimensions.`<br/>`hierarchies.hier1`<br/>`[...]`<br/>`xdm._experience.analytics.customDImensions.`<br/>`hierarchies.hier5` | Anger respektive [Hierarki](/help/components/dimensions/hierarchy.md) dimension. |
-| `xdm._experience.analytics.customDimensions.`<br/>`listProps.prop1.delimiter`<br/>`[...]`<br/>`xdm._experience.analytics.customDimensions.`<br/>`listProps.prop75.delimiter` | Åsidosättning av avgränsare för listpropp. Det här fältet rekommenderas inte eftersom avgränsaren hämtas automatiskt från [Trafikvariabeladministratör](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/c-traffic-variables/traffic-var.md) under rapportsvitens inställningar. Om du använder det här fältet kan det skapa en felmatchning mellan den avgränsare som används och den avgränsare som förväntas i Analytics. |
-| `xdm._experience.analytics.customDimensions.`<br/>`listProps.prop1.values`<br/>`[...]`<br/>`xdm._experience.analytics.customDimensions.`<br/>`listProps.prop75.values` | En strängarray som innehåller respektive [List Prop](../vars/page-vars/prop.md#list-props) värden. |
-| `xdm._experience.analytics.customDimensions.`<br/>`lists.list1.list[].value`<br/>`[...]`<br/>`xdm._experience.analytics.customDimensions.`<br/>`lists.list3.list[].value` | Sammanfogar alla `value` strängar i respektive `list[]` array till respektive [Listvariabel](../vars/page-vars/list.md). Avgränsaren väljs automatiskt baserat på det värde som anges i [Rapportsvitsinställningar](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/list-var-admin.md). |
-| `xdm._experience.analytics.customDimensions.`<br/>`props.prop1`<br/>`[...]`<br/>`xdm._experience.analytics.customDimensions.`<br/>`props.prop75` | Anger respektive [Prop](../../components/dimensions/prop.md) dimension. |
-| `xdm._experience.analytics.event1to100.`<br/>`event1.id`<br/>`[...]`<br/>`xdm._experience.analytics.event901to1000.`<br/>`event1000.id` | Gäller [händelseserialisering](../vars/page-vars/events/event-serialization.md) till respektive [Anpassade händelser](../../components/metrics/custom-events.md) mätvärden. Varje händelse-ID finns i dess överordnade 100-grupp. Om du till exempel vill använda serialisering på `event678`, använda `xdm._experience.analytics.event601to700.event678.id`. |
-| `xdm._experience.analytics.event1to100.`<br/>`event1.value`<br/>`[...]`<br/>`xdm._experience.analytics.event901to1000.`<br/>`event1000.value` | Ökar respektive [Anpassade händelser](../../components/metrics/custom-events.md) mått med önskad mängd. Varje händelse finns i dess överordnade 100-grupp. Fältet för `event567` är `xdm._experience.analytics.event501to600.event567.value`. |
-| `xdm.identityMap.ECID[0].id` | The [Adobe Experience Cloud ID för identitetstjänst](https://experienceleague.adobe.com/docs/id-service/using/home.html). |
-| `xdm.marketing.trackingCode` | Anger [Spårningskod](../../components/dimensions/tracking-code.md) dimension. |
-| `xdm.media.mediaTimed.completes.value` | Mätning av direktuppspelningsmedia [Innehållet har slutförts](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#content-complete). |
+| `xdm.environment.operatingSystemVersion` | Hjälper dig att ange den mobila livscykeldimensionen [Operativsystemversion](https://developer.adobe.com/client-sdks/documentation/mobile-core/lifecycle/metrics/). |
+| `xdm._experience.analytics.customDimensions.`<br/>`eVars.eVar1`<br/>`[...]`<br/>`xdm._experience.analytics.customDimensions.`<br/>`eVars.eVar250` | Anger respektive [eVar](../../components/dimensions/evar.md)-dimension. |
+| `xdm._experience.analytics.customDimensions.`<br/>`hierarchies.hier1`<br/>`[...]`<br/>`xdm._experience.analytics.customDImensions.`<br/>`hierarchies.hier5` | Anger respektive [hierarkidimension](/help/components/dimensions/hierarchy.md). |
+| `xdm._experience.analytics.customDimensions.`<br/>`listProps.prop1.delimiter`<br/>`[...]`<br/>`xdm._experience.analytics.customDimensions.`<br/>`listProps.prop75.delimiter` | Åsidosättning av avgränsare för listpropp. Det här fältet rekommenderas inte eftersom avgränsaren hämtas automatiskt från [Traffic Variable Admin](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/c-traffic-variables/traffic-var.md) under rapportsvitens inställningar. Om du använder det här fältet kan det skapa en felmatchning mellan den avgränsare som används och den avgränsare som förväntas i Analytics. |
+| `xdm._experience.analytics.customDimensions.`<br/>`listProps.prop1.values`<br/>`[...]`<br/>`xdm._experience.analytics.customDimensions.`<br/>`listProps.prop75.values` | En strängmatris som innehåller respektive [List Prop](../vars/page-vars/prop.md#list-props)-värden. |
+| `xdm._experience.analytics.customDimensions.`<br/>`lists.list1.list[].value`<br/>`[...]`<br/>`xdm._experience.analytics.customDimensions.`<br/>`lists.list3.list[].value` | Sammanfogar alla `value`-strängar i respektive `list[]`-array till respektive [List-variabel](../vars/page-vars/list.md). Avgränsaren väljs automatiskt baserat på det värde som angetts i [Rapportsvitens inställningar](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/list-var-admin.md). |
+| `xdm._experience.analytics.customDimensions.`<br/>`props.prop1`<br/>`[...]`<br/>`xdm._experience.analytics.customDimensions.`<br/>`props.prop75` | Anger respektive [Prop](../../components/dimensions/prop.md)-dimension. |
+| `xdm._experience.analytics.event1to100.`<br/>`event1.id`<br/>`[...]`<br/>`xdm._experience.analytics.event901to1000.`<br/>`event1000.id` | Tillämpar [händelseserialisering](../vars/page-vars/events/event-serialization.md) på respektive [anpassade händelser](../../components/metrics/custom-events.md)-mått. Varje händelse-ID finns i dess överordnade 100-grupp. Om du till exempel vill använda serialisering på `event678` använder du `xdm._experience.analytics.event601to700.event678.id`. |
+| `xdm._experience.analytics.event1to100.`<br/>`event1.value`<br/>`[...]`<br/>`xdm._experience.analytics.event901to1000.`<br/>`event1000.value` | Ökar respektive [anpassade händelser](../../components/metrics/custom-events.md)-mått med önskad mängd. Varje händelse finns i dess överordnade 100-grupp. Fältet för `event567` är till exempel `xdm._experience.analytics.event501to600.event567.value`. |
+| `xdm.identityMap.ECID[0].id` | [Adobe Experience Cloud ID för identitetstjänst](https://experienceleague.adobe.com/docs/id-service/using/home.html). |
+| `xdm.marketing.trackingCode` | Anger dimensionen [Spårningskod](../../components/dimensions/tracking-code.md). |
+| `xdm.media.mediaTimed.completes.value` | Mätvärdet för direktuppspelningsmedia [Slutför innehåll](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#content-complete). |
 | `xdm.media.mediaTimed.dropBeforeStart.value` | `c.a.media.view`, `c.a.media.timePlayed`, `c.a.media.play` |
-| `xdm.media.mediaTimed.federated.value` | Mätning av direktuppspelningsmedia [Federerade data](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#federated-data). |
-| `xdm.media.mediaTimed.firstQuartiles.value` | Mätning av direktuppspelningsmedia [Förloppsmärke på 25 %](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#twenty-five-progress-marker). |
-| `xdm.media.mediaTimed.mediaSegmentView.value` | Mätning av direktuppspelningsmedia [Vyer för innehållssegment](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#content-segment-views). |
-| `xdm.media.mediaTimed.midpoints.value` | Mätning av direktuppspelningsmedia [Förloppsmärke på 5 %](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#fifty-progress-marker). |
-| `xdm.media.mediaTimed.pauseTime.value` | Mätning av direktuppspelningsmedia [Total pausvaraktighet](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#total-pause-duration). |
-| `xdm.media.mediaTimed.pauses.value` | Mätning av direktuppspelningsmedia [Pausa händelser](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#pause-events). |
-| `xdm.media.mediaTimed.primaryAssetReference.`<br/>`@id` | Dimensionen för direktuppspelande media [Tillgångs-ID](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#asset-id). |
-| `xdm.media.mediaTimed.primaryAssetReference.`<br/>`dc:title` | Dimensionen för direktuppspelande media [Videonamn](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#video-name). |
-| `xdm.media.mediaTimed.primaryAssetReference.`<br/>`iptc4xmpExt:Creator[N].iptc4xmpExt:Name` | Dimensionen för direktuppspelande media [Originator](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#originator). |
-| `xdm.media.mediaTimed.primaryAssetReference.`<br/>`iptc4xmpExt:Episode.iptc4xmpExt:Number` | Dimensionen för direktuppspelande media [Episod](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#episode). |
-| `xdm.media.mediaTimed.primaryAssetReference.`<br/>`iptc4xmpExt:Genre` | Dimensionen för direktuppspelande media [Genre](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#genre). |
-| `xdm.media.mediaTimed.primaryAssetReference.`<br/>`iptc4xmpExt:Rating[N].iptc4xmpExt:RatingValue` | Dimensionen för direktuppspelande media [Innehållsklassificering](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#content-rating). |
-| `xdm.media.mediaTimed.primaryAssetReference.`<br/>`iptc4xmpExt:Season.iptc4xmpExt:Number` | Dimensionen för direktuppspelande media [Säsong](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#season). |
-| `xdm.media.mediaTimed.primaryAssetReference.`<br/>`iptc4xmpExt:Series.iptc4xmpExt:Identifier` | Dimensionen för direktuppspelande media [Innehålls-ID](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#content-id). |
-| `xdm.media.mediaTimed.primaryAssetReference.`<br/>`iptc4xmpExt:Series.iptc4xmpExt:Name` | Dimensionen för direktuppspelande media [Visa](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#show). |
-| `xdm.media.mediaTimed.primaryAssetReference.`<br/>`showType` | Dimensionen för direktuppspelande media [Visa typ](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#show-type). |
-| `xdm.media.mediaTimed.primaryAssetReference.`<br/>`xmpDM:duration` | Dimensionen för direktuppspelande media [Videolängd](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#video-length). |
-| `xdm.media.mediaTimed.primaryAssetViewDetails.`<br/>`@id` | Dimensionen för direktuppspelande media [ID för mediesession](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#media-session-id). |
-| `xdm.media.mediaTimed.primaryAssetViewDetails.`<br/>`broadcastChannel` | Dimensionen för direktuppspelande media [Innehållskanal](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#content-channel). |
-| `xdm.media.mediaTimed.primaryAssetViewDetails.`<br/>`broadcastContentType` | Dimensionen för direktuppspelande media [Innehållstyp](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#content-type). |
-| `xdm.media.mediaTimed.primaryAssetViewDetails.`<br/>`broadcastNetwork` | Dimensionen för direktuppspelande media [Nätverk](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#network). |
-| `xdm.media.mediaTimed.primaryAssetViewDetails.`<br/>`mediaSegmentView.value` | Dimensionen för direktuppspelande media [Innehållssegment](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#content-segment). |
-| `xdm.media.mediaTimed.primaryAssetViewDetails.`<br/>`playerName` | Dimensionen för direktuppspelande media [Innehållsspelarens namn](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#content-player-name). |
-| `xdm.media.mediaTimed.primaryAssetViewDetails.`<br/>`playerSDKVersion.version` | Dimensionen för direktuppspelande media [SDK-version](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#sdk-version). |
-| `xdm.media.mediaTimed.primaryAssetViewDetails.`<br/>`sourceFeed` | Dimensionen för direktuppspelande media [Medieflödestyp](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#media-feed-type). |
-| `xdm.media.mediaTimed.primaryAssetViewDetails.`<br/>`streamFormat` | Dimensionen för direktuppspelande media [Strömformat](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#stream-format). |
-| `xdm.media.mediaTimed.progress10.value` | Mätning av direktuppspelningsmedia [Tio % statusmarkör](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#ten-progress-marker). |
-| `xdm.media.mediaTimed.progress95.value` | Mätning av direktuppspelningsmedia [95 % förloppsmärke](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#ninety-five-progress-marker). |
-| `xdm.media.mediaTimed.resumes.value` | Mätning av direktuppspelningsmedia [Återuppta innehåll](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#content-resumes). |
-| `xdm.media.mediaTimed.starts.value` | Mätning av direktuppspelningsmedia [Media börjar](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#media-starts). |
-| `xdm.media.mediaTimed.thirdQuartiles.value` | Mätning av direktuppspelningsmedia [Sjuttiofem % Progress Marker](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#seventy-five-progress-marker). |
-| `xdm.media.mediaTimed.timePlayed.value` | Mätning av direktuppspelningsmedia [Innehållstid](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#content-time-spent). |
-| `xdm.media.mediaTimed.totalTimePlayed.value` | Mätning av direktuppspelningsmedia [Medietid tillagd](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#media-time-spent). |
-| `xdm.placeContext.geo._schema.latitude` | Besökarens latitud. Hjälpuppsättning [Plats för mobil livscykel](/help/components/dimensions/lifecycle-dimensions.md) dimensioner. |
-| `xdm.placeContext.geo._schema.longitude` | Besökarens longitud. Hjälpuppsättning [Plats för mobil livscykel](/help/components/dimensions/lifecycle-dimensions.md) dimensioner. |
-| `xdm.placeContext.geo.postalCode` | The [Postnummer](../../components/dimensions/zip-code.md) dimension. |
-| `xdm.placeContext.geo.stateProvince` | The [USA](../../components/dimensions/us-states.md) dimension. |
-| `xdm.placeContext.localTime` | Visas som `t_time_info` in [Dataflöden](/help/export/analytics-data-feed/c-df-contents/datafeeds-reference.md). |
-| `xdm.productListItems[]._experience.analytics.`<br/>`customDimensions.eVars.eVar1`<br/>`[...]`<br/>`xdm.productListItems[]._experience.analytics.`<br/>`customDimensions.eVars.eVar250` | Gäller [produktsyntax](../vars/page-vars/products.md) försäljning till eVars. |
-| `xdm.productListItems[]._experience.analytics.`<br/>`event1to100.event1.value`<br/>`[...]`<br/>`xdm.productListItems[]._experience.analytics.`<br/>`event901-1000.event1000.value` | Gäller [produktsyntax](../vars/page-vars/products.md) försäljning till event. |
-| `xdm.productListItems[].productCategories[].categoryID` | The [Kategori](../../components/dimensions/category.md) dimension. Se även [produkter](../vars/page-vars/products.md) sidvariabel. |
-| `xdm.productListItems[].name` | The [Produkt](../../components/dimensions/product.md) dimension. Se även [produkter](../vars/page-vars/products.md) sidvariabel. If `xdm.productListItems[].SKU` och `xdm.productListItems[].name` båda innehåller data, värdet i `xdm.productListItems[].SKU` används. |
-| `xdm.productListItems[].priceTotal` | Hjälper till att avgöra [Intäkter](../../components/metrics/revenue.md) mätvärden. Se även [produkter](../vars/page-vars/products.md) sidvariabel. |
-| `xdm.productListItems[].quantity` | Hjälper till att avgöra [Enheter](../../components/metrics/units.md) mätvärden. Se även [produkter](../vars/page-vars/products.md) sidvariabel. |
-| `xdm.productListItems[].SKU` | The [Produkt](../../components/dimensions/product.md) dimension. Se även [produkter](../vars/page-vars/products.md) sidvariabel. If `xdm.productListItems[].SKU` och `xdm.productListItems[].name` båda innehåller data, värdet i `xdm.productListItems[].SKU` används. |
-| `xdm.web.webInteraction.URL` | The [linkURL](../vars/config-vars/linkurl.md) implementeringsvariabel. |
-| `xdm.web.webInteraction.name` | The [Egen länk](../../components/dimensions/custom-link.md), [Hämta länk](../../components/dimensions/download-link.md), eller [Avsluta länk](../../components/dimensions/exit-link.md) dimension, beroende på värdet i `xdm.web.webInteraction.type` |
-| `xdm.web.webInteraction.type` | Anger vilken typ av länk som klickas. Giltiga värden är `other` (Anpassade länkar), `download` (Hämta länkar) och `exit` (Avsluta länkar). |
-| `xdm.web.webPageDetails.URL` | The [Sidans URL](../../components/dimensions/page-url.md) dimension. |
-| `xdm.web.webPageDetails.isErrorPage` | Flagga som hjälper till att fastställa &quot;Sidor som inte hittas&quot; [dimension](../../components/dimensions/pages-not-found.md) och [mått](../../components/metrics/pages-not-found.md). |
-| `xdm.web.webPageDetails.name` | The [Sida](../../components/dimensions/page.md) dimension. |
-| `xdm.web.webPageDetails.server` | The [Server](../../components/dimensions/server.md) dimension. |
-| `xdm.web.webPageDetails.siteSection` | The [Platsavsnitt](../../components/dimensions/site-section.md) dimension. |
-| `xdm.web.webReferrer.URL` | The [Referent](../../components/dimensions/referrer.md) dimension. |
+| `xdm.media.mediaTimed.federated.value` | Det direktuppspelade mediemått [Federated data](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#federated-data). |
+| `xdm.media.mediaTimed.firstQuartiles.value` | Mätvärdet [Tjugofem % för direktuppspelningsmedia](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#twenty-five-progress-marker). |
+| `xdm.media.mediaTimed.mediaSegmentView.value` | Det direktuppspelade mediemätverket [Vyer för innehållssegment](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#content-segment-views). |
+| `xdm.media.mediaTimed.midpoints.value` | Mätvärdet [Femtio % förloppsindikator](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#fifty-progress-marker) för direktuppspelningsmedia. |
+| `xdm.media.mediaTimed.pauseTime.value` | Mätvärdet för direktuppspelningsmedia [Total paustid](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#total-pause-duration). |
+| `xdm.media.mediaTimed.pauses.value` | Det direktuppspelade mediemått [Pausa händelser](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#pause-events). |
+| `xdm.media.mediaTimed.primaryAssetReference.`<br/>`@id` | Direktuppspelningsmediedimensionen [Resurs-ID](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#asset-id). |
+| `xdm.media.mediaTimed.primaryAssetReference.`<br/>`dc:title` | Direktuppspelningsmediedimensionen [Videonamn](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#video-name). |
+| `xdm.media.mediaTimed.primaryAssetReference.`<br/>`iptc4xmpExt:Creator[N].iptc4xmpExt:Name` | Direktuppspelningsmediedimensionen [Originator](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#originator). |
+| `xdm.media.mediaTimed.primaryAssetReference.`<br/>`iptc4xmpExt:Episode.iptc4xmpExt:Number` | Direktuppspelningsmediedimensionen [Episod](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#episode). |
+| `xdm.media.mediaTimed.primaryAssetReference.`<br/>`iptc4xmpExt:Genre` | Direktuppspelningsmediedimensionen [Genre](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#genre). |
+| `xdm.media.mediaTimed.primaryAssetReference.`<br/>`iptc4xmpExt:Rating[N].iptc4xmpExt:RatingValue` | Den direktuppspelade mediedimensionen [Innehållsklassificering](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#content-rating). |
+| `xdm.media.mediaTimed.primaryAssetReference.`<br/>`iptc4xmpExt:Season.iptc4xmpExt:Number` | Direktuppspelningsmediedimensionen [Säsong](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#season). |
+| `xdm.media.mediaTimed.primaryAssetReference.`<br/>`iptc4xmpExt:Series.iptc4xmpExt:Identifier` | Den direktuppspelade mediedimensionen [Innehålls-ID](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#content-id). |
+| `xdm.media.mediaTimed.primaryAssetReference.`<br/>`iptc4xmpExt:Series.iptc4xmpExt:Name` | Direktuppspelningsmediedimensionen [Visa](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#show). |
+| `xdm.media.mediaTimed.primaryAssetReference.`<br/>`showType` | Direktuppspelningsmediedimensionen [Visa typ](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#show-type). |
+| `xdm.media.mediaTimed.primaryAssetReference.`<br/>`xmpDM:duration` | Direktuppspelningsmediedimensionen [Videolängd](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#video-length). |
+| `xdm.media.mediaTimed.primaryAssetViewDetails.`<br/>`@id` | Direktuppspelningsmediedimensionen [Mediasession-ID](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#media-session-id). |
+| `xdm.media.mediaTimed.primaryAssetViewDetails.`<br/>`broadcastChannel` | Den direktuppspelade mediedimensionen [Innehållskanal](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#content-channel). |
+| `xdm.media.mediaTimed.primaryAssetViewDetails.`<br/>`broadcastContentType` | Direktuppspelningsmediemätningen [Innehållstyp](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#content-type). |
+| `xdm.media.mediaTimed.primaryAssetViewDetails.`<br/>`broadcastNetwork` | Direktuppspelningsmediedimensionen [Nätverk](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#network). |
+| `xdm.media.mediaTimed.primaryAssetViewDetails.`<br/>`mediaSegmentView.value` | Den direktuppspelade mediedimensionen [Innehållssegment](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#content-segment). |
+| `xdm.media.mediaTimed.primaryAssetViewDetails.`<br/>`playerName` | Den direktuppspelade mediedimensionen [Namn på innehållsspelaren](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#content-player-name). |
+| `xdm.media.mediaTimed.primaryAssetViewDetails.`<br/>`playerSDKVersion.version` | Direktuppspelningsmediedimensionen [SDK version](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#sdk-version). |
+| `xdm.media.mediaTimed.primaryAssetViewDetails.`<br/>`sourceFeed` | Mediedimensionen [Mediefeedtyp](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#media-feed-type) för direktuppspelning. |
+| `xdm.media.mediaTimed.primaryAssetViewDetails.`<br/>`streamFormat` | Direktuppspelningsmediedimensionen [Strömformat](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#stream-format). |
+| `xdm.media.mediaTimed.progress10.value` | Mätvärdet för direktuppspelningsmedia [10 % Progress Marker](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#ten-progress-marker). |
+| `xdm.media.mediaTimed.progress95.value` | Mätvärdet [Nittiofem % för direktuppspelningsmedia ](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#ninety-five-progress-marker). |
+| `xdm.media.mediaTimed.resumes.value` | Det direktuppspelade mediemått [Innehållet återupptas](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#content-resumes). |
+| `xdm.media.mediaTimed.starts.value` | Det direktuppspelade mediemått [Media börjar](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#media-starts). |
+| `xdm.media.mediaTimed.thirdQuartiles.value` | Mätvärdet [Sjuttiofem % för direktuppspelningsmedia](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#seventy-five-progress-marker). |
+| `xdm.media.mediaTimed.timePlayed.value` | Det direktuppspelade mediemätverket [Content Time Spent](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#content-time-spent). |
+| `xdm.media.mediaTimed.totalTimePlayed.value` | Det direktuppspelade mediemätverket [Medietid spenderad](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#media-time-spent). |
+| `xdm.placeContext.geo._schema.latitude` | Besökarens latitud. Hjälper dig att ange [dimensioner för mobil livscykelplacering](/help/components/dimensions/lifecycle-dimensions.md). |
+| `xdm.placeContext.geo._schema.longitude` | Besökarens longitud. Hjälper dig att ange [dimensioner för mobil livscykelplacering](/help/components/dimensions/lifecycle-dimensions.md). |
+| `xdm.placeContext.geo.postalCode` | Dimensionen [Postnummer](../../components/dimensions/zip-code.md). |
+| `xdm.placeContext.geo.stateProvince` | Dimensionen [USA ](../../components/dimensions/us-states.md). |
+| `xdm.placeContext.localTime` | Visas som `t_time_info` i [Dataflöden](/help/export/analytics-data-feed/c-df-contents/datafeeds-reference.md). |
+| `xdm.productListItems[]._experience.analytics.`<br/>`customDimensions.eVars.eVar1`<br/>`[...]`<br/>`xdm.productListItems[]._experience.analytics.`<br/>`customDimensions.eVars.eVar250` | Tillämpar [produktsyntax](../vars/page-vars/products.md) för eVars. |
+| `xdm.productListItems[]._experience.analytics.`<br/>`event1to100.event1.value`<br/>`[...]`<br/>`xdm.productListItems[]._experience.analytics.`<br/>`event901-1000.event1000.value` | Tillämpar [produktsyntax](../vars/page-vars/products.md) för händelser. |
+| `xdm.productListItems[].productCategories[].categoryID` | Dimensionen [Kategori](../../components/dimensions/category.md). Se även sidvariabeln [products](../vars/page-vars/products.md). |
+| `xdm.productListItems[].name` | Dimensionen [Produkt](../../components/dimensions/product.md). Se även sidvariabeln [products](../vars/page-vars/products.md). Om både `xdm.productListItems[].SKU` och `xdm.productListItems[].name` innehåller data används värdet i `xdm.productListItems[].SKU`. |
+| `xdm.productListItems[].priceTotal` | Hjälper till att fastställa måttet [Intäkter](../../components/metrics/revenue.md). Se även sidvariabeln [products](../vars/page-vars/products.md). |
+| `xdm.productListItems[].quantity` | Hjälper till att fastställa måttet [Enheter](../../components/metrics/units.md). Se även sidvariabeln [products](../vars/page-vars/products.md). |
+| `xdm.productListItems[].SKU` | Dimensionen [Produkt](../../components/dimensions/product.md). Se även sidvariabeln [products](../vars/page-vars/products.md). Om både `xdm.productListItems[].SKU` och `xdm.productListItems[].name` innehåller data används värdet i `xdm.productListItems[].SKU`. |
+| `xdm.web.webInteraction.URL` | Implementeringsvariabeln [linkURL](../vars/config-vars/linkurl.md). |
+| `xdm.web.webInteraction.name` | Den [anpassade länken](../../components/dimensions/custom-link.md), [Hämta länken](../../components/dimensions/download-link.md) eller dimensionen [Avsluta länken](../../components/dimensions/exit-link.md), beroende på värdet i `xdm.web.webInteraction.type` |
+| `xdm.web.webInteraction.type` | Anger vilken typ av länk som klickas. Giltiga värden är `other` (anpassade länkar), `download` (hämtningslänkar) och `exit` (avsluta länkar). |
+| `xdm.web.webPageDetails.URL` | Dimensionen för [sid-URL](../../components/dimensions/page-url.md). |
+| `xdm.web.webPageDetails.isErrorPage` | Flagga som hjälper till att identifiera [dimensionen](../../components/dimensions/pages-not-found.md) och [måttet](../../components/metrics/pages-not-found.md) för sidor som inte hittades. |
+| `xdm.web.webPageDetails.name` | Dimensionen [Sida](../../components/dimensions/page.md). |
+| `xdm.web.webPageDetails.server` | Dimensionen [Server](../../components/dimensions/server.md). |
+| `xdm.web.webPageDetails.siteSection` | Dimensionen [Platsavsnitt](../../components/dimensions/site-section.md). |
+| `xdm.web.webReferrer.URL` | Dimensionen [Referent](../../components/dimensions/referrer.md). |
 
 {style="table-layout:auto"}
 
@@ -142,11 +142,11 @@ Tidigare uppdateringar av tabellen finns på den här sidans [implementeringshis
 
 ## Mappa andra XDM-fält till analysvariabler
 
-Om det finns mått eller mätvärden som du vill lägga till i Adobe Analytics kan du göra det genom [Kontextdatavariabler](../vars/page-vars/contextdata.md).
+Om det finns mått eller mätvärden som du vill lägga till i Adobe Analytics kan du göra det med [kontextdatavariabler](../vars/page-vars/contextdata.md).
 
 ### Implicit mappning
 
-Alla XDM-fältelement som inte mappas automatiskt skickas till Adobe Analytics som kontextdata med prefixet `a.x.` Du kan sedan mappa den här kontextvariabeln till den önskade Analytics-variabeln med [Bearbetar regler](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html). Om du till exempel skickar följande händelse:
+Alla XDM-fältelement som inte mappas automatiskt skickas till Adobe Analytics som kontextdata med prefixet `a.x.`. Du kan sedan mappa den här kontextdatavariabeln till den önskade analysvariabeln med [Bearbetningsregler](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html). Om du till exempel skickar följande händelse:
 
 ```js
 alloy("event",{
@@ -160,13 +160,13 @@ alloy("event",{
 })
 ```
 
-Web SDK skickar dessa data till Adobe Analytics som kontextdatavariabel `a.x._atag.search.term`. Du kan sedan använda en bearbetningsregel för att tilldela det kontextdatavariabelvärdet till den önskade analysvariabeln, till exempel ett `eVar`:
+Web SDK skickar dessa data till Adobe Analytics som kontextdatavariabeln `a.x._atag.search.term`. Du kan sedan använda en bearbetningsregel för att tilldela det kontextdatavariabelvärdet till den önskade Analytics-variabeln, till exempel en `eVar`:
 
-![Bearbetningsregel för sökterm](assets/examplerule.png)
+![Bearbetningsregel för söktermer](assets/examplerule.png)
 
 ## Explicit mappning
 
-Du kan också mappa XDM-fältelement explicit som kontextdata. Alla XDM-fältelement som uttryckligen mappas med `contextData` skickas till Adobe Analytics som kontextdata utan prefix. Du kan sedan mappa den här kontextvariabeln till den önskade Analytics-variabeln med [Bearbetar regler](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html). Om du till exempel skickar följande händelse:
+Du kan också mappa XDM-fältelement explicit som kontextdata. Alla XDM-fältelement som uttryckligen mappas med elementet `contextData` skickas till Adobe Analytics som kontextdata utan prefix. Du kan sedan mappa den här kontextdatavariabeln till den önskade Analytics-variabeln med [Bearbetningsregler](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html). Om du till exempel skickar följande händelse:
 
 ```js
 alloy("event",{
@@ -182,6 +182,6 @@ alloy("event",{
 })
 ```
 
-Web SDK skickar dessa data till Adobe Analytics som kontextdatavariabel `somevalue` med värde `1`.  Du kan sedan använda en bearbetningsregel för att tilldela det kontextdatavariabelvärdet till den önskade analysvariabeln, till exempel ett `eVar`:
+Web SDK skickar dessa data till Adobe Analytics som kontextdatavariabeln `somevalue` med värdet `1`.  Du kan sedan använda en bearbetningsregel för att tilldela det kontextdatavariabelvärdet till den önskade Analytics-variabeln, till exempel en `eVar`:
 
-![Bearbetningsregel för sökterm](assets/examplerule-explicit.png)
+![Bearbetningsregel för söktermer](assets/examplerule-explicit.png)

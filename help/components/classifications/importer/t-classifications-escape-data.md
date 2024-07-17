@@ -1,16 +1,16 @@
 ---
 description: Steg som beskriver hur klassificeringsdata kan undvikas i klassificeringsfilen.
-title: Avbryta klassificeringsdata
+title: Escape-klassificeringsdata
 feature: Classifications
 exl-id: 0d3a0e91-5537-43ee-bd28-9907ee6eb331
 source-git-commit: ce7f953b8f7f1f7d0616074454e4401937fcc0c7
 workflow-type: tm+mt
 source-wordcount: '92'
-ht-degree: 8%
+ht-degree: 2%
 
 ---
 
-# Avbryta klassificeringsdata
+# Escape-klassificeringsdata
 
 Så här undviker du klassificeringsdata i klassificeringsfilen:
 
@@ -22,11 +22,11 @@ Så här undviker du klassificeringsdata i klassificeringsfilen:
 
    >[!NOTE]
    >
-   >Om du vill ange ett format för v2.1 aktiverar du **[!UICONTROL Quoted Output]** vid export av filen på [!UICONTROL Classification Importer] sida ( [!UICONTROL Browser Export] eller [!UICONTROL FTP Export]).
+   >Om du vill ange formatet v2.1 aktiverar du **[!UICONTROL Quoted Output]** när du exporterar filen på [!UICONTROL Classification Importer]-sidan ( [!UICONTROL Browser Export] eller [!UICONTROL FTP Export]).
 
-1. Omge fältet som innehåller specialtecken med citattecken (`"`).
+1. Omge fältet som innehåller specialtecken med dubbla citattecken (`"`).
 
-Ett dubbelt citattecken kan visas i en escape-cell genom att det ersätts med två dubbla citattecken (`" "`). Exempel:
+Ett dubbelt citattecken kan förekomma i en escape-cell genom att ersätta det med två dubbla citattecken (`" "`). Exempel:
 
 ```
 My String "of data"

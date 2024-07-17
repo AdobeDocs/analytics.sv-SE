@@ -8,11 +8,11 @@ exl-id: 5b929821-e7ca-48e4-9196-0a6734a9566e
 source-git-commit: fb39f906d6c08713e4dc8211c917b2942502868e
 workflow-type: tm+mt
 source-wordcount: '109'
-ht-degree: 7%
+ht-degree: 0%
 
 ---
 
-# Skapa mer än en kopia av en förfrågan
+# Skapa mer än en kopia av en begäran
 
 Du kan skapa mer än en kopia av en originalbegäran genom att fylla i ett markerat cellområde med så många kopior av begäran som får plats.
 

@@ -13,25 +13,25 @@ ht-degree: 0%
 
 # registerPostTrackCallback
 
-The `registerPostTrackCallback` kan din organisation koppla en JavaScript-funktion omedelbart efter att en träff har skickats till Adobe. Om ett spårningsanrop misslyckas körs inte den här funktionen. Du kan använda den här variabeln för att skicka data som samlats in av AppMeasurementet till en partner eller intern infrastruktur, eller för att rensa upp variabelvärden i enkelsidiga program.
+Variabeln `registerPostTrackCallback` gör att din organisation kan koppla en JavaScript-funktion omedelbart efter att en träff har skickats till Adobe. Om ett spårningsanrop misslyckas körs inte den här funktionen. Du kan använda den här variabeln för att skicka data som samlats in av AppMeasurementet till en partner eller intern infrastruktur, eller för att rensa upp variabelvärden i enkelsidiga program.
 
 >[!WARNING]
 >
->Gör inga spårningsanrop som [`t()`](t-method.md) eller [`tl()`](tl-method.md) innanför `registerPostTrackCallback` variabel. Om du anger spårningsanrop i den här variabeln skapas en oändlig slinga med bildbegäranden!
+>Gör inga spårningsanrop som [`t()`](t-method.md) eller [`tl()`](tl-method.md) inuti variabeln `registerPostTrackCallback`. Om du anger spårningsanrop i den här variabeln skapas en oändlig slinga med bildbegäranden!
 
-Varje gång du ringer `registerPostTrackCallback` kan du koppla funktionen till den så att den körs direkt när en bildbegäran har skickats. Undvik att registrera samma funktion flera gånger i samma sidinläsning.
+Varje gång du anropar variabeln `registerPostTrackCallback` kopplar du den funktionen till körning omedelbart efter att en bildbegäran har skickats. Undvik att registrera samma funktion flera gånger i samma sidinläsning.
 
 >[!NOTE]
 >
->Tidpunkt och ordning för de funktioner som utlöses mellan [`registerPreTrackCallback`](registerpretrackcallback.md) och `registerPostTrackCallback` är inte garanterade. Undvik beroenden mellan dessa två funktioner.
+>Tidsangivelsen och ordningen för funktioner som utlösts mellan [`registerPreTrackCallback`](registerpretrackcallback.md) och `registerPostTrackCallback` garanteras inte. Undvik beroenden mellan dessa två funktioner.
 
-## Återanrop efter spår med tillägget Web SDK
+## Post-track-återanrop med Web SDK-tillägget
 
 Kommer snart!
 
-## Efterspårets återanrop implementerar Web SDK manuellt
+## Post-track-återanrop som implementerar Web SDK manuellt
 
-Du kan använda ett JavaScript-uttryck när du skickar en händelse för att registrera en funktion efter att data har skickats till Adobe.
+Du kan använda en JavaScript Promise när du skickar en händelse för att registrera en funktion efter att data har skickats till Adobe.
 
 ```js
 alloy("sendEvent",{
@@ -41,21 +41,21 @@ alloy("sendEvent",{
 });
 ```
 
-Se [Hantera svar från händelser](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/tracking-events.html#handling-responses-from-events) finns i Web SDK-dokumentationen.
+Mer information finns i [Hantera svar från händelser](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/tracking-events.html#handling-responses-from-events) i Web SDK-dokumentationen.
 
-## Registrera återanrop efter spår med Adobe Analytics-tillägget
+## Registrera Post-track-återanrop med tillägget Adobe Analytics
 
 Det finns inget dedikerat fält i Adobe Analytics-tillägget som kan använda den här variabeln. Använd den anpassade kodredigeraren enligt AppMeasurementen syntax.
 
 ## s.registerPostTrackCallback i AppMeasurementet och den anpassade kodredigeraren för Analytics-tillägget
 
-The `s.registerPostTrackCallback` är en funktion som tar en funktion som enda argument. Den kapslade funktionen körs omedelbart när en bildbegäran har skickats.
+`s.registerPostTrackCallback` är en funktion som tar en funktion som enda argument. Den kapslade funktionen körs omedelbart när en bildbegäran har skickats.
 
 ```js
 s.registerPostTrackCallback(function(){/* Desired code */});
 ```
 
-Om du vill använda URL:en för bildbegäran i koden ska du referera till `requestUrl` strängargument i den kapslade funktionen. Du kan analysera `requestUrl` -variabel för det du vill använda. Om du justerar den här variabeln påverkas inte datainsamlingen.
+Om du vill använda URL:en för bildbegäran i koden refererar du till strängargumentet `requestUrl` i den kapslade funktionen. Du kan tolka variabeln `requestUrl` om du vill använda den. Om du justerar variabeln påverkas inte datainsamlingen.
 
 ```js
 s.registerPostTrackCallback(function(requestUrl){
@@ -63,7 +63,7 @@ s.registerPostTrackCallback(function(requestUrl){
 });
 ```
 
-Ytterligare argument kan inkluderas i `s.registerPostTrackCallback` som kan användas i den kapslade funktionen:
+Ytterligare argument kan inkluderas i funktionen `s.registerPostTrackCallback`, som kan användas i den kapslade funktionen:
 
 ```js
 s.registerPostTrackCallback(function(requestUrl,a,b,c) {
@@ -76,7 +76,7 @@ s.registerPostTrackCallback(function(requestUrl,a,b,c) {
 
 ## Använd skiftläge
 
-Registrerar [`clearVars()`](clearvars.md) funktionen i återanropet efter spåret kan vara bra för enkelsidiga program. Varje gång du skickar en träff till Adobe `clearVars()` funktionen körs. Implementeringen kan sedan definiera variabler igen utan att oroa dig för felaktigt bestående värden.
+Det kan vara bra att registrera funktionen [`clearVars()`](clearvars.md) i återanropet efter spåret för enkelsidiga program. Varje gång du skickar en träff till Adobe körs funktionen `clearVars()`. Implementeringen kan sedan definiera variabler igen utan att oroa dig för felaktigt bestående värden.
 
 ```js
 s.registerPostTrackCallback(function(){s.clearVars();});

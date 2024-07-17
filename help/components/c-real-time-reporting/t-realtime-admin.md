@@ -5,8 +5,8 @@ feature: Real-time
 exl-id: 9e7fc67c-71d5-465a-9553-5bb7e02a9bfd
 source-git-commit: ee55349a8c676023a5ce33b56592cad7642199b8
 workflow-type: tm+mt
-source-wordcount: '276'
-ht-degree: 2%
+source-wordcount: '272'
+ht-degree: 0%
 
 ---
 
@@ -18,7 +18,7 @@ Det består av att välja rapportsviten och konfigurera upp till tre rapporter f
 
 1. Välj den rapportsvit som du vill aktivera realtidsrapporter för.
 
-   1. I Analysis Workspace väljer du [!UICONTROL **Arbetsyta**] tabbtangenten och sedan välja [!UICONTROL **Rapporter**] > [!UICONTROL **Engagemang**] > **[!UICONTROL Real-Time]**.
+   1. I Analysis Workspace väljer du fliken [!UICONTROL **Workspace**] och sedan [!UICONTROL **Rapporter**] > [!UICONTROL **engagemang**] > **[!UICONTROL Real-Time]**.
 
    1. Välj rapportsviten i listrutan högst upp:
 
@@ -28,16 +28,16 @@ Det består av att välja rapportsviten och konfigurera upp till tre rapporter f
 
       ![](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/realtime/assets/rep_suite_not_set_up.png)
 
-1. Välj **[!UICONTROL Configure]** för att köra [!UICONTROL Report Suite Manager].
+1. Välj **[!UICONTROL Configure]** om du vill köra [!UICONTROL Report Suite Manager].
 
    (Även tillgängligt under **[!UICONTROL Analytics]** > **[!UICONTROL Admin > Report Suites]** > **[!UICONTROL Edit Settings]** > **[!UICONTROL Real-Time]**.)
 
-1. Aktivera **[!UICONTROL Enable Real-Time]** inställning.
+1. Aktivera inställningen **[!UICONTROL Enable Real-Time]**.
 1. Ställ in datainsamling i realtid för upp till tre rapporter, med ett mått och tre dimensioner eller klassificeringar per rapport.
 
    ![](assets/real_time_admin.png)
 
-   Information om vilka realtidsvärden och -dimensioner som stöds finns i [Mätvärden och Dimensioner som stöds](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/realtime/realtime-metrics.md).
+   Mer information om vilka realtidsmått och -mått som stöds finns i [Metrisk och Dimensioner som stöds](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/realtime/realtime-metrics.md).
 
    Om du har skapat klassificeringar visas de med indrag under den dimension som de definierats för:
 
@@ -57,6 +57,6 @@ Det består av att välja rapportsviten och konfigurera upp till tre rapporter f
 
 1. Välj **[!UICONTROL Save]** eller **[!UICONTROL Save and View Report]**.
 
-   Efter den här initiala rapportkonfigurationen kan det ta upp till 20 minuter innan data börjar strömmas. Från och med då blir data omedelbart tillgängliga. Mer information om hur du visar realtidsrapporter finns i [Köra en realtidsrapport](https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/t-running-report-types.html).
+   Efter den här initiala rapportkonfigurationen kan det ta upp till 20 minuter innan data börjar strömmas. Från och med då blir data omedelbart tillgängliga. Mer information om hur du visar realtidsrapporter finns i [Kör en realtidsrapport](https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/t-running-report-types.html).
 
 1. Som standard har alla användare åtkomst till realtidsrapporter.

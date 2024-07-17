@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Månad
 
-&#39;Månad&#39; [dimension](overview.md) rapporterar månaden när ett visst mått inträffade. Den första dimensionsuppgiften är den första månaden i datumintervallet och den sista dimensionsuppgiften är den sista månaden i datumintervallet. Denna dimension är viktig för trendrapporter, eftersom den gör att ni kan se mätvärden över tid.
+Månad [dimension](overview.md) rapporterar månaden när ett givet mätvärde inträffade. Den första dimensionsuppgiften är den första månaden i datumintervallet och den sista dimensionsuppgiften är den sista månaden i datumintervallet. Denna dimension är viktig för trendrapporter, eftersom den gör att ni kan se mätvärden över tid.
 
 ## Fyll den här dimensionen med data
 

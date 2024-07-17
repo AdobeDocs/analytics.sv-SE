@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # charSet
 
-The `charSet` variabeln används av Adobe för att konvertera inkommande data till UTF-8 för lagring och rapportering från Analytics. De flesta webbplatser behöver inte ange den här variabeln.
+Variabeln `charSet` används av Adobe för att konvertera inkommande data till UTF-8 för lagring och rapportering från Analytics. De flesta webbplatser behöver inte ange den här variabeln.
 
 Ange bara den här variabeln om du ser förvrängda värden ([mojibake](https://en.wikipedia.org/wiki/Mojibake)) i rapporter. Du kan ange den här variabeln sida för sida om webbplatsen använder olika kodningar på olika sidor.
 
@@ -23,18 +23,18 @@ Web SDK har för närvarande bara stöd för UTF-8, och har inga alternativ för
 
 ## Teckenuppsättning i Adobe Analytics-tillägget
 
-Teckenuppsättning är ett fält under [!UICONTROL General] när du konfigurerar Adobe Analytics-tillägget i Adobe Experience Platform Data Collection.
+Teckenuppsättning är ett fält under dragspelet [!UICONTROL General] när du konfigurerar Adobe Analytics-tillägget i Adobe Experience Platform Data Collection.
 
-1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med dina inloggningsuppgifter för AdobeID.
 1. Klicka på den önskade taggegenskapen.
-1. Gå till [!UICONTROL Extensions] klickar du på **[!UICONTROL Configure]** under Adobe Analytics.
-1. Expandera [!UICONTROL General] dragspelspanel, som visar [!UICONTROL Character Set] fält.
+1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen **[!UICONTROL Configure]** under Adobe Analytics.
+1. Expandera dragspelsfliken [!UICONTROL General] som visar fältet [!UICONTROL Character Set].
 
-Du kan antingen använda en förinställd teckenuppsättning eller en anpassad teckenuppsättning. Undvik att ändra värdet från `UTF-8` om du inte ser förvrängda värden i rapporter.
+Du kan antingen använda en förinställd teckenuppsättning eller en anpassad teckenuppsättning. Ändra inte värdet från `UTF-8` om du inte ser förvrängda värden i rapporter.
 
 ## s.charSet i AppMeasurementet och den anpassade kodredigeraren för Analytics-tillägget
 
-The `charSet` är en sträng. Om du har förvrängda värden i Adobe Analytics anger du variabeln till samma värde som `<meta charset="">` HTML-tagg på din webbplats.
+Variabeln `charSet` är en sträng. Om du har förvrängt värden i Adobe Analytics anger du den här variabeln till samma värde som taggen `<meta charset="">` HTML på din webbplats.
 
 ```js
 s.charSet = "UTF-8";

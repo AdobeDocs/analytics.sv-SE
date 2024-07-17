@@ -14,7 +14,7 @@ ht-degree: 9%
 
 Nedan följer några av de viktigaste sätten som Adobe Analytics kan hjälpa företag att få viktiga insikter för att bättre kunna betjäna sina kunder.
 
-Mer information om fördelarna med Adobe Analytics finns i [Adobe Analytics produktsida](https://business.adobe.com/products/analytics/adobe-analytics.html).
+Mer information om fördelarna med Adobe Analytics finns på [Adobe Analytics produktsida](https://business.adobe.com/products/analytics/adobe-analytics.html).
 
 ## Webbanalys
 
@@ -24,7 +24,7 @@ Adobe Analytics tillhandahåller följande komplexa segmenterings- och prediktiv
 
 * [Flödesanalys](/help/analyze/analysis-workspace/visualizations/c-flow/flow.md)
 
-* [avancerad segmentering](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-home.html)
+* [Avancerad segmentering](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-home.html)
 
 
 ## Marknadsföringsanalys
@@ -33,7 +33,7 @@ Adobe Analytics hjälper organisationer att förstå var kunderna interagerar me
 
 Följande viktiga funktioner i Adobe Analytics:
 
-* [Samling av flerkanalsdata](https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/reporting-interface/overview-data-collection.html)
+* [Datainsamling för flera kanaler](https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/reporting-interface/overview-data-collection.html)
 
 * [Integrering av offlinedata](https://experienceleague.adobe.com/docs/analytics/import/data-sources/overview.html)
 
@@ -43,7 +43,7 @@ Följande viktiga funktioner i Adobe Analytics:
 
 Med attribuering kan organisationer se hur olika interaktioner under kundresan påverkar konverteringen. Förutom att tillhandahålla fler traditionella attribueringsalternativ, som Linear- eller First Touch-modeller, använder Attribution i Adobe Analytics även maskininlärning och avancerade statistiska modeller för att förstå den exakta effekten av varje beröring.
 
-Mer information finns i [Attributmodeller och uppslagsfönster](/help/analyze/analysis-workspace/attribution/models.md).
+Mer information finns i [Attribution models and lookback windows](/help/analyze/analysis-workspace/attribution/models.md).
 
 ## Prediktiv analys
 

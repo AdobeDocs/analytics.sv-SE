@@ -15,9 +15,9 @@ ht-degree: 0%
 
 {{plug-in}}
 
-The `getTimeParting` Med plugin-programmet kan du hämta information om när mätbara aktiviteter äger rum på din webbplats. Denna plugin är värdefull när du vill att mätvärden ska delas upp efter en upprepningsbar uppdelning av tiden i ett visst datumintervall. Du kan till exempel jämföra konverteringsgraden mellan två olika veckodagar, till exempel alla söndagar jämfört med alla torsdagar. Du kan också jämföra tidsperioder på dagen, t.ex. alla tider jämfört med alla kvällar.
+Med plugin-programmet `getTimeParting` kan du samla in information om när mätbara aktiviteter äger rum på din plats. Denna plugin är värdefull när du vill att mätvärden ska delas upp efter en upprepningsbar uppdelning av tiden i ett visst datumintervall. Du kan till exempel jämföra konverteringsgraden mellan två olika veckodagar, till exempel alla söndagar jämfört med alla torsdagar. Du kan också jämföra tidsperioder på dagen, t.ex. alla tider jämfört med alla kvällar.
 
-Analysis Workspace har liknande färdiga dimensioner som formateras något annorlunda än denna plugin. Se [tidsdelningsdimensioner](/help/analyze/analysis-workspace/components/dimensions/time-parting-dimensions.md) i användarhandboken Analyze om du vill ha mer information. Vissa organisationer tycker att Analysis Workspace färdiga dimensioner är tillräckliga.
+Analysis Workspace har liknande färdiga dimensioner som formateras något annorlunda än denna plugin. Mer information finns i [Tidsdelningsdimensioner](/help/analyze/analysis-workspace/components/dimensions/time-parting-dimensions.md) i användarhandboken för Analysera. Vissa organisationer tycker att Analysis Workspace färdiga dimensioner är tillräckliga.
 
 >[!IMPORTANT]
 >
@@ -27,15 +27,15 @@ Analysis Workspace har liknande färdiga dimensioner som formateras något annor
 
 Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-programmen med Web SDK.
 
-1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
-1. Klicka **[!UICONTROL Tags]** till vänster och klicka sedan på den önskade taggegenskapen.
-1. Klicka **[!UICONTROL Extensions]** till vänster och klicka sedan på **[!UICONTROL Catalog]** tab
-1. Leta rätt på och installera **[!UICONTROL Common Web SDK Plugins]** tillägg.
-1. Klicka **[!UICONTROL Data Elements]** till vänster och klicka sedan på dataelementet.
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med dina inloggningsuppgifter för AdobeID.
+1. Klicka på **[!UICONTROL Tags]** till vänster och klicka sedan på den önskade taggegenskapen.
+1. Klicka på **[!UICONTROL Extensions]** till vänster och sedan på fliken **[!UICONTROL Catalog]**
+1. Leta reda på och installera tillägget **[!UICONTROL Common Web SDK Plugins]**.
+1. Klicka på **[!UICONTROL Data Elements]** till vänster och klicka sedan på det önskade dataelementet.
 1. Ange det önskade dataelementnamnet med följande konfiguration:
    * Tillägg: Vanliga SDK-plugin-program för webben
    * Dataelement: `getTimeParting`
-1. Ange `Time Zone` -parametern till höger.
+1. Ange parametern `Time Zone` till höger.
 1. Spara och publicera ändringarna i dataelementet.
 
 ## Installera plugin-programmet manuellt för att implementera Web SDK
@@ -46,10 +46,10 @@ Denna plugin stöds ännu inte för användning i en manuell implementering av W
 
 Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-programmen med Adobe Analytics.
 
-1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med dina inloggningsuppgifter för AdobeID.
 1. Klicka på den önskade taggegenskapen.
-1. Gå till [!UICONTROL Extensions] klickar du på [!UICONTROL Catalog] knapp
-1. Installera och publicera [!UICONTROL Common Analytics Plugins] extension
+1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Catalog]
+1. Installera och publicera tillägget [!UICONTROL Common Analytics Plugins]
 1. Om du inte redan har det skapar du en regel med namnet&quot;Initiera plugin-program&quot; med följande konfiguration:
    * Villkor: Inget
    * Händelse: Kärna - Bibliotek inläst (sidan ovanpå)
@@ -62,10 +62,10 @@ Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-program
 
 Om du inte vill använda tillägget för Common Analytics-plugin-program kan du använda den anpassade kodredigeraren.
 
-1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med dina inloggningsuppgifter för AdobeID.
 1. Klicka på önskad egenskap.
-1. Gå till [!UICONTROL Extensions] klickar du på **[!UICONTROL Configure]** under Adobe Analytics-tillägget.
-1. Expandera [!UICONTROL Configure tracking using custom code] dragspelspanel, som visar [!UICONTROL Open Editor] -knappen.
+1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen **[!UICONTROL Configure]** under Adobe Analytics-tillägget.
+1. Expandera dragspelsfliken [!UICONTROL Configure tracking using custom code] som visar knappen [!UICONTROL Open Editor].
 1. Öppna den anpassade kodredigeraren och klistra in den plugin-kod som finns nedan i redigeringsfönstret.
 1. Spara och publicera ändringarna i Analytics-tillägget.
 
@@ -82,18 +82,18 @@ function getTimeParting(t){var c=t;if("-v"===t)return{plugin:"getTimeParting",ve
 
 ## Använda plugin-programmet
 
-The `getTimeParting` funktionen använder följande argument:
+Funktionen `getTimeParting` använder följande argument:
 
-**`t`** (Valfri men rekommenderad sträng): Namnet på den tidszon som besökarens lokala tid ska konverteras till.  Standardvärdet är UTC/GMT-tid. Se [Lista över TZ-databasens tidszoner](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) på Wikipedia för en fullständig lista över giltiga värden.
+**`t`** (Valfritt men rekommenderat, sträng): Namnet på den tidszon som besökarens lokala tid ska konverteras till.  Standardvärdet är UTC/GMT-tid. En fullständig lista över giltiga värden finns i [Lista över TZ-databasens tidszoner](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) på Wikipedia.
 
 Vanliga giltiga värden är:
 
 * `"America/New_York"` för Eastern Time
 * `"America/Chicago"` för centraltid
-* `"America/Denver"` för Mountain Time
+* `"America/Denver"` för bergstid
 * `"America/Los_Angeles"` för Pacific Time
 
-När den här funktionen anropas returneras en sträng som innehåller följande avgränsade med ett rör (`|`):
+Anrop till den här funktionen returnerar en sträng som innehåller följande avgränsade med en pipe (`|`):
 
 * Det aktuella året
 * Den aktuella månaden
@@ -154,11 +154,11 @@ s.eVar13 = getTimeParting("Australia/Sydney");
 ### 5.0 (17 april 2018)
 
 * Point Release (omkompilerad, mindre kodstorlek)
-* Behovet av `tpDST` parameter, eftersom start-/slutdatum för sommartid nu identifieras automatiskt
+* Behovet av parametern `tpDST` har tagits bort eftersom start-/slutdatum för sommartid nu identifieras automatiskt
 
 >[!CAUTION]
 >
->Tidigare versioner av denna plugin kunde inte användas för alla år i framtiden. Om du använder en tidigare version av detta plugin-program rekommenderar Adobe starkt att du uppgraderar till den senaste versionen för att undvika JavaScript-fel och dataförluster. Om det inte går att uppgradera det här plugin-programmet kontrollerar du att `s._tpdst` -variabeln i plugin-programkoden innehåller lämpliga år i framtiden.
+>Tidigare versioner av denna plugin kunde inte användas för alla år i framtiden. Om du använder en tidigare version av detta plugin-program rekommenderar Adobe starkt att du uppgraderar till den senaste versionen för att undvika JavaScript-fel och dataförlust. Om det inte går att uppgradera det här plugin-programmet kontrollerar du att variabeln `s._tpdst` i plugin-programkoden innehåller rätt år i framtiden.
 
 ### 4.0 (22 augusti 2016)
 

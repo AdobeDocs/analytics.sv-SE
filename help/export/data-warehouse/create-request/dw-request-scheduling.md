@@ -18,25 +18,25 @@ Mer information om hur du börjar skapa en begäran och länkar till andra vikti
 
 Så här konfigurerar du schemaläggningsalternativ för en Data Warehouse:
 
-1. Om du inte redan har gjort det börjar du skapa en förfrågan i Adobe Analytics genom att välja **[!UICONTROL Tools]** > **[!UICONTROL Data Warehouse]** > [!UICONTROL **Lägg till**].
+1. Om du inte redan har gjort det börjar du skapa en begäran i Adobe Analytics genom att välja **[!UICONTROL Tools]** > **[!UICONTROL Data Warehouse]** > [!UICONTROL **Lägg till**].
 
    Mer information finns i [Skapa en begäran om Data Warehouse](/help/export/data-warehouse/create-request/t-dw-create-request.md).
 
-1. På sidan Ny Data Warehouse väljer du [!UICONTROL **Schemaläggningsalternativ**] -fliken.
+1. Markera fliken [!UICONTROL **Schemaläggningsalternativ**] på sidan Ny Data Warehouse.
 
-   ![Målflik för rapport](assets/dw-scheduling-options.png) <!-- update screenshot -->
+   ![Fliken Rapportmål](assets/dw-scheduling-options.png) <!-- update screenshot -->
 
 1. Ange följande fält:
 
    | Alternativ | Funktion |
    |---------|----------|
-   | [!UICONTROL **Skicka rapporten nu**] | Skickar rapporten som en engångsrapport. När det här alternativet är markerat döljs alla schemaläggningsalternativ. |
-   | [!UICONTROL **Schemalägg senare**] | Anger alternativ för schemaläggning av rapportleverans. Alla alternativ beskrivs nedan. |
-   | [!UICONTROL **Rapportfrekvens**] | Hur ofta rapporter levereras. <p>Följande alternativ är tillgängliga:</p><ul><li>Varje timme</li><p>[!UICONTROL **Varje timme**] är bara tillgängligt när [!UICONTROL **Datumintervall**] på [!UICONTROL **Allmänna inställningar**] tabben är inställd på [!UICONTROL **Senaste timmen**].</p><li>Dagligen</li><li>Veckovis</li><li>Månadsvis</li><li>Årlig</li></ul><p>Ytterligare alternativ visas beroende på vilken frekvens du väljer.</p> |
-   | [!UICONTROL **Startar**] | Det datum då det nya schemat ska börja. |
+   | [!UICONTROL **Skicka rapport nu**] | Skickar rapporten som en engångsrapport. När det här alternativet är markerat döljs alla schemaläggningsalternativ. |
+   | [!UICONTROL **Schemalägg för senare**] | Anger alternativ för schemaläggning av rapportleverans. Alla alternativ beskrivs nedan. |
+   | [!UICONTROL **Rapporteringsfrekvens**] | Hur ofta rapporter levereras. <p>Följande alternativ är tillgängliga:</p><ul><li>Varje timme</li><p>[!UICONTROL **Varje timme**] är bara tillgänglig när alternativet [!UICONTROL **Datumintervall**] på fliken [!UICONTROL **Allmänna inställningar**] är inställt på [!UICONTROL **Senaste timmen**].</p><li>Dagligen</li><li>Veckovis</li><li>Månadsvis</li><li>Årlig</li></ul><p>Ytterligare alternativ visas beroende på vilken frekvens du väljer.</p> |
+   | [!UICONTROL **Från och med**] | Det datum då det nya schemat ska börja. |
    | [!UICONTROL **Tid på dagen**] | Tiden på dagen som rapporten ska skickas. |
    | [!UICONTROL **Alternativ för slutleverans**] | Välj när de schemalagda leveranserna ska avslutas. Du kan välja att aldrig sluta, att sluta efter ett visst antal förekomster eller att avsluta ett visst datum. |
 
    {style="table-layout:auto"}
 
-1. Fortsätt konfigurera din Data Warehouse-förfrågan på [!UICONTROL **E-postmeddelande**] -fliken. Mer information finns i [Konfigurera ett e-postmeddelande för en Data Warehouse](/help/export/data-warehouse/create-request/dw-request-email.md).
+1. Fortsätt konfigurera din Data Warehouse-förfrågan på fliken [!UICONTROL **Meddelande-e-post**]. Mer information finns i [Konfigurera ett e-postmeddelande för en Data Warehouse](/help/export/data-warehouse/create-request/dw-request-email.md).

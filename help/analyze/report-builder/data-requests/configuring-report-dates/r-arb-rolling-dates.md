@@ -1,6 +1,6 @@
 ---
 description: Fältdefinitioner för rullande datum i Report Builder.
-title: Definitioner i frågeguiden – rullande datum
+title: Definitioner av begärandeguiden - rullande datum
 uuid: 19e25900-96a3-4f6c-9551-9f7af8cc6963
 feature: Report Builder
 role: User, Admin
@@ -8,11 +8,11 @@ exl-id: 31caee9b-3488-4dc7-b5b1-361b153c8b68
 source-git-commit: d218d07ec16e981d7e148092b91fbbd5711e840f
 workflow-type: tm+mt
 source-wordcount: '75'
-ht-degree: 14%
+ht-degree: 0%
 
 ---
 
-# Definitioner i frågeguiden – rullande datum
+# Definitioner av begärandeguiden - rullande datum
 
 Fältdefinitioner för rullande datum i Report Builder.
 
@@ -26,7 +26,7 @@ Fältdefinitioner för rullande datum i Report Builder.
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Anpassa uttryck </p> </td> 
-   <td colname="col2"> <p>Se <a href="/help/analyze/report-builder/data-requests/configuring-report-dates/c-customized-date-expressions/t-customized-date-expressions.md"   > Anpassade datumuttryck</a>. </p> </td> 
+   <td colname="col2"> <p>Se <a href="/help/analyze/report-builder/data-requests/configuring-report-dates/c-customized-date-expressions/t-customized-date-expressions.md"   > Anpassade datumuttryck </a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> Från och med </p> </td> 

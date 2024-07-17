@@ -12,13 +12,13 @@ ht-degree: 0%
 
 # Egen länk
 
-The Custom link [dimension](overview.md) rapporterar namnen på anpassade länkar som implementerats på din plats. Den här dimensionen är värdefull när du vill förstå vilka typer av länkar besökarna klickar mest på.
+Den anpassade länken [dimension](overview.md) rapporterar namnen på anpassade länkar som implementerats på din plats. Den här dimensionen är värdefull när du vill förstå vilka typer av länkar besökarna klickar mest på.
 
 ## Fyll den här dimensionen med data
 
-Den här dimensionen samlar in data från [`pev2` frågesträng](/help/implement/validate/query-parameters.md) i bildförfrågningar för träffar som också har `pe` frågesträng med värdet för `lnk_o`. Om `pe` frågesträngen har ett annat värde i träffen, den här dimensionen samlar inte in data.
+Den här dimensionen samlar in data från [`pev2`-frågesträngen ](/help/implement/validate/query-parameters.md) i bildbegäranden för träffar som också har frågesträngen `pe` med värdet `lnk_o`. Om frågesträngen `pe` har ett annat värde i träffen samlar dimensionen inte in data.
 
-Om du vill skicka data till den här dimensionen med AppMeasurement skickar du en [`tl()`](/help/implement/vars/functions/tl-method.md) bildbegäran med ett länktypargument av `"o"`. Fyll i länknamnsargumentet med det önskade värdet.
+Om du vill skicka data till den här dimensionen med AppMeasurement skickar du en [`tl()`](/help/implement/vars/functions/tl-method.md)-bildbegäran med länktypsargumentet `"o"`. Fyll i länknamnsargumentet med det önskade värdet.
 
 ## Dimensioner
 

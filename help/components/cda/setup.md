@@ -17,7 +17,7 @@ När alla förutsättningar är uppfyllda gör du följande för att aktivera en
 
 >[!IMPORTANT]
 >
->Alla förutsättningar måste vara uppfyllda innan du följer dessa steg. Om alla förutsättningar inte uppfylls är funktionen inte tillgänglig eller fungerar inte. Se [översiktssida](overview.md) och önskad sammanfogningsmetod ([Fältbaserad stygn](field-based-stitching.md) eller [Enhetsdiagram](device-graph.md),) för krav och begränsningar.
+>Alla förutsättningar måste vara uppfyllda innan du följer dessa steg. Om alla förutsättningar inte uppfylls är funktionen inte tillgänglig eller fungerar inte. Se [översiktssidan](overview.md) och önskad sammanfogningsmetod ([Fältbaserad sammanfogning](field-based-stitching.md) respektive [Enhetsdiagram](device-graph.md)) för krav och begränsningar.
 
 ## 1. Öppna en biljett hos Kundtjänst om du vill att CDA ska vara etablerat på din enhetsövergripande rapportsvit.
 
@@ -36,9 +36,9 @@ När du har försett kundtjänst med den här informationen arbetar de tillsamma
 
 Administratörer med behörighet att skapa virtuella rapportsviter kan skapa virtuella CDA-rapportsviter enligt följande:
 
-1. Navigera till [experiencecloud.adobe.com](https://experiencecloud.adobe.com) och logga in med inloggningsuppgifterna för ditt AdobeID.
+1. Navigera till [ExperienceCloud.adobe.com](https://experiencecloud.adobe.com) och logga in med dina inloggningsuppgifter för AdobeID.
 2. Klicka på ikonen med nio rutnät längst upp och klicka sedan på Analytics (Analyser).
-3. Hovring **[!UICONTROL Components]** överst och sedan klickar du **[!UICONTROL Virtual report suites]**.
+3. Håll pekaren över **[!UICONTROL Components]** överst och klicka sedan på **[!UICONTROL Virtual report suites]**.
 4. Klicka på Lägg till.
 5. Ange ett namn för den virtuella rapportsviten och kontrollera att den CDA-aktiverade rapportsviten är vald.
 6. (Valfritt) Använd ett segment i den virtuella rapportsviten. Du kan till exempel använda ett segment som begränsar den virtuella rapportsviten till datum efter att CDA aktiverats och sammanfogningen påbörjats. Med det här segmentet kan användare bara se sammanslagna datumintervall i den virtuella rapportsviten.
@@ -53,7 +53,7 @@ Administratörer med behörighet att skapa virtuella rapportsviter kan skapa vir
 När Enhetsövergripande analys är aktiverat på en virtuell rapportserie bör du tänka på följande ändringar:
 
 * En ny enhetsikon visas bredvid namnet på den virtuella rapportsviten. Den här ikonen är exklusiv för virtuella rapportsviter på olika enheter.
-* En ny dimension med etiketten [Identifierat läge](../dimensions/identified-state.md) är tillgängligt.
-* Nya mätvärden märkta [Folk](../metrics/people.md), [Unika enheter](../metrics/unique-devices.md), [Identifierade personer](../metrics/identified-people.md), [Oidentifierade personer](../metrics/unidentified-people.md)och [Personer med Experience Cloud ID](../metrics/people-with-exp-cloud-id.md) är tillgängliga.
-* Måttet [Unika besökare](../metrics/unique-visitors.md) är inte tillgängligt eftersom det har ersatts med Personer och Unika enheter.
+* En ny dimension med namnet [Identifierat läge](../dimensions/identified-state.md) är tillgänglig.
+* Det finns nya mätvärden med etiketterna [Personer](../metrics/people.md), [Unika enheter](../metrics/unique-devices.md), [Identifierade personer](../metrics/identified-people.md), [Identifierade personer](../metrics/unidentified-people.md) och [Personer med Experience Cloud-ID](../metrics/people-with-exp-cloud-id.md).
+* Måttet [Unika besökare](../metrics/unique-visitors.md) är inte tillgängligt eftersom det ersätts med Personer och Unika enheter.
 * När du skapar segment ersätts segmentbehållaren &quot;Visitor&quot; med en &quot;Person&quot;-behållare.

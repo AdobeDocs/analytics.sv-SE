@@ -27,4 +27,4 @@ Följande alternativ för mediehantering är tillgängliga när du redigerar en 
 
   Specifika klassificeringar för tillägget Direktuppspelad mediesamling finns på sidan Medieklassificeringar. Mer information om klassificeringar finns i [Konverteringsklassificeringar](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/conversion-classifications.md).
 
-Allmän information om hur du integrerar strömmande mediedata i Adobe Analytics finns i [Tilläggsguide för direktuppspelad mediesamling](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html).
+Allmän information om hur du integrerar direktuppspelande mediedata i Adobe Analytics finns i [tilläggsguiden för direktuppspelande mediainsamling](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html).

@@ -5,26 +5,26 @@ feature: Metrics
 exl-id: 8ba54990-ff7d-4693-92de-7f9d9f916b55
 source-git-commit: 26e166e065df90cb327fe1106542e17831069141
 workflow-type: tm+mt
-source-wordcount: '282'
-ht-degree: 2%
+source-wordcount: '291'
+ht-degree: 0%
 
 ---
 
 # Innehållshastighet
 
-Med det beräknade innehållshastigheten kan du mäta hur en dimension (vanligtvis [[!UICONTROL Page]](/help/components/dimensions/page.md)) bidrar till att användarna spenderar tid på er webbplats eller i er app.
+Med det beräknade innehållshastighetsmätningen kan du mäta hur en dimension (vanligtvis [[!UICONTROL Page]](/help/components/dimensions/page.md)) bidrar till att användarna spenderar tid på din webbplats eller app.
 
-Det här måttet använder [Deltagande](/help/analyze/analysis-workspace/attribution/models.md) på [Sidvyer](page-views.md) som en del av beräkningen. När man träffar en sida vid besöket får alla sidor som tidigare träffats under samma besök också poäng för sidvisningen. Den här formeln innebär vanligtvis att ju tidigare en sida trycks ned under ett besök, desto mer kredit får den. (Se [Sidvyer (deltagande | Besök) eller Besök deltagandet](#page-views-participation--visit-or-visit-participation) för mer information.)
+Det här måttet använder [Deltagandeattribuering](/help/analyze/analysis-workspace/attribution/models.md) på måttet för [sidvisningar](page-views.md) som en del av beräkningen. När man träffar en sida vid besöket får alla sidor som tidigare träffats under samma besök också poäng för sidvisningen. Den här formeln innebär vanligtvis att ju tidigare en sida trycks ned under ett besök, desto mer kredit får den. (Se [Sidvyer (deltagande) | Mer information finns på ) eller &#39;Besök deltagandet&#39;](#page-views-participation--visit-or-visit-participation) .)
 
 ## Beräkning
 
-&#39;Innehållshastighet&#39; är en standardberäkning [mått](overview.md) och använder formeln `Page views (Visit participation)` dividerat med `Visits`.
+Innehållshastighet är en standardberäknad [metrisk](overview.md) och formeln `Page views (Visit participation)` dividerad med `Visits` används.
 
 ![](assets/cont-velo-1.png)
 
 ## Vanliga användningsområden
 
-[!UICONTROL Content Velocity] används ofta i innehållsanalys tillsammans med andra viktiga mätvärden som [!UICONTROL Page Views], [!UICONTROL Visits]och [!UICONTROL Bounce Rate].
+[!UICONTROL Content Velocity] används vanligtvis i innehållsanalys tillsammans med andra nyckelmått som [!UICONTROL Page Views], [!UICONTROL Visits] och [!UICONTROL Bounce Rate].
 
 ![](assets/cont-velo-3.png)
 

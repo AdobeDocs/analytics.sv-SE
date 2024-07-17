@@ -7,7 +7,7 @@ exl-id: b7a2e5d5-99d4-408d-84e6-67abff9e8727
 source-git-commit: e0a4caec9bc58a0846cd46871aad3bed99d218a3
 workflow-type: tm+mt
 source-wordcount: '251'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 I enstaka fall kan vissa faktorer påverka datakvaliteten. Punkttrafik, implementeringsändringar eller driftavbrott kan påverka integriteten hos insamlade data. De komplicerar också analysen av hur händelsen kan ha påverkat informationens fullständighet.
 
-Intelligent datautjämning är en prototyp i [Analytics Labs](/help/analyze/labs.md) som kan bidra till att slutföra den här vyn genom att analysera historiska trender för att förutsäga värdet av mätvärden inom den berörda tidsperioden. Prototypen använder avancerade maskininlärningsalgoritmer för att kartlägga de förväntade värdena för mätvärden under den tidsperiod som analyseras.
+Intelligent Data Smoothing är en prototyp i [Analytics Labs](/help/analyze/labs.md) som kan hjälpa till att slutföra den här vyn genom att analysera historiska trender för att förutsäga värdet av mätvärden inom den berörda tidsperioden. Prototypen använder avancerade maskininlärningsalgoritmer för att kartlägga de förväntade värdena för mätvärden under den tidsperiod som analyseras.
 
 ## Kör intelligent datautjämning
 
@@ -29,7 +29,7 @@ Intelligent datautjämning är en prototyp i [Analytics Labs](/help/analyze/labs
    ![Datumintervall](assets/date-range.png)
 1. Klicka på kugghjulsikonen för måttet i frihandstabellen.
    ![Kugghjulsikon](assets/gear-icon.png)
-1. Under [!UICONTROL Data Settings]väljer du [!UICONTROL Data smoothing] alternativ.
+1. Välj alternativet [!UICONTROL Data smoothing] under [!UICONTROL Data Settings].
    ![Datautjämning](assets/column-setting.png)
 1. Välj det datum/datumintervall som motsvarar händelsen och klicka på [!UICONTROL Apply].
 Se till att dataområdet för Datautjämning är en delmängd av det datumintervall som har valts för panelen. Måtten i tabellen och diagrammet ersätts av de förväntade värdena.

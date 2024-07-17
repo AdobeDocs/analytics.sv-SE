@@ -8,7 +8,7 @@ exl-id: 13ba343d-bb17-455e-a078-1036d81383a1
 source-git-commit: 66b7de0b008364e47253d319785c204ca479ab26
 workflow-type: tm+mt
 source-wordcount: '102'
-ht-degree: 2%
+ht-degree: 0%
 
 ---
 
@@ -16,8 +16,8 @@ ht-degree: 2%
 
 Du kan hämta och redigera delade arbetsböcker. Om du äger en arbetsbok kan du ta bort den.
 
-1. Klicka på **[!UICONTROL Share]**.
-1. Under **[!UICONTROL Uploaded Workbooks]**, markerar arbetsboken och klickar på **[!UICONTROL Download]**.
+1. Klicka på **[!UICONTROL Share]** i Excel.
+1. Under **[!UICONTROL Uploaded Workbooks]** markerar du arbetsboken och klickar på **[!UICONTROL Download]**.
 1. Spara filen.
 >Följande alternativ är bara tillgängliga för arbetsboksägare:
 >

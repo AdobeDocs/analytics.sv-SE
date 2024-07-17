@@ -2,7 +2,8 @@
 name: Mobile lifecycle metrics
 description: Mätvärden som bygger på data som samlats in med Mobile SDK.
 feature: Metrics
-source-git-commit: fa9ba599ccc3d6fe1176e6b2ec20457f30cb5959
+exl-id: 64af4942-d249-47a5-a62f-6051f4c44ee3
+source-git-commit: 9f70dbeb9dfe54897915213480f05cbdfaf920ef
 workflow-type: tm+mt
 source-wordcount: '38'
 ht-degree: 2%

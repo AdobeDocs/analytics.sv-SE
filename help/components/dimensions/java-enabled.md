@@ -12,16 +12,16 @@ ht-degree: 0%
 
 # Java aktiverat
 
-&#39;Java enabled&#39; [dimension](overview.md) Anger om Java är aktiverat i webbläsaren vid den tidpunkten. Det är praktiskt om du vill lägga in Java-baserade funktioner på webbplatsen och vill veta hur många besökare som redan har Java aktiverat. För dem som har Java inaktiverat kan du ange ett alternativ eller instruktioner för hur du aktiverar det.
+Java-funktionen aktiverad [dimension](overview.md) avgör om webbläsaren vid den tidpunkten har Java aktiverat. Det är praktiskt om du vill lägga in Java-baserade funktioner på webbplatsen och vill veta hur många besökare som redan har Java aktiverat. För dem som har Java inaktiverat kan du ange ett alternativ eller instruktioner för hur du aktiverar det.
 
 ## Fyll den här dimensionen med data
 
-Den här dimensionen hämtar data från [`v` frågesträng](/help/implement/validate/query-parameters.md) i bildbegäranden. AppMeasurementet samlar in dessa data genom att identifiera om Java är aktiverat i webbläsaren. Om du använder ett AppMeasurementen bibliotek (till exempel via taggar i Adobe Experience Platform) fungerar den här dimensionen automatiskt. Om du använder en datainsamlingsmetod utanför AppMeasurementet (till exempel via API:t) måste du ta med `v` frågesträngsparameter som innehåller &quot;Y&quot; eller &quot;N&quot; om du vill använda den här dimensionen.
+Den här dimensionen hämtar data från [`v`-frågesträngen ](/help/implement/validate/query-parameters.md) i bildbegäranden. AppMeasurementet samlar in dessa data genom att identifiera om Java är aktiverat i webbläsaren. Om du använder ett AppMeasurementen bibliotek (till exempel via taggar i Adobe Experience Platform) fungerar den här dimensionen automatiskt. Om du använder en datainsamlingsmetod utanför AppMeasurementet (till exempel via API:t) måste du ta med frågesträngsparametern `v` som innehåller&quot;Y&quot; eller&quot;N&quot; om du vill använda den här dimensionen.
 
 ## Dimensioner
 
 Bland Dimensionerna finns &quot;Enabled&quot;, &quot;Disabled&quot; och &quot;Unknown&quot;.
 
-* **Aktiverad**: Java är aktiverat i webbläsaren. The `v` frågesträngen innehöll värdet &quot;Y&quot;.
-* **Handikappade**: Java är inaktiverat i webbläsaren eller stöder inte Java på något annat sätt. The `v` frågesträngen innehöll värdet &quot;N&quot;.
-* **Okänd**: AppMeasurementet kunde inte fastställa Java-stöd. The `v` frågesträngen fanns inte i bildbegäran.
+* **Aktiverad**: Java är aktiverat i webbläsaren. Frågesträngen `v` innehöll värdet Y.
+* **Inaktiverad**: Java är inaktiverat i webbläsaren eller stöder inte Java på något annat sätt. Frågesträngen `v` innehöll värdet N.
+* **Okänd**: AppMeasurementet kunde inte fastställa Java-stöd. Frågesträngen `v` fanns inte i bildbegäran.

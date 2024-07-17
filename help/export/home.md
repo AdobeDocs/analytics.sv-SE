@@ -18,7 +18,7 @@ I den här guiden beskrivs olika sätt att hämta data från Adobe Analytics. De
 
 * **Datafeeds:** Exportera rådata varje timme eller varje dag. Varje rad är en enskild träff och varje kolumn är en variabel. Datafeeds skickas vanligtvis till FTP-platser.
 * **Data Warehouse:** Använd en frågeguide för att hämta kalkylbladsutdata. Data Warehouse har en annan bearbetningsarkitektur som tillåter valfritt antal rader och valfritt antal unika värden.
-* **FTP och SFTP:** Bästa sättet att använda FTP och SFTP med Adobe
+* **FTP och SFTP:** Bästa tillvägagångssätt för FTP och SFTP med Adobe
 
 Här är en videoöversikt över Adobe Analytics:
 

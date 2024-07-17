@@ -13,11 +13,11 @@ ht-degree: 4%
 
 # Implementera Adobe Analytics med AppMeasurement för JavaScript
 
-AppMeasurementet för JavaScript har historiskt sett varit ett vanligt sätt att implementera Adobe Analytics. Men Tag Management Systems blir allt populärare och använder [taggar i Adobe Experience Platform](../launch/overview.md) rekommenderas.
+AppMeasurement för JavaScript har tidigare varit ett vanligt sätt att implementera Adobe Analytics. Men om Tag Management Systems blir allt populärare bör du använda [taggar i Adobe Experience Platform](../launch/overview.md).
 
 Översikt över implementeringsuppgifterna på hög nivå:
 
-![Så här implementerar du Adobe Analytivs med AppMeasurement för Javascript, enligt beskrivningen i det här avsnittet.](../assets/appmeasurement-annotated.png)
+![Så här implementerar du Adobe Analytics med AppMeasurement för JavaScript, enligt beskrivningen i det här avsnittet.](../assets/appmeasurement-annotated.png)
 
 <table>
 
@@ -26,15 +26,15 @@ AppMeasurementet för JavaScript har historiskt sett varit ett vanligt sätt att
 </tr>
 
 <tr>
-<td>1</td><td>Se till att du har <b>har definierat en rapportsvit</b></td><td><a href="../../admin/admin/c-manage-report-suites/report-suites-admin.md">Report Suite Manager</a></td>
+<td>1</td><td>Kontrollera att du har <b>definierat en rapportserie</b></td><td><a href="../../admin/admin/c-manage-report-suites/report-suites-admin.md">Report Suite Manager</a></td>
 </tr>
 
 <tr>
-<td>2</td><td><b>Hämta den JavaScript-kod som krävs för AppMeasurementet</b> från Code Manager. Zippa upp filen.</td><td><a href="../../admin/admin/code-manager-admin.md">Kodhanteraren</a></td>
+<td>2</td><td><b>Hämta nödvändig JavaScript-kod för AppMeasurementet</b> från kodhanteraren. Zippa upp filen.</td><td><a href="../../admin/admin/code-manager-admin.md">Kodhanteraren</a></td>
 </tr>
 
 <tr>
-<td>3</td><td><b>Lägg till <code>AppMeasurement.js</code> till webbplatsens mallfil</b>. Koden innehåller de bibliotek som krävs för att skicka data till Adobe.
+<td>3</td><td><b>Lägg till <code>AppMeasurement.js</code> i webbplatsens mallfil</b>. Koden innehåller de bibliotek som krävs för att skicka data till Adobe.
 
 ```html
 <head>
@@ -74,7 +74,7 @@ s.events = "event1";
 </tr>
 
 <tr>
-<td>6</td><td><b>Skicka data till Adobe med <code>t()</code> method</b>, när alla sidvariabler är definierade.
+<td>6</td><td><b>Skicka data till Adobe med <code>t()</code> method</b> när alla sidvariabler är definierade.
 
 ```js
 s.t();
@@ -84,7 +84,7 @@ s.t();
 </tr>
 
 <tr>
-<td>7</td><td><b>Utöka och validera implementeringen</b> innan det går till produktion.</b></td><td></td>
+<td>7</td><td><b>Utöka och validera implementeringen</b> innan du skickar ut den till produktion.</b></td><td></td>
 </tr>
 
 </table>

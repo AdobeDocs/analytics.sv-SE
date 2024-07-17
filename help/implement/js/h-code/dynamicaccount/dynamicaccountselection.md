@@ -15,13 +15,13 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Dynamiska konton stöds bara med äldre JavaScript-implementeringar (H-kod). Dessa variabler stöds inte i aktuella AppMeasurement-bibliotek eller Adobe Experience Platform Data Collection.
+>Dynamiska konton stöds endast med äldre JavaScript-implementeringar (H Code). Dessa variabler stöds inte i aktuella AppMeasurement-bibliotek eller Adobe Experience Platform Data Collection.
 
-The `dynamicAccountSelection` är en boolesk variabel som avgör om dynamiskt kontoval används.
+Variabeln `dynamicAccountSelection` är en boolesk variabel som avgör om dynamiskt kontoval används.
 
-Om inställt på `true`, tittar JavaScript-filen på `dynamicAccountMatch` och `dynamicAccountList`.
+Om värdet är `true` söker JavaScript-filen efter `dynamicAccountMatch` och `dynamicAccountList`.
 
-Om inställt på `false`eller om variabeln inte är definierad `dynamicAccountMatch` och `dynamicAccountList` variabler ignoreras.
+Om värdet är `false`, eller om variabeln inte är definierad, ignoreras variablerna `dynamicAccountMatch` och `dynamicAccountList`.
 
 Om variabeln inte definieras är standardvärdet `false`.
 

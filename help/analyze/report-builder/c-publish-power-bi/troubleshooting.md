@@ -1,17 +1,17 @@
 ---
 description: Vanliga problem vid användning av Report Builder med Power BI.
-title: Felsöka Power BI-integrering
+title: Felsökning av integrering med Power BI
 feature: Report Builder
 role: User, Admin
 exl-id: adb13a0e-99fb-48f5-add2-204d155e467f
 source-git-commit: fb39f906d6c08713e4dc8211c917b2942502868e
 workflow-type: tm+mt
-source-wordcount: '409'
-ht-degree: 1%
+source-wordcount: '320'
+ht-degree: 0%
 
 ---
 
-# Felsöka Power BI-integrering
+# Felsökning av integrering med Power BI
 
 Utforska och åtgärda vanliga problem när du använder Report Builder med Power BI.
 
@@ -38,11 +38,11 @@ Här är de viktigaste skälen till varför du kan få brutna visualiseringar ef
 >[!IMPORTANT]
 >
 >Report Builder kräver att en administratör godkänner åtkomst till organisationens resurser. Om du behöver åtkomst ber du en administratör att ge dig behörighet.
-> En Microsoft-administratör kan granska *Användare kan registrera program* inställning hittades under: **[!UICONTROL Microsoft Azure]** > **[!UICONTROL Azure Active Directory]** > **[!UICONTROL User Settings allows options]**. Om det här alternativet är inställt på **Nej** kan administratören registrera dessa typer av program.
+> En Microsoft-administratör kan granska inställningen *Användare kan registrera program* som finns under: **[!UICONTROL Microsoft Azure]** > **[!UICONTROL Azure Active Directory]** > **[!UICONTROL User Settings allows options]**. Om det här alternativet är inställt på **Nej** kan administratören registrera de här typerna av program.
 
-Användare kan bevilja åtkomst genom att logga in på sina [Microsoft Power BI-konto](https://login.microsoftonline.com/common/oauth2/authorize?response_type=code&amp;prompt=logint&amp;client_id=8d84f6d8-29a4-4484-a670-589b32400278&amp;redirect_uri=https%3a%2f%2fmy.omniture.com%2fsc15%2farb%2flogin.html&amp;resource=https%3a%2f%2fanalysis.windows.net%2fpowerbi%2fapi&amp;locale=en_US).
+Användare kan bevilja åtkomst genom att logga in på sitt [Microsoft Power BI-konto](https://login.microsoftonline.com/common/oauth2/authorize?response_type=code&amp;prompt=logint&amp;client_id=8d84f6d8-29a4-4484-a670-589b32400278&amp;redirect_uri=https%3a%2f%2fmy.omniture.com%2fsc15%2farb%2flogin.html&amp;resource=https%3a%2f%2fanalysis.windows.net%2fpowerbi%2fapi&amp;locale=en_US).
 
-Administratörer kan ge alla åtkomst genom att logga in på deras [Administratörens Microsoft Power BI-konto](https://login.microsoftonline.com/common/oauth2/authorize?response_type=code&amp;prompt=admin_consent&amp;client_id=8d84f6d8-29a4-4484-a670-589b32400278&amp;redirect_uri=https%3a%2f%2fmy.omniture.com%2fsc15%2farb%2flogin.html&amp;resource=https%3a%2f%2fanalysis.windows.net%2fpowerbi%2fapi&amp;locale=en_US).
+Administratörer kan ge alla åtkomst genom att logga in på deras [administratörs Microsoft Power BI-konto](https://login.microsoftonline.com/common/oauth2/authorize?response_type=code&amp;prompt=admin_consent&amp;client_id=8d84f6d8-29a4-4484-a670-589b32400278&amp;redirect_uri=https%3a%2f%2fmy.omniture.com%2fsc15%2farb%2flogin.html&amp;resource=https%3a%2f%2fanalysis.windows.net%2fpowerbi%2fapi&amp;locale=en_US).
 
 ## API-gränsen nås
 

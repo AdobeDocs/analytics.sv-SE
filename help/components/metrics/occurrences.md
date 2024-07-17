@@ -12,13 +12,13 @@ ht-degree: 1%
 
 # Förekomster
 
-&#39;Förekomster&#39; [mått](overview.md) visar antalet träffar där en given dimension angavs eller bestals. När du drar en dimension i arbetsytan till en tom arbetsyta, använder Adobe automatiskt det här måttet på projektet.
+&#39;Förekomsterna&#39; [metrisk](overview.md) visar antalet träffar där en given dimension har angetts eller sparats. När du drar en dimension i Workspace till en tom arbetsyta, använder Adobe automatiskt detta mått på projektet.
 
 ## Hur det här måttet beräknas
 
-Av alla träffar i en rapportsserie ska du ta med träffar där ett dimensionsobjekt definieras eller bevaras. Vissa dimensioner, till exempel [eVars](../dimensions/evar.md), kvarstår utanför den träff de är inställda på. Det här måttet räknar både initiala och beständiga värden.
+Av alla träffar i en rapportsserie ska du ta med träffar där ett dimensionsobjekt definieras eller bevaras. Vissa dimensioner, till exempel [eVars](../dimensions/evar.md), finns kvar efter den träff de har angetts för. Det här måttet räknar både initiala och beständiga värden.
 
 ## Jämför med liknande mätvärden
 
-* **Förekomster kontra [Instanser](instances.md)**: Antal förekomster träffar där ett dimensionsobjekt angavs eller beständig. Instanser omfattar inte träffar där en dimensionspost finns kvar.
-* **Förekomster kontra [Sidvyer](page-views.md)**: Förekomsterna innehåller alla träfftyper, inklusive spårningsanrop för sidvy ([`t()`](/help/implement/vars/functions/t-method.md)), länkspårningsanrop ([`tl()`](/help/implement/vars/functions/tl-method.md)) och data från sammanfattningar [Datakällor](/help/import/data-sources/overview.md). Mätvärdet för sidvisningar inkluderar endast spårningsanrop för sidvy, exklusive länkspårningsanrop och sammanfattningsdatakällor.
+* **Förekomster kontra [Förekomster](instances.md)**: Antal förekomster där ett dimensionsobjekt har angetts eller befunnits. Instanser omfattar inte träffar där en dimensionspost finns kvar.
+* **Förekomster kontra [Sidvyer](page-views.md)**: Förekomsterna innehåller alla träfftyper, inklusive spårningsanrop för sidvy ([`t()`](/help/implement/vars/functions/t-method.md)), länkspårningsanrop ([`tl()`](/help/implement/vars/functions/tl-method.md)) och data från sammanfattningen [Datakällor](/help/import/data-sources/overview.md). Mätvärdet för sidvisningar inkluderar endast spårningsanrop för sidvy, exklusive länkspårningsanrop och sammanfattningsdatakällor.

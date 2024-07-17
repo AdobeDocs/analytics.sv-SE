@@ -8,7 +8,7 @@ exl-id: f2d19f3f-c663-4fa4-b6c1-fe0dcdfffe63
 source-git-commit: fb39f906d6c08713e4dc8211c917b2942502868e
 workflow-type: tm+mt
 source-wordcount: '146'
-ht-degree: 2%
+ht-degree: 0%
 
 ---
 
@@ -24,10 +24,10 @@ Mer information om hur du använder rätt syntax finns i [Syntaxanteckningar](/h
 * cq = aktuellt kvartal (första dagen i aktuellt kvartal)
 * cy = aktuellt år (första dagen i aktuellt år)
 
-I följande lista *[ENHET]* anger en heltalsmultiplikator.
+I följande lista anger *[UNIT]* en heltalsmultiplikator.
 
-* [ENHET] d = dag
-* [ENHET] w = vecka
-* [ENHET] m = månad
-* [ENHET] q = kvartal
-* [ENHET] y = år
+* [UNIT] d = dag
+* [UNIT] w = vecka
+* [UNIT] m = månad
+* [UNIT] q = kvartal
+* [UNIT] y = år

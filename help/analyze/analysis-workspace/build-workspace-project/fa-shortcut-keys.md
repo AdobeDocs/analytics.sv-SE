@@ -7,8 +7,8 @@ role: User, Admin
 exl-id: 742e7d69-2acf-48a9-aaf3-1cb3a73944af
 source-git-commit: f8a928782b4c4916f5ff2042cb72941d76f57d7d
 workflow-type: tm+mt
-source-wordcount: '290'
-ht-degree: 5%
+source-wordcount: '296'
+ht-degree: 0%
 
 ---
 
@@ -31,14 +31,14 @@ Obs!
 | Gå till rutan Komponenter | Alt + Skift + 3 |
 | Komprimera/expandera alla paneler | alt + m |
 | Visa/dölj aktiv panel | alt + Ctrl + m |
-| Gå till nästa panel | Alt + Högertangent |
-| Gå till föregående panel | Alt + Vänsterpil |
+| Flytta till nästa panel | Alt + Högertangent |
+| Flytta till föregående panel | Alt + Vänsterpil |
 
 ## Analysåtgärder
 
 | Åtgärd | Genväg |
 | --- | --- |
-| Sök i vänster list | ctrl + / |
+| Söka i vänster ratt | ctrl + / |
 | Skapa en avisering | Ctrl + Skift + a |
 | Skapa en anteckning | Ctrl + Skift + O |
 | Skapa beräknat mått | Ctrl + Skift + C |
@@ -47,7 +47,7 @@ Obs!
 | Rensa alla | alt + w |
 | Kopiera | ctrl + c |
 | Gör om | Ctrl + Skift + z |
-| Ångra | Ctrl + z |
+| Ångra | ctrl + z |
 | Uppdatera komponenter | Alt + Skift + R |
 | Uppdatera projekt | alt + r |
 | Ange som landningssida | Ctrl + Skift + l |
@@ -60,7 +60,7 @@ Obs!
 | Ny attributpanel | alt + e |
 | Ny tom panel | alt + b |
 | Ny friformspanel | alt + a |
-| Ny panel för samtidiga visningsprogram för media | alt + h |
+| Ny panel för samtidiga visningsprogram för media | Alt + H |
 | Ny snabbinsikter-panel | alt + f |
 | Ny jämförelsepanel för segment | alt + C |
 | Ny friformstabell | alt + 1 |

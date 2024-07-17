@@ -5,8 +5,8 @@ feature: Classifications
 exl-id: e299509a-0c4f-4ba8-9e91-96356c386054
 source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
 workflow-type: tm+mt
-source-wordcount: '342'
-ht-degree: 3%
+source-wordcount: '344'
+ht-degree: 0%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 3%
 | Datauppsättning som ska klassificeras | Välj datatyp för datafilen. Menyn innehåller alla rapporter i rapportsviterna som är konfigurerade för klassificeringar. |
 | Exportera numeriskt 2 | **Viktigt**: Det här alternativet är inte tillgängligt för rapportsviter som har aktiverats för den nya klassificeringsarkitekturen. |
 | Kodning | Välj teckenkodning för datafilen. Standardkodningsformatet är UTF-8.<br>**Viktigt**: Det här alternativet är inte tillgängligt för rapportsviter som har aktiverats för den nya klassificeringsarkitekturen. |
-| Hämta | Hämtar mallfilen. |
+| Ladda ned | Hämtar mallfilen. |
 
 Mallen innehåller de för närvarande definierade klassificeringarna (kolumnrubriker) för en viss datauppsättning utan att inkludera de data som är kopplade till varje klassificering.
 
@@ -45,8 +45,8 @@ Mallen innehåller det filformat som du måste följa för klassificeringar.
 >Mallmetoden begränsar datainläsningen till en enda rapportserie.
 
 1. Klicka på **[!UICONTROL Admin]** > **[!UICONTROL Classification Importer]**.
-1. På **[!UICONTROL Download Template]** -fliken, ange [konfiguration av datamall](/help/components/classifications/importer/c-download-saint-data.md).
+1. På fliken **[!UICONTROL Download Template]** anger du [datamallskonfigurationen](/help/components/classifications/importer/c-download-saint-data.md).
 1. Klicka på **[!UICONTROL Download]**.
 1. Spara mallfilen på ditt lokala system.
 
-   Mallfilen är en tabbavgränsad datafil ( [!DNL .tab] filnamnstillägg) som stöds av de flesta kalkylbladsprogram.
+   Mallfilen är en tabbavgränsad datafil ( [!DNL .tab] filnamnstillägg) som stöds i de flesta kalkylbladsprogram.

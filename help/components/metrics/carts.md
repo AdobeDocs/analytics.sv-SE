@@ -12,11 +12,11 @@ ht-degree: 0%
 
 # Korgar
 
-Carts [mått](overview.md) visar antalet träffar där en besökare lade till sin första produkt i en kundvagn.
+Carts [metric](overview.md) visar antalet träffar där en besökare lade till sin första produkt i en kundvagn.
 
 ## Hur det här måttet beräknas
 
-Det här måttet räknar antalet träffar där `scOpen` finns i [`events`](/help/implement/vars/page-vars/events/events-overview.md) variabel.
+Det här måttet räknar antalet träffar där `scOpen` finns i variabeln [`events`](/help/implement/vars/page-vars/events/events-overview.md).
 
 ## Skillnaden mellan &quot;Carts&quot;, &quot;Cart views&quot; och &quot;Cart additions&quot;
 

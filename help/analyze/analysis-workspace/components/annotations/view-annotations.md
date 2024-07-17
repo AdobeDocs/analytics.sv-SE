@@ -1,13 +1,13 @@
 ---
 title: Visa anteckningar
-description: Så här visar du anteckningar i Workspace.
+description: Visa anteckningar i Workspace.
 role: User, Admin
 feature: Annotations
 exl-id: 52b179fd-d9a4-4119-a3c6-f6a36f24f8ea
 source-git-commit: 20ab0e9728969c4cc11227a1255e41e3d1a1540f
 workflow-type: tm+mt
 source-wordcount: '240'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -31,12 +31,12 @@ Eftersom du inte kan hovra över ikoner i en PDF-fil innehåller den här filen 
 
 ![](assets/ann-pdf.png)
 
-## Visa anteckningar med icke-trenddata
+## Visa anteckningar med data som inte är trenddata
 
 Ibland visas anteckningar med data som inte är trenddata, men som är knutna till en viss dimension. I så fall visas de bara i en sammanfattningsanteckning i det nedre högra hörnet. Här är ett exempel:
 
 ![](assets/non-date.png)
 
-Sammanfattningsdiagrammet visas i alla visualiseringstyper i hörnet, inte bara i frihandstabeller och sammanfattningsnummer. Det visas också i visualiseringar som [!UICONTROL Donut], [!UICONTROL Flow],[!UICONTROL Fallout],[!UICONTROL Cohort]och så vidare.
+Sammanfattningsdiagrammet visas i alla visualiseringstyper i hörnet, inte bara i frihandstabeller och sammanfattningsnummer. Det visas också i visualiseringar som [!UICONTROL Donut], [!UICONTROL Flow],[!UICONTROL Fallout],[!UICONTROL Cohort] och så vidare.
 
 ![](assets/ann-summary.png)

@@ -12,11 +12,11 @@ ht-degree: 0%
 
 # Instanser
 
-Instanserna [mått](overview.md) visar hur många gånger en dimension uttryckligen har definierats i en bildbegäran. Vissa dimensioner, till exempel [eVars](../dimensions/evar.md), bibehåll dimensionsobjekt efter den träff de ställs in på. Det här måttet är användbart när du vill se hur många gånger en dimensionspost har angetts utan de träffar där värdet kvarstod.
+Instanserna [metrisk](overview.md) visar hur många gånger en dimension har definierats explicit i en bildbegäran. Vissa dimensioner, till exempel [eVars](../dimensions/evar.md), kvarstår dimensionsobjekt efter träffen de är inställda på. Det här måttet är användbart när du vill se hur många gånger en dimensionspost har angetts utan de träffar där värdet kvarstod.
 
 ## Hur det här måttet beräknas
 
-Av alla träffar i en rapportserie ska du bara inkludera träffar som uttryckligen anger ett dimensionsobjekt i bildbegäran. Vissa dimensioner, till exempel [eVars](../dimensions/evar.md), kvarstår utanför den träff de är inställda på. Mätvärden som [Sidvyer](page-views.md) och [Förekomster](occurrences.md) antal både initiala och beständiga värden. Det här måttet räknar inte beständiga värden.
+Av alla träffar i en rapportserie ska du bara inkludera träffar som uttryckligen anger ett dimensionsobjekt i bildbegäran. Vissa dimensioner, till exempel [eVars](../dimensions/evar.md), finns kvar efter den träff de har angetts för. Mätvärden som [Sidvyer](page-views.md) och [Förekomster](occurrences.md) räknar både initiala och beständiga värden. Det här måttet räknar inte beständiga värden.
 
 En besökare kommer till exempel till din webbplats och använder intern sökning. Du kan spåra intern sökning i eVar1. Efter att ha använt intern sökning en gång besöker de ytterligare fem sidor innan de går.
 
@@ -24,5 +24,5 @@ Om du visar en rapport i Workspace ser du en eVar1-instans och sex förekomster.
 
 ## Jämför med liknande mätvärden
 
-* **Förekomster kontra [Förekomster](occurrences.md)**: Förekomster innehåller inte träffar där en dimensionspost finns. Antal förekomster där ett dimensionsobjekt har angetts eller befunnits.
-* **Förekomster kontra [Sidvyer](page-views.md)**: Förekomsterna innehåller alla träfftyper, inklusive spårningsanrop för sidvy ([`t()`](/help/implement/vars/functions/t-method.md)), länkspårningsanrop ([`tl()`](/help/implement/vars/functions/tl-method.md)) och data från sammanfattningar [Datakällor](/help/import/data-sources/overview.md). Mätvärdet för sidvisningar inkluderar endast spårningsanrop för sidvy, exklusive länkspårningsanrop och sammanfattningsdatakällor.
+* **Förekomster kontra [Förekomster](occurrences.md)**: Förekomster innehåller inte träffar där ett dimensionsobjekt finns. Antal förekomster där ett dimensionsobjekt har angetts eller befunnits.
+* **Instanser kontra [Sidvyer](page-views.md)**: Förekomster omfattar alla träfftyper, inklusive spårningsanrop för sidvy ([`t()`](/help/implement/vars/functions/t-method.md)), länkspårningsanrop ([`tl()`](/help/implement/vars/functions/tl-method.md)) och data från sammanfattning [Datakällor](/help/import/data-sources/overview.md). Mätvärdet för sidvisningar inkluderar endast spårningsanrop för sidvy, exklusive länkspårningsanrop och sammanfattningsdatakällor.

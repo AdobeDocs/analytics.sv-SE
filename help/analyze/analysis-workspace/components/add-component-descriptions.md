@@ -27,6 +27,6 @@ I följande video beskrivs hur du lägger till dimensioner och måttbeskrivninga
 
 Med Data Dictionary i Analysis Workspace kan både användare och administratörer hålla reda på och bättre förstå komponenterna i sin Analytics-miljö. Detta innefattar möjligheten för Analytics-administratörer att lägga till komponentbeskrivningar direkt i Analysis Workspace.
 
-Mer information om hur du lägger till en komponentbeskrivning i dataordlistan finns i [Redigera komponentposter i Data Dictionary](/help/analyze/analysis-workspace/components/data-dictionary/edit-entries-data-dictionary.md).
+Mer information om hur du lägger till en komponentbeskrivning i dataordlistan finns i [Redigera komponentposter i dataordlistan](/help/analyze/analysis-workspace/components/data-dictionary/edit-entries-data-dictionary.md).
 
-Allmän information om Data Dictionary finns i [Översikt över dataordlistan](/help/analyze/analysis-workspace/components/data-dictionary/data-dictionary-overview.md).
+Allmän information om dataordlistan finns i [Översikt över dataordlistan](/help/analyze/analysis-workspace/components/data-dictionary/data-dictionary-overview.md).

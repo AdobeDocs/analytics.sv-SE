@@ -1,6 +1,6 @@
 ---
-description: Steg som beskriver hur administratörer kan aktivera Data warehouse-rapportåtkomst för användare.
-title: Hantera behörigheter i Data warehouse
+description: Steg som beskriver hur administratörer kan aktivera användarrapportåtkomst för Data Warehouse.
+title: Hantera behörigheter för Data Warehouse
 feature: Data Warehouse
 solution: Analytics
 exl-id: 8737ab60-2ad1-4795-808b-d0200078a333
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 ---
 
-# Hantera behörigheter i Data warehouse
+# Hantera behörigheter för Data Warehouse
 
-Se [Adobe Admin Console](/help/admin/admin-console/home.md) dokumentation om hur du konfigurerar behörigheter för Data warehouse-användare. Behörigheten visas [här](/help/admin/admin-console/permissions/report-suite-tools.md).
+Läs [Adobe Admin Console](/help/admin/admin-console/home.md) -dokumentationen om hur du konfigurerar behörigheter för Data Warehouse-användare. Behörigheten visas [här](/help/admin/admin-console/permissions/report-suite-tools.md).
 

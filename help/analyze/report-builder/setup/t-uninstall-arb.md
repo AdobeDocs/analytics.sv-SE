@@ -7,8 +7,8 @@ role: User, Admin
 exl-id: 8196d5e2-acf3-4bac-a993-d1b7301214c9
 source-git-commit: 66b7de0b008364e47253d319785c204ca479ab26
 workflow-type: tm+mt
-source-wordcount: '111'
-ht-degree: 5%
+source-wordcount: '112'
+ht-degree: 0%
 
 ---
 
@@ -18,7 +18,7 @@ Avinstallera Adobe Report Builder.
 
 1. Kontrollera att Microsoft Excel är stängt.
 1. Klicka på **[!UICONTROL Start]** > **[!UICONTROL Control Panel]**.
-1. I Windows 7 eller Vista klickar du på Avinstallera ett program. Windows XP: **[!UICONTROL Add/Remove Programs]**.
+1. I Windows 7 eller Vista klickar du på Avinstallera ett program. I Windows XP klickar du på **[!UICONTROL Add/Remove Programs]**.
 1. En lista över installerade program visas. Högerklicka på Adobe Report Builder och välj **[!UICONTROL Uninstall]**.
 1. Avinstallationsguiden öppnas. Klicka på **[!UICONTROL Uninstall]**.
 

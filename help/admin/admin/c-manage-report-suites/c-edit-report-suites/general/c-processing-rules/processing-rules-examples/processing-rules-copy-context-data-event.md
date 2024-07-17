@@ -22,11 +22,11 @@ Kontextdatavariabler anges i AppMeasurementet i följande format:
  s.contextData['search_term']
 ```
 
-The [!UICONTROL Context Variables] listan innehåller alla variabler som har skickats till rapportsviten under de senaste 30 dagarna. Om du känner till namnet på kontextdatavariabeln men inte har skickat den till den aktuella rapportsviten kan du lägga till ett värde genom att skriva variabelnamnet och klicka på **[!UICONTROL Add variable name context data]**:
+Listan [!UICONTROL Context Variables] innehåller alla variabler som har skickats till rapportsviten under de senaste 30 dagarna. Om du känner till namnet på kontextdatavariabeln men inte har skickat den till den aktuella rapportsviten kan du lägga till ett värde genom att skriva variabelnamnet och klicka på **[!UICONTROL Add variable name context data]**:
 
 ![](assets/add-context-variable.png)
 
-Följande regeldefinition utökas på [Kopiera en kontextdatavariabel till en eVar](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/c-processing-rules/processing-rules-examples/processing-rules-copy-context-data.md) regel som även anger en händelse för varje träff som innehåller en specifik kontextdatavariabel:
+Följande regeldefinition utökas på [Kopiera en kontextdatavariabel till en eVar](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/c-processing-rules/processing-rules-examples/processing-rules-copy-context-data.md)-regel för att även ange en händelse för varje träff som innehåller en specifik kontextdatavariabel:
 
 | Regeluppsättning | Värde |
 |---|---|
@@ -37,4 +37,4 @@ Exempel:
 
 ![](assets/processing_rule_set_event.png)
 
-Se [Kontextdatavariabler](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/contextdata.html) i implementeringshjälp.
+Se [Kontextdatavariabler](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/contextdata.html) i implementeringshjälpen.

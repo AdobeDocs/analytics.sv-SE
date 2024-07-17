@@ -33,7 +33,7 @@ Den information som finns i ordlistan innehåller:
 
 * Om en komponent har godkänts av systemadministratören
 
-Mer information om hur du kommer åt datamappen och om vilken information den innehåller finns i [Visa komponentinformation i Data Dictionary](/help/analyze/analysis-workspace/components/data-dictionary/view-data-dictionary.md).
+Mer information om hur du får åtkomst till datamordlistan och om vilken information som finns i den finns i [Visa komponentinformation i datamordlistan](/help/analyze/analysis-workspace/components/data-dictionary/view-data-dictionary.md).
 
 ## Fördelar för administratörer
 
@@ -51,28 +51,28 @@ Här följer några exempel på hur Analytics-administratörer kan använda Data
 
   På samma sätt återspeglas alla uppdateringar av komponentbeskrivningarna i Report Suite i Analysis Workspace.
 
-  Mer information om hur du lägger till komponentbeskrivningar i antingen Analysis Workspace eller i en Report Suite finns i [Lägga till komponentbeskrivningar](/help/analyze/analysis-workspace/components/add-component-descriptions.md).
+  Mer information om hur du lägger till komponentbeskrivningar i antingen Analysis Workspace eller i en Report Suite finns i [Lägg till komponentbeskrivningar](/help/analyze/analysis-workspace/components/add-component-descriptions.md).
 
 ## Åtkomst till dataordlistan
 
 Du kan komma åt datamodlistan på något av följande sätt i Analysis Workspace:
 
-* Från **Dataordlista** ikonen i den vänstra listen.
+* Från ikonen **Dataordlista** i den vänstra listen.
 
   ![Ikon för datamordlista i den vänstra listen](assets/data-dictionary-access-icon.png)
 
-* Från **Dataordlista** -ikonen i infoportören för en komponent.
+* Från ikonen **Dataordlista** i infoporten för en komponent.
 
-  ![Ikon för datamordlista i infopobjekt](assets/data-dictionary-access-infopopover.png)
+  ![Ikon för datamordlista i infopover](assets/data-dictionary-access-infopopover.png)
   <!--update screenshot; this was taken from a mock-->
 
-Mer information om de olika alternativen som finns i ordlistan finns i [Visa komponentinformation i Data Dictionary](/help/analyze/analysis-workspace/components/data-dictionary/view-data-dictionary.md).
+Mer information om de olika alternativen som är tillgängliga i datamordlistan finns i [Visa komponentinformation i datamordlistan](/help/analyze/analysis-workspace/components/data-dictionary/view-data-dictionary.md).
 
 ## Uppdatera och strukturera dataordlistan
 
-Analysadministratörer ansvarar för att upprätthålla en felfri datamordlista för sin organisation enligt beskrivningen i [Övervaka hälsotillstånd för dataordlista](/help/analyze/analysis-workspace/components/data-dictionary/monitor-data-dictionary-health.md).
+Analysadministratörer ansvarar för att upprätthålla en hälsosam datamordlista för sin organisation, vilket beskrivs i [Övervaka datamordlistehälsa](/help/analyze/analysis-workspace/components/data-dictionary/monitor-data-dictionary-health.md).
 
-Som en del av den här processen kan Analytics-administratörer redigera information om varje komponent i dataordlistan enligt beskrivningen i [Redigera komponentposter i Data Dictionary](/help/analyze/analysis-workspace/components/data-dictionary/edit-entries-data-dictionary.md).
+Som en del av den här processen kan Analytics-administratörer redigera information om varje komponent i dataordlistan, enligt beskrivningen i [Redigera komponentposter i datamappningen](/help/analyze/analysis-workspace/components/data-dictionary/edit-entries-data-dictionary.md).
 
 ## Flytta, minimera eller stänga datamappningslistan
 

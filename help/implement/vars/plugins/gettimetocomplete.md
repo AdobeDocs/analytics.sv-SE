@@ -15,7 +15,7 @@ ht-degree: 0%
 
 {{plug-in}}
 
-The `getTimeToComplete` plugin-programmet spårar den tid det tar för användaren att slutföra en process på en webbplats. &quot;Klockan&quot; börjar när `start` -åtgärden anropas och avslutas när `stop` åtgärden anropas. Adobe rekommenderar att du använder denna plugin om det finns ett arbetsflöde på webbplatsen som tar lite tid att slutföra och du vill veta hur lång tid besökarna tar att slutföra det. Denna plugin behövs inte om arbetsflödet på webbplatsen tar kort tid (mindre än 3 sekunder) eftersom granulariteten bara är nere till en hel sekund.
+Plugin-programmet `getTimeToComplete` håller reda på hur lång tid det tar för en användare att slutföra en process på en webbplats. &quot;Klockan&quot; börjar när åtgärden `start` anropas och slutar när åtgärden `stop` anropas. Adobe rekommenderar att du använder denna plugin om det finns ett arbetsflöde på webbplatsen som tar lite tid att slutföra och du vill veta hur lång tid besökarna tar att slutföra det. Denna plugin behövs inte om arbetsflödet på webbplatsen tar kort tid (mindre än 3 sekunder) eftersom granulariteten bara är nere till en hel sekund.
 
 ## Installera plugin-programmet med Web SDK- eller Web SDK-tillägget
 
@@ -25,10 +25,10 @@ Det här plugin-programmet stöds ännu inte för användning i Web SDK.
 
 Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-programmen med Adobe Analytics.
 
-1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med dina inloggningsuppgifter för AdobeID.
 1. Klicka på den önskade taggegenskapen.
-1. Gå till [!UICONTROL Extensions] klickar du på [!UICONTROL Catalog] knapp
-1. Installera och publicera [!UICONTROL Common Analytics Plugins] extension
+1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Catalog]
+1. Installera och publicera tillägget [!UICONTROL Common Analytics Plugins]
 1. Om du inte redan har det skapar du en regel med namnet&quot;Initiera plugin-program&quot; med följande konfiguration:
    * Villkor: Inget
    * Händelse: Kärna - Bibliotek inläst (sidan ovanpå)
@@ -41,10 +41,10 @@ Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-program
 
 Om du inte vill använda tillägget för Common Analytics-plugin-program kan du använda den anpassade kodredigeraren.
 
-1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med dina inloggningsuppgifter för AdobeID.
 1. Klicka på önskad egenskap.
-1. Gå till [!UICONTROL Extensions] klickar du på **[!UICONTROL Configure]** under Adobe Analytics-tillägget.
-1. Expandera [!UICONTROL Configure tracking using custom code] dragspelspanel, som visar [!UICONTROL Open Editor] -knappen.
+1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen **[!UICONTROL Configure]** under Adobe Analytics-tillägget.
+1. Expandera dragspelsfliken [!UICONTROL Configure tracking using custom code] som visar knappen [!UICONTROL Open Editor].
 1. Öppna den anpassade kodredigeraren och klistra in den plugin-kod som finns nedan i redigeringsfönstret.
 1. Spara och publicera ändringarna i Analytics-tillägget.
 
@@ -61,14 +61,14 @@ function getTimeToComplete(sos,cn,exp,tp){var f=sos,m=cn,l=exp,e=tp;if("-v"===f)
 
 ## Använda plugin-programmet
 
-The `getTimeToComplete` funktionen använder följande argument:
+Funktionen `getTimeToComplete` använder följande argument:
 
-* **`sos`** (valfri, sträng): Ange som `"start"` när du vill starta timern. Ange till `"stop"` när du vill stoppa timern. Standardvärdet är `"start"`.
-* **`cn`** (valfri sträng): Namnet på den cookie som ska lagra starttiden. Standardvärdet är `"s_gttc"`.
-* **`exp`** (valfritt, heltal): Antalet sekunder, timmar eller dagar (beroende på `tp` tidsdelningsargument) som cookien (och timern) upphör att gälla. Standardvärdet är 30 minuter.
-* **`tp`** (valfri, sträng): Den tidsdelningssträng som cookien (och timern) upphör att gälla, som används med `exp` argument. Ange till &quot;d&quot; för dagar, &quot;h&quot; för timmar eller &quot;s&quot; för sekunder. Om detta inte anges är förfallotiden för cookie (och timer) 30 minuter, oavsett vilken `exp` -argumentet har angetts till.
+* **`sos`** (valfri, sträng): Ange till `"start"` när du vill starta timern. Ange till `"stop"` när du vill stoppa timern. Standardvärdet är `"start"`.
+* **`cn`** (valfri sträng): Namnet på cookien som starttiden ska lagras i. Standardvärdet är `"s_gttc"`.
+* **`exp`** (valfritt, heltal): Antalet sekunder, timmar eller dagar (beroende på det `tp` tidsparande argumentet) som cookien (och timern) upphör att gälla. Standardvärdet är 30 minuter.
+* **`tp`** (valfri sträng): Den tidsdelningssträng som cookien (och timern) upphör att gälla, som används med argumentet `exp`. Ange till &quot;d&quot; för dagar, &quot;h&quot; för timmar eller &quot;s&quot; för sekunder. Om detta inte anges är förfallotiden för cookie (och timer) 30 minuter, oavsett vad argumentet `exp` har ställts in på.
 
-När den här funktionen anropas returneras en sträng som innehåller det antal dagar, timmar, minuter och/eller sekunder som det tog mellan `"start"` och `"stop"` åtgärd.
+När den här funktionen anropas returneras en sträng som innehåller det antal dagar, timmar, minuter och/eller sekunder som det tog mellan åtgärden `"start"` och `"stop"`.
 
 ## Exempel
 
@@ -97,11 +97,11 @@ if(inList(s.events, "event2")) s.prop2 = getTimeToComplete("stop", "gttcregister
 ### 3.1 (30 september 2019)
 
 * Lagt till logik som kräver värdet start eller stop i det första argumentet.  Alla andra värden som skickas hindrar plugin-programmet från att köras.
-* Uppdaterat `inList 2.0` plugin-program till `inList 2.1`.
+* `inList 2.0`-plugin-programmet har uppdaterats till `inList 2.1`.
 
 ### 3.0 (23 augusti 2018)
 
-* Uppdaterade `formatTime v1.0` plugin-program till `formatTime v1.1`.
+* Uppdaterade plugin-programmet `formatTime v1.0` till `formatTime v1.1`.
 
 ### 3.0 (17 april 2018)
 
@@ -110,6 +110,6 @@ if(inList(s.events, "event2")) s.prop2 = getTimeToComplete("stop", "gttcregister
 
 ### 2.0 juni 21, 2016)
 
-* Eliminerade beroendet av `p_fo` plugin-program.
+* Eliminerade beroendet av plugin-programmet `p_fo`.
 * Kompatibilitet med H-kod och AppMeasurement har lagts till.
 * Konsolloggning har lagts till.

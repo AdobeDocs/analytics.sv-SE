@@ -12,17 +12,17 @@ ht-degree: 0%
 
 # VISTA-regler i Adobe Analytics
 
-VISTA-regler är en alternativ form av anpassad dataändring som du kan använda mellan datainsamling och bearbetning. Se [Bearbetningsorder](processing-order.md) om du vill ha mer information om exakt hur långt i dataflödet VISTA-reglerna är. VISTA-reglerna påverkar endast aktuella data när de samlas in, men ändrar inte befintliga data.
+VISTA-regler är en alternativ form av anpassad dataändring som du kan använda mellan datainsamling och bearbetning. Se [Bearbetningsordning](processing-order.md) om du vill ha mer information om exakt vilket stadium i dataredjan som VISTA-regler gäller för. VISTA-reglerna påverkar endast aktuella data när de samlas in, men ändrar inte befintliga data.
 
 Några vanliga användningsområden för VISTA-reglerna är:
 
 * Kopiera en Analytics-träff från en rapportserie till en annan, och ändra data till den kopierade rapportsviten om du vill
-* Undantag för anpassad IP som överskrider användningsexemplen från [Exkludera efter IP](/help/admin/admin/exclude-ip.md)
+* Anpassat IP-undantag som överskrider de användningsfall som erbjuds av [Uteslut av IP](/help/admin/admin/exclude-ip.md)
 * Ändra ett variabelvärde villkorligt eller globalt
 * Duplicera variabelvärden till andra variabler
 * Överför filer till en FTP-plats i Adobe som kan påverka variabelvärden
 
-Många användningsområden för VISTA-regler finns redan i [Bearbetar regler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/c-processing-rules/processing-rules.md), [Punktregler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/bot-removal/bot-rules.md), [Virtuella rapportsviter](/help/components/vrs/vrs-about.md)eller bara uppdatera er Adobe Analytics-implementering. Adobe rekommenderar endast VISTA-regler som en sista utväg.
+Många användningsexempel för VISTA-regler finns redan i [Bearbetningsregler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/c-processing-rules/processing-rules.md), [PUNKTSREGLER](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/bot-removal/bot-rules.md), [Virtuella rapportsviter](/help/components/vrs/vrs-about.md) eller bara när du uppdaterar din Adobe Analytics-implementering. Adobe rekommenderar endast VISTA-regler som en sista utväg.
 
 >[!IMPORTANT]
 >

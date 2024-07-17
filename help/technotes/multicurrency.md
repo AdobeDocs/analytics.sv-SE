@@ -16,9 +16,9 @@ Adobe erbjuder flera nivåer av valutakonvertering så att organisationen kan up
 
 ## Sidnivå
 
-Du kan använda [`currencyCode`](/help/implement/vars/config-vars/currencycode.md) variabel för att ange önskad valuta på varje sida. Om valutan på sidan inte överensstämmer med målrapportsvitens valuta, utför Adobe en valutakonvertering till rapportsvitens valuta baserat på den aktuella dagens växelkurs. Den konverterade valutan registreras.
+Du kan använda variabeln [`currencyCode`](/help/implement/vars/config-vars/currencycode.md) för att ange önskad valuta på varje sida. Om valutan på sidan inte överensstämmer med målrapportsvitens valuta, utför Adobe en valutakonvertering till rapportsvitens valuta baserat på den aktuella dagens växelkurs. Den konverterade valutan registreras.
 
 ## Rapportsvitens nivå
 
-Varje rapportsvit har en **basvaluta**. Den här valutan anger kontexten för alla valutamått (som [Intäkter](/help/components/metrics/revenue.md)). Alla valutadata som lagras finns i rapportsvitens basvaluta.
+Varje rapportserie har en **basvaluta**. Den här valutan anger kontexten för alla valutamått (till exempel [Intäkter](/help/components/metrics/revenue.md)). Alla valutadata som lagras finns i rapportsvitens basvaluta.
 

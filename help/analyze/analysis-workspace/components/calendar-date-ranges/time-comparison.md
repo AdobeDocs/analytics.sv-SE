@@ -6,14 +6,14 @@ role: User, Admin
 exl-id: ea7a42ef-89de-4f70-b468-8a5cf69fea05
 source-git-commit: 3f4d8df911c076a5ea41e7295038c0625a4d7c85
 workflow-type: tm+mt
-source-wordcount: '587'
-ht-degree: 6%
+source-wordcount: '596'
+ht-degree: 5%
 
 ---
 
 # Datumjämförelse
 
-Med Datumjämförelse i Analysis Workspace kan du ta vilken kolumn som helst som innehåller ett datumintervall och skapa en gemensam datumjämförelse, till exempel: år-över-år, kvartal-över-kvartal, månad-över-månad osv.
+Med Datumjämförelse i Analysis Workspace kan du ta vilken kolumn som helst som innehåller ett datumintervall och skapa en gemensam datumjämförelse, till exempel år-över-år, kvartal-över-kvartal, månad-över-månad osv.
 
 Här är en video om ämnet:
 
@@ -22,7 +22,7 @@ Här är en video om ämnet:
 ## Jämför tidsperioder {#section_C4E36BFE0F5C4378A74E705747C9DEE4}
 
 >[!NOTE]
->[!UICONTROL Compare Time Periods] utnyttjar avancerade beräknade värden. Det innebär att det endast är tillgängligt för kunder med SKU:erna Analytics Select, Prime och Ultimate.
+>[!UICONTROL Compare Time Periods] använder avancerade beräknade värden. Det innebär att det endast är tillgängligt för kunder med SKU:erna Analytics Select, Prime och Ultimate.
 
 Analysen kräver ett sammanhang, och ofta tillhandahålls detta sammanhang av en tidigare tidsperiod. Till exempel frågan&quot;Hur mycket bättre/sämre gör vi nu än i fjol?&quot; är grundläggande för att förstå er verksamhet. Datumjämförelse innehåller automatiskt en&quot;differenskolumn&quot;, som visar den procentuella ändringen jämfört med en angiven tidsperiod.
 
@@ -57,7 +57,7 @@ Analysen kräver ett sammanhang, och ofta tillhandahålls detta sammanhang av en
 
    ![](assets/compare-time-barchart.png)
 
-   Observera att om du vill visa den procentuella ändringen i stapeldiagrammet måste du ha [!UICONTROL Percentages] inställningen är markerad i [!UICONTROL Visualization Settings].
+   Observera att om du vill visa den procentuella ändringen i stapeldiagrammet måste inställningen [!UICONTROL Percentages] vara markerad i [!UICONTROL Visualization Settings].
 
 ## Lägg till en tidsperiodkolumn för jämförelse {#section_93CC2B4F48504125BEC104046A32EB93}
 
@@ -95,7 +95,7 @@ Med en ny inställning för alla tabeller kan du **[!UICONTROL Align Dates from 
 
 >[!NOTE]
 >
->Den här inställningen är **inaktiverad** (ej markerat) för alla befintliga projekt och **aktiverad** (markerat) för alla nya projekt.
+>Den här inställningen är **inaktiverad** (omarkerad) för alla befintliga projekt och **aktiverad** (markerad) för alla nya projekt.
 
 Exempel: Om du väljer att justera datumen och gör en månadsvis jämförelse mellan oktober och september 2016 börjar den vänstra kolumnen med 1 oktober och den högra kolumnen börjar med 1 september:
 

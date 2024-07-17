@@ -19,9 +19,9 @@ När du väljer en rapport med bokmärken fylls alla dimensioner och mått som d
 
 Så här visar begärandeguiden steg 1 en kontrollpanel och dess rapportplatser:
 
-![Skärmbild som visar Request Wizard Steg 1 av 2 med markering Hämta dina instrumentpaneler och Hämta dina bokmärken.](assets/import_dashboard_reportlet.png)
+![Skärmbild som visar begärandeguiden Steg 1 av 2 som markerar Hämta dina instrumentpaneler och Hämta dina bokmärken.](assets/import_dashboard_reportlet.png)
 
-När du klickar **[!UICONTROL Retrieve your Dashboards]** eller **[!UICONTROL Retrieve your Bookmarks]** hämtar och klistrar dina befintliga data från kontrollpanelen och/eller bokmärket in i kalkylbladet.
+När du klickar på **[!UICONTROL Retrieve your Dashboards]** eller **[!UICONTROL Retrieve your Bookmarks]** hämtas och klistras dina befintliga instrumentpanels- och/eller bokmärkesdata in i kalkylbladet.
 
 >[!NOTE]
 >

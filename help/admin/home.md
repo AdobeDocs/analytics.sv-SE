@@ -24,7 +24,7 @@ Här är en videoöversikt över Adobe Analytics:
 Adobe Analytics har för närvarande två områden för administratörer:
 
 * Adobe Admin Console: Använd det här området för att etablera Experience Cloud-verktyg och hantera användarbehörigheter. Den finns på [adminconsole.adobe.com](https://adminconsole.adobe.com).
-* Administratörsverktyg för analyser: Använd det här området för att rapportera programsvit och variabelhantering. Du kommer åt den genom att klicka [!UICONTROL Admin] i det övre sidhuvudet på Adobe Analytics.
+* Administratörsverktyg för analyser: Använd det här området för att rapportera programsvit och variabelhantering. Du kommer åt den genom att klicka på [!UICONTROL Admin] i Adobe Analytics översta huvud.
 
 Den här guiden täcker:
 

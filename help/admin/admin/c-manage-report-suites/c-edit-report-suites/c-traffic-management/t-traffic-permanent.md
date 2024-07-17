@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Ange permanent trafikökning
 
-Du kan ändra den förväntade trafiknivån så att Adobe kan tilldela om resurser för att hantera den nya trafiknivån. (Du kan också [schemalägga en trafikspik](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/c-traffic-management/t-traffic-schedule-spike.md) om du tillfälligt vill tilldela om resurser.)
+Du kan ändra den förväntade trafiknivån så att Adobe kan tilldela om resurser för att hantera den nya trafiknivån. (Du kan också [schemalägga en trafiktoppning](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/c-traffic-management/t-traffic-schedule-spike.md) om du tillfälligt vill tilldela om resurser.)
 
 {{$include /help/_includes/traffic-lead-time.md}}
 
@@ -22,10 +22,10 @@ Du kan ändra den förväntade trafiknivån så att Adobe kan tilldela om resurs
 1. Öppna Report Suite Manager genom att klicka på **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL All admin]** > **[!UICONTROL Report suites]**.
 1. Välj en rapportsvit.
 1. Klicka på **[!UICONTROL Edit Settings]** > **[!UICONTROL Traffic Management]** > **[!UICONTROL Permanent Traffic]**.
-1. I **[!UICONTROL New Expected Daily Page Views]** anger du den totala förväntade dagliga sidvisningen för den nya trafiknivån.
+1. I fältet **[!UICONTROL New Expected Daily Page Views]** anger du den totala förväntade dagliga sidvisningen för den nya trafiknivån.
 
    Se till att du anger det totala antalet förväntade sidvyer, inte bara ytterligare sidvyer.
-1. I **[!UICONTROL Effective Date]** anger du det datum då du förväntar dig att den nya trafiknivån ska starta och klickar sedan på **[!UICONTROL Submit]**.
+1. I fältet **[!UICONTROL Effective Date]** anger du det datum då du förväntar att den nya trafiknivån ska starta och klickar sedan på **[!UICONTROL Submit]**.
 
    >[!NOTE]
    >

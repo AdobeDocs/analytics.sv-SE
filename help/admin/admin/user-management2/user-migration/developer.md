@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # API:er som påverkas av användarmigreringen{#apis-affected-by-the-migration}
 
-Adobe migrerar alla inloggningsföretag för Analytics på ett sätt från [!DNL my.omniture.com] och på autentisering via Adobe Experience Cloud. När ett företag väl har påbörjat migreringen skapar och hanterar man programmatiska användare med de analysspecifika behörigheterna och `GetLoginKey` metoder som är tillgängliga via v1.3 och v1.4 i API:t för Analytics Admin stöds inte längre. Sådana åtgärder kommer nu att aktiveras i hela Experience Cloud via [!DNL adobe.io].
+Adobe migrerar alla inloggningsföretag för Analytics från [!DNL my.omniture.com] och till autentisering via Adobe Experience Cloud. När ett företag påbörjar migreringen stöds inte längre programmatiska användargenereringar och hantering via de analysspecifika behörigheter och `GetLoginKey`-metoder som är tillgängliga via v1.3 och v1.4 i API:t för Analytics-administratörer. Sådana åtgärder kommer nu att aktiveras över hela Experience Cloud via [!DNL adobe.io].
 
 ## API-metoder som påverkas {#methods}
 
@@ -43,6 +43,6 @@ Om ditt företag inte använder någon av dessa metoder behöver du inte vidta n
 Ytterligare information:
 
 * [Allmän information om användarhantering](https://helpx.adobe.com/enterprise/help/users.html)
-* [API för användarhantering via adobe.io](https://developer.adobe.com/UMAPI/)
+* [API:er för användarhantering via adobe.io](https://developer.adobe.com/UMAPI/)
 * [API-forum för användarhantering](https://community.adobe.com/t5/enterprise-teams/bd-p/enterprise-and-teams)
 * [Migrering av användaråtkomst och hantering för Analytics till Experience Cloud](https://experienceleague.adobe.com/docs/analytics/admin/user-product-management/user-management/migrate-users/c-migration-tool.html)

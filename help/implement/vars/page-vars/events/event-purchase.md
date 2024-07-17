@@ -13,25 +13,25 @@ ht-degree: 0%
 
 # Inköpshändelse
 
-Inköpshändelsen är ett värde i `events` variabel. Det här värdet är användbart för organisationer som vill samla in data kring de intäkter som deras webbplats genererar. Den är starkt beroende av [`products`](../products.md) och [`purchaseID`](../purchaseid.md) variabler.
+Inköpshändelsen är ett värde i variabeln `events`. Det här värdet är användbart för organisationer som vill samla in data kring de intäkter som deras webbplats genererar. Den är starkt beroende av variablerna [`products`](../products.md) och [`purchaseID`](../purchaseid.md).
 
 När du ställer in en köphändelse påverkas följande mått:
 
 * Måtten för &quot;Beställningar&quot; ökar med 1
-* Måttet Enheter ökas med antalet produkter i `products` variabel
-* Inkomstmåttet ökar med summan av prisparametrarna i `products` variabel
+* Måttet Enheter ökas med antalet produkter i variabeln `products`
+* Måttet för Intäkter ökar med summan av prisparametrar i variabeln `products`
 
 >[!NOTE]
 >
->Intäkter multipliceras inte med kvantitetsfältet. Till exempel: `s.products="Womens;Socks;5;4.50"` skickar inte 22,50 USD till intäkter, utan 4,50 USD. Se till att implementeringen överför de totala intäkterna för den angivna kvantiteten. Till exempel: `s.products="Womens;Socks;5;22.50"`.
+>Intäkter multipliceras inte med kvantitetsfältet. `s.products="Womens;Socks;5;4.50"` skickar till exempel inte 22,50 USD till intäkt, utan 4,50 USD. Se till att implementeringen överför de totala intäkterna för den angivna kvantiteten. Exempel: `s.products="Womens;Socks;5;22.50"`.
 
 ## Ange inköpshändelsen med Web SDK
 
-Om du använder [**XDM-objekt**](/help/implement/aep-edge/xdm-var-mapping.md) används följande XDM-fält för köphändelsen:
+Om du använder [**XDM-objektet**](/help/implement/aep-edge/xdm-var-mapping.md) använder inköpshändelsen följande XDM-fält:
 
-* Order mappas till `xdm.commerce.purchases.value`.
-* Enheter mappas till summan av alla `xdm.productListItems[].quantity` fält. Se [`products`](../products.md) för mer information.
-* Intäkterna är mappade till summan av alla `xdm.productListItems[].priceTotal` fält.
+* Beställningar har mappats till `xdm.commerce.purchases.value`.
+* Enheter mappas till summan av alla `xdm.productListItems[].quantity` fält. Mer information finns i [`products`](../products.md).
+* Intäkter mappas till summan av alla `xdm.productListItems[].priceTotal` fält.
 
 ```json
 {
@@ -45,7 +45,7 @@ Om du använder [**XDM-objekt**](/help/implement/aep-edge/xdm-var-mapping.md) an
 }
 ```
 
-Om du använder [**dataobjekt**](/help/implement/aep-edge/data-var-mapping.md), som köphändelsen använder `data.__adobe.analytics.events`, efter AppMeasurementen strängsyntax.
+Om du använder [**dataobjektet**](/help/implement/aep-edge/data-var-mapping.md) använder inköpshändelsen `data.__adobe.analytics.events`, och följande AppMeasurementen strängsyntax.
 
 ```json
 {
@@ -61,12 +61,12 @@ Om du använder [**dataobjekt**](/help/implement/aep-edge/data-var-mapping.md), 
 
 ## Ange inköpshändelsen med Adobe Analytics-tillägget
 
-1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med dina inloggningsuppgifter för AdobeID.
 2. Klicka på den önskade taggegenskapen.
-3. Gå till [!UICONTROL Rules] och sedan klicka på önskad regel (eller skapa en regel).
-4. Under [!UICONTROL Actions]klickar du på en befintlig [!UICONTROL Adobe Analytics - Set Variables] eller klicka på +-ikonen.
-5. Ange [!UICONTROL Extension] nedrullningsbar lista till Adobe Analytics och [!UICONTROL Action Type] till [!UICONTROL Set Variables].
-6. Leta reda på [!UICONTROL Events] och ange [!UICONTROL Events] nedrullningsbar lista till [!UICONTROL purchase].
+3. Gå till fliken [!UICONTROL Rules] och klicka sedan på önskad regel (eller skapa en regel).
+4. Klicka på en befintlig [!UICONTROL Adobe Analytics - Set Variables]-åtgärd under [!UICONTROL Actions] eller klicka på +-ikonen.
+5. Ange Adobe Analytics i listrutan [!UICONTROL Extension] och [!UICONTROL Action Type] till [!UICONTROL Set Variables].
+6. Leta reda på avsnittet [!UICONTROL Events] och ställ in listrutan [!UICONTROL Events] på [!UICONTROL purchase].
 
 Andra beroende variabler som `products` och `purchaseID` har inte dedikerade fält i Analytics-tillägget i Adobe Experience Platform Data Collection. Använd den anpassade kodredigeraren efter AppMeasurementen syntax för dessa variabler.
 
@@ -86,6 +86,6 @@ s.events = "purchase,event1,event2";
 
 När du utlöser en köphändelse kontrollerar Adobe följande:
 
-* Innehåller träffen `purchaseID` variabel? Annars använder Adobe information från träffen för att skapa ett&quot;tillfälligt köp-ID&quot;. Detta tillfälliga köp-ID gäller endast besökaren av träffen. De fem föregående tillfälliga inköps-ID:n lagras för varje besökar-ID per rapportsvit.
+* Innehåller träffen variabeln `purchaseID`? Annars använder Adobe information från träffen för att skapa ett&quot;tillfälligt köp-ID&quot;. Detta tillfälliga köp-ID gäller endast besökaren av träffen. De fem föregående tillfälliga inköps-ID:n lagras för varje besökar-ID per rapportsvit.
 * Matchar det tillfälliga köp-ID:t något av de fem senast lagrade tillfälliga köp-ID:n? I så fall betraktas bildbegäran som ett dubblettköp. Alla konverteringsvariabler, inklusive händelsen purchase, visas inte i rapporteringen.
-* Om `purchaseID` är definierad, matchar den alla värden som redan samlats in i rapportsviten för alla besökare? I så fall betraktas bildbegäran som ett dubblettköp. Alla konverteringsvariabler, inklusive händelsen purchase, visas inte i rapporteringen.
+* Om variabeln `purchaseID` är definierad, matchar den eventuella värden som redan samlats in i rapportsviten för alla besökare? I så fall betraktas bildbegäran som ett dubblettköp. Alla konverteringsvariabler, inklusive händelsen purchase, visas inte i rapporteringen.

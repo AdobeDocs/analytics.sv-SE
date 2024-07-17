@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Spårning offline är ett valfritt sätt att samla in data i Adobe Analytics. Om en besökare kopplar från Internet men fortsätter att surfa på webbplatsen, lagras träffarna i en offlinekö tills enheten återansluter till Internet. Spårning offline används oftast för mobilprogram.
 
-The `offlineHitLimit` variabeln sätter en övre gräns för hur många träffar enheten lagrar lokalt. Den här variabeln fungerar bara om [`trackOffline`](trackoffline.md) är aktiverat.
+Variabeln `offlineHitLimit` sätter ett tak för antalet träffar som enheten lagrar lokalt. Den här variabeln fungerar bara om [`trackOffline`](trackoffline.md) har aktiverats.
 
 ## Offline-träffgräns med Web SDK
 
@@ -27,7 +27,7 @@ Det finns inget dedikerat fält i Adobe Analytics-tillägget som kan använda de
 
 ## s.offlineHitLimit i AppMeasurementet och den anpassade kodredigeraren för Analytics-tillägget
 
-The `s.offlineHitLimit` variabeln är ett heltal som representerar maximalt antal träffar som en enhet lagrar när de är offline. Om variabeln inte är definierad blir den som standard `10`. Du kan ange det till valfritt heltalsvärde. När du anger höga värden bör du tänka på lokala lagringshöljen i besökarens webbläsare. Den här gränsen är vanligtvis 5-10 MB.
+Variabeln `s.offlineHitLimit` är ett heltal som representerar maximalt antal träffar som en enhet lagrar när de är offline. Om den här variabeln inte definieras blir standardvärdet `10`. Du kan ange det till valfritt heltalsvärde. När du anger höga värden bör du tänka på lokala lagringshöljen i besökarens webbläsare. Den här gränsen är vanligtvis 5-10 MB.
 
 ```js
 s.offlineHitLimit = 100;

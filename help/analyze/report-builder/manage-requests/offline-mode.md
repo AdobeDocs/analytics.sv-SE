@@ -7,12 +7,12 @@ role: User, Admin
 exl-id: f18859e3-19e4-48af-963f-0bb4d1b46380
 source-git-commit: 66b7de0b008364e47253d319785c204ca479ab26
 workflow-type: tm+mt
-source-wordcount: '182'
-ht-degree: 4%
+source-wordcount: '185'
+ht-degree: 0%
 
 ---
 
-# Offlineläge för att skapa och redigera förfrågningar
+# Offlineläge för att skapa och redigera begäranden
 
 Offlineläget returnerar platshållardata för att snabba upp processen att skapa och redigera begäranden.
 
@@ -20,12 +20,12 @@ När du skapar eller redigerar en ny begäran görs API-anrop för rapport för 
 
 Aktivera offlineläge
 
-1. Klicka **[!UICONTROL Options]** på Report Builder-menyn.
+1. Klicka på **[!UICONTROL Options]** på Report Builder-menyn.
 
    ![Skärmbild av skärmen Alternativ med offlineläge markerat.](assets/offline_mode.png)
 
-1. Markera kryssrutan intill **[!UICONTROL Turn on offline mode for creating and editing requests]**.
-1. I **[!UICONTROL Display Metric Data as]** anger du de platshållardata som du vill returnera i din begäran. Ange t.ex. &quot;1&quot;.
+1. Markera kryssrutan bredvid **[!UICONTROL Turn on offline mode for creating and editing requests]**.
+1. I fältet **[!UICONTROL Display Metric Data as]** anger du platshållardata som du vill returnera i din begäran. Ange t.ex. &quot;1&quot;.
 1. Klicka på **[!UICONTROL OK]**.
 1. Skapa och kör din begäran i offlineläge med hjälp av begärandeguiden. I följande skärmbild visas ett exempel på en begäran med &quot;1&quot; som platshållardata.
 

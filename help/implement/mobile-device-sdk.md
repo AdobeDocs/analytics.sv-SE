@@ -13,7 +13,7 @@ ht-degree: 29%
 
 # Implementera Analytics för mobila enheter
 
-Använd Adobe Experience Platform Mobile SDK för att implementera Analytics för mobila enheter. Se [Mobile SDK - översikt](aep-edge/mobile-sdk/overview.md) för mer information.
+Använd Adobe Experience Platform Mobile SDK för att implementera Analytics för mobila enheter. Mer information finns i [Översikt över Mobile SDK](aep-edge/mobile-sdk/overview.md).
 
 ## Adobe Experience Platform Mobile SDKs
 
@@ -25,5 +25,5 @@ Använd Adobe Experience Platform Mobile SDK för att implementera Analytics fö
 
 >[!CAUTION]
 >
->Stöd för version 4 Mobile SDK upphörde den 31 augusti 2021. Se [Adobe Mobile Services - frågor och svar](https://experienceleague.adobe.com/docs/discontinued/using/mobile-services.html) för mer information.
+>Stöd för version 4 Mobile SDK upphörde den 31 augusti 2021. Mer information finns i [Vanliga frågor och svar om Adobe Mobile Services](https://experienceleague.adobe.com/docs/discontinued/using/mobile-services.html).
 

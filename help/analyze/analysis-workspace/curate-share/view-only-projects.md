@@ -1,5 +1,5 @@
 ---
-description: projekt med endast visning i arbetsytan
+description: projekt med endast visning i Workspace
 keywords: projekt med endast visning
 title: projekt med endast visning
 feature: Curate and Share
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # projekt med endast visning
 
-Du kan dela projekt som&quot;skrivskyddade&quot; till mottagare via [Arbetsflöde för projektdelning](/help/analyze/analysis-workspace/curate-share/share-projects.md). Mottagare som placerats i rollen Kan visa får en mer begränsad projekterfarenhet. Detta kan vara önskvärt om du delar ett projekt med användare som inte är lika bekanta med organisationens datastruktur, Analysis Workspace eller Adobe Analytics i allmänhet, men ändå vill att de ska använda data och insikter i en säker miljö.
+Du kan dela projekt som&quot;endast för visning&quot; till mottagare via arbetsflödet [Projektdelning](/help/analyze/analysis-workspace/curate-share/share-projects.md). Mottagare som placerats i rollen Kan visa får en mer begränsad projekterfarenhet. Detta kan vara önskvärt om du delar ett projekt med användare som inte är lika bekanta med organisationens datastruktur, Analysis Workspace eller Adobe Analytics i allmänhet, men ändå vill att de ska använda data och insikter i en säker miljö.
 
 Observera att du kan redigera panelens datumintervall även i projekt som bara är för visning.
 
@@ -35,7 +35,7 @@ Inaktiverade interaktioner i ett projekt som endast är synligt inkluderar:
 * Inställningar för frihandsrad, kolumn eller visualisering
 * Panelsegment
 * Redigera, Infoga och Komponentmenyer
-* Tips för arbetsyta
+* Workspace tips
 
 ## Aktiverade interaktioner
 

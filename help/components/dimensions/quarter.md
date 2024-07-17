@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Kvartal
 
-&#39;Kvartal&#39; [dimension](overview.md) rapporterar kvartalet om att ett visst mått har inträffat. Den första dimensionsuppgiften är det första kvartalet i datumintervallet, och den sista dimensionsuppgiften är det sista kvartalet i datumintervallet. Denna dimension är idealisk för trendrapporter eftersom den gör att du kan se mätvärden över tid.
+Kvartal [dimension](overview.md) rapporterar kvartal om att ett visst mått har inträffat. Den första dimensionsuppgiften är det första kvartalet i datumintervallet, och den sista dimensionsuppgiften är det sista kvartalet i datumintervallet. Denna dimension är idealisk för trendrapporter eftersom den gör att du kan se mätvärden över tid.
 
 ## Fyll den här dimensionen med data
 

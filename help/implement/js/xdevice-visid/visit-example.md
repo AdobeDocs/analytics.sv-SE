@@ -51,4 +51,4 @@ Efter den första associationen återgår antalet besök till det normala efters
 
 ![](assets/visitors_2.png)
 
-Se till att ni är så enhetliga som möjligt när ni identifierar unika besökare. Använd till exempel alltid `visitorID` variabel när användaren autentiseras.
+Se till att ni är så enhetliga som möjligt när ni identifierar unika besökare. Använd till exempel alltid variabeln `visitorID` när användaren autentiseras.

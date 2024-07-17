@@ -12,12 +12,12 @@ ht-degree: 1%
 
 # Felsöka Advertising Analytics
 
-* [Jag ser inte min rapportsvit i mappningsavsnittet](/help/integrate/c-advertising-analytics/c-adanalytics-workflow/aa-troubleshooting.md#section_9CAACDE6445C492DBAE542BA74DE6316)
+* [Jag kan inte se min rapportserie i mappningsavsnittet](/help/integrate/c-advertising-analytics/c-adanalytics-workflow/aa-troubleshooting.md#section_9CAACDE6445C492DBAE542BA74DE6316)
 * [Jag får ett fel vid autentisering till Google Adwords-konto..](/help/integrate/c-advertising-analytics/c-adanalytics-workflow/aa-troubleshooting.md#section_C99EA9A1946E4908B36778A331142B84)
 
 ## Jag ser inte min rapportsvit i mappningsavsnittet {#section_9CAACDE6445C492DBAE542BA74DE6316}
 
-Du försöker [konfigurera ett nytt annonskonto](/help/integrate/c-advertising-analytics/c-adanalytics-workflow/aa-create-ad-account.md) och du ser inte din rapportserie i **[!UICONTROL Mapped report suites]** listruta. Det finns två möjliga orsaker till detta:
+Du försöker [konfigurera ett nytt Advertising-konto](/help/integrate/c-advertising-analytics/c-adanalytics-workflow/aa-create-ad-account.md) och du ser inte din rapportsvit som visas i listrutan **[!UICONTROL Mapped report suites]**. Det finns två möjliga orsaker till detta:
 
 <table id="table_271D7E817B4C44818717A47C3223E592"> 
  <thead> 
@@ -33,7 +33,7 @@ Du försöker [konfigurera ett nytt annonskonto](/help/integrate/c-advertising-a
   </tr> 
   <tr> 
    <td colname="col1"> <p>2. Rapportsviten har inte etablerats för Advertising Analytics-rapportering. </p> </td> 
-   <td colname="col2"> <p>Se <a href="/help/integrate/c-advertising-analytics/c-adanalytics-workflow/aa-provision-rs.md"  > Provisioneringsrapportsvit</a> för instruktioner. </p> </td> 
+   <td colname="col2"> <p>Mer information finns i <a href="/help/integrate/c-advertising-analytics/c-adanalytics-workflow/aa-provision-rs.md"  > Provisionera Report Suite </a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>

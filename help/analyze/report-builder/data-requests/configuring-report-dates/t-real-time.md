@@ -15,14 +15,14 @@ ht-degree: 0%
 
 Så här konfigurerar du begärandedatum i realtid:
 
-1. Se till att realtidsrapportering är aktiverat i [Administratörsverktyg](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/real-time-reports/t-realtime-admin.html).
-1. På [!UICONTROL Request Wizard: Step 1], klicka **[!UICONTROL Real-Time Report]** > **[!UICONTROL `<report type>`]**
+1. Kontrollera att realtidsrapportering är aktiverat i [administratörsverktygen](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/real-time-reports/t-realtime-admin.html).
+1. Klicka på **[!UICONTROL Real-Time Report]** > **[!UICONTROL `<report type>`]** på [!UICONTROL Request Wizard: Step 1]
 
-   Välj till exempel en trafikrapport. När du väljer en rapporttyp i realtid [!UICONTROL Select Time Range] visas.
+   Välj till exempel en trafikrapport. När du väljer en rapporttyp i realtid visas alternativen för [!UICONTROL Select Time Range].
 
 1. Välj ett tidsintervall i minuter eller timmar.
 
    ![Skärmbild som visar alternativen för Välj tidsintervall med de senaste 60 minuterna markerade.](assets/real_time_select_date.png)
 
    Realtidsrapportering är bara tillgänglig de senaste 20 timmarna. För granularitet kan du välja mellan 1 minuts granularitet och 30 minuter.
-1. Klicka **[!UICONTROL Next]** och fortsätta [konfigurera begärandelayout](/help/analyze/report-builder/layout/layout.md).
+1. Klicka på **[!UICONTROL Next]** och fortsätt [konfigurera begärandelayouten](/help/analyze/report-builder/layout/layout.md).

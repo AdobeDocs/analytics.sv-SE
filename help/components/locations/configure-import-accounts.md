@@ -21,34 +21,40 @@ ht-degree: 0%
 
 Du kan konfigurera ett molnkonto som används för något eller alla av följande syften:
 
-* Exportera filer med [Dataflöden](/help/export/analytics-data-feed/create-feed.md)
-* Exportera rapporter med [Data Warehouse](/help/export/data-warehouse/create-request/dw-request-report-destinations.md)
+* Exportera filer med [datafeeds](/help/export/analytics-data-feed/create-feed.md)
+* Exporterar rapporter med [Data Warehouse](/help/export/data-warehouse/create-request/dw-request-report-destinations.md)
 * Importera scheman med [Klassificeringsuppsättningar](/help/components/classifications/sets/overview.md)
 
-Du måste konfigurera Adobe Analytics med den information som krävs för att komma åt ditt molnkonto. Den här processen består av att lägga till och konfigurera kontot (till exempel Amazon S3 Role ARN, Google Cloud Platform o.s.v.) enligt beskrivningen i den här artikeln, och sedan lägga till och konfigurera platsen inom det kontot (till exempel en mapp inom kontot) enligt beskrivningen i [Konfigurera platser för molnimport och -export](/help/components/locations/configure-import-locations.md).
+Du måste konfigurera Adobe Analytics med den information som krävs för att komma åt ditt molnkonto. Den här processen består av att lägga till och konfigurera kontot (till exempel Amazon S3 Role ARN, Google Cloud Platform o.s.v.) enligt beskrivningen i den här artikeln, och sedan lägga till och konfigurera platsen inom det kontot (till exempel en mapp inom kontot) enligt beskrivningen i [Konfigurera molnimport och exportplatser](/help/components/locations/configure-import-locations.md).
 
 Mer information om hur du visar och tar bort befintliga konton finns i [Platshanteraren](/help/components/locations/locations-manager.md).
 
 Så här konfigurerar du ett molnimport- eller exportkonto:
 
-1. I Adobe Analytics: [!UICONTROL **Komponenter**] > [!UICONTROL **Platser**].
-1. På [!UICONTROL Locations] väljer du [!UICONTROL **Platskonton**] -fliken.
-1. (Villkorligt) Om du är systemadministratör kan du aktivera [!UICONTROL **Visa konton för alla användare**] för att visa konton som har skapats av alla användare i organisationen.
+1. I Adobe Analytics väljer du [!UICONTROL **Komponenter**] > [!UICONTROL **Platser**].
+1. På sidan [!UICONTROL Locations] väljer du fliken [!UICONTROL **Platskonton**].
+1. (Villkorligt) Om du är systemadministratör kan du aktivera alternativet [!UICONTROL **Visa konton för alla användare**] om du vill visa konton som skapats av alla användare i organisationen.
    ![visa konton för alla användare](assets/accounts-all-users.png)
 1. Om du vill skapa ett nytt konto väljer du [!UICONTROL **Lägg till konto**].
 
-   The [!UICONTROL **Information om platskonto**] visas.
+   Dialogrutan [!UICONTROL **Platskontouppgifter**] visas.
 
    eller
 
-   Om du vill redigera ett befintligt konto letar du reda på det konto du vill redigera och väljer sedan [!UICONTROL **Redigera information**] -knappen.
+   Om du vill redigera ett befintligt konto letar du reda på det konto du vill redigera och markerar sedan knappen [!UICONTROL **Redigera information**] .
 
-   The [!UICONTROL **Lägg till konto**] visas.
+   Dialogrutan [!UICONTROL **Lägg till konto**] visas.
 
-1. Ange följande information: |Fält | Funktion | |—|—| | [!UICONTROL **Platskontonamn**] | Namnet på platskontot. Det här namnet visas när du skapar en plats | | [!UICONTROL **Beskrivning av platskonto**] | Ange en kort beskrivning av kontot för att hjälpa till att skilja det från andra konton av samma kontotyp. | | [!UICONTROL **Gör kontot tillgängligt för alla användare i organisationen**] | Aktivera det här alternativet om du vill tillåta andra användare i organisationen att använda kontot.<p>Tänk på följande när du delar konton:</p><ul><li>Konton som du delar kan inte tas bort.</li><li>Delade konton kan bara redigeras av kontoägaren.</li><li>Vem som helst kan skapa en plats för det delade kontot.</li></ul> | | [!UICONTROL **Kontotyp**] | Välj typ av molnkonto. Vi rekommenderar att du har ett enda konto för varje kontotyp, med flera platser efter behov inom det kontot.<p>Systemadministratörer kan begränsa vilka kontotyper som användare kan skapa enligt beskrivningen i [Konfigurera om användare kan skapa konton](/help/components/locations/locations-manager.md#configure-whether-users-can-create-accounts). Kontakta systemadministratören om du inte kan skapa konton enligt beskrivningen i det här avsnittet.</p> |
-1. I [!UICONTROL **Kontoegenskaper**] anger du information som är specifik för den kontotyp som du har valt.
+1. Ange följande information:
+|Fält | Funktion |
+|—|—|
+| [!UICONTROL **Platskontonamn**] | Namnet på platskontot. Det här namnet visas när du skapar en plats |
+| [!UICONTROL **Beskrivning av platskonto**] | Ange en kort beskrivning av kontot för att hjälpa till att skilja det från andra konton av samma kontotyp. |
+| [!UICONTROL **Gör kontot tillgängligt för alla användare i organisationen**] | Aktivera det här alternativet om du vill tillåta andra användare i organisationen att använda kontot.<p>Tänk på följande när du delar konton:</p><ul><li>Konton som du delar kan inte tas bort.</li><li>Delade konton kan bara redigeras av kontoägaren.</li><li>Vem som helst kan skapa en plats för det delade kontot.</li></ul> |
+| [!UICONTROL **Kontotyp**] | Välj typ av molnkonto. Vi rekommenderar att du har ett enda konto för varje kontotyp, med flera platser efter behov inom det kontot.<p>Systemadministratörer kan begränsa vilka kontotyper användare kan skapa, enligt beskrivningen i [Konfigurera om användare kan skapa konton](/help/components/locations/locations-manager.md#configure-whether-users-can-create-accounts). Kontakta systemadministratören om du inte kan skapa konton enligt beskrivningen i det här avsnittet.</p> |
+1. I avsnittet [!UICONTROL **Kontoegenskaper**] anger du information som är specifik för den kontotyp som du har valt.
 
-   Utöka det avsnitt nedan som motsvarar [!UICONTROL **Kontotyp**] som du valde. (Ytterligare äldre kontotyper är också tillgängliga, men rekommenderas inte.)
+   Utöka det avsnitt nedan som motsvarar den [!UICONTROL **kontotyp**] som du har valt för konfigurationsinstruktioner. (Ytterligare äldre kontotyper är också tillgängliga, men rekommenderas inte.)
 
    **Kontotyper**
 
@@ -70,7 +76,7 @@ Så här konfigurerar du ett molnimport- eller exportkonto:
 
    | Fält | Funktion |
    |---------|----------|
-   | [!UICONTROL **Projekt-ID**] | Ditt projekt-ID för Google Cloud. Se [Google Cloud-dokumentation om hur du får ett projekt-ID](https://cloud.google.com/resource-manager/docs/creating-managing-projects#identifying_projects). |
+   | [!UICONTROL **Projekt-ID**] | Ditt projekt-ID för Google Cloud. Se [Google Cloud-dokumentationen om hur du hämtar ett projekt-ID](https://cloud.google.com/resource-manager/docs/creating-managing-projects#identifying_projects). |
 
    {style="table-layout:auto"}
 
@@ -82,11 +88,11 @@ Så här konfigurerar du ett molnimport- eller exportkonto:
 
    | Fält | Funktion |
    |---------|----------|
-   | [!UICONTROL **Program-ID**] | Kopiera det här ID:t från det Azure-program som du skapade. I Microsoft Azure finns den här informationen på **Ökning** -fliken i programmet. Mer information finns i [Microsoft Azure-dokumentation om hur du registrerar ett program med Microsoft identitetsplattform](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app). |
-   | [!UICONTROL **Klient-ID**] | Kopiera det här ID:t från det Azure-program som du skapade. I Microsoft Azure finns den här informationen på **Ökning** -fliken i programmet. Mer information finns i [Microsoft Azure-dokumentation om hur du registrerar ett program med Microsoft identitetsplattform](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app). |
-   | [!UICONTROL **URI för nyckelvalv**] | <p>Sökvägen till SAS-token i Azure Key Vault.  Om du vill konfigurera Azure SAS måste du lagra en SAS-token som en hemlighet med Azure Key Vault. Mer information finns i [Microsoft Azure-dokumentation om hur du ställer in och hämtar en hemlighet från Azure Key Vault](https://learn.microsoft.com/en-us/azure/key-vault/secrets/quick-create-portal?source=recommendations).</p><p>När nyckelvalvs-URI:n har skapats lägger du till en åtkomstprincip på nyckelvalvet för att ge behörighet till det Azure-program som du skapade. Mer information finns i [Microsoft Azure-dokumentation om hur du tilldelar en åtkomstprincip för nyckelvalv](https://learn.microsoft.com/en-us/azure/key-vault/general/assign-access-policy?tabs=azure-portal).</p> |
-   | [!UICONTROL **Nyckelvalvets hemliga namn**] | Det hemliga namn som du skapade när du lade till hemligheten i Azure Key Vault. I Microsoft Azure finns den här informationen i nyckelvalvet som du skapade på **Key Vault** inställningssida. Mer information finns i [Microsoft Azure-dokumentation om hur du ställer in och hämtar en hemlighet från Azure Key Vault](https://learn.microsoft.com/en-us/azure/key-vault/secrets/quick-create-portal?source=recommendations). |
-   | [!UICONTROL **Hemlighet för platskonto**] | Kopiera hemligheten från Azure-programmet som du skapade. I Microsoft Azure finns den här informationen på **Certifikat och hemligheter** -fliken i programmet. Mer information finns i [Microsoft Azure-dokumentation om hur du registrerar ett program med Microsoft identitetsplattform](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app). |
+   | [!UICONTROL **Program-ID**] | Kopiera det här ID:t från det Azure-program som du skapade. I Microsoft Azure finns den här informationen på fliken **Översikt** i ditt program. Mer information finns i [Microsoft Azure-dokumentationen om hur du registrerar ett program med Microsoft identitetsplattform](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app). |
+   | [!UICONTROL **Klient-ID**] | Kopiera det här ID:t från det Azure-program som du skapade. I Microsoft Azure finns den här informationen på fliken **Översikt** i ditt program. Mer information finns i [Microsoft Azure-dokumentationen om hur du registrerar ett program med Microsoft identitetsplattform](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app). |
+   | [!UICONTROL **Nyckelvalvs-URI**] | <p>Sökvägen till SAS-token i Azure Key Vault.  Om du vill konfigurera Azure SAS måste du lagra en SAS-token som en hemlighet med Azure Key Vault. Mer information finns i [Microsoft Azure-dokumentationen om hur du ställer in och hämtar en hemlighet från Azure Key Vault](https://learn.microsoft.com/en-us/azure/key-vault/secrets/quick-create-portal?source=recommendations).</p><p>När nyckelvalvs-URI:n har skapats lägger du till en åtkomstprincip på nyckelvalvet för att ge behörighet till det Azure-program som du skapade. Mer information finns i [Microsoft Azure-dokumentationen om hur du tilldelar en åtkomstprincip för nyckelvalv](https://learn.microsoft.com/en-us/azure/key-vault/general/assign-access-policy?tabs=azure-portal).</p> |
+   | [!UICONTROL **Nyckelvalvets hemliga namn**] | Det hemliga namn som du skapade när du lade till hemligheten i Azure Key Vault. I Microsoft Azure finns den här informationen i nyckelvalvet som du skapade på inställningssidan för **nyckelvalv**. Mer information finns i [Microsoft Azure-dokumentationen om hur du ställer in och hämtar en hemlighet från Azure Key Vault](https://learn.microsoft.com/en-us/azure/key-vault/secrets/quick-create-portal?source=recommendations). |
+   | [!UICONTROL **Platskontohemlighet**] | Kopiera hemligheten från Azure-programmet som du skapade. I Microsoft Azure finns den här informationen på fliken **Certifikat och hemligheter** i ditt program. Mer information finns i [Microsoft Azure-dokumentationen om hur du registrerar ett program med Microsoft identitetsplattform](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app). |
 
    {style="table-layout:auto"}
 
@@ -98,9 +104,9 @@ Så här konfigurerar du ett molnimport- eller exportkonto:
 
    | Fält | Funktion |
    |---------|----------|
-   | [!UICONTROL **Program-ID**] | Kopiera det här ID:t från det Azure-program som du skapade. I Microsoft Azure finns den här informationen på **Ökning** -fliken i programmet. Mer information finns i [Microsoft Azure-dokumentation om hur du registrerar ett program med Microsoft identitetsplattform](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app). |
-   | [!UICONTROL **Klient-ID**] | Kopiera det här ID:t från det Azure-program som du skapade. I Microsoft Azure finns den här informationen på **Ökning** -fliken i programmet. Mer information finns i [Microsoft Azure-dokumentation om hur du registrerar ett program med Microsoft identitetsplattform](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app). |
-   | [!UICONTROL **Hemlighet för platskonto**] | Kopiera hemligheten från Azure-programmet som du skapade. I Microsoft Azure finns den här informationen på **Certifikat och hemligheter** -fliken i programmet. Mer information finns i [Microsoft Azure-dokumentation om hur du registrerar ett program med Microsoft identitetsplattform](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app). |
+   | [!UICONTROL **Program-ID**] | Kopiera det här ID:t från det Azure-program som du skapade. I Microsoft Azure finns den här informationen på fliken **Översikt** i ditt program. Mer information finns i [Microsoft Azure-dokumentationen om hur du registrerar ett program med Microsoft identitetsplattform](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app). |
+   | [!UICONTROL **Klient-ID**] | Kopiera det här ID:t från det Azure-program som du skapade. I Microsoft Azure finns den här informationen på fliken **Översikt** i ditt program. Mer information finns i [Microsoft Azure-dokumentationen om hur du registrerar ett program med Microsoft identitetsplattform](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app). |
+   | [!UICONTROL **Platskontohemlighet**] | Kopiera hemligheten från Azure-programmet som du skapade. I Microsoft Azure finns den här informationen på fliken **Certifikat och hemligheter** i ditt program. Mer information finns i [Microsoft Azure-dokumentationen om hur du registrerar ett program med Microsoft identitetsplattform](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app). |
 
    {style="table-layout:auto"}
 
@@ -110,7 +116,7 @@ Så här konfigurerar du ett molnimport- eller exportkonto:
 
    >[!NOTE]
    >
-   >E-postkonton kan bara användas med [Dataflöden](/help/export/analytics-data-feed/create-feed.md). (E-postkonton stöds inte med [Data Warehouse](/help/export/data-warehouse/create-request/dw-request-report-destinations.md) eller [Klassificeringsuppsättningar](/help/components/classifications/sets/overview.md)).
+   >E-postkonton kan bara användas med [datafeeds](/help/export/analytics-data-feed/create-feed.md). (E-postkonton stöds inte med [Data Warehouse](/help/export/data-warehouse/create-request/dw-request-report-destinations.md) eller [klassificeringsuppsättningar](/help/components/classifications/sets/overview.md)).
 
    Om du vill konfigurera ett Azure RBAC-konto anger du följande information:
 
@@ -124,7 +130,7 @@ Så här konfigurerar du ett molnimport- eller exportkonto:
 
    **Äldre kontotyper**
 
-   De här äldre kontotyperna är bara tillgängliga när du exporterar data med [Dataflöden](/help/export/analytics-data-feed/create-feed.md) och [Data Warehouse](/help/export/data-warehouse/create-request/t-dw-create-request.md). Dessa alternativ är inte tillgängliga vid import av data med [Klassificeringsuppsättningar](/help/components/classifications/sets/manage/schema.md).
+   De här äldre kontotyperna är bara tillgängliga när du exporterar data med [datafeeds](/help/export/analytics-data-feed/create-feed.md) och [Data Warehouse](/help/export/data-warehouse/create-request/t-dw-create-request.md). Dessa alternativ är inte tillgängliga när du importerar data med [klassificeringsuppsättningar](/help/components/classifications/sets/manage/schema.md).
 
    +++FTP
 
@@ -132,8 +138,8 @@ Så här konfigurerar du ett molnimport- eller exportkonto:
 
    | Fält | Funktion |
    |---------|----------|
-   | [!UICONTROL **Värd**] | Ange önskad mål-URL för FTP. Till exempel: `ftp://ftp.omniture.com`. |
-   | [!UICONTROL **Bana**] | Kan lämnas tomt. |
+   | [!UICONTROL **Värd**] | Ange önskad mål-URL för FTP. Exempel: `ftp://ftp.omniture.com`. |
+   | [!UICONTROL **Sökväg**] | Kan lämnas tomt. |
    | [!UICONTROL **Användarnamn**] | Ange användarnamnet för att logga in på FTP-platsen. |
    | [!UICONTROL **Lösenord och bekräfta lösenord**] | Ange lösenordet för att logga in på FTP-platsen. |
 
@@ -149,7 +155,7 @@ Så här konfigurerar du ett molnimport- eller exportkonto:
 
    +++S3
 
-   Du kan skicka lagerdata direkt till Amazon S3-butiker. Den här måltypen kräver ett Bucket-namn, ett Access Key ID och en Secret Key. Se [Krav för Amazon S3-bucket](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-s3-bucket-naming-requirements.html) i Amazon S3-dokumenten för mer information.
+   Du kan skicka lagerdata direkt till Amazon S3-butiker. Den här måltypen kräver ett Bucket-namn, ett Access Key ID och en Secret Key. Mer information finns i [Namngivningskrav för Amazon S3-bucket](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-s3-bucket-naming-requirements.html) i Amazon S3-dokumenten.
 
    Användaren som du anger för överföring av datalagerdata måste ha följande [behörigheter](https://docs.aws.amazon.com/AmazonS3/latest/API/API_Operations_Amazon_Simple_Storage_Service.html):
 
@@ -184,7 +190,7 @@ Så här konfigurerar du ett molnimport- eller exportkonto:
 
    +++Azure Blob
 
-   Datalagret stöder Azure Blob-mål. Kräver en behållare, ett konto och en nyckel. Amazon krypterar automatiskt vilande data. När du hämtar data dekrypteras de automatiskt. Se [Skapa ett lagringskonto](https://docs.microsoft.com/en-us/azure/storage/common/storage-quickstart-create-account?tabs=azure-portal#view-and-copy-storage-access-keys) i Microsoft Azure-dokumenten om du vill ha mer information.
+   Datalagret stöder Azure Blob-mål. Kräver en behållare, ett konto och en nyckel. Amazon krypterar automatiskt vilande data. När du hämtar data dekrypteras de automatiskt. Mer information finns i [Skapa ett lagringskonto](https://docs.microsoft.com/en-us/azure/storage/common/storage-quickstart-create-account?tabs=azure-portal#view-and-copy-storage-access-keys) i Microsoft Azure-dokumenten.
 
    >[!NOTE]
    >
@@ -194,4 +200,4 @@ Så här konfigurerar du ett molnimport- eller exportkonto:
 
 1. Välj [!UICONTROL **Spara**].
 
-1. Fortsätt med [Konfigurera platser för molnimport och -export](/help/components/locations/configure-import-locations.md).
+1. Fortsätt med [Konfigurera molnimport och exportplatser](/help/components/locations/configure-import-locations.md).

@@ -13,9 +13,9 @@ ht-degree: 0%
 
 # purchaseID
 
-The `purchaseID` variabeln förhindrar att träffar som innehåller samma köp får fler rapporter. Om en besökare till exempel kommer till din bekräftelsesida skickar du vanligtvis data runt intäkten som genererats från transaktionen till Adobe. Om användaren uppdaterar den här sidan flera gånger eller bokmärker sidan för att besöka den senare, kan dessa träffar generera rapporter. The `purchaseID` variabeln deduplicerar mått när mer än en träff har samma inköps-ID.
+Variabeln `purchaseID` hjälper till att förhindra träffar som innehåller samma köp från att generera fler rapporter. Om en besökare till exempel kommer till din bekräftelsesida skickar du vanligtvis data runt intäkten som genererats från transaktionen till Adobe. Om användaren uppdaterar den här sidan flera gånger eller bokmärker sidan för att besöka den senare, kan dessa träffar generera rapporter. Variabeln `purchaseID` avduplicerar mått när fler än en träff har samma inköps-ID.
 
-När Adobe identifierar en träff som ett dubblettköp visas inga konverteringsdata (som eVars och events) i rapporteringen. I dataflöden är `duplicate_purchase` kolumnen är inställd på `1`.
+När Adobe identifierar en träff som ett dubblettköp visas inga konverteringsdata (som eVars och events) i rapporteringen. I dataflöden är kolumnen `duplicate_purchase` inställd på `1`.
 
 Inköp-ID gäller för alla besökare och upphör efter 37 månader. Om en besökare ställer in ett visst köp-ID, kommer en annan besökare att ställa in samma köp-ID ett år senare, det andra köpet tas bort.
 
@@ -30,18 +30,18 @@ Inköps-ID är mappat till följande variabler:
 
 Du kan ange inköps-ID när du konfigurerar Analytics-tillägget (globala variabler) eller enligt regler.
 
-1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med dina inloggningsuppgifter för AdobeID.
 2. Klicka på den önskade taggegenskapen.
-3. Gå till [!UICONTROL Rules] och sedan klicka på önskad regel (eller skapa en regel).
-4. Under [!UICONTROL Actions]klickar du på en befintlig [!UICONTROL Adobe Analytics - Set Variables] eller klicka på +-ikonen.
-5. Ange [!UICONTROL Extension] nedrullningsbar lista till Adobe Analytics och [!UICONTROL Action Type] till [!UICONTROL Set Variables].
-6. Leta reda på [!UICONTROL Purchase ID] -avsnitt.
+3. Gå till fliken [!UICONTROL Rules] och klicka sedan på önskad regel (eller skapa en regel).
+4. Klicka på en befintlig [!UICONTROL Adobe Analytics - Set Variables]-åtgärd under [!UICONTROL Actions] eller klicka på +-ikonen.
+5. Ange Adobe Analytics i listrutan [!UICONTROL Extension] och [!UICONTROL Action Type] till [!UICONTROL Set Variables].
+6. Leta reda på avsnittet [!UICONTROL Purchase ID].
 
 Du kan ange ett inköps-ID till ett värde eller ett dataelement. Du kan också kopiera värdet från en annan Analytics-variabel.
 
 ## s.purchaseID i AppMeasurementet och den anpassade kodredigeraren för Analytics-tillägget
 
-The `s.purchaseID` variabeln är en sträng som innehåller en unik identifierare för ett köp. Den ställs in på samma träff som en köphändelse. Använd bara alfanumeriska tecken för att fylla i variabeln.
+Variabeln `s.purchaseID` är en sträng som innehåller en unik identifierare för ett köp. Den ställs in på samma träff som en köphändelse. Använd bara alfanumeriska tecken för att fylla i variabeln.
 
 Den här variabeln kan lagra högst 20 byte. Värden som är längre än 20 byte trunkeras. Om det här trunkerade värdet matchar efterföljande trunkerade värden kommer dessa efterföljande träffar att dubbleras.
 
@@ -49,7 +49,7 @@ Den här variabeln kan lagra högst 20 byte. Värden som är längre än 20 byte
 s.purchaseID = "ABC123";
 ```
 
-Om du använder `digitalData` [datalager](../../prepare/data-layer.md):
+Om `digitalData` [datalagret](../../prepare/data-layer.md) används:
 
 ```js
 s.purchaseID = digitalData.transaction.transactionID;

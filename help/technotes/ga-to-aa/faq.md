@@ -5,8 +5,8 @@ feature: Third-party Integration
 exl-id: 1201909e-b20c-48c5-b287-393da8e22d78
 source-git-commit: 6de20d2fbbab6ded6c92f0c6f3536671f4b2ae46
 workflow-type: tm+mt
-source-wordcount: '393'
-ht-degree: 39%
+source-wordcount: '387'
+ht-degree: 40%
 
 ---
 
@@ -18,17 +18,17 @@ Alla Analytics-plattformar har olika sätt att samla in, hantera och lagra data.
 
 Om din organisation är van vid att få historisk information porterad till Adobe ska du kontakta ditt kontoteam på Adobe. En implementeringskonsult kan samarbeta med organisationen för att översätta en Google Analytics-dataexport till en datakälla som kan importeras av Adobes datainsamlingsservrar.
 
-Vi rekommenderar att du använder [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html) som kan ta med sig alla datakällor i flera kanaler.
+För att kunna flytta över historiska data rekommenderar vi att du använder [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html) som kan ta in valfri datakälla i flera kanaler.
 
 **Jag är van vid en listruta för segmentering i många av mina rapporter. Hur återskapar jag det i [!UICONTROL Analysis Workspace]?**
 
 Nedrullningsbara filter är en flexibel och robust funktion i [!UICONTROL Analysis Workspace] som tillåter en listruta för segmentering. I ett arbetsyteprojekt:
 
-1. Ctrl-klicka (Windows) eller Cmd-klicka (Mac) på de komponenter som du vill ta med i listrutan. Du är inte begränsad till bara segment; valfri komponent kan inkluderas i ett nedrullningsbart filter.
+1. Ctrl-klicka (Windows) eller Cmd-klicka (Mac) på de komponenter som du vill ta med i listrutan. Du är inte begränsad till bara segment. Alla komponenter kan inkluderas i ett nedrullningsbart filter.
 2. Dra gruppen med komponenter till arbetsytan med namnet &#39;Släpp ett segment här&#39;. Håll ned Skift innan du släpper.
 
-Användare som har åtkomst till detta [!UICONTROL Workspace] kan nu använda det här nedrullningsbara filtret för att tillämpa segment eller andra komponenter i projektet. Se [Paneler - översikt](/help/analyze/analysis-workspace/c-panels/panels.md) i Adobe Analytics Tools Guide för mer information.
+Användare som använder det här [!UICONTROL Workspace]-projektet kan nu använda det här nedrullningsbara filtret för att tillämpa segment eller andra komponenter i projektet. Mer information finns i [Panelöversikt](/help/analyze/analysis-workspace/c-panels/panels.md) i Adobe Analytics-handboken.
 
-**Jag är van vid att klicka på ett dimensionsobjekt för att se en detaljnivå. Hur kan jag replikera det enkla arbetsflödet i Analysis Workspace?**
+**Jag är van vid att klicka på ett dimensionsobjekt för att visa en detaljnivå. Hur kan jag replikera det enkla arbetsflödet i Analysis Workspace?**
 
-Dimensioner i [!UICONTROL Analysis Workspace] har också ett enkelt arbetsflöde. Du öppnar den genom att högerklicka i stället för att vänsterklicka. Högerklicka på en dimensionspost, klicka **[!UICONTROL Breakdown]markerar du sedan önskad komponent. Du kan tillämpa samma uppdelning på flera dimensionsobjekt genom att Ctrl-klicka (Windows) eller Kommando-klicka (Mac) på varje värde.
+Det är också enkelt att dela upp Dimensioner i [!UICONTROL Analysis Workspace]. Du öppnar den genom att högerklicka i stället för att vänsterklicka. Högerklicka på ett dimensionsobjekt, klicka på **[!UICONTROL Breakdown] och välj sedan önskad komponent. Du kan tillämpa samma uppdelning på flera dimensionsobjekt genom att Ctrl-klicka (Windows) eller Kommando-klicka (Mac) på varje värde.

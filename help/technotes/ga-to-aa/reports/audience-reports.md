@@ -5,7 +5,7 @@ feature: Third-party Integration
 exl-id: 739b0c3d-3f74-41fa-a2cc-f02c17d85ce2
 source-git-commit: 266cf18050d60f08f7e170c56453d1e1d805cb7b
 workflow-type: tm+mt
-source-wordcount: '1715'
+source-wordcount: '1720'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Målgruppsrapporter visar information om vilka typer av personer som besöker er webbplats.
 
-Den här sidan förutsätter att användaren har grundläggande kunskaper i Analysis Workspace. Se [Skapa en grundläggande rapport i Analysis Workspace för användare av Google Analytics](create-report.md) om du ännu inte känner till verktyget i Adobe Analytics.
+Den här sidan förutsätter att användaren har grundläggande kunskaper i Analysis Workspace. Se [Skapa en grundläggande rapport i Analysis Workspace för användare av Google Analytics](create-report.md) om du inte redan känner till verktyget i Adobe Analytics.
 
 ## Aktiva användare
 
@@ -23,10 +23,10 @@ Aktiva användare visar det kumulativa antalet användare till din webbplats und
 Så här får du ett linjediagram över unika besökare:
 
 1. Klicka på ikonen Visualiseringar till vänster och dra linjevisualiseringen till arbetsytan ovanför den tomma friformstabellen.
-2. Klicka på ikonen Komponenter till vänster och dra **Unika besökare** i det mindre utrymmet med etiketten &#39;Släpp ett mätvärde här&#39;.
-3. Om du vill ha en annan granularitet drar du det önskade datumintervallet (t.ex. **Dag**, **Vecka**, **Månad**, osv.) ovanpå den befintliga datumdimensionshuvudet.
+2. Klicka på ikonen Komponenter till vänster och dra sedan måttet **Unika besökare** till det mindre området med namnet &#39;Släpp ett mätvärde här&#39;.
+3. Om du vill ha en annan granularitet drar du det önskade datumintervallet (t.ex. **Dag**, **Vecka**, **Månad** osv.) ovanpå den befintliga datumdimensionshuvudet.
 
-Se [Unika besökare](/help/components/metrics/unique-visitors.md) i användarhandboken för komponenter om du vill ha mer information om hur Adobe beräknar unika besökare.
+Se [Unika besökare](/help/components/metrics/unique-visitors.md) i användarhandboken för komponenter för mer information om hur Adobe beräknar unika besökare.
 
 ## Livstidsvärde
 
@@ -39,7 +39,7 @@ Kohortanalys visar hur ofta samma användare återvänder till din webbplats.
 Så här skapar du en kohorttabell:
 
 1. Klicka på visualiseringsikonen till vänster och dra CSS-visualiseringen till arbetsytan.
-2. Klicka på ikonen Komponenter till vänster och dra **Besök** mätvärden för både inkluderingskriterier och returkriterier.
+2. Klicka på ikonen Komponenter till vänster och dra sedan måttet **Besök** till både Inkluderingsvillkor och Returvillkor.
 3. Klicka på Skapa.
 
 Se [Kohortanalys](/help/analyze/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) i användarhandboken för Analysis Workspace för mer information om ytterligare anpassningar av kohortvisualiseringen.
@@ -53,7 +53,7 @@ Målgruppsrapporten i Google Analytics kräver att man skapar målgrupper. Publi
 Med rapporten User Explorer kan analytiker visa enskilda besök via anonyma identifierare. Adobe tar inte upp backend-identifierare utanför dataflöden, som är rådataexport på träffnivå.
 
 * Om du vill ha dessa data i Analysis Workspace kan du samarbeta med en implementeringskonsult för att skicka det anonyma unika identifieringscookie-värdet till en eVar. Observera att detta bara fungerar med mindre implementeringar som består av mindre än 1 miljon unika besökare per månad.
-* Om du vill använda dessa data i dataflöden, kommer de sammanfogade kolumnerna `visid_high` och `visid_low` är det vanligaste sättet att identifiera unika besökare. Läs mer om [Dataflöden](/help/export/analytics-data-feed/data-feed-overview.md) i Exportera användarhandbok.
+* Om du vill använda dessa data i dataflöden är de sammanfogade kolumnerna `visid_high` och `visid_low` det vanligaste sättet att identifiera unika besökare. Läs mer om [Datafeeds](/help/export/analytics-data-feed/data-feed-overview.md) i användarhandboken för Exportera.
 
 ## Demografiska rapporter och intresserapporter
 
@@ -69,10 +69,10 @@ I geospråkrapporten visas webbplatstrafiken med språkinställningen i besökar
 
 Så här skapar du en språkrapport:
 
-1. På menyn Komponenter letar du upp **Språk** och dra den till det stora frihandsritbordet med etiketten &#39;Släpp en Dimension här&#39;.
-2. Dra de önskade måtten till arbetsytan bredvid de automatiskt skapade **Förekomster** mätvärden. Se [Guide för översättning av mått](common-metrics.md) om du vill ha mer information om hur du får fram respektive mätvärden.
+1. Leta reda på dimensionen **Språk** på komponentmenyn och dra den till det stora frihandstabellområdet med etiketten &#39;Släpp en Dimension här&#39;.
+2. Dra de önskade måtten till arbetsytan bredvid det automatiskt skapade **förekomstmåttet** . Mer information om hur du hämtar respektive mätvärde finns i [måttöversättningsguiden](common-metrics.md).
 
-Se [Språk](/help/components/dimensions/language.md) dimension i användarhandboken för komponenter om du vill ha mer information.
+Mer information finns i dimensionen [Språk](/help/components/dimensions/language.md) i användarhandboken för komponenter.
 
 ## Geo - plats
 
@@ -81,15 +81,15 @@ Rapporten om geografisk plats ger en global kartvy där data delas upp per land.
 Så här skapar du en geoplatsrapport:
 
 1. Klicka på ikonen Visualiseringar till vänster och dra kartvisualiseringen till arbetsytan ovanför den tomma friformstabellen.
-2. Klicka på ikonen Komponenter till vänster och dra **Unika besökare** i utrymmet med etiketten &#39;Lägg till mått&#39;.
+2. Klicka på ikonen Komponenter till vänster och dra sedan måttet **Unika besökare** till området med etiketten Lägg till mått.
 3. Klicka på Skapa.
 
 Om tabellen också är önskad utöver kartan:
 
-1. På menyn Komponenter letar du upp **Länder** och dra den till det stora frihandsritbordet med etiketten &#39;Släpp en Dimension här&#39;.
-2. Dra de önskade måtten till arbetsytan bredvid de automatiskt skapade **Förekomster** mätvärden. Se [Guide för översättning av mått](common-metrics.md) om du vill ha mer information om hur du får fram respektive mätvärden.
+1. På menyn Komponenter letar du upp dimensionen **Länder** och drar den till det stora friformstabellområdet med etiketten &#39;Släpp en Dimension här&#39;.
+2. Dra de önskade måtten till arbetsytan bredvid det automatiskt skapade **förekomstmåttet** . Mer information om hur du hämtar respektive mätvärde finns i [måttöversättningsguiden](common-metrics.md).
 
-Se [Länder](/help/components/dimensions/countries.md) dimensioner i användarhandboken för komponenter om du vill ha mer information.
+Mer information finns i måtten för [Länder](/help/components/dimensions/countries.md) i användarhandboken för komponenter.
 
 ## Beteende - Nytt jämfört med Returning
 
@@ -97,9 +97,9 @@ Den nya rapporten kontra återskicksrapporten ger en förenklad bild av de förs
 
 Så här skapar du en ny rapport jämfört med en rapport om återkommande besök:
 
-1. Gå till komponentmenyn **Första gången du besöker** segmentera och dra det till det stora frihandsritbordet med etiketten &#39;Släpp en Dimension här&#39;. Observera att **Första gången du besöker** är ett segment, medan Workspace vanligtvis använder dimensioner för att representera rader.
-2. Leta reda på **Returbesök** segmentera och dra det över segmentradens sidhuvud. Då läggs segmentet till som en dimension under förstagångsbesök, vilket gör det enkelt att jämföra.
-3. Dra de önskade måtten till arbetsytan bredvid de automatiskt skapade **Förekomster** mätvärden. Se [Guide för översättning av mått](common-metrics.md) om du vill ha mer information om hur du får fram respektive mätvärden.
+1. På komponentmenyn letar du reda på segmentet **Första gången du besöker** och drar det till det stora frihandstabellområdet med etiketten &#39;Släpp en Dimension här&#39;. Observera att **förstagångsbesök** är ett segment, medan Workspace vanligtvis använder dimensioner för att representera rader.
+2. Leta reda på segmentet **Returbesök** och dra det över segmentradrubriken. Då läggs segmentet till som en dimension under förstagångsbesök, vilket gör det enkelt att jämföra.
+3. Dra de önskade måtten till arbetsytan bredvid det automatiskt skapade **förekomstmåttet** . Mer information om hur du hämtar respektive mätvärde finns i [måttöversättningsguiden](common-metrics.md).
 
 Om du även vill ha ett linjediagram:
 
@@ -109,34 +109,34 @@ Om du även vill ha ett linjediagram:
 
 ## Beteende - Täthet och senaste
 
-Rapporten om frekvens och senaste aktivitet är ungefär densamma som **Besök nummer** i Analysis Workspace.
+Frekvensrapporten och rapporten om senaste besök är ungefär lika med dimensionen **Besök nummer** i Analysis Workspace.
 
-1. Gå till komponentmenyn **Besök nummer** och dra den till det stora frihandsritbordet med etiketten &#39;Släpp en dimension här&#39;.
-2. Dra de önskade måtten till arbetsytan bredvid de automatiskt skapade **Förekomster** mätvärden. Se [Guide för översättning av mått](common-metrics.md) om du vill ha mer information om hur du får fram respektive mätvärden.
+1. På komponentmenyn letar du reda på dimensionen **Besök nummer** och drar den till det stora frihandstabellområdet med etiketten &#39;Släpp en dimension här&#39;.
+2. Dra de önskade måtten till arbetsytan bredvid det automatiskt skapade **förekomstmåttet** . Mer information om hur du hämtar respektive mätvärde finns i [måttöversättningsguiden](common-metrics.md).
 
-Se [Besök nummer](/help/components/dimensions/visit-number.md) dimension i användarhandboken för komponenter om du vill ha mer information.
+Mer information finns i dimensionen [Besök Nummer](/help/components/dimensions/visit-number.md) i användarhandboken för komponenter.
 
 ## Beteende - engagemang
 
-Förlovningsrapporten är ungefär lika med **Tid per besök - paketerad** dimension.
+Åtaganderapporten är ungefär lika med dimensionen **Tid per besök - Bucketed**.
 
-1. Gå till komponentmenyn **Tid per besök - paketerad** och dra den till det stora frihandsritbordet med etiketten &#39;Släpp en dimension här&#39;.
-2. Dra de önskade måtten till arbetsytan bredvid de automatiskt skapade **Förekomster** mätvärden. Se [Guide för översättning av mått](common-metrics.md) om du vill ha mer information om hur du får fram respektive mätvärden.
+1. På komponentmenyn letar du reda på dimensionen **Tid per besök - Bucketed** och drar den till det stora frihandstabellområdet med etiketten &#39;Släpp en dimension här&#39;.
+2. Dra de önskade måtten till arbetsytan bredvid det automatiskt skapade **förekomstmåttet** . Mer information om hur du hämtar respektive mätvärde finns i [måttöversättningsguiden](common-metrics.md).
 
-Se [Tid per besök](/help/components/dimensions/time-spent-per-visit.md) dimension i användarhandboken för komponenter om du vill ha mer information.
+Mer information finns i dimensionen [Tid per besök](/help/components/dimensions/time-spent-per-visit.md) i användarhandboken för komponenter.
 
 ## Teknik - webbläsare och operativsystem
 
 Det finns flera primära dimensioner i rapporten för webbläsare och operativsystem.
 
-* The **Webbläsare** Den primära dimensionen finns också i Analysis Workspace som dimension.
-* The **Operativsystem** Den primära dimensionen finns också i Analysis Workspace som dimension.
-* The **Skärmupplösning** den primära dimensionen är tillgänglig i Analysis Workspace som **Bildskärmsupplösning** dimension.
-* The **Skärmfärger** den primära dimensionen är tillgänglig i Analysis Workspace som **Färgdjup** dimension.
-* The **Flashens version** Den primära dimensionen är inte tillgänglig i Adobe Analytics, men dessa data kan samlas in av en eVar om det behövs.
+* Den primära dimensionen **Webbläsare** är även tillgänglig i Analysis Workspace som en dimension.
+* Den primära dimensionen för **operativsystemet** är även tillgänglig i Analysis Workspace som en dimension.
+* Den primära dimensionen **Skärmupplösning** är tillgänglig i Analysis Workspace som dimension **Bildskärmsupplösning**.
+* Den primära dimensionen **Skärmfärger** är tillgänglig i Analysis Workspace som dimensionen **Färgdjup** .
+* Den primära dimensionen **Flash version** är inte tillgänglig i Adobe Analytics, men den här informationen kan samlas in av en eVar om det behövs.
 
 1. På komponentmenyn letar du upp den önskade dimensionen ovan och drar den till det stora frihandsritbordet med etiketten &#39;Släpp en dimension här&#39;.
-2. Dra de önskade måtten till arbetsytan bredvid de automatiskt skapade **Förekomster** mätvärden. Se [Guide för översättning av mått](common-metrics.md) om du vill ha mer information om hur du får fram respektive mätvärden.
+2. Dra de önskade måtten till arbetsytan bredvid det automatiskt skapade **förekomstmåttet** . Mer information om hur du hämtar respektive mätvärde finns i [måttöversättningsguiden](common-metrics.md).
 
 Se följande sidor i användarhandboken för komponenter för mer information om deras respektive dimension:
 
@@ -147,34 +147,34 @@ Se följande sidor i användarhandboken för komponenter för mer information om
 
 ## Teknik - Nätverk
 
-Nätverksrapporten är ungefär lika med **Domän** dimension.
+Nätverksrapporten är ungefär lika med dimensionen **Domän**.
 
-1. Gå till komponentmenyn **Domän** och dra den till det stora frihandsritbordet med etiketten &#39;Släpp en dimension här&#39;.
-2. Dra de önskade måtten till arbetsytan bredvid de automatiskt skapade **Förekomster** mätvärden. Se [Guide för översättning av mått](common-metrics.md) om du vill ha mer information om hur du får fram respektive mätvärden.
+1. Leta reda på dimensionen **Domän** på komponentmenyn och dra den till det stora frihandstabellområdet med etiketten &#39;Släpp en dimension här&#39;.
+2. Dra de önskade måtten till arbetsytan bredvid det automatiskt skapade **förekomstmåttet** . Mer information om hur du hämtar respektive mätvärde finns i [måttöversättningsguiden](common-metrics.md).
 
-Se [Domän](/help/components/dimensions/domain.md) dimension i användarhandboken för komponenter om du vill ha mer information.
+Mer information finns i dimensionen [Domän](/help/components/dimensions/domain.md) i användarhandboken för komponenter.
 
 ## Mobil - översikt
 
-Översiktsrapporten för mobilen är ungefär densamma som **Typ av mobil enhet** dimension. Observera att värdet &quot;Annat&quot; motsvarar skrivbordstrafiken.
+Översiktsrapporten för mobilen är ungefär lika med dimensionen **Mobilenhetstyp** . Observera att värdet &quot;Annat&quot; motsvarar skrivbordstrafiken.
 
-1. Gå till komponentmenyn **Typ av mobil enhet** och dra den till det stora frihandsritbordet med etiketten &#39;Släpp en dimension här&#39;.
-2. Dra de önskade måtten till arbetsytan bredvid de automatiskt skapade **Förekomster** mätvärden. Se [Guide för översättning av mått](common-metrics.md) om du vill ha mer information om hur du får fram respektive mätvärden.
+1. På komponentmenyn letar du reda på dimensionen **Mobile Device Type** och drar den till det stora frihandstabellområdet med etiketten &#39;Drop a dimension here&#39;.
+2. Dra de önskade måtten till arbetsytan bredvid det automatiskt skapade **förekomstmåttet** . Mer information om hur du hämtar respektive mätvärde finns i [måttöversättningsguiden](common-metrics.md).
 
-Se [Typ av mobil enhet](/help/components/dimensions/mobile-dimensions.md) dimension i användarhandboken för komponenter om du vill ha mer information.
+Mer information finns i dimensionen [Mobile device type](/help/components/dimensions/mobile-dimensions.md) i användarhandboken för komponenter.
 
 ## Mobil - enheter
 
-Rapporten för mobila enheter är ungefär lika med **Mobil enhet** dimension.
+Rapporten för mobila enheter är ungefär lika med dimensionen **Mobile Device** .
 
-1. Gå till komponentmenyn **Mobil enhet** och dra den till det stora frihandsritbordet med etiketten &#39;Släpp en dimension här&#39;.
-2. Dra de önskade måtten till arbetsytan bredvid de automatiskt skapade **Förekomster** mätvärden. Se [Guide för översättning av mått](common-metrics.md) om du vill ha mer information om hur du får fram respektive mätvärden.
+1. På komponentmenyn letar du reda på dimensionen **Mobile Device** och drar den till det stora frihandstabellområdet med etiketten &#39;Drop a dimension here&#39;.
+2. Dra de önskade måtten till arbetsytan bredvid det automatiskt skapade **förekomstmåttet** . Mer information om hur du hämtar respektive mätvärde finns i [måttöversättningsguiden](common-metrics.md).
 
-Se [Mobil enhet](/help/components/dimensions/mobile-dimensions.md) dimension i användarhandboken för komponenter om du vill ha mer information.
+Mer information finns i dimensionen [Mobile device](/help/components/dimensions/mobile-dimensions.md) i användarhandboken för komponenter.
 
 ## Anpassad
 
-Anpassade rapporter definieras per implementering. Samarbeta med er organisations Analytics-administratör och/eller implementeringskonsult för att tolka dessa rapporter. Vanligtvis har en organisation en [Lösningsdesigndokument](/help/implement/prepare/solution-design.md) för att hålla reda på anpassade variabelvärden och hur de fylls i.
+Anpassade rapporter definieras per implementering. Samarbeta med er organisations Analytics-administratör och/eller implementeringskonsult för att tolka dessa rapporter. Vanligtvis har en organisation ett [lösningsdesigndokument](/help/implement/prepare/solution-design.md) som håller reda på anpassade variabelvärden och hur de fylls i.
 
 ## Benchmarking
 
@@ -185,6 +185,6 @@ Tack vare analysrapporter kan ni se hur olika aspekter av era data jämfört med
 Flödesrapporten är tillgänglig på båda plattformarna. Så här skapar du en flödesrapport:
 
 1. Klicka på visualiseringsikonen till vänster och dra en Flow-visualisering till arbetsytan ovanför frihandstabellen
-2. Leta reda på **Sidor** dimension och klicka sedan på pilikonen för att visa sidvärden. Dimensioner är gulfärgade.
+2. Leta reda på dimensionen **Sidor** och klicka sedan på pilikonen för att visa sidvärden. Dimensioner är gulfärgade.
 3. Leta reda på det sidvärde du vill börja med och dra det till utrymmet&quot;Dimension or item&quot; i mitten
 4. Den här flödesrapporten är interaktiv. Klicka på något av värdena för att utöka flödena till efterföljande eller föregående sidor. Använd högerklicksmenyn för att expandera eller komprimera kolumner. Olika dimensioner kan också användas i samma flödesrapport.

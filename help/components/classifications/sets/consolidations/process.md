@@ -1,9 +1,9 @@
 ---
 title: Konsolideringsprocess för klassificeringsuppsättning
 description: Hela processen med att konsolidera klassificeringsuppsättningar.
-exl-id: 315d45fa-2819-4778-a88e-65a7cce64148
+exl-id: f36bcbcb-0ed0-44a7-a6a9-b28fd244fb27
 feature: Classifications
-source-git-commit: c697530103ea7cd279cc3560c1daec796759e7a1
+source-git-commit: 9f70dbeb9dfe54897915213480f05cbdfaf920ef
 workflow-type: tm+mt
 source-wordcount: '389'
 ht-degree: 0%
@@ -21,30 +21,30 @@ Använd det här gränssnittet för att skapa en konsolidering av klassificering
 Följande fält är tillgängliga när du skapar en konsolidering:
 
 * **[!UICONTROL Name]**: Konsolideringens namn.
-* **[!UICONTROL Notify of issues]**: En kommaavgränsad lista med e-postadresser som har informerats om problem med den här konsolideringen.
+* **[!UICONTROL Notify of issues]**: En kommaavgränsad lista med e-postadresser som har meddelats om problem med den här konsolideringen.
 * **[!UICONTROL Dataset to match]**: En nedrullningsbar lista med alla klassificeringsuppsättningar.
 
 När du har valt en klassificeringsuppsättning visas en tabell med två kolumner:
 
 * Den högra kolumnen innehåller alla klassificeringsuppsättningar som du vill konsolidera. Den börjar med den klassificeringsuppsättning som valts i listrutan ovan.
-* Den vänstra kolumnen innehåller alla klassificeringsuppsättningar som kan sammanfogas med den ursprungligen valda datauppsättningen. **Scheman måste exakt matcha för att vara berättigade till konsolidering**. Om scheman inte matchar den valda klassificeringsuppsättningen visas de inte i den vänstra kolumnen.
+* Den vänstra kolumnen innehåller alla klassificeringsuppsättningar som kan sammanfogas med den ursprungligen valda datauppsättningen. **Scheman måste matcha exakt för att vara berättigade till konsolidering**. Om scheman inte matchar den valda klassificeringsuppsättningen visas de inte i den vänstra kolumnen.
 
 Dra de önskade klassificeringsuppsättningarna från den tillgängliga kolumnen till vänster till konsolideringskolumnen till höger. När konsolideringen har fått ett namn och två eller flera klassificeringsuppsättningar finns i den högra kolumnen klickar du på **[!UICONTROL Save & Continue]**.
 
 ## Validering
 
-När du har skapat en konsolidering visas en lista med källdatauppsättningar till höger. The **[!UICONTROL Validate]** kontrollerar att varje enskild klassificeringsuppsättning är giltig för denna konsolidering. Du kan ändra ordningen på klassificeringsstegen här för att bestämma prioritet i fall av felmatchade klassificeringsvärden. **Den högsta klassificeringsuppsättningen i listan skriver över värden som inte matchar i andra klassificeringsuppsättningar.**
+När du har skapat en konsolidering visas en lista med källdatauppsättningar till höger. Knappen **[!UICONTROL Validate]** kontrollerar att varje enskild klassificeringsuppsättning är giltig för den här konsolideringen. Du kan ändra ordningen på klassificeringsstegen här för att bestämma prioritet i fall av felmatchade klassificeringsvärden. **Den högsta klassificeringsuppsättningen i listan skriver över värden som inte matchar i andra klassificeringsuppsättningar.**
 
 ## Kör
 
 När en konsolidering har validerats kan du köra den. När du kör en konsolidering visas en likhetsrapport med följande tabellkolumner:
 
-* **[!UICONTROL Dataset name]**: Klassificeringsuppsättningens namn.
+* **[!UICONTROL Dataset name]**: Namnet på klassificeringsuppsättningen.
 * **[!UICONTROL Mismatch]**: Procentandelen rader där nyckelvärden inte matchade källklassificeringsuppsättningen. Om felmatchningsprocenten är hög är det möjligt att klassificeringsdata är för olika. Kontrollera att de valda klassificeringsuppsättningarna har liknande klassificeringsdata.
-* **[!UICONTROL Absent]**: Procentandelen rader där nyckelvärden fanns i den klassificeringen men inte i källklassificeringen. Alla rader som inte finns läggs till i den konsoliderade klassificeringsuppsättningen.
+* **[!UICONTROL Absent]**: Procentandelen rader där nyckelvärden fanns i den klassificeringsuppsättningen men inte i källklassificeringsuppsättningen. Alla rader som inte finns läggs till i den konsoliderade klassificeringsuppsättningen.
 
 ## Godkänn
 
 Fungerar som ett sista anrop innan de enskilda klassificeringsuppsättningarna tas bort och en konsoliderad klassificeringsuppsättning skapas. Kontrollera att allt är korrekt och klicka sedan på **[!UICONTROL Approve]**.
 
-När den har godkänts skapas den konsoliderade klassificeringsuppsättningen. Statusen är inställd på [!UICONTROL Complete]och inga ytterligare åtgärder krävs för konsolideringen.
+När den har godkänts skapas den konsoliderade klassificeringsuppsättningen. Statusen är inställd på [!UICONTROL Complete] och ingen ytterligare åtgärd krävs för konsolideringen.

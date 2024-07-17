@@ -13,9 +13,9 @@ ht-degree: 0%
 
 # linkURL
 
-När ett anrop om länkspårning skickas till Adobe identifierar datainsamlingsservrarna automatiskt URL:en. Använd `linkURL` variabel som åsidosätter den identifierade URL:en.
+När ett anrop om länkspårning skickas till Adobe identifierar datainsamlingsservrarna automatiskt URL:en. Använd variabeln `linkURL` för att åsidosätta den URL som identifierats.
 
-Det finns inga dimensioner i Analysis Workspace som rapporterar om den här variabeln. Den fyller i `page_event_var1` kolumn i [Dataflöden](/help/export/analytics-data-feed/data-feed-overview.md).
+Det finns inga dimensioner i Analysis Workspace som rapporterar om den här variabeln. Den fyller i kolumnen `page_event_var1` i [Dataflöden](/help/export/analytics-data-feed/data-feed-overview.md).
 
 ## Länk-URL med Web SDK
 
@@ -30,10 +30,10 @@ Det finns inget dedikerat fält i Adobe Analytics-tillägget som kan använda de
 
 ## s.linkURL i AppMeasurementet och den anpassade kodredigeraren för Analytics-tillägget
 
-The `s.linkURL` variabeln är en sträng som innehåller webbläsarens URL när användaren klickar på länken. Den här variabeln fyller inte i några dimensioner som är tillgängliga i rapporter.
+Variabeln `s.linkURL` är en sträng som innehåller URL-adressen för webbläsaren när användaren klickar på länken. Den här variabeln fyller inte i några dimensioner som är tillgängliga i rapporter.
 
 ```js
 s.linkURL = "https://example.com";
 ```
 
-Om det tredje argumentet i [tl()](../functions/tl-method.md) -metoden är inte inställd, `linkURL` används i stället.
+Om det tredje argumentet för metoden [tl()](../functions/tl-method.md) inte har angetts används variabeln `linkURL` i stället.

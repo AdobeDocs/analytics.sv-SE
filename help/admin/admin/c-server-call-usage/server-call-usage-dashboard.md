@@ -30,7 +30,7 @@ Kontrollpanelen Aktuell användning
 
   >[!NOTE]
   >
-  >Om du vill visa användningen för en tidigare tidsperiod måste du gå till [Report Suite-användning](/help/admin/admin/c-server-call-usage/report-suite-usage.md) och hämta användningsdata för en tidigare period.
+  >Om du vill visa användningen för en tidigare tidsperiod måste du gå till fliken [Report Suite-användning](/help/admin/admin/c-server-call-usage/report-suite-usage.md) och hämta användningsdata för en tidigare period.
 
 * Visar hur många procent anrop som har gjorts (i procent och rådata) och hur många procent av användningsperioden som har använts (i procent och rådata).
 * Som standard uppdateras varje dag med en 5-dagars svarstid.
@@ -40,6 +40,6 @@ Kontrollpanelen Aktuell användning
 
 | Användargränssnittsterm | Definition |
 | --- | --- |
-| Aktuell periodanvändning (grön) | Den aktuella perioden baseras på [användningsperiod](/help/admin/admin/c-server-call-usage/overage-overview.md). |
+| Aktuell periodanvändning (grön) | Den aktuella perioden baseras på [användningsperioden](/help/admin/admin/c-server-call-usage/overage-overview.md). |
 | Föregående periodanvändning (blå) | Föregående period definieras som den aktuella användningsperioden minus 1 år. |
 | Användningsgräns (röd) | Din avtalsenliga användningsgräns för den här användningsperioden. |

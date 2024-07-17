@@ -13,9 +13,9 @@ ht-degree: 0%
 
 # linkDownloadFileTypes
 
-När [`trackDownloadLinks`](trackdownloadlinks.md) (AppMeasurement) eller [`clickCollectionEnabled`](trackdownloadlinks.md) (Web SDK) är aktiverat och en besökare klickar på en länk. AppMeasurementet kontrollerar länkens URL för att se om det finns filtypstillägg. Om länk-URL:en innehåller en matchande filtyp skickas en begäran om hämtning av länkbild automatiskt.
+När [`trackDownloadLinks`](trackdownloadlinks.md) (AppMeasurement) eller [`clickCollectionEnabled`](trackdownloadlinks.md) (Web SDK) är aktiverat och en besökare klickar på en länk, söker AppMeasurementet efter filtypstillägg i länkens URL. Om länk-URL:en innehåller en matchande filtyp skickas en begäran om hämtning av länkbild automatiskt.
 
-Använd `linkDownloadFileTypes` om du vill anpassa vilka filtillägg du vill räkna som hämtningslänkar.
+Använd `linkDownloadFileTypes` för att anpassa vilka filtillägg du vill räkna som hämtningslänkar.
 
 >[!NOTE]
 >
@@ -26,22 +26,22 @@ Använd `linkDownloadFileTypes` om du vill anpassa vilka filtillägg du vill rä
 >* Högerklicka och välj &#39;Spara mål som..&#39;
 >* Länkar som använder JavaScript, till exempel `javascript:openLink()`
 >
->För dessa hämtningstyper kan du skicka en [`link tracking`](../functions/tl-method.md) ring.
+>För dessa hämtningstyper kan du skicka ett [`link tracking`](../functions/tl-method.md)-samtal manuellt.
 
 Om en klickad länk matchar både villkoren för avslutningslänk och nedladdningslänk får nedladdningslänkstypen prioritet.
 
 ## Hämta länkkvalificerare med Web SDK-tillägget
 
-The [!UICONTROL Download link qualifier] I textfältet används regex för att avgöra om en länk som klickats kan anses vara en nedladdningslänk.
+Textfältet [!UICONTROL Download link qualifier] använder regex för att avgöra om en länk som klickats på är en nedladdningslänk.
 
-1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med dina inloggningsuppgifter för AdobeID.
 1. Klicka på den önskade taggegenskapen.
-1. Gå till [!UICONTROL Extensions] klickar du på **[!UICONTROL Configure]** knapp under [!UICONTROL Adobe Experience Platform Web SDK].
-1. Under [!UICONTROL Data Collection]anger du det önskade värdet i dialogrutan **[!UICONTROL Download link qualifier]** textfält.
+1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen **[!UICONTROL Configure]** under [!UICONTROL Adobe Experience Platform Web SDK].
+1. Ange önskat värde i textfältet **[!UICONTROL Download link qualifier]** under [!UICONTROL Data Collection].
 
 ## Hämta länkkvalificerare som implementerar Web SDK manuellt
 
-[Konfigurera](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html) SDK med [`downloadLinkQualifier`](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/track-links.html#automaticLinkTracking). Fältet använder regex på den klickade URL:en för att avgöra om det är en giltig nedladdningslänk. If `downloadLinkQualifier` är inte definierad, standardvärdet är inställt på `\\.(exe|zip|wav|mp3|mov|mpg|avi|wmv|pdf|doc|docx|xls|xlsx|ppt|pptx)$`.
+[Konfigurera](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html) SDK med [`downloadLinkQualifier`](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/track-links.html#automaticLinkTracking). Fältet använder regex på den klickade URL:en för att avgöra om det är en giltig nedladdningslänk. Om `downloadLinkQualifier` inte definieras ställs standardvärdet in på `\\.(exe|zip|wav|mp3|mov|mpg|avi|wmv|pdf|doc|docx|xls|xlsx|ppt|pptx)$`.
 
 ```json
 alloy("configure", {
@@ -51,20 +51,20 @@ alloy("configure", {
 
 ## Hämta tillägg med Adobe Analytics-tillägget
 
-Hämtningstillägg är en lista med filtillägg med ett fält där du kan lägga till mer i listan [!UICONTROL Link Tracking] när du konfigurerar Adobe Analytics-tillägget.
+Hämtningstillägg är en lista med filtillägg med ett fält som du kan lägga till mer i dragspelet [!UICONTROL Link Tracking] när du konfigurerar Adobe Analytics-tillägget.
 
-1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med dina inloggningsuppgifter för AdobeID.
 2. Klicka på den önskade taggegenskapen.
-3. Gå till [!UICONTROL Extensions] klickar du på **[!UICONTROL Configure]** under Adobe Analytics.
-4. Expandera [!UICONTROL Link Tracking] dragspelspanel, som visar **[!UICONTROL Download Extensions]** fält.
+3. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen **[!UICONTROL Configure]** under Adobe Analytics.
+4. Expandera dragspelsfliken [!UICONTROL Link Tracking] som visar fältet **[!UICONTROL Download Extensions]**.
 
-Lägg till filtillägg i listan genom att skriva text i fältet och klicka på **[!UICONTROL Add]**. Ta bort filtillägg från listan genom att klicka på deras respektive **&#39;X&#39;** -ikon.
+Lägg till filtillägg i listan genom att ange text i fältet och klicka på **[!UICONTROL Add]**. Ta bort filtillägg från listan genom att klicka på respektive **&#39;X&#39;** -ikon.
 
 ## s.linkDownloadFileTypes i AppMeasurementet och den anpassade kodredigeraren i Analytics-tillägget
 
-The `s.linkDownloadFileTypes` variabeln är en sträng med kommaavgränsade filtillägg. Använd inte blanksteg.
+Variabeln `s.linkDownloadFileTypes` är en sträng med kommaavgränsade filtillägg. Använd inte blanksteg.
 
-Om variabeln inte är definierad fungerar inte automatisk länkspårning för hämtning (även om [`trackDownloadLinks`](trackdownloadlinks.md) är `true`).
+Om variabeln inte definieras fungerar inte automatisk länkspårning för hämtning (även om [`trackDownloadLinks`](trackdownloadlinks.md) är `true`).
 
 ```js
 s.linkDownloadFileTypes = "doc,docx,eps,jpg,png,svg,xls,ppt,pptx,pdf,xlsx,tab,csv,zip,txt,vsd,vxd,xml,js,css,rar,exe,wma,mov,avi,wmv,mp3,wav,m4v";

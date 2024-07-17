@@ -13,21 +13,21 @@ ht-degree: 0%
 
 # usePlugins
 
-If `usePlugins` är aktiverat, [`doPlugins()`](../functions/doplugins.md) funktionen körs precis innan AppMeasurementet kompileras och en träff skickas till Adobe. Aktivera variabeln om du använder `doPlugins()` funktion.
+Om `usePlugins` är aktiverat körs funktionen [`doPlugins()`](../functions/doplugins.md) precis innan AppMeasurementet kompileras och skickar en träff till Adobe. Aktivera variabeln om du använder funktionen `doPlugins()`.
 
-## Använd `onBeforeEventSend` återanrop med Web SDK
+## Använd motringningen `onBeforeEventSend` med Web SDK
 
-Även om Web SDK inte har ett booleskt värde för att hantera körningen av ytterligare logik innan data skickas till Adobe kan du registrera `onBeforeEventSend` återanrop för att ändra data. Se [Ändra händelser globalt](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/tracking-events.html#modifying-events-globally) finns i Web SDK-dokumentationen.
+Web SDK har inget booleskt värde för att hantera körningen av ytterligare logik innan data skickas till Adobe, men du kan registrera `onBeforeEventSend`-återanropet för att ändra data. Mer information finns i [Ändra händelser globalt](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/tracking-events.html#modifying-events-globally) i Web SDK-dokumentationen.
 
 ## Använda plugin-program med Adobe Analytics-tillägget
 
-Adobe har ett tillägg med namnet&quot;Common Analytics Plugins&quot; som gör att du kan ringa de flesta [Plugin-program](../plugins/impl-plugins.md). Installera tillägget och anropa önskat plugin-program i en regel.
+Adobe tillhandahåller ett tillägg med namnet&quot;Common Analytics Plugins&quot; som gör att du kan anropa de flesta [plugin-program](../plugins/impl-plugins.md). Installera tillägget och anropa önskat plugin-program i en regel.
 
 Om det plugin-program du vill använda inte ingår i tillägget Adobe använder du den anpassade kodredigeraren efter AppMeasurementen syntax.
 
 ## s.usePlugins i AppMeasurementet och den anpassade kodredigeraren för Analytics-tillägget
 
-The `s.usePlugins` är en boolesk variabel som avgör om AppMeasurementet anropar `doPlugins()` funktion. Standardvärdet är `false`. Ange variabeln till `true` om du använder `doPlugins()` i implementeringen.
+Variabeln `s.usePlugins` är en boolesk variabel som avgör om AppMeasurementet anropar funktionen `doPlugins()`. Dess standardvärde är `false`. Ange variabeln till `true` om du använder funktionen `doPlugins()` i implementeringen.
 
 ```js
 s.usePlugins = true;

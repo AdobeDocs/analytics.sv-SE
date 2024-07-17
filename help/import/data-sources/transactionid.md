@@ -13,16 +13,16 @@ ht-degree: 0%
 
 # Datakällor för transaktions-ID
 
-Datakällor för transaktions-ID är en variation på sammanfattningsdatakällor som gör att du kan koppla samman online- och offlinedata. Det kräver att [`transactionID`](/help/implement/vars/page-vars/transactionid.md) i er Analytics-implementering.
+Datakällor för transaktions-ID är en variation på sammanfattningsdatakällor som gör att du kan koppla samman online- och offlinedata. Det kräver att variabeln [`transactionID`](/help/implement/vars/page-vars/transactionid.md) används i din Analytics-implementering.
 
 * Om en rad i en datakällfil innehåller ett transaktions-ID som matchar ett transaktions-ID som redan samlats in av AppMeasurementet, läggs mått och mått till i onlinesatsen.
 * Om en rad i en datakällfil innehåller ett transaktions-ID som inte innehåller någon matchning behandlas raden på samma sätt som sammanfattningsdatakällor.
 
 >[!NOTE]
 >
->Innan du använder datakällor för transaktions-ID måste du aktivera dem i [Allmänna kontoinställningar](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/general-acct-settings-admin.md) för önskad rapportsvit.
+>Innan du använder datakällor för transaktions-ID måste du aktivera det i [Allmänna kontoinställningar](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/general-acct-settings-admin.md) för den önskade rapportsviten.
 
-När du skickar en onlineträff som innehåller en [`transactionID`](/help/implement/vars/page-vars/transactionid.md) Adobe tar en ögonblicksbild av alla variabler som är inställda eller beständiga då. Om ett matchande transaktions-ID som överförts via datakällor hittas knyts offline- och onlinedata ihop.
+När du skickar en onlineträff som innehåller ett [`transactionID`](/help/implement/vars/page-vars/transactionid.md)-värde tar Adobe en ögonblicksbild av alla variabler som angetts eller befunnits sedan. Om ett matchande transaktions-ID som överförts via datakällor hittas knyts offline- och onlinedata ihop.
 
 Transaktions-ID-datakällor har följande egenskaper:
 
@@ -52,4 +52,4 @@ Exempel:
    * `eVar3` är lika med `bird`
    * `events` är lika med `event2`
 
-EVar1-värdet `blue` och `event1` Det finns inga mätvärden i rapporteringen eftersom transaktions-ID:t skrev över dessa respektive värden.
+EVar1-värdet `blue` och `event1`-måttet finns inte i rapporteringen eftersom transaktions-ID:t skrev över dessa respektive värden.

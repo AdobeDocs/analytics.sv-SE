@@ -17,13 +17,13 @@ En omfattande lista med beskrivningar av konfigurationsvariabler, HTTP-huvuden o
 
 ## Konfigurationsvarabler {#section_AD402B5EB9B24BF3B2039DA80FCA901E}
 
-Parametrar med prefix `d_*` identifiera nyckelvärdepar på systemnivå som används av vår [datainsamlingsservrar](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/system-components/components-data-collection.html) (DCS) Se även [Attribut som stöds för DCS API-anrop](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-keys.html).
+Parametrar som har prefixats med `d_*` identifierar nyckelvärdepar på systemnivå som används av våra [datainsamlingsservrar](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/system-components/components-data-collection.html) (DCS). Se även [Attribut som stöds för DCS API-anrop](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-keys.html).
 
 | Parameter | Beskrivning |
 |--- |--- |
-| `d_rs` | (Hämtar med äldre/spårningsserverbaserad vidarebefordran på serversidan) <br>Anges till de rapportsviter som skickades in med träffen till Analytics. |
-| `d_dst_filter` | (Hämtar med rapportsvitbaserad vidarebefordran på serversidan)  <br>Ange till rapportsvitens ID:n som skickades med träffen till Analytics. |
-| `d_dst` | Ange `d_dst=1`  <br>om begäran till Analytics förväntar att innehåll om målet ska skickas tillbaka till klienten. |
+| `d_rs` | (Hämtas med äldre/spårningsserverbaserad vidarebefordring på serversidan) <br>Ange till rapportsviterna som skickades med träffen till Analytics. |
+| `d_dst_filter` | (Hämtas med rapportsvitbaserad vidarebefordring på serversidan) <br>Ange rapportsvitens ID som skickades med träffen till Analytics. |
+| `d_dst` | Ange `d_dst=1` <br>om Analytics-begäran förväntar att innehåll om målet ska skickas tillbaka till klienten. |
 | `d_mid` | Experience Cloud-ID:t skickades till Analytics. |
 
 ## HTTP-huvuden {#section_0549705E76004F9585224AEF872066C0}
@@ -32,35 +32,35 @@ Dessa rubriker är fält som innehåller information som förfrågningar om data
 
 | HTTP-huvud | Beskrivning | h_key accepterad av Audience Manager |
 | --- | --- | --- |
-| Värd | Detta ställs in på klientens specifika värdnamn för datainsamling som anges i konfigurationsfilen för analysvärden. Det ser ut som `host name .demdex.net`. Se [Förstå anrop till Demdex-domänen](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html). | `h_host` |
+| Värd | Detta ställs in på klientens specifika värdnamn för datainsamling som anges i konfigurationsfilen för analysvärden. Det visas som `host name .demdex.net`. Se [Förstå anrop till Demdex-domänen](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html). | `h_host` |
 | Användaragent | Ange användaragenthuvudet som skickas till Analytics. | `h_user-agent` |
-| Acceptera språk | Ange till  `Accept-Language`  har skickats till Analytics. | `h_accept-language` |
-| Referent | Ange som sidans URL som skickas till Analytics (Analyser) eller som samlats in från `Referer` har skickats till Analytics. | `h_referer` |
-| Referent | Ange som sidans URL som skickas till Analytics (Analyser) eller som samlats in från `Referrer` har skickats till Analytics. | `h_referrer` |
-| Datum | Ange till `Date` har skickats till Analytics. | `h_date` |
+| Acceptera språk | Ange till huvudet `Accept-Language` som skickades till Analytics. | `h_accept-language` |
+| Referent | Ange till den sid-URL som skickades till Analytics (Analys) eller som samlats in från huvudet `Referer` som skickades till Analytics (Analys). | `h_referer` |
+| Referent | Ange till den sid-URL som skickades till Analytics (Analys) eller som samlats in från huvudet `Referrer` som skickades till Analytics (Analys). | `h_referrer` |
+| Datum | Ange till huvudet `Date` som skickades till Analytics. | `h_date` |
 
-Dessutom har `h_ip` signalen genereras från IP-adressen för värddatorn som skickar begäran till DCS.
+Dessutom genereras en `h_ip`-signal från IP-adressen för värddatorn som skickar begäran till DCS.
 
 ## Kunddefinierade signaler {#section_8F8C39E87BDE48BAA59E25CB7E86215D}
 
-Parametrar med prefix `c_` identifiera kunddefinierade variabler. Se även [Attribut som stöds för DCS API-anrop](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-keys.html).
+Parametrar som har prefixats med `c_` identifierar kunddefinierade variabler. Se även [Attribut som stöds för DCS API-anrop](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-keys.html).
 
 | Signal | Beskrivning |
 | --- |--- |
-| `c_browserWidth`  och `c_browserHeight` | Bredd och höjd på webbläsarfönstret. |
-| `c_campaign` | Ange efter `s.campaign`. |
-| `c_channel` | Ange efter `s.channel`. |
-| `c_clientDateTime` | Tidsstämpel formaterad som `dd/mm/yyy hh:mm:ss  W TZ` . `TZ` är i minuter och matchar returen av `Date.getTimezoneOffset` -metod. |
+| `c_browserWidth` och `c_browserHeight` | Bredd och höjd på webbläsarfönstret. |
+| `c_campaign` | Inställd av `s.campaign`. |
+| `c_channel` | Inställd av `s.channel`. |
+| `c_clientDateTime` | Tidsstämpeln har formaterats som `dd/mm/yyy hh:mm:ss  W TZ`. `TZ` är i minuter och matchar returvärdet för metoden `Date.getTimezoneOffset`. |
 | `c_colorDepth` | Anges som 16- eller 32-bitars färg. |
 | `c_connectionType` | Anger anslutningstyp. Alternativen är:<ul><li>modem</li><li>lan</li></ul> |
 | `c_contextData.*` | Exempel:<ul><li>AppMeasurement: `s.contextData`</li><li>[&quot;category&quot;] = &quot;news&quot;;</li><li>Signal: `c_contextData.category=news`</li></ul> |
 | `c_cookiesEnabled` | Anger om cookies kan aktiveras. Alternativ: ja, nej, okänd |
 | `c_currencyCode` | Typ av valuta som används för transaktionen. |
 | `c_evar#` | Egna evar |
-| `c_events` | Ange efter `s.events`. |
+| `c_events` | Inställd av `s.events`. |
 | `c_hier#` | Anpassade hierarkivariabler. |
 | `c_javaEnabled` | Anger om Java kan aktiveras. Alternativ: ja, nej, okänd |
-| `c_javaScriptVersion` | Version av JavaScript stöds av en webbläsare. |
+| `c_javaScriptVersion` | Den version av JavaScript som stöds av en webbläsare. |
 | `c_latitude` | Numerisk latitud |
 | `c_linkClick` | Alternativ: anpassad, nedladdningsavslutning |
 | `c_linkCustomName` | Det anpassade namn (om det finns något) som anges för länken. |

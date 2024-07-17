@@ -15,7 +15,7 @@ ht-degree: 0%
 
 {{plug-in}}
 
-The `cleanStr` plugin-programmet tar bort eller ersätter alla onödiga tecken från en sträng, inklusive taggar för HTML, extra blanksteg, tabbar och radmatningar. Ersätter även inledande och avslutande citattecken med raka enkla citattecken (`'`). Adobe rekommenderar att du använder det här plugin-programmet om du vill ta bort onödiga tecken från variabelvärden, och funktionen&quot;Clean text&quot; i Adobe Experience Platform Data Collection uppfyller inte dina implementeringsbehov. Detta plugin-program är inte nödvändigt om insamlade data inte innehåller onödiga tecken, eller om funktionen &quot;Rengör text&quot; i Adobe Experience Platform Data Collection är tillräcklig.
+Plugin-programmet `cleanStr` tar bort eller ersätter alla onödiga tecken från en sträng, inklusive taggar för HTML, extra blanksteg, tabbar och radmatningar/radmatningar. Den ersätter också inledande och avslutande citattecken med raka enkla citattecken (`'`). Adobe rekommenderar att du använder det här plugin-programmet om du vill ta bort onödiga tecken från variabelvärden, och funktionen&quot;Clean text&quot; i Adobe Experience Platform Data Collection uppfyller inte dina implementeringsbehov. Detta plugin-program är inte nödvändigt om insamlade data inte innehåller onödiga tecken, eller om funktionen &quot;Rengör text&quot; i Adobe Experience Platform Data Collection är tillräcklig.
 
 ## Installera plugin-programmet med Web SDK- eller Web SDK-tillägget
 
@@ -25,10 +25,10 @@ Det här plugin-programmet stöds ännu inte för användning i Web SDK.
 
 Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-programmen med Adobe Analytics.
 
-1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med dina inloggningsuppgifter för AdobeID.
 1. Klicka på den önskade taggegenskapen.
-1. Gå till [!UICONTROL Extensions] klickar du på [!UICONTROL Catalog] knapp
-1. Installera och publicera [!UICONTROL Common Analytics Plugins] extension
+1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Catalog]
+1. Installera och publicera tillägget [!UICONTROL Common Analytics Plugins]
 1. Om du inte redan har det skapar du en regel med namnet&quot;Initiera plugin-program&quot; med följande konfiguration:
    * Villkor: Inget
    * Händelse: Kärna - Bibliotek inläst (sidan ovanpå)
@@ -41,10 +41,10 @@ Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-program
 
 Om du inte vill använda tillägget för Common Analytics-plugin-program kan du använda den anpassade kodredigeraren.
 
-1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med dina inloggningsuppgifter för AdobeID.
 1. Klicka på önskad egenskap.
-1. Gå till [!UICONTROL Extensions] klickar du på **[!UICONTROL Configure]** under Adobe Analytics-tillägget.
-1. Expandera [!UICONTROL Configure tracking using custom code] dragspelspanel, som visar [!UICONTROL Open Editor] -knappen.
+1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen **[!UICONTROL Configure]** under Adobe Analytics-tillägget.
+1. Expandera dragspelsfliken [!UICONTROL Configure tracking using custom code] som visar knappen [!UICONTROL Open Editor].
 1. Öppna den anpassade kodredigeraren och klistra in den plugin-kod som finns nedan i redigeringsfönstret.
 1. Spara och publicera ändringarna i Analytics-tillägget.
 
@@ -61,11 +61,11 @@ function cleanStr(str){var a=str;if("-v"===a)return{plugin:"cleanStr",version:"2
 
 ## Använda plugin-programmet
 
-The `cleanStr` funktionen använder följande argument:
+Funktionen `cleanStr` använder följande argument:
 
-* **`str`** (required, string): Det värde som du vill rensa kodningen HTML, extra blanktecken, tabbar eller andra onödiga tecken.
+* **`str`** (obligatoriskt, sträng): Det värde som du vill rensa kodningen HTML, extra blanksteg, tabbar eller andra onödiga tecken.
 
-Funktionen returnerar värdet för `str` argument med alla onödiga tecken borttagna.
+Funktionen returnerar värdet för argumentet `str` med alla onödiga tecken borttagna.
 
 ## Exempel
 

@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Veckodag
 
-Veckodagen [dimension](overview.md) rapporterar veckodagen då träffen inträffade. Den här rapporten är värdefull om du vill ha en rapport som delas upp efter vecka, men inte vill ha en statisk dag som dimensionsobjekt. Det är särskilt värdefullt som en dimension i schemalagda rapporter, eftersom den här dimensionen fungerar med alla datumintervall.
+Veckodagen [dimension](overview.md) rapporterar veckodagen som träffen inträffade. Den här rapporten är värdefull om du vill ha en rapport som delas upp efter vecka, men inte vill ha en statisk dag som dimensionsobjekt. Det är särskilt värdefullt som en dimension i schemalagda rapporter, eftersom den här dimensionen fungerar med alla datumintervall.
 
 ## Fyll den här dimensionen med data
 
@@ -20,4 +20,4 @@ Den här dimensionen fungerar som den ska för alla implementeringar. Om en rapp
 
 ## Dimensioner
 
-Dimensionerna innehåller `Sunday` - `Saturday`, som representerar den veckodag då träffen inträffade. Ordningen för dimensionsobjekt respekterar den första dagen i veckan i [Anpassa kalender](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/custom-calendar.md) som standard.
+Dimensionen innehåller `Sunday` - `Saturday` som representerar veckodagen som träffen inträffade på. Dimensionsobjektens ordning respekterar den första veckodagen i [Anpassa kalender](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/custom-calendar.md) som standard.

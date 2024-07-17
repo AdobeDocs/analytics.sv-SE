@@ -23,7 +23,7 @@ Punkttrafikdata lagras i en separat databas för visning i rapporter om start- o
 
 >[!NOTE]
 >
->Adobe Experience Platform Edge Network har en [söktidentifieringstjänst](https://experienceleague.adobe.com/docs/experience-platform/datastreams/bot-detection.html) vilka etiketter träffar som identifieras som om de kommer från bottar. Processen för att identifiera robotar som används i Adobe Analytics är separat och refererar inte till robotpoängen som ingår i data som hämtas via Edge Network. De två systemen använder dock samma IAB-robotlista.
+>Adobe Experience Platform Edge Network tillhandahåller en [robotdetekteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/datastreams/bot-detection.html) som märker att träffar identifieras som om de kommer från bottnar. Processen för att identifiera robotar som används i Adobe Analytics är separat och refererar inte till robotpoängen som ingår i data som kommer via Edge Network. De två systemen använder dock samma IAB-robotlista.
 
 ## Uppdatera eller överföra robotregler
 
@@ -39,35 +39,35 @@ Så här uppdaterar eller överför du robotregler:
 
 1. Gå till **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]**.
 
-1. Välj den rapportsvit där du vill uppdatera båda reglerna och välj sedan **[!UICONTROL Edit Settings]** > **[!UICONTROL General]** > **[!UICONTROL Bot Rules]**.
+1. Markera rapportsviten där du vill uppdatera båda reglerna och välj sedan **[!UICONTROL Edit Settings]** > **[!UICONTROL General]** > **[!UICONTROL Bot Rules]**.
 
 1. Använd något av följande alternativ för att uppdatera eller överföra robotregler för rapportsviten:
 
-   * Välj [!UICONTROL **Aktivera regler för IAB-filtrering**] att ta bort botar i IAB:s (International Advertising Bureau&#39;s) International Spiders &amp; Bots List för att ta bort robottrafiken.
+   * Välj [!UICONTROL **Aktivera reglerna för IAB-filtrering**] om du vill ta bort robotar i IAB:s (International Advertising Bureau&#39;s) internationella spindlar och bottentrafik.
 
      Vi rekommenderar att du väljer det här alternativet till ett minimum.
 
-     Mer information finns i avsnittet nedan. [Standard IAB-robotregler](#standard-iab-bot-rules).
+     Mer information finns i avsnittet nedan, [Standard IAB-robotregler](#standard-iab-bot-rules).
 
-   * Välj [!UICONTROL **Lägg till regel**] för att definiera och lägga till anpassade robotregler baserade på användaragenter, IP-adresser eller IP-intervall.
+   * Välj [!UICONTROL **Lägg till regel**] om du vill definiera och lägga till anpassade robotregler baserade på användaragenter, IP-adresser eller IP-intervall.
 
-     Mer information finns i avsnittet nedan. [Anpassade robotregler](#custom-bot-rules).
+     Mer information finns i avsnittet nedan, [Anpassade robotregler](#custom-bot-rules).
 
-   * Intill [!UICONTROL **Välj CSV-startfil att importera**] område, markera [!UICONTROL **Välj fil**] markerar du sedan den CSV-fil som definierar robotreglerna.
+   * Bredvid [!UICONTROL **Välj CSV-startfilen som ska importeras**] väljer du [!UICONTROL **Välj fil**] och sedan den CSV-fil som definierar robotreglerna.
 
-     Mer information finns i avsnittet nedan. [Överför robotregler](#upload-bot-rules).
+     Mer information finns i avsnittet nedan, [Överför robotregler](#upload-bot-rules).
 
 1. Välj [!UICONTROL **Spara**].
 
 ## Standard IAB-robotregler
 
-Du kan aktivera standardregler för IAB-robotar genom att kontrollera [!UICONTROL Enable IAB Bot Filtering Rules] kryssrutan. Det här urvalet tar bort botar i IAB:s lista International Advertising Bureau&#39;s (International Advertising Bureau&#39;s) International Spiders &amp; Bots för att ta bort robottrafiken. Adobe uppdaterar denna lista från IAB varje månad.
+Du kan aktivera standardregler för IAB-robotar genom att markera kryssrutan [!UICONTROL Enable IAB Bot Filtering Rules]. Det här urvalet tar bort botar i IAB:s (International Advertising Bureau&#39;s) International Spiders &amp; Bots List för att ta bort robottrafiken. Adobe uppdaterar denna lista från IAB varje månad.
 
 ![](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/bot-removal/assets/bot-iab-checkbox.png)
 
-Adobe kan inte tillhandahålla den detaljerade IAB-robotlistan till kunder, men du kan använda Bots Report för att visa en lista med bots som har använt din webbplats. Om du vill skicka in en robot till IAB-listan går du till [IAB](https://www.iab.com).
+Adobe kan inte tillhandahålla den detaljerade IAB-robotlistan till kunder, men du kan använda Bots Report för att visa en lista med bots som har använt din webbplats. Om du vill skicka en robot till IAB-listan går du till [IAB](https://www.iab.com).
 
-Mer information om hur du aktiverar IAB-robotregler i en rapportsvit finns i [Uppdatera eller överföra robotregler](#update-or-upload-bot-rules).
+Mer information om hur du aktiverar standard-IAB-robotregler i en rapportsvit finns i [Uppdatera eller överföra robotregler](#update-or-upload-bot-rules).
 
 ## Anpassade robotregler
 
@@ -75,7 +75,7 @@ Mer information om hur du aktiverar IAB-robotregler i en rapportsvit finns i [Up
 >
 >Användargränssnittet tillåter att 500 regler definieras manuellt. När den här gränsen har nåtts måste reglerna hanteras i grupp med alternativen Importera fil och Exportera batchregler.
 
-Med anpassade robotregler kan du filtrera trafikbaserade villkor som du definierar. Information om hur du aktiverar anpassade robotregler i en rapportserie finns i [Uppdatera eller överföra robotregler](#update-or-upload-bot-rules).
+Med anpassade robotregler kan du filtrera trafikbaserade villkor som du definierar. Information om hur du börjar aktivera anpassade robotregler i en rapportserie finns i [Uppdatera eller överföra robotregler](#update-or-upload-bot-rules).
 
 Anpassade robotregler definieras med följande villkorstyper:
 
@@ -87,11 +87,11 @@ Flera villkor kan definieras för en enskild regel. Flera villkor matchas med &q
 
 ### Användaragent
 
-Ett användaragentvillkor kontrollerar om användaragentvärdet är det **[!UICONTROL starts with]** eller **[!UICONTROL contains]** angiven sträng. If **[!UICONTROL contains]** är markerat matchas delsträngen om den förekommer någonstans i användaragenten.
+Ett villkor för användaragenten kontrollerar om användaragentvärdet är **[!UICONTROL starts with]** eller **[!UICONTROL contains]** den angivna strängen. Om **[!UICONTROL contains]** väljs matchas delsträngen om den finns någonstans i användaragenten.
 
-Valfria värden kan inkluderas i **[!UICONTROL does not contain]** lista för att definiera värden som användaragenten inte får innehålla för att matchningen ska lyckas. Du kan ange flera värden genom att inkludera ett värde per rad. Om användaragenten uppfyller villkoren som anges i matchningssträngen, men även innehåller en sträng i listan som inte innehåller någon, betraktas den inte som en matchning.
+Valfria värden kan inkluderas i listan **[!UICONTROL does not contain]** för att definiera värden som användaragenten inte får innehålla för en lyckad matchning. Du kan ange flera värden genom att inkludera ett värde per rad. Om användaragenten uppfyller villkoren som anges i matchningssträngen, men även innehåller en sträng i listan som inte innehåller någon, betraktas den inte som en matchning.
 
-The **[!UICONTROL contains]** får innehålla högst 100 tecken. Listan innehåller inte mer än 255 tecken minus ett avgränsningstecken för varje ny rad. (Detta motsvarar antalet strängar - 1. Om du anger 4 *innehåller inte* strängar, 3 avgränsningstecken krävs.) Alla strängmatchningar är inte skiftlägeskänsliga.
+Fältet **[!UICONTROL contains]** får innehålla högst 100 tecken. Listan innehåller inte mer än 255 tecken minus ett avgränsningstecken för varje ny rad. (Detta motsvarar antalet strängar - 1. Om du anger 4 *som inte innehåller* strängar krävs 3 avgränsningstecken.) Alla strängmatchningar är inte skiftlägeskänsliga.
 
 ### IP-adress (inklusive matchningar med jokertecken)
 
@@ -108,21 +108,21 @@ Ange de start- och slutintervall för IP-adresserna som ska matcha. Ersätt &#42
 
 ### Definiera en anpassad robotregel
 
-1. Gå till **[!UICONTROL Analytics]** > **[!UICONTROL Admin]**, välj en eller flera rapportsviter och klicka på **[!UICONTROL General]** > **[!UICONTROL Bot Rules]**.
-1. Klicka **[!UICONTROL Add Rule]** och definiera ett eller flera matchningsvillkor.
+1. Gå till **[!UICONTROL Analytics]** > **[!UICONTROL Admin]**, markera en eller flera rapportsviter och klicka på **[!UICONTROL General]** > **[!UICONTROL Bot Rules]**.
+1. Klicka på **[!UICONTROL Add Rule]** och definiera ett eller flera matchningsvillkor.
 1. Klicka på **[!UICONTROL Save]**. Ändringen bör träda i kraft inom 30 minuter.
 
 ## Överför robotregler
 
 Om du vill importera robotregler gruppvis kan du överföra en CSV-fil som definierar reglerna.
 
-1. Information om hur du börjar överföra båda reglerna till en rapportserie finns i [Uppdatera eller överföra robotregler](#update-or-upload-bot-rules).
+1. Information om hur du börjar överföra båda reglerna till en rapportserie finns i [Uppdatera eller överföra båda reglerna](#update-or-upload-bot-rules).
 
 1. Skapa en CSV-fil med följande kolumner, på rad 1 i kalkylbladet och i den ordning som anges:
 
    | Kolumn 1, rad 1 | Kolumn 2, rad 1 | Kolumn 3, rad 1 | Kolumn 4, rad 1 | Kolumn 5, rad 1 | Kolumn 6, rad 1 |
    |--- |--- |---|---|---|---|
-   | Punktnamn | IP-start | IP-slut | Regel<br>(innehåller eller börjar med)</br> | Inkludera användaragent | Exkludera användaragent<br>(Högst 255 tecken)</br> |
+   | Punktnamn | IP-start | IP-slut | Regel <br>(innehåller eller börjar med)</br> | Inkludera användaragent | Användaragenten uteslut<br>(högst 255 tecken)</br> |
 
    Du kan definiera tre typer av Båda-regler:
 
@@ -137,19 +137,19 @@ Om du vill importera robotregler gruppvis kan du överföra en CSV-fil som defin
    >   Om du vill matcha en robot med en kombination av regler som är kopplade till en OR (till exempel användaragent eller IP-adress), anger du ett identiskt namn för alla regler som du vill kombinera i fältet för båda namnen. AND-matchningar stöds inte.
 
 
-   * **Användaragenten innehåller eller börjar med**: Ange en enda användaragentsträng som ska matchas i kolumnen Agent Include. Ange vilken typ av matchning du vill ska utföras genom montering *innehåller* eller *börjar med* i fältet Agentmatchningsregel. Ett valfritt värde kan inkluderas i kolumnen Agent Exclude som definierar en eller flera röravgränsade ( `|` ) strängar som agenten inte innehåller. Strängmatchningar är inte skiftlägeskänsliga. Både IP-startkolumnen och IP-slutkolumnen måste vara tomma.
+   * **Användaragenten innehåller eller börjar med**: Ange en enda användaragentsträng som ska matcha i kolumnen Agentinkludering. Ange den typ av matchning som du vill ska utföras genom att placera *innehåller* eller *börjar med* i fältet Agentmatchningsregel. Ett valfritt värde kan inkluderas i kolumnen Agent Exclude som definierar en eller flera pipe-avgränsade ( `|` ) strängar som inte finns i agenten. Strängmatchningar är inte skiftlägeskänsliga. Både IP-startkolumnen och IP-slutkolumnen måste vara tomma.
 
-   * **En IP-adress eller jokerteckenmatchning**: Matcha en enda IP-adress ( `10.10.10.1`) eller IP-adress med jokertecken ( `10.10.*.*`) placerar du samma värde i kolumnerna IP Start och IP End. Matchningsregel, Inkludera agent och Exkludera agent måste vara tomma.
+   * **En IP-adress eller jokertecken matchar**: Om du vill matcha en enda IP-adress ( `10.10.10.1`) eller IP-adress med jokertecken ( `10.10.*.*`) placerar du samma värde i både IP-startkolumnen och IP-slutkolumnen. Matchningsregel, Inkludera agent och Exkludera agent måste vara tomma.
 
    * **IP-intervallmatchning**: Definiera ett intervall med IP-adresser med kolumnerna IP Start och IP End. Jokertecken kan användas för att matcha IP-intervall, till exempel `10.10.10.*` till `10.10.20.*`. Matchningsregel, Inkludera agent och Exkludera agent måste vara tomma.
 
-1. På startregelsidan i Report Suite Manager, bredvid [!UICONTROL **Välj CSV-startfil att importera**] område, markera [!UICONTROL **Välj fil**] markerar du sedan den CSV-fil som definierar de båda regler som du vill importera.
+1. På sidan Punktregler i Report Suite Manager väljer du [!UICONTROL **Välj fil**] bredvid [!UICONTROL **Välj CSV-fil för import**] och sedan den CSV-fil som definierar de båda regler som du vill importera.
 
-1. (Valfritt) Välj **[!UICONTROL Overwrite existing rules]** om du vill ta bort alla befintliga regler och ersätta dem med de regler som är definierade i överföringsfilen.
+1. (Valfritt) Markera kryssrutan **[!UICONTROL Overwrite existing rules]** om du vill ta bort alla befintliga regler och ersätta dem med de regler som är definierade i överföringsfilen.
 
 1. Välj [!UICONTROL **Importera fil**].
 
-1. I [!UICONTROL **Regeluppsättningar**] granskar du de regler som importerades.
+1. Granska de importerade reglerna i området [!UICONTROL **Regeluppsättningar**].
 
 1. Välj [!UICONTROL **Spara**].
 
@@ -159,21 +159,21 @@ Så här exporterar du alla regler som definieras i användargränssnittet i ett
 
 1. Gå till **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]**.
 
-1. Välj den rapportsvit som innehåller de båda reglerna som du vill exportera och välj sedan **[!UICONTROL Edit Settings]** > **[!UICONTROL General]** > **[!UICONTROL Bot Rules]**.
+1. Markera rapportsviten som innehåller robotreglerna som du vill exportera och välj sedan **[!UICONTROL Edit Settings]** > **[!UICONTROL General]** > **[!UICONTROL Bot Rules]**.
 
-1. Välj **[!UICONTROL Export Bot Rules]** sparar du sedan CSV-filen i filsystemet.
+1. Välj **[!UICONTROL Export Bot Rules]** och spara sedan CSV-filen i filsystemet.
 
 ## Robotreglernas inverkan på datainsamling {#section_F01A3130E7A04A9993371CF26F6586F2}
 
 Punktregler tillämpas på alla analysdata. Data som tas bort av punktregler visas bara i rapporter för start- och punktsidor.
 
-VISTA-regler tillämpas efter PUNKTREGLER. Se [Bearbetningsorder](/help/technotes/processing-order.md) i Technotes-handboken.
+VISTA-regler tillämpas efter PUNKTREGLER. Se [Bearbetningsordning](/help/technotes/processing-order.md) i användarhandboken för Technotes.
 
-**Bearbetning av högfrekvent besök:** Om fler än 100 träffar inträffar under ett besök avgör rapporten om besökets tid i sekunder är mindre än eller lika med antalet träffar under besöket. I denna situation, på grund av kostnaderna för att behandla långa, intensiva besök, börjar rapporteringen om med ett nytt besök. Besök med många träffar orsakas normalt av robotattacker och betraktas inte som normala besökare.
+**Bearbetning av besök med hög hastighet:** Om fler än 100 träffar inträffar under ett besök avgör rapporten om besökstiden i sekunder är mindre än eller lika med antalet träffar under besöket. I denna situation, på grund av kostnaderna för att behandla långa, intensiva besök, börjar rapporteringen om med ett nytt besök. Besök med många träffar orsakas normalt av robotattacker och betraktas inte som normala besökare.
 
 >[!NOTE]
 >
->Träffar markerade som *`bots`* faktureras som [serveranrop.](/help/admin/admin/c-server-call-usage/overage-overview.md)
+>Träffar markerade som *`bots`* faktureras som [serversamtal.](/help/admin/admin/c-server-call-usage/overage-overview.md)
 
 ## Inverkan av IP-förfalskning på robotfiltrering {#section_92E60B95BE8940D983F28C79E0CD6B12}
 

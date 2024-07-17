@@ -30,12 +30,12 @@ Följande är ett exempel på maskinkodad bildbegäran med HTML:
 ```
 
 * `https://` anger protokollet. Matcha det protokoll som används i bildbegäran med det protokoll som används av resten av din plats.
-* `example.data.adobedc.net` är värdet som finns i [`trackingServer`](/help/implement/vars/config-vars/trackingserver.md) variabel.
+* `example.data.adobedc.net` är värdet i variabeln [`trackingServer`](/help/implement/vars/config-vars/trackingserver.md).
 * `/b/ss/` ingår i alla bildbegäranden. Den ingår i filstrukturen för bilder som lagras på datainsamlingsservrar i Adobe.
-* `examplersid` är det rapportsvit-ID som du vill skicka data till. Separera ID:n med kommatecken och inga mellanslag (t.ex. `examplersid1,examplersid2` och så vidare).
-* `/1/` är träffkällan. Se `hit_source` under [Referens för datakolumn](../../export/analytics-data-feed/c-df-contents/datafeeds-reference.md) i Exportera användarhandbok. Styr i vilken ordning cookies och andra metoder används för att identifiera besökare.
-* `/s234234238479` (`"s"` + ett slumpmässigt tal) hindrar webbläsaren från att cachelagra bildbegäran.
-* Allt efter frågesträngsavgränsaren (`?`) är data som du vill inkludera i rapporter. Se [Frågeparametrar för datainsamling](../validate/query-parameters.md) om du vill ha en fullständig lista över parametrar som du kan ta med i en bildbegäran.
+* `examplersid` är det rapportpaket-ID som du vill skicka data till. Separera ID:n med kommatecken och inga mellanslag (som `examplersid1,examplersid2` och så vidare) för flera rapportsviter.
+* `/1/` är träffkällan. Se `hit_source` under [Datakolumnreferens](../../export/analytics-data-feed/c-df-contents/datafeeds-reference.md) i användarhandboken för Exportera. Styr i vilken ordning cookies och andra metoder används för att identifiera besökare.
+* `/s234234238479` (`"s"` + ett slumpmässigt tal) förhindrar webbläsaren från att cachelagra bildbegäran.
+* Allt efter frågesträngsavgränsaren (`?`) är data som du vill ta med i rapporter. I [Frågeparametrar för datainsamling](../validate/query-parameters.md) finns en fullständig lista över parametrar som du kan ta med i en bildbegäran.
 
 ## Maskinkodade bildbegäranden i Microsoft Outlook
 
@@ -47,7 +47,7 @@ Eftersom de flesta e-postmeddelanden är HTML-baserade går det att spåra e-pos
 Så här skapar du ett Outlook-e-postmeddelande som innehåller en bildbegäran:
 
 1. Öppna en HTML-redigerare. Om det inte finns någon HTML-redigerare fungerar även en vanlig textredigerare.
-2. Infoga en hårdkodad bildbegäran i en ny HTML-fil `<img>` tagg som omsluts av `<body>` -tagg.
+2. I en ny HTML-fil infogar du taggen `<img>` för maskinkodad bildbegäran i en `<body>` -tagg.
 3. Spara filen HTML.
 4. Öppna Microsoft Outlook och skapa ett e-postmeddelande.
 5. Gå till fliken Infoga och klicka på **Bifoga fil**. Markera HTML-filen för bildförfrågan.
@@ -61,13 +61,13 @@ Lär dig mer om vanliga frågor med hjälp av hårdkodade bildbegäranden.
 
 ### Är frågesträngsparametrar skiftlägeskänsliga?
 
-Ja. Kontrollera att frågesträngsparametrarna matchar varandra exakt, annars registreras de inte. Till exempel: `pagename` är inte en giltig frågesträngsparameter, medan `pageName` är.
+Ja. Kontrollera att frågesträngsparametrarna matchar varandra exakt, annars registreras de inte. `pagename` är till exempel inte en giltig frågesträngsparameter, medan `pageName` är det.
 
 ### Kan jag inkludera blanksteg i frågesträngen?
 
 Värdena för var och en av frågesträngsparametrarna är URL-kodade. URL-kodning konverterar tecken som normalt är ogiltiga i URL-adresser till giltiga tecken. Ett blanksteg konverteras till exempel till `%20`. Kontrollera att alla tecken som inte är alfanumeriska är URL-kodade. Adobe URL-avkodar automatiskt värden när bildbegäranden når datainsamlingsservrar.
 
-Se [HTML URL-kodningsreferens](https://www.w3schools.com/tags/ref_urlencode.asp) på W3Schools för mer information om hur URL-kodning fungerar.
+Mer information om hur URL-kodning fungerar finns i [HTML URL-kodningsreferens](https://www.w3schools.com/tags/ref_urlencode.asp) på W3Schools.
 
 ### Vilket är det högsta antalet tecken ett enskilt värde kan ha?
 

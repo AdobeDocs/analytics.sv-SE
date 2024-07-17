@@ -33,4 +33,4 @@ När ett kontrakt har signerats:
 
 När en första administratör har etablerats för din organisation kan den första administratören sedan tilldela användare i organisationen andra nyckelroller.
 
-Mer information om hur du distribuerar användare i din organisation med nyckelroller för Adobe Analytics finns i [Administratörsroller i Adobe Analytics](/help/admin/admin-console/admin-roles-in-analytics.md).
+Mer information om hur du etablerar användare i din organisation med nyckelroller för Adobe Analytics finns i [Administratörsroller i Adobe Analytics](/help/admin/admin-console/admin-roles-in-analytics.md).

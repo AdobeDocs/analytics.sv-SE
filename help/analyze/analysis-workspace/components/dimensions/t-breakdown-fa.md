@@ -7,8 +7,8 @@ role: User, Admin
 exl-id: 0d26c920-d0d9-4650-9cf0-b67dbc4629e1
 source-git-commit: 10ae8213b8745439ab5968853f655a1176b8c38a
 workflow-type: tm+mt
-source-wordcount: '334'
-ht-degree: 10%
+source-wordcount: '335'
+ht-degree: 8%
 
 ---
 
@@ -31,7 +31,7 @@ Analysera data på obegränsade sätt efter just era behov och bygg frågor med 
 
 ## Tillämpa attribueringsmodeller på uppdelningar
 
-Alla uppdelningar i en tabell kan också ha en attribueringsmodell. Den här attribueringsmodellen kan vara densamma eller en annan än den överordnade kolumnen. Du kan till exempel analysera linjära beställningar i dimensionen marknadsföringskanaler, men använda U-formade beställningar på specifika spårningskoder i en kanal. Om du vill redigera attribueringsmodellen som används för en uppdelning håller du muspekaren över nedbrytningsmodellen och klickar **[!UICONTROL Edit]**:
+Alla uppdelningar i en tabell kan också ha en attribueringsmodell. Den här attribueringsmodellen kan vara densamma eller en annan än den överordnade kolumnen. Du kan till exempel analysera linjära beställningar i dimensionen marknadsföringskanaler, men använda U-formade beställningar på specifika spårningskoder i en kanal. Om du vill redigera attribueringsmodellen som används för en uppdelning håller du muspekaren över nedbrytningsmodellen och klickar på **[!UICONTROL Edit]**:
 
 ![Brytningsinställningar](assets/breakdown_settings.png)
 
@@ -39,7 +39,7 @@ Detta är det förväntade beteendet när du tillämpar attribueringsmodeller p�
 
 * Om du tillämpar en attribuering när det inte finns några andra attribut gäller attribueringen för hela kolumnträdet.
 
-* Om du lägger till en uppdelning efter att en attribuering har tillämpats, används standardvärdet för den angivna uppdelning som lades till, om den dimensionen har ett standardvärde. I annat fall används den uppdelning som görs från den överordnade kolumnen. Vissa dimensioner har en standardallokering.  Till exempel: [!UICONTROL Time] mått och [!UICONTROL Referrer] use [!UICONTROL Same Touch]. The [!UICONTROL Product] dimensionsanvändning [!UICONTROL Last Touch]. Andra dimensioner saknar standardvärde och använder den överordnade kolumntilldelningen.
+* Om du lägger till en uppdelning efter att en attribuering har tillämpats, används standardvärdet för den angivna uppdelning som lades till, om den dimensionen har ett standardvärde. I annat fall används den uppdelning som görs från den överordnade kolumnen. Vissa dimensioner har en standardallokering.  Exempel: [!UICONTROL Time] dimensioner och [!UICONTROL Referrer] använd [!UICONTROL Same Touch]. Dimensionen [!UICONTROL Product] använder [!UICONTROL Last Touch]. Andra dimensioner saknar standardvärde och använder den överordnade kolumnallokeringen.
 
 * Om det redan finns attribut i kolumnträdet påverkas bara den du redigerar om du ändrar attributet.
 

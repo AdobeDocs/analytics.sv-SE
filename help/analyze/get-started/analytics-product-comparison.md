@@ -14,7 +14,7 @@ ht-degree: 17%
 
 Den här sidan innehåller en jämförelse av olika Adobe Analytics-produkter: Analysis Workspace, Report Builder, Data Warehouse, Data Feeds och Analytics API 2.0.
 
-Information om vilken Adobe Analytics-produkt du ska använda finns i [Vilket Adobe Analytics-verktyg ska jag använda?](/help/analyze/get-started/which-analytics-tool.md).
+Mer information om vilken Adobe Analytics-produkt som ska användas finns i [Vilket Adobe Analytics-verktyg ska jag använda?](/help/analyze/get-started/which-analytics-tool.md).
 
 | Produkt- och hjälplänk | [Analysis Workspace](/help/analyze/analysis-workspace/home.md) | [Report Builder](/help/analyze/report-builder/home.md) | [Data Warehouse](/help/export/data-warehouse/data-warehouse.md) | [Datafeeds](/help/export/analytics-data-feed/data-feed-overview.md) | [Analytics API 2.0](https://www.adobe.io/apis/experiencecloud/analytics/docs.html) |
 |---|---|---|---|---|---|
@@ -23,18 +23,18 @@ Information om vilken Adobe Analytics-produkt du ska använda finns i [Vilket Ad
 | **Experience Cloud-ID (ECID) tillgängligt** | Nej | Nej | Ja | Ja | Nej |
 | **Tidsstämpel tillgänglig** | Nej | Nej | Nej | Ja | Nej |
 | **Bearbetningsnivå** | Fullt bearbetad | Fullständigt bearbetad, med separat [realtidsrapport](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/realtime/realtime.md) | Fullt bearbetad | Fullt bearbetad | Fullt bearbetad |
-| **Administratörsrobotfilterdata ingår** <br> [Läs mer](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/bot-removal/bot-removal.md) | Nej | Ja - separat robotrapport | Nej | Nej | Nej |
-| **Låg trafik (Uniques-gränsen överskrids) visas** <br> [Läs mer](/help/technotes/low-traffic.md) | Ja | Ja | Nej | Nej | Ja |
+| **Administratörsfilterdata ingår** <br> [Läs mer](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/bot-removal/bot-removal.md) | Nej | Ja - separat robotrapport | Nej | Nej | Nej |
+| **Låg trafik (Uniques-gräns) visas** <br> [Läs mer](/help/technotes/low-traffic.md) | Ja | Ja | Nej | Nej | Ja |
 | **Synlig radgräns (före sidnumrering)** | 400 | 50000 | Obegränsad | Obegränsad | 50000 |
 | **Flera rapportsviter** | [Ja](/help/analyze/analysis-workspace/build-workspace-project/multiple-report-suites.md) | Ja | Nej | Ja | Nej | Ja |
 | **Antal uppdelningar** | Obegränsad | Upp till 2 | Obegränsad | Obegränsad | Obegränsat, kör över flera frågor |
 | **Segmentering** <br> [Läs mer](/help/components/segmentation/segmentation-workflow/seg-workflow.md) | Ja | Ja | Ja, med [begränsningar](/help/components/segmentation/seg-reference/seg-compatibility.md) | Nej | Ja |
-| **Beräknade mått** <br> [Läs mer](/help/components/c-calcmetrics/cm-overview.md) | Ja, med [Attribut](/help/analyze/analysis-workspace/attribution/overview.md) | Ja, med attribuering | Ja | Nej | Ja, med [Attribut](/help/analyze/analysis-workspace/attribution/overview.md) |
-| **Marknadsföringskanaler** <br> [Läs mer](/help/components/c-marketing-channels/c-getting-started-mchannel.md) | Ja | Ja | Ja | Ja - [va_finder, va_Närmare](/help/export/analytics-data-feed/c-df-contents/datafeeds-reference.md) | Ja |
+| **Beräknade mått** <br> [Läs mer](/help/components/c-calcmetrics/cm-overview.md) | Ja, med [Attribution](/help/analyze/analysis-workspace/attribution/overview.md) | Ja, med attribuering | Ja | Nej | Ja, med [Attribution](/help/analyze/analysis-workspace/attribution/overview.md) |
+| **Marknadsföringskanaler** <br> [Läs mer](/help/components/c-marketing-channels/c-getting-started-mchannel.md) | Ja | Ja | Ja | Ja - [va_finder, va_close](/help/export/analytics-data-feed/c-df-contents/datafeeds-reference.md) | Ja |
 | **Kohortanalys** | [Ja](/help/analyze/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) | Ja | Nej | Nej | Nej |
-| **Attribut** | Ja, med [Attribut](/help/analyze/analysis-workspace/attribution/overview.md) | Begränsad | Nej | Nej | Ja, med [Attribut](/help/analyze/analysis-workspace/attribution/overview.md) | Nej |
+| **Attribution** | Ja, med [Attribution](/help/analyze/analysis-workspace/attribution/overview.md) | Begränsad | Nej | Nej | Ja, med [Attribution](/help/analyze/analysis-workspace/attribution/overview.md) | Nej |
 | **Kuration** <br> [Läs mer](/help/analyze/analysis-workspace/curate-share/curate.md) | Ja - Project och Virtual Report Suite | Nej | Nej | Nej | Ja - endast Virtual Report Suite |
 | **Projektdelning** <br> [Läs mer](/help/analyze/analysis-workspace/curate-share/share-projects.md) | Ja, med projektroller | Ja | Nej | Nej | Nej |
 | **Schemalagd leverans** | Ja | Ja | Ja | Ja | Nej |
-| **Leveransmål** | E-post | Email, FTP, SFTP, [publicera till Microsoft PowerBI](/help/analyze/report-builder/c-publish-power-bi/power-bi.md) | Amazon S3, Google Cloud Platform, Azure SAS, Azure RBAC och e-post | Amazon S3, Azure RBAC, Azure SAS och Google Cloud Platform | - |
-| **Tidsbearbetning för Virtual Report Suite** <br> [Läs mer](/help/components/vrs/vrs-report-time-processing.md) | Ja | Nej | Nej | Nej | Ja |
+| **Leveransmål** | E-post | E-post, FTP, SFTP, [publicera till Microsoft PowerBI](/help/analyze/report-builder/c-publish-power-bi/power-bi.md) | Amazon S3, Google Cloud Platform, Azure SAS, Azure RBAC och e-post | Amazon S3, Azure RBAC, Azure SAS och Google Cloud Platform | - |
+| **Tidsbearbetning för virtuell rapportsserie** <br> [Läs mer](/help/components/vrs/vrs-report-time-processing.md) | Ja | Nej | Nej | Nej | Ja |

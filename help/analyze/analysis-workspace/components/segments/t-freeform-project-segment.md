@@ -6,8 +6,8 @@ role: User, Admin
 exl-id: 67112e13-4d0a-4d77-be50-496c3d28779c
 source-git-commit: 266cf18050d60f08f7e170c56453d1e1d805cb7b
 workflow-type: tm+mt
-source-wordcount: '493'
-ht-degree: 1%
+source-wordcount: '454'
+ht-degree: 0%
 
 ---
 
@@ -18,8 +18,8 @@ Du kan skapa olika typer av segment i Workspace, beroende på hur komplexa de be
 
 | Segmenttyp | Skapad var? | Tillämpligt var? | När ska du använda |
 | --- | --- | --- | --- |
-| Segment i komponentlista | Klicka på +, vilket tar dig till [Segment Builder](/help/components/segmentation/segmentation-workflow/seg-build.md) | Alla arbetsyteprojekt | För mer komplexa segment, sekventiella segment |
-| Snabbsegment | [Bygg snabbt segment](/help/analyze/analysis-workspace/components/segments/quick-segments.md) | Endast projekt, men du kan spara och lägga till i segmentlistan. | Kan användas för segment med en regel (med dra och släpp) eller för att lägga till/redigera flera regler (genom att klicka på segmentikonen) |
+| Segment i komponentlista | Klicka på +, vilket tar dig till [segmentbyggaren](/help/components/segmentation/segmentation-workflow/seg-build.md) | Alla dina Workspace-projekt | För mer komplexa segment, sekventiella segment |
+| Snabbsegment | [Skapa snabbsegment](/help/analyze/analysis-workspace/components/segments/quick-segments.md) | Endast projekt, men du kan spara och lägga till i segmentlistan. | Kan användas för segment med en regel (med dra och släpp) eller för att lägga till/redigera flera regler (genom att klicka på segmentikonen) |
 | Beräknat mätningsbaserat segment | [Bygg beräknade mätvärden](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/metrics-with-segments.html) | Till individuellt beräknat mått | Använd segment i måttdefinitionen |
 | Virtuellt rapportsuite-baserat segment | [Virtuell Report Suite Builder](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-workflow/vrs-create.html) | Till enskild virtuell rapportsvit | Använd segment i definitionen för den virtuella rapportsviten |
 
@@ -52,15 +52,15 @@ Segmentspåret under komponentmenyn visas
 
 ![](assets/segment_icons.png)
 
-Om du vill skapa ett segment av den här typen har du två alternativ. Bägge tar dig till [Segment Builder](/help/components/segmentation/segmentation-workflow/seg-build.md) i Adobe Analytics, där du hittar mer information.
+Om du vill skapa ett segment av den här typen har du två alternativ. Båda tar dig till [Segment Builder](/help/components/segmentation/segmentation-workflow/seg-build.md) i Adobe Analytics, där du hittar mer information.
 
-* Klicka på plustecknet (+) intill vänster [!UICONTROL Segments]:
+* Klicka på plustecknet (+) bredvid [!UICONTROL Segments] i den vänstra listen:
 
 ![](assets/create-seg.png)
 
 eller
 
-* Gå till [!UICONTROL Components] > [!UICONTROL Segments]och sedan klicka [!UICONTROL + Add].
+* Gå till [!UICONTROL Components] > [!UICONTROL Segments] och klicka sedan på [!UICONTROL + Add].
 
 
 ### Andra metoder för att använda segment {#section_10FF2E309BA84618990EA5B473015894}
@@ -72,17 +72,17 @@ Det finns flera andra metoder för att tillämpa segment i frihandsprojekt.
 | Åtgärd | Beskrivning |
 |--- |--- |
 | Skapa segment från markering | Skapa ett textbundet segment. Det här segmentet gäller bara det öppna projektet och sparas inte som ett Analytics-segment. 1. Markera rader.  2. Högerklicka på markeringen.  3. Klicka på *Skapa segment från markering*. |
-| Komponenter > Nytt segment | Visar segmentbyggaren. Se [Segment Builder](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-build.html) för mer information om segmentering. |
-| Dela > Dela projekt eller Dela > Kuratera projektdata | I [Kuratera och dela](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/curate.html#concept_4A9726927E7C44AFA260E2BB2721AFC6), får du lära dig hur segment som du tillämpar på projektet är tillgängliga i en delad analys för mottagaren. |
+| Komponenter > Nytt segment | Visar segmentbyggaren. Mer information om segmentering finns i [Segmentbyggaren](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-build.html). |
+| Dela > Dela projekt eller Dela > Kuratera projektdata | I [Kuratera och dela](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/curate.html#concept_4A9726927E7C44AFA260E2BB2721AFC6) kan du lära dig hur segment som du tillämpar på projektet är tillgängliga i en delad analys för mottagaren. |
 | Använd segment som Dimensioner | Video: [Använda segment som Dimensioner i Analysis Workspace](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/applying-segments/using-segments-as-dimensions-in-analysis-workspace.html) |
 
-## Segment IQ
+## Segmentanalys
 
 Segmentanalys (även kallad segmentjämförelse) omfattar följande funktioner:
 
 * [Panelen Segmentjämförelse:](/help/analyze/analysis-workspace/c-panels/c-segment-comparison/segment-comparison.md) Kärnfunktionen i segmentanalys. Dra två segment till panelen och visa en omfattande rapport som visar statistiskt signifikanta skillnader och överlappning mellan de två målgrupperna.
-* [Jämföra segment i utfall:](/help/analyze/analysis-workspace/visualizations/fallout/compare-segments-fallout.md) Se hur olika målgrupper jämför med varandra i samband med en utfallsvisualisering.
+* [Jämför segment i utfallet:](/help/analyze/analysis-workspace/visualizations/fallout/compare-segments-fallout.md) Se hur olika målgrupper skiljer sig från varandra i samband med en utfallsvisualisering.
 
 ## Mer info
 
-Mer information om segmentering i Adobe Analytics finns på [här](/help/components/segmentation/seg-overview.md).
+Mer information om segmentering i Adobe Analytics finns [här](/help/components/segmentation/seg-overview.md).

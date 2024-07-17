@@ -1,17 +1,17 @@
 ---
 description: Det går bara att ansluta utan lösenord till FTP-konton med både en SFTP-anslutning och en alternativ autentiseringsmetod. Detta inbegriper en uppsättning med två filer (en som finns på FTP-kontot och den andra som finns på datorn) som kallas för en kombination av offentlig och privat nyckel.
 keywords: ftp;sftp
-title: Ansluta till Adobe via SFTP utan lösenord
+title: Anslut till Adobe via SFTP utan lösenord
 feature: FTP Export
 exl-id: 7ff9511c-50a2-466f-b5af-6bbd59941ce5
 source-git-commit: 34ba0e09cd909951a777b0ad3da080958633f97e
 workflow-type: tm+mt
-source-wordcount: '603'
-ht-degree: 2%
+source-wordcount: '605'
+ht-degree: 0%
 
 ---
 
-# Ansluta till Adobe via SFTP utan lösenord
+# Anslut till Adobe via SFTP utan lösenord
 
 Det går bara att ansluta utan lösenord till FTP-konton med både en SFTP-anslutning och en alternativ autentiseringsmetod. Detta inbegriper en uppsättning med två filer (en som finns på FTP-kontot och den andra som finns på datorn) som kallas för en kombination av offentlig och privat nyckel.
 
@@ -21,7 +21,7 @@ En del klienter kräver en SFTP (Secure File Transfer Protocol) för överförin
 
 När du använder SFTP är det möjligt att, under särskilda förhållanden, använda privata nycklar för att ansluta till kontot utan lösenord. Med den här metoden kan datorn använda nyckelfiler för autentisering i stället för vanlig lösenordsautentisering. Det innebär att det endast är den dator som har den privata nyckeln som kan ansluta utan ett lösenord. Alla andra datorer/användare måste fortfarande använda lösenordsautentisering (såvida inte privata nycklar har ställts in på dessa andra datorer också).
 
-**Så här konfigurerar och använder du privata nycklar för lösenordslös autentisering**
+**Om du vill konfigurera och använda privata nycklar för lösenordsfri autentisering**
 
 1. Ett FTP-konto har skapats (Adobe).
 
@@ -64,7 +64,7 @@ När du använder SFTP är det möjligt att, under särskilda förhållanden, an
 
 1. Överför offentlig nyckel till FTP-konto (kund).
 
-   Överför och testa den offentliga nyckeln. Anslut till FTP-kontot i Adobe och skapa en [!DNL .ssh] om den inte redan finns. Överför [!DNL authorized_keys] till denna [!DNL .ssh] katalog. Detta kan göras på många olika sätt (kommandorad, grafisk FTP-klient och så vidare). Allt som krävs är möjligheten att skapa en katalog och överföra en fil.
+   Överför och testa den offentliga nyckeln. Anslut till Adobe FTP-kontot och skapa en [!DNL .ssh]-katalog, om den inte redan finns. Överför filen [!DNL authorized_keys] till den här [!DNL .ssh]-katalogen. Detta kan göras på många olika sätt (kommandorad, grafisk FTP-klient och så vidare). Allt som krävs är möjligheten att skapa en katalog och överföra en fil.
 
    Här är ett exempel på hur man gör detta med ett UNIX-skal.
 

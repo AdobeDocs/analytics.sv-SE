@@ -6,8 +6,8 @@ feature: VRS
 exl-id: 5ff6ff1a-5b99-41cc-a3a7-928197ec9ef9
 source-git-commit: 266cf18050d60f08f7e170c56453d1e1d805cb7b
 workflow-type: tm+mt
-source-wordcount: '674'
-ht-degree: 3%
+source-wordcount: '667'
+ht-degree: 2%
 
 ---
 
@@ -26,20 +26,20 @@ Innan du börjar skapa virtuella rapportsviter bör du tänka på några saker.
 
 ## Definiera inställningar
 
-På [!UICONTROL Settings] -fliken, definiera de här inställningarna och klicka sedan på **[!UICONTROL Continue]**.
+Definiera de här inställningarna på fliken [!UICONTROL Settings] och klicka sedan på **[!UICONTROL Continue]**.
 
 | Element | Beskrivning |
 | --- |--- |
 | Namn | Namnet på den virtuella rapportsviten ärvs inte från den överordnade rapportsviten och ska vara distinkt. |
 | Beskrivning | Lägg till en bra beskrivning för dina företagsanvändare. |
 | Taggar | Du kan lägga till taggar för att ordna dina rapportsviter. |
-| Källa | Rapportsviten som den här virtuella rapportsviten ärver följande inställningar. De flesta tjänstenivåer och funktioner (till exempel eVar-inställningar, bearbetningsregler, klassificeringar och så vidare) ärvs. Om du vill ändra de här ärvda inställningarna för en virtuell rapportsvit måste du redigera den överordnade rapportsviten ( Admin > Rapportsviter). |
+| Source | Rapportsviten som den här virtuella rapportsviten ärver följande inställningar. De flesta tjänstenivåer och funktioner (till exempel eVar-inställningar, bearbetningsregler, klassificeringar och så vidare) ärvs. Om du vill ändra de här ärvda inställningarna för en virtuell rapportsvit måste du redigera den överordnade rapportsviten ( Admin > Rapportsviter). |
 | Tidszon | Det är valfritt att välja en tidszon. Om du väljer en tidszon sparas den tillsammans med Virtual Report Suite. Om du inte väljer någon av dem används tidszonen för den överordnade rapportsviten.  När du redigerar en virtuell rapportsserie visas den tidszon som sparats med den virtuella rapportsviten i den nedrullningsbara väljaren. Om den virtuella rapportsviten skapades innan tidszonsstöd lades till visas den överordnade rapportsvitens tidszon i den nedrullningsbara väljaren. |
 | Segment | Du kan bara lägga till ett segment eller stapla segment.   Obs! När du staplar två segment förenas de med en AND-sats. Detta kan inte ändras till en OR-sats. När du försöker ta bort eller ändra ett segment som för närvarande används i en virtuell rapportserie visas en varning. |
 
 ## Definiera besöksdefinition
 
-På [!UICONTROL Visit Definition] -fliken, definiera de här inställningarna och klicka sedan på **[!UICONTROL Continue]**.
+Definiera de här inställningarna på fliken [!UICONTROL Visit Definition] och klicka sedan på **[!UICONTROL Continue]**.
 
 ![](assets/visit-definition.png)
 
@@ -61,12 +61,12 @@ Här är en video om hur du justerar en besöksdefinition i en virtuell rapports
 
 ![](assets/components.png)
 
-1. På [!UICONTROL Components] markerar du kryssrutan för att tillämpa urval för att inkludera, exkludera och byta namn på komponenter för den här virtuella rapportsviten i Analysis Workspace.
-Mer information om kurser i virtuella rapportsviter finns i [Komponentstrukturering för virtuell rapportserie](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-components.html#virtual-report-suites).
+1. På fliken [!UICONTROL Components] markerar du kryssrutan för att tillämpa urval för att inkludera, exkludera och byta namn på komponenter för den här virtuella rapportsviten i Analysis Workspace.
+Mer information om gruppering av virtuella rapportsviter finns i [Komponentstrukturering för virtuell rapportserie](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-components.html#virtual-report-suites).
 
-1. Dra komponenter (mått, mått, segment eller datumintervall) som du vill inkludera i den virtuella rapportsviten till [!UICONTROL Included Components] -avsnitt.
+1. Dra komponenter (dimensioner, mått, segment eller datumintervall) som du vill inkludera i den virtuella rapportsviten till avsnittet [!UICONTROL Included Components].
 
-1. Klicka på **[!UICONTROL Save]**.
+1. Klicka på **[!UICONTROL Save]** när du är klar.
 
 ## Förhandsgranska data
 

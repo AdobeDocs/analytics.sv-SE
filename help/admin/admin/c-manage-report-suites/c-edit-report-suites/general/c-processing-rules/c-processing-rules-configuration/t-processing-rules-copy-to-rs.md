@@ -20,6 +20,6 @@ Så här kopierar du bearbetningsregler från en rapportserie och ersätter elle
 1. Välj en rapportsvit.
 1. Klicka på **[!UICONTROL Edit Settings]** > **[!UICONTROL General]** > **[!UICONTROL Processing Rules]**.
 
-1. På **[!UICONTROL Processing Rules]** klickar du på **[!UICONTROL Copy Processing Rules]** -fliken.
+1. Klicka på fliken **[!UICONTROL Copy Processing Rules]** på sidan **[!UICONTROL Processing Rules]**.
 1. Välj en eller flera målrapportsviter för att ta emot reglerna från den aktuella rapportsviten.
 1. Välj till **[!UICONTROL Replace all processing rules]** eller till **[!UICONTROL Append specific processing rules]** och klicka sedan på **[!UICONTROL Copy.]**

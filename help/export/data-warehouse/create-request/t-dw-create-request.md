@@ -16,9 +16,9 @@ Det finns olika konfigurationsalternativ tillgängliga när du skapar en Data Wa
 
 ## Börja skapa begäran
 
-1. I Adobe Analytics: **[!UICONTROL Tools]** > **[!UICONTROL Data Warehouse]**.
+1. I Adobe Analytics väljer du **[!UICONTROL Tools]** > **[!UICONTROL Data Warehouse]**.
 
-1. På [!UICONTROL **Data Warehouse**] sida, markera [!UICONTROL **Lägg till**].
+1. På sidan [!UICONTROL **Data Warehouse**] väljer du [!UICONTROL **Lägg till**].
 
    ![Knapp för att lägga till en begäran](assets/dw-add-request.png)
 

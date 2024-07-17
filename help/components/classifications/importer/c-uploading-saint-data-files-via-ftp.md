@@ -18,7 +18,7 @@ ht-degree: 0%
 >
 >FTP rekommenderas inte eftersom det är en okrypterad metod för att dela filer, vilket innebär att alla kan fånga upp filinnehållet samt användarnamnet och lösenordet som används för kontot.
 >
->Konfigurera istället ett molnkonto enligt beskrivningen i [Konfigurera molnimport- och exportkonton](/help/components/locations/configure-import-accounts.md).
+>Konfigurera i stället ett molnkonto enligt beskrivningen i [Konfigurera molnimport- och exportkonton](/help/components/locations/configure-import-accounts.md).
 
 Steg som beskriver hur du överför datafiler via FTP.
 
@@ -50,11 +50,11 @@ Om du har överskridit dina unika värden för månaden visas inte motsvarande k
 
 Skapa ett FTP-konto innan du överför data via FTP. >
 
-Se [FTP och sFTP](/help/export/ftp-and-sftp/ftp-overview.md) om du vill ha mer information om FTP-servrar i Adobe.
+Mer information om FTP-servrar i Adobe finns i [FTP och sFTP](/help/export/ftp-and-sftp/ftp-overview.md).
 
-1. Klicka **[!UICONTROL Admin]** > **[!UICONTROL Classification Importer]**.
-1. Klicka **[!UICONTROL Import File]** och sedan klicka **[!UICONTROL FTP Import]**.
-1. På **[!UICONTROL Import File]** flik, klicka **[!UICONTROL Add New]**.
+1. Klicka på **[!UICONTROL Admin]** > **[!UICONTROL Classification Importer]**.
+1. Klicka på **[!UICONTROL Import File]** och sedan på **[!UICONTROL FTP Import]**.
+1. Klicka på **[!UICONTROL Add New]** på fliken **[!UICONTROL Import File]**.
 1. Ange information om FTP-kontot:
 
    | Element | Beskrivning |
@@ -62,8 +62,8 @@ Se [FTP och sFTP](/help/export/ftp-and-sftp/ftp-overview.md) om du vill ha mer i
    | **Namn** | FTP-kontonamnet. |
    | **Datauppsättning som ska klassificeras** | I listrutan väljer du den datauppsättning (variabel för marknadsföringsrapport) som du vill klassificera. |
    | **Välj rapportsviter** | Välj de rapportsviter där du vill klassificera den markerade datauppsättningen. Om du vill välja flera rapportsviter måste klassificeringarna för var och en av de valda rapportsviterna vara identiska. |
-   | **Skriv över data i konflikter** | Välj det här alternativet om du vill skriva över duplicerade data. Det här alternativet är användbart om du uppdaterar befintliga klassificeringar. Om du är på [senaste klassificeringsarkitekturen](../sets/overview.md)är den här inställningen alltid aktiverad. |
-   | **När importen är klar** | Välj det här alternativet om du automatiskt vill exportera den uppdaterade datauppsättningen till samma FTP-konto när du har angett den e-postadress som ska ta emot meddelanden om det här FTP-kontot när importen är klar. Om du är på [senaste klassificeringsarkitekturen](../sets/overview.md), är det här alternativet inte tillgängligt. |
+   | **Skriv över data i konflikter** | Välj det här alternativet om du vill skriva över duplicerade data. Det här alternativet är användbart om du uppdaterar befintliga klassificeringar. Om du använder den [senaste klassificeringsarkitekturen](../sets/overview.md) är den här inställningen alltid aktiverad. |
+   | **När importen är klar** | Välj det här alternativet om du automatiskt vill exportera den uppdaterade datauppsättningen till samma FTP-konto när du har angett den e-postadress som ska ta emot meddelanden om det här FTP-kontot när importen är klar. Om du använder den [senaste klassificeringsarkitekturen](../sets/overview.md) är det här alternativet inte tillgängligt. |
    | **Meddelandemottagare** | Ange den e-postadress som ska ta emot meddelanden om det här FTP-kontot. |
    | **Auktorisera** | (Obligatoriskt) Adobe tillåts att automatiskt importera alla datafiler som skickas till det nya FTP-kontot. |
 
@@ -81,14 +81,14 @@ Du kan använda ett FTP-konto för att importera klassificeringar till Adobe Ana
 
 Så här importerar du klassificeringar via FTP:
 
-1. Klicka **[!UICONTROL Admin]** > **[!UICONTROL Classification Importer]**.
-1. Klicka **[!UICONTROL Import File]** och sedan klicka **[!UICONTROL FTP Import]**.
-1. Klicka på bredvid det FTP-konto som du vill använda **[!UICONTROL View]**.
+1. Klicka på **[!UICONTROL Admin]** > **[!UICONTROL Classification Importer]**.
+1. Klicka på **[!UICONTROL Import File]** och sedan på **[!UICONTROL FTP Import]**.
+1. Klicka på **[!UICONTROL View]** bredvid det FTP-konto som du vill använda.
 1. Använd FTP-åtkomstinformationen (värd, inloggning, lösenord) för att komma åt FTP-servern via en valfri FTP-klient.
 1. Överför datafilen ( `.tab` eller `.txt`) till FTP-servern.
 1. När du har överfört datafilen överför du en FIN-fil som anger att filen är klar att bearbetas.
 
-   FIN-filen är en tom fil som har samma namn som datafilen, med en `.fin` filnamnstillägg. Om datafilen till exempel är `classdata1.tab`, FIN-filnamnet är `classdata1.fin`.
+   FIN-filen är en tom fil med samma namn som datafilen, med filnamnstillägget `.fin`. Om din datafil till exempel är `classdata1.tab` är FIN-filnamnet `classdata1.fin`.
 
 Med jämna mellanrum hämtar Adobe överförda datafiler som har en associerad FIN-fil. Adobe importerar dem till de rapportsviter och datauppsättningar som anges i FTP-kontokonfigurationen.
 

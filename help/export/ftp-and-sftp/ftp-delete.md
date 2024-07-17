@@ -6,8 +6,8 @@ feature: FTP Export
 exl-id: accf2f8d-c22c-4684-ba85-73a286325d0c
 source-git-commit: 4daa5c8bdbcb483f23a3b8f75dde9eeb48516db8
 workflow-type: tm+mt
-source-wordcount: '218'
-ht-degree: 5%
+source-wordcount: '223'
+ht-degree: 0%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 5%
 
 FTP-principen i Adobe inaktiverar automatiskt åtkomst till FTP-konton som är inaktiva i 90 dagar i följd.
 
-Adobe tar sedan bort inaktiverade FTP-konton (och tar permanent bort alla data som lagras i dessa konton) efter ytterligare 90 dagars respitperiod. Ett FTP-konto som är inaktivt i 90 dagar (från 5 juli 2012 till 2 oktober 2012) inaktiveras t.ex. 3 oktober 2012. Den tas sedan bort helt den 2 januari 2013.
+Adobe tar sedan bort inaktiverade FTP-konton (och tar permanent bort alla data som lagras i dessa konton) efter ytterligare 90 dagars respitperiod. Ett FTP-konto som till exempel är inaktivt i 90 dagar (från 5 juli 2012 till 2 oktober 2012) inaktiveras 3 oktober 2012. Den tas sedan bort helt den 2 januari 2013.
 
 Inga konton inaktiveras före 5 oktober 2012 och inga konton tas bort före 2 januari 2013.
 

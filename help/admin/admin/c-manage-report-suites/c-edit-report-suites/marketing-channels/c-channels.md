@@ -16,20 +16,20 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> Allmän information om marknadsföringskanaler finns på [Kom igång med marknadsföringskanaler](/help/components/c-marketing-channels/c-getting-started-mchannel.md).
+> Allmän information om marknadsföringskanaler finns i [Kom igång med marknadsföringskanaler](/help/components/c-marketing-channels/c-getting-started-mchannel.md).
 >
-> För att maximera effekten av marknadsföringskanaler för Attribution och Customer Journey Analytics har vi publicerat några [reviderad bästa praxis](/help/components/c-marketing-channels/mchannel-best-practices.md).
+> För att maximera effekten av marknadsföringskanaler för attribuering och Customer Journey Analytics har vi publicerat [reviderade best practices](/help/components/c-marketing-channels/mchannel-best-practices.md).
 
 **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]** > **[!UICONTROL Edit Settings]** > **[!UICONTROL Marketing Channels]** > **[!UICONTROL Marketing Channel Manager]**.
 
 Lägg till eller aktivera marknadsföringskanaler i Marketing Channel Manager. För rapportsviter som inte har några marknadsföringskanaler kan du med en automatisk inställning skapa flera kanaler åt dig, tillsammans med deras regler. Du kan redigera fördefinierade kanaler efter dina behov eller skapa egna (upp till totalt 25).
 
-Lägga till kanaler i [!UICONTROL Marketing Channels] sidan görs oberoende av hur regler skapas på [Bearbetningsregler för marknadsföringskanal](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/marketing-channels/c-rules.md) sida. Du kopplar regler till kanaler när du skapar regeln.
+Att lägga till kanaler på sidan [!UICONTROL Marketing Channels] görs oberoende av hur regler skapas på sidan [Bearbetningsregler för marknadsföringskanaler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/marketing-channels/c-rules.md). Du kopplar regler till kanaler när du skapar regeln.
 
 Här följer riktlinjer för hur du skapar kanaler:
 
 * Planera i förväg genom att skapa en lista över alla era kanaler, så att alla era besökarträffar kategoriseras i rätt kanal.
-* Inkludera kanaler för kategorierna av [Intern](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/marketing-channels/c-rules.md) träffar.
+* Inkludera kanaler för kategorierna av [interna](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/marketing-channels/c-rules.md) träffar.
 * Inkludera en&quot;övriga kampanjer&quot;-kanal som kan användas som en catch-all-kanal och placeras efter betalda kanaler och före organiska kanaler.
 
 
@@ -48,28 +48,28 @@ Lägg till marknadsföringskanaler i Marketing Channel Manager.
 >Du kan inte ta bort en kanal. Om du inte vill använda en kanal kan du inaktivera den eller byta namn på den och bevara den för senare bruk.
 
 1. Klicka på **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]**.
-1. På [!UICONTROL Report Suite Manager] väljer du en rapportsvit.
+1. Välj en rapportsvit på sidan [!UICONTROL Report Suite Manager].
 
    Om du väljer flera rapportsviter väljer du en mall som kopierar inställningar från mallen till de valda rapportsviterna.
 
-   Se [Använd mallrapportsvitsinställningar på flera rapportsviter](/help/components/c-marketing-channels/c-getting-started-mchannel.md).
+   Se [Använda inställningar för mallrapportsviter på flera rapportsviter](/help/components/c-marketing-channels/c-getting-started-mchannel.md).
 
 1. Klicka på **[!UICONTROL Edit Settings]** > **[!UICONTROL Marketing Channels]** > **[!UICONTROL Marketing Channel Manager]**.
 
-   Om din rapportsvit inte har definierade kanaler [Automatisk inställning](/help/components/c-marketing-channels/c-getting-started-mchannel.md) visas.
+   Om inga kanaler har definierats för rapportsviten visas sidan [Automatisk inställning](/help/components/c-marketing-channels/c-getting-started-mchannel.md) .
 
-1. På [!UICONTROL Marketing Channel Manager] sida, klicka **[!UICONTROL Add Channel]**.
+1. Klicka på **[!UICONTROL Add Channel]** på sidan [!UICONTROL Marketing Channel Manager].
 
    Det här alternativet är inte tillgängligt när 25 kanaler har definierats.
 
-1. Klicka **[!UICONTROL Save.]**
-1. Klicka på om du vill konfigurera regler för kanalen **[!UICONTROL Marketing Channel Processing Rules]**.
+1. Klicka på **[!UICONTROL Save.]**
+1. Klicka på **[!UICONTROL Marketing Channel Processing Rules]** om du vill konfigurera regler för kanalen.
 
-   Se [Skapa regler för bearbetning av marknadsföringskanal](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/marketing-channels/c-rules.md).
+   Se [Skapa bearbetningsregler för marknadsföringskanaler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/marketing-channels/c-rules.md).
 
 ## Använda kanalinställningar {#mktg-channel-mgr}
 
-Det finns olika inställningar som kan användas för varje kanal på [!UICONTROL Marketing Channel Manager] sida.
+Det finns olika inställningar som kan användas för varje kanal på sidan [!UICONTROL Marketing Channel Manager].
 
 | Fält | Definition |
 |--- |--- |
@@ -87,12 +87,12 @@ Det är bäst att avmarkera alternativet för att åsidosätta sista-beröringen
 
 ## Definiera kanalregler
 
-Skapa kanalerna och de underliggande reglerna som bearbetar data innan kanaler och kanaldata kan visas i rapporten. Du kan också ange hur länge du vill ha [besökaranställningsperiod](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/marketing-channels/visitor-engagement.md) för att hålla.
+Skapa kanalerna och de underliggande reglerna som bearbetar data innan kanaler och kanaldata kan visas i rapporten. Du kan också ange hur länge du vill att [besökarperioden](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/marketing-channels/visitor-engagement.md) ska vara.
 
-Adobe tillhandahåller flera fördefinierade kanaler under en [automatisk inställning](/help/components/c-marketing-channels/c-getting-started-mchannel.md) som du kan redigera efter dina behov. Dessutom kan du ändra den här konfigurationen och definiera egna regler i [Bearbetningsregler för marknadsföringskanaler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/marketing-channels/c-rules.md).
+Adobe tillhandahåller flera fördefinierade kanaler under en [automatisk konfiguration](/help/components/c-marketing-channels/c-getting-started-mchannel.md) som du kan redigera efter dina behov. Du kan dessutom ändra den här konfigurationen och definiera anpassade regler i [Bearbetningsregler för marknadsföringskanaler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/marketing-channels/c-rules.md).
 
 >[!NOTE]
 >
 >Adobe rekommenderar att du skapar rapporten i en rapportsserie som du kan använda som mall för testningsändamål. Du kan använda mallen för att tillämpa kanal- och regeluppsättningar globalt på en eller flera produktionsrapportsviter.
 >
->Se [Använd mallrapportsvitsinställningar på flera rapportsviter](/help/components/c-marketing-channels/c-getting-started-mchannel.md).
+>Se [Tillämpa inställningar för mallrapportsviten på flera rapportsviter](/help/components/c-marketing-channels/c-getting-started-mchannel.md).

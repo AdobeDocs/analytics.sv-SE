@@ -17,13 +17,13 @@ Realtidsrapportering visar webbsidans trafik och rangordnar sidvyerna i realtid.
 
 >[!NOTE]
 >
->Realtidsrapporten kräver ingen ytterligare implementering eller taggning. Det utnyttjar er befintliga implementering av Adobe Analytics. Information om hur du konfigurerar realtidsrapporter finns i [Konfiguration av realtidsrapporter](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/realtime/t-realtime-admin.md).
+>Realtidsrapporten kräver ingen ytterligare implementering eller taggning. Det utnyttjar er befintliga implementering av Adobe Analytics. Mer information om hur du konfigurerar realtidsrapporter finns i [Konfiguration av realtidsrapporter](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/realtime/t-realtime-admin.md).
 
 ## Få åtkomst till realtidsrapportering
 
-1. I Analysis Workspace väljer du [!UICONTROL **Arbetsyta**] -fliken.
+1. I Analysis Workspace väljer du fliken [!UICONTROL **Workspace**].
 
-1. Välj [!UICONTROL **Rapporter**] > [!UICONTROL **Engagemang**] > **[!UICONTROL Real-Time]**.
+1. Välj [!UICONTROL **Rapporter**] > [!UICONTROL **engagemang**] > **[!UICONTROL Real-Time]**.
 
 ## Förstå realtidsrapportering
 
@@ -49,13 +49,13 @@ Som administratör kan du
 
 * Jämför till exempel förra veckans värden med förra årets värden (liksom med dagens totala värde).
 
-Tänk på att eVars (konverteringsmått) inte stöds eftersom det inte finns något koncept för beständighet. Du kan välja konverteringsmått, men de fungerar bara om de är inställda på samma sida som dimensionerna. Mer information finns i varningsmeddelandet i [Konfigurera realtidsrapporter](/help/components/c-real-time-reporting/t-realtime-admin.md).
+Tänk på att eVars (konverteringsmått) inte stöds eftersom det inte finns något koncept för beständighet. Du kan välja konverteringsmått, men de fungerar bara om de är inställda på samma sida som dimensionerna. Mer information finns i varningsmeddelandet som har hämtats i [Konfigurera realtidsrapporter](/help/components/c-real-time-reporting/t-realtime-admin.md).
 
 Det är endast administratörer eller användare i behörighetsgrupperna All Report Access och Advanced Reporting som kan konfigurera och visa realtidsrapporter. Real-Time respekterar dock behörigheter. Om du till exempel inte har rätt att se intäkter kan du inte visa en realtidsrapport som innehåller intäktsdata.
 
 ## Datasvarstid som ett resultat av A4T-konfiguration {#latency-a4t}
 
-När A4T-integreringen har aktiverats i Adobe [!DNL Target]kommer du att uppleva ytterligare 5-10 minuters fördröjning i Adobe Analytics. Den här latensökningen tillåter data från analyser och [!DNL Target] som ska lagras på samma träff, vilket gör att du kan dela upp testerna per sida och webbplatsavsnitt.
+När A4T-integreringen har aktiverats i Adobe [!DNL Target] får du ytterligare 5-10 minuters fördröjning i Adobe Analytics. Den här fördröjningsökningen gör att data från Analytics och [!DNL Target] kan lagras på samma träff, vilket gör att du kan dela upp tester efter sida och webbplatsavsnitt.
 
 Ökningen återspeglas i alla Adobe Analytics tjänster och verktyg, inklusive liveströmmen och realtidsrapporter, och gäller i följande scenarier:
 

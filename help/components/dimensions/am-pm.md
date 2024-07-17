@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # AM/PM
 
-FM/PM [dimension](overview.md) ger insikter om huruvida träffen inträffade under AM- eller PM-timmar. Tid för träffen baseras på [rapportsvitens tidszon](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/general-acct-settings-admin.md).
+AM/PM [dimension](overview.md) ger information om huruvida träffen inträffade under AM- eller PM-timmar. Tid för träffen baseras på [rapportsvitens tidszon](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/general-acct-settings-admin.md).
 
 ## Fyll den här dimensionen med data
 
@@ -20,4 +20,4 @@ Den här dimensionen fungerar som den ska. Den har inga inställningar att ändr
 
 ## Dimensioner
 
-Den här dimensionen innehåller alltid exakt två dimensionsobjekt: `"AM"` och `"PM"`. Dimensionsartikeln `"AM"` gäller för alla träffar från 12:00 till 11:59, medan dimensionsobjektet `"PM"` gäller för alla träffar från 12:00 till 11:59.
+Den här dimensionen innehåller alltid exakt två dimensionsobjekt: `"AM"` och `"PM"`. Dimensionsobjektet `"AM"` gäller för alla träffar från 12:00 till 11:59, medan dimensionsobjektet `"PM"` gäller för alla träffar från 12:00 till 11:59.

@@ -22,14 +22,14 @@ Om du t.ex. kombinerat siddimensionen med Visits-måttet får du en rankad rappo
 | `Product page` | `500` |
 | `Purchase page` | `100` |
 
-Om du inte hittar hjälpsidan för ett givet mätresultat är det troligtvis antingen en [anpassad händelse](custom-events.md) eller en [beräknat mått](../c-calcmetrics/cm-overview.md).
+Om du inte kan hitta hjälpsidan för ett givet mätresultat är det troligtvis antingen en [anpassad händelse](custom-events.md) eller ett [beräknat mått](../c-calcmetrics/cm-overview.md).
 
-* Om mätvärdena är en anpassad händelse ska du kontakta en Analytics-administratör inom organisationen eller rapportsvitens [konstruktionsdokument](/help/implement/prepare/solution-design.md).
+* Om mätvärdet är en anpassad händelse kontaktar du en Analytics-administratör i organisationen eller rapportsvitens [lösningsdesigndokument](/help/implement/prepare/solution-design.md).
 * Om måttet är ett beräknat mått klickar du på informationsikonen för att bestämma dess formel.
 
 ## Lägg till måttbeskrivningar
 
-Analysadministratörer kan lägga till beskrivningar för mätvärden och andra komponenter antingen i Report Suite eller direkt i Analysis Workspace. Mer information om hur du lägger till beskrivningar till mätvärden finns i [Lägga till komponentbeskrivningar](/help/analyze/analysis-workspace/components/add-component-descriptions.md).
+Analysadministratörer kan lägga till beskrivningar för mätvärden och andra komponenter antingen i Report Suite eller direkt i Analysis Workspace. Mer information om hur du lägger till beskrivningar i mätvärden finns i [Lägga till komponentbeskrivningar](/help/analyze/analysis-workspace/components/add-component-descriptions.md).
 
 ## Använd mätvärden i Analysis Workspace
 

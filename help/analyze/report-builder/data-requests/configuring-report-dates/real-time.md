@@ -7,7 +7,7 @@ role: User, Admin
 exl-id: 1d46b77c-1649-4bde-a7d6-0e57a2eca1c3
 source-git-commit: 10ff98f7ca4697afe5c2dae66be415c0d68c4aac
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '246'
 ht-degree: 0%
 
 ---
@@ -25,8 +25,8 @@ Ni kan:
 * Använd en anpassad händelse, varukorshändelse eller instans.
 * Visa upp till 20 timmars historik och realtidsdata.
 
-I realtid respekteras behörigheter för användare och grupper. Om du till exempel inte har rätt att se intäkter kan du inte visa en realtidsrapport som innehåller intäktsdata. eVars (konverteringsmått) stöds inte. Realtidsbehörigheter är aktiverade i [Administratörsverktyg](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/real-time-reports/t-realtime-admin.html).
+I realtid respekteras behörigheter för användare och grupper. Om du till exempel inte har rätt att se intäkter kan du inte visa en realtidsrapport som innehåller intäktsdata. eVars (konverteringsmått) stöds inte. Realtidsbehörigheter är aktiverade i [administratörsverktygen](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/real-time-reports/t-realtime-admin.html).
 
 >[!NOTE]
 >
->[!UICONTROL Real-Time Reports] är inte detsamma som [Inkludera aktuella data](https://experienceleague.adobe.com/docs/analytics/analyze/report-builder/options.html) (Data Recency) som släppts tidigare, vilket minskar fördröjningen för standardrapportering genom att data visas innan de är klara.
+>[!UICONTROL Real-Time Reports] är inte samma sak som funktionen [Inkludera aktuella data](https://experienceleague.adobe.com/docs/analytics/analyze/report-builder/options.html) (datagenstid) som släpptes tidigare, vilket reducerade fördröjningen för standardrapportering genom att visa data innan den är klar.

@@ -19,7 +19,7 @@ Svar på frågor du kan ha när du implementerar Audience Analytics.
 
 +++ Hur vet jag om jag har PII (Personally Identiitable Information) i mina analysdata? Och om ja, vad gör jag åt det?
 
-Om du har e-postadresser/adresser/så vidare i ett utkast eller en eVar bör du överväga att hash-koda data under insamlingen. Om ditt land anser att IP-adressen är PII, [aktivera IP-förvrängning](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/exclude-ip.html). Tala med er Analytics Admin för att se vad ni samlar in. Tala med er juridiska avdelning för att se vad de anser vara PII.
+Om du har e-postadresser/adresser/så vidare i ett utkast eller en eVar bör du överväga att hash-koda data under insamlingen. Om ditt land anser att IP-adressen är en PII-adress, [aktiverar du IP-förfalskning](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/exclude-ip.html). Tala med er Analytics Admin för att se vad ni samlar in. Tala med er juridiska avdelning för att se vad de anser vara PII.
 
 +++
 
@@ -37,7 +37,7 @@ Dessa gäller inte när du skickar Adobe Analytics-data till Adobe Audience Mana
 
 +++ Hur skapar jag ett Analytics-mål i Audience Manager?
 
-Se [Konfigurera ett analysmål i Adobe Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/destinations/experience-cloud-destinations/create-analytics-destination.html)&quot;.
+Se [Konfigurera ett analysmål i Adobe Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/destinations/experience-cloud-destinations/create-analytics-destination.html).
 
 +++
 
@@ -49,7 +49,7 @@ Det kan ta flera timmar att fylla i rapportsviterna med nya data.
 
 +++ Jag har skapat ett nytt Analytics-mål, men det visas inte i avsnittet Destination Mappings i mina tillgängliga segment. Vart tog den vägen eller hur hittar jag den?
 
-Ett Analytics-mål tas bort från ett segments målmappningsavsnitt när du väljer **[!UICONTROL Automatically map all current and future segments]** alternativ i **[!UICONTROL Segment Mappings]**. Om du vill förhindra detta väljer du **[!UICONTROL Manually map segments]** i stället för det automatiska alternativet.
+Ett Analytics-mål försvinner från ett segments målmappningsavsnitt när du väljer alternativet **[!UICONTROL Automatically map all current and future segments]** i **[!UICONTROL Segment Mappings]**. Om du vill förhindra detta väljer du **[!UICONTROL Manually map segments]** i stället för det automatiska alternativet.
 
 +++
 
@@ -105,9 +105,9 @@ Du har troligtvis konflikter mellan Adobe Audience Manager sekretesskontroller m
 
 +++
 
-+++ Varför ser jag&quot;Målgruppsgräns nådd&quot; i min Analytics-rapport? (Obs! detta kommer också att representeras som Audience ID = -1 och `::max_audiences_exceeded::` i Data Warehouse)
++++ Varför ser jag&quot;Målgruppsgräns nådd&quot; i min Analytics-rapport? (Obs! Detta kommer också att representeras som målgrupps-ID = -1 och `::max_audiences_exceeded::` i Data Warehouse)
 
-Som standard skickas alla segment som en besökare kvalificerar för till Analytics via integreringen Audience Analytics för Adobe Audience Manager. Om en besökare tillhör mer än 150 Adobe Audience Manager-segment i en enda träff visas **150 senast kvalificerade segment** skickas till Analytics, medan den återstående listan trunkeras. En extra flagga skickas till Analytics som anger att segmentlistan trunkerades och visas som&quot;Målgruppsgräns nådd&quot; i dimensionen Målgruppsnamn och&quot;-1&quot; i dimensionen Målgrupps-ID.
+Som standard skickas alla segment som en besökare kvalificerar för till Analytics via integreringen Audience Analytics för Adobe Audience Manager. Om en besökare tillhör fler än 150 Adobe Audience Manager-segment i en enda träff skickas de **150 senast kvalificerade segmenten** till Analytics, medan den återstående listan trunkeras. En extra flagga skickas till Analytics som anger att segmentlistan trunkerades och visas som&quot;Målgruppsgräns nådd&quot; i dimensionen Målgruppsnamn och&quot;-1&quot; i dimensionen Målgrupps-ID.
 
 Det är osannolikt att en besökare kvalificerar sig för mer än 150 segment för en viss träff, men det kan hända en liten del av tiden. Om du upplever&quot;Målgruppsgräns nådd&quot; i din rapportering har du två alternativ:
 
@@ -135,7 +135,7 @@ Ja. I Adobe Audience Manager-målinställningarna visas endast rapportsviter som
 
 Endast sviter som är mappade till din Experience Cloud-organisation kan aktiveras.
 
-Mer information om vanliga frågor om detta avsnitt finns i [Vanliga frågor om vidarebefordran på serversidan](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/c-server-side-forwarding/ssf-faq.md).
+Mer information om vanliga frågor och svar om det här avsnittet finns i [Vanliga frågor om vidarebefordran på serversidan](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/c-server-side-forwarding/ssf-faq.md).
 
 +++
 

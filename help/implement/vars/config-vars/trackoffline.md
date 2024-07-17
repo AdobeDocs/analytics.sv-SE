@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Spårning offline är ett valfritt sätt att samla in data i Adobe Analytics. Om en besökare kopplar från Internet men fortsätter att surfa på webbplatsen, lagras träffarna i en offlinekö tills enheten återansluter till Internet. Spårning offline används oftast för mobilprogram.
 
-The `trackOffline` variabeln avgör om du vill använda offline-spårning i implementeringen.
+Variabeln `trackOffline` avgör om du vill använda offlinespårning i implementeringen.
 
 >[!WARNING]
 >
@@ -39,7 +39,7 @@ Det finns inget dedikerat fält i Adobe Analytics-tillägget som kan använda de
 
 ## s.trackOffline i AppMeasurementet och den anpassade kodredigeraren för Analytics-tillägget
 
-The `s.trackOffline` är en boolesk variabel som aktiverar eller inaktiverar spårning offline. Standardvärdet är `false`. Ange det här värdet till `true` om du vill aktivera spårning offline.
+Variabeln `s.trackOffline` är en boolesk variabel som aktiverar eller inaktiverar offlinespårning. Dess standardvärde är `false`. Ange det här värdet till `true` om du vill aktivera offlinespårning.
 
 ```js
 s.trackOffline = true;

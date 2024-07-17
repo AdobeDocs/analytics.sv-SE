@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Dag
 
-Dagen [dimension](overview.md) rapporterar den dag då ett visst mått inträffade. Den första dimensionsartikeln är den första dagen i datumintervallet och den sista dimensionsuppgiften är den sista dagen i datumintervallet. Denna dimension är viktig för trendrapporter, eftersom den gör att ni kan se mätvärden över tid.
+Dag [dimension](overview.md) rapporterar den dag som ett visst mått inträffade. Den första dimensionsartikeln är den första dagen i datumintervallet och den sista dimensionsuppgiften är den sista dagen i datumintervallet. Denna dimension är viktig för trendrapporter, eftersom den gör att ni kan se mätvärden över tid.
 
 ## Fyll den här dimensionen med data
 

@@ -7,7 +7,7 @@ exl-id: 2d9447f4-77ac-465b-af93-206dc3ea80f7
 source-git-commit: 25eccb2b9fe3827e62b0ae98d9bebf7a97b239f5
 workflow-type: tm+mt
 source-wordcount: '139'
-ht-degree: 2%
+ht-degree: 0%
 
 ---
 
@@ -21,4 +21,4 @@ Om du tar bort en begäran i arbetsboken bör du kontrollera att det inte finns 
 
 * Om det är möjligt, ta inte bort begäranden som du skapat i Report Builder
 * Se till att du även tar bort motsvarande visualisering i Power BI om du gör borttagningsbegäranden på Report Builder.
-* Om du inte är säker: ta bort begäranden som du inte längre behöver, publicera igen och gå till Power BI för att se vilka visualiseringar som har brutits
+* Om du är osäker: ta bort begäranden som du inte behöver längre, publicera igen och gå till Power BI för att se vilka visualiseringar som har brutits

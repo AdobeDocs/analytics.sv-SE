@@ -21,7 +21,7 @@ Namnutrymmessträngen används för att identifiera de fält som du vill söka i
 * Ett typfält som för de flesta Adobe Analytics-begäranden innehåller värdet ”analytics”.
 * Ett värdefält som innehåller det ID som Analytics ska söka efter i de associerade namnutrymmesvariablerna från var och en av rapportsviterna.
 
-Se [API-dokumentation för dataskydd i Experience Cloud](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html) för mer information och en [lista med vanliga ID-namnutrymmen](https://experienceleague.adobe.com/en/docs/experience-platform/privacy/api/appendix#standard-namespaces). Se [Skapa ett åtkomst-/borttagningsjobb](https://experienceleague.adobe.com/en/docs/experience-platform/privacy/api/privacy-jobs#access-delete) för en exempelbegäran.
+Mer information och en [lista över standardnamnutrymmen för identiteter](https://experienceleague.adobe.com/en/docs/experience-platform/privacy/api/appendix#standard-namespaces) finns i [API-dokumentationen för datasekretess](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html) för Experience Cloud. Se [Skapa ett åtkomst-/borttagningsjobb](https://experienceleague.adobe.com/en/docs/experience-platform/privacy/api/privacy-jobs#access-delete) för en exempelbegäran.
 
 ## Cookie-ID
 
@@ -114,6 +114,6 @@ Du kan också se namnutrymmen som du tidigare har definierat för andra variable
 
 >[!CAUTION]
 >
->Namnutrymmen `visitorId` och `customVisitorId` är reserverade för att identifiera den gamla Analytics-cookien för spårning och Analytics-kundens besökar-ID. Använd inte dessa namnutrymmen för anpassade trafikvariabler och konverteringsvariabler.
+>Namnutrymmena `visitorId` och `customVisitorId` är reserverade för att identifiera den äldre Analytics-spårningscookien och Analytics-kundens besökar-ID. Använd inte dessa namnutrymmen för anpassade trafikvariabler och konverteringsvariabler.
 
 Mer information finns i [Ange ett namnutrymme när du anger en variabel som ID-DEVICE eller ID-PERSON.](/help/admin/admin/c-data-governance/data-labeling/gdpr-labels.md)

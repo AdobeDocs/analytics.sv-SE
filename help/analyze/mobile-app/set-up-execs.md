@@ -6,7 +6,7 @@ role: User, Admin
 exl-id: 0e858407-2852-4a5f-a0df-3ba290fcca8f
 source-git-commit: 34ba0e09cd909951a777b0ad3da080958633f97e
 workflow-type: tm+mt
-source-wordcount: '731'
+source-wordcount: '735'
 ht-degree: 0%
 
 ---
@@ -28,37 +28,37 @@ För att se till att företagsinterna användare har tillgång till dina styrkor
 * De lägsta kraven för mobiloperativsystem på enheterna är iOS version 10 eller senare, eller Android version 4.4 (KitKat) eller senare
 * De har en giltig inloggning på Adobe Analytics.
 * Du har skapat mobila styrkort för dem och delat dem med dem.
-* De har tillgång till de komponenter som styrkortet innehåller. Observera att du kan välja ett alternativ när du delar styrkort till **[!UICONTROL Share embedded components]**.
+* De har tillgång till de komponenter som styrkortet innehåller. Observera att du kan välja ett alternativ när du delar dina styrkort till **[!UICONTROL Share embedded components]**.
 
 ## Hjälp chefer att hämta och installera program
 
-**För chefsanvändare på iOS:**
+**För företagsledare på iOS:**
 
-Klicka på följande länk (den är också tillgänglig i Analytics under **[!UICONTROL Tools]** > **[!UICONTROL Analytics dashboards (Mobile App)]**) och följ anvisningarna för att hämta, installera och öppna programmet:
+Klicka på följande länk (den är även tillgänglig i Analytics under **[!UICONTROL Tools]** > **[!UICONTROL Analytics dashboards (Mobile App)]**) och följ anvisningarna för att hämta, installera och öppna appen:
 
 `[iOS link](https://apple.co/2zXq0aN)`
 
-**För chefsanvändare på Android:**
+**För företagsledare på Android:**
 
-Klicka på följande länk (den är också tillgänglig i Analytics under **[!UICONTROL Tools]** > **[!UICONTROL Analytics dashboards (Mobile App)]**) och följ anvisningarna för att hämta, installera och öppna programmet:
+Klicka på följande länk (den är även tillgänglig i Analytics under **[!UICONTROL Tools]** > **[!UICONTROL Analytics dashboards (Mobile App)]**) och följ anvisningarna för att hämta, installera och öppna appen:
 
 `[Android link](https://bit.ly/2LM38Oo)`
 
-När de har hämtats och installerats kan företagsanvändare logga in i appen med sina befintliga Adobe Analytics-inloggningsuppgifter. har stöd för både Adobe och Enterprise/Federated ID.
+När de har hämtats och installerats kan företagsanvändare logga in i appen med sina befintliga Adobe Analytics-autentiseringsuppgifter. Vi stöder både Adobe och Enterprise/Federated ID.
 
-![App - välkomstskärm](assets/welcome.png)
+![App welcome screen](assets/welcome.png)
 
 ## Hjälp cheferna att komma åt styrkortet
 
 1. Låt chefsanvändare logga in i appen.
 
-   The **[!UICONTROL Choose a company]** visas. På den här skärmen visas de inloggningsföretag som den verkställande användaren tillhör.
+   Skärmen **[!UICONTROL Choose a company]** visas. På den här skärmen visas de inloggningsföretag som den verkställande användaren tillhör.
 
 1. Låt dem trycka på namnet på inloggningsföretaget eller Experience Cloud-organisationen som gäller för styrkortet som du delade.
 
    Styrkortslistan visar sedan alla styrkort som har delats med den verkställande direktören under det inloggningsföretaget.
 
-1. Låt dem sortera listan efter **[!UICONTROL Most recently modified]**, om tillämpligt.
+1. Låt dem sortera den här listan efter **[!UICONTROL Most recently modified]**, om tillämpligt.
 
 1. Låt dem trycka på namnet på styrkortet för att visa det.
 
@@ -69,7 +69,7 @@ När de har hämtats och installerats kan företagsanvändare logga in i appen m
 
 Förklara för den verkställande användaren hur rutor visas i de styrkort som du delar.
 
-![Förklaringar](assets/newexplain.png)
+![Förklara rutor](assets/newexplain.png)
 
 ![Exempelstyrkort](assets/intro_scorecard.png)
 
@@ -85,11 +85,11 @@ Ytterligare information om plattor:
 
 1. Tryck på en platta för att visa hur en detaljerad uppdelning för plattan fungerar.
 
-   ![Uppdelningsvy](assets/sparkline.png)
+   ![Brytningsvy](assets/sparkline.png)
 
    * Tryck på en punkt i ett miniatyrdiagram för att se data som hör till den punkten på raden.
 
-   * En tabell inkluderas för att visa data med dimensioner som lagts till i rutan. Tryck på nedpilen för att välja mått. Om ingen dimension har lagts till i rutan visas diagramdata i tabellen.
+   * En tabell inkluderas för att visa data med dimensioner som har lagts till i rutan. Tryck på nedpilen för att välja mått. Om ingen dimension har lagts till i rutan visas diagramdata i tabellen.
 
 1. Om du vill ändra datumintervall för styrkortet trycker du på datumhuvudet och väljer den primära kombination och den kombination av datumintervall som du vill visa.
 
@@ -97,7 +97,7 @@ Ytterligare information om plattor:
 
 ## Ändra appinställningar
 
-Om du vill ändra inställningarna trycker du på **[!UICONTROL Preferences]** som visas ovan. I inställningarna kan du aktivera biometrisk inloggning eller ställa in programmet för mörkt läge enligt nedan:
+Om du vill ändra inställningarna trycker du på alternativet **[!UICONTROL Preferences]** ovan. I inställningarna kan du aktivera biometrisk inloggning eller ställa in programmet för mörkt läge enligt nedan:
 
 ![Mörkt läge](assets/darkmode.png)
 
@@ -114,4 +114,4 @@ Kontrollera att chefsanvändaren kan logga in på rätt Adobe Analytics-instans 
 
 >[!IMPORTANT]
 >
->Från och med oktober 2020 kommer Adobe gradvis att lansera en serie förbättringar för att optimera prestandan för appen&quot;Adobe Analytics dashboards&quot;. Dessa förbättringar handlar om att cachelagra historiska analysdata som används för att fylla i styrkort med datum (exklusive den aktuella dagen). Dessa data cachas i upp till 24 timmar i ett säkert Microsoft Azure-molnlagringskonto. Kontakta kontoteamet på Adobe om du vill avanmäla dig från dessa prestandaförbättringar.
+>Från och med oktober 2020 kommer Adobe gradvis att lansera en rad förbättringar för att optimera prestandan för appen&quot;Adobe Analytics dashboards&quot;. Dessa förbättringar handlar om att cachelagra historiska analysdata som används för att fylla i styrkort med datum (exklusive den aktuella dagen). Dessa data cachas i upp till 24 timmar i ett säkert Microsoft Azure-molnlagringskonto. Kontakta kontoteamet på Adobe om du vill avanmäla dig från dessa prestandaförbättringar.

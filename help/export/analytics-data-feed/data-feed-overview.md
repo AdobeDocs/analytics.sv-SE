@@ -1,5 +1,5 @@
 ---
-description: Data som samlas in från webbplatser, mobilappar eller överförs med hjälp av webbtjänste-API:er eller datakällor behandlas och lagras i Adobe Data warehouse. Dessa råa klickströmsdata utgör den datauppsättning som används av Adobe Analytics.
+description: Data som samlas in från webbplatser, mobilappar eller överförs med webbtjänste-API:er eller datakällor, bearbetas och lagras i Adobe Data Warehouse. Dessa råa klickströmsdata utgör den datauppsättning som används av Adobe Analytics.
 keywords: klickström;datafeed;datafeed;datafeed
 title: Översikt över Analytics Data Feed
 feature: Data Feeds
@@ -30,9 +30,9 @@ Följande resurser hjälper dig att förstå det grundläggande arbetsflödet f�
 
 * [Bästa praxis för dataflöden](/help/export/analytics-data-feed/data-feeds-best-practices.md): Bästa tillvägagångssätt för att skapa och hantera dataflöden.
 * [Skapa en datafeed](create-feed.md): Teknisk information för att skapa en datafeed, förklara enskilda fält mer i detalj
-* [Hantera dataflöden](df-manage-feeds.md): Läs mer om navigering i dataflödesgränssnittet
+* [Hantera dataflöden](df-manage-feeds.md): Läs mer om hur du navigerar i datafeedgränssnittet
 * [Innehåll i datafeed](c-df-contents/datafeeds-contents.md): Förstå vad som finns i den komprimerade filen <!-- Is this still the output users can download from the destination? I aske Jun. -->
-* [Datakolumdefinitioner](c-df-contents/datafeeds-reference.md): En omfattande lista med alla tillgängliga kolumner.
+* [Datakolumndefinitioner](c-df-contents/datafeeds-reference.md): En omfattande lista över alla tillgängliga kolumner.
 * Video som navigerar i datafeedgränssnittet:
 
   >[!VIDEO](https://video.tv.adobe.com/v/25452/?quality=12)

@@ -16,7 +16,7 @@ I den här guiden presenteras vanliga rapporttyper som lär dig viktiga koncept 
 
 Både Google Analytics och Adobe Analytics är kraftfulla plattformar som ger värdefulla insikter om webbplatsens resultat. De har en egen bearbetningsarkitektur och ett eget användargränssnitt, vilket ger varje plattform unika fördelar. Den här guiden är utformad för att hjälpa en användare som har erfarenhet av Google Analytics att kommunicera med Adobe Analytics.
 
-I Adobe Analytics är det viktigaste sättet att hämta grundläggande rapporter efter inloggning på Adobe Experience Cloud att använda **Analysis Workspace**. Med den vänstra menyn kan användaren dra och släppa komponenter för att skapa en egen rapport. Det ger större frihet att uppfylla de exakta rapporteringsbehoven. Användare som har erfarenhet av att skapa kontrollpaneler för Google Analytics och anpassade rapporter kanske tycker att den här layouten är bekant.
+I Adobe Analytics är det främsta sättet att hämta grundläggande rapporter efter inloggning på Adobe Experience Cloud att använda **Analysis Workspace**. Med den vänstra menyn kan användaren dra och släppa komponenter för att skapa en egen rapport. Det ger större frihet att uppfylla de exakta rapporteringsbehoven. Användare som har erfarenhet av att skapa kontrollpaneler för Google Analytics och anpassade rapporter kanske tycker att den här layouten är bekant.
 
 ## Rekommenderad utbildningsväg
 
@@ -24,7 +24,7 @@ Adobe rekommenderar att du börjar med grunderna i att hämta rapportdata:
 
 * [Skapa en grundläggande rapport i Analysis Workspace för GA-användare](reports/create-report.md)
 
-När du känner till komponenterna i [!UICONTROL Analysis Workspace]kan du lära dig att återskapa de flesta rapporter med rätt komponenter.
+När du känner till komponenter i [!UICONTROL Analysis Workspace] kan du lära dig att återskapa de flesta rapporter med rätt komponenter.
 
 * [Skapa realtidsrapporter i Adobe Analytics](reports/realtime-reports.md)
 * [Skapa målgruppsrapporter i Adobe Analytics](reports/audience-reports.md)

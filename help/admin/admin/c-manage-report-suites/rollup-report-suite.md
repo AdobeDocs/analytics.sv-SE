@@ -15,23 +15,23 @@ ht-degree: 0%
 
 En global rapportserie samlar in data från alla domäner och appar som organisationen äger. Implementeringen kräver att alla bildbegäranden skickas till en enda rapportserie.
 
-Adobe rekommenderar att man i de flesta fall genomför en global rapportserie. Se &quot;[Överväganden för globala rapportsviter](https://experienceleague.adobe.com/docs/analytics/implementation/prepare/global-rs.html)&quot; för fördelarna med att implementera en global rapportserie.
+Adobe rekommenderar att man i de flesta fall genomför en global rapportserie. Se [Överväganden för den globala rapportsviten](https://experienceleague.adobe.com/docs/analytics/implementation/prepare/global-rs.html) för fördelarna med att implementera en global rapportserie.
 
-Du kan tillhandahålla delmängder av företagets globala rapportsvitsdata till olika slutanvändare med hjälp av *taggning för flera programsviter* och *virtuell rapportsvit* metoder:
+Du kan tillhandahålla deluppsättningar av företagets globala rapportsvitsdata till olika slutanvändare med hjälp av taggningen *multi-suite* och *Virtual Report Suite* :
 
-* **Taggar för flera programsviter**: Med taggar för flera programsviter kan du skicka bildbegäranden inte bara till en global rapportsvit utan även till enskilda underordnade rapportsviter. De globala rapportdata dedupliceras i alla rapportsviter.
+* **Taggar för flera programsviter**: Med taggning för flera programsviter kan du skicka bildbegäranden inte bara till en global rapportsvit utan även till enskilda underordnade rapportsviter. De globala rapportdata dedupliceras i alla rapportsviter.
 
   Du kan till exempel samla in alla data i en global rapportserie och även skapa sekundära rapportsviter baserade på varumärke, region eller annan differentiator. De olika teamen i företaget kan sedan fokusera på data i de rapportsviter som är relevanta för dem.
 
-  Om du vill använda flera svittaggar implementerar du underordnade rapportsviter och en global rapportserie som innehåller alla data från de underordnade. Spårningskoden för dina webbsidor och appar inkluderar Report Suite ID (RSID) för den globala rapportsviten och även RSID för de tillämpliga underordnande rapportsviterna.<!-- Wording/be more specific? And include any links? -->
+  Om du vill använda flera svittaggar implementerar du underordnade rapportsviter och en global rapportserie som innehåller alla data från de underordnade. Spårningskoden för dina webbsidor och appar inkluderar Report Suite ID (RSID) för den globala rapportsviten och även RSID:n för de tillämpliga underordnade rapportsviterna.<!-- Wording/be more specific? And include any links? -->
 
   Ett separat serveranrop görs till varje rapportssvit i bildbegäran. Anropen till de underordnade rapportsviterna är sekundära anrop.
 
-* **Virtuell rapportsvit**: A [virtuell rapportsvit](/help/components/vrs/vrs-about.md) är en fråga om angivna segment som samlats in i en global rapportserie och som är tillgängliga för angivna användargrupper. Med virtuella rapportsviter kan du strukturera rapportelement för olika slutanvändare utan att behöva använda flera svittaggar, vilket undviker sekundära serveranrop.
+* **Virtuellt rapportpaket**: En [virtuell rapportsvit](/help/components/vrs/vrs-about.md) är en fråga om angivna segment som samlats in i en global rapportsvit och som är tillgängliga för angivna användargrupper. Med virtuella rapportsviter kan du strukturera rapportelement för olika slutanvändare utan att behöva använda flera svittaggar, vilket undviker sekundära serveranrop.
 
-  Om du vill använda virtuella rapportsviter implementerar du en global rapportsvit och tolkar sedan data för att skapa virtuella rapportsviter med specifika segment och med specifika gruppbehörigheter. Du kan skapa virtuella rapportsviter i Virtual Report Suites-hanteraren ([!UICONTROL Components] > [!UICONTROL Virtual report suites]). Se &quot;[Arbetsflöde för virtuella rapportsviter](/help/components/vrs/c-workflow-vrs/vrs-workflow.md)&quot; för mer information.
+  Om du vill använda virtuella rapportsviter implementerar du en global rapportsvit och tolkar sedan data för att skapa virtuella rapportsviter med specifika segment och med specifika gruppbehörigheter. Du kan skapa virtuella rapportsviter i Virtual Report Suites-hanteraren ([!UICONTROL Components] > [!UICONTROL Virtual report suites]). Mer information finns i [Arbetsflödet för den virtuella rapportsviten](/help/components/vrs/c-workflow-vrs/vrs-workflow.md).
 
-Att använda virtuella rapportsviter i stället för taggning i flera sviter är ofta en bra metod, men virtuella rapportsviter har vissa begränsningar. Se &quot;[Virtuella rapportsviter och taggar för flera programsviter](/help/components/vrs/vrs-considerations.md)&quot; för att avgöra vilken rapportsviter som är det bästa valet för era affärsbehov. En detaljerad jämförelse av virtuella rapportsviter och taggningsfunktioner för flera sviter finns i &quot;[Virtuella rapportsviter jämfört med märkning för flera programsviter](/help/components/vrs/vrs-about.md#section_317E4D21CCD74BC38166D2F57D214F78).&quot;
+Att använda virtuella rapportsviter i stället för taggning i flera sviter är ofta en bra metod, men virtuella rapportsviter har vissa begränsningar. Se [Virtuella rapportsviter och taggningsöverväganden för flera programsviter](/help/components/vrs/vrs-considerations.md) för att ta reda på vilken rapportritmetod som är det bästa valet för ditt företags behov. En detaljerad jämförelse av virtuella rapportsviter och taggningsfunktioner för flera sviter finns i [Virtuella rapportsviter jämfört med taggning för flera sviter](/help/components/vrs/vrs-about.md#section_317E4D21CCD74BC38166D2F57D214F78).
 
 <!---## Rollup reports
 

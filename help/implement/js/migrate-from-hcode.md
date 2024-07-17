@@ -13,28 +13,28 @@ ht-degree: 0%
 
 # Migrera till AppMeasurement för JavaScript
 
-Om H-koden fortfarande används i implementeringen rekommenderar Adobe starkt migrering till den senaste versionen av AppMeasurementet. Implementera analyser via [taggar i Adobe Experience Platform](../launch/overview.md) rekommenderas, men en uppdaterad JavaScript-implementering kan användas.
+Om H-koden fortfarande används i implementeringen rekommenderar Adobe starkt migrering till den senaste versionen av AppMeasurementet. Vi rekommenderar att Analytics implementeras via [taggar i Adobe Experience Platform](../launch/overview.md), men en uppdaterad JavaScript-implementering kan användas.
 
 Följande märkbara ändringar finns i AppMeasurementet jämfört med H-koden:
 
 * 3-7x snabbare än H Code.
 * Ljusare än H-koden - 21 kB okomprimerad jämfört med H-koden, som är 33 kB okomprimerad.
-* Biblioteket och sidkoden kan distribueras inuti `<head>` -tagg.
+* Biblioteket och sidkoden kan distribueras inuti taggen `<head>`.
 * Befintlig H-kod på sidnivå är kompatibel med AppMeasurementet.
 * Biblioteket innehåller inbyggda verktyg för att hämta frågeparametrar, läsa och skriva cookies och utföra avancerad länkspårning.
-* Biblioteket stöder inte dynamiska kontokonfigurationsvariabler (inklusive `dynamicAccountSelection`, `dynamicAccountMatch`och `dynamicAccountList`).
+* Biblioteket stöder inte dynamiska kontokonfigurationsvariabler (inklusive `dynamicAccountSelection`, `dynamicAccountMatch` och `dynamicAccountList`).
 
 I följande steg beskrivs ett typiskt migreringsarbetsflöde.
 
-1. **Hämta den nya AppMeasurementet**: Du kommer åt den nya filen genom att logga in på Adobe Analytics och sedan gå till Admin > All admin > Code manager. Den hämtade komprimerade filen innehåller en miniatyrbild `AppMeasurement.js` , tillsammans med Media- och Integrate-moduler.
-1. **Kopiera `s_code.js` anpassning till`AppMeasurement.js`**: Flytta all kod före `DO NOT ALTER ANYTHING BELOW THIS LINE` avsnitt i `s_code.js` till början av `AppMeasurement.js`.
-1. **Uppdatera alla plugin-program**: Kontrollera att du använder den senaste versionen av varje plugin-program som finns i din `s_code.js` -fil. I det här steget ingår medie- och integreringsmodulerna.
-1. **Distribuera filen AppMeasurement.js**: Ladda upp `AppMeasurement.js` till webbservern.
-1. **Uppdatera skriptreferenser till att peka`AppMeasurement.js`**: Kontrollera att alla sidor refererar `AppMeasurement.js` i stället för `s_code.js`.
+1. **Hämta den nya filen för AppMeasurementet**: Du kommer åt den nya filen genom att logga in på Adobe Analytics och sedan gå till Admin > Alla administratörer > Kodhanteraren. Den hämtade komprimerade filen innehåller en minifierad `AppMeasurement.js`-fil tillsammans med medie- och integreringsmoduler.
+1. **Kopiera dina `s_code.js` anpassningar till`AppMeasurement.js`**: Flytta all kod före `DO NOT ALTER ANYTHING BELOW THIS LINE` -avsnittet i `s_code.js` till början av `AppMeasurement.js`.
+1. **Uppdatera alla plugin-program**: Kontrollera att du använder den senaste versionen av alla plugin-program som finns i `s_code.js`-filen. I det här steget ingår medie- och integreringsmodulerna.
+1. **Distribuera filen AppMeasurement.js**: Överför filen `AppMeasurement.js` till webbservern.
+1. **Uppdatera skriptreferenser så att de pekar på`AppMeasurement.js`**: Se till att alla sidor refererar till `AppMeasurement.js` i stället för `s_code.js`.
 
 ## Exempel på måttkod
 
-En typisk `AppMeasurement.js` -fil. Kontrollera att konfigurationsvariablerna är angivna ovanför `doPlugins` funktion.
+En typisk `AppMeasurement.js`-fil. Kontrollera att konfigurationsvariablerna är inställda ovanför funktionen `doPlugins`.
 
 ```js
 // Initialize AppMeasurement
@@ -89,4 +89,4 @@ s.t();
 </script>
 ```
 
-Se till att du även har tagit med en referens till `AppMeasurement.js` och `VisitorAPI.js` på varje sida. Se [JavaScript-implementering](/help/implement/js/overview.md) för mer information.
+Kontrollera att du även har tagit med en referens till `AppMeasurement.js` och `VisitorAPI.js` på varje sida. Mer information finns i [JavaScript-implementering](/help/implement/js/overview.md).

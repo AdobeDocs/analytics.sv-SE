@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Paneler - översikt
 
-A [!UICONTROL panel] är en samling tabeller och visualiseringar. Du kommer åt panelerna från den övre vänstra ikonen i Workspace eller en [tom panel](blank-panel.md). Paneler är användbara när du vill ordna dina projekt efter tidsperioder, rapportsviter eller användningsfall för analyser.
+En [!UICONTROL panel] är en samling tabeller och visualiseringar. Du kommer åt panelerna från den övre vänstra ikonen i Workspace eller en [tom panel](blank-panel.md). Paneler är användbara när du vill ordna dina projekt efter tidsperioder, rapportsviter eller användningsfall för analyser.
 
 ## Paneltyper
 
@@ -24,22 +24,22 @@ Följande paneltyper är tillgängliga i Analysis Workspace:
 | [Tom panel](blank-panel.md) | Välj bland tillgängliga paneler och visualiseringar för att starta analysen. |
 | [Panelen Snabbinsikter](quickinsight.md) | Bygg snabbt ett frihandsbord och en medföljande visualisering för att analysera och hitta insikter snabbare. |
 | [Analyser för målpanelen](a4t-panel.md) | Analysera Target-aktiviteter och -upplevelser i Analysis Workspace. |
-| [Attributionspanelen](attribution.md) | Jämför och visualisera snabbt valfritt antal attribueringsmodeller med alla mått och konverteringsvärden. |
+| [Panelen Attribution](attribution.md) | Jämför och visualisera snabbt valfritt antal attribueringsmodeller med alla mått och konverteringsvärden. |
 | [Frihandspanel](freeform-panel.md) | Utför obegränsade jämförelser och uppdelningar och lägg sedan till visualiseringar för att berätta en utförlig databerättelse. |
-| [Panelen Mediegenomsnitt för miniatyrmålgrupp](average-minute-audience-panel.md) | Analysera den genomsnittliga minuten-publiken över tiden, med information om toppvyer och möjlighet att dela upp och jämföra. |
+| [Panelen Minut-målgrupp för mediemedel](average-minute-audience-panel.md) | Analysera den genomsnittliga minuten-publiken över tiden, med information om toppvyer och möjlighet att dela upp och jämföra. |
 | [Panelen för samtidiga medieanvändare](media-concurrent-viewers.md) | Analysera samtidiga tittare över tid, med information om maximal samtidighet och möjlighet att dela upp och jämföra. |
-| [Panelen Medieuppspelning - tidsfördröjning](/help/analyze/analysis-workspace/c-panels/media-playback-time-spent.md) | Analysera samtidiga tittare över tid, med information om maximal samtidighet och möjlighet att dela upp och jämföra. |
-| [Segmentjämförelsepanel](c-segment-comparison/segment-comparison.md) | Jämför snabbt två segment över alla datapunkter för att automatiskt hitta relevanta skillnader. |
+| [Panelen Tidsuppgift för mediauppspelning](/help/analyze/analysis-workspace/c-panels/media-playback-time-spent.md) | Analysera samtidiga tittare över tid, med information om maximal samtidighet och möjlighet att dela upp och jämföra. |
+| [Panelen Segmentjämförelse](c-segment-comparison/segment-comparison.md) | Jämför snabbt två segment över alla datapunkter för att automatiskt hitta relevanta skillnader. |
 
 ![](assets/panel-overview.png)
 
-[!UICONTROL Quick Insights], [!UICONTROL Blank] och [!UICONTROL Freeform] paneler är bra att använda för att starta analysen, medan [!UICONTROL Analytics for Target], [!UICONTROL Attribution], [!UICONTROL Media Concurrent Viewers] och [!UICONTROL Segment Comparison] Utnyttja mer avancerade analyser. A `"+"` -knappen är tillgänglig i projekt så att du kan lägga till tomma paneler när som helst.
+[!UICONTROL Quick Insights]-, [!UICONTROL Blank]- och [!UICONTROL Freeform]-panelerna är bra platser för att starta analysen, medan [!UICONTROL Analytics for Target], [!UICONTROL Attribution], [!UICONTROL Media Concurrent Viewers] och [!UICONTROL Segment Comparison] passar in på mer avancerade analyser. En `"+"`-knapp är tillgänglig i projekt, så du kan när som helst lägga till tomma paneler.
 
-Standardstartpanelen är [!UICONTROL Freeform] men du kan göra [tom panel](/help/analyze/analysis-workspace/c-panels/blank-panel.md) även din standard.
+Standardstartpanelen är panelen [!UICONTROL Freeform], men du kan göra den [tomma panelen](/help/analyze/analysis-workspace/c-panels/blank-panel.md) till standardpanel.
 
 ## Rapportsvit {#report-suite}
 
-Tabeller och visualiseringar i en panel hämtar data från [!UICONTROL report suite] i panelens övre högra hörn. Rapportsviten avgör också vilka komponenter som är tillgängliga i den vänstra listen. Inom ett projekt kan du använda ett eller [många rapportsviter](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/multiple-report-suites.html) beroende på dina analysexempel. Om du vill använda en enda rapportserie för alla paneler i ett projekt, **högerklicka på panelhuvudet > Tillämpa rapportsviten på alla paneler**.
+Tabeller och visualiseringar i en panel hämtar data från [!UICONTROL report suite] som är markerad i panelens övre högra hörn. Rapportsviten avgör också vilka komponenter som är tillgängliga i den vänstra listen. Inom ett projekt kan du använda en eller [många rapportsviter](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/multiple-report-suites.html) beroende på dina analysexempel. Om du vill använda en enda rapportserie för alla paneler i ett projekt **högerklickar du på panelhuvudet > Använd rapportserie för alla paneler**.
 
 Listan med rapportsviter sorteras efter relevans, som Adobe definierar utifrån hur nyligen och ofta sviten har använts av den aktuella användaren och hur ofta sviten används i organisationen.
 
@@ -84,15 +84,15 @@ Statiska rullgardinssegment kan också användas för att konsolidera många pro
 
 #### Skapa statiska rullgardinssegment
 
-* För rullgardinsmenyer som använder dimensionsobjekt väljer du en dimension från den vänstra listen och släpper den i panelens listruta **samtidigt som du håller`[Shift]`**. Detta skapar ett nedrullningsbart segment med alla dimensionsobjekt som är kopplade till den dimensionen.
+* För nedrullningsbara segment som använder dimensionsobjekt väljer du en dimension från den vänstra listen och släpper den i panelens listruta **medan du håller ned`[Shift]`**. Detta skapar ett nedrullningsbart segment med alla dimensionsobjekt som är kopplade till den dimensionen.
 
-  Om du vill att listrutesegmentet endast ska innehålla specifika dimensionsobjekt som är kopplade till en dimension, klickar du på högerpilsikonen bredvid önskad dimension i den vänstra listen. Den här åtgärden visar alla tillgängliga dimensionsobjekt. Välj flera dimensionsobjekt från den här listan med `[Shift + Click]` eller `[Ctrl + Click]`och sedan släppa dem i panelens dropzone **samtidigt som du håller** `[Shift]`.
+  Om du vill att listrutesegmentet endast ska innehålla specifika dimensionsobjekt som är kopplade till en dimension, klickar du på högerpilsikonen bredvid önskad dimension i den vänstra listen. Den här åtgärden visar alla tillgängliga dimensionsobjekt. Välj flera dimensionsobjekt från den här listan med `[Shift + Click]` eller `[Ctrl + Click]` och släpp dem sedan i panelens dropzone **samtidigt som du håller ned** `[Shift]`.
 
-* För rullgardinsmenyer som använder en enda komponenttyp (t.ex. bara dimensioner, eller endast segment, eller endast mått), väljer du flera objekt av samma typ i den vänstra listen med `[Shift + Click]` eller `[Ctrl + Click]`och sedan släppa dem i panelens dropzone **samtidigt som du håller`[Shift]`**.
+* För rullgardinsmenyer som använder en enda komponenttyp (t.ex. bara dimensioner, eller bara segment, eller endast mått), väljer du flera objekt av samma typ i den vänstra listen med `[Shift + Click]` eller `[Ctrl + Click]` och släpper dem sedan i panelens dropzone **medan du håller`[Shift]`**.
 
   Ett enskilt nedrullningsbart segment skapas med de komponenter som du har valt.
 
-* För nedrullningsbara segment som använder en blandning av komponenttyper (till exempel 2 mätvärden och 3 filter) väljer du flera komponenter med `[Shift + Click]` eller `[Ctrl + Click]`. Släpp markeringen i panelens dropzone **samtidigt som du håller`[Shift]`**. I det här sammanhanget behandlas alla komponenttyper som separata nedrullningsbara segment. Om du till exempel inkluderar både mått och dimensionsobjekt i markeringen skapas två separata nedrullningsbara segment: ett nedrullningsbart segment innehåller dimensionsobjekt och det andra innehåller mått.
+* För rullgardinsmenyer som använder en blandning av komponenttyper (till exempel 2 mätvärden och 3 filter) väljer du flera komponenter med `[Shift + Click]` eller `[Ctrl + Click]`. Släpp markeringen i panelens dropzone **medan du håller ned`[Shift]`**. I det här sammanhanget behandlas alla komponenttyper som separata nedrullningsbara segment. Om du till exempel inkluderar både mått och dimensionsobjekt i markeringen skapas två separata nedrullningsbara segment: ett nedrullningsbart segment innehåller dimensionsobjekt och det andra innehåller mått.
 
   ![Panelfönstret med segmentfältet Mobilkunder tillgängligt för att släppa ett statiskt nedrullningsbart segment. ](assets/create-dropdown.png)
 
@@ -103,7 +103,7 @@ Om du högerklickar på ett nedrullningsbart segment finns följande alternativ:
 * **[!UICONTROL Add label]**: När du lägger till ett nedrullningsbart segment i ett projekt ställs en etikett automatiskt in på komponentnamnet. Om du tar bort etiketten kan du lägga till den igen med det här alternativet.
 * **[!UICONTROL Require selection]**: Kräver att ett segment är inställt på panelen.
 
-[Se videon](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-panels-to-organize-your-analysis-workspace-projects.html) om du vill veta mer om hur du lägger till nedrullningsbara filter i ett projekt.
+[Titta på videon](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-panels-to-organize-your-analysis-workspace-projects.html) om du vill veta mer om hur du lägger till nedrullningsbara filter i ditt projekt.
 
 #### Använda statiska rullgardinssegment
 
@@ -119,7 +119,7 @@ Använd den nedrullningsbara segmentmenyn på något av följande sätt för att
 
 ### Dynamiska rullgardinsmenyer
 
-Med dynamiska listrutesegment kan du fastställa tillgängliga värden baserat på data i panelens rapporteringsintervall och värden i andra nedrullningsbara segment. Du kan till exempel skapa två dynamiska listrutor med [Länder](/help/components/dimensions/countries.md) dimension och [Städer](/help/components/dimensions/cities.md) dimension. När du väljer ett land i dialogrutan [!UICONTROL Countries] nedrullningsbar lista [!UICONTROL Cities] listrutan justeras dynamiskt till att endast visa städer i det landet.
+Med dynamiska listrutesegment kan du fastställa tillgängliga värden baserat på data i panelens rapporteringsintervall och värden i andra nedrullningsbara segment. Du kan till exempel skapa två dynamiska listrutor med dimensionen [Länder](/help/components/dimensions/countries.md) och [Städer](/help/components/dimensions/cities.md) . När du väljer ett land i listrutan [!UICONTROL Countries] justeras listrutan [!UICONTROL Cities] dynamiskt så att den bara visar städer i det landet.
 
 Samma koncept gäller för alla dimensioner. Endast dimensionsobjekt som visas inom panelens datumintervall och markerade segment visas. Dimension som är markerad i statiska rullgardinssegment påverkar tillgängliga värden i dynamiska rullgardinssegment. Inverteringen är emellertid inte true. De Dimensioner som markeras i dynamiska rullgardinssegment påverkar inte tillgängliga värden i statiska rullgardinssegment.
 
@@ -127,9 +127,9 @@ Manuellt urval av dimensionsobjekt är tillgängligt om du förväntar dig att e
 
 Så här skapar du ett dynamiskt nedrullningsbart segment:
 
-* Dra och släpp en dimension till panelens dropzone **samtidigt som du håller`[Shift]`**.
+* Dra och släpp en dimension till panelens dropzone **medan du håller ned`[Shift]`**.
 * Dynamiska rullgardinsmenyer är inte tillgängliga för mått, segment eller datumintervall.
-* Högerklicka på ett nedrullningsbart segment och välj **[!UICONTROL Delete dropdown]** för att ta bort den.
+* Högerklicka på ett nedrullningsbart segment och välj **[!UICONTROL Delete dropdown]** för att ta bort det.
 
 Om du högerklickar på ett dynamiskt nedrullningsbart filter finns samma alternativ som för statiska nedrullningsbara filter.
 

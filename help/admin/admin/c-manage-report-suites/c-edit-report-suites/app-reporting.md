@@ -22,17 +22,17 @@ Med gränssnittet App Reporting kan du aktivera livscykeldimensioner och mätvä
 
 ## [!UICONTROL App Reports]
 
-[!UICONTROL App Reports] Dimensioner och mätvärden används för följande syften:
+[!UICONTROL App Reports] dimensioner och mått används för följande syften:
 
-* **Förvärv**: Spåra refererande URL:er för nedladdningskampanjer för appar.
-* **Livscykel**: Grundnivå för rapportering som tillhandahålls genom mätning som skickas vid varje programstart.
+* **Anskaffning**: Spåra refererande URL:er för nedladdningskampanjer för appar.
+* **Livscykel**: Grundnivån för rapportering som tillhandahålls genom mätning som skickas vid varje programstart.
 * **Programåtgärder**: Rapporter och sökvägar baserade på åtgärder i appen.
-* **Livstidsvärde**: Förstå hur användarna får upp värde över tid med hjälp av nyckeltal för appar (t.ex. inköp, annonsvyer, videokompletteringar, sociala resurser, fotoöverföringar).
-* **Timed Events**: Mät hur lång tid det tar (i appen och total tid) mellan viktiga programåtgärder (till exempel tid före första köpet).
+* **Livstidsvärde**: Förstå hur användare får upp värde över tiden med hjälp av nyckeltal för appar (t.ex. köp, annonsvyer, videoslutföranden, sociala resurser, fotoöverföringar).
+* **Timed Events**: Mät hur lång tid som förflyter (i appen och total tid) mellan viktiga programåtgärder (till exempel tid före första köp).
 
-När du aktiverar [!UICONTROL App Reports]är följande dimensioner tillgängliga:
+När du aktiverar [!UICONTROL App Reports] är följande dimensioner tillgängliga:
 
-* [!UICONTROL Action Name] (med [Post](/help/components/dimensions/entry-dimensions.md) och [Avsluta](/help/components/dimensions/exit-dimensions.md) mått)
+* [!UICONTROL Action Name] (med dimensionerna [Entry](/help/components/dimensions/entry-dimensions.md) och [Exit](/help/components/dimensions/exit-dimensions.md))
 * [!UICONTROL App Id]
 * [!UICONTROL Acquisition Content]
 * [!UICONTROL Acquisition Medium]
@@ -63,18 +63,18 @@ Följande mått är tillgängliga:
 
 ## [!UICONTROL Location Tracking]
 
-[!UICONTROL Location Tracking] Dimensionerna används för följande syften:
+[!UICONTROL Location Tracking] dimensioner används för följande syften:
 
 * Spåra latitud- och longituddata
 * Identifiera, skapa och visualisera specifika intressepunkter. Intressepunkter måste definieras i den mobila SDK-konfigurationsfilen.
 * Spåra bluetooth-fyrar (UUID, major, minor och närhet).
 
-När du aktiverar [!UICONTROL Location Tracking]är följande dimensioner tillgängliga:
+När du aktiverar [!UICONTROL Location Tracking] är följande dimensioner tillgängliga:
 
-* [!UICONTROL Beacon Major] (med [Post](/help/components/dimensions/entry-dimensions.md) och [Avsluta](/help/components/dimensions/exit-dimensions.md) mått)
-* [!UICONTROL Beacon Minor] (med [Post](/help/components/dimensions/entry-dimensions.md) och [Avsluta](/help/components/dimensions/exit-dimensions.md) mått)
-* [!UICONTROL Beacon Proximity] (med [Post](/help/components/dimensions/entry-dimensions.md) och [Avsluta](/help/components/dimensions/exit-dimensions.md) mått)
-* [!UICONTROL Beacon UUID] (med [Post](/help/components/dimensions/entry-dimensions.md) och [Avsluta](/help/components/dimensions/exit-dimensions.md) mått)
+* [!UICONTROL Beacon Major] (med dimensionerna [Entry](/help/components/dimensions/entry-dimensions.md) och [Exit](/help/components/dimensions/exit-dimensions.md))
+* [!UICONTROL Beacon Minor] (med dimensionerna [Entry](/help/components/dimensions/entry-dimensions.md) och [Exit](/help/components/dimensions/exit-dimensions.md))
+* [!UICONTROL Beacon Proximity] (med dimensionerna [Entry](/help/components/dimensions/entry-dimensions.md) och [Exit](/help/components/dimensions/exit-dimensions.md))
+* [!UICONTROL Beacon UUID] (med dimensionerna [Entry](/help/components/dimensions/entry-dimensions.md) och [Exit](/help/components/dimensions/exit-dimensions.md))
 * [!UICONTROL Location (down to 10 km)]
 * [!UICONTROL Location (down to 100 m)]
 * [!UICONTROL Location (down to 1 m)]
@@ -84,14 +84,14 @@ När du aktiverar [!UICONTROL Location Tracking]är följande dimensioner tillg�
 
 ## [!UICONTROL Voice and Chatbots]
 
-[!UICONTROL Voice and Chatbots] mått och mätvärden gör att du kan mäta röstassistenter som Alexa och Google Home. Det gör det också möjligt att mäta chattbottar som vuxits hemma. Mätningsegenskaperna är:
+Med [!UICONTROL Voice and Chatbots] dimensioner och mätvärden kan du mäta röstassistenter som Alexa eller Google Home. Det gör det också möjligt att mäta chattbottar som vuxits hemma. Mätningsegenskaperna är:
 
 * **Livscykel**: Grundnivå för rapportering för alla program, t.ex. antal starter och plattformstyp.
-* **Konversationer**: Mäter metod, svar och andra mått och mått som hör till konversationen.
+* **Konversationer**: Mäter återgivningar, svar och andra mått och mått som hör till konversationen.
 
-När du aktiverar [!UICONTROL Voice and Chatbots]är följande dimensioner tillgängliga:
+När du aktiverar [!UICONTROL Voice and Chatbots] är följande dimensioner tillgängliga:
 
-* [!UICONTROL Voice Device Capabilities] (med [Post](/help/components/dimensions/entry-dimensions.md) och [Avsluta](/help/components/dimensions/exit-dimensions.md) mått)
+* [!UICONTROL Voice Device Capabilities] (med dimensionerna [Entry](/help/components/dimensions/entry-dimensions.md) och [Exit](/help/components/dimensions/exit-dimensions.md))
 * [!UICONTROL Voice Authentication]
 * [!UICONTROL Voice Error Type]
 * [!UICONTROL Voice Intent]
@@ -108,4 +108,4 @@ Följande mått är tillgängliga:
 
 Äldre rapportering innebär att träffar som genereras när en app finns i bakgrunden behandlas som vanliga förgrundsträffar. De visas i rapporter och påverkar attribueringen. Denna äldre konfiguration är vanligtvis önskvärd för att vara konsekvent med tidigare implementeringar.
 
-Adobe rekommenderar att äldre rapportering inaktiveras så att bakgrundstötarna inte syns. Om du vill ta med bakgrundsträffar i analysen kan du aktivera [Virtuell rapportsvit](/help/components/vrs/vrs-about.md) inställning **[!UICONTROL Include background hits]**.
+Adobe rekommenderar att äldre rapportering inaktiveras så att bakgrundstötarna inte syns. Om du vill ta med bakgrundsträffar i din analys kan du aktivera inställningen [Virtual Report Suite](/help/components/vrs/vrs-about.md) **[!UICONTROL Include background hits]**.

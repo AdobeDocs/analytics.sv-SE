@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Felsöka sessioner i Adobe Analytics
 
-Den här sidan handlar om felsökningssessioner, vilket innebär att du kan logga in utan att behöva logga in. Om du har problem med att logga in på Adobe Analytics finns mer information i [Felsöka inloggning på Adobe Analytics](troubleshoot-login.md).
+Den här sidan handlar om felsökningssessioner, vilket innebär att du kan logga in utan att behöva logga in. Om du har problem med att logga in på Adobe Analytics kan du läsa [Felsöka inloggning på Adobe Analytics](troubleshoot-login.md).
 
 Nästan alla sessionsbaserade problem kommer från en organisations anpassade företagsnätverk. Om du kan logga in på Adobe Analytics men inte kan vara inloggad kan du använda den här artikeln för att fastställa orsaken.
 
@@ -24,7 +24,7 @@ Använd inloggningsuppgifterna för Experience Cloud på en enhet utanför före
 
 ## Problem på grund av proxy {#proxy}
 
-Adobe använder en auktoriseringshuvud när begäranden görs till Adobe. Vissa proxies, till exempel Edge Secure Web Gateway (tidigare Bluecoat), tar bort viktig auktoriseringsrubrikinformation som används av Adobe Analytics. När Adobe inte ser auktoriseringshuvudet förfaller sessionen.
+Adobe använder en auktoriseringshuvud när begäranden görs till Adobe. Vissa proxies, till exempel Edge Secure Web Gateway (tidigare Bluecoat), tar bort viktig auktoriseringsinformation som används av Adobe Analytics. När Adobe inte ser auktoriseringshuvudet förfaller sessionen.
 
 För att lösa detta rekommenderar Adobe att man samarbetar med IT-avdelningen i er organisation för att tillåta behörighetshuvudet via er organisations proxy.
 

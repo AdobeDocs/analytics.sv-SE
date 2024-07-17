@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# Mallar (*nu kallade rapporter*)
+# Mallar (*kallas nu rapporter*)
 
-Mallar används inte längre som en term för färdigbyggda Workspace-projekt. Rapporterna hänvisar till allt som är färdigbyggt av Adobe, t.ex. rapporter i Rapporter och analyser (slutet på livscykeln) och färdigbyggda rapporter i Workspace. Men termen *mallar* används ibland för att hänvisa till mallar eller rapporter som ditt företag har skapat. Egna mallar kallas *anpassade företagsrapporter*.
+Mallar används inte längre som term för färdigbyggda Workspace-projekt. Rapporterna hänvisar till allt som är färdigbyggt av Adobe, t.ex. rapporter i Rapporter och analyser (avbrutna) och färdigbyggda rapporter i Workspace. Termen *mallar* används ibland för att referera till mallar eller rapporter som ditt företag har skapat. Anpassade mallar kallas *anpassade företagsrapporter*.
 
 Mer information om hur du skapar Workspace-rapporter och skapar anpassade företagsrapporter finns i följande dokumentation:
 
@@ -21,5 +21,5 @@ Mer information om hur du skapar Workspace-rapporter och skapar anpassade föret
 |---|---| 
 | Läs mer om startsidan för projektledaren och den uppdaterade rapportmenyn | [Adobe Analytics landningssida](/help/analyze/landing.md) |
 | Skapa en anpassad företagsrapport | [Skapa och hantera företagsrapporter](/help/analyze/analysis-workspace/reports/create-company-reports.md) |
-| Visa en lista med färdiga rapporter eller hitta mallarnas plats (kallas nu *Rapporter*) | [Använd färdiga rapporter](/help/analyze/analysis-workspace/reports/use-reports.md) |
+| Visa en lista med färdiga rapporter eller hitta platsen för mallar (kallas nu *Rapporter*) | [Använd färdiga rapporter](/help/analyze/analysis-workspace/reports/use-reports.md) |
 | Lär dig navigera på fliken Rapporter | [Navigera på fliken Rapporter](/help/analyze/landing.md#navigate-reports) |

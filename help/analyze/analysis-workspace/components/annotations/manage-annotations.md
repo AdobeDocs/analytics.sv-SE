@@ -6,14 +6,14 @@ feature: Annotations
 exl-id: 37a538cc-9ea7-4cb1-8ee8-e8e474ad5b08
 source-git-commit: 4f0bd39b64535be8ba55e97d65177f6ef291ef6c
 workflow-type: tm+mt
-source-wordcount: '532'
+source-wordcount: '533'
 ht-degree: 0%
 
 ---
 
 # Hantera anteckningar
 
-The [!UICONTROL Annotations manager] visar alla anteckningar som du äger eller som har delats med dig. Projektspecifika anteckningar visas inte här. Du kan använda det här gränssnittet för att dela, filtrera, tagga, kopiera, ta bort och favoritanteckningar. Administratörer kan hantera och godkänna anteckningar.
+I [!UICONTROL Annotations manager] visas alla anteckningar som du äger eller som har delats med dig. Projektspecifika anteckningar visas inte här. Du kan använda det här gränssnittet för att dela, filtrera, tagga, kopiera, ta bort och favoritanteckningar. Administratörer kan hantera och godkänna anteckningar.
 
 **[!UICONTROL Components]** > **[!UICONTROL Annotations]**
 
@@ -37,7 +37,7 @@ The [!UICONTROL Annotations manager] visar alla anteckningar som du äger eller 
 Att redigera en anteckning innebär att du kan justera datumintervall, färger, omfång eller om det gäller alla rapportsviter eller projekt. Du kan redigera anteckningar på två sätt:
 
 * Håll pekaren över anteckningen i ett linjediagram och klicka på pennikonen i pekaren.
-* I [!UICONTROL Annotations Manager]klickar du på anteckningens titel.
+* Klicka på anteckningens titel i [!UICONTROL Annotations Manager].
 
 Båda dessa alternativ ger dig tillbaka i [!UICONTROL Annotations Builder]. Där kan du göra nödvändiga justeringar och spara den nya versionen.
 
@@ -67,6 +67,6 @@ Ytterligare alternativ är tillgängliga när du väljer minst en anteckning:
 | [!UICONTROL Rename] | Om du ändrar namn på en anteckning ändras namnet i alla projekt som den används i. |
 | [!UICONTROL Copy] | Skapar en distinkt kopia med sitt eget antecknings-ID, men med samma namn och definition. |
 | [!UICONTROL Export to CSV] | Exportera anteckningsdefinitionen till en CSV-fil. |
-| [!UICONTROL Filter] (vänster räl) | Filtrera efter taggar, rapportsvit, ägare och andra filter (Min, Godkänd, Favoriter, Delad med mig och Visa alla). |
+| [!UICONTROL Filter] (vänster ratt) | Filtrera efter taggar, rapportsvit, ägare och andra filter (Min, Godkänd, Favoriter, Delad med mig och Visa alla). |
 
 {style="table-layout:auto"}

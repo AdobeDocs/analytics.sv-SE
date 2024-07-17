@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Intelligenta aviseringar - användningsfall
 
-Du kan skapa intelligenta varningar enligt beskrivningen i [Skapa aviseringar](/help/analyze/analysis-workspace/c-intelligent-alerts/alert-builder.md).
+Du kan skapa intelligenta aviseringar enligt beskrivningen i [Skapa aviseringar](/help/analyze/analysis-workspace/c-intelligent-alerts/alert-builder.md).
 
 I följande avsnitt visas exempel på användningsområden som du kan använda när du skapar varningar.
 

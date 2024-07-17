@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Översikt över företagsinställningar
 
-The [!UICONTROL Company Settings] kan du konfigurera inställningar som gäller för alla rapportsviter som hanteras av din organisation.
+På sidan [!UICONTROL Company Settings] kan du konfigurera inställningar som gäller för alla rapportsviter som hanteras av din organisation.
 
 **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL All admin]** > **[!UICONTROL Company settings]**
 

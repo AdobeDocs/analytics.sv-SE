@@ -5,14 +5,14 @@ feature: Calculated Metrics
 exl-id: a6d0c2ad-864d-4cab-84e0-dd6ce0a4c6b1
 source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
 workflow-type: tm+mt
-source-wordcount: '2906'
+source-wordcount: '2844'
 ht-degree: 1%
 
 ---
 
 # Referens: avancerade funktioner
 
-Få åtkomst till dessa funktioner genom att kontrollera **[!UICONTROL Show Advanced]** i **[!UICONTROL Functions]** nedrullningsbar lista.
+Du får åtkomst till dessa funktioner genom att kontrollera **[!UICONTROL Show Advanced]** i listrutan **[!UICONTROL Functions]**.
 
 ## Tabellfunktioner kontra radfunktioner {#section_8977BE40A47E4ED79EB543A9703A4905}
 
@@ -69,7 +69,7 @@ Så här kan måttet&quot;Approximate Customers&quot; användas vid rapportering
 
 ### Uniques överskreds {#section_9C583858A9F94FF7BA054D1043194BAA}
 
-Precis som Count() och RowCount(), tillämpas Distinct() för ungefärligt antal [Gränsvärden för ’uniques överstigit’](https://experienceleague.adobe.com/docs/analytics/technotes/low-traffic.html). Om gränsen för antal unika tecken överskrids inom en viss månad för en dimension räknas värdet som 1 dimensionspost.
+Precis som Count() och RowCount(), gäller gränsen [&quot;uniques överstigit&quot; ](https://experienceleague.adobe.com/docs/analytics/technotes/low-traffic.html) för ungefärligt antal distinkt(). Om gränsen för antal unika tecken överskrids inom en viss månad för en dimension räknas värdet som 1 dimensionspost.
 
 ### Jämföra räkningsfunktioner {#section_440FB8FB44374459B2C6AE2DA504FC0B}
 
@@ -87,7 +87,7 @@ ACOS(metric)
 
 | Argument |  |
 |---|---|
-| *mått* | cosinus för vinkeln som du vill ha från -1 till 1. |
+| *metrisk* | cosinus för vinkeln som du vill ha från -1 till 1. |
 
 ## Båge sinus (rad) {#concept_90F00DEC46BA47F8A21493647D9668CD}
 
@@ -99,7 +99,7 @@ ASIN(metric)
 
 | Argument |  |
 |---|---|
-| *mått* | cosinus för vinkeln som du vill ha från -1 till 1. |
+| *metrisk* | cosinus för vinkeln som du vill ha från -1 till 1. |
 
 ## Bågtangent (rad) {#concept_3408520673774A10998E9BD8B909E90C}
 
@@ -111,9 +111,9 @@ ATAN(metric)
 
 | Argument |  |
 |---|---|
-| *mått* | cosinus för vinkeln som du vill ha från -1 till 1. |
+| *metrisk* | cosinus för vinkeln som du vill ha från -1 till 1. |
 
-## Exponentiell regression: Förutsedd Y (rad) {#concept_25615693312B4A7AB09A2921083502AD}
+## Exponentiell regression: Förväntat Y (rad) {#concept_25615693312B4A7AB09A2921083502AD}
 
 Beräknar de förväntade y-värdena (metric_Y), med tanke på de kända x-värdena (metric_X), med hjälp av metoden &quot;minst fyrkanter&quot; för att beräkna raden för bästa passform baserat på .
 
@@ -153,7 +153,7 @@ cdf_z( -3 ) ? 0.0013499
 
 ## Tak (rad) {#concept_A14CDB1E419B4AA18D335E5BA2548346}
 
-Returnerar det minsta heltalet som inte är mindre än ett givet värde. Om du till exempel vill undvika att rapportera valutadecimaler för intäkter och en produkt har 569,34 USD använder du formeln CEILING() *Intäkter*) för att avrunda intäkterna upp till närmaste dollar, eller 570 dollar.
+Returnerar det minsta heltalet som inte är mindre än ett givet värde. Om du till exempel vill undvika att rapportera valutadecimaler för intäkter och en produkt har 569,34 USD använder du formeln CEILING( *Intäkter*) för att avrunda intäkter upp till närmaste dollar, eller 570 USD.
 
 ```
 CEILING(metric)
@@ -161,7 +161,7 @@ CEILING(metric)
 
 | Argument | Beskrivning |
 |---|---|
-| *mått* | Det mätvärde som du vill runda av. |
+| *metrisk* | Det mätvärde som du vill runda av. |
 
 ## Cosine (rad) {#concept_DD07AA1FB08145DC89B69D704545FD0A}
 
@@ -173,7 +173,7 @@ COS(metric)
 
 | Argument | Beskrivning |
 |---|---|
-| *mått* | Vinkeln i radianer som du vill ha cosinus för. |
+| *metrisk* | Vinkeln i radianer som du vill ha cosinus för. |
 
 ## Kubrot {#concept_BD93EFA45DF7447A8F839E1CA5B5F795}
 
@@ -185,7 +185,7 @@ CBRT(metric)
 
 | Argument | Beskrivning |
 |---|---|
-| *mått* | Måttet som du vill ha kubroten för. |
+| *metrisk* | Måttet som du vill ha kubroten för. |
 
 ## Kumulativ {#concept_3D3347797B6344CE88B394C3E39318ED}
 
@@ -210,7 +210,7 @@ Om N &lt;= 0 används alla föregående rader. Eftersom den ordnas efter dimensi
 
 >[!NOTE]
 >
->Detta fungerar inte som du kan förvänta dig med tariffvärden som intäkter/besökare: i stället för att summera intäkterna under det senaste N:et och summera besökarna under det senaste N:et och sedan dela upp dem. Använd i stället
+>Detta fungerar inte som du kan förvänta dig med prisstatistik som intäkter/besökare: det är ett genomsnitt av priserna i stället för att summera intäkterna under det senaste N:et och sedan summera besökarna under det senaste N:et och sedan dela upp dem. Använd i stället
 
 ```
 cumul(revenue)/cumul(visitor)
@@ -222,7 +222,7 @@ Returnerar objekt som matchar exakt för ett numeriskt värde eller strängvärd
 
 ## Exponentiell regression_korrelationskoefficient (tabell) {#concept_C18BBFA43C1A499293290DF49566D8D8}
 
-Returnerar korrelationskoefficienten, *r*, mellan två måttkolumner ( *metric_A* och *metrisk_B*) för regressionsekvationen.
+Returnerar korrelationskoefficienten, *r*, mellan två metriska kolumner ( *metric_A* och *metric_B*) för regressionsekvationen.
 
 ```
 CORREL.EXP(metric_X, metric_Y)
@@ -230,12 +230,12 @@ CORREL.EXP(metric_X, metric_Y)
 
 | Argument | Beskrivning |
 |---|---|
-| *metric_X* | Ett mätvärde som du vill korrelera med *metric_Y*. |
-| *metric_Y* | Ett mätvärde som du vill korrelera med *metric_X*. |
+| *metric_X* | Ett mått som du vill korrelera med *metric_Y*. |
+| *metric_Y* | Ett mått som du vill korrelera med *metric_X*. |
 
 ## Exponentiell regression: Intercept (tabell) {#concept_0047206C827841AD936A3BE58EEE1514}
 
-Returnerar spärren, *b*, mellan två måttkolumner ( *metric_X* och *metric_Y*) för
+Returnerar spärren *b* mellan två måttkolumner ( *metric_X* och *metric_Y*) för
 
 ```
 INTERCEPT.EXP(metric_X, metric_Y)
@@ -248,7 +248,7 @@ INTERCEPT.EXP(metric_X, metric_Y)
 
 ## Exponentiell regression: Lutning (tabell) {#concept_230991B0371E44308C52853EFA656F04}
 
-Returnerar lutningen, *a*, mellan två måttkolumner ( *metric_X* och *metric_Y*) för .
+Returnerar lutningen *a* mellan två måttkolumner ( *metric_X* och *metric_Y*) för .
 
 ```
 SLOPE.EXP(metric_X, metric_Y)
@@ -261,7 +261,7 @@ SLOPE.EXP(metric_X, metric_Y)
 
 ## Våning (rad) {#concept_D368150EC3684077B284EE471463FC31}
 
-Returnerar det största heltalet som inte är större än ett givet värde. Om du till exempel vill undvika att rapportera valutadecimaler för intäkter och en produkt har 569,34 USD använder du formeln FLOOR() *Intäkter*) för att avrunda intäkterna till närmaste dollar, eller 569 dollar.
+Returnerar det största heltalet som inte är större än ett givet värde. Om du till exempel vill undvika att rapportera valutadecimaler för intäkter och en produkt har 569,34 USD, använder du formeln FLOOR( *Intäkter*) för att avrunda intäkten nedåt till närmaste dollar, eller 569 USD.
 
 ```
 FLOOR(metric)
@@ -269,7 +269,7 @@ FLOOR(metric)
 
 | Argument | Beskrivning |
 |---|---|
-| *mått* | Det mätvärde som du vill runda av. |
+| *metrisk* | Det mätvärde som du vill runda av. |
 
 ## Större än {#concept_A83734A0C0C14646B76D2CC5E677C644}
 
@@ -289,7 +289,7 @@ COSH(metric)
 
 | Argument | Beskrivning |
 |---|---|
-| *mått* | Vinkeln i radianer som du vill hitta hyperbolisk cosinus för. |
+| *metrisk* | Vinkeln i radianer som du vill hitta hyperbolisk cosinus för. |
 
 ## Hyperbolisk sinus (rad) {#concept_96230731600C45E3A4E823FE155ABA85}
 
@@ -301,7 +301,7 @@ SINH(metric)
 
 | Argument | Beskrivning |
 |---|---|
-| *mått* | Vinkeln i radianer som du vill hitta hyperbolisk sinus för. |
+| *metrisk* | Vinkeln i radianer som du vill hitta hyperbolisk sinus för. |
 
 ## Hyperbolisk tangens (rad) {#concept_BD249013732F462B9863629D142BCA6A}
 
@@ -313,7 +313,7 @@ TANH(metric)
 
 | Argument | Beskrivning |
 |---|---|
-| *mått* | Vinkeln i radianer som du vill hitta hyperbolisk tangent för. |
+| *metrisk* | Vinkeln i radianer som du vill hitta hyperbolisk tangent för. |
 
 ## IF (rad) {#concept_6BF0F3EAF3EF42C288AEC9A79806C48E}
 
@@ -326,8 +326,8 @@ IF(logical_test, [value_if_true], [value_if_false])
 | Argument | Beskrivning |
 |---|---|
 | *logical_test* | Obligatoriskt. Alla värden eller uttryck som kan utvärderas till TRUE eller FALSE. |
-| *[value_if_true]* | Värdet som du vill returnera om *logical_test* argument utvärderas till TRUE. (Detta argument är som standard 0 om det inte inkluderas.) |
-| *[value_if_false]* | Värdet som du vill returnera om *logical_test* argument utvärderas till FALSE. (Detta argument är som standard 0 om det inte inkluderas.) |
+| *[value_if_true]* | Värdet som du vill returnera om argumentet *logical_test* utvärderas till TRUE. (Det här argumentet är som standard 0 om det inte inkluderas.) |
+| *[value_if_false]* | Värdet som du vill returnera om argumentet *logical_test* utvärderas till FALSE. (Det här argumentet är som standard 0 om det inte inkluderas.) |
 
 ## Mindre än {#concept_A4A85C0FDF944AACAD4B8B55699D1B11}
 
@@ -363,11 +363,11 @@ LOG10(metric)
 
 | Argument | Beskrivning |
 |---|---|
-| *mått* | Det positiva realtal som du vill ha bas-10-logaritmen för. |
+| *metrisk* | Det positiva realtal som du vill ha bas-10-logaritmen för. |
 
 ## Loggregression: Korrelationskoefficient (tabell) {#concept_F3EB35016B754E74BE41766E46FDC246}
 
-Returnerar korrelationskoefficienten, *r*, mellan två måttkolumner (*metric_X* och *metric_Y*) för regressionsekvationen [!DNL Y = a ln(X) + b]. Den beräknas med CORREL-ekvationen.
+Returnerar korrelationskoefficienten, *r*, mellan två metriska kolumner (*metric_X* och *metric_Y*) för regressionsekvationen [!DNL Y = a ln(X) + b]. Den beräknas med CORREL-ekvationen.
 
 ```
 CORREL.LOG(metric_X,metric_Y)
@@ -375,12 +375,12 @@ CORREL.LOG(metric_X,metric_Y)
 
 | Argument | Beskrivning |
 |---|---|
-| *metric_X* | Ett mätvärde som du vill korrelera med *metric_Y*. |
-| *metric_Y* | Ett mätvärde som du vill korrelera med *metric_X*. |
+| *metric_X* | Ett mått som du vill korrelera med *metric_Y*. |
+| *metric_Y* | Ett mått som du vill korrelera med *metric_X*. |
 
 ## Loggregression: Intercept (tabell) {#concept_75A3282EDF54417897063DC26D4FA363}
 
-Returnerar spärren *b* som regressionen med minst fyrkanter mellan två måttkolumner (*metric_X* och *metric_Y*) för regressionsekvationen [!DNL Y = a ln(X) + b]. Den beräknas med INTERCEPT-ekvationen.
+Returnerar spärren *b* som regressionen mellan två metriska kolumner (*metric_X* och *metric_Y*) för regressionsekvationen [!DNL Y = a ln(X) + b]. Den beräknas med INTERCEPT-ekvationen.
 
 ```
 INTERCEPT.LOG(metric_X, metric_Y)
@@ -391,11 +391,11 @@ INTERCEPT.LOG(metric_X, metric_Y)
 | *metric_X* | Ett mätvärde som du vill ange som oberoende data. |
 | *metric_Y* | Ett mätvärde som du vill ange som beroende data. |
 
-## Loggregression: Förutsedd Y (rad) {#concept_5F3A9263BBB84E6098160A4DFB9E3607}
+## Loggregression: Förväntat Y (rad) {#concept_5F3A9263BBB84E6098160A4DFB9E3607}
 
-Beräknar den förväntade [!DNL y] värden (metric_Y), med de kända [!DNL x] värden (metric_X) som använder metoden&quot;minst fyrkanter&quot; för att beräkna raden för bästa passning baserat på [!DNL Y = a ln(X) + b]. Den beräknas med hjälp av ESTIMATE-ekvationen.
+Beräknar de förväntade [!DNL y] värdena (metric_Y) utifrån de kända [!DNL x] värdena (metric_X) med hjälp av metoden&quot;minst fyrkanter&quot; för att beräkna raden för bästa passning baserat på [!DNL Y = a ln(X) + b]. Den beräknas med hjälp av ESTIMATE-ekvationen.
 
-I regressionsanalys beräknar den här funktionen den förväntade [!DNL y] värden (*metric_Y*), eftersom [!DNL x] värden (*metric_X*) med hjälp av logaritmen för att beräkna raden som bäst passar för regressionsekvationen [!DNL Y = a ln(X) + b]. The [!DNL a] värden motsvarar varje x-värde, och [!DNL b] är ett konstant värde.
+I regressionsanalys beräknar den här funktionen de förväntade [!DNL y] värdena (*metric_Y*), med tanke på de kända [!DNL x] värdena (*metric_X*) med hjälp av logaritmen för att beräkna raden som bäst passar för regressionsekvationen [!DNL Y = a ln(X) + b]. [!DNL a]-värdena motsvarar varje x-värde och [!DNL b] är ett konstant värde.
 
 ```
 ESTIMATE.LOG(metric_X, metric_Y)
@@ -406,9 +406,9 @@ ESTIMATE.LOG(metric_X, metric_Y)
 | *metric_X* | Ett mätvärde som du vill ange som oberoende data. |
 | *metric_Y* | Ett mätvärde som du vill ange som beroende data. |
 
-## Loggregression: Lutning (tabell) {#concept_B291EFBE121446A6B3B07B262BBD4EF2}
+## Loggregression: Långsam (tabell) {#concept_B291EFBE121446A6B3B07B262BBD4EF2}
 
-Returnerar lutningen, *a*, mellan två måttkolumner (*metric_X* och *metric_Y*) för regressionsekvationen [!DNL Y = a ln(X) + b]. Den beräknas med hjälp av SLOPE-ekvationen.
+Returnerar lutningen *a* mellan två måttkolumner (*metric_X* och *metric_Y*) för regressionsekvationen [!DNL Y = a ln(X) + b]. Den beräknas med hjälp av SLOPE-ekvationen.
 
 ```
 SLOPE.LOG(metric_A, metric_B)
@@ -417,7 +417,7 @@ SLOPE.LOG(metric_A, metric_B)
 | Argument | Beskrivning |
 |---|---|
 | *metric_A* | Ett mätvärde som du vill ange som oberoende data. |
-| *metrisk_B* | Ett mätvärde som du vill ange som beroende data. |
+| *metric_B* | Ett mätvärde som du vill ange som beroende data. |
 
 ## Naturlig logg {#concept_D3BE148A9B84412F8CA61734EB35FF9E}
 
@@ -429,7 +429,7 @@ LN(metric)
 
 | Argument | Beskrivning |
 |---|---|
-| *mått* | Det positiva realtal som du vill ha den naturliga logaritmen för. |
+| *metrisk* | Det positiva realtal som du vill ha den naturliga logaritmen för. |
 
 ## NOT {#concept_BD954C455A8148A3904A301EC4DC821E}
 
@@ -443,7 +443,7 @@ NOT(logical)
 |---|---|
 | *logisk* | Obligatoriskt. Ett värde eller uttryck som kan utvärderas till TRUE eller FALSE. |
 
-Om du använder NOT måste du känna till om uttrycken (&lt;, >, =, &lt;> osv.) returnera 0- eller 1-värden.
+Om du använder NOT måste du känna till om uttrycken (&lt;, >, =, &lt;> osv.) returnerar 0- eller 1-värden.
 
 ## Inte lika med {#concept_EC010B7A9D2049099114A382D662FC16}
 
@@ -474,9 +474,9 @@ Returnerar konstanten PI, 3,14159265358979, med 15 siffror.
 PI()
 ```
 
-The [!DNL PI]funktionen har inga argument.
+Funktionen [!DNL PI] har inga argument.
 
-## Strömregression: Korrelationskoefficient (tabell) {#concept_91EC2CFB5433494F9E0F4FDD66C63766}
+## Effektregression: Korrelationskoefficient (tabell) {#concept_91EC2CFB5433494F9E0F4FDD66C63766}
 
 Returnerar korrelationskoefficienten, *r*, mellan två måttkolumner (*metric_X* och *metric_Y*) för [!DNL Y = b*X].
 
@@ -486,12 +486,12 @@ CORREL.POWER(metric_X, metric_Y)
 
 | Argument | Beskrivning |
 |---|---|
-| *metric_X* | Ett mätvärde som du vill korrelera med *metric_Y*. |
-| *metric_Y* | Ett mätvärde som du vill korrelera med *metric_X*. |
+| *metric_X* | Ett mått som du vill korrelera med *metric_Y*. |
+| *metric_Y* | Ett mått som du vill korrelera med *metric_X*. |
 
-## Strömregression: Intercept (tabell) {#concept_7781C85597D64D578E19B212BDD1764F}
+## Strömregression: Skärpning (tabell) {#concept_7781C85597D64D578E19B212BDD1764F}
 
-Returnerar spärren, *b*, mellan två måttkolumner (*metric_X* och *metric_Y*) för [!DNL Y = b*X].
+Returnerar spärren *b* mellan två måttkolumner (*metric_X* och *metric_Y*) för [!DNL Y = b*X].
 
 ```
  INTERCEPT.POWER(metric_X, metric_Y)
@@ -502,9 +502,9 @@ Returnerar spärren, *b*, mellan två måttkolumner (*metric_X* och *metric_Y*) 
 | *metric_X* | Ett mätvärde som du vill ange som oberoende data. |
 | *metric_Y* | Ett mätvärde som du vill ange som beroende data. |
 
-## Strömregression: Förutsedd Y (rad) {#concept_CD652C0A921D4EFBA8F180CB8E486B18}
+## Strömregression: Förväntat Y (rad) {#concept_CD652C0A921D4EFBA8F180CB8E486B18}
 
-Beräknar den förväntade [!DNL y] värden ( [!DNL metric_Y]), eftersom [!DNL x] värden ( [!DNL metric_X]) med hjälp av metoden &quot;minst fyrkanter&quot; för att beräkna raden som bäst passar för [!DNL Y = b*X].
+Beräknar de förväntade [!DNL y] värdena ( [!DNL metric_Y]), med hänsyn till kända [!DNL x]-värden ( [!DNL metric_X]), med hjälp av metoden &quot;minst fyrkanter&quot; för att beräkna raden som passar bäst för [!DNL Y = b*X].
 
 ```
  ESTIMATE.POWER(metric_X, metric_Y)
@@ -515,9 +515,9 @@ Beräknar den förväntade [!DNL y] värden ( [!DNL metric_Y]), eftersom [!DNL x
 | *metric_X* | Ett mätvärde som du vill ange som oberoende data. |
 | *metric_Y* | Ett mätvärde som du vill ange som beroende data. |
 
-## Strömregression: Lutning (tabell) {#concept_5B9E71B989234694BEB5EEF29148766C}
+## Strömregression: Långsam (tabell) {#concept_5B9E71B989234694BEB5EEF29148766C}
 
-Returnerar lutningen, *a*, mellan två måttkolumner (*metric_X* och *metric_Y*) för [!DNL Y = b*X].
+Returnerar lutningen *a* mellan två måttkolumner (*metric_X* och *metric_Y*) för [!DNL Y = b*X].
 
 ```
 SLOPE.POWER(metric_X, metric_Y)
@@ -538,12 +538,12 @@ CORREL.QUADRATIC(metric_X, metric_Y)
 
 | Argument | Beskrivning |
 |---|---|
-| *metric_X* | Ett mätvärde som du vill korrelera med *metric_Y*. |
-| *metric_Y* | Ett mätvärde som du vill korrelera med *metric_X*. |
+| *metric_X* | Ett mått som du vill korrelera med *metric_Y*. |
+| *metric_Y* | Ett mått som du vill korrelera med *metric_X*. |
 
 ## Kvadratisk regression: Intercept (tabell) {#concept_69DC0FD6D38C40E9876F1FD08EC0E4DE}
 
-Returnerar spärren, *b*, mellan två måttkolumner (*metric_X* och *metric_Y*) för [!DNL Y=(a*X+b)]****.
+Returnerar spärren *b* mellan två måttkolumner (*metric_X* och *metric_Y*) för [!DNL Y=(a*X+b)]****.
 
 ```
 INTERCEPT.POWER(metric_X, metric_Y)
@@ -554,9 +554,9 @@ INTERCEPT.POWER(metric_X, metric_Y)
 | *metric_X* | Ett mätvärde som du vill ange som oberoende data. |
 | *metric_Y* | Ett mätvärde som du vill ange som beroende data. |
 
-## Kvadratisk regression: Förutsedd Y (rad) {#concept_2F1ED70B1BDE4664A61CC09D30C39CBB}
+## Kvadratisk regression: Förväntat Y (rad) {#concept_2F1ED70B1BDE4664A61CC09D30C39CBB}
 
-Beräknar den förväntade [!DNL y] värden (metric_Y), med de kända [!DNL x] värden (metric_X) som använder metoden med minst fyrkanter för att beräkna raden för bästa passning med [!DNL Y=(a*X+b)]**** .
+Beräknar de förväntade [!DNL y] värdena (metric_Y) utifrån de kända [!DNL x] värdena (metric_X) med hjälp av metoden med minst fyrkanter för att beräkna raden för bästa passform med hjälp av [!DNL Y=(a*X+b)]****.
 
 ```
 ESTIMATE.QUADRATIC(metric_A, metric_B)
@@ -565,11 +565,11 @@ ESTIMATE.QUADRATIC(metric_A, metric_B)
 | Argument | Beskrivning |
 |---|---|
 | *metric_A* | Ett mätvärde som du vill ange som oberoende data. |
-| *metrisk_B* | Ett mätvärde som du vill ange som beroende data. |
+| *metric_B* | Ett mätvärde som du vill ange som beroende data. |
 
-## Kvadratisk regression: Lutning (tabell) {#concept_0023321DA8E84E6D9BCB06883CA41645}
+## Kvadratisk regression: Långsam (tabell) {#concept_0023321DA8E84E6D9BCB06883CA41645}
 
-Returnerar lutningen, *a*, mellan två måttkolumner (*metric_X* och metric_Y) för [!DNL Y=(a*X+b)]****.
+Returnerar lutningen *a* mellan två måttkolumner (*metric_X* och metric_Y) för [!DNL Y=(a*X+b)]***.
 
 ```
 SLOPE.QUADRATIC(metric_X, metric_Y)
@@ -590,12 +590,12 @@ CORREL.RECIPROCAL(metric_X, metric_Y)
 
 | Argument | Beskrivning |
 |---|---|
-| *metric_X* | Ett mätvärde som du vill korrelera med *metric_Y*. |
-| *metric_Y* | Ett mätvärde som du vill korrelera med *metric_X*. |
+| *metric_X* | Ett mått som du vill korrelera med *metric_Y*. |
+| *metric_Y* | Ett mått som du vill korrelera med *metric_X*. |
 
 ## Ömsesidig regression: Intercept (tabell) {#concept_2DA45B5C69F140EC987649D2C88F19B3}
 
-Returnerar spärren, *b*, mellan två måttkolumner (*metric_X* och *metric_Y*) för [!DNL Y = a/X+b].
+Returnerar spärren *b* mellan två måttkolumner (*metric_X* och *metric_Y*) för [!DNL Y = a/X+b].
 
 ```
 INTERCEPT.RECIPROCAL(metric_A, metric_B)
@@ -606,9 +606,9 @@ INTERCEPT.RECIPROCAL(metric_A, metric_B)
 | *metric_X* | Ett mätvärde som du vill ange som oberoende data. |
 | *metric_Y* | Ett mätvärde som du vill ange som beroende data. |
 
-## Ömsesidig regression: Förutsedd Y (rad) {#concept_2CF4B8F417A84FE98050FE488E227DF8}
+## Ömsesidig regression: Förväntat Y (rad) {#concept_2CF4B8F417A84FE98050FE488E227DF8}
 
-Beräknar den förväntade [!DNL y] värden (metric_Y), med de kända [!DNL x] värden (metric_X) som använder metoden med minst fyrkanter för att beräkna raden för bästa passning med [!DNL Y = a/X+b].
+Beräknar de förväntade [!DNL y] värdena (metric_Y), utifrån de kända [!DNL x] värdena (metric_X) med hjälp av metoden med minst fyrkanter för att beräkna raden för bästa passning med [!DNL Y = a/X+b].
 
 ```
 ESTIMATE.RECIPROCAL(metric_X, metric_Y)
@@ -621,7 +621,7 @@ ESTIMATE.RECIPROCAL(metric_X, metric_Y)
 
 ## Ömsesidig regression: Lutning (tabell) {#concept_8A8B68C9728E42A6BFDC6BD5CBDCCEC5}
 
-Returnerar lutningen, *a*, mellan två måttkolumner (*metric_X* och *metric_Y*) för [!DNL Y = a/X+b].
+Returnerar lutningen *a* mellan två måttkolumner (*metric_X* och *metric_Y*) för [!DNL Y = a/X+b].
 
 ```
 SLOPE.RECIPROCAL(metric_X, metric_Y)
@@ -634,7 +634,7 @@ SLOPE.RECIPROCAL(metric_X, metric_Y)
 
 ## Sinus (rad) {#concept_21C8C3AA835947A28B53A4E756A7451E}
 
-Returnerar sinus för den angivna vinkeln. Om vinkeln är i grader multiplicerar du vinkeln med PI( )/180.
+Returnerar sinus för angiven vinkel. Om vinkeln är i grader multiplicerar du vinkeln med PI( )/180.
 
 ```
 SIN(metric)
@@ -642,7 +642,7 @@ SIN(metric)
 
 | Argument | Beskrivning |
 |---|---|
-| *mått* | Vinkeln i radianer som du vill ha sinus för. |
+| *metrisk* | Vinkeln i radianer som du vill ha sinus för. |
 
 ## T-poäng {#concept_80D2B4CED3D0426896B2412B4FC73BF7}
 
@@ -652,11 +652,11 @@ Alias för Z-poäng, dvs. avvikelsen från medelvärdet dividerat med standardav
 
 Utför ett m-tailed t-test med t-score på kol och n frihetsgrader.
 
-Signaturen är `t_test( x, n, m )`. Under... `m*cdf_t(-abs(x),n)`. (Detta liknar funktionen z-test som körs `m*cdf_z(-abs(x))`.
+Signaturen är `t_test( x, n, m )`. Under anropet anropas bara `m*cdf_t(-abs(x),n)`. (Detta liknar z-test-funktionen som kör `m*cdf_z(-abs(x))`.
 
-Här, `m` är antalet svansen, och `n` är frihetsgrader. Dessa ska vara tal (konstanta för hela rapporten, dvs. inte ändras rad för rad).
+Här är `m` antalet svansar och `n` antalet frihetsgrader. Dessa ska vara tal (konstanta för hela rapporten, dvs. inte ändras rad för rad).
 
-`X` är t-test-värdet och skulle ofta vara en formel (t.ex. zscore) baserad på ett mätresultat och kommer att utvärderas på varje rad.
+`X` är t-test-statistik och skulle ofta vara en formel (t.ex. zscore) baserad på ett mätvärde och kommer att utvärderas på varje rad.
 
 Returvärdet är sannolikheten att se provningsvärdet x med hänsyn till antalet frihetsgrader och antalet svansar.
 
@@ -668,7 +668,7 @@ Returvärdet är sannolikheten att se provningsvärdet x med hänsyn till antale
    t_test( zscore(bouncerate), row-count-1, 2)
    ```
 
-1. Kombinera den med `if` för att ignorera mycket höga eller låga avhoppsfrekvenser och räkna besök på allt annat:
+1. Kombinera den med `if` om du vill ignorera mycket höga eller låga avhoppsfrekvenser och räkna besök för allt annat:
 
    ```
    if ( t_test( z-score(bouncerate), row-count, 2) < 0.01, 0, visits )
@@ -684,7 +684,7 @@ TAN (metric)
 
 | Argument | Beskrivning |
 |---|---|
-| *mått* | Vinkeln i radianer som du vill ha tangenten för. |
+| *metrisk* | Vinkeln i radianer som du vill ha tangenten för. |
 
 ## Z-poäng (rad) {#concept_96BEAC79476C49B899DB7E193A5E7ADD}
 
@@ -694,11 +694,11 @@ Ekvationen för Z-score är:
 
 ![](assets/z_score.png)
 
-där [!DNL x] är råpoängen, [!DNL μ] är medelvärdet av befolkningen, och [!DNL σ] är standardavvikelsen för populationen.
+där [!DNL x] är råpoängen, är [!DNL μ] medelvärdet för populationen och [!DNL σ] är standardavvikelsen för populationen.
 
 >[!NOTE]
 >
->[!DNL μ] (mu) och[!DNL σ] (sigma) beräknas automatiskt utifrån måttet.
+>[!DNL μ] (mu) och [!DNL σ] (sigma) beräknas automatiskt utifrån måttet.
 
 Z-score (metrisk)
 
@@ -711,7 +711,7 @@ Z-score (metrisk)
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <i>mått</i> </td> 
+   <td colname="col1"> <i>metrisk</i> </td> 
    <td colname="col2"> <p> Returnerar värdet för dess första argument som inte är noll. </p> </td> 
   </tr> 
  </tbody> 

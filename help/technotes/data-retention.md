@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Data som samlas in av Adobe Analytics sparas under en viss tidsperiod. Den tid som Adobe lagrar dessa data varierar från kontrakt till kontrakt och beskrivs i en organisations policy för datalagring. Denna policy gäller för själva data, vilket innebär att den påverkar alla analysrapporteringsfunktioner (Analysis Workspace, API för rapportering etc.).
 
-**Standardprincipen för datalagring för Adobe Analytics är 25 månader.** Din organisations lagringspolicy kan vara annorlunda, beroende på avtal.
+**Standarddatalagringsprincipen för Adobe Analytics är 25 månader.** Din organisations lagringspolicy kan vara annorlunda, beroende på kontrakt.
 
 Data som lagras baseras på aktuellt datum och datum/tid för historiska data. Datumet/tiden som spelades in i träffar kan vara ett annat datum/tid än det datum/den tidpunkt då träffarna togs emot av Adobe.
 
@@ -35,7 +35,7 @@ När data överskrider din datalagringspolicy behåller Adobe rätten att ta bor
 
 ## Visa/hantera aktuell datalagringspolicy
 
-Dialogrutan Datastyrning i [!UICONTROL Admin] Verktyg ger en översikt över vilka rapportsviter som har konfigurerats för datastyrning. Här anges också om de har mappats till en Experience Cloud-organisation och om det finns en datalagringspolicy för den här rapportsviten. [Mer info](/help/admin/admin/c-data-governance/an-gdpr-workflow.md)
+Dialogrutan Datastyrning i [!UICONTROL Admin]-verktygen ger en översikt över vilka rapportsviter som har konfigurerats för datastyrning. Här anges också om de har mappats till en Experience Cloud-organisation och om det finns en datalagringspolicy för den här rapportsviten. [Mer information](/help/admin/admin/c-data-governance/an-gdpr-workflow.md)
 
 ## Frågor och svar
 
@@ -53,7 +53,7 @@ Datalagringspolicyn definierar ett rullande datalagringsfönster där fullständ
 
 +++ Kan jag begära en kopia av mina data innan de tas bort?
 
-Ja. Adobe kan tillhandahålla en historisk datapassage av råa data på träffnivå. Se [Dataflöden](/help/export/analytics-data-feed/data-feed-overview.md) i användarhandboken för Exportera om du vill ha mer information. Om du har dataexportkrav som inte omfattas av användargränssnittet kontaktar du kontoteamet på Adobe. Man kan göra speciella anpassningar; kostnaderna kan variera.
+Ja. Adobe kan tillhandahålla en historisk datapassage av råa data på träffnivå. Mer information finns i [Datafeeds](/help/export/analytics-data-feed/data-feed-overview.md) i användarhandboken för Exportera. Om du har dataexportkrav som inte omfattas av användargränssnittet kontaktar du kontoteamet på Adobe. Man kan göra speciella anpassningar; kostnaderna kan variera.
 
 +++
 

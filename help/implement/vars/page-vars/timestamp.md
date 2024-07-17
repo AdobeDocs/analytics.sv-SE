@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # tidsstämpel
 
-The `timestamp` variabeln ställer in tidsstämpeln för träffen för tidsstämpelaktiverade rapportsviter manuellt.
+Variabeln `timestamp` ställer in tidsstämpeln för träffen manuellt för tidsstämpelaktiverade rapportsviter.
 
 >[!WARNING]
 >
@@ -21,7 +21,7 @@ The `timestamp` variabeln ställer in tidsstämpeln för träffen för tidsstäm
 
 ## Tidsstämpla med Web SDK
 
-Tidsstämpeln är [mappas för Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/xdm-var-mapping.html) under XDM-fältet `xdm.timestamp`. Det här fältet har bara stöd för Unix-tid.
+Tidsstämpeln [mappas för Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/xdm-var-mapping.html) under XDM-fältet `xdm.timestamp`. Det här fältet har bara stöd för Unix-tid.
 
 ## Tidsstämpla med Adobe Analytics-tillägget
 
@@ -29,7 +29,7 @@ Det finns inget dedikerat fält i Adobe Analytics-tillägget som kan använda de
 
 ## s.timestamp i AppMeasurementet och den anpassade kodredigeraren för Analytics-tillägget
 
-The `s.timestamp` variabeln är en sträng som innehåller datum och tid för träffen. Giltiga tidsstämpelformat är [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) och [Unix-tid](https://en.wikipedia.org/wiki/Unix_time) på några sekunder.
+Variabeln `s.timestamp` är en sträng som innehåller datum och tid för träffen. Giltiga tidsstämpelformat är [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) och [Unix time](https://en.wikipedia.org/wiki/Unix_time) i sekunder.
 
 ```js
 // Timestamp using ISO 8601
@@ -47,16 +47,16 @@ s.timestamp = new Date().toISOString();
 
 ## ISO 8601-värden
 
-Datum och tid uttryckt i [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) kan ta flera olika former. Adobe stöder inte alla funktioner i ISO 8601.
+Datum och tider som uttrycks i [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) kan ha flera olika former. Adobe stöder inte alla funktioner i ISO 8601.
 
-* Både datum och tid måste anges, åtskilda med `T`.
+* Både datum och tid måste anges, avgränsade med `T`.
 * Timmar och minuter krävs. Sekunder är valfria men rekommenderas.
 * Veckodatum och ordningstal stöds inte.
-* Datumet kan vara i standardformat eller utökat format. Till exempel: `2024-01-01T00:00:00Z` och `20240101T000000Z` är båda giltiga.
+* Datumet kan vara i standardformat eller utökat format. Till exempel är både `2024-01-01T00:00:00Z` och `20240101T000000Z` giltiga.
 * Andel minuter och sekunder är tekniskt giltiga, men bråktalen ignoreras av Adobe.
 * Tidszoner stöds i standardformat och utökat format.
 
-Följande är giltiga ISO 8601-värden i `timestamp` variabel:
+Följande är giltiga ISO 8601-värden i variabeln `timestamp`:
 
 ```text
 2024-01-01T00:00:00+00:00

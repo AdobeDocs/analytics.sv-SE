@@ -12,15 +12,15 @@ ht-degree: 0%
 
 # Identifierat läge
 
-Identifierat tillstånd [dimension](overview.md) är specifikt för [Enhetsövergripande analys](../cda/overview.md) virtuella rapportsviter. Den rapporterar om träffar identifieras (sammanfogas) eller inte av systemet när rapporten körs. Denna dimension är till hjälp när det gäller att förstå hur väl CDA sammanfogar eller&quot;komprimerar&quot; data.
+Det identifierade tillståndet [dimension](overview.md) är specifikt för [virtuella rapportsviter för enhetsanalys](../cda/overview.md). Den rapporterar om träffar identifieras (sammanfogas) eller inte av systemet när rapporten körs. Denna dimension är till hjälp när det gäller att förstå hur väl CDA sammanfogar eller&quot;komprimerar&quot; data.
 
 ## Fyll den här dimensionen med data
 
-Så länge du har [Enhetsövergripande analys](../cda/overview.md) som är konfigurerad för en virtuell rapportsvit fungerar den här dimensionen som den ska.
+Så länge du har [Enhetsövergripande analys](../cda/overview.md) konfigurerad för en virtuell rapportsvit fungerar den här dimensionen som standard.
 
 ## Dimensioner
 
-Dimensionerna innehåller `"Identified"` och `"Unidentified"`.
+Dimensionen innehåller `"Identified"` och `"Unidentified"`.
 
-* **`"Identified"`**: Träffen mappas till en person.
-* **`"Unidentified"`**: Träffen är inte mappad till en person och kan inte mappas med någon attribueringsmetod.
+* **`"Identified"`**: Träffen har mappats till en person.
+* **`"Unidentified"`**: Träffen är inte mappad till en person och kan inte mappas av någon attribueringsmetod.

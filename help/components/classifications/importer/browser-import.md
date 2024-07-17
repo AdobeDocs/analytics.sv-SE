@@ -1,20 +1,20 @@
 ---
 description: Du kan importera (överföra) klassificeringsdata via webbläsaren. Den här metoden begränsar din överföring av klassificeringsdata till en enda rapportserie
-title: Import via webbläsare
+title: Import av webbläsare
 feature: Classifications
 exl-id: 5bef1f6d-9b27-464d-8343-472f300a7437
 source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
 workflow-type: tm+mt
-source-wordcount: '331'
-ht-degree: 3%
+source-wordcount: '332'
+ht-degree: 1%
 
 ---
 
-# Import via webbläsare
+# Import av webbläsare
 
 Du kan importera (överföra) klassificeringsdata via webbläsaren. Den här metoden begränsar din överföring av klassificeringsdata till en enda rapportserie
 
-## Import via webbläsare {#concept_314FB3D5FD5A439B9CFEDE37A3337BA7}
+## Import av webbläsare {#concept_314FB3D5FD5A439B9CFEDE37A3337BA7}
 
 Du kan importera (överföra) klassificeringsdata via webbläsaren. Den här metoden begränsar din överföring av klassificeringsdata till en enda rapportserie
 
@@ -35,9 +35,9 @@ Du kan importera (överföra) klassificeringsdata via webbläsaren. Den här met
 
 1. Klicka på **[!UICONTROL Admin]** > **[!UICONTROL Classification Importer]**.
 1. Klicka på **[!UICONTROL Import File]**.
-1. Konfigurera **[!UICONTROL Browser Import]** fält.
+1. Konfigurera fälten **[!UICONTROL Browser Import]**.
 1. Klicka på **[!UICONTROL Import File]**.
 1. Titta på statusfönstret för att bearbeta meddelanden.
-1. (Villkorligt) Om du har valt **[!UICONTROL Automatically Download Classification File After Upload is Complete]** anger du var du vill lagra den resulterande filen när bearbetningen är klar. Observera att det här alternativet inte är tillgängligt för rapportsviter som har aktiverats för den nya klassificeringsarkitekturen.
+1. (Villkorligt) Om du valde **[!UICONTROL Automatically Download Classification File After Upload is Complete]** anger du var du vill lagra den resulterande filen när bearbetningen är klar. Observera att det här alternativet inte är tillgängligt för rapportsviter som har aktiverats för den nya klassificeringsarkitekturen.
 
 >Om importen lyckas visas omedelbart de ändringar som gjorts i en export. Dataändringar i rapporter tar dock upp till fyra timmar vid användning av en webbläsarimport och upp till 24 timmar vid användning av en FTP-import.

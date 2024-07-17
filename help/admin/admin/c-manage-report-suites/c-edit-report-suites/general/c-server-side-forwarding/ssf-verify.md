@@ -26,7 +26,7 @@ Så här kontrollerar du status för vidarebefordran på serversidan:
 
 >[!CAUTION]
 >
->Om svaret innehåller nyckelvärdepar `"status":"SUCCESS"` eller en 2 x 2-image är vidarebefordran på serversidan * inte* korrekt konfigurerat. Kontrollera att identitetstjänsten är korrekt distribuerad, att du har distribuerat modulen App Measurement, att den tillämpliga rapportsviten har mappats till rätt organisations-ID och att vidarebefordran på serversidan har aktiverats i Analytics Admin Tools.
+>Om svaret innehåller nyckelvärdepar `"status":"SUCCESS"` eller en 2 x 2-bild är vidarebefordran på serversidan * inte* korrekt konfigurerat. Kontrollera att identitetstjänsten är korrekt distribuerad, att du har distribuerat modulen App Measurement, att den tillämpliga rapportsviten har mappats till rätt organisations-ID och att vidarebefordran på serversidan har aktiverats i Analytics Admin Tools.
 
 >[!MORELIKETHIS]
 >

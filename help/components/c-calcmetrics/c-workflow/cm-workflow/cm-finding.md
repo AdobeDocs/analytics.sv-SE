@@ -14,4 +14,4 @@ ht-degree: 0%
 
 Du kan hitta mätvärden i Analysis Workspace på samma sätt som du hittar andra typer av komponenter.
 
-Mer information om hur du snabbt hittar komponenter finns i [Söka, filtrera och sortera komponentlistan](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/components/analysis-workspace-components.html#search%2C-filter%2C-and-sort-the-component-list) in [Komponenter - översikt](/help/analyze/analysis-workspace/components/analysis-workspace-components.md).
+Mer information om hur du snabbt hittar komponenter finns i [Söka, filtrera och sortera komponentlistan](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/components/analysis-workspace-components.html#search%2C-filter%2C-and-sort-the-component-list) i [Komponentöversikt](/help/analyze/analysis-workspace/components/analysis-workspace-components.md).

@@ -16,13 +16,13 @@ ht-degree: 0%
 
 Du kan hantera befintliga aviseringar i Varningshanteraren. Du kan utföra olika hanteringsåtgärder för varningar, som taggning, namnbyte, borttagning med mera.
 
-Varningshanteraren är mycket strukturerad som [Segmenthanteraren](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-manage.html) och [Beräknad måtthanterare](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/cm-manager.html).
+Varningshanteraren är mycket strukturerad som [segmenthanteraren](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-manage.html) och [hanteraren för beräknade värden](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/cm-manager.html).
 
 ## Skapa aviseringar
 
 Så här skapar du aviseringar från Alerts Manager:
 
-1. Välj **[!UICONTROL Components]** > **[!UICONTROL Alerts]** för att få tillgång till Alerts Manager i Adobe Analytics.
+1. Välj **[!UICONTROL Components]** > **[!UICONTROL Alerts]** för att komma åt Alerts Manager i Adobe Analytics.
 
    ![](assets/alert-manager.png)
 
@@ -30,13 +30,13 @@ Så här skapar du aviseringar från Alerts Manager:
 
 1. Välj den varningstyp som motsvarar den varning som du vill skapa:
 
-   * [!UICONTROL **Varning om analysdata**]: En varning som meddelar dig när onormala händelser inträffar i dina data.
+   * [!UICONTROL **Analysdatavarning**]: En avisering som meddelar dig när onormala händelser inträffar i dina data.
 
-     Om du väljer det här alternativet fortsätter du med [Skapa aviseringar](/help/analyze/analysis-workspace/c-intelligent-alerts/alert-builder.md) om du vill ha mer information om hur du skapar varningar.
+     Om du väljer det här alternativet kan du fortsätta med [Skapa aviseringar](/help/analyze/analysis-workspace/c-intelligent-alerts/alert-builder.md) om du vill ha mer information om hur du skapar aviseringar.
 
-   * [!UICONTROL **Användningsvarning för serversamtal**]: En varning som meddelar dig om risken eller förekomsten av en överbelastning i serveranropets förbrukning och åtagandedata.
+   * [!UICONTROL **Varning om användning av serveranrop**]: En varning som meddelar dig om risken eller förekomsten av ett överskott i serveranropets förbrukning och åtagandedata.
 
-     Om du väljer det här alternativet fortsätter du med [Användningsvarningar för serversamtal](/help/admin/admin/c-server-call-usage/scu-alerts.md).
+     Om du väljer det här alternativet fortsätter du med [varningar om användning av serversamtal](/help/admin/admin/c-server-call-usage/scu-alerts.md).
 
      >[!NOTE]
      >
@@ -49,7 +49,7 @@ Så här skapar du aviseringar från Alerts Manager:
 
 Så här hanterar du befintliga aviseringar i Varningshanteraren:
 
-1. Välj **[!UICONTROL Components]** > **[!UICONTROL Alerts]** för att få tillgång till Alerts Manager i Adobe Analytics.
+1. Välj **[!UICONTROL Components]** > **[!UICONTROL Alerts]** för att komma åt Alerts Manager i Adobe Analytics.
 
    ![](assets/alert-manager.png)
 

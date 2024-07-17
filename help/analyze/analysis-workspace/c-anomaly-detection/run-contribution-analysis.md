@@ -13,13 +13,13 @@ ht-degree: 1%
 
 # Kör bidragsanalys
 
-[Bidragsanalys](/help/analyze/analysis-workspace/c-anomaly-detection/anomaly-detection.md#contribution-analysis) är en intensiv maskininlärningsprocess som är utformad för att upptäcka vilka som bidragit till en konstaterad avvikelse i Adobe Analytics. Avsikten är att hjälpa användaren att hitta fokusområden eller möjligheter till ytterligare analys mycket snabbare än vad som annars skulle vara möjligt.
+[Bidragsanalys](/help/analyze/analysis-workspace/c-anomaly-detection/anomaly-detection.md#contribution-analysis) är en intensiv maskininlärningsprocess som utformats för att identifiera medverkande till en iakttagen avvikelse i Adobe Analytics. Avsikten är att hjälpa användaren att hitta fokusområden eller möjligheter till ytterligare analys mycket snabbare än vad som annars skulle vara möjligt.
 
 ## Kör bidragsanalys {#run}
 
 Det finns två sätt att anropa bidragsanalys i ett projekt:
 
-* I en frihandstabell med daglig kornighet högerklickar du på en rad och väljer **[!UICONTROL Run Contribution Analysis]**. Du kan till och med köra det på rader som inte visar några avvikelser.
+* I en friformstabell med daglig granularitet högerklickar du på en rad och väljer **[!UICONTROL Run Contribution Analysis]**. Du kan till och med köra det på rader som inte visar några avvikelser.
 
   >[!NOTE]
   >
@@ -27,28 +27,28 @@ Det finns två sätt att anropa bidragsanalys i ett projekt:
 
   ![](assets/run_ca.png)
 
-* Håll pekaren över en avvikande datapunkt i ett linjediagram. Klicka på **[!UICONTROL Analyze]** länk som visas.
+* Håll pekaren över en avvikande datapunkt i ett linjediagram. Klicka på länken **[!UICONTROL Analyze]** som visas.
 
   ![](assets/contribution-analysis.png)
 
-1. (Valfritt) När du har klickat **[!UICONTROL Run Contribution Analysis]** i antingen linjediagrammet eller en tabell kan du begränsa omfattningen av (och därmed snabba upp) analysen med [exklusive dimensioner](#exclude).
+1. (Valfritt) När du har klickat på **[!UICONTROL Run Contribution Analysis]** i antingen linjediagrammet eller en tabell kan du begränsa omfattningen av (och därmed öka) analysen genom att [utesluta dimensioner](#exclude).
 
 1. Vänta medan din bidragsanalys läses in. Detta kan ta lång tid, beroende på rapportsvitens storlek och antalet dimensioner. Bidragsanalys utför analyser på de 50 000 främsta objekten per dimension.
 1. Analysis Workspace läser sedan in en ny bidragsanalyspanel direkt i projektet.
 
-   * En visualisering som visar antalet **Besök** den dagen.
-   * En gång i månaden **Besök Trend line** för kontext.
-   * **De vanligaste objekten** som bidrog till avvikelsen, sorterade efter [täckningsgrad](/help/analyze/analysis-workspace/c-anomaly-detection/anomaly-detection.md#contribution-analysis), plus det aktuella måttet och ett unikt besökarmått som sätter måttet i sitt sammanhang utifrån ett storleksperspektiv.
+   * En visualisering som visar antalet **besök** den dagen.
+   * En månatlig **Besök trendlinje** för kontext.
+   * **De översta objekten** som bidrog till avvikelsen, sorterat efter [bidragspoängen](/help/analyze/analysis-workspace/c-anomaly-detection/anomaly-detection.md#contribution-analysis), plus måttet i fråga och ett unikt besökarmått som sätter måttet i kontext från ett storleksperspektiv.
 
-   * The [Genererade segment](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-build.html) (Top Item Clusters)-tabellen identifierar associationer av de vanligaste objekten baserat på bidragsresultat, avvikelser och den totala procentandel som bidrar till det avvikande måttet. Detta registreras sedan som ett målgruppssegment (bidragssegment 1, bidragssegment 2 osv.). Om du klickar på knappen &quot;i&quot; (info) får du en översikt över varje segment, inklusive vilka av de översta objekten det består av:
+   * Tabellen [Genererade segment](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-build.html) (kluster för toppartikel) identifierar associationer av toppobjekt baserat på bidragspoäng, avvikelser och total procentandel som bidrar till det avvikande måttet. Detta registreras sedan som ett målgruppssegment (bidragssegment 1, bidragssegment 2 osv.). Om du klickar på knappen &quot;i&quot; (info) får du en översikt över varje segment, inklusive vilka av de översta objekten det består av:
 
      ![](assets/auto_segment.png)
 
 1. Eftersom bidragsanalysen nu ingår i Analysis Workspace kan du dra nytta av ett antal funktioner från en tabells högerklicksmeny och göra analysen ännu mer meningsfull, som:
 
    * [Bryter ned varje dimensionsobjekt med en annan dimension.](/help/analyze/analysis-workspace/components/dimensions/t-breakdown-fa.md)
-   * [Trending one or more rows.](/help/analyze/analysis-workspace/home.md#section_34930C967C104C2B9092BA8DCF2BF81A)
-   * [Lägga till nya visualiseringar.](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md)
+   * [En eller flera rader trendas.](/help/analyze/analysis-workspace/home.md#section_34930C967C104C2B9092BA8DCF2BF81A)
+   * [Lägger till nya visualiseringar.](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md)
    * [Skapar aviseringar.](/help/components/c-alerts/intellligent-alerts.md)
    * [Skapa eller jämföra segment.](/help/analyze/analysis-workspace/c-panels/c-segment-comparison/segment-comparison.md)
 
@@ -60,9 +60,9 @@ Det finns två sätt att anropa bidragsanalys i ett projekt:
 
 Det kan finnas tillfällen när du vill utesluta vissa dimensioner från bidragsanalysen. Du kanske inte bryr dig om webbläsar- eller maskinvarurelaterade dimensioner alls och du vill snabba upp analysen genom att ta bort dem.
 
-1. Efter att du klickat **[!UICONTROL Run Contribution Analysis]** (eller **[!UICONTROL Analyze]** i ett linjediagram) **[!UICONTROL Excluded Dimensions]** visas.
+1. När du har klickat på **[!UICONTROL Run Contribution Analysis]** (eller **[!UICONTROL Analyze]** i ett linjediagram) visas panelen **[!UICONTROL Excluded Dimensions]**.
 
-1. Bara dra oönskade dimensioner till **[!UICONTROL Excluded Dimensions]** och sedan spara listan genom att klicka på **[!UICONTROL Set as Default]**. Eller klicka **[!UICONTROL Clear All]** för att börja om med att välja dimensioner som ska uteslutas.
+1. Dra bara oönskade mått till panelen **[!UICONTROL Excluded Dimensions]** och spara sedan listan genom att klicka på **[!UICONTROL Set as Default]**. Du kan också klicka på **[!UICONTROL Clear All]** om du vill börja om med att välja dimensioner som ska uteslutas.
 
    ![](assets/exclude_dimensions.png)
 

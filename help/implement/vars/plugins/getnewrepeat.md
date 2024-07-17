@@ -15,21 +15,21 @@ ht-degree: 0%
 
 {{plug-in}}
 
-The `getNewRepeat` Med plugin-programmet kan du avgöra om en besökare på webbplatsen är en ny besökare eller en återkommande besökare inom ett visst antal dagar. Adobe rekommenderar att du använder denna plugin om du vill identifiera besökare som&quot;nya&quot; med ett anpassat antal dagar. Denna plugin behövs inte om dimensionerna Ny/Upprepa besökare i Analysis Workspace uppfyller organisationens behov.
+Med plugin-programmet `getNewRepeat` kan du avgöra om en besökare på webbplatsen är en ny besökare eller en återkommande besökare inom ett visst antal dagar. Adobe rekommenderar att du använder denna plugin om du vill identifiera besökare som&quot;nya&quot; med ett anpassat antal dagar. Denna plugin behövs inte om dimensionerna Ny/Upprepa besökare i Analysis Workspace uppfyller organisationens behov.
 
 ## Installera plugin-programmet med Web SDK-tillägget
 
 Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-programmen med Web SDK.
 
-1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
-1. Klicka **[!UICONTROL Tags]** till vänster och klicka sedan på den önskade taggegenskapen.
-1. Klicka **[!UICONTROL Extensions]** till vänster och klicka sedan på **[!UICONTROL Catalog]** tab
-1. Leta rätt på och installera **[!UICONTROL Common Web SDK Plugins]** tillägg.
-1. Klicka **[!UICONTROL Data Elements]** till vänster och klicka sedan på dataelementet.
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med dina inloggningsuppgifter för AdobeID.
+1. Klicka på **[!UICONTROL Tags]** till vänster och klicka sedan på den önskade taggegenskapen.
+1. Klicka på **[!UICONTROL Extensions]** till vänster och sedan på fliken **[!UICONTROL Catalog]**
+1. Leta reda på och installera tillägget **[!UICONTROL Common Web SDK Plugins]**.
+1. Klicka på **[!UICONTROL Data Elements]** till vänster och klicka sedan på det önskade dataelementet.
 1. Ange det önskade dataelementnamnet med följande konfiguration:
    * Tillägg: Vanliga SDK-plugin-program för webben
    * Dataelement: `getNewRepeat`
-1. Ange `daysBeforeReset` -parametern till höger.
+1. Ange parametern `daysBeforeReset` till höger.
 1. Spara och publicera ändringarna i dataelementet.
 
 ## Installera plugin-programmet manuellt för att implementera Web SDK
@@ -40,10 +40,10 @@ Denna plugin stöds ännu inte för användning i en manuell implementering av W
 
 Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-programmen med Adobe Analytics.
 
-1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med dina inloggningsuppgifter för AdobeID.
 1. Klicka på den önskade taggegenskapen.
-1. Gå till [!UICONTROL Extensions] klickar du på [!UICONTROL Catalog] knapp
-1. Installera och publicera [!UICONTROL Common Analytics Plugins] extension
+1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Catalog]
+1. Installera och publicera tillägget [!UICONTROL Common Analytics Plugins]
 1. Om du inte redan har det skapar du en regel med namnet&quot;Initiera plugin-program&quot; med följande konfiguration:
    * Villkor: Inget
    * Händelse: Kärna - Bibliotek inläst (sidan ovanpå)
@@ -56,10 +56,10 @@ Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-program
 
 Om du inte vill använda tillägget för Common Analytics-plugin-program kan du använda den anpassade kodredigeraren.
 
-1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med dina inloggningsuppgifter för AdobeID.
 1. Klicka på önskad egenskap.
-1. Gå till [!UICONTROL Extensions] klickar du på **[!UICONTROL Configure]** under Adobe Analytics-tillägget.
-1. Expandera [!UICONTROL Configure tracking using custom code] dragspelspanel, som visar [!UICONTROL Open Editor] -knappen.
+1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen **[!UICONTROL Configure]** under Adobe Analytics-tillägget.
+1. Expandera dragspelsfliken [!UICONTROL Configure tracking using custom code] som visar knappen [!UICONTROL Open Editor].
 1. Öppna den anpassade kodredigeraren och klistra in den plugin-kod som finns nedan i redigeringsfönstret.
 1. Spara och publicera ändringarna i Analytics-tillägget.
 
@@ -76,13 +76,13 @@ function getNewRepeat(d){var a=d;if("-v"===a)return{plugin:"getNewRepeat",versio
 
 ## Använda plugin-programmet
 
-The `getNewRepeat` funktionen använder följande argument:
+Funktionen `getNewRepeat` använder följande argument:
 
-* **`d`** (heltal, valfritt): Minsta antal dagar mellan besöken som återställer besökarna till `"New"`. Om argumentet inte är inställt är det som standard 30 dagar.
+* **`d`** (heltal, valfritt): Det minsta antal dagar som krävs mellan besök som återställer besökarna till `"New"`. Om argumentet inte är inställt är det som standard 30 dagar.
 
-Den här funktionen returnerar värdet för `"New"` om den cookie som angetts av plugin-programmet inte finns eller har gått ut. Det returnerar värdet för `"Repeat"` om den cookie som angetts av plugin-programmet finns och tiden sedan den aktuella träffen och den tid som angetts i cookien är längre än 30 minuter. Den här funktionen returnerar samma värde för ett helt besök.
+Den här funktionen returnerar värdet `"New"` om den cookie som angetts av plugin-programmet inte finns eller har gått ut. Värdet `"Repeat"` returneras om den cookie som angetts av plugin-programmet finns och tiden sedan den aktuella träffen och tiden som angetts i cookien är längre än 30 minuter. Den här funktionen returnerar samma värde för ett helt besök.
 
-Denna plugin använder en cookie med namnet `"s_nr[LENGTH]"` där `[LENGTH]` är lika med `d` argument. Cookien innehåller en Unix-tidsstämpel som representerar den aktuella tiden och besökarens aktuella status (`"New"` eller `"Repeat"`).
+Detta plugin-program använder en cookie med namnet `"s_nr[LENGTH]"` där `[LENGTH]` är lika med argumentet `d`. Cookien innehåller en Unix-tidsstämpel som representerar den aktuella tiden och besökarens aktuella status (`"New"` eller `"Repeat"`).
 
 ## Exempel
 
@@ -102,9 +102,9 @@ s.eVar2 = getNewRepeat(365);
 
 ### 2.1 (30 september 2019)
 
-* Ordna om JavaScript-logiken för att minska plugin-programmets storlek
+* Omstrukturering av JavaScript-logik för att minska plugin-programmets storlek
 
 ### 2.0 (16 april 2018)
 
 * Kompilerad med mindre kodstorlek
-* Det gick inte att namnge cookien för att lagra besöksinformationen. Plugin-programmet namnger nu cookien dynamiskt baserat på det värde som skickas till `d` argument.
+* Det gick inte att namnge cookien för att lagra besöksinformationen. Plugin-programmet namnger nu cookien dynamiskt baserat på det värde som skickades till argumentet `d`.

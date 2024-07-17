@@ -5,20 +5,20 @@ feature: Metrics
 exl-id: fa5c860f-bea7-4d03-9632-fa6e025647bf
 source-git-commit: d095628e94a45221815b1d08e35132de09f5ed8f
 workflow-type: tm+mt
-source-wordcount: '252'
+source-wordcount: '264'
 ht-degree: 0%
 
 ---
 
 # Unika enheter
 
-Unika enheter [mått](overview.md) är en [Enhetsövergripande analys](../cda/overview.md) mätvärden som räknar antalet unika oidentifierade enheter och unika virtuella enheter. Oidentifierade enheter är enheter som genererade anonyma träffar. Unika virtuella enheter är distinkta personer som identifieras per enhet.
+De unika enheternas [mätvärde](overview.md) är ett [analysmått för flera enheter](../cda/overview.md) som räknar antalet unika oidentifierade enheter och unika virtuella enheter. Oidentifierade enheter är enheter som genererade anonyma träffar. Unika virtuella enheter är distinkta personer som identifieras per enhet.
 
 ## Hur det här måttet beräknas
 
 För varje enhet, summera alla distinkta personer som är kopplade till den (inklusive anonyma om enheten innehåller icke-sammanfogade träffar).
 
-Observera att det här måttet inte är lika med [Unika besökare](unique-visitors.md) i andra rapporteringsprogram än CDA. En enhet delas till exempel av tre olika konton. Om alla tre kontona besöker din webbplats i ett rapportfönster visas tre unika enheter i CDA i den resulterande rapporten. Samma data utanför CDA skulle visa 1 unik besökare.
+Observera att det här måttet inte är lika med [unika besökare](unique-visitors.md) i andra rapportsviter än CDA. En enhet delas till exempel av tre olika konton. Om alla tre kontona besöker din webbplats i ett rapportfönster visas tre unika enheter i CDA i den resulterande rapporten. Samma data utanför CDA skulle visa 1 unik besökare.
 
 ## Exempel
 
@@ -30,7 +30,7 @@ Observera att det här måttet inte är lika med [Unika besökare](unique-visito
 
 ![Antal unika enheter](/help/components/metrics/assets/Unique_Devices_Count.png)
 
-Visa dessa data i en virtuell CDA-rapportsserie före [Spela upp](/help/components/cda/replay.md) oautentiserade träffar kan sammanfogas:
+Om du visar dessa data i en virtuell CDA-rapportserie innan [Replay](/help/components/cda/replay.md) sammanfogar oautentiserade träffar kan det visa:
 
 * **5 unika enheter**: 1 för oautentiserad Bob + 2 för Bob + 1 för Alice + 1 för Charles
-* **4 [Folk](people.md)**: 1 [Oidentifierade personer](unidentified-people.md) + 3 [Identifierade personer](identified-people.md).
+* **4 [Personer](people.md)**: 1 [Ej identifierade personer](unidentified-people.md) + 3 [Identifierade personer](identified-people.md).

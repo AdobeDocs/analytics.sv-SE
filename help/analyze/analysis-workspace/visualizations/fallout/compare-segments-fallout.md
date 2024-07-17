@@ -1,18 +1,18 @@
 ---
 description: Du kan skapa segment från en kontaktyta, lägga till segment som kontaktyta och jämföra viktiga arbetsflöden mellan olika segment i Analysis Workspace.
 keywords: utfall och segmentering;segment i utfallsanalys;jämför segment i utfall
-title: Använda segment i utfallsanalys
+title: Använd segment i utfallsanalys
 feature: Visualizations
 role: User, Admin
 exl-id: 2177cd09-5a27-4295-8414-580cf53062cb
 source-git-commit: 3bbf89cf522d9e0be62e0cabb28133bfa2b7a167
 workflow-type: tm+mt
-source-wordcount: '425'
-ht-degree: 2%
+source-wordcount: '428'
+ht-degree: 0%
 
 ---
 
-# Använda segment i utfallsanalys
+# Använd segment i utfallsanalys
 
 Du kan skapa segment från en kontaktyta, lägga till segment som kontaktyta och jämföra viktiga arbetsflöden mellan olika segment i Analysis Workspace.
 
@@ -26,7 +26,7 @@ Du kan skapa segment från en kontaktyta, lägga till segment som kontaktyta och
 
 ## Skapa ett segment från en kontaktyta {#section_915E8FBF35CD4F34828F860C1CCC2272}
 
-1. Skapa ett segment från en viss kontaktyta som du är särskilt intresserad av och som kan vara användbar för andra rapporter. Du gör detta genom att högerklicka på kontaktytan och välja **[!UICONTROL Create segment from touchpoint]**.
+1. Skapa ett segment från en viss kontaktyta som du är särskilt intresserad av och som kan vara användbar för andra rapporter. Det gör du genom att högerklicka på kontaktytan och välja **[!UICONTROL Create segment from touchpoint]**.
 
    ![](assets/segment-from-touchpoint.png)
 
@@ -54,7 +54,7 @@ Här är en video om hur du jämför segment i utfallet:
 
 >[!VIDEO](https://video.tv.adobe.com/v/24046/?quality=12)
 
-1. Välj de segment som du vill jämföra från [!UICONTROL Segments] till vänster. I vårt exempel har vi valt två segment: Användare i USA och Användare utanför USA.
+1. Markera de segment som du vill jämföra i fältet [!UICONTROL Segments] till vänster. I vårt exempel har vi valt två segment: Användare i USA och Användare utanför USA.
 1. Dra dem till segmentsläppzonen längst upp.
 
    ![](assets/segment-drop.png)

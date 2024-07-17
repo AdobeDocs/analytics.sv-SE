@@ -14,7 +14,7 @@ ht-degree: 1%
 
 Med segment kan du identifiera undergrupper av besökare baserat på egenskaper eller webbplatsinteraktioner. Segmenten är utformade som målgruppsinsikter som ni kan bygga för era specifika behov och sedan verifiera, redigera och dela med andra teammedlemmar eller använda i andra Adobe-produkter och Analytics-funktioner.
 
-Segmenten baseras på en [!UICONTROL Visitor], [!UICONTROL Visit]och [!UICONTROL Hit] nivåhierarki med en kapslad behållarmodell. Med de kapslade behållarna kan du definiera besökarattribut och åtgärder baserat på regler mellan och inom behållarna. Analyssegment kan byggas, godkännas, delas, sparas och köras på flera produkter och funktioner i [!DNL Adobe Experience Cloud]. Segment kan genereras från en rapport, byggas in i en kontrollpanelrapport eller bokmärkas för snabb åtkomst.
+Segmenten baseras på en [!UICONTROL Visitor]-, [!UICONTROL Visit]- och [!UICONTROL Hit]-nivåhierarki som använder en kapslad behållarmodell. Med de kapslade behållarna kan du definiera besökarattribut och åtgärder baserat på regler mellan och inom behållarna. Analyssegment kan skapas, godkännas, delas, sparas och köras för flera produkter och funktioner i [!DNL Adobe Experience Cloud]. Segment kan genereras från en rapport, byggas in i en kontrollpanelrapport eller bokmärkas för snabb åtkomst.
 
 Du kan skapa och spara segment i segmentbyggaren eller generera segment från en utfallsrapport (i [!UICONTROL Analysis Workspace]). Du kan också använda och utöka fördefinierade segment baserat på specifika regler mellan kapslade behållare, så att du kan filtrera resultaten och tillämpa dem på rapporter. Dessutom kan segment användas tillsammans som [staplade segment](/help/components/segmentation/segmentation-workflow/seg-workflow.md).
 
@@ -34,7 +34,7 @@ Segment kan baseras på följande värden:
 - Besökare baserade på utgångar och tävlingsbidrag: besökare från Facebook, en definierad landningssida, hänvisande domän.
 - Besökare baserade på anpassade variabler: formulärfält, definierade kategorier, kund-ID.
 
-När du skapar målgruppssegment i Segment Builder definierar du villkor med hjälp av [!UICONTROL AND] och [!UICONTROL OR] operatorer mellan behållare.
+När du skapar målgruppssegment i segmentbyggaren definierar du villkor med hjälp av operatorerna [!UICONTROL AND] och [!UICONTROL OR] mellan behållare.
 
 <table style="table-layout:fixed; border: none;">
 
@@ -106,15 +106,15 @@ När du skapar målgruppssegment i Segment Builder definierar du villkor med hj�
 
 <!--![](assets/standard_segment_containers.png)-->
 
-Den här typen av segment filtrerar datauppsättningar baserat på egenskaper som förenats med [!UICONTROL AND] och [!UICONTROL OR] operatorer.
+Den här typen av segment filtrerar datauppsättningar baserat på egenskaper som förenats med operatorerna [!UICONTROL AND] och [!UICONTROL OR].
 
-- Du kan [använda flera segment i en rapport eller ett projekt](/help/components/segmentation/segmentation-workflow/seg-workflow.md).
+- Du kan [använda flera segment för en rapport eller ett projekt](/help/components/segmentation/segmentation-workflow/seg-workflow.md).
 - Segmenten är universella för alla rapportsviter.
-- The [Segment Builder](/help/components/segmentation/segmentation-workflow/seg-workflow.md) gör det enklare att skapa segment.
-- The [Segmenthanteraren](/help/components/segmentation/segmentation-workflow/seg-workflow.md) gör att du kan konfigurera [arbetsflöden](/help/components/segmentation/segmentation-workflow/seg-workflow.md) med segmentdelning, taggning, verifiering och godkännandefunktioner.
-- Du kan [taggsegment](/help/components/segmentation/segmentation-workflow/seg-workflow.md) om du vill ordna och söka senare i stället för att använda mappar.
-- Du kan [Sekventiella segment](/help/components/segmentation/segmentation-workflow/seg-sequential-build.md).
-- The [!UICONTROL Page View] behållaren är nu [!UICONTROL Hit] behållare som anger att den här behållaren segmenterar alla typer av data och inte bara sidvyer. Till exempel tas alla anrop för länkspårning och trackAction-anrop från de mobila SDK:erna med eller utan av träffbehållaren.
+- [Segment Builder](/help/components/segmentation/segmentation-workflow/seg-workflow.md) förenklar skapandet av segment.
+- Med [segmenthanteraren](/help/components/segmentation/segmentation-workflow/seg-workflow.md) kan du konfigurera [arbetsflöden](/help/components/segmentation/segmentation-workflow/seg-workflow.md) med segmentdelning, taggning, verifiering och godkännandefunktioner.
+- Du kan [tagga segment](/help/components/segmentation/segmentation-workflow/seg-workflow.md) om du vill ordna och söka senare i stället för att använda mappar.
+- Du kan skapa [sekventiella segment](/help/components/segmentation/segmentation-workflow/seg-sequential-build.md).
+- Behållaren [!UICONTROL Page View] är nu [!UICONTROL Hit] som indikerar att den här behållaren segmenterar alla typer av data och inte bara sidvyer. Till exempel tas alla anrop för länkspårning och trackAction-anrop från de mobila SDK:erna med eller utan av träffbehållaren.
 
 ## Segmentering i Analysis Workspace
 
@@ -122,15 +122,15 @@ Analysis Workspace innehåller följande funktioner:
 
 - Du kan [jämföra segment](../../analyze/analysis-workspace/c-panels/c-segment-comparison/segment-comparison.md).
 - Använd [segment som dimensioner](https://experienceleague.adobe.com/docs/core-services/interface/audiences/audience-library.html) i en jämförelse.
-- Använd segment i [fallanalys](../../analyze/analysis-workspace/visualizations/fallout/compare-segments-fallout.md).
+- Använd segment i [utfallsanalys](../../analyze/analysis-workspace/visualizations/fallout/compare-segments-fallout.md).
 
 ## Segment som tillhandahålls av Adobe
 
-Komponentspåret till vänster på skärmen visar segment som har skapats av dig och ditt företag samt segment Adobe som ingår i paketet. När du klickar **[!UICONTROL Show all]**, visas dessa segment oftast längst ned i listan och identifieras av Adobe-logotypen till höger.
+Komponentspåret till vänster på skärmen visar segment som har skapats av dig och ditt företag samt segment Adobe som ingår i paketet. När du klickar på **[!UICONTROL Show all]** visas dessa segment vanligtvis längst ned i listan och identifieras av Adobe-logotypen till höger.
 
 ## Sekventiella segment {#sequential}
 
-Med hjälp av sekventiella segment kan du identifiera besökare baserat på navigering och sidvisning på webbplatsen, vilket ger ett segment med definierade åtgärder och interaktioner. Sekventiella segment hjälper er att identifiera vad en besökare gillar och vad en besökare undviker. När du skapar sekventiella segment [!UICONTROL THEN] -operatorn används för att definiera och beställa besöksnavigering.
+Med hjälp av sekventiella segment kan du identifiera besökare baserat på navigering och sidvisning på webbplatsen, vilket ger ett segment med definierade åtgärder och interaktioner. Sekventiella segment hjälper er att identifiera vad en besökare gillar och vad en besökare undviker. När du skapar sekventiella segment används operatorn [!UICONTROL THEN] för att definiera och beställa besöksnavigering.
 
 <!--![](assets/sequential_seg.png)-->
 
@@ -233,7 +233,7 @@ Sekventiella segment kan baseras på följande träffvärden:
 
 <!--![](assets/sequential_segmentation_containers_view.png)-->
 
-Ett sekventiellt segment filtrerar datauppsättningar baserat på användaråtgärder med [!UICONTROL THEN] -operator.
+Ett sekventiellt segment filtrerar datauppsättningar baserat på användaråtgärder med operatorn [!UICONTROL THEN].
 
 ## Video om hur man segmenterar {#segment-video}
 
@@ -248,9 +248,9 @@ Den här videon ger en kort översikt över vilka segmentbehållare som är och 
 
 Du kommer åt segmentbyggaren genom att:
 
-- Visa en befintlig rapport och klicka på segmentikonen  ![Segmentikon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) i den vänstra navigeringen. Klicka på i segmentlisten som visas **[!UICONTROL Add]**, eller
+- Visar en befintlig rapport och klickar på segmentikonen ![Segment-ikonen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) i den vänstra navigeringen. Klicka på **[!UICONTROL Add]** i segmentlisten som visas, eller
 
-- Överst i segmenthanteraren klickar du på **[!UICONTROL + Add]**.  ![Knappen Lägg till](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)
+- Klicka på **[!UICONTROL + Add]** högst upp i segmenthanteraren.  ![Lägg till knapp](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)
 
   eller
 
@@ -262,9 +262,9 @@ Du kommer åt segmentbyggaren genom att:
 
 Öppna segmenthanteraren genom att:
 
-- Går till  **[!UICONTROL Analytics]** > **[!UICONTROL Components]** i den övre navigeringen. Klicka sedan på **[!UICONTROL Segments]**, eller
+- Går till **[!UICONTROL Analytics]** > **[!UICONTROL Components]** i den övre navigeringen. Klicka sedan på **[!UICONTROL Segments]**, eller
 
-- Visa en befintlig rapport och klicka på segmentikonen  ![Segmentikon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) i den vänstra navigeringen. Klicka sedan på **[!UICONTROL Manage]**, eller
+- Visar en befintlig rapport och klickar på segmentikonen ![Segment-ikonen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) i den vänstra navigeringen. Klicka sedan på **[!UICONTROL Manage]**, eller
 
 - Tryck på snedstreckstangenten &#39;/&#39; var som helst i gränssnittet och sök efter segmenthanteraren.
 
@@ -274,7 +274,7 @@ Du kommer åt segmentbyggaren genom att:
 
 +++ **Vilka rättigheter och behörigheter behöver jag för att använda, skapa och hantera segment?**
 
-Som standard kan alla användare skapa och redigera personliga segment. Administratörer kan dock bestämma vilka som ska ha [behörighet att skapa segment](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html) och kan tilldela dem till specifika grupper. Dessa segment kan delas direkt med andra Analytics-användare.
+Som standard kan alla användare skapa och redigera personliga segment. Administratörer kan dock bestämma vem som ska ha [behörighet att skapa segment](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html) och kan tilldela dem till specifika grupper. Dessa segment kan delas direkt med andra Analytics-användare.
 
 Administratörer kan redigera alla segment och dela segment med grupper och med alla i organisationen. [Mer...](/help/components/segmentation/seg-reference/seg-rights.md)
 
@@ -282,7 +282,7 @@ Administratörer kan redigera alla segment och dela segment med grupper och med 
 
 +++ **Kan jag se alla segment i mitt företag?**
 
-Ja, administratörer kan se alla segment i [!DNL Analysis Workspace] användargränssnitt.
+Ja, administratörer kan se alla segment i användargränssnittet för [!DNL Analysis Workspace].
 
 Report Builder visar segment som du äger och segment som delas med dig.
 
@@ -300,6 +300,6 @@ I Report Builder visas endast segment som du har skapat eller segment som har de
 
 +++ **Varför kan jag inte ta bort det här segmentet?**
 
-Om segmentet var [publicerade i Experience Cloud](/help/components/segmentation/segmentation-workflow/seg-workflow.md)kan du inte ta bort eller redigera den. Du kan dock kopiera den och redigera den kopierade versionen.
+Om segmentet [publicerades på Experience Cloud](/help/components/segmentation/segmentation-workflow/seg-workflow.md) kan du inte ta bort eller redigera det. Du kan dock kopiera den och redigera den kopierade versionen.
 
 +++

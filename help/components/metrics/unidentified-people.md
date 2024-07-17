@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Oidentifierade personer
 
-&#39;Oidentifierade personer&#39; [mått](overview.md) är en [Enhetsövergripande analys](../cda/overview.md) mått som räknar antalet besökare som CDA inte kunde identifiera.
+[Måttet ](overview.md) för oidentifierade personer är ett [korsenhetsanalys](../cda/overview.md) som räknar antalet besökare som CDA inte kunde identifiera.
 
 ## Hur det här måttet beräknas
 

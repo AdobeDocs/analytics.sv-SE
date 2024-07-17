@@ -8,11 +8,11 @@ exl-id: 34b8ffc7-646a-4472-a99a-4b8876ea7b16
 source-git-commit: 66b7de0b008364e47253d319785c204ca479ab26
 workflow-type: tm+mt
 source-wordcount: '104'
-ht-degree: 2%
+ht-degree: 0%
 
 ---
 
-# Schemalägga makroaktiverade arbetsböcker
+# Schemalägg makroaktiverade arbetsböcker
 
 Adobe Report Builder har stöd för formatet .xlsm som gör att du kan schemalägga makroaktiverade arbetsböcker.
 

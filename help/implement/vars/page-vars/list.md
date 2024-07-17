@@ -15,11 +15,11 @@ ht-degree: 0%
 
 Listvariabler är anpassade variabler som du kan använda hur du vill. De fungerar på liknande sätt som eVars, förutom att de kan innehålla flera värden i samma träff. Listvariabler har ingen teckengräns.
 
-Se till att du spelar in hur du använder varje listvariabel och deras logik i [konstruktionsdokument](../../prepare/solution-design.md).
+Se till att du spelar in hur du använder varje listvariabel och deras logik i [lösningsdesigndokumentet](../../prepare/solution-design.md).
 
 >[!NOTE]
 >
->Listvariabler lagrar de senaste värdena per besökare baserat på dess [!UICONTROL Max values] ställa in [Rapportsvitsinställningar](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/list-var-admin.md). Upp till 250 värden stöds. Om det finns fler unika värden än vad [!UICONTROL Max values] inställningen tillåter, de äldsta värdena tillskrivs inte mätvärden.
+>Listvariabler lagrar de senaste värdena per besökare baserat på dess [!UICONTROL Max values]-inställning i [Rapportsvitens inställningar](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/list-var-admin.md). Upp till 250 värden stöds. Om det finns mer unika värden än vad inställningen [!UICONTROL Max values] tillåter, kommer de äldsta värdena inte att tillskrivas mätvärden.
 
 ## Ställ in listvariabler i rapportsvitens inställningar
 
@@ -27,7 +27,7 @@ Se till att du konfigurerar varje listvariabel i inställningarna för rapportsv
 
 ## Visa variabler med Web SDK
 
-Om du använder [**XDM-objekt**](/help/implement/aep-edge/xdm-var-mapping.md) används XDM-fält för listvariabler `xdm._experience.analytics.customDimensions.lists.list1.list[]` till `xdm._experience.analytics.customDimensions.lists.list3.list[]`. Varje arrayelement innehåller en `"value"` -objekt som innehåller varje sträng. Du behöver inte ange en avgränsare. Datainsamlingsservrar i Adobe identifierar och tar automatiskt med rätt avgränsare i [Rapportsvitsinställningar](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/list-var-admin.md).
+Om du använder [**XDM-objektet**](/help/implement/aep-edge/xdm-var-mapping.md) använder listvariabler XDM-fälten `xdm._experience.analytics.customDimensions.lists.list1.list[]` till `xdm._experience.analytics.customDimensions.lists.list3.list[]`. Varje arrayelement innehåller ett `"value"`-objekt som innehåller varje sträng. Du behöver inte ange någon avgränsare. Datainsamlingsservrar i Adobe identifierar och tar automatiskt med rätt avgränsare i [rapportsvitens inställningar](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/list-var-admin.md).
 
 ```json
 "xdm": {
@@ -57,9 +57,9 @@ Om du använder [**XDM-objekt**](/help/implement/aep-edge/xdm-var-mapping.md) an
 
 >[!NOTE]
 >
->Adobe XDM-schemat innehåller `key` förutom objekt `value` objekt i varje `list[]` array. Adobe använder inte dessa `key` objekt när data skickas till Adobe Analytics.
+>Adobe XDM-schemat innehåller `key` objekt förutom `value` objekt i varje `list[]` -array. Adobe använder inte dessa `key`-objekt när data skickas till Adobe Analytics.
 
-Om du använder [**dataobjekt**](/help/implement/aep-edge/data-var-mapping.md), listvariabler använder `data.__adobe.analytics.list1` - `data.adobe.analytics.list3` efter AppMeasurementets syntax. Se till att du använder rätt avgränsningsuppsättning i [Rapportsvitsinställningar](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/list-var-admin.md).
+Om du använder [**dataobjektet**](/help/implement/aep-edge/data-var-mapping.md) använder listvariabler `data.__adobe.analytics.list1` - `data.adobe.analytics.list3` följande AppMeasurementen syntax. Kontrollera att du använder rätt avgränsare i [Rapportsvitens inställningar](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/list-var-admin.md).
 
 ```json
 "data": {
@@ -77,7 +77,7 @@ Det finns inget dedikerat fält i Adobe Analytics-tillägget som kan använda de
 
 ## s.list1 - s.list3 i AppMeasurementet och den anpassade kodredigeraren i Analytics-tillägget
 
-Varje listvariabel är en sträng som innehåller anpassade värden som är specifika för din organisation. Den här variabeln har inte ett maximalt antal byte, men varje enskilt värde har en maxgräns på 255 byte. Avgränsaren som du använder bestäms när du ställer in variabeln i [Rapportsvitsinställningar](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/list-var-admin.md). Använd inte blanksteg när du avgränsar flera objekt.
+Varje listvariabel är en sträng som innehåller anpassade värden som är specifika för din organisation. Den här variabeln har inte ett maximalt antal byte, men varje enskilt värde har en maxgräns på 255 byte. Avgränsaren som du använder bestäms när du ställer in variabeln i [Rapportsvitens inställningar](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/list-var-admin.md). Använd inte blanksteg när du avgränsar flera objekt.
 
 ```js
 // A list variable configured with a comma as a delimiter
@@ -86,7 +86,7 @@ s.list1 = "Example value 1,Example value 2,Example value 3";
 
 >[!TIP]
 >
->Om du anger dubblettvärden i samma träff dupliceras alla instanser av dessa värden med Adobe. Om du till exempel anger `s.list1 = "Brick,Brick";`, en instans räknas i rapporter.
+>Om du anger dubblettvärden i samma träff dupliceras alla instanser av dessa värden med Adobe. Om du till exempel anger `s.list1 = "Brick,Brick";` räknas en instans i rapporter.
 
 ## Jämför listekurser med listvariabler
 
@@ -94,4 +94,4 @@ Listutkast och listvariabler kan båda innehålla flera värden i samma träff. 
 
 * Alla propp kan bli en listpropp. Du kan ha upp till 75 proppar i listan om varje propp är en listprop. Det finns bara tre listvar tillgängliga.
 * Listutkast har en gräns på 100 byte för hela variabeln. Listvariabler har en gräns på 255 byte per värde och ingen total bytegräns.
-* Listproppar finns inte kvar efter den träff de ställs in. Listvariabler har en förfalloinställning som du vill ha. Med [bearbeta rapporttid](/help/components/vrs/vrs-report-time-processing.md)kan du använda anpassad attribuering för både listutkast och listvariabler.
+* Listproppar finns inte kvar efter den träff de ställs in. Listvariabler har en förfalloinställning som du vill ha. Med [rapporttidsbearbetning](/help/components/vrs/vrs-report-time-processing.md) kan du dock använda anpassad attribuering på både listutkast och listvariabler.

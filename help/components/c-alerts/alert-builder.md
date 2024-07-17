@@ -14,7 +14,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Intelligenta aviseringar är tillgängliga för Adobe [!DNL Analytics] Prime och Adobe [!DNL Analytics] Endast de ultimata kunderna.
+>Intelligenta aviseringar är endast tillgängliga för Adobe [!DNL Analytics] Prime- och Adobe [!DNL Analytics] Ultimate-kunder.
 
 Få åtkomst till varningsverktyget på något av tre sätt:
 
@@ -22,17 +22,17 @@ Få åtkomst till varningsverktyget på något av tre sätt:
 
   `ctrl (or cmd) + shift + a`
 * Genom att gå till **[!UICONTROL Workspace]** > **[!UICONTROL Components]** > **[!UICONTROL New Alert]**.
-* Genom att markera ett eller flera objekt på en frihandsritabell högerklickar och väljer du **[!UICONTROL Create Alert from Selection]**.
+* Genom att markera ett eller flera frihandsritabellobjekt högerklickar du och väljer **[!UICONTROL Create Alert from Selection]**.
 
-Gränssnittet i Alert Builder är bekant för dem som har skapat segment eller beräknade värden i [!DNL Analytics]:
+Gränssnittet i Alert Builder är känt för dem som har skapat segment eller beräknade värden i [!DNL Analytics]:
 
 ![](assets/alert_builder.png)
 
-**Aviseringsnamn**
+**Varningsnamn**
 
 Ange ett namn för aviseringen. Varningsnamnet kan innehålla rapportens namn eller måttets tröskelvärde.
 
-**Tidsnoggrannhet**
+**Tidsgranularitet**
 
 Ange när du vill att måttet ska kontrolleras: Varje timme, Varje dag, Varje vecka eller Varje månad.
 
@@ -42,23 +42,23 @@ Ange när du vill att måttet ska kontrolleras: Varje timme, Varje dag, Varje ve
 
 **Mottagare**
 
-Ange var aviseringen kan skickas. En varning kan skickas till en [!DNL Analytics] användare, [!DNL Analytics] grupp, en obearbetad e-postadress eller ett telefonnummer.
+Ange var aviseringen kan skickas. En avisering kan skickas till en [!DNL Analytics]-användare, en [!DNL Analytics]-grupp, en oformaterad e-postadress eller till ett telefonnummer.
 
 >[!IMPORTANT]
 >
->Telefonnumret måste föregås av ett plustecken och ett [landskod](https://countrycode.org/).
+>Telefonnumret måste föregås av ett plustecken (+) och en [landskod ](https://countrycode.org/).
 
 **Förfallodatum**
 
 Ange aviseringens förfallodatum.
 
-**Skicka en avisering när...**
+**Skicka en avisering när..**
 
-*... Någon av dessa metriska utlösare*
+*.. Någon av dessa metrics-utlösare*
 
 * Dra och släpp mätvärden på arbetsytan som lägger till utlösare.
 
-  Observera att **inkompatibla komponenter** meddelandet visas om inte alla komponenter (mått/dimensioner/segment) i aviseringen är kompatibla med den valda rapportsviten.
+  Observera att ett **&quot;inkompatibla komponenter&quot;**-meddelande visas om inte alla komponenter (mått/dimensioner/segment) i aviseringen är kompatibla med den valda rapportsviten.
 
 * Fastställ tröskelvärdet som måttet måste överskrida innan en avisering anges. Du kan ange ett tröskelvärde och sedan något av följande villkor:
 
@@ -74,7 +74,7 @@ Ange aviseringens förfallodatum.
 * Timgranulariteter sätts till ett tröskelvärde på 99,75 % och daglig granularitet till 99 %.
 * Observera att du även kan använda beräknade värden.
 
-*... Med dessa filter*
+*.. Med dessa filter*
 
 Dra och släpp segment eller dimensioner för att lägga till filter. Om du till exempel lägger till segmentet&quot;Endast mobila enheter&quot; innebär det att regeln bara aktiveras för mobila enheter.
 
@@ -90,6 +90,6 @@ I förhandsgranskningen av den interaktiva aviseringen visas hur ofta, ungefär,
 
 Om du t.ex. anger tidsterminalariteten till daglig, kan förhandsgranskningen tala om för dig att varningen skulle ha utlösts för ett visst mått x gånger under de senaste 30 eller 31 dagarna.
 
-Om du upptäcker att för många aviseringar skulle ha utlösts kan du justera tröskelvärdet i [Aviseringshanteraren](/help/components/c-alerts/alert-manager.md).
+Om du upptäcker att för många aviseringar skulle ha utlösts kan du justera tröskelvärdet i [Varningshanteraren](/help/components/c-alerts/alert-manager.md).
 
 ![](assets/alert_preview.png)

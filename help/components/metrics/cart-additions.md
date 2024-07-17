@@ -12,11 +12,11 @@ ht-degree: 0%
 
 # Kundtillägg
 
-&quot;Cart additions&quot; [mått](overview.md) visar hur många gånger en besökare har lagt till något i kundvagnen. Den här mätningen är användbar när du vill förstå den del av konverteringstratten där kunderna är tillräckligt intresserade av en produkt för att lägga den i kundvagnen.
+Cart additions [metric](overview.md) visar hur många gånger en besökare har lagt till något i kundvagnen. Den här mätningen är användbar när du vill förstå den del av konverteringstratten där kunderna är tillräckligt intresserade av en produkt för att lägga den i kundvagnen.
 
 ## Hur det här måttet beräknas
 
-Det här måttet räknar antalet träffar där `scAdd` finns i [`events`](/help/implement/vars/page-vars/events/events-overview.md) variabel.
+Det här måttet räknar antalet träffar där `scAdd` finns i variabeln [`events`](/help/implement/vars/page-vars/events/events-overview.md).
 
-Se [Korgar](carts.md) för en jämförelse av mätvärden.
+Se [Kartor](carts.md) om du vill ha en måttjämförelse.
 

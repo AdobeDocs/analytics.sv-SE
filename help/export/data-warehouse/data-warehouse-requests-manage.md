@@ -19,13 +19,13 @@ I följande avsnitt beskrivs aktiviteter som du kan utföra när du hanterar beg
 
 ## Visa förfrågningar
 
-Som standard kan du bara visa de förfrågningar du skapar, såvida inte användarna har valt att göra deras förfrågningar synliga för andra i organisationen (enligt beskrivningen i [Allmänna inställningar för begäran om Data Warehouse](/help/export/data-warehouse/create-request/dw-general-settings.md)). Systemadministratörer kan visa alla begäranden.
+Som standard kan du bara visa de begäranden som du skapar, såvida inte användare har valt att göra sina förfrågningar synliga för andra i organisationen (vilket beskrivs i [Datans Warehouse allmänna inställningar](/help/export/data-warehouse/create-request/dw-general-settings.md)). Systemadministratörer kan visa alla begäranden.
 
 Så här visar du förfrågningar från Data Warehouse:
 
-1. I Adobe Analytics: [!UICONTROL **verktyg**] > [!UICONTROL **Data Warehouse**].
+1. I Adobe Analytics väljer du [!UICONTROL **Verktyg**] > [!UICONTROL **Data Warehouse**].
 
-   På sidan Data Warehouse visas alla förfrågningar som du har gjort. Data visas i varje kolumn. Du kan [konfigurera vilka kolumner](#configure-columns) är synliga.
+   På sidan Data Warehouse visas alla förfrågningar som du har gjort. Data visas i varje kolumn. Du kan [konfigurera vilka kolumner ](#configure-columns) som ska visas.
 
    <!-- add screenshot of main page -->
 
@@ -49,7 +49,7 @@ Tänk på följande när du redigerar begäranden:
 
 Så här redigerar du en schemalagd begäran:
 
-1. I Adobe Analytics: [!UICONTROL **verktyg**] > [!UICONTROL **Data Warehouse**].
+1. I Adobe Analytics väljer du [!UICONTROL **Verktyg**] > [!UICONTROL **Data Warehouse**].
 
 1. Markera den begäran som du vill redigera på sidan Data Warehouse.
 
@@ -59,7 +59,7 @@ Så här redigerar du en schemalagd begäran:
 
 1. Redigera begäran efter behov. Det går inte att redigera nedtonade konfigurationsalternativ.
 
-   Information om varje konfigurationsalternativ finns i [Skapa en begäran om Data Warehouse](/help/export/data-warehouse/create-request/t-dw-create-request.md).
+   Mer information om varje konfigurationsalternativ finns i [Skapa en begäran om Data Warehouse](/help/export/data-warehouse/create-request/t-dw-create-request.md).
 
 1. Välj [!UICONTROL **Spara ändringar**].
 
@@ -67,7 +67,7 @@ Så här redigerar du en schemalagd begäran:
 
 Du kan visa historiken för alla förfrågningar om Data Warehouse som du har gjort.
 
-1. I Adobe Analytics: [!UICONTROL **verktyg**] > [!UICONTROL **Data Warehouse**].
+1. I Adobe Analytics väljer du [!UICONTROL **Verktyg**] > [!UICONTROL **Data Warehouse**].
 
 1. På sidan Data Warehouse markerar du den begäran vars historik du vill visa.
 
@@ -75,21 +75,21 @@ Du kan visa historiken för alla förfrågningar om Data Warehouse som du har gj
 
 1. Välj [!UICONTROL **Visa historik**].
 
-   The [!UICONTROL **Visa begäran om Data Warehouse**] sidan visar en lista över enskilda rapportleveranser som är associerade med begäran.
+   Sidan [!UICONTROL **Visa förfrågan om Data Warehouse**] visar en lista över enskilda rapportleveranser som är associerade med begäran.
 
-   Välj **Konfigurera kolumn** icon ![Ikon för att konfigurera kolumner](assets/configure-column-icon.png) om du vill dölja kolumner eller visa kolumner som inte visas som standard.
+   Välj ikonen **Konfigurera kolumn** ![Konfigurera kolumn-ikon](assets/configure-column-icon.png) om du vill dölja kolumner eller visa kolumner som inte visas som standard.
 
-   ![Historiksida för begäran](assets/dw-request-history.png)
+   ![Historiksida för förfrågningar](assets/dw-request-history.png)
 
    Följande kolumner är tillgängliga:
 
    | Kolumn | Beskrivning |
    |---------|----------|
-   | [!UICONTROL **Skapad den**] | Datum och tid då rapporten skapades.<p>Detta visas i tidszonen för den användare som initierade begäran.</p> |
+   | [!UICONTROL **Skapad**] | Datum och tid då rapporten skapades.<p>Detta visas i tidszonen för den användare som initierade begäran.</p> |
    | [!UICONTROL **Startdatum**] | Datum och tid då rapporten startades.<p>Detta visas i tidszonen för den användare som initierade begäran.</p> |
-   | [!UICONTROL **Slutförd den**] | Datum och tid då rapporten slutfördes.<p>Detta visas i tidszonen för den användare som initierade begäran.</p> |
+   | [!UICONTROL **Datum slutfört**] | Datum och tid då rapporten slutfördes.<p>Detta visas i tidszonen för den användare som initierade begäran.</p> |
    | [!UICONTROL **Uppdaterat**] | Datum och tid då rapporten senast uppdaterades.<p>Detta visas i tidszonen för den användare som initierade begäran.</p> |
-   | [!UICONTROL **Status**] | Status för rapportleveransen. Möjliga statusar är:<ul><li>[!UICONTROL **Skapad**]: Rapporten skapades men har ännu inte bearbetats.</li><li>[!UICONTROL **Väntande**]: Rapporten väntar på att bearbetas.</li><li>[!UICONTROL **Bearbetar**]: Rapporten bearbetas för närvarande.</li><li>[!UICONTROL **Slutförd**]: Rapporten har slutförts och är nu tillgänglig.</li><li>[!UICONTROL **Schemalagd**]: Rapporten är schemalagd men har inte startats ännu.</li><li>[!UICONTROL **Avbruten**]: Rapporten avbröts av användaren.</li><li>[!UICONTROL **Fel - Bearbetning**:] Rapporten påträffade ett fel och kunde inte bearbetas.</li><li>[!UICONTROL **Fel - det gick inte att skicka**]: Rapporten genererades men kunde inte levereras. Kontrollera [destinationskonfiguration](/help/export/data-warehouse/create-request/dw-request-report-destinations.md)och skicka sedan rapporten igen.</li></ul>. |
+   | [!UICONTROL **Status**] | Status för rapportleveransen. Möjliga statusar är:<ul><li>[!UICONTROL **Skapad**]: Rapporten skapades men har ännu inte bearbetats.</li><li>[!UICONTROL **Väntande**]: Rapporten väntar på att bearbetas.</li><li>[!UICONTROL **Bearbetar**]: Rapporten bearbetas för närvarande.</li><li>[!UICONTROL **Slutförd**]: Rapporten har slutförts och är nu tillgänglig.</li><li>[!UICONTROL **Schemalagd**]: Rapporten har schemalagts men har inte startats ännu.</li><li>[!UICONTROL **Avbruten**]: Rapporten avbröts av användaren.</li><li>[!UICONTROL **Fel - Bearbetar**:] Rapporten påträffade ett fel och kunde inte bearbetas.</li><li>[!UICONTROL **Fel - Det gick inte att skicka**]: Rapporten genererades men kunde inte levereras. Kontrollera [konfigurationen för ditt mål](/help/export/data-warehouse/create-request/dw-request-report-destinations.md) och skicka sedan rapporten igen.</li></ul>. |
    | [!UICONTROL **Från**] | Startdatumet för den övergripande tidsramen som ingår i rapporten.<p>Detta visas i rapportsvitens tidszon.</p> |
    | [!UICONTROL **Till**] | Slutdatumet för den övergripande tidsramen som ingår i rapporten. <p>Detta visas i rapportsvitens tidszon.</p> |
    | [!UICONTROL **ID för äldre begäran**] | Det ID som används för att identifiera en rapport i det äldre Datan Warehouse. Detta ID kan behövas när du kontaktar Adobe kundtjänst. |
@@ -100,16 +100,16 @@ Du kan visa historiken för alla förfrågningar om Data Warehouse som du har gj
 
    | Alternativ | Funktion |
    |---------|----------|
-   | [!UICONTROL **Destinationsinformation**] | Visar konto- och platsinformation som är associerad med begäran. Det här är kontot och platsen som konfigurerades tidigare, enligt beskrivningen i [Konfigurera ett rapportmål för en Data Warehouse-begäran](/help/export/data-warehouse/create-request/dw-request-report-destinations.md). |
+   | [!UICONTROL **Målinformation**] | Visar konto- och platsinformation som är associerad med begäran. Det här är kontot och platsen som konfigurerades tidigare, enligt beskrivningen i [Konfigurera ett rapportmål för en Data Warehouse](/help/export/data-warehouse/create-request/dw-request-report-destinations.md). |
    | [!UICONTROL **Avbryt rapport**] | Avbryter rapporten. Du kan inte avbryta rapporter som har statusen [!UICONTROL **Slutförd**] eller [!UICONTROL **Avbruten**]. |
-   | [!UICONTROL **Kör rapporten igen**] | Kör rapporten igen med data som de var när den ursprungligen skickades. Du kan köra en rapport som har någon av följande statusar igen: [!UICONTROL **Avbruten**], [!UICONTROL **Slutförd**], [!UICONTROL **Fel - Bearbetning**], eller [!UICONTROL **Fel - det gick inte att skicka**]. |
-   | [!UICONTROL **Skicka om rapport**] | Skickar rapportfilen som tidigare har skapats igen. Du kan skicka om en rapport som har någon av följande statusar: [!UICONTROL **Slutförd**] eller [!UICONTROL **Fel - det gick inte att skicka**]. |
+   | [!UICONTROL **Kör rapporten igen**] | Kör rapporten igen med data som de var när den ursprungligen skickades. Du kan köra en rapport som har någon av följande statusar igen: [!UICONTROL **Avbrutet**], [!UICONTROL **Slutfört**], [!UICONTROL **Fel - Bearbetning**] eller [!UICONTROL **Fel - Det gick inte att skicka**]. |
+   | [!UICONTROL **Skicka om rapport**] | Skickar rapportfilen som tidigare har skapats igen. Du kan skicka om en rapport som har någon av följande statusar: [!UICONTROL **Slutförd**] eller [!UICONTROL **Fel - Det gick inte att skicka**]. |
 
 ## Kopiera begäranden
 
 När du kopierar en begäran kopieras alla konfigurationsalternativ från den ursprungliga begäran.
 
-1. I Adobe Analytics: [!UICONTROL **verktyg**] > [!UICONTROL **Data Warehouse**].
+1. I Adobe Analytics väljer du [!UICONTROL **Verktyg**] > [!UICONTROL **Data Warehouse**].
 
 1. Markera den begäran du vill kopiera på sidan Data Warehouse.
 
@@ -121,7 +121,7 @@ När du kopierar en begäran kopieras alla konfigurationsalternativ från den ur
 
 1. Uppdatera alla konfigurationsalternativ som är associerade med begäran.
 
-   Information om varje konfigurationsalternativ finns i [Skapa en begäran om Data Warehouse](/help/export/data-warehouse/create-request/t-dw-create-request.md).
+   Mer information om varje konfigurationsalternativ finns i [Skapa en begäran om Data Warehouse](/help/export/data-warehouse/create-request/t-dw-create-request.md).
 
 1. Välj [!UICONTROL **Spara ändringar**].
 
@@ -131,7 +131,7 @@ Endast begäranden som har konfigurerats för att köras enligt ett schema kan a
 
 Så här avbryter du en schemalagd begäran:
 
-1. I Adobe Analytics: [!UICONTROL **verktyg**] > [!UICONTROL **Data Warehouse**].
+1. I Adobe Analytics väljer du [!UICONTROL **Verktyg**] > [!UICONTROL **Data Warehouse**].
 
 1. Markera den begäran som du vill redigera på sidan Data Warehouse.
 
@@ -145,7 +145,7 @@ Så här avbryter du en schemalagd begäran:
 
 Du kan konfigurera vilken information som ska visas för varje begäran genom att lägga till eller ta bort kolumner.
 
-1. Välj **Konfigurera kolumner** i det övre högra hörnet på Datan Warehouse.
+1. Markera ikonen **Konfigurera kolumner** i det övre högra hörnet på Datan Warehouse.
 
    ![Konfigurera kolumner](assets/dw-configure-columns.png)
 
@@ -157,7 +157,7 @@ Du kan konfigurera vilken information som ska visas för varje begäran genom at
    | Rapportsvit | Rapportsviten som är associerad med begäran. |
    | Begärd av | Användaren som skapade begäran. |
    | Datum för förfrågan | Datumet då begäran gjordes. |
-   | Status | Följande statusar är tillgängliga:<ul><li><p>**Slutförd**: Begäran har körts.</p></li><li><p>**Avbruten**: Begäran avbröts av användaren.</p></li><li><p>**Schemalagd**: Begäran är konfigurerad att köras enligt ett schema.</p></li><li><p>**Misslyckades**: Begäran kunde inte slutföras. Kontakta kundsupport om din begäran fortsätter att misslyckas.</p></li></ul> |
+   | Status | Följande statusar är tillgängliga:<ul><li><p>**Slutförd**: Begäran har körts.</p></li><li><p>**Avbruten**: Begäran avbröts av användaren.</p></li><li><p>**Schemalagd**: Begäran har konfigurerats för att köras enligt ett schema.</p></li><li><p>**Misslyckades**: Det gick inte att slutföra begäran. Kontakta kundsupport om din begäran fortsätter att misslyckas.</p></li></ul> |
 
    {style="table-layout:auto"}
 
@@ -165,11 +165,11 @@ Du kan konfigurera vilken information som ska visas för varje begäran genom at
 
 ## Filtrera och sortera förfrågningar
 
-1. Välj **Filter** ikonen till vänster på Datan Warehouse.
+1. Markera ikonen **Filter** i den vänstra listen på Datan Warehouse.
 
    ![Filterförfrågningar](assets/dw-filter.png)
 
-1. Expandera [!UICONTROL **Rapportsviter**], [!UICONTROL **Ägare**], eller [!UICONTROL **Status**] väljer du sedan hur du vill filtrera förfrågningarna.
+1. Expandera avsnitten [!UICONTROL **Rapportsviter**], [!UICONTROL **Ägare**] eller [!UICONTROL **Status**] och välj sedan hur du vill filtrera förfrågningarna.
 
 ## Sök efter förfrågningar
 

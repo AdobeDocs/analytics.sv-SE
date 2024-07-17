@@ -7,7 +7,7 @@ exl-id: a3d3fcdb-c526-42eb-8ac7-260946305760
 source-git-commit: 66b7de0b008364e47253d319785c204ca479ab26
 workflow-type: tm+mt
 source-wordcount: '124'
-ht-degree: 58%
+ht-degree: 21%
 
 ---
 
@@ -17,7 +17,7 @@ Adobe Report Builder är ett tillägg för Microsoft Excel. Här kan du skapa an
 
 ## Populära hjälpavsnitt
 
-* [Konfiguration, installation och inloggning](setup/login.md)
+* [Installation, installation och inloggning](setup/login.md)
 * [Schemalägg rapportbegäranden](schedule-report-requests.md)
 * [Felsökning och bästa praxis för Report Builder](troubleshoot.md)
 * [Vilka alternativ har jag för att skapa anpassade datumintervall?](data-requests/configuring-report-dates/c-customized-date-expressions/t-customized-date-expressions.md)
@@ -25,5 +25,5 @@ Adobe Report Builder är ett tillägg för Microsoft Excel. Här kan du skapa an
 
 ## Vanliga frågor och felsökning
 
-* [Hur skapar jag en databegäran?](data-requests/t-create-a-data-request.md)
+* [Hur skapar jag en dataförfrågan?](data-requests/t-create-a-data-request.md)
 * [Felsökning och bästa praxis för Report Builder](troubleshoot.md)

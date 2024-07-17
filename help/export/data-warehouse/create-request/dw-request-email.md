@@ -18,23 +18,23 @@ Mer information om hur du börjar skapa en begäran och länkar till andra vikti
 
 Så här konfigurerar du ett e-postmeddelande för en Data Warehouse:
 
-1. Om du inte redan har gjort det börjar du skapa en förfrågan i Adobe Analytics genom att välja **[!UICONTROL Tools]** > **[!UICONTROL Data Warehouse]** > [!UICONTROL **Lägg till**].
+1. Om du inte redan har gjort det börjar du skapa en begäran i Adobe Analytics genom att välja **[!UICONTROL Tools]** > **[!UICONTROL Data Warehouse]** > [!UICONTROL **Lägg till**].
 
    Mer information finns i [Skapa en begäran om Data Warehouse](/help/export/data-warehouse/create-request/t-dw-create-request.md).
 
-1. På sidan Ny Data Warehouse väljer du [!UICONTROL **E-postmeddelande**] -fliken.
+1. Markera fliken [!UICONTROL **Meddelande-e-post**] på sidan Ny Data Warehouse-begäran.
 
-   ![Målflik för rapport](assets/dw-notification-email.png)
+   ![Fliken Rapportmål](assets/dw-notification-email.png)
 
 1. Ange följande fält:
 
    | Alternativ | Funktion |
    |---------|----------|
-   | [!UICONTROL **Skicka e-postmeddelande till**] | Ange e-postadresserna till de personer som ska få e-postmeddelanden när rapporten skickas. <p>Du kan ange en e-postadress eller en kommaavgränsad lista med e-postadresser.</p> |
+   | [!UICONTROL **Skicka e-postmeddelanden till**] | Ange e-postadresserna till de personer som ska få e-postmeddelanden när rapporten skickas. <p>Du kan ange en e-postadress eller en kommaavgränsad lista med e-postadresser.</p> |
    | [!UICONTROL **Avancerade alternativ**] | Välj det här alternativet om du vill inkludera ett ämne och anteckningar för e-postmeddelandet när meddelandet skickas. |
 
    {style="table-layout:auto"}
 
-1. Välj [!UICONTROL **Spara begäran**] för att spara Datans Warehouse rapportbegäran.
+1. Välj [!UICONTROL **Spara begäran**] om du vill spara Datans Warehouse rapportbegäran.
 
    Nu kan du exportera data till kontot och platsen som du konfigurerade.

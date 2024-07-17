@@ -12,10 +12,10 @@ ht-degree: 0%
 
 # Nya åtaganden
 
-Nya engagemang [mått](overview.md) visar hur många gånger en besökare matchar en marknadsföringskanal för första gången i besökarens engagemangsperiod. Det här måttet är användbart när du vill jämföra en dimension med en besökare som för första gången matchar en bearbetningsregel för en marknadsföringskanal.
+Det nya engagemanget [mått](overview.md) visar hur många gånger en besökare matchar en marknadsföringskanal för första gången i besökarens interaktionsperiod. Det här måttet är användbart när du vill jämföra en dimension med en besökare som för första gången matchar en bearbetningsregel för en marknadsföringskanal.
 
 ## Hur det här måttet beräknas
 
-Under databearbetningen körs varje träff [Bearbetningsregler för marknadsföringskanaler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/marketing-channels/c-rules.md). Om en träff matchar någon regel för hantering av marknadsföringskanaler och besökaren inte redan har en första beröringskanal är träffen ett nytt engagemang. Om en träff inte matchar några regler för bearbetning av marknadsföringskanaler eller om besökaren redan har en första beröringskanal är träffen inte något nytt engagemang.
+Under databearbetningen körs varje träff genom [Bearbetningsregler för marknadsföringskanaler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/marketing-channels/c-rules.md). Om en träff matchar någon regel för hantering av marknadsföringskanaler och besökaren inte redan har en första beröringskanal är träffen ett nytt engagemang. Om en träff inte matchar några regler för bearbetning av marknadsföringskanaler eller om besökaren redan har en första beröringskanal är träffen inte något nytt engagemang.
 
 Besökarna kan ha mer än ett nytt engagemang om de låter besökarnas anställningsperiod löpa ut.

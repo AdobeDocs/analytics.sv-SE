@@ -15,10 +15,10 @@ ht-degree: 0%
 
 Du kan använda [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/web-sdk/home.html) för att skicka data till Adobe Analytics. Det finns två huvudmetoder för att implementera Web SDK, och varje metod har två implementeringstyper:
 
-| | **Migrera från AppMeasurement** | **Ren implementering av Web SDK** |
+| | **Migrera från AppMeasurementet** | **Ren implementering av Web SDK** |
 | --- | --- | --- |
-| **Använd taggar** | [Migrera från Analytics-tillägget till Web SDK-tillägget](analytics-extension-to-web-sdk.md) | [Skicka data till Adobe Analytics med Web SDK-tillägget](web-sdk-tag-extension.md) |
-| **Använd JavaScript** | [Migrera från AppMeasurement till JavaScript-biblioteket för Web SDK](appmeasurement-to-web-sdk.md) | [Skicka data till Adobe Analytics med JavaScript-biblioteket för Web SDK](web-sdk-javascript-library.md) |
+| **Använd taggar** | [Migrera från analystillägget till Web SDK-tillägget](analytics-extension-to-web-sdk.md) | [Skicka data till Adobe Analytics med Web SDK-tillägget](web-sdk-tag-extension.md) |
+| **Använd JavaScript** | [Migrera från AppMeasurement till Web SDK JavaScript-biblioteket](appmeasurement-to-web-sdk.md) | [Skicka data till Adobe Analytics med Web SDK JavaScript-biblioteket](web-sdk-javascript-library.md) |
 
 Om din organisation behöver en ny Web SDK-implementering och planerar att använda Customer Journey Analytics i framtiden rekommenderar Adobe en ren Web SDK-implementering med ditt eget schema. Se [Importera data via Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-data-ingestion/ingest-use-guides/edge-network/aepwebsdk) i användarhandboken för Customer Journey Analytics.
 
@@ -26,6 +26,6 @@ Om din organisation behöver en ny Web SDK-implementering och planerar att anvä
 
 Taggar kan anpassas mycket. Läs mer om hur du får ut mesta möjliga av Adobe Analytics genom att inkludera rätt data i implementeringen.
 
-- [Dokumentation för taggar](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html#): Lär dig hur gränssnittet fungerar och vilka tillägg som är tillgängliga.
+- [Taggar, dokumentation](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html#): Lär dig hur gränssnittet fungerar och vilka tillägg som är tillgängliga.
 
 - [Adobe Experience Platform Web SDK-dokumentation](https://experienceleague.adobe.com/docs/web-sdk.html)

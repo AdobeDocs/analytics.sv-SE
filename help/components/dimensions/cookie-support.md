@@ -12,16 +12,16 @@ ht-degree: 0%
 
 # Cookie-stöd
 
-Cookie-stöd [dimension](overview.md) rapporterar om webbläsaren stöder cookies för en viss träff. Det är användbart att bestämma hur många besökare som använder webbläsare som stöder cookies och vilka som avsiktligt inaktiverar dem.
+Cookie-stödet [dimension](overview.md) rapporterar om webbläsaren stöder cookies för en viss träff. Det är användbart att bestämma hur många besökare som använder webbläsare som stöder cookies och vilka som avsiktligt inaktiverar dem.
 
 ## Fyll den här dimensionen med data
 
-Den här dimensionen samlar in data från [`k` frågesträng](/help/implement/validate/query-parameters.md) i bildbegäranden. AppMeasurementet försöker ange en cookie med namnet `s_cc`identifierar sedan om cookien finns. Resultatet är frågesträngens parametervärde `Y` (om webbläsaren stöder och har aktiverat cookies) eller `N` (om webbläsaren har inaktiverat cookies). Om du använder AppMeasurement (till exempel via taggar i Adobe Experience Platform) fungerar den här dimensionen automatiskt. Om du använder en datainsamlingsmetod utanför AppMeasurementet (till exempel via API:t) måste du ta med `k` frågesträngsparameter för varje träff med värdet `Y` eller `N`.
+Den här dimensionen samlar in data från [`k`-frågesträngen ](/help/implement/validate/query-parameters.md) i bildbegäranden. AppMeasurementet försöker ange en cookie med namnet `s_cc` och identifierar sedan om cookien finns. Resultatet är frågesträngsparametervärdet `Y` (om webbläsaren stöder och har aktiverat cookies) eller `N` (om webbläsaren har inaktiverat cookies). Om du använder AppMeasurement (till exempel via taggar i Adobe Experience Platform) fungerar den här dimensionen automatiskt. Om du använder en datainsamlingsmetod utanför AppMeasurementet (till exempel via API:t), måste du ta med frågesträngsparametern `k` för varje träff med värdet `Y` eller `N`.
 
 ## Dimensioner
 
-Dimensionerna innehåller `Enabled`, `Disabled`och `Unknown`.
+Bland Dimensionerna finns `Enabled`, `Disabled` och `Unknown`.
 
 * **`Enabled`**: Webbläsaren stöder cookies och har dem aktiverade.
-* **`Disabled`**: Webbläsaren stöder inte cookies eller så har besökaren inaktiverat dem.
-* **`Unknown`**: AppMeasurementet kunde inte fastställa stöd för cookies. The `k` frågesträngen fanns inte i bildbegäran.
+* **`Disabled`**: Webbläsaren stöder inte cookies eller så inaktiverade besökaren dem.
+* **`Unknown`**: AppMeasurementet kunde inte fastställa stöd för cookies. Frågesträngen `k` fanns inte i bildbegäran.

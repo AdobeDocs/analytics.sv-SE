@@ -19,8 +19,8 @@ Resans-IQ är en uppsättning funktioner som ger lättanvända, helt anpassnings
 
 Resans IQ omfattar följande:
 
-* [Kohortanalys:](visualizations/cohort-table/cohort-analysis.md) Visualisera kundlojalitet och kundengagemang för att förstå vad som händer.
-* [Sammanhangsberoende sessioner:](../../components/vrs/vrs-report-time-processing.md) Ändra definitionen för ett besök, inklusive när ett besök tar slut och förhindra bakgrundstötar från att starta ett nytt besök. Använder en funktion som kallas rapporttidsbearbetning, som ingår i virtuella rapportsviter.
-* [Flödesanalys:](visualizations/c-flow/flow.md) Förstå var användarna navigerar härnäst och var de kommer ifrån.
-* [Bortfallsanalys:](visualizations/fallout/fallout-flow.md) Fånga när en kund tappar engagemanget och förstå vart han/hon ska gå.
-* [Enhetsövergripande analys:](../../components/cda/overview.md) Samla smidigt beteenden från olika enheter för att bättre förstå vilka beröringspunkter varje enhet får.
+* [Kohortanalys:](visualizations/cohort-table/cohort-analysis.md) Visualisera kundlojalitet och kundengagemang för att förstå var förändringar sker.
+* [Kontextmedvetna sessioner:](../../components/vrs/vrs-report-time-processing.md) Ändra definitionen för ett besök, inklusive när ett besök går ut och förhindrar bakgrundstötar från att starta ett nytt besök. Använder en funktion som kallas rapporttidsbearbetning, som ingår i virtuella rapportsviter.
+* [Flödesanalys:](visualizations/c-flow/flow.md) Förstå var användarna navigerar härnäst och varifrån de kommer.
+* [Utfallsanalys:](visualizations/fallout/fallout-flow.md) Fånga när en kund tappar kontakten och förstå vart han/hon ska gå.
+* [Enhetsövergripande analys:](../../components/cda/overview.md) Sammanfoga beteenden från flera enheter sömlöst för att bättre förstå vilka beröringspunkter varje enhet får.

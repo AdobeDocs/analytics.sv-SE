@@ -15,19 +15,19 @@ ht-degree: 1%
 
 >[!NOTE]
 >
-> Allmän information om marknadsföringskanaler finns på [Kom igång med marknadsföringskanaler](/help/components/c-marketing-channels/c-getting-started-mchannel.md).
+> Allmän information om marknadsföringskanaler finns i [Kom igång med marknadsföringskanaler](/help/components/c-marketing-channels/c-getting-started-mchannel.md).
 >
-> För att maximera effekten av marknadsföringskanaler för Attribution och Customer Journey Analytics har vi publicerat några [reviderad bästa praxis](/help/components/c-marketing-channels/mchannel-best-practices.md).
+> För att maximera effekten av marknadsföringskanaler för attribuering och Customer Journey Analytics har vi publicerat [reviderade best practices](/help/components/c-marketing-channels/mchannel-best-practices.md).
 
 **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]** > **[!UICONTROL Edit Settings]** > **[!UICONTROL Marketing Channels]** > **[!UICONTROL Marketing Channel Classifications]**.
 
 Använd klassificeringar för att kategorisera värden i relaterade grupper och för att rapportera på gruppnivå. Du kan till exempel klassificera alla betalsökningskampanjer i en kategori som videokort. Sedan kan du rapportera om resultatet för den kategorin i förhållande till mätvärden som instanser (eller klickningar).
 
-Klassificeringar som du lägger till i den här proceduren visas i dialogrutan [!UICONTROL Marketing Channel Overview] rapportera som [!UICONTROL Channel Values]. Kanalvärden är oklassificerade värden i kanalinformationen.
+Klassificeringar som du lägger till i den här proceduren visas i rapporten [!UICONTROL Marketing Channel Overview] som [!UICONTROL Channel Values]. Kanalvärden är oklassificerade värden i kanalinformationen.
 
 >[!NOTE]
 >
->Se till att du är bekant med att skapa klassificeringar i [Klassificeringar](/help/components/classifications/c-classifications.md).
+>Kontrollera att du är van vid att skapa klassificeringar i [klassificeringar](/help/components/classifications/c-classifications.md).
 
 >[!IMPORTANT]
 >
@@ -46,5 +46,5 @@ Klassificeringar som du lägger till i den här proceduren visas i dialogrutan [
 Skapa klassificeringar för [!UICONTROL Marketing Channels].
 
 1. Klicka på **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]**.
-1. I [!UICONTROL Report Suite Manager], klicka **[!UICONTROL Edit Settings]** > **[!UICONTROL Marketing Channels]** > **[!UICONTROL Marketing Channel Classification]**.
-1. Under [!UICONTROL Classifications], klicka **[!UICONTROL Add Classification]** (eller redigera en befintlig).
+1. I [!UICONTROL Report Suite Manager] klickar du på **[!UICONTROL Edit Settings]** > **[!UICONTROL Marketing Channels]** > **[!UICONTROL Marketing Channel Classification]**.
+1. Klicka på **[!UICONTROL Add Classification]** under [!UICONTROL Classifications] (eller redigera en befintlig).

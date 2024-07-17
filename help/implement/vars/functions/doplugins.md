@@ -13,26 +13,26 @@ ht-degree: 0%
 
 # doPlugins
 
-The `doPlugins` variabeln fungerar som ett&quot;sista anrop&quot; för att ange värden i implementeringen. Det är det bästa stället att ringa [Metoder för plugin-program](../plugins/impl-plugins.md) och ange önskade variabler innan en bildbegäran skickas. If [`usePlugins`](../config-vars/useplugins.md) är aktiverat körs den automatiskt precis innan någon typ av bildbegäran kompileras och skickas till Adobe, inklusive:
+Variabeln `doPlugins` fungerar som ett&quot;sista anrop&quot; för att ange värden i implementeringen. Det är en idealisk plats att anropa [plug-in-metoder](../plugins/impl-plugins.md) och ange önskade variabler innan en bildbegäran skickas. Om [`usePlugins`](../config-vars/useplugins.md) är aktiverat körs den automatiskt precis innan någon typ av bildbegäran kompileras och skickas till Adobe, inklusive:
 
-* All sidvy ([`t()`](t-method.md)) samtal
-* All länkspårning ([`tl()`](tl-method.md)), inklusive automatiska nedladdningslänkar och avslutningslänkar
+* Alla sidvyanrop ([`t()`](t-method.md))
+* Alla länkspårningsanrop ([`tl()`](tl-method.md)), inklusive automatiska hämtningslänkar och avslutningslänkar
 
-Använd `doPlugins` variabel för att anropa plugin-kod och ange slutliga variabelvärden precis innan en bildbegäran kompileras och skickas till Adobe.
+Använd variabeln `doPlugins` för att anropa plugin-programkod och ange slutliga variabelvärden precis innan en bildbegäran kompileras och skickas till Adobe.
 
 ## Använd On Before Event Skicka callback-kod med Web SDK-tillägget
 
-I stället för `doPlugins`används `onBeforeEventSend` med liknande funktionalitet.
+I stället för `doPlugins` använder Web SDK `onBeforeEventSend` med liknande funktioner.
 
-1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med dina inloggningsuppgifter för AdobeID.
 1. Klicka på den önskade taggegenskapen.
-1. Gå till [!UICONTROL Extensions] klickar du på **[!UICONTROL Configure]** knapp under [!UICONTROL Adobe Experience Platform Web SDK].
-1. Under [!UICONTROL Data Collection]klickar du på **[!UICONTROL Edit on before event send callback code]** -knappen.
+1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen **[!UICONTROL Configure]** under [!UICONTROL Adobe Experience Platform Web SDK].
+1. Klicka på knappen **[!UICONTROL Edit on before event send callback code]** under [!UICONTROL Data Collection].
 1. Placera önskad kod i redigeraren.
 
-## Använd `onBeforeEventSend` implementera Web SDK manuellt
+## Använd `onBeforeEventSend` för att implementera Web SDK manuellt
 
-I stället för `doPlugins`används `onBeforeEventSend` med liknande funktionalitet. Se [Ändra händelser globalt](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/tracking-events.html#modifying-events-globally) finns i Web SDK-dokumentationen.
+I stället för `doPlugins` använder Web SDK `onBeforeEventSend` med liknande funktioner. Mer information finns i [Ändra händelser globalt](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/tracking-events.html#modifying-events-globally) i Web SDK-dokumentationen.
 
 ```js
 // Set the trackingCode XDM field to "New value"
@@ -49,7 +49,7 @@ Det finns inget dedikerat fält i Adobe Analytics-tillägget som kan använda de
 
 ## s.doPlugins i AppMeasurement och egen kod
 
-Ange `s.doPlugins` till en funktion som innehåller önskad kod. Funktionen körs automatiskt när du anropar spårning.
+Ange variabeln `s.doPlugins` till en funktion som innehåller önskad kod. Funktionen körs automatiskt när du anropar spårning.
 
 ```js
 s.doPlugins = function() {/* Desired code */};
@@ -57,7 +57,7 @@ s.doPlugins = function() {/* Desired code */};
 
 >[!IMPORTANT]
 >
->Ange en funktion för `doPlugins` endast en gång i implementeringen. Om du anger `doPlugins` variabel mer än en gång, används bara den senaste koden.
+>Ange en funktion för variabeln `doPlugins` endast en gång i implementeringen. Om du anger variabeln `doPlugins` mer än en gång används bara den senaste koden.
 
 ## Exempel
 
@@ -75,4 +75,4 @@ s.doPlugins = function() {
 
 >[!NOTE]
 >
->Tidigare versioner av AppMeasurementet hade något annorlunda `doPlugins()` kod. Adobe rekommenderar att du använder formatet ovan som en god praxis.
+>Tidigare versioner av AppMeasurementet hade en något annorlunda `doPlugins()`-kod. Adobe rekommenderar att du använder formatet ovan som en god praxis.

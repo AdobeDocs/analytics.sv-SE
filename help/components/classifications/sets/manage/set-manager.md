@@ -16,19 +16,19 @@ Med Klassificeringsuppsättningshanteraren kan du skapa, redigera eller ta bort 
 
 **[!UICONTROL Components]** > **[!UICONTROL Classification sets]** > **[!UICONTROL Sets]**
 
-Klassificeringsuppsättningar består av **Prenumerationer** (rapportpaket och dimensionskombinationer) och **Klassificeringsnamn** (dimensioner som innehåller klassificeringsdata). Prenumerationer konfigureras under [Inställningar](settings.md), medan klassificeringsnamn konfigureras under [Schema](schema.md).
+Klassificeringsuppsättningar består av **Prenumerationer** (rapportpaket och dimensionskombinationer) och **Klassificeringsnamn** (dimensioner som innehåller klassificeringsdata). Prenumerationer konfigureras under [Inställningar](settings.md) medan klassificeringsnamn konfigureras under [Schema](schema.md).
 
 ## Filterklassificeringsuppsättningar
 
-Den vänstra sidan av klassificeringsuppsättningshanteraren innehåller filterinställningar för att hitta önskad klassificeringsuppsättning. När du klickar på filterikonen växlas synligheten för filterinställningarna. Du kan filtrera klassificeringsuppsättningar efter **[!UICONTROL Tags]** eller **[!UICONTROL Report suite]**.
+Den vänstra sidan av klassificeringsuppsättningshanteraren innehåller filterinställningar för att hitta önskad klassificeringsuppsättning. När du klickar på filterikonen växlas synligheten för filterinställningarna. Du kan filtrera klassificeringsgrupper efter **[!UICONTROL Tags]** eller **[!UICONTROL Report suite]**.
 
-![Filter för klassificeringsuppsättning](../../assets/classification-set-filters.png)
+![Klassificeringsuppsättningsfilter](../../assets/classification-set-filters.png)
 
 ## Hanteringskolumner för klassificeringsuppsättning
 
 Följande kolumner är tillgängliga i Klassificeringsuppsättningshanteraren:
 
-* **[!UICONTROL Classification set]**: Klassificeringsuppsättningens namn. Klicka på ett namn på en klassificeringsuppsättning [redigeringsinställningar](settings.md).
+* **[!UICONTROL Classification set]**: Klassificeringsuppsättningens namn. Om du klickar på ett klassificeringsuppsättningsnamn [redigeras dess inställningar](settings.md).
 * **[!UICONTROL Subscriptions]**: Antalet prenumerationer som den här klassificeringsuppsättningen gäller för.
 * **[!UICONTROL Classifications]**: Antalet klassificeringsdimensioner som klassificeringsuppsättningen innehåller.
 * **[!UICONTROL Automated]**: Avgör om klassificeringsuppsättningen är konfigurerad att automatiskt importera data från en molnplats. Automatisering kan konfigureras i klassificeringsuppsättningens [schema](schema.md).
@@ -40,7 +40,7 @@ Följande knappar är tillgängliga i Klassificeringsuppsättningshanteraren:
 
 * **[!UICONTROL Add]**: [Skapa](create.md) en klassificeringsgrupp.
 * **[!UICONTROL Search by title]**: Sök efter klassificeringsuppsättningar efter namn.
-* **[!UICONTROL Load more]**: Hanteraren för klassificeringsuppsättningar visar först upp till 1 000 klassificeringsuppsättningar. Den här knappen läser in ytterligare 1 000 klassificeringsuppsättningar.
+* **[!UICONTROL Load more]**: Klassificeringsuppsättningshanteraren visar initialt upp till 1 000 klassificeringsuppsättningar. Den här knappen läser in ytterligare 1 000 klassificeringsuppsättningar.
 * **Visa/dölj kolumner**: Växla synlighet för alla kolumner förutom [!UICONTROL Classification set].
 
 Välj en eller flera klassificeringsuppsättningar genom att klicka i kryssrutan bredvid önskad klassificeringsuppsättning. Om du väljer en klassificeringsuppsättning visas följande alternativ:

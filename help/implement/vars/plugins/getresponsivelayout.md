@@ -15,7 +15,7 @@ ht-degree: 0%
 
 {{plug-in}}
 
-The `getResponsiveLayout` Med plugin-programmet kan du spåra vilken version av den responsiva designbaserade webbplatsen som en besökare tittar på just nu. Adobe rekommenderar att du använder denna plugin om webbplatsen använder responsiv design och du vill spåra den version av webbplatsen som besökaren visar. Denna plugin behövs inte om webbplatsen inte använder responsiv design.
+Med plugin-programmet `getResponsiveLayout` kan du spåra vilken version av den responsiva designbaserade webbplatsen som en besökare tittar på just nu. Adobe rekommenderar att du använder denna plugin om webbplatsen använder responsiv design och du vill spåra den version av webbplatsen som besökaren visar. Denna plugin behövs inte om webbplatsen inte använder responsiv design.
 
 ## Installera plugin-programmet med Web SDK- eller Web SDK-tillägget
 
@@ -25,10 +25,10 @@ Det här plugin-programmet stöds ännu inte för användning i Web SDK.
 
 Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-programmen med Adobe Analytics.
 
-1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med dina inloggningsuppgifter för AdobeID.
 1. Klicka på den önskade taggegenskapen.
-1. Gå till [!UICONTROL Extensions] klickar du på [!UICONTROL Catalog] knapp
-1. Installera och publicera [!UICONTROL Common Analytics Plugins] extension
+1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Catalog]
+1. Installera och publicera tillägget [!UICONTROL Common Analytics Plugins]
 1. Om du inte redan har det skapar du en regel med namnet&quot;Initiera plugin-program&quot; med följande konfiguration:
    * Villkor: Inget
    * Händelse: Kärna - Bibliotek inläst (sidan ovanpå)
@@ -41,10 +41,10 @@ Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-program
 
 Om du inte vill använda tillägget för Common Analytics-plugin-program kan du använda den anpassade kodredigeraren.
 
-1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med dina inloggningsuppgifter för AdobeID.
 1. Klicka på önskad egenskap.
-1. Gå till [!UICONTROL Extensions] klickar du på **[!UICONTROL Configure]** under Adobe Analytics-tillägget.
-1. Expandera [!UICONTROL Configure tracking using custom code] dragspelspanel, som visar [!UICONTROL Open Editor] -knappen.
+1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen **[!UICONTROL Configure]** under Adobe Analytics-tillägget.
+1. Expandera dragspelsfliken [!UICONTROL Configure tracking using custom code] som visar knappen [!UICONTROL Open Editor].
 1. Öppna den anpassade kodredigeraren och klistra in den plugin-kod som finns nedan i redigeringsfönstret.
 1. Spara och publicera ändringarna i Analytics-tillägget.
 
@@ -61,13 +61,13 @@ var getResponsiveLayout=function(ppw,plw,tw){var c=ppw,b=plw,e=tw;if("-v"===c)re
 
 ## Använda plugin-programmet
 
-The `getResponsiveLayout` funktionen använder följande argument:
+Funktionen `getResponsiveLayout` använder följande argument:
 
 * **`ppw`** (obligatoriskt, heltal): Den maximala bredden på pixlar som ett webbläsarfönster kan ha innan sidan växlar från stående telefonlayout till liggande telefonlayout
-* **`plw`** (obligatoriskt heltal): Den maximala bredden på pixlar som ett webbläsarfönster kan ha innan sidan växlar från en liggande telefonlayout till en surfplattebaserad layout
-* **`tw`** (obligatoriskt heltal): Den maximala bredden på pixlar som ett webbläsarfönster kan ha innan sidan växlar från en surfplattelayout till en skrivbordsbaserad layout
+* **`plw`** (obligatoriskt, heltal): Den maximala bredden på pixlar som ett webbläsarfönster kan ha innan sidan växlar från en liggande telefonlayout till en surfplattebaserad layout
+* **`tw`** (obligatoriskt, heltal): Den maximala bredden på pixlar som ett webbläsarfönster kan ha innan sidan växlar från en surfplattelayout till en skrivbordsbaserad layout
 
-När den här funktionen anropas returneras en sträng som innehåller två delar avgränsade med kolon (`:`). Den första delen av strängen innehåller ett av följande värden, beroende på webbläsarens bredd och argumenten ovan:
+Om den här funktionen anropas returneras en sträng som innehåller två delar avgränsade med kolon (`:`). Den första delen av strängen innehåller ett av följande värden, beroende på webbläsarens bredd och argumenten ovan:
 
 * `"phone portrait layout"`
 * `"phone landscape layout"`
@@ -75,7 +75,7 @@ När den här funktionen anropas returneras en sträng som innehåller två dela
 * `"tablet layout"`
 * `"desktop layout"`
 
-Den andra delen av den returnerade strängen är webbläsarens bredd- och höjdmått. Till exempel: `"desktop layout:1243x700"`.
+Den andra delen av den returnerade strängen är webbläsarens bredd- och höjdmått. Exempel: `"desktop layout:1243x700"`.
 
 ## Exempel
 

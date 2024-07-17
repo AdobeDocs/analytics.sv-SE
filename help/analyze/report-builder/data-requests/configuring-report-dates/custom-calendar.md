@@ -43,7 +43,7 @@ Varje kalenderformat beskrivs nedan.
     <ul id="ul_1579FD106A47419486B03E248A5E6ED5"> 
      <li id="li_E9B9E8F03E324DBDA9139C2D0D599092"><b>4-5-4</b>:Januari har fyra veckor, februari har fem veckor, mars har fyra veckor och så vidare. </li> 
      <li id="li_D0675DBDEC4641D2A8645B5CDFC565AB"><b>4-4-5</b>: Januari har fyra veckor, februari har fyra veckor, mars har fem veckor och så vidare. </li> 
-     <li id="li_6743BBB9AC9A4CFEAA0CBCE51052BC29"><b>5-5-4</b>: januari har fem veckor, februari har fem veckor, mars har fyra veckor och så vidare. </li> 
+     <li id="li_6743BBB9AC9A4CFEAA0CBCE51052BC29"><b>5-5-4</b>: Januari har fem veckor, februari har fem veckor, mars har fyra veckor och så vidare. </li> 
     </ul> <p>Obs! Det här kalenderalternativet stöds i alla Adobe Analytics-verktyg: Analysis Workspace, Report Builder och Activity Map. Undantaget är Data Warehouse som inte har stöd för anpassade kalendrar. </p> </td> 
   </tr> 
  </tbody> 

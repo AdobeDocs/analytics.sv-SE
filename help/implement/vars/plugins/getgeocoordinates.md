@@ -15,17 +15,17 @@ ht-degree: 0%
 
 {{plug-in}}
 
-The `getGeoCoordinates` Med plugin-programmet kan du fånga latituden och longituden för besökarnas enheter. Adobe rekommenderar att du använder det här plugin-programmet om du vill hämta geoplatsdata i Analytics-variabler.
+Med plugin-programmet `getGeoCoordinates` kan du fånga latitud och longitud för besökarens enheter. Adobe rekommenderar att du använder det här plugin-programmet om du vill hämta geoplatsdata i Analytics-variabler.
 
 ## Installera plugin-programmet med Web SDK-tillägget
 
 Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-programmen med Web SDK.
 
-1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
-1. Klicka **[!UICONTROL Tags]** till vänster och klicka sedan på den önskade taggegenskapen.
-1. Klicka **[!UICONTROL Extensions]** till vänster och klicka sedan på **[!UICONTROL Catalog]** tab
-1. Leta rätt på och installera **[!UICONTROL Common Web SDK Plugins]** tillägg.
-1. Klicka **[!UICONTROL Data Elements]** till vänster och klicka sedan på dataelementet.
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med dina inloggningsuppgifter för AdobeID.
+1. Klicka på **[!UICONTROL Tags]** till vänster och klicka sedan på den önskade taggegenskapen.
+1. Klicka på **[!UICONTROL Extensions]** till vänster och sedan på fliken **[!UICONTROL Catalog]**
+1. Leta reda på och installera tillägget **[!UICONTROL Common Web SDK Plugins]**.
+1. Klicka på **[!UICONTROL Data Elements]** till vänster och klicka sedan på det önskade dataelementet.
 1. Ange det önskade dataelementnamnet med följande konfiguration:
    * Tillägg: Vanliga SDK-plugin-program för webben
    * Dataelement: `getGeoCoordinates`
@@ -39,10 +39,10 @@ Denna plugin stöds ännu inte för användning i en manuell implementering av W
 
 Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-programmen med Adobe Analytics.
 
-1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med dina inloggningsuppgifter för AdobeID.
 1. Klicka på den önskade taggegenskapen.
-1. Gå till [!UICONTROL Extensions] klickar du på [!UICONTROL Catalog] knapp
-1. Installera och publicera [!UICONTROL Common Analytics Plugins] extension
+1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Catalog]
+1. Installera och publicera tillägget [!UICONTROL Common Analytics Plugins]
 1. Om du inte redan har det skapar du en regel med namnet&quot;Initiera plugin-program&quot; med följande konfiguration:
    * Villkor: Inget
    * Händelse: Kärna - Bibliotek inläst (sidan ovanpå)
@@ -55,10 +55,10 @@ Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-program
 
 Om du inte vill använda tillägget för Common Analytics-plugin-program kan du använda den anpassade kodredigeraren.
 
-1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med dina inloggningsuppgifter för AdobeID.
 1. Klicka på önskad egenskap.
-1. Gå till [!UICONTROL Extensions] klickar du på **[!UICONTROL Configure]** under Adobe Analytics-tillägget.
-1. Expandera [!UICONTROL Configure tracking using custom code] dragspelspanel, som visar [!UICONTROL Open Editor] -knappen.
+1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen **[!UICONTROL Configure]** under Adobe Analytics-tillägget.
+1. Expandera dragspelsfliken [!UICONTROL Configure tracking using custom code] som visar knappen [!UICONTROL Open Editor].
 1. Öppna den anpassade kodredigeraren och klistra in den plugin-kod som finns nedan i redigeringsfönstret.
 1. Spara och publicera ändringarna i Analytics-tillägget.
 
@@ -75,17 +75,17 @@ function getGeoCoordinates(){if(arguments&&"-v"===arguments[0])return{plugin:"ge
 
 ## Använda plugin-programmet
 
-The `getGeoCoordinates` funktionen använder inte några argument. Det returnerar ett av följande värden:
+Funktionen `getGeoCoordinates` använder inga argument. Det returnerar ett av följande värden:
 
-* `"geo coordinates not available"`: För enheter som inte har geopositioneringsdata tillgängliga när plugin-programmet körs. Det här värdet är vanligt vid den första besöksträffen, särskilt när besökarna först måste ge sitt samtycke till att spåra sin plats.
+* `"geo coordinates not available"`: För enheter som inte har geoplatsdata tillgängliga när plugin-programmet körs. Det här värdet är vanligt vid den första besöksträffen, särskilt när besökarna först måste ge sitt samtycke till att spåra sin plats.
 * `"error retrieving geo coordinates"`: När plugin-programmet påträffar fel vid försök att hämta enhetens plats
-* `"latitude=[LATITUDE] | longtitude=[LONGITUDE]"`: Var [LATITUDE]/[LÄNGD] är latitud och longitud,
+* `"latitude=[LATITUDE] | longtitude=[LONGITUDE]"`: Där [LATITUDE]/[LONGITUDE] är latituden och longituden
 
 >[!NOTE]
 >
->Koordinatvärden avrundas till närmaste fjärde decimal. Värdet för `"40.438635333"` avrundas till `"40.4386"` för att begränsa antalet unika värden som ska hämtas. Värdena är tillräckligt nära för att identifiera enhetens exakta position inom ca 20 fot.
+>Koordinatvärden avrundas till närmaste fjärde decimal. Värdet `"40.438635333"` avrundas till `"40.4386"` för att begränsa antalet unika värden som ska fångas. Värdena är tillräckligt nära för att identifiera enhetens exakta position inom ca 20 fot.
 
-Denna plugin använder en cookie med namnet `"s_ggc"` att lagra koordinater mellan träffar om det behövs.
+Detta plugin-program använder en cookie med namnet `"s_ggc"` för att lagra koordinater mellan träffar vid behov.
 
 ## Exempel
 

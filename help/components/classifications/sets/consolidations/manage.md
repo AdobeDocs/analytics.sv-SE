@@ -16,11 +16,11 @@ Om du har flera klassificeringsuppsättningar som innehåller liknande data kan 
 
 **[!UICONTROL Components]** > **[!UICONTROL Classification sets]** > **[!UICONTROL Consolidations]**
 
-När en konsolidering har utförts tas de ursprungliga klassificeringsuppsättningarna bort och den konsoliderade klassificeringen ersätter dem. Klicka **[!UICONTROL Add]** till [Skapa en konsolidering](process.md).
+När en konsolidering har utförts tas de ursprungliga klassificeringsuppsättningarna bort och den konsoliderade klassificeringen ersätter dem. Klicka på **[!UICONTROL Add]** för att [skapa en konsolidering](process.md).
 
 ## Filterklassificeringsuppsättningar
 
-Den vänstra sidan av konsolideringshanteraren för klassificeringsuppsättningar innehåller filterinställningar för att hitta önskad konsolidering. När du klickar på filterikonen växlas synligheten för filterinställningarna. Du kan filtrera konsolideringar efter **[!UICONTROL Status]**, **[!UICONTROL Completion time]**, eller **[!UICONTROL Creation time]**.
+Den vänstra sidan av konsolideringshanteraren för klassificeringsuppsättningar innehåller filterinställningar för att hitta önskad konsolidering. När du klickar på filterikonen växlas synligheten för filterinställningarna. Du kan filtrera konsolideringar efter **[!UICONTROL Status]**, **[!UICONTROL Completion time]** eller **[!UICONTROL Creation time]**.
 
 ![Konsolideringsfilter för klassificeringsuppsättning](../../assets/classification-set-consolidation-filters.png)
 
@@ -36,5 +36,5 @@ Följande kolumner är tillgängliga i konsolideringshanteraren för klassificer
 * **[!UICONTROL Name]**: Konsolideringens namn.
 * **[!UICONTROL Current job]**: Det aktuella jobbet. <!-- todo: better description -->
 * **[!UICONTROL Status]**: Konsolideringens status. <!-- todo: get list of possible statuses -->
-* **[!UICONTROL Creation date]**: Datum och tid då konsolideringen skapades.
-* **[!UICONTROL Completion date]**: Datum och tid då konsolideringen slutfördes (eller misslyckades).
+* **[!UICONTROL Creation date]**: Det datum och den tidpunkt då konsolideringen skapades.
+* **[!UICONTROL Completion date]**: Det datum och den tidpunkt då konsolideringen slutfördes (eller misslyckades).

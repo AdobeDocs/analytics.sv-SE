@@ -5,14 +5,14 @@ feature: Dimensions
 exl-id: 8ec31e17-a57d-416f-b471-c2c37a98d134
 source-git-commit: d095628e94a45221815b1d08e35132de09f5ed8f
 workflow-type: tm+mt
-source-wordcount: '252'
+source-wordcount: '264'
 ht-degree: 0%
 
 ---
 
 # Returfrekvens
 
-&#39;Returfrekvensen&#39; [dimension](overview.md) visar hur lång tid det tar mellan besöken och besökarna. När en besökare kommer tillbaka till er webbplats tittar Adobe på hur länge sedan det förra besöket var och låser träffen i rätt dimensionsobjekt. Den här dimensionen är värdefull för att du ska kunna mäta webbplatsens attraktion och relevans för besökarna över tid. Det kan också hjälpa till att identifiera effekten av webbplatsens innehåll och kampanjer för besökarna.
+Returfrekvensen [dimension](overview.md) visar hur lång tid det tar mellan besöken från återkommande besökare. När en besökare kommer tillbaka till er webbplats tittar Adobe på hur länge sedan det förra besöket var och låser träffen i rätt dimensionsobjekt. Den här dimensionen är värdefull för att du ska kunna mäta webbplatsens attraktion och relevans för besökarna över tid. Det kan också hjälpa till att identifiera effekten av webbplatsens innehåll och kampanjer för besökarna.
 
 >[!TIP]
 >

@@ -12,9 +12,9 @@ ht-degree: 0%
 
 # Genomsnittlig tid på plats
 
-Genomsnittlig tid på plats [mått](overview.md) visar den tid som passerat mellan träffar för en given dimensionsuppgift. Det här måttet är användbart när du vill se den genomsnittliga tiden för specifika dimensionsobjekt. Du kan också trender för detta mätresultat över tiden för att se hur den totala tiden som används ändras. Det här måttet visas i `HH:MM:SS` format.
+[Måttet](overview.md) för genomsnittlig tid på platsen visar hur lång tid det tar mellan träffarna för en given dimensionspost. Det här måttet är användbart när du vill se den genomsnittliga tiden för specifika dimensionsobjekt. Du kan också trender för detta mätresultat över tiden för att se hur den totala tiden som används ändras. Det här måttet visas i formatet `HH:MM:SS`.
 
-Detta mått är relaterat till [Tid per besök](../dimensions/time-spent-per-visit.md) dimension.
+Det här måttet är relaterat till [tiden per besök](../dimensions/time-spent-per-visit.md)-dimensionen.
 
 ## Hur det här måttet beräknas
 
@@ -35,24 +35,24 @@ Här följer ett exempel:
 | `12:25:40` | `Product page A` |
 
 
-Om du vill ha genomsnittlig tid på platsen för dimensionsposten `Product page A`, tar först den tid som förflutit mellan träffarna för den dimensionen:
+Om du vill ha genomsnittlig tid på platsen för dimensionsobjektet `Product page A` måste du först ta den tid som förflutit mellan träffar för den dimensionen:
 
-* **12:04:20-12:05:30** - 1 minut 10 sekunder
-* **12:05:30-12:07:00** - 1 minut 30 sekunder
-* **12:07:40-12:08:10** - 30 sekunder
-* **12:25:40 - ?** - Ingår inte
+* **12:04:20 - 12:05:30** - 1 minut 10 sekunder
+* **12:05:30 - 12:07:00** - 1 minut 30 sekunder
+* **12:07:40 - 12:08:10** - 30 sekunder
+* **12:25:40 - ?** - ingår inte
 
 Den totala tidsåtgången för `Product page A` är `00:03:10`. Det fanns två sekvenser i besöket; den första sekvensen för de två på varandra följande värdena och den andra före utcheckningen. Den sista träffen vid besöket är inte en sekvens eftersom det inte finns någon sluttidsstämpel.
 
-Genomsnittlig tid på plats för `Product page A` är `00:01:35`.
+Den genomsnittliga tiden på platsen för `Product page A` är `00:01:35`.
 
 >[!NOTE]
 >
->Det här måttet visar ett värde på `"Invalid"` om dimensionsobjektet endast innehåller träffar som var de senaste vid ett besök. Det här måttet kräver en efterföljande träff för att spåra hur mycket tid som använts.
+>Det här måttet visar värdet `"Invalid"` om dimensionsobjektet bara innehåller träffar som var senaste i ett besök. Det här måttet kräver en efterföljande träff för att spåra hur mycket tid som använts.
 
 ## Genomsnittlig tid på plats (sekunder)
 
-Mätvärdet för genomsnittlig tid på plats (sekunder) visar samma data som ett heltal i stället för som `HH:MM:SS` format. Det här måttet är mest värdefullt som en komponent i beräknade värden.
+Mätvärdet för genomsnittlig tid på plats (sekunder) visar samma data som ett heltal i stället för i formatet `HH:MM:SS`. Det här måttet är mest värdefullt som en komponent i beräknade värden.
 
 ## Uppdelningssummor matchar inte den överordnade radobjektet
 
@@ -65,13 +65,13 @@ Mätvärdet för genomsnittlig tid på plats använder obrutna sekvenser av en g
 | `12:02:10` | `Home` | `Foxes` |
 | `12:02:20` | `(None; exit link click)` | `(None; exit link click)` |
 
-Beräknar genomsnittlig tid på plats för dimensionsposten `Home` använder följande beräkning:
+Följande beräkning används för att beräkna den genomsnittliga tiden på platsen för dimensionsobjektet `Home`:
 
 ```text
 (30 + 10) / 2 = 20 seconds average time on site
 ```
 
-Om du tillämpade en nedbrytning med [Platsavsnitt](../dimensions/site-section.md) -dimensionen skulle den använda följande beräkning:
+Om du tillämpade en uppdelning med dimensionen [Platsavsnitt](../dimensions/site-section.md) skulle följande beräkning användas:
 
 ```text
 (30 + 100 + 10) / 1 = 140 seconds (2 minutes 20 seconds) average time on site
@@ -81,6 +81,6 @@ Eftersom det fanns en enda sekvens i uppdelningsdimensionen används en annan n�
 
 ## Procent över 100 %
 
-Det här måttet innehåller ofta procenttal över 100 %. Nämnaren är hela dimensionens genomsnittliga tid på platsen, och täljaren är dimensionsobjektets genomsnittliga tid på platsen. Om hela dimensionens genomsnittliga tid på platsen är lägre än en given dimensionsobjekts genomsnittliga tid på platsen, visas procentsatser över 100 %. Sortering av rankade rapporter efter det här måttet visar en onormal genomsnittlig tid på webbplatsvärden, vilket vanligtvis inte är värdefullt. Adobe rekommenderar sortering med ett annat mått, som [Besök](visits.md), i rankade rapporter.
+Det här måttet innehåller ofta procenttal över 100 %. Nämnaren är hela dimensionens genomsnittliga tid på platsen, och täljaren är dimensionsobjektets genomsnittliga tid på platsen. Om hela dimensionens genomsnittliga tid på platsen är lägre än en given dimensionsobjekts genomsnittliga tid på platsen, visas procentsatser över 100 %. Sortering av rankade rapporter efter det här måttet visar en onormal genomsnittlig tid på webbplatsvärden, vilket vanligtvis inte är värdefullt. Adobe rekommenderar sortering efter ett annat mått, som [Besök](visits.md), i rankade rapporter.
 
-Se [Tidsåtgång - översikt](time-spent.md) om du vill ha mer allmän information om hur länge du har tillbringat.
+Mer allmän information om hur lång tid du tillbringar finns i [Tidsåtgång - översikt](time-spent.md).

@@ -19,17 +19,17 @@ Med mätvärden kan du kvantifiera datapunkter i Analysis Workspace. De används
 
 Adobe erbjuder flera typer av mätvärden som kan användas i Analysis Workspace:
 
-* **Standardmått**: De flesta mätvärden som används i projekt är standardvärden. Exempel: [Sidvyer](/help/components/metrics/page-views.md), [Intäkter](/help/components/metrics/revenue.md), eller [Anpassade händelser](/help/components/metrics/custom-events.md). Se [Översikt över mått](/help/components/metrics/overview.md) i användarhandboken för komponenter om du vill ha mer information.
+* **Standardmått**: De flesta mätvärden som du använder i projekt är standardvärden. Exempel är [Sidvyer](/help/components/metrics/page-views.md), [Intäkter](/help/components/metrics/revenue.md) eller [Anpassade händelser](/help/components/metrics/custom-events.md). Mer information finns i [Metrisk översikt](/help/components/metrics/overview.md) i användarhandboken för komponenter.
 
   ![Standardmått](assets/standard-metric.png)
 
-* **Beräknade mått**: Användardefinierade mått som baseras på standardvärden, statiska tal eller algoritmiska funktioner. Användardefinierade beräknade värden visar en räkneikon i listan över tillgängliga komponenter. Se [Översikt över beräknade värden](/help/components/c-calcmetrics/cm-overview.md) i användarhandboken för komponenter om du vill ha mer information.
+* **Beräknade mått**: Användardefinierade mått som baseras på standardvärden, statiska tal eller algoritmiska funktioner. Användardefinierade beräknade värden visar en räkneikon i listan över tillgängliga komponenter. Mer information finns i [Översikt över beräknade mått](/help/components/c-calcmetrics/cm-overview.md) i användarhandboken för komponenter.
 
   ![Beräknat mått](assets/calculated-metric.png)
 
-* **Mallar för beräknade mätvärden**: Adobe-definierade mått som beter sig på liknande sätt som beräknade värden. Du kan använda dem som de är i Workspace-projekt eller spara en kopia för att anpassa dess logik. Mallar för beräknade mätvärden visar en Adobe-ikon i listan över tillgängliga komponenter.
+* **Beräknade måttmallar**: Adobe-definierade mått som beter sig på liknande sätt som beräknade mått. Du kan använda dem som de är i Workspace-projekt eller spara en kopia för att anpassa dess logik. Mallar för beräknade mätvärden visar en Adobe-ikon i listan över tillgängliga komponenter.
 
-  ![Mallen Beräknade mätvärden](assets/calculated-metric-template.png)
+  ![Mallen Beräknade mått](assets/calculated-metric-template.png)
 
 ## Använd mätvärden i Analysis Workspace
 
@@ -49,13 +49,13 @@ Beräknade mätvärden gör att du enkelt kan se hur mätvärden relaterar till 
 
 ## Jämför mätvärden med olika attribueringsmodeller
 
-Om du snabbt och enkelt vill jämföra en attribueringsmodell med en annan högerklickar du på ett mätresultat och väljer **[!UICONTROL Compare Attribution Models]**:
+Om du snabbt och enkelt vill jämföra en attribueringsmodell med en annan högerklickar du på ett mätvärde och väljer **[!UICONTROL Compare Attribution Models]**:
 
-![Jämför attribution](assets/compare-attribution.png)
+![Jämför attribuering](assets/compare-attribution.png)
 
 Med den här genvägen kan du snabbt och enkelt jämföra en attribueringsmodell med en annan utan att dra i ett mätresultat och konfigurera det två gånger.
 
-## Använd [!UICONTROL cumulative average] funktion för att använda måttutjämning
+## Använd funktionen [!UICONTROL cumulative average] för att använda måttutjämning
 
 Här är en video om ämnet:
 

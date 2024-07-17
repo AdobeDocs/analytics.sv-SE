@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Kvartal på året
 
-Årskvartal [dimension](overview.md) rapporterar kvartalet av ett givet år som en dimensionspost. Den här rapporten är värdefull om du vill ha en rapport som delas upp efter årets kvartal, men inte vill ha ett statiskt datum som dimensionsposter. Du kan samla in års-över-år-rapporter per kvartal, så Q1-data för det här året aggregerar med Q1-data från förra året i samma dimensionspost.
+Kvartal på året [dimension](overview.md) rapporterar kvartal på ett givet år som en dimensionspost. Den här rapporten är värdefull om du vill ha en rapport som delas upp efter årets kvartal, men inte vill ha ett statiskt datum som dimensionsposter. Du kan samla in års-över-år-rapporter per kvartal, så Q1-data för det här året aggregerar med Q1-data från förra året i samma dimensionspost.
 
 ## Fyll den här dimensionen med data
 
@@ -20,4 +20,4 @@ Den här dimensionen fungerar som den ska för alla implementeringar. Om en rapp
 
 ## Dimensioner
 
-Dimensionen omfattar numeriska fjärdedelar av året (`1` till `4`), som representerar den fjärdedel av året då träffen inträffade.
+Dimensionen innehåller numeriska fjärdedelar av året (`1` till `4`), vilket representerar kvarteret av året då träffen inträffade.

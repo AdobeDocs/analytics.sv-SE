@@ -12,10 +12,10 @@ ht-degree: 0%
 
 # Vyer
 
-Vyer för kundvagnen [mått](overview.md) visar hur många gånger en besökare visade sin kundvagn. Detta mått är användbart när du vill förstå den del av konverteringstratten där kunderna ser innehållet i sina varukorgar.
+I kundvagnsvyn [anger ](overview.md) hur många gånger en besökare har visat sin kundvagn. Detta mått är användbart när du vill förstå den del av konverteringstratten där kunderna ser innehållet i sina varukorgar.
 
 ## Hur det här måttet beräknas
 
-Det här måttet räknar antalet träffar där `scView` finns i [`events`](/help/implement/vars/page-vars/events/events-overview.md) variabel.
+Det här måttet räknar antalet träffar där `scView` finns i variabeln [`events`](/help/implement/vars/page-vars/events/events-overview.md).
 
-Se [Korgar](carts.md) för en jämförelse av mätvärden.
+Se [Kartor](carts.md) om du vill ha en måttjämförelse.

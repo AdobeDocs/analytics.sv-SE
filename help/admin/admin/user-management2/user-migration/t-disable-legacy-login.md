@@ -18,14 +18,14 @@ Lär dig hur du inaktiverar äldre inloggningar för Analytics-användare.
 När användarna har migrerat från det äldre användarhanteringssystemet Analytics till Adobe Admin Console kan du inaktivera deras gamla inloggningar. Om du inaktiverar äldre inloggningar dirigeras användare om till inloggningen på Experience Cloud om de försöker använda den gamla inloggningen.
 
 1. Öppna migreringsverktyget i **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL User ID Migration]**.
-1. I [!DNL User Information] , leta reda på domänen som innehåller de användare du vill arbeta med och klicka sedan på **[!UICONTROL Select Users]**.
+1. I avsnittet [!DNL User Information] letar du reda på domänen som innehåller de användare du vill arbeta med och klickar sedan på **[!UICONTROL Select Users]**.
 1. Markera de användare med äldre inloggningar som du vill inaktivera.
 
    ![](/help/admin/admin/user-management2/user-migration/assets/user-info.png)
 
-   Vilka användare som är berättigade får statusen *`Migrated`* under kolumnen Migreringsstatus. Du kan inte inaktivera en användares tidigare inloggning förrän användaren har migrerats.
-1. Klicka **[!UICONTROL Disable Legacy Login]** och sedan klicka **[!UICONTROL Done]**.
+   Användarna som är berättigade får statusen *`Migrated`* under kolumnen Migreringsstatus. Du kan inte inaktivera en användares tidigare inloggning förrän användaren har migrerats.
+1. Klicka på **[!UICONTROL Disable Legacy Login]** och sedan på **[!UICONTROL Done]**.
 
-   Inaktivera äldre inloggning anger vilka av dina användare som kan fortsätta använda sina äldre [!DNL my.omniture.com] användarnamn och lösenord.
+   Inaktivera äldre inloggning anger vilka av dina användare som kan fortsätta att använda sitt gamla [!DNL my.omniture.com]-användarnamn och lösenord.
 
    Du kan inte inaktivera äldre inloggningar för en användare som ännu inte har migrerats. När det är inaktiverat måste användaren använda sitt Experience Cloud-ID för att logga in och få åtkomst till Analytics.

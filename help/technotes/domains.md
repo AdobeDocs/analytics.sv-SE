@@ -2,7 +2,8 @@
 title: Domäner som används av Adobe Analytics
 description: Tillåt dessa domäner via företagets brandvägg för en optimal upplevelse med Adobe Analytics.
 feature: Data Configuration and Collection
-source-git-commit: 3653a4e71d96ae636205840e1b8b456162521401
+exl-id: 41f11b71-c97e-45e8-9ca5-7992f02579f5
+source-git-commit: c1d1693bef617e3ebd6bf4f007c2235b2098a016
 workflow-type: tm+mt
 source-wordcount: '146'
 ht-degree: 0%

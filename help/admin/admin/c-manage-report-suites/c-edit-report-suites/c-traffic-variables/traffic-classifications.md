@@ -22,7 +22,7 @@ Trafikklassificeringar gör att du kan klassificera trafikvariabler (props). Tra
 
 På sidan Trafikklassificeringar kan du skapa klassificeringar för de valda rapportsviterna. När de har klassificerats kan alla rapporter som du kan generera med nyckeldata också genereras med de associerade attributen.
 
-När du har aktiverat klassificeringar kan du använda [Klassificeringsimporteraren](/help/components/classifications/importer/c-working-with-saint.md) att tilldela specifika värden till lämplig klassificering.
+När du har aktiverat klassificeringar använder du [Klassificeringsimporteraren](/help/components/classifications/importer/c-working-with-saint.md) för att tilldela specifika värden till lämplig klassificering.
 
 ## Lägg till en trafikklassificering {#task_4DB49CCB1D764483907BC33A5CEB7315}
 
@@ -34,17 +34,17 @@ t_classification_add_traffic.xml
 
 Så här lägger du till eller redigerar klassificeringar för de valda rapportsviterna:
 
-1. Klicka **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]** i Suite-rubriken.
+1. Klicka på **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]** i Suite-rubriken.
 1. Välj en rapportsvit.
-1. I **[!UICONTROL Select Classification Type]** väljer du variabeln där du vill lägga till en klassificering.
+1. I fältet **[!UICONTROL Select Classification Type]** väljer du variabeln där du vill lägga till en klassificering.
 1. Klicka på **[!UICONTROL Edit Settings]** > **[!UICONTROL Traffic]** > **[!UICONTROL Traffic Classifications]**.
 
    ![Steginformation](/help/admin/admin/assets/traffic-classification.png)
 
-1. För musen över **[!UICONTROL Edit Classification]** ikon och sedan välja **[!UICONTROL Add Classification]** eller **[!UICONTROL Edit Classification]**.
-1. I **[!UICONTROL Text Classification]** konfigurerar du klassificeringen efter behov:
+1. För musen över ikonen **[!UICONTROL Edit Classification]** och välj sedan **[!UICONTROL Add Classification]** eller **[!UICONTROL Edit Classification]**.
+1. Konfigurera klassificeringen enligt dina önskemål i dialogrutan **[!UICONTROL Text Classification]**:
 
    **[!UICONTROL Name:]** Ange klassificeringsnamnet.
 
-   **[!UICONTROL Description]**: Ge en mer detaljerad beskrivning.
+   **[!UICONTROL Description]**: Ange en mer detaljerad beskrivning.
 1. Klicka på **[!UICONTROL Save]**.

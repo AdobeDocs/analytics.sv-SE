@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Du kan ange anpassade rapportbeskrivningar för eVars, props, klassificeringar och händelser. Beskrivningarna är synliga för alla slutanvändare.
 
-**[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]** > **[!UICONTROL Edit Settings]** > **[!UICONTROL *variabel *]**
+**[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]** > **[!UICONTROL Edit Settings]** > **[!UICONTROL *variable *]**
 
 >[!NOTE]
 >

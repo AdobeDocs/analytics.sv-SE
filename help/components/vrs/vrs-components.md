@@ -20,12 +20,12 @@ Här är en video om komponenturval:
 
 >[!NOTE]
 >
->Ändringar har gjorts som komponentadministratörer och icke-administratörer kan se i förvaltade arbetsyteprojekt och utvalda virtuella rapportsviter. Tidigare kunde vem som helst se komponenter som inte är kuraterade genom att klicka **[!UICONTROL Show all Components]**. The [uppdaterad kursupplevelse](/help/analyze/analysis-workspace/curate-share/curate.md) ger mer detaljerad kontroll över vilka komponenter som är synliga.
+>Ändringar har gjorts som komponentadministratörer och icke-administratörer kan se i förvaltade Workspace-projekt och utvalda virtuella rapportsviter. Tidigare kunde vem som helst se komponenter som inte är kuraterade genom att klicka på **[!UICONTROL Show all Components]**. Den [uppdaterade kurationsfunktionen](/help/analyze/analysis-workspace/curate-share/curate.md) ger mer detaljerad kontroll över vilka komponenter som är synliga.
 
 Om du vill aktivera komponenturval
 
 1. Gå till **[!UICONTROL Analytics]** > **[!UICONTROL Components]** > **[!UICONTROL Virtual report suites]** > **[!UICONTROL Create new virtual report suite]**.
-1. När du har definierat **[!UICONTROL Settings]** klickar du på **[!UICONTROL Components]** -fliken.
+1. När du har definierat **[!UICONTROL Settings]** klickar du på fliken **[!UICONTROL Components]**.
 
 1. Markera kryssrutan **[!UICONTROL Enable Customization of Virtual report suite components]**:
 
@@ -33,7 +33,7 @@ Om du vill aktivera komponenturval
 
    >[!NOTE]
    >
-   >Om komponentanpassning är aktiverat är den virtuella rapportsviten tillgänglig **endast i Analysis Workspace** och är inte tillgängligt i följande:
+   >Om komponentanpassning är aktiverat är den virtuella rapportsviten tillgänglig **endast i Analysis Workspace** och är inte tillgänglig i följande:
    >
    >* [!UICONTROL Data Warehouse]
    >* [!UICONTROL Report Builder]
@@ -49,15 +49,15 @@ Om du vill aktivera komponenturval
 
    >[!NOTE]
    >
-   >Du behöver inte *dela* förvaltade komponenter (segment, beräknade värden, datumintervall). De visas alltid i Analysis Workspace om de har kuraterats för den virtuella rapportsviten, även om de inte delas.
+   >Du behöver inte *dela* kuraterade komponenter (segment, beräknade värden, datumintervall). De visas alltid i Analysis Workspace om de har kuraterats för den virtuella rapportsviten, även om de inte delas.
 
-1. Du kan dessutom filtrera eller söka efter komponenterna och lägga till hela den filtrerade markeringen i den inkluderade kolumnen genom att klicka på **[!UICONTROL Add All]**.
+1. Dessutom kan du filtrera eller söka efter komponenterna och lägga till hela den filtrerade markeringen i den inkluderade kolumnen genom att klicka på **[!UICONTROL Add All]**.
 
    ![](assets/vrs-add-all.png)
 
 ## Byt namn på komponenter {#section_0F7CD9F684FE4765BC00A2AFED56550E}
 
-Du kan ändra visningsnamnen för inkluderade komponenter som är specifika för den virtuella rapportsviten. Om du till exempel vill inkludera Sidnamn i den virtuella rapportsviten, men vill byta namn på den till en mer mobilvänlig kontext, kan du ändra den till Appskärmar. Det nya namnet visas i Analysis Workspace när den här virtuella rapportsviten används.
+Du kan ändra visningsnamnen för inkluderade komponenter som är specifika för den virtuella rapportsviten. Om du till exempel vill inkludera Sidnamn i den virtuella rapportsviten, men vill byta namn på den till en mer mobilvänlig kontext, kan du ändra den till App Screens. Det nya namnet visas i Analysis Workspace när den här virtuella rapportsviten används.
 
 ![](assets/vrs-rename-component.png)
 
@@ -71,6 +71,6 @@ Använd komponentgrupper för att göra satsvis komponenttillägg i din virtuell
 
 ![](assets/vrs-comp-grp.png)
 
-## Arbetsytebeteende {#section_6C32F8B642804C0097FCB14E21028D4A}
+## Workspace Behavior {#section_6C32F8B642804C0097FCB14E21028D4A}
 
-Mer information om kurser i Analysis Workspace finns i [Kuratera och dela ett projekt](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/curate.html).
+Mer information om kurering i Analysis Workspace finns i [Kuratera och dela ett projekt](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/curate.html).

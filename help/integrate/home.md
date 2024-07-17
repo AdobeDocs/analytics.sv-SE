@@ -18,7 +18,7 @@ Den här guiden fokuserar på att integrera flera Adobe Experience Cloud-lösnin
 
 * **Audience Analytics:** Integrera Adobe Audience Manager med Adobe Analytics.
 * **Advertising Analytics:** Se betalda sökdata sida vid sida med Adobe Analytics-data.
-* **Analyser för Advertising Cloud DSP:** Integrerar Adobe Analytics och Adobe Advertising Cloud för att utöka och förbättra funktionerna i respektive produkt. Här är en videoöversikt:
+* **Analytics for Advertising Cloud DSP:** Integrerar Adobe Analytics och Adobe Advertising Cloud för att utöka och förbättra funktionerna i varje produkt. Här är en videoöversikt:
 
   >[!VIDEO](https://video.tv.adobe.com/v/27237/?quality=12)
 * **Analytics för Target:** A4T integrerar Adobe Analytics med Adobe Target.

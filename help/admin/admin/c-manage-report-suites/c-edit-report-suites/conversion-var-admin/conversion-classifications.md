@@ -13,17 +13,17 @@ ht-degree: 1%
 
 # Konverteringsklassificeringar
 
-Klassificeringar används för att kategorisera värden i grupper och rapportera på gruppnivå. Du kan till exempel klassificera alla [!UICONTROL Paid Search] kampanjer i en kategori som *pop term* och rapportera om hur den kategorin fungerar i förhållande till mätvärden som instanser (klickfrekvens) och konvertering till lyckade händelser. Du kan lägga till upp till 255 klassificeringar i en variabel.
+Klassificeringar används för att kategorisera värden i grupper och rapportera på gruppnivå. Du kan t.ex. klassificera alla [!UICONTROL Paid Search] kampanjer i en kategori som *popmusiktermer* och rapportera om hur framgångsrik den kategorin är i förhållande till mätvärden som instanser (klickningar) och konvertering till lyckade händelser. Du kan lägga till upp till 255 klassificeringar i en variabel.
 
 **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]** > **[!UICONTROL Edit Settings]** > **[!UICONTROL Conversion]** > **[!UICONTROL Conversion Classifications]**
 
 Med konverteringsklassificeringar kan du klassificera konverteringsvariabler. När de har klassificerats kan alla rapporter som du kan generera med nyckeldata också genereras med hjälp av de associerade dataegenskaperna.
 
-När du har aktiverat klassificeringar använder du [Klassificeringsimportör](/help/components/classifications/importer/c-working-with-saint.md) att tilldela specifika värden till lämplig klassificering.
+När du har aktiverat klassificeringar använder du [Klassificeringsimporteraren](/help/components/classifications/importer/c-working-with-saint.md) för att tilldela specifika värden till lämplig klassificering.
 
 >[!WARNING]
 >
->Om du byter namn på en klassificering kan det orsaka problem med befintliga regler som skapats i [Skapa klassificeringsregel](/help/components/classifications/crb/classification-rule-builder.md). Om du byter namn på en klassificering som har klassificeringsregler måste du korrigera varje regel så att den pekar på den nya klassificeringen.
+>Om du byter namn på en klassificering kan det orsaka problem med befintliga regler som har skapats i [klassificeringsregelbyggaren](/help/components/classifications/crb/classification-rule-builder.md). Om du byter namn på en klassificering som har klassificeringsregler måste du korrigera varje regel så att den pekar på den nya klassificeringen.
 
 ## Beskrivningar av konverteringsklassificeringar
 
@@ -38,18 +38,18 @@ När du har aktiverat klassificeringar använder du [Klassificeringsimportör](/
 
 Så här lägger du till konverteringsklassificeringar i Admin:
 
-1. Klicka **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]**.
+1. Klicka på **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]**.
 1. Välj en rapportsvit.
 1. Klicka på **[!UICONTROL Edit Settings]** > **[!UICONTROL Conversion]** > **[!UICONTROL Conversion Classifications]**.
-1. Från **[!UICONTROL Select Classification Type]** väljer du variabeln där du vill lägga till en klassificering.
+1. I listrutan **[!UICONTROL Select Classification Type]** väljer du variabeln där du vill lägga till en klassificering.
 
    ![Steginformation](/help/admin/admin/assets/sub_class_create.png)
 
-1. För musen över **[!UICONTROL Edit Classification]** ikon och sedan välja **[!UICONTROL Add Classification]**.
-1. I **[!UICONTROL Select Type]** väljer du den typ av klassificering som du vill lägga till i variabeln.
+1. För musen över ikonen **[!UICONTROL Edit Classification]** och välj sedan **[!UICONTROL Add Classification]**.
+1. I fältet **[!UICONTROL Select Type]** väljer du den typ av klassificering som du vill lägga till i variabeln.
 
-   Alternativen inkluderar **[!UICONTROL Text]** och **[!UICONTROL Numeric]**. Mer information om klassificeringstyper finns i [Om klassificeringar](/help/components/classifications/c-classifications.md).
-1. I **[!UICONTROL Text Classifications]** konfigurerar du klassificeringen efter behov.
+   Alternativen är **[!UICONTROL Text]** och **[!UICONTROL Numeric]**. Mer information om klassificeringstyper finns i [Om klassificeringar](/help/components/classifications/c-classifications.md).
+1. Konfigurera klassificeringen i dialogrutan **[!UICONTROL Text Classifications]** efter behov.
 
 1. Lägg till eller ta bort alternativ i listrutan.
 
@@ -61,9 +61,9 @@ Så här lägger du till konverteringsklassificeringar i Admin:
 
 Ta bort en konverteringsklassificering när den inte längre behövs.
 
-1. Öppna Report Suite Manager genom att klicka på **[!UICONTROL Admin]**> **[!UICONTROL Report Suites]** i Suite-rubriken.
+1. Öppna Report Suite-hanteraren genom att klicka på **[!UICONTROL Admin]**> **[!UICONTROL Report Suites]** i Suite-rubriken.
 1. Välj en rapportsvit.
 1. Klicka på **[!UICONTROL Edit Settings]** > **[!UICONTROL Conversion]** > **[!UICONTROL Conversion Classifications]**.
-1. Från **[!UICONTROL Select Classification Type]** väljer du variabeln där du vill ta bort en klassificering.
-1. För musen över **[!UICONTROL Edit Classification]** ikon och sedan välja **[!UICONTROL Delete Classification]**.
-1. I dialogrutan Ta bort klassificering klickar du på **[!UICONTROL Delete]**.
+1. I listrutan **[!UICONTROL Select Classification Type]** väljer du variabeln där du vill ta bort en klassificering.
+1. För musen över ikonen **[!UICONTROL Edit Classification]** och välj sedan **[!UICONTROL Delete Classification]**.
+1. Klicka på **[!UICONTROL Delete]** i dialogrutan Ta bort klassificering.

@@ -15,17 +15,17 @@ ht-degree: 0%
 
 {{plug-in}}
 
-The `getValOnce` plugin-programmet förhindrar att en variabel ställs in som lika med samma värde mer än en gång. Adobe rekommenderar att du använder denna plugin när du vill ta bort dubbletter av förekomster där en besökare uppdaterar en sida eller på annat sätt besöker en viss sida flera gånger. Denna plugin behövs inte om du inte är orolig för förekomstmåttet i Analysis Workspace.
+Plugin-programmet `getValOnce` förhindrar att en variabel ställs in på samma värde flera gånger. Adobe rekommenderar att du använder denna plugin när du vill ta bort dubbletter av förekomster där en besökare uppdaterar en sida eller på annat sätt besöker en viss sida flera gånger. Denna plugin behövs inte om du inte är orolig för förekomstmåttet i Analysis Workspace.
 
 ## Installera plugin-programmet med Web SDK-tillägget
 
 Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-programmen med Web SDK.
 
-1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
-1. Klicka **[!UICONTROL Tags]** till vänster och klicka sedan på den önskade taggegenskapen.
-1. Klicka **[!UICONTROL Extensions]** till vänster och klicka sedan på **[!UICONTROL Catalog]** tab
-1. Leta rätt på och installera **[!UICONTROL Common Web SDK Plugins]** tillägg.
-1. Klicka **[!UICONTROL Data Elements]** till vänster och klicka sedan på dataelementet.
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med dina inloggningsuppgifter för AdobeID.
+1. Klicka på **[!UICONTROL Tags]** till vänster och klicka sedan på den önskade taggegenskapen.
+1. Klicka på **[!UICONTROL Extensions]** till vänster och sedan på fliken **[!UICONTROL Catalog]**
+1. Leta reda på och installera tillägget **[!UICONTROL Common Web SDK Plugins]**.
+1. Klicka på **[!UICONTROL Data Elements]** till vänster och klicka sedan på det önskade dataelementet.
 1. Ange det önskade dataelementnamnet med följande konfiguration:
    * Tillägg: Vanliga SDK-plugin-program för webben
    * Dataelement: `getValOnce`
@@ -40,10 +40,10 @@ Denna plugin stöds ännu inte för användning i en manuell implementering av W
 
 Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-programmen med Adobe Analytics.
 
-1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med dina inloggningsuppgifter för AdobeID.
 1. Klicka på den önskade taggegenskapen.
-1. Gå till [!UICONTROL Extensions] klickar du på [!UICONTROL Catalog] knapp
-1. Installera och publicera [!UICONTROL Common Analytics Plugins] extension
+1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Catalog]
+1. Installera och publicera tillägget [!UICONTROL Common Analytics Plugins]
 1. Om du inte redan har det skapar du en regel med namnet&quot;Initiera plugin-program&quot; med följande konfiguration:
    * Villkor: Inget
    * Händelse: Kärna - Bibliotek inläst (sidan ovanpå)
@@ -56,10 +56,10 @@ Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-program
 
 Om du inte vill använda tillägget för Common Analytics-plugin-program kan du använda den anpassade kodredigeraren.
 
-1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med dina inloggningsuppgifter för AdobeID.
 1. Klicka på önskad egenskap.
-1. Gå till [!UICONTROL Extensions] klickar du på **[!UICONTROL Configure]** under Adobe Analytics-tillägget.
-1. Expandera [!UICONTROL Configure tracking using custom code] dragspelspanel, som visar [!UICONTROL Open Editor] -knappen.
+1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen **[!UICONTROL Configure]** under Adobe Analytics-tillägget.
+1. Expandera dragspelsfliken [!UICONTROL Configure tracking using custom code] som visar knappen [!UICONTROL Open Editor].
 1. Öppna den anpassade kodredigeraren och klistra in den plugin-kod som finns nedan i redigeringsfönstret.
 1. Spara och publicera ändringarna i Analytics-tillägget.
 
@@ -76,14 +76,14 @@ function getValOnce(vtc,cn,et,ep){var e=vtc,i=cn,t=et,n=ep;  if(arguments&&"-v"=
 
 ## Använda plugin-programmet
 
-The `getValOnce` funktionen använder följande argument:
+Funktionen `getValOnce` använder följande argument:
 
-* **`vtc`** (required, string): Variabeln som ska kontrolleras och se om den precis tidigare var inställd på ett identiskt värde
+* **`vtc`** (obligatoriskt, sträng): Variabeln som ska kontrolleras och om den precis har ställts in på ett identiskt värde tidigare
 * **`cn`** (valfri sträng): Namnet på den cookie som innehåller värdet som ska kontrolleras. Standardvärdet är `"s_gvo"`
-* **`et`** (valfritt, heltal): cookie-filens förfallodatum i dagar (eller minuter, beroende på `ep` argument). Standardvärdet är `0`, som upphör i slutet av webbläsarsessionen
-* **`ep`** (valfri, sträng): Ange bara det här argumentet om `et` -argumentet ställs också in. Ange det här argumentet som `"m"` om du vill ha `et` argument om att förfalla om några minuter i stället för dagar. Standardvärdet är `"d"`, som ställer in `et` argument i dagar.
+* **`et`** (valfritt, heltal): Utgången för cookien i dagar (eller minuter, beroende på argumentet `ep`). Standardvärdet är `0`, som går ut i slutet av webbläsarsessionen
+* **`ep`** (valfri sträng): Ange bara det här argumentet om argumentet `et` också är inställt. Ange det här argumentet som `"m"` om du vill att argumentet `et` ska upphöra att gälla om några minuter i stället för dagar. Standardvärdet är `"d"`, vilket anger argumentet `et` i dagar.
 
-Om `vtc` argument och cookie-värde matchar. Funktionen returnerar en tom sträng. Om `vtc` -argument och cookie-värde matchar inte, funktionen returnerar `vtc` argument som en sträng.
+Om argumentet `vtc` och cookie-värdet matchar returnerar funktionen en tom sträng. Om argumentet `vtc` och cookie-värdet inte matchar returnerar funktionen argumentet `vtc` som en sträng.
 
 ## Exempel
 
@@ -118,5 +118,5 @@ s.eVar8 = getValOnce(s.eVar8,"s_ev8",10,"m");
 
 ### 1,1
 
-* Lagt till alternativet att välja minuter eller dagar för förfallodatum via `t` parameter.
-* Omfånget för `k` variabel som används för att begränsa den till plugin-programmet. Den här ändringen förhindrar eventuell störning av annan kod på sidan.
+* Alternativet att välja minuter eller dagar för förfallodatum har lagts till via parametern `t`.
+* Omfånget för variabeln `k` som används för att begränsa den till enbart plugin-programmet har korrigerats. Den här ändringen förhindrar eventuell störning av annan kod på sidan.

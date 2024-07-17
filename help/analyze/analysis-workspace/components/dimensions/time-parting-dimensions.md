@@ -1,17 +1,17 @@
 ---
 description: Tidsdelning innebär att tidsstämpeln för insamlade träffar delas i mer meningsfulla dimensioner, till exempel"Dagens timme" eller"Veckodag".
-title: Tidsdelning av dimensioner
+title: Tidsdelningsdimensioner
 feature: Dimensions
 role: User, Admin
 exl-id: 92fbcc1e-1f7f-405a-8ad1-199fb7ba505e
 source-git-commit: 10ae8213b8745439ab5968853f655a1176b8c38a
 workflow-type: tm+mt
-source-wordcount: '237'
-ht-degree: 2%
+source-wordcount: '233'
+ht-degree: 0%
 
 ---
 
-# Tidsdelning av dimensioner
+# Tidsdelningsdimensioner
 
 Tidsdelning innebär att tidsstämpeln för insamlade träffar delas i mer meningsfulla dimensioner, till exempel&quot;Dagens timme&quot; eller&quot;Veckodag&quot;.
 
@@ -28,7 +28,7 @@ Tidsdelningsdimensionerna baseras på tidszonen för rapportsviten eller den vir
 
 >[!NOTE]
 >
->Tidsdelningsdimensioner är bara tillgängliga i Analysis Workspace. Om du vill använda tidsdelningsdimensioner i andra Analytics-lösningar kan du implementera [getTimeParting, plugin](https://experienceleague.adobe.com/docs/analytics/implementation/vars/plugins/gettimeparting.html).
+>Tidsdelningsdimensioner är bara tillgängliga i Analysis Workspace. Om du vill använda tidsdelningsdimensioner i andra Analytics-lösningar kan du implementera plugin-programmet [getTimeParting](https://experienceleague.adobe.com/docs/analytics/implementation/vars/plugins/gettimeparting.html).
 
 Tidsdelningsdimensioner i Analysis Workspace är:
 

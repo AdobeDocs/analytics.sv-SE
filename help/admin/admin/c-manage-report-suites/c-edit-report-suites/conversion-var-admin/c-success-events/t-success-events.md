@@ -21,24 +21,24 @@ Så här konfigurerar du lyckade händelser:
 
    ![Stegresultat](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/c-success-events/assets/success_event_page.png)
 
-1. I **[!UICONTROL Name]** markerar du kryssrutan bredvid varje objekt för att aktivera redigering och anger sedan önskat namn.
-1. I **[!UICONTROL Type]** markerar du kryssrutan bredvid varje objekt för att aktivera listrutan och väljer sedan önskad typ.
+1. Markera kryssrutan bredvid varje objekt i kolumnen **[!UICONTROL Name]** om du vill aktivera redigering och ange sedan önskat namn.
+1. Markera kryssrutan bredvid varje objekt i kolumnen **[!UICONTROL Type]** för att aktivera listrutan och välj sedan önskad typ.
 
    >[!NOTE]
    >
-   >Innan du ändrar en händelsetyp finns mer information i [Ändra händelsetyp](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/c-success-events/event-type.md).
+   >Se [Ändra händelsetyp](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/c-success-events/event-type.md) innan du ändrar en händelsetyp.
 
-   Se [Händelsesida - beskrivningar](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/c-success-events/success-event.md) om du vill ha information om dessa element.
+   Gå till sidan [Slutförda händelser - beskrivningar](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/c-success-events/success-event.md) om du vill ha information om dessa element.
 
-1. I **[!UICONTROL Polarity]** anger du om en uppåtgående trend för det här måttet är bra eller dåligt.
-1. I **[!UICONTROL Visibility]** kan du dölja standardvärden (inbyggda), anpassade händelser och inbyggda händelser i Menu, Metric Selectors, Calculated Metrics Builder och Segment Builder.
+1. I kolumnen **[!UICONTROL Polarity]** anger du om en uppåtgående trend för det här måttet är bra eller dåligt.
+1. I kolumnen **[!UICONTROL Visibility]** kan du dölja standardvärden (inbyggda), anpassade händelser och inbyggda händelser i Menu, Metric Selectors, Calculated Metrics Builder och Segment Builder.
 
    Den här inställningen påverkar inte datainsamlingen för det måttet eller händelsen. Den påverkar bara dess synlighet i användargränssnittet enligt följande:
 
 
    | Inställning | Synlig i | Inte synlig i |
    |---------|----------|---------|
-   | [!UICONTROL **Synlig överallt**] | <ul><li>Analysis Workspace</li><li>Segment Builder</li><li>Beräknad metrisk Builder</li></ul> | Ej tillämpligt |
+   | [!UICONTROL **Visas överallt**] | <ul><li>Analysis Workspace</li><li>Segment Builder</li><li>Beräknad metrisk Builder</li></ul> | Ej tillämpligt |
    | [!UICONTROL **Builders**] | <ul><li>Segment Builder</li><li>Beräknad metrisk Builder</li><li>Analysis Workspace</li></ul> |
    | [!UICONTROL **Dold överallt**] | Ej tillämpligt | <ul><li>Analysis Workspace</li><li>Segment Builder</li><li>Beräknad metrisk Builder</li></ul> |
 
@@ -48,6 +48,6 @@ Så här konfigurerar du lyckade händelser:
 
    >[!NOTE]
    >
-   >Du kan aktivera deltagande för upp till 100 anpassade händelser. Utöver det kan du skapa deltagarstatistik i [Beräknade mått](/help/components/c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/participation-metric.md) builder.
+   >Du kan aktivera deltagande för upp till 100 anpassade händelser. Utöver detta kan du skapa deltagandemått i [Calculated Metrics](/help/components/c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/participation-metric.md)-byggaren.
 
 1. Klicka på **[!UICONTROL Save]**.

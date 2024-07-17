@@ -19,5 +19,5 @@ Följande lista är variabler som ofta används i implementeringar:
 
 * [`pageName`](pagename.md): Sidans namn.
 * [`campaign`](campaign.md): Ange den här variabeln som en frågesträngsparameter för kampanjspårning.
-* [`events`](events/events-overview.md): Fyll i mätvärden för rapportering.
+* [`events`](events/events-overview.md): Fyll i mätvärden som ska användas vid rapportering.
 * [`products`](products.md): Om du har en e-handelsplats anger du den här variabeln när en besökare tittar på eller köper en produkt.

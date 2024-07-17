@@ -20,10 +20,10 @@ Med regelverktyget kan du skapa en *klassificeringsregeluppsättning*, som är e
 
 Klassificeringsreglerna är praktiska för:
 
-* **E-post** och **Visa annonser**: Skapa klassificeringsregler för att gruppera enskilda displayannonskampanjer så att ni kan lära er hur displaykampanjer fungerar mot e-postkampanjer.
+* **E-post** och **Visningsannonser**: Skapa klassificeringsregler för att gruppera enskilda displayannonskampanjer så att du kan lära dig hur Display-kampanjer fungerar mot e-postkampanjer.
 
 * **Spårningskoder**: Skapa klassificeringsregler för att kategorisera nyckelvärden som härleds från strängar i spårningskoder och matcha dem med specifika kriterier som du definierar.
-* **Sökvillkor**: Använd [reguljära uttryck](/help/components/classifications/crb/classification-quickstart-rules.md) och jokertecken för att förenkla klassificeringen av söktermer. Om ett sökord innehåller *`baseball`* kan du ange en *`Sports League`* klassificering till *`MLB`*.
+* **Söktermer**: Använd [reguljära uttryck](/help/components/classifications/crb/classification-quickstart-rules.md) och jokertecken för att förenkla klassificeringen av söktermer. Om en sökterm till exempel innehåller *`baseball`* kan du ange *`Sports League`* som *`MLB`*.
 
 Anta till exempel att en spårningskod för ett e-postkampanjs-ID är:
 
@@ -53,7 +53,7 @@ about_classification_rules.xml
 
 >[!NOTE]
 >
->The [!UICONTROL Rule Builder] stöder inte Numeric 2-klassificeringar.
+>[!UICONTROL Rule Builder] stöder inte Numeric 2-klassificeringar.
 
 ## Viktig information om regler
 
@@ -63,12 +63,12 @@ about_classification_rules.xml
 
 * **Rapportsviter**: Du kan inte välja en klassificering förrän minst en rapportserie har valts. Du kan inte använda rapportsviten förrän du har skapat regeluppsättningen och tilldelat en variabel.
 
-  När du testar regeluppsättningen kan du använda nycklar (variabeln som klassificeras) från rapporten för att se hur de kommer att påverkas av regeluppsättningen. (Med [key](/help/components/classifications/importer/c-saint-data-files.md) är variabeln som klassificeras, eller den första kolumnen i klassificeringstabellen.)
+  När du testar regeluppsättningen kan du använda nycklar (variabeln som klassificeras) från rapporten för att se hur de kommer att påverkas av regeluppsättningen. ([nyckeln](/help/components/classifications/importer/c-saint-data-files.md) är den variabel som klassificeras, eller den första kolumnen i klassificeringens överföringstabell.)
 
-* **Regelprioritet**: Om en nyckel matchar flera regler som anger samma klassificering (i [!UICONTROL Set Classification] kolumn) används den sista regeln som matchar klassificeringen. Se [Om regelprioritet](/help/components/classifications/crb/classification-quickstart-rules.md).
+* **Regelprioritet**: Om en nyckel matchar flera regler som anger samma klassificering (i kolumnen [!UICONTROL Set Classification]) används den sista regeln som matchar klassificeringen. Se [Om regelprioritet](/help/components/classifications/crb/classification-quickstart-rules.md).
 
-* **Begränsningar av antalet regler**: Det finns ingen gräns för hur många regler du kan skapa. Ett stort antal regler kan dock påverka webbläsarens prestanda.
-* **Bearbetar**: Reglerna behandlas med jämna mellanrum, beroende på hur mycket av klassificeringen som den relaterade trafiken är.
+* **Begränsningar av antalet regler**: Det finns ingen angiven gräns för hur många regler du kan skapa. Ett stort antal regler kan dock påverka webbläsarens prestanda.
+* **Bearbetning**: Regler bearbetas med täta intervall, beroende på volymen av klassificeringsrelaterad trafik.
 
   Aktiva regler bearbetas var fjärde timme och behandlar klassificeringsdata som vanligtvis går tillbaka en månad. Reglerna söker automatiskt efter nya värden och överför klassificeringarna med importverktyget.
 
@@ -80,10 +80,10 @@ När du aktiverar regler kan du skriva över befintliga klassificeringar. I föl
 
 * Nyckeln är redan klassificerad och du väljer inte [Skriv över klassificeringar](/help/components/classifications/crb/classification-rule-definitions.md).
 
-  Du kan skriva över klassificeringar när [lägga till och aktivera](/help/components/classifications/crb/classification-quickstart-rules.md) en regel och när en dataanslutningsintegration aktiveras. (För dataanslutningar skapas regler av partner i Dev Center och visas i [!UICONTROL Classification Rule Builder].)
+  Du kan skriva över klassificeringar när du [lägger till och aktiverar](/help/components/classifications/crb/classification-quickstart-rules.md) en regel och när du aktiverar en dataanslutningsintegration. (För dataanslutningar skapas regler av partner i Dev Center och visas i [!UICONTROL Classification Rule Builder].)
 
 * En klassificerad nyckel har inte visats i data efter en tidsram som angetts när en nyckel skrevs över, även efter att du aktiverat [Skriv över klassificeringar](/help/components/classifications/crb/classification-rule-definitions.md).
-* Nyckeln är inte klassificerad och nyckeln skickas aldrig till [!DNL Adobe Analytics] efter den tidsram som började för ungefär en månad sedan.
+* Nyckeln är inte klassificerad och nyckeln skickas aldrig till [!DNL Adobe Analytics] efter att tidsramen börjar för ungefär en månad sedan.
 
   >[!NOTE]
   >
@@ -102,9 +102,9 @@ regex_classification_rules.xml
  -->
 
 * [Reguljärt uttryck - Exempel på spårningskod](/help/components/classifications/crb/classification-quickstart-rules.md#section_2EF7951398EB4C2F8E52CEFAB4032669)
-* [Reguljärt uttryck - klassificera ett visst tecken](/help/components/classifications/crb/classification-quickstart-rules.md#section_5D300C03FA484BADACBFCA983E738ACF)
-* [Reguljära uttryck - matchande spårningskoder med varierande längd](/help/components/classifications/crb/classification-quickstart-rules.md#section_E86F5BF5C2F44ABC8FFCE3EA67EE3BB2)
-* [Reguljära uttryck - Exempel på&quot;Innehåller inte&quot;](/help/components/classifications/crb/classification-quickstart-rules.md#section_FCA88A612A4E4B099458E3EF7B60B59C)
+* [Reguljärt uttryck - klassificerar ett visst tecken](/help/components/classifications/crb/classification-quickstart-rules.md#section_5D300C03FA484BADACBFCA983E738ACF)
+* [Reguljära uttryck - Matchande spårningskoder med varierande längd](/help/components/classifications/crb/classification-quickstart-rules.md#section_E86F5BF5C2F44ABC8FFCE3EA67EE3BB2)
+* [Reguljära uttryck - Exempel på &quot;Innehåller inte&quot; ](/help/components/classifications/crb/classification-quickstart-rules.md#section_FCA88A612A4E4B099458E3EF7B60B59C)
 * [Reguljära uttryck - referenstabell](/help/components/classifications/crb/classification-quickstart-rules.md#section_0211DCB1760042099CCD3ED7A665D716)
 
 >[!NOTE]
@@ -115,7 +115,7 @@ regex_classification_rules.xml
 
 >[!NOTE]
 >
->Om spårningskoden är URL-kodad kommer den att **not** klassificeras i Rules Builder.
+>Om spårningskoden är URL-kodad kommer den **inte** att klassificeras av Regelbyggaren.
 
 I det här exemplet antar du att du vill klassificera följande kampanj-ID:
 
@@ -137,24 +137,24 @@ Så här korrelerar det reguljära uttrycket till kampanj-ID:
 
 ![](assets/regex_tracking_code.png)
 
-Det här exemplet anger regeln att kampanjdatumet `20140601` är i den tredje gruppen `(.+)`, identifieras av `$3`.
+I det här exemplet anges regeln att kampanjdatumet `20140601` finns i den tredje gruppen `(.+)`, som identifieras av `$3`.
 
 **[!UICONTROL Rule Builder]**
 
-I [!UICONTROL Rule Builder]konfigurerar du regeln enligt följande:
+Konfigurera regeln på följande sätt i [!UICONTROL Rule Builder]:
 
 | Välj regeltyp | Ange matchningsvillkor | Ange klassificering | Till |
 |---|---|---|---|
-| Reguljärt uttryck | &amp;Hatt;(.+)\:(.+)\:(.+)$ | Kampanjdatum | $3 |
+| Reguljärt uttryck | &amp;Hatt;()+)\:(.+)\:(.+)$ | Kampanjdatum | $3 |
 
 **Syntax**
 
 | Reguljärt uttryck | Sträng eller Matcha resultat | Motsvarande Matcha grupper |
 |--- |--- |--- |
-| `^(.+)\:(.+)\:(.+)$` | `em:JuneSale:20130601` | `$0`: `em:JuneSale:20130601`  `$1`: em  `$2`: JuniSale  `$3`: 20130601 |
-| Skapar syntaxen | `^` = startar raden () = grupperar tecken och låter dig extrahera matchande tecken inom parenteserna.  `(.+)` = hämtar ett ( . ) och ( + ) eller fler \ = början av en sträng.  `$` = anger att föregående tecken (eller teckengrupp) är det sista tecknet på raden. |
+| `^(.+)\:(.+)\:(.+)$` | `em:JuneSale:20130601` | `$0`: `em:JuneSale:20130601` `$1`: em `$2`: JuniSale `$3`: 20130601 |
+| Skapar syntaxen | `^` = startar raden () = grupperar tecken och låter dig extrahera matchande tecken inom parentes.  `(.+)` = hämtar ett ( . ) och ( + ) eller fler \ = början av en sträng.  `$` = anger att föregående tecken (eller teckengrupp) är det sista tecknet på raden. |
 
-Se [Reguljära uttryck - referenstabell](/help/components/classifications/crb/classification-quickstart-rules.md#section_0211DCB1760042099CCD3ED7A665D716) om du vill ha information om vad tecknen i ett reguljärt uttryck betyder.
+I [Reguljära uttryck - referenstabell](/help/components/classifications/crb/classification-quickstart-rules.md#section_0211DCB1760042099CCD3ED7A665D716) finns information om vad tecknen i ett reguljärt uttryck betyder.
 
 ## Reguljärt uttryck - klassificera ett visst tecken {#section_5D300C03FA484BADACBFCA983E738ACF}
 
@@ -169,7 +169,7 @@ Ett sätt att använda ett reguljärt uttryck är att klassificera ett visst tec
 
 **[!UICONTROL Rule Builder]**
 
-I [!UICONTROL Rule Builder]konfigurerar du regeln enligt följande:
+Konfigurera regeln på följande sätt i [!UICONTROL Rule Builder]:
 
 | Välj regeltyp | Ange matchningsvillkor | Ange klassificering | Till |
 |--- |--- |--- |--- |
@@ -194,7 +194,7 @@ Exempeltangenter:
 
 **[!UICONTROL Rule Builder]**
 
-I [!UICONTROL Rule Builder]konfigurerar du regeln enligt följande:
+Konfigurera regeln på följande sätt i [!UICONTROL Rule Builder]:
 
 | Välj regeltyp | Ange matchningsvillkor | Ange klassificering | Till |
 |--- |--- |--- |--- |
@@ -230,7 +230,7 @@ c:d:xoxo
 c:d:yoyo
 ```
 
-Detta resulterar i att `a:b:1313` anger inte någon matchning.
+I det här resultatet visar `a:b:1313` ingen matchning.
 
 ## Reguljära uttryck - referenstabell {#section_0211DCB1760042099CCD3ED7A665D716}
 
@@ -267,7 +267,7 @@ En bra resurs för att testa giltigheten för reguljära uttryck är [https://ru
 
 ## Om regelprioritet
 
-Om en nyckel matchas mot flera regler och den anger samma klassificeringskolumn som visas i [!UICONTROL Set Classification] -kolumnen används den sista regeln. Därför kanske du vill rangordna den viktigaste sista i regeluppsättningen.
+Om en nyckel matchas mot flera regler och anger samma klassificeringskolumn som visas i kolumnen [!UICONTROL Set Classification], används den sista regeln. Därför kanske du vill rangordna den viktigaste sista i regeluppsättningen.
 
 <!-- 
 
@@ -285,7 +285,7 @@ Här följer ett exempel på en sökordsregel som klassificerar sökningstyper f
 | 2 | Innehåller | Fantasy | Söktyp | Fantasy |
 | 3 | Innehåller | Romo | Söktyp | Player |
 
-Om en användare söker efter *`Cowboys fantasy Tony Romo`*, term *`Player`* är klassificerad eftersom den matchar den senast angivna klassificeringen som visas i kolumnen Ange klassificering.
+Om en användare söker efter *`Cowboys fantasy Tony Romo`* klassificeras termen *`Player`* eftersom den matchar den senast givna klassificeringen som visas i kolumnen Ange klassificering.
 
 Anta på samma sätt att du ställer in två regler i en uppsättning för följande söktermer:
 
@@ -313,46 +313,46 @@ Lägg till regler genom att matcha ett villkor med en klassificering och ange å
 Så här lägger du till eller redigerar en klassificeringsregel:
 
 1. [Skapa en klassificeringsregeluppsättning](/help/components/classifications/crb/classification-rule-set.md) .
-1. Klicka på **[!UICONTROL Add Rule]**.
+1. Klicka på **[!UICONTROL Add Rule]** på sidan Regeluppsättning.
 
    ![](assets/add_rule.png)
 
-1. Nästa till **[!UICONTROL Report Suites]**, klicka **[!UICONTROL Add Suites]** om du vill ange en eller flera rapportsviter som ska tilldelas den här regeluppsättningen.
+1. Bredvid **[!UICONTROL Report Suites]** klickar du på **[!UICONTROL Add Suites]** för att ange en eller flera rapportsviter att tilldela till den här regeluppsättningen.
 
-   The **[!UICONTROL Select Report Suites]** visas.
+   Sidan **[!UICONTROL Select Report Suites]** visas.
 
    >[!NOTE]
    >
-   >Rapportsviter visas på den här sidan *endast* när följande villkor är uppfyllda:
+   >Rapportsviter visas på den här sidan *endast* när följande villkor uppfylls:
    >
    >* Rapportsviterna har minst en klassificering definierad för den variabeln i [!UICONTROL Admin Tools].
    >
-   >   (Se *Variabel* in [Klassificeringsregeluppsättningar](/help/components/classifications/crb/classification-rule-set.md) om du vill ha en förklaring till detta krav.)
+   >   (Se *Variabel* i [Klassificeringsregeluppsättningar](/help/components/classifications/crb/classification-rule-set.md) för en förklaring av den här förutsättningen.)
    >
-   >* Du valde rapportsviten på **[!UICONTROL Available Report Suites]** sida som visas när du klickar [Lägg till regeluppsättning](/help/components/classifications/crb/classification-rule-set.md) för att skapa regeluppsättningen.
+   >* Du har valt rapportsviten på sidan **[!UICONTROL Available Report Suites]**, som visas när du klickar på [Lägg till regeluppsättning](/help/components/classifications/crb/classification-rule-set.md) för att skapa regeluppsättningen.
 
 1. Ange om befintliga värden ska skrivas över:
 
    | **Regler skriver över befintliga värden** | (Standardinställning) Skriv alltid över befintliga klassificeringsnycklar, inklusive klassificeringar som överförts via importören (SAINT). |
    |---|---|
-   | **Regler skriver bara över ej avaktiverade värden** | Fyll bara i tomma celler (ta bort). Befintliga klassificeringar ändras inte. |
+   | **Regler skriver bara över borttagna värden** | Fyll bara i tomma celler (ta bort). Befintliga klassificeringar ändras inte. |
 
 1. [Definiera regeln eller reglerna](/help/components/classifications/crb/classification-rule-definitions.md#section_4A5BF384EEEE4994B6DC888339833529).
 
    ![Stegresultat](assets/classification_rules_page.png)
 
-   Exempel på byggregler finns i [Klassificeringsregelverktyget](/help/components/classifications/crb/classification-rule-builder.md) och [Reguljära uttryck i klassificeringsregler](/help/components/classifications/crb/classification-quickstart-rules.md).
+   Exempel på hur du skapar regler finns i [Klassificeringsregelbyggaren](/help/components/classifications/crb/classification-rule-builder.md) och [Reguljära uttryck i klassificeringsregler](/help/components/classifications/crb/classification-quickstart-rules.md).
 
    >[!NOTE]
    >
-   >Om en nyckel matchar flera regler som anger samma klassificering (i kolumnen Ange klassificering) används den sista regeln som matchar klassificeringen. Se **Om regelprioritet** ovan om du vill ha mer information om sorteringsregler.
+   >Om en nyckel matchar flera regler som anger samma klassificering (i kolumnen Ange klassificering) används den sista regeln som matchar klassificeringen. Mer information om sorteringsregler finns i **Om regelprioritet** ovan.
 
 1. [Testa regeluppsättningen](/help/components/classifications/crb/classification-quickstart-rules.md).
-1. Efter testningen klickar du på **[!UICONTROL Active]** för att validera och aktivera regeln.
+1. Klicka på **[!UICONTROL Active]** efter testningen för att validera och aktivera regeln.
 
    När du aktiverar en regel skapas filen automatiskt och den överförs åt dig.
 
-   Fältdefinitioner: Se [Klassificeringsregelverktyget](/help/components/classifications/crb/classification-rule-definitions.md) för fullständiga definitioner av gränssnittsalternativ på den här sidan.
+   Fältdefinitioner: Se [Klassificeringsregelbyggaren](/help/components/classifications/crb/classification-rule-definitions.md) för fullständiga definitioner av gränssnittsalternativ på den här sidan.
 
 ## Testa en klassificeringsregeluppsättning
 
@@ -367,23 +367,23 @@ Du kan testa en klassificeringsregel eller regeluppsättning. När du kör ett t
 Så här testar du en klassificeringsregeluppsättning:
 
 1. [Skapa en klassificeringsregeluppsättning](/help/components/classifications/crb/classification-rule-set.md) .
-1. På [!UICONTROL Classification Rule Builder]klickar du på regeluppsättningens namn.
+1. Klicka på regeluppsättningens namn på [!UICONTROL Classification Rule Builder].
 1. Kontrollera att regeluppsättningen är associerad med en rapportserie.
-1. Klicka på regelredigeraren **[!UICONTROL Test Rule Set]**.
+1. Klicka på **[!UICONTROL Test Rule Set]** i regelredigeraren.
 
    ![Stegresultat](assets/classification_test_rule_set.png)
 
-1. Skriv eller klistra in testtangenterna i [!UICONTROL Sample Keys] fält.
+1. Skriv eller klistra in testnycklar i fältet [!UICONTROL Sample Keys].
 
    Exempelnycklar:
 
    * Spårningskoder
    * Sök efter nyckelord eller fraser
 
-   Se [Reguljära uttryck i klassificeringsregler](/help/components/classifications/crb/classification-quickstart-rules.md) för information om testning av reguljära uttryck.
+   Mer information om hur du testar reguljära uttryck finns i [Reguljära uttryck i klassificeringsregler](/help/components/classifications/crb/classification-quickstart-rules.md).
 1. Klicka på **[!UICONTROL Run Test]**.
 
-   Matchande regler visas i [!UICONTROL Results] tabell.
+   Regler som matchar visas i tabellen [!UICONTROL Results].
 1. (Valfritt) Klicka på **[!UICONTROL Activate]** om du vill aktivera regeln och skriva över befintliga klassificeringar.
 
    Mer information om hur du använder regler för att skriva över befintliga klassificeringar finns.
@@ -398,13 +398,13 @@ t_validate_rules.xml
 
 Så här validerar och aktiverar du klassificeringsregler:
 
-1. [Skapa en klassificeringsregeluppsättning](/help/components/classifications/crb/classification-rule-set.md) sedan [lägg till klassificeringsregler](/help/components/classifications/crb/classification-quickstart-rules.md) till uppsättningen.
-1. Klicka på regelredigeraren **[!UICONTROL Activate]**.
+1. [Skapa en klassificeringsregeluppsättning](/help/components/classifications/crb/classification-rule-set.md) och [lägg sedan till klassificeringsregler](/help/components/classifications/crb/classification-quickstart-rules.md) i uppsättningen.
+1. Klicka på **[!UICONTROL Activate]** i regelredigeraren.
 
    ![](assets/overwrite_keys.png)
 
-1. (Valfritt) Om du vill skriva över klassificeringar aktiverar du **[!UICONTROL Overwrite classifications for]** &lt;*markering*>.
+1. (Valfritt) Om du vill skriva över klassificeringar aktiverar du **[!UICONTROL Overwrite classifications for]** &lt;*selection*>.
 
    Med det här alternativet kan du skriva över befintliga klassificeringar för berörda nycklar.
 
-   Se [Regelsida](/help/components/classifications/crb/classification-rule-definitions.md#section_4A5BF384EEEE4994B6DC888339833529) för en definition av det här alternativet.
+   En definition av det här alternativet finns på [Regelsidan](/help/components/classifications/crb/classification-rule-definitions.md#section_4A5BF384EEEE4994B6DC888339833529).

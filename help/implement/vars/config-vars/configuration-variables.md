@@ -19,12 +19,12 @@ Konfigurationsvariabler styr hur data hämtas och bearbetas vid rapportering. De
 
 I implementeringar som använder Web SDK-tillägget eller Analytics-tillägget finns vanligtvis konfigurationsvariabler i tilläggets inställningar:
 
-1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med dina inloggningsuppgifter för AdobeID.
 1. Klicka på den önskade taggegenskapen.
-1. Klicka på [!UICONTROL Extensions] -flik och sedan klicka [!UICONTROL Configure] under förlängningen.
+1. Klicka på fliken [!UICONTROL Extensions] och sedan på [!UICONTROL Configure] under tillägget.
 
-I JavaScript-implementeringar med `AppMeasurement.js`, ställs konfigurationsvariabler vanligtvis in överst i JS-filen.
+I JavaScript-implementeringar där `AppMeasurement.js` används ställs konfigurationsvariabler vanligtvis in överst i JS-filen.
 
 >[!IMPORTANT]
 >
->Kontrollera att alla konfigurationsvariabler är angivna innan du anropar en spårningsmetod ([`t()`](../functions/t-method.md) eller [`tl()`](../functions/tl-method.md)). Undvik att ange konfigurationsvariabler i [`doPlugins()`](../functions/doplugins.md) funktion.
+>Kontrollera att alla konfigurationsvariabler har angetts innan du anropar en spårningsmetod ([`t()`](../functions/t-method.md) eller [`tl()`](../functions/tl-method.md)). Undvik att ange konfigurationsvariabler i funktionen [`doPlugins()`](../functions/doplugins.md).

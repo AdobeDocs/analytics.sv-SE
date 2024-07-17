@@ -7,14 +7,14 @@ role: User, Admin
 exl-id: b5d6a822-e569-433e-990a-16e6cae12bbb
 source-git-commit: 5454995fb9d6e63fb19e2272f66f3c96bf951ccb
 workflow-type: tm+mt
-source-wordcount: '104'
-ht-degree: 2%
+source-wordcount: '106'
+ht-degree: 0%
 
 ---
 
 # Venn
 
-The [!UICONTROL Venn] kan du dra i upp till 3 segment (från [!UICONTROL Components]) och ett mått för att skapa en [!UICONTROL Venn] diagram.
+Med visualiseringen [!UICONTROL Venn] kan du dra i upp till tre segment (från [!UICONTROL Components]) och ett mätvärde för att skapa ett [!UICONTROL Venn]-diagram.
 
 ![](assets/venn.png)
 
@@ -22,18 +22,18 @@ Sedan kan du hålla markören över segmenten för att få bättre insikt i proc
 
 ![](assets/venn_hover.png)
 
-## Sväng [!UICONTROL Venn] diagram in [!UICONTROL Freeform] table
+## Omvandla diagrammet [!UICONTROL Venn] till tabellen [!UICONTROL Freeform]
 
-Om du vill göra om Venndiagrammet till en frihandstabell klickar du på den färgade punkten bredvid **[!UICONTROL Venn]** sidhuvud och välj **[!UICONTROL Manage Data Sources]** > **[!UICONTROL Available Data Sources]** > **[!UICONTROL Freeform Table]**.
+Om du vill omvandla Venndiagrammet till en frihandstabell klickar du på den färgade punkten bredvid rubriken **[!UICONTROL Venn]** och väljer **[!UICONTROL Manage Data Sources]** > **[!UICONTROL Available Data Sources]** > **[!UICONTROL Freeform Table]**.
 
-## Normalisera [!UICONTROL Venn] diagram
+## Normalisera [!UICONTROL Venn]-diagram
 
-Så här normaliserar du [!UICONTROL Venn] diagram (ta bort storleken), gå till ikonen Visualiseringsinställningar och välj **[!UICONTROL Normalization]**.
+Om du vill normalisera [!UICONTROL Venn]-diagrammet (ta bort storleken från det) går du till ikonen Visualiseringsinställningar och väljer **[!UICONTROL Normalization]**.
 
 ![](assets/normalization.png)
 
 ## Video
 
-Här är en video på [!UICONTROL Venn] diagram:
+Här är en video om [!UICONTROL Venn]-diagrammet:
 
 >[!VIDEO](https://video.tv.adobe.com/v/335798/?quality=12)

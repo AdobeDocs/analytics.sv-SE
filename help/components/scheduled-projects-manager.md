@@ -1,17 +1,18 @@
 ---
 description: Se och hantera schemalagda rapporter i hela organisationen.
-title: Projekthanterare för schemaläggning
+title: Schemalagd projektledare
 feature: Admin Tools
-source-git-commit: d65ef389ae9bc3164be928ffe64cc805b8b1e59d
+exl-id: 8bc8d983-f680-48fa-8483-694c87a9ae4c
+source-git-commit: 9f70dbeb9dfe54897915213480f05cbdfaf920ef
 workflow-type: tm+mt
 source-wordcount: '434'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
 # Schemalagda projekt
 
-Schemalagda Analysis Workspace-projekt kan hanteras under **Analytics > Components > Scheduled Projects**.
+Schemalagda Analysis Workspace-projekt kan hanteras under **Analys > Komponenter > Schemalagda projekt**.
 
 När du hanterar schemalagda projekt kan du redigera och ta bort återkommande projektscheman:
 
@@ -22,10 +23,10 @@ När du hanterar schemalagda projekt kan du redigera och ta bort återkommande p
 
 Ändra ett schemalagt projekt
 
-1. Välj **Analytics > Components > Scheduled Projects**.
-1. Sök efter ett schema i sökfältet eller med filteralternativen i den vänstra listen. Du kan filtrera efter [!UICONTROL Tags], [!UICONTROL Owners], [!UICONTROL Favorites], med mera.
+1. Välj **Analys > Komponenter > Schemalagda projekt**.
+1. Sök efter ett schema i sökfältet eller med filteralternativen i den vänstra listen. Du kan filtrera efter [!UICONTROL Tags], [!UICONTROL Owners], [!UICONTROL Favorites] och mer.
 
-![Skärmbild som visar listan med schemalagda projekt med kolumnen med rubrik, ägare, taggar, levererade till och andra kolumner som beskrivs i avsnittet Tillgängliga kolumner.](assets/scheduled-project-manager2.png)
+![Skärmbild som visar listan över schemalagda projekt med kolumnen med rubrik, ägare, taggar, levererade till och andra kolumner som beskrivs i avsnittet Tillgängliga kolumner.](assets/scheduled-project-manager2.png)
 
 ## Tillgängliga kolumner
 
@@ -55,4 +56,4 @@ Följande är vanliga åtgärder i hanteraren för schemalagda projekt:
 | **[!UICONTROL View expired schedules]** | Navigera till den vänstra listen > Andra filter > Förfallen om du vill visa scheman som har upphört att gälla. Klicka på schemats rubrik för att ställa in ett nytt leveransschema. |
 | **[!UICONTROL View schedule ID]** | Navigera till kolumnalternativen längst upp till höger och lägg till kolumnen Schedule-ID i tabellen. Det schemalagda ID:t är ofta användbart vid felsökning. |
 
-I hanteraren för schemalagda projekt visas de objekt som en viss användare har skapat. Om användarkontot är inaktiverat i programmet stoppas alla schemalagda leveranser. Schemalagd projektägarskap kan överföras till en ny användare under **Administratör** > **Analysanvändare och -resurser** > **Överför resurser**.
+I hanteraren för schemalagda projekt visas de objekt som en viss användare har skapat. Om användarkontot är inaktiverat i programmet stoppas alla schemalagda leveranser. Schemalagd projektägarskap kan överföras till en ny användare under **Admin** > **Analytics Users &amp; Assets** > **Transfer Assets**.

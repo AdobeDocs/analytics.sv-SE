@@ -5,20 +5,20 @@ feature: Alerts
 exl-id: 3408c79f-3d85-44b9-8fca-ce956853dfa4
 source-git-commit: 9a6c2e7c2f83882f6df630f975b0c44e75a2ed7a
 workflow-type: tm+mt
-source-wordcount: '443'
+source-wordcount: '431'
 ht-degree: 0%
 
 ---
 
 # Varningshanteraren
 
-Varningshanteraren är mycket strukturerad som [Segmenthanteraren](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-manage.html) och [Beräknad måtthanterare](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/cm-manager.html).
+Varningshanteraren är mycket strukturerad som [segmenthanteraren](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-manage.html) och [hanteraren för beräknade värden](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/cm-manager.html).
 
 ![](assets/alert-manager.png)
 
 ## Öppna Alerts Manager
 
-1. I Adobe Analytics: [!UICONTROL **Komponenter**] > [!UICONTROL **Varningar**].
+1. I Adobe Analytics väljer du [!UICONTROL **Komponenter**] > [!UICONTROL **Varningar**].
 
 ## Tillgängliga åtgärder i Varningshanteraren
 
@@ -31,14 +31,14 @@ I Varningshanteraren kan du:
 * Godkänn aviseringar.
 * Kopiera aviseringar.
 * Aktivera/inaktivera aviseringar.
-* **Förnya** ett varningsdatum förfaller. När en eller flera aviseringar har valts kan de förnyas genom att klicka på **[!UICONTROL Renew]**.Detta förlänger deras förfallodatum till 1 år från dagen **[!UICONTROL Renew]** har klickats, oavsett ursprungligt förfallodatum.
+* **Förnya** ett varningsutgångsdatum. När en eller flera aviseringar har valts kan de förnyas genom att klicka på **[!UICONTROL Renew]**. Detta utökar deras förfallodatum till 1 år från den dag **[!UICONTROL Renew]** klickades på, oavsett deras ursprungliga förfallodatum.
 * Exportera en varning till en CSV-fil.
 * Redigera aviseringar genom att dubbelklicka på varningens titel.
 * Sök efter aviseringar.
 * Lägg till aviseringar i andra rapportsviter.
 * Ange/ändra ägare för en avisering.
 * Lägg till andra filter.
-* Definiera en avisering **förfallodatum**.
+* Definiera ett **utgångsdatum** för en avisering.
 
 ## Konfigurera kolumner
 
@@ -46,9 +46,9 @@ Du kan konfigurera den information som visas för varje varning i Varningshanter
 
 Så här konfigurerar du synliga kolumner i Varningshanteraren:
 
-1. I Adobe Analytics väljer du **[!UICONTROL Components]** tabbtangenten och sedan välja **[!UICONTROL Alerts]**.
+1. I Adobe Analytics väljer du fliken **[!UICONTROL Components]** och sedan **[!UICONTROL Alerts]**.
 
-1. I Varningshanteraren väljer du **Anpassa kolumner** icon ![Ikonen Anpassa kolumner](assets/customize-columns-icon.png)markerar du de kolumner som du vill ska visas i Varningshanteraren.
+1. I Varningshanteraren väljer du ikonen **Anpassa kolumner** ![Anpassa kolumner](assets/customize-columns-icon.png) och markerar sedan de kolumner som du vill ska visas i Varningshanteraren.
 
    Följande kolumner är tillgängliga:
 

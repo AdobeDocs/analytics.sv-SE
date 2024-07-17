@@ -21,7 +21,7 @@ Analytics-komponenterna hjälper er att finjustera och förbättra dataanalysen.
 * **Segmentering:** Fokusera på en delmängd av data.
 * **Beräknade mätvärden:** Använd enkla formler för att kombinera mätvärden eller avancerade funktioner för statistiska analyser.
 * **Virtuella rapportsviter:** Skapa en virtuell datasilo baserat på en rapportsvit. Möjlighet att rensa eller segmentera data för en bättre användarupplevelse. Vissa funktioner kan bara användas i virtuella rapportsviter.
-* **Enhetsövergripande analys**: En särskild typ av virtuellt rapportpaket gör att du kan konfigurera enhetsövergripande analys.
+* **Enhetsövergripande analys**: Med en speciell typ av virtuell rapportserie kan du konfigurera enhetsövergripande analys.
 * **Varningar:** Få aviseringar när tidsdata överskrider eller underskrider ett tröskelvärde.
 * **Klassificeringar:** Ordna om och gruppera dimensioner för fler insikter.
 * **Realtidsrapportering:** Få rapporter och trender så fort de blir tillgängliga.

@@ -20,19 +20,19 @@ Webbtjänstens API:er ger programmatisk åtkomst till marknadsföringsrapporter 
 
 ## API:er för Analytics 2.0
 
-För att få tillgång till API:erna i Analytics 2.0 behöver ni det globala företags-ID:t för ert Analytics-företag. Du hittar det globala företags-ID:t i **fet** högst upp på [!UICONTROL API Access] -avsnitt. Här är ett exempel:&quot;Det globala företags-ID:t för det Analytics-företag som du för närvarande är inloggad på är **adobe1234**.&quot;
+För att få tillgång till API:erna i Analytics 2.0 behöver ni det globala företags-ID:t för ert Analytics-företag. Du hittar det globala företags-ID:t i **bold** högst upp i avsnittet [!UICONTROL API Access]. Här är ett exempel:&quot;Det globala företags-ID:t för det Analytics-företag som du är inloggad på är **adobe1234**.&quot;
 
 ## Hantera äldre webbtjänster (borttagna)
 
-I [Adobe Admin Console](https://helpx.adobe.com/se/enterprise/using/admin-console.html) Du kan uppdatera behörigheterna så att de omfattar de användare som behöver åtkomst till webbtjänstens API:er.
+I [Adobe Admin Console](https://helpx.adobe.com/se/enterprise/using/admin-console.html) kan du uppdatera behörigheterna så att de omfattar de användare som behöver åtkomst till API:erna för webbtjänster.
 
 ## WSDL: Hämta WSDL för webbtjänstutvecklare för API:t för webbtjänster
 
-Besök [Adobe Developer](https://developer.adobe.com/analytics-apis/docs/2.0/), som innehåller dokumentation, exempelkod och forum för webbtjänsternas API:er. Klicka på Webbtjänstens API:er - översikt för mer information.
+Besök [Adobe Developer](https://developer.adobe.com/analytics-apis/docs/2.0/) som innehåller dokumentation, exempelkod och forum för webbtjänsternas API:er. Klicka på Webbtjänstens API:er - översikt för mer information.
 
 ## Filtreringsalternativ
 
-Om XML-tolken har problem med ogiltiga eller ogiltiga tecken i svar på Web Services API-anrop väljer du ett eller båda av följande alternativ så att Analytics automatiskt filtrerar svarsutdata. Vanligtvis är detta bara ett problem med språk med dubbla byte (japanska, kinesiska, koreanska).
+Om XML-tolken har problem med ogiltiga eller ogiltiga tecken i svar på Web Services API-anrop markerar du ett eller båda av följande alternativ så att Analytics automatiskt filtrerar svarsutdata. Vanligtvis är detta bara ett problem med språk med dubbla byte (japanska, kinesiska, koreanska).
 
 ## API-åtkomstinformation
 

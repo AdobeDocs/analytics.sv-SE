@@ -1,6 +1,6 @@
 ---
 description: Definitioner för fasta datum i Report Builder.
-title: Definitioner i frågeguiden – fasta datum
+title: Definitioner för begärandeguiden - fasta datum
 uuid: bd65a312-bab6-46d7-ba30-570777344cc9
 feature: Report Builder
 role: User, Admin
@@ -8,11 +8,11 @@ exl-id: e2ab1b8b-30e7-4851-8f13-292613fef016
 source-git-commit: d218d07ec16e981d7e148092b91fbbd5711e840f
 workflow-type: tm+mt
 source-wordcount: '109'
-ht-degree: 10%
+ht-degree: 0%
 
 ---
 
-# Definitioner i frågeguiden – fasta datum
+# Definitioner för begärandeguiden - fasta datum
 
 Definitioner för fasta datum i Report Builder.
 

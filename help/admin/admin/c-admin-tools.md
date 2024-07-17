@@ -27,13 +27,13 @@ Se innehållshierarkin till vänster på sidan för att gå direkt till alla adm
 >
 >Öppna inte flera administratörsflikar i samma webbläsare. Detta kan leda till att du oavsiktligt sparar inställningar i fel rapportsvit. Om du t.ex. behöver jämföra regeluppsättningar och kopiera dem till en ny rapportserie föreslår vi att du öppnar en ny webbläsare eller tar en skärmdump för att jämföra regeluppsättningar.
 
-Om du vill komma åt administratörsverktygen går du till **[!UICONTROL Analytics]** > **[!UICONTROL Admin]**.
+Gå till **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** om du vill komma åt administratörsverktygen.
 
 ## Admin Console för Adobe
 
 Använd det här verktyget för att tilldela användare och ändra åtkomstbehörigheter.
 
-För alla organisationer som migreras till Adobe IMS utförs dessa uppgifter i administrationskonsolen i Adobe. Mer information finns i [Adobe Analytics första administrationshandbok](/help/admin/admin-console/first-admin-guide.md). Om din organisation ännu inte har migrerat till Adobe IMS går du till [Migrering av Analytics-användare till Adobe Admin Console](/help/admin/admin/user-management2/user-migration/c-migration-tool.md).
+För alla organisationer som migreras till Adobe IMS utförs dessa uppgifter i administrationskonsolen i Adobe. Mer information finns i [Adobe Analytics första administrationshandbok](/help/admin/admin-console/first-admin-guide.md). Om din organisation ännu inte har migrerats till Adobe IMS, se [Användarmigrering för Analytics till Adobe Admin Console](/help/admin/admin/user-management2/user-migration/c-migration-tool.md).
 
 
 

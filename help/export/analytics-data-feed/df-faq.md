@@ -1,12 +1,12 @@
 ---
 description: Vanliga frågor och svar om dataflöden
-keywords: Datafeed;jobb;förkolumn;efterkolumn;skiftlägeskänslighet
+keywords: Datautmatning;jobb;förkolumn;efterkolumn;skiftlägeskänslighet
 title: Vanliga frågor om dataflöden
 feature: Data Feeds
 exl-id: 1bbf62d5-1c6e-4087-9ed9-8f760cad5420
 source-git-commit: a71db2fac9333b70a55da91fe9a94b0cc8434b42
 workflow-type: tm+mt
-source-wordcount: '1437'
+source-wordcount: '1450'
 ht-degree: 0%
 
 ---
@@ -23,17 +23,17 @@ Om du försöker skapa en feed när det finns en annan med samma filnamn visas e
 
 * Ändra leveransväg
 * Ändra datumen om möjligt
-* Ändra rapportsviten om det är möjligt
+* Ändra rapportsviten om möjligt
 
-## När behandlas data? {#processed}
+## När bearbetas data? {#processed}
 
-Innan timdata eller dagliga data bearbetas väntar dataflödena tills alla träffar som matades in inom tidsramen (dag eller timme) har skrivits ut till data warehouse. När detta inträffar samlar dataflödena in data med tidsstämplar som ligger inom tidsramen, komprimerar dem och skickar dem via FTP. För timmatningar skrivs filer vanligtvis ut till data warehouse inom 15-30 minuter efter timmen, men det finns ingen fast tidsperiod. Om det inte fanns några data med tidsstämplar som ligger inom tidsramen försöker processen igen nästa tidsram. Den aktuella dataflödesprocessen använder `date_time` för att avgöra vilka träffar som hör till timmen. Det här fältet baseras på rapportsvitens tidszon.
+Innan timdata eller dagliga data bearbetas väntar dataflödena tills alla träffar som matade in data inom tidsramen (dag eller timme) har skrivits ut till datalagret. När detta inträffar samlar dataflödena in data med tidsstämplar som ligger inom tidsramen, komprimerar dem och skickar dem via FTP. För timmatningar skrivs filer vanligtvis ut till datalagret inom 15-30 min efter timmen, men det finns ingen angiven tidsperiod. Om det inte fanns några data med tidsstämplar som ligger inom tidsramen försöker processen igen nästa tidsram. Den aktuella dataflödesprocessen använder fältet `date_time` för att avgöra vilka träffar som tillhör timmen. Det här fältet baseras på rapportsvitens tidszon.
 
-## Vad är skillnaden mellan kolumner med en `post_` prefix och kolumner utan `post_` prefix? {#post}
+## Vad är skillnaden mellan kolumner med ett `post_`-prefix och kolumner utan ett `post_`-prefix? {#post}
 
-Kolumner utan `post_` -prefixet innehåller data exakt som de skickades till datainsamlingen. Kolumner med en `post_` -prefixet innehåller värdet efter bearbetning. Exempel som kan ändra ett värde är variabelbeständighet, bearbetningsregler, VISTA-regler, valutakonvertering eller annan logik på serversidan som gäller Adobe. Adobe rekommenderar att du använder `post_` version av en kolumn där det är möjligt.
+Kolumner utan prefixet `post_` innehåller data exakt som de skickades till datainsamlingen. Kolumner med ett `post_`-prefix innehåller värdet efter bearbetning. Exempel som kan ändra ett värde är variabelbeständighet, bearbetningsregler, VISTA-regler, valutakonvertering eller annan logik på serversidan som gäller Adobe. Adobe rekommenderar att du använder `post_`-versionen av en kolumn där det är möjligt.
 
-Om en kolumn inte innehåller en `post_` version (till exempel `visit_num`) kan kolumnen betraktas som en postkolumn.
+Om en kolumn inte innehåller en `post_`-version (till exempel `visit_num`) kan kolumnen betraktas som en inläggskolumn.
 
 ## Hur hanterar dataflöden skiftlägeskänslighet? {#case}
 
@@ -43,17 +43,17 @@ Om du ser olika skiftlägesvariationer av samma värde mellan icke-post- och pos
 
 ## Filtreras robotar av administratörskonsolens robotregler i dataflöden? {#bots}
 
-Dataflöden inkluderar inte robotar som filtreras av [Administratörskonsolens startregler](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/bot-removal/bot-removal.html).
+Datafeeds innehåller inte bots som filtrerats av [administratörskonsolens robotregler](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/bot-removal/bot-removal.html).
 
-## Varför ser jag flera `000` värden i `event_list` eller `post_event_list` dataflödeskolumn? {#values}
+## Varför ser jag flera `000`-värden i dataflödeskolumnen `event_list` eller `post_event_list`? {#values}
 
-Vissa kalkylbladsredigerare, särskilt Microsoft Excel, rundar automatiskt av stora tal. The `event_list` -kolumnen innehåller många kommaavgränsade tal, vilket ibland kan göra att Excel hanterar den som ett stort antal. Det avrundar de sista siffrorna till `000`.
+Vissa kalkylbladsredigerare, särskilt Microsoft Excel, rundar automatiskt av stora tal. Kolumnen `event_list` innehåller många kommaavgränsade tal, vilket ibland kan göra att Excel hanterar den som ett stort antal. Det avrundar de sista siffrorna till `000`.
 
-Adobe rekommenderar att du inte öppnar automatiskt `hit_data.tsv` filer i Microsoft Excel. Använd i stället Excel-dialogrutan Importera data och se till att alla fält behandlas som text.
+Adobe rekommenderar att `hit_data.tsv` filer inte öppnas automatiskt i Microsoft Excel. Använd i stället Excel-dialogrutan Importera data och se till att alla fält behandlas som text.
 
-## Är kolumner som `hitid_high`, `hitid_low`, `visid_high`och `visid_low` Garanterat unik för träffen eller besöket? {#hitid}
+## Är kolumner som `hitid_high`, `hitid_low`, `visid_high` och `visid_low` garanterat unika för träffen eller besöket? {#hitid}
 
-I nästan alla fall har `hitid_high` och `hitid_low` unikt identifiera en träff. Samma koncept gäller för sammanfogningen av `visid_high` och `visid_low` för besök. Bearbetningsavvikelser kan dock i sällsynta fall leda till att två träffar delar samma träff-ID. Adobe rekommenderar att man inte skapar dataflöden som inte är flexibla och som kräver att varje träff är unik.
+I nästan alla fall identifierar sammanfogningen av `hitid_high` och `hitid_low` en träff unikt. Samma koncept gäller för sammanfogningen av `visid_high` och `visid_low` för besök. Bearbetningsavvikelser kan dock i sällsynta fall leda till att två träffar delar samma träff-ID. Adobe rekommenderar att man inte skapar dataflöden som inte är flexibla och som kräver att varje träff är unik.
 
 ## Varför saknas information i domänkolumnen för vissa bärare? {#domain}
 
@@ -63,7 +63,7 @@ Vissa mobiloperatörer (som T-Mobile och O1) tillhandahåller inte längre domä
 
 För data som är äldre än 7 dagar kombineras en dags&quot;timvisa&quot;-filer till en enda&quot;daglig&quot; fil.
 
-Exempel: En ny datafeed skapas den 9 mars 2021 och informationen från 1 januari 2021 till 9 mars levereras som &quot;Varje timme&quot;. Filerna&quot;Varje timme&quot; före 2 mars 2021 kombineras dock till en enda&quot;daglig&quot; fil. Du kan bara extrahera&quot;timvisa&quot; filer från data som är mindre än 7 dagar gamla från det datum då de skapades. I detta fall från den 2 mars till den 9 mars.
+Exempel: En ny datafeed skapas den 9 mars 2021 och data från 1 januari 2021 till 9 mars levereras som &quot;Varje timme&quot;. Filerna&quot;Varje timme&quot; före den 2 mars 2021 kombineras dock i en enda&quot;daglig&quot; fil. Du kan bara extrahera&quot;timvisa&quot; filer från data som är mindre än 7 dagar gamla från det datum då de skapades. I detta fall från den 2 mars till den 9 mars.
 
 ## Vilken inverkan har Daylight Savings på timdataflöden? {#dst}
 
@@ -77,9 +77,9 @@ När man gör DST -> STD-övergångar (&quot;Fall Back&quot;) får man 24 filer.
 
 Om en FTP-överföring misslyckas (på grund av nekad inloggning, förlorad anslutning, fel utanför kvoten eller något annat problem) försöker Adobe automatiskt ansluta och skicka data upp till tre gånger. Om felet kvarstår markeras feeden som misslyckad och ett e-postmeddelande skickas.
 
-Om överföringen misslyckas kan du köra ett jobb igen tills det lyckas.
+Om en överföring misslyckas kan du köra ett jobb igen tills det lyckas.
 
-Om du har problem med att få en datafeed att visas på FTP-platsen, se [Felsöka dataflöden](troubleshooting.md).
+Om du har problem med att få en datafeed att visas på FTP-platsen kan du läsa [Felsöka datafeeds](troubleshooting.md).
 
 ## Hur skickar jag om ett jobb? {#resend}
 
@@ -87,15 +87,15 @@ När du har verifierat/korrigerat leveransproblemet kör du jobbet igen för att
 
 ## Vad är inställningen BucketOwnerFullControl för Amazon S3-dataflöden? {#BucketOwnerFullControl}
 
-**BucketOwnerFullControl** ger behörighet att skapa objekt i andra grupper.
+**BucketOwnerFullControl** ger korskontobehörighet för att skapa objekt i andra grupper.
 
 Det vanliga användningsområdet för Amazon S3 är att kontoägaren för Amazon Web Services (AWS) skapar en bucket, sedan skapar en användare som har behörighet att skapa objekt i den bucket och sedan anger inloggningsuppgifter för den användaren. I det här fallet tillhör en användares objekt samma konto och kontoägaren har implicit fullständig kontroll över objektet (läs, ta bort och så vidare). Den här processen liknar hur FTP-leverans fungerar.
 
 AWS gör det även möjligt för en användare att skapa objekt i en bucket som tillhör ett annat användarkonto. Exempel: två AWS-användare, userA och userB, tillhör inte samma AWS-konto men vill skapa objekt i andra bucklar. Om userA skapar en bucket som kallas&quot;bucketA&quot; kan de skapa en bucket-princip som uttryckligen tillåter userB att skapa objekt i bucketA även om användaren inte äger bucket. Den här principen kan vara fördelaktig eftersom den inte kräver userA och userB för utbyte av autentiseringsuppgifter. I stället förser userB userA med sitt kontonummer och userA skapar en bucket-princip som i huvudsak säger&quot;let userB create objects in bucketA&quot;.
 
-Objekt ärver dock inte behörigheter från den överordnade bucket. Om userB överför ett objekt till userA:s bucket&quot;äger&quot; därför userB fortfarande det objektet, och som standard beviljas inte userA några behörigheter till det objektet trots att userA äger bucket. UserB måste uttryckligen tilldela userA-behörigheter eftersom userB fortfarande är objektets ägare. För att ge denna behörighet måste userB överföra objektet med en BucketOwnerFullControl ACL, som anger att bucket-ägaren (userA) har fullständig behörighet till objektet (läsa, skriva, ta bort och så vidare), även om objektet är&quot;ägt&quot; av userB.
+Objekten ärver dock inte behörigheter från den överordnade bucket. Om userB överför ett objekt till userA:s bucket&quot;äger&quot; därför userB fortfarande det objektet, och som standard beviljas inte userA några behörigheter till det objektet trots att userA äger bucket. UserB måste uttryckligen tilldela userA-behörigheter eftersom userB fortfarande är objektets ägare. För att ge denna behörighet måste userB överföra objektet med en BucketOwnerFullControl ACL, som anger att bucket-ägaren (userA) har fullständig behörighet till objektet (läsa, skriva, ta bort och så vidare), även om objektet är&quot;ägt&quot; av userB.
 
 >[!NOTE]
 >
->Adobe Analytics avgör inte om bucket har en princip som kräver att bucket-ägaren får fullständig kontroll över nya objekt, eller även om bucket-ägaren har ett annat konto än användaren som skriver data. I stället läggs markeringsägaren automatiskt till i `BucketOwnerFullControl` ACL med varje feed-överföring.
+>Adobe Analytics avgör inte om bucket har en princip som kräver att bucket-ägaren får fullständig kontroll över nya objekt, eller även om bucket-ägaren har ett annat konto än användaren som skriver data. I stället lägger Analytics automatiskt till bucket-ägaren i `BucketOwnerFullControl`-åtkomstkontrollistan med varje feed-överföring.
 

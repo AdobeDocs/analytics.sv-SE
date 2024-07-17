@@ -12,11 +12,11 @@ ht-degree: 1%
 
 # Förbereda för att migrera komponenter och projekt från Adobe Analytics till Customer Journey Analytics
 
-Innan någon i organisationen börjar migrera projekt enligt beskrivningen i [Migrera komponenter och projekt från Adobe Analytics till Customer Journey Analytics](/help/admin/admin/component-migration/component-migration.md)fyller du i följande avsnitt.
+Innan någon i organisationen börjar migrera projekt enligt beskrivningen i [Migrera komponenter och projekt från Adobe Analytics till Customer Journey Analytics](/help/admin/admin/component-migration/component-migration.md) ska du slutföra följande avsnitt.
 
 ## Förutsättningar
 
-Innan dina projekt och tillhörande komponenter är klara att migreras måste du följa stegen i [Utveckling från Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/aa-to-cja.html) i Adobe Customer Journey Analytics Guide. De här stegen omfattar:
+Innan dina projekt och tillhörande komponenter är klara att migreras måste du följa stegen i [Utveckla från Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/aa-to-cja.html) i Adobe Customer Journey Analytics Guide. De här stegen omfattar:
 
 1. Använd någon av följande metoder för att importera data till Adobe Experience Platform för att visa Adobe Analytics rapportsvitdata i Customer Journey Analytics:
 
@@ -27,27 +27,27 @@ Innan dina projekt och tillhörande komponenter är klara att migreras måste du
 
    * Om du vill använda Adobe Analytics källanslutning måste du:
 
-      1. [Ställ in rapportsviter för konsumtion i Adobe Experience Platform och Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/aa-data-in-cja.html#set-up-report-suites-for-ingestion-into-the-adobe-experience-platform-and-customer-journey-analytics)
+      1. [Konfigurera rapportsviter för förtäring i Adobe Experience Platform och Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/aa-data-in-cja.html#set-up-report-suites-for-ingestion-into-the-adobe-experience-platform-and-customer-journey-analytics)
 
-      1. [Infoga och använda data](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-data-ingestion/ingest-use-guides/analytics.html)
+      1. [Importera och använd data](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-data-ingestion/ingest-use-guides/analytics.html)
 
    * Om du vill använda WebSDK måste du:
 
-      1. [Ställ in rapportsviter för konsumtion i Adobe Experience Platform och Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/aa-data-in-cja.html#set-up-report-suites-for-ingestion-into-the-adobe-experience-platform-and-customer-journey-analytics)
+      1. [Konfigurera rapportsviter för förtäring i Adobe Experience Platform och Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/aa-data-in-cja.html#set-up-report-suites-for-ingestion-into-the-adobe-experience-platform-and-customer-journey-analytics)
 
-      1. [Importera data via Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-data-ingestion/ingest-use-guides/edge-network/aepwebsdk.html)
+      1. [Infoga data via Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-data-ingestion/ingest-use-guides/edge-network/aepwebsdk.html)
 
-1. Skapa en [anslutning](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/overview.html) och [datavy](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html) med insamlade data.
+1. Skapa en [anslutning](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/overview.html) och [datavy](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html) med inkapslade data.
 
 1. Se till att användare i Customer Journey Analytics är tilldelade datavyer där data mappas.
 
-   Mer information finns i [Customer Journey Analytics behörigheter i Admin Console](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-admin/cja-access-control.html#customer-journey-analytics-permissions-in-admin-console) in [Åtkomstkontroll för Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-admin/cja-access-control.html).
+   Mer information finns i [Customer Journey Analytics behörigheter i åtkomstkontrollen Admin Console](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-admin/cja-access-control.html#customer-journey-analytics-permissions-in-admin-console) i [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-admin/cja-access-control.html).
 
    Fliken Behörigheter ingår i varje produktprofil i Admin Console. Du kan lägga till användare i specifika produktprofiler. Sedan tilldelar du rättigheter till specifika datavyer och anger vilka behörigheter användarna i en produktprofil har.
 
 1. Bestäm som organisation hur du ska mappa komponenter.
 
-   Mer information finns i avsnittet nedan. [Bestäm som organisation hur du ska mappa komponenter](#decide-as-an-organization-how-you-will-map-components).
+   Mer information finns i avsnittet nedan, [Bestäm hur du ska mappa komponenter](#decide-as-an-organization-how-you-will-map-components).
 
 ## Förstå vad som ingår i en migrering
 
@@ -62,10 +62,10 @@ Segment, datumintervall och beräknade värden som inte redan finns i Customer J
 |  | Migrerad |
 |---------|---------|
 | **[Ägare](/help/components/c-calcmetrics/c-workflow/cm-workflow/cm-manager.md)** | Dimensioner och mätvärden: Nej<p>Segment och datumintervall: ![bock](assets/Smock_Checkmark_18_N.svg)</p> |
-| **[Delning](/help/analyze/analysis-workspace/components/analysis-workspace-components.md)** | Dimensioner och mätvärden: Nej<p>Segment och datumintervall: Nej</p> |
-| **[Beskrivning](/help/analyze/analysis-workspace/components/add-component-descriptions.md)** | Dimensioner och mätvärden: Nej<p>Segment och datumintervall: ![bock](assets/Smock_Checkmark_18_N.svg)</p> |
+| **[Delar](/help/analyze/analysis-workspace/components/analysis-workspace-components.md)** | Dimensioner och mätvärden: Nej<p>Segment och datumintervall: Nej</p> |
+| **[Beskrivningar](/help/analyze/analysis-workspace/components/add-component-descriptions.md)** | Dimensioner och mätvärden: Nej<p>Segment och datumintervall: ![bock](assets/Smock_Checkmark_18_N.svg)</p> |
 | **[Taggar](/help/analyze/analysis-workspace/components/analysis-workspace-components.md)** | Dimensioner och mätvärden: Nej<p>Segment och datumintervall: Nej</p> |
-| **[Attribution (on dimensions)](/help/analyze/analysis-workspace/attribution/overview.md)** | Dimensioner och mätvärden: Nej<p>Segment och datumintervall: Nej</p> |
+| **[Attribution (på dimensioner)](/help/analyze/analysis-workspace/attribution/overview.md)** | Dimensioner och mätvärden: Nej<p>Segment och datumintervall: Nej</p> |
 
 {style="table-layout:auto"}
 
@@ -76,16 +76,16 @@ Segment, datumintervall och beräknade värden som inte redan finns i Customer J
 | **[Datumintervall](/help/analyze/analysis-workspace/components/calendar-date-ranges/calendar.md)** | ![bock](assets/Smock_Checkmark_18_N.svg) |
 | **[Segment](/help/components/segmentation/seg-overview.md)** | ![bock](assets/Smock_Checkmark_18_N.svg) |
 | **[Snabbsegment](/help/analyze/analysis-workspace/components/segments/quick-segments.md)** | ![bock](assets/Smock_Checkmark_18_N.svg) |
-| **[Dimensioner](/help/components/dimensions/overview.md)** | ![bock](assets/Smock_Checkmark_18_N.svg) Mappas automatiskt eller manuellt |
-| **[Mätvärden](/help/components/metrics/overview.md)** | ![bock](assets/Smock_Checkmark_18_N.svg) Mappas automatiskt eller manuellt |
-| **[Panel](/help/analyze/analysis-workspace/c-panels/panels.md)** | ![bock](assets/Smock_Checkmark_18_N.svg) |
+| **[Dimensioner](/help/components/dimensions/overview.md)** | ![bock](assets/Smock_Checkmark_18_N.svg) har mappats automatiskt eller manuellt |
+| **[Mätvärden](/help/components/metrics/overview.md)** | ![bock](assets/Smock_Checkmark_18_N.svg) har mappats automatiskt eller manuellt |
+| **[Paneler](/help/analyze/analysis-workspace/c-panels/panels.md)** | ![bock](assets/Smock_Checkmark_18_N.svg) |
 | **[Visualiseringar](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md)** | ![bock](assets/Smock_Checkmark_18_N.svg) |
-| **[Ägare](/help/analyze/analysis-workspace/build-workspace-project/freeform-overview.md)** | ![bock](assets/Smock_Checkmark_18_N.svg) Definieras av användaren som utför migreringen |
+| **[Ägare](/help/analyze/analysis-workspace/build-workspace-project/freeform-overview.md)** | ![bockmarkering](assets/Smock_Checkmark_18_N.svg) Definierad av den användare som utför migreringen |
 | **[Kuration](/help/analyze/analysis-workspace/curate-share/curate.md)** | Nej |
-| **[Delning](/help/analyze/analysis-workspace/curate-share/share-projects.md)** | Nej |
+| **[Delar](/help/analyze/analysis-workspace/curate-share/share-projects.md)** | Nej |
 | **[Anteckningar](/help/analyze/analysis-workspace/components/annotations/overview.md)** | Nej |
 | **[Mappstruktur](/help/analyze/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)** | Nej |
-| **[Beskrivning](/help/analyze/analysis-workspace/build-workspace-project/freeform-overview.md)** | ![bock](assets/Smock_Checkmark_18_N.svg) |
+| **[Beskrivningar](/help/analyze/analysis-workspace/build-workspace-project/freeform-overview.md)** | ![bock](assets/Smock_Checkmark_18_N.svg) |
 | **[Taggar](/help/analyze/landing.md)** | Nej |
 | **[Favoriter](/help/analyze/landing.md)** | Nej |
 | **[Scheman](/help/components/scheduled-projects-manager.md)** | Nej |

@@ -15,17 +15,17 @@ ht-degree: 0%
 
 {{plug-in}}
 
-The `getTimeSinceLastVisit` Med plugin-programmet kan du spåra hur lång tid det tar för en besökare att återvända till din webbplats efter det senaste besöket.
+Med plugin-programmet `getTimeSinceLastVisit` kan du spåra hur lång tid det har tagit för en besökare att återvända till din webbplats efter det senaste besöket.
 
 ## Installera plugin-programmet med Web SDK-tillägget
 
 Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-programmen med Web SDK.
 
-1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
-1. Klicka **[!UICONTROL Tags]** till vänster och klicka sedan på den önskade taggegenskapen.
-1. Klicka **[!UICONTROL Extensions]** till vänster och klicka sedan på **[!UICONTROL Catalog]** tab
-1. Leta rätt på och installera **[!UICONTROL Common Web SDK Plugins]** tillägg.
-1. Klicka **[!UICONTROL Data Elements]** till vänster och klicka sedan på dataelementet.
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med dina inloggningsuppgifter för AdobeID.
+1. Klicka på **[!UICONTROL Tags]** till vänster och klicka sedan på den önskade taggegenskapen.
+1. Klicka på **[!UICONTROL Extensions]** till vänster och sedan på fliken **[!UICONTROL Catalog]**
+1. Leta reda på och installera tillägget **[!UICONTROL Common Web SDK Plugins]**.
+1. Klicka på **[!UICONTROL Data Elements]** till vänster och klicka sedan på det önskade dataelementet.
 1. Ange det önskade dataelementnamnet med följande konfiguration:
    * Tillägg: Vanliga SDK-plugin-program för webben
    * Dataelement: `getTimeSinceLastVisit`
@@ -39,10 +39,10 @@ Denna plugin stöds ännu inte för användning i en manuell implementering av W
 
 Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-programmen med Adobe Analytics.
 
-1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med dina inloggningsuppgifter för AdobeID.
 1. Klicka på den önskade taggegenskapen.
-1. Gå till [!UICONTROL Extensions] klickar du på [!UICONTROL Catalog] knapp
-1. Installera och publicera [!UICONTROL Common Analytics Plugins] extension
+1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Catalog]
+1. Installera och publicera tillägget [!UICONTROL Common Analytics Plugins]
 1. Om du inte redan har det skapar du en regel med namnet&quot;Initiera plugin-program&quot; med följande konfiguration:
    * Villkor: Inget
    * Händelse: Kärna - Bibliotek inläst (sidan ovanpå)
@@ -55,10 +55,10 @@ Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-program
 
 Om du inte vill använda tillägget för Common Analytics-plugin-program kan du använda den anpassade kodredigeraren.
 
-1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med dina inloggningsuppgifter för AdobeID.
 1. Klicka på önskad egenskap.
-1. Gå till [!UICONTROL Extensions] klickar du på **[!UICONTROL Configure]** under Adobe Analytics-tillägget.
-1. Expandera [!UICONTROL Configure tracking using custom code] dragspelspanel, som visar [!UICONTROL Open Editor] -knappen.
+1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen **[!UICONTROL Configure]** under Adobe Analytics-tillägget.
+1. Expandera dragspelsfliken [!UICONTROL Configure tracking using custom code] som visar knappen [!UICONTROL Open Editor].
 1. Öppna den anpassade kodredigeraren och klistra in den plugin-kod som finns nedan i redigeringsfönstret.
 1. Spara och publicera ändringarna i Analytics-tillägget.
 
@@ -75,18 +75,18 @@ function getTimeSinceLastVisit(){if(arguments&&"-v"===arguments[0])return{plugin
 
 ## Använda plugin-programmet
 
-The `getTimeSinceLastVisit` funktionen använder inte några argument. Den returnerar den tid som gått sedan besökaren senast kom till webbplatsen och som är paketerad i följande format:
+Funktionen `getTimeSinceLastVisit` använder inga argument. Den returnerar den tid som gått sedan besökaren senast kom till webbplatsen och som är paketerad i följande format:
 
-* Tid mellan 30 minuter och en timme sedan det senaste besöket är inställt på närmaste halvminuters test. Till exempel: `"30.5 minutes"`, `"53 minutes"`
-* Tiden mellan en timme och en dag avrundas till närmaste kvartalstimme. Till exempel: `"2.25 hours"`, `"7.5 hours"`
-* Tiden som är större än en dag avrundas till närmsta dagstidsinställning. Till exempel: `"1 day"`, `"3 days"`, `"9 days"`, `"372 days"`
+* Tid mellan 30 minuter och en timme sedan det senaste besöket är inställt på närmaste halvminuters test. Till exempel `"30.5 minutes"`, `"53 minutes"`
+* Tiden mellan en timme och en dag avrundas till närmaste kvartalstimme. Till exempel `"2.25 hours"`, `"7.5 hours"`
+* Tiden som är större än en dag avrundas till närmsta dagstidsinställning. Exempel: `"1 day"`, `"3 days"`, `"9 days"`, `"372 days"`
 * Om en besökare inte har besökt tidigare eller om den förflutna tiden är längre än två år, anges värdet till `"New Visitor"`.
 
 >[!NOTE]
 >
 >Denna plugin returnerar bara ett värde vid första besöket.
 
-Denna plugin skapar en cookie från första part som kallas `"s_tslv"` anges till en Unix-tidsstämpel för den aktuella tiden. Kakan går ut efter två års inaktivitet.
+Denna plugin skapar en cookie från första part med namnet `"s_tslv"` som är inställd på en Unix-tidsstämpel för den aktuella tiden. Kakan går ut efter två års inaktivitet.
 
 ## Exempel
 
@@ -113,5 +113,5 @@ s.prop1 = getTimeSinceLastVisit();
 ### 1.0 (16 april 2018)
 
 * Punktrelease (omkompilerad kod och mindre storlek).
-* Kod härledd från `getDaysSinceLastVisit` plugin-program (nu borttaget och namnändrat).
-* Nu används `formatTime` och `inList` plugin-program för returvärdet.
+* Kod härledd från plugin-programmet `getDaysSinceLastVisit` (nu borttaget och namnändrat).
+* `formatTime` och `inList` plugin-program används nu för returvärdet.

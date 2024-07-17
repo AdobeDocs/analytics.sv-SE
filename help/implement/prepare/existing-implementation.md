@@ -15,9 +15,9 @@ ht-degree: 0%
 
 Tar du över en Adobe Analytics-implementering från den tidigare tekniska ägaren? Vår ärvda implementeringsspelbok hjälper dig att ta kontrollen som ny teknisk ägare av en befintlig implementering. I det nedladdningsbara kalkylbladet får du hjälp med att upptäcka, granska och dokumentera aktiviteter som du bör göra under de första tio veckorna av jobbet när du tar över en befintlig implementering.
 
-**Ladda ned [Ärvd implementeringspellbook](assets/adobe_analytics_inherited_implementation_playbook.xlsx).**
+**Hämta [ärvd implementeringsspelningsbok](assets/adobe_analytics_inherited_implementation_playbook.xlsx).**
 
-![Playbook](assets/inherited-impl-playbook.png)
+![Spelbok](assets/inherited-impl-playbook.png)
 
 Ta en titt på de här tipsen från din tekniska ägare Sarah Owen. Sarah är en Adobe Analytics Champion och hon delar med sig av sina idéer om hur man använder den ärvda Implementeringsspelboken för att ta hand om en befintlig implementering:
 

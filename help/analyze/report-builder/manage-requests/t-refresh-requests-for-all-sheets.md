@@ -8,11 +8,11 @@ exl-id: 650c1626-be2d-4e4c-bcd9-bd9665ef9550
 source-git-commit: 66b7de0b008364e47253d319785c204ca479ab26
 workflow-type: tm+mt
 source-wordcount: '172'
-ht-degree: 4%
+ht-degree: 1%
 
 ---
 
-# Uppdatera förfrågningar för alla blad
+# Uppdatera begäranden för alla blad
 
 Du kan uppdatera begäranden för alla blad eller för flera begäranden.
 

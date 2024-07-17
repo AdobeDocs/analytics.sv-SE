@@ -21,42 +21,42 @@ Händelseserialisering är processen att implementera åtgärder för att förhi
 
 ## Konfigurera händelseserialisering
 
-Du måste först ange en händelses [!UICONTROL Unique Event Recording] till [!UICONTROL Use Event ID] i rapportsvitens inställningar. Se [Success Events](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/c-success-events/success-event.md) i användarhandboken för Admin.
+Du måste först ange en händelses [!UICONTROL Unique Event Recording] till [!UICONTROL Use Event ID] i inställningarna för rapportsviten. Se [Slutförda händelser](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/c-success-events/success-event.md) i användarhandboken för Admin.
 
 När du använder händelse-ID:n utförs borttagning av dubbletter på följande nivåer:
 
-* Varje variabel använder sin egen tabell för borttagning av dubbletter. Till exempel: `event1:ABC` och `event2:ABC` räknas båda i rapporteringen.
-* Deduplicering sker globalt för alla besökare. Om besökare A skickar `event1:ABC` besökare B skickar också `event1:ABC`ignorerar Adobe den andra instansen från besökaren B.
-* Avdupliceringen upphör inte att gälla. Om en besökare skickar `event1:ABC` kommer tillbaka 2 år senare och skickar `event1:ABC` Adobe ignorerar återigen den andra instansen.
+* Varje variabel använder sin egen tabell för borttagning av dubbletter. Till exempel räknas både `event1:ABC` och `event2:ABC` i rapporteringen.
+* Deduplicering sker globalt för alla besökare. Om besökare A skickar `event1:ABC` och besökare B också skickar `event1:ABC`, ignorerar Adobe den andra instansen från besökare B.
+* Avdupliceringen upphör inte att gälla. Om en besökare skickar `event1:ABC` och sedan kommer tillbaka två år senare och skickar `event1:ABC` igen, ignorerar Adobe den andra instansen.
 
 >[!TIP]
 >
->Om du vill deduplicera [`purchase`](event-purchase.md) -händelse, använd [`purchaseID`](../purchaseid.md) i stället.
+>Om du vill deduplicera [`purchase`](event-purchase.md)-händelsen använder du variabeln [`purchaseID`](../purchaseid.md) i stället.
 
 ## Använd händelse-ID:n med Web SDK
 
-Om du använder [**XDM-objekt**](/help/implement/aep-edge/xdm-var-mapping.md) används händelsens XDM-fält för händelseserialisering `id`. Den fullständiga XDM-sökvägen beror på vilken händelse du vill serialisera.
+Om du använder [**XDM-objektet**](/help/implement/aep-edge/xdm-var-mapping.md) använder händelseserialiseringen händelsens XDM-fält `id`. Den fullständiga XDM-sökvägen beror på vilken händelse du vill serialisera.
 
-Om du till exempel vill serialisera måttet för kundvagnstillägg anger du `xdm.commerce.productListAdds.id` till önskat serialiseringsvärde. Om du vill serialisera anpassad händelse 20 anger du `xdm._experience.analytics.event1to100.event20` till önskat serialiseringsvärde.
+Om du till exempel vill serialisera måttet för kundvagnstillägg anger du `xdm.commerce.productListAdds.id` till det önskade serialiseringsvärdet. Om du vill serialisera anpassad händelse 20 anger du `xdm._experience.analytics.event1to100.event20` till önskat serialiseringsvärde.
 
-Om du använder [**dataobjekt**](/help/implement/aep-edge/data-var-mapping.md), används för händelseserialisering `data.__adobe.analytics.events`, efter AppMeasurementen strängsyntax.
+Om du använder [**dataobjektet**](/help/implement/aep-edge/data-var-mapping.md) används `data.__adobe.analytics.events` för händelseserialisering, följande AppMeasurementen strängsyntax.
 
 ## Använd händelse-ID:n med Adobe Analytics-tillägget
 
 Du kan ange fältet för händelse-ID när du konfigurerar Analytics-tillägget (globala variabler) eller som en åtgärd i en regel.
 
-1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med dina inloggningsuppgifter för AdobeID.
 2. Klicka på den önskade taggegenskapen.
-3. Gå till [!UICONTROL Rules] och sedan klicka på önskad regel (eller skapa en regel).
-4. Under [!UICONTROL Actions]klickar du på en befintlig [!UICONTROL Adobe Analytics - Set Variables] eller klicka på +-ikonen.
-5. Ange [!UICONTROL Extension] nedrullningsbar lista till Adobe Analytics och [!UICONTROL Action Type] till [!UICONTROL Set Variables].
-6. Leta reda på [!UICONTROL Events] -avsnitt, där varje händelse innehåller [!UICONTROL Event ID] fält.
+3. Gå till fliken [!UICONTROL Rules] och klicka sedan på önskad regel (eller skapa en regel).
+4. Klicka på en befintlig [!UICONTROL Adobe Analytics - Set Variables]-åtgärd under [!UICONTROL Actions] eller klicka på +-ikonen.
+5. Ange Adobe Analytics i listrutan [!UICONTROL Extension] och [!UICONTROL Action Type] till [!UICONTROL Set Variables].
+6. Leta upp avsnittet [!UICONTROL Events] där varje händelse innehåller ett [!UICONTROL Event ID]-fält.
 
 Giltiga värden är alfanumeriska tecken som är upp till 20 byte långa. Om du anger ett värde som är längre än 20 byte trunkeras det till de första 20 byten.
 
 ## Använd händelse-ID:n i AppMeasurementet och den anpassade kodredigeraren för Analytics-tillägget
 
-Händelseserialisering ingår i `s.events` variabel. Tilldela ett ID till varje händelse med ett kolon i strängen.
+Händelseserialisering är en del av variabeln `s.events`. Tilldela ett ID till varje händelse med ett kolon i strängen.
 
 ```js
 // Assign custom ID serialization to a single value

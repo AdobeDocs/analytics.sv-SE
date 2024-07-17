@@ -27,13 +27,13 @@ Audience Manager-segmentmedlemskapet är smidigt. Användare kan ange eller ta b
 
 Ett Audience Manager-segment betecknas som en målgrupp i Analytics.
 
-Mer information finns i [Trait and Segment Population Data in Segment Builder](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/segments/segment-builder-data.html) och [Signaler, egenskaper och segment](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/signal-trait-segment.html).
+Mer information finns i [Trait and Segment Population Data in Segment Builder](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/segments/segment-builder-data.html) och [Signals, Traits och Segments](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/signal-trait-segment.html).
 
 ## Analyssegment {#analytics-segments}
 
 Ett Analytics-segment är en filtreringsmekanism för data i era rapporter. Filtrering kan ske på besöks-, besöks- eller träffnivå, i stället för strikt på besökarnivå som i Audience Manager. Det finns flera viktiga faktorer att tänka på när man jämför ett Analytics-segment med ett Audience Manager-segment:
 
-* Analyssegmenten fungerar på en annan uppsättning data än Audience Manager. Under datainsamlingen tillämpar Analytics många olika efterbearbetningssteg på data som inte är tillgängliga för Audience Manager. Efterbearbetningen kan omfatta eVar persistence, bearbetningsregler, uppslag (geolocation, mobile device), VISTA och många andra. Audience Manager får förbearbetade data via vidarebefordran på serversidan (eller DIL).
+* Analyssegmenten fungerar på en annan uppsättning data än Audience Manager. Under datainsamlingen tillämpar Analytics många olika efterbearbetningssteg på data som inte är tillgängliga för Audience Manager. Post-bearbetningen kan omfatta eVar persistence, bearbetningsregler, uppslag (geolocation, mobile device), VISTA och många andra. Audience Manager får förbearbetade data via vidarebefordran på serversidan (eller DIL).
 
   Vanliga datameddelanden inträffar när segment jämförs baserat på dimensioner som aldrig förfaller i Analytics, med samma dimension i Audience Manager. Till exempel listVars eller merchandising eVars som aldrig förfaller.
 
@@ -45,4 +45,4 @@ Ett Analytics-segment är en filtreringsmekanism för data i era rapporter. Filt
 
   Omvänt kommer besökare i Analytics att inkluderas eller exkluderas från ett segment baserat på rapporteringsdatumintervallet. En enskild besökare gjorde till exempel ett köp förra månaden. I Adobe Audience Manager inkluderas besökaren i ett&quot;köpsegment&quot;, oavsett datumintervall. I Analytics skulle en rapport som baseras på den här månaden inte inkludera besökaren i segmentet. En rapport baserad på den här månaden och förra månaden skulle dock inkludera besökaren i segmentet.
 
-Se [Segmenteringshandbok för analyser](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-home.html) för mer information.
+Mer information finns i [segmenteringshandboken för analyser](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-home.html).

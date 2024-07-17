@@ -15,7 +15,7 @@ ht-degree: 0%
 
 {{plug-in}}
 
-The `getPercentPageViewed` plugin-programmet mäter besökarens rullningsaktivitet för att se hur mycket av en sida de visar innan de går vidare till en annan sida. Denna plugin behövs inte om sidorna är små i höjdled eller inte vill mäta rullningsaktiviteten.
+Plugin-programmet `getPercentPageViewed` mäter en besökares rullningsaktivitet för att se hur mycket av en sida de visar innan de går vidare till en annan sida. Denna plugin behövs inte om sidorna är små i höjdled eller inte vill mäta rullningsaktiviteten.
 
 ## Installera plugin-programmet med Web SDK- eller Web SDK-tillägget
 
@@ -25,10 +25,10 @@ Det här plugin-programmet stöds ännu inte för användning i Web SDK.
 
 Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-programmen med Adobe Analytics.
 
-1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med dina inloggningsuppgifter för AdobeID.
 1. Klicka på den önskade taggegenskapen.
-1. Gå till [!UICONTROL Extensions] klickar du på [!UICONTROL Catalog] knapp
-1. Installera och publicera [!UICONTROL Common Analytics Plugins] extension
+1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Catalog]
+1. Installera och publicera tillägget [!UICONTROL Common Analytics Plugins]
 1. Om du inte redan har det skapar du en regel med namnet&quot;Initiera plugin-program&quot; med följande konfiguration:
    * Villkor: Inget
    * Händelse: Kärna - Bibliotek inläst (sidan ovanpå)
@@ -41,10 +41,10 @@ Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-program
 
 Om du inte vill använda tillägget för Common Analytics-plugin-program kan du använda den anpassade kodredigeraren.
 
-1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med dina inloggningsuppgifter för AdobeID.
 1. Klicka på önskad egenskap.
-1. Gå till [!UICONTROL Extensions] klickar du på **[!UICONTROL Configure]** under Adobe Analytics-tillägget.
-1. Expandera [!UICONTROL Configure tracking using custom code] dragspelspanel, som visar [!UICONTROL Open Editor] -knappen.
+1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen **[!UICONTROL Configure]** under Adobe Analytics-tillägget.
+1. Expandera dragspelsfliken [!UICONTROL Configure tracking using custom code] som visar knappen [!UICONTROL Open Editor].
 1. Öppna den anpassade kodredigeraren och klistra in den plugin-kod som finns nedan i redigeringsfönstret.
 1. Spara och publicera ändringarna i Analytics-tillägget.
 
@@ -61,28 +61,28 @@ function getPercentPageViewed(pid,ch){var e=pid,i=ch;if("-v"===e)return{plugin:"
 
 ## Använda plugin-programmet
 
-The `getPercentPageViewed` funktionen använder följande argument:
+Funktionen `getPercentPageViewed` använder följande argument:
 
-* **`pid`** (valfri sträng): En variabel eller ett värde som är lika med den aktuella sidan. Standardvärdet är Analytics-AppMeasurementet `pageName` variabeln OR the current URL if the AppMeasurement pageName variable is not set.
-* **`ch`** (valfritt, booleskt): Ange detta till `false` (eller `0`) om du inte vill att plugin-programmet ska ta hänsyn till ändringar som gjorts i sidstorleken efter den första inläsningen. Om det utelämnas används det här argumentet som standard `true`. Adobe rekommenderar att detta argument utelämnas i de flesta fall.
+* **`pid`** (valfritt, sträng): En variabel eller ett värde som är lika med den aktuella sidan. Standardvärdet är variabeln `pageName` i Analytics-AppMeasurementet ELLER den aktuella URL:en om variabeln pageName inte har angetts för AppMeasurementet.
+* **`ch`** (valfritt, booleskt): Ange det här till `false` (eller `0`) om du inte vill att plugin-programmet ska ta hänsyn till ändringar som har gjorts i sidstorleken efter den första inläsningen. Om det utelämnas blir det här argumentet som standard `true`. Adobe rekommenderar att detta argument utelämnas i de flesta fall.
 
 Om du anropar den här funktionen returneras ingenting. I stället anges följande variabler:
 
-* `window._ppvPreviousPage`: Namnet på den föregående sida som visas. Slutliga rullningsmått för den aktuella sidan är inte tillgängliga förrän en ny sida har lästs in.
-* `window._ppvInitialPercentViewed`: Den procentandel av föregående sida som var synlig när föregående sida först lästes in. Om hela sidan är synlig när den läses in första gången, är det här värdet `100`.
-* `window._ppvHighestPercentViewed`: Den högsta procentandel av föregående sida som besökaren visade (höjdvis). Den längst punkten som besökaren rullade ned till på föregående sida. Om hela sidan är synlig när den läses in första gången, är det här värdet `100`.
+* `window._ppvPreviousPage`: Namnet på föregående sida visas. Slutliga rullningsmått för den aktuella sidan är inte tillgängliga förrän en ny sida har lästs in.
+* `window._ppvInitialPercentViewed`: Den procentandel av föregående sida som var synlig när föregående sida först lästes in. Om hela sidan är synlig när den läses in för första gången är det här värdet `100`.
+* `window._ppvHighestPercentViewed`: Den högsta procentandelen av föregående sida som besökaren visade (höjdvis). Den längst punkten som besökaren rullade ned till på föregående sida. Om hela sidan är synlig när den läses in för första gången är det här värdet `100`.
 * `window._ppvFinalPercentViewed`: Den procentandel av föregående sida som var synlig vid den punkt besökaren flyttade till den aktuella sidan. Värdet är lika med eller större än den ursprungliga procentandelen som visas och är lika med eller mindre än den högsta procentsidan som visas.
 * `window._ppvHighestPixelsSeen`: Det högsta antalet totala pixlar som visas (höjdvis) när besökaren rullade nedåt på föregående sida.
-* `window._ppvFoldsAvailable`: Det totala antalet&quot;sidvikningar&quot; som kan rullas nedåt på föregående sida. Om hela sidan är synlig när den läses in första gången, är det här värdet `1`.
-* `window._ppvFoldsSeen`: Det högsta antalet sidvikningar som nås när besökaren rullade nedåt på föregående sida. Den här variabeln innehåller &quot;top-of-page&quot;-vikningen. Om hela sidan är synlig när den läses in första gången, är det här värdet `1`.
+* `window._ppvFoldsAvailable`: Det totala antalet sidvikningar som är tillgängliga för rullning nedåt på föregående sida. Om hela sidan är synlig när den läses in för första gången är det här värdet `1`.
+* `window._ppvFoldsSeen`: Det högsta antalet sidvikningar som nås när besökaren rullade nedåt på föregående sida. Den här variabeln innehåller &quot;top-of-page&quot;-vikningen. Om hela sidan är synlig när den läses in för första gången är det här värdet `1`.
 
 Tilldela en eller flera av dessa variabler till eVars för att visa dimensionsdata i rapporter.
 
 Detta plugin-program skapar tre cookies från första part som upphör i slutet av en webbläsarsession:
 
 * `s_ppv`: Lagrar alla värden som visas genom att funktionen anropas
-* `s_tp`: Sparar den totala pixelhöjden för föregående sida
-* `s_ips`: Sparar den inledande procentandelen rullad från föregående sida
+* `s_tp`: Lagrar den totala pixelhöjden för föregående sida
+* `s_ips`: Lagrar den inledande procentandelen rullad från föregående sida
 
 ## Exempel
 
@@ -113,7 +113,7 @@ if(_ppvPreviousPage)
 
 ### 5.1 (8 december 2022)
 
-* Lagt till `_finalPercentViewed` lösning
+* Lade till lösningen `_finalPercentViewed`
 
 ### 5.0.1 (22 juni 2021)
 
@@ -125,7 +125,7 @@ if(_ppvPreviousPage)
 
 ### v4.0 (7 oktober 2019)
 
-* Tillagd `s._ppvFoldsSeen` och `s._ppvFoldsAvailable` lösningar
+* `s._ppvFoldsSeen` och `s._ppvFoldsAvailable` lösningar har lagts till
 
 ### v3.01 (13 augusti 2018)
 

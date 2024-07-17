@@ -6,14 +6,14 @@ role: User, Admin
 exl-id: a72df772-edd0-45d7-bb64-80fbdaa12f6b
 source-git-commit: daa9e22468430434b23f515d6dd22fee4228d728
 workflow-type: tm+mt
-source-wordcount: '1254'
+source-wordcount: '1238'
 ht-degree: 0%
 
 ---
 
 # Snabbguide för chefsanvändare
 
-Följande information ger chefsanvändare information om de effektivaste strategierna för att använda och visa Adobe Analytics dashboards. En video som visar den här informationen finns på [Adobe Analytics Dashboards In-App Experience](https://youtu.be/QXqQ_PkArbA).
+Följande information ger chefsanvändare information om de effektivaste strategierna för att använda och visa Adobe Analytics dashboards. En video som visar den här informationen finns i [Adobe Analytics-instrumentpaneler i appupplevelsen](https://youtu.be/QXqQ_PkArbA).
 
 Den här guiden är avsedd att hjälpa chefsanvändare att läsa och tolka styrkort på kontrollpaneler i Analytics. Med appen kan chefsanvändare snabbt och enkelt visa en bred återgivning av viktiga sammanfattningsdata på sina egna mobila enheter.
 
@@ -32,31 +32,31 @@ Om du vill få åtkomst till styrkort på instrumentpaneler ser du till att:
 
 Följ stegen i operativsystemet på enheten för att hämta och installera programmet.
 
-**För chefsanvändare på iOS:**
+**För företagsledare på iOS:**
 
-Klicka på följande länk (den är också tillgänglig i Analytics under **[!UICONTROL Tools]** > **[!UICONTROL Analytics dashboards (Mobile App)]**) och följ anvisningarna för att hämta, installera och öppna programmet:
+Klicka på följande länk (den är även tillgänglig i Analytics under **[!UICONTROL Tools]** > **[!UICONTROL Analytics dashboards (Mobile App)]**) och följ anvisningarna för att hämta, installera och öppna appen:
 
-[Länk till iOS](https://apple.co/2zXq0aN)
+[iOS link](https://apple.co/2zXq0aN)
 
-**För chefsanvändare på Android:**
+**För företagsledare på Android:**
 
-Klicka på följande länk (den är också tillgänglig i Analytics under **[!UICONTROL Tools]** > **[!UICONTROL Analytics dashboards (Mobile App)]**) och följ anvisningarna för att hämta, installera och öppna programmet:
+Klicka på följande länk (den är även tillgänglig i Analytics under **[!UICONTROL Tools]** > **[!UICONTROL Analytics dashboards (Mobile App)]**) och följ anvisningarna för att hämta, installera och öppna appen:
 
-[Android-länk](https://bit.ly/2LM38Oo)
+[Android link](https://bit.ly/2LM38Oo)
 
 När programmet har laddats ned och installerats kan företagsanvändare logga in i det med sina befintliga Adobe Analytics-inloggningsuppgifter.
 
-![App - välkomstskärm](assets/welcome.png)
+![App welcome screen](assets/welcome.png)
 
 ## Använda instrumentpaneler
 
 Så här använder du kontrollpaneler:
 
-1. Logga in på appen. Inloggningsskärmen visas när du startar instrumentpaneler. Följ instruktionerna med dina befintliga Adobe Analytics-inloggningsuppgifter. Vi stöder både Adobe och Enterprise/Federated ID.
+1. Logga in på appen. Inloggningsskärmen visas när du startar instrumentpaneler. Följ instruktionerna med dina befintliga Adobe Analytics-uppgifter. Vi stöder både Adobe och Enterprise/Federated ID.
 
-   ![Logga in sekvens](assets/signseq.png)
+   ![Logga in i sekvens](assets/signseq.png)
 
-1. Välj ett företag. När du har loggat in på instrumentpanelerna visas **[!UICONTROL Choose a company]** visas. På den här skärmen visas de inloggningsföretag som du tillhör. Tryck på det företagsnamn som är associerat med det styrkort som delas med dig.
+1. Välj ett företag. När du har loggat in på instrumentpaneler visas skärmen **[!UICONTROL Choose a company]**. På den här skärmen visas de inloggningsföretag som du tillhör. Tryck på det företagsnamn som är associerat med det styrkort som delas med dig.
 
    I styrkortslistan visas alla styrkort som delas med dig.
 
@@ -75,9 +75,9 @@ Så här använder du kontrollpaneler:
 
    ![Inget delat](assets/nothing.png)
 
-1. Granska hur rutorna visas i styrkortet (det första styrkortet visas i mörkt läge). se **[!UICONTROL Preferences]** nedan om du vill ha mer information).
+1. Granska hur rutorna visas i styrkortet (det första styrkortet visas i mörkt läge. Mer information finns i **[!UICONTROL Preferences]** nedan).
 
-   ![Förklarade plattor](assets/newexplain.png)
+   ![Rutorna förklaras](assets/newexplain.png)
 
    Ytterligare information om plattor:
 
@@ -86,6 +86,7 @@ Så här använder du kontrollpaneler:
       * En dag visar en timtrend
       * Mer än en dag och mindre än ett år visar en daglig trend
       * Ett år eller mer visar en vecktrend
+
    * Formeln för ändring av procentvärde är metrisk summa (aktuellt datumintervall) - metrisk summa (jämförelsedatumintervall) / metrisk summa (jämförelsedatumintervall).
 
    * Du kan dra ned skärmen för att uppdatera styrkortet.
@@ -105,7 +106,7 @@ Så här använder du kontrollpaneler:
 
    * Du kan också ändra datumintervallen i den detaljerade vyn som visas ovan på samma sätt.
 
-   * Beroende på vilket intervall du trycker på (**Dag**, **Vecka**, **Månad**, eller **År**) visas två alternativ för datumintervall, antingen det aktuella tidsintervallet eller det som ligger precis före det. Tryck på ett av dessa två alternativ för att markera det första intervallet. Under **[!UICONTROL COMPARE TO]** klickar du på ett av de alternativ som visas för att jämföra data för den här tidsperioden med det första datumintervall som du valde. Tryck **[!UICONTROL Done]** i skärmens övre högra hörn. The **[!UICONTROL Date Ranges]** och styrkortets paneler uppdateras med nya jämförelsedata från de nya intervallen som du valde.
+   * Beroende på vilket intervall du knackar på (**Dag**, **Vecka**, **Månad** eller **År**) visas två alternativ för datumintervall, antingen det aktuella tidsintervallet eller det närmast föregående. Tryck på något av dessa två alternativ för att markera det första intervallet. I listan **[!UICONTROL COMPARE TO]**: tryck på ett av alternativen för att jämföra data för den här tidsperioden med det första datumintervallet du valde. Tryck på **[!UICONTROL Done]** i skärmens övre högra hörn. Fälten **[!UICONTROL Date Ranges]** och styrkortets paneler uppdateras med nya jämförelsedata från de nya intervallen som du har valt.
 
 1. Om du vill använda ett segmentfilter på styrkortet trycker du på listrutan för filter och väljer ett segment som har konfigurerats av markören. [Filter](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html) i appen fungerar på samma sätt som i Analytics Workspace.
 
@@ -116,30 +117,30 @@ Så här använder du kontrollpaneler:
 1. Lämna feedback om den här appen:
 
    1. Tryck på inställningsikonen i appskärmens övre högra hörn.
-   2. På **[!UICONTROL Settings]** skärmtryck på **[!UICONTROL Feedback]** alternativ.
+   2. Tryck på alternativet **[!UICONTROL Feedback]** på skärmen **[!UICONTROL Settings]**.
    3. Tryck för att visa alternativen för att lämna feedback.
 
-      ![Inställningsskärm](assets/settings.png)
+      ![Inställningsskärmen](assets/settings.png)
 
-1. Om du vill ändra inställningarna trycker du på **[!UICONTROL Preferences]** som visas ovan. I inställningarna kan du aktivera biometrisk inloggning eller ställa in programmet för mörkt läge enligt nedan:
+1. Om du vill ändra inställningarna trycker du på alternativet **[!UICONTROL Preferences]** ovan. I inställningarna kan du aktivera biometrisk inloggning eller ställa in programmet för mörkt läge enligt nedan:
 
    ![Mörkt läge](assets/darkmode.png)
 
 
 **Rapportera ett fel**:
 
-Tryck på alternativet och välj en underkategori för felet. I formuläret för att rapportera ett fel anger du din e-postadress i det övre fältet och en beskrivning av felet i fältet nedanför. En skärmbild av din kontoinformation bifogas automatiskt till meddelandet, men du kan ta bort den om du vill genom att trycka på knappen **X** i den bifogade bilden. Du kan också göra en skärminspelning, lägga till fler skärmbilder eller bifoga filer. Om du vill skicka rapporten trycker du på pappersplansikonen i formulärets övre högra hörn.
+Tryck på alternativet och välj en underkategori för felet. I formuläret för att rapportera ett fel anger du din e-postadress i det övre fältet och en beskrivning av felet i fältet nedanför. En skärmbild av din kontoinformation bifogas automatiskt till meddelandet, men du kan ta bort den om du vill genom att trycka på **X** i den bifogade bilden. Du kan också göra en skärminspelning, lägga till fler skärmbilder eller bifoga filer. Om du vill skicka rapporten trycker du på pappersplansikonen i formulärets övre högra hörn.
 
 
 ![Rapportera fel](assets/newbug.png)
 
-**Att föreslå en förbättring**:
+**Så här föreslår du en förbättring**:
 
-Tryck på alternativet och välj en underkategori för förslaget. I förslagsformuläret anger du din e-postadress i det övre fältet och din beskrivning av felet i fältet nedanför. En skärmbild av din kontoinformation bifogas automatiskt till meddelandet, men du kan ta bort den om du vill genom att trycka på knappen **X** i den bifogade bilden. Du kan också göra en skärminspelning, lägga till fler skärmbilder eller bifoga filer. Om du vill skicka förslaget trycker du på pappersplansikonen i formulärets övre högra hörn.
+Tryck på alternativet och välj en underkategori för förslaget. I förslagsformuläret anger du din e-postadress i det övre fältet och din beskrivning av felet i fältet nedanför. En skärmbild av din kontoinformation bifogas automatiskt till meddelandet, men du kan ta bort den om du vill genom att trycka på **X** i den bifogade bilden. Du kan också göra en skärminspelning, lägga till fler skärmbilder eller bifoga filer. Om du vill skicka förslaget trycker du på pappersplansikonen i formulärets övre högra hörn.
 
-**Ställ en fråga**:
+**Så här ställer du en fråga**:
 
-Tryck på alternativet och ange din e-postadress i det övre fältet och din fråga i fältet nedanför. En skärmdump bifogas automatiskt till meddelandet, men du kan ta bort den om du vill genom att trycka på knappen **X** i den bifogade bilden. Du kan också göra en skärminspelning, lägga till fler skärmbilder eller bifoga filer. Om du vill skicka frågan trycker du på pappersplansikonen i formulärets övre högra hörn.
+Tryck på alternativet och ange din e-postadress i det övre fältet och din fråga i fältet nedanför. En skärmdump bifogas automatiskt till meddelandet, men du kan ta bort den om du vill genom att trycka på **X** i den bifogade bilden. Du kan också göra en skärminspelning, lägga till fler skärmbilder eller bifoga filer. Om du vill skicka frågan trycker du på pappersplansikonen i formulärets övre högra hörn.
 
 ## Ordlista
 
@@ -149,8 +150,8 @@ Tryck på alternativet och ange din e-postadress i det övre fältet och din fr�
 | Kurator | Datalitterera persona som hittar och distribuerar insikter från Analytics och konfigurerar styrkorten så att de kan ses av konsumenterna |
 | Insamling | Att skapa eller redigera ett mobilstyrkort med relevanta mått, dimensioner och andra komponenter för konsumenten |
 | Styrkort | En instrumentpanelsvy som innehåller en eller flera paneler |
-| Platta | En återgivning för ett mätresultat i en styrkortsvy |
-| Uppdelningar | En sekundär vy som du kommer åt genom att trycka på en platta i styrkortet. Den här vyn utökas med det mått som visas på rutan och kan även innehålla rapporter om ytterligare uppdelningsdimensioner. |
+| Sida vid sida | En återgivning för ett mätresultat i en styrkortsvy |
+| Uppdelning | En sekundär vy som du kommer åt genom att trycka på en platta i styrkortet. Den här vyn utökas med det mått som visas på rutan och kan även innehålla rapporter om ytterligare uppdelningsdimensioner. |
 | Datumintervall | Det primära datumintervallet för instrumentpanelsrapporter |
 | Jämförelsedatumintervall | Datumintervallet som jämförs med det primära datumintervallet |
 

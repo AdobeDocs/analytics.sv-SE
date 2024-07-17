@@ -12,14 +12,14 @@ ht-degree: 0%
 
 # Site section
 
-The &#39;Site section&#39; [dimension](overview.md) listar namnen på webbplatsens avsnitt. För stora webbplatser är det praktiskt att gruppera sidor i avsnitt. Den här dimensionen är användbar när du vill se de toppvisade eller högpresterande webbplatsavsnitten.
+I Site-avsnittet [dimension](overview.md) visas namnen på webbplatsens avsnitt. För stora webbplatser är det praktiskt att gruppera sidor i avsnitt. Den här dimensionen är användbar när du vill se de toppvisade eller högpresterande webbplatsavsnitten.
 
-Den här dimensionen är relaterad till [Sida](page.md) och [Server](server.md) dimensioner. Sidan är mest granulerad, servern är minst granulerad och Site-avsnittet är mellan de två.
+Dimensionen är relaterad till dimensionerna [Sida](page.md) och [Server](server.md). Sidan är mest granulerad, servern är minst granulerad och Site-avsnittet är mellan de två.
 
 ## Fyll den här dimensionen med data
 
-Den här dimensionen hämtar data från [`ch` frågesträng](/help/implement/validate/query-parameters.md) i bildbegäranden. AppMeasurementet samlar in dessa data med [`channel`](/help/implement/vars/page-vars/channel.md) variabel.
+Den här dimensionen hämtar data från [`ch`-frågesträngen ](/help/implement/validate/query-parameters.md) i bildbegäranden. AppMeasurementet samlar in dessa data med variabeln [`channel`](/help/implement/vars/page-vars/channel.md).
 
 ## Dimensioner
 
-Bland Dimensionerna finns namnen på webbplatsens avsnitt. Din organisation avgör vilka specifika dimensionsobjekt du vill använda. Oavsett vilken metod du använder måste du se till att den är konsekvent och att du spelar in den i en [konstruktionsdokument](/help/implement/prepare/solution-design.md).
+Bland Dimensionerna finns namnen på webbplatsens avsnitt. Din organisation avgör vilka specifika dimensionsobjekt du vill använda. Oavsett vilken metod du använder måste du se till att den är konsekvent och att du spelar in den i ett [lösningsdesigndokument](/help/implement/prepare/solution-design.md).

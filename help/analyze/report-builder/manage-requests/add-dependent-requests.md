@@ -16,7 +16,7 @@ ht-degree: 0%
 
 En beroende begäran är en begäran som är beroende av en befintlig begäran.
 
-För rapporter med korrelationsbrytningar aktiverade i rapporttabellen kan du ta en närmare titt på ett objekt genom att högerklicka i cellen och sedan klicka **[!UICONTROL Add Dependent Request]** > **[!UICONTROL Breakdown]**.
+För rapporter med korrelationsbrytningar aktiverade i rapporttabellen kan du ta en närmare titt på ett objekt genom att högerklicka i cellen och sedan klicka på **[!UICONTROL Add Dependent Request]** > **[!UICONTROL Breakdown]**.
 
 >[!NOTE]
 >

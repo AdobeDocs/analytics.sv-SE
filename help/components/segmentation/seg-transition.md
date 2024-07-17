@@ -56,13 +56,13 @@ Du kan skapa eller redigera nya segment för Data Warehouse i segmentbyggaren/ha
 * **Besök från mobila enheter**
 * **Besök från naturlig sökning**
 * **Besök från betald sökning**
-* **Besök med Visitor ID Cookie**
+* **Besök med cookie-fil för besökar-ID**
 
 Dessa segment migreras som segmentmallar till segmentbyggaren. Befintliga rapporter som använder dessa segment fortsätter att fungera korrekt.
 
 +++
 
-+++ **Vad hände med Experience Cloud-segmenten (Suite):**
++++ **Vad hände med Experience Cloud-segment (Suite):**
 
 * Icke-köpare
 * Inköpare
@@ -78,9 +78,9 @@ Befintliga rapporter som använder dessa segment fungerar fortfarande korrekt.
 
 +++
 
-+++ **Vad hände med administratörssegmenten (kallas även&quot;globala&quot; segment)?**
++++ **Vad hände med administratörssegment (kallas även&quot;globala&quot; segment)?**
 
-**Administratör** segmenten kommer att migreras till det nya segmentgränssnittet och visas som segment som delas med alla.
+**Admin**-segment migreras till det nya segmentgränssnittet och visas som segment som delas med alla.
 
 Ägaren till dessa segment anges till den administratör som har det äldsta kontot i inloggningsföretagets lista över adminanvändare, men alla administratörer kan ta bort, redigera och dela dessa segment.
 

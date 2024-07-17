@@ -15,8 +15,8 @@ ht-degree: 3%
 
 Datakällfiler har följande egenskaper:
 
-* Filen finns i `.txt` format.
-* Kommenterade rader börjar med &#39;`#`och är valfria.
+* Filen har formatet `.txt`.
+* Kommenterade rader börjar med `#` och är valfria.
 * Den första raden som inte är kommenterad innehåller filens rubriker.
 * Det första värdet för varje rad är datumet som använder formatet `MM/DD/YYYY` eller `MM/DD/YYYY/HH/mm/SS`.
 * Värden på alla rader, inklusive rubriker, är tabbavgränsade.
@@ -24,7 +24,7 @@ Datakällfiler har följande egenskaper:
 
 ## Kommentarer
 
-Alla rader som börjar med &#39;`#`&#39; är en kommentar. När du hämtar en datakällmallfil är de två första raderna kommentarer.
+Alla rader som börjar med `#` är en kommentar. När du hämtar en datakällmallfil är de två första raderna kommentarer.
 
 * Den första kommentaren anger vilken typ av mall du har konfigurerat för datakällan, det användar-ID för backend-objektet som skapade datakällan samt datakällans-ID.
 * Den andra kommentaren ger egna namn för vart och ett av de rubriker som finns i mallfilen.
@@ -33,7 +33,7 @@ Alla kommentarsrader ignoreras av Adobe när filen bearbetas, så du kan ta bort
 
 ## Sidhuvuden
 
-När du överför datakällfiler krävs kolumnrubriker. De här kolumnrubrikerna är inte skiftlägeskänsliga, men det krävs blanksteg (t.ex. `eVar1` är en ogiltig rubrik, while `EVAR 1` är giltigt). Kolumnrubriker gäller för alla rapportsviter. Använd följande tabeller för att kontrollera att varje rubrik i datakällfilen är korrekt inställd.
+När du överför datakällfiler krävs kolumnrubriker. De här kolumnrubrikerna är inte skiftlägeskänsliga, men nödvändiga mellanslag är nödvändiga (till exempel är `eVar1` ett ogiltigt huvud medan `EVAR 1` är giltigt). Kolumnrubriker gäller för alla rapportsviter. Använd följande tabeller för att kontrollera att varje rubrik i datakällfilen är korrekt inställd.
 
 >[!TIP]
 >
@@ -59,7 +59,7 @@ Dimensioner och mätvärden placeras i samma rubrikrad.
 | [Tillägg i kundvagn](/help/components/metrics/cart-additions.md) | `Cart Adds` |
 | [Raderingar i kundvagn](/help/components/metrics/cart-removals.md) | `Cart Removes` |
 | [Kundvagnsvisningar](/help/components/metrics/cart-views.md) | `Cart Views` |
-| [Korgar](/help/components/metrics/carts.md) | `Cart Opens` |
+| [KARTOR](/help/components/metrics/carts.md) | `Cart Opens` |
 | [Utcheckningar](/help/components/metrics/checkouts.md) | `Checkouts` |
 | [Anpassade händelser](/help/components/metrics/custom-events.md) | `Event 1` - `Event 1000` |
 | [Beställningar](/help/components/metrics/orders.md) | `Orders` |
@@ -68,7 +68,7 @@ Dimensioner och mätvärden placeras i samma rubrikrad.
 
 {style="table-layout:auto"}
 
-Adobe stöder inte datakällor för andra mått eller mätvärden. Om variabler utöver vad som anges i tabellerna ovan är obligatoriska bör du använda [API för massdatainfogning](https://developer.adobe.com/analytics-apis/docs/2.0/guides/endpoints/bulk-data-insertion/) i stället.
+Adobe stöder inte datakällor för andra mått eller mätvärden. Om variabler utöver vad som anges i tabellerna ovan är obligatoriska bör du använda [API:t för gruppdata](https://developer.adobe.com/analytics-apis/docs/2.0/guides/endpoints/bulk-data-insertion/) i stället.
 
 ## Datum
 
@@ -85,7 +85,7 @@ En enda datakällfil har stöd för upp till 90 unika dagar. Om du vill inkluder
 
 Efterföljande värden efter datumet i varje rad innehåller de data som du vill överföra. Varje rad motsvarar den aktuella tidsstämpeln. Se till att samma antal flikar finns på varje rad. Kolumner kan vara i vilken ordning som helst. Kontrollera att data i varje rad justeras mot rubrikerna överst. Den maximala mängden data som en rad kan innehålla är 4 096 byte.
 
-Dimensionen får inte innehålla semikolon (`;`). Rader som innehåller semikolon hoppas över.
+Dimensionens data får inte innehålla semikolon (`;`). Rader som innehåller semikolon hoppas över.
 
 ## Nästa steg
 

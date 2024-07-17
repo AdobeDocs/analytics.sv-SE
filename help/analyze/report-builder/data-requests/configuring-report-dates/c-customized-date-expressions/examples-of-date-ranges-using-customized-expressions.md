@@ -7,8 +7,8 @@ role: User, Admin
 exl-id: d936dd4e-d330-4ed9-a979-3273397d7d92
 source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '421'
+ht-degree: 1%
 
 ---
 
@@ -20,11 +20,11 @@ I tabellen antas dagens datum vara måndag, 10 november 2011, med den gregorians
 
 | Exempel | Datumintervall | Anpassa uttryck | Rapportens datumintervall |
 |---|---|---|---|
-|  |  | **Från** | **Till** |  |
+|  | | **Från** | **Till** | |
 | 1 | För två veckor sedan | cw-2w | cw-1w-1d | 26 okt till 1 nov |
 | 2 | De första 3 dagarna i den femte månaden i det senaste året | cy-1y+4m | cy-1y+4m+2d | 1 maj-3 maj 2010 |
 | 3 | En hel vecka med början för 4 veckor sedan | cw-4w | cw-3w-1d | 12 okt till 18 okt |
-| 4 | Förra veckan föregående år | cw-53w | cw-52w-1d | 9 nov 2010-9 nov |
+| 4 | Senaste veckan föregående år | cw-53w | cw-52w-1d | 9 nov 2010-9 nov |
 | 5 | En månad med början för 2 månader sedan | cm-2m | cm-1m-1d | 1 sept till 30 sept |
 | 6 | För 12 månader sedan föregående år | cm-12m | cm-11m-1d | 1 nov till 30 nov 2010 |
 
@@ -36,7 +36,7 @@ Om det idag är måndag den 10 november 2011 tar du det aktuella datumet och sub
 
 **Exempel 2**
 
-Lägg till fyra månader i början av året (januari-månaden) för att komma till maj-månaden, lägg till två dagar till den första dagen i månaden för att få den tredje dagen i månaden.
+Lägg till fyra månader i början av året (januari) för att hämta månaden maj; lägg till två dagar till den första dagen i månaden för att få den tredje dagen i månaden.
 
 ## Syntaxanteckningar {#section_555D6563B2D94FA3BDD801DC0B8C289D}
 
@@ -45,8 +45,8 @@ Du kan skapa anpassade uttryck som täcker de flesta datumintervall genom att l�
 * Tomt utrymme tillåts inte mellan operatorer och termer.
 * Använd endast dessa förkortningar: cd cw cm cq cy d w m q y
 * Det bästa sättet är att använda samma datumreferens i startdatumet och i slutdatumet: cd, cd eller cw, cw eller cy, cy. Blandningsdatumreferenser kan leda till ogiltiga datum vid vissa tidpunkter på året.
-* Giltiga multiplar av förkortningarna d w m q y formas med heltal ( 1 2 3 ... ) som föregås av förkortningen, t.ex. 53d 3w 5q 9m 2y
+* Giltiga multiplar av förkortningarna d w m q y formas med heltal ( 1 2 3 ... ) som är föregås av förkortningen, t.ex. 53d 3w 5q 9m 2y
 * Tal som inte är heltal tillåts inte.
-* Förse inte förkortningen med endast en nolla. 0w tillåts till exempel inte.
+* Lägg inte till förkortningen med bara noll. 0w tillåts till exempel inte.
 * Följande operatorer används för att sammanfoga förkortningar: + -
 * Eftersom datumintervall måste beräknas i förhållande till den aktuella perioden börjar alltid den första termen i ett uttryck med c.

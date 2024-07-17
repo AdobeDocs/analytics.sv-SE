@@ -18,15 +18,15 @@ Med hjälp av interna URL-filter kan du identifiera de referenser som du anser v
 
 **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]** > **[!UICONTROL Edit Settings]** > **[!UICONTROL General]** > **[!UICONTROL Internal URL Filters]**
 
-En hänvisare, eller hänvisande sida, är vanligtvis den sida från vilken en besökare har angett webbplatsen. För att undvika att skevas kan du filtrera bort interna referenser. Dimensioner som förlitar sig på interna URL-filter innehåller [Referent](/help/components/dimensions/referrer.md), [Refererande domän](/help/components/dimensions/referring-domain.md), [Marknadsföringskanaler](/help/components/dimensions/marketing-channel.md)och andra mått för trafikkällan.
+En hänvisare, eller hänvisande sida, är vanligtvis den sida från vilken en besökare har angett webbplatsen. För att undvika att skevas kan du filtrera bort interna referenser. Dimensioner som förlitar sig på interna URL-filter är bland annat [Referent](/help/components/dimensions/referrer.md), [Referensdomän](/help/components/dimensions/referring-domain.md), [Marknadskanaler](/help/components/dimensions/marketing-channel.md) och andra trafikkällans dimensioner.
 
-[Bearbetningsregler för marknadsföringskanaler](../marketing-channels/c-rules.md) tillhandahåll &quot;[!UICONTROL Matches internal URL filters]&quot; som möjligt regelvillkor.
+[Bearbetningsreglerna för marknadsföringskanaler](../marketing-channels/c-rules.md) anger [!UICONTROL Matches internal URL filters] som möjliga regelvillkor.
 
 >[!IMPORTANT]
 >
->Vissa rapportsviter har ett internt URL-filter av en punkt (`.`) som konfigurerats som standard. När det här filtret finns klassificeras all trafik som intern. Referensrapporter fungerar inte förrän det här filtret har tagits bort och ersatts med en eller flera önskade interna domäner.
+>Vissa rapportsviter har ett internt URL-filter med en punkt (`.`) konfigurerat som standard. När det här filtret finns klassificeras all trafik som intern. Referensrapporter fungerar inte förrän det här filtret har tagits bort och ersatts med en eller flera önskade interna domäner.
 
-* Visa alla befintliga filter under **[!UICONTROL Current Filters]** -avsnitt.
-* Lägga till ett filter med textrutan under **[!UICONTROL Add Filter]** -avsnittet och klicka sedan på **[!UICONTROL Add]**.
+* Visa alla befintliga filter under avsnittet **[!UICONTROL Current Filters]**.
+* Lägg till ett filter med textrutan under avsnittet **[!UICONTROL Add Filter]** och klicka sedan på **[!UICONTROL Add]**.
 
-Filter fungerar med **innehåller** logik mot den fullständiga URL:en. Adobe rekommenderar att du utelämnar protokollet (`https://`) och underdomäner när du skapar filter, såvida inte trafik från separata underdomäner önskas som extern trafik.
+Filter använder logiken **contains** mot den fullständiga URL:en. Adobe rekommenderar att du utelämnar protokoll (`https://`) och underdomäner när du skapar filter, såvida inte trafik från separata underdomäner önskas som extern trafik.

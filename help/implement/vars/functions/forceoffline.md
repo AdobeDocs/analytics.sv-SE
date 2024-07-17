@@ -13,13 +13,13 @@ ht-degree: 0%
 
 # forceOffline
 
-The `forceOffline()` kan du åsidosätta det automatiskt identifierade AppMeasurementet.
+Med metoden `forceOffline()` kan du åsidosätta det automatiskt identifierade AppMeasurementet.
 
 >[!WARNING]
 >
->Använd bara den här funktionen när [`trackOffline`](../config-vars/trackoffline.md) är aktiverat. Om den här funktionen används utanför spårning offline kan data gå förlorade.
+>Använd bara den här funktionen när [`trackOffline`](../config-vars/trackoffline.md) är aktiverad. Om den här funktionen används utanför spårning offline kan data gå förlorade.
 
-AppMeasurementet identifierar automatiskt enhetens onlineläge. Du kan använda `forceOffline()` metod som tvingar AppMeasurementet att behandla träffar som om enheten var offline. Den här metoden tar inga argument och returnerar inget värde. Det enda syftet är att åsidosätta onlinetillståndet i AppMeasurementet.
+AppMeasurementet identifierar automatiskt enhetens onlineläge. Du kan använda metoden `forceOffline()` för att tvinga AppMeasurementet att behandla träffar som om enheten var offline. Den här metoden tar inga argument och returnerar inget värde. Det enda syftet är att åsidosätta onlinetillståndet i AppMeasurementet.
 
 ## Tvinga offline med Web SDK
 
@@ -31,7 +31,7 @@ Det finns inget dedikerat fält i Adobe Analytics-tillägget som kan använda de
 
 ## s.forceOffline() i AppMeasurementet och den anpassade kodredigeraren för Analytics-tillägget
 
-Du kan ringa `s.forceOffline()` var som helst i implementeringen efter att du har initierat Analytics-objektet.
+Du kan anropa metoden `s.forceOffline()` var som helst i implementeringen efter att du har initierat Analytics-objektet.
 
 ```js
 s.forceOffline();

@@ -5,7 +5,7 @@ feature: Third-party Integration
 exl-id: 513da3f1-ad24-4d5b-bc35-dbcd3694cbdf
 source-git-commit: c8faf29262b9b04fc426f4a26efaa8e51293f0ec
 workflow-type: tm+mt
-source-wordcount: '852'
+source-wordcount: '853'
 ht-degree: 18%
 
 ---
@@ -19,17 +19,17 @@ Analysis Workspace (en av huvudfunktionerna i Adobe Analytics) är ett robust om
 
 Eftersom Analysis Workspace fungerar mer som en arbetsyta än prefabricerade rapporter är det bara att återskapa rapporter från Google Analytics som handlar om att använda rätt visualiseringar och komponenter.
 
-## Nyckeltermer som används i arbetsytan
+## Viktiga termer som används i Workspace
 
-* **Paneler** är de övergripande byggstenarna i arbetsytan. I nästan alla scenarier används en friformspanel.
-* **Visualiseringar** skapa alla frihandspaneler. Syftet med dem är att representera data i olika format. För det mesta är formatet en tabell, men för det andra kan det vara t.ex. en munk eller ett linjediagram. Många rapporter i Google Analytics är gjorda av två visualiseringar: ett linjediagram och frihandstabell.
+* **Paneler** är de övergripande byggstenarna för arbetsytan. I nästan alla scenarier används en friformspanel.
+* **Visualiseringar** består av alla frihandspaneler. Syftet med dem är att representera data i olika format. För det mesta är formatet en tabell, men för det andra kan det vara t.ex. en munk eller ett linjediagram. Många rapporter i Google Analytics är uppbyggda av två visualiseringar: ett linjediagram och en frihandstabell.
 * **Komponenter** placeras i en visualisering för att returnera data. Komponenter kan blandas på många olika sätt för att uppfylla rapporteringsbehoven.
    * **Dimensioner** är variabelvärden och innehåller vanligtvis text. Exempel är sidnamn, referent eller land. De listas oftast som rader i en tabell.
-   * **Mått** innebär vanligtvis en händelse eller konvertering av någon typ. Exempel är vanliga händelser som en sidvy eller något mer viktigt som ett köp eller en registrering. De ses oftast som kolumner i tabeller för att visa hur många gånger händelsen inträffade per dimension.
-   * **Segment** är en delmängd av era data och beter sig ungefär som segment i Google Analytics. Med dem kan du skapa anpassade filter, så att du kan fokusera på en viss del av dina data.
-   * **Datumintervall** gör att du kan ordna data efter när en händelse inträffar. De utgör ryggraden i att visa trender över tid och kombineras vanligtvis med ett mätvärde.
+   * **Metrisk** betecknar vanligtvis en händelse eller konvertering av någon typ. Exempel är vanliga händelser som en sidvy eller något mer viktigt som ett köp eller en registrering. De ses oftast som kolumner i tabeller för att visa hur många gånger händelsen inträffade per dimension.
+   * **Segment** är en delmängd av dina data och fungerar på ungefär samma sätt som segment i Google Analytics. Med dem kan du skapa anpassade filter, så att du kan fokusera på en viss del av dina data.
+   * Med **datumintervall** kan du ordna data efter när en händelse inträffade. De utgör ryggraden i att visa trender över tid och kombineras vanligtvis med ett mätvärde.
 
-## Skapa en grundläggande rapport i arbetsytan
+## Skapa en grundläggande rapport i Workspace
 
 Skapa en Alla sidor-rapport (liknande den i Google Analytics) genom att dra de högra komponenterna till en arbetsyta.
 
@@ -39,9 +39,9 @@ Skapa en Alla sidor-rapport (liknande den i Google Analytics) genom att dra de h
 1. Klicka på knappen Skapa nytt projekt.
 1. Kontrollera att Tomt projekt är markerat i det modala popup-fönstret och klicka sedan på Skapa.
 1. Till vänster visas en lista med mått, mått, segment och datumintervall. Leta reda på siddimensionen (färgad orange) och dra den till arbetsytan med etiketten &#39;Släpp en Dimension här&#39;.
-1. En rapport över de översta sidorna för den här månaden visas. Analysis Workspace fyller automatiskt i rapporten med [Förekomster](/help/components/metrics/occurrences.md) mätvärden.
+1. En rapport över de översta sidorna för den här månaden visas. Analysis Workspace fyller automatiskt i rapporten med måttet [Förekomster](/help/components/metrics/occurrences.md).
 1. En tabell i Google Analytics innehåller vanligtvis 7-8 mätvärden. Leta upp mätvärdet för studsfrekvens (grönt) och dra det intill rubriken för förekomstmått. Om du drar studs-/hastighetsmåtten bredvid Förekomster visas båda måtten sida vid sida.
-1. Många mätvärden kan placeras sida vid sida genom att dra mätvärden bredvid befintliga mätrubriker. Se [vanliga mått](common-metrics.md) om du vill ha information om hur du får in mätvärden som används i Google Analytics.
+1. Många mätvärden kan placeras sida vid sida genom att dra mätvärden bredvid befintliga mätrubriker. Mer information om hur du hämtar mätvärden som används i Google Analytics finns i [ofta använda mätvärden](common-metrics.md).
 
    ![Nytt mått](/help/technotes/ga-to-aa/assets/new_metric.png)
 
@@ -51,7 +51,7 @@ Skapa mallen Innehållsförbrukning (liknar rapporten Alla sidor i Google Analyt
 
 1. Klicka på knappen Skapa nytt projekt.
 1. Leta upp och dubbelklicka på ikonen &quot;Innehållsförbrukning (webb)&quot; som finns under Alla mallar.
-1. Bläddra bland de visualiseringar som har färdigbyggts: Sidflöde på ingångssidan, tabell över översta sidor, sidflöde för att avsluta, avsnittsflöde för startplats och tabell över övre webbplatsavsnitt.
+1. Bläddra bland de fördefinierade visualiseringarna: Sidflöde för startsida, Tabell för översta sidor, Sidflöde för avslutning, Avgångswebbplatsavsnittsflöde och Tabell för översta webbplatsavsnitt.
 
    ![Mallval](/help/technotes/ga-to-aa/assets/content_consumption_template.png)
 

@@ -12,8 +12,8 @@ ht-degree: 0%
 
 # Ta bort kundvagn
 
-&quot;Cart removals&quot; [mått](overview.md) visar hur många gånger en besökare har tagit bort något från sin kundvagn. Den här mätningen är användbar när du vill förstå den del av konverteringsprocessen där kunderna inte längre är intresserade av en produkt.
+Cart removals [metric](overview.md) visar hur många gånger en besökare har tagit bort något från kundvagnen. Den här mätningen är användbar när du vill förstå den del av konverteringsprocessen där kunderna inte längre är intresserade av en produkt.
 
 ## Hur det här måttet beräknas
 
-Det här måttet räknar antalet träffar där `scRemove` finns i [`events`](/help/implement/vars/page-vars/events/events-overview.md) variabel.
+Det här måttet räknar antalet träffar där `scRemove` finns i variabeln [`events`](/help/implement/vars/page-vars/events/events-overview.md).

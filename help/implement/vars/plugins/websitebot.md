@@ -15,12 +15,12 @@ ht-degree: 0%
 
 {{plug-in}}
 
-The `websiteBot` Med plugin-programmet kan du dynamiskt identifiera om besökarna på stationära datorer är favoriter. Ni kan använda dessa data för att öka noggrannheten i alla typer av rapporter, vilket ger er ett bättre sätt att mäta legitim webbplatstrafik.
+Med plugin-programmet `websiteBot` kan du dynamiskt identifiera om skrivbordsbesökare är favoriter. Ni kan använda dessa data för att öka noggrannheten i alla typer av rapporter, vilket ger er ett bättre sätt att mäta legitim webbplatstrafik.
 
 Denna plug-in utför två kontroller:
 
 * För det första, när det gäller en stationär enhet, lägger den till en händelseavlyssnare för musrörelser.
-* Sedan avgör den om enheten är en stationär eller mobil enhet som använder `navigator.UserAgent` variabel. Mobila enheter ignoreras.
+* Sedan avgör den om enheten är en stationär eller mobil enhet som använder variabeln `navigator.UserAgent`. Mobila enheter ignoreras.
 
 Om användaragenten finns på skrivbordet och ingen musrörelse identifieras kan plugin-programmet
 
@@ -31,13 +31,13 @@ Om användaragenten finns på skrivbordet och ingen musrörelse identifieras kan
 
 Adobe rekommenderar följande innan denna plugin används:
 
-* **Konfigurera inställningar för eVar**: Konfigurera en eVar under [Konverteringsvariabler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/conversion-var-admin.md) i Rapportsvitens inställningar. Ange förfallodatum till **Aldrig** eller **Besök** och allokera till **&quot;Originalvärde (första)&quot;**. Denna eVar bör fastställas under båda dessa omständigheter: när [!UICONTROL Direct Call] regel eller `s.tl` samtalet avfyras.
-* **Samla in användaragent i en separat variabel**: Samla in användaragentsträngen i en separat variabel för att övervaka effekten av plugin-programmet. Ange en eVar till `navigator.UserAgent` på varje träff för att samla in dessa data.
+* **Konfigurera eVar-inställningar**: Konfigurera en eVar under [Konverteringsvariabler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/conversion-var-admin.md) i inställningarna för rapportsviten. Ange förfallotiden till **Aldrig** eller **Besök** och allokera till **&quot;Ursprungligt värde (första)&quot;**. Den här eVarna bör anges under båda dessa omständigheter: när regeln [!UICONTROL Direct Call] eller anropet `s.tl` utlöses.
+* **Samla in användaragent i en separat variabel**: Samla in användaragentsträngen i en separat variabel för att övervaka effekten av plugin-programmet. Ange en eVar till `navigator.UserAgent` för varje träff för att samla in dessa data.
 
 ## Installera plugin-programmet med en anpassad kodredigerare
 
-1. Lägg till en ny `websiteBot` regel.
-1. Lägg till en **Avlyssnare för musrörelse** -händelsen till `websiteBot` rule, med den här anpassade koden:
+1. Lägg till en ny `websiteBot`-regel.
+1. Lägg till en **Mouse Move Listener**-händelse i regeln `websiteBot`, med den här anpassade koden:
 
    ```js
    trigger(document.addEventListener('mousemove', function detectMouseMove() {   
@@ -72,11 +72,11 @@ Adobe rekommenderar följande innan denna plugin används:
       }))
    ```
 
-1. Lägg till en [!UICONTROL Direct Call] regel som aktiverar en analysfyr som använder `websiteBot` som identifierare. I det här exemplet används en `s.tl` ring:
+1. Lägg till en [!UICONTROL Direct Call]-regel som utlöser en Analytics-fyr med `websiteBot` som identifierare. I det här exemplet används ett `s.tl`-anrop:
 
-   ![websiteBot-identifierare](assets/websitebot.png)
+   ![webbplatsensBot-identifierare](assets/websitebot.png)
 
-1. Starta Adobe Analytics - Ställ in variabler &amp; Adobe Analytics - Skicka Beacon-åtgärder i [!UICONTROL Direct Call] regel.  Ett sätt att göra detta visas i följande exempel:
+1. Starta Adobe Analytics - Ange variabler och Adobe Analytics - Skicka Beacon-åtgärder i regeln [!UICONTROL Direct Call].  Ett sätt att göra detta visas i följande exempel:
 
    ![Skicka Beacon-åtgärder](assets/websitebot2.png)
 
@@ -94,7 +94,7 @@ Kopiera och klistra in följande AppMeasurement var som helst i analysfilen efte
 
 ## Använda plugin-programmet
 
-The `websiteBot` plugin-program utlöser en `s.tl` anrop om icke-robottrafik upptäcks.
+Plugin-programmet `websiteBot` utlöser ett `s.tl`-anrop om icke-robottrafik identifieras.
 
 ## Exempel
 
@@ -110,7 +110,7 @@ s.eVar1 = websiteBot ? "Bot detected" : "Not a bot";
 
 ### 0.1 (19 januari 2021)
 
-* Betaversion
+* Beta release
 
 ### 0.11 (3 juni 2021)
 

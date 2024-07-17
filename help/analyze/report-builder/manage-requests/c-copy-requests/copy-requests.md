@@ -8,11 +8,11 @@ exl-id: 14578c79-a9e6-4587-b91b-f590453df347
 source-git-commit: fb39f906d6c08713e4dc8211c917b2942502868e
 workflow-type: tm+mt
 source-wordcount: '144'
-ht-degree: 2%
+ht-degree: 0%
 
 ---
 
-# Kopiera förfrågningar – översikt
+# Översikt över kopieringsbegäranden
 
 Du kan kopiera celler som är mappade med mer än en begäran och klistra in innehållet i ett tomt, markerat område i kalkylbladet.
 

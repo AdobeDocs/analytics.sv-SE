@@ -22,7 +22,7 @@ Här är en videoöversikt:
 
 >[!IMPORTANT]
 >
->Intelligenta aviseringar är tillgängliga för Adobe [!DNL Analytics] Prime och Adobe [!DNL Analytics] Endast de ultimata kunderna.
+>Intelligenta aviseringar är endast tillgängliga för Adobe [!DNL Analytics] Prime- och Adobe [!DNL Analytics] Ultimate-kunder.
 
 Med intelligenta aviseringar kan du
 
@@ -38,19 +38,19 @@ Det finns tre sätt att komma åt Varningsverktyget:
 * Genom att använda följande kortkommando i Analysis Workspace:
 
   `ctrl (or cmd) + shift + a`
-* Genom att gå direkt till Varningsverktyget:  **[!UICONTROL Workspace]** > **[!UICONTROL Components]** > **[!UICONTROL New Alert]** .
-* Genom att markera ett eller flera objekt på en frihandsritabell högerklickar och väljer du **[!UICONTROL Create Alert from Selection]**. Detta öppnar varningsgeneratorn och fyller i byggaren i förväg med lämpliga mått och filter som tillämpas från tabellen. Du kan sedan redigera varningen vid behov.
+* Genom att gå direkt till varningsverktyget: **[!UICONTROL Workspace]** > **[!UICONTROL Components]** > **[!UICONTROL New Alert]** .
+* Genom att markera ett eller flera frihandtabellsradsobjekt högerklickar du och väljer **[!UICONTROL Create Alert from Selection]**. Detta öppnar varningsgeneratorn och fyller i byggaren i förväg med lämpliga mått och filter som tillämpas från tabellen. Du kan sedan redigera varningen vid behov.
 
   ![](assets/create-alert-from-selection.png)
 
 
 ## Vanliga frågor: Hur aviseringar beräknas och aktiveras {#trigger}
 
-Tröskelvärdena i % är standardavvikelser. Exempel: 95 % = 2 standardavvikelser och 99 % = 3 standardavvikelser. Beroende på hur lång tid du väljer kan [olika modeller](/help/analyze/analysis-workspace/c-anomaly-detection/statistics-anomaly-detection.md) används för att beräkna hur långt bort (hur många standardavvikelser) varje datapunkt ligger från normen. Om du anger ett lägre tröskelvärde (till exempel 90 %) får du fler avvikelser än om du anger ett högre tröskelvärde (99 %). Tröskelvärdena 99,75 % och 99,99 % infördes specifikt för timgranulariteten så att den inte skulle utlösa så många avvikelser som möjligt.
+Tröskelvärdena i % är standardavvikelser. Exempel: 95 % = 2 standardavvikelser och 99 % = 3 standardavvikelser. Beroende på hur lång tid du väljer används [olika modeller](/help/analyze/analysis-workspace/c-anomaly-detection/statistics-anomaly-detection.md) för att beräkna hur långt bort (hur många standardavvikelser) varje datapunkt ligger från normen. Om du anger ett lägre tröskelvärde (till exempel 90 %) får du fler avvikelser än om du anger ett högre tröskelvärde (99 %). Tröskelvärdena 99,75 % och 99,99 % infördes specifikt för timgranulariteten så att den inte skulle utlösa så många avvikelser som möjligt.
 
 +++ Hur långt tillbaka går avvikelseavkänningen för att fastställa dataavvikelser?
 
-Utbildningsperioden varierar beroende på vald granularitet. Se Statistiska tekniker som används i <a href="/help/analyze/analysis-workspace/c-anomaly-detection/statistics-anomaly-detection.md">Analysidentifiering</a> för mer information. Här är en sammanfattning:
+Utbildningsperioden varierar beroende på vald granularitet. Mer information finns i Statistiska tekniker som används i <a href="/help/analyze/analysis-workspace/c-anomaly-detection/statistics-anomaly-detection.md">Analysidentifiering</a>. Här är en sammanfattning:
 
 * Månadsvis = 15 månader + samma intervall förra året
 * Vecka = 15 veckor + samma intervall förra året

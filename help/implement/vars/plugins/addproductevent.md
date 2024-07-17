@@ -15,7 +15,7 @@ ht-degree: 0%
 
 {{plug-in}}
 
-The `addProductEvent` plugin-programmet lägger till en numerisk händelse eller valutakändelse i [`products`](../page-vars/products.md) variabel. Adobe rekommenderar att du använder det här plugin-programmet om du vill lägga till en numerisk händelse eller valutakurs i `products` utan att oroa dig för produktsträngsformatet. Detta plugin-program är inte nödvändigt om du inte använder numeriska händelser eller valutakändelser i `products` variabel.
+Plugin-programmet `addProductEvent` lägger till en numerisk händelse eller valutakändelse i variabeln [`products`](../page-vars/products.md). Adobe rekommenderar att du använder det här plugin-programmet om du vill lägga till en numerisk händelse eller valutakändelse i variabeln `products` utan att behöva bekymra dig om produktsträngsformatet. Det här plugin-programmet är inte nödvändigt om du inte använder numeriska händelser eller valutakändelser i variabeln `products`.
 
 ## Installera plugin-programmet med Web SDK- eller Web SDK-tillägget
 
@@ -25,10 +25,10 @@ Det här plugin-programmet stöds ännu inte för användning i Web SDK.
 
 Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-programmen med Adobe Analytics.
 
-1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med dina inloggningsuppgifter för AdobeID.
 1. Klicka på den önskade taggegenskapen.
-1. Gå till [!UICONTROL Extensions] klickar du på [!UICONTROL Catalog] knapp
-1. Installera och publicera [!UICONTROL Common Analytics Plugins] extension
+1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Catalog]
+1. Installera och publicera tillägget [!UICONTROL Common Analytics Plugins]
 1. Om du inte redan har det skapar du en regel med namnet&quot;Initiera plugin-program&quot; med följande konfiguration:
    * Villkor: Inget
    * Händelse: Kärna - Bibliotek inläst (sidan ovanpå)
@@ -41,10 +41,10 @@ Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-program
 
 Om du inte vill använda tillägget för Common Analytics-plugin-program kan du använda den anpassade kodredigeraren.
 
-1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med dina inloggningsuppgifter för AdobeID.
 1. Klicka på önskad egenskap.
-1. Gå till [!UICONTROL Extensions] klickar du på **[!UICONTROL Configure]** under Adobe Analytics-tillägget.
-1. Expandera [!UICONTROL Configure tracking using custom code] dragspelspanel, som visar [!UICONTROL Open Editor] -knappen.
+1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen **[!UICONTROL Configure]** under Adobe Analytics-tillägget.
+1. Expandera dragspelsfliken [!UICONTROL Configure tracking using custom code] som visar knappen [!UICONTROL Open Editor].
 1. Öppna den anpassade kodredigeraren och klistra in den plugin-kod som finns nedan i redigeringsfönstret.
 1. Spara och publicera ändringarna i Analytics-tillägget.
 
@@ -61,17 +61,17 @@ function addProductEvent(en,ev,ap){var f=en,g=ev,c=ap;if("-v"===f)return{plugin:
 
 ## Använda plugin-programmet
 
-The `addProductEvent` funktionen använder följande argument:
+Funktionen `addProductEvent` använder följande argument:
 
-* **`en`** (required, string): Den händelse som ska läggas till i den sista posten i `products` variabel. Om `products` variabeln är tom, sedan skapas en&quot;tom&quot; produktpost med händelsen (och dess värde) bifogad.
-* **`ev`** (required, string): Det värde som tilldelas till den numeriska händelsen eller valutakurshändelsen i `en` argument.  Standardvärdet är `1` när den inte är inställd. Tal som inte är inkapslade i strängcitattecken är också giltiga.
-* **`ap`** (valfritt, booleskt): Om variabeln products innehåller mer än en produktpost, är värdet `true` (eller `1`) lägger till händelsen i alla produktposter.  Standardvärdet är `false` när den inte är inställd.
+* **`en`** (obligatoriskt, sträng): Den händelse som ska läggas till i den sista posten i variabeln `products`. Om variabeln `products` är tom skapas en tom produktpost med händelsen (och dess värde) bifogad.
+* **`ev`** (obligatoriskt, sträng): Det värde som tilldelas till den numeriska händelsen eller valutakurshändelsen i argumentet `en`.  Standardvärdet är `1` när det inte anges. Tal som inte är inkapslade i strängcitattecken är också giltiga.
+* **`ap`** (valfritt, booleskt): Om variabeln products innehåller mer än en produktpost läggs händelsen till i alla produktposter med värdet `true` (eller `1`).  Standardvärdet är `false` när det inte anges.
 
-The `addProductEvent` returnerar ingenting. I stället läggs händelsen och dess värde till i `products` variabel. Plugin-programmet lägger automatiskt till händelsen i [`events`](../page-vars/events/events-overview.md) variabel, eftersom den också krävs där.
+`addProductEvent` returnerar ingenting. I stället läggs händelsen och dess värde till i variabeln `products`. Plugin-programmet lägger automatiskt till händelsen i variabeln [`events`](../page-vars/events/events-overview.md) eftersom den också krävs där.
 
 ## Cookies
 
-The `addProductEvent` funktionen skapar inte eller använder några cookies.
+Funktionen `addProductEvent` skapar inte eller använder inga cookies.
 
 ## Exempel
 

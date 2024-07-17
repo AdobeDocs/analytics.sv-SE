@@ -17,7 +17,7 @@ AppMeasurementet samlar automatiskt in sidans URL i varje träff. Om du vill ås
 
 >[!NOTE]
 >
->Denna variabel är inte en tillgänglig dimension i Analysis Workspace. Det är bara tillgängligt i Data Warehouse- och datafeeds. Dessutom kan datainsamlingsservrar i Adobe ta bort den här dimensionen från alla [länkspårning](/help/implement/vars/functions/tl-method.md) bildbegäranden. Om du vill använda sidans URL som en dimension i Analysis Workspace eller om du vill använda den här dimensionen i länkspårningsträffar bör du skicka `pageURL` variabel till [eVar](evar.md) på varje träff.
+>Denna variabel är inte en tillgänglig dimension i Analysis Workspace. Det är bara tillgängligt i Data Warehouse- och datafeeds. Datainsamlingsservrar i Adobe tar dessutom bort den här dimensionen från alla [länkspårning](/help/implement/vars/functions/tl-method.md) -bildbegäranden. Om du vill använda sidans URL som en dimension i Analysis Workspace eller vill att den här dimensionen ska visas i länkspårningsträffar, bör du skicka variabeln `pageURL` till en [eVar](evar.md) för varje träff.
 
 ## Sid-URL med Web SDK
 
@@ -30,18 +30,18 @@ Sidans URL mappas till följande variabler:
 
 Analystillägget i Adobe Experience Platform Data Collection fyller automatiskt i sidans URL. Du kan dock ange åsidosättning av sidans URL när du konfigurerar Analytics-tillägget (globala variabler) eller under regler.
 
-1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med dina inloggningsuppgifter för AdobeID.
 2. Klicka på den önskade taggegenskapen.
-3. Gå till **[!UICONTROL Rules]** och sedan klicka på önskad regel (eller skapa en regel).
-4. Under **[!UICONTROL Actions]** klickar du på en befintlig **[!UICONTROL Adobe Analytics - Set Variables]** eller klicka på +-ikonen.
-5. Ange **[!UICONTROL Extension]** nedrullningsbar lista till Adobe Analytics och **[!UICONTROL Action Type]** till **[!UICONTROL Set Variables]**.
-6. Leta reda på **[!UICONTROL Page URL]** -avsnitt.
+3. Gå till fliken **[!UICONTROL Rules]** och klicka sedan på önskad regel (eller skapa en regel).
+4. Klicka på en befintlig **[!UICONTROL Adobe Analytics - Set Variables]**-åtgärd under **[!UICONTROL Actions]** eller klicka på +-ikonen.
+5. Ange Adobe Analytics i listrutan **[!UICONTROL Extension]** och **[!UICONTROL Action Type]** till **[!UICONTROL Set Variables]**.
+6. Leta reda på avsnittet **[!UICONTROL Page URL]**.
 
 Du kan ange sidans URL till valfritt strängvärde.
 
 ## s.pageURL i AppMeasurementet och den anpassade kodredigeraren för Analytics-tillägget
 
-The `s.pageURL` variabeln är en sträng som innehåller sidans URL. AppMeasurementet samlar automatiskt in den här variabeln, men du kan åsidosätta dess värde om du vill.
+Variabeln `s.pageURL` är en sträng som innehåller sidans URL. AppMeasurementet samlar automatiskt in den här variabeln, men du kan åsidosätta dess värde om du vill.
 
 ```js
 s.pageURL = "https://example.com";
@@ -54,7 +54,7 @@ Om du vill använda sidans URL som en dimension i rapporter bör du använda fö
 s.eVar1 = window.location.hostname + window.location.pathname;
 ```
 
-Om du använder `digitalData` [datalager](../../prepare/data-layer.md):
+Om `digitalData` [datalagret](../../prepare/data-layer.md) används:
 
 ```js
 s.pageURL = digitalData.page.pageInfo.destinationURL;

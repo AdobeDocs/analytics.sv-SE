@@ -1,20 +1,20 @@
 ---
-title: Marknadsföring - sökning av instanser av eVar i post_product_list
-description: Sök efter instansen Merchandising-eVar för varje uppslagsvärde i kolumnen post_product_list i en datafeed.
+title: Sökning efter handelsinstanser av eVar i post_product_list
+description: Hitta Merchandising eVar-instansen för varje uppslagsvärde i kolumnen post_product_list i en datafeed.
 feature: Data Feeds
 exl-id: d4b7d53b-21da-42d1-b54a-4602920bb6d4
 source-git-commit: 4daa5c8bdbcb483f23a3b8f75dde9eeb48516db8
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '568'
+ht-degree: 44%
 
 ---
 
-# Marknadsföring - sökning av instanser av eVar i post_product_list
+# Sökning efter handelsinstanser av eVar i post_product_list
 
-I dataflöden är [post_product_list](datafeeds-reference.md) -kolumnen kan innehålla instanser av eVar för försäljning. Varje eVar representeras av en siffra.
+I Datafeeds kan kolumnen [post_product_list](datafeeds-reference.md) innehålla instanser för eVar av marknadsföring. Varje eVar representeras av en siffra.
 
-Markeringen av instanssökningen efter post_product_list för Merchandising-eVar skiljer sig från sökkolumnen event_list i Datautflödet.
+Merchandising eVar-instanssökningen för post_product_list skiljer sig från sökkolumnen event_list i Datafeed.
 
 | Sökvärde | Merchandising Instance |
 |--- |--- |
@@ -128,7 +128,7 @@ Markeringen av instanssökningen efter post_product_list för Merchandising-eVar
 | 1207 | eVar108 |
 | 1208 | eVar109 |
 | 1209 | eVar110 |
-| 1210 | eVar111 |
+| 1210 | eVar11 |
 | 1211 | eVar112 |
 | 1212 | eVar113 |
 | 1213 | eVar114 |

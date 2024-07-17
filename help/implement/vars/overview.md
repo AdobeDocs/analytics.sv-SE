@@ -16,9 +16,9 @@ ht-degree: 0%
 
 Analytics ger ett antal variabler för att samla in analysdata. Variablerna i det här avsnittet är uppdelade i flera avsnitt:
 
-* **Sidvariabler** är värden som vanligtvis används direkt vid rapportering. Vanliga sidvariabler inkluderar `props`, `eVars`och `events`.
-* **Konfigurationsvariabler** är inställningsvärden som gör att rätt data når Adobe. Vanliga config-variabler inkluderar `trackingServerSecure`, `charSet`och `linkTrackVars`. Konfigurationsvariabler fyller vanligtvis inte i dimensionsobjekt.
-* **Funktioner och metoder** är koddelar som utför en viss uppgift när de refereras. Vanliga funktioner inkluderar `t()`, `tl()`och `clearVars()`.
+* **Sidvariabler** är värden som vanligtvis används direkt i rapporter. Vanliga sidvariabler är `props`, `eVars` och `events`.
+* **Konfigurationsvariabler** är inställningsvärden som hjälper till att se till att rätt data når Adobe. Vanliga config-variabler är `trackingServerSecure`, `charSet` och `linkTrackVars`. Konfigurationsvariabler fyller vanligtvis inte i dimensionsobjekt.
+* **Funktioner och metoder** är kodbitar som utför en viss uppgift när de refereras. Vanliga funktioner är `t()`, `tl()` och `clearVars()`.
 
 ## Variabler och implementeringsmetoder
 
@@ -32,17 +32,17 @@ Här är en video om hur du konfigurerar variabler i Adobe Analytics:
 
 AppMeasurement-bibliotek som publiceras av Adobe Analytics följer en viss ordning när data skickas till Adobe. Om du utför dessa åtgärder i fel ordning kan data vara ofullständiga.
 
-1. Om webbplatsen använder ett datalager måste du se till att alla tillämpliga variabler fylls i först. Du kan till exempel fylla i `adobeDataLayer.page.title` med sidrubriken. Se [Datalager](../prepare/data-layer.md) för mer information.
-2. Använd datalagret för att fylla i Analytics-variabler. <br/>Om du använder taggar i Adobe Experience Platform kan du utföra den här uppgiften genom att använda dataelement däremellan. Dataelement fylls med värden från datalagret. Exempel på dataelement `Page Title` hämtar värdet från datalagervariabeln `adobeDataLayer.page.title`. <br/>Sedan kan du använda dataelementet för att fylla i Analytics-variabler. Till exempel `eVar4` hämtar värdet från dataelement `Page Title`. <br/>Mer information finns i [Dataelement](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html), [Mappa datalagerobjekt till dataelement](../launch/layer-to-elements.md)och [Mappa taggdataelement till analysvariabler](../launch/elements-to-variable.md)
-3. Anropa till sist spårningsfunktionen. De flesta AppMeasurement använder `t()` -metod, men vissa av de mobila SDK:s använder `track()`. När spårningsfunktionen anropas skickas alla variabler som stöds i Analytics-objektet till Adobe i form av en bildbegäran.
+1. Om webbplatsen använder ett datalager måste du se till att alla tillämpliga variabler fylls i först. Du kan till exempel fylla i `adobeDataLayer.page.title` med sidrubriken. Mer information finns i [Datalager](../prepare/data-layer.md).
+2. Använd datalagret för att fylla i Analytics-variabler. <br/>Om du använder taggar i Adobe Experience Platform utförs den här uppgiften med dataelement däremellan. Dataelement fylls med värden från datalagret. Dataelementet `Page Title` hämtar till exempel värdet från datalagervariabeln `adobeDataLayer.page.title`. <br/>Sedan kan du använda dataelementet för att fylla i Analytics-variabler. `eVar4` hämtar till exempel värdet från dataelementet `Page Title`. <br/>Mer information finns i [Dataelement](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html), [Mappa datalagretobjekt till dataelement](../launch/layer-to-elements.md) och [Mappa taggelement till analysvariabler](../launch/elements-to-variable.md)
+3. Anropa till sist spårningsfunktionen. I de flesta AppMeasurement-bibliotek används metoden `t()`, men i vissa mobil-SDK används `track()`. När spårningsfunktionen anropas skickas alla variabler som stöds i Analytics-objektet till Adobe i form av en bildbegäran.
 
 ## Ogiltiga tecken
 
 Följande tecken och strängar tillåts aldrig i JavaScript-variabler.
 
 * Tabb (`0x09`)
-* Radbrytning (`0x0D`)
-* Newline (`0x0A`)
+* Radretur (`0x0D`)
+* Tidslinje (`0x0A`)
 * HTML-taggar (t.ex. `<b></b>` eller `&#153`)
 
-Vissa variabler har ytterligare begränsningar eller syntaxkrav. Till exempel [`products`](page-vars/products.md) variabelreserverar semikolon och kommatecken för att avgränsa separata produkter och kategorier.
+Vissa variabler har ytterligare begränsningar eller syntaxkrav. Variabeln [`products`](page-vars/products.md) reserverar t.ex. semikolon och kommatecken som avgränsar olika produkter och kategorier.

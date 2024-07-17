@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Spårning offline är ett valfritt sätt att samla in data i Adobe Analytics. Om en besökare kopplar från Internet men fortsätter att surfa på webbplatsen, lagras träffarna i en offlinekö tills enheten återansluter till Internet. Spårning offline används oftast för mobilprogram.
 
-När en enhet ansluts igen skickas alla träffar som är lagrade på enheten till datainsamlingsservrarna i Adobe. Ett stort antal köade träffar kan påverka prestanda på äldre enheter. Använd `offlineThrottleDelay` variabel som anger hur ofta köade träffar skickas till Adobe.
+När en enhet ansluts igen skickas alla träffar som är lagrade på enheten till datainsamlingsservrarna i Adobe. Ett stort antal köade träffar kan påverka prestanda på äldre enheter. Använd variabeln `offlineThrottleDelay` för att fastställa hur ofta köade träffar skickas till Adobe.
 
 ## Fördröjning för offlinebegränsning med Web SDK
 
@@ -27,7 +27,7 @@ Det finns inget dedikerat fält i Adobe Analytics-tillägget som kan använda de
 
 ## s.offlineThrottleDelay i AppMeasurementet och den anpassade kodredigeraren för Analytics-tillägget
 
-The `s.offlineThrottleDelay` variabeln är ett heltal som representerar antalet millisekunder som AppMeasurementet väntar mellan skickade köade träffar. Standardvärdet är `0`, vilket innebär att alla träffar i kö skickas samtidigt. If `trackOffline` är `false`, gör den här variabeln ingenting.
+Variabeln `s.offlineThrottleDelay` är ett heltal som representerar antalet millisekunder som AppMeasurementet väntar mellan köade träffar. Dess standardvärde är `0`, vilket innebär att alla träffar i kö skickas samtidigt. Om `trackOffline` är `false` händer ingenting.
 
 ```js
 s.offlineThrottleDelay = 500;

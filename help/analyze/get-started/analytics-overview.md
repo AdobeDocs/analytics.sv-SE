@@ -31,7 +31,7 @@ Använd följande resurser för att lära dig grunderna i Adobe Analytics:
 
 ## Videoöversikt
 
-Läs mer om grunderna i Adobe Analytics *Introduktion till Adobe Analytics - Webbseminarium om kunskapsbyggaren* video. Videon visar grunderna för hur data hämtas, hur data skickas till Adobe Analytics och vilka visualiseringsfunktioner du kan använda i Adobe Analytics. Videon ger er en grund för att bygga, driftsätta, samla in och tolka data, så att ni kan ge er åtgärdbara insikter och rekommendationer baserat på insamlade data.
+Om du vill lära dig mer om grunderna i Adobe Analytics kan du titta på den här videon *Introduktion till Adobe Analytics - Webbseminarium om verktyget i kunskapsbyggaren* . Videon visar grunderna för hur data hämtas, hur data skickas till Adobe Analytics och vilka visualiseringsfunktioner du kan använda i Adobe Analytics. Videon ger er en grund för att bygga, driftsätta, samla in och tolka data, så att ni kan ge er åtgärdbara insikter och rekommendationer baserat på insamlade data.
 
 >[!VIDEO](https://video.tv.adobe.com/v/27429/?quality=12)
 
@@ -43,12 +43,12 @@ Customer Journey Analytics är Adobe nästa generation av Analytics-lösning som
 
 Nedan följer några av fördelarna med Customer Journey Analytics framför Adobe Analytics:
 
-* **Obegränsade variabler och händelser**: Begreppen eVars, props och händelser finns inte längre. Data fokuseras främst på dimensioner och mätvärden. Datauppsättningar kan ha ett obegränsat antal unika mått och mätvärden.
+* **Obegränsade variabler och händelser**: Begreppen eVars, props och events finns inte längre. Data fokuseras främst på dimensioner och mätvärden. Datauppsättningar kan ha ett obegränsat antal unika mått och mätvärden.
 
 * **Obegränsade unika värden**: Adobe Experience Platform begränsas inte till några unika begränsningar.
 
 * **Ändra historiska data**: Med Adobe Experience Platform kan data tas bort eller korrigeras.
 
-* **Data för flera rapporter**: Befintliga implementeringar från flera datauppsättningar kan kombineras i Platform.
+* **Data för tvärrapporteringsprogram**: Befintliga implementeringar från flera datauppsättningar kan kombineras i plattformen.
 
-Mer information finns i [Customer Journey Analytics - översikt](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html).
+Mer information finns i [Översikt över Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html).

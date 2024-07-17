@@ -30,17 +30,17 @@ Så här schemalägger du en trafiktopp:
 
    Du kan till exempel få förra årets dagliga serveranrop som genomsnitt under en viss tidsperiod, plus en förväntad ökning av serversamtalsvolymen för det här året. Du kan sedan schemalägga en trafiktopp baserat på den här multiplikationsfaktorn.
 
-   1. I **[!UICONTROL Past Server Calls]** väljer du ett start- och slutdatum för de valda rapportsviterna.
+   1. I området **[!UICONTROL Past Server Calls]** väljer du ett start- och slutdatum för de valda rapportsviterna.
 
-      Beloppet för [!UICONTROL **Högdagerdagen**], [!UICONTROL **Serveranrop för högdager**] och [!UICONTROL **Genomsnittligt serveranrop varje dag**] genereras.
+      Mängden [!UICONTROL **Peak Day**], [!UICONTROL **Peak Day Server Call**] och [!UICONTROL **Daily Average of Server Call**] genereras.
 
    1. Ange ett värde för multiplikationsfaktorn och välj sedan **[!UICONTROL Click to multiply and set]**.
 
       Värdet för var och en av kolumnerna multipliceras för varje rapportserie.
-1. I [!UICONTROL **Ange infallsparametrar**] området, i **[!UICONTROL Spike Start Date]** anger du det datum då du förväntar dig att trafiktoppen ska börja.
-1. I **[!UICONTROL Spike End Date]** anger du det datum då du förväntar dig att trafikökningen ska sluta.
-1. I **[!UICONTROL Peak Day Server Calls]** Ange den totala förväntade toppnivån för sidvisningar per dag under trafikspikperioden.
-1. I **[!UICONTROL Peak Hour Server Calls]** Ange den totala förväntade toppnivån för sidvisningar per timme under trafikspikperioden.
+1. I området [!UICONTROL **Set Spike Parameters**], i fältet **[!UICONTROL Spike Start Date]**, anger du det datum då du förväntar dig att trafikspiken ska starta.
+1. I fältet **[!UICONTROL Spike End Date]** anger du det datum då du förväntar dig att trafiktoppen ska sluta.
+1. I fältet **[!UICONTROL Peak Day Server Calls]** anger du den totala förväntade toppnivån för sidvisningar per dag under trafiktoppningsperioden.
+1. I fältet **[!UICONTROL Peak Hour Server Calls]** anger du den totala förväntade toppnivån för sidvisningar per timme under trafiktoppningsperioden.
 1. Välj **[!UICONTROL Submit]**.
 
    Se till att du anger det totala antalet förväntade sidvyer, inte bara ytterligare sidvyer.
@@ -61,6 +61,6 @@ När kunderna informerar Adobe om trafiktoppar för varje rapporteringsprogram g
 
 Adobe vill säkerställa att era erfarenheter av aktuell rapportering är enhetliga. Adobe rekommenderar starkt följande för att kunna göra detta så effektivt som möjligt:
 
-* Schemalägg produktionstid för alla trafiktoppar. **Det är särskilt viktigt att alla trafiktoppar som förutses under november-december planeras till den 15 september**. Om du missar deadline, schemalägg toppen så snart som möjligt. Mindre ledtid är bättre än inget, och Adobe arbetar med de aktuella resurserna för att bäst kunna hantera era rapportsviter.
+* Schemalägg produktionstid för alla trafiktoppar. **Det är särskilt viktigt att alla trafiktoppar som förväntas under november-december schemaläggs till den 15 september**. Om du missar deadline, schemalägg toppen så snart som möjligt. Mindre ledtid är bättre än inget, och Adobe arbetar med de aktuella resurserna för att bäst kunna hantera era rapportsviter.
 * Om Adobe kontaktar dig angående en schemalagd trafiktoppning ska du informera dig om realtidsrapportering eller fullständig bearbetningsrapportering är viktigare. Vissa organisationer förlitar sig mer på realtidsrapportering än andra. Att förstå vilken typ av rapportering du använder kan hjälpa Adobe att prioritera på rätt sätt.
 * De viktigaste rapporterna och när du hämtar dem kan du kommunicera med ditt kontoteam på Adobe för att hjälpa dem att rekommendera åt dig.

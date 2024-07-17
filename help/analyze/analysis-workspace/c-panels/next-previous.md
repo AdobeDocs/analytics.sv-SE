@@ -17,34 +17,34 @@ Panelen innehåller ett antal tabeller och visualiseringar för att enkelt ident
 
 ## Öppna panelen
 
-Du kommer åt panelen inifrån [!UICONTROL Reports] eller inom [!UICONTROL Workspace].
+Du kan komma åt panelen inifrån [!UICONTROL Reports] eller i [!UICONTROL Workspace].
 
 | Åtkomstpunkt | Beskrivning |
 | --- | --- |
-| [!UICONTROL Reports] | <ul><li>Panelen har redan släppts i ett projekt.</li><li>Den vänstra listen är komprimerad.</li><li>Om du valde [!UICONTROL Next page]har standardinställningar redan tillämpats, till exempel [!UICONTROL Page] for [!UICONTROL Dimension]och den översta sidan som [!UICONTROL Dimension Item], [!UICONTROL Next] for [!UICONTROL Direction] och [!UICONTROL Visit] for [!UICONTROL Container]. Du kan ändra alla dessa inställningar.</li></ul>![Panelen Nästa/Föregående](assets/next-previous.png) |
-| Arbetsyta | Skapa ett nytt projekt och välj panelikonen i den vänstra listen. Dra sedan [!UICONTROL Next or previous item] ovanför friformstabellen. Observera att [!UICONTROL Dimension] och [!UICONTROL Dimension Item] fält lämnas tomma. Välj en dimension i listrutan. [!UICONTROL Dimension items] fylls i baserat på [!UICONTROL dimension] du valde. Den översta dimensionsobjektet läggs till, men du kan välja en annan artikel. Standardvärdena är Nästa och Besökare. Även här kan du ändra dem.<p>![Panelen Nästa/Föregående](assets/next-previous2.png) |
+| [!UICONTROL Reports] | <ul><li>Panelen har redan släppts i ett projekt.</li><li>Den vänstra listen är komprimerad.</li><li>Om du valde [!UICONTROL Next page] har standardinställningar redan tillämpats, till exempel [!UICONTROL Page] för [!UICONTROL Dimension] och den översta sidan som [!UICONTROL Dimension Item], [!UICONTROL Next] för [!UICONTROL Direction] och [!UICONTROL Visit] för [!UICONTROL Container]. Du kan ändra alla dessa inställningar.</li></ul>![Nästa/Föregående panel](assets/next-previous.png) |
+| Workspace | Skapa ett nytt projekt och välj panelikonen i den vänstra listen. Dra sedan panelen [!UICONTROL Next or previous item] ovanför frihandstabellen. Observera att fälten [!UICONTROL Dimension] och [!UICONTROL Dimension Item] är tomma. Välj en dimension i listrutan. [!UICONTROL Dimension items] fylls i baserat på den [!UICONTROL dimension] du valde. Den översta dimensionsobjektet läggs till, men du kan välja en annan artikel. Standardvärdena är Nästa och Besökare. Även här kan du ändra dem.<p>![Nästa/Föregående panel](assets/next-previous2.png) |
 
 {style="table-layout:auto"}
 
 ## Panelindata {#Input}
 
-Du kan konfigurera [!UICONTROL Next or previous item] Panelen med dessa indatainställningar:
+Du kan konfigurera panelen [!UICONTROL Next or previous item] med följande indatainställningar:
 
 | Inställning | Beskrivning |
 | --- | --- |
 | Släppzon för segment (eller annan komponent) | Du kan dra och släppa segment eller andra komponenter för att ytterligare filtrera panelresultaten. |
 | Dimension | Dimensionen som du vill utforska nästa eller föregående objekt för. |
 | Dimension | Det specifika objektet i mitten av nästa/föregående fråga. |
-| Riktning | Ange om du letar efter [!UICONTROL Next] eller [!UICONTROL Previous] dimensionsobjekt. |
-| Behållare | [!UICONTROL Visit] eller [!UICONTROL Visitor] (standard) avgör omfattningen av din förfrågan. |
+| Riktning | Ange om du letar efter dimensionsobjektet [!UICONTROL Next] eller [!UICONTROL Previous]. |
+| Behållare | [!UICONTROL Visit] eller [!UICONTROL Visitor] (standard) avgör omfattningen av din fråga. |
 
 {style="table-layout:auto"}
 
-Klicka **[!UICONTROL Build]** för att skapa panelen.
+Klicka på **[!UICONTROL Build]** för att skapa panelen.
 
 ## Panelutdata {#output}
 
-The [!UICONTROL Next or previous item] panelen returnerar en mängd data och visualiseringar som hjälper dig att förstå vad som händer efter eller före specifika dimensionsobjekt.
+Panelen [!UICONTROL Next or previous item] returnerar en mängd data och visualiseringar som hjälper dig att förstå vilka förekomster som följer eller föregår specifika dimensionsobjekt.
 
 ![Nästa/Föregående panelutdata](assets/next-previous-output.png)
 

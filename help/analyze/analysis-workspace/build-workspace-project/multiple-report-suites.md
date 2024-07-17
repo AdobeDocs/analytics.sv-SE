@@ -6,7 +6,7 @@ role: User, Admin
 exl-id: 0429ddd9-935f-44ef-ae1e-97bb02e6e2df
 source-git-commit: 33e2ca30ec385861c35c9d06e870d5b38d8f2e34
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '497'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Du kan skapa projekt i Analysis Workspace med data från mer än en rapportserie. Rapportsviterna väljs på panelnivå så att du kan välja olika rapportsviter för varje panel i samma Workspace-projekt.
 
-Den här funktionen är användbar om du t.ex. vill
+Den här funktionen är användbar om du till exempel vill
 
 * Jämför data från två olika regioner och data finns i två olika rapportsviter. Du kan skapa tabeller och visualiseringar för att jämföra data sida vid sida.
 
@@ -33,7 +33,7 @@ Du kan använda en rapportserie för alla paneler samtidigt genom att högerklic
 
 ## Aktiv panel
 
-Vi introducerar begreppet&quot;aktiv panel&quot; jämfört med&quot;inaktiv panel&quot; med den här funktionen. Den aktiva panelen känns igen av den ljusblå kanten runt den. Om du klickar inuti en panel blir panelen den aktiva panelen.
+Vi introducerar begreppet&quot;aktiv panel&quot; jämfört med&quot;inaktiv panel&quot; med den här funktionen. Den aktiva panelen känns igen av den ljusblå kanten runt den. Om du klickar inuti en panel blir panelen aktiv.
 
 >[!TIP]
 >Du kan dra och släppa till valfri panel som finns i samma rapportserie som den aktiva panelen. Genom att dra till en inaktiv panel i samma rapportserie aktiveras panelen.
@@ -54,21 +54,21 @@ Vi introducerar begreppet&quot;aktiv panel&quot; jämfört med&quot;inaktiv pane
 
 
    >[!NOTE]
-   >Ibland visas en banderoll när ett projekt läses in (eller när du växlar till en rapportsvit) där inte alla komponenter som ingår i projektet ingår i rapportsviten. De komponenter som saknas listas. Följ [dessa instruktioner](/help/admin/admin-console/permissions/product-profile.md) för att ställa in behörigheter till de värden/dimensioner som krävs.
+   >Ibland visas en banderoll när du läser in ett projekt (eller byter till en rapportsserie) där inte alla komponenter som ingår i projektet ingår i rapportsviten. De komponenter som saknas listas. Följ [de här instruktionerna](/help/admin/admin-console/permissions/product-profile.md) om du vill ange behörigheter för de mått/mått som krävs.
 
    ![](assets/incompat-rs.png)
 
    Du har tre alternativ för att hantera den här inkompatibiliteten:
-   * Aktivera nödvändiga mått/mått
+   * Aktivera nödvändiga mått/mätvärden
    * Ändra rapportsviten.
    * Fortsätt med vissa komponenter som saknas. Detta resulterar inte i några data för dessa komponenter och/eller tomma visualiseringar.
 
 1. Ändra panelen till en annan rapportsserie och observera hur komponentetiketten (för närvarande aktiv rapportsvit) och listade komponenter uppdateras baserat på den nya rapportsviten.
 
-1. Använda ett kortkommando (`shift` när du drar) för att omvandla en inaktiv panel till en aktiv panel.
+1. Använd ett kortkommando (`shift`) när du drar för att omvandla en inaktiv panel till en aktiv panel.
 
 1. (Valfritt) Du kan också gå till andra komponentbyggare i Analytics och se till att de nu visar en etikett för rapportsviten som anger
 
-   * Var ett segment ska skapas: [Segment Builder](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-build.html).
-   * Där ett beräknat mätvärde skapas: [Beräknad metrisk Builder](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html).
-   * Var en varning ska skapas: [Varningsverktyg](https://experienceleague.adobe.com/docs/analytics/components/alerts/alert-builder.html).
+   * Var ett segment ska skapas: [Segmentbyggare](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-build.html).
+   * Där ett beräknat mått skapas: [Beräknad metrisk Builder](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html).
+   * Var en avisering skapas: [Varningsbyggaren](https://experienceleague.adobe.com/docs/analytics/components/alerts/alert-builder.html).

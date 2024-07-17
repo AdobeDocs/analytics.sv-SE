@@ -99,13 +99,13 @@ Nej, de råa sökdata kommer in som en oberoende datauppsättning. Det finns doc
 
 * [!UICONTROL Pending]
 * [!UICONTROL Paused] betyder att kontot tidigare har konfigurerats men har försatts i ett inaktivt läge.
-* [!UICONTROL Active] betyder att kontot har konfigurerats fullständigt och hämtar sökdata.
+* [!UICONTROL Active] betyder att kontot har konfigurerats fullständigt och att sökdata hämtas.
 
 +++
 
 +++ Jag försöker mappa mina Advertising Analytics-konton till en specifik rapportsserie, men den är inte tillgänglig i modalmetoden för Report Suite. Varför?
 
-Innan du kan tilldela ett Advertising Analytics-konto en rapportssvit måste du [tillhandahålls för Advertising Analytics-rapportering](/help/integrate/c-advertising-analytics/c-adanalytics-workflow/aa-provision-rs.md)
+Innan du kan tilldela en rapportsserie till ett Advertising Analytics-konto måste den önskade rapportsviten [etableras för Advertising Analytics-rapportering](/help/integrate/c-advertising-analytics/c-adanalytics-workflow/aa-provision-rs.md)
 Detta görs via en separat admin-sida som är tillgänglig från: Admin > Rapportsviter > `[select report suite]` > Redigera inställningar > Advertising Analytics-konfiguration.
 
 +++
@@ -116,7 +116,7 @@ Virtuella rapportsviter samlar inte in data, så du kan inte direkt mappa ett Ad
 
 +++
 
-+++ Rapporteras Advertising Analytics-statistik i *Marknadsföringskanaler* rapportera?
++++ Kan Advertising Analytics-statistik rapporteras i rapporten *Marknadskanaler*?
 
 Nej, de ingår inte i rapporten om marknadsföringskanaler.
 
@@ -128,13 +128,13 @@ Sökdata hämtas från sökmotorerna runt 6.00 (06.00) i tidszonen i datacentret
 
 +++
 
-+++ Vad kan *som tagits före klickningen*? Ger vi intryck, kostnader, genomsnittlig position osv. även utan att klicka?
++++ Vad kan *hämtas före klickningen*? Ger vi intryck, kostnader, genomsnittlig position osv. även utan att klicka?
 
 AMO-ID:t hämtar sökmotorns mått: Impressions, Cost, Clicks, Average Position och Average Quality Score. Om det inte finns några klick, men det finns intryck, skickas fortfarande data för utfall/position/kvalitet till Analytics. Vanligtvis kostar det inget om du inte klickar.
 
 +++
 
-+++ På vilken nivå hämtas dessa data? *Besökare? Träffa?*
++++ På vilken nivå hämtas dessa data? *Besökare? Träff?*
 
 Sökmotorns mätvärden hämtas på träffnivå och kopplas till AMO-ID:t (och dess klassificeringar). Det är data på sammanfattningsnivå och är inte kopplat till besök/besökare. Därför kan sökmotorns mått bara användas i segment som är träffnivåomfång och som baseras på AMO-ID (eller dess klassificeringar).
 
@@ -142,7 +142,7 @@ AMO-ID:t registreras också på landningssidan i träffen för den sidan (som ko
 
 +++
 
-+++ Kan vi bara hämta google.com eller *landversioner* (som google.co.uk, google.it, google.fr eller google.de) också?
++++ Fångar vi bara google.com eller *landsversioner* (som google.co.uk, google.it, google.fr eller google.de)?
 
 Ad Platform-klassificeringen fångar följande värden:&quot;Google Adwords&quot; och&quot;Bing Ads&quot;. Ett vanligt tillvägagångssätt är att inkludera landskoden som en del av namngivningen av kampanjer. Du kan sedan filtrera ned eller segmentera (t.ex. om alla kampanjer börjar med countrycode_ och sedan skapar du ett segment där Campaigns (AMO-ID) börjar med &quot;UK_&quot;, vilket ger dig endast data för Storbritannien).
 
@@ -154,7 +154,7 @@ Ad Platform-klassificeringen fångar följande värden:&quot;Google Adwords&quot
 
 +++
 
-+++ Finns det några planer på att inkludera andra annonskanaler som *Visa* eller *Social*?
++++ Finns det planer på att inkludera andra annonskanaler som *Display* eller *Social*?
 
 Nej, för närvarande har vi inga planer på dessa andra kanaler på färdplanen.
 
@@ -163,7 +163,7 @@ Nej, för närvarande har vi inga planer på dessa andra kanaler på färdplanen
 
 ## Automatisk kontra manuell spårning {#section_7437C4698A6D482EB7ED94A948390119}
 
-+++ När mitt Advertising-konto konfigureras anges följande: *Automatisk spårning* kan leda till oavsiktliga konsekvenser. Vilka typer av följder kan inträffa?
++++ När jag konfigurerar mitt Advertising-konto anges det att *automatisk spårning* kan leda till oönskade konsekvenser. Vilka typer av följder kan inträffa?
 
 I det automatiska läget görs ett försök att lägga till URL-parametrar i slutet av spårningsmallarna/mål-URL:erna i rätt format. Det är dock ditt ansvar att se till att de URL-parametrar som läggs till behålls korrekt på den slutliga landningssidan. I det automatiska läget kan nyckelord infogas i landnings-URL:en, och webbservern kanske inte stöder nyckelord med specialtecken.
 

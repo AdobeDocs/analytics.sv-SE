@@ -15,17 +15,17 @@ ht-degree: 0%
 
 {{plug-in}}
 
-The `getAndPersistValue` Med plugin-programmet kan du lagra ett värde i en cookie som kan hämtas senare under ett besök. Den har en liknande roll som [!UICONTROL Storage duration] i Adobe Analytics-tillägget i Adobe Experience Platform Data Collection. Adobe rekommenderar att du använder det här plugin-programmet om du automatiskt vill behålla en Analytics-variabel på samma värde i efterföljande träffar efter att variabeln har angetts. Denna plug-in är inte nödvändig om [!UICONTROL Storage duration] funktionen i Analytics-tillägget är tillräcklig. Du behöver inte heller använda denna plugin om du inte behöver ställa in och behålla variabler till samma värde i efterföljande träffar. Den inbyggda eVars-beständigheten kräver inte att denna plugin används eftersom eVars finns kvar på serversidan vid Adobe.
+Med plugin-programmet `getAndPersistValue` kan du lagra ett värde i en cookie som kan hämtas senare under ett besök. Den har en liknande roll som funktionen [!UICONTROL Storage duration] i Adobe Analytics-tillägget i Adobe Experience Platform Data Collection. Adobe rekommenderar att du använder det här plugin-programmet om du automatiskt vill behålla en Analytics-variabel på samma värde i efterföljande träffar efter att variabeln har angetts. Det här plugin-programmet är inte nödvändigt om funktionen [!UICONTROL Storage duration] i Analytics-tillägget är tillräcklig. Du behöver inte heller använda denna plugin om du inte behöver ställa in och behålla variabler till samma värde i efterföljande träffar. Den inbyggda eVars-beständigheten kräver inte att denna plugin används eftersom eVars finns kvar på serversidan vid Adobe.
 
 ## Installera plugin-programmet med Web SDK-tillägget
 
 Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-programmen med Web SDK.
 
-1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
-1. Klicka **[!UICONTROL Tags]** till vänster och klicka sedan på den önskade taggegenskapen.
-1. Klicka **[!UICONTROL Extensions]** till vänster och klicka sedan på **[!UICONTROL Catalog]** tab
-1. Leta rätt på och installera **[!UICONTROL Common Web SDK Plugins]** tillägg.
-1. Klicka **[!UICONTROL Data Elements]** till vänster och klicka sedan på dataelementet.
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med dina inloggningsuppgifter för AdobeID.
+1. Klicka på **[!UICONTROL Tags]** till vänster och klicka sedan på den önskade taggegenskapen.
+1. Klicka på **[!UICONTROL Extensions]** till vänster och sedan på fliken **[!UICONTROL Catalog]**
+1. Leta reda på och installera tillägget **[!UICONTROL Common Web SDK Plugins]**.
+1. Klicka på **[!UICONTROL Data Elements]** till vänster och klicka sedan på det önskade dataelementet.
 1. Ange det önskade dataelementnamnet med följande konfiguration:
    * Tillägg: Vanliga SDK-plugin-program för webben
    * Dataelement: `getAndPersistValue`
@@ -40,10 +40,10 @@ Denna plugin stöds ännu inte för användning i en manuell implementering av W
 
 Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-programmen med Adobe Analytics.
 
-1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med dina inloggningsuppgifter för AdobeID.
 1. Klicka på den önskade taggegenskapen.
-1. Gå till [!UICONTROL Extensions] klickar du på [!UICONTROL Catalog] knapp
-1. Installera och publicera [!UICONTROL Common Analytics Plugins] extension
+1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Catalog]
+1. Installera och publicera tillägget [!UICONTROL Common Analytics Plugins]
 1. Om du inte redan har det skapar du en regel med namnet&quot;Initiera plugin-program&quot; med följande konfiguration:
    * Villkor: Inget
    * Händelse: Kärna - Bibliotek inläst (sidan ovanpå)
@@ -56,10 +56,10 @@ Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-program
 
 Om du inte vill använda tillägget för Common Analytics-plugin-program kan du använda den anpassade kodredigeraren.
 
-1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med dina inloggningsuppgifter för AdobeID.
 1. Klicka på önskad egenskap.
-1. Gå till [!UICONTROL Extensions] klickar du på **[!UICONTROL Configure]** under Adobe Analytics-tillägget.
-1. Expandera [!UICONTROL Configure tracking using custom code] dragspelspanel, som visar [!UICONTROL Open Editor] -knappen.
+1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen **[!UICONTROL Configure]** under Adobe Analytics-tillägget.
+1. Expandera dragspelsfliken [!UICONTROL Configure tracking using custom code] som visar knappen [!UICONTROL Open Editor].
 1. Öppna den anpassade kodredigeraren och klistra in den plugin-kod som finns nedan i redigeringsfönstret.
 1. Spara och publicera ändringarna i Analytics-tillägget.
 
@@ -76,13 +76,13 @@ function getAndPersistValue(vtp,cn,ex){var d=vtp,k=cn,l=ex;if("undefined"!==type
 
 ## Använda plugin-programmet
 
-The `getAndPersist` funktionen använder följande argument:
+Funktionen `getAndPersist` använder följande argument:
 
-* **`vtp`** (obligatoriskt): Värdet som ska behållas från sida till sida
-* **`cn`** (valfritt): Namnet på den cookie som värdet ska lagras i. Om det här argumentet inte anges får cookien ett namn `"s_gapv"`
-* **`ex`** (valfritt): Antalet dagar innan cookien förfaller. Om argumentet är `0` eller inte är inställd upphör cookien att gälla när besöket är slut (30 minuters inaktivitet).
+* **`vtp`** (obligatoriskt): Det värde som ska behållas från sida till sida
+* **`cn`** (valfritt): Namnet på den cookie som värdet ska lagras i. Om det här argumentet inte anges får cookien namnet `"s_gapv"`
+* **`ex`** (valfritt): Antalet dagar innan cookien upphör att gälla. Om det här argumentet är `0` eller inte är inställt upphör cookien att gälla när besöket är slut (30 minuters inaktivitet).
 
-Om variabeln i `vtp` -argumentet är inställt, anger plugin-programmet cookien och returnerar sedan cookie-värdet. Om variabeln i `vtp` -argumentet är inte inställt. Plugin-programmet returnerar bara cookie-värdet.
+Om variabeln i argumentet `vtp` är inställd ställer plugin-programmet in cookien och returnerar sedan cookie-värdet. Om variabeln i argumentet `vtp` inte är inställd returnerar plugin-programmet bara cookie-värdet.
 
 ## Exempel
 
@@ -117,7 +117,7 @@ s.eVar30 = getAndPersistValue(s.eVar30);
 ### 2.0 (16 april 2018)
 
 * Point release (mindre kodstorlek)
-* 0 skickas till `ex` -argumentet kommer nu att upphöra efter 30 minuters inaktivitet i stället för att upphöra i slutet av webbläsarsessionen.
+* Om du skickar 0 till argumentet `ex` kommer det att upphöra att gälla efter 30 minuters inaktivitet i stället för att gå ut i slutet av webbläsarsessionen.
 
 ### 1.0 (18 januari 2016)
 

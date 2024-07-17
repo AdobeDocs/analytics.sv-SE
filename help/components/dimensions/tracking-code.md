@@ -5,24 +5,24 @@ feature: Dimensions
 exl-id: e4f70552-6946-4974-a9e2-928faf563ecd
 source-git-commit: d095628e94a45221815b1d08e35132de09f5ed8f
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '559'
 ht-degree: 1%
 
 ---
 
 # Spårningskod
 
-Spårningskod [dimension](overview.md) listar namnen på spårningskoderna på din webbplats. Du kan placera länkar med olika parametervärden för frågesträngar på olika platser på Internet. Denna dimension hjälper er att förstå vilka länkar som var mest framgångsrika när det gäller att köra trafik till er webbplats.
+Spårningskod [dimension](overview.md) visar namnen på spårningskoderna på din plats. Du kan placera länkar med olika parametervärden för frågesträngar på olika platser på Internet. Denna dimension hjälper er att förstå vilka länkar som var mest framgångsrika när det gäller att köra trafik till er webbplats.
 
 Det är vanligt att lägga till spårningskodfrågesträngar i e-postmeddelanden, annonser, inlägg i sociala medier och andra marknadsföringsaktiviteter som används i organisationen.
 
 ## Fyll den här dimensionen med data
 
-Den här dimensionen hämtar data från [`v0` frågesträng](/help/implement/validate/query-parameters.md) i bildbegäranden. AppMeasurementet samlar in dessa data med [`campaign`](/help/implement/vars/page-vars/campaign.md) variabel.
+Den här dimensionen hämtar data från [`v0`-frågesträngen ](/help/implement/validate/query-parameters.md) i bildbegäranden. AppMeasurementet samlar in dessa data med variabeln [`campaign`](/help/implement/vars/page-vars/campaign.md).
 
 ## Dimensioner
 
-Bland Dimensionerna finns namnen på spårningskoderna på webbplatsen. Din organisation avgör vilka specifika dimensionsobjekt du vill använda. Se [Kampanjspårning](/help/implement/use-cases/campaign-tracking.md) för mer information.
+Bland Dimensionerna finns namnen på spårningskoderna på webbplatsen. Din organisation avgör vilka specifika dimensionsobjekt du vill använda. Mer information finns i [Kampanjspårning](/help/implement/use-cases/campaign-tracking.md).
 
 ## Jämför spårningskoddimensionen med marknadsföringskanaler som samlar in spårningskoder
 

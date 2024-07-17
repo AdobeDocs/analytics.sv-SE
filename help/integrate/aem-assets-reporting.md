@@ -17,12 +17,12 @@ Administrativa steg för att aktivera AEM Assets-rapportering i Analytics.
 
 **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]** > **`<select report suite>`** > **[!UICONTROL Edit Settings]** > **[!UICONTROL AEM]** > **[!UICONTROL AEM Assets Reporting]**
 
-Gör det möjligt för Analytics att samla in intryck och klickningar på [!UICONTROL Assets] från AEM Assets Insights. Integreringen
+Gör det möjligt för Analytics att samla in visningar och klickningar på [!UICONTROL Assets] från AEM tillgångsinsikter. Integreringen
 
 * Aktiverar rapportering i Analytics.
-* Lägger till nya dimensioner till tillgångsvariablerna i Analysis Workspace: Tillgångs-ID, Resurskälla och Klickat resurs-ID
+* Lägger till nya dimensioner till tillgångsvariablerna i Analysis Workspace: Resurs-ID, Resurs-Source och Klickat resurs-ID
 * Lägger till nya dimensioner i tillgångshändelser: Resursklickningar och Resursinställningar
 
-Information som ska fyllas i finns i [Dokumentation för AEM Asset Insights](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/assets-insights.html) för fullständiga implementeringsanvisningar.
+Information som ska fyllas i finns i [AEM-dokumentationen för tillgångsinsikter](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/assets-insights.html) för fullständiga implementeringsinstruktioner.
 
 <!--The content in this article is duplicated with the content in the Admin guide (adobe-experience-manager.md)-->

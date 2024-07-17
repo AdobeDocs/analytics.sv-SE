@@ -63,7 +63,7 @@ Med etiketter för datastyrning kan användarna klassificera data som speglar in
 
 ### Ta bort etiketter för datasekretess
 
-Till skillnad från de andra etiketterna utesluter inte dessa borttagningsetiketter varandra. Du kan välja antingen båda eller ingen. En separat [!UICONTROL None] etiketten inte behövs eftersom [!UICONTROL None] markeras bara genom att du inte markerar något av alternativen för att ta bort.
+Till skillnad från de andra etiketterna utesluter inte dessa borttagningsetiketter varandra. Du kan välja antingen båda eller ingen. En separat [!UICONTROL None]-etikett är inte nödvändig eftersom [!UICONTROL None] bara anges genom att inte markera något av borttagningsalternativen.
 
 En Ta bort-etikett krävs bara för fält som innehåller ett värde som skulle göra det möjligt att koppla en träff till den registrerade (dvs. som skulle göra det möjligt att identifiera den registrerade). Andra personuppgifter (favoriter, webbsurfnings-/inköpshistorik, hälsovillkor, o.s.v.) behöver inte tas bort eftersom associationen med den registrerade kommer att avskiljas.
 
@@ -78,7 +78,7 @@ En Ta bort-etikett krävs bara för fält som innehåller ett värde som skulle 
 
 | Etikett | Definition | Andra krav |
 | --- | --- | --- |
-| Ingen | Den här variabeln innehåller inte något ID som ska användas för begäranden om datasekretess. | Du behöver bara ange en av de andra etiketterna om det här fältet innehåller ett ID som du använder när du skickar begäran om åtkomst eller borttagning via [Privacy Services-API](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html) eller användargränssnittet. |
+| Ingen | Den här variabeln innehåller inte något ID som ska användas för begäranden om datasekretess. | Du behöver bara ange en av dessa andra etiketter om det här fältet innehåller ett ID som du använder när du skickar in åtkomst- eller borttagningsbegäranden via [Privacy Service-API:t](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html) eller användargränssnittet. |
 | ID-DEVICE | Det här fältet innehåller ett ID som kan användas för att identifiera en enhet för en datasekretessbegäran, men det går inte att skilja mellan olika användare av en delad enhet.  Du behöver inte ange den här etiketten för alla variabler som innehåller ID:n (det vill säga I1/I2-etiketterna). Använd den här etiketten om du skickar begäranden om datasekretess med ID:n som lagras i den här variabeln och vill söka efter det angivna ID:t i variabeln. | Kräver även etiketten I1 eller I2.<ul><li>Kan inte anges för händelser</li><li>Kan inte anges för marknadsförande eVars</li><li>Kan inte anges för klassificeringar</li></ul> |
 | ID-PERSON | Det här fältet innehåller ett ID som kan användas för att identifiera en autentiserad användare (en viss person) för en begäran om dataintegritet.  Du behöver inte ange den här etiketten för alla variabler som innehåller ID:n (det vill säga I1/I2-etiketterna). Använd den här etiketten om du ska skicka begäranden om datasekretess med ID:n som lagras i den här variabeln och vill söka efter det angivna ID:t i variabeln. | <ul><li>Kräver även etiketten I1 eller I2.</li><li>Kan inte anges för händelser</li><li>Kan inte anges för marknadsförande eVars</li><li>Kan inte anges för klassificeringar</li></ul> |
 
@@ -137,7 +137,7 @@ Märkning av datasekretess påverkar fyra breda klasser av analysvariabler. Alla
 | <ul><li>Anpassade slutförda händelser</li><li>Marknadsförande eVars</li><li>Multivärdesvariabler (mvVars)</li><li>Hierarkivariabler</li></ul> | <ul><li>S1/S2</li><li>ACC-ALL, ACC-PERSON</li></ul> | <ul><li>I1/I2</li>  <li>ID-DEVICE, ID-PERSON</li><li>DEL-DEVICE, DEL-PERSON</li></ul> |
 | Klassificeringar | <ul><li>I1/I2, S1/S2</li><li>ACC-ALL, ACC-PERSON</li></ul> | <ul><li>ID-DEVICE, ID-PERSON</li><li>DEL-DEVICE, DEL-PERSON</li></ul> |
 | <ul><li>Trafikvariabler (props)</li><li>Handelsvariabler (icke-marknadsförande eVars)</li></ul> | Alla etiketter | - |
-| Övriga variabler (*Se tabellen nedan för undantag*) | ACC-ALL, ACC-PERSON | <ul><li>I1/I2, S1/S2</li><li>ID-DEVICE, ID-PERSON</li><li>DEL-DEVICE, DEL-PERSON)</li></ul> |
+| De flesta andra variablerna (*Se tabellen nedan för undantag*) | ACC-ALL, ACC-PERSON | <ul><li>I1/I2, S1/S2</li><li>ID-DEVICE, ID-PERSON</li><li>DEL-DEVICE, DEL-PERSON)</li></ul> |
 
 {style="table-layout:auto"}
 
@@ -241,8 +241,8 @@ Det är viktigt att du förstår vilken typ av data som finns i varje variabel i
 | [!UICONTROL User Agent] | Användaragenten identifierar vilken version av webbläsaren som användes. |
 | [!UICONTROL User ID] | Anger Analytics-rapportsviten (som ett tal) som innehåller data. |
 | [!UICONTROL Report Suite ID] | Anger namnet på Analytics-rapportsviten som innehåller data. |
-| [!UICONTROL Visitor ID]<p>[!UICONTROL MCID] / [!UICONTROL ECID] | Dessa ID:n har en DEL-DEVICE-etikett, men det går inte att lägga till etiketten DEL-PERSON. Om du anger [!UICONTROL ID Expansion] för varje begäran kommer dessa ID:n automatiskt att tas bort för alla borttagningsbegäranden, även de som använder ett ID-PERSON.<p>Om du inte använder ID-expansion, men vill att dessa cookie-ID:n anonymiseras i träffar som innehåller ett matchande ID i en prop eller eVar, kan du kringgå den här etikettbegränsningen genom att etikettera prop eller eVar med en ID-DEVICE-etikett, även om den verkligen identifierar en person (alla DEL-PERSON-etiketter måste också ändras till DEL-DEVICE-etiketter). I det här fallet ändras den historiska rapporteringen eftersom endast vissa instanser av besökar-ID eller ECID anonymiseras. |
-| [!UICONTROL AMO ID] | Adobe Advertising Cloud ID är en lösningsvariabel som inte kan ändras [!UICONTROL DEL-DEVICE] etikett. Den fylls i från en cookie på samma sätt som besökar-ID och MCID. Den ska tas bort från träffar när dessa andra ID:n tas bort. Mer information finns i beskrivningen av dessa variabler. |
+| [!UICONTROL Visitor ID]<p>[!UICONTROL MCID] / [!UICONTROL ECID] | Dessa ID:n har en DEL-DEVICE-etikett, men det går inte att lägga till etiketten DEL-PERSON. Om du anger [!UICONTROL ID Expansion] för varje begäran tas dessa ID:n automatiskt bort för alla borttagningsbegäranden, även de som använder ett ID-PERSON.<p>Om du inte använder ID-expansion, men vill att dessa cookie-ID:n anonymiseras i träffar som innehåller ett matchande ID i en prop eller eVar, kan du kringgå den här etikettbegränsningen genom att etikettera prop eller eVar med en ID-DEVICE-etikett, även om den verkligen identifierar en person (alla DEL-PERSON-etiketter måste också ändras till DEL-DEVICE-etiketter). I det här fallet ändras den historiska rapporteringen eftersom endast vissa instanser av besökar-ID eller ECID anonymiseras. |
+| [!UICONTROL AMO ID] | Adobe Advertising Cloud ID är en lösningsvariabel som har en [!UICONTROL DEL-DEVICE]-etikett som inte kan ändras. Den fylls i från en cookie på samma sätt som besökar-ID och MCID. Den ska tas bort från träffar när dessa andra ID:n tas bort. Mer information finns i beskrivningen av dessa variabler. |
 
 {style="table-layout:auto"}
 
@@ -262,4 +262,4 @@ Det finns fem standardvariabler som innehåller tidsstämplar:
 
 Koden för att generera de filer som returneras för åtkomstbegäranden om datasekretess kräver att minst en av de tre första tidsstämpelvariablerna inkluderas i åtkomstbegäran (har en ACC-etikett som gäller för typen av begäran). Om ingen av dessa inkluderas behandlas anpassad tid för träff i UTC som om den har en ACC-ALL-etikett.
 
-Den CSV-fil på träffnivå som returneras för åtkomstbegäranden för datasekretess konverterar värdena i dessa fält från unika tidsstämplar till datum-/tidsfält i formatet `YYYY-MM-DD HH:MM:SS` (till exempel `2018-05-01 13:49:22`). I den sammanfattande HTML-filen kommer dessa tidsstämpelvärden att trunkeras så att endast datumet anges. `YYYY-MM-DD`, för att minska antalet unika värden som förekommer för dessa fält.
+Den CSV-fil på träffnivå som returneras för datasekretessåtkomstbegäranden konverterar värdena i dessa fält från unika tidsstämplar till datum-/tidsfält i formatet `YYYY-MM-DD HH:MM:SS` (till exempel `2018-05-01 13:49:22`). I den sammanfattande HTML-filen trunkeras dessa tidsstämpelvärden så att endast datumet `YYYY-MM-DD` inkluderas, vilket minskar antalet unika värden som förekommer för dessa fält.

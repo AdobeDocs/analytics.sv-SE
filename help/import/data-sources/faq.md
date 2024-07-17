@@ -16,7 +16,7 @@ ht-degree: 0%
 Vanliga frågor och svar om datakällor.
 
 +++Vad kostar det att använda datakällor?
-Datakällor medför inga avgifter och räknar inte heller med användning av serversamtal. [Datakällor med fullständig bearbetning](full-processing-eol.md) räknade med serversamtal innan de gick i pension.
+Datakällor medför inga avgifter och räknar inte heller med användning av serversamtal. [Datakällor med fullständig bearbetning](full-processing-eol.md) har räknats med serveranrop innan de tas ur bruk.
 +++
 
 +++Hur påverkar datakällor attribuering och förfallodatum för eVars?
@@ -26,12 +26,12 @@ Alla andra data som överförs via datakällor har ingen form av attribuering el
 +++
 
 +++Hur påverkar datakällor standardvärden, som sidvisningar, besök eller unika besökare?
-Data som överförs via datakällor påverkar inte [Sidvyer](/help/components/metrics/page-views.md), [Besök](/help/components/metrics/visits.md), eller [Unika besökare](/help/components/metrics/unique-visitors.md) på något sätt. Det enda standardmåttet som påverkar inkluderar [Förekomster](/help/components/metrics/occurrences.md).
+Data som överförs via datakällor påverkar inte [sidvisningar](/help/components/metrics/page-views.md), [besök](/help/components/metrics/visits.md) eller [unika besökare](/help/components/metrics/unique-visitors.md) på något sätt. Det enda standardmått som de påverkar är [förekomster](/help/components/metrics/occurrences.md).
 +++
 
 +++Kan jag ta bort data som har importerats från datakällor?
 
-Ja. Du kan ta bort dessa data med [API för datareparation](https://developer.adobe.com/analytics-apis/docs/2.0/guides/endpoints/data-repair/). Dessutom rekommenderar Adobe starkt att du överför data från datakällor till en testrapportssvit innan du överför den till en produktionsrapportsvit.
+Ja. Du kan ta bort dessa data med [API:t för datareparation](https://developer.adobe.com/analytics-apis/docs/2.0/guides/endpoints/data-repair/). Dessutom rekommenderar Adobe starkt att du överför data från datakällor till en testrapportssvit innan du överför den till en produktionsrapportsvit.
 +++
 
 +++Hur mycket data kan jag importera samtidigt?
@@ -49,9 +49,9 @@ Ja. Filer med filnamnstillägget `.TXT` eller `.FIN` bearbetas inte. Kontrollera
 +++
 
 +++Hur många kolumner kan jag lägga till i en datakällfil?
-Du kan inkludera så många kolumner som du vill i en datakällfil, om alla kolumner är giltiga. Se [Filformat](file-format.md) för en lista med giltiga variabel-/kolumnnamn.
+Du kan inkludera så många kolumner som du vill i en datakällfil, om alla kolumner är giltiga. En lista med giltiga variabel-/kolumnnamn finns i [Filformat](file-format.md).
 +++
 
 +++Kan jag använda datakällor utan att använda FTP-platsen som tillhandahålls av Adobe?
-Du kan använda [API för datakällor](https://developer.adobe.com/analytics-apis/docs/1.4/guides/data-sources/), som gör att du kan skicka API-anrop direkt till Adobe. Dessa API-anrop innehåller en `UploadData` som gör att du kan skicka data med en JSON-objektnyttolast.
+Du kan använda [API:t för datakällor](https://developer.adobe.com/analytics-apis/docs/1.4/guides/data-sources/), som gör att du kan skicka API-anrop direkt till Adobe. Dessa API-anrop innehåller en `UploadData`-metod som gör att du kan skicka data via en JSON-objektnyttolast.
 +++

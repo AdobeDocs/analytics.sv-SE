@@ -17,9 +17,9 @@ ht-degree: 52%
 Den här guiden förklarar hur du överför data till Analytics. Den innehåller:
 
 * **[Datakällor](data-sources/overview.md)**: Överför en fil till en angiven Adobe FTP-plats. Adobe hämtar filen och inkluderar informationen i er rapportsvit.
-* **[API för massdatainmatning](/help/import/bulk-data-insertion-api/bulk-data-insert.md)** Med kan du överföra serveranropsdata i grupper av filer i stället för att använda klientbibliotek som AppMeasurement.
+* Med **[API:t för gruppdatainfogning](/help/import/bulk-data-insertion-api/bulk-data-insert.md)** kan du överföra serveranropsdata i grupper av filer i stället för att använda klientbibliotek som AppMeasurement.
 * **[API för datainfogning](c-data-insertion-api/c-data-insertion-api.md)**: Skicka data direkt till Adobes datainsamling via API.
-* **[Adobe Exchange Marketplace](https://exchange.adobe.com/experiencecloud.analytics.html#product)**: Hitta aktuella integreringar som kan berika er Adobe Analytics-rapportserie.
+* **[Adobe Exchange Marketplace](https://exchange.adobe.com/experiencecloud.analytics.html#product)**: Hitta aktuella integreringar som kan berika din Adobe Analytics-rapportsvit.
 
 Här är en videoöversikt över Adobe Analytics:
 

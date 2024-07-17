@@ -18,14 +18,14 @@ Komplexa segment behövs ofta för att få fram önskade data. Om komplexa segme
 
 Operatorn&quot;Innehåller&quot; är en av de mest bearbetningsintensiva funktionerna i segmentering, eftersom den måste analysera hela innehållet i varje värde. Använd andra operatorer som &quot;Börjar med&quot; eller &quot;Slutar med&quot; om de önskade värdena finns i början eller slutet av en sträng.
 
-Om en Contains-operator i ett segment returnerar ett stort antal resultat, kommer rapporten oftast att sluta fungera. Om du till exempel har skapat ett segment där `Referrer equals "."`genomsöks innehållet i alla värden. Du kan använda operatorn &#39;Exists&#39; i stället.
+Om en Contains-operator i ett segment returnerar ett stort antal resultat, kommer rapporten oftast att sluta fungera. Om du till exempel har skapat ett segment där `Referrer equals "."` genomsöks innehållet i alla värden. Du kan använda operatorn &#39;Exists&#39; i stället.
 
 ## Använd klassificeringar för att gruppera dimensionsobjekt
 
-Om du har många segmentvillkor kan de snabbt försämra segmentets prestanda. Till exempel: `Page equals X or Page equals Y or Page equals Z` upprepas med hundratals olika värden. I stället för att skriva ut dessa hundratals villkor klassificerar du alla önskade värden i ett segment och använder sedan det klassificerade värdet i ett segment.
+Om du har många segmentvillkor kan de snabbt försämra segmentets prestanda. `Page equals X or Page equals Y or Page equals Z` repeteras till exempel med hundratals olika värden. I stället för att skriva ut dessa hundratals villkor klassificerar du alla önskade värden i ett segment och använder sedan det klassificerade värdet i ett segment.
 
 1. Skapa en klassificering för variabeln som du arbetar med.
-2. Hämta klassificeringsmallen och öppna den i det kalkylblad eller den textredigerare du vill använda.
+2. Ladda ned klassificeringsmallen och öppna den i det kalkylblad eller den textredigerare du vill använda.
 3. Ge varje dimensionsartikel som du vill inkludera i ditt segment samma värde.
 4. Använd klassificeringsimporteraren för att importera kalkylbladet tillbaka till Adobe Analytics
 5. När klassificeringen är klar skapar du ett segment med det klassificerade värdet.

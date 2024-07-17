@@ -12,13 +12,13 @@ ht-degree: 1%
 
 # Unika besökare
 
-Unika besökare [mått](overview.md) visar antalet besökar-ID för dimensionsobjektet. Det är ett av de vanligaste måtten som används för att fastställa trafik, eftersom det ger en översikt på hög nivå över en dimensionsposts popularitet. En besökare kan till exempel komma till din webbplats varje dag i en månad, men de räknas ändå som en unik besökare.
+[Mått](overview.md) för unika besökare visar antalet besökar-ID för dimensionsobjektet. Det är ett av de vanligaste måtten som används för att fastställa trafik, eftersom det ger en översikt på hög nivå över en dimensionsposts popularitet. En besökare kan till exempel komma till din webbplats varje dag i en månad, men de räknas ändå som en unik besökare.
 
-Om du [Enhetsövergripande analys](../cda/overview.md), den här mätningen ersätts med [Unika enheter](unique-devices.md) mätvärden.
+Om du använder [Enhetsövergripande analys](../cda/overview.md) ersätts det här måttet med måttet [Unika enheter](unique-devices.md).
 
 ## unika besökare varje dag, vecka, månad, kvartal och år
 
-Analysis Workspace behandlar unika besökare utifrån rapportens detaljrikedom. Om du till exempel använder [Dag](../dimensions/day.md) kommer du att se unika besökare varje dag för varje dimensionspost. För rapportsumman har den dock ersatts med unika besökare för friformstabellens datumintervall.
+Analysis Workspace behandlar unika besökare utifrån rapportens detaljrikedom. Om du till exempel använder dimensionen [Dag](../dimensions/day.md) visas unika besökare dagligen för varje dimensionsobjekt. För rapportsumman har den dock ersatts med unika besökare för friformstabellens datumintervall.
 
 ## Hur det här måttet beräknas
 
@@ -26,10 +26,10 @@ Det här måttet räknar antalet unika besökar-ID:n för en given dimensionspos
 
 | Använd order | Frågeparameter (samlingsmetod) | Presentera när |
 | --- | --- | --- |
-| 1 | `vid` | The [`visitorID`](/help/implement/vars/config-vars/visitorid.md) variabeln är inställd. |
-| 2 | `aid` | Besökaren har en befintlig [`s_vi`](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html) cookie. Ange implementeringar utan eller innan du implementerar Visitor ID-tjänsten. |
-| 3 | `mid` | Besökaren har en befintlig [`s_ecid`](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html) cookie. Ange på implementeringar med [Adobe Experience Cloud Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html). |
-| 4 | `fid` | Besökaren har en befintlig [`s_fid`](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html) cookie, eller om `aid` och `mid` kunde inte anges av någon anledning. |
+| 1 | `vid` | Variabeln [`visitorID`](/help/implement/vars/config-vars/visitorid.md) har angetts. |
+| 2 | `aid` | Besökaren har en befintlig [`s_vi`](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html)-cookie. Ange implementeringar utan eller innan du implementerar Visitor ID-tjänsten. |
+| 3 | `mid` | Besökaren har en befintlig [`s_ecid`](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html)-cookie. Ange implementeringar med hjälp av [Adobe Experience Cloud Identity-tjänsten](https://experienceleague.adobe.com/docs/id-service/using/home.html). |
+| 4 | `fid` | Besökaren har en befintlig [`s_fid`](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html)-cookie, eller om `aid` och `mid` inte kunde anges av någon anledning. |
 | 5 | IP-adress, användaragent, gateway-IP-adress | Den sista utvägen för att identifiera en unik besökare om besökarens webbläsare inte accepterar cookies. |
 
 >[!NOTE]
@@ -42,10 +42,10 @@ Unika besöksidentifierare lagras vanligtvis i en webbläsarcookie. En ny unik b
 
 * Rensar cacheminnet när som helst
 * Öppnar en annan webbläsare på samma dator. En unik besökare räknas per webbläsare.
-* Samma person som surfar på din webbplats på olika enheter. En separat unik besökare räknas per enhet. Du kan använda [Enhetsövergripande analys](../cda/overview.md) för att kombinera besökare med [Folk](people.md) mätvärden.
-* Öppnar en privat surfsession (till exempel Chrome&#39;s Incognito-fliken).
+* Samma person som surfar på din webbplats på olika enheter. En separat unik besökare räknas per enhet. Du kan använda [Enhetsövergripande analys](../cda/overview.md) för att kombinera besökare med hjälp av måttet [Personer](people.md).
+* Öppnar en privat surfsession (till exempel fliken Chrome Incognito).
 
-En ny unik besökare är *not* så länge cookie-identifieraren bevaras:
+En ny unik besökare *räknas inte*, förutsatt att cookie-identifieraren bevaras:
 
 * Stänger webbläsaren under en längre period
 * Uppgraderar webbläsaren till den senaste versionen

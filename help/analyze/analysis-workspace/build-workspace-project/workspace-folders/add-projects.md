@@ -1,12 +1,12 @@
 ---
-description: Lär dig hur du lägger till mappar i arbetsytan
+description: Lär dig hur du lägger till mappar i Workspace
 keywords: Analysis Workspace
-title: Lägg till mappar i arbetsytan
+title: Lägg till mappar i Workspace
 feature: Workspace Basics
 exl-id: 90968aec-0f08-4017-9c87-69f92b9747d2
 source-git-commit: e9c830fb729d99c1c60b2ba9227918e5d77bd449
 workflow-type: tm+mt
-source-wordcount: '199'
+source-wordcount: '200'
 ht-degree: 1%
 
 ---
@@ -43,7 +43,7 @@ Lägg till projekt i en mapp från tabellvyn på startsidan.
 
    ![](/help/analyze/analysis-workspace/build-workspace-project/assets/move-projects-added.png)
 
-   På startsidan för arbetsytan visas nu mappen innehåller (3) projekt.
+   På Workspace landningssida visas nu mappen innehåller (3) projekt.
 
    ![](/help/analyze/analysis-workspace/build-workspace-project/assets/move-folders-updated.png)
 
@@ -55,7 +55,7 @@ Du kan också lägga till projekt inifrån en mapp med hjälp av ellipslänken.
 
    ![](/help/analyze/analysis-workspace/build-workspace-project/assets/move-open-folder.png)
 
-1. Välj **...** ellipsikonen i det övre högra hörnet.
+1. Markera ellipsikonen **..** i det övre högra hörnet.
 
    ![](/help/analyze/analysis-workspace/build-workspace-project/assets/add-projects-elipsis.png)
 
@@ -68,6 +68,6 @@ Du kan också lägga till projekt inifrån en mapp med hjälp av ellipslänken.
 
    ![](/help/analyze/analysis-workspace/build-workspace-project/assets/move-add-multiple-projects.png)
 
-1. Välj **Lägg till** för att lägga till projekten i mappen.
+1. Välj **Lägg till** om du vill lägga till projekten i mappen.
 
    ![](/help/analyze/analysis-workspace/build-workspace-project/assets/move-added-items.png)

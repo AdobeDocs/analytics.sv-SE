@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Dagar sedan senaste besök
 
-Dagar sedan senaste besök [dimension](overview.md) Mäter hur lång tid som förflutit mellan besökarens aktuella träff och deras tidigare besök (om det finns något). Den här dimensionen hjälper dig att förstå det beteende besökare gör efter att ha besökt din webbplats. Exempel:
+Dagar sedan senaste besök [dimension](overview.md) mäter hur lång tid som förflutit mellan besökarens aktuella träff och deras tidigare besök (om det finns något). Den här dimensionen hjälper dig att förstå det beteende besökare gör efter att ha besökt din webbplats. Exempel:
 
 * Hur ofta återbesöker användarna webbplatsen?
 * Hur korrelerar returfrekvensen med konvertering? Besök återkommande köpare ofta eller sällan?
@@ -26,4 +26,4 @@ Den här dimensionen fungerar som den ska för alla implementeringar. Om en rapp
 
 ## Dimensioner
 
-Dimensionen omfattar antalet dagar mellan besökarens senaste besök och den aktuella träffen. Varje antal dagar är en separat dimensionspost med `"Same day"` där en besökares senaste besök och den aktuella träffen inträffade samma dag.
+Dimensionen omfattar antalet dagar mellan besökarens senaste besök och den aktuella träffen. Varje antal dagar är ett separat dimensionsobjekt där `"Same day"` förekommer där en besökares senaste besök och den aktuella träffen inträffade samma dag.

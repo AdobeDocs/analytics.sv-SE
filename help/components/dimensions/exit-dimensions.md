@@ -13,9 +13,9 @@ ht-degree: 0%
 
 # Avsluta dimensioner
 
-*Den här hjälpsidan beskriver hur avslutas som en [dimension](overview.md). Mer information om hur avslutar fungerar som ett mått finns i [Avslutar](../metrics/exits.md) mätvärden.*
+*Den här hjälpsidan beskriver hur avslutas som en [dimension](overview.md). Mer information om hur avslutar fungerar som ett mått finns i måttet [Avslutar](../metrics/exits.md).*
 
-Avsluta dimensioner registrerar den sista dimensionsposten och använd den retroaktivt på alla träffar under besöket. Utgångsdimensioner är tillgängliga för alla variabler med panorering aktiverad under [Trafikvariabler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/c-traffic-variables/traffic-var.md) i Rapportsvitens inställningar.
+Avsluta dimensioner registrerar den sista dimensionsposten och använd den retroaktivt på alla träffar under besöket. Exit-dimensioner är tillgängliga för alla variabler med målning aktiverad under [Trafikvariabler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/c-traffic-variables/traffic-var.md) i inställningarna för rapportsviten.
 
 ## Fyll i avslutningsdimensioner med data
 

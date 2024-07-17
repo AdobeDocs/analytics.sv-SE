@@ -7,7 +7,7 @@ role: User, Admin
 exl-id: 5e23be83-586a-4543-9be9-65c631b8b0b7
 source-git-commit: 266cf18050d60f08f7e170c56453d1e1d805cb7b
 workflow-type: tm+mt
-source-wordcount: '544'
+source-wordcount: '538'
 ht-degree: 0%
 
 ---
@@ -27,11 +27,11 @@ Här är en video om projektplanering och -delning:
 
 1. Klicka på **[!UICONTROL Share]** > **[!UICONTROL Curate Project Data]**.
 De komponenter som används i projektet läggs automatiskt till.
-   **Anteckning**: Om ett projekt har flera rapportsviter visas ett kuratefält för varje rapportserie i projektet.
-1. (Valfritt) Om du vill lägga till fler komponenter drar du de komponenter du vill dela från den vänstra listen till [!UICONTROL Curate Components] fält.
+   **Obs!** Om ett projekt har flera rapportsviter visas ett kuratfält för varje rapportsvit i projektet.
+1. (Valfritt) Om du vill lägga till fler komponenter drar du de komponenter du vill dela från den vänstra listen till fältet [!UICONTROL Curate Components].
 1. Klicka på **[!UICONTROL Done]**.
 
-Du kan också använda Kurva från [!UICONTROL Share] genom att klicka **[!UICONTROL Curate and Share]**. Med det här alternativet kurformas projektet automatiskt till de komponenter som används i projektet. Du kan lägga till ytterligare komponenter enligt stegen ovan.
+Du kan också använda kurering från menyn [!UICONTROL Share] genom att klicka på **[!UICONTROL Curate and Share]**. Med det här alternativet kurformas projektet automatiskt till de komponenter som används i projektet. Du kan lägga till ytterligare komponenter enligt stegen ovan.
 
 ![](assets/curation-field.png)
 
@@ -51,14 +51,14 @@ Så här tar du bort projektstrukturering och återställer alla komponenter i d
 
 ## Vuxen rapportsvitens urval
 
-Om du vill använda kurser på rapportsvitnivå så att de gäller för många projekt samtidigt kan du [strukturera komponenter i en virtuell rapportsserie](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-components.html).
+Om du vill använda kurering på rapportsvitnivå, så att den tillämpas på många projekt samtidigt, kan du [strukturera komponenter i en virtuell rapportserie](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-components.html).
 
 >[!NOTE]
 > Vuxenkurering används alltid innan projektet struktureras. Detta innebär att även om ditt kuraterade projekt innehåller vissa komponenter, så kommer de att filtreras bort om de inte ingår i den kuraterade virtuella rapportsviten.
 
 ## Visa alla komponenter, alternativ
 
-I ett välstrukturerat projekt eller en virtuell rapportserie kan mottagaren välja att **[!UICONTROL Show All]** komponenter i den vänstra listen. [!UICONTROL Show All] visar olika uppsättningar av komponenter, beroende på:
+I ett välstrukturerat projekt eller en virtuell rapportserie får mottagaren alternativet att **[!UICONTROL Show All]** komponenter i den vänstra listen. [!UICONTROL Show All] visar olika uppsättningar av komponenter, beroende på:
 
 * Användarens behörighetsnivå (admin eller icke-admin)
 * Projektroll (ägare/redigerare eller inte)
@@ -71,4 +71,4 @@ Obs! Roller som inte är administratörsvy har inte åtkomst till den vänstra l
 |---|---|---|---|
 | Kuraterad virtuell rapportsvit | Alla komponenter i den virtuella rapportsviten som inte är förvaltade | Icke-förvaltade virtuella rapportsvitkomponenter som den här rollen äger eller som har delats med dem | Icke-förvaltade virtuella rapportsvitkomponenter som den här rollen äger eller som har delats med dem |
 | Kuraterat projekt | Alla projektkomponenter som inte är kuraterade | Alla projektkomponenter som inte är kuraterade | Ej förvaltade projektkomponenter som den här rollen äger eller som har delats med dem |
-| Kuraterat projekt i en Curated Virtual Report Suite | Alla komponenter som inte är kuraterade, visas under **[!UICONTROL Non-Curated Project Components]** och **[!UICONTROL Non-Curated Virtual report suite components]** | Alla icke-förvaltade projektkomponenter OCH icke-förvaltade virtuella rapportsvitkomponenter som den här rollen äger eller som har delats med dem | Virtuellt rapportpaket och projektkomponenter som den här rollen äger eller som har delats med dem är inte förvaltade |
+| Kuraterat projekt i en Curated Virtual Report Suite | Alla komponenter som inte är förvaltade, visas under **[!UICONTROL Non-Curated Project Components]** och **[!UICONTROL Non-Curated Virtual report suite components]** | Alla icke-förvaltade projektkomponenter OCH icke-förvaltade virtuella rapportsvitkomponenter som den här rollen äger eller som har delats med dem | Virtuellt rapportpaket och projektkomponenter som den här rollen äger eller som har delats med dem är inte förvaltade |

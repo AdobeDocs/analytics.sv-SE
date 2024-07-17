@@ -15,7 +15,7 @@ ht-degree: 0%
 
 {{plug-in}}
 
-The `apl` Med plugin-programmet kan du lägga till nya värden i listavgränsade variabler, som [`events`](../page-vars/events/events-overview.md), [`linkTrackVars`](../config-vars/linktrackvars.md), [`list`](../page-vars/list.md)och andra.
+Med plugin-programmet `apl` kan du lägga till nya värden i listavgränsade variabler som [`events`](../page-vars/events/events-overview.md), [`linkTrackVars`](../config-vars/linktrackvars.md), [`list`](../page-vars/list.md) med flera.
 
 * Om värdet som du vill lägga till inte finns i variabeln läggs värdet till i slutet av strängen.
 * Om värdet som du vill lägga till redan finns i variabeln ändras inte värdet av det här plugin-programmet. Med den här funktionen kan implementeringen undvika dubblettvärden.
@@ -31,10 +31,10 @@ Det här plugin-programmet stöds ännu inte för användning i Web SDK.
 
 Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-programmen med Adobe Analytics.
 
-1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med dina inloggningsuppgifter för AdobeID.
 1. Klicka på den önskade taggegenskapen.
-1. Gå till [!UICONTROL Extensions] klickar du på [!UICONTROL Catalog] knapp
-1. Installera och publicera [!UICONTROL Common Analytics Plugins] extension
+1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Catalog]
+1. Installera och publicera tillägget [!UICONTROL Common Analytics Plugins]
 1. Om du inte redan har det skapar du en regel med namnet&quot;Initiera plugin-program&quot; med följande konfiguration:
    * Villkor: Inget
    * Händelse: Kärna - Bibliotek inläst (sidan ovanpå)
@@ -47,10 +47,10 @@ Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-program
 
 Om du inte vill använda tillägget för Common Analytics-plugin-program kan du använda den anpassade kodredigeraren.
 
-1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med dina inloggningsuppgifter för AdobeID.
 1. Klicka på önskad egenskap.
-1. Gå till [!UICONTROL Extensions] klickar du på **[!UICONTROL Configure]** under Adobe Analytics-tillägget.
-1. Expandera [!UICONTROL Configure tracking using custom code] dragspelspanel, som visar [!UICONTROL Open Editor] -knappen.
+1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen **[!UICONTROL Configure]** under Adobe Analytics-tillägget.
+1. Expandera dragspelsfliken [!UICONTROL Configure tracking using custom code] som visar knappen [!UICONTROL Open Editor].
 1. Öppna den anpassade kodredigeraren och klistra in den plugin-kod som finns nedan i redigeringsfönstret.
 1. Spara och publicera ändringarna i Analytics-tillägget.
 
@@ -67,15 +67,15 @@ function apl(lv,va,d1,d2,cc){var b=lv,d=va,e=d1,c=d2,g=cc;if("-v"===b)return{plu
 
 ## Använda plugin-programmet
 
-The `apl` funktionen använder följande argument:
+Funktionen `apl` använder följande argument:
 
-* **`lv`** (required, string): Variabeln som innehåller en avgränsad lista med objekt som ett nytt värde ska läggas till i
-* **`vta`** (required, string): En kommaavgränsad lista över nya värden som ska läggas till i `lv` argumentets värde.
-* **`d1`** (valfri, sträng): Den avgränsare som används för att separera de enskilda värden som redan finns i `lv` argument.  Standardvärdet är ett komma (`,`) när den inte är inställd.
-* **`d2`** (valfri, sträng): Utdataavgränsaren. Standardvärdet är samma som `d1` när den inte är inställd.
-* **`cc`** (valfritt, booleskt): En flagga som anger om en skiftlägeskänslig kontroll används. If `true`, är dubbelkontrollen skiftlägeskänslig. If `false` Om du inte anger det är dubblettkontrollen inte skiftlägeskänslig. Standardvärdet är `false`.
+* **`lv`** (obligatoriskt, sträng): Variabeln som innehåller en avgränsad lista med objekt som ett nytt värde ska läggas till i
+* **`vta`** (obligatoriskt, sträng): En kommaavgränsad lista över nya värden som ska läggas till i argumentet `lv`.
+* **`d1`** (valfri sträng): Avgränsaren som används för att separera de enskilda värden som redan finns i argumentet `lv`.  Standardvärdet är ett kommatecken (`,`) när inget anges.
+* **`d2`** (valfri, sträng): Utdataavgränsaren. Standardvärdet är samma som `d1` när det inte är inställt.
+* **`cc`** (valfritt, booleskt): En flagga som anger om en skiftlägeskänslig kontroll används. Om `true` är dubblettkontrollen skiftlägeskänslig. Om `false` anges eller inte är dubblettkontrollen inte skiftlägeskänslig. Standardvärdet är `false`.
 
-The `apl` funktionen returnerar värdet för `lv` argument plus icke-duplicerade värden i `vta` argument.
+Funktionen `apl` returnerar värdet för argumentet `lv` plus alla icke-duplicerade värden i argumentet `vta`.
 
 ## Exempel
 
@@ -139,26 +139,26 @@ s.list3 = apl(s.list3,"value1");
 
 * Korrigerade kompatibilitetsproblem med `apl` anrop som använde äldre versioner av plugin-programmet
 * Konsolvarningar har tagits bort för att minska storleken
-* Tillagd `inList 2.1`
+* `inList 2.1` har lagts till
 
 ### 3.1 (22 april 2018)
 
-* `d2` är nu standardvärdet för `d1` argument när de inte anges
+* Argumentet `d2` får nu som standard värdet för argumentet `d1` om det inte anges
 
 ### 3.0 (16 april 2018)
 
 * Fullständig omanalys/omskrivning av plugin-program
 * Avancerad felkontroll har lagts till
-* The `vta` argument tar nu emot flera värden samtidigt
-* Lagt till `d2` argument för att formatera returvärdet
-* Ändrad `cc` argument till ett booleskt
+* Argumentet `vta` tar nu emot flera värden samtidigt
+* Argumentet `d2` har lagts till för att formatera returvärdet
+* Argumentet `cc` har ändrats till ett booleskt värde
 
 ### 2.5 (18 februari 2016)
 
-* Använder nu `inList` funktion för jämförelsebearbetning
+* Använder nu funktionen `inList` för jämförelsebearbetning
 
 ### 2.0 (26 januari 2016)
 
-* `d` (Delimiter)-argument är nu valfritt (som standard ett komma)
-* `u` (Flagga för skiftlägeskänslighet) är nu valfritt (standardvärdet är skiftlägeskänsligt)
-* Oavsett `u` (Flagga för skiftlägeskänslighet) lägger plugin-programmet inte längre till ett värde i en lista om värdet redan finns i listan
+* Argumentet `d` (avgränsare) är nu valfritt (standardvärdet är ett komma)
+* Argumentet `u` (flagga för skiftlägeskänslighet) är nu valfritt (standardvärdet är skiftlägeskänsligt)
+* Oavsett argumentet `u` (skiftlägeskänslighetsflagga) lägger plugin-programmet inte längre till ett värde i en lista om värdet redan finns i listan

@@ -17,7 +17,7 @@ ht-degree: 64%
 Mer information om hur du konfigurerar den här integreringen finns i [dokumentationen för Adobe Campaign](https://helpx.adobe.com/se/campaign/standard/integrating/using/about-campaign-analytics-integration.html).
 
 >[!IMPORTANT]
->Den här artikeln gäller Adobe Campaign **Standard** enbart rapportering. Se [här](https://experienceleague.adobe.com/docs/analytics/integration/analytics-to-campaign-classic.html) för att lägga till Adobe Campaign **Klassisk** rapportering.
+>Den här artikeln gäller endast Adobe Campaign **Standard** -rapportering. Se [här](https://experienceleague.adobe.com/docs/analytics/integration/analytics-to-campaign-classic.html) om du vill lägga till Adobe Campaign **Classic**-rapportering.
 
 Integrationen mellan Adobe Analytics och Adobe Campaign Standard:
 
@@ -27,7 +27,7 @@ Integrationen mellan Adobe Analytics och Adobe Campaign Standard:
 * Lägger till fem nya Adobe Campaign-klassificeringar.
 * Lägger till nio nya Adobe Campaign-mått.
 * Lägger till sex nya Adobe Campaign-dimensioner.
-* Synkroniserar data till Analytics var 15:e minut via en automatiskt konfigurerad datakälla.
+* Synkroniserar data till Analytics var 15:e minut via en automatiskt etablerad Data Source.
 
 ## Steg 1. Aktivera Adobe Campaign Standard-rapportering {#section_C685EF10505045708A6536BB13F6CD58}
 

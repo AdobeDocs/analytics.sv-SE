@@ -6,8 +6,8 @@ role: User, Admin
 exl-id: e9868296-e453-45ec-b874-b2aa1b37a1bf
 source-git-commit: 2eff7656741bdba3d5d7d1f33e9261b59f8e6083
 workflow-type: tm+mt
-source-wordcount: '1072'
-ht-degree: 2%
+source-wordcount: '1093'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +21,7 @@ Beroende på vilket datum som använts i rapporten används tre olika statistisk
 
 För dagliga granularitetsrapporter anser algoritmen att flera viktiga faktorer är viktiga för att få bästa möjliga resultat. För det första avgör algoritmen vilken typ av modell som ska användas baserat på tillgängliga data som vi väljer mellan en av två klasser - en tidsseriebaserad modell eller en avbrottsdetekteringsmodell (kallas funktionell filtrering).
 
-Urvalet av tidsseriemodell baseras på följande kombinationer av typ av fel, trend och säsongsbundenhet (ETS) enligt beskrivningen i [Hyndman et al. (2008)](https://www.springer.com/us/book/9783540719168). I algoritmen görs följande försök:
+Urvalet av tidsseriemodell baseras på följande kombinationer för typ av fel, trend och säsongsberoende (ETS) enligt beskrivningen i [Hyndman et al. (2008)](https://www.springer.com/us/book/9783540719168). I algoritmen görs följande försök:
 
 1. ANA (additivt fel, ingen trend, additiv säsongsvariation)
 1. AAA (additivt fel, additiv trend, additiv säsongsvariation)

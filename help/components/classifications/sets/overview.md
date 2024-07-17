@@ -16,7 +16,7 @@ Klassificeringsuppsättningar har ett enda gränssnitt för att hantera klassifi
 
 **[!UICONTROL Components]** > **[!UICONTROL Classification sets]**
 
-Du måste vara produktadministratör eller tillhöra en produktprofil som innehåller behörighetsobjektet [!UICONTROL Report Suite Tools] > [!UICONTROL Classifications] om du vill visa det här menyalternativet. Observera att tidigare gränssnitt för klassificeringshantering finns under [!UICONTROL Admin] menyn, klassificeringsuppsättningar finns under [!UICONTROL Components] -menyn.
+Du måste vara produktadministratör eller tillhöra en produktprofil som innehåller behörighetsobjektet [!UICONTROL Report Suite Tools] > [!UICONTROL Classifications] för att kunna se det här menyobjektet. Observera att medan tidigare gränssnitt för klassificeringshantering finns under menyn [!UICONTROL Admin] finns Klassificeringsuppsättningar på menyn [!UICONTROL Components].
 
 ## Förbättringar
 
@@ -24,13 +24,13 @@ Den serverdelsarkitektur som lanserats med klassificeringsuppsättningar innehå
 
 * Minskad bearbetningstid (72 timmar → 24 timmar)
 * Ett omdesignat användargränssnitt som hanterar klassificeringar
-* Alternativet att använda klassificeringsdata i Adobe Experience Platform i framtiden via [Adobe Analytics källanslutning för klassificeringsdata](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/classifications)
+* Alternativet att använda klassificeringsdata i Adobe Experience Platform i framtiden via [Adobe Analytics-källkopplingen för klassificeringsdata](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/classifications)
 
 Den serverdelsarkitektur som lanserats med klassificeringsuppsättningar innehåller också flera tydliga ändringar:
 
-* När du använder webbläsaren eller automatiserad import, &#39;[!UICONTROL Overwrite on conflict]&#39; är alltid aktiverat.
+* [!UICONTROL Overwrite on conflict] är alltid aktiverat när webbläsaren eller den automatiska importen används.
 * När du använder webbläsaren eller den automatiska importen stöds inte längre alternativet att exportera direkt efter importen. Export måste initieras separat.
-* API:t för Analytics 2.0 `GetDimensions` slutpunkten returnerar nu strängidentifierare för klassificeringar i stället för numeriska identifierare. Numeriska identifierare kan fortfarande användas, men Adobe rekommenderar att du använder de nya strängidentifierarna där det är möjligt. Numeriska identifierare kan hämtas med `?expansion=hidden` frågesträngparameter.
+* Slutpunkten för API:t `GetDimensions` för Analytics 2.0 returnerar nu strängidentifierare för klassificeringar i stället för numeriska identifierare. Numeriska identifierare kan fortfarande användas, men Adobe rekommenderar att du använder de nya strängidentifierarna där det är möjligt. Numeriska identifierare kan hämtas med frågesträngparametern `?expansion=hidden`.
 
 >[!IMPORTANT]
 >
@@ -39,5 +39,5 @@ Den serverdelsarkitektur som lanserats med klassificeringsuppsättningar innehå
 Klassificeringsuppsättningar består av tre huvudområden:
 
 * [**[!UICONTROL Classification sets manager]**](manage/set-manager.md): Skapa, redigera och ta bort klassificeringsgrupper.
-* [**[!UICONTROL Classification set jobs manager]**](job-manager.md): Visa status för klassificeringsuppsättningsjobb och hämta exportfiler.
+* [**[!UICONTROL Classification set jobs manager]**](job-manager.md): Visa statusen för klassificeringsmängdsjobb och hämta exportfiler.
 * [**[!UICONTROL Classification set consolidations]**](consolidations/manage.md): Kombinera flera klassificeringsuppsättningar till en enda klassificeringsuppsättning.

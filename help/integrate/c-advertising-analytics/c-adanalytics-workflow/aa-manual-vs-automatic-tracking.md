@@ -24,20 +24,20 @@ Here is a video overview of how to implement the Advertising Analytics tracking 
 
 Två spårningslägen stöds: [!UICONTROL Auto] och [!UICONTROL Manual].
 
-## [!UICONTROL Auto] Spårning {#concept_C4C6107838C947CFBB7F4E0CB94264F0}
+## [!UICONTROL Auto]-spårning {#concept_C4C6107838C947CFBB7F4E0CB94264F0}
 
-[!UICONTROL Auto] spårning låter Advertising Cloud-motorn avgöra hur sökmotordata ska hanteras. Automatisk spårning är enklare, men kanske inte ger den bästa integrerade datauppsättningen.
+[!UICONTROL Auto]-spårning låter Advertising Cloud-motorn avgöra hur sökmotordata ska hanteras. Automatisk spårning är enklare, men kanske inte ger den bästa integrerade datauppsättningen.
 
-Du måste därför markera kryssrutan Bekräftelse när du väljer **[!UICONTROL Auto]** innan du kan spara kontoinställningarna.
+Därför måste du markera kryssrutan Bekräftelse när du väljer **[!UICONTROL Auto]** innan du kan spara kontoinställningen.
 
-Observera att du konfigurerar ett sökmotorkonto med **[!UICONTROL Auto]** typ, du ansvarar för följande åtgärder:
+Observera att du ansvarar för följande åtgärder när du konfigurerar ett sökmotorkonto med typen **[!UICONTROL Auto]**:
 
-* The `s_kwcid` parameter och värde läggs till i kontospårningsmallarna eller URL:er för landningssidan i det konto som läggs till. Parametern och värdet infogas i slutet av URL:en. Ytterligare åtgärder kan krävas från din sida om webbservern kräver en viss `key=value` i slutet av URL:en. Eller en uppdatering med stöd för nya `key=value` i URL:en. Det är ditt ansvar att se till att de URL-parametrar som läggs till behålls korrekt på den slutliga landningssidan.
-* Dessutom kan nyckelord infogas i landnings-URL:en som en del av `s_kwcid` värde. Om de innehåller specialtecken eller symboler måste du bekräfta att webbservern har stöd för dessa tecken. Ett vanligt specialtecken är till exempel `+`, som används i nyckelorden&quot;Bred Match Modified&quot;.
+* Parametern `s_kwcid` och värdet läggs till i kontospårningsmallarna eller URL:erna för landningssidan i det konto som läggs till. Parametern och värdet infogas i slutet av URL:en. Ytterligare åtgärder kan krävas från din sida om webbservern kräver ett visst `key=value`-par i slutet av URL:en. Eller en uppdatering som stöder nya `key=value`-par i URL:en. Det är ditt ansvar att se till att de URL-parametrar som läggs till behålls korrekt på den slutliga landningssidan.
+* Dessutom kan nyckelord infogas i landnings-URL:en som en del av värdet `s_kwcid`. Om de innehåller specialtecken eller symboler måste du bekräfta att webbservern har stöd för dessa tecken. Ett vanligt specialtecken är till exempel `+`, som används i nyckelorden&quot;Bred Match Modified&quot;.
 
 >[!IMPORTANT]
 >
->Läs mer om huruvida du ska lägga till `s_kwcid` parametern till [Skyddsprincip för innehåll](https://experienceleague.adobe.com/en/docs/id-service/using/reference/csp).
+>Läs mer om huruvida du bör lägga till parametern `s_kwcid` i din [skyddsprofil för innehåll](https://experienceleague.adobe.com/en/docs/id-service/using/reference/csp).
 
 ## Manuell spårning {#concept_87B28BA9E7F84BA5972F69E6F3482A33}
 
@@ -49,7 +49,7 @@ Strängen som behöver läggas till i ditt Google-konto visas nedan. Du måste l
 
 >[!IMPORTANT]
 >
->The *`<Advertising Analytics ID>`* värde (in **fet** nedan) är generiskt och **måste ersättas med din specifika konto-ID-sträng**. Du kan hämta din specifika konto-ID-sträng från kontoskärmen under [!UICONTROL Tracking] -avsnitt.
+>Värdet *`<Advertising Analytics ID>`* (i **bold** nedan) är generiskt och **måste ersättas med din specifika konto-ID-sträng**. Du kan hämta din specifika konto-ID-sträng från kontoskärmen under avsnittet [!UICONTROL Tracking].
 
 **Spårningssträng för kampanjer:**
 
@@ -98,7 +98,7 @@ Strängen som behöver läggas till i ditt Bing-konto visas nedan. Du måste lä
 
 >[!IMPORTANT]
 >
->The _`<Advertising Analytics ID>`_värde (in **fet**nedan) är generiskt och **måste ersättas med din specifika konto-ID-sträng**. Du kan hämta din specifika konto-ID-sträng från kontoskärmen under avsnittet Spårning.
+>Värdet _`<Advertising Analytics ID>`_(i **bold**nedan) är generiskt och **måste ersättas med din specifika konto-ID-sträng**. Du kan hämta din specifika konto-ID-sträng från kontoskärmen under avsnittet Spårning.
 
 **Spårningssträng för kampanjer:**
 

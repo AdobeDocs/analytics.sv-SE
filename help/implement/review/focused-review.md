@@ -13,20 +13,20 @@ ht-degree: 0%
 
 # Fokuserad granskning (efter varje webbplatsrelease)
 
-Varför ska ni granska implementeringen var tredje månad? Så att ni kan ta itu med eventuella problem med datakvaliteten medan de fortfarande är små. Om du konsekvent utför den fokuserade granskningen efter varje webbplatsrelease kommer du att upptäcka att [Fullständiga granskningar](/help/implement/review/full-review.md) är mycket enklare. Ni kommer också att förhindra att små problem växer till stora dataproblem som kan urholka intressenternas förtroende.
+Varför ska ni granska implementeringen var tredje månad? Så att ni kan ta itu med eventuella problem med datakvaliteten medan de fortfarande är små. Om du konsekvent utför den fokuserade granskningen efter varje webbplatsrelease kommer du att upptäcka att det är mycket enklare att utföra [fullständiga granskningar](/help/implement/review/full-review.md) vartannat år. Ni kommer också att förhindra att små problem växer till stora dataproblem som kan urholka intressenternas förtroende.
 
 ## 1. Börja med de fem viktigaste KPI:erna
 
-Genom att känna till era fem viktigaste nyckeltal (KPI) kan ni avgöra vilka mätvärden och dimensioner ni behöver undersöka. Om du inte har uppdaterat dina nyckeltal de senaste sex månaderna eller om ditt företag inte har skapat nyckeltal än, följ [dessa instruktioner](/help/implement/review/define-kpis.md).
+Genom att känna till era fem viktigaste nyckeltal (KPI) kan ni avgöra vilka mätvärden och dimensioner ni behöver undersöka. Om du inte har uppdaterat dina KPI:er de senaste sex månaderna eller om ditt företag inte har skapat KPI:er än, följ [dessa instruktioner](/help/implement/review/define-kpis.md).
 
 ## 2. Se till att dina KPI-värden och -variabler fortfarande fungerar bra.
 
-Kom ihåg att koduppdateringar kan få oönskade konsekvenser. Du vill se till att alla mått och mått som är kopplade till din [de 5 främsta KPI:erna](/help/implement/review/define-kpis.md) fungerar fortfarande korrekt. Helst görs detta direkt efter en webbplatsrelease. Om du inte har gjort det de senaste månaderna gör du det *nu*. Så här gör du:
+Kom ihåg att koduppdateringar kan få oönskade konsekvenser. Du vill se till att alla mått och mått som är associerade med dina [5 KPI:er](/help/implement/review/define-kpis.md) fortfarande fungerar som de ska. Det här görs helst direkt efter en webbplatsrelease. Om du inte har gjort det de senaste månaderna gör du det *nu*. Så här gör du:
 
-* Skapa instrumentpaneler för att se timtrendvyer av dessa viktiga mått och variabler (eller konfigurera [intelligenta aviseringar](https://experienceleague.adobe.com/docs/analytics/components/alerts/intellligent-alerts.html) för varje mätvärde). Övervaka dem sedan i en dag eller två för att säkerställa att du får de data du förväntar dig, och att data är korrekta. Håll utkik efter inflammationspunkter. Var beredd på att åtgärda allvarliga problem omedelbart. Om du hittar avvikelser kan du ta reda på varför i datalagret, tagghanteringsreglerna och bearbetningsreglerna.
-* Kör om [Kontrollpanel för analyshälsa](https://express.adobe.com/page/tnNQGNlfzta3b/) för att övervaka breda trender för nyckeltal och variabler.
+* Skapa instrumentpaneler om du vill se timvisa trender över viktiga mått och variabler (eller konfigurera [intelligenta aviseringar](https://experienceleague.adobe.com/docs/analytics/components/alerts/intellligent-alerts.html) för varje mätvärde). Övervaka dem sedan i en dag eller två för att säkerställa att du får de data du förväntar dig, och att data är korrekta. Håll utkik efter inflammationspunkter. Var beredd på att åtgärda allvarliga problem omedelbart. Om du hittar avvikelser kan du ta reda på varför i datalagret, tagghanteringsreglerna och bearbetningsreglerna.
+* Kör [Analytics Health Dashboard](https://express.adobe.com/page/tnNQGNlfzta3b/) igen för att övervaka breda trender för KPI-mått och -variabler.
 
-*Mer information om hur du ser till att dina mått och variabler fungerar som de ska finns i [läs dessa tips](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/my-five-best-tips-for-keeping-adobe-analytics-humming/td-p/388608) från Adobe Analytics Champion Sarah Owen.*
+*Mer information om hur du kontrollerar att dina mått och variabler fungerar som de ska finns i [de här tipsen](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/my-five-best-tips-for-keeping-adobe-analytics-humming/td-p/388608) från Adobe Analytics Champion Sarah Owen.*
 
 ## 3. Granska noggrant data från den uppdaterade delen av din webbplats
 
@@ -42,6 +42,6 @@ Om du inte har någon dokumentation om implementeringen exporterar du en lista m
 
 Utvärdera situationen och ta fram en plan för att åtgärda uppgifterna. Gör sedan de ändringar du behöver, uppdatera dokumentationen och informera dina intressenter om ändringarna.
 
-*Titta på den här 2-minuters videon från Adobe Analytics Champion Sarah Owen om naturliga tider när du kan anpassa granskningar av din implementering till ditt hektiska schema:*
+*Titta på den här 2-minutersvideon från Adobe Analytics Champion Sarah Owen om naturliga tider när du kan anpassa granskningar av din implementering till ditt hektiska schema:*
 
 >[!VIDEO](https://video.tv.adobe.com/v/328340/?quality=12&learn=on)

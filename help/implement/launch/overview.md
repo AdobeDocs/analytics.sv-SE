@@ -13,7 +13,7 @@ ht-degree: 3%
 
 # Implementera Adobe Analytics med Analytics-tillägget
 
-Under Adobe Analytics livstid har Adobe erbjudit flera olika metoder för att implementera kod på er webbplats för datainsamling. Den rekommenderade metoden för Adobe är igenom [Taggar](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html) i Adobe Experience Platform.
+Under Adobe Analytics livstid har Adobe erbjudit flera olika metoder för att implementera kod på er webbplats för datainsamling. Den rekommenderade metoden för Adobe är via [taggar](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html) i Adobe Experience Platform.
 
 Taggar i Adobe Experience Platform är en tagghanteringslösning som gör att ni kan driftsätta Analytics-kod tillsammans med andra taggningskrav. Adobe erbjuder integreringar med andra lösningar och produkter och låter er driftsätta anpassad kod. Alla dessa uppgifter kan utföras utan att någon utvecklingsteam i organisationen behöver uppdatera koden på er webbplats.
 
@@ -23,7 +23,7 @@ Alla kunder som har ett aktivt Adobe Experience Cloud-kontrakt kan använda tagg
 
 
 
-![Så här implementerar du Adobe Analytics med hjälp av arbetsflödet för Analytics-tillägg, vilket beskrivs i det här avsnittet.](../assets/analytics-extension-annotated.png)
+![Så här implementerar du Adobe Analytics med hjälp av arbetsflödet för Analytics-tillägg, som beskrivs i det här avsnittet.](../assets/analytics-extension-annotated.png)
 
 <table style="width:100%">
 
@@ -33,13 +33,13 @@ Alla kunder som har ett aktivt Adobe Experience Cloud-kontrakt kan använda tagg
 
 <tr>
 <td> 1</td>
-<td>Se till att du har <b>har definierat en rapportsvit</b>.</td>
+<td>Se till att du har <b>definierat en rapportserie</b>.</td>
 <td><a href="../../admin/admin/c-manage-report-suites/report-suites-admin.md">Report Suite Manager</a></td>
 </tr>
 
 <tr>
 <td>2</td>
-<td><b>Skapa ett datalager</b> för att hantera spårning av data på din webbplats.</td>
+<td><b>Skapa ett datalager</b> för att hantera spårningen av data på webbplatsen.</td>
 <td>
 <a href="../prepare/data-layer.md">Skapa ett datalager</a>
 </td>
@@ -64,8 +64,8 @@ Alla kunder som har ett aktivt Adobe Experience Cloud-kontrakt kan använda tagg
 
 <tr>
 <td>6</td> 
-<td><b>Validera och publicera i produktion</b>. Bädda in kod för att inkludera taggegenskapen på webbplatsens sidor. Använd sedan dataelement, regler och så vidare för att anpassa implementeringen.</td>
-<td><a href="https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html#embed-code">Bädda in kod</a><br/><a href="./validate-publish-prod.md">Validera en utvecklingsimplementering och publicera till produktion</a></td>
+<td><b>Validera och publicera till produktion</b>. Bädda in kod för att inkludera taggegenskapen på webbplatsens sidor. Använd sedan dataelement, regler och så vidare för att anpassa implementeringen.</td>
+<td><a href="https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html#embed-code">Bädda in kod</a><br/><a href="./validate-publish-prod.md">Validera en utvecklingsimplementering och publicera i produktion</a></td>
 </tr>
 
 </table>
@@ -74,6 +74,6 @@ Alla kunder som har ett aktivt Adobe Experience Cloud-kontrakt kan använda tagg
 
 Taggar kan anpassas mycket. Läs mer om hur du får ut mesta möjliga av Adobe Analytics genom att inkludera rätt data i implementeringen.
 
-- [Dokumentation för taggar](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html#): Lär dig hur gränssnittet fungerar och vilka tillägg som är tillgängliga.
+- [Taggar, dokumentation](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html#): Lär dig hur gränssnittet fungerar och vilka tillägg som är tillgängliga.
 
 - [Implementeringsvariabler](../vars/overview.md): Avgör vilka variabler du vill skicka till datainsamlingsservrar.

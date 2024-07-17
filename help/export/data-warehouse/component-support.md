@@ -5,8 +5,8 @@ feature: Data Warehouse
 exl-id: ce7411a4-a720-47b7-90d5-4d867eff4bae
 source-git-commit: ecd02a087e7ab344ccfbad1d5e1c30260577002c
 workflow-type: tm+mt
-source-wordcount: '402'
-ht-degree: 3%
+source-wordcount: '404'
+ht-degree: 0%
 
 ---
 
@@ -20,15 +20,15 @@ Vissa mått och mätvärden som kan användas i Data Warehouse är inte tillgän
 
 ### Endast Dimensioner som stöds
 
-* **EXPERIENCE CLOUD ID**: För implementeringar som använder Experience Cloud ID Service (ECID), ett 128-bitars nummer som består av två sammanfogade 64-bitars tal som fylls på med 19 siffror.
-* **Sidans URL**: Den sid-URL som träffen inträffade på.
-* **Inköps-ID**: Unik identifierare för ett köp, ange med variabeln purchaseID.
-* **Besökar-ID**: Anger den unika identifieraren för besökaren. Det här värdet är samma som det sammanfogade värdet för `visid_high` och `visid_low` kolumner i dataflöden. Se [Referens för datakolumn](../analytics-data-feed/c-df-contents/datafeeds-reference.md) under Dataflöden för mer information.
+* **Experience Cloud ID**: För implementeringar som använder Experience Cloud ID Service (ECID), är ett 128-bitarsnummer bestående av två sammanfogade 64-bitarsnummer som fyllts i med 19 siffror.
+* **Sidans URL**: Den sidadress som träffen inträffade på.
+* **Inköps-ID**: Unik identifierare för ett inköp, anges med variabeln purchaseID.
+* **Besökar-ID**: Anger den unika identifieraren för besökaren. Det här värdet är samma som det sammanfogade värdet för `visid_high` och `visid_low` kolumner i dataflöden. Mer information finns i [Datakolumnreferens](../analytics-data-feed/c-df-contents/datafeeds-reference.md) under Datafeeds.
 
 ### Endast mått som stöds
 
-* **Besök**: Detta mått i samband med Data Warehouse utesluter icke-beständiga cookie-besök.
-* **Besök - alla besökare**: Det här mätvärdet i samband med Data Warehouse är närmare paritet med besöksmätningen i andra verktyg i Adobe Analytics.
+* **Besök**: Det här måttet i samband med Datan Warehouse utesluter icke-beständiga cookie-besök.
+* **Besök - alla besökare**: Det här måttet i kontexten för Data Warehouse är närmare paritet med besöksmåtten i andra verktyg i Adobe Analytics.
 
 ## Komponenter som inte stöds i Datan Warehouse
 
@@ -45,7 +45,7 @@ Vissa mått och mätvärden stöds inte i Datan Warehouse.
    * Alla inmatningsdimensioner, utom inmatningssida
    * Alla avslutningsdimensioner, utom Avsluta sida och Avsluta länk
    * Träff-djup
-   * Återbesöksfrekvens
+   * Returfrekvens
    * Tid före händelse
    * Tid som använts på sidan - paketerad
    * Tid per besök - paketerad
@@ -62,12 +62,12 @@ Vissa mått och mätvärden stöds inte i Datan Warehouse.
 
 * Några målningsbaserade mätvärden, bland annat:
    * Studsar
-   * Första besökssida
-   * Sista besökssida
-   * Siduppdateringar
-   * Enkelt besök
+   * Poster
+   * Avslutar
+   * Läs in igen
+   * Enkel åtkomst
    * Mätvärden för tidsåtgång
-* Deltagandestatistik (enligt beskrivning i [Bygg ett delgivningsmått](/help/components/c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/participation-metric.md))
+* Deltagandestatistik (enligt beskrivningen i [Bygg ett delgivningsmått](/help/components/c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/participation-metric.md))
 
 ### Dimensioner som stöds på ett annat sätt
 

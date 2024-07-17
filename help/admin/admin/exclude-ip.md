@@ -21,11 +21,11 @@ Du kan undanta data från specifika IP-adresser, som interna webbplatsaktivitete
 >
 >Träffar som exkluderats av IP-adressen faktureras som [serveranrop](https://experienceleague.adobe.com/docs/analytics/technotes/terms.html).
 
-Du kan använda jokertecken (&#42;) för att exkludera ett adressintervall. Till exempel: `[!DNL 0.0.*.0]` utelämnar alla IP-adresser mellan `[!DNL 0.0.0.0]` och `[!DNL 0.0.255.0]`. Du kan utesluta upp till 50 olika IP-adresser.
+Du kan använda jokertecken (&#42;) för att exkludera ett adressintervall. `[!DNL 0.0.*.0]` skulle till exempel exkludera alla IP-adresser mellan `[!DNL 0.0.0.0]` och `[!DNL 0.0.255.0]`. Du kan utesluta upp till 50 olika IP-adresser.
 
 >[!TIP]
 >
->Privata IP-adresser behöver inte uteslutas. Endast externa IP-adresser når datainsamlingsservrar i Adobe. Privata adresser innehåller `10.*.*.*`, `192.168.*.*`, `172.[16-31].*.*`och `169.254.*.*`.
+>Privata IP-adresser behöver inte uteslutas. Endast externa IP-adresser når datainsamlingsservrar i Adobe. Privata adresser omfattar `10.*.*.*`, `192.168.*.*`, `172.[16-31].*.*` och `169.254.*.*`.
 
 ## Inverkan av IP-missbruk {#section_51B7529FFF16449CA016FDC51D87E2CA}
 

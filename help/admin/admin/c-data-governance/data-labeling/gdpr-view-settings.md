@@ -13,7 +13,7 @@ ht-degree: 31%
 
 # Visa/hantera integritetsetiketter för datastyrning
 
-The **[!UICONTROL Privacy Labeling for Data Governance]** I finns en översikt över en rapports sekretessetiketter och namnutrymmen. Du kan också exportera inställningarna till en CSV-fil härifrån.
+Dialogrutan **[!UICONTROL Privacy Labeling for Data Governance]** innehåller en översikt över en rapportrites sekretessetiketter och namnutrymmen. Du kan också exportera inställningarna till en CSV-fil härifrån.
 
 ## Visa sekretessetiketter {#view-privacy}
 
@@ -22,7 +22,7 @@ The **[!UICONTROL Privacy Labeling for Data Governance]** I finns en översikt �
 
    >[!NOTE]
    >
-   >Om du inte ser det här menyalternativet måste du läggas till i en [produktprofil i Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html) med behörighet till den här funktionen eller har fått tillgång till en Report Suite i Admin Console.
+   >Om du inte ser det här menyalternativet måste du läggas till i en [produktprofil i Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html) med behörigheter för den här funktionen eller ha fått tillgång till en Report Suite i Admin Console.
 
 3. Överst till höger väljer du en rapportserie vars sekretessetiketter du vill visa eller hantera.
 
@@ -45,9 +45,9 @@ The **[!UICONTROL Privacy Labeling for Data Governance]** I finns en översikt �
 Om du vill använda samma inställningar för datasekretess på mer än en rapportserie gör du så här:
 
 1. Markera variabeln som du vill kopiera. Observera att du bara kan kopiera etiketterna för en variabel åt gången.
-1. Klicka **[!UICONTROL Copy to Report Suite(s)]** längst ned i dialogrutan Datastyrning.
+1. Klicka på **[!UICONTROL Copy to Report Suite(s)]** längst ned i dialogrutan Datastyrning.
 
-   ![Copy to report suite](assets/copy_to_reportsuite.png)
+   ![Kopiera till rapportsviten](assets/copy_to_reportsuite.png)
 
 1. På den slutliga skärmen visas variabelnamnet, den eller de etiketter som du försöker kopiera över, rapportsviterna och deras ID:n samt om inställningarna i målrapportsviterna matchar.
 
@@ -59,7 +59,7 @@ Om du vill använda samma inställningar för datasekretess på mer än en rappo
 
    När du kopierar etiketterna för en variabel eller variabeluppsättning till en annan rapportsvit, flyttas kopian till variabeln på motsvarande plats i målrapportsviten. För standardkomponenter, listvariabler och lyckade händelser kopieras etiketterna till variabeln med **samma namn** i målrapportsviten.
 
-   I Dimensionerna Conversion Variables (eVars) och Traffic (props) går kopian till variabeln med **samma nummer** i målrapportsviten. eVar12 kopieras till exempel till eVar12 i alla målrapportsviter. Namnen på dessa variabler ignoreras när kopians mål fastställs. Om motsvarande variabel inte är aktiverad i målrapportsviten misslyckas kopieringen för den variabeln.
+   För Dimensionerna Conversion Variables (eVars) och Traffic (props) går kopian till variabeln med **samma nummer** i målrapportsviten. eVar12 kopieras till exempel till eVar12 i alla målrapportsviter. Namnen på dessa variabler ignoreras när kopians mål fastställs. Om motsvarande variabel inte är aktiverad i målrapportsviten misslyckas kopieringen för den variabeln.
 
    När du kopierar etiketterna för klassificeringar som definierats för en variabel kopieras etiketterna till en klassificering för motsvarande variabel i målrapportsviten (t.ex. eVar7 till eVar7) som har ett namn som är identiskt med den klassificering som kopieras. Annars misslyckas kopian för den klassificeringens etiketter.
 
@@ -76,7 +76,7 @@ Om du vill använda samma inställningar för datasekretess på mer än en rappo
 
 Du kan hämta en CSV-fil som innehåller alla aktuella etikettdefinitioner för alla variabler för de valda rapportsviterna. Vi rekommenderar att ditt juridiska team granskar dina etikettval och det här alternativet underlättar den här granskningen. I stället för att behöva utföra granskningen när du är inloggad i användargränssnittet för datastyrning kan du dela .CSV-filen med dem.
 
-1. Klicka **[!UICONTROL Export CSV]** längst upp till höger och den här dialogrutan visas:
+1. Klicka på **[!UICONTROL Export CSV]** längst upp till höger så visas följande dialogruta:
 
    ![](assets/export_csv.png)
 
@@ -84,4 +84,4 @@ Du kan hämta en CSV-fil som innehåller alla aktuella etikettdefinitioner för 
 
 ## Redigera sekretessetiketter {#edit}
 
-Se [Tilldela eller redigera sekretessetiketter för rapportsviten](/help/admin/admin/c-data-governance/data-labeling/gdpr-setup-reportsuite.md).
+Se [Tilldela eller redigera etiketter för sekretesspolicy för rapportsviten](/help/admin/admin/c-data-governance/data-labeling/gdpr-setup-reportsuite.md).

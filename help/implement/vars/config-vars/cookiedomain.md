@@ -16,14 +16,14 @@ ht-degree: 0%
 >[!IMPORTANT]
 >Den här variabeln har tagits bort. Använd [`trackingServer`](trackingserver.md) i stället.
 
-The `cookieDomain` variabeln anger domänen där AppMeasurementet anger cookies. Du kan använda den här variabeln för att explicit ange cookie-domänen i stället för att använda [`cookieDomainPeriods`](cookiedomainperiods.md) variabel.
+Variabeln `cookieDomain` avgör domänen där AppMeasurementet anger cookies. Du kan använda den här variabeln för att explicit ange cookie-domänen i stället för att använda variabeln [`cookieDomainPeriods`](cookiedomainperiods.md).
 
-Den här variabeln behöver bara användas när **båda** av följande villkor är uppfyllda:
+Den här variabeln behöver bara användas när **båda** av följande villkor uppfylls:
 
-* Om implementeringen använder cookies från första part. Den här variabeln krävs inte för implementeringar som använder en [`trackingServer`](trackingserver.md) värde som innehåller `sc.adobedc.net`.
-* Om din domän har en punkt i suffixet. Till exempel: `example.co.uk` kan använda `cookieDomain` variabel för att explicit ange att cookie-domänen är `example.co.uk` och inte `co.uk`.
+* Om implementeringen använder cookies från första part. Den här variabeln krävs inte för implementeringar som använder ett [`trackingServer`](trackingserver.md)-värde som innehåller `sc.adobedc.net`.
+* Om din domän har en punkt i suffixet. `example.co.uk` kan till exempel använda variabeln `cookieDomain` för att explicit ange att cookie-domänen är `example.co.uk` och inte `co.uk`.
 
-Endast ett litet antal implementeringar har använts för `cookieDomain` variabel, och till och med då, alternativa variabler som [`cookieDomainPeriods`](cookiedomainperiods.md) kan användas i stället.
+Endast ett litet antal implementeringar har använts för variabeln `cookieDomain`, och även då kan alternativa variabler som [`cookieDomainPeriods`](cookiedomainperiods.md) användas i stället.
 
 ## Cookie-domän med Web SDK
 
@@ -35,7 +35,7 @@ Det finns inget dedikerat fält i Adobe Analytics-tillägget som kan använda de
 
 ## s.cookieDomain i AppMeasurementet och den anpassade kodredigeraren för Analytics-tillägget
 
-The `cookieDomain` variabeln är en sträng och ställs in på den domän där du vill lagra cookies.
+Variabeln `cookieDomain` är en sträng och är inställd på domänen som du vill lagra cookies i.
 
 ```js
 s.cookieDomain = "stats.example.com";

@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Timme
 
-Timme [dimension](overview.md) rapporterar timmen då ett givet mätresultat inträffade (avrundat nedåt). Den första dimensionsartikeln är den första timmen i datumintervallet, och den sista dimensionsartikeln är den sista timmen i datumintervallet. Denna dimension är värdefull för trendrapporter eftersom den gör att du kan se mätvärden över tid.
+Timmen [dimension](overview.md) rapporterar timmen för ett givet mätresultat (avrundat nedåt). Den första dimensionsartikeln är den första timmen i datumintervallet, och den sista dimensionsartikeln är den sista timmen i datumintervallet. Denna dimension är värdefull för trendrapporter eftersom den gör att du kan se mätvärden över tid.
 
 ## Fyll den här dimensionen med data
 
@@ -26,5 +26,5 @@ Dimensioner omfattar en viss timme inom rapportens datumintervall tillsammans me
 
 Sommartid är en övning där klockor ställs in en timme framåt på våren och backa en timme i hösten. Om DST används i en rapportsvits tidszon justerar Adobe data efter den timmen.
 
-* **När sommartid börjar**: I mars visar rapporter vanligtvis ett timgap i data där sommartid börjar. Timmen fanns inte, så den ingår inte i datainsamlingen. Observera att en liten mängd data fortfarande kan göra det till den här timmen. Adobe datainsamlingsservrar tar flera sekunder (upp till en minut) att ta hänsyn till DST-justeringar.
-* **När sommartid slutar**: I november visas vanligtvis en dubbel-staplad timme där sommartid tar slut. Timmen inträffade två gånger, så båda timmarna sammanställs i rapporter.
+* **När sommartid börjar**: I mars visas vanligtvis ett timintervall i data där sommartid börjar. Timmen fanns inte, så den ingår inte i datainsamlingen. Observera att en liten mängd data fortfarande kan göra det till den här timmen. Adobe datainsamlingsservrar tar flera sekunder (upp till en minut) att ta hänsyn till DST-justeringar.
+* **När sommartid slutar**: I november visas vanligtvis en dubbel staplad timme där sommartid slutar. Timmen inträffade två gånger, så båda timmarna sammanställs i rapporter.

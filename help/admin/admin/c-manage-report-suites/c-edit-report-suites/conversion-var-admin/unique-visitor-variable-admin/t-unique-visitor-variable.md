@@ -22,5 +22,5 @@ Så här anger du vilken eVar som innehåller besökaridentifieraren:
 1. Klicka på **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]**.
 1. Välj en rapportsvit.
 1. Klicka på **[!UICONTROL Edit Settings]** > **[!UICONTROL Conversion]** > **[!UICONTROL Unique Visitor Variable]**.
-1. Välj **[!UICONTROL Available eVars]** för att aktivera listrutan.
-1. Markera en eVar i listrutan och klicka sedan på **[!UICONTROL Save]**.
+1. Markera kryssrutan **[!UICONTROL Available eVars]** för att aktivera listrutan.
+1. Välj en eVar i listrutan och klicka sedan på **[!UICONTROL Save]**.

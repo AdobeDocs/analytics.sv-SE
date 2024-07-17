@@ -5,14 +5,14 @@ feature: FTP Export
 exl-id: e271b545-0769-4a69-9d7f-dc46bc654737
 source-git-commit: 266cf18050d60f08f7e170c56453d1e1d805cb7b
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '402'
 ht-degree: 2%
 
 ---
 
 # Uppgradering av SFTP-tjänster - frågor och svar
 
-20 september 2022 kommer Adobe Analytics att uppgradera sitt säkra filöverföringsprotokoll [SFTP] tjänster för bättre säkerhet vid filöverföringar. Den här ändringen innebär att vissa SFTP-klientkonfigurationer inte längre stöds. Detta påverkar endast data som skickas till eller hämtas från Adobe Analytics med SFTP. FTP-protokollet påverkas inte. För att undvika avbrott i tjänsten bör du se till att dina SFTP-klienter (kod, verktyg, tjänster) följer de ändringar som beskrivs nedan.
+20 september 2022 kommer Adobe Analytics att uppgradera sina tjänster för Secure File Transfer Protocol [SFTP] för att ge förbättrad säkerhet för filöverföringar. Den här ändringen innebär att vissa SFTP-klientkonfigurationer inte längre stöds. Detta påverkar endast data som skickas till eller hämtas från Adobe Analytics med SFTP. FTP-protokollet påverkas inte. För att undvika avbrott i tjänsten bör du se till att dina SFTP-klienter (kod, verktyg, tjänster) följer de ändringar som beskrivs nedan.
 
 ## Hur kan jag avgöra vilka algoritmer, anslutningstyper och protokoll som används av min organisation just nu?
 
@@ -34,11 +34,12 @@ Följande funktioner erbjuder ett alternativ för att överföra data till Adobe
 
 * [Levererade Data Warehouse-rapporter](https://experienceleague.adobe.com/docs/analytics/export/ftp-and-sftp/set-up-ftp-accounts/ftp-dw-reports.html)
 
-* Dessutom har vissa anpassade implementeringar skapats via [Ingenjörstjänster](https://experienceleague.adobe.com/docs/analytics/export/ftp-and-sftp/set-up-ftp-accounts/ftp-eng-services.html) kan använda SFTP för att utbyta data med Adobe.
+* Dessutom kan vissa anpassade implementeringar som skapats via [ingenjörstjänster](https://experienceleague.adobe.com/docs/analytics/export/ftp-and-sftp/set-up-ftp-accounts/ftp-eng-services.html) använda SFTP för att utbyta data med Adobe.
 
 ## Vilka specifika ändringar kommer att ingå i den här uppdateringen?
 
-Nedan finns en detaljerad lista över vilka anslutningar och algoritmer som kommer att tas bort och vilka som kommer att stödjas:
+Nedan finns en detaljerad lista över vilka anslutningar och algoritmer som kommer att tas bort och vilka som kommer att tas bort
+stöds:
 
 * SFTP-protokollets mac-algoritmer:
 

@@ -18,17 +18,17 @@ Mer information om hur du börjar skapa en begäran och länkar till andra vikti
 
 Så här skapar du en rapport för en begäran om Data Warehouse:
 
-1. Om du inte redan har gjort det börjar du skapa en förfrågan i Adobe Analytics genom att välja **[!UICONTROL Tools]** > **[!UICONTROL Data Warehouse]** > [!UICONTROL **Lägg till**].
+1. Om du inte redan har gjort det börjar du skapa en begäran i Adobe Analytics genom att välja **[!UICONTROL Tools]** > **[!UICONTROL Data Warehouse]** > [!UICONTROL **Lägg till**].
 
    Mer information finns i [Skapa en begäran om Data Warehouse](/help/export/data-warehouse/create-request/t-dw-create-request.md).
 
-1. På sidan Ny Data Warehouse väljer du [!UICONTROL **Bygg din rapport**] -fliken.
+1. På sidan Begäran om ny Data Warehouse väljer du fliken [!UICONTROL **Bygg din rapport**].
 
-   ![Fliken Bygg rapport](assets/build-report.png)
+   ![Bygg rapportflik](assets/build-report.png)
 
 1. Dra segment, mätvärden och mått till verktyget. Rapporten som du skapar avgör vilka data som inkluderas i Datan Warehouse.
 
-1. Fortsätt konfigurera din Data Warehouse-förfrågan på [!UICONTROL **Rapportdestination**] -fliken. Mer information finns i [Konfigurera ett rapportmål för en Data Warehouse-begäran](/help/export/data-warehouse/create-request/dw-request-report-destinations.md).
+1. Fortsätt konfigurera din Data Warehouse-förfrågan på fliken [!UICONTROL **Rapportmål**]. Mer information finns i [Konfigurera ett rapportmål för en Data Warehouse ](/help/export/data-warehouse/create-request/dw-request-report-destinations.md).
 
 <!--
 

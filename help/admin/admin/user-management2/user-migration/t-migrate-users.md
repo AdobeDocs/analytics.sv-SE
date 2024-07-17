@@ -23,7 +23,7 @@ Migrera användare från det äldre användarhanteringssystemet Analytics till A
 
    ![](/help/admin/admin/user-management2/user-migration/assets/migration-progress.png)
 
-   Sidan Migrering av användar-ID har två avsnitt: *Migreringsförlopp* och *Användarinformation*.
+   Migreringssidan för användar-ID har två avsnitt: *Migreringsförlopp* och *Användarinformation*.
 
 ## Migreringsförlopp
 
@@ -41,7 +41,7 @@ Migrera användare från det äldre användarhanteringssystemet Analytics till A
    </tr> 
    <tr> 
       <td colname="col1"> <p>Äldre inloggning inaktiverad </p> </td> 
-      <td colname="col2"> <p>Äldre inloggning med ett företags-ID är inaktiverad. Användare kommer nu åt Experience Cloud via sina Adobe ID eller Enterprise ID. När alla användare har nått den här fasen har migreringen slutförts. </p> <p>I migreringen är den gamla inloggningen inaktiverad. Användarna omdirigeras till <span class="filepath"> experiencecloud.adobe.com</span> och måste logga in med Adobe ID eller Enterprise ID. </p> </td> 
+      <td colname="col2"> <p>Äldre inloggning med ett företags-ID är inaktiverad. Användare kommer nu åt Experience Cloud via sina Adobe ID eller Enterprise ID. När alla användare har nått den här fasen har migreringen slutförts. </p> <p>I migreringen är den gamla inloggningen inaktiverad. Användare omdirigeras till <span class="filepath"> experience.adobe.com</span> och måste logga in med Adobe ID eller Enterprise ID. </p> </td> 
    </tr> 
    </tbody> 
    </table>
@@ -60,24 +60,24 @@ Användarinformation visar användarna i organisationen, avgränsade med domänn
 <tbody> 
 <tr> 
    <td colname="col1"> <p>Domän </p> </td> 
-   <td colname="col2"> <p>Domäner är specifika för e-post-ID:n för den aktuella Analytics-användarbasen. En domän kan bara tas i anspråk av en enda organisation, och bara systemadministratörer kan göra anspråk på en domän. Mer information finns i <a href="https://helpx.adobe.com/enterprise/help/request-access-to-claimed-domain.html"> Begär åtkomst till en domän som tagits i anspråk</a>. </p> </td> 
+   <td colname="col2"> <p>Domäner är specifika för e-post-ID:n för den aktuella Analytics-användarbasen. En domän kan bara tas i anspråk av en enda organisation, och bara systemadministratörer kan göra anspråk på en domän. Mer information finns i <a href="https://helpx.adobe.com/enterprise/help/request-access-to-claimed-domain.html"> Begär åtkomst till en domän som tagits i anspråk </a>. </p> </td> 
 </tr> 
 <tr> 
    <td colname="col1"> <p>Domänen har tagits i anspråk </p> </td> 
-   <td colname="col2"> <p>Om du vill migrera användare som Enterprise ID eller Federated ID måste du vara systemadministratör och göra anspråk på en tillgänglig domän via Adobe Admin Console innan du migrerar användare. Läs mer <a href="https://helpx.adobe.com/enterprise/help/identity.html"> här</a>. </p> <p>Om du inte vill göra anspråk på domäner för Enterprise ID eller Federated ID hoppar du över det här steget och migrerar användare som Adobe ID. Läs mer om ID-typer <a href="https://helpx.adobe.com/enterprise/help/identity.html"> här</a>. </p> </td> 
+   <td colname="col2"> <p>Om du vill migrera användare som Enterprise ID eller Federated ID måste du vara systemadministratör och göra anspråk på en tillgänglig domän via Adobe Admin Console innan du migrerar användare. Läs mer <a href="https://helpx.adobe.com/enterprise/help/identity.html"> här</a>. </p> <p>Om du inte vill göra anspråk på domäner för Enterprise ID eller Federated ID hoppar du över det här steget och migrerar användare som Adobe ID. Läs mer om ID-typerna <a href="https://helpx.adobe.com/enterprise/help/identity.html"> här</a>. </p> </td> 
 </tr> 
 </tbody> 
 </table>
 
-1. Leta reda på domänen som innehåller de användar-ID som du vill migrera, under **[!UICONTROL Requiring Migration]**, klicka **[!UICONTROL Select Users]**.
-1. På [!DNL Users] väljer du de användare du vill migrera och klickar sedan på **[!UICONTROL Migrate]**.
+1. Leta reda på domänen som innehåller de användar-ID som du vill migrera och klicka sedan på **[!UICONTROL Select Users]** under **[!UICONTROL Requiring Migration]**.
+1. På sidan [!DNL Users] väljer du de användare som du vill migrera och klickar sedan på **[!UICONTROL Migrate]**.
 
-   När du klickar **[!UICONTROL Migrate]**, får användarna en inbjudan (migreringen initierad) och måste acceptera den. Den här åtgärden flyttar användar-ID:t till migreringen slutförd. Du kan sedan stänga av deras tidigare åtkomst till `[!DNL my.omniture.com].`
+   När du klickar på **[!UICONTROL Migrate]** får användarna en inbjudan (migreringen initierad) och måste acceptera den. Den här åtgärden flyttar användar-ID:t till migreringen slutförd. Du kan sedan inaktivera deras tidigare åtkomst till `[!DNL my.omniture.com].`
 
    ![](/help/admin/admin/user-management2/user-migration/assets/user-info.png)
 
 1. Ange vilken typ av ID du vill migrera användarna (Adobe ID eller Enterprise ID)
 
-   Efter migrering av användare ändras statusen under kolumnmigreringsstatusen från *`Not Initiated`* till *`Migrated`*.
+   När du har migrerat användare ändras statusen under kolumnmigreringsstatusen från *`Not Initiated`* till *`Migrated`*.
 
-   If *`Failed`* visas, hovra över ikonen om du vill ha en beskrivning av varför migreringen misslyckades.
+   Om *`Failed`* visas håller du pekaren över ikonen för att få en beskrivning av varför migreringen misslyckades.

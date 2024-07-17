@@ -6,13 +6,13 @@ exl-id: b84c895d-e678-47a1-9e41-500970e0a80c
 source-git-commit: d095628e94a45221815b1d08e35132de09f5ed8f
 workflow-type: tm+mt
 source-wordcount: '117'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
 # Sökningar
 
-Sökningar [mått](overview.md) visar antalet träffar som matchar extern sökningsidentifiering i Adobe. Det här måttet är användbart när du vill titta på dimensionsobjekt som inte är sökningsdimensioner och se hur de bidrog till sökmotortrafiken.
+[Måttet ](overview.md) för sökningar visar antalet träffar som matchar Adobe externa sökidentifiering. Det här måttet är användbart när du vill titta på dimensionsobjekt som inte är sökningsdimensioner och se hur de bidrog till sökmotortrafiken.
 
 ## Hur det här måttet beräknas
 

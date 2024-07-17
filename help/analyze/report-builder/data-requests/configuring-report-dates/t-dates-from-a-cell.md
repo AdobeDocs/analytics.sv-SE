@@ -18,8 +18,8 @@ Du kan ange ett datumintervall genom att markera celler i ett kalkylblad som inn
 
 **Konfigurera datum från en cell**
 
-1. På [!UICONTROL Request Wizard: Step 1], markera **[!UICONTROL Dates From Cell]**.
-1. Ange cellreferenser i dialogrutan **[!UICONTROL From]** och **[!UICONTROL To]** eller klicka på väljaren och markera cellerna som innehåller förfrågningarna med start- och slutdatum.
+1. Välj **[!UICONTROL Dates From Cell]** på [!UICONTROL Request Wizard: Step 1].
+1. Ange cellreferenser i fälten **[!UICONTROL From]** och **[!UICONTROL To]**, eller klicka på väljaren och markera cellerna som innehåller förfrågningarna med start- och slutdatumen.
 
    Skapa till exempel en Report Builder-begäran med datumintervallet inställt på&quot;igår&quot; och skriv ut begärandedatumet i samma cell som&quot;today()-1&quot;.
 

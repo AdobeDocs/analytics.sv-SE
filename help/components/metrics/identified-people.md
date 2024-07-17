@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Identifierade personer
 
-Identifierade personer [mått](overview.md) är en [Enhetsövergripande analys](../cda/overview.md) mått som räknar antalet besökare som identifieras av CDA.
+Identifierade personer [är ett ](overview.md)-mått för [Enhetsanalys](../cda/overview.md) som räknar antalet besökare som identifieras av CDA.
 
 ## Hur det här måttet beräknas
 

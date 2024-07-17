@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Stöd för permanenta cookies
 
-&quot;Persistent cookie support&quot; [dimension](overview.md) visar om träffen använde en besökaridentifierare som härstammar från en beständig källa. Den vanligaste beständiga källan är från en cookie, men kan även använda mobilrubriker och andra källor.
+Det permanenta cookie-stödet [dimension](overview.md) visar om träffen använde en besökaridentifierare som härstammar från en beständig källa. Den vanligaste beständiga källan är från en cookie, men kan även använda mobilrubriker och andra källor.
 
 ## Fyll den här dimensionen med data
 
@@ -20,10 +20,10 @@ Adobe bestämmer värdet för den här dimensionsserversidan baserat på källan
 
 ## Dimensioner
 
-* **`Enabled`**: Träffens besökaridentifierare kommer från en källa som vanligtvis består. De vanligaste exemplen är `aid`, `fid`, eller `mid` frågesträngsparametrar när de hämtar sina värden från en cookie.
-* **`Disabled`**: Träffens besökaridentifierare kom från en källa som Adobe inte känner igen som beständig, till exempel IP + användaragentsträng. Dimensionsobjektet innehåller även anpassade besökar-ID:n som använder [`visitorID`](/help/implement/vars/config-vars/visitorid.md) variabel.
+* **`Enabled`**: Träffens besökaridentifierare kommer från en källa som vanligtvis kvarstår. De vanligaste exemplen är `aid`, `fid` eller `mid` frågesträngsparametrar, eftersom de hämtar sina värden från en cookie.
+* **`Disabled`**: Besökaridentifieraren för träffen kom från en källa som Adobe inte känner igen som beständig, till exempel IP + användaragentsträng. Det här dimensionsobjektet innehåller även anpassade besökar-ID:n som använder variabeln [`visitorID`](/help/implement/vars/config-vars/visitorid.md).
 
 ## Skillnad mellan &#39;Stöd för cookies&#39; och &#39;Stöd för beständig cookie&#39;
 
 * **Cookie-stöd**: AppMeasurementet försöker ange en allmän cookie. Dimensionsobjektet baseras på om cookien har angetts.
-* **Stöd för permanenta cookies**: Dimensionsobjektet baseras på om träffens identifierare kommer från en beständig källa, till exempel en cookie.
+* **Stöd för beständig cookie**: Dimensionsobjektet baseras på om träffens identifierare kommer från en beständig källa, till exempel en cookie.

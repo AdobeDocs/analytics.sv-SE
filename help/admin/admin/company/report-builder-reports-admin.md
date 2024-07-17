@@ -17,4 +17,4 @@ Hantera licenser som tilldelats användare av Report Builder.
 
 Varje Report Builder-licens som tilldelats en användare tilldelas automatiskt tio schemalagda aktiviteter. Det här antalet uppgifter kan justeras och omfördelas. Schemalagda aktiviteter får inte överskrida antalet tillgängliga aktiviteter för varje användare. Överschemalagda aktiviteter körs inte.
 
-Du kan ge Report Builder åtkomst till alla [!DNL Analytics] användare genom att hantera produktprofiler i [Adobe Admin Console](/help/admin/admin-console/home.md).
+Du kan ge Report Builder åtkomst till alla [!DNL Analytics]-användare genom att hantera produktprofiler i [Adobe Admin Console](/help/admin/admin-console/home.md).

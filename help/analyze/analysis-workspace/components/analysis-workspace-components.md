@@ -1,43 +1,43 @@
 ---
 description: Komponenterna i Analysis Workspace består av mått, mått, segment och datumintervall som du kan dra och släppa i ett projekt.
-title: Komponenter – översikt
+title: Komponenter - översikt
 feature: Components
 role: User, Admin
 exl-id: e2c98c77-64ee-4349-956a-3ab092e36017
 source-git-commit: f66cc6252ecd54c143c08be1e0e7e5bf90cc42e9
 workflow-type: tm+mt
-source-wordcount: '1143'
-ht-degree: 3%
+source-wordcount: '996'
+ht-degree: 2%
 
 ---
 
-# Komponenter – översikt
+# Komponenter - översikt
 
 Komponenterna i Analysis Workspace består av mått, mått, segment och datumintervall som du kan dra och släppa i ett projekt.
 
-Klicka på knappen **[!UICONTROL Components]** ikonen i den vänstra listen. Du kan växla mellan [Paneler](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html), [Visualiseringar](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html)och komponenter från den vänstra listen eller genom att använda [snabbtangenter](/help/analyze/analysis-workspace/build-workspace-project/fa-shortcut-keys.md).
+Du öppnar komponentmenyn genom att klicka på ikonen **[!UICONTROL Components]** i den vänstra listen. Du kan växla mellan [paneler](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html), [Visualiseringar](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html) och komponenter från ikonerna för den vänstra listen eller genom att använda [snabbtangenter](/help/analyze/analysis-workspace/build-workspace-project/fa-shortcut-keys.md).
 
 ![](assets/component-overview.png)
 
-Du kan även justera [Visa densitetsinställningar](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/view-density.html) för projektet att se fler värden i den vänstra listen samtidigt genom att gå till **[!UICONTROL Project > Project Info & Settings > View Density]**.
+Du kan också justera inställningarna för [Visa densitet](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/view-density.html) för projektet om du vill visa fler värden i den vänstra listen samtidigt genom att gå till **[!UICONTROL Project > Project Info & Settings > View Density]**.
 
 ## Mått {#dimensions}
 
 [**Dimensioner**](https://experienceleague.adobe.com/docs/analytics/components/dimensions/overview.html) är textattribut som beskriver besökarens beteende och kan visas, delas upp och jämföras i din analys. De finns i den vänstra delen av komponentraden (den orange delen) och används vanligtvis som rader i en tabell.
 
-Exempel på dimensioner är [!UICONTROL Page Name], [!UICONTROL Marketing Channels], [!UICONTROL Device Type]och [!UICONTROL Products]. Dimensioner tillhandahålls av Adobe och hämtas via din anpassade implementering (eVar, utkast, klassificeringar osv.).
+Exempel på dimensioner är [!UICONTROL Page Name], [!UICONTROL Marketing Channels], [!UICONTROL Device Type] och [!UICONTROL Products]. Dimensioner tillhandahålls av Adobe och hämtas via din anpassade implementering (eVar, utkast, klassificeringar osv.).
 
-Varje dimension innehåller också **dimensionsposter** i den. Du hittar objekt i Dimensionen i den vänstra komponentlisten genom att klicka på högerpilen bredvid ett dimensionsnamn (objekten är gula).
+Varje dimension innehåller även **dimensionsobjekt**. Du hittar objekt i Dimensionen i den vänstra komponentlisten genom att klicka på högerpilen bredvid ett dimensionsnamn (objekten är gula).
 
-Exempel på dimensionsobjekt är [!UICONTROL Homepage] (inom [!UICONTROL Page] dimension), [!UICONTROL Paid Search] (inom [!UICONTROL Marketing Channel] dimension), [!UICONTROL Tablet] (inom [!UICONTROL Mobile Device Type] dimension) och så vidare.
+Exempel på dimensionsobjekt är [!UICONTROL Homepage] (inom dimensionen [!UICONTROL Page]), [!UICONTROL Paid Search] (inom dimensionen [!UICONTROL Marketing Channel]), [!UICONTROL Tablet] (inom dimensionen [!UICONTROL Mobile Device Type]) och så vidare.
 
 ![](assets/dimensions.png)
 
 ## Mätvärden {#metrics}
 
-[**Mått**](https://experienceleague.adobe.com/docs/analytics/components/metrics/overview.html) är kvantitativa mått på besökares beteende. De finns i den vänstra delen av komponentraden (grön del) och används vanligtvis som kolumner i en tabell.
+[**Mätvärden**](https://experienceleague.adobe.com/docs/analytics/components/metrics/overview.html) är kvantitativa mått på besökares beteende. De finns i den vänstra komponenträlen (den gröna delen) och används vanligtvis som kolumner i en tabell.
 
-Exempel på mätvärden är [!UICONTROL Page views], [!UICONTROL Visits], [!UICONTROL Orders], [!UICONTROL Average Time spent]och [!UICONTROL Revenue/Order]. Mätvärden tillhandahålls av Adobe eller hämtas via din anpassade implementering ([!UICONTROL Success events]), eller skapat med [Bygg beräknade mätvärden](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html).
+Exempel på mätvärden är [!UICONTROL Page views], [!UICONTROL Visits], [!UICONTROL Orders], [!UICONTROL Average Time spent] och [!UICONTROL Revenue/Order]. Mätvärden tillhandahålls av Adobe, hämtas via din anpassade implementering ([!UICONTROL Success events]) eller skapas med [verktyget för beräkning av mätvärden](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html).
 
 ![](assets/metrics.png)
 
@@ -45,17 +45,17 @@ Exempel på mätvärden är [!UICONTROL Page views], [!UICONTROL Visits], [!UICO
 
 [**Segment**](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/components/segments/t-freeform-project-segment.html) är målgruppsfilter som tillämpas på din analys. De finns i den vänstra komponentlisten (blå sektion) och används vanligtvis längst upp på en panel eller ovanför måttkolumnerna i en tabell.
 
-Exempel på segment är [!UICONTROL Mobile Device Visitors], [!UICONTROL Visits from Email]och [!UICONTROL Authenticated Hits]. Segmenten tillhandahålls av Adobe eller skapas i [panelens dropzon](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html)eller som skapats med [Segmentbyggare](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-build.html).
+Exempel på segment är [!UICONTROL Mobile Device Visitors], [!UICONTROL Visits from Email] och [!UICONTROL Authenticated Hits]. Segment tillhandahålls av Adobe, skapas i [panelens dropzone](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html) eller skapas med [Segment builder](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-build.html).
 
 ![](assets/segments.png)
 
 ## Datumintervall {#date-ranges}
 
-[**Datumintervall**](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/components/calendar-date-ranges/calendar.html) är det datumintervall du utför analysen över. De finns i den vänstra komponentspåret (lila avsnitt) och används vanligtvis i kalendern för varje panel.
+[**Datumintervall**](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/components/calendar-date-ranges/calendar.html) är det datumintervall som du utför analysen på. De finns i den vänstra komponentspåret (lila avsnitt) och används vanligtvis i kalendern för varje panel.
 
 Du kan göra datumintervallets komponenter relativa till panelkalendern. Mer information finns i [Om relativa paneldatumintervall](/help/analyze/analysis-workspace/components/calendar-date-ranges/calendar.md#relative-panel-dates).
 
-Exempel på datumintervall är juli 2019, [!UICONTROL Last 4 weeks]och [!UICONTROL This month]. Datumintervall tillhandahålls av Adobe, används i [panelkalender](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html)eller som skapats med [Bygg datumintervall](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/components/calendar-date-ranges/custom-date-ranges.html).
+Exempel på datumintervall är juli 2019, [!UICONTROL Last 4 weeks] och [!UICONTROL This month]. Datumintervall tillhandahålls av Adobe, används i [panelkalendern](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html) eller skapas med [datumintervallverktyget](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/components/calendar-date-ranges/custom-date-ranges.html).
 
 ![](assets/date-ranges.png)
 
@@ -68,7 +68,7 @@ Du kan hantera komponenter direkt i den vänstra listen.
 
    eller
 
-   Markera en komponent och markera sedan **Åtgärd** (3 punkter) längst upp i komponentlistan.
+   Markera en komponent och välj sedan ikonen **Åtgärd** (3 punkter) längst upp i komponentlistan.
 
    >[!TIP]
    >
@@ -85,7 +85,7 @@ Du kan hantera komponenter direkt i den vänstra listen.
    | [!UICONTROL **Dela**] | Dela komponenter med användare i organisationen. Det här alternativet är endast tillgängligt för anpassade komponenter, till exempel segment eller beräknade värden. |
    | [!UICONTROL **Ta bort**] | Ta bort komponenter som du inte längre behöver. Det här alternativet är endast tillgängligt för anpassade komponenter, till exempel segment eller beräknade värden. |
 
-Anpassade komponenter kan också hanteras med respektive komponenthanterare. Till exempel [Segmenthanteraren](/help/components/segmentation/segmentation-workflow/seg-manage.md).
+Anpassade komponenter kan också hanteras med respektive komponenthanterare. Exempel: [Segmenthanteraren](/help/components/segmentation/segmentation-workflow/seg-manage.md).
 
 ## Söka, filtrera och sortera komponentlistan
 
@@ -93,19 +93,19 @@ Du kan söka efter, filtrera och sortera komponentlistan i den vänstra listen i
 
 ### Sök i komponentlistan
 
-1. Välj **Komponenter** icon ![Ikon för komponenter](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Curate_18_N.svg) till vänster.
+1. Välj ikonen **Komponenter** ![Komponenter](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Curate_18_N.svg) i den vänstra listen.
 
 2. I sökfältet börjar du skriva namnet på komponenten som du vill använda i ditt projekt.
 
-   Komponenttypen kan identifieras med både färg och ikon. **Dimensioner** ![Dimension, ikon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) är orange, **Segment** ![Segmentikon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) är blå, **Datumintervall** ![Ikon för datumintervall](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) är lila, och **Mått** ![Mätningsikon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) är gröna. Ikonen Adobe anger antingen en mall för beräknade mätvärden eller en segmentmall och räknesymbolen ![Beräkningsikon](assets/calculated-metric-icon-created.png) har angett ett beräknat mått som har skapats av en Analytics-administratör i organisationen.
+   Komponenttypen kan identifieras med både färg och ikon. **Dimensioner** ![Dimension-ikonen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) är orange, **Segment** ![Segmentikonen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) är blå, **Datumintervall** ![Datumintervallikon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) är lila och **Mätvärden** ![Målikon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) är gröna. Ikonen Adobe anger antingen en beräknad mätmall eller en segmentmall och räkningsikonen ![Beräkningsikonen](assets/calculated-metric-icon-created.png) indikerar ett beräknat mätresultat som har skapats av en Analysadministratör i din organisation.
 
 3. Markera komponenten när den visas i listrutan.
 
 ### Filtrera komponentlistan
 
-1. Välj **Komponenter** icon ![Ikon för komponenter](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Curate_18_N.svg) till vänster.
+1. Välj ikonen **Komponenter** ![Komponenter](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Curate_18_N.svg) i den vänstra listen.
 
-2. Välj **Filter** icon ![Ikon för dataordlistefilter](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg).
+2. Välj ikonen **Filter** ![Dataglexikonfilter ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) .
 
    eller
 
@@ -113,10 +113,10 @@ Du kan söka efter, filtrera och sortera komponentlistan i den vänstra listen i
 
 3. Välj något av följande filteralternativ för att filtrera komponentlistan:
 
-   | Alternativ |  -funktion |
+   | Alternativ | Funktion |
    |---------|----------|
    | [!UICONTROL **Godkänd**] | Visa endast komponenter som har markerats som Godkänd av en administratör. |
-   | [!UICONTROL **Favoriter**] | Visa endast komponenter som finns i din favoritlista. Mer information om hur du lägger till komponenter i din favoritlista finns i [Komponenter - översikt](/help/analyze/analysis-workspace/components/analysis-workspace-components.md). |
+   | [!UICONTROL **Favoriter**] | Visa endast komponenter som finns i din favoritlista. Mer information om hur du lägger till komponenter i din favoritlista finns i [Komponentöversikt](/help/analyze/analysis-workspace/components/analysis-workspace-components.md). |
    | [!UICONTROL **Dimensioner**] | Visa endast komponenter som är Dimensioner. |
    | [!UICONTROL **Mätvärden**] | Visa endast komponenter som är mätvärden. |
    | [!UICONTROL **Segment**] | Visa endast komponenter som är segment. <!--this is Filters in Customer Journey Analytics--> |
@@ -130,8 +130,8 @@ Du kan söka efter, filtrera och sortera komponentlistan i den vänstra listen i
 
 1. (Valfritt) Tillämpa eventuella filter på komponentlistan enligt beskrivningen i [Filtrera komponentlistan](#filter-the-component-list).
 
-2. Välj **Komponenter** icon ![Ikon för komponenter](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Curate_18_N.svg) till vänster.
+2. Välj ikonen **Komponenter** ![Komponenter](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Curate_18_N.svg) i den vänstra listen.
 
-3. Välj **Sortera** icon ![Ikon för att sortera komponenter](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderDown_18_N.svg)väljer du sedan något av följande filteralternativ för att sortera komponentlistan:
+3. Välj ikonen **Sortera** ![Sortera komponenter](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderDown_18_N.svg) och välj sedan något av följande filteralternativ för att sortera komponentlistan:
 
    {{components-sort-options}}

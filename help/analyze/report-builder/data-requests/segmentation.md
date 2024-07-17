@@ -25,7 +25,7 @@ Report Builder har en segmenteringspanel i steg 1 i begärandeguiden där du kan
 >
 >Om du vill lägga till eller redigera segment startar segmentgränssnittet i Report Builder segmentet segmentverktyget i Analytics i ett fönster i Microsoft Internet Explorer. Din Report Builder-session förblir aktiv. Andra webbläsare än Internet Explorer stöds inte för den här åtgärden.
 
-1. Klicka på i segmentpanelen i steg 1 i begärandeguiden **[!UICONTROL Add]**.
+1. Klicka på **[!UICONTROL Add]** på segmentpanelen i steg 1 i begärandeguiden.
 1. Ett Internet Explorer-fönster öppnas som öppnar gränssnittet i segmentbyggaren i Analytics. Mer information om hur du skapar segment finns i [Analyssegmentering](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-home.html).
 1. När du har definierat och sparat segmentet går du tillbaka till Begärandeguiden.
 1. Klicka på ikonen Uppdatera för att uppdatera segmentlistan.
@@ -43,7 +43,7 @@ Du kan ha specifika kombinationer av rapportdimensioner som du vill omvandla til
 
    ![Skärmbild som visar Skapa kontextsegment i valda och tillgängliga behållaralternativ.](assets/seg_in_context.png)
 
-   Mer information om behållare finns i [Segmenteringshandbok](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-home.html).
+   Mer information om behållare finns i [Segmenteringshandboken](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-home.html).
 
 1. Segment Builder-gränssnittet kommer nu att startas i Internet Explorer. Användargränssnittet för segmentbyggaren initieras med den behållare och det filter som du angav.
 1. När du har lagt till ett namn och en beskrivning i segmentet sparar du det.
@@ -56,7 +56,7 @@ Alla segment som har skapats i Rapporter och analyser (som nu slutar gälla), Re
 
 Du kan tillämpa ett eller flera segment på en viss begäran. Detta inkluderar sekventiella segment.
 
-1. Gå till **[!UICONTROL Segment]** nedrullningsbar lista och klicka på den lilla nedåtpilen i **[!UICONTROL Choose Segment]** om du vill visa alla segment.
+1. Gå till listrutan **[!UICONTROL Segment]** och klicka på den lilla nedåtpilen i rutan **[!UICONTROL Choose Segment]** för att visa alla segment.
 
 1. Kontrollera vilka segment du vill använda.
 
@@ -68,15 +68,15 @@ Du kan tillämpa ett eller flera segment på en viss begäran. Detta inkluderar 
 
 ## Filtrera segment {#filter}
 
-**Filter** segment genom att klicka på filterikonen:  ![Filterikon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg)
+**Filtrera** segment genom att klicka på filterikonen: ![Filterikon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg)
 
 Tillgängliga filter:
 
 | Filternamn | Beskrivning |
 |---|---|
-| Taggar | Gör att du kan filtrera segment med specifika taggar. Observera att taggfilter använder operatorn AND. Om du markerar två taggar visas de segment i den högra rutan som har taggats med **båda** -taggar. |
-| Ägare | Gör att du kan filtrera segment efter ägare. Observera att ägarfilter använder operatorn OR. Om du markerar två ägare visar den högra rutan segment som ägs av **antingen** ägare. |
-| Andra filter > Endast *rapportsvitens namn* | Om du använder Endast *rapportsvitens namn*&quot; i Segment Builder i Adobe Analytics och visa sedan det avancerade filtret i [!DNL Report Builder]visas bara segmentet för den valda rapportsviten. |
+| Taggar | Gör att du kan filtrera segment med specifika taggar. Observera att taggfilter använder operatorn AND. Om du markerar två taggar visar den högra rutan segment som har taggats med **båda** taggar. |
+| Ägare | Gör att du kan filtrera segment efter ägare. Observera att ägarfilter använder operatorn OR. Om du markerar två ägare visas segment som ägs av **endera**-ägaren i den högra rutan. |
+| Andra filter > Endast *rapportsvitens namn* | Om du använder filtret&quot;Endast *rapportsvitens namn*&quot; i segmentbyggaren i Adobe Analytics och sedan visar det avancerade filtret i [!DNL Report Builder], visas bara segmentet för den valda rapportsviten i filtret Avancerat. |
 | Andra filter > Mitt | Visar alla segment som du äger. |
 | Andra filter > Delat med mig | Visar alla segment som andra delar med dig. |
 | Andra filter > Favoriter | Visar alla segment som du har markerat som Favoriter. |
@@ -86,26 +86,26 @@ Tillgängliga filter:
 
 Genom att lägga till en segmentkontroll kan du växla segment från en arbetsbok i stället för att behöva gå till Begärandeguiden.
 
-1. Klicka på ikonen Kontroll ![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) bredvid segmentlistrutan.
+1. Klicka på kontrollikonen ![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) bredvid segmentlistrutan.
 
 1. Markera alla segment som du vill ska visas i segmentkontrollen eller markera **[!UICONTROL Select All]**.
 
    ![Skärmbild av dialogrutan Kontrollinställningar med alla inställningar markerade.](assets/seg_control.png)
 
-1. Lägg märke till alternativet **[!UICONTROL Automatically refresh linked requests upon item selection]**.
+1. Observera alternativet **[!UICONTROL Automatically refresh linked requests upon item selection]**.
 
    * Om det här alternativet är markerat uppdateras alla begäranden som använder den här kontrollen.
    * Om den inte är markerad uppdateras de associerade parametrarna för begäran, men förfrågningarna uppdateras inte.
 
 1. Ange segmentkontrollens övre vänstra cellplacering.
 
-1. Klicka **[!UICONTROL OK]** och segmentkontrollen visas på den angivna platsen.
+1. Klicka på **[!UICONTROL OK]** så visas segmentkontrollen på den angivna platsen.
 
    ![Skärmbild med listrutan Välj segment.](assets/seg_control2.png)
 
 ## Uppdatera listan med segment {#refresh}
 
-När du vill lägga till ett nytt segment eller redigera ett befintligt bör du klicka på ikonen Uppdatera ![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg) om du vill uppdatera den cachelagrade listan med segment.
+När du lägger till ett nytt segment eller redigerar ett befintligt bör du klicka på uppdateringsikonen ![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg) för att uppdatera den cachelagrade listan med segment.
 
 ## Hantera segment över förfrågningar {#manage}
 

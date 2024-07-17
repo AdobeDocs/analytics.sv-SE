@@ -1,22 +1,22 @@
 ---
-description: Du kan inte kombinera klassificeringsregelverktyget med underklassificeringar.
-title: Underklassificeringar och Rule Builder
+description: Du kan inte kombinera klassificeringsregelbyggaren med underklassificeringar.
+title: Underklassificeringar och regelbyggaren
 feature: Classifications
 exl-id: 745d6149-bcb1-48ad-abbe-63a9d009fa27
 source-git-commit: e7346b11a7d3eb4c18ec02df6c8a07574e02a2b4
 workflow-type: tm+mt
-source-wordcount: '413'
-ht-degree: 3%
+source-wordcount: '405'
+ht-degree: 0%
 
 ---
 
-# Underklassificeringar och Rule Builder
+# Underklassificeringar och regelbyggaren
 
 Du kan kombinera klassificeringsregelbyggaren med underklassificeringar om du ser till att alla underklassificeringar har ett överordnat värde.
 
 Genom att kombinera klassificeringsregelbyggaren med underklassificeringar kan klassificeringshanteringen förenklas och antalet regler som krävs minskas. Du kanske vill göra detta om spårningskoden består av koder som du vill klassificera separat.
 
-Se [Underklassificeringar](/help/components/classifications/c-sub-classifications.md) om du vill ha information om underklassificeringar.
+Mer information om underklassificeringar finns i [Underklassificeringar](/help/components/classifications/c-sub-classifications.md).
 
 ## Exempel
 
@@ -24,11 +24,11 @@ Anta följande spårningskod:
 
 `channel:broad_campaign:creative`
 
-Med en klassificeringshierarki kan du tillämpa en klassificering på en klassificering (kallas *`sub-classification`*). Det innebär att du kan använda importören som en relationsdatabas med flera tabeller. En tabell mappar fullständiga spårningskoder till nycklar och en annan mappar dessa nycklar till andra tabeller.
+Med en klassificeringshierarki kan du tillämpa en klassificering på en klassificering (kallad *`sub-classification`*). Det innebär att du kan använda importören som en relationsdatabas med flera tabeller. En tabell mappar fullständiga spårningskoder till nycklar och en annan mappar dessa nycklar till andra tabeller.
 
 ![](assets/sub_class_table.png)
 
-När du har den här strukturen på plats kan du använda [Klassificeringsregelverktyget](/help/components/classifications/crb/classification-rule-builder.md) om du vill överföra små filer som bara uppdaterar uppslagstabellerna (de gröna och röda tabellerna i föregående bild). Sedan kan du använda regelbyggaren för att hålla huvudklassificeringstabellen uppdaterad.
+När du har den här strukturen på plats kan du använda [klassificeringsregelverktyget](/help/components/classifications/crb/classification-rule-builder.md) för att överföra små filer som bara uppdaterar uppslagstabellerna (de gröna och röda tabellerna i föregående bild). Sedan kan du använda regelbyggaren för att hålla huvudklassificeringstabellen uppdaterad.
 
 I följande uppgift beskrivs hur du gör detta.
 
@@ -38,7 +38,7 @@ Exempel på steg som beskriver hur du kan överföra underklassificeringar med r
 
 >[!NOTE]
 >
->I dessa steg beskrivs hur du slutför de användningsfall som beskrivs i [Underklassificeringar och regelbyggaren](/help/components/classifications/crb/sub-classification-rule-builder.md).
+>De här stegen beskriver hur du slutför det användningsfall som beskrivs i [Underklassificeringar och Regelbyggaren](/help/components/classifications/crb/sub-classification-rule-builder.md).
 
 1. Skapa klassificeringar och underklassificeringar i [Klassificeringshanteraren](https://experienceleague.adobe.com/docs/analytics/components/classifications/c-classifications.html).
 
@@ -46,14 +46,14 @@ Exempel på steg som beskriver hur du kan överföra underklassificeringar med r
 
    ![Steginformation](/help/admin/admin/assets/sub_class_create.png)
 
-1. I [Klassificeringsregelverktyget](/help/components/classifications/crb/classification-rule-builder.md), klassificera underklassificeringsnyckeln från den ursprungliga spårningskoden.
+1. I [Klassificeringsregelbyggaren](/help/components/classifications/crb/classification-rule-builder.md) kan du klassificera underklassificeringsnyckeln från den ursprungliga spårningskoden.
 
-   Detta utförs med ett reguljärt uttryck. I det här exemplet ska regeln fyllas i *`Broad Campaign code`* använder det här reguljära uttrycket:
+   Du utför detta med ett reguljärt uttryck. I det här exemplet använder regeln för att fylla i *`Broad Campaign code`* det här reguljära uttrycket:
 
    | `#` | Regeltyp | Matcha | Ange klassificering | Till |
    |---|---|---|---|---|
-   |  | Reguljärt uttryck | `[^\:]:([^\:]):([^\:]`) | Kampanjkod | `$1` |
-   |  | Reguljärt uttryck | `[^\:]:([^\:]):([^\:]`) | Kreativ kod | `$2` |
+   |   | Reguljärt uttryck | `[^\:]:([^\:]):([^\:]`) | Kampanjkod | `$1` |
+   |   | Reguljärt uttryck | `[^\:]:([^\:]):([^\:]`) | Kreativ kod | `$2` |
 
    >[!NOTE]
    >
@@ -65,13 +65,13 @@ Exempel på steg som beskriver hur du kan överföra underklassificeringar med r
 
    Exempel:
 
-   | Nyckel | Kanal | Kampanjkod | Kod&amp;hatt för stor kampanj;Kampanjtyp | Kod&amp;hatt för stor kampanj;Campaign Director | ... |
+   | Nyckel | Kanal | Kampanjkod | &amp;Kampanjkod;Hatt;Kampanjtyp | &amp;Kampanjkod;Hatt;Campaign Director | ... |
    |---|---|---|---|---|---|
    | &#42; |  | 111 | Varumärke | Suzanne |  |
    | &#42; |  | 222 | Varumärke | Frank |  |
 
 1. Om du vill underhålla uppslagstabellerna överför du en liten fil (som visas ovan).
 
-   Du överför den här filen, till exempel när en ny *`Broad Campaign code`* införs. Den här filen gäller för tidigare klassificerade värden. Om du skapar en ny underklassificering (till exempel *`Creative Theme`* som underklassificering av *`Creative code`*) kan du bara överföra underklassificeringsfilen, i stället för hela klassificeringsfilen.
+   Du skulle till exempel överföra den här filen när en ny *`Broad Campaign code`* introduceras. Den här filen gäller för tidigare klassificerade värden. Om du skapar en ny underklassificering (till exempel *`Creative Theme`* som en underklassificering av *`Creative code`*) överför du bara underklassificeringsfilen, i stället för hela klassificeringsfilen.
 
-   För rapportering av dessa underklassificeringar fungerar exakt som klassificeringar på den översta nivån. På så sätt minskar den handläggningsbörda som krävs för att använda dem.-->
+   För rapportering av dessa underklassificeringar fungerar exakt som klassificeringar på den översta nivån. På så sätt minskar den handläggningsbörda som krävs för att använda dem.—>

@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Vissa brandväggskonfigurationer blockerar IP-adresser som kommer från Adobe datainsamlingsservrar eller servrar som är ansvariga för dataåtkomst. Du kan använda den här listan med intervall för att ändra organisationens brandväggsinställningar så att åtkomst tillåts och data skickas inifrån organisationen.
 
-Alla IP-adresser som används av Adobe Analytics ingår i [IP-adresser som används av Adobe Experience Cloud](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/ip-addresses), med undantag för tilläggspaketet för Kina-prestandaoptimering.
+Alla IP-adresser som används av Adobe Analytics är en del av [IP-adresser som används av Adobe Experience Cloud](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/ip-addresses), med undantag för tilläggspaketet för Kina-prestandaoptimering.
 
 ## IP-adresser för prestandaoptimering i Kina
 

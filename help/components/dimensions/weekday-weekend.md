@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Veckodag/vecka
 
-Veckodag/helg [dimension](overview.md) ger information om huruvida träffen inträffade under en veckodag (måndag-fredag) eller en helg (lördag-söndag). Tid för träffen baseras på [rapportsvitens tidszon](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/general-acct-settings-admin.md).
+Dimensionen ](overview.md) för veckodag/helg [ger information om huruvida träffen inträffade under en veckodag (måndag-fredag) eller helg (lördag-söndag). Tid för träffen baseras på [rapportsvitens tidszon](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/general-acct-settings-admin.md).
 
 ## Fyll den här dimensionen med data
 
@@ -20,4 +20,4 @@ Den här dimensionen fungerar som den ska för alla implementeringar. Om en rapp
 
 ## Dimensioner
 
-Den här dimensionen innehåller alltid exakt två dimensionsobjekt: `"Weekday"` och `"Weekend"`. Dimensionsartikeln `"Weekday"` gäller för alla träffar måndag till fredag, medan dimensionsartikeln `"Weekend"` gäller för alla träffar på lördag och söndag.
+Den här dimensionen innehåller alltid exakt två dimensionsobjekt: `"Weekday"` och `"Weekend"`. Dimensionsobjektet `"Weekday"` gäller för alla träffar måndag till fredag, medan dimensionsobjektet `"Weekend"` gäller för alla träffar på lördag och söndag.

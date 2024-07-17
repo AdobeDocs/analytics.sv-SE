@@ -15,21 +15,21 @@ ht-degree: 0%
 
 När du skickar en datakällfil till Adobe används ett vanligt autentiserat FTP-arbetsflöde. Du kan använda Utforskaren, Finder eller en dedikerad FTP-klient för att överföra önskade filer till Adobe FTP-platsen.
 
-Leta reda på FTP-autentiseringsuppgifterna i dialogrutan [Datakällhanterare](manage.md). Varje datakälla har en länk till sin **[!UICONTROL FTP Info]**. Varje FTP-plats är dedikerad till den specifika datakällan. Du kan inte använda samma FTP-plats för flera datakällor.
+Leta reda på FTP-autentiseringsuppgifterna i [hanteraren för datakällor](manage.md). Varje datakälla har en länk till dess **[!UICONTROL FTP Info]**. Varje FTP-plats är dedikerad till den specifika datakällan. Du kan inte använda samma FTP-plats för flera datakällor.
 
 Av säkerhetsskäl är FTP-platser utan aktivitet i över 30 dagar inaktiverade.
 
-## The `.fin` fil
+## Filen `.fin`
 
-En viktig del av att lyckas med inhämtningen av en datakällfil är att en `.fin` -fil. Den här filen anger för Adobe att datafilen är klar för bearbetning. Om du överför en datakällfil utan en motsvarande `.fin` fil, Adobe bearbetar aldrig dessa data.
+En viktig del av att det går att hämta en datakällfil är att en `.fin`-fil inkluderas. Den här filen anger för Adobe att datafilen är klar för bearbetning. Om du överför en datakällfil utan någon motsvarande `.fin`-fil bearbetar Adobe aldrig dessa data.
 
-The `.fin` filen har följande egenskaper:
+Filen `.fin` har följande egenskaper:
 
-* Filen har en `.fin` tillägg. Se till att ditt operativsystem tillåter dig att se och redigera filtyper.
-* Filen är tom. Lagra inte data i `.fin` -fil.
-* Filen har exakt samma namn som datakällfilen. Om du till exempel överför en datakällfil med namnet `example.txt`, `.fin` fil **måste** ha ett namn `example.fin`. Om de inte har samma namn bearbetar Adobe aldrig datakällfilen.
+* Filen har tillägget `.fin`. Se till att ditt operativsystem tillåter dig att se och redigera filtyper.
+* Filen är tom. Lagra inte data i filen `.fin`.
+* Filen har exakt samma namn som datakällfilen. Om du till exempel överför en datakällfil med namnet `example.txt` måste `.fin` file **** ha namnet `example.fin`. Om de inte har samma namn bearbetar Adobe aldrig datakällfilen.
 
-När både datakällfilen och `.fin` filen överförs till FTP-platsen, Adobe bearbetar filen. Överför inte `.fin` tills datakällfilen har överförts helt. Om `.fin` filen överförs för tidigt, Adobe hämtar och importerar den delvis överförda filen, vilket genererar möjliga fel.
+När både datakällfilen och filen `.fin` har överförts till FTP-platsen bearbetar Adobe filen. Överför inte filen `.fin` förrän datakällfilen har överförts helt. Om filen `.fin` överförs för tidigt, hämtar och importerar Adobe den delvis överförda filen, vilket genererar eventuella fel.
 
 ## Bearbetningsorder
 

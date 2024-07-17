@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Dimensioner för mobil livscykel
 
-*Den här sidan innehåller referensdata som ofta spåras via Adobe Experience Platform Mobile SDK. Information om mobila enheter med användaragenten finns på [Dimensioner för mobilsökning](mobile-dimensions.md). Information om mätvärden som spåras med Mobile SDK finns i [Mätvärden för mobillivscykel](../metrics/lifecycle-metrics.md).*
+*Sidreferensdata som ofta spåras via Adobe Experience Platform Mobile SDK. Information om mobila enheter med användaragenten finns i [Dimensioner för mobilsökning](mobile-dimensions.md). Information om mätvärden som spåras med Mobile SDK finns i [Mobila livscykelvärden](../metrics/lifecycle-metrics.md).*
 
 | Namn på livscykeldimension | Beskrivning | Sammanhangsdatavariabel |
 | --- | --- | --- |
@@ -26,9 +26,9 @@ ht-degree: 0%
 | [!UICONTROL Acquisition Term] | | `a.referrer.campaign.term` |
 | [!UICONTROL Acquisition Content] | | `a.refferer.campaign.content` |
 | [!UICONTROL Acquisition Name] | | `a.referrer.campaign.name` |
-| [!UICONTROL Location (down to 10 km)] | Besökarens latitud och longitud, med decimalnoggrannhet. Till exempel: `040.9` `-111.9`. | `a.loc.lat.a` + `a.loc.lon.a` |
-| [!UICONTROL Location (down to 100 m)] | Besökarens latitud och longitud, med tre decimaler. Till exempel: `040.932` `-111.931`. | `a.loc.lat.a` + `a.loc.lat.b` + `a.loc.lon.a` + `a.loc.lon.b` |
-| [!UICONTROL Location (down to 1 m)] | Besökarens latitud och longitud, exakt på femte decimalen. Till exempel: `040.93231` `-111.93152`. | `a.loc.lat.a` + `a.loc.lat.b` + `a.loc.lat.c` + `a.loc.lon.a` + `a.loc.lon.b` + `a.loc.lon.c` |
+| [!UICONTROL Location (down to 10 km)] | Besökarens latitud och longitud, med decimalnoggrannhet. Exempel: `040.9` `-111.9`. | `a.loc.lat.a` + `a.loc.lon.a` |
+| [!UICONTROL Location (down to 100 m)] | Besökarens latitud och longitud, med tre decimaler. Exempel: `040.932` `-111.931`. | `a.loc.lat.a` + `a.loc.lat.b` + `a.loc.lon.a` + `a.loc.lon.b` |
+| [!UICONTROL Location (down to 1 m)] | Besökarens latitud och longitud, exakt på femte decimalen. Exempel: `040.93231` `-111.93152`. | `a.loc.lat.a` + `a.loc.lat.b` + `a.loc.lat.c` + `a.loc.lon.a` + `a.loc.lon.b` + `a.loc.lon.c` |
 | [!UICONTROL Point of Interest Name] | | `a.loc.poi` |
 | [!UICONTROL Distance to Point of Interest Center] | | `a.loc.dist` |
 | [!UICONTROL Launch Number] | | `a.Launches` |

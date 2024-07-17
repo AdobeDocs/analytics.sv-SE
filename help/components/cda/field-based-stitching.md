@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Fältbaserad stygn
 
-Enhetsövergripande analys erbjuder två olika metoder för att sammanfoga data. Den här metoden är beroende av en Analytics-variabel, som [prop](/help/implement/vars/page-vars/prop.md) eller [eVar](/help/implement/vars/page-vars/evar.md), som innehåller en personidentifierare. Den använder den variabeln som bas för att länka samman enheter. Adobe rekommenderar detta sammanfogningsalternativ för större genomskinlighet och mer förutsägbarhet i besöksspårning.
+Enhetsövergripande analys erbjuder två olika metoder för att sammanfoga data. Den här metoden är beroende av en Analytics-variabel, som [prop](/help/implement/vars/page-vars/prop.md) eller [eVar](/help/implement/vars/page-vars/evar.md), som innehåller en person-ID. Den använder den variabeln som bas för att länka samman enheter. Adobe rekommenderar detta sammanfogningsalternativ för större genomskinlighet och mer förutsägbarhet i besöksspårning.
 
 ## Krav som är specifika för fältbaserad sammanfogning
 
@@ -23,7 +23,7 @@ Om du tänker implementera enhetsövergripande analys med fältbaserad sammanfog
 >
 >Om du inte uppfyller alla krav kan det leda till att det inte går att aktivera enhetsövergripande analys eller dåliga resultat när du sammanfogar data.
 
-* Alla krav som anges på [översiktssida](overview.md).
+* Alla krav som anges på [översiktssidan](overview.md).
 * Implementeringen måste ange ett utkast eller en eVar som unikt identifierar en individ när det är möjligt, till exempel när en användare loggar in eller öppnar ett e-postmeddelande. Detta krav gäller alla plattformar, inklusive mobilappar om de används. Undvik att tilldela ett standardvärde till säljaren eller eVarna.
 * Kommunicera den önskade identifieringsvariabeln till ditt Adobe-kontoteam när den tillhandahålls för fältbaserad sammanslagning.
 
@@ -40,4 +40,4 @@ Om du tänker implementera enhetsövergripande analys med fältbaserad sammanfog
 
 ## Nästa steg
 
-När organisationen uppfyller alla krav och förstår begränsningarna kan du börja [Konfigurera enhetsövergripande analys](setup.md).
+När din organisation uppfyller alla krav och förstår begränsningarna kan du starta [Konfigurera Cross-Device Analytics](setup.md).

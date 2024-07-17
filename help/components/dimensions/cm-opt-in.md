@@ -12,14 +12,14 @@ ht-degree: 3%
 
 # Anmälan till samtyckeshantering
 
-Medgivandehanteringsanmälan [dimension](overview.md) visar vilka sekretessinställningar som en besökare har valt. Du kan använda den här dimensionen för att filtrera data baserat på sekretessinställningar eller se de vanligaste anledningarna till sekretessavanmälan.
+Medgivandehanteringsavanmälan [dimension](overview.md) visar vilka sekretessinställningar en besökare har angett. Du kan använda den här dimensionen för att filtrera data baserat på sekretessinställningar eller se de vanligaste anledningarna till sekretessavanmälan.
 
 ## Fyll den här dimensionen med data
 
-Den här dimensionen samlar in data från följande [Sammanhangsdatavariabler](/help/implement/vars/page-vars/contextdata.md):
+Den här dimensionen samlar in data från följande [kontextdatavariabler](/help/implement/vars/page-vars/contextdata.md):
 
-* `contextData.['opt.dmp']` när inställt på `Y`. If `opt.dmp` är lika med `N`, [Medgivandehantering avanmäl dig](cm-opt-out.md) dimensionen fylls i i stället.
-* `contextData.['opt.sell']` när inställt på `Y`. If `opt.sell` är lika med `N`, [Medgivandehantering avanmäl dig](cm-opt-out.md) dimensionen fylls i i stället.
+* `contextData.['opt.dmp']` när värdet är `Y`. Om `opt.dmp` är lika med `N` fylls dimensionen [Medgivandehantering som avanmälan](cm-opt-out.md) i istället.
+* `contextData.['opt.sell']` när värdet är `Y`. Om `opt.sell` är lika med `N` fylls dimensionen [Medgivandehantering som avanmälan](cm-opt-out.md) i istället.
 
 Organisationen bestämmer logiken för att implementera dessa kontextdatavariabler. De finns inte kvar efter den träff som de är inställda på, så du måste ange varje kontextdatavariabel på varje sida.
 
@@ -28,4 +28,4 @@ Organisationen bestämmer logiken för att implementera dessa kontextdatavariabl
 Dimensionen innehåller följande två värden:
 
 * **`DMP`**: Besökaren valde att dela till datahanteringsplattformar. Dimensionsobjektet finns när kontextdatavariabeln `opt.dmp` är lika med `Y`.
-* **`SELL`**: Besökaren valde att dela eller sälja data till tredje part. Den här dimensionen visas när kontextdatavariabeln `opt.sell` är lika med `Y`.
+* **`SELL`**: Besökaren valde att dela eller sälja data till tredje part. Den här dimensionen finns när kontextdatavariabeln `opt.sell` är lika med `Y`.

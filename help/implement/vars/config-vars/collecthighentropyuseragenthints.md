@@ -13,26 +13,26 @@ ht-degree: 0%
 
 # collectHighEntropyUserAgentHints
 
-Högupplösta klienttips används av Adobe Analytics för att förbättra enhets- och webbläsaridentifieringen. Det här alternativet är tillgängligt från och med version 2.23.0 av AppMeasurement.js. Läs mer om kundtips i [den här översikten och vanliga frågor](/help/technotes/client-hints.md) och [Google blogg](https://web.dev/user-agent-client-hints/).
+Högupplösta klienttips används av Adobe Analytics för att förbättra enhets- och webbläsaridentifieringen. Det här alternativet är tillgängligt från och med version 2.23.0 av AppMeasurement.js. Läs mer om klienttips i [den här översikten och Frågor och svar](/help/technotes/client-hints.md) samt [Google blogg](https://web.dev/user-agent-client-hints/).
 
 ## Samla in tips för entropi med Web SDK
 
-Högupplösta klienttips ingår i kontextkategorierna i Web SDK. Se [Konfigurera Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html) för mer information.
+Högupplösta klienttips ingår i kontextkategorierna i Web SDK. Mer information finns i [Konfigurera Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html).
 
 ## Samla in entropiska tips med Adobe Analytics Extension
 
 **[!UICONTROL Collect high-entropy user-agent hints]** är en kryssruta under dragspelsfliken Allmänt när du konfigurerar Adobe Analytics-tillägget.
 
-1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/#/@adobepm/data-collection) med inloggningsuppgifterna för ditt AdobeID.
-1. Klicka på önskat [!UICONTROL tag property].
-1. Gå till [!UICONTROL Extensions] tabbtangenten och klicka sedan på [!UICONTROL Configure] under Adobe Analytics.
-1. Expandera [!UICONTROL General] dragspelspanel, som visar [!UICONTROL Collect high entropy user-agent hints] kryssruta. Den är avmarkerad som standard.
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/#/@adobepm/data-collection) med dina inloggningsuppgifter för AdobeID.
+1. Klicka på önskad [!UICONTROL tag property].
+1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på [!UICONTROL Configure] under Adobe Analytics.
+1. Expandera dragspelsfliken [!UICONTROL General], som visar kryssrutan [!UICONTROL Collect high entropy user-agent hints]. Den är avmarkerad som standard.
 
 ## collectHighEntropyUserAgentHints in AppMeasurement
 
-The `s.collectHighEntropyUserAgentHints` variabeln anger om AppMeasurementet begär tips för hög entropi från Chromium-webbläsare (till exempel Google Chrome eller Microsoft Edge). Dessa tips används av Adobe Analytics för att förbättra enhets- och webbläsaridentifieringen.
+Variabeln `s.collectHighEntropyUserAgentHints` avgör om AppMeasurementet begär tips om hög entropi från Chromium-webbläsare (till exempel Google Chrome eller Microsoft Edge). Dessa tips används av Adobe Analytics för att förbättra enhets- och webbläsaridentifieringen.
 
-Om inställt på `true`, kommer alla höga entropytips att begäras från webbläsaren.
+Om värdet är `true` kommer alla höga entropittips att begäras från webbläsaren.
 
 ```js
 s.collectHighEntropyUserAgentHints = true;

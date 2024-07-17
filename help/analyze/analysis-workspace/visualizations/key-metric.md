@@ -6,34 +6,34 @@ role: User, Admin
 exl-id: c74e77ff-15d6-48f1-a845-85bdf3444c3a
 source-git-commit: 1843989f77482152adeaee1f1c9e523d0c55dc21
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '542'
 ht-degree: 0%
 
 ---
 
 # Sammanfattning av nyckelmått
 
-The [!UICONTROL Key metric summary] Med visualisering kan du se hur ett viktigt mätresultat trendar inom en enda tidsram. Du kan också jämföra mätprestanda över två tidsramar. Det ger fördelarna med flera visualiseringar i kombination med en visualisering:
+Med visualiseringen [!UICONTROL Key metric summary] kan du se hur ett viktigt mätresultat trendar inom en enda tidsram. Du kan också jämföra mätprestanda över två tidsramar. Det ger fördelarna med flera visualiseringar i kombination med en visualisering:
 
 * **[!UICONTROL Line]** visualiseringar som visar hur måttet trendar för det primära datumintervallet och jämförelsedatumintervallet
 
 * **[!UICONTROL Summary percent change]** som visar måttökning eller minskning mellan det primära datumintervallet och jämförelsedatumintervallet
 
-* Aktuellt totalvärde ([!UICONTROL **samlingsnummer**]) för måttet
+* Aktuellt totalt värde ([!UICONTROL **sammanfattningsnummer**]) för måttet
 
 ## Användningsexempel
 
-Den här visualiseringen åtgärdar ett antal vanliga användningsområden, bland annat:
+Den här visualiseringen åtgärdar ett antal vanliga användningsfall, bland annat:
 
 * En analytiker som försöker förstå hur skapandet av nya affärsmöjligheter såg ut den här månaden jämfört med samma tidsram förra året.
 
 * En marknadsförare som visar hur leadgenerering för en viss lead-typ har ändrats från den här månaden till den förra månaden.
 
-* En chef vill förstå hur nya bokningar ändrades från detta kvartal till förra kvartalet.
+* En chefer vill förstå hur nya bokningar ändrades från detta kvartal till förra kvartalet.
 
 ## Konfigurera sammanfattningen av nyckelmått
 
-1. Dra **[!UICONTROL Key metric summary]** visualisering från **[!UICONTROL Visualizations]** menyn i den vänstra listen i en panel.
+1. Dra visualiseringen **[!UICONTROL Key metric summary]** från menyn **[!UICONTROL Visualizations]** i den vänstra listen till en panel.
 
 1. Konfigurera visualiseringen genom att välja ett mätvärde, ett primärt datumintervall och ett jämförelsedatumintervall och ett segment (om det behövs):
 
@@ -56,7 +56,7 @@ Den här visualiseringen åtgärdar ett antal vanliga användningsområden, blan
 
 Observera:
 
-* The **[!UICONTROL Previous period]** linjediagram (alltid grått) motsvarar **[!UICONTROL Comparison date range]** i konfigurationssteget.
+* Linjediagrammet **[!UICONTROL Previous period]** (visas alltid i grått) motsvarar **[!UICONTROL Comparison date range]** i konfigurationssteget.
 
 * Om ett jämförelsedatumintervall inte anges under konfigurationen eller döljs i visualiseringsinställningarna, visas bara linjediagrammet för det primära datumintervallet. Sammanfattningsändringen döljs.
 

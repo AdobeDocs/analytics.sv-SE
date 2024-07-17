@@ -17,7 +17,7 @@ Om du vill se Advertising Analytics sökdata i Analytics måste du konfigurera v
 1. Navigera till **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]**.
 
 1. Välj den rapportsvit som är mappad till din Experience Cloud-organisation.
-1. Klicka **[!UICONTROL Edit Settings]** > **[!UICONTROL Advertising Analytics Configuration]**.
+1. Klicka på **[!UICONTROL Edit Settings]** > **[!UICONTROL Advertising Analytics Configuration]**.
 
    ![Rapportering](assets/aa-reporting.png)
 
@@ -31,7 +31,7 @@ Om du vill se Advertising Analytics sökdata i Analytics måste du konfigurera v
 
    | Inställning | Definition |
    |--- |--- |
-   | **[!UICONTROL Allocation]** | Välj mellan:<br/> **[!UICONTROL Original Value (First)]**: Det första värdet som visas får fullständig allokeringskredit, oavsett vilka efterföljande värden som används för variabeln. <br/>**[!UICONTROL Most Recent (Last)]**: Det sista värdet som visas får fullständig allokeringskreditering för händelsen success, oavsett vilka variabler som sparades innan. |
+   | **[!UICONTROL Allocation]** | Välj mellan:<br/> **[!UICONTROL Original Value (First)]**: Det första värdet som visas får fullständig allokeringskredit, oavsett vilka efterföljande värden som används för variabeln. <br/>**[!UICONTROL Most Recent (Last)]**: Det senaste värdet som har identifierats får fullständig allokeringskrediter för händelsen success, oavsett vilka variabler som har utlösts innan. |
    | **[!UICONTROL Expire After]** | Gör att du kan ange en tidsperiod eller händelse efter vilken eVarna förfaller (dvs. inte längre får kredit för lyckade händelser).  Om en lyckad händelse inträffar efter att eVarna har upphört att gälla, får värdet Ingen kredit för händelsen (ingen eVar var aktiv). |
 
-1. Klicka **[!UICONTROL Enable Advertising Analytics Reporting]** (första gången), eller **[!UICONTROL Update Advertising Analytics Reporting]** (efterföljande gånger). Din rapportsvit är nu klar att ta emot data från Advertising Analytics Search. Du är nu redo att [skapa annonskonton](/help/integrate/c-advertising-analytics/c-adanalytics-workflow/aa-create-ad-account.md).
+1. Klicka på **[!UICONTROL Enable Advertising Analytics Reporting]** (första gången) eller **[!UICONTROL Update Advertising Analytics Reporting]** (efterföljande gånger). Din rapportsvit är nu klar att ta emot data från Advertising Analytics Search. Du kan nu [skapa Advertising-konton](/help/integrate/c-advertising-analytics/c-adanalytics-workflow/aa-create-ad-account.md).

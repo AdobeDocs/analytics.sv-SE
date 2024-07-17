@@ -17,9 +17,9 @@ ht-degree: 0%
 
 Numbers Suite är en serie JavaScript-funktioner. Den innehåller följande plugin-program:
 
-* **`zeroPad`**: Lägg till ett visst antal nollor i början av ett tal. Detta plugin-program är användbart om en variabel kräver ett visst antal siffror, t.ex. om du arbetar med JavaScript-datumobjekt och vill formatera datumets månad och dag med två siffror i stället för bara en siffra. Till exempel: `01/09/2020` i stället för `1/9/2020`.
+* **`zeroPad`**: Lägg till ett visst antal nollor i början av ett tal. Denna plugin är användbar om en variabel kräver ett visst antal siffror, t.ex. om du arbetar med JavaScript datumobjekt och vill formatera en datummånad och dag med två siffror i stället för bara en siffra. Till exempel `01/09/2020` i stället för `1/9/2020`.
 * **`randomNumber`**: Generera ett slumpmässigt tal med ett visst antal siffror. Detta plugin-program är användbart om du distribuerar taggar från tredje part och vill ha ett slumpmässigt cachelagrat nummer.
-* **`twoDecimals`**: Avrunda ett tal till hundradelsvärdet. Detta plugin-program är användbart för valutamaterial, så att du kan avrunda ett tal till ett giltigt valutavärde.
+* **`twoDecimals`**: Rundar ett tal till den hundradel som är i garderoben. Detta plugin-program är användbart för valutamaterial, så att du kan avrunda ett tal till ett giltigt valutavärde.
 
 ## Installera plugin-programmet med Web SDK- eller Web SDK-tillägget
 
@@ -29,10 +29,10 @@ Det här plugin-programmet stöds ännu inte för användning i Web SDK.
 
 Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-programmen med Adobe Analytics.
 
-1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med dina inloggningsuppgifter för AdobeID.
 1. Klicka på den önskade taggegenskapen.
-1. Gå till [!UICONTROL Extensions] klickar du på [!UICONTROL Catalog] knapp
-1. Installera och publicera [!UICONTROL Common Analytics Plugins] extension
+1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Catalog]
+1. Installera och publicera tillägget [!UICONTROL Common Analytics Plugins]
 1. Om du inte redan har det skapar du en regel med namnet&quot;Initiera plugin-program&quot; med följande konfiguration:
    * Villkor: Inget
    * Händelse: Kärna - Bibliotek inläst (sidan ovanpå)
@@ -45,10 +45,10 @@ Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-program
 
 Om du inte vill använda tillägget för Common Analytics-plugin-program kan du använda den anpassade kodredigeraren.
 
-1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med dina inloggningsuppgifter för AdobeID.
 1. Klicka på önskad egenskap.
-1. Gå till [!UICONTROL Extensions] klickar du på **[!UICONTROL Configure]** under Adobe Analytics-tillägget.
-1. Expandera [!UICONTROL Configure tracking using custom code] dragspelspanel, som visar [!UICONTROL Open Editor] -knappen.
+1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen **[!UICONTROL Configure]** under Adobe Analytics-tillägget.
+1. Expandera dragspelsfliken [!UICONTROL Configure tracking using custom code] som visar knappen [!UICONTROL Open Editor].
 1. Öppna den anpassade kodredigeraren och klistra in den plugin-kod som finns nedan i redigeringsfönstret.
 1. Spara och publicera ändringarna i Analytics-tillägget.
 
@@ -71,24 +71,24 @@ function twoDecimals(v){return"undefined"===typeof v||void 0===v||isNaN(v)?0:Num
 
 ## Använda plugin-programmen
 
-The `zeroPad` funktionen använder följande argument:
+Funktionen `zeroPad` använder följande argument:
 
-* **num** (required, integer): Det tal som ska fyllas ut. Funktionen avrundar värdet för det här argumentet om det innehåller decimaler.
-* **nod** (required, integer): Antalet siffror i det slutliga returvärdet. Om siffran som ska fyllas på har färre siffror än antalet siffror att fylla i, lägger plugin-programmet till nollor i början av `num` argument.
+* **num** (obligatoriskt, heltal): Det tal som ska fyllas ut. Funktionen avrundar värdet för det här argumentet om det innehåller decimaler.
+* **nod** (obligatoriskt, heltal): Antalet siffror i det slutliga returvärdet. Om numret som ska fyllas ut har färre siffror än antalet siffror att fylla i, lägger plugin-programmet till nollor i början av argumentet `num`.
 
-The `randomNumber` funktionen använder följande argument:
+Funktionen `randomNumber` använder följande argument:
 
 * **nod** (valfritt, heltal): Antalet siffror i det slumpmässiga tal som du vill generera. Maxvärdet är 17 siffror. Standardvärdet är 10 siffror.
 
-The `twoDecimals` funktionen använder följande argument:
+Funktionen `twoDecimals` använder följande argument:
 
-* **val** (required, number): Ett tal (som representeras av antingen en sträng eller ett nummerobjekt) som du vill avrunda till närmaste hundradel.
+* **val** (obligatoriskt, tal): Ett tal (som representeras av antingen en sträng eller ett nummerobjekt) som du vill avrunda till närmaste hundradel.
 
 ## Returnerar
 
-* The **zeroPad** funktionen returnerar en sträng som är lika med `num` -argument men med ett visst antal nollor som läggs till i början av värdet, vilket garanterar att returvärdet har rätt antal siffror.
-* The **randomNumber** returnerar en sträng som är lika med ett slumpmässigt tal med önskat antal siffror.
-* The **twoDecimals** returnerar ett talobjekt avrundat till närmaste hundradel.
+* Funktionen **zeroPad** returnerar en sträng som är lika med argumentet `num`, men med ett visst antal nollor tillagda i början av värdet, vilket ser till att returvärdet har rätt antal siffror.
+* Funktionen **randomNumber** returnerar en sträng som är lika med ett slumpmässigt tal med önskat antal siffror.
+* Funktionen **twoDecimals** returnerar ett talobjekt avrundat till närmaste hundradel.
 
 ## Exempelanrop
 

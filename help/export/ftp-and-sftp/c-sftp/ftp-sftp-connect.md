@@ -1,17 +1,17 @@
 ---
 description: Instruktioner för att konfigurera säker överföring med FTP-servrar i Adobe.
 keywords: ftp;sftp
-title: Ansluta till ett Adobe FTP-konto med SFTP
+title: Ansluta till ett FTP-konto i Adobe med SFTP
 feature: FTP Export
 exl-id: 727d4f7a-d7d1-40cf-bdcd-c783ca47f51c
 source-git-commit: 62132284ca70f3bdb1a8896e4548b8b63a5c03c8
 workflow-type: tm+mt
 source-wordcount: '182'
-ht-degree: 8%
+ht-degree: 0%
 
 ---
 
-# Ansluta till ett FTP-konto med SFTP
+# Anslut till ett FTP-konto med SFTP
 
 Så här ställer du in säker överföring med FTP:
 
@@ -38,9 +38,9 @@ Så här ställer du in säker överföring med FTP:
 1. Överför [!DNL authorized_keys] till ett FTP-konto:
 
    * Anslut till Adobe FTP-kontot.
-   * Skapa en [!DNL .ssh] (om den inte redan finns).
-   * Ladda upp [!DNL authorized_keys] till [!DNL .ssh] katalog.
+   * Skapa en [!DNL .ssh]-katalog (om den inte redan finns).
+   * Överför filen [!DNL authorized_keys] till katalogen [!DNL .ssh].
 
 1. Testa anslutningen genom att logga in på FTP-kontot med SFTP.
 
-Mer detaljerad information finns i [Ansluta till Adobe via sFTP utan lösenord_..](/help/export/ftp-and-sftp/c-sftp/ftp-sftp-cert-auth.md).
+Mer information finns i [Ansluta till Adobe via sFTP utan lösenord_..](/help/export/ftp-and-sftp/c-sftp/ftp-sftp-cert-auth.md).

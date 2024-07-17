@@ -15,7 +15,7 @@ ht-degree: 0%
 
 {{plug-in}}
 
-The `inList` Med plugin-programmet kan du kontrollera om ett värde redan finns i en avgränsad sträng eller i ett JavaScript-arrayobjekt. Flera andra plugin-program är beroende av `inList` plugin-program som fungerar. Denna plugin ger en tydlig fördel jämfört med JavaScript-metoden `indexOf()` där det inte matchar partiella strängar. Om du t.ex. använde denna plugin för att kontrollera `"event2"`matchar den inte en sträng som innehåller `"event25"`. Denna plugin behövs inte om du inte behöver kontrollera värden i avgränsade strängar eller arrayer, eller om du vill använda en egen `indexOf()` logik.
+Med plugin-programmet `inList` kan du kontrollera om ett värde redan finns i en avgränsad sträng eller i ett JavaScript-arrayobjekt. Flera andra plugin-program är beroende av att plugin-programmet `inList` fungerar. Detta plugin-program ger en tydlig fördel jämfört med JavaScript-metoden `indexOf()` där det inte matchar partiella strängar. Om du till exempel använde det här plugin-programmet för att kontrollera `"event2"` kommer det inte att matcha en sträng som innehåller `"event25"`. Detta plugin-program är inte nödvändigt om du inte behöver kontrollera värden i avgränsade strängar eller matriser, eller om du vill använda din egen `indexOf()`-logik.
 
 ## Installera plugin-programmet med Web SDK- eller Web SDK-tillägget
 
@@ -25,10 +25,10 @@ Det här plugin-programmet stöds ännu inte för användning i Web SDK.
 
 Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-programmen med Adobe Analytics.
 
-1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med dina inloggningsuppgifter för AdobeID.
 1. Klicka på den önskade taggegenskapen.
-1. Gå till [!UICONTROL Extensions] klickar du på [!UICONTROL Catalog] knapp
-1. Installera och publicera [!UICONTROL Common Analytics Plugins] extension
+1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Catalog]
+1. Installera och publicera tillägget [!UICONTROL Common Analytics Plugins]
 1. Om du inte redan har det skapar du en regel med namnet&quot;Initiera plugin-program&quot; med följande konfiguration:
    * Villkor: Inget
    * Händelse: Kärna - Bibliotek inläst (sidan ovanpå)
@@ -41,10 +41,10 @@ Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-program
 
 Om du inte vill använda tillägget för Common Analytics-plugin-program kan du använda den anpassade kodredigeraren.
 
-1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med dina inloggningsuppgifter för AdobeID.
 1. Klicka på önskad egenskap.
-1. Gå till [!UICONTROL Extensions] klickar du på **[!UICONTROL Configure]** under Adobe Analytics-tillägget.
-1. Expandera [!UICONTROL Configure tracking using custom code] dragspelspanel, som visar [!UICONTROL Open Editor] -knappen.
+1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen **[!UICONTROL Configure]** under Adobe Analytics-tillägget.
+1. Expandera dragspelsfliken [!UICONTROL Configure tracking using custom code] som visar knappen [!UICONTROL Open Editor].
 1. Öppna den anpassade kodredigeraren och klistra in den plugin-kod som finns nedan i redigeringsfönstret.
 1. Spara och publicera ändringarna i Analytics-tillägget.
 
@@ -61,14 +61,14 @@ function inList(lv,vtc,d,cc){var b=lv,e=vtc,c=d,f=cc;if("-v"===b)return{plugin:"
 
 ## Använda plugin-programmet
 
-The `inList` funktionen returnerar ett booleskt värde beroende på dess indata. Följande argument används:
+Funktionen `inList` returnerar ett booleskt värde beroende på dess indata. Följande argument används:
 
-* **`lv`** (required, string or array): En avgränsad lista med värden eller ett JavaScript-arrayobjekt att söka i
-* **`vtc`** (required, string): Det värde som ska sökas efter
-* **`d`** (valfri, sträng): Den avgränsare som används för att separera enskilda värden i `lv` argument. Standardvärdet är ett komma (`,`) när den inte är inställd.
-* **`cc`** (valfritt, booleskt): Om inställt på `true` eller `1`görs en skiftlägeskänslig kontroll. Om inställt på `false` eller utelämnas görs en skiftlägeskänslig kontroll. Standardvärdet är `false`.
+* **`lv`** (obligatoriskt, sträng eller matris): En avgränsad lista med värden eller ett JavaScript-matrisobjekt som ska sökas igenom
+* **`vtc`** (obligatoriskt, sträng): Det värde som ska sökas efter
+* **`d`** (valfri sträng): Avgränsaren som används för att avgränsa enskilda värden i argumentet `lv`. Standardvärdet är ett kommatecken (`,`) när inget anges.
+* **`cc`** (valfritt, booleskt): Om värdet är `true` eller `1` görs en skiftlägeskänslig kontroll. Om värdet är `false` eller utelämnas görs en skiftlägesokänslig kontroll. Standardvärdet är `false`.
 
-Anrop till den här funktionen returnerar `true` om den hittar en matchning, och `false` om det inte hittar någon matchning.
+Om funktionen anropas returneras `true` om en matchning hittas och `false` om det inte finns någon matchning.
 
 ## Exempel
 
@@ -112,7 +112,7 @@ if(inList(s.linkTrackVars,"eVar1","|")) {
 
 ### v2.1 (26 september 2019)
 
-* Alternativet för `cc` -argument som inte ska vara booleskt. Till exempel: `1` är ett giltigt värde för ärendekontroll.
+* Alternativet för argumentet `cc` har lagts till så att det inte är booleskt. `1` är till exempel ett giltigt värde för ärendekontroll.
 
 ### v2.0 (17 april 2018)
 

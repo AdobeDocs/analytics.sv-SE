@@ -17,7 +17,7 @@ Med kodhanteraren kan du hämta datainsamlingskod för webb- och mobilplattforma
 
 **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL All admin]** > **[!UICONTROL Code manager]**.
 
-När du har hämtat biblioteket måste du konfigurera koden så att den skickar data till rätt spårningsserver och rapportserie. Ytterligare implementeringsresurser finns i [Implementera](/help/implement/home.md) användarhandbok.
+När du har hämtat biblioteket måste du konfigurera koden så att den skickar data till rätt spårningsserver och rapportserie. Ytterligare implementeringsresurser är tillgängliga i användarhandboken för [Implementering](/help/implement/home.md).
 
 ## Kodhanterarens sidbeskrivningar {#section_7C317BB0287A4B8EB0A1A4ECC40627BF}
 
@@ -25,5 +25,5 @@ När du har hämtat biblioteket måste du konfigurera koden så att den skickar 
 |--- |--- |
 | [!UICONTROL Name] | Namnet matchar plattformen där du vill aktivera datainsamling. Inbyggda bibliotek tillhandahålls för varje plattform som visas i den här kolumnen. |
 | [!UICONTROL Type] | Typ av program som kan mätas med varje bibliotek. |
-| [!UICONTROL Version] | Lista den senaste versionen av biblioteket. Klicka på versionsnumret för att visa [versionsinformation](https://experienceleague.adobe.com/docs/analytics/implementation/appmeasurement-updates.html). |
+| [!UICONTROL Version] | Lista den senaste versionen av biblioteket. Klicka på versionsnumret för att visa [versionshistoriken](https://experienceleague.adobe.com/docs/analytics/implementation/appmeasurement-updates.html). |
 | [!UICONTROL Documentation] | Visa biblioteksreferensdokumentationen. |

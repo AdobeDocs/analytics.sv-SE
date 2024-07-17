@@ -13,22 +13,22 @@ ht-degree: 0%
 
 # produkter
 
-The `products` variabelspårar produkter och egenskaper som är knutna till dem. Den här variabeln ställs vanligtvis in på enskilda produktsidor, kundvagnssidor och bekräftelsesidor för inköp. Det är en variabel med flera värden, vilket innebär att du kan skicka flera produkter i samma träff och att Adobe tolkar värdet i separata dimensionsobjekt.
+Variabeln `products` spårar produkter och egenskaper som är kopplade till dem. Den här variabeln ställs vanligtvis in på enskilda produktsidor, kundvagnssidor och bekräftelsesidor för inköp. Det är en variabel med flera värden, vilket innebär att du kan skicka flera produkter i samma träff och att Adobe tolkar värdet i separata dimensionsobjekt.
 
 >[!NOTE]
 >
->Om variabeln anges i en träff utan [`events`](events/events-overview.md) variabel, [Produktvyer](/help/components/metrics/product-views.md) med 1. Se till att du anger lämpliga händelser för varje träff med `products` variabel.
+>Om den här variabeln anges i en träff utan variabeln [`events`](events/events-overview.md) ökas måttet för [ produktvyer ](/help/components/metrics/product-views.md) med 1. Se till att du anger lämpliga händelser för varje träff med variabeln `products`.
 
 ## Produkter som använder Web SDK
 
-Om du använder [**XDM-objekt**](/help/implement/aep-edge/xdm-var-mapping.md), mappas produkterna till följande variabler:
+Om du använder [**XDM-objektet**](/help/implement/aep-edge/xdm-var-mapping.md) mappas produkterna till följande variabler:
 
-* Kategorin är mappad till `xdm.productListItems[].productCategories[].categoryID`. Det använder det första objektet i `productCategories[]` array. `lineItemId` mappar också korrekt, men Adobe rekommenderar `categoryID` eftersom det är standard-XDM. Om båda XDM-fälten finns, `lineItemId` har företräde.
-* Produkten är mappad till `xdm.productListItems[].SKU` eller `xdm.productListItems[].name`. Om båda XDM-fälten finns, `xdm.productListItems[].SKU` används.
+* Kategorin har mappats till `xdm.productListItems[].productCategories[].categoryID`. Det använder det första objektet i `productCategories[]`-arrayen. `lineItemId` mappar också korrekt, men Adobe rekommenderar `categoryID` eftersom det är standard-XDM. Om båda XDM-fälten finns har `lineItemId` företräde.
+* Produkten är mappad till `xdm.productListItems[].SKU` eller `xdm.productListItems[].name`. Om båda XDM-fälten finns används `xdm.productListItems[].SKU`.
 * Kvantitet har mappats till `xdm.productListItems[].quantity`.
-* Priset är mappat till `xdm.productListItems[].priceTotal`.
-* Merchandising eVars mappas till `xdm.productListItems._experience.analytics.customDimensions.eVars.eVar1` till `xdm.productListItems._experience.analytics.customDimensions.eVars.eVar250`, beroende på vilken eVar du vill binda till en produkt.
-* Marknadsföringshändelser mappas till `xdm.productListItems[]._experience.analytics.event1to100.event1.value` till `xdm.productListItems._experience.analytics.event901to1000.event1000.value`, beroende på vilken händelse du vill binda till en produkt. Om du anger en händelse i något av dessa fält inkluderas den automatiskt i [event](events/events-overview.md) sträng skickad till Adobe Analytics.
+* Priset har mappats till `xdm.productListItems[].priceTotal`.
+* Marknadsföringsvariabler är mappade till `xdm.productListItems._experience.analytics.customDimensions.eVars.eVar1` till `xdm.productListItems._experience.analytics.customDimensions.eVars.eVar250`, beroende på vilken eVar du vill binda till en produkt.
+* Marknadsföringshändelser mappas till `xdm.productListItems[]._experience.analytics.event1to100.event1.value` till `xdm.productListItems._experience.analytics.event901to1000.event1000.value`, beroende på vilken händelse du vill binda till en produkt. Om du anger en händelse i något av dessa fält inkluderas den automatiskt i strängen [event](events/events-overview.md) som skickas till Adobe Analytics.
 
 ```json
 {
@@ -53,7 +53,7 @@ Om du använder [**XDM-objekt**](/help/implement/aep-edge/xdm-var-mapping.md), m
 }
 ```
 
-Om du använder [**dataobjekt**](/help/implement/aep-edge/data-var-mapping.md), produktvariabeln använder `data.__adobe.analytics.products` efter AppMeasurementets syntax. Om du anger det här fältet skrivs alla produkter som anges i XDM-objektet över och skickas inte till Adobe Analytics.
+Om du använder [**dataobjektet**](/help/implement/aep-edge/data-var-mapping.md) använder variabeln products `data.__adobe.analytics.products` efter AppMeasurementen syntax. Om du anger det här fältet skrivs alla produkter som anges i XDM-objektet över och skickas inte till Adobe Analytics.
 
 ```json
 {
@@ -71,30 +71,30 @@ Om du använder [**dataobjekt**](/help/implement/aep-edge/data-var-mapping.md), 
 
 Det finns inget dedikerat fält i Adobe Experience Platform Data Collection för att ställa in den här variabeln, men det finns flera tredjepartstillägg som kan vara till hjälp.
 
-1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med dina inloggningsuppgifter för AdobeID.
 2. Klicka på den önskade taggegenskapen.
-3. Gå till [!UICONTROL Extensions] tabbtangenten och klicka sedan på [!UICONTROL Catalog] om du vill se alla tillgängliga tillägg.
+3. Gå till fliken [!UICONTROL Extensions] och klicka sedan på [!UICONTROL Catalog] för att visa alla tillgängliga tillägg.
 4. Sök efter termen &quot;product&quot;, som visar flera tillgängliga tillägg som kan hjälpa dig att ange variabeln.
 
 Du kan använda något av dessa tillägg eller så kan du använda den anpassade kodredigeraren efter AppMeasurementen syntax nedan.
 
 ## s.products in AppMeasurement and the Analytics extension custom code editor
 
-The `s.products` variabeln är en sträng som innehåller flera avgränsade fält per produkt. Avgränsa varje fält med ett semikolon (`;`) i strängen.
+Variabeln `s.products` är en sträng som innehåller flera avgränsade fält per produkt. Avgränsa varje fält med ett semikolon (`;`) i strängen.
 
 * **Kategori** (valfritt): Produktkategorin. Den maximala längden för det här fältet är 100 byte.
 * **Produktnamn** (obligatoriskt): Produktens namn. Den maximala längden för det här fältet är 100 byte.
-* **Kvantitet** (valfritt): Hur många av dessa produkter som finns i varukorgen. Det här fältet gäller endast för träffar med händelsen purchase.
-* **Pris** (valfritt): produktens totala pris i decimalform. Om kvantiteten är mer än en, ange priset till det totala och inte till det enskilda produktpriset. Justera valutan för det här värdet så att den matchar [`currencyCode`](../config-vars/currencycode.md) variabel. Inkludera inte valutasymbolen i det här fältet. Det här fältet gäller endast för träffar med händelsen purchase.
-* **Händelser** (valfritt): Händelser kopplade till produkten. Avgränsa flera händelser med en pipe (`|`). Se [händelser](events/events-overview.md) för mer information.
-* **eVars** (valfritt): Merchandising eVars knutna till produkten. Avgränsa flera eVars-produkter för försäljning med ett rör (`|`). Se [varuexponering eVars](evar-merchandising.md) för mer information.
+* **Kvantitet** (valfritt): Hur många av den här produkten finns i kundvagnen. Det här fältet gäller endast för träffar med händelsen purchase.
+* **Pris** (valfritt): produktens totala pris i decimalform. Om kvantiteten är mer än en, ange priset till det totala och inte till det enskilda produktpriset. Justera valutan för det här värdet så att den matchar variabeln [`currencyCode`](../config-vars/currencycode.md). Inkludera inte valutasymbolen i det här fältet. Det här fältet gäller endast för träffar med händelsen purchase.
+* **Händelser** (valfritt): Händelser som är kopplade till produkten. Avgränsa flera händelser med en pipe (`|`). Mer information finns i [events](events/events-overview.md).
+* **eVars** (valfritt): Merchandising eVars knutna till produkten. Avgränsa flera eVars-handlare med en pipe (`|`). Mer information finns i [Försäljning av eVars](evar-merchandising.md).
 
 ```js
 // Set a single product using all available fields
 s.products = "Example category;Example product;1;3.50;event1=4.99|event2=5.99;eVar1=Example merchandising value 1|eVar2=Example merchandising value 2";
 ```
 
-Den här variabeln har stöd för flera produkter i samma träff. Det är värdefullt för kundvagn och inköp som innehåller flera produkter. Maximal längd för hela `products` strängen är 64 kB. Avgränsa varje produkt med kommatecken (`,`) i strängen.
+Den här variabeln har stöd för flera produkter i samma träff. Det är värdefullt för kundvagn och inköp som innehåller flera produkter. Den maximala längden för hela strängen `products` är 64 kB. Avgränsa varje produkt med ett kommatecken (`,`) i strängen.
 
 ```js
 // Set multiple products - useful for when a visitor views their shopping cart
@@ -107,7 +107,7 @@ s.products = "Example category 1;Example product 1;1;3.50,Example category 2;Exa
 
 ## Exempel
 
-The `products` variabeln är flexibel när du utelämnar fält och inkluderar flera produkter. Denna flexibilitet kan göra det enkelt att missa en avgränsare, vilket gör att implementeringen skickar felaktiga data till Adobe.
+Variabeln `products` är flexibel när du utelämnar fält och inkluderar flera produkter. Denna flexibilitet kan göra det enkelt att missa en avgränsare, vilket gör att implementeringen skickar felaktiga data till Adobe.
 
 ```js
 // Include only product and category. Common on individual product pages
@@ -146,7 +146,7 @@ s.events = "event1,event2,event3,event4,purchase";
 s.products = "Example category 1;Example product 1;3;12.60;event1=1.4|event2=9;eVar1=Merchandising value|eVar2=Another merchandising value,Example category 2;Example product 2;1;59.99;event3=6.99|event4=1;eVar3=Merchandising value 3|eVar4=Example value four";
 ```
 
-Om du använder `digitalData` [datalager](../../prepare/data-layer.md)kan du iterera genom `digitalData.product` objektarray:
+Om du använder datalagret `digitalData` [data](../../prepare/data-layer.md) kan du iterera genom objektarrayen `digitalData.product`:
 
 ```js
 for(var i = 0; i < digitalData.product.length; i++) {

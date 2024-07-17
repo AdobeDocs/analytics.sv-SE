@@ -1,6 +1,6 @@
 ---
 description: Adobe Report Builder har nu samma behörighetsinställningar som i administrationsverktygen för Analytics.
-title: Behörigheter för användaråtkomst till dimensioner och mätvärden
+title: Behörigheter för användaråtkomst för dimensioner och mätvärden
 uuid: b561407d-c4fa-4f1e-8b16-5ca46fcbf36f
 feature: Report Builder
 role: User, Admin
@@ -8,11 +8,11 @@ exl-id: 53cfdcf4-31c3-40ab-aca4-8f0f9be6fe13
 source-git-commit: fb39f906d6c08713e4dc8211c917b2942502868e
 workflow-type: tm+mt
 source-wordcount: '225'
-ht-degree: 6%
+ht-degree: 0%
 
 ---
 
-# Behörigheter för användaråtkomst till dimensioner och mätvärden
+# Behörigheter för användaråtkomst för dimensioner och mätvärden
 
 Adobe Report Builder har behörighetsinställningar som liknar dem i administrationsverktygen för Analytics.
 
@@ -22,7 +22,7 @@ Om du till exempel uppdaterar en begäran som innehåller dimensioner eller måt
 
 ![Skärmbild som visar felmeddelandet Begränsad behörighet.](assets/arb_restrc_perm.png)
 
-Följ dessa instruktioner för att **var** Report Builder som du underhåller:
+Följ de här instruktionerna för **varje** Report Builder-arbetsbok som du underhåller:
 
 1. Öppna arbetsboken.
 1. Uppdatera alla begäranden.

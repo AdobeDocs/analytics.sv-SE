@@ -7,14 +7,14 @@ role: User, Admin
 exl-id: 82034838-b015-4ca2-adb6-736f20a478d8
 source-git-commit: 984406d00e5a5ae966fff60ec9fcfcb000958696
 workflow-type: tm+mt
-source-wordcount: '828'
-ht-degree: 11%
+source-wordcount: '835'
+ht-degree: 9%
 
 ---
 
 # [!UICONTROL Column Settings]
 
-[!UICONTROL Column Settings] gör att du kan konfigurera kolumnformatering, som vissa kan vara villkorliga.
+I [!UICONTROL Column Settings] kan du konfigurera kolumnformatering, varav vissa kan vara villkorliga.
 
 ## Redigera [!UICONTROL Column Settings] {#edit-column-settings}
 
@@ -34,14 +34,14 @@ Du kan redigera kolumninställningar för en enskild kolumn eller för flera kol
 
 ## Kolumninställningar
 
-Du kan uppdatera följande kolumninställningar för enskilda tabeller i Analysis Workspace enligt beskrivningen i [Redigera kolumninställningar](#edit-uicontrol-column-settings).
+Du kan uppdatera följande kolumninställningar för enskilda tabeller i Analysis Workspace, enligt beskrivningen i [Redigera kolumninställningar](#edit-uicontrol-column-settings).
 
 Vissa av dessa inställningar kan även hanteras för alla nya projekt som du skapar i Analysis Workspace, vilket beskrivs i [Användarinställningar](/help/analyze/analysis-workspace/user-preferences.md)
 
 | Element | Beskrivning |
 | --- | --- |
 | **Totalt antal celler** |  |
-| Visa summor | Denna summa är vanligtvis lika med eller en delmängd av [!UICONTROL Grand Total]. Alla tabellfilter som används i frihandstabellen, inklusive [!UICONTROL Include None] alternativ. |
+| Visa summor | Denna summa är vanligtvis lika med eller en delmängd av [!UICONTROL Grand Total]. Alla tabellfilter som används i frihandstabellen, inklusive alternativet [!UICONTROL Include None], visas. |
 | Visa totalsumma | Denna summa representerar alla träffar som har samlats in, ibland kallade&quot;rapportsvitsummor&quot;. När ett segment används antingen på panelnivå eller i friformstabellen justeras det totala värdet så att alla träffar som matchar segmentvillkoren visas. Summan stöds inte för tabeller eller uppdelningar med [statiska rader](/help/analyze/analysis-workspace/visualizations/freeform-table/workspace-totals.md). |
 | **Tabellceller** |   |
 | Nummer | Avgör om en cell visar/döljer det numeriska värdet för måttet. Om måttet till exempel är Sidvyer är det numeriska värdet antalet sidvyer för radobjektet. |
@@ -62,7 +62,7 @@ Villkorsstyrd formatering tillämpar formatering på övre, mellersta och nedre 
 
 | Element | Beskrivning |
 | --- | --- |
-| Villkorsstyrd formatering | Använder en förkonfigurerad färguppsättning som du väljer för celler. Beroende på vilket av de fyra tillgängliga färgscheman du väljer tilldelas olika färger till höga värden, mittpunktsvärden och låga värden. <br> Om du ersätter ett mått i tabellen återställs gränserna för villkorsstyrd formatering. Om du ersätter ett mätvärde räknas gränserna för den kolumnen om (där ett mätvärde finns på X-axeln och ett mått på Y-axeln). |
+| Villkorsstyrd formatering | Använder en förkonfigurerad färguppsättning som du väljer för celler. Beroende på vilket av de fyra tillgängliga färgscheman du väljer tilldelas olika färger till höga värden, mittpunktsvärden och låga värden. <br> Om du ersätter en dimension i tabellen återställs de villkorliga formateringsgränserna. Om du ersätter ett mätvärde räknas gränserna för den kolumnen om (där ett mätvärde finns på X-axeln och ett mått på Y-axeln). |
 | Använd procentgränser | Ändra gränsintervallet så att det baseras på procentvärden i stället för absoluta värden. Detta fungerar för mätvärden som endast är procentbaserade (som Studsfrekvens) samt för mätvärden som har ett antal och ett procenttal (som sidvyer). |
 | Automatiskt genererad | Beräkna automatiskt övre/mellersta/nedre gränser baserat på data. Den övre gränsen är det största värdet i den här kolumnen. Den undre gränsen är det lägsta och mittpunkten är medelvärdet av de övre och nedre gränserna. |
 | Anpassad | Tilldela manuellt övre/mellersta/nedre gränser. Då får du den flexibilitet du behöver för att avgöra när ett kolumnvärde blir bra, medelbra eller dåligt. |
@@ -74,9 +74,9 @@ Analysis Workspace stöder [attribuering](/help/analyze/analysis-workspace/attri
 
 1. Klicka på ikonen Inställningar (kugghjulet) i en kolumn i frihandstabellen.
 
-   ![Kryssrutan Attribut](assets/attribution-checkbox.png)
+   ![Kryssrutan Attribution](assets/attribution-checkbox.png)
 
-1. Under **[!UICONTROL Data Settings]**, kontrollera **[!UICONTROL Use non-default attribution model]**. Mer information om olika attribueringsmodeller finns i [Attributionsmodeller](/help/analyze/analysis-workspace/attribution/models.md).
+1. Under **[!UICONTROL Data Settings]**, kontrollera **[!UICONTROL Use non-default attribution model]**. Mer information om olika attribueringsmodeller finns i [Attribution models](/help/analyze/analysis-workspace/attribution/models.md).
 
    ![Välj attribueringsmodell](assets/attribution-select.png)
 

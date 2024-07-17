@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Enkel åtkomst
 
-Enkel åtkomst [mått](overview.md) visar antalet besök där dimensionsposten endast innehöll ett unikt värde för hela besöket. Det här måttet är användbart i samband med alla dimensioner där du vill se vilka dimensionsobjekt som stagnerar under ett besök.
+Enkel åtkomst [Mått](overview.md) visar antalet besök där dimensionsobjektet endast innehöll ett unikt värde för hela besöket. Det här måttet är användbart i samband med alla dimensioner där du vill se vilka dimensionsobjekt som stagnerar under ett besök.
 
 ## Hur det här måttet beräknas
 
@@ -20,9 +20,9 @@ Det här måttet räknar antalet besök där dimensionsobjektet innehöll ett en
 
 ## Skillnad mellan Single Access och Single page visit
 
-Med tanke på [Sida](../dimensions/page.md) dimension, Single access och Single page visit är exakt identiska. Skillnaderna uppstår när du använder andra dimensioner.
+I samband med dimensionen [Sida](../dimensions/page.md) är enkel åtkomst och besök på en sida exakt identiska. Skillnaderna uppstår när du använder andra dimensioner.
 
-* **Enkel åtkomst**: Visar antalet besök där den angivna dimensionsposten inte ändrades för hela besöket. Det är kontextuellt med den dimension som du använder i ditt projekt.
+* **Enkel åtkomst**: Visar antalet besök där den angivna dimensionsobjektet inte ändrades för hela besöket. Det är kontextuellt med den dimension som du använder i ditt projekt.
 * **Besök en sida**: Visar antalet besök där siddimensionen inte ändrades för hela besöket. Även om du använder en annan dimension i rapporten räknas besök som innehåller ett enda unikt sidodimensionsobjekt.
 
 Ta till exempel följande exempel på två träffbesök. Dimensionen i din rapport är [Site section](../dimensions/site-section.md).

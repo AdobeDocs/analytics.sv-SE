@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Datan Warehouse innehåller en funktion som gör att du kan extrahera en lista med besökar-ID:n. Dessa ID:n är inte cookie-ID:n, utan ID:n som du hämtar i en av dina konverteringsvariabler. Även om det finns andra sätt att komma åt den här informationen är följande exempel en genväg till att generera en begäran om Data Warehouse.
 
-Anta till exempel att ert företag skickar e-post med marknadsföring till kunder och potentiella kunder. Var och en av dessa e-postmottagare har ett unikt ID i e-postsystemet (som *`EMAIL Contact ID`*). Du konfigurerar dina e-postmeddelanden så att besökaren, när kontakterna får ett e-postmeddelande och klickar på någon av länkarna, kommer till webbplatsen med ett kampanj-ID och ett unikt e-postkontakt-ID. E-postlänken kan till exempel resultera i följande:
+Anta till exempel att ert företag skickar e-post med marknadsföring till kunder och potentiella kunder. Var och en av dessa e-postmottagare har ett unikt ID i e-postsystemet (till exempel *`EMAIL Contact ID`*). Du konfigurerar dina e-postmeddelanden så att besökaren, när kontakterna får ett e-postmeddelande och klickar på någon av länkarna, kommer till webbplatsen med ett kampanj-ID och ett unikt e-postkontakt-ID. E-postlänken kan till exempel resultera i följande:
 
 ```js
 https://www.test.com/?cid=springmailblast&mid=1363660158

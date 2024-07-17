@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Månad på året
 
-&#39;Månad på året&#39; [dimension](overview.md) rapporterar månaden för ett givet år som en dimensionsartikel. Den här rapporten är värdefull om du vill ha en rapport som delas upp efter årets månad, men inte vill ha ett statiskt datum som dimensionsposter. Du kan sammanställa årsrapporter per månad, så januari-data för det här året aggregeras med januari-data från det senaste året i samma dimensionsobjekt.
+Månad på året [dimension](overview.md) rapporterar månaden för ett givet år som en dimensionspost. Den här rapporten är värdefull om du vill ha en rapport som delas upp efter årets månad, men inte vill ha ett statiskt datum som dimensionsposter. Du kan sammanställa årsrapporter per månad, så januari-data för det här året aggregeras med januari-data från det senaste året i samma dimensionsobjekt.
 
 ## Fyll den här dimensionen med data
 
@@ -20,4 +20,4 @@ Den här dimensionen fungerar som den ska för alla implementeringar. Om en rapp
 
 ## Dimensioner
 
-Dimensioner omfattar årets månader (`January` till `December`), som representerar månaden på året då träffen inträffade.
+Dimensionen innehåller årets månader (`January` till `December`), vilket representerar månaden på året då träffen inträffade.

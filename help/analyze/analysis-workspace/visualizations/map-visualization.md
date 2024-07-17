@@ -1,18 +1,18 @@
 ---
 description: Använd kartvisualisering i ett Workspace-projekt.
-title: Mappa
+title: Karta
 uuid: 6038f336-62a3-4efa-8316-4d7792468db3
 feature: Visualizations
 role: User, Admin
 exl-id: a60544b4-27b6-413a-96ce-ab9487594422
 source-git-commit: f7853f81c6f7d036b35e1d88ac8b5eb2bf84646d
 workflow-type: tm+mt
-source-wordcount: '620'
-ht-degree: 3%
+source-wordcount: '624'
+ht-degree: 2%
 
 ---
 
-# Mappa
+# Karta
 
 ## Översikt {#section_19F740FAF08D47B1AF1EF239A74FC75C}
 
@@ -30,7 +30,7 @@ Här är en videoöversikt:
 
 ## Skapa en kartvisualisering {#section_61BBFA3A7BFD48DA8D305A69D9416299}
 
-1. Dra från listan med visualiseringar **[!UICONTROL Map]** till en friformspanel:
+1. Dra **[!UICONTROL Map]** från listan med visualiseringar till en friformspanel:
 
    ![](assets/map-viz1.png)
 
@@ -39,8 +39,8 @@ Här är en videoöversikt:
 
 | Inställning | Beskrivning |
 | --- | --- |
-| [!UICONTROL Mobile Lat/Long] | Det här alternativet representerar mobilappsdata. Det här alternativet visas bara om du har aktiverat det för din rapportsvit i [!UICONTROL Analytics] > [!UICONTROL Admin] > [!UICONTROL Report Suites] > (välj rapportserie) > [!UICONTROL Edit Settings] >  [!UICONTROL Mobile Management] > [!UICONTROL Enable Location Tracking]. Det här är standardinställningen (om platsspårning är aktiverat). |
-| [!UICONTROL Geographic Dimension] | Det här alternativet representerar geosegmenteringsdata om besökarens plats baserat på besökarens IP-adress. Dessa data omvandlas till [!UICONTROL Country], [!UICONTROL Region]och [!UICONTROL City]. Observera att det inte går till DMA- eller Zip-kodnivån. Nästan alla rapportsviter har den här dimensionen aktiverad. Om du inte har det kontaktar du Adobe kundtjänst för att aktivera geografiska rapporter. |
+| [!UICONTROL Mobile Lat/Long] | Det här alternativet representerar mobilappsdata. Det här alternativet visas bara om du har aktiverat det för din rapportserie i [!UICONTROL Analytics] > [!UICONTROL Admin] > [!UICONTROL Report Suites] > (välj rapportserie) > [!UICONTROL Edit Settings] > [!UICONTROL Mobile Management] > [!UICONTROL Enable Location Tracking]. Det här är standardinställningen (om platsspårning är aktiverat). |
+| [!UICONTROL Geographic Dimension] | Det här alternativet representerar geosegmenteringsdata om besökarens plats baserat på besökarens IP-adress. Dessa data omvandlas till [!UICONTROL Country], [!UICONTROL Region] och [!UICONTROL City]. Observera att det inte går till DMA- eller Zip-kodnivån. Nästan alla rapportsviter har den här dimensionen aktiverad. Om du inte har det kontaktar du Adobe kundtjänst för att aktivera geografiska rapporter. |
 
 1. Klicka på **[!UICONTROL Build]**.
 
@@ -50,19 +50,19 @@ Här är en videoöversikt:
 
 1. Nu kan du
 
-   * **Zooma** på kartan för att förstora vissa områden genom att dubbelklicka på kartan eller använda rullningshjulet. Kartan zoomas enligt var du har placerat markören. Genom zoominteraktion uppdateras den nödvändiga dimensionen (land > stat > stad) automatiskt utifrån zoomnivån.
-   * **Jämför** två eller flera kartvisualiseringar i samma projekt genom att placera dem sida vid sida.
-   * **Visa jämförelser mellan period och period (t.ex. år över år)**:
+   * **Zooma** in på kartan om du vill förstora vissa områden genom att dubbelklicka på kartan eller använda rullningshjulet. Kartan zoomas enligt var du har placerat markören. Genom zoominteraktion uppdateras den nödvändiga dimensionen (land > stat > stad) automatiskt utifrån zoomnivån.
+   * **Jämför** två eller flera mappningsvisualiseringar i samma projekt genom att placera dem sida vid sida.
+   * **Visa jämförelser mellan period och period (till exempel år över år)**:
 
-      * Visa negativa tal: Om du till exempel ritar upp ett årligt mått kan kartan visa -33 % över New York.
+      * Visa negativa tal: Om du till exempel ritar ett årligt mått kan kartan visa -33 % över New York.
       * Med mätvärden av typen procent beräknar klustring det genomsnittliga procentvärdet.
-      * Ett grönt/rött färgschema: Positiv/negativ
-   * **Rotera** kartan i 2D eller 3D genom att hålla ned [!UICONTROL Ctrl] och flytta kartan.
+      * Ett grönt/rött färgschema: positiv/negativ
 
-   * **Växla** till en annan vy, t.ex. värmekartan, med [inställningar](/help/analyze/analysis-workspace/visualizations/map-visualization.md#section_5F89C620A6AA42BC8E0955478B3A427E) beskrivs nedan. Observera att bubbelvyn är standardinställningen.
+   * **Rotera** kartan i 2D eller 3D genom att hålla ned tangenten [!UICONTROL Ctrl] och flytta kartan.
 
+   * **Växla** till en annan vy, till exempel värmekartan, med [inställningarna](/help/analyze/analysis-workspace/visualizations/map-visualization.md#section_5F89C620A6AA42BC8E0955478B3A427E) som beskrivs nedan. Observera att bubbelvyn är standardinställningen.
 
-1. **Spara** projektet för att spara alla kartinställningar (koordinater, zoomning, rotation).
+1. **Spara** projektet om du vill spara alla kartinställningar (koordinater, zoomning, rotation).
 1. Tabellen på frihand, nedanför visualiseringen, kan fyllas med genom att du drar i platsdimensioner och mått från den vänstra listen:
 
    ![](assets/location-dimensions.png)
@@ -71,17 +71,17 @@ Här är en videoöversikt:
 
 Det finns två uppsättningar inställningar för kartan:
 
-The **skiftnyckelsikon** längst upp till höger visas den inledande dialogrutan där du kan ändra måttet och datakällan:
+Ikonen **skiftnyckel** längst upp till höger visar den inledande dialogrutan där du kan ändra måttet och datakällan:
 
 ![](assets/map-wrench.png)
 
-Klicka på **kugghjulsikon** visar dessa visualiseringsinställningar:
+Om du klickar på **kugghjulsikonen** visas följande visualiseringsinställningar:
 
 | Inställning | Beskrivning |
 |--- |--- |
 | Bubblor | Ritar händelser med bubblor. Ett bubbeldiagram är ett diagram med flera variabler och som är ett kors mellan ett punktdiagram och ett proportionellt ytdiagram. Det här är standardvyn. |
 | Heatmap | Ritar händelser med hjälp av en heatmap. En heatmap är en grafisk representation av data där de enskilda värdena i en matris representeras som färger. |
-| Format: Färgtema | Visar färgschemat för värmekartan och bubblorna. Du kan välja mellan Coral, Reds, Green eller Blues. Standardvärdet är Koral. |
+| Stilar: Färgtema | Visar färgschemat för värmekartan och bubblorna. Du kan välja mellan Coral, Reds, Green eller Blues. Standardvärdet är Koral. |
 | Format: Kartstil | Du kan välja mellan Basic, Streets, Bright, Light, Dark och Satellite. |
 | Klusterradie | Grupperar datapunkter som ligger inom det angivna antalet pixlar. Standardvärdet är 50. |
 | Anpassat maxvärde | Gör att du kan ändra tröskelvärdet för det högsta värdet för kartan. Om du justerar det här värdet justeras skalan för värdena för bubblor/heatmap (färg och storlek) i förhållande till det anpassade maxvärdet. |

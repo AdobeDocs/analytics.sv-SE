@@ -16,7 +16,7 @@ När du visar data i Analysis Workspace visas i de flesta fall beräknade mätv�
 
 När summorna visas beräknas de ofta på serversidan, vilket innebär att den totala mängden avduplicerade mått, som besök eller besökare. Under vissa omständigheter genereras beräknade värden på klientsidan genom summering över tabellraderna, vilket innebär att summan inte avduplicerar mått som besök eller besökare. Detta inträffar:
 
-* När [statiska rader](/help/analyze/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md) används i frihandstabeller och **[!UICONTROL Show as sum of current rows]** (standard) är valt.
-* I [Visualisering av ring](/help/analyze/analysis-workspace/visualizations/donut.md)så att siffrorna blir upp till 100 %.
+* När [statiska rader](/help/analyze/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md) används i frihandstabeller och alternativet **[!UICONTROL Show as sum of current rows]** (standard) är markerat.
+* I [Donutvisualisering](/help/analyze/analysis-workspace/visualizations/donut.md), så att tal blir upp till 100 %.
 
-Mer information om totalsummor i Analysis Workspace finns på [Summor för arbetsyta](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/workspace-totals.html#static-row-total).
+Mer information om totalsummor i Analysis Workspace finns på [Workspace totals](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/workspace-totals.html#static-row-total).

@@ -5,8 +5,8 @@ feature: Data Feeds
 exl-id: b17e333e-290f-42e4-b304-1e34282237a7
 source-git-commit: 4daa5c8bdbcb483f23a3b8f75dde9eeb48516db8
 workflow-type: tm+mt
-source-wordcount: '492'
-ht-degree: 2%
+source-wordcount: '493'
+ht-degree: 0%
 
 ---
 
@@ -16,12 +16,12 @@ Jobb är enskilda uppgifter som returnerar en komprimerad fil. De skapas och sty
 
 Få åtkomst till jobbhantering för datafeed genom att följa dessa steg:
 
-1. Logga in på [experience.loud.adobe.com](https://experiencecloud.adobe.com).
+1. Logga in på [ExperienceCloud.adobe.com](https://experiencecloud.adobe.com).
 2. Klicka på menyn med nio rutnät i det övre högra hörnet och klicka sedan på [!UICONTROL Analytics].
-3. Klicka på [!UICONTROL Admin] > [!UICONTROL Data Feeds].
+3. Klicka på [!UICONTROL Admin] > [!UICONTROL Data Feeds] på den översta menyn.
 4. Klicka på fliken Jobb uppe.
 
-![Meny för datafeed](assets/AdminMenu.png)
+![Menyn Datafeed](assets/AdminMenu.png)
 
 ## Navigera i gränssnittet
 
@@ -43,7 +43,7 @@ Använd sökning för att hitta ett jobb efter namn.
 
 ### Feeds och jobb
 
-Klicka på fliken Feeds för att visa överliggande feeds som skapar dessa jobb. Se [Hantera dataflöden](df-manage-feeds.md).
+Klicka på fliken Feeds för att visa överliggande feeds som skapar dessa jobb. Se [Hantera datafeeds](df-manage-feeds.md).
 
 ### Kolumner
 
@@ -53,16 +53,16 @@ Varje jobb visar flera kolumner med information om det. Klicka på en kolumnrubr
 
 * **Feed-ID**: Visar feed-ID:t, en unik identifierare. Jobb som skapas av samma feed har samma feed-ID.
 * **Jobb-ID**: En unik identifierare för jobbet. Alla jobb har ett annat jobb-ID.
-* **Feednamn**: Obligatorisk kolumn. Visar feed-namnet. Jobb som skapas av samma feed har samma flödesnamn.
-* **Report Suite**: Rapportsviten som jobbet refererar till data från.
+* **Feed-namn**: Obligatorisk kolumn. Visar feed-namnet. Jobb som skapas av samma feed har samma flödesnamn.
+* **Rapportsviten**: Rapportsviten som jobbet refererar till data från.
 * **Report Suite-ID**: Rapportsvitens unika identifierare.
-* **Starttid**: Den tid som jobbet startades. Datum och tid visas i rapportsvitens tidszon med GMT-förskjutning. Dagliga matningar börjar vanligtvis nära midnatt i rapportsvitens tidszon.
+* **Starttid**: Den tidpunkt då jobbet startades. Datum och tid visas i rapportsvitens tidszon med GMT-förskjutning. Dagliga matningar börjar vanligtvis nära midnatt i rapportsvitens tidszon.
 * **Status**: Status för feeden.
    * Väntar på data: Jobbet är i drift och data för rapportfönstret samlas in.
-   * Bearbetar: Jobbet skapar datafilerna och förbereder att skicka dem.
+   * Bearbetning: Jobbet skapar datafilerna och förbereder att skicka dem.
    * Slutförd: Jobbet slutfördes utan problem.
-   * Misslyckades: Jobbet slutfördes inte. Se [Felsöka dataflöden](troubleshooting.md) för att fastställa orsaken till felet.
+   * Misslyckades: Jobbet slutfördes inte. Se [Felsöka datafeeds](troubleshooting.md) för att fastställa orsaken till felet.
    * Väntar på export: Data för rapportfönstret har ännu inte bearbetats fullständigt.
    * Inga data: Det finns inga data i rapportsviten för det begärda rapportfönstret.
-* **Slutförandetid**: Tiden då jobbet slutfördes. Datum och tid visas i rapportsvitens tidszon med GMT-förskjutning.
+* **Slutförandetid**: Tiden när jobbet slutfördes. Datum och tid visas i rapportsvitens tidszon med GMT-förskjutning.
 * **Begärt datum**: Filens rapportfönster. Dagliga matningar visar vanligtvis 00:00 - 23:59 med en GMT-förskjutning, vilket anger en heldag baserat på rapportsvitens tidszon. Timmatningar visar den individuella timmen jobbet är avsett för.

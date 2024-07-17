@@ -14,31 +14,31 @@ ht-degree: 5%
 
 Adobe Analytics-gränssnittet består av följande nyckelområden, bland annat flikar för att hantera projekt i Analysis Workspace, hantera komponenter, verktyg och administratörsfunktioner.
 
-![Fliken Arbetsyta](assets/landing-all2.png)
+![Fliken Workspace](assets/landing-all2.png)
 
 I följande avsnitt beskrivs de olika områdena i Analysis Workspace:
 
-## Fliken Arbetsyta
+## Workspace tab
 
-The [!UICONTROL Workspace] -fliken visar [!UICONTROL Projects] som standard, vilket visar företagsmappen, eventuella personliga mappar som du har skapat, dina projekt och Mobile Scorecards.
+På fliken [!UICONTROL Workspace] visas området [!UICONTROL Projects] som standard, vilket visar företagsmappen, eventuella personliga mappar som du har skapat, dina projekt och Mobile Scorecards.
 
-1. I Adobe Analytics väljer du [!UICONTROL **Arbetsyta**] -fliken.
+1. I Adobe Analytics väljer du fliken [!UICONTROL **Workspace**].
 
-   ![Fliken Arbetsyta](assets/landing-all2.png)
+   ![Fliken Workspace](assets/landing-all2.png)
 
-Mer information om funktioner finns på [!UICONTROL Workspace] flik, se [Adobe Analytics landningssida](/help/analyze/landing.md).
+Mer information om funktioner på fliken [!UICONTROL Workspace] finns på [Adobe Analytics startsida](/help/analyze/landing.md).
 
 ## Fliken Rapport
 
-Använd [!UICONTROL **Rapporter**] området i den vänstra listen på vänster sida [!UICONTROL **Arbetsyta**] -fliken. Mer information finns i *Navigera på fliken Rapporter* in [Adobe Analytics landningssida](/help/analyze/landing.md).
+Använd området [!UICONTROL **Rapporter**] i den vänstra listen på fliken [!UICONTROL **Workspace**]. Mer information finns i *Navigera på fliken Rapporter* på [Adobe Analytics startsida](/help/analyze/landing.md).
 
 ## Fliken Komponenter
 
-The [!UICONTROL Components] -fliken innehåller funktioner som hjälper dig att finjustera och underlätta dataanalysen.
+Fliken [!UICONTROL Components] innehåller funktioner som hjälper dig att finjustera och förbättra dataanalysen.
 
-1. I Adobe Analytics väljer du [!UICONTROL **Komponenter**] tabbtangenten och sedan välja [!UICONTROL **Alla komponenter**].
+1. I Adobe Analytics väljer du fliken [!UICONTROL **Komponenter**] och sedan [!UICONTROL **Alla komponenter**].
 
-   ![Fliken Arbetsyta](assets/components-tab.png)
+   ![Fliken Workspace](assets/components-tab.png)
 
 2. Välj någon av följande produktfunktioner för att konfigurera den:
 
@@ -46,15 +46,15 @@ The [!UICONTROL Components] -fliken innehåller funktioner som hjälper dig att 
    | Funktioner | Funktion | Mer information |
    |---------|----------|----------|
    | Segment | Med Adobe Analytics kan ni skapa, hantera, dela och tillämpa kraftfulla, fokuserade målgruppssegment i era rapporter med hjälp av Analytics-funktionerna, Adobe Experience Cloud, Adobe Target och andra integrerade Adobe-produkter. | [Analytics-segmentering](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-home.html) |
-   | Beräknade mått | Beräknade och avancerade beräknade (eller härledda) mått är anpassade mått som du kan skapa utifrån befintliga mätvärden.  Med dem kan marknadsförare, produktchefer och analytiker ställa frågor om data utan att behöva ändra implementeringen av Analytics. | [Beräknade och avancerade beräknade (härledda) mätvärden](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/cm-overview.html) |
+   | Beräknade mått | Beräknade och avancerade beräknade (eller härledda) mått är anpassade mått som du kan skapa utifrån befintliga mätvärden.  Med dem kan marknadsförare, produktchefer och analytiker ställa frågor om data utan att behöva ändra implementeringen av Analytics. | [Beräknade och avancerade beräknade (härledda) värden](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/cm-overview.html) |
    | Datumintervall | Analysis Workspace innehåller en lista med standarddatumintervall som användare kan använda när de skapar analyser. Dessutom kan du skapa anpassade datumintervall och göra dem tillgängliga för användare i Analysis Workspace. | [Skapa anpassade datumintervall](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/components/calendar-date-ranges/custom-date-ranges.html) <!-- should create an article in the Components Guide for managing/creating date ranges. This article in the Tools Guide needs updating. --> |
    | Virtuella rapportsviter | Virtuella rapportsviter segmenterar era Adobe Analytics-data så att ni kan styra åtkomsten till varje segment. | [Översikt över Virtual Report Suites](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-about.html) |
    | Larm | Intelligenta aviseringar ger mer exakt kontroll över aviseringar och integrerar avvikelseidentifiering med varningssystemet. | [Intelligenta aviseringar](https://experienceleague.adobe.com/docs/analytics/components/alerts/intellligent-alerts.html) |
-   | Anteckningar | Anteckningar i Workspace gör att du effektivt kan kommunicera kontextuella datanunkter och insikter till din organisation. De gör att du kan koppla kalenderhändelser till specifika dimensioner och mätvärden. | [Hantera anteckningar](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/components/annotations/manage-annotations.html) |
+   | Anteckningar | Anteckningar i Workspace gör att ni effektivt kan kommunicera kontextuella datanunkter och insikter till er organisation. De gör att du kan koppla kalenderhändelser till specifika dimensioner och mätvärden. | [Hantera anteckningar](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/components/annotations/manage-annotations.html) |
    | Klassificeringsuppsättningar | Klassificeringsuppsättningar har ett enda gränssnitt för att hantera klassificeringar och regler. <p>En klassificering är ett sätt att kategorisera Analytics-variabeldata och sedan visa data på olika sätt när du genererar rapporter. Du upprättar en relation mellan ett variabelvärde och metadata som är relaterade till det värdet. Klassificeringar kan användas för de flesta anpassade dimensioner, som spårningskod, props och eVars.</p> | [Översikt över klassificeringsuppsättningar](https://experienceleague.adobe.com/docs/analytics/components/classifications/sets/overview.html) |
    | Platser | För att kunna importera Adobe Analytics-klassificeringsdata från ett molnmål måste du först lägga till och konfigurera platsen där du vill att klassificeringsdata ska samlas in. Du kan skapa, redigera och ta bort platser. | [Platshanteraren](https://experienceleague.adobe.com/docs/analytics/components/locations/locations-manager.html) |
    | Schemalagda projekt | När du hanterar schemalagda projekt kan du redigera och ta bort återkommande projektscheman, söka efter ett schema i sökfältet eller med filteralternativen i den vänstra listen och filtrera efter tagg, godkända scheman, ägare med mera. | [Schemalagda projekt](/help/components/scheduled-projects-manager.md) |
-   | Kontrollpaneler | Kontrollpaneler skapas för att visualisera mätvärden och tillhandahålla interaktiv analysfunktion med data. Genom att klicka på objekt i en kontrollpanel kan du snabbt och enkelt segmentera data för att hämta information från din analys. <p>Instrumentpaneler ingår i Datan Workbench. Läs mer om Datan Workbench [Meddelande om att produkten är slut](https://experienceleague.adobe.com/docs/data-workbench/using/eol.html). | [Instrumentpanelshanteraren](https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/dashboard-manage.html) |
+   | Kontrollpaneler | Kontrollpaneler skapas för att visualisera mätvärden och tillhandahålla interaktiv analysfunktion med data. Genom att klicka på objekt i en kontrollpanel kan du snabbt och enkelt segmentera data för att hämta information från din analys. <p>Instrumentpaneler ingår i Datan Workbench. Läs mer om Datan Workbench [Slutet av livscykelmeddelandet](https://experienceleague.adobe.com/docs/data-workbench/using/eol.html). | [Kontrollpanelshanteraren](https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/dashboard-manage.html) |
    | Schemalagda rapporter | Administratörsnivåanvändare kan se och hantera schemalagda rapporter i hela organisationen. | [Schemalagd rapportkö](https://experienceleague.adobe.com/docs/analytics/components/scheduled-reports-admin.html) |
    | Rapportinställningar | Dessa inställningar avser äldre Adobe Analytics-produkter, som inte innehåller Analysis Workspace och dess tillhörande komponenter. Gå till Komponenter > Inställningar om du vill göra ändringar i Analysis Workspace-inställningarna. |  |
    | Inställningar | Hantera inställningar för Analysis Workspace och dess tillhörande komponenter för alla nya projekt eller paneler som du skapar. Befintliga projekt och paneler påverkas inte. | [Inställningar](/help/analyze/analysis-workspace/user-preferences.md) |
@@ -65,9 +65,9 @@ The [!UICONTROL Components] -fliken innehåller funktioner som hjälper dig att 
 
 <!-- The Tools tab ... -->
 
-1. I Adobe Analytics väljer du [!UICONTROL **verktyg**] tabbtangenten och sedan välja [!UICONTROL **Alla verktyg**].
+1. I Adobe Analytics väljer du fliken [!UICONTROL **Verktyg**] och sedan [!UICONTROL **Alla verktyg**].
 
-   ![Fliken Arbetsyta](assets/tools-tab.png)
+   ![Fliken Workspace](assets/tools-tab.png)
 
 2. Välj någon av följande produktfunktioner för att konfigurera den:
 
@@ -87,16 +87,16 @@ The [!UICONTROL Components] -fliken innehåller funktioner som hjälper dig att 
 
 På fliken Admin finns funktioner och konfigurationsalternativ för att administrera Adobe Analytics.
 
-1. I Adobe Analytics väljer du [!UICONTROL **Administratör**] tabbtangenten och sedan välja [!UICONTROL **Alla administratörer**].
+1. I Adobe Analytics väljer du fliken [!UICONTROL **Admin**] och sedan [!UICONTROL **All admin**].
 
-   ![Fliken Arbetsyta](assets/admin-tab.png)
+   ![Fliken Workspace](assets/admin-tab.png)
 
 2. Välj någon av följande produktfunktioner för att konfigurera den:
 
    | Funktioner | Funktion | Mer information |
    |---------|----------|----------|
-   | Analysanvändare och -resurser | De flesta funktionerna för användar- och produkthantering finns nu bara i [Adobe Admin Console](https://helpx.adobe.com/se/enterprise/using/admin-console.html), är de administrativa funktionerna för att överföra resurser från en användare till en annan, samt att ange ett förfallodatum för ett användarkonto, bara tillgängliga från Adobe Analytics Admin. | [Överför användarresurser eller ange förfallodatum för konton](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/user-product-management/users-assets.html) |
-   | Migrering av användar-ID | Med migreringen av användar-ID:n i Analytics kan administratörer enkelt migrera användarkonton i Analytics-användarhantering till Adobe Admin Console. | [Migrering av Analytics-användare till Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/user-product-management/migrate-users/c-migration-tool.html) |
+   | Analysanvändare och -resurser | De flesta funktionerna för användar- och produkthantering är nu bara tillgängliga i [Adobe Admin Console](https://helpx.adobe.com/se/enterprise/using/admin-console.html), men de administrativa funktionerna för överföring av resurser från en användare till en annan, samt för att ange ett förfallodatum för ett användarkonto, är bara tillgängliga i området Adobe Analytics Admin. | [Överför användarresurser eller ange utgångsdatum för kontot](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/user-product-management/users-assets.html) |
+   | Migrering av användar-ID | Med migreringen av användar-ID:n i Analytics kan administratörer enkelt migrera användarkonton i Analytics-användarhantering till Adobe Admin Console. | [Migrering av analysanvändare till Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/user-product-management/migrate-users/c-migration-tool.html) |
    | Startsida för användarhantering (äldre) | Användar- och produkthantering har flyttats till Adobe Admin Console. Använd Adobe Admin Console för att börja hantera användarbehörigheter för Adobe Analytics-användare. | [Analyser i Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html) |
    | Grupper (äldre) | Grupphanteringen har flyttat till Adobe Admin Console. Använd Adobe Admin Console för att komma igång med att hantera grupper för Adobe Analytics. | [Analyser i Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html) |
    | Rapportera åtkomst till programsvit | Metoden för att bevilja åtkomst till rapportsvitens verktyg har flyttats till Adobe Admin Console. Använd Adobe Admin Console för att ge Adobe Analytics-användare åtkomst till rapportsviten. | [Produktprofilbehörigheter för Report Suite-verktyg](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/report-suite-tools.html) |
@@ -107,11 +107,11 @@ På fliken Admin finns funktioner och konfigurationsalternativ för att administ
    | Skapa klassificeringsregel | I stället för att underhålla och överföra klassificeringar varje gång spårningskoderna ändras kan du skapa automatiska, regelbaserade klassificeringar och använda dem i flera rapportsviter. | [Arbetsflöde för Classification Rule Builder](https://experienceleague.adobe.com/docs/analytics/components/classifications/classifications-rulebuilder/classification-rule-builder.html) |
    | Datakällor | Använd datakällhanteraren för att skapa, redigera eller inaktivera datakällor. Du kan också använda det här gränssnittet för att spåra status för filer som överförts till FTP-platser för datakällor. | [Hantera datakällor](https://experienceleague.adobe.com/docs/analytics/import/data-sources/manage.html) |
    | Kodhanteraren | Med kodhanteraren kan du hämta datainsamlingskod för webb- och mobilplattformar | [Kodhanteraren](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/code-manager-admin.html) |
-   | Trafikhantering | På sidan Traffic Management kan du ange förväntade ändringar av trafikvolymen. Med de här inställningarna kan Adobe tilldela lämpliga resurser för att säkerställa att trafiken kan spåras och behandlas i tid. | [Trafikstyrning - översikt](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/traffic-management/traffic-management.html) |
+   | Trafikhantering | På sidan Traffic Management kan du ange förväntade ändringar av trafikvolymen. Med de här inställningarna kan Adobe tilldela lämpliga resurser för att säkerställa att trafiken kan spåras och behandlas i tid. | [Trafikhanteringsöversikt](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/traffic-management/traffic-management.html) |
    | Serversamtalsanvändning | Ett serveranrop, även kallat &quot;träff&quot; eller &quot;bildbegäran&quot;, är en instans där data skickas till Adobe-servrar för bearbetning. Det finns en kontrollpanel för användning av serversamtal som spårar dina förbrukningsdata för serversamtal och jämför dem med din avtalsgräns. Du kan ställa in varningsmeddelanden för att förhindra övertäckning. | [Översikt över användningen av serversamtal](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-call-usage/overage-overview.html) |
    | Loggar | Logga filer som hjälper dig att se när användare loggar in, deras användning, åtkomst, rapportsviter och administratörsändringar. | [Loggar](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/logs.html) |
    | Advertising Analytics | Konfigurera Adobe Analytics så att alla dina Google- och Bing-betalsökningsdata visas sida vid sida. | [Konfigurera Advertising Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/advertising-analytics-config.html) |
-   | Dataflöden | Dataflöden är ett kraftfullt sätt att få ut rådata från Adobe Analytics. Dessa rådata kan användas på andra plattformar utanför Adobe efter eget gottfinnande. | [Översikt över Analytics Data Feed](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-overview.html) |
+   | Dataflöden | Dataflöden är ett kraftfullt sätt att få ut rådata från Adobe Analytics. Dessa rådata kan användas på andra plattformar utanför Adobe efter eget gottfinnande. | [Översikt över dataflöden i analyser](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-overview.html) |
    | Exkludera efter IP | Du kan undanta data från specifika IP-adresser, som interna webbplatsaktiviteter, platstestning och personalanvändning, från dina rapporter. Om du exkluderar data förbättras rapportens exakthet genom att IP-adressdata utesluts. Dessutom kan du ta bort data från denial of service eller andra skadliga händelser som kan förvränga rapportdata. Du kan konfigurera undantag eller använda brandväggen. | [Exkludera efter IP-adress](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/exclude-ip.html) |
    | Rapporteringsaktivitetshanteraren | Med Rapporteringsaktivitetshanteraren kan du se rapporteringskapaciteten för varje rapportsvit i organisationen. Den ger detaljerad insyn i hur man rapporterar förbrukning och hjälper er att enkelt diagnostisera och åtgärda kapacitetsproblem under perioder med hög rapporteringsnivå. | [Rapporteringsaktivitetshanteraren](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/reporting-activity.html) |
    | Etikettering av integritetsskydd för datahantering | Med hjälp av etikettrapportsvitdata kan du tilldela identiteter, känslighet och datastyrningsetiketter till varje variabel i en viss rapportserie. | [Data i etikettrapportsvit](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/data-governance/data-labels/gdpr-setup-reportsuite.html) |
@@ -137,6 +137,6 @@ Mer information om Analysis Workspace finns i [Analysis Workspace - översikt](/
 | Plats i bild | Namn och funktion |
 |---------|----------|
 | A | **Längst till vänster:** Innehåller flikar för att lägga till paneler, visualiseringar och komponenter i Analysis Workspace. Innehåller även ikonen för datamordlista som används för att öppna datamappningslistan. |
-| B | **Vänster räl:** Beroende på vilken flik som är markerad längst till vänster, innehåller det här området individuella paneler, visualiseringar eller komponenter. |
-| C | **Arbetsyta:** Det här är huvudområdet där du drar innehåll från vänster spår för att bygga ditt projekt. Projektet uppdateras dynamiskt när du lägger till paneler, visualiseringar och komponenter på arbetsytan. |
-| D | **Listruta för rapportsvit:** För varje panel i Analysis Workspace kan du med rapportsvitens nedrullningsbara meny välja den rapportserie som du vill använda som datakälla. |
+| B | **Vänster räl:** Beroende på vilken flik som är markerad i det yttersta vänstra fältet innehåller det här området individuella paneler, visualiseringar eller komponenter. |
+| C | **Arbetsyta:** Det här är huvudområdet där du drar innehåll från vänster spår för att skapa projektet. Projektet uppdateras dynamiskt när du lägger till paneler, visualiseringar och komponenter på arbetsytan. |
+| D | **Listrutan Rapporteringsserie:** För varje panel i Analysis Workspace kan du välja den rapportserie som du vill använda som datakälla i den nedrullningsbara menyn för rapportsviten. |

@@ -12,7 +12,7 @@ ht-degree: 2%
 
 # Analytics-Dimensioners kompatibilitet
 
-Den här sidlistan [dimensioner](overview.md) stöds i deras respektive Analytics-funktioner.
+På den här sidan visas [dimensioner](overview.md) som stöds i deras respektive Analytics-funktioner.
 
 >[!NOTE]
 >
@@ -33,8 +33,8 @@ Den här sidlistan [dimensioner](overview.md) stöds i deras respektive Analytic
 | Cookie-stöd | `cookie` |
 | Länder | `geocountry` |
 | Kundlojalitet | `customerloyalty` |
-| Anpassade konverteringsvariabler | `evar1`, `evar2`, osv. |
-| Custom Insight Vars | `prop1`, `prop2`, osv. |
+| Anpassade konverteringsvariabler | `evar1`, `evar2` osv. |
+| Custom Insight Vars | `prop1`, `prop2` osv. |
 | Egen länk | `customlink` |
 | Dagar före första köpet | `daysbeforefirstpurchase` |
 | Dagar sedan senaste köp | `dayssincelastpurchase` |
@@ -284,7 +284,7 @@ Den här sidlistan [dimensioner](overview.md) stöds i deras respektive Analytic
 
 ### Nielsen Integration
 
-Mer information om hur du implementerar integreringen finns i [Nielsen Extension](https://exchange.adobe.com/experiencecloud.details.101361.html).
+Mer information om hur du implementerar den här integreringen finns i [Nielsen-tillägget](https://exchange.adobe.com/experiencecloud.details.101361.html).
 
 | Dimensionens namn (visas i analysgränssnittet) | Dimension-ID (används i API-begäranden) |
 |--- |--- |

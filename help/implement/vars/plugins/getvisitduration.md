@@ -15,17 +15,17 @@ ht-degree: 0%
 
 {{plug-in}}
 
-The `getVisitDuration` plugin-programmet håller reda på hur lång tid i minuter besökaren har befunnit sig på webbplatsen fram till den tidpunkten. Adobe rekommenderar att du använder denna plugin om du vill spåra den kumulativa tiden på webbplatsen fram till den tidpunkten eller för att spåra den tid det tar att utföra en aktivitet. Den här plugin-programmet spårar inte tiden mellan händelser. Om du vill ha den här funktionen använder du [`getTimeBetweenEvents`](gettimebetweenevents.md) plugin-program.
+Plugin-programmet `getVisitDuration` håller reda på hur lång tid i minuter som besökaren har varit på webbplatsen fram till den tidpunkten. Adobe rekommenderar att du använder denna plugin om du vill spåra den kumulativa tiden på webbplatsen fram till den tidpunkten eller för att spåra den tid det tar att utföra en aktivitet. Det här plugin-programmet spårar inte tiden mellan händelser. Om du vill ha den här funktionen använder du plugin-programmet [`getTimeBetweenEvents`](gettimebetweenevents.md).
 
 ## Installera plugin-programmet med Web SDK-tillägget
 
 Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-programmen med Web SDK.
 
-1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
-1. Klicka **[!UICONTROL Tags]** till vänster och klicka sedan på den önskade taggegenskapen.
-1. Klicka **[!UICONTROL Extensions]** till vänster och klicka sedan på **[!UICONTROL Catalog]** tab
-1. Leta rätt på och installera **[!UICONTROL Common Web SDK Plugins]** tillägg.
-1. Klicka **[!UICONTROL Data Elements]** till vänster och klicka sedan på dataelementet.
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med dina inloggningsuppgifter för AdobeID.
+1. Klicka på **[!UICONTROL Tags]** till vänster och klicka sedan på den önskade taggegenskapen.
+1. Klicka på **[!UICONTROL Extensions]** till vänster och sedan på fliken **[!UICONTROL Catalog]**
+1. Leta reda på och installera tillägget **[!UICONTROL Common Web SDK Plugins]**.
+1. Klicka på **[!UICONTROL Data Elements]** till vänster och klicka sedan på det önskade dataelementet.
 1. Ange det önskade dataelementnamnet med följande konfiguration:
    * Tillägg: Vanliga SDK-plugin-program för webben
    * Dataelement: `getVisitDuration`
@@ -39,10 +39,10 @@ Denna plugin stöds ännu inte för användning i en manuell implementering av W
 
 Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-programmen med Adobe Analytics.
 
-1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med dina inloggningsuppgifter för AdobeID.
 1. Klicka på den önskade taggegenskapen.
-1. Gå till [!UICONTROL Extensions] klickar du på [!UICONTROL Catalog] knapp
-1. Installera och publicera [!UICONTROL Common Analytics Plugins] extension
+1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Catalog]
+1. Installera och publicera tillägget [!UICONTROL Common Analytics Plugins]
 1. Om du inte redan har det skapar du en regel med namnet&quot;Initiera plugin-program&quot; med följande konfiguration:
    * Villkor: Inget
    * Händelse: Kärna - Bibliotek inläst (sidan ovanpå)
@@ -55,10 +55,10 @@ Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-program
 
 Om du inte vill använda tillägget för Common Analytics-plugin-program kan du använda den anpassade kodredigeraren.
 
-1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med dina inloggningsuppgifter för AdobeID.
 1. Klicka på önskad egenskap.
-1. Gå till [!UICONTROL Extensions] klickar du på **[!UICONTROL Configure]** under Adobe Analytics-tillägget.
-1. Expandera [!UICONTROL Configure tracking using custom code] dragspelspanel, som visar [!UICONTROL Open Editor] -knappen.
+1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen **[!UICONTROL Configure]** under Adobe Analytics-tillägget.
+1. Expandera dragspelsfliken [!UICONTROL Configure tracking using custom code] som visar knappen [!UICONTROL Open Editor].
 1. Öppna den anpassade kodredigeraren och klistra in den plugin-kod som finns nedan i redigeringsfönstret.
 1. Spara och publicera ändringarna i Analytics-tillägget.
 
@@ -75,14 +75,14 @@ function getVisitDuration(){if(arguments&&"-v"===arguments[0])return{plugin:"get
 
 ## Använda plugin-programmet
 
-The `getVisitDuration` funktionen använder inte några argument. Det returnerar ett av följande värden:
+Funktionen `getVisitDuration` använder inga argument. Det returnerar ett av följande värden:
 
 * `"first hit of visit"`
 * `"less than a minute"`
 * `"1 minute"`
 * `"[x] minutes"` (där `[x]` är antalet minuter som gått sedan besökaren landade på platsen)
 
-Denna plugin skapar en cookie från första part som kallas `"s_dur"`, vilket är antalet millisekunder som har gått sedan besökaren landade på platsen. Kakan går ut efter 30 minuters inaktivitet.
+Denna plugin skapar en cookie för första part med namnet `"s_dur"`, vilket är antalet millisekunder som har gått sedan besökaren landade på webbplatsen. Kakan går ut efter 30 minuters inaktivitet.
 
 ## Exempel
 

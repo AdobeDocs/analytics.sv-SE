@@ -2,7 +2,8 @@
 description: Beskriver hur du kopierar ett beräknat mått i hanteraren för beräknade värden
 title: Kopiera beräknade värden
 feature: Calculated Metrics
-source-git-commit: b61de8f7a6f1d2d875fa6268c53a3ad1b61f25dd
+exl-id: ddc18c22-30b4-4ccb-ac6b-e74dfde98a27
+source-git-commit: 9f70dbeb9dfe54897915213480f05cbdfaf920ef
 workflow-type: tm+mt
 source-wordcount: '91'
 ht-degree: 0%
@@ -15,7 +16,7 @@ När du skapar ett nytt beräknat mått är det ibland enklare att kopiera ett b
 
 Så här kopierar du beräknade värden i hanteraren för beräknade värden:
 
-1. I Adobe Analytics väljer du **[!UICONTROL Components]** tabbtangenten och sedan välja **[!UICONTROL Calculated metrics]**.
+1. I Adobe Analytics väljer du fliken **[!UICONTROL Components]** och sedan **[!UICONTROL Calculated metrics]**.
 
 1. Välj det beräknade mätvärde som du vill kopiera i Beräknat mätvärde.
 

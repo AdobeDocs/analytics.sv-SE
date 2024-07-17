@@ -12,12 +12,12 @@ ht-degree: 0%
 
 # Betalsökning
 
-&quot;Betalsökning&quot; [dimension](overview.md) Med kan du titta på alla mätvärden och jämföra dem mellan betalsökningar och naturtrogna sökningar. Alla andra träffar utanför sökmotorer utelämnas. Denna dimension är användbar för att förstå hur dina betalda sökningar jämfört med organiska sökningar.
+Med &quot;betald sökning&quot; [dimension](overview.md) kan du titta på alla mått och jämföra dem mellan betald sökning och naturlig sökning. Alla andra träffar utanför sökmotorer utelämnas. Denna dimension är användbar för att förstå hur dina betalda sökningar jämfört med organiska sökningar.
 
 ## Fyll den här dimensionen med data
 
-Det enda kravet för att denna dimension ska fungera på rätt sätt är att ha [Påvisande av betald sökning](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/paid-search-detection/paid-search-detection.md) korrekt konfigurerad i rapportsvitens inställningar. Om betalsökningsidentifiering är korrekt konfigurerat och en rapportserie har data fungerar alltid den här dimensionen.
+Det enda kravet för att den här dimensionen ska fungera korrekt är att [betald sökidentifiering](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/paid-search-detection/paid-search-detection.md) har konfigurerats korrekt i inställningarna för rapportsviten. Om betalsökningsidentifiering är korrekt konfigurerat och en rapportserie har data fungerar alltid den här dimensionen.
 
 ## Dimensioner
 
-Dimensioner innehåller två statiska värden: `"Natural"` och `"Paid"`. Om ett besök matchar villkoren för en sökmotor och även matchar betalsökningsidentifiering, tillhör det `"Paid"` dimensionsobjekt. Om ett besök uppfyller villkoren för en sökmotor och gör det *not* matchar betald sökidentifiering, den tillhör `"Natural"` dimensionsobjekt.
+Dimensioner innehåller två statiska värden: `"Natural"` och `"Paid"`. Om ett besök uppfyller villkoren för en sökmotor och även matchar betalsökningsidentifiering, tillhör det dimensionsobjektet `"Paid"`. Om ett besök matchar villkoren för en sökmotor och *inte* matchar betalsökningsidentifiering, tillhör det dimensionsobjektet `"Natural"`.

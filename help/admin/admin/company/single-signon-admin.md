@@ -15,4 +15,4 @@ ht-degree: 0%
 
 Enkel inloggning i Adobe Experience Cloud implementeras via Admin Console.
 
-Se [Användarhandbok för administration](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/set-up-identity.ug.html) om du behöver hjälp.
+Mer information finns i [Användarhandbok för administration](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/set-up-identity.ug.html).

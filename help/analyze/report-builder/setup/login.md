@@ -8,11 +8,11 @@ exl-id: d607ef04-d546-4ebb-9f27-51349235c703
 source-git-commit: 66b7de0b008364e47253d319785c204ca479ab26
 workflow-type: tm+mt
 source-wordcount: '235'
-ht-degree: 4%
+ht-degree: 0%
 
 ---
 
-# Inloggning i Report Builder
+# Report Builder-inloggning
 
 >[!IMPORTANT]
 >
@@ -24,7 +24,7 @@ Om du vill logga in på Report Builder använder du ditt Experience Cloud-inlogg
 
 Med inloggningen Experience Cloud kan du använda Enterprise ID (e-post och lösenord) för att logga in på Adobe Experience Cloud.
 
-Klicka **[!UICONTROL Sign In]** > **[!UICONTROL Sign in with an Enterprise ID]** omdirigeras till företagets inloggningssida. Mer information om Enterprise ID finns i [Logga in på ditt företags- eller skolkonto](https://helpx.adobe.com/enterprise/kb/enterprise-id-faq.html#whatis).
+Klicka på **[!UICONTROL Sign In]** > **[!UICONTROL Sign in with an Enterprise ID]** om du vill omdirigeras till företagets inloggningssida. Mer information om Enterprise ID finns i [Logga in på ditt företags- eller skolkonto](https://helpx.adobe.com/enterprise/kb/enterprise-id-faq.html#whatis).
 
 ![Skärmbild som visar Adobe Experience Cloud inloggningsfönster med alternativ för inloggning med eller utan din Adobe ID](assets/adobe_id_login.png)
 
@@ -36,11 +36,11 @@ Klicka **[!UICONTROL Sign In]** > **[!UICONTROL Sign in with an Enterprise ID]**
 
 Logga in på Report Builder
 
-1. Klicka på **[!UICONTROL Add-Ins]**.
+1. Klicka på **[!UICONTROL Add-Ins]** i Excel.
 1. Klicka på **[!UICONTROL Sign In]**. Du kan också signera på följande sätt:
 
    * Klicka på **[!UICONTROL Create]**.
    * Välj en begäran i Begäranhanteraren och klicka sedan på **[!UICONTROL Add]** eller **[!UICONTROL Manage]**. Mer information finns i [Välj en begäran i Begäranhanteraren](/help/analyze/report-builder/manage-requests/r-arb-manage-requests.md)
    * Dubbelklicka på en begäran i Excel.
 
-1. Fyll i fälten på [!UICONTROL Login] sida och klicka sedan på **[!UICONTROL OK]**.
+1. Fyll i fälten på sidan [!UICONTROL Login] och klicka sedan på **[!UICONTROL OK]**.

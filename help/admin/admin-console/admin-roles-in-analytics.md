@@ -25,12 +25,12 @@ Adobe Analytics stöder olika typer av administratörer. Fullständiga Adobe Ana
 Tänk på följande nyckelroller när du använder Adobe Analytics:
 
 * **Fullständiga Adobe Analytics-administratörer:** Dessa användare har fullständig åtkomst till allt i Adobe Analytics, inklusive rapportsvitsinställningar och användarbehörigheter. Beroende på hur organisationen är strukturerad kan olika personer eller team ansvara för olika aspekter av Analytics-administration. En person ansvarar t.ex. för att fastställa vilka variabler som ska användas i en implementering. En annan person kan ansvara för att användarna kan dra in rapporter på rätt sätt genom att se till att alla har rätt behörigheter. Identifiera minst en användare som kan vara ansvarig för inställningarna för Analytics-rapportsviten och användarbehörigheter, och de kan bjuda in andra Analytics-administratörer därifrån.
-* **Administratörer för datainsamling:** Dessa användare har fullständig åtkomst till allt i Adobe Experience Platform Data Collection, inklusive publiceringsbehörigheter, behållare och användarbehörigheter. Dessa användare behöver inte nödvändigtvis vara programmerare, men det är bra att åtminstone ha en nybörjare som känner till HTML, CSS och JavaScript. De ansvarar för att samarbeta med webbplatsägarna i din organisation för att få tag på era webbplatser. Identifiera minst en användare som är ansvarig för implementeringen av din organisation, och de kan bjuda in andra administratörer för datainsamling därifrån.
+* **Administratörer för datainsamling:** De här användarna har fullständig åtkomst till allt i Adobe Experience Platform Data Collection, inklusive publiceringsbehörigheter, skapande av behållare och användarbehörigheter. Dessa användare behöver inte nödvändigtvis vara programmerare, men det är bra att åtminstone ha en nybörjare som känner till HTML, CSS och JavaScript. De ansvarar för att samarbeta med webbplatsägarna i din organisation för att få tag på era webbplatser. Identifiera minst en användare som är ansvarig för implementeringen av din organisation, och de kan bjuda in andra administratörer för datainsamling därifrån.
 * **Produktadministratör:** En produktadministratör hanterar en produkt i Admin Console samt användarrättigheter för den produkten.
-* **Administratörer av produktprofiler:** Dessa användare kan lägga till eller ta bort användare i en produktprofil, justera behörighetsobjekt i sin produktprofil och tilldela eller ta bort produktprofiler till användargrupper. Produktprofiladministratörer har inte fullständig åtkomst till Adobe Analytics. De är dock idealiska för gruppledare och chefer som behöver ge och hantera åtkomst till Adobe Analytics för sitt team. Mer information om produktprofiler finns i [Produktprofiler för Adobe Analytics](/help/admin/admin-console/permissions/product-profile.md).
-* **Supportadministratör**: Användare som stöds kallas också användare och har inga ytterligare behörigheter i Analytics-gränssnittet. I stället får de ytterligare privilegier när de kommunicerar med Adobe kundtjänst. De här användarna är nästan alltid Analytics-administratörer också, eftersom det hjälper kundtjänst att felsöka problem med dem. Identifiera minst en Analytics-administratör som ansvarar för att underlätta interaktionen mellan slutanvändare och Adobe kundtjänst.
-* **Webbplatsägare:** Dessa personer eller team ansvarar för kodningen och utvecklingen av er webbplats. De behöver inga konton, men de vill arbeta med datainsamlingsadministratörer för att hämta taggkoden och implementera den på din webbplats.
-* **Slutanvändare:** de här användarna tittar vanligtvis på rapporter och söker svar på affärsfrågor. Analysadministratörer ger dessa användare behörighet att arbeta i produkten.
+* **Administratörer för produktprofiler:** Dessa användare kan lägga till eller ta bort användare i en produktprofil, justera behörighetsobjekt i sin produktprofil och tilldela eller ta bort produktprofiler till användargrupper. Produktprofiladministratörer har inte fullständig åtkomst till Adobe Analytics. De är dock idealiska för gruppledare och chefer som behöver ge och hantera åtkomst till Adobe Analytics för sitt team. Mer information om produktprofiler finns i [Produktprofiler för Adobe Analytics](/help/admin/admin-console/permissions/product-profile.md).
+* **Supportadministratör**: Användarna kallas även användare som stöds och har inga ytterligare behörigheter i Analytics-gränssnittet. I stället får de ytterligare privilegier när de kommunicerar med Adobe kundtjänst. De här användarna är nästan alltid Analytics-administratörer också, eftersom det hjälper kundtjänst att felsöka problem med dem. Identifiera minst en Analytics-administratör som ansvarar för att underlätta interaktionen mellan slutanvändare och Adobe kundtjänst.
+* **Webbplatsägare:** Dessa personer eller team ansvarar för kodning och utveckling av din webbplats. De behöver inga konton, men de vill arbeta med datainsamlingsadministratörer för att hämta taggkoden och implementera den på din webbplats.
+* **Slutanvändare:** de här användarna visar vanligtvis rapporter och söker efter svar på affärsfrågor. Analysadministratörer ger dessa användare behörighet att arbeta i produkten.
 
 ## Ge fullständig produktadministratörsåtkomst för Analytics
 
@@ -38,15 +38,15 @@ Administratörer på systemnivå har inte direkt tillgång till produkter, men d
 
 Så här ger du Adobe Analytics tillgång till dig själv eller andra:
 
-1. Logga in på [Admin Console](https://adminconsole.adobe.com/) med dina Adobe ID-uppgifter.
-1. Klicka på **[!UICONTROL Products]** överst. Alla produkter som köpts av organisationen finns till vänster. Klicka **[!UICONTROL Adobe Analytics]** och klickar sedan på **[!UICONTROL New Profile]** -knappen.
-1. Ge den här profilen namnet&quot;Analytics full admin access&quot; och klicka sedan på **[!UICONTROL Next]** > **[!UICONTROL Save]**.
-1. Gå tillbaka till sidan Produktprofiler, klicka på den nya profilen och klicka sedan på **[!UICONTROL Permissions]** -fliken.
-1. Klicka på ett av behörighetsposterna. If **[!UICONTROL Auto-include]** är tillgängligt, aktivera det. If **[!UICONTROL Auto-include]** är inte tillgängligt klickar du på **[!UICONTROL Add all]**. Båda alternativen flyttar alla behörighetsobjekt till den högra kolumnen.
-1. Klicka **[!UICONTROL Save]**.
+1. Logga in på [Admin Console](https://adminconsole.adobe.com/) med dina Adobe ID-inloggningsuppgifter.
+1. Klicka på fliken **[!UICONTROL Products]** överst. Alla produkter som köpts av organisationen finns till vänster. Klicka på **[!UICONTROL Adobe Analytics]** och sedan på knappen **[!UICONTROL New Profile]**.
+1. Ge den här profilen namnet Analytics full admin access och klicka sedan på **[!UICONTROL Next]** > **[!UICONTROL Save]**.
+1. Gå tillbaka till sidan Produktprofiler, klicka på den nyligen skapade profilen och klicka sedan på fliken **[!UICONTROL Permissions]**.
+1. Klicka på ett av behörighetsposterna. Aktivera **[!UICONTROL Auto-include]** om det är tillgängligt. Om **[!UICONTROL Auto-include]** inte är tillgänglig klickar du på **[!UICONTROL Add all]**. Båda alternativen flyttar alla behörighetsobjekt till den högra kolumnen.
+1. Klicka på **[!UICONTROL Save]**.
 Upprepa ovanstående steg för alla behörighetskategorier.
 1. När alla behörighetskategorier har tilldelats profilen går du tillbaka till sidan Produkter genom att klicka på **[!UICONTROL Product]** överst.
-1. Klicka på under Adobe Analytics-rutan **[!UICONTROL Assign Users]**.
+1. Klicka på **[!UICONTROL Assign Users]** under Adobe Analytics-rutan.
 1. Ange den e-postadress som du vill ge fullständig Analytics-åtkomst till och tilldela dem den nya fullständiga administratörsåtkomstprofilen. Klicka på **[!UICONTROL Save]**.
 
 Användaren har nu fullständig åtkomst till Adobe Analytics.
@@ -55,26 +55,26 @@ Användaren har nu fullständig åtkomst till Adobe Analytics.
 
 Produktadministratörsåtkomst för datainsamling i Experience Platform är nästan identisk med att ge produktadministratörsåtkomst för Analytics.
 
-1. Logga in på [Adobe Admin Console](https://adminconsole.adobe.com) med dina Adobe ID-uppgifter.
-1. Klicka på **[!UICONTROL Products]** överst. Alla produkter som köpts av organisationen finns till vänster. Klicka **[!UICONTROL Experience Platform Launch]** och sedan klicka **[!UICONTROL New Profile]**.
-1. Namnge den här profilen med fullständig administratörsåtkomst för datainsamling och klicka sedan på **[!UICONTROL Done]**.
-1. Tillbaka till **[!UICONTROL Product Profiles]** klickar du på den nya profilen och sedan på **[!UICONTROL Permissions]** -fliken.
-1. Klicka på ett av behörighetsposterna. If **[!UICONTROL Auto-include]** är tillgängligt, aktivera det. Om automatisk inkludering inte är tillgängligt klickar du på **[!UICONTROL Add all]**. Båda alternativen flyttar alla behörighetsobjekt till den högra kolumnen.
+1. Logga in på [Adobe Admin Console](https://adminconsole.adobe.com) med dina Adobe ID-inloggningsuppgifter.
+1. Klicka på fliken **[!UICONTROL Products]** överst. Alla produkter som köpts av organisationen finns till vänster. Klicka på **[!UICONTROL Experience Platform Launch]** och sedan på **[!UICONTROL New Profile]**.
+1. Ge den här profilen namnet&quot;fullständig administratörsåtkomst för datainsamling&quot; och klicka sedan på **[!UICONTROL Done]**.
+1. Gå tillbaka till sidan **[!UICONTROL Product Profiles]**, klicka på den nya profilen och klicka sedan på fliken **[!UICONTROL Permissions]**.
+1. Klicka på ett av behörighetsposterna. Aktivera **[!UICONTROL Auto-include]** om det är tillgängligt. Om automatisk inkludering inte är tillgängligt klickar du på **[!UICONTROL Add all]**. Båda alternativen flyttar alla behörighetsobjekt till den högra kolumnen.
 1. Klicka på **[!UICONTROL Save]**. Upprepa ovanstående steg för alla behörighetskategorier.
 1. När alla behörighetskategorier har tilldelats profilen går du tillbaka till sidan Översikt genom att klicka på **[!UICONTROL Overview]** överst.
-1. Under [!UICONTROL Experience Platform Launch] platta, klicka **[!UICONTROL Assign Users]**.
+1. Klicka på **[!UICONTROL Assign Users]** under rutan [!UICONTROL Experience Platform Launch].
 1. Ange den e-postadress som du vill ge fullständig Analytics-åtkomst till och tilldela dem den nya fullständiga administratörsåtkomstprofilen. Klicka på **[!UICONTROL Save]**.
 1. Användaren har nu fullständig åtkomst till Experience Platform Data Collection.
 
 ## Bevilja produktadministratörsåtkomst för produktprofiler
 
-Mer information om hur du tilldelar användare som administratör för produktprofiler finns i avsnittet Hantera administratörer för produktprofiler i artikeln [Hantera produktprofiler för företagsanvändare](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) i användarhandboken för Enterprise.
+Mer information om hur du tilldelar användare som produktprofiladministratörer finns i avsnittet Hantera produktprofiladministratörer i artikeln [Hantera produktprofiler för företagsanvändare](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) i användarhandboken för Enterprise.
 
 ## Nästa steg
 
-[Skapa en rapportsvit](/help/admin/admin/c-manage-report-suites/c-new-report-suite/t-create-a-report-suite.md): Låt din Analytics-administratör logga in på verktyget och skapa en rapportsvit för datainsamling
+[Skapa en rapportserie](/help/admin/admin/c-manage-report-suites/c-new-report-suite/t-create-a-report-suite.md): Låt Analytics-administratören logga in på verktyget och skapa en rapportsvit för datainsamling
 
-[Skapa en Analytics-taggegenskap](/help/implement/launch/create-analytics-property.md): Låt din Data Collection-administratör logga in på verktyget och skapa en egenskap som ska implementeras på din webbplats
+[Skapa en analystaggegenskap](/help/implement/launch/create-analytics-property.md): Låt din Data Collection-administratör logga in på verktyget och skapa en egenskap som ska implementeras på din webbplats
 
 Innan användare kan tilldelas roller i Adobe Analytics måste en användare tilldelas som första administratör i Experience Cloud. Den första administratören kan sedan tilldela användare i organisationen andra nyckelroller, enligt beskrivningen i den här artikeln.
 

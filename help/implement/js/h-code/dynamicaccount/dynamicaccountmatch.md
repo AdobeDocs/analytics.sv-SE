@@ -15,11 +15,11 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Dynamiska konton stöds bara med äldre JavaScript-implementeringar (H-kod). Dessa variabler stöds inte i de aktuella AppMeasurementen bibliotek eller taggar i Adobe Experience Platform.
+>Dynamiska konton stöds endast med äldre JavaScript-implementeringar (H Code). Dessa variabler stöds inte i de aktuella AppMeasurementen bibliotek eller taggar i Adobe Experience Platform.
 
-The `dynamicAccountMatch` variabeln är värdet som `dynamicAccountList` tittar på och jämför dess värden. If `dynamicAccountSelection` är inte inställd på `true`ignoreras variabeln.
+Variabeln `dynamicAccountMatch` är det värde som `dynamicAccountList` tittar på och jämför dess värden. Om `dynamicAccountSelection` inte är inställd på `true` ignoreras variabeln.
 
-Om variabeln inte är definierad är standardvärdet `window.location.host`.
+Om variabeln inte definieras är standardvärdet `window.location.host`.
 
 ## Syntax
 
@@ -45,5 +45,5 @@ s.dynamicAccountMatch =  location.hostname + location.pathname + location.search
 
 ## Ytterligare information
 
-* Sidor som sparats på en hårddisk har inte flera `location` variabler definierade (till exempel `location.host` är tomt). Kontrollera att `s_account` innehåller en standardrapportsserie.
-* När en sida översätts via en webbaserad översättningsmotor, som Google, fungerar inte det dynamiska kontovalet som avsett. För mer exakt spårning fyller du i `s_account` variabel på serversidan.
+* Sidor som sparas på en hårddisk har inte flera definierade `location`-variabler (till exempel är `location.host` tomt). Kontrollera att `s_account` innehåller en standardrapportsserie.
+* När en sida översätts via en webbaserad översättningsmotor, som Google, fungerar inte det dynamiska kontovalet som avsett. Fyll i `s_account`-variabelns serversida om du vill ha mer exakt spårning.

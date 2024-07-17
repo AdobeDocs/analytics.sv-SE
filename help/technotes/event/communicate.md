@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Informera användarna om händelseeffekter
 
-Om du har data [påverkas av en händelse](overview.md), är det viktigt att kommunicera händelsen till användarna i organisationen.
+Om du har data som [påverkas av en händelse](overview.md) är det viktigt att kommunicera den händelsen till användarna i din organisation.
 
 * Utveckla en gemensam ansvarsfriskrivning som du kan använda i kommunikationen för att uppnå enhetlighet
 * Kommunicera kontinuerligt till Analytics-användare och viktiga intressenter under och efter evenemanget
@@ -22,7 +22,7 @@ I Adobe Analytics visas olika sätt att kommunicera med användare i organisatio
 
 ## Kommunicera via paneler eller visualiseringsbeskrivningar
 
-Om du har ett Workspace-projekt som delas mellan användare i din organisation kan du kommunicera effekten av en händelse via paneler eller visualiseringsbeskrivningar. Högerklicka på en panel eller ett visualiseringshuvud och välj **[!UICONTROL Edit description]**.
+Om du har ett Workspace-projekt som delas mellan användare i organisationen kan du förmedla effekten av en händelse via paneler eller visualiseringsbeskrivningar. Högerklicka på en panel eller ett visualiseringshuvud och välj sedan **[!UICONTROL Edit description]**.
 
 ![Panelbeskrivning](assets/panel_description.png)
 
@@ -32,11 +32,11 @@ Du kan också förmedla påverkan av en händelse genom dedikerade textvisualise
 
 ![Textvisualisering](assets/text_visualization.png)
 
-## Lägga till anpassade kalenderhändelser till trender i arbetsytan
+## Lägga till anpassade kalenderhändelser i trender i Workspace
 
 För all visualisering i Workspace kan du lägga till i en serie som representerar det datumintervall som påverkas.
 
-1. Skapa ett beräknat mått med segmentet&quot;Påverkade dagar&quot; genom att följa [Exkludera specifika datum i analysen](segments.md).
+1. Skapa ett beräknat mått med segmentet Påverkade dagar genom att följa [Uteslut specifika datum i analysen](segments.md).
 1. Lägg till det önskade måttet på den beräknade mätarbetsytan.
 
    ![Mått](assets/calcmetric_event.png)
@@ -49,11 +49,11 @@ För all visualisering i Workspace kan du lägga till i en serie som representer
 
    ![Frihandstabell](assets/calcmetric_freeform.png)
 
-1. Klicka på kugghjulsikonen för kolumninställningarna för det beräknade måttet och aktivera **[!UICONTROL Interpret zero as no value]**.
+1. Klicka på kugghjulsikonen för kolumninställningar för det beräknade måttet och aktivera **[!UICONTROL Interpret zero as no value]**.
 
-   ![Inställningar för beräknade mätvärden](assets/calcmetric_zero_no_value.png)
+   ![Beräknade måttinställningar](assets/calcmetric_zero_no_value.png)
 
 1. Lägg till en linjevisualisering. Dagar som påverkas representeras med en annan färg. Användarna kan också klicka på ikonen Info i det beräknade måttet för mer information.
 
-   ![Ikonen Info](assets/calcmetric_infoicon.png)
+   ![Informationsikon](assets/calcmetric_infoicon.png)
 

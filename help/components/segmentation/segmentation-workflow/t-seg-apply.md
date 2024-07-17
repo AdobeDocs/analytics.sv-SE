@@ -6,7 +6,7 @@ exl-id: 870026e2-a3a3-4d87-a6c2-6189098d3676
 source-git-commit: 7a47d837eeae65f2e98123aca78029bfeb7ffe9d
 workflow-type: tm+mt
 source-wordcount: '197'
-ht-degree: 4%
+ht-degree: 0%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 4%
 Hur man lägger in ett eller flera segment i en rapport från segmentets spårvidd.
 
 1. Ta fram rapporten som du vill tillämpa ett segment på, till exempel [!UICONTROL Pages Report].
-1. Klicka **[!UICONTROL Show Segments]** ovan rapporten. Segmentspåret öppnas.
+1. Klicka **[!UICONTROL Show Segments]** ovanför rapporten. Segmentspåret öppnas.
 
    ![](assets/segment_rail.png)
 
@@ -29,7 +29,7 @@ Hur man lägger in ett eller flera segment i en rapport från segmentets spårvi
    >
    >Om du klickar på informationsikonen (i) bredvid segmentnamnet kan du förhandsgranska nyckelmåtten för att se om du har ett giltigt segment och hur brett segmentet är.
 
-1. Du kan filtrera efter rapportsviten genom att välja **[!UICONTROL (Only) `<report suite name>`]** kryssruta. Detta visar endast de segment som senast sparades i rapportsviten.
-1. Klicka **[!UICONTROL Apply Segment]** och rapporten kommer att uppdateras. Det eller de segment som tillämpas visas nu högst upp i rapporten:
+1. Du kan filtrera efter rapportserie genom att markera kryssrutan **[!UICONTROL (Only) `<report suite name>`]**. Detta visar endast de segment som senast sparades i rapportsviten.
+1. Klicka på **[!UICONTROL Apply Segment]** så uppdateras rapporten. Det eller de segment som tillämpas visas nu högst upp i rapporten:
 
    ![](assets/applied_segments.png)

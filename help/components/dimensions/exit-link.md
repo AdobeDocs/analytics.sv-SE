@@ -16,9 +16,9 @@ Avsluta länk [dimension](overview.md) rapporterar namnen på de avslutningslän
 
 ## Fyll den här dimensionen med data
 
-Den här dimensionen samlar in data från [`pev2` frågesträng](/help/implement/validate/query-parameters.md) i bildförfrågningar för träffar som också har `pe` frågesträng med värdet för `lnk_e`. Om `pe` frågesträngen har ett annat värde i träffen, den här dimensionen samlar inte in data.
+Den här dimensionen samlar in data från [`pev2`-frågesträngen ](/help/implement/validate/query-parameters.md) i bildbegäranden för träffar som också har frågesträngen `pe` med värdet `lnk_e`. Om frågesträngen `pe` har ett annat värde i träffen samlar dimensionen inte in data.
 
-Om du vill skicka data till den här dimensionen med AppMeasurement skickar du en [`tl()`](/help/implement/vars/functions/tl-method.md) bildbegäran med ett länktypargument av `"e"`. Fyll i länknamnsargumentet med det önskade värdet.
+Om du vill skicka data till den här dimensionen med AppMeasurement skickar du en [`tl()`](/help/implement/vars/functions/tl-method.md)-bildbegäran med länktypsargumentet `"e"`. Fyll i länknamnsargumentet med det önskade värdet.
 
 ## Dimensioner
 

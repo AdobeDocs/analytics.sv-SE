@@ -27,7 +27,7 @@ Kontrollpanelen för användning av Report Suite
 * Visar procentandel av den totala användningen per kategori för serversamtal.
 * Uppdateras dagligen.
 * Kan laddas ned.
-* Ger åtkomst till **[!UICONTROL Manage Alerts]** Gränssnitt.
+* Gör att du kan komma åt användargränssnittet för **[!UICONTROL Manage Alerts]**.
 
 ![](/help/admin/admin/c-server-call-usage/assets/report-suite-usage.png)
 
