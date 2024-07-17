@@ -4,10 +4,10 @@ audience: end-user
 user-guide-title: Komponenthandbok för Analytics
 breadcrumb-title: Användarhandbok om komponenter
 user-guide-description: Hantera data med komponenter som segment, beräknade värden, virtuella rapportsviter, marknadsföringskanaler och klassificeringar. Lär dig mer om Analytics över flera enheter.
-source-git-commit: 043f2c2b2e3e50570e2f0367680274a1f2670492
+source-git-commit: 11e98d35ba52fb777a08f950725b0e8dbb99fa22
 workflow-type: tm+mt
-source-wordcount: '752'
-ht-degree: 7%
+source-wordcount: '766'
+ht-degree: 8%
 
 ---
 
@@ -15,10 +15,14 @@ ht-degree: 7%
 # [!DNL Adobe Analytics] Komponentguide {#components}
 
 + [Komponenthandbok för Analytics](home.md)
-+ [Versionsinformation om Analytics](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html)
++ [Versionsinformation för analyser](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html)
 + Dimensioner {#dimensions}
    + [Översikt över Dimensioner](dimensions/overview.md)
    + [Kompatibilitet med Dimensioner](dimensions/compatibility.md)
+   + [Activity Map Link](dimensions/activity-map-link.md)
+   + [Activity Map Link per region](dimensions/activity-map-link-by-region.md)
+   + [Sida för Activity Map](dimensions/activity-map-page.md)
+   + [Activity Map](dimensions/activity-map-region.md)
    + [Godkännande av annonsplattform](dimensions/ad-consent.md)
    + [Alla söksidor rankade](dimensions/all-search-page-rank.md)
    + [AM/PM](dimensions/am-pm.md)
@@ -171,7 +175,7 @@ ht-degree: 7%
       + [Tagga segment](segmentation/segmentation-workflow/seg-tag.md)
       + [Godkänn segment](segmentation/segmentation-workflow/seg-approve.md)
       + [Dela segment](segmentation/segmentation-workflow/t-seg-share.md)
-      + [Publicera segment på Experience Cloud](segmentation/segmentation-workflow/seg-publish.md)
+      + [Publish segment i Experience Cloud](segmentation/segmentation-workflow/seg-publish.md)
       + [Markera och tillämpa segment](segmentation/segmentation-workflow/t-seg-apply.md)
       + [Filtrera segment](segmentation/segmentation-workflow/t-seg-filter.md)
       + [Markera segment som favoriter](segmentation/segmentation-workflow/t-seg-favorite.md)
@@ -188,7 +192,7 @@ ht-degree: 7%
 + Beräknade mått {#calculated-metrics}
    + [Beräknade och avancerade beräknade (härledda) mätvärden](c-calcmetrics/cm-overview.md)
    + [Instruktionsfilmer](c-calcmetrics/cm-videos.md)
-   + Arbetsflöde för beräknade mätvärden {#calcmetric-workflow}
+   + Arbetsflödet för beräknade mått {#calcmetric-workflow}
       + [Arbetsflöde för beräknade mätvärden](c-calcmetrics/c-workflow/cm-workflow/cm-workflow.md)
       + [Hitta mätvärden](c-calcmetrics/c-workflow/cm-workflow/cm-finding.md)
       + [Bygg mätvärden](c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-build-metrics.md)
@@ -222,7 +226,7 @@ ht-degree: 7%
    + [A4T-överväganden](vrs/vrs-a4t.md)
    + [Vanliga frågor om virtuella rapportsviter](vrs/vrs-faq.md)
    + [Virtuella rapportsviter och taggningsfrågor för globala/flera programsviter](vrs/vrs-considerations.md)
-   + Arbetsflöde för virtuella rapportsviter {#vrs-workflow}
+   + Arbetsflöde för virtuell rapportserie {#vrs-workflow}
       + [Arbetsflöde för virtuella rapportsviter](vrs/c-workflow-vrs/vrs-workflow.md)
       + [Skapa virtuella rapportsviter](vrs/c-workflow-vrs/vrs-create.md)
       + [Hantera virtuella rapportsviter](vrs/c-workflow-vrs/vrs-manage.md)

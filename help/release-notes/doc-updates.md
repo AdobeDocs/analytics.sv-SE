@@ -5,9 +5,9 @@ short-title: Analytics documentation updates
 feature: Release Notes
 exl-id: fe8e3c4c-6782-46f7-8e28-4f8f54807788
 mini-toc-levels: 3
-source-git-commit: 6a62540bd4a8d86951165714d44d5e969e62722f
+source-git-commit: 00bc3e039957b0e7f9bc171d7075def3fc8fb838
 workflow-type: tm+mt
-source-wordcount: '5742'
+source-wordcount: '5737'
 ht-degree: 19%
 
 ---
@@ -67,7 +67,7 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | Uppdateringar av dokumentationen för avvikelseidentifiering och bidragsanalys | Dokumentationen för avvikelseidentifiering och bidragsanalys fanns tidigare i ett avsnitt om Virtual Analyst. Följande ändringar har gjorts: <ul><li>Termen Virtual Analyst har tagits bort från dokumentationen.</li><li>Avsnittet om [avvikelseidentifiering](/help/analyze/analysis-workspace/c-anomaly-detection/anomaly-detection.md) flyttades direkt under Analysis Workspace-avsnittet.</li><li>Bidragsanalysdokumentationen slogs samman i dokumentationen för avvikelseidentifiering.</li></ul> |
 | &quot;Attribution IQ &quot; ändrad till &quot;Attribution&quot; | Ändrade alla instanser av &quot;Attribution IQ&quot; till &quot;[Attribution](/help/analyze/analysis-workspace/attribution/overview.md)&quot; genom hela dokumentationen. |
 | **November 2023** | |
-| Uppdateringar av Activity Map aktiverings-/aktiveringsämne | [Web SDK](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/activitymap-enable.html) (både manuellt och via Adobe Experience Platform-taggtillägg) har lagts till. |
+| Uppdateringar av Activity Map aktiverings-/aktiveringsämne | [Web SDK](/help/analyze/activity-map/getting-started.md) (både manuellt och via Adobe Experience Platform-taggtillägg) har lagts till. |
 | **Oktober 2023** | |
 | Logginformation har lagts till i Rapporteringsaktivitetshanteraren | Lagt till information om att alla [avbrott och efterföljande begränsningar för rapporteringsaktivitet](/help/admin/admin/reporting-activity-manager/reporting-activity-cancel-requests.md) i Rapporteringsaktivitetshanteraren fångas in i [loggarna](/help/admin/admin/logs.md). |
 | Uppdateringar av Datans Warehouse komponentstöd | Lagt till tillgänglighet för vissa komponenter och tagit bort tillgänglighet för andra för Data Warehouse. Ändringarna återspeglas i [Komponentstöd i Data Warehouse](/help/export/data-warehouse/component-support.md). <ul><li>Stöd för dimensionen Besöksdjup har lagts till (borttaget Besöksdjup i listan över dimensioner stöds inte)</li><li>Borttaget stöd för deltagandemått (extra deltagandemått i listan över mätvärden som inte stöds)</li><li>Stöd för följande tidsbaserade dimensioner har lagts till: År, Kvartal, Månad, Vecka, Dag, Timme och Minut (de här dimensionerna har tagits bort från listan över dimensioner som inte stöds) <p>Tidigare hade Datan Warehouse bara stöd för dessa mått i den första kolumnen i en friformstabell när Kornighet markerades. Nu stöds alltid dessa dimensioner.</p><p>Datumutdata är dock inte standard när de här måtten används. Året är 1900 och månaderna är nollbaserade.</li></ul> |
@@ -111,7 +111,7 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | Projektsegment (ad hoc- och snabbsegment) | Effektiv dokumentation om projektsegment och borttagen dubblettinformation. Stegen för att skapa ad hoc-segment kombineras nu med stegen för att [skapa snabbsegment](/help/analyze/analysis-workspace/components/segments/quick-segments.md). |
 | Dynamiska sökningar | Ytterligare information om [Dynamiska sökningar](/help/export/analytics-data-feed/c-df-contents/dynamic-lookups.md) har lagts till. Tidigare fanns bara information för mobilattribut, som är en av flera dynamiska sökningar. |
 | **Mars 2023** | |
-| Stöd för Web SDK i Activity Map | Uppdaterade [Implementera Adobe Analytics](/help/implement/home.md) och [Aktivera Activity Map](/help/analyze/activity-map/activitymap-getting-started/activitymap-enable.md). |
+| Stöd för Web SDK i Activity Map | Uppdaterade [Implementera Adobe Analytics](/help/implement/home.md). |
 | Översikt över trafikvariabler (props) | Lagt till avsnitt och stegvisa procedurer för att förtydliga och förbättra artikelinnehållet. Sammanfogat innehåll från en artikel med rubriken&quot;Aktivera trafikvariabelrapporter&quot; och tog bort artikeln. Se [Översikt över trafikvariabler (props)](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/c-traffic-variables/traffic-var.md). |
 | Interna URL-filter | Lagt till avsnitt och stegvisa procedurer för att förtydliga och förbättra artikelinnehållet. Se [Interna URL-filter](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/internal-url-filter-admin.md). |
 | Skapa dataartiklar i mobilstyrkort | En [dataartikel](/help/analyze/mobile-app/create-scorecard.md#create-data-stories) är en samling med stöddatapunkter, företagskontext och relaterade mått som bygger på ett centralt tema eller mätvärden. |

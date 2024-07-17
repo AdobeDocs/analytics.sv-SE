@@ -4,10 +4,10 @@ audience: end-user
 user-guide-title: Handbok om Analytics-verktyg
 breadcrumb-title: Användarhandbok om verktyg
 user-guide-description: Lär dig hur du använder verktyg i Analytics som Analysis Workspace, Analytics Dashboards, Report Builder och Activity Map.
-source-git-commit: 9fcebd7a8fb3a3d98eebef53a748c8ac585cbcd1
+source-git-commit: c043a5ea4176d9d9e6beb1d49ceb91cd266a1721
 workflow-type: tm+mt
-source-wordcount: '1017'
-ht-degree: 11%
+source-wordcount: '930'
+ht-degree: 12%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 11%
 # Adobe Analytics Tools Guide {#analyze}
 
 + [Handbok om Analytics-verktyg](home.md)
-+ [Versionsinformation om Analytics](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html)
++ [Versionsinformation för analyser](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html)
 + Kom igång med Adobe Analytics {#admin-overview}
    + [Analytics - översikt](get-started/analytics-overview.md)
    + [Kom igång (efter roll)](get-started/get-started-by-role.md)
@@ -32,8 +32,8 @@ ht-degree: 11%
       + [Skapa projekt](analysis-workspace/build-workspace-project/create-projects.md)
       + [Spara projekt](analysis-workspace/build-workspace-project/save-projects.md)
       + [Innehållsförteckning för projekt](/help/analyze/analysis-workspace/build-workspace-project/project-table-of-contents.md)
-      + Mappar på arbetsytan {#workspace-folders}
-         + [Om mappar i arbetsytan](analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
+      + Mappar i Workspace {#workspace-folders}
+         + [Om mappar i Workspace](analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
          + [Skapa mappar och undermappar](analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)
          + [Ta bort mappar](analysis-workspace/build-workspace-project/workspace-folders/delete-folders.md)
          + [Lägg till projekt](analysis-workspace/build-workspace-project/workspace-folders/add-projects.md)
@@ -49,7 +49,7 @@ ht-degree: 11%
       + [Skapa och hantera företagsrapporter](analysis-workspace/reports/create-company-reports.md)
    + Komponenter {#components}
       + [Komponenter - översikt](analysis-workspace/components/analysis-workspace-components.md)
-      + [Använda komponenter i arbetsytan](analysis-workspace/components/use-components-in-workspace.md)
+      + [Använda komponenter i Workspace](analysis-workspace/components/use-components-in-workspace.md)
       + [Lägga till komponentbeskrivningar](analysis-workspace/components/add-component-descriptions.md)
       + Anteckningar {#annotations}
          + [Översikt över anteckningar](analysis-workspace/components/annotations/overview.md)
@@ -77,7 +77,7 @@ ht-degree: 11%
    + Visualiseringar {#visualizations}
       + [Visualiseringar - översikt](analysis-workspace/visualizations/freeform-analysis-visualizations.md)
       + [Hantera datakällor](analysis-workspace/visualizations/t-sync-visualization.md)
-      + Frihandsregister {#freeform-table}
+      + Frihandstabell {#freeform-table}
          + [Frihandsregister](analysis-workspace/visualizations/freeform-table/freeform-table.md)
          + [Skapa hyperlänkar för dimensioner i en frihandstabell](/help/analyze/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md)
          + Kolumn- och radinställningar {#column-row-settings}
@@ -85,7 +85,7 @@ ht-degree: 11%
             + [Radinställningar](analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)
             + [Dynamiska jämfört med statiska objekt](analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)
          + [Filtrera och sortera tabeller på frihand](analysis-workspace/visualizations/freeform-table/filter-and-sort.md)
-         + [Summor för arbetsyta](analysis-workspace/visualizations/freeform-table/workspace-totals.md)
+         + [Workspace Totals](analysis-workspace/visualizations/freeform-table/workspace-totals.md)
       + Kohorttabell {#cohort-table}
          + [Vad är kohortanalys?](analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
          + [Konfigurera en kohortanalysrapport](analysis-workspace/visualizations/cohort-table/t-cohort.md)
@@ -126,7 +126,7 @@ ht-degree: 11%
       + [Panelen Nästa eller föregående objekt](analysis-workspace/c-panels/next-previous.md)
       + [Panelen Sidsammanfattning](analysis-workspace/c-panels/page-summary.md)
       + [Panelen Snabbinsikter](analysis-workspace/c-panels/quickinsight.md)
-      + Panelen Segmentjämförelse {#segment-comparison}
+      + Segmentjämförelsepanelen {#segment-comparison}
          + [Översikt över segmentjämförelse](analysis-workspace/c-panels/c-segment-comparison/segment-comparison.md)
          + [Användningsexempel för segmentjämförelse](analysis-workspace/c-panels/c-segment-comparison/segment-compare-use-cases.md)
          + [Statistiska tester som används vid segmentjämförelse](analysis-workspace/c-panels/c-segment-comparison/statistical-test.md)
@@ -267,7 +267,7 @@ ht-degree: 11%
       + [Lås/lås upp arbetsböcker](report-builder/workbook-library/protect-wb.md)
       + [Schemalägg makroaktiverade arbetsböcker](report-builder/workbook-library/schedule-macro-wb.md)
    + Publicera till Power BI med Report Builder 5.5 {#publish-powerbi}
-      + [Publicera på Power BI - översikt](report-builder/c-publish-power-bi/power-bi.md)
+      + [Publish till Power BI - översikt](report-builder/c-publish-power-bi/power-bi.md)
       + [Begränsningar och specifikationer](report-builder/c-publish-power-bi/specifications-limits.md)
       + [Importera data manuellt till Power BI](report-builder/c-publish-power-bi/bi-manually-import-data.md)
       + [Hämta publicerade resurser till Power BI Desktop](report-builder/c-publish-power-bi/bi-publish-to-desktop.md)
@@ -278,35 +278,15 @@ ht-degree: 11%
    + [Report Builder, felsökning](report-builder/troubleshoot.md)
    + [Vanliga frågor om Report Builder](report-builder/faq.md)
 + Activity Map {#activity-map}
-   + [Activity Map - översikt](activity-map/activity-map.md)
-   + Kom igång {#getting-started}
-      + [Aktivera och aktivera Activity Map](activity-map/activitymap-getting-started/activitymap-enable.md)
-      + [Installera webbläsarplugin-program för Activity Map](activity-map/activitymap-getting-started/activitymap-install.md)
-      + [Starta Activity Map](activity-map/activitymap-getting-started/activitymap-launch.md)
-   + [Robust länkspårning](activity-map/lnk-tracking-overview.md)
-   + Länkspårning {#link-tracking}
-      + [Metod för länkspårning](activity-map/activitymap-link-tracking/activitymap-link-tracking-methodology.md)
-      + [Vanliga frågor om länkspårning](activity-map/activitymap-link-tracking/link-tracking-faq.md)
-      + [Differentiera länkar som refererar till samma länk-ID och region](activity-map/activitymap-link-tracking/activitymap-link-tracking-use-case.md)
-      + [Stoppa länkspårning](activity-map/activitymap-link-tracking/activitymap-stop-link-tracking.md)
-      + [Använda funktionen s.tl()](activity-map/activitymap-link-tracking/activitymap-stl-track-custom-elements.md)
-   + [Standardläge jämfört med Live-läge](activity-map/activitymap-standard-live.md)
-   + [Länkrapport](activity-map/activitymap-links-report.md)
-   + [Sidinformation](activity-map/activitymap-page-flow.md)
-   + [En komplett uppsättning mätvärden](activity-map/activitymap-complete-metrics.md)
-   + [Realtidsanalys (Live)](activity-map/activitymap-realtime.md)
-   + [Kundsegmentering](activity-map/activitymap-multiple-segments.md)
-   + [Anpassningsbara övertäckningar](activity-map/activitymap-gainerslosers.md)
-   + [Överläggsinformation](activity-map/activitymap-overlay-details.md)
-   + [Exportera till CSV-fil](activity-map/activitymap-csv.md)
-   + [System och krav](activity-map/activitymap-sysreqs.md)
-   + [Vanliga frågor om Activity Map](activity-map/activitymap-faq.md)
-   + [Konfigurera inställningar för Activity Map](activity-map/activitymap-overlay-settings.md)
-   + [Activity Map användargränssnitt](activity-map/activitymap-user-interface.md)
-   + [Rapportering från Activity Map i analyser](activity-map/activitymap-reporting-analytics.md)
-   + [Felsöka webbläsartillägg](activity-map/troubleshooting-browser-extensions.md)
-   + [Felsöka datainsamling](activity-map/troubleshoot-data-collection.md)
-+ Adobe Analytics dashboards {#mobapp}
+   + [Översikt](activity-map/overview.md)
+   + [Komma igång](activity-map/getting-started.md)
+   + Övertäckning {#overlay}
+      + [Tilläggsöversikt](activity-map/overlay/overview.md)
+      + [Starta tillägg](activity-map/overlay/launch.md)
+      + [Tilläggsinställningar](activity-map/overlay/settings.md)
+   + [Felsökning](activity-map/troubleshooting.md)
+   + [Vanliga frågor och svar](activity-map/faq.md)
++ Adobe Analytics-instrumentpaneler {#mobapp}
    + [Adobe Analytics Dashboards - Översikt](mobile-app/home.md)
    + [Inledande kurator](mobile-app/curator.md)
    + [Skapa ett mobilstyrkort](mobile-app/create-scorecard.md)

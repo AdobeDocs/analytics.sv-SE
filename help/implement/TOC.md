@@ -4,9 +4,9 @@ audience: all
 user-guide-title: Implementeringshandbok för Analytics
 breadcrumb-title: Implementeringshandbok
 user-guide-description: Lär dig hur du implementerar Adobe Analytics. Anpassa vilka data som samlas in för att få ut så mycket som möjligt av Analytics-data.
-source-git-commit: 8727d6167a2c161ba646ae2217b0a6e7c4656dd1
+source-git-commit: 65e75a1c2b39823e72abfb0e5b61122c62f1f013
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '435'
 ht-degree: 16%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 16%
 # Adobe Analytics Implementeringshandbok {#implementation}
 
 + [Implementera Adobe Analytics](home.md)
-+ [Versionsinformation om Analytics](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html)
++ [Versionsinformation för analyser](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html)
 + [Versionsinformation om AppMeasurement](appmeasurement-updates.md)
 + Variabler, funktioner och metoder för Analytics {#vars}
    + [Översikt](vars/overview.md)
@@ -55,6 +55,9 @@ ht-degree: 16%
       + [writeSecureCookies](vars/config-vars/writesecurecookies.md)
    + Sidvariabler {#page-vars}
       + [Översikt över sidvariabler](vars/page-vars/page-variables.md)
+      + [ActivityMap.linkExclusions](vars/config-vars/activitymap-linkexclusions.md)
+      + [ActivityMap.regionExclusions](vars/config-vars/activitymap-regionexclusions.md)
+      + [ActivityMap.regionIDAttribute](vars/config-vars/activitymap-regionidattribute.md)
       + [kampanj](vars/page-vars/campaign.md)
       + [kanal](vars/page-vars/channel.md)
       + [contextData](vars/page-vars/contextdata.md)
@@ -85,6 +88,8 @@ ht-degree: 16%
       + [s_gi](vars/functions/s-gi.md)
       + [t](vars/functions/t-method.md)
       + [tl](vars/functions/tl-method.md)
+      + [ActivityMap.link](vars/functions/activitymap-link.md)
+      + [ActivityMap.region](vars/functions/activitymap-region.md)
       + [bufferRequests](vars/functions/bufferrequests.md)
       + [clearVars](vars/functions/clearvars.md)
       + [doPlugins](vars/functions/doplugins.md)
@@ -134,8 +139,8 @@ ht-degree: 16%
    + [Implementera märkning för flera programsviter](prepare/multi-suite-tagging.md)
    + [Skapa ett dokument för lösningsdesign](prepare/solution-design.md)
    + [Ta hand om en befintlig Adobe Analytics-implementering](prepare/existing-implementation.md)
-+ Implementera analyser med Experience Platform Edge {#aep-edge}
-   + [Översikt över Experience Edge](aep-edge/overview.md)
++ Implementera analys med Experience Platform Edge {#aep-edge}
+   + [Edge - översikt](aep-edge/overview.md)
    + [Variabelmappning för dataobjekt](aep-edge/data-var-mapping.md)
    + [Variabelmappning för XDM-objekt](aep-edge/xdm-var-mapping.md)
    + Web SDK {#web-sdk}
@@ -148,7 +153,7 @@ ht-degree: 16%
       + [Mobile SDK - översikt](aep-edge/mobile-sdk/overview.md)
    + Server-API {#server-api}
       + [Översikt över server-API](aep-edge/server-api/overview.md)
-+ Implementera Analytics med Adobe Analytics-tillägget {#launch}
++ Implementera analyser med Adobe Analytics-tillägget {#launch}
    + [Översikt över taggar](launch/overview.md)
    + [Skapa en Adobe Analytics-taggegenskap](launch/create-analytics-property.md)
    + [Distribuera till en utvecklingsmiljö](launch/deploy-dev.md)
