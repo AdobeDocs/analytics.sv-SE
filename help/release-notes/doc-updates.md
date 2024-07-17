@@ -5,9 +5,9 @@ short-title: Analytics documentation updates
 feature: Release Notes
 exl-id: fe8e3c4c-6782-46f7-8e28-4f8f54807788
 mini-toc-levels: 3
-source-git-commit: e7e03531454bd56ebe6152edc08765f42ebec728
+source-git-commit: 6a62540bd4a8d86951165714d44d5e969e62722f
 workflow-type: tm+mt
-source-wordcount: '5719'
+source-wordcount: '5742'
 ht-degree: 19%
 
 ---
@@ -26,6 +26,7 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | Funktion | Beskrivning |
 | --- | --- |
 | **Juli 2024** | |
+| Lagt till threads.net i dimensionen &#39;Refererartyp&#39; | threads.net har lagts till i listan över sociala nätverk som används i dimensionen ](/help/components/dimensions/referrer-type.md) för [-referenstypen. |
 | Uppdaterad dokumentation för hantering av dataflöden | Uppdaterad information i [Hantera dataflöden](/help/export/analytics-data-feed/df-manage-feeds.md) för att förbättra tydligheten. <p>Bland uppdateringarna finns:</p><ul><li>Skapade separata avsnitt för olika uppgifter för att göra informationen enklare att skanna och använda.</li><li>Lagt till information om förändringar i beteendet för liveflöden som återaktiveras. Dessa ändringar är för närvarande begränsade och är ännu inte tillgängliga för alla kunder.</li><li>Tillagd information som anger att dataflöden måste ha statusen Aktiv innan de kan tas bort.</li> |
 | Uppdaterade vanliga felmeddelanden | Mindre uppdateringar av de [vanliga felmeddelandena](/help/analyze/analysis-workspace/workspace-faq/error-messages.md) har gjorts. |
 | **Juni 2024** | |
