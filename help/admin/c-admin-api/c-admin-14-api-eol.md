@@ -3,9 +3,9 @@ description: Länka till Adobe Analytics Admin API på github.
 title: Vanliga frågor om Adobe Analytics 1.4 API EOL
 feature: Admin Tools
 role: Admin
-source-git-commit: 0aaeb60528f8ff1b1067f059710c9d9fa8e1886f
+source-git-commit: da96c049f7cfb73496416c2d8a7f4dcbc8f2303e
 workflow-type: tm+mt
-source-wordcount: '781'
+source-wordcount: '801'
 ht-degree: 0%
 
 ---
@@ -102,7 +102,11 @@ I guiden [Migrera till Adobe Analytics 2.0 API:er](https://developer.adobe.com/a
 
 F: **Påverkar datainsamlingen?**
 
-S: Adobe Analytics 1.4 EOL påverkar inte taggningslösningarna, till exempel Taggar (tidigare Adobe Launch), WebSDK eller AppMeasurement.js. Om du däremot använder API:erna 1.4 Datakällor, Datainfogning eller Klassifikationer för att samla in eller förbättra dina data, måste du migrera dessa arbetsflöden till API:erna för Adobe Analytics 2.0. Mer information finns i [2.0 API Endpoints guide](https://developer.adobe.com/analytics-apis/docs/2.0/guides/endpoints/).
+S: Adobe Analytics 1.4 EOL påverkar inte taggningslösningarna, till exempel Taggar (tidigare Adobe Launch), WebSDK eller AppMeasurement.js. Om du däremot använder 1.4-API:erna för datakällor eller klassificeringar för att samla in eller förbättra dina data måste du migrera dessa arbetsflöden till API:erna för Adobe Analytics 2.0. Mer information finns i [2.0 API Endpoints guide](https://developer.adobe.com/analytics-apis/docs/2.0/guides/endpoints/).
+
+F: **Påverkar API:t för datainmatning?**
+
+S: Nej, API:t för datainfogning påverkas inte av Adobe Analytics 1.4 EOL.
 
 F: **Vad gör jag om min fråga inte besvaras i vanliga frågor?**
 
