@@ -4,7 +4,7 @@ description: Ändra rapportsviten när som helst i implementeringen.
 feature: Variables
 exl-id: 524857a7-c820-4985-86c7-fcf21a0809bd
 role: Admin, Developer
-source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
+source-git-commit: bfafc1f8eddf82b34fb45e3d6197213f0cee0d97
 workflow-type: tm+mt
 source-wordcount: '408'
 ht-degree: 0%
@@ -38,11 +38,12 @@ Tillägget Web SDK innehåller en listruta för datastream för varje miljö. Du
 
 ## Ange önskad dataström som ska implementera Web SDK manuellt
 
-Ställ in konfigurationsvariabeln `edgeConfigId` till DataStream ID. DataStream-ID:t finns till höger när du visar ett dataström i Adobe Experience Platform Data Collection.
+Ställ in konfigurationsvariabeln `datastreamId` till DataStream ID. DataStream-ID:t finns till höger när du visar ett dataström i Adobe Experience Platform Data Collection.
 
 ```js
 alloy("configure", {
-  "edgeConfigId": "example-a01f-4458-8cec-ef61de241c93",
+  datastreamId: "example-a01f-4458-8cec-ef61de241c93",
+  orgId: "ADB3LETTERSANDNUMBERS@AdobeOrg"
 });
 ```
 

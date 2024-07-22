@@ -2,7 +2,7 @@
 title: Migrera från AppMeasurement till Web SDK
 description: Uppdatera din Adobe Analytics-implementering från AppMeasurement JavaScript-biblioteket till Web SDK JavaScript-biblioteket.
 exl-id: c90246e8-0f04-4655-9204-33c0ef611b13
-source-git-commit: 7bd4a188e5a2171260f1f0696d8bebad854dba4a
+source-git-commit: bfafc1f8eddf82b34fb45e3d6197213f0cee0d97
 workflow-type: tm+mt
 source-wordcount: '1323'
 ht-degree: 0%
@@ -63,15 +63,15 @@ Referera till den senaste versionen av `alloy.js` så att dess metodanrop kan an
 
 Konfigurera implementeringen så att den pekar på det datastöd som skapades i föregående steg med hjälp av Web SDK-kommandot [`configure`](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/overview). Kommandot `configure` måste anges på alla sidor, så du kan inkludera det bredvid bibliotekets installationskod.
 
-Använd egenskaperna [`edgeConfigId`](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/edgeconfigid) och [`orgId`](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/orgid) i Web SDK `configure`-kommandot:
+Använd egenskaperna [`datastreamId`](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/datastreamId) och [`orgId`](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/orgid) i Web SDK `configure`-kommandot:
 
-* Ange `edgeConfigId` till det datastream-ID som hämtats från föregående steg.
+* Ange `datastreamId` till det datastream-ID som hämtats från föregående steg.
 * Ange `orgId` till din organisations IMS-organisation.
 
 ```js
 alloy("configure", {
-    "edgeConfigId": "ebebf826-a01f-4458-8cec-ef61de241c93",
-    "orgId": "ADB3LETTERSANDNUMBERS@AdobeOrg"
+    datastreamId: "ebebf826-a01f-4458-8cec-ef61de241c93",
+    orgId: "ADB3LETTERSANDNUMBERS@AdobeOrg"
 });
 ```
 

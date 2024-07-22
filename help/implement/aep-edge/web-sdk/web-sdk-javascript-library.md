@@ -2,7 +2,7 @@
 title: Skicka data till Adobe Analytics med Web SDK JavaScript-biblioteket
 description: Börja med en ren Web SDK-implementering för att skicka data till Adobe Analytics med hjälp av JavaScript-biblioteket.
 exl-id: 593b63ac-e411-4f88-af7e-78f026269ec0
-source-git-commit: 316ca1074de36db0d7c9545691e7c6d72a2ed2c4
+source-git-commit: bfafc1f8eddf82b34fb45e3d6197213f0cee0d97
 workflow-type: tm+mt
 source-wordcount: '1070'
 ht-degree: 0%
@@ -82,7 +82,7 @@ Att använda Web SDK JavaScript-biblioteket för att skicka data till Adobe Anal
 
 <tr>
 <td>7</td>
-<td><b>Konfigurera Web SDK</b>. Kontrollera att biblioteket som du installerade i steg 4 är korrekt konfigurerat med dataStream ID (tidigare kanttskonfigurations-ID (<code>edgeConfigId</code>)), organisations-ID (<code>orgId</code>) och andra tillgängliga alternativ. Kontrollera att variablerna mappas korrekt. </td>
+<td><b>Konfigurera Web SDK</b>. Kontrollera att biblioteket som du installerade i steg 4 är korrekt konfigurerat med dataStream ID (tidigare kanttskonfigurations-ID (<code>datastreamId</code>)), organisations-ID (<code>orgId</code>) och andra tillgängliga alternativ. Kontrollera att variablerna mappas korrekt. </td>
 <td><a href="https://experienceleague.adobe.com/docs/experience-platform/web-sdk/commands/configure/overview.html">Konfigurera Web SDK</a><br/><a href="../xdm-var-mapping.md">XDM-objektvariabelmappning</a></td>
 </tr>
 
