@@ -4,7 +4,7 @@ keywords: Analysis Workspace
 title: Konfigurera platser för molnimport och -export
 feature: Classifications
 exl-id: 55179868-6228-44ff-835c-f4a7b38e929b
-source-git-commit: df9470f1870879ac91f00a021ed890bc6fb10cda
+source-git-commit: 9b263b0b2d41533630f225d4d4dcc9b1e0c4f1df
 workflow-type: tm+mt
 source-wordcount: '1686'
 ht-degree: 0%
@@ -49,13 +49,14 @@ Mer information om hur du visar och tar bort befintliga platser finns i [Platsha
    Dialogrutan [!UICONTROL **Platsinformation**] visas.
 
 1. Ange följande information:
-|Fält | Funktion |
-|—|—|
-| [!UICONTROL **Namn**] | Namnet på platsen.  |
-| [!UICONTROL **Beskrivning**] | Ange en kort beskrivning av kontot för att hjälpa till att skilja det från andra konton av samma kontotyp. |
-| [!UICONTROL **Använd med**] | Ange om du vill använda den här platsen med [!UICONTROL **Datafeeds**], [!UICONTROL **Data Warehouse**] eller [!UICONTROL **Klassificeringsuppsättningar**] . <p>Tänk på följande när du gör en markering:</p><ul><li>En enda plats kan inte användas för flera syften. En plats som till exempel används för datafeeds kan inte också användas för Data Warehouse- eller klassificeringsuppsättningar.</li><li>Om du vill undvika filkonflikter på en plats ska du inte ändra värdet för fältet [!UICONTROL **Använd med**] efter att platsen har använts.</li><li>Om du skapar en plats för ett e-postkonto väljer du [!UICONTROL **Data Warehouse**] i det här fältet. E-postplatser stöds inte med datafeeds och klassificeringsuppsättningar.</li></ul> |
-| [!UICONTROL **Gör platsen tillgänglig för alla användare i organisationen**] | Aktivera det här alternativet om du vill att andra användare i organisationen ska kunna använda platsen.<p>Tänk på följande när du delar platser:</p><ul><li>Platser som du delar kan inte tas bort.</li><li>Delade platser kan bara redigeras av ägaren till platsen.</li><li>Platser kan bara delas om kontot som platsen är kopplad till också delas.</li></ul> |
-| [!UICONTROL **Platskonto**] | Välj det platskonto där du vill skapa den här platsen. Mer information om hur du skapar ett konto finns i [Konfigurera molnimport och exportkonton](/help/components/locations/configure-import-accounts.md). |
+
+   | Fält | Funktion |
+   |---------|----------|
+   | [!UICONTROL **Namn**] | Namnet på platsen. |
+   | [!UICONTROL **Beskrivning**] | Ange en kort beskrivning av kontot för att hjälpa till att skilja det från andra konton av samma kontotyp. |
+   | [!UICONTROL **Använd med**] | Ange om du vill använda den här platsen med [!UICONTROL **datafeeds**], [!UICONTROL **Data Warehouse**] eller [!UICONTROL **klassificeringsuppsättningar**]. <p>Tänk på följande när du gör en markering:</p><ul><li>En enda plats kan inte användas för flera syften. En plats som till exempel används för datafeeds kan inte också användas för Data Warehouse- eller klassificeringsuppsättningar.</li><li>Om du vill undvika filkonflikter på en plats ska du inte ändra värdet för fältet [!UICONTROL **Använd med**] efter att platsen har använts.</li><li>Om du skapar en plats för ett e-postkonto väljer du [!UICONTROL **Data Warehouse**] i det här fältet. E-postplatser stöds inte med datafeeds och klassificeringsuppsättningar.</li></ul> |
+   | [!UICONTROL **Gör platsen tillgänglig för alla användare i organisationen**] | Aktivera det här alternativet om du vill att andra användare i organisationen ska kunna använda platsen.<p>Tänk på följande när du delar platser:</p><ul><li>Platser som du delar kan inte tas bort.</li><li>Delade platser kan bara redigeras av ägaren till platsen.</li><li>Platser kan bara delas om kontot som platsen är kopplad till också delas.</li></ul> |
+   | [!UICONTROL **Platskonto**] | Välj det platskonto där du vill skapa den här platsen. Mer information om hur du skapar ett konto finns i [Konfigurera molnimport och exportkonton](/help/components/locations/configure-import-accounts.md). |
 
 1. Om du vill slutföra formuläret för att konfigurera platsen fortsätter du med det avsnitt nedan som motsvarar kontotypen som du valde i fältet [!UICONTROL **Platskonton**]. (Ytterligare äldre kontotyper är också tillgängliga, men rekommenderas inte.)
 
