@@ -4,9 +4,9 @@ title: Sammanfattning av nyckelmått
 feature: Visualizations
 role: User, Admin
 exl-id: c74e77ff-15d6-48f1-a845-85bdf3444c3a
-source-git-commit: 1843989f77482152adeaee1f1c9e523d0c55dc21
+source-git-commit: 8405c36b3e19a54385011ea80fc06363a02bc07a
 workflow-type: tm+mt
-source-wordcount: '542'
+source-wordcount: '550'
 ht-degree: 0%
 
 ---
@@ -51,6 +51,8 @@ Den här visualiseringen åtgärdar ett antal vanliga användningsfall, bland an
 1. Klicka på **[!UICONTROL Build]**.
 
 ## Visa utdata
+
+Optimeringsvisualiseringen bör se ut ungefär så här:
 
 ![](assets/key-metric-output.png)
 

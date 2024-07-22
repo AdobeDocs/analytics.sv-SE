@@ -4,9 +4,9 @@ title: Konfigurera en flödesvisualisering
 feature: Visualizations
 role: User, Admin
 exl-id: c2fdcc96-81ac-4d3b-b255-ff805b6ff0ea
-source-git-commit: ec466d2a503278b05d19eda09e2a2244897ce1f3
+source-git-commit: 8405c36b3e19a54385011ea80fc06363a02bc07a
 workflow-type: tm+mt
-source-wordcount: '1313'
+source-wordcount: '1310'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ Med flödesvisualiseringar kan du konfigurera början eller slutet av den sökv�
    >
    >Beräknade mått kan inte användas i fälten **[!UICONTROL Starts with]** eller **[!UICONTROL Ends with]**.
 
-1. Om du väljer ett mätvärde måste du även ange en [!UICONTROL **Dimension för banor**] som du kan använda som banleder till eller går från den markerade komponenten, vilket visas här. Standardvärdet är [!UICONTROL **Sida**].
+1. Om du väljer ett mätvärde måste du även ange en [!UICONTROL **Dimension**] som du kan använda som sökväg som leder till eller kommer från den markerade komponenten, vilket visas här. Standardvärdet är [!UICONTROL **Sida**].
 
    ![målningsdimension](assets/pathing-dim.png)
 
@@ -74,7 +74,7 @@ Med flödesvisualiseringar kan du konfigurera början eller slutet av den sökv�
 > 
 >1. Börja skapa en flödesvisualisering enligt beskrivningen ovan.
 >1. Dra dimensionen [!UICONTROL **Sida**] till fältet **[!UICONTROL Contains]** och välj sedan [!UICONTROL **Skapa**].
->1. Flödesvisualiseringen byggs med den mest visade sidan synlig i fokusnoden mitt i visualiseringen. Du kan även se de översta sidorna som leder till den sidan (till vänster om fokusnoden) samt de översta sidorna som leder ut från fokussidan (till höger om fokusnoden).
+>1. Flödesvisualiseringen byggs med den mest visade sidan synlig i fokusnoden mitt i visualiseringen. Du kan även se de översta sidorna som leder till den sidan (till vänster om fokusnoden) samt de översta sidorna som leder ut från den sidan (till höger om fokusnoden).
 >1. Analysera data i flödet enligt beskrivningen i [Visa och ändra Flödesutdata](#view-and-change-the-flow-output).
 
 
