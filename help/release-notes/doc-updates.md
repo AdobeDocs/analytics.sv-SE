@@ -5,9 +5,9 @@ short-title: Analytics documentation updates
 feature: Release Notes
 exl-id: fe8e3c4c-6782-46f7-8e28-4f8f54807788
 mini-toc-levels: 3
-source-git-commit: 00bc3e039957b0e7f9bc171d7075def3fc8fb838
+source-git-commit: f8541ac8f82e63f1664b06ed788d307c5d224ca9
 workflow-type: tm+mt
-source-wordcount: '5737'
+source-wordcount: '5841'
 ht-degree: 19%
 
 ---
@@ -26,6 +26,7 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | Funktion | Beskrivning |
 | --- | --- |
 | **Juli 2024** | |
+| Lagt till information om snabba beräknade mätvärden | Uppdaterad information i [Metrisk](/help/analyze/analysis-workspace/components/apply-create-metrics.md) för att förtydliga skillnaden mellan [beräknade mått som skapas i beräkningsverktyget](/help/analyze/analysis-workspace/components/apply-create-metrics.md#create-calculated-metrics-for-all-projects) och [de som skapas som snabbberäknade mätvärden i ett enskilt projekt](/help/analyze/analysis-workspace/components/apply-create-metrics.md#create-calculated-metrics-for-a-single-project). Ytterligare information om slangarna för att skapa snabba beräknade mätvärden.<p>Beräknade mätvärden som har skapats i verktyget för beräknade mätvärden är tillgängliga i komponentlistan och kan tillämpas på projekt i hela organisationen, medan beräknade mätvärden som har skapats som snabba beräknade mätvärden endast är tillgängliga i det projekt där de skapades.</p><p>Uppdaterad information i [Build metrics](/help/components/c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-build-metrics.md) för att göra liknande förtydliganden.</p> |
 | Lagt till threads.net i dimensionen &#39;Refererartyp&#39; | threads.net har lagts till i listan över sociala nätverk som används i dimensionen ](/help/components/dimensions/referrer-type.md) för [-referenstypen. |
 | Uppdaterad dokumentation för hantering av dataflöden | Uppdaterad information i [Hantera dataflöden](/help/export/analytics-data-feed/df-manage-feeds.md) för att förbättra tydligheten. <p>Bland uppdateringarna finns:</p><ul><li>Skapade separata avsnitt för olika uppgifter för att göra informationen enklare att skanna och använda.</li><li>Lagt till information om förändringar i beteendet för liveflöden som återaktiveras. Dessa ändringar är för närvarande begränsade och är ännu inte tillgängliga för alla kunder.</li><li>Tillagd information som anger att dataflöden måste ha statusen Aktiv innan de kan tas bort.</li> |
 | Uppdaterade vanliga felmeddelanden | Mindre uppdateringar av de [vanliga felmeddelandena](/help/analyze/analysis-workspace/workspace-faq/error-messages.md) har gjorts. |

@@ -3,10 +3,10 @@ description: I verktyget Calculated Metrics Builder finns en arbetsyta där du k
 title: Bygg mätvärden
 feature: Calculated Metrics
 exl-id: 12bb3734-e25d-4c67-8c62-e1226d9aef94
-source-git-commit: 7722a2f01ff77dfec8ce110fd04fe977f6c627c6
+source-git-commit: f8541ac8f82e63f1664b06ed788d307c5d224ca9
 workflow-type: tm+mt
-source-wordcount: '993'
-ht-degree: 2%
+source-wordcount: '1071'
+ht-degree: 1%
 
 ---
 
@@ -16,11 +16,17 @@ Adobe Analytics har en arbetsyta där du kan dra och släppa dimensioner, mätv�
 
 ## Börja skapa ett beräknat mått
 
-Du kan börja skapa ett beräknat mått på något av följande sätt:
+Du kan använda verktyget för beräknade mätvärden för att skapa beräknade mätvärden. När de skapas på det här sättet är beräknade värden tillgängliga i komponentlistan och kan sedan användas i projekt i hela organisationen. Du kan också skapa ett snabbt beräknat mått enligt beskrivningen i [Skapa beräknade värden för ett enskilt projekt](/help/analyze/analysis-workspace/components/apply-create-metrics.md#create-calculated-metrics-for-a-single-project) i [Metrisk](/help/analyze/analysis-workspace/components/apply-create-metrics.md).
 
-* Öppna ett projekt i Analysis Workspace och välj sedan **[!UICONTROL Components]** > **[!UICONTROL Create metric]**.
-* Öppna ett projekt i Analysis Workspace och välj sedan ikonen **Plus** bredvid avsnittet [!UICONTROL **Metrisk**] i den vänstra listen.
-* I [!DNL Analytics] går du till **[!UICONTROL Components]** > **[!UICONTROL Calculated metrics]** och väljer sedan **[!UICONTROL + Add]** högst upp på sidan Beräknade mått.
+Gå till verktyget för beräknade värden för att börja skapa ett beräknat mått som är tillgängligt i komponentlistan.
+
+1. Använd verktyget för beräknade värden på något av följande sätt:
+
+   * Öppna ett projekt i Analysis Workspace och välj sedan **[!UICONTROL Components]** > **[!UICONTROL Create metric]**.
+   * Öppna ett projekt i Analysis Workspace och välj sedan ikonen **Plus** bredvid avsnittet [!UICONTROL **Metrisk**] i den vänstra listen.
+   * I [!DNL Customer Journey Analytics] går du till **[!UICONTROL Components]** > **[!UICONTROL Calculated metrics]** och väljer sedan **[!UICONTROL + Add]** högst upp på sidan Beräknade mått.
+
+1. Fortsätt med [Områden i det beräknade måttverktyget](#areas-of-the-calculated-metrics-builder).
 
 ## Områden i verktyget för beräknade värden
 

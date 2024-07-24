@@ -4,9 +4,9 @@ title: Mätvärden i Analysis Workspace
 feature: Metrics
 role: User, Admin
 exl-id: 0a5dc709-c4e8-412a-a6cf-37b85d811f65
-source-git-commit: 564fb1cd65daf7efb03e1258ee378939f37c9426
+source-git-commit: f8541ac8f82e63f1664b06ed788d307c5d224ca9
 workflow-type: tm+mt
-source-wordcount: '356'
+source-wordcount: '496'
 ht-degree: 0%
 
 ---
@@ -37,13 +37,41 @@ Mätvärden kan användas på olika sätt i Analysis Workspace. Mer information 
 
 >[!VIDEO](https://video.tv.adobe.com/v/40817/?quality=12)
 
-## Beräknade mått
+## Skapa beräknade mått
 
-Beräknade mätvärden gör att du enkelt kan se hur mätvärden relaterar till varandra med enkla operatorer eller statistiska funktioner. Det finns flera sätt att skapa beräknade mått:
+Beräknade mätvärden gör att du enkelt kan se hur mätvärden relaterar till varandra med enkla operatorer eller statistiska funktioner.
 
-* Klicka på plusikonen bredvid måtthuvudet under komponentlistan till vänster.
-* Navigera till **[!UICONTROL Components]** > **[!UICONTROL Calculated Metrics]** > **[!UICONTROL Add]**.
-* Högerklicka på en kolumnrubrik > **[!UICONTROL Create metric from selection]** när en eller flera rubrikkolumnceller är markerade. Med det här alternativet skapas automatiskt ett beräknat mått utan att du behöver använda verktyget för att skapa beräkningsmetrisk regel.
+Det finns flera sätt att skapa beräknade mått. Den metod du väljer avgör om det beräknade måttet är tillgängligt från komponentlistan i alla projekt, eller bara i det projekt där det skapades.
+
+### Skapa beräknade mätvärden för alla projekt
+
+Du kan använda verktyget för beräknade mätvärden för att skapa beräknade mätvärden. När de skapas på det här sättet är beräknade värden tillgängliga i komponentlistan och kan sedan användas i projekt i hela organisationen.
+
+Mer information om hur du får åtkomst till verktyget för beräknade värden finns i [Bygg mått](/help/components/c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-build-metrics.md).
+
+### Skapa beräknade mätvärden för ett enskilt projekt
+
+Du kan skapa snabba beräknade mätvärden som bara är tillgängliga för det projekt där de skapades.
+
+Så här skapar du ett beräknat mått för ett enskilt projekt:
+
+1. Öppna det projekt i Analysis Workspace där du vill skapa det beräknade måttet.
+
+1. Högerklicka på en eller flera rubrikkolumnceller i en frihandstabell och välj sedan **[!UICONTROL Create metric from selection]**
+
+   ![Markering av panelen Workspace Skapa från markering](assets/create-metric-from-selection.png)
+
+1. Om du bara vill skapa ett beräknat mått för det här projektet väljer du bland följande alternativ:
+
+   * [!UICONTROL **Dela**]
+
+   * [!UICONTROL **Subtrahera**]
+
+   * [!UICONTROL **Lägg till**]
+
+   * [!UICONTROL **Multiplicera**]
+
+   Om du vill öppna verktyget för beräknade mått och skapa det beräknade måttet för alla projekt väljer du [!UICONTROL **Öppna i verktyget för beräknade mått**] och fortsätter sedan med [Build metrics](/help/components/c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-build-metrics.md).
 
 [Beräknade mått: Mätvärden utan implementering](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/components/calculated-metrics/calculated-metrics-implementationless-metrics.html) (3:42)
 
