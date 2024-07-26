@@ -4,10 +4,10 @@ audience: end-user
 user-guide-title: Komponenthandbok för Analytics
 breadcrumb-title: Användarhandbok om komponenter
 user-guide-description: Hantera data med komponenter som segment, beräknade värden, virtuella rapportsviter, marknadsföringskanaler och klassificeringar. Lär dig mer om Analytics över flera enheter.
-source-git-commit: 11e98d35ba52fb777a08f950725b0e8dbb99fa22
+source-git-commit: 45b371bd20223b86d0f17d9bdb48cffb2de15468
 workflow-type: tm+mt
-source-wordcount: '766'
-ht-degree: 8%
+source-wordcount: '809'
+ht-degree: 7%
 
 ---
 
@@ -98,6 +98,12 @@ ht-degree: 8%
    + [Server](dimensions/server.md)
    + [Besök enstaka sidor](dimensions/single-page-visits.md)
    + [Site section](dimensions/site-section.md)
+   + [Kärndimensioner för direktuppspelande media](dimensions/sm-core.md)
+   + [Annonser för direktuppspelande media](dimensions/sm-ads.md)
+   + [Direktuppspelande mediekapital](dimensions/sm-chapters.md)
+   + [Direktuppspelad mediekvalitet](dimensions/sm-quality.md)
+   + [Metadata för direktuppspelat medieljud](dimensions/sm-audio-metadata.md)
+   + [Videometadata för direktuppspelande media](dimensions/sm-video-metadata.md)
    + [Tid före händelse](dimensions/time-prior-to-event.md)
    + [Tid som använts på sidan](dimensions/time-spent-on-page.md)
    + [Tid per besök](dimensions/time-spent-per-visit.md)
@@ -151,6 +157,12 @@ ht-degree: 8%
    + [Sökningar](metrics/searches.md)
    + [Enkel åtkomst](metrics/single-access.md)
    + [Besök enstaka sidor](metrics/single-page-visits.md)
+   + [Strömma viktiga mätvärden för media](metrics/sm-core.md)
+   + [Annonser för direktuppspelande media](metrics/sm-ads.md)
+   + [Direktuppspelande mediekapital](metrics/sm-chapters.md)
+   + [Spårning av direktuppspelningsstatus för mediespelare](metrics/sm-player-state.md)
+   + [Direktuppspelad mediekvalitet](metrics/sm-quality.md)
+   + [Videometadata för direktuppspelande media](metrics/sm-video-metadata.md)
    + [Tid per besök](metrics/time-spent-per-visit.md)
    + [Tid per besökare](metrics/time-spent-per-visitor.md)
    + [Tidsåtgång - översikt](metrics/time-spent.md)

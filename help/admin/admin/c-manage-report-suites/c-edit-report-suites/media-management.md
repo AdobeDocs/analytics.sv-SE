@@ -4,16 +4,16 @@ title: Mediehantering
 feature: Admin Tools
 uuid: a841a5a8-6d47-478d-b02b-6c1647fb04ce
 exl-id: b6dc8d93-3f89-4671-a4c3-18614667bf4e
-source-git-commit: 1382d8901b980db016521a3051de23d8d5b71f57
+source-git-commit: 26c131a37fa1f30c83fd99b290523a97d3c954db
 workflow-type: tm+mt
-source-wordcount: '164'
+source-wordcount: '212'
 ht-degree: 0%
 
 ---
 
 # Mediehantering
 
-Du kan aktivera media i Analytics för att reservera en särskild uppsättning medielösningsvariabler som kan användas för mätning och rapportering. Variablerna fungerar som anpassade variabler, händelser och uttryck, men de räknas inte mot variabelgränserna. När de har aktiverats visas en ny uppsättning medierapporter på Analytics-menyerna.
+Du kan använda det här gränssnittet för att reservera variabler som ska användas i mediemätningar och -rapporter. När dessa variabler beter sig på liknande sätt som eVars, props och events, men inte räknas med i några variabelgränser. När de har aktiverats visas en ny uppsättning medierapporter på Analytics-menyerna.
 
 **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]** > **[!UICONTROL Edit Settings]** > **[!UICONTROL Media Management]**.
 
@@ -21,10 +21,23 @@ Följande alternativ för mediehantering är tillgängliga när du redigerar en 
 
 * [!UICONTROL **Medierapportering**]
 
-  Rapporter som är specifika för tillägget Streaming Media Collection finns på sidan Media Reporting. Mer information om Media Reporting finns i [Aktivera medierapporter](https://experienceleague.adobe.com/docs/media-analytics/using/media-reports/media-reports-enable.html).
+  Använd de här kryssrutorna om du vill aktivera mått och mått som är specifika för tillägget Streaming Media Collection.
+
+   * [Mediekärndimensioner](/help/components/dimensions/sm-core.md)
+   * [Media core metrics](/help/components/metrics/sm-core.md)
+   * [Media och dimensioner](/help/components/dimensions/sm-ads.md)
+   * [Mått för mediereklam](/help/components/metrics/sm-ads.md)
+   * [Mediekapiteldimensioner](/help/components/dimensions/sm-chapters.md)
+   * [Mediekapitelmått](/help/components/metrics/sm-chapters.md)
+   * [Mått för mediakvalitet](/help/components/dimensions/sm-quality.md)
+   * [Mätvärden för mediakvalitet](/help/components/metrics/sm-quality.md)
+   * [Metadata för video](/help/components/dimensions/sm-video-metadata.md)
+   * [Metadata för video](/help/components/metrics/sm-video-metadata.md)
+   * [Dimensioner för ljudmetadata](/help/components/dimensions/sm-audio-metadata.md)
+   * [Mätvärden för spårning av spelartillstånd](/help/components/metrics/sm-player-state.md)
 
 * [!UICONTROL **Medieklassificeringar**]
 
-  Specifika klassificeringar för tillägget Direktuppspelad mediesamling finns på sidan Medieklassificeringar. Mer information om klassificeringar finns i [Konverteringsklassificeringar](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/conversion-classifications.md).
+  Specifika klassificeringar för tilläggsdimensioner för direktuppspelad mediasamling finns på sidan [!UICONTROL Media Classifications]. De fungerar ungefär som [konverteringsklassificeringar](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/conversion-classifications.md) som är tillgängliga för konverteringsvariabler. Om du aktiverar vissa komponenter under [!UICONTROL Media Reporting] skapas klassificeringsdimensioner automatiskt. Du kan använda det här gränssnittet för att skapa egna klassificeringsdimensioner eller överföra klassificeringsdata.
 
-Allmän information om hur du integrerar direktuppspelande mediedata i Adobe Analytics finns i [tilläggsguiden för direktuppspelande mediainsamling](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html).
+Allmän information om hur du integrerar direktuppspelande mediedata i Adobe Analytics finns i [tilläggsguiden för direktuppspelande mediainsamling](https://experienceleague.adobe.com/en/docs/media-analytics/using/media-overview).
