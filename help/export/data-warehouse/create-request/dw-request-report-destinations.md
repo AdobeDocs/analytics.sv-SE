@@ -3,7 +3,7 @@ description: Steg som beskriver hur du skapar en begäran om Data Warehouse.
 title: Konfigurera ett rapportmål för en Data Warehouse-begäran
 feature: Data Warehouse
 exl-id: 3c7faea3-4d90-4274-88f3-e9337c94155f
-source-git-commit: 23d519975111dc43b515c6c5bc67d7001d05c0d8
+source-git-commit: f41144d5889d03441f06806256ec79aa25d242cf
 workflow-type: tm+mt
 source-wordcount: '2612'
 ht-degree: 0%
@@ -142,11 +142,12 @@ Så här konfigurerar du målet dit Data Warehouse-rapporter skickas:
       | [!UICONTROL **Mottagare**] | E-postmeddelanden kan skickas till specifika användare när rapporten skickas. Ange en e-postadress eller en kommaavgränsad lista med e-postadresser. <!-- How does this differ from the Notification email tab? --> |
 
    1. Välj [!UICONTROL **Lägg till plats**] och ange sedan följande information:
-|Fält | Funktion |
-|—|—|
-| [!UICONTROL **Namn**] | Namnet på platsen.  |
-| [!UICONTROL **Beskrivning**] | Ange en kort beskrivning av kontot för att hjälpa till att skilja det från andra konton av samma kontotyp. |
-| [!UICONTROL **Platskonto**] | Välj det platskonto som du skapade i [Lägg till ett konto](#add-an-account). |
+
+      | Fält | Funktion |
+      |---------|----------|
+      | [!UICONTROL **Namn**] | Namnet på platsen. |
+      | [!UICONTROL **Beskrivning**] | Ange en kort beskrivning av kontot för att hjälpa till att skilja det från andra konton av samma kontotyp. |
+      | [!UICONTROL **Platskonto**] | Välj det platskonto som du skapade i [Lägg till ett konto](#add-an-account). |
 
    1. I avsnittet [!UICONTROL **Platsegenskaper**] anger du information som är specifik för kontotypen för ditt platskonto.
 

@@ -3,7 +3,7 @@ description: I Segment Builder finns en arbetsyta där du kan dra och släppa me
 title: Skapa segment
 feature: Segmentation
 exl-id: 2107f301-4137-4e97-9aa7-07824b842e16
-source-git-commit: 93099d36a65ca2bf16fbd6342f01bfecdc8c798e
+source-git-commit: f41144d5889d03441f06806256ec79aa25d242cf
 workflow-type: tm+mt
 source-wordcount: '1872'
 ht-degree: 1%
@@ -54,6 +54,7 @@ Du kan lägga till regeldefinitioner och behållare för att definiera dina segm
    | Upprepande | X | X | X | - | X | - |
    | Instance | X | X | - | - | X | - |
    | Icke upprepande instans | X | - | - | - | X | - |
+
 1. **[!UICONTROL And/Or/Then]**: Tilldelar operatorerna [!UICONTROL AND/OR/THEN] mellan behållare eller regler. Operatorn THEN låter dig [definiera sekventiella segment](/help/components/segmentation/segmentation-workflow/seg-sequential-build.md).
 1. **[!UICONTROL Metric]**: (Grönt sidofält) Mått som har dragits och tagits bort från måttlistan.
 1. Operatorn **[!UICONTROL Comparison]**: Du kan jämföra och begränsa värden med valda operatorer.
