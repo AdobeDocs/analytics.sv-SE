@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: Platshanteraren
 feature: Classifications
 exl-id: ace70568-220a-44e8-8e5f-f73002b9e2a2
-source-git-commit: df9470f1870879ac91f00a021ed890bc6fb10cda
+source-git-commit: a81cc80ddc884c3f908e66e37593e1ce1b829a50
 workflow-type: tm+mt
-source-wordcount: '1446'
+source-wordcount: '1454'
 ht-degree: 0%
 
 ---
@@ -202,6 +202,8 @@ Så här begränsar du de kontotyper som är tillgängliga för användare när 
 1. Leta reda på avsnittet [!UICONTROL **Tillåtna kontotyper**].
 
    Följande kontotyper är tillgängliga som standard för användare. Avmarkera någon av de kontotyper som du vill hindra användare från att använda.
+
+   Du måste välja minst en kontotyp.
 
    * [!UICONTROL **Amazon S3-roll ARN**]
 
