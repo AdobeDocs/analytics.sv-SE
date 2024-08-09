@@ -4,7 +4,7 @@ keywords: Analysis Workspace
 title: Konfigurera molnimport- och exportkonton
 feature: Classifications
 exl-id: 40d3d3f1-1047-4c37-8caf-6b0aabaa590a
-source-git-commit: 6cf277667230a56da9793deb550df1980f1d33b0
+source-git-commit: 07a252c9093d47173cc0fe6b1b42b2f14a63870c
 workflow-type: tm+mt
 source-wordcount: '1469'
 ht-degree: 0%
@@ -140,7 +140,7 @@ Så här konfigurerar du ett molnimport- eller exportkonto:
 
    | Fält | Funktion |
    |---------|----------|
-   | [!UICONTROL **Värd**] | Ange önskad mål-URL för FTP. Exempel: `ftp://ftp.omniture.com`. |
+   | [!UICONTROL **Värd**] | Ange önskad mål-URL för FTP. Exempel: `ftp.adobe.com`. |
    | [!UICONTROL **Sökväg**] | Kan lämnas tomt. |
    | [!UICONTROL **Användarnamn**] | Ange användarnamnet för att logga in på FTP-platsen. |
    | [!UICONTROL **Lösenord och bekräfta lösenord**] | Ange lösenordet för att logga in på FTP-platsen. |
