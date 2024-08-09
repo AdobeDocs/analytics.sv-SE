@@ -3,10 +3,10 @@ title: Exporthandbok för Analytics
 description: I den här guiden beskrivs olika sätt att hämta data från Adobe Analytics med hjälp av dataflöden och Data Warehouse.
 exl-id: 0e4014a7-3354-4111-ab74-64d9fa37b9cc
 feature: Data Feeds, FTP Export, Data Warehouse
-source-git-commit: 9e3354569b2e748b3194be34c9119062300ca609
+source-git-commit: 62cb13c7eaa61153783ff4323180b549f727e68e
 workflow-type: tm+mt
-source-wordcount: '162'
-ht-degree: 67%
+source-wordcount: '178'
+ht-degree: 46%
 
 ---
 
@@ -16,9 +16,9 @@ ht-degree: 67%
 
 I den här guiden beskrivs olika sätt att hämta data från Adobe Analytics. Den innehåller:
 
-* **Datafeeds:** Exportera rådata varje timme eller varje dag. Varje rad är en enskild träff och varje kolumn är en variabel. Datafeeds skickas vanligtvis till FTP-platser.
-* **Data Warehouse:** Använd en frågeguide för att hämta kalkylbladsutdata. Data Warehouse har en annan bearbetningsarkitektur som tillåter valfritt antal rader och valfritt antal unika värden.
-* **FTP och SFTP:** Bästa tillvägagångssätt för FTP och SFTP med Adobe
+* **Datafeeds:** Exportera rådata varje timme eller varje dag. Varje rad är en enskild träff och varje kolumn är en variabel. Dataflöden skickas vanligtvis till [molnmål](/help/export/analytics-data-feed/create-feed.md).
+* **Data Warehouse:** Använd en frågeguide för att hämta kalkylbladsutdata. Datan Warehouse använder en annan bearbetningsarkitektur för att tillåta valfritt antal rader och valfritt antal unika värden. Förfrågningar om datalager skickas vanligtvis till [molnmål](/help/export/data-warehouse/create-request/dw-request-report-destinations.md)
+* **FTP och SFTP:** FTP och SFTP stöds, men rekommenderas inte längre. Exportera i stället data till molnmål.
 
 Här är en videoöversikt över Adobe Analytics:
 
