@@ -4,9 +4,9 @@ description: Kumulativ versionsinformation för AppMeasurement för JavaScript.
 feature: Appmeasurement Implementation
 exl-id: 80b935f0-3ec5-4ffa-9858-f83ae9a6b763
 role: Admin, Developer, Leader, User
-source-git-commit: f397aaba5b32ad226e930e983f4b087d29c16b89
+source-git-commit: e403ed5ff1a1b6aa56d4f4112bbd7a7c072cc844
 workflow-type: tm+mt
-source-wordcount: '2666'
+source-wordcount: '2717'
 ht-degree: 3%
 
 ---
@@ -18,6 +18,15 @@ Kumulativ versionsinformation för AppMeasurement för JavaScript.
 <!-- https://wiki.corp.adobe.com/display/omtrcache/AppMeasurement+Change+Log -->
 
 Du kan hämta den senaste versionen av AppMeasurementet från [GitHub](https://github.com/adobe/appmeasurement/releases).
+
+## Version 2.27.0
+
+Releasedatum: **12 augusti 2024**
+
+* Cookien `s_ac` skrivs nu med flaggan `secure` om `writeSecureCookies` har aktiverats.
+* Korrigerade ett initieringsfel när biblioteket är inbäddat.
+* Ett fel har korrigerats om `localStorage` eller `sessionStorage` har inaktiverats.
+* Tips för High Entropy-användaragent ingår nu i länkspårningsanrop (`tl`) om `collectHighEntropyUserAgentHints` har aktiverats.
 
 ## Version 2.26.0
 
