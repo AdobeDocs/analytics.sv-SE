@@ -5,9 +5,9 @@ short-title: Analytics documentation updates
 feature: Release Notes
 exl-id: fe8e3c4c-6782-46f7-8e28-4f8f54807788
 mini-toc-levels: 3
-source-git-commit: a81cc80ddc884c3f908e66e37593e1ce1b829a50
+source-git-commit: 72f223cd1962a468aa6c0772958ad6a99cfc1c39
 workflow-type: tm+mt
-source-wordcount: '5876'
+source-wordcount: '5888'
 ht-degree: 19%
 
 ---
@@ -26,6 +26,7 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | Funktion | Beskrivning |
 | --- | --- |
 | **Juli 2024** | |
+| Slutförda händelser | Effektiv dokumentation om [success events](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/c-success-events/success-event.md). Uppdaterat för tydlighet och precision. |
 | Minst en kontotyp måste väljas vid hantering av platser | Tydligare är att när administratörer [begränsar de kontotyper som används för export och import](/help/components/locations/locations-manager.md#limit-the-account-types-that-are-available-to-users) måste minst en kontotyp väljas. |
 | Lagt till information om snabba beräknade mätvärden | Uppdaterad information i [Metrisk](/help/analyze/analysis-workspace/components/apply-create-metrics.md) för att förtydliga skillnaden mellan [beräknade mått som skapas i beräkningsverktyget](/help/analyze/analysis-workspace/components/apply-create-metrics.md#create-calculated-metrics-for-all-projects) och [de som skapas som snabbberäknade mätvärden i ett enskilt projekt](/help/analyze/analysis-workspace/components/apply-create-metrics.md#create-calculated-metrics-for-a-single-project). Ytterligare information om slangarna för att skapa snabba beräknade mätvärden.<p>Beräknade mätvärden som har skapats i verktyget för beräknade mätvärden är tillgängliga i komponentlistan och kan tillämpas på projekt i hela organisationen, medan beräknade mätvärden som har skapats som snabba beräknade mätvärden endast är tillgängliga i det projekt där de skapades.</p><p>Uppdaterad information i [Build metrics](/help/components/c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-build-metrics.md) för att göra liknande förtydliganden.</p> |
 | Lagt till threads.net i dimensionen &#39;Refererartyp&#39; | threads.net har lagts till i listan över sociala nätverk som används i dimensionen ](/help/components/dimensions/referrer-type.md) för [-referenstypen. |

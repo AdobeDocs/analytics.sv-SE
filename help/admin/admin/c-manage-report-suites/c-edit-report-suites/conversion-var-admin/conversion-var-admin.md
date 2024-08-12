@@ -5,9 +5,9 @@ title: Konverteringsvariabler (eVar)
 feature: Admin Tools
 role: Admin
 exl-id: 822ecaff-a06c-42e1-aee8-ef4a43df4230
-source-git-commit: 429aaa43fdae669350bdb5a5a54a7d4b9b1c65f2
+source-git-commit: 72f223cd1962a468aa6c0772958ad6a99cfc1c39
 workflow-type: tm+mt
-source-wordcount: '1621'
+source-wordcount: '1634'
 ht-degree: 0%
 
 ---
@@ -20,9 +20,7 @@ Custom Insight Conversion Variable (eller eVar) placeras i Adobe-koden på vissa
 
 ## Konverteringsvariabler (eVars) - översikt
 
-Här följer en videoöversikt:
-
->[!VIDEO](https://video.tv.adobe.com/v/28759/?quality=12)
+En videoöversikt över konverteringsvariabler finns i [Introduktion till konverteringsvariabler](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/dimensions/introduction-to-conversion-variables-evars) i självstudiehandboken för Analytics.
 
 När en eVar anges till ett värde för en besökare kommer Adobe automatiskt ihåg det värdet tills det upphör att gälla. Alla lyckade händelser som besökaren påträffar när eVarna är aktiv räknas mot eVarna.
 

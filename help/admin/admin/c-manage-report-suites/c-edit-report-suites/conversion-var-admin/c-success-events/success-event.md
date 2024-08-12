@@ -5,9 +5,9 @@ title: Success events overview
 feature: Event
 role: Admin
 exl-id: d52a691a-8124-4601-932f-d6d2d0a7842b
-source-git-commit: 38478fbccf7680e5b404b306136594e627d09a08
+source-git-commit: 72f223cd1962a468aa6c0772958ad6a99cfc1c39
 workflow-type: tm+mt
-source-wordcount: '1334'
+source-wordcount: '925'
 ht-degree: 1%
 
 ---
@@ -16,11 +16,9 @@ ht-degree: 1%
 
 Slutförda händelser (kallas även konverteringshändelser eller anpassade händelser) är åtgärder som kan spåras. Du avgör vilken händelse som lyckas. Om en besökare till exempel köper ett objekt kan köphändelsen betraktas som en lyckad händelse.
 
-Här är en videoöversikt:
+En videoöversikt över lyckade händelser finns i [Introduktion till konverteringshändelser](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/metrics/introduction-to-conversion-events) i självstudiekurserna för Analytics.
 
->[!VIDEO](https://video.tv.adobe.com/v/28764/?quality=12)
-
-## Förstå framgångshändelser
+## Exempel på lyckade händelser
 
 Det finns många typer av framgångsrika händelser, beroende på webbplatstypen. Flera exempel:
 
@@ -54,9 +52,9 @@ Så här konfigurerar du lyckade händelser:
 
 1. Markera kryssrutan bredvid objektet i kolumnen **[!UICONTROL Type]** för att aktivera listrutan och välj sedan önskad typ.
 
-   >[!NOTE]
+   >[!IMPORTANT]
    >
-   >Du kan ändra en händelse från räknare, numeriska data eller valutor till en annan typ utan att förlora åtkomsten till tidigare hämtade data.
+   >Tänk på följande när du ändrar händelsetypen:<ul><li>Du kan ändra händelsetypen mellan räknare och numerisk utan att förlora åtkomsten till tidigare hämtade data.</li><li>När händelsetyper ändras till eller från en valutakurs visas ett meddelande om att historiska data inte är tillgängliga i rapporter. Olika händelsetyper använder separata datatabeller och kan inte användas samtidigt. Vissa historiska data kan återställas om användaren återställer händelsetypen. Data som samlats in efter den första ändringen är dock inte tillgängliga.</li></ul>
 
    Den typ du väljer avgör om händelsen är en räknarhändelse (standard), numerisk händelse eller valutakurs. <p>Räknarhändelser används för att spela in en händelse i tid.</p><p>Numeriska händelser används för att rapportera icke-valutanummer, t.ex. antalet kuponger som används i en order.</p> <p>Valutahändelser registrerar ett decimaltal, som moms eller frakt. Det värde som skickas till valutakurshändelser konverteras från sidvalutan till rapportsvitens basvaluta vid inleverans. Valutahändelser används för att spåra moms och fraktkostnader. Mer information om hur du använder valutakurser får du om du kontaktar en Adobe-representant.<p>Numeriska händelser och valutakurshändelser gör att du kan öka måtten med mer än en.</p><p>Händelser som används i standardtypen för datakällor måste vara numeriska händelser eller valutakurshändelser.</p>
 
@@ -81,11 +79,10 @@ Så här konfigurerar du lyckade händelser:
 
    Följande alternativ är tillgängliga:
 
-
-| Alternativ | Funktion |
-|---------|----------|
-| [!UICONTROL **Spela in en gång per besök**] | Kopplar den angivna händelsen till besökarens session. Efterföljande antal till en viss händelse i samma besök ignoreras. Den här typen av händelseserialisering kräver inga implementeringsändringar. |
-| [!UICONTROL **Använd händelse-ID**] | Kopplar den angivna händelsen till ett anpassat ID. Efterföljande antal till en viss händelse med samma händelse-ID ignoreras. Den här typen av händelseserialisering kräver ett anpassat ID i träffar för att dubblettvärden ska kunna tas bort. Se [Serialisering av händelse-ID](/help/implement/vars/page-vars/events/event-serialization.md) i användarhandboken för Implementering. |
+   | Alternativ | Funktion |
+   |---------|----------|
+   | [!UICONTROL **Spela in en gång per besök**] | Kopplar den angivna händelsen till besökarens session. Efterföljande antal till en viss händelse i samma besök ignoreras. Den här typen av händelseserialisering kräver inga implementeringsändringar. |
+   | [!UICONTROL **Använd händelse-ID**] | Kopplar den angivna händelsen till ett anpassat ID. Efterföljande antal till en viss händelse med samma händelse-ID ignoreras. Den här typen av händelseserialisering kräver ett anpassat ID i träffar för att dubblettvärden ska kunna tas bort. Se [Serialisering av händelse-ID](/help/implement/vars/page-vars/events/event-serialization.md) i användarhandboken för Implementering. |
 
 1. Markera kryssrutan i kolumnen [!UICONTROL **Deltagande**] och välj sedan om du vill aktivera eller inaktivera deltagande. När det är aktiverat ger det fullständig attribueringskreditering till alla dimensionsobjekt i besöket.
 
@@ -94,20 +91,3 @@ Så här konfigurerar du lyckade händelser:
    >Du kan aktivera deltagande för upp till 100 anpassade händelser. Utöver detta kan du skapa deltagandemått i [Calculated Metrics](/help/components/c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/participation-metric.md)-byggaren.
 
 1. Välj **[!UICONTROL Save]**.
-
-## Händelsesida - beskrivningar {#section_681ECEC981694CABBDBF00E18165B447}
-
-**[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]** > **[!UICONTROL Edit Settings]** > **[!UICONTROL Conversion]** > **[!UICONTROL Success Events]**
-
-På sidan Success Events kan du konfigurera de händelsevariabler som används på din plats. Du kan lägga till upp till 1 000 lyckade händelser. Händelser 81-1 000 fungerar bara om H22-koden eller senare används.
-
-| Element | Beskrivning |
-|--- |--- |
-| Händelse | Händelsens ursprungliga namn. |
-| Namn | Ge meningsfulla namn till de framgångshändelser som används på er webbplats. Om till exempel event1 används för att spåra registreringar, ändrar du namnet här så att event1 representeras som mätvärdet för &quot;Registreringar&quot; i alla konverteringsrapporter. |
-| Typ | Den valda typen avgör om händelsen är en räknarhändelse (standard), numerisk händelse eller valutakurs. <p>Räknarhändelser används för att spela in en händelse i tid.</p><p>Numeriska händelser används för att rapportera icke-valutanummer, t.ex. antalet kuponger som används i en order.</p> <p>Valutahändelser registrerar ett decimaltal, som moms eller frakt. Det värde som skickas till valutakurshändelser konverteras från sidvalutan till rapportsvitens basvaluta vid inleverans. Valutahändelser används för att spåra moms och fraktkostnader. Mer information om hur du använder valutakurser får du om du kontaktar en Adobe-representant.<p>Numeriska händelser och valutakurshändelser gör att du kan öka måtten med mer än en.</p><p>Händelser som används i standardtypen för datakällor måste vara numeriska händelser eller valutakurshändelser.</p> |
-| Polaritet | Med hjälp av metrisk polaritet kan du ange om Adobe Analytics ska se det som bra eller dåligt om en viss anpassad händelse (metrisk) inträffar. Det gör att Adobe Analytics kan visa riktningsvisare (pilar) för olika mätvärden för att lägga till kontext (t.ex. vecka över vecka-jämförelser).  Exempel: Om &quot;Buggar som skickas&quot; går upp vecka för vecka, ska Adobe Analytics se det bra eller dåligt ut? En ökning av antalet e-postregistreringar är förmodligen bra. Men en ökning av antalet inskickningsfel i formulär är antagligen felaktig.  I Analysis Workspace tillämpas polaritet på: Villkorlig formatering av friformstabell, visualisering av sammanfattningsändring och det positiva/negativa färgschemat för mappningsvisualisering. |
-| Beskrivning | En kort beskrivning av evenemangets syfte och användning. |
-| Unik händelsinspelning | **Spela in en gång per besök**: Kopplar den angivna händelsen till besökarens session. Efterföljande antal till en viss händelse i samma besök ignoreras. Den här typen av händelseserialisering kräver inga implementeringsändringar.<br>**Använd händelse-ID**: Kopplar den angivna händelsen till ett anpassat ID. Efterföljande antal till en viss händelse med samma händelse-ID ignoreras. Den här typen av händelseserialisering kräver ett anpassat ID i träffar för att dubblettvärden ska kunna tas bort. Se [Serialisering av händelse-ID](/help/implement/vars/page-vars/events/event-serialization.md) i användarhandboken för Implementering. |
-| deltagande | Ger fullständig attribueringskreditering till alla dimensionsobjekt i besöket. |
-| Varning (valutakändelse) | När händelsetyper ändras till eller från en valutakurs visas ett meddelande om att historiska data inte är tillgängliga i rapporter.  Olika händelsetyper använder separata datatabeller och kan inte användas samtidigt. Vissa historiska data kan återställas om användaren återställer händelsetypen. Data som samlats in efter den första ändringen är dock inte tillgängliga. Var försiktig när du ändrar en händelsetyp. |
