@@ -3,7 +3,7 @@ title: Aktuella versionsinformation för Adobe Analytics
 description: Visa den aktuella versionsinformationen för Adobe Analytics
 feature: Release Notes
 exl-id: 97d16d5c-a8b3-48f3-8acb-96033cc691dc
-source-git-commit: ff5067a1f7d500c11737ddae507b431b875a44d9
+source-git-commit: 88d60f38d5a87bacb755a49dc884700ac66039ce
 workflow-type: tm+mt
 source-wordcount: '725'
 ht-degree: 1%
@@ -20,7 +20,7 @@ Versionsanteckningarna gäller den 14 augusti till september 2024. Adobe Analyti
 
 | Funktion | Beskrivning | [Startar](releases.md) | [Allmän tillgänglighet](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **Förbättringar av Web SDK för länkspårning** | Det finns flera märkbara förbättringar i den senaste versionen av Web SDK runt länkspårning, som är till direkt nytta för Activity Map. Dessa nya funktioner är tillgängliga både i Web SDK JavaScript-biblioteket och i Web SDK-taggtillägget.<ul><li>Händelsegruppering: När en besökare klickar på en intern länk kan du välja att gruppera händelsedata på nästa sida i stället för att utlösa ett separat händelseanrop för länkspårning. Den här förbättringen minskar antalet händelser som Web SDK använder jämfört med avtalsgränsen.</li><li>Filtrera klickningsegenskaper: Ett nytt återanrop som ersätter `OnBeforeLinkClickSend`. Du kan använda det här återanropet för att filtrera eller dölja länkrelaterade data innan du skickar dem till Adobe.</li></ul><p>Mer information finns i [clickCollection](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/clickcollection) i användarhandboken för Web SDK.</p> | Öppna Beta började 10 juli 2024 | TBD |
+| **Förbättringar av Web SDK för länkspårning** | Det finns flera märkbara förbättringar i den senaste versionen av Web SDK runt länkspårning, som är till direkt nytta för Activity Map. Dessa nya funktioner är tillgängliga både i Web SDK JavaScript-biblioteket och i Web SDK-taggtillägget.<ul><li>Händelsegruppering: När en besökare klickar på en intern länk kan du välja att gruppera händelsedata på nästa sida i stället för att utlösa ett separat händelseanrop för länkspårning. Den här förbättringen minskar antalet händelser som Web SDK använder jämfört med avtalsgränsen.</li><li>Filtrera klickningsegenskaper: Ett nytt återanrop som ersätter `OnBeforeLinkClickSend`. Du kan använda det här återanropet för att filtrera eller dölja länkrelaterade data innan du skickar dem till Adobe.</li></ul><p>Mer information finns i [clickCollection](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/clickcollection) i användarhandboken för Web SDK.</p> | Öppna Beta började 10 juli 2024 | 18 juli 2024 |
 
 {style="table-layout:auto"}
 
