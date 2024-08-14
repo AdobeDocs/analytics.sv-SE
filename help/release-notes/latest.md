@@ -3,18 +3,18 @@ title: Aktuella versionsinformation för Adobe Analytics
 description: Visa den aktuella versionsinformationen för Adobe Analytics
 feature: Release Notes
 exl-id: 97d16d5c-a8b3-48f3-8acb-96033cc691dc
-source-git-commit: cb0eab15dac6d679e9f912010045e6be2e47df4a
+source-git-commit: ff5067a1f7d500c11737ddae507b431b875a44d9
 workflow-type: tm+mt
-source-wordcount: '732'
+source-wordcount: '725'
 ht-degree: 1%
 
 ---
 
-# Aktuell versionsinformation för Adobe Analytics (juli 2024)
+# Aktuell versionsinformation för Adobe Analytics (augusti 2024)
 
-**Senast uppdaterad**: 17 juli 2024
+**Senast uppdaterad**: 14 augusti 2024
 
-Versionsanteckningarna gäller den 17 juli 2024 till augusti 2024. Adobe Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.md), vilket ger en mer skalbar, fasad metod för driftsättning av funktioner. Därför uppdateras versionsinformationen flera gånger i månaden. Kontrollera dem regelbundet.
+Versionsanteckningarna gäller den 14 augusti till september 2024. Adobe Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.md), vilket ger en mer skalbar, fasad metod för driftsättning av funktioner. Därför uppdateras versionsinformationen flera gånger i månaden. Kontrollera dem regelbundet.
 
 ## Nya funktioner eller förbättringar {#features}
 
@@ -26,15 +26,12 @@ Versionsanteckningarna gäller den 17 juli 2024 till augusti 2024. Adobe Analyti
 
 ## Korrigeringar i Adobe Analytics
 
-* Ett problem som gjorde att användare inte kunde logga in på analysgränssnittet (AN-352953) har åtgärdats
-* Korrigerade ett problem som hindrade användare från att logga in på mobilappen Analytics (AN-352463)
-* Korrigerade ett fel som förhindrade hämtning av projektet som PDF (AN-352680)
-* Korrigerade ett problem där klassificeringar inte importerades (AN-352178)
+* Korrigerade ett problem där flera okända värden visades i Workspace (AN-353632)
+* Ett problem har korrigerats där e-postmeddelandet inte skickades efter att nya kunder eller nya produktprofiler för Analytics lagts till i Admin Console (AN-350930)
 
 ### Korrigeringar för andra analyser
 
-AN-352905; AN-352902; AN-352693; AN-352659; AN-352619;
-AN-352577; AN-352575; AN-352572; AN-352571; AN-352549; AN-352501; AN-352499; AN 352478; AN-352466; AN-352437; AN-352378; AN-352355; AN-352341; AN-352318; AN-3 52297; AN-352272; AN-352267; AN-352263; AN-352088; AN-352019; AN-352018; AN-35 1978; AN-351908; AN-351809; AN-351750; AN-351689; AN-351624; AN-351564; AN-351 524; AN-351507; AN-351416; AN-351414; AN-351405; AN-351299; AN-351283; AN-3512 31; AN-350710; AN-349912; AN-349786; AN-348300; AN-348061; AN-347865; AN-34767 6; AN-347478; AN-343611; AN-343114; AN-334124
+AN-354361; AN-354248; AN-354211; AN-354324; AN-351532; AN-349808; AN-347831; AN-4 353777; AN-354092; AN-354064; AN-354202; AN-354006; AN-354097; AN-352548; AN-3 53819; AN-353818; AN-353628; AN-353747; AN-353527; AN-353490; AN-352647; AN-35 2656; AN-351274; AN-352135; AN-351519; AN-344906; AN-353697; AN-354499; AN-354 402; AN-354062; AN-353905; AN-353932; AN-354142; AN-354194; AN-354182; AN-3537 58; AN-353039; AN-353612; AN-350799; AN-354414; AN-354636; AN-354249; AN-35363 7; AN-350949; AN-349402; AN-355103; AN-354174; AN-353823; AN-354819; AN-354215; AN-354219; AN-354040; AN-354763; AN-354597; AN-354478; AN-354528; AN-35435
 
 ## Viktiga meddelanden för Adobe Analytics-administratörer {#admin}
 
