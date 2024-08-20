@@ -3,9 +3,9 @@ title: Aktuella versionsinformation för Adobe Analytics
 description: Visa den aktuella versionsinformationen för Adobe Analytics
 feature: Release Notes
 exl-id: 97d16d5c-a8b3-48f3-8acb-96033cc691dc
-source-git-commit: 88d60f38d5a87bacb755a49dc884700ac66039ce
+source-git-commit: f7d36ac8de37633ccbe725865dbaeecee532f47e
 workflow-type: tm+mt
-source-wordcount: '725'
+source-wordcount: '719'
 ht-degree: 1%
 
 ---
@@ -37,7 +37,7 @@ AN-354361; AN-354248; AN-354211; AN-354324; AN-351532; AN-349808; AN-347831; AN-
 
 | Meddelande | Datum tillagt eller uppdaterat | Beskrivning |
 | ----------- | ---------- | ---------- |
-| **13-månaders förfallodatum för sparad`cust_visids`** | 22 maj 2024 | En kommande version av motorn för bearbetning av träff i Analytics, **som är avsedd för juli 2024**, kommer att börja tillämpa en 13-månaders förfallotid på sparad `cust_visids`. Om rapportsviten har Aktivera besökarinställning aktiverat, används den här inställningen för att hitta `cust_visid` för en `visid_high/visid_low value` utan `cust_visid` i träffen. För närvarande finns det ingen förfallotid för mappningen av en `cust_visid` för en `visid_high/visid_low`. Om 13 månader eller mer har gått sedan `visid_high/visid_low` fick en `cust_visid` för en träff i den här versionen upphör mappningen att gälla. |
+| **13-månaders förfallodatum för sparad`cust_visids`** | 20 augusti 2024 | Den 20 augusti 2024 **-utgåvan av motorn för bearbetning av analysträffar tvingar fram ett 13-månaders förfallodatum för sparad `cust_visids`.** Om rapportsviten har Aktivera besökarinställning aktiverat, används den här inställningen för att hitta `cust_visid` för en `visid_high/visid_low value` utan `cust_visid` i träffen. Tidigare var mappningen av en `cust_visid` för en `visid_high/visid_low` inte giltig. Om 13 månader eller mer har gått sedan `visid_high/visid_low` fick en `cust_visid` för en träff i den här versionen upphör mappningen att gälla. |
 
 {style="table-layout:auto"}
 
