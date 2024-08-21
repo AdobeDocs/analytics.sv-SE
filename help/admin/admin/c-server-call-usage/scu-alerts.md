@@ -4,7 +4,7 @@ title: Varningar om användning av serversamtal
 feature: Server Call Usage
 exl-id: 35926566-c570-4ed2-9bbc-0906518bcf64
 role: Admin
-source-git-commit: 58e1d3025b455de7fa07037b3b0659330c8324c7
+source-git-commit: 373a1ecffafdcefe3c7b60954f14c2f3a5ca386d
 workflow-type: tm+mt
 source-wordcount: '501'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 När du skapar en avisering gäller den alla rapportsviter i alla inloggningsföretag för ett faktureringsföretag.
 
-Användningsaviseringar om serveranrop ingår i användargränssnittet för [Varningar](/help/analyze/analysis-workspace/c-intelligent-alerts/alert-manager.md).
+Användningsaviseringar om serveranrop ingår i användargränssnittet för [Varningar](/help/components/c-alerts/alert-manager.md).
 
 Den är förifylld med **1 standardvarning** som visas i alla inloggningsföretag som har åtkomst till funktionen Serversamtalsanvändning. Den här varningen utlöser ett meddelande adresserat till alla inloggningsföretagets administratörer om något av följande villkor uppfylls:
 

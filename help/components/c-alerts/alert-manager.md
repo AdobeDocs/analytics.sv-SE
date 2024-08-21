@@ -3,42 +3,93 @@ description: Hantera aviseringar.
 title: Aviseringshanteraren - översikt
 feature: Alerts
 exl-id: 3408c79f-3d85-44b9-8fca-ce956853dfa4
-source-git-commit: 49324ef7fd45adeef2c31167d0444a7e67041d6d
+source-git-commit: 373a1ecffafdcefe3c7b60954f14c2f3a5ca386d
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '623'
 ht-degree: 0%
 
 ---
 
 # Varningshanteraren
 
+Du kan hantera befintliga aviseringar i Varningshanteraren. Du kan utföra olika hanteringsåtgärder för varningar, som taggning, namnbyte, borttagning med mera.
+
 Varningshanteraren är mycket strukturerad som [segmenthanteraren](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-manage.html) och [hanteraren för beräknade värden](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/cm-manager.html).
 
 ![](assets/alert-manager.png)
 
-## Öppna Alerts Manager
+## Skapa aviseringar
 
-1. I Adobe Analytics väljer du [!UICONTROL **Komponenter**] > [!UICONTROL **Varningar**].
+Så här skapar du aviseringar från Alerts Manager:
 
-## Tillgängliga åtgärder i Varningshanteraren
+1. Välj **[!UICONTROL Components]** > **[!UICONTROL Alerts]** för att komma åt Alerts Manager i Adobe Analytics.
 
-I Varningshanteraren kan du:
+   ![](assets/alert-manager.png)
 
-* Öppna varningsverktyget genom att klicka på **[!UICONTROL + Add]**.
-* Tagga varningar. På så sätt kan du ordna dem så att de blir lätta att använda.
-* Ta bort aviseringar.
-* Byt namn på aviseringar.
-* Godkänn aviseringar.
-* Kopiera aviseringar.
-* Aktivera/inaktivera aviseringar.
-* **Förnya** ett varningsutgångsdatum. När en eller flera aviseringar har valts kan de förnyas genom att klicka på **[!UICONTROL Renew]**. Detta utökar deras förfallodatum till 1 år från den dag **[!UICONTROL Renew]** klickades på, oavsett deras ursprungliga förfallodatum.
-* Exportera en varning till en CSV-fil.
-* Redigera aviseringar genom att dubbelklicka på varningens titel.
-* Sök efter aviseringar.
-* Lägg till aviseringar i andra rapportsviter.
-* Ange/ändra ägare för en avisering.
-* Lägg till andra filter.
-* Definiera ett **utgångsdatum** för en avisering.
+1. Välj [!UICONTROL **Lägg till**] (eller [!UICONTROL **Skapa ny avisering**] om du inte har några befintliga aviseringar).
+
+1. Välj den varningstyp som motsvarar den varning som du vill skapa:
+
+   * [!UICONTROL **Analysdatavarning**]: En avisering som meddelar dig när onormala händelser inträffar i dina data.
+
+     Om du väljer det här alternativet kan du fortsätta med [Skapa aviseringar](/help/analyze/analysis-workspace/c-intelligent-alerts/alert-builder.md) om du vill ha mer information om hur du skapar aviseringar.
+
+   * [!UICONTROL **Varning om användning av serveranrop**]: En varning som meddelar dig om risken eller förekomsten av ett överskott i serveranropets förbrukning och åtagandedata.
+
+     Om du väljer det här alternativet fortsätter du med [varningar om användning av serversamtal](/help/admin/admin/c-server-call-usage/scu-alerts.md).
+
+     >[!NOTE]
+     >
+     >Du måste vara Analytics-administratör eller en användare med användarbehörighet för serversamtal för att få åtkomst till serversamtalsanvändning.
+
+## Hantera befintliga aviseringar
+
+Du kan utföra olika åtgärder på befintliga aviseringar, som taggning, namnbyte, borttagning och så vidare.
+
+Så här hanterar du befintliga aviseringar i Varningshanteraren:
+
+1. Välj **[!UICONTROL Components]** > **[!UICONTROL Alerts]** för att komma åt Alerts Manager i Adobe Analytics.
+
+   ![](assets/alert-manager.png)
+
+1. Välj en eller flera aviseringar som du vill hantera.
+
+   ![](assets/alert-manager-tasks.png)
+
+1. Välj något av följande alternativ i åtgärdsfältet:
+
+   | Åtgärd | Funktion |
+   |---------|----------|
+   | [!UICONTROL **Tagg**] | Använd en tagg på en varning. Det gör det enklare att ordna varningar. |
+   | [!UICONTROL **Ta bort**] | Tar bort varningen. |
+   | [!UICONTROL **Byt namn**] | Byter namn på aviseringen. |
+   | [!UICONTROL **Godkänn**] | Markera aviseringen som Godkänd. |
+   | [!UICONTROL **Kopiera**] | Skapar en kopia (dubblett) av varningen. |
+   | [!UICONTROL **Inaktivera**] | Inaktiverar en avisering som är aktiverad. |
+   | [!UICONTROL **Aktivera**] | Aktiverar en varning som är inaktiverad. |
+   | [!UICONTROL **Förnya**] | Förnyar aviseringens förfallodatum. Detta utökar förfallodatumet till 1 år från den dag du valde det här alternativet, oavsett det ursprungliga förfallodatumet. |
+   | [!UICONTROL **Exportera till CSV**] | Exporterar varningen till en CSV-fil. |
+
+## Redigera en varning
+
+Så här redigerar du en befintlig varning:
+
+1. Välj **[!UICONTROL Components]** > **[!UICONTROL Alerts]** för att komma åt Alerts Manager i Adobe Analytics.
+
+   ![](assets/alert-manager.png)
+
+1. Markera varningsnamnet i kolumnen [!UICONTROL **Titel och beskrivning**].
+
+1. Redigera varningen efter behov.
+
+   Nedan följer några av de saker du kan göra när du redigerar en varning:
+
+   * Lägg till aviseringar i andra rapportsviter
+   * Ändra ägare
+   * Uppdatera filtren
+   * Uppdatera förfallodatumet
+
+1. Redigera varningen och välj sedan [!UICONTROL **Spara**].
 
 ## Konfigurera kolumner
 
