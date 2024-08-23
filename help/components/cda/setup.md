@@ -4,7 +4,7 @@ description: Konfigurera en virtuell rapportsvit för att aktivera CDA.
 exl-id: e6d4e0c2-6b85-4f89-b51f-c0eed7a4e3da
 feature: CDA
 role: Admin
-source-git-commit: be5a73347d417c8dc6667d4059e7d46ef5f0f5cd
+source-git-commit: cfa5cc02ba3a7349b51a904f29bab533c0f1c603
 workflow-type: tm+mt
 source-wordcount: '529'
 ht-degree: 0%
@@ -12,6 +12,8 @@ ht-degree: 0%
 ---
 
 # Ställ in enhetsövergripande analys
+
+{{available-existing-customers}}
 
 När alla förutsättningar är uppfyllda gör du följande för att aktivera enhetsövergripande analys. Du måste tillhöra en produktprofiladministratörsgrupp eller ha administratörsbehörighet i Adobe Analytics för att kunna följa dessa steg.
 

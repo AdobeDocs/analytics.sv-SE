@@ -1,7 +1,7 @@
 ---
-source-git-commit: 33ac467cd73e3099ce0ca03aa41cbd4192eb2384
+source-git-commit: cc0b8703d6b6488adf9a2ea41a51001538d1cbee
 workflow-type: tm+mt
-source-wordcount: '1131'
+source-wordcount: '1171'
 ht-degree: 0%
 
 ---
@@ -84,3 +84,10 @@ ht-degree: 0%
 >
 >Denna plugin tillhandahålls av Adobe Consulting som en tjänst som hjälper dig att få ut mer av Adobe Analytics. Adobe kundtjänst ger inte support för denna plugin, inklusive installation och felsökning. Om du behöver hjälp med det här plugin-programmet kontaktar du din organisations Adobe Account Team. De kan ordna ett möte med en konsult för att få hjälp.
 
+
+## Endast tillgängligt för befintliga kunder {#available-existing-customers}
+
+>[!AVAILABILITY]
+>
+>Funktionerna som beskrivs i det här avsnittet är bara tillgängliga för befintliga kunder som redan har en licens för funktionen. Funktionen erbjuds inte längre som ett tillägg till befintliga eller nya kunder.
+>

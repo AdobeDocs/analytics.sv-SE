@@ -4,7 +4,7 @@ description: Ändra era data från enhetsfokuserade till personfokuserade genom 
 exl-id: e1c0d1e5-399d-45c2-864c-50ef93a77449
 feature: CDA
 role: Admin
-source-git-commit: be5a73347d417c8dc6667d4059e7d46ef5f0f5cd
+source-git-commit: cfa5cc02ba3a7349b51a904f29bab533c0f1c603
 workflow-type: tm+mt
 source-wordcount: '829'
 ht-degree: 0%
@@ -12,6 +12,8 @@ ht-degree: 0%
 ---
 
 # Enhetsövergripande analys
+
+{{available-existing-customers}}
 
 CDA (Cross-Device Analytics) är en funktion som omvandlar analyser från en enhetscentrerad vy till en personcentrerad vy. Därför kan analytiker förstå användarbeteende som fungerar på olika webbläsare, enheter och appar. Adobe har stöd för två övergripande arbetsflöden för att länka samman enhetsdata:
 
