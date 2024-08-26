@@ -4,18 +4,18 @@ title: Bästa praxis för etikettering
 feature: Data Governance
 role: Admin
 exl-id: 00da58b0-d613-4caa-b9c1-421b1b541f47
-source-git-commit: 0fd0fad17cf6dcaa042e53d86dfabc5792a065b6
+source-git-commit: eb2b8135ffcf2a22184818b34efcd97a931437f6
 workflow-type: tm+mt
-source-wordcount: '2692'
-ht-degree: 75%
+source-wordcount: '2830'
+ht-degree: 71%
 
 ---
 
 # Bästa praxis för etikettering
 
->[!NOTE]
->
->Kom ihåg att etiketter måste granskas varje gång en ny rapportserie skapas eller när en ny variabel aktiveras i en befintlig rapportserie. Du kan också behöva granska etiketteringen när nya lösningar är aktiverade, eftersom de kan visa nya variabler som kan kräva etiketter. En återimplementering av dina mobilappar eller webbplatser kan ändra hur befintliga variabler används, vilket också kan göra det nödvändigt att uppdatera etiketter.
+Märkningen måste granskas varje gång en ny rapportserie skapas eller när en ny variabel aktiveras i en befintlig rapportserie. Du kan också behöva granska etiketteringen när nya lösningar är aktiverade, eftersom de kan visa nya variabler som kan kräva etiketter. En återimplementering av dina mobilappar eller webbplatser kan ändra hur befintliga variabler används, vilket också kan göra det nödvändigt att uppdatera etiketter.
+
+Etiketterna I1, I2, S1 och S2 har samma betydelse som motsvarande DULE-etiketter i Adobe Experience Platform. De används dock för mycket olika syften. I Adobe Analytics används dessa etiketter för att identifiera fält som ska anonymiseras som ett resultat av en begäran om Privacy Service. Inom Adobe Experience Platform används de för åtkomstkontroll, samtyckeshantering och för att införa marknadsföringsbegränsningar för märkta fält. Adobe Experience Platform stöder många extra etiketter som inte används av Adobe Analytics. Om du använder Analytics Data Connector för att importera dina Adobe Analytics-data till Adobe Experience Platform, bör du se till att alla I1-, I2-, S1- och S2-etiketter som du har använt i Adobe Analytics också tillämpas på de scheman i Adobe Experience Platform som används av de importerade rapportsviterna.
 
 ## Direkt eller indirekt identifierbara ID:n {#direct-vs-indirect}
 
@@ -24,7 +24,7 @@ Innan du kan ta reda på vilka etiketter som ska användas på vilka variabler/f
 * **Ett direkt identifierbart ID (I1)**: Namnger personen eller tillhandahåller en direkt metod för att kontakta honom/henne. Exempel kan vara någons namn (t.o.m. ett vanligt namn som Anders Svensson som kan delas av hundratals personer), deras e-postadresser eller telefonnummer, o.s.v. En postadress utan ett namn kan anses vara direkt identifierbart, även om den endast identifierar ett hushåll eller ett företag i stället för en viss person inom det hushållet eller företaget.
 * **Ett indirekt identifierbart ID (I2)**: Tillåter inte identifiering av en enskild person, utan kan kombineras med annan information (som du kanske har tillgång till) för att identifiera någon. Exempel på ett indirekt identifierbart ID är ett kundlojalitetsnummer eller ett ID som används av ett företags CRM-system som är unikt för varje kund. Enligt datasekretess kan anonyma ID:n som lagras i de spårningscookies som används av Analytics anses vara indirekt identifierande, även om de bara kan identifiera en enhet snarare än en individ. På en delad enhet kan dessa cookies inte skilja mellan olika användare i systemet. Även om cookiefilen inte kan användas för att hitta en dator som innehåller cookien, och om någon har åtkomst till datorn och hittar cookien, kan de sedan koppla Analytics-cookiedata tillbaka till datorn.
 
-  En IP-adress anses också vara indirekt identifierbar, eftersom den vid en given tidpunkt bara kan tilldelas en enskild enhet. Internet-leverantörer kan däremot ändra IP-adresserna för de flesta användare regelbundet, så med tiden kan en IP-adress ha använts av någon av deras användare. Det är inte heller ovanligt att många kunder hos en Internet-leverantör eller flera anställda inom ett företag på samma intranät delar samma externa IP-adress. På grund av detta stöder inte Adobe att en IP-adress används som ID för en datasekretessbegäran. När ett ID som vi godkänner används som en del av en borttagningsbegäran, rensas även IP-adresserna som inträffade med det ID:t. Du måste bestämma om det finns andra insamlade ID:n som kan ingå i denna kategori, i1 eller I2, men som inte är lämpliga att använda som särskiljande ID för förfrågningar om dataintegritet.
+En IP-adress anses också vara indirekt identifierbar, eftersom den vid en given tidpunkt bara kan tilldelas en enskild enhet. Internet-leverantörer kan däremot ändra IP-adresserna för de flesta användare regelbundet, så med tiden kan en IP-adress ha använts av någon av deras användare. Det är inte heller ovanligt att många kunder hos en Internet-leverantör eller flera anställda inom ett företag på samma intranät delar samma externa IP-adress. På grund av detta stöder inte Adobe att en IP-adress används som ID för en datasekretessbegäran. När ett ID som vi godkänner används som en del av en borttagningsbegäran, rensas även IP-adresserna som inträffade med det ID:t. Du måste bestämma om det finns andra insamlade ID:n som kan ingå i denna kategori, i1 eller I2, men som inte är lämpliga att använda som särskiljande ID för förfrågningar om dataintegritet.
 
 Även om ditt företag samlar in många olika ID:n i era analysdata, kan du välja att endast använda en delmängd av dessa ID:n för begäranden om datasekretess. Detta kan bero på följande:
 

@@ -4,24 +4,26 @@ title: Datasekretessetiketter för analysvariabler
 feature: Data Governance
 role: Admin
 exl-id: b8c2143a-6e8e-465a-979b-aa8176e8d4e8
-source-git-commit: 79f650a7168e0cc44194445f3164a3f981e39a91
+source-git-commit: eb2b8135ffcf2a22184818b34efcd97a931437f6
 workflow-type: tm+mt
-source-wordcount: '3532'
-ht-degree: 62%
+source-wordcount: '3753'
+ht-degree: 58%
 
 ---
 
 # Datasekretessetiketter för analysvariabler
 
-## Varför sätta etiketter på dina data? {#why-label}
-
-Adobe, som personuppgiftsansvariga, ansvarar för att följa gällande dataintegritetslagstiftning som GDPR och CCPA. Kunderna bör rådfråga sina egna juridiska team för att avgöra hur deras data ska hanteras för att följa lagstiftningen om dataintegritet. Adobe förstår att var och en av sina kunder har unika sekretessrelaterade behov, och det är därför som Adobe gör det möjligt för sina kunder att anpassa sina inställningar för databehandling för dataintegritet. På så sätt kan varje unik kund behandla begäranden om datasekretess på det sätt som bäst passar deras varumärke och deras unika datauppsättning.
+Adobe, som personuppgiftsansvariga, ansvarar för att följa gällande dataintegritetslagstiftning, såsom Allmänna dataskyddsförordningen (GDPR) och California Consumer Privacy Act (CCPA). Kunderna bör rådfråga sina egna juridiska team för att avgöra hur deras data ska hanteras för att följa lagstiftningen om dataintegritet. Adobe förstår att var och en av sina kunder har unika sekretessrelaterade behov, och det är därför som Adobe gör det möjligt för sina kunder att anpassa sina inställningar för databehandling för dataintegritet. På så sätt kan varje unik kund behandla begäranden om datasekretess på det sätt som bäst passar deras varumärke och deras unika datauppsättning.
 
 Adobe Analytics har verktyg som används för att etikettera data utifrån känslighet och avtalsbegränsningar. Etiketter är ett viktigt steg för att: (1) identifiera registrerade, (2) fastställa vilka data som ska returneras som en del av en begäran om åtkomst och (3) identifiera datafält som måste tas bort som en del av en begäran om borttagning.
 
 Innan du kan ta reda på vilka etiketter som ska användas på vilka variabler/fält måste du [förstå vilka ID:n](/help/admin/admin/c-data-governance/data-labeling/gdpr-analytics-ids.md) som du hämtar i dina Analytics-data, och du måste bestämma vilka som ska användas för begäranden om datasekretess.
 
 Implementering av datasekretess i Adobe Analytics stöder följande etiketter för identitetsdata, känsliga data och datastyrning.
+
+>[!NOTE]
+>
+>Etiketterna I1, I2, S1 och S2 har samma betydelse som motsvarande DULE-etiketter i Adobe Experience Platform. De används dock för mycket olika syften. I Adobe Analytics används dessa etiketter för att identifiera fält som ska anonymiseras som ett resultat av en begäran om Privacy Service. Inom Adobe Experience Platform används de för åtkomstkontroll, samtyckeshantering och för att genomdriva marknadsföringsbegränsningar för de märkta fälten. Adobe Experience Platform stöder många extra etiketter som inte används av Adobe Analytics. Dessutom används etiketter i Adobe Experience Platform på scheman. Om du använder Analytics Data Connector för att importera dina Adobe Analytics-data till Adobe Experience Platform måste du se till att rätt DULE-etiketter är konfigurerade i Adobe Experience Platform för de scheman som används av var och en av rapportsviterna. Etiketter som tilldelats i Adobe Analytics används inte automatiskt på dessa scheman i Adobe Experience Platform eftersom de bara representerar en delmängd av de DULE-etiketter som du kanske måste använda. Olika rapportsviter kan dela ett schema men ha olika etiketter tilldelade till props och evar med samma nummer och schemat kan delas av datauppsättningar från andra datakällor, vilket kan skapa förvirring över varför vissa fält tog emot dessa etiketter.
 
 ## Identitetsdataetiketter {#identity-data-labels}
 
@@ -49,7 +51,7 @@ Känsliga ”S”-etiketter används för att kategorisera känsliga data som ge
 
 Med etiketter för datastyrning kan användarna klassificera data som speglar integritetsrelaterade överväganden och avtalsvillkor för att hjälpa Adobe kunder att fortsätta följa regler och företagspolicyer.
 
-### Etiketter för dataintegritet
+### Etiketter för dataintegritet {#access}
 
 | Etikett | Definition | Andra krav |
 | --- | --- | --- |
@@ -61,7 +63,7 @@ Med etiketter för datastyrning kan användarna klassificera data som speglar in
 
 Även om få variabler mottar någon av de andra etiketterna, förväntas åtkomstetiketter tillämpas för många av dina variabler. Det är dock upp till er, i samråd med er juridiska avdelning, att avgöra vilka uppgifter ni har samlat in som ska delas med registrerade.
 
-### Ta bort etiketter för datasekretess
+### Ta bort etiketter för datasekretess {#delete}
 
 Till skillnad från de andra etiketterna utesluter inte dessa borttagningsetiketter varandra. Du kan välja antingen båda eller ingen. En separat [!UICONTROL None]-etikett är inte nödvändig eftersom [!UICONTROL None] bara anges genom att inte markera något av borttagningsalternativen.
 
@@ -74,7 +76,7 @@ En Ta bort-etikett krävs bara för fält som innehåller ett värde som skulle 
 
 {style="table-layout:auto"}
 
-### Identitetsetiketter för datasekretess
+### Identitetsetiketter för datasekretess {#identity}
 
 | Etikett | Definition | Andra krav |
 | --- | --- | --- |
@@ -88,7 +90,7 @@ En Ta bort-etikett krävs bara för fält som innehåller ett värde som skulle 
 
 När du etiketterar en variabel som ID-DEVICE eller ID-PERSON uppmanas du att ange ett namnutrymme. Du kan antingen använda ett tidigare definierat namnutrymme eller definiera ett nytt.
 
-### Använda ett tidigare definierat namnutrymme
+### Använda ett tidigare definierat namnutrymme {#previously-defined}
 
 Du kan välja ett av de befintliga namnutrymmena om du tidigare har tilldelat en ID-etikett till andra variabler i någon av rapportsviterna i ditt inloggningsföretag. Återanvänd namnutrymmet om den här variabeln innehåller samma typ av ID:n som andra variabler som redan är etiketterade med det här namnutrymmet och du vill söka igenom dem alla när du skickar en begäran.
 
@@ -97,7 +99,7 @@ Du kan välja ett av de befintliga namnutrymmena om du tidigare har tilldelat en
 1. Klicka på **[!UICONTROL Apply]**.
 
 
-### Definiera ett nytt namnutrymme
+### Definiera ett nytt namnutrymme {#define}
 
 Du kan också definiera ett nytt namnutrymme. Strängar för namnutrymme bör även begränsas till alfanumeriska tecken, samt understreck, bindestreck och blanksteg. De konverteras till små bokstäver.
 
