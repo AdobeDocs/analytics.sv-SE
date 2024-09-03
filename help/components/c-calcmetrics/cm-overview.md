@@ -1,19 +1,19 @@
 ---
-description: Beräknade och avancerade beräknade (eller härledda) mått är anpassade mått som du kan skapa utifrån befintliga mätvärden.
-keywords: Beräknade mått;Härledda värden;Avancerade beräknade värden
-title: Beräknade och avancerade beräknade (härledda) värden
+description: Beräknade och avancerade beräknade värden är anpassade mått som du kan skapa utifrån befintliga mätvärden.
+keywords: Beräknade mått;Avancerade beräknade värden
+title: Beräknade och avancerade beräknade värden
 feature: Calculated Metrics
 exl-id: 9bf8239f-cf74-4feb-85e5-d47805e90afb
-source-git-commit: 93099d36a65ca2bf16fbd6342f01bfecdc8c798e
+source-git-commit: 43332660bbf19ffd22409ef48528bcdef81b5e01
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '515'
 ht-degree: 2%
 
 ---
 
-# Beräknade och avancerade beräknade (härledda) mätvärden
+# Beräknade och avancerade beräknade mätvärden
 
-Beräknade och avancerade beräknade (eller härledda) mätvärden är anpassade mätvärden som du kan skapa utifrån befintliga mätvärden.
+Beräknade och avancerade beräknade värden är anpassade mätvärden som du kan skapa utifrån befintliga mätvärden.
 
 Våra verktyg för beräknade värden är ett mycket flexibelt sätt att bygga, hantera och strukturera mätvärden. De gör att du som marknadsförare, produktchefer och analytiker kan ställa frågor om data utan att behöva ändra din [!DNL Analytics]-implementering. De anpassade mätvärden som är tillgängliga i varje [!DNL Analytics]-paket är:
 
@@ -24,7 +24,7 @@ Våra verktyg för beräknade värden är ett mycket flexibelt sätt att bygga, 
 
 Här är en jämförelse av beräknade värden och avancerade beräknade mätvärden:
 
-| Alternativ för verktyget Builder | Beräknade mått | Avancerade beräknade (härledda) värden |
+| Alternativ för verktyget Builder | Beräknade mått | Avancerade beräknade värden |
 |---|---|---|
 | [Formattyper (decimal, tid, procent, valuta)](/help/components/c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-build-metrics.md) | Ja | Ja |
 | [Attributändringar (standard, linjär, deltagande osv.)](/help/components/c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/m-metric-type-alloc.md) | Ja | Ja |

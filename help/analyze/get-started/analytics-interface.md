@@ -3,9 +3,9 @@ description: Allmän översiktsinformation om Adobe Analytics, inklusive informa
 title: Förstå analysgränssnittet
 feature: Analytics Basics
 exl-id: 61ae6aa6-96e4-4794-8ce3-0d6e0ec47e0a
-source-git-commit: 43c39b99cbae3e714b7f017dec14dd02fa350790
+source-git-commit: 43332660bbf19ffd22409ef48528bcdef81b5e01
 workflow-type: tm+mt
-source-wordcount: '2062'
+source-wordcount: '2061'
 ht-degree: 5%
 
 ---
@@ -46,7 +46,7 @@ Fliken [!UICONTROL Components] innehåller funktioner som hjälper dig att finju
    | Funktioner | Funktion | Mer information |
    |---------|----------|----------|
    | Segment | Med Adobe Analytics kan ni skapa, hantera, dela och tillämpa kraftfulla, fokuserade målgruppssegment i era rapporter med hjälp av Analytics-funktionerna, Adobe Experience Cloud, Adobe Target och andra integrerade Adobe-produkter. | [Analytics-segmentering](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-home.html) |
-   | Beräknade mått | Beräknade och avancerade beräknade (eller härledda) mått är anpassade mått som du kan skapa utifrån befintliga mätvärden.  Med dem kan marknadsförare, produktchefer och analytiker ställa frågor om data utan att behöva ändra implementeringen av Analytics. | [Beräknade och avancerade beräknade (härledda) värden](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/cm-overview.html) |
+   | Beräknade mått | Beräknade och avancerade beräknade (eller härledda) mått är anpassade mått som du kan skapa utifrån befintliga mätvärden.  Med dem kan marknadsförare, produktchefer och analytiker ställa frågor om data utan att behöva ändra implementeringen av Analytics. | [Beräknade och avancerade beräknade mått](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/cm-overview.html) |
    | Datumintervall | Analysis Workspace innehåller en lista med standarddatumintervall som användare kan använda när de skapar analyser. Dessutom kan du skapa anpassade datumintervall och göra dem tillgängliga för användare i Analysis Workspace. | [Skapa anpassade datumintervall](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/components/calendar-date-ranges/custom-date-ranges.html) <!-- should create an article in the Components Guide for managing/creating date ranges. This article in the Tools Guide needs updating. --> |
    | Virtuella rapportsviter | Virtuella rapportsviter segmenterar era Adobe Analytics-data så att ni kan styra åtkomsten till varje segment. | [Översikt över Virtual Report Suites](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-about.html) |
    | Larm | Intelligenta aviseringar ger mer exakt kontroll över aviseringar och integrerar avvikelseidentifiering med varningssystemet. | [Intelligenta aviseringar](https://experienceleague.adobe.com/docs/analytics/components/alerts/intellligent-alerts.html) |
@@ -120,7 +120,7 @@ På fliken Admin finns funktioner och konfigurationsalternativ för att administ
    | Webbtjänster | Webbtjänstens API:er ger programmatisk åtkomst till marknadsföringsrapporter och andra Suite-tjänster som gör att du kan duplicera och förstärka funktioner som är tillgängliga via Analytics-gränssnittet. | [Webbtjänster](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/company-settings/web-services-admin.html) |
    | Report Builder rapporter | Hantera licenser som tilldelats användare av Report Builder. | [Report Builder-rapporter](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/company-settings/report-builder-reports-admin.html) |
    | Tjänsten för enkel inloggning | Enkel inloggning i Adobe Experience Cloud implementeras via Admin Console. | [Analyser i Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html) |
-   | Dölj rapportsviter | Gör att du kan dölja rapportsviter i Adobe Analytics användargränssnitt om du inte längre vill att en rapportserie ska vara tillgänglig för dig och dina användare. | [Dölj rapportsviter](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/company-settings/c-hide-report-suites.html) |  |
+   | Dölj rapportsviter | Gör att du kan dölja rapportsviter i Adobe Analytics användargränssnitt om du inte längre vill att en rapportserie ska vara tillgänglig för dig och dina användare. | [Dölj rapportsviter](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/company-settings/c-hide-report-suites.html) |
 
    {style="table-layout:auto"}
 
