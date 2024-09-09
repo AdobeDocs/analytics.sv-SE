@@ -3,16 +3,16 @@ title: Aktuella versionsinformation för Adobe Analytics
 description: Visa den aktuella versionsinformationen för Adobe Analytics
 feature: Release Notes
 exl-id: 97d16d5c-a8b3-48f3-8acb-96033cc691dc
-source-git-commit: bb7c5489a38ab6e8164f7d8feeb8f0d918d75853
+source-git-commit: 0f05faf76c26000f714e95ed2469ff13b7e3b72e
 workflow-type: tm+mt
-source-wordcount: '719'
+source-wordcount: '841'
 ht-degree: 1%
 
 ---
 
 # Aktuell versionsinformation för Adobe Analytics (augusti 2024)
 
-**Senast uppdaterad**: 20 augusti 2024
+**Senast uppdaterad**: 9 september 2024
 
 Versionsanteckningarna gäller den 14 augusti till september 2024. Adobe Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.md), vilket ger en mer skalbar, fasad metod för driftsättning av funktioner. Därför uppdateras versionsinformationen flera gånger i månaden. Kontrollera dem regelbundet.
 
@@ -20,6 +20,7 @@ Versionsanteckningarna gäller den 14 augusti till september 2024. Adobe Analyti
 
 | Funktion | Beskrivning | [Startar](releases.md) | [Allmän tillgänglighet](releases.md) |
 | ----------- | ---------- | ------- | ---- |
+| **Ytterligare information i kolumnen Används i i den beräknade metriska hanteraren och segmenthanteraren** | Kolumnen &quot;Används i&quot; i den beräknade metriska hanteraren och segmenthanteraren innehåller följande nya rapporteringsområden:<ul><li>**Report Builder:** Visar antalet beräknade mått eller segment som används i Report Builder.</li><li>**Ad hoc-komponenter:** Visar antalet ad hoc-beräknade mått eller ad hoc-segment som används i projekt. Dessa ad hoc-beräknade värden och segment (kallas annars&quot;snabbberäknade mätvärden&quot; och&quot;snabbsegment&quot;) kan endast användas i det projekt där de skapades, så de rapporteras separat från rapportområdet&quot;Projekt&quot; i kolumnen&quot;Används i&quot;.</li></ul><p>(Uppdaterade dokumentationslänkar att följa.)</p> | Ej tillämpligt | 11 september 2024 |
 | **Förbättringar av Web SDK för länkspårning** | Det finns flera märkbara förbättringar i den senaste versionen av Web SDK runt länkspårning, som är till direkt nytta för Activity Map. Dessa nya funktioner är tillgängliga både i Web SDK JavaScript-biblioteket och i Web SDK-taggtillägget.<ul><li>Händelsegruppering: När en besökare klickar på en intern länk kan du välja att gruppera händelsedata på nästa sida i stället för att utlösa ett separat händelseanrop för länkspårning. Den här förbättringen minskar antalet händelser som Web SDK använder jämfört med avtalsgränsen.</li><li>Filtrera klickningsegenskaper: Ett nytt återanrop som ersätter `OnBeforeLinkClickSend`. Du kan använda det här återanropet för att filtrera eller dölja länkrelaterade data innan du skickar dem till Adobe.</li></ul><p>Mer information finns i [clickCollection](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/clickcollection) i användarhandboken för Web SDK.</p> | Öppna Beta började 10 juli 2024 | 18 juli 2024 |
 
 {style="table-layout:auto"}
