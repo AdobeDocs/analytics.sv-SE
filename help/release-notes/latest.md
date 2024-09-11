@@ -3,42 +3,53 @@ title: Aktuella versionsinformation för Adobe Analytics
 description: Visa den aktuella versionsinformationen för Adobe Analytics
 feature: Release Notes
 exl-id: 97d16d5c-a8b3-48f3-8acb-96033cc691dc
-source-git-commit: 0f05faf76c26000f714e95ed2469ff13b7e3b72e
+source-git-commit: a74d47cf99545305c9b7d99d934dfedafdd9233b
 workflow-type: tm+mt
-source-wordcount: '841'
+source-wordcount: '735'
 ht-degree: 1%
 
 ---
 
-# Aktuell versionsinformation för Adobe Analytics (augusti 2024)
+# Aktuell versionsinformation för Adobe Analytics (september 2024)
 
-**Senast uppdaterad**: 9 september 2024
 
-Versionsanteckningarna gäller den 14 augusti till september 2024. Adobe Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.md), vilket ger en mer skalbar, fasad metod för driftsättning av funktioner. Därför uppdateras versionsinformationen flera gånger i månaden. Kontrollera dem regelbundet.
+**Senast uppdaterad**: 11 september 2024
+
+Versionsinformationen gäller från 11 september till början av oktober. Adobe Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.md), vilket ger en mer skalbar, fasad metod för driftsättning av funktioner. Därför uppdateras versionsinformationen flera gånger i månaden. Kontrollera dem regelbundet.
 
 ## Nya funktioner eller förbättringar {#features}
 
 | Funktion | Beskrivning | [Startar](releases.md) | [Allmän tillgänglighet](releases.md) |
-| ----------- | ---------- | ------- | ---- |
-| **Ytterligare information i kolumnen Används i i den beräknade metriska hanteraren och segmenthanteraren** | Kolumnen &quot;Används i&quot; i den beräknade metriska hanteraren och segmenthanteraren innehåller följande nya rapporteringsområden:<ul><li>**Report Builder:** Visar antalet beräknade mått eller segment som används i Report Builder.</li><li>**Ad hoc-komponenter:** Visar antalet ad hoc-beräknade mått eller ad hoc-segment som används i projekt. Dessa ad hoc-beräknade värden och segment (kallas annars&quot;snabbberäknade mätvärden&quot; och&quot;snabbsegment&quot;) kan endast användas i det projekt där de skapades, så de rapporteras separat från rapportområdet&quot;Projekt&quot; i kolumnen&quot;Används i&quot;.</li></ul><p>(Uppdaterade dokumentationslänkar att följa.)</p> | Ej tillämpligt | 11 september 2024 |
-| **Förbättringar av Web SDK för länkspårning** | Det finns flera märkbara förbättringar i den senaste versionen av Web SDK runt länkspårning, som är till direkt nytta för Activity Map. Dessa nya funktioner är tillgängliga både i Web SDK JavaScript-biblioteket och i Web SDK-taggtillägget.<ul><li>Händelsegruppering: När en besökare klickar på en intern länk kan du välja att gruppera händelsedata på nästa sida i stället för att utlösa ett separat händelseanrop för länkspårning. Den här förbättringen minskar antalet händelser som Web SDK använder jämfört med avtalsgränsen.</li><li>Filtrera klickningsegenskaper: Ett nytt återanrop som ersätter `OnBeforeLinkClickSend`. Du kan använda det här återanropet för att filtrera eller dölja länkrelaterade data innan du skickar dem till Adobe.</li></ul><p>Mer information finns i [clickCollection](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/clickcollection) i användarhandboken för Web SDK.</p> | Öppna Beta började 10 juli 2024 | 18 juli 2024 |
+|--- | --- | --- | --- |
+| **Ytterligare information i kolumnen Används i i den beräknade metriska hanteraren och segmenthanteraren** | Kolumnen &quot;Används i&quot; i den beräknade metriska hanteraren och segmenthanteraren innehåller följande nya rapporteringsområden:<ul><li>**Report Builder**: Visar antalet beräknade mått eller segment som används i Report Builder.</li><li>**Ad hoc-komponenter**: Visar antalet ad hoc-beräknade mått eller ad hoc-segment som används i projekt. Dessa ad hoc-beräknade värden och segment (kallas annars&quot;snabbberäknade mätvärden&quot; och&quot;snabbsegment&quot;) kan endast användas i det projekt där de skapades, så de rapporteras separat från rapportområdet&quot;Projekt&quot; i kolumnen&quot;Används i&quot;.</li></ul> |  | 11 sept 2024 |
+| **Activity Map v3-tillägg** | Tillägget Activity Map v3 är nu tillgängligt. Om du har v2-tillägget installerat avinstallerar du det innan du installerar v3-tillägget. Navigera till **[!UICONTROL Tools]** > **[!UICONTROL Activity Map]** för att hämta den senaste versionen av tillägget. |  | 3 sept 2024 |
 
-{style="table-layout:auto"}
 
 ## Korrigeringar i Adobe Analytics
 
-* Korrigerade ett problem där flera okända värden visades i Workspace (AN-353632)
-* Ett problem har korrigerats där e-postmeddelandet inte skickades efter att nya kunder eller nya produktprofiler för Analytics lagts till i Admin Console (AN-350930)
+A4T: AN-355736
+Activity Map: AN-353779
+Analysis Workspace: AN-348485; AN-349693; AN-357247
+Mobilappen Analytics: AN-352645
+Klassificeringar: AN-355636; AN-355651; AN-355753; AN-356005; AN-356439; AN-356540; AN-356577; AN-356622
+Enhetsövergripande analys: AN-355138
+Dataflöden: AN-356258; AN-357133
+Data Warehouse: AN-339292; AN-353807
+Exportplatser: AN-356912
+Sekretess-API: AN-352420
+Report Builder: AN-352555; AN-354316
+Schemalagda projekt: AN-355971
+Segmentering: AN-352095;
+Målrapportering: AN-355748
 
-### Korrigeringar för andra analyser
-
-AN-354361; AN-354248; AN-354211; AN-354324; AN-351532; AN-349808; AN-347831; AN-4 353777; AN-354092; AN-354064; AN-354202; AN-354006; AN-354097; AN-352548; AN-3 53819; AN-353818; AN-353628; AN-353747; AN-353527; AN-353490; AN-352647; AN-35 2656; AN-351274; AN-352135; AN-351519; AN-344906; AN-353697; AN-354499; AN-354 402; AN-354062; AN-353905; AN-353932; AN-354142; AN-354194; AN-354182; AN-3537 58; AN-353039; AN-353612; AN-350799; AN-354414; AN-354636; AN-354249; AN-35363 7; AN-350949; AN-349402; AN-355103; AN-354174; AN-353823; AN-354819; AN-354215; AN-354219; AN-354040; AN-354763; AN-354597; AN-354478; AN-354528; AN-35435
+Andra korrigeringar: AN-349698; AN-349880; AN-354860; AN-355355; AN-356289;
 
 ## Viktiga meddelanden för Adobe Analytics-administratörer {#admin}
 
 | Meddelande | Datum tillagt eller uppdaterat | Beskrivning |
 | ----------- | ---------- | ---------- |
 | **13-månaders förfallodatum för sparad`cust_visids`** | 20 augusti 2024 | Den 20 augusti 2024 **-utgåvan av motorn för bearbetning av analysträffar tvingar fram ett 13-månaders förfallodatum för sparad `cust_visids`.** Om rapportsviten har Aktivera besökarinställning aktiverat, används den här inställningen för att hitta `cust_visid` för en `visid_high/visid_low value` utan `cust_visid` i träffen. Tidigare var mappningen av en `cust_visid` för en `visid_high/visid_low` inte giltig. Om 13 månader eller mer har gått sedan `visid_high/visid_low` fick en `cust_visid` för en träff i den här versionen upphör mappningen att gälla. |
+| **Ytterligare implementeringsinformation i XDM-fält mappas automatiskt** | 11 september 2024 | När du använder Adobe Experience Platform Edge Network för att skicka data till Adobe Analytics mappas XDM-fälten `xdm.implementationdetails.name` och `xdm.implementationdetails.environment` nu alltid till kontextdatavariabler `c.a.x.implementationdetails.name` och `c.a.x.implementationdetails.environment`. Tidigare hindrade vissa scenarier dessa värden från att fyllas i. Justera eventuella relevanta bearbetningsregler för att passa tillgängligheten för dessa värden. |
 
 {style="table-layout:auto"}
 
