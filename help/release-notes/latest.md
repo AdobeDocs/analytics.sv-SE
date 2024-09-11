@@ -3,9 +3,9 @@ title: Aktuella versionsinformation för Adobe Analytics
 description: Visa den aktuella versionsinformationen för Adobe Analytics
 feature: Release Notes
 exl-id: 97d16d5c-a8b3-48f3-8acb-96033cc691dc
-source-git-commit: a74d47cf99545305c9b7d99d934dfedafdd9233b
+source-git-commit: 7dd42948073b56a33c1d00f9b4292d1cc3416470
 workflow-type: tm+mt
-source-wordcount: '735'
+source-wordcount: '747'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ Versionsinformationen gäller från 11 september till början av oktober. Adobe 
 
 | Funktion | Beskrivning | [Startar](releases.md) | [Allmän tillgänglighet](releases.md) |
 |--- | --- | --- | --- |
-| **Ytterligare information i kolumnen Används i i den beräknade metriska hanteraren och segmenthanteraren** | Kolumnen &quot;Används i&quot; i den beräknade metriska hanteraren och segmenthanteraren innehåller följande nya rapporteringsområden:<ul><li>**Report Builder**: Visar antalet beräknade mått eller segment som används i Report Builder.</li><li>**Ad hoc-komponenter**: Visar antalet ad hoc-beräknade mått eller ad hoc-segment som används i projekt. Dessa ad hoc-beräknade värden och segment (kallas annars&quot;snabbberäknade mätvärden&quot; och&quot;snabbsegment&quot;) kan endast användas i det projekt där de skapades, så de rapporteras separat från rapportområdet&quot;Projekt&quot; i kolumnen&quot;Används i&quot;.</li></ul> |  | 11 sept 2024 |
+| **Ytterligare information i kolumnen Används i i den beräknade metriska hanteraren och segmenthanteraren** | Kolumnen &quot;Används i&quot; i den beräknade metriska hanteraren och segmenthanteraren innehåller följande nya rapporteringsområden:<ul><li>**Report Builder**: Visar antalet beräknade mått eller segment som används i Report Builder.</li><li>**Ad hoc-komponenter**: Visar antalet ad hoc-beräknade mått eller ad hoc-segment som används i projekt. Dessa ad hoc-beräknade värden och segment (kallas annars&quot;snabbberäknade mätvärden&quot; och&quot;snabbsegment&quot;) kan endast användas i det projekt där de skapades, så de rapporteras separat från rapportområdet&quot;Projekt&quot; i kolumnen&quot;Används i&quot;.</li></ul>Mer information finns i [Beräknad måtthanterare](https://experienceleague.adobe.com/en/docs/analytics/components/calculated-metrics/calcmetric-workflow/cm-manager) och [Segmenthanterare](https://experienceleague.adobe.com/en/docs/analytics/components/segmentation/segmentation-workflow/seg-manage). |  | 11 sept 2024 |
 | **Activity Map v3-tillägg** | Tillägget Activity Map v3 är nu tillgängligt. Om du har v2-tillägget installerat avinstallerar du det innan du installerar v3-tillägget. Navigera till **[!UICONTROL Tools]** > **[!UICONTROL Activity Map]** för att hämta den senaste versionen av tillägget. |  | 3 sept 2024 |
 
 
