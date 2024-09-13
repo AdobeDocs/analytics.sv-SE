@@ -3,9 +3,9 @@ description: Steg som beskriver hur du skapar en begäran om Data Warehouse.
 title: Skapa en rapport för en Data Warehouse-förfrågan
 feature: Data Warehouse
 exl-id: 34e84e39-e3b1-4184-898a-3fd222ff4d38
-source-git-commit: 4e4b5e1c362778223be01f78b173a698c53f9b32
+source-git-commit: 6a7bbf5103eb6e7f8a3738d27d1fbb189d951a99
 workflow-type: tm+mt
-source-wordcount: '169'
+source-wordcount: '229'
 ht-degree: 0%
 
 ---
@@ -25,6 +25,12 @@ Så här skapar du en rapport för en begäran om Data Warehouse:
 1. På sidan Begäran om ny Data Warehouse väljer du fliken [!UICONTROL **Bygg din rapport**].
 
    ![Bygg rapportflik](assets/build-report.png)
+
+1. I det övre vänstra hörnet väljer du den rapportserie som du vill använda när du skapar din Data Warehouse-rapport.
+
+   Alla segment som skapas i segmentbyggaren är inte kompatibla med Data Warehouse. Ett fel visas om du väljer en virtuell rapportserie som innehåller inkompatibla segment.
+
+   En lista över funktioner som stöds i ett segment finns i [Kompatibilitet för Data Warehouse](/help/components/segmentation/seg-reference/seg-compatibility.md).
 
 1. Dra segment, mätvärden och mått till verktyget. Rapporten som du skapar avgör vilka data som inkluderas i Datan Warehouse.
 
