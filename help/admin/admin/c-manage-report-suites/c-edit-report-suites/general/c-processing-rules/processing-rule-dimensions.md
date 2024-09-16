@@ -5,7 +5,7 @@ title: Dimensioner som är tillgängliga för bearbetningsregler
 feature: Processing Rules
 role: Admin
 exl-id: ffd7a1d6-2c9d-41e7-9c75-9e47b6f9c283
-source-git-commit: d17067b3ab58612cdfc3ac640a7530b326260c89
+source-git-commit: 02fea12d1286fdf2b8cd075c8bcccca0d196cad2
 workflow-type: tm+mt
 source-wordcount: '712'
 ht-degree: 1%
@@ -22,8 +22,6 @@ Tillgängliga mått och mätvärden som du kan läsa och skriva med bearbetnings
 | --- | --- | --- |
 | Eget värde | Skrivskyddad | Anpassad text eller anpassade värden som skrivs direkt i en bearbetningsregel. |
 | Sammansatt värde | Skrivskyddad | Värden som skapas genom att två värden kombineras. Du kan t.ex. kombinera kanal- och sidnamn för att skapa en underkategori. |
-
-{style="table-layout:auto"}
 
 ## Träff-attribut
 
@@ -47,11 +45,9 @@ Tillgängliga mått och mätvärden som du kan läsa och skriva med bearbetnings
 | Rotdomän för sida | Skrivskyddad | Siddomänen för den aktuella URL-adressen, exklusive underdomäner. |
 | Kundperspektiv | Läs och skriv | En flagga som avgör om träffen är en mobilt bakgrundspåverkan. |
 
-{style="table-layout:auto"}
-
 ## Konverteringsvariabler
 
-| Variabel | Beskrivning av läs-/skrivstatus |
+| Variabel | Läsa/skriva status | Beskrivning |
 | --- | --- | --- |
 | eVar 1-250 | Läs och skriv | [eVar](/help/components/dimensions/evar.md) dimensioner. |
 | Campaign | Läs och skriv | Dimensionen [Spårningskod](/help/components/dimensions/tracking-code.md). |
@@ -60,8 +56,6 @@ Tillgängliga mått och mätvärden som du kan läsa och skriva med bearbetnings
 | Postnummer | Läs och skriv | Dimensionen [Postnummer](/help/components/dimensions/zip-code.md). |
 | Valutakod | Läs och skriv | Implementeringsvariabeln [`currencyCode`](/help/implement/vars/config-vars/currencycode.md). VIKTIGT! Om du anger ett ogiltigt värde för den här variabeln ignoreras träffen. |
 | Transaktions-ID | Läs och skriv | Implementeringsvariabeln [`transactionID`](/help/import/data-sources/transactionid.md). |
-
-{style="table-layout:auto"}
 
 >[!NOTE]
 >Adobe stöder inte inställning av implementeringsvariabeln [`products`](/help/implement/vars/page-vars/products.md) med bearbetningsregler.
@@ -74,8 +68,6 @@ Tillgängliga mått och mätvärden som du kan läsa och skriva med bearbetnings
 | Hierarki 1-5 | Läs och skriv | [Hierarki](/help/components/dimensions/hierarchy.md)-dimensioner. |
 | Server | Läs och skriv | Dimensionen [Server](/help/components/dimensions/server.md). |
 | Kanal | Läs och skriv | Dimensionen för [webbplatsavsnittet](/help/components/dimensions/site-section.md). |
-
-{style="table-layout:auto"}
 
 ## Kontextvariabler
 
@@ -96,4 +88,3 @@ Bearbetningsregler kan ange händelser men kan inte läsa dem som villkor. Stäl
 | Händelse 1-1000 | Endast skrivning | [Anpassade händelser](/help/components/metrics/custom-events.md). |
 | Produktvyer | Endast skrivning | Mätvärdet för [produktvisningar](/help/components/metrics/product-views.md). |
 
-{style="table-layout:auto"}
