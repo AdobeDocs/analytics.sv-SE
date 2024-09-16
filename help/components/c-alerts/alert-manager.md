@@ -3,7 +3,7 @@ description: Hantera aviseringar.
 title: Aviseringshanteraren - översikt
 feature: Alerts
 exl-id: 3408c79f-3d85-44b9-8fca-ce956853dfa4
-source-git-commit: 373a1ecffafdcefe3c7b60954f14c2f3a5ca386d
+source-git-commit: 2b8688da1400857b7f5093197d06c04681cd87ff
 workflow-type: tm+mt
 source-wordcount: '623'
 ht-degree: 0%
@@ -32,7 +32,7 @@ Så här skapar du aviseringar från Alerts Manager:
 
    * [!UICONTROL **Analysdatavarning**]: En avisering som meddelar dig när onormala händelser inträffar i dina data.
 
-     Om du väljer det här alternativet kan du fortsätta med [Skapa aviseringar](/help/analyze/analysis-workspace/c-intelligent-alerts/alert-builder.md) om du vill ha mer information om hur du skapar aviseringar.
+     Om du väljer det här alternativet kan du fortsätta med [Skapa aviseringar](/help/components/c-alerts/alert-builder.md) om du vill ha mer information om hur du skapar aviseringar.
 
    * [!UICONTROL **Varning om användning av serveranrop**]: En varning som meddelar dig om risken eller förekomsten av ett överskott i serveranropets förbrukning och åtagandedata.
 

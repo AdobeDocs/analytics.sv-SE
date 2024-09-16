@@ -4,9 +4,9 @@ audience: end-user
 user-guide-title: Komponenthandbok för Analytics
 breadcrumb-title: Användarhandbok om komponenter
 user-guide-description: Hantera data med komponenter som segment, beräknade värden, virtuella rapportsviter, marknadsföringskanaler och klassificeringar. Lär dig mer om Analytics över flera enheter.
-source-git-commit: 43332660bbf19ffd22409ef48528bcdef81b5e01
+source-git-commit: 2b8688da1400857b7f5093197d06c04681cd87ff
 workflow-type: tm+mt
-source-wordcount: '808'
+source-wordcount: '803'
 ht-degree: 7%
 
 ---
@@ -253,10 +253,10 @@ ht-degree: 7%
    + [Begränsa ett virtuellt rapportpaket till vissa datum](cda/limit-vrs-date.md)
    + [Vanliga frågor om enhetsövergripande analys](cda/faq.md)
 + Larm {#alerts}
-   + [Intelligenta aviseringar](c-alerts/intellligent-alerts.md)
-   + [Varningsverktyg](c-alerts/alert-builder.md)
-   + [Aviseringshanteraren](c-alerts/alert-manager.md)
-   + [Intelligenta aviseringar - användningsfall](c-alerts/alerts-use-cases.md)
+   + [Översikt](c-alerts/intellligent-alerts.md)
+   + [Skapa](c-alerts/alert-builder.md)
+   + [Hantera](c-alerts/alert-manager.md)
+   + [Användningsexempel](c-alerts/alerts-use-cases.md)
 + Klassificeringar {#classifications}
    + [Klassificeringsöversikt](classifications/c-classifications.md)
    + Klassificeringsuppsättningar {#sets}

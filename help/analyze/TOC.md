@@ -4,9 +4,9 @@ audience: end-user
 user-guide-title: Handbok om Analytics-verktyg
 breadcrumb-title: Användarhandbok om verktyg
 user-guide-description: Lär dig hur du använder verktyg i Analytics som Analysis Workspace, Analytics Dashboards, Report Builder och Activity Map.
-source-git-commit: c043a5ea4176d9d9e6beb1d49ceb91cd266a1721
+source-git-commit: 2b8688da1400857b7f5093197d06c04681cd87ff
 workflow-type: tm+mt
-source-wordcount: '930'
+source-wordcount: '919'
 ht-degree: 12%
 
 ---
@@ -152,11 +152,6 @@ ht-degree: 12%
       + [Inaktivera avvikelseidentifiering](analysis-workspace/c-anomaly-detection/anomaly-detection-turnoff.md)
       + [Kör bidragsanalys](analysis-workspace/c-anomaly-detection/run-contribution-analysis.md)
       + [Statistiska tekniker som används för avvikelseidentifiering](analysis-workspace/c-anomaly-detection/statistics-anomaly-detection.md)
-      + Intelligenta aviseringar {#intelligent-alerts}
-         + [Översikt över intelligenta aviseringar](analysis-workspace/c-intelligent-alerts/intellligent-alerts.md)
-         + [Skapa aviseringar](analysis-workspace/c-intelligent-alerts/alert-builder.md)
-         + [Hantera aviseringar](analysis-workspace/c-intelligent-alerts/alert-manager.md)
-         + [Användningsexempel](analysis-workspace/c-intelligent-alerts/alerts-use-cases.md)
    + [Användarinställningar](analysis-workspace/user-preferences.md)
    + Vanliga frågor om Workspace {#workspace-faq}
       + [Frågor och svar](analysis-workspace/workspace-faq/faq.md)

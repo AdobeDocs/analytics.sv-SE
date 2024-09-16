@@ -5,7 +5,7 @@ short-title: Analytics documentation updates
 feature: Release Notes
 exl-id: fe8e3c4c-6782-46f7-8e28-4f8f54807788
 mini-toc-levels: 3
-source-git-commit: 373a1ecffafdcefe3c7b60954f14c2f3a5ca386d
+source-git-commit: 2b8688da1400857b7f5093197d06c04681cd87ff
 workflow-type: tm+mt
 source-wordcount: '5903'
 ht-degree: 19%
@@ -36,7 +36,7 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | Uppdaterade vanliga felmeddelanden | Mindre uppdateringar av de [vanliga felmeddelandena](/help/analyze/analysis-workspace/workspace-faq/error-messages.md) har gjorts. |
 | **Juni 2024** | |
 | Uppdaterat produktnamn som hänvisar till funktioner för direktuppspelande media | Ersatte instanser av&quot;Media Analytics&quot; och&quot;Streaming Media&quot; med namnet&quot;Streaming Media Collection Add-on&quot; när de refererar till en uppsättning funktioner för direktuppspelande media som samlar in strömmande mediedata och visar dem i Analysis Workspace. <p>Dessa uppdateringar är tillgängliga i hela Adobe Analytics-dokumentationen samt i [dokumentationen för tilläggsprogrammet för direktuppspelad media](https://experienceleague.adobe.com/en/docs/media-analytics/using/media-overview).</p> |
-| Förbättrad dokumentation för intelligenta aviseringar | Uppdaterad och förbättrad dokumentation om varningar. Uppdateringarna innehåller information om [att skapa aviseringar](/help/analyze/analysis-workspace/c-intelligent-alerts/alert-builder.md), [hantera aviseringar](/help/components/c-alerts/alert-manager.md) och [översiktsinformation](/help/analyze/analysis-workspace/c-intelligent-alerts/intellligent-alerts.md). |
+| Förbättrad dokumentation för intelligenta aviseringar | Uppdaterad och förbättrad dokumentation om varningar. Uppdateringarna innehåller information om [att skapa aviseringar](/help/components/c-alerts/alert-builder.md), [hantera aviseringar](/help/components/c-alerts/alert-manager.md) och [översiktsinformation](/help/components/c-alerts/intellligent-alerts.md). |
 | `cookieDomainPeriods` har tagits bort | Nu när AppMeasurementet automatiskt hittar rätt domän att ange cookies för, är variabeln [`cookieDomainPeriods`](/help/implement/vars/config-vars/cookiedomainperiods.md) föråldrad. |
 | Dokumentation för Data Connectors | Flyttade Data Connectors-sidan för förfallodatum till [Avbrutna produkter](https://experienceleague.adobe.com/en/docs/discontinued/using/data-connectors). |
 | **Maj 2024** | |

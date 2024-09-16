@@ -3,78 +3,49 @@ description: Det intelligenta larmsystemet ger mer exakt kontroll över varninga
 title: Intelligenta aviseringar
 feature: Alerts
 exl-id: 1b23211e-7632-4b33-a27d-c58b3bbbbab1
-source-git-commit: be5a73347d417c8dc6667d4059e7d46ef5f0f5cd
+source-git-commit: 2b8688da1400857b7f5093197d06c04681cd87ff
 workflow-type: tm+mt
-source-wordcount: '512'
-ht-degree: 6%
+source-wordcount: '277'
+ht-degree: 0%
 
 ---
 
-# Intelligenta aviseringar
+# Översikt över intelligenta aviseringar
 
-Det intelligenta larmsystemet ger mer exakt kontroll över varningar och integrerar avvikelseidentifiering med varningssystemet.
+Med intelligenta aviseringar (eller bara &quot;aviseringar&quot;) i Adobe Analytics kan du få meddelanden direkt när onormala händelser inträffar i dina data.
 
-Här är en videoöversikt:
+Du kan ange att aviseringar ska utlösas baserat på avvikelsetrösklar, ändrade procentsatser eller specifika datapunkter. Varningar innehåller detaljerade kontroller som integreras med [avvikelseidentifiering](/help/analyze/analysis-workspace/c-anomaly-detection/anomaly-detection.md) och aktiveras när du behöver dem som mest.
 
->[!VIDEO](https://video.tv.adobe.com/v/25446/?quality=12)
+Med intelligenta aviseringar kan du:
 
-## Översikt {#section_6AC8CA81DEA94E99B0F192B60D0FDF03}
+* Skapa aviseringar baserade på avvikelser (tröskelvärdena 90 %, 95 %, 99 %, 99,75 % och 99,9 %, % förändring i %, över/under)
+* Förhandsgranska hur ofta en varning utlöses
+* Skicka aviseringar via e-post eller SMS med länkar till autogenererade Analysis Workspace-projekt
+* Skapa&quot;staplade&quot; aviseringar som fångar in flera mätvärden i en enda avisering
+
+I följande videofilm visas en grundläggande översikt över aviseringar: [Intelligenta aviseringar](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/data-science/intelligent-alerts.html) (5:34)
+
+## Anomalsökning efter aviseringar
+
+Om en varning använder avvikelseidentifiering varierar utbildningsperioden beroende på den granularitet som valts för registreringen.
+
+* Månatlig granularitet: 15 månader + samma intervall förra året
+* Veckogranularitet: 15 veckor + samma intervall förra året
+* Daglig kornighet: 35 dagar + samma intervall förra året
+* Timgranularitet: 336 timmar
+
+Mer information finns i [Statistiska tekniker som används vid avvikelseidentifiering](/help/analyze/analysis-workspace/c-anomaly-detection/statistics-anomaly-detection.md).
+
+## Skapa aviseringar
+
+Mer information om hur du skapar aviseringar i Adobe Analytics finns i [Skapa aviseringar](/help/components/c-alerts/alert-builder.md).
 
 >[!IMPORTANT]
 >
->Intelligenta aviseringar är endast tillgängliga för Adobe [!DNL Analytics] Prime- och Adobe [!DNL Analytics] Ultimate-kunder.
+>Om du använder tidsstämplade data för att skapa varningar kan det leda till att varningar utlöses felaktigt. Adobe rekommenderar att man använder data som inte är tidsstämplade för intelligenta aviseringar.
 
-Med intelligenta aviseringar kan du
+## Hantera aviseringar
 
-* Skapa aviseringar baserade på avvikelser (tröskelvärdena 90 %, 95 %, 99 %, 99,75 % och 99,9 %, % förändring i %, över/under).
-* Förhandsgranska hur ofta en avisering utlöses.
-* Skicka aviseringar via e-post eller SMS med länkar till automatiskt genererade Analysis Workspace-projekt.
-* Skapa ”staplade” aviseringar som omfattar flera mätvärden i en enda avisering.
+Du kan hantera befintliga aviseringar i Varningshanteraren. Du kan utföra olika hanteringsåtgärder för varningar, som taggning, namnbyte, borttagning med mera.
 
-Varningssystemets komponenter är: Varningsbyggaren, Varningshanteraren, Förhandsgranska varning och bättre sammanhangsberoende åtkomst för att skapa varningar. Det gamla varningssystemgränssnittet kommer inte längre att vara tillgängligt, men aviseringarna kommer att migreras. Vissa äldre varningsfunktioner [är inte längre tillgängliga](https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/alerts.html).
-
-Det finns tre sätt att komma åt Varningsverktyget:
-
-* Genom att använda följande kortkommando i Analysis Workspace:
-
-  `ctrl (or cmd) + shift + a`
-* Genom att gå direkt till varningsverktyget: **[!UICONTROL Workspace]** > **[!UICONTROL Components]** > **[!UICONTROL New Alert]** .
-* Genom att markera ett eller flera frihandtabellsradsobjekt högerklickar du och väljer **[!UICONTROL Create Alert from Selection]**. Detta öppnar varningsgeneratorn och fyller i byggaren i förväg med lämpliga mått och filter som tillämpas från tabellen. Du kan sedan redigera varningen vid behov.
-
-  ![](assets/create-alert-from-selection.png)
-
-
-## Vanliga frågor: Hur aviseringar beräknas och aktiveras {#trigger}
-
-Tröskelvärdena i % är standardavvikelser. Exempel: 95 % = 2 standardavvikelser och 99 % = 3 standardavvikelser. Beroende på hur lång tid du väljer används [olika modeller](/help/analyze/analysis-workspace/c-anomaly-detection/statistics-anomaly-detection.md) för att beräkna hur långt bort (hur många standardavvikelser) varje datapunkt ligger från normen. Om du anger ett lägre tröskelvärde (till exempel 90 %) får du fler avvikelser än om du anger ett högre tröskelvärde (99 %). Tröskelvärdena 99,75 % och 99,99 % infördes specifikt för timgranulariteten så att den inte skulle utlösa så många avvikelser som möjligt.
-
-+++ Hur långt tillbaka går avvikelseavkänningen för att fastställa dataavvikelser?
-
-Utbildningsperioden varierar beroende på vald granularitet. Mer information finns i Statistiska tekniker som används i <a href="/help/analyze/analysis-workspace/c-anomaly-detection/statistics-anomaly-detection.md">Analysidentifiering</a>. Här är en sammanfattning:
-
-* Månadsvis = 15 månader + samma intervall förra året
-* Vecka = 15 veckor + samma intervall förra året
-* Dagligen = 35 dagar + samma intervall förra året
-* Varje timme = 336 timmar
-
-+++
-
-+++ Om jag vill bli varnad för att bara få ett beteende eller bara ett visst beteende att försvinna, kan jag då använda avvikelsefunktionen eller måste jag använda ett absolut värde?
-
-Om du använder det absoluta värdet utlöses fortfarande varningar på dips och spikes. Du kan inte isolera varningar för enbart dips eller bara spikes.
-
-+++
-
-+++ Kan jag konfigurera aviseringar så att de endast utlöses under vissa timmar på dygnet (till exempel kontorstid jämfört med icke-arbetstid)?
-
-Nej.
-
-+++
-
-+++ Kan jag få en tabell med de &quot;förväntade värdena&quot; som utgör den streckade linjen, eller någon typ av utdata av vad dessa värden är?
-
-Inte i Workspace, men du kan i Report Builder. Se [den här videon](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/exporting/report-builder/anomaly-detection-in-report-builder.html) om avvikelseidentifiering i Report Builder.
-
-Tänk på att Report Builder använder mindre sofistikerade avvikelsedetekteringsmetoder. Den använder en fast 30-dagars utbildningsperiod, fast med 95 % intervall.
-
-+++
+Mer information om hur du hanterar befintliga aviseringar i Adobe Analytics finns i [Hantera aviseringar](/help/components/c-alerts/alert-manager.md).
