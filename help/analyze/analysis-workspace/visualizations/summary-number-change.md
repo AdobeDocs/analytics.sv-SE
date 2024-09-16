@@ -5,9 +5,9 @@ uuid: 177c1b89-6d98-473d-8447-6b4cdc479565
 feature: Visualizations
 role: User, Admin
 exl-id: d6a08201-ca3a-48ff-983a-3ec6b989deda
-source-git-commit: 8f63211c3fd9070b1ef47ad409364507b7a9c4b4
+source-git-commit: a4c976269456770f507bd4621bc704913358f8ff
 workflow-type: tm+mt
-source-wordcount: '364'
+source-wordcount: '363'
 ht-degree: 1%
 
 ---
@@ -38,7 +38,7 @@ Klicka på **Visualiseringsinställningarna** i det övre högra hörnet för at
 
 ## [!UICONTROL Summary Change]-visualisering {#summary-change}
 
-Använd visualiseringen [!UICONTROL Summary Change] för att visa delta (ändring) mellan två tal. Den gröna och röda färgen för [!UICONTROL Summary Change] kan styras med [anpassad händelsepolaritet](https://experienceleague.adobe.com/docs/analytics/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/c-success-events/success-event.md) eller det beräknade måttets [Visa uppåttrend som](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html) -alternativ.
+Använd visualiseringen [!UICONTROL Summary Change] för att visa delta (ändring) mellan två tal. Den gröna och röda färgen för [!UICONTROL Summary Change] kan styras med [anpassad händelsepolaritet](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/c-success-events/success-event.md) eller det beräknade måttets [Visa uppåttrend som](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html) -alternativ.
 
 Den här visualiseringen fungerar på följande sätt:
 
