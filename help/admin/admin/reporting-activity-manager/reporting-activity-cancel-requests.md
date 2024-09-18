@@ -4,9 +4,9 @@ title: Avbryt rapportbegäranden i Rapporteringsaktivitetshanteraren
 feature: Admin Tools
 exl-id: 37a2fa8f-7804-4220-a508-ec66996b3801
 role: Admin
-source-git-commit: 938795c7378cb1f0537ff84eddeab3feddf8d073
+source-git-commit: 815e50e30fa6a0bce1bf78f33843070f96f52de8
 workflow-type: tm+mt
-source-wordcount: '1420'
+source-wordcount: '1419'
 ht-degree: 0%
 
 ---
@@ -163,7 +163,7 @@ Programmen omfattar följande:
 * Report Builder
 * Användargränssnitt för byggare: segment, beräknade värden, anteckningar, målgrupper osv.
 * API-anrop från 1.4 eller 2.0 API
-* Intelligenta aviseringar
+* Larm
 * Dela med alla länkar
 * Alla andra program som frågar efter analysrapportmotorn
 

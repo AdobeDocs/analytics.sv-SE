@@ -4,9 +4,9 @@ description: Se över implementeringen var sjätte månad för att säkerställa
 feature: Implementation Basics
 exl-id: 235fc86e-e1b0-4b1a-a270-0dfba457a832
 role: Admin, Leader
-source-git-commit: 4cbc654b6a17a84b373c254a0dd0e44a1740872d
+source-git-commit: 815e50e30fa6a0bce1bf78f33843070f96f52de8
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '384'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Träffa företagsägaren och/eller analytikerna för att se hur verksamhetens be
 
 Granska kortfattat alla mätvärden och variabler, i den ordning de är viktiga för företaget, för att säkerställa att data samlas in på rätt sätt. Börja med dina viktigaste mått och variabler - de som är kopplade till dina [5 KPI:er](https://experienceleague.adobe.com/docs/analytics/implementation/review/define-kpis.html#review). Så här gör du:
 
-* Skapa instrumentpaneler för att se månatliga trendvyer av dina mått och variabler (eller konfigurera [intelligenta aviseringar](https://experienceleague.adobe.com/docs/analytics/components/alerts/intellligent-alerts.html) för var och en av dem) för att säkerställa att du får de data du förväntar dig och att data är korrekta. Om du hittar avvikelser bör du undersöka datalagret, tagghanteringsreglerna och bearbetningsreglerna för att ta reda på varför.
+* Skapa instrumentpaneler för att se månatliga trendvyer av dina mått och variabler (eller konfigurera [varningar](https://experienceleague.adobe.com/docs/analytics/components/alerts/intellligent-alerts.html) för var och en av dem) för att säkerställa att du får de data du förväntar dig och att data är korrekta. Om du hittar avvikelser bör du undersöka datalagret, tagghanteringsreglerna och bearbetningsreglerna för att ta reda på varför.
 * Kör [Analytics Health Dashboard](https://assets.adobe.com/public/8ff304bb-18e0-434b-54d1-39199422ba1c) igen för att övervaka breda trender för mått och variabler.
 
 Tillåt inte implementeringen att bli fullödig med mätvärden och variabler som du inte behöver. Inaktivera mått eller variabler som företaget inte längre behöver eller använder. Du kanske vill ta bort eller återanvända dem senare.

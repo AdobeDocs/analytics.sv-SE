@@ -1,18 +1,18 @@
 ---
-description: Använd exempel för att skapa och hantera intelligenta aviseringar.
-title: Intelligenta aviseringar - användningsfall
+description: Använd exempel för att skapa och hantera aviseringar.
+title: Varningar - användningsfall
 feature: Alerts
 exl-id: 81c47b62-a57e-4ee4-8043-3e3290e44269
-source-git-commit: 2b8688da1400857b7f5093197d06c04681cd87ff
+source-git-commit: 815e50e30fa6a0bce1bf78f33843070f96f52de8
 workflow-type: tm+mt
-source-wordcount: '70'
+source-wordcount: '66'
 ht-degree: 0%
 
 ---
 
-# Intelligenta aviseringar - användningsfall
+# Varningar - användningsfall
 
-Du kan skapa intelligenta aviseringar enligt beskrivningen i [Skapa aviseringar](/help/components/c-alerts/alert-builder.md).
+Du kan skapa aviseringar enligt beskrivningen i [Skapa aviseringar](/help/components/c-alerts/alert-builder.md).
 
 I följande avsnitt visas exempel på användningsområden som du kan använda när du skapar varningar.
 

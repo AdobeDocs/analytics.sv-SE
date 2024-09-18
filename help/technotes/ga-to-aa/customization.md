@@ -3,7 +3,7 @@ title: Anpassa rapporter i Adobe Analytics
 description: Lär dig hur du anpassar rapporter i Adobe Analytics
 feature: Third-party Integration
 exl-id: 8ea6ec3a-cfc6-4c14-966b-d245949451c7
-source-git-commit: 6de20d2fbbab6ded6c92f0c6f3536671f4b2ae46
+source-git-commit: 815e50e30fa6a0bce1bf78f33843070f96f52de8
 workflow-type: tm+mt
 source-wordcount: '565'
 ht-degree: 0%
@@ -72,4 +72,4 @@ Så här skapar du ett beräknat mått:
 
 ## Anpassade aviseringar
 
-Varningar är tillgängliga på båda plattformarna. I Adobe Analytics använder du rubriknavigeringsmenyn och går till *[!UICONTROL Components]* > *[!UICONTROL Alerts]*. Mer information finns i [Intelligent Alerts](/help/components/c-alerts/intellligent-alerts.md) i användarhandboken för komponenter.
+Varningar är tillgängliga på båda plattformarna. I Adobe Analytics använder du rubriknavigeringsmenyn och går till *[!UICONTROL Components]* > *[!UICONTROL Alerts]*. Mer information finns i [Översikt över aviseringar](/help/components/c-alerts/intellligent-alerts.md) i användarhandboken för komponenter.

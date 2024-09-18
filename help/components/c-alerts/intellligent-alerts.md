@@ -1,31 +1,35 @@
 ---
-description: Det intelligenta larmsystemet ger mer exakt kontroll över varningar och integrerar avvikelseidentifiering med varningssystemet.
-title: Intelligenta aviseringar
+description: Med varningar får du detaljkontroll över meddelanden och integrering med avvikelseidentifiering.
+title: Översikt över aviseringar
 feature: Alerts
 exl-id: 1b23211e-7632-4b33-a27d-c58b3bbbbab1
-source-git-commit: 2b8688da1400857b7f5093197d06c04681cd87ff
+source-git-commit: 815e50e30fa6a0bce1bf78f33843070f96f52de8
 workflow-type: tm+mt
-source-wordcount: '277'
+source-wordcount: '306'
 ht-degree: 0%
 
 ---
 
-# Översikt över intelligenta aviseringar
+# Översikt över aviseringar
 
-Med intelligenta aviseringar (eller bara &quot;aviseringar&quot;) i Adobe Analytics kan du få meddelanden direkt när onormala händelser inträffar i dina data.
+Med varningar i Adobe Analytics kan du meddelas baserat på ändrade procentsatser eller specifika datapunkter.
 
-Du kan ange att aviseringar ska utlösas baserat på avvikelsetrösklar, ändrade procentsatser eller specifika datapunkter. Varningar innehåller detaljerade kontroller som integreras med [avvikelseidentifiering](/help/analyze/analysis-workspace/c-anomaly-detection/anomaly-detection.md) och aktiveras när du behöver dem som mest.
+Beroende på ditt Adobe Analytics-paket kan du även använda varningar som utlöses baserat på avvikelsetrösklar. Dessa aviseringar (kallas även&quot;Intelligent Alerts&quot;) ger detaljerade kontroller som kan integreras med [avvikelseidentifiering](/help/analyze/analysis-workspace/c-anomaly-detection/anomaly-detection.md) och aktiveras när du behöver dem som mest.
 
-Med intelligenta aviseringar kan du:
+Med varningar kan du:
 
-* Skapa aviseringar baserade på avvikelser (tröskelvärdena 90 %, 95 %, 99 %, 99,75 % och 99,9 %, % förändring i %, över/under)
 * Förhandsgranska hur ofta en varning utlöses
 * Skicka aviseringar via e-post eller SMS med länkar till autogenererade Analysis Workspace-projekt
 * Skapa&quot;staplade&quot; aviseringar som fångar in flera mätvärden i en enda avisering
+* Bygg aviseringar baserade på avvikelser (tröskelvärdena 90 %, 95 %, 99 %, 99,75 % och 99,9 %, förändring i %, över/under) (endast tillgängligt för Adobe Analytics-kunder med något av paketen Select, Prime eller Ultimate)
 
-I följande videofilm visas en grundläggande översikt över aviseringar: [Intelligenta aviseringar](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/data-science/intelligent-alerts.html) (5:34)
+I följande videofilm visas en grundläggande översikt över aviseringar: [Varningar](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/data-science/intelligent-alerts.html) (5:34)
 
 ## Anomalsökning efter aviseringar
+
+>[!NOTE]
+>
+>Det går bara att använda aviseringar med avvikelseidentifiering (kallas även _Intelligent Alerts_) för organisationer med ett Adobe Analytics Select-, Prime- eller Ultimate-paket.
 
 Om en varning använder avvikelseidentifiering varierar utbildningsperioden beroende på den granularitet som valts för registreringen.
 
@@ -42,7 +46,7 @@ Mer information om hur du skapar aviseringar i Adobe Analytics finns i [Skapa av
 
 >[!IMPORTANT]
 >
->Om du använder tidsstämplade data för att skapa varningar kan det leda till att varningar utlöses felaktigt. Adobe rekommenderar att man använder data som inte är tidsstämplade för intelligenta aviseringar.
+>Om du använder tidsstämplade data för att skapa varningar kan det leda till att varningar utlöses felaktigt. Adobe rekommenderar att du använder data som inte är tidsstämplade för aviseringar.
 
 ## Hantera aviseringar
 

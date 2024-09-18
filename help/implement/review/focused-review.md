@@ -4,9 +4,9 @@ description: Följ de här stegen för att se till att implementeringen inte är
 feature: Implementation Basics
 exl-id: e38f92b6-bd6e-4835-a8e5-0f29ac962066
 role: Admin, Leader
-source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
+source-git-commit: 815e50e30fa6a0bce1bf78f33843070f96f52de8
 workflow-type: tm+mt
-source-wordcount: '491'
+source-wordcount: '490'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Genom att känna till era fem viktigaste nyckeltal (KPI) kan ni avgöra vilka m�
 
 Kom ihåg att koduppdateringar kan få oönskade konsekvenser. Du vill se till att alla mått och mått som är associerade med dina [5 KPI:er](/help/implement/review/define-kpis.md) fortfarande fungerar som de ska. Det här görs helst direkt efter en webbplatsrelease. Om du inte har gjort det de senaste månaderna gör du det *nu*. Så här gör du:
 
-* Skapa instrumentpaneler om du vill se timvisa trender över viktiga mått och variabler (eller konfigurera [intelligenta aviseringar](https://experienceleague.adobe.com/docs/analytics/components/alerts/intellligent-alerts.html) för varje mätvärde). Övervaka dem sedan i en dag eller två för att säkerställa att du får de data du förväntar dig, och att data är korrekta. Håll utkik efter inflammationspunkter. Var beredd på att åtgärda allvarliga problem omedelbart. Om du hittar avvikelser kan du ta reda på varför i datalagret, tagghanteringsreglerna och bearbetningsreglerna.
+* Skapa instrumentpaneler om du vill se timvisa trender för dessa viktiga mått och variabler (eller konfigurera [varningar](https://experienceleague.adobe.com/docs/analytics/components/alerts/intellligent-alerts.html) för varje mätvärde). Övervaka dem sedan i en dag eller två för att säkerställa att du får de data du förväntar dig, och att data är korrekta. Håll utkik efter inflammationspunkter. Var beredd på att åtgärda allvarliga problem omedelbart. Om du hittar avvikelser kan du ta reda på varför i datalagret, tagghanteringsreglerna och bearbetningsreglerna.
 * Kör [Analytics Health Dashboard](https://express.adobe.com/page/tnNQGNlfzta3b/) igen för att övervaka breda trender för KPI-mått och -variabler.
 
 *Mer information om hur du kontrollerar att dina mått och variabler fungerar som de ska finns i [de här tipsen](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/my-five-best-tips-for-keeping-adobe-analytics-humming/td-p/388608) från Adobe Analytics Champion Sarah Owen.*
