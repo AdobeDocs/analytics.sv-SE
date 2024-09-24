@@ -3,18 +3,18 @@ description: Gör att du kan använda segmentet för marknadsföringsaktivitet i
 title: Publish Segments to Experience Cloud
 feature: Segmentation
 exl-id: 0215f896-d3f8-42cc-ac8d-8a94b009927b
-source-git-commit: 5ef087f1fa4f55b98e9160bc90b8d10c6709a425
+source-git-commit: 605d99581a1d17aa716163308958a61b51f97d46
 workflow-type: tm+mt
-source-wordcount: '1241'
+source-wordcount: '1238'
 ht-degree: 0%
 
 ---
 
 # Publish segment i Experience Cloud
 
-När du publicerar ett Adobe Analytics-segment till Experience Cloud kan du använda segmentet för marknadsföringsaktiviteter i [!DNL Audience Manager] och i andra aktiveringskanaler, inklusive Adobe [!DNL Advertising Cloud], [!DNL Target] och [!DNL Campaign]. Nyligen har uppdateringarna optimerat publiceringsarbetsflödet avsevärt. Nu kan ni publicera Analytics-segment till Experience Cloud på mindre än 8 timmar. Använd dessa segment för att aktivera målgrupper i Audience Manager till alla destinationer i efterföljande led.
+När du publicerar ett Adobe Analytics-segment till Experience Cloud kan du använda segmentet för marknadsföringsaktiviteter i [!DNL Audience Manager] och i andra aktiveringskanaler, inklusive Adobe [!DNL Advertising Cloud], [!DNL Target] och [!DNL Campaign].
 
-Vi har också ökat det maximala antalet publicerbara Adobe Analytics-segment till 75 (från 20). Du kan visa publicerade segment i [!UICONTROL Analytics > Components > Segments].
+Ni kan publicera Analytics-segment till Experience Cloud på mindre än 8 timmar. Använd dessa segment för att aktivera målgrupper i Audience Manager till alla destinationer i efterföljande led.
 
 I den här videon finns mer information:
 
@@ -50,12 +50,11 @@ I den här videon finns mer information:
 
 ## Publish-segment i [!UICONTROL Segment Builder]
 
-1. Navigera till **[!UICONTROL Analytics > Workspace > Components > Segments]> +**
-1. Skapa ett segment i [!UICONTROL Segment Builder].
-1. Ange en rubrik och en beskrivning för segmentet - annars kan du inte spara det.
-1. Kontrollera **[!UICONTROL Publish this segment to the Experience Cloud (for *rapportsviten *)]**.
-
-![Publish Experience Cloud](assets/publish-ec.png)
+1. I Adobe Analytics går du till **[!UICONTROL Components]** > **[!UICONTROL Segments]**
+1. Välj **[!UICONTROL Add]** om du vill skapa ett nytt segment.
+   ![Publish Experience Cloud](assets/publish-ec.png)
+1. Ange en rubrik och en beskrivning för segmentet. Dessa fält är obligatoriska innan du sparar.
+1. I avsnittet **[!UICONTROL Experience Cloud publishing]** väljer du alternativet **[!UICONTROL Publish this segment to the Experience Cloud (for *rapportsviten *)]**.
 
 >[!IMPORTANT]
 >Se till att du använder&quot;Besökare med Experience Cloud-ID&quot; när du tittar på förhandsvisningar av segment i Analytics i stället för den totala förhandsgranskningen av segmentet&quot;unika besökare&quot; när du jämför Adobe Analytics-nummer med Audience Manager-nummer:
@@ -78,12 +77,17 @@ Om du vill ta bort ett segment som har publicerats i Experience Cloud måste du 
 >
 >Du **kan inte** avpublicera ett segment som för närvarande används av någon av följande Adobe-lösningar: [!DNL Analytics] (i [!DNL Audience Analytics]), [!DNL Campaign], [!DNL Advertising Cloud] (för [!DNL Core Service]- och [!DNL Audience Manager]-kunder) och alla andra externa partner (för [!DNL Audience Manager]-kunder). Du **kan** avpublicera ett segment som används av [!DNL Target].
 
-## Visa segmentpubliceringsstatus i [!UICONTROL Segment Manager]
+## Visa segmentens publiceringsstatus
 
-1. Navigera till [!UICONTROL Analytics > Components > Segments].
-1. Observera den nya kolumnen [!UICONTROL Published]. Ja/Nej avser om segmentet har publicerats till Experience Cloud.
+Det högsta antalet publicerbara Adobe Analytics-segment är 75.
 
-![Publish-status](assets/publish-status.png)
+Så här visar du publicerade segment:
+
+1. Gå till **[!UICONTROL Components]** > **[!UICONTROL Segments]** i Adobe Analytics.
+
+1. Visa kolumnen **[!UICONTROL Published]**. **[!UICONTROL Yes]** i den här kolumnen anger att segmentet har publicerats till Experience Cloud. **[!UICONTROL No]** anger att den inte har det.
+
+   ![Publish-status](assets/publish-status.png)
 
 ## Hämta UUID:t [!DNL Audience Manager]
 
