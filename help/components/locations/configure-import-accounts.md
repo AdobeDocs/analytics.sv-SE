@@ -4,7 +4,7 @@ keywords: Analysis Workspace
 title: Konfigurera molnimport- och exportkonton
 feature: Classifications
 exl-id: 40d3d3f1-1047-4c37-8caf-6b0aabaa590a
-source-git-commit: 07a252c9093d47173cc0fe6b1b42b2f14a63870c
+source-git-commit: 8a9c51d46195737b5321cc617913261c059f651d
 workflow-type: tm+mt
 source-wordcount: '1469'
 ht-degree: 0%
@@ -118,7 +118,7 @@ Så här konfigurerar du ett molnimport- eller exportkonto:
 
    >[!NOTE]
    >
-   >E-postkonton kan bara användas med [datafeeds](/help/export/analytics-data-feed/create-feed.md). (E-postkonton stöds inte med [Data Warehouse](/help/export/data-warehouse/create-request/dw-request-report-destinations.md) eller [klassificeringsuppsättningar](/help/components/classifications/sets/overview.md)).
+   >E-postkonton kan bara användas med [Data Warehouse](/help/export/data-warehouse/create-request/dw-request-report-destinations.md). (E-postkonton stöds inte med [datafeeds](/help/export/analytics-data-feed/create-feed.md) eller [klassificeringsuppsättningar](/help/components/classifications/sets/overview.md)).
 
    Om du vill konfigurera ett Azure RBAC-konto anger du följande information:
 
