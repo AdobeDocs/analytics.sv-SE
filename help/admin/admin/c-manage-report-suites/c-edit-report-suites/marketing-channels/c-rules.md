@@ -4,9 +4,9 @@ description: Bearbetningsreglerna för marknadsföringskanaler avgör om en bes�
 feature: Marketing Channels
 exl-id: 825f70a5-cce3-4b1c-bb42-828388348216
 role: Admin
-source-git-commit: def7d071de1765acf524a638a8f8d13ae69e1a1f
+source-git-commit: 09c1484f3f1f1a7f5e25aa24a333dbaabb4dc9d0
 workflow-type: tm+mt
-source-wordcount: '1822'
+source-wordcount: '1816'
 ht-degree: 0%
 
 ---
@@ -72,8 +72,8 @@ Den här referenstabellen definierar de fält, alternativ och träffattribut som
 |--- |--- |
 | Alla | Aktiverar endast den här kanalen när alla villkor i regeln är uppfyllda. |
 | Alla | Aktiverar den här kanalen när något av villkoren i regeln är sant. Det här alternativet är bara tillgängligt om det finns fler än ett villkor i regeln. |
-| AMO-ID | Den primära spårningskod som används av Advertising Cloud- och Advertising Analytics-integreringar. När en av dessa integreringar är aktiverad kan spårningskod-prefixet användas för att identifiera Advertising Cloud-specifika kanaler. Använd&quot;AMO ID&quot; börjar med&quot;AL&quot; för sökning,&quot;AC&quot; för visning eller&quot;AO&quot; för sociala medier. När AMO-ID används i marknadsföringskanaler kan värdena för klickning/kostnad/intryck tillskrivas rätt kanal (om de inte är konfigurerade går dessa värden till Direct eller None). |
-| AMO ED ID | Den sekundära spårningskod som används av Advertising Cloud. Huvudsyftet med spårningskoden är att den ska fungera som nyckel för att skicka data tillbaka till Ad Cloud. Den kan dock även användas för att identifiera ClickThrottings jämfört med ViewThrotts om du vill se dessa som två separata marknadsföringskanaler. Detta kan du göra genom att ange marknadsföringskanallogiken för&quot;AMO EF ID&quot; avslutas med `:d` för Display ClickTheves eller &quot;AMO EF ID&quot; slutar med `:i` för DisplayThrotts. Om du inte vill dela upp Visning i två kanaler använder du AMO ID-dimensionen i stället. |
+| AMO-ID | Den primära spårningskod som används av integreringarna med Adobe Advertising och Advertising Analytics. När en av dessa integreringar är aktiverad kan spårningskod-prefixet användas för att identifiera Advertising-specifika kanaler. Använd ett AMO-ID som börjar med AL för sökning och sociala medier eller AC för visning. När AMO-ID används i marknadsföringskanaler kan värdena för klickning/kostnad/intryck tillskrivas rätt kanal. När AMO-ID:t inte har konfigurerats går dessa värden till Direkt eller Ingen. |
+| AMO EF-ID | Den sekundära spårningskod som används av Adobe Advertising. Huvudsyftet med spårningskoden är att den ska fungera som nyckel för att skicka data tillbaka till Advertising. Den kan dock även användas för att identifiera Display ClickThvärgs och Display ViewThvärs som två separata marknadsföringskanaler. Det gör du genom att ange marknadsföringskanallogiken för&quot;AMO EF ID&quot; avslutas med `:d` för visningsklickningar eller så avslutas&quot;AMO EF ID&quot; med `:i` för visningsvygenomgångar. Om du inte vill dela upp Visning i två kanaler använder du AMO ID-dimensionen i stället. |
 | Konverteringsvariabler | Består av eVars som är aktiverade för den här rapportsviten och gäller bara när dessa variabler ställs in via Adobe-koden på sidan. |
 | Finns | Det finns flera tillgängliga markeringar, bland annat:<ul><li>**Finns inte**: Anger att träffattributet inte finns i begäran. Om användaren till exempel skriver en URL eller klickar på ett bokmärke i en hänvisande domän finns inte det refererande domänattributet.</li><li>**Är tom**: Anger att det finns ett träffattribut, vanligtvis en eVar- eller frågesträngsparameter, men det finns inget värde associerat med träffattributet.</li><li>**Innehåller inte**: Gör att du kan ange, till exempel, att en hänvisande domän inte innehåller ett visst värde (till skillnad från att använda markeringen &quot;Innehåller&quot;).</li></ul> |
 | Identifiera kanalen som | Associerar regeln med en marknadsföringskanal som du har lagt till på sidan för Marketing Channel Manager. |
