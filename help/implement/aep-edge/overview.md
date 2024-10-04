@@ -4,9 +4,9 @@ description: Översikt över hur du använder XDM-data från Experience Platform
 exl-id: 7d8de761-86e3-499a-932c-eb27edd5f1a3
 feature: Implementation Basics
 role: Admin, Developer, Leader
-source-git-commit: 4453c2aa2ea70ef4d00b2bc657285287f3250c65
+source-git-commit: c7fd66e99fd7d6c474682621a3c18bf41d541a96
 workflow-type: tm+mt
-source-wordcount: '357'
+source-wordcount: '394'
 ht-degree: 0%
 
 ---
@@ -35,9 +35,17 @@ I Edge Network används följande logik för att avgöra vilka sidor i Adobe Ana
 | XDM-nyttolasten innehåller... | Adobe Analytics... |
 |---|---|
 | `xdm.web.webPageDetails.name` eller `xdm.web.webPageDetails.URL` och nej `xdm.web.webInteraction.type` | hanterar nyttolast för en **sidvy** |
+| `xdm.eventType = web.webPageDetails.pageViews` | hanterar nyttolast för en **sidvy** |
 | `xdm.web.webInteraction.type` och (`xdm.web.webInteraction.name` eller `xdm.web.webInteraction.url`) | hanterar nyttolast för en **link-händelse** |
-| `web.webInteraction.type` och (`web.webPageDetails.name` eller `web.webPageDetails.url`) | anser att nyttolast är en **link-händelse** <br/>`web.webPageDetails.name` och `web.webPageDetails.URL` är inställda på `null` |
-| no `web.webInteraction.type` and (no `webPageDetails.name` and no `web.webPageDetails.URL`) | släpper nyttolasten och ignorerar data |
+| `xdm.web.webInteraction.type` och (`xdm.web.webPageDetails.name` eller `xdm.web.webPageDetails.url`) | hanterar nyttolast för en **link-händelse** <br/>Anger även `xdm.web.webPageDetails.name` och `xdm.web.webPageDetails.URL` som `null` |
+| no `xdm.web.webInteraction.type` and (no `xdm.webPageDetails.name` and no `xdm.web.webPageDetails.URL`) | släpper nyttolasten och ignorerar data |
+
+{style="table-layout:auto"}
+
+Förutom att differentiera sidvyer och länkklick finns följande logik som avgör om vissa händelser kategoriseras som A4T eller ignoreras.
+
+| XDM-nyttolasten innehåller... | Adobe Analytics... |
+| --- | --- |
 | `xdm.eventType = display` eller <br/>`xdm.eventType = decisioning.propositionDisplay` eller <br/>`xdm.eventType = personalization.request` eller <br/>`xdm.eventType = decisioning.propositionFetch` och `xdm._experience.decisioning` | behandlar nyttolast som ett **A4T**-anrop. |
 | `xdm.eventType = display` eller <br/>`xdm.eventType = decisioning.propositionDisplay` eller <br/>`xdm.eventType = personalization.request` eller <br/>`xdm.eventType = decisioning.propositionFetch` och nej `xdm._experience.decisioning` | släpper nyttolasten och ignorerar data |
 | `xdm.eventType = click` eller `xdm.eventType = decisioning.propositionInteract` och `xdm._experience.decisioning` och inte `web.webInteraction.type` | behandlar nyttolast som ett **A4T**-anrop. |
