@@ -3,7 +3,7 @@ title: Besök
 description: En sekvens med sidvyer i ett möte.
 feature: Metrics
 exl-id: 4f78f2b5-f958-44fe-876a-83f07980beec
-source-git-commit: d095628e94a45221815b1d08e35132de09f5ed8f
+source-git-commit: a3a23e1d13bc10305a8cb991b73c2873a58baf63
 workflow-type: tm+mt
 source-wordcount: '672'
 ht-degree: 0%
@@ -29,7 +29,7 @@ Ett besök sammanfaller inte nödvändigtvis med en webbläsarsession på grund 
 
 Om en besökare utför någon av dessa åtgärder, kommer ett nytt besök att påbörjas:
 
-* Rensar deras cachesession och fortsätter surfa på webbplatsen
+* Tar bort deras cookies-sessioner och fortsätter surfa på webbplatsen
 * Lämnar webbplatsen öppen på en flik i mer än 30 minuter och fortsätter sedan att bläddra
 * Öppnar en annan webbläsare och navigerar till din webbplats på samma dator
 * Samma person som surfar på din webbplats på olika enheter
