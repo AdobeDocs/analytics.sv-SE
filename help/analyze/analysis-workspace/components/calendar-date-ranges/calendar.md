@@ -4,9 +4,9 @@ title: Översikt över kalender- och datumintervall
 feature: Calendar
 role: User, Admin
 exl-id: fbf4bc18-65ba-4e39-96c1-4c41a8e3baa9
-source-git-commit: 1ec261929c1a1b62b1aeb8f01189fe5f2368fa14
+source-git-commit: 1e1a26b8595ca026fb049322125a6f91d9d5513c
 workflow-type: tm+mt
-source-wordcount: '851'
+source-wordcount: '925'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Du kan också dra datum (och tidsdimensioner) till ett Workspace-projekt. Du kan
 | Inställning | Beskrivning |
 |--- |--- |
 | Valda dagar | Utvalda dagar/veckor/månader/år. |
-| Gör datumintervallskomponenter relativa till panelkalendern | Håll datumen baserade på panelens datumintervall konsekventa. |
+| Gör datumintervallskomponenter relativa till panelkalendern | Om det är inaktiverat åsidosätter alla komponenter för datumintervall som används i en tabell, visualisering eller panelsläppzon panelkalendern. <p>Om det här alternativet är aktiverat är alla komponenter i datumintervallet som används i en tabell, visualisering eller panelsläppzon i förhållande till panelens datumintervall. Om panelens datumintervall till exempel är inställt på 1 november till 30 november och en datumintervallkomponent för sista veckan används i en friformstabell, avser informationen i friformstabellen den sista veckan i oktober. |
 | Använd rullande datum | Med rullande datum kan du generera en dynamisk rapport som ser framåt eller bakåt under en angiven tidsperiod baserat på när du körde rapporten. Om du t.ex. vill rapportera alla beställningar som placerats i&quot;Senaste månaden&quot; (baserat på fältet Skapad den) och köra rapporten i december, ser du beställningar som gjorts i november. Om du körde samma rapport i januari skulle du se beställningar i december.<ul><li>**[!UICONTROL Date Preview]**: Anger vilken tidsperiod som den rullande kalendern omfattar.</li><li>**[!UICONTROL Start]**: Du kan välja mellan aktuell dag, aktuell vecka, aktuell månad, aktuellt kvartal, aktuellt år.</li><li>**[!UICONTROL End]**: Du kan välja mellan aktuell dag, aktuell vecka, aktuell månad, aktuellt kvartal, aktuellt år.</li></ul>Se [Anpassade datumintervall](/help/analyze/analysis-workspace/components/calendar-date-ranges/custom-date-ranges.md) om du vill se ett exempel. <br>Markerad som standard. |
 | Datumintervall | Välj ett förinställt datumintervall. De senaste 30 dagarna är standard. Med **[!UICONTROL This week/month/quarter/year (excluding today)]** kan du välja från datumintervall som inte innehåller data för delar av dagen från idag. |
 | Använd på alla paneler | Här kan du inte bara ändra det markerade datumintervallet för den aktuella panelen, utan även för alla andra paneler i projektet. |

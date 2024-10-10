@@ -4,9 +4,9 @@ title: Översikt över Datan Warehouse
 feature: Data Warehouse
 uuid: 768557dd-1644-4ce6-bfc2-8c46dd6e1cd1
 exl-id: 6a051d53-397b-4a55-9cca-1c83b31c9448
-source-git-commit: 3af2cca02675e424b3f704a95d46de92886a88d8
+source-git-commit: 1e1a26b8595ca026fb049322125a6f91d9d5513c
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '339'
 ht-degree: 0%
 
 ---
@@ -47,6 +47,3 @@ Mer information om hur du skapar en begäran om Data Warehouse finns i [Skapa en
 
 Mer information om hur du hanterar förfrågningar från Data Warehouse finns i [Hantera förfrågningar från Data Warehouse](/help/export/data-warehouse/data-warehouse-requests-manage.md).
 
-## Vanliga frågor och svar
-
-En lista med vanliga frågor och svar finns i [Vanliga frågor om Data Warehouse](/help/export/data-warehouse/faq.md).

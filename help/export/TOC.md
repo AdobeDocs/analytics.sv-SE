@@ -4,9 +4,9 @@ audience: end-user
 user-guide-title: Exporthandbok för Analytics
 breadcrumb-title: Användarhandbok om export
 user-guide-description: Lär dig hur du använder Data Feeds för att exportera rådata, och hur du använder Data Warehouse för att hämta data från kalkylblad. Lär dig hur du använder FTP och SFTP för att överföra filer.
-source-git-commit: 29f9ab575a5fcb09e64356bff0997fc8737b93cd
+source-git-commit: 1e1a26b8595ca026fb049322125a6f91d9d5513c
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '279'
 ht-degree: 23%
 
 ---
@@ -49,7 +49,6 @@ ht-degree: 23%
    + [Sortera efter mått](data-warehouse/sorting-by-metric.md)
    + [Hantera förfrågningar från Data Warehouse](data-warehouse/data-warehouse-requests-manage.md)
    + [Komponenter som stöds i Data Warehouse](data-warehouse/component-support.md)
-   + [Vanliga frågor om Data Warehouse](data-warehouse/faq.md)
    + [Bästa praxis för Data Warehouse](data-warehouse/data-warehouse-bp.md)
 + FTP och SFTP {#ftp-and-sftp}
    + [Använd FTP och SFTP med Adobe Experience Cloud](ftp-and-sftp/ftp-overview.md)
