@@ -3,10 +3,10 @@ description: Den här hjälpsidan innehåller rekommenderade användningsexempel
 title: Vilket Adobe Analytics-verktyg ska jag använda?
 feature: Analytics Basics
 exl-id: d65575df-19c6-4129-89c8-d36de7bb6b2f
-source-git-commit: f0d12c4a9462b6a8c5ba47944854164bb4f0d908
+source-git-commit: 16046af6b7a78bdc4bfaf7e5ec7d05c55f2ebc01
 workflow-type: tm+mt
-source-wordcount: '1155'
-ht-degree: 1%
+source-wordcount: '1215'
+ht-degree: 3%
 
 ---
 
@@ -26,7 +26,9 @@ Här är en video som jämför olika Adobe Analytics-verktyg:
 
 **[Adobe Analytics Dashboards](/help/analyze/mobile-app/home.md)** ger användare mobil åtkomst till intuitiva styrkort. Styrkort är en samling viktiga mätvärden och andra komponenter som presenteras i en sida vid sida-layout som du kan trycka på för mer detaljerade uppdelningar och trendrapporter. Mobilappen stöds av både iOS och Android operativsystem.
 
-**[Report Builder](/help/analyze/report-builder/home.md)** är ett tillägg för Microsoft Excel. Här kan du skapa anpassade förfrågningar från Adobe Analytics-data, som du kan infoga i dina Excel-kalkylblad. Begäranden kan referera till celler dynamiskt i kalkylbladet, och du kan uppdatera och anpassa hur Report Builder visar data.
+**[Report Builder](/help/analyze/report-builder/report-buider-overview.md)** är ett tillägg för Microsoft Excel som kan köras i Mac, Windows och webbläsare. Här kan du skapa anpassade förfrågningar från Adobe Analytics-data, som du kan infoga i dina Excel-kalkylblad. Begäranden kan referera till celler dynamiskt i kalkylbladet, och du kan uppdatera och anpassa hur Report Builder visar data.
+
+**[Äldre Report Builder](/help/analyze/legacy-report-builder/home.md)** är ett tillägg för Microsoft Excel som endast kan köras i Windows. Här kan du skapa anpassade förfrågningar från Adobe Analytics-data, som du kan infoga i dina Excel-kalkylblad. Begäranden kan referera till celler dynamiskt i kalkylbladet, och du kan uppdatera och anpassa hur Report Builder visar data.
 
 **[Activity Map](/help/analyze/activity-map/overview.md)** är en funktion i Adobe Analytics som ger en visuell representation av användarinteraktionen på webbsidor och mobilappar. Det gör det möjligt för marknadsförare och analytiker att spåra och analysera användarinteraktioner som klickningar, hovrar och rullningsbeteende.
 
@@ -73,7 +75,7 @@ Här är en video som jämför olika Adobe Analytics-verktyg:
 
 ## Exportera data från Adobe Analytics {#export}
 
-**[Report Builder](/help/analyze/report-builder/home.md)** ska användas:
+**[Report Builder](/help/analyze/report-builder/report-buider-overview.md)** ska användas:
 
 * Om de anpassade layoutalternativen i Workspace är begränsade (allt är möjligt i Report Builder, inom Excel-gränserna).
 * För att smidigt knyta indata från användare eller offlinedatakällor (visningar, kostnader) till data från Adobe. En mer permanent lösning för att binda data är datakällor (se Importera data till analys).

@@ -5,7 +5,7 @@ short-title: Analytics documentation updates
 feature: Release Notes
 exl-id: fe8e3c4c-6782-46f7-8e28-4f8f54807788
 mini-toc-levels: 3
-source-git-commit: 815e50e30fa6a0bce1bf78f33843070f96f52de8
+source-git-commit: 16046af6b7a78bdc4bfaf7e5ec7d05c55f2ebc01
 workflow-type: tm+mt
 source-wordcount: '5902'
 ht-degree: 19%
@@ -180,7 +180,7 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | **Februari 2022** | |
 | Förhandsgranskningsläge för mobilstyrda projekt | I [förhandsgranskningsläget](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/create-scorecard.html#preview) kan du förhandsgranska upplevelsen innan du sparar och delar ett styrkort. |
 | Slutpunkt för API-projekt | Lägg till, redigera eller ta bort Analysis Workspace-projekt med API:t. [Läs mer](https://developer.adobe.com/analytics-apis/docs/2.0/guides/endpoints/projects/) |
-| Uppdaterat ämne om att pausa äldre schemalagda Report Builder-aktiviteter | **Från och med 15 april 2022** har Adobe för avsikt att [pausa alla schemalagda aktiviteter i Report Builder som skapades för mer än två år sedan](/help/analyze/report-builder/r-arb-scheduled-reports.md). |
+| Uppdaterat ämne om att pausa äldre schemalagda Report Builder-aktiviteter | **Från och med 15 april 2022** har Adobe för avsikt att [pausa alla schemalagda aktiviteter i Report Builder som skapades för mer än två år sedan](/help/analyze/legacy-report-builder/r-arb-scheduled-reports.md). |
 
 ### 2021 {#year2021}
 

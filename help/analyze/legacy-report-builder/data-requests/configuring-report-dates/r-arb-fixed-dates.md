@@ -1,0 +1,23 @@
+---
+description: Definitioner för fasta datum i Report Builder.
+title: Definitioner för begärandeguiden - fasta datum
+uuid: bd65a312-bab6-46d7-ba30-570777344cc9
+feature: Report Builder
+role: User, Admin
+exl-id: e2ab1b8b-30e7-4851-8f13-292613fef016
+source-git-commit: bb908f8dd21f7f11d93eb2e3cc843f107b99950d
+workflow-type: tm+mt
+source-wordcount: '109'
+ht-degree: 0%
+
+---
+
+# Definitioner för begärandeguiden - fasta datum
+
+Definitioner för fasta datum i Report Builder.
+
+| Fält | Definition |
+|--- |--- |
+| Denna rapportsvit | Gör det sparade datumintervallet tillgängligt för endast den aktuella rapportsviten. |
+| Alla rapportsviter | Gör det sparade datumintervallet tillgängligt för alla rapportsviter tillgängliga för den inloggade användaren. |
+| Ange parameternamn | Ange ett namn för det sparade datumet. Du kan använda det här datumet som en mall i Report Builder. Det här namnet visas där du kan använda ett sparat datum. Om du ändrar namnet på en mall påverkas inte datumkonfigurationen som används i tidigare skapade databegäranden. |
