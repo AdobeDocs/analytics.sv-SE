@@ -3,9 +3,9 @@ title: Beställningar
 description: Antal inköp.
 feature: Metrics
 exl-id: b05abb6d-983f-43fe-80ad-a0ddf90de466
-source-git-commit: d095628e94a45221815b1d08e35132de09f5ed8f
+source-git-commit: a1fbd3f483d3a236fe5dc3246f5e90c1b3f51ba9
 workflow-type: tm+mt
-source-wordcount: '91'
+source-wordcount: '90'
 ht-degree: 0%
 
 ---
