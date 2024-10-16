@@ -3,16 +3,16 @@ title: Aktuella versionsinformation för Adobe Analytics
 description: Visa den aktuella versionsinformationen för Adobe Analytics
 feature: Release Notes
 exl-id: 97d16d5c-a8b3-48f3-8acb-96033cc691dc
-source-git-commit: d9dd297a510b2f5056429f5938154c59f0a53cfa
+source-git-commit: 29b799eb778dda4d5c529249f1898e92607e51aa
 workflow-type: tm+mt
-source-wordcount: '475'
-ht-degree: 4%
+source-wordcount: '510'
+ht-degree: 2%
 
 ---
 
 # Aktuell versionsinformation för Adobe Analytics (oktober 2024)
 
-**Senast uppdaterad**: 2 oktober 2024
+**Senast uppdaterad**: 16 oktober 2024
 
 Versionsinformationen gäller den 2 oktober till 22 oktober 2024. Adobe Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.md), vilket ger en mer skalbar, fasad metod för driftsättning av funktioner. Därför uppdateras versionsinformationen flera gånger i månaden. Kontrollera dem regelbundet.
 
@@ -20,9 +20,7 @@ Versionsinformationen gäller den 2 oktober till 22 oktober 2024. Adobe Analytic
 
 | Funktion | Beskrivning | [Startar](releases.md) | [Allmän tillgänglighet](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| Ej tillämpligt | Ej tillämpligt | Ej tillämpligt | Ej tillämpligt |
-
-
+| New Report Builder for Adobe Analytics | Det nya programmet Report Builder har uppdaterade funktioner för Adobe Analytics, till exempel bättre prestanda, smidigt användargränssnitt, 2.0-API-stöd och stöd för Microsoft Excel i Mac, Windows och webbläsare. [Dokumentationslänk att följa] |  | 16 oktober 2024 |
 
 ## Korrigeringar i Adobe Analytics
 
