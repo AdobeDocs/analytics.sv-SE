@@ -5,7 +5,7 @@ uuid: f6d8c90f-e185-4d60-8035-f20f74bfcd89
 feature: Report Builder
 role: User, Admin
 exl-id: 6aaadaa8-d68f-4a03-8838-53a61b152e31
-source-git-commit: 12d048b42c6a61e03dbbe73acb9d34df3e37693c
+source-git-commit: fcecc8a493852f5682fd7fbd5b9bb484a850922c
 workflow-type: tm+mt
 source-wordcount: '948'
 ht-degree: 0%
@@ -13,6 +13,8 @@ ht-degree: 0%
 ---
 
 # Schemalägg arbetsböcker
+
+{{legacy-arb}}
 
 Du kan schemalägga arbetsböcker, ange avancerade leveransalternativ, ange mottagare och visa schemahistoriken. Med avancerade leveransalternativ kan du konfigurera arbetsböcker som du vill skicka vid en viss tidpunkt eller i intervall. Du kan också ange i vilket filformat arbetsboken ska skickas.
 

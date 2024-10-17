@@ -5,7 +5,7 @@ uuid: 243619db-81b4-40cc-88c4-e93a14f6993b
 feature: Report Builder
 role: User, Admin
 exl-id: e45eef96-0bd2-4c5a-b1d1-cd41390c08d4
-source-git-commit: 12d048b42c6a61e03dbbe73acb9d34df3e37693c
+source-git-commit: fcecc8a493852f5682fd7fbd5b9bb484a850922c
 workflow-type: tm+mt
 source-wordcount: '94'
 ht-degree: 0%
@@ -13,6 +13,8 @@ ht-degree: 0%
 ---
 
 # Lägg till beroende förfrågningar
+
+{{legacy-arb}}
 
 En beroende begäran är en begäran som är beroende av en befintlig begäran.
 

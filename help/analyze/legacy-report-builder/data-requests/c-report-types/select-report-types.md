@@ -4,7 +4,7 @@ title: Översikt över rapporttyper
 feature: Report Builder
 role: User, Admin
 exl-id: f92a7597-6c53-4886-bab2-8d3f811dcc18
-source-git-commit: bb908f8dd21f7f11d93eb2e3cc843f107b99950d
+source-git-commit: ae6ffed05f5a33f032d0c7471ccdb1029154ddbd
 workflow-type: tm+mt
 source-wordcount: '119'
 ht-degree: 0%
@@ -12,6 +12,8 @@ ht-degree: 0%
 ---
 
 # Översikt över rapporttyper
+
+{{legacy-arb}}
 
 Du kan välja bastapportyp för din databegäran, till exempel Webbplatsmått, Webbplatsinnehåll och Video.
 

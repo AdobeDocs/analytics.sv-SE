@@ -5,7 +5,7 @@ uuid: 1e504ff9-df88-4fa7-95ea-1ca05a6f9c0d
 feature: Report Builder
 role: User, Admin
 exl-id: 0a8b1971-8d32-424a-9d41-d7ab2af54d1e
-source-git-commit: bb908f8dd21f7f11d93eb2e3cc843f107b99950d
+source-git-commit: fcecc8a493852f5682fd7fbd5b9bb484a850922c
 workflow-type: tm+mt
 source-wordcount: '173'
 ht-degree: 0%
@@ -13,6 +13,8 @@ ht-degree: 0%
 ---
 
 # Konfigurera en begäran om avvikelseidentifiering
+
+{{legacy-arb}}
 
 Så här skapar du en begäran om avvikelseidentifiering i Report Builder:
 

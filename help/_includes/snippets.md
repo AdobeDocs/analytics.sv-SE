@@ -1,11 +1,18 @@
 ---
-source-git-commit: cc0b8703d6b6488adf9a2ea41a51001538d1cbee
+source-git-commit: ae6ffed05f5a33f032d0c7471ccdb1029154ddbd
 workflow-type: tm+mt
-source-wordcount: '1171'
+source-wordcount: '1214'
 ht-degree: 0%
 
 ---
 # Fragment
+
+## Report Builder äldre {#legacy-arb}
+
+>[!IMPORTANT]
+>
+>Ett nytt och smidigt [Report Builder](https://experienceleague.adobe.com/en/docs/analytics/analyze/report-builder/report-buider-overview) släpptes 16 oktober 2024. Det stöds i Mac, Windows och webbläsare.
+>Denna äldre Report Builder-tilläggsversion fungerar fortfarande. Du kan [konvertera dina gamla arbetsböcker](https://experienceleague.adobe.com/en/docs/analytics/analyze/report-builder/convert-workbooks) till nya Report Builder.
 
 ## Rapporter och analyser - meddelande om att produkten har upphört att gälla {#ra-eol}
 

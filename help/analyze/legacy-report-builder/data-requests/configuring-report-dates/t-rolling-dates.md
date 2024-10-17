@@ -5,7 +5,7 @@ uuid: 28319f02-2a4a-408d-a7d1-545247ad6178
 feature: Report Builder
 role: User, Admin
 exl-id: 621e3928-17d8-4b0a-93dc-7bf1622b16fc
-source-git-commit: bb908f8dd21f7f11d93eb2e3cc843f107b99950d
+source-git-commit: ae6ffed05f5a33f032d0c7471ccdb1029154ddbd
 workflow-type: tm+mt
 source-wordcount: '74'
 ht-degree: 0%
@@ -13,6 +13,8 @@ ht-degree: 0%
 ---
 
 # Rullande datum
+
+{{legacy-arb}}
 
 Så här anpassar du ett rullande datum för din begäran:
 

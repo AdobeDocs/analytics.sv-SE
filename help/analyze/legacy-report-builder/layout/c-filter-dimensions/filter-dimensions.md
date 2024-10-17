@@ -5,7 +5,7 @@ uuid: c54d5add-f278-476d-8f14-73f1c2e37671
 feature: Report Builder
 role: User, Admin
 exl-id: eded07d5-3c06-419b-92fd-1a48856ac293
-source-git-commit: bb908f8dd21f7f11d93eb2e3cc843f107b99950d
+source-git-commit: fcecc8a493852f5682fd7fbd5b9bb484a850922c
 workflow-type: tm+mt
 source-wordcount: '446'
 ht-degree: 7%
@@ -13,6 +13,8 @@ ht-degree: 7%
 ---
 
 # Översikt över filterdimensioner
+
+{{legacy-arb}}
 
 Du kan filtrera efter dimensioner som du lägger till i rutnätet Radetiketter. Filter begränsar de data som returneras av begäranden och kan tillämpas från pivottabellen eller anpassade layouter. När du konfigurerar dimensionsfiltrering från pivotlayouten kan du dessutom ange antalet poster från cellen.
 

@@ -4,7 +4,7 @@ title: Publish till Power BI - översikt
 feature: Report Builder
 role: User, Admin
 exl-id: 3464c153-2db5-41af-9e83-da081ec64ad3
-source-git-commit: 12d048b42c6a61e03dbbe73acb9d34df3e37693c
+source-git-commit: ae6ffed05f5a33f032d0c7471ccdb1029154ddbd
 workflow-type: tm+mt
 source-wordcount: '1106'
 ht-degree: 5%
@@ -12,6 +12,8 @@ ht-degree: 5%
 ---
 
 # Publish till Power BI - översikt
+
+{{legacy-arb}}
 
 Microsoft Power BI är en serie kontrollpaneler för affärsanalys som används för att analysera data och dela insikter. Tack vare Adobe Analytics-integreringen med Power BI kan du visualisera analysdata från Report Builder i Microsoft Power BI och enkelt dela dem i hela organisationen.
 

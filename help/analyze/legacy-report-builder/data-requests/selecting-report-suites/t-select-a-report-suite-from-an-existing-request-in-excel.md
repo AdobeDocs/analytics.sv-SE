@@ -5,7 +5,7 @@ uuid: 92fe4823-6b8a-4178-9c94-fb4f5e03e4a5
 feature: Report Builder
 role: User, Admin
 exl-id: e53f96d2-57e3-4d32-bc08-8e941250297b
-source-git-commit: bb908f8dd21f7f11d93eb2e3cc843f107b99950d
+source-git-commit: ae6ffed05f5a33f032d0c7471ccdb1029154ddbd
 workflow-type: tm+mt
 source-wordcount: '67'
 ht-degree: 0%
@@ -13,6 +13,8 @@ ht-degree: 0%
 ---
 
 # Välj en rapportsvit från en befintlig begäran i Excel
+
+{{legacy-arb}}
 
 Steg som hjälper dig att välja en rapportserie från den befintliga begäran.
 

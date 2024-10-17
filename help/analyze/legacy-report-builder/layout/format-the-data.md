@@ -5,7 +5,7 @@ uuid: 5211db30-07b3-4413-97c3-e40e6ff223cd
 feature: Report Builder
 role: User, Admin
 exl-id: 9b251b09-9156-40b5-8e1f-fb6594a25c26
-source-git-commit: 12d048b42c6a61e03dbbe73acb9d34df3e37693c
+source-git-commit: fcecc8a493852f5682fd7fbd5b9bb484a850922c
 workflow-type: tm+mt
 source-wordcount: '249'
 ht-degree: 2%
@@ -13,6 +13,8 @@ ht-degree: 2%
 ---
 
 # Formatera datum
+
+{{legacy-arb}}
 
 Förutom de standardalternativ för cellformatering som är tillgängliga via Excel-funktionen Format > Celler (Ctrl+1) kan du använda begränsad formatering för cellintervall med Report Builder. Dessa formateringsalternativ beror på vilket mätvärde du har valt.
 

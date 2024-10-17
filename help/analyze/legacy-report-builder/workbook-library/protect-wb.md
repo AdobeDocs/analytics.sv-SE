@@ -5,7 +5,7 @@ uuid: ef5c276c-5f74-4741-b6fa-4c79eda29f62
 feature: Report Builder
 role: User, Admin
 exl-id: b5a83532-9fa7-4f1f-b744-e5d74781fffb
-source-git-commit: bb908f8dd21f7f11d93eb2e3cc843f107b99950d
+source-git-commit: fcecc8a493852f5682fd7fbd5b9bb484a850922c
 workflow-type: tm+mt
 source-wordcount: '466'
 ht-degree: 0%
@@ -13,6 +13,8 @@ ht-degree: 0%
 ---
 
 # Låsa och låsa upp arbetsböcker
+
+{{legacy-arb}}
 
 Du kan skydda alla begäranden i en arbetsbok mot att lägga till och redigera begäranden genom att låsa arbetsboken. Detta gör att arbetsböcker kan redigeras offline genom att alla rapportförfrågningar pausas för effektivare redigering.
 

@@ -5,7 +5,7 @@ uuid: 6b2c4259-d8cb-430e-819f-38e213dd2661
 feature: Report Builder
 role: User, Admin
 exl-id: 1a2363da-603e-4d1d-aefa-14ce71554247
-source-git-commit: bb908f8dd21f7f11d93eb2e3cc843f107b99950d
+source-git-commit: fcecc8a493852f5682fd7fbd5b9bb484a850922c
 workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 0%
@@ -14,8 +14,12 @@ ht-degree: 0%
 
 # Kopiera begäranden och kalkylblad mellan arbetsböcker
 
+{{legacy-arb}}
+
 Kopiera ett helt kalkylblad i en källarbetsbok till ett kalkylblad i en eller flera målarbetsböcker. För att kunna göra detta måste du ha minst två arbetsböcker öppna i samma instans av Excel:
+
 * Den första källarbetsboken innehåller ett kalkylblad (kalkylblad) med begäranden som mappas till celler.
+
 * De ytterligare målarbetsböckerna är målen. För varje ny målarbetsbok bör du logga in på samma rapportprogramsvit som källarbetsboken innan du kan klistra in kalkylblad som innehåller begäranden.
 
 >[!NOTE]

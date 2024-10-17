@@ -5,7 +5,7 @@ uuid: 5342cc4f-085d-4a2d-a498-38b00a3ef4d3
 feature: Report Builder
 role: User, Admin
 exl-id: b412f2b5-affe-4297-af4b-85e8c6dfd257
-source-git-commit: bb908f8dd21f7f11d93eb2e3cc843f107b99950d
+source-git-commit: fcecc8a493852f5682fd7fbd5b9bb484a850922c
 workflow-type: tm+mt
 source-wordcount: '485'
 ht-degree: 0%
@@ -13,6 +13,8 @@ ht-degree: 0%
 ---
 
 # Använda Report Builder med Microsoft Excel
+
+{{legacy-arb}}
 
 Du kan använda Report Builder-funktioner för att få åtkomst till funktioner utan att använda användargränssnittet i Report Builder.
 

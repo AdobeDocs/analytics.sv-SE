@@ -5,7 +5,7 @@ uuid: 81199890-c183-4e42-a343-dc33a9e9ed46
 feature: Report Builder
 role: User, Admin
 exl-id: 5589db75-f06a-455e-aa79-03b036dfdfc4
-source-git-commit: bb908f8dd21f7f11d93eb2e3cc843f107b99950d
+source-git-commit: fcecc8a493852f5682fd7fbd5b9bb484a850922c
 workflow-type: tm+mt
 source-wordcount: '102'
 ht-degree: 0%
@@ -13,6 +13,8 @@ ht-degree: 0%
 ---
 
 # Sortera stigande eller fallande
+
+{{legacy-arb}}
 
 Du kan sortera förfrågningarna som listas i Begäranhanteraren i stigande eller fallande ordning.
 

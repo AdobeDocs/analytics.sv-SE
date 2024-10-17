@@ -4,7 +4,7 @@ title: Filtrera sökvägsrapporter efter tillägg av beroende begäranden
 feature: Report Builder
 role: User, Admin
 exl-id: 41aca5a4-7bda-4be5-ae93-a6d1dae6a554
-source-git-commit: bb908f8dd21f7f11d93eb2e3cc843f107b99950d
+source-git-commit: ae6ffed05f5a33f032d0c7471ccdb1029154ddbd
 workflow-type: tm+mt
 source-wordcount: '160'
 ht-degree: 0%
@@ -12,6 +12,8 @@ ht-degree: 0%
 ---
 
 # Filtrera sökvägsrapporter efter tillägg av beroende begäranden
+
+{{legacy-arb}}
 
 Beskriver hur du skapar sökvägsrapporter med fördefinierade filter.
 

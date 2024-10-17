@@ -1,11 +1,10 @@
 ---
 description: Lär dig hur du kopierar referensbegäranden.
 title: Så här kopierar du referensförfrågningar
-uuid: b6f64630-868f-455b-8682-471ff9fc596e
 feature: Report Builder
 role: User, Admin
 exl-id: 3cd77325-7461-4345-a672-64c03ea1ae5b
-source-git-commit: 16046af6b7a78bdc4bfaf7e5ec7d05c55f2ebc01
+source-git-commit: fcecc8a493852f5682fd7fbd5b9bb484a850922c
 workflow-type: tm+mt
 source-wordcount: '524'
 ht-degree: 0%
@@ -13,6 +12,8 @@ ht-degree: 0%
 ---
 
 # Kopiera hänvisningsbegäranden
+
+{{legacy-arb}}
 
 I en referensbegäran används värden från celler som indata för parametrar, till exempel ett datafilter eller relationsfilter.
 

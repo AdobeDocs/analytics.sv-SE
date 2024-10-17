@@ -4,16 +4,18 @@ title: Beräknade mått
 feature: Report Builder
 role: User, Admin
 exl-id: 462086eb-675f-443c-b3a6-b4fa390254da
-source-git-commit: bb908f8dd21f7f11d93eb2e3cc843f107b99950d
+source-git-commit: fcecc8a493852f5682fd7fbd5b9bb484a850922c
 workflow-type: tm+mt
-source-wordcount: '398'
-ht-degree: 11%
+source-wordcount: '396'
+ht-degree: 6%
 
 ---
 
 # Beräknade mått
 
-Report Builder 5.2 stöder Adobe Analytics enhetliga beräknade mätvärden. Bland andra innovationer har alla beräknade värden nu ett globalt ID - de är inte längre begränsade till ett rapportpaket.
+{{legacy-arb}}
+
+Report Builder 5.2 och senare stöder Adobe Analytics beräknade värden. Alla beräknade värden har nu ett globalt ID - de är inte längre begränsade till en rapportserie.
 
 >[!NOTE]
 >

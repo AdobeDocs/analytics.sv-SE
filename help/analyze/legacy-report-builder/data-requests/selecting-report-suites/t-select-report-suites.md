@@ -5,7 +5,7 @@ uuid: e9fb6e20-217c-4b36-aaec-19ccf407da93
 feature: Report Builder
 role: User, Admin
 exl-id: f9fd18a6-2c03-468a-a022-9f4d263f166d
-source-git-commit: bb908f8dd21f7f11d93eb2e3cc843f107b99950d
+source-git-commit: ae6ffed05f5a33f032d0c7471ccdb1029154ddbd
 workflow-type: tm+mt
 source-wordcount: '43'
 ht-degree: 0%
@@ -13,6 +13,8 @@ ht-degree: 0%
 ---
 
 # Välj en rapportsvit
+
+{{legacy-arb}}
 
 Steg som hjälper dig att välja en rapportsserie i Excel.
 

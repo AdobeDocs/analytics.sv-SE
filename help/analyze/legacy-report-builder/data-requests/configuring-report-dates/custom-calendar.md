@@ -4,7 +4,7 @@ title: Anpassad kalender
 feature: Report Builder
 role: User, Admin
 exl-id: e65cb6c8-8bb0-4dcd-a3a3-d22adcd024fa
-source-git-commit: bb908f8dd21f7f11d93eb2e3cc843f107b99950d
+source-git-commit: ae6ffed05f5a33f032d0c7471ccdb1029154ddbd
 workflow-type: tm+mt
 source-wordcount: '409'
 ht-degree: 0%
@@ -12,6 +12,8 @@ ht-degree: 0%
 ---
 
 # Anpassad kalender
+
+{{legacy-arb}}
 
 Report Builder använder den anpassade Analytics-kalendern. Du kan använda kalendern för att definiera den första dagen i veckan och året eller använda ett annat återförsäljningsformat. Kalenderformaten används för olika syften, inklusive försäljningsjämförelse och prognosstandardisering, lönekostnadsanalys eller reglering av fysiskt lagerantal.
 

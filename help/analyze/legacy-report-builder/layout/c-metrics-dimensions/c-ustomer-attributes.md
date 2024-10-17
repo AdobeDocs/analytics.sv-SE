@@ -4,7 +4,7 @@ title: Kundattribut
 feature: Report Builder
 role: User, Admin
 exl-id: b5855ce0-6d17-4690-a2c2-366b66ab8e83
-source-git-commit: bb908f8dd21f7f11d93eb2e3cc843f107b99950d
+source-git-commit: fcecc8a493852f5682fd7fbd5b9bb484a850922c
 workflow-type: tm+mt
 source-wordcount: '127'
 ht-degree: 11%
@@ -12,6 +12,8 @@ ht-degree: 11%
 ---
 
 # Kundattribut
+
+{{legacy-arb}}
 
 Kundattribut lagras i en ny typ av element som kallas VisAttr, som kan konfigureras som en dimension eller ett mått.
 
