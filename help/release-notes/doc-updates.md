@@ -5,9 +5,9 @@ short-title: Analytics documentation updates
 feature: Release Notes
 exl-id: fe8e3c4c-6782-46f7-8e28-4f8f54807788
 mini-toc-levels: 3
-source-git-commit: 23282c1a2793a7113117c62ce195f9714ab5a7f2
+source-git-commit: bae719223ffa642434ab9559c1e48ebd76d003a0
 workflow-type: tm+mt
-source-wordcount: '5925'
+source-wordcount: '5959'
 ht-degree: 19%
 
 ---
@@ -26,6 +26,7 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | Funktion | Beskrivning |
 | --- | --- |
 | **Oktober 2024** |  |
+| Ny information om begärandefaktorer i Analysis Workspace prestanda | En ny [Request factor](/help/analyze/analysis-workspace/workspace-faq/optimizing-performance.md#request-factors)-sektion i artikeln [Optimize Analysis Workspace performance](/help/analyze/analysis-workspace/workspace-faq/optimizing-performance.md) förklarar hur begäranden behandlas och de olika faktorer som påverkar bearbetningstiderna. |
 | New Report Builder | [Ny dokumentation](https://experienceleague.adobe.com/en/docs/analytics/analyze/report-builder/report-buider-overview) för det strömlinjeformade tillägget Report Builder som stöds i Mac, Windows och webbläsare. |
 | **Augusti 2024** | |
 | Varningshanteraren | Effektiv dokumentation om [Varningshanteraren](/help/components/c-alerts/alert-manager.md). Uppdaterat för tydlighet och precision. |
