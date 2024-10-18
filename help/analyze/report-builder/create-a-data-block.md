@@ -5,9 +5,9 @@ role: User
 feature: Report Builder
 type: Documentation
 solution: Analytics
-source-git-commit: eedabc6295f9b918e1e00b93993680e676c216c3
+source-git-commit: 695931b3c87acada7ce7650a38b841da24723691
 workflow-type: tm+mt
-source-wordcount: '645'
+source-wordcount: '636'
 ht-degree: 0%
 
 ---
@@ -20,25 +20,25 @@ Ett *datablock* är den datatabell som skapas av en enskild databegäran. En Rep
 
 Konfigurera de inledande datablocksparametrarna för datablockplatsen, rapportsviterna och datumintervallet.
 
-1. Klicka på **Skapa datablock**.
+1. Klicka på **[!UICONTROL Create data block]**.
 
    ![Skärmbild med alternativet Skapa datablock.](./assets/create_db.png)
 
-1. Ange **datablockets plats**.
+1. Ange **[!UICONTROL Data block location]**.
 
    Platsalternativet för datablocket definierar den plats i kalkylbladet där rapportbyggaren lägger till data i kalkylbladet.
 
    Om du vill ange platsen för datablocket markerar du en enskild cell i kalkylbladet eller anger en celladress som a3, \\\$a3, a\\\$3 eller sheet1!a2. Den angivna cellen kommer att vara det övre vänstra hörnet i datablocket när data hämtas.
 
-1. Välj **rapportsviter**.
+1. Välj en **rapportserie**.
 
    Med alternativet för rapportsviter kan du välja en rapportsserie från en nedrullningsbar meny eller referera till en rapportsvit från en cellplats.
 
-1. Ange **datumintervallet**.
+1. Ange **[!UICONTROL Date range]**.
 
    Med datumintervallalternativet kan du välja ett datumintervall. Datumintervall kan vara fasta eller rullande. Mer information om dataområdesalternativ finns i [Markera ett datumintervall](select-date-range.md).
 
-1. Klicka på **Nästa**.
+1. Klicka på **[!UICONTROL Next]**.
 
    ![Skärmbild som visar datumintervallalternativet och den aktiva knappen Nästa.](./assets/choose_date_data_view3.png)
 
