@@ -5,9 +5,9 @@ role: User
 feature: Report Builder
 type: Documentation
 solution: Analytics
-source-git-commit: 1957c4114d9682c358f101bdd561d594835e3f97
+source-git-commit: a8cb45c11089a0b69373ef3cf2a49687cd20da09
 workflow-type: tm+mt
-source-wordcount: '636'
+source-wordcount: '629'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Ett *datablock* är den datatabell som skapas av en enskild databegäran. En Rep
 
 Konfigurera de inledande datablocksparametrarna för datablockplatsen, rapportsviten och ett datumintervall.
 
-1. Klicka på **[!UICONTROL Create data block]**.
+1. Klicka på **[!UICONTROL Create]**.
 
    ![Skärmbild med alternativet Skapa datablock.](./assets/create_db.png)
 
@@ -28,7 +28,7 @@ Konfigurera de inledande datablocksparametrarna för datablockplatsen, rapportsv
 
    Platsalternativet för datablocket definierar den plats i kalkylbladet där rapportbyggaren lägger till data i kalkylbladet.
 
-   Om du vill ange platsen för datablocket markerar du en enskild cell i kalkylbladet eller anger en celladress som a3, \\\$a3, a\\\$3 eller sheet1!a2. Den angivna cellen kommer att vara det övre vänstra hörnet i datablocket när data hämtas.
+   Om du vill ange platsen för datablocket markerar du en enskild cell i kalkylbladet eller anger en celladress som a3, \\\$a3, a\\\$3 eller sheet1!a2. Cellen som anges markerar det övre vänstra hörnet i datablocket när data hämtas.
 
 1. Välj en **rapportserie**.
 
@@ -50,7 +50,7 @@ Om du vill skapa datablocket väljer du rapportkomponenter och anpassar sedan la
 
 1. Lägg till Dimensioner, mätvärden och filter.
 
-   Bläddra i komponentlistorna eller använd fältet **sök** för att hitta komponenter. Dra och släpp komponenter till tabellrutan eller dubbelklicka på ett komponentnamn i listan för att automatiskt lägga till komponenten i tabellrutan.
+   Bläddra i komponentlistorna eller använd fältet **[!UICONTROL Search]** för att hitta komponenter. Dra och släpp komponenter till tabellrutan eller dubbelklicka på ett komponentnamn i listan för att automatiskt lägga till komponenten i tabellrutan.
 
    Dubbelklicka på en komponent för att lägga till den i ett standardavsnitt i tabellen.
 
@@ -60,7 +60,7 @@ Om du vill skapa datablocket väljer du rapportkomponenter och anpassar sedan la
 
    **Startdatum som Dimension**
 
-   Ange startdatumet som en dimension för att tydligt identifiera startdatumet för ditt datablock. Detta är praktiskt om du har en schemalagd rapport med ett löpande datumintervall eller om du har ett okonventionellt datumintervall och du behöver inte ta hänsyn till startdatumet.
+   Ange **[!UICONTROL Start date]** som en dimension för att tydligt identifiera startdatumet för ditt datablock. Detta är användbart om du har en regelbundet schemalagd rapport med ett löpande datumintervall eller om du har ett okonventionellt datumintervall och du måste vara tydlig på startdatumet.
 
    ![Skärmbild som visar startdatumet i listan över dimensioner.](./assets/start-date-dimension.png){width="30%"}
 
@@ -74,7 +74,7 @@ Om du vill skapa datablocket väljer du rapportkomponenter och anpassar sedan la
 
    **Visa eller dölj rad- och kolumnrubriker**
 
-1. Klicka på inställningsikonen **Tabell** .
+1. Klicka på ikonen **[!UICONTROL Table settings]**.
 
    ![Skärmbild med alternativet Tabellinställningar.](./assets/table-settings.png){width="35%"}
 
@@ -88,7 +88,7 @@ Om du vill skapa datablocket väljer du rapportkomponenter och anpassar sedan la
 
 1. Klicka på Dölj eller Visa för att växla dimensionsetiketter eller kolumnrubriker. Alla etiketter visas som standard.
 
-1. Klicka på **Slutför**.
+1. Klicka på **[!UICONTROL Finish]**.
 
    Ett bearbetningsmeddelande visas när analysdata hämtas.
 
