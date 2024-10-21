@@ -5,7 +5,7 @@ role: User
 feature: Report Builder
 type: Documentation
 solution: Analytics
-source-git-commit: 695931b3c87acada7ce7650a38b841da24723691
+source-git-commit: 1957c4114d9682c358f101bdd561d594835e3f97
 workflow-type: tm+mt
 source-wordcount: '636'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Ett *datablock* är den datatabell som skapas av en enskild databegäran. En Rep
 
 ## Konfigurera datablocket
 
-Konfigurera de inledande datablocksparametrarna för datablockplatsen, rapportsviterna och datumintervallet.
+Konfigurera de inledande datablocksparametrarna för datablockplatsen, rapportsviten och ett datumintervall.
 
 1. Klicka på **[!UICONTROL Create data block]**.
 
