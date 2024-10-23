@@ -3,15 +3,14 @@ title: Aktuella versionsinformation för Adobe Analytics
 description: Visa den aktuella versionsinformationen för Adobe Analytics
 feature: Release Notes
 exl-id: 97d16d5c-a8b3-48f3-8acb-96033cc691dc
-source-git-commit: 2d42a824510fa03825a10da3837801ee662f687c
+source-git-commit: c8d38d67590c0422ed898d20ffa788b5fd34041c
 workflow-type: tm+mt
-source-wordcount: '719'
+source-wordcount: '718'
 ht-degree: 1%
 
 ---
 
 # Aktuell versionsinformation för Adobe Analytics (23 oktober 2024)
-
 
 **Senast uppdaterad**: 23 oktober 2024
 
@@ -38,12 +37,11 @@ Datakällor: AN-359290
 Data Warehouse: AN-359820
 Overage Alerts: AN-358132
 
-
 ## Viktiga meddelanden för Adobe Analytics-administratörer {#admin}
 
 | Meddelande | Datum tillagt eller uppdaterat | Beskrivning |
 | ----------- | ---------- | ---------- |
-| **Icke-kampanjkunder förlorar åtkomst till utlösare** | 16 oktober 2024 | Den 30 januari 2025 förlorar Adobe Analytics-kunder som inte har någon Adobe Campaign-licens åtkomsten till möjligheten att konfigurera och använda [utlösare](https://experienceleague.adobe.com/en/docs/core-services/interface/services/triggers). Kunderna måste antingen köpa Campaign, eller planera för att sluta använda Triggers, eller titta på andra Adobe-verktyg som erbjuder Triggers-funktioner. |
+| **Icke-kampanjkunder förlorar åtkomst till utlösare** | 16 oktober 2023 | Den 30 januari 2025 förlorar Adobe Analytics-kunder som inte har någon Adobe Campaign-licens åtkomsten till möjligheten att konfigurera och använda utlösare. Kunderna måste antingen köpa Campaign, eller planera för att sluta använda Triggers, eller titta på andra Adobe-verktyg som erbjuder Triggers-funktioner. |
 | **Ytterligare implementeringsinformation i XDM-fält mappas automatiskt** | 11 september 2024 | När du använder Adobe Experience Platform Edge Network för att skicka data till Adobe Analytics mappas XDM-fälten `xdm.implementationdetails.name` och `xdm.implementationdetails.environment` nu alltid till kontextdatavariabler `c.a.x.implementationdetails.name` och `c.a.x.implementationdetails.environment`. Tidigare hindrade vissa scenarier dessa värden från att fyllas i. Justera eventuella relevanta bearbetningsregler för att passa tillgängligheten för dessa värden. |
 
 ## EOL-meddelanden (End-of-life) {#eol}
