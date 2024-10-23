@@ -3,7 +3,7 @@ title: Aktuella versionsinformation för Adobe Analytics
 description: Visa den aktuella versionsinformationen för Adobe Analytics
 feature: Release Notes
 exl-id: 97d16d5c-a8b3-48f3-8acb-96033cc691dc
-source-git-commit: c8d38d67590c0422ed898d20ffa788b5fd34041c
+source-git-commit: b8eec77d1ff626306573f91efa8b3a747ca102f1
 workflow-type: tm+mt
 source-wordcount: '718'
 ht-degree: 1%
@@ -21,7 +21,7 @@ Versionsinformationen omfattar frisläppningsperioden 16 oktober 2024 till slute
 | Funktion | Beskrivning | [Startar](releases.md) | [Allmän tillgänglighet](releases.md) |
 | ----------- | ---------- | ------- | ---- |
 | **Nytt Report Builder för Adobe Analytics** | Det nya Report Builder-programmet ger Adobe Analytics en större uppdatering, inklusive bättre prestanda, smidigt användargränssnitt, 2.0-API-stöd och stöd för Microsoft Excel i Mac, Windows och webbläsare. Det här programmet kan användas tillsammans med det äldre programmet, men inte i samma fil. Det finns en uppgraderingsfunktion för att uppgradera äldre arbetsböcker till det nya programmet. [Läs mer](https://experienceleague.adobe.com/en/docs/analytics/analyze/report-builder/report-buider-overview) |  | 16 oktober 2024 |
-| **JSON-export för migrering av taggimplementering till Web SDK-taggar** | Den här uppdateringen av tillägget Analytics-taggar är relaterad till migrering till Web SDK. Du kan använda den här uppdateringen av Adobe Analytics-tillägget som en del av arbetsflödet för att återskapa dina tilläggskonfigurationer med Web SDK-tillägget. I Adobe Analytics-taggtillägget kan du visa inställningar för eVars, props och händelser som JSON, som kan exporteras för redigering och inkluderas i Web SDK-tillägget. |  | 23 oktober 2024 |
+| **JSON-export för migrering av taggimplementering till Web SDK-taggar** | Den här uppdateringen av tillägget Analytics-taggar är relaterad till migrering till Web SDK. Du kan använda den här uppdateringen av Adobe Analytics-tillägget som en del av arbetsflödet för att återskapa dina tilläggskonfigurationer med Web SDK-tillägget. I Adobe Analytics-taggtillägget kan du visa inställningar för eVars, props och händelser som JSON, som kan exporteras för redigering och inkluderas i Web SDK-tillägget. |  | 31 oktober 2024 |
 
 ## Korrigeringar i Adobe Analytics
 
