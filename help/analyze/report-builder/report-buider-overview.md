@@ -5,7 +5,7 @@ role: User
 feature: Report Builder
 type: Documentation
 solution: Analytics
-source-git-commit: 04d663559aa82f93eb59c787f6110bdfd3448099
+source-git-commit: 7e8a25381f2eadafc5dc22a0991060ea475b5d43
 workflow-type: tm+mt
 source-wordcount: '561'
 ht-degree: 1%
@@ -75,4 +75,4 @@ När funktionen för äldre Report Builder jämförs med det nya tillägget Repo
 
 >[!VIDEO](https://video.tv.adobe.com/v/337569/?quality=12&learn=on)
 
-Du kan hämta Report Builder från [Microsoft Store](https://www.microsoft.com/en-us/store/apps/windows).
+Du kan hämta Report Builder från [Microsoft Store](https://appsource.microsoft.com/en-us/product/office/WA200003101?tab=Overview).

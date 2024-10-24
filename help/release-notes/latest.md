@@ -3,9 +3,9 @@ title: Aktuella versionsinformation för Adobe Analytics
 description: Visa den aktuella versionsinformationen för Adobe Analytics
 feature: Release Notes
 exl-id: 97d16d5c-a8b3-48f3-8acb-96033cc691dc
-source-git-commit: b8eec77d1ff626306573f91efa8b3a747ca102f1
+source-git-commit: 04a6b5ac6e60f1cc2d1579306581a1025eb83230
 workflow-type: tm+mt
-source-wordcount: '718'
+source-wordcount: '767'
 ht-degree: 1%
 
 ---
@@ -22,6 +22,7 @@ Versionsinformationen omfattar frisläppningsperioden 16 oktober 2024 till slute
 | ----------- | ---------- | ------- | ---- |
 | **Nytt Report Builder för Adobe Analytics** | Det nya Report Builder-programmet ger Adobe Analytics en större uppdatering, inklusive bättre prestanda, smidigt användargränssnitt, 2.0-API-stöd och stöd för Microsoft Excel i Mac, Windows och webbläsare. Det här programmet kan användas tillsammans med det äldre programmet, men inte i samma fil. Det finns en uppgraderingsfunktion för att uppgradera äldre arbetsböcker till det nya programmet. [Läs mer](https://experienceleague.adobe.com/en/docs/analytics/analyze/report-builder/report-buider-overview) |  | 16 oktober 2024 |
 | **JSON-export för migrering av taggimplementering till Web SDK-taggar** | Den här uppdateringen av tillägget Analytics-taggar är relaterad till migrering till Web SDK. Du kan använda den här uppdateringen av Adobe Analytics-tillägget som en del av arbetsflödet för att återskapa dina tilläggskonfigurationer med Web SDK-tillägget. I Adobe Analytics-taggtillägget kan du visa inställningar för eVars, props och händelser som JSON, som kan exporteras för redigering och inkluderas i Web SDK-tillägget. |  | 31 oktober 2024 |
+| **Ny information om begärandefaktorer i Analysis Workspace Performance** | Det finns nu ett nytt avsnitt,&quot;Begärandefaktorer&quot;, som är tillgängligt när du analyserar prestanda i Analysis Workspace. Mer information om hur begäranden behandlas och de olika faktorer som påverkar bearbetningstiderna finns i&quot;Begärandefaktorer&quot; i [Optimera Analysis Workspace-prestanda](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/workspace-faq/optimizing-performance). |  | 1 oktober 2024 |
 
 ## Korrigeringar i Adobe Analytics
 
