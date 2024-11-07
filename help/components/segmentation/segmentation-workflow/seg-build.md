@@ -3,7 +3,7 @@ description: I Segment Builder finns en arbetsyta där du kan dra och släppa me
 title: Skapa segment
 feature: Segmentation
 exl-id: 2107f301-4137-4e97-9aa7-07824b842e16
-source-git-commit: f41144d5889d03441f06806256ec79aa25d242cf
+source-git-commit: aac5421b658cf06b20ca5a3d22f07ef441283753
 workflow-type: tm+mt
 source-wordcount: '1872'
 ht-degree: 1%
@@ -18,7 +18,7 @@ Det finns flera sätt att komma åt segmentbyggaren:
 
 * **Analytics Top navigation**: Click **[!UICONTROL Analytics]** > **[!UICONTROL Components]** > **[!UICONTROL Segments]**.
 * **[!UICONTROL Analysis Workspace]**: Klicka på **[!UICONTROL Analytics]** > **[!UICONTROL Workspace]**, öppna ett projekt och klicka på **[!UICONTROL + New]** > **[!UICONTROL Create Segment]**.
-* **[!UICONTROL Report Builder]**: [Lägg till eller redigera segment i Report Builder](https://experienceleague.adobe.com/docs/analytics/analyze/report-builder/data-requests/segmentation.html).
+* **[!UICONTROL Report Builder]**: [Lägg till eller redigera segment i Report Builder](https://experienceleague.adobe.com/en/docs/analytics/analyze/report-builder/work-with-segments).
 
 ## Builder-villkor {#section_F61C4268A5974C788629399ADE1E6E7C}
 
@@ -30,7 +30,7 @@ Du kan lägga till regeldefinitioner och behållare för att definiera dina segm
 1. **[!UICONTROL Description]**: Ange en beskrivning för segmentet.
 1. **[!UICONTROL Tags]**: [Tagga det segment](/help/components/segmentation/segmentation-workflow/seg-workflow.md) som du skapar genom att välja från en lista med befintliga taggar eller skapa en ny tagg.
 1. **[!UICONTROL Definitions]**: Det är här du [skapar och konfigurerar segment](/help/components/segmentation/segmentation-workflow/seg-workflow.md), lägger till regler samt kapslar och sekvensbehållare.
-1. **[!UICONTROL Show]**: (Översta behållarväljare.) Gör att du kan välja den översta [behållaren](/help/components/segmentation/seg-overview.md) ( [!UICONTROL Visitor], [!UICONTROL Visit], [!UICONTROL Hit]). Standardbehållaren på den översta nivån är Träff-behållaren.
+1. **[!UICONTROL Show]**: (Översta behållarväljare.) Gör att du kan välja den översta [ behållaren ](/help/components/segmentation/seg-overview.md) ( [!UICONTROL Visitor], [!UICONTROL Visit], [!UICONTROL Hit]). Standardbehållaren på den översta nivån är Träff-behållaren.
 1. **[!UICONTROL Options]**: (kugghjulsikon)
 
    * **[!UICONTROL + Add container]**: Gör att du kan lägga till en ny behållare (under behållaren på den översta nivån) i segmentdefinitionen.

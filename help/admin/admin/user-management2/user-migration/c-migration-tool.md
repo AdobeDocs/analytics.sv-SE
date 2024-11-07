@@ -4,7 +4,7 @@ title: Användarmigrering av analyser till Admin Console
 feature: Admin Tools
 exl-id: f4bc0e92-af53-40db-8138-44d29e4b25fe
 role: Admin
-source-git-commit: 75ae77c1da1b578639609888e794e13d965ef669
+source-git-commit: aac5421b658cf06b20ca5a3d22f07ef441283753
 workflow-type: tm+mt
 source-wordcount: '3078'
 ht-degree: 0%
@@ -76,7 +76,7 @@ Svar på frågor som du kan ha innan migreringen.
   </tr> 
   <tr> 
    <td colname="col1"> <p>Uppdatera Report Builder </p> </td> 
-   <td colname="col2"> <p> <p>Viktigt: Uppdatera din installation av <a href="https://experienceleague.adobe.com/docs/analytics/analyze/report-builder/report-builder-setup/t-install-arb.html"> Report Builder</a> till den senaste versionen. </p> </p> </td> 
+   <td colname="col2"> <p> <p>Viktigt: Uppdatera din installation av <a href="https://experienceleague.adobe.com/en/docs/analytics/analyze/report-builder/report-builder-setup"> Report Builder</a> till den senaste versionen. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>När börjar migreringen? </p> </td> 
@@ -248,7 +248,7 @@ Viktig information om migreringsprocessen och hur den påverkar den aktuella anv
   </tr> 
   <tr> 
    <td colname="col1"> <p>Utgångsdatum för konto </p> </td> 
-   <td colname="col2"> <p> Du kan ange ett kontots förfallodatum manuellt i Analytics i Admin Tools. När förfallodatumet är uppfyllt kommer användaren inte att kunna komma åt Analytics, utan själva Experience Cloud-användarkontot (t.ex. Adobe ID, Enterprise ID, Federated ID) går inte ut. De kan fortfarande logga in på Experience Cloud, de kommer bara inte att kunna klicka in i Analytics. </p> </td> 
+   <td colname="col2"> <p> Du kan ange ett kontots förfallodatum manuellt i Analytics i Admin Tools. När förfallodatumet är uppfyllt kan användaren inte komma åt Analytics, men det faktiska användarkontot i Experience Cloud (t.ex. Adobe ID, Enterprise ID, Federated ID) går inte ut. De kan fortfarande logga in på Experience Cloud, de kommer bara inte att kunna klicka in i Analytics. </p> </td> 
   </tr> 
  </tbody> 
 </table>

@@ -5,7 +5,7 @@ uuid: eb39b4a5-fb6f-476d-9383-e5323afcc51d
 feature: Report Builder
 role: User, Admin
 exl-id: 1d46b77c-1649-4bde-a7d6-0e57a2eca1c3
-source-git-commit: ae6ffed05f5a33f032d0c7471ccdb1029154ddbd
+source-git-commit: aac5421b658cf06b20ca5a3d22f07ef441283753
 workflow-type: tm+mt
 source-wordcount: '246'
 ht-degree: 0%
@@ -31,4 +31,4 @@ I realtid respekteras behörigheter för användare och grupper. Om du till exem
 
 >[!NOTE]
 >
->[!UICONTROL Real-Time Reports] är inte samma sak som funktionen [Inkludera aktuella data](https://experienceleague.adobe.com/docs/analytics/analyze/report-builder/options.html) (datagenstid) som släpptes tidigare, vilket reducerade fördröjningen för standardrapportering genom att visa data innan den är klar.
+>[!UICONTROL Real-Time Reports] är inte samma sak som funktionen [Inkludera aktuella data](https://experienceleague.adobe.com/docs/analytics/analyze/legacy-report-builder/options.html) (datagenstid) som släpptes tidigare, vilket reducerade fördröjningen för standardrapportering genom att visa data innan den är klar.

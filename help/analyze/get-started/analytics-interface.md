@@ -3,7 +3,7 @@ description: Allmän översiktsinformation om Adobe Analytics, inklusive informa
 title: Förstå analysgränssnittet
 feature: Analytics Basics
 exl-id: 61ae6aa6-96e4-4794-8ce3-0d6e0ec47e0a
-source-git-commit: 815e50e30fa6a0bce1bf78f33843070f96f52de8
+source-git-commit: aac5421b658cf06b20ca5a3d22f07ef441283753
 workflow-type: tm+mt
 source-wordcount: '2060'
 ht-degree: 5%
@@ -49,7 +49,7 @@ Fliken [!UICONTROL Components] innehåller funktioner som hjälper dig att finju
    | Beräknade mått | Beräknade och avancerade beräknade (eller härledda) mått är anpassade mått som du kan skapa utifrån befintliga mätvärden.  Med dem kan marknadsförare, produktchefer och analytiker ställa frågor om data utan att behöva ändra implementeringen av Analytics. | [Beräknade och avancerade beräknade mått](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/cm-overview.html) |
    | Datumintervall | Analysis Workspace innehåller en lista med standarddatumintervall som användare kan använda när de skapar analyser. Dessutom kan du skapa anpassade datumintervall och göra dem tillgängliga för användare i Analysis Workspace. | [Skapa anpassade datumintervall](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/components/calendar-date-ranges/custom-date-ranges.html) <!-- should create an article in the Components Guide for managing/creating date ranges. This article in the Tools Guide needs updating. --> |
    | Virtuella rapportsviter | Virtuella rapportsviter segmenterar era Adobe Analytics-data så att ni kan styra åtkomsten till varje segment. | [Översikt över Virtual Report Suites](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-about.html) |
-   | Larm | Med larm får du mer detaljerad kontroll över varningar och integrerar avvikelseidentifiering med varningssystemet. | [Aviseringar - översikt](https://experienceleague.adobe.com/docs/analytics/components/alerts/intellligent-alerts.html) |
+   | Aviseringar | Med larm får du mer detaljerad kontroll över varningar och integrerar avvikelseidentifiering med varningssystemet. | [Aviseringar - översikt](https://experienceleague.adobe.com/docs/analytics/components/alerts/intellligent-alerts.html) |
    | Anteckningar | Anteckningar i Workspace gör att ni effektivt kan kommunicera kontextuella datanunkter och insikter till er organisation. De gör att du kan koppla kalenderhändelser till specifika dimensioner och mätvärden. | [Hantera anteckningar](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/components/annotations/manage-annotations.html) |
    | Klassificeringsuppsättningar | Klassificeringsuppsättningar har ett enda gränssnitt för att hantera klassificeringar och regler. <p>En klassificering är ett sätt att kategorisera Analytics-variabeldata och sedan visa data på olika sätt när du genererar rapporter. Du upprättar en relation mellan ett variabelvärde och metadata som är relaterade till det värdet. Klassificeringar kan användas för de flesta anpassade dimensioner, som spårningskod, props och eVars.</p> | [Översikt över klassificeringsuppsättningar](https://experienceleague.adobe.com/docs/analytics/components/classifications/sets/overview.html) |
    | Platser | För att kunna importera Adobe Analytics-klassificeringsdata från ett molnmål måste du först lägga till och konfigurera platsen där du vill att klassificeringsdata ska samlas in. Du kan skapa, redigera och ta bort platser. | [Platshanteraren](https://experienceleague.adobe.com/docs/analytics/components/locations/locations-manager.html) |
@@ -79,7 +79,7 @@ Fliken [!UICONTROL Components] innehåller funktioner som hjälper dig att finju
    | Sök och marknadsför | Den här funktionen stöds inte längre. |  |
    | Mobiltjänster | Den här funktionen stöds inte längre. |  |
    | Kontrollpaneler för analyser (mobilapp) | Appen Adobe Analytics dashboards ger dig alltid insikter från Adobe Analytics. Via appen kan användarna visa intuitiva styrkort som du skapar med hjälp av Adobe Analytics datorgränssnitt. | Adobe Analytics-appen för kontrollpaneler i iOS App Store eller Google Play Store |
-   | Report Builder | Adobe Report Builder är ett tillägg för Microsoft Excel. Här kan du skapa anpassade förfrågningar från Adobe Analytics-data, som du kan infoga i dina Excel-kalkylblad. Begäranden kan referera till celler dynamiskt i kalkylbladet, och du kan uppdatera och anpassa hur Report Builder visar data. | [Vad är Report Builder?](https://experienceleague.adobe.com/docs/analytics/analyze/report-builder/home.html) |
+   | Report Builder | Adobe Report Builder är ett tillägg för Microsoft Excel. Här kan du skapa anpassade förfrågningar från Adobe Analytics-data, som du kan infoga i dina Excel-kalkylblad. Begäranden kan referera till celler dynamiskt i kalkylbladet, och du kan uppdatera och anpassa hur Report Builder visar data. | [Vad är Report Builder?](https://experienceleague.adobe.com/en/docs/analytics/analyze/report-builder/report-buider-overview) |
 
    {style="table-layout:auto"}
 
