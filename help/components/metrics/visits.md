@@ -3,9 +3,9 @@ title: Besök
 description: En sekvens med sidvyer i ett möte.
 feature: Metrics
 exl-id: 4f78f2b5-f958-44fe-876a-83f07980beec
-source-git-commit: a3a23e1d13bc10305a8cb991b73c2873a58baf63
+source-git-commit: 59582c9fa910c789b44798eae21566aa6fd99124
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '692'
 ht-degree: 0%
 
 ---
@@ -45,8 +45,8 @@ Om en besökare utför någon av dessa åtgärder börjar ett nytt besök **inte
 
 Du kan ändra definitionen för ett besök till en annan tidpunkt än 30 minuter.
 
-* För [virtuella rapportsviter](../vrs/vrs-about.md) kan du ändra tidsgränsen för besök med hjälp av listrutan [!UICONTROL Visit timeout]. Du kan ändra tidsgränsen för besök till ett rimligt värde.
-* Om du vill ha en standardrapport kontaktar du Kundtjänst för att begära att besökslängden ska förkortas för en viss rapportserie. Du kan bara korta ned längden för standardrapportsviter med 30 minuter.
+* För [virtuella rapportsviter](../vrs/vrs-about.md) kan du ändra tidsgränsen för besök (tiden mellan träffarna som startar ett nytt besök) med hjälp av listrutan [!UICONTROL Visit timeout]. Du kan ändra tidsgränsen för besök till ett rimligt värde.
+* Kontakta kundtjänst om du vill begära att tidsgränsen för ett besök (tiden mellan träffarna som startar ett nytt besök) ska förkortas för en viss rapportserie. Besök tidsgränsen för standardrapportsviter så att du bara kan korta ned den i 30 minuter.
 
 ## Besök som sträcker sig över en datumgräns
 
