@@ -4,7 +4,7 @@ title: Skapa och dela mobilstyrkort
 feature: Analytics Dashboards
 role: User, Admin
 exl-id: ebe6d83d-bbae-43de-bf85-35258bf6c1d0
-source-git-commit: f2e040cfc6dcb67fbb1b995e38eede78943c66f7
+source-git-commit: 81fd658b55e6b1674d6ebd2b17b6c432591a1a08
 workflow-type: tm+mt
 source-wordcount: '2428'
 ht-degree: 0%
@@ -291,7 +291,6 @@ Om du vill flytta mellan plattan och bildrutorna trycker du på navigeringsfält
 ![Skapa en dataartikel](assets/data-story-nav.png){width="25%"}
 
 Du kan också navigera fram och tillbaka genom att använda pilarna på tangentbordet eller genom att markera en komponent och hålla den till vänster eller höger på skärmen för att rulla.
-
 
 ## Styrkort för förhandsgranskning {#preview}
 

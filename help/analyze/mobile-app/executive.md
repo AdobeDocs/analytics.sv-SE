@@ -4,9 +4,9 @@ title: Chefshandbok för Adobe Analytics Dashboards
 feature: Analytics Dashboards
 role: User, Admin
 exl-id: a72df772-edd0-45d7-bb64-80fbdaa12f6b
-source-git-commit: daa9e22468430434b23f515d6dd22fee4228d728
+source-git-commit: e07af0882cf4dcf6675f28a0007defe617e7ae2e
 workflow-type: tm+mt
-source-wordcount: '1238'
+source-wordcount: '1240'
 ht-degree: 0%
 
 ---
@@ -62,7 +62,7 @@ Så här använder du kontrollpaneler:
 
 1. Tryck på styrkortet som du vill visa.
 
-   Om du har tillgång till mer än en organisation under en inloggning är alla styrkort från din organisation tillgängliga i styrkortslistan.
+   Om du har tillgång till mer än en organisation under en inloggning visar hemskärmen alla styrkort från alla tillgängliga företag på ett ställe.
 
    Du kan sortera styrkortslistan efter styrkortets titel, organisationsnamn eller senast visade. Du kan till och med söka efter ett visst styrkort.
 
