@@ -4,9 +4,9 @@ keywords: segmentering;segment
 title: Segmentbehållare
 feature: Segmentation
 exl-id: f30d525b-32b7-47d5-b92d-24bf86d8a471
-source-git-commit: 5a9ba3f9749338c181fbcdc311bd08a92144e698
+source-git-commit: 6a36155dcd1fd06ea052783a8fd5714cd10e16ec
 workflow-type: tm+mt
-source-wordcount: '3514'
+source-wordcount: '3551'
 ht-degree: 1%
 
 ---
@@ -96,6 +96,10 @@ När du skapar segmentbehållare i andra behållare skapar du i princip ett segm
 1. Avgör vilka data som ska inkluderas med den yttersta behållaren. Alla data som inte matchar den här yttre regeln tas bort i den segmenterade rapporten.
 1. Använd den kapslade regeln på återstående data. Den kapslade regeln gäller INTE för träffar som den första regeln genererar.
 1. Upprepa tills alla kapslade behållarregler har beräknats. Resterande data inkluderas sedan i den resulterande rapporten.
+
+>[!NOTE]
+>
+>När du kapslar in ett segment i ett segment (du t.ex. drar ett segment från panelen Komponenter till segmentdefinitionen) skapas en behållare med en kopia (inte en referens) av segmentlinjen som dras.
 
 Du kan använda kapsling mellan behållare och mellan regler i en behållare. Det här är vad du kan kapsla i varje behållare:
 
