@@ -3,9 +3,9 @@ description: Använd varningar i Analysis Workspace.
 title: Översikt över Alert Builder
 feature: Alerts
 exl-id: 82e51357-4a32-4db1-bc56-95a72dbaa1be
-source-git-commit: 815e50e30fa6a0bce1bf78f33843070f96f52de8
+source-git-commit: a71c3c6911ed2c2eb9202c8f149a44d6364017b8
 workflow-type: tm+mt
-source-wordcount: '622'
+source-wordcount: '623'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ Så här skapar du en varning:
    |---------|----------|
    | [!UICONTROL **Titel**] | Ange ett namn för aviseringen. Varningsnamnet kan innehålla rapportens namn eller måttets tröskelvärde. |
    | [!UICONTROL **Beskrivning (valfritt)**] | Ange en beskrivning för aviseringen. |
-   | [!UICONTROL **Tidsgranularitet**] | Välj hur ofta du vill att måttet ska kontrolleras: Varje dag, Varje vecka eller Varje månad.<p><b>Obs!</b>För datavyer med en anpassad kalender har vi inte stöd för månatlig granularitet i varningsverktyget.<!--true?--></p> |
+   | [!UICONTROL **Tidsgranularitet**] | Välj hur ofta du vill att måttet ska kontrolleras: varje timme, varje dag, varje vecka eller varje månad.<p><b>Obs!</b>För datavyer med en anpassad kalender har vi inte stöd för månatlig granularitet i varningsverktyget.<!--true?--></p> |
    | [!UICONTROL **Mottagare**] | Ange var aviseringen kan skickas. En avisering kan skickas till en Analytics-användare, en Analytics-grupp, en raw-e-postadress eller till ett telefonnummer.<p><b>Viktigt!</b>Telefonnumret måste föregås av ett plustecken och en [landskod](https://countrycode.org/).</p><p>Det e-postmeddelande som en användare får när en varning har utlösts ser ut ungefär så här:</p><p>![](assets/alerts-email.PNG)</p> |
    | [!UICONTROL **Förfallodatum**] | Ange det datum och den tidpunkt då du vill att aviseringen ska förfalla. |
    | [!UICONTROL **Skicka en avisering när**] | [!UICONTROL **Någon av dessa mätvärden utlöser**]: Dra och släpp mätvärden (inklusive beräknade värden) här för att skapa utlösare för aviseringen.<p>Ett **&quot;inkompatibla komponenter&quot;**-meddelande visas om inte alla mått, dimensioner eller segment i aviseringen är kompatibla med den datavyn som är vald.</p><p>Fastställ tröskelvärdet som måttet måste överskrida innan en avisering anges. Du kan ange ett tröskelvärde och sedan något av följande villkor:</p><ul><li>avvikelse finns</li><li>avvikelsen är större än förväntat</li><li>avvikelsen är under förväntad</li><li>är över eller lika med</li><li>är under eller lika med</li><li>ändras med</li><li>Du kan ange ett tröskelvärde på 90 %, 95 %, 99 %, 99,75 % och 99,9 %.</li></ul><p>[!UICONTROL **Med alla dessa filter**]: Dra och släpp segment eller dimensioner för att lägga till filter. Om du till exempel lägger till segmentet&quot;Endast mobila enheter&quot; innebär det att regeln bara aktiveras för mobila enheter. Du kan lägga till ytterligare filter med en AND-programsats. Du kan lägga till OCH- eller OR-regler genom att klicka på kugghjulsikonen.</p><p>Se [Varningar - användningsfall](/help/components/c-alerts/alerts-use-cases.md) använder till exempel fall.</p> |
