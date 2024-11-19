@@ -5,9 +5,10 @@ role: User
 feature: Report Builder
 type: Documentation
 solution: Analytics
-source-git-commit: eedabc6295f9b918e1e00b93993680e676c216c3
+exl-id: 63e169b3-7e13-405e-83a4-17f2a9917ed2
+source-git-commit: 0e275dafb9d6562bf10fba1e0ecd9930e0e97f48
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '627'
 ht-degree: 0%
 
 ---
@@ -26,8 +27,6 @@ Klicka på **Hantera** om du vill visa en lista över alla datablock i en arbets
 ![Hantera-alternativet om du vill visa en lista över alla datablock.](./assets/image53.png)
 
 Dataslockhanteraren visar alla datablock som finns i en arbetsbok. 
-
-![Listan med alla datablock i en arbetsbok.](./assets/image52.png)
 
 ## Sortera listan över datablock
 

@@ -5,9 +5,10 @@ role: User
 feature: Report Builder
 type: Documentation
 solution: Analytics
-source-git-commit: a8cb45c11089a0b69373ef3cf2a49687cd20da09
+exl-id: fd3ff12a-14de-46f6-ab89-a0152fb11b0d
+source-git-commit: c35d5bdc29ce80f0c9357339b04fd2d656cfbe52
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '634'
 ht-degree: 0%
 
 ---
@@ -28,7 +29,9 @@ Konfigurera de inledande datablocksparametrarna för datablockplatsen, rapportsv
 
    Platsalternativet för datablocket definierar den plats i kalkylbladet där rapportbyggaren lägger till data i kalkylbladet.
 
-   Om du vill ange platsen för datablocket markerar du en enskild cell i kalkylbladet eller anger en celladress som a3, \\\$a3, a\\\$3 eller sheet1!a2. Cellen som anges markerar det övre vänstra hörnet i datablocket när data hämtas.
+   Om du vill ange platsen för datablocket markerar du en enskild cell i kalkylbladet och klickar på ikonen bredvid **[!UICONTROL Data block location]**:
+
+   Du kan även ange en celladress som a3, \\\$a3, a\\$3 eller sheet1!a2. Cellen som anges markerar det övre vänstra hörnet i datablocket när data hämtas.
 
 1. Välj en **rapportserie**.
 
@@ -40,7 +43,7 @@ Konfigurera de inledande datablocksparametrarna för datablockplatsen, rapportsv
 
 1. Klicka på **[!UICONTROL Next]**.
 
-   ![Skärmbild som visar datumintervallalternativet och den aktiva knappen Nästa.](./assets/choose_date_data_view3.png)
+   ![Skärmbild som visar datumintervallalternativet och den aktiva knappen Nästa.](./assets/choose_date_report_suite.png)
 
    När du har konfigurerat datablocket kan du välja mått, mätvärden och segment för att skapa datablocket. Flikarna Dimensioner, Metrisk och Filter visas ovanför rutan Tabellverktyg.
 
@@ -48,7 +51,7 @@ Konfigurera de inledande datablocksparametrarna för datablockplatsen, rapportsv
 
 Om du vill skapa datablocket väljer du rapportkomponenter och anpassar sedan layouten.
 
-1. Lägg till Dimensioner, mätvärden och filter.
+1. Lägg till Dimensioner, mått och segment.
 
    Bläddra i komponentlistorna eller använd fältet **[!UICONTROL Search]** för att hitta komponenter. Dra och släpp komponenter till tabellrutan eller dubbelklicka på ett komponentnamn i listan för att automatiskt lägga till komponenten i tabellrutan.
 
@@ -56,7 +59,7 @@ Om du vill skapa datablocket väljer du rapportkomponenter och anpassar sedan la
 
    - Dimension-komponenter läggs till i avsnittet Rad eller i kolumnavsnittet om du redan har en dimension i kolumnerna.
    - Datumkomponenter läggs till i avsnittet Kolumn.
-   - Filterkomponenter läggs till i avsnittet Filter.
+   - Segmentkomponenter läggs till i segmentavsnittet.
 
    **Startdatum som Dimension**
 
@@ -91,8 +94,6 @@ Om du vill skapa datablocket väljer du rapportkomponenter och anpassar sedan la
 1. Klicka på **[!UICONTROL Finish]**.
 
    Ett bearbetningsmeddelande visas när analysdata hämtas.
-
-   ![Bearbetningsmeddelandet.](./assets/image11.png)
 
    Report Builder hämtar data och visar det ifyllda datablocket i kalkylbladet.
 
