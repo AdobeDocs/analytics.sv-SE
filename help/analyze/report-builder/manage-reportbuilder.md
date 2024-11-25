@@ -6,9 +6,9 @@ feature: Report Builder
 type: Documentation
 solution: Analytics
 exl-id: 63e169b3-7e13-405e-83a4-17f2a9917ed2
-source-git-commit: 3d1a26b960988020391e75b3d01af0f9b806d33b
+source-git-commit: 8c863329e385c7e3fe15d85c07e1a1d541296acb
 workflow-type: tm+mt
-source-wordcount: '627'
+source-wordcount: '636'
 ht-degree: 0%
 
 ---
@@ -76,7 +76,8 @@ En varningsikon visas för ett datablock som inte har uppdaterats: <img src="./a
 
 ## Ta bort ett datablock
 
-Klicka på papperskorgsikonen om du vill ta bort ett markerat datablock.
+1. Markera ett datablock i Dataslockshanteraren.
+1. Klicka på papperskorgsikonen för att ta bort det markerade datablocket.
 
 ## Gruppera datablock
 
