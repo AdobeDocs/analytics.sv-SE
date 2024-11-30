@@ -5,58 +5,101 @@ feature: Analysis Workspace
 role: User, Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 6da9326feec005489e06bb7124b1ff3722830308
+exl-id: 905aa2eb-1963-4227-b18c-33e3a4c66111
+source-git-commit: 3eb996179b359bc77e04cdc8a469b79a9b2cc621
 workflow-type: tm+mt
-source-wordcount: '353'
+source-wordcount: '540'
 ht-degree: 0%
 
 ---
 
-# Skapa och hantera företagsmallar
+# Skapa och hantera mallar
 
-Du kan skapa anpassade rapporter och spara dem så att andra på ditt inloggningsföretag kan använda dem. Företagsmallar är tillgängliga att välja mellan när du skapar ett projekt, vilket beskrivs i [Skapa ett projekt från ett tomt projekt eller en rapport](/help/analyze/analysis-workspace/build-workspace-project/create-projects.md#create-a-project-from-a-blank-project-or-a-report) i artikeln [Skapa projekt i Analysis Workspace](/help/analyze/analysis-workspace/build-workspace-project/create-projects.md).
+Administratörer kan skapa mallar och spara dem så att andra kan använda dem i sina inloggningsföretag.
 
-## Skapa en anpassad företagsmall
+Personer i inloggningsföretaget kan använda dessa företagsmallar enligt beskrivningen i [Använd mallar](/help/analyze/analysis-workspace/templates/use-templates.md.
 
-Så här skapar du en ny företagsmall:
+## Skapa en mall
 
-1. Bygg ett projekt i Analysis Workspace till önskat tillstånd.
-1. Välj [!UICONTROL **Projekt**] > **[!UICONTROL Save as company template...]**.
+Så här skapar du en ny mall som kan användas av personer i ditt inloggningsföretag:
 
-   ![Företagsrapport](assets/company-report.png)
+1. I Analysis Workspace skapar du ett projekt i det läge du vill.
 
-1. Uppdatera rapportens namn, lägg till en beskrivning och lägg till taggar och välj sedan [!UICONTROL **Spara som företagsmall**].
+1. Välj [!UICONTROL **Projekt**] > **[!UICONTROL Save as template…]**.
 
-   Mallen läggs till i listan Företagsmallar i modal Create Project och är tillgänglig för användare i ditt inloggningsföretag.
+   ![Företagsmall](assets/company-template-save.png)
 
-   Mer information om hur användare kan skapa ett projekt baserat på en företagsmall finns i&quot;Skapa ett projekt från ett tomt projekt eller en rapport&quot; i [Skapa projekt](/help/analyze/analysis-workspace/build-workspace-project/create-projects.md).
+1. Ange följande information i dialogrutan [!UICONTROL Save as template]:
 
-## Hantera företagsmallar
+   | Fält | Beskrivning |
+   |---------|----------|
+   | **[!UICONTROL Name]** | Ange ett beskrivande namn för mallen. |
+   | **[!UICONTROL Description]** | Ange en kort beskrivning av mallen som beskriver dess avsedda användning. |
+   | **[!UICONTROL Why use this template]** | Ge en kort förklaring för att informera personer i organisationen om hur den här mallen kan användas. |
+   | **[!UICONTROL Channels]** | Välj de kanaler som gäller för den här mallen. Du kan välja flera kanaler: **[!UICONTROL Web]**, **[!UICONTROL Mobile]**, **[!UICONTROL Cross-channel]**, **[!UICONTROL Call center]** och **[!UICONTROL In-store]**.<p>De val du väljer avgör var mallen visas och vilka filter som gäller för användare som använder den från sidan Organisationsmallar.</p> |
+   | **[!UICONTROL Use cases]** | Välj de användningsfall som gäller för den här mallen. Du kan välja flera användningsfall: **[!UICONTROL Engagement]**, **[!UICONTROL Conversion]**, **[!UICONTROL Audience]** och **[!UICONTROL Acquisition]**. <p>De val du väljer avgör var mallen visas och vilka filter som gäller för användare som använder den från sidan Organisationsmallar.</p> |
+   | **[!UICONTROL Tags]** | Ange de taggar som du vill lägga till i mallen. Användarna kan filtrera listan med mallar efter de taggar du lägger till. |
 
-Administratörer kan filtrera projektlistan för att visa och hantera företagsmallar. Fastnålade objekt är fortfarande fästa och följs av en lista med företagsmallar som identifieras av rapportikonen ![rapportikonen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FileTemplate_18_N.svg). I den här vyn kan du ta bort, byta namn på, tagga eller godkänna en eller flera rapporter.
+1. Välj [!UICONTROL **Spara som mall**].
 
-Så här visar och hanterar du företagsmallar:
+Mer information om hur användare kan skapa ett projekt baserat på en mall finns i [Skapa ett projekt baserat på en mall](/help/analyze/analysis-workspace/templates/use-templates.md#create-a-project-based-on-a-template) i [Använda mallar](/help/analyze/analysis-workspace/templates/use-templates.md).
+
+## Redigera eller ta bort mallar
+
+Administratörer kan redigera eller ta bort företagsmallar.
+
+1. I Analysis Workspace väljer du fliken [!UICONTROL **Workspace**] och sedan **[!UICONTROL _login_company_name _-mallar]**.
+
+1. Om du visar mallar i en kolumnvy ![kolumnvisningsikon](assets/column-view-icon.png):
+
+   1. Gå till mallen som du vill redigera eller ta bort och välj informationsikonen bredvid mallnamnet.
+
+      ![Information om företagsmall](assets/company-template-info.png)
+
+   1. Välj **[!UICONTROL Preview]**.
+
+   1. Välj ikonen Mer och välj sedan **[!UICONTROL Edit]** eller **[!UICONTROL Delete]**.
+
+      ![Redigera eller ta bort mall](assets/company-template-edit-delete.png)
+
+1. Om du visar mallar i en kortvy ![visas ikonen för kortvyn](assets/card-view-icon.png):
+
+   1. Leta reda på mallen som du vill redigera eller ta bort.
+
+      ![Vyn Företagsmallkort](assets/company-template-cards.png)
+
+   1. Välj ikonen Mer och välj sedan **[!UICONTROL Edit]** eller **[!UICONTROL Delete]**.
+
+      ![Redigera eller ta bort företagsmallkort](assets/company-template-card-edit-delete.png)
+
+## Byta namn på, tagga eller godkänna mallar
+
+Administratörer kan byta namn på, tagga och godkänna företagsmallar.
+
+1. I Analysis Workspace väljer du fliken [!UICONTROL **Workspace**] och sedan **[!UICONTROL Projects tab]** i den vänstra listen.
+
+1. Markera filterikonen om du vill filtrera listan med projekt.
 
 1. I filterfältet väljer du **ANDRA FILTER** och sedan **Företagsmallar**.
 
    En lista över företagsmallar visas. Alla vanliga projekt visas inte, såvida de inte är fästa.
 
-   ![Visa företagsrapportfilter](assets/company-reports-filter.png)
+   Företagsmallar kan identifieras med hjälp av ![mallikonen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FileTemplate_18_N.svg) som föregår mallnamnet.
 
-   När företagsmallar visas kan administratörer ta bort, byta namn på, lägga till en tagg eller godkänna rapporten.
+   ![Visa företagsmallfilter](assets/company-templates-filter.png)
 
-1. Välj en rapport eller flera rapporter i rapportlistan.
+1. Klicka på ikonen **..** bredvid en mall för att visa tillgängliga alternativ.
 
-1. Klicka på ikonen **..** bredvid en rapport för att visa tillgängliga alternativ (Ta bort, Byt namn, Tagga och Godkänn).
+   ![Åtgärder för företagsmallar](assets/company-templates-actions.png)
 
-   ![Företagsrapportåtgärder](assets/company-reports-actions.png)
+1. Välj **[!UICONTROL Rename]**, **[!UICONTROL Tag]** eller **[!UICONTROL Approve]**.
 
-1. Välj ett alternativ (Ta bort, Byt namn, Tagga och Godkänn).
+   Du kan också ta bort en mall eller så kan du ta bort en mall enligt beskrivningen i [Redigera eller ta bort mallar](#edit-or-delete-templates).
 
-1. Om du vill återgå till den vanliga vyn när du är klar avmarkerar du alternativet Företagsmallar igen i filterfältet.
+1. (Valfritt) Om du vill återgå till den vanliga vyn avmarkerar du **[!UICONTROL Company templates]** i filterfältet.
 
-### Ta bort en företagsmall
+## Åtkomst till en företagsmall
 
-Administratörer kan ta bort en rapport med hjälp av listalternativet Företagsmallar (som beskrivs ovan) eller ta bort en rapport från Create project modal.
+Precis som med mallar från Adobe kan användare i organisationen komma åt mallar som administratörer skapar.
 
-![Andra filter](assets/delete-fr-create-project-modal.png)
+Mer information om hur du får åtkomst till en företagsmall finns i [Åtkomst till och kör en mall](/help/analyze/analysis-workspace/templates/use-templates.md#access-and-run-a-template) i [Använd mallar](/help/analyze/analysis-workspace/templates/use-templates.md).

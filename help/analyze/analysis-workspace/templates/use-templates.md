@@ -5,9 +5,10 @@ feature: Analysis Workspace
 role: User, Admin
 hide: true
 hidefromtoc: true
-source-git-commit: e98458a96e9950ffab40876b80a9e799a9182e6a
+exl-id: 9e5d1b35-e2b3-4fa5-af12-67bb913675bc
+source-git-commit: 3eb996179b359bc77e04cdc8a469b79a9b2cc621
 workflow-type: tm+mt
-source-wordcount: '18028'
+source-wordcount: '18027'
 ht-degree: 0%
 
 ---
@@ -34,13 +35,13 @@ Följande information beskriver hur du får åtkomst till och använder mallar f
 
    <!--update screenshot -->
 
-   ![Fliken Rapporter](assets/view-prebuilt-reports.png)
+   ![Fliken Rapporter](assets/view-prebuilt-templates.png)
 
 1. Välj någon av följande flikar i avsnittet [!UICONTROL **Mallar**]:
 
    * **[!UICONTROL Adobe templates]**: Visar alla mallar som tillhandahålls av Adobe.
 
-   * **[!UICONTROL _login_company_name _-mallar]**: Visar alla företagsmallar som har skapats för i din organisation.
+   * **[!UICONTROL _login_company_name _-mallar]**: Visar alla företagsmallar som har skapats för din organisation.
 
      Företagsmallar kan bara skapas av en administratör. Mer information om hur du skapar en företagsmall finns i [Skapa och hantera mallar](/help/analyze/analysis-workspace/reports/create-company-reports.md).
 
