@@ -6,9 +6,9 @@ role: User, Admin
 hide: true
 hidefromtoc: true
 exl-id: 905aa2eb-1963-4227-b18c-33e3a4c66111
-source-git-commit: 3eb996179b359bc77e04cdc8a469b79a9b2cc621
+source-git-commit: 4b124c628d7cbe67807b9a080362a31e68ee923c
 workflow-type: tm+mt
-source-wordcount: '540'
+source-wordcount: '543'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Administratörer kan skapa mallar och spara dem så att andra kan använda dem i sina inloggningsföretag.
 
-Personer i inloggningsföretaget kan använda dessa företagsmallar enligt beskrivningen i [Använd mallar](/help/analyze/analysis-workspace/templates/use-templates.md.
+Personer i inloggningsföretaget kan använda de här företagsmallarna enligt beskrivningen i [Använd mallar](/help/analyze/analysis-workspace/templates/use-templates.md).
 
 ## Skapa en mall
 
@@ -35,7 +35,7 @@ Så här skapar du en ny mall som kan användas av personer i ditt inloggningsf�
    |---------|----------|
    | **[!UICONTROL Name]** | Ange ett beskrivande namn för mallen. |
    | **[!UICONTROL Description]** | Ange en kort beskrivning av mallen som beskriver dess avsedda användning. |
-   | **[!UICONTROL Why use this template]** | Ge en kort förklaring för att informera personer i organisationen om hur den här mallen kan användas. |
+   | **[!UICONTROL Why use this template]** | Ge en kort förklaring för att informera personer i organisationen om hur den här mallen kan användas. Den här förklaringen visas på mallens förhandsgranskningssida. |
    | **[!UICONTROL Channels]** | Välj de kanaler som gäller för den här mallen. Du kan välja flera kanaler: **[!UICONTROL Web]**, **[!UICONTROL Mobile]**, **[!UICONTROL Cross-channel]**, **[!UICONTROL Call center]** och **[!UICONTROL In-store]**.<p>De val du väljer avgör var mallen visas och vilka filter som gäller för användare som använder den från sidan Organisationsmallar.</p> |
    | **[!UICONTROL Use cases]** | Välj de användningsfall som gäller för den här mallen. Du kan välja flera användningsfall: **[!UICONTROL Engagement]**, **[!UICONTROL Conversion]**, **[!UICONTROL Audience]** och **[!UICONTROL Acquisition]**. <p>De val du väljer avgör var mallen visas och vilka filter som gäller för användare som använder den från sidan Organisationsmallar.</p> |
    | **[!UICONTROL Tags]** | Ange de taggar som du vill lägga till i mallen. Användarna kan filtrera listan med mallar efter de taggar du lägger till. |

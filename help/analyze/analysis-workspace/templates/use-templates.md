@@ -6,9 +6,9 @@ role: User, Admin
 hide: true
 hidefromtoc: true
 exl-id: 9e5d1b35-e2b3-4fa5-af12-67bb913675bc
-source-git-commit: 3eb996179b359bc77e04cdc8a469b79a9b2cc621
+source-git-commit: 4b124c628d7cbe67807b9a080362a31e68ee923c
 workflow-type: tm+mt
-source-wordcount: '18027'
+source-wordcount: '18021'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,11 @@ Följande information beskriver hur du får åtkomst till och använder mallar f
 
      Företagsmallar kan bara skapas av en administratör. Mer information om hur du skapar en företagsmall finns i [Skapa och hantera mallar](/help/analyze/analysis-workspace/reports/create-company-reports.md).
 
-1. Välj om du vill visa mallar i en kolumnvy eller i en kortvy genom att antingen markera kolumnvyikonen ![kolumnvy](assets/column-view-icon.png) eller kortvyikonen ![kortvy](assets/card-view-icon.png) .
+1. Använd något av följande alternativ för att ändra hur du visar de tillgängliga mallarna:
+
+   * Välj om du vill visa mallar i en kolumnvy eller i en kortvy genom att antingen markera kolumnvyikonen ![kolumnvy](assets/column-view-icon.png) eller kortvyikonen ![kortvy](assets/card-view-icon.png) .
+
+   * När du använder ikonen för kortvyn ![kortvyn ](assets/card-view-icon.png) kan du välja bland följande sorteringsordning: **[!UICONTROL Most recently used]**, **[!UICONTROL Most popular]**, **[!UICONTROL Alphabetical]**, **[!UICONTROL Categorical]**.
 
 1. I sökfältet börjar du skriva namnet på mallen som du vill söka efter och väljer den sedan i listan med mallar. Du kan också söka i malllistan efter hjälp, eVar och händelsenummer. <!-- still true? -->
 
@@ -58,8 +62,6 @@ Följande information beskriver hur du får åtkomst till och använder mallar f
    >Om du vill navigera på menyn med piltangenterna trycker du på snedstreck (/) och sedan på nedpilen. Tryck på Retur för att läsa in den valda mallen.
 
    En lista över tillgängliga mallar finns i avsnittet [Tillgängliga mallar](#available-reports) nedan.
-
-1. (Valfritt) Visa och använd mallar som innehåller komponenter som inte är tillgängliga i rapportsviten. (Som standard är de enda mallarna som visas de som använder komponenter som är tillgängliga i din rapportserie.) <!--does this apply to AA? -->
 
 ## Skapa ett projekt baserat på en mall {#use-reports}
 
