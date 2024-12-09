@@ -3,9 +3,9 @@ description: Olika rapporter i Adobe Analytics kan visa Ospecificerad, Ingen, An
 title: Ospecificerad, Ingen, Annan och Okänd vid rapportering
 feature: Analytics Basics
 exl-id: 35451239-91f3-400a-981e-8c3fbc0e4185
-source-git-commit: d3d5b01fe17f88d07a748fac814d2161682837c2
+source-git-commit: 0f5890679ea73c1bbea9f5d2939e89c6775c85da
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '524'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Olika rapporter i Adobe Analytics kan visa &quot;Ospecificerad&quot;, &quot;Anna
 &quot;Ospecificerad&quot; är ett vanligt radobjekt i rapporter. Den kallas även&quot;ingen&quot;.
 
 * **En händelse utlöses utan en konverteringsvariabel:** En användare kommer till din webbplats och gör ett köp utan något eVar1-värde. Om du visar order med dimensionen eVar1 finns det inget värde att tilldela ordern till. Därför tilldelas den automatiskt till&quot;Ospecificerad&quot;.
-* **Oklassificerade data i klassificeringsrapporter:** När klassificeringsdata visas returnerar alla värden som inte har associerade data för den aktuella klassificeringen &quot;Ospecificerade&quot;. Du löser det här problemet genom att klassificera det överordnade variabelvärdet.
+* **Oklassificerade data i klassificeringsrapporter:** När klassificeringsdata visas returnerar alla värden som inte har associerade data för den aktuella klassificeringen &quot;Ospecificerade&quot;. Kontrollera att det finns ett klassificeringsvärde som är associerat med varje överordnad dimensionspost för att lösa problemet.
 * **Uppdelningsrapporter där bara en variabel utlöstes:** När du tillämpar en uppdelning på en variabel måste alla instanser av variabeln beaktas. Om den andra variabeln inte kunde ses eller om den bestod från en tidigare träff är dimensionsobjektet &quot;Ospecificerat&quot;.
 * **Träffar som inte är mobila i mobilrapporter:** Alla träffar som inte är mobila i mobilrapporter listas som Ospecificerade (&quot;Inte mobil&quot; i Reports and Analytics).
 
