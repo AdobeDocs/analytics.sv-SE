@@ -3,16 +3,16 @@ title: Aktuella versionsinformation för Adobe Analytics
 description: Visa den aktuella versionsinformationen för Adobe Analytics
 feature: Release Notes
 exl-id: 97d16d5c-a8b3-48f3-8acb-96033cc691dc
-source-git-commit: 04a6b5ac6e60f1cc2d1579306581a1025eb83230
+source-git-commit: 2a766fc06cab81c2b1d4b8a4de2c88dae42bf907
 workflow-type: tm+mt
-source-wordcount: '767'
+source-wordcount: '807'
 ht-degree: 1%
 
 ---
 
 # Aktuell versionsinformation för Adobe Analytics (23 oktober 2024)
 
-**Senast uppdaterad**: 23 oktober 2024
+**Senast uppdaterad**: 9 december 2024
 
 Versionsinformationen omfattar frisläppningsperioden 16 oktober 2024 till slutet av 2024. Adobe Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.md), vilket ger en mer skalbar, fasad metod för driftsättning av funktioner. Därför uppdateras versionsinformationen flera gånger i månaden. Kontrollera dem regelbundet.
 
@@ -23,6 +23,7 @@ Versionsinformationen omfattar frisläppningsperioden 16 oktober 2024 till slute
 | **Nytt Report Builder för Adobe Analytics** | Det nya Report Builder-programmet ger Adobe Analytics en större uppdatering, inklusive bättre prestanda, smidigt användargränssnitt, 2.0-API-stöd och stöd för Microsoft Excel i Mac, Windows och webbläsare. Det här programmet kan användas tillsammans med det äldre programmet, men inte i samma fil. Det finns en uppgraderingsfunktion för att uppgradera äldre arbetsböcker till det nya programmet. [Läs mer](https://experienceleague.adobe.com/en/docs/analytics/analyze/report-builder/report-buider-overview) |  | 16 oktober 2024 |
 | **JSON-export för migrering av taggimplementering till Web SDK-taggar** | Den här uppdateringen av tillägget Analytics-taggar är relaterad till migrering till Web SDK. Du kan använda den här uppdateringen av Adobe Analytics-tillägget som en del av arbetsflödet för att återskapa dina tilläggskonfigurationer med Web SDK-tillägget. I Adobe Analytics-taggtillägget kan du visa inställningar för eVars, props och händelser som JSON, som kan exporteras för redigering och inkluderas i Web SDK-tillägget. |  | 31 oktober 2024 |
 | **Ny information om begärandefaktorer i Analysis Workspace Performance** | Det finns nu ett nytt avsnitt,&quot;Begärandefaktorer&quot;, som är tillgängligt när du analyserar prestanda i Analysis Workspace. Mer information om hur begäranden behandlas och de olika faktorer som påverkar bearbetningstiderna finns i&quot;Begärandefaktorer&quot; i [Optimera Analysis Workspace-prestanda](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/workspace-faq/optimizing-performance). |  | 1 oktober 2024 |
+| **Kvarhållningsperiod för transaktions-ID** | Variabeln `transactionID` identifierar en transaktion unikt så att träffen kan koppla till data som överförts via datakällor. ID:ts standardperiod för bevarande på 90 dagar kommer att förlängas till 25 månader i januari 2025. |  | 22 januari 2025 |
 
 ## Korrigeringar i Adobe Analytics
 
