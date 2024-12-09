@@ -3,7 +3,7 @@ title: Felsök leveranstider för Data Warehouse
 description: Ta reda på eventuella problem med en Data Warehouse som kan förlänga leveranstiderna.
 feature: Data Warehouse
 exl-id: eed4d172-fffd-453f-ab5b-0fc2a79d5bd0
-source-git-commit: fc6a2deabaf2012cefebf4864db19aef1825adf2
+source-git-commit: d929e97a9d9623a8255f16729177d812d59cec05
 workflow-type: tm+mt
 source-wordcount: '357'
 ht-degree: 0%

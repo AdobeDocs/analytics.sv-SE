@@ -3,7 +3,7 @@ title: Komponentstöd i Data Warehouse
 description: Lär dig vilka ytterligare mått och mätvärden som finns i Datan Warehouse och vad som inte stöds.
 feature: Data Warehouse
 exl-id: ce7411a4-a720-47b7-90d5-4d867eff4bae
-source-git-commit: 1e1a26b8595ca026fb049322125a6f91d9d5513c
+source-git-commit: d929e97a9d9623a8255f16729177d812d59cec05
 workflow-type: tm+mt
 source-wordcount: '444'
 ht-degree: 0%

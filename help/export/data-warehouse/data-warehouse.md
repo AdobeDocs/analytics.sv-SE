@@ -1,12 +1,12 @@
 ---
-description: Datalagret refererar till kopian av Analytics-data för lagring och anpassade rapporter, som du kan köra genom att filtrera data. Du kan begära rapporter för att visa avancerade datarelationer från rådata baserat på dina unika frågor. Rapporter om datalager skickas via e-post eller skickas till en molnlagringsleverantör och kan ta upp till 72 timmar att bearbeta. Bearbetningstiden beror på frågans komplexitet och mängden data som begärs.
-title: Översikt över Datan Warehouse
+description: Lär dig mer om Data Warehouse och hur du filtrerar data så att du kan skapa och köra anpassade rapporter.
+title: Översikt över Data Warehouse
 feature: Data Warehouse
 uuid: 768557dd-1644-4ce6-bfc2-8c46dd6e1cd1
 exl-id: 6a051d53-397b-4a55-9cca-1c83b31c9448
-source-git-commit: 1e1a26b8595ca026fb049322125a6f91d9d5513c
+source-git-commit: d929e97a9d9623a8255f16729177d812d59cec05
 workflow-type: tm+mt
-source-wordcount: '339'
+source-wordcount: '281'
 ht-degree: 0%
 
 ---

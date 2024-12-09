@@ -1,12 +1,12 @@
 ---
-description: Nedan följer några tips om hur du bäst hanterar och levererar dataflöden.
+description: Läs mer om de bästa sätten att behandla och leverera dataflöden i Analytics.
 keywords: Datafeed;bästa praxis;trafikspik;timvis;ftp
 title: God praxis och allmän information
 feature: Data Feeds
 exl-id: 5f6fbc13-b176-4f69-8f2d-7accc6e6ac2d
-source-git-commit: 6b42fc4a383b05a3630cbba7c5bce6b4561a9419
+source-git-commit: 0eef1b1269dcfbc7648127602bdfe24d4789f4b7
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '288'
 ht-degree: 0%
 
 ---

@@ -1,12 +1,11 @@
 ---
-title: Felsöka dataflöden
-description: Lär dig hur du kan identifiera och lösa problem med dataflöden.
-keywords: jobb;felsökning;fel;ftp;chdir;connect;login;put
+title: Felsöka datafeeds
+description: Läs om varför ett datafeedjobb kanske inte kan bearbeta eller leverera data. Lös potentiella problem med dataflöden.
 feature: Data Feeds
 exl-id: c082bc95-cdae-448b-86b5-695660fb2352
-source-git-commit: 4daa5c8bdbcb483f23a3b8f75dde9eeb48516db8
+source-git-commit: 0eef1b1269dcfbc7648127602bdfe24d4789f4b7
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '464'
 ht-degree: 0%
 
 ---

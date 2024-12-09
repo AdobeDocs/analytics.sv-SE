@@ -1,11 +1,11 @@
 ---
 title: Besök
-description: En sekvens med sidvyer i ett möte.
+description: Lär dig mer om Visits-mätvärdena i Analytics. Se hur det beräknas, vilka beteenden som påverkar det, hur du ändrar definitionen och mycket mer.
 feature: Metrics
 exl-id: 4f78f2b5-f958-44fe-876a-83f07980beec
-source-git-commit: fb25807a0f34409bb3a27f344ff7508a9dd414a4
+source-git-commit: 5f80d1f56fb8a95780ff2daf18644ac5ffb548d6
 workflow-type: tm+mt
-source-wordcount: '692'
+source-wordcount: '708'
 ht-degree: 0%
 
 ---

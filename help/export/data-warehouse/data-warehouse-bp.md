@@ -1,13 +1,13 @@
 ---
-description: Datalagret har ett flexibelt gränssnitt för att köra anpassade rapporter. Genom att följa dessa riktlinjer kan du minska tiden det tar att hämta data.
+description: Lär dig riktlinjerna som minskar tiden det tar att hämta in data från Datan Warehouse.
 keywords: god praxis;fel;timeout;felsökning
 title: Bästa praxis för Data Warehouse
 feature: Data Warehouse
 uuid: d71c9138-22d9-4f92-885e-593f83f2bb59
 exl-id: 7e21534b-a7ec-4231-89f1-0ad5013e70cf
-source-git-commit: 93099d36a65ca2bf16fbd6342f01bfecdc8c798e
+source-git-commit: d929e97a9d9623a8255f16729177d812d59cec05
 workflow-type: tm+mt
-source-wordcount: '240'
+source-wordcount: '233'
 ht-degree: 0%
 
 ---

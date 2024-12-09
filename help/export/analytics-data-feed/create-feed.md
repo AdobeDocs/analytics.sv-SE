@@ -1,11 +1,11 @@
 ---
 title: Skapa en datafeed
-description: Lär dig hur du skapar en datafeed.
+description: Lär dig hur du skapar en datafeed och om filinformationen som ska skickas till Adobe.
 feature: Data Feeds
 exl-id: 36c8a40e-6137-4836-9d4b-bebf17b932bc
-source-git-commit: 8e8f59f747ddacc5462cbc177d199a5e0e91908a
+source-git-commit: 0eef1b1269dcfbc7648127602bdfe24d4789f4b7
 workflow-type: tm+mt
-source-wordcount: '4115'
+source-wordcount: '4124'
 ht-degree: 0%
 
 ---
@@ -364,7 +364,7 @@ När du skapar en datafeed kan du ge Adobe:
    |---------|----------|
    | [!UICONTROL **Ta bort escape-tecken**] | När du samlar in data kan vissa tecken (till exempel nya rader) orsaka problem. Markera den här rutan om du vill att dessa tecken ska tas bort från feed-filerna. |
    | [!UICONTROL **Komprimeringsformat**] | Den typ av komprimering som används. **Gzip** skickar filer i formatet `.tar.gz`. **Zip** skickar filer i formatet `.zip`. |
-   | [!UICONTROL **Paketeringstyp**] | Välj [!UICONTROL **Flera filer**] för de flesta dataflöden. Med det här alternativet numreras data till okomprimerade 2 GB-segment. (Om alternativet [!UICONTROL **Flera filer**] har valts och okomprimerade data för rapportfönstret är mindre än 2 GB skickas en fil.) Om du väljer **En fil** skapas filen `hit_data.tsv` i en enda, potentiellt stor fil. |
+   | [!UICONTROL **Paketeringstyp**] | Välj [!UICONTROL **Flera filer**] för de flesta dataflöden. Med det här alternativet numreras data till okomprimerade 2 GB-segment. (Om alternativet [!UICONTROL **Flera filer**] har valts och okomprimerade data för rapportfönstret är mindre än 2 GB skickas en fil.) Om du väljer **En fil** skapas `hit_data.tsv` -filen i en enda, potentiellt stor fil. |
    | [!UICONTROL **Manifest**] | Avgör om Adobe ska leverera en [manifestfil](c-df-contents/datafeeds-contents.md#feed-manifest) till målet när inga data samlas in för ett feed-intervall. Om du väljer **Manifestfil** får du en manifestfil som liknar följande när inga data samlas in:<p>`text`</p><p>`Datafeed-Manifest-Version: 1.0`</p><p>`Lookup-Files: 0`</p><p>`Data-Files: 0`</p><p> `Total-Records: 0`</p> |
    | [!UICONTROL **Kolumnmallar**] | När du skapar många dataflöden rekommenderar Adobe att du skapar en kolumnmall. Om du väljer en kolumnmall inkluderas automatiskt de angivna kolumnerna i mallen. Adobe har också flera mallar som standard. |
    | [!UICONTROL **Tillgängliga kolumner**] | Alla tillgängliga datakolumner i Adobe Analytics. Klicka på [!UICONTROL Add all] om du vill inkludera alla kolumner i en datafeed. |

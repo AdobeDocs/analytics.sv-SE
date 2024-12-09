@@ -1,13 +1,13 @@
 ---
-description: Data som samlas in från webbplatser, mobilappar eller överförs med webbtjänste-API:er eller datakällor, bearbetas och lagras i Adobe Data Warehouse. Dessa råa klickströmsdata utgör den datauppsättning som används av Adobe Analytics.
+description: Lär dig hur du använder dataflöden för att få ut rådata från Adobe Analytics. Ta reda på vad som krävs för att använda dataflöden.
 keywords: klickström;datafeed;datafeed;datafeed
-title: Översikt över Analytics Data Feed
+title: Översikt över Analytics-dataflöden
 feature: Data Feeds
 exl-id: 2cfff9ad-cdb5-4ae9-a266-4f3d3d046f0c
-source-git-commit: 84bdeb5d502e46c922fc5123fcdd5b6819426c0e
+source-git-commit: 0eef1b1269dcfbc7648127602bdfe24d4789f4b7
 workflow-type: tm+mt
-source-wordcount: '314'
-ht-degree: 0%
+source-wordcount: '299'
+ht-degree: 1%
 
 ---
 
