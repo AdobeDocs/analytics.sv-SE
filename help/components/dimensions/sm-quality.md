@@ -2,7 +2,8 @@
 title: Kvalitetsdimensioner för direktuppspelande media
 description: Tillgängliga dimensioner när du aktiverar [!UICONTROL Media Quality] för en rapportserie.
 feature: Dimensions
-source-git-commit: 26c131a37fa1f30c83fd99b290523a97d3c954db
+exl-id: e3794d8c-3c03-425d-850c-a735b579324b
+source-git-commit: fdd66c9558f070cd760f37a39e5911f0dac22612
 workflow-type: tm+mt
 source-wordcount: '293'
 ht-degree: 0%
@@ -13,7 +14,7 @@ ht-degree: 0%
 
 *Den här sidan beskriver de tillgängliga dimensionerna när du aktiverar [!UICONTROL Media Quality] för en rapportserie. Mer information finns i [Värden för direktuppspelad mediekvalitet](../metrics/sm-quality.md).*
 
-Dimensionerna för direktuppspelad mediakvalitet ger rapporter om kvaliteten på det innehåll som besökaren använder. Användningen av de här dimensionerna kräver [!UICONTROL Adobe Streaming Media Collection add-on]. Kontakta kontoteamet på Adobe för mer information.
+Dimensionerna för direktuppspelad mediakvalitet ger rapporter om kvaliteten på det innehåll som besökaren använder. Användningen av de här dimensionerna kräver [!UICONTROL Adobe Streaming Media Collection]. Kontakta kontoteamet på Adobe för mer information.
 
 När du aktiverar **[!UICONTROL Media Quality]** under [Medierapportering](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/media-management.md) är följande dimensioner tillgängliga:
 
@@ -26,7 +27,7 @@ När du aktiverar **[!UICONTROL Media Quality]** under [Medierapportering](/help
 | Släppta bildrutor | Det totala antalet uteslutna bildrutor som inträffade under en uppspelningssession. | Stäng media | `a.media.qoe.droppedFrameCount` |
 | Fel | Det totala antalet fel som uppstod under en uppspelningssession. | Stäng media | `a.media.qoe.errorCount` |
 | Externa fel-ID | Alla unika fel-ID:n från externa källor, till exempel CDN-fel. Du måste ange önskade felkoder eller ID:n. Flera fel-ID:n tillåts. | Stäng media | `a.media.qoe.externalErrors` |
-| Fel-ID för Player SDK | Alla unika fel-ID:n som genereras av innehållsspelarens SDK. Du måste ange önskade felkoder eller ID:n. Flera fel-ID:n tillåts. | Stäng media | `a.media.qoe.playerSdkErrors` |
+| Fel-ID för Player SDK | Alla unika fel-ID:n som genereras av innehållsspelaren SDK. Du måste ange önskade felkoder eller ID:n. Flera fel-ID:n tillåts. | Stäng media | `a.media.qoe.playerSdkErrors` |
 | Tid att starta | Standardvärdet är `0` om det inte anges via QoSObject. Ange värdet i millisekunder. Analysis Workspace rapporterar den här dimensionen på några sekunder. | Mediestart, stäng media | `a.media.qoe.timeToStart` |
 
 {style="table-layout:auto"}

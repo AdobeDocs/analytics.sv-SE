@@ -2,7 +2,8 @@
 title: Kärndimensioner för direktuppspelande media
 description: Tillgängliga dimensioner när du aktiverar [!UICONTROL Media Core] för en rapportserie.
 feature: Dimensions
-source-git-commit: 26c131a37fa1f30c83fd99b290523a97d3c954db
+exl-id: 1316a646-a31a-49a4-a670-d56d90dd462b
+source-git-commit: fdd66c9558f070cd760f37a39e5911f0dac22612
 workflow-type: tm+mt
 source-wordcount: '400'
 ht-degree: 1%
@@ -13,7 +14,7 @@ ht-degree: 1%
 
 *Den här sidan beskriver de tillgängliga dimensionerna när du aktiverar [!UICONTROL Media Core] för en rapportserie. Se [Streaming Media Core-statistik](../metrics/sm-core.md) för tillgängliga mått.*
 
-Streaming Media Core-dimensioner ger grundläggande rapporteringsfunktioner för data som samlas in via bibliotek för mediesamling. Användningen av de här dimensionerna kräver **[!UICONTROL Adobe Streaming Media Collection Add-on]**. Kontakta kontoteamet på Adobe för mer information.
+Streaming Media Core-dimensioner ger grundläggande rapporteringsfunktioner för data som samlas in via bibliotek för mediesamling. Användningen av de här dimensionerna kräver **[!UICONTROL Adobe Streaming Media Collection]**. Kontakta kontoteamet på Adobe för mer information.
 
 När du aktiverar **[!UICONTROL Media Core]** under [Medierapportering](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/media-management.md) är följande dimensioner tillgängliga:
 

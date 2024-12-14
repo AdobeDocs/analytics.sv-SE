@@ -2,7 +2,8 @@
 title: Mätning av direktuppspelad mediakvalitet
 description: Tillgängliga mätvärden när du aktiverar [!UICONTROL Media Quality] för en rapportserie.
 feature: Metrics
-source-git-commit: 26c131a37fa1f30c83fd99b290523a97d3c954db
+exl-id: a64829b5-d45b-44c6-80c3-5acf1a6d9919
+source-git-commit: fdd66c9558f070cd760f37a39e5911f0dac22612
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 0%
@@ -13,7 +14,7 @@ ht-degree: 0%
 
 *Den här sidan beskriver tillgängliga mätvärden när du aktiverar [!UICONTROL Media Quality] för en rapportserie. Se [Kvalitetsdimensioner för direktuppspelning av media](../dimensions/sm-quality.md) för tillgängliga dimensioner.*
 
-Streaming Media-kvalitetsmätningar ger extra rapporteringsfunktioner för datainsamling via bibliotek för direktuppspelad mediainsamling. Användningen av dessa mått kräver **[!UICONTROL Adobe Streaming Media Collection Add-on]**. Kontakta kontoteamet på Adobe för mer information.
+Streaming Media-kvalitetsmätningar ger extra rapporteringsfunktioner för datainsamling via bibliotek för direktuppspelad mediainsamling. Användningen av dessa mått kräver **[!UICONTROL Adobe Streaming Media Collection]**. Kontakta kontoteamet på Adobe för mer information.
 
 När du aktiverar **[!UICONTROL Media Quality]** under [Medierapportering](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/media-management.md) är följande mått tillgängliga:
 

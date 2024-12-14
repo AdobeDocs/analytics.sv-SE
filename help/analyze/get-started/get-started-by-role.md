@@ -3,9 +3,9 @@ description: Allmän översiktsinformation om Adobe Analytics, inklusive informa
 title: Kom igång för administratörer, analytiker, slutanvändare och utvecklare
 feature: Analytics Basics
 exl-id: 11800de5-224a-4bd2-8cb1-a6318925db71
-source-git-commit: aac5421b658cf06b20ca5a3d22f07ef441283753
+source-git-commit: fdd66c9558f070cd760f37a39e5911f0dac22612
 workflow-type: tm+mt
-source-wordcount: '1692'
+source-wordcount: '1691'
 ht-degree: 4%
 
 ---
@@ -59,7 +59,7 @@ Mer information om de tillgängliga metoderna finns i [Implementera Adobe Analyt
 | | Implementeringsmetoder |
 |---------|---------|
 | **Webbplatser** | <ul><li>Web SDK-tillägg (rekommenderas)</li><li>Web SDK</li><li>Analystillägg</li><li>Äldre JavaScript</li></ul> |
-| **Mobilappar** | <ul><li>Mobile SDK-tillägg (rekommenderas)</li><li>Analystillägg</li></ul> |
+| **Mobilappar** | <ul><li>Mobile SDK (rekommenderas)</li><li>Analystillägg</li></ul> |
 
 {style="table-layout:auto"}
 
@@ -79,7 +79,7 @@ Analysadministratörer bör utföra följande uppgifter innan de gör Adobe Anal
 | Bidragsanalys | Contribute Analysis avslöjar dolda mönster i era data för att förklara statistiska avvikelser och identifiera korrelationer bakom oväntade kundaktiviteter, obundna värden och plötsliga toppar eller dalar för valda mätvärden över konvergerande målgruppssegment. | [Översikt över bidragsanalys](/help/analyze/analysis-workspace/c-anomaly-detection/anomaly-detection.md#contribution-analysis) |
 | Analyssegmentering | Gör att ni kan skapa, hantera, dela och tillämpa kraftfulla, fokuserade målgruppssegment i era rapporter med hjälp av Analytics-funktionerna, Adobe Experience Cloud, Adobe Target och andra integrerade Adobe-produkter. | [Analytics-segmentering](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-home.html) |
 | Publish målgrupper i Audience Manager | Adobe Audience Manager är en kraftfull datahanteringsplattform som hjälper er att skapa unika målgruppsprofiler från dataintegreringar från första part, andra part (partner) och tredje part. | [Audience Analytics - översikt](https://experienceleague.adobe.com/docs/analytics/integration/audience-analytics/mc-audiences-aam.html) |
-| Integreringar | Du kan visa information från andra program i Adobe Analytics. <p>Nedan följer några vanliga integreringar:</p><ul><li><a href="https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/a4t-panel.html">Analyser för mål</a></li><li><a href="https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html">Tillägget för den direktuppspelande mediesamlingen</a></li> | [Analytics-integrering](https://experienceleague.adobe.com/docs/analytics/integration/home.html) |
+| Integreringar | Du kan visa information från andra program i Adobe Analytics. <p>Nedan följer några vanliga integreringar:</p><ul><li><a href="https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/a4t-panel.html">Analyser för mål</a></li><li><a href="https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html">Den direktuppspelande mediesamlingen</a></li> | [Analytics-integrering](https://experienceleague.adobe.com/docs/analytics/integration/home.html) |
 
 {style="table-layout:auto"}
 

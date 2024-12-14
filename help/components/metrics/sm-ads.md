@@ -2,7 +2,8 @@
 title: Streaming Media - reklamstatistik
 description: Tillgängliga mätvärden när du aktiverar [!UICONTROL Media Ads] för en rapportserie.
 feature: Metrics
-source-git-commit: 26c131a37fa1f30c83fd99b290523a97d3c954db
+exl-id: f0ddf3e0-ab55-4a05-a8ae-f040ba26e704
+source-git-commit: fdd66c9558f070cd760f37a39e5911f0dac22612
 workflow-type: tm+mt
 source-wordcount: '142'
 ht-degree: 0%
@@ -13,7 +14,7 @@ ht-degree: 0%
 
 *Den här sidan beskriver tillgängliga mätvärden när du aktiverar [!UICONTROL Media Ads] för en rapportserie. Se [annonsdimensioner för direktuppspelningsmedia](../dimensions/sm-ads.md) för tillgängliga dimensioner.*
 
-Streaming Media-annonsstatistik ger extra rapporteringsfunktioner för datainsamling via bibliotek för direktuppspelad mediainsamling. Användningen av dessa mått kräver **[!UICONTROL Adobe Streaming Media Collection Add-on]**. Kontakta kontoteamet på Adobe för mer information.
+Streaming Media-annonsstatistik ger extra rapporteringsfunktioner för datainsamling via bibliotek för direktuppspelad mediainsamling. Användningen av dessa mått kräver **[!UICONTROL Adobe Streaming Media Collection]**. Kontakta kontoteamet på Adobe för mer information.
 
 När du aktiverar **[!UICONTROL Media Ads]** under [Medierapportering](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/media-management.md) är följande mått tillgängliga:
 

@@ -2,7 +2,8 @@
 title: Streaming Media och dimensioner
 description: Tillgängliga dimensioner när du aktiverar [!UICONTROL Media Ads] för en rapportserie.
 feature: Dimensions
-source-git-commit: 26c131a37fa1f30c83fd99b290523a97d3c954db
+exl-id: 3f17bacc-8c36-499a-a863-9298e2d54370
+source-git-commit: fdd66c9558f070cd760f37a39e5911f0dac22612
 workflow-type: tm+mt
 source-wordcount: '449'
 ht-degree: 0%
@@ -13,7 +14,7 @@ ht-degree: 0%
 
 *Den här sidan beskriver de tillgängliga dimensionerna när du aktiverar [!UICONTROL Media Ads] för en rapportserie. Se [annonsstatistik för direktuppspelningsmedia](../metrics/sm-ads.md) för tillgängliga mått.*
 
-Med annonsdimensionerna för direktuppspelning av media får datainsamlingen extra funktioner via bibliotek för direktuppspelad mediainsamling. Användningen av de här dimensionerna kräver **[!UICONTROL Adobe Streaming Media Collection Add-on]**. Kontakta kontoteamet på Adobe för mer information.
+Med annonsdimensionerna för direktuppspelning av media får datainsamlingen extra funktioner via bibliotek för direktuppspelad mediainsamling. Användningen av de här dimensionerna kräver **[!UICONTROL Adobe Streaming Media Collection]**. Kontakta kontoteamet på Adobe för mer information.
 
 När du aktiverar **[!UICONTROL Media Ads]** under [Medierapportering](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/media-management.md) är följande dimensioner tillgängliga:
 

@@ -3,9 +3,9 @@ title: Analytics-Dimensioners kompatibilitet
 description: Referens för analysdimensioner och rapporter.
 feature: Dimensions
 exl-id: 1884bc20-b04d-4f9a-b057-2b2fbe53190d
-source-git-commit: 4633225cc35658a7de39a40cd77df00137a54461
+source-git-commit: fdd66c9558f070cd760f37a39e5911f0dac22612
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '889'
 ht-degree: 2%
 
 ---
@@ -157,7 +157,7 @@ På den här sidan visas [dimensioner](overview.md) som stöds i deras respektiv
 
 ## Innehållsmedvetna dimensioner som stöds av Analysis Workspace
 
-### Video (tillägget Streaming Media Collection)
+### Video (Streaming Media Collection)
 
 | Dimensionens namn (visas i analysgränssnittet) | Dimension-ID (används i API-begäranden) |
 |--- |--- |
@@ -195,15 +195,15 @@ På den här sidan visas [dimensioner](overview.md) som stöds i deras respektiv
 | Kampanj-ID | `videoadcampaign` |
 | Genre | `videogenre` |
 | Strömtyp | `videostreamtype` |
-| Fel-ID för Player SDK | `videoqoeplayersdkerrors` |
+| Fel-ID för SDK Player | `videoqoeplayersdkerrors` |
 | Externa fel-ID | `videoqoeextneralerrors` |
 | Medieflödestyp | `videofeedtype` |
 | Ange mediesökväg | `entryvideopath` |
 | Avsluta mediasökväg | `exitvideopath` |
 | Anmälningsgenre | `entryvideogenre` |
 | Avsluta genre | `exitvideogenre` |
-| SDK-fel-ID för Entry Player | `entryvideoqoeplayersdkerrors` |
-| Avsluta SDK-fel-ID för spelaren | `exitvideoqoeplayersdkerrors` |
+| Fel-ID för Entry Player SDK | `entryvideoqoeplayersdkerrors` |
+| Avsluta fel-ID för SDK Player | `exitvideoqoeplayersdkerrors` |
 | Externa fel-ID för post | `entryvideoqoeextneralerrors` |
 | Avsluta externa fel-ID | `exitvideoqoeextneralerrors` |
 
@@ -218,18 +218,18 @@ På den här sidan visas [dimensioner](overview.md) som stöds i deras respektiv
 | Latitud/longitud | `sociallatlong` |
 | Spåra tillgångar | `socialassettrackingcode` |
 | Ägda sociala egenskaper | `socialaccountandappids` |
-| Ägda Post-id:n | `socialownedpostids` |
+| Ägda post-ID:n | `socialownedpostids` |
 | Ägda sociala definitioner | `socialinteractiontype` |
 | Ägda egenskaps-ID | `socialownedpropertyid` |
 | Ägd egenskap kontra program | `socialownedpropertypropertyvsapp` |
 | Namn på ägd egenskap | `socialownedpropertyname` |
-| Ägd definitionsegenskap jämfört med Post | `socialowneddefinitionpropertyvspost` |
+| Ägd definitionsegenskap kontra post | `socialowneddefinitionpropertyvspost` |
 | Insiktstyp för ägardefinition | `socialowneddefinitioninsighttype` |
 | Insiktsvärde för ägardefinition | `socialowneddefinitioninsightvalue` |
 | Ägardefinitionsmått | `socialowneddefinitionmetric` |
 | Tillgång | `socialmediaid` |
 
-### Mobil-SDK
+### Mobile SDK
 
 | Dimensionens namn (visas i analysgränssnittet) | Dimension-ID (används i API-begäranden) |
 |--- |--- |

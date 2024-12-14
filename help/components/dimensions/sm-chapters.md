@@ -2,7 +2,8 @@
 title: Kapiteldimensioner för direktuppspelande media
 description: Tillgängliga dimensioner när du aktiverar [!UICONTROL Media Chapters] för en rapportserie.
 feature: Dimensions
-source-git-commit: 26c131a37fa1f30c83fd99b290523a97d3c954db
+exl-id: cac66a0b-3f83-46a9-b35c-ba08e0eafb92
+source-git-commit: fdd66c9558f070cd760f37a39e5911f0dac22612
 workflow-type: tm+mt
 source-wordcount: '178'
 ht-degree: 1%
@@ -13,7 +14,7 @@ ht-degree: 1%
 
 *Den här sidan beskriver de tillgängliga dimensionerna när du aktiverar [!UICONTROL Media Chapters] för en rapportserie. Se [Kapitelmått för direktuppspelningsmedia](../metrics/sm-chapters.md) för tillgängliga mått.*
 
-Kapiteldimensioner för direktuppspelande media ger extra rapporteringsfunktioner för datainsamling via bibliotek för direktuppspelande media. Användningen av de här dimensionerna kräver **[!UICONTROL Adobe Streaming Media Collection Add-on]**. Kontakta kontoteamet på Adobe för mer information.
+Kapiteldimensioner för direktuppspelande media ger extra rapporteringsfunktioner för datainsamling via bibliotek för direktuppspelande media. Användningen av de här dimensionerna kräver **[!UICONTROL Adobe Streaming Media Collection]**. Kontakta kontoteamet på Adobe för mer information.
 
 När du aktiverar **[!UICONTROL Media Chapters]** under [Medierapportering](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/media-management.md) är följande dimension tillgänglig:
 

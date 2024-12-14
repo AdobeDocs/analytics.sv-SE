@@ -2,7 +2,8 @@
 title: Streaming Media core metrics
 description: Tillgängliga mätvärden när du aktiverar [!UICONTROL Media Core] för en rapportserie.
 feature: Metrics
-source-git-commit: 26c131a37fa1f30c83fd99b290523a97d3c954db
+exl-id: f4ff5f84-18b6-4e67-b808-133faeaf8605
+source-git-commit: fdd66c9558f070cd760f37a39e5911f0dac22612
 workflow-type: tm+mt
 source-wordcount: '517'
 ht-degree: 0%
@@ -13,7 +14,7 @@ ht-degree: 0%
 
 *Den här sidan beskriver tillgängliga mätvärden när du aktiverar [!UICONTROL Media Core] för en rapportserie. Se [Kärndimensioner för direktuppspelande media](../dimensions/sm-core.md) för tillgängliga dimensioner.*
 
-Streaming Media Core-statistik ger grundläggande rapporteringsfunktioner för data som samlas in via bibliotek för mediesamling. Användningen av dessa mått kräver **[!UICONTROL Adobe Streaming Media Collection Add-on]**. Kontakta kontoteamet på Adobe för mer information.
+Streaming Media Core-statistik ger grundläggande rapporteringsfunktioner för data som samlas in via bibliotek för mediesamling. Användningen av dessa mått kräver **[!UICONTROL Adobe Streaming Media Collection]**. Kontakta kontoteamet på Adobe för mer information.
 
 När du aktiverar **[!UICONTROL Media Core]** under [Medierapportering](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/media-management.md) är följande mått tillgängliga:
 
