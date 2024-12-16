@@ -3,9 +3,9 @@ description: Hantera aviseringar.
 title: Aviseringshanteraren - översikt
 feature: Alerts
 exl-id: 3408c79f-3d85-44b9-8fca-ce956853dfa4
-source-git-commit: 2b8688da1400857b7f5093197d06c04681cd87ff
+source-git-commit: 86580b3c149c0feb1d70d9ba197cf0810e472586
 workflow-type: tm+mt
-source-wordcount: '623'
+source-wordcount: '630'
 ht-degree: 0%
 
 ---
@@ -85,11 +85,13 @@ Så här redigerar du en befintlig varning:
    Nedan följer några av de saker du kan göra när du redigerar en varning:
 
    * Lägg till aviseringar i andra rapportsviter
-   * Ändra ägare
-   * Uppdatera filtren
-   * Uppdatera förfallodatumet
+   * Lägg till eller ändra beskrivningen
+   * Ändra tidgranulariteten
+   * Ändra mottagarna
+   * Ändra förfallodatumet
+   * Ändra mätvärden och filter
 
-1. Redigera varningen och välj sedan [!UICONTROL **Spara**].
+1. Välj [!UICONTROL **Spara**].
 
 ## Konfigurera kolumner
 
