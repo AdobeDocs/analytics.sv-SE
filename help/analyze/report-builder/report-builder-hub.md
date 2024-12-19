@@ -6,10 +6,10 @@ feature: Report Builder
 type: Documentation
 solution: Analytics
 exl-id: e18381ea-b7d4-4d7a-9ded-23b2d06fa204
-source-git-commit: c6b753b887b369fbbae2f9bb5d45cef92bffb3d0
+source-git-commit: 4e75b83e812acf3e17bb4f910831a2f88507aa27
 workflow-type: tm+mt
-source-wordcount: '515'
-ht-degree: 0%
+source-wordcount: '519'
+ht-degree: 1%
 
 ---
 
@@ -66,8 +66,8 @@ Om du vill ändra rapportsviten väljer du en ny rapportserie i listrutan.
 
 ### Datumintervall
 
-**[!UICONTROL Date range]** visar datumintervallet för de markerade datablocken. Om flera datablock har markerats med flera datumintervall visas **[!UICONTROL Date range]**-länken *Flera*.
+**[!UICONTROL Date range]** visar datumintervallet för de markerade datablocken. Om flera datablock har markerats med flera datumintervall visas **[!UICONTROL Date range]**-länken *Flera*. [Läs mer](/help/analyze/report-builder/select-date-range.md)
 
 ### Segment
 
-Länken **Segment** visar en sammanfattningslista över de segment som används av de markerade datablocken. Om flera datablock har markerats med flera segment visas länken **Segment** *Flera*.
+Länken **Segment** visar en sammanfattningslista över de segment som används av de markerade datablocken. Om flera datablock har markerats med flera segment visas länken **Segment** *Flera*. [Läs mer](/help/analyze/report-builder/work-with-segments.md)

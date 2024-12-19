@@ -5,9 +5,10 @@ role: User
 feature: Report Builder
 type: Documentation
 solution: Analytics
-source-git-commit: eedabc6295f9b918e1e00b93993680e676c216c3
+exl-id: 610ce2c8-8ff6-4434-912f-3015cc56a51e
+source-git-commit: 4e75b83e812acf3e17bb4f910831a2f88507aa27
 workflow-type: tm+mt
-source-wordcount: '1089'
+source-wordcount: '1087'
 ht-degree: 0%
 
 ---
@@ -31,7 +32,7 @@ I kalendern kan du skapa statiska eller rullande datum med följande alternativ:
 
 **Från cell**
 
-Med alternativet Från cell kan du referera till datum som anges i kalkylbladsceller.
+Med alternativet **[!UICONTROL From cell]** kan du referera till datum som anges i kalkylbladsceller.
 
 Du kan välja att exkludera idag för valfritt datumintervall.
 
