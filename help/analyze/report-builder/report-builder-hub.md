@@ -5,9 +5,10 @@ role: User
 feature: Report Builder
 type: Documentation
 solution: Analytics
-source-git-commit: eedabc6295f9b918e1e00b93993680e676c216c3
+exl-id: e18381ea-b7d4-4d7a-9ded-23b2d06fa204
+source-git-commit: c6b753b887b369fbbae2f9bb5d45cef92bffb3d0
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '515'
 ht-degree: 0%
 
 ---
@@ -16,7 +17,7 @@ ht-degree: 0%
 
 Använd Report Builder nav för att skapa, uppdatera, ta bort och hantera datablock.
 
-Navet Report Builder innehåller knapparna Skapa och Hantera, KOMMANDON och QUICK EDIT-panelerna.
+Navet på Report Builder innehåller knapparna Skapa, Hantera och Schemalägg, KOMMANDON och SNABBREDIGERINGSPANELEN.
 
 <img src="./assets/hub51.png" alt="Report Builder Hub"/>
 
@@ -24,6 +25,10 @@ Navet Report Builder innehåller knapparna Skapa och Hantera, KOMMANDON och QUIC
 ## Knapparna Skapa, Hantera och Schemalägg
 
 Använd knapparna Skapa, Hantera och Schemalägg för att skapa nya datablock, hantera befintliga datablock eller schemaläggningsdatabaser.
+
+>[!NOTE]
+>
+>Arbetsboksplanering för den här versionen av Report Builder på Adobe Analytics har ännu inte släppts, men kommer att vara tillgänglig i början av 2025. Nu kan du komma igång med arbetsböcker som inte kräver schemaläggning.
 
 ## KOMMANDON
 
@@ -33,12 +38,12 @@ Använd KOMMANDON-panelen för att komma åt kommandon som är kompatibla med de
 
 | Visade kommandon | Tillgängligt när.. | Syfte |
 |------|------------------|--------|
-| Skapa datablock | En eller flera celler markeras i arbetsboken. | Används för att skapa ett datablock |
 | Redigera datablock | Det markerade cellområdet eller cellområdet ingår endast i ett datablock. | Används för att redigera ett datablock |
-| Uppdatera datablock | Markeringen innehåller minst ett datablock. Kommandot uppdaterar bara de markerade datablocken. | Används för att uppdatera ett eller flera datablock |
+| Uppdatera datablock | Markeringen innehåller minst ett datablock. Kommandot uppdaterar bara datablocken i markeringen. | Används för att uppdatera ett eller flera datablock |
 | Uppdatera alla datablock | Arbetsboken innehåller ett eller flera datablock. | Används för att uppdatera ALLA datablock i arbetsboken |
 | Skicka arbetsbok |   | Skicka en arbetsbok enligt ett schema. |
 | Kopiera datablock | Det markerade cellområdet eller cellområdet ingår i ett eller flera datablock. | Används för att kopiera ett datablock |
+| Klipp ut datablock |   | Används för att klippa ut ett datablock |
 | Ta bort datablock | Det markerade cellområdet eller cellområdet ingår endast i ett datablock. | Används för att ta bort ett datablock |
 
 ## SNABBREDIGERING, panel
@@ -63,6 +68,6 @@ Om du vill ändra rapportsviten väljer du en ny rapportserie i listrutan.
 
 **[!UICONTROL Date range]** visar datumintervallet för de markerade datablocken. Om flera datablock har markerats med flera datumintervall visas **[!UICONTROL Date range]**-länken *Flera*.
 
-### Filter
+### Segment
 
-Länken **Filter** visar en sammanfattningslista över de filter som används av de markerade datablocken. Om flera datablock har markerats med flera filter visas länken **Filter** *Flera*.
+Länken **Segment** visar en sammanfattningslista över de segment som används av de markerade datablocken. Om flera datablock har markerats med flera segment visas länken **Segment** *Flera*.
