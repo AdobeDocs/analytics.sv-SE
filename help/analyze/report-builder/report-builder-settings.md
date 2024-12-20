@@ -5,9 +5,10 @@ role: Admin
 feature: Report Builder
 type: Documentation
 solution: Analytics
-source-git-commit: eedabc6295f9b918e1e00b93993680e676c216c3
+exl-id: d158ad45-d467-4355-b091-f015bde7a243
+source-git-commit: ec14dde5b0e91a9fcfb217a811d36af2eea5f772
 workflow-type: tm+mt
-source-wordcount: '280'
+source-wordcount: '255'
 ht-degree: 0%
 
 ---
@@ -24,7 +25,7 @@ Så här ändrar du inställningarna för Report Builder
 
 1. Klicka på **Använd**.
 
-   ![Report Builder datumintervallfönster med knappen Avbryt och använd.](./assets/image38.png)
+   Inställningar för ![Report Builder.](./assets/image38.png)
 
 ## Offline-läge
 
@@ -32,13 +33,13 @@ Data hämtas inte när du skapar och redigerar ett datablock i offlineläge. I s
 
 Aktivera offline-läge
 
-1. Klicka på ikonen **Inställningar** .
+1. Klicka på ikonen **[!UICONTROL Settings]**.
 
-1. Välj **Aktivera offlineläge**.
+1. Välj **[!UICONTROL Enable off-line mod]e**.
 
-1. Ange ett positivt heltal i fältet **Visa mätdata som**.
+1. Ange ett positivt heltal i fältet **[!UICONTROL Display metric data as]**.
 
-1. Klicka på **Använd**.
+1. Klicka på **[!UICONTROL Apply]**.
 
 ## Språk
 
@@ -48,14 +49,14 @@ Välj det språk som ska användas i användargränssnittet i Report Builder
 
 1. Klicka på Inställningar.
 
-1. Välj ett språk i listrutan **Språk**.
+1. Välj ett språk i listrutan **[!UICONTROL Language]**.
 
    ![Datumintervallfönstret Report Builder visar språklistan med engelska markerat.](./assets/image39.png)
 
-1. Klicka på **Använd.**
+1. Klicka på **[!UICONTROL Apply].**
 
 ## Felsökning
 
 Använd felsökningsinställningen för att logga alla klient-/serverdata till en lokal fil. Använd det här alternativet för att lösa supportärenden.
 
-Om du vill aktivera felsökningsalternativet väljer du **Logga Report builder-begäran till den lokala filen**.
+Om du vill aktivera felsökningsalternativet väljer du **[!UICONTROL Log report builder data block to web console]**.

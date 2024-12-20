@@ -5,9 +5,10 @@ role: User
 feature: Report Builder
 type: Documentation
 solution: Analytics
-source-git-commit: eedabc6295f9b918e1e00b93993680e676c216c3
+exl-id: 43f48abf-951d-4fd1-afd4-58304ee5247b
+source-git-commit: ec14dde5b0e91a9fcfb217a811d36af2eea5f772
 workflow-type: tm+mt
-source-wordcount: '973'
+source-wordcount: '962'
 ht-degree: 1%
 
 ---
@@ -95,7 +96,7 @@ Ange filtervillkor
 
 1. Ange ett värde i sökfältet.
 
-1. Klicka på Lägg till rad för att bekräfta markeringen och lägga till ett annat villkorsobjekt.
+1. Klicka på **[!UICONTROL Add row]** för att bekräfta markeringen och lägga till ett annat villkorsobjekt.
 
 1. Klicka på borttagningsikonen för att ta bort ett villkorsobjekt.
 
@@ -118,15 +119,15 @@ Om du vill ändra måtten som används för att filtrera och sortera datablocket
 
 ## Specifik filtrering
 
-Med alternativet Specifik kan du skapa en fast lista med dimensionsobjekt för varje dimension. Använd filtreringstypen **Specifik** för att ange exakt vilka dimensionsobjekt som ska inkluderas i filtret. Du kan markera objekt från en lista eller från ett cellintervall.
+Med alternativet Specifik kan du skapa en fast lista med dimensionsobjekt för varje dimension. Använd filtertypen **[!UICONTROL Specific]** för att ange exakt vilka dimensionsobjekt som ska inkluderas i filtret. Du kan markera objekt från en lista eller från ett cellintervall.
 
 ![Specifika alternativ och markerade objekt.](./assets/image32.png)
 
 ### Från lista
 
-1. Välj alternativet **Från lista** om du vill söka efter och välja dimensionsobjekt.
+1. Välj alternativet **[!UICONTROL From list]** om du vill söka efter och välja dimensionsobjekt.
 
-   När du väljer alternativet **Från lista** fylls listan med dimensionsobjekt med de flesta händelser först.
+   När du väljer alternativet **[!UICONTROL From list]** fylls listan med dimensionsobjekt med de flesta händelser först.
 
    ![Alternativet Från lista och tillgängliga objekt.](./assets/image33.png)
 
@@ -142,7 +143,7 @@ Med alternativet Specifik kan du skapa en fast lista med dimensionsobjekt för v
 
 1. Välj en dimensionsartikel.
 
-   Valda dimensionsobjekt läggs automatiskt till i listan **Markerade objekt**.
+   Valda dimensionsobjekt läggs automatiskt till i listan **[!UICONTROL Selected items]**.
 
    ![](./assets/image35.png)
 
@@ -176,4 +177,4 @@ På fliken **[!UICONTROL Dimensions]** klickar du på ikonen för avfasning bred
 
 ![Fliken Dimensioner och listan över dimensioner.](./assets/dimensions_chevron.png)
 
-Du kan dra och släppa objekt på **tabellen** eller dubbelklicka på ett objektnamn för att lägga till det i **tabellverktyget**.
+Du kan dra och släppa objekt på **[!UICONTROL Table]** eller dubbelklicka på ett objektnamn för att lägga till det i **[!UICONTROL Table]**-verktyget.

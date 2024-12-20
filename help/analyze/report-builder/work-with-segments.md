@@ -5,9 +5,10 @@ role: User
 feature: Report Builder
 type: Documentation
 solution: Analytics
-source-git-commit: eedabc6295f9b918e1e00b93993680e676c216c3
+exl-id: 2691fde0-59c6-45a7-80a5-8e5e221adce2
+source-git-commit: ec14dde5b0e91a9fcfb217a811d36af2eea5f772
 workflow-type: tm+mt
-source-wordcount: '847'
+source-wordcount: '803'
 ht-degree: 0%
 
 ---
@@ -22,7 +23,7 @@ Om du vill tillämpa ett segment på hela datablocket dubbelklickar du på ett s
 
 ## Tillämpa segment på enskilda mätvärden
 
-Om du vill använda segment på enskilda mätvärden drar och släpper du ett segment på ett mätvärde i tabellen. Du kan också klicka på ikonen **..** till höger om ett mått i tabellrutan och sedan välja **Segmentmått**. Om du vill visa tillämpade segment håller du pekaren över eller väljer ett mått i tabellrutan. Mätvärden med tillämpade segment visar en filterikon.
+Om du vill använda segment på enskilda mätvärden drar och släpper du ett segment på ett mätvärde i tabellen. Du kan också klicka på ikonen **..** till höger om ett mätresultat i tabellrutan och sedan välja **[!UICONTROL Segment metric]**. Om du vill visa tillämpade segment håller du pekaren över eller väljer ett mått i tabellrutan. Mätvärden med tillämpade segment visar en filterikon.
 
 ![Fliken Segment med mätvärden.](./assets/filter_by.png)
 
@@ -30,7 +31,7 @@ Om du vill använda segment på enskilda mätvärden drar och släpper du ett se
 
 Du kan använda snabbredigeringspanelen för att lägga till, ta bort eller ersätta segment för befintliga datablock.
 
-När du markerar ett cellintervall i kalkylbladet visas en sammanfattningslista över de segment som används av datablocken i markeringen på länken **Segment** på snabbredigeringspanelen.
+När du markerar ett cellintervall i kalkylbladet visas en sammanfattningslista över de segment som används av datablocken i markeringen på länken **[!UICONTROL Segments]** på snabbredigeringspanelen.
 
 Redigera segment med hjälp av snabbredigeringspanelen
 
@@ -38,7 +39,7 @@ Redigera segment med hjälp av snabbredigeringspanelen
 
    ![Panelen Snabbredigering visar segmentalternativ för rapportsviter, datumintervall och segment.](./assets/select_multiple_dbs.png)
 
-1. Klicka på segmentlänken för att öppna panelen Snabbredigering - filter.
+1. Klicka på länken under **[!UICONTROL Segments]** för att öppna panelen Snabbredigering - filter.
 
    ![På segmentpanelen visas fältet Lägg till segment och listor med tillämpade segment.](./assets/quick_edit_filters.png)
 
@@ -46,23 +47,23 @@ Redigera segment med hjälp av snabbredigeringspanelen
 
 Du kan lägga till eller ta bort segment med alternativen Lägg till/ta bort.
 
-1. Välj fliken **Lägg till/ta bort** på panelen Snabbredigeringssegment.
+1. Välj fliken **[!UICONTROL Add/Remove]** på panelen Snabbredigeringssegment.
 
-   Alla segment som tillämpas på de markerade datablocken visas på panelen Snabbredigering. Segment som tillämpas på alla datablock i markeringen listas under rubriken **Tillämpas på alla markerade datablock**. Segment som tillämpas på vissa, men inte alla, datablock listas under rubriken **Tillämpas på 1 eller flera markerade datablock**.
+   Alla segment som tillämpas på de markerade datablocken visas på panelen Snabbredigering. Segment som tillämpas på alla datablock i markeringen listas under rubriken **[!UICONTROL Applied to all selected data blocks]**. Segment som tillämpas på vissa, men inte alla, datablock listas under rubriken **[!UICONTROL Applied to 1 or more selected data blocks]**.
 
-   Om det finns flera segment i de markerade datablocken kan du söka efter specifika segment med hjälp av sökfältet **Lägg till filter**.
+   När det finns flera segment i de markerade datablocken kan du söka efter specifika segment med hjälp av sökfältet **[!UICONTROL Add Filter]**.
 
    ![Fältet Lägg till segment.](./assets/add_filter.png)
 
-1. Lägg till segment genom att välja segment i listrutan **Lägg till segment**.
+1. Lägg till segment genom att välja segment i listrutan **[!UICONTROL Add segment]**.
 
    Listan med sökbara segment innehåller alla segment som är tillgängliga för rapportsviterna som finns i ett eller flera av de markerade datablocken samt alla segment som är tillgängliga globalt i organisationen.
 
    Om du lägger till ett segment används segmentet på alla datablock i markeringen.
 
-1. Om du vill ta bort segment klickar du på borttagningsikonen **x** till höger om segment i listan **Segment som används**.
+1. Om du vill ta bort segment klickar du på borttagningsikonen **x** till höger om segmenten i listan **[!UICONTROL Segments applied]** .
 
-1. Klicka på **Använd** om du vill spara ändringarna och återgå till hubbpanelen.
+1. Klicka på **[!UICONTROL Apply]** om du vill spara ändringarna och återgå till hubbpanelen.
 
    Report Builder visar ett meddelande som bekräftar de använda segmentändringarna.
 
@@ -70,21 +71,21 @@ Du kan lägga till eller ta bort segment med alternativen Lägg till/ta bort.
 
 Du kan ersätta ett befintligt segment med ett annat segment om du vill ändra hur data segmenteras.
 
-1. Välj fliken **Ersätt** på panelen Snabbredigering.
+1. Välj fliken **[!UICONTROL Replace]** på panelen Snabbredigering.
 
    ![Välj fliken Ersätt.](./assets/replace_filter.png)
 
-1. Använd sökfältet **Söklista** för att hitta specifika segment.
+1. Använd sökfältet **[!UICONTROL Search list]** för att hitta specifika segment.
 
 1. Välj ett eller flera segment som du vill ersätta.
 
 1. Sök efter ett eller flera segment i fältet Ersätt med.
 
-   Om du väljer ett filter läggs det till i listan **Ersätt med**....
+   Om du väljer ett filter läggs det till i listan **[!UICONTROL Replace with]**....
 
    ![Fliken Ersätt med datablocket Personer i appen markerat och listan Ersätt med uppdaterad med personer i appen ändrad.](./assets/replace_screen_new.png)
 
-1. Klicka på **Använd**.
+1. Klicka på **[!UICONTROL Apply]**.
 
    Report Builder uppdaterar segmentlistan så att den återspeglar ersättningen.
 
@@ -95,8 +96,8 @@ Datablocken kan referera till segment från en cell. Flera datablock kan referer
 Använda segment från en cell
 
 1. Navigera till Steg 2 när du skapar eller redigerar datablock. Se [Skapa ett datablock](./create-a-data-block.md).
-1. Klicka på fliken **Segment** för att definiera filter.
-1. Klicka på **Skapa segment från cell**.
+1. Klicka på fliken **[!UICONTROL Segments]** för att definiera filter.
+1. Klicka på **[!UICONTROL Create segment from cell]**.
 
    ![Skapa segment från cellikon.](./assets/create-filter-from-cell.png)
 
@@ -108,13 +109,13 @@ Använda segment från en cell
 
    ![Segmentet Lägg till från cellfönstret visar de filter som ingår.](./assets/select-filters.png)
 
-1. Klicka på **Använd** för att skapa referenscellen.
+1. Klicka på **[!UICONTROL Apply]** för att skapa referenscellen.
 
-1. På fliken **Segment** lägger du till de nya referenscellssegmenten i ditt datablock.
+1. Lägg till de nya referenscellssegmenten i ditt datablock från fliken **[!UICONTROL Segments]**.
 
    ![Fliken Segment med segmentet Sheet1!J1(Alla data) som har lagts till i tabellen.](./assets/reference-cell-filter.png)
 
-1. Klicka på **Slutför**.
+1. Klicka på **[!UICONTROL Finish]**.
 
    Nu kan andra datablock referera till den här cellen i sina segment. Om du vill använda referenscellen som ett segment i andra datablock lägger du bara till cellreferensen i segmenten från fliken Segment.
 
@@ -122,7 +123,7 @@ Använda segment från en cell
 
 1. Markera referenscellen i kalkylbladet.
 
-1. Klicka på länken under **Segment från cell** på snabbredigeringsmenyn.
+1. Klicka på länken under **[!UICONTROL Segments from Cell]** på snabbredigeringsmenyn.
 
    ![Segment från cellänk som visar Sheet1!J1 (alla data)](./assets/filters-from-cell-link.png)
 
@@ -130,4 +131,4 @@ Använda segment från en cell
 
    ![Segmentlistruta](./assets/filter-drop-down.png)
 
-1. Klicka på **Använd**.
+1. Klicka på **[!UICONTROL Apply]**.
