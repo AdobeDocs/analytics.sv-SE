@@ -6,9 +6,9 @@ feature: Report Builder
 type: Documentation
 solution: Analytics
 exl-id: 2691fde0-59c6-45a7-80a5-8e5e221adce2
-source-git-commit: ec14dde5b0e91a9fcfb217a811d36af2eea5f772
+source-git-commit: 2cb8f72a37699aa45135c9d26686f93ee20f20d7
 workflow-type: tm+mt
-source-wordcount: '803'
+source-wordcount: '779'
 ht-degree: 0%
 
 ---
@@ -83,8 +83,6 @@ Du kan ersätta ett befintligt segment med ett annat segment om du vill ändra h
 
    Om du väljer ett filter läggs det till i listan **[!UICONTROL Replace with]**....
 
-   ![Fliken Ersätt med datablocket Personer i appen markerat och listan Ersätt med uppdaterad med personer i appen ändrad.](./assets/replace_screen_new.png)
-
 1. Klicka på **[!UICONTROL Apply]**.
 
    Report Builder uppdaterar segmentlistan så att den återspeglar ersättningen.
@@ -103,7 +101,7 @@ Använda segment från en cell
 
 1. Markera cellen som du vill att datablocken ska referera till ett segment från.
 
-1. Lägg till segmentvalet som du vill lägga till i cellen genom att antingen dubbelklicka på segmentet eller genom att dra och släppa det i segmentavsnittet Inkluderade.
+1. Lägg till segmentvalet som du vill lägga till i cellen genom att antingen dubbelklicka på segmentet eller genom att dra och släppa det i avsnittet **[!UICONTROL Segments Included]**.
 
    Obs! Endast ett alternativ kan markeras för den aktuella cellen åt gången.
 
