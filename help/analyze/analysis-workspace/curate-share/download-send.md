@@ -4,9 +4,9 @@ title: Hämta PDF eller CSV-filer
 feature: Curate and Share
 role: User, Admin
 exl-id: 085013dc-8263-4fc8-9492-99f0ecadf14b
-source-git-commit: 830d9cd13db1a0767cce4e3d2574a120d00a9ac8
+source-git-commit: 04c588cbe8cd4cc9b8d6fe162e3623c2be076325
 workflow-type: tm+mt
-source-wordcount: '1001'
+source-wordcount: '1014'
 ht-degree: 0%
 
 ---
@@ -44,6 +44,7 @@ Så här hämtar du ett projekt som en CSV- eller PDF-fil:
    ![](assets/download-project.png)
 
 1. (Villkorligt) Om du väljer att hämta ett PDF visas ett meddelande när projektet är klart att hämtas. Klicka på [!UICONTROL **Hämta**].
+1. Klicka på ikonen **[!UICONTROL Download this file]** och spara filen i en mapp som du väljer.
 
 ## Kopiera data till Urklipp (snabbtangent: Ctrl+C) {#copy-data}
 
