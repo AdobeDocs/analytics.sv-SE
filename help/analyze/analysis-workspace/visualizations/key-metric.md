@@ -4,9 +4,9 @@ title: Sammanfattning av nyckelmått
 feature: Visualizations
 role: User, Admin
 exl-id: c74e77ff-15d6-48f1-a845-85bdf3444c3a
-source-git-commit: 0bf1b06af8a89c47e74807d14c31075f181cb946
+source-git-commit: 00276353ef5555955d9dc178c692da0dbfb7eac2
 workflow-type: tm+mt
-source-wordcount: '549'
+source-wordcount: '714'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Med visualiseringen [!UICONTROL Key metric summary] kan du se hur ett viktigt m�
 
 ## Användningsexempel
 
-Den här visualiseringen åtgärdar ett antal vanliga användningsfall, bland annat:
+Den här visualiseringen åtgärdar flera vanliga användningsfall, bland annat:
 
 * En analytiker som försöker förstå hur skapandet av nya affärsmöjligheter såg ut den här månaden jämfört med samma tidsram förra året.
 
@@ -35,20 +35,27 @@ Den här visualiseringen åtgärdar ett antal vanliga användningsfall, bland an
 
 1. Dra visualiseringen **[!UICONTROL Key metric summary]** från menyn **[!UICONTROL Visualizations]** i den vänstra listen till en panel.
 
-1. Konfigurera visualiseringen genom att välja ett mätvärde, ett primärt datumintervall och ett jämförelsedatumintervall och ett segment (om det behövs):
-
    ![](assets/key-metric-config.png)
+
+1. Konfigurera visualiseringen med följande alternativ:
 
    | Konfigurationsinställning | Definition |
    | --- | --- |
    | **[!UICONTROL Metric]** | Välj det mätvärde som du vill undersöka. Alla mätvärden stöds. |
-   | **[!UICONTROL Primary date range]** | Det aktuella datumintervallet för frihandstabellen. |
-   | **[!UICONTROL Comparison date range]** | Datumintervallet som du vill jämföra det primära datumintervallet med. |
-   | **[!UICONTROL Segment (optional)]** | Alla segment som du är intresserad av för den här sammanfattningen. |
+   | **[!UICONTROL Primary date range]** | Det aktuella datumintervallet för frihandstabellen.<p>Välj bland tillgängliga datumintervall i rapportsviten.</p> <p>Välj [!UICONTROL **Panelens datumintervall**] om du vill använda samma datumintervall som används på panelen där visualiseringen finns.</p> |
+   | **[!UICONTROL Comparison date range]** | Datumintervallet som du vill jämföra med det primära datumintervallet. |
+   | **[!UICONTROL Segment (optional)]** | Alla segment som du är intresserad av för sammanfattningen. |
 
    {style="table-layout:auto"}
 
-1. Klicka på **[!UICONTROL Build]**.
+   >[!NOTE]
+   >
+   >När fältet [!UICONTROL **Primärt datumintervall**] är inställt på [!UICONTROL **Paneldatumintervall**] kan **[!UICONTROL Comparison date range]** uppdateras automatiskt, beroende på om alternativet **[!UICONTROL Comparison date range]** är relativt till det primära datumintervallet eller fasta.
+   >
+   >* **Relativ:** Om fältet **[!UICONTROL Comparison date range]** är inställt på ett alternativ som är relativt till det primära datumintervallet (t.ex. [!UICONTROL **Föregående dag**], [!UICONTROL **Samma dag förra veckan**], [!UICONTROL **Samma dag fyra veckor före**] o.s.v.) kommer eventuella uppdateringar av fältet [!UICONTROL **Primärt datumintervall**] automatiskt att uppdatera till perioden som omedelbart kommer efter panelens datumintervall.**[!UICONTROL Comparison date range]**
+   >* **Fast:** Om fältet [!UICONTROL **Jämförelsedatumintervall**] är inställt på ett fast datumintervall (t.ex. **3 februari 2023**) har ändringar som gjorts i fältet [!UICONTROL **Primärt datumintervall**] eller panelens datumintervall ingen effekt på [!UICONTROL **Jämförelsedatumintervallet**]. Alla uppdateringar av panelens datumintervall gör dock att [!UICONTROL **primärt datumintervall**] uppdateras automatiskt.
+
+1. Välj **[!UICONTROL Build]**.
 
 ## Visa utdata
 
@@ -56,11 +63,11 @@ Utdata ska se ut ungefär så här:
 
 ![](assets/key-metric-output.png)
 
-Observera:
+Tänk på följande när du visar utdata:
 
 * Linjediagrammet **[!UICONTROL Previous period]** (visas alltid i grått) motsvarar **[!UICONTROL Comparison date range]** i konfigurationssteget.
 
-* Om ett jämförelsedatumintervall inte anges under konfigurationen eller döljs i visualiseringsinställningarna, visas bara linjediagrammet för det primära datumintervallet. Sammanfattningsändringen döljs.
+* Om ett jämförelsedatumintervall inte anges under konfigurationen eller döljs i visualiseringsinställningarna, visas bara linjediagrammet för det primära datumintervallet. Sammanfattningsändringen är dold.
 
 * Härifrån kan du hovra över linjediagrammen för att se statistik för enskilda dagar:
 
@@ -78,12 +85,12 @@ Sammanfattningen av nyckeltal erbjuder flera flexibla inställningar för bättr
 | **[!UICONTROL Emphasize number value]** | Visa sammanfattningsnummer i framträdande fetstil i mitten av visualiseringen |
 | **[!UICONTROL Legend visible]** | Visa eller dölj teckenförklaringen längst ned i visualiseringen |
 | **[!UICONTROL Show annotations]** | Visa eller dölj anteckningar som lagts till av en administratör |
-| **[!UICONTROL Show sparklines]** | Visa eller dölj linjediagram längst ned i diagrammet. När teckenförklaringen är dold ändras den inte längre till att referera till raderna visuellt |
+| **[!UICONTROL Show sparklines]** | Visa eller dölj linjediagram längst ned i diagrammet. När teckenförklaringen är dold ändras den inte längre till att visa en referens till raderna |
 | **[!UICONTROL Show min and max on sparklines]** | Visa eller dölj lägsta och högsta värden i primära och jämförande raddiagram |
 | **[!UICONTROL Show comparison]** | Visa eller dölj jämförelsedata. När det är dolt döljs både jämförelsetabellen och de sammanfattande ändringsobjekten. |
 | **[!UICONTROL Show total number]** | Visa eller dölj sammanfattningsnummer |
 | **[!UICONTROL Show raw difference]** | Visa eller dölj den obearbetade skillnaden mellan det totala värdet för måttet i det primära datumintervallet och det sekundära datumintervallet |
-| **[!UICONTROL Abbreviate value]** | Förkorta talvärdena för att förenkla kommunikationen (t.ex. 20 000 -> 20 kB) |
+| **[!UICONTROL Abbreviate value]** | Förkorta talvärdena för att förenkla kommunikationen (till exempel 20 000 -> 20 kB) |
 
 ## Redigera visualisering
 
