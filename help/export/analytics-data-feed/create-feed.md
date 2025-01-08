@@ -3,7 +3,7 @@ title: Skapa en datafeed
 description: Lär dig hur du skapar en datafeed och om filinformationen som ska skickas till Adobe.
 feature: Data Feeds
 exl-id: 36c8a40e-6137-4836-9d4b-bebf17b932bc
-source-git-commit: 0eef1b1269dcfbc7648127602bdfe24d4789f4b7
+source-git-commit: 808ab76ee3f7c7451f8b3569c282abebbc9ac32f
 workflow-type: tm+mt
 source-wordcount: '4124'
 ht-degree: 0%
@@ -15,12 +15,9 @@ ht-degree: 0%
 När du skapar en datafeed kan du ge Adobe:
 
 * Information om målet dit du vill skicka rådatafiler
-
 * De data som du vill inkludera i varje fil
 
->[!NOTE]
->
->Innan du skapar en datafeed är det viktigt att du har en grundläggande förståelse för dataflöden och att du ser till att alla krav uppfylls. Mer information finns i [Översikt över dataflöden](data-feed-overview.md).
+Innan du skapar en datafeed är det viktigt att du har en grundläggande förståelse för dataflöden och att du ser till att alla krav uppfylls. Mer information finns i [Översikt över dataflöden](data-feed-overview.md).
 
 ## Skapa och konfigurera en datafeed
 

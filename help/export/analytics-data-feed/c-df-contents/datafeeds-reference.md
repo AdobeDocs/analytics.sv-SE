@@ -5,9 +5,9 @@ subtopic: data feeds
 title: Referens för datakolumn
 feature: Data Feeds
 exl-id: e1492147-6e7f-4921-b509-898e7efda596
-source-git-commit: 9138a6ae20b5c74a5eaf3b11fb7fcc406d9605e7
+source-git-commit: 808ab76ee3f7c7451f8b3569c282abebbc9ac32f
 workflow-type: tm+mt
-source-wordcount: '3570'
+source-wordcount: '3607'
 ht-degree: 0%
 
 ---
@@ -229,7 +229,7 @@ Tidigare uppdateringar av den här tabellen finns på den här sidans [implement
 | **`videoqoedroppedframecountevar`** | [Släppta bildrutor](/help/components/dimensions/sm-quality.md) Direktuppspelande media-dimension. | varchar(255) |
 | **`videoqoeerrorcountevar`** | Dimensionen [Fel](/help/components/dimensions/sm-quality.md) för direktuppspelning av media. | varchar(255) |
 | **`videoqoeextneralerrors`** | [Externa fel-ID:n](/help/components/dimensions/sm-quality.md) för mediedimension för direktuppspelning. Denna dimension tillåter flera värden i samma träff. | text |
-| **`videoqoeplayersdkerrors`** | [Player SDK-fel-ID:n](/help/components/dimensions/sm-quality.md) för mediedimension för direktuppspelning. Den här dimensionen tillåter flera värden i samma träff. | SMS |
+| **`videoqoeplayersdkerrors`** | [Player SDK-fel-ID:n](/help/components/dimensions/sm-quality.md) för direktuppspelningsmedia. Den här dimensionen tillåter flera värden i samma träff. | SMS |
 | **`videoqoetimetostartevar`** | Dimensionen Tid [för att starta](/help/components/dimensions/sm-quality.md) direktuppspelning av media. | varchar(255) |
 | **`videoseason`** | Dimensionen [Säsongsströmmande](/help/components/dimensions/sm-video-metadata.md) media. | varchar(255) |
 | **`videosegment`** | Dimensionen för direktuppspelande media i [innehållssegmentet](/help/components/dimensions/sm-core.md). | varchar(255) |
@@ -259,7 +259,7 @@ Tidigare uppdateringar av den här tabellen finns på den här sidans [implement
 
 ## Oanvända eller indragna kolumner
 
-Följande kolumnlista används inte och innehåller vanligtvis inga data. Kolumner som innehåller data stöds inte av aktuella datainsamlingsbibliotek och är inte tillgängliga i Analysis Workspace.
+Följande kolumnlista är oanvända, indragna eller innehåller inget värde i rapporteringen. Vissa av dessa kolumner är kopplade till funktioner som har solnedgångar, medan andra inte längre behövs på grund av nya och mer robusta funktioner. De flesta av dessa kolumner innehåller inga data. Kolumner som fortfarande kan innehålla data stöds inte av aktuella datainsamlingsbibliotek och är inte tillgängliga dimensioner i Analysis Workspace.
 
 * `adclassificationcreative`
 * `click_action`
@@ -338,6 +338,7 @@ Följande kolumnlista används inte och innehåller vanligtvis inga data. Kolumn
 * `plugins`
 * `prev_page`
 * `product_merchandising`
+* `sampled_hit`
 * `service`
 * `socialaccountandappids`
 * `socialassettrackingcode`
