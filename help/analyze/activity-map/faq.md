@@ -4,9 +4,9 @@ description: Frågor och svar om Activity Map.
 feature: Activity Map
 role: User, Admin
 exl-id: 6b2767cb-6c2c-4bf3-b9a9-a23418624650
-source-git-commit: 64964972410911c2bea1460039def39b7c6dfa38
+source-git-commit: f242ec6613cf046224f76f7edc7813a34c65fff8
 workflow-type: tm+mt
-source-wordcount: '1036'
+source-wordcount: '1054'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ Activity Map har stöd för den senaste versionen av de flesta moderna webbläsa
 
 +++Ökar Activity Map serveranrop?
 
-Activity Map skickar inte serversamtal själv. I stället inkluderas datavariabler för kontext i Activity Map i sidvisningsanropen för Analytics på efterföljande sida. Vissa tidigare versioner av Activity Map på Web SDK skickar dock ett separat anrop för data från Activity Map. Om du använder den senaste versionen av Web SDK sammanfogas data från Activity Map med följande händelse.
+Activity Map skickar inte serversamtal själv. I stället inkluderas datavariabler för kontext i Activity Map i sidvisningsanropen för Analytics på efterföljande sida. Vissa tidigare versioner av Activity Map på webben SDK skickar dock ett separat anrop till Activity Map data. Om du använder den senaste versionen av Web SDK sammanfogas data från Activity Map med följande händelse.
 
 +++
 
@@ -137,8 +137,8 @@ Ja. På grund av begränsningar i den virtuella rapportsviten är dock inte Acti
 
 Vilken metod som ska avaktiveras för Activity Map beror på vilken implementeringstyp du har:
 
-* **Web SDK-tillägg**: Avmarkera rutorna **[!UICONTROL Collect internal link clicks]**, **[!UICONTROL Collect external link clicks]** och **[!UICONTROL Collect download link clicks]** i inställningarna för tilläggskonfigurationen.
-* **JavaScript-bibliotek för Web SDK**: Ange [`clickCollectionEnabled`](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/clickcollectionenabled) till `false`.
+* **Webbtillägg för SDK**: Avmarkera kryssrutorna **[!UICONTROL Collect internal link clicks]**, **[!UICONTROL Collect external link clicks]** och **[!UICONTROL Collect download link clicks]** i inställningarna för tilläggskonfigurationen.
+* **Webbbibliotek för SDK JavaScript**: Ange [`clickCollectionEnabled`](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/clickcollectionenabled) till `false`.
 * **Analystillägg**: Avmarkera kryssrutan **[!UICONTROL Use Activity Map]** i inställningarna för tilläggskonfigurationen.
 * **AppMeasurement**: Ta bort eller kommentera bort modulen Activity Map i `AppMeasurement.js`, eller skriv över modulfunktionsanropet med en tom brödtext:
 
@@ -203,7 +203,11 @@ Nedan följer några exempel där Activity Map har all information som krävs f�
 
 +++Vilka är några exempel på länkar som INTE spåras automatiskt i Activity Map?
 
-Nedan följer några exempel där Activity Map inte kan spåra klickningar.
+* Ankartaggen har ingen giltig `href`
+* Det finns varken någon [`s_objectID`](/help/implement/vars/page-vars/s-objectid.md)- eller [`tl()`](/help/implement/vars/functions/tl-method.md)-metod
+* Egenskapen `src` saknas för ett formulärelement
+
+Nedan följer några exempel där Activity Map inte kan spåra klickningar:
 
 ```html
 <!-- Anchor tag does not have a valid href -->

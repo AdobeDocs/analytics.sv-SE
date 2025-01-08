@@ -3,9 +3,9 @@ title: eVar (dimension)
 description: En anpassad dimension som du kan använda vid rapportering.
 feature: Dimensions
 exl-id: ce7cc999-281d-4c52-b64d-d44cc320ab2d
-source-git-commit: d095628e94a45221815b1d08e35132de09f5ed8f
+source-git-commit: ec077b3404c6bff1198fae30a2d25321de8a58cd
 workflow-type: tm+mt
-source-wordcount: '822'
+source-wordcount: '850'
 ht-degree: 0%
 
 ---
@@ -14,15 +14,15 @@ ht-degree: 0%
 
 *Den här hjälpsidan beskriver hur eVars fungerar som en [dimension](overview.md). Mer information om hur du implementerar eVars finns i [eVars](/help/implement/vars/page-vars/evar.md) i användarhandboken för Implementering.*
 
-Variabler är anpassade variabler som du kan använda hur du vill. Om du har ett [lösningsdesigndokument](/help/implement/prepare/solution-design.md) blir de flesta dimensioner som är specifika för din organisation [!UICONTROL eVars], utöver standarddimensionen som är tillgänglig med Adobe Analytics, till exempel Sidnamn, Referensdomän, Kanal. Mer information finns i [Översikt över Dimension](overview.md).
+Variabler är anpassade variabler som du kan använda hur du vill. Om du har ett [lösningsdesigndokument](/help/implement/prepare/solution-design.md) blir de flesta dimensioner som är specifika för din organisation [!UICONTROL eVars]. Mer information finns i [Översikt över Dimensioner](overview.md).
 
-Som standard kvarstår eVars utanför den träff de är inställda på. Du kan anpassa deras förfallodatum och allokering under [Konverteringsvariabler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/conversion-var-admin.md) i [!UICONTROL Report suite settings]. Nedan finns ett exempel på definitioner av eVar i användargränssnittet för konverteringsvariabler.
+Som standard kvarstår eVars utanför den träff som de är inställda på. Se avsnitten [How eVars work](#how-evars-work) and [How eVars tie to metrics](#how-evars-tie-to-metrics) nedan för mer information om hur eVar persistence fungerar i Adobe-arkitekturen. Du kan anpassa deras förfallodatum och allokering under [Konverteringsvariabler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/conversion-var-admin.md) i [!UICONTROL Report suite settings]. I följande bild visas ett exempel på definitioner av eVar i gränssnittet för konverteringsvariabler:
 
 ![Evar-exempel](assets/evars-sample.png)
 
 Antalet tillgängliga eVars-variabler beror på ditt avtal med Adobe. Upp till 250 eVars är tillgängligt om ditt avtal med Adobe stöder det.
 
-Det (övre eller nedre) fall som används vid rapportering baseras på det första värdet som serverdelssystemet registrerar. Värdet kan antingen vara den första förekomsten någonsin eller variera med en tidsperiod (t.ex. en månad), beroende på mängden data som är kopplad till rapportsviten.
+Det (övre eller nedre) skiftläge som används i rapporter baseras på det första värdet som du skickar under en viss kalendermånad. Fallen kan ändras beroende på vilket rapporteringsfönster som visas och när ett eVar-värde som samlas in först under den tiden.
 
 ## Fyll i eVars med data
 
@@ -45,7 +45,7 @@ Under nästan alla omständigheter används kolumnen `post_evar` i rapporter.
 
 ### Hur eVars knyter till mätvärden
 
-Framgångshändelser och eVars definieras ofta i olika bildbegäranden. Kolumnen `post_evar` tillåter att eVar-värden knyter sig till händelser och visar data i rapporter. Ta till exempel följande besök:
+Framgångshändelser och eVars definieras ofta vid olika tidpunkter. Kolumnen `post_evar` tillåter att eVar-värden knyter sig till händelser och visar data i rapporter. Ta till exempel följande besök:
 
 1. En besökare kommer till din webbplats på din hemsida.
 2. De söker efter &quot;katter&quot; med hjälp av webbplatsens interna sökning. Implementeringen använder eVar1 för intern sökning.
@@ -78,8 +78,10 @@ Verktyg i Adobe Analytics, t.ex. Analysis Workspace, arbetar med dessa insamlade
 
 Analysis Workspace hämtar denna rapport med hjälp av följande logik:
 
-* Titta igenom alla `event_list`-värden och välj ut alla träffar med `purchase` i dem.
-* Visa värdet `post_evar1` av dessa träffar.
+* Titta igenom alla `event_list`-värden och välj ut alla rader med `purchase` i dem.
+* Visa värdet `post_evar1` av dessa rader.
+
+I den resulterande rapporten visas varje värde i `post_evar1` till vänster och hur många order som tilldelats det värdet till höger.
 
 ### Betydelsen av tilldelning och förfallodatum
 

@@ -3,7 +3,7 @@ description: När en rapport har många unika värden använder Adobe måttobjek
 title: Lågtrafikvärde i Adobe Analytics
 feature: Metrics, Data Configuration and Collection
 exl-id: 6c3d8258-cf75-4716-85fd-ed8520a2c9d5
-source-git-commit: ba0d4c0897ab50ab40cdfdfbffe50f6cf3bd8c7b
+source-git-commit: f242ec6613cf046224f76f7edc7813a34c65fff8
 workflow-type: tm+mt
 source-wordcount: '753'
 ht-degree: 0%
@@ -17,13 +17,13 @@ När en rapport har många unika värden tillhandahåller Adobe funktioner som s
 ## Så här fungerar [!UICONTROL Low-Traffic]
 
 * Adobe Analytics använder två tröskelvärden för att avgöra vilka unika värden som visas i rapporter varje månad: A **[!UICONTROL low threshold]** och a **[!UICONTROL high threshold]**. Dessa tröskelvärden kan justeras av Adobe då och då. De nuvarande tröskelvärdena är:
-   * **[!UICONTROL Low threshold]**: >2 000 000 unika värden under månaden.
-   * **[!UICONTROL High threshold]**: >2 100 000 unika värden under månaden.
-* Rapporteringen påverkas inte om variabeln inte når det låga tröskelvärdet under en viss månad.
-* När en variabel når det låga tröskelvärdet börjar data att paketeras under [!UICONTROL Low-Traffic]. Varje värde som ligger utanför detta tröskelvärde följer följande logik:
+   * **[!UICONTROL Low threshold]**: 2 000 000 unika värden under månaden.
+   * **[!UICONTROL High threshold]**: 2 100 000 unika värden under månaden.
+* Rapporteringen påverkas inte om en variabel inte når det låga tröskelvärdet under en viss månad.
+* När en variabel når det lägsta tröskelvärdet börjar data att paketeras under ett dimensionsobjekt med namnet [!UICONTROL Low-Traffic]. Varje värde som ligger utanför detta tröskelvärde följer följande logik:
    * Om ett värde redan visas i rapporter lägger du till det värdet som vanligt.
-   * Om ett värde ännu inte visas i rapporter är det till att börja med spärrat i dimensionsobjektet [!UICONTROL Low-Traffic].
-   * Om ett värde som är paketerat under [!UICONTROL Low-Traffic] tar emot ett trafikflöde (vanligtvis instanser med dubbla siffror under en dag), identifieras det som sin egen dimensionspost. Instanser som samlats in innan tröskelvärdet uppnåddes blir fortfarande under [!UICONTROL Low-Traffic]. Den exakta punkt där dimensionsobjektet börjar visas i rapporter har många beroenden, till exempel antalet servrar som bearbetar data för rapportsviten och tiden mellan varje dimensionsobjektsinstans.
+   * Om ett värde ännu inte visas i rapporter lägger du till det i dimensionsobjektet [!UICONTROL Low-Traffic].
+   * Om ett värde som är paketerat under [!UICONTROL Low-Traffic] tar emot ett inflöde av trafik (vanligtvis instanser med dubbla siffror under en dag), identifierar du det som dess eget dimensionsobjekt. Instanser som samlats in före inflödet av trafik blir kvar under [!UICONTROL Low-Traffic]. Den exakta punkt där dimensionsobjektet börjar visas i rapporter har många beroenden, till exempel antalet servrar som bearbetar data för rapportsviten och tiden mellan varje dimensionsobjektsinstans.
 * Om en variabel når det höga tröskelvärdet används mer aggressiv filtrering. Unika värden kräver instanser i de tre siffrorna på en dag innan de identifieras som sina egna dimensionsobjekt.
 
 Tack vare den här logiken kan Adobe optimera rapporteringsfunktionerna samtidigt som organisationen kan rapportera viktiga dimensionsobjekt som samlas in senare under månaden. Om din organisation till exempel kör en webbplats med miljontals artiklar och en ny artikel blir populär mot slutet av månaden (efter att ha överskridit båda unika tröskelvärden), kan du fortfarande analysera prestanda för den artikeln utan att den paketeras under [!UICONTROL Low-Traffic]. Den här logiken är inte avsedd att ta bort allt som får ett visst antal sidvisningar per dag eller månad.
@@ -31,7 +31,7 @@ Tack vare den här logiken kan Adobe optimera rapporteringsfunktionerna samtidig
 >[!NOTE]
 >Dimensionen [Sida](../components/dimensions/page.md) använder flera backend-kolumner som alla räknar mot unika tröskelvärden, inklusive `pagename`, `page_url`, `first_hit_pagename`, `first_hit_page_url`, `visit_pagename`, `visit_page_url` och `click_context`. Dessa backend-kolumner kan göra att [!UICONTROL Low-Traffic]-logik används långt innan antalet unika sidodimensionsobjekt i Workspace når det låga tröskelvärdet.
 
-Observera att den lågtrafiklogik som beskrivs ovan fungerar bäst med variabler som har dimensionsobjekt som återkommer många gånger under månaden. Om en variabels dimensionsposter är nästan eller helt unika för varje träff, kommer variabeln att nå det låga tröskelvärdet snabbt och alla nya dimensionsposter för månaden kommer att hamna i lågtrafikpytsen.
+Observera att lågtrafiklogik fungerar bäst med variabler som har dimensionsobjekt som upprepas många gånger under månaden. Om en variabels dimensionsobjekt är nästan eller helt unika för varje träff når variabelns antal unika värden både tröskelvärden snabbt och alla efterföljande dimensionsobjekt för månaden hamnar i lågtrafikpytsen.
 
 ## Ändra unika gränströsklar
 

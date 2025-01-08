@@ -4,9 +4,9 @@ description: Hur olika typer av attribuering delar upp kredit mellan dimensionsp
 feature: Attribution
 role: User, Admin
 exl-id: f36de41e-1c53-477d-b326-528fbd4ec9ec
-source-git-commit: 505995973beb2dab1ac2aa4521210b650e3a6988
+source-git-commit: e18fde22f4ec60b292f47112e51fad8a0d78acb2
 workflow-type: tm+mt
-source-wordcount: '1554'
+source-wordcount: '1602'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ Ett uppslagsfönster är den tid som en konvertering bör titta tillbaka för at
 
 * **Besökarfönstret:** Utser vid alla besök fram till den 1 i månaden av det aktuella datumintervallet. Besöksfönster är breda, eftersom de kan omfatta många besök. Vid sökning efter besökare beaktas alla värden från början av månaden i rapportens datumintervall. Om rapportens datumintervall till exempel är 15 september - 30 september, inkluderar datumintervallet för besökarens sökning 1 september - 30 september.
 
-* **Anpassat uppslagsfönster:** Gör att du kan expandera attribueringsfönstret efter rapportdatumintervallet, upp till högst 90 dagar. Anpassade uppslagsfönster utvärderas för varje konvertering under rapporteringsperioden. För en konvertering som inträffar den 20 februari skulle ett uppslagsfönster på 10 dagar utvärdera alla dimensionskontaktytor från den 10 februari till den 20 februari i attribueringsmodellen.
+* **Anpassat uppslagsfönster:** Gör att du kan expandera attribueringsfönstret efter rapportdatumintervallet, upp till högst 90 dagar. Anpassade uppslagsfönster utvärderas för varje konvertering under rapporteringsperioden. För en konvertering som inträffar den 20 februari skulle ett uppslagsfönster på 10 dagar utvärdera alla dimensionskontaktytor från 10 februari till 20 februari i attribueringsmodellen.
 
   Här är en video om anpassade uppslagsfönster:
 
@@ -76,6 +76,7 @@ Beroende på ditt uppslagsfönster och din attribueringsmodell får kanalerna ol
       * E-post: 33,8 % får 16,88 USD
       * Socialt: 18,6 %, får 9,32 USD
       * Betalsökning: 13,8 %, får 6,92 USD
+* Med **Deltagande** och ett **besökarfönster** tilldelas de fullständiga 50 USD till betalsökningar, sociala medier, e-post och visning. Om ni ser intäkten som en trendrapport istället för en rankad rapport ser ni 50 dollar varje dag som besökaren rörde vid en viss marknadsföringskanal.
 
 >[!TIP]
 >
