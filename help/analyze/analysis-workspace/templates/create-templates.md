@@ -6,9 +6,9 @@ role: User, Admin
 hide: true
 hidefromtoc: true
 exl-id: 905aa2eb-1963-4227-b18c-33e3a4c66111
-source-git-commit: 4b124c628d7cbe67807b9a080362a31e68ee923c
+source-git-commit: f56836bb5c9e83ec3b0eee8e118f9781cd9588ab
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '641'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,6 @@ Så här skapar du en ny mall som kan användas av personer i ditt inloggningsf�
    | **[!UICONTROL Name]** | Ange ett beskrivande namn för mallen. |
    | **[!UICONTROL Description]** | Ange en kort beskrivning av mallen som beskriver dess avsedda användning. |
    | **[!UICONTROL Why use this template]** | Ge en kort förklaring för att informera personer i organisationen om hur den här mallen kan användas. Den här förklaringen visas på mallens förhandsgranskningssida. |
-   | **[!UICONTROL Channels]** | Välj de kanaler som gäller för den här mallen. Du kan välja flera kanaler: **[!UICONTROL Web]**, **[!UICONTROL Mobile]**, **[!UICONTROL Cross-channel]**, **[!UICONTROL Call center]** och **[!UICONTROL In-store]**.<p>De val du väljer avgör var mallen visas och vilka filter som gäller för användare som använder den från sidan Organisationsmallar.</p> |
    | **[!UICONTROL Use cases]** | Välj de användningsfall som gäller för den här mallen. Du kan välja flera användningsfall: **[!UICONTROL Engagement]**, **[!UICONTROL Conversion]**, **[!UICONTROL Audience]** och **[!UICONTROL Acquisition]**. <p>De val du väljer avgör var mallen visas och vilka filter som gäller för användare som använder den från sidan Organisationsmallar.</p> |
    | **[!UICONTROL Tags]** | Ange de taggar som du vill lägga till i mallen. Användarna kan filtrera listan med mallar efter de taggar du lägger till. |
 
@@ -44,7 +43,7 @@ Så här skapar du en ny mall som kan användas av personer i ditt inloggningsf�
 
 Mer information om hur användare kan skapa ett projekt baserat på en mall finns i [Skapa ett projekt baserat på en mall](/help/analyze/analysis-workspace/templates/use-templates.md#create-a-project-based-on-a-template) i [Använda mallar](/help/analyze/analysis-workspace/templates/use-templates.md).
 
-## Redigera eller ta bort mallar
+## Redigera eller ta bort en mall
 
 Administratörer kan redigera eller ta bort företagsmallar.
 
@@ -71,6 +70,22 @@ Administratörer kan redigera eller ta bort företagsmallar.
    1. Välj ikonen Mer och välj sedan **[!UICONTROL Edit]** eller **[!UICONTROL Delete]**.
 
       ![Redigera eller ta bort företagsmallkort](assets/company-template-card-edit-delete.png)
+
+1. Om du redigerar en mall gör du önskade ändringar och väljer sedan [!UICONTROL **Projekt**] > **[!UICONTROL Save as template…]**.
+
+   ![Företagsmall](assets/company-template-save.png)
+
+1. Ange följande information i dialogrutan [!UICONTROL Save as template]:
+
+   | Fält | Beskrivning |
+   |---------|----------|
+   | **[!UICONTROL Name]** | Ange ett beskrivande namn för mallen. |
+   | **[!UICONTROL Description]** | Ange en kort beskrivning av mallen som beskriver dess avsedda användning. |
+   | **[!UICONTROL Why use this template]** | Ge en kort förklaring för att informera personer i organisationen om hur den här mallen kan användas. Den här förklaringen visas på mallens förhandsgranskningssida. |
+   | **[!UICONTROL Use cases]** | Välj de användningsfall som gäller för den här mallen. Du kan välja flera användningsfall: **[!UICONTROL Engagement]**, **[!UICONTROL Conversion]**, **[!UICONTROL Audience]** och **[!UICONTROL Acquisition]**. <p>De val du väljer avgör var mallen visas och vilka filter som gäller för användare som använder den från sidan Organisationsmallar.</p> |
+   | **[!UICONTROL Tags]** | Ange de taggar som du vill lägga till i mallen. Användarna kan filtrera listan med mallar efter de taggar du lägger till. |
+
+1. Välj [!UICONTROL **Spara som mall**].
 
 ## Byta namn på, tagga eller godkänna mallar
 
