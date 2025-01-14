@@ -3,9 +3,9 @@ description: Beskriver hur du migrerar komponenter och projekt från Adobe Analy
 title: Migrera komponenter och projekt från Adobe Analytics till Customer Journey Analytics
 feature: Admin Tools
 exl-id: 49c7e47a-464b-4465-9b30-d77f886ca6dc
-source-git-commit: 03c8b0e08ac524216d7d9383fa12751e573601ee
+source-git-commit: 9e3c82214256a37df311f31c886a52f1ec8398b5
 workflow-type: tm+mt
-source-wordcount: '1398'
+source-wordcount: '1453'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ Innan du migrerar några projekt till Customer Journey Analytics bör du lära d
 
 1. I fältet [!UICONTROL **Projektägare**] börjar du skriva namnet på den användare som du vill ange som projektägare i Customer Journey Analytics och markerar sedan namnet i listrutan.
 
-   Ägaren som du anger har fullständig behörighet till projektet.
+   Ägaren som du anger har fullständig behörighet till projektet. Ägaren måste vara administratör i Customer Journey Analytics. Du kan ändra ägarskapet för projektet i ett senare steg.
 
 1. Välj en rapportsvit i [!UICONTROL **Kartschemat för rapportsviter**].
 
@@ -119,6 +119,8 @@ Innan du migrerar några projekt till Customer Journey Analytics bör du lära d
    När en migrering har slutförts ger sidan [!UICONTROL **Migreringsstatus**] en sammanfattning av vad som migrerades.
 
    Om migreringen misslyckas finns mer information i avsnittet [Försök igen med en misslyckad migrering](#retry-a-failed-migration) nedan.
+
+1. (Valfritt) När ett projekt har migrerats kan du överföra ägarskapet för projektet till valfri användare i Customer Journey Analytics. Mer information finns i [Överför resurser](https://experienceleague.adobe.com/en/docs/analytics-platform/using/tools/asset-transfer/transfer-assets) i handboken för Customer Journey Analytics.
 
 ## Försök att utföra migreringen igen
 
