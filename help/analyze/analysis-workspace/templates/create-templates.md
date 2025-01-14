@@ -3,12 +3,10 @@ description: En översikt över hur du använder standardrapporter i Analysis Wo
 title: Använd rapporter
 feature: Analysis Workspace
 role: User, Admin
-hide: true
-hidefromtoc: true
 exl-id: 905aa2eb-1963-4227-b18c-33e3a4c66111
-source-git-commit: f56836bb5c9e83ec3b0eee8e118f9781cd9588ab
+source-git-commit: 436b2ced6335b5d4b3d8acd4bdb026d7db1d7ad8
 workflow-type: tm+mt
-source-wordcount: '641'
+source-wordcount: '663'
 ht-degree: 0%
 
 ---
@@ -118,3 +116,10 @@ Administratörer kan byta namn på, tagga och godkänna företagsmallar.
 Precis som med mallar från Adobe kan användare i organisationen komma åt mallar som administratörer skapar.
 
 Mer information om hur du får åtkomst till en företagsmall finns i [Åtkomst till och kör en mall](/help/analyze/analysis-workspace/templates/use-templates.md#access-and-run-a-template) i [Använd mallar](/help/analyze/analysis-workspace/templates/use-templates.md).
+
+## Dölj fliken Mallar {#hide-reports}
+
+Administratörer kan dölja fliken Mallar för alla användare i organisationen.
+
+1. Gå till **[!UICONTROL Analytics]** > **[!UICONTROL Components]** > **[!UICONTROL Preferences]** > **[!UICONTROL Company]**.
+1. Välj alternativet för **[!UICONTROL Hide Templates Tab]**.

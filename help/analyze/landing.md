@@ -4,24 +4,24 @@ title: Adobe Analytics landningssida
 role: User, Admin
 feature: Analytics Basics
 exl-id: 0a2fb778-491a-4dc3-aae4-afadb3ab1a1e
-source-git-commit: 416725e01f469e3fafc1d52971535ab63e998f5f
+source-git-commit: 436b2ced6335b5d4b3d8acd4bdb026d7db1d7ad8
 workflow-type: tm+mt
-source-wordcount: '1760'
+source-wordcount: '1608'
 ht-degree: 0%
 
 ---
 
 # Adobe Analytics landningssida
 
-Landningssidan för Adobe Analytics sammanför både [!DNL Analysis Workspace] och [!DNL Reports & Analytics] (slutet av livscykeln) i ett enda gränssnitt och en åtkomstpunkt under paraplyet [!DNL Workspace]. Här finns en startsida för projektledare, en uppdaterad rapportmeny, uppdaterade rapporter och en utbildningssektion som hjälper dig att komma igång på ett effektivare sätt. Här är en videoöversikt:
+Landningssidan för Adobe Analytics sammanför både [!DNL Analysis Workspace] och [!DNL Reports & Analytics] (slutet av livscykeln) i ett enda gränssnitt och en åtkomstpunkt under paraplyet [!DNL Workspace]. Här finns en startsida för projektledaren, en mallsektion och en utbildningssektion som hjälper dig att komma igång på ett effektivare sätt. Här är en videoöversikt:
 
 >[!VIDEO](https://video.tv.adobe.com/v/334278/?quality=12)
 
-Adobe Analytics landningssida består av följande underflikar: Projekt, rapporter och Utbildning.
+Adobe Analytics landningssida består av följande underflikar: Projekt, Mallar och Utbildning.
 
 **[!UICONTROL Projects]** är anpassade designer som kombinerar datakomponenter, tabeller och visualiseringar som du har skapat eller som någon annan har skapat och delat med dig. [!UICONTROL Projects] refererar också till tomma projekt och tomma mobilstyrkort.
 
-**[!UICONTROL Reports]** refererar till allt som är färdigbyggt av Adobe, till exempel mallar i Workspace.
+**[!UICONTROL Templates]** innehåller mallar från Adobe och alla mallar som är specifika för din organisation.
 
 Fliken **[!UICONTROL Learning]** innehåller praktiska videoutgångar, självstudiekurser och länkar till dokumentation.
 
@@ -83,24 +83,13 @@ De tillgängliga kolumnerna är:
 | VISA: Mappar och projekt eller alla projekt | Ändrar visningsinställningen för tabellen så att mappar och projekt visas enligt mapporganisationen **eller**, vilket visar alla dina projekt i en oordnad lista. |
 | &lt; (Bakåt-knappen) | Returnerar dig till den senaste konfigurationen av landningssidan i ett Workspace-projekt eller en rapport. Sidkonfigurationen som du hade när du lämnade landningssidan kommer att finnas kvar när du kommer tillbaka. |
 
-## Navigera på fliken [!UICONTROL Reports] {#navigate-reports}
+## Navigera på fliken [!UICONTROL Templates] {#navigate-reports}
 
-Fliken [!UICONTROL Reports] konsoliderar följande uppsättningar rapporter:
+Mer information om hur du använder mallar i Adobe Analytics finns i följande resurser:
 
-* De fördefinierade [!UICONTROL Workspace]-mallarna som tidigare fanns under [!UICONTROL Workspace] > [!UICONTROL Project] > [!UICONTROL New]. Adobe använder inte längre ordet&quot;mall&quot; i det här sammanhanget.
-* De flesta av de färdiga rapporterna på den tidigare översta menyn i Adobe Analytics [!UICONTROL Reports]. Rapporterna visas nu i [Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html).
+* [Använd mallar](/help/analyze/analysis-workspace/templates/use-templates.md)
 
->[!NOTE]
->
->Tänk på följande när du använder rapporter:
->* Under Rapporter visas en Favoriter-mapp bara om du har markerat en ny rapport som favorit. Inga tidigare favoriter för Rapporter och analyser överförs.
->* Endast de mest använda rapporterna som tidigare grupperats i Rapporter och analyser är tillgängliga. En handfull sällan använda eller inte längre relevanta rapporter finns inte längre tillgängliga. Mer information finns i [Vanliga frågor och svar](#landing-page-faq) nedan.
-
-![Fliken Rapporter](assets/reports-tab2.png)
-
-Mer information om fliken Rapporter i Analysis Workspace, inklusive visning och sparande av rapporter, finns i [Använda färdigbyggda rapporter](/help/analyze/analysis-workspace/reports/use-reports.md).
-
-Mer information om hur du skapar och hanterar anpassade företagsrapporter finns i [Skapa och hantera företagsrapporter](/help/analyze/analysis-workspace/reports/create-company-reports.md).
+* [Skapa och hantera mallar](/help/analyze/analysis-workspace/templates/create-templates.md)
 
 ## Använda fliken Utbildning {#navigate-learning}
 
@@ -130,20 +119,13 @@ Användare kan ange sin favoritlandningssida.
 
    ![Ange landningssida](assets/landing-pref.png)
 
-## Dölj fliken Rapport {#hide-reports}
-
-Administratörer kan dölja fliken Rapporter för alla användare i organisationen.
-
-1. Gå till [!UICONTROL Analytics] > [!UICONTROL Components] > [!UICONTROL Preferences] > [!UICONTROL Company].
-1. Kontrollera **[!UICONTROL Hide Reports Tab]**.
-
 ## Vanliga frågor om landningssidan {#landing-faq}
 
 | Fråga | Svar |
 | --- | --- |
-| Var är mallarna som jag är van vid att se i [!UICONTROL Workspace]? | Mallarna grupperas under fliken [!UICONTROL Reports]. |
+| Var är mallarna som jag är van vid att se i [!UICONTROL Workspace]? | Mallarna grupperas under fliken [!UICONTROL Templates]. |
 | Överför mitt arbete i betaprogrammets användargränssnitt till produktionen [!UICONTROL Workspace]? | Ja, allt arbete som görs i betaversionen överförs till den gamla/aktuella [!UICONTROL Workspace]-upplevelsen. |
 | Överförs mina tidigare favoriter i Rapporter och analyser? | Nej, de förs INTE vidare. Alla [!UICONTROL Workspace]-projektfavoriter överförs dock. |
 | Finns det ett maximalt antal projekt jag kan fästa? | Nej, det finns ingen gräns för hur många projekt du kan fästa. |
 | Kan administratörer ange den här landningssidan för sina användare? | Nej, administratörer kan inte ange landningssidan för användarnas räkning. Enskilda användare måste aktivera växeln själva. |
-| Är alla rapporter som fanns i [!DNL Reports & Analytics] fortfarande tillgängliga? | Nej, följande rapporter har fasats ut baserat på övergripande användningsdata: <ul><li>Anpassade eVars/props/events/classifications<li>Mina rekommenderade rapporter</li><li>unika besökare varje timme/dag/vecka/månad/kvartal/år</li><li>unika kunder varje vecka/månad/kvartal/år</li><li>Åtgärdsnamn - djup</li><li>Sammanfattning av åtgärdsnamn</li><li>Lägg till instrumentpanel</li><li>Ålder</li><li>Stöd för ljud</li><li>Faktureringsinformation</li><li>Klicka på sidan</li><li>Färgdjup</li><li>Cookie-stöd</li><li>Cookies</li><li>Anslutningstyper</li><li>Kreativa element</li><li>Kreditkortstyp</li><li>Korsförsäljning</li><li>Anpassade händelsegrupper</li><li>Egna länkar</li><li>Kund-ID</li><li>Veckodag</li><li>Åtgärdsnamn för registrering</li><li>Avsluta åtgärdsnamn</li><li>Avsluta länkar</li><li>Utfall</li><li>Filnedladdningar</li><li>Sök i butik</li><li>Fullständiga banor</li><li>Kön</li><li>Träfftypens VISTA-regel</li><li>Bildstöd</li><li>Java</li><li>JavaScript</li><li>JavaScript</li><li>Hantera bokmärken</li><li>Hantera instrumentpaneler</li><li>Skärmfärgdjup</li><li>Övervaka upplösningar</li><li>Nyhetsbrev - registreringar</li><li>Nästa åtgärdsnamn</li><li>Nästa åtgärdsnamnflöde</li><li>Inga sökningar</li><li>Operativsystem</li><li>Ordergranskning</li><li>Dagens sida</li><li>Sidorna hittades inte</li><li>Banhanteraren</li><li>Banlängd</li><li>Namn på föregående åtgärd</li><li>Namnflöde för föregående åtgärd</li><li>Produktaktivitet</li><li>Produktkostnad</li><li>Produktavdelning</li><li>Produktlagerkategori</li><li>Produktnamn</li><li>Produktrecensioner</li><li>Produktsäsong</li><li>Produktdelningar</li><li>Produktzoomningar</li><li>Läs in igen</li><li>Sökningar</li><li>Servrar</li><li>Besök enstaka sidor</li><li>Leveransinformation</li><li>Platshierarki</li><li>Sociala omnämnanden</li><li>Tid på dagen</li><li>Tid som använts för åtgärdsnamn</li><li>Stöd för video</li><li>Besökarläge</li></ul> |
+| Är alla rapporter som fanns i [!DNL Reports & Analytics] fortfarande tillgängliga som mallar? | Nej, följande rapporter har fasats ut baserat på övergripande användningsdata: <ul><li>Anpassade eVars/props/events/classifications<li>Mina rekommenderade rapporter</li><li>unika besökare varje timme/dag/vecka/månad/kvartal/år</li><li>unika kunder varje vecka/månad/kvartal/år</li><li>Åtgärdsnamn - djup</li><li>Sammanfattning av åtgärdsnamn</li><li>Lägg till instrumentpanel</li><li>Ålder</li><li>Stöd för ljud</li><li>Faktureringsinformation</li><li>Klicka på sidan</li><li>Färgdjup</li><li>Cookie-stöd</li><li>Cookies</li><li>Anslutningstyper</li><li>Kreativa element</li><li>Kreditkortstyp</li><li>Korsförsäljning</li><li>Anpassade händelsegrupper</li><li>Egna länkar</li><li>Kund-ID</li><li>Veckodag</li><li>Åtgärdsnamn för registrering</li><li>Avsluta åtgärdsnamn</li><li>Avsluta länkar</li><li>Utfall</li><li>Filnedladdningar</li><li>Sök i butik</li><li>Fullständiga banor</li><li>Kön</li><li>Träfftypens VISTA-regel</li><li>Bildstöd</li><li>Java</li><li>JavaScript</li><li>JavaScript</li><li>Hantera bokmärken</li><li>Hantera instrumentpaneler</li><li>Skärmfärgdjup</li><li>Övervaka upplösningar</li><li>Nyhetsbrev - registreringar</li><li>Nästa åtgärdsnamn</li><li>Nästa åtgärdsnamnflöde</li><li>Inga sökningar</li><li>Operativsystem</li><li>Ordergranskning</li><li>Dagens sida</li><li>Sidorna hittades inte</li><li>Banhanteraren</li><li>Banlängd</li><li>Namn på föregående åtgärd</li><li>Namnflöde för föregående åtgärd</li><li>Produktaktivitet</li><li>Produktkostnad</li><li>Produktavdelning</li><li>Produktlagerkategori</li><li>Produktnamn</li><li>Produktrecensioner</li><li>Produktsäsong</li><li>Produktdelningar</li><li>Produktzoomningar</li><li>Läs in igen</li><li>Sökningar</li><li>Servrar</li><li>Besök enstaka sidor</li><li>Leveransinformation</li><li>Platshierarki</li><li>Sociala omnämnanden</li><li>Tid på dagen</li><li>Tid som använts för åtgärdsnamn</li><li>Stöd för video</li><li>Besökarläge</li></ul> |
