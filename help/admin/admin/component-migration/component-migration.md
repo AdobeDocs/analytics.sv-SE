@@ -3,9 +3,9 @@ description: Beskriver hur du migrerar komponenter och projekt från Adobe Analy
 title: Migrera komponenter och projekt från Adobe Analytics till Customer Journey Analytics
 feature: Admin Tools
 exl-id: 49c7e47a-464b-4465-9b30-d77f886ca6dc
-source-git-commit: 9e3c82214256a37df311f31c886a52f1ec8398b5
+source-git-commit: 96c202870a4e584cf3625d6e4d40024b787c2f0e
 workflow-type: tm+mt
-source-wordcount: '1453'
+source-wordcount: '1498'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,13 @@ Migreringsprocessen omfattar:
   Vissa dimensioner och mätvärden mappas automatiskt, andra måste du manuellt mappa som en del av migreringsprocessen. Segment migreras också, men de behöver inte mappas som en del av migreringsprocessen.
 
   Alla migrerade komponenter visas i migreringssammanfattningen när migreringen är klar.
+
+>[!NOTE]
+>
+>Informationen på den här sidan beskriver hur du migrerar projekt och deras associerade komponenter till användargränssnittet.
+>
+>Du kan också utföra migreringen med API:erna. Mer information finns i [Adobe Analytics API:er](https://adobedocs.github.io/analytics-2.0-apis/?urls.primaryName=Analytics%202.0%20APIs). Alla API-definitioner är tillgängliga i listrutan **[!UICONTROL Select a definition]**.
+
 
 ## Förbereda för migrering
 
