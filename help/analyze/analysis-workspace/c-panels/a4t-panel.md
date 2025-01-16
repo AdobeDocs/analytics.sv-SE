@@ -4,9 +4,9 @@ title: Analyser för målpanelen (A4T)
 feature: Panels
 role: User, Admin
 exl-id: 36bca104-37b8-43c6-b8d0-b607a9a333cc
-source-git-commit: 9a29057e71627d4c77a1d039d7fd5b0ec9c0f447
+source-git-commit: 7bac64aed46d9d7a83dc61c3f55d33ad56564efe
 workflow-type: tm+mt
-source-wordcount: '1129'
+source-wordcount: '1127'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-*Den här artikeln dokumenterar panelen Analytics for Target i ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg)**Adobe Analytics**.<br/>På [Experimentationspanelen](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/a4t-panel) finns information om hur du jämför olika användarupplevelser, marknadsförings- och meddelandevariationer i ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg)**Customer Journey Analytics**.*
+*Den här artikeln dokumenterar panelen Analytics for Target i **Adobe Analytics**.<br/>På [Experimentationspanelen](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/a4t-panel) finns information om hur du jämför olika användarupplevelser, marknadsförings- och meddelandevariationer i **Customer Journey Analytics**.*
 
 >[!ENDSHADEBOX]
 

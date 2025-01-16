@@ -4,9 +4,9 @@ description: Så här använder och tolkar du panelen Media Concurrent Viewer i 
 feature: Panels
 role: User, Admin
 exl-id: 29575b51-e319-4156-9834-aa0b671afb31
-source-git-commit: ca1e86606454c2f906cef0cc1d1a9d1c67cedf0e
+source-git-commit: 7bac64aed46d9d7a83dc61c3f55d33ad56564efe
 workflow-type: tm+mt
-source-wordcount: '1190'
+source-wordcount: '1188'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-*Den här artikeln visar panelen Medievisningsprogram för samtidig användning i ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg)**Adobe Analytics Analytics**.<br/>Se [Panelen för visningsprogram för samtidiga media](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers) för versionen ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg)**Customer Journey Analytics**av den här artikeln.*
+*Den här artikeln visar panelen Medievisningsprogram för samtidig användning i **Adobe Analytics Analytics**.<br/>Se [Panelen för visningsprogram för samtidiga media](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers) för versionen **Customer Journey Analytics**av den här artikeln.*
 
 >[!ENDSHADEBOX]
 
