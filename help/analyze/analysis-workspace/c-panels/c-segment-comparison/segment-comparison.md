@@ -5,9 +5,9 @@ keywords: Analysis Workspace;Segment IQ
 feature: Segmentation
 role: User, Admin
 exl-id: 1f5df6fb-1e9f-4b8f-885c-bf9e68d88c89
-source-git-commit: 90516181b5d5dd8aa3a8c01515ffa05f43b081f2
+source-git-commit: 60836f5632cfd19d94f33441eaa9d949609d5712
 workflow-type: tm+mt
-source-wordcount: '1212'
+source-wordcount: '1210'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="workspace_segmentcomparison_button"
 >title="Segmentjämförelse"
->abstract="Jämför snabbt två segment över alla datapunkter för att automatiskt hitta relevanta skillnader"
+>abstract="Jämför snabbt två segment över alla datapunkter för att automatiskt hitta relevanta skillnader."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-*I den här artikeln beskrivs panelen Segmentjämförelse i ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg)**Adobe Analytics**.<br/>Det finns ingen motsvarande panel i ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg)**Customer Journey Analytics**.*
+*Den här artikeln visar panelen Segmentjämförelse i **Adobe Analytics**.<br/>Det finns ingen motsvarande panel i **Customer Journey Analytics**.*
 
 >[!ENDSHADEBOX]
 

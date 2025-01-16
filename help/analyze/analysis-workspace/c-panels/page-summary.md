@@ -4,14 +4,33 @@ title: Panelen Sidsammanfattning
 feature: Panels
 role: User, Admin
 exl-id: f0b7cd92-17b2-452d-9aab-f78629360ab8
-source-git-commit: d173a6c6c9751a86f4218ec842da17da14f8485b
+source-git-commit: 33fdd685de21736964d0cbfbc479794a9154e8a3
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '508'
 ht-degree: 0%
 
 ---
 
-# Panelen Sidsammanfattning
+# Panelen Sidsammanfattning {#page-summary}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="workspace_pagesummary_button"
+>title="Sidsammanfattning"
+>abstract="Granska snabbt några av de högnivåstatistik som finns och hur man går från en viss sida till och från en viss sida."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="workspace_pagesummary_panel"
+>title="Panelen Sidsammanfattning"
+>abstract="Granska snabbt några av de högnivåstatistik som finns och hur man går från en viss sida till och från en viss sida.<br/><br/>**Parametrar **<br/>**Lägg till ett siddimensionsobjekt**: Öppna komponentfältet, leta upp siddimensionen och expandera den genom att klicka på moroten för att visa dimensionsobjekten. Dra och släpp sedan den sida du vill veta mer om i verktyget. När du har dragit och släppt dimensionsobjektet fylls rapporten automatiskt i med nyckelinformation om sidan."
+
+<!-- markdownlint-enable MD034 -->
+
 
 På den här panelen kan du enkelt utforska nyckelstatistik om specifika sidor.
 
