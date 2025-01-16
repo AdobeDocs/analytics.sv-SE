@@ -5,14 +5,35 @@ uuid: fc22b573-2d18-4c29-866c-f317c920d27a
 feature: Visualizations
 role: User, Admin
 exl-id: 3a7d1552-7fae-41ae-8ca5-89800d05d3d4
-source-git-commit: d173a6c6c9751a86f4218ec842da17da14f8485b
+source-git-commit: c0855c6bed6a9762c0440e1a8e004ee11020808e
 workflow-type: tm+mt
-source-wordcount: '196'
+source-wordcount: '332'
 ht-degree: 0%
 
 ---
 
-# Flödesöversikt
+# Flödesöversikt {#flow}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="workspace_flow_button"
+>title="Flöde"
+>abstract="Skapa en visualisering för att visa flödet av människor från en kontrollpunkt till nästa."
+
+>[!CONTEXTUALHELP]
+>id="workspace_flow_panel"
+>title="Flöde"
+>abstract="Analysera besöksflödet eller besökarna från en kontaktyta till nästa.<br/><br/>**Parametrar **<br/>**Börjar med**: Lägg till en dimension, dimensionsobjekt eller mätvärden för att se de högsta kontaktytorna efter förekomsten av den markerade komponenten.<br/>**Innehåller**: Lägg till en dimension eller ett dimensionsobjekt om du vill visa de övre kontaktytorna före och efter förekomsten av den markerade komponenten.<br/>**Slutar med**: Lägg till en dimension, dimensionsobjekt eller mätvärde för att se de övre kontaktytorna innan den valda komponenten finns.<br/>**Målningsdimension**: Lägg till en dimension som ska användas som vägleda till eller gå från den markerade komponenten."
+
+<!-- markdownlint-enable MD034 -->
+
+
+>[!BEGINSHADEBOX]
+
+*I den här artikeln dokumenteras Flödesvisualiseringen i **Adobe Analytics**.<br/>Se [Flöde](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/flow/flow) för **Customer Journey Analytics**-versionen av den här artikeln.*
+
+>[!ENDSHADEBOX]
 
 Flödesfunktionen visar kundvägar via era webbplatser och appar.
 

@@ -4,14 +4,30 @@ title: Utfallsöversikt
 feature: Visualizations
 role: User, Admin
 exl-id: 85d0c88e-d159-4870-aaf6-51899d87ff77
-source-git-commit: aba4beb51446cdd54afc92047254a0ddd1c55ce3
+source-git-commit: c0855c6bed6a9762c0440e1a8e004ee11020808e
 workflow-type: tm+mt
-source-wordcount: '229'
-ht-degree: 3%
+source-wordcount: '263'
+ht-degree: 2%
 
 ---
 
-# Utfallsöversikt
+# Utfallsöversikt {#fallout-overview}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="workspace_fallout_button"
+>title="Utfall"
+>abstract="Skapar en visualisering för att visa hur användarna lyckats gå vidare till önskade kontrollpunkter."
+
+<!-- markdownlint-enable MD034 -->
+
+
+>[!BEGINSHADEBOX]
+
+*I den här artikeln dokumenteras utfallsvisualiseringen i **Adobe Analytics**.<br/>Se [Utfall](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/fallout/fallout-flow) för **Customer Journey Analytics**-versionen av den här artikeln.*
+
+>[!ENDSHADEBOX]
 
 Utfallsvisualiseringar ger fler alternativ för att skapa utfallsrapporter. Utfallsrapporter visar var besökarna lämnade (föll ned) och fortsatte igenom (föll igenom) en fördefinierad sidsekvens.
 

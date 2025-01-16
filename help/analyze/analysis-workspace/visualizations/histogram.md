@@ -5,14 +5,31 @@ uuid: 8a6bd2c4-da15-4f64-b889-ab9add685046
 feature: Visualizations
 role: User, Admin
 exl-id: f3dd7507-db2c-495c-b6b9-6c770c7c7ddc
-source-git-commit: 38fb7ec39495b2b8cde4955bd1b3c1d3487632c3
+source-git-commit: c0855c6bed6a9762c0440e1a8e004ee11020808e
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '427'
 ht-degree: 0%
 
 ---
 
-# Histogram
+# Histogram {#histogram}
+
+arkdownlint-disable MD034 —>
+
+>[!CONTEXTUALHELP]
+>id="workspace_histogram_button"
+>title="Histogram"
+>abstract="Skapa en histogramvisualisering som representerar fördelningen av numeriska data i grupper av intervall."
+
+<!-- markdownlint-enable MD034 -->
+
+
+>[!BEGINSHADEBOX]
+
+*I den här artikeln dokumenteras histogramvisualiseringen i **Adobe Analytics**.<br/>Se [Histogram](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/histogram) för **Customer Journey Analytics**-versionen av den här artikeln.*
+
+>[!ENDSHADEBOX]
+
 
 Ett histogram liknar ett stapeldiagram, men det grupperar nummer i intervall (intervall). Analytics automatiserar&quot;paketeringen&quot; av tal i intervall, men du kan ändra inställningarna i [Avancerade inställningar](#section_09D774C584864D4CA6B5672DC2927477).
 

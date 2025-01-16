@@ -4,14 +4,30 @@ description: En visualisering som visar relationen mellan upp till tre mätvärd
 feature: Visualizations
 role: User, Admin
 exl-id: 1144ca89-645d-44aa-a820-4e7fd31912b8
-source-git-commit: 86766c4452a571a7c7b36ad6693a1a1e0bc2deea
+source-git-commit: c0855c6bed6a9762c0440e1a8e004ee11020808e
 workflow-type: tm+mt
-source-wordcount: '118'
+source-wordcount: '156'
 ht-degree: 0%
 
 ---
 
-# Scatterplot
+# Scatterplot {#scatter}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="workspace_scatter_button"
+>title="Spridning"
+>abstract="Skapa en punktvisualisering som visar relationen mellan dimensionsobjekt och upp till tre mätvärden."
+
+<!-- markdownlint-enable MD034 -->
+
+
+>[!BEGINSHADEBOX]
+
+*I den här artikeln dokumenteras Spridningsvisualiseringen i **Adobe Analytics**.<br/>Se [Spridning](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/scatterplot) för versionen **Customer Journey Analytics**av den här artikeln.*
+
+>[!ENDSHADEBOX]
 
 Spridningsvisningen visar förhållandet mellan dimensionsobjekt och upp till tre mätvärden. Den kräver tre komponenter och har stöd för visualisering av upp till fyra komponenter.
 

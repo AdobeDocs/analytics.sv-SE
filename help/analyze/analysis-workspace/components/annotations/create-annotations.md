@@ -4,14 +4,32 @@ description: Så här skapar du anteckningar i Workspace.
 role: Admin
 feature: Annotations
 exl-id: 3cf9a0fd-11c9-4375-8bbe-9551ba86f86d
-source-git-commit: ee4772913c8b702658646755a2a11598c8530236
+source-git-commit: 75d8705170169a0ef9f1ee59b12e4bb2c3afac7a
 workflow-type: tm+mt
-source-wordcount: '573'
+source-wordcount: '646'
 ht-degree: 0%
 
 ---
 
-# Skapa anteckningar
+# Skapa anteckningar {#create-annotations}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="components_annotations_details"
+>title="Anteckningsinformation"
+>abstract="Anteckningar gör att ni effektivt kan kommunicera kontextuella datanunkter och insikter till organisationen. De gör att du kan koppla kalenderhändelser till specifika mått/mätvärden."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="components_annotations_scope"
+>title="Omfång"
+>abstract="Med omfång kan du anpassa vilka data som ska kommenteras. Beräknade mått och segment ärver inte automatiskt anteckningar som tillämpas på komponenter som används i deras definitioner. Du kan lägga till nya beräknade värden i omfångsavsnittet i en befintlig anteckning. Nya segment kräver en ny anteckning."
+
+<!-- markdownlint-enable MD034 -->
 
 Som standard kan bara administratörer skapa anteckningar. Användare har rätt att visa anteckningar på samma sätt som andra Analytics-komponenter (som segment, beräknade värden osv.).
 

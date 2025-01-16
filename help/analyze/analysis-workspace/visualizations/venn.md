@@ -5,14 +5,30 @@ uuid: 0a743378-f588-417f-9108-4a1313d6bfeb
 feature: Visualizations
 role: User, Admin
 exl-id: b5d6a822-e569-433e-990a-16e6cae12bbb
-source-git-commit: 5454995fb9d6e63fb19e2272f66f3c96bf951ccb
+source-git-commit: c0855c6bed6a9762c0440e1a8e004ee11020808e
 workflow-type: tm+mt
-source-wordcount: '106'
+source-wordcount: '145'
 ht-degree: 0%
 
 ---
 
-# Venn
+# Venn {#venn}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="workspace_venn_button"
+>title="Venn"
+>abstract="Skapa en visualisering av venndiagram för att snabbt jämföra visuellt två element och storleken på deras överlappning."
+
+<!-- markdownlint-enable MD034 -->
+
+
+>[!BEGINSHADEBOX]
+
+*I den här artikeln beskrivs Vennbildens visualisering i **Adobe Analytics**.<br/>Se [Vennn](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/venn) för **Customer Journey Analytics**-versionen av den här artikeln.*
+
+>[!ENDSHADEBOX]
 
 Med visualiseringen [!UICONTROL Venn] kan du dra i upp till tre segment (från [!UICONTROL Components]) och ett mätvärde för att skapa ett [!UICONTROL Venn]-diagram.
 

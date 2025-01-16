@@ -3,14 +3,62 @@ description: I Segment Builder finns en arbetsyta där du kan dra och släppa me
 title: Skapa segment
 feature: Segmentation
 exl-id: 2107f301-4137-4e97-9aa7-07824b842e16
-source-git-commit: aac5421b658cf06b20ca5a3d22f07ef441283753
+source-git-commit: 75d8705170169a0ef9f1ee59b12e4bb2c3afac7a
 workflow-type: tm+mt
-source-wordcount: '1872'
+source-wordcount: '1961'
 ht-degree: 1%
 
 ---
 
-# Segment Builder
+# Segment Builder {#segment-builder}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="components_filters_createaudience"
+>title="Skapa publik"
+>abstract="Målgrupper kan skapas från ett filter och delas med Adobe Experience Platform för aktivering."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="components_filters_datapreview"
+>title="Förhandsgranska data"
+>abstract="Jämför data i det här filtret med data i datavyn. Procentandelen för förhandsgranskning baseras på det totala antalet i datavyn från de **senaste 90 dagarna**.<br><br/>Om förhandsgranskningen inte läses in kan anslutningen fortfarande återfyllas."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="components_filters_attribution_repeating"
+>title="Upprepande"
+>abstract="Inkluderar instanser och beständiga värden för dimensionen."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="components_filters_attribution_instance"
+>title="Instance"
+>abstract="Inkluderar instanser och beständiga värden för dimensionen."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="components_filters_attribution_nonrepeatinginstance"
+>title="Icke upprepande instans"
+>abstract="Inkluderar unika (icke upprepande) instanser för dimensionen."
+
+<!-- markdownlint-enable MD034 -->
+
+
+
 
 Med [!UICONTROL Segment Builder] kan du skapa enkla eller komplexa segment som identifierar besökarattribut och åtgärder för besökare och sidträffar. Det ger en arbetsyta att dra och släppa mått, händelser eller andra segment för att segmentera besökare baserat på hierarkilogik, regler och operatorer.
 

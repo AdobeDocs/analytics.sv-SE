@@ -5,14 +5,30 @@ uuid: 0508ff29-43fe-4f3a-a5f7-051869271b55
 feature: Visualizations
 role: User, Admin
 exl-id: d177b39f-add7-4011-977a-1bdf3a9368cb
-source-git-commit: 804cf43f2e5f1270e04644affd629c06583816ec
+source-git-commit: c0855c6bed6a9762c0440e1a8e004ee11020808e
 workflow-type: tm+mt
-source-wordcount: '502'
+source-wordcount: '552'
 ht-degree: 0%
 
 ---
 
-# Linje
+# Linje {#line}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="workspace_line_button"
+>title="Linje"
+>abstract="Skapa en linjevisualisering som visar hur värden ändras under en tidsperiod. En radvisualisering kan bara användas när tid används som dimension."
+
+<!-- markdownlint-enable MD034 -->
+
+
+>[!BEGINSHADEBOX]
+
+*I den här artikeln dokumenteras linjevisualiseringen i **Adobe Analytics**.<br/>Se [Rad](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/line) för versionen **Customer Journey Analytics**av den här artikeln.*
+
+>[!ENDSHADEBOX]
 
 Visualiseringen [!UICONTROL Line] representerar mätvärden som använder en rad för att visa hur värden ändras under en tidsperiod. Ett [!UICONTROL Line]-diagram kan bara användas när tid används som dimension.
 

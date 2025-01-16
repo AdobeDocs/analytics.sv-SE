@@ -4,14 +4,30 @@ title: Visualisering av kombinationsdiagram
 feature: Visualizations
 role: User, Admin
 exl-id: 08e49857-aa58-4527-bdfd-b1663a75a02b
-source-git-commit: 78cfb1f3c4d45fc983982a8da11b66f2b2c9ecbc
+source-git-commit: c0855c6bed6a9762c0440e1a8e004ee11020808e
 workflow-type: tm+mt
-source-wordcount: '694'
+source-wordcount: '731'
 ht-degree: 0%
 
 ---
 
-# Kombinationsdiagram
+# Kombinationsdiagram {#combo}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="workspace_combo_button"
+>title="Kombination"
+>abstract="Skapa snabbt en visualisering av kombinationsdiagram utan att först behöva skapa en frihandstabell."
+
+<!-- markdownlint-enable MD034 -->
+
+
+>[!BEGINSHADEBOX]
+
+*I den här artikeln beskrivs visualiseringen av kombinationen i **Adobe Analytics**.<br/>Se [Kombination](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/combo-charts) för **Customer Journey Analytics**-versionen av den här artikeln.*
+
+>[!ENDSHADEBOX]
 
 Visualiseringen av [!UICONTROL Combo chart] gör det enkelt att snabbt skapa en jämförelsevisualisering utan att först behöva skapa en tabell. Du kan enkelt visa trender i dina data i en kombination av rad och rad.
 
@@ -90,7 +106,7 @@ Klicka på kugghjulsikonen längst upp till höger i ett kombinationsdiagram om 
 | Inställning | Definition |
 | --- | --- |
 | **[!UICONTROL Visualization type]** | Växla till en annan visualiseringstyp. |
-| **[!UICONTROL Granularity]** | För trendvisualiseringar kan du ändra tidshalten (dag, vecka, månad osv.) från den här listrutan. |
+| **[!UICONTROL Granularity]** | För trendvisualiseringar kan du ändra tidgranulariteten (dag, vecka, månad osv.) i den här listrutan. |
 | **[!UICONTROL General]** |  |
 | **[!UICONTROL Percentages]** | Visar värden i procent. |
 | **[!UICONTROL Legend visible]** | Gör att du kan dölja den detaljerade förklaringstexten för visualiseringen av kombinationsdiagram. |

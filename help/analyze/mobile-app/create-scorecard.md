@@ -4,14 +4,21 @@ title: Skapa och dela mobilstyrkort
 feature: Analytics Dashboards
 role: User, Admin
 exl-id: ebe6d83d-bbae-43de-bf85-35258bf6c1d0
-source-git-commit: 81fd658b55e6b1674d6ebd2b17b6c432591a1a08
+source-git-commit: 75d8705170169a0ef9f1ee59b12e4bb2c3afac7a
 workflow-type: tm+mt
-source-wordcount: '2428'
+source-wordcount: '2443'
 ht-degree: 0%
 
 ---
 
-# Skapa ett mobilstyrkort
+# Skapa ett mobilstyrkort {#create-a-mobile-scorecard}
+
+>[!CONTEXTUALHELP]
+>id="mobilescorecard_annotations"
+>title="Anteckningar"
+>abstract="Anteckningar kan skapas i komponenthanteraren i ett arbetsyteprojekt."
+
+<!-- markdownlint-enable MD034 -->
 
 Följande information instruerar de som arbetar med Adobe Analytics data om hur man konfigurerar och presenterar mobila styrkort för företagsanvändare. Börja med att titta på videon Adobe Analytics dashboards scorecard builder:
 

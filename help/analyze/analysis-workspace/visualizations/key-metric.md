@@ -4,14 +4,30 @@ title: Sammanfattning av nyckelmått
 feature: Visualizations
 role: User, Admin
 exl-id: c74e77ff-15d6-48f1-a845-85bdf3444c3a
-source-git-commit: 00276353ef5555955d9dc178c692da0dbfb7eac2
+source-git-commit: c0855c6bed6a9762c0440e1a8e004ee11020808e
 workflow-type: tm+mt
-source-wordcount: '714'
+source-wordcount: '773'
 ht-degree: 0%
 
 ---
 
-# Sammanfattning av nyckelmått
+# Sammanfattning av nyckelmått {#key-metric-summary}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="workspace_keymetricsummary_button"
+>title="Sammanfattning av nyckelmått"
+>abstract="Skapa en visualisering som är en kombination av rad-, sammanfattningsändrings- och sammanfattningsnummerdiagram. Använd den här visualiseringen för att jämföra hur viktiga mätvärden är trender mellan två tidsperioder."
+
+<!-- markdownlint-enable MD034 -->
+
+
+>[!BEGINSHADEBOX]
+
+*I den här artikeln dokumenteras visualiseringen av nyckelmätvärden i **Adobe Analytics**.<br/>Se [Sammanfattning av nyckelmått](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/key-metric) för **Customer Journey Analytics**-versionen av den här artikeln.*
+
+>[!ENDSHADEBOX]
 
 Med visualiseringen [!UICONTROL Key metric summary] kan du se hur ett viktigt mätresultat trendar inom en enda tidsram. Du kan också jämföra mätprestanda över två tidsramar. Det ger fördelarna med flera visualiseringar i kombination med en visualisering:
 
