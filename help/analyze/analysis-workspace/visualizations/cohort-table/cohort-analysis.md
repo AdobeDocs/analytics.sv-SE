@@ -4,9 +4,9 @@ description: Gräv djupare in i informationen om er målgrupp och dela in i rela
 feature: Cohort Analysis
 role: User, Admin
 exl-id: 6a46e76f-671e-4b1b-933a-6c2776c72d09
-source-git-commit: c0855c6bed6a9762c0440e1a8e004ee11020808e
+source-git-commit: d4ad8b988ebcc177c76777b20a54cc20e8241d4d
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '550'
 ht-degree: 0%
 
 ---
@@ -64,7 +64,9 @@ Video om Cohort-tabeller i Analysis Workspace:
 
 ## Funktioner för kohortanalyser
 
-Följande funktioner gör att du kan finjustera kontrollen över de kohorter du bygger:
+I följande avsnitt beskrivs kohortanalysfunktioner som gör det möjligt att finjustera kontrollen över kohorterna som du bygger.
+
+Mer information om hur du skapar en kohort och kör en [!UICONTROL Cohort Analysis]-rapport finns i [Konfigurera en kohortanalysrapport](/help/analyze/analysis-workspace/visualizations/cohort-table/t-cohort.md).
 
 ### [!UICONTROL Retention]-tabell
 
@@ -103,5 +105,3 @@ Mäter den tid som har gått före och efter det att inkluderingshändelsen intr
 Skapa kohorter baserat på en vald dimension, och inte tidsbaserade kohorter, som är standard. Använd dimensioner som [!UICONTROL marketing channel], [!UICONTROL campaign], [!UICONTROL product], [!UICONTROL page], [!UICONTROL region] eller någon annan dimension i Adobe Analytics för att visa hur kvarhållandet ändras baserat på de olika värdena för de här dimensionerna.
 
 ![](assets/cohort-customizable-cohort-row.png)
-
-Instruktioner om hur du konfigurerar och kör en kohortrapport finns i [Konfigurera en kohortanalysrapport](/help/analyze/analysis-workspace/visualizations/cohort-table/t-cohort.md).
