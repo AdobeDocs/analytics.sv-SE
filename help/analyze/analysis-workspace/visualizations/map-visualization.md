@@ -5,9 +5,9 @@ uuid: 6038f336-62a3-4efa-8316-4d7792468db3
 feature: Visualizations
 role: User, Admin
 exl-id: a60544b4-27b6-413a-96ce-ab9487594422
-source-git-commit: de489dda1c2627ccb263ac496f8abb2794854856
+source-git-commit: 76abe4e363184a9577622818fe21859d016a5cf7
 workflow-type: tm+mt
-source-wordcount: '677'
+source-wordcount: '679'
 ht-degree: 2%
 
 ---
@@ -46,7 +46,7 @@ ht-degree: 2%
 
 >[!BEGINSHADEBOX]
 
-*I den här artikeln beskrivs kartvisualiseringen i **Adobe Analytics**.<br/>Det finns för närvarande ingen kartvyalisering tillgänglig i **Customer Journey Analytics**.*
+_I den här artikeln beskrivs kartvisualiseringen i_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._<br/>_Det finns för närvarande ingen kartvisualisering i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._
 
 >[!ENDSHADEBOX]
 

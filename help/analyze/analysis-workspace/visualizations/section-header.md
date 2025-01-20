@@ -3,9 +3,10 @@ title: Avsnittshuvud
 description: En visualisering som infogar ett avsnittshuvud i ditt Workspace-projekt.
 feature: Visualizations
 role: User
-source-git-commit: 6c707a154447d4b419cc6af8b9ddd2d5d0255072
+exl-id: 784031bc-fe2a-421d-8f75-7003a6b39051
+source-git-commit: 76abe4e363184a9577622818fe21859d016a5cf7
 workflow-type: tm+mt
-source-wordcount: '89'
+source-wordcount: '91'
 ht-degree: 0%
 
 ---
@@ -24,7 +25,7 @@ ht-degree: 0%
 >[!BEGINSHADEBOX]
 
 
-*I den här artikeln dokumenteras visualiseringen av avsnittshuvudet i **Adobe Analytics**.<br/>Se [Avsnittshuvud](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/section-header) för **Customer Journey Analytics**-versionen av den här artikeln.*
+_I den här artikeln dokumenteras visualiseringen av avsnittshuvudet i_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._<br/>_Se [Avsnittshuvud](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/section-header) för_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**-versionen av den här artikeln._
 
 >[!ENDSHADEBOX]
 

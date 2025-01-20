@@ -4,9 +4,9 @@ title: Munk
 feature: Visualizations
 role: User, Admin
 exl-id: d82db8a5-9502-4ed1-9326-fd3392670bd3
-source-git-commit: c0855c6bed6a9762c0440e1a8e004ee11020808e
+source-git-commit: 76abe4e363184a9577622818fe21859d016a5cf7
 workflow-type: tm+mt
-source-wordcount: '88'
+source-wordcount: '90'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-*I den här artikeln dokumenteras Donut-visualiseringen i **Adobe Analytics**.<br/>Se [Donut](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/donut) för versionen **Customer Journey Analytics**av den här artikeln.*
+_I den här artikeln dokumenteras Donut-visualiseringen i_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._<br/>_Se [Donut](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/donut) för_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**-versionen av den här artikeln._
 
 >[!ENDSHADEBOX]
 

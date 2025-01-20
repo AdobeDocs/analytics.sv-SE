@@ -4,7 +4,7 @@ description: Så här använder och tolkar du panelen Media Average Minute Audie
 feature: Panels
 role: User, Admin
 exl-id: be8371ee-8bc6-4a99-8527-dd94eab8a7f9
-source-git-commit: 7bac64aed46d9d7a83dc61c3f55d33ad56564efe
+source-git-commit: 76abe4e363184a9577622818fe21859d016a5cf7
 workflow-type: tm+mt
 source-wordcount: '1772'
 ht-degree: 0%
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-*I den här artikeln visas den genomsnittliga målgruppspanelen för media i **Customer Journey Analytics**.<br/>Se [Målgruppspanel i genomsnitt](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel) för **Adobe Analytics**-versionen av den här artikeln.*
+_I den här artikeln visas den genomsnittliga panelen för mediemåminuter i **Customer Journey Analytics**.<br/>Se [Målgruppspanel i genomsnitt](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel) för **Adobe Analytics** -versionen av den här artikeln.*
 
 >[!ENDSHADEBOX]
 

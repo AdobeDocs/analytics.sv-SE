@@ -5,9 +5,9 @@ uuid: 45d2d9f3-3fb3-460f-bc87-7d6e3cc44494
 feature: Visualizations
 role: User, Admin
 exl-id: c78ea74b-a57f-411b-a44e-5c9902e159a6
-source-git-commit: c0855c6bed6a9762c0440e1a8e004ee11020808e
+source-git-commit: 76abe4e363184a9577622818fe21859d016a5cf7
 workflow-type: tm+mt
-source-wordcount: '163'
+source-wordcount: '165'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-*I den här artikeln beskrivs staplade visualiseringar för staplar och staplar i **Adobe Analytics**.<br/>Se [Stapel och stapel staplade](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/bar) för **Customer Journey Analytics**-versionen av den här artikeln.*
+_Den här artikeln dokumenterar staplade visualiseringar i staplar och staplar i_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._<br/>_Se [Stapel och stapel staplade](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/bar) för_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**-versionen av den här artikeln._
 
 >[!ENDSHADEBOX]
 
