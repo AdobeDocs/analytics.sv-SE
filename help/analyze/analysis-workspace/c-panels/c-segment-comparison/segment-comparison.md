@@ -5,9 +5,9 @@ keywords: Analysis Workspace;Segment IQ
 feature: Segmentation
 role: User, Admin
 exl-id: 1f5df6fb-1e9f-4b8f-885c-bf9e68d88c89
-source-git-commit: 76abe4e363184a9577622818fe21859d016a5cf7
+source-git-commit: 2aaa8c0d13755b40ec701ca6342ab773103a0422
 workflow-type: tm+mt
-source-wordcount: '1212'
+source-wordcount: '514'
 ht-degree: 0%
 
 ---
@@ -59,103 +59,105 @@ Så här använder du en **[!UICONTROL Attribution]**-panel:
 
 ### Panelindata
 
-![Jämför panel](assets/seg-compare-panel.png)
+Du kan konfigurera panelen [!UICONTROL Segment comparison] med följande indatainställningar:
 
-1. Markera segment som ska jämföras och släpp dem på panelen.
+![Indatapanelen för segmentjämförelse](assets/segment-comparison-input.png)
 
-   ![Jämför målgrupper](assets/compare-audiences.png)
+| Indata | Beskrivning |
+| --- | --- |
+| **[!UICONTROL Add a segment]** | Välj den dimension som du vill jämföra med. |
+| **[!UICONTROL Compare against]** | Välj den dimension som du vill använda för att jämföra det ursprungliga markerade segmentet. Om du inte markerar ett visst segment används standardsegmentet **[!UICONTROL Everyone else]**. |
+| **[!UICONTROL Show / hide advanced settings]** | Välj **[!UICONTROL Show advanced settings]** om du vill konfigurera **[!UICONTROL Excluded components]**, välj **[!UICONTROL Hide advanced settings]** om du vill dölja **[!UICONTROL Excluded components]**. |
+| **[!UICONTROL Excluded components]** | Komponenter som du kan ange, t.ex. **[!UICONTROL Dimensions]**, **[!UICONTROL Metrics]** eller **[!UICONTROL Segments]** för undantag.<br><ul><li>Dra och släpp en eller flera dimensioner, mått eller segment från behållarna till behållaren **[!UICONTROL Excluded components]**.</li><li>Om du vill ta bort en komponent markerar du typen (**[!UICONTROL Dimension]** **[!UICONTROL Metrics]** eller **[!UICONTROL Segments]**) och väljer ![CrossSize75](/help/assets/icons/CrossSize75.svg) för att ta bort en komponent. Om du vill ta bort alla komponenter väljer du **[!UICONTROL Clear all]**.</li><li>Välj **[!UICONTROL Set as default]** om du vill ange det aktuella urvalet av mått, mått och segment som standard.</li></ul> |
 
-   När du har dragit ett segment till panelen skapas automatiskt ett [!UICONTROL 'Everyone Else']-segment som innehåller alla NOT i det valda segmentet. Det är ett segment som används ofta på jämförelsepanelen, men du kan ta bort det och jämföra ett annat urvalssegment.
-
-   ![Alla andra](assets/everyone-else.png)
-
-1. När du har fastställt vilka två segment som ska jämföras klickar du på [!UICONTROL Build].
-
-   Den här åtgärden startar en backend-process som letar efter statistiska skillnader mellan de två valda segmenten och alla dimensioner, mått och andra segment. En förloppsindikator högst upp på panelen anger återstående tid tills alla mått och mått analyseras. De mest använda mätvärdena, dimensionerna och segmenten prioriteras så att de mest relevanta resultaten returneras i tid.
-
-## Uteslut komponenter från jämförelse
-
-Ibland är det önskvärt att utesluta vissa dimensioner, mätvärden eller segment från segmentjämförelser. Du kan till exempel jämföra segmentet&quot;Användare av mobilenheter i USA&quot; med&quot;Användare av mobilenheter i Tyskland&quot;. Att inkludera geografiskt orienteringsrelaterade dimensioner skulle inte vara rimligt eftersom dessa segment redan antyder dessa skillnader.
-
-1. Klicka på [!UICONTROL 'Show Advanced Options'] när de önskade två segmenten finns på panelen.
-1. Dra och släpp komponenter som du vill utesluta till panelen [!UICONTROL Excluded Components].
-
-   ![Exkluderade komponenter](assets/excluded-components.png)
-
-Klicka på [!UICONTROL 'Set as default'] för att automatiskt exkludera dina aktuella komponenter i alla framtida segmentjämförelser. Om du vill redigera uteslutna komponenter klickar du på en komponenttyp och sedan på X bredvid en komponent för att ta med den i analysen. Klicka på Rensa alla om du vill ta med alla komponenter i segmentjämförelsen.
-
-![Undantagna dimensioner](assets/excluded-dimensions.png)
+Välj **[!UICONTROL Build]** om du vill skapa panelen.
 
 ### Panelutdata
 
-När Adobe har analyserat de två önskade segmenten visas resultatet i flera visualiseringar:
+När Adobe Analytics har analyserat de två önskade segmenten visar utdatapanelerna resultat via flera visualiseringar:
 
-![Visualiseringar 1](assets/new-viz.png)
+![Jämförelse av panelutdatasegment](assets/segment-comparison-output.png)
 
-![Visualiseringar 2](assets/new-viz2.png)
+| Visualisering | Beskrivning |
+|---|---|
+| **[!UICONTROL Size and overlap]** | Illustrerar med en [Vennn](/help/analyze/analysis-workspace/visualizations/venn.md)-visualisering de jämförande storlekarna för varje markerat segment och hur mycket de överlappar varandra. |
+| **[!UICONTROL Unique visitors for 1st segment]** | En [sammanfattning](/help/analyze/analysis-workspace/visualizations/summary-number-change.md) som visar unika besökare för det första segmentet (i exemplet med enkelsidiga besök) |
+| **[!UICONTROL Unique visitors for 2nd segment]** | En [sammanfattningsbild](/help/analyze/analysis-workspace/visualizations/summary-number-change.md) som visar unika besökare för det andra segmentet (i exemplet med förstagångsbesök) |
+| **[!UICONTROL Top metrics agains Segments]** | En [friformstabell](/help/analyze/analysis-workspace/visualizations/freeform-table/freeform-table.md) som visar toppstatistik för de valda segmenten. |
+| **[!UICONTROL Metric over time by Segment]** | En [Line](/help/analyze/analysis-workspace/visualizations/line.md)-visualisering som visar mätvärden över tid för de valda segmenten. |
+| **[!UICONTROL Top dimension items against Segments]** | En [friformstabell](/help/analyze/analysis-workspace/visualizations/freeform-table/freeform-table.md) som visar de blandade dimensionsobjekten för de valda segmenten. |
+| **[!UICONTROL Dimension items by Segments]** | En [vågrät fältvisualisering](/help/analyze/analysis-workspace/visualizations/horizontal-bar.md) som visar dimensionsobjekten efter segment. |
+| **[!UICONTROL Top segments against Segments]** | En [friformstabell](/help/analyze/analysis-workspace/visualizations/freeform-table/freeform-table.md) som visar de översta segmenten mot segment. |
+| **[!UICONTROL Segment overlap]** | En [Vennn](/help/analyze/analysis-workspace/visualizations/venn.md)-visualisering som visar segmentöverlappningen. |
 
-#### Storlek och överlappning
+Använd ![Redigera](/help/assets/icons/Edit.svg) för att konfigurera om och återskapa panelen.
 
-Illustrerar de jämförande storlekarna för varje markerat segment och hur mycket de överlappar varandra med hjälp av ett venndiagram. Du kan hovra över det visuella objektet för att se hur många besökare som fanns i varje överlappande eller icke-överlappande avsnitt. Du kan också högerklicka på överlappningen för att skapa ett helt nytt segment för ytterligare analys. Om de två segmenten utesluter varandra visas ingen överlappning mellan de två cirklarna (visas vanligtvis med segment som använder en träffbehållare).
 
-![Storlek och överlappning](assets/size-overlap.png)
+<!--
+#### Size and overlap
 
-#### Populationssammanfattningar
+Illustrates the comparative sizes of each selected segment and how much they overlap with each other using a venn diagram. You can hover over the visual to see how many visitors were in each overlapping or non-overlapping section. You can also right click on the overlap to create a brand new segment for further analysis. If the two segments are mutually exclusive, no overlap is shown between the two circles (typically seen with segments using a hit container).
 
-Till höger om visualisering av storlek och överlappning visas det totala antalet unika besökare i varje segment och överlappning.
+![Size and overlap](assets/size-overlap.png)
 
-![Populationssammanfattningar](assets/population_summaries.png)
+#### Population summaries
 
-#### De viktigaste mätvärdena
+To the right of the Size and Overlap visualization, the total unique visitor count in each segment and overlap is shown.
 
-Visar de mest statistiskt signifikanta mätvärdena mellan de två segmenten. Varje rad i den här tabellen representerar ett differentierande mått, som rangordnas efter hur olika det är mellan varje segment. Skillnaden på 1 betyder att den är statistiskt signifikant, medan differensvärdet 0 betyder att det inte finns någon statistisk signifikans.
+![Population summaries](assets/population_summaries.png)
 
-Den här visualiseringen liknar frihandstabeller i Analysis Workspace. Om du vill ha mer detaljerad analys av ett visst mått för du muspekaren över ett radobjekt och klickar på Skapa visuellt. En ny tabell skapas för att analysera det specifika måttet. Om ett mätvärde inte är relevant för din analys håller du pekaren över radobjektet och klickar på X för att ta bort det.
+#### Top metrics
 
->[!NOTE]
->
->Mätvärden som läggs till i den här tabellen efter att segmentjämförelsen har slutförts får inte en Differenspoäng.
+Displays the most statistically significant metrics between the two segments. Each row in this table represents a differentiating metric, ranked by how different it is between each segment. A difference score of 1 means it is statistically significant, while a difference score of 0 means there is no statistical significance.
 
-![Toppvärden](assets/top-metrics.png)
-
-#### Mått över tid efter segment
-
-Till höger om måtttabellen finns en länkad visualisering. Du kan klicka på ett radobjekt i tabellen till vänster och den här visualiseringen uppdateras för att visa att mätningen trender över tiden.
-
-![Toppmätningsrad](assets/linked-viz.png)
-
-#### Övre dimensioner
-
-Visar de mest statistiskt signifikanta dimensionsobjekten i alla dimensioner. Varje rad visar procentandelen för varje segment som har denna dimensionspost. Den här tabellen kan till exempel visa att 100 % av besökarna i segment A hade dimensionsobjektet Browser Type: Google, medan endast 19,6 % av Segment B hade detta dimensionsobjekt. Skillnaden på 1 betyder att den är statistiskt signifikant, medan differensvärdet 0 betyder att det inte finns någon statistisk signifikans.
-
-Den här visualiseringen liknar frihandstabeller i Analysis Workspace. Om du vill göra en djupgående analys av ett visst dimensionsobjekt håller du pekaren över ett radobjekt och klickar på Skapa visuellt. En ny tabell skapas för att analysera den specifika dimensionsobjektet. Om en dimensionspost inte är relevant för din analys håller du pekaren över radobjektet och klickar på X för att ta bort den.
+This visualization is similar to freeform tables in Analysis Workspace. If deeper analysis on a specific metric is desired, hover over a line item and click 'Create visual'. A new table is created to analyze that specific metric. If a metric is irrelevant to your analysis, hover over the line item and click the 'X' to remove it.
 
 >[!NOTE]
 >
->Dimensioner som läggs till i den här tabellen efter att segmentjämförelsen har slutförts får inte en Differenspoäng.
+>Metrics added to this table after the segment comparison has finished do not receive a Difference Score.
 
-![Övre dimensioner](assets/top-dimension-item1.png)
+![Top metrics](assets/top-metrics.png)
 
-#### Dimension objekt efter segment
+#### Metric over time by segment
 
-Till höger om dimensionstabellen finns en länkad stapeldiagramvisualisering. Den visar alla visade dimensionsobjekt i ett stapeldiagram. Om du klickar på ett radobjekt i tabellen till vänster uppdateras visualiseringen till höger.
+To the right of the metrics table is a linked visualization. You can click a line item in the table on the left, and this visualization updates to show that metric trended over time.
 
-![Diagram över övre dimensioner](assets/top-dimension-item.png)
+![Top metrics line](assets/linked-viz.png)
 
-#### De vanligaste segmenten
+#### Top dimensions
 
-Visar vilka andra segment (utöver de två segment som valts för jämförelse) som överlappar varandra statistiskt. Den här tabellen kan till exempel visa att ett tredje segment, &#39;Upprepa besökare&#39;, överlappar mycket med &#39;Segment A&#39; men inte överlappar &#39;Segment B&#39;. Skillnaden på 1 betyder att den är statistiskt signifikant, medan differensvärdet 0 betyder att det inte finns någon statistisk signifikans.
+Shows the most statistically significant dimension items across all of your dimensions. Each row shows the percentage of each segment exhibiting this dimension item. For example, this table might reveal that 100% of visitors in 'Segment A' had the dimension item 'Browser Type: Google', whereas only 19.6% of 'Segment B' had this dimension item. A difference score of 1 means it is statistically significant, while a difference score of 0 means there is no statistical significance.
 
-Den här visualiseringen liknar frihandstabeller i Analysis Workspace. Om du vill ha mer detaljerad analys för ett visst segment håller du pekaren över ett radobjekt och klickar på Skapa visuellt. En ny tabell skapas för att analysera det specifika segmentet. Om ett segment inte är relevant för din analys håller du pekaren över radobjektet och klickar på X för att ta bort det.
+This visualization is similar to freeform tables in Analysis Workspace. If deeper analysis on a specific dimension item is desired, hover over a line item and click 'Create visual'. A new table is created to analyze that specific dimension item. If a dimension item is irrelevant to your analysis, hover over the line item and click the 'X' to remove it.
 
 >[!NOTE]
 >
->Segment som läggs till i den här tabellen efter att segmentjämförelsen har slutförts får inte en Differenspoäng.
+>Dimension items added to this table after the segment comparison has finished do not receive a Difference Score.
 
-![Toppsegment](assets/top-segments.png)
+![Top dimensions](assets/top-dimension-item1.png)
 
-#### Segmentöverlappning
+#### Dimension items by segment
 
-Till höger om segmenttabellen finns en länkad vinjettvisualisering. Här visas det segment som är mest statistiskt signifikant för dina jämförda segment. Exempel:&quot;Segment A&quot; +&quot;Statistiskt signifikant segment&quot; jämfört med&quot;segment B&quot; +&quot;Statistiskt signifikant segment&quot;. Om du klickar på ett segmentradsobjekt i tabellen till vänster uppdateras venndiagrammet till höger.
+To the right of the dimensions table is a linked bar chart visualization. It shows all displayed dimension items in a bar chart. Clicking a line item in the table on the left updates the visualization on the right.
 
-![Vagndiagram för övre segment](assets/segment-overlap.png)
+![Top dimensions bar chart](assets/top-dimension-item.png)
+
+#### Top segments
+
+Shows which other segments (other than the two segments selected for comparison) have statistically significant overlap. For example, this table can show that a third segment, 'Repeat Visitors', overlaps highly with 'Segment A' but does not overlap with 'Segment B'. A difference score of 1 means it is statistically significant, while a difference score of 0 means there is no statistical significance.
+
+This visualization is similar to freeform tables in Analysis Workspace. If deeper analysis on a specific segment is desired, hover over a line item and click 'Create visual'. A new table is created to analyze that specific segment. If a segment is irrelevant to your analysis, hover over the line item and click the 'X' to remove it.
+
+>[!NOTE]
+>
+>Segments added to this table after the segment comparison has finished do not receive a Difference Score.
+
+![Top segments](assets/top-segments.png)
+
+#### Segment overlap
+
+To the right of the segments table is a linked venn diagram visualization. It shows the most statistically significant segment applied to your compared segments. For example, 'Segment A' + 'Statistically significant segment' vs. 'Segment B' + 'Statistically significant segment'. Clicking a segment line item in the table on the left updates the venn diagram on the right.
+
+![Top segments venn diagram](assets/segment-overlap.png)
+
+-->

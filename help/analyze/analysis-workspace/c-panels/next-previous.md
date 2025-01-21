@@ -4,7 +4,7 @@ title: Panelen Nästa eller föregående objekt
 feature: Panels
 role: User, Admin
 exl-id: 9f2f8134-2a38-42bb-b195-5e5601d33c4e
-source-git-commit: 76abe4e363184a9577622818fe21859d016a5cf7
+source-git-commit: 2aaa8c0d13755b40ec701ca6342ab773103a0422
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 0%
@@ -69,7 +69,6 @@ Välj **[!UICONTROL Build]** om du vill skapa panelen.
 ### Panelutdata
 
 Panelen [!UICONTROL Next or previous item] returnerar en mängd data och visualiseringar som hjälper dig att förstå vilka förekomster som följer eller föregår specifika dimensionsobjekt.
-
 
 ![Nästa/Föregående panelutdata](assets/next-or-previous-item-output.png)
 
