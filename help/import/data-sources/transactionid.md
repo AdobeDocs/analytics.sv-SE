@@ -4,9 +4,9 @@ description: Lär dig det allmänna arbetsflödet med att använda datakällor f
 feature: Data Sources
 exl-id: 5f26b15c-8d9c-46d5-860f-13fdfa21af2e
 role: Admin
-source-git-commit: 27bcbd638848650c842ad8d8aaa7ab59e27e900e
+source-git-commit: e281d43204e1c5b10508661f04b880125fe8671c
 workflow-type: tm+mt
-source-wordcount: '427'
+source-wordcount: '413'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ När du skickar en onlineträff som innehåller ett [`transactionID`](/help/impl
 Transaktions-ID-datakällor har följande egenskaper:
 
 * Onlinedata måste samlas in och behandlas först. Om en transaktions-ID-datakälla överförs innan en rapportserie bearbetar en träff som matchar transaktions-ID:t, länkas inte data.
-* Transaktions-ID:n som samlas in via AppMeasurementet upphör att gälla efter cirka 90 dagar. Om ditt företag behöver ett längre fönster med transaktions-ID kontaktar du Adobe kundtjänst.
+* Transaktions-ID:n som samlas in via AppMeasurementet går ut efter 25 månader.
 * Datakällor som har överförts med ett transaktions-ID som har gått ut behandlas på liknande sätt som data som har överförts utan ett transaktions-ID.
 * Om samma variabel ingår i både online-träffen och transaktions-ID-datakällan används värdet från transaktions-ID-datakällan.
 * Om en variabel ingår i en onlineträff men inte i en matchande datakällträff för transaktions-ID bevaras träffvariabeln online.

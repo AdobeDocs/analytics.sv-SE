@@ -5,9 +5,10 @@ role: User
 feature: Report Builder
 type: Documentation
 solution: Analytics
-source-git-commit: 7e8a25381f2eadafc5dc22a0991060ea475b5d43
+exl-id: b6f2b1f5-8790-4342-85c8-524fdf346073
+source-git-commit: 65f2f1caff36be2afc0c11297be5dd5b593e9a3d
 workflow-type: tm+mt
-source-wordcount: '561'
+source-wordcount: '527'
 ht-degree: 1%
 
 ---
@@ -20,10 +21,6 @@ Det nya tillägget Javascript Report Builder som ursprungligen endast fanns i Cu
 - Plattformsoberoende: ingen mer loggning in på din virtuella dator för att använda Report Builder när vi nu stöder PC, Mac och Excel Online
 - Tack vare uppgraderingen av API 2.0 slipper du vänta på att datablocken ska returneras
 - Högre hastighet
-
->[!NOTE]
->
->Arbetsboksplanering för den här versionen av Report Builder på Adobe Analytics har ännu inte släppts, men kommer att vara tillgänglig i början av 2025. Nu kan du komma igång med arbetsböcker som inte kräver schemaläggning.
 
 Användare av verktyget Äldre Report Builder kan [konvertera äldre arbetsböcker](/help/analyze/report-builder/convert-workbooks.md) till nya Report Builder.
 

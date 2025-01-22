@@ -3,55 +3,63 @@ title: Aktuella versionsinformation för Adobe Analytics
 description: Visa den aktuella versionsinformationen för Adobe Analytics
 feature: Release Notes
 exl-id: 97d16d5c-a8b3-48f3-8acb-96033cc691dc
-source-git-commit: fdd66c9558f070cd760f37a39e5911f0dac22612
+source-git-commit: e281d43204e1c5b10508661f04b880125fe8671c
 workflow-type: tm+mt
-source-wordcount: '806'
+source-wordcount: '866'
 ht-degree: 1%
 
 ---
 
-# Aktuell versionsinformation för Adobe Analytics (23 oktober 2024)
+# Aktuell versionsinformation för Adobe Analytics (januari 2025-utgåvan)
 
-**Senast uppdaterad**: 9 december 2024
+**Senast uppdaterad**: 22 januari 2024
 
-Versionsinformationen omfattar frisläppningsperioden 16 oktober 2024 till slutet av 2024. Adobe Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.md), vilket ger en mer skalbar, fasad metod för driftsättning av funktioner. Därför uppdateras versionsinformationen flera gånger i månaden. Kontrollera dem regelbundet.
+Versionsanteckningarna gäller den 15 januari till mitten av februari 2025. Adobe Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.md), vilket ger en mer skalbar, fasad metod för driftsättning av funktioner. Därför uppdateras versionsinformationen flera gånger i månaden. Kontrollera dem regelbundet.
 
 ## Nya funktioner eller förbättringar {#features}
 
 | Funktion | Beskrivning | [Startar](releases.md) | [Allmän tillgänglighet](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **Nytt Report Builder för Adobe Analytics** | Det nya Report Builder-programmet ger Adobe Analytics en större uppdatering, inklusive bättre prestanda, smidigt användargränssnitt, 2.0-API-stöd och stöd för Microsoft Excel i Mac, Windows och webbläsare. Det här programmet kan användas tillsammans med det äldre programmet, men inte i samma fil. Det finns en uppgraderingsfunktion för att uppgradera äldre arbetsböcker till det nya programmet. [Läs mer](https://experienceleague.adobe.com/en/docs/analytics/analyze/report-builder/report-buider-overview) |  | 16 oktober 2024 |
-| **JSON-export för migrering av taggimplementering till Web SDK-taggar** | Den här uppdateringen av tillägget Analytics-taggar har att göra med migrering till Web SDK. Du kan använda den här uppdateringen av Adobe Analytics-tillägget som en del av arbetsflödet för att återskapa dina tilläggskonfigurationer med Web SDK-tillägget. I Adobe Analytics-taggtillägget kan du visa inställningar för eVars, props och händelser som JSON, som kan exporteras för redigering och inkluderas i Web SDK-tillägget. |  | 31 oktober 2024 |
-| **Ny information om begärandefaktorer i Analysis Workspace Performance** | Det finns nu ett nytt avsnitt,&quot;Begärandefaktorer&quot;, som är tillgängligt när du analyserar prestanda i Analysis Workspace. Mer information om hur begäranden behandlas och de olika faktorer som påverkar bearbetningstiderna finns i&quot;Begärandefaktorer&quot; i [Optimera Analysis Workspace-prestanda](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/workspace-faq/optimizing-performance). |  | 1 oktober 2024 |
-| **Kvarhållningsperiod för transaktions-ID** | Kvarhållningsperioden för transaktions-ID på 90 dagar kommer att förlängas till 25 månader i januari 2025. Variabeln `transactionID` identifierar en transaktion unikt så att träffen kan koppla till data som överförts via datakällor. |  | 22 januari 2025 |
+| **Schemaläggning i nya Report Builder** | Schemaläggningen tillåter inte bara att du schemalägger dina nya Report Builder-arbetsböcker. Dessutom kan du hämta metadata för gamla schemalagda aktiviteter när du konverterar äldre arbetsböcker. På så sätt skickar du dina gamla arbetsböcker till nya arbetsböcker och schemalägger dem till samma e-postmeddelanden och på samma plats som de gamla arbetsböckerna. [Läs mer](/help/analyze/report-builder/schedule-reportbuilder.md) |  | 22 januari 2025 |
+| **Förbättringar av rapporter (kallas även mallar) i Analysis Workspace** | Det finns nu olika förbättringar för rapporter (kallas även mallar):<ul><li>Ringde nu [!UICONTROL Templates] (kallas inte längre [!UICONTROL Reports]).</li><li>Förbättrad användarupplevelse för att visa och hitta mallar, inklusive möjligheten att visa mallar i en kolumnvy eller en kortvy.</li><li>Ny, mer intuitiv plats för företagsmallar (finns under **[!UICONTROL Workspace]** > **[!UICONTROL Templates]**).</li><li>Tidigare fanns det åtkomst till företagsmallar från dialogrutan när du skapade ett projekt.</li><li>Det finns fler färdiga mallar.</li></ul>[Läs mer](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/templates/use-templates).<p>Administratörer kan skapa mallar och spara dem så att andra kan använda dem i sina inloggningsföretag. [Läs mer](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/templates/create-templates) | 15 januari 2025 | 30 januari 2025 |
+| **Kvarhållningsperiod för transaktions-ID** | Kvarhållningsperioden för transaktions-ID på 90 dagar kommer att förlängas till 25 månader i februari 2025. Variabeln `transactionID` identifierar en transaktion unikt så att träffen kan koppla till data som överförts via datakällor. (Dokumentationslänkar följer) |  | 11 februari 2025 |
 
 ## Korrigeringar i Adobe Analytics
 
-Analysis Workspace: AN-356287; AN-358435; AN-359456; AN-359826; AN-360215
-Administratörsverktyg: AN-342485; AN-347931; AN-348704; AN-357723; AN-358453; AN-358717; AN-35954 8; AN-360136
-Klassificeringar: AN-359025; AN-359283; AN-359368; AN-359710; AN-359752; AN-359759; AN-35979; AN-359887; AN-360543; AN-360566; AN-360612; AN-360741; AN-360942; AN-360952
-Enhetsövergripande analys: AN-359210
-Kundattribut: AN-357897
-Datainsamling: AN-351131; AN-351309; AN-355678; AN-359856
-Dataflöden: AN-359699
-API för datareparation: AN-360256
-Datakällor: AN-359290
-Data Warehouse: AN-359820
-Overage Alerts: AN-358132
+A4T: AN-355602; AN-365988
+Activity Map: AN-365320
+Admin Console: AN-363884
+Administratörsverktyg: AN-356747; AN-358776
+Advertising Analytics: AN-355488
+Analysis Workspace: AN-345318; AN-354801; AN-357052; AN-358975; AN-362886; AN-363831; AN-364124; AN-365257; AN-365319; AN-365462
+Analytics 1.4 API: AN-358059
+Klassificeringar: AN-360049; AN-360424; AN-362208; AN-362345; AN-362560; AN-362576; AN-362633; AN-362653; AN-362762; AN-362815; AN-362881; AN-362885; AN-362973; AN-36343; AN -363558; AN-363860; AN-364239; AN-364480; AN-364451; AN-364528; AN-364548; AN-3 64552; AN-364585; AN-364598; AN-364715; AN-364912; AN-364997; AN-365189; AN-36 5197; AN-365203; AN-365431; AN-365647; AN-365794;
+Komponentmigrering: AN-362236; AN-365429
+Bidrag: AN-360146
+Dataflöden: AN-356997; AN-362470; AN-362498; AN-362775; AN-363323; AN-363413; AN-36356 9; AN-364063; AN-364142; AN-364294; AN-364298; AN-364325; AN-364367; AN-364594; AN-364995; AN-365272; AN-365519; AN-365760; AN-366152;
+API för datareparation: AN-362773; AN-362874
+Datakällor: AN-360745; AN-362202; AN-364566
+Data Warehouse: AN-361447; AN-362616; AN-364524; AN-365108
+Mobilapp: AN-362856; AN-365270
+Overage Alerts: AN-355594; AN-364547
+Plattform: AN-358914; AN-360205; AN-362990; AN-364550; AN-365454; AN-365485
+Report Builder: AN-363478; AN-364433; AN-365610
+Rapporteringsaktivitetshanteraren: AN-362440
+Segmentering: AN-359921
+VISTA-regler: AN-362927
 
 ## Viktiga meddelanden för Adobe Analytics-administratörer {#admin}
 
 | Meddelande | Datum tillagt eller uppdaterat | Beskrivning |
 | ----------- | ---------- | ---------- |
-| **Icke-kampanjkunder förlorar åtkomst till utlösare** | 16 oktober 2023 | Den 30 januari 2025 förlorar Adobe Analytics-kunder som inte har någon Adobe Campaign-licens åtkomsten till möjligheten att konfigurera och använda utlösare. Kunderna måste antingen köpa Campaign, eller planera för att sluta använda Triggers, eller titta på andra Adobe-verktyg som erbjuder Triggers-funktioner. |
-| **Ytterligare implementeringsinformation i XDM-fält mappas automatiskt** | 11 september 2024 | När du använder Adobe Experience Platform Edge Network för att skicka data till Adobe Analytics mappas XDM-fälten `xdm.implementationdetails.name` och `xdm.implementationdetails.environment` nu alltid till kontextdatavariabler `c.a.x.implementationdetails.name` och `c.a.x.implementationdetails.environment`. Tidigare hindrade vissa scenarier dessa värden från att fyllas i. Justera eventuella relevanta bearbetningsregler för att passa tillgängligheten för dessa värden. |
+| **Icke-kampanjkunder förlorar åtkomst till utlösare** | 16 oktober 2023 | Den 30 januari 2025 förlorar Adobe Analytics-kunder som inte har någon Adobe Campaign-licens åtkomsten till möjligheten att konfigurera och använda [utlösare](https://experienceleague.adobe.com/en/docs/core-services/interface/services/triggers). Kunderna måste antingen köpa Campaign, eller planera för att sluta använda Triggers, eller titta på andra Adobe-verktyg som erbjuder Triggers-funktioner. |
 
 ## EOL-meddelanden (End-of-life) {#eol}
 
 | EOL-produkt eller -funktion | Datum tillagt eller uppdaterat | Beskrivning |
 | --- | --- | --- |
+| **Migrering till autentiseringsuppgifter för Adobe I/O OAuth Server-till-Server** | 17 januari 2025 | Adobe Analytics API- och LiveStream-kunder som använder Adobe I/O JWT-autentiseringsuppgifter måste migrera till autentiseringsuppgifterna för Adobe I/O OAuth Server-till-Server senast den **30 juni 2025**. Adobe I/O tillåter inte att nya JWT-autentiseringsuppgifter skapas från och med 1 maj 2024. Kunder som använder JWT måste skapa en ny OAuth Server-till-Server-autentiseringsuppgift eller migrera sina befintliga JWT-autentiseringsuppgifter till en OAuth Server-till-Server-autentiseringsuppgift. Kunderna måste även uppdatera sina klientprogram för att kunna använda de nya autentiseringsuppgifterna för OAuth Server-till-Server. <ul><li>[Migrerar från JWT-autentiseringsuppgifter ](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/)</li><li>[Implementeringsguide för nya och gamla program med OAuth](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/)<li>[Använder de nya autentiseringsuppgifterna för OAuth Server-till-server](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/)</li><li>[Vanliga frågor](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/faqs/)</li></ul> |
 | **EOL för Adobe Analytics API (version 1.4)** | 17 juli 2024 | Den **12 augusti 2026** kommer följande API-tjänster för Analytics Legacy att ha nått slutet på sin livstid och stängas, och aktuella integreringar som byggts med dessa tjänster kommer att sluta fungera:<ul><li>Adobe Analytics API (version 1.4)</li><li>Adobe Analytics WSSE-autentisering</li></ul><p>Integreringar som använder Adobe Analytics API (version 1.4) måste migrera till [Adobe Analytics 2.0 API](https://developer.adobe.com/analytics-apis/docs/2.0/) medan WSSE-integreringar måste migrera till ett OAuth-baserat autentiseringsprotokoll i [Adobe Developer Console](https://developer.adobe.com/console).</p><p>Se [Vanliga frågor om Adobe Analytics 1.4 API EOL ](/help/admin/c-admin-api/c-admin-14-api-eol.md) för svar på vanliga frågor och ytterligare vägledning.</p> |
-| **Migrering till autentiseringsuppgifter för Adobe I/O OAuth Server-till-Server** | 11 maj 2023 | Adobe Analytics API- och LiveStream-kunder som använder Adobe I/O JWT-autentiseringsuppgifter måste migrera till autentiseringsuppgifterna för Adobe I/O OAuth Server-till-Server senast **1 januari 2025**. Adobe I/O tillåter inte att nya JWT-autentiseringsuppgifter skapas från och med 1 maj 2024. Kunder som använder JWT måste skapa en ny OAuth Server-till-Server-autentiseringsuppgift eller migrera sina befintliga JWT-autentiseringsuppgifter till en OAuth Server-till-Server-autentiseringsuppgift. Kunderna måste även uppdatera sina klientprogram för att kunna använda de nya autentiseringsuppgifterna för OAuth Server-till-Server. <ul><li>[Migrerar från JWT-autentiseringsuppgifter ](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/)</li><li>[Implementeringsguide för nya och gamla program med OAuth](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/)<li>[Använder de nya autentiseringsuppgifterna för OAuth Server-till-server](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/)</li><li>[Vanliga frågor](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/faqs/)</li></ul> |
 
 
 ## AppMeasurement

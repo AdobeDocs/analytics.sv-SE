@@ -4,9 +4,9 @@ description: Använd den här variabeln för att länka samman online- och offli
 feature: Variables
 exl-id: 525e90d8-99a7-4f4f-9bce-1395bf72fd8f
 role: Admin, Developer
-source-git-commit: 5ef92db2f5edb5fded497dddedd56abd49d8a019
+source-git-commit: e281d43204e1c5b10508661f04b880125fe8671c
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: '387'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Variabeln `transactionID` identifierar en transaktion unikt så att träffen kan
 
 När du anger `transactionID` för en träff tar Adobe en ögonblicksbild av alla analysvariabler som angetts eller sparats vid den tidpunkten. Data som överförs via datakällor med ett matchande transaktions-ID är permanent knutna till dessa variabelvärden.
 
-Som standard kommer Adobe ihåg alla transaktions-ID-värden (länkade och olänkade) i upp till 90 dagar. Om din interaktionsprocess är längre än 90 dagar kontaktar du kundtjänst för att förlänga den här gränsen.
+Adobe kommer ihåg alla transaktions-ID-värden (länkade och olänkade) i upp till 25 månader.
 
 ## Transaktions-ID med Web SDK
 
