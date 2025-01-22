@@ -1,14 +1,14 @@
 ---
-description: På inställningspanelen Activity Map kan du ändra inställningar och egenskaper för alla typer av övertäckningsvisualiseringar.
+description: Ändra inställningar och egenskaper för alla typer av övertäckningsvisualiseringar i Activity Map.
 title: Konfigurera inställningar för Activity Map
 uuid: 42a0309e-3efc-4506-989b-09b6fe419423
 feature: Activity Map
 role: User, Admin
 exl-id: 65c9c690-81e0-4f0f-989d-586d247ed380
-source-git-commit: ba10ceb73d953ff495613d02dd1ff825b6e518df
+source-git-commit: 13ad9d40ad74a8dffe05d899db54f4d77cbcc34c
 workflow-type: tm+mt
-source-wordcount: '591'
-ht-degree: 1%
+source-wordcount: '497'
+ht-degree: 0%
 
 ---
 
@@ -16,38 +16,41 @@ ht-degree: 1%
 
 På inställningspanelen Activity Map kan du ändra inställningar och egenskaper för alla typer av övertäckningsvisualiseringar.
 
-Gå till inställningspanelen Activity Map genom att klicka på kugghjulsikonen i verktygsfältet Activity Map.
+**[!UICONTROL Activity Map overlay]** > **Visa inställningar (kugghjulsikon)** > **[!UICONTROL Settings]**
 
-## Allmänna inställningar {#section_697A12F099494D699A4BF498598178C5}
+## Allmänna inställningar
 
-| Inställning | Beskrivning |
-| --- | --- |
-| **[!UICONTROL Companies]** | Välj tillämpligt inloggningsföretag. |
-| **[!UICONTROL Report Suite]** | Listan med rapportsviter som är tillgängliga för dig är inte längre begränsad till de rapportsviter som definieras i webbsidestaggen. Nu kan du ersätta den valda rapportsviten (som motsvarar en av taggarna på sidan) med en annan rapportserie. Den här nya rapportsviten behöver inte länkas till en tagg på sidan. Om du ändrar den markerade rapportsviten i Activity Map Settings kommer alla berörda analysrapporter att uppdateras vid Spara-processen.<br>**Viktigt**: [!UICONTROL Virtual report suites] är inte kompatibelt med [!UICONTROL Live Mode], bara med [!UICONTROL Standard Mode]. Om du är i [!UICONTROL Live Mode] för en Standard Report Suite, men väljer [!UICONTROL Virtual report suite] i den här dialogrutan, visas standardläget när du klickar **[!UICONTROL OK]** här. Dessutom initieras kalenderkontrollen om för att matcha rapportsvitens kalendertyp (gregoriansk, återförsäljning, anpassad...). |
-| **[!UICONTROL Page Name]** | Den sida som de här inställningarna gäller för. |
-| **[!UICONTROL Language]** | Valet motsvarar de språk som erbjuds för Adobe Analytics. |
-| **[!UICONTROL Label Overlays With]** | <ul><li>**[!UICONTROL No Label]**: Gäller endast för övertoningsövertäckningen. I det här fallet förmedlar övertäckningens färg en anledning till länkens rankning</li><li>**[!UICONTROL Value]**: summan för det råa måttet för den länken</li><li>**[!UICONTROL Percent]**: procent av måttet för den här länken för sidans totala mått.</li><li>**[!UICONTROL Rank]**: Länkens rangordning för alla länkar på den återgivna sidan</li></ul> |
-| **[!UICONTROL Label Font Size]** | Gör att du kan öka/minska teckenstorleken för övertäckningsetiketten med ett reglage för bättre läsbarhet. |
-| **[!UICONTROL Gradient/Bubble Color]** | Om du vill visa länkrankningar för övertoning eller bubbelövertäckning väljer du bland ett färgintervall. |
-| **[!UICONTROL Color Gradient Based On]** | <ul><li>**[!UICONTROL Top 30 Rankings]**: Färgintensiteten har normaliserats för de 30 högsta värdena.</li><li>**[!UICONTROL Absolute Metric Value]**: Färgintensiteten är en funktion av det absoluta måttvärdet.</li></ul> |
-| **[!UICONTROL Gradient Transparency]** | Välj genomskinlighetsnivå för övertoningsövertäckningarna. Den här inställningen påverkar inte [!UICONTROL Bubble]-övertäckningarna. |
+Ändra allmänna inställningar för tillägget och övertäckningarna.
 
-## Standardinställningar {#section_24DB95376E1A448494ECF3F57743FC19}
+* **[!UICONTROL Companies]**: Visar den aktuella Analytics-organisationen som du är inloggad på.
+* **[!UICONTROL Page name]**: Visar namnet på den aktuella sidan.
+* **[!UICONTROL Language]**: Ändrar språk för tilläggsetiketter i Activity Map. Den här inställningen ändrar inte innehåll på din webbplats eller länknamn i rapporter. Språk som stöds är engelska, franska, kinesiska (förenklad), kinesiska (traditionell), tyska, japanska, koreanska, spanska och portugisiska.
+* **[!UICONTROL Label overlays with]**: Avgör vad bubblan eller övertoningstexten är. Standardinställningen är [!UICONTROL Rank]. Alternativen är:
+   * **[!UICONTROL No label]**: Det finns ingen text i etiketterna, vilket gör dem till färgade rutor
+   * **[!UICONTROL Value]**: Visar antalet länkklick ([Förekomster](/help/components/metrics/occurrences.md))
+   * **[!UICONTROL Percent]**: Visar andelen länkklick jämfört med det totala antalet länkklick på sidan
+   * **[!UICONTROL Rank]**: Länkens numeriska rankning efter antalet länkklick.
+* **[!UICONTROL Label font size]**: Anger storleken på texten i bubblan eller övertoningen.
+* **[!UICONTROL Gradient color]**: Gör att du kan ändra övertoningsfärgen när visualiseringstypen är [!UICONTROL Gradient].
+* **[!UICONTROL Bubble color]**: Gör att du kan ändra bubbelfärgen när visualiseringstypen är [!UICONTROL Bubble].
+* **[!UICONTROL Color gradient based on]**: Avgör vilket mått en länks färgintensitet baseras på när visualiseringstypen är [!UICONTROL Gradient].
+   * **[!UICONTROL Top 30 rankings]**: Färgintensiteten har normaliserats för de 30 mest använda länkarna.
+   * **[!UICONTROL Absolute metric value]**: Färgintensiteten är en funktion av det absoluta måttvärdet.
+* **[!UICONTROL Gradient transparency]**: Anger genomskinligheten för övertoningsövertäckningar när visualiseringstypen är [!UICONTROL Gradient]. Med det här reglaget kan du göra färgövertäckningen helt genomskinlig, helt ogenomskinlig eller var som helst däremellan.
 
-De här inställningarna gäller för standardlägesövertäckningen.
+## Standardinställningar
 
-| Inställning | Beskrivning |
-| --- | --- |
-| **[!UICONTROL Dynamic Data Filtering]** | I den här listrutan kan du visa övertäckningar för<ul><li>(standard) Alla länkar på sidan</li><li>Den översta (översta) eller nedersta (nedersta) # rankade länkar på sidan, där # kan vara något av alternativen 1, 10, 50 eller 100.</li></ul> |
-| **[!UICONTROL Hide overlays for links that received no hits]**. | En kryssruta som växlar synligheten för övertäckningar för länkar som inte har några data.<ul><li>(standard) Om kryssrutan är markerad visas ingen övertäckning när en länk inte har några ActivityMap-länkdata.</li><li>Om kryssrutan inte är markerad och en länk inte har några ActivityMap-länkdata, visas en övertäckning med etiketten &quot;-&quot;, vilket betyder N/A (ej tillämpligt). |
+Justera inställningarna för standardvyn.
 
-## Live-inställningar {#section_D30F6E62FB5D404090B588F396A460AF}
+* **[!UICONTROL Dynamic data filtering]**: Gör att du kan ändra vilka länkar som visas.
+   * **[!UICONTROL Top]**: Visar de mest populära länkarna. Använd den numeriska listrutan till höger för att bestämma antalet topplänkar som ska visas. Du kan välja mellan 1, 10, 50 och 100.
+   * **[!UICONTROL Bottom]**: Visar de minst populära länkarna baserat på listrutan Nummer. Använd den numeriska listrutan till höger för att bestämma hur många nedersta länkar som ska visas. Du kan välja mellan 1, 10, 50 och 100.
+   * **[!UICONTROL All links]**: Använd inte dynamisk datafiltrering. Den numeriska listrutan gäller inte när det här alternativet är markerat.
+* **[!UICONTROL Hide overlays for links that received no hits]**: Länkar på sidan utan länkklick visar inte någon övertäckning. Dessa länkar undantas från dynamisk datafiltrering.
 
-De här inställningarna gäller för live-lägesövertäckningen.
+## Live-inställningar
 
-| Inställning | Beskrivning |
-|---|---|
-| **[!UICONTROL Display Top]** | Om du vill visa **[!UICONTROL Gainers]** eller **[!UICONTROL Losers]** (eller båda) som övertäckningar markerar du antalet länkar. |
-| **[!UICONTROL Exclude bottom (%)]** | Välj det här alternativet om du vill ta bort Gainers-Losers-länkar med sparse-data. Filtrera ut den nedre procentandelen av länkändringar så att bara länkarna med tillräckligt med data visas för att visa relevanta vinster eller förluster. Procentandelen beräknas utifrån antalet länkar på den sidan. Om du till exempel filtrerar bort de nedre 10 % av en lista med 200 länkar filtreras de nedre 20 länkarna ut. |
-| **[!UICONTROL Auto Update Data]** | Här kan du bestämma om Analytics-data som visas i gränssnittet automatiskt ska uppdateras när en ny period beräknas. |
-| **[!UICONTROL Auto Update Period]** | När det här alternativet är markerat uppdateras webbsidan med varje ny datahämtning så att länkarna på sidan kan synkroniseras mer med de insamlade data. |
+* **[!UICONTROL Display top]**: Visa det översta antalet generatorer eller förlorare baserat på den numeriska listrutan till vänster.
+* **[!UICONTROL Exclude bottom (%)]**: Filtrera ut den nedersta procentandelen av länken så att endast länkar med tillräckligt med data visas för att visa relevanta vinster eller förluster. Procentandelen beräknas utifrån antalet länkar på den sidan. Om du till exempel filtrerar bort de nedre 10 % av en lista med 200 länkar filtreras de nedre 20 länkarna ut.
+* **[!UICONTROL Auto update data]**: Avgör om Analytics-data som visas i övertäckningen automatiskt uppdateras när en ny period beräknas.
+* **[!UICONTROL Auto update period]**: När det här alternativet är markerat uppdaterar sidan med varje ny datahämtning så att länkarna på sidan synkroniseras närmare med insamlade data.
