@@ -1,22 +1,27 @@
 ---
-description: På sidan Traffic Management kan du ange förväntade ändringar av trafikvolymen. Med de här inställningarna kan Adobe tilldela lämpliga resurser för att säkerställa att trafiken kan spåras och behandlas i tid.
+description: Trafikhantering gör att du kan ange förväntade ändringar av trafikvolymen.
 title: Hantera trafik
 feature: Traffic Management
 role: Admin
 exl-id: 7a7a36f2-3241-47f5-9c0f-0d62e51104e1
-source-git-commit: 429aaa43fdae669350bdb5a5a54a7d4b9b1c65f2
+source-git-commit: 41ca3fd05290df79bb0f113df462fdbe5e6a6720
 workflow-type: tm+mt
-source-wordcount: '80'
-ht-degree: 1%
+source-wordcount: '93'
+ht-degree: 0%
 
 ---
 
-# Trafikhantering - översikt
+# Trafikhantering
 
-På sidan Traffic Management kan du ange förväntade ändringar av trafikvolymen. Med de här inställningarna kan Adobe tilldela lämpliga resurser för att säkerställa att trafiken kan spåras och behandlas i tid.
+Traffic Management-rapporten efter datumintervall har ersatts med [!DNL Reports & Analytics].
 
-Så här kommer du åt [!UICONTROL Traffic Management]:
+Du kan dock använda Analysis Workspace för att skapa rapporten. När du har skapat rapporten sparar du den och ändrar bara datumintervallet och/eller rapportsviten efter behov när du behöver en ny rapport.
 
-1. Klicka på **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL All admin]** > **[!UICONTROL Report suites]** och välj sedan en rapportserie.
+1. Starta Workspace.
 
-1. Klicka på **[!UICONTROL Edit Settings]** > **[!UICONTROL Traffic Management]** > *`<selection>`*.
+1. Skapa ett nytt projekt och välj lämplig rapportserie.
+
+1. Dra dimensionen **[!UICONTROL Day]** till frihandstabellen och använd måttet **[!UICONTROL Occurrences]**.
+
+1. Ställ in datumintervallet till det önskade datumintervallet.
+
