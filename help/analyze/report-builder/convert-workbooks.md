@@ -5,13 +5,13 @@ role: User
 feature: Report Builder
 type: Documentation
 solution: Analytics
-source-git-commit: eedabc6295f9b918e1e00b93993680e676c216c3
+exl-id: ff9011b2-fc18-456f-81dc-151b9e4fccd2
+source-git-commit: cf1b64479690cf5bdfdc8d9ba08879d0e0886611
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '297'
 ht-degree: 0%
 
 ---
-
 
 # Konvertera gamla arbetsböcker från Report Builder till databaser
 
@@ -55,7 +55,7 @@ Som en del av övergången till en ny Report Builder-teknik kan du snabbt konver
 Du kan nu [hantera datablocket](/help/analyze/report-builder/manage-reportbuilder.md).
 
 
-## Äldre Report Builder-funktioner som inte stöds i nya Report Builder
+## Äldre Report Builder-funktioner som inte stöds i nya Report Builder {#unsupported}
 
 När funktionen för äldre Report Builder jämförs med det nya tillägget Report Builder är vissa funktioner inte längre tillgängliga:
 
@@ -66,3 +66,7 @@ När funktionen för äldre Report Builder jämförs med det nya tillägget Repo
 - FTP-alternativ för schemalagda rapporter
 
 - Besökarstatistik. Följande mått konverteras till&quot;unika besökare&quot;, även om rapportresultatet kanske inte är en exakt matchning: `visitorshourly`, `visitorsdaily`, `visitorsweekly`, `visitorsmonthly`, `visitorsquarterly` och `visitorsyearly`. Detta gäller även `mobilevisitorshourly`, `mobilevisitorsdaily`, `mobilevisitorsweekly`, `mobilevisitorsmonthly`, `mobilevisitorsquarterly` och `mobilevisitorsyearly`.
+
+## Schemalägg en konverterad arbetsbok {#schedule}
+
+Se [Schemalägg en konverterad arbetsbok](/help/analyze/report-builder/schedule-reportbuilder.md) i schemaläggningsartikeln.

@@ -6,9 +6,9 @@ feature: Report Builder
 type: Documentation
 solution: Analytics
 exl-id: 40e1feb0-64bc-40e6-83cb-4a1ea7e2d0cc
-source-git-commit: 65f2f1caff36be2afc0c11297be5dd5b593e9a3d
+source-git-commit: cf1b64479690cf5bdfdc8d9ba08879d0e0886611
 workflow-type: tm+mt
-source-wordcount: '1168'
+source-wordcount: '1237'
 ht-degree: 0%
 
 ---
@@ -75,6 +75,19 @@ Använd knappen Schema i Report Builder-navet för att snabbt skapa ett schema s
 
    ![Bekräftelsepopup](./assets/confirmation-toast.png){width="55%"}
 
+## Schemalägg en konverterad arbetsbok {#converted}
+
+1. Schemalägg en [konverterad](/help/analyze/report-builder/convert-workbooks.md) äldre arbetsbok.
+
+   Ett popup-fönster visas där du tillfrågas om du vill använda schemaläggningsmetadata från den äldre arbetsboken för att skapa en ny schemalagd aktivitet.
+
+1. Om du väljer **[!UICONTROL Use]** fyller Report Builder automatiskt i den gamla schemaläggningsinformationen.
+
+1. Kontrollera att informationen är korrekt och schemalägg.
+
+1. Om du vill skicka arbetsboken med ett annat schema schemalägger du en helt ny schemalagd aktivitet.
+
+
 ## Skicka arbetsboken endast en gång
 
 Du kan också skicka ut arbetsboken endast en gång.
@@ -85,7 +98,7 @@ Du kan också skicka ut arbetsboken endast en gång.
 
 1. Klicka på **Skicka nu**.
 
-## Visa och redigera schemalagda arbetsböcker
+## Visa och redigera schemalagda arbetsböcker {#view-edit}
 
 Du kan visa och hantera alla schemalagda arbetsböcker på ett ställe under fliken Arbetsböcker.
 
@@ -107,7 +120,7 @@ Du kan visa och hantera alla schemalagda arbetsböcker på ett ställe under fli
 
   ![Skärmbild som visar listan med schemalagda aktiviteter.](./assets/selected-workbook.png){width="40%"}
 
-## Granska status för schemalagda aktiviteter
+## Granska status för schemalagda aktiviteter {#status}
 
 I historikvyn kan du granska statusen för varje schemalagd aktivitet. Det finns en separat rad som dokumenterar statusändringen för varje schemalagd aktivitet. I exemplet nedan startades *New Timly Schedule* den 5 januari kl. 17:04. Senast 17:05 uppdaterades programmet och skickades till mottagarna. Nästa arbetsbok, *Ogiltig arbetsbok*, påträffade ett fel under uppdateringsprocessen. Om det inte går att skicka en arbetsbok kan du felsöka på historikfliken genom att visa var i processen felet uppstod. I det här fallet beror det troligtvis på ett fel i datablocket, kanske en komponent som saknas, som hindrade arbetsboken från att uppdateras.
 
