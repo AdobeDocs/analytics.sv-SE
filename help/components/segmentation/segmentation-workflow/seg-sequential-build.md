@@ -3,7 +3,7 @@ description: Sekventiella segment skapas med operatorn THEN i stället för AND 
 title: Skapa sekventiella segment
 feature: Segmentation
 exl-id: 2ac4e6db-3111-45e5-bedf-7d9b7b1ae352
-source-git-commit: 564b5fd305f1c8c4e16a92d3b2094ba73ba91c4c
+source-git-commit: c1a72e57d4dfdaae1f90e69fd940137af9dab1a8
 workflow-type: tm+mt
 source-wordcount: '3762'
 ht-degree: 1%
@@ -27,7 +27,7 @@ Här är en video om sekventiell segmentering:
 När du skapar ett segment där Inkludera alla är angivet identifierar segmentet banor som matchar det angivna mönstret som helhet. Detta är ett exempel på ett grundläggande sekvenssegment som söker efter en träff (sida A) följt av en annan (sida B) som besökts av samma besökare. Segmentet är inställt på Inkludera alla.
 
 ![](/help/admin/admin/assets/filter.png)
-![ 70a875e2-0ef9-4459-8648-77c60081d64d](assets/terrible-link-1.png)
+![ 70a875e2-0ef9-4459-8648-77c60081d64d](assets/copied-link-1.png)
 
 | Om resultatet.. | Sekvens |
 |--- |--- |
@@ -293,7 +293,7 @@ Sida B och C är kapslade i en [!UICONTROL Logic Group]-behållare i den yttre [
 
 ![](assets/logic_group_any_order3.png)
 
-Segmentet måste matcha vid minst en av logikgruppens kontrollpunkter (B eller C). Logikgruppsvillkor kan även uppfyllas i samma träff eller över flera träffar. &#x200B;
+Segmentet måste matcha vid minst en av logikgruppens kontrollpunkter (B eller C). Logikgruppsvillkor kan även uppfyllas i samma träff eller över flera träffar.
 
 ### Logggruppsmatchning
 
@@ -349,11 +349,11 @@ Du kan begränsa matchningen till en angiven tidslängd genom att använda behå
 >
 >Det finns skillnader i utvärderingen mellan element med liknande namn, som **dag(ar)** eller **dag**. För tidsbaserade definitioner av Inom och efter använder du de alternativ som listas först i popup-fönstret:
 >
->![bild](assets/terrible-link-2.png)
+>![bild](assets/copied-link-2.png)
 >
 >Använd alternativen under undermenyn *Andra Dimensioner* för dimensionsbaserade definitioner för Inom och efter:
 >
->![bild](assets/terrible-link-3.png)
+>![bild](assets/copied-link-3.png)
 
 ### Efter och inom operatorer {#section_CCAF5E44719447CFA7DF8DA4192DA6F8}
 
