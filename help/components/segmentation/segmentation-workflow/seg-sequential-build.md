@@ -3,9 +3,9 @@ description: Sekventiella segment skapas med operatorn THEN i stället för AND 
 title: Skapa sekventiella segment
 feature: Segmentation
 exl-id: 2ac4e6db-3111-45e5-bedf-7d9b7b1ae352
-source-git-commit: 0fd1f7a9dd876eef02dd6dbf9e40426b0acdbc17
+source-git-commit: 564b5fd305f1c8c4e16a92d3b2094ba73ba91c4c
 workflow-type: tm+mt
-source-wordcount: '3765'
+source-wordcount: '3762'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ Här är en video om sekventiell segmentering:
 När du skapar ett segment där Inkludera alla är angivet identifierar segmentet banor som matchar det angivna mönstret som helhet. Detta är ett exempel på ett grundläggande sekvenssegment som söker efter en träff (sida A) följt av en annan (sida B) som besökts av samma besökare. Segmentet är inställt på Inkludera alla.
 
 ![](/help/admin/admin/assets/filter.png)
-![ 70a875e2-0ef9-4459-8648-77c60081d64d](https://git.corp.adobe.com/storage/user/5902/files/d55be11f-4c4c-4198-bba5-ecad27ebcabf)
+![ 70a875e2-0ef9-4459-8648-77c60081d64d](assets/terrible-link-1.png)
 
 | Om resultatet.. | Sekvens |
 |--- |--- |
@@ -349,11 +349,11 @@ Du kan begränsa matchningen till en angiven tidslängd genom att använda behå
 >
 >Det finns skillnader i utvärderingen mellan element med liknande namn, som **dag(ar)** eller **dag**. För tidsbaserade definitioner av Inom och efter använder du de alternativ som listas först i popup-fönstret:
 >
->![bild](https://git.corp.adobe.com/storage/user/5902/files/70a875e2-0ef9-4459-8648-77c60081d64d)
+>![bild](assets/terrible-link-2.png)
 >
 >Använd alternativen under undermenyn *Andra Dimensioner* för dimensionsbaserade definitioner för Inom och efter:
 >
->![bild](https://git.corp.adobe.com/storage/user/5902/files/b808eeb0-5e3f-499b-8096-c7eb0d51c57a)
+>![bild](assets/terrible-link-3.png)
 
 ### Efter och inom operatorer {#section_CCAF5E44719447CFA7DF8DA4192DA6F8}
 
