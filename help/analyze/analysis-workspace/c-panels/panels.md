@@ -4,7 +4,7 @@ title: Paneler - översikt
 feature: Panels
 role: User, Admin
 exl-id: dd1a3c40-8b5b-47dd-86d9-da766575ee46
-source-git-commit: 90516181b5d5dd8aa3a8c01515ffa05f43b081f2
+source-git-commit: 515517eb708b8c8e1210f82a325e46cbf308c5e6
 workflow-type: tm+mt
 source-wordcount: '2030'
 ht-degree: 1%
@@ -17,7 +17,7 @@ En [!UICONTROL panel] är en samling tabeller och visualiseringar. Du kommer åt
 
 ## Paneltyper
 
-Följande paneltyper är tillgängliga i Analysis Workspace för [!UICONTROL Customer Journey Analytics]:
+Följande paneltyper är tillgängliga i Analysis Workspace för [!UICONTROL Adobe Analytics]:
 
 | Panelnamn | Beskrivning |
 | --- | --- |
