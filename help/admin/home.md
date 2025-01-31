@@ -4,7 +4,7 @@ description: Administrationshjälp för Adobe Analytics-administratörer, inklus
 feature: Admin Tools
 exl-id: d1491139-592b-44ec-aa45-dfdd00f416af
 role: Admin
-source-git-commit: d7a6867796f97f8a14cd8a3cfad115923b329c7c
+source-git-commit: a90e754e50c0e7325d20a0a9436dab751d1a5f09
 workflow-type: tm+mt
 source-wordcount: '314'
 ht-degree: 82%
@@ -20,7 +20,7 @@ Den här hjälpen är avsedd för administratörer av Adobe Analytics. Den hjäl
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Adobe Analytics Introduktion](https://video.tv.adobe.com/27429?quality=12&learn=on){target="_blank"} för en introduktionsvideo om Adobe Analytics.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Adobe Analytics Introduktion](https://video.tv.adobe.com/v/27429?quality=12&learn=on){target="_blank"} för en introduktionsvideo om Adobe Analytics.
 
 >[!ENDSHADEBOX]
 
