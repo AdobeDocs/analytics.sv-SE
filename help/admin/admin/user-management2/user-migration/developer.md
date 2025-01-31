@@ -4,9 +4,9 @@ title: API:er som påverkas av användarmigreringen
 feature: Admin Tools
 exl-id: 82d0a1cd-1e25-4157-9bb9-bba1049fdc48
 role: Admin, Developer
-source-git-commit: 4c4e68afcf9a7e2c5cd00ef109fbbf44578a3d1a
+source-git-commit: b90356050a6ff39e1688a10f6aa0af284284e2a6
 workflow-type: tm+mt
-source-wordcount: '222'
+source-wordcount: '216'
 ht-degree: 0%
 
 ---
@@ -43,6 +43,5 @@ Om ditt företag inte använder någon av dessa metoder behöver du inte vidta n
 Ytterligare information:
 
 * [Allmän information om användarhantering](https://helpx.adobe.com/enterprise/help/users.html)
-* [API:er för användarhantering via adobe.io](https://developer.adobe.com/umapi)
 * [API-forum för användarhantering](https://community.adobe.com/t5/enterprise-teams/bd-p/enterprise-and-teams)
 * [Migrering av användaråtkomst och hantering för Analytics till Experience Cloud](https://experienceleague.adobe.com/docs/analytics/admin/user-product-management/user-management/migrate-users/c-migration-tool.html)

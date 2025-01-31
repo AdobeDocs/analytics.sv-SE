@@ -4,9 +4,9 @@ title: Användarmigrering av analyser till Admin Console
 feature: Admin Tools
 exl-id: f4bc0e92-af53-40db-8138-44d29e4b25fe
 role: Admin
-source-git-commit: 4c4e68afcf9a7e2c5cd00ef109fbbf44578a3d1a
+source-git-commit: b90356050a6ff39e1688a10f6aa0af284284e2a6
 workflow-type: tm+mt
-source-wordcount: '3078'
+source-wordcount: '3077'
 ht-degree: 0%
 
 ---
@@ -281,7 +281,7 @@ Viktig information om migreringsprocessen och hur den påverkar den aktuella anv
   </tr> 
   <tr> 
    <td colname="col1"> <p>API:er för användarhantering <a href="https://helpx.adobe.com/enterprise/help/identity.html"> som stöds av Adobe </a> </p> </td> 
-   <td colname="col2"> <p> Administratörer som migrerar till Adobe Admin Console bör konfigurera <a href="https://developer.adobe.com/umapi"> API:er för användarhantering</a> som erbjuds på Adobe Developer för programmatisk åtkomst till användarkonton i Adobe Admin Console. </p> <p>API:erna för Analytics-behörighet kommer att stängas av när du har aktiverat för migreringen. </p> </td> 
+   <td colname="col2"> <p> Administratörer som migrerar till Adobe Admin Console bör konfigurera de API:er för användarhantering som erbjuds på Adobe Developer för programmatisk åtkomst till användarkonton i Adobe Admin Console. </p> <p>API:erna för Analytics-behörighet kommer att stängas av när du har aktiverat för migreringen. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Autentiseringsuppgifter för webbtjänst </p> </td> 
