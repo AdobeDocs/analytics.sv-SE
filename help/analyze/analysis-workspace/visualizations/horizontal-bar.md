@@ -1,18 +1,18 @@
 ---
-description: Använd den horisontella fältvisualiseringen i ett Workspace-projekt.
+description: Den här visualiseringen visar vågräta staplar som representerar olika värden för ett eller flera mätvärden.
 title: Vågrätt streck och vågrätt streck staplade
 uuid: 3730929d-42e6-4543-b12a-d002f86ac82d
 feature: Visualizations
 role: User, Admin
 exl-id: c50cc849-ca9b-4d13-85b4-2bab740ac65a
-source-git-commit: 76abe4e363184a9577622818fe21859d016a5cf7
+source-git-commit: b2e91c9981b328aa34e03dcd3b713438732ea6b1
 workflow-type: tm+mt
-source-wordcount: '142'
+source-wordcount: '183'
 ht-degree: 0%
 
 ---
 
-# Vågrätt streck och vågrätt streck staplade
+# Vågrätt streck (staplat)
 
 >[!BEGINSHADEBOX]
 
@@ -33,11 +33,12 @@ Visualiseringen av det vågräta fältet har ett standardalternativ och ett stap
 
 <!-- markdownlint-enable MD034 -->
 
-Den här visualiseringen visar vågräta staplar som representerar olika värden för ett eller flera mätvärden.
+Visualiseringen av ![GraphBarHorizontal](/help/assets/icons/GraphBarHorizontal.svg) **[!UICONTROL Horizontal bar]** visar vågräta staplar som representerar olika värden för ett eller flera mätvärden.
 
-![](assets/horizontal_bar.png)
+![Vågrätt fält med mätvärden som sidvyer, sidhastighet, besök, inlägg och avslut.](assets/horizontal-bar.png)
 
-## Staplad vågrät linje {#horizontal-bar-stacked}
+
+## Staplad vågrät stapel {#horizontal-bar-stacked}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -48,10 +49,20 @@ Den här visualiseringen visar vågräta staplar som representerar olika värden
 
 <!-- markdownlint-enable MD034 -->
 
-Den här visualiseringen är som [!UICONTROL Horizontal Bar Chart], men seriestaplarna ser skiktade ut.
 
-![](assets/horizontal-bar-stacked.png)
+Visualiseringen av ![GraphBarHorizontalStacking](/help/assets/icons/GraphBarHorizontalStacked.svg) **[!UICONTROL Horizontal bar stacked]** fungerar som [!UICONTROL Horizontal bar], men seriestaplarna visas som staplade.
 
-Visualiseringsinställningen [!UICONTROL Horizontal Bar Stacked] för staplade visualiseringar gör diagrammet till en 100 % staplad visualisering:
+![Ett staplat vågrätt fält med sidvyer, besök, poster och avslutningar.](assets/horizontal-bar-stacked.png)
 
-![](assets/horizstacked100.png)
+Använd alternativet **[!UICONTROL 100% stacked]** i ![Inställning](/help/assets/icons/Setting.svg) **[!UICONTROL Settings]** för att omvandla diagrammet till en 100 % staplad visualisering.
+
+![Vågrätt staplad 100 %](assets/horizontal-bar-stacked100.png)
+
+
+>[!MORELIKETHIS]
+>
+>[Lägg till en visualisering på en panel](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
+>[Visualiseringsinställningar](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>[Snabbmenyn Visualisering ](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>
+
