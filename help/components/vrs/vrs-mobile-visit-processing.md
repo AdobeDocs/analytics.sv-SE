@@ -3,7 +3,7 @@ description: Sammanhangsberoende sessioner i virtuella rapportsviter förändrar
 title: Sammanhangsberoende sessioner
 feature: VRS
 exl-id: 5e969256-3389-434e-a989-ebfb126858ef
-source-git-commit: 08e29da4847e8ef70bd4435949e26265d770f557
+source-git-commit: b9919c43b0232de1f8cb473d760bc013f4bc01f8
 workflow-type: tm+mt
 source-wordcount: '1577'
 ht-degree: 0%
@@ -19,7 +19,7 @@ Ni kan definiera ett besök som ni vill utan att ändra underliggande data, så 
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Kontextmedvetna sessioner](https://video.tv.adobe.com/v/iden23545tifier?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Kontextmedvetna sessioner](https://video.tv.adobe.com/v/23545?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 
