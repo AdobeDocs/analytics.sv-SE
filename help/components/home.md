@@ -3,9 +3,9 @@ title: Komponenthandbok för Analytics
 description: Läs om de olika komponenterna som Adobe Analytics erbjuder.
 exl-id: 172f816a-b90e-4a5a-8c92-f92f2b1663f3
 feature: Components
-source-git-commit: 9e3354569b2e748b3194be34c9119062300ca609
+source-git-commit: 08e29da4847e8ef70bd4435949e26265d770f557
 workflow-type: tm+mt
-source-wordcount: '211'
+source-wordcount: '212'
 ht-degree: 73%
 
 ---
@@ -27,9 +27,13 @@ Analytics-komponenterna hjälper er att finjustera och förbättra dataanalysen.
 * **Realtidsrapportering:** Få rapporter och trender så fort de blir tillgängliga.
 * **Marknadsföringskanaler:** Förstå hur besökarna kommer till er webbplats och avgör vilka kanaler som är mest framgångsrika.
 
-Här är en videoöversikt över Adobe Analytics:
 
->[!VIDEO](https://video.tv.adobe.com/v/27429/?quality=12)
+>[!BEGINSHADEBOX]
+
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Adobe Analytics - översikt](https://video.tv.adobe.com/v/27429?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+
+>[!ENDSHADEBOX]
+
 
 ## Viktiga artiklar om Analytics-komponenter
 

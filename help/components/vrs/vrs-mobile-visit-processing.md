@@ -1,11 +1,11 @@
 ---
-description: Sammanhangsberoende sessioner i virtuella rapportsviter förändrar hur Adobe Analytics beräknar mobilbesök. I den här artikeln beskrivs konsekvenserna av bakgrundstötar och appstarthändelser (som båda anges av SDK för mobiler) för hur mobilbesök definieras.
+description: Sammanhangsberoende sessioner i virtuella rapportsviter förändrar hur Adobe Analytics beräknar mobilbesök. I den här artikeln beskrivs hur bakgrundsträffar och appstarthändelser (som båda anges av SDK för mobiler) påverkar hur mobilbesök definieras.
 title: Sammanhangsberoende sessioner
 feature: VRS
 exl-id: 5e969256-3389-434e-a989-ebfb126858ef
-source-git-commit: beef45403f3c3eb7ac423ca8e0b6db0143ff1b9b
+source-git-commit: 08e29da4847e8ef70bd4435949e26265d770f557
 workflow-type: tm+mt
-source-wordcount: '1576'
+source-wordcount: '1577'
 ht-degree: 0%
 
 ---
@@ -16,9 +16,13 @@ Sammanhangsberoende sessioner i virtuella rapportsviter ändrar hur Adobe Analyt
 
 Ni kan definiera ett besök som ni vill utan att ändra underliggande data, så att det matchar hur besökarna interagerar med era digitala upplevelser.
 
-Här är en video om kontextmedvetna sessioner:
 
->[!VIDEO](https://video.tv.adobe.com/v/23545/?quality=12)
+>[!BEGINSHADEBOX]
+
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Kontextmedvetna sessioner](https://video.tv.adobe.com/v/iden23545tifier?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+
+>[!ENDSHADEBOX]
+
 
 ## URL-parameter för kundperspektiv
 
@@ -142,4 +146,4 @@ I båda fallen faktureras bakgrundstötarna till samma kostnad som andra träffa
 
 ## Starta nya besök vid varje appstart
 
-Förutom träffbearbetning i bakgrunden kan virtuella rapportsviter tvinga ett nytt besök att starta när mobilens SDK skickar en programstarthändelse. När den här inställningen är aktiverad kommer ett nytt besök att starta varje gång en programstarthändelse skickas från SDK, oavsett om ett öppet besök har nått sin tidsgräns eller inte. Den träff som innehåller applanseringshändelsen inkluderas som den första träffen vid nästa besök, och ökar antalet besök och skapar en tydlig besöksbehållare för segmentering.
+Förutom träffbearbetning i bakgrunden kan virtuella rapportsviter tvinga ett nytt besök att starta varje gång mobilen SDK skickar en app-starthändelse. När den här inställningen är aktiverad tvingas ett nytt besök att påbörjas när en appstart-händelse skickas från SDK, oavsett om ett öppet besök har nått sin tidsgräns eller inte. Den träff som innehåller applanseringshändelsen inkluderas som den första träffen vid nästa besök, och ökar antalet besök och skapar en tydlig besöksbehållare för segmentering.

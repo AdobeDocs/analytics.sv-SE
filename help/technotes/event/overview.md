@@ -3,9 +3,9 @@ title: Analysera data som påverkas av händelser
 description: Förstå hur data som påverkas av en händelse bidrar till den övergripande datakvaliteten.
 exl-id: 8d81a432-42d6-4f5d-b66a-bb3af7fc4857
 feature: Event
-source-git-commit: 811e321ce96aaefaeff691ed5969981a048d2c31
+source-git-commit: d7a6867796f97f8a14cd8a3cfad115923b329c7c
 workflow-type: tm+mt
-source-wordcount: '394'
+source-wordcount: '398'
 ht-degree: 0%
 
 ---
@@ -42,11 +42,15 @@ När du har förberetts för hur du tänker hantera en händelse kan du [kommuni
 
 ## Video
 
-I den här videon går du igenom alla steg ovan.
+>[!BEGINSHADEBOX]
 
->[!VIDEO](https://video.tv.adobe.com/v/33316?quality=12)
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysera och kommunicera variationer i dina data](https://video.tv.adobe.com/v/33316?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
 
 * **0:27**: Uteslut data med segmentering
 * **2:55**: Jämför en händelse med tidigare intervall
 * **8:42**: härleda data med beräknade värden
 * **11:46**: Kommunicera genomslag med användare
+
+>[!ENDSHADEBOX]
+
+

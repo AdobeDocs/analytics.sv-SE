@@ -5,9 +5,9 @@ keywords: appmeasurement,variabler,var,konfiguration,sida,implementering
 feature: Variables
 exl-id: 7ffcd943-f9ac-4daf-bbdf-248d75925b04
 role: Admin, Developer
-source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
+source-git-commit: d7a6867796f97f8a14cd8a3cfad115923b329c7c
 workflow-type: tm+mt
-source-wordcount: '387'
+source-wordcount: '385'
 ht-degree: 0%
 
 ---
@@ -22,11 +22,15 @@ Analytics ger ett antal variabler för att samla in analysdata. Variablerna i de
 
 ## Variabler och implementeringsmetoder
 
-Adobe erbjuder flera sätt att implementera Adobe Analytics. På varje sida finns ett avsnitt om hur du implementerar variabeln med Web SDK, med Adobe Analytics-tillägget och med AppMeasurementet för JavaScript.
+Adobe erbjuder flera sätt att implementera Adobe Analytics. På varje sida finns ett avsnitt om hur du implementerar variabeln med Web SDK, med tillägget Adobe Analytics, och hur du använder AppMeasurement för JavaScript.
 
-Här är en video om hur du konfigurerar variabler i Adobe Analytics:
 
->[!VIDEO](https://video.tv.adobe.com/v/28755/?quality=12)
+>[!BEGINSHADEBOX]
+
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Konfigurera variabler](https://video.tv.adobe.com/v/28755?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+
+>[!ENDSHADEBOX]
+
 
 ## Operationsordning
 
@@ -34,7 +38,7 @@ AppMeasurement-bibliotek som publiceras av Adobe Analytics följer en viss ordni
 
 1. Om webbplatsen använder ett datalager måste du se till att alla tillämpliga variabler fylls i först. Du kan till exempel fylla i `adobeDataLayer.page.title` med sidrubriken. Mer information finns i [Datalager](../prepare/data-layer.md).
 2. Använd datalagret för att fylla i Analytics-variabler. <br/>Om du använder taggar i Adobe Experience Platform utförs den här uppgiften med dataelement däremellan. Dataelement fylls med värden från datalagret. Dataelementet `Page Title` hämtar till exempel värdet från datalagervariabeln `adobeDataLayer.page.title`. <br/>Sedan kan du använda dataelementet för att fylla i Analytics-variabler. `eVar4` hämtar till exempel värdet från dataelementet `Page Title`. <br/>Mer information finns i [Dataelement](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html), [Mappa datalagretobjekt till dataelement](../launch/layer-to-elements.md) och [Mappa taggelement till analysvariabler](../launch/elements-to-variable.md)
-3. Anropa till sist spårningsfunktionen. I de flesta AppMeasurement-bibliotek används metoden `t()`, men i vissa mobil-SDK används `track()`. När spårningsfunktionen anropas skickas alla variabler som stöds i Analytics-objektet till Adobe i form av en bildbegäran.
+3. Anropa till sist spårningsfunktionen. I de flesta AppMeasurementen används metoden `t()`, men i vissa mobilbibliotek används `track()`. När spårningsfunktionen anropas skickas alla variabler som stöds i Analytics-objektet till Adobe i form av en bildbegäran.
 
 ## Ogiltiga tecken
 

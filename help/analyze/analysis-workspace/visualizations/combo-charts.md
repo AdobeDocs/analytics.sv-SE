@@ -4,9 +4,9 @@ title: Visualisering av kombinationsdiagram
 feature: Visualizations
 role: User, Admin
 exl-id: 08e49857-aa58-4527-bdfd-b1663a75a02b
-source-git-commit: 76abe4e363184a9577622818fe21859d016a5cf7
+source-git-commit: b2e91c9981b328aa34e03dcd3b713438732ea6b1
 workflow-type: tm+mt
-source-wordcount: '733'
+source-wordcount: '568'
 ht-degree: 0%
 
 ---
@@ -29,29 +29,26 @@ _I den här artikeln dokumenteras kombinationsvisualiseringen i_ ![AdobeAnalytic
 
 >[!ENDSHADEBOX]
 
-Visualiseringen av [!UICONTROL Combo chart] gör det enkelt att snabbt skapa en jämförelsevisualisering utan att först behöva skapa en tabell. Du kan enkelt visa trender i dina data i en kombination av rad och rad.
 
-Använd en [!UICONTROL Combo chart] till
+Visualiseringen av ![kombinationsdiagrammet](/help/assets/icons/ComboChart.svg) **[!UICONTROL Combo]** gör det enkelt att snabbt skapa en jämförelsevisualisering utan att först behöva skapa en tabell. Du kan enkelt visa trender i dina data i en kombination av rad och rad.
 
-* Jämför veckans order med order vid samma tidpunkt förra månaden (och förra året) - allt med bara några klick.
+Använd en [!UICONTROL Combo] för att:
 
-* Analysera och jämför snabbt flera mätvärden (som [!UICONTROL Unique Visitors] och [!UICONTROL Revenue]) mot varandra i samma diagram.
-
+* Jämför den här veckans order med order vid samma tidpunkt förra månaden (och förra året).
+* Analysera och jämför snabbt flera mätvärden (som [!UICONTROL Persons] och [!UICONTROL Revenue]) mot varandra i samma diagram.
 * Analysera ett mätvärde mot en funktion (till exempel [!UICONTROL Cumulative Average]) över en tidshorisont.
 
-Tänk på detta:
+Kom ihåg att:
 
 * Du kan lägga till flera jämförelser i en enda [!UICONTROL Combo chart].
 * Om du lägger till en eller flera jämförelser måste de vara av samma typ, till exempel [!UICONTROL Time comparison].
 * Du kan lägga till upp till fem jämförelser.
-* Du kan använda upp till tre filter (segment) för ett mätresultat.
+* Du kan använda upp till tre filter på ett mätresultat.
 * Beräknade mått stöds inte i kombinationsdiagram.
 
-## Skapa ett kombinationsdiagram
+## Använd
 
-1. Dra [!UICONTROL Combo chart]-visualiseringen från listrutan Visualiseringar i den vänstra listen till en tom panel.
-
-   ![](assets/combo-chart-build.png)
+1. Lägg till en ![kommentar](/help/assets/icons/ComboChart.svg) [!UICONTROL Combo]-visualisering. Se [Lägga till en visualisering på en panel](freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
 
 1. Välj en dimension för X-axeln och ett mått för Y-axeln i listrutan.
 
@@ -59,29 +56,29 @@ Tänk på detta:
 
    | Jämförelsetyp | Definition |
    | --- | --- |
-   | **[!UICONTROL Time comparison]** | Den vanligaste typen av jämförelse - till exempel en jämförelse mellan den här tidsperioden och för 4 veckor sedan. Om du har valt [!UICONTROL Time comparison] kan du göra ett andra val för vilken tidsperiod du vill jämföra.<p>![](assets/combo-time-period.png) |
-   | **[!UICONTROL Function]** | Du kan introducera en funktion som [!UICONTROL Average] i jämförelsen. Se en lista över funktioner som stöds nedan.<p>![](assets/combo-functions.png) |
-   | **[!UICONTROL Secondary metric]** | Du kan till exempel jämföra [!UICONTROL Revenue] med ett annat mått.<p>![](assets/combo-2metrics.png) |
+   | **[!UICONTROL Time comparison]** | Den vanligaste typen av jämförelse - till exempel en jämförelse mellan den här tidsperioden och för 4 veckor sedan. Om du har valt [!UICONTROL Time comparison] kan du göra ett andra val för vilken tidsperiod du vill jämföra.<p>![Radjämförelse med den valda tidsperioden och det sekundära urvalsfältet för tidsperioden.](assets/combo-time-period.png) |
+   | **[!UICONTROL Function]** | Du kan introducera en funktion som [!UICONTROL Average] i jämförelsen. Se listan med [funktioner som stöds](#supported-functions).<p>![Listrutan för radjämförelse med valda funktioner och en lista med tillgängliga funktioner som stöds.](assets/combo-functions.png) |
+   | **[!UICONTROL Secondary metric]** | Du kan till exempel jämföra [!UICONTROL Revenue] med ett annat mått.<p>![Ett kombinationsdiagram som jämför två mätvärden.](assets/combo-2metrics-settings.png) |
 
    {style="table-layout:auto"}
 
-1. Klicka på **[!UICONTROL Build]**.
+1. Välj **[!UICONTROL Build]**.
 
-   Utdata ser ut ungefär så här:
+   Utdata ser ut ungefär som:
 
-   ![](assets/combo-output.png)
+   ![Ett kombinationsdiagram som visar den aktuella perioden i ett stapeldiagram och en jämförelseperiod i linjediagrammet ](assets/combo-output.png)
 
-   Den aktuella perioden visas i stapeldiagrammet och jämförelseperioden representeras av linjediagrammet. Punkter i linjediagrammet kallas för&quot;streck&quot;.
+   Den aktuella perioden visas i stapeldiagrammet. Raddiagrammet representerar jämförelseperioden. Punkter i linjediagrammet kallas *streck*.
 
 ## Funktioner som stöds
 
-Om du väljer **[!UICONTROL Function]** som [!UICONTROL Line comparison type] returneras en funktion för måttet som du har valt.
+Om du väljer **[!UICONTROL Function]** som [!UICONTROL Line comparison type] returneras en funktion för det valda måttet.
 
 | Funktion | Definition |
 | --- | --- |
 | **[!UICONTROL Column Sum]** | Lägger till alla numeriska värden för ett mått i en kolumn (över elementen i en dimension) |
-| **[!UICONTROL Cumulative Average]** | Returnerar medelvärdet för de sista N raderna. |
-| **[!UICONTROL Median]** | Returnerar medianvärdet för ett mått i en kolumn. Medianvärdet är talet i mitten av en uppsättning tal, det vill säga hälften av talen har värden som är större än eller lika med medianvärdet och hälften är mindre än eller lika med medianvärdet. |
+| **[!UICONTROL Cumulative Average]** | Returnera medelvärdet för de sista N raderna. |
+| **[!UICONTROL Median]** | Returnerar medianvärdet för ett mått i en kolumn. Medianvärdet är talet i mitten av en sifferuppsättning. Hälften av talen har värden som är större än eller lika med medianen, och hälften av talet har värden som är mindre än eller lika med medianen. |
 | **[!UICONTROL Cumulative]** | Den kumulativa summan av N-rader. |
 | **[!UICONTROL Column Maximum]** | Returnerar det största värdet i en uppsättning dimensionselement för en måttkolumn. |
 | **[!UICONTROL Mean]** | Returnerar det aritmetiska medelvärdet, eller medelvärdet, för ett mått. |
@@ -91,32 +88,15 @@ Om du väljer **[!UICONTROL Function]** som [!UICONTROL Line comparison type] re
 
 Här är ett exempel på det ackumulerade genomsnittet för intäktsmåttet:
 
-![](assets/combo-cumul-avg.png)
+![Ett kombinationsdiagram som visar det kumulativa genomsnittet](assets/combo-cumul-avg.png)
 
 Här följer ett exempel på ett kombinationsdiagram med funktioner för både Cumulativt medelvärde och Medel:
 
-![](assets/combo-two-functions.png)
+![Ett kombinationsdiagram som visar både kumulativa medelvärden och medelfunktioner.](assets/combo-three-functions.png)
 
-## Inställningar för kombinationsdiagram
-
-Klicka på kugghjulsikonen längst upp till höger i ett kombinationsdiagram om du vill ändra dess inställningar.
-
-![](assets/combo-settings.png)
-
-| Inställning | Definition |
-| --- | --- |
-| **[!UICONTROL Visualization type]** | Växla till en annan visualiseringstyp. |
-| **[!UICONTROL Granularity]** | För trendvisualiseringar kan du ändra tidgranulariteten (dag, vecka, månad osv.) i den här listrutan. |
-| **[!UICONTROL General]** |  |
-| **[!UICONTROL Percentages]** | Visar värden i procent. |
-| **[!UICONTROL Legend visible]** | Gör att du kan dölja den detaljerade förklaringstexten för visualiseringen av kombinationsdiagram. |
-| **[!UICONTROL Limit max items]** | Minskar antalet objekt på X-axeln. Om du har en stor datauppsättning kan du bara visa de första 10 objekten (eller vilket värde du än väljer). |
-| **[!UICONTROL Overlays]** | Visa eller dölj strecken på linjer. |
-| **[!UICONTROL Axis]** | |
-| **[!UICONTROL Display dual axis]** | Gäller endast om du har två mätvärden - du kan ha en y-axel till vänster (för ett mätresultat) och till höger (för det andra måttet). Detta är praktiskt när plottade mätvärden har mycket olika förstoringsgrader. Färgen på den dubbla axeln matchar färgen på tabellen, såvida det inte finns flera jämförelser. I så fall är färgen för alla jämförelser grå. |
-| **[!UICONTROL Normalization]** | Tvingar måtten att ha samma proportioner. Detta är praktiskt när plottade mätvärden har mycket olika förstoringsgrader. |
-| **[!UICONTROL Show x-axis]** | Visa x-axeln eller dölj den. |
-| **[!UICONTROL Show y-axis]** | Visa y-axeln eller dölj den. |
-| **[!UICONTROL Anchor y-axis at zero]** | Om alla värden som är ritade i diagrammet ligger betydligt över noll, kommer diagrammets standardvärde att göra den nedre delen av y-axeln ICKE-ZERO. Om du markerar den här rutan kommer y-axeln att tvingas till noll (och diagrammet ritas om). |
-
-{style="table-layout:auto"}
+>[!MORELIKETHIS]
+>
+>[Lägg till en visualisering på en panel](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
+>[Visualiseringsinställningar](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>[Snabbmenyn Visualisering ](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>

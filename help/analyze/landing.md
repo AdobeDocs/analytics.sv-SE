@@ -4,18 +4,24 @@ title: Adobe Analytics landningssida
 role: User, Admin
 feature: Analytics Basics
 exl-id: 0a2fb778-491a-4dc3-aae4-afadb3ab1a1e
-source-git-commit: 436b2ced6335b5d4b3d8acd4bdb026d7db1d7ad8
+source-git-commit: d7a6867796f97f8a14cd8a3cfad115923b329c7c
 workflow-type: tm+mt
-source-wordcount: '1608'
+source-wordcount: '1613'
 ht-degree: 0%
 
 ---
 
 # Adobe Analytics landningssida
 
-Landningssidan för Adobe Analytics sammanför både [!DNL Analysis Workspace] och [!DNL Reports & Analytics] (slutet av livscykeln) i ett enda gränssnitt och en åtkomstpunkt under paraplyet [!DNL Workspace]. Här finns en startsida för projektledaren, en mallsektion och en utbildningssektion som hjälper dig att komma igång på ett effektivare sätt. Här är en videoöversikt:
+Landningssidan för Adobe Analytics sammanför både [!DNL Analysis Workspace] och [!DNL Reports & Analytics] (slutet av livscykeln) i ett enda gränssnitt och en åtkomstpunkt under paraplyet [!DNL Workspace]. Här finns en startsida för projektledaren, en mallsektion och en utbildningssektion som hjälper dig att komma igång på ett effektivare sätt.
 
->[!VIDEO](https://video.tv.adobe.com/v/334278/?quality=12)
+>[!BEGINSHADEBOX]
+
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Adobe Analytics landningssida](https://video.tv.adobe.com/v/334278/?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+
+>[!ENDSHADEBOX]
+
+
 
 Adobe Analytics landningssida består av följande underflikar: Projekt, Mallar och Utbildning.
 

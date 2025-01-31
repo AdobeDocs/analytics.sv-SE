@@ -4,9 +4,9 @@ title: Visa densitet
 feature: Workspace Basics
 role: User, Admin
 exl-id: ddb9bab2-cf92-41ad-b8d1-86c626024ed6
-source-git-commit: 5454995fb9d6e63fb19e2272f66f3c96bf951ccb
+source-git-commit: d7a6867796f97f8a14cd8a3cfad115923b329c7c
 workflow-type: tm+mt
-source-wordcount: '99'
+source-wordcount: '101'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,10 @@ Så här anger du visningsdensitet:
 
 1. Välj bland de tre alternativen ovan och klicka på **[!UICONTROL Save]**.
 
-Här är en video om hur du använder [!UICONTROL View Density]:
 
->[!VIDEO](https://video.tv.adobe.com/v/25963/?quality=12)
+>[!BEGINSHADEBOX]
+
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visa densitet](https://video.tv.adobe.com/v/25963?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+
+>[!ENDSHADEBOX]
+

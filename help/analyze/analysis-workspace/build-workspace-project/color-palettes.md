@@ -4,9 +4,9 @@ title: Vad är visualiseringsfärgpaletter och hur fungerar de?
 feature: Workspace Basics
 role: User, Admin
 exl-id: 7e426423-5475-44cc-9e78-74c0da5b93f8
-source-git-commit: 78cfb1f3c4d45fc983982a8da11b66f2b2c9ecbc
+source-git-commit: d7a6867796f97f8a14cd8a3cfad115923b329c7c
 workflow-type: tm+mt
-source-wordcount: '207'
+source-wordcount: '211'
 ht-degree: 1%
 
 ---
@@ -28,9 +28,14 @@ Tänk på följande:
 
 ## Ändra din [!UICONTROL color palette]:
 
-Här är en video om hur du använder anpassad [!UICONTROL color palettes]:
 
->[!VIDEO](https://video.tv.adobe.com/v/23876/?quality=12)
+
+>[!BEGINSHADEBOX]
+
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Använda en anpassad färgpalett](https://video.tv.adobe.com/v/23876?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+
+>[!ENDSHADEBOX]
+
 
 1. Navigera till **[!UICONTROL Workspace]** > **[!UICONTROL Project]** > **[!UICONTROL Project Info & Settings]**.
 1. I listrutan **[!UICONTROL Project Color Palette]** kan du välja ett av fem förinställda färgscheman.

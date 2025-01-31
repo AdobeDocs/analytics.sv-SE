@@ -4,7 +4,7 @@ title: Förstå och konfigurera robotregler
 feature: Bot Removal
 role: Admin
 exl-id: 1c0009f6-2746-4ef1-8dcb-e2693617e91e
-source-git-commit: 914b822aae659d1d0f0b8a98480090ead99e102a
+source-git-commit: d7a6867796f97f8a14cd8a3cfad115923b329c7c
 workflow-type: tm+mt
 source-wordcount: '1623'
 ht-degree: 0%
@@ -31,9 +31,13 @@ Punkttrafikdata lagras i en separat databas för visning i rapporter om start- o
 >
 >Innan du tar bort robottrafiken ska du kommunicera med intressenter för att se till att de kan göra de nödvändiga justeringarna av viktiga prestandaindikatorer som ett resultat av denna förändring. Om det är möjligt rekommenderar vi att man först tar bort både robottrafiken från ett litet rapporteringsprogram för att uppskatta den potentiella effekten.
 
-I följande video visas hur du konfigurerar båda reglerna:
 
->[!VIDEO](https://video.tv.adobe.com/v/335738/?quality=12)
+>[!BEGINSHADEBOX]
+
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Konfigurera robotregler](https://video.tv.adobe.com/v/335738/?quality=12){target="_blank"} för en demonstrationsvideo.
+
+>[!ENDSHADEBOX]
+
 
 Så här uppdaterar eller överför du robotregler:
 

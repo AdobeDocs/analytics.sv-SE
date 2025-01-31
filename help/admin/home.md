@@ -4,10 +4,10 @@ description: Administrationshjälp för Adobe Analytics-administratörer, inklus
 feature: Admin Tools
 exl-id: d1491139-592b-44ec-aa45-dfdd00f416af
 role: Admin
-source-git-commit: 9e3354569b2e748b3194be34c9119062300ca609
+source-git-commit: d7a6867796f97f8a14cd8a3cfad115923b329c7c
 workflow-type: tm+mt
-source-wordcount: '310'
-ht-degree: 83%
+source-wordcount: '314'
+ht-degree: 82%
 
 ---
 
@@ -17,9 +17,12 @@ ht-degree: 83%
 
 Den här hjälpen är avsedd för administratörer av Adobe Analytics. Den hjälper dig med användar- och produkthantering i Admin Console, där du kan skapa rapportsviter, variabler, klassificeringar och datainsamling.
 
-Här är en videoöversikt över Adobe Analytics:
 
->[!VIDEO](https://video.tv.adobe.com/v/27429/?quality=12)
+>[!BEGINSHADEBOX]
+
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Adobe Analytics Introduktion](https://video.tv.adobe.com/27429?quality=12&learn=on){target="_blank"} för en introduktionsvideo om Adobe Analytics.
+
+>[!ENDSHADEBOX]
 
 Adobe Analytics har för närvarande två områden för administratörer:
 

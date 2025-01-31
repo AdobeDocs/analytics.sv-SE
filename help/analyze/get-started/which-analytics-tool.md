@@ -3,9 +3,9 @@ description: Den här hjälpsidan innehåller rekommenderade användningsexempel
 title: Vilket Adobe Analytics-verktyg ska jag använda?
 feature: Analytics Basics
 exl-id: d65575df-19c6-4129-89c8-d36de7bb6b2f
-source-git-commit: 16046af6b7a78bdc4bfaf7e5ec7d05c55f2ebc01
+source-git-commit: 08e29da4847e8ef70bd4435949e26265d770f557
 workflow-type: tm+mt
-source-wordcount: '1215'
+source-wordcount: '1214'
 ht-degree: 3%
 
 ---
@@ -16,9 +16,13 @@ Den här hjälpsidan innehåller rekommenderade användningsexempel för varje A
 
 Mer information om Adobe Analytics produktjämförelser finns i [Analytics - produktjämförelse](/help/analyze/get-started/analytics-product-comparison.md).
 
-Här är en video som jämför olika Adobe Analytics-verktyg:
 
->[!VIDEO](https://video.tv.adobe.com/v/27220/?quality=12)
+>[!BEGINSHADEBOX]
+
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Jämförelse av verktyg](https://video.tv.adobe.com/v/27220?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+
+>[!ENDSHADEBOX]
+
 
 ## Adobe Analytics Reporting-användargränssnitt {#user-interfaces}
 
@@ -57,7 +61,7 @@ Här är en video som jämför olika Adobe Analytics-verktyg:
 
 **[API:t för datainmatning](/help/import/c-data-insertion-api/c-data-insertion-api.md)** ska användas:
 
-* När du behöver överföra data till Adobe Analytics och inte kan använda Adobe AppMeasurement eller mobil SDK-kod. Vi rekommenderar att du använder API för datainfogning i grupp (se nedan).
+* När du behöver överföra data till Adobe Analytics, och inte kan använda SDK-koden för Adobe AppMeasurement eller mobila enheter. Vi rekommenderar att du använder API för datainfogning i grupp (se nedan).
 
 **[API för datainfogning i grupp](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/bdia.md)**
 

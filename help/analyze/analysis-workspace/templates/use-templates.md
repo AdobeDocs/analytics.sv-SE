@@ -4,9 +4,9 @@ title: Använd mallar
 feature: Analysis Workspace
 role: User, Admin
 exl-id: 9e5d1b35-e2b3-4fa5-af12-67bb913675bc
-source-git-commit: f39ca03cd87ff5584348c526646f3eb39dfa75fd
+source-git-commit: 32a7a3d696fe0d39e2d8e50370b9072b49ef3a21
 workflow-type: tm+mt
-source-wordcount: '18648'
+source-wordcount: '18642'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Följande information beskriver hur du får åtkomst till och använder mallar f
 
    <!--update screenshot -->
 
-   ![Fliken Rapporter](assets/view-prebuilt-templates.png)
+   ![Fliken Rapporter](assets/view-prebuilt-templates-full.png)
 
 1. Välj någon av följande flikar i avsnittet [!UICONTROL **Mallar**]:
 
@@ -45,9 +45,9 @@ Följande information beskriver hur du får åtkomst till och använder mallar f
 
 1. Använd något av följande alternativ för att ändra hur du visar de tillgängliga mallarna:
 
-   * Välj om du vill visa mallar i en kolumnvy eller i en kortvy genom att antingen markera kolumnvyikonen ![kolumnvy](assets/column-view-icon.png) eller kortvyikonen ![kortvy](assets/card-view-icon.png) .
+   * Välj om du vill visa mallar i en kolumnvy eller i en kortvy genom att antingen markera kolumnvyn ![VisaKolumn](/help/assets/icons/ViewColumn.svg) eller kortvyikonen ![Kort](/help/assets/icons/Card.svg) .
 
-   * När du använder ikonen för kortvyn ![kortvyn ](assets/card-view-icon.png) kan du välja bland följande sorteringsordning: **[!UICONTROL Most recently used]**, **[!UICONTROL Most popular]**, **[!UICONTROL Alphabetical]**, **[!UICONTROL Categorical]**.
+   * När du använder kortvyn ![Kort](/help/assets/icons/Card.svg) väljer du bland följande sorteringsordning: **[!UICONTROL Most recently used]**, **[!UICONTROL Most popular]**, **[!UICONTROL Alphabetical]**, **[!UICONTROL Categorical]**.
 
 1. I sökfältet börjar du skriva namnet på mallen som du vill söka efter och väljer den sedan i listan med mallar. Du kan också söka i malllistan efter hjälp, eVar och händelsenummer. <!-- still true? -->
 
@@ -1272,3 +1272,5 @@ Följande mallar är tillgängliga:
 | **Enheter** | Visa märke och modell för mobila enheter som används för att komma åt din webbplats.<p>**Det här kan hjälpa dig** att bättre förstå vilka mobila enheter som är populärast bland dina användare.</p><p>**Baserat på vad du lär dig kan du** göra flera saker, som att optimera återgivningen av din webbplats för de vanligaste mobila enheterna.</p><p>Den här mallen använder dimensionen Mobilenhetsnamn.</p> |
 | **Enhetstyp** | Visa de mobila enhetstyper som användare använder för att få tillgång till din webbplats, t.ex. telefoner och surfplattor.<p>**Detta kan hjälpa dig** att bättre förstå de olika typer av mobila enheter som används för att komma åt din webbplats.</p><p>**Baserat på vad du lär dig kan du** göra flera saker, som att optimera webbplatsen för de typer av mobila enheter som används mest.</p><p>Den här mallen använder dimensionen för mobilenhetstyp.</p> |
 | **Tillverkare** | Se vilka tillverkare som producerar de mobila enheter som användarna använder för att få tillgång till er webbplats, som Apple och Samsung.<p>**Det här kan hjälpa dig** att bättre förstå vilka tillverkare som är populärast bland dina användare.</p><p>**Baserat på vad du lär dig kan du** göra flera saker, som att skräddarsy innehållsleveransen baserat på kapaciteten hos olika tillverkare för att säkerställa en smidig användarupplevelse.</p><p>I den här mallen används Mobile Manufacturer-dimensionen.</p> |
+
+

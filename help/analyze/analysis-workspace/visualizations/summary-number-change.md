@@ -5,20 +5,24 @@ uuid: 177c1b89-6d98-473d-8447-6b4cdc479565
 feature: Visualizations
 role: User, Admin
 exl-id: d6a08201-ca3a-48ff-983a-3ec6b989deda
-source-git-commit: 76abe4e363184a9577622818fe21859d016a5cf7
+source-git-commit: 5a35d2acd428d16afff3d8e85cfb084d6a6476c4
 workflow-type: tm+mt
-source-wordcount: '417'
-ht-degree: 1%
+source-wordcount: '306'
+ht-degree: 0%
 
 ---
 
-# [!UICONTROL Summary Number] och [!UICONTROL Summary Change]
+# [!UICONTROL Summary number] och [!UICONTROL Summary change]
 
 _I den här artikeln dokumenteras visualiseringar av sammanfattningsnummer och sammanfattningsändringar i_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._<br/>_Se [Sammanfattningsnummer och Sammanfattningsändring](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/summary-number-change) för_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**-versionen av den här artikeln._
 
-Här är en video om dessa två visualiseringar:
 
->[!VIDEO](https://video.tv.adobe.com/v/335564/?quality=12)
+>[!BEGINSHADEBOX]
+
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualisering av sammanfattningsnummer och sammanfattningsändring](https://video.tv.adobe.com/v/335564/?quality=12){target="_blank"} för en demonstrationsvideo.
+
+>[!ENDSHADEBOX]
+
 
 ## [!UICONTROL Summary Number]-visualisering {#summary-number}
 
@@ -31,34 +35,12 @@ Här är en video om dessa två visualiseringar:
 
 <!-- markdownlint-enable MD034 -->
 
-Använd visualiseringen [!UICONTROL Summary Number] för att markera ett stort tal som är viktigt i ett projekt. Den här visualiseringen fungerar på följande sätt:
 
-* Markerar kolumnsumman om ingen cell är markerad.
-* Om en enskild cell är markerad visas sammanfattningen för den cellen.
-* Om flera celler är markerade visas den första cellen som är markerad.
-* Om kolumnen är markerad väljs det första cellvärdet i kolumnen.
+Använd visualiseringen ![MoveUpDown](/help/assets/icons/MoveUpDown.svg) **[!UICONTROL Summary Change]** för att visa delta (ändring) mellan två tal. <!-- This is applicable for AA, not CJA: The green and red color of the Summary Change can be controlled through [custom event polarity](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/success-events/success-event.html) or a calculated metric's [Show Upward Trend As](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html) option.-->
 
-Klicka på **Visualiseringsinställningarna** i det övre högra hörnet för att konfigurera inställningarna för Sammanfattningsnummer:
-
-| Inställning | Definition |
-|--- |--- |
-| [!UICONTROL Percentages] | Visa procenttal i stället för råa tal. |
-| [!UICONTROL Legend visible] | Visa information om måttet som visas. |
-| [!UICONTROL Abbreviate value] | Välj om du vill förkorta värden och visa upp till tre decimaler. |
-| [!UICONTROL Summarize value by] | Välj om du vill visa max, min, medelvärde, median eller summan för ett dataurval. |
-
-## [!UICONTROL Summary Change]-visualisering {#summary-change}
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="workspace_summarychange_button"
->title="Sammanfattningsändring"
->abstract="Skapa en visualisering som visar delta (ändring) mellan två tal"
-
-<!-- markdownlint-enable MD034 -->
-
-Använd visualiseringen [!UICONTROL Summary Change] för att visa delta (ändring) mellan två tal. Den gröna och röda färgen för [!UICONTROL Summary Change] kan styras med [anpassad händelsepolaritet](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/c-success-events/success-event.md) eller det beräknade måttets [Visa uppåttrend som](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html) -alternativ.
+<!--
+The green and red color of the Summary Change can be controlled through [custom event polarity](https://experienceleague.adobe.com/docs/analytics/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/c-success-events/success-event.md) or a calculated metric's [Show Upward Trend As](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html) option.
+-->
 
 Den här visualiseringen fungerar på följande sätt:
 
@@ -70,14 +52,20 @@ Den här visualiseringen fungerar på följande sätt:
 * Om kolumnen är markerad jämförs det första värdet med sig självt, vilket innebär en ändring på 0.
 
 
-![](assets/summary-change.png)
+![Visualisering av sammanfattningsändring som visar delta mellan två tal.s](assets/summary-change.png)
 
 
-Klicka på **Visualiseringsinställningarna** i det övre högra hörnet för att konfigurera inställningarna för Sammanfattningsändring:
+Som en del av visualiseringsinställningarna är specifika **[!UICONTROL Summary change options]** tillgängliga.
 
-| Inställning | Definition |
-| --- | --- |
-| [!UICONTROL Percentages] | Visa procenttal i stället för råa tal. |
-| [!UICONTROL Legend visible] | Visa information om måttet som visas. |
-| [!UICONTROL Show Percent Change] | Visar procentuell ändring mellan de två talen. |
-| [!UICONTROL Show Raw Difference] | Visar den obearbetade skillnaden mellan de två talen. Med det här alternativet kan du även förkorta värden och visa upp till tre decimaler. |
+| Alternativ | Definition |
+|--- |--- |
+| **[!UICONTROL Show percent change]** | Visa procentuell ändring mellan de två talen. |
+| **[!UICONTROL Show raw difference]** | Visa den obearbetade skillnaden mellan de två talen. Med det här alternativet kan du även förkorta värden och visa upp till tre decimaler. |
+| **[!UICONTROL Abbreviate value]** | Välj **[!UICONTROL Abbreviate value]** om du vill förkorta det ändrade värdet på ett intelligent sätt. När du har markerat det här alternativet anger du ett tal för att definiera förkortningen. Till exempel:<br/><table><tr><td>**Ursprungligt värde**</td><td>**Förkortningsvärde**</td><td>**Resultat**</td></tr><tr><td>12 011 141,25 USD</td><td>Inte markerad</td><td  align="right">12 011 141,25 USD</td></tr><tr><td>12 011 141,25 USD</td><td>Markerad, inställd på `0`</td><td align="right">12 miljoner dollar</td></tr><tr><td>12 011 141,25 USD</td><td> Markerad, inställd på `1`</td><td  align="right">$12.0M</td></tr><tr><td>12 011 141,25 USD</td><td>Markerad, inställd på `2`</td><td align="right">$12.01M</td></tr><tr><td>12 011 141,25 USD</td><td>Markerad, inställd på `3`</td><td align="right">$12.011M</td></tr></table> |
+
+>[!MORELIKETHIS]
+>
+>[Lägg till en visualisering på en panel](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
+>[Visualiseringsinställningar](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>[Snabbmenyn Visualisering ](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>

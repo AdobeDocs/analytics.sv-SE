@@ -5,9 +5,9 @@ uuid: 0a743378-f588-417f-9108-4a1313d6bfeb
 feature: Visualizations
 role: User, Admin
 exl-id: b5d6a822-e569-433e-990a-16e6cae12bbb
-source-git-commit: 76abe4e363184a9577622818fe21859d016a5cf7
+source-git-commit: e0d14f6dd7be438f3dad979abcfc279e710873e7
 workflow-type: tm+mt
-source-wordcount: '147'
+source-wordcount: '156'
 ht-degree: 0%
 
 ---
@@ -30,26 +30,33 @@ _I den här artikeln dokumenteras Vennvisualiseringen i_ ![AdobeAnalytics](/help
 
 >[!ENDSHADEBOX]
 
-Med visualiseringen [!UICONTROL Venn] kan du dra i upp till tre segment (från [!UICONTROL Components]) och ett mätvärde för att skapa ett [!UICONTROL Venn]-diagram.
+Med visualiseringen ![Type](/help/assets/icons/TwoDots.svg) **[!UICONTROL Venn]** kan du dra upp till tre filter och ett mätvärde (från komponentpanelen) för att skapa ett Venndiagram.
 
-![](assets/venn.png)
+![Vennvisualisering som innehåller tre filter.](assets/venn.png)
 
-Sedan kan du hålla markören över segmenten för att få bättre insikt i procentandelar, osv.
+Du kan hålla muspekaren över filtren för att få bättre insikt i procenttal och mycket mer.
 
-![](assets/venn_hover.png)
+Om du vill generera en [!UICONTROL Freeform table] från visualiseringen [!UICONTROL Venn] markerar du den färgade ![StatusOrange](/help/assets/icons/StatusOrange.svg) bredvid rubriken **[!UICONTROL Venn]** och väljer **[!UICONTROL Show data source]**. Du kommer att se en **[!UICONTROL Venn Data]**-friformstabell med de data som används för att skapa [!UICONTROL Venn]-visualiseringen.
 
-## Omvandla diagrammet [!UICONTROL Venn] till tabellen [!UICONTROL Freeform]
+<!--
+To normalize the Venn diagram (take the size out of it), go select ![Setting](/help/assets/icons/Setting.svg) and select **[!UICONTROL Normalization]**.
 
-Om du vill omvandla Venndiagrammet till en frihandstabell klickar du på den färgade punkten bredvid rubriken **[!UICONTROL Venn]** och väljer **[!UICONTROL Manage Data Sources]** > **[!UICONTROL Available Data Sources]** > **[!UICONTROL Freeform Table]**.
+![Visualization Settings option for Visualization type: Venn diagram.](assets/normalization.png)
 
-## Normalisera [!UICONTROL Venn]-diagram
+-->
 
-Om du vill normalisera [!UICONTROL Venn]-diagrammet (ta bort storleken från det) går du till ikonen Visualiseringsinställningar och väljer **[!UICONTROL Normalization]**.
 
-![](assets/normalization.png)
+>[!BEGINSHADEBOX]
 
-## Video
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Vennvisualisering](https://video.tv.adobe.com/v/335798/?quality=12){target="_blank"} för en demonstrationsvideo.
 
-Här är en video om [!UICONTROL Venn]-diagrammet:
+>[!ENDSHADEBOX]
 
->[!VIDEO](https://video.tv.adobe.com/v/335798/?quality=12)
+
+>[!MORELIKETHIS]
+>
+>[Lägg till en visualisering på en panel](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
+>[Visualiseringsinställningar](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>[Snabbmenyn Visualisering ](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>
+

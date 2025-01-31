@@ -5,9 +5,9 @@ uuid: fc22b573-2d18-4c29-866c-f317c920d27a
 feature: Visualizations
 role: User, Admin
 exl-id: 3a7d1552-7fae-41ae-8ca5-89800d05d3d4
-source-git-commit: 76abe4e363184a9577622818fe21859d016a5cf7
+source-git-commit: d7a6867796f97f8a14cd8a3cfad115923b329c7c
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '345'
 ht-degree: 0%
 
 ---
@@ -43,9 +43,13 @@ Här kan du:
 * Analysera vart kunderna ska gå före och efter angivna kontrollpunkter, som inmatning, en viss dimension eller avslut
 * Skapa segment genom att ange en specifik punkt i en vald bana
 
-Här är en videosjälvstudiekurs om Flow-visualisering:
 
->[!VIDEO](https://video.tv.adobe.com/v/344222/?quality=12)
+>[!BEGINSHADEBOX]
+
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Flödesvisualisering](https://video.tv.adobe.com/v/344222?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+
+>[!ENDSHADEBOX]
+
 
 ## Mellandimensionella flöden {#section_7AA325E432C846B0AC51E70CCE79B4C0}
 
@@ -61,6 +65,13 @@ Mer information om hur du konfigurerar en flödesvisualisering finns i [Konfigur
 
 Flödesdiagram är en del av ett projekts .CSV-fil som du kan skapa genom att gå till **[!UICONTROL Project]** > **[!UICONTROL Download CSV]**. På så sätt kan du analysera flödesresultat i Microsoft Excel (visualiserat som en tabell) eller någon annanstans.
 
-## Expandera vid Flödesvisualisering
 
->[!VIDEO](https://video.tv.adobe.com/v/24044/?quality=12)
+## Ytterligare funktioner
+
+>[!BEGINSHADEBOX]
+
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Ytterligare funktioner i Flödesvisualisering](https://video.tv.adobe.com/v/24044?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+
+>[!ENDSHADEBOX]
+
+

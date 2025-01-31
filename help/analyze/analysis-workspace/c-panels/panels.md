@@ -4,9 +4,9 @@ title: Paneler - översikt
 feature: Panels
 role: User, Admin
 exl-id: dd1a3c40-8b5b-47dd-86d9-da766575ee46
-source-git-commit: 515517eb708b8c8e1210f82a325e46cbf308c5e6
+source-git-commit: d7a6867796f97f8a14cd8a3cfad115923b329c7c
 workflow-type: tm+mt
-source-wordcount: '2030'
+source-wordcount: '2032'
 ht-degree: 1%
 
 ---
@@ -157,11 +157,13 @@ Komponenter som inte tillhör segment kan också dras direkt till släppzonen f�
 
 ### Nedrullningsbara segment
 
-+++ Se en video som förklarar listrutesegment.
 
->[!VIDEO](https://video.tv.adobe.com/v/23877?format=jpeg)
+>[!BEGINSHADEBOX]
 
-+++
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Listrutesegment](https://video.tv.adobe.com/v/23877?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+
+>[!ENDSHADEBOX]
+
 
 #### Statiska rullgardinssegment
 

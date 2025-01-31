@@ -4,10 +4,10 @@ description: Produktdokumentation och självhjälp för Analysis Workspace, kont
 feature: Workspace Basics
 role: User, Admin
 exl-id: 8ed81356-626e-4334-9e20-b481e6ba654a
-source-git-commit: aac5421b658cf06b20ca5a3d22f07ef441283753
+source-git-commit: d7a6867796f97f8a14cd8a3cfad115923b329c7c
 workflow-type: tm+mt
-source-wordcount: '523'
-ht-degree: 12%
+source-wordcount: '535'
+ht-degree: 11%
 
 ---
 
@@ -28,7 +28,12 @@ Analysverktygshandboken innehåller information om produktfunktioner, användnin
 
 Läs mer om grunderna i Adobe Analytics i videon *Introduktion till Adobe Analytics - Kunskaps webbinarium* nedan. Videon visar grunderna för hur data hämtas, hur data skickas till Adobe Analytics och vilka visualiseringsfunktioner du kan använda i Adobe Analytics. Videon ger er en grund för att bygga, driftsätta, samla in och tolka data ... så att ni kan ge er åtgärdbara insikter och rekommendationer baserat på insamlade data.
 
->[!VIDEO](https://video.tv.adobe.com/v/27429/?quality=12)
+
+>[!BEGINSHADEBOX]
+
+Mer information om webbinariet finns i ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Introduktion till Adobe Analytics - Webbseminarium om kunskapsbyggaren](https://video.tv.adobe.com/v/27429/?quality=12&learn=on){target="_blank"}.
+
+>[!ENDSHADEBOX]
 
 Mer information om vilket verktyg som ska användas finns i [Vilket Adobe Analytics-verktyg ska jag använda?](https://experienceleague.adobe.com/docs/analytics/analyze/admin-overview/which-analytics-tool.html).
 

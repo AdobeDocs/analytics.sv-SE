@@ -5,9 +5,9 @@ title: Projektöversikt
 feature: Workspace Basics
 role: User, Admin
 exl-id: 75c551de-297e-4c45-95e6-77472be6628a
-source-git-commit: f6bfded8b3a8346b912f34cf2f3ba9a4958eefa7
+source-git-commit: d7a6867796f97f8a14cd8a3cfad115923b329c7c
 workflow-type: tm+mt
-source-wordcount: '1430'
+source-wordcount: '1450'
 ht-degree: 1%
 
 ---
@@ -18,7 +18,13 @@ Med Workspace-projekt kan ni kombinera datakomponenter, tabeller och visualiseri
 
 Här är en video om hur du bygger ett Workspace-projekt:
 
->[!VIDEO](https://video.tv.adobe.com/v/334076/?quality=12)
+
+>[!BEGINSHADEBOX]
+
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Skapa ett Workspace-projekt](https://video.tv.adobe.com/v/334076?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+
+>[!ENDSHADEBOX]
+
 
 ## Projektlista {#project-list}
 
@@ -131,7 +137,12 @@ Komponenter (mått, mått, segment, datumintervall) i den vänstra listen relate
 
 Här är en video om hur du använder högerklicksmenyn i Analysis Workspace:
 
->[!VIDEO](https://video.tv.adobe.com/v/23981/?quality=12)
+
+>[!BEGINSHADEBOX]
+
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Använda snabbmenyn](https://video.tv.adobe.com/v/23981?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+
+>[!ENDSHADEBOX]
 
 ## Projektarbetsyta {#canvas}
 

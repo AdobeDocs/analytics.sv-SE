@@ -3,7 +3,7 @@ description: I Segment Builder finns en arbetsyta där du kan dra och släppa me
 title: Skapa segment
 feature: Segmentation
 exl-id: 2107f301-4137-4e97-9aa7-07824b842e16
-source-git-commit: 75d8705170169a0ef9f1ee59b12e4bb2c3afac7a
+source-git-commit: 08e29da4847e8ef70bd4435949e26265d770f557
 workflow-type: tm+mt
 source-wordcount: '1961'
 ht-degree: 1%
@@ -167,9 +167,13 @@ Du skapar en besöksbehållare och i den lägger du till tidsintervallet [!UICON
 
 ![](assets/date-ranges.png)
 
-Här är en video om hur du använder rullande datumintervall i segment:
 
->[!VIDEO](https://video.tv.adobe.com/v/25403/?quality=12)
+>[!BEGINSHADEBOX]
+
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Rullande datumintervall i segment](https://video.tv.adobe.com/v/25403?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+
+>[!ENDSHADEBOX]
+
 
 ## Stapla segment {#task_58140F17FFD64FF1BC30DC7B0A1B0E6D}
 

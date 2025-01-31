@@ -5,9 +5,9 @@ uuid: 904b7170-073f-44ea-9fcb-4019befcaf8a
 feature: Visualizations
 role: User, Admin
 exl-id: ce6dc211-b705-4315-90f3-4c6f5586c00f
-source-git-commit: 76abe4e363184a9577622818fe21859d016a5cf7
+source-git-commit: 5a35d2acd428d16afff3d8e85cfb084d6a6476c4
 workflow-type: tm+mt
-source-wordcount: '192'
+source-wordcount: '265'
 ht-degree: 0%
 
 ---
@@ -27,22 +27,35 @@ _I den här artikeln dokumenteras textvisualiseringen i_ ![AdobeAnalytics](/help
 
 >[!ENDSHADEBOX]
 
-Du kan lägga till användardefinierad text i ditt Workspace-projekt med hjälp av textvisualiseringar eller panelbeskrivningar/visualiseringsbeskrivningar (högerklicka på sidhuvud > **[!UICONTROL Edit description]**). Du kan också ändra textens formatering, lägga till hyperlänkar och lägga till bilder.
+Du kan
+Om du vill lägga till användardefinierad RTF-text i ditt Workspace-projekt kan du använda en ![Text](/help/assets/icons/Text.svg) **[!UICONTROL Text]** -visualisering eller beskrivningar för en visualisering och panel.
+
+## Använd
+
+Du kan använda textvisualiseringen på följande sätt:
+
+1. Lägg till en ![Text](/help/assets/icons/Text.svg) **[!UICONTROL Text]**-visualisering. Se [Lägga till en visualisering på en panel](freeform-analysis-visualizations.md#add-visualizations-to-a-panel).
+
+1. På en panel eller visualisering väljer du **[!UICONTROL Edit description]** på snabbmenyn.
+
+   Välj ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) när du är klar med redigeringen av beskrivningen och välj ![CloseCircle](/help/assets/icons/CloseCircle.svg) om du vill avbryta.
+
+Du kan ändra textens formatering, lägga till hyperlänkar och lägga till bilder.
 
 ## Justera formatering {#format}
 
 När du redigerar en textruta eller beskrivning kan du justera den markerade textens teckensnittsstorlek (rubriknivåer), färg, format (fet, kursiv) och justering. Du kan också lägga till punktlistor och numrerade listor.
 
-![](assets/format.png)
+![Textalternativ för ett Workspace-projekt som markerar textfärgspaletten.](assets/format.png)
 
 ## Lägg till hyperlänkar {#hyperlinks}
 
-Om du vill lägga till en hyperlänk markerar du texten och klickar på hyperlänksikonen på menyn. Hyperlänkar kan länka till externa webbplatser, dokumentationssidor, [Workspace-projekt/paneler/visualiseringar](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/shareable-links.html) med mera för att ytterligare hjälpa dina projektmottagare.
+Om du vill lägga till en hyperlänk markerar du texten och väljer ![Länk](/help/assets/icons/Link.svg) på menyn. Du kan använda hyperlänkar för att ge ytterligare hjälp till projektmottagarna. Hyperlänkar kan länka till externa webbplatser, dokumentationssidor, [Workspace-projekt, paneler eller visualiseringar](/help/analyze/analysis-workspace/curate-share/shareable-links.md) med mera.
 
-![](assets/hyperlink.png)
+![Textalternativ med länkikonen markerad.](assets/hyperlink.png)
 
 ## Lägg till bilder {#images}
 
-Om du vill lägga till en bild i projektet klickar du på bildikonen på menyn och infogar en URL för en offentlig bild. Bildens URL måste vara tillgänglig för alla, börja med `https` och ha formatet `.png`, `.jpeg`, `.jpg` eller `.gif`. Statiska och animerade bilder stöds.
+Om du vill lägga till en bild i projektet väljer du ![Bild](/help/assets/icons/Image.svg) på menyn och infogar en URL för en offentlig bild. Bildens URL måste vara tillgänglig för alla, börja med `https` och ha formatet `.png`, `.jpeg`, `.jpg` eller `.gif`. Statiska och animerade bilder stöds.
 
-![](assets/image.png)
+![Textalternativ med bildikonen markerad.](assets/image.png)

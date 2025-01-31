@@ -5,7 +5,7 @@ title: projekt med endast visning
 feature: Curate and Share
 role: User, Admin
 exl-id: 53372247-6902-4c7f-9132-38a1d453186c
-source-git-commit: 0885ff8e13675a986f5c40396a14f9edecaa753d
+source-git-commit: d7a6867796f97f8a14cd8a3cfad115923b329c7c
 workflow-type: tm+mt
 source-wordcount: '238'
 ht-degree: 0%
@@ -20,9 +20,13 @@ Observera att du kan redigera panelens datumintervall även i projekt som bara �
 
 ![](assets/view-only-project.png)
 
-Här är en videoöversikt över projekt som bara är för visning:
 
->[!VIDEO](https://video.tv.adobe.com/v/36206/?quality=12)
+>[!BEGINSHADEBOX]
+
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [projekt med endast visning](https://video.tv.adobe.com/v/36206?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+
+>[!ENDSHADEBOX]
+
 
 ## Inaktiverade interaktioner
 

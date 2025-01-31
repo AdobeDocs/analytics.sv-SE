@@ -4,9 +4,9 @@ keywords: Virtual Report Suite
 title: Skapa virtuella rapportsviter
 feature: VRS
 exl-id: 5ff6ff1a-5b99-41cc-a3a7-928197ec9ef9
-source-git-commit: 266cf18050d60f08f7e170c56453d1e1d805cb7b
+source-git-commit: 08e29da4847e8ef70bd4435949e26265d770f557
 workflow-type: tm+mt
-source-wordcount: '667'
+source-wordcount: '661'
 ht-degree: 2%
 
 ---
@@ -43,9 +43,12 @@ Definiera de här inställningarna på fliken [!UICONTROL Visit Definition] och 
 
 ![](assets/visit-definition.png)
 
-Här är en video om hur du justerar en besöksdefinition i en virtuell rapportserie:
 
->[!VIDEO](https://video.tv.adobe.com/v/23545/?quality=12)
+>[!BEGINSHADEBOX]
+
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Justera en besöksdefinition](https://video.tv.adobe.com/v/23545?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+
+>[!ENDSHADEBOX]
 
 | Element | Beskrivning |
 | --- |--- |

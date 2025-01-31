@@ -5,9 +5,9 @@ title: Översikt över bearbetningsregler
 feature: Processing Rules
 role: Admin
 exl-id: 0244aba2-4345-463a-8528-d4dcd2f872ff
-source-git-commit: 429aaa43fdae669350bdb5a5a54a7d4b9b1c65f2
+source-git-commit: d7a6867796f97f8a14cd8a3cfad115923b329c7c
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '385'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,14 @@ Bearbetningsregler förenklar datainsamling och hantering av innehåll när det 
 * Rensa felstavade webbplatsavsnitt
 * Hämta interna söktermer eller ett kampanj-ID från frågesträngen till en eVar
 
->[!VIDEO](https://video.tv.adobe.com/v/26124/?quality=12&learn=on)
+
+
+>[!BEGINSHADEBOX]
+
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Översikt över bearbetningsregler](https://video.tv.adobe.com/v/26124/?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+
+>[!ENDSHADEBOX]
+
 
 ## Bearbetar regelbehörigheter {#section_8A4846688050453784DAE4D89355169A}
 

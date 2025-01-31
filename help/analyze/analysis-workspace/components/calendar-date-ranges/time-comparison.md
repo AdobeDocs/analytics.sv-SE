@@ -4,9 +4,9 @@ title: Datumjämförelse
 feature: Calendar
 role: User, Admin
 exl-id: ea7a42ef-89de-4f70-b468-8a5cf69fea05
-source-git-commit: 8405c36b3e19a54385011ea80fc06363a02bc07a
+source-git-commit: d7a6867796f97f8a14cd8a3cfad115923b329c7c
 workflow-type: tm+mt
-source-wordcount: '635'
+source-wordcount: '636'
 ht-degree: 5%
 
 ---
@@ -15,14 +15,19 @@ ht-degree: 5%
 
 Med Datumjämförelse i Analysis Workspace kan du ta vilken kolumn som helst som innehåller ett datumintervall och skapa en gemensam datumjämförelse, till exempel år-över-år, kvartal-över-kvartal, månad-över-månad osv.
 
-Här är en video om ämnet:
 
->[!VIDEO](https://video.tv.adobe.com/v/30753/?quality=12)
+>[!BEGINSHADEBOX]
+
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Datumjämförelse](https://video.tv.adobe.com/v/30753?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+
+>[!ENDSHADEBOX]
+
+
 
 ## Jämför tidsperioder {#section_C4E36BFE0F5C4378A74E705747C9DEE4}
 
 >[!NOTE]
->[!UICONTROL Compare Time Periods] använder avancerade beräknade värden. Det innebär att det endast är tillgängligt för kunder med SKU:erna Analytics Select, Prime och Ultimate.
+>[!UICONTROL Compare Time Periods] använder avancerade beräknade värden. Det innebär att det endast är tillgängligt för kunder med SKU:erna i Analytics Select, Prime och Ultimate.
 
 Analysen kräver ett sammanhang, och ofta tillhandahålls detta sammanhang av en tidigare tidsperiod. Till exempel frågan&quot;Hur mycket bättre eller värre är det vi gör nu än i fjol?&quot; är grundläggande för att förstå er verksamhet. Datumjämförelse innehåller automatiskt en&quot;differenskolumn&quot;, som visar den procentuella ändringen jämfört med en angiven tidsperiod.
 

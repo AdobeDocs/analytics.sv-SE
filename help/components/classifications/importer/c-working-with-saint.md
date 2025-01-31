@@ -3,9 +3,9 @@ description: Använd importverktyget för att överföra klassificeringar till A
 title: Klassificeringsimportör - översikt
 feature: Classifications
 exl-id: b38556a2-e075-4fea-b5da-24300a62fa7f
-source-git-commit: 0f5890679ea73c1bbea9f5d2939e89c6775c85da
+source-git-commit: 08e29da4847e8ef70bd4435949e26265d770f557
 workflow-type: tm+mt
-source-wordcount: '135'
+source-wordcount: '143'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,13 @@ Använd importverktyget för att överföra klassificeringar till Adobe Analytic
 
 **[!UICONTROL Admin]** > **[!UICONTROL Classification Importer]**
 
->[!VIDEO](https://video.tv.adobe.com/v/16853/?quality=12)
+
+>[!BEGINSHADEBOX]
+
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Klassificeringsimportör](https://video.tv.adobe.com/v/16853?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+
+>[!ENDSHADEBOX]
+
 
 Data som du importerar med importverktyget måste ha ett visst format. Adobe ger dig möjlighet att ladda ned en datamall med all korrekt rubrikinformation i en tabbavgränsad datafil. Du kan lägga till nya data i den här mallen och sedan importera datafilen i webbläsaren med hjälp av FTP.
 

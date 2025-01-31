@@ -3,31 +3,40 @@ title: Analysintegrering
 description: Lär dig hur du kan integrera data från andra platser i Adobe Analytics.
 exl-id: 89debfb1-347b-4f0a-9f3a-4a82df51c8de
 feature: Audience Analytics, Advertising Analytics, Campaign Integration, AEM Assets Reporting, Activity Map
-source-git-commit: 9e3354569b2e748b3194be34c9119062300ca609
+source-git-commit: 0eccf49810786aea385600d2ab21331f30da227c
 workflow-type: tm+mt
-source-wordcount: '165'
-ht-degree: 53%
+source-wordcount: '170'
+ht-degree: 51%
 
 ---
 
 # Analysintegrering
 
-![Banderoll](../../assets/doc_banner_integrate.png)
-
 Den här guiden fokuserar på att integrera flera Adobe Experience Cloud-lösningar, t.ex. Audience Manager, Advertising Cloud eller Target. Den innehåller följande uppgifter:
 
 * **Audience Analytics:** Integrera Adobe Audience Manager med Adobe Analytics.
 * **Advertising Analytics:** Se betalda sökdata sida vid sida med Adobe Analytics-data.
-* **Analytics for Advertising Cloud DSP:** Integrerar Adobe Analytics och Adobe Advertising Cloud för att utöka och förbättra funktionerna i varje produkt. Här är en videoöversikt:
+* **Analytics for Advertising Cloud DSP:** Integrerar Adobe Analytics och Adobe Advertising Cloud för att utöka och förbättra funktionerna i varje produkt.
 
-  >[!VIDEO](https://video.tv.adobe.com/v/27237/?quality=12)
+
+>[!BEGINSHADEBOX]
+
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analytics for Advertising Cloud](https://video.tv.adobe.com/v/27237?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+
+>[!ENDSHADEBOX]
+
+
 * **Analytics för Target:** A4T integrerar Adobe Analytics med Adobe Target.
 * **Adobe Campaign-rapportering:** Integrera Adobe Analytics med Adobe Campaign.
 * **AEM Assets-rapportering:** Gör det möjligt att samla in visningar och klickningar på resurser från Adobe Experience Manager.
 
-Här är en videoöversikt över Adobe Analytics:
 
->[!VIDEO](https://video.tv.adobe.com/v/27429/?quality=12)
+>[!BEGINSHADEBOX]
+
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Adobe Analytics - översikt](https://video.tv.adobe.com/v/27429?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+
+>[!ENDSHADEBOX]
+
 
 ## Viktiga artiklar om Analytics-integrering
 

@@ -4,9 +4,9 @@ description: Så här använder och tolkar du panelen Media Concurrent Viewer i 
 feature: Panels
 role: User, Admin
 exl-id: 29575b51-e319-4156-9834-aa0b671afb31
-source-git-commit: 2aaa8c0d13755b40ec701ca6342ab773103a0422
+source-git-commit: d7a6867796f97f8a14cd8a3cfad115923b329c7c
 workflow-type: tm+mt
-source-wordcount: '1190'
+source-wordcount: '1193'
 ht-degree: 0%
 
 ---
@@ -54,11 +54,13 @@ Ni kan analysera samtidiga visningsprogram för att förstå var maximal samtidi
 I Analysis Workspace är indikatorn för Concurrent viewers antalet unika personer som visar medieströmmarna vid en viss tidpunkt, oavsett antalet sessioner.
 
 
-+++ Visa en videodemonstration av den här funktionen.
+>[!BEGINSHADEBOX]
 
->[!VIDEO](https://video.tv.adobe.com/v/330177/?quality=12)
+En demonstrationsvideo finns i ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Panelen Medievisningsprogram för samtidig användning](https://video.tv.adobe.com/v/330177?quality=12&learn=on){target="_blank"} .
 
-+++
+>[!ENDSHADEBOX]
+
+
 
 ## Använd
 

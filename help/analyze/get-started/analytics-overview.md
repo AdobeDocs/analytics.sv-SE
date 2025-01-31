@@ -4,9 +4,9 @@ short-description: Lär dig viktiga funktioner, vanliga användningsexempel och 
 title: Adobe Analytics - översikt
 feature: Analytics Basics
 exl-id: ac8c00a7-3652-4ac4-a294-5b626472215c
-source-git-commit: 43c39b99cbae3e714b7f017dec14dd02fa350790
+source-git-commit: 08e29da4847e8ef70bd4435949e26265d770f557
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '459'
 ht-degree: 11%
 
 ---
@@ -33,7 +33,13 @@ Använd följande resurser för att lära dig grunderna i Adobe Analytics:
 
 Om du vill lära dig mer om grunderna i Adobe Analytics kan du titta på den här videon *Introduktion till Adobe Analytics - Webbseminarium om verktyget i kunskapsbyggaren* . Videon visar grunderna för hur data hämtas, hur data skickas till Adobe Analytics och vilka visualiseringsfunktioner du kan använda i Adobe Analytics. Videon ger er en grund för att bygga, driftsätta, samla in och tolka data, så att ni kan ge er åtgärdbara insikter och rekommendationer baserat på insamlade data.
 
->[!VIDEO](https://video.tv.adobe.com/v/27429/?quality=12)
+
+>[!BEGINSHADEBOX]
+
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Introduktion till Adobe Analytics - kunskapsbyggare](https://video.tv.adobe.com/v/27429?quality=12&learn=on){target="_blank"} för webbinarivideon.
+
+>[!ENDSHADEBOX]
+
 
 Mer information om vilket verktyg som ska användas finns i [Vilket Adobe Analytics-verktyg ska jag använda?](https://experienceleague.adobe.com/docs/analytics/analyze/admin-overview/which-analytics-tool.html).
 

@@ -4,9 +4,9 @@ description: Instruktioner för administratörer som inte har använt en befintl
 feature: Implementation Basics
 exl-id: 4cf804f2-18a8-4be4-a18c-7ce663b8d145
 role: Admin, Developer, Leader
-source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
+source-git-commit: 08e29da4847e8ef70bd4435949e26265d770f557
 workflow-type: tm+mt
-source-wordcount: '161'
+source-wordcount: '172'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,13 @@ Tar du över en Adobe Analytics-implementering från den tidigare tekniska ägar
 
 Ta en titt på de här tipsen från din tekniska ägare Sarah Owen. Sarah är en Adobe Analytics Champion och hon delar med sig av sina idéer om hur man använder den ärvda Implementeringsspelboken för att ta hand om en befintlig implementering:
 
->[!VIDEO](https://video.tv.adobe.com/v/327314/?quality=12&learn=on)
+
+>[!BEGINSHADEBOX]
+
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Använd den ärvda implementeringsspelboken](https://video.tv.adobe.com/v/327314?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+
+>[!ENDSHADEBOX]
+
 
 Se även:
 

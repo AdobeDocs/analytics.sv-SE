@@ -4,9 +4,9 @@ title: Munk
 feature: Visualizations
 role: User, Admin
 exl-id: d82db8a5-9502-4ed1-9326-fd3392670bd3
-source-git-commit: 76abe4e363184a9577622818fe21859d016a5cf7
+source-git-commit: 5a35d2acd428d16afff3d8e85cfb084d6a6476c4
 workflow-type: tm+mt
-source-wordcount: '90'
+source-wordcount: '117'
 ht-degree: 0%
 
 ---
@@ -29,10 +29,23 @@ _I den här artikeln dokumenteras Donut-visualiseringen i_ ![AdobeAnalytics](/he
 
 >[!ENDSHADEBOX]
 
-På samma sätt som ett cirkeldiagram visar den här visualiseringen data som delar eller segment av en helhet. Använd ett [!UICONTROL Donut]-diagram när du jämför procentandelar av en summa, vanligtvis med ett litet antal objekt.
 
-![](assets/donut.png)
+På samma sätt som ett cirkeldiagram visar visualiseringen ![GraphDonut](/help/assets/icons/GraphDonut.svg) **[!UICONTROL Donut]** data som delar eller filter av en helhet. Använd en munstycksvisualisering när du jämför procentandelar av en summa, vanligtvis med ett litet antal objekt.
 
-Här är en video om hur du använder visualiseringen [!UICONTROL Donut]:
+![Ett ringdiagram som visar data som delar eller filter av en helhet.](assets/donut.png)
 
->[!VIDEO](https://video.tv.adobe.com/v/334309/?quality=12)
+
+>[!BEGINSHADEBOX]
+
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Lägg till en donutvisualisering](https://video.tv.adobe.com/v/334309/?quality=12){target="_blank"} för en demonstrationsvideo.
+
+>[!ENDSHADEBOX]
+
+
+>[!MORELIKETHIS]
+>
+>[Lägg till en visualisering på en panel](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
+>[Visualiseringsinställningar](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>[Snabbmenyn Visualisering ](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>
+

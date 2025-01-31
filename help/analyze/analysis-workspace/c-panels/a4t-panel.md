@@ -4,9 +4,9 @@ title: Analyser för målpanelen (A4T)
 feature: Panels
 role: User, Admin
 exl-id: 36bca104-37b8-43c6-b8d0-b607a9a333cc
-source-git-commit: 2aaa8c0d13755b40ec701ca6342ab773103a0422
+source-git-commit: d7a6867796f97f8a14cd8a3cfad115923b329c7c
 workflow-type: tm+mt
-source-wordcount: '1102'
+source-wordcount: '1100'
 ht-degree: 0%
 
 ---
@@ -39,11 +39,12 @@ _Den här artikeln dokumenterar panelen Analytics for Target i_ ![AdobeAnalytics
 
 Med Analytics for Target-panelen kan ni analysera era Adobe Target-aktiviteter och -upplevelser i Analysis Workspace. Panelen ger dig också möjlighet att se hur du kan höja din kreativitet och ditt förtroende för upp till tre framgångsmått. Navigera till en rapportsvit med Analytics for Target-komponenter aktiverade för att komma åt Analytics för Target-panelen. Välj sedan panelikonen längst till vänster och dra Analytics for Target-panelen till ditt Analysis Workspace-projekt.
 
-+++Här är en kort videoöversikt av panelen Analytics for Target:
 
->[!VIDEO](https://video.tv.adobe.com/v/37247/?quality=12)
+>[!BEGINSHADEBOX]
 
-+++
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analytics for Target panel](https://video.tv.adobe.com/v/37247?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+
+>[!ENDSHADEBOX]
 
 ## Använd
 

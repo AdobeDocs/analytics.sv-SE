@@ -5,14 +5,14 @@ uuid: 27f1bfd0-bf64-4424-8827-f7127d239762
 feature: Visualizations
 role: User, Admin
 exl-id: edbcd290-843d-453a-a02d-b3ad06f092e1
-source-git-commit: 76abe4e363184a9577622818fe21859d016a5cf7
+source-git-commit: b2e91c9981b328aa34e03dcd3b713438732ea6b1
 workflow-type: tm+mt
-source-wordcount: '174'
+source-wordcount: '198'
 ht-degree: 0%
 
 ---
 
-# Område och område staplade
+# Yta (staplad)
 
 >[!BEGINSHADEBOX]
 
@@ -34,9 +34,9 @@ Områdesvisualiseringen har ett standardalternativ och ett staplingsalternativ.
 <!-- markdownlint-enable MD034 -->
 
 
-Den här visualiseringen är som ett linjediagram, men med ett färgat område under linjen. Använd ett ytdiagram när du har flera mätvärden och vill visualisera området som uttrycks genom skärningspunkten för två eller flera mätvärden.
+Visualiseringen av ![GraphArea](/help/assets/icons/GraphArea.svg) **[!UICONTROL Area]** är som ett linjediagram, men med ett färgat område under linjen. Lägg till ett ytdiagram när du har flera mätvärden och vill visualisera området som uttrycks genom skärningspunkten för två eller flera mätvärden.
 
-![](assets/area.png)
+![Områdesvisualisering med flera mätvärden](assets/area.png)
 
 ## Skiktat område {#area-stacked}
 
@@ -50,14 +50,17 @@ Den här visualiseringen är som ett linjediagram, men med ett färgat område u
 <!-- markdownlint-enable MD034 -->
 
 
-Den här visualiseringen är som ett ytdiagram, men varje serie börjar högst upp i föregående serie.
+Visualiseringen av ![GraphAreaStacks](/help/assets/icons/GraphAreaStacked.svg) **[!UICONTROL Area stacked]** är som ett område, men varje serie börjar överst i föregående serie.
 
-![](assets/area-stacked.png)
+![Område staplat med varje serie överst i föregående serie.](assets/area-stacked.png)
 
-En ny visualiseringsinställning för staplade ytvisualiseringar gör diagrammet till en&quot;100 % staplad&quot; visualisering.
+Använd alternativet **[!UICONTROL 100% stacked]** i ![Inställning](/help/assets/icons/Setting.svg) **[!UICONTROL Settings]** för att omvandla diagrammet till en 100 % staplad visualisering.
 
-![](assets/areastacked100.png)
+![Området är staplat med en 100 % staplad visualisering.](assets/area-stacked100.png)
 
-Här är en video om&quot;100 % staplade visualiseringar&quot;:
-
->[!VIDEO](https://video.tv.adobe.com/v/23131/?quality=12)
+>[!MORELIKETHIS]
+>
+>[Lägg till en visualisering på en panel](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
+>[Visualiseringsinställningar](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>[Snabbmenyn Visualisering ](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>

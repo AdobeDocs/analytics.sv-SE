@@ -4,10 +4,10 @@ title: Punktdiagram
 feature: Visualizations
 role: User, Admin
 exl-id: 4d4c1b85-0f23-4cf6-8014-fe854af91e33
-source-git-commit: 76abe4e363184a9577622818fe21859d016a5cf7
+source-git-commit: b2e91c9981b328aa34e03dcd3b713438732ea6b1
 workflow-type: tm+mt
-source-wordcount: '171'
-ht-degree: 3%
+source-wordcount: '238'
+ht-degree: 0%
 
 ---
 
@@ -37,12 +37,31 @@ _I den här artikeln beskrivs punktvisualiseringen i_ ![AdobeAnalytics](/help/as
 
 >[!ENDSHADEBOX]
 
-Här kan du se hur ett värde som du är intresserad av kan jämföras med eller mäta mot andra prestandaintervall (mål).
+Visualiseringen av ![GraphBullet](/help/assets/icons/GraphBullet.svg) **[!UICONTROL Bullet]** visar hur ett mätvärde jämförs med, eller mäter mot, prestandaintervall (mål).
 
-![](assets/bullet-image.png)
+![Visualisering av punktdiagram](assets/bullet.png)
 
-Punktdiagrammet har ett enda primärt mått (till exempel nuvarande intäkter från år till dag) och gör att du kan ange kvalitativa intervall för prestanda (till exempel jämfört med en målintäkt). Du kan ange high, medium och low. Du kan ange målintervall i [!UICONTROL Visualization Settings].
+Punktdiagrammet har ett enda primärt mått (till exempel nuvarande intäkter från år till dag) och gör att du kan ange kvalitativa intervall för prestanda (till exempel jämfört med en målintäkt). Du kan ange höga, medelstora och låga målintervall. Du kan ange målintervall i ![Inställning](/help/assets/icons/Setting.svg) **[!UICONTROL Settings]**.
 
-Här är en video om punktgrafvisualisering:
+>[!BEGINSHADEBOX]
 
->[!VIDEO](https://video.tv.adobe.com/v/23989/?quality=12)
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualisering av punktdiagram](https://video.tv.adobe.com/v/23989/?quality=12/?quality=12){target="_blank"} för en demonstrationsvideo.
+
+>[!ENDSHADEBOX]
+
+
+## Inställningar
+
+Du kan definiera specifika inställningar för en [!UICONTROL Bullet]-visualisering.
+
+| Inställning | Beskrivning |
+|---|---|
+| **[!UICONTROL Bullet options]** | Ange värden för **[!UICONTROL High goal]**, **[!UICONTROL Mid goal]** och **[!UICONTROL Low goal]** i [!UICONTROL Bullet]-visualiseringen. <br/>**[!UICONTROL High goal]**är det främsta målet du siktar på.**[!UICONTROL Low goal]**och **[!UICONTROL Mid goal]**skapar intervall under Hög mål. Obs! Ange mål som heltal när alternativet **[!UICONTROL Percentages]**är markerat. Exempel: `20` om ditt mål är tjugo procent. |
+
+>[!MORELIKETHIS]
+>
+>[Lägg till en visualisering på en panel](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
+>[Visualiseringsinställningar](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>[Snabbmenyn Visualisering ](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>
+

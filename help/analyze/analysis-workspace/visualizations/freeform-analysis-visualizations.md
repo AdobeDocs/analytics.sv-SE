@@ -5,9 +5,9 @@ title: Visualiseringar - översikt
 feature: Visualizations
 role: User, Admin
 exl-id: b40aa942-4a08-4ff3-9895-e92f9a187b54
-source-git-commit: e51eff7729f94e60239f34c43f77a533fa53910a
+source-git-commit: 5a35d2acd428d16afff3d8e85cfb084d6a6476c4
 workflow-type: tm+mt
-source-wordcount: '1303'
+source-wordcount: '1377'
 ht-degree: 1%
 
 ---
@@ -48,58 +48,23 @@ Följande visualiseringstyper finns i Analysis Workspace:
 
 1. Använd någon av följande metoder för att lägga till visualiseringen:
 
-   * I den vänstra listen väljer du ikonen **Visualiseringar** <!-- add icon --> och drar sedan en visualisering till panelen där du vill lägga till den.
+   ![Lägg till visualisering](assets/add-visualization.png)
 
-     ![](assets/viz-rail.png)
+   * I den vänstra panelen väljer du ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) **Visualiseringar** och drar sedan en visualisering till panelen där du vill lägga till visualiseringen.
 
-   * På den panel där du vill lägga till visualiseringen markerar du ikonen **Plus** och väljer sedan den ikon som representerar den visualisering som du vill lägga till. Håll pekaren över ikonen för varje visualisering för att se dess namn.
+   * Välj ![AddCircle](/help/assets/icons/AddCircle.svg) på panelen där du vill lägga till visualiseringen och välj sedan den ikon som representerar den visualisering som du vill lägga till. Håll pekaren över ikonen för varje visualisering för att se namnet.
 
-     ![Knapp för att lägga till en visualisering](assets/visualization-add-to-panel.png)
+   * Lägg till en [tom panel](/help/analyze/analysis-workspace/c-panels/blank-panel.md) och välj sedan den visualisering som du vill lägga till.
 
-   * Lägg till en [tom panel](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/blank-panel.html) och välj sedan den visualisering som du vill lägga till.
+   * Välj **[!UICONTROL Duplicate visualization]** eller **[!UICONTROL Copy visualization]** på snabbmenyn för en befintlig visualisering i ditt Analysis Workspace-projekt.
 
-     ![Tom panel](assets/blank_panel.png)
+   * Använd Workspace **[!UICONTROL Insert]**-menyn för att infoga en visualisering.
 
-   * Högerklicka på en befintlig panel i ditt Analysis Workspace-projekt och välj sedan [!UICONTROL **Duplicera visualisering**] eller [!UICONTROL **Kopiera visualisering**].
+   * Välj **[!UICONTROL Visualize]** på snabbmenyn i en friformstabell. Välj sedan visualisering på undermenyn. Baserat på det aktuella urvalet i tabellen avgör Workspace vilken visualisering som ska erbjudas och tolkar data för att skapa den begärda visualiseringen.
 
-## Anpassa visualiseringsinställningar
+## Förklaring
 
-Du kan anpassa visualiseringsinställningar för en enskild visualisering eller för alla visualiseringar som du skapar.
-
-### Anpassa visualiseringsinställningar för en enda visualisering
-
-Så här får du åtkomst till [!UICONTROL Visualization Settings] för en enskild visualisering:
-
-1. I Analysis Workspace håller du muspekaren över den visualisering vars inställningar du vill anpassa.
-
-1. Klicka på kugghjulet.
-
-   Varje typ av visualisering har unika inställningar som du kan anpassa. Mer information om tillgängliga inställningar finns i [Inställningar](#settings).
-
-### Anpassa visualiseringsinställningar för alla visualiseringar du skapar
-
-Du kan anpassa inställningarna för alla visualiseringar som du skapar. Mer information finns i [Användarinställningar](/help/analyze/analysis-workspace/user-preferences.md).
-
-## Inställningar {#settings}
-
-![](assets/settings.png)
-
-| Inställning | Beskrivning |
-| --- | --- |
-| Visualiseringstyp | Ändra den typ av visuell information som används för att avbilda data. |
-| Kornighet | För trendvisualiseringar kan du ändra tidshalten (dag, vecka, månad osv.) från den här listrutan. Den här ändringen gäller även för datakälltabellen. |
-| Procenttal | Visar värden i procent. |
-| 100 % staplad | Den här inställningen för staplade ytor, staplade staplade staplar eller vågräta staplade visualiseringar gör att diagrammet blir en&quot;100 % staplade&quot; visualisering. Exempel: ![Staplad 100 %](assets/stacked_100_percent.png) |
-| Förklaring synlig | Gör att du kan dölja den detaljerade förklaringstexten för visualiseringen av Sammanfattningsnummer/Sammanfattningsändring. |
-| Begränsa maximalt antal objekt | Gör att du kan begränsa antalet objekt som visas i en visualisering. |
-| Fästpunkt Y-axel vid noll | Om alla värden som är ritade i diagrammet ligger betydligt över noll, kommer diagrammets standardvärde att göra den nedre delen av y-axeln ICKE-ZERO. Om du markerar den här rutan kommer y-axeln att tvingas till noll (och diagrammet ritas om). |
-| Normalisering | Tvingar måtten att ha samma proportioner. Detta är praktiskt när plottade mätvärden har mycket olika förstoringsgrader. |
-| Visa dubbel axel | Gäller endast om du har två mätvärden - du kan ha en y-axel till vänster (för ett mätresultat) och till höger (för det andra måttet). Detta är praktiskt när plottade mätvärden har mycket olika förstoringsgrader. |
-| Visa kantlinjer | Förbättrar linjediagram och frihandstabeller genom att visa avvikelseidentifiering. Analysidentifiering i linjevisualiseringar inkluderar ett förväntat värde (streckad linje) och ett förväntat intervall (skuggat band). |
-
-## Förklaring {#legend}
-
-En visualiseringsförklaring hjälper dig att relatera datum i en källtabell till plottade serier i visualiseringen. Förklaringen är interaktiv - du kan klicka på ett förklaringsobjekt om du vill visa/dölja en serie i visualiseringen. Detta är praktiskt om du vill förenkla de data som visualiseras.
+En visualiseringsförklaring hjälper dig att relatera datum i en källtabell till plottade serier i visualiseringen. Förklaringen är interaktiv - du kan markera ett förklaringsobjekt om du vill visa/dölja en serie i visualiseringen, vilket är praktiskt om du vill förenkla de data som visas.
 
 Dessutom kan du byta namn på förklaringsetiketter så att det blir lättare att använda bilderna. Obs! Teckenredigering gäller **inte** för: Teckenuppsättning, Punkt, Sammanfattningsändring/nummer, Text, Frihand, Histogram, Kohort eller Flödesvisualiseringar.
 
@@ -108,36 +73,136 @@ Så här redigerar du en förklaringsetikett:
 1. Högerklicka på någon av förklaringsetiketterna.
 1. Klicka på **[!UICONTROL Edit Label]**.
 
-   ![](assets/edit-label.png)
+   ![En förklaringsetikett och alternativet Redigera etikett.](assets/edit-label.png)
 
 1. Ange den nya etikettexten.
 1. Tryck på **[!UICONTROL Enter]** för att spara.
 
-## Högerklicka på menyn {#right-click}
 
-Ytterligare funktioner för en visualisering är tillgängliga genom att högerklicka på visualiseringsrubriken. Inställningarna varierar beroende på visualisering. Några av de tillgängliga inställningarna är:
+
+### Inställningar
+
+Vilka visualiseringsinställningar som är tillgängliga beror på visualiseringen. Tabellen nedan sammanfattar de vanligaste inställningarna. Vissa visualiseringar har specifika inställningar. Mer information finns i dokumentationen för den enskilda visualiseringen.
+
+| Alternativ | Beskrivning |
+| --- | --- |
+| **[!UICONTROL Visualization type]** | Ändra den typ av visualisering som används för att visualisera data. |
+| **[!UICONTROL Granularity]** | Ändra tidgranulariteten för trendvisualiseringar. Den här ändringen gäller även för datakälltabellen. |
+| **[!UICONTROL Percentages]** | Visa värden i procent. |
+| **[!UICONTROL 100% stacked]** | Omvandla diagrammet till en 100 % staplad visualisering.  Gäller endast för en staplad visualisering av ytor, stolpar och vågräta staplar. |
+| **[!UICONTROL Legend visible]** | Visa förklaringstext. |
+| **[!UICONTROL Limit max items]** | Begränsa antalet objekt som visas i en visualisering. När du väljer det här alternativet anger du det högsta antalet objekt. |
+| **[!UICONTROL Show annotations]** | Visa anteckningarna som gjorts för den här visualiseringen. |
+| **[!UICONTROL Hide title]** | Dölj titeln på visualiseringen. |
+| **[!UICONTROL Anchor y-axis at zero]** | Sätt y-axelns nederkant till noll. Om alla värden som är ritade i diagrammet ligger betydligt över noll gör diagrammets standardvärde att y-axelns nederdel inte är noll. Om du aktiverar det här alternativet tvingas y-axeln till noll (och diagrammet ritas om). |
+| **[!UICONTROL Display dual axis]** | Visa vänster och höger y-axel för två olika mätvärden. Det här alternativet gäller bara om du har två mätvärden. Dubbla axlar är användbara när plottade mätvärden har olika magnituder. |
+| **[!UICONTROL Show x-axis]** | Visa x-axeln i visualiseringen. |
+| **[!UICONTROL Show y-axis]** | Visa y-axeln i visualiseringen. |
+| **[!UICONTROL Show barbells on lines]** | Visa streckade linjer på linjevisualisering i en kombinationsdiagram. |
+| **[!UICONTROL Normalization]** | Använd samma proportioner för mätvärden. Likvärdiga proportioner är användbara när plottade mätvärden har olika förstoringsgrader. |
+| **[!UICONTROL Show anomalies]** | Förbättra linjediagram och frihandstabeller genom att visa avvikelseidentifiering. Analysidentifiering i linjevisualiseringar inkluderar ett förväntat värde (streckad linje) och ett förväntat intervall (skuggat band). |
+| **[!UICONTROL Show forecast]** | Förbättra linjediagram och frihandstabeller genom att visa prognosvärden. |
+| **[!UICONTROL Show min]** | Visa det minsta värdet i visualiseringen. |
+| **[!UICONTROL Show max]** | Visa det högsta värdet i visualiseringen. |
+| **[!UICONTROL Show trendline]** | Visa en trendlinje i visualiseringen. När du väljer det här alternativet kan du välja typ av trendlinje i listrutan. |
+
+Du kan anpassa inställningarna för alla visualiseringar som du skapar. Mer information finns i [Användarinställningar](/help/analyze/analysis-workspace/user-preferences.md).
+
+
+## Snabbmeny {#right-click}
+
+Använd snabbmenyn (som är tillgänglig genom alternativ markering, till exempel högerklicka när du använder en mus) på ett visualiseringshuvud för att få tillgång till ytterligare funktioner för en visualisering. Alla alternativ är inte tillgängliga för alla visualiseringar.
+
+![Ytterligare visualiseringsinställningar med alternativen för högerklickning visas. Alternativen beskrivs i nästa avsnitt.](assets/right-click.png)
+
+| Alternativ | Beskrivning |
+| --- | --- |
+| **[!UICONTROL Insert copied visualization]** | Klistra in (infoga) en kopierad visualisering på en annan plats i projektet, eller i ett helt annat projekt. |
+| **[!UICONTROL Copy data to clipboard]** | Kopiera data från visualiseringen till Urklipp. |
+| **[!UICONTROL Copy selection to clipboard]** | Kopiera markeringen från visualiseringen till Urklipp. |
+| **[!UICONTROL Download items as CSV (*dimensionsnamn *)]** | Hämta dimensionsobjekten (till högst 50 000) av visualiseringen till din lokala enhet. Högst 50 000 dimensionsartiklar för den valda dimensionen. |
+| **[!UICONTROL Copy visualization]** | Kopiera visualiseringen så att du kan infoga visualiseringen på en annan plats i projektet eller i ett helt annat projekt. |
+| **[!UICONTROL Download data CSV]** | Hämta visuella data till din lokala enhet. |
+| **[!UICONTROL Duplicate visualization]** | Gör en exakt kopia av visualiseringen. |
+| **[!UICONTROL Edit description]** | Lägg till (eller redigera) en textbeskrivning för visualiseringen. Se [Text](text.md). |
+| **[!UICONTROL Get visualization link]** | Kopiera och dela en länk direkt till visualiseringen. Länken visas i en dialogruta för delning. Välj Kopiera för att kopiera länken till Urklipp. |
+| **[!UICONTROL Start over]** | Ta bort konfigurationen för den aktuella visualiseringen så att du kan konfigurera om den från grunden. |
+
+
+## Konfiguration
+
+Vissa visualiseringar (som Cohort-tabellen, Fallout, Flow med flera) har en konfigurationsdialogruta som hjälper dig att skapa visualiseringen. Använd ![Redigera](/help/assets/icons/Edit.svg) längst upp i visualiseringen för att komma åt och ändra konfigurationen.
+
+![Konfigurationsrutan](assets/configuration.png)
+
+## Visualisera
+
+Om du inte är säker på vilken visualisering du ska välja väljer du ![GraphBarVerticalAdd](/help/assets/icons/GraphBarVerticalAdd.svg) **[!UICONTROL Visualize]** i valfri tabellrad på frihand (tillgänglig vid hovring). Den här markeringen är det snabbaste sättet att lägga till en visualisering. Analysis Workspace har en väl underbyggd gissning där visualisering bäst passar era data. Om du t.ex. har markerat en rad skapas ett [linjediagram](line.md). Om du har markerat tre filterrader skapas ett [venn](venn.md)-diagram.
+
+![Snabb visualisering](assets/quick-viz.png)
+
+
+<!--
+## Settings {#settings}
+
+![](assets/settings.png)
+
+| Setting | Description |
+| --- | --- |
+| Visualization Type | Change the type of visual used to depict the data. |
+| Granularity | For trended visualizations, you can change the time granularity (day, week, month, etc.) from this drop-down list. This change also applies to the data source table. |
+| Percentages | Displays values in percentages. |
+| 100% Stacked | This setting on area stacked, bar stacked or horizontal bar stacked visualizations turns the chart into a "100% stacked" visualization. Example: ![Stacked 100%](assets/stacked_100_percent.png) |
+| Legend Visible | Lets you hide the detailed legend text for the Summary Number/Summary Change visualization. |
+| Limit Max Items | Lets you limit the number of items that a visualization displays. |
+| Anchor Y Axis at Zero | If all the values plotted on the chart are considerably above zero, the chart default will make the bottom of the y-axis NON-ZERO. If you check this box, the y-axis will be forced to zero (and it will re-draw the chart). |
+| Normalization | Forces metrics to equal proportions. This is helpful when plotted metrics are of very different magnitudes. |
+| Display Dual Axis | Only applies if you have two metrics - you can have a y-axis on the left (for one metric) and on the right (for the other metric). This is helpful when plotted metrics are of very different magnitudes. |
+| Show Anomalies | Enhances line graphs and freeform tables by displaying anomaly detection. Anomaly detection in line visualizations includes an expected value (dashed line) and an expected range (shaded band). |
+
+## Legend {#legend}
+
+A visualization legend helps you to relate date in a source table to plotted series in the visualization. The legend is interactive - you can click a legend item to show/hide a series in the visualization. This is helpful if you want to simplify the data being visualized. 
+
+Additionally, you can rename legend labels to help you make visuals more consumable. Note: legend editing does **not** apply to: Treemap, Bullet, Summary Change/Number, Text, Freeform, Histogram, Cohort or Flow visualizations.
+
+To edit a legend label:
+
+1. Right-click one of the legend labels.
+1. Click **[!UICONTROL Edit Label]**.
+
+   ![](assets/edit-label.png)
+
+1. Enter the new label text.
+1. Press **[!UICONTROL Enter]** to save.
+
+## Right-click menu {#right-click}
+
+Additional functionality for a visualziation is available by right-clicking on the visualization header. Settings will vary by visualization. Some of the settings available are:
 
 ![](assets/right-click.png)
 
-| Inställning | Beskrivning |
+| Setting | Description |
 | --- | --- |
-| Infoga kopierad panel/visualisering | Gör att du kan klistra in (&quot;infoga&quot;) en kopierad panel eller visualisering på en annan plats i projektet, eller i ett helt annat projekt. |
-| Kopiera visualisering | Högerklicka och kopiera en visualisering så att du kan infoga den på en annan plats i projektet eller i ett helt annat projekt. |
-| [Hämta objekt som CSV](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/download-send.html?#download-items) | Hämta upp till 50 000 dimensionsobjekt för den valda dimensionen som en CSV-fil. |
-| [Hämta data som CSV](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/download-send.html?#download-data) | Hämta en datakälla för visualisering som en CSV-fil. |
-| Duplicera visualisering | Skapar en exakt kopia av den aktuella visualiseringen, som du sedan kan ändra. |
-| Redigera beskrivning | Lägg till (eller redigera) en textbeskrivning för visualiseringen. |
-| Hämta visualiseringslänk | Gör att du kan dirigera någon till en viss visualisering i ett projekt. När användaren klickar på länken måste mottagaren logga in innan den dirigeras till den exakta visualisering som är länkad till den. |
-| Börja om | (Works for Flow, Venn, Histogram) Tar bort konfigurationen för den aktuella visualiseringen så att du kan konfigurera om den från början. |
+| Insert Copied Panel/Visualization|Lets you paste ("insert") a copied panel or visualization to another place within the project, or into a completely different project. |
+| Copy Visualization | Lets you right-click and copy a visualization, so that you can insert it to another place within the project, or into a completely different project. |
+| [Download items as CSV](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/download-send.html?#download-items) | Download up to 50,000 dimension items for the selected dimension as a CSV. |
+| [Download data as CSV](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/download-send.html?#download-data) | Download visualization data source as a CSV. |
+| Duplicate Visualization | Makes an exact duplicate of the current visualization, which you can then modify. |
+| Edit Description | Add (or edit) a text description for the visualization. |
+| Get Visualization Link | Lets you direct someone to a specific visualization within a project. When the link is clicked, the recipient will be required to login before being directed to the exact visualization linked to. |
+| Start Over | (Works for Flow, Venn, Histogram) Deletes the configuration for the current visualization so you can re-configure it from scratch. |
 
-## Ikonen Skapa visuell {#quick-viz}
+## Create Visual icon {#quick-viz}
 
-Om du inte är säker på vilken visualisering du ska välja klickar du på ikonen **[!UICONTROL Create Visual]** i en tabellrad (tillgänglig vid hovring). Det här är det snabbaste sättet att lägga till en visualisering. När du klickar på den uppmanas Analysis Workspace att göra en kvalificerad gissning där visualiseringen bäst passar dina data. Om du till exempel har markerat 1 rad skapas ett linjediagram. Om du har markerat 3 segmentrader skapas ett Venndiagram.
+If you are not sure which visualization to pick, click the **[!UICONTROL Create Visual]** icon in any table row (available on hover). This the the fastest way to add a visualization. Clicking it prompts Analysis Workspace to take an educated guess at which visualization would best fit your data. For example, if you have 1 row selected, it will create a trended line graph. If you have 3 segment rows selected, it will create a Venn diagram. 
 
 ![](assets/quick-viz.png)
 
-## Ändra skalningsaxeln vid visualiseringar
+## Change the scale axis on visualizations
 
-Här är en videoöversikt:
+Here is a video overview:
 
 >[!VIDEO](https://video.tv.adobe.com/v/24708/?quality=12)
+
+-->

@@ -3,16 +3,16 @@ title: Importguide för Analytics
 description: Den här guiden förklarar hur du hämtar data till Analytics med hjälp av datakällor och API:er för datainfogning.
 exl-id: 65a62639-bbc4-4114-932f-8c68d87eea8b
 feature: Data Sources
-source-git-commit: 9e3354569b2e748b3194be34c9119062300ca609
+source-git-commit: d7a6867796f97f8a14cd8a3cfad115923b329c7c
 workflow-type: tm+mt
 source-wordcount: '144'
-ht-degree: 52%
+ht-degree: 51%
 
 ---
 
 # Importguide för Analytics
 
-![Banderoll](../../assets/doc_banner_import.png)
+
 
 Den här guiden förklarar hur du överför data till Analytics. Den innehåller:
 
@@ -21,9 +21,14 @@ Den här guiden förklarar hur du överför data till Analytics. Den innehåller
 * **[API för datainfogning](c-data-insertion-api/c-data-insertion-api.md)**: Skicka data direkt till Adobes datainsamling via API.
 * **[Adobe Exchange Marketplace](https://exchange.adobe.com/experiencecloud.analytics.html#product)**: Hitta aktuella integreringar som kan berika din Adobe Analytics-rapportsvit.
 
-Här är en videoöversikt över Adobe Analytics:
 
->[!VIDEO](https://video.tv.adobe.com/v/27429/?quality=12)
+>[!BEGINSHADEBOX]
+
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Adobe Analytics - översikt](https://video.tv.adobe.com/v/27429?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+
+>[!ENDSHADEBOX]
+
+
 
 ## Fler användarhandböcker för Analytics
 

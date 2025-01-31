@@ -6,9 +6,9 @@ feature: Report Builder
 type: Documentation
 solution: Analytics
 exl-id: b6f2b1f5-8790-4342-85c8-524fdf346073
-source-git-commit: 65f2f1caff36be2afc0c11297be5dd5b593e9a3d
+source-git-commit: d7a6867796f97f8a14cd8a3cfad115923b329c7c
 workflow-type: tm+mt
-source-wordcount: '527'
+source-wordcount: '536'
 ht-degree: 1%
 
 ---
@@ -70,6 +70,11 @@ När funktionen för äldre Report Builder jämförs med det nya tillägget Repo
 >
 >I den här översiktsvideon visas användargränssnittet Report Builder i Customer Journey Analytics. En del användargränssnitt och terminologi skiljer sig åt. I annat fall är användarupplevelsen densamma.
 
->[!VIDEO](https://video.tv.adobe.com/v/337569/?quality=12&learn=on)
+
+>[!BEGINSHADEBOX]
+
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Översikt över Report Builder](https://video.tv.adobe.com/v/337569?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+
+>[!ENDSHADEBOX]
 
 Du kan hämta Report Builder från [Microsoft Store](https://appsource.microsoft.com/en-us/product/office/WA200003101?tab=Overview).

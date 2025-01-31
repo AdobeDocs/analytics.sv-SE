@@ -4,9 +4,9 @@ title: Segment
 feature: Segmentation
 role: User, Admin
 exl-id: 67112e13-4d0a-4d77-be50-496c3d28779c
-source-git-commit: 266cf18050d60f08f7e170c56453d1e1d805cb7b
+source-git-commit: d7a6867796f97f8a14cd8a3cfad115923b329c7c
 workflow-type: tm+mt
-source-wordcount: '454'
+source-wordcount: '484'
 ht-degree: 0%
 
 ---
@@ -25,17 +25,26 @@ Du kan skapa olika typer av segment i Workspace, beroende på hur komplexa de be
 
 ## Videor
 
-Använda segment i Analysis Workspace:
+>[!BEGINSHADEBOX]
 
->[!VIDEO](https://video.tv.adobe.com/v/23977/?quality=12)
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Använda segment i Analysis Workspace](https://video.tv.adobe.com/v/23977?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
 
-Hitta och skapa segment:
+>[!ENDSHADEBOX]
 
->[!VIDEO](https://video.tv.adobe.com/v/334092/?quality=12)
 
-Rullande datumintervall i segment:
+>[!BEGINSHADEBOX]
 
->[!VIDEO](https://video.tv.adobe.com/v/25403/?quality=12)
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Söka efter och skapa segment](https://video.tv.adobe.com/v/334092?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+
+>[!ENDSHADEBOX]
+
+
+>[!BEGINSHADEBOX]
+
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Rullande datumintervall i segment ](https://video.tv.adobe.com/v/25403?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+
+>[!ENDSHADEBOX]
+
 
 ## Skapa segment {#section_693CFADA668B4542B982446C2B4CF0F5}
 
@@ -47,10 +56,10 @@ Du kan skapa olika typer av segment i Analysis Workspace:
 ### Skapa segment för komponentlistor {#section_3B07D458C43E42FDAF242BB3ACAF3E90}
 
 Segmentspåret under komponentmenyn visas
-* Segment som du eller ditt företag har skapat
-* Segmentmallar, enligt Adobe-ikonen:
 
-![](assets/segment_icons.png)
+* Segment som du eller ditt företag har skapat
+* Segmentmallar, enligt Adobe ![AdobeLogoSmall](/help/assets/icons/AdobeLogoSmall.svg) -ikonen:
+
 
 Om du vill skapa ett segment av den här typen har du två alternativ. Båda tar dig till [Segment Builder](/help/components/segmentation/segmentation-workflow/seg-build.md) i Adobe Analytics, där du hittar mer information.
 
@@ -65,7 +74,12 @@ eller
 
 ### Andra metoder för att använda segment {#section_10FF2E309BA84618990EA5B473015894}
 
->[!VIDEO](https://video.tv.adobe.com/v/30994/?quality=12)
+
+>[!BEGINSHADEBOX]
+
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Andra metoder för att använda segment](https://video.tv.adobe.com/v/30994?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+
+>[!ENDSHADEBOX]
 
 Det finns flera andra metoder för att tillämpa segment i frihandsprojekt.
 

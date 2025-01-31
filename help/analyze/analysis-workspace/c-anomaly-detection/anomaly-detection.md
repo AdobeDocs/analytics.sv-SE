@@ -4,9 +4,9 @@ title: Översikt över avvikelseidentifiering
 feature: Anomaly Detection
 role: User, Admin
 exl-id: b1625206-c774-40ef-9d92-25ee8ff1478d
-source-git-commit: d173a6c6c9751a86f4218ec842da17da14f8485b
+source-git-commit: d7a6867796f97f8a14cd8a3cfad115923b329c7c
 workflow-type: tm+mt
-source-wordcount: '1260'
+source-wordcount: '1276'
 ht-degree: 1%
 
 ---
@@ -15,7 +15,12 @@ ht-degree: 1%
 
 Ni kan visa och analysera dataavvikelser i sitt sammanhang inom Analysis Workspace. Bidragsanalys fungerar tillsammans med avvikelseidentifiering för att hjälpa till att identifiera vad som bidragit till avvikelsen.
 
->[!VIDEO](https://video.tv.adobe.com/v/25444/?quality=12)
+
+>[!BEGINSHADEBOX]
+
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysidentifiering](https://video.tv.adobe.com/v/25444?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+
+>[!ENDSHADEBOX]
 
 >[!IMPORTANT]
 >
@@ -47,7 +52,13 @@ Analysis Workspace avvikelseavkänningsalgoritm innehåller
 
 Contribute Analysis avslöjar dolda mönster i era data för att förklara statistiska avvikelser och identifiera korrelationer bakom oväntade kundaktiviteter, obundna värden och plötsliga toppar eller dalar för valda mätvärden över konvergerande målgruppssegment.
 
->[!VIDEO](https://video.tv.adobe.com/v/25443/?quality=12)
+
+>[!BEGINSHADEBOX]
+
+En demonstrationsvideo finns i ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Contribute analysis](https://video.tv.adobe.com/v/25443?quality=12&learn=on){target="_blank"} .
+
+>[!ENDSHADEBOX]
+
 
 Något hände. Varför? Din rapport om avvikelseidentifiering visar en ovanlig topp i beställningarna och du vill veta varför. Vad hände med det vanliga? Vem svarar på vilken kampanj eller hänskjutning? Var det något som blev viralt? Vilka faktorer har bidragit till avvikelsen? Och kanske viktigast av allt: Hur kan jag samla in viktig information om min kund och upprepa det här resultatet? (Om en nedgång i ett mätvärde eller uppgång i ett negativt mätvärde inträffar, hur kan jag undvika det i framtiden?)
 

@@ -5,10 +5,10 @@ uuid: 4e1ec255-d43e-46f2-ac62-296f15218799
 feature: Visualizations
 role: User, Admin
 exl-id: e6f175f5-7228-495b-a20a-3276633c1d77
-source-git-commit: 76abe4e363184a9577622818fe21859d016a5cf7
+source-git-commit: e0d14f6dd7be438f3dad979abcfc279e710873e7
 workflow-type: tm+mt
-source-wordcount: '136'
-ht-degree: 41%
+source-wordcount: '162'
+ht-degree: 11%
 
 ---
 
@@ -29,14 +29,25 @@ _I den här artikeln beskrivs Treemap-visualiseringen i_ ![AdobeAnalytics](/help
 
 >[!ENDSHADEBOX]
 
-Visar hierarkiska (trädstrukturerade) data som en uppsättning kapslade rektanglar.
-
-Här är en video om visualiseringen av [!UICONTROL Treemap]:
-
->[!VIDEO](https://video.tv.adobe.com/v/334458/?quality=12)
+Använd en ![GraphTree](/help/assets/icons/GraphTree.svg) **[!UICONTROL Treemap]**-visualisering för att visa hierarkiska (trädstrukturerade) data som en uppsättning kapslade rektanglar.
 
 Varje förgrening i trädet tilldelas en rektangel, som sedan visas med mindre rektanglar som representerar undergrenar.
 
-![](assets/treemap.png)
+![Treemap-exempel som visar rutor med mindre rektanglar som representerar undergrenar.](assets/treemap.png)
 
-När färger och storleksmått korrelerar med trädstrukturen är det ofta lätt att se mönster som annars är svåra upptäcka, till exempel om en viss färg är särskilt relevant. En annan fördel med Treemaps är att de genom sin konstruktion utnyttjar utrymmet på ett effektivt sätt.
+Med en treemap kan du se mönster som skulle vara svåra att hitta på andra sätt. Genom att använda dimensionernas färg och storlek kan du se hur dimensionerna korrelerar och om en viss dimension är särskilt relevant. En annan fördel med treemaps är att treemaps genom sin uppbyggnad utnyttjar utrymmet på ett effektivt sätt.
+
+
+>[!BEGINSHADEBOX]
+
+En demonstrationsvideo finns i ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Treemap-visualisering](https://video.tv.adobe.com/v/334458/?quality=12){target="_blank"} .
+
+>[!ENDSHADEBOX]
+
+
+>[!MORELIKETHIS]
+>
+>[Lägg till en visualisering på en panel](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
+>[Visualiseringsinställningar](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>[Snabbmenyn Visualisering ](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>

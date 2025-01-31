@@ -3,9 +3,9 @@ description: Upptäck allt du kan göra med Advertising Analytics, inklusive beh
 title: Advertising Analytics
 feature: Advertising Analytics
 exl-id: bc18b74a-0317-4871-b2e0-ec0977ef1731
-source-git-commit: 2244dbb3376c78b9d4a8b476b667ccef59db84f4
+source-git-commit: d7a6867796f97f8a14cd8a3cfad115923b329c7c
 workflow-type: tm+mt
-source-wordcount: '1132'
+source-wordcount: '1139'
 ht-degree: 90%
 
 ---
@@ -23,9 +23,13 @@ Denna integrering riktar sig till följande målgrupper:
 * Den **analytiker** som behöver samla in resultatrapporter för Paid Search Marketer.
 * Den **Paid Search Marketer** som söker svar på följande frågor: Hur mycket trafik skickar jag till vår webbplats och konverterar kunderna? Vilka är mina kostnadseffektiva annonskampanjer?
 
-## Video
 
->[!VIDEO](https://video.tv.adobe.com/v/23119?quality=12&learn=on)
+
+>[!BEGINSHADEBOX]
+
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Advertising Analytics](https://video.tv.adobe.com/v/23119?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+
+>[!ENDSHADEBOX]
 
 
 ## Förutsättningar {#prerequisites}

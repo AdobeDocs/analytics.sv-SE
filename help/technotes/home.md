@@ -3,9 +3,9 @@ title: Analytics Tech Notes
 description: Den här handboken innehåller användbar information om ämnen som inte tillhör ett visst analysverktyg eller en viss komponent.
 exl-id: 4cb084f8-5cec-4c46-a584-614217d42431
 feature: Attribution, Visualizations, Segmentation, Real-time
-source-git-commit: 9e3354569b2e748b3194be34c9119062300ca609
+source-git-commit: 08e29da4847e8ef70bd4435949e26265d770f557
 workflow-type: tm+mt
-source-wordcount: '420'
+source-wordcount: '412'
 ht-degree: 16%
 
 ---
@@ -34,9 +34,6 @@ Några av huvudfunktionerna i Adobe Analytics:
 
 Sammanfattningsvis är Adobe Analytics en kraftfull webbanalyslösning som ger företag de verktyg de behöver för att mäta, analysera och optimera sin digitala marknadsföring. Med realtidsdata, avancerad analys och attribueringsmodellering kan företag fatta datadrivna beslut som driver digital omvandling och förbättrar avkastningen.
 
-Här är en videoöversikt över Adobe Analytics:
-
->[!VIDEO](https://video.tv.adobe.com/v/27429/?quality=12)
 
 ## Viktiga artiklar om tekniska anteckningar
 

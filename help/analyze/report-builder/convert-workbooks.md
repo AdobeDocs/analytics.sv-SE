@@ -6,9 +6,9 @@ feature: Report Builder
 type: Documentation
 solution: Analytics
 exl-id: ff9011b2-fc18-456f-81dc-151b9e4fccd2
-source-git-commit: cf1b64479690cf5bdfdc8d9ba08879d0e0886611
+source-git-commit: 08e29da4847e8ef70bd4435949e26265d770f557
 workflow-type: tm+mt
-source-wordcount: '297'
+source-wordcount: '305'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,14 @@ Som en del av övergången till en ny Report Builder-teknik kan du snabbt konver
 >
 >Duplicera varje arbetsbok och byt namn på en version innan du konverterar den. På så sätt har du fortfarande en kopia av den ursprungliga arbetsboken om du behöver den.
 
->[!VIDEO](https://video.tv.adobe.com/v/3434957/?quality=12&learn=on)
+
+>[!BEGINSHADEBOX]
+
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Konvertera arbetsböcker](https://video.tv.adobe.com/v/3434957?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+
+>[!ENDSHADEBOX]
+
+
 
 1. Konfigurera den nya Report Builder genom att [följa dessa instruktioner](/help/analyze/report-builder/report-builder-setup.md).
 

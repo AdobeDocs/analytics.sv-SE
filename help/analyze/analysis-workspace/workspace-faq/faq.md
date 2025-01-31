@@ -4,9 +4,9 @@ title: Vanliga frågor och felsökning av Workspace
 feature: Workspace Basics
 role: User, Admin
 exl-id: cf7a9a73-bcbe-4bf5-b5dc-913199ab229c
-source-git-commit: 8eb15d8211bf2a5418465baa902e533198637a4a
+source-git-commit: d7a6867796f97f8a14cd8a3cfad115923b329c7c
 workflow-type: tm+mt
-source-wordcount: '542'
+source-wordcount: '547'
 ht-degree: 24%
 
 ---
@@ -38,35 +38,51 @@ Analysis Workspace rekommenderas inte för bulkdataexport. Det är en visualiser
 +++
 
 +++Hur kan jag optimera prestandan för Analysis Workspace?
+
 Se [Optimera prestanda](/help/analyze/analysis-workspace/workspace-faq/optimizing-performance.md).
+
 +++
 
 +++Hur kommer data in i ditt Analysis Workspace-projekt?
-Se den här videon:
 
->[!VIDEO](https://video.tv.adobe.com/v/31072/?quality=12)
+
+>[!BEGINSHADEBOX]
+
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Data till Analysis Workspace](https://video.tv.adobe.com/v/31072?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+
+>[!ENDSHADEBOX]
+
 
 +++
 
-+++ Hur kan jag spåra Workspace användning?
++++Hur kan jag spåra användning i Workspace?
 
-Se den här videon om loggspårning av användningsloggar för Analysis Workspace:
 
->[!VIDEO](https://video.tv.adobe.com/v/29768/?quality=12)
+>[!BEGINSHADEBOX]
+
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Loggspårning](https://video.tv.adobe.com/v/29768?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+
+>[!ENDSHADEBOX]
+
 
 +++
 
 +++När jag drar ett mätresultat över står det&quot;Ogiltiga data&quot;. Hur löser jag det här problemet?
+
 Ogiltiga data innebär att Adobe inte kan returnera data med den kombination av mått och mätvärden som används i rapporten. Två mätvärden som staplas ovanpå varandra kan till exempel inte returneras som data, eftersom det inte finns något sätt att visa två mätvärden på det sättet. Istället placerar du mätvärdena sida vid sida.
+
 +++
 
 +++När jag drar ett mätresultat över ser jag inga verkliga data - bara nollor. Hur felsöker jag det här problemet?
+
 Om du har skapat en rapport om arbetsytan men det inte finns några data kan du kontrollera några saker:
 
 * Kontrollera att rapportsviten är ifylld med data.
 * Om du tillämpade ett segment i rapporten kanske segmentvillkoren inte matchar några data. Prova med att ta bort segmentet eller justera segmentdefinitionen.
 * Kontrollera datumintervallet i det övre högra hörnet och se till att det har ett förväntat värde.
 * Navigera till webbplatsen och använd [Felsökning](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html) för att verifiera att data samlas in.
+
+
 +++
 
 +++Vilka åtgärder kan jag utföra i Analysis Workspace som skrivskyddad användare?

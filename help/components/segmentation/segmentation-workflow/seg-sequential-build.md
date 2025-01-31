@@ -3,9 +3,9 @@ description: Sekventiella segment skapas med operatorn THEN i stället för AND 
 title: Skapa sekventiella segment
 feature: Segmentation
 exl-id: 2ac4e6db-3111-45e5-bedf-7d9b7b1ae352
-source-git-commit: c1a72e57d4dfdaae1f90e69fd940137af9dab1a8
+source-git-commit: d7a6867796f97f8a14cd8a3cfad115923b329c7c
 workflow-type: tm+mt
-source-wordcount: '3762'
+source-wordcount: '3763'
 ht-degree: 1%
 
 ---
@@ -18,9 +18,13 @@ Sekventiella segment skapas med operatorn THEN i stället för AND eller OR. DÄ
 
 Dessutom kan du begränsa sekventiella segment till en viss tidslängd, granularitet och antal mellan kontrollpunkter med operatorerna [Efter och Inom](/help/components/segmentation/segmentation-workflow/seg-sequential-build.md).
 
-Här är en video om sekventiell segmentering:
 
->[!VIDEO](https://video.tv.adobe.com/v/25405/?quality=12)
+>[!BEGINSHADEBOX]
+
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Sekventiell segmentering](https://video.tv.adobe.com/v/25405?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+
+>[!ENDSHADEBOX]
+
 
 ## Inkludera alla {#section_75ADDD5D41F04800A09E592BB2940B35}
 

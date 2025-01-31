@@ -5,9 +5,9 @@ title: Dela projekt
 feature: Curate and Share
 role: User, Admin
 exl-id: da106eb1-7f5c-469a-a8aa-8497fc3706dc
-source-git-commit: 5a670a6ef16a6dcfae12c9eb9801c51f4f1ea54c
+source-git-commit: d7a6867796f97f8a14cd8a3cfad115923b329c7c
 workflow-type: tm+mt
-source-wordcount: '1844'
+source-wordcount: '1852'
 ht-degree: 0%
 
 ---
@@ -30,9 +30,13 @@ Du kan dela ett Analysis Workspace-projekt med följande typer av personer:
 
 Alla [kurationer](curate.md) som du tillämpar före delning visas när mottagarna öppnar projektet.
 
-Här är en videoöversikt över projektdelning:
 
->[!VIDEO](https://video.tv.adobe.com/v/36207/?quality=12)
+
+>[!BEGINSHADEBOX]
+
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dela projekt](https://video.tv.adobe.com/v/36207?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+
+>[!ENDSHADEBOX]
 
 
 ## Dela med Analysis Workspace användare och grupper i er organisation {#Add}
@@ -96,7 +100,7 @@ Om det finns ändringar som inte har sparats uppmanas du att spara projektet fö
 
    eller
 
-   Välj **[!UICONTROL Curate and Share]** om du vill använda projektkurering automatiskt. (Om projektet redan har delats väljer du **[!UICONTROL Curate & Update]**.) Läs mer om [projektstrukturering](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/curate.html).
+   Välj **[!UICONTROL Curate and Share]** om du vill använda projektkurering automatiskt. (Om projektet redan har delats väljer du **[!UICONTROL Curate & Update]**.) Läs mer om [projekturval](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/curate.html).
 
 ## Dela en länk till ett projekt
 
@@ -138,9 +142,13 @@ Du kan ge [skrivskyddad åtkomst](/help/analyze/analysis-workspace/curate-share/
 >
 >* Ett projekt kan bli oåtkomligt om många användare försöker få åtkomst till en viss länk samtidigt. Som standard har fler än 190 personer tillgång till en enda länk var femte minut. Om din organisation når den gränsen väntar du i fem minuter och försöker sedan att få åtkomst till länken igen.
 
-I följande videodemonstration och medföljande dokumentation beskrivs alternativen för att dela en länk med vem som helst:
 
->[!VIDEO](https://video.tv.adobe.com/v/3420093/?learn=on)
+>[!BEGINSHADEBOX]
+
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dela en länk med vem som helst](https://video.tv.adobe.com/v/3420093?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+
+>[!ENDSHADEBOX]
+
 
 Så här delar du ett Analysis Workspace-projekt med personer som inte har tillgång till Adobe Analytics:
 
@@ -188,9 +196,14 @@ När någon delar ett projekt med dig genom att dela en länk (antingen från fl
 
 ## Dela inbäddade komponenter
 
-Här är en video om ämnet:
+Du kan dela de inbäddade komponenterna som är en del av ditt projekt.
 
->[!VIDEO](https://video.tv.adobe.com/v/24713/?quality=12)
+>[!BEGINSHADEBOX]
+
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dela inbäddade komponenter](https://video.tv.adobe.com/v/24713?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+
+>[!ENDSHADEBOX]
+
 
 ## Vanliga frågor {#FAQs}
 

@@ -4,7 +4,7 @@ title: Utfallsöversikt
 feature: Visualizations
 role: User, Admin
 exl-id: 85d0c88e-d159-4870-aaf6-51899d87ff77
-source-git-commit: 76abe4e363184a9577622818fe21859d016a5cf7
+source-git-commit: d7a6867796f97f8a14cd8a3cfad115923b329c7c
 workflow-type: tm+mt
 source-wordcount: '265'
 ht-degree: 2%
@@ -31,9 +31,13 @@ _I den här artikeln dokumenteras utfallsvisualiseringen i_ ![AdobeAnalytics](/h
 
 Utfallsvisualiseringar ger fler alternativ för att skapa utfallsrapporter. Utfallsrapporter visar var besökarna lämnade (föll ned) och fortsatte igenom (föll igenom) en fördefinierad sidsekvens.
 
-Här är en video om Fallout-visualisering:
 
->[!VIDEO](https://video.tv.adobe.com/v/345883/?quality=12)
+>[!BEGINSHADEBOX]
+
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Utfallsvisualisering](https://video.tv.adobe.com/v/345883?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+
+>[!ENDSHADEBOX]
+
 
 Med hjälp av bortfallsvisualiseringar kan du
 

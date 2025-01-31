@@ -4,7 +4,7 @@ keywords: segmentering;segment
 title: Segmentbehållare
 feature: Segmentation
 exl-id: f30d525b-32b7-47d5-b92d-24bf86d8a471
-source-git-commit: 6a36155dcd1fd06ea052783a8fd5714cd10e16ec
+source-git-commit: 08e29da4847e8ef70bd4435949e26265d770f557
 workflow-type: tm+mt
 source-wordcount: '3551'
 ht-degree: 1%
@@ -44,9 +44,13 @@ Med varje behållare kan du rapportera över en besökares historik, interaktion
 
 <!--![](assets/sequential_segmentation_container_hierarchy.png)-->
 
-Här är en videoöversikt över segmentbehållare:
 
->[!VIDEO](https://video.tv.adobe.com/v/25401/?quality=12)
+>[!BEGINSHADEBOX]
+
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Segmentbehållare](https://video.tv.adobe.com/v/25401?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+
+>[!ENDSHADEBOX]
+
 
 ## Besökarbehållare
 

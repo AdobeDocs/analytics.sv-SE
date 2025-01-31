@@ -4,9 +4,9 @@ title: Lägga till komponentbeskrivningar
 feature: Components
 role: Admin
 exl-id: db36ee4a-66e2-45d1-8b7a-49570b5fce93
-source-git-commit: c1b679dab7b66754ae4b6fd7503243f40d0f2178
+source-git-commit: d7a6867796f97f8a14cd8a3cfad115923b329c7c
 workflow-type: tm+mt
-source-wordcount: '167'
+source-wordcount: '161'
 ht-degree: 0%
 
 ---
@@ -19,9 +19,14 @@ Analysadministratörer kan lägga till beskrivningar för komponenter (Dimension
 
 ## Lägga till beskrivningar till komponenter i en Report Suite
 
-I följande video beskrivs hur du lägger till dimensioner och måttbeskrivningar i en Report Suite:
 
->[!VIDEO](https://video.tv.adobe.com/v/25453/?quality=12)
+>[!BEGINSHADEBOX]
+
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Lägg till komponentbeskrivningar](https://video.tv.adobe.com/v/25453?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+
+>[!ENDSHADEBOX]
+
+
 
 ## Lägga till beskrivningar till komponenter i Analysis Workspace (med hjälp av Data Dictionary) {#add-descriptions}
 

@@ -4,9 +4,9 @@ description: En visualisering som visar relationen mellan upp till tre mätvärd
 feature: Visualizations
 role: User, Admin
 exl-id: 1144ca89-645d-44aa-a820-4e7fd31912b8
-source-git-commit: 76abe4e363184a9577622818fe21859d016a5cf7
+source-git-commit: 830ca4b1ec1895dd58a262554669b454bd08841b
 workflow-type: tm+mt
-source-wordcount: '158'
+source-wordcount: '176'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,8 @@ _I den här artikeln dokumenteras Spridningsvisualiseringen i_ ![AdobeAnalytics]
 
 >[!ENDSHADEBOX]
 
-Spridningsvisningen visar förhållandet mellan dimensionsobjekt och upp till tre mätvärden. Den kräver tre komponenter och har stöd för visualisering av upp till fyra komponenter.
+
+Visualiseringen ![GraphScatter](/help/assets/icons/GraphScatter.svg) **[!UICONTROL Scatter]** visar relationen mellan dimensionsobjekt och upp till tre mätvärden. Visualiseringen kräver tre komponenter och har stöd för visualisering av upp till fyra komponenter.
 
 * Radkomponenten (vanligtvis en dimension) representerar varje punkt i diagrammet. Olika rader visas som olika färgade punkter.
 * Kolumnen längst till vänster (vanligtvis ett mått) ritar punktens position på Y-axeln (lodrätt).
@@ -37,8 +38,19 @@ Spridningsvisningen visar förhållandet mellan dimensionsobjekt och upp till tr
 * Den tredje kolumnen bestämmer punktens radie.
 * Alla efterföljande kolumner i en friformstabell ignoreras av visualisering av punktdiagram.
 
-![Spridningsdiagram](assets/scatter.png)
+![Exempel på punktdiagram som visar flera dimensionsobjekt ](assets/scatter.png)
 
-Här är en video om visualiseringar av punktdiagram:
 
->[!VIDEO](https://video.tv.adobe.com/v/334459/?quality=12)
+>[!BEGINSHADEBOX]
+
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualisering av platsyta](https://video.tv.adobe.com/v/334459/?quality=12){target="_blank"} för en demonstrationsvideo.
+
+>[!ENDSHADEBOX]
+
+
+>[!MORELIKETHIS]
+>
+>[Lägg till en visualisering på en panel](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
+>[Visualiseringsinställningar](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>[Snabbmenyn Visualisering ](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>

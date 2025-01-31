@@ -4,9 +4,9 @@ description: Gräv djupare in i informationen om er målgrupp och dela in i rela
 feature: Cohort Analysis
 role: User, Admin
 exl-id: 6a46e76f-671e-4b1b-933a-6c2776c72d09
-source-git-commit: 76abe4e363184a9577622818fe21859d016a5cf7
+source-git-commit: d7a6867796f97f8a14cd8a3cfad115923b329c7c
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '558'
 ht-degree: 0%
 
 ---
@@ -52,9 +52,12 @@ Exempel på vad du kan göra med [!UICONTROL Cohort Analysis]:
 
 [!UICONTROL Cohort Analysis] är tillgängligt för alla Adobe Analytics-kunder med åtkomsträttigheter till [!UICONTROL Analysis Workspace].
 
-Video om Cohort-tabeller i Analysis Workspace:
 
->[!VIDEO](https://video.tv.adobe.com/v/25965/?quality=12)
+>[!BEGINSHADEBOX]
+
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Kohortanalys i Analysis Workspace](https://video.tv.adobe.com/v/25965?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+
+>[!ENDSHADEBOX]
 
 >[!IMPORTANT]
 >
@@ -74,9 +77,14 @@ En [!UICONTROL Retention]-kohortrapport returnerar besökare: varje datacell vis
 
 ![](assets/retention-report.png)
 
-Här är en video om hur du beräknar kvarhållande av rullande text:
 
->[!VIDEO](https://video.tv.adobe.com/v/25962/?quality=12)
+>[!BEGINSHADEBOX]
+
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Beräkna rullande retention](https://video.tv.adobe.com/v/25962?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+
+>[!ENDSHADEBOX]
+
+
 
 ### [!UICONTROL Churn]-tabell
 
@@ -84,9 +92,12 @@ En [!UICONTROL Churn]-kohort är omvänd till en kvarhållningstabell och visar 
 
 ![](assets/churn-report.png)
 
-Här är en video om bortfallsanalys:
+>[!BEGINSHADEBOX]
 
->[!VIDEO](https://video.tv.adobe.com/v/25966/?quality=12)
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Genomför analys](https://video.tv.adobe.com/v/25966?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+
+>[!ENDSHADEBOX]
+
 
 ### [!UICONTROL Rolling Calculation]
 

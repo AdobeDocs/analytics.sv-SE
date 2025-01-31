@@ -4,9 +4,9 @@ description: Lär dig hur och varför du skapar projekt i Workspace med flera ra
 feature: Workspace Basics
 role: User, Admin
 exl-id: 0429ddd9-935f-44ef-ae1e-97bb02e6e2df
-source-git-commit: 33e2ca30ec385861c35c9d06e870d5b38d8f2e34
+source-git-commit: d7a6867796f97f8a14cd8a3cfad115923b329c7c
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '499'
 ht-degree: 0%
 
 ---
@@ -21,9 +21,13 @@ Den här funktionen är användbar om du till exempel vill
 
 * Bygg en kontrollpanel med mätvärden och visualiseringar för att rapportera till andra organisationer. Ni kan hämta data från olika rapportsviter till samma projekt.
 
-Här är en video om ämnet:
 
->[!VIDEO](https://video.tv.adobe.com/v/32843/?quality=12)
+>[!BEGINSHADEBOX]
+
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Flera rapportsviter](https://video.tv.adobe.com/v/32843?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+
+>[!ENDSHADEBOX]
+
 
 ## Tillämpa rapportsviten på alla paneler
 

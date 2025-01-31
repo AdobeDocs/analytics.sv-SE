@@ -4,9 +4,9 @@ description: Hur olika typer av attribuering delar upp kredit mellan dimensionsp
 feature: Attribution
 role: User, Admin
 exl-id: f36de41e-1c53-477d-b326-528fbd4ec9ec
-source-git-commit: e18fde22f4ec60b292f47112e51fad8a0d78acb2
+source-git-commit: 08e29da4847e8ef70bd4435949e26265d770f557
 workflow-type: tm+mt
-source-wordcount: '1602'
+source-wordcount: '1603'
 ht-degree: 0%
 
 ---
@@ -44,9 +44,12 @@ Ett uppslagsfönster är den tid som en konvertering bör titta tillbaka för at
 
 * **Anpassat uppslagsfönster:** Gör att du kan expandera attribueringsfönstret efter rapportdatumintervallet, upp till högst 90 dagar. Anpassade uppslagsfönster utvärderas för varje konvertering under rapporteringsperioden. För en konvertering som inträffar den 20 februari skulle ett uppslagsfönster på 10 dagar utvärdera alla dimensionskontaktytor från 10 februari till 20 februari i attribueringsmodellen.
 
-  Här är en video om anpassade uppslagsfönster:
+>[!BEGINSHADEBOX]
 
-  >[!VIDEO](https://video.tv.adobe.com/v/36204/?quality=12)
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Anpassat uppslagsfönster](https://video.tv.adobe.com/v/36204?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+
+>[!ENDSHADEBOX]
+
 
 ## Exempel
 

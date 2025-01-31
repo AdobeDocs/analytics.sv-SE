@@ -3,9 +3,9 @@ description: Genom att segmentera enskilda mätvärden kan ni göra mätjämför
 title: Segmenterade mätvärden
 feature: Calculated Metrics
 exl-id: 1e7e048b-9d90-49aa-adcc-15876c864e04
-source-git-commit: 1dc0325f1a8b4fc1888895ee18570effb34e6208
+source-git-commit: 08e29da4847e8ef70bd4435949e26265d770f557
 workflow-type: tm+mt
-source-wordcount: '470'
+source-wordcount: '473'
 ht-degree: 0%
 
 ---
@@ -54,9 +54,13 @@ Bygg och spara ett mätvärde som kallas&quot;tyska besökare&quot; och ett mät
 
    ![](assets/workspace-pages.png)
 
-Här är en videoöversikt:
 
->[!VIDEO](https://video.tv.adobe.com/v/25409/?quality=12&learn=on)
+>[!BEGINSHADEBOX]
+
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Segmenterade mätvärden](https://video.tv.adobe.com/v/25409?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+
+>[!ENDSHADEBOX]
+
 
 ## Procent av totala mätvärden {#percent-total}
 
