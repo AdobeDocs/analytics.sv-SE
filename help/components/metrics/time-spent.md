@@ -3,43 +3,41 @@ title: Hur tidsåtgången beräknas i Adobe Analytics
 description: En sammanställd sida med tid för mått och mått.
 feature: Metrics
 exl-id: 71e9b856-8a0a-47be-a73f-4dc7d639a5de
-source-git-commit: 75ae77c1da1b578639609888e794e13d965ef669
+source-git-commit: 03502f42473791bec930cc688c0b7905acf12de6
 workflow-type: tm+mt
-source-wordcount: '1612'
+source-wordcount: '1532'
 ht-degree: 4%
 
 ---
 
 # Tidsåtgång - översikt
 
-Olika [!UICONTROL 'time spent'] [mått ](overview.md) och dimensioner erbjuds för alla Adobe Analytics-produkter.
+Olika [!UICONTROL 'time spent'] [mått ](overview.md) och dimensioner erbjuds för alla Adobe Analytics-produkter. Den här sidan kan hjälpa dig att tolka den dimension eller det mått som du vill ha.
 
 ## Mätvärden för hur lång tid som har tillbringats
 
 | Mått | Definition | Finns i |
 |---|---|---|
-| [!UICONTROL Total seconds spent] | Representerar den totala tiden som besökare interagerar med en viss dimensionspost. Inkluderar förekomsten av ett värde och beständighet i alla efterföljande träffar. När det gäller proppar räknas även den tid som tillbringats över efterföljande länkhändelser. | Analysis Workspace, Report Builder (kallas&quot;total tid spenderad&quot;), Data Warehouse |
-| [!UICONTROL Time spent per visit] (sekunder) | Ungefär *Totalt antal sekunder som använts/besöksgränser*<br> Representerar den genomsnittliga tiden som besökare interagerar med en viss dimensionspost under varje besök. **Obs!**: Det här måttet kan inte beräknas separat eftersom nämnaren för den här funktionen är ett internt mått. | Analysis Workspace |
-| [!UICONTROL Time spent per visitor] (sekunder) | Ungefär *Totalt antal sekunder per besökare*<br> Representerar den genomsnittliga tiden som besökare interagerar med ett visst dimensionsobjekt under besökarens livstid (längden på deras cookie). **Obs!**: Det här måttet kan inte beräknas separat eftersom nämnaren för den här funktionen är ett internt mått. | Analysis Workspace |
+| [[!UICONTROL Total seconds spent]](total-seconds-spent.md) | Representerar den totala tiden som besökare interagerar med en viss dimensionspost. Inkluderar förekomsten av ett värde och beständighet i alla efterföljande träffar. När det gäller proppar räknas även den tid som tillbringats över efterföljande länkhändelser. | Analysis Workspace, Report Builder (kallas&quot;total tid spenderad&quot;), Data Warehouse |
+| [[!UICONTROL Time spent per visit] (sekunder)](time-spent-per-visit.md) | Ungefär *Totalt antal sekunder som använts/besöksgränser*<br> Representerar den genomsnittliga tiden som besökare interagerar med en viss dimensionspost under varje besök. **Obs!**: Det här måttet kan inte beräknas separat eftersom nämnaren för den här funktionen är ett internt mått. | Analysis Workspace |
+| [[!UICONTROL Time spent per visitor] (sekunder)](time-spent-per-visitor.md) | Ungefär *Totalt antal sekunder per besökare*<br> Representerar den genomsnittliga tiden som besökare interagerar med ett visst dimensionsobjekt under besökarens livstid (längden på deras cookie). **Obs!**: Det här måttet kan inte beräknas separat eftersom nämnaren för den här funktionen är ett internt mått. | Analysis Workspace |
 | [!UICONTROL Time Spent/User (State)] | Ungefär *Totalt antal sekunder av mobilappar/unika besökare av mobilappar*<br> Representerar den genomsnittliga tiden som mobilappsbesökare interagerar med ett visst dimensionsobjekt under besökarens livstid (längden på deras cookie). **Obs!**: Det här måttet kan inte beräknas separat eftersom nämnaren för den här funktionen är ett internt mått. | Analysis Workspace |
-| [!UICONTROL Average time spent on site] (sekunder) | Representerar den totala tiden som besökare interagerar med en viss dimensionspost, per sekvens med en dimensionspost. Det är inte bara begränsat till &quot;webbplats&quot;-medelvärden som namnet antyder. Mer information om sekvenser finns i avsnittet &quot;Hur tidsåtgången beräknas&quot;.<br>**Obs!**: Det här måttet skiljer sig med största sannolikhet från Tidsåtgång per besök på en dimensionspostnivå på grund av skillnaderna i nämnaren i beräkningen. | Analysis Workspace, Report Builder (visas på några minuter) |
-| [!UICONTROL Average time on site] | Detta är samma mått som *Genomsnittlig tid på platsen (sekunder)*, utom formaterad som Tid (`hh:mm:ss`) | Analysis Workspace |
-| [!UICONTROL Average time spent on page] | Undertryckt mätvärde.<br> rekommenderar i stället Adobe att du använder Genomsnittlig tid på plats om medeltiden för ett dimensionsobjekt behövs. | Report Builder (när det finns en dimension i begäran) |
-| [!UICONTROL Total session length], alias [!UICONTROL Previous session length] | Endast Mobile App SDK. <br>Fastställd nästa gång appen startas för föregående session. Det här måttet beräknas i sekunder och räknas inte när programmet körs i bakgrunden. Detta är ett mått på sessionsnivå.<br>Exempel: Vi installerar programmet ABC och startar och använder det i 2 minuter. Stäng sedan programmet. Inga data skickas om den här sessionstiden. Nästa gång vi startar appen skickas [!UICONTROL Previous Session Length] med värdet 120. | Analysis Workspace, Report Builder, användargränssnittet för mobiltjänster |
-| [!UICONTROL Average session length] (mobil) | *Total sessionslängd / (startar - första starten)*<br> Endast Mobile App SDK. Detta är ett mått på sessionsnivå. | Report Builder, användargränssnitt för mobiltjänster |
+| [[!UICONTROL Average time spent on site] (sekunder)](average-time-on-site.md) | Representerar den totala tiden som besökare interagerar med en viss dimensionspost, per sekvens med en dimensionspost. Det är inte bara begränsat till &quot;webbplats&quot;-medelvärden som namnet antyder. Mer information om sekvenser finns i avsnittet &quot;Hur tidsåtgången beräknas&quot;.<br>**Obs!**: Det här måttet skiljer sig med största sannolikhet från Tidsåtgång per besök på en dimensionspostnivå på grund av skillnaderna i nämnaren i beräkningen. | Analysis Workspace, Report Builder (visas på några minuter) |
+| [[!UICONTROL Average time on site]](average-time-on-site.md) | Detta är samma mått som *Genomsnittlig tid på platsen (sekunder)*, utom formaterad som Tid (`hh:mm:ss`) | Analysis Workspace |
+| [!UICONTROL Average time spent on page] | Undertryckt mätvärde.<br> I stället rekommenderar Adobe att du använder [[!UICONTROL Average time spent on site]](average-time-on-site.md) om medeltiden för ett dimensionsobjekt behövs. | Report Builder (när det finns en dimension i begäran) |
 
 ## Dimensioner för använd tid
 
 | Dimension | Definition | Finns i |
 | --- | --- | --- |
-| [!UICONTROL Time spent per visit - granular] | Den totala tid som tillbringats under besöket trunkerades till närmaste sekund och tillämpades på varje träff som ingick i besöket. Detta är en besöksnivådimension. | Analysis Workspace |
-| [!UICONTROL Time spent per visit - bucketed] | Det granulerade måttet inkapslat i 9 olika intervall. Detta är en besöksnivådimension. Intervall:<ul><li>Mindre än 1 minut</li><li>1-5 minuter</li><li>5-10 minuter</li><li>10-30 minuter</li><li>30-60 minuter</li><li>1-2 timmar</li><li>2-5 timmar</li><li>5-10 timmar</li><li>10-15 timmar</li></ul>**Obs!**: Det kan inte finnas fler bucklor än detta, eftersom ett besök förfaller efter 12 timmars aktivitet. | Analysis Workspace, Report Builder |
-| [!UICONTROL Time spent on page - granular] | Total tid som tillbringats för varje träff, trunkerad till närmaste sekund. Det här är en träffnivådimension och innehåller både sidvyer och länkhändelser. Trots sitt namn är det inte begränsat till siddimensionen. | Analysis Workspace |
-| [!UICONTROL Time spent on page - bucketed] | Den granulerade dimensionen är inkapslad i 10 olika intervall, men den blockerade dimensionen räknar bara sidvyer (och utelämnar länkarhändelser). Det här är en träffnivådimension. Intervall:<ul><li>mindre än 15 sekunder</li><li>15 till 29 sekunder</li><li>30 till 59 sekunder</li><li>1 till 3 minuter</li><li>3 till 5 minuter</li><li>5 till 10 minuter</li><li>10 till 15 minuter</li><li>15 till 20 minuter</li><li>20 till 30 minuter</li><li>mer än 30 minuter</li></ul> | Analysis Workspace |
+| [[!UICONTROL Time spent per visit - granular]](../dimensions/time-spent-per-visit.md) | Den totala tid som tillbringats under besöket trunkerades till närmaste sekund och tillämpades på varje träff som ingick i besöket. Detta är en besöksnivådimension. | Analysis Workspace |
+| [[!UICONTROL Time spent per visit - bucketed]](../dimensions/time-spent-per-visit.md) | Det granulerade måttet inkapslat i 9 olika intervall. Detta är en besöksnivådimension. Intervall:<ul><li>Mindre än 1 minut</li><li>1-5 minuter</li><li>5-10 minuter</li><li>10-30 minuter</li><li>30-60 minuter</li><li>1-2 timmar</li><li>2-5 timmar</li><li>5-10 timmar</li><li>10-15 timmar</li></ul>**Obs!**: Det kan inte finnas fler bucklor än detta, eftersom ett besök förfaller efter 12 timmars aktivitet. | Analysis Workspace, Report Builder |
+| [[!UICONTROL Time spent on page - granular]](../dimensions/time-spent-on-page.md) | Total tid som tillbringats för varje träff, trunkerad till närmaste sekund. Det här är en träffnivådimension och innehåller både sidvyer och länkhändelser. Trots sitt namn är det inte begränsat till siddimensionen. | Analysis Workspace |
+| [[!UICONTROL Time spent on page - bucketed]](../dimensions/time-spent-on-page.md) | Den granulerade dimensionen är inkapslad i 10 olika intervall, men den blockerade dimensionen räknar bara sidvyer (och utelämnar länkarhändelser). Det här är en träffnivådimension. Intervall:<ul><li>mindre än 15 sekunder</li><li>15 till 29 sekunder</li><li>30 till 59 sekunder</li><li>1 till 3 minuter</li><li>3 till 5 minuter</li><li>5 till 10 minuter</li><li>10 till 15 minuter</li><li>15 till 20 minuter</li><li>20 till 30 minuter</li><li>mer än 30 minuter</li></ul> | Analysis Workspace |
 
 ## Hur&quot;Tidsåtgång&quot; beräknas
 
-Adobe Analytics använder explicita värden (inklusive länkhändelser och videovyer) för att beräkna [!UICONTROL Time Spent].
+Adobe Analytics använder explicita värden (inklusive länkhändelser och videovyer) för att beräkna hur lång tid som läggs på.
 
 >[!NOTE]
 >
@@ -59,22 +57,22 @@ Adobe Analytics använder explicita värden (inklusive länkhändelser och video
 
 De tidsmått som kan användas för alla dimensioner är:
 
-* [!UICONTROL Total seconds spent]
+* [[!UICONTROL Total seconds spent]](total-seconds-spent.md)
 
-* [!UICONTROL Time spent per visit] (sekunder)
+* [[!UICONTROL Time spent per visit] (sekunder)](time-spent-per-visit.md)
 
-* [!UICONTROL Time spent per visitor] (sekunder)
+* [[!UICONTROL Time spent per visitor] (sekunder)](time-spent-per-visitor.md)
 
-* [!UICONTROL Average time spent on site] (sekunder)
+* [[!UICONTROL Average time spent on site] (sekunder)](average-time-on-site.md)
 
 +++
 
 +++Vilken tid används bäst för indelning med andra dimensioner?
 
-Dimensionen [!UICONTROL Time Spent on Page – granular] är en dimension på träffnivå. Om du delar upp det här med en annan dimension kommer du att se i vilka sekunder en träff varade där även nedbrytningsdimensionen fanns.
+Dimensionen [[!UICONTROL Time Spent on Page – granular]](../dimensions/time-spent-on-page.md) är en dimension på träffnivå. Om du delar upp det här med en annan dimension kommer du att se i vilka sekunder en träff varade där även nedbrytningsdimensionen fanns.
 I exemplet nedan associeras söktermen&quot;klassificeringar&quot; med träfftider på 54 sekunder, 59 sekunder osv., vilket kanske anger att besökarna spenderar tid på att läsa innehåll som returnerats för den perioden.
 
-![](assets/time-spent1.png)
+![Skärmbild av en tid som använts för sidrapporten](assets/time-spent1.png)
 
 +++
 
@@ -82,7 +80,7 @@ I exemplet nedan associeras söktermen&quot;klassificeringar&quot; med träfftid
 
 Alla mätvärden. Dimensionen visar hur lång tid som har ägnats åt den exakta träffen där händelsen inträffade. Högre tidsåtgång innebär att en besökare stannar längre på en sida (träff) där händelsen inträffade.
 
-![](assets/time-spent2.png)
+![Workspace-rapport visar ett anpassat mått som används med en tidsanvänd dimension](assets/time-spent2.png)
 
 +++
 
@@ -90,11 +88,11 @@ Alla mätvärden. Dimensionen visar hur lång tid som har ägnats åt den exakta
 
 Skillnaden är nämnaren i måttet:
 
-* [!UICONTROL Average time spent on site] använder sekvenserna som innehåller en dimensionspost.
+* [[!UICONTROL Average time spent on site]](average-time-on-site.md) använder sekvenserna som innehåller en dimensionspost.
 
-* [!UICONTROL Time spent per visit] använder antalet besök
+* [[!UICONTROL Time spent per visit]](time-spent-per-visit.md) använder antalet besök
 
-Därför kan dessa mätvärden ge liknande resultat på besöksnivå, men de kommer att vara annorlunda på träffnivå.
+Därför kan dessa mått ge liknande resultat på besöksnivå, men skiljer sig åt på en träffnivå.
 
 +++
 
@@ -104,15 +102,15 @@ Eftersom [!UICONTROL Average Time Spent on Site] är beroende av obrutna sekvens
 
 Ta till exempel följande besök.
 
-| hit# | 1 | 2 | 3 |
+| Träff # | 1 | 2 | 3 |
 |---|---|---|---|
 | **Sekunder** | 30 | 100 | 10 |
 | **Sidnamn** | Startsida | Produkt | Startsida |
-| **date** | 1 januari | 1 januari | 1 januari |
+| **Datum** | 1 januari | 1 januari | 1 januari |
 
 Vid beräkning av den tid som tillbringats för hemsidan skulle det vara (30+10)/2=20, men om du delar upp den per dag skulle det ge (30+10)/1=40 eftersom dagen har en enda obruten serie som börjar den 1 januari.
 
-Därför kan dessa mätvärden ge liknande resultat på besöksnivå, men de kommer att vara annorlunda på träffnivå.
+Därför kan dessa mått ge liknande resultat på besöksnivå, men skiljer sig åt på en träffnivå.
 
 +++
 

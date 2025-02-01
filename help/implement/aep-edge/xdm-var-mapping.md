@@ -4,7 +4,7 @@ description: Visa vilka XDM-fält som Edge automatiskt mappar till Analytics-var
 exl-id: fbff5c38-0f04-4780-b976-023e207023c6
 feature: Implementation Basics
 role: Admin, Developer
-source-git-commit: 4633225cc35658a7de39a40cd77df00137a54461
+source-git-commit: 5e97c9a4a3c7368cefb3cc6a7bc89a450e6e3f4a
 workflow-type: tm+mt
 source-wordcount: '1406'
 ht-degree: 0%
@@ -87,29 +87,29 @@ Tidigare uppdateringar av den här tabellen finns på den här sidans [implement
 | `xdm.media.mediaTimed.midpoints.value` | Mätvärdet [Femtio % förloppsindikator](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#fifty-progress-marker) för direktuppspelningsmedia. |
 | `xdm.media.mediaTimed.pauseTime.value` | Mätvärdet för direktuppspelningsmedia [Total paustid](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#total-pause-duration). |
 | `xdm.media.mediaTimed.pauses.value` | Det direktuppspelade mediemått [Pausa händelser](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#pause-events). |
-| `xdm.media.mediaTimed.primaryAssetReference.`<br/>`@id` | Direktuppspelningsmediedimensionen [Resurs-ID](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#asset-id). |
-| `xdm.media.mediaTimed.primaryAssetReference.`<br/>`dc:title` | Direktuppspelningsmediedimensionen [Videonamn](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#video-name). |
-| `xdm.media.mediaTimed.primaryAssetReference.`<br/>`iptc4xmpExt:Creator[N].iptc4xmpExt:Name` | Direktuppspelningsmediedimensionen [Originator](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#originator). |
-| `xdm.media.mediaTimed.primaryAssetReference.`<br/>`iptc4xmpExt:Episode.iptc4xmpExt:Number` | Direktuppspelningsmediedimensionen [Episod](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#episode). |
-| `xdm.media.mediaTimed.primaryAssetReference.`<br/>`iptc4xmpExt:Genre` | Direktuppspelningsmediedimensionen [Genre](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#genre). |
-| `xdm.media.mediaTimed.primaryAssetReference.`<br/>`iptc4xmpExt:Rating[N].iptc4xmpExt:RatingValue` | Den direktuppspelade mediedimensionen [Innehållsklassificering](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#content-rating). |
-| `xdm.media.mediaTimed.primaryAssetReference.`<br/>`iptc4xmpExt:Season.iptc4xmpExt:Number` | Direktuppspelningsmediedimensionen [Säsong](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#season). |
-| `xdm.media.mediaTimed.primaryAssetReference.`<br/>`iptc4xmpExt:Series.iptc4xmpExt:Identifier` | Den direktuppspelade mediedimensionen [Innehålls-ID](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#content-id). |
-| `xdm.media.mediaTimed.primaryAssetReference.`<br/>`iptc4xmpExt:Series.iptc4xmpExt:Name` | Direktuppspelningsmediedimensionen [Visa](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#show). |
-| `xdm.media.mediaTimed.primaryAssetReference.`<br/>`showType` | Direktuppspelningsmediedimensionen [Visa typ](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#show-type). |
-| `xdm.media.mediaTimed.primaryAssetReference.`<br/>`xmpDM:duration` | Direktuppspelningsmediedimensionen [Videolängd](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#video-length). |
-| `xdm.media.mediaTimed.primaryAssetViewDetails.`<br/>`@id` | Direktuppspelningsmediedimensionen [Mediasession-ID](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#media-session-id). |
-| `xdm.media.mediaTimed.primaryAssetViewDetails.`<br/>`broadcastChannel` | Den direktuppspelade mediedimensionen [Innehållskanal](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#content-channel). |
-| `xdm.media.mediaTimed.primaryAssetViewDetails.`<br/>`broadcastContentType` | Direktuppspelningsmediemätningen [Innehållstyp](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#content-type). |
-| `xdm.media.mediaTimed.primaryAssetViewDetails.`<br/>`broadcastNetwork` | Direktuppspelningsmediedimensionen [Nätverk](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#network). |
+| `xdm.mediaCollection.sessionDetails.assetID` | Direktuppspelningsmediedimensionen [Resurs-ID](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#asset-id). |
+| `xdm.mediaCollection.sessionDetails.friendlyName` | Direktuppspelningsmediedimensionen [Videonamn](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#video-name). |
+| `xdm.mediaCollection.sessionDetails.originator` | Direktuppspelningsmediedimensionen [Originator](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#originator). |
+| `xdm.mediaCollection.sessionDetails.episode` | Direktuppspelningsmediedimensionen [Episod](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#episode). |
+| `xdm.mediaCollection.sessionDetails.genre` | Direktuppspelningsmediedimensionen [Genre](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#genre). |
+| `xdm.mediaCollection.sessionDetails.rating` | Den direktuppspelade mediedimensionen [Innehållsklassificering](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#content-rating). |
+| `xdm.mediaCollection.sessionDetails.season` | Direktuppspelningsmediedimensionen [Säsong](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#season). |
+| `xdm.mediaCollection.sessionDetails.name` | Den direktuppspelade mediedimensionen [Innehålls-ID](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#content-id). |
+| `xdm.mediaCollection.sessionDetails.show` | Direktuppspelningsmediedimensionen [Visa](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#show). |
+| `xdm.mediaCollection.sessionDetails.showType` | Direktuppspelningsmediedimensionen [Visa typ](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#show-type). |
+| `xdm.mediaCollection.sessionDetails.length` | Direktuppspelningsmediedimensionen [Videolängd](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#video-length). |
+| `xdm.media.mediaTimed.primaryAssetViewDetails.@id` | Direktuppspelningsmediedimensionen [Mediasession-ID](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#media-session-id). |
+| `xdm.mediaCollection.sessionDetails.channel` | Den direktuppspelade mediedimensionen [Innehållskanal](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#content-channel). |
+| `xdm.mediaCollection.sessionDetails.contentType` | Direktuppspelningsmediemätningen [Innehållstyp](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#content-type). |
+| `xdm.mediaCollection.sessionDetails.network` | Direktuppspelningsmediedimensionen [Nätverk](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#network). |
 | `xdm.media.mediaTimed.primaryAssetViewDetails.`<br/>`mediaSegmentView.value` | Den direktuppspelade mediedimensionen [Innehållssegment](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#content-segment). |
-| `xdm.media.mediaTimed.primaryAssetViewDetails.`<br/>`playerName` | Den direktuppspelade mediedimensionen [Namn på innehållsspelaren](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#content-player-name). |
-| `xdm.media.mediaTimed.primaryAssetViewDetails.`<br/>`playerSDKVersion.version` | Direktuppspelningsmediedimensionen [SDK version](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#sdk-version). |
-| `xdm.media.mediaTimed.primaryAssetViewDetails.`<br/>`sourceFeed` | Mediedimensionen [Mediefeedtyp](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#media-feed-type) för direktuppspelning. |
-| `xdm.media.mediaTimed.primaryAssetViewDetails.`<br/>`streamFormat` | Direktuppspelningsmediedimensionen [Strömformat](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#stream-format). |
+| `xdm.mediaCollection.sessionDetails.playerName` | Den direktuppspelade mediedimensionen [Namn på innehållsspelaren](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#content-player-name). |
+| `xdm.mediaCollection.sessionDetails.appVersion` | Direktuppspelningsmediedimensionen [SDK version](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#sdk-version). |
+| `xdm.mediaCollection.sessionDetails.feed` | Mediedimensionen [Mediefeedtyp](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#media-feed-type) för direktuppspelning. |
+| `xdm.mediaCollection.sessionDetails.streamFormat` | Direktuppspelningsmediedimensionen [Strömformat](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#stream-format). |
 | `xdm.media.mediaTimed.progress10.value` | Mätvärdet för direktuppspelningsmedia [10 % Progress Marker](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#ten-progress-marker). |
 | `xdm.media.mediaTimed.progress95.value` | Mätvärdet [Nittiofem % för direktuppspelningsmedia ](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#ninety-five-progress-marker). |
-| `xdm.media.mediaTimed.resumes.value` | Det direktuppspelade mediemått [Innehållet återupptas](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#content-resumes). |
+| `xdm.mediaCollection.sessionDetails.hasResume` | Det direktuppspelade mediemått [Innehållet återupptas](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#content-resumes). |
 | `xdm.media.mediaTimed.starts.value` | Det direktuppspelade mediemått [Media börjar](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#media-starts). |
 | `xdm.media.mediaTimed.thirdQuartiles.value` | Mätvärdet [Sjuttiofem % för direktuppspelningsmedia](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#seventy-five-progress-marker). |
 | `xdm.media.mediaTimed.timePlayed.value` | Det direktuppspelade mediemätverket [Content Time Spent](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#content-time-spent). |
@@ -160,7 +160,7 @@ alloy("event",{
 })
 ```
 
-Web SDK skickar dessa data till Adobe Analytics som kontextdatavariabeln `a.x._atag.search.term`. Du kan sedan använda en bearbetningsregel för att tilldela det kontextdatavariabelvärdet till den önskade Analytics-variabeln, till exempel en `eVar`:
+Webbdatavariabeln SDK skickar data till Adobe Analytics som kontextdatavariabel `a.x._atag.search.term`. Du kan sedan använda en bearbetningsregel för att tilldela det kontextdatavariabelvärdet till den önskade Analytics-variabeln, till exempel en `eVar`:
 
 ![Bearbetningsregel för söktermer](assets/examplerule.png)
 
