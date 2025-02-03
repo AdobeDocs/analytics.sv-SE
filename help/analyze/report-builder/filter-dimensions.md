@@ -6,9 +6,9 @@ feature: Report Builder
 type: Documentation
 solution: Analytics
 exl-id: 43f48abf-951d-4fd1-afd4-58304ee5247b
-source-git-commit: ec14dde5b0e91a9fcfb217a811d36af2eea5f772
+source-git-commit: 06d762614969f3557c8ccf310af266742cde9738
 workflow-type: tm+mt
-source-wordcount: '962'
+source-wordcount: '970'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,11 @@ Som standard returnerar varje dimensionsartikel i tabellen de 10 översta artikl
 
 Ändra dimensionsobjekten som returneras för varje dimension
 
-1. Markera ett datablock och klicka på **[!UICONTROL Edit data block]** på KOMMANDON-panelen.
+1. Klicka på **[!UICONTROL Manage]** och välj ett datablock i listan.
+
+   ![Hantera > Redigera datablock](./assets/manage-edit.png)
+
+1. Klicka på **[!UICONTROL Edit data block]** på KOMMANDOpanelen.
 
 1. Klicka på **[!UICONTROL Next]** för att visa fliken Dimensioner.
 
