@@ -3,10 +3,10 @@ description: Allmän översiktsinformation om Adobe Analytics, inklusive informa
 title: Kom igång för administratörer, analytiker, slutanvändare och utvecklare
 feature: Analytics Basics
 exl-id: 11800de5-224a-4bd2-8cb1-a6318925db71
-source-git-commit: fdd66c9558f070cd760f37a39e5911f0dac22612
+source-git-commit: 59757bf8953c9cd7bc8dff89f29c13396b70696d
 workflow-type: tm+mt
-source-wordcount: '1691'
-ht-degree: 4%
+source-wordcount: '1696'
+ht-degree: 5%
 
 ---
 
@@ -149,3 +149,8 @@ Mer information om hur du skapar analyser i Analysis Workspace finns i [Analysis
 [Med analys-API:er](https://developer.adobe.com/analytics-apis/docs/2.0/) kan du anropa Adobe-servrar direkt för att utföra nästan alla åtgärder som du kan utföra i användargränssnittet.
 
 Du kan skapa rapporter för att utforska, få insikter eller besvara viktiga frågor om dina data. Du kan också hantera komponenter i Adobe Analytics, till exempel när du skapar segment eller beräknade värden.
+
+>[!MORELIKETHIS]
+>
+>[Skapa ett dokument för lösningsdesign](/help/implement/prepare/solution-design.md)
+>
