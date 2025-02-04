@@ -5,17 +5,16 @@ uuid: 51d08531-1c56-46c7-b505-bd8d5e6aa6c1
 feature: Visualizations
 role: User, Admin
 exl-id: f84917a4-2c07-48fb-9af3-d96c537da65c
-source-git-commit: d7a6867796f97f8a14cd8a3cfad115923b329c7c
+source-git-commit: be6056f9e7a64b47ab544594149ebfbe134f1c04
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '319'
 ht-degree: 0%
 
 ---
 
 # Flerdimensionella flöden
 
-Med ett interdimensionellt flöde kan du undersöka användarsökvägar i olika dimensioner. Här är en video om figursättning och flerdimensionellt flöde i Analysis Workspace:
-
+Med ett interdimensionellt flöde kan du undersöka användarsökvägar i olika dimensioner.
 
 >[!BEGINSHADEBOX]
 
@@ -23,51 +22,38 @@ Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Interdimensionell
 
 >[!ENDSHADEBOX]
 
+Den här artikeln visar hur du använder det här flödet för två användningsområden: interaktioner och händelser för mobilappar och hur kampanjer leder till webbbesök.
 
-En dimensionsetikett högst upp i varje Flow-kolumn gör det mer intuitivt att använda flera dimensioner i en flödesvisualisering:
+## Interaktioner och händelser för mobilappar
 
-![](assets/flow.png)
+Dimensionen [!UICONTROL Screen Name] används i det här exempelflödet för att se hur användare använder de olika skärmarna (scenerna) i appen. Den översta skärmen som returneras är **[!UICONTROL luma: content: ios: en: home]**, som är appens startsida:
 
-Vi ska titta på två användningsfall: ett exempel på appanvändning och ett exempel på webbanvändning.
+![Ett flöde som visar det tillagda objektet.](assets/flowapp.png)
 
-## Använd fall ett: app {#app}
+Om du vill utforska interaktionen mellan skärmar och händelsetyper (som att lägga till i kundvagn, inköp med mera) i den här appen drar och släpper du dimensionen **[!UICONTROL Event Types]**:
 
-Dimensionen [!UICONTROL Action Name] lades till i flödet och det översta returnerade objektet var [!UICONTROL ItemAdded]:
+* Ovanför alla tillgängliga steg i flödet för att ersätta dimensionen:
 
-![](assets/multi-dimensional-flow.png)
+  ![Ett flöde som visar siddimensionen som har dragits till flera områden.](assets/flowapp-replace.png)
 
-Om du vill utforska interaktionen mellan skärmar/sidor och åtgärder i den här appen kan du dra siddimensionen till flera platser, beroende på vad du vill utforska:
+* Utanför den aktuella flödesvisualiseringen lägger du till dimensionen:
 
-* Dra den till valfri ände av släppzonen (inuti den svarta trimmade rektangulära zonen som visas) för att **ersätta** det översta resultatet i ändarna:
+  ![Ett flöde som visar siddimensionen som dras till det tomma utrymmet i slutet.](assets/flowapp-add.png)
 
-  ![](assets/multi-dimensional-flow2.png) ![](assets/multi-dimensional-flow3.png)
+Flödesvisualiseringen nedan visar resultatet av att lägga till dimensionen **[!UICONTROL Event Types]**. Visualiseringen ger insikter om hur mobilappsanvändare förflyttar sig mellan olika skärmar i appen innan de lägger till produkter i en kundvagn, stänger appen, presenteras ett erbjudande med mera.
 
-* Dra den till det tomma utrymmet på slutet (lägg märke till den svarta parentesen) för att **lägga till** i visualiseringen:
+![En fLow som visar siddimensionens resultat högst upp i listan.](assets/flowapp-result.png)
 
-  ![](assets/multi-dimensional-flow4.png)
+## Hur kampanjer lockar webbbesök
 
-Här är resultatet om du bestämmer dig för att ersätta ItemScaled-objektet i den högra kolumnen med Page-dimensionen. Det översta resultatet ändras nu till det översta resultatet för siddimensionen:
+Ni vill analysera vilka kampanjer som leder till besök på webbplatsen. Du skapar en flödesvisualisering med **[!UICONTROL Campaign Name]** som dimension
 
-![](assets/multi-dimensional-flow5.png)
+![Namndimension för webbkampanj för flöde](assets/flowweb.png)
 
-Nu kan ni se hur kunderna rör sig genom åtgärder och sidor. Du kan utforska flödet ytterligare genom att klicka på olika noder:
+Du ersätter den sista **[!UICONTROL Campaign Name]**-dimensionen med dimensionen **[!UICONTROL Formatted Page Name]** och lägger till ytterligare en **[!UICONTROL Formatted Page Name]**-dimension i slutet av flödesvisualiseringen.
 
-![](assets/multi-dimensional-flow6.png)
+![Flöda webbkampanjnamn och webbsidesdimension](assets/flowweb-replace.png)
 
-Detta är vad som händer om du lägger till en annan Action Name-dimension i slutet av visualiseringen:
+Du kan hålla muspekaren över något av flödena för att se mer information. Till exempel vilka kampanjer som har resulterat i en kundvagnsutcheckning.
 
-![](assets/multi-dimensional-flow7.png)
-
-Detta ger vissa djupgående insikter och möjlighet att ändra appen som du analyserar.
-
-## Använd fall två: webb {#web}
-
-Det här användningsexemplet visar hur ni kan analysera vilka kampanjer som leder till flest poster på en webbplats.
-
-Dra Campaign Name-dimensionen till ett nytt flöde:
-
-![](assets/multi-dimensional-flow8.png)
-
-Nu vill jag se till vilka sidor dessa kampanjer genererar trafik, så jag drar siddimensionen åt höger om flödesresultaten för att lägga till ytterligare i visualiseringen:
-
-![](assets/multi-dimensional-flow9.png)
+![Flöda webbkampanjens namn och hovring över webbsidans dimension](assets/flowweb-hover.png)

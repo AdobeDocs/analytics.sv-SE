@@ -5,9 +5,9 @@ uuid: fc22b573-2d18-4c29-866c-f317c920d27a
 feature: Visualizations
 role: User, Admin
 exl-id: 3a7d1552-7fae-41ae-8ca5-89800d05d3d4
-source-git-commit: d7a6867796f97f8a14cd8a3cfad115923b329c7c
+source-git-commit: 1ce002a513860ce15dc8a70825d26795fd93eb1d
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '290'
 ht-degree: 0%
 
 ---
@@ -57,13 +57,10 @@ Du kan visa [flödet mellan dimensioner](/help/analyze/analysis-workspace/visual
 
 Varje kolumn kan ha olika dimensioner. Dra en dimension och släpp den i en släppzon för att lägga till den dimensionen i diagrammet.
 
-## Konfigurera en flödesvisualisering
-
-Mer information om hur du konfigurerar en flödesvisualisering finns i [Konfigurera en flödesvisualisering](/help/analyze/analysis-workspace/visualizations/c-flow/create-flow.md).
-
-## Exportera flödesdiagram som en del av Project .CSV-filer {#section_BACD2639A0FC4C49A75398F7D0363D9D}
-
-Flödesdiagram är en del av ett projekts .CSV-fil som du kan skapa genom att gå till **[!UICONTROL Project]** > **[!UICONTROL Download CSV]**. På så sätt kan du analysera flödesresultat i Microsoft Excel (visualiserat som en tabell) eller någon annanstans.
+>[!MORELIKETHIS]
+>
+>[Konfigurera en flödesvisualisering](/help/analyze/analysis-workspace/visualizations/c-flow/create-flow.md).
+>
 
 
 ## Ytterligare funktioner
