@@ -4,7 +4,7 @@ title: Visualisering av kombinationsdiagram
 feature: Visualizations
 role: User, Admin
 exl-id: 08e49857-aa58-4527-bdfd-b1663a75a02b
-source-git-commit: b2e91c9981b328aa34e03dcd3b713438732ea6b1
+source-git-commit: 8234da343ed526eced900e24225e2e1af4319a4d
 workflow-type: tm+mt
 source-wordcount: '568'
 ht-degree: 0%
@@ -25,7 +25,9 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-_I den här artikeln dokumenteras kombinationsvisualiseringen i_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._<br/>_Se [Combo](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/combo-charts) för_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**-versionen av den här artikeln._
+_I den här artikeln dokumenteras kombinationsvisualiseringen i_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._
+
+_Se [Combo](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/combo-charts) för_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**-versionen av den här artikeln._
 
 >[!ENDSHADEBOX]
 
