@@ -4,10 +4,10 @@ audience: all
 user-guide-title: Versionsinformation om Analytics
 breadcrumb-title: Versionsinformation
 user-guide-description: Lär dig mer om nya funktioner och korrigeringar i Adobe Analytics.
-source-git-commit: 206a7f9bed88229142ac6540fbf3fae31dd06689
+source-git-commit: 4b1a58ecfe7e1c31c4f970fdde79f15b8fef7364
 workflow-type: tm+mt
-source-wordcount: '49'
-ht-degree: 32%
+source-wordcount: '52'
+ht-degree: 30%
 
 ---
 
@@ -16,6 +16,7 @@ ht-degree: 32%
 
 + [Versionsinformation om aktuell analys](latest.md)
 + Versionsinformation för föregående analys {#previous}
+   + [Versionsinformation 2025](2025.md)
    + [Versionsinformation 2024](2024.md)
    + [Versionsinformation 2023](2023.md)
    + [Versionsinformation 2022](2022.md)

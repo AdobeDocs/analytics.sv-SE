@@ -3,68 +3,59 @@ title: Aktuella versionsinformation för Adobe Analytics
 description: Visa den aktuella versionsinformationen för Adobe Analytics
 feature: Release Notes
 exl-id: 97d16d5c-a8b3-48f3-8acb-96033cc691dc
-source-git-commit: d7beee25af3551426eb905f0e727545de068b2d9
+source-git-commit: b65da2936efc499df2afbe7c6195f3989ea1a832
 workflow-type: tm+mt
-source-wordcount: '878'
-ht-degree: 1%
+source-wordcount: '598'
+ht-degree: 2%
 
 ---
 
-# Aktuell versionsinformation för Adobe Analytics (januari 2025-utgåvan)
+# Aktuell versionsinformation för Adobe Analytics (februari 2025)
 
-**Senast uppdaterad**: 22 januari 2024
+**Senast uppdaterad**: 19 februari 2024
 
-Versionsanteckningarna gäller den 15 januari till mitten av februari 2025. Adobe Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.md), vilket ger en mer skalbar, fasad metod för driftsättning av funktioner. Därför uppdateras versionsinformationen flera gånger i månaden. Kontrollera dem regelbundet.
+Versionsanteckningarna gäller från den 11 februari till mitten av mars 2025. Adobe Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.md), vilket ger en mer skalbar, fasad metod för driftsättning av funktioner. Därför uppdateras versionsinformationen flera gånger i månaden. Kontrollera dem regelbundet.
 
 ## Nya funktioner eller förbättringar {#features}
 
 | Funktion | Beskrivning | [Startar](releases.md) | [Allmän tillgänglighet](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **Schemaläggning i nya Report Builder** | Schemaläggningen tillåter inte bara att du schemalägger dina nya Report Builder-arbetsböcker. Dessutom kan du hämta metadata för gamla schemalagda aktiviteter när du konverterar äldre arbetsböcker. På så sätt skickar du dina gamla arbetsböcker till nya arbetsböcker och schemalägger dem till samma e-postmeddelanden och på samma plats som de gamla arbetsböckerna. [Läs mer](/help/analyze/report-builder/schedule-reportbuilder.md) |  | 22 januari 2025 |
-| **Förbättringar av rapporter (kallas även mallar) i Analysis Workspace** | Det finns nu olika förbättringar för rapporter (kallas även mallar):<ul><li>Ringde nu [!UICONTROL Templates] (kallas inte längre [!UICONTROL Reports]).</li><li>Förbättrad användarupplevelse för att visa och hitta mallar, inklusive möjligheten att visa mallar i en kolumnvy eller en kortvy.</li><li>Ny, mer intuitiv plats för företagsmallar (finns under **[!UICONTROL Workspace]** > **[!UICONTROL Templates]**).</li><li>Tidigare fanns det åtkomst till företagsmallar från dialogrutan när du skapade ett projekt.</li><li>Det finns fler färdiga mallar.</li></ul>[Läs mer](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/templates/use-templates).<p>Administratörer kan skapa mallar och spara dem så att andra kan använda dem i sina inloggningsföretag. [Läs mer](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/templates/create-templates) | 15 januari 2025 | 30 januari 2025 |
-| **Kvarhållningsperiod för transaktions-ID** | Kvarhållningsperioden för transaktions-ID på 90 dagar kommer att förlängas till 25 månader i februari 2025. Variabeln `transactionID` identifierar en transaktion unikt så att träffen kan koppla till data som överförts via datakällor. (Dokumentationslänkar följer) |  | 11 februari 2025 |
+| **Kvarhållningsperiod för transaktions-ID** | Kvarhållningsperioden för transaktions-ID på 90 dagar kommer att förlängas till 25 månader. Variabeln `transactionID` identifierar en transaktion unikt så att träffen kan koppla till data som överförts via datakällor. Läs mer [här](https://experienceleague.adobe.com/en/docs/analytics/implementation/vars/page-vars/transactionid) och [här](https://experienceleague.adobe.com/en/docs/analytics/import/data-sources/transactionid). |  | 20 februari 2025 |
+| **API-referens för datafeeds** | [Referens](https://adobedocs.github.io/analytics-2.0-apis/?urls.primaryName=Data%20Feeds%20APIs) för API:t för datafeeds är nu tillgänglig. |  | 30 januari 2025 |
+| **API:t för livesystem - klientimplementering** | Använd Livesream-klientimplementeringen för att förbruka data från Livestream. [Läs mer](https://developer.adobe.com/analytics-apis/docs/2.0/guides/endpoints/livestream/clientcode/) |  | 18 februari 2025 |
+| **Uppdatera till klassificerings-API** | Du kan nu ta bort enskilda klassificeringsfält eller nycklar från servern. Detta är ett alternativ till att ta bort en hel klassificeringsdatamängd med metoden DELETE. [Läs mer](https://developer.adobe.com/analytics-apis/docs/2.0/guides/endpoints/classifications/remove-values/) |  | 18 februari 2025 |
+
 
 ## Korrigeringar i Adobe Analytics
 
-**A4T**: AN-355602; AN-365988
-**Activity Map**: AN-365320
-**Admin Console**: AN-363884
-**Administratörsverktyg**: AN-356747; AN-358776
-**Advertising Analytics**: AN-355488
-**Analysis Workspace**: AN-345318; AN-354801; AN-357052; AN-358975; AN-362886; AN-363831; AN-33 64124; AN-365257; AN-365319; AN-365462; AN-366194
-**Analytics 1.4 API**: AN-358059
-**Klassificeringar**: AN-360049; AN-360424; AN-360745; AN-362208; AN-362345; AN-362560; AN-3 62576; AN-362633; AN-362653; AN-362762; AN-362815; AN-362881; AN-362885; AN-36 2973; AN-363343; AN-36358; AN-363860; AN-364239; AN-364480; AN-364451; AN-364 528; AN-364548; AN-364552; AN-364585; AN-364598; AN-364643; AN-364715; AN-3649 AN-364997; AN-365081; AN-365189; AN-365197; AN-365203; AN-365431; AN-36564 7; AN-365794; AN-366546
-**Komponentmigrering**: AN-362236; AN-365429
-**Bidragsanalys**: AN-360146
-**Dataflöden**: AN-356997; AN-362470; AN-362498; AN-362775; AN-363323; AN-363413; AN-3 363569; AN-364063; AN-364142; AN-364294; AN-364298; AN-364325; AN-364367; AN-3 64594; AN-364995; AN-365127; AN-365272; AN-365519; AN-365760; AN-366152;
-**API för datareparation**: AN-362773; AN-362874
-**Datakällor**: AN-360745; AN-362202; AN-364566
-**Data Warehouse**: AN-361447; AN-362616; AN-364524; AN-365108
-**Mobilapp**: AN-362856; AN-365270
-**Överlagringsaviseringar**: AN-35594; AN-364547
-**Plattform**: AN-358914; AN-360205; AN-362990; AN-364550; AN-365454; AN-365485
-**Report Builder**: AN-363478; AN-364433; AN-365610
-**Rapportera aktivitetshanteraren**: AN-362440
-**Segmentering**: AN-359921
-**VISTA-regler**: AN-362927
+**Analysis Workspace**: AN-359974; AN-366212; AN-368460
+**Klassifikationer**: AN-367186; AN-367328; AN-368548
+**Komponentmigrering**: AN-364529; AN-366398; AN-367509;
+**Dataflöden**: AN-365685; AN-366745; AN-367256; AN-367349; AN-368363
+**Data Warehouse**: AN-368178; AN-368331;
+**Mobilapp**: AN-367137
+**Plattform**: AN-351924; AN-365540; AN-365866; AN-366898; AN-367856; AN-367933
+**Report Builder**: AN-366456; AN-366655;
+**Virtuella rapportsviter**: AN-367411
+**VISTA-regler**: AN-365331
 
 ## Viktiga meddelanden för Adobe Analytics-administratörer {#admin}
 
 | Meddelande | Datum tillagt eller uppdaterat | Beskrivning |
 | ----------- | ---------- | ---------- |
-| **Icke-kampanjkunder förlorar åtkomst till utlösare** | 16 oktober 2023 | Den 30 januari 2025 förlorar Adobe Analytics-kunder som inte har någon Adobe Campaign-licens åtkomsten till möjligheten att konfigurera och använda [utlösare](https://experienceleague.adobe.com/en/docs/core-services/interface/services/triggers). Kunderna måste antingen köpa Campaign, eller planera för att sluta använda Triggers, eller titta på andra Adobe-verktyg som erbjuder Triggers-funktioner. |
+| **Icke-kampanjkunder förlorar åtkomst till utlösare** | 16 oktober 2023 | Den 30 januari 2025 förlorade Adobe Analytics-kunder som inte har någon Adobe Campaign-licens åtkomsten till möjligheten att konfigurera och använda [utlösare](https://experienceleague.adobe.com/en/docs/core-services/interface/services/triggers). Kunderna måste antingen köpa Campaign, eller planera för att sluta använda Triggers, eller undersöka andra Adobe-verktyg som erbjuder Triggers-funktioner. |
 
 ## EOL-meddelanden (End-of-life) {#eol}
 
 | EOL-produkt eller -funktion | Datum tillagt eller uppdaterat | Beskrivning |
 | --- | --- | --- |
-| **Migrering till autentiseringsuppgifter för Adobe I/O OAuth Server-till-Server** | 17 januari 2025 | Adobe Analytics API- och LiveStream-kunder som använder Adobe I/O JWT-autentiseringsuppgifter måste migrera till autentiseringsuppgifterna för Adobe I/O OAuth Server-till-Server senast den **30 juni 2025**. Adobe I/O tillåter inte att nya JWT-autentiseringsuppgifter skapas från och med 1 maj 2024. Kunder som använder JWT måste skapa en ny OAuth Server-till-Server-autentiseringsuppgift eller migrera sina befintliga JWT-autentiseringsuppgifter till en OAuth Server-till-Server-autentiseringsuppgift. Kunderna måste även uppdatera sina klientprogram för att kunna använda de nya autentiseringsuppgifterna för OAuth Server-till-Server. <ul><li>[Migrerar från JWT-autentiseringsuppgifter ](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/)</li><li>[Implementeringsguide för nya och gamla program med OAuth](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/)<li>[Använder de nya autentiseringsuppgifterna för OAuth Server-till-server](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/)</li><li>[Vanliga frågor](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/faqs/)</li></ul> |
+| **Migrering till autentiseringsuppgifter för Adobe I/O OAuth Server-till-Server** | 17 januari 2025 | Adobe Analytics API- och LiveStream-kunder som använder Adobe I/O JWT-autentiseringsuppgifter måste migrera till Adobe I/O OAuth Server-till-Server-autentiseringsuppgifter senast den **30 juni 2025**. Adobe I/O tillåter inte att nya JWT-autentiseringsuppgifter skapas från och med 1 maj 2024. Kunder som använder JWT måste skapa en ny OAuth Server-till-Server-autentiseringsuppgift eller migrera sina befintliga JWT-autentiseringsuppgifter till en OAuth Server-till-Server-autentiseringsuppgift. Kunderna måste även uppdatera sina klientprogram för att kunna använda de nya autentiseringsuppgifterna för OAuth Server-till-Server. <ul><li>[Migrerar från JWT-autentiseringsuppgifter ](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/)</li><li>[Implementeringsguide för nya och gamla program med OAuth](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/)<li>[Använder de nya autentiseringsuppgifterna för OAuth Server-till-server](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/)</li><li>[Vanliga frågor](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/faqs/)</li></ul> |
 | **EOL för Adobe Analytics API (version 1.4)** | 17 juli 2024 | Den **12 augusti 2026** kommer följande API-tjänster för Analytics Legacy att ha nått slutet på sin livstid och stängas, och aktuella integreringar som byggts med dessa tjänster kommer att sluta fungera:<ul><li>Adobe Analytics API (version 1.4)</li><li>Adobe Analytics WSSE-autentisering</li></ul><p>Integreringar som använder Adobe Analytics API (version 1.4) måste migrera till [Adobe Analytics 2.0 API](https://developer.adobe.com/analytics-apis/docs/2.0/) medan WSSE-integreringar måste migrera till ett OAuth-baserat autentiseringsprotokoll i [Adobe Developer Console](https://developer.adobe.com/console).</p><p>Se [Vanliga frågor om Adobe Analytics 1.4 API EOL ](/help/admin/c-admin-api/c-admin-14-api-eol.md) för svar på vanliga frågor och ytterligare vägledning.</p> |
 
 
 ## AppMeasurement
 
-De senaste uppdateringarna av AppMeasurement (version 2.26.0) finns i [AppMeasurementet för JavaScript versionsinformation](https://experienceleague.adobe.com/docs/analytics/implementation/appmeasurement-updates.html).
+De senaste uppdateringarna av AppMeasurement-versioner (version 2.26.0) finns i [Versionsinformation för AppMeasurement för JavaScript](https://experienceleague.adobe.com/docs/analytics/implementation/appmeasurement-updates.html).
 
 
 ## Relaterade resurser
