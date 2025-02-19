@@ -3,9 +3,9 @@ title: Hantera dataflöden
 description: Lär dig navigera i dataflödesgränssnittet. Ta reda på hur du skapar, redigerar och visar en datafeed.
 feature: Data Feeds
 exl-id: 4d4f0062-e079-48ff-9464-940c6425ad54
-source-git-commit: 08e29da4847e8ef70bd4435949e26265d770f557
+source-git-commit: e7808f5cd4c93cb6158f4fa4c1534b9dc71905b1
 workflow-type: tm+mt
-source-wordcount: '1166'
+source-wordcount: '1222'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ Med knappen [!UICONTROL Add] kan du skapa en ny feed. Mer information finns i [S
 
    När du uppdaterar avsnittet [!UICONTROL **Mål**] för en datafeed som du redigerar kan du välja ett annat konto och en annan plats att använda för den nya datafeeden i listrutorna [!UICONTROL **Konto**] och [!UICONTROL **Plats**] .
 
-   Konton och platser kan redigeras på det sätt som beskrivs i [Konfigurera molnimport- och exportkonton](/help/components/locations/configure-import-accounts.md) och [Konfigurera molnimport- och exportplatser](/help/components/locations/configure-import-locations.md). Om du redigerar ett konto eller en plats påverkas alla objekt som är kopplade till kontot eller platsen.
+   Konton och platser kan redigeras på det sätt som beskrivs i [Konfigurera molnimport- och exportkonton](/help/components/locations/configure-import-accounts.md) och [Konfigurera molnimport- och exportplatser](/help/components/locations/configure-import-locations.md). När du redigerar ett konto eller en plats påverkas alla objekt som är kopplade till kontot eller platsen.
 
    I tidigare versioner av dataflödeshanteraren kunde du skapa FTP-, SFTP-, S3- och Azure-blobmål. Destinationer som skapades i dessa tidigare versioner av dataflödeshanteraren kan inte redigeras eller kopieras.
 
@@ -62,7 +62,7 @@ Med knappen [!UICONTROL Add] kan du skapa en ny feed. Mer information finns i [S
 
    * Börja skriva namnet på en feed i sökfältet. Endast de feeds som matchar visas i listan över tillgängliga feeds.
 
-   * Klicka på filterikonen längst till vänster om du vill visa eller dölja filteralternativen. Filter ordnas efter kategori. Du kan komprimera eller utöka filtreringskategorier. Markera kryssrutan bredvid de filter du vill använda.
+   * Klicka på filterikonen längst till vänster om du vill visa eller dölja filteralternativen. Filter ordnas efter kategori. Du kan komprimera eller utöka filtreringskategorier. Markera kryssrutan bredvid de filter som du vill använda.
 
 ![Filter](assets/filters.png)
 
@@ -84,17 +84,21 @@ Med knappen [!UICONTROL Add] kan du skapa en ny feed. Mer information finns i [S
 
 1. Markera kryssrutan bredvid den datafeed som du vill kopiera och välj sedan [!UICONTROL **Kopiera**].
 
-   Tar dig till [skapa en ny feed](create-feed.md) med alla inställningar för den aktuella feeden. Det här alternativet är inte synligt om mer än en datafeed har valts.
+   Detta gör att du [skapar en ny feed](create-feed.md) med alla inställningar för den aktuella feeden. Det här alternativet är inte synligt om mer än en datafeed har valts.
 
    När du uppdaterar avsnittet [!UICONTROL **Mål**] för en datafeed som du kopierar kan du välja ett annat konto och en annan plats att använda för den nya datafeeden i listrutorna [!UICONTROL **Konto**] och [!UICONTROL **Plats**] .
 
-   Konton och platser kan redigeras på det sätt som beskrivs i [Konfigurera molnimport- och exportkonton](/help/components/locations/configure-import-accounts.md) och [Konfigurera molnimport- och exportplatser](/help/components/locations/configure-import-locations.md). Om du redigerar ett konto eller en plats påverkas alla objekt som är kopplade till kontot eller platsen.
+   Konton och platser kan redigeras på det sätt som beskrivs i [Konfigurera molnimport- och exportkonton](/help/components/locations/configure-import-accounts.md) och [Konfigurera molnimport- och exportplatser](/help/components/locations/configure-import-locations.md). När du redigerar ett konto eller en plats påverkas alla objekt som är kopplade till kontot eller platsen.
 
    I tidigare versioner av dataflödeshanteraren kunde du skapa FTP-, SFTP-, S3- och Azure-blobmål. Destinationer som skapades i dessa tidigare versioner av dataflödeshanteraren kan inte redigeras eller kopieras.
 
 ## Pausa en datafeed
 
-Du kan stoppa bearbetningen för feeden och ange dess status till [!UICONTROL Inactive].
+När du pausar en datafeed avbryts bearbetningen av feeden och status anges till [!UICONTROL Inactive].
+
+När du återaktiverar flödet efter att ha pausat det bearbetas data under den tid som flödet pausas för återfyllningsflöden, men inte för liveflöden. Mer information finns i [Aktivera en datafeed](#activate-a-data-feed).
+
+Så här pausar du en datafeed:
 
 1. I Adobe Analytics väljer du [!UICONTROL **Admin**] > [!UICONTROL **Dataflöden**].
 
@@ -104,17 +108,11 @@ Du kan stoppa bearbetningen för feeden och ange dess status till [!UICONTROL In
 
 Du kan aktivera inaktiva feeds.
 
-Förifyllda feeds (feeds som endast bearbetar historiska data) återupptar bearbetningen av data från där de stoppades och fyller eventuellt inte i alla datum om det behövs. Live-flöden återupptar också databearbetning från där de stoppades.
+När en feed återaktiveras kanske data inte bearbetas automatiskt så länge som den var inaktiv. Huruvida data bearbetas beror på om det är en återfyllnadsfeed eller en livefeed:
 
->[!AVAILABILITY]
->
->Följande ändring av hur live-flöden återupptar databearbetning finns i den begränsade testfasen av releasen:
-> 
->**Live-flöden återupptar databearbetning från den aktuella tiden.**
->
->Den här ändringen kanske inte är tillgänglig än i din miljö.
->
->Den här anteckningen tas bort när den här ändringen är allmänt tillgänglig. Mer information om Analytics-releaser finns i [Adobe Analytics-funktionsreleaser](/help/release-notes/releases.md).
+* **Föråldringsfeeds** (feeds som endast bearbetar historiska data) återupptar bearbetningen av data från där de stoppades och fyller i eventuella datum vid behov.
+
+* **Live-flöden** återupptar databearbetningen från den tidpunkt de aktiveras. Detta innebär att data inte bearbetas under den tid som flödet pausades till den tidpunkt det aktiverades. Om du behöver data under den här tidsperioden måste du skapa en bakgrundsfyllning.
 
 Så här aktiverar du en datafeed:
 
