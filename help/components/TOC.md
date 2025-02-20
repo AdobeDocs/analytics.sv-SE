@@ -4,7 +4,7 @@ audience: end-user
 user-guide-title: Komponenthandbok för Analytics
 breadcrumb-title: Användarhandbok om komponenter
 user-guide-description: Hantera data med komponenter som segment, beräknade värden, virtuella rapportsviter, marknadsföringskanaler och klassificeringar. Lär dig mer om Analytics över flera enheter.
-source-git-commit: 2b8688da1400857b7f5093197d06c04681cd87ff
+source-git-commit: 5bf3f561c471410e4ce1ca576ba34ea3849b0325
 workflow-type: tm+mt
 source-wordcount: '803'
 ht-degree: 7%
@@ -17,10 +17,10 @@ ht-degree: 7%
 + [Komponenthandbok för Analytics](home.md)
 + [Versionsinformation för analyser](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html)
 + Dimensioner {#dimensions}
-   + [Översikt över Dimensioner](dimensions/overview.md)
-   + [Kompatibilitet med Dimensioner](dimensions/compatibility.md)
+   + [Översikt över dimensioner](dimensions/overview.md)
+   + [Dimension-kompatibilitet](dimensions/compatibility.md)
    + [Activity Map Link](dimensions/activity-map-link.md)
-   + [Activity Map Link per region](dimensions/activity-map-link-by-region.md)
+   + [Activity Map Link by Region](dimensions/activity-map-link-by-region.md)
    + [Sida för Activity Map](dimensions/activity-map-page.md)
    + [Activity Map](dimensions/activity-map-region.md)
    + [Godkännande av annonsplattform](dimensions/ad-consent.md)
@@ -53,7 +53,7 @@ ht-degree: 7%
    + [Hämta länk](dimensions/download-link.md)
    + [Postdimensioner](dimensions/entry-dimensions.md)
    + [eVar](dimensions/evar.md)
-   + [eVar (varuexponering)](dimensions/evar-merchandising.md)
+   + [eVar (Merchandising)](dimensions/evar-merchandising.md)
    + [Avsluta dimensioner](dimensions/exit-dimensions.md)
    + [Avsluta länk](dimensions/exit-link.md)
    + [Första beröringskanalen](dimensions/first-touch-channel.md)
@@ -172,7 +172,7 @@ ht-degree: 7%
    + [Unika besökare](metrics/unique-visitors.md)
    + [Enheter](metrics/units.md)
    + [Röstmått](metrics/voice-metrics.md)
-   + [Besökare med Experience Cloud-ID](metrics/visitors-with-ecid.md)
+   + [Besökare med Experience Cloud ID](metrics/visitors-with-ecid.md)
    + [Besök](metrics/visits.md)
 + Segmentering {#segmentation}
    + [Analyssegmentering](segmentation/seg-home.md)
@@ -187,7 +187,7 @@ ht-degree: 7%
       + [Tagga segment](segmentation/segmentation-workflow/seg-tag.md)
       + [Godkänn segment](segmentation/segmentation-workflow/seg-approve.md)
       + [Dela segment](segmentation/segmentation-workflow/t-seg-share.md)
-      + [Publish segment i Experience Cloud](segmentation/segmentation-workflow/seg-publish.md)
+      + [Publicera segment i Experience Cloud](segmentation/segmentation-workflow/seg-publish.md)
       + [Markera och tillämpa segment](segmentation/segmentation-workflow/t-seg-apply.md)
       + [Filtrera segment](segmentation/segmentation-workflow/t-seg-filter.md)
       + [Markera segment som favoriter](segmentation/segmentation-workflow/t-seg-favorite.md)
