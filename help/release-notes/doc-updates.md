@@ -5,7 +5,7 @@ short-title: Analytics documentation updates
 feature: Release Notes
 exl-id: fe8e3c4c-6782-46f7-8e28-4f8f54807788
 mini-toc-levels: 3
-source-git-commit: 372792a99d124e6f09eaf0f75310f3a0125c3461
+source-git-commit: c86bbff8e9b23cafdf2bd5a9e980be6d70ce3c5e
 workflow-type: tm+mt
 source-wordcount: '6168'
 ht-degree: 18%
@@ -27,9 +27,9 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | --- | --- |
 | **Februari 2025** |  |
 | Uppdaterad information om att pausa och återaktivera en datafeed | När [pausar och återaktiverar en datafeed](/help/export/analytics-data-feed/df-manage-feeds.md#activate-a-data-feed) klargjordes beteendet för livefeeds. Databearbetningen sker inte från den tidpunkt då flödet pausas till den tidpunkt då det återaktiveras. |
-| Lagringsperiod för ändrat transaktions-ID   Kvarhållningsperioden för transaktions-ID på 90 dagar förlängdes till 25 månader. Variabeln transactionID identifierar en transaktion unikt så att träffen kan koppla till data som överförs via datakällor. Läs mer [här](https://experienceleague.adobe.com/en/docs/analytics/implementation/vars/page-vars/transactionid?lang=en) och [här](https://experienceleague.adobe.com/en/docs/analytics/import/data-sources/transactionid?lang=en). |
+| Lagringsperiod för ändrat transaktions-ID | Kvarhållningsperioden för transaktions-ID på 90 dagar förlängdes till 25 månader. Variabeln transactionID identifierar en transaktion unikt så att träffen kan koppla till data som överförs via datakällor. Läs mer [här](https://experienceleague.adobe.com/en/docs/analytics/implementation/vars/page-vars/transactionid?lang=en) och [här](https://experienceleague.adobe.com/en/docs/analytics/import/data-sources/transactionid?lang=en). |
 | Livesream API - klientimplementering | Använd [Livesream-klientimplementeringen](https://developer.adobe.com/analytics-apis/docs/2.0/guides/endpoints/livestream/clientcode/) för att förbruka data från Livesream. |
-| Uppdatera till klassificerings-API \ Du kan nu [ta bort enskilda klassificeringsfält eller nycklar från servern](https://developer.adobe.com/analytics-apis/docs/2.0/guides/endpoints/classifications/remove-values/). Detta är ett alternativ till att ta bort en hel klassificeringsdatamängd med metoden DELETE. |
+| Uppdatera till klassificerings-API | Du kan nu [ta bort enskilda klassificeringsfält eller -nycklar från servern](https://developer.adobe.com/analytics-apis/docs/2.0/guides/endpoints/classifications/remove-values/). Detta är ett alternativ till att ta bort en hel klassificeringsdatamängd med metoden DELETE. |
 | **Januari 2025** |  |
 | API-referens för dataflöden | Referensen [för API:t för datafeeds ](https://adobedocs.github.io/analytics-2.0-apis/?urls.primaryName=Data%20Feeds%20APIs) är nu tillgänglig. |
 | Ny dokumentation om schemaläggning i nya Report Builder | [Schemaläggning](https://experienceleague.adobe.com/en/docs/analytics/analyze/report-builder/schedule-reportbuilder) tillåter inte bara att du schemalägger nya Report Builder-arbetsböcker. Dessutom kan du hämta metadata för gamla schemalagda aktiviteter när du konverterar äldre arbetsböcker. |
