@@ -4,9 +4,9 @@ title: Mätvärden i Analysis Workspace
 feature: Metrics
 role: User, Admin
 exl-id: 0a5dc709-c4e8-412a-a6cf-37b85d811f65
-source-git-commit: 34c88ddd5537d9265c20b0dc6f3aff801fcedcbf
+source-git-commit: 3bc8988346f894aedb30988f2d386afe65584537
 workflow-type: tm+mt
-source-wordcount: '719'
+source-wordcount: '712'
 ht-degree: 0%
 
 ---
@@ -84,7 +84,7 @@ Så här skapar du ett beräknat mått för ett enskilt projekt:
 
    * [!UICONTROL **Kolumn min**]: Skapar en ny kolumn som visar det minsta värdet i uppsättningen med dimensionselement för kolumnen. Detta använder funktionen [Kolumnminimum](/help/components/c-calcmetrics/cm-reference/cm-functions.md#column-minimum).
 
-   * [!UICONTROL **Kolumnsumma**]:Skapar en ny kolumn som lägger till alla numeriska värden för ett mått i en kolumn (över elementen i en dimension). Detta använder funktionen [Kolumnsumma](/help/components/c-calcmetrics/cm-reference/cm-functions.md#column-sum).
+   * [!UICONTROL **Kolumnsumma**]: Skapar en ny kolumn som lägger till alla numeriska värden för ett mått i en kolumn (över elementen i en dimension). Detta använder funktionen [Kolumnsumma](/help/components/c-calcmetrics/cm-reference/cm-functions.md#column-sum).
 
    När två kolumner är markerade är följande alternativ tillgängliga:
 
@@ -96,17 +96,17 @@ Så här skapar du ett beräknat mått för ett enskilt projekt:
 
    * [!UICONTROL **Multiplicera**]: Skapar en ny kolumn som multiplicerar värdena för de två markerade kolumnerna.
 
-   * [!UICONTROL **Procentuell ändring**]: Skapar en ny kolumn som visar procentändringen för de två markerade kolumnerna.
+   * [!UICONTROL **Procentuell ändring**]: Skapar en ny kolumn som visar procentändringen mellan de två markerade kolumnerna.
 
 [Beräknade mått: Mätvärden utan implementering](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/components/calculated-metrics/calculated-metrics-implementationless-metrics.html) (3:42)
 
 ## Jämför mätvärden med olika attribueringsmodeller
 
-Om du snabbt och enkelt vill jämföra en attribueringsmodell med en annan högerklickar du på ett mätvärde och väljer **[!UICONTROL Compare Attribution Models]**:
+Om du snabbt vill jämföra en attribueringsmodell med en annan högerklickar du på ett mått och väljer **[!UICONTROL Compare Attribution Models]**:
 
 ![Jämför attribuering](assets/compare-attribution.png)
 
-Med den här genvägen kan du snabbt och enkelt jämföra en attribueringsmodell med en annan utan att dra i ett mätresultat och konfigurera det två gånger.
+Med den här genvägen kan du jämföra en attribueringsmodell med en annan utan att dra i ett mätresultat och konfigurera det två gånger.
 
 ## Använd funktionen [!UICONTROL cumulative average] för att använda måttutjämning
 
