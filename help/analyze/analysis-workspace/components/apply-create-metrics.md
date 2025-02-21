@@ -4,9 +4,9 @@ title: Mätvärden i Analysis Workspace
 feature: Metrics
 role: User, Admin
 exl-id: 0a5dc709-c4e8-412a-a6cf-37b85d811f65
-source-git-commit: d7a6867796f97f8a14cd8a3cfad115923b329c7c
+source-git-commit: 34c88ddd5537d9265c20b0dc6f3aff801fcedcbf
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '719'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Adobe erbjuder flera typer av mätvärden som kan användas i Analysis Workspace
 
   ![Beräknat mått](assets/calculated-metric.png)
 
-* **Beräknade måttmallar**: Adobe-definierade mått som beter sig på liknande sätt som beräknade mått. Du kan använda dem som de är i Workspace-projekt eller spara en kopia för att anpassa dess logik. Mallar för beräknade mätvärden visar en Adobe-ikon i listan över tillgängliga komponenter.
+* **Beräknade mätmallar**: Adobe-definierade mätvärden som beter sig på liknande sätt som beräknade mätvärden. Du kan använda dem som de är i Workspace-projekt eller spara en kopia för att anpassa dess logik. Mallar för beräknade mätvärden visar en Adobe-ikon i listan över tillgängliga komponenter.
 
   ![Mallen Beräknade mått](assets/calculated-metric-template.png)
 
@@ -42,11 +42,9 @@ Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Använd mätvärd
 
 >[!ENDSHADEBOX]
 
-
-
 ## Skapa beräknade mått
 
-Beräknade mätvärden gör att du enkelt kan se hur mätvärden relaterar till varandra med enkla operatorer eller statistiska funktioner.
+Beräknade mätvärden gör att du enkelt kan se hur mätvärdena relaterar till varandra med hjälp av enkla operatorer eller statistiska funktioner.
 
 Det finns flera sätt att skapa beräknade mått. Den metod du väljer avgör om det beräknade måttet är tillgängligt från komponentlistan i alla projekt, eller bara i det projekt där det skapades.
 
@@ -64,21 +62,41 @@ Så här skapar du ett beräknat mått för ett enskilt projekt:
 
 1. Öppna det projekt i Analysis Workspace där du vill skapa det beräknade måttet.
 
-1. Högerklicka på en eller flera rubrikkolumnceller i en frihandstabell och välj sedan **[!UICONTROL Create metric from selection]**
+1. Högerklicka på kolumnrubriken i en kolumn i en frihandstabell.
+
+   eller
+
+   Markera två kolumner samtidigt som du håller ned Skift och högerklicka sedan på en av de markerade kolumnerna.
+
+1. Välj **[!UICONTROL Create metric from selection]**
 
    ![Markering av panelen Workspace Skapa från markering](assets/create-metric-from-selection.png)
 
-1. Om du bara vill skapa ett beräknat mått för det här projektet väljer du bland följande alternativ:
+1. Om du vill skapa ett beräknat mått för endast det här projektet väljer du bland de tillgängliga alternativen.
 
-   * [!UICONTROL **Dela**]
+   När en kolumn är markerad är följande alternativ tillgängliga:
 
-   * [!UICONTROL **Subtrahera**]
+   * [!UICONTROL **Medel**]: Skapar en ny kolumn som visar medelvärdet i uppsättningen med dimensionselement för kolumnen. Detta använder funktionen [Medel](/help/components/c-calcmetrics/cm-reference/cm-functions.md#mean).
 
-   * [!UICONTROL **Lägg till**]
+   * [!UICONTROL **Median**]: Skapar en ny kolumn som visar medianvärdet i uppsättningen med dimensionselement för kolumnen. Detta använder funktionen [Median](/help/components/c-calcmetrics/cm-reference/cm-functions.md#median).
 
-   * [!UICONTROL **Multiplicera**]
+   * [!UICONTROL **Kolumn max**]: Skapar en ny kolumn som visar det största värdet i uppsättningen med dimensionselement för kolumnen. Detta använder funktionen [Kolumnmaximum](/help/components/c-calcmetrics/cm-reference/cm-functions.md#column-maximum).
 
-   Om du vill öppna verktyget för beräknade mått och skapa det beräknade måttet för alla projekt väljer du [!UICONTROL **Öppna i verktyget för beräknade mått**] och fortsätter sedan med [Build metrics](/help/components/c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-build-metrics.md).
+   * [!UICONTROL **Kolumn min**]: Skapar en ny kolumn som visar det minsta värdet i uppsättningen med dimensionselement för kolumnen. Detta använder funktionen [Kolumnminimum](/help/components/c-calcmetrics/cm-reference/cm-functions.md#column-minimum).
+
+   * [!UICONTROL **Kolumnsumma**]:Skapar en ny kolumn som lägger till alla numeriska värden för ett mått i en kolumn (över elementen i en dimension). Detta använder funktionen [Kolumnsumma](/help/components/c-calcmetrics/cm-reference/cm-functions.md#column-sum).
+
+   När två kolumner är markerade är följande alternativ tillgängliga:
+
+   * [!UICONTROL **Dela upp**]: Skapar en ny kolumn som delar värdena för de två markerade kolumnerna.
+
+   * [!UICONTROL **Subtrahera**]: Skapar en ny kolumn som subtraherar värdena för de två markerade kolumnerna.
+
+   * [!UICONTROL **Lägg till**]: Skapar en ny kolumn som lägger till värdena för de två markerade kolumnerna.
+
+   * [!UICONTROL **Multiplicera**]: Skapar en ny kolumn som multiplicerar värdena för de två markerade kolumnerna.
+
+   * [!UICONTROL **Procentuell ändring**]: Skapar en ny kolumn som visar procentändringen för de två markerade kolumnerna.
 
 [Beräknade mått: Mätvärden utan implementering](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/components/calculated-metrics/calculated-metrics-implementationless-metrics.html) (3:42)
 
