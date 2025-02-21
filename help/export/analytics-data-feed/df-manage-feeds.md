@@ -3,7 +3,7 @@ title: Hantera dataflöden
 description: Lär dig navigera i dataflödesgränssnittet. Ta reda på hur du skapar, redigerar och visar en datafeed.
 feature: Data Feeds
 exl-id: 4d4f0062-e079-48ff-9464-940c6425ad54
-source-git-commit: e7808f5cd4c93cb6158f4fa4c1534b9dc71905b1
+source-git-commit: 5bf3f561c471410e4ce1ca576ba34ea3849b0325
 workflow-type: tm+mt
 source-wordcount: '1222'
 ht-degree: 0%
