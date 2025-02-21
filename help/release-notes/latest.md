@@ -3,16 +3,16 @@ title: Aktuella versionsinformation för Adobe Analytics
 description: Visa den aktuella versionsinformationen för Adobe Analytics
 feature: Release Notes
 exl-id: 97d16d5c-a8b3-48f3-8acb-96033cc691dc
-source-git-commit: 5bf3f561c471410e4ce1ca576ba34ea3849b0325
+source-git-commit: 924f5f670d2f29269a5ba6623079e839f1fe8122
 workflow-type: tm+mt
-source-wordcount: '598'
+source-wordcount: '700'
 ht-degree: 2%
 
 ---
 
 # Aktuell versionsinformation för Adobe Analytics (februari 2025)
 
-**Senast uppdaterad**: 19 februari 2024
+**Senast uppdaterad**: 21 februari 2024
 
 Versionsanteckningarna gäller från den 11 februari till mitten av mars 2025. Adobe Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.md), vilket ger en mer skalbar, fasad metod för driftsättning av funktioner. Därför uppdateras versionsinformationen flera gånger i månaden. Kontrollera dem regelbundet.
 
@@ -20,7 +20,7 @@ Versionsanteckningarna gäller från den 11 februari till mitten av mars 2025. A
 
 | Funktion | Beskrivning | [Startar](releases.md) | [Allmän tillgänglighet](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **Kvarhållningsperiod för transaktions-ID** | Kvarhållningsperioden för transaktions-ID på 90 dagar kommer att förlängas till 25 månader. Variabeln `transactionID` identifierar en transaktion unikt så att träffen kan koppla till data som överförts via datakällor. Läs mer [här](https://experienceleague.adobe.com/en/docs/analytics/implementation/vars/page-vars/transactionid) och [här](https://experienceleague.adobe.com/en/docs/analytics/import/data-sources/transactionid). |  | 20 februari 2025 |
+| **Kvarhållningsperiod för transaktions-ID** | Kvarhållningsperioden för transaktions-ID på 90 dagar förlängdes till 25 månader. Variabeln `transactionID` identifierar en transaktion unikt så att träffen kan koppla till data som överförts via datakällor. Läs mer [här](https://experienceleague.adobe.com/en/docs/analytics/implementation/vars/page-vars/transactionid) och [här](https://experienceleague.adobe.com/en/docs/analytics/import/data-sources/transactionid). |  | 20 februari 2025 |
 | **API-referens för datafeeds** | [Referens](https://adobedocs.github.io/analytics-2.0-apis/?urls.primaryName=Data%20Feeds%20APIs) för API:t för datafeeds är nu tillgänglig. |  | 30 januari 2025 |
 | **API:t för livesystem - klientimplementering** | Använd Livesream-klientimplementeringen för att förbruka data från Livestream. [Läs mer](https://developer.adobe.com/analytics-apis/docs/2.0/guides/endpoints/livestream/clientcode/) |  | 18 februari 2025 |
 | **Uppdatera till klassificerings-API** | Du kan nu ta bort enskilda klassificeringsfält eller nycklar från servern. Detta är ett alternativ till att ta bort en hel klassificeringsdatamängd med metoden DELETE. [Läs mer](https://developer.adobe.com/analytics-apis/docs/2.0/guides/endpoints/classifications/remove-values/) |  | 18 februari 2025 |
@@ -43,6 +43,7 @@ Versionsanteckningarna gäller från den 11 februari till mitten av mars 2025. A
 
 | Meddelande | Datum tillagt eller uppdaterat | Beskrivning |
 | ----------- | ---------- | ---------- |
+| **Kommande uppdatering av kontextdatafältet för analyser`a.locale`** | 21 februari 2025 | Den 5 mars 2025 uppdateras Analytics-kontextdatafältet `a.locale` när data samlas in via Experience Edge. När data skickas till Adobe Analytics med Experience Edge fylls analysfälten i baserat på en mappning av XDM-fält. Mappningen för `c.a.locale` refererar till ett XDM-fält som inte är standard, `xdm.environment.language`. Det här fältet uppdateras för att referera till rätt fält, `xdm.environment._dc.language`.  Mappningen fortsätter att referera till `xdm.environment.language` för bakåtkompatibilitet. Om båda fälten anges för kontinuitet har `xdm.environment.language` företräde. Du kan visa den fullständiga listan över mappningar från XDM till standardanalysfält [här](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/xdm-var-mapping). |
 | **Icke-kampanjkunder förlorar åtkomst till utlösare** | 16 oktober 2023 | Den 30 januari 2025 förlorade Adobe Analytics-kunder som inte har någon Adobe Campaign-licens åtkomsten till möjligheten att konfigurera och använda [utlösare](https://experienceleague.adobe.com/en/docs/core-services/interface/services/triggers). Kunderna måste antingen köpa Campaign, eller planera för att sluta använda Triggers, eller undersöka andra Adobe-verktyg som erbjuder Triggers-funktioner. |
 
 ## EOL-meddelanden (End-of-life) {#eol}
