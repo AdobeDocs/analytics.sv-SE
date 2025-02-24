@@ -3,9 +3,9 @@ description: Med verktyget Beräknade mätvärden kan du dra och släppa dimensi
 title: Bygg mätvärden
 feature: Calculated Metrics
 exl-id: 12bb3734-e25d-4c67-8c62-e1226d9aef94
-source-git-commit: eb2b5e078fdb299ed7d82fed54e98e5a40059624
+source-git-commit: a1567366c9fad42b3836f43c681d5380e97b09f3
 workflow-type: tm+mt
-source-wordcount: '1132'
+source-wordcount: '1143'
 ht-degree: 1%
 
 ---
@@ -35,7 +35,7 @@ Adobe Analytics har en arbetsyta där du kan dra och släppa dimensioner, mätv�
 
 ## Börja skapa ett beräknat mått
 
-Du kan använda verktyget för beräknade mätvärden för att skapa eller redigera beräknade mätvärden. När de skapas på det här sättet är beräknade värden tillgängliga i komponentlistan och kan sedan användas i projekt i hela organisationen. Du kan också skapa ett snabbt beräknat mått enligt beskrivningen i [Skapa beräknade värden för ett enskilt projekt](/help/analyze/analysis-workspace/components/apply-create-metrics.md#create-calculated-metrics-for-a-single-project) i [Metrisk](/help/analyze/analysis-workspace/components/apply-create-metrics.md).
+Du kan använda verktyget för beräknade mätvärden för att skapa eller redigera beräknade mätvärden. När de skapas på det här sättet är beräknade värden tillgängliga i komponentlistan och kan sedan användas i projekt i hela organisationen. Du kan också snabbt skapa ett beräknat mått som bara är tillgängligt för det projekt där det skapades, vilket beskrivs i [Skapa beräknade värden för ett enskilt projekt](/help/analyze/analysis-workspace/components/apply-create-metrics.md#create-calculated-metrics-for-a-single-project) i [Metrisk](/help/analyze/analysis-workspace/components/apply-create-metrics.md).
 
 Gå till verktyget för beräknade värden för att börja skapa ett beräknat mått som är tillgängligt i komponentlistan.
 
