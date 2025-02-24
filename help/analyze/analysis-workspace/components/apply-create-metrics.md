@@ -4,9 +4,9 @@ title: Mätvärden i Analysis Workspace
 feature: Metrics
 role: User, Admin
 exl-id: 0a5dc709-c4e8-412a-a6cf-37b85d811f65
-source-git-commit: 3bc8988346f894aedb30988f2d386afe65584537
+source-git-commit: eb2b5e078fdb299ed7d82fed54e98e5a40059624
 workflow-type: tm+mt
-source-wordcount: '712'
+source-wordcount: '713'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ Mer information om hur du får åtkomst till verktyget för beräknade värden f
 
 ### Skapa beräknade mätvärden för ett enskilt projekt
 
-Du kan skapa snabba beräknade mätvärden som bara är tillgängliga för det projekt där de skapades.
+Du kan snabbt skapa ett beräknat mått som bara är tillgängligt för det projekt där det skapades.
 
 Så här skapar du ett beräknat mått för ett enskilt projekt:
 
