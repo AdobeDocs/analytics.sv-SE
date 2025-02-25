@@ -3,9 +3,9 @@ title: Så här skapar du ett Advertising-konto i Advertising Analytics
 description: I den här artikeln beskrivs hur du skapar nya annonskonton och mappar flera konton till flera rapportsviter.
 feature: Advertising Analytics
 exl-id: f593c714-e85f-4000-85b2-6294cad81e25
-source-git-commit: a34dfc63c47b6fe4b91b2b67ea21cdddafb0bfd0
+source-git-commit: cf0f528f1ccb0346786c017b4d0d48dd5ab6dfc2
 workflow-type: tm+mt
-source-wordcount: '763'
+source-wordcount: '616'
 ht-degree: 3%
 
 ---
@@ -40,20 +40,7 @@ Fyll i **[!UICONTROL Tracking Settings]** enligt följande riktlinjer:
 
    | Inställning | Beskrivning |
    | --- | --- |
-   | Typ | <ul><li>**Auto**: Gör att Advertising Cloud Engine kan avgöra hur spårningsparametrarna läggs till i spårningsmallarna/mål-URL:erna. [!UICONTROL Auto Type Tracking] är det enklaste sättet, men kanske inte resulterar i den bästa integrerade datauppsättningen.<br>**Viktigt!** Om du vill konfigurera ett sökmotorkonto med [!UICONTROL Auto Type Tracking] måste du utföra följande åtgärder:<ul><li>Parametern `s_kwcid` och värdet läggs till i kontospårningsmallarna eller URL:erna för landningssidan i det konto som läggs till. Parametern och värdet infogas i slutet av URL:en. Ytterligare åtgärder kan krävas om webbservern kräver ett visst `key=value`-par i slutet av URL:en. Eller så krävs en uppdatering som stöder nya `key=value`-par i URL:en. **Obs!**: Lär dig mer om huruvida du bör lägga till den här parametern i din [skyddsprofil för innehåll](https://experienceleague.adobe.com/en/docs/id-service/using/reference/csp).</li><li>Dessutom kan nyckelord infogas i landnings-URL:en som en del av värdet `s_kwcid`. Om nyckelorden innehåller specialtecken eller symboler måste du bekräfta att webbservern kan hantera dessa tecken. Ett exempel på ett vanligt specialtecken är `+`, som används i nyckelorden&quot;Bred matchning ändrad&quot;.</li></ul></li><li>**Manuell**: Här kan du hantera hur spårningsparametrarna läggs till i sökmotorns spårningsmallar/mål-URL:er. [Se de här manuella spårningsexemplen för varje sökmotor](/help/integrate/c-advertising-analytics/c-adanalytics-workflow/aa-manual-vs-automatic-tracking.md).</li></ul> |
-
-1. I avsnittet **[!UICONTROL Mapping]** väljer du en eller flera rapportsviter att länka till det här sökmotorkontot. Du måste ange minst en rapportserie innan du kan spara Advertising-kontot. Du kan mappa flera konton till flera rapportsviter (1: 1, 1: Många, Många: Många). Observera att de data som Adobe Media Optimizer hämtar från sökmotorn helt enkelt kopieras till alla mappade rapportsviter, så det finns ingen delning av data.
-
-   >[!IMPORTANT]
-   >
-   >Endast rapportsviter som är mappade till en Experience Cloud-organisation kan väljas. Om du inte kan se din rapportsserie läser du [Felsöka Advertising Analytics](/help/integrate/c-advertising-analytics/c-adanalytics-workflow/aa-troubleshooting.md).
-
-   Följande riktlinjer gäller för **[!UICONTROL Mapping Settings]**:
-
-   | Inställning | Beskrivning |
-   | --- | --- |
-   | Rapportsvitsmappning | Rapportsvitens mappning avgör vilket rapportpaket som länkas till det här sökmotorkontot. Med andra ord avgör den i vilken rapportssvit/vilka rapportsviter sökmotordata skickas. |
-
+   | Typ | <ul><li>**Auto**: Låter Advertising Cloud Engine avgöra hur spårningsparametrarna läggs till i spårningsmallarna/mål-URL:erna. [!UICONTROL Auto Type Tracking] är det enklaste sättet, men kanske inte resulterar i den bästa integrerade datauppsättningen.<br>**Viktigt!** Om du vill konfigurera ett sökmotorkonto med [!UICONTROL Auto Type Tracking] måste du utföra följande åtgärder:<ul><li>Parametern `s_kwcid` och värdet läggs till i kontospårningsmallarna eller URL:erna för landningssidan i det konto som läggs till. Parametern och värdet infogas i slutet av URL:en. Ytterligare åtgärder kan krävas om webbservern kräver ett visst `key=value`-par i slutet av URL:en. Eller så krävs en uppdatering som stöder nya `key=value`-par i URL:en. **Obs!**: Lär dig mer om huruvida du bör lägga till den här parametern i din [skyddsprofil för innehåll](https://experienceleague.adobe.com/en/docs/id-service/using/reference/csp).</li><li>Dessutom kan nyckelord infogas i landnings-URL:en som en del av värdet `s_kwcid`. Om nyckelorden innehåller specialtecken eller symboler måste du bekräfta att webbservern kan hantera dessa tecken. Ett exempel på ett vanligt specialtecken är `+`, som används i nyckelorden&quot;Bred matchning ändrad&quot;.</li></ul></li><li>**Manuell**: Här kan du hantera hur spårningsparametrarna läggs till i sökmotorns spårningsmallar/mål-URL:er. [Se de här manuella spårningsexemplen för varje sökmotor](/help/integrate/c-advertising-analytics/c-adanalytics-workflow/aa-manual-vs-automatic-tracking.md).</li></ul> |
 
 1. Välj **[!UICONTROL Save]**.
 1. En ansvarsfriskrivning visar en lista över kavattar. Bekräfta att du har läst och att du förstår det här avtalet. Markera kryssrutan och välj sedan **[!UICONTROL OK]**.

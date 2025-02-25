@@ -3,9 +3,9 @@ description: Upptäck allt du kan göra med Advertising Analytics, inklusive beh
 title: Advertising Analytics
 feature: Advertising Analytics
 exl-id: bc18b74a-0317-4871-b2e0-ec0977ef1731
-source-git-commit: d7a6867796f97f8a14cd8a3cfad115923b329c7c
+source-git-commit: cf0f528f1ccb0346786c017b4d0d48dd5ab6dfc2
 workflow-type: tm+mt
-source-wordcount: '1139'
+source-wordcount: '1131'
 ht-degree: 90%
 
 ---
@@ -22,14 +22,6 @@ Denna integrering riktar sig till följande målgrupper:
 
 * Den **analytiker** som behöver samla in resultatrapporter för Paid Search Marketer.
 * Den **Paid Search Marketer** som söker svar på följande frågor: Hur mycket trafik skickar jag till vår webbplats och konverterar kunderna? Vilka är mina kostnadseffektiva annonskampanjer?
-
-
-
->[!BEGINSHADEBOX]
-
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Advertising Analytics](https://video.tv.adobe.com/v/23119?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
-
->[!ENDSHADEBOX]
 
 
 ## Förutsättningar {#prerequisites}
@@ -70,7 +62,7 @@ Analyserna har två behörigheter som automatiskt tilldelas Analytics-administra
  </tbody> 
 </table>
 
-## Advertising Analytics Dimensioner och statistik {#dimensions-metrics}
+## Advertising Analytics Dimensions and Metrics {#dimensions-metrics}
 
 Advertising Analytics lägger till följande mått och mätvärden i Analysis Workspace, Report Builder och API:t för analysrapporter.
 
