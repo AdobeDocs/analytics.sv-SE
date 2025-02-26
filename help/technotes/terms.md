@@ -3,9 +3,9 @@ title: Termer som används i Adobe Analytics
 description: Ordlista för Adobe Analytics, definiera vanliga termer som används.
 exl-id: 07507ba1-a512-48d9-8022-6084de4ae262
 feature: Implementation Basics
-source-git-commit: 9f7fe19c4d9dd9f3940a64c1e20e897ac6febe52
+source-git-commit: d5bbba7518529befabb8815ac657336326562fd1
 workflow-type: tm+mt
-source-wordcount: '2588'
+source-wordcount: '2579'
 ht-degree: 0%
 
 ---
@@ -91,7 +91,7 @@ Använd den här ordlistan för att förstå sammanhanget för många termer som
 * **Realtid:** Visar konfigurerade variabler så snart de samlats in med liten eller ingen fördröjning. Se [Realtidsrapporter](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/realtime/realtime.md) i användarhandboken för Admin.
 * **Report Builder:** Med Javascript [Report Builder](/help/analyze/report-builder/report-buider-overview.md) kan du skapa anpassade begäranden från Adobe Analytics-data.
 * **Rapportsvit:** En överliggande behållare som du skickar data till. Alla rapporter i Adobe Analytics refererar till en rapportserie.
-* **Rapporter och analyser:** En webbläsarlösning för rapportering och analys har nu tagits bort. Det här verktyget har [slutat licensieras](https://experienceleague.adobe.com/docs/discontinued/using/reports-and-analytics.html).
+* **Rapporter och analyser:** Det här verktyget har [slutat licensieras](https://experienceleague.adobe.com/docs/discontinued/using/reports-and-analytics.html).
 * **Rullande datumintervall:** En typ av relativt datumintervall som ändras allt eftersom tiden går. En rapport som visar de senaste 7 dagarna kan till exempel betraktas som ett löpande datumintervall. Se även statiskt datumintervall.
 * **RSID:** Förkortning för rapportsvit-ID. En rapportsvit har både ett eget namn och ett rapportsvit-ID.
 * **s.t():** Namnet på funktionen i ett AppMeasurement-bibliotek som skickar en begäran om sidvisningsbild. Vissa AppMeasurement-bibliotek använder `s.track()` i stället. Se [t](../implement/vars/functions/t-method.md) i användarhandboken för Implementering.

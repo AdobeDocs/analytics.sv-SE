@@ -4,9 +4,9 @@ description: Förstå varje behörighetsobjekt under Report Suite Tools.
 exl-id: ca38d02f-2e88-49a3-a08c-515f21ee0099
 feature: Admin Tools
 role: Admin
-source-git-commit: 938795c7378cb1f0537ff84eddeab3feddf8d073
+source-git-commit: d5bbba7518529befabb8815ac657336326562fd1
 workflow-type: tm+mt
-source-wordcount: '439'
+source-wordcount: '428'
 ht-degree: 2%
 
 ---
@@ -21,13 +21,12 @@ På den här sidan kan du förstå alla behörighetsobjekt under Report Suite-ve
 | [!UICONTROL Advertising Analytics Configuration] | Användaren kan konfigurera rapportsviter som ska etableras för Advertising Analytics. |
 | [!UICONTROL Anomaly Detection] | Ger åtkomst till avvikelseidentifiering i Analysis Workspace. |
 | [!UICONTROL Channels] | Ger åtkomst till marknadsföringskanaler, inklusive Marketing Channel Manager, regler för bearbetning av marknadsföringskanaler och förfallodatum för marknadsföringskanaler i Report Suite Manager. |
-| [!UICONTROL Classifications] | Ger åtkomst till alla klassificeringsinställningar i Report Suite Manager. Det här behörighetsobjektet innehåller: <br>Trafik > Trafikklassificeringar<br>Konvertering > Konverteringsklassificeringar<br>Konvertering > Klassificeringshierarkier<br>Markeringskanaler > Marketing Channel-klassificeringar<br>Programhantering > Appklassificeringar<br>Mediehantering > Medieklassificeringar<br>AEM > AEM Assets-klassificeringar<br>Adobe Campaign > Adobe-klassificeringar |
+| [!UICONTROL Classifications] | Ger åtkomst till alla klassificeringsinställningar i Report Suite Manager. Detta behörighetsobjekt inkluderar: <br>Trafik > Trafikklassificeringar<br>Konvertering > Konverteringsklassificeringar<br>Konvertering > Klassificeringshierarkier<br>Marknadskanaler > Marketing Channel-klassificeringar<br>Apphantering > Appklassificeringar<br>Mediehantering > Medieklassificeringar<br>AEM > AEM Assets-klassificeringar<br>Adobe Campaign > Adobe-klassificeringar |
 | [!UICONTROL Costs] | Ger åtkomst till marknadsföringskanaler > Marknadskanalkostnader i Report Suite Manager. |
 | [!UICONTROL Contribution Analysis] | Ger åtkomst till högerklicksmenyn Kör bidragsanalys i Analysis Workspace. |
 | [!UICONTROL Conversion Variables] | Ger åtkomst till Conversion > Conversion Variables i Report Suite Manager. |
 | [!UICONTROL Custom Calendar] | Ger åtkomst till Allmänt > Anpassa kalender i Report Suite Manager. |
 | [!UICONTROL Custom Data Warehouse Report] | Ger åtkomst till Verktyg > Data Warehouse i den övre navigeringen i Analytics. |
-| [!UICONTROL Daily Return Visits] | Ger åtkomst till Behåll besökare > Dagliga besök i rapporter och analyser. |
 | [!UICONTROL Data Feeds Manager] | Ger åtkomst till Admin > Datafeeds i den övre navigeringen i Analytics. |
 | [!UICONTROL Data Sources Manager] | Ger åtkomst till Admin > Alla administratörer > Datakällor i den övre navigeringen i Analytics. Kräver behörighetsobjektet &#39;Report Suite Mgmt&#39;. |
 | [!UICONTROL Data Repair API] | Ger åtkomst till API:t för datareparation |

@@ -1,12 +1,12 @@
 ---
 title: Handbok om Analytics-verktyg
-description: Produktdokumentation och självhjälp för Analysis Workspace, kontrollpaneler för Analytics (mobilapp), Activity Map, Report Builder, API för rapportering samt rapporter och analyser.
+description: Produktdokumentation och självhjälp för Analysis Workspace, kontrollpaneler för Analytics (mobilapp), Activity Map och Report Builder.
 feature: Workspace Basics
 role: User, Admin
 exl-id: 8ed81356-626e-4334-9e20-b481e6ba654a
-source-git-commit: d7a6867796f97f8a14cd8a3cfad115923b329c7c
+source-git-commit: d5bbba7518529befabb8815ac657336326562fd1
 workflow-type: tm+mt
-source-wordcount: '535'
+source-wordcount: '531'
 ht-degree: 11%
 
 ---
@@ -21,8 +21,8 @@ Analysverktygshandboken innehåller information om produktfunktioner, användnin
 |-----------|----------------|
 | **[Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html)** | Analysis Workspace är ett flexibelt webbläsarverktyg som gör att du snabbt kan skapa analyser och dela insikter. Med dra-och-släpp-gränssnittet kan ni utforma analyser, lägga till visualiseringar för att ge liv åt data, strukturera en datauppsättning, dela och schemalägga projekt med vem som helst i organisationen. |
 | **[Kontrollpaneler för analyser](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/home.html)** | Med kontrollpanelerna i Analytics och deras mobilstyrkort kan chefsanvändare visa en bred återgivning av viktiga sammanfattningsdata snabbt och enkelt på sina egna mobila enheter. Lärarna lägger till visualiseringar i mobila styrkortsprojekt och delar dem med cheferna.  <br>Med styrkort kan du målinrikta och mäta nyckeltal och ge en tydlig indikation på hur väl organisationer arbetar för att uppnå sina mål. |
-| **[Activity Map](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/activity-map.html)** | Activity Map är ett Adobe Analytics-program som är utformat för att rangordna länkaktivitet med visuella överlägg och tillhandahålla en instrumentpanel med realtidsanalyser för att övervaka målgruppens engagemang på era webbsidor. Med <br>Activity Map kan du skapa olika vyer för att visuellt identifiera kundaktivitetens acceleration, kvantifiera marknadsföringsinitiativ och agera utifrån målgruppens behov och beteenden.&quot; |
-| **[Report Builder](https://experienceleague.adobe.com/en/docs/analytics/analyze/report-builder/report-buider-overview)** | Det nya tillägget Report Builder för Microsoft Excel stöds i Mac, Windows och webbläsare. Med Report Builder kan du skapa anpassade förfrågningar från Adobe Analytics-data som infogas i dina Excel-kalkylblad. Begäranden kan referera till celler dynamiskt i kalkylbladet, och du kan uppdatera och anpassa hur Report Builder visar data. |
+| **[Activity Map](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/activity-map.html)** | Activity Map är en Adobe Analytics-applikation som är utformad för att rangordna länkaktivitet med visuella överlägg och tillhandahålla en instrumentpanel med realtidsanalyser för att övervaka målgruppernas engagemang på era webbsidor. <br>Med Activity Map kan ni skapa olika vyer för att visuellt identifiera kundaktivitetens acceleration, kvantifiera marknadsföringssatsningar och agera utifrån målgruppens behov och beteenden.&quot; |
+| **[Report Builder](https://experienceleague.adobe.com/en/docs/analytics/analyze/report-builder/report-buider-overview)** | Det nya Report Builder-tillägget för Microsoft Excel stöds i Mac, Windows och webbläsare. Med Report Builder kan du skapa anpassade förfrågningar från Adobe Analytics-data som infogas i dina Excel-kalkylblad. Begäranden kan referera till celler dynamiskt i kalkylbladet, och du kan uppdatera och anpassa hur Report Builder visar data. |
 | **[Äldre Report Builder](/help/analyze/legacy-report-builder/home.md)** | Äldre Report Builder är ett tillägg för Microsoft Excel som endast stöds i Microsoft Windows. Med Report Builder kan du skapa anpassade förfrågningar från Adobe Analytics-data som infogas i dina Excel-kalkylblad. Begäranden kan referera till celler dynamiskt i kalkylbladet, och du kan uppdatera och anpassa hur Report Builder visar data. |
 | **[API:er för analys](https://developer.adobe.com/analytics-apis/docs/2.0/)** | Med API:er för analyser kan du anropa Adobe-servrar direkt för att utföra nästan alla åtgärder som du kan utföra i användargränssnittet. Du kan skapa rapporter för att utforska, få insikter eller besvara viktiga frågor om dina data. Du kan också hantera komponenter i Adobe Analytics, till exempel när du skapar segment eller beräknade värden. |
 

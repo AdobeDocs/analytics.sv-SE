@@ -4,9 +4,9 @@ audience: end-user
 user-guide-title: Handbok om Analytics-verktyg
 breadcrumb-title: Användarhandbok om verktyg
 user-guide-description: Lär dig hur du använder verktyg i Analytics, inklusive Analysis Workspace, Analytics Dashboards, Report Builder, Legacy Report Builder och Activity Map.
-source-git-commit: b1c16319c8ec7e84e4d9ff173a4919d18da5f010
+source-git-commit: d5bbba7518529befabb8815ac657336326562fd1
 workflow-type: tm+mt
-source-wordcount: '973'
+source-wordcount: '965'
 ht-degree: 11%
 
 ---
@@ -139,7 +139,7 @@ ht-degree: 11%
       + [Dela projekt](analysis-workspace/curate-share/share-projects.md)
       + [Skapa delningsbara länkar](analysis-workspace/curate-share/shareable-links.md)
       + [projekt med endast visning](analysis-workspace/curate-share/view-only-projects.md)
-      + [Hämta PDF eller CSV-filer](analysis-workspace/curate-share/download-send.md)
+      + [Hämta PDF- eller CSV-filer](analysis-workspace/curate-share/download-send.md)
       + [Schemalägg projekt](analysis-workspace/curate-share/t-schedule-report.md)
    + Attribuering {#attribution}
       + [Attributionsöversikt](analysis-workspace/attribution/overview.md)
@@ -164,29 +164,29 @@ ht-degree: 11%
       + [Administrationskrav](analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
       + [Tillgänglighet i Analysis Workspace](analysis-workspace/workspace-faq/aw-accessibility.md)
 + Report Builder {#report-builder}
-   + [Översikt över Report Builder](report-builder/report-buider-overview.md)
-   + [Konfigurera Report Builder](report-builder/report-builder-setup.md)
+   + [Report Builder - översikt](report-builder/report-buider-overview.md)
+   + [Report Builder Setup](report-builder/report-builder-setup.md)
    + [Konvertera äldre begäranden](report-builder/convert-workbooks.md)
    + [Skapa ett datablock](report-builder/create-a-data-block.md)
    + [Report Builder Hub](report-builder/report-builder-hub.md)
    + [Välj en rapportsvit](report-builder/select-report-suite.md)
    + [Välj ett datumintervall](report-builder/select-date-range.md)
    + [Arbeta med segment](report-builder/work-with-segments.md)
-   + [Filtrera Dimensioner](report-builder/filter-dimensions.md)
+   + [Filterdimensioner](report-builder/filter-dimensions.md)
    + [Hantera datablock](report-builder/manage-reportbuilder.md)
    + [Schemalägg arbetsböcker](report-builder/schedule-reportbuilder.md)
    + [Begränsade etiketter](report-builder/restricted-labels.md)
-   + [Inställningar för Report Builder](report-builder/report-builder-settings.md)
+   + [Report Builder-inställningar](report-builder/report-builder-settings.md)
 + Äldre Report Builder {#legacy-report-builder}
    + [Äldre Adobe Report Builder-hjälp](legacy-report-builder/home.md)
-   + Inställning för äldre Report Builder {#legacy-report-builder-setup}
+   + Äldre Report Builder-konfiguration {#legacy-report-builder-setup}
       + [Systemkrav](legacy-report-builder/setup/system-requirements.md)
       + [Installera Report Builder](legacy-report-builder/setup/t-install-arb.md)
       + [Uppgradera Report Builder](legacy-report-builder/setup/upgrade-arb.md)
       + [Report Builder-inloggning](legacy-report-builder/setup/login.md)
       + [Avinstallera Report Builder](legacy-report-builder/setup/t-uninstall-arb.md)
-      + [Anropa Report Builder från Microsoft Excel-funktioner](legacy-report-builder/setup/invoke-arb-excel-function.md)
-   + [Report Builder (verktygsfält)](legacy-report-builder/reportbuilder-toolbar.md)
+      + [Anropa Report Builder-funktioner från Microsoft Excel-funktioner](legacy-report-builder/setup/invoke-arb-excel-function.md)
+   + [Report Builder verktygsfält](legacy-report-builder/reportbuilder-toolbar.md)
    + Dataförfrågningar {#data-requests}
       + [Databegäranden - Guiden Begär begäran, steg 1](legacy-report-builder/data-requests/data-requests.md)
       + [Skapa en databegäran](legacy-report-builder/data-requests/t-create-a-data-request.md)
@@ -197,7 +197,6 @@ ht-degree: 11%
       + [Hantera segment](legacy-report-builder/data-requests/segmentation.md)
       + Rapporttyper {#report-types}
          + [Översikt över rapporttyper](legacy-report-builder/data-requests/c-report-types/select-report-types.md)
-         + [Bana- och vägutfallsrapporter i Report Builder](legacy-report-builder/data-requests/c-report-types/report-path-fallout.md)
          + [Filtrera en sökvägsrapport med hjälp av guiden Begäran](legacy-report-builder/data-requests/c-report-types/path-filter.md)
          + [Filtrera en utfallsrapport med hjälp av begärandeguiden](legacy-report-builder/data-requests/c-report-types/fallout-filter.md)
          + [Filtrera sökvägsrapporter efter tillägg av beroende begäranden](legacy-report-builder/data-requests/c-report-types/create-toppath-filter.md)
@@ -269,7 +268,7 @@ ht-degree: 11%
       + [Spara en arbetsbok med begäranden](legacy-report-builder/manage-requests/save-a-workbook-with-requests.md)
       + [Ange villkorlig formatering](legacy-report-builder/manage-requests/specify-conditional-formatting.md)
       + [Offlineläge för att skapa och redigera begäranden](legacy-report-builder/manage-requests/offline-mode.md)
-   + [Alternativ för Report Builder](legacy-report-builder/options.md)
+   + [Report Builder-alternativ](legacy-report-builder/options.md)
    + [Schemalägg rapportbegäranden](legacy-report-builder/schedule-report-requests.md)
    + [Schemalägg en arbetsbok](legacy-report-builder/t-schedule-a-data-request.md)
    + [Schemalagd aktivitetshanterare](legacy-report-builder/r-arb-scheduled-reports.md)
@@ -279,16 +278,16 @@ ht-degree: 11%
       + [Lås/lås upp arbetsböcker](legacy-report-builder/workbook-library/protect-wb.md)
       + [Schemalägg makroaktiverade arbetsböcker](legacy-report-builder/workbook-library/schedule-macro-wb.md)
    + Publicera till Power BI med Report Builder 5.5 {#publish-powerbi}
-      + [Publish till Power BI - översikt](legacy-report-builder/c-publish-power-bi/power-bi.md)
+      + [Publicera till Power BI - översikt](legacy-report-builder/c-publish-power-bi/power-bi.md)
       + [Begränsningar och specifikationer](legacy-report-builder/c-publish-power-bi/specifications-limits.md)
       + [Importera data manuellt till Power BI](legacy-report-builder/c-publish-power-bi/bi-manually-import-data.md)
       + [Hämta publicerade resurser till Power BI Desktop](legacy-report-builder/c-publish-power-bi/bi-publish-to-desktop.md)
       + [God praxis](legacy-report-builder/c-publish-power-bi/bi-best-practices.md)
-      + [Felsökning av integrering med Power BI](legacy-report-builder/c-publish-power-bi/troubleshooting.md)
-      + [Adobe Analytics content packs for Power BI](legacy-report-builder/c-publish-power-bi/integration-power-bi.md)
+      + [Felsökning av Power BI-integrering](legacy-report-builder/c-publish-power-bi/troubleshooting.md)
+      + [Adobe Analytics innehållspaket för Power BI](legacy-report-builder/c-publish-power-bi/integration-power-bi.md)
    + [Visual Basic-makron](legacy-report-builder/vba.md)
-   + [Report Builder, felsökning](legacy-report-builder/troubleshoot.md)
-   + [Vanliga frågor om Report Builder](legacy-report-builder/faq.md)
+   + [Report Builder felsökning](legacy-report-builder/troubleshoot.md)
+   + [REPORT BUILDER FAQ](legacy-report-builder/faq.md)
 
 + Activity Map {#activity-map}
    + [Översikt](activity-map/overview.md)
