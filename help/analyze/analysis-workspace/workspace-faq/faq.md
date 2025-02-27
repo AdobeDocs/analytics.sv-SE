@@ -4,7 +4,7 @@ title: Vanliga frågor och felsökning av Workspace
 feature: Workspace Basics
 role: User, Admin
 exl-id: cf7a9a73-bcbe-4bf5-b5dc-913199ab229c
-source-git-commit: d7a6867796f97f8a14cd8a3cfad115923b329c7c
+source-git-commit: 49dd8080f74811b7618a8bd4ad278b35e8c02641
 workflow-type: tm+mt
 source-wordcount: '547'
 ht-degree: 24%
@@ -14,7 +14,7 @@ ht-degree: 24%
 # Frågor och svar
 
 +++Vilka är förutsättningarna för att använda Analysis Workspace?
-[Skicka data till Adobe Analytics med Adobe Analytics-tillägget](/help/implement/launch/validate-publish-prod.md): En fungerande implementering krävs för att använda Analysis Workspace. Se till att din organisation skickar data till Adobe innan du använder verktyget. Andra implementeringar, som till exempel äldre manuella implementeringar, kan också fungera.
+[Skicka data till Adobe Analytics med Adobe Analytics-tillägget](/help/implement/launch/validate-publish-prod.md): En fungerande implementering krävs för att använda Analysis Workspace. Kontrollera att din organisation skickar data till Adobe innan du använder verktyget. Andra implementeringar, som till exempel äldre manuella implementeringar, kan också fungera.
 +++
 
 +++Vilka är kraven för administration och åtkomst för Analysis Workspace?
@@ -33,7 +33,7 @@ Nu kan du skapa projekt i Analysis Workspace med data från fler [flera rapports
 Ingen särskild implementering krävs. Analysis Workspace är tillgängligt för alla företag med Analytics Standard eller Premium. Standardbehörigheter för innehåll (till exempel rapportsviter och projektkomponenter) gäller, och för att strukturera och dela projekt. Se [Krav för administration och åtkomst](/help/analyze/analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md).
 +++
 
-+++Kan jag använda Analysis Workspace som Data Warehouse?
++++Kan jag använda Analysis Workspace för Data Warehouse?
 Analysis Workspace rekommenderas inte för bulkdataexport. Det är en visualiseringsarbetsyta som skapar kontrollpanelsliknande analysprojekt.
 +++
 
@@ -45,25 +45,13 @@ Se [Optimera prestanda](/help/analyze/analysis-workspace/workspace-faq/optimizin
 
 +++Hur kommer data in i ditt Analysis Workspace-projekt?
 
-
->[!BEGINSHADEBOX]
-
 Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Data till Analysis Workspace](https://video.tv.adobe.com/v/31072?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
-
->[!ENDSHADEBOX]
-
 
 +++
 
 +++Hur kan jag spåra användning i Workspace?
 
-
->[!BEGINSHADEBOX]
-
 Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Loggspårning](https://video.tv.adobe.com/v/29768?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
-
->[!ENDSHADEBOX]
-
 
 +++
 
