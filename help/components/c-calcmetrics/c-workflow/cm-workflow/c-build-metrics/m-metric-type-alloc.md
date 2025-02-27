@@ -107,7 +107,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_attribution_timedecay"
 >title="Tidsminskning"
->abstract="De Dimensioner som ligger närmast konverteringen ger mest poäng."
+>abstract="Dimension-värden som ligger närmast konverteringen ger mest valuta för pengarna."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -166,8 +166,8 @@ I följande exempel visas hur beräknade mätvärden med linjära tilldelningar 
 | | Träff 1 | Träff 2 | Träff 3 | Träff 4 | Träff 5 | Träff 6 | Träff 7 |
 |--- |--- |--- |--- |--- |--- |--- |--- |
 | Data skickade | PROMO A | - | PROMO A | PROMO B | - | PROMO C | 10 dollar |
-| EVar vid senaste beröring | PROMO A | PROMO A | PROMO A | PROMO B | PROMO B | PROMO C | 10 dollar |
-| EVar med första beröring | PROMO A | PROMO A | PROMO A | PROMO A | PROMO A | PROMO A | 10 dollar |
+| Senaste beröring av eVar | PROMO A | PROMO A | PROMO A | PROMO B | PROMO B | PROMO C | 10 dollar |
+| First Touch eVar | PROMO A | PROMO A | PROMO A | PROMO A | PROMO A | PROMO A | 10 dollar |
 | Exempel | PROMO A | - | PROMO A | PROMO B | - | PROMO C | 10 dollar |
 
 I det här exemplet skickades värdena A, B och C till en variabel på träffar 1, 3, 4 och 6 innan ett köp på $10 gjordes på träffnummer 7. På den andra raden kvarstår dessa värden för alla träffar på grund av senaste beröringsbesök. Den tredje raden visar hur obestridliga besöken är. Slutligen visar den sista raden hur data skulle registreras för en prop som inte är beständig.
