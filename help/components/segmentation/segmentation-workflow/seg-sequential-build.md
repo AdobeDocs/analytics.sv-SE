@@ -3,9 +3,9 @@ description: Sekventiella segment skapas med operatorn THEN i stället för AND 
 title: Skapa sekventiella segment
 feature: Segmentation
 exl-id: 2ac4e6db-3111-45e5-bedf-7d9b7b1ae352
-source-git-commit: 1b9341efbde5698b73581f50c4ab851434e7e323
+source-git-commit: 60a13b42e8792a1a68fa447c2584894492c4a570
 workflow-type: tm+mt
-source-wordcount: '2297'
+source-wordcount: '2307'
 ht-degree: 1%
 
 ---
@@ -69,7 +69,7 @@ Identifiera alla besök där en besökare besöker en sida före en annan och se
 
 ## [!UICONTROL After] och [!UICONTROL Within]
 
-Du kan använda operatorn ![Clock](/help/assets/icons/Clock.svg) **[!UICONTROL After]** och ![Clock](/help/assets/icons/Clock.svg) **[!UICONTROL Within]** **[!UICONTROL Then]** för att definiera ytterligare [tidsbegränsningar](#time-constraints) eller [begränsningar för träffar, besök eller Dimensioner](#event-session-and-dimension-constraints).
+Du kan använda operatorn ![Clock](/help/assets/icons/Clock.svg) **[!UICONTROL After]** och ![Clock](/help/assets/icons/Clock.svg) **[!UICONTROL Within]** **[!UICONTROL Then]** för att definiera ytterligare [tidsbegränsningar](#time-constraints) eller [begränsningar för träffar, besök eller dimensioner](#event-session-and-dimension-constraints).
 
 ### Tidsbegränsningar
 
@@ -122,7 +122,7 @@ Besökare som besöker startsidan den 1 juni 2024 och som återvänder för att 
 
 ### Begränsningarna [!UICONTROL Hit], [!UICONTROL Visit] och [!UICONTROL Dimension]
 
-Med begränsningarna ![Clock](/help/assets/icons/Clock.svg) **[!UICONTROL After]** och ![Clock](/help/assets/icons/Clock.svg) **[!UICONTROL Within]** kan du inte bara ange en tidsbegränsning utan även en träff-, besök- eller dimensionsbegränsning. Markera **[!UICONTROL Hit(s)]**, **[!UICONTROL Visit(s)]** eller **[!UICONTROL Other dimensions]** ![ChevronRight](/help/assets/icons/ChevronRight.svg) **[!UICONTROL *Dimensionens namn *]**. Du kan använda fältet [!UICONTROL *Sök*] för att söka efter en dimension.
+Med begränsningarna ![Clock](/help/assets/icons/Clock.svg) **[!UICONTROL After]** och ![Clock](/help/assets/icons/Clock.svg) **[!UICONTROL Within]** kan du inte bara ange en tidsbegränsning utan även en träff-, besök- eller dimensionsbegränsning. Välj **[!UICONTROL Hit(s)]**, **[!UICONTROL Visit(s)]** eller **[!UICONTROL Other dimensions]** ![ChevronRight](/help/assets/icons/ChevronRight.svg) **[!UICONTROL *Dimension name *]**. Du kan använda fältet [!UICONTROL *Sök*] för att söka efter en dimension.
 
 #### Exempel
 
@@ -299,3 +299,7 @@ Det sista exemplet är att ni vill identifiera besökare som har lärt sig om en
 
 
 ![Exempel på komplexa sekventiella segment](assets/sequential-complex.png)
+
+>[!MORELIKETHIS]
+>
+> * [Mastering Sequential Logic in AA &amp; CJA: Introduktion till THEN](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/mastering-sequential-logic-in-aa-amp-cja-introduction-to-then/ba-p/738131)
