@@ -4,9 +4,9 @@ description: Visa vilka XDM-fält som Edge automatiskt mappar till Analytics-var
 exl-id: fbff5c38-0f04-4780-b976-023e207023c6
 feature: Implementation Basics
 role: Admin, Developer
-source-git-commit: 5e97c9a4a3c7368cefb3cc6a7bc89a450e6e3f4a
+source-git-commit: 0d7788f7a17a61e823839017a61bcf9b778c2a57
 workflow-type: tm+mt
-source-wordcount: '1406'
+source-wordcount: '1410'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Följande tabell visar de XDM-variabler som Adobe Experience Platform Edge Network automatiskt mappar till Adobe Analytics. Om du använder dessa sökvägar för XDM-fält behövs ingen ytterligare konfiguration för att skicka data till Adobe Analytics. Dessa fält ingår i fältgruppen **[!UICONTROL Adobe Analytics ExperienceEvent Template]**. Du bör använda dessa fält om du tänker skicka data till både Adobe Analytics och Adobe Experience Platform.
 
-Om din organisation planerar att flytta till Customer Journey Analytics rekommenderar Adobe att du i stället använder objektet `data` för att skicka data direkt till Adobe Analytics utan att följa ett schema. Med den här strategin kan din organisation använda ditt eget schema, i stället för att använda [!UICONTROL Adobe Analytics ExperienceEvent Template] (som inte gäller Customer Journey Analytics). En liknande mappningstabell finns i [Variabelmappning för dataobjekt till Adobe Analytics](data-var-mapping.md).
+Om din organisation planerar att gå över till Customer Journey Analytics rekommenderar Adobe att du i stället använder objektet `data` för att skicka data direkt till Adobe Analytics utan att följa ett schema. Med den här strategin kan din organisation använda ditt eget schema i stället för att använda [!UICONTROL Adobe Analytics ExperienceEvent Template] (som inte är tillämpligt för Customer Journey Analytics). En liknande mappningstabell finns i [Variabelmappning för dataobjekt till Adobe Analytics](data-var-mapping.md).
 
 ## Värdeprioriteringar
 
@@ -66,6 +66,7 @@ Tidigare uppdateringar av den här tabellen finns på den här sidans [implement
 | `xdm.environment.carrier` | Den mobila livscykeldimensionen [Transportföretagets namn](https://developer.adobe.com/client-sdks/documentation/mobile-core/lifecycle/metrics/). |
 | `xdm.environment.connectionType` | Hjälper dig att ange dimensionen [Anslutningstyp](../../components/dimensions/connection-type.md). |
 | `xdm.environment.ipV4` | Används som en identifieringsmetod för [unik besökare](../../components/metrics/unique-visitors.md) som reservalternativ. Vanligtvis ifylld med HTTP-huvudet `X-Forwarded-For`. |
+| `xdm.environment._dc.language` | Mobildimensionen Locale. |
 | `xdm.environment.language` | Mobildimensionen Locale. |
 | `xdm.environment.operatingSystem` | Den mobila livscykeldimensionen [Operativsystem](https://developer.adobe.com/client-sdks/documentation/mobile-core/lifecycle/metrics/). |
 | `xdm.environment.operatingSystemVersion` | Hjälper dig att ange den mobila livscykeldimensionen [Operativsystemversion](https://developer.adobe.com/client-sdks/documentation/mobile-core/lifecycle/metrics/). |
