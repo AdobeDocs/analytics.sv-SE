@@ -4,16 +4,16 @@ title: Datasekretessetiketter för analysvariabler
 feature: Data Governance
 role: Admin
 exl-id: b8c2143a-6e8e-465a-979b-aa8176e8d4e8
-source-git-commit: eb2b8135ffcf2a22184818b34efcd97a931437f6
+source-git-commit: 3e87d420591405e57e57e18fda4287d5fbd3bf1b
 workflow-type: tm+mt
-source-wordcount: '3753'
-ht-degree: 58%
+source-wordcount: '3725'
+ht-degree: 57%
 
 ---
 
 # Datasekretessetiketter för analysvariabler
 
-Adobe, som personuppgiftsansvariga, ansvarar för att följa gällande dataintegritetslagstiftning, såsom Allmänna dataskyddsförordningen (GDPR) och California Consumer Privacy Act (CCPA). Kunderna bör rådfråga sina egna juridiska team för att avgöra hur deras data ska hanteras för att följa lagstiftningen om dataintegritet. Adobe förstår att var och en av sina kunder har unika sekretessrelaterade behov, och det är därför som Adobe gör det möjligt för sina kunder att anpassa sina inställningar för databehandling för dataintegritet. På så sätt kan varje unik kund behandla begäranden om datasekretess på det sätt som bäst passar deras varumärke och deras unika datauppsättning.
+Adobe kunder, som personuppgiftsansvariga, ansvarar för att följa gällande dataintegritetslagstiftning, som General Data Protection Regulation (GDPR) och California Consumer Privacy Act (CCPA). Kunderna bör rådfråga sina egna juridiska team för att avgöra hur deras data ska hanteras för att följa lagstiftningen om dataintegritet. Adobe vet att var och en av sina kunder har unika sekretessrelaterade behov, vilket är anledningen till att Adobe gör det möjligt för sina kunder att anpassa de inställningar de vill ha för databehandling. På så sätt kan varje unik kund behandla begäranden om datasekretess på det sätt som bäst passar deras varumärke och deras unika datauppsättning.
 
 Adobe Analytics har verktyg som används för att etikettera data utifrån känslighet och avtalsbegränsningar. Etiketter är ett viktigt steg för att: (1) identifiera registrerade, (2) fastställa vilka data som ska returneras som en del av en begäran om åtkomst och (3) identifiera datafält som måste tas bort som en del av en begäran om borttagning.
 
@@ -23,7 +23,7 @@ Implementering av datasekretess i Adobe Analytics stöder följande etiketter f�
 
 >[!NOTE]
 >
->Etiketterna I1, I2, S1 och S2 har samma betydelse som motsvarande DULE-etiketter i Adobe Experience Platform. De används dock för mycket olika syften. I Adobe Analytics används dessa etiketter för att identifiera fält som ska anonymiseras som ett resultat av en begäran om Privacy Service. Inom Adobe Experience Platform används de för åtkomstkontroll, samtyckeshantering och för att genomdriva marknadsföringsbegränsningar för de märkta fälten. Adobe Experience Platform stöder många extra etiketter som inte används av Adobe Analytics. Dessutom används etiketter i Adobe Experience Platform på scheman. Om du använder Analytics Data Connector för att importera dina Adobe Analytics-data till Adobe Experience Platform måste du se till att rätt DULE-etiketter är konfigurerade i Adobe Experience Platform för de scheman som används av var och en av rapportsviterna. Etiketter som tilldelats i Adobe Analytics används inte automatiskt på dessa scheman i Adobe Experience Platform eftersom de bara representerar en delmängd av de DULE-etiketter som du kanske måste använda. Olika rapportsviter kan dela ett schema men ha olika etiketter tilldelade till props och evar med samma nummer och schemat kan delas av datauppsättningar från andra datakällor, vilket kan skapa förvirring över varför vissa fält tog emot dessa etiketter.
+>Etiketterna I1, I2, S1 och S2 har samma betydelse som motsvarande DULE-etiketter i Adobe Experience Platform. De används dock för mycket olika syften. I Adobe Analytics används dessa etiketter för att identifiera fält som ska anonymiseras som ett resultat av en Privacy Service-förfrågan. Inom Adobe Experience Platform används de för åtkomstkontroll, samtyckeshantering och för att genomdriva marknadsföringsbegränsningar för de märkta fälten. Adobe Experience Platform stöder många extra etiketter som inte används av Adobe Analytics. Dessutom används etiketter i Adobe Experience Platform på scheman. Om du använder Analytics Data Connector för att importera dina Adobe Analytics-data till Adobe Experience Platform måste du se till att rätt DULE-etiketter är konfigurerade i Adobe Experience Platform för de scheman som används av var och en av rapportsviterna. Etiketter som tilldelats i Adobe Analytics används inte automatiskt på dessa scheman i Adobe Experience Platform eftersom de bara representerar en delmängd av de DULE-etiketter som du kanske måste använda. Olika rapportsviter kan dela ett schema men ha olika etiketter tilldelade till props och evar med samma nummer och schemat kan delas av datauppsättningar från andra datakällor, vilket kan skapa förvirring över varför vissa fält tog emot dessa etiketter.
 
 ## Identitetsdataetiketter {#identity-data-labels}
 
@@ -49,7 +49,7 @@ Känsliga ”S”-etiketter används för att kategorisera känsliga data som ge
 
 ## Dataförvaltningsrubriker (dataintegritet) {#data-governance-labels}
 
-Med etiketter för datastyrning kan användarna klassificera data som speglar integritetsrelaterade överväganden och avtalsvillkor för att hjälpa Adobe kunder att fortsätta följa regler och företagspolicyer.
+Etiketter för datastyrning ger användarna möjlighet att klassificera data som avspeglar integritetsrelaterade överväganden och avtalsvillkor för att hjälpa Adobe kunder att fortsätta följa regler och företagspolicyer.
 
 ### Etiketter för dataintegritet {#access}
 
@@ -67,7 +67,7 @@ Med etiketter för datastyrning kan användarna klassificera data som speglar in
 
 Till skillnad från de andra etiketterna utesluter inte dessa borttagningsetiketter varandra. Du kan välja antingen båda eller ingen. En separat [!UICONTROL None]-etikett är inte nödvändig eftersom [!UICONTROL None] bara anges genom att inte markera något av borttagningsalternativen.
 
-En Ta bort-etikett krävs bara för fält som innehåller ett värde som skulle göra det möjligt att koppla en träff till den registrerade (dvs. som skulle göra det möjligt att identifiera den registrerade). Andra personuppgifter (favoriter, webbsurfnings-/inköpshistorik, hälsovillkor, o.s.v.) behöver inte tas bort eftersom associationen med den registrerade kommer att avskiljas.
+En Ta bort-etikett krävs bara för fält som innehåller ett värde som skulle göra det möjligt att koppla en träff till den registrerade (dvs. som skulle göra det möjligt att identifiera den registrerade). Annan personlig information (favoriter, webbsurfnings-/inköpshistorik, hälsovillkor osv.) behöver inte tas bort eftersom associationen med den registrerade kommer att tas bort.
 
 | Etikett | Definition | Andra krav |
 | --- | --- | --- |
@@ -80,7 +80,7 @@ En Ta bort-etikett krävs bara för fält som innehåller ett värde som skulle 
 
 | Etikett | Definition | Andra krav |
 | --- | --- | --- |
-| Ingen | Den här variabeln innehåller inte något ID som ska användas för begäranden om datasekretess. | Du behöver bara ange en av dessa andra etiketter om det här fältet innehåller ett ID som du använder när du skickar in åtkomst- eller borttagningsbegäranden via [Privacy Service-API:t](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html) eller användargränssnittet. |
+| Ingen | Den här variabeln innehåller inte något ID som ska användas för begäranden om datasekretess. | Du behöver bara ange en av dessa andra etiketter om det här fältet innehåller ett ID som du använder när du skickar in åtkomst- eller borttagningsbegäranden via [Privacy Service API](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html) eller användargränssnittet. |
 | ID-DEVICE | Det här fältet innehåller ett ID som kan användas för att identifiera en enhet för en datasekretessbegäran, men det går inte att skilja mellan olika användare av en delad enhet.  Du behöver inte ange den här etiketten för alla variabler som innehåller ID:n (det vill säga I1/I2-etiketterna). Använd den här etiketten om du skickar begäranden om datasekretess med ID:n som lagras i den här variabeln och vill söka efter det angivna ID:t i variabeln. | Kräver även etiketten I1 eller I2.<ul><li>Kan inte anges för händelser</li><li>Kan inte anges för marknadsförande eVars</li><li>Kan inte anges för klassificeringar</li></ul> |
 | ID-PERSON | Det här fältet innehåller ett ID som kan användas för att identifiera en autentiserad användare (en viss person) för en begäran om dataintegritet.  Du behöver inte ange den här etiketten för alla variabler som innehåller ID:n (det vill säga I1/I2-etiketterna). Använd den här etiketten om du ska skicka begäranden om datasekretess med ID:n som lagras i den här variabeln och vill söka efter det angivna ID:t i variabeln. | <ul><li>Kräver även etiketten I1 eller I2.</li><li>Kan inte anges för händelser</li><li>Kan inte anges för marknadsförande eVars</li><li>Kan inte anges för klassificeringar</li></ul> |
 
@@ -122,7 +122,7 @@ Du behöver inte ange ID-DEVICE- eller ID-PERSON-etiketter för alla variabler s
 }
 ```
 
-Det är möjligt att använda samma namnutrymme för olika variabler i samma rapportsvit. I vissa anpassade implementeringar lagras till exempel ett CRM-ID i både en prop och en eVar. Om CRM-ID alltid finns i någon av dem (till exempel eVar), och endast ibland inträffar i den andra (prop), och aldrig i propen när det inte finns i eVarna, behöver bara eVarna en ID-etikett och ett namnutrymme eftersom Adobe bara kan söka efter ID i den eVarna. Men om CRM-ID ibland förekommer i en variabel och ibland i en annan, ska båda ha samma namnutrymme och Adobe söker i båda variablerna efter förekomster av det ID som anges som en del av en begäran om datasekretess med det här namnutrymmet. Du ska fortfarande ha DEL-etiketter på alla dessa variabler, så att värdet anonymiseras oavsett var det finns.
+Det är möjligt att använda samma namnutrymme för olika variabler i samma rapportsvit. I vissa anpassade implementeringar lagras till exempel ett CRM-ID i både en prop och en eVar. Om CRM-ID alltid finns i någon av dem (t.ex. eVar), och endast ibland inträffar i den andra (propen), och aldrig i propen när den inte finns i eVar, behöver bara eVar en ID-etikett och ett namnutrymme eftersom Adobe bara kan söka efter ID i den eVar som finns. Men om CRM-ID ibland förekommer i en variabel och ibland i en annan, ska båda ha samma namnutrymme och Adobe söker i båda variablerna efter förekomster av det ID som anges som en del av en begäran om datasekretess med det här namnutrymmet. Du ska fortfarande ha DEL-etiketter på alla dessa variabler, så att värdet anonymiseras oavsett var det finns.
 
 Ett annat exempel är att du kan ha ett CRM-ID som ibland skickas in via eVar1 och ibland skickas in via prop7. Sedan har du en behandlingsregel som kopierar värdet från eVar1, om det finns, till eVar3. Annars kopieras värdet från prop7 till eVar3. I det här scenariot innehåller eVar3 alltid CRM-ID om det är känt, så endast eVar3 kräver en ID-PERSON-etikett.
 
@@ -224,7 +224,7 @@ Följande tabell beskriver hur olika variabler tas bort. Det här är inte en fu
 | Inköps-ID | Befintligt värde ersätts med ett nytt värde i formatet ”G-7588FCD8642718EC50”, där de 18 hexadecimala siffrorna efter ”G-”-prefixet är de första 18 siffrorna i ett kryptografiskt starkt 128-bitars pseudoslumpmässigt nummer. Alla kommentarer som gäller borttagning av trafikvariabler och handelsvariabler gäller också här.<p>Inköps-ID är ett transaktions-ID vars främsta syfte är att se till att ett inköp inte krediteras två gånger, till exempel när någon uppdaterar sin sida för inköpsbekräftelse. Själva ID:t kan knyta köpet till en rad i din egen databas där köpet registreras. I de flesta fall är det inte nödvändigt att ta bort detta ID, så det tas inte bort som standard.<p>Om du fortfarande kan knyta köpet till en användare efter att ha tagit bort din egen begäran om datasekretess, kan du behöva ta bort det här fältet, så att analysdata för den här besökaren inte kan knytas tillbaka till köparen. |
 | Besökar-ID | Värdet är ett 128-bitars heltal och ersätts med ett kryptografiskt starkt 128-bitars pseudoslumpmässigt värde. |
 | <ul><li>MCID</li><li>Anpassat besökar-ID</li><li>IP-adress</li><li>IP-adress 2 | Värdet rensas (anges till antingen den tomma strängen eller 0 beroende på variabeltypen). |
-| <ul><li>ClickMap Action (äldre)</li><li>ClickMap Context (Legacy)</li><li>Sida</li><li>Sidans URL</li><li>URL för ursprunglig startsida</li><li>Referent</li><li>Besök URL till startsidan</li></ul> | URL-parametrar rensas/tas bort. Om värdet inte ser ut som en URL rensas värdet (anges till den tomma strängen). |
+| <ul><li>ClickMap Action (Legacy)</li><li>ClickMap Context (Legacy)</li><li>Sida</li><li>Sidans URL</li><li>URL för ursprunglig startsida</li><li>Referent</li><li>Besök URL till startsidan</li></ul> | URL-parametrar rensas/tas bort. Om värdet inte ser ut som en URL rensas värdet (anges till den tomma strängen). |
 | <ul><li>Latitude</li><li>Longitud</li></ul> | Precisionen minskas till högst 1 km. |
 
 {style="table-layout:auto"}
@@ -243,7 +243,7 @@ Det är viktigt att du förstår vilken typ av data som finns i varje variabel i
 | [!UICONTROL User Agent] | Användaragenten identifierar vilken version av webbläsaren som användes. |
 | [!UICONTROL User ID] | Anger Analytics-rapportsviten (som ett tal) som innehåller data. |
 | [!UICONTROL Report Suite ID] | Anger namnet på Analytics-rapportsviten som innehåller data. |
-| [!UICONTROL Visitor ID]<p>[!UICONTROL MCID] / [!UICONTROL ECID] | Dessa ID:n har en DEL-DEVICE-etikett, men det går inte att lägga till etiketten DEL-PERSON. Om du anger [!UICONTROL ID Expansion] för varje begäran tas dessa ID:n automatiskt bort för alla borttagningsbegäranden, även de som använder ett ID-PERSON.<p>Om du inte använder ID-expansion, men vill att dessa cookie-ID:n anonymiseras i träffar som innehåller ett matchande ID i en prop eller eVar, kan du kringgå den här etikettbegränsningen genom att etikettera prop eller eVar med en ID-DEVICE-etikett, även om den verkligen identifierar en person (alla DEL-PERSON-etiketter måste också ändras till DEL-DEVICE-etiketter). I det här fallet ändras den historiska rapporteringen eftersom endast vissa instanser av besökar-ID eller ECID anonymiseras. |
+| [!UICONTROL Visitor ID]<p>[!UICONTROL MCID] / [!UICONTROL ECID] | Dessa ID:n har en DEL-DEVICE-etikett, men det går inte att lägga till etiketten DEL-PERSON. Om du vill att dessa cookie-ID:n ska anonymiseras i träffar som innehåller ett matchande ID i en prop eller eVar, kan du kringgå den här etiketteringsbegränsningen genom att etikettera propen eller eVar med en ID-DEVICE-etikett, även om den verkligen identifierar en person (alla DEL-PERSON-etiketter måste också ändras till DELL-DEVICE-etiketter). I det här fallet ändras den historiska rapporteringen eftersom endast vissa instanser av besökar-ID eller ECID anonymiseras. |
 | [!UICONTROL AMO ID] | Adobe Advertising Cloud ID är en lösningsvariabel som har en [!UICONTROL DEL-DEVICE]-etikett som inte kan ändras. Den fylls i från en cookie på samma sätt som besökar-ID och MCID. Den ska tas bort från träffar när dessa andra ID:n tas bort. Mer information finns i beskrivningen av dessa variabler. |
 
 {style="table-layout:auto"}

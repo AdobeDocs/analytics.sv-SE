@@ -4,10 +4,10 @@ title: Exempel på etiketter
 feature: Data Governance
 role: Admin
 exl-id: 9bea8636-c79c-4998-8952-7c66d31226e3
-source-git-commit: 48f1974a0c379a4e619d9a04ae80e43cce9527c1
+source-git-commit: 3e87d420591405e57e57e18fda4287d5fbd3bf1b
 workflow-type: tm+mt
-source-wordcount: '932'
-ht-degree: 46%
+source-wordcount: '723'
+ht-degree: 57%
 
 ---
 
@@ -35,7 +35,7 @@ Anta att du har följande träffdata:
 
 ## Exempel på åtkomstbegäran {#access}
 
-Om du skickar in en begäran om åtkomst får du två filer som du kan returnera till den registrerade. En fil är en CSV-fil som innehåller en rad för varje träff som tagits emot för den registrerade och en kolumn för varje variabel med lämplig åtkomstetikett. Den andra filen är en sammanfattande HTML-fil som listar varje variabel, följt av alla unika värden som ses för variabeln för den registrerade och antalet gånger som varje unikt värde sågs.
+Om du skickar in en begäran om åtkomst får du två filer som du kan returnera till den registrerade. En fil är en CSV-fil som innehåller en rad för varje träff som tagits emot för den registrerade och en kolumn för varje variabel med lämplig åtkomstetikett. Den andra filen är en sammanfattande HTML-fil som listar varje variabel, följt av alla unika värden som har setts för variabeln för den registrerade och det antal gånger varje unikt värde har observerats.
 
 Sammanfattningsfilen innehåller till exempel värdena som anges i tabellen nedan. En begäran kan bara returnera en enhetsfil, endast en personfil eller en av varje fil. Två sammanfattningsfiler returneras bara om ett person-ID används och `expandIds` är sant.
 
@@ -366,8 +366,4 @@ Om en borttagningsbegäran använder API-värdena i den första raden i tabellen
 Observera följande:
 
 * Celler på rader som innehåller `user=Mary` och en `DEL-PERSON`-etikett påverkas.
-* På grund av ID-expansion påverkas celler på rader som innehåller `AAID=77`, `AAID=88` eller `AAID=99` (som är AAID-värden på rader som innehåller `user=Mary`) och en `DEL-DEVICE` -etikett. Detta inkluderar celler med etiketten `DEL-DEVICE` på rader där `user=Mary` finns. Detta gör att celler i raderna 4 och 5 (samt raderna 1-3) med `DEL-DEVICE` etiketter (AAID, MyEvar2 och MyEvar3) döljs.
-* Inställningen expandIDs utökas inte till anropet för att inkludera värden som finns i MyEvar3 (`X`, `Y` och `Z`), som har en ID-DEVICE-etikett, när `user=Mary`. Expanderings-ID:n utökas endast så att de inkluderar Visitor-ID:n (AAID:n i det här exemplet, men även ECID:n) på rader där `user=Mary`. Därför påverkas inte de två sista raderna som innehåller MyEvar3-värden för `X` och `Z`.
-* `MyEvar2` i den fjärde och femte raden uppdateras eftersom de här raderna innehåller samma ID-värden för besökare (`77` och `88`) som för den första och andra raden. Detta resulterar i att ID-expansion inkluderar dem för borttagning på enhetsnivå.
-* Värdena för `MyEvar2` i rader två och fem matchar både före och efter borttagningen. Efter borttagningen matchar de emellertid inte längre värdet `N` som finns på den sista raden, eftersom den raden inte uppdaterades som en del av borttagningsbegäran.
-* `MyEvar3` beter sig på ett helt annorlunda än vad det gjorde utan ID-expansion, eftersom ingen `ID-DEVICES` matchade utan ID-expansion. `AAID` matchar nu på de första fem raderna.
+
