@@ -5,9 +5,9 @@ short-title: Analytics documentation updates
 feature: Release Notes
 exl-id: fe8e3c4c-6782-46f7-8e28-4f8f54807788
 mini-toc-levels: 3
-source-git-commit: c86bbff8e9b23cafdf2bd5a9e980be6d70ce3c5e
+source-git-commit: 37080906984b3c12f942b0618254b22fc72b8ceb
 workflow-type: tm+mt
-source-wordcount: '6168'
+source-wordcount: '6165'
 ht-degree: 18%
 
 ---
@@ -86,7 +86,7 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | --- | --- |
 | **December 2023** | |
 | Förbättrad dokumentation av robotregler | Uppdaterad information i [Förstå och konfigurera båda reglerna](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/bot-removal/bot-rules.md) för att förbättra klarheten.<p>Bland förbättringarna finns:</p> <ul><li>Artikeltiteln har uppdaterats för att bli mer beskrivande</li><li>Förbättrad organisation av information</li><li>Tillagda steg för att ange uppgiftsbaserad information</li><li>Mer information om kraven för CSV-filer har lagts till vid överföring av robotregler</li></ul> |
-| Avsnittet Nya rapporter | Ett nytt rapportavsnitt har lagts till som innehåller information om [hur du använder förbyggda rapporter](/help/analyze/analysis-workspace/reports/use-reports.md) och [skapar och hanterar företagsrapporter](/help/analyze/analysis-workspace/reports/create-company-reports.md). |
+| Avsnittet Nya rapporter | Ett nytt rapportavsnitt har lagts till som innehåller information om [Använd mallar](/help/analyze/analysis-workspace/templates/use-templates.md) och [skapa företagsmallar](/help/analyze/analysis-workspace/templates/create-templates.md). |
 | Uppdateringar av dokumentationen för avvikelseidentifiering och bidragsanalys | Dokumentationen för avvikelseidentifiering och bidragsanalys fanns tidigare i ett avsnitt om Virtual Analyst. Följande ändringar har gjorts: <ul><li>Termen Virtual Analyst har tagits bort från dokumentationen.</li><li>Avsnittet om [avvikelseidentifiering](/help/analyze/analysis-workspace/c-anomaly-detection/anomaly-detection.md) flyttades direkt under Analysis Workspace-avsnittet.</li><li>Bidragsanalysdokumentationen slogs samman i dokumentationen för avvikelseidentifiering.</li></ul> |
 | &quot;Attribution IQ&quot; har ändrats till &quot;Attribution&quot; | Alla instanser av Attribution IQ har ändrats till [Attribution](/help/analyze/analysis-workspace/attribution/overview.md) i dokumentationen. |
 | **November 2023** | |

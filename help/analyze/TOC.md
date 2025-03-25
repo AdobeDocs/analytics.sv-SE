@@ -4,9 +4,9 @@ audience: end-user
 user-guide-title: Handbok om Analytics-verktyg
 breadcrumb-title: Användarhandbok om verktyg
 user-guide-description: Lär dig hur du använder verktyg i Analytics, inklusive Analysis Workspace, Analytics Dashboards, Report Builder, Legacy Report Builder och Activity Map.
-source-git-commit: d5bbba7518529befabb8815ac657336326562fd1
+source-git-commit: 20093692327f555bfd78d99b2ec03146a5f2b181
 workflow-type: tm+mt
-source-wordcount: '965'
+source-wordcount: '956'
 ht-degree: 11%
 
 ---
@@ -43,9 +43,6 @@ ht-degree: 11%
       + [Snabbtangenter (kortkommandon)](analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
       + [Färgpaletter](analysis-workspace/build-workspace-project/color-palettes.md)
       + [Visa densitet](analysis-workspace/build-workspace-project/view-density.md)
-   + Rapporter {#reports}
-      + [Använd färdiga rapporter](analysis-workspace/reports/use-reports.md)
-      + [Skapa och hantera företagsrapporter](analysis-workspace/reports/create-company-reports.md)
    + Mallar {#templates}
       + [Använd mallar](analysis-workspace/templates/use-templates.md)
       + [Skapa mallar](analysis-workspace/templates/create-templates.md)

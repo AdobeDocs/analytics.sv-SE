@@ -4,9 +4,9 @@ title: Spara projekt
 feature: Workspace Basics
 role: User, Admin
 exl-id: e8206956-6e24-4a3a-8c3f-8acf1fb9d800
-source-git-commit: 954af58cc2f37f3c94f62320f3706f4360872ed8
+source-git-commit: 20093692327f555bfd78d99b2ec03146a5f2b181
 workflow-type: tm+mt
-source-wordcount: '697'
+source-wordcount: '696'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Så här sparar du ett projekt manuellt:
    | **[!UICONTROL Save]** | Spara ändringar i projektet. Om projektet delas visas även ändringarna av projektmottagarna. När du sparar projektet första gången uppmanas du att ge projektet ett namn, en (valfri) beskrivning och lägga till (valfria) taggar. |
    | **[!UICONTROL Save with notes]** | Lägg till anteckningar om vad som ändrats i projektet innan projektet sparas. Anteckningar lagras med projektversionen och är tillgängliga för alla redigerare under [!UICONTROL Project] > [!UICONTROL Open previous version]. |
    | **[!UICONTROL Save as]** | Skapa en kopia av projektet. Det ursprungliga projektet påverkas inte. |
-   | **[!UICONTROL Save as company report]** | Spara ditt projekt som en [företagsrapport](/help/analyze/analysis-workspace/reports/create-company-reports.md) som blir tillgänglig för din organisation under **[!UICONTROL Project > New]** |
+   | **[!UICONTROL Save as template]** | Spara projektet som en [mall](/help/analyze/analysis-workspace/templates/create-templates.md) som blir tillgänglig för din organisation under **[!UICONTROL Project > New]** |
 
 ## Spara automatiskt {#Autosave}
 

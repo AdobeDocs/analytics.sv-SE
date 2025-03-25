@@ -4,7 +4,7 @@ title: Använd mallar
 feature: Analysis Workspace
 role: User, Admin
 exl-id: 9e5d1b35-e2b3-4fa5-af12-67bb913675bc
-source-git-commit: 32a7a3d696fe0d39e2d8e50370b9072b49ef3a21
+source-git-commit: 20093692327f555bfd78d99b2ec03146a5f2b181
 workflow-type: tm+mt
 source-wordcount: '18642'
 ht-degree: 0%
@@ -41,7 +41,7 @@ Följande information beskriver hur du får åtkomst till och använder mallar f
 
    * **[!UICONTROL _login_company_name _-mallar]**: Visar alla företagsmallar som har skapats för din organisation.
 
-     Endast administratörer kan skapa företagsmallar. Mer information om hur du skapar en företagsmall finns i [Skapa och hantera mallar](/help/analyze/analysis-workspace/reports/create-company-reports.md).
+     Endast administratörer kan skapa företagsmallar. Mer information om hur du skapar en företagsmall finns i [Skapa och hantera mallar](/help/analyze/analysis-workspace/templates/create-templates.md).
 
 1. Använd något av följande alternativ för att ändra hur du visar de tillgängliga mallarna:
 

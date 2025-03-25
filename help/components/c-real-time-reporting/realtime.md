@@ -4,9 +4,9 @@ title: Översikt över rapportering i realtid
 topic-fix: Reports
 feature: Real-time
 exl-id: 056235bc-42ea-4118-aa54-bc7666044fe3
-source-git-commit: be5a73347d417c8dc6667d4059e7d46ef5f0f5cd
+source-git-commit: 20093692327f555bfd78d99b2ec03146a5f2b181
 workflow-type: tm+mt
-source-wordcount: '590'
+source-wordcount: '600'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,9 @@ Realtidsrapportering visar webbsidans trafik och rangordnar sidvyerna i realtid.
 
 1. I Analysis Workspace väljer du fliken [!UICONTROL **Workspace**].
 
-1. Välj [!UICONTROL **Rapporter**] > [!UICONTROL **engagemang**] > **[!UICONTROL Real-Time]**.
+1. Till vänster på sidan, under **[!UICONTROL Templates]**, väljer du [!UICONTROL **Adobe-mallar**].
+
+1. Välj [!UICONTROL **engagemang**] > **[!UICONTROL Real-Time]**.
 
 ## Förstå realtidsrapportering
 

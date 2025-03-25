@@ -1,24 +1,24 @@
 ---
-source-git-commit: ca1e86606454c2f906cef0cc1d1a9d1c67cedf0e
+source-git-commit: ec42c462ac98a49b89f0fae29b3b561a6afe7820
 workflow-type: tm+mt
-source-wordcount: '2360'
+source-wordcount: '2353'
 ht-degree: 0%
 
 ---
 # Fragment
 
-## Report Builder äldre {#legacy-arb}
+## Äldre Report Builder {#legacy-arb}
 
 >[!IMPORTANT]
 >
 >Ett nytt och smidigt [Report Builder](https://experienceleague.adobe.com/en/docs/analytics/analyze/report-builder/report-buider-overview) släpptes 16 oktober 2024. Det stöds i Mac, Windows och webbläsare.
->Denna äldre Report Builder-tilläggsversion fungerar fortfarande. Du kan [konvertera dina gamla arbetsböcker](https://experienceleague.adobe.com/en/docs/analytics/analyze/report-builder/convert-workbooks) till nya Report Builder.
+>Denna äldre Report Builder-tilläggsversion fungerar fortfarande. Du kan [konvertera dina äldre arbetsböcker](https://experienceleague.adobe.com/en/docs/analytics/analyze/report-builder/convert-workbooks) till nya Report Builder.
 
 ## Rapporter och analyser - meddelande om att produkten har upphört att gälla {#ra-eol}
 
 >[!IMPORTANT]
 >
->Från och med den **17 januari 2024** har Adobe avbrutit rapporter och analyser och tillhörande rapporter och funktioner. Vid den tidpunkten slutade rapporter och analyser och alla rapporter och tidsplaner att fungera. Rapporterna, visualiseringarna och den underliggande tekniken som används i Rapporter och analyser uppfyller inte längre Adobe teknikstandarder. De flesta funktionerna Rapporter och Analytics är tillgängliga i Analysis Workspace. Mer information om hur du använder rapporter i Analysis Workspace finns i [Använda färdigbyggda rapporter](/help/analyze/analysis-workspace/reports/use-reports.md).
+>Från och med den **17 januari 2024** har Adobe upphört med Rapporter och analyser och tillhörande rapporter och funktioner. Vid den tidpunkten slutade rapporter och analyser och alla rapporter och tidsplaner att fungera. Rapporterna, visualiseringarna och den underliggande tekniken som används i rapporter och analyser uppfyller inte längre Adobe teknikstandarder. De flesta funktionerna Rapporter och Analytics är tillgängliga i Analysis Workspace. Mer information finns i [Använda mallar](/help/analyze/analysis-workspace/templates/use-templates.md).
 > 
 >Sedan Analysis Workspace lanserades 2015 har funktionerna och funktionerna i Rapporter och analyser flyttats till Analysis Workspace och en tröskel på arbetsflödets paritet har uppnåtts. Det här meddelandet förklarar processen vid slutet av livscykeln.
 >
