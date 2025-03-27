@@ -5,9 +5,9 @@ short-title: Analytics documentation updates
 feature: Release Notes
 exl-id: fe8e3c4c-6782-46f7-8e28-4f8f54807788
 mini-toc-levels: 3
-source-git-commit: 527a9d5cdcb1ceb32073e2d444b892c0183394c1
+source-git-commit: 80dc39ebf0a9b7122b346e2045498ad21eedc0fe
 workflow-type: tm+mt
-source-wordcount: '6262'
+source-wordcount: '6283'
 ht-degree: 18%
 
 ---
@@ -26,6 +26,7 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | Funktion | Beskrivning |
 | --- | --- |
 | **Mars 2025** |  |
+| Customer Journey Analytics uppgraderingsguide | Gör att du kan generera en [steg-för-steg-guide](https://experienceleague.adobe.com/en/docs/analytics-platform/using/compare-aa-cja/upgrade-to-cja/cja-upgrade-recommendations?lang=en#recommended-upgrade-steps-for-most-organizations) för uppgradering från Adobe Analytics till Customer Journey Analytics. |
 | Tydligare datumformat i Data Warehouse-exporter | Tidsbaserade dimensionsvärden i Data Warehouse-exporter har en annan datumformatering än standard. Tillagd information som förklarar hur datumvärden från Data Warehouse-exporter kan tolkas. <p>Se [Dimensioner stöds på ett annat sätt (datumformatering som inte är standard)](/help/export/data-warehouse/component-support.md#dimensions-supported-in-a-different-way-non-standard-date-formatting) i [Komponentstöd i Data Warehouse](/help/export/data-warehouse/component-support.md).</p> |
 | Uppdaterad information om IP-undantag | Tillagd information som förklarar att [IP-undantag](/help/admin/admin/exclude-ip.md) kan ta upp till 5 minuter innan de träder i kraft och att ändringarna bara gäller för nya träffar (data som fångats in innan undantaget ställdes in påverkas inte). <p>Innehållets layout har också uppdaterats för att förbättra läsbarheten.</p> |
 | **Februari 2025** |  |
