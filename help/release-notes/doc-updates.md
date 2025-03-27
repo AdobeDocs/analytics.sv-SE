@@ -5,9 +5,9 @@ short-title: Analytics documentation updates
 feature: Release Notes
 exl-id: fe8e3c4c-6782-46f7-8e28-4f8f54807788
 mini-toc-levels: 3
-source-git-commit: 37080906984b3c12f942b0618254b22fc72b8ceb
+source-git-commit: 527a9d5cdcb1ceb32073e2d444b892c0183394c1
 workflow-type: tm+mt
-source-wordcount: '6165'
+source-wordcount: '6262'
 ht-degree: 18%
 
 ---
@@ -25,6 +25,9 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 
 | Funktion | Beskrivning |
 | --- | --- |
+| **Mars 2025** |  |
+| Tydligare datumformat i Data Warehouse-exporter | Tidsbaserade dimensionsvärden i Data Warehouse-exporter har en annan datumformatering än standard. Tillagd information som förklarar hur datumvärden från Data Warehouse-exporter kan tolkas. <p>Se [Dimensioner stöds på ett annat sätt (datumformatering som inte är standard)](/help/export/data-warehouse/component-support.md#dimensions-supported-in-a-different-way-non-standard-date-formatting) i [Komponentstöd i Data Warehouse](/help/export/data-warehouse/component-support.md).</p> |
+| Uppdaterad information om IP-undantag | Tillagd information som förklarar att [IP-undantag](/help/admin/admin/exclude-ip.md) kan ta upp till 5 minuter innan de träder i kraft och att ändringarna bara gäller för nya träffar (data som fångats in innan undantaget ställdes in påverkas inte). <p>Innehållets layout har också uppdaterats för att förbättra läsbarheten.</p> |
 | **Februari 2025** |  |
 | Uppdaterad information om att pausa och återaktivera en datafeed | När [pausar och återaktiverar en datafeed](/help/export/analytics-data-feed/df-manage-feeds.md#activate-a-data-feed) klargjordes beteendet för livefeeds. Databearbetningen sker inte från den tidpunkt då flödet pausas till den tidpunkt då det återaktiveras. |
 | Lagringsperiod för ändrat transaktions-ID | Kvarhållningsperioden för transaktions-ID på 90 dagar förlängdes till 25 månader. Variabeln transactionID identifierar en transaktion unikt så att träffen kan koppla till data som överförs via datakällor. Läs mer [här](https://experienceleague.adobe.com/en/docs/analytics/implementation/vars/page-vars/transactionid?lang=en) och [här](https://experienceleague.adobe.com/en/docs/analytics/import/data-sources/transactionid?lang=en). |
