@@ -1,23 +1,22 @@
 ---
-title: AppMeasurement för JavaScript versionsinformation
-description: Kumulativ versionsinformation för AppMeasurement för JavaScript.
+title: Versionsinformation om AppMeasurement för JavaScript
+description: Versionsinformation för AppMeasurement för JavaScript.
 feature: Appmeasurement Implementation
 exl-id: 80b935f0-3ec5-4ffa-9858-f83ae9a6b763
 role: Admin, Developer, Leader, User
-source-git-commit: e403ed5ff1a1b6aa56d4f4112bbd7a7c072cc844
+source-git-commit: 886c6070936275cf1df269a951b87d041fcf7b8c
 workflow-type: tm+mt
-source-wordcount: '2717'
+source-wordcount: '2726'
 ht-degree: 3%
 
 ---
 
-# AppMeasurement för JavaScript versionsinformation
+# Versionsinformation om AppMeasurement för JavaScript
 
-Kumulativ versionsinformation för AppMeasurement för JavaScript.
+>[!IMPORTANT]
+>
+>Från om med mars 2025 kommer den här artikeln inte längre att uppdateras. Du kan visa versionsinformation för och hämta den senaste versionen av AppMeasurement från [GitHub](https://github.com/adobe/appmeasurement/releases).
 
-<!-- https://wiki.corp.adobe.com/display/omtrcache/AppMeasurement+Change+Log -->
-
-Du kan hämta den senaste versionen av AppMeasurementet från [GitHub](https://github.com/adobe/appmeasurement/releases).
 
 ## Version 2.27.0
 
@@ -32,8 +31,8 @@ Releasedatum: **12 augusti 2024**
 
 Releasedatum: **4 mars 2024**
 
-* AppMeasurementet känner automatiskt igen och använder rotdomänen för landskodens toppnivådomäner, som tidigare krävde särskilda cookie-domänkonfigurationer. Uppdatering kan få konsekvenser på grund av den här automatiska igenkänningen. Mer information finns i [`cookieDomainPeriods`](/help/implement/vars/config-vars/cookiedomainperiods.md).
-* Distributionen innehåller Identity Service Library 5.5.0 och Data Integration Library 9.6.
+* AppMeasurement känner automatiskt igen och använder rotdomänen för landskodens toppnivådomäner, som tidigare krävde särskilda cookie-domänkonfigurationer. Uppdatering kan få konsekvenser på grund av den här automatiska igenkänningen. Mer information finns i [`cookieDomainPeriods`](/help/implement/vars/config-vars/cookiedomainperiods.md).
+* Distribution inkluderar Identity Service Library 5.5.0 och Data Integration Library 9.6.
 
 ## Version 2.25.0
 
@@ -48,13 +47,13 @@ Releasedatum: **18 juli 2023**
 
 * Den valfria konfigurationsvariabeln [`decodeLinkParameters`](vars/config-vars/decodelinkparameters.md) har lagts till för att avkoda länk-URL:er som innehåller dubbelbytetecken.
 * Ytterligare felhantering har lagts till för webbläsare med felaktiga API:er för användaragenttips.
-* POSTENS Content-Type-huvud har ändrats så att `x-www-form-urlencoded` används som standard.
+* Rubriken POST-innehållstyp har ändrats till `x-www-form-urlencoded` som standard.
 
 ## Version 2.23.0
 
 Releasedatum: **23 september 2022**
 
-* AppMeasurementet har nu stöd för en samling klienttips för användaragenter med hög entropi som används i Chromium-webbläsare (Google Chrome och Microsoft Edge) för att tillhandahålla enhetsinformation. Du kan konfigurera klienttips via taggar eller använda konfigurationsvariabeln [`collectHighEntropyUserAgentHints`](vars/config-vars/collecthighentropyuseragenthints.md). Samling med hög entropi-tips är inaktiverad som standard. Läs mer om användaragenten [klienttips](/help/technotes/client-hints.md).
+* AppMeasurement har nu stöd för en samling klienttips för användaragenter med hög entropi som används i Chromium-webbläsare (Google Chrome och Microsoft Edge) för att tillhandahålla enhetsinformation. Du kan konfigurera klienttips via taggar eller använda konfigurationsvariabeln [`collectHighEntropyUserAgentHints`](vars/config-vars/collecthighentropyuseragenthints.md). Samling med hög entropi-tips är inaktiverad som standard. Läs mer om användaragenten [klienttips](/help/technotes/client-hints.md).
 
 ## Version 2.22.4
 
@@ -108,7 +107,7 @@ Releasedatum: **21 februari 2020**
 
 Releasedatum: **13 februari 2020**
 
-* AppMeasurementet kan nu tvinga cookies att inkludera attributet Secure genom att ange variabeln [`writeSecureCookies`](vars/config-vars/writesecurecookies.md). Kravet för den här variabeln är att hela klientwebbplatsen hanteras säkert (HTTPS). (AN-204604)
+* AppMeasurement kan nu tvinga cookies att inkludera attributet Secure genom att ange variabeln [`writeSecureCookies`](vars/config-vars/writesecurecookies.md). Kravet för den här variabeln är att hela klientwebbplatsen hanteras säkert (HTTPS). (AN-204604)
 
 ## Version 2.17.0
 
@@ -125,21 +124,21 @@ Releasedatum: **15 augusti 2019**
 * ECID-/FID-värden cachelagras nu vid den första träffen trots att OptIn-inställningarna ändras. (AN-175142)
 * Audience Management Module har uppdaterats till DIL 9.3. (AN-182704)
 * Växeln i `s.ActivityMap.trackScrollReach` exponerades för att aktivera eller inaktivera rullningsspårning. (AN-182754)
-* Uppgraderat AppMeasurement för användning av Visitor ID Service 4.4.0. (AN-182912)
+* Uppgraderade AppMeasurement till att använda Visitor ID Service 4.4.0. (AN-182912)
 
 ## Version 2.15.0
 
 Releasedatum: **15 juli 2019**
 
-* Lagt till spårning av rullningsområde för ActivityMap i tillägget Activity Map (AN-172949)
-* DIL 9.2 har lagts till i AppMeasurementet (AN-182472)
+* Lagt till spårning av rullningsområde för ActivityMap i Activity Map-tillägget (AN-172949)
+* DIL 9.2 har lagts till i AppMeasurement (AN-182472)
 
 ## Version 2.14.0
 
 Releasedatum: **21 maj 2019**
 
 * Problem med hanteringen av spårarparametrarnas tillstånd när flera träffar väntar har åtgärdats. (AN-176931, AN-176629, DTM-12758)
-* Uppdaterat AppMeasurement som inkluderar Visitor.js 4.3.0 (AN-180049)
+* Uppdaterat AppMeasurement med Visitor.js 4.3.0 (AN-180049)
 
 ## Version 2.13.0
 
@@ -153,13 +152,13 @@ Releasedatum: **22 februari 2019**
 
 * Uppdaterad målgruppshanteringsmodul till DIL 9.1. (AN-175255)
 * GTM-säkerhetsprincipen tillåter inte Activity Map-modulen. (AN-174679)
-* Förbättrat AppMeasurement för avanmälan när identitetstjänsten inte har godkänts i avanmälan. (AN-175259)
+* Förbättrade AppMeasurement för att efterleva avanmälan när identitetstjänsten inte har godkänts i avanmälan. (AN-175259)
 
 ## Version 2.11.0
 
 Releasedatum: **11 februari 2019**
 
-* Stöd har lagts till för de nya Adobe-funktionerna för anmälningstjänster i AppMeasurement. (AN-163546)
+* Stöd för de nya funktionerna för avanmälningstjänster från Adobe i AppMeasurement har lagts till. (AN-163546)
 * Stöd för lagring av länkspårningsdata i sessionslagring har lagts till. (AN-162272)
 * Stöd för medieströmstyp för ljudanalys har lagts till. (AN-173265)
 
@@ -180,7 +179,7 @@ Releasedatum: **24 maj 2018**
 
 >[!NOTE]
 >
->Besökar-API 3.0 eller senare krävs för kunder som använder ID-tjänsten [!DNL Experience Cloud]. Adobe rekommenderar att du uppgraderar till den senaste versionen av Visitor API när associerade kodbibliotek uppdateras ( [!DNL at.js], [!DNL AppMeasurement.js] o.s.v.).
+>Besökar-API 3.0 eller senare krävs för kunder som använder ID-tjänsten [!DNL Experience Cloud]. Adobe rekommenderar att du uppgraderar till den senaste versionen av Visitor API när associerade kodbibliotek uppdateras ( [!DNL at.js], [!DNL AppMeasurement.js] osv.).
 
 * [!DNL AppMeasurement] har uppdaterats för att använda det uppdaterade besökargränssnittet för att begära ID:n. (AN-151483)
 * Ett problem har korrigerats där cookie för länkspårning fortsätter att skrivas efter att länkspårning har inaktiverats. (AN-156332)
@@ -216,7 +215,7 @@ Releasedatum: **18 januari 2018**
 
 * Släpper stöd för IE 6 till 9
 * Inkludering av Visitor API v3.0.0
-* Inkludering av DIL v7.00
+* DIL v7.00 ingår
 
 ## Version 2.6.0
 
@@ -282,9 +281,9 @@ Releasedatum: **19 januari 2017**
 Uppdaterat: **11 november 2016**
 
 * Inkludera Visitor API 1.10.1.
-* Uppdatera modulen [!DNL Audience Manager] med Demdex Integration Library (DIL) 6.6. (AN-132065)
+* Uppdatera modulen [!DNL Audience Manager] med DIL 6.6 (Demdex Integration Library). (AN-132065)
 * Inkludering av Visitor API 1.9.0. (AN-132072)
-* Uppdatera [!DNL AppMeasurement] [!DNL Audience Manager]-modulen med DIL 6.5 och ytterligare konfigurationer (AN-129411)
+* Uppdatera [!DNL AppMeasurement] [!DNL Audience Manager] modul med DIL 6.5 och ytterligare konfigurationer (AN-129411)
 * Inkludering av Visitor API 1.8.0 (AN-129887)
 
 ## Version 1.6.4
@@ -327,7 +326,7 @@ Releasedatum: **16 juni 2016**
 
 Releasedatum: **21 april 2016**
 
-* Modulen [!DNL AppMeasurement] Activity Map har integrerats i standardmodulen [!DNL AppMeasurement] så att du bara behöver referera till en [!DNL .js]-fil. Spårning av Activity Map är dessutom aktiverat som standard. (AN-112689)
+* Activity Map-modulen [!DNL AppMeasurement] har integrerats i standardmodulen [!DNL AppMeasurement] så att du bara behöver referera till en [!DNL .js]-fil. Dessutom är Activity Map tracking aktiverat som standard. (AN-112689)
 * Ett trunkeringsproblem som uppstod med ordningen för frågesträngsvariabler i [!DNL AppMeasurement] har korrigerats, så att *`pageURLRest`* är sist. (AN-114647)
 
 ## Version 1.5.4
@@ -370,7 +369,7 @@ Releasedatum: **18 juni 2015**
 
 Releasedatum: **21 maj 2015**
 
-* Med början i iOS SDK version 4.5 kan du med ett nytt iOS-tillägg samla in användningsdata från dina Apple Watch-appar, Today-widgetar, fotoredigeringswidgetar och alla andra iOS-tilläggsappar.
+* Med början i iOS SDK version 4.5 kan du med ett nytt iOS-tillägg samla in användningsdata från dina Apple Watch-appar, Idag-widgetar, Photo Editing-widgetar och alla andra iOS-tilläggsappar.
 * Med början i Android SDK version 4.5 kan du med ett nytt Android-tillägg samla in data från din Android app.
 * Inkludering av Visitor API 1.4.
 * AudienceManagement-modulen har uppdaterats för att använda DIL version 6.0.
@@ -421,11 +420,11 @@ Releasedatum: **18 september 2014**
 * På sidor som är dubbeltaggade med H-kod har en loop som kan inträffa vid automatisk länkspårning (hämtning och avslut) korrigerats med när fast länkspårning är aktiverat (standard i Webkit-webbläsare). Dessutom lades en allmän skyddsåtgärd till runt automatisk länkspårning för att förhindra liknande slingor. Den här skyddsfunktionen begränsar automatisk länkspårning av upprepade klickningar till objektet *same* till en gång var 10:e sekund. Skyddet gäller endast automatisk länkspårning, så manuella länkspårningsanrop (s.tl) är inte begränsade. Klickningar på olika objekt påverkas inte heller av den här skyddsfunktionen och spåras.
 * Korrigerad hantering av klickade objekt när en fördröjning behövs.
 * Korrigerade ett problem som orsakade ett dubbelsidigt antal sidor när s.t anropades från en länk-onclick-funktion, om Visitor-API:t inte har de värden som behövs ännu.
-* Stöd för HTTP-POST.
+* Stöd för HTTP POST.
 
   >[!IMPORTANT]
   >
-  >För att ett [!DNL Analytics]-anrop ska kunna använda metoden POST i stället för metoden GET i [!DNL AppMeasurement] (en metod för att lösa [trunkerade URL:er i IE](https://helpx.adobe.com/analytics/kb/shortening-image-request-urls.html)) måste du använda den senaste implementeringen av Visitor ID-tjänsten för Experience Cloud.
+  >För att ett [!DNL Analytics]-anrop ska kunna använda metoden POST i stället för GET i [!DNL AppMeasurement] (en metod för att lösa [trunkerade URL:er i IE](https://helpx.adobe.com/analytics/kb/shortening-image-request-urls.html)) måste du använda den senaste implementeringen av Visitor ID-tjänsten för Experience Cloud.
 
 ## Version 1.4
 
@@ -474,7 +473,7 @@ Releasedatum: **20 februari 2014**
 
 Releasedatum: **6 februari 2014**
 
-* Ett kompatibilitetsproblem med modulen [!DNL Audience Manager] DIL har korrigerats. [!DNL Audience Manager]-kunder måste också uppdatera till version 4.8 i modulen DIL.
+* Ett kompatibilitetsproblem med DIL-modulen [!DNL Audience Manager] har korrigerats. [!DNL Audience Manager]-kunder måste även uppdatera till version 4.8 av DIL-modulen.
 
 ## Version 1.2.1
 
@@ -505,7 +504,7 @@ Releasedatum: **18 september 2013**
 
 Releasedatum: **15 augusti 2013**
 
-* Stöd för driftsättning via tagghantering i Adobe har lagts till.
+* Stöd för driftsättning genom Adobe tagghantering har lagts till.
 * Korrigerade ett problem som förhindrade att hierarkivariabler angavs för objektet [!DNL AppMeasurement].
 
 ## Version 1.0.2
