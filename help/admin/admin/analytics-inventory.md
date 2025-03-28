@@ -5,10 +5,11 @@ feature: Admin Tools
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 5ceb21e8d3ed711fd3d789aef0b6ae589ee2dd1e
+exl-id: 9fc985c8-93d7-4838-9342-72a6268ef96f
+source-git-commit: 2f61febc3e19b4b8d57833204b987cb64a9b7467
 workflow-type: tm+mt
-source-wordcount: '162'
-ht-degree: 1%
+source-wordcount: '276'
+ht-degree: 0%
 
 ---
 
@@ -24,6 +25,27 @@ ht-degree: 1%
 <!-- markdownlint-enable MD034 -->
 
 Analysinventeringen ger en omfattande översikt över din Adobe Analytics-miljö, inklusive antalet projekt och komponenter, rapportsviter, användare med mera. Den här informationen är särskilt värdefull när du börjar förbereda dig för att uppgradera till Customer Journey Analytics.
+
+Programmets mål är att hjälpa dig att svara på följande frågor:
+
+* Vilka resurser (till exempel rapportsviter, segment, användare, arbetsyteprojekt, dataflöden) behöver du uppgradera för din organisation och vilka resurser kan du lämna kvar?
+
+* När du har fastställt vilken resurs som behöver migreras:
+
+   * Bör du rensa resurser före uppgraderingen?
+
+   * Ska du göra en inventariekonsolidering som en del av processen?
+
+   * Vad ska uppgraderingssekvensen vara för dina mediefiler?
+
+   * Vilken grupp av rapportsviter ska du uppgradera först? sist?
+
+## Access Analytics-inventering
+
+Analysinventeringen är tillgänglig på menyn **[!UICONTROL Admin]** och på menyalternativet **[!UICONTROL All admin]**.
+
+    ![Analyslager-menyn](assets/an-inventory-menu.png)
+
 
 ## Komponenter {#components}
 
@@ -59,5 +81,3 @@ Analysinventeringen ger en omfattande översikt över din Adobe Analytics-miljö
 >abstract="I det här avsnittet visas antalet användare i din Adobe Analytics-miljö."
 
 <!-- markdownlint-enable MD034 -->
-
-
