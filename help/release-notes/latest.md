@@ -3,10 +3,10 @@ title: Aktuella versionsinformation för Adobe Analytics
 description: Visa den aktuella versionsinformationen för Adobe Analytics
 feature: Release Notes
 exl-id: 97d16d5c-a8b3-48f3-8acb-96033cc691dc
-source-git-commit: a7a80fc9845382eaa5b15dc6c325015de0a0cd9e
+source-git-commit: e0f6b7b5b2933add7f67873a945b78e4200116eb
 workflow-type: tm+mt
-source-wordcount: '721'
-ht-degree: 4%
+source-wordcount: '719'
+ht-degree: 2%
 
 ---
 
@@ -54,7 +54,7 @@ Versionsanteckningarna gäller från 5 mars till 5 maj 2025. Adobe Analytics-rel
 
 ## AppMeasurement
 
-Uppdaterad information om de senaste AppMeasurement-versionerna finns i [versionsinformationen för AppMeasurement för JavaScript](https://github.com/adobe/appmeasurement/releases).
+De senaste uppdateringarna för AppMeasurement finns i [AppMeasurement versionsinformation](https://github.com/adobe/appmeasurement/releases).
 
 
 ## Relaterade resurser
