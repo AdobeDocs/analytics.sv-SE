@@ -6,10 +6,10 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 9fc985c8-93d7-4838-9342-72a6268ef96f
-source-git-commit: fceb28b7af480e6d87abf09c26f45a7afb2d3270
+source-git-commit: 1e52aecdbb26dce0875b2df685ed2fa860eaba85
 workflow-type: tm+mt
-source-wordcount: '499'
-ht-degree: 2%
+source-wordcount: '719'
+ht-degree: 1%
 
 ---
 
@@ -54,9 +54,13 @@ Analysinventering är tillgängligt för användare med Adobe Analytics produkta
 
    ![Huvudlagerskärm](assets/an_inventory.png)
 
->[!IMPORTANT]
->
->   I den här initiala versionen kan du se sammanfattningsnummer för Workspace-projekt, segment, beräknade värden, avancerade data (Media Analytics) och användare. För närvarande är rapportsviter de enda objekt som kan användas.
+   Den här skärmytan
+
+   * Det totala antalet Analysis Workspace- och Mobile Scorecard-projekt som är aktiva under den här organisationen för alla användare.
+   * Det totala antalet segment och beräknade värden som är aktiva under den här organisationen för alla användare.
+   * Det totala antalet basrapportsviter som har definierats (virtuella rapportsviter ingår inte).
+   * Om funktionen Media Analytics är aktiv och i så fall i vilket läge.
+   * Det totala antalet användare som definieras under den organisationen.
 
 
 ## Komponenter {#components}
@@ -83,9 +87,18 @@ I den här första versionen kan du se en sammanfattning av lagernumren för Wor
 
 <!-- markdownlint-enable MD034 -->
 
-### Analysera rapportsviter
+### Rapportsviter
 
-1. Om du vill analysera rapportsviter och bestämma vilka som ska migreras går du till **[!UICONTROL Data configuration and collection]** > **[!UICONTROL Report suites]** och klickar på **[!UICONTROL Analyze]**.
+Vyn Rapportsviter visar alla rapportsviter som definierats under en organisation. Här kan du besvara följande frågor:
+
+* Vilka rapportsviter har fått flest träffar de senaste 90 dagarna?
+* Vilka rapportsviter har inte fått någon träff de senaste 90 dagarna?
+* Vilka rapportsviter har det största antalet definierade dimensioner?
+* Vilka rapportsviter har det största antalet definierade mätvärden?
+
+Svaren på dessa frågor ger er en bra uppfattning om vilka rapporteringsprogram som är de bästa kandidaterna till migrering.
+
+1. Om du vill analysera rapportsviter går du till **[!UICONTROL Data configuration and collection]** > **[!UICONTROL Report suites]** och klickar på **[!UICONTROL Analyze]**.
 
    ![Lista över rapportsviter](assets/an_inv_rs.png)
 
@@ -93,12 +106,12 @@ I den här första versionen kan du se en sammanfattning av lagernumren för Wor
    | --- | --- |
    | Namn | Namnet på rapportsviten |
    | ID | Rapportsvitens ID (rsid). Anger ett unikt ID som bara kan innehålla alfanumeriska tecken. Detta ID kan inte ändras efter att det har skapats. Adobe anger det ID-prefix som krävs och kan inte heller ändras. |
-   | Förekomster (de senaste 90 dagarna) |  |
-   | Mätvärden | Hur |
-   | Mått |  |
-   | Analyser för mål (A4T) har aktiverats |  |
-   | Marknadsföringskanaler är aktiverade |  |
-   | Source Connector är aktiverat | Följ |
+   | Förekomster (de senaste 90 dagarna) | Hur många träffar fick den här rapportsviten de senaste 90 dagarna? |
+   | Mätvärden | Hur många mätvärden definieras i denna rapportserie? |
+   | Mått | Hur många dimensioner definieras i den här rapportsviten? |
+   | Analyser för mål (A4T) har aktiverats | Är den här rapportsviten aktiverad för [Analytics för Target](https://experienceleague.adobe.com/en/docs/target/using/integrate/a4t/a4t)? |
+   | Marknadsföringskanaler är aktiverade | Är den här rapportsviten aktiverad för [marknadsföringskanaler](https://experienceleague.adobe.com/en/docs/analytics/components/marketing-channels/c-getting-started-mchannel)? |
+   | Source Connector är aktiverat | [Under utveckling] Är den här rapportsviten aktiverad för [Adobe Analytics Source Connector för rapportsvitsdata](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/analytics) i Adobe Experience Platform? Med andra ord, kan den här rapportsviten migreras till Customer Journey Analytics med Analytics Source Connector? |
    | Kalendertyp | Mer information finns i [Anpassade kalendrar](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/custom-calendar#) |
 
 1. Observera att..
