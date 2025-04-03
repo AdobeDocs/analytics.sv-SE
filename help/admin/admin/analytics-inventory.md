@@ -6,10 +6,10 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 9fc985c8-93d7-4838-9342-72a6268ef96f
-source-git-commit: fe1074403992c1dd28778f279cafe4e557dfe4fd
+source-git-commit: fceb28b7af480e6d87abf09c26f45a7afb2d3270
 workflow-type: tm+mt
-source-wordcount: '269'
-ht-degree: 0%
+source-wordcount: '499'
+ht-degree: 2%
 
 ---
 
@@ -40,11 +40,23 @@ Programmets mål är att hjälpa dig att svara på följande frågor:
 
    * Vilken grupp av rapportsviter ska du uppgradera först? sist?
 
+## Behörigheter
+
+Analysinventering är tillgängligt för användare med Adobe Analytics produktadministratörsbehörighet i [Adobe Admin Console](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-console/admin-roles-in-analytics).
+
 ## Access Analytics-inventering
 
-[!UICONTROL Analytics Inventory] är tillgängligt på menyn **[!UICONTROL Admin]** och på menyalternativet **[!UICONTROL All admin]**.
+1. Klicka på **[!UICONTROL Analytics Inventory]** på menyn **[!UICONTROL Admin]**. Eller gå till **[!UICONTROL All admin]** > **[!UICONTROL Analytics Inventory]**.
 
 ![Analytics-Inventory-menu](assets/an-inventory-menu.png)
+
+1. På huvudskärmen visas en omfattande förteckning över din Adobe Analytics-miljö:
+
+   ![Huvudlagerskärm](assets/an_inventory.png)
+
+>[!IMPORTANT]
+>
+>   I den här initiala versionen kan du se sammanfattningsnummer för Workspace-projekt, segment, beräknade värden, avancerade data (Media Analytics) och användare. För närvarande är rapportsviter de enda objekt som kan användas.
 
 
 ## Komponenter {#components}
@@ -58,6 +70,7 @@ Programmets mål är att hjälpa dig att svara på följande frågor:
 
 <!-- markdownlint-enable MD034 -->
 
+I den här första versionen kan du se en sammanfattning av lagernumren för Workspace-projekt, segment och beräknade värden. I efterföljande versioner kan du analysera dessa komponenter.
 
 ## Datakonfiguration och insamling {#data-config}
 
@@ -70,6 +83,34 @@ Programmets mål är att hjälpa dig att svara på följande frågor:
 
 <!-- markdownlint-enable MD034 -->
 
+### Analysera rapportsviter
+
+1. Om du vill analysera rapportsviter och bestämma vilka som ska migreras går du till **[!UICONTROL Data configuration and collection]** > **[!UICONTROL Report suites]** och klickar på **[!UICONTROL Analyze]**.
+
+   ![Lista över rapportsviter](assets/an_inv_rs.png)
+
+   | Element | Beskrivning |
+   | --- | --- |
+   | Namn | Namnet på rapportsviten |
+   | ID | Rapportsvitens ID (rsid). Anger ett unikt ID som bara kan innehålla alfanumeriska tecken. Detta ID kan inte ändras efter att det har skapats. Adobe anger det ID-prefix som krävs och kan inte heller ändras. |
+   | Förekomster (de senaste 90 dagarna) |  |
+   | Mätvärden | Hur |
+   | Mått |  |
+   | Analyser för mål (A4T) har aktiverats |  |
+   | Marknadsföringskanaler är aktiverade |  |
+   | Source Connector är aktiverat | Följ |
+   | Kalendertyp | Mer information finns i [Anpassade kalendrar](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/custom-calendar#) |
+
+1. Observera att..
+
+### Exportera till CSV
+
+1. Om du vill exportera listan med rapportsviter till en CSV-fil klickar du på **[!UICONTROL Export to CSV]**.
+
+1. CSV-filen visas i mappen Downloads.
+
+1. Öppna och spara den med ett kalkylbladsprogram på enheten.
+
 
 ## Användarhantering {#user-management}
 
@@ -81,3 +122,5 @@ Programmets mål är att hjälpa dig att svara på följande frågor:
 >abstract="I det här avsnittet visas antalet användare i din Adobe Analytics-miljö."
 
 <!-- markdownlint-enable MD034 -->
+
+Användarhantering kommer att vara tillgänglig i en senare version av Analytics-inventeringen.
