@@ -4,9 +4,9 @@ title: Analysinventering
 feature: Admin Tools
 role: Admin
 exl-id: 9fc985c8-93d7-4838-9342-72a6268ef96f
-source-git-commit: bab2bf61a2cf03f3e2b809d6383503b0c9bd5a36
+source-git-commit: 1a6f086105c76cbfcf361ddc54d71a7e7c4921d5
 workflow-type: tm+mt
-source-wordcount: '1111'
+source-wordcount: '1162'
 ht-degree: 1%
 
 ---
@@ -157,7 +157,7 @@ Den här skärmen innehåller en detaljerad vy över alla mått som definierats 
 
 1. Bestäm vilka mätvärden som är bra att migrera till CJA.
 
-#### Exportera till CSV
+### Exportera till CSV
 
 1. Om du vill exportera listan med rapportsviter, dimensioner eller mått till en CSV-fil klickar du på **[!UICONTROL Export to CSV]**.
 
@@ -170,7 +170,7 @@ Den här skärmen innehåller en detaljerad vy över alla mått som definierats 
 >Objekt och kolumner som är filtrerade ut exporteras inte till CSV-filen.
 
 
-#### Filtrera, söka, ordna och navigera
+### Filtrera, söka, ordna och navigera
 
 * Du kan söka i tabellen.
 * Klicka på filterikonen till vänster om du vill filtrera efter &quot;Typ&quot;. Eller klicka på **[!UICONTROL Hide Filter]**.
@@ -189,3 +189,13 @@ Den här skärmen innehåller en detaljerad vy över alla mått som definierats 
 <!-- markdownlint-enable MD034 -->
 
 Användarhantering kommer att vara tillgänglig i en senare version av Analytics-inventeringen.
+
+## Migrera komponenter
+
+Med [Komponentmigrering](/help/admin/admin/component-migration/component-migration.md) kan Adobe Analytics-administratörer migrera Analytics-projekt och tillhörande komponenter till Customer Journey Analytics.
+
+Migreringsprocessen omfattar:
+
+* Återskapa Adobe Analytics-projekt i Customer Journey Analytics.
+
+* Mappa mått och mätvärden från Adobe Analytics rapporteringsprogram till mått och mätvärden i Customer Journey Analytics datavyer.
