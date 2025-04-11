@@ -3,16 +3,16 @@ title: Aktuella versionsinformation för Adobe Analytics
 description: Visa den aktuella versionsinformationen för Adobe Analytics
 feature: Release Notes
 exl-id: 97d16d5c-a8b3-48f3-8acb-96033cc691dc
-source-git-commit: bf6a811aac7d881517944c8308fd97e719791cc0
+source-git-commit: d81412790f5658d90890c48eca50548cd57b4b48
 workflow-type: tm+mt
-source-wordcount: '974'
+source-wordcount: '678'
 ht-degree: 2%
 
 ---
 
 # Aktuell versionsinformation för Adobe Analytics (mars 2025-utgåvan)
 
-**Senast uppdaterad**: 4 april 2025
+**Senast uppdaterad**: 11 april 2025
 
 Versionsanteckningarna gäller från 5 mars till 5 maj 2025. Adobe Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.md), vilket ger en mer skalbar, fasad metod för driftsättning av funktioner. Därför uppdateras versionsinformationen flera gånger i månaden. Kontrollera dem regelbundet.
 
@@ -23,7 +23,7 @@ Versionsanteckningarna gäller från 5 mars till 5 maj 2025. Adobe Analytics-rel
 | **Analyslager** | Analytics Inventory ger en omfattande översikt över er Adobe Analytics-miljö, inklusive antalet projekt och komponenter, rapportsviter, användare med mera. Genom att automatisera inventeringsprocessen kan ni snabbt förstå vad ni behöver för att gå över från Adobe Analytics till Customer Journey Analytics. Detta gör övergången enklare och snabbare. [Läs mer](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/analytics-inventory) |  | 26 mars 2025 |
 | **Uppdatera till kontextdatafältet för analyser`a.locale`** | Den här uppdateringen ändrar hur kontextdatafältet `a.locale` för Analytics anges när data samlas in via Experience Edge. När data skickas till Adobe Analytics med Experience Edge fylls analysfälten i baserat på en mappning av XDM-fält. Mappningen för `c.a.locale` refererar till ett XDM-fält som inte är standard, `xdm.environment.language`. Det här fältet uppdateras för att referera till rätt fält, `xdm.environment._dc.language`.<p>Mappningen fortsätter att referera till `xdm.environment.language` för bakåtkompatibilitet. Om båda fälten är angivna har `xdm.environment.language` prioritet för kontinuitet. Du kan visa den fullständiga listan över mappningar från XDM till standardanalysfält [här](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/xdm-var-mapping). | | 5 mars 2025 |
 | **Customer Journey Analytics - uppgraderingsguide** | Här kan du skapa en stegvis guide för uppgradering från Adobe Analytics till Customer Journey Analytics. Den här guiden är anpassad efter din organisation och tar hänsyn till din nuvarande Adobe Analytics-miljö, dina avsedda användningsområden för Customer Journey Analytics samt tidsbesparande transaktioner som din organisation vill göra.<p>Logga in på [!DNL Customer Journey Analytics] och välj sedan **[!UICONTROL Upgrade to Customer Journey Analytics]** på fliken **[!UICONTROL Workspace]** för att börja generera din anpassade guide.<p>[Läs mer](https://experienceleague.adobe.com/en/docs/analytics-platform/using/compare-aa-cja/upgrade-to-cja/cja-upgrade-recommendations#recommended-upgrade-steps-for-most-organizations) |  | 11 mars 2025 |
-| **Endast Data Warehouse-dimensioner** | Från och med maj 2025 börjar Adobe att ange vissa dimensioner (anpassade variabler som eVars och props) som&quot;endast Data Warehouse&quot;. Detta gäller för mått som har följande egenskaper:<ul><li> Under flera månader når variabeln den låga trafikgränsen inom de första dagarna i månaden.</li><li>> 90% av de värden som skickas in ses bara en gång under månaden.</li></ul>Exempel är dimensioner som innehåller tidsstämplar, UUID:n eller andra data som har extremt hög kardinalitet och där unika nya värden skickas in för nästan varje träff (eller besök eller besökare) under månaden. Dessa dimensioner överskrider vanligtvis lågtrafikgränserna mycket snabbt och bara en mycket liten del av värdena är rapporteringsbara i Analysis Workspace. Detta gör att rapporter använder dessa dimensioner blir förvirrande eftersom de inte visar användbar eller korrekt information. Dessa dimensioner följer inte syftet med eller drar nytta av lågtrafikfunktionen, som är avsedd att vara ett sätt att rapportera värden som blir &quot;populära&quot; efter att dimensionen har överskridit de låga trafikgränserna under månaden. [Läs mer](https://experienceleague.adobe.com/en/docs/analytics/technotes/low-traffic.)<p>Dimensioner markerade som&quot;endast Data Warehouse&quot; är inte tillgängliga för rapportering i Analysis Workspace. De kommer dock fortfarande att vara tillgängliga för rapportering via Data Warehouse, eftersom lågtrafikbegränsningar inte gäller här.<p>Detta innebär inte att alla dimensioner som har nått de låga trafikgränserna kan markeras som&quot;endast Data Warehouse&quot;. De flesta dimensioner som når lågtrafikgränserna uppfyller faktiskt avsikten med låg trafikfunktionalitet:<ul><li>De flesta värden som skickas är inte unika.</li><li>Vanliga värden kommer in efter att de låga trafikgränserna har uppnåtts under månaden.</li><li>Nya populära värden kan fortfarande förekomma.</li></ul>Det är bara de dimensioner där nästan alla värden som skickas är nya och unika som markeras som&quot;endast Data Warehouse&quot;. Ökning av lågtrafikgränserna är inte en lösning med tanke på att de uppgifter som samlas in i dessa situationer är unika. | | Maj 2025 |
+| **Endast Data Warehouse-dimensioner** | Baserat på kundens feedback har vi beslutat oss för att omvärdera. Vi kommer inte att släppa den automatiska funktionen som endast fungerar för Data Warehouse som tidigare meddelats. | | TBD |
 
 
 ## Korrigeringar i Adobe Analytics
