@@ -3,7 +3,7 @@ description: Den här hjälpsidan innehåller rekommenderade användningsexempel
 title: Vilket Adobe Analytics-verktyg ska jag använda?
 feature: Analytics Basics
 exl-id: d65575df-19c6-4129-89c8-d36de7bb6b2f
-source-git-commit: 08e29da4847e8ef70bd4435949e26265d770f557
+source-git-commit: 9a2d4c582b6a3946b658924851e5b5ada2f5a7ee
 workflow-type: tm+mt
 source-wordcount: '1214'
 ht-degree: 3%
@@ -24,13 +24,13 @@ Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Jämförelse av v
 >[!ENDSHADEBOX]
 
 
-## Adobe Analytics Reporting-användargränssnitt {#user-interfaces}
+## Användargränssnitt för Adobe Analytics-rapportering {#user-interfaces}
 
-**[Analysis Workspace](/help/analyze/analysis-workspace/home.md)** bör vara användargränssnittet för alla dina rapporterings- och analysbehov. Adobe fortsätter att investera i och släppa månadsuppdateringar av den här produkten. Om du inte kan göra något i Analysis Workspace bör du överväga de andra gränssnitten nedan.**
+**[Analysis Workspace](/help/analyze/analysis-workspace/home.md)** bör vara det bästa användargränssnittet för alla dina rapporterings- och analysbehov. Adobe fortsätter att investera i och släppa månatliga uppdateringar av den här produkten. Om det finns en uppgift som du inte kan utföra i Analysis Workspace kan du titta på de andra gränssnitten nedan.**
 
-**[Adobe Analytics Dashboards](/help/analyze/mobile-app/home.md)** ger användare mobil åtkomst till intuitiva styrkort. Styrkort är en samling viktiga mätvärden och andra komponenter som presenteras i en sida vid sida-layout som du kan trycka på för mer detaljerade uppdelningar och trendrapporter. Mobilappen stöds av både iOS och Android operativsystem.
+**[Med Adobe Analytics Dashboards](/help/analyze/mobile-app/home.md)** får användarna mobil åtkomst till intuitiva styrkort. Styrkort är en samling viktiga mätvärden och andra komponenter som presenteras i en sida vid sida-layout som du kan trycka på för mer detaljerade uppdelningar och trendrapporter. Mobilappen stöds av både iOS och Android operativsystem.
 
-**[Report Builder](/help/analyze/report-builder/report-buider-overview.md)** är ett tillägg för Microsoft Excel som kan köras i Mac, Windows och webbläsare. Här kan du skapa anpassade förfrågningar från Adobe Analytics-data, som du kan infoga i dina Excel-kalkylblad. Begäranden kan referera till celler dynamiskt i kalkylbladet, och du kan uppdatera och anpassa hur Report Builder visar data.
+**[Report Builder](/help/analyze/report-builder/rb-overview.md)** är ett tillägg för Microsoft Excel som kan köras i Mac, Windows och webbläsare. Här kan du skapa anpassade förfrågningar från Adobe Analytics-data, som du kan infoga i dina Excel-kalkylblad. Begäranden kan referera till celler dynamiskt i kalkylbladet, och du kan uppdatera och anpassa hur Report Builder visar data.
 
 **[Äldre Report Builder](/help/analyze/legacy-report-builder/home.md)** är ett tillägg för Microsoft Excel som endast kan köras i Windows. Här kan du skapa anpassade förfrågningar från Adobe Analytics-data, som du kan infoga i dina Excel-kalkylblad. Begäranden kan referera till celler dynamiskt i kalkylbladet, och du kan uppdatera och anpassa hur Report Builder visar data.
 
@@ -53,11 +53,11 @@ Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Jämförelse av v
 
    * Sammanfattning: enkel dataöverföring per dag eller begränsade dimensioner
    * Transaktions-ID: dataöverföringar som kopplar en online-slutpunkt till offlinedata och kopplar importerade data till en besökarögonblicksbild som tagits online (t.ex. online-beställningar och returneras offline)
-   * Fullständig bearbetning: tidstämplade datakällor, bearbetade som om de hade träffats av Adobe-servrar. Dvs. data infogas direkt i besökarresan.
+   * Full Processing: tidsstämplade datakällor som bearbetas som om det vore en träff som samlats in av Adobes servrar. Dvs data infogas direkt i besökarens resa.
 
-**[Adobe Exchange-integreringar](https://www.adobeexchange.com/experiencecloud.html)** ska användas:
+**[Adobe Exchange-integreringar](https://www.adobeexchange.com/experiencecloud.html)** bör användas:
 
-* När du kontaktar en tredjepartsleverantör som har skapat en anslutning som stöds av Adobe Analytics. Integreringsappar lägger vanligtvis in data på sammanfattningsnivå i Adobe Analytics permanent och automatiskt, regelbundet.
+* När du interagerar med en tredjepartsleverantör som har skapat en anslutning som stöds med Adobe Analytics. Integreringsappar lägger vanligtvis in data på sammanfattningsnivå i Adobe Analytics permanent och automatiskt, regelbundet.
 
 **[API:t för datainmatning](/help/import/c-data-insertion-api/c-data-insertion-api.md)** ska användas:
 
@@ -72,40 +72,40 @@ Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Jämförelse av v
 * Om du samlar in företagsdata i en CRM-databas (customer relationship management) och vill överföra data till Experience Cloud.
 * Om ni vill använda CRM-data för en djupare analys i Analytics, eller som målinriktningskriterier i Adobe Target.
 
-**[Audience Analytics](/help/integrate/c-audience-analytics/mc-audiences-aam.md)** ska användas:
+**[Audience Analytics](/help/integrate/c-audience-analytics/mc-audiences-aam.md)** bör användas:
 
 * Om du vill inkludera Adobe Audience Manager målgruppsdata, t.ex. demografisk information (t.ex. kön eller inkomstnivå), psykografisk information (t.ex. intressen och hobbies), CRM-data eller annonsvisningsdata i ett Analytics-arbetsflöde.
-* Om du vill att överförda CRM-data ska vara tidsbaserade, eftersom den här integreringen skickar ny information till Analytics som träffats av en träff.
+* Om du vill att uppladdad CRM-data ska vara tidsbaserad, eftersom den här integrationen skickar ny information till Analytics hit för hit.
 
 ## Exportera data från Adobe Analytics {#export}
 
-**[Report Builder](/help/analyze/report-builder/report-buider-overview.md)** ska användas:
+**[Report Builder](/help/analyze/report-builder/rb-overview.md)** ska användas:
 
-* Om de anpassade layoutalternativen i Workspace är begränsade (allt är möjligt i Report Builder, inom Excel-gränserna).
-* För att smidigt knyta indata från användare eller offlinedatakällor (visningar, kostnader) till data från Adobe. En mer permanent lösning för att binda data är datakällor (se Importera data till analys).
+* Om de anpassade layoutalternativen för arbetsytan är begränsande (allt är möjligt i Report Builder, inom gränserna för Excel).
+* Om du vill koppla användarindata eller offlinedatakällor (visningar, kostnad) till Adobe-data. En mer permanent lösning för att binda data är datakällor (se Importera data till analys).
 * Att sammanfoga data från olika flerdimensionella rapporter (t.ex. en rapport om kampanjavtryck tillsammans med en kampanjrapport för klick-till-konvertering).
 * Om du vill sammanfoga data från olika rapportsviter, antingen genom att summera eller visa dem i samma tabell sida vid sida.
 * Om automatisering genom schemaläggning önskas (XLSX, XLSM, CSV, PDF, TXT, XML, MHT).
 
-**[Data Warehouse](/help/export/data-warehouse/data-warehouse.md)** ska användas:
+**[Data Warehouse](/help/export/data-warehouse/data-warehouse.md)** bör användas:
 
-* Om du vill få åtkomst till variabler som annars är dolda i användargränssnittet - IP-adress, Experience Cloud-ID, Analytics-besökar-ID, sid-URL)
+* Om du vill få åtkomst till variabler som annars är dolda i användargränssnittet - IP-adress, Experience Cloud-id, Analytics-besökar-ID, sid-URL)
 * Få åtkomst till mer detaljerade data än användargränssnittet (denormaliserad tabellvy)
 * Hämta data i ett format som passar för pivottabellindata
-* Om klienten vill mata in data från Adobe i ett datavisualiseringsverktyg från tredje part (något summerat och inte på träffnivå)
+* Om klienten vill lägga in Adobe-data i ett datavisualiseringsverktyg från tredje part (något summerat och inte på träffnivå)
 * För att få åtkomst till alla unika dimensionsobjekt om du kör i&quot;Låg trafik&quot; i Adobe Analytics
 
 **[Analysdatafeed](/help/export/analytics-data-feed/c-df-contents/datafeeds-contents.md)** ska användas:
 
 * För att kunna använda den mest detaljerade datafeed som vi kan tillhandahålla (besökar-ID, tryck).
-* Om klienten vill ha Adobe-data lagrade i en klientdatabas, på den mest detaljerade nivå vi kan skicka.
-* Om klienten vill utveckla ett verktyg för Business Intelligence (BI) eller mata in data på träffnivå i ett verktyg från tredje part.
+* Om kunden vill ha Adobe-data lagrade i en databas på klientsidan, på den mest detaljerade nivå vi kan skicka.
+* Om klienten vill utveckla ett Business Intelligence (BI)-verktyg eller lägga in Adobe-data på träffnivå i ett tredjepartsverktyg.
 
 **[Rapporterings-API:er](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/reporting-guide.md)** bör användas när de andra visualiseringsalternativen inte uppfyller dina behov. De tre API-alternativen omfattar:
 
 * **Fullt bearbetad**: när du vill ha funktionsrika data (inklusive besök, besökare och segment). Det här är typiska gränssnittsdata från Analytics, som är tillgängliga inom cirka 30-90 minuter. Kan användas via Report Builder.
-* **Realtid**: när du vill visa några mått och dimensioner med fördröjningssekunder. Detta är begränsade, delvis bearbetade, sammanfattade data som är tillgängliga inom cirka 30 sekunder. Innehåller unika algoritmer för de flesta populära, vinnare och förlorare. Kan användas via Report Builder.
-* **[!UICONTROL Live Stream]**: när du vill ha en ström med delvis bearbetade analysdata på träffnivå inom några sekunder från insamlingen. Detta är delvis bearbetade data som är tillgängliga inom cirka 30 sekunder. Endast tillgängligt för Analytics Premium. Kräver ett sätt att visualisera data, vanligtvis genom ett engagemang från Engineering Services.
+* **** Realtid: när du vill visa några mått och dimensioner med några sekunders latens. Detta är begränsade, delvis bearbetade, sammanfattade data som är tillgängliga inom cirka 30 sekunder. Inkluderar unika algoritmer för mest populära, vinnare och förlorare. Kan användas via Report Builder.
+* **[!UICONTROL Live Stream]**: när du vill ha en ström av delvis bearbetade Analytics-data på träffnivå inom några sekunder efter insamlingen. Detta är delvis bearbetade data som är tillgängliga inom ~30 sekunder. Endast tillgängligt för Analytics Premium. Kräver något sätt att visualisera data, vanligtvis via ett Engineering Services-engagemang.
 
 ## Anpassade lösningar {#custom-solutions}
 

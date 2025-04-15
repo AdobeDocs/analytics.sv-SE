@@ -4,7 +4,7 @@ audience: end-user
 user-guide-title: Handbok om Analytics-verktyg
 breadcrumb-title: Användarhandbok om verktyg
 user-guide-description: Lär dig hur du använder verktyg i Analytics, inklusive Analysis Workspace, Analytics Dashboards, Report Builder, Legacy Report Builder och Activity Map.
-source-git-commit: 20093692327f555bfd78d99b2ec03146a5f2b181
+source-git-commit: 9a2d4c582b6a3946b658924851e5b5ada2f5a7ee
 workflow-type: tm+mt
 source-wordcount: '956'
 ht-degree: 11%
@@ -63,7 +63,7 @@ ht-degree: 11%
       + [Mätvärden](analysis-workspace/components/apply-create-metrics.md)
       + Segment {#segments}
          + [Skapa segment](analysis-workspace/components/segments/t-freeform-project-segment.md)
-         + [Snabbsegment](analysis-workspace/components/segments/quick-segments.md)
+         + [Snabba segment](analysis-workspace/components/segments/quick-segments.md)
       + Kalender och datumintervall {#calendar-date-ranges}
          + [Översikt över kalender- och datumintervall](analysis-workspace/components/calendar-date-ranges/calendar.md)
          + [Skapa anpassade datumintervall](analysis-workspace/components/calendar-date-ranges/custom-date-ranges.md)
@@ -108,10 +108,10 @@ ht-degree: 11%
       + [Sammanfattning av nyckelmått](analysis-workspace/visualizations/key-metric.md)
       + [Linje](analysis-workspace/visualizations/line.md)
       + [Mappa](analysis-workspace/visualizations/map-visualization.md)
-      + [Scatterplot](analysis-workspace/visualizations/scatterplot.md)
-      + [Avsnittshuvud](/help/analyze/analysis-workspace/visualizations/section-header.md)
-      + [Sammanfattningsnummer och sammanfattning](analysis-workspace/visualizations/summary-number-change.md)
-      + [Text](analysis-workspace/visualizations/text.md)
+      + [Spridningsdiagram](analysis-workspace/visualizations/scatterplot.md)
+      + [Avsnittets rubrik](/help/analyze/analysis-workspace/visualizations/section-header.md)
+      + [Sammanfattningsnummer och summariskt ändringsnummer](analysis-workspace/visualizations/summary-number-change.md)
+      + [SMS](analysis-workspace/visualizations/text.md)
       + [Trädkarta](analysis-workspace/visualizations/treemap.md)
       + [Venn](analysis-workspace/visualizations/venn.md)
    + Paneler {#panels}
@@ -124,9 +124,9 @@ ht-degree: 11%
       + [Media Concurrent Viewers panel](analysis-workspace/c-panels/media-concurrent-viewers.md)
       + [Medieuppspelningstid spenderad panel](analysis-workspace/c-panels/media-playback-time-spent.md)
       + [Panelen Nästa eller föregående objekt](analysis-workspace/c-panels/next-previous.md)
-      + [Panelen Sidsammanfattning](analysis-workspace/c-panels/page-summary.md)
+      + [Panelen Sammanfattning av sidor](analysis-workspace/c-panels/page-summary.md)
       + [Panelen Snabbinsikter](analysis-workspace/c-panels/quickinsight.md)
-      + Segmentjämförelsepanelen {#segment-comparison}
+      + Panelen Segmentjämförelse {#segment-comparison}
          + [Översikt över segmentjämförelse](analysis-workspace/c-panels/c-segment-comparison/segment-comparison.md)
          + [Användningsexempel för segmentjämförelse](analysis-workspace/c-panels/c-segment-comparison/segment-compare-use-cases.md)
          + [Statistiska tester som används vid segmentjämförelse](analysis-workspace/c-panels/c-segment-comparison/statistical-test.md)
@@ -157,19 +157,19 @@ ht-degree: 11%
       + [Frågor och svar](analysis-workspace/workspace-faq/faq.md)
       + [Optimera Analysis Workspace prestanda](analysis-workspace/workspace-faq/optimizing-performance.md)
       + [Felmeddelanden](analysis-workspace/workspace-faq/error-messages.md)
-      + [Analysis Workspace begränsningar](analysis-workspace/workspace-faq/aw-limitations.md)
-      + [Administrationskrav](analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
-      + [Tillgänglighet i Analysis Workspace](analysis-workspace/workspace-faq/aw-accessibility.md)
+      + [Begränsningar för Analysis Workspace](analysis-workspace/workspace-faq/aw-limitations.md)
+      + [Krav på administration](analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
+      + [Hjälpmedel i Analysis Workspace](analysis-workspace/workspace-faq/aw-accessibility.md)
 + Report Builder {#report-builder}
-   + [Report Builder - översikt](report-builder/report-buider-overview.md)
-   + [Report Builder Setup](report-builder/report-builder-setup.md)
+   + [Översikt över Report Builder](report-builder/rb-overview.md)
+   + [Konfigurera Report Builder](report-builder/report-builder-setup.md)
    + [Konvertera äldre begäranden](report-builder/convert-workbooks.md)
    + [Skapa ett datablock](report-builder/create-a-data-block.md)
-   + [Report Builder Hub](report-builder/report-builder-hub.md)
+   + [Hubb för Report Builder](report-builder/report-builder-hub.md)
    + [Välj en rapportsvit](report-builder/select-report-suite.md)
    + [Välj ett datumintervall](report-builder/select-date-range.md)
    + [Arbeta med segment](report-builder/work-with-segments.md)
-   + [Filterdimensioner](report-builder/filter-dimensions.md)
+   + [Filtrera Dimensioner](report-builder/filter-dimensions.md)
    + [Hantera datablock](report-builder/manage-reportbuilder.md)
    + [Schemalägg arbetsböcker](report-builder/schedule-reportbuilder.md)
    + [Begränsade etiketter](report-builder/restricted-labels.md)
@@ -183,9 +183,9 @@ ht-degree: 11%
       + [Report Builder-inloggning](legacy-report-builder/setup/login.md)
       + [Avinstallera Report Builder](legacy-report-builder/setup/t-uninstall-arb.md)
       + [Anropa Report Builder-funktioner från Microsoft Excel-funktioner](legacy-report-builder/setup/invoke-arb-excel-function.md)
-   + [Report Builder verktygsfält](legacy-report-builder/reportbuilder-toolbar.md)
+   + [Verktygsfältet i Report Builder](legacy-report-builder/reportbuilder-toolbar.md)
    + Dataförfrågningar {#data-requests}
-      + [Databegäranden - Guiden Begär begäran, steg 1](legacy-report-builder/data-requests/data-requests.md)
+      + [Dataförfrågningar - Begärandeguiden Steg 1](legacy-report-builder/data-requests/data-requests.md)
       + [Skapa en databegäran](legacy-report-builder/data-requests/t-create-a-data-request.md)
       + Rapportsviter {#report-suites}
          + [Välj en rapportsvit](legacy-report-builder/data-requests/selecting-report-suites/t-select-report-suites.md)
@@ -218,20 +218,20 @@ ht-degree: 11%
          + [Anpassad kalender](legacy-report-builder/data-requests/configuring-report-dates/custom-calendar.md)
       + [Interaktiva kontroller](legacy-report-builder/data-requests/interactive-controls.md)
    + Layout – frågeguide steg 2 {#layout}
-      + [Layoutöversikt](legacy-report-builder/layout/layout.md)
+      + [Översikt över layouten](legacy-report-builder/layout/layout.md)
       + Mätvärden och dimensioner {#metrics-dimension}
-         + [Översikt över mått och mått](legacy-report-builder/layout/c-metrics-dimensions/metrics-dimensions.md)
-         + [Lägg till mått och mått](legacy-report-builder/layout/c-metrics-dimensions/t-add-metrics-and-dimensions.md)
+         + [Översikt över mätvärden och dimensioner](legacy-report-builder/layout/c-metrics-dimensions/metrics-dimensions.md)
+         + [Lägga till mätvärden och dimensioner](legacy-report-builder/layout/c-metrics-dimensions/t-add-metrics-and-dimensions.md)
          + [Beräknade mätvärden](legacy-report-builder/layout/c-metrics-dimensions/calculated-metrics.md)
          + [Kombinera trafik- och handelsstatistik i samma begäran](legacy-report-builder/layout/c-metrics-dimensions/grouped-metrics.md)
-         + [Behörigheter för användaråtkomst för dimensioner och mätvärden](legacy-report-builder/layout/c-metrics-dimensions/permissions-metrics-dimensions.md)
-         + [Ändra mått - fältdefinitioner](legacy-report-builder/layout/c-metrics-dimensions/r-arb-modify-metrics.md)
-         + [Kundattribut](legacy-report-builder/layout/c-metrics-dimensions/c-ustomer-attributes.md)
+         + [Användaråtkomstbehörigheter för dimensioner och mätvärden](legacy-report-builder/layout/c-metrics-dimensions/permissions-metrics-dimensions.md)
+         + [Ändra måttenheter - fältdefinitioner](legacy-report-builder/layout/c-metrics-dimensions/r-arb-modify-metrics.md)
+         + [Kundens egenskaper](legacy-report-builder/layout/c-metrics-dimensions/c-ustomer-attributes.md)
       + [Avvikelseidentifiering](legacy-report-builder/layout/anomaly-detection.md)
       + [Konfigurera en begäran om avvikelseidentifiering](legacy-report-builder/layout/t-anomaly.md)
-      + [Formatera datum](legacy-report-builder/layout/format-the-data.md)
+      + [Formatera datumet](legacy-report-builder/layout/format-the-data.md)
       + [Formatera visningsrubriker](legacy-report-builder/layout/t-format-display-headers.md)
-      + [Dölj eller visa rubriker](legacy-report-builder/layout/hide-or-show-headers.md)
+      + [Dölja eller visa rubriker](legacy-report-builder/layout/hide-or-show-headers.md)
       + [Ta bort utdatamappning](legacy-report-builder/layout/delete-output-mapping.md)
       + [Namnge en begäran](legacy-report-builder/layout/name-a-request.md)
       + [Lägga till och skjuta upp text i celler](legacy-report-builder/layout/prepend-and-postpend-text-to-cells.md)
@@ -244,8 +244,8 @@ ht-degree: 11%
          + [Specifika filter](legacy-report-builder/layout/c-filter-dimensions/t-specific-filters.md)
          + [Sparade filter](legacy-report-builder/layout/c-filter-dimensions/saved-filters.md)
    + Hantera förfrågningar {#manage-requests}
-      + [Hantera begäranden - definitioner](legacy-report-builder/manage-requests/r-arb-manage-requests.md)
-      + [Diagnostikmeddelanden](legacy-report-builder/manage-requests/diagnostic-messages.md)
+      + [Hantera begäranden – definitioner](legacy-report-builder/manage-requests/r-arb-manage-requests.md)
+      + [Diagnostiska meddelanden](legacy-report-builder/manage-requests/diagnostic-messages.md)
       + [Sortera stigande eller fallande](legacy-report-builder/manage-requests/sort-ascending-or-descending.md)
       + [Skyddade kalkylbladselement](legacy-report-builder/manage-requests/protected-worksheet-elements.md)
       + [Redigera flera begäranden](legacy-report-builder/manage-requests/t-edit-multiple-requests.md)
@@ -278,13 +278,13 @@ ht-degree: 11%
       + [Publicera till Power BI - översikt](legacy-report-builder/c-publish-power-bi/power-bi.md)
       + [Begränsningar och specifikationer](legacy-report-builder/c-publish-power-bi/specifications-limits.md)
       + [Importera data manuellt till Power BI](legacy-report-builder/c-publish-power-bi/bi-manually-import-data.md)
-      + [Hämta publicerade resurser till Power BI Desktop](legacy-report-builder/c-publish-power-bi/bi-publish-to-desktop.md)
-      + [God praxis](legacy-report-builder/c-publish-power-bi/bi-best-practices.md)
-      + [Felsökning av Power BI-integrering](legacy-report-builder/c-publish-power-bi/troubleshooting.md)
-      + [Adobe Analytics innehållspaket för Power BI](legacy-report-builder/c-publish-power-bi/integration-power-bi.md)
+      + [Hämta publicerade tillgångar till Power BI Desktop](legacy-report-builder/c-publish-power-bi/bi-publish-to-desktop.md)
+      + [Bästa praxis](legacy-report-builder/c-publish-power-bi/bi-best-practices.md)
+      + [Felsöka Power BI-integrering](legacy-report-builder/c-publish-power-bi/troubleshooting.md)
+      + [Adobe Analytics-innehållspaket för Power BI](legacy-report-builder/c-publish-power-bi/integration-power-bi.md)
    + [Visual Basic-makron](legacy-report-builder/vba.md)
-   + [Report Builder felsökning](legacy-report-builder/troubleshoot.md)
-   + [REPORT BUILDER FAQ](legacy-report-builder/faq.md)
+   + [Felsökning av Report Builder](legacy-report-builder/troubleshoot.md)
+   + [Vanliga frågor och svar om Report Builder](legacy-report-builder/faq.md)
 
 + Activity Map {#activity-map}
    + [Översikt](activity-map/overview.md)
@@ -292,7 +292,7 @@ ht-degree: 11%
    + Övertäckning {#overlay}
       + [Tilläggsöversikt](activity-map/overlay/overview.md)
       + [Starta tillägg](activity-map/overlay/launch.md)
-      + [Tilläggsinställningar](activity-map/overlay/settings.md)
+      + [Inställningar för tillägg](activity-map/overlay/settings.md)
    + [Felsökning](activity-map/troubleshooting.md)
    + [Vanliga frågor och svar](activity-map/faq.md)
 + Adobe Analytics-instrumentpaneler {#mobapp}

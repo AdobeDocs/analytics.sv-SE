@@ -4,7 +4,7 @@ audience: all
 user-guide-title: Implementeringshandbok för Analytics
 breadcrumb-title: Implementeringshandbok
 user-guide-description: Lär dig hur du implementerar Adobe Analytics. Anpassa vilka data som samlas in för att få ut så mycket som möjligt av Analytics-data.
-source-git-commit: 65e75a1c2b39823e72abfb0e5b61122c62f1f013
+source-git-commit: 9a2d4c582b6a3946b658924851e5b5ada2f5a7ee
 workflow-type: tm+mt
 source-wordcount: '435'
 ht-degree: 16%
@@ -16,13 +16,16 @@ ht-degree: 16%
 
 + [Implementera Adobe Analytics](home.md)
 + [Versionsinformation för analyser](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html)
-+ [Versionsinformation om AppMeasurement](appmeasurement-updates.md)
++ [Versionsinformation för AppMeasurement](appmeasurement-updates.md)
 + Variabler, funktioner och metoder för Analytics {#vars}
    + [Översikt](vars/overview.md)
    + Konfigurationsvariabler {#config-vars}
       + [Översikt över konfigurationsvariabler](vars/config-vars/configuration-variables.md)
       + [avbryta](vars/config-vars/abort.md)
       + [konto](vars/config-vars/account.md)
+      + [ActivityMap.linkExclusions](vars/config-vars/activitymap-linkexclusions.md)
+      + [ActivityMap.regionExclusions](vars/config-vars/activitymap-regionexclusions.md)
+      + [ActivityMap.regionIDAttribute](vars/config-vars/activitymap-regionidattribute.md)
       + [charSet](vars/config-vars/charset.md)
       + [collectHighEntropyUserAgentHints](vars/config-vars/collecthighentropyuseragenthints.md)
       + [cookieDomain](vars/config-vars/cookiedomain.md)
@@ -55,15 +58,12 @@ ht-degree: 16%
       + [writeSecureCookies](vars/config-vars/writesecurecookies.md)
    + Sidvariabler {#page-vars}
       + [Översikt över sidvariabler](vars/page-vars/page-variables.md)
-      + [ActivityMap.linkExclusions](vars/config-vars/activitymap-linkexclusions.md)
-      + [ActivityMap.regionExclusions](vars/config-vars/activitymap-regionexclusions.md)
-      + [ActivityMap.regionIDAttribute](vars/config-vars/activitymap-regionidattribute.md)
       + [kampanj](vars/page-vars/campaign.md)
       + [kanal](vars/page-vars/channel.md)
       + [contextData](vars/page-vars/contextdata.md)
       + [Dynamiska variabler](vars/page-vars/dynamic-variables.md)
       + [eVar](vars/page-vars/evar.md)
-      + [eVar (varuexponering)](vars/page-vars/evar-merchandising.md)
+      + [eVar (Merchandising)](vars/page-vars/evar-merchandising.md)
       + händelser {#events}
          + [Översikt över händelser](vars/page-vars/events/events-overview.md)
          + [Inköpshändelse](vars/page-vars/events/event-purchase.md)
@@ -81,10 +81,10 @@ ht-degree: 16%
       + [server](vars/page-vars/server.md)
       + [läge](vars/page-vars/state.md)
       + [tidsstämpel](vars/page-vars/timestamp.md)
-      + [transactionID](vars/page-vars/transactionid.md)
-      + [zip](vars/page-vars/zip.md)
+      + [transaktions-ID](vars/page-vars/transactionid.md)
+      + [Zip](vars/page-vars/zip.md)
    + Funktioner och metoder {#functions}
-      + [Funktioner - översikt](vars/functions/overview.md)
+      + [Översikt över funktioner](vars/functions/overview.md)
       + [s_gi](vars/functions/s-gi.md)
       + [t](vars/functions/t-method.md)
       + [tl](vars/functions/tl-method.md)
@@ -139,13 +139,13 @@ ht-degree: 16%
    + [Implementera märkning för flera programsviter](prepare/multi-suite-tagging.md)
    + [Skapa ett dokument för lösningsdesign](prepare/solution-design.md)
    + [Ta hand om en befintlig Adobe Analytics-implementering](prepare/existing-implementation.md)
-+ Implementera analys med Experience Platform Edge {#aep-edge}
++ Implementera analyser med Experience Platform Edge {#aep-edge}
    + [Edge - översikt](aep-edge/overview.md)
    + [Variabelmappning för dataobjekt](aep-edge/data-var-mapping.md)
-   + [Variabelmappning för XDM-objekt](aep-edge/xdm-var-mapping.md)
-   + Web SDK {#web-sdk}
-      + [Web SDK - översikt](aep-edge/web-sdk/overview.md)
-      + [Migrera till Web SDK med hjälp av taggar](aep-edge/web-sdk/analytics-extension-to-web-sdk.md)
+   + [Mappning av XDM-objektvariabler](aep-edge/xdm-var-mapping.md)
+   + SDK för webben {#web-sdk}
+      + [Översikt över Web SDK](aep-edge/web-sdk/overview.md)
+      + [Migrera till Web SDK med taggar](aep-edge/web-sdk/analytics-extension-to-web-sdk.md)
       + [Migrera till Web SDK med JavaScript](aep-edge/web-sdk/appmeasurement-to-web-sdk.md)
       + [Ny implementering med taggar](aep-edge/web-sdk/web-sdk-tag-extension.md)
       + [Ny implementering med JavaScript](aep-edge/web-sdk/web-sdk-javascript-library.md)
@@ -159,9 +159,9 @@ ht-degree: 16%
    + [Distribuera till en utvecklingsmiljö](launch/deploy-dev.md)
    + [Validera och publicera i produktion](launch/validate-publish-prod.md)
    + [Mappa datalagerobjekt till dataelement](launch/layer-to-elements.md)
-   + [Mappa taggdataelement till analysvariabler](launch/elements-to-variable.md)
+   + [Mappa taggdataelement till Analytics-variabler](launch/elements-to-variable.md)
 + Implementera Analytics med JavaScript {#js}
-   + [JavaScript - översikt](js/overview.md)
+   + [Översikt över JavaScript](js/overview.md)
    + [Implementera länkar för avanmälan](js/opt-out.md)
    + [Variabla åsidosättningar](js/overrides.md)
    + [Migrera från H-kod](js/migrate-from-hcode.md)
@@ -178,7 +178,7 @@ ht-degree: 16%
       + [Variabel beständighet](js/xdevice-visid/variable-persistence.md)
       + [Exempel på besök](js/xdevice-visid/visit-example.md)
       + [Vanliga frågor och svar om äldre enheter](js/xdevice-visid/xdevice-faq.md)
-   + [Felsök AppMeasurementet](js/troubleshooting.md)
+   + [Felsöka AppMeasurement](js/troubleshooting.md)
 + Implementera Analytics på andra plattformar {#other}
    + [Implementera analyser med hårdkodade bildförfrågningar](other/hardcoded.md)
    + [Implementera analyser på Ajax](other/ajax.md)
@@ -187,7 +187,7 @@ ht-degree: 16%
    + [Implementera analyser på Facebook Instant Articles](other/fb-instant-articles.md)
 + [Implementera analyser på mobila enheter](mobile-device-sdk.md)
 + Användningsfall för implementering {#use-cases}
-   + [Använd AppMeasurement med iFrames](use-cases/iframe.md)
+   + [Använda AppMeasurement med iFrames](use-cases/iframe.md)
    + [Spåra olika implementeringstyper](use-cases/cross-type-implementation.md)
    + [Arbetsflöde för kampanjspårning](use-cases/campaign-tracking.md)
 + Validera din implementering {#validate}

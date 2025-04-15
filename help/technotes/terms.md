@@ -3,7 +3,7 @@ title: Termer som används i Adobe Analytics
 description: Ordlista för Adobe Analytics, definiera vanliga termer som används.
 exl-id: 07507ba1-a512-48d9-8022-6084de4ae262
 feature: Implementation Basics
-source-git-commit: d5bbba7518529befabb8815ac657336326562fd1
+source-git-commit: 3eb140c729d2c0e9f880a6fada8377639f7c4a9c
 workflow-type: tm+mt
 source-wordcount: '2579'
 ht-degree: 0%
@@ -89,7 +89,7 @@ Använd den här ordlistan för att förstå sammanhanget för många termer som
 * **Prop:** Se Traffic-variabel.
 * **Rankad rapport:** Ett rapportformat som vanligtvis följer en dimension med ett mätvärde. Med den här typen av rapporter kan du se de översta objekten, till exempel de sidor som visas mest på din webbplats. Se även Trended-rapport.
 * **Realtid:** Visar konfigurerade variabler så snart de samlats in med liten eller ingen fördröjning. Se [Realtidsrapporter](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/realtime/realtime.md) i användarhandboken för Admin.
-* **Report Builder:** Med Javascript [Report Builder](/help/analyze/report-builder/report-buider-overview.md) kan du skapa anpassade begäranden från Adobe Analytics-data.
+* **Report Builder:** Med Javascript [Report Builder](/help/analyze/report-builder/rb-overview.md) kan du skapa anpassade begäranden från Adobe Analytics-data.
 * **Rapportsvit:** En överliggande behållare som du skickar data till. Alla rapporter i Adobe Analytics refererar till en rapportserie.
 * **Rapporter och analyser:** Det här verktyget har [slutat licensieras](https://experienceleague.adobe.com/docs/discontinued/using/reports-and-analytics.html).
 * **Rullande datumintervall:** En typ av relativt datumintervall som ändras allt eftersom tiden går. En rapport som visar de senaste 7 dagarna kan till exempel betraktas som ett löpande datumintervall. Se även statiskt datumintervall.

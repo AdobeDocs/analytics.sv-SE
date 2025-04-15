@@ -4,7 +4,7 @@ audience: end-user
 user-guide-title: Exporthandbok för Analytics
 breadcrumb-title: Användarhandbok om export
 user-guide-description: Lär dig hur du använder Data Feeds för att exportera rådata, och hur du använder Data Warehouse för att hämta data från kalkylblad. Lär dig hur du använder FTP och SFTP för att överföra filer.
-source-git-commit: aac5421b658cf06b20ca5a3d22f07ef441283753
+source-git-commit: 9a2d4c582b6a3946b658924851e5b5ada2f5a7ee
 workflow-type: tm+mt
 source-wordcount: '279'
 ht-degree: 23%
@@ -34,10 +34,10 @@ ht-degree: 23%
    + [Bästa praxis för dataflöden](analytics-data-feed/data-feeds-best-practices.md)
    + [Felsöka dataflöden](analytics-data-feed/troubleshooting.md)
 + Data Warehouse {#data-warehouse}
-   + [Översikt över Datan Warehouse](data-warehouse/data-warehouse.md)
-   + [Lägg till användargrupp för Data Warehouse](data-warehouse/t-dw-group.md)
+   + [Data Warehouse - översikt](data-warehouse/data-warehouse.md)
+   + [Lägg till Data Warehouse-användargrupp](data-warehouse/t-dw-group.md)
    + Skapa en Data Warehouse-förfrågan {#dw-create-request}
-      + [Skapa en begäran om Data Warehouse](/help/export/data-warehouse/create-request/t-dw-create-request.md)
+      + [Skapa en Data Warehouse-förfrågan](/help/export/data-warehouse/create-request/t-dw-create-request.md)
       + [Allmänna inställningar](/help/export/data-warehouse/create-request/dw-general-settings.md)
       + [Bygg din rapport](/help/export/data-warehouse/create-request/dw-request-build-report.md)
       + [Rapportdestination](/help/export/data-warehouse/create-request/dw-request-report-destinations.md)
@@ -47,9 +47,9 @@ ht-degree: 23%
    + [Begär leveranstid](data-warehouse/delivery-time.md)
    + [Datafil för tabell](data-warehouse/t-tableau.md)
    + [Sortera efter mått](data-warehouse/sorting-by-metric.md)
-   + [Hantera förfrågningar från Data Warehouse](data-warehouse/data-warehouse-requests-manage.md)
+   + [Hantera Data Warehouse-förfrågningar](data-warehouse/data-warehouse-requests-manage.md)
    + [Komponenter som stöds i Data Warehouse](data-warehouse/component-support.md)
-   + [Bästa praxis för Data Warehouse](data-warehouse/data-warehouse-bp.md)
+   + [Data Warehouse bästa praxis](data-warehouse/data-warehouse-bp.md)
 + FTP och SFTP {#ftp-and-sftp}
    + [Använd FTP och SFTP med Adobe Experience Cloud](ftp-and-sftp/ftp-overview.md)
    + Konfigurera Adobe-värdbaserade FTP-konton {#set-up-ftp-accounts}
@@ -63,16 +63,16 @@ ht-degree: 23%
    + [FTP-begränsningar och datalagring](ftp-and-sftp/ftp-limits.md)
    + [Ta bort FTP-data och FTP-konton](ftp-and-sftp/ftp-delete.md)
    + [Återställ borttagna FTP-data och FTP-konton](ftp-and-sftp/ftp-restore.md)
-   + [Uppgradera FTP-servrar för Adobe](ftp-and-sftp/ftp-upgrade.md)
+   + [Uppgradera Adobe FTP-servrar](ftp-and-sftp/ftp-upgrade.md)
    + [Använd passivt FTP-läge](ftp-and-sftp/ftp-passive.md)
    + [FTP-bearbetningstider](ftp-and-sftp/ftp-processing.md)
    + Secure File Transfer Protocol {#secure-file-transfer-protocol}
       + [Uppgradering av SFTP-tjänster - frågor och svar](ftp-and-sftp/c-sftp/sftp-upgrade.md)
       + [Secure File Transfer Protocol - översikt](ftp-and-sftp/c-sftp/ftp-sftp.md)
-      + [Ansluta till ett FTP-konto i Adobe med SFTP](ftp-and-sftp/c-sftp/ftp-sftp-connect.md)
+      + [Anslut till ett Adobe FTP-konto med SFTP](ftp-and-sftp/c-sftp/ftp-sftp-connect.md)
       + [Skicka Adobe-data till ett externt FTP-konto med SFTP](ftp-and-sftp/c-sftp/ftp-sftp-transfer.md)
-      + [Skicka begäranden om Data Warehouse till SFTP-servrar](ftp-and-sftp/c-sftp/ftp-sftp-dw.md)
+      + [Skicka Data Warehouse-förfrågningar till SFTP-servrar](ftp-and-sftp/c-sftp/ftp-sftp-dw.md)
       + [Anslut till Adobe via SFTP utan lösenord](ftp-and-sftp/c-sftp/ftp-sftp-cert-auth.md)
 + [Analysis Workspace nedladdningar](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/download-send.html)
 + [Adobe Analytics API](https://www.adobe.io/apis/experiencecloud/analytics/docs.html)
-+ [Report Builder](https://experienceleague.adobe.com/en/docs/analytics/analyze/report-builder/report-buider-overview)
++ [Report Builder](https://experienceleague.adobe.com/en/docs/analytics/analyze/report-builder/rb-overview)
