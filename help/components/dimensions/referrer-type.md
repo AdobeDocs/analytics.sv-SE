@@ -3,7 +3,7 @@ title: Referenstyp
 description: Vilken typ av referent det är, beroende på varifrån besökaren kom.
 feature: Dimensions
 exl-id: a6cfcbf4-cd08-4e7f-8e86-47488ceb0ea3
-source-git-commit: 6a62540bd4a8d86951165714d44d5e969e62722f
+source-git-commit: f95e436566766d525858df0e707cfc36fd4f5ac4
 workflow-type: tm+mt
 source-wordcount: '423'
 ht-degree: 0%
@@ -12,26 +12,26 @@ ht-degree: 0%
 
 # Referenstyp
 
-Referenstypen [dimension](overview.md) rapporterar vilka generiska kanaler besökarna klickade igenom för att komma till din webbplats. Adobe bibehåller reglerna för varje dimensionsobjekt, till skillnad från [marknadsföringskanaler](marketing-channel.md), där din organisation upprätthåller regler för varje kanal.
+Referenstypen [dimension](overview.md) rapporterar vilka generiska kanaler besökarna klickade igenom för att komma till din webbplats. Adobe underhåller reglerna för varje dimensionsobjekt, till skillnad från [marknadsföringskanaler](marketing-channel.md), där din organisation underhåller regler för varje kanal.
 
 ## Fyll den här dimensionen med data
 
 Den här dimensionen refererar till flera uppslagstabeller som är interna för Adobe. Varje värde baseras på [referenten](referrer.md) för träffen, som är beroende av [interna URL-filter](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/internal-url-filter-admin.md). Kontrollera att referensdimensionen och interna URL-filter är korrekt konfigurerade.
 
-## Dimensioner
+## Dimension-objekt
 
-Bland Dimensionerna finns typen av referent för träffen. Specifika värden är:
+Bland Dimension-objekten finns typen av referent för träffen. Specifika värden är:
 
 * **Typed/Bookmarked**: Det finns inga referensdata för träffen.
 * **Sökmotorer**: Referenten kom från en identifierad sökmotor som innehåller en nyckelordsfrågesträng.
-* **Sociala nätverk:**: Referensdata tillhör ett socialt nätverk som känns igen av Adobe.
+* **Sociala nätverk:**: Referensdata tillhörde ett socialt nätverk som känns igen av Adobe.
 * **Andra webbplatser**: Referensdata tillhör inte en sökmotor eller ett socialt nätverk som Adobe känner igen.
 * **Hårddisk**: Referenten kom från en lokal kopia av en webbsida på besökarens hårddisk.
 * **E-post**: Referenten kom från en URL med protokollet `imap://` eller `mail://`. Inkluderar inte e-posttjänster online eftersom dessa vanligtvis använder protokollet `https://`.
 
 ### Sociala nätverk
 
-Följande lista refererar till uppslagstabellen&quot;Sociala nätverk&quot; som används i Adobe. Adobe tillhandahåller denna lista som en tjänst åt Adobe Analytics kunder. Om du vill rekommendera Adobe att lägga till en domän i listan ska du be en supportrepresentant i organisationen kontakta Kundtjänst.
+Följande lista refererar till söktabellen&quot;Sociala nätverk&quot; som används i Adobe. Adobe tillhandahåller den här listan som en tjänst åt Adobe Analytics kunder. Om du vill rekommendera Adobe att lägga till en domän i den här listan ska du be en supportrepresentant i din organisation kontakta Kundtjänst.
 
 >[!NOTE]
 >
@@ -58,6 +58,7 @@ Följande lista refererar till uppslagstabellen&quot;Sociala nätverk&quot; som 
 * `blomotion.jp`
 * `bolt.com`
 * `brightkite.com`
+* `bsky.app`
 * `buzznet.com`
 * `cafemom.com`
 * `care2.com`
@@ -87,6 +88,7 @@ Följande lista refererar till uppslagstabellen&quot;Sociala nätverk&quot; som 
 * `fubar.com`
 * `gaiaonline.com`
 * `geni.com`
+* `go.bsky.app`
 * `goodreads.com`
 * `plus.google.com`
 * `plus.url.google.com`
@@ -183,6 +185,7 @@ Följande lista refererar till uppslagstabellen&quot;Sociala nätverk&quot; som 
 * `vimeo.com`
 * `vk.com`
 * `wayn.com`
+* `web-cdn.bsky.app`
 * `weibo.com`
 * `weourfamily.com`
 * `wer-kennt-wen.de`
