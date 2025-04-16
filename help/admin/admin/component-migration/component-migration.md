@@ -3,9 +3,9 @@ description: Beskriver hur du migrerar komponenter och projekt från Adobe Analy
 title: Migrera komponenter och projekt från Adobe Analytics till Customer Journey Analytics
 feature: Admin Tools
 exl-id: 49c7e47a-464b-4465-9b30-d77f886ca6dc
-source-git-commit: 96c202870a4e584cf3625d6e4d40024b787c2f0e
+source-git-commit: 657f1417185a2eabb496e0e7207520211f652794
 workflow-type: tm+mt
-source-wordcount: '1498'
+source-wordcount: '1512'
 ht-degree: 0%
 
 ---
@@ -16,9 +16,9 @@ Adobe Analytics-administratörer kan migrera Adobe Analytics-projekt och tillhö
 
 Migreringsprocessen omfattar:
 
-* Återskapande av Adobe Analytics-projekt i Customer Journey Analytics.
+* Återskapa Adobe Analytics-projekt i Customer Journey Analytics.
 
-* Mappa mått och mätvärden från Adobe Analytics rapporteringsprogram till mått och mätvärden i datavyer i Customer Journey Analytics.
+* Mappa mått och mätvärden från Adobe Analytics rapporteringsprogram till mått och mätvärden i Customer Journey Analytics datavyer.
 
   Vissa dimensioner och mätvärden mappas automatiskt, andra måste du manuellt mappa som en del av migreringsprocessen. Segment migreras också, men de behöver inte mappas som en del av migreringsprocessen.
 
@@ -33,7 +33,9 @@ Migreringsprocessen omfattar:
 
 ## Förbereda för migrering
 
-Innan du migrerar några projekt till Customer Journey Analytics bör du lära dig mer om hur du migrerar projekt i [Förbered för att migrera komponenter och projekt från Adobe Analytics till Customer Journey Analytics](/help/admin/admin/component-migration/prepare-component-migration.md).
+Innan du migrerar projekt till Customer Journey Analytics bör du läsa mer om hur du migrerar projekt i [Förbered för att migrera komponenter och projekt från Adobe Analytics till Customer Journey Analytics](/help/admin/admin/component-migration/prepare-component-migration.md).
+
+Gör dessutom en [Adobe Analytics-inventering](/help/admin/admin/analytics-inventory.md) med verktyget som är tillgängligt för Analytics-administratörer.
 
 ## Migrera Adobe Analytics-projekt till Customer Journey Analytics
 
@@ -55,7 +57,7 @@ Innan du migrerar några projekt till Customer Journey Analytics bör du lära d
 
    eller
 
-   Markera det projekt som du vill migrera och välj sedan [!UICONTROL **Migrera till Customer Journey Analytics**].
+   Välj det projekt som du vill migrera och välj sedan [!UICONTROL **Migrera till Customer Journey Analytics**].
 
    Du kan bara välja ett projekt åt gången för migrering.
 
@@ -63,13 +65,13 @@ Innan du migrerar några projekt till Customer Journey Analytics bör du lära d
 
    <!-- add screenshot -->
 
-1. I fältet [!UICONTROL **Projektägare**] börjar du skriva namnet på den användare som du vill ange som projektägare i Customer Journey Analytics och markerar sedan namnet i listrutan.
+1. I fältet [!UICONTROL **Projektägare**] börjar du skriva namnet på den användare som du vill ange som projektägare i Customer Journey Analytics och väljer sedan namnet i listrutan.
 
    Ägaren som du anger har fullständig behörighet till projektet. Ägaren måste vara administratör i Customer Journey Analytics. Du kan ändra ägarskapet för projektet i ett senare steg.
 
 1. Välj en rapportsvit i [!UICONTROL **Kartschemat för rapportsviter**].
 
-1. I listrutan [!UICONTROL **Datavy**] väljer du datavyn i Customer Journey Analytics där du vill att projektet och komponenterna ska migreras.
+1. I listrutan [!UICONTROL **Datavy**] väljer du den datavy i Customer Journey Analytics där du vill att projektet och komponenterna ska migreras.
 
 1. Välj [!UICONTROL **Kartschema**].
 
@@ -81,7 +83,7 @@ Innan du migrerar några projekt till Customer Journey Analytics bör du lära d
 
    >[!NOTE]
    >
-   >   Om du använde WebSDK för att importera data till Adobe Experience Platform kan mått och mått inte mappas automatiskt. Mer information finns i [Förutsättningar](/help/admin/admin/component-migration/prepare-component-migration.md#prerequisites) i [Förbereda för att migrera komponenter och projekt från Adobe Analytics till Customer Journey Analytics](/help/admin/admin/component-migration/prepare-component-migration.md).
+   >   Om du använde WebSDK för att importera data till Adobe Experience Platform kan mått och mått inte mappas automatiskt. Mer information finns i [Förutsättningar](/help/admin/admin/component-migration/prepare-component-migration.md#prerequisites) i [Förbered migrering av komponenter och projekt från Adobe Analytics till Customer Journey Analytics](/help/admin/admin/component-migration/prepare-component-migration.md).
 
    Vissa mått och mätvärden i Adobe Analytics mappas automatiskt till en dimension eller ett mätvärde i Customer Journey Analytics. Du kan inte fatta några mappningsbeslut för de här dimensionerna och måtten.
 
@@ -105,7 +107,7 @@ Innan du migrerar några projekt till Customer Journey Analytics bör du lära d
 
    ![Manuell karta för migreringsschema](assets/schema-manual-map.png)
 
-1. Om du vill mappa dimensioner och mått manuellt markerar du en dimension eller ett mått som innehåller en varningsikon ![varningsikon](assets/schema-warning.png). I fältet [!UICONTROL **Mappat Customer Journey Analytics-mått**] (eller fältet [!UICONTROL **Mappat Customer Journey Analytics-mått**] om du mappar en dimension) markerar du den dimension eller det mått i Customer Journey Analytics som du vill mappa till den dimension eller det mätvärde du har valt.
+1. Om du vill mappa dimensioner och mått manuellt väljer du en dimension eller ett mätvärde som innehåller en varningsikon ![varningsikon](assets/schema-warning.png). I fältet [!UICONTROL **Mappat Customer Journey Analytics-mätvärde**] (eller i fältet [!UICONTROL **Mappat Customer Journey Analytics-mått**] om du mappar en dimension) väljer du den dimension eller det mätvärde i Customer Journey Analytics som du vill mappa till den dimension eller det mätvärde du valde.
 
    ![kartdimensioner och mått](assets/schema-manual-map-drop-down.png)
 
@@ -113,7 +115,7 @@ Innan du migrerar några projekt till Customer Journey Analytics bör du lära d
 
    Upprepa den här processen för varje dimension eller mätvärde som innehåller varningsikonen.
 
-   När alla dimensioner och mätvärden i Adobe Analytics rapportserie har mappats till en dimension eller ett mätvärde i rapportsviten Customer Journey Analytics, visas en grön bockmarkering ![bockmarkering](assets/report-suite-check.png) bredvid rapportsvitens namn i [!UICONTROL **schemat för rapportsviter**] .
+   När alla dimensioner och mätvärden i Adobe Analytics rapportsserie har mappats till en dimension eller ett mätvärde i Customer Journey Analytics rapportsvit, visas en grön bockmarkering ![bockmarkering](assets/report-suite-check.png) bredvid rapportsvitens namn i [!UICONTROL **Kartschemat för rapportsviter**] .
 
 1. (Villkorligt) Om projektet som du migrerar innehåller mer än en rapportsvit väljer du en annan rapportsvit i [!UICONTROL **Kartschemat för rapportsviter**] och upprepar sedan steg 6 till steg 10. <!-- double-check that the step numbers are still correct -->
 
@@ -127,7 +129,7 @@ Innan du migrerar några projekt till Customer Journey Analytics bör du lära d
 
    Om migreringen misslyckas finns mer information i avsnittet [Försök igen med en misslyckad migrering](#retry-a-failed-migration) nedan.
 
-1. (Valfritt) När ett projekt har migrerats kan du överföra ägarskapet för projektet till valfri användare i Customer Journey Analytics. Mer information finns i [Överför resurser](https://experienceleague.adobe.com/en/docs/analytics-platform/using/tools/asset-transfer/transfer-assets) i handboken för Customer Journey Analytics.
+1. (Valfritt) När ett projekt har migrerats kan du överföra ägarskapet för projektet till valfri användare i Customer Journey Analytics. Mer information finns i [Överför resurser](https://experienceleague.adobe.com/en/docs/analytics-platform/using/tools/asset-transfer/transfer-assets) i Customer Journey Analytics Guide.
 
 ## Försök att utföra migreringen igen
 
