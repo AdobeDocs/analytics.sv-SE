@@ -5,7 +5,7 @@ short-title: Analytics documentation updates
 feature: Release Notes
 exl-id: fe8e3c4c-6782-46f7-8e28-4f8f54807788
 mini-toc-levels: 3
-source-git-commit: 9a2d4c582b6a3946b658924851e5b5ada2f5a7ee
+source-git-commit: 73c0210ac931f3e7f823e033a3bffdc22e159ddb
 workflow-type: tm+mt
 source-wordcount: '6311'
 ht-degree: 18%
@@ -227,12 +227,12 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | 15 juni 2021 | [Bästa praxis för marknadsföringskanaler har uppdaterats](https://experienceleague.adobe.com/docs/analytics/components/marketing-channels/mchannel-best-practices.html) |
 | 3 juni 2021 | Dokumentationen har uppdaterats för att bättre förklara [Dataflödesimplementering](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/create-feed.html) och [här](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/df-faq.html#BucketOwnerFullControl). |
 | 25 maj 2021 | Dokumentationen om [eVar skiftlägeskänslighet i rapportering](https://experienceleague.adobe.com/docs/analytics/components/dimensions/evar.html) har uppdaterats. |
-| 13 maj 2021 | Uppdateringar av [Data Warehouse API-begäranden](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/reporting-api/data_warehouse.md). De har nu stöd för&quot;Timmar&quot;. |
+| 13 maj 2021 | Uppdateringar av [Data Warehouse API-begäranden](https://developer.adobe.com/analytics-apis/docs/1.4/guides/reporting/data-warehouse/). De har nu stöd för&quot;Timmar&quot;. |
 | **Mars 2021** | |
 | Mars, april 2021 | Uppdateringar av Adobe Analytics-kontrollpaneler [Executive Guide](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/executive.html) och [Curator Guide](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/curator.html) |
 | 25 mars 2021 | Ny dokumentation på sidan [!UICONTROL Components] > [!UICONTROL User preferences]. Med den kan du hantera [!UICONTROL Analysis Workspace]-inställningar och relaterade komponenter för din användare. [!UICONTROL User preferences] gäller för alla nya projekt och paneler. <br>**Obs!** Följande inställningar har flyttats till sidan [!UICONTROL User preferences]:<ul><li>Rapportinställningar: Tusentalsavgränsare (kallas nu _nummerformat_)</li><li>Rapportinställningar: CSV-avgränsare</li><li>Workspace-projekt: Hjälp > Aktivera tips</li><li>Workspace-projekt: Tom panel _Starta nya projekt med den här panelen_</li></ul> |
 | 25 mars 2021 | [!UICONTROL Histogram Smart Bucket Prediction] hjälper till med histogram med höga kardinalitetsmått genom att automatiskt identifiera rätt bredd och antal bucklar för ditt datauppslag. För lågkardinalitetsmått fungerar visualiseringen på samma sätt som tidigare. |
-| 25 mars 2021 | [API:t för datareparation](https://github.com/AdobeDocs/analytics-2.0-apis/blob/master/data-repair.md) uppdateringar (filtrera efter URL:er, frågesträngar, vid tecken med mera) |
+| 25 mars 2021 | [API:t för datareparation](https://developer.adobe.com/analytics-apis/docs/2.0/guides/endpoints/data-repair/) uppdateringar (filtrera efter URL:er, frågesträngar, vid tecken med mera) |
 | 25 mars 2021 | Ny dokumentation för [användningslogg-API](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/usage-logs.md) |
 | **Februari 2021** | |
 | 4 februari 2021 | Komponentval: Den nedrullningsbara listruta/släppzonkomponent som hittades i [!UICONTROL Quick Insights] lades till i alla släppzoner i [!UICONTROL Workspace]. Den här förbättringen gör att du kan välja från en listruta med kompatibla komponenter eller fortsätta att använda utrymmet som en släppzon. |
