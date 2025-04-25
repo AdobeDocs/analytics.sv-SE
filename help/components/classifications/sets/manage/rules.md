@@ -3,9 +3,9 @@ title: Klassificeringsuppsättningsregler
 description: Visa och redigera regler för en enskild klassificeringsgrupp.
 exl-id: 1ccb6a20-1993-4fd3-90eb-9154d12d0ec7
 feature: Classifications
-source-git-commit: 9f70dbeb9dfe54897915213480f05cbdfaf920ef
+source-git-commit: de12253f6db798f49d0cae34bf9cb6b7a3de17db
 workflow-type: tm+mt
-source-wordcount: '424'
+source-wordcount: '428'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,8 @@ ht-degree: 0%
 Klassificeringsuppsättningsregler gör att du automatiskt kan klassificera värden baserat på värdet som variabeln är inställd på. Dessa regler gäller för alla inkommande variabelvärden för alla prenumerationer av klassificeringsuppsättningen.
 
 **[!UICONTROL Components]** > **[!UICONTROL Classification sets]** > **[!UICONTROL Sets]** > Klicka på önskat namn på klassificeringsmängden > **[!UICONTROL Rules]**
+
+![regler för klassificeringsuppsättning, användargränssnitt](../../assets/csets-rules.png)
 
 ## Regelinställningar
 

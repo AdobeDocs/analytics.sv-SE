@@ -3,9 +3,9 @@ title: Inställningar för klassificeringsuppsättning
 description: Skapa eller redigera en klassificeringsgrupp.
 exl-id: abf00508-5dde-4669-bf94-5eb4754888cc
 feature: Classifications
-source-git-commit: 2b81c0df0e2bb68a73f9d24888758a433c6f5423
+source-git-commit: de12253f6db798f49d0cae34bf9cb6b7a3de17db
 workflow-type: tm+mt
-source-wordcount: '120'
+source-wordcount: '123'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,8 @@ ht-degree: 0%
 Konfigurera inställningarna för en klassificeringsgrupp.
 
 **[!UICONTROL Components]** > **[!UICONTROL Classification sets]** > **[!UICONTROL Sets]** > Klicka på önskat namn på klassificeringsmängden > **[!UICONTROL Settings]**
+
+![klassificeringsuppsättningsinställningar](../../assets/classification-set-settings.png)
 
 Följande fält är tillgängliga på den här fliken:
 

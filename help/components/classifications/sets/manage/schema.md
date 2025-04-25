@@ -3,9 +3,9 @@ title: Schema för klassificeringsuppsättning
 description: Visa och redigera schemat för en enskild klassificeringsgrupp.
 exl-id: 4a7c5bfe-ff2b-4380-af46-435801d73c1e
 feature: Classifications
-source-git-commit: 95767d10f63e20d5943fa95be3f2fe8f88e67e97
+source-git-commit: de12253f6db798f49d0cae34bf9cb6b7a3de17db
 workflow-type: tm+mt
-source-wordcount: '448'
+source-wordcount: '452'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,8 @@ ht-degree: 0%
 Visa aktuella konfigurerade klassificeringsdimensioner för den här klassificeringsuppsättningen.
 
 **[!UICONTROL Components]** > **[!UICONTROL Classification sets]** > **[!UICONTROL Sets]** > Klicka på önskat namn på klassificeringsmängden > **[!UICONTROL Schema]**
+
+![klassificeringsuppsättningens schema-UI](../../assets/classification-set-schema.png)
 
 Följande knappar är tillgängliga:
 
