@@ -3,9 +3,9 @@ title: Klassificeringsuppsättningshanterare
 description: Hantera klassificeringsgrupper i Adobe Analytics.
 exl-id: b1a6721b-8e5d-4ee6-af6b-cda31c9f8b00
 feature: Classifications
-source-git-commit: 2b81c0df0e2bb68a73f9d24888758a433c6f5423
+source-git-commit: a2a5e29eee46840d894ebf8d6184f8d6af9eee29
 workflow-type: tm+mt
-source-wordcount: '318'
+source-wordcount: '344'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,8 @@ Klassificeringsuppsättningar består av **Prenumerationer** (rapportpaket och d
 Den vänstra sidan av klassificeringsuppsättningshanteraren innehåller filterinställningar för att hitta önskad klassificeringsuppsättning. När du klickar på filterikonen växlas synligheten för filterinställningarna. Du kan filtrera klassificeringsgrupper efter **[!UICONTROL Tags]** eller **[!UICONTROL Report suite]**.
 
 ![Klassificeringsuppsättningsfilter](../../assets/classification-set-filters.png)
+
+Observera att 1 000 klassificeringsuppsättningar är förinlästa i taget. De filter som visas i den vänstra listen återspeglar alternativen för de uppsättningar som är förinlästa.
 
 ## Hanteringskolumner för klassificeringsuppsättning
 
