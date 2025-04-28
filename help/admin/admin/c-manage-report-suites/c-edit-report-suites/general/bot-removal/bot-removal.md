@@ -4,9 +4,9 @@ description: Så här tar du bort objekt i Adobe Analytics
 feature: Bot Removal
 role: Admin
 exl-id: 6d4b1925-4496-4017-85f8-82bda9e92ff3
-source-git-commit: 50c2881aa61097c14057dd4fd4654c832f20b26f
+source-git-commit: de9d2039411a7f8539f8e7b4eb840f03c964f489
 workflow-type: tm+mt
-source-wordcount: '774'
+source-wordcount: '682'
 ht-degree: 0%
 
 ---
@@ -25,17 +25,6 @@ Både standardfiltermetoder och anpassade robotfiltermetoder stöds i **[!UICONT
 | Anpassade robotregler | Du kan definiera och lägga till anpassade robotregler baserat på användaragenter, IP-adresser eller IP-intervall. |
 
 Mer information finns i [Förstå och konfigurera robotregler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/bot-removal/bot-rules.md).
-
-## Använd plugin-programmet [!UICONTROL websiteBot] för att identifiera objekt
-
-Med plugin-programmet [!UICONTROL websiteBot] kan du dynamiskt identifiera om skrivbordsbesökare är favoriter. Ni kan använda dessa data för att öka noggrannheten i alla typer av rapporter, vilket ger er ett bättre sätt att mäta legitim webbplatstrafik.
-
-Denna plug-in utför två kontroller:
-
-* Först avgörs om enheten är en stationär eller mobil enhet som använder variabeln navigator.UserAgent. Mobila enheter ignoreras.
-* Om det är en stationär enhet läggs en händelseavlyssnare till för musrörelser.
-
-Mer information finns i [Implementeringshandboken för Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/vars/plugins/websitebot.html).
 
 ## Använda en kombination av Adobe Tools
 

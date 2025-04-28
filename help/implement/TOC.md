@@ -4,10 +4,10 @@ audience: all
 user-guide-title: Implementeringshandbok för Analytics
 breadcrumb-title: Implementeringshandbok
 user-guide-description: Lär dig hur du implementerar Adobe Analytics. Anpassa vilka data som samlas in för att få ut så mycket som möjligt av Analytics-data.
-source-git-commit: 9a2d4c582b6a3946b658924851e5b5ada2f5a7ee
+source-git-commit: de9d2039411a7f8539f8e7b4eb840f03c964f489
 workflow-type: tm+mt
-source-wordcount: '435'
-ht-degree: 16%
+source-wordcount: '434'
+ht-degree: 8%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 16%
 + [Implementera Adobe Analytics](home.md)
 + [Versionsinformation för analyser](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html)
 + [Versionsinformation för AppMeasurement](appmeasurement-updates.md)
-+ Variabler, funktioner och metoder för Analytics {#vars}
++ Analysvariabler, funktioner och metoder {#vars}
    + [Översikt](vars/overview.md)
    + Konfigurationsvariabler {#config-vars}
       + [Översikt över konfigurationsvariabler](vars/config-vars/configuration-variables.md)
@@ -81,10 +81,10 @@ ht-degree: 16%
       + [server](vars/page-vars/server.md)
       + [läge](vars/page-vars/state.md)
       + [tidsstämpel](vars/page-vars/timestamp.md)
-      + [transaktions-ID](vars/page-vars/transactionid.md)
-      + [Zip](vars/page-vars/zip.md)
+      + [transactionID](vars/page-vars/transactionid.md)
+      + [zip](vars/page-vars/zip.md)
    + Funktioner och metoder {#functions}
-      + [Översikt över funktioner](vars/functions/overview.md)
+      + [Funktioner - översikt](vars/functions/overview.md)
       + [s_gi](vars/functions/s-gi.md)
       + [t](vars/functions/t-method.md)
       + [tl](vars/functions/tl-method.md)
@@ -130,9 +130,8 @@ ht-degree: 16%
       + [p_fo](vars/plugins/p-fo.md)
       + [pt](vars/plugins/pt-plugin.md)
       + [removeFromList](vars/plugins/removefromlist.md)
-      + [websiteBot](vars/plugins/websitebot.md)
    + [Integrera modul](vars/integrate.md)
-+ Förberedelser inför att implementera Adobe Analytics {#prepare}
++ Förbered implementering av Adobe Analytics {#prepare}
    + [Skapa ett datalager](prepare/data-layer.md)
    + [Jämför implementeringsmetoder](prepare/comparison.md)
    + [Överväganden för globala rapportsviter](prepare/global-rs.md)
@@ -142,9 +141,9 @@ ht-degree: 16%
 + Implementera analyser med Experience Platform Edge {#aep-edge}
    + [Edge - översikt](aep-edge/overview.md)
    + [Variabelmappning för dataobjekt](aep-edge/data-var-mapping.md)
-   + [Mappning av XDM-objektvariabler](aep-edge/xdm-var-mapping.md)
-   + SDK för webben {#web-sdk}
-      + [Översikt över Web SDK](aep-edge/web-sdk/overview.md)
+   + [Variabelmappning för XDM-objekt](aep-edge/xdm-var-mapping.md)
+   + Web SDK {#web-sdk}
+      + [SDK - översikt](aep-edge/web-sdk/overview.md)
       + [Migrera till Web SDK med taggar](aep-edge/web-sdk/analytics-extension-to-web-sdk.md)
       + [Migrera till Web SDK med JavaScript](aep-edge/web-sdk/appmeasurement-to-web-sdk.md)
       + [Ny implementering med taggar](aep-edge/web-sdk/web-sdk-tag-extension.md)
@@ -153,15 +152,15 @@ ht-degree: 16%
       + [Mobile SDK - översikt](aep-edge/mobile-sdk/overview.md)
    + Server-API {#server-api}
       + [Översikt över server-API](aep-edge/server-api/overview.md)
-+ Implementera analyser med Adobe Analytics-tillägget {#launch}
++ Implementera Analytics med Adobe Analytics-tillägget {#launch}
    + [Översikt över taggar](launch/overview.md)
    + [Skapa en Adobe Analytics-taggegenskap](launch/create-analytics-property.md)
    + [Distribuera till en utvecklingsmiljö](launch/deploy-dev.md)
    + [Validera och publicera i produktion](launch/validate-publish-prod.md)
    + [Mappa datalagerobjekt till dataelement](launch/layer-to-elements.md)
-   + [Mappa taggdataelement till Analytics-variabler](launch/elements-to-variable.md)
-+ Implementera Analytics med JavaScript {#js}
-   + [Översikt över JavaScript](js/overview.md)
+   + [Mappa taggdataelement till analysvariabler](launch/elements-to-variable.md)
++ Implementera analyser med JavaScript {#js}
+   + [JavaScript - översikt](js/overview.md)
    + [Implementera länkar för avanmälan](js/opt-out.md)
    + [Variabla åsidosättningar](js/overrides.md)
    + [Migrera från H-kod](js/migrate-from-hcode.md)
@@ -173,24 +172,24 @@ ht-degree: 16%
          + [dynamicAccountMatch](js/h-code/dynamicaccount/dynamicaccountmatch.md)
          + [dynamicAccountSelection](js/h-code/dynamicaccount/dynamicaccountselection.md)
       + [Felsök H-koden](js/h-code/troubleshooting.md)
-   + Identifiering av olika äldre enheter {#xdevice-visid}
+   + Äldre enhets-ID {#xdevice-visid}
       + [Ansluta användare till olika enheter - översikt](js/xdevice-visid/xdevice-connecting.md)
       + [Variabel beständighet](js/xdevice-visid/variable-persistence.md)
       + [Exempel på besök](js/xdevice-visid/visit-example.md)
       + [Vanliga frågor och svar om äldre enheter](js/xdevice-visid/xdevice-faq.md)
    + [Felsöka AppMeasurement](js/troubleshooting.md)
-+ Implementera Analytics på andra plattformar {#other}
++ Implementera analyser på andra plattformar {#other}
    + [Implementera analyser med hårdkodade bildförfrågningar](other/hardcoded.md)
    + [Implementera analyser på Ajax](other/ajax.md)
    + [Implementera analyser på AMP](other/amp.md)
    + [Implementera analyser om digitala assistenter](other/digital-assistants.md)
    + [Implementera analyser på Facebook Instant Articles](other/fb-instant-articles.md)
 + [Implementera analyser på mobila enheter](mobile-device-sdk.md)
-+ Användningsfall för implementering {#use-cases}
++ Användningsexempel för implementering {#use-cases}
    + [Använda AppMeasurement med iFrames](use-cases/iframe.md)
    + [Spåra olika implementeringstyper](use-cases/cross-type-implementation.md)
    + [Arbetsflöde för kampanjspårning](use-cases/campaign-tracking.md)
-+ Validera din implementering {#validate}
++ Validera implementeringen {#validate}
    + [Äldre Adobe Experience Cloud-felsökning](validate/debugger.md)
    + [Frågeparametrar för datainsamling](validate/query-parameters.md)
    + [Packet monitor](validate/packet-monitor.md)
