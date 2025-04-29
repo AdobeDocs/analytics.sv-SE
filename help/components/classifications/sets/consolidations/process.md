@@ -3,16 +3,16 @@ title: Konsolideringsprocess för klassificeringsuppsättning
 description: Hela processen med att konsolidera klassificeringsuppsättningar.
 exl-id: f36bcbcb-0ed0-44a7-a6a9-b28fd244fb27
 feature: Classifications
-source-git-commit: 9f70dbeb9dfe54897915213480f05cbdfaf920ef
+source-git-commit: 828f41bf45c1954c3b68ad71a7746e24626b9eed
 workflow-type: tm+mt
-source-wordcount: '389'
+source-wordcount: '439'
 ht-degree: 0%
 
 ---
 
 # Konsolideringsprocess för klassificeringsuppsättning
 
-Använd det här gränssnittet för att skapa en konsolidering av klassificeringsuppsättningar från början till slut.
+Med klassificeringskonsolideringar kan du ta klassificeringar från flera datauppsättningar och kombinera dem till en. Använd det här gränssnittet för att skapa en konsolidering av klassificeringsuppsättningar från början till slut. Det här gränssnittet är mest värdefullt för organisationer som går från en äldre klassificeringsarkitektur till en arkitektur för klassificeringsuppsättningar. De flesta organisationer som redan är med i arkitekturen för klassificeringsuppsättningar behöver vanligtvis inte använda det här konsolideringsarbetsflödet.
 
 ## Skapande
 
@@ -45,6 +45,6 @@ När en konsolidering har validerats kan du köra den. När du kör en konsolide
 
 ## Godkänn
 
-Fungerar som ett sista anrop innan de enskilda klassificeringsuppsättningarna tas bort och en konsoliderad klassificeringsuppsättning skapas. Kontrollera att allt är korrekt och klicka sedan på **[!UICONTROL Approve]**.
+Sista anropet innan enskilda klassificeringsuppsättningar togs bort och ersattes med en konsoliderad klassificeringsuppsättning. Verifiera att allt är korrekt och välj sedan **[!UICONTROL Approve]**.
 
 När den har godkänts skapas den konsoliderade klassificeringsuppsättningen. Statusen är inställd på [!UICONTROL Complete] och ingen ytterligare åtgärd krävs för konsolideringen.

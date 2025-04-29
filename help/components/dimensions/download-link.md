@@ -3,9 +3,9 @@ title: Hämta länk
 description: Namnet på nedladdningslänken.
 feature: Dimensions
 exl-id: 078014a2-1f09-4177-9575-b44c5da25816
-source-git-commit: 33d837cfa7909bd93d5a4f675aa0d8894a403266
+source-git-commit: a15d2b596c1e8b70e91efb49dd607fdbb0ceec3c
 workflow-type: tm+mt
-source-wordcount: '184'
+source-wordcount: '193'
 ht-degree: 0%
 
 ---
@@ -20,14 +20,14 @@ Hämtningslänken [dimension](overview.md) rapporterar namnen på hämtningslän
 
 ## Fyll den här dimensionen med data
 
-Den här dimensionen samlar in data från [`pev2`-frågesträngen ](/help/implement/validate/query-parameters.md) i bildbegäranden för träffar som också har frågesträngen `pe` med värdet `lnk_d`. Om frågesträngen `pe` har ett annat värde i träffen samlar dimensionen inte in data.
+Den här dimensionen samlar in data från [`pev2`-frågesträngen ](/help/implement/validate/query-parameters.md) i bildbegäranden för träffar som också har frågesträngen `pe` med värdet `lnk_d`. Om frågesträngen `pe` har ett annat värde i träffen samlar dimensionen inte in data. Den maximala längden för den här dimensionen är 100 byte.
 
-Om du vill skicka data till den här dimensionen med AppMeasurement skickar du en [`tl()`](/help/implement/vars/functions/tl-method.md)-bildbegäran med länktypsargumentet `"d"`. Fyll i länknamnsargumentet med det önskade värdet:
+Om du vill skicka data till den här dimensionen med AppMeasurement skickar du en [`tl()`](/help/implement/vars/functions/tl-method.md)-bildbegäran med ett länktypsargument på `"d"`. Fyll i länknamnsargumentet med det önskade värdet:
 
 ```js
 s.tl(true,"d","Example download link");
 ```
 
-## Dimensioner
+## Dimension-objekt
 
 Eftersom den här variabeln baseras på en anpassad sträng i implementeringen avgör organisationen vad dimensionsobjekten är. Adobe rekommenderar att du grupperar länkar i meningsfulla kategorier baserat på dina rapporteringsbehov.

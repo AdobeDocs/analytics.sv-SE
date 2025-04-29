@@ -5,9 +5,9 @@ subtopic: data feeds
 title: Referens för datakolumn
 feature: Data Feeds
 exl-id: e1492147-6e7f-4921-b509-898e7efda596
-source-git-commit: 808ab76ee3f7c7451f8b3569c282abebbc9ac32f
+source-git-commit: a15d2b596c1e8b70e91efb49dd607fdbb0ceec3c
 workflow-type: tm+mt
-source-wordcount: '3607'
+source-wordcount: '3615'
 ht-degree: 0%
 
 ---
@@ -38,14 +38,14 @@ Tidigare uppdateringar av den här tabellen finns på den här sidans [implement
 | **`browser`** | Ett numeriskt ID som representerar webbläsaren. Refererar till uppslagstabellen `browser.tsv` . | int osignerad |
 | **`browser_height`** | Dimensionen [Webbläsarhöjd](/help/components/dimensions/browser-height.md) . | smallint osignerad |
 | **`browser_width`** | Webbläsarens [bredd](/help/components/dimensions/browser-width.md) | smallint unsigned |
-| **`c_color`** | Färgpalettens bitdjup. Används som en del av beräkningen av dimensionen [Färgdjup](/help/components/dimensions/color-depth.md). AppMeasurementet använder JavaScript-funktionen `screen.colorDepth()`. | char(20) |
+| **`c_color`** | Färgpalettens bitdjup. Används som en del av beräkningen av dimensionen [Färgdjup](/help/components/dimensions/color-depth.md). AppMeasurement använder JavaScript-funktionen `screen.colorDepth()`. | char(20) |
 | **`campaign`** | Dimensionen [Spårningskod](/help/components/dimensions/tracking-code.md). | varchar(255) |
-| **`carrier`** | Integrationsvariabel Adobe Advertising. Anger mobiloperatör. Nyckelvärdet för `carrier.tsv` [dynamisk sökning](dynamic-lookups.md). | varchar(100) |
+| **`carrier`** | Adobe Advertising integrationsvariabel. Anger mobiloperatör. Nyckelvärdet för `carrier.tsv` [dynamisk sökning](dynamic-lookups.md). | varchar(100) |
 | **`ch_hdr`** | Klienttips som samlats in via HTTP-begärandehuvudet. | text |
 | **`ch_js`** | Klienttips som samlats in via JavaScript-API:t för användaragenttips för klienttips. | text |
 | **`channel`** | Dimensionen [Webbplatsavsnitt](/help/components/dimensions/site-section.md). | varchar(100) |
-| **`clickmaplink`** | Activity Map link | varchar(255) |
-| **`clickmaplinkbyregion`** | Activity Map länk per region | varchar(255) |
+| **`clickmaplink`** | Länk till Activity Map | varchar(255) |
+| **`clickmaplinkbyregion`** | Activity Map link by region | varchar(255) |
 | **`clickmappage`** | Activity Map page | varchar(255) |
 | **`clickmapregion`** | Activity Map | varchar(255) |
 | **`code_ver`** | API- eller klient-SDK-version som används för att kompilera och skicka bildbegäran. | char(16) |
@@ -68,10 +68,10 @@ Tidigare uppdateringar av den här tabellen finns på den här sidans [implement
 | **`duplicate_events`** | Listar varje händelse som räknats som en dubblett. | varchar(255) |
 | **`duplicate_purchase`** | En flagga som avgör om köphändelsen för den här träffen ignoreras eftersom den är en dubblett. | tinyint unsigned |
 | **`duplicated_from`** | Används endast i rapportsviter som innehåller VISTA-regler för träffkopior. Anger vilken rapportsvit som träffen kopierades från. | varchar(40) |
-| **`ef_id`** | `ef_id` som används i integreringar med Adobe Advertising. | varchar(255) |
-| **`evar1 - evar250`** | Egna variabler 1-250. Används i dimensionerna [eVar](/help/components/dimensions/evar.md). Varje organisation använder eVars på olika sätt. Det bästa stället för mer information om hur din organisation fyller i respektive eVars är ett [lösningsdesigndokument](/help/implement/prepare/solution-design.md) som är specifikt för din organisation. | varchar(255) |
+| **`ef_id`** | `ef_id` som används i Adobe Advertising-integreringar. | varchar(255) |
+| **`evar1 - evar250`** | Egna variabler 1-250. Används i måtten [eVar](/help/components/dimensions/evar.md). Varje organisation använder eVars på olika sätt. Det bästa stället för mer information om hur din organisation fyller i respektive eVars är ett [lösningsdesigndokument](/help/implement/prepare/solution-design.md) som är specifikt för din organisation. | varchar(255) |
 | **`event_list`** | Kommaavgränsad lista med numeriska ID:n som representerar händelser som utlöses vid träffen. Innehåller både standardhändelser och [anpassade händelser 1-1000](/help/components/metrics/custom-events.md). Använder `event.tsv`-sökning. | text |
-| **`exclude_hit`** | En flagga som avgör om träffen utesluts från rapportering. Kolumnen `visit_num` ökas inte för uteslutna träffar.<br>1: Används inte. En del av en skrapad funktion.<br>2: Används inte. En del av en skrapad funktion.<br>3: Används inte längre. Undantag för användaragent<br>4: Undantag baserat på IP-adress<br>5: Information om träffar saknas, t.ex. `page_url`, `pagename`, `page_event` eller `event_list`<br>6: JavaScript bearbetade inte korrekt träffen<br>7: Kontospecifikt undantag, t.ex. i VISTA-regler<br>8: Används inte. Alternativt kontospecifikt undantag.<br>9: Används inte. En del av en skrapad funktion.<br>10: Ogiltig valutakod<br>11: Träff saknar en tidsstämpel i en rapportsvit som bara innehåller tidsstämplar, eller en träff innehöll en tidsstämpel i en rapportsvit som inte är en tidsstämpel.<br>12: Används inte. En del av en skrapad funktion.<br>13: Används inte. En del av en skrapad funktion.<br>14: Målträff som inte matchar en Analytics-träff<br>15: Används inte just nu.<br>16: En Advertising Cloud-träff som inte matchar en Analytics-träff | tinyint unsigned |
+| **`exclude_hit`** | En flagga som avgör om träffen utesluts från rapportering. Kolumnen `visit_num` ökas inte för uteslutna träffar.<br>1: Används inte. En del av en skrapad funktion.<br>2: Används inte. En del av en skrapad funktion.<br>3: Används inte längre. Undantag för användaragent<br>4: Undantag baserat på IP-adress<br>5: Information om träffar saknas, t.ex. `page_url`, `pagename`, `page_event` eller `event_list`<br>6: JavaScript bearbetade inte korrekt träffen<br>7: Kontospecifikt undantag, t.ex. i VISTA-regler<br>8: Används inte. Alternativt kontospecifikt undantag.<br>9: Används inte. En del av en skrapad funktion.<br>10: Ogiltig valutakod<br>11: Träff saknar en tidsstämpel i en rapportsvit som bara innehåller tidsstämplar, eller en träff innehöll en tidsstämpel i en rapportsvit som inte är en tidsstämpel.<br>12: Används inte. En del av en skrapad funktion.<br>13: Används inte. En del av en skrapad funktion.<br>14: Målträff som inte matchar en Analytics-träff<br>15: Används inte just nu.<br>16: Advertising Cloud-träff som inte matchar en Analytics-träff | tinyint unsigned |
 | **`first_hit_page_url`** | Besökarens allra första URL. | varchar(255) |
 | **`first_hit_pagename`** | Den ursprungliga dimensionen för [startsidan](/help/components/dimensions/entry-dimensions.md). Besökarens ursprungliga startsidnamn. | varchar(100) |
 | **`first_hit_ref_domain`** | Den [ursprungliga refererande domänen](/help/components/dimensions/original-referring-domain.md)-dimensionen. Baserat på `first_hit_referrer`. Den första refererande domänen för besökaren. | varchar(100) |
@@ -83,8 +83,8 @@ Tidigare uppdateringar av den här tabellen finns på den här sidans [implement
 | **`geo_dma`** | Ett numeriskt ID för det demografiska område som träffen kom från, baserat på IP. Används i den amerikanska DMA-dimensionen[](/help/components/dimensions/us-dma.md). | int osignerad |
 | **`geo_region`** | Namnet på den stat eller region som träffen kom från, baserat på IP. Används i dimensionen [Områden](/help/components/dimensions/regions.md). | char(32) |
 | **`geo_zip`** | Postnumret som träffen kom från, baserat på IP. Hjälper till att fylla i dimensionen [Postnummer](/help/components/dimensions/zip-code.md). Se även `zip`. | varchar(16) |
-| **`hit_source`** | Källan som träffen kom från. Träffkällor 1, 2 och 6 faktureras. <br>1: Standardbildbegäran utan tidsstämpel <br>2: Standardbildbegäran med tidsstämpel <br> 3: Överföring av livdatakälla med tidsstämplar <br> <br>: Används inte <br>5: Överföring av generisk datakälla 6: Överföring av datakälla med fullständig bearbetning <br>7: Överföring av TransactionID-datakälla <br>8: Används inte längre; Tidigare versioner av Adobe Advertising Cloud-datakällor <br>9: Används inte längre; Adobe Social sammanfattningsmått <br> : Vidarebefordran på serversidan i Audience Manager används | tinyint unsigned |
-| **`hit_time_gmt`** | Tidsstämpeln för träffservrarna för datainsamling i Adobe fick träffen, baserat på UNIX®-tid. | int |
+| **`hit_source`** | Källan som träffen kom från. Träffkällor 1, 2 och 6 faktureras. <br>1: Standardbildbegäran utan tidsstämpel <br> <br>: Standardbildbegäran med tidsstämpel <br> <br> 3: Överföring av livdatakälla med tidsstämplar 5: Överföring av generisk datakälla <br>6: Överföring av datakälla med fullständig bearbetning <br>7: Överföring av TransactionID-datakälla <br>8: Används inte längre; tidigare versioner av Adobe Advertising Cloud-data Källor <br>9: Används inte längre, Adobe Social-sammanfattningsmått <br> : Audience Manager serversidans vidarebefordran används | tinyint unsigned |
+| **`hit_time_gmt`** | Tidsstämpeln för Adobe datainsamlingsservrar tog emot träffen, baserat på UNIX®-tid. | int |
 | **`hitid_high`** | Används med `hitid_low` för att identifiera en träff. | bigint unsigned |
 | **`hitid_low`** | Används med `hitid_high` för att identifiera en träff. | bigint unsigned |
 | **`hourly_visitor`** | En flagga som avgör om träffen är en ny timbesökare. | tinyint unsigned |
@@ -145,7 +145,7 @@ Tidigare uppdateringar av den här tabellen finns på den här sidans [implement
 | **`monthly_visitor`** | En flagga som avgör om besökaren är unik för den aktuella månaden. | tinyint unsigned |
 | **`mvvar1`** - `mvvar3` | [Listvariabelvärden](/help/implement/vars/page-vars/list.md). Innehåller en avgränsad lista med anpassade värden beroende på implementering. Kolumnerna `post_mvvar1` - `post_mvvar3` ersätter den ursprungliga avgränsaren med `--**--`. | text |
 | **`mvvar1_instances`** - `mvvar3_instances` | Listvariabelvärdena som angavs för den aktuella träffen. Ersätter den ursprungliga avgränsaren med `--**--`. Kolumnerna `post` innehåller vanligtvis inga data. | text |
-| **`new_visit`** | En flagga som avgör om den aktuella träffen är ett nytt besök. Anges av Adobe efter 30 minuters besöksinaktivitet. | tinyint unsigned |
+| **`new_visit`** | En flagga som avgör om den aktuella träffen är ett nytt besök. Anges av Adobe efter 30 minuters inaktivitet. | tinyint unsigned |
 | **`os`** | Ett numeriskt ID som representerar besökarens operativsystem. Baserat på kolumnen `user_agent`. Nyckelvärdet för `operating_system.tsv` standardsökning och `operating_system_type.tsv` [dynamisk sökning](dynamic-lookups.md). | int unsigned |
 | **`page_event`** | Den typ av träff som skickas i bildbegäran (standardträff, nedladdningslänk, anpassad länk, slutlänk). Se [Sökning efter sidhändelser](datafeeds-page-event.md). | tinyint unsigned |
 | **`page_event_var1`** | Används endast vid förfrågningar om länkspårningsbilder. URL-adressen till den nedladdningslänk, den avslutningslänk eller anpassade länk som du klickar på. | text |
@@ -405,3 +405,8 @@ Följande kolumnlista är oanvända, indragna eller innehåller inget värde i r
 * `videoresume`
 * `videototaltime`
 * `videouniquetimeplayed`
+
+>[!MORELIKETHIS]
+>
+>[Variabelmappning för XDM-objekt](/help/implement/aep-edge/xdm-var-mapping.md)
+>[Variabelmappning för dataobjekt ](/help/implement/aep-edge/data-var-mapping.md)
