@@ -4,9 +4,9 @@ description: Med kontextdatavariabler kan du definiera anpassade variabler på v
 feature: Variables
 exl-id: f2c747a9-1a03-4f9f-8025-9f4745403a81
 role: Admin, Developer
-source-git-commit: 983b5073cf17a6aa0c038516c1d1ec3a40ca9eed
+source-git-commit: a8fe70381fbe04f3c57d221045a28d89e854ff54
 workflow-type: tm+mt
-source-wordcount: '569'
+source-wordcount: '570'
 ht-degree: 0%
 
 ---
@@ -15,11 +15,11 @@ ht-degree: 0%
 
 Med kontextdatavariabler kan du definiera anpassade variabler på varje sida som bearbetningsregler kan läsa. I stället för att explicit tilldela värden till Analytics-variabler i koden kan du skicka data i kontextdatavariabler. Bearbetningsregler tar sedan hänsyn till variabelvärden för kontextdata och skickar dem till respektive Analytics-variabler. Se [Bearbetar regler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/c-processing-rules/c-processing-rules-configuration/t-processing-rules.md) i användarhandboken för Admin.
 
-Kontextdatavariabler är användbara för utvecklingsteam som samlar in data i namngivna element i stället för i numrerade variabler. I stället för att begära utvecklarteam tilldelar du till exempel sidans författare till `eVar10`, kan du begära att de tilldelar den till `s.contextData["author"]` i stället. En Analysadministratör i organisationen kan sedan skapa bearbetningsregler för att mappa kontextdatavariabler till analysvariabler för rapportering. Utvecklingsteamen skulle i slutänden bara bekymra sig om kontextdatavariabler i stället för de många sidvariabler som Adobe erbjuder.
+Kontextdatavariabler är användbara för utvecklingsteam som samlar in data i namngivna element i stället för i numrerade variabler. I stället för att begära utvecklarteam tilldelar du till exempel sidans författare till `eVar10`, kan du begära att de tilldelar den till `s.contextData["author"]` i stället. En Analysadministratör i organisationen kan sedan skapa bearbetningsregler för att mappa kontextdatavariabler till analysvariabler för rapportering. Utvecklingsteamen skulle i slutändan bara bekymra sig om kontextdatavariabler i stället för de många sidvariabler som Adobe erbjuder.
 
 ## Sammanhangsdatavariabler med Web SDK
 
-Om du använder [**XDM-objektet**](/help/implement/aep-edge/xdm-var-mapping.md) inkluderas automatiskt alla fält som inte mappar till en Adobe Analytics-variabel som kontextdatavariabel. Du kan också explicit ange kontextdata med XDM-objektet. Du kan sedan använda [Bearbetningsregler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/c-processing-rules/processing-rules.md) för att tilldela kontextdatavariabeln till den önskade Analytics-variabeln.  Mer information finns i [Mappa andra XDM-fält till analysvariabler](../../aep-edge/xdm-var-mapping.md#mapping-other-xdm-fields-to-analytics-variables).
+Om du använder [**XDM-objektet**](/help/implement/aep-edge/xdm-var-mapping.md) inkluderas automatiskt alla fält som inte mappar till en Adobe Analytics-variabel som kontextdatavariabel. Du kan också ange kontextdata explicit med XDM-objektet. Du kan sedan använda [Bearbetningsregler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/c-processing-rules/processing-rules.md) för att tilldela kontextdatavariabeln till den önskade Analytics-variabeln.  Mer information finns i [Mappa andra XDM-fält till analysvariabler](../../aep-edge/xdm-var-mapping.md#mapping-other-xdm-fields-to-analytics-variables).
 
 Om du använder [**dataobjektet**](/help/implement/aep-edge/data-var-mapping.md) finns alla kontextdatavariabler i `data.__adobe.analytics.contextData` som nyckelvärdepar:
 
@@ -38,15 +38,15 @@ alloy("sendEvent", {
 });
 ```
 
-Gränssnittet [Bearbetningsregler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/c-processing-rules/processing-rules.md) skulle visa `c.example_variable` och `c.second_example` i tillämpliga nedrullningsbara menyer.
+Gränssnittet [Bearbetningsregler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/c-processing-rules/processing-rules.md) skulle visa `example_variable` och `second_example` i tillämpliga nedrullningsbara menyer.
 
 ## Sammanhangsdatavariabler med Adobe Analytics-tillägget
 
-Adobe Experience Platform Data Collection har ingen dedikerad plats för att ange kontextdatavariabler. Använd den anpassade kodredigeraren enligt AppMeasurementen syntax.
+Adobe Experience Platform Data Collection har ingen dedikerad plats för att ange kontextdatavariabler. Använd den anpassade kodredigeraren enligt AppMeasurement-syntax.
 
-## s.contextData i AppMeasurementet och den anpassade kodredigeraren för Analytics-tillägget
+## s.contextData i AppMeasurement och den anpassade kodredigeraren för Analytics-tillägget
 
-Variabeln `s.contextData` får inget värde direkt. Ange i stället variabelns egenskaper som en sträng.
+Variabeln `s.contextData` får inget värde direkt. Ställ i stället in variabelns egenskaper på en sträng.
 
 ```js
 // Assign the example_variable property a value
@@ -54,7 +54,7 @@ s.contextData["example_variable"] = "Example value";
 ```
 
 * Giltiga kontextdatavariabler innehåller endast alfanumeriska tecken, understreck och punkter. Adobe garanterar inte datainsamling i bearbetningsregler om du inkluderar andra tecken, t.ex. bindestreck.
-* Starta inte kontextdatavariabler med `"a."`. Det här prefixet är reserverat och används av Adobe. Använd till exempel inte `s.contextData["a.InstallEvent"]`.
+* Starta inte kontextdatavariabler med `"a."`. Prefixet är reserverat och används av Adobe. Använd till exempel inte `s.contextData["a.InstallEvent"]`.
 * Sammanhangsdatavariabler är inte skiftlägeskänsliga. Variablerna `s.contextData["example"]` och `s.contextData["EXAMPLE"]` är identiska.
 * En enskild nyckel får inte innehålla mer än ett värde. Om du vill använda kontextdatavariabler för flervärdesvariabler sammanfogar du alla värden med en avgränsare (vanligtvis ett komma) och skickar dem antingen till en [listprop](prop.md#list-props) eller en [listvariabel](list.md) med bearbetningsregler.
 
