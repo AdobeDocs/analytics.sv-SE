@@ -3,9 +3,9 @@ description: Hantera konton i Advertising Analytics.
 title: Hantera annonskonton
 feature: Advertising Analytics
 exl-id: fe75cd3d-aa84-414a-a9d1-c2ab25def575
-source-git-commit: a34dfc63c47b6fe4b91b2b67ea21cdddafb0bfd0
+source-git-commit: b53ef727adc563e05403c50d80bbd0c48bb8a054
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '420'
 ht-degree: 0%
 
 ---

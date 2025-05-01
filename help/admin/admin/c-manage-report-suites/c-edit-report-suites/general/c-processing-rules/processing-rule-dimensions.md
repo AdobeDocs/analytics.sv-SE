@@ -1,18 +1,18 @@
 ---
 description: Tillgängliga mått och mätvärden som du kan läsa och skriva med bearbetningsregler.
 subtopic: Processing rules
-title: Dimensioner som är tillgängliga för bearbetningsregler
+title: Tillgängliga dimensioner för bearbetningsregler
 feature: Processing Rules
 role: Admin
 exl-id: ffd7a1d6-2c9d-41e7-9c75-9e47b6f9c283
-source-git-commit: 02fea12d1286fdf2b8cd075c8bcccca0d196cad2
+source-git-commit: b53ef727adc563e05403c50d80bbd0c48bb8a054
 workflow-type: tm+mt
 source-wordcount: '712'
 ht-degree: 1%
 
 ---
 
-# Dimensioner och mätvärden som är tillgängliga för bearbetningsregler
+# Tillgängliga mått och mätvärden för bearbetningsregler
 
 Tillgängliga mått och mätvärden som du kan läsa och skriva med bearbetningsregler.
 
@@ -29,8 +29,8 @@ Tillgängliga mått och mätvärden som du kan läsa och skriva med bearbetnings
 | --- | --- | --- |
 | Sidans URL | Läs och skriv | Dimensionen för [sid-URL](/help/components/dimensions/page-url.md). Länkspårning träffar den här dimensionen innan bearbetningsreglerna nås. Om du infogar ett sidans URL-värde igen med bearbetningsregler betraktas träffen som en [sidvy](/help/components/metrics/page-views.md) i stället för en [sidhändelse](/help/components/metrics/page-events.md). Adobe rekommenderar att du kontrollerar om det finns ett värde i siddimensionen innan du ändrar den. |
 | Sidnamn | Läs och skriv | Dimensionen [Sida](/help/components/dimensions/page.md). Länkspårning träffar den här dimensionen innan bearbetningsreglerna nås. Om du infogar ett sidvärde igen med bearbetningsregler betraktas träffen som en [sidvy](/help/components/metrics/page-views.md) i stället för en [sidhändelse](/help/components/metrics/page-events.md). Adobe rekommenderar att du kontrollerar om det finns ett värde i siddimensionen innan du ändrar den. |
-| Rapportsvit-ID | Skrivskyddad | Rapportsviten som bearbetningsregeln körs på. Rapportsviten kan skilja sig från den rapportserie som ursprungligen skickades via AppMeasurementet, till exempel när VISTA-regler används. |
-| AppMeasurementen kodversion | Skrivskyddad | AppMeasurementets biblioteksversion som används för att generera bildbegäran. |
+| Rapportsvit-ID | Skrivskyddad | Rapportsviten som bearbetningsregeln körs på. Den här rapportsviten kan skilja sig från den rapportserie som ursprungligen skickades via AppMeasurement, till exempel när VISTA-regler används. |
+| AppMeasurement kodversion | Skrivskyddad | AppMeasurement biblioteksversion som användes för att generera bildbegäran. |
 | IP-adress | Skrivskyddad | Besökarens IP-adress. |
 | Användaragent | Skrivskyddad | Besökarens användaragent. |
 | Referent | Skrivskyddad | Dimensionen [Referent](/help/components/dimensions/referrer.md). |
@@ -49,7 +49,7 @@ Tillgängliga mått och mätvärden som du kan läsa och skriva med bearbetnings
 
 | Variabel | Läsa/skriva status | Beskrivning |
 | --- | --- | --- |
-| eVar 1-250 | Läs och skriv | [eVar](/help/components/dimensions/evar.md) dimensioner. |
+| eVar 1-250 | Läs och skriv | [eVar](/help/components/dimensions/evar.md)-dimensioner. |
 | Campaign | Läs och skriv | Dimensionen [Spårningskod](/help/components/dimensions/tracking-code.md). |
 | Inköps-ID | Läs och skriv | Implementeringsvariabeln [`purchaseID`](/help/implement/vars/page-vars/purchaseid.md). |
 | Läge | Läs och skriv | Implementeringsvariabeln [`state`](/help/implement/vars/page-vars/state.md) har tagits bort. |

@@ -3,16 +3,16 @@ title: Skapa en datafeed
 description: Lär dig hur du skapar en datafeed och om filinformationen som ska skickas till Adobe.
 feature: Data Feeds
 exl-id: 36c8a40e-6137-4836-9d4b-bebf17b932bc
-source-git-commit: 808ab76ee3f7c7451f8b3569c282abebbc9ac32f
+source-git-commit: b53ef727adc563e05403c50d80bbd0c48bb8a054
 workflow-type: tm+mt
-source-wordcount: '4124'
+source-wordcount: '4125'
 ht-degree: 0%
 
 ---
 
 # Skapa en datafeed
 
-När du skapar en datafeed kan du ge Adobe:
+När du skapar en datafeed får du följande från Adobe:
 
 * Information om målet dit du vill skicka rådatafiler
 * De data som du vill inkludera i varje fil
@@ -112,7 +112,7 @@ Innan du skapar en datafeed är det viktigt att du har en grundläggande först�
          |---------|----------|
          | [!UICONTROL **Kontonamn**] | Ett namn för kontot. Det kan vara vilket namn du vill. |
          | [!UICONTROL **Kontobeskrivning**] | En beskrivning av kontot. |
-         | [!UICONTROL **Roll-ARN**] | Du måste ange en roll-ARN (Amazon Resource Name) som Adobe kan använda för att få åtkomst till Amazon S3-kontot. För att göra detta skapar du en IAM-behörighetsprincip för källkontot, kopplar principen till en användare och skapar sedan en roll för målkontot. Mer information finns i [den här AWS-dokumentationen](https://aws.amazon.com/premiumsupport/knowledge-center/cross-account-access-iam/). |
+         | [!UICONTROL **Roll-ARN**] | Du måste ange ett ROLL-ARN (Amazon Resource Name) som Adobe kan använda för att få åtkomst till Amazon S3-kontot. För att göra detta skapar du en IAM-behörighetsprincip för källkontot, kopplar principen till en användare och skapar sedan en roll för målkontot. Mer information finns i [den här AWS-dokumentationen](https://aws.amazon.com/premiumsupport/knowledge-center/cross-account-access-iam/). |
          | [!UICONTROL **ANVÄNDAREN ÄR**] | Användar-ARN (Amazon Resource Name) tillhandahålls av Adobe. Du måste koppla den här användaren till den princip du skapade. |
 
          {style="table-layout:auto"}
@@ -123,7 +123,7 @@ Innan du skapar en datafeed är det viktigt att du har en grundläggande först�
          |---------|----------|
          | [!UICONTROL **Namn**] | Ett namn för kontot. |
          | [!UICONTROL **Beskrivning**] | En beskrivning av kontot. |
-         | [!UICONTROL **Bucket**] | Den bucket på ditt Amazon S3-konto där du vill att Adobe Analytics-data ska skickas. <p>Kontrollera att användar-ARN som tillhandahålls av Adobe har behörigheten `S3:PutObject` för att kunna överföra filer till den här bucket. Med den här behörigheten kan användaren ARN överföra initiala filer och skriva över filer för efterföljande överföringar.</p><p>Bucket-namn måste uppfylla specifika namnregler. De måste till exempel innehålla mellan 3 och 63 tecken, får endast bestå av gemener, siffror, punkter (.) och bindestreck (-) och måste börja och sluta med en bokstav eller en siffra. [En fullständig lista över namnregler finns i AWS-dokumentationen](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucketnamingrules.html). </p> |
+         | [!UICONTROL **Bucket**] | Den bucket på ditt Amazon S3-konto där du vill att Adobe Analytics-data ska skickas. <p>Se till att användar-ARN som tillhandahölls av Adobe har behörigheten `S3:PutObject` för att kunna överföra filer till den här bucket. Med den här behörigheten kan användaren ARN överföra initiala filer och skriva över filer för efterföljande överföringar.</p><p>Bucket-namn måste uppfylla specifika namnregler. De måste till exempel innehålla mellan 3 och 63 tecken, får endast bestå av gemener, siffror, punkter (.) och bindestreck (-) och måste börja och sluta med en bokstav eller en siffra. [En fullständig lista över namnregler finns i AWS-dokumentationen](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucketnamingrules.html). </p> |
          | [!UICONTROL **Prefix**] | Mappen inom hakparentesen där du vill placera data. Ange ett mappnamn och lägg sedan till ett omvänt snedstreck efter namnet för att skapa mappen. Exempel: `folder_name/` |
 
          {style="table-layout:auto"}
@@ -342,7 +342,7 @@ Innan du skapar en datafeed är det viktigt att du har en grundläggande först�
          | [!UICONTROL **Principal**] | Huvudmannen tillhandahålls av Adobe. Du måste ge den här huvudmannen behörighet att ta emot feeds. |
          | [!UICONTROL **Namn**] | Ett namn för kontot. |
          | [!UICONTROL **Beskrivning**] | En beskrivning av kontot. |
-         | [!UICONTROL **Bucket**] | Den bucket på ditt GCP-konto där du vill att Adobe Analytics-data ska skickas. <p>Kontrollera att du har beviljat någon av följande behörigheter till säkerhetsobjektet som tillhandahålls av Adobe: (Mer information om att bevilja behörigheter finns i [Lägga till ett säkerhetsobjekt i en princip på paketnivå](https://cloud.google.com/storage/docs/access-control/using-iam-permissions#bucket-add) i dokumentationen för Google Cloud.)<ul><li>`roles/storage.objectCreator`: Använd den här behörigheten om du vill begränsa säkerhetsobjektet till att endast skapa filer i ditt GCP-konto. </br>**Viktigt!** Om du använder den här behörigheten för schemalagda rapporter måste du använda ett unikt filnamn för varje ny schemalagd export. Annars misslyckas rapportgenereringen eftersom huvudkontot inte har åtkomst att skriva över befintliga filer.</li><li>(Rekommenderas) `roles/storage.objectUser`: Använd den här behörigheten om du vill att säkerhetsobjektet ska ha åtkomst till att visa, lista, uppdatera och ta bort filer på ditt GCP-konto.</br>Med den här behörigheten kan huvudpersonen skriva över befintliga filer för efterföljande överföringar, utan att behöva generera unika filnamn automatiskt för varje ny schemalagd export.</li></ul><p>Om din organisation använder [begränsningar för organisationsprinciper](https://cloud.google.com/storage/docs/org-policy-constraints) för att endast tillåta Google Cloud-plattformskontot i tillåtelselista behöver du följande Adobe-ägda Google Cloud-plattformsorganisations-ID: <ul><li>`DISPLAY_NAME`: `adobe.com`</li><li>`ID`: `178012854243`</li><li>`DIRECTORY_CUSTOMER_ID`: `C02jo8puj`</li></ul> </p> |
+         | [!UICONTROL **Bucket**] | Den bucket på ditt GCP-konto där du vill att Adobe Analytics-data ska skickas. <p>Kontrollera att du har beviljat någon av följande behörigheter till säkerhetsobjektet som tillhandahålls av Adobe: (Mer information om att bevilja behörigheter finns i [Lägga till ett säkerhetsobjekt i en princip på paketnivå](https://cloud.google.com/storage/docs/access-control/using-iam-permissions#bucket-add) i dokumentationen för Google Cloud.)<ul><li>`roles/storage.objectCreator`: Använd den här behörigheten om du vill begränsa säkerhetsobjektet till att endast skapa filer i ditt GCP-konto. </br>**Viktigt!** Om du använder den här behörigheten för schemalagda rapporter måste du använda ett unikt filnamn för varje ny schemalagd export. Annars misslyckas rapportgenereringen eftersom huvudkontot inte har åtkomst att skriva över befintliga filer.</li><li>(Rekommenderas) `roles/storage.objectUser`: Använd den här behörigheten om du vill att säkerhetsobjektet ska ha åtkomst till att visa, lista, uppdatera och ta bort filer på ditt GCP-konto.</br>Med den här behörigheten kan huvudpersonen skriva över befintliga filer för efterföljande överföringar, utan att behöva generera unika filnamn automatiskt för varje ny schemalagd export.</li></ul><p>Om din organisation använder [begränsningar för organisationsprinciper](https://cloud.google.com/storage/docs/org-policy-constraints) för att endast tillåta Google Cloud-plattformskontot i din tillåtelselista behöver du följande Adobe-ägda Google Cloud-plattformens organisations-ID: <ul><li>`DISPLAY_NAME`: `adobe.com`</li><li>`ID`: `178012854243`</li><li>`DIRECTORY_CUSTOMER_ID`: `C02jo8puj`</li></ul> </p> |
          | [!UICONTROL **Prefix**] | Mappen inom hakparentesen där du vill placera data. Ange ett mappnamn och lägg sedan till ett omvänt snedstreck efter namnet för att skapa mappen. Exempel: `folder_name/` |
 
          {style="table-layout:auto"}
@@ -355,7 +355,7 @@ Innan du skapar en datafeed är det viktigt att du har en grundläggande först�
 
 +++
 
-1. I avsnittet [!UICONTROL **Datakolumndefinitioner**] väljer du den senaste [!UICONTROL **Alla Adobe Columns**]-mallen i listrutan och fyller sedan i följande fält:
+1. I avsnittet [!UICONTROL **Datakolumndefinitioner**] väljer du den senaste mallen [!UICONTROL **Alla Adobe-kolumner**] i listrutan och fyller sedan i följande fält:
 
    | Fält | Funktion |
    |---------|----------|
@@ -363,7 +363,7 @@ Innan du skapar en datafeed är det viktigt att du har en grundläggande först�
    | [!UICONTROL **Komprimeringsformat**] | Den typ av komprimering som används. **Gzip** skickar filer i formatet `.tar.gz`. **Zip** skickar filer i formatet `.zip`. |
    | [!UICONTROL **Paketeringstyp**] | Välj [!UICONTROL **Flera filer**] för de flesta dataflöden. Med det här alternativet numreras data till okomprimerade 2 GB-segment. (Om alternativet [!UICONTROL **Flera filer**] har valts och okomprimerade data för rapportfönstret är mindre än 2 GB skickas en fil.) Om du väljer **En fil** skapas `hit_data.tsv` -filen i en enda, potentiellt stor fil. |
    | [!UICONTROL **Manifest**] | Avgör om Adobe ska leverera en [manifestfil](c-df-contents/datafeeds-contents.md#feed-manifest) till målet när inga data samlas in för ett feed-intervall. Om du väljer **Manifestfil** får du en manifestfil som liknar följande när inga data samlas in:<p>`text`</p><p>`Datafeed-Manifest-Version: 1.0`</p><p>`Lookup-Files: 0`</p><p>`Data-Files: 0`</p><p> `Total-Records: 0`</p> |
-   | [!UICONTROL **Kolumnmallar**] | När du skapar många dataflöden rekommenderar Adobe att du skapar en kolumnmall. Om du väljer en kolumnmall inkluderas automatiskt de angivna kolumnerna i mallen. Adobe har också flera mallar som standard. |
+   | [!UICONTROL **Kolumnmallar**] | När du skapar många dataflöden rekommenderar Adobe att du skapar en kolumnmall. Om du väljer en kolumnmall inkluderas automatiskt de angivna kolumnerna i mallen. I Adobe finns också flera mallar som standard. |
    | [!UICONTROL **Tillgängliga kolumner**] | Alla tillgängliga datakolumner i Adobe Analytics. Klicka på [!UICONTROL Add all] om du vill inkludera alla kolumner i en datafeed. |
    | [!UICONTROL **Inkluderade kolumner**] | De kolumner som ska inkluderas i en datafeed. Klicka på [!UICONTROL Remove all] om du vill ta bort alla kolumner från en datafeed. |
    | [!UICONTROL **Hämta CSV**] | Hämtar en CSV-fil som innehåller alla inkluderade kolumner. |
@@ -385,7 +385,7 @@ Följande information innehåller konfigurationsinformation för var och en av d
 
 ### FTP
 
-Data från dataflöden kan levereras till en FTP-plats som är värd för Adobe eller kunder. Kräver FTP-värd, användarnamn och lösenord. Använd sökvägsfältet för att placera feed-filer i en mapp. Mappar måste redan finnas. Flöden genererar ett fel om den angivna sökvägen inte finns.
+Data från dataflöden kan levereras till en FTP-plats hos Adobe eller en kundvärd. Kräver FTP-värd, användarnamn och lösenord. Använd sökvägsfältet för att placera feed-filer i en mapp. Mappar måste redan finnas. Flöden genererar ett fel om den angivna sökvägen inte finns.
 
 Använd följande information när du fyller i de tillgängliga fälten:
 

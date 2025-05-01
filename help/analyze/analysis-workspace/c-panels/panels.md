@@ -4,7 +4,7 @@ title: Paneler - översikt
 feature: Panels
 role: User, Admin
 exl-id: dd1a3c40-8b5b-47dd-86d9-da766575ee46
-source-git-commit: d7a6867796f97f8a14cd8a3cfad115923b329c7c
+source-git-commit: b53ef727adc563e05403c50d80bbd0c48bb8a054
 workflow-type: tm+mt
 source-wordcount: '2032'
 ht-degree: 1%
@@ -78,7 +78,7 @@ Ni kan:
 
 ## Rapportsvit
 
-Varje panel är associerad med en [rapportserie](/help/admin/admin/c-manage-report-suites/report-suites-admin.md), som identifieras av ![Data](/help/assets/icons/Data.svg) **[!UICONTROL *namnet på rapportsviten *]**i listrutan längst upp till höger på panelen.
+Varje panel är associerad med en [rapportserie](/help/admin/admin/c-manage-report-suites/report-suites-admin.md) som identifieras av ![Data](/help/assets/icons/Data.svg) **[!UICONTROL *namnet på rapportsviten *]**i listrutan längst upp till höger på panelen.
 
 När du skapar en ny panel baseras standardrapportsviten på rapportsviten från den panel du senast arbetade på i Analysis Workspace-projektet.
 
@@ -112,7 +112,7 @@ Panelkalendern styr rapportens datumintervall för tabeller och visualiseringar 
 ![Kalenderfönstret visar det valda datumintervallet.](assets/panel-calendar.png)
 
 1. Välj ett datumintervall genom att först markera startdatumet och sedan slutdatumet.
-Du kan också välja en **[!UICONTROL Preset]** i listrutan [!UICONTROL *Välj en förinställning*].
+Du kan också välja en **[!UICONTROL Preset]** i listrutan [!UICONTROL *Välj en förinställning*] .
 
 1. Du kan också välja **[!UICONTROL Show advanced settings]** för att:
 
@@ -205,7 +205,7 @@ Användare kan använda den nedrullningsbara segmentmenyn på något av följand
 
 Med dynamiska listrutesegment kan du fastställa tillgängliga värden baserat på data i panelens rapporteringsintervall och värden i andra nedrullningsbara segment. Du kan till exempel skapa två dynamiska listrutor med en landsdimension och en stadsdimension. När du väljer ett land i listrutan **[!UICONTROL Countries]** justeras listrutan **[!UICONTROL Cities]** dynamiskt så att den bara visar städer i det landet.
 
-Samma koncept gäller för alla dimensioner. Endast dimensionsobjekt som visas inom panelens datumintervall och markerade segment visas. Dimension som är markerad i statiska rullgardinssegment påverkar tillgängliga värden i dynamiska rullgardinssegment. Inverteringen är emellertid inte true. De Dimensioner som markeras i dynamiska rullgardinssegment påverkar inte tillgängliga värden i statiska rullgardinssegment.
+Samma koncept gäller för alla dimensioner. Endast dimensionsobjekt som visas inom panelens datumintervall och markerade segment visas. Dimension-objekt som markeras i statiska rullgardinssegment påverkar tillgängliga värden i dynamiska rullgardinssegment. Inverteringen är emellertid inte true. Dimension-objekt som är markerade i dynamiska rullgardinssegment påverkar inte tillgängliga värden i statiska rullgardinssegment.
 
 Manuellt urval av dimensionsobjekt är tillgängligt om du förväntar dig att en viss dimensionsobjekt ska samlas in i framtiden. Du kan även rensa ett dynamiskt nedrullningsbart segment så att det inte innehåller något värde, vilket innebär att andra dynamiska nedrullningsbara segment kan innehålla fler värden. Välj **[!UICONTROL Reset all]** om du vill ta bort markeringen från alla nedrullningsbara segment för den panelen.
 

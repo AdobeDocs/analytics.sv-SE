@@ -5,7 +5,7 @@ title: Visualiseringar - översikt
 feature: Visualizations
 role: User, Admin
 exl-id: b40aa942-4a08-4ff3-9895-e92f9a187b54
-source-git-commit: 5a35d2acd428d16afff3d8e85cfb084d6a6476c4
+source-git-commit: b53ef727adc563e05403c50d80bbd0c48bb8a054
 workflow-type: tm+mt
 source-wordcount: '1377'
 ht-degree: 1%
@@ -104,7 +104,7 @@ Vilka visualiseringsinställningar som är tillgängliga beror på visualisering
 | **[!UICONTROL Show forecast]** | Förbättra linjediagram och frihandstabeller genom att visa prognosvärden. |
 | **[!UICONTROL Show min]** | Visa det minsta värdet i visualiseringen. |
 | **[!UICONTROL Show max]** | Visa det högsta värdet i visualiseringen. |
-| **[!UICONTROL Show trendline]** | Visa en trendlinje i visualiseringen. När du väljer det här alternativet kan du välja typ av trendlinje i listrutan. |
+| **[!UICONTROL Show trendline]** | Visa en trendlinje i visualiseringen. När du väljer det här alternativet kan du välja typ av trendlinje i den nedrullningsbara menyn. |
 
 Du kan anpassa inställningarna för alla visualiseringar som du skapar. Mer information finns i [Användarinställningar](/help/analyze/analysis-workspace/user-preferences.md).
 

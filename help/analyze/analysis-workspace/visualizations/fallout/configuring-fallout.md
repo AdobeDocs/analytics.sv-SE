@@ -4,7 +4,7 @@ title: Konfigurera en utfallsvisualisering
 feature: Visualizations
 role: User, Admin
 exl-id: 9d2a0163-a5cb-4a1c-97e9-e78a8f99aaee
-source-git-commit: be6056f9e7a64b47ab544594149ebfbe134f1c04
+source-git-commit: b53ef727adc563e05403c50d80bbd0c48bb8a054
 workflow-type: tm+mt
 source-wordcount: '668'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Du kan göra målningar på dimensioner, mätvärden och segment. Anta till exem
 ## Använd
 
 1. Lägg till en ![ConversionTrnel](/help/assets/icons/ConversionFunnel.svg) **[!UICONTROL Fallout]**-visualisering. Se [Lägga till en visualisering på en panel](../freeform-analysis-visualizations.md#add-visualizations-to-a-panel).
-1. Dra en sida, till exempel hemsidan, från siddimensionen till listrutan *Lägg till kontaktyta*.
+1. Dra en sida, till exempel hemsidan, från siddimensionen till listrutan *Lägg till kontaktyta* .
 
    ![Hemsidan från hemsidesdimensionen som dras till fältet Lägg till kontaktpunkt.](assets/fallout-drag.png)
 
