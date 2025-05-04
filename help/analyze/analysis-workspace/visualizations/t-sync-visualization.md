@@ -5,14 +5,19 @@ title: Hantera datakällor för visualisering
 feature: Visualizations
 role: User, Admin
 exl-id: 0500b27a-032e-4dc8-98b7-58519ef59368
-source-git-commit: d7a6867796f97f8a14cd8a3cfad115923b329c7c
+source-git-commit: b44f40467fb4bd1c2f12c0ac99e0a0aa5479f2c9
 workflow-type: tm+mt
-source-wordcount: '569'
+source-wordcount: '592'
 ht-degree: 0%
 
 ---
 
-# Hantera datakällor för visualisering
+# Hantera datakällor för visualisering {#manage-visualization-data-sources}
+
+>[!CONTEXTUALHELP]
+>id="workspace_datasource_lock_selection"
+>title="Lås markering"
+>abstract="Aktivera den här inställningen för att låsa visualiseringen till antingen tabellpositionerna eller de exakta objekten som är markerade i datakällan."
 
 Med synkronisering av visualiseringar kan du styra vilken datatabell eller datakälla som motsvarar en visualisering.
 
@@ -29,6 +34,8 @@ Genom att hantera en datakälla kan du visa datakällan eller låsa markeringen.
    Synkronisering av en visualisering till en tabellcell skapar en ny (dold) tabell och färgkodar den synkroniserade visualiseringen med den tabellen.
 
 ## Inställningar för Data Source
+
+
 
 
 >[!BEGINSHADEBOX]
