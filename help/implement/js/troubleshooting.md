@@ -87,7 +87,7 @@ Dessa två variabelvärden betraktas som separata i Adobe Analytics. Det tomma u
 
 Implementeringar som fyller i många variabler med långa värden kan ibland leda till trunkerade bildförfrågningar. Vissa äldre webbläsare, t.ex. Internet Explorer, har en begränsning på 2 083 tecken för bildförfrågnings-URL:er. Om din organisation har mycket långa bildförfrågningar kan du pröva följande:
 
-* **Använd tjänsten Experience Cloud ID**: AppMeasurement Libraries 1.4.1 och senare skickar automatiskt bildbegäranden med HTTP-POST om de är för långa. Data som skickas med den här metoden trunkeras inte oavsett längd. Mer information finns i [Adobe Experience Cloud ID-tjänsten](https://experienceleague.adobe.com/docs/id-service/using/home.html).
+* **Använd tjänsten Experience Cloud ID**: AppMeasurement Libraries 1.4.1 och senare skickar automatiskt bildbegäranden med HTTP-POST om de är för långa. Data som skickas med den här metoden trunkeras inte oavsett längd. Mer information finns i [Adobe Experience Cloud ID-tjänsten](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=sv-SE).
 * **Använd bearbetningsregler**: [Bearbetningsregler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/c-processing-rules/processing-rules.md) kan kopiera värden från en variabel till en annan. Med den här metoden kan du inte ange samma värde i flera variabler. Exempel:
 
   Kör alltid:<br>

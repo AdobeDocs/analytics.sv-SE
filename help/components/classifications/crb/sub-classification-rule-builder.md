@@ -40,7 +40,7 @@ Exempel på steg som beskriver hur du kan överföra underklassificeringar med r
 >
 >De här stegen beskriver hur du slutför det användningsfall som beskrivs i [Underklassificeringar och Regelbyggaren](/help/components/classifications/crb/sub-classification-rule-builder.md).
 
-1. Skapa klassificeringar och underklassificeringar i [Klassificeringshanteraren](https://experienceleague.adobe.com/docs/analytics/components/classifications/c-classifications.html).
+1. Skapa klassificeringar och underklassificeringar i [Klassificeringshanteraren](https://experienceleague.adobe.com/docs/analytics/components/classifications/c-classifications.html?lang=sv-SE).
 
    Exempel:
 

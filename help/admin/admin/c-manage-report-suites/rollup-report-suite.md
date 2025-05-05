@@ -15,7 +15,7 @@ ht-degree: 0%
 
 En global rapportserie samlar in data från alla domäner och appar som organisationen äger. Implementeringen kräver att alla bildbegäranden skickas till en enda rapportserie.
 
-Adobe rekommenderar att man i de flesta fall genomför en global rapportserie. Se [Överväganden för den globala rapportsviten](https://experienceleague.adobe.com/docs/analytics/implementation/prepare/global-rs.html) för fördelarna med att implementera en global rapportserie.
+Adobe rekommenderar att man i de flesta fall genomför en global rapportserie. Se [Överväganden för den globala rapportsviten](https://experienceleague.adobe.com/docs/analytics/implementation/prepare/global-rs.html?lang=sv-SE) för fördelarna med att implementera en global rapportserie.
 
 Du kan tillhandahålla deluppsättningar av företagets globala rapportsvitsdata till olika slutanvändare med hjälp av taggningen *multi-suite* och *Virtual Report Suite* :
 

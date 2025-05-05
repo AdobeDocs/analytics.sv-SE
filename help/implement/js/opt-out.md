@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Vissa besökare på din webbplats föredrar att inte ha sin surfinformation med i din datauppsättning. Adobe erbjuder möjlighet att ge besökare på er webbplats möjlighet att avanmäla sig från den information de analyserar.
 
-Avanmäl länkar är ett sätt som gör att besökare på webbplatsen kan utelämna sina data från Analytics-rapporter. Länkarna är begränsade till AppMeasurementen implementeringar. Adobe rekommenderar att du använder [Adobe Experience Cloud-tjänsten ](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/optin-overview.html) i stället. Opt-in-tjänsten är stabilare och fungerar på flera Adobe Experience Cloud-produkter, inklusive Adobe Analytics och AppMeasurement.
+Avanmäl länkar är ett sätt som gör att besökare på webbplatsen kan utelämna sina data från Analytics-rapporter. Länkarna är begränsade till AppMeasurementen implementeringar. Adobe rekommenderar att du använder [Adobe Experience Cloud-tjänsten ](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/optin-overview.html?lang=sv-SE) i stället. Opt-in-tjänsten är stabilare och fungerar på flera Adobe Experience Cloud-produkter, inklusive Adobe Analytics och AppMeasurement.
 
 När en besökare når en avanmälnings-URL uppmanas de att installera en avanmälnings-cookie. Om en användare väljer att inte spåras och en avanmälningscookie är inställd fortsätter AppMeasurementet att skicka data till Adobe. Dessa data behandlas dock inte och inkluderas inte i rapporter.
 
@@ -44,7 +44,7 @@ Avanmälningssidan för din organisation beror på variabelvärdet [`trackingSer
    1. På webbservern öppnar du filen AppMeasurement.js som används på webbplatsen i en kod- eller textredigerare.
    1. Observera variabelvärdet `trackingServer`.
 
-* Använda [Adobe Experience Cloud Debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html):
+* Använda [Adobe Experience Cloud Debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html?lang=sv-SE):
    1. Navigera till webbplatsen med Chrome webbläsare.
    1. Öppna Experience Cloud Debugger och gå till [!UICONTROL Network tab].
    1. Observera värdet [!UICONTROL Request URL - Hostname].

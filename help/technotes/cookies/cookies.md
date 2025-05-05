@@ -18,7 +18,7 @@ I det här dokumentet förklaras hur de viktigaste åtgärderna för att spåra 
 ## Hur har webbläsarna begränsat användningen av cookies?
 
 >[!NOTE]
->[Enhetsövergripande analys](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html#cda) och [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html#comparing-cja-to-traditional-adobe-analytics) kan sammanfogas med cookies med ett person-ID, till exempel ett hashas-inloggnings-ID, om ett sådant finns.
+>[Enhetsövergripande analys](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html?lang=sv-SE#cda) och [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=sv-SE#comparing-cja-to-traditional-adobe-analytics) kan sammanfogas med cookies med ett person-ID, till exempel ett hashas-inloggnings-ID, om ett sådant finns.
 
 ### Begränsningar för cookie-filer från tredje part
 
@@ -28,7 +28,7 @@ Dessutom tillåter Chrome för närvarande endast att cookies fungerar i ett tre
 
 #### Vilka cookies från tredje part berörs av Adobe?
 
-Besökar-ID-tjänsten använder cookien [demdex.net](https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html) för att tillhandahålla en beständig identifierare för besökare i olika kunddomäner. Den äldre tjänsten för analys-ID, s_vi-cookie, anges som en cookie från tredje part för implementeringar som inte använder en anpassad CNAME-samlingsdomän.
+Besökar-ID-tjänsten använder cookien [demdex.net](https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html?lang=sv-SE) för att tillhandahålla en beständig identifierare för besökare i olika kunddomäner. Den äldre tjänsten för analys-ID, s_vi-cookie, anges som en cookie från tredje part för implementeringar som inte använder en anpassad CNAME-samlingsdomän.
 
 I webbläsare där cookies från tredje part är blockerade är spårning över domäner inte tillgängligt.
 
@@ -52,9 +52,9 @@ ITP-reglerna utvecklas ofta. Information om de senaste profilerna finns i Apple 
 
 Alla cookies från första part som har angetts av Adobe, och de relaterade JavaScript-biblioteken, påverkas av ITP-policyer:
 
-* [&quot;AMCV&quot;-cookies](https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html) har angetts av tjänstbiblioteket för Adobe Experience Cloud Visitor ID (ECID)
-* Analysen av den gamla cookien [&#128279;](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html) &quot;s_vi&quot; när den har konfigurerats med datainsamling från första part med en CNAME
-* Den gamla cookien [&#128279;](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html) för Analytics &quot;s_fid&quot;, som är den reservcookie som används när s_vi inte kan anges
+* [&quot;AMCV&quot;-cookies](https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html?lang=sv-SE) har angetts av tjänstbiblioteket för Adobe Experience Cloud Visitor ID (ECID)
+* Analysen av den gamla cookien [&#128279;](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html?lang=sv-SE) &quot;s_vi&quot; när den har konfigurerats med datainsamling från första part med en CNAME
+* Den gamla cookien [&#128279;](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html?lang=sv-SE) för Analytics &quot;s_fid&quot;, som är den reservcookie som används när s_vi inte kan anges
 
 #### Vilken inverkan har ITP på Safari för analys?
 
@@ -75,7 +75,7 @@ Om dessa begränsningar påverkar dina data kommer du att se:
 
 Tredjepartscookies skapas inte av de webbplatser som användarna besöker.
 
-Även om webbläsare för närvarande behandlar alla cookies från tredje part på samma sätt och lagrar dem så kan cookies från tredje part bete sig på olika sätt. Med en kunds Analytics-cookie-implementering från tredje part lagrar webbläsarna Adobe-ID:t [demdex.net](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html) som en cookie från tredje part, men klienten gör bara anrop till Adobe och inte till för okända eller misstänkta tredjepartsdomäner. Denna cookie ger beständiga identifierare över domäner och möjliggör säkert (HTTPS) innehåll. Mer information finns i [Cookies och Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html).
+Även om webbläsare för närvarande behandlar alla cookies från tredje part på samma sätt och lagrar dem så kan cookies från tredje part bete sig på olika sätt. Med en kunds Analytics-cookie-implementering från tredje part lagrar webbläsarna Adobe-ID:t [demdex.net](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=sv-SE) som en cookie från tredje part, men klienten gör bara anrop till Adobe och inte till för okända eller misstänkta tredjepartsdomäner. Denna cookie ger beständiga identifierare över domäner och möjliggör säkert (HTTPS) innehåll. Mer information finns i [Cookies och Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html?lang=sv-SE).
 
 I Analytics-implementeringar används cookies från tredje part för domänövergripande spårning och för annonseringsanvändning, inklusive återannonsering. Med cookies från tredje part kan du identifiera besökare när de besöker olika domäner som du äger eller som annonser visas på webbplatser som du inte äger.<!--  Without these cookies, you cannot identify visitors as they visit different domains that you own or as they are shown ads on sites that you do not own unless your implementation can stitch other types of cookies and   -->
 
@@ -85,7 +85,7 @@ Första parts-cookies är domänspecifika och skapas av kundens webbplatser och 
 
 I Analytics-implementeringar används cookies från första part för att identifiera användare när de finns på er webbplats och därför stöder alla analyser av användaraktiviteter. Du behöver inte cookies från tredje part för att förstå webbplatsaktiviteter.
 
-Mer information finns i [Om cookies från första part](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-first-party.html).
+Mer information finns i [Om cookies från första part](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-first-party.html?lang=sv-SE).
 
 ![Cookie-jämförelse](/help/technotes/assets/cookies2.png)
 

@@ -45,7 +45,7 @@ Nedan följer några av de viktigaste funktionerna i Analysis Workspace:
 
 **Paneler** används för att ordna din analys i ett projekt och kan innehålla många tabeller och visualiseringar. Många av panelerna i Analysis Workspace genererar en komplett uppsättning analyser baserade på några få indata från användarna. På den vänstra listen väljer du den översta ikonen **[!UICONTROL Panels]** för att se en fullständig lista över tillgängliga paneler.
 
-Mer information om paneler finns i [Panelöversikt](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html).
+Mer information om paneler finns i [Panelöversikt](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html?lang=sv-SE).
 
 ![](assets/build-panels.png)
 
@@ -53,7 +53,7 @@ Mer information om paneler finns i [Panelöversikt](https://experienceleague.ado
 
 **Visualiseringar**, t.ex. en stapel eller ett linjediagram, kan användas för att visuellt ge liv åt data. På den vänstra listen väljer du mittenikonen **[!UICONTROL Visualizations]** för att se en fullständig lista över tillgängliga visualiseringar.
 
-Mer information om visualiseringar finns i [Översikt över visualiseringar](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html).
+Mer information om visualiseringar finns i [Översikt över visualiseringar](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html?lang=sv-SE).
 
 ![](assets/build-visualizations.png)
 
@@ -109,8 +109,8 @@ När du är klar med projektet och samlar in åtgärdbara insikter är projektet
 
 ## Ytterligare resurser {#resources}
 
-* Adobe erbjuder hundratals [självstudiekurser om Analytics-videor](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html).
-* Information om nya funktioner finns i [Versionsinformation för Adobe Experience Cloud](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html#analytics).
+* Adobe erbjuder hundratals [självstudiekurser om Analytics-videor](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html?lang=sv-SE).
+* Information om nya funktioner finns i [Versionsinformation för Adobe Experience Cloud](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=sv-SE#analytics).
 * Ett bra sätt att bekanta sig med Analysis Workspace är att använda mallen Analysis Workspace självstudiekurs. I den här mallen beskrivs vanliga termer och steg för hur du bygger din första analys i Workspace. Så här startar du självstudiekursen:
    1. På fliken [!UICONTROL **Workspace**] i Adobe Analytics väljer du **[!UICONTROL Learning]** till vänster.
    1. Välj **[!UICONTROL Open Tutorial]**.

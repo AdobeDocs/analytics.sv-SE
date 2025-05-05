@@ -36,7 +36,7 @@ Här är en lista över kända begränsningar i Analysis Workspace och dess komp
 ## Komponenter > Segment
 
 * Vissa mått och mått kan inte segmenteras, som [!UICONTROL Occurrences], [!UICONTROL Unique Visitors] osv.
-* Adhoc-segment som skapas i [panelens dropzone](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html) är en typ av snabbfilter. De visas inte i den vänstra listen i Workspace eller segmentkomponenthanteraren, såvida de inte är offentliga. Mer information finns i [Snabbsegment](/help/analyze/analysis-workspace/components/segments/quick-segments.md).
+* Adhoc-segment som skapas i [panelens dropzone](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html?lang=sv-SE) är en typ av snabbfilter. De visas inte i den vänstra listen i Workspace eller segmentkomponenthanteraren, såvida de inte är offentliga. Mer information finns i [Snabbsegment](/help/analyze/analysis-workspace/components/segments/quick-segments.md).
 
 ## Komponenter > Beräknade mått
 

@@ -19,7 +19,7 @@ Svar på frågor du kan ha när du implementerar Audience Analytics.
 
 +++ Hur vet jag om jag har PII (Personally Identiitable Information) i mina analysdata? Och om ja, vad gör jag åt det?
 
-Om du har e-postadresser/adresser/så vidare i ett utkast eller en eVar bör du överväga att hash-koda data under insamlingen. Om ditt land anser att IP-adressen är en PII-adress, [aktiverar du IP-förfalskning](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/exclude-ip.html). Tala med er Analytics Admin för att se vad ni samlar in. Tala med er juridiska avdelning för att se vad de anser vara PII.
+Om du har e-postadresser/adresser/så vidare i ett utkast eller en eVar bör du överväga att hash-koda data under insamlingen. Om ditt land anser att IP-adressen är en PII-adress, [aktiverar du IP-förfalskning](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/exclude-ip.html?lang=sv-SE). Tala med er Analytics Admin för att se vad ni samlar in. Tala med er juridiska avdelning för att se vad de anser vara PII.
 
 +++
 
@@ -37,7 +37,7 @@ Dessa gäller inte när du skickar Adobe Analytics-data till Adobe Audience Mana
 
 +++ Hur skapar jag ett Analytics-mål i Audience Manager?
 
-Se [Konfigurera ett analysmål i Adobe Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/destinations/experience-cloud-destinations/create-analytics-destination.html).
+Se [Konfigurera ett analysmål i Adobe Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/destinations/experience-cloud-destinations/create-analytics-destination.html?lang=sv-SE).
 
 +++
 

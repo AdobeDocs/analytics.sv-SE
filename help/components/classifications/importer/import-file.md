@@ -20,4 +20,4 @@ När du har kopierat lämpliga data till klassificeringsmallfilen kan du importe
 
 Se [Allmän filstruktur](/help/components/classifications/importer/c-saint-data-files.md) för viktig information om strukturen och begränsningarna för överförda filer.
 
-Se [Vanliga problem med klassificeringsöverföring](https://helpx.adobe.com/analytics/kb/common-saint-upload-issues.html) för felsökningshjälp.
+Se [Vanliga problem med klassificeringsöverföring](https://helpx.adobe.com/se/analytics/kb/common-saint-upload-issues.html) för felsökningshjälp.

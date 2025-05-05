@@ -57,7 +57,7 @@ alloy("sendEvent", {
 });
 ```
 
-Mer information finns i [Spåra händelser](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/tracking-events.html) i Web SDK-dokumentationen.
+Mer information finns i [Spåra händelser](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/tracking-events.html?lang=sv-SE) i Web SDK-dokumentationen.
 
 ## Anrop om spårning av sidvy med Adobe Analytics-tillägget
 

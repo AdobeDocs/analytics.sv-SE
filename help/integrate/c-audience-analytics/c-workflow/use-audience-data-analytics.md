@@ -26,7 +26,7 @@ I Analysis Workspace visas Adobe Audience Manager-segmenten som två dimensioner
 
 ## Segmentjämförelse {#compare}
 
-[Segmentjämförelse](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/segment-comparison/segment-comparison.html) identifierar de mest statistiskt signifikanta skillnaderna mellan två segment. Målgruppsdata kan användas i segmentjämförelsen på två sätt: 1) som de två segment som jämförs och 2) som objekt i Dimensionen&quot;Objekt i den översta gruppen&quot;.
+[Segmentjämförelse](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/segment-comparison/segment-comparison.html?lang=sv-SE) identifierar de mest statistiskt signifikanta skillnaderna mellan två segment. Målgruppsdata kan användas i segmentjämförelsen på två sätt: 1) som de två segment som jämförs och 2) som objekt i Dimensionen&quot;Objekt i den översta gruppen&quot;.
 
 1. Gå till **[!UICONTROL Workspace]** och välj panelen **[!UICONTROL Segment Comparison]** i den vänstra listen.
 
@@ -43,21 +43,21 @@ I Analysis Workspace visas Adobe Audience Manager-segmenten som två dimensioner
 
 ## Kundresa (flöde) i Analysis Workspace {#flow}
 
-Adobe Audience Manager segmentdata överförs till Analytics från en träffsäker nivå och representerar målgruppsmedlemskapet för en besökare vid den tidpunkten. Det innebär att en besökare kan indelas i ett segment (t.ex.&quot;Kännedom&quot;) och senare kvalificera sig för ett mer kvalificerat segment (t.ex.&quot;Övervägande&quot;). Du kan använda [Flow](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/fallout/fallout-flow.html) i Analysis Workspace för att visualisera den resa en besökare tar mellan olika målgrupper.
+Adobe Audience Manager segmentdata överförs till Analytics från en träffsäker nivå och representerar målgruppsmedlemskapet för en besökare vid den tidpunkten. Det innebär att en besökare kan indelas i ett segment (t.ex.&quot;Kännedom&quot;) och senare kvalificera sig för ett mer kvalificerat segment (t.ex.&quot;Övervägande&quot;). Du kan använda [Flow](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/fallout/fallout-flow.html?lang=sv-SE) i Analysis Workspace för att visualisera den resa en besökare tar mellan olika målgrupper.
 
 1. Gå till **[!UICONTROL Workspace]** och välj **[!UICONTROL Flow]**-visualisering från den vänstra listen.
 
 1. Dra dimensionen [!UICONTROL Audience Name] till Flow Builder.
 1. Klicka på **[!UICONTROL Build]**.
-1. (Valfritt): Dra någon annan dimension till Flödesvisualiseringen för att skapa ett [interdimensionellt flöde](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/flow/multi-dimensional-flow.html).
+1. (Valfritt): Dra någon annan dimension till Flödesvisualiseringen för att skapa ett [interdimensionellt flöde](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/flow/multi-dimensional-flow.html?lang=sv-SE).
 
 ![](assets/flow-aamaudiences.png)
 
-Publiker kan också användas i [Bortfallsvisualiseringar](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/fallout/fallout-flow.html).
+Publiker kan också användas i [Bortfallsvisualiseringar](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/fallout/fallout-flow.html?lang=sv-SE).
 
 ## Visualisering av Venner i Analysis Workspace {#venn}
 
-[Vennvisualiseringar](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/venn.html) visar överlappningen mellan upp till 3 segment.
+[Vennvisualiseringar](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/venn.html?lang=sv-SE) visar överlappningen mellan upp till 3 segment.
 
 1. Gå till **[!UICONTROL Workspace]** och välj **[!UICONTROL Venn]**-visualisering från den vänstra listen.
 

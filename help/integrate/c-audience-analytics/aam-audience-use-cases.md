@@ -22,12 +22,12 @@ Som reseföretag kan du snabbt täcka över destinationsinställningarna med ink
 
 ## Utseendeliknande modellering {#section_E2E2DD1495BC4FE9A3E26541962BFF3F}
 
-Som Multi-Media Publisher kan du jämföra dina externa målgrupper med [Segment IQ](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/segment-comparison/segment-comparison.html) för att förstå viktiga särskiljande egenskaper. Detta hjälper er att bygga värdefulla förstapartssegment som sedan kan användas för målinriktning.
+Som Multi-Media Publisher kan du jämföra dina externa målgrupper med [Segment IQ](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/segment-comparison/segment-comparison.html?lang=sv-SE) för att förstå viktiga särskiljande egenskaper. Detta hjälper er att bygga värdefulla förstapartssegment som sedan kan användas för målinriktning.
 
 ## Prospekt - analys {#section_7DB1D045DD3F417CBA48C68E9E81E6C0}
 
-Som B2B-återförsäljare kan du nu analysera beteendet hos den potentiella kundens målgrupp innan de köper med hjälp av [sekventiell segmentering](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-sequential-build.html), som hjälper dig förstå vilka åtgärder som driver konverteringen.
+Som B2B-återförsäljare kan du nu analysera beteendet hos den potentiella kundens målgrupp innan de köper med hjälp av [sekventiell segmentering](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-sequential-build.html?lang=sv-SE), som hjälper dig förstå vilka åtgärder som driver konverteringen.
 
 ## Demografisk målinriktning {#section_F034DB721A06419283DBD29D4A1B444B}
 
-Som en destinationsort kan du använda [Histogram i Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/histogram.html) för att se inköp som distribuerats efter ålder. Detta hjälper er att hitta rätt målgrupp att rikta in er på var och en av era resortegenskaper.
+Som en destinationsort kan du använda [Histogram i Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/histogram.html?lang=sv-SE) för att se inköp som distribuerats efter ålder. Detta hjälper er att hitta rätt målgrupp att rikta in er på var och en av era resortegenskaper.

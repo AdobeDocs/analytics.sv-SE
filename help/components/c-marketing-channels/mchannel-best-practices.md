@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Attribuering med marknadsföringskanaler - bästa praxis
 
-[Marknadskanaler](/help/components/c-marketing-channels/c-getting-started-mchannel.md) är en värdefull och kraftfull funktion i Adobe Analytics. Den aktuella vägledningen för implementering av marknadsföringskanal formulerades vid en tidpunkt när varken [Attribution](/help/analyze/analysis-workspace/attribution/overview.md) eller [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html#cja-usecases) fanns.
+[Marknadskanaler](/help/components/c-marketing-channels/c-getting-started-mchannel.md) är en värdefull och kraftfull funktion i Adobe Analytics. Den aktuella vägledningen för implementering av marknadsföringskanal formulerades vid en tidpunkt när varken [Attribution](/help/analyze/analysis-workspace/attribution/overview.md) eller [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html?lang=sv-SE#cja-usecases) fanns.
 
 För att framtidssäkra implementeringen av era marknadsföringskanaler och säkerställa att det finns en konsekvens i rapporteringen med Attribution och Customer Journey Analytics, håller vi på att utfärda en uppsättning uppdaterade bästa metoder. Om du redan använder marknadsföringskanaler kan du välja de bästa alternativen bland dessa nya riktlinjer. Om ni inte har använt Marketing Channels tidigare rekommenderar vi att ni följer alla nya bästa metoder.
 
@@ -28,7 +28,7 @@ Vi rekommenderar att du använder [Attribution](/help/analyze/analysis-workspace
 
 * Konfigurationen av dimensionerna Marketing Channel och Marketing Channel Detail fastställer kontaktytor som ska utvärderas, som motsvarar varje instans av marknadsföringskanalen.
 * Vid mätanalys bör organisationen anpassa sig till en eller flera attribueringsmodeller. Spara anpassade mätvärden med den här modellen för enkel återanvändning.
-* Som standard tilldelas data med hjälp av Senaste beröring och inställningen för besökaravtalsperioden. Attributionsmåttsmodeller ger större kontroll över uppslagsfönstren och fler varianter, inklusive [algoritmisk attribuering](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/attribution/algorithmic.html#analysis-workspace).
+* Som standard tilldelas data med hjälp av Senaste beröring och inställningen för besökaravtalsperioden. Attributionsmåttsmodeller ger större kontroll över uppslagsfönstren och fler varianter, inklusive [algoritmisk attribuering](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/attribution/algorithmic.html?lang=sv-SE#analysis-workspace).
 
 ## Bästa praxis nr 2: Inga kanaldefinitioner för direkt- och sessionsuppdatering
 

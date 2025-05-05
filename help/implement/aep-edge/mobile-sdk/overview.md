@@ -40,12 +40,12 @@ Adobe Experience Platform Mobile SDK hjälper er att driva lösningar och tjäns
 <tr>
 <td>2</td>
 <td><b>Konfigurera en datastream</b>. En datastream representerar konfigurationen på serversidan när Adobe Experience Platform Web SDK implementeras.</td>
-<td><a href="https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html">Konfigurera ett datastream<a></td> 
+<td><a href="https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=sv-SE">Konfigurera ett datastream<a></td> 
 </tr>
 
 <td>3</td>
 <td><b>Lägg till en Adobe Analytics-tjänst</b> i ditt datastream. Tjänsten styr om och hur data skickas till Adobe Analytics.</td>
-<td><a href="https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html#analytics">Lägg till Adobe Analytics-tjänst i ett datastream</a></td>
+<td><a href="https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=sv-SE#analytics">Lägg till Adobe Analytics-tjänst i ett datastream</a></td>
 </tr>
 
 <tr>
@@ -126,6 +126,6 @@ Adobe Experience Platform Mobile SDK hjälper er att driva lösningar och tjäns
 
 ## Ytterligare resurser
 
-- [Dokumentation för taggar](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html#)
+- [Dokumentation för taggar](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=sv-SE#)
 
 - [Mobile SDK-dokumentation](https://developer.adobe.com/client-sdks/documentation/)

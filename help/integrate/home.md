@@ -45,11 +45,11 @@ Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Adobe Analytics -
 
 ## Fler användarhandböcker för Analytics
 
-[Användarhandböcker för Analytics](https://experienceleague.adobe.com/docs/analytics.html)
+[Användarhandböcker för Analytics](https://experienceleague.adobe.com/docs/analytics.html?lang=sv-SE)
 
 ## Viktiga Analytics-resurser
 
-* [Kontakta kundtjänst](https://experienceleague.adobe.com/?support-solution=Analytics&amp;lang=sv#support)
+* [Kontakta kundtjänst](https://experienceleague.adobe.com/sv?support-solution=Analytics&amp;lang=sv#support)
 * [Adobe Analytics Community på Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community)
 * [Adobe Analytics-resurser](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-resources/m-p/276666)
 * [Experience League](https://landing.adobe.com/experience-league/)

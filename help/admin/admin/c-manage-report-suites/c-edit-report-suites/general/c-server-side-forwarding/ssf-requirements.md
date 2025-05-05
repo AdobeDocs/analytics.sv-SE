@@ -18,11 +18,11 @@ För att implementera vidarebefordran på serversidan måste du uppfylla dessa k
 
 ## Lösningskrav
 
-Vidarebefordran på serversidan fungerar med [Analytics](https://www.adobe.com/data-analytics-cloud/analytics.html) och [Audience Manager](https://www.adobe.com/data-analytics-cloud/audience-manager.html) och/eller [Publiker](https://experienceleague.adobe.com/docs/core-services/interface/audiences/audience-library.html).
+Vidarebefordran på serversidan fungerar med [Analytics](https://www.adobe.com/data-analytics-cloud/analytics.html) och [Audience Manager](https://www.adobe.com/data-analytics-cloud/audience-manager.html) och/eller [Publiker](https://experienceleague.adobe.com/docs/core-services/interface/audiences/audience-library.html?lang=sv-SE).
 
 ## Tjänstkrav
 
-Vidarebefordran på serversidan kräver [identitetstjänsten](https://experienceleague.adobe.com/docs/id-service/using/home.html). Identitetstjänsten tillhandahåller ett universellt ID som identifierar webbplatsbesökare över alla lösningar i Experience Cloud. Du måste implementera ID-tjänsten innan vidarebefordran på serversidan fungerar.
+Vidarebefordran på serversidan kräver [identitetstjänsten](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=sv-SE). Identitetstjänsten tillhandahåller ett universellt ID som identifierar webbplatsbesökare över alla lösningar i Experience Cloud. Du måste implementera ID-tjänsten innan vidarebefordran på serversidan fungerar.
 
 ## Kodversioner
 
@@ -36,5 +36,5 @@ Vidarebefordran på serversidan kräver version 1.5 (eller senare) av kodbibliot
 
 Alla verktyg som övervakar HTTP-begäranden som görs av en webbläsare kan visa versionsnumret för AppMeasurementets och besökarens API-kod. `AppMeasurement_Module_AudienceManagement.js` innehåller inte eller returnerar något versions-ID. I följande exempel visas hur version-ID:n för `AppMeasurement.js` och `VisitorAPI.js`-kod ser ut.
 
-* `AppMeasurement.js`: [Adobe Debugger](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html) returnerar AppMeasurementet så här: `Version of Code | JS-1.5.1`. Andra verktyg kan använda en annan etikett, men värdet följer alltid mönstret `JS-X.X.X`, där `X` är ett versionsnummer.
+* `AppMeasurement.js`: [Adobe Debugger](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html?lang=sv-SE) returnerar AppMeasurementet så här: `Version of Code | JS-1.5.1`. Andra verktyg kan använda en annan etikett, men värdet följer alltid mönstret `JS-X.X.X`, där `X` är ett versionsnummer.
 * `VisitorAPI.js`: Leta efter parametern `d_visid_ver`. Du kommer att få se besökar-ID-tjänsten så här: `d_visid_ver: 1.5.5`. API-kod för besökare som är äldre än version 1.5.2 innehöll inget versionsnummer. Du använder antagligen ett äldre kodbibliotek (och behöver uppgradera) om övervakningsresultaten inte returnerar något versionsnummer.

@@ -41,7 +41,7 @@ Nedan följer några steg för att implementera klassificeringsregler:
 
 | Steg | Där utförd | Beskrivning |
 |--- |--- |--- |
-| Steg 1 (Krav): [Konfigurera klassificeringsschemat](https://experienceleague.adobe.com/docs/analytics/components/classifications/c-classifications.html). | [!UICONTROL Admin] > [!UICONTROL Report Suites] > [!UICONTROL Edit Settings] > &lt;Trafikklassificeringar eller konverteringsklassificeringar> | Välj en variabel och definiera de klassificeringar som ska användas för variabeln. <br>Variabler måste ha minst en klassificeringskolumn som skapats innan de kan användas i regler.<br>När klassificeringar har aktiverats kan du använda importverktyget och regelbyggaren för att klassificera specifika värden. |
+| Steg 1 (Krav): [Konfigurera klassificeringsschemat](https://experienceleague.adobe.com/docs/analytics/components/classifications/c-classifications.html?lang=sv-SE). | [!UICONTROL Admin] > [!UICONTROL Report Suites] > [!UICONTROL Edit Settings] > &lt;Trafikklassificeringar eller konverteringsklassificeringar> | Välj en variabel och definiera de klassificeringar som ska användas för variabeln. <br>Variabler måste ha minst en klassificeringskolumn som skapats innan de kan användas i regler.<br>När klassificeringar har aktiverats kan du använda importverktyget och regelbyggaren för att klassificera specifika värden. |
 | Steg 2: [Skapa en regeluppsättning](/help/components/classifications/crb/classification-rule-set.md). | [!UICONTROL Admin] > [!UICONTROL Classification Rule Builder] > [!UICONTROL Add Rule Set] | En regeluppsättning är en grupp klassificeringsregler för en specifik variabel. |
 | Steg 3: Konfigurera rapportsviter och variabler. | [!UICONTROL Classification Rule Builder] > &lt;din regeluppsättning> | Använd regeluppsättningen för rapportsviter och variabler. |
 | Steg 4: [Lägg till klassificeringsregler i uppsättningen](/help/components/classifications/crb/classification-quickstart-rules.md). | [!UICONTROL Classification Rule Builder] > &lt;din regeluppsättning> | Matcha ett villkor med en klassificering och ange sedan vilken åtgärd som ska vidtas för regeln.  Lär dig mer om informationen i [Hur regler bearbetas](/help/components/classifications/crb/classification-quickstart-rules.md). |
@@ -57,4 +57,4 @@ Nedan följer några steg för att implementera klassificeringsregler:
 
 **Blogg**: Mer information om den här funktionen finns i bloggen om digital marknadsföring: [Regelbaserade klassificeringar](https://theblog.adobe.com/rule-based-classifications-part-1-making-classifications-easier/).
 
-**Video**: Visa videon [Klassificeringsöversikt](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/components/classifications/overview-of-classifications.html).
+**Video**: Visa videon [Klassificeringsöversikt](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/components/classifications/overview-of-classifications.html?lang=sv-SE).

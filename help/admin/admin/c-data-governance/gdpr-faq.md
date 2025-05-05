@@ -85,7 +85,7 @@ Som Data Controller ansvarar du för att få uttryckligt medgivande från dina r
 
 Personuppgifter bör i allmänhet inte lagras längre än nödvändigt för att uppnå det syfte för vilket de samlades in. Adobe allmänna villkor tillämpar en 25-månaders standardplan för datalagring, såvida inte en annan avtalsperiod för datalagring har överenskommits. Kunderna måste ange sin datalagringspolicy innan Adobe kan behandla en begäran om dataskydd.
 
-Varje rapportsvits aktuella policy för datalagring visas i det nya användargränssnittet för datastyrningsadministratörer. Kunderna bör kontakta sin Adobe-representant om de behöver ändra sin datalagringspolicy. Se [Vanliga frågor om datalagring i Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/technotes/data-retention.html).
+Varje rapportsvits aktuella policy för datalagring visas i det nya användargränssnittet för datastyrningsadministratörer. Kunderna bör kontakta sin Adobe-representant om de behöver ändra sin datalagringspolicy. Se [Vanliga frågor om datalagring i Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/technotes/data-retention.html?lang=sv-SE).
 
 +++
 

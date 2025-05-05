@@ -14,6 +14,6 @@ ht-degree: 0%
 
 Läs om segmenteringsfunktionerna i Analysis Workspace.
 
-[Segmentjämförelse (segmentanalys)](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/segment-comparison/segment-comparison.html)
+[Segmentjämförelse (segmentanalys)](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/segment-comparison/segment-comparison.html?lang=sv-SE)
 
-[Använd segment i bortfallsanalys](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/fallout/compare-segments-fallout.html)
+[Använd segment i bortfallsanalys](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/fallout/compare-segments-fallout.html?lang=sv-SE)

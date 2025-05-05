@@ -54,7 +54,7 @@ Att använda Web SDK JavaScript-biblioteket för att skicka data till Adobe Anal
 <tr>
 <td>2</td>
 <td><b>Konfigurera scheman</b>. För att standardisera datainsamlingen för användning i olika program som utnyttjar Adobe Experience Platform har Adobe skapat den öppna och offentligt dokumenterade standarden Experience Data Model (XDM).</td>
-<td><a href="https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html">Översikt över schemaanvändargränssnittet</a></td>
+<td><a href="https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html?lang=sv-SE">Översikt över schemaanvändargränssnittet</a></td>
 </tr>
 
 <tr>
@@ -66,31 +66,31 @@ Att använda Web SDK JavaScript-biblioteket för att skicka data till Adobe Anal
 <tr>
 <td> 4</td>
 <td><b>Installera den fördefinierade fristående versionen</b>. Du kan referera till biblioteket (<code>alloy.js</code>) på CDN direkt på sidan eller hämta och lagra det på din egen infrastruktur. Du kan också använda NPM-paketet.</td>
-<td><a href="https://experienceleague.adobe.com/docs/experience-platform/web-sdk/install/library.html">Installera den fördefinierade fristående versionen</a> och <a href="https://experienceleague.adobe.com/docs/experience-platform/web-sdk/install/npm.html">Använda NPM-paketet</a></td>
+<td><a href="https://experienceleague.adobe.com/docs/experience-platform/web-sdk/install/library.html?lang=sv-SE">Installera den fördefinierade fristående versionen</a> och <a href="https://experienceleague.adobe.com/docs/experience-platform/web-sdk/install/npm.html?lang=sv-SE">Använda NPM-paketet</a></td>
 </tr>
 
 <tr>
 <td>5</td>
 <td><b>Konfigurera en datastream</b>. En datastream representerar konfigurationen på serversidan när Adobe Experience Platform Web SDK implementeras.</td>
-<td><a href="https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html">Konfigurera ett datastream<a></td> 
+<td><a href="https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=sv-SE">Konfigurera ett datastream<a></td> 
 </tr>
 
 <td>6</td>
 <td><b>Lägg till en Adobe Analytics-tjänst</b> i ditt datastream. Tjänsten styr om och hur data skickas till Adobe Analytics och till vilka rapporteringsprogram.</td>
-<td><a href="https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html#analytics">Lägg till Adobe Analytics-tjänst i ett datastream</a></td>
+<td><a href="https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=sv-SE#analytics">Lägg till Adobe Analytics-tjänst i ett datastream</a></td>
 </tr>
 
 <tr>
 <td>7</td>
 <td><b>Konfigurera Web SDK</b>. Kontrollera att biblioteket som du installerade i steg 4 är korrekt konfigurerat med dataStream ID (tidigare kanttskonfigurations-ID (<code>datastreamId</code>)), organisations-ID (<code>orgId</code>) och andra tillgängliga alternativ. Kontrollera att variablerna mappas korrekt. </td>
-<td><a href="https://experienceleague.adobe.com/docs/experience-platform/web-sdk/commands/configure/overview.html">Konfigurera Web SDK</a><br/><a href="../xdm-var-mapping.md">XDM-objektvariabelmappning</a></td>
+<td><a href="https://experienceleague.adobe.com/docs/experience-platform/web-sdk/commands/configure/overview.html?lang=sv-SE">Konfigurera Web SDK</a><br/><a href="../xdm-var-mapping.md">XDM-objektvariabelmappning</a></td>
 </tr>
 
 <tr>
 <td>8</td>
 <td><b>Kör kommandon</b> och/eller <b>spåra händelser</b>. När baskoden har implementerats på webbsidan kan du börja köra kommandon och spåra händelser med SDK.
 </td>
-<td><a href="https://experienceleague.adobe.com/docs/experience-platform/web-sdk/commands/sendevent/overview.html">Skicka händelser</a></td>
+<td><a href="https://experienceleague.adobe.com/docs/experience-platform/web-sdk/commands/sendevent/overview.html?lang=sv-SE">Skicka händelser</a></td>
 </tr>
 
 <tr>

@@ -17,7 +17,7 @@ Om `usePlugins` är aktiverat körs funktionen [`doPlugins()`](../functions/dopl
 
 ## Använd motringningen `onBeforeEventSend` med Web SDK
 
-Web SDK har inget booleskt värde för att hantera körningen av ytterligare logik innan data skickas till Adobe, men du kan registrera `onBeforeEventSend`-återanropet för att ändra data. Mer information finns i [Ändra händelser globalt](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/tracking-events.html#modifying-events-globally) i Web SDK-dokumentationen.
+Web SDK har inget booleskt värde för att hantera körningen av ytterligare logik innan data skickas till Adobe, men du kan registrera `onBeforeEventSend`-återanropet för att ändra data. Mer information finns i [Ändra händelser globalt](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/tracking-events.html?lang=sv-SE#modifying-events-globally) i Web SDK-dokumentationen.
 
 ## Använda plugin-program med Adobe Analytics-tillägget
 

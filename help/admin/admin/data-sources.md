@@ -24,4 +24,4 @@ Använd datakällor för att:
 
 När Datakällor aktiveras för en rapportserie visas en FTP-plats så att du kan överföra filer som ska integreras i rapporter. När data har överförts bearbetar Adobe-servrar automatiskt dessa data och integrerar dem i rapportsviten.
 
-Se [Hjälp om datakällor](https://experienceleague.adobe.com/docs/analytics/import/data-sources/datasrc-home.html).
+Se [Hjälp om datakällor](https://experienceleague.adobe.com/docs/analytics/import/data-sources/datasrc-home.html?lang=sv-SE).

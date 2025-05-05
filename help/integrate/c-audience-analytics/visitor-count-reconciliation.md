@@ -25,11 +25,11 @@ Besökarstatistik är:
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col2"> <p><a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/segments/segment-builder-data.html"  > Adobe Audience Manager: Total segmentpopulation </a> </p> </td> 
+   <td colname="col2"> <p><a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/segments/segment-builder-data.html?lang=sv-SE"  > Adobe Audience Manager: Total segmentpopulation </a> </p> </td> 
    <td colname="col3"> <p>Antal enheter (Experience Cloud-ID) som var medlemmar i ditt segment under uppslagsperioden. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col2"> <p><a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/segments/segment-builder-data.html"  > Adobe Audience Manager: Population av realtidssegment </a> </p> </td> 
+   <td colname="col2"> <p><a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/segments/segment-builder-data.html?lang=sv-SE"  > Adobe Audience Manager: Population av realtidssegment </a> </p> </td> 
    <td colname="col3"> <p>Antal enheter (Experience Cloud-ID) som var medlemmar i ditt segment och som nådde dina egenskaper under uppslagsperioden. </p> </td> 
   </tr> 
   <tr> 

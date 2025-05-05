@@ -16,7 +16,7 @@ Innan någon i organisationen börjar migrera projekt enligt beskrivningen i [Mi
 
 ## Förutsättningar
 
-Innan dina projekt och tillhörande komponenter är klara att migreras måste du följa stegen i [Utveckla från Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/aa-to-cja.html) i Adobe Customer Journey Analytics Guide. De här stegen omfattar:
+Innan dina projekt och tillhörande komponenter är klara att migreras måste du följa stegen i [Utveckla från Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/aa-to-cja.html?lang=sv-SE) i Adobe Customer Journey Analytics Guide. De här stegen omfattar:
 
 1. Använd någon av följande metoder för att importera data till Adobe Experience Platform för att visa Adobe Analytics rapportsvitdata i Customer Journey Analytics:
 
@@ -27,21 +27,21 @@ Innan dina projekt och tillhörande komponenter är klara att migreras måste du
 
    * Om du vill använda Adobe Analytics källanslutning måste du:
 
-      1. [Konfigurera rapportsviter för förtäring i Adobe Experience Platform och Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/aa-data-in-cja.html#set-up-report-suites-for-ingestion-into-the-adobe-experience-platform-and-customer-journey-analytics)
+      1. [Konfigurera rapportsviter för förtäring i Adobe Experience Platform och Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/aa-data-in-cja.html?lang=sv-SE#set-up-report-suites-for-ingestion-into-the-adobe-experience-platform-and-customer-journey-analytics)
 
-      1. [Importera och använd data](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-data-ingestion/ingest-use-guides/analytics.html)
+      1. [Importera och använd data](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-data-ingestion/ingest-use-guides/analytics.html?lang=sv-SE)
 
    * Om du vill använda WebSDK måste du:
 
-      1. [Konfigurera rapportsviter för förtäring i Adobe Experience Platform och Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/aa-data-in-cja.html#set-up-report-suites-for-ingestion-into-the-adobe-experience-platform-and-customer-journey-analytics)
+      1. [Konfigurera rapportsviter för förtäring i Adobe Experience Platform och Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/aa-data-in-cja.html?lang=sv-SE#set-up-report-suites-for-ingestion-into-the-adobe-experience-platform-and-customer-journey-analytics)
 
-      1. [Infoga data via Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-data-ingestion/ingest-use-guides/edge-network/aepwebsdk.html)
+      1. [Infoga data via Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-data-ingestion/ingest-use-guides/edge-network/aepwebsdk.html?lang=sv-SE)
 
-1. Skapa en [anslutning](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/overview.html) och [datavy](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html) med inkapslade data.
+1. Skapa en [anslutning](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/overview.html?lang=sv-SE) och [datavy](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=sv-SE) med inkapslade data.
 
 1. Se till att användare i Customer Journey Analytics är tilldelade datavyer där data mappas.
 
-   Mer information finns i [Customer Journey Analytics behörigheter i åtkomstkontrollen Admin Console](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-admin/cja-access-control.html#customer-journey-analytics-permissions-in-admin-console) i [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-admin/cja-access-control.html).
+   Mer information finns i [Customer Journey Analytics behörigheter i åtkomstkontrollen Admin Console](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-admin/cja-access-control.html?lang=sv-SE#customer-journey-analytics-permissions-in-admin-console) i [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-admin/cja-access-control.html?lang=sv-SE).
 
    Fliken Behörigheter ingår i varje produktprofil i Admin Console. Du kan lägga till användare i specifika produktprofiler. Sedan tilldelar du rättigheter till specifika datavyer och anger vilka behörigheter användarna i en produktprofil har.
 

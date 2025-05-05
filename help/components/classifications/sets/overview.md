@@ -24,7 +24,7 @@ Den serverdelsarkitektur som lanserats med klassificeringsuppsättningar innehå
 
 * Minskad bearbetningstid (72 timmar → 24 timmar)
 * Ett omdesignat användargränssnitt som hanterar klassificeringar
-* Alternativet att använda klassificeringsdata i Adobe Experience Platform i framtiden via [Adobe Analytics-källkopplingen för klassificeringsdata](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/classifications)
+* Alternativet att använda klassificeringsdata i Adobe Experience Platform i framtiden via [Adobe Analytics-källkopplingen för klassificeringsdata](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/connectors/adobe-applications/classifications)
 
 Den serverdelsarkitektur som lanserats med klassificeringsuppsättningar innehåller också flera tydliga ändringar:
 

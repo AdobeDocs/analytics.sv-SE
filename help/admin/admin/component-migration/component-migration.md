@@ -129,13 +129,13 @@ Gör dessutom en [Adobe Analytics-inventering](/help/admin/admin/analytics-inven
 
    Om migreringen misslyckas finns mer information i avsnittet [Försök igen med en misslyckad migrering](#retry-a-failed-migration) nedan.
 
-1. (Valfritt) När ett projekt har migrerats kan du överföra ägarskapet för projektet till valfri användare i Customer Journey Analytics. Mer information finns i [Överför resurser](https://experienceleague.adobe.com/en/docs/analytics-platform/using/tools/asset-transfer/transfer-assets) i Customer Journey Analytics Guide.
+1. (Valfritt) När ett projekt har migrerats kan du överföra ägarskapet för projektet till valfri användare i Customer Journey Analytics. Mer information finns i [Överför resurser](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/tools/asset-transfer/transfer-assets) i Customer Journey Analytics Guide.
 
 ## Försök att utföra migreringen igen
 
 Om en migrering misslyckas kan du försöka migrera igen.
 
-Innan du försöker utföra en misslyckad migrering igen måste du ta bort alla [element som inte stöds](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html#understand-unsupported-elements-that-cause-errors) från projektet.
+Innan du försöker utföra en misslyckad migrering igen måste du ta bort alla [element som inte stöds](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html?lang=sv-SE#understand-unsupported-elements-that-cause-errors) från projektet.
 
 >[!NOTE]
 >

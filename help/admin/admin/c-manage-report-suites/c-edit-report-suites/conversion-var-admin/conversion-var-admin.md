@@ -20,7 +20,7 @@ Custom Insight Conversion Variable (eller eVar) placeras i Adobe-koden på vissa
 
 ## Konverteringsvariabler (eVars) - översikt
 
-En videoöversikt över konverteringsvariabler finns i [Introduktion till konverteringsvariabler](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/dimensions/introduction-to-conversion-variables-evars) i självstudiehandboken för Analytics.
+En videoöversikt över konverteringsvariabler finns i [Introduktion till konverteringsvariabler](https://experienceleague.adobe.com/sv/docs/analytics-learn/tutorials/analysis-workspace/dimensions/introduction-to-conversion-variables-evars) i självstudiehandboken för Analytics.
 
 När en eVar anges till ett värde för en besökare kommer Adobe automatiskt ihåg det värdet tills det upphör att gälla. Alla lyckade händelser som besökaren påträffar när eVarna är aktiv räknas mot eVarna.
 
@@ -34,7 +34,7 @@ Om trafikmätning eller vägning önskas rekommenderas användning av trafikvari
 
 >[!NOTE]
 >
->Endast ett värde kan lagras i en eVar i en bildbegäran. Om du vill ha flera värden i ett eVar-värde rekommenderar vi att du implementerar [listvariabler (listvariabler)](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/page-variables.html).
+>Endast ett värde kan lagras i en eVar i en bildbegäran. Om du vill ha flera värden i ett eVar-värde rekommenderar vi att du implementerar [listvariabler (listvariabler)](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/page-variables.html?lang=sv-SE).
 
 ### Konverteringsvariabler - beskrivningar {#section_7C317BB0287A4B8EB0A1A4ECC40627BF}
 

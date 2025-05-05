@@ -42,6 +42,6 @@ Om ditt företag inte använder någon av dessa metoder behöver du inte vidta n
 
 Ytterligare information:
 
-* [Allmän information om användarhantering](https://helpx.adobe.com/enterprise/help/users.html)
+* [Allmän information om användarhantering](https://helpx.adobe.com/se/enterprise/help/users.html)
 * [API-forum för användarhantering](https://community.adobe.com/t5/enterprise-teams/bd-p/enterprise-and-teams)
-* [Migrering av användaråtkomst och hantering för Analytics till Experience Cloud](https://experienceleague.adobe.com/docs/analytics/admin/user-product-management/user-management/migrate-users/c-migration-tool.html)
+* [Migrering av användaråtkomst och hantering för Analytics till Experience Cloud](https://experienceleague.adobe.com/docs/analytics/admin/user-product-management/user-management/migrate-users/c-migration-tool.html?lang=sv-SE)

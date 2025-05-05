@@ -40,7 +40,7 @@ Det finns två sätt att anropa bidragsanalys i ett projekt:
    * En månatlig **Besök trendlinje** för kontext.
    * **De översta objekten** som bidrog till avvikelsen, sorterat efter [bidragspoängen](/help/analyze/analysis-workspace/c-anomaly-detection/anomaly-detection.md#contribution-analysis), plus måttet i fråga och ett unikt besökarmått som sätter måttet i kontext från ett storleksperspektiv.
 
-   * Tabellen [Genererade segment](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-build.html) (kluster för toppartikel) identifierar associationer av toppobjekt baserat på bidragspoäng, avvikelser och total procentandel som bidrar till det avvikande måttet. Detta registreras sedan som ett målgruppssegment (bidragssegment 1, bidragssegment 2 osv.). Om du klickar på knappen &quot;i&quot; (info) får du en översikt över varje segment, inklusive vilka av de översta objekten det består av:
+   * Tabellen [Genererade segment](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-build.html?lang=sv-SE) (kluster för toppartikel) identifierar associationer av toppobjekt baserat på bidragspoäng, avvikelser och total procentandel som bidrar till det avvikande måttet. Detta registreras sedan som ett målgruppssegment (bidragssegment 1, bidragssegment 2 osv.). Om du klickar på knappen &quot;i&quot; (info) får du en översikt över varje segment, inklusive vilka av de översta objekten det består av:
 
      ![](assets/auto_segment.png)
 

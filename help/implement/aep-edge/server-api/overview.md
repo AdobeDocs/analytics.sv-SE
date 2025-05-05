@@ -15,7 +15,7 @@ ht-degree: 1%
 
 Vanligtvis använder du Experience Platform Edge Network Server-API:t för att samla in data på serversidan i stället för på klientsidan och när du samlar in data från enheter som IoT-enheter, digitalboxar och datorprogram. Sedan skickar du dessa data till Edge nätverk och till tjänster som Adobe Analytics.
 
-Tänk också på Edge Network Server-API när du kräver att känsliga data samlas in säkert och autentiseras i nätverket. Mer information finns i [Autentisering](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/authentication.html).
+Tänk också på Edge Network Server-API när du kräver att känsliga data samlas in säkert och autentiseras i nätverket. Mer information finns i [Autentisering](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/authentication.html?lang=sv-SE).
 
 Översikt över implementeringsuppgifterna på hög nivå:
 
@@ -36,19 +36,19 @@ Tänk också på Edge Network Server-API när du kräver att känsliga data saml
 <tr>
 <td>2</td>
 <td><b>Konfigurera scheman</b>. För att standardisera datainsamlingen för användning i olika program som utnyttjar Adobe Experience Platform har Adobe skapat den öppna och offentligt dokumenterade standarden Experience Data Model (XDM).</td>
-<td><a href="https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html">Översikt över schemaanvändargränssnittet</a></td>
+<td><a href="https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html?lang=sv-SE">Översikt över schemaanvändargränssnittet</a></td>
 </tr>
 
 <tr>
 <td>3</td>
 <td><b>Konfigurera en datastream</b>. En datastream representerar konfigurationen på serversidan när API:er från Adobe Experience Platform Edge Network används.</td>
-<td><a href="https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html">Konfigurera ett datastream<a></td> 
+<td><a href="https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=sv-SE">Konfigurera ett datastream<a></td> 
 </tr>
 
 <tr>
 <td>4</td>
 <td><b>Implementera och testa datainsamling</b> med API:erna för insamling av Single event-data och Batch-händelsedata.</td>
-<td><a href="https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/interactive-data-collection.html">Datainsamling för en händelse</a><br/><a href="https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/non-interactive-data-collection.html">Datainsamling för grupphändelse</a>
+<td><a href="https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/interactive-data-collection.html?lang=sv-SE">Datainsamling för en händelse</a><br/><a href="https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/non-interactive-data-collection.html?lang=sv-SE">Datainsamling för grupphändelse</a>
 </tr>
 
 <td>5</td>
@@ -59,5 +59,5 @@ Tänk också på Edge Network Server-API när du kräver att känsliga data saml
 
 </table>
 
-Mer information finns i [API-dokumentationen för Edge Network Server](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html) och ett exempel på [integrering med Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/interacting-other-adobe-solutions/interacting-adobe-analytics.html).
+Mer information finns i [API-dokumentationen för Edge Network Server](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html?lang=sv-SE) och ett exempel på [integrering med Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/interacting-other-adobe-solutions/interacting-adobe-analytics.html).
 

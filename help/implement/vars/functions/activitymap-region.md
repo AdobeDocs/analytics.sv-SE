@@ -19,7 +19,7 @@ Variabeln `ActivityMap.region` gör att du kan åsidosätta logiken som Activity
 
 ## Åsidosätta regionsvärden med Web SDK
 
-Du kan använda [`OnBeforeLinkClickSend`](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/onbeforelinkclicksend)-återanrop för att ändra Web SDK-nyttolasten eller avbryta sändning av data.
+Du kan använda [`OnBeforeLinkClickSend`](https://experienceleague.adobe.com/sv/docs/experience-platform/web-sdk/commands/configure/onbeforelinkclicksend)-återanrop för att ändra Web SDK-nyttolasten eller avbryta sändning av data.
 
 ## Regionåsidosättning med Adobe Analytics-tillägg
 

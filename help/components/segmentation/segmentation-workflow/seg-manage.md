@@ -74,6 +74,6 @@ Så här konfigurerar du synliga kolumner i segmenthanteraren:
 
 ## Videoinstruktion {#section_B3C5DA22DC5248DBA17C56E03DA2D4F2}
 
-Den här [Adobe Analytics-videon](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/components/segmentation/segment-management-and-sharing.html) ger en kort översikt över hur du använder segmenthanteraren.
+Den här [Adobe Analytics-videon](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/components/segmentation/segment-management-and-sharing.html?lang=sv-SE) ger en kort översikt över hur du använder segmenthanteraren.
 
 

@@ -50,7 +50,7 @@ Följande termer är viktiga när det gäller att förstå användningen av serv
   </tr> 
   <tr> 
    <td colname="col1"> <p>Inloggningsföretag </p> </td> 
-   <td colname="col2"> <p>Ett faktureringsföretag kan ha <a href="https://helpx.adobe.com/analytics/kb/multiple-login-companies.html"> flera inloggningsföretag </a>. Ett inloggningsföretag är en samling rapportsviter som används av din organisation. Vissa organisationer har flera inloggningsföretag som gäller för olika delar av organisationen. Detta är särskilt användbart för stora organisationer som arbetar med olika affärsenheter där många rapporteringsprogram inte är tillämpliga för andra i företaget. </p> <p>Detta är ofta ett företags regionala dotterbolag. I det här exemplet visas inloggningsföretag och deras tillhörande rapportsviter: </p> 
+   <td colname="col2"> <p>Ett faktureringsföretag kan ha <a href="https://helpx.adobe.com/se/analytics/kb/multiple-login-companies.html"> flera inloggningsföretag </a>. Ett inloggningsföretag är en samling rapportsviter som används av din organisation. Vissa organisationer har flera inloggningsföretag som gäller för olika delar av organisationen. Detta är särskilt användbart för stora organisationer som arbetar med olika affärsenheter där många rapporteringsprogram inte är tillämpliga för andra i företaget. </p> <p>Detta är ofta ett företags regionala dotterbolag. I det här exemplet visas inloggningsföretag och deras tillhörande rapportsviter: </p> 
     <ul id="ul_8C756C7972D04F5E89D6E32BB06D26C3"> 
      <li id="li_EA6257FED7854B6FAA071926D0F8A07C">adobe.global: RS1, RS2, RS3, RS4 </li> 
      <li id="li_3EAFB556849E4CCC9D96D5A3492EC898">adobe.us: RS1, RS2 </li> 

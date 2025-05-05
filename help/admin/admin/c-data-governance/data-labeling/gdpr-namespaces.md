@@ -21,7 +21,7 @@ Namnutrymmessträngen används för att identifiera de fält som du vill söka i
 * Ett typfält som för de flesta Adobe Analytics-begäranden innehåller värdet ”analytics”.
 * Ett värdefält som innehåller det ID som Analytics ska söka efter i de associerade namnutrymmesvariablerna från var och en av rapportsviterna.
 
-Mer information och en [lista över standardnamnutrymmen för identiteter](https://experienceleague.adobe.com/en/docs/experience-platform/privacy/api/appendix#standard-namespaces) finns i [API-dokumentationen för datasekretess](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html) för Experience Cloud. Se [Skapa ett åtkomst-/borttagningsjobb](https://experienceleague.adobe.com/en/docs/experience-platform/privacy/api/privacy-jobs#access-delete) för en exempelbegäran.
+Mer information och en [lista över standardnamnutrymmen för identiteter](https://experienceleague.adobe.com/sv/docs/experience-platform/privacy/api/appendix#standard-namespaces) finns i [API-dokumentationen för datasekretess](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html?lang=sv-SE) för Experience Cloud. Se [Skapa ett åtkomst-/borttagningsjobb](https://experienceleague.adobe.com/sv/docs/experience-platform/privacy/api/privacy-jobs#access-delete) för en exempelbegäran.
 
 ## Cookie-ID
 

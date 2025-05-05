@@ -33,7 +33,7 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-_I den här artikeln visas den genomsnittliga panelen för mediemåminuter i **Customer Journey Analytics**.<br/>Se [Målgruppspanel i genomsnitt](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel) för **Adobe Analytics** -versionen av den här artikeln.*
+_I den här artikeln visas den genomsnittliga panelen för mediemåminuter i **Customer Journey Analytics**.<br/>Se [Målgruppspanel i genomsnitt](https://experienceleague.adobe.com/sv/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel) för **Adobe Analytics** -versionen av den här artikeln.*
 
 >[!ENDSHADEBOX]
 

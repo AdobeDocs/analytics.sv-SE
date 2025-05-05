@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Alternativet för klassificerings-FTP ger större flexibilitet vid överföring av stora klassificeringsdatauppsättningar, inklusive möjligheten att överföra data till flera rapportsviter och att överföra datauppsättningar som är större än 50 000 rader.
 
-Se [klassificeringar](https://experienceleague.adobe.com/docs/analytics/components/classifications/classifications-importer/c-working-with-saint.html) för steg om hur du hämtar klassificeringsdata via FTP och om hur du överför datafiler via FTP (inklusive stegen för att skapa ett FTP-konto).
+Se [klassificeringar](https://experienceleague.adobe.com/docs/analytics/components/classifications/classifications-importer/c-working-with-saint.html?lang=sv-SE) för steg om hur du hämtar klassificeringsdata via FTP och om hur du överför datafiler via FTP (inklusive stegen för att skapa ett FTP-konto).
 
 Hur lång tid det tar för systemet att importera dessa filer varierar beroende på ett antal faktorer. Om det finns en överförd fil på FTP-servern under mer än tre dagar kan du kontakta Adobe kundtjänst tillsammans med de användare i organisationen som stöds.
 

@@ -15,7 +15,7 @@ ht-degree: 0%
 
 I följande tabell visas dataobjektsvariablerna som Adobe Experience Platform Edge Network automatiskt mappar till Adobe Analytics. Om du använder dessa sökvägar för dataobjektfält behövs ingen ytterligare konfiguration för att skicka data till Adobe Analytics.
 
-Du bör använda dessa fält om du tänker använda Customer Journey Analytics i framtiden. Med den här implementeringsmetoden kan din organisation skicka data till Adobe med Web SDK utan att följa ett XDM-schema. När din organisation är redo att skicka data till Adobe Experience Platform kan du använda [Datastream-mappning](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep#mapping) för att peka dataobjektfält mot deras respektive XDM-fält.
+Du bör använda dessa fält om du tänker använda Customer Journey Analytics i framtiden. Med den här implementeringsmetoden kan din organisation skicka data till Adobe med Web SDK utan att följa ett XDM-schema. När din organisation är redo att skicka data till Adobe Experience Platform kan du använda [Datastream-mappning](https://experienceleague.adobe.com/sv/docs/experience-platform/datastreams/data-prep#mapping) för att peka dataobjektfält mot deras respektive XDM-fält.
 
 ## Värdeprioriteringar
 

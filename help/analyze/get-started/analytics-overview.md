@@ -41,7 +41,7 @@ Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Introduktion till
 >[!ENDSHADEBOX]
 
 
-Mer information om vilket verktyg som ska användas finns i [Vilket Adobe Analytics-verktyg ska jag använda?](https://experienceleague.adobe.com/docs/analytics/analyze/admin-overview/which-analytics-tool.html).
+Mer information om vilket verktyg som ska användas finns i [Vilket Adobe Analytics-verktyg ska jag använda?](https://experienceleague.adobe.com/docs/analytics/analyze/admin-overview/which-analytics-tool.html?lang=sv-SE).
 
 ## Gå längre med Customer Journey Analytics
 
@@ -57,4 +57,4 @@ Nedan följer några av fördelarna med Customer Journey Analytics framför Adob
 
 * **Data för tvärrapporteringsprogram**: Befintliga implementeringar från flera datauppsättningar kan kombineras i plattformen.
 
-Mer information finns i [Översikt över Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html).
+Mer information finns i [Översikt över Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=sv-SE).

@@ -26,7 +26,7 @@ Följande inställningar kopieras inte från mallar eller duplicerade rapportsvi
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Klassificeringsdata (klassificeringsstrukturen kopieras) </p> </td> 
-   <td colname="col2"> <p>Dokumentation för <a href="https://experienceleague.adobe.com/docs/analytics/components/classifications/classifications-importer/c-working-with-saint.html"> klassificeringsimporteraren (överföring) </a> </p> </td> 
+   <td colname="col2"> <p>Dokumentation för <a href="https://experienceleague.adobe.com/docs/analytics/components/classifications/classifications-importer/c-working-with-saint.html?lang=sv-SE"> klassificeringsimporteraren (överföring) </a> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Aktivera registrering av transaktions-ID </p> </td> 
@@ -60,7 +60,7 @@ Följande inställningar kopieras inte från mallar eller duplicerade rapportsvi
   </tr> 
   <tr> 
    <td colname="col1"> <p>Klickmappshanteraren för besökare </p> </td> 
-   <td colname="col2"> <p><a href="https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-admins/activitymap-enable.html"> Uppgradera till Activity Map</a> </p> </td> 
+   <td colname="col2"> <p><a href="https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-admins/activitymap-enable.html?lang=sv-SE"> Uppgradera till Activity Map</a> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>VISTA-regler </p> </td> 

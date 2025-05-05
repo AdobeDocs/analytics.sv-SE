@@ -32,7 +32,7 @@ Egenskaper är överliggande behållare som du använder för att hantera taggar
 1. Alla inställningar, inklusive Experience Cloud organisations-ID, ska redan vara ifyllda. Klicka på **[!UICONTROL Save]**.
 1. Gå tillbaka till tilläggskatalogen, leta upp Adobe Analytics och klicka på **[!UICONTROL Install]**.
 
-Mer information finns i den fullständiga dokumentationen för [Adobe Analytics-tillägget](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html).
+Mer information finns i den fullständiga dokumentationen för [Adobe Analytics-tillägget](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=sv-SE).
 
 ## Skapa dataelement för Adobe Analytics
 

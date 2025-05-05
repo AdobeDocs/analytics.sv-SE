@@ -47,7 +47,7 @@ alloy("sendEvent", {
 });
 ```
 
-Mer information finns i [Använda API:t sendBeacon ](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/tracking-events.html#using-the-sendbeacon-api) i dokumentationen för Web SDK.
+Mer information finns i [Använda API:t sendBeacon ](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/tracking-events.html?lang=sv-SE#using-the-sendbeacon-api) i dokumentationen för Web SDK.
 
 ## Använd Beacon med Adobe Analytics-tillägget
 

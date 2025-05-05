@@ -19,7 +19,7 @@ Hur ni väljer rätt attribueringsmodell för er organisation beror på ett anta
 >[!NOTE]
 >Denna analys måste ske innan du väljer en attribueringsmodell.
 
-Den här fasen består till att börja med av att förstå kundbeteende och definiera konverteringsmått. Baserat på konverteringsstatistik kan verktyg som [Dataflöden](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-overview.html) (för rådata) eller Analysis Workspace underlätta din förståelse av
+Den här fasen består till att börja med av att förstå kundbeteende och definiera konverteringsmått. Baserat på konverteringsstatistik kan verktyg som [Dataflöden](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-overview.html?lang=sv-SE) (för rådata) eller Analysis Workspace underlätta din förståelse av
 
 * Antalet kunder som rör olika marknadsföringskanaler innan de konverterar
 * Andelen/fördelningen av dessa beteenden
@@ -49,7 +49,7 @@ I det här fallet använder du den [&quot;omvända J-formade&quot; attribuerings
 
 Anta att din hypotes är:&quot;I vår bransch (t.ex. resebranschen) är attribueringsfönstret 60 eller 90 dagar, inte 30 dagar, eftersom kunderna gör en hel del efterforskningar innan de köper en produkt.&quot;
 
-I det här fallet ändrar du [uppslagsfönstret](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/attribution/models.html#lookback-windows) till 90 dagar.
+I det här fallet ändrar du [uppslagsfönstret](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/attribution/models.html?lang=sv-SE#lookback-windows) till 90 dagar.
 
 ## Steg 3: Använd algoritmisk attribuering
 
@@ -59,4 +59,4 @@ Om du ännu inte har någon attribueringsmodell som ger tillfredsställande svar
 
 * Du kan behöva använda en datavetare istället för att förlita dig på Analysis Workspace.
 * Du kan förlita dig på rådata, som i dataflöden från Adobe.
-* Du kan till exempel använda [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html) om du vill ta hänsyn till dina Impressions-data.
+* Du kan till exempel använda [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=sv-SE) om du vill ta hänsyn till dina Impressions-data.

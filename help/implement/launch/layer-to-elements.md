@@ -21,7 +21,7 @@ När organisationen har etablerat och implementerat ett datalager på webbplatse
 
 ## Använd taggar för att skapa dataelement
 
-[Dataelement](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html) är komponenter i Adobe Experience Platform Data Collection som du kan använda i hela verktyget. Du kan tilldela variabelvärden i Adobe Analytics-tillägget med dataelement.
+[Dataelement](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html?lang=sv-SE) är komponenter i Adobe Experience Platform Data Collection som du kan använda i hela verktyget. Du kan tilldela variabelvärden i Adobe Analytics-tillägget med dataelement.
 
 1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med dina inloggningsuppgifter för AdobeID.
 1. Klicka på den önskade taggegenskapen.

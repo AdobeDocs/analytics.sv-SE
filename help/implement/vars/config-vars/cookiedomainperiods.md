@@ -32,7 +32,7 @@ Variabeln `cookieDomainPeriods` hjälpte AppMeasurementet att avgöra var Analyt
 >
 >Ta inte underdomäner med i beräkningen för variabeln. Ange till exempel inte `cookieDomainPeriods` för exempel-URL:en `store.toys.example.com`. AppMeasurementet känner igen att cookies lagras på `example.com`, även på URL:er med många underdomäner.
 
-För implementeringar på AppMeasurementet v2.26.x eller senare används cookien [`s_ac`](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/cookies/analytics) för att automatiskt avgöra rätt cookie-domän. Biblioteket försöker först skriva en cookie som innehåller två domänperioder. Om den här cookie-filen misslyckas försöker den igen, inklusive fler domänperioder tills den lyckas. Denna cookie tas omedelbart bort när den har angetts.
+För implementeringar på AppMeasurementet v2.26.x eller senare används cookien [`s_ac`](https://experienceleague.adobe.com/sv/docs/core-services/interface/data-collection/cookies/analytics) för att automatiskt avgöra rätt cookie-domän. Biblioteket försöker först skriva en cookie som innehåller två domänperioder. Om den här cookie-filen misslyckas försöker den igen, inklusive fler domänperioder tills den lyckas. Denna cookie tas omedelbart bort när den har angetts.
 
 ## Cookie-domänperioder som använder Web SDK
 

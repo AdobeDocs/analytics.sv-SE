@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Du kan referera till AppMeasurementen från både underordnade och överordnade iframes. Det är nödvändigt att definiera alla variabler på samma plats där AppMeasurementet finns. I följande exempel beskrivs hur du ställer in grundläggande AppMeasurement-variabler och -metoder i och utanför en iframe.
 
-Om du använder taggar i Adobe Experience Platform måste du se till att spårningsobjektet är globalt tillgängligt. Se [Översikt över Adobe Analytics-tillägg](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html).
+Om du använder taggar i Adobe Experience Platform måste du se till att spårningsobjektet är globalt tillgängligt. Se [Översikt över Adobe Analytics-tillägg](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=sv-SE).
 
 >[!CAUTION]
 >
@@ -67,5 +67,5 @@ window.top.postMessage("Example page view call","https://example.com");
 
 * Liksom med annan JavaScript-kod kan iframes bara kommunicera när domäner och protokoll matchar. De här exemplen fungerar inte om iframe-innehållet finns i en annan domän än det överordnade.
 * Om AppMeasurementet finns i en iframe anges variabeln [`referrer`](../vars/page-vars/referrer.md) till den överordnade URL:en, inte till den faktiska refererande URL:en. Du kan ställa in variabeln `referrer` manuellt för att lösa problemet.
-* [Adobe Experience Cloud-felsökaren](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html) känner inte igen bildbegäranden som utlösts inom iframes.
+* [Adobe Experience Cloud-felsökaren](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html?lang=sv-SE) känner inte igen bildbegäranden som utlösts inom iframes.
 * Activity Map visar inte heatmap-kartan över länkar som klickats i iframes. Hela iframe markeras i stället.

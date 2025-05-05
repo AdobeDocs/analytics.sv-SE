@@ -27,8 +27,8 @@ Ni kan:
 * Använd en anpassad händelse, varukorshändelse eller instans.
 * Visa upp till 20 timmars historik och realtidsdata.
 
-I realtid respekteras behörigheter för användare och grupper. Om du till exempel inte har rätt att se intäkter kan du inte visa en realtidsrapport som innehåller intäktsdata. eVars (konverteringsmått) stöds inte. Realtidsbehörigheter är aktiverade i [administratörsverktygen](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/real-time-reports/t-realtime-admin.html).
+I realtid respekteras behörigheter för användare och grupper. Om du till exempel inte har rätt att se intäkter kan du inte visa en realtidsrapport som innehåller intäktsdata. eVars (konverteringsmått) stöds inte. Realtidsbehörigheter är aktiverade i [administratörsverktygen](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/real-time-reports/t-realtime-admin.html?lang=sv-SE).
 
 >[!NOTE]
 >
->[!UICONTROL Real-Time Reports] är inte samma sak som funktionen [Inkludera aktuella data](https://experienceleague.adobe.com/docs/analytics/analyze/legacy-report-builder/options.html) (datagenstid) som släpptes tidigare, vilket reducerade fördröjningen för standardrapportering genom att visa data innan den är klar.
+>[!UICONTROL Real-Time Reports] är inte samma sak som funktionen [Inkludera aktuella data](https://experienceleague.adobe.com/docs/analytics/analyze/legacy-report-builder/options.html?lang=sv-SE) (datagenstid) som släpptes tidigare, vilket reducerade fördröjningen för standardrapportering genom att visa data innan den är klar.

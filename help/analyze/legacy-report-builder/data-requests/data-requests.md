@@ -23,7 +23,7 @@ I begärandeguiden: Steg 1 väljer du rapportsviten, rapporttyp, segment och kon
 
 1. **Intervallväljare**: Gör att du kan välja ett rapportpaket-ID från en cell i Excel. Se [Välj rapportsviter](/help/analyze/legacy-report-builder/data-requests/selecting-report-suites/t-select-report-suites.md).
 
-1. **Segment**: Segment är anpassade delmängder av data eller data som filtreras efter regler som du skapar. Segmenten baseras på träffar, besök och besökare. Mer information om segment finns i [segmenteringshandboken för analyser](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-home.html).
+1. **Segment**: Segment är anpassade delmängder av data eller data som filtreras efter regler som du skapar. Segmenten baseras på träffar, besök och besökare. Mer information om segment finns i [segmenteringshandboken för analyser](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-home.html?lang=sv-SE).
 
    Du kan till exempel köra [!UICONTROL Pages Report] och sedan använda ett segment för förstagångsbesök.
 

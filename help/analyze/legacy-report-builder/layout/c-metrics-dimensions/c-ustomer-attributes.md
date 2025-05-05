@@ -17,7 +17,7 @@ ht-degree: 11%
 
 Kundattribut lagras i en ny typ av element som kallas VisAttr, som kan konfigureras som en dimension eller ett mått.
 
-Mer detaljerad information om hur du överför kundattribut finns i [hjälpen för Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html).
+Mer detaljerad information om hur du överför kundattribut finns i [hjälpen för Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html?lang=sv-SE).
 
 * Om den är konfigurerad som ett mått visas VisAttr både som mått och&quot;dimension&quot;.
 

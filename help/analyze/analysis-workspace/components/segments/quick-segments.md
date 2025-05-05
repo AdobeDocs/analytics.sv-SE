@@ -61,7 +61,7 @@ Så här skapar du ett snabbsegment:
    | --- | --- |
    | [!UICONTROL Name] | Standardnamnet för ett segment är en kombination av regelnamnen i segmentet. Du kan byta namn på segmentet till ett mer eget namn. |
    | [!UICONTROL Include/exclude] | Du kan antingen inkludera eller exkludera komponenter i segmentdefinitionen, men inte båda. |
-   | [!UICONTROL Hit/Visit/Visitor] behållare | Snabbsegment innehåller bara en [segmentbehållare](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html#section_AF2A28BE92474DB386AE85743C71B2D6) som gör att du kan inkludera ett mått-/mätvärde-/datumintervall i (eller exkludera det från) segmentet. [!UICONTROL Visitor] innehåller översiktsdata som är specifika för besökaren för olika besök och sidvyer. Med en [!UICONTROL Visit]-behållare kan du ange regler för att dela upp besökarens data baserat på besök, och med en [!UICONTROL Hit]-behållare kan du dela upp besökarinformation baserat på enskilda sidvyer. Standardbehållaren är [!UICONTROL Hit]. |
+   | [!UICONTROL Hit/Visit/Visitor] behållare | Snabbsegment innehåller bara en [segmentbehållare](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html?lang=sv-SE#section_AF2A28BE92474DB386AE85743C71B2D6) som gör att du kan inkludera ett mått-/mätvärde-/datumintervall i (eller exkludera det från) segmentet. [!UICONTROL Visitor] innehåller översiktsdata som är specifika för besökaren för olika besök och sidvyer. Med en [!UICONTROL Visit]-behållare kan du ange regler för att dela upp besökarens data baserat på besök, och med en [!UICONTROL Hit]-behållare kan du dela upp besökarinformation baserat på enskilda sidvyer. Standardbehållaren är [!UICONTROL Hit]. |
    | [!UICONTROL Components] (Dimension/mått/datumintervall) | Definiera upp till tre regler genom att lägga till komponenter (dimensioner, mått, datumintervall eller dimensionsvärden). Det finns tre sätt att hitta rätt komponent:<ul><li>Börja skriva så hittar snabbsegmentsverktyget automatiskt rätt komponent.</li><li>Använd listrutan för att hitta komponenten.</li><li>Dra och släpp komponenter från den vänstra listen.</li></ul> |
    | [!UICONTROL Operator] | Använd listrutan för att hitta standardoperatorer och [!UICONTROL Distinct Count] operatorer. Se [Segmentoperatorer](/help/components/segmentation/seg-reference/seg-operators.md). |
    | Plustecken (+) | Lägg till en annan regel |
@@ -133,7 +133,7 @@ När du har tillämpat segmentet kan du välja att lägga till det i segmentkomp
 1. Välj **[!UICONTROL Save]**.
 
    Segmentet visas nu i segmentkomponentlistan för alla dina projekt.
-Du kan också [dela segmentet](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/curate.html#concept_4A9726927E7C44AFA260E2BB2721AFC6) med andra personer i organisationen.
+Du kan också [dela segmentet](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/curate.html?lang=sv-SE#concept_4A9726927E7C44AFA260E2BB2721AFC6) med andra personer i organisationen.
 
 ## Exempel på snabbsegment
 

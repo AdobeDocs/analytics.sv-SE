@@ -19,7 +19,7 @@ Domänen [dimension](overview.md) rapporterar de åtkomstpunkter som besökare a
 Adobe samarbetar med [Digital Element](https://www.digitalelement.com/) för att fastställa åtkomstpunktsdomänen. Flera metoder, bland annat omvänd DNS-sökning, används för att fastställa åtkomstpunktsdomänen. Den kräver ingen konfiguration och har ingen variabel att fylla i.
 
 * För implementeringar av AppMeasurement fungerar den här dimensionen som standard.
-* Aktivera [!UICONTROL Network Lookup] när [konfigurerar ett datastream](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html) för Web SDK-implementeringar.
+* Aktivera [!UICONTROL Network Lookup] när [konfigurerar ett datastream](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=sv-SE) för Web SDK-implementeringar.
 
 ## Dimensioner
 

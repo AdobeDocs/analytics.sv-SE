@@ -26,7 +26,7 @@ Dessa dimensioner hänvisar till uppslagsregler som är interna för Adobe.
 Vilka dimensioner som är tillgängliga beror på implementeringstyp:
 
 * När det gäller implementeringar av AppMeasurement fungerar de här måtten som standard.
-* För Web SDK-implementeringar aktiverar du [!UICONTROL Geo Lookup] (för Mobile Carrier) eller [!UICONTROL Device Lookup] (för alla andra dimensioner) när [du konfigurerar ett datastream](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html).
+* För Web SDK-implementeringar aktiverar du [!UICONTROL Geo Lookup] (för Mobile Carrier) eller [!UICONTROL Device Lookup] (för alla andra dimensioner) när [du konfigurerar ett datastream](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=sv-SE).
 
 ## Beskrivningar av mobildimension
 

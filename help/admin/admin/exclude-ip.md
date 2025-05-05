@@ -23,7 +23,7 @@ Om du vill exkludera data med IP-adress kan du konfigurera undantag enligt beskr
 >
 >När du konfigurerar undantag efter IP-adress bör du tänka på följande:
 >
->* Träffar som exkluderats av IP-adressen faktureras som [serveranrop](https://experienceleague.adobe.com/docs/analytics/technotes/terms.html).
+>* Träffar som exkluderats av IP-adressen faktureras som [serveranrop](https://experienceleague.adobe.com/docs/analytics/technotes/terms.html?lang=sv-SE).
 >* Privata IP-adresser behöver inte uteslutas. Endast externa IP-adresser når Adobe datainsamlingsservrar. Privata adresser omfattar `10.*.*.*`, `192.168.*.*`, `172.[16-31].*.*` och `169.254.*.*`.
 >* Du kan använda jokertecken (&#42;) för att exkludera ett adressintervall. `[!DNL 0.0.*.0]` skulle till exempel exkludera alla IP-adresser mellan `[!DNL 0.0.0.0]` och `[!DNL 0.0.255.0]`. Du kan utesluta upp till 50 olika IP-adresser.
 >* Data från en utelämnad IP-adress utelämnas för nya träffar som kommer in i systemet inom 5 minuter efter det att undantaget har angetts.

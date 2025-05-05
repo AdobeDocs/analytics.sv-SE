@@ -29,4 +29,4 @@ Så här installerar du Report Builder:
 
 ## Behörigheter
 
-Om du inte ser **[!UICONTROL Report Builder]** som ett menyalternativ under **[!UICONTROL Tools]** ber du Adobe Analytics-administratören att kontrollera att du ingår i en produktprofil som har följande behörighet: *Report Builder*. Läs mer om [produktprofiler](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html) och [Analysbehörigheter](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/analytics-tools.html).
+Om du inte ser **[!UICONTROL Report Builder]** som ett menyalternativ under **[!UICONTROL Tools]** ber du Adobe Analytics-administratören att kontrollera att du ingår i en produktprofil som har följande behörighet: *Report Builder*. Läs mer om [produktprofiler](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html?lang=sv-SE) och [Analysbehörigheter](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/analytics-tools.html?lang=sv-SE).

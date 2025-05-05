@@ -37,4 +37,4 @@ Exempel:
 
 ![](assets/processing_rule_set_event.png)
 
-Se [Kontextdatavariabler](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/contextdata.html) i implementeringshjälpen.
+Se [Kontextdatavariabler](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/contextdata.html?lang=sv-SE) i implementeringshjälpen.

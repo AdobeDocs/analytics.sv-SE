@@ -21,7 +21,7 @@ Dessa begränsningar i webbläsaren innebär en bredare övergång från anonym 
 
 ## Customer Journey Analytics och Cross Device Analytics
 
-Med [Adobe Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html) och [Enhetsövergripande analys](/help/components/cda/overview.md) kan användare inkludera varaktiga identifierare, till exempel hashade inloggningar, utöver cookies. På så sätt kan ni förstå kundresan över olika enheter och, när det gäller Customer Journey Analytics, över online- och offlinekanaler:
+Med [Adobe Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=sv-SE) och [Enhetsövergripande analys](/help/components/cda/overview.md) kan användare inkludera varaktiga identifierare, till exempel hashade inloggningar, utöver cookies. På så sätt kan ni förstå kundresan över olika enheter och, när det gäller Customer Journey Analytics, över online- och offlinekanaler:
 
 * **Customer Journey Analytics** bygger på Adobe Experience Platform och ger flexibilitet att kombinera online- och offlinedata i Analysis Workspace, baserat på vilket gemensamt kund-ID som helst. Du kan ange vilket ID du vill använda för en given analys och utforska data i Analysis Workspace. Kunder som använder Analytics Select, Prime och Ultimate har rätt att köpa detta som en tilläggsprodukt.
 
@@ -35,7 +35,7 @@ Du kan skicka data till Analytics-servern med hjälp av [API:t för datainfognin
 
 ## FPID (First Party Device ID) med Web SDK
 
-Med Adobe Experience Platform Web SDK kan du välja att ställa in och hantera egna enhetsidentifierare i stället för Adobe-genererade Experience Cloud-ID:n (ECID). Dessa kallas för FPID (First-party device ID). Läs mer [här](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html).
+Med Adobe Experience Platform Web SDK kan du välja att ställa in och hantera egna enhetsidentifierare i stället för Adobe-genererade Experience Cloud-ID:n (ECID). Dessa kallas för FPID (First-party device ID). Läs mer [här](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html?lang=sv-SE).
 
 ## Mer information
 

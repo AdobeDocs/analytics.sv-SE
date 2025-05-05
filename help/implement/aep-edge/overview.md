@@ -53,4 +53,4 @@ Förutom att differentiera sidvyer och länkklick finns följande logik som avg�
 
 {style="table-layout:auto"}
 
-Mer information finns i schemafältgruppen [Adobe Analytics ExperienceEvent Full Extension](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/event/analytics-full-extension.html).
+Mer information finns i schemafältgruppen [Adobe Analytics ExperienceEvent Full Extension](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/event/analytics-full-extension.html?lang=sv-SE).

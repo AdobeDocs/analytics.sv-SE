@@ -19,7 +19,7 @@ Den här variabeln används inte för sidvisningsanrop ([`t()`](../functions/t-m
 
 ## Avgöra vilka variabler som ska ingå i en XDM-händelse med Web SDK
 
-Web SDK utesluter inte vissa fält för länkspårningsanrop. Du kan dock använda återanropet `onBeforeEventSend` för att rensa eller ange önskade fält innan data skickas till Adobe. Mer information finns i [Ändra händelser globalt](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/tracking-events.html#modifying-events-globally) i Web SDK-dokumentationen.
+Web SDK utesluter inte vissa fält för länkspårningsanrop. Du kan dock använda återanropet `onBeforeEventSend` för att rensa eller ange önskade fält innan data skickas till Adobe. Mer information finns i [Ändra händelser globalt](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/tracking-events.html?lang=sv-SE#modifying-events-globally) i Web SDK-dokumentationen.
 
 ## Variabler i länkspårningsanrop med Adobe Analytics-tillägget
 

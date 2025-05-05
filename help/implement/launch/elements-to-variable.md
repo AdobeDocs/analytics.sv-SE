@@ -37,7 +37,7 @@ Globala variabler är idealiska om du vill ange variabelvärden på alla sidor d
 
 ### Ange variabler i regler
 
-Variabler som ställs in i regler är idealiska om du inte vill ha variabler som ställs in på varje sida. Du definierar villkoren i regeln. Se [Regler](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html) i dokumentationen för Adobe Experience Platform-taggar.
+Variabler som ställs in i regler är idealiska om du inte vill ha variabler som ställs in på varje sida. Du definierar villkoren i regeln. Se [Regler](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html?lang=sv-SE) i dokumentationen för Adobe Experience Platform-taggar.
 
 1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med dina inloggningsuppgifter för AdobeID.
 1. Klicka på den önskade taggegenskapen.

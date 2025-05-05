@@ -26,7 +26,7 @@ Så här skapar du ett enkelt mått för&quot;Sidvyer per besök&quot;:
 1. För det här måttet drar du först sidvyer till avsnittet [!UICONTROL **Definition**] på arbetsytan och drar sedan besök under den (vänta tills den blå linjen visas innan du släpper den).
 1. Välj operatorn Dela upp. (Divide är standardoperator.)
 1. Du kan nu se en **[!UICONTROL Preview]** av det måttet när du skapar det, längst upp till höger.
-1. Produktkompatibiliteten visar om måttet är kompatibelt med [aktuella data](https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/current-data.html) eller endast med fullständigt bearbetade data.
+1. Produktkompatibiliteten visar om måttet är kompatibelt med [aktuella data](https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/current-data.html?lang=sv-SE) eller endast med fullständigt bearbetade data.
 1. Välj **[!UICONTROL Save]**.
 
    Observera att formeln **[!UICONTROL Summary]** uppdateras varje gång du ändrar måttdefinitionen.

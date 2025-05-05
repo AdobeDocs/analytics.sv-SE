@@ -60,11 +60,11 @@ Användarinformation visar användarna i organisationen, avgränsade med domänn
 <tbody> 
 <tr> 
    <td colname="col1"> <p>Domän </p> </td> 
-   <td colname="col2"> <p>Domäner är specifika för e-post-ID:n för den aktuella Analytics-användarbasen. En domän kan bara tas i anspråk av en enda organisation, och bara systemadministratörer kan göra anspråk på en domän. Mer information finns i <a href="https://helpx.adobe.com/enterprise/help/request-access-to-claimed-domain.html"> Begär åtkomst till en domän som tagits i anspråk </a>. </p> </td> 
+   <td colname="col2"> <p>Domäner är specifika för e-post-ID:n för den aktuella Analytics-användarbasen. En domän kan bara tas i anspråk av en enda organisation, och bara systemadministratörer kan göra anspråk på en domän. Mer information finns i <a href="https://helpx.adobe.com/se/enterprise/help/request-access-to-claimed-domain.html"> Begär åtkomst till en domän som tagits i anspråk </a>. </p> </td> 
 </tr> 
 <tr> 
    <td colname="col1"> <p>Domänen har tagits i anspråk </p> </td> 
-   <td colname="col2"> <p>Om du vill migrera användare som Enterprise ID eller Federated ID måste du vara systemadministratör och göra anspråk på en tillgänglig domän via Adobe Admin Console innan du migrerar användare. Läs mer <a href="https://helpx.adobe.com/enterprise/help/identity.html"> här</a>. </p> <p>Om du inte vill göra anspråk på domäner för Enterprise ID eller Federated ID hoppar du över det här steget och migrerar användare som Adobe ID. Läs mer om ID-typerna <a href="https://helpx.adobe.com/enterprise/help/identity.html"> här</a>. </p> </td> 
+   <td colname="col2"> <p>Om du vill migrera användare som Enterprise ID eller Federated ID måste du vara systemadministratör och göra anspråk på en tillgänglig domän via Adobe Admin Console innan du migrerar användare. Läs mer <a href="https://helpx.adobe.com/se/enterprise/help/identity.html"> här</a>. </p> <p>Om du inte vill göra anspråk på domäner för Enterprise ID eller Federated ID hoppar du över det här steget och migrerar användare som Adobe ID. Läs mer om ID-typerna <a href="https://helpx.adobe.com/se/enterprise/help/identity.html"> här</a>. </p> </td> 
 </tr> 
 </tbody> 
 </table>

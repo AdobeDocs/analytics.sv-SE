@@ -20,7 +20,7 @@ När **[!UICONTROL Enable click data collection]** är aktiverat använder du ko
 
 ## Region-ID-attribut i Web SDK JavaScript-biblioteket
 
-När [`clickCollectionEnabled`](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/clickcollectionenabled) är aktiverat använder du `filterClickDetails`-återanropet i `clickCollection`-objektet. I det här återanropet kan du kontrollera värdet för `clickedElement` och anpassa logiken för den insamlade regionen.
+När [`clickCollectionEnabled`](https://experienceleague.adobe.com/sv/docs/experience-platform/web-sdk/commands/configure/clickcollectionenabled) är aktiverat använder du `filterClickDetails`-återanropet i `clickCollection`-objektet. I det här återanropet kan du kontrollera värdet för `clickedElement` och anpassa logiken för den insamlade regionen.
 
 ```js
 alloy("configure", {

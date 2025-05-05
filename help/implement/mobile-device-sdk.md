@@ -22,5 +22,5 @@ Använd Adobe Experience Platform Mobile SDK för att implementera Analytics fö
 
 >[!CAUTION]
 >
->Stöd för version 4 Mobile SDK upphörde den 31 augusti 2021. Mer information finns i [Vanliga frågor och svar om Adobe Mobile Services](https://experienceleague.adobe.com/docs/discontinued/using/mobile-services.html).
+>Stöd för version 4 Mobile SDK upphörde den 31 augusti 2021. Mer information finns i [Vanliga frågor och svar om Adobe Mobile Services](https://experienceleague.adobe.com/docs/discontinued/using/mobile-services.html?lang=sv-SE).
 

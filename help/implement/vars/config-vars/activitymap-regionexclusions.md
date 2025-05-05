@@ -20,7 +20,7 @@ När **[!UICONTROL Enable click data collection]** är aktiverat använder du ko
 
 ## Regionundantag i JavaScript-biblioteket för Web SDK
 
-När [`clickCollectionEnabled`](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/clickcollectionenabled) är aktiverat använder du `filterClickDetails`-återanropet i `clickCollection`-objektet. I det här återanropet kan du kontrollera värdet för `linkRegion` och antingen ändra värdet eller avbryta insamlingen av länkspårningsdata.
+När [`clickCollectionEnabled`](https://experienceleague.adobe.com/sv/docs/experience-platform/web-sdk/commands/configure/clickcollectionenabled) är aktiverat använder du `filterClickDetails`-återanropet i `clickCollection`-objektet. I det här återanropet kan du kontrollera värdet för `linkRegion` och antingen ändra värdet eller avbryta insamlingen av länkspårningsdata.
 
 ```js
 alloy("configure", {

@@ -41,7 +41,7 @@ alloy("sendEvent",{
 });
 ```
 
-Mer information finns i [Hantera svar från händelser](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/tracking-events.html#handling-responses-from-events) i Web SDK-dokumentationen.
+Mer information finns i [Hantera svar från händelser](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/tracking-events.html?lang=sv-SE#handling-responses-from-events) i Web SDK-dokumentationen.
 
 ## Registrera Post-track-återanrop med tillägget Adobe Analytics
 

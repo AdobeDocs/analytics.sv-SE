@@ -28,7 +28,7 @@ Att använda den här migreringsmetoden har både fördelar och nackdelar. Väg 
 Adobe rekommenderar att du följer den här implementeringsvägen i följande scenarier:
 
 * Du har en befintlig implementering med hjälp av taggtillägget Adobe Analytics. Om du har en implementering med AppMeasurement följer du [Migrera från AppMeasurement till Web SDK](appmeasurement-to-web-sdk.md) i stället.
-* Du tänker använda Customer Journey Analytics i framtiden, men vill inte ersätta din Analytics-implementering med en Web SDK-implementering från grunden. Att ersätta implementeringen från grunden i Web SDK kräver mest arbete, men erbjuder även den mest livskraftiga långsiktiga implementeringsarkitekturen. Om din organisation vill använda en ren Web SDK-implementering läser du [Importera data via Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-data-ingestion/ingest-use-guides/edge-network/aepwebsdk) i användarhandboken för Customer Journey Analytics.
+* Du tänker använda Customer Journey Analytics i framtiden, men vill inte ersätta din Analytics-implementering med en Web SDK-implementering från grunden. Att ersätta implementeringen från grunden i Web SDK kräver mest arbete, men erbjuder även den mest livskraftiga långsiktiga implementeringsarkitekturen. Om din organisation vill använda en ren Web SDK-implementering läser du [Importera data via Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-data-ingestion/ingest-use-guides/edge-network/aepwebsdk) i användarhandboken för Customer Journey Analytics.
 
 ## Steg som krävs för att migrera till Web SDK
 

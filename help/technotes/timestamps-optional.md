@@ -36,7 +36,7 @@ Tidsstämplar Valfria är standardinställningen för alla nya rapportsviter.
 >
 >Tidsstämplar Valfria är standardinställningen för alla nya rapportsviter som genereras från en mall. Nya rapportsviter som kopierats från en befintlig rapportserie ärver inställningar från originalet.
 
-Se [Tidsstämplar (valfritt)](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/timestamp-optional.html) om du vill ha mer installationsinformation.
+Se [Tidsstämplar (valfritt)](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/timestamp-optional.html?lang=sv-SE) om du vill ha mer installationsinformation.
 
 ## Tidsstämplar Valfritt: Integrera tidsstämplade och tidsstämplade data {#integrate}
 

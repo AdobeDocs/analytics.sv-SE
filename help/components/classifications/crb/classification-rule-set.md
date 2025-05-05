@@ -57,7 +57,7 @@ Ge klassificeringsregeluppsättningen ett namn, använd variabeln och ange över
 
 1. (Krav) Definiera klassificeringsstrukturen i **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]**.
 
-   (Se [Klassificeringar](https://experienceleague.adobe.com/docs/analytics/components/classifications/c-classifications.html) i hjälpen för administrationsverktyg när du lägger till klassificeringar.)
+   (Se [Klassificeringar](https://experienceleague.adobe.com/docs/analytics/components/classifications/c-classifications.html?lang=sv-SE) i hjälpen för administrationsverktyg när du lägger till klassificeringar.)
 
    Variabler visas bara på panelen [!UICONTROL New Rule Set] efter att minst en klassificering har definierats för variabeln.
 

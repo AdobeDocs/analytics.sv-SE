@@ -26,7 +26,7 @@ Om du vill logga in på Report Builder använder du ditt Experience Cloud-inlogg
 
 Med inloggningen Experience Cloud kan du använda Enterprise ID (e-post och lösenord) för att logga in på Adobe Experience Cloud.
 
-Klicka på **[!UICONTROL Sign In]** > **[!UICONTROL Sign in with an Enterprise ID]** om du vill omdirigeras till företagets inloggningssida. Mer information om Enterprise ID finns i [Logga in på ditt företags- eller skolkonto](https://helpx.adobe.com/enterprise/kb/enterprise-id-faq.html#whatis).
+Klicka på **[!UICONTROL Sign In]** > **[!UICONTROL Sign in with an Enterprise ID]** om du vill omdirigeras till företagets inloggningssida. Mer information om Enterprise ID finns i [Logga in på ditt företags- eller skolkonto](https://helpx.adobe.com/se/enterprise/kb/enterprise-id-faq.html#whatis).
 
 ![Skärmbild som visar Adobe Experience Cloud inloggningsfönster med alternativ för inloggning med eller utan din Adobe ID](assets/adobe_id_login.png)
 

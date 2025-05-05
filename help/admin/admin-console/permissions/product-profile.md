@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Produktprofiler är behörighetsförinställningar som produktadministratörer kan tilldela användare inom en organisation. Om du skapar en produktprofil och tilldelar en Experience Cloud-användare till produktprofilen ärver de behörighetsobjekten i produktprofilen.
 
-Allmän information om produktprofiler, inklusive hur du skapar produktprofiler och tilldelar användare, finns i [Hantera produktprofiler för företagsanvändare](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) i användarhandboken för Enterprise.
+Allmän information om produktprofiler, inklusive hur du skapar produktprofiler och tilldelar användare, finns i [Hantera produktprofiler för företagsanvändare](https://helpx.adobe.com/se/enterprise/using/manage-product-profiles.html) i användarhandboken för Enterprise.
 
 ## Produktprofiladministratörer
 
@@ -26,7 +26,7 @@ Produktprofiladministratörer är en valfri grupp som kan lägga till eller ta b
 * Produktprofiladministratörer kan tilldela eller ta bort produktprofiler till användargrupper.
 * Administratörer av produktprofiler är idealiska för gruppledare eller chefer som behöver ge och hantera åtkomst till Adobe Analytics för sitt team. Enskilda personer behöver inte störa systemadministratörer eller produktadministratörer för att bevilja åtkomst till Adobe Analytics.
 
-Mer information om hur du tilldelar produktprofiladministratörer finns i avsnittet Hantera produktprofiladministratörer i artikeln [Hantera produktprofiler för företagsanvändare](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) i användarhandboken för Enterprise.
+Mer information om hur du tilldelar produktprofiladministratörer finns i avsnittet Hantera produktprofiladministratörer i artikeln [Hantera produktprofiler för företagsanvändare](https://helpx.adobe.com/se/enterprise/using/manage-product-profiles.html) i användarhandboken för Enterprise.
 
 ## Adobe Analytics behörighetsobjekt
 

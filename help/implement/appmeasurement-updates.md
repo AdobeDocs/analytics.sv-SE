@@ -424,7 +424,7 @@ Releasedatum: **18 september 2014**
 
   >[!IMPORTANT]
   >
-  >För att ett [!DNL Analytics]-anrop ska kunna använda metoden POST i stället för GET i [!DNL AppMeasurement] (en metod för att lösa [trunkerade URL:er i IE](https://helpx.adobe.com/analytics/kb/shortening-image-request-urls.html)) måste du använda den senaste implementeringen av Visitor ID-tjänsten för Experience Cloud.
+  >För att ett [!DNL Analytics]-anrop ska kunna använda metoden POST i stället för GET i [!DNL AppMeasurement] (en metod för att lösa [trunkerade URL:er i IE](https://helpx.adobe.com/se/analytics/kb/shortening-image-request-urls.html)) måste du använda den senaste implementeringen av Visitor ID-tjänsten för Experience Cloud.
 
 ## Version 1.4
 
@@ -455,7 +455,7 @@ Releasedatum: **22 maj 2014**
 
 Releasedatum: **17 april 2014**
 
-* Stöd för [Experience Cloud Visitor ID-tjänsten](https://experienceleague.adobe.com/docs/id-service/using/home.html).
+* Stöd för [Experience Cloud Visitor ID-tjänsten](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=sv-SE).
 
 ## Version 1.2.4
 
@@ -485,8 +485,8 @@ Releasedatum: **15 november 2013**
 
 Releasedatum: **14 november 2013**
 
-* Stöd för [Heartbeat-videomätning](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html) har lagts till.
-* `VisitorAPI.js` lades till för att stödja [besökar-ID-tjänsten](https://experienceleague.adobe.com/docs/id-service/using/home.html).
+* Stöd för [Heartbeat-videomätning](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=sv-SE) har lagts till.
+* `VisitorAPI.js` lades till för att stödja [besökar-ID-tjänsten](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=sv-SE).
 
 ## Version 1.1.1
 

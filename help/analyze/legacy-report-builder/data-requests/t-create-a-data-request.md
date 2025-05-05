@@ -21,7 +21,7 @@ Steg för att skapa en grundläggande databegäran.
 1. I fönstret [!UICONTROL Request Wizard: Step 1] väljer du en [rapportserie](/help/analyze/legacy-report-builder/data-requests/selecting-report-suites/t-select-report-suites.md).
 1. (Valfritt) Markera ett segment som ska användas i begäran. När du har markerat ett eller flera segment flyttas de högst upp i listan.
 
-   Report Builder använder segment på samma sätt som Adobe Analytics använder dem. Se [segmenteringshandboken för analyser](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-home.html).
+   Report Builder använder segment på samma sätt som Adobe Analytics använder dem. Se [segmenteringshandboken för analyser](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-home.html?lang=sv-SE).
 1. Välj en [rapporttyp](/help/analyze/legacy-report-builder/data-requests/c-report-types/select-report-types.md).
 1. Ange ett [datumintervall](/help/analyze/legacy-report-builder/data-requests/configuring-report-dates/custom-calendar.md) och rapportera [granularitet](/help/analyze/legacy-report-builder/data-requests/configuring-report-dates/granularity.md).
 1. Klicka på **[!UICONTROL Next]**.
@@ -35,6 +35,6 @@ Steg för att skapa en grundläggande databegäran.
 1. Dubbelklicka (eller dra) på fliken [!UICONTROL Metrics] i trädet för att lägga till dem i stödrastret [!UICONTROL Metrics].
 1. Dubbelklicka (eller dra) på [!UICONTROL Dimensions]-fliken till stödrastret [!UICONTROL Row Labels].
 
-   Vilka [dimensioner](https://experienceleague.adobe.com/docs/analytics/analyze/legacy-report-builder/layout/filter-dimenson/filter-dimensions.html) som är tillgängliga i steg 2 beror på vilken basrapport du valde i steg 1 och på konfigurationen för rapportsviten. Dimensionerna är artiklar som korrelerar, underrelaterar eller är en klassificering av den ursprungliga rapporttypen som du valde i fönstret [!UICONTROL Request Wizard: Step 1]. Om du lägger till mer än en dimension i steg 2 skapar du en uppdelning i din databegäran.
+   Vilka [dimensioner](https://experienceleague.adobe.com/docs/analytics/analyze/legacy-report-builder/layout/filter-dimenson/filter-dimensions.html?lang=sv-SE) som är tillgängliga i steg 2 beror på vilken basrapport du valde i steg 1 och på konfigurationen för rapportsviten. Dimensionerna är artiklar som korrelerar, underrelaterar eller är en klassificering av den ursprungliga rapporttypen som du valde i fönstret [!UICONTROL Request Wizard: Step 1]. Om du lägger till mer än en dimension i steg 2 skapar du en uppdelning i din databegäran.
 
    Mer information finns i [Lägg till mått och Dimensioner](/help/analyze/legacy-report-builder/layout/c-metrics-dimensions/t-add-metrics-and-dimensions.md).

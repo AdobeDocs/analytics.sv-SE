@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Så här konfigurerar du begärandedatum i realtid:
 
-1. Kontrollera att realtidsrapportering är aktiverat i [administratörsverktygen](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/real-time-reports/t-realtime-admin.html).
+1. Kontrollera att realtidsrapportering är aktiverat i [administratörsverktygen](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/real-time-reports/t-realtime-admin.html?lang=sv-SE).
 1. Klicka på **[!UICONTROL Real-Time Report]** > **[!UICONTROL `<report type>`]** på [!UICONTROL Request Wizard: Step 1]
 
    Välj till exempel en trafikrapport. När du väljer en rapporttyp i realtid visas alternativen för [!UICONTROL Select Time Range].

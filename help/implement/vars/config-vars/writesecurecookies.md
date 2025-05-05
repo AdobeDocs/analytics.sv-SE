@@ -17,7 +17,7 @@ Variabeln `writeSecureCookies` gör att AppMeasurementet kan ange [säkra cookie
 
 `writeSecureCookies` gäller endast cookies som anges av AppMeasurementet JavaScript (`s_fid`, `s_cc` och `s_sq`). Cookies som anges av `https`-svar (`s_vi` och `s_ecid`) kan anges till &quot;secure&quot; genom att kontakta Adobe kundtjänst.
 
-Läs mer om analyscookies [här](https://experienceleague.adobe.com/docs/core-services/interface/administration/ec-cookies/cookies-analytics.html).
+Läs mer om analyscookies [här](https://experienceleague.adobe.com/docs/core-services/interface/administration/ec-cookies/cookies-analytics.html?lang=sv-SE).
 
 >[!WARNING]
 >

@@ -21,7 +21,7 @@ Report Builder 5.2 och senare stöder Adobe Analytics beräknade värden. Alla b
 >
 >Befintliga arbetsböcker kan peka på begäranden med äldre metriska ID:n. När du använder Report Builder 5.2 konverteras dessa äldre mätnings-ID:n till det nya globala ID:t. Om du delar den här arbetsboken med en användare av Report Builder v5.1 eller tidigare, kan den användaren inte se de beräknade måtten.
 
-Om du vill veta mer om hur du skapar och hanterar beräknade mått med nya Calculated Metric Builder och Manager kan du läsa [Calculated Metrics](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/cm-overview.html) Guide.
+Om du vill veta mer om hur du skapar och hanterar beräknade mått med nya Calculated Metric Builder och Manager kan du läsa [Calculated Metrics](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/cm-overview.html?lang=sv-SE) Guide.
 
 I steg 2 i begärandeguiden kan du filtrera och använda beräknade värden.
 

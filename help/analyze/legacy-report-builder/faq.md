@@ -37,4 +37,4 @@ Report Builder stöder arbetsböcker upp till följande begränsningar:
 
 ## Hur vet jag om jag har tillgång till Report Builder? {#access}
 
-Du måste beviljas åtkomst via Report Builder av din Adobe Analytics-administratör. Admin ställer in produktprofiler i [Adobe Admin Console](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-console/home). Be din administratör att ge dig åtkomst.
+Du måste beviljas åtkomst via Report Builder av din Adobe Analytics-administratör. Admin ställer in produktprofiler i [Adobe Admin Console](https://experienceleague.adobe.com/sv/docs/analytics/admin/admin-console/home). Be din administratör att ge dig åtkomst.

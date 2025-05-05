@@ -31,7 +31,7 @@ return false;
 
 ## Avbryt sändning av en händelse som implementerar Web SDK manuellt
 
-Använd motringningen `onBeforeEventSend` och returnera `false`. Mer information finns i [Ändra händelser globalt](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/tracking-events.html#modifying-events-globally) i Web SDK-dokumentationen.
+Använd motringningen `onBeforeEventSend` och returnera `false`. Mer information finns i [Ändra händelser globalt](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/tracking-events.html?lang=sv-SE#modifying-events-globally) i Web SDK-dokumentationen.
 
 ```js
 alloy("configure"), {

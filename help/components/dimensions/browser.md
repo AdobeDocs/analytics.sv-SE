@@ -19,7 +19,7 @@ ht-degree: 0%
 Den här dimensionen refererar till en uppslagstabell som är intern för Adobe. Uppslagsvärdet baseras på HTTP-huvudet `User-Agent` i bildbegäranden. Adobe samarbetar med [DeviceAtlas](https://deviceatlas.com/) för att upprätthålla sökningar mellan användaragenten och webbläsaren.
 
 * För implementeringar av AppMeasurement fungerar den här dimensionen som standard.
-* Aktivera [!UICONTROL Device Lookup] när [konfigurerar ett datastream](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html) för Web SDK-implementeringar.
+* Aktivera [!UICONTROL Device Lookup] när [konfigurerar ett datastream](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=sv-SE) för Web SDK-implementeringar.
 
 ## Dimensioner
 

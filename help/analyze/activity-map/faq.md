@@ -138,7 +138,7 @@ Ja. På grund av begränsningar i den virtuella rapportsviten är dock inte Acti
 Vilken metod som ska avaktiveras för Activity Map beror på vilken implementeringstyp du har:
 
 * **Webbtillägg för SDK**: Avmarkera kryssrutorna **[!UICONTROL Collect internal link clicks]**, **[!UICONTROL Collect external link clicks]** och **[!UICONTROL Collect download link clicks]** i inställningarna för tilläggskonfigurationen.
-* **Webbbibliotek för SDK JavaScript**: Ange [`clickCollectionEnabled`](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/clickcollectionenabled) till `false`.
+* **Webbbibliotek för SDK JavaScript**: Ange [`clickCollectionEnabled`](https://experienceleague.adobe.com/sv/docs/experience-platform/web-sdk/commands/configure/clickcollectionenabled) till `false`.
 * **Analystillägg**: Avmarkera kryssrutan **[!UICONTROL Use Activity Map]** i inställningarna för tilläggskonfigurationen.
 * **AppMeasurement**: Ta bort eller kommentera bort modulen Activity Map i `AppMeasurement.js`, eller skriv över modulfunktionsanropet med en tom brödtext:
 

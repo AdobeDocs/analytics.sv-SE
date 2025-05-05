@@ -20,7 +20,7 @@ Analysis Workspace erbjuder många sätt att dela ett projekt med dina användar
 
 Om du vill dela en länk till ett projekt går du till det projekt du vill dela och väljer sedan [!UICONTROL **Dela**] > [!UICONTROL **Dela med Workspace-användare**] > [!UICONTROL **Dela via länk**]. Användare som du delar länken med måste logga in.
 
-Om mottagaren av länken inte har tilldelats en [projektroll](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html) får administratörer **[!UICONTROL Edit original]** och icke-administratörer **[!UICONTROL Edit copy]**-upplevelser.
+Om mottagaren av länken inte har tilldelats en [projektroll](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html?lang=sv-SE) får administratörer **[!UICONTROL Edit original]** och icke-administratörer **[!UICONTROL Edit copy]**-upplevelser.
 
 ## Få en skrivskyddad länk att dela med vem som helst
 
@@ -35,6 +35,6 @@ Du kan också dela en länk till en viss del av ett projekt, till exempel en pan
 * Högerklicka på **[!UICONTROL Get panel link]** från valfritt panelhuvud
 * Högerklicka på **[!UICONTROL Get visualization link]** från en tabell eller ett visualiseringshuvud
 
-[Titta på videon](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/visualizations/intra-linking-in-analysis-workspace.html) om hur du skapar länkar och använder dem för att dirigera mottagare till specifika delar av projektet.
+[Titta på videon](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/visualizations/intra-linking-in-analysis-workspace.html?lang=sv-SE) om hur du skapar länkar och använder dem för att dirigera mottagare till specifika delar av projektet.
 
 ![](assets/get-viz-link.png)

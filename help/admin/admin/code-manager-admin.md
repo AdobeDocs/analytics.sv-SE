@@ -25,5 +25,5 @@ När du har hämtat biblioteket måste du konfigurera koden så att den skickar 
 |--- |--- |
 | [!UICONTROL Name] | Namnet matchar plattformen där du vill aktivera datainsamling. Inbyggda bibliotek tillhandahålls för varje plattform som visas i den här kolumnen. |
 | [!UICONTROL Type] | Typ av program som kan mätas med varje bibliotek. |
-| [!UICONTROL Version] | Lista den senaste versionen av biblioteket. Klicka på versionsnumret för att visa [versionshistoriken](https://experienceleague.adobe.com/docs/analytics/implementation/appmeasurement-updates.html). |
+| [!UICONTROL Version] | Lista den senaste versionen av biblioteket. Klicka på versionsnumret för att visa [versionshistoriken](https://experienceleague.adobe.com/docs/analytics/implementation/appmeasurement-updates.html?lang=sv-SE). |
 | [!UICONTROL Documentation] | Visa biblioteksreferensdokumentationen. |

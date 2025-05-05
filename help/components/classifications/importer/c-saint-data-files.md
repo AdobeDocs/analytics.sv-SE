@@ -92,7 +92,7 @@ En datafil måste följa följande strukturregler:
 
 >[!MORELIKETHIS]
 >
->* [Vanliga överföringsproblem](https://helpx.adobe.com/analytics/kb/common-saint-upload-issues.html)
+>* [Vanliga överföringsproblem](https://helpx.adobe.com/se/analytics/kb/common-saint-upload-issues.html)
 
 ## Kolumnrubrikformat
 
@@ -158,7 +158,7 @@ Dessa tecken har en speciell betydelse i en datafil. Undvik om möjligt att anv�
 
 Kampanjdatum är vanligtvis intervall (start- och slutdatum) som associeras med enskilda kampanjer. Datum ska anges i formatet ÅÅÅ/MM/DD. Exempel: 2013/06/15-2013/06/30.
 
-Mer information finns i [Konverteringsklassificeringar](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/conversion-variables/conversion-classifications.html).
+Mer information finns i [Konverteringsklassificeringar](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/conversion-variables/conversion-classifications.html?lang=sv-SE).
 
 >[!NOTE]
 >
@@ -201,4 +201,4 @@ vilken kolumn som datumintervallet ska anges i.
 
 ## Felsöka klassificeringar
 
-* [Vanliga problem vid överföring](https://helpx.adobe.com/analytics/kb/common-saint-upload-issues.html): Kunskapsbasartikeln som beskriver problem som uppstår med felaktiga filformat och filinnehåll.
+* [Vanliga problem vid överföring](https://helpx.adobe.com/se/analytics/kb/common-saint-upload-issues.html): Kunskapsbasartikeln som beskriver problem som uppstår med felaktiga filformat och filinnehåll.

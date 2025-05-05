@@ -39,7 +39,7 @@ Trots alla ändringar och konfigurationer som gjorts hittills har ingen kod publ
 
 1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med dina inloggningsuppgifter för AdobeID.
 2. Klicka på den taggegenskap som du tänker implementera på webbplatsen.
-3. Klicka på fliken **[!UICONTROL Publishing Flow]** och sedan på **[!UICONTROL Add Library]**. Mer information om den här sidan finns i [Översikt över publicering](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html) i taggdokumentationen.
+3. Klicka på fliken **[!UICONTROL Publishing Flow]** och sedan på **[!UICONTROL Add Library]**. Mer information om den här sidan finns i [Översikt över publicering](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html?lang=sv-SE) i taggdokumentationen.
 4. Namnge biblioteket `'Initial changes'` och välj utvecklingsmiljö.
 5. Klicka på **[!UICONTROL Add All Changed Resources]**, som automatiskt listar Adobe Analytics, identitetstjänsten och kärnan.
 6. Klicka på **[!UICONTROL Save]**.

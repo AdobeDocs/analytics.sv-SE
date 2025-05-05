@@ -24,17 +24,17 @@ De anslutningsalternativ som tas bort anses i allmänhet vara föråldrade och a
 
 Följande funktioner erbjuder ett alternativ för att överföra data till Adobe Analytics med SFTP.
 
-* [Klassificeringar](https://experienceleague.adobe.com/docs/analytics/export/ftp-and-sftp/set-up-ftp-accounts/ftp-saint.html)
+* [Klassificeringar](https://experienceleague.adobe.com/docs/analytics/export/ftp-and-sftp/set-up-ftp-accounts/ftp-saint.html?lang=sv-SE)
 
-* [Kundattribut](https://experienceleague.adobe.com/docs/core-services/interface/services/customer-attributes/attributes.html)
+* [Kundattribut](https://experienceleague.adobe.com/docs/core-services/interface/services/customer-attributes/attributes.html?lang=sv-SE)
 
-* [Datafeeds](https://experienceleague.adobe.com/docs/analytics/export/ftp-and-sftp/set-up-ftp-accounts/ftp-datafeeds.html)
+* [Datafeeds](https://experienceleague.adobe.com/docs/analytics/export/ftp-and-sftp/set-up-ftp-accounts/ftp-datafeeds.html?lang=sv-SE)
 
-* [Datakällor](https://experienceleague.adobe.com/docs/analytics/export/ftp-and-sftp/set-up-ftp-accounts/ftp-datasources.html)
+* [Datakällor](https://experienceleague.adobe.com/docs/analytics/export/ftp-and-sftp/set-up-ftp-accounts/ftp-datasources.html?lang=sv-SE)
 
-* [Levererade Data Warehouse-rapporter](https://experienceleague.adobe.com/docs/analytics/export/ftp-and-sftp/set-up-ftp-accounts/ftp-dw-reports.html)
+* [Levererade Data Warehouse-rapporter](https://experienceleague.adobe.com/docs/analytics/export/ftp-and-sftp/set-up-ftp-accounts/ftp-dw-reports.html?lang=sv-SE)
 
-* Dessutom kan vissa anpassade implementeringar som skapats via [ingenjörstjänster](https://experienceleague.adobe.com/docs/analytics/export/ftp-and-sftp/set-up-ftp-accounts/ftp-eng-services.html) använda SFTP för att utbyta data med Adobe.
+* Dessutom kan vissa anpassade implementeringar som skapats via [ingenjörstjänster](https://experienceleague.adobe.com/docs/analytics/export/ftp-and-sftp/set-up-ftp-accounts/ftp-eng-services.html?lang=sv-SE) använda SFTP för att utbyta data med Adobe.
 
 ## Vilka specifika ändringar kommer att ingå i den här uppdateringen?
 

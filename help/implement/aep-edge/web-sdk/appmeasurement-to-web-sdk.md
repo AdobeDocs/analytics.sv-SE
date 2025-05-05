@@ -28,7 +28,7 @@ Att använda den här migreringsmetoden har både fördelar och nackdelar. Väg 
 Adobe rekommenderar att du följer den här implementeringsvägen i följande scenarier:
 
 * Du har en befintlig implementering som använder Adobe Analytics AppMeasurement JavaScript-biblioteket. Om du har en implementering med taggtillägget Adobe Analytics följer du [Migrera från Adobe Analytics-taggtillägget till Web SDK-taggtillägget](analytics-extension-to-web-sdk.md) i stället.
-* Du tänker använda Customer Journey Analytics i framtiden, men vill inte ersätta din Analytics-implementering med en Web SDK-implementering från grunden. Att ersätta implementeringen från grunden i Web SDK kräver mest arbete, men erbjuder även den mest livskraftiga långsiktiga implementeringsarkitekturen. Om din organisation vill använda en ren Web SDK-implementering läser du [Importera data via Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-data-ingestion/ingest-use-guides/edge-network/aepwebsdk) i användarhandboken för Customer Journey Analytics.
+* Du tänker använda Customer Journey Analytics i framtiden, men vill inte ersätta din Analytics-implementering med en Web SDK-implementering från grunden. Att ersätta implementeringen från grunden i Web SDK kräver mest arbete, men erbjuder även den mest livskraftiga långsiktiga implementeringsarkitekturen. Om din organisation vill använda en ren Web SDK-implementering läser du [Importera data via Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-data-ingestion/ingest-use-guides/edge-network/aepwebsdk) i användarhandboken för Customer Journey Analytics.
 
 ## Steg som krävs för att migrera till Web SDK
 
@@ -55,15 +55,15 @@ Din datastream är nu redo att ta emot och skicka data till Adobe Analytics. Obs
 
 +++**2. Installera JavaScript-biblioteket för Web SDK**
 
-Referera till den senaste versionen av `alloy.js` så att dess metodanrop kan användas. Mer information och kodblock som ska användas finns i [Installera Web SDK med JavaScript-biblioteket](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/library).
+Referera till den senaste versionen av `alloy.js` så att dess metodanrop kan användas. Mer information och kodblock som ska användas finns i [Installera Web SDK med JavaScript-biblioteket](https://experienceleague.adobe.com/sv/docs/experience-platform/web-sdk/install/library).
 
 +++
 
 +++**3. Konfigurera Web SDK**
 
-Konfigurera implementeringen så att den pekar på det datastöd som skapades i föregående steg med hjälp av Web SDK-kommandot [`configure`](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/overview). Kommandot `configure` måste anges på alla sidor, så du kan inkludera det bredvid bibliotekets installationskod.
+Konfigurera implementeringen så att den pekar på det datastöd som skapades i föregående steg med hjälp av Web SDK-kommandot [`configure`](https://experienceleague.adobe.com/sv/docs/experience-platform/web-sdk/commands/configure/overview). Kommandot `configure` måste anges på alla sidor, så du kan inkludera det bredvid bibliotekets installationskod.
 
-Använd egenskaperna [`datastreamId`](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/datastreamid) och [`orgId`](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/orgid) i Web SDK `configure`-kommandot:
+Använd egenskaperna [`datastreamId`](https://experienceleague.adobe.com/sv/docs/experience-platform/web-sdk/commands/configure/datastreamid) och [`orgId`](https://experienceleague.adobe.com/sv/docs/experience-platform/web-sdk/commands/configure/orgid) i Web SDK `configure`-kommandot:
 
 * Ange `datastreamId` till det datastream-ID som hämtats från föregående steg.
 * Ange `orgId` till din organisations IMS-organisation.
@@ -75,7 +75,7 @@ alloy("configure", {
 });
 ```
 
-Du kan ange andra egenskaper i kommandot [`configure`](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/overview) beroende på organisationens implementeringskrav.
+Du kan ange andra egenskaper i kommandot [`configure`](https://experienceleague.adobe.com/sv/docs/experience-platform/web-sdk/commands/configure/overview) beroende på organisationens implementeringskrav.
 
 +++
 
@@ -116,7 +116,7 @@ var dataObj = {data:{__adobe:{analytics:{...a}}}};
 
 +++**5. Uppdatera metodanrop för att använda Web SDK**
 
-Uppdatera alla instanser där du anropar [`s.t()`](../../vars/functions/t-method.md) och [`s.tl()`](../../vars/functions/tl-method.md) och ersätt dem med kommandot [`sendEvent`](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/sendevent/overview). Det finns tre scenarier:
+Uppdatera alla instanser där du anropar [`s.t()`](../../vars/functions/t-method.md) och [`s.tl()`](../../vars/functions/tl-method.md) och ersätt dem med kommandot [`sendEvent`](https://experienceleague.adobe.com/sv/docs/experience-platform/web-sdk/commands/sendevent/overview). Det finns tre scenarier:
 
 * **Spårning av sidvy**: Ersätt spårningsanropet för sidvyn med kommandot Web SDK `sendEvent`:
 
@@ -128,7 +128,7 @@ Uppdatera alla instanser där du anropar [`s.t()`](../../vars/functions/t-method
   alloy("sendEvent", dataObj);
   ```
 
-* **Automatisk länkspårning**: Konfigurationsegenskapen [`clickCollectionEnabled`](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/clickcollectionenabled) är aktiverad som standard. Den ställer automatiskt in rätt länkspårningsvariabler för att skicka data till Adobe Analytics. Om du vill inaktivera automatisk länkspårning anger du den här egenskapen till `false` i kommandot [`configure`](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/overview).
+* **Automatisk länkspårning**: Konfigurationsegenskapen [`clickCollectionEnabled`](https://experienceleague.adobe.com/sv/docs/experience-platform/web-sdk/commands/configure/clickcollectionenabled) är aktiverad som standard. Den ställer automatiskt in rätt länkspårningsvariabler för att skicka data till Adobe Analytics. Om du vill inaktivera automatisk länkspårning anger du den här egenskapen till `false` i kommandot [`configure`](https://experienceleague.adobe.com/sv/docs/experience-platform/web-sdk/commands/configure/overview).
 
 * **Manuell länkspårning**: Web SDK har inte olika kommandon mellan sidvyanrop och icke-sidvisningsanrop. Ange den skillnaden i nyttolastobjektet.
 

@@ -19,4 +19,4 @@ När summorna visas beräknas de ofta på serversidan, vilket innebär att den t
 * När [statiska rader](/help/analyze/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md) används i frihandstabeller och alternativet **[!UICONTROL Show as sum of current rows]** (standard) är markerat.
 * I [Donutvisualisering](/help/analyze/analysis-workspace/visualizations/donut.md), så att tal blir upp till 100 %.
 
-Mer information om totalsummor i Analysis Workspace finns på [Workspace totals](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/workspace-totals.html#static-row-total).
+Mer information om totalsummor i Analysis Workspace finns på [Workspace totals](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/workspace-totals.html?lang=sv-SE#static-row-total).

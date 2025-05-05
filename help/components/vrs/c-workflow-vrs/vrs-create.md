@@ -65,7 +65,7 @@ Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Justera en besök
 ![](assets/components.png)
 
 1. På fliken [!UICONTROL Components] markerar du kryssrutan för att tillämpa urval för att inkludera, exkludera och byta namn på komponenter för den här virtuella rapportsviten i Analysis Workspace.
-Mer information om gruppering av virtuella rapportsviter finns i [Komponentstrukturering för virtuell rapportserie](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-components.html#virtual-report-suites).
+Mer information om gruppering av virtuella rapportsviter finns i [Komponentstrukturering för virtuell rapportserie](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-components.html?lang=sv-SE#virtual-report-suites).
 
 1. Dra komponenter (dimensioner, mått, segment eller datumintervall) som du vill inkludera i den virtuella rapportsviten till avsnittet [!UICONTROL Included Components].
 

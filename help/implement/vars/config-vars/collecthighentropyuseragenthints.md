@@ -17,7 +17,7 @@ Högupplösta klienttips används av Adobe Analytics för att förbättra enhets
 
 ## Samla in tips för entropi med Web SDK
 
-Högupplösta klienttips ingår i kontextkategorierna i Web SDK. Mer information finns i [Konfigurera Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html).
+Högupplösta klienttips ingår i kontextkategorierna i Web SDK. Mer information finns i [Konfigurera Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html?lang=sv-SE).
 
 ## Samla in entropiska tips med Adobe Analytics Extension
 

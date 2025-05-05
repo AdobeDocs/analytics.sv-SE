@@ -24,7 +24,7 @@ Adobe Analytics tillhandahåller följande komplexa segmenterings- och prediktiv
 
 * [Flödesanalys](/help/analyze/analysis-workspace/visualizations/c-flow/flow.md)
 
-* [Avancerad segmentering](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-home.html)
+* [Avancerad segmentering](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-home.html?lang=sv-SE)
 
 
 ## Marknadsföringsanalys
@@ -33,9 +33,9 @@ Adobe Analytics hjälper organisationer att förstå var kunderna interagerar me
 
 Följande viktiga funktioner i Adobe Analytics:
 
-* [Datainsamling för flera kanaler](https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/reporting-interface/overview-data-collection.html)
+* [Datainsamling för flera kanaler](https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/reporting-interface/overview-data-collection.html?lang=sv-SE)
 
-* [Integrering av offlinedata](https://experienceleague.adobe.com/docs/analytics/import/data-sources/overview.html)
+* [Integrering av offlinedata](https://experienceleague.adobe.com/docs/analytics/import/data-sources/overview.html?lang=sv-SE)
 
 * [Ad hoc-analys i Analysis Workspace](/help/analyze/analysis-workspace/home.md)
 

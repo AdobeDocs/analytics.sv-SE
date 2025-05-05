@@ -37,7 +37,7 @@ Web SDK kan inte koppla en funktion efter att data har kompilerats, men innan de
 
 ## Förspåra återanrop manuellt genom att implementera Web SDK
 
-Web SDK kan inte koppla en funktion efter att data har kompilerats, men innan den skickas till Adobe. Du kan emellertid använda `onBeforeEventSend` för att registrera en funktion som ska köras precis innan data skickas, ungefär som `doPlugins`. Mer information finns i [Ändra händelser globalt](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/tracking-events.html#modifying-events-globally) i Web SDK-dokumentationen.
+Web SDK kan inte koppla en funktion efter att data har kompilerats, men innan den skickas till Adobe. Du kan emellertid använda `onBeforeEventSend` för att registrera en funktion som ska köras precis innan data skickas, ungefär som `doPlugins`. Mer information finns i [Ändra händelser globalt](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/tracking-events.html?lang=sv-SE#modifying-events-globally) i Web SDK-dokumentationen.
 
 ```js
 // Set the trackingCode XDM field to "New value"

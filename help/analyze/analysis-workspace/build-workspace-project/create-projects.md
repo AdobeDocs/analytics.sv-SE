@@ -56,7 +56,7 @@ I följande avsnitt beskrivs hur du skapar ett projekt och börjar lägga till d
 
 ## Lägga till paneler i projektet {#panels}
 
-[Paneler](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html) är grunden till alla projekt i Analysis Workspace. Paneler används för att ordna innehållet (visualiseringar och komponenter) i ett projekt.
+[Paneler](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html?lang=sv-SE) är grunden till alla projekt i Analysis Workspace. Paneler används för att ordna innehållet (visualiseringar och komponenter) i ett projekt.
 
 Många av panelerna i Analysis Workspace genererar en komplett uppsättning analyser baserade på några få indata från användarna.
 
@@ -74,7 +74,7 @@ Så här lägger du till en panel:
 
 ## Lägg till visualiseringar i projektet
 
-[Visualiseringar](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html) (t.ex. en frihandstabell, ett stapeldiagram eller ett linjediagram) kan användas för att visuellt ge liv åt data.
+[Visualiseringar](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html?lang=sv-SE) (t.ex. en frihandstabell, ett stapeldiagram eller ett linjediagram) kan användas för att visuellt ge liv åt data.
 
 >[!TIP]
 >

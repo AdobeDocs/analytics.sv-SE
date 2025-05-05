@@ -85,13 +85,13 @@ Följande implementeringsmetoder är tillgängliga för din **mobilapp**:
 * [Adobe Debugger](validate/debugger.md)
 * [Skapa en taggegenskap i Experience Platform](launch/create-analytics-property.md)
 * [AppMeasurement](appmeasurement-updates.md)
-* [Konfigurera Adobe Analytics med Platform Web SDK, genomgång](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-analytics.html)
-* [Implementera Adobe Experience Cloud i mobilappar, självstudiekurs](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html)
+* [Konfigurera Adobe Analytics med Platform Web SDK, genomgång](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-analytics.html?lang=sv-SE)
+* [Implementera Adobe Experience Cloud i mobilappar, självstudiekurs](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=sv-SE)
 
 
 ## Viktiga Analytics-resurser
 
-* [Kontakta kundtjänst](https://experienceleague.adobe.com/?support-solution=Analytics&amp;lang=sv#support)
+* [Kontakta kundtjänst](https://experienceleague.adobe.com/sv?support-solution=Analytics&amp;lang=sv#support)
 * [Adobe Analytics Community på Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community)
 * [Adobe Analytics-resurser](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-resources/m-p/276666)
 * [Senaste versionsinformation](../release-notes/latest.md)

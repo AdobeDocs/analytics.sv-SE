@@ -118,7 +118,7 @@ Gå tillbaka till guiden för Data Source för instruktioner och överför filen
 
 Det kan vara praktiskt att lägga till beräknade värden när man ska fatta beslut per klick.
 
-Du kan till exempel lägga till följande [beräknade mått](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html#calculated-metrics):
+Du kan till exempel lägga till följande [beräknade mått](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html?lang=sv-SE#calculated-metrics):
 
 | Namn | Formel | Mätningstyp | Beskrivning |
 | --- | --- | --- | --- |

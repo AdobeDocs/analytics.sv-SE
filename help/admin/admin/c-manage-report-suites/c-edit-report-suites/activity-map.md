@@ -28,6 +28,6 @@ Gör det möjligt för Analytics att samla in användaraktivitet från Activity 
   | Activity Map Links | Visar alla samlade länkar på hela webbplatsen. |
   | Activity Map Links &amp; Region | Visar alla samlade länkar med deras region på hela webbplatsen. |
 
-Information som ska fyllas i finns i [Activity Map-dokumentationen](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/activity-map.html) för fullständiga implementeringsinstruktioner.
+Information som ska fyllas i finns i [Activity Map-dokumentationen](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/activity-map.html?lang=sv-SE) för fullständiga implementeringsinstruktioner.
 
 <!--The content in this article is duplicated with the content in the Integration guide (activitmap-reporting.md)-->

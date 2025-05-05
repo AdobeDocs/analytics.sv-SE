@@ -46,7 +46,7 @@ Mer information om hur du ställer in etiketterna finns i [Data i etikettrapport
 ## Förutsättningar {#section_3C766371CE0641C0821FE8E750E5AE0C}
 
 * Bekanta dig med [GDPR-terminologi.](/help/admin/c-data-governance/gdpr-terminology.md)
-* Koppla ditt inloggningsföretag till en Experience Cloud-organisation, om det inte redan är det. Kontakta Adobes kundtjänst och se [Organisationer och kontolänkning.](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html)
+* Koppla ditt inloggningsföretag till en Experience Cloud-organisation, om det inte redan är det. Kontakta Adobes kundtjänst och se [Organisationer och kontolänkning.](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html?lang=sv-SE)
 * Ange en policy för datalagring för varje rapportsvit så att GDPR-begäranden om borttagning och åtkomst kan hanteras.
 
   >[!NOTE]

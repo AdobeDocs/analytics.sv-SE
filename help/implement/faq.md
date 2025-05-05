@@ -21,7 +21,7 @@ Identitetstjänsten tilldelar en unik, beständig identifierare som kan delas ti
 
 ## Hur implementerar jag videospårning med pulsslag?
 
-Se [Mäta ljud och video i Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html).
+Se [Mäta ljud och video i Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=sv-SE).
 
 ## Kan ett avbrott i tjänsten i Adobe påverka prestanda?
 

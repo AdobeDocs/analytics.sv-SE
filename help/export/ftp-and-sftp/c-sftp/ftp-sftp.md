@@ -19,7 +19,7 @@ SFTP är ett säkert protokoll för överföring av data som säkerställer att 
 
 Det innebär att Adobe-servrar&quot;skickar&quot; filen till dina servrar. I grund och botten levererar vi det till din slutpunkt.
 
-[Data Warehouse](/help/export/ftp-and-sftp/c-sftp/ftp-sftp-dw.md) och [Analysdatafeed](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-overview.html) kan skicka data via SFTP.
+[Data Warehouse](/help/export/ftp-and-sftp/c-sftp/ftp-sftp-dw.md) och [Analysdatafeed](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-overview.html?lang=sv-SE) kan skicka data via SFTP.
 
 Report Builder **kan inte** skicka data via SFTP.
 

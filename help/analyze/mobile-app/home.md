@@ -21,9 +21,9 @@ Mer information om Adobe Analytics [!UICONTROL dashboards] finns i följande res
 
    * [Skapa styrkort](/help/analyze/mobile-app/create-scorecard.md)
    * [Hjälper chefer med appkonfiguration och användning av appen](/help/analyze/mobile-app/set-up-execs.md)
-   * Om du vill se en videoöversikt över kurateringen kan du läsa [Adobe Analytics dashboards Scorecard Builder](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/additional-tools/analytics-dashboards/adobe-analytics-dashboards-scorecard-builder.html).
+   * Om du vill se en videoöversikt över kurateringen kan du läsa [Adobe Analytics dashboards Scorecard Builder](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/additional-tools/analytics-dashboards/adobe-analytics-dashboards-scorecard-builder.html?lang=sv-SE).
 
 
 * [Snabbstartsguide för verkställande användare](/help/analyze/mobile-app/executive.md): Den här guiden är avsedd att hjälpa verkställande användare att läsa och tolka styrkort på [!UICONTROL dashboards]. Med appen kan chefsanvändare snabbt och enkelt visa en bred återgivning av viktiga sammanfattningsdata på sina egna mobila enheter.
 
-   * En videofilm som markerar den här informationen finns i [Adobe Analytics-instrumentpaneler i appupplevelsen](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/additional-tools/analytics-dashboards/adobe-analytics-dashboards-in-app-experience.html).
+   * En videofilm som markerar den här informationen finns i [Adobe Analytics-instrumentpaneler i appupplevelsen](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/additional-tools/analytics-dashboards/adobe-analytics-dashboards-in-app-experience.html?lang=sv-SE).

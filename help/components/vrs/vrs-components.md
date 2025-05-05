@@ -77,4 +77,4 @@ Använd komponentgrupper för att göra satsvis komponenttillägg i din virtuell
 
 ## Workspace Behavior {#section_6C32F8B642804C0097FCB14E21028D4A}
 
-Mer information om kurering i Analysis Workspace finns i [Kuratera och dela ett projekt](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/curate.html).
+Mer information om kurering i Analysis Workspace finns i [Kuratera och dela ett projekt](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/curate.html?lang=sv-SE).

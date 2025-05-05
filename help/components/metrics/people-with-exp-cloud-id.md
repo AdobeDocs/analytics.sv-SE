@@ -12,11 +12,11 @@ ht-degree: 0%
 
 # Personer med Experience Cloud ID
 
-Människor med Experience Cloud-ID är ett [helhetsvärde för analys](../cda/overview.md) som visar antalet [Personer](people.md) som identifieras av Adobe med hjälp av [Experience Cloud ID-tjänsten](https://experienceleague.adobe.com/docs/id-service/using/home.html).
+Människor med Experience Cloud-ID är ett [helhetsvärde för analys](../cda/overview.md) som visar antalet [Personer](people.md) som identifieras av Adobe med hjälp av [Experience Cloud ID-tjänsten](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=sv-SE).
 
 ## Hur det här måttet beräknas
 
-Med tanke på varje [person](people.md) (identifierad eller oidentifierad) ökar detta [mått](overview.md) om träffen innehåller frågesträngen `mid` (baserad på cookien [`s_ecid`](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html)).
+Med tanke på varje [person](people.md) (identifierad eller oidentifierad) ökar detta [mått](overview.md) om träffen innehåller frågesträngen `mid` (baserad på cookien [`s_ecid`](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html?lang=sv-SE)).
 
 Du kan skapa det beräknade måttet `[People with ECID] ÷ [People]` om du vill få antalet besökare på din webbplats med ID-tjänsten.
 

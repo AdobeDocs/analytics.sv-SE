@@ -32,7 +32,7 @@ Eftersom botar dessutom morfar snabbt erbjuder Adobe flera andra kraftfulla funk
 
 ### Steg 1: Skicka ditt besökares Experience Cloud-ID till ett nytt deklarerat ID
 
-Börja med att skapa ett nytt deklarerat ID i [People Core Service](https://experienceleague.adobe.com/docs/core-services/interface/audiences/audience-library.html). Skicka besökarens Experience Cloud-ID till detta nya deklarerade ID, som kan göras snabbt och enkelt med [taggar i Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html). Låt oss använda namnet &quot;ECID&quot; för det deklarerade ID:t.
+Börja med att skapa ett nytt deklarerat ID i [People Core Service](https://experienceleague.adobe.com/docs/core-services/interface/audiences/audience-library.html?lang=sv-SE). Skicka besökarens Experience Cloud-ID till detta nya deklarerade ID, som kan göras snabbt och enkelt med [taggar i Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html?lang=sv-SE). Låt oss använda namnet &quot;ECID&quot; för det deklarerade ID:t.
 
 ![](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/bot-removal/assets/bot-cust-attr-setup.png)
 
@@ -40,11 +40,11 @@ Så här kan detta ID hämtas via dataelement. Fyll i ditt Experience Cloud OrgI
 
 ```return Visitor.getInstance("REPLACE_WITH_YOUR_ECORG_ID@AdobeOrg").getExperienceCloudVisitorID();```
 
-När det här dataelementet har konfigurerats följer du [dessa anvisningar](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html) för att skicka deklarerade ID:n till ECID-verktyget med hjälp av taggar i Adobe Experience Platform.
+När det här dataelementet har konfigurerats följer du [dessa anvisningar](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html?lang=sv-SE) för att skicka deklarerade ID:n till ECID-verktyget med hjälp av taggar i Adobe Experience Platform.
 
 ### Steg 2: Använd segmentering för att identifiera bottnar
 
-Nu när besökarens ECID har skickats till ett deklarerat ID kan du använda [segmentering i Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/components/segments/t-freeform-project-segment.html) för att identifiera besökare som beter sig som robotar. Boten definieras ofta av deras beteende: enstaka besök, ovanliga användaragenter, okänd information om enhet/webbläsare, inga hänvisare, nya besökare, ovanliga landningssidor osv. Använd kraften i Workspace fördjupningar och segmentering för att identifiera de robotar som har undgått IAB-filtrering och era regler för robotar i rapportsviten. Här är till exempel en skärmbild av ett segment som du kan använda:
+Nu när besökarens ECID har skickats till ett deklarerat ID kan du använda [segmentering i Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/components/segments/t-freeform-project-segment.html?lang=sv-SE) för att identifiera besökare som beter sig som robotar. Boten definieras ofta av deras beteende: enstaka besök, ovanliga användaragenter, okänd information om enhet/webbläsare, inga hänvisare, nya besökare, ovanliga landningssidor osv. Använd kraften i Workspace fördjupningar och segmentering för att identifiera de robotar som har undgått IAB-filtrering och era regler för robotar i rapportsviten. Här är till exempel en skärmbild av ett segment som du kan använda:
 
 ![](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/bot-removal/assets/bot-filter-seg1.png)
 

@@ -34,12 +34,12 @@ Följande variabler introducerades för infogning av gruppdata, som tidigare int
 * **`aamlh`**: Platstips för Adobe Audience Manager.
 * **`contextData.key`**: [Kontextdatavariabler](/help/implement/vars/page-vars/contextdata.md).
 * **`customerID`**: Experience Cloud ID-tjänstvariabler. Inkluderar `id`, `authState` och `isMCSeed`.
-* **`hints`**: [Variabler för klienttips](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/user-agent-client-hints.html). Innefattar `bitness`, `brands`, `mobile`, `model`, `platform`, `platformversion` och `wow64`.
+* **`hints`**: [Variabler för klienttips](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/user-agent-client-hints.html?lang=sv-SE). Innefattar `bitness`, `brands`, `mobile`, `model`, `platform`, `platformversion` och `wow64`.
 * **`ipaddress`**: Besökarens IP-adress.
 * **`language`**: Dimensionen [Språk](/help/components/dimensions/language.md).
 * **`list1`** - **`list3`**: [Visa variabler](/help/implement/vars/page-vars/list.md).
 * **`marketingCloudVisitorID`**: Besökarens Experience Cloud-ID.
-* **`tnta`**: Måldatanyttolast används i [Analytics för Target](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html)-integreringar.
+* **`tnta`**: Måldatanyttolast används i [Analytics för Target](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=sv-SE)-integreringar.
 * **`trackingServer`**: Variabeln [`trackingServer`](/help/implement/vars/config-vars/trackingserver.md).
 * **`transactionID`**: Variabeln [`transactionID`](/help/implement/vars/page-vars/transactionid.md).
 * **`userAgent`**: Enhetens användaragentsträng.
