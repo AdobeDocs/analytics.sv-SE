@@ -169,7 +169,7 @@ Datumintervallet kan anges i kalkylbladsceller. Använd alternativet **Datuminte
 
 Välj alternativet **Uteslut i dag** om du vill exkludera i dag från ett valt datumintervall. Om du väljer att inkludera idag kan ofullständiga data hämtas för idag.
 
-Om du väljer det här alternativet utesluts den aktuella dagen från alla lägen för datumintervall, inklusive kalenderdatum, rullande datum och anpassade uttryck. ****
+Om du väljer det här alternativet utesluts den aktuella dagen från alla lägen för datumintervall, inklusive kalenderdatum, rullande datum och anpassade uttryck. **&#x200B;**
 
 ## Giltiga datumintervall
 

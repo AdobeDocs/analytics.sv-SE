@@ -36,7 +36,7 @@ I följande avsnitt beskrivs hur du skapar ett projekt och börjar lägga till d
 
    1. Välj [!UICONTROL **Skapa**].
 
-+++
+   +++
 
    +++Skapa ett projekt från en rapport
 
@@ -50,7 +50,7 @@ I följande avsnitt beskrivs hur du skapar ett projekt och börjar lägga till d
 
       Mer information om rapporter finns i&quot;Navigera på fliken Rapporter&quot; på [Adobe Analytics startsida](/help/analyze/landing.md).
 
-+++
+   +++
 
 1. Därefter måste du lägga till paneler, visualiseringar och komponenter i projektet. Lägg först till paneler i ditt projekt i Analysis Workspace, enligt beskrivningen i [Lägg till paneler i projektet](#add-panels-to-the-project). Du kan sedan lägga till visualiseringar i alla paneler. Slutligen kan du lägga till komponenter till valfria paneler eller visualiseringar.
 

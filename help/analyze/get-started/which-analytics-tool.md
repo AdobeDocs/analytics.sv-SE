@@ -104,7 +104,7 @@ Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Jämförelse av v
 **[Rapporterings-API:er](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/reporting-guide.md)** bör användas när de andra visualiseringsalternativen inte uppfyller dina behov. De tre API-alternativen omfattar:
 
 * **Fullt bearbetad**: när du vill ha funktionsrika data (inklusive besök, besökare och segment). Det här är typiska gränssnittsdata från Analytics, som är tillgängliga inom cirka 30-90 minuter. Kan användas via Report Builder.
-* **** Realtid: när du vill visa några mått och dimensioner med några sekunders latens. Detta är begränsade, delvis bearbetade, sammanfattade data som är tillgängliga inom cirka 30 sekunder. Inkluderar unika algoritmer för mest populära, vinnare och förlorare. Kan användas via Report Builder.
+* **&#x200B;**&#x200B;Realtid: när du vill visa några mått och dimensioner med några sekunders latens. Detta är begränsade, delvis bearbetade, sammanfattade data som är tillgängliga inom cirka 30 sekunder. Inkluderar unika algoritmer för mest populära, vinnare och förlorare. Kan användas via Report Builder.
 * **[!UICONTROL Live Stream]**: när du vill ha en ström av delvis bearbetade Analytics-data på träffnivå inom några sekunder efter insamlingen. Detta är delvis bearbetade data som är tillgängliga inom ~30 sekunder. Endast tillgängligt för Analytics Premium. Kräver något sätt att visualisera data, vanligtvis via ett Engineering Services-engagemang.
 
 ## Anpassade lösningar {#custom-solutions}

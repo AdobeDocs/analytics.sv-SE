@@ -98,7 +98,7 @@ Strängen som behöver läggas till i ditt Bing-konto visas nedan. Du måste lä
 
 >[!IMPORTANT]
 >
->Värdet _`<Advertising Analytics ID>`_(i **bold**nedan) är generiskt och **måste ersättas med din specifika konto-ID-sträng**. Du kan hämta din specifika konto-ID-sträng från kontoskärmen under avsnittet Spårning.
+>Värdet _`<Advertising Analytics ID>`_(i **bold**&#x200B;nedan) är generiskt och **måste ersättas med din specifika konto-ID-sträng**. Du kan hämta din specifika konto-ID-sträng från kontoskärmen under avsnittet Spårning.
 
 **Spårningssträng för kampanjer:**
 

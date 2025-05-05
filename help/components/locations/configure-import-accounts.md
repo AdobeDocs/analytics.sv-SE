@@ -70,7 +70,7 @@ Så här konfigurerar du ett molnimport- eller exportkonto:
 
    {style="table-layout:auto"}
 
-+++
+   +++
 
    +++Google Cloud Platform
 
@@ -82,7 +82,7 @@ Så här konfigurerar du ett molnimport- eller exportkonto:
 
    {style="table-layout:auto"}
 
-+++
+   +++
 
    +++Azure SAS
 
@@ -98,7 +98,7 @@ Så här konfigurerar du ett molnimport- eller exportkonto:
 
    {style="table-layout:auto"}
 
-+++
+   +++
 
    +++Azure RBAC
 
@@ -112,7 +112,7 @@ Så här konfigurerar du ett molnimport- eller exportkonto:
 
    {style="table-layout:auto"}
 
-+++
+   +++
 
    +++E-post
 
@@ -128,7 +128,7 @@ Så här konfigurerar du ett molnimport- eller exportkonto:
 
    {style="table-layout:auto"}
 
-+++
+   +++
 
    **Äldre kontotyper**
 
@@ -147,13 +147,13 @@ Så här konfigurerar du ett molnimport- eller exportkonto:
 
    {style="table-layout:auto"}
 
-+++
+   +++
 
    +++SFTP
 
    SFTP-stöd för dataflöden finns tillgängligt. Kräver att en SFTP-värd, ett användarnamn och målplatsen innehåller en giltig offentlig RSA- eller DSA-nyckel. Du kan hämta lämplig offentlig nyckel när du skapar flödet.
 
-+++
+   +++
 
    +++S3
 
@@ -188,7 +188,7 @@ Så här konfigurerar du ett molnimport- eller exportkonto:
    >
    >Regionen cn-North-1 stöds inte.
 
-+++
+   +++
 
    +++Azure Blob
 
@@ -198,7 +198,7 @@ Så här konfigurerar du ett molnimport- eller exportkonto:
    >
    >Du måste implementera en egen process för att hantera diskutrymme på datalagermålet. Adobe tar inte bort några data från servern.
 
-+++
+   +++
 
 1. Välj [!UICONTROL **Spara**].
 

@@ -13,4 +13,4 @@ ht-degree: 2%
 
 # Adobe Analytics API:er
 
-Med API:t ](https://developer.adobe.com/analytics-apis/docs/2.0/) för [Adobe Analytics 2.0 kan du anropa Adobe-servrar direkt för att utföra de vanligaste åtgärderna som du kan utföra i användargränssnittet.
+Med API:t [&#128279;](https://developer.adobe.com/analytics-apis/docs/2.0/) för Adobe Analytics 2.0 kan du anropa Adobe-servrar direkt för att utföra de vanligaste åtgärderna som du kan utföra i användargränssnittet.

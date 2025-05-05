@@ -80,7 +80,7 @@ Tidigare uppdateringar av den här tabellen finns på den här sidans [implement
 | **`first_hit_time_gmt`** | Tidsstämpel för besökarens första träff i UNIX®-tid. | int |
 | **`geo_city`** | Namnet på den stad som träffen kom från, baserat på IP. Används i dimensionen [Städer](/help/components/dimensions/cities.md). | char(32) |
 | **`geo_country`** | Förkortningen för det land som träffen kom från, baserat på IP. Används i dimensionen [Länder](/help/components/dimensions/countries.md). | char(4) |
-| **`geo_dma`** | Ett numeriskt ID för det demografiska område som träffen kom från, baserat på IP. Används i den amerikanska DMA-dimensionen[](/help/components/dimensions/us-dma.md). | int osignerad |
+| **`geo_dma`** | Ett numeriskt ID för det demografiska område som träffen kom från, baserat på IP. Används i den amerikanska DMA-dimensionen[&#128279;](/help/components/dimensions/us-dma.md). | int osignerad |
 | **`geo_region`** | Namnet på den stat eller region som träffen kom från, baserat på IP. Används i dimensionen [Områden](/help/components/dimensions/regions.md). | char(32) |
 | **`geo_zip`** | Postnumret som träffen kom från, baserat på IP. Hjälper till att fylla i dimensionen [Postnummer](/help/components/dimensions/zip-code.md). Se även `zip`. | varchar(16) |
 | **`hit_source`** | Källan som träffen kom från. Träffkällor 1, 2 och 6 faktureras. <br>1: Standardbildbegäran utan tidsstämpel <br> <br>: Standardbildbegäran med tidsstämpel <br> <br> 3: Överföring av livdatakälla med tidsstämplar 5: Överföring av generisk datakälla <br>6: Överföring av datakälla med fullständig bearbetning <br>7: Överföring av TransactionID-datakälla <br>8: Används inte längre; tidigare versioner av Adobe Advertising Cloud-data Källor <br>9: Används inte längre, Adobe Social-sammanfattningsmått <br> : Audience Manager serversidans vidarebefordran används | tinyint unsigned |
@@ -166,7 +166,7 @@ Tidigare uppdateringar av den här tabellen finns på den här sidans [implement
 | **`ref_domain`** | Dimensionen [Referensdomän ](/help/components/dimensions/referring-domain.md). Baserat på kolumnen `referrer`. | varchar(100) |
 | **`ref_type`** | Ett numeriskt ID som representerar typen av hänvisning för träffen. Används i dimensionen [Referenstyp](/help/components/dimensions/referrer-type.md). <br>1: Inuti din webbplats<br>2: Andra webbplatser <br>3: Sökmotorer <br>4: Hårddisk <br>5: USENET <br>6: Typed/Bookmarked (ingen referent) <br>7: E-post <br>8: Ingen JavaScript <br>9: Sociala nätverk | tinyint unsigned |
 | **`referrer`** | Dimensionen [Referent](/help/components/dimensions/referrer.md). Observera att while `referrer` använder datatypen varchar(255) `post_referrer` använder datatypen varchar(244). | varchar(255) |
-| **`resolution`** | Ett numeriskt ID som representerar bildskärmens upplösning. Används i dimensionen Bildskärmsupplösning[](/help/components/dimensions/monitor-resolution.md). Använder `resolution.tsv` uppslagstabell. | smallint unsigned |
+| **`resolution`** | Ett numeriskt ID som representerar bildskärmens upplösning. Används i dimensionen Bildskärmsupplösning[&#128279;](/help/components/dimensions/monitor-resolution.md). Använder `resolution.tsv` uppslagstabell. | smallint unsigned |
 | **`s_kwcid`** | Nyckelords-ID som används i Adobe Advertising-integreringar. | varchar(255) |
 | **`s_resolution`** | Värde för rå skärmupplösning. Samlas in med hjälp av JavaScript-funktionen `screen.width x screen.height`. | Röding(20) |
 | **`search_engine`** | Ett numeriskt ID som representerar sökmotorn som hänvisade besökaren till din webbplats. Används i dimensionerna för [sökmotorn](/help/components/dimensions/search-engine.md). Refererar till `search_engines.tsv`-söktabellen. | smallint unsigned |
@@ -191,7 +191,7 @@ Tidigare uppdateringar av den här tabellen finns på den här sidans [implement
 | **`va_finder_detail`** | Dimensionen [Första beröringsdetalj](/help/components/dimensions/first-touch-detail.md). | varchar(255) |
 | **`va_finder_id`** | Ett numeriskt ID som identifierar dimensionen för den [första beröringskanalen](/help/components/dimensions/first-touch-channel.md). Sökningen efter detta ID finns i Marketing Channel Manager. | tinyint osignerad |
 | **`va_instance_event`** | En flagga som identifierar Marketing Channel [Instances](/help/components/metrics/instances.md). | tinyint osignerad |
-| **`va_new_engagement`** | En flagga som identifierar nya engagemang för](/help/components/metrics/new-engagements.md) marknadsföringskanalen[. | tinyint unsigned |
+| **`va_new_engagement`** | En flagga som identifierar nya engagemang för[&#128279;](/help/components/metrics/new-engagements.md) marknadsföringskanalen. | tinyint unsigned |
 | **`video`** | Dimensionen [Innehåll](/help/components/dimensions/sm-core.md) för direktuppspelande media. | varchar(255) |
 | **`videoad`** | Dimensionen Direktuppspelning av [annonser](/help/components/dimensions/sm-ads.md) . | varchar(255) |
 | **`videoadinpod`** | Dimensionen [Annons i poddposition](/help/components/dimensions/sm-ads.md) Strömmande media. | varchar(255) |
@@ -223,7 +223,7 @@ Tidigare uppdateringar av den här tabellen finns på den här sidans [implement
 | **`videoplayername`** | Dimensionen Innehållsspelarens [namn](/help/components/dimensions/sm-core.md) Strömmande media. | varchar(255) |
 | **`videotime`** | Den [innehållstid som användes ](/help/components/metrics/sm-core.md) för att strömma media. | heltal |
 | **`videoqoebitrateaverageevar`** | Den [genomsnittliga bithastigheten](/help/components/dimensions/sm-quality.md) för direktuppspelningsmedia-dimensionen. | varchar(255) |
-| **`videoqoebitratechangecountevar`** | Bithastigheten ändrar](/help/components/dimensions/sm-quality.md) dimensionen [för strömmande media. | varchar(255) |
+| **`videoqoebitratechangecountevar`** | Bithastigheten ändrar[&#128279;](/help/components/dimensions/sm-quality.md) dimensionen för strömmande media. | varchar(255) |
 | **`videoqoebuffercountevar`** | Dimensionen [Strömmande media för bufferthändelser](/help/components/dimensions/sm-quality.md) . | varchar(255) |
 | **`videoqoebuffertimeevar`** | Den [totala buffertlängden](/help/components/dimensions/sm-quality.md) för mediedimensionen för direktuppspelning. | varchar(255) |
 | **`videoqoedroppedframecountevar`** | [Släppta bildrutor](/help/components/dimensions/sm-quality.md) Direktuppspelande media-dimension. | varchar(255) |

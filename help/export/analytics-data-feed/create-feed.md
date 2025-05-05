@@ -134,7 +134,7 @@ Innan du skapar en datafeed är det viktigt att du har en grundläggande först�
 
       1. (Villkorligt) Om du behöver hantera målet (kontot och platsen) som du nyss skapade, är det tillgängligt i [Platshanteraren](/help/components/locations/locations-manager.md).
 
-+++
+   +++
 
    +++Azure RBAC
 
@@ -208,7 +208,7 @@ Innan du skapar en datafeed är det viktigt att du har en grundläggande först�
 
       1. (Villkorligt) Om du behöver hantera målet (kontot och platsen) som du nyss skapade, är det tillgängligt i [Platshanteraren](/help/components/locations/locations-manager.md).
 
-+++
+   +++
 
    +++Azure SAS
 
@@ -283,7 +283,7 @@ Innan du skapar en datafeed är det viktigt att du har en grundläggande först�
 
       1. (Villkorligt) Om du behöver hantera målet (kontot och platsen) som du nyss skapade, är det tillgängligt i [Platshanteraren](/help/components/locations/locations-manager.md).
 
-+++
+   +++
 
    +++Google Cloud Platform
 
@@ -353,7 +353,7 @@ Innan du skapar en datafeed är det viktigt att du har en grundläggande först�
 
       1. (Villkorligt) Om du behöver hantera målet (kontot och platsen) som du nyss skapade, är det tillgängligt i [Platshanteraren](/help/components/locations/locations-manager.md).
 
-+++
+   +++
 
 1. I avsnittet [!UICONTROL **Datakolumndefinitioner**] väljer du den senaste mallen [!UICONTROL **Alla Adobe-kolumner**] i listrutan och fyller sedan i följande fält:
 

@@ -51,7 +51,7 @@ Tecken efter det första och andra tecknet ignoreras.
 
 Du kan använda insamlade data för annonsgodkännande:
 
-* Datafeeds: Information om annonsmedgivande finns tillgänglig i kolumnen `dataprivacydmaconsent` [2}.](/help/export/analytics-data-feed/c-df-contents/datafeeds-reference.md)
+* Datafeeds: Information om annonsmedgivande finns tillgänglig i kolumnen `dataprivacydmaconsent` [2&rbrace;.](/help/export/analytics-data-feed/c-df-contents/datafeeds-reference.md)
 * Data Warehouse-rapporter: annonsmedgivandedata är tillgängliga med dimensionen **[!UICONTROL Ad Platform Consent]**.
 
 Organisationen bestämmer logiken för att implementera den här kontextdatavariabeln. Värdet finns inte kvar efter den träff det är aktiverat, så du måste ange kontextdatavariabeln på varje sida.

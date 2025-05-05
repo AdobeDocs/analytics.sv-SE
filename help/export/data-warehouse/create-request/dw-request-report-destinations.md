@@ -93,7 +93,7 @@ Så här konfigurerar du målet dit Data Warehouse-rapporter skickas:
 
       {style="table-layout:auto"}
 
-+++
+      +++
 
       +++Google Cloud Platform
 
@@ -105,7 +105,7 @@ Så här konfigurerar du målet dit Data Warehouse-rapporter skickas:
 
       {style="table-layout:auto"}
 
-+++
+      +++
 
       +++Azure SAS
 
@@ -121,7 +121,7 @@ Så här konfigurerar du målet dit Data Warehouse-rapporter skickas:
 
       {style="table-layout:auto"}
 
-+++
+      +++
 
       +++Azure RBAC
 
@@ -135,7 +135,7 @@ Så här konfigurerar du målet dit Data Warehouse-rapporter skickas:
 
       {style="table-layout:auto"}
 
-+++
+      +++
 
       +++E-post
 
@@ -151,7 +151,7 @@ Så här konfigurerar du målet dit Data Warehouse-rapporter skickas:
 
       {style="table-layout:auto"}
 
-+++
+      +++
 
 1. Fortsätt konfigurera din Data Warehouse-förfrågan på fliken [!UICONTROL **Rapportalternativ**]. Mer information finns i [Konfigurera rapportalternativ för en Data Warehouse](/help/export/data-warehouse/create-request/dw-request-report-options.md).
 

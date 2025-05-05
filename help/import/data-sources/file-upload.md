@@ -27,7 +27,7 @@ Filen `.fin` har följande egenskaper:
 
 * Filen har tillägget `.fin`. Se till att ditt operativsystem tillåter dig att se och redigera filtyper.
 * Filen är tom. Lagra inte data i filen `.fin`.
-* Filen har exakt samma namn som datakällfilen. Om du till exempel överför en datakällfil med namnet `example.txt` måste `.fin` file **** ha namnet `example.fin`. Om de inte har samma namn bearbetar Adobe aldrig datakällfilen.
+* Filen har exakt samma namn som datakällfilen. Om du till exempel överför en datakällfil med namnet `example.txt` måste `.fin` file **&#x200B;**&#x200B;ha namnet `example.fin`. Om de inte har samma namn bearbetar Adobe aldrig datakällfilen.
 
 När både datakällfilen och filen `.fin` har överförts till FTP-platsen bearbetar Adobe filen. Överför inte filen `.fin` förrän datakällfilen har överförts helt. Om filen `.fin` överförs för tidigt, hämtar och importerar Adobe den delvis överförda filen, vilket genererar eventuella fel.
 

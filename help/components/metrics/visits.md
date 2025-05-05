@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Besök
 
-Besöken [](overview.md) visar antalet sessioner för alla besökare på webbplatsen.
+Besöken [&#128279;](overview.md) visar antalet sessioner för alla besökare på webbplatsen.
 
 ## Hur det här måttet beräknas
 

@@ -30,7 +30,7 @@ Om några av de valda förfrågningarna är anpassade layouter går det inte att
 Lägga till ett eller flera mått
 
 1. Markera en eller flera begäranden i Excel och högerklicka för att välja **[!UICONTROL Edit Metrics]**. (Du kan också klicka på **[!UICONTROL Manage]** > **[!UICONTROL Edit Multiple]** > `<choose metric>` > **[!UICONTROL Edit Group]** för att markera gruppen med begäranden som ska ändras.)
-1. Välj **[!UICONTROL Add Metric(s)]**och välj de mätvärden som ska läggas till.
+1. Välj **[!UICONTROL Add Metric(s)]**&#x200B;och välj de mätvärden som ska läggas till.
 
    ![Skärmbild med alternativet Redigera begäran, Lägg till mått markerat.](assets/add_metric.png)
 
@@ -45,7 +45,7 @@ När du ersätter mått bör du tänka på följande riktlinjer:
 * Det nya måttet placeras på samma plats som det substituerade måttet.
 
    * **Om en pivotlayoutförfrågan i en pivottabell** ger resultat, besök, besökare, daglig unik och *besökare* ersätts av *intäkt* blir den uppdaterade begärandelayouten: datum, besök, intäkt och daglig unik.
-   * **Om måttet ** för** visas i en anpassad layout visas *intäkt* i samma cell F11 i den uppdaterade begärandelayouten .
+   * **Om måttet &#x200B;** för** visas i en anpassad layout visas *intäkt* i samma cell F11 i den uppdaterade begärandelayouten .
 
 * Om vissa åtgärder har vidtagits för det ersatta mätvärdet (genomsnittlig, förpended text, post-pended text, microcharting) kommer dessa åtgärder också att tillämpas på det nya mätvärdet.
 

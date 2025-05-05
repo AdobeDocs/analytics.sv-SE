@@ -114,5 +114,6 @@ När du är klar med projektet och samlar in åtgärdbara insikter är projektet
 * Ett bra sätt att bekanta sig med Analysis Workspace är att använda mallen Analysis Workspace självstudiekurs. I den här mallen beskrivs vanliga termer och steg för hur du bygger din första analys i Workspace. Så här startar du självstudiekursen:
    1. På fliken [!UICONTROL **Workspace**] i Adobe Analytics väljer du **[!UICONTROL Learning]** till vänster.
    1. Välj **[!UICONTROL Open Tutorial]**.
+
       ![](assets/training-tutorial.png)
 

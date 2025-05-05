@@ -99,4 +99,4 @@ Alla segment som skapats i segmentbyggaren är inte kompatibla med [!DNL Data Wa
  </tbody> 
 </table>
 
-*Obs! Datan Warehouse stöder inte alla fall där en `exclusion` - eller `without` -behållare används när `AND/OR` används. När du använder en sådan kombination stöds endast de segment som kan skrivas om som `A AND NOT B` (eller **inkludera den här egenskapen**och **exkludera den här egenskapen**) i Datan Warehouse.*
+*Obs! Datan Warehouse stöder inte alla fall där en `exclusion` - eller `without` -behållare används när `AND/OR` används. När du använder en sådan kombination stöds endast de segment som kan skrivas om som `A AND NOT B` (eller **inkludera den här egenskapen**&#x200B;och **exkludera den här egenskapen**) i Datan Warehouse.*

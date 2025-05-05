@@ -16,7 +16,7 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-_Den här artikeln dokumenterar staplade visualiseringar i staplar och staplar i_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._<br/>_Se [Stapel och stapel staplade](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/bar) för_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**-versionen av den här artikeln._
+_Den här artikeln dokumenterar staplade visualiseringar i staplar och staplar i_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**._<br/>_Se [Stapel och stapel staplade](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/bar) för_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**-versionen av den här artikeln._
 
 >[!ENDSHADEBOX]
 

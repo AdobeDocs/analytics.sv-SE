@@ -50,7 +50,7 @@ När funktionen för äldre Report Builder jämförs med det nya Report Builder-
 
 - FTP-alternativ för schemalagda rapporter
 
-- Mätvärden för besökare. Följande mätvärden konverteras till &quot;unika besökare&quot;, även om rapportresultatet kanske inte är en exakt matchning: `visitorshourly`, `visitorsdaily`, `visitorsweekly`, `visitorsmonthly``visitorsquarterly`, och `visitorsyearly`. Detta gäller även för `mobilevisitorshourly`, `mobilevisitorsdaily`, `mobilevisitorsweekly`, `mobilevisitorsmonthly`, `mobilevisitorsquarterly`och `mobilevisitorsyearly`.
+- Mätvärden för besökare. Följande mätvärden konverteras till &quot;unika besökare&quot;, även om rapportresultatet kanske inte är en exakt matchning: `visitorshourly`, `visitorsdaily`, `visitorsweekly`, `visitorsmonthly` `visitorsquarterly`, och `visitorsyearly`. Detta gäller även för `mobilevisitorshourly`, `mobilevisitorsdaily`, `mobilevisitorsweekly`, `mobilevisitorsmonthly`, `mobilevisitorsquarterly`och `mobilevisitorsyearly`.
 
 ## Vanliga användningsfall
 
@@ -73,7 +73,7 @@ När funktionen för äldre Report Builder jämförs med det nya Report Builder-
 
 >[!BEGINSHADEBOX]
 
-En demovideo finns ![i Översikt över](https://video.tv.adobe.com/v/337569?quality=12&learn=on){target="_blank"} VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Report Builder.
+En demovideo finns [i Översikt över](https://video.tv.adobe.com/v/337569?quality=12&learn=on){target="_blank"} VideoCheckedOut![&#128279;](/help/assets/icons/VideoCheckedOut.svg) Report Builder.
 
 >[!ENDSHADEBOX]
 
