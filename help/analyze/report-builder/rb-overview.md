@@ -73,7 +73,7 @@ När funktionen för äldre Report Builder jämförs med det nya Report Builder-
 
 >[!BEGINSHADEBOX]
 
-En demovideo finns [i Översikt över](https://video.tv.adobe.com/v/337569?quality=12&learn=on){target="_blank"} VideoCheckedOut![&#128279;](/help/assets/icons/VideoCheckedOut.svg) Report Builder.
+En demovideo finns [i Översikt över](https://video.tv.adobe.com/v/3452584?quality=12&learn=on&captions=swe){target="_blank"} VideoCheckedOut![&#128279;](/help/assets/icons/VideoCheckedOut.svg) Report Builder.
 
 >[!ENDSHADEBOX]
 

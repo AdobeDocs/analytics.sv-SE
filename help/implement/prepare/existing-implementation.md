@@ -24,7 +24,7 @@ Ta en titt på de här tipsen från din tekniska ägare Sarah Owen. Sarah är en
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Använd den ärvda implementeringsspelboken](https://video.tv.adobe.com/v/327314?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Använd den ärvda implementeringsspelboken](https://video.tv.adobe.com/v/3438747?quality=12&learn=on&captions=swe){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 

@@ -17,7 +17,7 @@ Virtuella rapportsviter kan struktureras så att de inkluderar och exkluderar ko
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Komponentkuration](https://video.tv.adobe.com/v/23544?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Komponentkuration](https://video.tv.adobe.com/v/3425532?quality=12&learn=on&captions=swe){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 

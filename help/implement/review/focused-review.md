@@ -47,7 +47,7 @@ Utvärdera situationen och ta fram en plan för att åtgärda uppgifterna. Gör 
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Granska implementeringen](https://video.tv.adobe.com/v/328340?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Granska implementeringen](https://video.tv.adobe.com/v/3440173?quality=12&learn=on&captions=swe){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 
