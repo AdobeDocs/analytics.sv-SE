@@ -4,9 +4,9 @@ audience: all
 user-guide-title: Implementeringshandbok för Analytics
 breadcrumb-title: Implementeringshandbok
 user-guide-description: Lär dig hur du implementerar Adobe Analytics. Anpassa vilka data som samlas in för att få ut så mycket som möjligt av Analytics-data.
-source-git-commit: de9d2039411a7f8539f8e7b4eb840f03c964f489
+source-git-commit: 8e701a3da6f04ccf2d7ac3abd10c6df86feb00a7
 workflow-type: tm+mt
-source-wordcount: '434'
+source-wordcount: '436'
 ht-degree: 8%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 8%
 # Adobe Analytics Implementeringshandbok {#implementation}
 
 + [Implementera Adobe Analytics](home.md)
-+ [Versionsinformation för analyser](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html?lang=sv-SE)
++ [Versionsinformation för analyser](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html)
 + [Versionsinformation för AppMeasurement](appmeasurement-updates.md)
 + Analysvariabler, funktioner och metoder {#vars}
    + [Översikt](vars/overview.md)
@@ -150,8 +150,8 @@ ht-degree: 8%
       + [Ny implementering med JavaScript](aep-edge/web-sdk/web-sdk-javascript-library.md)
    + Mobile SDK {#mobile-sdk}
       + [Mobile SDK - översikt](aep-edge/mobile-sdk/overview.md)
-   + Server-API {#server-api}
-      + [Översikt över server-API](aep-edge/server-api/overview.md)
+   + EDGE NETWORK API {#api}
+      + [Edge Network API - översikt](aep-edge/api/overview.md)
 + Implementera Analytics med Adobe Analytics-tillägget {#launch}
    + [Översikt över taggar](launch/overview.md)
    + [Skapa en Adobe Analytics-taggegenskap](launch/create-analytics-property.md)
