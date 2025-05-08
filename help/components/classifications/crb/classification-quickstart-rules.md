@@ -57,7 +57,7 @@ about_classification_rules.xml
 
 ## Viktig information om regler
 
-* Ange [gruppbehörigheter](https://experienceleague.adobe.com/docs/analytics/admin/user-product-management/user-groups/groups.html) för klassificeringar i [!UICONTROL Admin Tools].
+* Ange [gruppbehörigheter](https://experienceleague.adobe.com/docs/analytics/admin/user-product-management/user-groups/groups.html?lang=sv-SE) för klassificeringar i [!UICONTROL Admin Tools].
 
 * **Reguljära uttryck**: Hjälp finns under [Reguljära uttryck i klassificeringsregler](/help/components/classifications/crb/classification-quickstart-rules.md).
 

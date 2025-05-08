@@ -61,7 +61,7 @@ Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Jämförelse av v
 
 * När du behöver hämta data till Adobe Analytics och inte kan använda AppMeasurement, Web SDK eller API:t för datainfogning i grupp.
 
-**[Kundattribut](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html)** ska användas:
+**[Kundattribut](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html?lang=sv-SE)** ska användas:
 
 * Om du samlar in företagsdata i en CRM-databas (customer relationship management) och vill överföra data till Experience Cloud.
 * Om ni vill använda CRM-data för en djupare analys i Analytics, eller som målinriktningskriterier i Adobe Target.
