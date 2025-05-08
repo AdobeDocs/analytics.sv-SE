@@ -152,7 +152,7 @@ Du kan ge [skrivskyddad åtkomst](/help/analyze/analysis-workspace/curate-share/
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dela en länk med vem som helst](https://video.tv.adobe.com/v/3420093?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dela en länk med vem som helst](https://video.tv.adobe.com/v/3452456?quality=12&learn=on&captions=swe){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 
