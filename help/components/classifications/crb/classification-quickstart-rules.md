@@ -3,14 +3,14 @@ description: Klassificeringsreglerna söker regelbundet efter oklassificerade te
 title: Klassificeringsregler
 feature: Classifications
 exl-id: 8fe5d838-fa89-4933-a0c0-498d4e59576d
-source-git-commit: 750c4b0ffb52c3f2cf25abcd76ef149a4521109e
+source-git-commit: a40f30bbe8fdbf98862c4c9a05341fb63962cdd1
 workflow-type: tm+mt
-source-wordcount: '1940'
+source-wordcount: '1920'
 ht-degree: 0%
 
 ---
 
-# Klassificeringsregler
+# Klassificeringsregler (äldre)
 
 Klassificeringsreglerna söker regelbundet efter oklassificerade termer. Om en regelmatchning hittas lägger reglerna automatiskt till villkoren i dina klassificeringsdatatabeller. Du kan också använda klassificeringsregler för att skriva över befintliga nycklar.
 
@@ -27,7 +27,7 @@ Klassificeringsreglerna är praktiska för:
 
 Anta till exempel att en spårningskod för ett e-postkampanjs-ID är:
 
-`em:Summer:2013:Sale`.
+`em:Summer:20XX:Sale`.
 
 Du kan ställa in tre regler i en regeluppsättning som identifierar delarna i strängen och sedan klassificera värdena:
 
@@ -35,7 +35,7 @@ Du kan ställa in tre regler i en regeluppsättning som identifierar delarna i s
 |---|---|---|---|
 | Börjar med | em: | Kanal | E-post |
 | Slutar med | Försäljning | Typ | Försäljning |
-| Innehåller | 2013 | År | 2013 |
+| Innehåller | 20XX | År | 20XX |
 
 ## Hur regler bearbetas {#how-rules-are-processed}
 
@@ -57,7 +57,7 @@ about_classification_rules.xml
 
 ## Viktig information om regler
 
-* Ange [gruppbehörigheter](https://experienceleague.adobe.com/docs/analytics/admin/user-product-management/user-groups/groups.html?lang=sv-SE) för klassificeringar i [!UICONTROL Admin Tools].
+* Ange [gruppbehörigheter](https://experienceleague.adobe.com/docs/analytics/admin/user-product-management/user-groups/groups.html) för klassificeringar i [!UICONTROL Admin Tools].
 
 * **Reguljära uttryck**: Hjälp finns under [Reguljära uttryck i klassificeringsregler](/help/components/classifications/crb/classification-quickstart-rules.md).
 
@@ -95,18 +95,6 @@ När du aktiverar regler kan du skriva över befintliga klassificeringar. I föl
 
 Använd reguljära uttryck för att matcha konsekvent formaterade strängvärden med en klassificering. Du kan till exempel skapa en klassificering av specifika tecken i en spårningskod. Du kan matcha vissa tecken, ord eller teckenmönster.
 
-<!-- 
-
-regex_classification_rules.xml
-
- -->
-
-* [Reguljärt uttryck - Exempel på spårningskod](/help/components/classifications/crb/classification-quickstart-rules.md#section_2EF7951398EB4C2F8E52CEFAB4032669)
-* [Reguljärt uttryck - klassificerar ett visst tecken](/help/components/classifications/crb/classification-quickstart-rules.md#section_5D300C03FA484BADACBFCA983E738ACF)
-* [Reguljära uttryck - Matchande spårningskoder med varierande längd](/help/components/classifications/crb/classification-quickstart-rules.md#section_E86F5BF5C2F44ABC8FFCE3EA67EE3BB2)
-* [Reguljära uttryck - Exempel på &quot;Innehåller inte&quot; ](/help/components/classifications/crb/classification-quickstart-rules.md#section_FCA88A612A4E4B099458E3EF7B60B59C)
-* [Reguljära uttryck - referenstabell](/help/components/classifications/crb/classification-quickstart-rules.md#section_0211DCB1760042099CCD3ED7A665D716)
-
 >[!NOTE]
 >
 >Det bästa sättet är att använda reguljära uttryck för att spåra koder som använder avgränsare.
@@ -115,29 +103,29 @@ regex_classification_rules.xml
 
 >[!NOTE]
 >
->Om spårningskoden är URL-kodad kommer den **inte** att klassificeras av Regelbyggaren.
+>Om spårningskoden är URL-kodad kommer den **inte** att klassificeras av regelbyggaren.
 
 I det här exemplet antar du att du vill klassificera följande kampanj-ID:
 
-[!UICONTROL Sample Key]: `em:JuneSale:20130601`
+Exempelnyckel: `em:JuneSale:20XX0601`
 
 De delar av spårningskoden som du vill klassificera är:
 
 * `em` = e-post
 * `JuneSale` = kampanjnamn
-* `20130601` = datum
+* `20XX0601` = datum
 
-[!UICONTROL Regular Expression]: `^(.+)\:(.+)\:(.+)$`
+Reguljärt uttryck: `^(.+)\:(.+)\:(.+)$`
 
 Så här korrelerar det reguljära uttrycket till kampanj-ID:
 
 ![](assets/regex.png)
 
-[!UICONTROL Match Groups]: Visar hur det reguljära uttrycket motsvarar kampanj-ID-tecknen, så att du kan klassificera en position i kampanj-ID:t.
+Matcha grupper: Visar hur det reguljära uttrycket motsvarar kampanj-ID-tecknen, så att du kan klassificera en position i kampanj-ID:t.
 
 ![](assets/regex_tracking_code.png)
 
-I det här exemplet anges regeln att kampanjdatumet `20140601` finns i den tredje gruppen `(.+)`, som identifieras av `$3`.
+I det här exemplet anges regeln att kampanjdatumet `20XX0601` finns i den tredje gruppen `(.+)`, som identifieras av `$3`.
 
 **[!UICONTROL Rule Builder]**
 
@@ -145,22 +133,22 @@ Konfigurera regeln på följande sätt i [!UICONTROL Rule Builder]:
 
 | Välj regeltyp | Ange matchningsvillkor | Ange klassificering | Till |
 |---|---|---|---|
-| Reguljärt uttryck | &Hatt;()+)\:(.+)\:(.+)$ | Kampanjdatum | $3 |
+| Reguljärt uttryck | &amp;Hatt;()+)\:(.+)\:(.+)$ | Kampanjdatum | $3 |
 
 **Syntax**
 
 | Reguljärt uttryck | Sträng eller Matcha resultat | Motsvarande Matcha grupper |
 |--- |--- |--- |
-| `^(.+)\:(.+)\:(.+)$` | `em:JuneSale:20130601` | `$0`: `em:JuneSale:20130601` `$1`: em `$2`: JuniSale `$3`: 20130601 |
+| `^(.+)\:(.+)\:(.+)$` | `em:JuneSale:20XX0601` | `$0`: `em:JuneSale:20XX0601` `$1`: em `$2`: JuniSale `$3`: 20XX0601 |
 | Skapar syntaxen | `^` = startar raden () = grupperar tecken och låter dig extrahera matchande tecken inom parentes.  `(.+)` = hämtar ett ( . ) och ( + ) eller fler \ = början av en sträng.  `$` = anger att föregående tecken (eller teckengrupp) är det sista tecknet på raden. |
 
-I [Reguljära uttryck - referenstabell](/help/components/classifications/crb/classification-quickstart-rules.md#section_0211DCB1760042099CCD3ED7A665D716) finns information om vad tecknen i ett reguljärt uttryck betyder.
+I [Reguljära uttryck - referenstabell](/help/components/classifications/crb/classification-quickstart-rules.md) finns information om vad tecknen i ett reguljärt uttryck betyder.
 
 ## Reguljärt uttryck - klassificera ett visst tecken {#section_5D300C03FA484BADACBFCA983E738ACF}
 
 Ett sätt att använda ett reguljärt uttryck är att klassificera ett visst tecken i en teckensträng. Anta till exempel att följande spårningskod innehåller två viktiga tecken:
 
-[!UICONTROL Sample Key]: `4s3234`
+Exempelnyckel: `4s3234`
 
 * `4` = varumärkesnamn
 * `s` = identifierar en sökmotor, som Google
@@ -308,7 +296,7 @@ Lägg till regler genom att matcha ett villkor med en klassificering och ange å
 
 >[!NOTE]
 >
->I den här proceduren måste du tillämpa reglerna på en eller flera rapportsviter. Rekommenderat antal regler per regeluppsättning är mellan 500 och 1000, även om det inte finns några begränsningar. Om du har fler än 100 regler kan du förenkla regeluppsättningen genom att använda [underklassificeringar](/help/components/classifications/c-sub-classifications.md).
+>I den här proceduren måste du tillämpa reglerna på en eller flera rapportsviter. Rekommenderat antal regler per regeluppsättning är mellan 500 och 1000, även om det inte finns några begränsningar. Om du har fler än 100 regler kan du förenkla regeluppsättningen genom att använda [underklassificeringar](/help/components/classifications/importer/subclassifications.md).
 
 Så här lägger du till eller redigerar en klassificeringsregel:
 

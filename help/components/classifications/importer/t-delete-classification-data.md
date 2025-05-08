@@ -3,9 +3,9 @@ description: Steg som beskriver hur klassificeringsdata tas bort eller tas bort.
 title: Ta bort klassificeringsdata
 feature: Classifications
 exl-id: 2b156e66-3090-4048-8192-a412320e3be3
-source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
+source-git-commit: a40f30bbe8fdbf98862c4c9a05341fb63962cdd1
 workflow-type: tm+mt
-source-wordcount: '355'
+source-wordcount: '354'
 ht-degree: 3%
 
 ---
@@ -30,7 +30,7 @@ Om du tar bort klassificeringsdata måste du överföra en klassificeringsfil so
 
 Flera klassificeringar kan tillhöra samma variabel. Du kan till exempel ha två olika klassificeringar av eVar1. Om du bara vill ta bort ett enda klassificerat värde ersätter du klassificeringsvärdet med `~empty~`. Exempel:
 
-| Lager-SKU (eVar8) | Lagernamn | Lagerkategori |
+| Inventory SKU (eVar8) | Lagernamn | Lagerkategori |
 | --- | --- | --- |
 | 857467 | V-halströja | Kläder för kvinnor |
 | 948203 | Ankle bracelet | Juveler |
@@ -42,7 +42,7 @@ Om du använder `~empty~` under klassificering av lagerkategori bevaras fortfara
 
 Använd `~deletekey~` i valfri kolumn för att ta bort hela klassificeringsraden. Exempel:
 
-| Lager-SKU (eVar8) | Lagernamn | Lagerkategori |
+| Inventory SKU (eVar8) | Lagernamn | Lagerkategori |
 | --- | --- | --- |
 | 857467 | V-halströja | Kläder för kvinnor |
 | 948203 | Ankle bracelet | Juveler |

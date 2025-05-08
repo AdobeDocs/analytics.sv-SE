@@ -3,7 +3,7 @@ title: Klassificeringsuppsättningshanterare
 description: Hantera klassificeringsgrupper i Adobe Analytics.
 exl-id: b1a6721b-8e5d-4ee6-af6b-cda31c9f8b00
 feature: Classifications
-source-git-commit: a2a5e29eee46840d894ebf8d6184f8d6af9eee29
+source-git-commit: a40f30bbe8fdbf98862c4c9a05341fb63962cdd1
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 0%
@@ -30,7 +30,7 @@ Observera att 1 000 klassificeringsuppsättningar är förinlästa i taget. De f
 
 Följande kolumner är tillgängliga i Klassificeringsuppsättningshanteraren:
 
-* **[!UICONTROL Classification set]**: Klassificeringsuppsättningens namn. Om du klickar på ett klassificeringsuppsättningsnamn [redigeras dess inställningar](settings.md).
+* **[!UICONTROL Classification set]**: Klassificeringsuppsättningens namn. Om du klickar på ett namn på en klassificeringsuppsättning redigeras dess [inställningar](settings.md).
 * **[!UICONTROL Subscriptions]**: Antalet prenumerationer som den här klassificeringsuppsättningen gäller för.
 * **[!UICONTROL Classifications]**: Antalet klassificeringsdimensioner som klassificeringsuppsättningen innehåller.
 * **[!UICONTROL Automated]**: Avgör om klassificeringsuppsättningen är konfigurerad att automatiskt importera data från en molnplats. Automatisering kan konfigureras i klassificeringsuppsättningens [schema](schema.md).

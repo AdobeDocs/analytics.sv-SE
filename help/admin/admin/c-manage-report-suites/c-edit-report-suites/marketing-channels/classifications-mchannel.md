@@ -4,9 +4,9 @@ description: Använd klassificeringar för att kategorisera värden i relaterade
 feature: Marketing Channels
 exl-id: eaae9d60-21f8-42ff-b574-cb1710c68cdf
 role: Admin
-source-git-commit: def7d071de1765acf524a638a8f8d13ae69e1a1f
+source-git-commit: a40f30bbe8fdbf98862c4c9a05341fb63962cdd1
 workflow-type: tm+mt
-source-wordcount: '285'
+source-wordcount: '275'
 ht-degree: 1%
 
 ---
@@ -17,17 +17,13 @@ ht-degree: 1%
 >
 > Allmän information om marknadsföringskanaler finns i [Kom igång med marknadsföringskanaler](/help/components/c-marketing-channels/c-getting-started-mchannel.md).
 >
-> För att maximera effekten av marknadsföringskanaler för attribuering och Customer Journey Analytics har vi publicerat [reviderade best practices](/help/components/c-marketing-channels/mchannel-best-practices.md).
+> För att maximera effekten av marknadsföringskanaler för Attribution och Customer Journey Analytics har vi publicerat [reviderade best practices](/help/components/c-marketing-channels/mchannel-best-practices.md).
 
 **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]** > **[!UICONTROL Edit Settings]** > **[!UICONTROL Marketing Channels]** > **[!UICONTROL Marketing Channel Classifications]**.
 
 Använd klassificeringar för att kategorisera värden i relaterade grupper och för att rapportera på gruppnivå. Du kan till exempel klassificera alla betalsökningskampanjer i en kategori som videokort. Sedan kan du rapportera om resultatet för den kategorin i förhållande till mätvärden som instanser (eller klickningar).
 
 Klassificeringar som du lägger till i den här proceduren visas i rapporten [!UICONTROL Marketing Channel Overview] som [!UICONTROL Channel Values]. Kanalvärden är oklassificerade värden i kanalinformationen.
-
->[!NOTE]
->
->Kontrollera att du är van vid att skapa klassificeringar i [klassificeringar](/help/components/classifications/c-classifications.md).
 
 >[!IMPORTANT]
 >

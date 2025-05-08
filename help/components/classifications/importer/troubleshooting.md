@@ -3,9 +3,9 @@ title: Felsökning av klassificeringsimporterare
 description: Vanliga överföringsproblem vid användning av klassificeringsimporteraren.
 feature: Classifications
 exl-id: de3e9eca-9264-4711-b73a-4a1a3dd16715
-source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
+source-git-commit: 04c626b1159be3e61569e462bf9d12957bd2a333
 workflow-type: tm+mt
-source-wordcount: '861'
+source-wordcount: '875'
 ht-degree: 0%
 
 ---
@@ -31,8 +31,8 @@ Om överföringsfilen är korrekt formaterad försöker den att importera så m�
 
 * **Rader som redan är klassificerade**: Om du försöker överföra rader som redan är klassificerade med samma värde returnerar importeraren rader som inte hade någon effekt. Det här resultatet förväntas eftersom klassificeringar inte omklassificerar ett nyckelvärde med samma klassificering. Det är ett meddelande i stället för ett fel. Du behöver inte oroa dig för om du inte ändrar alla rader i en exportfil. Adobe rekommenderar att du bara överför ändrade rader.
 * **Rubriken matchar inte variabeln som överförs**: Om du hämtar en klassificeringsmall för spårningskoddimensionen och försöker överföra den till en eVar-klassificering misslyckas den. Använd bara exportfiler för de specifika variabler som de exporterades från.
-* **En nyckel eller ett klassificeringsvärde innehåller värdet 0**: Klassificeringar kan inte skilja värdet 0 från en tom cell, så det kan inte klassificera det här värdet. Se [Vanliga frågor om klassificeringar](../faq.md).
-* **Klassificeringsfilen innehåller kommatecken eller specialtecken**: Se [Vanliga frågor om klassificeringar](../faq.md).
+* **En nyckel eller ett klassificeringsvärde innehåller värdet 0**: Klassificeringar kan inte skilja värdet 0 från en tom cell, så det kan inte klassificera det här värdet. Mer information finns i [Vanliga frågor om klassificeringsimporteraren](importer-faq.md).
+* **Klassificeringsfilen innehåller kommatecken eller specialtecken**: Se [Vanliga frågor om klassificeringsimporteraren ](importer-faq.md) för information om hur du kan undvika värden.
 * **Extra flikar i den överförda filen**: När du redigerar klassificeringsfiler kan en extra flik ibland oavsiktligt komma in. Varje rad kräver ett identiskt antal flikar för att bearbetas korrekt. Om du vill kontrollera om det finns extra flikar i filen markerar du all text i en textbehandlare och kontrollerar att det inte finns några rader med extra utrymme i slutet.
 * **Det finns dubblettnyckelvärden i filen**: Varje nyckelvärde kan bara ha en klassificering per kolumn. Om du försöker klassificera samma värde flera gånger genereras ett fel.
 * **Underklassificeringar finns och är felaktigt konfigurerade**: Om det finns underklassificeringar kontrollerar du följande:
@@ -46,8 +46,8 @@ Följande är vanliga orsaker till varför FTP-klassificeringar inte behandlar �
 
 * **Saknad .fin-fil**: Skapa ett tomt textdokument på skrivbordet och byt namn på filnamnstillägget från .txt till .fin. Namnet på den här .fin-filen måste matcha namnet på klassificeringsfilen i fråga. Om FTP-filnamnet till exempel är `fileupload.tab` ger du din .fin-fil namnet `fileupload.fin`. När .fin-filen har överförts försvinner båda filerna.
 * **Överför .fin-fil före klassificeringsfilen**: Ibland skapas en .fin-fil innan klassificeringsfilen har överförts till FTP-platsen. Bearbetningen kan misslyckas när filer överförs i fel ordning. Ta bort båda filerna, lägg till klassificeringsfilen först och sedan .fin-filen när klassificeringsfilen har överförts helt.
-* **Filstorleken är för stor**: Adobe rekommenderar att klassificeringsfilernas storlek hålls så liten som möjligt för att garantera snabb bearbetning.
+* **Filstorleken är för stor**: Adobe rekommenderar att klassificeringsfilernas storlek hålls så liten som möjligt för att säkerställa snabb bearbetning.
 * **Befintliga filer som redan bearbetar**: Om flera filer överförs för samma variabel och rapportserie avbryts bearbetningen av den gamla filen till förmån för den nya. Om du överför klassificeringar med flera filer väntar du på bekräftelse på att befintliga filer har bearbetats innan du överför nya.
-* **Överförda filer som inte har placerats i rotkatalogen**: Filer som har överförts till Adobe FTP-platsen måste placeras i rotkatalogen. Om klassificeringsimportfiler placeras i undermappar hämtas eller bearbetas de inte.
+* **Överförda filer som inte har placerats i rotkatalogen**: Filer som har överförts till Adobe FTP-plats måste placeras i rotkatalogen. Om klassificeringsimportfiler placeras i undermappar hämtas eller bearbetas de inte.
 
 Om du fortfarande har problem med att överföra en klassificeringsfil kontaktar du Adobe kundtjänst.

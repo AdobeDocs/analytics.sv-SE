@@ -3,9 +3,9 @@ description: Administrativa steg för att skapa realtidsrapporter.
 title: Konfigurera realtidsrapporter
 feature: Real-time
 exl-id: 9e7fc67c-71d5-465a-9553-5bb7e02a9bfd
-source-git-commit: ee55349a8c676023a5ce33b56592cad7642199b8
+source-git-commit: a40f30bbe8fdbf98862c4c9a05341fb63962cdd1
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '264'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Det består av att välja rapportsviten och konfigurera upp till tre rapporter f
 
    ![](assets/real_time_admin.png)
 
-   Mer information om vilka realtidsmått och -mått som stöds finns i [Metrisk och Dimensioner som stöds](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/realtime/realtime-metrics.md).
+   Mer information om vilka realtidsmått och -mått som stöds finns i [Mätningar och dimensioner som stöds](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/realtime/realtime-metrics.md).
 
    Om du har skapat klassificeringar visas de med indrag under den dimension som de definierats för:
 
@@ -47,8 +47,6 @@ Det består av att välja rapportsviten och konfigurera upp till tre rapporter f
    >
    >För en enda realtidsrapport stöder vi för närvarande inte aktivering av dubblettdimensioner, även om en annan klassificering väljs för varje dimension.
 
-   Mer information om klassificeringar finns i [Om klassificeringar](/help/components/classifications/c-classifications.md).
-
    >[!NOTE]
    >
    >Vissa dimensioner, som &quot;Sök nyckelord&quot; eller &quot;Produkt&quot;, finns inte kvar i realtid på samma sätt som i andra delar av Adobe Analytics. När du väljer ett icke-beständigt mått visas följande varning:
@@ -57,6 +55,6 @@ Det består av att välja rapportsviten och konfigurera upp till tre rapporter f
 
 1. Välj **[!UICONTROL Save]** eller **[!UICONTROL Save and View Report]**.
 
-   Efter den här initiala rapportkonfigurationen kan det ta upp till 20 minuter innan data börjar strömmas. Från och med då blir data omedelbart tillgängliga. Mer information om hur du visar realtidsrapporter finns i [Kör en realtidsrapport](https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/t-running-report-types.html?lang=sv-SE).
+   Efter den här initiala rapportkonfigurationen kan det ta upp till 20 minuter innan data börjar strömmas. Från och med då blir data omedelbart tillgängliga. Mer information om hur du visar realtidsrapporter finns i [Kör en realtidsrapport](https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/t-running-report-types.html).
 
 1. Som standard har alla användare åtkomst till realtidsrapporter.

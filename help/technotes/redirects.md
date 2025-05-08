@@ -4,7 +4,7 @@ keywords: Implementering av analyser
 title: Omdirigering och alias
 feature: Implementation Basics
 exl-id: 0ed2aa9b-ab42-415d-985b-2ce782b6ab51
-source-git-commit: d3d5b01fe17f88d07a748fac814d2161682837c2
+source-git-commit: a40f30bbe8fdbf98862c4c9a05341fb63962cdd1
 workflow-type: tm+mt
 source-wordcount: '1086'
 ht-degree: 0%
@@ -117,7 +117,7 @@ s.pageURL="https://www.flytohawaiiforfree.com"
 
 Kör ett test för att verifiera att referenten, ursprunglig URL ( *`s_server`*) och kampanjvariabler hämtas.
 
-Dessa variabler representeras som följande parametrar i [Experience Cloud Debugger](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html?lang=sv-SE).
+Dessa variabler representeras som följande parametrar i [Experience Cloud Debugger](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html).
 
 <table id="table_5F3B987D4D514CA283F7B9F52EBC2301"> 
  <thead> 
@@ -139,7 +139,7 @@ Dessa variabler representeras som följande parametrar i [Experience Cloud Debug
    <td> <p> <span class="filepath"> g=https://www.flytohawaiiforfree.com </span> </p> <p>Det här värdet visas i DigitalPulse-felsökaren om variabeln <span class="varname"> pageURL </span> används. </p> </td> 
   </tr> 
   <tr> 
-   <td> <p>URL för den ultimata landningssidan </p> </td> 
+   <td> <p>URL för Ultimate landningssida </p> </td> 
    <td> <p> <span class="filepath"> https://www.example.com </span> </p> </td> 
    <td> <p>Det här värdet visas INTE i DigitalPulse-felsökaren om variabeln <span class="varname"> pageURL </span> används. </p> </td> 
   </tr> 
@@ -153,7 +153,7 @@ Image
  
 https://examplecom.112.2o7.net/b/ss/examplecom/1/JS-1.4/s61944015791667?[AQB] 
 ndh=1 
-t=4/8/2014 13:34:28 4 360 
+t=4/8/20XX 13:34:28 4 360 
 pageName=Welcome to example.com 
 r=https://ref=www.google.com/search?hl=en&ie=UTF-8&q=discount+airline+tickets 
 cc=USD 
@@ -170,4 +170,4 @@ hp=N
 [AQE]
 ```
 
-När du har verifierat att variablerna visas i Adobe [!UICONTROL Debugger] kan det alltid vara bra att bekräfta att söktermerna och den ursprungliga referensdomänen (före omdirigeringen) registrerar trafik i rapporter.
+När du har verifierat att dessa variabler visas i Adobe [!UICONTROL Debugger] kan det alltid vara bra att bekräfta att söktermerna och den ursprungliga referensdomänen (före omdirigeringen) registrerar trafik i rapporter.

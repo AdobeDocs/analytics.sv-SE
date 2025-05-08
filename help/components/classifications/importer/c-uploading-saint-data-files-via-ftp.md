@@ -3,18 +3,18 @@ description: Så här överför du datafiler via FTP.
 title: FTP-import
 feature: Classifications
 exl-id: 3e93b35c-6f65-4a93-887d-d94e4d359bdc
-source-git-commit: 95767d10f63e20d5943fa95be3f2fe8f88e67e97
+source-git-commit: a40f30bbe8fdbf98862c4c9a05341fb63962cdd1
 workflow-type: tm+mt
-source-wordcount: '701'
+source-wordcount: '702'
 ht-degree: 0%
 
 ---
 
-# FTP-import
+# FTP-import (äldre)
 
 >[!IMPORTANT]
 >
->Vi rekommenderar inte längre att du använder FTP för import enligt beskrivningen på den här sidan.
+>Adobe rekommenderar inte längre att du använder FTP för import enligt beskrivningen på den här sidan.
 >
 >FTP rekommenderas inte eftersom det är en okrypterad metod för att dela filer, vilket innebär att alla kan fånga upp filinnehållet samt användarnamnet och lösenordet som används för kontot.
 >
@@ -36,7 +36,7 @@ Följande rekommenderade gränser är viktiga.
 
 Den första konfigurationen fyller i klassificeringsdatabasen med en stor uppsättning ursprungliga data, eller omstrukturerar klassificeringarna i stället för att klassificera om några rader eller lägga till rader.
 
-Efter en inledande överföring i en rapportserie (för en viss variabel eller rapport) rekommenderar Adobe att du bara överför nya och uppdaterade rader i efterföljande importer. Rader som inte ändras ska utelämnas från framtida överföringar.
+Efter en första överföring i en rapportserie (för en viss variabel eller rapport) rekommenderar Adobe att du bara överför nya och uppdaterade rader i efterföljande importer. Rader som inte ändras ska utelämnas från framtida överföringar.
 
 Varje nytt nyckelvärde som du överför räknas mot dina unika värden för den variabeln för månaden.
 
@@ -44,13 +44,13 @@ Om du har överskridit dina unika värden för månaden visas inte motsvarande k
 
 >[!NOTE]
 >
->Den tid som krävs för att bearbeta en klassificeringsdatafil varierar beroende på filens storlek och det aktuella antalet filer som redan bearbetas av Adobe-servrar. Bearbetningen av datafiler tar vanligtvis inte längre tid än 72 timmar.
+>Den tid som krävs för att bearbeta en klassificeringsdatafil varierar beroende på filens storlek och det aktuella antalet filer som redan bearbetas av Adobe servrar. Bearbetningen av datafiler tar vanligtvis inte längre tid än 72 timmar.
 
 ## Skapa ett FTP-konto
 
 Skapa ett FTP-konto innan du överför data via FTP. >
 
-Mer information om FTP-servrar i Adobe finns i [FTP och sFTP](/help/export/ftp-and-sftp/ftp-overview.md).
+Mer information om Adobe FTP-servrar finns i [FTP och sFTP](/help/export/ftp-and-sftp/ftp-overview.md).
 
 1. Klicka på **[!UICONTROL Admin]** > **[!UICONTROL Classification Importer]**.
 1. Klicka på **[!UICONTROL Import File]** och sedan på **[!UICONTROL FTP Import]**.
@@ -65,7 +65,7 @@ Mer information om FTP-servrar i Adobe finns i [FTP och sFTP](/help/export/ftp-a
    | **Skriv över data i konflikter** | Välj det här alternativet om du vill skriva över duplicerade data. Det här alternativet är användbart om du uppdaterar befintliga klassificeringar. Om du använder den [senaste klassificeringsarkitekturen](../sets/overview.md) är den här inställningen alltid aktiverad. |
    | **När importen är klar** | Välj det här alternativet om du automatiskt vill exportera den uppdaterade datauppsättningen till samma FTP-konto när du har angett den e-postadress som ska ta emot meddelanden om det här FTP-kontot när importen är klar. Om du använder den [senaste klassificeringsarkitekturen](../sets/overview.md) är det här alternativet inte tillgängligt. |
    | **Meddelandemottagare** | Ange den e-postadress som ska ta emot meddelanden om det här FTP-kontot. |
-   | **Auktorisera** | (Obligatoriskt) Adobe tillåts att automatiskt importera alla datafiler som skickas till det nya FTP-kontot. |
+   | **Auktorisera** | (Obligatoriskt) Låter Adobe automatiskt importera alla datafiler som skickas till det nya FTP-kontot. |
 
 1. Klicka på **[!UICONTROL Save]**.
 

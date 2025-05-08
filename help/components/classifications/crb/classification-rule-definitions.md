@@ -3,18 +3,18 @@ description: Definitioner av gränssnittselement på sidorna i Klassificeringsre
 title: Klassificeringsregler - definitioner
 feature: Classifications
 exl-id: 514501d1-7e1b-45da-b8fe-c68331e59dab
-source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
+source-git-commit: a40f30bbe8fdbf98862c4c9a05341fb63962cdd1
 workflow-type: tm+mt
-source-wordcount: '858'
+source-wordcount: '859'
 ht-degree: 0%
 
 ---
 
-# Klassificeringsregler - definitioner
+# Klassificeringsregeldefinitioner (äldre)
 
 Definitioner av gränssnittselement på sidorna i Klassificeringsregelbyggaren.
 
-## Regelsida {#section_4A5BF384EEEE4994B6DC888339833529}
+## Regelsida
 
 På den här sidan visas reglerna i en regeluppsättning.
 
@@ -32,7 +32,7 @@ På den här sidan visas reglerna i en regeluppsättning.
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Välj Rapportsviter och variabler </p> </td> 
-   <td colname="col2"> <p><b>Report Suite</b> </p> <p>Rapportsviterna som regeluppsättningen gäller för. </p> <p><b>Variabel</b> </p> <p>Du kan bara använda en variabel när du skapar en klassificeringsregeluppsättning. Om du vill skapa flera regeluppsättningar för en variabel måste du tillämpa varje regeluppsättning på flera rapportsviter. </p> <p>Obs! Du kan bara använda de variabler du har tillgång till i dina rapportsviter. Variabler visas bara på panelen <span class="wintitle"> Ny regeluppsättning </span> när minst en klassificering har definierats för den variabeln. </p> <p> Du kan skapa klassificeringar för en variabel i <span class="uicontrol"> Admin </span> &gt; <span class="uicontrol"> Rapportsviter </span> &gt; <span class="uicontrol"> Trafik </span> &gt; <span class="uicontrol"> Trafikklassificeringar </span> (eller <span class="uicontrol"> Konvertering </span> &gt; <span class="uicontrol"> Konverteringsklassificeringar </span>). Markera sedan variabeln och klicka på <span class="uicontrol"> Lägg till klassificering </span>. </p> <p>Se <a href="https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/traffic-variables/traffic-classifications.html?lang=sv-SE"  > Trafikklassificeringar </a> och <a href="https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/conversion-variables/conversion-classifications.html?lang=sv-SE"  > Konverteringsklassificeringar </a> i administrationshjälpen. </p> </td> 
+   <td colname="col2"> <p><b>Report Suite</b> </p> <p>Rapportsviterna som regeluppsättningen gäller för. </p> <p><b>Variabel</b> </p> <p>Du kan bara använda en variabel när du skapar en klassificeringsregeluppsättning. Om du vill skapa flera regeluppsättningar för en variabel måste du tillämpa varje regeluppsättning på flera rapportsviter. </p> <p>Obs! Du kan bara använda de variabler du har tillgång till i dina rapportsviter. Variabler visas bara på panelen <span class="wintitle"> Ny regeluppsättning </span> när minst en klassificering har definierats för den variabeln. </p> <p> Du kan skapa klassificeringar för en variabel i <span class="uicontrol"> Admin </span> &gt; <span class="uicontrol"> Rapportsviter </span> &gt; <span class="uicontrol"> Trafik </span> &gt; <span class="uicontrol"> Trafikklassificeringar </span> (eller <span class="uicontrol"> Konvertering </span> &gt; <span class="uicontrol"> Konverteringsklassificeringar </span>). Markera sedan variabeln och klicka på <span class="uicontrol"> Lägg till klassificering </span>. </p> <p>Se <a href="https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/traffic-variables/traffic-classifications.html"  > Trafikklassificeringar </a> och <a href="https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/conversion-variables/conversion-classifications.html"  > Konverteringsklassificeringar </a> i administrationshjälpen. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><span class="wintitle"> Aktivera</span> </p> </td> 

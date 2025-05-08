@@ -3,14 +3,16 @@ description: En regeluppsättning är en grupp klassificeringsregler för en spe
 title: Klassificeringsregeluppsättningar
 feature: Classifications
 exl-id: 5c118541-d143-4947-b693-514d7042abe6
-source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
+source-git-commit: a40f30bbe8fdbf98862c4c9a05341fb63962cdd1
 workflow-type: tm+mt
-source-wordcount: '348'
+source-wordcount: '365'
 ht-degree: 0%
 
 ---
 
-# Klassificeringsregeluppsättningar
+# Klassificeringsregeluppsättningar (äldre)
+
+*Den här sidan förklarar klassificeringsregeluppsättningar som en del av [klassificeringsregelbyggaren](classification-rule-builder.md). Se [Klassificeringsuppsättningar](../sets/overview.md) för den aktuella metoden för att klassificera data i Adobe Analytics.*
 
 En regeluppsättning är en grupp klassificeringsregler för en specifik variabel. Du använder en variabel för regeluppsättningen. Om du vill skapa flera regeluppsättningar för en variabel måste du tillämpa varje regeluppsättning på flera rapportsviter.
 
@@ -56,8 +58,6 @@ Följande fält och alternativ är tillgängliga på [!UICONTROL Classifications
 Ge klassificeringsregeluppsättningen ett namn, använd variabeln och ange överskrivningsinställningar.
 
 1. (Krav) Definiera klassificeringsstrukturen i **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]**.
-
-   (Se [Klassificeringar](https://experienceleague.adobe.com/docs/analytics/components/classifications/c-classifications.html?lang=sv-SE) i hjälpen för administrationsverktyg när du lägger till klassificeringar.)
 
    Variabler visas bara på panelen [!UICONTROL New Rule Set] efter att minst en klassificering har definierats för variabeln.
 

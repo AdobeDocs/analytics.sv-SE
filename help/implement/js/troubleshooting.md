@@ -4,7 +4,7 @@ description: Lär dig mer om vanliga problem och de bästa sätten att felsöka 
 feature: Implementation Basics
 exl-id: e7181e78-65bf-446d-8d5c-b47323dbec1d
 role: Developer
-source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
+source-git-commit: a40f30bbe8fdbf98862c4c9a05341fb63962cdd1
 workflow-type: tm+mt
 source-wordcount: '688'
 ht-degree: 0%
@@ -44,7 +44,7 @@ Alla variabler som skickas till Adobe använder objektet Analytics. De flesta im
 
 ## Definiera varje variabel en gång
 
-När en spårfunktion (`s.t()`) körs tar AppMeasurementet alla definierade variabler och kompilerar dem till en bildbegäran. Om du definierar en variabel mer än en gång i implementeringen används bara det senaste värdet. Kontrollera att alla variabelvärden innehåller rätt värde när spårningsfunktionen körs.
+När en spårfunktion (`s.t()`) körs tar AppMeasurement alla definierade variabler och kompilerar dem till en bildbegäran. Om du definierar en variabel mer än en gång i implementeringen används bara det senaste värdet. Kontrollera att alla variabelvärden innehåller rätt värde när spårningsfunktionen körs.
 
 ## Korrigera variabelns skiftläge
 
@@ -52,7 +52,7 @@ Vissa variabler använder versaler. JavaScript-variabler är skiftlägeskänslig
 
 ## Plugin-program
 
-Vissa organisationer använder plugins för att förbättra sin implementering av Adobe Analytics. När du uppgraderar AppMeasurementen ska du inte glömma att ta med eventuella installerade plugin-program. Koden som skapas i [!UICONTROL Code Manager] har ingen plugin-kod med sig. Gör en kopia av den befintliga koden om du behöver återställa en tidigare version av AppMeasurementet.
+Vissa organisationer använder plugins för att förbättra sin implementering av Adobe Analytics. När du uppgraderar AppMeasurement-versioner ska du inte glömma att ta med eventuella installerade plugin-program igen. Koden som skapas i [!UICONTROL Code Manager] har ingen plugin-kod med sig. Gör en kopia av din befintliga kod om du behöver återställa en tidigare version av AppMeasurement.
 
 ## Tomt utrymme i variabelvärden
 
@@ -87,7 +87,7 @@ Dessa två variabelvärden betraktas som separata i Adobe Analytics. Det tomma u
 
 Implementeringar som fyller i många variabler med långa värden kan ibland leda till trunkerade bildförfrågningar. Vissa äldre webbläsare, t.ex. Internet Explorer, har en begränsning på 2 083 tecken för bildförfrågnings-URL:er. Om din organisation har mycket långa bildförfrågningar kan du pröva följande:
 
-* **Använd tjänsten Experience Cloud ID**: AppMeasurement Libraries 1.4.1 och senare skickar automatiskt bildbegäranden med HTTP-POST om de är för långa. Data som skickas med den här metoden trunkeras inte oavsett längd. Mer information finns i [Adobe Experience Cloud ID-tjänsten](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=sv-SE).
+* **Använd tjänsten Experience Cloud ID**: AppMeasurement Libraries 1.4.1 och senare skickar automatiskt bildbegäranden med HTTP POST om de är för långa. Data som skickas med den här metoden trunkeras inte oavsett längd. Mer information finns i [Adobe Experience Cloud ID-tjänsten](https://experienceleague.adobe.com/docs/id-service/using/home.html).
 * **Använd bearbetningsregler**: [Bearbetningsregler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/c-processing-rules/processing-rules.md) kan kopiera värden från en variabel till en annan. Med den här metoden kan du inte ange samma värde i flera variabler. Exempel:
 
   Kör alltid:<br>
@@ -95,7 +95,7 @@ Skriv över värdet för prop1 med eVar1 <br>
 Skriv över värdet för eVar2 med eVar1 <br>
 Skriv över värdet för prop2 med eVar1 <br>
 
-  Ange sedan eVar1 i implementeringen:
+  Ställ sedan in eVar1 i implementeringen:
 
   ```js
   s.eVar1 = "The quick brown fox jumps over the lazy dog";
@@ -110,4 +110,4 @@ Skriv över värdet för prop2 med eVar1 <br>
   s.prop2 = "D=v1";
   ```
 
-* **Använd klassificeringar**: Om produkt- eller sidnamn är ovanligt långa kan du använda ett identifierande värde eller en identifierande kod och sedan använda [klassificeringar](/help/components/classifications/c-classifications.md) för att visa ett mer användarvänligt namn.
+* **Använd klassificeringar**: Om produkt- eller sidnamn är ovanligt långa kan du använda ett identifierande värde eller en identifierande kod och sedan använda [klassificeringar](/help/components/classifications/classifications-overview.md) för att visa ett mer användarvänligt namn.

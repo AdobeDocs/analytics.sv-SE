@@ -3,9 +3,9 @@ description: Administrativa steg för att skapa realtidsrapporter.
 title: Konfiguration av rapporter i realtid
 feature: Real-time
 exl-id: e039ed67-3694-40fc-a4d9-3cb576e0535c
-source-git-commit: f1dde3a475fe1276fd9abbe1bdafd6723701f2cb
+source-git-commit: a40f30bbe8fdbf98862c4c9a05341fb63962cdd1
 workflow-type: tm+mt
-source-wordcount: '207'
+source-wordcount: '199'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,7 @@ Du skapar realtidsrapporter i Adobe Analytics genom att välja rapportsviten och
 
    ![](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/realtime/assets/real_time_admin.png)
 
-   Mer information om vilka realtidsmått och -mått som stöds finns i [Metrisk och Dimensioner som stöds](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/realtime/realtime-metrics.md).
+   Mer information om vilka realtidsmått och -mått som stöds finns i [Mätningar och dimensioner som stöds](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/realtime/realtime-metrics.md).
 
    Om du har skapat klassificeringar visas de med indrag under den dimension som de definierats för:
 
@@ -35,8 +35,6 @@ Du skapar realtidsrapporter i Adobe Analytics genom att välja rapportsviten och
    >[!NOTE]
    >
    >För en enda realtidsrapport stöder vi för närvarande inte aktivering av dubblettdimensioner, även om en annan klassificering väljs för varje dimension.
-
-   Mer information om klassificeringar finns i [Om klassificeringar](/help/components/classifications/c-classifications.md).
 
    >[!NOTE]
    >

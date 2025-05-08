@@ -4,9 +4,9 @@ title: Konverteringsklassificeringar
 feature: Classifications
 role: Admin
 exl-id: b4855000-adf3-4e3b-af36-f4803383126d
-source-git-commit: 429aaa43fdae669350bdb5a5a54a7d4b9b1c65f2
+source-git-commit: a40f30bbe8fdbf98862c4c9a05341fb63962cdd1
 workflow-type: tm+mt
-source-wordcount: '517'
+source-wordcount: '475'
 ht-degree: 1%
 
 ---
@@ -18,8 +18,6 @@ Klassificeringar används för att kategorisera värden i grupper och rapportera
 **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]** > **[!UICONTROL Edit Settings]** > **[!UICONTROL Conversion]** > **[!UICONTROL Conversion Classifications]**
 
 Med konverteringsklassificeringar kan du klassificera konverteringsvariabler. När de har klassificerats kan alla rapporter som du kan generera med nyckeldata också genereras med hjälp av de associerade dataegenskaperna.
-
-När du har aktiverat klassificeringar använder du [Klassificeringsimporteraren](/help/components/classifications/importer/c-working-with-saint.md) för att tilldela specifika värden till lämplig klassificering.
 
 >[!WARNING]
 >
@@ -46,9 +44,6 @@ Så här lägger du till konverteringsklassificeringar i Admin:
    ![Steginformation](/help/admin/admin/assets/sub_class_create.png)
 
 1. För musen över ikonen **[!UICONTROL Edit Classification]** och välj sedan **[!UICONTROL Add Classification]**.
-1. I fältet **[!UICONTROL Select Type]** väljer du den typ av klassificering som du vill lägga till i variabeln.
-
-   Alternativen är **[!UICONTROL Text]** och **[!UICONTROL Numeric]**. Mer information om klassificeringstyper finns i [Om klassificeringar](/help/components/classifications/c-classifications.md).
 1. Konfigurera klassificeringen i dialogrutan **[!UICONTROL Text Classifications]** efter behov.
 
 1. Lägg till eller ta bort alternativ i listrutan.

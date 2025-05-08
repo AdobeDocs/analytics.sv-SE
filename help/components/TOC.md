@@ -4,10 +4,10 @@ audience: end-user
 user-guide-title: Komponenthandbok för Analytics
 breadcrumb-title: Användarhandbok om komponenter
 user-guide-description: Hantera data med komponenter som segment, beräknade värden, virtuella rapportsviter, marknadsföringskanaler och klassificeringar. Lär dig mer om Analytics över flera enheter.
-source-git-commit: 5bf3f561c471410e4ce1ca576ba34ea3849b0325
+source-git-commit: a40f30bbe8fdbf98862c4c9a05341fb63962cdd1
 workflow-type: tm+mt
-source-wordcount: '803'
-ht-degree: 7%
+source-wordcount: '786'
+ht-degree: 6%
 
 ---
 
@@ -15,8 +15,8 @@ ht-degree: 7%
 # [!DNL Adobe Analytics] Komponentguide {#components}
 
 + [Komponenthandbok för Analytics](home.md)
-+ [Versionsinformation för analyser](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html?lang=sv-SE)
-+ Dimensioner {#dimensions}
++ [Versionsinformation för analyser](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html)
++ Mått {#dimensions}
    + [Översikt över dimensioner](dimensions/overview.md)
    + [Dimension-kompatibilitet](dimensions/compatibility.md)
    + [Activity Map Link](dimensions/activity-map-link.md)
@@ -204,7 +204,7 @@ ht-degree: 7%
 + Beräknade mått {#calculated-metrics}
    + [Beräknade och avancerade beräknade värden](c-calcmetrics/cm-overview.md)
    + [Instruktionsfilmer](c-calcmetrics/cm-videos.md)
-   + Arbetsflödet för beräknade mått {#calcmetric-workflow}
+   + Arbetsflöde för beräknade mätvärden {#calcmetric-workflow}
       + [Arbetsflöde för beräknade mätvärden](c-calcmetrics/c-workflow/cm-workflow/cm-workflow.md)
       + [Hitta mätvärden](c-calcmetrics/c-workflow/cm-workflow/cm-finding.md)
       + [Bygg mätvärden](c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-build-metrics.md)
@@ -223,7 +223,7 @@ ht-degree: 7%
       + [Dela beräknade värden](c-calcmetrics/c-workflow/cm-workflow/cm-sharing.md)
       + [Kopiera beräknade värden](c-calcmetrics/c-workflow/cm-workflow/cm-copy.md)
       + [Beräknat måttansvarig](c-calcmetrics/c-workflow/cm-workflow/cm-manager.md)
-   + Mätvärdesreferens {#calcmetrics-reference}
+   + Metrisk referens {#calcmetrics-reference}
       + [Referens: grundläggande funktioner](c-calcmetrics/cm-reference/cm-functions.md)
       + [Referens: avancerade funktioner](c-calcmetrics/cm-reference/cm-adv-functions.md)
       + [Mätkompatibilitet](c-calcmetrics/cm-compatibility.md)
@@ -238,7 +238,7 @@ ht-degree: 7%
    + [A4T-överväganden](vrs/vrs-a4t.md)
    + [Vanliga frågor om virtuella rapportsviter](vrs/vrs-faq.md)
    + [Virtuella rapportsviter och taggningsfrågor för globala/flera programsviter](vrs/vrs-considerations.md)
-   + Arbetsflöde för virtuell rapportserie {#vrs-workflow}
+   + Arbetsflöde för virtuella rapportsviter {#vrs-workflow}
       + [Arbetsflöde för virtuella rapportsviter](vrs/c-workflow-vrs/vrs-workflow.md)
       + [Skapa virtuella rapportsviter](vrs/c-workflow-vrs/vrs-create.md)
       + [Hantera virtuella rapportsviter](vrs/c-workflow-vrs/vrs-manage.md)
@@ -252,15 +252,15 @@ ht-degree: 7%
    + [CDA Workspace-mall](cda/workspace-template.md)
    + [Begränsa ett virtuellt rapportpaket till vissa datum](cda/limit-vrs-date.md)
    + [Vanliga frågor om enhetsövergripande analys](cda/faq.md)
-+ Larm {#alerts}
++ Aviseringar {#alerts}
    + [Översikt](c-alerts/intellligent-alerts.md)
    + [Skapa](c-alerts/alert-builder.md)
    + [Hantera](c-alerts/alert-manager.md)
    + [Användningsexempel](c-alerts/alerts-use-cases.md)
 + Klassificeringar {#classifications}
-   + [Klassificeringsöversikt](classifications/c-classifications.md)
+   + [Klassificeringsöversikt](classifications/classifications-overview.md)
    + Klassificeringsuppsättningar {#sets}
-      + [Översikt över klassificeringsuppsättningar](classifications/sets/overview.md)
+      + [Översikt](classifications/sets/overview.md)
       + Hantera klassificeringsuppsättningar {#manage}
          + [Klassificeringsuppsättningshanterare](classifications/sets/manage/set-manager.md)
          + [Skapa en klassificeringsuppsättning](classifications/sets/manage/create.md)
@@ -269,37 +269,34 @@ ht-degree: 7%
          + [Klassificeringsuppsättningsregler](classifications/sets/manage/rules.md)
       + [Jobbhanterare för klassificeringsuppsättning](classifications/sets/job-manager.md)
       + Konsolideringar av klassificeringsuppsättningar {#consolidations}
-         + [Konsolideringshanterare för klassificeringsuppsättning](classifications/sets/consolidations/manage.md)
-         + [Konsolideringsprocess för klassificeringsuppsättning](classifications/sets/consolidations/process.md)
-   + Classification Rule Builder {#classifications-rulebuilder}
-      + [Arbetsflöde för klassificeringsregelbyggaren](classifications/crb/classification-rule-builder.md)
+         + [Konsolideringshanteraren](classifications/sets/consolidations/manage.md)
+         + [Konsolideringsprocess](classifications/sets/consolidations/process.md)
+   + Klassificeringsregelbyggaren (äldre){#classifications-rulebuilder}
+      + [Översikt](classifications/crb/classification-rule-builder.md)
       + [Klassificeringsregeluppsättningar](classifications/crb/classification-rule-set.md)
       + [Klassificeringsregler](classifications/crb/classification-quickstart-rules.md)
-      + [Klassificeringsregler - definitioner](classifications/crb/classification-rule-definitions.md)
-      + [Underklassificeringar och regelbyggaren](classifications/crb/sub-classification-rule-builder.md)
-   + Klassificeringsimportör {#classifications-importer}
-      + [Klassificeringsimportör - översikt](classifications/importer/c-working-with-saint.md)
+      + [Klassificeringsregeldefinitioner](classifications/crb/classification-rule-definitions.md)
+      + [Underklassificeringar och regelbyggaren](classifications/crb/subclassification-rule-builder.md)
+   + Klassificeringsimportör (äldre){#classifications-importer}
+      + [Översikt över klassificeringsimporteraren](classifications/importer/c-working-with-saint.md)
       + [Klassificeringsdatafiler](classifications/importer/c-saint-data-files.md)
       + [Ta bort klassificeringsdata](classifications/importer/t-delete-classification-data.md)
-      + [Escape-klassificeringsdata](classifications/importer/t-classifications-escape-data.md)
-      + [Ej klassificerade nycklar](classifications/importer/nonclassified-keys.md)
       + [Klassificeringsmall](classifications/importer/c-download-saint-data.md)
-      + [Import av webbläsare och FTP](classifications/importer/import-file.md)
       + [Import av webbläsare](classifications/importer/browser-import.md)
       + [Webbläsarexport](classifications/importer/browser-export.md)
       + [FTP-import](classifications/importer/c-uploading-saint-data-files-via-ftp.md)
       + [FTP-export](classifications/importer/ftp-export.md)
       + [Bearbetningstid](classifications/importer/processing-time.md)
+      + [Underklassificeringar](classifications/importer/subclassifications.md)
       + [Felsökning](classifications/importer/troubleshooting.md)
-   + [Underklassificeringar](classifications/c-sub-classifications.md)
-   + [Vanliga frågor om klassificeringar](classifications/faq.md)
+      + [Vanliga frågor och svar](classifications/importer/importer-faq.md)
 + Platser {#locations}
    + [Platshanteraren](/help/components/locations/locations-manager.md)
    + [Importkonton i molnet](/help/components/locations/configure-import-accounts.md)
    + [Platser för molnimport](/help/components/locations/configure-import-locations.md)
 + [Schemalagda projekt](scheduled-projects-manager.md)
 + [Schemalagd rapportkö](scheduled-reports-admin.md)
-+ Rapporter i realtid {#real-time-reporting}
++ Realtidsrapportering {#real-time-reporting}
    + [Översikt över rapportering i realtid](c-real-time-reporting/realtime.md)
    + [Konfigurera realtidsrapporter](c-real-time-reporting/t-realtime-admin.md)
    + [Mätvärden och dimensioner som stöds i realtid](c-real-time-reporting/realtime-metrics.md)

@@ -4,7 +4,7 @@ keywords: Virtual Report Suite
 title: Virtuella rapportsviter och taggar för flera programsviter
 feature: VRS
 exl-id: 7e0a1f5b-26ac-438c-b481-33669039efe5
-source-git-commit: 6e9ea48df286b2bde6a071ab3d0f29a764382c6d
+source-git-commit: a40f30bbe8fdbf98862c4c9a05341fb63962cdd1
 workflow-type: tm+mt
 source-wordcount: '1634'
 ht-degree: 0%
@@ -21,7 +21,7 @@ Genom att ersätta taggning för flera programsviter med en global rapportserie 
 
 ## Riktlinjer
 
-Om du är osäker på om de användningsområden som beskrivs gäller för dig och din organisation, kontaktar du andra Adobe Analytics-administratörer eller ditt kontoteam på Adobe. De kan hjälpa er att bedöma era affärsbehov och ge en rekommendation.
+Om du är osäker på om de användningsområden som beskrivs gäller för dig och din organisation, kan du kontakta dina andra Adobe Analytics-administratörer eller ditt Adobe-kontoteam. De kan hjälpa er att bedöma era affärsbehov och ge en rekommendation.
 
 Tänk på följande när du avgör om du ska använda taggar för flera sviter eller virtuella rapportsviter:
 
@@ -37,7 +37,7 @@ Om du har en global rapportserie som kombinerar ett stort antal webbplatser, är
 
 En stor medieorganisation äger till exempel 100 webbegenskaper. Varje fastighet publicerar ett fåtal tusen nyhetsartiklar varje månad, förutom att ha alla artiklar från föregående månader. Den här organisationen använder en global rapportserie där eVar1 är &#39;Artikelnamn&#39;. Anta att det i den här rapporten finns ungefär 5 miljoner unika artikelnamn varje månad från de olika egenskaperna. Om du använder ett virtuellt rapportpaket inkluderas bara en del av de 5 miljoner värdena i det virtuella rapportpaketet. Resten inkluderas under lågtrafik. Om du använder taggar för flera programsviter kan varje enskild rapportserie se sin egen uppsättning med unika värden.
 
-Adobe kundtjänst kan ibland öka unika värdegränser för ett litet antal dimensioner, vilket helt kan eliminera problemet. Kontakta ditt kontoteam och kundtjänst för mer information.
+Adobe kundtjänst kan ibland öka unika värdegränser för ett litet antal dimensioner, vilket kan eliminera problemet helt och hållet. Kontakta ditt kontoteam och kundtjänst för mer information.
 
 ### Delade variabler i olika rapportsviter
 
@@ -45,7 +45,7 @@ Virtuella rapportsviter har inte sina egna uppsättningar med mått och mätvär
 
 Olika webbplatser har olika implementeringsbehov. Vissa dimensioner och händelser kan delas mellan två platser. En e-postregistrering kan till exempel använda samma händelse på flera webbplatser och utlösa samma anpassade händelse. Andra dimensioner kan vara specifika för en plats. Till exempel kan bara en av dina webbplatser ändra sin profilbild. Den här anpassade händelsen kommer bara att implementeras på den webbplats som stöder den.
 
-Se till att antalet unika mått och mätvärden får plats i en enda global rapportserie. Om du ser att det finns för många unika mått eller mätvärden granskar du varje dimension inom varje implementering. Det finns troligtvis överlappningar och dimensioner som inte är avgörande för företagets framgång. Du bör även använda [klassificeringar](/help/components/classifications/c-classifications.md). I stället för att hämta&quot;Produktnamn&quot; i eVar5 skapar du till exempel en produktnamnsklassificering som baseras på dimensionen&quot;Produkt&quot;. Klassificeringar i en källrapportsserie är automatiskt tillgängliga för alla beroende virtuella rapportsviter.
+Se till att antalet unika mått och mätvärden får plats i en enda global rapportserie. Om du ser att det finns för många unika mått eller mätvärden granskar du varje dimension inom varje implementering. Det finns troligtvis överlappningar och dimensioner som inte är avgörande för företagets framgång. Du bör även använda [klassificeringar](/help/components/classifications/classifications-overview.md). I stället för att hämta produktnamn i eVar5 skapar du till exempel en produktnamnsklassificering som baseras på produktdimensionen. Klassificeringar i en källrapportsserie är automatiskt tillgängliga för alla beroende virtuella rapportsviter.
 
 >[!TIP]
 >
@@ -71,7 +71,7 @@ Med dataflöden kan du få en daglig eller timbaserad export av alla dina Adobe 
 
 ### Dataanslutningar med partnerkonton
 
-Vissa partnerintegreringar med Adobe i Adobe Analytics är begränsade till ett partnerkonto per rapportsvit. Vissa organisationer kan behöva flera partnerkonton för samma integrering.
+Vissa Adobe partnerintegreringar i Adobe Analytics är begränsade till ett partnerkonto per rapportsvit. Vissa organisationer kan behöva flera partnerkonton för samma integrering.
 
 Exempelvis tillåts bara en Google DCM per rapportserie. Många företag har flera DCM-konton, vilket gör att olika varumärken, affärsenheter och regioner kan hantera sina annonser separat från varandra. Det går inte att konfigurera integreringar i virtuella rapportsviter. Om du har beroende dataanslutningar med flera konton bör du överväga att använda flera svit-taggning.
 
