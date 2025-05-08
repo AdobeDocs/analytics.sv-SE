@@ -1,9 +1,9 @@
 ---
-description: I Segment Builder finns en arbetsyta där du kan dra och släppa metriska Dimensioner, segment och händelser för att segmentera besökare baserat på behållarhierarkilogik, regler och operatorer. Med det här integrerade utvecklingsverktyget kan du skapa och spara enkla eller komplexa segment som identifierar besökarattribut och -åtgärder för besök och sidträffar.
+description: I Segment Builder finns en arbetsyta där du kan dra och släppa mått, segment och händelser för att segmentera besökare baserat på behållarhierarkiens logik, regler och operatorer. Med det här integrerade utvecklingsverktyget kan du skapa och spara enkla eller komplexa segment som identifierar besökarattribut och -åtgärder för besök och sidträffar.
 title: Skapa segment
 feature: Segmentation
 exl-id: 2107f301-4137-4e97-9aa7-07824b842e16
-source-git-commit: 08e29da4847e8ef70bd4435949e26265d770f557
+source-git-commit: 01623da785504061fac7c1e345efe2be35969d9b
 workflow-type: tm+mt
 source-wordcount: '1961'
 ht-degree: 1%
@@ -17,7 +17,7 @@ ht-degree: 1%
 >[!CONTEXTUALHELP]
 >id="components_filters_createaudience"
 >title="Skapa publik"
->abstract="Målgrupper kan skapas från ett filter och delas med Adobe Experience Platform för aktivering."
+>abstract="Målgrupper kan skapas från ett segment och delas med Adobe Experience Platform för aktivering."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -26,7 +26,7 @@ ht-degree: 1%
 >[!CONTEXTUALHELP]
 >id="components_filters_datapreview"
 >title="Förhandsgranska data"
->abstract="Jämför data i det här filtret med data i datavyn. Procentandelen för förhandsgranskning baseras på det totala antalet i datavyn från de **senaste 90 dagarna**.<br><br/>Om förhandsgranskningen inte läses in kan anslutningen fortfarande återfyllas."
+>abstract="Jämför data i det här segmentet med data i datavyn. Procentandelen för förhandsgranskning baseras på det totala antalet i datavyn från de **senaste 90 dagarna**.<br><br/>Om förhandsgranskningen inte läses in kan anslutningen fortfarande återfyllas."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -66,7 +66,7 @@ Det finns flera sätt att komma åt segmentbyggaren:
 
 * **Analytics Top navigation**: Click **[!UICONTROL Analytics]** > **[!UICONTROL Components]** > **[!UICONTROL Segments]**.
 * **[!UICONTROL Analysis Workspace]**: Klicka på **[!UICONTROL Analytics]** > **[!UICONTROL Workspace]**, öppna ett projekt och klicka på **[!UICONTROL + New]** > **[!UICONTROL Create Segment]**.
-* **[!UICONTROL Report Builder]**: [Lägg till eller redigera segment i Report Builder](https://experienceleague.adobe.com/sv/docs/analytics/analyze/report-builder/work-with-segments).
+* **[!UICONTROL Report Builder]**: [Lägg till eller redigera segment i Report Builder](https://experienceleague.adobe.com/en/docs/analytics/analyze/report-builder/work-with-segments).
 
 ## Builder-villkor {#section_F61C4268A5974C788629399ADE1E6E7C}
 
@@ -84,10 +84,10 @@ Du kan lägga till regeldefinitioner och behållare för att definiera dina segm
    * **[!UICONTROL + Add container]**: Gör att du kan lägga till en ny behållare (under behållaren på den översta nivån) i segmentdefinitionen.
    * **[!UICONTROL Exclude]**: Gör att du kan definiera segmentet genom att utesluta en eller flera dimensioner, segment eller mått.
 
-1. **[!UICONTROL Dimensions]**: Komponenter dras och tas bort från listan Dimensioner (orange sidofält).
+1. **[!UICONTROL Dimensions]**: Komponenter dras och tas bort från dimensionslistan (orange sidofält).
 1. **[!UICONTROL Operator]**: Du kan jämföra och begränsa värden med valda operatorer.
 1. **[!UICONTROL Value]**: Det värde du angav eller valde för dimensionen, segmentet eller måttet.
-1. **[!UICONTROL Attribution Models]**: Dessa modeller är bara tillgängliga för dimensioner och avgör vilka värden i en dimension som ska segmenteras. Dimensioner är särskilt användbara vid sekventiell segmentering.
+1. **[!UICONTROL Attribution Models]**: Dessa modeller är bara tillgängliga för dimensioner och avgör vilka värden i en dimension som ska segmenteras. Dimension-modeller är särskilt användbara vid sekventiell segmentering.
 
    * **[!UICONTROL Repeating]** (standard): Inkluderar instanser och beständiga värden för dimensionen.
    * **[!UICONTROL Instance]**: Inkluderar instanser för dimensionen.
@@ -108,8 +108,8 @@ Du kan lägga till regeldefinitioner och behållare för att definiera dina segm
 1. Operatorn **[!UICONTROL Comparison]**: Du kan jämföra och begränsa värden med valda operatorer.
 1. **[!UICONTROL Value]**: Det värde du angav eller valde för dimensionen, segmentet eller måttet.
 1. **[!UICONTROL X]**: (Ta bort) Gör att du kan ta bort den här delen av segmentdefinitionen.
-1. **[!UICONTROL Experience Cloud publishing]**: Om du publicerar ett Adobe Analytics-segment till Experience Cloud kan du använda segmentet för marknadsföringsaktiviteter i [!DNL Audience Manager] och i andra aktiveringskanaler. [Läs mer …](/help/components/segmentation/segmentation-workflow/seg-publish.md)
-1. **[!UICONTROL Audience library]**: Adobe målgruppstjänster hanterar översättningen av besöksdata till målgruppssegmentering. Att skapa och hantera målgrupper liknar alltså att skapa och använda segment, med möjlighet att dela målgruppssegmentet till Experience Cloud. [Läs mer …](https://experienceleague.adobe.com/docs/core-services/interface/audiences/audience-library.html?lang=sv-SE)
+1. **[!UICONTROL Experience Cloud publishing]**: Om du publicerar ett Adobe Analytics-segment till Experience Cloud kan du använda segmentet för marknadsföringsaktivitet i [!DNL Audience Manager] och i andra aktiveringskanaler. [Läs mer …](/help/components/segmentation/segmentation-workflow/seg-publish.md)
+1. **[!UICONTROL Audience library]**: Adobe målgruppstjänster hanterar översättningen av besöksdata till målgruppssegmentering. Att skapa och hantera målgrupper liknar alltså att skapa och använda segment, med möjlighet att dela målgruppssegmentet med Experience Cloud. [Läs mer …](https://experienceleague.adobe.com/docs/core-services/interface/audiences/audience-library.html)
 1. **[!UICONTROL Search]**: Söker i listan över dimensioner, segment eller mått.
 1. **[!UICONTROL Dimensions]**: (Lista) Klicka på rubriken för att expandera.
 1. **[!UICONTROL Metrics]**: Klicka på rubriken för att expandera.
@@ -122,7 +122,7 @@ Du kan lägga till regeldefinitioner och behållare för att definiera dina segm
 
 ## Skapa segment {#build-segments}
 
-1. Dra bara en Dimension, ett segment eller en metrisk händelse från den vänstra rutan till fältet [!UICONTROL Definitions].
+1. Dra en Dimension-, Segment- eller metrisk händelse från den vänstra rutan till fältet [!UICONTROL Definitions].
 
    ![](assets/drag_n_drop_dimension.png)
 
@@ -213,7 +213,7 @@ Genom att använda segmentstackning kan du minska antalet segment till 22 och st
 
 Segmentmallar finns för vanliga användningsfall för segmentering, som&quot;förstagångsbesök&quot; eller&quot;besök från mobila enheter&quot;. De är tillgängliga i Workspace-projekt och i segmentbyggaren som byggstenar för nya segment.
 
-Mallar betecknas med Adobe&quot;A&quot;-logotypen. Ett exempel på mallarna visas nedan:
+Mallar betecknas med Adobe &quot;A&quot;-logotyp. Ett exempel på mallarna visas nedan:
 
 <table id="table_98B87D807E9344C9BEBF072C65D87B1B"> 
  <thead> 

@@ -4,9 +4,9 @@ description: Du kan ange allmänna inställningar och projektinställningar för
 feature: Workspace Basics
 role: User, Admin
 exl-id: f32e3061-f396-4730-96e1-d251b00e32f0
-source-git-commit: d7a6867796f97f8a14cd8a3cfad115923b329c7c
+source-git-commit: bb8e0e5527e12556aa670677dc79248770857359
 workflow-type: tm+mt
-source-wordcount: '3108'
+source-wordcount: '3337'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Du kan hantera inställningar för Analysis Workspace och dess relaterade kompon
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Hantera inställningar](https://video.tv.adobe.com/v/3429989/?quality=12&learn=on&captions=swe){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Hantera inställningar](https://video.tv.adobe.com/v/332600/?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 
@@ -51,7 +51,22 @@ Du kan anpassa allmänna inställningar för alla nya projekt som du skapar i An
 | Visa tips | Visar tips i en blå ruta längst ned till höger i Analysis Workspace. <p>Det här alternativet är aktiverat som standard.</p> |
 | Komponenter som visas i grupper med vänster skena | Välj hur många av varje komponent som ska visas på komponentmenyn i den vänstra listen. <p>Om du väljer 0 är komponenten inte längre tillgänglig från den vänstra listen på arbetsytorna.</p><p>Som standard visas fem komponenter för vart och ett av följande:</p> <ul><li>Mått</li><li>Mätvärden</li><li>Filter</li><li>Datumintervall</li></ul> <p>Mer information om komponenter i Analysis Workspace finns i [Komponentöversikt](/help/analyze/analysis-workspace/components/analysis-workspace-components.md).</p> |
 
-## Företagsinställningar
+## Företagsinställningar {#company-preferences}
+
+>[!CONTEXTUALHELP]
+>id="workspace_prefs_shareonlyworkspace"
+>title="Tillåt endast delning med Workspace-användare"
+>abstract="När alternativet **[!UICONTROL Share with anyone]** är aktiverat är det inte längre tillgängligt för användare när de delar ett Analysis Workspace-projekt. Personer som tidigare fått åtkomst till ett projekt via det här delningsalternativet har inte längre åtkomst till projektet."
+
+>[!CONTEXTUALHELP]
+>id="workspace_prefs_requireexperiencecloudauth"
+>title="Kräv Experience Cloud-autentisering"
+>abstract="När det här alternativet är aktiverat måste personer som får åtkomst till ett projekt från alternativet **[!UICONTROL Share with anyone]** i Analysis Workspace autentisera med sina Experience Cloud-autentiseringsuppgifter."
+
+>[!CONTEXTUALHELP]
+>id="workspace_prefs_projectcommenting"
+>title="Tillåt kommentarer i projekt"
+>abstract="När det här alternativet är aktiverat finns det ett kommentarsområde till höger om varje projekt i Analysis Workspace."
 
 Du kan uppdatera företagsinställningarna som gäller för alla användare och projekt i organisationen. Mer information om hur du kommer åt de här inställningarna finns i [Uppdatera inställningar](#update-preferences).
 
@@ -61,11 +76,26 @@ Du kan uppdatera företagsinställningarna som gäller för alla användare och 
 |  | Dölj fliken Rapporter | Döljer fliken Rapporter för alla användare i organisationen. |
 | **Projektdelning** | | |
 | | Tillåt endast delning med Workspace-användare | <p>När det här alternativet är aktiverat kan användare i organisationen inte se alternativet &quot;Dela med någon&quot; på menyn Dela. Det innebär att användare inte kan dela projekt med personer som inte har ett Analysis Workspace-konto i organisationen enligt beskrivningen i [Dela ett projekt med någon (ingen inloggning krävs)](/help/analyze/analysis-workspace/curate-share/share-projects.md#share-public-link) i [Dela projekt](/help/analyze/analysis-workspace/curate-share/share-projects.md).</p><p>Tänk på följande när du aktiverar eller inaktiverar det här alternativet:</p> <ul><li><p>När du aktiverar det här alternativet kan personer som tidigare fått åtkomst till ett projekt via delningsalternativet &quot;Dela med vem som helst&quot; inte längre få åtkomst till projektet.</p></li><li><p>Om det här alternativet är aktiverat (för att endast tillåta delning med Workspace-användare) och sedan inaktiveras (för att tillåta delning med vem som helst), kommer personer som tidigare fått åtkomst till ett projekt via delningsalternativet &quot;Dela med vem som helst&quot; inte automatiskt att få tillgång till projektet. I det här fallet måste användaren som delade projektet aktivera alternativet [!UICONTROL **Länk är aktivt**] som är tillgängligt när ett projekt delas med någon ([!UICONTROL **Dela**] > [!UICONTROL **Dela med vem som helst**]), vilket beskrivs i [Dela ett projekt med vem som helst (ingen inloggning krävs)](/help/analyze/analysis-workspace/curate-share/share-projects.md#share-public-link) i [Dela projekt](/help/analyze/analysis-workspace/curate-share/share-projects.md).</p></li> |
-| | Kräv autentisering av Experience Cloud | <p>När det här alternativet är aktiverat måste personer som får åtkomst till ett projekt från alternativet &quot;Dela med vem som helst&quot; i Analysis Workspace autentisera med sina inloggningsuppgifter för Experience Cloud.</p> <p>När det här alternativet är aktiverat aktiveras alternativet&quot;Kräv autentisering av Experience Cloud&quot; varje gång en användare delar ett projekt med delningsalternativet&quot;Dela med vem som helst&quot; i delningsdialogrutan och det kan inte inaktiveras av den användare som delar projektet. (Mer information om hur användare kan dela projekt med vem som helst finns i [Dela ett projekt med vem som helst (ingen inloggning krävs)](/help/analyze/analysis-workspace/curate-share/share-projects.md#share-public-link) i [Dela projekt](/help/analyze/analysis-workspace/curate-share/share-projects.md).)</p> <p>Tänk på följande när du aktiverar det här alternativet:</p><ul><li><p>När du aktiverar det här alternativet inaktiveras alla projekt som tidigare delats med delningsalternativet &quot;Dela med vem som helst&quot; och som inte har alternativet &quot;Kräv autentisering av Experience Cloud&quot; aktiverat.</p></li> <li><p>Om det här alternativet är aktiverat (för att kräva autentisering från Experience Cloud) och sedan inaktiverat (för att alla som har länken ska kunna komma åt projektet), kommer personer som tidigare fått åtkomst till ett projekt via delningsalternativet &quot;Dela med vem som helst&quot; inte automatiskt att få tillgång till projektet. I det här fallet måste användaren som delade projektet aktivera alternativet &quot;Länken är aktiv&quot; som är tillgängligt när ett projekt delas med någon ([!UICONTROL **Dela**] > [!UICONTROL **Dela med vem som helst**] > [!UICONTROL **Länken är aktiv**]), vilket beskrivs i [Dela ett projekt med vem som helst (ingen inloggning krävs)](/help/analyze/analysis-workspace/curate-share/share-projects.md#share-public-link) i [Dela projekt](/help/analyze/analysis-workspace/curate-share/share-projects.md) .</p></li> <li><p>Det här alternativet är bara tillgängligt om enkel inloggning har implementerats i din organisation. Mer information om hur systemadministratörer kan aktivera enkel inloggning för din organisation finns i [Konfigurera identitet och enkel inloggning](https://helpx.adobe.com/se/enterprise/using/set-up-identity.html){target=_blank}.</p><p>Om enkel inloggning har konfigurerats för din organisation kontrollerar du om någon typ av autokontoskapande har implementerats i konsolen. Vanligtvis konfigurerar en systemadministratör detta enligt beskrivningen i [Aktivera automatisk kontogenerering](https://helpx.adobe.com/se/enterprise/using/automatic-account-creation.html){target=_blank}.</p></li><li><p>Om organisationen befinner sig i en bransch där det krävs HIPAA-kompatibilitet aktiveras det här alternativet automatiskt och kan inte inaktiveras.</p></li></ul> |
+| | Kräv Experience Cloud-autentisering | <p>När det här alternativet är aktiverat måste personer som får åtkomst till ett projekt från alternativet Dela med vem som helst i Analysis Workspace autentisera med sina Experience Cloud-behörigheter.</p> <p>När det här alternativet är aktiverat aktiveras alternativet&quot;Kräv Experience Cloud-autentisering&quot; varje gång en användare delar ett projekt med delningsalternativet i delningsdialogrutan och det kan inte inaktiveras av den användare som delar projektet. (Mer information om hur användare kan dela projekt med vem som helst finns i [Dela ett projekt med vem som helst (ingen inloggning krävs)](/help/analyze/analysis-workspace/curate-share/share-projects.md#share-public-link) i [Dela projekt](/help/analyze/analysis-workspace/curate-share/share-projects.md).)</p> <p>Tänk på följande när du aktiverar det här alternativet:</p><ul><li><p>När du aktiverar det här alternativet inaktiveras alla projekt som tidigare delats med delningsalternativet &quot;Dela med vem som helst&quot; och som inte har alternativet &quot;Kräv Experience Cloud-autentisering&quot; aktiverat.</p></li> <li><p>Om det här alternativet är aktiverat (för att kräva Experience Cloud-autentisering) och sedan inaktiverat (för att alla som har länken ska kunna komma åt projektet), kommer personer som tidigare fått åtkomst till ett projekt via delningsalternativet &quot;Dela med vem som helst&quot; inte automatiskt att få tillgång till projektet. I det här fallet måste användaren som delade projektet aktivera alternativet &quot;Länken är aktiv&quot; som är tillgängligt när ett projekt delas med någon ([!UICONTROL **Dela**] > [!UICONTROL **Dela med vem som helst**] > [!UICONTROL **Länken är aktiv**]), vilket beskrivs i [Dela ett projekt med vem som helst (ingen inloggning krävs)](/help/analyze/analysis-workspace/curate-share/share-projects.md#share-public-link) i [Dela projekt](/help/analyze/analysis-workspace/curate-share/share-projects.md) .</p></li> <li><p>Det här alternativet är bara tillgängligt om enkel inloggning har implementerats i din organisation. Mer information om hur systemadministratörer kan aktivera enkel inloggning för din organisation finns i [Konfigurera identitet och enkel inloggning](https://helpx.adobe.com/enterprise/using/set-up-identity.html){target=_blank}.</p><p>Om enkel inloggning har konfigurerats för din organisation kontrollerar du om någon typ av autokontoskapande har implementerats i konsolen. Vanligtvis konfigurerar en systemadministratör detta enligt beskrivningen i [Aktivera automatiskt skapande av konto](https://helpx.adobe.com/enterprise/using/automatic-account-creation.html){target=_blank}.</p></li><li><p>Om organisationen befinner sig i en bransch där det krävs HIPAA-kompatibilitet aktiveras det här alternativet automatiskt och kan inte inaktiveras.</p></li></ul> |
 
 {style="table-layout:auto"}
 
-## Inställningar för projekt och analys
+## Inställningar för projekt och analys {#project-analyses-preferences}
+
+>[!CONTEXTUALHELP]
+>id="workspace_prefs_categoricalpalette"
+>title="Kategoriserad palett"
+>abstract="Gäller många visualiseringar i Analysis Workspace och guidad analys. Varje färg representerar ett tydligt kategoriserat värde."
+
+>[!CONTEXTUALHELP]
+>id="workspace_prefs_divergingpalette"
+>title="Förvrängningspalett"
+>abstract="Används för kohorttabellen i Analysis Workspace och för guidad analys av användartillväxt. Den här paletten har en numerisk betydelse med två extremvärden och en baslinje i mitten."
+
+>[!CONTEXTUALHELP]
+>id="workspace_prefs_sequentialpalette"
+>title="Sekventiell palett"
+>abstract="Används för den guidade analysen av frekvenstrender (staplade fält). Den här paletten har en numerisk innebörd från ljust till mörkt."
 
 Du kan anpassa projektinställningarna för alla nya projekt som du skapar i Analysis Workspace. Mer information om hur du kommer åt de här inställningarna finns i [Uppdatera inställningar](#update-preferences).
 
@@ -76,18 +106,35 @@ Klicka på de länkade inställningsrubrikerna för mer information och kontext 
 | Avsnitt | Inställningar | Alternativ |
 | --- | --- | --- |
 | **Visning** | | |
-|  | [Visa densitet](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/view-density.html?lang=sv-SE) | Välj hur mycket innehåll som ska visas på skärmen genom att minska den lodräta utfyllnaden för den vänstra listen, frihandstabeller och kohorttabeller. <ul><li>Kompakt</li><li>Bekväm</li><li>Utökad (standard)</li></ul> |
-| | [Färgpaletten](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/color-palettes.html?lang=sv-SE) | Välj de visualiseringsfärgpaletter som används i Analysis Workspace.<ul><li>**Kategorisisk palett**: Används för många visualiseringar i Analysis Workspace. Varje färg representerar ett tydligt kategoriserat värde. Välj mellan alternativ som tillhandahålls av Adobe eller ange en anpassad palett som definieras av kommaavgränsade hexvärden.</li><li>**Divergerande palett**: Används i kohorttabellen i Analysis Workspace. Den här paletten har en numerisk betydelse med två extremvärden och en baslinje i mitten.</li><li>**Sekventiell palett**: Används för den guidade analysen av frekvenstrender (staplade fält). Den här paletten har en numerisk innebörd från ljust till mörkt.</li></ul> |
+|  | [Visa densitet](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/view-density.html) | Välj hur mycket innehåll som ska visas på skärmen genom att minska den lodräta utfyllnaden för den vänstra listen, frihandstabeller och kohorttabeller. <ul><li>Kompakt</li><li>Bekväm</li><li>Utökad (standard)</li></ul> |
+| | [Färgpaletten](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/color-palettes.html) | Välj de visualiseringsfärgpaletter som används i Analysis Workspace.<ul><li>**Kategorisisk palett**: Används för många visualiseringar i Analysis Workspace. Varje färg representerar ett tydligt kategoriserat värde. Välj mellan alternativ som tillhandahålls av Adobe eller ange en anpassad palett som definieras av kommaavgränsade hexvärden.</li><li>**Divergerande palett**: Används i kohorttabellen i Analysis Workspace. Den här paletten har en numerisk betydelse med två extremvärden och en baslinje i mitten.</li><li>**Sekventiell palett**: Används för den guidade analysen av frekvenstrender (staplade fält). Den här paletten har en numerisk innebörd från ljust till mörkt.</li></ul> |
 | **Data** | | |
-|  | [Rapportsviten](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html?lang=sv-SE&#report-suite) | Välj var tabeller och visualiseringar ska hämta sina data. <ul><li>Senaste (standard)</li><li>Specifik rapportsvit som valts i en lista</li></ul> |
-|  | [Kalender](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html?lang=sv-SE&#calendar) | Välj i en lista över: <ul><li>Intervall som tillhandahålls av Adobe (standard är denna månad)</li><li>Anpassade intervall</li></ul> |
-|  | [Paneltyp](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html?lang=sv-SE) | <ul><li>Frihandsfigur (standard)</li><li>Tom</li><li>Snabba insikter</li></ul> |
+|  | [Rapportsviten](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html?#report-suite) | Välj var tabeller och visualiseringar ska hämta sina data. <ul><li>Senaste (standard)</li><li>Specifik rapportsvit som valts i en lista</li></ul> |
+|  | [Kalender](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html?#calendar) | Välj i en lista över: <ul><li>Intervall som tillhandahålls av Adobe (standard är denna månad)</li><li>Anpassade intervall</li></ul> |
+|  | [Paneltyp](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html) | <ul><li>Frihandsfigur (standard)</li><li>Tom</li><li>Snabba insikter</li></ul> |
 |  | Antal upprepande instanser | Anger om upprepade instanser räknas i rapporter. Den här inställningen (när den är aktiverad) hanterar flera på varandra följande sidvyer till samma sida som flera sidvyer. När det är inaktiverat räknas de som en enda sidvy. <p>**Obs!** Den här inställningen påverkar bara vissa mått (t.ex. enkelsidiga besök) och den gäller inte för visualiseringar av flöde och utfall.</p> |
 |  | Nummerformat | <ul><li>1 000,00 (standard)</li><li>1.000,00</li><li>1 000,00</li></ul> |
 |  | CSV-avgränsningstecken | <ul><li>Komma (standard)</li><li>Semikolon</li><li>Colon</li><li>Pipe</li><li>Period</li><li>Blanksteg</li><li>Tabb</li></ul> |
 |  | Visa anteckningar | Välj om anteckningar ska visas i dina projekt. Mer information om anteckningar finns i [Översikt över anteckningar](/help/analyze/analysis-workspace/components/annotations/overview.md). |
 
-## Inställningar för frihandstabell
+## Inställningar för frihandstabell {#freeform-table-preferences}
+
+>[!CONTEXTUALHELP]
+>id="workspace_prefs_showanomalies"
+>title="Visa avvikelser"
+>abstract="Om du väljer **[!UICONTROL Show anomalies]** körs avvikelseidentifiering automatiskt på den första metriska kolumnen som läggs till i en tidsserievisualisering av frihandstabell."
+
+>[!CONTEXTUALHELP]
+>id="workspace_prefs_showforecast"
+>title="Visa prognos"
+>abstract="Om du väljer **[!UICONTROL Show forecast]** prognostiseras automatiskt den första måttkolumnen som läggs till i en tidsserie visualisering av friformstabell."
+
+
+>[!CONTEXTUALHELP]
+>id="workspace_prefs_defaulttablemetric"
+>title="Standardtabellmått"
+>abstract="Välj standardmåttet som ska användas för frihandstabeller. Om den markerade datavyn inte innehåller det valda standardmåttet växlar tabellen automatiskt till ett annat primärt mått."
+
 
 Du kan anpassa inställningarna för frihandstabeller för alla nya projekt som du skapar i Analysis Workspace. Mer information om hur du kommer åt de här inställningarna finns i [Uppdatera inställningar](#update-preferences).
 
@@ -222,7 +269,7 @@ Det går inte att ångra den här åtgärden.
 
 Om du föredrar en mörk bakgrund för ditt Adobe Analytics-användargränssnitt kan du växla till [!UICONTROL Dark theme].
 
-1. Klicka på användarikonen Experience Cloud längst upp till höger.
+1. Klicka på Experience Cloud-ikonen längst upp till höger.
 
    ![mörkt-tema](assets/dark-theme.png)
 
