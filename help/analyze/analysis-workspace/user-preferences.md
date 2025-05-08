@@ -18,7 +18,7 @@ Du kan hantera inställningar för Analysis Workspace och dess relaterade kompon
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Hantera inställningar](https://video.tv.adobe.com/v/332600/?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Hantera inställningar](https://video.tv.adobe.com/v/3429989/?quality=12&learn=on&captions=swe){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 
