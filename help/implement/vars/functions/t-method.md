@@ -4,16 +4,16 @@ description: Skicka ett spårningsanrop för sidvy till Adobe.
 feature: Variables
 exl-id: c4f5b9e2-57a3-4d89-8378-39b7a4737afc
 role: Admin, Developer
-source-git-commit: e47bee837faf9b8cf080d878da860795ced014d5
+source-git-commit: e16b0d7b3fe585dc8e9274a77833ad5af3c63124
 workflow-type: tm+mt
-source-wordcount: '432'
+source-wordcount: '430'
 ht-degree: 0%
 
 ---
 
 # t()
 
-Metoden `t()` är en viktig kärnkomponent för Adobe Analytics. Den tar alla analysvariabler som definieras på sidan, kompilerar dem till en bildbegäran och skickar data till datainsamlingsservrarna i Adobe.
+Metoden `t()` är en viktig kärnkomponent för Adobe Analytics. Den tar alla analysvariabler som definieras på sidan, kompilerar dem till en bildbegäran och skickar dessa data till Adobe datainsamlingsservrar.
 
 Ta till exempel följande JavaScript-kod:
 
@@ -57,7 +57,7 @@ alloy("sendEvent", {
 });
 ```
 
-Mer information finns i [Spåra händelser](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/tracking-events.html?lang=sv-SE) i Web SDK-dokumentationen.
+Mer information finns i [`sendEvent`](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/sendevent/overview) i dokumentationen för Web SDK.
 
 ## Anrop om spårning av sidvy med Adobe Analytics-tillägget
 
@@ -70,7 +70,7 @@ Adobe Analytics-tillägget i Adobe Experience Platform Data Collection har en de
 1. Ställ in listrutan [!UICONTROL Extension] på **[!UICONTROL Adobe Analytics]** och [!UICONTROL Action Type] på **[!UICONTROL Send Beacon]**.
 1. Klicka på alternativknappen `s.t()`.
 
-## s.t()-metoden i AppMeasurementet och den anpassade kodredigeraren för Analytics-tillägget
+## s.t()-metoden i AppMeasurement och den anpassade kodredigeraren för Analytics-tillägget
 
 Anropa metoden `s.t()` när du vill skicka ett spårningsanrop till Adobe.
 
@@ -88,4 +88,4 @@ s.t(y);
 
 >[!NOTE]
 >
->I tidigare versioner av AppMeasurementet anropades funktionen med flera kodrader. Den extra koden rymmer temporärt tillfälliga lösningar för olika webbläsare. Det här kodblocket behövs inte längre för standardisering och bästa praxis i moderna webbläsare. Endast metodanropet `s.t()` behövs nu.
+>I tidigare versioner av AppMeasurement användes flera kodrader för att anropa funktionen. Den extra koden rymmer temporärt tillfälliga lösningar för olika webbläsare. Det här kodblocket behövs inte längre för standardisering och bästa praxis i moderna webbläsare. Endast metodanropet `s.t()` behövs nu.
