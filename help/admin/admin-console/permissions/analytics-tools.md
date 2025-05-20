@@ -4,10 +4,10 @@ description: Använd behörighetsobjekt i Analytics Tools för att ge åtkomst t
 exl-id: 8c2ce50b-f75f-41c3-91ac-a0426ce27438
 feature: Admin Tools
 role: Admin
-source-git-commit: 938795c7378cb1f0537ff84eddeab3feddf8d073
+source-git-commit: 8f1a17d2b07d5b37ef6d3d3f426234b29be61319
 workflow-type: tm+mt
-source-wordcount: '368'
-ht-degree: 2%
+source-wordcount: '360'
+ht-degree: 0%
 
 ---
 
@@ -17,27 +17,29 @@ Behörighetsobjekt för Analytics-verktyg ger åtkomst till funktioner i Adobe A
 
 | Behörighetsobjekt för analysverktyg | Beskrivning |
 |----|----|
-| [!UICONTROL Activity Map] | Ger åtkomst till Verktyg > Activity Map. Tillåter användaren att använda tillägget Activity Map. |
-| [!UICONTROL Advertising Analytics Management] | Tillåter användare att konfigurera/redigera/visa annonssökkonton. |
-| [!UICONTROL Analysis Workspace Access] | Ger åtkomst till Analysis Workspace. |
+| [!UICONTROL Activity Map] | Ger åtkomst till Verktyg > Activity Map. Användaren kan också använda Activity Map-tillägget. |
+| [!UICONTROL Advertising Analytics Management] | Ger åtkomst till Admin > Alla administratörer > Advertising Analytics. |
 | [!UICONTROL Analysis Workspace: Save As Template] | Ger åtkomst till Projekt > Spara som mall i Analysis Workspace. |
 | [!UICONTROL Annotation Creation] | Ger möjlighet att skapa anteckningar. |
 | [!UICONTROL Calculated Metric Creation] | Ger möjlighet att skapa beräknade värden för alla Analytics-funktioner. |
 | [!UICONTROL Co-Branding] | Används inte |
-| [!UICONTROL Code Manager] | Vi har kvar dem i bakgrunden. Ger åtkomst till Admin > Alla administratörer > Kodhanteraren. I de flesta fall bör du i stället använda de bibliotek som ingår i Adobe Analytics-tillägget i Adobe Experience Platform Data Collection. |
+| [!UICONTROL Code Manager] | Ger åtkomst till Admin > Alla administratörer > Kodhanteraren. |
 | [!UICONTROL Code Manager - Web Services] | Ger åtkomst till Code Manager via 1.4 API. |
-| [!UICONTROL Excel License Users] | Används inte. |
+| [!UICONTROL Component migration] | Ger åtkomst till Admin > Alla administratörer > Komponentmigrering. |
+| [!UICONTROL Current Data] | Används inte |
+| [!UICONTROL Excel License Users] | Används inte |
 | [!UICONTROL Hide Report Suites] | Ger åtkomst till Admin > All admin > Company settings > Hide Report Suites. Ger möjlighet att dölja alla rapporteringsprogram i organisationen, oavsett åtkomst till deras rapporteringsprogram. |
-| [!UICONTROL Integrations (Create)] | Används inte. Data Connectors har blivit uppsagd. |
-| [!UICONTROL Integrations (Update)] | Används inte. |
-| [!UICONTROL Integrations (Delete)] | Används inte. |
+| [!UICONTROL Integrations (Create)] | Används inte |
+| [!UICONTROL Integrations (Update)] | Används inte |
+| [!UICONTROL Integrations (Delete)] | Används inte |
 | [!UICONTROL Labs Access] | Ge användarna tillgång till Labs och prototyperna i Labs. |
 | [!UICONTROL Logs] | Ger åtkomst till Admin > Alla administratörer > Loggar. |
 | [!UICONTROL Logs - Web Services] | Ger åtkomst till pull-loggar via 1.4-API:t. |
-| [!UICONTROL Mobile App Admin] | Används inte. |
+| [!UICONTROL Mobile App Admin] | Används inte |
 | [!UICONTROL Pending Actions] | Ger åtkomst till Admin > Alla administratörer > Företagsinställningar > Väntande åtgärder. |
 | [!UICONTROL Preferences] | Används inte |
 | [!UICONTROL Report Builder] | Aktiverar hämtningsknappen under Verktyg > Report Builder och tillåter att användaren autentiserar i Microsoft Excel. |
+| [!UICONTROL Reports & Analytics Access] | Används inte |
 | [!UICONTROL Security] | Ger åtkomst till Admin > All admin > Company settings > Security Manager. |
 | [!UICONTROL Segment Creation] | Ger möjlighet att skapa och dela segment över alla Analytics-funktioner. |
 | [!UICONTROL Segment Publishing] | Ger möjlighet att göra ett segment till en Experience Cloud-målgrupp när du skapar eller redigerar ett segment. |
@@ -47,3 +49,4 @@ Behörighetsobjekt för Analytics-verktyg ger åtkomst till funktioner i Adobe A
 | [!UICONTROL Traffic Management] | Ger åtkomst till Admin > All admin > Traffic Management. |
 | [!UICONTROL Web Service Access] | Ger möjlighet att använda API:t, inklusive autentisering med tredjepartswebbplatser och sändande API-anrop. |
 | [!UICONTROL Web Services] | Ger åtkomst till Admin > All admin > Company settings > Web Services. |
+| [!UICONTROL Workspace Project Access] | Ger åtkomst till Analysis Workspace. **Det här behörighetsobjektet krävs för att använda Adobe Analytics.** |
