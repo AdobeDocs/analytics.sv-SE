@@ -3,140 +3,106 @@ description: Läs mer om
 title: Mättyp och attribuering
 feature: Calculated Metrics
 exl-id: 3fb98227-e2ef-4829-ae84-812f845470ee
-source-git-commit: 75d8705170169a0ef9f1ee59b12e4bb2c3afac7a
+source-git-commit: 21c4d1b591daf7229bd36845e42e2dec473e792f
 workflow-type: tm+mt
-source-wordcount: '576'
+source-wordcount: '635'
 ht-degree: 0%
 
 ---
 
 # Mättyp och attribuering {#metric-type-attribution}
 
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="components_calculatedmetrics_nondefaultattributionmodel"
->title="Använd en attribueringsmodell som inte är standard"
->abstract="Aktivera en icke-standardattribueringsmodell för det valda måttet."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_attributionmodel"
 >title="Modell"
 >abstract="Välj en attribueringsmodell för måttet."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_attribution_lasttouch"
 >title="Senaste beröring"
 >abstract="100 % av krediterna går till det sista dimensionsvärdet som en besökare kan se."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_attribution_firsttouch"
 >title="Första beröring"
 >abstract="100 % av krediterna går till det första dimensionsvärdet som en besökare ser."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_attribution_linear"
 >title="Linjär"
 >abstract="Krediten fördelas jämnt över alla dimensionsvärden."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_attribution_participation"
 >title="deltagande"
 >abstract="100 % tack för alla dimensionsvärden som ses av en besökare.<br/>Kolumnsummor är överskattade."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_attribution_sametouch"
 >title="Samma beröring"
 >abstract="Kreditering ges endast till dimensionsvärden som inträffar för samma händelse som konvertering."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
+>[!CONTEXTUALHELP]
+>id="components_calculatedmetrics_attribution_instance"
+>title="Samma beröring"
+>abstract="Kreditering ges endast till dimensionsvärden som inträffar för samma händelse som konvertering."
 
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_attribution_ushaped"
 >title="U Shaped"
 >abstract="40 % krediterar det första dimensionsvärdet, 40 % fram till det sista, 20 % delas av mitten."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_attribution_jcurve"
 >title="J-kurva"
 >abstract="60 % krediterar det sista dimensionsvärdet, 20 % till det första och 20 % delas av mitten."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
+>[!CONTEXTUALHELP]
+>id="components_calculatedmetrics_attribution_jshaped"
+>title="J-kurva"
+>abstract="60 % krediterar det sista dimensionsvärdet, 20 % till det första och 20 % delas av mitten."
 
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_attribution_inversej"
 >title="Inverterad J"
 >abstract="60 % krediterar det första dimensionsvärdet, 20 % till det sista, 20 % delas av mitten."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
+>[!CONTEXTUALHELP]
+>id="components_calculatedmetrics_attribution_reversejshaped"
+>title="Inverterad J"
+>abstract="60 % krediterar det första dimensionsvärdet, 20 % till det sista, 20 % delas av mitten."
 
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_attribution_timedecay"
 >title="Tidsminskning"
 >abstract="Dimension-värden som ligger närmast konverteringen ger mest valuta för pengarna."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_attribution_custom"
 >title="Anpassad"
 >abstract="Definiera din egen positionsbaserad attribueringsvikt."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
+>[!CONTEXTUALHELP]
+>id="components_calculatedmetrics_attribution_positionbased"
+>title="Anpassad"
+>abstract="Definiera din egen positionsbaserad attribueringsvikt."
 
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_attribution_algorithmic"
 >title="Algoritmisk"
 >abstract="Krediten bestäms dynamiskt utifrån en statistisk algoritm."
 
-<!-- markdownlint-enable MD034 -->
 
-<!-- markdownlint-disable MD034 -->
+>[!CONTEXTUALHELP]
+>id="components_calculatedmetrics_attribution_container"
+>title="Behållare"
+>abstract="Välj en behållare för att ange önskat omfång för attribueringen."
+
 
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_attribution_lookbackwindow"
 >title="Fönstret Lookback"
 >abstract="Den här inställningen bestämmer fönstret för den dataattribuering som ska användas för varje konvertering."
-
-<!-- markdownlint-enable MD034 -->
 
 När du [skapar ett beräknat mått](/help/components/c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-build-metrics.md) kan du ange måtttypen och attribueringsmodellen.
 
