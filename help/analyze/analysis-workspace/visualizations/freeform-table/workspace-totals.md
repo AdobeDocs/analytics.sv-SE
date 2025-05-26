@@ -4,21 +4,26 @@ title: Workspace summor
 feature: Freeform Tables
 role: User, Admin
 exl-id: 883c3e44-4139-46a1-a261-e11841312465
-source-git-commit: 1ce002a513860ce15dc8a70825d26795fd93eb1d
+source-git-commit: d9f95b12a43305cecff1190e6544334f3b48835d
 workflow-type: tm+mt
-source-wordcount: '421'
+source-wordcount: '433'
 ht-degree: 1%
 
 ---
 
-# Workspace summor
+# Workspace summor {#workspace-totals}
+
+>[!CONTEXTUALHELP]
+>id="workspace_freeformtable_grandtotal"
+>title="Summa"
+>abstract="Summan stöds inte för tabeller eller uppdelningar med statiska rader."
 
 I frihandstabeller visas en summeringsrad på varje uppdelningsnivå och kan visa två summor:
 
 ![Friformstabell som visar totalsumman och tabellsumman.](assets/total-row.png)
 
 * **[!UICONTROL Table total]** ➊ - Denna summa är vanligtvis lika med eller en delmängd av [!UICONTROL Grand total]. Summan återspeglar alla tabellfilter som används i friformstabellen, inklusive alternativet [!UICONTROL Include None].
-* **[!UICONTROL Grand total]** (**[!UICONTROL out of]** *number*) ➋ - Det här totala antalet representerar alla händelser som har samlats in. När ett filter används på panelnivå eller i friformstabellen justeras det totala värdet så att alla händelser som matchar filtervillkoren visas.
+* **[!UICONTROL Grand total]** (**[!UICONTROL out of]** *number*) ➋ - Den här summan representerar alla händelser som har samlats in. När ett filter används på panelnivå eller i friformstabellen justeras det totala värdet så att alla händelser som matchar filtervillkoren visas.
 
 
 
