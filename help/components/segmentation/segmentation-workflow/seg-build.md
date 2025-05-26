@@ -71,7 +71,7 @@ Det finns flera sätt att komma åt segmentbyggaren:
 
 * **Analytics Top navigation**: Click **[!UICONTROL Analytics]** > **[!UICONTROL Components]** > **[!UICONTROL Segments]**.
 * **[!UICONTROL Analysis Workspace]**: Klicka på **[!UICONTROL Analytics]** > **[!UICONTROL Workspace]**, öppna ett projekt och klicka på **[!UICONTROL + New]** > **[!UICONTROL Create Segment]**.
-* **[!UICONTROL Report Builder]**: [Lägg till eller redigera segment i Report Builder](https://experienceleague.adobe.com/sv/docs/analytics/analyze/report-builder/work-with-segments).
+* **[!UICONTROL Report Builder]**: [Lägg till eller redigera segment i Report Builder](https://experienceleague.adobe.com/en/docs/analytics/analyze/report-builder/work-with-segments).
 
 ## Builder-villkor {#section_F61C4268A5974C788629399ADE1E6E7C}
 
@@ -114,7 +114,7 @@ Du kan lägga till regeldefinitioner och behållare för att definiera dina segm
 1. **[!UICONTROL Value]**: Det värde du angav eller valde för dimensionen, segmentet eller måttet.
 1. **[!UICONTROL X]**: (Ta bort) Gör att du kan ta bort den här delen av segmentdefinitionen.
 1. **[!UICONTROL Experience Cloud publishing]**: Om du publicerar ett Adobe Analytics-segment till Experience Cloud kan du använda segmentet för marknadsföringsaktivitet i [!DNL Audience Manager] och i andra aktiveringskanaler. [Läs mer …](/help/components/segmentation/segmentation-workflow/seg-publish.md)
-1. **[!UICONTROL Audience library]**: Adobe målgruppstjänster hanterar översättningen av besöksdata till målgruppssegmentering. Att skapa och hantera målgrupper liknar alltså att skapa och använda segment, med möjlighet att dela målgruppssegmentet med Experience Cloud. [Läs mer …](https://experienceleague.adobe.com/docs/core-services/interface/audiences/audience-library.html?lang=sv-SE)
+1. **[!UICONTROL Audience library]**: Adobe målgruppstjänster hanterar översättningen av besöksdata till målgruppssegmentering. Att skapa och hantera målgrupper liknar alltså att skapa och använda segment, med möjlighet att dela målgruppssegmentet med Experience Cloud. [Läs mer …](https://experienceleague.adobe.com/docs/core-services/interface/audiences/audience-library.html)
 1. **[!UICONTROL Search]**: Söker i listan över dimensioner, segment eller mått.
 1. **[!UICONTROL Dimensions]**: (Lista) Klicka på rubriken för att expandera.
 1. **[!UICONTROL Metrics]**: Klicka på rubriken för att expandera.
