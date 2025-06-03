@@ -1,11 +1,11 @@
 ---
-description: Information om Analysis Workspace-mallen och rapportering i Report Builder.
+description: Information om Analysis Workspace-mallen och rapporter i Report Builder.
 title: Rapport om reklamdata i Adobe Analytics
 feature: Advertising Analytics
 exl-id: bbc830d9-e168-471d-a1ba-308277aab415
-source-git-commit: c53b533a1d037ab3ed811bcc0960418f037a708f
+source-git-commit: 6bedfb9b1333a442bf17cf71dad1e0883b97fd45
 workflow-type: tm+mt
-source-wordcount: '347'
+source-wordcount: '349'
 ht-degree: 1%
 
 ---
@@ -31,7 +31,7 @@ Den här rapporten ger alla som implementerar sökmotorintegration tillgång til
 | Tabell/visualisering | Beskrivning |
 |--- |--- |
 | Advertising Trends | Översikt över dagliga trender för AMO Impressions, AMO Clicks och AMO Cost. |
-| Annonsplattformar | Diagram över kostnaden för de två främsta plattformarna (Google, Bing). |
+| Annonsplattformar | Diagram över kostnaden för de två främsta plattformarna (Google Ads, Microsoft Advertising). |
 | Summor för annonsplattform | Frihandstabell över de översta plattformarna uppdelade efter AMO Impressions, AMO Clicks, AMO Costs, AMO Avg. Position, AMO Avg. Quality Score. |
 | Konton | Staplad kostnadsyta. |
 | Kontosummor | Frihandstabell för de översta kontona uppdelade efter associerade mått. |

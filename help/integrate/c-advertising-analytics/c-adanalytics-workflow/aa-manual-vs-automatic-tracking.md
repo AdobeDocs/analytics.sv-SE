@@ -3,9 +3,9 @@ description: Spårningstypen avgör hur Adobe Analytics-implementeringen spårar
 title: Spårningstyp
 feature: Advertising Analytics
 exl-id: 3e2ed26f-dfb2-43ea-8eb6-e332cd10fb29
-source-git-commit: 243da53fda562c856d95db0f6d13b7ee1a9adae5
+source-git-commit: 6bedfb9b1333a442bf17cf71dad1e0883b97fd45
 workflow-type: tm+mt
-source-wordcount: '561'
+source-wordcount: '565'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Två spårningslägen stöds: [!UICONTROL Auto] och [!UICONTROL Manual].
 
 ## [!UICONTROL Auto]-spårning {#concept_C4C6107838C947CFBB7F4E0CB94264F0}
 
-[!UICONTROL Auto]-spårning låter Advertising Cloud-motorn avgöra hur sökmotordata ska hanteras. Automatisk spårning är enklare, men kanske inte ger den bästa integrerade datauppsättningen.
+Med [!UICONTROL Auto]-spårning kan Advertising Cloud-motorn bestämma hur sökmotordata ska hanteras. Automatisk spårning är enklare, men kanske inte ger den bästa integrerade datauppsättningen.
 
 Därför måste du markera kryssrutan Bekräftelse när du väljer **[!UICONTROL Auto]** innan du kan spara kontoinställningen.
 
@@ -37,7 +37,7 @@ Observera att du ansvarar för följande åtgärder när du konfigurerar ett sö
 
 >[!IMPORTANT]
 >
->Läs mer om huruvida du bör lägga till parametern `s_kwcid` i din [skyddsprofil för innehåll](https://experienceleague.adobe.com/sv/docs/id-service/using/reference/csp).
+>Läs mer om huruvida du bör lägga till parametern `s_kwcid` i din [skyddsprofil för innehåll](https://experienceleague.adobe.com/en/docs/id-service/using/reference/csp).
 
 ## Manuell spårning {#concept_87B28BA9E7F84BA5972F69E6F3482A33}
 
@@ -92,13 +92,13 @@ För att säkerställa att strängen kvarstår genom omdirigeringen till den slu
 https://clickserve.dartsearch.net/link/click?{_dssagcrid}&{_dssftfiid}&ds_e_adid={creative}&ds_e_matchtype={ifsearch:search}{ifcontent:content}&ds_e_device={device}&ds_e_network={network}&{ifpla:ds_e_product_group_id={product_partition_id}&ds_e_product_id={product_id}&ds_e_product_merchant_id={merchant_id}&ds_e_product_country={product_country}&ds_e_product_language={product_language}&ds_e_product_channel={product_channel}&ds_e_product_store_id={product_store_id}}&ds_url_v=2&ds_dest_url={lpurl}?s_kwcid%3DAL!9999!3!{creative}!{matchtype}!{placement}!{network}!{product_partition_id}!{keyword}
 ```
 
-### Lägg till manuell spårning till Bing-konto {#section_094F8ACA493C4D65B1F54A695558EBF2}
+### Lägg till manuell spårning på Microsoft Advertising-konto {#section_094F8ACA493C4D65B1F54A695558EBF2}
 
-Strängen som behöver läggas till i ditt Bing-konto visas nedan. Du måste lägga till strängen i alla de slutliga URL-suffixen som används i hela ditt konto.
+Strängen som behöver läggas till i ditt Microsoft Advertising-konto visas nedan. Du måste lägga till strängen i alla de slutliga URL-suffixen som används i hela ditt konto.
 
 >[!IMPORTANT]
 >
->Värdet _`<Advertising Analytics ID>`_(i **bold**&#x200B;nedan) är generiskt och **måste ersättas med din specifika konto-ID-sträng**. Du kan hämta din specifika konto-ID-sträng från kontoskärmen under avsnittet Spårning.
+>Värdet _`<Advertising Analytics ID>`_(i **bold**nedan) är generiskt och **måste ersättas med din specifika konto-ID-sträng**. Du kan hämta din specifika konto-ID-sträng från kontoskärmen under avsnittet Spårning.
 
 **Spårningssträng för kampanjer:**
 
@@ -106,7 +106,7 @@ Strängen som behöver läggas till i ditt Bing-konto visas nedan. Du måste lä
 s_kwcid=AL!<Advertising Analytics ID>!10!{AdId}!{OrderItemId} 
 ```
 
-![Bing](/help/integrate/c-advertising-analytics/c-adanalytics-workflow/assets/bing-account.png)
+![Lägg till parametrar för spårningskod](/help/integrate/c-advertising-analytics/c-adanalytics-workflow/assets/bing-account.png)
 
 Exempel på spårningskoder i olika slutliga URL-suffixformat:
 

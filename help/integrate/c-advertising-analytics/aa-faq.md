@@ -3,7 +3,7 @@ description: Frågor och svar om Advertising Analytics.
 title: Frågor och svar om reklamanalyser
 feature: Advertising Analytics
 exl-id: 664a5641-1c79-439f-a9fb-2ff134574412
-source-git-commit: 02b6c4f4504785353f9b2457099d3332cd25a852
+source-git-commit: 6bedfb9b1333a442bf17cf71dad1e0883b97fd45
 workflow-type: tm+mt
 source-wordcount: '1294'
 ht-degree: 0%
@@ -14,9 +14,9 @@ ht-degree: 0%
 
 ## Åtkomst/tillstånd {#access}
 
-+++ Måste jag vara kund hos Adobe Advertising Cloud eller Adobe Advertising Cloud (AMO) för att få tillgång till den här funktionen?
++++ Måste jag vara Adobe Advertising Cloud- eller Adobe Advertising Cloud-kund (AMO) för att få tillgång till den här funktionen?
 
-Nej, den här funktionaliteten är tillgänglig för kunder utanför Advertising Cloud och AMO.
+Nej, den här funktionaliteten är tillgänglig för kunder som inte använder Advertising Cloud och AMO.
 
 AMO-kunder kan utnyttja den befintliga integreringen mellan Analytics och AMO; de kommer inte att kunna använda Ad Analytics.
 
@@ -48,7 +48,7 @@ Nej, Advertising Analytics använder en särskild typ av datakälla som inte med
 
 +++ Om jag redan använder Advertising Cloud/AMO, kan jag då ändå använda Advertising Analytics-funktionen?
 
-Alla kompatibla sökmotorkonton skickas till Advertising Analytics och visas som skrivskyddade. Alla redigeringar och uppdateringar ska hanteras i Advertising Cloud/AMO.
+Alla kompatibla sökmotorkonton skickas till Advertising Analytics och visas som skrivskyddade. Alla redigeringar eller uppdateringar ska hanteras i Advertising Cloud/AMO.
 
 +++
 
@@ -62,7 +62,7 @@ Advertising Analytics är endast tillgängligt för Adobe Analytics-administrat�
 
 +++ Vilka sökmotorkonton ingår i Advertising Analytics?
 
-Sökmotorkonton innehåller Google AdWords och Microsoft Bing.
+Sökmotorkonton omfattar Google Ads och Microsoft Advertising.
 
 +++
 
@@ -138,7 +138,7 @@ AMO-ID:t hämtar sökmotorns mått: Impressions, Cost, Clicks, Average Position 
 
 Sökmotorns mätvärden hämtas på träffnivå och kopplas till AMO-ID:t (och dess klassificeringar). Det är data på sammanfattningsnivå och är inte kopplat till besök/besökare. Därför kan sökmotorns mått bara användas i segment som är träffnivåomfång och som baseras på AMO-ID (eller dess klassificeringar).
 
-AMO-ID:t registreras också på landningssidan i träffen för den sidan (som kopplar det till besöket/besökaren) och kommer att finnas kvar längre fram för att få kredit för andra analysvärden (tills det går ut eller skrivs över av ett nytt AMO-ID). Den är helt integrerad i datauppsättningen på samma sätt som all annan eVar.
+AMO-ID:t registreras också på landningssidan i träffen för den sidan (som kopplar det till besöket/besökaren) och kommer att finnas kvar längre fram för att få kredit för andra analysvärden (tills det går ut eller skrivs över av ett nytt AMO-ID). Den är helt integrerad i datauppsättningen precis som andra eVar-program.
 
 +++
 

@@ -1,9 +1,9 @@
 ---
 title: Importera mått för betald sökning
-description: Steg för att konfigurera Adobe Analytics att spåra dina betalda sökvärden (t.ex. Google AdWords, MSN, Yahoo osv.) med datakällor.
+description: Steg för att konfigurera Adobe Analytics för att spåra dina betalda sökvärden (t.ex. Google Ads, Microsoft Advertising, etc.) med hjälp av datakällor.
 exl-id: b25a2a26-d277-4a51-9194-973acb425095
 feature: Data Sources
-source-git-commit: 38478fbccf7680e5b404b306136594e627d09a08
+source-git-commit: 6bedfb9b1333a442bf17cf71dad1e0883b97fd45
 workflow-type: tm+mt
 source-wordcount: '1099'
 ht-degree: 0%
@@ -12,9 +12,9 @@ ht-degree: 0%
 
 # Importera [!UICONTROL Paid Search]-mått med [!UICONTROL Data Sources]
 
-För många marknadsföringsorganisationer är betalsökningar ett av de mest värdefulla och tillförlitliga sätten att både &#x200B; nya kunder och behålla befintliga. Funktionen [!UICONTROL Data Sources] i Adobe Analytics gör det enkelt att importera avancerade betalda sökdata från digitala annonsplattformar som Google AdWords. Ni kan integrera den med resten av era marknadsföringsdata, tillsammans med beteendedata på plats och kundattributdata, för att ni ska få bättre insikter i er organisations betalda sökinsatser.
+För många marknadsföringsorganisationer är betalsökningar ett av de mest värdefulla och tillförlitliga sätten att både &#x200B; nya kunder och behålla befintliga. Funktionen [!UICONTROL Data Sources] i Adobe Analytics gör det enkelt att importera avancerade betalda sökdata från digitala annonsplattformar som Google Ads. Ni kan integrera den med resten av era marknadsföringsdata, tillsammans med beteendedata på plats och kundattributdata, för att ni ska få bättre insikter i er organisations betalda sökinsatser.
 
-De här stegen visar hur du konfigurerar en integrering med AdWords för att importera nyckelordsdata samt mätvärden som visningar, klick, kostnad per klick med mera.
+De här stegen visar hur du konfigurerar en integrering med annonser för att importera nyckelordsdata samt mätvärden som visningar, klick, kostnad per klick med mera.
 
 Stegen förklarar hur du konfigurerar en engångsimport av data per klick. [!UICONTROL Data Sources] tillåter dock pågående import av data med det filformat som beskrivs här. Beroende på vilken sökplattform du använder kan du eventuellt schemalägga periodiska exporter (varje dag, månad, osv.), konfigurera automatiska processer för att omvandla dessa exporter till det filformat som Adobe Analytics kräver, och överföra dessa filer till Adobe Analytics för betald sökintegreringsrapportering.
 
@@ -72,8 +72,8 @@ Du bör få ett meddelande om att dina spara har godkänts.
 
 1. Välj datamängder
 Markera rutan bredvid Spårningskoder och klicka på **[!UICONTROL Next]**.
-1. Dimensioner för kartdata.
-Mappa den importerade datamängden (attributet) till det Adobe Analytics-attribut som du vill lagra den i. Detta kan vara en standarddimension eller en eVar. När du har klickat på **[!UICONTROL Next]** visas de resulterande mappningarna i sammanfattningen:
+1. Mappa datamått.
+Mappa den importerade datamängden (attributet) till det Adobe Analytics-attribut som du vill lagra den i. Detta kan vara en standarddimension för en eVar. När du har klickat på **[!UICONTROL Next]** visas de resulterande mappningarna i sammanfattningen:
 
    ![Sammanfattning](assets/data-source-summary.png)
 
@@ -85,7 +85,7 @@ Filen är redan ifylld med mått och dimensioner samt deras mappningar.
 
 ## Exportera PPC-data och överföra dem till Analytics
 
-Steg som liknar dessa för Google Adwords, MSN, Yahoo och andra PPC-konton.
+Så här fungerar Google Ads, Microsoft Advertising och andra PPC-konton.
 
 ### Exportera data
 
@@ -118,7 +118,7 @@ Gå tillbaka till guiden för Data Source för instruktioner och överför filen
 
 Det kan vara praktiskt att lägga till beräknade värden när man ska fatta beslut per klick.
 
-Du kan till exempel lägga till följande [beräknade mått](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html?lang=sv-SE#calculated-metrics):
+Du kan till exempel lägga till följande [beräknade mått](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html#calculated-metrics):
 
 | Namn | Formel | Mätningstyp | Beskrivning |
 | --- | --- | --- | --- |
