@@ -5,9 +5,9 @@ subtopic: data feeds
 title: Referens för datakolumn
 feature: Data Feeds
 exl-id: e1492147-6e7f-4921-b509-898e7efda596
-source-git-commit: a15d2b596c1e8b70e91efb49dd607fdbb0ceec3c
+source-git-commit: adee2f1013cfd2ae231e3133b5a5327b8792bd16
 workflow-type: tm+mt
-source-wordcount: '3615'
+source-wordcount: '3632'
 ht-degree: 0%
 
 ---
@@ -32,12 +32,12 @@ Tidigare uppdateringar av den här tabellen finns på den här sidans [implement
 | --- | --- | --- |
 | **`accept_language`** | Visar alla godkända språk enligt HTTP-huvudet Accept-Language i en bildbegäran. | char(20) |
 | **`adload`** | Inläsningar av mediaannonser | varchar(255) |
-| **`aemassetid`** | En variabel med flera värden som motsvarar tillgångs-ID:n (GUID) för en uppsättning Adobe Experience Manager Assets. Ökar imponeringshändelser. | SMS |
-| **`aemassetsource`** | Identifierar källan till tillgångshändelsen. Används i Adobe Experience Manager. | varchar(255) |
+| **`aemassetid`** | En variabel med flera värden som motsvarar tillgångs-ID:n (GUID) för en uppsättning Adobe Experience Manager Assets. Ökar imponeringshändelser. | text |
+| **`aemassetsource`** | Identifierar resurshändelsens källa. Används i Adobe Experience Manager. | varchar(255) |
 | **`aemclickedassetid`** | Tillgångs-ID för en Adobe Experience Manager-resurs. Ökningar Klicka på händelser. | varchar(255) |
-| **`browser`** | Ett numeriskt ID som representerar webbläsaren. Refererar till uppslagstabellen `browser.tsv` . | int osignerad |
-| **`browser_height`** | Dimensionen [Webbläsarhöjd](/help/components/dimensions/browser-height.md) . | smallint osignerad |
-| **`browser_width`** | Webbläsarens [bredd](/help/components/dimensions/browser-width.md) | smallint unsigned |
+| **`browser`** | Ett numeriskt ID som representerar webbläsaren. Refererar till `browser.tsv`-söktabellen. | int unsigned |
+| **`browser_height`** | Dimensionen [Webbläsarhöjd](/help/components/dimensions/browser-height.md). | smallint unsigned |
+| **`browser_width`** | Bredd på [webbläsaren](/help/components/dimensions/browser-width.md) | smallint unsigned |
 | **`c_color`** | Färgpalettens bitdjup. Används som en del av beräkningen av dimensionen [Färgdjup](/help/components/dimensions/color-depth.md). AppMeasurement använder JavaScript-funktionen `screen.colorDepth()`. | char(20) |
 | **`campaign`** | Dimensionen [Spårningskod](/help/components/dimensions/tracking-code.md). | varchar(255) |
 | **`carrier`** | Adobe Advertising integrationsvariabel. Anger mobiloperatör. Nyckelvärdet för `carrier.tsv` [dynamisk sökning](dynamic-lookups.md). | varchar(100) |
@@ -59,10 +59,11 @@ Tidigare uppdateringar av den här tabellen finns på den här sidans [implement
 | **`currency`** | Valutakoden som användes under transaktionen. Ange med [`currencyCode`](/help/implement/vars/config-vars/currencycode.md). | char(8) |
 | **`cust_hit_time_gmt`** | Endast tidsstämpelaktiverade rapportsviter. Tidsstämpeln som skickades med träffen, baserat på UNIX®-tid. | int |
 | **`cust_visid`** | Det anpassade besökar-ID:t, om [`visitorID`](/help/implement/vars/config-vars/visitorid.md) används. | varchar(255) |
+| **`customer_perspective`** | Avgör om träffen är en mobilbakgrundträff. Mer information finns i [Kontextmedvetna sessioner](/help/components/vrs/vrs-mobile-visit-processing.md). | tinyint unsigned |
 | **`daily_visitor`** | En flagga som avgör om träffen är en ny daglig besökare. | tinyint unsigned |
 | **`dataprivacyconsentoptin`** | Dimensionen [Medgivandehanteringsanmälan](/help/components/dimensions/cm-opt-in.md). Flera värden kan finnas per träff, avgränsade med ett rör (`\|`). Giltiga värden är `DMP` och `SELL`. | varchar(100) |
-| **`dataprivacyconsentoptout`** | Dimensionen [Medgivandehanteringsavanmälan](/help/components/dimensions/cm-opt-out.md). Flera värden kan finnas per träff, avgränsade med ett vertikalstreck (`\|`). Giltiga värden är `SSF`, `DMP` och `SELL`. | varchar(100) |
-| **`dataprivacydmaconsent`** | Ett värde som identifierar om samtycke har inhämtats för att skicka data från Adobe Analytics via Adobe Advertising till tredje parts annonsleverantörer (t.ex. Google). Se [Annonsmedgivande](/help/components/dimensions/ad-consent.md) för mer information. | varchar(100) |
+| **`dataprivacyconsentoptout`** | Dimensionen [Medgivandehanteringsavanmälan](/help/components/dimensions/cm-opt-out.md). Flera värden kan finnas per träff, avgränsade med ett rör (`\|`). Giltiga värden är `SSF`, `DMP` och `SELL`. | varchar(100) |
+| **`dataprivacydmaconsent`** | Ett värde som identifierar om samtycke inhämtas för att skicka data från Adobe Analytics via Adobe Advertising till tredjepartsleverantörer av annonser (som Google). Mer information finns i [Lägg till samtycke](/help/components/dimensions/ad-consent.md). | varchar(100) |
 | **`date_time`** | Tidpunkten för träffen i läsbart format, baserat på rapportsvitens tidszon. | datetime |
 | **`domain`** | Dimensionen [Domain](/help/components/dimensions/domain.md). Baserat på besökarens Internetanslutningspunkt. | varchar(100) |
 | **`duplicate_events`** | Listar varje händelse som räknats som en dubblett. | varchar(255) |
@@ -80,7 +81,7 @@ Tidigare uppdateringar av den här tabellen finns på den här sidans [implement
 | **`first_hit_time_gmt`** | Tidsstämpel för besökarens första träff i UNIX®-tid. | int |
 | **`geo_city`** | Namnet på den stad som träffen kom från, baserat på IP. Används i dimensionen [Städer](/help/components/dimensions/cities.md). | char(32) |
 | **`geo_country`** | Förkortningen för det land som träffen kom från, baserat på IP. Används i dimensionen [Länder](/help/components/dimensions/countries.md). | char(4) |
-| **`geo_dma`** | Ett numeriskt ID för det demografiska område som träffen kom från, baserat på IP. Används i den amerikanska DMA-dimensionen[&#128279;](/help/components/dimensions/us-dma.md). | int osignerad |
+| **`geo_dma`** | Ett numeriskt ID för det demografiska område som träffen kom från, baserat på IP. Används i [US DMA](/help/components/dimensions/us-dma.md)-dimensionen. | int unsigned |
 | **`geo_region`** | Namnet på den stat eller region som träffen kom från, baserat på IP. Används i dimensionen [Områden](/help/components/dimensions/regions.md). | char(32) |
 | **`geo_zip`** | Postnumret som träffen kom från, baserat på IP. Hjälper till att fylla i dimensionen [Postnummer](/help/components/dimensions/zip-code.md). Se även `zip`. | varchar(16) |
 | **`hit_source`** | Källan som träffen kom från. Träffkällor 1, 2 och 6 faktureras. <br>1: Standardbildbegäran utan tidsstämpel <br> <br>: Standardbildbegäran med tidsstämpel <br> <br> 3: Överföring av livdatakälla med tidsstämplar 5: Överföring av generisk datakälla <br>6: Överföring av datakälla med fullständig bearbetning <br>7: Överföring av TransactionID-datakälla <br>8: Används inte längre; tidigare versioner av Adobe Advertising Cloud-data Källor <br>9: Används inte längre, Adobe Social-sammanfattningsmått <br> : Audience Manager serversidans vidarebefordran används | tinyint unsigned |
@@ -125,7 +126,7 @@ Tidigare uppdateringar av den här tabellen finns på den här sidans [implement
 | **`mobilehourofday`** | Definierar timmen på dagen då appen startades. Använder ett numeriskt format på 24 timmar. | varchar(255) |
 | **`mobileinstalldate`** | Datum för mobilinstallation. Anger datumet för första gången som en användare öppnar mobilappen. | varchar(255) |
 | **`mobilelaunchnumber`** | Ökningar med ett varje gång mobilappen startas. | varchar(255) |
-| **`mobilemessagebuttonname`** | Samlas in från kontextdatavariabeln `a.message.button.id`. Används för meddelanden i appen för att identifiera knappen som stängde meddelandet. | varchar(100) |
+| **`mobilemessagebuttonname`** | Samlades in från kontextdatavariabeln `a.message.button.id`. Används för meddelanden i appen för att identifiera knappen som stängde meddelandet. | varchar(100) |
 | **`mobilemessageid`** | Meddelande-ID i appen | varchar(255) |
 | **`mobilemessageonline`** | Meddelande i appen online | varchar(255) |
 | **`mobilemessagepushoptin`** | Samlades in från kontextdatavariabeln `a.push.optin`. Ange som&quot;true&quot; när användaren väljer att skicka meddelanden, annars är värdet&quot;false&quot;. | varchar(255) |
@@ -150,8 +151,8 @@ Tidigare uppdateringar av den här tabellen finns på den här sidans [implement
 | **`page_event`** | Den typ av träff som skickas i bildbegäran (standardträff, nedladdningslänk, anpassad länk, slutlänk). Se [Sökning efter sidhändelser](datafeeds-page-event.md). | tinyint unsigned |
 | **`page_event_var1`** | Används endast vid förfrågningar om länkspårningsbilder. URL-adressen till den nedladdningslänk, den avslutningslänk eller anpassade länk som du klickar på. | text |
 | **`page_event_var2`** | Används endast vid förfrågningar om länkspårningsbilder. Länkens anpassade namn (om det anges). Anger den [anpassade länken](/help/components/dimensions/custom-link.md), [Hämta länken](/help/components/dimensions/download-link.md) eller [Avsluta länken](/help/components/dimensions/exit-link.md) beroende på värdet i `page_event`. | varchar(100) |
-| **`page_type`** | Dimensionen [Sidor hittades](/help/components/dimensions/pages-not-found.md) inte, som vanligtvis används för 404-sidor. | Röding(20) |
-| **`page_url`** | URL:en för träffen. Observera att det tas bort för bildbegäranden om `post_page_url` länkspårning ([`tl()`](/help/implement/vars/functions/tl-method.md)) och använder datatypen varchar(255). | text |
+| **`page_type`** | Dimensionen [Sidorna hittades inte](/help/components/dimensions/pages-not-found.md), som vanligtvis används för 404 sidor. | char(20) |
+| **`page_url`** | URL:en för träffen. Observera att `post_page_url` har rensats för förfrågningar om länkspårningsbild ([`tl()`](/help/implement/vars/functions/tl-method.md)) och använder datatypen varchar(255). | text |
 | **`pagename`** | Dimensionen [Sida](/help/components/dimensions/page.md). Om variabeln [`pagename`](/help/implement/vars/page-vars/pagename.md) är tom används `page_url` i stället. | varchar(100) |
 | **`pagename_no_url`** | Liknar `pagename`, förutom att den inte faller tillbaka till `page_url`. Endast kolumnen `post` är tillgänglig. | varchar(100) |
 | **`paid_search`** | En flagga som avgör om träffen matchar betalsökningsidentifiering. | tinyint unsigned |
@@ -165,16 +166,16 @@ Tidigare uppdateringar av den här tabellen finns på den här sidans [implement
 | **`quarterly_visitor`** | En flagga som avgör om träffen är en ny kvartalsbesökare. | tinyint unsigned |
 | **`ref_domain`** | Dimensionen [Referensdomän ](/help/components/dimensions/referring-domain.md). Baserat på kolumnen `referrer`. | varchar(100) |
 | **`ref_type`** | Ett numeriskt ID som representerar typen av hänvisning för träffen. Används i dimensionen [Referenstyp](/help/components/dimensions/referrer-type.md). <br>1: Inuti din webbplats<br>2: Andra webbplatser <br>3: Sökmotorer <br>4: Hårddisk <br>5: USENET <br>6: Typed/Bookmarked (ingen referent) <br>7: E-post <br>8: Ingen JavaScript <br>9: Sociala nätverk | tinyint unsigned |
-| **`referrer`** | Dimensionen [Referent](/help/components/dimensions/referrer.md). Observera att while `referrer` använder datatypen varchar(255) `post_referrer` använder datatypen varchar(244). | varchar(255) |
-| **`resolution`** | Ett numeriskt ID som representerar bildskärmens upplösning. Används i dimensionen Bildskärmsupplösning[&#128279;](/help/components/dimensions/monitor-resolution.md). Använder `resolution.tsv` uppslagstabell. | smallint unsigned |
-| **`s_kwcid`** | Nyckelords-ID som används i Adobe Advertising-integreringar. | varchar(255) |
-| **`s_resolution`** | Värde för rå skärmupplösning. Samlas in med hjälp av JavaScript-funktionen `screen.width x screen.height`. | Röding(20) |
-| **`search_engine`** | Ett numeriskt ID som representerar sökmotorn som hänvisade besökaren till din webbplats. Används i dimensionerna för [sökmotorn](/help/components/dimensions/search-engine.md). Refererar till `search_engines.tsv`-söktabellen. | smallint unsigned |
+| **`referrer`** | Dimensionen [Referent](/help/components/dimensions/referrer.md). Observera att medan `referrer` använder datatypen varchar(255) använder `post_referrer` datatypen varchar(244). | varchar(255) |
+| **`resolution`** | Ett numeriskt ID som representerar bildskärmens upplösning. Används i dimensionen [Bildskärmsupplösning](/help/components/dimensions/monitor-resolution.md). Använder `resolution.tsv`-uppslagstabell. | smallint unsigned |
+| **`s_kwcid`** | Nyckelord-ID som används i Adobe Advertising-integreringar. | varchar(255) |
+| **`s_resolution`** | Upplösningsvärde för Raw-skärm. Samlades in med JavaScript-funktionen `screen.width x screen.height`. | char(20) |
+| **`search_engine`** | Ett numeriskt ID som representerar sökmotorn som refererade besökaren till din webbplats. Används i dimensionerna för [sökmotorn](/help/components/dimensions/search-engine.md). Refererar till `search_engines.tsv`-söktabellen. | smallint unsigned |
 | **`search_page_num`** | Används av dimensionen [All söksidrankning](/help/components/dimensions/all-search-page-rank.md). Anger vilken sida med sökresultat som din webbplats visade sig på innan användaren klickade igenom till din webbplats. | smallint unsigned |
 | **`secondary_hit`** | En flagga som avgör om träffen är en sekundär träff. Den här flaggan kommer vanligtvis från taggar för flera programsviter och VISTA-regler som kopierar träffar. | tinyint unsigned |
 | **`sourceid`** | SOURCE ID | int unsigned |
 | **`state`** | State-variabel. | varchar(50) |
-| **`stats_server`** | Inte till nytta. Adobes interna server som bearbetade träffen. | Röding(30) |
+| **`stats_server`** | Inte till användning. Adobe interna server som bearbetade träffen. | char(30) |
 | **`t_time_info`** | Lokal tid för besökaren. Formatet är: `M/D/YYYY HH:MM:SS Month (0-11, 0=January) Timezone offset (in minutes)` | varchar(100) |
 | **`tnt`** | Används i Adobe Target integreringar. Representerar alla tester som är kvalificerade för tillfället. Formatet är: `TargetCampaignID:TargetRecipeID:TargetType\|Event/Action`. | text |
 | **`tnt_action`** | Används i Adobe Target integreringar. Representerar alla tester som träffen är kvalificerad för. | text |
@@ -189,19 +190,19 @@ Tidigare uppdateringar av den här tabellen finns på den här sidans [implement
 | **`va_closer_detail`** | Dimensionen [Senaste beröringsdetalj](/help/components/dimensions/last-touch-detail.md). | varchar(255) |
 | **`va_closer_id`** | Ett numeriskt ID som identifierar dimensionen [Senaste beröringskanal](/help/components/dimensions/last-touch-channel.md). Sökningen efter detta ID finns i Marketing Channel Manager. | tinyint unsigned |
 | **`va_finder_detail`** | Dimensionen [Första beröringsdetalj](/help/components/dimensions/first-touch-detail.md). | varchar(255) |
-| **`va_finder_id`** | Ett numeriskt ID som identifierar dimensionen för den [första beröringskanalen](/help/components/dimensions/first-touch-channel.md). Sökningen efter detta ID finns i Marketing Channel Manager. | tinyint osignerad |
-| **`va_instance_event`** | En flagga som identifierar Marketing Channel [Instances](/help/components/metrics/instances.md). | tinyint osignerad |
-| **`va_new_engagement`** | En flagga som identifierar nya engagemang för[&#128279;](/help/components/metrics/new-engagements.md) marknadsföringskanalen. | tinyint unsigned |
+| **`va_finder_id`** | Ett numeriskt ID som identifierar dimensionen för den [första beröringskanalen](/help/components/dimensions/first-touch-channel.md). Sökningen efter detta ID finns i Marketing Channel Manager. | tinyint unsigned |
+| **`va_instance_event`** | En flagga som identifierar marknadsföringskanalen [instanser](/help/components/metrics/instances.md). | tinyint unsigned |
+| **`va_new_engagement`** | En flagga som identifierar marknadsföringskanalen [Nya engagemang](/help/components/metrics/new-engagements.md). | tinyint unsigned |
 | **`video`** | Dimensionen [Innehåll](/help/components/dimensions/sm-core.md) för direktuppspelande media. | varchar(255) |
-| **`videoad`** | Dimensionen Direktuppspelning av [annonser](/help/components/dimensions/sm-ads.md) . | varchar(255) |
-| **`videoadinpod`** | Dimensionen [Annons i poddposition](/help/components/dimensions/sm-ads.md) Strömmande media. | varchar(255) |
+| **`videoad`** | Dimensionen [Ad](/help/components/dimensions/sm-ads.md) Streaming Media. | varchar(255) |
+| **`videoadinpod`** | The [Ad in pod position](/help/components/dimensions/sm-ads.md) Streaming Media dimension. | varchar(255) |
 | **`videoadlength`** | [Annonslängd (variabel)](/help/components/dimensions/sm-ads.md) för direktuppspelningsmedia. | heltal |
 | **`videoadload`** | [Ad läser in](/help/components/dimensions/sm-ads.md)-dimensionen för direktuppspelande media. | varchar(255) |
 | **`videoadname`** | [Annonsnamn (variabel)](/help/components/dimensions/sm-ads.md) för mediedimension för direktuppspelning. | varchar(255) |
 | **`videoadplayername`** | Dimensionen för direktuppspelningsmedia för [annonsspelaren](/help/components/dimensions/sm-ads.md). | varchar(255) |
 | **`videoadpod`** | Dimensionen [AdPod](/help/components/dimensions/sm-ads.md) för direktuppspelande media. | varchar(255) |
-| **`videoadvertiser`** | Dimensionen [Direktuppspelning av media för annonsörer](/help/components/dimensions/sm-ads.md) . | varchar(255) |
-| **`videoaudioalbum`** | Dimensionen Direktuppspelning av [album](/help/components/dimensions/sm-audio-metadata.md) . | varchar(255) |
+| **`videoadvertiser`** | Dimensionen [Advertiser](/help/components/dimensions/sm-ads.md) Streaming Media. | varchar(255) |
+| **`videoaudioalbum`** | Dimensionen [Album](/help/components/dimensions/sm-audio-metadata.md) för direktuppspelande media. | varchar(255) |
 | **`videoaudioartist`** | Dimensionen [Artist](/help/components/dimensions/sm-audio-metadata.md) Streaming Media. | varchar(255) |
 | **`videoaudioauthor`** | Dimensionen [Författare](/help/components/dimensions/sm-audio-metadata.md) för direktuppspelande media. | varchar(255) |
 | **`videoaudiolabel`** | Dimensionen [Etikett](/help/components/dimensions/sm-audio-metadata.md) för direktuppspelande media. | varchar(255) |
@@ -220,28 +221,28 @@ Tidigare uppdateringar av den här tabellen finns på den här sidans [implement
 | **`videoname`** | [Innehållsnamnet (variabel)](/help/components/dimensions/sm-core.md) för mediedirektuppspelning. | varchar(255) |
 | **`videonetwork`** | Dimensionen [Nätverk](/help/components/dimensions/sm-video-metadata.md) som direktuppspelar media. | varchar(255) |
 | **`videopath`** | [Mediesökvägen](/help/components/dimensions/sm-core.md) för direktuppspelande media. | varchar(100) |
-| **`videoplayername`** | Dimensionen Innehållsspelarens [namn](/help/components/dimensions/sm-core.md) Strömmande media. | varchar(255) |
+| **`videoplayername`** | [Innehållsspelarens namn](/help/components/dimensions/sm-core.md) för mediedimension för direktuppspelning. | varchar(255) |
 | **`videotime`** | Den [innehållstid som användes ](/help/components/metrics/sm-core.md) för att strömma media. | heltal |
 | **`videoqoebitrateaverageevar`** | Den [genomsnittliga bithastigheten](/help/components/dimensions/sm-quality.md) för direktuppspelningsmedia-dimensionen. | varchar(255) |
-| **`videoqoebitratechangecountevar`** | Bithastigheten ändrar[&#128279;](/help/components/dimensions/sm-quality.md) dimensionen för strömmande media. | varchar(255) |
-| **`videoqoebuffercountevar`** | Dimensionen [Strömmande media för bufferthändelser](/help/components/dimensions/sm-quality.md) . | varchar(255) |
+| **`videoqoebitratechangecountevar`** | [Bithastigheten ändras](/help/components/dimensions/sm-quality.md) i dimensionen för direktuppspelande media. | varchar(255) |
+| **`videoqoebuffercountevar`** | [Bufferthändelser](/help/components/dimensions/sm-quality.md) Dimensionen för direktuppspelande media. | varchar(255) |
 | **`videoqoebuffertimeevar`** | Den [totala buffertlängden](/help/components/dimensions/sm-quality.md) för mediedimensionen för direktuppspelning. | varchar(255) |
 | **`videoqoedroppedframecountevar`** | [Släppta bildrutor](/help/components/dimensions/sm-quality.md) Direktuppspelande media-dimension. | varchar(255) |
 | **`videoqoeerrorcountevar`** | Dimensionen [Fel](/help/components/dimensions/sm-quality.md) för direktuppspelning av media. | varchar(255) |
 | **`videoqoeextneralerrors`** | [Externa fel-ID:n](/help/components/dimensions/sm-quality.md) för mediedimension för direktuppspelning. Denna dimension tillåter flera värden i samma träff. | text |
-| **`videoqoeplayersdkerrors`** | [Player SDK-fel-ID:n](/help/components/dimensions/sm-quality.md) för direktuppspelningsmedia. Den här dimensionen tillåter flera värden i samma träff. | SMS |
-| **`videoqoetimetostartevar`** | Dimensionen Tid [för att starta](/help/components/dimensions/sm-quality.md) direktuppspelning av media. | varchar(255) |
-| **`videoseason`** | Dimensionen [Säsongsströmmande](/help/components/dimensions/sm-video-metadata.md) media. | varchar(255) |
+| **`videoqoeplayersdkerrors`** | [Player SDK-fel-ID:n](/help/components/dimensions/sm-quality.md) för direktuppspelningsmedia. Denna dimension tillåter flera värden i samma träff. | text |
+| **`videoqoetimetostartevar`** | Den [tid det tar att starta](/help/components/dimensions/sm-quality.md)-dimensionen för direktuppspelande media. | varchar(255) |
+| **`videoseason`** | Dimensionen [Säsong](/help/components/dimensions/sm-video-metadata.md) för direktuppspelande media. | varchar(255) |
 | **`videosegment`** | Dimensionen för direktuppspelande media i [innehållssegmentet](/help/components/dimensions/sm-core.md). | varchar(255) |
 | **`videoshow`** | Dimensionen [Visa](/help/components/dimensions/sm-video-metadata.md) för direktuppspelande media. | varchar(255) |
 | **`videoshowtype`** | [Visa typ](/help/components/dimensions/sm-video-metadata.md) Direktuppspelningsmedia-dimensionen. | varchar(255) |
 | **`videostreamtype`** | [Direktuppspelningstypen ](/help/components/dimensions/sm-core.md) Direktuppspelningsmediemätningen. | varchar(255) |
 | **`visid_high`** | Används med `visid_low` för att unikt identifiera en besökare. | bigint unsigned |
-| **`visid_low`** | Används med `visid_high` för att unikt identifiera en besökare. | Bigint osignerad |
+| **`visid_low`** | Används med `visid_high` för att unikt identifiera en besökare. | bigint unsigned |
 | **`visid_new`** | En flagga som avgör om träffen innehåller ett nyligen genererat besökar-ID. | char(1) |
 | **`visid_timestamp`** | Om ett besökar-ID nyligen genereras, anger tidsstämpeln i UNIX®-tid när besökar-ID:t genererades. | int |
-| **`visid_type`** | Ej för utvärtes bruk; används internt av Adobe för bearbetningsoptimeringar. Ett numeriskt ID som representerar den metod som används för att identifiera besökaren.<br>`0`: Anpassat besökar-ID eller Okänt/ej tillämpligt<br>`1`: Reserv <br>`2`för IP och användaragent : HTTP Mobile Subscriber Header <br>`3`: Äldre cookievärde (`s_vi`) <br>`4`: Reservcookievärde (`s_fid`) <br>`5`: Identitetstjänst | tinyint osignerad |
-| **`visit_keywords`** | Nyckelordsdimensionen [Sök.](/help/components/dimensions/search-keyword.md) I den här kolumnen används en teckenbegränsning som inte är standard för varchar(244) för att hantera backend-logik som används av Adobe. | varchar(244) |
+| **`visid_type`** | Ej för extern användning; används internt av Adobe för optimering av bearbetningen. Ett numeriskt ID som representerar den metod som används för att identifiera besökaren.<br>`0`: Anpassat besökar-ID eller Okänt/ej tillämpligt<br>`1`: IP- och användaragentåtergång <br>`2`: HTTP Mobile Subscriber Header <br>`3`: Legacy cookie value (`s_vi`) <br>`4`: Fallback cookie value (`s_fid`) <br>`5`: Identity Service | tinyint unsigned |
+| **`visit_keywords`** | Dimensionen [Söknyckelord](/help/components/dimensions/search-keyword.md). I den här kolumnen används en icke-standard teckengräns på varchar(244) för att rymma den serverlogik som används av Adobe. | varchar(244) |
 | **`visit_num`** | Dimensionen [Besök nummer](/help/components/dimensions/visit-number.md). Börjar vid 1 och ökar stegvis varje gång ett nytt besök påbörjas per besökare. | int unsigned |
 | **`visit_page_num`** | Dimensionen [Träff](/help/components/dimensions/hit-depth.md). Ökar med 1 för varje träff som besökaren skapar. Återställer varje besök. | int unsigned |
 | **`visit_ref_domain`** | Baserat på kolumnen `visit_referrer`. Den första refererande domänen för besöket. | varchar(100) |
@@ -409,4 +410,4 @@ Följande kolumnlista är oanvända, indragna eller innehåller inget värde i r
 >[!MORELIKETHIS]
 >
 >[Variabelmappning för XDM-objekt](/help/implement/aep-edge/xdm-var-mapping.md)
->[Variabelmappning för dataobjekt ](/help/implement/aep-edge/data-var-mapping.md)
+>>[Variabelmappning för dataobjekt ](/help/implement/aep-edge/data-var-mapping.md)

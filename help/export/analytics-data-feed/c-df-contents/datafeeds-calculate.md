@@ -4,9 +4,9 @@ keywords: Datafeed;jobb;mått;förkolumn;efterkolumn;bots;datumfiltrering;hände
 title: Beräkna mått
 feature: Data Feeds
 exl-id: f9b0d637-7a6e-416a-adff-3c7e533bfac7
-source-git-commit: 4bd46fd5a9b98bcca67a66c87c9bca67fa00061a
+source-git-commit: adee2f1013cfd2ae231e3133b5a5327b8792bd16
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '499'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,11 @@ Beskriver hur man beräknar vanliga mätvärden med hjälp av dataflöden.
 
 >[!NOTE]
 >
->Träffar som normalt inte ingår i Adobe Analytics ingår i dataflöden. Använd `exclude_hit = 0` för att ta bort uteslutna träffar från frågor om rådata. Data som samlats in ingår också i dataflöden. Om du vill utesluta datakällor ska du exkludera alla rader med `hit_source = 5,7,8,9`.
+>Träffar som normalt inte ingår i Analysis Workspace ingår i dataflöden. Du kan lägga till följande villkor i dina frågor om de är relevanta:
+>
+>* **`exclude_hit`**: Analysis Workspace innehåller endast data där `exclude_hit = 0`.
+>* **`customer_perspective`**: Analysis Workspace innehåller bara data där `customer_perspective = 0`, såvida du inte använder en virtuell rapportsvit som innehåller mobila bakgrundstötlar.
+>* **`hit_source`**: Data från datakällor kan innehålla skillnader mellan rådata och Analysis Workspace. Om du vill exkludera träffar från datakällor ska du exkludera alla rader där `hit_source = 5,7,8,9`.
 
 ## Sidvyer
 
@@ -38,7 +42,7 @@ Beskriver hur man beräknar vanliga mätvärden med hjälp av dataflöden.
 
 ## Besökare
 
-Alla metoder som Adobe använder för att identifiera unika besökare (anpassat besökar-ID, Experience Cloud ID-tjänst osv.) beräknas som ett värde i `post_visid_high` och `post_visid_low`. Sammanfogningen av dessa två kolumner kan användas som standard för att identifiera unika besökare oavsett hur de identifierades som en unik besökare. Om du vill veta vilken metod Adobe som används för att identifiera en unik besökare använder du kolumnen `post_visid_type`.
+Alla metoder som Adobe använder för att identifiera unika besökare (anpassat besökar-ID, Experience Cloud ID-tjänst osv.) beräknas som ett värde i `post_visid_high` och `post_visid_low`. Sammanfogningen av dessa två kolumner kan användas som standard för att identifiera unika besökare oavsett hur de identifierades som en unik besökare. Om du vill veta vilken metod Adobe använde för att identifiera en unik besökare använder du kolumnen `post_visid_type`.
 
 1. Sammanfoga `post_visid_high` och `post_visid_low`.
 2. Räkna det unika antalet värden.
