@@ -4,7 +4,7 @@ description: Bearbetningsreglerna för marknadsföringskanaler avgör om en bes�
 feature: Marketing Channels
 exl-id: 825f70a5-cce3-4b1c-bb42-828388348216
 role: Admin
-source-git-commit: 09c1484f3f1f1a7f5e25aa24a333dbaabb4dc9d0
+source-git-commit: fc8882a33227b1f1ed22cab95b5df3ea51e62d43
 workflow-type: tm+mt
 source-wordcount: '1816'
 ht-degree: 0%
@@ -21,7 +21,7 @@ Bearbetningsreglerna för marknadsföringskanaler avgör om en besökare når up
 
 Ytterligare information om bearbetning:
 
-* Data som samlas in med dessa regler är permanenta. Regler som har ändrats efter datainsamling är inte retroaktiva. Adobe rekommenderar att du granskar och tar hänsyn till alla omständigheter innan du sparar [!UICONTROL Marketing Channel Processing Rules] för att minimera risken för att data samlas in i felaktiga kanaler.
+* Data som samlas in med dessa regler är permanenta. Regler som har ändrats efter datainsamling är inte retroaktiva. Adobe rekommenderar att du granskar och tar hänsyn till alla omständigheter innan du sparar [!UICONTROL Marketing Channel Processing Rules] för att minska risken för att data samlas in i felaktiga kanaler.
 * Ni kan konfigurera upp till 25 separata marknadsföringskanaler.
 * Regler kan komma åt variabler som har angetts av VISTA, men de kan inte komma åt data som har tagits bort av VISTA.
 * Två marknadsföringskanaler får aldrig någon kredit för samma event (som köp eller klick). På så sätt skiljer sig marknadsföringskanalerna från eVars (där två eVars kan få krediter för samma händelse).
@@ -72,17 +72,17 @@ Den här referenstabellen definierar de fält, alternativ och träffattribut som
 |--- |--- |
 | Alla | Aktiverar endast den här kanalen när alla villkor i regeln är uppfyllda. |
 | Alla | Aktiverar den här kanalen när något av villkoren i regeln är sant. Det här alternativet är bara tillgängligt om det finns fler än ett villkor i regeln. |
-| AMO-ID | Den primära spårningskod som används av integreringarna med Adobe Advertising och Advertising Analytics. När en av dessa integreringar är aktiverad kan spårningskod-prefixet användas för att identifiera Advertising-specifika kanaler. Använd ett AMO-ID som börjar med AL för sökning och sociala medier eller AC för visning. När AMO-ID används i marknadsföringskanaler kan värdena för klickning/kostnad/intryck tillskrivas rätt kanal. När AMO-ID:t inte har konfigurerats går dessa värden till Direkt eller Ingen. |
+| AMO-ID | Den primära spårningskod som används av Adobe Advertising- och Advertising Analytics-integreringar. När en av dessa integreringar är aktiverad kan spårningskod-prefixet användas för att identifiera Advertising-specifika kanaler. Använd ett AMO-ID som börjar med AL för sökning och sociala medier eller AC för visning. När AMO-ID används i marknadsföringskanaler kan värdena för klickning/kostnad/intryck tillskrivas rätt kanal. När AMO-ID:t inte har konfigurerats går dessa värden till Direkt eller Ingen. |
 | AMO EF-ID | Den sekundära spårningskod som används av Adobe Advertising. Huvudsyftet med spårningskoden är att den ska fungera som nyckel för att skicka data tillbaka till Advertising. Den kan dock även användas för att identifiera Display ClickThvärgs och Display ViewThvärs som två separata marknadsföringskanaler. Det gör du genom att ange marknadsföringskanallogiken för&quot;AMO EF ID&quot; avslutas med `:d` för visningsklickningar eller så avslutas&quot;AMO EF ID&quot; med `:i` för visningsvygenomgångar. Om du inte vill dela upp Visning i två kanaler använder du AMO ID-dimensionen i stället. |
 | Konverteringsvariabler | Består av eVars som är aktiverade för den här rapportsviten och gäller bara när dessa variabler ställs in via Adobe-koden på sidan. |
 | Finns | Det finns flera tillgängliga markeringar, bland annat:<ul><li>**Finns inte**: Anger att träffattributet inte finns i begäran. Om användaren till exempel skriver en URL eller klickar på ett bokmärke i en hänvisande domän finns inte det refererande domänattributet.</li><li>**Är tom**: Anger att det finns ett träffattribut, vanligtvis en eVar- eller frågesträngsparameter, men det finns inget värde associerat med träffattributet.</li><li>**Innehåller inte**: Gör att du kan ange, till exempel, att en hänvisande domän inte innehåller ett visst värde (till skillnad från att använda markeringen &quot;Innehåller&quot;).</li></ul> |
 | Identifiera kanalen som | Associerar regeln med en marknadsföringskanal som du har lagt till på sidan för Marketing Channel Manager. |
-| Matchar regler för betald sökidentifiering | En betald sökning upptäcktes av Adobe. Betalda sökningar är när företag betalar en avgift för sökmotorn för att visa sin webbplats. Betalda sökningar visas vanligtvis högst upp eller till höger i sökresultaten. |
-| Matchar reglerna för identifiering av naturlig sökning | En obetald sökning upptäcktes av Adobe. |
+| Matchar regler för betald sökidentifiering | En betald sökning som upptäckts av Adobe. Betalda sökningar är när företag betalar en avgift för sökmotorn för att visa sin webbplats. Betalda sökningar visas vanligtvis högst upp eller till höger i sökresultaten. |
+| Matchar reglerna för identifiering av naturlig sökning | En obetald sökning upptäcktes av Adobe-rapporter. |
 | Referenten matchar interna URL-filter | Ett besök vars sid-URL matchar ett internt URL-filter, enligt definition för rapportsviten i Admin Tools. |
 | Referenten matchar inte interna URL-filter | Den refererande URL:en matchar inte ett internt URL-filter, som definierats för rapportsviten i Admin Tools. Du kan använda den här inställningen med sidans URL och Exists för att ställa in en regel för att spara alla, så att inga besök hamnar i rapportens avsnitt Ingen kanal identifierad. |
 | Ignorera träffar som matchar interna URL-filter | (För referenter) Spårar bara träffar som kommer från externt refererade platser. Vanligtvis låter du den här inställningen vara aktiverad om du inte vill inkludera intern trafik. |
-| Är första sidan av besök | Den första sidan av ett besök som Adobe rapporterar. |
+| Är första besöket | Den första besöksträffen som upptäckts av Adobe rapporter. |
 | Sida | Dimensionen [Sida](/help/components/dimensions/page.md). |
 | Siddomän | Domänen för sidan som besökaren kommer till, t.ex. `products.example.com`. |
 | Siddomän och sökväg | Domänen och sökvägen, till exempel `products.example.com/mens/pants/overview.html`. |
@@ -101,7 +101,7 @@ Den här referenstabellen definierar de fält, alternativ och träffattribut som
 
 ## Regelordning och definitioner för marknadsföringskanal {#channel-rules}
 
-Kanalreglerna bearbetas i den ordning som du anger. Adobe rekommenderar att du placerar betalda eller hanterade kanaler först (som betald sökning, naturlig sökning, visning eller e-post) så att de får kredit via organiska kanaler (som till exempel direkta, interna och refererande domäner).
+Kanalreglerna bearbetas i den ordning som du anger. Adobe rekommenderar att du placerar betalda eller hanterade kanaler först (som betald sökning, naturlig sökning, visning eller e-post) så att de får kredit via organiska kanaler (till exempel direkta, interna och refererande domäner).
 
 Nedan visas den rekommenderade ordningen för kanalregler och exempeldefinitioner:
 
@@ -123,7 +123,7 @@ Mer information finns i [Betalsökningsidentifiering](../general/paid-search-det
 
 Naturlig sökning är när besökarna hittar din webbplats via en sökmotor, och sökmotorn rankade din webbplats utan att du betalade för listan.
 
-Adobe bestämmer söktrafiken baserat på en intern sökning av sökmotorer. Om en referent matchar villkor för en sökmotor avgör den om den är betald eller naturlig med [betalsökningsregler](../general/paid-search-detection/paid-search-detection.md) som du har konfigurerat. En träff betraktas som naturlig sökning när den inte matchar några regler för betald sökningsidentifiering.
+Adobe fastställer söktrafiken baserat på en intern sökning av sökmotorer. Om en referent matchar villkor för en sökmotor avgör den om den är betald eller naturlig med [betalsökningsregler](../general/paid-search-detection/paid-search-detection.md) som du har konfigurerat. En träff betraktas som naturlig sökning när den inte matchar några regler för betald sökningsidentifiering.
 
 För marknadsföringskanalregeln är de naturliga sökinställningarna följande:
 
@@ -155,7 +155,7 @@ Ett bra tillvägagångssätt är att inkludera en&quot;annan kampanjkanal&quot; 
 
 ### Sociala nätverk {#social-networks}
 
-Den här regeln identifierar besökare som kommer från ett socialt nätverk, som Facebook. Kanalen byter ofta namn till Organic Social. Inställningarna kan vara följande:
+Den här regeln identifierar besökare som kommer från ett socialt nätverk, t.ex. Facebook. Kanalen byter ofta namn till Organic Social. Inställningarna kan vara följande:
 
 ![](assets/example_social.png)
 
@@ -165,7 +165,7 @@ Den här regeln används av besökare där den refererande URL:en matchar instä
 
 ![](assets/int-channel1.png)
 
-Mer information om varför den här kanalen inträffar finns i [Orsaker till intern (sessionsuppdatering)](https://experienceleague.adobe.com/docs/analytics/components/marketing-channels/c-faq.html?lang=sv-SE#internal).
+Mer information om varför den här kanalen inträffar finns i [Orsaker till intern (sessionsuppdatering)](https://experienceleague.adobe.com/docs/analytics/components/marketing-channels/c-faq.html#internal).
 
 ### Direkt {#direct}
 
