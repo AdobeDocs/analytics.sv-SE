@@ -165,7 +165,7 @@ Den här regeln används av besökare där den refererande URL:en matchar instä
 
 ![](assets/int-channel1.png)
 
-Mer information om varför den här kanalen inträffar finns i [Orsaker till intern (sessionsuppdatering)](https://experienceleague.adobe.com/docs/analytics/components/marketing-channels/c-faq.html#internal).
+Mer information om varför den här kanalen inträffar finns i [Orsaker till intern (sessionsuppdatering)](https://experienceleague.adobe.com/docs/analytics/components/marketing-channels/c-faq.html?lang=sv-SE#internal).
 
 ### Direkt {#direct}
 
