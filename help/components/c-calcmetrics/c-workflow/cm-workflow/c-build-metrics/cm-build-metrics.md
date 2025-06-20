@@ -186,7 +186,7 @@ Om du vill ta bort en behållare väljer du ![Stäng](/help/assets/icons/Close.s
 >[!MORELIKETHIS]
 >
 >[Använda funktioner](cm-using-functions.md)
->>[Segment](/help/components/segmentation/seg-overview.md)
+>&#x200B;>[Segment](/help/components/segmentation/seg-overview.md)
 >
 
 
