@@ -11,8 +11,8 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Ett nytt och smidigt [Report Builder](https://experienceleague.adobe.com/en/docs/analytics/analyze/report-builder/rb-overview) släpptes 16 oktober 2024. Det stöds i Mac, Windows och webbläsare.
->&#x200B;>Denna äldre Report Builder-tilläggsversion fungerar fortfarande. Du kan [konvertera dina äldre arbetsböcker](https://experienceleague.adobe.com/en/docs/analytics/analyze/report-builder/convert-workbooks) till nya Report Builder.
+>Ett nytt och smidigt [Report Builder](https://experienceleague.adobe.com/sv/docs/analytics/analyze/report-builder/rb-overview) släpptes 16 oktober 2024. Det stöds i Mac, Windows och webbläsare.
+>&#x200B;>Denna äldre Report Builder-tilläggsversion fungerar fortfarande. Du kan [konvertera dina äldre arbetsböcker](https://experienceleague.adobe.com/sv/docs/analytics/analyze/report-builder/convert-workbooks) till nya Report Builder.
 
 ## Rapporter och analyser - meddelande om att produkten har upphört att gälla {#ra-eol}
 

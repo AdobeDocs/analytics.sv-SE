@@ -121,7 +121,7 @@ Den här typen av segment filtrerar datauppsättningar baserat på egenskaper so
 Analysis Workspace innehåller följande funktioner:
 
 - Du kan [jämföra segment](../../analyze/analysis-workspace/c-panels/c-segment-comparison/segment-comparison.md).
-- Använd [segment som dimensioner](https://experienceleague.adobe.com/docs/core-services/interface/audiences/audience-library.html) i en jämförelse.
+- Använd [segment som dimensioner](https://experienceleague.adobe.com/docs/core-services/interface/audiences/audience-library.html?lang=sv-SE) i en jämförelse.
 - Använd segment i [utfallsanalys](../../analyze/analysis-workspace/visualizations/fallout/compare-segments-fallout.md).
 
 ## Segment som tillhandahålls av Adobe
@@ -279,7 +279,7 @@ Du kommer åt segmentbyggaren genom att:
 
 +++ **Vilka rättigheter och behörigheter behöver jag för att använda, skapa och hantera segment?**
 
-Som standard kan alla användare skapa och redigera personliga segment. Administratörer kan dock bestämma vem som ska ha [behörighet att skapa segment](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html) och kan tilldela dem till specifika grupper. Dessa segment kan delas direkt med andra Analytics-användare.
+Som standard kan alla användare skapa och redigera personliga segment. Administratörer kan dock bestämma vem som ska ha [behörighet att skapa segment](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html?lang=sv-SE) och kan tilldela dem till specifika grupper. Dessa segment kan delas direkt med andra Analytics-användare.
 
 Administratörer kan redigera alla segment och dela segment med grupper och med alla i organisationen. [Segmenträttigheter efter roll](/help/components/segmentation/seg-reference/seg-rights.md)
 
