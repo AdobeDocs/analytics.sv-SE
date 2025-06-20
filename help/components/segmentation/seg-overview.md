@@ -1,18 +1,18 @@
 ---
-description: Med segment kan du identifiera undergrupper av besökare baserat på egenskaper eller webbplatsinteraktioner. Segmenten är utformade som kodade målgruppsinsikter som ni kan bygga för era specifika behov, och sedan verifiera, redigera och dela med andra teammedlemmar eller använda i andra Adobe-produkter och Analytics-funktioner.
+description: Med segment kan du identifiera undergrupper av besökare baserat på egenskaper eller webbplatsinteraktioner. Segmenten är utformade som kodade målgruppsinsikter som ni kan bygga för just era behov och sedan verifiera, redigera och dela med andra teammedlemmar eller använda i andra Adobe-produkter och Analytics-funktioner.
 title: Om segment
 feature: Segmentation
 exl-id: 11d930ca-5d59-4ea5-b6e5-fe3d57be94fd
-source-git-commit: d17fbcca39e0529a01aeb2a87d0d1390c449eb8d
+source-git-commit: b96210a478c46f5d9cbf49c6288b698dc47d64fe
 workflow-type: tm+mt
-source-wordcount: '1134'
+source-wordcount: '1137'
 ht-degree: 1%
 
 ---
 
 # Om segment
 
-Med segment kan du identifiera undergrupper av besökare baserat på egenskaper eller webbplatsinteraktioner. Segmenten är utformade som målgruppsinsikter som ni kan bygga för era specifika behov och sedan verifiera, redigera och dela med andra teammedlemmar eller använda i andra Adobe-produkter och Analytics-funktioner.
+Med segment kan du identifiera undergrupper av besökare baserat på egenskaper eller webbplatsinteraktioner. Segmenten är utformade som målgruppsinsikter som ni kan bygga för just era behov och sedan verifiera, redigera och dela med andra teammedlemmar eller använda i andra Adobe-produkter och Analytics-funktioner.
 
 Segmenten baseras på en [!UICONTROL Visitor]-, [!UICONTROL Visit]- och [!UICONTROL Hit]-nivåhierarki som använder en kapslad behållarmodell. Med de kapslade behållarna kan du definiera besökarattribut och åtgärder baserat på regler mellan och inom behållarna. Analyssegment kan skapas, godkännas, delas, sparas och köras för flera produkter och funktioner i [!DNL Adobe Experience Cloud]. Segment kan genereras från en rapport, byggas in i en kontrollpanelrapport eller bokmärkas för snabb åtkomst.
 
@@ -121,12 +121,12 @@ Den här typen av segment filtrerar datauppsättningar baserat på egenskaper so
 Analysis Workspace innehåller följande funktioner:
 
 - Du kan [jämföra segment](../../analyze/analysis-workspace/c-panels/c-segment-comparison/segment-comparison.md).
-- Använd [segment som dimensioner](https://experienceleague.adobe.com/docs/core-services/interface/audiences/audience-library.html?lang=sv-SE) i en jämförelse.
+- Använd [segment som dimensioner](https://experienceleague.adobe.com/docs/core-services/interface/audiences/audience-library.html) i en jämförelse.
 - Använd segment i [utfallsanalys](../../analyze/analysis-workspace/visualizations/fallout/compare-segments-fallout.md).
 
 ## Segment som tillhandahålls av Adobe
 
-Komponentspåret till vänster på skärmen visar segment som har skapats av dig och ditt företag samt segment Adobe som ingår i paketet. När du klickar på **[!UICONTROL Show all]** visas dessa segment vanligtvis längst ned i listan och identifieras av Adobe-logotypen till höger.
+Komponentspåret till vänster på skärmen visar segment som har skapats av dig och ditt företag samt Adobe-segment som ingår i paketet. När du klickar på **[!UICONTROL Show all]** visas dessa segment vanligtvis längst ned i listan och identifieras av Adobe logotyp till höger.
 
 ## Sekventiella segment {#sequential}
 
@@ -242,7 +242,7 @@ Den här videon ger en kort översikt över vilka segmentbehållare som är och 
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Segmentbehållare](https://video.tv.adobe.com/v/3429102?quality=12&learn=on&captions=swe){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Segmentbehållare](https://video.tv.adobe.com/v/25401?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 
@@ -279,9 +279,9 @@ Du kommer åt segmentbyggaren genom att:
 
 +++ **Vilka rättigheter och behörigheter behöver jag för att använda, skapa och hantera segment?**
 
-Som standard kan alla användare skapa och redigera personliga segment. Administratörer kan dock bestämma vem som ska ha [behörighet att skapa segment](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html?lang=sv-SE) och kan tilldela dem till specifika grupper. Dessa segment kan delas direkt med andra Analytics-användare.
+Som standard kan alla användare skapa och redigera personliga segment. Administratörer kan dock bestämma vem som ska ha [behörighet att skapa segment](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html) och kan tilldela dem till specifika grupper. Dessa segment kan delas direkt med andra Analytics-användare.
 
-Administratörer kan redigera alla segment och dela segment med grupper och med alla i organisationen. [Mer...](/help/components/segmentation/seg-reference/seg-rights.md)
+Administratörer kan redigera alla segment och dela segment med grupper och med alla i organisationen. [Segmenträttigheter efter roll](/help/components/segmentation/seg-reference/seg-rights.md)
 
 +++
 
@@ -299,12 +299,12 @@ Ja, alla segment kan hanteras i segmenthanteraren. Segmenthanteraren visar segme
 
 Administratörer kan se alla segment i Analysis Workspace användargränssnitt.
 
-I Report Builder visas endast segment som du har skapat eller segment som har delats specifikt med dig.
+Report Builder visar endast segment som skapats av dig eller segment som har delats specifikt med dig.
 
 +++
 
 +++ **Varför kan jag inte ta bort det här segmentet?**
 
-Om segmentet [publicerades på Experience Cloud](/help/components/segmentation/segmentation-workflow/seg-workflow.md) kan du inte ta bort eller redigera det. Du kan dock kopiera den och redigera den kopierade versionen.
+Om segmentet [publicerades till Experience Cloud](/help/components/segmentation/segmentation-workflow/seg-workflow.md) kan du inte ta bort eller redigera det. Du kan dock kopiera den och redigera den kopierade versionen.
 
 +++

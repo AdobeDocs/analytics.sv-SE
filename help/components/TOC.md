@@ -4,9 +4,9 @@ audience: end-user
 user-guide-title: Komponenthandbok för Analytics
 breadcrumb-title: Användarhandbok om komponenter
 user-guide-description: Hantera data med komponenter som segment, beräknade värden, virtuella rapportsviter, marknadsföringskanaler och klassificeringar. Lär dig mer om Analytics över flera enheter.
-source-git-commit: a40f30bbe8fdbf98862c4c9a05341fb63962cdd1
+source-git-commit: c2cd529b09b8fa46f5e7d4e18383832b1f2a0494
 workflow-type: tm+mt
-source-wordcount: '786'
+source-wordcount: '784'
 ht-degree: 6%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 6%
 # [!DNL Adobe Analytics] Komponentguide {#components}
 
 + [Komponenthandbok för Analytics](home.md)
-+ [Versionsinformation för analyser](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html?lang=sv-SE)
++ [Versionsinformation för analyser](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html)
 + Mått {#dimensions}
    + [Översikt över dimensioner](dimensions/overview.md)
    + [Dimension-kompatibilitet](dimensions/compatibility.md)
@@ -180,22 +180,24 @@ ht-degree: 6%
    + [Om segmentbehållare](segmentation/seg-containers.md)
    + [Segmenteringsfunktioner i Analysis Workspace](segmentation/segmentation-in-analysis-workspace.md)
    + Arbetsflöde för segmentering {#segmentation-workflow}
-      + [Översikt över segmenteringsarbetsflöde](segmentation/segmentation-workflow/seg-workflow.md)
+      + [Översikt](segmentation/segmentation-workflow/seg-workflow.md)
       + [Planera segment](segmentation/segmentation-workflow/seg-plan.md)
+      + [Skapa signaturer](segmentation/segmentation-workflow/seg-create.md)
       + [Skapa segment](segmentation/segmentation-workflow/seg-build.md)
-      + [Skapa sekventiella segment](segmentation/segmentation-workflow/seg-sequential-build.md)
-      + [Tagga segment](segmentation/segmentation-workflow/seg-tag.md)
-      + [Godkänn segment](segmentation/segmentation-workflow/seg-approve.md)
+      + [Snabbsegment](segmentation/segmentation-workflow/seg-quick.md)
+      + [Sekventiella segment](segmentation/segmentation-workflow/seg-sequential-build.md)
       + [Dela segment](segmentation/segmentation-workflow/t-seg-share.md)
-      + [Publicera segment i Experience Cloud](segmentation/segmentation-workflow/seg-publish.md)
-      + [Markera och tillämpa segment](segmentation/segmentation-workflow/t-seg-apply.md)
-      + [Filtrera segment](segmentation/segmentation-workflow/t-seg-filter.md)
+      + [Tagga segment](segmentation/segmentation-workflow/seg-tag.md)
+      + [Filtrera listan med segment](segmentation/segmentation-workflow/t-seg-filter.md)
       + [Markera segment som favoriter](segmentation/segmentation-workflow/t-seg-favorite.md)
+      + [Godkänn segment](segmentation/segmentation-workflow/seg-approve.md)
       + [Ta bort segment](segmentation/segmentation-workflow/seg-delete.md)
       + [Kopiera segment](segmentation/segmentation-workflow/seg-copy.md)
       + [Hantera segment](segmentation/segmentation-workflow/seg-manage.md)
+      + [Publicera segment i Experience Cloud](segmentation/segmentation-workflow/seg-publish.md)
+      + [Markera och tillämpa segment](segmentation/segmentation-workflow/t-seg-apply.md)
    + Segmentreferens {#segment-reference}
-      + [Jämförelseoperatorer för segment](segmentation/seg-reference/seg-operators.md)
+      + [Operatorer](segmentation/seg-reference/seg-operators.md)
       + [Data Warehouse segmentkompatibilitet](segmentation/seg-reference/seg-compatibility.md)
       + [Segmenträttigheter efter roll](segmentation/seg-reference/seg-rights.md)
       + [Felsökning](segmentation/seg-reference/c-troubleshooting.md)
@@ -208,9 +210,9 @@ ht-degree: 6%
       + [Arbetsflöde för beräknade mätvärden](c-calcmetrics/c-workflow/cm-workflow/cm-workflow.md)
       + [Hitta mätvärden](c-calcmetrics/c-workflow/cm-workflow/cm-finding.md)
       + [Bygg mätvärden](c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-build-metrics.md)
-      + [Bygg en sidvy per besök-mätare](c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-pvv.md)
-      + [Bygg upp en orderassistent](c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-orders-participation.md)
-      + [Bygg ett delgivningsmått](c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/participation-metric.md)
+      + [Bygg enkla mätvärden](c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-pvv.md)
+      + [Bygg en mer komplex mätmetod](c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-orders-participation.md)
+      + [Bygg ett deltagandemått](c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/participation-metric.md)
       + [Mättyp och attribuering](c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/m-metric-type-alloc.md)
       + [Segmenterade mätvärden](c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/metrics-with-segments.md)
       + [Stapla och ersätta segment](c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-stack-seg.md)

@@ -3,56 +3,30 @@ description: Beskriver ett föreslaget arbetsflöde för segment som skapats med
 title: Översikt över segmenteringsarbetsflöde
 feature: Segmentation
 exl-id: 2ed6e327-d69d-4cdb-9b87-99ebebc37e2c
-source-git-commit: 7a47d837eeae65f2e98123aca78029bfeb7ffe9d
+source-git-commit: 10a496167b3cb1dd8a2b1a6eb2ec65185c3064ba
 workflow-type: tm+mt
-source-wordcount: '240'
-ht-degree: 0%
+source-wordcount: '265'
+ht-degree: 7%
 
 ---
 
 # Översikt över segmenteringsarbetsflöde
 
-Beskriver ett föreslaget arbetsflöde för segment som skapats med segmentbyggaren och hanteras med segmenthanteraren.
-
-![](assets/seg_workflow.png)
+I den här artikeln beskrivs ett förslag på arbetsflöde för att skapa segment med segmentbyggaren och hantera segment med segmenthanteraren.
 
 
-![](assets/step1_icon.png) [Planera segment](/help/components/segmentation/segmentation-workflow/seg-plan.md)
+| Steg | Åtgärd | Information |
+|:--:|---|---|
+| 1 | [Planera segment](/help/components/segmentation/segmentation-workflow/seg-plan.md) | Har ni ställt rätt frågor innan ni bygger segment och skapar en segmenthanteringsmiljö? Har du utformat segmentet med dess avsedda syfte och tydliga användning i åtanke? <br/>Se [checklistan för segmentplanering](seg-plan.md) för hjälp med att planera och organisera dina segment. |
+| 2 | [Skapa segment](seg-create.md) | Använd de olika alternativen för att skapa ett nytt segment. |
+| 3 | [Skapa segment](/help/components/segmentation/segmentation-workflow/seg-build.md) | Bygg och redigera segment för användning i alla Analytics-funktioner. <br/>Se [Skapa sekventiella segment](/help/components/segmentation/segmentation-workflow/seg-sequential-build.md) för hur du skapar segment med operatorn THEN. |
+| 4 | [Tagga segment](/help/components/segmentation/segmentation-workflow/seg-tag.md) | Märk upp segment för enkel organisering och delning. Se hur du planerar och tilldelar taggar för enkla och avancerade sökningar och organisation. |
+| 5 | [Godkänna segment](/help/components/segmentation/segmentation-workflow/seg-approve.md) | Godkänn segment för att göra dem kanoniska. |
+| 6 | [Använd segment](/help/components/segmentation/segmentation-workflow/t-seg-apply.md) | Du kan tillämpa segment direkt i en rapport, från segmentkomponenterna. |
+| 7 | [Dela segment](/help/components/segmentation/segmentation-workflow/t-seg-share.md) | Dela era segment med den avsedda målgruppen i andra analysverktyg och med Adobe Target och Adobe Experience Cloud. |
+| 8 | [Filtrera segment](/help/components/segmentation/segmentation-workflow/t-seg-filter.md) | Filtrera efter taggar, ägare och andra filter (Visa alla, Min, Delas med mig, Favoriter och Godkänd). |
+| 9 | [Markera segment som favoriter](/help/components/segmentation/segmentation-workflow/t-seg-favorite.md) | Att markera segment som favoriter är ett annat sätt att ordna dem så att de blir lätta att använda. |
 
-Har ni ställt rätt frågor innan ni bygger segment och skapar en segmenthanteringsmiljö? Har du utformat segmentet med dess avsedda syfte och tydliga användning i åtanke?
+## Hantera segment
 
-Se checklistan för segmentplanering för hjälp med att planera och organisera era segment.
-
-![](assets/step2_icon.png) [Skapa segment](/help/components/segmentation/segmentation-workflow/seg-build.md)
-
-Bygg och redigera segment för användning i alla Analytics-funktioner.
-
-Se [Skapa sekventiella segment](/help/components/segmentation/segmentation-workflow/seg-sequential-build.md) för hur du skapar segment med operatorn THEN.
-
-![](assets/step3_icon.png) [Tagga segment](/help/components/segmentation/segmentation-workflow/seg-tag.md)
-
-Märk upp segment för enkel organisering och delning. Se hur du planerar och tilldelar taggar för enkla och avancerade sökningar och organisation.
-
-![](assets/step4_icon.png) [Godkänn segment](/help/components/segmentation/segmentation-workflow/seg-approve.md)
-
-Godkänn segment för att göra dem kanoniska.
-
-![](assets/step5_icon.png) [Använd segment](/help/components/segmentation/segmentation-workflow/t-seg-apply.md)
-
-Du kan använda segment direkt från en rapport, från segmentlisten ( Visa segment).
-
-![](assets/step6_icon.png) [Dela segment](/help/components/segmentation/segmentation-workflow/t-seg-share.md)
-
-Dela era segment med den avsedda målgruppen i andra analysverktyg och med Adobe Target och Adobe Experience Cloud.
-
-![](assets/step7_icon.png) [Filtrera segment](/help/components/segmentation/segmentation-workflow/t-seg-filter.md)
-
-Filtrera efter taggar, ägare och andra filter (Visa alla, Min, Delas med mig, Favoriter och Godkänd).
-
-![](assets/step8_icon.png) [Markera segment som favoriter](/help/components/segmentation/segmentation-workflow/t-seg-favorite.md)
-
-Att markera segment som favoriter är ett annat sätt att ordna dem så att de blir lätta att använda.
-
-[Hantera segment](/help/components/segmentation/segmentation-workflow/seg-manage.md)
-
-Segmenthanteraren erbjuder många sätt att strukturera segment, som att dela, filtrera, tagga, godkänna, kopiera, ta bort och markera som favoriter.
+[Segmenthanteraren](/help/components/segmentation/segmentation-workflow/seg-manage.md) erbjuder många sätt att strukturera segment, som att dela, filtrera, tagga, godkänna, kopiera, ta bort och markera som favoriter.

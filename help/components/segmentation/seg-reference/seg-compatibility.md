@@ -3,7 +3,7 @@ description: Alla segment som skapas i segmentbyggaren är inte kompatibla med D
 title: Data Warehouse segmentkompatibilitet
 feature: Segmentation
 exl-id: 66b86226-ef4c-4a1a-abe1-3c3accf419e5
-source-git-commit: 7a47d837eeae65f2e98123aca78029bfeb7ffe9d
+source-git-commit: 002ce0f001796187c01fc955b79ac967ba36da9a
 workflow-type: tm+mt
 source-wordcount: '342'
 ht-degree: 1%
@@ -12,7 +12,7 @@ ht-degree: 1%
 
 # Data Warehouse segmentkompatibilitet
 
-Alla segment som skapats i segmentbyggaren är inte kompatibla med [!DNL Data Warehouse]. I den här tabellen visas de funktioner som stöds.
+Alla segment som skapats i segmentverktyget är inte kompatibla med [!DNL Data Warehouse]. I den här tabellen visas de funktioner som stöds.
 
 <table> 
  <thead> 
@@ -52,13 +52,13 @@ Alla segment som skapats i segmentbyggaren är inte kompatibla med [!DNL Data Wa
      <li>Anmälningsdatum </li> 
      <li>Alla söksidrankning </li> 
     </ul> </td> 
-   <td> Dra och släpp en dimension i segmentbyggarens fält <span class="uicontrol"> Definitioner </span> om du vill veta mer om dess produktkompatibilitet. De här dimensionerna stöds till exempel bara i Data Warehouse: 
+   <td> Dra och släpp en dimension i segmentbyggarens fält <span class="uicontrol"> Definitioner </span> om du vill veta mer om dess produktkompatibilitet. De här måtten stöds till exempel bara i Data Warehouse: 
     <ul> 
      <li>IP-adress </li> 
      <li>Sidans URL </li> 
      <li>Besökar-ID </li> 
      <li>Experience Cloud Visitor-ID </li> 
-    </ul> <p>Följande dimensioner <b>kan inte </b>användas i Data Warehouse: </p> 
+    </ul> <p>Följande dimensioner <b>kan inte </b>användas i Data Warehouse-segment: </p> 
     <ul> 
      <li>Alla söksidrankning </li> 
      <li>AM/PM </li> 
@@ -66,9 +66,9 @@ Alla segment som skapats i segmentbyggaren är inte kompatibla med [!DNL Data Wa
      <li>Veckodag </li> 
      <li>Dag på året </li> 
      <li>Enhet för startaffärsenhet </li> 
-     <li>Post (alla Dimensioner som börjar med Entry, förutom Entry Page) </li> 
-     <li>Avsluta (alla Dimensioner som börjar med Avsluta, förutom Avsluta länk och Avsluta sida) </li> 
-     <li>Hierarki (alla Dimensioner som börjar med hierarki) </li> 
+     <li>Post (alla dimensioner som börjar med Inmatning, förutom Inmatningssida) </li> 
+     <li>Avsluta (alla dimensioner med början vid Avsluta, förutom Avsluta länk och Avsluta sida) </li> 
+     <li>Hierarki (alla dimensioner med början från hierarki) </li> 
      <li>Träff-djup </li> 
      <li>Träfftyp </li> 
      <li>Timdag </li> 
@@ -99,4 +99,4 @@ Alla segment som skapats i segmentbyggaren är inte kompatibla med [!DNL Data Wa
  </tbody> 
 </table>
 
-*Obs! Datan Warehouse stöder inte alla fall där en `exclusion` - eller `without` -behållare används när `AND/OR` används. När du använder en sådan kombination stöds endast de segment som kan skrivas om som `A AND NOT B` (eller **inkludera den här egenskapen**&#x200B;och **exkludera den här egenskapen**) i Datan Warehouse.*
+*Obs! Data Warehouse stöder inte alla fall där en `exclusion` - eller `without` -behållare används när `AND/OR` används. När du använder en sådan kombination stöds endast de segment som kan skrivas om som `A AND NOT B` (eller **include this property**och **exclude this property**) i Data Warehouse.*

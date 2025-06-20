@@ -3,9 +3,9 @@ description: Visar hur du staplar och ersätter segment i verktyget för beräkn
 title: Stapla och ersätta segment
 feature: Calculated Metrics
 exl-id: a89d66df-a5bc-45fd-8592-967446d8d63b
-source-git-commit: e955e3bfe114717f6e42d06cb92faff30a10284d
+source-git-commit: 31da453887027f5c3a625d014411cf45353e62bf
 workflow-type: tm+mt
-source-wordcount: '83'
+source-wordcount: '112'
 ht-degree: 0%
 
 ---
@@ -14,18 +14,18 @@ ht-degree: 0%
 
 Du kan stapla och ersätta segment i verktyget Beräknade mätvärden.
 
-## Stapla segment {#section_3FC1118FEE2B40B7BB90F29C8521AF53}
+## Stapla segment {#stack-segment}
 
-1. Börja skapa ett mätvärde enligt beskrivningen i [Bygg mått](/help/components/c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-build-metrics.md).
+1. Börja bygga upp ett mätvärde enligt beskrivningen i [Skapa beräknade värden](cm-build-metrics.md).
 
 1. På arbetsytan Definition släpper du det nya segmentet bredvid det befintliga:
 
-![](assets/cm_stack_seg.png)
+   ![Definitionsarbetsyta som visar det amerikanska besökarmåttet som släppts bredvid de befintliga internationella besökarna.](assets/segment-stack.png)
 
-## Ersätta ett segment med ett annat {#section_3DA899DF522A44D7A583C5DC8C0A033E}
+## Ersätta ett segment med ett annat {#replace-segment}
 
-1. Börja skapa ett mätvärde enligt beskrivningen i [Bygg mått](/help/components/c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-build-metrics.md).
+1. Börja skapa ett mätvärde enligt beskrivningen i [Bygg mått](cm-build-metrics.md).
 
 1. På arbetsytan Definition släpper du det nya segmentet ovanpå det befintliga:
 
-![](assets/cm_replace_seg.png)
+   ![Definitionsyta som visar de amerikanska besökarna ovanpå de internationella besökarmåtten.](assets/segment-replace.png)

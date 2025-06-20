@@ -3,74 +3,86 @@ description: Genom att segmentera enskilda mätvärden kan ni göra mätjämför
 title: Segmenterade mätvärden
 feature: Calculated Metrics
 exl-id: 1e7e048b-9d90-49aa-adcc-15876c864e04
-source-git-commit: 08e29da4847e8ef70bd4435949e26265d770f557
+source-git-commit: 31da453887027f5c3a625d014411cf45353e62bf
 workflow-type: tm+mt
-source-wordcount: '473'
+source-wordcount: '451'
 ht-degree: 0%
 
 ---
 
 # Segmenterade mätvärden
 
-I verktyget Beräknade mätvärden kan du använda segment i måttdefinitionen. Detta är praktiskt om du vill ta fram nya mätvärden som ska användas i din analys. Tänk på att segmentdefinitioner kan uppdateras med segmentverktyget. Om ändringar görs uppdateras segmentet automatiskt varhelst det används, inklusive om det ingår i en beräknad måttdefinition.
+I [verktyget för beräknade mätvärden](cm-build-metrics.md#definition-builder) kan du använda segment i måttdefinitionen. Det är praktiskt att använda segment om du vill använda mätvärden för en delmängd av dina data i analysen.
 
-![](assets/german-visitors.png)
+>[!NOTE]
+>
+>Segmentdefinitioner uppdateras via [segmentbyggaren](/help/components/segmentation/segmentation-workflow/seg-build.md). Om du ändrar ett segment uppdateras det automatiskt överallt där det används, inklusive om segmentet ingår i en beräknad måttdefinition.
+>
 
-## Skapa ett segmenterat mätresultat {#create}
+Ni vill jämföra mätvärden för tyska människor som interagerar med ert varumärke med människor utanför Tyskland. Du kan alltså svara på frågor som:
 
-Låt oss säga att du vill jämföra olika aspekter av ett&quot;tyska besökarsegment&quot; med ett&quot;internationellt besökarsegment&quot;. Du kan skapa mätvärden som ger dig insikter som:
+1. Hur många tyska jämfört med internationella personer besöker dina mest [populära sidor](#popular-pages).
+1. Hur många tyska jämfört med internationella personer på [totalt](#totals) har interagerat online med ditt varumärke den här månaden.
+1. Vilka är de [procentandelarna](#percentages) tyskar och internationella personer som har besökt dina populära sidor?
 
-* Hur fungerar innehållssökning jämfört med de två grupperna? (Ett annat exempel är: Hur ser konverteringsgraden ut mellan de två segmenten?)
-* Hur många tyska besökare surfar på vissa sidor jämfört med internationella besökare som en procentandel av det totala antalet besökare?
-* Var är de största skillnaderna när det gäller vilket innehåll som nås av de olika segmenten?
+Se avsnitten nedan för att illustrera hur segmenterade mätvärden kan hjälpa dig att svara på dessa frågor. Vid behov hänvisas till mer detaljerad dokumentation.
 
-Bygg och spara ett mätvärde som kallas&quot;tyska besökare&quot; och ett mätvärde som kallas&quot;internationella besökare&quot;:
+## Populära sidor
 
-1. Skapa ett ad hoc-segment i beräkningsverktyget som kallas&quot;tyska besökare&quot;, där&quot;länder&quot; är lika med&quot;Tyskland&quot;.
+1. [Skapa ett beräknat mått](../cm-workflow.md) från ett Workspace-projekt med namnet `Germany`.
+1. I [kalkylerade måttverktyget](cm-build-metrics.md) [skapar du ett segment](/help/components/segmentation/segmentation-workflow/seg-build.md), med namnet `Germany`, som använder fältet Länder.
 
-   Dra dimensionen Länder till arbetsytan Definition och välj [!UICONTROL **Tyskland**] som värde:
-
-   ![](assets/segment-from-dimension.png)
-
-   >[!NOTE]
+   >[!TIP]
    >
-   >Du kan också göra detta i [Segmentverktyget](/help/components/segmentation/segmentation-workflow/seg-build.md), men vi har förenklat arbetsflödet genom att göra dimensioner tillgängliga i verktyget Beräknade mätvärden. &quot;Adhoc&quot; innebär att segmentet inte är synligt i listan **[!UICONTROL Segments]** i den vänstra listen. Du kan emellertid göra den offentlig genom att hålla muspekaren över ikonen i bredvid den och klicka på **[!UICONTROL Make public]**.
+   >I verktyget Beräknade mätvärden kan du skapa ett segment direkt med hjälp av panelen Komponenter.
+   >   
 
-1. Dra segmentet Tyskland till arbetsytan Definition och dra det unika besökarmåttet i det:
+   Ditt segment skulle kunna se ut som.
 
-   ![](assets/german-visitors.png)
+   ![Segmentera Tyskland](assets/segment-germany.png)
 
-1. Välj [!UICONTROL **Spara**] om du vill spara det beräknade måttet.
+1. Använd segmentet för att uppdatera det beräknade måttet i verktyget Beräknade mått.
 
-1. Skapa ett ad hoc-segment i beräkningsverktyget som kallas&quot;Internationella besökare&quot;, där&quot;länder&quot; inte är lika med&quot;Tyskland&quot;.
+   ![Beräknat mätvärde Tyskland](assets/germany-visits.png)
 
-   Dra dimensionen Länder till definitionsytan, markera [!UICONTROL **Tyskland**] som värde och markera sedan [!UICONTROL **inte är lika med**] som operatorn.
+Upprepa stegen ovan för den internationella versionen av det beräknade måttet.
 
-1. Dra det unika besökarmåttet i det.
+1. Skapa ett beräknat mått från ditt Workspace-projekt med namnet `Non Germany visits`.
+1. Skapa ett segment, med namnet `Not Germany`, som använder fältet CRM-land från dina CRM-data för att avgöra var en person kommer från i verktyget Beräknade mätvärden.
 
-1. Välj [!UICONTROL **Spara**] om du vill spara det beräknade måttet.
+   Ditt segment ska se ut som.
 
-1. I Analysis Workspace drar du Dimensionen **[!UICONTROL Page]** till en frihandstabell och drar de två nya beräknade måtten intill varandra till överkanten:
+   ![Segmentera Tyskland](assets/segment-not-germany.png)
 
-   ![](assets/workspace-pages.png)
+1. Använd segmentet för att uppdatera det beräknade måttet i verktyget Beräknade mått.
 
-
->[!BEGINSHADEBOX]
-
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Segmenterade mätvärden](https://video.tv.adobe.com/v/25409?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
-
->[!ENDSHADEBOX]
+   ![Beräknat mätvärde Tyskland](assets/non-germany-visits.png)
 
 
-## Procent av totala mätvärden {#percent-total}
+1. Skapa ett projekt i Analysis Workspace där du tittar på sidor som besökts av tyska och icke-tyska besökare.
 
-Du kan ta exemplet ovan ett steg längre genom att jämföra segmentet med en total population. Det gör du genom att skapa två nya mätvärden, &quot;% av totalt antal tyska besökare&quot; och &quot;% av totalt antal internationella besökare&quot;:
+   ![Workspace Freeform-tabellvisualisering som visar tyska kontra internationella personer](assets/workspace-german-vs-international.png)
 
-1. Släpp segmentet med tyska (eller internationella) besökare på arbetsytan.
-1. Släpp ytterligare tyska (eller internationella) besökarsegment nedan. Men den här gången klickar du på konfigurationsikonen (kugghjulsikonen) för att välja måtttypen &quot;Totalt&quot;. Formatet ska vara &quot;Procent&quot;. Operatorn ska delas med. Resultatet blir den här måttdefinitionen:
 
-   ![](assets/cm_metric_total.png)
+## Summor
 
-1. Använd följande mått i ditt projekt:
+1. Skapa två nya beräknade värden baserade på totalsumman. Öppna varje segment som skapats tidigare, byt namn på segmentet, ange **[!UICONTROL Metric type]** för **[!UICONTROL People]** till **[!UICONTROL Grand Total]** och använd **[!UICONTROL Save As]** för att spara segmentet med det nya namnet. Exempel:
 
-   ![](assets/cm_percent_total.png)
+   ![Totalt mått för Tyskland](assets/calculated-metric-germany-total.png)
+
+1. Lägg till en ny visualisering av Freeform-tabeller i ditt Workspace-projekt, med årets totala sidor.
+
+   ![Workspace Freeform-tabellvisualisering som visar totalt antal tyska och internationella personer](assets/workspace-german-vs-international-totals.png)
+
+
+## Procenttal
+
+1. Skapa två nya beräknade mätvärden som beräknar en procentandel av de beräknade mätvärden som du skapade tidigare.
+
+   ![Visualisering av Workspace Freeform-tabell som visar det totala antalet tyska jämfört med internationella personer i procent](assets/calculated-metric-germany-total-percentage.png)
+
+
+1. Uppdatera ditt Workspace-projekt.
+
+   ![Workspace Freeform-tabellvisualisering som visar totalt antal tyska och internationella personer](assets/workspace-german-vs-international-totals-percentage.png)
+

@@ -3,9 +3,9 @@ description: Gör att du kan använda segmentet för marknadsföringsaktiviteter
 title: Publicera segment till Experience Cloud
 feature: Segmentation
 exl-id: 0215f896-d3f8-42cc-ac8d-8a94b009927b
-source-git-commit: bfd38bbd69dc0b857a748103288df77e14826315
+source-git-commit: bf58da2a39e8b9fd298356f23a9bf8f6c394d3de
 workflow-type: tm+mt
-source-wordcount: '1288'
+source-wordcount: '1279'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 >abstract="Du kan publicera målgruppen som härletts från det här segmentet i målgruppsbiblioteket där den kan användas för marknadsföringsaktiviteter i Target och andra Experience Cloud-lösningar."
 
 >[!CONTEXTUALHELP]
->id="components_segments_audienclibrary"
+>id="components_segments_audiencelibrary"
 >title="Målgruppsbibliotek"
 >abstract="Segment som har skapats i målgruppsbiblioteket är tillgängliga direkt och är inte beroende av Analytics-uppdateringar."
 
@@ -41,16 +41,16 @@ Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Publicera segment
 
 ## Förutsättningar
 
-* Kontrollera att rapportsviten som du sparar det här segmentet i är [aktiverad för Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/audiences/t-publish-audience-segment.html?lang=sv-SE). I annat fall kan du inte publicera det på Experience Cloud.
+* Kontrollera att rapportsviten som du sparar det här segmentet i är [aktiverad för Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/audiences/t-publish-audience-segment.html). I annat fall kan du inte publicera det på Experience Cloud.
 * Se till att din organisation använder Experience Cloud ID:n.
-* Innan du kan publicera segment måste din administratör tilldela [!UICONTROL Segment Publishing]-behörigheten till en produktprofil i [Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html?lang=sv-SE) och lägga till dig i produktprofilen.
+* Innan du kan publicera segment måste din administratör tilldela [!UICONTROL Segment Publishing]-behörigheten till en produktprofil i [Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html) och lägga till dig i produktprofilen.
 
 ## Överväganden
 
 * **Report Suite-begränsningar**: Du kan publicera upp till 75 segment per rapportserie. Den här gränsen gäller. Om du redan har 75 segment publicerade kan du inte publicera några ytterligare segment förrän du avpublicerar tillräckligt många segment för att komma under tröskelvärdet på 75 segment.
 * **Medlemskapsgränser**: Publiker som delas med [!DNL Experience Cloud] från Adobe Analytics får inte överstiga 20 miljoner unika medlemmar.
 * **Dataintegritet**: Målgrupperna filtreras inte baserat på autentiseringstillståndet för en besökare. Om en besökare kan bläddra på webbplatsen i icke-autentiserade och autentiserade lägen, kan åtgärder som utförs när en besökare inte är autentiserad ändå göra att besökaren inkluderas i en målgrupp. Granska [Adobe Experience Cloud sekretess](https://www.adobe.com/privacy/experience-cloud.html) om du vill veta mer om målgruppsdelningens konsekvenser för integriteten.
-* Om du vill ha en diskussion om **skillnaderna mellan segment i [!DNL Adobe Analytics] och[!DNL Audience Manager]** går du [här](https://experienceleague.adobe.com/docs/analytics/integration/audience-analytics/audience-analytics-workflow/aam-analytics-segments.html?lang=sv-SE).
+* En diskussion om **skillnaderna mellan segment i [!DNL Adobe Analytics] och[!DNL Audience Manager]** finns i [Förstå segment i Analytics och Audience Manager](https://experienceleague.adobe.com/docs/analytics/integration/audience-analytics/audience-analytics-workflow/aam-analytics-segments.html).
 
 ## Tidslinje för segmentpublicering
 
@@ -71,14 +71,14 @@ Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Publicera segment
 1. Ange en rubrik och en beskrivning för segmentet. Dessa fält är obligatoriska innan du sparar.
 1. I avsnittet **[!UICONTROL Experience Cloud publishing]** väljer du alternativet **[!UICONTROL Publish this segment to the Experience Cloud (for *rapportsviten *)]**.
 
->[!IMPORTANT]
->Se till att du använder&quot;Besökare med Experience Cloud ID&quot; när du tittar på förhandsvisningar av segment i Analytics i stället för den totala förhandsgranskningen av segmentet&quot;unika besökare&quot; när du jämför Adobe Analytics-nummer med Audience Manager-nummer:
->
->![Segmentera besökare med ECID](assets/seg-vis-ecid.png)
+   >[!IMPORTANT]
+   >
+   >Kontrollera att du övervakar **[!UICONTROL Visitors with Experience Cloud ID]** i **[!UICONTROL Data Preview]** i stället för **[!UICONTROL Unique Visitors]** när du jämför Adobe Analytics-nummer med Audience Manager-nummer.
+   >
 
 | Element | Beskrivning |
 |---|---|
-| **[!UICONTROL Publish this segment to the Experience Cloud (for *`<report suite>`*)]** | När det här alternativet är aktiverat delas segmentets namn och definition (dvs. gränssnittets målgrupp så ofta som den används i annonsplattformar) direkt med Experience Cloud, medan segmentmedlemskapet utvärderas och delas var fjärde timme. <br> När den målgruppen är associerad med en aktivitet i [!DNL Target], till exempel, börjar [!DNL Analytics] skicka ID:n för besökare som är kvalificerade för den Experience Cloud och [!DNL Target] målgruppen. Då börjar målgruppsnamnet och motsvarande data visas på sidan [!DNL Audience Library] i Experience Cloud. </br> |
+| **[!UICONTROL Publish this segment to the Experience Cloud (for *rapportserie *)]** | När det här alternativet är aktiverat delas segmentets namn och definition (dvs. gränssnittets målgrupp så ofta som den används i annonsplattformar) direkt med Experience Cloud, medan segmentmedlemskapet utvärderas och delas var fjärde timme. <br> När den målgruppen är associerad med en aktivitet i [!DNL Target], till exempel, börjar [!DNL Analytics] skicka ID:n för besökare som är kvalificerade för den Experience Cloud och [!DNL Target] målgruppen. Då börjar målgruppsnamnet och motsvarande data visas på sidan [!DNL Audience Library] i Experience Cloud. </br> |
 | **[!UICONTROL Audience Creation Window]** | Den tidsram du väljer används för att skapa målgruppen baserat på rullande kalenderinformation. Exempel:&quot;De senaste 30 dagarna&quot; (standard) innehåller besökare som har kvalificerat sig för målgruppen under de senaste 30 dagarna från dagens datum (INTE från det ursprungliga datumet när segmentet skapades). |
 | **[!UICONTROL Create in Audience Library]** | Segmenten som du skapar och publicerar kan göras tillgängliga utan fördröjning på sidan [!DNL Audience Library] i Experience Cloud. De är inte beroende av Analytics-uppdateringar. Dessa segment räknas inte av mot din gräns på 75 publicerade segment. |
 | **[!UICONTROL x of 75 Published]** | Visar antalet segment som du har publicerat till Experience Cloud. Klicka på länken för att visa en lista över publicerade segment och deras associerade rapportsvit och ägare. |
@@ -118,30 +118,28 @@ Följande skärmbilder visar hur du hämtar Adobe Audience Manager UUID i webbl�
 1. Hämta och installera [Adobe Experience Cloud Debugger](/help/implement/validate/debugger.md) i Chrome Web Store.
 1. Starta felsökaren när du läser in en sida.
 1. Bläddra till avsnittet Audience Manager och hitta Adobe Audience Manager UUID som finns på den aktuella webbläsarsidan
-(`50814298273775797762943354787774730612` i exemplet nedan)
+(`35721780439475290181087231320657663953` i exemplet nedan)
 
-![Felsökning](assets/debugger.jpg)
+   ![Felsökning](assets/aepdebugger.png)
 
 ### Metod 2: Använda Chrome Developer Tools (eller andra verktyg för webbläsarutvecklare)
 
 1. Starta Chrome Developer Tools innan du läser in en sida
 1. Läs in sidan och kontrollera Program > Cookies. Adobe Audience Manager UUID ska anges i tredjepartsprodukten
-Demdex cookie ([adobe.demdex.net](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=sv-SE) i exemplet nedan). Fältdemonstrationen är Adobe Audience Manager UUID-uppsättningen
-i webbläsaren (`50814298273775797762943354787774730612` i exemplet nedan).
+Demdex cookie ([adobe.demdex.net](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html) i exemplet nedan). Fältdemonstrationen är Adobe Audience Manager UUID-uppsättningen
+i webbläsaren (`35721780439475290181087231320657663953` i exemplet nedan).
 
-![Chrome Developer Tools](assets/ggogle-uuid.png)
+   ![Chrome Developer Tools](assets/devtools.png)
 
 ## Använd Audience Manager [!UICONTROL Visitor Profile Viewer]
 
-Adobe Audience Manager UUID i webbläsaren används som standard när [!UICONTROL Visitor Profile Viewer] läses in. Om du verifierar trait-implementeringar för andra användare anger du ett UUID i UUID-fältet och klickar på [!UICONTROL Refresh]. Mer information finns i [Visitor Profile Viewer](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/visitor-profile-viewer.html?lang=sv-SE).
-
-![Audience Manager profilvisningsprogram](assets/aam-vpv.png)
+Adobe Audience Manager UUID i webbläsaren används som standard när [!UICONTROL Visitor Profile Viewer] läses in. Om du verifierar trait-implementeringar för andra användare anger du ett UUID i UUID-fältet och klickar på [!UICONTROL Refresh]. Mer information finns i [Visitor Profile Viewer](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/visitor-profile-viewer.html).
 
 ## Visa segmentegenskaperna i [!DNL Audience Manager]
 
 I Adobe Audience Manager utvärderas listan över besökare med ECID för ett visst segment i direktuppspelning när Analytics delar segment med Experience Cloud.
 
-1. Gå till [!UICONTROL Audience Data > Traits > Analytics Traits] om [!DNL Audience Manager]. Du ser en mapp för varje Analytics-rapportssvit som mappas till din Experience Cloud-organisation. Dessa mappar (för Traits, Segments och Data Sources) skapas när huvudtjänsten Profiles and Audiences/People initieras eller etableras.
+1. Gå till **[!UICONTROL Audience Data]** > **[!UICONTROL Traits]** > **[!UICONTROL Analytics Traits]** i [!DNL Audience Manager]. Du ser en mapp för varje Analytics-rapportssvit som mappas till din Experience Cloud-organisation. Dessa mappar (för Traits, Segments och Data Sources) skapas när huvudtjänsten Profiles and Audiences/People initieras eller etableras.
 1. Välj mappen för den rapportserie i vilken du tidigare skapade det segment som du vill dela med [!DNL Audience Manager]. Du ser segmentet/målgruppen som du skapade. När du delar ett segment inträffar två saker i [!DNL Audience Manager]:
    * Ett drag skapas först utan data. Cirka. 8 timmar efter att segmentet har publicerats i [!DNL Analytics], kommer listan över ECID:n att introduceras och delas med [!DNL Audience Manager] och andra Experience Cloud-lösningar.
 
@@ -152,7 +150,11 @@ I Adobe Audience Manager utvärderas listan över besökare med ECID för ett vi
 
 ## Visa segmentet i [!DNL Adobe Target]
 
-Kryssrutan [!UICONTROL Publish this segment to the Experience Cloud] när segment skapas i Adobe Analytics gör att segmentet kan vara tillgängligt i Adobe Target anpassade målgruppsbibliotek. Ett segment som skapats i Analytics eller Audience Manager kan användas för aktiviteter i Target. Ni kan till exempel skapa kampanjaktiviteter baserat på analysstatistik och målgruppssegment som skapats i Analytics.
+Kryssrutan **[!UICONTROL Publish this segment to the Experience Cloud]** när segment skapas i Adobe Analytics gör att segmentet kan vara tillgängligt i Adobe Target anpassade målgruppsbibliotek. Ett segment som skapats i Analytics eller Audience Manager kan användas för aktiviteter i Target. Ni kan till exempel skapa kampanjaktiviteter baserat på analysstatistik och målgruppssegment som skapats i Analytics.
 
-1. Klicka på [!UICONTROL Audiences].
-1. På sidan [!UICONTROL Audiences] letar du reda på målgruppen som kommer från [!DNL Experience Cloud]. Dessa målgrupper är tillgängliga för användning i [!DNL Target]-aktiviteter.
+I Adobe Target:
+
+1. Välj **[!UICONTROL Audiences]**.
+1. På sidan **[!UICONTROL Audiences]** letar du reda på målgruppen som kommer från [!DNL Experience Cloud]. Dessa målgrupper är tillgängliga för användning i [!DNL Target]-aktiviteter.
+
+   ![Målgrupper](assets/target-audiences.png)

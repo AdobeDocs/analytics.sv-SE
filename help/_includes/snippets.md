@@ -1,7 +1,7 @@
 ---
-source-git-commit: 9a2d4c582b6a3946b658924851e5b5ada2f5a7ee
+source-git-commit: f66686838b341b57256932d65e6b0dd005205b0d
 workflow-type: tm+mt
-source-wordcount: '2353'
+source-wordcount: '2893'
 ht-degree: 0%
 
 ---
@@ -11,8 +11,8 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Ett nytt och smidigt [Report Builder](https://experienceleague.adobe.com/sv/docs/analytics/analyze/report-builder/rb-overview) släpptes 16 oktober 2024. Det stöds i Mac, Windows och webbläsare.
->Denna äldre Report Builder-tilläggsversion fungerar fortfarande. Du kan [konvertera dina äldre arbetsböcker](https://experienceleague.adobe.com/sv/docs/analytics/analyze/report-builder/convert-workbooks) till nya Report Builder.
+>Ett nytt och smidigt [Report Builder](https://experienceleague.adobe.com/en/docs/analytics/analyze/report-builder/rb-overview) släpptes 16 oktober 2024. Det stöds i Mac, Windows och webbläsare.
+>>Denna äldre Report Builder-tilläggsversion fungerar fortfarande. Du kan [konvertera dina äldre arbetsböcker](https://experienceleague.adobe.com/en/docs/analytics/analyze/report-builder/convert-workbooks) till nya Report Builder.
 
 ## Rapporter och analyser - meddelande om att produkten har upphört att gälla {#ra-eol}
 
@@ -83,6 +83,13 @@ En attribueringsmodell avgör vilka dimensionsobjekt som får kredit för ett m�
 
 {style="table-layout:auto"}
 
+## Attributionsbehållare {#attribution-container}
+
+En attribueringsbehållare definierar det önskade omfånget för attribueringen. Möjliga alternativ är:
+
+* **Besök**: Kontrollerar konverteringar från besöksbehållarens omfattning.
+* **Besökare**: Kontrollerar konverteringar från besökarbehållarens omfång.
+
 ## Fönstret Tilldelningssökning {#attribution-lookback-window}
 
 Ett uppslagsfönster är den tid som en konvertering bör titta tillbaka för att inkludera beröringspunkter. Om ett dimensionsobjekt anges utanför uppslagsfönstret inkluderas inte värdet i någon attribueringsberäkning.
@@ -91,45 +98,26 @@ Ett uppslagsfönster är den tid som en konvertering bör titta tillbaka för at
 * **30 dagar**: Kan synkroniseras upp till 30 dagar från när konverteringen gjordes.
 * **60 dagar**: Kan synkroniseras upp till 60 dagar från när konverteringen gjordes.
 * **90 dagar**: Återställer upp till 90 dagar från när konverteringen inträffade.
-* **Besök**: Går tillbaka till början av besöket där en konvertering inträffade.
-* **Besökare (rapportfönster)**: Alla besök kontrolleras fram till den första i månaden i det aktuella datumintervallet. Om rapportens datumintervall till exempel är 15 september - 30 september, inkluderar datumintervallet för besökarens sökning 1 september - 30 september. Om du använder det här uppslagsfönstret kan du ibland se att dimensionsobjekt tilldelas till datum utanför rapportfönstret.
 * **Anpassad tid:** Används för att ange ett anpassat uppslagsfönster från när en konvertering inträffade. Du kan ange antalet minuter, timmar, dagar, veckor, månader eller kvartal. Om en konvertering till exempel skedde den 20 februari skulle ett uppslagsfönster på fem dagar utvärdera alla dimensionskontaktytor från den 15 februari till den 20 februari i attribueringsmodellen.
 
 ## Attributionsexempel {#attribution-example}
 
 Titta på följande exempel:
 
-1. Den 15 september kommer en person till er webbplats via en betald sökannons, sedan går han/hon iväg.
-1. Den 18 september kommer personen till er webbplats igen via en länk för sociala medier som de fått från en vän. De lägger till flera artiklar i kundvagnen, men köper ingenting.
+1. Den 15 september kommer en besökare till er webbplats via en betald sökannons, sedan går han.
+1. Den 18 september kommer besökaren till er webbplats igen via en länk för sociala medier som de fått från en vän. De lägger till flera artiklar i kundvagnen, men köper ingenting.
 1. Den 24 september skickar marknadsföringsteamet ett e-postmeddelande med en kupong för några av artiklarna i kundvagnen. De använder kupongen, men besöker flera andra sajter för att se om det finns några andra kuponger. De hittar en till genom en displayannons och gör sedan ett köp för 50 dollar.
 
-Beroende på ditt uppslagsfönster och din attribueringsmodell får kanalerna olika krediter. Nedan följer några exempel:
+Beroende på din attribueringsmodell får behållare och kanaler olika krediter. Se tabellen nedan för exempel:
 
-* Med **första beröring** och ett **sessionsfönster** tittar attribueringen bara på det tredje besöket. Mellan e-post och visning var e-post först, så e-post får 100 % rabatt på 50 USD.
-
-* Attribution söker efter alla tre besök med **första beröring** och ett **fönster för personsökning**. Betalsökning var först, så den får 100 % rabatt på 50 USD.
-
-* Med **linjär** och ett **sessionsfönster** delas krediteringen mellan e-post och visning. Båda dessa kanaler får 25 krediter.
-Med **linjär** och ett **personsökningsfönster** delas krediten in i betalsökning, sociala medier, e-post och visning. Varje kanal får 12,50 dollar i rabatt för detta inköp.
-
-* Med **J-formad** och ett **personsökningsfönster** delas krediteringen mellan betalsökningar, sociala medier, e-post och visning.
-
-   * 60 % kredit ges för 30 dollar.
-   * 20 % kredit ges till betald sökning för 10 dollar.
-   * De återstående 20 % är uppdelade i sociala medier och e-post, vilket ger 5 USD till var och en.
-
-* Med **Time Decay** och ett **Personsökningsfönster** delas krediten in i betalsökning, sociala medier, e-post och visning. Använd standardhalveringstiden på 7 dagar:
-
-   * Mellanrum på noll dagar mellan visning och konvertering. `2^(-0/7) = 1`
-   * Mellanrum på noll dagar mellan e-postens kontaktpunkt och konvertering. `2^(-0/7) = 1`
-   * Ett mellanrum på sex dagar mellan social kontaktyta och konvertering. `2^(-6/7) = 0.552`
-   * Mellanrum på nio dagar mellan betald sökningspunkt och konvertering. `2^(-9/7) = 0.41`
-   * Normalisering av dessa värden ger följande resultat:
-
-      * Bildskärm: 33,8 %, får 16,88 USD
-      * E-post: 33,8 % får 16,88 USD
-      * Socialt: 18,6 %, får 9,32 USD
-      * Betalsökning: 13,8 %, får 6,92 USD
+| Modell | Behållare | Fönstret Lookback | Förklaring |
+|---|---|---|---|
+| Första beröringen | Besök | 30 dagar | Attribution tittar bara på det tredje besöket. Mellan e-post och visning var e-post först, så e-post får 100 % rabatt på 50 USD. |
+| Första beröringen | Besökare | 30 dagar | Attribution tittar på alla tre besök. Betalsökning var först, så den får 100 % rabatt på 50 USD. |
+| Linjär | Besök | 30 dagar | Krediten delas mellan e-post och disposition. Båda dessa kanaler får 25 krediter. |
+| Linjär | Besökare | 30 dagar | Krediten delas mellan betalsökningar, sociala medier, e-post och displayannonser. Varje kanal får 12,50 dollar i rabatt för detta inköp. |
+| J-formad | Besökare | 30 dagar | Krediten delas mellan betalsökningar, sociala medier, e-post och displayannonser.<ul><li>60 % kredit ges för 30 dollar.</li><li>20 % kredit ges till betald sökning för 10 dollar.</li><li>De återstående 20 % är uppdelade i sociala medier och e-post, vilket ger 5 USD till var och en.</li></ul> |
+| Tidsminskning | Besökare | 30 dagar | <ul><li>Mellanrum på noll dagar mellan visning och konvertering. `2^(-0/7) = 1`</li><li>Mellanrum på noll dagar mellan e-postens kontaktpunkt och konvertering. `2^(-0/7) = 1`</li><li>Ett mellanrum på sex dagar mellan social kontaktyta och konvertering. `2^(-6/7) = 0.552`</li><li>Mellanrum på nio dagar mellan betald sökningspunkt och konvertering. `2^(-9/7) = 0.41`</li>Normalisering av dessa värden ger följande resultat:<ul><li>Bildskärm: 33,8 %, får 16,88 USD</li><li>E-post: 33,8 % får 16,88 USD</li><li>Socialt: 18,6 %, får 9,32 USD</li><li>Betalsökning: 13,8 %, får 6,92 USD</li></ul></li></ul> |
 
 Konverteringshändelser som vanligtvis har ett heltal delas om kredit tillhör fler än en kanal. Om till exempel två kanaler bidrar till en order med en linjär attribueringsmodell får båda kanalerna 0,5 av den ordningen. Dessa partiella mätvärden summeras för alla personer och avrundas sedan till närmaste heltal för rapportering.
 
@@ -154,3 +142,48 @@ Använd följande information för att välja den visualisering som bäst passar
 | **Adobe Journey Optimizer-resor** | Ja</br>Öppna resor från Journey Optimizer för djupgående analyser och anpassningar | Nej | Nej |
 
 {style="table-layout:auto"}
+
+
+
+## Avsnittet Taggfilter {#tagfiltersection}
+
+| Taggar | Beskrivning |
+|---|---|
+| ![Taggar](/help/assets/filter-tag.png){width="300"} | I avsnittet **[!UICONTROL Tags]** kan du filtrera efter taggar. <ul><li>Du kan ![söka efter ](/help/assets/icons/Search.svg) *söktaggar* om du vill söka efter taggar som du kan använda för att filtrera.</li><li>Du kan markera flera taggar. Vilka märkord som är tillgängliga beror på vilka markeringar du har gjort i andra avsnitt på filterpanelen.</li><li>Siffrorna anger:<ul><li>**(1)**: Antalet markerade taggar (om en eller flera taggar har valts).</li><li>**2︎⃣**: Antalet tillgängliga taggar för objekten som är resultatet av det aktuella filtret.</li><li>7︎⃣: Antalet objekt som är associerade med den specifika taggen.</li></ul></li></ul> |
+
+
+## Filteravsnitt för rapportsviten {#reportsuitefiltersection}
+
+| Rapportsvit | Beskrivning |
+|---|---|
+| ![Skicka om programsvit](/help/assets/filter-reportsuite.png){width="300"} | I avsnittet **[!UICONTROL Report suite]** kan du filtrera efter rapportgrupper. <ul><li>Du kan ![söka](/help/assets/icons/Search.svg) *Sök i rapportsviter* om du vill söka efter rapportsviter som du kan använda för att filtrera.</li><li>Du kan välja mer än en rapportserie. Vilka rapportsviter som är tillgängliga beror på vad som har gjorts i andra avsnitt på filterpanelen.</li><li>Siffrorna anger:<ul><li>**(2)**: Antalet valda rapportsviter (om en eller flera rapportsviter har valts).</li><li>**3︎⃣**: Antalet rapportsviter som är tillgängliga för objekten som är resultatet av det aktuella filtret.</li><li>4︎⃣: Antalet objekt som är associerade med den specifika rapportsviten.</li></ul></li></ul> |
+
+## Aktiverat statusfilteravsnitt {#enabledstatusfiltersection}
+
+| Aktiverad status | Beskrivning |
+|---|---|
+| ![Aktiverad status](/help/assets/filter-enabledstatus.png){width="300"} | I avsnittet **[!UICONTROL Enabled status]** kan du filtrera efter aktiverad status. <ul><li>Du kan välja mer än en status.</li><li>Siffrorna anger:<ul><li>**(2)**: Antalet markerade statusar (om en eller flera statusvärden har valts).</li><li>**2︎⃣**: Antalet statusar som är tillgängliga för objekten från det aktuella filtret.</li><li>1︎⃣: Antalet artiklar som är associerade med den specifika statusen.</li></ul></li></ul> |
+
+## Textfilteravsnitt {#typefiltersection}
+
+| Typ | Beskrivning |
+|---|---|
+| ![Typ](/help/assets/filter-type.png){width="300"} | I avsnittet **[!UICONTROL Type]** kan du filtrera efter typ. <ul><li>Du kan markera flera typer.</li><li>Siffrorna anger:<ul><li>**(2)**: Antalet valda typer (om en eller flera typer har valts).</li><li>**1︎⃣**: Antalet tillgängliga typer för objekten som är resultatet av det aktuella filtret.</li><li>3︎⃣: Antalet objekt som är associerade med den specifika typen.</li></ul></li></ul> |
+
+## Ägarfilteravsnitt {#ownerfiltersection}
+
+| Ägare | Beskrivning |
+|---|---|
+| ![Ägare](/help/assets/filter-owners.png){width="300"} | I avsnittet **[!UICONTROL Owner]** kan du filtrera efter ägare. <ul><li>Du kan ![söka](/help/assets/icons/Search.svg) *sökägare* om du vill söka efter ägare som du kan använda för att filtrera.</li><li>Du kan välja mer än en ägare. Vilka ägare som är tillgängliga beror på vad som har gjorts i andra avsnitt på filterpanelen.</li><li>Siffrorna anger:<ul><li>**(2)**: Antalet valda ägare (om en eller flera ägare har valts).</li><li>**3︎⃣**: Antalet ägare som är tillgängliga för objekten som är resultatet av det aktuella filtret.</li><li>4︎⃣: Antalet objekt som är associerade med den specifika ägaren.</li></ul></li></ul> |
+
+## Andra filteravsnitt {#otherfiltersfiltersection}
+
+| Andra filter | Beskrivning |
+|---|---|
+| ![Andra filter](/help/assets/filter-other.png){width="300"} | I avsnittet **[!UICONTROL Other filters]** kan du filtrera på andra fördefinierade filter.<ul><li>Du kan välja ett eller flera av följande alternativ:<ul><li> **[!UICONTROL Show all]**</li><li>**[!UICONTROL Shared with me]**</li><li>**[!UICONTROL Mine]**</li><li>**[!UICONTROL Approved]**</li><li>**[!UICONTROL Favorites]**</li></ul> Vad du kan välja beror på din roll och dina behörigheter.</li><li>Du kan markera mer än ett annat filter. Vilka andra filter som är tillgängliga beror på vilka markeringar du har gjort i andra avsnitt på filterpanelen.</li><li>Siffrorna anger:<ul><li>**(1)**: Antalet markerade andra filter (om ett eller flera andra filter har valts).</li><li>**5︎⃣**: Antalet andra filter som är tillgängliga för objekten från det aktuella filtret.</li><li>4︎⃣: Antalet objekt som är associerade med det specifika andra filtret.</li></ul></li></ul> |
+
+## Filteravsnitt för datumintervall  {#daterangefiltersection}
+
+| Tillämpat datumintervall | Beskrivning |
+|---|---|
+| ![Datumintervall](/help/assets/filter-daterange.png){width="300"} | I avsnittet Använt datumintervall kan du filtrera efter ett datumintervall som gäller för artiklarna.<ol><li>Välj ett datumintervall.</li><li>Ange ett datumintervall i kalenderpopup eller välj en av de tillgängliga förinställningarna.<br>Du kan också ange ett datumintervall direkt i datumintervallet på panelen Filter.</li></ol><ul><li>Siffrorna anger:<ul><li>**(1)**: Antalet ändrade datumintervall som har ändrats från standardförinställningar.</li><li>**5︎⃣**: Antalet datumintervall som är tillgängliga för objekten från det aktuella filtret.</li></ul> |

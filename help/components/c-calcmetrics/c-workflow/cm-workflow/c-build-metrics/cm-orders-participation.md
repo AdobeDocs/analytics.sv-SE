@@ -3,35 +3,42 @@ description: Beskriver hur du skapar ett mätvärde som visar vilka marknadsför
 title: Mätvärde för orderassistenten
 feature: Calculated Metrics
 exl-id: 33cb441d-d003-408d-ba67-1bcdd0e821ff
-source-git-commit: 7722a2f01ff77dfec8ce110fd04fe977f6c627c6
+source-git-commit: bf58da2a39e8b9fd298356f23a9bf8f6c394d3de
 workflow-type: tm+mt
-source-wordcount: '197'
+source-wordcount: '213'
 ht-degree: 0%
 
 ---
 
-# Bygg upp en orderassistent
+# Bygg ett mer komplext beräknat mått
 
-Följande information förklarar hur du skapar ett mätvärde som visar vilka marknadsföringskanaler som hjälper dig att hantera beställningar. Detta kan anpassas till alla dimensioner eller framgångsrika händelser av intresse.
+I den här artikeln förklaras ett mer komplext exempel på ett beräknat mått. Denna beräknade statistik visar vilka marknadsföringskanaler som hjälper till att öka antalet order. Den här typen av beräknade mätvärden kan anpassas till alla dimensioner och lyckade händelser.
 
-1. Börja skapa ett beräknat mått, enligt beskrivningen i [Bygg mått](/help/components/c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-build-metrics.md).
+1. Börja med att skapa ett beräknat mått enligt beskrivningen i [Build metrics](/help/components/c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-build-metrics.md).
 
-1. I verktyget Beräknade mått anger du måttet&quot;Assisted Orders&quot; eller något liknande.
+1. Ange ett namn för måttet `Assisted Orders` eller något liknande i verktyget Beräknade mått.
 
-1. Dra i ett ordningstal på arbetsytan Definition. Justera sedan attribueringsmodellen med inställningsverktyget genom att markera kryssrutan **[!UICONTROL Use non-default attribution models]**.
+1. Välj **[!UICONTROL Online Orders]**-måttet från **[!UICONTROL Metrics]**-komponenterna och dra måttet till **[!UICONTROL Definition]**-området.
 
-   ![](assets/attr-model.png)
+   1. Välj ![Inställning](/help/assets/icons/Setting.svg) för måttet.
+   1. Välj **[!UICONTROL Use non-default attribution model]**.
+   1. Justera attributmodellen i **[!UICONTROL Column attribution model]**.
+      1. Välj **[!UICONTROL Custom]** för **[!UICONTROL Model]**. Ange **[!UICONTROL Starter]** till `0`, **[!UICONTROL Player]** till `100` och **[!UICONTROL Closer]** till `0`.
+      1. Välj **[!UICONTROL Visitor]** för **[!UICONTROL Container]**.
+      1. Välj **[!UICONTROL 30 Days]** för **[!UICONTROL Lookback window]**.
 
-1. Välj **[!UICONTROL Custom]** som attribueringsmodell. Ändra bredderna till 0 (start), 100 (spelare) och 0 (närmare).
+      1. Välj **[!UICONTROL Apply]**.
 
-   ![](assets/custom-attr-model.png)
+      ![Kolumnattribueringsmodell](assets/complex-calculated-metric.png)
 
-1. Välj [!UICONTROL **Använd**] > [!UICONTROL **Spara**].
+1. Välj **[!UICONTROL Save]** om du vill spara det beräknade måttet.
 
-1. I Analysis Workspace skapar du en frihandstabell med mått för marknadsföringskanal, beställningar och nya måtten för Assisted Orders.
+Så här använder du det beräknade måttet:
 
-   ![](assets/mktg-channel-assists.png)
+1. Skapa en frihandstabell med måtten **[!UICONTROL Marketing Channel]**, **[!UICONTROL Online Orders]** och **[!UICONTROL Assisted Online Orders]** i Analysis Workspace.
 
-   Det här är ett enkelt sätt att se vilka marknadsföringskanaler som har hjälpt till med körorder. Du kan också högerklicka på ett mätresultat i en frihandstabell och justera attribueringsmodellen direkt i tabellen.
+   ![Onlinebeställningar som assisterats av Marketing Channel](assets/marketing-channel-assists.png)
 
 1. (Valfritt) Dela mätvärdena med andra användare i organisationen, enligt beskrivningen i [Dela beräknade värden](/help/components/c-calcmetrics/c-workflow/cm-workflow/cm-sharing.md).
+
+Det här är ett enkelt sätt att se vilka marknadsföringskanaler som har hjälpt till med körorder. Du kan också högerklicka på ett mätresultat i en frihandstabell och justera attribueringsmodellen direkt i tabellen.
