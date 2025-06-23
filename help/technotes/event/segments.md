@@ -2,8 +2,8 @@
 title: Exkludera specifika datum i analysen
 description: Tips för att exkludera datum eller datumintervall om du inte vill inkludera det i rapporter.
 exl-id: 744666c0-17f3-443b-9760-9c8568bec600
-feature: Event, Segmentation
-source-git-commit: 266cf18050d60f08f7e170c56453d1e1d805cb7b
+feature: Curate and Share, Segmentation
+source-git-commit: 29ab0cc535bd8f74b50428c11756bf8b446a23ab
 workflow-type: tm+mt
 source-wordcount: '565'
 ht-degree: 0%

@@ -1,10 +1,10 @@
 ---
 title: server
 description: Fyll i dimensionen Servrar.
-feature: Variables
+feature: Appmeasurement Implementation
 exl-id: 7904c3c2-9a91-497e-89d0-9eed9ae7a902
 role: Admin, Developer
-source-git-commit: 5ef92db2f5edb5fded497dddedd56abd49d8a019
+source-git-commit: 665bd68d7ebc08f0da02d93977ee0b583e1a28e6
 workflow-type: tm+mt
 source-wordcount: '171'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Variabeln `server` lagrar vanligtvis webbplatsens värdnamn. Det används ofta i rapportsviter som innehåller data från flera domäner. Den är funktionellt identisk med en prop.
 
-## Server som använder Web SDK
+## Server med Web SDK
 
 Servern är mappad till följande variabler:
 
@@ -35,7 +35,7 @@ Du kan ange server antingen när Analytics-tillägget (globala variabler) konfig
 
 Du kan ställa in servern på valfritt strängvärde eller dataelement.
 
-## s.server i AppMeasurementet och den anpassade kodredigeraren för Analytics-tillägget
+## s.server i AppMeasurement och den anpassade kodredigeraren för Analytics-tillägget
 
 Variabeln `s.server` är en sträng som vanligtvis innehåller värdnamnet för din plats. Det har ett maxvärde på 100 byte. Ju längre värde, desto trunkeras.
 

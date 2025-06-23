@@ -1,10 +1,10 @@
 ---
 title: hövding
 description: (Borttaget) Implementera hierarkivariabler i Adobe Analytics.
-feature: Variables
+feature: Appmeasurement Implementation
 exl-id: 72bdab8f-a001-4ada-b5e2-453a8e3f24a6
 role: Admin, Developer
-source-git-commit: 75ae77c1da1b578639609888e794e13d965ef669
+source-git-commit: 665bd68d7ebc08f0da02d93977ee0b583e1a28e6
 workflow-type: tm+mt
 source-wordcount: '338'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >Den här variabeln har tagits bort och är inte en tillgänglig dimension i Analysis Workspace. Adobe rekommenderar att du använder [eVars](evar.md) och klassificeringar i stället.
 
-Hierarkivariabler är anpassade variabler som du kan använda för att visa strukturen för en plats. Adobe stöder upp till 5 hierarkivariabler i implementeringen.
+Hierarkivariabler är anpassade variabler som du kan använda för att visa strukturen för en plats. Adobe har stöd för upp till 5 hierarkivariabler i implementeringen.
 
 Den här variabeln är användbar för platser som har mer än tre nivåer i platsstrukturen. En mediewebbplats kan till exempel ha fyra nivåer för sportavsnittet: `Sports`, `Local Sports`, `Baseball` och `Team name`. Om någon besöker Baseball-sidan, Sport, Local Sports och Baseball återspeglar alla nivåer detta besök.
 
@@ -40,7 +40,7 @@ Du kan ange hierarkier antingen när du konfigurerar Analytics-tillägget (globa
 
 Du kan ställa in ett hierarkivärde på en statisk sträng eller referera till ett dataelement. Du kan också ange önskad avgränsare. Kontrollera att avgränsaren som du anger här matchar avgränsaren som anges i inställningarna för rapportsviten.
 
-## s.hier1 - s.hier5 i AppMeasurementet och den anpassade kodredigeraren i Analytics-tillägget
+## s.hier1 - s.hier5 i AppMeasurement och den anpassade kodredigeraren för Analytics-tillägget
 
 Varje hierarki är en sträng som innehåller anpassade värden som är specifika för din organisation. Deras maxlängd är 255 byte. Värden som är längre än 255 byte trunkeras automatiskt när de skickas till Adobe.
 

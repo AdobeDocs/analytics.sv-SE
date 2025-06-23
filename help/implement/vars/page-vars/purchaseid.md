@@ -1,10 +1,10 @@
 ---
 title: purchaseID
 description: Deduplicera träffar baserat på en unik inköpsidentifierare.
-feature: Variables
+feature: Appmeasurement Implementation
 exl-id: 7a4d7f08-65ae-4541-a94e-cc6c445c01db
 role: Admin, Developer
-source-git-commit: 4bd46fd5a9b98bcca67a66c87c9bca67fa00061a
+source-git-commit: 665bd68d7ebc08f0da02d93977ee0b583e1a28e6
 workflow-type: tm+mt
 source-wordcount: '348'
 ht-degree: 0%
@@ -13,13 +13,13 @@ ht-degree: 0%
 
 # purchaseID
 
-Variabeln `purchaseID` hjälper till att förhindra träffar som innehåller samma köp från att generera fler rapporter. Om en besökare till exempel kommer till din bekräftelsesida skickar du vanligtvis data runt intäkten som genererats från transaktionen till Adobe. Om användaren uppdaterar den här sidan flera gånger eller bokmärker sidan för att besöka den senare, kan dessa träffar generera rapporter. Variabeln `purchaseID` avduplicerar mått när fler än en träff har samma inköps-ID.
+Variabeln `purchaseID` hjälper till att förhindra träffar som innehåller samma köp från att generera fler rapporter. Om en besökare till exempel kommer till din bekräftelsesida skickar du vanligtvis data runt intäkterna från transaktionen till Adobe. Om användaren uppdaterar den här sidan flera gånger eller bokmärker sidan för att besöka den senare, kan dessa träffar generera rapporter. Variabeln `purchaseID` avduplicerar mått när fler än en träff har samma inköps-ID.
 
-När Adobe identifierar en träff som ett dubblettköp visas inga konverteringsdata (som eVars och events) i rapporteringen. I dataflöden är kolumnen `duplicate_purchase` inställd på `1`.
+När Adobe identifierar en träff som ett dubblettköp visas inga konverteringsdata (som eVars och events) i rapporter. I dataflöden är kolumnen `duplicate_purchase` inställd på `1`.
 
 Inköp-ID gäller för alla besökare och upphör efter 37 månader. Om en besökare ställer in ett visst köp-ID, kommer en annan besökare att ställa in samma köp-ID ett år senare, det andra köpet tas bort.
 
-## Inköps-ID med Web SDK
+## Inköps-ID med webb-SDK
 
 Inköps-ID är mappat till följande variabler:
 
@@ -39,7 +39,7 @@ Du kan ange inköps-ID när du konfigurerar Analytics-tillägget (globala variab
 
 Du kan ange ett inköps-ID till ett värde eller ett dataelement. Du kan också kopiera värdet från en annan Analytics-variabel.
 
-## s.purchaseID i AppMeasurementet och den anpassade kodredigeraren för Analytics-tillägget
+## s.purchaseID i AppMeasurement och den anpassade kodredigeraren för Analytics-tillägget
 
 Variabeln `s.purchaseID` är en sträng som innehåller en unik identifierare för ett köp. Den ställs in på samma träff som en köphändelse. Använd bara alfanumeriska tecken för att fylla i variabeln.
 

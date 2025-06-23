@@ -2,10 +2,10 @@
 title: Paketanalysatorer
 description: Med paketanalyserare kan du visa data som skickas av implementeringen till Adobe datainsamlingsservrar.
 keywords: paketsniffer, http-status, 200, 302, charles
-feature: Validation
+feature: Implementation Basics
 exl-id: db077293-f72c-4933-8a30-f1e1963f332e
 role: Admin, Developer, Leader
-source-git-commit: d952d199c3c02ee8d0a223569f58d56027809cfb
+source-git-commit: 29ab0cc535bd8f74b50428c11756bf8b446a23ab
 workflow-type: tm+mt
 source-wordcount: '632'
 ht-degree: 0%

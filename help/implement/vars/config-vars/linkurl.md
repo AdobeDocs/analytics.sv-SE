@@ -1,10 +1,10 @@
 ---
 title: linkURL
-description: Åsidosätt det automatiskt genererade länk-URL-AppMeasurementet som används i länkspårningsanrop.
-feature: Variables
+description: Åsidosätt den automatiskt genererade länk-URL som AppMeasurement använder i länkspårningsanrop.
+feature: Appmeasurement Implementation
 exl-id: 15d6e423-d9fc-4f84-ad39-0bd91399cde4
 role: Admin, Developer
-source-git-commit: 8be75c04177e97949811c17c7a87b04cce7b3de4
+source-git-commit: 665bd68d7ebc08f0da02d93977ee0b583e1a28e6
 workflow-type: tm+mt
 source-wordcount: '158'
 ht-degree: 0%
@@ -26,9 +26,9 @@ Länk-URL mappas till följande variabler:
 
 ## Länk-URL med Adobe Analytics-tillägget
 
-Det finns inget dedikerat fält i Adobe Analytics-tillägget som kan använda den här variabeln. Använd den anpassade kodredigeraren enligt AppMeasurementen syntax.
+Det finns inget dedikerat fält i Adobe Analytics-tillägget som kan använda den här variabeln. Använd den anpassade kodredigeraren enligt AppMeasurement-syntax.
 
-## s.linkURL i AppMeasurementet och den anpassade kodredigeraren för Analytics-tillägget
+## s.linkURL i AppMeasurement och den anpassade kodredigeraren för Analytics-tillägget
 
 Variabeln `s.linkURL` är en sträng som innehåller URL-adressen för webbläsaren när användaren klickar på länken. Den här variabeln fyller inte i några dimensioner som är tillgängliga i rapporter.
 

@@ -1,10 +1,10 @@
 ---
 title: Inköpshändelse
 description: Använd inköpshändelsen för att samla in data för måtten"Beställningar","Enheter" och"Intäkter".
-feature: Variables
+feature: Appmeasurement Implementation
 exl-id: 5ad148d6-cf45-4dea-846a-255004300bc2
 role: Admin, Developer
-source-git-commit: 7c8ffe8f4ccf0577136e4d7ee96340224897d2a4
+source-git-commit: 665bd68d7ebc08f0da02d93977ee0b583e1a28e6
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 0%
@@ -25,7 +25,7 @@ När du ställer in en köphändelse påverkas följande mått:
 >
 >Intäkter multipliceras inte med kvantitetsfältet. `s.products="Womens;Socks;5;4.50"` skickar till exempel inte 22,50 USD till intäkt, utan 4,50 USD. Se till att implementeringen överför de totala intäkterna för den angivna kvantiteten. Exempel: `s.products="Womens;Socks;5;22.50"`.
 
-## Ange inköpshändelsen med Web SDK
+## Ställ in inköpshändelsen med Web SDK
 
 Om du använder [**XDM-objektet**](/help/implement/aep-edge/xdm-var-mapping.md) använder inköpshändelsen följande XDM-fält:
 
@@ -45,7 +45,7 @@ Om du använder [**XDM-objektet**](/help/implement/aep-edge/xdm-var-mapping.md) 
 }
 ```
 
-Om du använder [**dataobjektet**](/help/implement/aep-edge/data-var-mapping.md) använder inköpshändelsen `data.__adobe.analytics.events`, och följande AppMeasurementen strängsyntax.
+Om du använder [**dataobjektet**](/help/implement/aep-edge/data-var-mapping.md) använder inköpshändelsen `data.__adobe.analytics.events` och följande AppMeasurement-strängsyntax.
 
 ```json
 {
@@ -68,9 +68,9 @@ Om du använder [**dataobjektet**](/help/implement/aep-edge/data-var-mapping.md)
 5. Ange Adobe Analytics i listrutan [!UICONTROL Extension] och [!UICONTROL Action Type] till [!UICONTROL Set Variables].
 6. Leta reda på avsnittet [!UICONTROL Events] och ställ in listrutan [!UICONTROL Events] på [!UICONTROL purchase].
 
-Andra beroende variabler som `products` och `purchaseID` har inte dedikerade fält i Analytics-tillägget i Adobe Experience Platform Data Collection. Använd den anpassade kodredigeraren efter AppMeasurementen syntax för dessa variabler.
+Andra beroende variabler som `products` och `purchaseID` har inte dedikerade fält i Analytics-tillägget i Adobe Experience Platform Data Collection. Använd den anpassade kodredigeraren efter AppMeasurement-syntax för dessa variabler.
 
-## Ange inköpshändelsen i AppMeasurementet och den anpassade kodredigeraren för Analytics-tillägget
+## Ange inköpshändelsen i AppMeasurement och den anpassade kodredigeraren för Analytics-tillägget
 
 Inköpshändelsen är en sträng som anges som en del av händelsemariabeln.
 

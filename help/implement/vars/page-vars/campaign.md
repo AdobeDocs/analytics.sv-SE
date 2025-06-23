@@ -1,10 +1,10 @@
 ---
 title: kampanj
 description: Fyll i dimensionen 'Spårningskod'.
-feature: Variables
+feature: Appmeasurement Implementation
 exl-id: 2278d2b8-8d60-4634-a176-f027a237bc12
 role: Admin, Developer
-source-git-commit: 12347957a7a51dc1f8dfb46d489b59a450c2745a
+source-git-commit: 665bd68d7ebc08f0da02d93977ee0b583e1a28e6
 workflow-type: tm+mt
 source-wordcount: '228'
 ht-degree: 0%
@@ -17,7 +17,7 @@ Variabeln `campaign` är dedikerad till att samla in spårningskoder på din web
 
 Den här variabeln fyller i dimensionen [Spårningskod](/help/components/dimensions/tracking-code.md). Det hämtar vanligtvis sitt värde från en frågesträng med verktygsmetoden [`getQueryParam`](/help/implement/vars/plugins/getqueryparam.md). Din organisation bestämmer dock exakt hur variabeln ska ställas in.
 
-## Campaign med Web SDK
+## Campaign med SDK på webben
 
 Campaign mappas till följande variabler:
 

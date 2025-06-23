@@ -1,21 +1,21 @@
 ---
 title: getPageName
 description: Skapa ett lättläst pageName från den aktuella webbplatssökvägen.
-feature: Variables
+feature: Appmeasurement Implementation
 exl-id: a3aaeb5d-65cd-45c1-88bb-f3c0efaff110
 role: Admin, Developer
-source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
+source-git-commit: 665bd68d7ebc08f0da02d93977ee0b583e1a28e6
 workflow-type: tm+mt
 source-wordcount: '661'
 ht-degree: 0%
 
 ---
 
-# Adobe plug-in: getPageName
+# Adobe: getPageName
 
 {{plug-in}}
 
-Plugin-programmet `getPageName` skapar en lättläst, användarvänlig formaterad version av den aktuella URL:en. Adobe rekommenderar att du använder det här plugin-programmet om du vill ha ett [`pageName`](../page-vars/pagename.md)-värde som är enkelt att ställa in och förstå vid rapportering. Detta plugin-program behövs inte om du redan har en namnstruktur för variabeln `pageName`, till exempel via ett datalager. Det används bäst när du inte har någon annan lösning för att ställa in variabeln `pageName`.
+Plugin-programmet `getPageName` skapar en lättläst, användarvänlig formaterad version av den aktuella URL:en. Adobe rekommenderar att du använder det här plugin-programmet om du vill ha ett [`pageName`](../page-vars/pagename.md)-värde som är enkelt att ange och förstå vid rapportering. Detta plugin-program behövs inte om du redan har en namnstruktur för variabeln `pageName`, till exempel via ett datalager. Det används bäst när du inte har någon annan lösning för att ställa in variabeln `pageName`.
 
 ## Installera plugin-programmet med Web SDK-tillägget
 
@@ -63,9 +63,9 @@ Om du inte vill använda tillägget för Common Analytics-plugin-program kan du 
 1. Öppna den anpassade kodredigeraren och klistra in den plugin-kod som finns nedan i redigeringsfönstret.
 1. Spara och publicera ändringarna i Analytics-tillägget.
 
-## Installera plugin-programmet med AppMeasurementet
+## Installera plugin-programmet med AppMeasurement
 
-Kopiera och klistra in följande AppMeasurement var som helst i analysfilen efter att Analytics-spårningsobjektet har initierats (med [`s_gi`](../functions/s-gi.md)). Genom att bevara kommentarer och versionsnummer i koden i implementeringen kan Adobe felsöka eventuella problem.
+Kopiera och klistra in följande kod var som helst i AppMeasurement-filen efter att Analytics-spårningsobjektet har initierats (med [`s_gi`](../functions/s-gi.md)). Genom att bevara kommentarer och versionsnummer i koden i implementeringen kan Adobe felsöka eventuella problem.
 
 ```js
 /******************************************* BEGIN CODE TO DEPLOY *******************************************/
@@ -112,7 +112,7 @@ s.pageName = getPageName("example","cid","arrive,numGuests",": ");
 
 ## Uppgradera från tidigare versioner
 
-Version 4.0+ av plugin-programmet `getPageName` är inte beroende av om Adobe Analytics AppMeasurement-objektet finns (dvs. `s` -objektet). Om du uppgraderar till den här versionen ändrar du koden som anropar plugin-programmet genom att ta bort alla instanser av objektet `s` från anropet. Ändra till exempel `s.getPageName();` till `getPageName();`.
+Version 4.0+ av plugin-programmet `getPageName` är inte beroende av om Adobe Analytics AppMeasurement-objekt finns (dvs. `s` -objektet). Om du uppgraderar till den här versionen ändrar du koden som anropar plugin-programmet genom att ta bort alla instanser av objektet `s` från anropet. Ändra till exempel `s.getPageName();` till `getPageName();`.
 
 ## Tidigare versioner
 

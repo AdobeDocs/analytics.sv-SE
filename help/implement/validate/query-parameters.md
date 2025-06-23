@@ -1,10 +1,10 @@
 ---
 title: Frågeparametrar för datainsamling
 description: Visar alla frågesträngsparametrar som används i bildbegäranden.
-feature: Validation
+feature: Implementation Basics
 exl-id: 2eb2ade7-a3db-4b00-8a70-2632d1c0aaaf
 role: Admin, Developer, Leader, User
-source-git-commit: 8be75c04177e97949811c17c7a87b04cce7b3de4
+source-git-commit: 29ab0cc535bd8f74b50428c11756bf8b446a23ab
 workflow-type: tm+mt
 source-wordcount: '721'
 ht-degree: 3%
@@ -48,9 +48,9 @@ I följande tabell visas alla frågesträngsparametrar som Adobe använder i bil
 | `j` | Ingen | Den version av JavaScript som är installerad i webbläsaren. |
 | `k` | Ingen | Används i dimensionen för [cookie-stöd](/help/components/dimensions/cookie-support.md). |
 | `l1` - `l3` | [`list1` - `list3`](../vars/page-vars/list.md) | Listvariabler. |
-| `lrt` | Ingen | Tidsåtgången för senaste begäran, som är tidsåtgången vid växling till och från den senaste begäran, i millisekunder. Det skickas bara när mer än en begäran går ut från en sida eller när sidan är ett ensidigt program (SPA). |
+| `lrt` | Ingen | Tidsåtgången för senaste begäran, som är tidsåtgången vid växling till och från den senaste begäran, i millisekunder. Det skickas endast när mer än en begäran går ut från en sida eller när sidan är ett SPA-program (single page application). |
 | `mid` | Ingen | Experience Cloud besökar-ID. |
-| `ndh` | Ingen | En flagga som anger om bildbegäran kom från AppMeasurementet. |
+| `ndh` | Ingen | Flagga som anger om bildbegäran kommer från AppMeasurement. |
 | `ns` | [`visitorNameSpace`](../vars/config-vars/visitornamespace.md) | Hjälper till att avgöra var cookies är inställda. |
 | `oid` | [`s_objectID`](../vars/page-vars/s-objectid.md) | Objekt-ID för den sista sidan. Används i Activity Map. |
 | `ot` | Ingen | Objektnamn för den sista sidan. Används i tidigare versioner av Activity Map. |
@@ -62,7 +62,7 @@ I följande tabell visas alla frågesträngsparametrar som Adobe använder i bil
 | `pev1` | [`linkURL`](../vars/config-vars/linkurl.md) | Den URL som den anpassade länken inträffade på. |
 | `pev2` | [`tl()`](../vars/functions/tl-method.md) | Eget länknamn. |
 | `pev3` | Ingen | Används inte längre. Spårade milstolpar i tidigare versioner av videorapporter. |
-| `pf` | Ingen | Plattformsflagga, endast för Adobe. Får ej ändras. |
+| `pf` | Ingen | Plattformsflagga; endast för Adobe. Får ej ändras. |
 | `pid` | Ingen | Sid-ID för sista sidan. Används i tidigare versioner av Activity Map. |
 | `pidt` | Ingen | Sididentifierartyp för sista sidan. Används i tidigare versioner av Activity Map. |
 | `pl` | [`products`](../vars/page-vars/products.md) | Kortskrift för frågesträngen `products`. |
@@ -79,7 +79,7 @@ I följande tabell visas alla frågesträngsparametrar som Adobe använder i bil
 | `v0` | [`campaign`](../vars/page-vars/campaign.md) | [Spårningskod](/help/components/dimensions/tracking-code.md). |
 | `v1` - `v250` | [`evar1` - `eVar250`](../vars/page-vars/evar.md) | [eVars](/help/components/dimensions/evar.md) eller anpassade konverteringsdimensioner. |
 | `vid` | [`visitorID`](../vars/config-vars/visitorid.md) | Variabel för besökar-ID. |
-| `vidn` | Ingen | Ange efter AppMeasurement för nya besökare. Innehåller ID-värdet som lagras i besökarens cookie. |
+| `vidn` | Ingen | Anges av AppMeasurement för nya besökare. Innehåller ID-värdet som lagras i besökarens cookie. |
 | `vmk` | `vmk` | Används inte längre. Nyckel för migrering av besökare, som hjälper till att migrera implementeringar från tredje part till cookies från första part. |
 | `vvp` | `variableProvider` | Används i Data Connectors. |
 | `xact` | [`transactionID`](../vars/page-vars/transactionid.md) | Används tillsammans med datakällor för att knyta samman online- och offlinedata. |

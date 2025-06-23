@@ -1,9 +1,9 @@
 ---
 description: Adobe kräver förhandsmeddelande om nya kontoinställningar, trafiktoppar och trafikökningar. Maskinvara måste tilldelas i förväg för att minimera latens och eventuella negativa konsekvenser för det övergripande systemet.
 title: Begärd ledtid för trafikökningar
-feature: Traffic Management
+feature: Report Suite Settings
 exl-id: fb428f8d-9dff-43a6-a1e8-1a892cbed7ac
-source-git-commit: 726e5ee71be60838e48bb682d7fd48bfc1f96ec3
+source-git-commit: 665bd68d7ebc08f0da02d93977ee0b583e1a28e6
 workflow-type: tm+mt
 source-wordcount: '325'
 ht-degree: 0%

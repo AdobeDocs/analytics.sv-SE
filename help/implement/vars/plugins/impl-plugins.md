@@ -1,10 +1,10 @@
 ---
 title: Översikt över plugin-program
 description: Klistra in kod på webbplatsen för att få nya funktioner.
-feature: Variables
+feature: Appmeasurement Implementation
 exl-id: faae7963-078d-40ad-ba09-71efa0b90df1
 role: Admin, Developer
-source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
+source-git-commit: 665bd68d7ebc08f0da02d93977ee0b583e1a28e6
 workflow-type: tm+mt
 source-wordcount: '308'
 ht-degree: 0%
@@ -36,4 +36,4 @@ Varje organisation har olika implementeringsbehov, så du kan bestämma hur du v
    * Alla implementeringar, både innanför och utanför en tagghanterad webbplats, använder JavaScript för att anropa plugin-program. Anropa plugin-programmet med det format som finns på sidan för plugin-programmet.
 4. Validera implementeringen och publiceringen.
 
-Många organisationer anropar plugin-program med funktionen [`doPlugins`](../functions/doplugins.md). Även om den här funktionen inte är nödvändig anser Adobe att det är en bra metod att använda. AppMeasurementet anropar den här funktionen precis innan en bildförfrågan kompileras och skickas, vilket är idealiskt eftersom flera plugin-program är beroende av andra Analytics-variabler.
+Många organisationer anropar plugin-program med funktionen [`doPlugins`](../functions/doplugins.md). Även om den här funktionen inte är nödvändig anser Adobe att det är en god vana att använda den. AppMeasurement anropar den här funktionen precis innan man kompilerar och skickar en bildförfrågan, vilket är idealiskt eftersom flera plugin-program är beroende av andra Analytics-variabler.

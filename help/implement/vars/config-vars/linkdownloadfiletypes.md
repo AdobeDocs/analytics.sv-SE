@@ -1,10 +1,10 @@
 ---
 title: linkDownloadFileTypes
 description: Fastställ filtillägg som automatiskt spåras som nedladdningslänkar.
-feature: Variables
+feature: Appmeasurement Implementation
 exl-id: 5089571a-d387-4ac7-838f-8bc95b2856fb
 role: Admin, Developer
-source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
+source-git-commit: 665bd68d7ebc08f0da02d93977ee0b583e1a28e6
 workflow-type: tm+mt
 source-wordcount: '368'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # linkDownloadFileTypes
 
-När [`trackDownloadLinks`](trackdownloadlinks.md) (AppMeasurement) eller [`clickCollectionEnabled`](trackdownloadlinks.md) (Web SDK) är aktiverat och en besökare klickar på en länk, söker AppMeasurementet efter filtypstillägg i länkens URL. Om länk-URL:en innehåller en matchande filtyp skickas en begäran om hämtning av länkbild automatiskt.
+När [`trackDownloadLinks`](trackdownloadlinks.md) (AppMeasurement) eller [`clickCollectionEnabled`](trackdownloadlinks.md) (Web SDK) är aktiverat och en besökare klickar på en länk kontrollerar AppMeasurement länkens URL för att se om det finns filtypstillägg. Om länk-URL:en innehåller en matchande filtyp skickas en begäran om hämtning av länkbild automatiskt.
 
 Använd `linkDownloadFileTypes` för att anpassa vilka filtillägg du vill räkna som hämtningslänkar.
 
@@ -39,9 +39,9 @@ Textfältet [!UICONTROL Download link qualifier] använder regex för att avgör
 1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen **[!UICONTROL Configure]** under [!UICONTROL Adobe Experience Platform Web SDK].
 1. Ange önskat värde i textfältet **[!UICONTROL Download link qualifier]** under [!UICONTROL Data Collection].
 
-## Hämta länkkvalificerare som implementerar Web SDK manuellt
+## Ladda ned länkkvalificerare som implementerar Web SDK manuellt
 
-[Konfigurera](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html?lang=sv-SE) SDK med [`downloadLinkQualifier`](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/track-links.html?lang=sv-SE#automaticLinkTracking). Fältet använder regex på den klickade URL:en för att avgöra om det är en giltig nedladdningslänk. Om `downloadLinkQualifier` inte definieras ställs standardvärdet in på `\\.(exe|zip|wav|mp3|mov|mpg|avi|wmv|pdf|doc|docx|xls|xlsx|ppt|pptx)$`.
+[Konfigurera](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html) SDK med [`downloadLinkQualifier`](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/track-links.html#automaticLinkTracking). Fältet använder regex på den klickade URL:en för att avgöra om det är en giltig nedladdningslänk. Om `downloadLinkQualifier` inte definieras ställs standardvärdet in på `\\.(exe|zip|wav|mp3|mov|mpg|avi|wmv|pdf|doc|docx|xls|xlsx|ppt|pptx)$`.
 
 ```json
 alloy("configure", {
@@ -60,7 +60,7 @@ Hämtningstillägg är en lista med filtillägg med ett fält som du kan lägga 
 
 Lägg till filtillägg i listan genom att ange text i fältet och klicka på **[!UICONTROL Add]**. Ta bort filtillägg från listan genom att klicka på respektive **&#39;X&#39;** -ikon.
 
-## s.linkDownloadFileTypes i AppMeasurementet och den anpassade kodredigeraren i Analytics-tillägget
+## s.linkDownloadFileTypes i AppMeasurement och den anpassade kodredigeraren i Analytics-tillägget
 
 Variabeln `s.linkDownloadFileTypes` är en sträng med kommaavgränsade filtillägg. Använd inte blanksteg.
 

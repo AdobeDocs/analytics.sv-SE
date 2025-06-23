@@ -1,10 +1,10 @@
 ---
 title: pageName
 description: Namnet på sidan på webbplatsen.
-feature: Variables
+feature: Appmeasurement Implementation
 exl-id: 24ac40a9-f0e7-4534-abf2-2397f5fe16c2
 role: Admin, Developer
-source-git-commit: 5ef92db2f5edb5fded497dddedd56abd49d8a019
+source-git-commit: 665bd68d7ebc08f0da02d93977ee0b583e1a28e6
 workflow-type: tm+mt
 source-wordcount: '245'
 ht-degree: 0%
@@ -19,7 +19,7 @@ Om variabeln inte definieras för ett visst sidspårningsanrop används variabel
 
 >[!NOTE]
 >
->Datainsamlingsservrar i Adobe tar bort den här dimensionen från alla [länkspårning](/help/implement/vars/functions/tl-method.md) -bildbegäranden. Om du vill att den här dimensionen ska visas i länkspårningsträffar bör du kopiera dimensionen till en [eVar](evar.md).
+>Adobe datainsamlingsservrar tar bort den här dimensionen från alla [länkspårning](/help/implement/vars/functions/tl-method.md) -bildbegäranden. Om du vill att den här dimensionen ska visas i länkspårningsträffar bör du kopiera dimensionen till en [eVar](evar.md).
 
 ## Sidnamn med Web SDK
 
@@ -41,7 +41,7 @@ Du kan ange sidnamn antingen när du konfigurerar Analytics-tillägget (globala 
 
 Du kan ange sidnamn till valfritt strängvärde, inklusive dataelement.
 
-## s.pageName i AppMeasurementet och den anpassade kodredigeraren för Analytics-tillägget
+## s.pageName i AppMeasurement och den anpassade kodredigeraren för Analytics-tillägget
 
 Variabeln `s.pageName` är en sträng som vanligtvis innehåller sidans namn. Det har ett maxvärde på 100 byte. Ju längre värde, desto trunkeras. Den här trunkeringen innehåller instanser där den återgår till `pageURL` om variabeln är tom.
 

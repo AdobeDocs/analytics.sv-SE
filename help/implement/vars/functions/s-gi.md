@@ -1,10 +1,10 @@
 ---
 title: s_gi()
 description: Skapa och spåra instanser av AppMeasurement.
-feature: Variables
+feature: Appmeasurement Implementation
 exl-id: f87eff07-7e60-480b-8334-3db538c1030e
 role: Admin, Developer
-source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
+source-git-commit: 665bd68d7ebc08f0da02d93977ee0b583e1a28e6
 workflow-type: tm+mt
 source-wordcount: '467'
 ht-degree: 0%
@@ -13,9 +13,9 @@ ht-degree: 0%
 
 # s_gi
 
-Funktionen `s_gi()` instansierar eller söker efter en instans av AppMeasurementet med hjälp av ett rapportsvit-ID. AppMeasurementet håller reda på alla instanser som skapas och `s_gi()` returnerar den befintliga instansen för en rapportserie om det finns någon. Om en instans inte finns skapas en ny instans.
+Funktionen `s_gi()` instansierar eller söker efter en instans av AppMeasurement med hjälp av ett rapportsvit-ID. AppMeasurement håller reda på alla instanser som skapas och `s_gi()` returnerar den befintliga instansen för en rapportserie om det finns någon. Om en instans inte finns skapas en ny instans.
 
-## Instansiera ett spårningsobjekt med hjälp av Web SDK-tillägget
+## Instansiera ett spårningsobjekt med Web SDK-tillägget
 
 Tillägget Web SDK instansierar och hanterar spårningsobjektet åt dig. Du kan dock anpassa spårningsobjektets namn i tilläggsinställningarna:
 
@@ -24,7 +24,7 @@ Tillägget Web SDK instansierar och hanterar spårningsobjektet åt dig. Du kan 
 1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen **[!UICONTROL Configure]** under Adobe Experience Platform Web SDK.
 1. Ändra fältet [!UICONTROL Name] till önskat värde. Dess standardvärde är `alloy`.
 
-## Instansiera ett spårningsobjekt manuellt när Web SDK implementeras
+## Instansiera ett spårningsobjekt manuellt när du implementerar Web SDK
 
 Följande kod läser in Web SDK och instansierar ett spårningsobjekt. Du kan anpassa spårningsobjektets namn genom att ändra strängen `"alloy"` i slutet av det infogade skriptet till det önskade värdet.
 
@@ -38,7 +38,7 @@ Följande kod läser in Web SDK och instansierar ett spårningsobjekt. Du kan an
 <script src="https://cdn1.adoberesources.net/alloy/2.6.4/alloy.min.js" async></script>
 ```
 
-Mer information finns i [Installera SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html?lang=sv-SE) i Web SDK-dokumentationen.
+Mer information finns i [Installera SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html) i dokumentationen för Web SDK.
 
 ## Instansiera ett spårningsobjekt med Adobe Analytics-tillägget
 
@@ -51,7 +51,7 @@ Tillägget Analytics instansierar och hanterar spårningsobjektet åt dig. Du ka
 
 I det globala textfältet för variabeln kan du ange ett anpassat spårningsobjekt. Dess standardvärde är `s`.
 
-## s_gi() i AppMeasurementet och den anpassade kodredigeraren för Analytics-tillägget
+## s_gi() i AppMeasurement och den anpassade kodredigeraren för Analytics-tillägget
 
 Anropa funktionen `s_gi()` för att instansiera ett spårningsobjekt. Dess enda argument innehåller en kommaavgränsad sträng med ID:n för rapportsviten. Argumentet för rapportsvitens ID krävs.
 
@@ -91,7 +91,7 @@ s.t();
 z.t();
 ```
 
-## Återställa variabler för AppMeasurementet när objektet har skrivits över
+## Återställa AppMeasurement-variabler efter att objektet har skrivits över
 
 Vissa tredjepartsverktyg kan också använda JavaScript `s`-objektet. Om du av misstag skriver över objektet `s` på platsen kan du anropa `s_gi` med samma RSID-strängargument för att återställa alla överskrivna variabler och metoder.
 

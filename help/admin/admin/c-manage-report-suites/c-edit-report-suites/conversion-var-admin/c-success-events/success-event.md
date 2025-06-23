@@ -2,10 +2,10 @@
 description: Success-händelser är åtgärder som kan spåras. Du avgör vilken händelse som lyckas. Om en besökare till exempel köper ett objekt kan köphändelsen betraktas som en lyckad händelse.
 keywords: event
 title: Success events overview
-feature: Event
+feature: Metrics
 role: Admin
 exl-id: d52a691a-8124-4601-932f-d6d2d0a7842b
-source-git-commit: 72f223cd1962a468aa6c0772958ad6a99cfc1c39
+source-git-commit: 1281bdc569c9ebc5d8daa151b19dc21710633eab
 workflow-type: tm+mt
 source-wordcount: '925'
 ht-degree: 1%
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 Slutförda händelser (kallas även konverteringshändelser eller anpassade händelser) är åtgärder som kan spåras. Du avgör vilken händelse som lyckas. Om en besökare till exempel köper ett objekt kan köphändelsen betraktas som en lyckad händelse.
 
-En videoöversikt över lyckade händelser finns i [Introduktion till konverteringshändelser](https://experienceleague.adobe.com/sv/docs/analytics-learn/tutorials/analysis-workspace/metrics/introduction-to-conversion-events) i självstudiekurserna för Analytics.
+En videoöversikt över lyckade händelser finns i [Introduktion till konverteringshändelser](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/metrics/introduction-to-conversion-events) i självstudiekurserna för Analytics.
 
 ## Exempel på lyckade händelser
 
@@ -30,7 +30,7 @@ Det finns många typer av framgångsrika händelser, beroende på webbplatstypen
 * **Högteknologi**: Hämta rapport, offert, ifyllnad av formulär, supportförfrågningar
 * **Automatisering**: Leadsändning, anbudsförfrågan, broschyrenedladdning
 
-Variabeln [s.events](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/events/event-serialization.html?lang=sv-SE) definierar en success-händelse.
+Variabeln [s.events](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/events/event-serialization.html) definierar en success-händelse.
 
 ## Konfigurera lyckade händelser
 
@@ -56,7 +56,7 @@ Så här konfigurerar du lyckade händelser:
    >
    >Tänk på följande när du ändrar händelsetypen:<ul><li>Du kan ändra händelsetypen mellan räknare och numerisk utan att förlora åtkomsten till tidigare hämtade data.</li><li>När händelsetyper ändras till eller från en valutakurs visas ett meddelande om att historiska data inte är tillgängliga i rapporter. Olika händelsetyper använder separata datatabeller och kan inte användas samtidigt. Vissa historiska data kan återställas om användaren återställer händelsetypen. Data som samlats in efter den första ändringen är dock inte tillgängliga.</li></ul>
 
-   Den typ du väljer avgör om händelsen är en räknarhändelse (standard), numerisk händelse eller valutakurs. <p>Räknarhändelser används för att spela in en händelse i tid.</p><p>Numeriska händelser används för att rapportera icke-valutanummer, t.ex. antalet kuponger som används i en order.</p> <p>Valutahändelser registrerar ett decimaltal, som moms eller frakt. Det värde som skickas till valutakurshändelser konverteras från sidvalutan till rapportsvitens basvaluta vid inleverans. Valutahändelser används för att spåra moms och fraktkostnader. Mer information om hur du använder valutakurser får du om du kontaktar en Adobe-representant.<p>Numeriska händelser och valutakurshändelser gör att du kan öka måtten med mer än en.</p><p>Händelser som används i standardtypen för datakällor måste vara numeriska händelser eller valutakurshändelser.</p>
+   Den typ du väljer avgör om händelsen är en räknarhändelse (standard), numerisk händelse eller valutakurs. <p>Räknarhändelser används för att spela in en händelse i tid.</p><p>Numeriska händelser används för att rapportera icke-valutanummer, t.ex. antalet kuponger som används i en order.</p> <p>Valutahändelser registrerar ett decimaltal, som moms eller frakt. Det värde som skickas till valutakurshändelser konverteras från sidvalutan till rapportsvitens basvaluta vid inleverans. Valutahändelser används för att spåra moms och fraktkostnader. Kontakta en Adobe-representant om du vill ha mer information om hur du använder valutasändningar.<p>Numeriska händelser och valutakurshändelser gör att du kan öka måtten med mer än en.</p><p>Händelser som används i standardtypen för datakällor måste vara numeriska händelser eller valutakurshändelser.</p>
 
 1. Markera kryssrutan i kolumnen **[!UICONTROL Polarity]** och välj sedan i listrutan om en uppåtgående trend för det här måttet är bra eller dåligt.
 

@@ -1,10 +1,10 @@
 ---
 title: manageVars
 description: Ändra värdena för mer än en Analytics-variabel åt gången.
-feature: Variables
+feature: Appmeasurement Implementation
 exl-id: b80d1c43-7e79-443e-84fb-1f1edffca461
 role: Admin, Developer
-source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
+source-git-commit: 665bd68d7ebc08f0da02d93977ee0b583e1a28e6
 workflow-type: tm+mt
 source-wordcount: '668'
 ht-degree: 0%
@@ -48,9 +48,9 @@ Om du inte vill använda tillägget för Common Analytics-plugin-program kan du 
 1. Öppna den anpassade kodredigeraren och klistra in den plugin-kod som finns nedan i redigeringsfönstret.
 1. Spara och publicera ändringarna i Analytics-tillägget.
 
-## Installera plugin-programmet med AppMeasurementet
+## Installera plugin-programmet med AppMeasurement
 
-Kopiera och klistra in följande AppMeasurement var som helst i analysfilen efter att Analytics-spårningsobjektet har initierats (med [`s_gi`](../functions/s-gi.md)). Genom att bevara kommentarer och versionsnummer i koden i implementeringen kan Adobe felsöka eventuella problem.
+Kopiera och klistra in följande kod var som helst i AppMeasurement-filen efter att Analytics-spårningsobjektet har initierats (med [`s_gi`](../functions/s-gi.md)). Genom att bevara kommentarer och versionsnummer i koden i implementeringen kan Adobe felsöka eventuella problem.
 
 ```js
 /******************************************* BEGIN CODE TO DEPLOY *******************************************/
@@ -95,7 +95,7 @@ Följande kod...
 manageVars("lowerCaseVars");
 ```
 
-...ändrar värdena för alla variablerna som beskrivs ovan till nedsänkta versioner.  Det enda undantaget till detta är händelsvariabeln, som vissa av händelserna (t.ex. scAdd, scCheckout, osv.) är skiftlägeskänsliga och bör inte sänkas
+...ändrar värdena för alla variablerna som beskrivs ovan till nedsänkta versioner.  Det enda undantaget till detta är variabeln events, eftersom vissa händelser (t.ex. scAdd, scCheckout, osv.) är skiftlägeskänsliga och inte bör sänkas
 
 ### Exempel 2
 
@@ -115,7 +115,7 @@ Följande kod...
 manageVars("lowerCaseVars", "eVar1,eVar2,eVar3,list2");
 ```
 
-... ändrar (t.ex. gemener) endast värdena för eVar1, eVar2, eVar3 och list2
+...ändrar (t.ex. gemener) endast värdena för eVar1, eVar2, eVar3 och list2
 
 ### Exempel 4
 
@@ -125,7 +125,7 @@ Följande kod...
 manageVars("lowerCaseVars", "eVar1,eVar2,eVar3,list2", false);
 ```
 
-... kommer att ändra (t.ex. gemener) värdena för alla de variabler som beskrivs ovan, EXCEPT för eVar1, eVar2, eVar3 och list2
+... kommer att ändra (t.ex. gemener) värdena för alla variablerna som beskrivs ovan EXCEPT för eVar1, eVar2, eVar3 och list2
 
 ### Exempel 5
 
@@ -137,11 +137,11 @@ manageVars("cleanStr");
 
 ...ändrar värdena för alla de variabler som beskrivs ovan, inklusive händelsevariablerna.  Callback-funktionen clearStr gör följande med varje variabels värde:
 
-* Tar bort kodningen HTML
+* Tar bort HTML-kodning
 * Tar bort blanksteg som hittats i början och slutet av värdet
 * Ersätter vänster/höger enkla citattecken med ett rakt enkelt citattecken (`'`)
 * Ersätter tabbtecken, radmatningstecken och radmatningstecken med blanksteg
-* Ersätter alla dubbla (eller tre, osv.) blanksteg med enkla blanksteg
+* Ersätter alla dubbla (eller tredubbla, osv.) blanksteg med enkla blanksteg
 
 ## Tidigare versioner
 

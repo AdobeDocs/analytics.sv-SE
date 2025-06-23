@@ -1,9 +1,9 @@
 ---
 title: Systemkrav för Adobe Analytics
 description: Systemkraven för Adobe Analytics.
-feature: System Requirements
+feature: Workspace Basics
 exl-id: e3575b1c-e088-48a9-90d4-ad1c7169e022
-source-git-commit: 16046af6b7a78bdc4bfaf7e5ec7d05c55f2ebc01
+source-git-commit: 1281bdc569c9ebc5d8daa151b19dc21710633eab
 workflow-type: tm+mt
 source-wordcount: '191'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Innan du kan använda Adobe Analytics måste du ha
 
 * En webbläsare som stöds
 
-  Alla användare som använder Adobe Analytics måste använda en webbläsare som stöds. Mer information finns i [Adobe Analytics systemkrav](https://experienceleague.adobe.com/docs/analytics/analyze/admin-overview/sys-reqs.html?lang=sv-SE).
+  Alla användare som använder Adobe Analytics måste använda en webbläsare som stöds. Mer information finns i [Adobe Analytics systemkrav](https://experienceleague.adobe.com/docs/analytics/analyze/admin-overview/sys-reqs.html).
 
 ## Systemkrav
 

@@ -1,10 +1,10 @@
 ---
 title: registerPreTrackCallback
 description: Skapa callback-funktioner innan du skickar en träff till Adobe.
-feature: Variables
+feature: Appmeasurement Implementation
 exl-id: 11c960d7-ded4-441a-822f-463d3a137d2d
 role: Admin, Developer
-source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
+source-git-commit: 665bd68d7ebc08f0da02d93977ee0b583e1a28e6
 workflow-type: tm+mt
 source-wordcount: '401'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # registerPreTrackCallback
 
-Variabeln `registerPreTrackCallback` gör att din organisation kan koppla en JavaScript-funktion efter att en URL för bildbegäran har kompilerats, men innan den skickas. Du kan använda den här variabeln för att skicka data som samlats in av AppMeasurementet till en partner eller intern infrastruktur.
+Variabeln `registerPreTrackCallback` gör att din organisation kan koppla en JavaScript-funktion efter att en URL för bildbegäran har kompilerats, men innan den skickas. Du kan använda den här variabeln för att skicka data som samlats in av AppMeasurement till en partner eller intern infrastruktur.
 
 >[!WARNING]
 >
@@ -27,7 +27,7 @@ Varje gång du anropar variabeln `registerPreTrackCallback` kopplar du den funkt
 
 ## Förspåra återanrop med Web SDK-tillägget
 
-Web SDK kan inte koppla en funktion efter att data har kompilerats, men innan den skickas till Adobe. Du kan dock använda `onBeforeEventSend` för att registrera en funktion som ska köras precis innan data skickas.
+SDK kan inte koppla en funktion när data har kompilerats, men innan den skickas till Adobe. Du kan dock använda `onBeforeEventSend` för att registrera en funktion som ska köras precis innan data skickas.
 
 1. Logga in på användargränssnittet för [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med dina inloggningsuppgifter för AdobeID.
 1. Klicka på den önskade taggegenskapen.
@@ -35,9 +35,9 @@ Web SDK kan inte koppla en funktion efter att data har kompilerats, men innan de
 1. Klicka på knappen **[!UICONTROL Edit on before event send callback code]** under [!UICONTROL Data Collection].
 1. Placera önskad kod i redigeraren.
 
-## Förspåra återanrop manuellt genom att implementera Web SDK
+## Förspåra återanrop manuellt för att implementera Web SDK
 
-Web SDK kan inte koppla en funktion efter att data har kompilerats, men innan den skickas till Adobe. Du kan emellertid använda `onBeforeEventSend` för att registrera en funktion som ska köras precis innan data skickas, ungefär som `doPlugins`. Mer information finns i [Ändra händelser globalt](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/tracking-events.html?lang=sv-SE#modifying-events-globally) i Web SDK-dokumentationen.
+SDK kan inte koppla en funktion när data har kompilerats, men innan den skickas till Adobe. Du kan emellertid använda `onBeforeEventSend` för att registrera en funktion som ska köras precis innan data skickas, ungefär som `doPlugins`. Mer information finns i [Ändra händelser globalt](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/tracking-events.html#modifying-events-globally) i Web SDK-dokumentationen.
 
 ```js
 // Set the trackingCode XDM field to "New value"
@@ -50,9 +50,9 @@ alloy("configure", {
 
 ## Förspåra återanrop med Adobe Analytics-tillägget
 
-Det finns inget dedikerat fält i Adobe Analytics-tillägget som kan använda den här variabeln. Använd den anpassade kodredigeraren enligt AppMeasurementen syntax.
+Det finns inget dedikerat fält i Adobe Analytics-tillägget som kan använda den här variabeln. Använd den anpassade kodredigeraren enligt AppMeasurement-syntax.
 
-## s.registerPreTrackCallback i AppMeasurementet och den anpassade kodredigeraren för Analytics-tillägget
+## s.registerPreTrackCallback i AppMeasurement och den anpassade kodredigeraren för Analytics-tillägget
 
 `s.registerPreTrackCallback` är en funktion som tar en funktion som enda argument. Den kapslade funktionen körs precis innan en bildbegäran skickas.
 

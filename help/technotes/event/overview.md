@@ -2,8 +2,8 @@
 title: Analysera data som påverkas av händelser
 description: Förstå hur data som påverkas av en händelse bidrar till den övergripande datakvaliteten.
 exl-id: 8d81a432-42d6-4f5d-b66a-bb3af7fc4857
-feature: Event
-source-git-commit: d7a6867796f97f8a14cd8a3cfad115923b329c7c
+feature: Curate and Share
+source-git-commit: 29ab0cc535bd8f74b50428c11756bf8b446a23ab
 workflow-type: tm+mt
 source-wordcount: '398'
 ht-degree: 0%

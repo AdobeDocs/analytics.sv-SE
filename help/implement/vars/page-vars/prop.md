@@ -1,10 +1,10 @@
 ---
 title: prop
 description: Anpassade variabler som du kan använda i implementeringen.
-feature: Variables
+feature: Appmeasurement Implementation
 exl-id: 0d0ff8cd-1d8c-4263-866d-e51ad66148b0
 role: Admin, Developer
-source-git-commit: 5ef92db2f5edb5fded497dddedd56abd49d8a019
+source-git-commit: 665bd68d7ebc08f0da02d93977ee0b583e1a28e6
 workflow-type: tm+mt
 source-wordcount: '603'
 ht-degree: 0%
@@ -19,11 +19,11 @@ Props är anpassade variabler som du kan använda hur du vill. De finns inte kva
 
 >[!TIP]
 >
->Adobe rekommenderar att du använder [eVars](evar.md) i de flesta fall. I tidigare versioner av Adobe Analytics hade props och eVars fördelar och nackdelar för varandra. Adobe har dock förbättrat eVars så att de nu uppfyller nästan alla användningsfall för proppar.
+>Adobe rekommenderar att du använder [eVars](evar.md) i de flesta fall. I tidigare versioner av Adobe Analytics hade props och eVars fördelar och nackdelar för varandra. Adobe har dock förbättrat eVars så att de nu fyller i nästan alla användningsområden för proppar.
 
-Om du har ett [lösningsdesigndokument](/help/implement/prepare/solution-design.md) kan du tilldela dessa anpassade dimensioner till värden som är specifika för din organisation. Antalet tillgängliga props beror på ditt kontrakt med Adobe. Upp till 75 props finns om ditt avtal med Adobe stöder det.
+Om du har ett [lösningsdesigndokument](/help/implement/prepare/solution-design.md) kan du tilldela dessa anpassade dimensioner till värden som är specifika för din organisation. Antalet tillgängliga props beror på ditt avtal med Adobe. Upp till 75 props finns om ditt avtal med Adobe ger support.
 
-## Proppar med Web SDK
+## Props med Web SDK
 
 Props mappas till följande variabler:
 
@@ -43,7 +43,7 @@ Du kan ange props antingen när du konfigurerar Analytics-tillägget (globala va
 
 Du kan ställa in ett uttryck på ett värde eller ett dataelement. Du kan också kopiera värdet från en annan Analytics-variabel.
 
-## s.prop1 - s.prop75 i AppMeasurementet och den anpassade kodredigeraren för Analytics-tillägget
+## s.prop1 - s.prop75 i AppMeasurement och den anpassade kodredigeraren för Analytics-tillägget
 
 Varje prop-variabel är en sträng som innehåller anpassade värden som är specifika för din organisation. Deras maximala längd är 100 byte. Värden som är längre än 100 byte trunkeras automatiskt när de skickas till Adobe.
 
@@ -63,13 +63,13 @@ Aktivera listökningar i [Trafikvariabler](/help/admin/admin/c-manage-report-sui
 >
 >Vanliga avgränsare som används i implementeringar är kommatecken (`,`), kolon (`:`), semikolon (`;`) eller rör (`|`). Du kan använda valfri icke-utökad ASCII-avgränsare som passar din implementering bäst.
 
-### Ange listproffs med Web SDK {#list-props-web-sdk}
+### Ställa in listproppar med Web SDK {#list-props-web-sdk}
 
-Om du använder [**XDM-objektet**](/help/implement/aep-edge/xdm-var-mapping.md) mappas listproppar till `xdm._experience.analytics.customDimensions.listProps.prop1.values[]` - `xdm._experience.analytics.customDimensions.listProps.prop75.values[]`. Web SDK använder automatiskt rätt avgränsare som anges under inställningarna för rapportsviten. Om du anger avgränsaren i XDM-fältet (till exempel `xdm._experience.analytics.customDimensions.props.prop1.delimiter`) åsidosätter det avgränsaren automatiskt från inställningarna för rapportsviten och kan leda till felaktig parsning av listpropsträngen.
+Om du använder [**XDM-objektet**](/help/implement/aep-edge/xdm-var-mapping.md) mappas listproppar till `xdm._experience.analytics.customDimensions.listProps.prop1.values[]` - `xdm._experience.analytics.customDimensions.listProps.prop75.values[]`. Web SDK använder automatiskt rätt avgränsare som anges under rapportsvitens inställningar. Om du anger avgränsaren i XDM-fältet (till exempel `xdm._experience.analytics.customDimensions.props.prop1.delimiter`) åsidosätter det avgränsaren automatiskt från inställningarna för rapportsviten och kan leda till felaktig parsning av listpropsträngen.
 
-Om du använder [**dataobjektet**](/help/implement/aep-edge/data-var-mapping.md) används samma fält som standarduttryck för AppMeasurementet och  syntax följs.
+Om du använder [**dataobjektet**](/help/implement/aep-edge/data-var-mapping.md) använder listproppar samma fält som standarduttryck och följer AppMeasurement syntax.
 
-### Ange visningsinställningar med Adobe Analytics-tillägget och AppMeasurementet
+### Ställa in listmeddelanden med Adobe Analytics och AppMeasurement
 
 När du har konfigurerat liststeg i rapportsvitens inställningar med den önskade avgränsaren finns det inga andra implementeringsskillnader än att använda avgränsaren.
 

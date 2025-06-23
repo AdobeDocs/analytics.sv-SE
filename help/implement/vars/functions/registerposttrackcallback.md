@@ -1,10 +1,10 @@
 ---
 title: registerPostTrackCallback
 description: Skapa callback-funktioner när du har skickat en träff till Adobe.
-feature: Variables
+feature: Appmeasurement Implementation
 exl-id: b2124b89-2bab-4cca-878c-18d62377a8f3
 role: Admin, Developer
-source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
+source-git-commit: 665bd68d7ebc08f0da02d93977ee0b583e1a28e6
 workflow-type: tm+mt
 source-wordcount: '349'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # registerPostTrackCallback
 
-Variabeln `registerPostTrackCallback` gör att din organisation kan koppla en JavaScript-funktion omedelbart efter att en träff har skickats till Adobe. Om ett spårningsanrop misslyckas körs inte den här funktionen. Du kan använda den här variabeln för att skicka data som samlats in av AppMeasurementet till en partner eller intern infrastruktur, eller för att rensa upp variabelvärden i enkelsidiga program.
+Variabeln `registerPostTrackCallback` gör att din organisation kan koppla en JavaScript-funktion omedelbart efter att en träff har skickats till Adobe. Om ett spårningsanrop misslyckas körs inte den här funktionen. Du kan använda den här variabeln för att skicka data som samlats in av AppMeasurement till en partner eller intern infrastruktur, eller för att rensa upp variabelvärden i enkelsidiga program.
 
 >[!WARNING]
 >
@@ -25,11 +25,11 @@ Varje gång du anropar variabeln `registerPostTrackCallback` kopplar du den funk
 >
 >Tidsangivelsen och ordningen för funktioner som utlösts mellan [`registerPreTrackCallback`](registerpretrackcallback.md) och `registerPostTrackCallback` garanteras inte. Undvik beroenden mellan dessa två funktioner.
 
-## Post-track-återanrop med Web SDK-tillägget
+## Återanrop efter spår med tillägget Web SDK
 
 Kommer snart!
 
-## Post-track-återanrop som implementerar Web SDK manuellt
+## Efterspårsåteranrop som manuellt implementerar Web SDK
 
 Du kan använda en JavaScript Promise när du skickar en händelse för att registrera en funktion efter att data har skickats till Adobe.
 
@@ -41,13 +41,13 @@ alloy("sendEvent",{
 });
 ```
 
-Mer information finns i [Hantera svar från händelser](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/tracking-events.html?lang=sv-SE#handling-responses-from-events) i Web SDK-dokumentationen.
+Mer information finns i [Hantera svar från händelser](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/tracking-events.html#handling-responses-from-events) i Web SDK-dokumentationen.
 
-## Registrera Post-track-återanrop med tillägget Adobe Analytics
+## Registrera återanrop efter spår med Adobe Analytics-tillägget
 
-Det finns inget dedikerat fält i Adobe Analytics-tillägget som kan använda den här variabeln. Använd den anpassade kodredigeraren enligt AppMeasurementen syntax.
+Det finns inget dedikerat fält i Adobe Analytics-tillägget som kan använda den här variabeln. Använd den anpassade kodredigeraren enligt AppMeasurement-syntax.
 
-## s.registerPostTrackCallback i AppMeasurementet och den anpassade kodredigeraren för Analytics-tillägget
+## s.registerPostTrackCallback i AppMeasurement och den anpassade kodredigeraren för Analytics-tillägget
 
 `s.registerPostTrackCallback` är en funktion som tar en funktion som enda argument. Den kapslade funktionen körs omedelbart när en bildbegäran har skickats.
 

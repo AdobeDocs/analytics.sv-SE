@@ -1,10 +1,10 @@
 ---
 title: doPlugins
 description: Konfigurera logik precis innan en träff kompileras och skickas till Adobe.
-feature: Variables
+feature: Appmeasurement Implementation
 exl-id: c5113be3-04b3-4dd2-8481-ba13149750ca
 role: Admin, Developer
-source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
+source-git-commit: 665bd68d7ebc08f0da02d93977ee0b583e1a28e6
 workflow-type: tm+mt
 source-wordcount: '293'
 ht-degree: 0%
@@ -20,7 +20,7 @@ Variabeln `doPlugins` fungerar som ett&quot;sista anrop&quot; för att ange vär
 
 Använd variabeln `doPlugins` för att anropa plugin-programkod och ange slutliga variabelvärden precis innan en bildbegäran kompileras och skickas till Adobe.
 
-## Använd On Before Event Skicka callback-kod med Web SDK-tillägget
+## Använda On Before Event Skicka callback-kod med tillägget Web SDK
 
 I stället för `doPlugins` använder Web SDK `onBeforeEventSend` med liknande funktioner.
 
@@ -32,7 +32,7 @@ I stället för `doPlugins` använder Web SDK `onBeforeEventSend` med liknande f
 
 ## Använd `onBeforeEventSend` för att implementera Web SDK manuellt
 
-I stället för `doPlugins` använder Web SDK `onBeforeEventSend` med liknande funktioner. Mer information finns i [Ändra händelser globalt](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/tracking-events.html?lang=sv-SE#modifying-events-globally) i Web SDK-dokumentationen.
+I stället för `doPlugins` använder Web SDK `onBeforeEventSend` med liknande funktioner. Mer information finns i [Ändra händelser globalt](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/tracking-events.html#modifying-events-globally) i Web SDK-dokumentationen.
 
 ```js
 // Set the trackingCode XDM field to "New value"
@@ -45,9 +45,9 @@ alloy("configure", {
 
 ## Plugin-program som använder tillägget Adobe Analytics
 
-Det finns inget dedikerat fält i Adobe Analytics-tillägget som kan använda den här variabeln. Använd den anpassade kodredigeraren enligt AppMeasurementen syntax.
+Det finns inget dedikerat fält i Adobe Analytics-tillägget som kan använda den här variabeln. Använd den anpassade kodredigeraren enligt AppMeasurement-syntax.
 
-## s.doPlugins i AppMeasurement och egen kod
+## s.doPlugins i AppMeasurement och anpassad kod
 
 Ange variabeln `s.doPlugins` till en funktion som innehåller önskad kod. Funktionen körs automatiskt när du anropar spårning.
 
@@ -75,4 +75,4 @@ s.doPlugins = function() {
 
 >[!NOTE]
 >
->Tidigare versioner av AppMeasurementet hade en något annorlunda `doPlugins()`-kod. Adobe rekommenderar att du använder formatet ovan som en god praxis.
+>Tidigare versioner av AppMeasurement hade något annorlunda `doPlugins()`-kod. Adobe rekommenderar att du använder ovanstående format som en god vana.

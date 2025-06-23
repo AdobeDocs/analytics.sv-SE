@@ -1,10 +1,10 @@
 ---
 title: eVar (variabel)
 description: Anpassade variabler som du kan använda i implementeringen.
-feature: Variables
+feature: Appmeasurement Implementation
 exl-id: f89457b2-4186-4276-8637-9992070e3a73
 role: Admin, Developer
-source-git-commit: 12347957a7a51dc1f8dfb46d489b59a450c2745a
+source-git-commit: 665bd68d7ebc08f0da02d93977ee0b583e1a28e6
 workflow-type: tm+mt
 source-wordcount: '393'
 ht-degree: 0%
@@ -17,11 +17,11 @@ ht-degree: 0%
 
 Variabler är anpassade variabler som du kan använda hur du vill. Om du har ett [lösningsdesigndokument](/help/implement/prepare/solution-design.md) blir de flesta dimensioner som är specifika för din organisation eVars. Som standard kvarstår eVars utanför den träff de är inställda på. Du kan anpassa deras förfallodatum och allokering under [Konverteringsvariabler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/conversion-var-admin.md) i inställningarna för rapportsviten.
 
-Antalet tillgängliga eVars-variabler beror på ditt avtal med Adobe. Upp till 250 eVars är tillgängligt om ditt avtal med Adobe stöder det.
+Antalet tillgängliga eVars-variabler beror på ditt avtal med Adobe. Upp till 250 eVars är tillgängliga om ditt avtal med Adobe ger stöd för det.
 
 ## Konfigurera eVars i inställningarna för rapportsviten
 
-Innan du använder eVars i implementeringen måste du konfigurera varje eVar i rapportsvitens inställningar. Se [Konverteringsvariabler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/conversion-var-admin.md) i administrationshandboken.
+Innan du använder eVars i implementeringen måste du konfigurera varje eVar i inställningarna för rapportsviten. Se [Konverteringsvariabler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/conversion-var-admin.md) i administrationshandboken.
 
 ## eVars med Web SDK
 
@@ -41,9 +41,9 @@ Du kan ange eVars antingen när du konfigurerar Analytics-tillägget (globala va
 5. Ange Adobe Analytics i listrutan [!UICONTROL Extension] och [!UICONTROL Action Type] till [!UICONTROL Set Variables].
 6. Leta reda på avsnittet [!UICONTROL eVars].
 
-Du kan ställa in en eVar på ett värde eller ett dataelement. Du kan också kopiera värdet från en annan Analytics-variabel.
+Du kan ange ett värde eller ett dataelement som eVar. Du kan också kopiera värdet från en annan Analytics-variabel.
 
-## s.eVar1 - s.eVar250 i AppMeasurementet och den anpassade kodredigeraren för Analytics-tillägget
+## s.eVar1 - s.eVar250 i AppMeasurement och den anpassade kodredigeraren för Analytics-tillägget
 
 Varje eVar är en sträng som innehåller anpassade värden som är specifika för din organisation. Deras maxlängd är 255 byte. Värden som är längre än 255 byte trunkeras automatiskt när de skickas till Adobe.
 
@@ -63,7 +63,7 @@ s.eVar1 = "+1";
 s.eVar1 = "+12.49";
 ```
 
-Om fler än två decimaler anges avrundas eVarna till två decimaler. En eVar-räknare får inte innehålla negativa tal.
+Om fler än två decimaler anges avrundas eVar till två decimaler. En eVar-räknare får inte innehålla negativa tal.
 
 >[!IMPORTANT]
 >

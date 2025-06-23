@@ -1,10 +1,10 @@
 ---
 title: hänvisare
 description: Åsidosätt den automatiskt insamlade referenten för en träff.
-feature: Variables
+feature: Appmeasurement Implementation
 exl-id: 09a76de9-0689-424a-aead-3fdff1709fd9
 role: Admin, Developer
-source-git-commit: 5ef92db2f5edb5fded497dddedd56abd49d8a019
+source-git-commit: 665bd68d7ebc08f0da02d93977ee0b583e1a28e6
 workflow-type: tm+mt
 source-wordcount: '282'
 ht-degree: 0%
@@ -37,9 +37,9 @@ Du kan ange referent antingen när Analytics-tillägget (globala variabler) konf
 
 Du kan ställa in referenten på valfritt strängvärde, inklusive dataelement.
 
-## s.reference i AppMeasurementet och den anpassade kodredigeraren för Analytics-tillägget
+## s.reference i AppMeasurement och den anpassade kodredigeraren för Analytics-tillägget
 
-Variabeln `s.referrer` är en sträng som innehåller URL:en för föregående sida. Den här variabeln kan lagra högst 255 byte. Värden som är större än 255 byte trunkeras. AppMeasurementet ställer automatiskt in den här variabeln till `document.referrer`. Du behöver inte ställa in den här variabeln om du inte vill åsidosätta det automatiskt insamlade värdet.
+Variabeln `s.referrer` är en sträng som innehåller URL:en för föregående sida. Den här variabeln kan lagra högst 255 byte. Värden som är större än 255 byte trunkeras. Den här variabeln anges automatiskt till `document.referrer`. Du behöver inte ange den här variabeln om du inte vill åsidosätta det automatiskt insamlade värdet.
 
 ```js
 s.referrer = "https://example.com";

@@ -1,10 +1,10 @@
 ---
 title: Integrera modul
 description: Med Integrate Module kan Adobe partners integrera sina datainsamlingsaktiviteter med din organisation.
-feature: Variables
+feature: Appmeasurement Implementation
 exl-id: 378ba77b-be81-49af-8f36-81c65bd01a53
 role: Admin, Developer
-source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
+source-git-commit: 665bd68d7ebc08f0da02d93977ee0b583e1a28e6
 workflow-type: tm+mt
 source-wordcount: '878'
 ht-degree: 2%
@@ -13,18 +13,18 @@ ht-degree: 2%
 
 # Integrera modul
 
-Med Integrate Module kan Adobe partners integrera sina datainsamlingsaktiviteter med din organisation. Den här integreringen ger möjlighet till en dubbelriktad dataanslutning. Användning av Integrate-modulen styrs vanligtvis av en Adobe-partner.
+Med Integrate Module kan Adobe partners integrera sina datainsamlingsaktiviteter med din organisation. Den här integreringen ger möjlighet till en dubbelriktad dataanslutning. Användning av Integrate Module styrs vanligtvis av en Adobe-partner.
 
 >[!NOTE]
 >
->Om du begär partnerdata i implementeringen kan det öka fördröjningen mellan sidinläsning och data som skickas till datainsamlingsservrar i Adobe. Om en besökare läser in en ny sida innan data skickas, registreras inte den sidan.
+>Om du begär partnerdata i implementeringen kan det öka fördröjningen mellan sidinläsning och data som skickas till Adobe datainsamlingsservrar. Om en besökare läser in en ny sida innan data skickas, registreras inte den sidan.
 
 ## Integrera modularbetsflöde
 
 1. En besökare på webbplatsen läser in en sida som initierar en `get`-begäran för partnerdata.
 2. Adobe-partnern tar emot `get`-begäran och paketerar lämpliga variabler i ett JSON-objekt. JSON-objektet returneras.
 3. Din webbplats tar emot JSON-objektet och anropar `setVars` för att tilldela Adobe Analytics-variabler informationen som finns i JSON-objektet
-4. En bildbegäran skickas till datainsamlingsservrar i Adobe.
+4. En bildbegäran skickas till Adobe datainsamlingsservrar.
 
 ## Integrera modulimplementering
 
@@ -37,7 +37,7 @@ För att få tillgång till modulkod krävs en användare med produktadministrat
 1. Logga in på [experiencecloud.adobe.com](https://experiencecloud.adobe.com) med inloggningsuppgifterna för ditt Adobe ID.
 1. Klicka på ikonen med nio kvadrater i det övre högra hörnet och klicka sedan på den färgade Analytics-logotypen.
 1. Klicka på **[!UICONTROL Admin]** > **[!UICONTROL All admin]** > **[!UICONTROL Code manager]** i den övre navigeringen.
-1. Ladda ned det senaste JavaScript AppMeasurement Library.
+1. Ladda ned det senaste JavaScript AppMeasurement-biblioteket.
 1. När du har hämtat filen packar du upp den och letar upp `AppMeasurement_Module_Integrate.js`.
 
 ### Placera integreringsmodulen i implementeringen
@@ -66,17 +66,17 @@ Din organisation arbetar vanligtvis tillsammans med en Adobe-partner för att fa
 
 ### beacon
 
-Metoden `beacon` skapar en bildbegäran och pekar den mot den angivna URL:en. Dessa bildbegäranden skiljer sig från vanliga bildbegäranden. Beacon-metoden skickar vanligtvis data till partnern Adobe i stället för till datainsamlingsservrarna i Adobe.
+Metoden `beacon` skapar en bildbegäran och pekar den mot den angivna URL:en. Dessa bildbegäranden skiljer sig från vanliga bildbegäranden. Beacon-metoden skickar vanligtvis data till Adobe partner i stället för till Adobe datainsamlingsservrar.
 
 ```JavaScript
 p.beacon("<partner_url>/track?qs1=value1&qs2=value2");
 ```
 
-Din organisation arbetar vanligtvis tillsammans med Adobe-partnern för att fastställa värdet för partnernamnet. Frågesträngar som ingår i URL:en är valfria och beroende av partner. Modulen Integrera innehåller automatiskt en frågesträng som innehåller ett slumpmässigt tal för att förhindra webbläsarcachelagring.
+Din organisation arbetar vanligtvis tillsammans med Adobe partner för att fastställa värdet för partnernamnet. Frågesträngar som ingår i URL:en är valfria och beroende av partner. Modulen Integrera innehåller automatiskt en frågesträng som innehåller ett slumpmässigt tal för att förhindra webbläsarcachelagring.
 
 ### fördröjning
 
-Adobe samarbetar internt med team för att få denna metod dokumenterad.
+Adobe samarbetar internt med team för att dokumentera denna metod.
 
 ### get
 
@@ -88,13 +88,13 @@ s.Integrate.<partner_name>.get("<url_to_json_object>?pid=value1&pid2=value2");
 
 * **Partnernamn:** Din organisation arbetar vanligtvis med Adobe-partnern för att fastställa värdet för partnernamnet.
 * **URL till JSON-objekt:** URL:en till ett JSON-objekt som innehåller de partnervariabler som ska inkluderas i en bildbegäran.
-* **Fråga efter strängparametrar:** Partnerkontoinformation som identifierar din organisation i partnersystemet. Adobe-partnern använder den här informationen för att identifiera din datauppsättning.
+* **Fråga efter strängparametrar:** Partnerkontoinformation som identifierar din organisation i partnersystemet. Adobe partner använder den här informationen för att identifiera din datauppsättning.
 
 Modulen Integrera lägger automatiskt till fler frågesträngar till URL:en. En var-frågesträng anger namnet på det JSON-objekt som modulen förväntar sig från partnern. Ett slumpmässigt tal läggs också till för att förhindra webbläsarcachelagring.
 
 ### klar
 
-Adobe samarbetar internt med team för att få denna metod dokumenterad.
+Adobe samarbetar internt med team för att dokumentera denna metod.
 
 ### useVars
 
@@ -130,4 +130,4 @@ Med metoden `script` kan en Adobe-partner anropa ytterligare JavaScript från pa
 p.script("<partner_url>/script?qs1=value1&qs2=value2");
 ```
 
-Din organisation arbetar vanligtvis tillsammans med Adobe-partnern för att fastställa värdet för partnernamnet. Frågesträngar som ingår i URL:en är valfria och beroende av partner. Modulen Integrera innehåller automatiskt en frågesträng som innehåller ett slumpmässigt tal för att förhindra webbläsarcachelagring.
+Din organisation arbetar vanligtvis tillsammans med Adobe partner för att fastställa värdet för partnernamnet. Frågesträngar som ingår i URL:en är valfria och beroende av partner. Modulen Integrera innehåller automatiskt en frågesträng som innehåller ett slumpmässigt tal för att förhindra webbläsarcachelagring.

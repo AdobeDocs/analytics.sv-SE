@@ -1,10 +1,10 @@
 ---
 title: bufferRequests
 description: Förbättra tillförlitligheten när det gäller att samla in länkspårningsbegäranden för webbläsare som omedelbart tar bort sidan.
-feature: Variables
+feature: Appmeasurement Implementation
 exl-id: f103deb4-f449-4325-b1a0-23e58a3c9ba0
 role: Admin, Developer
-source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
+source-git-commit: 665bd68d7ebc08f0da02d93977ee0b583e1a28e6
 workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # bufferRequests
 
-Med metoden `bufferRequests()` kan du cachelagra bildbegäranden på den aktuella sidan i stället för att skicka dem till Adobe. Den här metoden är användbar i scenarier där en webbläsare inte har stöd för [`navigator.sendBeacon()`](https://developer.mozilla.org/en-US/docs/Web/API/Navigator/sendBeacon) eller på annat sätt avbryter bildbegäranden när en sida tas bort. Många versioner av WebKit-webbläsare, som Safari, uppvisar ofta beteendet att stoppa en bildbegäran när du klickar på en länk. Metoden `bufferRequests()` är tillgänglig för alla versioner av AppMeasurementet v2.25.0 eller senare.
+Med metoden `bufferRequests()` kan du cachelagra bildbegäranden på den aktuella sidan i stället för att skicka dem till Adobe. Den här metoden är användbar i scenarier där en webbläsare inte har stöd för [`navigator.sendBeacon()`](https://developer.mozilla.org/en-US/docs/Web/API/Navigator/sendBeacon) eller på annat sätt avbryter bildbegäranden när en sida tas bort. Många versioner av WebKit-webbläsare, som Safari, uppvisar ofta beteendet att stoppa en bildbegäran när du klickar på en länk. Metoden `bufferRequests()` är tillgänglig för alla versioner av AppMeasurement v2.25.0 eller senare.
 
 När du anropar [`t()`](t-method.md) eller [`tl()`](tl-method.md) på en efterföljande sida i samma webbläsarsession och `bufferRequests()` ännu inte anropats på den sidan, skickas alla buffrade begäranden utöver den sidans bildbegäran. Buffertade begäranden skickas i rätt ordning, där den aktuella sidans bildbegäran skickas sist.
 
@@ -28,19 +28,19 @@ Tänk på följande begränsningar när du anropar metoden `bufferRequests()`. E
 * Mållänken måste finnas på samma domän och underdomän. Buffertade begäranden fungerar inte över domäner eller underdomäner, även om båda har samma Adobe Analytics-implementering. Den här begränsningen innebär också att du inte kan använda buffrade begäranden för att spåra slutlänkar.
 * Mållänken måste använda samma protokoll som den aktuella sidan. Du kan inte skicka buffrade begäranden mellan HTTP och HTTPS.
 * Buffertade begäranden lagras tills du anropar `t()` eller `tl()` utan att anropa `bufferRequests()` först, eller tills webbläsaren eller fliken stängs. Om en webbläsarsession avslutas innan du kan skicka data till Adobe går oskickade buffrade begäranden förlorade permanent.
-* Om en webbläsare inte har stöd för [webblagring-API:t](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API) eller [JSON-API:t](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON), skickas en varning till webbläsarkonsolen och AppMeasurementet försöker skicka bildbegäran direkt med metoden `t()`.
+* Om en webbläsare inte har stöd för [webblagring-API:t](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API) eller [JSON-API:t](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON), skickas en varning till webbläsarkonsolen och AppMeasurement försöker omedelbart skicka bildbegäran med metoden `t()`.
 
-## Buffertade begäranden i Web SDK
+## Buffrade förfrågningar i SDK på webben
 
 Web SDK ger för närvarande inte möjlighet att buffra begäranden.
 
 ## Buffrade begäranden med Adobe Analytics-tillägget
 
-Det finns inget dedikerat fält i Adobe Analytics-tillägget som kan använda den här variabeln. Använd den anpassade kodredigeraren enligt AppMeasurementen syntax.
+Det finns inget dedikerat fält i Adobe Analytics-tillägget som kan använda den här variabeln. Använd den anpassade kodredigeraren enligt AppMeasurement-syntax.
 
-## s.bufferRequests() i AppMeasurementet och den anpassade kodredigeraren för Analytics-tillägget
+## s.bufferRequests() i AppMeasurement och den anpassade kodredigeraren för Analytics-tillägget
 
-Anropa metoden `bufferRequests()` innan `t()` eller `tl()` anropas. När `bufferRequests()` anropas skrivs efterföljande spårningsanrop till sessionslagringsplatsen i stället för att skickas till datainsamlingsservrar i Adobe.
+Anropa metoden `bufferRequests()` innan `t()` eller `tl()` anropas. När `bufferRequests()` anropas skrivs efterföljande spårningsanrop till sessionslagringsplatsen i stället för att skickas till Adobe datainsamlingsservrar.
 
 ```js
 // Instantiate the tracking object

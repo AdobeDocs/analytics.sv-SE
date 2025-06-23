@@ -1,10 +1,10 @@
 ---
 title: trackExternalLinks
 description: Aktivera eller inaktivera automatisk länkspårning för att avsluta länkar.
-feature: Variables
+feature: Appmeasurement Implementation
 exl-id: a34d4ffa-ff82-460e-af7d-1a4be85fc631
 role: Admin, Developer
-source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
+source-git-commit: 665bd68d7ebc08f0da02d93977ee0b583e1a28e6
 workflow-type: tm+mt
 source-wordcount: '298'
 ht-degree: 0%
@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # trackExternalLinks
 
-Med Adobe kan du spåra utgående länkar utan att manuellt ange metoden [`tl()`](../functions/tl-method.md) för varje avslutningslänk. Aktivera den här variabeln om du vill använda automatisk länkspårning för att avsluta länkar.
+I Adobe kan du spåra utgående länkar utan att manuellt ange metoden [`tl()`](../functions/tl-method.md) för varje avslutningslänk. Aktivera den här variabeln om du vill använda automatisk länkspårning för att avsluta länkar.
 
-När det här alternativet är aktiverat jämför AppMeasurementet alla klickade länk-URL:er med värden i [`linkInternalFilters`](linkinternalfilters.md) och [`linkExternalFilters`](linkexternalfilters.md). Om det finns en matchning utlöses ett avslutningslänkspårningsanrop automatiskt.
+När den är aktiverad jämför AppMeasurement alla klickade länk-URL:er med värden i [`linkInternalFilters`](linkinternalfilters.md) och [`linkExternalFilters`](linkexternalfilters.md). Om det finns en matchning utlöses ett avslutningslänkspårningsanrop automatiskt.
 
-## Aktivera eller inaktivera klicksamling med Web SDK-tillägget
+## Aktivera eller inaktivera klicksamlingen med Web SDK-tillägget
 
 Använd kryssrutan [!UICONTROL Enable click data collection] när du konfigurerar Web SDK. Den här kryssrutan hanterar både avslutnings- och nedladdningslänkar.
 
@@ -28,7 +28,7 @@ Använd kryssrutan [!UICONTROL Enable click data collection] när du konfigurera
 
 ## Aktivera eller inaktivera klicksamlingen manuellt för att implementera Web SDK
 
-Konfigurera SDK med [`clickCollectionEnabled`](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html?lang=sv-SE#clickCollectionEnabled). Fältet är ett booleskt värde som avgör om data som är associerade med länkklick samlas in automatiskt. Dess standardvärde är `true`. Ange värdet `false` om du vill inaktivera automatisk länkspårning. Den här inställningen hanterar automatisk länkspårning för både hämtnings- och avslutslänkar.
+Konfigurera SDK med [`clickCollectionEnabled`](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html#clickCollectionEnabled). Fältet är ett booleskt värde som avgör om data som är associerade med länkklick samlas in automatiskt. Dess standardvärde är `true`. Ange värdet `false` om du vill inaktivera automatisk länkspårning. Den här inställningen hanterar automatisk länkspårning för både hämtnings- och avslutslänkar.
 
 ```json
 alloy("configure", {
@@ -47,7 +47,7 @@ Spåra utgående länkar är en kryssruta i dragspelet [!UICONTROL Link Tracking
 
 Klicka i kryssrutan om du vill aktivera automatisk spårning av avslutningslänk.
 
-## s.trackExternalLinks in AppMeasurement och den anpassade kodredigeraren för Analytics-tillägget
+## s.trackExternalLinks i AppMeasurement och den anpassade kodredigeraren för Analytics-tillägget
 
 `s.trackExternalLinks` är ett booleskt värde som aktiverar eller inaktiverar automatisk spårning av avslutningslänk. Om du inte vill spåra utgående länkar, eller föredrar att anropa metoden `tl()` manuellt för att spåra avslutslänkar, anger du den här variabeln till `false`.
 

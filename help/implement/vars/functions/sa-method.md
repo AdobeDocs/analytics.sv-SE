@@ -1,10 +1,10 @@
 ---
 title: sa
 description: Ändra rapportsviten när som helst i implementeringen.
-feature: Variables
+feature: Appmeasurement Implementation
 exl-id: 524857a7-c820-4985-86c7-fcf21a0809bd
 role: Admin, Developer
-source-git-commit: bfafc1f8eddf82b34fb45e3d6197213f0cee0d97
+source-git-commit: 665bd68d7ebc08f0da02d93977ee0b583e1a28e6
 workflow-type: tm+mt
 source-wordcount: '408'
 ht-degree: 0%
@@ -17,7 +17,7 @@ Med metoden `sa()` kan du dynamiskt ändra en rapportsserie när som helst på s
 
 ## Hantera rapportsviter med Web SDK
 
-Web SDK fungerar genom att data skickas till en specifik datastream som vidarebefordrar data till önskad analysrapportsvit(er). En enda datastream kan vidarebefordra data till flera rapportsviter. Det här avsnittet gäller både för Web SDK-tillägget och för att manuellt implementera Web SDK.
+SDK på webben skickar data till ett specifikt datastream, som skickar data till önskad Analytics Report Suite(er). En enda datastream kan vidarebefordra data till flera rapportsviter. Det här avsnittet gäller både för Web SDK-tillägget och för att manuellt implementera Web SDK.
 
 1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med dina inloggningsuppgifter för AdobeID.
 1. Klicka på **[!UICONTROL Datastreams]** till vänster.
@@ -26,9 +26,9 @@ Web SDK fungerar genom att data skickas till en specifik datastream som vidarebe
 1. Ange önskat Report Suite-ID. Om du vill skicka samma data till flera rapportsviter klickar du på **[!UICONTROL Add Report Suite]**.
 1. Klicka på **[!UICONTROL Save]** när alla önskade rapportsviter har angetts.
 
-## Ange önskat dataström med hjälp av Web SDK-tillägget
+## Ange önskad dataström med hjälp av Web SDK-tillägget
 
-Tillägget Web SDK innehåller en listruta för datastream för varje miljö. Du kan också ange ett dataström-ID manuellt.
+Tillägget Web SDK innehåller en listruta för Datastream för varje miljö. Du kan också ange ett dataström-ID manuellt.
 
 1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med dina inloggningsuppgifter för AdobeID.
 1. Klicka på den önskade taggegenskapen.
@@ -36,7 +36,7 @@ Tillägget Web SDK innehåller en listruta för datastream för varje miljö. Du
 1. Under [!UICONTROL Datastreams] väljer du önskad dataström i listrutan för varje miljö.
 1. Klicka på **[!UICONTROL Save]**.
 
-## Ange önskad dataström som ska implementera Web SDK manuellt
+## Ange önskad dataström för manuell implementering av Web SDK
 
 Ställ in konfigurationsvariabeln `datastreamId` till DataStream ID. DataStream-ID:t finns till höger när du visar ett dataström i Adobe Experience Platform Data Collection.
 
@@ -47,13 +47,13 @@ alloy("configure", {
 });
 ```
 
-Mer information finns i [Konfigurera Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html?lang=sv-SE) i Web SDK-dokumentationen.
+Mer information finns i [Konfigurera Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html) i dokumentationen för Web SDK.
 
 ## Ändra rapportsvit med Adobe Analytics-tillägget
 
-Det finns inget flexibelt sätt att ändra rapportsviten i gränssnittet. Du kan ställa in rapportsviten under dragspelet [!UICONTROL Library Management] när du konfigurerar Adobe Analytics-tillägget. Du kan dock inte ändra eller uppdatera rapportsviten med hjälp av regler. Om du vill uppdatera rapportsvitens värden när de har angetts använder du den anpassade kodredigeraren efter AppMeasurementets syntax.
+Det finns inget flexibelt sätt att ändra rapportsviten i gränssnittet. Du kan ställa in rapportsviten under dragspelet [!UICONTROL Library Management] när du konfigurerar Adobe Analytics-tillägget. Du kan dock inte ändra eller uppdatera rapportsviten med hjälp av regler. Om du vill uppdatera rapportsvitens värden när de har angetts använder du den anpassade kodredigeraren efter AppMeasurement syntax.
 
-## s.sa() i AppMeasurementet och den anpassade kodredigeraren för Analytics-tillägget
+## s.sa() i AppMeasurement och den anpassade kodredigeraren för Analytics-tillägget
 
 Anropa metoden `s.sa()` om du vill ändra målrapportsviten. Det enda argumentet är en sträng som innehåller ett rapportsuite-ID, eller flera rapportsuite-ID:n avgränsade med kommatecken. Argumentet för rapportsvitens ID krävs. Använd inte blanksteg i strängargumentet.
 

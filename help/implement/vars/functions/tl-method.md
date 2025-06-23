@@ -1,10 +1,10 @@
 ---
 title: tl
 description: Skicka ett länkspårningsanrop till Adobe.
-feature: Variables
+feature: Appmeasurement Implementation
 exl-id: 470662b2-ce07-4432-b2d5-a670fbb77771
 role: Admin, Developer
-source-git-commit: 72b38970e573b928e4dc4a8c8efdbfb753be0f4e
+source-git-commit: 665bd68d7ebc08f0da02d93977ee0b583e1a28e6
 workflow-type: tm+mt
 source-wordcount: '856'
 ht-degree: 0%
@@ -13,13 +13,13 @@ ht-degree: 0%
 
 # tl
 
-Metoden `tl()` är en viktig kärnkomponent för Adobe Analytics. Den tar alla analysvariabler som definieras på sidan, kompilerar dem till en bildbegäran och skickar data till datainsamlingsservrarna i Adobe. Den fungerar på ungefär samma sätt som metoden [`t()`](t-method.md), men den här metoden ökar inte sidvisningen. Den är användbar för att spåra länkar och andra element som inte skulle betraktas som en fullständig sidinläsning.
+Metoden `tl()` är en viktig kärnkomponent för Adobe Analytics. Den tar alla analysvariabler som definieras på sidan, kompilerar dem till en bildbegäran och skickar dessa data till Adobe datainsamlingsservrar. Den fungerar på ungefär samma sätt som metoden [`t()`](t-method.md), men den här metoden ökar inte sidvisningen. Den är användbar för att spåra länkar och andra element som inte skulle betraktas som en fullständig sidinläsning.
 
-Om [`trackDownloadLinks`](../config-vars/trackdownloadlinks.md) eller [`trackExternalLinks`](../config-vars/trackexternallinks.md) är aktiverade anropar AppMeasurementet automatiskt metoden `tl()` för att skicka hämtningslänkar och avsluta länkspårningsdata. Om din organisation föredrar att ha större kontroll över länkarna och deras beteende kan du anropa metoden `tl()` manuellt. Anpassade länkar kan bara spåras manuellt.
+Om [`trackDownloadLinks`](../config-vars/trackdownloadlinks.md) eller [`trackExternalLinks`](../config-vars/trackexternallinks.md) är aktiverade anropar AppMeasurement automatiskt metoden `tl()` för att skicka hämtningslänkar och avsluta länkspårningsdata. Om din organisation föredrar att ha större kontroll över länkarna och deras beteende kan du anropa metoden `tl()` manuellt. Anpassade länkar kan bara spåras manuellt.
 
-## Länkspårning med Web SDK
+## Länkspårning med SDK för webben
 
-Web SDK skiljer inte mellan sidvisningsanrop och länkspårningsanrop. Båda använder kommandot `sendEvent`.
+SDK för webben skiljer inte mellan sidvisningsanrop och länkspårningsanrop. Båda använder kommandot `sendEvent`.
 
 Om du använder ett XDM-objekt och vill att Adobe Analytics ska räkna en viss händelse som ett länkspårningsanrop, ska du kontrollera att dina XDM-data innehåller:
 
@@ -74,7 +74,7 @@ Adobe Analytics-tillägget har en dedikerad plats där ett länkspårningsanrop 
 
 Du kan inte ange några valfria argument i Analytics-tillägget.
 
-## s.tl()-metoden i AppMeasurementet och den anpassade kodredigeraren för Analytics-tillägget
+## s.tl()-metoden i AppMeasurement och den anpassade kodredigeraren för Analytics-tillägget
 
 Anropa metoden `s.tl()` när du vill skicka ett spårningsanrop till Adobe.
 
@@ -88,9 +88,9 @@ Argumentet för läntobjekt avgör om webbläsaren väntar upp till 500 ms innan
 
 >[!NOTE]
 >
->AppMeasurementet aktiverar automatiskt variabeln [`useBeacon`](../config-vars/usebeacon.md) för avslutningslänkar, vilket gör att det här argumentet inte längre behövs i moderna webbläsare. Detta argument användes oftare i tidigare versioner av AppMeasurement.
+>AppMeasurement aktiverar automatiskt variabeln [`useBeacon`](../config-vars/usebeacon.md) för avslutningslänkar, vilket gör att det här argumentet inte längre behövs i moderna webbläsare. Detta argument användes oftare i tidigare versioner av AppMeasurement.
 
-* `this`: Vänta upp till 500 ms för att ge AppMeasurementet tid att skicka en bildbegäran. Standardvärde.
+* `this`: Vänta i upp till 500 ms för att ge AppMeasurement tid att skicka en bildbegäran. Standardvärde.
 * `true`: Vänta inte.
 
 ```JavaScript
@@ -142,7 +142,7 @@ s.tl(true,"o","Example custom link",y);
 
 ## Exempel och användningsexempel
 
-Skicka ett grundläggande länkspårningsanrop direkt i en HTML-länk:
+Skicka ett enkelt länkspårningsanrop direkt i en HTML-länk:
 
 ```HTML
 <a href="example.html" onClick="s.tl(true,'o','Example link');">Click here</a>
@@ -175,11 +175,11 @@ Du kan sedan anropa funktionen när du vill spåra en viss länk:
 ```
 
 >[!NOTE]
->Om du anropar metoden `tl()` indirekt kan det göra det enklare att rapportera övertäckningar i Activity Map. Du måste klicka på varje länk för att registrera funktionen med länkelementet. Activity Map i Workspace spåras dock på samma sätt.
+>Om du anropar metoden `tl()` indirekt kan det göra det enklare att rapportera övertäckningar i Activity Map. Du måste klicka på varje länk för att registrera funktionen med länkelementet. Activity Map dimensioner i Workspace spåras dock på samma sätt.
 
 ### Undvik att spåra dubblettlänkar
 
-Om `trackDownloadLinks` eller `trackExternalLinks` är aktiverade gör AppMeasurementet automatiskt ett länkspårningsanrop om rätt filter matchar. Om du även anropar `s.tl()` manuellt för de här länkklickningarna kan du skicka duplicerade data till Adobe. Duplicerade data ökar rapportnummer och gör dem mindre exakta.
+Om `trackDownloadLinks` eller `trackExternalLinks` är aktiverade gör AppMeasurement automatiskt ett länkspårningsanrop om rätt filter matchar. Om du även anropar `s.tl()` manuellt för de här länkklickningarna kan du skicka duplicerade data till Adobe. Duplicerade data ökar rapportnummer och gör dem mindre exakta.
 
 Följande funktion skickar till exempel två länkspårningsanrop för samma länkklickning (manuella och automatiska hämtningslänkar):
 
@@ -210,7 +210,7 @@ När metoden `tl()` anropas direkt från HTML-elementets on-click-händelse kan 
 <a href="index.html" onclick="s.tl(this,'o','Example custom link');">Example link text</a>
 ```
 
-När metoden `tl()` inte anropas direkt från elementets on-click-händelse kan Activity Map bara visa en övertäckning när du har klickat på det elementet. Exempel:
+När metoden `tl()` inte anropas direkt från HTML-elementets on-click-händelse, kan Activity Map bara visa en övertäckning när användaren har klickat på det elementet. Exempel:
 
 ```html
 <a href="index.html" onclick="someFn(event);">Example link text</a>

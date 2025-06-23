@@ -1,10 +1,10 @@
 ---
 title: Util.cookieRead
 description: Hämtar värdet för en cookie.
-feature: Variables
+feature: Appmeasurement Implementation
 exl-id: b05b628c-bae6-4dba-bc1d-6a1ab56e3660
 role: Admin, Developer
-source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
+source-git-commit: 665bd68d7ebc08f0da02d93977ee0b583e1a28e6
 workflow-type: tm+mt
 source-wordcount: '172'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Du kan läsa cookies genom att ange värden i dataelement.
 
 Cookie-värdet lagras i dataelementet. Du kan sedan referera till dataelementet i regler för att tilldela önskade variabler.
 
-## s.Util.cookieRead() i AppMeasurementet och den anpassade kodredigeraren för Analytics-tillägget
+## s.Util.cookieRead() i AppMeasurement och den anpassade kodredigeraren för Analytics-tillägget
 
 Anropa metoden `s.Util.cookieRead()` om du vill läsa ett önskat cookie-värde. Dess enda argument är en sträng, vilket är obligatoriskt. Den här metoden returnerar en sträng som innehåller cookie-värdet. Om cookies inte finns returneras en tom sträng.
 

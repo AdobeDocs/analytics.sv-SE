@@ -1,10 +1,10 @@
 ---
 title: transactionID
 description: Använd den här variabeln för att länka samman online- och offlinedata.
-feature: Variables
+feature: Appmeasurement Implementation
 exl-id: 525e90d8-99a7-4f4f-9bce-1395bf72fd8f
 role: Admin, Developer
-source-git-commit: 43035967e8ccbb35700b7ad3e893282ade310acd
+source-git-commit: 665bd68d7ebc08f0da02d93977ee0b583e1a28e6
 workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 0%

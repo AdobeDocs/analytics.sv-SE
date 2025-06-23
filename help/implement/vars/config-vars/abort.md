@@ -1,10 +1,10 @@
 ---
 title: avbryta
-description: Variabeln abort är en boolesk variabel som förhindrar att en träff skickas till datainsamlingsservrar i Adobe.
-feature: Variables
+description: Variabeln abort är en boolesk variabel som förhindrar att en träff skickas till Adobe datainsamlingsservrar.
+feature: Appmeasurement Implementation
 exl-id: e4e25a89-272b-4444-b52b-c7fe2478ff30
 role: Admin, Developer
-source-git-commit: 5ef8ba686a13f8b4ab592c0b48a9c074b0477fcf
+source-git-commit: 665bd68d7ebc08f0da02d93977ee0b583e1a28e6
 workflow-type: tm+mt
 source-wordcount: '308'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Variabeln `abort` är en boolesk variabel som kan förhindra att nästa spårningsanrop skickas till Adobe. Det finns liknande funktioner i Web SDK som gör att du kan returnera `false` innan en XDM-händelse skickas.
 
-## Avbryt sändning av en händelse med Web SDK-tillägget
+## Avbryt sändning av en händelse med tillägget Web SDK
 
 Använd kodredigeraren [!UICONTROL On before event send callback] och returnera `false`.
 
@@ -29,9 +29,9 @@ Använd kodredigeraren [!UICONTROL On before event send callback] och returnera 
 return false;
 ```
 
-## Avbryt sändning av en händelse som implementerar Web SDK manuellt
+## Avbryta sändning av en händelse manuellt som implementerar Web SDK
 
-Använd motringningen `onBeforeEventSend` och returnera `false`. Mer information finns i [Ändra händelser globalt](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/tracking-events.html?lang=sv-SE#modifying-events-globally) i Web SDK-dokumentationen.
+Använd motringningen `onBeforeEventSend` och returnera `false`. Mer information finns i [Ändra händelser globalt](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/tracking-events.html#modifying-events-globally) i Web SDK-dokumentationen.
 
 ```js
 alloy("configure"), {
@@ -43,7 +43,7 @@ alloy("configure"), {
 
 ## Använda variabeln abort i Adobe Analytics-tillägget
 
-Det finns inget dedikerat fält i Adobe Analytics-tillägget som kan använda den här variabeln. Använd den anpassade kodredigeraren enligt AppMeasurementen syntax.
+Det finns inget dedikerat fält i Adobe Analytics-tillägget som kan använda den här variabeln. Använd den anpassade kodredigeraren enligt AppMeasurement-syntax.
 
 ## s.abort in AppMeasurement and the Analytics extension custom code editor
 

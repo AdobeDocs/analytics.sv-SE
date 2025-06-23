@@ -1,10 +1,10 @@
 ---
 title: linkTrackEvents
 description: Bestäm vilka händelser som ska ingå i förfrågningar om länkspårningsbilder.
-feature: Variables
+feature: Appmeasurement Implementation
 exl-id: 53c9e122-425c-4ec3-8a32-96e4d112f348
 role: Admin, Developer
-source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
+source-git-commit: 665bd68d7ebc08f0da02d93977ee0b583e1a28e6
 workflow-type: tm+mt
 source-wordcount: '313'
 ht-degree: 0%
@@ -17,9 +17,9 @@ Vissa implementeringar vill inte inkludera alla variabler i alla bildbegäranden
 
 Den här variabeln används inte för sidvisningsanrop ([`t()`](../functions/t-method.md)-metod).
 
-## Avgöra vilka analyshändelser som ska ingå i en XDM-händelse med Web SDK
+## Ta reda på vilka Analytics-händelser som ska inkluderas i en XDM-händelse med hjälp av Web SDK
 
-Web SDK utesluter inte vissa fält för länkspårningsanrop. Du kan dock använda återanropet `onBeforeEventSend` för att rensa eller ange önskade fält innan data skickas till Adobe. Mer information finns i [Ändra händelser globalt](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/tracking-events.html?lang=sv-SE#modifying-events-globally) i Web SDK-dokumentationen.
+SDK-webben utesluter inte vissa fält för länkspårningsanrop. Du kan dock använda återanropet `onBeforeEventSend` för att rensa eller ange önskade fält innan data skickas till Adobe. Mer information finns i [Ändra händelser globalt](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/tracking-events.html#modifying-events-globally) i Web SDK-dokumentationen.
 
 ## Händelser i länkspårningsanrop med Adobe Analytics-tillägget
 
@@ -29,7 +29,7 @@ Adobe Experience Platform inkluderar automatiskt definierade händelser i länks
 >
 >Om du anger händelser i den anpassade kodredigeraren för Analytics-tillägget måste du även inkludera händelsen i `linkTrackEvents` med anpassad kod.
 
-## s.linkTrackEvents i AppMeasurementet och den anpassade kodredigeraren i Analytics-tillägget
+## s.linkTrackEvents i AppMeasurement och den anpassade kodredigeraren för Analytics-tillägget
 
 Variabeln `s.linkTrackEvents` är en sträng som innehåller en kommaavgränsad lista med händelser som du vill ta med i förfrågningar om länkspårningsbilder (`tl()` metod). Följande tre villkor måste vara uppfyllda för att du ska kunna ta med mätvärden i länkspårningsträffar:
 
@@ -49,7 +49,7 @@ Standardvärdet för variabeln är en tom sträng. Om den här variabeln inte ä
 
 ## Exempel
 
-Följande funktion för länkspårning innehåller bara `event1` (inte `event2`) i bildbegäran som skickas till Adobe:
+Följande länkspårningsfunktion innehåller bara `event1` (inte `event2`) i bildbegäran som skickas till Adobe:
 
 ```js
 s.events = "event1,event2";

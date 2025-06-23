@@ -2,10 +2,10 @@
 description: Skapa anpassade datumintervall i Analysis Workspace och spara dem som tidskomponenter.
 keywords: Analysis Workspace
 title: Skapa anpassade datumintervall
-feature: Calendar
+feature: Date Ranges
 role: User, Admin
 exl-id: 586bb120-3f20-452c-9867-0b93d2e794bc
-source-git-commit: 1ec261929c1a1b62b1aeb8f01189fe5f2368fa14
+source-git-commit: 1281bdc569c9ebc5d8daa151b19dc21710633eab
 workflow-type: tm+mt
 source-wordcount: '429'
 ht-degree: 0%

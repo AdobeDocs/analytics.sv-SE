@@ -2,10 +2,10 @@
 description: Använd fallexempel för kohortanalys.
 keywords: Analysis Workspace
 title: Användningsexempel för kohortanalyser
-feature: Cohort Analysis
+feature: Visualizations
 role: User, Admin
 exl-id: fc7e7bad-ab57-4bb8-a448-60b9397ef5af
-source-git-commit: 10ae8213b8745439ab5968853f655a1176b8c38a
+source-git-commit: 1281bdc569c9ebc5d8daa151b19dc21710633eab
 workflow-type: tm+mt
 source-wordcount: '927'
 ht-degree: 0%
@@ -32,7 +32,7 @@ Besökarna räknas inte som *`engaged`* under efterföljande månader såvida de
 
 ## Användningsexempel för prenumeration {#section_FDECB16766CF415BB84AE46BA491FB5F}
 
-Du kan arbeta på Adobe.com och erbjuda en kostnadsfri prenumeration på Creative Cloud. Målet är att man ska uppgradera från den kostnadsfria versionen till den 30-dagars testversionen eller, i slutändan, den betalda versionen.
+Du arbetar på Adobe.com och erbjuder en kostnadsfri prenumeration på Creative Cloud. Målet är att man ska uppgradera från den kostnadsfria versionen till den 30-dagars testversionen eller, i slutändan, den betalda versionen.
 
 **Kornighet**: Månadsvis
 

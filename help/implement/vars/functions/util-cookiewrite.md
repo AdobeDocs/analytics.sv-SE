@@ -1,10 +1,10 @@
 ---
 title: Util.cookieWrite
 description: Skriver ett värde för en cookie.
-feature: Variables
+feature: Appmeasurement Implementation
 exl-id: 079dbe50-5568-467b-a67c-f44481a4a20b
 role: Admin, Developer
-source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
+source-git-commit: 665bd68d7ebc08f0da02d93977ee0b583e1a28e6
 workflow-type: tm+mt
 source-wordcount: '131'
 ht-degree: 0%
@@ -15,11 +15,11 @@ ht-degree: 0%
 
 Cookies kan lagra och hämta information över sidor på samma domän. Använd metoden `Util.cookieWrite()` för att ange ett värde för en cookie. Du kan använda metoden [`Util.cookieRead()`](util-cookieread.md) för att hämta värden som angetts med `Util.cookieWrite()`.
 
-## Ange cookies med Adobe Analytics-tillägget och Web SDK-tillägget
+## Ange cookies med Adobe Analytics och Web SDK-tillägget
 
 Adobe Experience Platform Data Collection ger inte möjlighet att ange cookies i gränssnittet.
 
-## s.Util.cookieWrite() i AppMeasurementet och den anpassade kodredigeraren för Analytics-tillägget
+## s.Util.cookieWrite() i AppMeasurement och den anpassade kodredigeraren för Analytics-tillägget
 
 Anropa metoden `s.Util.cookieWrite()` för att ange en cookie till önskat värde.
 

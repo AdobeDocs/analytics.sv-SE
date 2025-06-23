@@ -1,26 +1,26 @@
 ---
 title: eVar (variabeln Merchandising)
 description: Egna variabler som knyts till enskilda produkter.
-feature: Variables
+feature: Appmeasurement Implementation
 exl-id: 26e0c4cd-3831-4572-afe2-6cda46704ff3
 mini-toc-levels: 3
 role: Admin, Developer
-source-git-commit: 12347957a7a51dc1f8dfb46d489b59a450c2745a
+source-git-commit: 665bd68d7ebc08f0da02d93977ee0b583e1a28e6
 workflow-type: tm+mt
 source-wordcount: '574'
 ht-degree: 0%
 
 ---
 
-# eVar (varuexponering)
+# eVar (Merchandising)
 
 *Den här hjälpsidan beskriver hur du implementerar eVars för varuexponering. Mer information om hur marknadsföring av eVars fungerar som en dimension finns i [eVars (marknadsföringsdimension)](/help/components/dimensions/evar-merchandising.md) i användarhandboken för komponenter.*
 
-En detaljerad diskussion om hur eVars marknadsförs finns i [Merchandising eVars and product finding methods](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/conversion-variables/merchandising-evars.html?lang=sv-SE).
+En detaljerad diskussion om hur eVars marknadsförs finns i [Merchandising eVars and product finding methods](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/conversion-variables/merchandising-evars.html).
 
 ## Konfigurera eVars i inställningarna för rapportsviten
 
-Innan du använder eVars i implementeringen måste du konfigurera eVarna till önskad syntax i rapportsvitens inställningar. Se [Konverteringsvariabler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/conversion-var-admin.md) i administrationshandboken.
+Innan du använder eVars i implementeringen måste du konfigurera eVar till önskad syntax i rapportsvitens inställningar. Se [Konverteringsvariabler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/conversion-var-admin.md) i administrationshandboken.
 
 >[!WARNING]
 >
@@ -41,7 +41,7 @@ s.products = "Example category;Example product;1;5.99;event1=1;eVar1=Turtles";
 s.products = "Birds;Scarlet Macaw;1;4200;;eVar1=talking bird,Birds;Turtle dove;2;550;;eVar1=love birds";
 ```
 
-Värdet för `eVar1` har tilldelats produkten. Alla efterföljande lyckade händelser som berör den här produkten krediteras eVarna.
+Värdet för `eVar1` har tilldelats produkten. Alla efterföljande lyckade händelser som berör den här produkten krediteras eVar-värdet.
 
 ### Produktsyntax med Web SDK
 
@@ -87,13 +87,13 @@ I följande exempel visas en enskild [product](products.md) som använder flera 
 
 Ovanstående exempelobjekt skickas till Adobe Analytics som `";Bahama Shirt;3;12.99;event4|event10=2:abcd;eVar10=green|eVar33=large"`.
 
-Om du använder [**dataobjektet**](/help/implement/aep-edge/data-var-mapping.md) använder eVar-marknadsföring `data.__adobe.analytics.eVar1` - `data.__adobe.analytics.eVar250` följande AppMeasurementen syntax.
+Om du använder [**dataobjektet**](/help/implement/aep-edge/data-var-mapping.md) använder eVar-marknadsföring `data.__adobe.analytics.eVar1` - `data.__adobe.analytics.eVar250` efter AppMeasurement-syntax.
 
 ## Implementera med konverteringsvariabelsyntax
 
 Konverteringsvariabelsyntax används när eVar-värdet inte är tillgängligt för att anges i variabeln `products`. Det här scenariot innebär vanligtvis att sidan inte har något sammanhang för försäljningskanalen eller sökmetoden. I dessa fall ställer du in variabeln för försäljning innan du kommer till produktsidan, och värdet kvarstår tills bindningshändelsen inträffar.
 
-När bindningshändelsen som valts under konfigurationen inträffar, kopplas eVarnas beständiga värde till produkten. Om till exempel `prodView` anges som bindningshändelse är marknadsföringskategorin bunden till den aktuella produktlistan endast när händelsen inträffar. Endast efterföljande bindningshändelser kan uppdatera en eVar som redan har tilldelats en produkt.
+När bindningshändelsen som väljs under konfigurationen inträffar, kopplas det beständiga värdet för eVar till produkten. Om till exempel `prodView` anges som bindningshändelse är marknadsföringskategorin bunden till den aktuella produktlistan endast när händelsen inträffar. Endast efterföljande bindningshändelser kan uppdatera en eVar som redan har tilldelats en produkt.
 
 ```js
 // Place on the same or previous page before the binding event:
@@ -106,14 +106,14 @@ s.products = ";Canary";
 
 Värdet `"Aviary"` för `eVar1` tilldelas produkten `"Canary"`. Alla efterföljande lyckade händelser som berör den här produkten krediteras `"Canary"`. Dessutom är det aktuella värdet av variabeln merchandising knutet till alla efterföljande produkter tills något av följande villkor uppfylls:
 
-* EVarna förfaller (baserat på inställningen &quot;Förfaller efter&quot;)
-* Försäljningsvärdet skrivs över med ett nytt eVar.
+* EVar förfaller (baserat på inställningen &quot;Förfaller efter&quot;)
+* Försäljningen av eVar har skrivits över med ett nytt värde.
 
 ### Konvertera variabelsyntax med Web SDK
 
 Om du använder [**XDM-objektet**](/help/implement/aep-edge/xdm-var-mapping.md) fungerar syntaxen på samma sätt som andra [eVars](evar.md)- och [händelser](events/events-overview.md) implementeras. XDM-speglingen av exemplet ovan skulle se ut så här:
 
-Ange eVarna för samma eller föregående händelseanrop:
+Ställ in eVar på samma eller föregående event call:
 
 ```json
 "_experience": {
@@ -144,7 +144,7 @@ Ange bindningshändelse och värden för produktsträngen:
 
 Om du använder [**dataobjektet**](/help/implement/aep-edge/data-var-mapping.md) ser dataobjekten som motsvarar exemplet ovan ut så här:
 
-Ange eVarna för samma eller föregående händelseanrop:
+Ställ in eVar på samma eller föregående event call:
 
 ```json
 "data": {

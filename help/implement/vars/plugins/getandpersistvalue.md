@@ -1,10 +1,10 @@
 ---
 title: getAndPersistValue
 description: Lagra ett värde som kan hämtas senare när som helst.
-feature: Variables
+feature: Appmeasurement Implementation
 exl-id: b562f9ad-3844-4535-b729-bd3f63f6f0ae
 role: Admin, Developer
-source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
+source-git-commit: 665bd68d7ebc08f0da02d93977ee0b583e1a28e6
 workflow-type: tm+mt
 source-wordcount: '650'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 {{plug-in}}
 
-Med plugin-programmet `getAndPersistValue` kan du lagra ett värde i en cookie som kan hämtas senare under ett besök. Den har en liknande roll som funktionen [!UICONTROL Storage duration] i Adobe Analytics-tillägget i Adobe Experience Platform Data Collection. Adobe rekommenderar att du använder det här plugin-programmet om du automatiskt vill behålla en Analytics-variabel på samma värde i efterföljande träffar efter att variabeln har angetts. Det här plugin-programmet är inte nödvändigt om funktionen [!UICONTROL Storage duration] i Analytics-tillägget är tillräcklig. Du behöver inte heller använda denna plugin om du inte behöver ställa in och behålla variabler till samma värde i efterföljande träffar. Den inbyggda eVars-beständigheten kräver inte att denna plugin används eftersom eVars finns kvar på serversidan vid Adobe.
+Med plugin-programmet `getAndPersistValue` kan du lagra ett värde i en cookie som kan hämtas senare under ett besök. Den har en liknande roll som funktionen [!UICONTROL Storage duration] i Adobe Analytics-tillägget i Adobe Experience Platform Data Collection. Adobe rekommenderar att du använder denna plugin om du automatiskt vill behålla en Analytics-variabel på samma värde i efterföljande träffar efter att variabeln har angetts. Det här plugin-programmet är inte nödvändigt om funktionen [!UICONTROL Storage duration] i Analytics-tillägget är tillräcklig. Du behöver inte heller använda denna plugin om du inte behöver ställa in och behålla variabler till samma värde i efterföljande träffar. Den inbyggda eVars-beständigheten kräver inte att denna plugin används eftersom eVars finns kvar på serversidan av Adobe.
 
 ## Installera plugin-programmet med Web SDK-tillägget
 
@@ -63,9 +63,9 @@ Om du inte vill använda tillägget för Common Analytics-plugin-program kan du 
 1. Öppna den anpassade kodredigeraren och klistra in den plugin-kod som finns nedan i redigeringsfönstret.
 1. Spara och publicera ändringarna i Analytics-tillägget.
 
-## Installera plugin-programmet med AppMeasurementet
+## Installera plugin-programmet med AppMeasurement
 
-Kopiera och klistra in följande AppMeasurement var som helst i analysfilen efter att Analytics-spårningsobjektet har initierats (med [`s_gi`](../functions/s-gi.md)). Genom att bevara kommentarer och versionsnummer i koden i implementeringen kan Adobe felsöka eventuella problem.
+Kopiera och klistra in följande kod var som helst i AppMeasurement-filen efter att Analytics-spårningsobjektet har initierats (med [`s_gi`](../functions/s-gi.md)). Genom att bevara kommentarer och versionsnummer i koden i implementeringen kan Adobe felsöka eventuella problem.
 
 ```js
 /******************************************* BEGIN CODE TO DEPLOY *******************************************/

@@ -1,10 +1,10 @@
 ---
 title: Dynamiska variabler
 description: Kopiera variabler utan att öka längden på bildbegäran.
-feature: Variables
+feature: Appmeasurement Implementation
 exl-id: 41aab44d-01fd-45fe-892d-637d69488d98
 role: Admin, Developer
-source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
+source-git-commit: 665bd68d7ebc08f0da02d93977ee0b583e1a28e6
 workflow-type: tm+mt
 source-wordcount: '411'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Med dynamiska variabler kan du kopiera värden från en variabel till en annan utan att öka längden på bildbegäran. De är användbara när du hämtar samma data i flera variabler.
 
-I tidigare versioner av Analytics var längden på bildförfrågningen viktig för att förhindra trunkerade data. Förbättringar av AppMeasurementet tillåter mycket längre frågesträngar för bildbegäran, så dynamiska variabler behövs vanligtvis inte.
+I tidigare versioner av Analytics var längden på bildförfrågningen viktig för att förhindra trunkerade data. Förbättringar av AppMeasurement tillåter mycket längre frågesträngar för bildbegäranden, så dynamiska variabler behövs vanligtvis inte.
 
 Dynamiska variabler har stöd för frågesträngsparametrar eller HTTP-rubriker i en bildbegäran. I [frågeparametrar för datainsamling](../../validate/query-parameters.md) finns en fullständig lista över tillgängliga parametrar som ska refereras. Se [Standardfält för begäran](https://en.wikipedia.org/wiki/List_of_HTTP_header_fields#Request_fields) på Wikipedia för en fullständig lista över tillgängliga fält för HTTP-begäran som ska refereras.
 
@@ -37,7 +37,7 @@ Använd datastream-mappning för att skicka data till flera Analytics-variabler 
 
 ## Dynamiska variabler med Adobe Analytics-tillägget
 
-Du kan använda dynamiska variabler i alla dimensionsfält som accepterar en sträng. Objekt i Dimensionen anges vanligtvis när Analytics-tillägget (globala variabler) eller enligt regler konfigureras.
+Du kan använda dynamiska variabler i alla dimensionsfält som accepterar en sträng. Dimension-objekt anges vanligtvis när Analytics-tillägget (globala variabler) eller under regler konfigureras.
 
 1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med dina inloggningsuppgifter för AdobeID.
 2. Klicka på den önskade taggegenskapen.
@@ -48,7 +48,7 @@ Du kan använda dynamiska variabler i alla dimensionsfält som accepterar en str
 
 Placera det dynamiska variabelprefixet i textfältet följt av frågesträngsparametern eller HTTP-huvudet som du vill referera till. Som standard är det dynamiska variabelprefixet `D=`.
 
-## Dynamiska variabler i AppMeasurementet och den anpassade kodredigeraren för Analytics-tillägget
+## Dynamiska variabler i AppMeasurement och den anpassade kodredigeraren för Analytics-tillägget
 
 Dynamiska variabler är textsträngar som tilldelas andra variabler. Standardprefixet för dynamisk variabel är `D=`. Dynamiska variabler är versalkänsliga.
 
@@ -66,4 +66,4 @@ s.eVar1 = "D=g";
 
 >[!NOTE]
 >
->Dynamiska variabler visas som strängar vid felsökning av implementeringen. Värdena kopieras på serversidan av datainsamlingsservrar från Adobe.
+>Dynamiska variabler visas som strängar vid felsökning av implementeringen. Värdena kopieras på serversidan av Adobe datainsamlingsservrar.

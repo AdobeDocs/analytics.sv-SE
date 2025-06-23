@@ -1,10 +1,10 @@
 ---
 title: getVisitDuration
 description: Spåra hur mycket tid en besökare har varit på webbplatsen hittills.
-feature: Variables
+feature: Appmeasurement Implementation
 exl-id: 5299caa8-1e47-40b0-a8f4-422590f33ee4
 role: Admin, Developer
-source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
+source-git-commit: 665bd68d7ebc08f0da02d93977ee0b583e1a28e6
 workflow-type: tm+mt
 source-wordcount: '523'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 {{plug-in}}
 
-Plugin-programmet `getVisitDuration` håller reda på hur lång tid i minuter som besökaren har varit på webbplatsen fram till den tidpunkten. Adobe rekommenderar att du använder denna plugin om du vill spåra den kumulativa tiden på webbplatsen fram till den tidpunkten eller för att spåra den tid det tar att utföra en aktivitet. Det här plugin-programmet spårar inte tiden mellan händelser. Om du vill ha den här funktionen använder du plugin-programmet [`getTimeBetweenEvents`](gettimebetweenevents.md).
+Plugin-programmet `getVisitDuration` håller reda på hur lång tid i minuter som besökaren har varit på webbplatsen fram till den tidpunkten. Adobe rekommenderar att du använder det här plugin-programmet om du vill spåra den kumulativa tiden på webbplatsen fram till den tidpunkten eller för att spåra den tid det tar att utföra en aktivitet. Det här plugin-programmet spårar inte tiden mellan händelser. Om du vill ha den här funktionen använder du plugin-programmet [`getTimeBetweenEvents`](gettimebetweenevents.md).
 
 ## Installera plugin-programmet med Web SDK-tillägget
 
@@ -62,9 +62,9 @@ Om du inte vill använda tillägget för Common Analytics-plugin-program kan du 
 1. Öppna den anpassade kodredigeraren och klistra in den plugin-kod som finns nedan i redigeringsfönstret.
 1. Spara och publicera ändringarna i Analytics-tillägget.
 
-## Installera plugin-programmet med AppMeasurementet
+## Installera plugin-programmet med AppMeasurement
 
-Kopiera och klistra in följande AppMeasurement var som helst i analysfilen efter att Analytics-spårningsobjektet har initierats (med [`s_gi`](../functions/s-gi.md)). Genom att bevara kommentarer och versionsnummer i koden i implementeringen kan Adobe felsöka eventuella problem.
+Kopiera och klistra in följande kod var som helst i AppMeasurement-filen efter att Analytics-spårningsobjektet har initierats (med [`s_gi`](../functions/s-gi.md)). Genom att bevara kommentarer och versionsnummer i koden i implementeringen kan Adobe felsöka eventuella problem.
 
 ```js
 /******************************************* BEGIN CODE TO DEPLOY *******************************************/

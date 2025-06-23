@@ -1,10 +1,10 @@
 ---
 title: pageType
 description: Kontrollera om den aktuella sidan är ett 404-fel.
-feature: Variables
+feature: Appmeasurement Implementation
 exl-id: e61ef82d-b583-4230-b904-5ea3584910be
 role: Admin, Developer
-source-git-commit: 5ef92db2f5edb5fded497dddedd56abd49d8a019
+source-git-commit: 665bd68d7ebc08f0da02d93977ee0b583e1a28e6
 workflow-type: tm+mt
 source-wordcount: '201'
 ht-degree: 0%
@@ -19,7 +19,7 @@ Variabeln `pageType` är en flagga som används för att ange felsidor på din p
 >
 >Ange inte den här variabeln på icke-felsidor.
 
-## Sidtyp med Web SDK
+## Page Type using the Web SDK
 
 Kanalen mappas till följande variabler:
 
@@ -28,9 +28,9 @@ Kanalen mappas till följande variabler:
 
 ## Sidtyp med Adobe Analytics-tillägg
 
-Det finns inget dedikerat fält i Adobe Analytics-tillägget som kan använda den här variabeln. Använd den anpassade kodredigeraren enligt AppMeasurementen syntax.
+Det finns inget dedikerat fält i Adobe Analytics-tillägget som kan använda den här variabeln. Använd den anpassade kodredigeraren enligt AppMeasurement-syntax.
 
-## s.pageType i AppMeasurementet och den anpassade kodredigeraren för Analytics-tillägget
+## s.pageType i AppMeasurement och den anpassade kodredigeraren för Analytics-tillägget
 
 Variabeln `s.pageType` är en sträng där värdet `errorPage` är dess enda giltiga värde. Ange den här variabeln till det här värdet på alla felsidor på webbplatsen, till exempel på 404 sidor.
 

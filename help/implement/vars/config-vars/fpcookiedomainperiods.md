@@ -1,10 +1,10 @@
 ---
 title: fpcookieDomainPeriods
-description: Hjälp AppMeasurementet att förstå vilken domän cookies ska lagras i om domänen har en punkt i suffixet.
-feature: Variables
+description: Hjälp AppMeasurement att förstå vilken domän cookies ska lagras i om din domän har en punkt i suffixet.
+feature: Appmeasurement Implementation
 exl-id: e994a188-1dab-4bf0-912b-cd2f6a1032e0
 role: Admin, Developer
-source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
+source-git-commit: 665bd68d7ebc08f0da02d93977ee0b583e1a28e6
 workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 0%
@@ -13,18 +13,18 @@ ht-degree: 0%
 
 # fpCookieDomainPeriods
 
-Variabeln `fpCookieDomainPeriods` hjälper AppMeasurementet att avgöra var Analytics-cookies anges genom att anropa att domänsuffixet har en extra period. Den här variabeln gör att AppMeasurementet kan ta emot den extra perioden i domänsuffixet och ange cookies på rätt plats. Det ärver värdet för [`cookieDomainPeriods`](cookiedomainperiods.md), men det är fortfarande en bra metod att ange om du använder en cookie-implementering från en annan leverantör.
+Variabeln `fpCookieDomainPeriods` hjälper AppMeasurement att avgöra var Analytics-cookies anges genom att anropa att domänsuffixet har en extra period. Med den här variabeln kan AppMeasurement ta emot den extra perioden i domänsuffixet och ange cookies på rätt plats. Det ärver värdet för [`cookieDomainPeriods`](cookiedomainperiods.md), men det är fortfarande en bra metod att ange om du använder en cookie-implementering från en annan leverantör.
 
 * För domäner som `example.com` eller `www.example.com` behöver variabeln inte anges. Om det behövs kan du ange variabeln till `"2"`.
 * För domäner som `example.co.uk` eller `www.example.co.jp` anger du den här variabeln till `"3"`.
 
 >[!IMPORTANT]
 >
->Ta inte underdomäner med i beräkningen för variabeln. Ange till exempel inte `fpCookieDomainPeriods` för exempel-URL:en `store.toys.example.com`. AppMeasurementet känner som standard igen att cookies ska lagras på `example.com`, även på URL:er med många underdomäner.
+>Ta inte underdomäner med i beräkningen för variabeln. Ange till exempel inte `fpCookieDomainPeriods` för exempel-URL:en `store.toys.example.com`. AppMeasurement identifierar som standard att cookies ska lagras på `example.com`, även på URL:er med många underdomäner.
 
-## Första parts domänperioder med Web SDK
+## Första parts domänperioder som använder Web SDK
 
-Web SDK kan identifiera rätt cookie-lagringsdomän utan den här variabeln.
+SDK kan identifiera rätt cookie-lagringsdomän utan den här variabeln.
 
 ## Första parts domänperioder som använder Adobe Analytics-tillägget
 
@@ -37,7 +37,7 @@ Första parts domänperioder är ett fält under dragspelet [!UICONTROL Cookies]
 
 Ange det här fältet som `3` endast för domäner som innehåller en punkt i suffixet. Annars kan fältet lämnas tomt.
 
-## s.fpCookieDomainPeriods i AppMeasurementet och den anpassade kodredigeraren för Analytics-tillägget
+## s.fpCookieDomainPeriods i AppMeasurement och den anpassade kodredigeraren för Analytics-tillägget
 
 Variabeln `fpCookieDomainPeriods` är en sträng som vanligtvis är inställd på `"3"`, endast i domäner som innehåller en punkt i suffixet. Dess standardvärde är `"2"`, som rymmer de flesta domäner.
 

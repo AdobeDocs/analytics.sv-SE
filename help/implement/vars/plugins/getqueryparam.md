@@ -1,10 +1,10 @@
 ---
 title: getQueryParam
 description: Extrahera värdet för en URL:s frågesträngsparameter.
-feature: Variables
+feature: Appmeasurement Implementation
 exl-id: d2d542d1-3a18-43d9-a50d-c06d8bd473b8
 role: Admin, Developer
-source-git-commit: 75ae77c1da1b578639609888e794e13d965ef669
+source-git-commit: 665bd68d7ebc08f0da02d93977ee0b583e1a28e6
 workflow-type: tm+mt
 source-wordcount: '737'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Med plugin-programmet `getQueryParam` kan du extrahera värdet för alla frågesträngsparametrar som finns i en URL. Det är användbart för att extrahera kampanjkoder, både interna och externa, från URL:er för landningssidor. Det är också värdefullt när du extraherar söktermer eller andra frågesträngsparametrar.
 
-Detta plugin-program innehåller robusta funktioner för att analysera komplexa URL:er, inklusive hashvärden och URL:er som innehåller flera frågesträngsparametrar. Om du bara behöver ha en enkel frågesträngsparameter rekommenderar Adobe att du använder URL-parameterfunktionerna med hjälp av Web SDK eller Adobe Analytics-tillägget eller metoden [`Util.getQueryParam()`](../functions/util-getqueryparam.md) som ingår i AppMeasurementet.
+Detta plugin-program innehåller robusta funktioner för att analysera komplexa URL:er, inklusive hashvärden och URL:er som innehåller flera frågesträngsparametrar. Om du bara behöver ha en enkel frågesträngsparameter rekommenderar Adobe att du använder URL-parameterfunktionerna med tillägget Web SDK eller Adobe Analytics eller metoden [`Util.getQueryParam()`](../functions/util-getqueryparam.md) som ingår i AppMeasurement.
 
 ## Installera plugin-programmet med Web SDK-tillägget
 
@@ -158,7 +158,7 @@ s.eVar2 = getQueryParam('ecid,cid,location,pos','|',s.eVar1);
 
 ### 2.5 (8 januari 2016)
 
-* Kompatibel med både H-kod och AppMeasurement (kräver `s.pt` med AppMeasurementet).
+* Kompatibel med både H-kod och AppMeasurement (kräver `s.pt` med AppMeasurement).
 
 ### 2,4
 

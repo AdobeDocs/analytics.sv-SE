@@ -1,10 +1,10 @@
 ---
 title: zip
 description: Fyll i dimensionen 'Postnummer' manuellt om inställningarna för rapportsviten tillåter det.
-feature: Variables
+feature: Appmeasurement Implementation
 exl-id: 1acf4bf7-3788-46bd-bcdb-9885c7b93b59
 role: Admin, Developer
-source-git-commit: 5ef92db2f5edb5fded497dddedd56abd49d8a019
+source-git-commit: 665bd68d7ebc08f0da02d93977ee0b583e1a28e6
 workflow-type: tm+mt
 source-wordcount: '252'
 ht-degree: 0%
@@ -39,7 +39,7 @@ Du kan ange postnummer antingen när du konfigurerar Analytics-tillägget (globa
 
 Du kan ställa in postkoden på valfritt strängvärde, inklusive dataelement.
 
-## s.zip i AppMeasurementet och den anpassade kodredigeraren för Analytics-tillägget
+## s.zip i AppMeasurement och den anpassade kodredigeraren för Analytics-tillägget
 
 Variabeln `s.zip` är en sträng som vanligtvis innehåller en ZIP-kod, men kan innehålla ett önskat värde som är upp till 50 byte långt.
 

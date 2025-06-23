@@ -1,10 +1,10 @@
 ---
 description: Beskriver förbättringar av vidarebefordran på serversidan som har gjorts av EU:s regler för cookie-kompatibilitet.
 title: GDPR/ePrivacy compliance och vidarebefordran på serversidan
-feature: Server-Side Forwarding
+feature: Report Suite Settings
 exl-id: 54e43a16-8f15-4ee8-9aa2-579af30be2c9
 role: Admin
-source-git-commit: def7d071de1765acf524a638a8f8d13ae69e1a1f
+source-git-commit: 665bd68d7ebc08f0da02d93977ee0b583e1a28e6
 workflow-type: tm+mt
 source-wordcount: '549'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 I det här avsnittet förklaras förbättringar av vidarebefordran på serversidan som har efterfrågats av [EU:s regler för cookie-kompatibilitet](https://wikis.ec.europa.eu/display/WEBGUIDE/04.+Cookies+and+similar+technologies), som trädde i kraft den 30 september 2017.
 
-Vidarebefordran på serversidan används för att dela data från Adobe Analytics till andra [!DNL Experience Cloud Solutions], till exempel Audience Manager, i realtid. När det här alternativet är aktiverat kan Analytics även skicka data till andra Experience Cloud-lösningar och dessa lösningar skicka data till Analytics under datainsamlingsprocessen.
+Vidarebefordran på serversidan används för att dela data från Adobe Analytics till andra [!DNL Experience Cloud Solutions], som Audience Manager, i realtid. När det här alternativet är aktiverat kan Analytics även skicka data till andra Experience Cloud-lösningar och dessa lösningar för att överföra data till Analytics under datainsamlingsprocessen.
 
 Tidigare hade vidarebefordran på serversidan inte något sätt att skilja mellan händelser/träffar för medgivande och förhandsmedgivande. Från och med den 1 november 2018 har du som personuppgiftsansvarig (Adobe Analytics-kund) möjlighet att begränsa förhandsgodkännande av data till Adobe Analytics och förhindra att de vidarebefordras till Adobe Audience Manager. Med en ny sammanhangsvariabel för implementering kan du flagga träffar där samtycke inte har tagits emot. När variabeln är inställd hindras dessa träffar från att skickas till Adobe Audience Manager tills samtycke har erhållits.
 

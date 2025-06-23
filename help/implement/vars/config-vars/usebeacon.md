@@ -1,10 +1,10 @@
 ---
 title: useBeacon
-description: useBeacon gör att du kan tvinga AppMeasurementet att använda webbläsarens sendBeacon-API
-feature: Variables
+description: Med useBeacon kan du tvinga AppMeasurement att använda webbläsarnas sendBeacon API
+feature: Appmeasurement Implementation
 exl-id: a3c4174a-711d-4a35-9f36-9b1049c7db54
 role: Admin, Developer
-source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
+source-git-commit: 665bd68d7ebc08f0da02d93977ee0b583e1a28e6
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 0%
@@ -13,15 +13,15 @@ ht-degree: 0%
 
 # useBeacon
 
-De flesta moderna webbläsare innehåller den inbyggda metoden `navigator.sendBeacon()`. Den skickar asynkront en liten mängd data via HTTP till en webbserver. AppMeasurementet kan använda metoden `navigator.sendBeacon()` om variabeln `useBeacon` är aktiverad. Det är användbart för att avsluta länkar och andra situationer där du vill skicka information innan sidan tas bort.
+De flesta moderna webbläsare innehåller den inbyggda metoden `navigator.sendBeacon()`. Den skickar asynkront en liten mängd data via HTTP till en webbserver. AppMeasurement kan använda metoden `navigator.sendBeacon()` om variabeln `useBeacon` är aktiverad. Det är användbart för att avsluta länkar och andra situationer där du vill skicka information innan sidan tas bort.
 
 Om `useBeacon` är aktiverat använder nästa träff som skickas till Adobe webbläsarens `navigator.sendBeacon()`-metod i stället för en standardbildbegäran för `GET`. Den här variabeln gäller för både [`s.t()`](../functions/t-method.md)- och [`s.tl()`](../functions/tl-method.md)-bildbegäranden. AppMeasurement 2.17.0 eller senare krävs.
 
 >[!TIP]
 >
->AppMeasurementet aktiverar automatiskt `useBeacon` för att avsluta länkbildsbegäranden.
+>AppMeasurement aktiverar automatiskt `useBeacon` för att avsluta länkbildsbegäranden.
 
-Variabeln `useBeacon` ignoreras när besökaren använder en webbläsare som inte stöder `navigator.sendBeacon()`. Om du vill använda den här variabeln måste du ha AppMeasurementet 2.16.0 eller senare.
+Variabeln `useBeacon` ignoreras när besökaren använder en webbläsare som inte stöder `navigator.sendBeacon()`. Om du vill använda den här variabeln måste du ha AppMeasurement 2.16.0 eller senare.
 
 ## Använda API:t sendBeacon med Web SDK-tillägget
 
@@ -47,15 +47,15 @@ alloy("sendEvent", {
 });
 ```
 
-Mer information finns i [Använda API:t sendBeacon ](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/tracking-events.html?lang=sv-SE#using-the-sendbeacon-api) i dokumentationen för Web SDK.
+Mer information finns i [Använda API:t sendBeacon ](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/tracking-events.html#using-the-sendbeacon-api) i dokumentationen för Web SDK.
 
 ## Använd Beacon med Adobe Analytics-tillägget
 
-Det finns inget dedikerat fält i Adobe Analytics-tillägget som kan använda den här variabeln. Använd den anpassade kodredigeraren enligt AppMeasurementen syntax.
+Det finns inget dedikerat fält i Adobe Analytics-tillägget som kan använda den här variabeln. Använd den anpassade kodredigeraren enligt AppMeasurement-syntax.
 
-## s.useBeacon i AppMeasurementet och den anpassade kodredigeraren för Analytics-tillägget
+## s.useBeacon i AppMeasurement och den anpassade kodredigeraren för Analytics-tillägget
 
-Variabeln `s.useBeacon` är en boolesk variabel som avgör om AppMeasurementet använder webbläsarens `navigator.sendBeacon()`-metod. Dess standardvärde är `false`. Ange variabeln till `true` innan du anropar en spårningsfunktion om du vill använda den asynkrona typen `navigator.sendBeacon()`.
+Variabeln `s.useBeacon` är en boolesk variabel som avgör om AppMeasurement använder webbläsarens `navigator.sendBeacon()`-metod. Dess standardvärde är `false`. Ange variabeln till `true` innan du anropar en spårningsfunktion om du vill använda den asynkrona typen `navigator.sendBeacon()`.
 
 ```js
 s.useBeacon = true;

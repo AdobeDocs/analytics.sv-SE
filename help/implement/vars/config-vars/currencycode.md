@@ -1,10 +1,10 @@
 ---
 title: Vad är variabeln currencyCode och hur använder jag den?
 description: För eCommerce-webbplatser anger den valuta som sidan handlar i.
-feature: Variables
+feature: Appmeasurement Implementation
 exl-id: 3332c366-c472-4778-96c8-ef0aa756cca8
 role: Admin, Developer
-source-git-commit: 12347957a7a51dc1f8dfb46d489b59a450c2745a
+source-git-commit: 665bd68d7ebc08f0da02d93977ee0b583e1a28e6
 workflow-type: tm+mt
 source-wordcount: '940'
 ht-degree: 0%
@@ -58,7 +58,7 @@ Valutakoden skickas till Adobe Experience Platform Mobile SDK:er via kontextdata
 
 Du kan antingen använda en förinställd valutakod eller en anpassad valutakod. Kontrollera att koden är giltig om du använder en anpassad valutakod.
 
-## s.currencyCode i AppMeasurementet och den anpassade kodredigeraren för Analytics-tillägget
+## s.currencyCode i AppMeasurement och den anpassade kodredigeraren för Analytics-tillägget
 
 Variabeln `s.currencyCode` är en sträng som innehåller en 3-bokstavskod som representerar valutan på sidan. Värdena är skiftlägeskänsliga.
 

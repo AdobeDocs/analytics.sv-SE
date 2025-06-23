@@ -1,10 +1,10 @@
 ---
 title: dynamicVariablePrefix
 description: Gör att du kan anpassa strängen som identifierar dynamiska variabler.
-feature: Variables
+feature: Appmeasurement Implementation
 exl-id: fe208723-0cf2-4899-be7a-8f23c6501c11
 role: Admin, Developer
-source-git-commit: 12347957a7a51dc1f8dfb46d489b59a450c2745a
+source-git-commit: 665bd68d7ebc08f0da02d93977ee0b583e1a28e6
 workflow-type: tm+mt
 source-wordcount: '266'
 ht-degree: 0%
@@ -19,7 +19,7 @@ Som standard använder dynamiska variabler prefixet `D=`. Med variabeln `dynamic
 
 ## Dynamiskt variabelprefix med Web SDK
 
-I Web SDK används inte dynamisk variabelformatering. I stället kan du använda Datastream-mappning för att fylla i flera målfält med ett enda Source-fält. Mer information finns i [Dynamiska variabler med Web SDK](../page-vars/dynamic-variables.md#dynamic-variables-using-the-web-sdk).
+SDK använder inte dynamisk variabelformatering. I stället kan du använda Datastream-mappning för att fylla i flera målfält med ett enda Source-fält. Mer information finns i [Dynamiska variabler med Web SDK](../page-vars/dynamic-variables.md#dynamic-variables-using-the-web-sdk).
 
 Om du skickar data direkt till Adobe Analytics utan att följa ett schema, används följande variabel:
 
@@ -36,9 +36,9 @@ Dynamiskt variabelprefix är ett fält under dragspelet [!UICONTROL Global Varia
 
 Det här fältet innehåller `D=` som standard. Du kan ändra värdet om du vill använda ett annat dynamiskt variabelprefix. Du kan använda vilket värde du vill, förutsatt att det matchar teckenkodningen på webbplatsen.
 
-## s.dynamicVariablePrefix i AppMeasurementet och den anpassade kodredigeraren för Analytics-tillägget
+## s.dynamicVariablePrefix i AppMeasurement och den anpassade kodredigeraren för Analytics-tillägget
 
-Variabeln `s.dynamicVariablePrefix` är en sträng som kan innehålla alla teckensekvenser. Om variabeln inte definieras används strängen `D=` som standard i AppMeasurementet.
+Variabeln `s.dynamicVariablePrefix` är en sträng som kan innehålla alla teckensekvenser. Om variabeln inte definieras används strängen `D=` som standard i AppMeasurement.
 
 ```js
 // An example that changes the dynamic variable prefix

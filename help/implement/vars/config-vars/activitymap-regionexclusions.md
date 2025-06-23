@@ -1,9 +1,10 @@
 ---
 title: ActivityMap.regionExclusions
-description: Filtrera Activity Map data efter region.
+description: Filtrera Activity Map-data per region.
 role: Admin, Developer
-feature: Variables
-source-git-commit: 05010d58ba2a3376473097e9d4543ee4415e83e1
+feature: Appmeasurement Implementation
+exl-id: 353282aa-860c-45dc-a6b0-8d9f1fa09f13
+source-git-commit: 665bd68d7ebc08f0da02d93977ee0b583e1a28e6
 workflow-type: tm+mt
 source-wordcount: '180'
 ht-degree: 0%
@@ -12,15 +13,15 @@ ht-degree: 0%
 
 # ActivityMap.regionExclusions
 
-Med variabeln `ActivityMap.regionExclusions` kan du selektivt filtrera eller exkludera Activity Map-data baserat på dimensionsobjekten som samlats in i dimensionen [Activity Map-region](/help/components/dimensions/activity-map-region.md).
+Med variabeln `ActivityMap.regionExclusions` kan du selektivt filtrera eller exkludera Activity Map-data baserat på dimensionsobjekten som samlats in i dimensionen för [ Activity Map-regionen ](/help/components/dimensions/activity-map-region.md).
 
 ## Regionundantag i Web SDK-tillägget
 
 När **[!UICONTROL Enable click data collection]** är aktiverat använder du kodblocket **[!UICONTROL Filter click properties]** för återanrop. I det här kodblocket kan du kontrollera värdet för `content.linkRegion` och antingen ändra värdet eller avbryta insamlingen av länkspårningsdata.
 
-## Regionundantag i JavaScript-biblioteket för Web SDK
+## Regionundantag i Web SDK JavaScript-biblioteket
 
-När [`clickCollectionEnabled`](https://experienceleague.adobe.com/sv/docs/experience-platform/web-sdk/commands/configure/clickcollectionenabled) är aktiverat använder du `filterClickDetails`-återanropet i `clickCollection`-objektet. I det här återanropet kan du kontrollera värdet för `linkRegion` och antingen ändra värdet eller avbryta insamlingen av länkspårningsdata.
+När [`clickCollectionEnabled`](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/clickcollectionenabled) är aktiverat använder du `filterClickDetails`-återanropet i `clickCollection`-objektet. I det här återanropet kan du kontrollera värdet för `linkRegion` och antingen ändra värdet eller avbryta insamlingen av länkspårningsdata.
 
 ```js
 alloy("configure", {
@@ -38,11 +39,11 @@ alloy("configure", {
 
 ## Regionundantag som använder Adobe Analytics-tillägget
 
-Det finns inget dedikerat fält i Adobe Analytics-tillägget som kan använda den här variabeln. Använd den anpassade kodredigeraren enligt AppMeasurementen syntax.
+Det finns inget dedikerat fält i Adobe Analytics-tillägget som kan använda den här variabeln. Använd den anpassade kodredigeraren enligt AppMeasurement-syntax.
 
-## s.ActivityMap.regionExclusions med AppMeasurementet
+## s.ActivityMap.regionExclusions med AppMeasurement
 
-Variabeln `s.ActivityMap.regionExclusions` är en sträng som innehåller kommaavgränsade fraser som ska uteslutas från spårning i Activity Map. Om någon av fraserna matchar det värde som samlats in i dimensionen [Activity Map region](/help/components/dimensions/activity-map-region.md) tas alla data från Activity Map bort från träffen.
+Variabeln `s.ActivityMap.regionExclusions` är en sträng som innehåller kommaavgränsade fraser som ska uteslutas från Activity Map-spårning. Om någon av fraserna matchar det värde som samlats in i dimensionen [Activity Map Region](/help/components/dimensions/activity-map-region.md) tas alla Activity Map-data bort från träffen.
 
 ```html
 <script>

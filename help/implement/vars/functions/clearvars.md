@@ -1,10 +1,10 @@
 ---
 title: clearVars
 description: Rensa värden från instansobjektet.
-feature: Variables
+feature: Appmeasurement Implementation
 exl-id: 8ecb2b2d-7b66-4232-b0ea-b8c6cdcc1515
 role: Admin, Developer
-source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
+source-git-commit: 665bd68d7ebc08f0da02d93977ee0b583e1a28e6
 workflow-type: tm+mt
 source-wordcount: '179'
 ht-degree: 0%
@@ -32,7 +32,7 @@ Den här metoden tar inga argument och returnerar inget värde. Dess enda syfte 
 
 ## Rensa variabler med Web SDK
 
-När du skickar data till Adobe med Web SDK rensas alla XDM-data automatiskt.
+När du skickar data till Adobe via Web SDK rensas alla XDM-data automatiskt.
 
 ## Rensa variabler med Adobe Analytics-tillägget
 
@@ -44,7 +44,7 @@ Ange åtgärden Rensa variabler när du konfigurerar en regel.
 4. Klicka på plustecknet under [!UICONTROL Actions]
 5. Ange Adobe Analytics i listrutan [!UICONTROL Extension] och [!UICONTROL Action Type] till [!UICONTROL Clear Variables].
 
-## s.clearVars() i AppMeasurementet och den anpassade kodredigeraren för Analytics-tillägget
+## s.clearVars() i AppMeasurement och den anpassade kodredigeraren för Analytics-tillägget
 
 Du kan anropa metoden `s.clearVars()` var som helst i implementeringen efter att du har initierat objektinstansen för Analytics.
 

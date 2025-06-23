@@ -1,10 +1,10 @@
 ---
 title: linkInternalFilters
 description: Använd variabeln linkInternalFilters om du vill ha hjälp med automatisk spårning av avslutningslänk.
-feature: Variables
+feature: Appmeasurement Implementation
 exl-id: eaa6e64a-ebd5-4e6b-913f-1a6c315579c8
 role: Admin, Developer
-source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
+source-git-commit: 665bd68d7ebc08f0da02d93977ee0b583e1a28e6
 workflow-type: tm+mt
 source-wordcount: '412'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # linkInternalFilters
 
-Med AppMeasurement kan du automatiskt spåra länkar som pekar utanför webbplatsen. Om [`trackExternalLinks`](trackexternallinks.md) (AppMeasurement) eller [`clickCollectionEnabled`](trackdownloadlinks.md) (Web SDK) är aktiverat skickas en bildbegäran till Adobe till höger när en besökare klickar på en länk för att lämna platsen. Variablerna [`linkExternalFilters`](linkexternalfilters.md) och `linkInternalFilters` avgör vilka länkar som betraktas som interna/externa.
+Med AppMeasurement kan man automatiskt spåra länkar som pekar utanför er webbplats. Om [`trackExternalLinks`](trackexternallinks.md) (AppMeasurement) eller [`clickCollectionEnabled`](trackdownloadlinks.md) (Web SDK) är aktiverat skickas en bildbegäran till Adobe direkt när en besökare klickar på en länk för att lämna din webbplats. Variablerna [`linkExternalFilters`](linkexternalfilters.md) och `linkInternalFilters` avgör vilka länkar som betraktas som interna/externa.
 
 Om den här variabeln innehåller ett värde fungerar automatisk spårning av avslutningslänk som blockeringslista. Om ett länkklick inte matchar några `linkInternalFilters`-värden betraktas det som en avslutslänk. Hela URL:en granskas mot den här variabeln. Om [`linkLeaveQueryString`](linkleavequerystring.md) är aktiverat undersöks även frågesträngen.
 
@@ -25,11 +25,11 @@ Aktivitetskartan använder den här variabeln för att avgöra vilka länkar som
 >
 >`linkInternalFilters` och [ interna URL-filter ](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/internal-url-filter-admin.md) är separata funktioner som fyller olika syften. Variabeln `linkInternalFilters` fungerar specifikt för att avsluta länkspårning. Interna URL-filter är en administratörsinställning som hjälper dig med trafikkällans dimensioner, som Referensdomän.
 
-## Avsluta länkar i Web SDK
+## Avsluta länkar i SDK för webben
 
-Länkar kvalificeras automatiskt som en avslutningslänk om länkmåldomänen skiljer sig från den aktuella `window.location.hostname`. Web SDK innehåller inga konfigurationsvariabler som kan ändra automatisk avslutningslänksidentifiering. Om du behöver anpassa domänerna som kvalificerar som en avslutningslänk kan du använda anpassad logik i `onBeforeEventSend`-återanropet.
+Länkar kvalificeras automatiskt som en avslutningslänk om länkmåldomänen skiljer sig från den aktuella `window.location.hostname`. SDK för webben innehåller inga konfigurationsvariabler som kan ändra automatisk avslutningslänksidentifiering. Om du behöver anpassa domänerna som kvalificerar som en avslutningslänk kan du använda anpassad logik i `onBeforeEventSend`-återanropet.
 
-Mer information finns i [Automatisk länkspårning](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/track-links.html?lang=sv-SE#automaticLinkTracking) i Web SDK-dokumentationen.
+Mer information finns i [Automatisk länkspårning](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/track-links.html#automaticLinkTracking) i dokumentationen för Web SDK.
 
 ## Utgående länkar - Spåra aldrig med Adobe Analytics-tillägget
 
@@ -42,7 +42,7 @@ Fältet Aldrig spårning är en kommaavgränsad lista med filter (vanligtvis dom
 
 Placera filter som du aldrig vill ska spåras som avslutningslänkar i det här fältet. Avgränsa flera domäner med kommatecken utan mellanslag.
 
-## s.linkInternalFilters i AppMeasurementet och den anpassade kodredigeraren för Analytics-tillägget
+## s.linkInternalFilters i AppMeasurement och den anpassade kodredigeraren för Analytics-tillägget
 
 Variabeln `s.linkInternalFilters` är en sträng som innehåller filter (till exempel domäner) som du anser vara interna för din plats. Separera flera filter med kommatecken utan mellanslag.
 

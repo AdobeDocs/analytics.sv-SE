@@ -1,11 +1,11 @@
 ---
-description: Vidarebefordran på serversidan är avsedd för kunder som vill dela data från Analytics till andra Experience Cloud-lösningar i realtid. När det här alternativet är aktiverat kan Analytics även skicka data till andra Experience Cloud-lösningar och dessa lösningar skicka data till Analytics under datainsamlingsprocessen.
+description: Vidarebefordran på serversidan är avsedd för kunder som vill dela data från Analytics till andra Experience Cloud-lösningar i realtid. När det här alternativet är aktiverat kan Analytics även skicka data till andra Experience Cloud-lösningar och dessa lösningar för att överföra data till Analytics under datainsamlingsprocessen.
 solution: Analytics
 title: Översikt över vidarebefordran på serversidan
-feature: Server-Side Forwarding
+feature: Report Suite Settings
 exl-id: e3cd72d2-9588-4770-a7c2-64b13a1e9519
 role: Admin
-source-git-commit: def7d071de1765acf524a638a8f8d13ae69e1a1f
+source-git-commit: 665bd68d7ebc08f0da02d93977ee0b583e1a28e6
 workflow-type: tm+mt
 source-wordcount: '795'
 ht-degree: 0%
@@ -14,13 +14,13 @@ ht-degree: 0%
 
 # Översikt över vidarebefordran på serversidan
 
-Vidarebefordran på serversidan är avsedd för kunder som vill dela data från Analytics till andra Experience Cloud-lösningar i realtid. När det här alternativet är aktiverat kan Analytics även skicka data till andra Experience Cloud-lösningar och dessa lösningar skicka data till Analytics under datainsamlingsprocessen.
+Vidarebefordran på serversidan är avsedd för kunder som vill dela data från Analytics till andra Experience Cloud-lösningar i realtid. När det här alternativet är aktiverat kan Analytics även skicka data till andra Experience Cloud-lösningar och dessa lösningar för att överföra data till Analytics under datainsamlingsprocessen.
 
 Vidarebefordran på serversidan förbättrar datainsamlingen eftersom den:
 
 * Minskar samtal från sidan. Med vidarebefordran på serversidan behöver [!DNL Audience Manager]-kunder inte längre använda DIL för datainsamling eftersom den vidarebefordras från Analytics. Att ta bort DIL innebär att ett `"/event"`-samtal tas bort. Färre samtal hjälper till att förbättra sidans laddningstid, vilket ger en bättre kundupplevelse på er webbplats.
-* Gör att du kan utnyttja datadelning mellan Experience Cloud.
-* Följer de bästa metoderna för implementering och driftsättning av kod i Audience Manager.
+* Gör att du kan dra nytta av datadelning mellan Experience Cloud lösningar.
+* Följer de bästa metoderna för implementering och driftsättning av Audience Manager-kod.
 
 >[!TIP]
 >
@@ -33,29 +33,29 @@ Gå igenom följande valideringssteg för att förstå var din organisation befi
 
 ## ![step1_icon.png image](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/c-server-side-forwarding/assets/step1_icon.png) Verifiera implementering av ECID-tjänst
 
-Kontrollera om tjänsten Experience Cloud ID (ECID) är implementerad genom att granska [Analytics tracking-begäran](https://experienceleague.adobe.com/docs/id-service/using/implementation/test-verify.html?lang=sv-SE).
+Kontrollera om tjänsten Experience Cloud ID (ECID) är implementerad genom att granska [Analysspårningsbegäran](https://experienceleague.adobe.com/docs/id-service/using/implementation/test-verify.html).
 
 Kontrollera att ett ECID-värde anges på fliken Begäran. Detta anger att identitetstjänsten implementeras på rätt sätt, vilket är en förutsättning för vidarebefordran på serversidan.
 
 * Om du ser ett ECID-värde fortsätter du till steg 2.
-* Om du inte ser något ECID-värde ska du [implementera identitetstjänsten](https://experienceleague.adobe.com/docs/id-service/using/implementation/implementation-guides.html?lang=sv-SE) innan du fortsätter till steg 2.
+* Om du inte ser något ECID-värde ska du [implementera identitetstjänsten](https://experienceleague.adobe.com/docs/id-service/using/implementation/implementation-guides.html) innan du fortsätter till steg 2.
 
 ## ![step2_icon.png image](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/c-server-side-forwarding/assets/step2_icon.png) Verifiera implementeringsversion för vidarebefordring på serversidan
 
 Kontrollera om du redan har en version av vidarebefordran på serversidan implementerad genom att [inspektera Analytics-spårningsbegäran](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/c-server-side-forwarding/ssf-verify.md).
 
-Kontrollera att svaret innehåller data från Audience Manager på fliken&quot;Svar&quot;. Om du ser:
+Kontrollera att svaret innehåller Audience Manager-data på fliken&quot;Svar&quot;. Om du ser:
 
-* Ett **JSON-svar från Audience Manager som innehåller objekt som &quot;postbacks&quot; eller &quot;dcs_region&quot;**: någon form av vidarebefordran på serversidan har redan aktiverats. Fortsätt till steg 3.
+* Ett **JSON-svar från Audience Manager som innehåller objekt som &quot;postbacks&quot; eller &quot;dcs_region&quot;**: någon form av vidarebefordran på serversidan är redan aktiverad. Fortsätt till steg 3.
 * **&quot;status&quot;:&quot;LYCKADES&quot;**: Du har implementerat Audience Management Module men har inte konfigurerat vidarebefordran på serversidan korrekt. Fortsätt till steg 3.
 * En **2 x 2-bild**: du har inte vidarebefordring på serversidan eller Audience Management Module implementerad. Så här korrigerar du det:
 
    * **Adobe Audience Manager-kunder med DIL**: koordinera följande två objekt i nära samverkan:
 
-      1. Ta bort DIL-koden och installera sidkoden [Audience Management Module](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/audience-management-module.html?lang=sv-SE).
+      1. Ta bort DIL-koden och installera sidkoden [Audience Management Module](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/audience-management-module.html).
       1. Aktivera vidarebefordran på serversidan i gränssnittet för Analytics Admin enligt beskrivningen i steg 3. Om du aktiverar den här inställningen innan du tar bort DIL-kod dupliceras data och ytterligare fakturerade serversamtal skapas till Audience Manager.
 
-   * **Nya Adobe Audience Manager-kunder** - installera sidkoden [Audience Management Module](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/audience-management-module.html?lang=sv-SE) och fortsätt till steg 3. Data skickas inte till Audience Manager förrän vidarebefordran på serversidan är aktiverat i steg 3.
+   * **Nya Adobe Audience Manager-kunder** - installera sidkoden [Audience Management Module](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/audience-management-module.html) och fortsätt till steg 3. Data skickas inte till Audience Manager förrän vidarebefordran på serversidan har aktiverats i steg 3.
 
 ## ![step3_icon.png image](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/c-server-side-forwarding/assets/step3_icon.png) Verifiera vidarebefordran på serversidan av rapportsviten
 
@@ -67,8 +67,8 @@ Gå till **Analytics** > **Admin** > **Report Suites** > (välj **report suites*
 
 * **Inaktiv** (Du kan inte göra ett val eller så finns inte menyn): du har inte de valda rapportsviterna mappade till ett organisations-ID. Kontakta kundtjänst för att kontrollera att rapportsviten är korrekt mappad.
 * **Inaktiverad**: Du har inte aktiverat vidarebefordran på serversidan. Läs innehållet på sidan och fortsätt sedan med att aktivera funktionen.
-* **Aktiverad**: Du har etablerats för vidarebefordran på serversidan. Du kan också konfigurera den här integreringen med Audience Analytics.
+* **Aktiverad**: Du har etablerats för vidarebefordran på serversidan. Du kan också konfigurera den här Audience Analytics-integreringen.
 
 >[!NOTE]
 >
->Data visas inte i andra Experience Cloud-lösningar, till exempel [Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/aam-home.html?lang=sv-SE) eller [Publiker](https://experienceleague.adobe.com/docs/core-services/interface/audiences/audience-library.html?lang=sv-SE), förrän alla tre stegen har slutförts. När inställningen är aktiverad tar det flera timmar innan den börjar gälla.
+>Data visas inte i andra Experience Cloud-lösningar, som [Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/aam-home.html) eller [Publiker](https://experienceleague.adobe.com/docs/core-services/interface/audiences/audience-library.html), förrän alla tre stegen är slutförda. När inställningen är aktiverad tar det flera timmar innan den börjar gälla.

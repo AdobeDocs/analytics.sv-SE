@@ -1,10 +1,10 @@
 ---
 title: getPercentPageViewed
 description: Hämta den procentandel av sidan som besökaren visade.
-feature: Variables
+feature: Appmeasurement Implementation
 exl-id: 7a842cf0-f8cb-45a9-910e-5793849bcfb8
 role: Admin, Developer
-source-git-commit: 75ae77c1da1b578639609888e794e13d965ef669
+source-git-commit: 665bd68d7ebc08f0da02d93977ee0b583e1a28e6
 workflow-type: tm+mt
 source-wordcount: '750'
 ht-degree: 0%
@@ -48,9 +48,9 @@ Om du inte vill använda tillägget för Common Analytics-plugin-program kan du 
 1. Öppna den anpassade kodredigeraren och klistra in den plugin-kod som finns nedan i redigeringsfönstret.
 1. Spara och publicera ändringarna i Analytics-tillägget.
 
-## Installera plugin-programmet med AppMeasurementet
+## Installera plugin-programmet med AppMeasurement
 
-Kopiera och klistra in följande AppMeasurement var som helst i analysfilen efter att Analytics-spårningsobjektet har initierats (med [`s_gi`](../functions/s-gi.md)). Genom att bevara kommentarer och versionsnummer i koden i implementeringen kan Adobe felsöka eventuella problem.
+Kopiera och klistra in följande kod var som helst i AppMeasurement-filen efter att Analytics-spårningsobjektet har initierats (med [`s_gi`](../functions/s-gi.md)). Genom att bevara kommentarer och versionsnummer i koden i implementeringen kan Adobe felsöka eventuella problem.
 
 ```js
 /******************************************* BEGIN CODE TO DEPLOY *******************************************/
@@ -63,8 +63,8 @@ function getPercentPageViewed(pid,ch){var e=pid,i=ch;if("-v"===e)return{plugin:"
 
 Funktionen `getPercentPageViewed` använder följande argument:
 
-* **`pid`** (valfritt, sträng): En variabel eller ett värde som är lika med den aktuella sidan. Standardvärdet är variabeln `pageName` i Analytics-AppMeasurementet ELLER den aktuella URL:en om variabeln pageName inte har angetts för AppMeasurementet.
-* **`ch`** (valfritt, booleskt): Ange det här till `false` (eller `0`) om du inte vill att plugin-programmet ska ta hänsyn till ändringar som har gjorts i sidstorleken efter den första inläsningen. Om det utelämnas blir det här argumentet som standard `true`. Adobe rekommenderar att detta argument utelämnas i de flesta fall.
+* **`pid`** (valfritt, sträng): En variabel eller ett värde som är lika med den aktuella sidan. Standardvärdet är Analytics AppMeasurement `pageName`-variabeln ELLER den aktuella URL:en om AppMeasurement pageName-variabeln inte har angetts.
+* **`ch`** (valfritt, booleskt): Ange det här till `false` (eller `0`) om du inte vill att plugin-programmet ska ta hänsyn till ändringar som har gjorts i sidstorleken efter den första inläsningen. Om det utelämnas blir det här argumentet som standard `true`. Adobe rekommenderar att du i de flesta fall utelämnar detta argument.
 
 Om du anropar den här funktionen returneras ingenting. I stället anges följande variabler:
 
@@ -129,7 +129,7 @@ if(_ppvPreviousPage)
 
 ### v3.01 (13 augusti 2018)
 
-* Ett problem har korrigerats för sidor som har flera AppMeasurement på en sida
+* Ett problem har korrigerats för sidor som har flera AppMeasurement-objekt på en sida
 
 ### v3.0 (13 april 2018)
 

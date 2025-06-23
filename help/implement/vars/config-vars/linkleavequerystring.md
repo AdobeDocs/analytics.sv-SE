@@ -1,10 +1,10 @@
 ---
 title: linkLeaveQueryString
 description: Tillåter lagring av frågesträngar i länkspårningsdimensioner.
-feature: Variables
+feature: Appmeasurement Implementation
 exl-id: 266f7d9c-803d-4dbe-95a1-282230012878
 role: Admin, Developer
-source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
+source-git-commit: 665bd68d7ebc08f0da02d93977ee0b583e1a28e6
 workflow-type: tm+mt
 source-wordcount: '316'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # linkLeaveQueryString
 
-AppMeasurementet raderar frågesträngar från URL:er för länkspårning som standard. Använd variabeln `linkLeaveQueryString` för att bevara frågesträngar i länkspårningsdimensioner.
+AppMeasurement raderar frågesträngar från URL:er för länkspårning som standard. Använd variabeln `linkLeaveQueryString` för att bevara frågesträngar i länkspårningsdimensioner.
 
 För vissa avslutslänkar och hämtningslänkar kan den viktiga delen av URL-adressen finnas i frågesträngen. En nedladdningslänk som `https://example.com/download.asp?filename=myfile.exe` innehåller till exempel viktig länkinformation i frågesträngen.
 
@@ -40,7 +40,7 @@ Frågesträngar tas inte bort från XDM-fältet `web.webInteraction.URL`. Om du 
 
 Markera den här rutan om du vill inkludera frågesträngar i dimensioner för länkspårning.
 
-## s.linkLeaveQueryString i AppMeasurementet och den anpassade kodredigeraren för Analytics-tillägget
+## s.linkLeaveQueryString i AppMeasurement och den anpassade kodredigeraren för Analytics-tillägget
 
 Variabeln `s.linkLeaveQueryString` är boolesk. Dess standardvärde är `false`.
 

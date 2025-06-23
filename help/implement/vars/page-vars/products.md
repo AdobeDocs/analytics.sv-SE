@@ -1,10 +1,10 @@
 ---
 title: produkter
 description: Skicka data runt vilka produkter som visas eller i kundvagnen.
-feature: Variables
+feature: Appmeasurement Implementation
 exl-id: f26e7c93-f0f1-470e-a7e5-0e310ec666c7
 role: Admin, Developer
-source-git-commit: 7c8ffe8f4ccf0577136e4d7ee96340224897d2a4
+source-git-commit: 665bd68d7ebc08f0da02d93977ee0b583e1a28e6
 workflow-type: tm+mt
 source-wordcount: '656'
 ht-degree: 0%
@@ -53,7 +53,7 @@ Om du använder [**XDM-objektet**](/help/implement/aep-edge/xdm-var-mapping.md) 
 }
 ```
 
-Om du använder [**dataobjektet**](/help/implement/aep-edge/data-var-mapping.md) använder variabeln products `data.__adobe.analytics.products` efter AppMeasurementen syntax. Om du anger det här fältet skrivs alla produkter som anges i XDM-objektet över och skickas inte till Adobe Analytics.
+Om du använder [**dataobjektet**](/help/implement/aep-edge/data-var-mapping.md) använder variabeln products `data.__adobe.analytics.products` efter AppMeasurement-syntax. Om du anger det här fältet skrivs alla produkter som anges i XDM-objektet över och skickas inte till Adobe Analytics.
 
 ```json
 {
@@ -76,7 +76,7 @@ Det finns inget dedikerat fält i Adobe Experience Platform Data Collection för
 3. Gå till fliken [!UICONTROL Extensions] och klicka sedan på [!UICONTROL Catalog] för att visa alla tillgängliga tillägg.
 4. Sök efter termen &quot;product&quot;, som visar flera tillgängliga tillägg som kan hjälpa dig att ange variabeln.
 
-Du kan använda något av dessa tillägg eller så kan du använda den anpassade kodredigeraren efter AppMeasurementen syntax nedan.
+Du kan använda något av dessa tillägg eller så kan du använda den anpassade kodredigeraren enligt AppMeasurement syntax nedan.
 
 ## s.products in AppMeasurement and the Analytics extension custom code editor
 
@@ -103,7 +103,7 @@ s.products = "Example category 1;Example product 1;1;3.50,Example category 2;Exa
 
 >[!WARNING]
 >
->Ta bort alla semikolon, kommatecken och rör från produktnamn, kategorier och försäljningsvärden för eVar. Om ett produktnamn innehåller kommatecken tolkar AppMeasurementet det som början av en ny produkt. Denna felaktiga tolkning leder till att resten av produktsträngen avbryts, vilket ger felaktiga data i dimensioner och rapporter.
+>Ta bort alla semikolon, komman och rör från produktnamn, kategorier och försäljning av eVar-värden. Om ett produktnamn innehåller kommatecken tolkar AppMeasurement det som början på en ny produkt. Denna felaktiga tolkning leder till att resten av produktsträngen avbryts, vilket ger felaktiga data i dimensioner och rapporter.
 
 ## Exempel
 

@@ -1,10 +1,10 @@
 ---
 title: händelser
 description: Ange variabeln events, som styr de flesta mätvärden på din webbplats.
-feature: Variables
+feature: Appmeasurement Implementation
 exl-id: 6ef99ee5-40c3-4ff2-a75d-c97f2e8ec1f8
 role: Admin, Developer
-source-git-commit: 3e72235ce1455177efeb21017f61af25d21bd500
+source-git-commit: 665bd68d7ebc08f0da02d93977ee0b583e1a28e6
 workflow-type: tm+mt
 source-wordcount: '833'
 ht-degree: 0%
@@ -17,7 +17,7 @@ Dimensioner och mätvärden är viktiga komponenter i rapporter. Variabeln `even
 
 Innan du implementerar händelser måste du skapa och konfigurera dem under [Slutförda händelser](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/c-success-events/success-event.md) i inställningarna för rapportsviten. Om du tänker använda anpassade händelser i länkspårningsträffar kontrollerar du att [`linkTrackVars`](../../config-vars/linktrackvars.md) och [`linkTrackEvents`](../../config-vars/linktrackevents.md) har angetts korrekt.
 
-## Händelser som använder Web SDK
+## Evenemang som använder Web SDK
 
 Om du använder [XDM-objektet](/help/implement/aep-edge/xdm-var-mapping.md) använder anpassade händelser följande XDM-fält:
 
@@ -38,7 +38,7 @@ Om du använder [XDM-objektet](/help/implement/aep-edge/xdm-var-mapping.md) anv�
 >
 >Om en händelse anges under `productListItems` (till exempel `productListItems._experience.analytics.event1.value`) och den händelsen ännu inte finns i det här fältet, läggs den händelsen automatiskt till i det här fältet.
 
-Om du använder [**dataobjektet**](/help/implement/aep-edge/data-var-mapping.md) använder alla händelser `data.__adobe.analytics.events` och följande AppMeasurement strängsyntax. Om du anger det här fältet skrivs alla händelser som anges i XDM-objektet över och skickas inte till Adobe Analytics.
+Om du använder [**dataobjektet**](/help/implement/aep-edge/data-var-mapping.md) använder alla händelser `data.__adobe.analytics.events` och följer AppMeasurement strängsyntax. Om du anger det här fältet skrivs alla händelser som anges i XDM-objektet över och skickas inte till Adobe Analytics.
 
 ## Händelser som använder Adobe Analytics-tillägget
 
@@ -58,17 +58,17 @@ Flera funktioner är tillgängliga:
 * Ett valfritt textfält för ett händelsevärde. Du kan inkludera valuta för valutakurshändelser eller ett heltal för händelser som inte är valutaväxlar om du vill öka den flera gånger. Om du t.ex. väljer `event1` under listrutan och inkluderar `10` i det här fältet ökas `event1` med 10 i rapporteringen.
 * En knapp för att lägga till en annan händelse. Du kan lägga till så många händelser som du vill för en enskild regel av olika skäl.
 
-## s.events i AppMeasurementet och den anpassade kodredigeraren för Analytics-tillägget
+## s.events i AppMeasurement och den anpassade kodredigeraren för Analytics-tillägget
 
 Variabeln `s.events` är en sträng som innehåller en kommaavgränsad lista med händelser som ska ingå i träffen. Variabeln tillåter upp till 64 000 byte, vilket ger så många händelser som en träff behöver. Giltiga värden är:
 
-* `event1` - `event1000`: Ange anpassade händelser hur du vill. Registrera hur du använder varje händelse i din organisations [lösningsdesigndokument](../../../prepare/solution-design.md). Antalet tillgängliga händelser beror på organisationens Analytics-kontrakt. De flesta organisationer som har kontrakt som inte är äldre har 1 000 anpassade händelser tillgängliga. Kontakta kontoteamet på Adobe om du inte är säker på hur många anpassade händelser som är tillgängliga för dig.
+* `event1` - `event1000`: Ange anpassade händelser hur du vill. Registrera hur du använder varje händelse i din organisations [lösningsdesigndokument](../../../prepare/solution-design.md). Antalet tillgängliga händelser beror på organisationens Analytics-kontrakt. De flesta organisationer som har kontrakt som inte är äldre har 1 000 anpassade händelser tillgängliga. Kontakta ditt Adobe-kontoteam om du inte är säker på hur många anpassade händelser som är tillgängliga för dig.
 * `purchase`: Ökar måttet [&#39;Orders&#39;](/help/components/metrics/orders.md) med 1 och tar värden som anges i variabeln `products` för att beräkna [&#39;Units&#39;](/help/components/metrics/units.md) och [&#39;Revenue&#39;](/help/components/metrics/revenue.md). Mer information finns i [köphändelse](event-purchase.md).
 * `prodView`: Ökar måttet för [&#39;Produktvyer&#39;](/help/components/metrics/product-views.md).
 * `scOpen`: Ökar måttet [&#39;Carts&#39;](/help/components/metrics/carts.md).
 * `scAdd`: Ökar måttet [&#39;Cart Additions&#39; ](/help/components/metrics/cart-additions.md).
 * `scRemove`: Ökar måttet [&#39;Cart Removals&#39;](/help/components/metrics/cart-removals.md).
-* `scView`: Ökar måttet [&#128279;](/help/components/metrics/cart-views.md) för  kundvagnsvyer.
+* `scView`: Ökar måttet ](/help/components/metrics/cart-views.md) för [ kundvagnsvyer.
 * `scCheckout`: Ökar måttet [&#39;Checkouts&#39;](/help/components/metrics/checkouts.md).
 
 >[!NOTE]

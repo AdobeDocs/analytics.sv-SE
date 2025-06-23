@@ -1,10 +1,10 @@
 ---
 title: Hash-kollisioner
 description: Beskriver vad en hash-kollision är och hur den kan visa sig.
-feature: Validation
+feature: Implementation Basics
 exl-id: 693d5c03-4afa-4890-be4f-7dc58a1df553
 role: Admin, Developer
-source-git-commit: 06f61fa7b39faacea89149650e378c8b8863ac4f
+source-git-commit: 29ab0cc535bd8f74b50428c11756bf8b446a23ab
 workflow-type: tm+mt
 source-wordcount: '453'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Hash-kollisioner
 
-Dimensioner i Adobe Analytics samlar in strängvärden. Ibland är de här strängarna hundratals tecken långa, medan andra gånger de är korta. För att förbättra prestandan används dessa strängvärden inte direkt i bearbetningen. I stället beräknas en hash för varje värde så att alla värden får en enhetlig storlek. Alla rapporter körs på dessa hash-kodade värden, vilket drastiskt ökar deras prestanda.
+I Adobe Analytics samlas strängvärden in. Ibland är de här strängarna hundratals tecken långa, medan andra gånger de är korta. För att förbättra prestandan används dessa strängvärden inte direkt i bearbetningen. I stället beräknas en hash för varje värde så att alla värden får en enhetlig storlek. Alla rapporter körs på dessa hash-kodade värden, vilket drastiskt ökar deras prestanda.
 
 För de flesta fält konverteras strängen först till gemener. Vid konvertering med gemener minskas antalet unika värden. Värden hashas månadsvis - för ett givet värde används det första värdet som visas varje månad. Från månad till månad finns det en liten möjlighet att två unika variabelvärden hash-kodas till samma värde. Konceptet kallas en *hash-kollision*.
 

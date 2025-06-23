@@ -1,10 +1,10 @@
 ---
 title: trackDownloadLinks
 description: Aktivera eller inaktivera automatisk länkspårning för nedladdningslänkar.
-feature: Variables
+feature: Appmeasurement Implementation
 exl-id: d92f722b-d605-40ad-bb55-ec71219a47e3
 role: Admin, Developer
-source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
+source-git-commit: 665bd68d7ebc08f0da02d93977ee0b583e1a28e6
 workflow-type: tm+mt
 source-wordcount: '296'
 ht-degree: 0%
@@ -15,9 +15,9 @@ ht-degree: 0%
 
 I Adobe kan du spåra hämtningslänkar utan att manuellt ange metoden [`tl()`](../functions/tl-method.md) för varje hämtningslänk. Aktivera den här variabeln om du vill använda automatisk länkspårning för hämtningslänkar.
 
-När alternativet är aktiverat jämförs alla klickade länk-URL:er med värden i [`linkDownloadFileTypes`](linkdownloadfiletypes.md). Om det finns en matchning aktiveras ett spårningsanrop för nedladdningslänk automatiskt.
+När den är aktiverad jämför AppMeasurement alla klickade länk-URL:er med värden i [`linkDownloadFileTypes`](linkdownloadfiletypes.md). Om det finns en matchning aktiveras ett spårningsanrop för nedladdningslänk automatiskt.
 
-## Aktivera eller inaktivera klicksamling med Web SDK-tillägget
+## Aktivera eller inaktivera klicksamlingen med Web SDK-tillägget
 
 Använd kryssrutan [!UICONTROL Enable click data collection] när du konfigurerar Web SDK. Den här kryssrutan hanterar både avslutnings- och nedladdningslänkar.
 
@@ -28,7 +28,7 @@ Använd kryssrutan [!UICONTROL Enable click data collection] när du konfigurera
 
 ## Aktivera eller inaktivera klicksamlingen manuellt för att implementera Web SDK
 
-Konfigurera SDK med [`clickCollectionEnabled`](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html?lang=sv-SE#clickCollectionEnabled). Fältet är ett booleskt värde som avgör om data som är associerade med länkklick samlas in automatiskt. Dess standardvärde är `true`. Ange värdet `false` om du vill inaktivera automatisk länkspårning. Den här inställningen hanterar automatisk länkspårning för både hämtnings- och avslutslänkar.
+Konfigurera SDK med [`clickCollectionEnabled`](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html#clickCollectionEnabled). Fältet är ett booleskt värde som avgör om data som är associerade med länkklick samlas in automatiskt. Dess standardvärde är `true`. Ange värdet `false` om du vill inaktivera automatisk länkspårning. Den här inställningen hanterar automatisk länkspårning för både hämtnings- och avslutslänkar.
 
 ```json
 alloy("configure", {
