@@ -68,7 +68,7 @@ Variabeln `s.events` är en sträng som innehåller en kommaavgränsad lista med
 * `scOpen`: Ökar måttet [&#39;Carts&#39;](/help/components/metrics/carts.md).
 * `scAdd`: Ökar måttet [&#39;Cart Additions&#39; ](/help/components/metrics/cart-additions.md).
 * `scRemove`: Ökar måttet [&#39;Cart Removals&#39;](/help/components/metrics/cart-removals.md).
-* `scView`: Ökar måttet ](/help/components/metrics/cart-views.md) för [ kundvagnsvyer.
+* `scView`: Ökar måttet [&#128279;](/help/components/metrics/cart-views.md) för  kundvagnsvyer.
 * `scCheckout`: Ökar måttet [&#39;Checkouts&#39;](/help/components/metrics/checkouts.md).
 
 >[!NOTE]
