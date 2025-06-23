@@ -27,7 +27,7 @@ Adobe erbjuder flera sätt att implementera Adobe Analytics. På varje sida finn
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Konfigurera variabler](https://video.tv.adobe.com/v/28755?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Konfigurera variabler](https://video.tv.adobe.com/v/3456976?quality=12&learn=on&captions=swe){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 
