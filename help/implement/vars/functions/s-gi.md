@@ -38,7 +38,7 @@ Följande kod läser in Web SDK och instansierar ett spårningsobjekt. Du kan an
 <script src="https://cdn1.adoberesources.net/alloy/2.6.4/alloy.min.js" async></script>
 ```
 
-Mer information finns i [Installera SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html) i dokumentationen för Web SDK.
+Mer information finns i [Installera SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html?lang=sv-SE) i dokumentationen för Web SDK.
 
 ## Instansiera ett spårningsobjekt med Adobe Analytics-tillägget
 

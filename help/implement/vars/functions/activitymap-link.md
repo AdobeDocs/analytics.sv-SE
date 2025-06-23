@@ -20,7 +20,7 @@ Variabeln `ActivityMap.link` gör att du kan åsidosätta logiken som används i
 
 ## Åsidosätta länkvärden med Web SDK
 
-Du kan använda [`OnBeforeLinkClickSend`](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/onbeforelinkclicksend)-återanrop för att ändra SDK-nyttolasten för webben eller avbryta sändning av data.
+Du kan använda [`OnBeforeLinkClickSend`](https://experienceleague.adobe.com/sv/docs/experience-platform/web-sdk/commands/configure/onbeforelinkclicksend)-återanrop för att ändra SDK-nyttolasten för webben eller avbryta sändning av data.
 
 ## Länkåsidosättning med Adobe Analytics-tillägget
 

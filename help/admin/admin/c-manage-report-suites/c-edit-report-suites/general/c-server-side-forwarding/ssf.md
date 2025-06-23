@@ -33,12 +33,12 @@ Gå igenom följande valideringssteg för att förstå var din organisation befi
 
 ## ![step1_icon.png image](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/c-server-side-forwarding/assets/step1_icon.png) Verifiera implementering av ECID-tjänst
 
-Kontrollera om tjänsten Experience Cloud ID (ECID) är implementerad genom att granska [Analysspårningsbegäran](https://experienceleague.adobe.com/docs/id-service/using/implementation/test-verify.html).
+Kontrollera om tjänsten Experience Cloud ID (ECID) är implementerad genom att granska [Analysspårningsbegäran](https://experienceleague.adobe.com/docs/id-service/using/implementation/test-verify.html?lang=sv-SE).
 
 Kontrollera att ett ECID-värde anges på fliken Begäran. Detta anger att identitetstjänsten implementeras på rätt sätt, vilket är en förutsättning för vidarebefordran på serversidan.
 
 * Om du ser ett ECID-värde fortsätter du till steg 2.
-* Om du inte ser något ECID-värde ska du [implementera identitetstjänsten](https://experienceleague.adobe.com/docs/id-service/using/implementation/implementation-guides.html) innan du fortsätter till steg 2.
+* Om du inte ser något ECID-värde ska du [implementera identitetstjänsten](https://experienceleague.adobe.com/docs/id-service/using/implementation/implementation-guides.html?lang=sv-SE) innan du fortsätter till steg 2.
 
 ## ![step2_icon.png image](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/c-server-side-forwarding/assets/step2_icon.png) Verifiera implementeringsversion för vidarebefordring på serversidan
 
@@ -52,10 +52,10 @@ Kontrollera att svaret innehåller Audience Manager-data på fliken&quot;Svar&qu
 
    * **Adobe Audience Manager-kunder med DIL**: koordinera följande två objekt i nära samverkan:
 
-      1. Ta bort DIL-koden och installera sidkoden [Audience Management Module](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/audience-management-module.html).
+      1. Ta bort DIL-koden och installera sidkoden [Audience Management Module](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/audience-management-module.html?lang=sv-SE).
       1. Aktivera vidarebefordran på serversidan i gränssnittet för Analytics Admin enligt beskrivningen i steg 3. Om du aktiverar den här inställningen innan du tar bort DIL-kod dupliceras data och ytterligare fakturerade serversamtal skapas till Audience Manager.
 
-   * **Nya Adobe Audience Manager-kunder** - installera sidkoden [Audience Management Module](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/audience-management-module.html) och fortsätt till steg 3. Data skickas inte till Audience Manager förrän vidarebefordran på serversidan har aktiverats i steg 3.
+   * **Nya Adobe Audience Manager-kunder** - installera sidkoden [Audience Management Module](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/audience-management-module.html?lang=sv-SE) och fortsätt till steg 3. Data skickas inte till Audience Manager förrän vidarebefordran på serversidan har aktiverats i steg 3.
 
 ## ![step3_icon.png image](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/c-server-side-forwarding/assets/step3_icon.png) Verifiera vidarebefordran på serversidan av rapportsviten
 
@@ -71,4 +71,4 @@ Gå till **Analytics** > **Admin** > **Report Suites** > (välj **report suites*
 
 >[!NOTE]
 >
->Data visas inte i andra Experience Cloud-lösningar, som [Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/aam-home.html) eller [Publiker](https://experienceleague.adobe.com/docs/core-services/interface/audiences/audience-library.html), förrän alla tre stegen är slutförda. När inställningen är aktiverad tar det flera timmar innan den börjar gälla.
+>Data visas inte i andra Experience Cloud-lösningar, som [Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/aam-home.html?lang=sv-SE) eller [Publiker](https://experienceleague.adobe.com/docs/core-services/interface/audiences/audience-library.html?lang=sv-SE), förrän alla tre stegen är slutförda. När inställningen är aktiverad tar det flera timmar innan den börjar gälla.

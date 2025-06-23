@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Det här felsökningsverktyget finns inte längre kvar. Adobe rekommenderar i stället att du använder [Adobe Experience Cloud Debugger Chrome Extension](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html).
+>Det här felsökningsverktyget finns inte längre kvar. Adobe rekommenderar i stället att du använder [Adobe Experience Cloud Debugger Chrome Extension](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html?lang=sv-SE).
 
 [!UICONTROL Legacy Debugger] undersöker taggar för de flesta Adobe Experience Cloud-tjänster. Med hjälp av felsökaren kan du se vilka data som skickas till Adobe på en viss sida på webbplatsen. Du kan använda den här informationen för att felsöka eller validera implementeringen av din organisation.
 
@@ -37,7 +37,7 @@ Varje webbläsare har olika sätt att hantera bokmärken, men konceptet är dets
 
 #### Chrome
 
-Om du insisterar på att inte använda tillägget [Chrome](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html) kan du använda det gamla felsökningsbokmärket i stället.
+Om du insisterar på att inte använda tillägget [Chrome](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html?lang=sv-SE) kan du använda det gamla felsökningsbokmärket i stället.
 
 1. Klicka på de tre punkterna i det övre högra hörnet och gå sedan till Bokmärken > Bokmärkeshanteraren. Du kan också trycka på `Ctrl` + `Shift` + `O` (Windows) eller `Cmd` + `Shift` + `O` (Mac).
 2. Klicka på de tre punkterna i det övre högra hörnet av bokmärkeshanteraren och klicka sedan på Lägg till nytt bokmärke.

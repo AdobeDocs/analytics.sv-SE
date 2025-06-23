@@ -17,7 +17,7 @@ En omfattande lista med beskrivningar av konfigurationsvariabler, HTTP-huvuden o
 
 ## Konfigurationsvarabler {#section_AD402B5EB9B24BF3B2039DA80FCA901E}
 
-Parametrar som har prefixats med `d_*` identifierar nyckelvärdepar på systemnivå som används av våra [datainsamlingsservrar](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/system-components/components-data-collection.html) (DCS). Se även [Attribut som stöds för DCS API-anrop](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-keys.html).
+Parametrar som har prefixats med `d_*` identifierar nyckelvärdepar på systemnivå som används av våra [datainsamlingsservrar](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/system-components/components-data-collection.html?lang=sv-SE) (DCS). Se även [Attribut som stöds för DCS API-anrop](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-keys.html?lang=sv-SE).
 
 | Parameter | Beskrivning |
 |--- |--- |
@@ -32,7 +32,7 @@ Dessa rubriker är fält som innehåller information som förfrågningar om data
 
 | HTTP-huvud | Beskrivning | h_key accepterad av Audience Manager |
 | --- | --- | --- |
-| Värd | Detta ställs in på klientens specifika värdnamn för datainsamling som anges i konfigurationsfilen för analysvärden. Det visas som `host name .demdex.net`. Se [Förstå anrop till Demdex-domänen](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html). | `h_host` |
+| Värd | Detta ställs in på klientens specifika värdnamn för datainsamling som anges i konfigurationsfilen för analysvärden. Det visas som `host name .demdex.net`. Se [Förstå anrop till Demdex-domänen](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=sv-SE). | `h_host` |
 | Användaragent | Ange användaragenthuvudet som skickas till Analytics. | `h_user-agent` |
 | Acceptera språk | Ange till huvudet `Accept-Language` som skickades till Analytics. | `h_accept-language` |
 | Referent | Ange till den sid-URL som skickades till Analytics (Analys) eller som samlats in från huvudet `Referer` som skickades till Analytics (Analys). | `h_referer` |
@@ -43,7 +43,7 @@ Dessutom genereras en `h_ip`-signal från IP-adressen för värddatorn som skick
 
 ## Kunddefinierade signaler {#section_8F8C39E87BDE48BAA59E25CB7E86215D}
 
-Parametrar som har prefixats med `c_` identifierar kunddefinierade variabler. Se även [Attribut som stöds för DCS API-anrop](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-keys.html).
+Parametrar som har prefixats med `c_` identifierar kunddefinierade variabler. Se även [Attribut som stöds för DCS API-anrop](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-keys.html?lang=sv-SE).
 
 | Signal | Beskrivning |
 | --- |--- |

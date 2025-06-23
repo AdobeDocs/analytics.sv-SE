@@ -16,7 +16,7 @@ ht-degree: 0%
 
 *Den här hjälpsidan beskriver hur du implementerar eVars för varuexponering. Mer information om hur marknadsföring av eVars fungerar som en dimension finns i [eVars (marknadsföringsdimension)](/help/components/dimensions/evar-merchandising.md) i användarhandboken för komponenter.*
 
-En detaljerad diskussion om hur eVars marknadsförs finns i [Merchandising eVars and product finding methods](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/conversion-variables/merchandising-evars.html).
+En detaljerad diskussion om hur eVars marknadsförs finns i [Merchandising eVars and product finding methods](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/conversion-variables/merchandising-evars.html?lang=sv-SE).
 
 ## Konfigurera eVars i inställningarna för rapportsviten
 

@@ -57,7 +57,7 @@ alloy("sendEvent", {
 });
 ```
 
-Mer information finns i [`sendEvent`](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/sendevent/overview) i dokumentationen för Web SDK.
+Mer information finns i [`sendEvent`](https://experienceleague.adobe.com/sv/docs/experience-platform/web-sdk/commands/sendevent/overview) i dokumentationen för Web SDK.
 
 ## Anrop om spårning av sidvy med Adobe Analytics-tillägget
 

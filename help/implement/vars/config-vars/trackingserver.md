@@ -28,7 +28,7 @@ SDK använder [!UICONTROL Edge domain] för att hantera både spårningsservern 
 1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen **[!UICONTROL Configure]** under [!UICONTROL Adobe Experience Platform Web SDK].
 1. Ange det önskade textfältet **[!UICONTROL Edge domain]**.
 
-Mer information finns i [Konfigurera Adobe Experience Platform Web SDK-tillägget](https://experienceleague.adobe.com/docs/experience-platform/edge/extension/web-sdk-extension-configuration.html) i dokumentationen för Web SDK.
+Mer information finns i [Konfigurera Adobe Experience Platform Web SDK-tillägget](https://experienceleague.adobe.com/docs/experience-platform/edge/extension/web-sdk-extension-configuration.html?lang=sv-SE) i dokumentationen för Web SDK.
 
 >[!TIP]
 >
@@ -36,7 +36,7 @@ Mer information finns i [Konfigurera Adobe Experience Platform Web SDK-tillägge
 
 ## Edge domain implementerar Web SDK manuellt
 
-Konfigurera SDK med [`edgeDomain`](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html). Fältet är en sträng som avgör vilken domän som data ska skickas till.
+Konfigurera SDK med [`edgeDomain`](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html?lang=sv-SE). Fältet är en sträng som avgör vilken domän som data ska skickas till.
 
 ```json
 alloy("configure", {
@@ -70,7 +70,7 @@ Du kan välja att använda Adobe spårningsserverdomäner (t.ex. `adobedc.net`) 
 
 ### cookies från första part
 
-Om du använder en cookie-implementering från en annan tillverkare är det troligt att någon i din organisation redan har slutfört cookie-processen från första part. Mer information om cookie-processen finns i [Första part-cookies i Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-first-party.html) i användarhandboken för bastjänsterna.
+Om du använder en cookie-implementering från en annan tillverkare är det troligt att någon i din organisation redan har slutfört cookie-processen från första part. Mer information om cookie-processen finns i [Första part-cookies i Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-first-party.html?lang=sv-SE) i användarhandboken för bastjänsterna.
 
 Den person som initialt konfigurerar cookie-implementeringen från första part definierar också den domän och underdomän som används. Exempel:
 

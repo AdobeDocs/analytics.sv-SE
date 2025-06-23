@@ -27,7 +27,7 @@ Om du använder både `linkInternalFilters` och `linkExternalFilters` samtidigt 
 
 Länkar kvalificeras automatiskt som en avslutningslänk om länkmåldomänen skiljer sig från den aktuella `window.location.hostname`. SDK för webben innehåller inga konfigurationsvariabler som kan ändra automatisk avslutningslänksidentifiering. Om du behöver anpassa domänerna som kvalificerar som en avslutningslänk kan du använda anpassad logik i `onBeforeEventSend`-återanropet.
 
-Mer information finns i [Automatisk länkspårning](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/track-links.html#automaticLinkTracking) i dokumentationen för Web SDK.
+Mer information finns i [Automatisk länkspårning](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/track-links.html?lang=sv-SE#automaticLinkTracking) i dokumentationen för Web SDK.
 
 ## Utgående länkar - Spåra med Adobe Analytics-tillägget
 

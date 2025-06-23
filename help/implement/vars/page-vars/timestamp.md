@@ -21,7 +21,7 @@ Variabeln `timestamp` ställer in tidsstämpeln för träffen manuellt för tids
 
 ## Tidsstämpla med Web SDK
 
-Tidsstämpeln [mappas för Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/xdm-var-mapping.html) under XDM-fältet `xdm.timestamp`. Det här fältet har bara stöd för Unix-tid.
+Tidsstämpeln [mappas för Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/xdm-var-mapping.html?lang=sv-SE) under XDM-fältet `xdm.timestamp`. Det här fältet har bara stöd för Unix-tid.
 
 ## Tidsstämpla med Adobe Analytics-tillägget
 

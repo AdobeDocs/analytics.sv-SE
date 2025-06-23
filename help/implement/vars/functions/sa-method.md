@@ -47,7 +47,7 @@ alloy("configure", {
 });
 ```
 
-Mer information finns i [Konfigurera Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html) i dokumentationen för Web SDK.
+Mer information finns i [Konfigurera Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html?lang=sv-SE) i dokumentationen för Web SDK.
 
 ## Ändra rapportsvit med Adobe Analytics-tillägget
 

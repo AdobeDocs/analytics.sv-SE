@@ -41,7 +41,7 @@ Textfältet [!UICONTROL Download link qualifier] använder regex för att avgör
 
 ## Ladda ned länkkvalificerare som implementerar Web SDK manuellt
 
-[Konfigurera](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html) SDK med [`downloadLinkQualifier`](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/track-links.html#automaticLinkTracking). Fältet använder regex på den klickade URL:en för att avgöra om det är en giltig nedladdningslänk. Om `downloadLinkQualifier` inte definieras ställs standardvärdet in på `\\.(exe|zip|wav|mp3|mov|mpg|avi|wmv|pdf|doc|docx|xls|xlsx|ppt|pptx)$`.
+[Konfigurera](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html?lang=sv-SE) SDK med [`downloadLinkQualifier`](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/track-links.html?lang=sv-SE#automaticLinkTracking). Fältet använder regex på den klickade URL:en för att avgöra om det är en giltig nedladdningslänk. Om `downloadLinkQualifier` inte definieras ställs standardvärdet in på `\\.(exe|zip|wav|mp3|mov|mpg|avi|wmv|pdf|doc|docx|xls|xlsx|ppt|pptx)$`.
 
 ```json
 alloy("configure", {

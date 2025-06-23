@@ -16,7 +16,7 @@ ht-degree: 1%
 
 Slutförda händelser (kallas även konverteringshändelser eller anpassade händelser) är åtgärder som kan spåras. Du avgör vilken händelse som lyckas. Om en besökare till exempel köper ett objekt kan köphändelsen betraktas som en lyckad händelse.
 
-En videoöversikt över lyckade händelser finns i [Introduktion till konverteringshändelser](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/metrics/introduction-to-conversion-events) i självstudiekurserna för Analytics.
+En videoöversikt över lyckade händelser finns i [Introduktion till konverteringshändelser](https://experienceleague.adobe.com/sv/docs/analytics-learn/tutorials/analysis-workspace/metrics/introduction-to-conversion-events) i självstudiekurserna för Analytics.
 
 ## Exempel på lyckade händelser
 
@@ -30,7 +30,7 @@ Det finns många typer av framgångsrika händelser, beroende på webbplatstypen
 * **Högteknologi**: Hämta rapport, offert, ifyllnad av formulär, supportförfrågningar
 * **Automatisering**: Leadsändning, anbudsförfrågan, broschyrenedladdning
 
-Variabeln [s.events](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/events/event-serialization.html) definierar en success-händelse.
+Variabeln [s.events](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/events/event-serialization.html?lang=sv-SE) definierar en success-händelse.
 
 ## Konfigurera lyckade händelser
 
