@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: Konfigurera platser för molnimport och -export
 feature: Classifications
 exl-id: 55179868-6228-44ff-835c-f4a7b38e929b
-source-git-commit: 9b263b0b2d41533630f225d4d4dcc9b1e0c4f1df
+source-git-commit: d64a3d02ec670133a32829fc0d2ad589068a193e
 workflow-type: tm+mt
-source-wordcount: '1686'
+source-wordcount: '1694'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,7 @@ När du har [konfigurerat ett molnkonto](/help/components/locations/configure-im
 
 * Exportera filer med [datafeeds](/help/export/analytics-data-feed/create-feed.md)
 * Exporterar rapporter med [Data Warehouse](/help/export/data-warehouse/create-request/dw-request-report-destinations.md)
+* Exporterar filer när [Report Builder](/help/analyze/report-builder/report-builder-export.md) används
 * Importera scheman med [Klassificeringsuppsättningar](/help/components/classifications/sets/overview.md)
 
 Du måste konfigurera Adobe Analytics med den information som krävs för att komma åt ditt molnkonto. Den här processen består av att lägga till och konfigurera kontot (till exempel Amazon S3 Role ARN, Google Cloud Platform o.s.v.) enligt beskrivningen i [Konfigurera molnimport- och exportkonton](/help/components/locations/configure-import-accounts.md), och sedan lägga till och konfigurera platsen inom det kontot (enligt beskrivningen i den här artikeln).
@@ -54,7 +55,7 @@ Mer information om hur du visar och tar bort befintliga platser finns i [Platsha
    |---------|----------|
    | [!UICONTROL **Namn**] | Namnet på platsen. |
    | [!UICONTROL **Beskrivning**] | Ange en kort beskrivning av kontot för att hjälpa till att skilja det från andra konton av samma kontotyp. |
-   | [!UICONTROL **Använd med**] | Ange om du vill använda den här platsen med [!UICONTROL **datafeeds**], [!UICONTROL **Data Warehouse**] eller [!UICONTROL **klassificeringsuppsättningar**]. <p>Tänk på följande när du gör en markering:</p><ul><li>En enda plats kan inte användas för flera syften. En plats som till exempel används för datafeeds kan inte också användas för Data Warehouse- eller klassificeringsuppsättningar.</li><li>Om du vill undvika filkonflikter på en plats ska du inte ändra värdet för fältet [!UICONTROL **Använd med**] efter att platsen har använts.</li><li>Om du skapar en plats för ett e-postkonto väljer du [!UICONTROL **Data Warehouse**] i det här fältet. E-postplatser stöds inte med datafeeds och klassificeringsuppsättningar.</li></ul> |
+   | [!UICONTROL **Använd med**] | Ange om du vill använda den här platsen med [!UICONTROL **Datafeeds**], [!UICONTROL **Data Warehouse**], [!UICONTROL **Klassificeringsuppsättningar**] eller **[!UICONTROL Report Builder]**. <p>Tänk på följande när du gör en markering:</p><ul><li>En enda plats kan inte användas för flera syften. En plats som till exempel används för datafeeds kan inte också användas för Data Warehouse- eller klassificeringsuppsättningar.</li><li>Om du vill undvika filkonflikter på en plats ska du inte ändra värdet för fältet [!UICONTROL **Använd med**] efter att platsen har använts.</li><li>Om du skapar en plats för ett e-postkonto väljer du [!UICONTROL **Data Warehouse**] i det här fältet. E-postplatser stöds inte med datafeeds och klassificeringsuppsättningar.</li></ul> |
    | [!UICONTROL **Gör platsen tillgänglig för alla användare i organisationen**] | Aktivera det här alternativet om du vill att andra användare i organisationen ska kunna använda platsen.<p>Tänk på följande när du delar platser:</p><ul><li>Platser som du delar kan inte tas bort.</li><li>Delade platser kan bara redigeras av ägaren till platsen.</li><li>Platser kan bara delas om kontot som platsen är kopplad till också delas.</li></ul> |
    | [!UICONTROL **Platskonto**] | Välj det platskonto där du vill skapa den här platsen. Mer information om hur du skapar ett konto finns i [Konfigurera molnimport och exportkonton](/help/components/locations/configure-import-accounts.md). |
 
@@ -68,7 +69,7 @@ Ange följande information om du vill konfigurera en ARN-plats för en Amazon S3
 
    | Fält | Funktion |
    |---------|----------|
-   | [!UICONTROL **Bucket**] | Den bucket på ditt Amazon S3-konto där du vill att Adobe Analytics-data ska skickas. <p>Kontrollera att användar-ARN som tillhandahålls av Adobe har behörigheten `S3:PutObject` för att kunna överföra filer till den här bucket. </p><p>Bucket-namn måste uppfylla specifika namnregler. De måste till exempel innehålla mellan 3 och 63 tecken, får endast bestå av gemener, siffror, punkter (.) och bindestreck (-) och måste börja och sluta med en bokstav eller en siffra. [En fullständig lista över namnregler finns i AWS-dokumentationen](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucketnamingrules.html). </p> |
+   | [!UICONTROL **Bucket**] | Den bucket på ditt Amazon S3-konto där du vill att Adobe Analytics-data ska skickas. <p>Se till att användar-ARN som tillhandahölls av Adobe har behörigheten `S3:PutObject` för att kunna överföra filer till den här bucket. </p><p>Bucket-namn måste uppfylla specifika namnregler. De måste till exempel innehålla mellan 3 och 63 tecken, får endast bestå av gemener, siffror, punkter (.) och bindestreck (-) och måste börja och sluta med en bokstav eller en siffra. [En fullständig lista över namnregler finns i AWS-dokumentationen](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucketnamingrules.html). </p> |
    | [!UICONTROL **Prefix**] | Mappen inom hakparentesen där du vill placera data. Ange ett mappnamn och lägg sedan till ett omvänt snedstreck efter namnet för att skapa mappen. Till exempel folder_name/ |
 
    {style="table-layout:auto"}
@@ -92,7 +93,7 @@ Ange följande information om du vill konfigurera en plats för Google Cloud-pla
 
    | Fält | Funktion |
    |---------|----------|
-   | [!UICONTROL **Bucket**] | Den bucket på ditt GCP-konto där du vill att Adobe Analytics-data ska skickas. Se till att du har gett Adobe tillåtelse att överföra filer till denna bucket till säkerhetsobjektet. |
+   | [!UICONTROL **Bucket**] | Den bucket på ditt GCP-konto där du vill att Adobe Analytics-data ska skickas. Kontrollera att du har gett Adobe säkerhetsobjekt behörighet att överföra filer till denna bucket. |
    | [!UICONTROL **Prefix**] | Mappen inom hakparentesen där du vill placera data. Ange ett mappnamn och lägg sedan till ett omvänt snedstreck efter namnet för att skapa mappen. Till exempel folder_name/ |
 
    {style="table-layout:auto"}
@@ -171,7 +172,7 @@ Om du vill konfigurera en e-postplats anger du följande information:
 
 1. Välj [!UICONTROL **Spara**].
 
-   Du kan nu exportera data till det konto och den plats som du konfigurerade när du använde [Dataflöden](/help/export/analytics-data-feed/create-feed.md). (E-postplatser stöds inte med [Data Warehouse](/help/export/data-warehouse/create-request/dw-request-report-destinations.md) eller [klassificeringsuppsättningar](/help/components/classifications/sets/overview.md)).
+   Du kan nu exportera data till det konto och den plats som du konfigurerade när du använde [Dataflöden](/help/export/analytics-data-feed/create-feed.md). (E-postplatser stöds inte med [Data Warehouse](/help/export/data-warehouse/create-request/dw-request-report-destinations.md), [Report Builder](/help/analyze/report-builder/report-builder-export.md) eller [Klassificeringsuppsättningar](/help/components/classifications/sets/overview.md)).
 
 ### Äldre kontotyper
 
@@ -179,7 +180,7 @@ De här äldre kontotyperna är bara tillgängliga när du exporterar data med [
 
 +++FTP
 
-Data från dataflöden kan levereras till en FTP-plats som är värd för Adobe eller kunder. Ange katalogen Använd sökvägsfältet för att placera feed-filer i en mapp.
+Data från dataflöden kan levereras till en FTP-plats hos Adobe eller en kundvärd. Ange katalogen Använd sökvägsfältet för att placera feed-filer i en mapp.
 
 | Fält | Funktion |
 |---------|----------|
@@ -191,7 +192,7 @@ Data från dataflöden kan levereras till en FTP-plats som är värd för Adobe 
 
 +++SFTP
 
-Data från dataflödet kan levereras till en SFTP-plats som är värd för Adobe eller kund. Målplatsen måste innehålla en giltig offentlig RSA- eller DSA-nyckel. Du kan hämta lämplig offentlig nyckel när du skapar flödet.
+Data från dataflöden kan levereras till en Adobe- eller kundvärd för SFTP-plats. Målplatsen måste innehålla en giltig offentlig RSA- eller DSA-nyckel. Du kan hämta lämplig offentlig nyckel när du skapar flödet.
 
 | Fält | Funktion |
 |---------|----------|

@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: Platshanteraren
 feature: Classifications
 exl-id: ace70568-220a-44e8-8e5f-f73002b9e2a2
-source-git-commit: a81cc80ddc884c3f908e66e37593e1ce1b829a50
+source-git-commit: 5c02b46a7757e07a23505dc8e3dc21b6353aa9e2
 workflow-type: tm+mt
-source-wordcount: '1454'
+source-wordcount: '1460'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,7 @@ Med Platshanteraren kan du visa, skapa, redigera och ta bort konton och platser.
 
 * Exportera filer med [datafeeds](/help/export/analytics-data-feed/create-feed.md)
 * Exporterar rapporter med [Data Warehouse](/help/export/data-warehouse/create-request/dw-request-report-destinations.md)
+* Exporterar filer när [Report Builder](/help/analyze/report-builder/report-builder-export.md) används
 * Importera scheman med [Klassificeringsuppsättningar](/help/components/classifications/sets/overview.md)
 
 ## Visa, filtrera och söka efter platser
@@ -71,9 +72,9 @@ Mer information om hur du redigerar en plats finns i [Konfigurera platser för m
 
 >[!IMPORTANT]
 >
->Om en plats tas bort kommer dataflödesfiler, Data Warehouse- eller klassificeringsscheman som är associerade med den borttagna platsen inte att fungera nästa gång de används.
+>Om en plats tas bort kommer eventuella dataflödesfiler, Data Warehouse-rapporter eller klassificeringsscheman som är associerade med den borttagna platsen inte att fungera nästa gång de används.
 >
->Om du tar bort en plats bör du [redigera dina datafeeds](/help/export/analytics-data-feed/create-feed.md), [Data Warehouse-rapporter](/help/export/data-warehouse/create-request/dw-request-report-destinations.md) och [klassificeringsuppsättningar ](/help/components/classifications/sets/manage/schema.md) så att de använder en fungerande plats.
+>Om du tar bort en plats bör du [redigera dina datafeeds](/help/export/analytics-data-feed/create-feed.md), [Data Warehouse-rapporter](/help/export/data-warehouse/create-request/dw-request-report-destinations.md) och [klassificeringsuppsättningar ](/help/components/classifications/sets/manage/schema.md) om du vill använda en funktionsplats.
 
 En plats kan bara tas bort av den användare som skapade den eller av en systemadministratör.
 
@@ -173,7 +174,7 @@ Du kan begränsa vilka kontotyper som användare kan se under följande omständ
 
 * När du väljer vilka konton som ska användas när du exporterar filer med [Dataflöden](/help/export/analytics-data-feed/create-feed.md), exporterar rapporter med [Data Warehouse](/help/export/data-warehouse/create-request/dw-request-report-destinations.md) eller importerar scheman med [Klassificeringsuppsättningar](/help/components/classifications/sets/overview.md).
 
-När du begränsar kontotyper enligt beskrivningen i det här avsnittet, visas inte längre konton av den typ som du begränsar för användarna. Det innebär att det inte går att skapa nya konton av den typen och att befintliga konton av den typen inte kan användas när du skapar datafeeds, Data Warehouse eller klassificeringsuppsättningar.
+När du begränsar kontotyper enligt beskrivningen i det här avsnittet, visas inte längre konton av den typ som du begränsar för användarna. Det innebär att det inte går att skapa nya konton av den typen och att befintliga konton av den typen inte kan användas när du skapar datafeeds, Data Warehouse eller Klassificeringsuppsättningar.
 
 Befintliga konton som är konfigurerade för schemalagd export måste dock tas bort om du vill begränsa användningen av dem.
 

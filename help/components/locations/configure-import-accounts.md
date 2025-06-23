@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: Konfigurera molnimport- och exportkonton
 feature: Classifications
 exl-id: 40d3d3f1-1047-4c37-8caf-6b0aabaa590a
-source-git-commit: 8a9c51d46195737b5321cc617913261c059f651d
+source-git-commit: 5c02b46a7757e07a23505dc8e3dc21b6353aa9e2
 workflow-type: tm+mt
-source-wordcount: '1469'
+source-wordcount: '1475'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,7 @@ Du kan konfigurera ett molnkonto som används för något eller alla av följand
 
 * Exportera filer med [datafeeds](/help/export/analytics-data-feed/create-feed.md)
 * Exporterar rapporter med [Data Warehouse](/help/export/data-warehouse/create-request/dw-request-report-destinations.md)
+* Exporterar filer när [Report Builder](/help/analyze/report-builder/report-builder-export.md) används
 * Importera scheman med [Klassificeringsuppsättningar](/help/components/classifications/sets/overview.md)
 
 Du måste konfigurera Adobe Analytics med den information som krävs för att komma åt ditt molnkonto. Den här processen består av att lägga till och konfigurera kontot (till exempel Amazon S3 Role ARN, Google Cloud Platform o.s.v.) enligt beskrivningen i den här artikeln, och sedan lägga till och konfigurera platsen inom det kontot (till exempel en mapp inom kontot) enligt beskrivningen i [Konfigurera molnimport och exportplatser](/help/components/locations/configure-import-locations.md).
@@ -66,11 +67,11 @@ Så här konfigurerar du ett molnimport- eller exportkonto:
 
    | Fält | Funktion |
    |---------|----------|
-   | [!UICONTROL **Roll-ARN**] | Du måste ange en roll-ARN (Amazon Resource Name) som Adobe kan använda för att få åtkomst till Amazon S3-kontot. För att göra detta skapar du en IAM-behörighetsprincip för källkontot, kopplar principen till en användare och skapar sedan en roll för målkontot. Mer information finns i [den här AWS-dokumentationen](https://aws.amazon.com/premiumsupport/knowledge-center/cross-account-access-iam/). |
+   | [!UICONTROL **Roll-ARN**] | Du måste ange ett ROLL-ARN (Amazon Resource Name) som Adobe kan använda för att få åtkomst till Amazon S3-kontot. För att göra detta skapar du en IAM-behörighetsprincip för källkontot, kopplar principen till en användare och skapar sedan en roll för målkontot. Mer information finns i [den här AWS-dokumentationen](https://aws.amazon.com/premiumsupport/knowledge-center/cross-account-access-iam/). |
 
    {style="table-layout:auto"}
 
-   +++
++++
 
    +++Google Cloud Platform
 
@@ -82,7 +83,7 @@ Så här konfigurerar du ett molnimport- eller exportkonto:
 
    {style="table-layout:auto"}
 
-   +++
++++
 
    +++Azure SAS
 
@@ -98,7 +99,7 @@ Så här konfigurerar du ett molnimport- eller exportkonto:
 
    {style="table-layout:auto"}
 
-   +++
++++
 
    +++Azure RBAC
 
@@ -112,7 +113,7 @@ Så här konfigurerar du ett molnimport- eller exportkonto:
 
    {style="table-layout:auto"}
 
-   +++
++++
 
    +++E-post
 
@@ -128,7 +129,7 @@ Så här konfigurerar du ett molnimport- eller exportkonto:
 
    {style="table-layout:auto"}
 
-   +++
++++
 
    **Äldre kontotyper**
 
@@ -136,7 +137,7 @@ Så här konfigurerar du ett molnimport- eller exportkonto:
 
    +++FTP
 
-   Data från dataflöden kan levereras till en FTP-plats som är värd för Adobe eller kunder. Kräver FTP-värd, användarnamn och lösenord. Använd sökvägsfältet för att placera feed-filer i en mapp. Mappar måste redan finnas. Flöden genererar ett fel om den angivna sökvägen inte finns.
+   Data från dataflöden kan levereras till en FTP-plats hos Adobe eller en kundvärd. Kräver FTP-värd, användarnamn och lösenord. Använd sökvägsfältet för att placera feed-filer i en mapp. Mappar måste redan finnas. Flöden genererar ett fel om den angivna sökvägen inte finns.
 
    | Fält | Funktion |
    |---------|----------|
@@ -147,13 +148,13 @@ Så här konfigurerar du ett molnimport- eller exportkonto:
 
    {style="table-layout:auto"}
 
-   +++
++++
 
    +++SFTP
 
    SFTP-stöd för dataflöden finns tillgängligt. Kräver att en SFTP-värd, ett användarnamn och målplatsen innehåller en giltig offentlig RSA- eller DSA-nyckel. Du kan hämta lämplig offentlig nyckel när du skapar flödet.
 
-   +++
++++
 
    +++S3
 
@@ -188,7 +189,7 @@ Så här konfigurerar du ett molnimport- eller exportkonto:
    >
    >Regionen cn-North-1 stöds inte.
 
-   +++
++++
 
    +++Azure Blob
 
@@ -198,7 +199,7 @@ Så här konfigurerar du ett molnimport- eller exportkonto:
    >
    >Du måste implementera en egen process för att hantera diskutrymme på datalagermålet. Adobe tar inte bort några data från servern.
 
-   +++
++++
 
 1. Välj [!UICONTROL **Spara**].
 

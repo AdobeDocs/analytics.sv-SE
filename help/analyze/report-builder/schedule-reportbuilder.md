@@ -1,19 +1,23 @@
 ---
 title: Så här schemalägger du arbetsböcker med Report Builder i Adobe Analytics
-description: Lär dig hur du använder schemafunktionen i Report Builder
+description: Lär dig använda schemafunktionen i Report Builder
 role: User
 feature: Report Builder
 type: Documentation
 solution: Analytics
 exl-id: 40e1feb0-64bc-40e6-83cb-4a1ea7e2d0cc
-source-git-commit: d7a6867796f97f8a14cd8a3cfad115923b329c7c
+source-git-commit: 9ece9f6fcebdf308b6218aa50ab78af4f75ee8e7
 workflow-type: tm+mt
-source-wordcount: '1245'
+source-wordcount: '857'
 ht-degree: 0%
 
 ---
 
-# Schemalägg arbetsböcker
+# Schemalägg arbetsböcker genom delning via e-post
+
+>[!NOTE]
+>
+>Förutom att schemalägga arbetsböcker för delning via e-post, så som beskrivs i det här avsnittet, kan du schemalägga att arbetsböcker ska exporteras till molnmål, så som beskrivs i [Schemalägg arbetsböcker för export till molnmål](/help/analyze/report-builder/report-builder-export.md).
 
 När du har sparat arbetsboken och slutfört analysen kan du enkelt dela arbetsboken med andra i teamet med hjälp av schemaläggningsfunktionen. Med funktionen Schemalägg kan du skapa ett schema som automatiskt uppdaterar data i arbetsboken och skickar Excel-arbetsbokens .xlsx-fil med e-post som en bifogad fil till den angivna målgruppen vid ett visst datum och en viss tidpunkt. Genom att ställa in ett schema får mottagarna regelbundna uppdateringar automatiskt. Du kan också använda schemafunktionen för att skicka ut arbetsboken en gång utan att schemalägga automatiska uppdateringar.
 
@@ -31,9 +35,9 @@ Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Schemalägg arbet
 
 ## Schemalägg en arbetsbok
 
-Använd knappen Schema i Report Builder-navet för att snabbt skapa ett schema så att du automatiskt kan distribuera en Excel-arbetsboksfil (.xlsx) till en individ eller en grupp.
+Använd knappen Schema i Report Builder nav för att snabbt skapa ett schema så att du automatiskt kan distribuera en Excel-arbetsboksfil (.xlsx) till en individ eller grupp.
 
-1. Klicka på knappen Schema i navet Report Builder.
+1. Klicka på knappen Schema i Report Builder-navet.
 
    ![Klicka på knappen Schema för att skapa ett schema.](./assets/schedule-button.png){width="55%"}
 
@@ -77,7 +81,7 @@ Använd knappen Schema i Report Builder-navet för att snabbt skapa ett schema s
 
    ![Klicka på Skicka enligt schema.](./assets/send-on-schedule.png){width="55%"}
 
-   En bekräftelsetabell visas längst ned i Report Builder och den schemalagda arbetsboken visas på fliken Arbetsböcker.
+   En bekräftelsetabell visas längst ned i Report Builder-navet och den schemalagda arbetsboken visas på fliken Arbetsböcker.
 
    ![Bekräftelsepopup](./assets/confirmation-toast.png){width="55%"}
 
@@ -104,44 +108,6 @@ Du kan också skicka ut arbetsboken endast en gång.
 
 1. Klicka på **Skicka nu**.
 
-## Visa och redigera schemalagda arbetsböcker {#view-edit}
+## Hantera schemalagda arbetsböcker
 
-Du kan visa och hantera alla schemalagda arbetsböcker på ett ställe under fliken Arbetsböcker.
-
-1. Klicka på fliken Arbetsböcker i avsnittet Schema på Report Builder-hubben. Använd den här vyn om du vill visa en lista över alla schemalagda arbetsböcker.
-
-1. Välj en arbetsbok. Flera verktyg visas som gör att du kan redigera arbetsboken, redigera schemaaktiviteten, pausa och starta om schemaaktiviteten, hämta en schemalagd aktivitetsrapport eller ta bort schemaaktiviteten.
-
-   ![Skärmbild med arbetsbokens schemaikoner.](./assets/schedule-icons.png){width="20%"}
-
-* (Valfritt) Klicka på pennikonen för att redigera arbetsbokens schemauppgift.
-
-* (Valfritt) Klicka på klockikonen om du vill visa en historik för varje schemalagd aktivitet.
-
-* (Valfritt) Klicka på pausikonen för att pausa och starta om distributionsschemaaktiviteten. Detta är praktiskt om du behöver ändra arbetsboken innan arbetsboken skickas. Klicka på pausikonen igen när du vill starta om distributionen.
-
-* (Valfritt) Klicka på nedladdningsikonen för att hämta en kopia av arbetsbokens schemauppgift.
-
-* (Valfritt) Klicka på papperskorgen för att ta bort schemaaktiviteten.
-
-  ![Skärmbild som visar listan med schemalagda aktiviteter.](./assets/selected-workbook.png){width="40%"}
-
-## Granska status för schemalagda aktiviteter {#status}
-
-I historikvyn kan du granska statusen för varje schemalagd aktivitet. Det finns en separat rad som dokumenterar statusändringen för varje schemalagd aktivitet. I exemplet nedan startades *New Timly Schedule* den 5 januari kl. 17:04. Senast 17:05 uppdaterades programmet och skickades till mottagarna. Nästa arbetsbok, *Ogiltig arbetsbok*, påträffade ett fel under uppdateringsprocessen. Om det inte går att skicka en arbetsbok kan du felsöka på historikfliken genom att visa var i processen felet uppstod. I det här fallet beror det troligtvis på ett fel i datablocket, kanske en komponent som saknas, som hindrade arbetsboken från att uppdateras.
-
-En grön bock anger att arbetsboken har skickats. Ett utropstecken i en röd triangel anger att ett fel har inträffat.
-
-Du kan välja vilka kolumner som ska visas på fliken Historik genom att klicka på kolumninställningsikonen till höger om sökfältet.
-
-![Klicka på kolumnikonen om du vill visa eller dölja specifika kolumner.](./assets/history.png){width="55%"}
-
-Du kan filtrera ned historiken så att endast en schemalagd arbetsbok visas genom att gå till fliken Arbetsböcker, välja arbetsboken och klicka på ikonen Historik.
-
-Du kan även visa historiken för en viss arbetsbok på fliken Arbetsböcker. Markera arbetsboken på fliken Arbetsböcker och klicka sedan på ikonen Historik.
-
-![Ikonen för arbetsbokshistorik](./assets/history2.png){width="55%"}
-
-Arbetsboksfiltret visas sedan högst upp i historiken. Om du vill visa historiken för alla schemalagda aktiviteter igen klickar du på x bredvid filtret.
-
-![Arbetsboksfiltret.](./assets/history3.png){width="55%"}
+Mer information om hur du hanterar arbetsböcker som redan är schemalagda finns i [Hantera schemalagda arbetsböcker](/help/analyze/report-builder/manage-schedules-reportbuilder.md).
