@@ -5,13 +5,13 @@ role: User, Admin
 feature: Report Builder
 type: Documentation
 solution: Analytics
-source-git-commit: d64a3d02ec670133a32829fc0d2ad589068a193e
+exl-id: 5829482b-3a5e-416b-9c82-404face30b29
+source-git-commit: ecb08c3d9dfe7394ecff5415c08be7a38b0cba6a
 workflow-type: tm+mt
 source-wordcount: '1212'
 ht-degree: 0%
 
 ---
-
 
 # Schemalägg arbetsböcker genom att exportera till molnmål
 
@@ -33,15 +33,7 @@ Använd följande process när du exporterar arbetsböcker från Report Builder 
 
 1. [Exportera en rapport från Report Builder](#export-a-report-from-report-builder)
 
-<!--
-
-1. Access data in your cloud account and [Manage exports in Adobe](/help/components/exports/manage-exports.md)
-
-![The export process described in steps 1 through 4.](assets/report-builder-export-process.png)
-
--->
-
-## Exportera en rapport från Report Builder {#export-from-report-builder}
+## Exportera en rapport från Report Builder
 
 >[!NOTE]
 >
@@ -92,7 +84,7 @@ Så här exporterar du rapporter från Report Builder:
 
    En bekräftelsetabell visas längst ned i Report Builder-navet och den schemalagda arbetsboken visas på fliken Arbetsböcker.
 
-## Fördelar med att exportera till molnet {#advantages}
+## Fördelar med att exportera till molnet
 
 Genom att exportera Adobe Analytics-data till molnet kan du:
 
@@ -133,4 +125,3 @@ After data is exported from Analysis Workspace, you can edit, re-export, duplica
 ## Hantera schemalagda arbetsböcker
 
 Mer information om hur du hanterar arbetsböcker som redan är schemalagda finns i [Hantera schemalagda arbetsböcker](/help/analyze/report-builder/manage-schedules-reportbuilder.md).
-
