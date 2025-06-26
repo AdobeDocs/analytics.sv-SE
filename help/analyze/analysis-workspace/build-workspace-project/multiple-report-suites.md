@@ -71,6 +71,6 @@ Den aktiva panelen känns igen av den ljusblå kanten runt den. Välj bara den p
 
 1. (Valfritt) Du kan också gå till andra komponentbyggare i Analytics och se till att de nu visar en etikett för rapportsviten som anger
 
-   * Var ett segment skapas: [Segmentbyggare](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-build.html).
-   * Där ett beräknat mått skapas: [Beräknad metrisk byggare](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html).
-   * Var en avisering byggs: [Varningsbyggaren](https://experienceleague.adobe.com/docs/analytics/components/alerts/alert-builder.html).
+   * Var ett segment skapas: [Segmentbyggare](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-build.html?lang=sv-SE).
+   * Där ett beräknat mått skapas: [Beräknad metrisk byggare](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html?lang=sv-SE).
+   * Var en avisering byggs: [Varningsbyggaren](https://experienceleague.adobe.com/docs/analytics/components/alerts/alert-builder.html?lang=sv-SE).

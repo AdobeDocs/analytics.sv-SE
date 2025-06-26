@@ -16,7 +16,7 @@ Utöver [standardanvändningen av segment](/help/components/segmentation/segment
 
 * [Segmentjämförelse](/help/analyze/analysis-workspace/c-panels/c-segment-comparison/segment-comparison.md)
 
-* [Använd segment i bortfallsanalys](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/fallout/compare-segments-fallout.html)
+* [Använd segment i bortfallsanalys](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/fallout/compare-segments-fallout.html?lang=sv-SE)
 
 >[!MORELIKETHIS]
 >

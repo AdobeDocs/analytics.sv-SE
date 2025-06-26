@@ -17,7 +17,7 @@ ht-degree: 64%
 Mer information om hur du konfigurerar den här integreringen finns i [dokumentationen för Adobe Campaign](https://helpx.adobe.com/se/campaign/standard/integrating/using/about-campaign-analytics-integration.html).
 
 >[!IMPORTANT]
->Den här artikeln gäller endast Adobe Campaign **Standard** -rapportering. Se [här](https://experienceleague.adobe.com/docs/analytics/integration/analytics-to-campaign-classic.html) om du vill lägga till Adobe Campaign **Classic**-rapportering.
+>Den här artikeln gäller endast Adobe Campaign **Standard** -rapportering. Se [här](https://experienceleague.adobe.com/docs/analytics/integration/analytics-to-campaign-classic.html?lang=sv-SE) om du vill lägga till Adobe Campaign **Classic**-rapportering.
 
 Integrationen mellan Adobe Analytics och Adobe Campaign Standard:
 

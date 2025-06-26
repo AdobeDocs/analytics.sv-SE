@@ -249,7 +249,7 @@ Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Segmentbehållare
 
 +++ **Vilka rättigheter och behörigheter behöver jag för att använda, skapa och hantera segment?**
 
-Som standard kan alla användare skapa och redigera personliga segment. Administratörer kan dock bestämma vem som ska ha [behörighet att skapa segment](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html) och kan tilldela dem till specifika grupper. Dessa segment kan delas direkt med andra Analytics-användare.
+Som standard kan alla användare skapa och redigera personliga segment. Administratörer kan dock bestämma vem som ska ha [behörighet att skapa segment](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html?lang=sv-SE) och kan tilldela dem till specifika grupper. Dessa segment kan delas direkt med andra Analytics-användare.
 
 Administratörer kan redigera alla segment och dela segment med grupper och med alla i organisationen. [Segmenträttigheter efter roll](/help/components/segmentation/seg-reference/seg-rights.md)
 

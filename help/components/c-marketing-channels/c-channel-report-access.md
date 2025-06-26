@@ -28,5 +28,5 @@ Här är behörigheterna för verktygen i Report Suite som krävs i [Admin Conso
 | Analysverktyg | Analysis Workspace Access | Ger åtkomst till Analysis Workspace. Användarna måste tillhöra antingen den här gruppen (standard) eller rapport- och analysåtkomst för att kunna använda dimensionerna för marknadsföringskanaler i Workspace. |
 | Analysverktyg | Rapporter och analysåtkomst | Ger åtkomst till rapporter och analyser. Användare måste tillhöra den här gruppen eller Analysis Workspace Access (standard) för att kunna använda Adobe Analytics. |
 
-Mer information om produktprofiler och Adobe Analytics-behörigheter i Admin Console finns i [Produktprofiler för Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html).
+Mer information om produktprofiler och Adobe Analytics-behörigheter i Admin Console finns i [Produktprofiler för Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html?lang=sv-SE).
 

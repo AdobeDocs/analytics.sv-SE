@@ -12,4 +12,4 @@ ht-degree: 0%
 
 # Integrera Adobe Analytics med Campaign Classic
 
-Mer information om hur du integrerar Adobe Analytics-data i Campaign Classic finns i [Adobe Analytics Connector-etablering](https://experienceleague.adobe.com/en/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/analytics-connector/adobe-analytics-provisioning).
+Mer information om hur du integrerar Adobe Analytics-data i Campaign Classic finns i [Adobe Analytics Connector-etablering](https://experienceleague.adobe.com/sv/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/analytics-connector/adobe-analytics-provisioning).
