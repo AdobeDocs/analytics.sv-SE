@@ -16,7 +16,7 @@ Komplexa segment behövs ofta för att få fram önskade data. Om komplexa segme
 
 ## Använd bara operatorn `Contains` som sista utväg
 
-Operatorn [**[!UICONTROL Contains]**](/help/components/segmentation/seg-reference/seg-operators.md) är en av de mest bearbetningsintensiva funktionerna i segmentering, eftersom operatorn måste analysera hela innehållet i varje värde. Använd andra operatorer som **[!UICONTROL Starts with]**eller **[!UICONTROL Ends with]**om de önskade värdena finns i början eller slutet av en sträng.
+Operatorn [**[!UICONTROL Contains]**](/help/components/segmentation/seg-reference/seg-operators.md) är en av de mest bearbetningsintensiva funktionerna i segmentering, eftersom operatorn måste analysera hela innehållet i varje värde. Använd andra operatorer som **[!UICONTROL Starts with]**&#x200B;eller **[!UICONTROL Ends with]**&#x200B;om de önskade värdena finns i början eller slutet av en sträng.
 
 Om en **[!UICONTROL Contains]**-operator i ett segment returnerar ett stort antal resultat, kommer rapporten oftast att sluta fungera. Om du till exempel har skapat ett segment där **[!UICONTROL Referrer]** **[!UICONTROL equals]** `"."` genomsöks innehållet i alla värden. Använd operatorn **[!UICONTROL Exists]** i stället.
 

@@ -28,14 +28,14 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="workspace_cohorttable_panel"
 >title="Kohortabell"
->abstract="Gruppera användarna efter att ha slutfört en händelse, analysera sedan deras pågående engagemang och kraschar över tid.<br/><br/>**Parametrar **<br/>**Inkluderingskriterier**: De komponenter som används för att definiera den inledande besökarkohorten.<br/>**Returvillkor**: Komponenterna som används för att avgöra om en besökare har returnerat."
+>abstract="Gruppera användarna efter att ha slutfört en händelse, analysera sedan deras pågående engagemang och kraschar över tid.<br/><br/>**Parametrar &#x200B;**<br/>**Inkluderingskriterier**: De komponenter som används för att definiera den inledande besökarkohorten.<br/>**Returvillkor**: Komponenterna som används för att avgöra om en besökare har returnerat."
 
 <!-- markdownlint-enable MD034 -->
 
 
 >[!BEGINSHADEBOX]
 
-_Den här artikeln dokumenterar kohorttabellen i_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._<br/>_Se [Kohorttabell](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/cohort-table/cohort-analysis) för_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**-versionen av den här artikeln._
+_Den här artikeln dokumenterar kohorttabellen i_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**._<br/>_Se [Kohorttabell](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/cohort-table/cohort-analysis) för_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**-versionen av den här artikeln._
 
 >[!ENDSHADEBOX]
 
