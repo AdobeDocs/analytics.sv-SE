@@ -16,7 +16,7 @@ ht-degree: 0%
 Som standard kan bara administratörer skapa anteckningar. Användare har behörighet att visa anteckningar, ungefär som hur användare visar andra komponenter (till exempel segment, beräknade värden osv.).
 
 
-Administratörer kan dock ge användare behörigheten [!UICONTROL Annotation Creation] (analysverktyg) via [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/analytics-tools.html).
+Administratörer kan dock ge användare behörigheten [!UICONTROL Annotation Creation] (analysverktyg) via [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/analytics-tools.html?lang=sv-SE).
 
 Du kan skapa en anteckning på följande sätt:
 
