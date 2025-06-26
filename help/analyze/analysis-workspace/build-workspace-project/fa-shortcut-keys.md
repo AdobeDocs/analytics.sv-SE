@@ -5,79 +5,85 @@ title: Snabbtangenter (kortkommandon)
 feature: Workspace Basics
 role: User, Admin
 exl-id: 742e7d69-2acf-48a9-aaf3-1cb3a73944af
-source-git-commit: f8a928782b4c4916f5ff2042cb72941d76f57d7d
+source-git-commit: 8f7c6a0d1477b599b05aeb7b74c4ee96531d294d
 workflow-type: tm+mt
-source-wordcount: '296'
+source-wordcount: '405'
 ht-degree: 0%
 
 ---
 
 # Snabbtangenter (kortkommandon)
 
-Snabbtangenter (kortkommandon) finns i Analysis Workspace för smidig navigering, analys, tillägg av paneler och visualiseringar samt demokratisering (delning).
+Observera att följande symboler kan användas på tangentbordet:
 
-Obs!
-* `Ctrl` = Windows och `Command` = Mac
-* `Alt` = Windows och `Option` = Mac
+- **⇧** för **[!UICONTROL ** shift **]**.
+- **⌘** för **[!UICONTROL ** cmd **]** (kommando).
+- **⌃** för **[!UICONTROL ** ctrl **]** (kontroll).
+- **⌥** för **[!UICONTROL ** opt **]** (alternativ).
+- **⎇** för **[!UICONTROL ** alt **]** (alternativ).
 
 ## Navigeringsåtgärder
 
-| Åtgärd | Genväg |
-| --- | --- |
-| Skapa nytt projekt | Ctrl + Skift + p |
-| Öppna befintligt projekt | ctrl + o |
-| Gå till rutan Paneler | Alt + Skift + 1 |
-| Gå till fönstret Visualiseringar | Alt + Skift + 2 |
-| Gå till rutan Komponenter | Alt + Skift + 3 |
-| Komprimera/expandera alla paneler | alt + m |
-| Visa/dölj aktiv panel | alt + Ctrl + m |
-| Flytta till nästa panel | Alt + Högertangent |
-| Flytta till föregående panel | Alt + Vänsterpil |
+| Åtgärd | Genväg till Mac | Kortkommando i Windows |
+| --- | --- | --- | 
+| Skapa nytt projekt | **[!UICONTROL *cmd + shift + p *]** | **[!UICONTROL *Ctrl + Skift + p *]** |
+| Öppna befintligt projekt | **[!UICONTROL *cmd + o *]** | **[!UICONTROL *ctr + o *]** |
+| Gå till rutan Paneler | **[!UICONTROL *opt + shift + 1 *]** | **[!UICONTROL *alt + Skift + 1 *]** |
+| Gå till fönstret Visualiseringar | **[!UICONTROL *opt + shift + 2 *]** | **[!UICONTROL *alt + Skift + 2 *]** |
+| Gå till rutan Komponenter | **[!UICONTROL *opt + shift + 3 *]** | **[!UICONTROL *alt + Skift + 3 *]** |
+| Komprimera/expandera alla paneler | **[!UICONTROL *opt + m *]** | **[!UICONTROL *alt + m *]** |
+| Visa/dölj aktiv panel | **[!UICONTROL *opt + cmd + m *]** | **[!UICONTROL *alt + Ctrl + m *]** |
+| Flytta till nästa panel | **[!UICONTROL *opt *+ {2 }︎]**▶ | **[!UICONTROL *alt *+ {2 }︎]**▶ |
+| Flytta till föregående panel | **[!UICONTROL *opt *+ {2 }︎]**◀ | **[!UICONTROL *alt *+ {2 }︎]**◀ |
 
 ## Analysåtgärder
 
-| Åtgärd | Genväg |
-| --- | --- |
-| Söka i vänster ratt | ctrl + / |
-| Skapa en avisering | Ctrl + Skift + a |
-| Skapa en anteckning | Ctrl + Skift + O |
-| Skapa beräknat mått | Ctrl + Skift + C |
-| Skapa ett datumintervall | Ctrl + Skift + D |
-| Skapa ett segment | Ctrl + Skift + e |
-| Rensa alla | alt + w |
-| Kopiera | ctrl + c |
-| Gör om | Ctrl + Skift + z |
-| Ångra | ctrl + z |
-| Uppdatera komponenter | Alt + Skift + R |
-| Uppdatera projekt | alt + r |
-| Ange som landningssida | Ctrl + Skift + l |
+| Åtgärd | Genväg till Mac | Kortkommando i Windows |
+| --- | --- | --- | 
+| Sök i den vänstra panelen | **[!UICONTROL *cmd + /*]** | **[!UICONTROL *ctrl + /*]** |
+| Skapa en avisering | **[!UICONTROL *cmd + shift + a *]** | **[!UICONTROL *Ctrl + Skift + a *]** |
+| Skapa beräknat mått | **[!UICONTROL *cmd + shift + c *]** | **[!UICONTROL *Ctrl + Skift + c *]** |
+| Skapa ett datumintervall | **[!UICONTROL *cmd + shift + d *]** | **[!UICONTROL *Ctrl + Skift + d *]** |
+| Skapa ett segment | **[!UICONTROL *cmd + shift + e *]** | **[!UICONTROL *Ctrl + Skift + e *]** |
+| Rensa alla | **[!UICONTROL *alt + w *]** | **[!UICONTROL *opt + w *]** |
+| Kopiera | **[!UICONTROL *cmd + c *]** | **[!UICONTROL *ctrl + c *]** |
+| Gör om | **[!UICONTROL *cmd + shift + z *]** | **[!UICONTROL *Ctrl + Skift + z *]** |
+| Ångra | **[!UICONTROL *cmd + z *]** | **[!UICONTROL *ctrl + z *]** |
+| Uppdatera komponenter | **[!UICONTROL *opt + shift + r *]** | **[!UICONTROL *alt + Skift + r *]** |
+| Uppdatera projekt | **[!UICONTROL *opt + r *]** | **[!UICONTROL *alt + r *]** |
+| Ange som landningssida | **[!UICONTROL *cmd + shift + l *]** | **[!UICONTROL *Ctrl + Skift + l *]** |
 
 ## Lägga till paneler och visualiseringar
 
-| Åtgärd | Genväg |
-| ---|---|
-| Ny analys för målpanelen | alt + g |
-| Ny attributpanel | alt + e |
-| Ny tom panel | alt + b |
-| Ny friformspanel | alt + a |
-| Ny panel för samtidiga visningsprogram för media | Alt + H |
-| Ny snabbinsikter-panel | alt + f |
-| Ny jämförelsepanel för segment | alt + C |
-| Ny friformstabell | alt + 1 |
-| Nytt linjediagram | alt + 2 |
-| Nytt stapeldiagram | alt + 3 |
+| Åtgärd | Genväg till Mac | Kortkommando i Windows |
+| --- | --- | --- | 
+| Ny attributpanel | **[!UICONTROL *opt + e *]** | **[!UICONTROL *alt + e *]** |
+| Ny tom panel | **[!UICONTROL *opt + b *]** | **[!UICONTROL *alt + b *]** |
+| Ny friformspanel | **[!UICONTROL *opt + a *]** | **[!UICONTROL *alt + a *]** |
+| Ny snabbinsikter-panel | **[!UICONTROL *opt + f *]** | **[!UICONTROL *alt + f *]** |
+| Ny friformstabell | **[!UICONTROL *opt + 1 *]** | **[!UICONTROL *alt + 1 *]** |
+| Nytt linjediagram | **[!UICONTROL *opt + 2 *]** | **[!UICONTROL *alt + 2 *]** |
+| Nytt stapeldiagram | **[!UICONTROL *opt + 3 *]** | **[!UICONTROL *alt + 3 *]** |
+| Nytt kombinationsdiagram | **[!UICONTROL *opt + 4 *]** | **[!UICONTROL *alt + 4 *]** |
+
+## Flytta panelåtgärder
+
+| Åtgärd | Genväg till Mac | Kortkommando i Windows |
+| --- | --- | --- | 
+| Flytta panelen uppåt | **[!UICONTROL *cmd + opt + up *]** | **[!UICONTROL *alt + Ctrl + uppåt *]** |
+| Flytta panelen nedåt | **[!UICONTROL *cmd + opt + down *]** | **[!UICONTROL *alt + Ctrl + nedåt *]** |
 
 ## Demokratiseringsåtgärder
 
-| Åtgärd | Genväg |
-| --- | --- |
-| Spara projekt | Ctrl + s |
-| Spara projekt som | Ctrl + Skift + S |
-| Spara som mall | alt + t |
-| Hämta som CSV | Ctrl + Skift + V |
-| Hämta som PDF | Ctrl + Skift + b |
-| Kuratera projektdata | Ctrl + Skift + g |
-| Dela projekt | Ctrl + g |
-| Hämta projektlänk | alt + l |
-| Skicka fil nu | alt + s |
-| Skicka fil enligt schema | Skift+Alt+s |
+| Åtgärd | Genväg till Mac | Kortkommando i Windows |
+| --- | --- | --- | 
+| Spara projekt | **[!UICONTROL *cmd + s *]** | **[!UICONTROL *ctrl + s *]** |
+| Spara projekt som | **[!UICONTROL *cmd + shift + s *]** | **[!UICONTROL *Ctrl + Skift + s *]** |
+| Spara som mall | **[!UICONTROL *opt + t *]** | **[!UICONTROL *alt + t *]** |
+| Hämta som CSV | **[!UICONTROL *cmd + shift + v *]** | **[!UICONTROL *Ctrl + Skift + v *]** |
+| Ladda ned som PDF | **[!UICONTROL *cmd + shift + b *]** | **[!UICONTROL *Ctrl + Skift + b *]** |
+| Kuratera projektdata | **[!UICONTROL *cmd + shift + g *]** | **[!UICONTROL *Ctrl + Skift + g *]** |
+| Dela projekt | **[!UICONTROL *cmd + g *]** | **[!UICONTROL *ctrl + g *]** |
+| Hämta projektlänk | **[!UICONTROL *alt + l *]** | **[!UICONTROL *alt + l *]** |
+| Skicka fil nu | **[!UICONTROL *alt + s *]** | **[!UICONTROL *alt + s *]** |
+| Skicka fil enligt schema | **[!UICONTROL *Skift + alt + s *]** | **[!UICONTROL *Skift + alt + s *]** |

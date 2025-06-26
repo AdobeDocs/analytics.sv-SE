@@ -5,47 +5,81 @@ role: User, Admin
 solution: Analytics
 feature: Annotations
 exl-id: 722d7636-f619-479a-97f1-3da23e8f7f83
-source-git-commit: ac9e4934cee0178fb00e4201cc3444d333a74052
+source-git-commit: e9370d42e84237cb563d9b0776612ca08f097c0b
 workflow-type: tm+mt
-source-wordcount: '275'
+source-wordcount: '296'
 ht-degree: 0%
 
 ---
 
 # Översikt över anteckningar
 
-Anteckningar i Workspace gör att ni effektivt kan kommunicera kontextuella datanunkter och insikter till er organisation. De gör att du kan koppla kalenderhändelser till specifika mått/mätvärden. Du kan anteckna ett datum eller datumintervall med kända dataproblem, allmänna helgdagar, kampanjstarter osv. Du kan sedan visa händelser grafiskt och se om kampanjer eller andra händelser har påverkat webbplatsens trafik, intäkter eller andra mätvärden.
+Anteckningar gör att ni effektivt kan kommunicera kontextuella datanunkter och insikter till andra intressenter i organisationen. Anteckningar gör att du kan koppla kalenderhändelser till specifika dimensioner och mätvärden. Du kan anteckna ett datum eller datumintervall med kända dataproblem, allmänna helgdagar, kampanjstarter osv. Du kan sedan visa händelser grafiskt och se om kampanjer eller andra händelser har påverkat webbplatstrafiken, användningen av mobilappar, intäkterna eller andra mätvärden.
 
-Anta att du delar projekt med din organisation. Om ni hade ett stort trafiksprång på grund av en marknadsföringskampanj kan ni skapa en kommentar om startdatum för kampanjer och ange den som omfattning för hela rapportsviten. När användarna visar datauppsättningar som innehåller det datumet, ser de anteckningen i sina projekt, tillsammans med deras data.
+Du delar till exempel projekt med din organisation. Om din unika besökare försämrades märkbart kan du skapa en **besökare som avtar**-anteckning och ange den som omfattning för hela rapportsviten. När användarna visar en rapportserie som innehåller det datumet, ser de anteckningen i sina projekt, tillsammans med deras data.
 
-![](assets/multi-day.png)
+![Linjediagram med anteckning markerad.](assets/annotation-example.png)
 
-Tänk på detta:
+Anteckningar kan gälla för:
 
-* Anteckningar kan knytas till ett enstaka datum eller till ett datumintervall.
+* Ett enstaka datum eller ett datumintervall.
 
-* De kan gälla för hela datauppsättningen eller för angivna mått, dimensioner eller segment.
+* Hela datauppsättningen eller specifika mått, dimensioner eller segment.
 
-* De kan gälla för det projekt i vilket de skapades (standard) eller för alla projekt.
+* Det projekt i vilket anteckningar skapas (standard) eller i alla projekt.
 
-* De kan gälla för den rapportsserie som de skapades i (standard) eller för alla rapportsviter.
+* Datavyn där anteckningar skapas (standard) eller alla datavyer.
 
-## Behörigheter {#permissions}
+Se [Skapa anteckningar](create-annotations.md) för de olika alternativ som är tillgängliga för att skapa anteckningar. Sedan skapar, ändrar och sparar du anteckningar i [Anteckningsverktyget](create-annotations.md#annotation-builder).
 
-Som standard kan bara administratörer skapa anteckningar. Användare har rätt att visa anteckningar på samma sätt som andra Analytics-komponenter (som segment, beräknade värden osv.).
+Du använder [Anteckningshanteraren](manage-annotations.md) för att hantera anteckningar.
 
-Administratörer kan dock ge användare behörigheten [!UICONTROL Annotation Creation] (analysverktyg) via [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/analytics-tools.html?lang=sv-SE).
-
-## Aktivera eller inaktivera anteckningar {#annotations-on-off}
+## Aktivera eller inaktivera anteckningar
 
 Anteckningar kan aktiveras och avaktiveras på flera nivåer:
 
-* På visualiseringsnivå: [!UICONTROL Visualization] inställningar > [!UICONTROL Show annotations]
+| Nivå | Använda... |
+|---|---|
+| **Visualisering** | Aktivera eller inaktivera ![Inställning](/help/assets/icons/Setting.svg) > **[!UICONTROL Settings]** > **[!UICONTROL Show annotations]**.<br/>![Aktivera inaktivering av anteckningar för en visualisering](assets/annotations-visualization.png) |
+| **Projekt** | På en projektmeny för Workspace väljer du **[!UICONTROL Project]** > **[!UICONTROL Project info & settings]** och aktiverar eller inaktiverar **[!UICONTROL Show annotations]**.<br/>![Aktivera inaktivering av anteckningar för ett projekt](assets/annotations-project.png) |
+| **Användare** | På fliken **[!UICONTROL Components]** väljer du **[!UICONTROL Preferences]** eller från en projektmeny för Workspace väljer du **[!UICONTROL Project]** > **[!UICONTROL User preferences]**. <br/>I **[!UICONTROL Preferences]** väljer du **[!UICONTROL Projects & Analysis]**. Välj **[!UICONTROL Data]** i det vänstra flikfältet. Längst ned aktiverar eller inaktiverar du **[!UICONTROL Show annotations]** under rubriken **[!UICONTROL Freeform table]**.<br/>![Aktivera inaktiverade anteckningar för en användare](assets/annotations-user.png) |
 
-* På projektnivå: [!UICONTROL Project info & settings] > [!UICONTROL Show annotations]
+<!--
+# Annotations overview
 
-* På användarnivå: [!UICONTROL Components] > [!UICONTROL User preferences] > [!UICONTROL Data] > [!UICONTROL Show annotations]
+Annotations in Workspace enable you to effectively communicate contextual data nuances and insights to your organization. They let you tie calendar events to specific dimensions/metrics. You can annotate a date or date range with known data issues, public holidays, campaign launches, etc. You can then graphically display events and see whether campaigns or other events have affected your site traffic, revenue, or any other metric.
+
+For example, let's say you are sharing projects with your organization. If you had a major spike in traffic due to a marketing campaign, you could create a "Campaign launch date" annotation and scope it for your whole report suite. When your users view any data sets that included that date, they see the annotation within their projects, alongside their data.
+
+![Annotation example](assets/annotation-example.png)
+
+Keep this in mind:
+
+* Annotations can be tied to a single date or to a date range.
+
+* They can apply to your entire data set or to specified metrics, dimensions, or segments.
+
+* They can apply to the project in which they were created (default) or to all projects.
+
+* They can apply to the report suite in which they were created (default) or to all report suites.
+
+## Permissions {#permissions}
+
+By default, only Admins can create annotations. Users have rights to view annotations like they do with other other Analytics components (such as segments, calculated metrics, etc.).
+
+However, Admins can give the [!UICONTROL Annotation Creation] permission (Analytics Tools) to users via the [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/analytics-tools.html).
+
+## Turn annotations on or off {#annotations-on-off}
+
+Annotations can be turned on or off at several levels:
+
+* At the Visualization level: [!UICONTROL Visualization] settings > [!UICONTROL Show annotations]
+
+* At the Project level: [!UICONTROL Project info & settings] > [!UICONTROL Show annotations]
+
+* At the User level: [!UICONTROL Components] > [!UICONTROL User preferences] > [!UICONTROL Data] > [!UICONTROL Show annotations]
 
 ![](assets/show-ann.png)
 
 ![](assets/show-ann2.png)
+-->

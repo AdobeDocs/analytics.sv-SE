@@ -4,33 +4,71 @@ title: Visa densitet
 feature: Workspace Basics
 role: User, Admin
 exl-id: ddb9bab2-cf92-41ad-b8d1-86c626024ed6
-source-git-commit: d7a6867796f97f8a14cd8a3cfad115923b329c7c
+source-git-commit: 8f7c6a0d1477b599b05aeb7b74c4ee96531d294d
 workflow-type: tm+mt
-source-wordcount: '101'
+source-wordcount: '98'
 ht-degree: 0%
 
 ---
 
-# [!UICONTROL View Density]
+# Visa densitet
 
-Om du justerar [!UICONTROL view density] kan du se mer data på skärmen genom att minska den lodräta utfyllnaden för den vänstra listen, frihandstabeller och kohorttabeller. Det finns tre alternativ när du växlar visningsdensitet med alternativknappar:
+Genom att justera visningsdensiteten kan du se mer data på skärmen genom att minska den lodräta utfyllnaden för den vänstra panelen, frihandstabeller och kohorttabeller. Tre alternativ är tillgängliga:
 
-- **[!UICONTROL Compact]**: Det här är den version som har den mest komprimerade vyn.
-- **[!UICONTROL Comfortable]**: Det lämnar lite mer utfyllnad än den komprimerade versionen.
-- **[!UICONTROL Expanded]** (standard): Det här är vyn som du är van vid i Workspace.
+>[!BEGINTABS]
 
-![](assets/view-density.png)
+>[!TAB Kompakt]
+
+Det här är den version som har den mest komprimerade vyn.
+
+![Täthet för den komprimerade vyn.](assets/view-density-compact.png)
+
+>[!TAB Bekvämlig]
+
+Detta är den vy du är van vid i Workspace.
+
+![Täthet för utökad vy.](assets/view-density-comfortable.png)
+
+>[!TAB Utökad]
+
+Det här är den version som har den mest utökade vyn.
+
+![Täthet för utökad vy.](assets/view-density-expanded.png)
+
+>[!ENDTABS]
+
 
 Så här anger du visningsdensitet:
 
-1. I Workspace går du till **[!UICONTROL Projects]** > **[!UICONTROL Project Info and Settings]**.
+1. I Workspace går du till **[!UICONTROL Projects]** > **[!UICONTROL Project info and settings]**.
 
-1. Välj bland de tre alternativen ovan och klicka på **[!UICONTROL Save]**.
+1. Välj ett **[!UICONTROL View density]**-alternativ och välj **[!UICONTROL Save]**.
+
+
+
+<!--
+# [!UICONTROL View Density]
+
+Adjusting the [!UICONTROL view density] lets you see more data on the screen by reducing the vertical padding of the left rail, freeform tables and cohort tables. You have 3 options when toggling the view density via radio buttons:
+
+- **[!UICONTROL Compact]**: This is the version with the most condensed view.
+- **[!UICONTROL Comfortable]**: This leaves a little more padding than the Compact version.
+- **[!UICONTROL Expanded]** (default): This is the view you are used to in Workspace.
+
+![](assets/view-density.png)
+
+To set the view density:
+
+1. In Workspace, navigate to **[!UICONTROL Projects]** > **[!UICONTROL Project Info and Settings]**.
+
+1. Select among the 3 options outlined above and click **[!UICONTROL Save]**.
 
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visa densitet](https://video.tv.adobe.com/v/25963?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [View density](https://video.tv.adobe.com/v/25963?quality=12&learn=on){target="_blank"} for a demo video.
 
 >[!ENDSHADEBOX]
 
+
+-->

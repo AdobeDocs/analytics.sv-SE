@@ -1,10 +1,10 @@
 ---
 description: Lär dig hur du aktiverar Adobe Campaign Standard-rapportering i Adobe Analytics
 title: Hur integrerar jag Adobe Campaign Standard Reporting i Adobe Analytics?
-feature: Campaign Integration
+feature: Admin Tools
 exl-id: 63bae5ee-f94d-43fa-87ce-6380236745d6
 role: Admin
-source-git-commit: 43c39b99cbae3e714b7f017dec14dd02fa350790
+source-git-commit: a1eea822b197c830abf524555b0dc2746f67c53a
 workflow-type: tm+mt
 source-wordcount: '465'
 ht-degree: 64%
@@ -17,7 +17,7 @@ ht-degree: 64%
 Mer information om hur du konfigurerar den här integreringen finns i [dokumentationen för Adobe Campaign](https://helpx.adobe.com/se/campaign/standard/integrating/using/about-campaign-analytics-integration.html).
 
 >[!IMPORTANT]
->Den här artikeln gäller endast Adobe Campaign **Standard** -rapportering. Se [här](https://experienceleague.adobe.com/docs/analytics/integration/analytics-to-campaign-classic.html?lang=sv-SE) om du vill lägga till Adobe Campaign **Classic**-rapportering.
+>Den här artikeln gäller endast Adobe Campaign **Standard** -rapportering. Se [här](https://experienceleague.adobe.com/docs/analytics/integration/analytics-to-campaign-classic.html) om du vill lägga till Adobe Campaign **Classic**-rapportering.
 
 Integrationen mellan Adobe Analytics och Adobe Campaign Standard:
 
@@ -31,7 +31,7 @@ Integrationen mellan Adobe Analytics och Adobe Campaign Standard:
 
 ## Steg 1. Aktivera Adobe Campaign Standard-rapportering {#section_C685EF10505045708A6536BB13F6CD58}
 
-För att kunna visa data om Campaign Standarder i Analytics måste ni först aktivera kampanjrapportering i Report Suite Manager.
+För att kunna visa Campaign Standard-data i Analytics måste ni först aktivera Campaign-rapportering i Report Suite Manager.
 
 1. Navigera till  **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]** > **`<select report suite>`** > **[!UICONTROL Edit Settings]** > **[!UICONTROL Adobe Campaign]** > **[!UICONTROL Adobe Campaign Reporting]**.
 1. Klicka på **[!UICONTROL Enable Campaign Reporting]**.

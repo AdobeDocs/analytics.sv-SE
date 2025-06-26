@@ -1,9 +1,9 @@
 ---
-description: Med segmentbyggaren kan du jämföra och begränsa värden med hjälp av valda operatorer.
+description: Med segmentverktyget kan du jämföra och begränsa värden med hjälp av valda operatorer.
 title: Jämförelseoperatorer för segment
 feature: Segmentation
 exl-id: 1ec1ff05-03a9-4151-8fcb-a72ebbce87dd
-source-git-commit: b53ef727adc563e05403c50d80bbd0c48bb8a054
+source-git-commit: 80e4a3ba4a5985563fcf02acf06997b4592261e4
 workflow-type: tm+mt
 source-wordcount: '1056'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Jämförelseoperatorer för segment
 
-Med segmentbyggaren kan du jämföra och begränsa värden med hjälp av valda operatorer. Det finns tre kategorier av operatorer: Standard, Data Warehouse och Distinct Count.
+Med segmentverktyget kan du jämföra och begränsa värden med hjälp av valda operatorer. Det finns tre kategorier av operatorer: Standard, Data Warehouse och Distinct Count.
 
 Beroende på vilken operator du väljer:
 
@@ -67,7 +67,7 @@ Du har till exempel ett sidnamn som heter *Min coola produkt*.
 
 ## Distinkta räkningsoperatorer
 
-Du kan segmentera ett visst antal artiklar i en dimension. Exempel:&quot;Besökare som har tittat på mer än fem olika produkter&quot; eller&quot;Besök där mer än fem olika sidor har setts.&quot;
+Du kan segmentera ett visst antal artiklar i en dimension. Exempel: *Besökare som visade mer än fem olika produkter*, eller *Besök där fler än fem olika sidor sågs*.
 
 | Operator | Den valda dimensionen, segmentet eller metriska händelsen... |
 | --- | --- |

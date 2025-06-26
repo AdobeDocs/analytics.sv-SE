@@ -4,9 +4,9 @@ description: Lär dig hur och varför du skapar projekt i Workspace med flera ra
 feature: Workspace Basics
 role: User, Admin
 exl-id: 0429ddd9-935f-44ef-ae1e-97bb02e6e2df
-source-git-commit: d7a6867796f97f8a14cd8a3cfad115923b329c7c
+source-git-commit: 8f7c6a0d1477b599b05aeb7b74c4ee96531d294d
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '434'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Du kan skapa projekt i Analysis Workspace med data från mer än en rapportserie. Rapportsviterna väljs på panelnivå så att du kan välja olika rapportsviter för varje panel i samma Workspace-projekt.
 
-Den här funktionen är användbar om du till exempel vill
+Den här funktionen är användbar om du vill:
 
 * Jämför data från två olika regioner och data finns i två olika rapportsviter. Du kan skapa tabeller och visualiseringar för att jämföra data sida vid sida.
 
@@ -37,16 +37,12 @@ Du kan använda en rapportserie för alla paneler samtidigt genom att högerklic
 
 ## Aktiv panel
 
-Vi introducerar begreppet&quot;aktiv panel&quot; jämfört med&quot;inaktiv panel&quot; med den här funktionen. Den aktiva panelen känns igen av den ljusblå kanten runt den. Om du klickar inuti en panel blir panelen aktiv.
+Den aktiva panelen känns igen av den ljusblå kanten runt den. Välj bara den panelen i en panel.
 
 >[!TIP]
+>
 >Du kan dra och släppa till valfri panel som finns i samma rapportserie som den aktiva panelen. Genom att dra till en inaktiv panel i samma rapportserie aktiveras panelen.
-
-| Uppgift | Aktiv panel | Inaktiv panel |
-| --- | --- | --- |
-| Byt rapportsvit | Ja | Nej |
-| Dra och släppa komponenter | Ja | Ja, för alla paneler som finns i samma rapportsserie som den aktiva panelen. |
-| Dra och släpp visualiseringar | Ja | Ja, för alla paneler som finns i samma rapportsserie som den aktiva panelen. |
+>
 
 ## Arbeta med flera rapportsviter
 
@@ -58,7 +54,9 @@ Vi introducerar begreppet&quot;aktiv panel&quot; jämfört med&quot;inaktiv pane
 
 
    >[!NOTE]
+   >
    >Ibland visas en banderoll när du läser in ett projekt (eller byter till en rapportsserie) där inte alla komponenter som ingår i projektet ingår i rapportsviten. De komponenter som saknas listas. Följ [de här instruktionerna](/help/admin/admin-console/permissions/product-profile.md) om du vill ange behörigheter för de mått/mått som krävs.
+   >
 
    ![](assets/incompat-rs.png)
 
@@ -73,6 +71,6 @@ Vi introducerar begreppet&quot;aktiv panel&quot; jämfört med&quot;inaktiv pane
 
 1. (Valfritt) Du kan också gå till andra komponentbyggare i Analytics och se till att de nu visar en etikett för rapportsviten som anger
 
-   * Var ett segment ska skapas: [Segmentbyggare](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-build.html?lang=sv-SE).
-   * Där ett beräknat mått skapas: [Beräknad metrisk Builder](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html?lang=sv-SE).
-   * Var en avisering skapas: [Varningsbyggaren](https://experienceleague.adobe.com/docs/analytics/components/alerts/alert-builder.html?lang=sv-SE).
+   * Var ett segment skapas: [Segmentbyggare](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-build.html).
+   * Där ett beräknat mått skapas: [Beräknad metrisk byggare](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html).
+   * Var en avisering byggs: [Varningsbyggaren](https://experienceleague.adobe.com/docs/analytics/components/alerts/alert-builder.html).

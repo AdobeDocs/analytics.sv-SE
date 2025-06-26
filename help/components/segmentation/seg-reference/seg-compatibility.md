@@ -3,7 +3,7 @@ description: Alla segment som skapas i segmentbyggaren är inte kompatibla med D
 title: Data Warehouse segmentkompatibilitet
 feature: Segmentation
 exl-id: 66b86226-ef4c-4a1a-abe1-3c3accf419e5
-source-git-commit: 002ce0f001796187c01fc955b79ac967ba36da9a
+source-git-commit: 80e4a3ba4a5985563fcf02acf06997b4592261e4
 workflow-type: tm+mt
 source-wordcount: '342'
 ht-degree: 1%
@@ -45,14 +45,14 @@ Alla segment som skapats i segmentverktyget är inte kompatibla med [!DNL Data W
   </tr> 
   <tr> 
    <td> <b>Dimensioner</b> </td> 
-   <td>Dra och släpp en dimension i segmentbyggarens fält <span class="uicontrol"> Definitioner </span> om du vill veta mer om dess produktkompatibilitet. De här måtten stöds till exempel bara i Analysis Workspace, Rapporter och analyser: 
+   <td>Dra och släpp en dimension i segmentbyggarens fält <span class="uicontrol"> Definitioner </span> för att ta reda på om den är kompatibel med produkten. De här måtten stöds till exempel bara i Analysis Workspace, Rapporter och analyser: 
     <ul> 
      <li>Startserver </li> 
      <li>Postkategori </li> 
      <li>Anmälningsdatum </li> 
      <li>Alla söksidrankning </li> 
     </ul> </td> 
-   <td> Dra och släpp en dimension i segmentbyggarens fält <span class="uicontrol"> Definitioner </span> om du vill veta mer om dess produktkompatibilitet. De här måtten stöds till exempel bara i Data Warehouse: 
+   <td> Dra och släpp en dimension i segmentbyggarens fält <span class="uicontrol"> Definitioner </span> för att ta reda på om den är kompatibel med produkten. De här måtten stöds till exempel bara i Data Warehouse: 
     <ul> 
      <li>IP-adress </li> 
      <li>Sidans URL </li> 
@@ -99,4 +99,4 @@ Alla segment som skapats i segmentverktyget är inte kompatibla med [!DNL Data W
  </tbody> 
 </table>
 
-*Obs! Data Warehouse stöder inte alla fall där en `exclusion` - eller `without` -behållare används när `AND/OR` används. När du använder en sådan kombination stöds endast de segment som kan skrivas om som `A AND NOT B` (eller **include this property**&#x200B;och **exclude this property**) i Data Warehouse.*
+*Obs! Data Warehouse stöder inte alla fall där en `exclusion` - eller `without` -behållare används när `AND/OR` används. När du använder en sådan kombination stöds endast de segment som kan skrivas om som `A AND NOT B` (eller **include this property**och **exclude this property**) i Data Warehouse.*

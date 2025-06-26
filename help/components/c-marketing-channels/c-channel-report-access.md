@@ -3,9 +3,9 @@ description: Beskriver hur du kör Marketing Channel-rapporten, tilldelar begrä
 title: Behörigheter för marknadsföringskanal
 feature: Marketing Channels
 exl-id: 3b3bcf9b-eee7-4d84-9d4a-e4a24e0cdd4d
-source-git-commit: 93099d36a65ca2bf16fbd6342f01bfecdc8c798e
+source-git-commit: c5573b7252a4113355cc4b96d467fde2c86ba28f
 workflow-type: tm+mt
-source-wordcount: '227'
+source-wordcount: '231'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->För att maximera effekten av marknadsföringskanaler för attribuering och Customer Journey Analytics har vi publicerat [reviderade best practices](/help/components/c-marketing-channels/mchannel-best-practices.md).
+>För att maximera effekten av marknadsföringskanaler för Attribution och Customer Journey Analytics har vi publicerat [reviderade best practices](/help/components/c-marketing-channels/mchannel-best-practices.md).
 >
 >Analysadministratörer kan hantera marknadsföringskanaler för sina organisationer enligt beskrivningen i [Hantera marknadsföringskanaler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/marketing-channels/c-channels.md).
 
@@ -26,6 +26,7 @@ Här är behörigheterna för verktygen i Report Suite som krävs i [Admin Conso
 | Report Suite-verktyg | Kostnader | Ger åtkomst till marknadsföringskanaler > Marknadskanalkostnader i Report Suite Manager. |
 | Report Suite-verktyg | Klassificeringar | Ger åtkomst till alla klassificeringsinställningar i Report Suite Manager, inklusive Marketing Channels > Marketing Channel Classifications. |
 | Analysverktyg | Analysis Workspace Access | Ger åtkomst till Analysis Workspace. Användarna måste tillhöra antingen den här gruppen (standard) eller rapport- och analysåtkomst för att kunna använda dimensionerna för marknadsföringskanaler i Workspace. |
-| Analysverktyg | Reports and Analytics Access | Ger åtkomst till Reports and Analytics. Användare måste tillhöra den här gruppen eller Analysis Workspace Access (standard) för att kunna använda Adobe Analytics. |
+| Analysverktyg | Rapporter och analysåtkomst | Ger åtkomst till rapporter och analyser. Användare måste tillhöra den här gruppen eller Analysis Workspace Access (standard) för att kunna använda Adobe Analytics. |
 
-Mer information om produktprofiler och Adobe Analytics-behörigheter i Admin Console finns [här](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html?lang=sv-SE).
+Mer information om produktprofiler och Adobe Analytics-behörigheter i Admin Console finns i [Produktprofiler för Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html).
+

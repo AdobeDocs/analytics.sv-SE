@@ -4,39 +4,63 @@ description: Visa anteckningar i Workspace.
 role: User, Admin
 feature: Annotations
 exl-id: 52b179fd-d9a4-4119-a3c6-f6a36f24f8ea
-source-git-commit: 20ab0e9728969c4cc11227a1255e41e3d1a1540f
+source-git-commit: d85e6990998e3c153ef969d8dc7f3a4835f683bf
 workflow-type: tm+mt
-source-wordcount: '240'
-ht-degree: 0%
+source-wordcount: '215'
+ht-degree: 1%
 
 ---
 
 # Visa anteckningar
 
-Anteckningarna visas något annorlunda beroende på om de sträcker sig över en enstaka dag eller ett datumintervall.
+Anteckningarna visas något annorlunda beroende på var de visas och om de sträcker sig över en dag eller ett datumintervall.
 
-## Visa anteckningar i linjediagram eller tabeller
+## Visa anteckningar i Workspace
 
-| Datum | Utseende |
+| Visualisering<br/>Typ | Beskrivning |
 | --- | --- |
-| **En dag** | ![](assets/single-day.png)<p>När du hovrar över anteckningen kan du se dess detaljer, redigera den genom att markera pennikonen eller ta bort den:<p> ![](assets/hover.png) |
-| **Datumintervall** | Ikonen ändras och när du håller markören över den visas datumintervallet.<p>![](assets/multi-day.png)<p>När du markerar den i linjediagrammet visas anteckningens metadata och du kan redigera eller ta bort den:![](assets/multi-hover.png)<p>I en tabell visas en ikon för varje datum i datumintervallet.<p>![](assets/multi-day-table.png) |
-| **Överlappande anteckningar** | På dagar som har fler än en anteckning kopplad till sig visas ikonen i grå färg.<p>![](assets/grey.png)<p>När du hovrar över den grå ikonen visas alla överlappande anteckningar:<p>![](assets/overlap.png) |
+| **Rad **<br/>**En dag** | När du väljer ![Anteckna](/help/assets/icons/Annotate.svg) i en radvisualisering visas ett popup-fönster med anteckningsinformationen.<br/>![Anteckning en dag](assets/annotation-single-day.png)<br/>Om du vill redigera anteckningen i [Anteckningsverktyget](create-annotations.md#annotation-builder) väljer du ![Redigera](/help/assets/icons/Edit.svg). Om du vill ta bort anteckningen väljer du ![Ta bort](/help/assets/icons/Delete.svg). |
+| **Rad **<br/>**Datumintervall** | När du väljer ![AnnotateRange](/help/assets/icons/AnnotateRange.svg) visas ett popup-fönster med anteckningsinformationen och en rad längst ned som anger datumintervallet.<br/>![Anteckningsintervall](assets/annotation-range.png)Om du vill redigera anteckningen i [Anteckningsverktyget](create-annotations.md#annotation-builder) väljer du ![Redigera](/help/assets/icons/Edit.svg). Om du vill ta bort anteckningen väljer du ![Ta bort](/help/assets/icons/Delete.svg). |
+| **Frihandstabell** | I en Freeform-tabell kan du komma åt alla anteckningar från anteckningsknappen längst upp till höger i visualiseringen. Välj ![Anteckna](/help/assets/icons/Annotate.svg) om du vill se en (rullningslista) med alla anteckningar.<br/>![Anteckningstabell](assets/annotations-table.png)<br/>För varje anteckning kan du välja ![Redigera](/help/assets/icons/Edit.svg) om du vill redigera anteckningen i [Anteckningsverktyget](create-annotations.md#annotation-builder) och ![Ta bort](/help/assets/icons/Delete.svg) om du vill ta bort anteckningen. |
 
 {style="table-layout:auto"}
 
-## Visa anteckningar i en PDF-fil
+## Visa anteckningar i en PDF
 
-Eftersom du inte kan hovra över ikoner i en PDF-fil innehåller den här filen (efter exporten) förklaringar längst ned på panelen. Här är ett exempel:
+När du laddar ned ditt projekt som PDF, eller skickar ditt projekt som PDF, sammanfattas anteckningarna i PDF i sammanfattningsavsnittet Anteckningar.
+
+![Markerad vy av en PDF-fil med förklaringar till anteckningar.](assets/annotations-pdf.png)
+
+
+<!--
+# View annotations
+
+Annotations manifest slightly differently, depending on whether they span a single day or a date range.
+
+## View annotations in Line charts or Tables
+
+| Date | Appearance |
+| --- | --- |
+| **Single day** |   ![](assets/single-day.png)<p>When you hover over the annotation, you can see its details, you can edit it by selecting the pen icon, or you can delete it:<p> ![](assets/hover.png) |
+| **Date range** |  The icon changes and when you hover over it, the date range appears.<p>![](assets/multi-day.png)<p>When you select it in the line chart, the annotation metadata appear, and you can edit or delete it:![](assets/multi-hover.png)<p>In a table, an icon appears on every date in the date range.<p>![](assets/multi-day-table.png)|
+| **Overlapping annotations** | On days that have more than one annotation tied to them, the icon appears in a grey color.<p>![](assets/grey.png)<p>When you hover over the grey icon, all overlapping annotations appear:<p>![](assets/overlap.png) |
+
+{style="table-layout:auto"}
+
+## View annotations in a .pdf file
+
+Since you cannot hover over icons in a .pdf file, this file (after export) provides notes of explanations at the bottom of a panel. Here is an example:
 
 ![](assets/ann-pdf.png)
 
-## Visa anteckningar med data som inte är trenddata
+## View annotations with non-trended data
 
-Ibland visas anteckningar med data som inte är trenddata, men som är knutna till en viss dimension. I så fall visas de bara i en sammanfattningsanteckning i det nedre högra hörnet. Här är ett exempel:
+Sometimes annotation are shown with non-trended data, but tied to a specific dimension. In that case, they appear only in a summary annotation in the bottom right corner. Here is an example:
 
 ![](assets/non-date.png)
 
-Sammanfattningsdiagrammet visas i alla visualiseringstyper i hörnet, inte bara i frihandstabeller och sammanfattningsnummer. Det visas också i visualiseringar som [!UICONTROL Donut], [!UICONTROL Flow],[!UICONTROL Fallout],[!UICONTROL Cohort] och så vidare.
+The summary chart appears in all visualization types in the corner, not just in non-trended freeform tables and summary numbers. It also appears in visualizations like [!UICONTROL Donut], [!UICONTROL Flow],[!UICONTROL Fallout],[!UICONTROL Cohort], and so on.
 
 ![](assets/ann-summary.png)
+
+-->

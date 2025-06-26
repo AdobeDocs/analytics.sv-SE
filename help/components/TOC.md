@@ -4,10 +4,10 @@ audience: end-user
 user-guide-title: Komponenthandbok för Analytics
 breadcrumb-title: Användarhandbok om komponenter
 user-guide-description: Hantera data med komponenter som segment, beräknade värden, virtuella rapportsviter, marknadsföringskanaler och klassificeringar. Lär dig mer om Analytics över flera enheter.
-source-git-commit: c2cd529b09b8fa46f5e7d4e18383832b1f2a0494
+source-git-commit: d85e6990998e3c153ef969d8dc7f3a4835f683bf
 workflow-type: tm+mt
-source-wordcount: '784'
-ht-degree: 6%
+source-wordcount: '773'
+ht-degree: 7%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 6%
 # [!DNL Adobe Analytics] Komponentguide {#components}
 
 + [Komponenthandbok för Analytics](home.md)
-+ [Versionsinformation för analyser](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html?lang=sv-SE)
++ [Versionsinformation för analyser](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html)
 + Mått {#dimensions}
    + [Översikt över dimensioner](dimensions/overview.md)
    + [Dimension-kompatibilitet](dimensions/compatibility.md)
@@ -195,23 +195,23 @@ ht-degree: 6%
       + [Kopiera segment](segmentation/segmentation-workflow/seg-copy.md)
       + [Hantera segment](segmentation/segmentation-workflow/seg-manage.md)
       + [Publicera segment i Experience Cloud](segmentation/segmentation-workflow/seg-publish.md)
-      + [Markera och tillämpa segment](segmentation/segmentation-workflow/t-seg-apply.md)
+      + [Använd segment](segmentation/segmentation-workflow/t-seg-apply.md)
    + Segmentreferens {#segment-reference}
       + [Operatorer](segmentation/seg-reference/seg-operators.md)
       + [Data Warehouse segmentkompatibilitet](segmentation/seg-reference/seg-compatibility.md)
       + [Segmenträttigheter efter roll](segmentation/seg-reference/seg-rights.md)
       + [Felsökning](segmentation/seg-reference/c-troubleshooting.md)
-   + [Frågor och svar om hantering av äldre segment](segmentation/seg-transition.md)
+   + [Vanliga frågor om äldre segment](segmentation/seg-transition.md)
    + [God praxis](segmentation/best-practices.md)
 + Beräknade mått {#calculated-metrics}
-   + [Beräknade och avancerade beräknade värden](c-calcmetrics/cm-overview.md)
+   + [Översikt](c-calcmetrics/cm-overview.md)
    + [Instruktionsfilmer](c-calcmetrics/cm-videos.md)
    + Arbetsflöde för beräknade mätvärden {#calcmetric-workflow}
-      + [Arbetsflöde för beräknade mätvärden](c-calcmetrics/c-workflow/cm-workflow/cm-workflow.md)
+      + [Skapa beräknade mått](c-calcmetrics/c-workflow/cm-workflow/cm-workflow.md)
       + [Hitta mätvärden](c-calcmetrics/c-workflow/cm-workflow/cm-finding.md)
-      + [Bygg mätvärden](c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-build-metrics.md)
-      + [Bygg enkla mätvärden](c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-pvv.md)
-      + [Bygg en mer komplex mätmetod](c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-orders-participation.md)
+      + [Bygg beräknade värden](c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-build-metrics.md)
+      + [Ett enkelt beräknat mått](c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-pvv.md)
+      + [Ett mer komplext beräknat mått](c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-orders-participation.md)
       + [Bygg ett deltagandemått](c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/participation-metric.md)
       + [Mättyp och attribuering](c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/m-metric-type-alloc.md)
       + [Segmenterade mätvärden](c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/metrics-with-segments.md)
@@ -224,12 +224,12 @@ ht-degree: 6%
       + [Godkänn beräknade värden](c-calcmetrics/c-workflow/cm-workflow/cm-approving.md)
       + [Dela beräknade värden](c-calcmetrics/c-workflow/cm-workflow/cm-sharing.md)
       + [Kopiera beräknade värden](c-calcmetrics/c-workflow/cm-workflow/cm-copy.md)
-      + [Beräknat måttansvarig](c-calcmetrics/c-workflow/cm-workflow/cm-manager.md)
+      + [Hantera beräknade värden](c-calcmetrics/c-workflow/cm-workflow/cm-manager.md)
    + Metrisk referens {#calcmetrics-reference}
-      + [Referens: grundläggande funktioner](c-calcmetrics/cm-reference/cm-functions.md)
-      + [Referens: avancerade funktioner](c-calcmetrics/cm-reference/cm-adv-functions.md)
+      + [Grundfunktioner](c-calcmetrics/cm-reference/cm-functions.md)
+      + [Avancerade funktioner](c-calcmetrics/cm-reference/cm-adv-functions.md)
       + [Mätkompatibilitet](c-calcmetrics/cm-compatibility.md)
-      + [Beräknade mått: rollbaserade rättigheter](c-calcmetrics/cm-role-based-rights.md)
+      + [Rollbaserade rättigheter](c-calcmetrics/cm-role-based-rights.md)
       + [Beräknade mätsummor](c-calcmetrics/cm-totals.md)
       + [Standardberäknade värden](c-calcmetrics/cm-reference/default-calcmetrics.md)
 + Virtuella rapportsviter {#virtual-report-suites}

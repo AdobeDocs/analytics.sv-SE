@@ -3,7 +3,8 @@ description: Använd snabbsegment i Analysis Workspace för Adobe Analytics
 title: Snabbsegment
 feature: Segmentation
 role: User
-source-git-commit: 5819026bd3798cd936094f138cd236b1cb4b278e
+exl-id: ce487fa0-dd81-44e4-a684-90979afaeb07
+source-git-commit: d85e6990998e3c153ef969d8dc7f3a4835f683bf
 workflow-type: tm+mt
 source-wordcount: '1096'
 ht-degree: 0%
@@ -13,7 +14,7 @@ ht-degree: 0%
 # Snabbsegment
 
 
-Med snabbsegment kan du snabbt utforska data i ett Workspace-projekt, utan att behöva skapa ett segment i [Segment Builder](seg-create.md).
+Med snabbsegment kan du snabbt utforska data i ett Workspace-projekt utan att behöva skapa ett segment i [segmentbyggaren](seg-create.md).
 
 
 
@@ -43,9 +44,9 @@ Så här skapar du ett snabbsegment:
 När du skapar ett snabbt segment med dra och släpp bör du tänka på följande:
 
 * Alla komponenttyper stöds inte. Beräknade mätvärden stöds inte, och endast mått och mätvärden från vilka du kan skapa segment stöds.
-* För mått och måttkomponenter skapar [snabbsegmentsverktyget](#quick-segment-builder) automatiskt ett `exists` -villkor. Om du till exempel drar och släpper `City` skapas villkoret `City exists`.
-* För dimensionsvärden skapar [snabbsegmentsverktyget](#quick-segment-builder) automatiskt ett `equals`-villkor. Om du till exempel drar och släpper `amsterdam` från dimensionen `City` skapas villkoret `City equals amsterdam`.
-* Om du drar och släpper `unspecified` eller `none` skapar [snabbsegmentsverktyget](#quick-segment-builder) automatiskt ett `does not exist`-villkor.
+* För mått och måttkomponenter skapar [snabbsegmentsverktyget](#quick-segment-builder) automatiskt ett **[!UICONTROL exists]** -villkor. Om du till exempel drar och släpper **[!UICONTROL City]** skapas villkoret **[!UICONTROL City]** **[!UICONTROL exists]**.
+* För dimensionsvärden skapar [snabbsegmentsverktyget](#quick-segment-builder) automatiskt ett **[!UICONTROL equals]**-villkor. Om du till exempel drar och släpper **[!UICONTROL amsterdam]** från dimensionsobjekten **[!UICONTROL City]** skapas villkoret **[!UICONTROL City]** **[!UICONTROL equals]** `Amsterdam`.
+* Om du drar och släpper **[!UICONTROL unspecified]** eller **[!UICONTROL none]** skapar [snabbsegmentsverktyget](#quick-segment-builder) automatiskt ett **[!UICONTROL does not exist]**-villkor.
 
 Snabbsegment som du skapar visas högst upp på panelen. Snabbsegment har ett ljusblått tunt fält till vänster. När ett snabbsegment är i redigeringsläge med hjälp av [snabbsegmentsverktyget](#quick-segment-builder) är bakgrunden i snabbsegmentet ljusblå.
 
@@ -61,7 +62,7 @@ Håll pekaren över **[!UICONTROL Quick segment]** om du vill hantera ett snabbs
 
 ## Bygg snabbt segment
 
-Nedan finns ett exempel på snabbsegmentsverktyget. I exemplet öppnas byggaren för ett snabbsegment med namnet `Interaction Channel equals Website AND Online Orders is greater than 1`. Snabbsegmentet längst upp gäller för panelen [!UICONTROL Average Order Value Dashboard] och alla visualiseringar i den.
+Nedan finns ett exempel på snabbsegmentsverktyget. I exemplet öppnas byggaren för ett snabbsegment med namnet `Interaction Channel = Website  AND Online Orders is greater than 1`. Snabbsegmentet längst upp gäller för panelen **[!UICONTROL Average Order Value Dashboard]** och alla visualiseringar i den.
 
 ![Skapa snabbsegment](assets/quick-segment-builder.png)
 
@@ -74,7 +75,7 @@ Rubrikområdet bestämmer snabbsegmentets namn, typ och omfång. Den visar ocks�
 | Element | Beskrivning |
 |---|---|
 | **[!UICONTROL Name]** | Namnet hämtas automatiskt från snabbsegmentsdefinitionen. |
-| **[!UICONTROL People]** <br/>![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) ![Alert](/help/assets/icons/Alert.svg) | Förhandsvisa visuella data som är resultatet av snabbsegmentet. En stapel och ett procenttal ger insikt i hur mycket av de totala data som är en del av resultatet av snabbsegmentet. En röd ![varning](/help/assets/icons/Alert.svg) signalerar att snabbsegmentet inte returnerar data. |
+| **[!UICONTROL People]** <br/>![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) ![Alert](/help/assets/icons/Alert.svg) | Förhandsvisa visuella data som är resultatet av snabbsegmentet. En stapel och ett procenttal ger insikt i hur mycket av de totala data som är en del av resultatet av snabbsegmentet. En ![varning](/help/assets/icons/AlertRed.svg) signalerar att snabbsegmentet inte returnerar data. |
 | **[!UICONTROL Include]**<br/>**[!UICONTROL Exclude]** | Välj i listrutan ![ChevronDown](/help/assets/icons/ChevronDown.svg) om du vill ta med eller exkludera resultatet av snabbsegmentet från data på panelen. |
 | **[!UICONTROL Event]**<br/>**[!UICONTROL Session]**<br/>**[!UICONTROL Person]** | Välj snabbsegmentets omfång på den nedrullningsbara menyn ![SparronDown](/help/assets/icons/ChevronDown.svg). |
 
@@ -108,5 +109,3 @@ Segment har följande fördelar jämfört med snabbsegment.
 
 * Segment kan göras tillgängliga i alla dina Workspace-projekt
 * Segment har stöd för större komplexitet med kapslade och hierarkiska [behållare](../seg-containers.md) och sekvenser (med [sekventiella segment](seg-sequential-build.md)).
-
-

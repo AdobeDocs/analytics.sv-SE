@@ -4,17 +4,17 @@ audience: end-user
 user-guide-title: Handbok om Analytics-verktyg
 breadcrumb-title: Användarhandbok om verktyg
 user-guide-description: Lär dig hur du använder verktyg i Analytics, inklusive Analysis Workspace, Analytics Dashboards, Report Builder, Legacy Report Builder och Activity Map.
-source-git-commit: cd456b4fe5c5f0c3939677b00b4db3c4569cca99
+source-git-commit: 5c9d6a5498fafdf05ff1f7f6c9b99f1a5de08db0
 workflow-type: tm+mt
-source-wordcount: '966'
-ht-degree: 6%
+source-wordcount: '960'
+ht-degree: 7%
 
 ---
 
 # Adobe Analytics Tools Guide {#analyze}
 
 + [Handbok om Analytics-verktyg](home.md)
-+ [Versionsinformation för analyser](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html?lang=sv-SE)
++ [Versionsinformation för analyser](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html)
 + Kom igång med Adobe Analytics {#admin-overview}
    + [Analytics - översikt](get-started/analytics-overview.md)
    + [Kom igång (efter roll)](get-started/get-started-by-role.md)
@@ -27,17 +27,16 @@ ht-degree: 6%
 + Analysis Workspace {#analysis-workspace}
    + [Översikt över Analysis Workspace](analysis-workspace/home.md)
    + Projekt {#build-workspace-project}
-      + [Projektöversikt](analysis-workspace/build-workspace-project/freeform-overview.md)
+      + [Översikt](analysis-workspace/build-workspace-project/freeform-overview.md)
       + [Skapa projekt](analysis-workspace/build-workspace-project/create-projects.md)
+      + [Öppna projekt](analysis-workspace/build-workspace-project/open-projects.md)
       + [Spara projekt](analysis-workspace/build-workspace-project/save-projects.md)
       + [Innehållsförteckning för projekt](/help/analyze/analysis-workspace/build-workspace-project/project-table-of-contents.md)
       + Mappar i Workspace {#workspace-folders}
-         + [Om mappar i Workspace](analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
+         + [Översikt över mappar](analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
          + [Skapa mappar och undermappar](analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)
-         + [Ta bort mappar](analysis-workspace/build-workspace-project/workspace-folders/delete-folders.md)
-         + [Lägg till projekt](analysis-workspace/build-workspace-project/workspace-folders/add-projects.md)
-         + [Ta bort ett projekt](analysis-workspace/build-workspace-project/workspace-folders/remove-projects.md)
-         + [Spara ett nytt projekt](analysis-workspace/build-workspace-project/workspace-folders/save-new-project-folder.md)
+         + [Hantera mappar](analysis-workspace/build-workspace-project/workspace-folders/manage-folders.md)
+         + [Lägg till eller flytta projekt till mappar](analysis-workspace/build-workspace-project/workspace-folders/add-projects.md)
       + [Mallar](analysis-workspace/build-workspace-project/starter-projects.md)
       + [Flera rapportsviter](analysis-workspace/build-workspace-project/multiple-report-suites.md)
       + [Snabbtangenter (kortkommandon)](analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
@@ -65,9 +64,11 @@ ht-degree: 6%
          + [Skapa segment](analysis-workspace/components/segments/t-freeform-project-segment.md)
          + [Snabbsegment](analysis-workspace/components/segments/quick-segments.md)
       + Kalender och datumintervall {#calendar-date-ranges}
-         + [Översikt över kalender- och datumintervall](analysis-workspace/components/calendar-date-ranges/calendar.md)
-         + [Skapa anpassade datumintervall](analysis-workspace/components/calendar-date-ranges/custom-date-ranges.md)
+         + [Översikt](analysis-workspace/components/calendar-date-ranges/calendar.md)
+         + [Skapa datumintervall](analysis-workspace/components/calendar-date-ranges/create.md)
+         + [Hantera dataintervall](analysis-workspace/components/calendar-date-ranges/manage.md)
          + [Datumjämförelse](analysis-workspace/components/calendar-date-ranges/time-comparison.md)
+         + [Exempel](analysis-workspace/components/calendar-date-ranges/custom-date-ranges.md)
       + Dataordlista {#data-dictionary}
          + [Översikt över dataordlistan](analysis-workspace/components/data-dictionary/data-dictionary-overview.md)
          + [Visa komponentinformation i Data Dictionary](analysis-workspace/components/data-dictionary/view-data-dictionary.md)
@@ -131,11 +132,11 @@ ht-degree: 6%
          + [Användningsexempel för segmentjämförelse](analysis-workspace/c-panels/c-segment-comparison/segment-compare-use-cases.md)
          + [Statistiska tester som används vid segmentjämförelse](analysis-workspace/c-panels/c-segment-comparison/statistical-test.md)
    + Kuratera, dela och schemalägg projekt {#curate-share}
-      + [Dela-menyn](analysis-workspace/curate-share/send-schedule-files.md)
+      + [Översikt](analysis-workspace/curate-share/send-schedule-files.md)
       + [Kuratprojekt](analysis-workspace/curate-share/curate.md)
       + [Dela projekt](analysis-workspace/curate-share/share-projects.md)
       + [Skapa delningsbara länkar](analysis-workspace/curate-share/shareable-links.md)
-      + [projekt med endast visning](analysis-workspace/curate-share/view-only-projects.md)
+      + [Skrivskyddade projekt](analysis-workspace/curate-share/view-only-projects.md)
       + [Hämta PDF- eller CSV-filer](analysis-workspace/curate-share/download-send.md)
       + [Schemalägg projekt](analysis-workspace/curate-share/t-schedule-report.md)
    + Tillskrivning {#attribution}

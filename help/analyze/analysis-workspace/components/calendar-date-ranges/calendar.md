@@ -4,98 +4,169 @@ title: Översikt över kalender- och datumintervall
 feature: Date Ranges
 role: User, Admin
 exl-id: fbf4bc18-65ba-4e39-96c1-4c41a8e3baa9
-source-git-commit: 1281bdc569c9ebc5d8daa151b19dc21710633eab
+source-git-commit: 182b92707eca36eaebe2e5c7f041f153868f09c2
 workflow-type: tm+mt
-source-wordcount: '931'
+source-wordcount: '516'
 ht-degree: 0%
 
 ---
 
-# Översikt över kalender- och datumintervall {#date-range}
 
-<!-- markdownlint-disable MD034 -->
+# Översikt över datumintervall
+
+I ett Workspace-projekt använder du vanligtvis [kalendern i en panel](/help/analyze/analysis-workspace/c-panels/panels.md#calendar) för att ange datumintervallet för visualiseringarna i den panelen.
+
+Med datumintervallkomponenter kan du definiera och åsidosätta kalenderinställningarna för panelen.
+
+
+## Använd datumintervall
+
+Du kan använda en datumintervallkomponent för att definiera om kalendern för panelen.
+
+Du kan också använda ett datumintervall i en frihandstabell som ett mått eller en dimension.
+
+![Användning av datumintervall](assets/date-ranges-usage.png)
+
+- **Mått**. Om du till exempel vill jämföra en dimension för två olika månader för ett visst mått.
+- **Dimension**. Om du vill jämföra ett mått för olika dimensionsobjekt för datumintervalldimensionen.
+
+>[!NOTE]
+>
+>När du använder datumintervall i en frihandstabell åsidosätter datumintervallen den kalender som har angetts för panelen som frihandstabellen tillhör.
+>
+
+Du använder ett datumintervall på samma sätt som du [använder valfri komponent](/help/analyze/analysis-workspace/components/analysis-workspace-components.md#analysis-workspace-components). Du drar datumintervallet från komponentpanelen ![Kalender](/help/assets/icons/Calendar.svg) **[!UICONTROL Date ranges]** och släpper komponenten på:
+
+- **[!UICONTROL Calendar]**: Du ![Växlar](/help/assets/icons/Switch.svg) **[!UICONTROL Replace]** den aktuella kalenderkonfigurationen med datumintervallet.
+- **Kolumnrubrik för mått**: Du ![Växlar](/help/assets/icons/Switch.svg) **[!UICONTROL Replace]** måttet, ![Lägg till ](/help/assets/icons/Add.svg)**[!UICONTROL Add]**datumintervallet som ett mått eller ![Filter](/help/assets/icons/Filter.svg)**[!UICONTROL Filter]**måttet med datumintervallkomponenten.
+- **Dimension kolumnrubrik**: ![Byt](/help/assets/icons/Switch.svg) **[!UICONTROL Replace]** de aktuella dimensionerna. Den nya dimensionen är nu **[!UICONTROL Date ranges]**. När dimensionen är datumintervall kan du ![lägga till ](/help/assets/icons/Add.svg)**[!UICONTROL Add]**ytterligare datumintervall som dimensionsobjekt.
+- **Dimension-objekt**: Du ![Bryter ned](/help/assets/icons/Breakdown.svg) **[!UICONTROL Breakdown]** det specifika dimensionsobjektet efter datumintervallet.
+
+Du kan också lägga till en datumintervallkolumn direkt i en visualisering av en frihandsfigur:
+
+1. I en måttkolumn väljer du på snabbmenyn:
+
+   - **[!UICONTROL Add time period column]**. Du kan välja mellan föreslagna alternativ som baseras på den aktuella kalendern eller skapa ett [anpassat datumintervall](#custom-date-ranges).
+   - **[!UICONTROL Compare time periods]**. Du kan välja mellan ett föreslaget alternativ som är baserat på den aktuella kalendern eller skapa ett [anpassat datumintervall](#custom-date-ranges).
+
+1. Beroende på vad du har valt läggs ytterligare datumintervallkolumner till i Frihand-tabellen.
+
+## Standarddatumintervall
+
+Analysis Workspace tillhandahåller ett antal standarddatumintervall.
+
+
+| Dag | Vecka | Månad | Kvartal | År |
+|---|---|---|---|---|
+| Idag | Den här veckan | Den här månaden | Detta kvartal | I år |
+| Igår | Den här veckan (förutom idag) | Den här månaden (förutom idag) | Detta kvartal (förutom idag) | I år (förutom idag) |
+| För 2 dagar sedan | för 2 veckor sedan | för 2 månader sedan |   |  |
+| För 3 dagar sedan | För 3 veckor sedan | För 3 månader sedan |  | |
+| De senaste 7 dagarna | Senaste veckan | Senaste månaden | Sista kvartalet | Förra året |
+| De senaste 14 dagarna | De senaste två fullveckorna | De senaste två fullständiga månaderna | Senaste fyra fullständiga kvartal | |
+| De senaste 30 dagarna | De senaste tre fullständiga veckorna | De senaste tre fullständiga månaderna | | |
+| De senaste 60 dagarna | De senaste fyra fullveckorna | De senaste 6 fullständiga månaderna | | |
+| De senaste 90 dagarna | De senaste 12 fullveckorna | De senaste 12 fullständiga månaderna | | |
+| De senaste 7 fullständiga dagarna | De senaste 52 fullveckorna | De senaste 13 fullständiga månaderna | | |
+| De senaste 14 fullständiga dagarna | | | | |
+| De senaste 30 fullständiga dagarna | | | | |
+| De senaste 90 fullständiga dagarna | | | | |
+
+<table style="table-layout:fixed">
+
+## Anpassade datumintervall
+
+Du kan skapa egna anpassade datumintervall. Se [Skapa datumintervall](create.md) för de olika alternativ som är tillgängliga för att skapa datumintervall. Du kan sedan skapa, ändra och spara datumintervall i [datumintervallverktyget](create.md#date-range-builder).
+
+Du använder [datumintervallhanteraren](manage.md) för att hantera datumintervall.
+
+
+
+<!--
+# Calendar and date ranges overview {#date-range}
 
 >[!CONTEXTUALHELP]
 >id="components_dateranges_endtime"
->title="Sluttid"
->abstract="Sluttider omfattar alltid 59 sekunder."
-
-<!-- markdownlint-enable MD034 -->
+>title="End time"
+>abstract="End times always include 59 seconds."
 
 
-I kalendern kan du ange datum och datumintervall eller välja en förinställning.
+
+In the calendar, you can specify dates and date ranges, or select a preset.
 
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Översikt över kalender- och datumintervall](https://video.tv.adobe.com/v/23973?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Calendar and date ranges overview](https://video.tv.adobe.com/v/23973?quality=12&learn=on){target="_blank"} for a demo video.
 
 >[!ENDSHADEBOX]
 
 
-Kalenderval gäller på panelnivå, men du kan välja att använda dem på alla paneler. När du klickar på ett datumintervall i Workspace visas den aktuella kalendermånaden och föregående kalendermånad. Du kan justera dessa två kalendrar genom att klicka på höger- och vänsterpilarna i respektive övre hörn.
+Calendar selections apply at the panel level, but you have the option to apply them to all panels. When you click a date range in Workspace, the interface displays the current calendar month and the previous calendar month. You can adjust these two calendars by clicking the right and left arrows in each respective upper corner.
 
-![Kalender](assets/aw_calendar2.png){width="60%"}
+![Calendar](assets/aw_calendar2.png){width="60%"} 
 
-## Välj och tillämpa datumintervall {#select-apply}
+## Select and apply date ranges {#select-apply}
 
-Första klicket i en kalender startar ett datumintervallval. Den andra klickningen slutför ett datumintervallval som markeras. Om tangenten `Shift` hålls ned (eller högerklickning används) läggs den till i det markerade intervallet.
+The first click on a calendar starts a date range selection. The second click completes a date range selection, which becomes highlighted. If the `Shift` key is held down (or right-click is used), it appends to the currently selected range.
 
-Du kan också dra datum (och tidsdimensioner) till ett Workspace-projekt. Du kan välja specifika dagar, veckor, månader, år eller rullande datum.
+You can also drag dates (and time dimensions) into a Workspace project. You can select specific days, weeks, months, years, or a rolling date.
 
-[Använda datumintervall och kalender i Analysis Workspace](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/calendar-and-date-ranges/using-dates-in-analysis-workspace.html?lang=sv-SE) (4:07)
+[Using Date Ranges and Calendar in Analysis Workspace](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/calendar-and-date-ranges/using-dates-in-analysis-workspace.html) (4:07)
 
-| Inställning | Beskrivning |
+| Setting | Description |
 |--- |--- |
-| Valda dagar | Utvalda dagar/veckor/månader/år. |
-| Gör datumintervallskomponenter relativa till panelkalendern | Om det är inaktiverat åsidosätter alla komponenter för datumintervall som används i en tabell, visualisering eller panelsläppzon panelkalendern. <p>Om det här alternativet är aktiverat är alla komponenter i datumintervallet som används i en tabell, visualisering eller panelsläppzon i förhållande till panelens datumintervall. Om panelens datumintervall till exempel är inställt på 1 november till 30 november och en datumintervallkomponent för sista veckan används i en friformstabell, avser informationen i friformstabellen den sista veckan i oktober. |
-| Använd rullande datum | Med rullande datum kan du generera en dynamisk rapport som ser framåt eller bakåt under en angiven tidsperiod baserat på när du körde rapporten. Om du t.ex. vill rapportera alla beställningar som placerats i&quot;Senaste månaden&quot; (baserat på fältet Skapad den) och köra rapporten i december, ser du beställningar som gjorts i november. Om du körde samma rapport i januari skulle du se beställningar i december.<ul><li>**[!UICONTROL Date Preview]**: Anger vilken tidsperiod som den rullande kalendern omfattar.</li><li>**[!UICONTROL Start]**: Du kan välja mellan aktuell dag, aktuell vecka, aktuell månad, aktuellt kvartal, aktuellt år.</li><li>**[!UICONTROL End]**: Du kan välja mellan aktuell dag, aktuell vecka, aktuell månad, aktuellt kvartal, aktuellt år.</li></ul>Se [Anpassade datumintervall](/help/analyze/analysis-workspace/components/calendar-date-ranges/custom-date-ranges.md) om du vill se ett exempel. <br>Markerad som standard. |
-| Datumintervall | Välj ett förinställt datumintervall. De senaste 30 dagarna är standard. Med **[!UICONTROL This week/month/quarter/year (excluding today)]** kan du välja från datumintervall som inte innehåller data för delar av dagen från idag. |
-| Använd på alla paneler | Här kan du inte bara ändra det markerade datumintervallet för den aktuella panelen, utan även för alla andra paneler i projektet. |
-| Använd | Använder endast datumintervallet på den här panelen. |
+|Selected Days|Selected days/weeks/months/years.|
+|Make date range components relative to panel calendar| If disabled, any date range components used within a table, visualization, or panel drop zone override the panel calendar. <p>If enabled, any date range components used within a table, visualization, or panel drop zone are in relation to the panel date range. For example, if the panel date range is set to November 1 through November 30, and a Last Week date range component is used in a freeform table, the information in the freeform table refers to the last week in October. |
+|Use rolling dates| Rolling dates allow you to generate a dynamic report that looks forward or backward for a set period of time based on when you ran the report. For example, if you want to report on all Orders placed "Last Month" (based on the Created Date field) and ran that report in December, you'd see orders placed in November. If you ran that same report in January, you'd see orders placed in December.<ul><li>**[!UICONTROL Date Preview]**: Indicates what time period the rolling calendar encompasses.</li><li>**[!UICONTROL Start]**: You can choose among current day, current week, current month, current quarter, current year.</li><li>**[!UICONTROL End]**: You can choose among current day, current week, current month, current quarter, current year.</li></ul>To view an example, see [Custom date ranges](/help/analyze/analysis-workspace/components/calendar-date-ranges/custom-date-ranges.md). <br>Selected by default.|
+|Date Range|Lets you pick a preset date range. Last 30 days is the default. **[!UICONTROL This week/month/quarter/year (excluding today)]** lets you choose from date ranges that do not include partial-day data from today.|
+|Apply to All Panels|Lets you not only change the selected date range for the current panel, but also for all other panels within the project.|
+|Apply|Applies the date range to this panel only.|
 
-## Om relativa paneldatumintervall {#relative-panel-dates}
+## About relative panel date ranges {#relative-panel-dates}
 
-Om du arbetar i Workspace kan du göra datumintervallskomponenterna relativa till panelkalendern.
-Tre vanliga användningsområden där du ser relativa paneldatum som börjar gälla är Combo-diagram, Sammanfattning av nyckelmått och datumintervall i frihandstabellen.
+If you're working in Workspace, you can make the date range components relative to the panel calendar. 
+Three common use cases where you'll see relative panel dates take effect are Combo charts, Key metrics summary, and Freeform table date ranges.
 
-Använda relativa paneldatumintervall
+To use relative panel date ranges
 
-1. Klicka på fliken **Workspace**.
-1. Välj **Tomt projekt**.
-1. Lägg till mått, mätvärden och segment från den vänstra listen.
-1. Klicka på panelens datumintervallfält för att växla den relativa panelens datumintervallinställning.
-1. Välj **Gör datumintervallkomponenter relativa till panelkalendern**.
-   * Välj alternativet om du vill att datumintervallets komponenter ska vara relativa till panelkalendern.
-Om du väljer relativa datum baseras rullande datum på startdatumet för panelkalendern och inte på dagens datum.
-   * Om det här alternativet inte är markerat baseras rullande datum på dagens datum.
+1. Select the **Workspace** tab.
+1. Select **Blank project**.
+1. Add dimensions, metrics, and segments from the left rail. 
+1. Click the panel date range field to toggle the relative panel date range setting.
+1. Select **Make date range components relative to panel calendar**.
+    * Select the option to make the date range components relative to the panel calendar.
+        If relative dates are selected, then rolling dates will be based on the start date of the panel calendar and not today's date.
+    * If this option isn't selected, then rolling dates will be based on today's date.
 
-   ![relativa paneldatum](assets/relative-date-selected.png){width="60%"}
+    ![relative panel dates](assets/relative-date-selected.png){width="60%"} 
 
-1. Klicka på **Använd**.
-De relativa datumen visas i det övre högra hörnet.
+1. Click **Apply**.
+    The relative dates are shown in the upper-right.
 
-   ![relativa datum i frihandsfigur ](assets/relative-date-range1.png)
+    ![relative dates in freeform ](assets/relative-date-range1.png)
 
-## Riktlinjer för relativa paneldatumintervall {#guidelines}
+## Guidelines for relative panel date ranges {#guidelines}
 
-Tänk på följande när du använder relativa paneldatumintervall.
+Keep in mind the following guidelines when using relative panel date ranges.
 
-### Formler och relativa datumintervall {#formula-relative-dates}
+### Formulas and relative date ranges {#formula-relative-dates}
 
-Om du har markerat relativa datum används panelens startdatum som startpunkt i alla datumformler.
+If you have relative dates selected, all date formulas will use the panel's start date as the starting point.
 
-### Anpassade kalendrar och relativa datumintervall {#custom-calendar-formulas}
+### Custom calendars and relative date ranges {#custom-calendar-formulas}
 
-När du använder en veckobaserad anpassad kalender och lägger till månader eller år, beräknas förskjutningen för dagen i den angivna perioden enligt formeln. Det faktiska datumet kan vara ett annat på grund av förskjutningen. Formeln väljer landningsdagen på samma plats i den anpassade kalendern. Den tredje fredagen i den tredje veckan i en anpassad kalender.
+When you use a week-based custom calendar and you add months or years, the formula calculates the offset of the day in the given period. The actual date may be different because of the offset. The formula chooses the day landing in the same place in the custom calendar. For example, the third Friday of the third week in a custom calendar.
 
-### Om segment som använder rullande datum och relativa paneldatumintervall {#segments-relative-dates}
+### About segments that use rolling dates and relative panel date ranges {#segments-relative-dates}
 
-Om du skapar ett segment eller använder ett segment med ett rullande datum, till exempel de senaste 7 dagarna eller de senaste 2 veckorna, och du klickar på segmentförhandsvisningen, startar det rullande datumet från *Idag* i stället för panelens startdatum. Det innebär att förhandsvisningen av segmentet inte kommer att matcha när du faktiskt använder segmentet i tabellen. Förhandsgranskningen påverkas, inte själva segmentet.
+If you build a segment or use a segment with a rolling date, for example, the Last 7 Days or the Last 2 Weeks, and you click on the segment preview, it will start the rolling date from *Today* instead of the panel start date. As a result the preview for the segment will not match when you actually use the segment in the table. The preview is impacted, not the segment itself. 
 
-## Riktlinjer för paneldatumintervall och förhandsvisningar {#guidelines-panel-dates}
+## Guidelines for panel date ranges and previews {#guidelines-panel-dates}
 
-* Från och med februari-versionen baseras förhandsgranskningarna av komponenter och data på panelens datumintervall och inte på de senaste 90 dagarna.
-* Alla komponenter i den vänstra listen är tillgängliga baserat på panelens datumintervall.
-* Alla förhandsvisningar av datum i segmentet och beräknade mätvärden baseras på panelens datumintervall (såvida de inte öppnas från komponenthanterarna, som inte har någon associerad panel, kommer de fortfarande att baseras på de senaste 90 dagarna).
-* Förhandsgranskningar av data visar data eller komponenter baserat på panelens datumintervall.
+* Starting with the February release, component and data previews will be based on the panel date range and not the last 90 days. 
+* All components listed in the left rail will be available based on the panel date range. 
+* All date previews in the segment and calculated metric builders will be based on the panel date range (unless accessed from the component managers, which do not have an associated panel, they will still be based on the last 90 days). 
+* Any data previews will display data or components based on the panel date range.
+
+-->

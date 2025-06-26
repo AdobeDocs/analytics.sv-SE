@@ -3,16 +3,14 @@ title: Komponenthandbok för Analytics
 description: Läs om de olika komponenterna som Adobe Analytics erbjuder.
 exl-id: 172f816a-b90e-4a5a-8c92-f92f2b1663f3
 feature: Components
-source-git-commit: 08e29da4847e8ef70bd4435949e26265d770f557
+source-git-commit: 80e4a3ba4a5985563fcf02acf06997b4592261e4
 workflow-type: tm+mt
-source-wordcount: '212'
-ht-degree: 73%
+source-wordcount: '211'
+ht-degree: 72%
 
 ---
 
 # Komponenthandbok för Analytics
-
-![Banderoll](../../assets/doc_banner_components.png)
 
 Analytics-komponenterna hjälper er att finjustera och förbättra dataanalysen. Komponenter är bland annat:
 
@@ -42,11 +40,11 @@ Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Adobe Analytics -
 
 ## Fler användarhandböcker för Analytics
 
-[Användarhandböcker för Analytics](https://experienceleague.adobe.com/docs/analytics.html?lang=sv-SE)
+[Användarhandböcker för Analytics](https://experienceleague.adobe.com/docs/analytics.html)
 
 ## Viktiga Analytics-resurser
 
-* [Kontakta kundtjänst](https://experienceleague.adobe.com/sv?support-solution=Analytics&amp;lang=sv#support)
+* [Kontakta kundtjänst](https://experienceleague.adobe.com/?support-solution=Analytics&lang=sv#support)
 * [Adobe Analytics Community på Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community)
 * [Adobe Analytics-resurser](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-resources/m-p/276666)
 * [Experience League](https://landing.adobe.com/experience-league/)

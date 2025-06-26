@@ -4,9 +4,9 @@ description: Få svar på vanliga frågor om attribuering.
 feature: Attribution
 role: User, Admin
 exl-id: 8e05957a-f954-4e61-aeed-cd2bd2fe11f8
-source-git-commit: 2eff7656741bdba3d5d7d1f33e9261b59f8e6083
+source-git-commit: 8f7c6a0d1477b599b05aeb7b74c4ee96531d294d
 workflow-type: tm+mt
-source-wordcount: '1232'
+source-wordcount: '1230'
 ht-degree: 0%
 
 ---
@@ -53,12 +53,12 @@ Vilken attribueringslookback du väljer beror på ditt användningssätt. Om kon
 
 ++## Hur fungerar props och eVars när man använder attribuering?
 
-Attributionen beräknas om vid rapportkörning, så det finns ingen skillnad mellan ett utkast eller en eVar (eller någon annan dimension) för attribueringsmodelleringens skull. Props kan finnas kvar i alla uppslagsfönster eller attribueringsmodeller, och eVarnas allokerings-/förfalloinställningar ignoreras.
+Attribution beräknas om vid rapportkörning, så det finns ingen skillnad mellan ett prop eller eVar (eller någon annan dimension) för attribueringsmodelleringens skull. Props kan finnas kvar i alla uppslagsfönster eller attribueringsmodeller, och eVar inställningar för allokering/förfallodatum ignoreras.
 
 +++
 
 
-+++## Finns det attribueringsmodeller i andra analysfunktioner, som dataflöden eller Data Warehouse?
++++## Finns det attribueringsmodeller i andra analysfunktioner, som Data Feeds eller Data Warehouse?
 
 Nej. I attribueringsmodeller används rapporttidshantering, som bara är tillgänglig i Analysis Workspace. Mer information finns i [Tidsbearbetning för rapport](/help/components/vrs/vrs-report-time-processing.md).
 
@@ -106,11 +106,11 @@ Ja, klassificeringar stöds fullt ut.
 
 Ja, de flesta datakällor stöds. Attribution is not possible with summary-level data sources because these data sources does not attach to an Analytics visitor identifier.
 
-Datakällor för transaktions-ID behandlas som alla andra träffar. Transaktions-ID-datakällor använder inte den särskilda bearbetning som normalt används i traditionell rapportering. Med andra ord, när du använder rapporttidsbearbetning kommer transaktions-ID-träffar att få eVar-värden spridda från träffar som inträffar nära tidsstämpeln för Transaktions-ID-träffen. Värdena sprids inte från träffar som inträffade nära tidpunkten för den ursprungliga transaktionen.
+Datakällor för transaktions-ID behandlas som alla andra träffar. Transaktions-ID-datakällor använder inte den särskilda bearbetning som normalt används i traditionell rapportering. När du använder rapporttidsbearbetning har transaktions-ID-träffar med andra ord eVar-värden som har spridits från träffar som inträffar nära tidsstämpeln för träff i transaktions-ID. Värdena sprids inte från träffar som inträffade nära tidpunkten för den ursprungliga transaktionen.
 
-När det är möjligt är attribueringen beroende av MID-kolumnvärdet som skickas i en händelse i datakällan, i stället för ett beständigt värde. Attributmodellen tillämpas direkt på MID-kolumnvärdena i datakällan. När du till exempel använder attributet&quot;Sista beröringen&quot; startar modellen från varje instans av ett mätresultat och går bakåt sekventiellt i träffarna tills modellen når det senaste värdet som observerats i MID-kolumnen.
+När det är möjligt är attribueringen beroende av MID-kolumnvärdet som skickas inom en händelse i datakällan, i stället för ett beständigt värde. Attributmodellen tillämpas direkt på MID-kolumnvärdena i datakällan. När du till exempel använder [Senaste Touch-attribuering](models.md) startar modellen från varje instans av ett mätresultat. Och går bakåt sekventiellt i träffarna tills modellen når det senaste värdet som observerats i MID-kolumnen.
 
-Om det inte är möjligt används MID-värdet i föregående post i datakällan för utvärdering. Denna tidigare post kanske inte beställs sekventiellt via tidsstämpel eftersom AA inte stöder data som ligger utanför ordningen.
+Om det inte är möjligt används MID-värdet i den *föregående posten* i datakällan för utvärdering. Denna tidigare post kanske inte beställs sekventiellt via tidsstämpel eftersom AA inte stöder data som ligger utanför ordningen.
 
 På grund av att posterna inte ordnas sekventiellt kan de förväntade värdena från att tillämpa beständighet påverka den tid som finns mellan den angivna transaktions-ID-tidsstämpeln och den ursprungliga transaktionen.
 
@@ -126,7 +126,7 @@ Metadata-dimensioner, som matchningstyp och nyckelord, fungerar med attribuering
 
 +++## Hur fungerar attribuering med marknadsföringskanaler?
 
-När marknadsföringskanalerna lanserades för första gången fick de bara första och sista touch-dimensioner. Explicit första/sista beröringsdimensioner behövs inte längre med den aktuella versionen av attribuering. Adobe tillhandahåller allmänna [!UICONTROL Marketing Channel]- och [!UICONTROL Marketing Channel Detail]-dimensioner så att du kan använda dem med den önskade attribueringsmodellen. Dessa generiska dimensioner är identiska med [!UICONTROL Last Touch Channel] dimensioner, men de är märkta annorlunda för att förhindra förvirring när marknadsföringskanaler med en annan attribueringsmodell används.
+När marknadsföringskanalerna lanserades för första gången fick de bara första och sista touch-dimensioner. Explicit första/sista beröringsdimensioner behövs inte längre med den aktuella versionen av attribuering. Adobe tillhandahåller generiska dimensioner för [!UICONTROL Marketing Channel] och [!UICONTROL Marketing Channel Detail] så att du kan använda dem med den önskade attribueringsmodellen. Dessa generiska dimensioner är identiska med [!UICONTROL Last Touch Channel] dimensioner, men de är märkta annorlunda för att förhindra förvirring när marknadsföringskanaler med en annan attribueringsmodell används.
 
 Eftersom dimensionerna för marknadsföringskanalen är beroende av en traditionell besöksdefinition (som definieras av deras bearbetningsregler), kan deras besöksdefinition inte ändras med hjälp av virtuella rapportsviter.
 

@@ -4,58 +4,51 @@ keywords: Beräknade mått;Avancerade beräknade värden
 title: Beräknade och avancerade beräknade värden
 feature: Calculated Metrics
 exl-id: 9bf8239f-cf74-4feb-85e5-d47805e90afb
-source-git-commit: 9714863374052e257e1d6349c442fc74182a0a2f
+source-git-commit: d85e6990998e3c153ef969d8dc7f3a4835f683bf
 workflow-type: tm+mt
-source-wordcount: '349'
-ht-degree: 4%
+source-wordcount: '272'
+ht-degree: 0%
 
 ---
 
-# Beräknade och avancerade beräknade mätvärden
+# Översikt över beräknade mätvärden
 
-Beräknade och avancerade beräknade värden är anpassade mätvärden som du kan skapa utifrån befintliga mätvärden.
+Beräknade och anpassade mätvärden som ni kan skapa utifrån befintliga mätvärden.
 
-Våra verktyg för beräknade värden är ett mycket flexibelt sätt att bygga, hantera och strukturera mätvärden. De gör att du som marknadsförare, produktchefer och analytiker kan ställa frågor om data utan att behöva ändra din [!DNL Analytics]-implementering. De anpassade mätvärden som är tillgängliga i varje [!DNL Analytics]-paket är:
+Beräknade mätvärden är ett mycket flexibelt sätt att skapa, hantera och strukturera mätvärden. Med beräknade mätvärden kan du som marknadsförare, produktchefer och analytiker ställa frågor om data utan att behöva ändra implementeringen av [!DNL Analytics].
 
-* Adobe [!DNL Analytics] Foundation: Beräknat
-* [Adobe Analytics Select](https://www.adobe.com/se/data-analytics-cloud/analytics/select.html): Beräknat + avancerat beräknat
-* [Adobe Analytics Prime](https://www.adobe.com/se/data-analytics-cloud/analytics/prime.html): Beräknat + avancerat beräknat
-* [Adobe Analytics Ultimate](https://www.adobe.com/se/data-analytics-cloud/analytics/ultimate.html): Beräknat + avancerat beräknat
+Beräknade mått är tillgängliga i varje [!DNL Analytics]-paket, men Adobe Analytics Foundation Pack för Experience Cloud är begränsat till grundläggande beräknade mått, inklusive [formattyper (decimal, time, percent, currency)](/help/components/c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-build-metrics.md), [allokeringsändringar (standard, linjär, deltagande osv.)](/help/components/c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/m-metric-type-alloc.md), [metriska typer (standard, total)](/help/components/c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/m-metric-type-alloc.md) och [grundläggande operatorer](c-workflow/cm-workflow/c-build-metrics/cm-build-metrics.md#operators) (lägg till, subtrahera, multiplicera och dividera).
 
-Här är en jämförelse av beräknade värden och avancerade beräknade mätvärden:
 
-| Alternativ för verktyget Builder | Beräknade mått | Avancerade beräknade värden |
-|---|---|---|
-| [Formattyper (decimal, tid, procent, valuta)](/help/components/c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-build-metrics.md) | Ja | Ja |
-| [Attributändringar (standard, linjär, deltagande osv.)](/help/components/c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/m-metric-type-alloc.md) | Ja | Ja |
-| [Måtttyper (standard, summa)](/help/components/c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/m-metric-type-alloc.md) | Ja | Ja |
-| Grundläggande operatorer (lägg till, subtrahera, multiplicera, dividera) | Ja | Ja |
-| [Använd segment](/help/components/c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/metrics-with-segments.md) | Nej | Ja |
-| [Grundfunktioner (antal, abs-värde, medelvärde osv.)](/help/components/c-calcmetrics/cm-reference/cm-functions.md) | Nej | Ja |
-| [Avancerade funktioner (regression, if/then, t-score etc)](/help/components/c-calcmetrics/cm-reference/cm-adv-functions.md) | Nej | Ja |
+Mer information finns i [Adobe Analytics produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-analytics.html).
+
+<!--
+Here is a comparison of calculated metrics and advanced calculated metrics capabilities: 
+
+| [Format types (decimal, time, percent, currency)](/help/components/c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-build-metrics.md)  | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)  | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)  |
+| [Attribution changes (default, linear, participation, etc.)](/help/components/c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/m-metric-type-alloc.md)  | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)  | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)  |
+| [Metric types (standard, total)](/help/components/c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/m-metric-type-alloc.md)  | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)  | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)  |
+|  Basic operators (add, subtract, multiply, divide)  | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)  | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)  |
+| [Apply segments](/help/components/c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/metrics-with-segments.md)  | ![StopCircle](/help/assets/icons/StopCircle.svg)  | Yes  |
+| [Basic functions (count, abs value, mean, etc)](/help/components/c-calcmetrics/cm-reference/cm-functions.md)  | No  | Yes  |
+| [Advanced functions (regression, if/then, t-score, etc)](/help/components/c-calcmetrics/cm-reference/cm-adv-functions.md)  | No  | Yes  |
+
+-->
 
 ## Funktioner {#section_A0A5C275B68A4D628950BBB0B1EE631F}
 
 Du kan
 
-* Skapa mätvärden för [!UICONTROL Analysis Workspace], [!UICONTROL Report Builder], [!UICONTROL Anomaly Detection] och [!UICONTROL Contribution Analysis].
-* Skapa segmenterade mätvärden som genereras vid rapportkörning, utan att behöva ändra implementeringen. Dessa kan ses historiskt eftersom de baseras på segment.
+* [Skapa mått](/help/components/c-calcmetrics/c-workflow/cm-workflow/cm-workflow.md) över [!UICONTROL Analysis Workspace], [!UICONTROL Report Builder], [!UICONTROL Anomaly Detection] och [!UICONTROL Contribution Analysis].
+* [Skapa segmenterade mätvärden](/help/components/c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/metrics-with-segments.md) som härleds vid rapportkörningen, utan att implementeringen behöver ändras. Du kan till exempel skapa ett mått för *nya besökare* med ett antal personer som det här är den första sessionen för.
 
->[!BEGINSHADEBOX]
+* [Dela mått](/help/components/c-calcmetrics/c-workflow/cm-workflow/cm-sharing.md) mellan rapportsviter. Det innebär att alla nya mätvärden gäller för alla rapportsviter i samma inloggningsföretag.
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Beräknade mätvärden](https://video.tv.adobe.com/v/25407?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
-
->[!ENDSHADEBOX]
-
-* Dela mätvärden mellan olika rapportsviter. Det innebär att alla nya mätvärden gäller för alla rapportsviter i samma inloggningsföretag.
-* (Endast avancerade beräknade mätvärden) Segment på mätvärden. Du kan t.ex. skapa ett mått för&quot;Nya besökare&quot; med antalet personer som detta är den första sessionen för.
-
-* (Endast avancerade beräknade mätvärden) Lägg in statistiska funktioner som hjälper dig att beskriva dina data bättre. Du kan till exempel räkna antalet objekt i en rapport eller lägga till antalet standardavvikelser för varje objekt.
-
+* [Inkludera statistiska funktioner](/help/components/c-calcmetrics/cm-reference/cm-adv-functions.md) som hjälper dig att beskriva dina data bättre. Du kan till exempel räkna antalet objekt i en rapport eller lägga till antalet standardavvikelser för varje objekt.
 
 ## Begränsningar
 
-Vissa [!DNL Analytics]-funktioner gör att du kan använda händelser men inte beräknade värden:
+Vissa [!DNL Analytics]-funktioner tillåter inte användning av beräknade värden:
 
 * [!UICONTROL Fallout] i [!UICONTROL Analysis Workspace]
 * [!UICONTROL Cohort Analysis] i Analysis Workspace
@@ -88,3 +81,10 @@ Here is a short overview of the [!UICONTROL Calculated metrics] tools:
 |API for Calculated Metrics|Part of the Adobe Analytics 2.0 API set.|
 
 -->
+
+>[!MORELIKETHIS]
+>
+>[Skapa mått](/help/components/c-calcmetrics/c-workflow/cm-workflow/cm-workflow.md)
+>>[Bygg mått ](/help/components/c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-build-metrics.md)
+>>[Använd funktioner ](/help/components/c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-using-functions.md)
+>

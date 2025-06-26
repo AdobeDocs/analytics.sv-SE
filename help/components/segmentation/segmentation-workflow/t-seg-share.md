@@ -3,7 +3,7 @@ description: Beroende på dina behörigheter kan du dela segment med hela organi
 title: Dela segment
 feature: Segmentation
 exl-id: f51a0d1b-d293-4b41-b1dd-a79da841d94a
-source-git-commit: 842f4226572ac38d01ddf16ad0b9991abbd3e906
+source-git-commit: 80e4a3ba4a5985563fcf02acf06997b4592261e4
 workflow-type: tm+mt
 source-wordcount: '410'
 ht-degree: 0%

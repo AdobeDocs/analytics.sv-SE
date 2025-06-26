@@ -1,28 +1,28 @@
 ---
 description: Frågor och svar om hur man hanterar äldre segment.
-title: Frågor och svar om äldre segment
+title: Vanliga frågor om äldre segment
 feature: Segmentation
 exl-id: 316e2a2e-55d3-4c23-9985-9a6d90390e86
-source-git-commit: 5bf3f561c471410e4ce1ca576ba34ea3849b0325
+source-git-commit: 80e4a3ba4a5985563fcf02acf06997b4592261e4
 workflow-type: tm+mt
-source-wordcount: '1445'
+source-wordcount: '1441'
 ht-degree: 0%
 
 ---
 
-# Frågor och svar om äldre segment
+# Vanliga frågor om äldre segment
 
-Svar på vanliga frågor om de bästa sätten att hantera äldre segment - segment som skapats före 2014.
+I den här artikeln besvaras vanliga frågor och svar om de bästa sätten att hantera äldre segment (segment som skapats före 2014).
 
 ## Hantera äldre segment {#legacy}
 
 +++ **Vad hände med mina befintliga segment?**
 
-Befintliga segment fortsätter att fungera som tidigare. Alla rapporter som använder dessa segment fortsätter att fungera korrekt. [Mer...](/help/components/segmentation/seg-transition.md)
+Befintliga segment fortsätter att fungera som tidigare. Alla rapporter som använder dessa segment fortsätter att fungera korrekt.
 
 De flesta tidigare fördefinierade och suite-segment migreras som segmentmallar till segmentbyggaren. Segmentmallar används för att snabbt skapa anpassade segment med gemensamma målgrupper. Segmentmallar kan inte användas direkt i en rapport, men de kan enkelt sparas i ett anpassat segment.
 
-Segmentmallar är markerade med en speciell ikon i Segment Builder:
+Segmentmallar är markerade med en speciell ikon i Segment builder:
 
 ![](assets/seg_templates.png)
 
@@ -117,9 +117,9 @@ Följande tips hjälper dig att migrera gemensamma dimensioner:
 * Operativsystem - Använd dimensionerna för OS-typer för att få alla operativsystem i en typ, t.ex. Microsoft Windows.
 * Se &quot;Nya och namnändrade dimensioner&quot; (se nedan)
 
-## Nya dimensioner med ändrat namn {#renamed}
+## Nya dimensioner med nytt namn {#renamed}
 
-Tabellen nedan innehåller en lista med dimensioner som har bytt namn i Segment Builder.
+Följande tabell innehåller en lista med dimensioner som har fått ett nytt namn i segmentbyggaren.
 
 | Nytt Dimension-namn | Tidigare namn | Anteckningar |
 |--- |--- |--- |
@@ -147,7 +147,7 @@ Tabellen nedan innehåller en lista med dimensioner som har bytt namn i Segment 
 
 {style="table-layout:auto"}
 
-## Ändrar till strängbaserade dimensioner som har kända värden {#string-based-dims}
+## Ändrar till strängbaserade dimensioner med kända värden {#string-based-dims}
 
 Strängbaserade dimensioner med en känd uppsättning värden ändrades till uppräknade typer. När du skapar ett segment med dessa mått fylls listan i med alla kända värden och den enda operatorn som stöds är lika med. På så sätt kan du snabbt segmentera de exakta värden som du sökte efter utan att välja oönskade värden när du använder mindre begränsande matchning.
 

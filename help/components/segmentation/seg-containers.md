@@ -4,9 +4,9 @@ keywords: segmentering;segment
 title: Segmentbehållare
 feature: Segmentation
 exl-id: f30d525b-32b7-47d5-b92d-24bf86d8a471
-source-git-commit: 08e29da4847e8ef70bd4435949e26265d770f557
+source-git-commit: 80e4a3ba4a5985563fcf02acf06997b4592261e4
 workflow-type: tm+mt
-source-wordcount: '3551'
+source-wordcount: '3548'
 ht-degree: 1%
 
 ---
@@ -14,13 +14,13 @@ ht-degree: 1%
 
 # Segmentbehållare
 
-Ett segment anger villkor för att filtrera en besökare baserat på besökarens attribut eller interaktioner med din plats. Om du vill ange villkor i ett segment anger du regler för att filtrera besökare baserat på besökarens egenskaper och/eller navigeringsegenskaper. Om du vill dela upp besöksdata ytterligare kan du filtrera baserat på specifika besök och/eller sidvisningsträffar för varje besökare. I Segment Builder finns en enkel arkitektur som du kan använda för att skapa dessa delmängder och tillämpa regler som kapslade, hierarkiska besökar-, besöks- eller träbehållare.
+Ett segment anger villkor för att filtrera en besökare baserat på besökarens attribut eller interaktioner med din plats. Om du vill ange villkor i ett segment anger du regler för att filtrera besökare baserat på besökarens egenskaper och/eller navigeringsegenskaper. Om du vill dela upp besöksdata ytterligare kan du filtrera baserat på specifika besök och/eller sidvisningsträffar för varje besökare. Segmentbyggaren har en enkel arkitektur för att skapa dessa underuppsättningar och tillämpa regler som kapslade, hierarkiska besökar-, besöks- eller träbehållare.
 
-Behållararkitekturen som används i segmentbyggaren definierar
+Behållararkitekturen som används i [segmentbyggaren](/help/components/segmentation/segmentation-workflow/seg-build.md) definierar:
 
-- ![Besökaren](https://spectrum.adobe.com/static/icons/workflow_18/Smock_User_18_N.svg) **[!UICONTROL Visitor]** är den yttersta behållaren och innehåller övergripande data som är specifika för besökaren vid besök och sidvisningar.
-- ![Besök](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Visit_18_N.svg) en kapslad **[!UICONTROL Visit]** behållare där du kan ange regler för att dela upp besökarens data baserat på besök, och
-- ![Händelse](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Events_18_N.svg) - en kapslad **[!UICONTROL Hit]** behållare gör att du kan dela upp besökarinformation baserat på enskilda sidvyer.
+- ![Användare](/help/assets/icons/User.svg) **[!UICONTROL Visitor]** som den yttersta behållaren, som innehåller övergripande data som är specifika för besökaren vid besök och sidvisningar.
+- ![Besök](/help/assets/icons/Visit.svg) en kapslad **[!UICONTROL Visit]** behållare där du kan ange regler för att dela upp besökarens data baserat på besök, och
+- ![WebPage](/help/assets/icons/WebPage.svg) är en kapslad **[!UICONTROL Hit]** behållare som gör att du kan dela upp besökarinformation baserat på enskilda sidvyer.
 
 Med varje behållare kan du rapportera över en besökares historik, interaktioner uppdelade efter besök eller dela upp individuella träffar.
 
@@ -38,7 +38,7 @@ Med varje behållare kan du rapportera över en besökares historik, interaktion
 <tr>
 <td style="background-color: #E5E4E2;" width="200" height="100"></td>
 <td style="background-color: #D3D3D3;" width="200" height="100"></td>
-<td style="background-color: #C0C0C0;" width="200" height="100" colspan="1"><img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_Events_18_N.svg"/> Träffar</td>
+<td style="background-color: #C0C0C0;" width="200" height="100" colspan="1"><img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPage_18_N.svg"/> Träffar</td>
 </tr>
 </table>
 
@@ -47,7 +47,7 @@ Med varje behållare kan du rapportera över en besökares historik, interaktion
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Segmentbehållare](https://video.tv.adobe.com/v/3429102?quality=12&learn=on&captions=swe){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Segmentbehållare](https://video.tv.adobe.com/v/25401?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 
@@ -148,7 +148,7 @@ Sekventiell segmentering använder samma grundläggande behållare, inklusive [!
 <tr>
 <td style="background-color: #E5E4E2;" width="200" height="100"></td>
 <td style="background-color: #D3D3D3;" width="200" height="100"></td>
-<td style="background-color: #C0C0C0;" width="200" height="100" colspan="1"><img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_Events_18_N.svg"/> Träffar</td>
+<td style="background-color: #C0C0C0;" width="200" height="100" colspan="1"><img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPage_18_N.svg"/> Träffar</td>
 </tr>
 </table>
 
@@ -173,7 +173,7 @@ Sekventiell segmentering använder samma grundläggande behållare, inklusive [!
 <tr>
 <td style="background-color: #E5E4E2;" width="200" height="100"></td>
 <td style="background-color: #D3D3D3;" width="200" height="100"></td>
-<td style="background-color: #C0C0C0;" width="200" height="100" colspan="1"><img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_Events_18_N.svg"/> Träffar</td>
+<td style="background-color: #C0C0C0;" width="200" height="100" colspan="1"><img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPage_18_N.svg"/> Träffar</td>
 </tr>
 
 <tr>
@@ -188,7 +188,7 @@ Sekventiell segmentering använder samma grundläggande behållare, inklusive [!
 <tr>
 <td style="background-color: #E5E4E2;" width="200" height="100"></td>
 <td style="background-color: #D3D3D3;" width="200" height="100"></td>
-<td style="background-color: #C0C0C0;" width="200" height="100" colspan="1"><img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_Events_18_N.svg"/> Träffar</td>
+<td style="background-color: #C0C0C0;" width="200" height="100" colspan="1"><img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPage_18_N.svg"/> Träffar</td>
 </tr>
 </table>
 
@@ -210,7 +210,7 @@ Det enda undantaget till den här behållarhierarkin är när [logikgruppsbehål
 <tr>
 <td style="background-color: #E5E4E2;" width="200" height="100"></td>
 <td style="background-color: #D3D3D3;" width="200" height="100"></td>
-<td style="background-color: #C0C0C0;" width="200" height="100" colspan="1"><img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_Events_18_N.svg"/> Träffar</td>
+<td style="background-color: #C0C0C0;" width="200" height="100" colspan="1"><img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPage_18_N.svg"/> Träffar</td>
 </tr>
 
 <tr>
@@ -225,7 +225,7 @@ Det enda undantaget till den här behållarhierarkin är när [logikgruppsbehål
 <tr>
 <td style="background-color: #E5E4E2;" width="200" height="100"></td>
 <td style="background-color: #D3D3D3;" width="200" height="100"></td>
-<td style="background-color: #C0C0C0;" width="200" height="100" colspan="1"><img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_Events_18_N.svg"/> Träffar</td>
+<td style="background-color: #C0C0C0;" width="200" height="100" colspan="1"><img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPage_18_N.svg"/> Träffar</td>
 </tr>
 
 <tr>
@@ -407,7 +407,7 @@ Om du använder segment med en mindre behållare än nedbrytningsområdet return
 
 ## Beständig i alla behållare {#persistence}
 
-Filtrering efter dimensioner som finns kvar på ett sidintervall, t.ex. en Campaign-eVar eller en referensdimension, påverkar data som samlas in på behållarnivå och måste förstås för att rapporteringen ska vara korrekt.
+Filtrering efter dimensioner som finns kvar på ett sidintervall, t.ex. en Campaign eVar eller en referensdimension, påverkar de data som samlas in på behållarnivå och måste förstås för att rapporteringen ska vara korrekt.
 
 Segmentdata kan variera beroende på hur beständig en dimension eller en variabel som används på de valda sidorna är. Vissa dimensioner, till exempel siddimensionen, ger unika värden på sidnivå och filtreras baserat på data från Träff-behållaren. (Se exemplet [Rapporter baserade på behållardata](/help/components/segmentation/seg-overview.md)). Andra dimensioner, till exempel dimensionen Refererande domän, finns kvar på flera sidor för ett besök. Till exempel: `Referring Domain equals aol.com`. Vissa dimensioner eller tillämpade variabler, som Besök Varaktighet, spänner över en besökares hela historik.
 
@@ -543,4 +543,4 @@ När du visar data från besökarbehållaren, observera att sidvyerna har ökat 
 
 - Besökarbehållaren returnerar alla sidor som visas av en besökare där minst en sida uppfyller villkoren. Om en sida bara visas på besök 1 dag 1, inkluderas alla sidor som besökaren visar vid flera besök i data.
 - Besöksbehållaren returnerar alla sidor som visas vid ett besök, för vilka minst en sida uppfyller villkoren. Om en sida bara visas på besök 1 dag 1 inkluderas alla sidor som visas under hela besöket i informationen.
-- Var noga med att basera villkoret som du använder för segmentering på en eVar eller annan typ av beständig variabel. Du kan till exempel använda villkoret&quot;där kampanjen innehåller e-post&quot; och det upphör att gälla efter sju dagar. Så om kampanjen sätts in vid det första besöket kvarstår den i ytterligare sju dagar. Varje besök ingår även om kampanjen bara var planerad vid det första besöket. De övriga besöken ingår också (så länge de ligger inom rapportens datumintervall). Om du vill ta bort beständiga värden från att inkluderas använder du antingen händelsen &quot;instance of&quot; eller en motsvarande Prop-variabel, om en sådan finns.
+- Var noga med att basera villkoret som du använder för segmentering på en eVar-variabel eller någon annan typ av beständig variabel. Du kan till exempel använda villkoret&quot;där kampanjen innehåller e-post&quot; och det upphör att gälla efter sju dagar. Så om kampanjen sätts in vid det första besöket kvarstår den i ytterligare sju dagar. Varje besök ingår även om kampanjen bara var planerad vid det första besöket. De övriga besöken ingår också (så länge de ligger inom rapportens datumintervall). Om du vill ta bort beständiga värden från att inkluderas använder du antingen händelsen &quot;instance of&quot; eller en motsvarande Prop-variabel, om en sådan finns.
