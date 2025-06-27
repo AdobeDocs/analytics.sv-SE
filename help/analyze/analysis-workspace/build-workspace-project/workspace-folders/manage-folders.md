@@ -24,13 +24,13 @@ Så här byter du namn på mappar i Workspace:
 * Välj en mapp som du vill byta namn på i [projektlistan](/help/analyze/analysis-workspace/build-workspace-project/freeform-overview.md#project-list).
 
    1. Välj **[!UICONTROL Rename]** från de [åtgärder](/help/analyze/analysis-workspace/build-workspace-project/freeform-overview.md#actions) som är tillgängliga på snabbmenyn ![Mer](/help/assets/icons/More.svg) i den markerade mappen eller i det blå åtgärdsfältet.
-   1. I dialogrutan **[!UICONTROL Rename: *mappnamn *]**anger du ett nytt namn och väljer **[!UICONTROL Save]**.
+   1. I dialogrutan **[!UICONTROL Rename: *mappnamn *]**&#x200B;anger du ett nytt namn och väljer **[!UICONTROL Save]**.
 
 * I mappen som du vill byta namn på.
 
    1. Välj **[!UICONTROL Rename folder]** från ![Mer](/help/assets/icons/More.svg) i [titelområdet](/help/analyze/analysis-workspace/build-workspace-project/freeform-overview.md#title-area).
 
-   1. I dialogrutan **[!UICONTROL Rename: *mappnamn *]**anger du ett nytt namn och väljer **[!UICONTROL Save]**.
+   1. I dialogrutan **[!UICONTROL Rename: *mappnamn *]**&#x200B;anger du ett nytt namn och väljer **[!UICONTROL Save]**.
 
 
 ## Flytta mappar
@@ -76,7 +76,7 @@ Om du vill ta bort mappar i Workspace
 
    1. Välj **[!UICONTROL Delete folder]** från ![Mer](/help/assets/icons/More.svg) i [titelområdet](/help/analyze/analysis-workspace/build-workspace-project/freeform-overview.md#title-area).
 
-   1. I mappen **[!UICONTROL Delete *name *?]**väljer du **[!UICONTROL OK]**.
+   1. I mappen **[!UICONTROL Delete *name *?]**&#x200B;väljer du **[!UICONTROL OK]**.
 
 
 <!-- 

@@ -27,13 +27,13 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="workspace_a4t_panel"
 >title="Analyser för målpanelen"
->abstract="Analysera Target-aktiviteter och -upplevelser i Analysis Workspace.<br/><br>**Parametrar **<br/>**Målaktivitet**: Målaktiviteten som analyseras.<br/>**Kontrollupplevelse**: Kontrollupplevelse för den valda målaktiviteten.<br/>**Normaliserar mätvärden**: Besökare, besök eller visningar. Detta mätvärde (även kallat beräkningsmetoden) blir nämnaren för beräkningen av lyft. Det påverkar också hur data aggregeras innan konfidensberäkningen tillämpas.<br/>**Framgångsmått**: Upp till tre standardvärden (ej beräknade) för lyckade resultat som målaktiviteten ska analyseras mot."
+>abstract="Analysera Target-aktiviteter och -upplevelser i Analysis Workspace.<br/><br>**Parametrar &#x200B;**<br/>**Målaktivitet**: Målaktiviteten som analyseras.<br/>**Kontrollupplevelse**: Kontrollupplevelse för den valda målaktiviteten.<br/>**Normaliserar mätvärden**: Besökare, besök eller visningar. Detta mätvärde (även kallat beräkningsmetoden) blir nämnaren för beräkningen av lyft. Det påverkar också hur data aggregeras innan konfidensberäkningen tillämpas.<br/>**Framgångsmått**: Upp till tre standardvärden (ej beräknade) för lyckade resultat som målaktiviteten ska analyseras mot."
 
 <!-- markdownlint-enable MD034 -->
 
 >[!BEGINSHADEBOX]
 
-_Den här artikeln dokumenterar panelen Analytics for Target i_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._<br/>_På [Experimentationspanelen](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/a4t-panel) finns information om hur du jämför olika användarupplevelser, marknadsförings- och meddelandevariationer i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._
+_Den här artikeln dokumenterar panelen Analytics for Target i_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**._<br/>_På [Experimentationspanelen](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/a4t-panel) finns information om hur du jämför olika användarupplevelser, marknadsförings- och meddelandevariationer i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._
 
 >[!ENDSHADEBOX]
 
