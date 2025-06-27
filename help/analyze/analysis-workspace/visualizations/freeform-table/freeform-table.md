@@ -127,7 +127,7 @@ Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Frihandstabellfil
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Totalvärden för frihandstabell](https://video.tv.adobe.com/v/29273?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Totalvärden för frihandstabell](https://video.tv.adobe.com/v/3437404?quality=12&learn=on&captions=swe){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 
