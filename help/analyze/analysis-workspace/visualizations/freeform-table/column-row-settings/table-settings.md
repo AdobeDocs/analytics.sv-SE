@@ -1,13 +1,13 @@
 ---
-description: Radinställningarna varierar beroende på vilken komponent du har dragit till tabellen.
+description: Lär dig hur du använder radinställningar och hur radinställningarna varierar beroende på vilken komponent du har dragit till en friformstabell i Analysis Workspace.
 title: Radinställningar
 uuid: f30c31d5-1fd4-4b93-94c3-ca441099fe2e
 feature: Freeform Tables
 role: User, Admin
 exl-id: 9057e930-b4c6-439e-b82a-8ab9828de91d
-source-git-commit: a3b6f3ce85003d0a8f3139a66a6cbcf953089d15
+source-git-commit: f258a1150a4bee11f5922d058930dc38b1ddfa14
 workflow-type: tm+mt
-source-wordcount: '896'
+source-wordcount: '906'
 ht-degree: 0%
 
 ---
@@ -92,4 +92,4 @@ Följande alternativ på snabbmenyn är tillgängliga när du väljer en kolumnr
 
 ## Ändra radhöjd
 
-Du kan ange vydensiteten för ett projekt till **[!UICONTROL Compact]**, **[!UICONTROL Comfortable]** och **[!UICONTROL Expanded]**. [Läs mer](/help/analyze/analysis-workspace/build-workspace-project/view-density.md).
+Du kan ange [vydensiteten](/help/analyze/analysis-workspace/build-workspace-project/view-density.md) för ett projekt till **[!UICONTROL Compact]**, **[!UICONTROL Comfortable]** och **[!UICONTROL Expanded]**.

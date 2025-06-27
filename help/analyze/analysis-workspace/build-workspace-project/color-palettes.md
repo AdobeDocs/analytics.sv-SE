@@ -1,12 +1,12 @@
 ---
-description: Använda färgpaletten för visualisering i Analysis Workspace
-title: Vad är visualiseringsfärgpaletter och hur fungerar de?
+description: Lär dig använda färgpaletten för visualisering i Analysis Workspace.
+title: Visualiseringsfärgpalett
 feature: Workspace Basics
 role: User, Admin
 exl-id: 7e426423-5475-44cc-9e78-74c0da5b93f8
-source-git-commit: 8f7c6a0d1477b599b05aeb7b74c4ee96531d294d
+source-git-commit: f258a1150a4bee11f5922d058930dc38b1ddfa14
 workflow-type: tm+mt
-source-wordcount: '207'
+source-wordcount: '201'
 ht-degree: 1%
 
 ---

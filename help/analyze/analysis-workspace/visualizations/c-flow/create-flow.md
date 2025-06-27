@@ -1,12 +1,12 @@
 ---
-description: Använd flödesvisualisering i ett Workspace-projekt.
+description: Lär dig hur du konfigurerar flödesvisualisering i Analysis Workspace
 title: Konfigurera en flödesvisualisering
 feature: Visualizations
 role: User, Admin
 exl-id: c2fdcc96-81ac-4d3b-b255-ff805b6ff0ea
-source-git-commit: 8a184913794e6d4d1211d8b147a485825aab4b8a
+source-git-commit: 978bd8642011dd2c8e43564c90303f194689a64e
 workflow-type: tm+mt
-source-wordcount: '1540'
+source-wordcount: '1545'
 ht-degree: 0%
 
 ---
@@ -69,11 +69,9 @@ ht-degree: 0%
 >abstract="Det här fältet kan bara anges för den första versionen. Om du vill uppdatera det här fältet väljer du **[!UICONTROL Reset]** för att skapa en ny flödesvisualisering."
 
 
+Flödesvisualiseringar hjälper er att förstå den resa som följer av en specifik konverteringshändelse på er webbplats eller i er app. Eller leda upp till en viss konverteringshändelse. Visualiseringen spårar en bana genom dina dimensioner (och dimensionsobjekt) eller mätvärden.
 
-Flödesvisualiseringar hjälper er att förstå den resa som härrör från eller leder fram till en specifik konverteringshändelse på er webbplats eller i er app. Den spårar en bana genom dina dimensioner (och dimensionsobjekt) eller mätvärden.
-
-Med flödesvisualiseringar kan du konfigurera början eller slutet av den sökväg du är intresserad av, eller analysera alla banor som flödar genom en dimension eller dimensionspost.
-
+Du kan konfigurera början eller slutet av sökvägen som du är intresserad av. Eller analysera alla banor som flödar genom en dimension eller dimensionspost.
 ![nytt flödesgränssnitt](assets/new-flow.png)
 
 ## Använd
@@ -175,7 +173,7 @@ Använd en snabbmeny på en nod i flödesvisualiseringen med följande alternati
 | **[!UICONTROL Exclude item]** eller **[!UICONTROL Restore excluded items]** | Tar bort en specifik nod från kolumnen och skapar den automatiskt som ett filter överst i kolumnen. Om du vill återställa det uteslutna objektet väljer du **[!UICONTROL Restore Excluded Item]** på snabbmenyn. Du kan också öppna filtret längst upp i kolumnen och ta bort rutan med det objekt du just uteslutit. |
 | **[!UICONTROL Trend]** | Skapa ett trenddiagram för noden. |
 | **[!UICONTROL Show next column]** / **[!UICONTROL Show previous column]** | Visar nästa (höger) eller föregående (vänster) kolumn i visualiseringen. |
-| **[!UICONTROL Hide colum]**&#x200B;n | Döljer den markerade kolumnen från visualiseringen. |
+| **[!UICONTROL Hide colum]**n | Döljer den markerade kolumnen från visualiseringen. |
 | **[!UICONTROL Expand entire column]** | Expandera en kolumn om du vill visa alla noder. Som standard visas bara de fem översta noderna. |
 | **[!UICONTROL Create audience from selection]** | Skapar en målgrupp baserat på den markerade kolumnen. |
 | **[!UICONTROL Collapse entire column]** | Dölj alla noder i en kolumn. |
@@ -204,8 +202,8 @@ I exemplet nedan inkluderas **alla** förekomster av *huvudkategorin för produk
 >[!MORELIKETHIS]
 >
 >[Lägg till en visualisering på en panel](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
->[Visualiseringsinställningar](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
->[Snabbmenyn Visualisering ](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>>[Visualiseringsinställningar](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>>[Snabbmenyn Visualisering ](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >
 
 

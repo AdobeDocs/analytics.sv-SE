@@ -1,12 +1,12 @@
 ---
-title: Dynamiska jämfört med statiska dimensionsobjekt i frihandstabeller
-description: Så här interagerar du med dynamiska och statiska dimensionsobjekt i tabeller.
+title: Dynamiska och statiska Dimension-objekt
+description: Lär dig hur du använder dynamiska och statiska dimensionsobjekt i frihandstabeller i Analysis Workspace.
 feature: Freeform Tables
 role: User, Admin
 exl-id: 4cdc93b5-67ed-46a4-ba9f-a96e640da9d9
-source-git-commit: be6056f9e7a64b47ab544594149ebfbe134f1c04
+source-git-commit: f258a1150a4bee11f5922d058930dc38b1ddfa14
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '547'
 ht-degree: 0%
 
 ---
@@ -44,9 +44,9 @@ Statiska dimensionsobjekt har **inte** alternativet radfilter. I stället finns 
 
 ## Blandade dimensionsobjekt
 
-Dimensioner från olika dimensioner kan läggas till i samma tabell. Radhuvudet säger **[!UICONTROL Mixed Dimensions]** i dessa fall. Dessa dimensionsobjekt är statiska. Du kan till exempel lägga till specifika dimensionsobjekt från dimensionen Webbläsargrupp och andra dimensionsobjekt från dimensionen Webbläsarnamn.
+Dimension-objekt med olika dimensioner kan läggas till i samma tabell. Radhuvudet säger **[!UICONTROL Mixed Dimensions]** i dessa fall. Dessa dimensionsobjekt är statiska. Du kan till exempel lägga till specifika dimensionsobjekt från dimensionen Webbläsargrupp och andra dimensionsobjekt från dimensionen Webbläsarnamn.
 
-![En friformstabell som markerar kolumnen Blandade Dimensioner.](assets/mixed-dimensions.png)
+![En friformstabell som markerar kolumnen Blandade dimensioner.](assets/mixed-dimensions.png)
 
 ## Frihandsrader
 

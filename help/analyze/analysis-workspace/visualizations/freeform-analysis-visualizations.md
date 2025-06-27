@@ -1,46 +1,77 @@
 ---
-description: Visa dina data visuellt med visualiseringar.
+description: Lär dig hur du visuellt återger dina data med visualiseringar som är tillgängliga i Analysis Workspace.
 keywords: Analysis Workspace
 title: Visualiseringar - översikt
 feature: Visualizations
 role: User, Admin
 exl-id: b40aa942-4a08-4ff3-9895-e92f9a187b54
-source-git-commit: b53ef727adc563e05403c50d80bbd0c48bb8a054
+source-git-commit: f258a1150a4bee11f5922d058930dc38b1ddfa14
 workflow-type: tm+mt
-source-wordcount: '1377'
+source-wordcount: '1430'
 ht-degree: 1%
 
 ---
 
 # Visualiseringar - översikt
 
-Workspace erbjuder ett antal visualiseringar som gör att du kan generera visuella representationer av dina data, till exempel stapeldiagram, dondiagram, histogram, linjediagram, kartor, punktdiagram med mera. De flesta visualiseringstyper är välbekanta för dig om du använder Adobe Analytics. Men Analysis Workspace har visualiseringsinställningar och många nya eller unika visualiseringstyper med interaktiva funktioner.
+Workspace erbjuder ett antal visualiseringar som gör att du kan generera visuella representationer av dina data. t.ex. stapeldiagram, mundiagram, histogram, linjediagram, kartor, punktdiagram med mera.
 
-## Visualiseringstyper
+## Typer
 
 Följande visualiseringstyper finns i Analysis Workspace:
 
-| Visualiseringsnamn | Beskrivning |
-| --- | --- |
-| [Område](/help/analyze/analysis-workspace/visualizations/area.md)<p>![Områdesikon](assets/Smock_GraphArea_18_N.svg)</p> | Som ett linjediagram, men med ett färgat område under linjen. Använd ett ytdiagram när du har flera mätvärden och vill visualisera området som uttrycks genom skärningspunkten för två eller flera mätvärden. |
-| [Bar](/help/analyze/analysis-workspace/visualizations/bar.md)<p>![Ikon för stapel](assets/Smock_GraphBarVertical_18_N.svg)</p> | Visar lodräta staplar som representerar olika värden för ett eller flera mätvärden. |
-| [Punktdiagram](/help/analyze/analysis-workspace/visualizations/bullet-graph.md)<p>![Bullet icon](assets/Smock_GraphBullet_18_N.svg)</p> | Visar hur ett värde som du är intresserad av jämförs med eller mäter mot andra prestandaintervall (mål). |
-| [Kohortabell](/help/analyze/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)<p>![Kohortabellsikon](assets/Smock_TextNumbered_18_N.svg)</p> | En *`cohort`* är en grupp personer som delar gemensamma egenskaper under en angiven period. Kohortanalys är användbart för analys av kvarhållande, bortfall eller fördröjning. |
-| [Ringdiagram](/help/analyze/analysis-workspace/visualizations/donut.md)<p>![Ringformsikon](assets/Smock_GraphDonut_18_N.svg)</p> | På samma sätt som ett cirkeldiagram visar den här visualiseringen data som delar eller segment av en helhet. |
-| [Utfall](/help/analyze/analysis-workspace/visualizations/fallout/fallout-flow.md)<p>![Utfallsikon](assets/Smock_ConversionFunnel_18_N.svg)</p> | Utfallsrapporter visar var besökarna lämnade (föll ned) och fortsatte igenom (föll igenom) en fördefinierad sidsekvens. Kan anges till sekvenser av typen slutlig eller exakt |
-| [Flöde](/help/analyze/analysis-workspace/visualizations/c-flow/flow.md)<p>![Flödesikon](assets/flow-icon.png)</p> | Visar exakta kundvägar via era webbplatser och appar. |
-| [Frihandstabell](/help/analyze/analysis-workspace/visualizations/freeform-table/freeform-table.md)<p>![Ikon för frihandstabell](assets/Smock_ViewTable_18_N.svg)</p> | En friformstabell är inte bara en datatabell, utan också en interaktiv visualisering. Det är grunden för dataanalys i Workspace. |
-| [Histogram](/help/analyze/analysis-workspace/visualizations/histogram.md)<p>![Histogramikon](assets/Smock_GraphHistogram_18_N.svg)</p> | Ett histogram lurar besökare, besök eller träffar i grupper baserat på en mätvolym. |
-| [Vågrätt fält](/help/analyze/analysis-workspace/visualizations/horizontal-bar.md)<p>![Ikon för vågrätt fält](assets/Smock_GraphBarHorizontal_18_N.svg)</p> | Visar vågräta staplar som representerar olika värden för ett eller flera mätvärden. |
-| [Sammanfattning av nyckelmått](/help/analyze/analysis-workspace/visualizations/key-metric.md)<p>![Nyckelmätningsikon](assets/key-metric-icon.png)</p> | Visar hur ett mätresultat trendar inom en enskild tidsram, eller låter dig jämföra mätprestanda över två tidsramar. |
-| [Linjediagram](/help/analyze/analysis-workspace/visualizations/line.md)<p>![Linjeikon](assets/Smock_GraphTrend_18_N.svg)</p> | Representerar mätvärden med hjälp av en rad för att visa hur värden ändras under en tidsperiod. Ett linjediagram använder tid längs x-axeln. |
-| [Mappa](/help/analyze/analysis-workspace/visualizations/map-visualization.md)<p>![Kartikon](assets/map-icon.png)</p> | Gör att du kan skapa en visuell karta över alla mått (inklusive beräknade värden). |
-| [Spridningsdiagram](/help/analyze/analysis-workspace/visualizations/scatterplot.md)<p>![Ikonen Scatterplot](assets/Smock_GraphScatter_18_N.svg)</p> | Visar relationen mellan dimensionsobjekt och upp till tre mätvärden. |
-| [Sammanfattningsnummer](/help/analyze/analysis-workspace/visualizations/summary-number-change.md)<p>![Ikon för sammanfattningsnummer](assets/summary-number-icon.png)</p> | Visar den markerade cellen som ett stort tal. |
-| [Sammanfattningsändring](/help/analyze/analysis-workspace/visualizations/summary-number-change.md)<p>![Ikon för ändring av sammanfattning](assets/summary-change-icon.png)</p> | Visar ändringen mellan de markerade cellerna som ett stort tal/procent. |
-| [Text](/help/analyze/analysis-workspace/visualizations/text.md)<p>![Textikon](assets/Smock_Text_18_N.svg)</p> | Gör att du kan lägga till användardefinierad text i din Workspace. Användbar för att lägga till ytterligare kontext till analyser och insikter, utöver att utnyttja beskrivningar av paneler/visualisering |
-| [Treemap-diagram](/help/analyze/analysis-workspace/visualizations/treemap.md)<p>![Treemap-ikon](assets/Smock_GraphTree_18_N.svg)</p> | Visar hierarkiska (trädstrukturerade) data som en uppsättning kapslade rektanglar. |
-| [Venn](/help/analyze/analysis-workspace/visualizations/venn.md)<p>![Vennikon](assets/venn-icon.png)</p> | Använder cirklar för att beskriva måttöverlappningen för upp till 3 segment. |
+
+| Ikon | Namn | Beskrivning |
+| :---: | --- | ---| 
+| ![GraphArea](/help/assets/icons/GraphArea.svg) | [Område](/help/analyze/analysis-workspace/visualizations/area.md) | En områdesgraf visualisering. Som ett linjediagram, men med ett färgat område under linjen. Använd ett ytdiagram när du har flera mätvärden och vill visualisera området som uttrycks genom skärningspunkten för två eller flera mätvärden. |
+| ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) | [Bar](/help/analyze/analysis-workspace/visualizations/bar.md) | En stapeldiagramvisualisering med lodräta staplar som representerar olika värden över en eller flera mätvärden. |
+| ![GraphBarVertical](/help/assets/icons/GraphBarVerticalStacked.svg) | [Stapel staplad](/help/analyze/analysis-workspace/visualizations/bar.md) | En staplad stapeldiagramvisualisering med lodräta staplar som representerar olika värden över ett eller flera mätvärden. |
+| ![GraphBullet](/help/assets/icons/GraphBullet.svg)</p> | [Punkt](/help/analyze/analysis-workspace/visualizations/bullet-graph.md) | En punktgraf som visar hur ett värde som du är intresserad av jämförs med eller mäter mot andra prestandaintervall (mål). |
+| ![TextNumbered](/help/assets/icons/TextNumbered.svg) | [Kohortabell](/help/analyze/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) | En kohortvisualisering är en grupp personer som delar gemensamma egenskaper under en viss period. En kohorttabell är användbar för retentions-, urn- eller latensanalys. |
+| ![Kombination](/help/assets/icons/ComboChart.svg) | [Kombination](combo-charts.md) | Med ett kombinationsdiagram kan du snabbt skapa en jämförelsevisualisering utan att först behöva skapa en tabell. |
+| ![GraphDonut](/help/assets/icons/GraphDonut.svg) | [Ringdiagram](/help/analyze/analysis-workspace/visualizations/donut.md) | På samma sätt som ett cirkeldiagram visas data som delar av eller segment i en helhet i en munhandvisning. |
+| ![ConversionTratt](/help/assets/icons/ConversionFunnel.svg) | [Utfall](/help/analyze/analysis-workspace/visualizations/fallout/fallout-flow.md) | En utfallsvisualisering visar var personer lämnade (föll ut) och fortsatte igenom (föll igenom) en fördefinierad sidsekvens. |
+| ![GraphPathing](/help/assets/icons/GraphPathing.svg) | [Flöde](/help/analyze/analysis-workspace/visualizations/c-flow/flow.md) | En flödesvisualisering visar exakta kundvägar via era webbplatser och appar. |
+| ![VisaTabell](/help/assets/icons/ViewTable.svg)</p> | [Frihandstabell](/help/analyze/analysis-workspace/visualizations/freeform-table/freeform-table.md) | En frihandsritbordsvisualisering är en interaktiv visualisering. Visualisering av tabeller på frihand är grunden för dataanalys i Workspace. |
+| ![GraphHistogram](/help/assets/icons/Histogram.svg) | [Histogram](/help/analyze/analysis-workspace/visualizations/histogram.md) | En histogramvisualisering blockerar personer, besök eller händelser i grupper baserat på en mätvolym. |
+| ![GraphBarHorizontal](/help/assets/icons/GraphBarHorizontal.svg) | [Vågrätt fält](/help/analyze/analysis-workspace/visualizations/horizontal-bar.md) | En vågrät fältvisualisering visar vågräta staplar som representerar olika värden över ett eller flera mätvärden. |
+| ![GraphBarHorizontalStached](/help/assets/icons/GraphBarHorizontalStacked.svg) | [Vågrätt fält staplat](/help/analyze/analysis-workspace/visualizations/horizontal-bar.md) | En staplad vågrät fältvisualisering visar vågräta staplar som representerar olika värden över ett eller flera mätvärden. |
+| ![KeyMetrics](/help/assets/icons/KeyMetrics.svg) | [Sammanfattning av nyckelmått](/help/analyze/analysis-workspace/visualizations/key-metric.md) | En sammanfattning av nyckeltal kombinerar visualisering av rad, sammanfattningsändring och sammanfattningsnummer. |
+| ![GraphTrend](/help/assets/icons/GraphTrend.svg) | [Linjediagram](/help/analyze/analysis-workspace/visualizations/line.md) | En radvisualisering representerar mätvärden som använder en rad för att visa hur värden ändras under en tidsperiod. Ett linjediagram använder tid längs x-axeln. |
+| ![Globe](/help/assets/icons/Globe.svg) | [Mappa](/help/analyze/analysis-workspace/visualizations/map-visualization.md) | Gör att du kan skapa en visuell karta över alla mått (inklusive beräknade värden) |
+| ![GraphScatter](/help/assets/icons/GraphScatter.svg) | [Spridning](/help/analyze/analysis-workspace/visualizations/scatterplot.md) | En punktvisualisering visar relationen mellan dimensionsobjekt och upp till tre mätvärden. |
+| ![PageRule](/help/assets/icons/PageRule.svg) | [Avsnittshuvud](section-header.md) | Identifiera och föra fram avsnitt på en panel. |
+| ![MoveUpDown](/help/assets/icons/MoveUpDown.svg) | [Sammanfattningsändring](/help/analyze/analysis-workspace/visualizations/summary-number-change.md) | En visualisering av en sammanfattningsändring visar ändringen mellan de markerade cellerna som ett stort tal eller som ett procenttal. |
+| ![123](/help/assets/icons/123.svg)</p> | [Sammanfattningsnummer](/help/analyze/analysis-workspace/visualizations/summary-number-change.md) | En visualisering av ett sammanfattningsnummer visar den markerade cellen som ett stort tal. |
+| ![Text](/help/assets/icons/Text.svg) | [Text](/help/analyze/analysis-workspace/visualizations/text.md) | Med textvisualisering kan du lägga till användardefinierad text i din Workspace. Användbar för att lägga till ytterligare kontext till analyser och insikter, utöver att utnyttja beskrivningar av paneler/visualisering |
+| ![ModernGridView](/help/assets/icons/ModernGridView.svg) | [Treemap-diagram](/help/analyze/analysis-workspace/visualizations/treemap.md)<p> | I en treemap-visualisering visas hierarkiska (trädstrukturerade) data som en uppsättning kapslade rektanglar. |
+| ![Typ](/help/assets/icons/TwoDots.svg) | [Venn](/help/analyze/analysis-workspace/visualizations/venn.md) | En venn-visualisering använder cirklar för att avbilda den metriska överlappningen av upp till 3 segment. |
+
+<!--
+
+| Name| Icon | Description |
+| --- |:---: | ---|
+| [Area](/help/analyze/analysis-workspace/visualizations/area.md)|![Area icon](assets/Smock_GraphArea_18_N.svg)</p> | Like a line graph, but with a colored area below the line. Use an area graph when you have multiple metrics and want to visualize the area expressed by the intersection of two or more metrics. |
+| [Bar](/help/analyze/analysis-workspace/visualizations/bar.md)|![Bar icon](assets/Smock_GraphBarVertical_18_N.svg)</p> | Shows vertical bars representing various values across one or more metrics. |
+| [Bullet graph](/help/analyze/analysis-workspace/visualizations/bullet-graph.md)|![Bullet icon](assets/Smock_GraphBullet_18_N.svg)</p> | Shows how a value you are interested in compares to or measures against other performance ranges (goals). |
+| [Cohort table](/help/analyze/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)|![Cohort table icon](assets/Smock_TextNumbered_18_N.svg)</p> | A *`cohort`* is a group of people sharing common characteristics over a specified period. Cohort Analysis is useful for retention, churn or latency analysis. |
+| [Donut](/help/analyze/analysis-workspace/visualizations/donut.md) | ![Donut icon](assets/Smock_GraphDonut_18_N.svg)</p> | Similar to a pie chart, this visualization shows data as parts or segments of a whole. |
+| [Fallout](/help/analyze/analysis-workspace/visualizations/fallout/fallout-flow.md) | ![Fallout icon](assets/Smock_ConversionFunnel_18_N.svg)</p> | Fallout reports show where visitors left (fell out) and continued through (fell through) a predefined sequence of pages. Can be set to eventual or exact sequences |
+| [Flow](/help/analyze/analysis-workspace/visualizations/c-flow/flow.md) | ![Flow icon](assets/flow-icon.png)</p> | Shows exact customer paths through your websites and apps. |
+| [Freeform table](/help/analyze/analysis-workspace/visualizations/freeform-table/freeform-table.md) | ![Freeform table icon](assets/Smock_ViewTable_18_N.svg)</p> | A Freeform table is not merely a data table, but also an interactive visualization. It is the foundation for data analysis in Workspace.|
+| [Histogram](/help/analyze/analysis-workspace/visualizations/histogram.md) | ![Histogram icon](assets/Smock_GraphHistogram_18_N.svg)</p> | A histogram buckets visitors, visits or hits into buckets based on a metric volume. |
+| [Horizontal bar](/help/analyze/analysis-workspace/visualizations/horizontal-bar.md) | ![Horizontal bar icon](assets/Smock_GraphBarHorizontal_18_N.svg)</p> | Shows horizontal bars representing various values across one or more metrics. |
+| [Key metric summary](/help/analyze/analysis-workspace/visualizations/key-metric.md) | ![Key metric icon](assets/key-metric-icon.png)</p> | Shows how a metric is trending within a single timeframe, or lets you compare metric performance across two timeframes. |
+| [Line](/help/analyze/analysis-workspace/visualizations/line.md) | ![Line icon](assets/Smock_GraphTrend_18_N.svg)</p> | Represents metrics using a line in order to show how values change over a period of time. A line chart uses time along the x-axis. |
+| [Map](/help/analyze/analysis-workspace/visualizations/map-visualization.md) | ![Map icon](assets/map-icon.png)</p> | Lets you build a visual map of any metric (including calculated metrics). |
+| [Scatterplot](/help/analyze/analysis-workspace/visualizations/scatterplot.md) | ![Scatterplot icon](assets/Smock_GraphScatter_18_N.svg)</p> | Shows the relationship between dimension items and up to three metrics. |
+| [Summary number](/help/analyze/analysis-workspace/visualizations/summary-number-change.md) | ![Summary number icon](assets/summary-number-icon.png)</p> | Shows the selected cell as 1 large number. |
+| [Summary change](/help/analyze/analysis-workspace/visualizations/summary-number-change.md) | ![Summary change icon](assets/summary-change-icon.png)</p> | Shows the change between the selected cells as 1 large number/percent. |
+| [Text](/help/analyze/analysis-workspace/visualizations/text.md) | ![Text icon](assets/Smock_Text_18_N.svg)</p> | Lets you add user-defined text to your Workspace. Helpful for adding additional context to your analysis and insights, in addition to leveraging panel/visualization descriptions |
+| [Treemap](/help/analyze/analysis-workspace/visualizations/treemap.md) | ![Treemap icon](assets/Smock_GraphTree_18_N.svg)</p> | Displays hierarchical (tree-structured) data as a set of nested rectangles. |
+| [Venn](/help/analyze/analysis-workspace/visualizations/venn.md) | ![Venn icon](assets/venn-icon.png)</p> | Uses circles to depict the metric overlap of up to 3 segments. |
+
+-->
 
 ## Lägga till visualiseringar i en panel
 
@@ -186,8 +217,8 @@ Additional functionality for a visualziation is available by right-clicking on t
 | --- | --- |
 | Insert Copied Panel/Visualization|Lets you paste ("insert") a copied panel or visualization to another place within the project, or into a completely different project. |
 | Copy Visualization | Lets you right-click and copy a visualization, so that you can insert it to another place within the project, or into a completely different project. |
-| [Download items as CSV](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/download-send.html?lang=sv-SE&#download-items) | Download up to 50,000 dimension items for the selected dimension as a CSV. |
-| [Download data as CSV](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/download-send.html?lang=sv-SE&#download-data) | Download visualization data source as a CSV. |
+| [Download items as CSV](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/download-send.html?#download-items) | Download up to 50,000 dimension items for the selected dimension as a CSV. |
+| [Download data as CSV](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/download-send.html?#download-data) | Download visualization data source as a CSV. |
 | Duplicate Visualization | Makes an exact duplicate of the current visualization, which you can then modify. |
 | Edit Description | Add (or edit) a text description for the visualization. |
 | Get Visualization Link | Lets you direct someone to a specific visualization within a project. When the link is clicked, the recipient will be required to login before being directed to the exact visualization linked to. |

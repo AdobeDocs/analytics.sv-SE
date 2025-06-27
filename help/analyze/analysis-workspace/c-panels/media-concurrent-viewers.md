@@ -1,12 +1,12 @@
 ---
-title: Media Concurrent Viewers panel
-description: Så här använder och tolkar du panelen Media Concurrent Viewer i Analysis Workspace.
+title: Media Concurrent Viewers Panel
+description: Lär dig hur du använder och tolkar panelen Media Concurrent Viewer i Analysis Workspace.
 feature: Panels
 role: User, Admin
 exl-id: 29575b51-e319-4156-9834-aa0b671afb31
-source-git-commit: d7a6867796f97f8a14cd8a3cfad115923b329c7c
+source-git-commit: 978bd8642011dd2c8e43564c90303f194689a64e
 workflow-type: tm+mt
-source-wordcount: '1193'
+source-wordcount: '1194'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-_Den här artikeln visar panelen Medievisningsprogram för samtidig användning i_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics Analytics**._<br/>_Se [Panelen för visningsprogram för samtidiga media](https://experienceleague.adobe.com/sv/docs/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers) för_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**-versionen av artikeln._
+_Den här artikeln visar panelen Medievisningsprogram för samtidig användning i_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics Analytics**._<br/>_Se [Panelen för visningsprogram för samtidiga media](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers) för_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**-versionen av den här artikeln._
 
 >[!ENDSHADEBOX]
 
@@ -44,7 +44,7 @@ _Den här artikeln visar panelen Medievisningsprogram för samtidig användning 
 >
 >Den genomsnittliga minuten-panelen för media är endast tillgänglig för kunder som har köpt tillägget Streaming Media Collection för Adobe Analytics.
 >
->Kontakta din säljare eller ditt Adobe-kontoteam på Adobe för mer information.
+>Kontakta din Adobe-säljare eller Adobe-kontogrupp om du vill ha mer information.
 >
 
 Panelen **[!UICONTROL Media concurrent viewers]** gör det möjligt att analysera samtidiga visningsprogram över tid, med information om maximal samtidighet och möjlighet att dela upp och jämföra.
@@ -131,8 +131,8 @@ Det finns ingen friformstabell i den här vyn.  Om du vill visa datakällan kan 
 >[!MORELIKETHIS]
 >
 >[Skapa en panel](/help/analyze/analysis-workspace/c-panels/panels.md#create-a-panel)
->[Medieuppspelningstid för panelen ](media-playback-time-spent.md)
->[Medie - genomsnittlig minutmålspanel](average-minute-audience-panel.md)
+>>[Medieuppspelningstid för panelen ](media-playback-time-spent.md)
+>>[Medie - genomsnittlig minutmålspanel](average-minute-audience-panel.md)
 >
 <!--
 # Media Concurrent Viewers panel

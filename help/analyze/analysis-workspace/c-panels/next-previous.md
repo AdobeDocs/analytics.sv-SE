@@ -1,39 +1,31 @@
 ---
-description: En panel som visar nästa eller föregående dimensionsobjekt för en viss dimension.
-title: Panelen Nästa eller föregående objekt
+description: Lär dig hur du använder panelen Nästa eller Föregående objekt som visar nästa eller föregående dimensionsobjekt för en viss dimension.
+title: Panelen Nästa eller Föregående objekt
 feature: Panels
 role: User, Admin
 exl-id: 9f2f8134-2a38-42bb-b195-5e5601d33c4e
-source-git-commit: 2aaa8c0d13755b40ec701ca6342ab773103a0422
+source-git-commit: 978bd8642011dd2c8e43564c90303f194689a64e
 workflow-type: tm+mt
-source-wordcount: '433'
+source-wordcount: '441'
 ht-degree: 0%
 
 ---
 
 # Panelen Nästa eller föregående objekt {#next-or-previous-item-panel}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="workspace_nextorpreviousitem_button"
 >title="Nästa eller föregående objekt"
 >abstract="Skapa en panel för att förstå de tidigare dimensioner som personer kommer från eller nästa dimension kommer till."
-
-<!-- markdownlint-disable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="workspace_nextorpreviousitem_panel"
 >title="Kapsla eller föregående objekt"
 >abstract="Analysera de vanligaste platserna som besökare tidigare kom från eller kom till nästa.<br/><br/>**Dimension**: Välj en dimension. Till exempel **Sida**.<br/>**Dimension-objekt**: Välj en specifik dimensionsobjekt. Exempel: **Hemsida**.<br/>**Riktning**: Välj **Nästa** om du vill visa dimensionsobjekten direkt efter den valda dimensionsobjektet. Välj **Föregående** om du vill se dimensionsobjekten som leder upp till den valda dimensionsposten.<br/>**Behållare**: Välj **Session** om du vill visa nästa/föregående dimensionsobjekt i samma session, eller välj **Person** om du vill visa nästa/föregående dimensionsobjekt för samma person."
 
-<!-- markdownlint-enable MD034 -->
-
 >[!BEGINSHADEBOX]
 
-_I den här artikeln dokumenteras panelen Nästa eller Föregående objekt i_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**._<br/>_Se [Nästa eller föregående objektpanel](https://experienceleague.adobe.com/sv/docs/analytics/analyze/analysis-workspace/panels/next-previous)) för_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**-versionen av den här artikeln._
+_I den här artikeln dokumenteras panelen Nästa eller Föregående objekt i_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._<br/>_Se [Nästa eller föregående objektpanel](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/next-previous)) för_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**-versionen av den här artikeln._
 
 >[!ENDSHADEBOX]
 

@@ -1,13 +1,13 @@
 ---
-description: Du kan skapa segment från en kontaktyta, lägga till segment som kontaktyta och jämföra viktiga arbetsflöden mellan olika segment i Analysis Workspace.
+description: Lär dig hur du kan skapa segment från en kontaktyta, lägga till segment som kontaktyta och jämföra viktiga arbetsflöden mellan olika segment i en utfallsanalys i Analysis Workspace.
 keywords: utfall och segmentering;segment i utfallsanalys;jämför segment i utfall
-title: Använd segment i utfallsanalys
+title: Använd segment i bortfallsanalys
 feature: Visualizations
 role: User, Admin
 exl-id: 2177cd09-5a27-4295-8414-580cf53062cb
-source-git-commit: d7a6867796f97f8a14cd8a3cfad115923b329c7c
+source-git-commit: 978bd8642011dd2c8e43564c90303f194689a64e
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: '433'
 ht-degree: 0%
 
 ---
@@ -18,11 +18,12 @@ Du kan skapa segment från en kontaktyta, lägga till segment som kontaktyta och
 
 >[!IMPORTANT]
 >
->Segment som används som kontrollpunkter i utfall måste använda en behållare som är på en lägre nivå än den övergripande kontexten för utfallsvisualiseringen. Med en besökarkontextutvikning måste segment som används som kontrollpunkter vara besök eller träffbaserade segment. Med en utvikning för besökskontext måste segment som används som kontrollpunkt vara träffbaserade segment. Om du använder en ogiltig kombination blir utfallet 100 %. Vi har lagt till en varning i utfallsvisualiseringen som visas när du lägger till ett inkompatibelt segment som kontaktyta. Vissa ogiltiga kombinationer av segmentbehållare leder till ogiltiga utfallsdiagram, som:
-
-* Använda ett besöksbaserat segment som kontaktyta inuti en besökarsammanhangsbaserad utfallsvisualisering
-* Använda ett besöksbaserat segment som kontaktyta i en snabbutfallsvisualisering
-* Använda ett besöksbaserat segment som kontaktyta inuti en snabbmeny för utfall
+>Segment som används som kontrollpunkter i utfall måste använda en behållare som är på en lägre nivå än den övergripande kontexten för utfallsvisualiseringen. Med en besökarkontextutvikning måste segment som används som kontrollpunkter vara besök eller träffbaserade segment. Med en utvikning för besökskontext måste segment som används som kontrollpunkt vara träffbaserade segment. Om du använder en ogiltig kombination blir utfallet 100 %. En varning visas i Utfallsvisualiseringen när du lägger till ett inkompatibelt segment som kontaktyta. Vissa ogiltiga kombinationer av segmentbehållare leder till ogiltiga utfallsdiagram, som:
+>
+>* Använda ett besöksbaserat segment som kontaktyta inuti en besökarsammanhangsbaserad utfallsvisualisering.
+>* Använda ett besöksbaserat segment som kontaktyta i en snabbutfallsvisualisering.
+>* Använda ett besöksbaserat segment som kontaktyta i en snabbutfallsvisualisering.
+>
 
 ## Skapa ett segment från en kontaktyta {#section_915E8FBF35CD4F34828F860C1CCC2272}
 

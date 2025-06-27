@@ -1,12 +1,12 @@
 ---
-title: Attributionspanelen
-description: Använda och tolka attribueringspanelen i Analysis Workspace.
+title: Attributionspanel
+description: Lär dig använda och tolka attribueringspanelen i Analysis Workspace.
 feature: Attribution
 role: User, Admin
 exl-id: 96ce3cb9-7753-4ec0-b551-e70a1508e3b7
-source-git-commit: 8b556c3d2d0691b4dfd9b7c0aefdd418ca2e3204
+source-git-commit: 978bd8642011dd2c8e43564c90303f194689a64e
 workflow-type: tm+mt
-source-wordcount: '682'
+source-wordcount: '683'
 ht-degree: 8%
 
 ---
@@ -24,14 +24,14 @@ ht-degree: 8%
 >[!CONTEXTUALHELP]
 >id="workspace_attribution_panel"
 >title="Attributionspanelen"
->abstract="Jämför och visualisera snabbt valfritt antal attribueringsmodeller med alla mått och konverteringsvärden.<br/><br/>**Parametrar &#x200B;**<br/>**Kanal**<br/> Dimensionen som ska attribut mot. Denna dimension kan vara marknadsföringskanaler, kampanjer eller andra dimensioner.<br/>**Modeller**<br/> Modellen avgör hur krediter tilldelas till kontaktytor.<br/>**Fönstret för bakåtsökning**<br/> Den här inställningen bestämmer fönstret för dataattribuering som gäller för varje konvertering."
+>abstract="Jämför och visualisera snabbt valfritt antal attribueringsmodeller med alla mått och konverteringsvärden.<br/><br/>**Parametrar **<br/>**Kanal**<br/> Dimensionen som ska attribut mot. Denna dimension kan vara marknadsföringskanaler, kampanjer eller andra dimensioner.<br/>**Modeller**<br/> Modellen avgör hur krediter tilldelas till kontaktytor.<br/>**Fönstret för bakåtsökning**<br/> Den här inställningen bestämmer fönstret för dataattribuering som gäller för varje konvertering."
 >additional-url="https://www.youtube.com/watch?v=Yu0hy2klzA0" text="Panelen Attribution IQ"
 
 <!-- markdownlint-enable MD034 -->
 
 >[!BEGINSHADEBOX]
 
-_Den här artikeln dokumenterar panelen Attribution i_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**._<br/>_Se [Attribution panel](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-workspace/panels/attribution) för_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**-versionen av den här artikeln._
+_Den här artikeln dokumenterar panelen Attribution i_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._<br/>_Se [Attribution panel](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/attribution) för_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**-versionen av den här artikeln._
 
 >[!ENDSHADEBOX]
 

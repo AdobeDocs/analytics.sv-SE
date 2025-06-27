@@ -4,17 +4,17 @@ audience: end-user
 user-guide-title: Handbok om Analytics-verktyg
 breadcrumb-title: Användarhandbok om verktyg
 user-guide-description: Lär dig hur du använder verktyg i Analytics, inklusive Analysis Workspace, Analytics Dashboards, Report Builder, Legacy Report Builder och Activity Map.
-source-git-commit: 5c9d6a5498fafdf05ff1f7f6c9b99f1a5de08db0
+source-git-commit: 1c5eed6d9a70bca6835d68c83dc0523449401a62
 workflow-type: tm+mt
-source-wordcount: '960'
-ht-degree: 7%
+source-wordcount: '896'
+ht-degree: 8%
 
 ---
 
 # Adobe Analytics Tools Guide {#analyze}
 
 + [Handbok om Analytics-verktyg](home.md)
-+ [Versionsinformation för analyser](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html?lang=sv-SE)
++ [Versionsinformation för analyser](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html)
 + Kom igång med Adobe Analytics {#admin-overview}
    + [Analytics - översikt](get-started/analytics-overview.md)
    + [Kom igång (efter roll)](get-started/get-started-by-role.md)
@@ -31,15 +31,15 @@ ht-degree: 7%
       + [Skapa projekt](analysis-workspace/build-workspace-project/create-projects.md)
       + [Öppna projekt](analysis-workspace/build-workspace-project/open-projects.md)
       + [Spara projekt](analysis-workspace/build-workspace-project/save-projects.md)
-      + [Innehållsförteckning för projekt](/help/analyze/analysis-workspace/build-workspace-project/project-table-of-contents.md)
+      + [Innehållsförteckning](/help/analyze/analysis-workspace/build-workspace-project/project-table-of-contents.md)
       + Mappar i Workspace {#workspace-folders}
          + [Översikt över mappar](analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
-         + [Skapa mappar och undermappar](analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)
+         + [Skapa mappar](analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)
          + [Hantera mappar](analysis-workspace/build-workspace-project/workspace-folders/manage-folders.md)
-         + [Lägg till eller flytta projekt till mappar](analysis-workspace/build-workspace-project/workspace-folders/add-projects.md)
+         + [Lägga till eller flytta projekt](analysis-workspace/build-workspace-project/workspace-folders/add-projects.md)
       + [Mallar](analysis-workspace/build-workspace-project/starter-projects.md)
       + [Flera rapportsviter](analysis-workspace/build-workspace-project/multiple-report-suites.md)
-      + [Snabbtangenter (kortkommandon)](analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
+      + [Snabbtangenter](analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
       + [Färgpaletter](analysis-workspace/build-workspace-project/color-palettes.md)
       + [Visa densitet](analysis-workspace/build-workspace-project/view-density.md)
    + Mallar {#templates}
@@ -75,62 +75,62 @@ ht-degree: 7%
          + [Redigera komponentposter i Data Dictionary](analysis-workspace/components/data-dictionary/edit-entries-data-dictionary.md)
          + [Övervaka dataordlistans hälsa](analysis-workspace/components/data-dictionary/monitor-data-dictionary-health.md)
    + Visualiseringar {#visualizations}
-      + [Visualiseringar - översikt](analysis-workspace/visualizations/freeform-analysis-visualizations.md)
+      + [Översikt](analysis-workspace/visualizations/freeform-analysis-visualizations.md)
       + [Hantera datakällor](analysis-workspace/visualizations/t-sync-visualization.md)
       + Frihandsregister {#freeform-table}
-         + [Frihandsregister](analysis-workspace/visualizations/freeform-table/freeform-table.md)
-         + [Skapa hyperlänkar för dimensioner i en frihandstabell](/help/analyze/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md)
+         + [Översikt](analysis-workspace/visualizations/freeform-table/freeform-table.md)
+         + [Skapa hyperlänkar](/help/analyze/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md)
          + Kolumn- och radinställningar {#column-row-settings}
             + [Kolumninställningar](analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)
             + [Radinställningar](analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)
-            + [Dynamiska jämfört med statiska objekt](analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)
-         + [Filtrera och sortera tabeller på frihand](analysis-workspace/visualizations/freeform-table/filter-and-sort.md)
-         + [Workspace Totals](analysis-workspace/visualizations/freeform-table/workspace-totals.md)
+            + [Dynamiska och statiska objekt](analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)
+         + [Filter och sortering](analysis-workspace/visualizations/freeform-table/filter-and-sort.md)
+         + [Summor](analysis-workspace/visualizations/freeform-table/workspace-totals.md)
       + Kohortabell {#cohort-table}
-         + [Vad är kohortanalys?](analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
-         + [Konfigurera en kohortanalysrapport](analysis-workspace/visualizations/cohort-table/t-cohort.md)
-         + [Användningsexempel för kohortanalyser](analysis-workspace/visualizations/cohort-table/cohort-use-cases.md)
+         + [Översikt](analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
+         + [Konfigurera](analysis-workspace/visualizations/cohort-table/t-cohort.md)
+         + [Användningsexempel](analysis-workspace/visualizations/cohort-table/cohort-use-cases.md)
       + Utfall {#fallout}
-         + [Utfallsöversikt](analysis-workspace/visualizations/fallout/fallout-flow.md)
-         + [Konfigurera en utfallsvisualisering](analysis-workspace/visualizations/fallout/configuring-fallout.md)
-         + [Flerdimensionellt utfall](analysis-workspace/visualizations/fallout/configuring-interdimensional-fallout.md)
-         + [Använd segment i utfallsanalys](analysis-workspace/visualizations/fallout/compare-segments-fallout.md)
+         + [Översikt](analysis-workspace/visualizations/fallout/fallout-flow.md)
+         + [Konfigurera](analysis-workspace/visualizations/fallout/configuring-fallout.md)
+         + [Interdimensionellt utfall](analysis-workspace/visualizations/fallout/configuring-interdimensional-fallout.md)
+         + [Använd segment](analysis-workspace/visualizations/fallout/compare-segments-fallout.md)
       + Flöde {#flow}
-         + [Flödesöversikt](analysis-workspace/visualizations/c-flow/flow.md)
-         + [Konfigurera en flödesvisualisering](analysis-workspace/visualizations/c-flow/create-flow.md)
+         + [Översikt](analysis-workspace/visualizations/c-flow/flow.md)
+         + [Konfigurera](analysis-workspace/visualizations/c-flow/create-flow.md)
          + [Flerdimensionella flöden](analysis-workspace/visualizations/c-flow/multi-dimensional-flow.md)
       + [Område och område staplade](analysis-workspace/visualizations/area.md)
       + [Stolpstreck och stapel](analysis-workspace/visualizations/bar.md)
-      + [Punktdiagram](analysis-workspace/visualizations/bullet-graph.md)
-      + [Kombinationsdiagram](analysis-workspace/visualizations/combo-charts.md)
+      + [Punkt](analysis-workspace/visualizations/bullet-graph.md)
+      + [Kombination](analysis-workspace/visualizations/combo-charts.md)
       + [Munk](analysis-workspace/visualizations/donut.md)
       + [Histogram](analysis-workspace/visualizations/histogram.md)
-      + [Vågrätt streck och vågrätt streck staplade](analysis-workspace/visualizations/horizontal-bar.md)
+      + [Vågrätt streck (staplat)](analysis-workspace/visualizations/horizontal-bar.md)
       + [Sammanfattning av nyckelmått](analysis-workspace/visualizations/key-metric.md)
       + [Linje](analysis-workspace/visualizations/line.md)
       + [Mappa](analysis-workspace/visualizations/map-visualization.md)
       + [Scatterplot](analysis-workspace/visualizations/scatterplot.md)
       + [Avsnittshuvud](/help/analyze/analysis-workspace/visualizations/section-header.md)
-      + [Sammanfattningsnummer och sammanfattning](analysis-workspace/visualizations/summary-number-change.md)
+      + [Sammanfattningsnummer och ändring](analysis-workspace/visualizations/summary-number-change.md)
       + [Text](analysis-workspace/visualizations/text.md)
-      + [Trädkarta](analysis-workspace/visualizations/treemap.md)
+      + [Treemap](analysis-workspace/visualizations/treemap.md)
       + [Venn](analysis-workspace/visualizations/venn.md)
    + Panel {#panels}
-      + [Paneler - översikt](analysis-workspace/c-panels/panels.md)
-      + [Analyser för målpanelen (A4T)](analysis-workspace/c-panels/a4t-panel.md)
-      + [Attributionspanelen](analysis-workspace/c-panels/attribution.md)
-      + [Tom panel](analysis-workspace/c-panels/blank-panel.md)
-      + [Frihandspanelen](analysis-workspace/c-panels/freeform-panel.md)
-      + [Panelen Mediegenomsnitt för miniatyrmålgrupp](analysis-workspace/c-panels/average-minute-audience-panel.md)
-      + [Media Concurrent Viewers panel](analysis-workspace/c-panels/media-concurrent-viewers.md)
-      + [Medieuppspelningstid spenderad panel](analysis-workspace/c-panels/media-playback-time-spent.md)
-      + [Panelen Nästa eller föregående objekt](analysis-workspace/c-panels/next-previous.md)
-      + [Panelen Sidsammanfattning](analysis-workspace/c-panels/page-summary.md)
-      + [Panelen Snabbinsikter](analysis-workspace/c-panels/quickinsight.md)
-      + Panelen Segmentjämförelse {#segment-comparison}
-         + [Översikt över segmentjämförelse](analysis-workspace/c-panels/c-segment-comparison/segment-comparison.md)
-         + [Användningsexempel för segmentjämförelse](analysis-workspace/c-panels/c-segment-comparison/segment-compare-use-cases.md)
-         + [Statistiska tester som används vid segmentjämförelse](analysis-workspace/c-panels/c-segment-comparison/statistical-test.md)
+      + [Översikt](analysis-workspace/c-panels/panels.md)
+      + [Tom](analysis-workspace/c-panels/blank-panel.md)
+      + [Analyser för Target](analysis-workspace/c-panels/a4t-panel.md)
+      + [Tillskrivning](analysis-workspace/c-panels/attribution.md)
+      + [Frihandsfigur](analysis-workspace/c-panels/freeform-panel.md)
+      + [Genomsnittlig minutmålgrupp för media](analysis-workspace/c-panels/average-minute-audience-panel.md)
+      + [Medievisningsprogram för samtidig användning](analysis-workspace/c-panels/media-concurrent-viewers.md)
+      + [Medieuppspelningstid](analysis-workspace/c-panels/media-playback-time-spent.md)
+      + [Nästa eller föregående objekt](analysis-workspace/c-panels/next-previous.md)
+      + [Sidsammanfattning](analysis-workspace/c-panels/page-summary.md)
+      + [Snabba insikter](analysis-workspace/c-panels/quickinsight.md)
+      + Segmentjämförelse {#segment-comparison}
+         + [Översikt](analysis-workspace/c-panels/c-segment-comparison/segment-comparison.md)
+         + [Användningsexempel](analysis-workspace/c-panels/c-segment-comparison/segment-compare-use-cases.md)
+         + [Statistiska tester som används](analysis-workspace/c-panels/c-segment-comparison/statistical-test.md)
    + Kuratera, dela och schemalägg projekt {#curate-share}
       + [Översikt](analysis-workspace/curate-share/send-schedule-files.md)
       + [Kuratprojekt](analysis-workspace/curate-share/curate.md)

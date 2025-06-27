@@ -1,12 +1,12 @@
 ---
-title: Vad är Cohort Analysis och hur fungerar den?
-description: Gräv djupare in i informationen om er målgrupp och dela in i relaterade grupper med Cohort Analysis. Läs om kohortanalyser i Analysis Workspace.
+title: Översikt över kohorttabell
+description: Lär dig hur du fördjupar dig i data runt er målgrupp och delar in data i relaterade grupper med kohortanalyser. Använd kohortanalys i Analysis Workspace.
 feature: Visualizations
 role: User, Admin
 exl-id: 6a46e76f-671e-4b1b-933a-6c2776c72d09
-source-git-commit: 74ef4e73b6ed1e2a4ad498e2314af704acb6d8cb
+source-git-commit: f258a1150a4bee11f5922d058930dc38b1ddfa14
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '677'
 ht-degree: 0%
 
 ---
@@ -28,14 +28,14 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="workspace_cohorttable_panel"
 >title="Kohortabell"
->abstract="Gruppera användarna efter att ha slutfört en händelse, analysera sedan deras pågående engagemang och kraschar över tid.<br/><br/>**Parametrar &#x200B;**<br/>**Inkluderingskriterier**: De komponenter som används för att definiera den inledande besökarkohorten.<br/>**Returvillkor**: Komponenterna som används för att avgöra om en besökare har returnerat."
+>abstract="Gruppera användarna efter att ha slutfört en händelse, analysera sedan deras pågående engagemang och kraschar över tid.<br/><br/>**Parametrar **<br/>**Inkluderingskriterier**: De komponenter som används för att definiera den inledande besökarkohorten.<br/>**Returvillkor**: Komponenterna som används för att avgöra om en besökare har returnerat."
 
 <!-- markdownlint-enable MD034 -->
 
 
 >[!BEGINSHADEBOX]
 
-_Den här artikeln dokumenterar kohorttabellen i_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**._<br/>_Se [Kohorttabell](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-workspace/visualizations/cohort-table/cohort-analysis) för_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**-versionen av den här artikeln._
+_Den här artikeln dokumenterar kohorttabellen i_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._<br/>_Se [Kohorttabell](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/cohort-table/cohort-analysis) för_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**-versionen av den här artikeln._
 
 >[!ENDSHADEBOX]
 
@@ -57,7 +57,7 @@ Exempel på vad du kan göra med en [!UICONTROL Cohort table]:
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Kohortanalys i Analysis Workspace](https://video.tv.adobe.com/v/3430082/?quality=12&learn=on&captions=swe){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Kohortanalys i Analysis Workspace](https://video.tv.adobe.com/v/23990/?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 
@@ -74,31 +74,31 @@ I följande avsnitt beskrivs kohortanalysfunktioner som gör det möjligt att fi
 
 Mer information om hur du skapar en kohort och kör en [!UICONTROL Cohort Analysis]-rapport finns i [Konfigurera en kohorttabell](/help/analyze/analysis-workspace/visualizations/cohort-table/t-cohort.md).
 
-### [!UICONTROL Retention]-tabell
+### Kvarhållningstabell
 
 En [!UICONTROL Retention]-kohorttabell returnerar personer: varje datacell visar det råa antalet och procentandelen personer i kohorten som utförde åtgärden under den tidsperioden. Du kan ta med upp till 3 mätvärden och upp till 10 filter.
 
 ![En återgivningskohortrapport som visar enheter och procent av personerna i kohorten.](assets/retention-report.png)
 
-### [!UICONTROL Churn]-tabell
+### Churn table
 
 En [!UICONTROL Churn]-kohorttabell är omvänd till en kvarhållningstabell och visar de personer som inte uppfyller eller aldrig uppfyller returkriterierna för din kohort över tiden. Du kan ta med upp till 3 mätvärden och upp till 10 filter.
 
 ![En Churn-tabell som visar enheter och procentandel av personer som inte uppfyller returkriterierna för en kohort.](assets/churn-report.png)
 
-### [!UICONTROL Rolling Calculation]
+### Rullande beräkning
 
 Du kan beräkna kvarhållning eller bortfall baserat på föregående kolumn, inte den inkluderade kolumnen, som kallas rullande beräkning.
 
 ![En CSS-kvarhållningsrapport som visar beräkningar baserade på en tidigare datakolumn.](assets/retention-report-rolling.png)
 
-### [!UICONTROL Latency]-tabell
+### Latenstabell
 
 En latenstabell mäter den tid som har gått före och efter det att inkluderingshändelsen inträffade. Mätning av fördröjning är ett utmärkt verktyg för för- och efteranalys. Kolumnen **[!UICONTROL Included]** finns i mitten av tabellen och tidsperioder före och efter inkluderingshändelsen visas på båda sidor.
 
 ![En kohortrapport som visar förfluten tid före och efter en händelse.](assets/retention-report-latency.png)
 
-### [!UICONTROL Custom dimension]-kohort
+### Anpassad dimensionskohort
 
 Du kan skapa kohorter baserat på en vald dimension och inte på tidsbaserade kohorter (som är standard). Använd dimensioner som [!UICONTROL City geo], [!UICONTROL Marketing channel], [!UICONTROL campaign], [!UICONTROL product], [!UICONTROL page], [!UICONTROL region] eller någon annan dimension för att visa hur kvarhållandet ändras. Baserat på de olika värdena för de här dimensionerna.
 
@@ -128,7 +128,7 @@ Examples of what you can do with [!UICONTROL Cohort Analysis]:
 
 >[!BEGINSHADEBOX]
 
-See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Cohort analysis in Analysis Workspace](https://video.tv.adobe.com/v/3430091?quality=12&learn=on&captions=swe){target="_blank"} for a demo video.
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Cohort analysis in Analysis Workspace](https://video.tv.adobe.com/v/25965?quality=12&learn=on){target="_blank"} for a demo video.
 
 >[!ENDSHADEBOX]
 
@@ -153,7 +153,7 @@ A [!UICONTROL Retention] cohort report returns visitors: each data cell shows th
 
 >[!BEGINSHADEBOX]
 
-See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Calculate rolling retention](https://video.tv.adobe.com/v/3430169?quality=12&learn=on&captions=swe){target="_blank"} for a demo video.
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Calculate rolling retention](https://video.tv.adobe.com/v/25962?quality=12&learn=on){target="_blank"} for a demo video.
 
 >[!ENDSHADEBOX]
 
@@ -167,7 +167,7 @@ A [!UICONTROL Churn] cohort is the inverse of a retention table and shows the vi
 
 >[!BEGINSHADEBOX]
 
-See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Churn analysis](https://video.tv.adobe.com/v/3430156?quality=12&learn=on&captions=swe){target="_blank"} for a demo video.
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Churn analysis](https://video.tv.adobe.com/v/25966?quality=12&learn=on){target="_blank"} for a demo video.
 
 >[!ENDSHADEBOX]
 

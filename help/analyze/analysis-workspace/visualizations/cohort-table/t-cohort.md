@@ -1,13 +1,13 @@
 ---
-description: Skapa en kohort och kör en kohortanalysrapport i Analysis Workspace.
+description: Lär dig skapa en kohorttabell och köra en kohortanalysrapport i Analysis Workspace.
 keywords: Analysis Workspace
-title: Köra en kohortanalysrapport
+title: Konfigurera en kohorttabell
 feature: Visualizations
 role: User, Admin
 exl-id: 523e6f62-b428-454b-9460-6b06e96742c3
-source-git-commit: 1281bdc569c9ebc5d8daa151b19dc21710633eab
+source-git-commit: f258a1150a4bee11f5922d058930dc38b1ddfa14
 workflow-type: tm+mt
-source-wordcount: '810'
+source-wordcount: '813'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ Du kan definiera specifika inställningar för en [!UICONTROL Cohort table].
 >[!MORELIKETHIS]
 >
 >[Lägg till en visualisering på en panel](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
->&#x200B;>[Visualiseringsinställningar](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
->&#x200B;>[Snabbmenyn Visualisering ](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>>[Visualiseringsinställningar](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>>[Snabbmenyn Visualisering ](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >
 

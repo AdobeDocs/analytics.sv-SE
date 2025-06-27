@@ -1,12 +1,12 @@
 ---
-description: En översikt över hur du använder standardrapporter i Analysis Workspace.
-title: Använd rapporter
+description: Lär dig skapa och hantera mallar i Analysis Workspace.
+title: Skapa och hantera mallar
 feature: Analysis Workspace
 role: User, Admin
 exl-id: 905aa2eb-1963-4227-b18c-33e3a4c66111
-source-git-commit: 436b2ced6335b5d4b3d8acd4bdb026d7db1d7ad8
+source-git-commit: f258a1150a4bee11f5922d058930dc38b1ddfa14
 workflow-type: tm+mt
-source-wordcount: '663'
+source-wordcount: '664'
 ht-degree: 0%
 
 ---

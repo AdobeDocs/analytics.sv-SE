@@ -1,12 +1,12 @@
 ---
-description: Använd munstycksvisualisering i ett Workspace-projekt.
+description: Lär dig hur du använder donutvisualisering för att visa data som delar eller segment i en helhet.
 title: Munk
 feature: Visualizations
 role: User, Admin
 exl-id: d82db8a5-9502-4ed1-9326-fd3392670bd3
-source-git-commit: 5a35d2acd428d16afff3d8e85cfb084d6a6476c4
+source-git-commit: 978bd8642011dd2c8e43564c90303f194689a64e
 workflow-type: tm+mt
-source-wordcount: '117'
+source-wordcount: '126'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-_I den här artikeln dokumenteras Donut-visualiseringen i_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**._<br/>_Se [Donut](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-workspace/visualizations/donut) för_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**-versionen av den här artikeln._
+_I den här artikeln dokumenteras Donut-visualiseringen i_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._<br/>_Se [Donut](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/donut) för_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**-versionen av den här artikeln._
 
 >[!ENDSHADEBOX]
 
@@ -37,7 +37,7 @@ På samma sätt som ett cirkeldiagram visar visualiseringen ![GraphDonut](/help/
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Lägg till en donutvisualisering](https://video.tv.adobe.com/v/334309/?quality=12){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Lägg till en donutvisualisering](https://video.tv.adobe.com/v/334309/?quality=12){target=&#34;_blank&#34;} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 
@@ -45,7 +45,7 @@ Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Lägg till en don
 >[!MORELIKETHIS]
 >
 >[Lägg till en visualisering på en panel](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
->[Visualiseringsinställningar](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
->[Snabbmenyn Visualisering ](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>>[Visualiseringsinställningar](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>>[Snabbmenyn Visualisering ](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >
 

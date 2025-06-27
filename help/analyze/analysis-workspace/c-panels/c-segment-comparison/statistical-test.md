@@ -1,13 +1,13 @@
 ---
-description: Var och en av de översta jämförelsetabellerna visar ett differensresultat som beräknas genom flera statistiska tester beroende på vilken jämförelse som görs. Oberoende av vilket test som används visas dock differenspoängen som ett värde mellan 0 och 1.
+description: Lär dig hur statistiska tester används vid segmentjämförelse.
 keywords: Analysis Workspace;Segment IQ
 title: Statistiska tester som används vid segmentjämförelse
 feature: Segmentation
 role: User, Admin
 exl-id: b1c235ca-2eab-48d2-bf11-e8a8c4067d03
-source-git-commit: 1ee50c6a2231795b2ad0015a79e09b7c1c74d850
+source-git-commit: 978bd8642011dd2c8e43564c90303f194689a64e
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '444'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Var och en av de översta jämförelsetabellerna visar ett differensresultat som beräknas genom flera statistiska tester beroende på vilken jämförelse som görs. Oberoende av vilket test som används visas dock differenspoängen som ett värde mellan 0 och 1.
 
-En poäng på 0 betyder att det inte finns någon skillnad mellan de två segmenten och en poäng på 1 betyder att det fanns en mycket stor skillnad mellan de två segmenten. Det finns två typer av statistiska tester som används för att generera dessa differensresultat: för tabellen Top Metrics används ett Mann-Whitney U-test, och för tabellen Top Dimension Items och Top Segments används en jämförelse av riskskillnader.
+En poäng på 0 betyder att det inte finns någon skillnad mellan de två segmenten och en poäng på 1 betyder att det fanns en mycket stor skillnad mellan de två segmenten. Det finns två typer av statistiska tester som används för att generera dessa differensresultat: för tabellen Top Metrics används ett Mann-Whitney U-test, och för tabellen Top Dimension Items and Top Segments används en jämförelse av riskskillnader.
 
 ## Poäng för största differensmått {#section_5E8047464EB945C78543B25F8F30F17A}
 
@@ -24,7 +24,7 @@ I tabellen Top Metrics (Övre mått) använder segmentjämförelseverktyget två
 
 ## Poster för de viktigaste dimensionerna och poäng för de vanligaste segmentskillnaderna {#section_8073ADA6053B44C9A23FDC5ED4AF2AC4}
 
-För att beräkna differenspoängen i tabellerna Poster i översta Dimensionen och Differens i översta segment används en relativ riskdifferensalgoritm (som liknar riskkvot, men som använder en differens i stället för en kvot). En riskdifferens beräknas genom att subtrahera den kumulativa incidensen för en dimensionspost (eller överlappa med ett segment från segmenttabellen) för det ena segmentet från det andra. Ett poängvärde för stora skillnader (nära 1) innebär att den specifika dimensionsposten eller det eftergymnasiala segmentet var mycket framträdande i ett av de valda segmenten och inte i det andra.
+För att beräkna differenspoängen i tabellerna Top Dimension Items och Top Segment Difference används en relativ riskdifferentieringsalgoritm (som i riskförhållandet, men med en differens i stället för en kvot). En riskdifferens beräknas genom att subtrahera den kumulativa incidensen för en dimensionspost (eller överlappa med ett segment från segmenttabellen) för det ena segmentet från det andra. Ett poängvärde för stora skillnader (nära 1) innebär att den specifika dimensionsposten eller det eftergymnasiala segmentet var mycket framträdande i ett av de valda segmenten och inte i det andra.
 
 >[!NOTE]
 >

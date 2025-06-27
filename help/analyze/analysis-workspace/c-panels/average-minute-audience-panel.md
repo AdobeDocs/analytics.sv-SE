@@ -1,12 +1,12 @@
 ---
 title: Panelen Mediegenomsnitt för miniatyrmålgrupp
-description: Så här använder och tolkar du panelen Media Average Minute Audience i Analysis Workspace.
+description: Lär dig hur du använder och tolkar panelen Media Average Minute Audience i Analysis Workspace.
 feature: Panels
 role: User, Admin
 exl-id: be8371ee-8bc6-4a99-8527-dd94eab8a7f9
-source-git-commit: 76abe4e363184a9577622818fe21859d016a5cf7
+source-git-commit: 978bd8642011dd2c8e43564c90303f194689a64e
 workflow-type: tm+mt
-source-wordcount: '1772'
+source-wordcount: '1773'
 ht-degree: 0%
 
 ---
@@ -27,13 +27,13 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="workspace_mediaaverageminuteaudience_panel"
 >title="Genomsnittlig minutmålgrupp för media"
->abstract="Visar prestandan för visst medieinnehåll eller för en anpassad tidsperiod.<br/><br/>**Allmänna parametrar &#x200B;**<br/>**Beräkna mätvärden för**: Välj det mätvärde som ska användas för panelen. Välj **Specifikt innehåll** om du vill analysera den genomsnittliga minuten-publiken för specifikt innehåll eller händelse utifrån innehållets längd. **Välj Anpassad tidsperiod** om du vill analysera hur den genomsnittliga minuten publiken ändras under en anpassad vald tidsperiod.<br/>**Rapporteringsdimension**: Välj att rapportera med **videonamn** för dimensionen **Innehåll-ID**. Endast tillgängligt när du har valt Specifikt innehåll som mätvärde.<br/>**Kornighet**: Välj granularitet för rapporten. Endast tillgängligt när du har valt Anpassad tidsperiod som mått.<br/>**Filtrera innehåll efter (valfritt)**: Välj ett specifikt program, årstid, avsnitt eller välj en anpassad dimension för att filtrera innehållet.<br/><br/>**Avancerade inställningar &#x200B;**<br/>**Tabellinställningar**: Välj om du vill visa beräkningsvärden i tabellen.<br/>**Tidsåtgång för mått**: Välj vilken tid du vill använda för beräkning av specifikt innehåll. Endast tillgängligt när du har valt Specifikt innehåll som mätvärde."
+>abstract="Visar prestandan för visst medieinnehåll eller för en anpassad tidsperiod.<br/><br/>**Allmänna parametrar **<br/>**Beräkna mätvärden för**: Välj det mätvärde som ska användas för panelen. Välj **Specifikt innehåll** om du vill analysera den genomsnittliga minuten-publiken för specifikt innehåll eller händelse utifrån innehållets längd. **Välj Anpassad tidsperiod** om du vill analysera hur den genomsnittliga minuten publiken ändras under en anpassad vald tidsperiod.<br/>**Rapporteringsdimension**: Välj att rapportera med **videonamn** för dimensionen **Innehåll-ID**. Endast tillgängligt när du har valt Specifikt innehåll som mätvärde.<br/>**Kornighet**: Välj granularitet för rapporten. Endast tillgängligt när du har valt Anpassad tidsperiod som mått.<br/>**Filtrera innehåll efter (valfritt)**: Välj ett specifikt program, årstid, avsnitt eller välj en anpassad dimension för att filtrera innehållet.<br/><br/>**Avancerade inställningar **<br/>**Tabellinställningar**: Välj om du vill visa beräkningsvärden i tabellen.<br/>**Tidsåtgång för mått**: Välj vilken tid du vill använda för beräkning av specifikt innehåll. Endast tillgängligt när du har valt Specifikt innehåll som mätvärde."
 
 <!-- markdownlint-enable MD034 -->
 
 >[!BEGINSHADEBOX]
 
-_I den här artikeln visas den genomsnittliga panelen för mediemåminuter i **Customer Journey Analytics**.<br/>Se [Målgruppspanel i genomsnitt](https://experienceleague.adobe.com/sv/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel) för **Adobe Analytics** -versionen av den här artikeln.*
+_I den här artikeln visas den genomsnittliga panelen för mediemågelpublik i **Customer Journey Analytics**.<br/>Se [Målgruppspanel i genomsnitt](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel) för **Adobe Analytics** -versionen av den här artikeln.*
 
 >[!ENDSHADEBOX]
 
@@ -41,7 +41,7 @@ _I den här artikeln visas den genomsnittliga panelen för mediemåminuter i **C
 >
 >Panelen **[!UICONTROL Media average minute audience]** är bara tillgänglig för kunder som har köpt Streaming Media Collection för Adobe Analytics.
 >
->Kontakta din säljare eller ditt Adobe-kontoteam på Adobe för mer information.
+>Kontakta din Adobe-säljare eller Adobe-kontogrupp om du vill ha mer information.
 >
 
 I Analysis Workspace kan den genomsnittliga minuten av publiken ge information om
@@ -187,8 +187,8 @@ I den genomsnittliga minuspennan i mediemiljön används endast den genomsnittli
 >[!MORELIKETHIS]
 >
 > [Skapa en panel](/help/analyze/analysis-workspace/c-panels/panels.md#create-a-panel)
-> [Panelen för samtidiga visningsprogram för media](media-concurrent-viewers.md)
-> [Medieuppspelningstid för panelen ](media-playback-time-spent.md)
+> > [Panelen för samtidiga visningsprogram för media](media-concurrent-viewers.md)
+> > [Medieuppspelningstid för panelen ](media-playback-time-spent.md)
 >
 
 

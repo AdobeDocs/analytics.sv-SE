@@ -1,21 +1,21 @@
 ---
-description: Läs om Mappar i Workspace
+description: Lär dig hur du ordnar dina projekt i mappar i Analysis Workspace.
 keywords: Analysis Workspace
 title: Översikt över mappar
 feature: Workspace Basics
 exl-id: 68281840-d9b7-42e9-9543-4aeb7f0bdef7
-source-git-commit: 74ef4e73b6ed1e2a4ad498e2314af704acb6d8cb
+source-git-commit: f258a1150a4bee11f5922d058930dc38b1ddfa14
 workflow-type: tm+mt
-source-wordcount: '412'
+source-wordcount: '418'
 ht-degree: 0%
 
 ---
 
 # Översikt över mappar
 
-Mappar i Adobe Analytics är tillgängliga på Workspace startsida när du har valt att [visa mappar och projekt](../freeform-overview.md#show-selector).
-
 Med mappar i Workspace kan du ordna och kategorisera dina projekt. Med hjälp av mappfunktionerna kan du skapa mappar och undermappar för att hantera dina projekt.
+
+Mappar i Adobe Analytics är tillgängliga på Workspace startsida när du har valt att [visa mappar och projekt](../freeform-overview.md#show-selector).
 
 Det finns två typer av mappar i Workspace: företagsmappen och personliga mappar. I en delad företagsmapp kan administratörer skapa och dela innehåll med alla Workspace-användare.
 

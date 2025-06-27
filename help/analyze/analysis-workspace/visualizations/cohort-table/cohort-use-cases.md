@@ -1,26 +1,26 @@
 ---
-description: Använd fallexempel för kohortanalys.
+description: Läs mer om några exempel på hur man använder kohortanalyser.
 keywords: Analysis Workspace
 title: Användningsexempel för kohortanalyser
 feature: Visualizations
 role: User, Admin
 exl-id: fc7e7bad-ab57-4bb8-a448-60b9397ef5af
-source-git-commit: 1281bdc569c9ebc5d8daa151b19dc21710633eab
+source-git-commit: f258a1150a4bee11f5922d058930dc38b1ddfa14
 workflow-type: tm+mt
-source-wordcount: '927'
+source-wordcount: '934'
 ht-degree: 0%
 
 ---
 
-# [!UICONTROL Cohort Analysis] användningsfall
+# Användningsexempel för kohortanalyser
 
 Använd exempel för [!UICONTROL Cohort Analysis].
 
-## Användningsexempel för appengagemang {#section_ADEC6EE79F1846319B2E0D9544CC5E40}
+## Användningsexempel för appengagemang
 
 Anta att du vill analysera hur användare som installerar din app interagerar med den med tiden. Installerar de den och använder den aldrig? Använder de den en stund och faller sedan bort? Eller förblir de förlovade med tiden?
 
-Du kan skapa en [!UICONTROL Cohort Analysis] med sex månader:
+Du kan skapa en sexmånaders kohortanalys.
 
 **Kornighet**: Månadsvis, från januari 2015 till juni 2015.
 
@@ -30,7 +30,7 @@ Du kan skapa en [!UICONTROL Cohort Analysis] med sex månader:
 
 Besökarna räknas inte som *`engaged`* under efterföljande månader såvida de inte har en session eller åtminstone startar programmet. [!UICONTROL Cohort Analysis] visar sedan mönster som används där *`App Install`* alltid förekommer i månad 0. Du kan märka att användningen minskar i månad 2, oavsett när användarna installerade appen. (För dem som installerade programmet i januari 2015 är månad 2 mars 2015. För dem som installerade programmet i februari 2015 är månad 2 april 2015 och så vidare.) Med den här analysen kan du skicka ett e-postmeddelande eller ett push-meddelande till alla användare under den andra månaden efter att de har installerat appen för att påminna dem om att använda appen.
 
-## Användningsexempel för prenumeration {#section_FDECB16766CF415BB84AE46BA491FB5F}
+## Användningsexempel för prenumeration
 
 Du arbetar på Adobe.com och erbjuder en kostnadsfri prenumeration på Creative Cloud. Målet är att man ska uppgradera från den kostnadsfria versionen till den 30-dagars testversionen eller, i slutändan, den betalda versionen.
 

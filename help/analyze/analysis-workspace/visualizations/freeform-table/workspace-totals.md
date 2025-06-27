@@ -1,17 +1,17 @@
 ---
-description: Hur Workspace-summor beräknas.
-title: Workspace summor
+description: Läs om hur totalsummor i frihandstabeller i Analysis Workspace beräknas.
+title: Summor
 feature: Freeform Tables
 role: User, Admin
 exl-id: 883c3e44-4139-46a1-a261-e11841312465
-source-git-commit: d9f95b12a43305cecff1190e6544334f3b48835d
+source-git-commit: f258a1150a4bee11f5922d058930dc38b1ddfa14
 workflow-type: tm+mt
-source-wordcount: '433'
+source-wordcount: '437'
 ht-degree: 1%
 
 ---
 
-# Workspace summor {#workspace-totals}
+# Summor {#workspace-totals}
 
 >[!CONTEXTUALHELP]
 >id="workspace_freeformtable_grandtotal"

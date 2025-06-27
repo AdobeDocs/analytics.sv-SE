@@ -1,13 +1,13 @@
 ---
-description: Information om projektinnehållsförteckningen som är tillgänglig i projekt
+description: Lär dig hur du använder innehållsförteckningen i ett projekt i Analysis Workspace för att snabbt komma åt paneler och visualiseringar.
 keywords: Analysis Workspace
-title: Innehållsförteckning för projekt
+title: Innehållsförteckning
 feature: Workspace Basics
 role: User, Admin
 exl-id: e17c0308-15c1-4c7b-a1e2-a9ab48ea267a
-source-git-commit: 8f7c6a0d1477b599b05aeb7b74c4ee96531d294d
+source-git-commit: f258a1150a4bee11f5922d058930dc38b1ddfa14
 workflow-type: tm+mt
-source-wordcount: '193'
+source-wordcount: '200'
 ht-degree: 1%
 
 ---

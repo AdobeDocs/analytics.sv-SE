@@ -1,13 +1,13 @@
 ---
-title: Översikt över panelen Segmentjämförelse
-description: Lär dig hur du använder segmentjämförelsepanelen som en del av segmentanalysen i Analysis Workspace.
+title: Översikt över segmentjämförelsepanelen
+description: Lär dig hur du använder segmentjämförelsepanelen i Analysis Workspace.
 keywords: Analysis Workspace;Segment IQ
 feature: Segmentation
 role: User, Admin
 exl-id: 1f5df6fb-1e9f-4b8f-885c-bf9e68d88c89
-source-git-commit: d7a6867796f97f8a14cd8a3cfad115923b329c7c
+source-git-commit: 978bd8642011dd2c8e43564c90303f194689a64e
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '511'
 ht-degree: 0%
 
 ---
@@ -28,12 +28,12 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="workspace_segmentcomparison_panel"
 >title="Panelen Segmentjämförelse"
->abstract="Jämför snabbt två segment över alla datapunkter för att automatiskt hitta relevanta skillnader.<br/><br/>**Parametrar &#x200B;**<br/>**Lägg till ett segment**: Det första segment som du vill analysera.<br/>**Jämför med**: Det andra segmentet som du vill jämföra med. Detta fylls automatiskt i med *Alla andra* som är inverterad till ditt första segment. Om du vill kan du ersätta den med ett annat segment.<br/>**Avancerade inställningar**: Möjligheten att utesluta komponenter från analysen i segmentjämförelsen."
+>abstract="Jämför snabbt två segment över alla datapunkter för att automatiskt hitta relevanta skillnader.<br/><br/>**Parametrar **<br/>**Lägg till ett segment**: Det första segment som du vill analysera.<br/>**Jämför med**: Det andra segmentet som du vill jämföra med. Detta fylls automatiskt i med *Alla andra* som är inverterad till ditt första segment. Om du vill kan du ersätta den med ett annat segment.<br/>**Avancerade inställningar**: Möjligheten att utesluta komponenter från analysen i segmentjämförelsen."
 <!-- markdownlint-enable MD034 -->
 
 >[!BEGINSHADEBOX]
 
-_I den här artikeln beskrivs panelen Segmentjämförelse i_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**._<br/>_Det finns ingen motsvarande panel i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._
+_I den här artikeln beskrivs panelen Segmentjämförelse i_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._<br/>_Det finns ingen motsvarande panel i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._
 
 >[!ENDSHADEBOX]
 

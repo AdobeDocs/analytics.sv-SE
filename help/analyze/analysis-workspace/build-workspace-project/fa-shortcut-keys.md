@@ -1,26 +1,28 @@
 ---
-description: Interaktioner med tangentbord, kortkommandon och beteenden för peka och klicka som är tillgängliga i Analysis Workspace.
+description: Lär dig hur du använder tangentbordsinteraktioner, kortkommandon och peka-och-klicka-beteenden som är tillgängliga i Analysis Workspace.
 keywords: Analysis Workspace
-title: Snabbtangenter (kortkommandon)
+title: Snabbtangenter
 feature: Workspace Basics
 role: User, Admin
 exl-id: 742e7d69-2acf-48a9-aaf3-1cb3a73944af
-source-git-commit: 8f7c6a0d1477b599b05aeb7b74c4ee96531d294d
+source-git-commit: f258a1150a4bee11f5922d058930dc38b1ddfa14
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '421'
 ht-degree: 0%
 
 ---
 
-# Snabbtangenter (kortkommandon)
+# Snabbtangenter
+
+Snabbtangenter (kortkommandon) finns i Analysis Workspace för smidig navigering, analys och demokratisering.
 
 Observera att följande symboler kan användas på tangentbordet:
 
-- **⇧** för **[!UICONTROL **&#x200B; shift &#x200B;**]**.
-- **⌘** för **[!UICONTROL **&#x200B; cmd &#x200B;**]** (kommando).
-- **⌃** för **[!UICONTROL **&#x200B; ctrl &#x200B;**]** (kontroll).
-- **⌥** för **[!UICONTROL **&#x200B; opt &#x200B;**]** (alternativ).
-- **⎇** för **[!UICONTROL **&#x200B; alt &#x200B;**]** (alternativ).
+- **⇧** för **[!UICONTROL ** shift **]**.
+- **⌘** för **[!UICONTROL ** cmd **]** (kommando).
+- **⌃** för **[!UICONTROL ** ctrl **]** (kontroll).
+- **⌥** för **[!UICONTROL ** opt **]** (alternativ).
+- **⎇** för **[!UICONTROL ** alt **]** (alternativ).
 
 ## Navigeringsåtgärder
 

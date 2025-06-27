@@ -1,12 +1,12 @@
 ---
-description: Quick Insights är ett verktyg för nya Workspace-användare som vägleder dem när de bygger datatabeller och visualiseringar
+description: Lär dig hur du använder panelen Snabbinformation för att få hjälp med att skapa datatabeller och visualiseringar i Analysis Workspace.
 title: Panelen Snabbinsikter
 feature: Panels
 role: User, Admin
 exl-id: 29b26ec9-d410-43d6-a317-ca7587f5dd31
-source-git-commit: 76abe4e363184a9577622818fe21859d016a5cf7
+source-git-commit: 978bd8642011dd2c8e43564c90303f194689a64e
 workflow-type: tm+mt
-source-wordcount: '1073'
+source-wordcount: '1066'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 1%
 
 >[!BEGINSHADEBOX]
 
-_I den här artikeln beskrivs panelen Snabbinsikter i_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**._<br/>_Se [Panelen Snabbinsikter](https://experienceleague.adobe.com/sv/docs/analytics/analyze/analysis-workspace/panels/quickinsight)) för_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**-versionen av den här artikeln._
+_I den här artikeln beskrivs panelen Snabbinsikter i_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._<br/>_Se [Panelen Snabbinsikter](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/quickinsight)) för_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**-versionen av den här artikeln._
 
 >[!ENDSHADEBOX]
 
@@ -58,11 +58,11 @@ Nedan följer några grundläggande termer som du måste känna till. Varje data
 | Byggblock (komponent) | Definition |
 |---|---|
 | **[!UICONTROL Dimension]** | Dimensioner är beskrivningar eller egenskaper för mätdata som kan visas, delas upp och jämföras i ett projekt. De är icke-numeriska värden och datum som delas upp i dimensionsobjekt. *webbläsare* eller *sida* är till exempel en dimension. |
-| **[!UICONTROL Dimension item]** | Dimensioner är enskilda värden för en dimension. Dimensionsobjekten för webbläsardimensionen är till exempel *Chrome*, *Firefox*, *Edge* eller andra. |
+| **[!UICONTROL Dimension item]** | Dimension-artiklar är enskilda värden för en dimension. Dimensionsobjekten för webbläsardimensionen är till exempel *Chrome*, *Firefox*, *Edge* eller andra. |
 | **[!UICONTROL Metric]** | Mätvärden är kvantitativ information om personaktivitet, t.ex. vyer, klickningar, omladdningar, genomsnittlig tid, enheter, order, intäkter och så vidare. |
 | **[!UICONTROL Visualization]** | Workspace erbjuder [ett antal visualiseringar](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md) för att skapa visuella representationer av dina data. t.ex. stapeldiagram, mundiagram, histogram, linjediagram, kartor, punktdiagram med mera. |
 | **[!UICONTROL Dimension Breakdown]** | En dimensionsuppdelning är ett sätt att dela upp en dimension efter andra dimensioner. Du kan till exempel bryta ned USA:s mobilenheter för att få mobilenhetsbesök per delstat. Eller så kan ni bryta ned mobila enheter efter mobilenhetstyper, efter regioner, efter interna kampanjer med mera. |
-| **[!UICONTROL Segments]** | Med segment kan du identifiera delmängder av personer baserat på egenskaper eller webbplatsinteraktioner. Du kan till exempel skapa [!UICONTROL Visitor] segment baserat på <li>attribut: webbläsartyp, enhet, antal besök, land, kön eller</li><li>interaktioner: kampanjer, nyckelordssökning, sökmotor eller</li><li>lämnar och lämnar: besökare från Facebook, en definierad landningssida, hänvisande domän, eller</li><li> anpassade variabler: formulärfält, definierade kategorier, kund-ID. |
+| **[!UICONTROL Segments]** | Med segment kan du identifiera delmängder av personer baserat på egenskaper eller webbplatsinteraktioner. Du kan till exempel skapa [!UICONTROL Visitor] segment baserat på <li>attribut: webbläsartyp, enhet, antal besök, land, kön eller</li><li>interaktioner: kampanjer, nyckelordssökning, sökmotor eller</li><li>avslutar och lämnar: besökare från Facebook, en definierad landningssida, hänvisande domän, eller</li><li> anpassade variabler: formulärfält, definierade kategorier, kund-ID. |
 
 ## Använd
 
@@ -127,7 +127,7 @@ Andra användbara tips visas i [!UICONTROL Quick Insights Builder]. Vissa av dem
 
    * **[!UICONTROL Analyze]** dimension **[!UICONTROL Broken-Down by]**: Du kan använda upp till tre nivåer av uppdelningar på dimensioner för att gå ned till de data du verkligen behöver. Se ➊, ➋ och ➌.
 
-   * Lägg till fler mätvärden **[!UICONTROL by]**: Du kan lägga till upp till två mätvärden till. Se och..
+   * Lägg till fler mätvärden **[!UICONTROL by]**: Du kan lägga till upp till två mätvärden till. Se ➍ och ➎.
 
    * **[!UICONTROL filter by]**: Du kan lägga till upp till två segment till. Du kan till exempel lägga till Bokningar som ett segment och kombinera det segmentet med segmenten Vanliga bokningar och Första gången som du jämför. Se ➏, ➐ och ➑.
 

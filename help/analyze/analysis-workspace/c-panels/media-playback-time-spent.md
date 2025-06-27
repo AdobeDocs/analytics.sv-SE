@@ -1,12 +1,12 @@
 ---
 title: Medieuppspelningstid spenderad panel
-description: Så här använder och tolkar du panelen Medieuppspelningstid för spenderad tid i Analysis Workspace.
+description: Lär dig hur du använder och tolkar panelen Medieuppspelningstid för spenderad tid i Analysis Workspace.
 feature: Panels
 role: User, Admin
 exl-id: 9268baf7-b50b-4c09-a722-7bfcd4172f15
-source-git-commit: d7a6867796f97f8a14cd8a3cfad115923b329c7c
+source-git-commit: 978bd8642011dd2c8e43564c90303f194689a64e
 workflow-type: tm+mt
-source-wordcount: '1148'
+source-wordcount: '1149'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-_I den här artikeln visas hur länge medieuppspelningen har pågått i panelen i_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**._<br/>_Se [Medieuppspelningstid på panel](https://experienceleague.adobe.com/sv/docs/analytics/analyze/analysis-workspace/panels/media-playback-time-spent)) för_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**-versionen av den här artikeln._
+_I den här artikeln visas hur länge medieuppspelningen har pågått i panelen i_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._<br/>_Se [Medieuppspelningstid på panel](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/media-playback-time-spent)) för_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**-versionen av den här artikeln._
 
 >[!ENDSHADEBOX]
 
@@ -42,7 +42,7 @@ _I den här artikeln visas hur länge medieuppspelningen har pågått i panelen 
 >[!NOTE]
 >
 >Den genomsnittliga minuten-panelen för media är endast tillgänglig för kunder som har köpt tillägget Streaming Media Collection för Adobe Analytics.
->Kontakta din säljare på Adobe eller Adobe för mer information.
+>>Kontakta din Adobe-säljare eller Adobe-kontogrupp om du vill ha mer information.
 >
 
 Panelen **[!UICONTROL Media playback time spent]** gör det möjligt att analysera uppspelningen över tid, med information om maximal samtidighet och möjlighet att dela upp och jämföra.
@@ -59,7 +59,7 @@ Den uppspelningstid som spenderas kan hjälpa dig att förstå:
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Medieuppspelningstiden i panelen ](https://video.tv.adobe.com/v/3446704?quality=12&learn=on&captions=swe){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Medieuppspelningstiden i panelen ](https://video.tv.adobe.com/v/338699?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 
@@ -125,8 +125,8 @@ Det enda mätvärdet som kan användas i den här panelen är Använd uppspelnin
 >[!MORELIKETHIS]
 >
 >[Skapa en panel](/help//analyze/analysis-workspace/c-panels/panels.md#create-a-panel)
->[Medie - genomsnittlig minutmålspanel](average-minute-audience-panel.md)
->[Panelen för samtidiga visningsprogram för media](media-concurrent-viewers.md)
+>>[Medie - genomsnittlig minutmålspanel](average-minute-audience-panel.md)
+>>[Panelen för samtidiga visningsprogram för media](media-concurrent-viewers.md)
 >
 
 <!--
@@ -146,7 +146,7 @@ Playback Time Spent can help you understand:
 
 Following is a video overview of this panel:
 
->[!VIDEO](https://video.tv.adobe.com/v/3446704?captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/338699)
 
 ## Use the Media Playback Time Spent panel
 

@@ -1,33 +1,33 @@
 ---
-title: Skapa hyperlänkar i en frihandstabell i Analysis Workspace
-description: Lär dig skapa hyperlänkar för dimensionsobjekt i en frihandstabell i Analysis Workspace
+title: Skapa hyperlänkar för dimensioner i en friformstabell
+description: Lär dig hur du skapar hyperlänkar för dimensionsobjekt i en frihandstabell i Analysis Workspace.
 feature: Freeform Tables
 role: User, Admin
 exl-id: df846a73-e3e3-4376-844e-48153a20e5d6
-source-git-commit: bb3e8b030af78f0d7758b4cff41d66f20695e11e
+source-git-commit: f258a1150a4bee11f5922d058930dc38b1ddfa14
 workflow-type: tm+mt
-source-wordcount: '1597'
+source-wordcount: '1590'
 ht-degree: 0%
 
 ---
 
-# Skapa hyperlänkar för dimensioner i en frihandstabell
+# Skapa hyperlänkar
 
 Du kan skapa hyperlänkar för dimensionsobjekt för att göra dem klickbara i en frihandstabell i Analysis Workspace.
 
 Den här funktionen är särskilt användbar när du skapar hyperlänkar för följande typer av dimensionsobjekt:
 
-* Dimensioner som har URL-värden (t.ex. sidans URL-dimension).
+* Dimension-objekt som har URL-värden (t.ex. sidans URL-dimension).
 
-* Dimensioner som innehåller uppdelningar som har URL-värden (t.ex. en sidnamnsdimension som har en uppdelning av sidans URL-dimension).
+* Dimension-objekt som innehåller uppdelningar som har URL-värden (t.ex. en sidnamnsdimension som har en uppdelning av sidans URL-dimension).
 
-* Dimension av objekt eller uppdelningar som har värden som är en del av en URL (till exempel en sidnamnsdimension som är en del av en URL).
+* Dimension-objekt eller uppdelningar som har värden som är en del av en URL (till exempel en sidnamnsdimension som är en del av en URL).
 
 
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Hyperlänkar för dimension](https://video.tv.adobe.com/v/3445786?quality=12&learn=on&captions=swe){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Hyperlänkar för dimension](https://video.tv.adobe.com/v/3430411?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 

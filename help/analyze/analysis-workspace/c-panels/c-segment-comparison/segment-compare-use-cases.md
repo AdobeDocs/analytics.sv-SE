@@ -5,14 +5,14 @@ keywords: Segmentanalys
 feature: Segmentation
 role: User, Admin
 exl-id: d7c02e5c-5313-4e12-86cb-d483644ccbc7
-source-git-commit: 1ee50c6a2231795b2ad0015a79e09b7c1c74d850
+source-git-commit: 978bd8642011dd2c8e43564c90303f194689a64e
 workflow-type: tm+mt
 source-wordcount: '851'
 ht-degree: 0%
 
 ---
 
-# Användningsexempel för segment-IQ
+# Användningsexempel för segmentjämförelse
 
 Panelen för segmentjämförelse är en vanlig funktion i Analysis Workspace. Kunderna hittar ofta nya sätt att få insikter med den. Nedan följer ett flertal exempel på lyckad användning.
 

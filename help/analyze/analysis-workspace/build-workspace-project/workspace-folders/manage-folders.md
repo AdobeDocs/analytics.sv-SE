@@ -1,19 +1,19 @@
 ---
-description: Lär dig hantera mappar i Workspace
+description: Lär dig hantera mappar i Analysis Workspace.
 keywords: Analysis Workspace
 title: Hantera mappar
 feature: Workspace Basics
 exl-id: af3248eb-7b75-49cd-9dea-bf621d06677b
-source-git-commit: 83345d6fa51253e7c316cd1b2ebee2f4f82e9d00
+source-git-commit: f258a1150a4bee11f5922d058930dc38b1ddfa14
 workflow-type: tm+mt
-source-wordcount: '397'
+source-wordcount: '400'
 ht-degree: 0%
 
 ---
 
 # Hantera mappar
 
-Du kan hantera mappar i Workspace på två sätt. Från mappen eller från en eller flera markerade mappar i projektlistan. Hantera mappar: ändra namn på, flytta eller ta bort mappar.
+Du kan hantera mappar i Workspace på två sätt. Från mappen eller från en eller flera markerade mappar i projektlistan. Hantera mappar innehåller alternativ för att byta namn på, flytta eller ta bort mappar.
 
 ## Byt namn på mappar
 
@@ -24,13 +24,13 @@ Så här byter du namn på mappar i Workspace:
 * Välj en mapp som du vill byta namn på i [projektlistan](/help/analyze/analysis-workspace/build-workspace-project/freeform-overview.md#project-list).
 
    1. Välj **[!UICONTROL Rename]** från de [åtgärder](/help/analyze/analysis-workspace/build-workspace-project/freeform-overview.md#actions) som är tillgängliga på snabbmenyn ![Mer](/help/assets/icons/More.svg) i den markerade mappen eller i det blå åtgärdsfältet.
-   1. I dialogrutan **[!UICONTROL Rename: *mappnamn *]**&#x200B;anger du ett nytt namn och väljer **[!UICONTROL Save]**.
+   1. I dialogrutan **[!UICONTROL Rename: *mappnamn *]**anger du ett nytt namn och väljer **[!UICONTROL Save]**.
 
 * I mappen som du vill byta namn på.
 
    1. Välj **[!UICONTROL Rename folder]** från ![Mer](/help/assets/icons/More.svg) i [titelområdet](/help/analyze/analysis-workspace/build-workspace-project/freeform-overview.md#title-area).
 
-   1. I dialogrutan **[!UICONTROL Rename: *mappnamn *]**&#x200B;anger du ett nytt namn och väljer **[!UICONTROL Save]**.
+   1. I dialogrutan **[!UICONTROL Rename: *mappnamn *]**anger du ett nytt namn och väljer **[!UICONTROL Save]**.
 
 
 ## Flytta mappar
@@ -76,7 +76,7 @@ Om du vill ta bort mappar i Workspace
 
    1. Välj **[!UICONTROL Delete folder]** från ![Mer](/help/assets/icons/More.svg) i [titelområdet](/help/analyze/analysis-workspace/build-workspace-project/freeform-overview.md#title-area).
 
-   1. I mappen **[!UICONTROL Delete *name *?]**&#x200B;väljer du **[!UICONTROL OK]**.
+   1. I mappen **[!UICONTROL Delete *name *?]**väljer du **[!UICONTROL OK]**.
 
 
 <!-- 

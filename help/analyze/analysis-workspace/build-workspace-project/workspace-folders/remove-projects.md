@@ -1,52 +1,64 @@
 ---
-description: Lär dig hur du tar bort projekt från mappar
+description: Lär dig hur du tar bort projekt från Analysis Workspace.
 keywords: Analysis Workspace
-title: Ta bort projekt från mappar
+title: Ta bort projekt
 feature: Workspace Basics
 exl-id: d2e77111-569d-4eec-8e54-863a38b9ac20
-source-git-commit: 8f7c6a0d1477b599b05aeb7b74c4ee96531d294d
+source-git-commit: 6fad2afb2b5792b6d6fbf8d94fff37b92cc18bda
 workflow-type: tm+mt
-source-wordcount: '202'
-ht-degree: 0%
+source-wordcount: '27'
+ht-degree: 7%
 
 ---
 
 # Ta bort projekt
 
-Om du vill ta bort ett projekt från en mapp kan du flytta projektet till en annan plats eller ta bort projektet.
+
+Se [Åtgärder i Hantera projekt](../freeform-overview.md#actions) om hur du tar bort projekt från Analysis Workspace.
+
+
+
+<!-- Is this article still needed; not in the TOC anymore
+
+
+# Delete projects
+
+To remove a project from a folder, you can move the project to another location or delete the project.
 
 >[!NOTE]
 >
->När en administratör flyttar ett projekt till företagsmappen delas mappen med alla, även om de ursprungliga delade behörigheterna var begränsade. När en administratör flyttar ett projekt från företagsmappen gäller de ursprungliga eller tidigare delningsbehörigheterna.
+>When an Admin moves a project to the Company Folder, the folder is shared with everyone even if the original shared privileges were restricted. When an Admin moves a project out of the Company Folder, the original or previous sharing privileges are respected.
 
-## Flytta ett projekt {#move-project-in-folder}
+## Move a project {#move-project-in-folder}
 
-Du kan flytta projekt från en mapp till en annan mapp som du har skapat.
+You can move projects from one folder to another folder that you created.
 
-1. I en projektmapp väljer du ellipsen **..** bredvid projektnamnet.
+1. From within a project folder, select the **...** ellipsis next to the project name.
 
-   ![](/help/analyze/analysis-workspace/build-workspace-project/assets/move1.png)
+    ![](/help/analyze/analysis-workspace/build-workspace-project/assets/move1.png)
 
-1. Välj **Flytta till** och välj sedan en mapp att flytta projektet till.
+1. Select **Move to** and then select a folder to move the project to.
 
-   ![](/help/analyze/analysis-workspace/build-workspace-project/assets/move-select-location.png)
+    ![](/help/analyze/analysis-workspace/build-workspace-project/assets/move-select-location.png)
 
-1. Klicka på **Flytta**.
+1. Click **Move**.
 
-   ![](/help/analyze/analysis-workspace/build-workspace-project/assets/move-click-move.png)
+    ![](/help/analyze/analysis-workspace/build-workspace-project/assets/move-click-move.png)
 
-   En popup bekräftar att projektet har flyttats.
+    A toast confirms that the project was moved.
 
-   ![](/help/analyze/analysis-workspace/build-workspace-project/assets/move-project-moved.png)
+    ![](/help/analyze/analysis-workspace/build-workspace-project/assets/move-project-moved.png)
 
-## Ta bort ett projekt från en projektmapp {#delete-project-in-folder}
+## Delete a project from a project folder {#delete-project-in-folder}
 
-När du tar bort ett projekt från en mapp tas det bort från systemet efter 180 dagar. Under de 180 dagarna efter borttagningen kan användarna fortfarande komma åt ett borttaget projekt via webbgränssnittet om de har en URL till projektet.
+When you delete a project from a folder, it gets purged from the system after 180 days. During the 180 days after deletion, users can still access a deleted project via the Web interface if they have a URL to the project.
 
-1. I en projektmapp väljer du ellipsen **..** bredvid projektnamnet.
+1. From within a project folder, select the **...** ellipsis next to the project name.
 
-   ![](/help/analyze/analysis-workspace/build-workspace-project/assets/move1.png)
+    ![](/help/analyze/analysis-workspace/build-workspace-project/assets/move1.png)
 
-1. Välj **Ta bort**.
+1. Select **Delete**.
 
-1. Ett bekräftelsefönster ber dig bekräfta borttagningen.
+1. A confirmation window asks you to confirm the deletion.
+
+-->

@@ -1,13 +1,13 @@
 ---
-description: Med ett interdimensionellt flöde kan du undersöka användarsökvägar i olika dimensioner.
-title: Flerdimensionella flöden
+description: Förstå hur ett interdimensionellt flöde låter dig undersöka användarbanor i olika dimensioner.
+title: Mellandimensionella flöden
 uuid: 51d08531-1c56-46c7-b505-bd8d5e6aa6c1
 feature: Visualizations
 role: User, Admin
 exl-id: f84917a4-2c07-48fb-9af3-d96c537da65c
-source-git-commit: be6056f9e7a64b47ab544594149ebfbe134f1c04
+source-git-commit: 978bd8642011dd2c8e43564c90303f194689a64e
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '321'
 ht-degree: 0%
 
 ---
