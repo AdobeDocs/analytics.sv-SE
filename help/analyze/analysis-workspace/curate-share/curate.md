@@ -51,7 +51,7 @@ Så här tar du bort projektstrukturering och återställer alla komponenter i d
 
 ## Vuxen rapportsvitens urval
 
-Om du vill använda kurering på rapportsvitnivå, så att den tillämpas på många projekt samtidigt, kan du [strukturera komponenter i en virtuell rapportserie](https://experienceleague.adobe.com/en/docs/analytics/components/virtual-report-suites/vrs-components).
+Om du vill använda kurering på rapportsvitnivå, så att den tillämpas på många projekt samtidigt, kan du [strukturera komponenter i en virtuell rapportserie](https://experienceleague.adobe.com/sv/docs/analytics/components/virtual-report-suites/vrs-components).
 
 >[!NOTE]
 >
