@@ -1,19 +1,19 @@
 ---
-description: Lär dig hur du snabbt skapar ett projekt baserat på vanliga rapportscenarier med hjälp av mallar i Analysis Workspace.
-title: Mallar
+description: Lär dig hur du snabbt startar ett projekt baserat på vanliga rapportscenarier med hjälp av mallar i Analysis Workspace.
+title: Starta projekt snabbt
 feature: Workspace Basics
 role: User, Admin
 exl-id: 751399fe-6d4f-47cc-8827-82c992079b52
-source-git-commit: f258a1150a4bee11f5922d058930dc38b1ddfa14
+source-git-commit: 41d067ab852f4eb5c4a1368ade364fdb706bb9d9
 workflow-type: tm+mt
-source-wordcount: '53'
+source-wordcount: '75'
 ht-degree: 0%
 
 ---
 
-# Mallar
+# Starta ett projekt snabbt
 
-Mallar (eller företagsmallar) i Analysis Workspace ger snabba insikter i de vanligaste rapportscenarierna.
+Du kan snabbt starta ett projekt med relevanta paneler och visualisering. Använd mallar (eller företagsmallar) i Analysis Workspace för att göra det. Mallar ger snabba insikter i de vanligaste rapportscenarierna.
 
 Mer information om hur du använder mallar i Adobe Analytics finns i följande resurser:
 

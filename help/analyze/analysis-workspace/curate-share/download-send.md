@@ -1,116 +1,233 @@
 ---
-description: Du kan hämta data från Analysis Workspace genom att kopiera dem eller i formaten PDF och CSV.
-title: Hämta PDF eller CSV-filer
+description: Läs om de olika möjligheterna att hämta data från ditt Analysis Workspace-projekt.
+title: Ladda ned Analysis Workspace-projekt och data
 feature: Curate and Share
 role: User, Admin
 exl-id: 085013dc-8263-4fc8-9492-99f0ecadf14b
-source-git-commit: 04c588cbe8cd4cc9b8d6fe162e3623c2be076325
+source-git-commit: 599fbea7cb22e9cd0193b56fc2fb3c506bc62949
 workflow-type: tm+mt
-source-wordcount: '1014'
+source-wordcount: '1031'
 ht-degree: 0%
 
 ---
 
-# Hämta PDF eller CSV-filer
 
-Det finns flera sätt att exportera data från Analysis Workspace. Vilken metod du väljer beror på vilken uppsättning data du vill analysera och vem som behöver komma åt den.
+# Hämta projekt och data
 
-Exporterade data kan vara i form av kopierade data, CSV eller PDF. En PDF är vanligtvis att föredra om du vill att visualiseringar ska ingå i filen. CSV och kopierade data är att föredra om du bara vill ha textdata.
+Du kan hämta Analysis Workspace-projekt och data till din lokala enhet. Den här hämtningen kan vara kopierade data, en CSV-fil (kommaavgränsade data) eller ett PDF-dokument (portabla dokumentformat).
 
-## Hämta ett projekt som CSV eller PDF {#download-project}
+* Välj alternativet PDF om du vill att visualiseringar ska ingå i den hämtade filen.
+* Välj CSV och kopierade dataalternativ om du bara behöver textdata.
 
-Tänk på följande när du hämtar projekt:
+Ytterligare metoder för att exportera Adobe Analytics-data beskrivs i [exportguiden](/help/export/home.md).
 
-* När du hämtar projekt som en CSV-fil eller PDF kan projektet sparas eller sparas utan att sparas när du begär en projekthämtning. Endast sparade projekt kan dock vara [schemalagda](/help/analyze/analysis-workspace/curate-share/t-schedule-report.md).
+## Hämta som CSV eller PDF {#download-project}
 
-* Vid hämtning av projekt som PDF:
-   * Det kan ta flera minuter att exportera nedladdningar eftersom projektet körs på nytt på Adobe-servrar innan det återges i PDF-format. Vi rekommenderar att du inte lämnar projektet förrän PDF har hämtats i webbläsaren. Du kan dock fortsätta att göra ändringar i projektet medan du väntar. Om det tar längre tid än fem minuter att återge ett PDF uppmanas du att skicka det via e-post i stället.
-   * Hämtningar återges som en sida utan sidnumrering.
-   * PDF innehåller det som finns på Workspace sida. Om ett projekt har visualiseringar och paneler i anpassad storlek måste du ändra dem så att de storleksändras automatiskt (knappen i det övre högra hörnet) så att det inte finns något trunkerat innehåll.
-   * Eventuella [hyperlänkar](/help/analyze/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md) som finns i frihandstabeller fungerar inte i det hämtade PDF.
+![Listrutan Projekt med alternativen Hämta CSV och Hämta PDF markerade.](assets/download-project.png)
 
-Så här hämtar du ett projekt som en CSV- eller PDF-fil:
+Tänk på följande när du hämtar ett projekt som PDF:
 
-1. Gör något av följande, beroende på vilket format du vill hämta projektet i:
+* Nedladdningen kan ta flera minuter eftersom projektet körs på nytt på Adobe-servrar för att återges i PDF-format. Lämna inte projektet förrän projektet har laddats ned i webbläsaren.  Du kan fortsätta att ändra projektet medan hämtningen renderas. Om det tar längre tid än fem minuter att återge en PDF uppmanas du att [skicka PDF](../curate-share/send-schedule-files.md) via e-post i stället.
+* Hämtningar återges som en sida utan sidnumrering.
+* PDF innehåller det som visas på webbläsarsidan i Analysis Workspace. Du behöver automatiskt storleksanpassa visualiseringar och paneler för att undvika trunkerat innehåll. Välj ![Ändra storlek](/help/assets/icons/Resize.svg) om du vill ändra storlek på en visualisering eller panel i anpassad storlek automatiskt.
+* [Hyperlänkar](/help/analyze/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md) i frihandstabeller som hyperlänkar i den hämtade PDF-filen.
 
-   * **PDF:** Välj **[!UICONTROL Project]** > **[!UICONTROL Download PDF]**.
 
-     Välj det här alternativet om du vill att den hämtade filen ska innehålla alla tabeller och visualiseringar som visas i projektet.
 
-   * **CSV:** Välj **[!UICONTROL Project]** > **[!UICONTROL Download CSV]**.
+Så här hämtar du ett projekt som en PDF-fil:
 
-     Välj det här alternativet om du vill ha oformaterade textdata.
+1. Välj **[!UICONTROL Project]** > **[!UICONTROL Download PDF]**.
+Ett grönt fält med meddelandet ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Your download has been requested. Please wait.]** visas.
 
-   ![](assets/download-project.png)
+1. När nedladdningen är klar visas ett grönt fält med meddelandet ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL *Projektets namn *PDF.]**visas.
+Välj**[!UICONTROL Download]**om du vill hämta PDF. Hur exakt PDF presenteras eller laddas ned beror på vilken webbläsarkonfiguration du har för att hantera PDF-dokument.
 
-1. (Villkorligt) Om du väljer att hämta ett PDF visas ett meddelande när projektet är klart att hämtas. Klicka på [!UICONTROL **Hämta**].
-1. Klicka på ikonen **[!UICONTROL Download this file]** och spara filen i en mapp som du väljer.
 
-## Kopiera data till Urklipp (snabbtangent: Ctrl+C) {#copy-data}
+Så här hämtar du ett projekt som en CSV-fil:
 
-Med högerklicksalternativet **[!UICONTROL Copy to clipboard]** kan du snabbt kopiera data från Workspace och klistra in dem i ett verktyg från tredje part.
+* Välj **[!UICONTROL Project]** > **[!UICONTROL Download CSV]**. Projektet hämtas direkt till den hämtningsmapp som är konfigurerad som en del av webbläsarkonfigurationen. Filnamnet består av *projektnamn* - *rapportsvitens namn* - *datum*, till exempel `Example Project - Omni-Channel - Luma - Jun 30, 2025.csv`.
 
-* Om du vill att den visade tabellen ska kopieras högerklickar du på tabellrubriken och väljer **Kopiera data till Urklipp**.
-* Om du vill att en delmängd av data ska kopieras gör du en markering i tabellen och högerklickar sedan > **Kopiera markering till Urklipp**.
+## Kopiera till Urklipp {#copy-data}
+
+Med alternativet **[!UICONTROL Copy to clipboard]** på snabbmenyn kan du snabbt kopiera data från Analysis Workspace och klistra in data i ett verktyg från tredje part.
+
+* Om du vill att tabelldata som visas ska kopieras markerar du tabellrubriken och väljer **Kopiera data till Urklipp** på snabbmenyn.
+* Om du vill att en delmängd av data ska kopieras markerar du den i tabellen och väljer **Kopiera markering till Urklipp** på snabbmenyn.
 
 >[!TIP]
 >
->Du kan använda snabbtangenten `Ctrl+C` för att kopiera markeringen till Urklipp och sedan använda `Ctrl+V` för att klistra in den i ett verktyg från tredje part.
+>Du kan använda snabbtangenten **_cmd + c_** (macOS) eller **_ctrl + c_** (Windows) för att kopiera ditt val till Urklipp. Använd sedan **_cmd + v_** (macOS) eller **_ctrl + v_** (Windows) för att klistra in data.
 
-![](assets/copy-selection.png)
 
-## Hämta data som CSV {#download-data}
+![Alternativet Kopiera markering till Urklipp. ](assets/copy-clipboard.png){zoomable="yes"}
 
-Med högerklicksalternativet **[!UICONTROL Download data as CSV]** kan du hämta en datatabell eller datakällan för en visualisering som en CSV-fil.
+## Hämta som CSV {#download-data}
 
-* Högerklicka och välj **[!UICONTROL Download data as CSV]** i huvudet på en tabell eller visualisering. Detta hämtar visade data i tabellen eller den underliggande datakällan för en visualisering som en CSV-fil.
+Med alternativen för att hämta som CSV på snabbmenyn kan du hämta en datatabell eller datakällan för en visualisering som en CSV-fil.
 
+Så här gör du:
+
+* Välj **[!UICONTROL Download data as CSV]** på snabbmenyn i en tabell eller visualisering. Detta hämtar visade data i tabellen eller den underliggande datakällan för en visualisering som en CSV-fil.
+
+<!-- Only relevant as soon as CJA supports Map visualization 
   >[!NOTE]
   >
-  >  Obs! Kartvyn stöder inte det här alternativet.
+  >  Note: the Map visualization does not support this option.
+-->
 
-* Högerklicka i en tabell och välj **[!UICONTROL Download selection as CSV]**. Endast markeringen laddas ned med det här alternativet, i motsats till den fullständiga tabellen som visas.
+* Välj **[!UICONTROL Download selection as CSV]** på snabbmenyn i en tabell. Endast markeringen laddas ned med det här alternativet, i motsats till den fullständiga tabellen som visas.
 
-![](assets/download-data-viz.png)
+![Alternativet Hämta data som CSV.](assets/download-data-as-csv.png)
 
 ## Hämta objekt som CSV {#download-items}
 
-Om du vill analysera mer än de 400 synliga dataraderna i en tabell högerklickar du på tabellrubriken eller valfri rad och väljer **Hämta objekt som CSV (_Dimensionens namn_)**. Med det här alternativet exporteras upp till 50 000 dimensionsobjekt (baserat på tabellsortering) för den valda dimensionen med filter och segment. Om du väljer det här alternativet överst i tabellen exporteras den första dimensionen i tabellen. Även om inga begränsningar används i friformstabellen rekommenderar vi att alternativet Hämta objekt används i tabeller med mindre än 20 kolumner för att optimera prestandan.
+Om du vill analysera fler än de 400 synliga dataraderna i en tabell väljer du **Hämta objekt som CSV (_Dimension name_)** på snabbmenyn för tabellhuvudet eller på en rad. Med det här alternativet exporteras upp till 50 000 dimensionsobjekt (baserat på tabellsortering) för den valda dimensionen med sorteringsalternativ och filter. Om du väljer det här alternativet överst i tabellen exporteras den första dimensionen i tabellen.
+
+![Alternativet Hämta objekt som CSV (sida).](assets/download-items-as-csv.png)
+
+Inga begränsningar används i frihandstabellen. För att få optimala prestanda bör du använda det här alternativet i tabeller med färre än 20 kolumner.
 
 >[!TIP]
 >
-> Om din dimension överstiger 50 000 objekt hämtar du filen med olika sorteringsmått tillämpade eller använder ett filter. Du kan t.ex. sortera efter besök i en nedladdning och sedan stigande efter besök i en andra nedladdning. Det här tipset kan hjälpa dig att hämta objekt med längre svans.
+> Om din dimension överstiger 50 000 objekt hämtar du filen med olika sorteringsvärden eller använder ett segment. Du kan t.ex. sortera efter besök i en nedladdning och sedan stigande efter besök i en andra nedladdning. Det här tipset kan hjälpa dig att hämta objekt med längre svans.
 
 Du kan utföra flera uppgifter samtidigt i projektet och till och med navigera till ett nytt Workspace-projekt på samma flik medan hämtningen pågår. Hämtningen pausas om du öppnar en ny flik i webbläsaren. Hämtningen avbryts om du lämnar Workspace helt eller stänger webbläsarfliken.
 
-![](assets/download-items.png)
 
-### Nedladdad objektfil
+### Nedladdad objektfil {#items-file}
 
-Tabellens funktioner kommer att tillämpas på den hämtade filen enligt följande:
+Följande funktioner i en frihandstabell används i den hämtade filen:
 
 * Alla panelsegment används som filter.
 * Uppdelningar **ovanför** den valda dimensionen i tabellen används som filter ovanför varje kolumn.
 * Uppdelningar **nedanför** av den valda dimensionen i tabellen tas bort.
 
-I exemplet ovan hämtas sidobjekt med panelsegmentet (kunder med nya besökare) och komponenterna ovan (marknadsföringskanal = e-post) som filter, och komponenterna nedan (mobilenhetstyp) tas bort från den hämtade CSV-filen.
+![Den hämtade CSV-filen som öppnats i Excel.](assets/download-items-file.png)
 
-![](assets/downloaded-file.png)
+### Hämta meddelanden {#notifications}
 
-### Hämta meddelanden
+När filen laddas ned visas följande meddelanden:
 
-När filen laddas ned visas ett informationsmeddelande med förloppet. Du kan när som helst avbryta hämtningen genom att klicka på **[!UICONTROL Cancel download]**. Om du stänger popup-fönstret **avbryts inte** nedladdningen.
+* Ett blått **[!UICONTROL _tabellnamn _-_Dimension _.csv har begärts._x _% slutfört]**anger förloppet. Om du vill avbryta hämtningen väljer du **[!UICONTROL Cancel download]**. Välj ![CrossSize100](/help/assets/icons/CrossSize100.svg) om du vill stänga meddelandet, som inte avbryter hämtningen.
+* Ett grönt **[!UICONTROL _tabellnamn _-_Dimension _.csv har hämtats]**meddelande om slutförd filhämtning. Filen hämtas till den nedladdningsmapp som är konfigurerad för webbläsaren.
 
-När filen är klar visas ett meddelande om att den är klar och filen hämtas till webbläsaren.
+Om du begär mer än en nedladdning åt gången får du ett meddelande om att varje ytterligare nedladdning är i kö tills den tidigare nedladdningen är klar.
 
-Om du begär mer än en nedladdning åt gången får du ett meddelande om att varje ytterligare nedladdning kommer att ställas i kö tills den tidigare nedladdningen är klar.
-
-![](assets/toast.png)
 
 ## Vanliga frågor och svar {#faq}
 
 | Fråga | Svar |
 | --- | --- |
-| Varför är min nedladdade PDF-sida? | Workspace paginerar för närvarande inte nedladdat PDF. |
-| Kan jag exportera mer än 50 000 objekt med alternativet &quot;Hämta objekt som CSV&quot;? | Varje nedladdning kan innehålla upp till 50 000 dimensionsobjekt, men du kan ändra sorteringsordningen i tabellen för att hämta längre slutobjekt eller använda ett filter för att hämta mer specifika objekt. |
-| Vad gör **[!UICONTROL Copy visualization]**? | Till skillnad från [!UICONTROL **Kopiera data till Urklipp**] eller [!UICONTROL **Kopiera markering till Urklipp**] är alternativet **[!UICONTROL Copy visualization]** för högerklick inte ett exportalternativ. Du kan kopiera en visualisering eller panel från en plats i Workspace till en annan. Exempel: från en panel till en annan i samma projekt, eller från ett projekt till ett annat projekt. [Intralänkande video](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/visualizations/intra-linking-in-analysis-workspace.html?lang=sv-SE) |
+| Varför består min nedladdade PDF av bara en sida? | Funktionen [Hämta PDF](#download-as-csv-or-pdf) numrerar inte hämtade PDF-filer. |
+| Kan jag exportera mer än 50 000 objekt med alternativet **[!UICONTROL Download items as CSV]**? | Varje nedladdning kan innehålla upp till 50 000 dimensionsobjekt, men du kan ändra sorteringsordningen i tabellen för att hämta längre slutobjekt eller använda ett filter för att hämta mer specifika objekt. |
+| Vad gör **[!UICONTROL Copy visualization]**? | Till skillnad från [!UICONTROL **Kopiera data till Urklipp**] eller [!UICONTROL **Kopiera markering till Urklipp**] är snabbmenyalternativet **[!UICONTROL Copy visualization]** inte ett exportalternativ. Med det här alternativet kan du [kopiera en visualisering](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu) eller [kopiera en panel](/help/analyze/analysis-workspace/c-panels/panels.md#context-menu) från en plats i Workspace till en annan. Exempel: från en panel till en annan i samma projekt, eller från ett projekt till ett annat projekt. |
+
+
+
+<!--
+
+# Download 
+
+There are several ways to export data from Analysis Workspace. The method you choose depends on what set of data you want to analyze and who needs to access it.
+
+Exported data can be in the form of copied data, CSV, or PDF. A PDF is typically preferred if you want visualizations included in the file. CSV and copied data is preferred if you simply want plain-text data.
+
+## Download a project as CSV or PDF {#download-project}
+
+Consider the following when downloading projects:
+
+* When downloading projects as a CSV or PDF, the project can be saved or unsaved when you request a project download. However, only saved projects can be [scheduled](/help/analyze/analysis-workspace/curate-share/t-schedule-report.md). 
+
+* When downloading projects as a PDF:
+  * Downloads can take several minutes to export because the project is re-run on Adobe servers before rendering in PDF format. We recommend not leaving the project until the PDF downloads in your browser. However, you can continue to make changes to the project while you wait. If a PDF takes longer than 5 minutes to render, you will be prompted to email it instead.
+  * Downloads are rendered as a single page with no pagination applied.
+  * PDF renderings contain what is on the page in Workspace. If a project has custom-sized visualizations and panels, you need to change them to be auto-sized (button in top-right corner) so that there will be no truncated content.
+  * Any [hyperlinks](/help/analyze/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md) that exist within freeform tables are not functional in the downloaded PDF. 
+
+To download a project as a CSV or PDF file:
+
+1. Do either of the following, depending on what format you want to download the project in:
+
+   * **PDF:** Select **[!UICONTROL Project]** > **[!UICONTROL Download PDF]**.
+
+     Choose this option if you want the downloaded file to contain all the displayed (visible) tables and visualizations in the project.
+
+   * **CSV:** Select **[!UICONTROL Project]** > **[!UICONTROL Download CSV]**. 
+
+     Choose this option if you want plain-text data.
+
+   ![](assets/download-project.png)
+
+1. (Conditional) If you chose to download a PDF, a message is shown after the project is ready to be downloaded. Click [!UICONTROL **Download**].
+1. Click the **[!UICONTROL Download this file]** icon and save the file to a folder of your choice.
+
+## Copy data to clipboard (hotkey: cmd + c) {#copy-data}
+
+The right-click option **[!UICONTROL Copy to clipboard]** lets you quickly copy data from Workspace and paste it in a third-party tool. 
+
+* If you want the displayed table copied, right-click the table header and choose **Copy data to clipboard**. 
+* If you want a subset of data copied, make a selection in the table and then right-click > **Copy selection to clipboard**.
+
+>[!TIP]
+>
+>You can use the hotkey `Ctrl+C` to copy your selection to the clipboard, then use `Ctrl+V` to paste it into a third-party tool.
+
+![](assets/copy-selection.png)
+
+## Download data as CSV {#download-data}
+
+The right-click option **[!UICONTROL Download data as CSV]** allows you to download a table of data or the data source of any visualization as a CSV.
+
+* From the header of any table or visualization, right-click and choose **[!UICONTROL Download data as CSV]**. This downloads the displayed data in the table or the underlying data source for a visualization as a CSV. 
+
+  >[!NOTE]
+  >
+  >  Note: the Map visualization does not support this option.
+
+* Within a table, right-click and choose **[!UICONTROL Download selection as CSV]**. Only the selection is downloaded with this option, as opposed to the full, displayed table.
+
+![](assets/download-data-viz.png)
+
+## Download items as CSV {#download-items}
+
+If you want to analyze more than the visible 400 rows of data in a table, right-click the table header or any row and select **Download items as CSV (_Dimension name_)**. This option exports up to 50,000 dimension items (based on the table sort) for the selected dimension, with filters and segments applied. If you chose this option from the top of the table, the first dimension in the table will be exported. While no limits are enforced in the freeform table, it is recommended that the Download items option be used in tables with less than 20 columns to ensure optimal performance.
+
+>[!TIP]
+>
+> If your dimension exceeds 50,000 items, download the file with different sort metrics applied or apply a filter. For example, sort descending by Visits in one download and then ascending by Visits in a second download. This tip can help you retrieve longer-tail items.
+
+You can multi-task within the project and even navigate to a new Workspace project in the same tab while the download is in progress. The download pauses if you open a new browser tab. The download is canceled if you leave Workspace completely or close the browser tab.
+
+![](assets/download-items.png)
+
+### Downloaded items file 
+
+Features of the table will be applied to the downloaded file as follows:
+
+* All panel segments are applied as filters.
+* Breakdowns **above** the selected dimension in the table are applied as filters above each column. 
+* Breakdowns **below** the selected dimension in the table are removed.
+
+In the example above, Page items are downloaded with the panel segment (New Visitors Customers) and components above (Marketing Channel = Email) applied as filters, and the components below (Mobile Device Type) removed from the downloaded CSV.
+
+![](assets/downloaded-file.png)
+
+### Download notifications
+
+As the file downloads, you will see an informational notification with the progress. At any time, you can cancel the download by clicking **[!UICONTROL Cancel download]**. Closing the toast **will not** cancel the download. 
+
+Once the file completes, you will see a completion notification and the file will download to your browser.
+
+If you request more than one download at a time, you will receive a notification that each additional download will be queued until the prior download completes.
+
+![](assets/toast.png)
+
+## FAQ {#faq}
+
+| Question | Answer |
+| --- | --- |
+| Why is my downloaded PDF one page? | Workspace does not paginate downloaded PDFs at this time. |
+| Can I export more than 50,000 items with the "Download items as CSV" option? | While each download can contain up to 50,000 dimension items, you can change the sort of your table to retrieve longer tail items, or apply a filter to download more specific items. |
+| What does **[!UICONTROL Copy visualization]** do? | Unlike [!UICONTROL **Copy data to clipboard**] or [!UICONTROL **Copy selection to clipboard**], the **[!UICONTROL Copy visualization]** right-click option is not an export option. It allows you to copy a visualization or panel from one place in Workspace to another. For example, from one panel to another in the same project, or from one project to another project. [Intra-linking video](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/visualizations/intra-linking-in-analysis-workspace.html) |
+
+-->

@@ -4,7 +4,7 @@ audience: end-user
 user-guide-title: Handbok om Analytics-verktyg
 breadcrumb-title: Användarhandbok om verktyg
 user-guide-description: Lär dig hur du använder verktyg i Analytics, inklusive Analysis Workspace, Analytics Dashboards, Report Builder, Legacy Report Builder och Activity Map.
-source-git-commit: 1c5eed6d9a70bca6835d68c83dc0523449401a62
+source-git-commit: 41d067ab852f4eb5c4a1368ade364fdb706bb9d9
 workflow-type: tm+mt
 source-wordcount: '896'
 ht-degree: 8%
@@ -14,7 +14,7 @@ ht-degree: 8%
 # Adobe Analytics Tools Guide {#analyze}
 
 + [Handbok om Analytics-verktyg](home.md)
-+ [Versionsinformation för analyser](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html?lang=sv-SE)
++ [Versionsinformation för analyser](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html)
 + Kom igång med Adobe Analytics {#admin-overview}
    + [Analytics - översikt](get-started/analytics-overview.md)
    + [Kom igång (efter roll)](get-started/get-started-by-role.md)
@@ -28,6 +28,7 @@ ht-degree: 8%
    + [Översikt över Analysis Workspace](analysis-workspace/home.md)
    + Projekt {#build-workspace-project}
       + [Översikt](analysis-workspace/build-workspace-project/freeform-overview.md)
+      + [Starta projekt snabbt](analysis-workspace/build-workspace-project/starter-projects.md)
       + [Skapa projekt](analysis-workspace/build-workspace-project/create-projects.md)
       + [Öppna projekt](analysis-workspace/build-workspace-project/open-projects.md)
       + [Spara projekt](analysis-workspace/build-workspace-project/save-projects.md)
@@ -37,7 +38,6 @@ ht-degree: 8%
          + [Skapa mappar](analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)
          + [Hantera mappar](analysis-workspace/build-workspace-project/workspace-folders/manage-folders.md)
          + [Lägga till eller flytta projekt](analysis-workspace/build-workspace-project/workspace-folders/add-projects.md)
-      + [Mallar](analysis-workspace/build-workspace-project/starter-projects.md)
       + [Flera rapportsviter](analysis-workspace/build-workspace-project/multiple-report-suites.md)
       + [Snabbtangenter](analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
       + [Färgpaletter](analysis-workspace/build-workspace-project/color-palettes.md)
@@ -131,14 +131,14 @@ ht-degree: 8%
          + [Översikt](analysis-workspace/c-panels/c-segment-comparison/segment-comparison.md)
          + [Användningsexempel](analysis-workspace/c-panels/c-segment-comparison/segment-compare-use-cases.md)
          + [Statistiska tester som används](analysis-workspace/c-panels/c-segment-comparison/statistical-test.md)
-   + Kuratera, dela och schemalägg projekt {#curate-share}
+   + Kuratera och dela projekt {#curate-share}
       + [Översikt](analysis-workspace/curate-share/send-schedule-files.md)
       + [Kuratprojekt](analysis-workspace/curate-share/curate.md)
       + [Dela projekt](analysis-workspace/curate-share/share-projects.md)
       + [Skapa delningsbara länkar](analysis-workspace/curate-share/shareable-links.md)
       + [Skrivskyddade projekt](analysis-workspace/curate-share/view-only-projects.md)
-      + [Hämta PDF- eller CSV-filer](analysis-workspace/curate-share/download-send.md)
-      + [Schemalägg projekt](analysis-workspace/curate-share/t-schedule-report.md)
+      + [Hämta projekt](analysis-workspace/curate-share/download-send.md)
+      + [Skicka och schemalägg projekt](analysis-workspace/curate-share/t-schedule-report.md)
    + Tillskrivning {#attribution}
       + [Attributionsöversikt](analysis-workspace/attribution/overview.md)
       + [Attributmodeller och uppslagsfönster](analysis-workspace/attribution/models.md)

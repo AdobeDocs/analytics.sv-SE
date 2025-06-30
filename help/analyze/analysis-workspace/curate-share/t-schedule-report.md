@@ -1,20 +1,20 @@
 ---
-description: Skicka ett Analysis Workspace-projekt via e-post eller schemalägg det för leverans.
+description: Lär dig hur du skickar ett Analysis Workspace-projekt direkt eller enligt ett schema för e-postleverans.
 keywords: Analysis Workspace
-title: Schemalägg projekt
+title: Skicka och schemalägg projekt
 feature: Curate and Share
 role: User, Admin
 exl-id: 2d6854f7-8954-4d55-b2be-25981cfb348b
-source-git-commit: d4d0eeac4f1f29e4c68e80b6fa0fe987a1fb32b9
+source-git-commit: 41d067ab852f4eb5c4a1368ade364fdb706bb9d9
 workflow-type: tm+mt
-source-wordcount: '361'
+source-wordcount: '367'
 ht-degree: 1%
 
 ---
 
-# Skicka filer till andra
+# Skicka och schemalägg
 
-Du kan skicka Adobe Analytics-rapporter som filer till utvalda användare via e-post. Du kan skicka filer för hand eller konfigurera filer som ska skickas enligt ett schema. Filer kan skickas i CSV- eller PDF-format.
+Du kan skicka Adobe Analytics-projekt som filer till utvalda användare via e-post. Du kan skicka filer för hand eller konfigurera filer som ska skickas enligt ett schema. Filer kan skickas i CSV- eller PDF-format.
 
 Alla märkord som används i projektet används automatiskt vid exporten.
 
@@ -24,7 +24,7 @@ Det finns även andra metoder för att exportera Adobe Analytics-data, vilket be
 
 ## Skicka fil
 
-Så här skickar du en fil till mottagarna via e-post:
+Så här skickar du en fil ad hoc till mottagarna via e-post:
 
 1. Välj **[!UICONTROL Share]>[!UICONTROL Send file]**.
 1. Ange filtyp:

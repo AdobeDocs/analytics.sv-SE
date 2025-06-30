@@ -1,13 +1,13 @@
 ---
-description: Med kurering kan du begränsa komponenter innan du delar ett projekt.
+description: Lär dig att strukturera projekt i Analysis Workspace. Kuration begränsar åtkomsten till komponenter innan du delar ett projekt.
 keywords: Analysis Workspace kurser
 title: Kuratprojekt
 feature: Curate and Share
 role: User, Admin
 exl-id: 5e23be83-586a-4543-9be9-65c631b8b0b7
-source-git-commit: 8f7c6a0d1477b599b05aeb7b74c4ee96531d294d
+source-git-commit: 41d067ab852f4eb5c4a1368ade364fdb706bb9d9
 workflow-type: tm+mt
-source-wordcount: '530'
+source-wordcount: '506'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,6 @@ Om ett projekt har flera rapportsviter visas ett aktuellt släppmål för varje 
 1. (Valfritt) Om du vill lägga till fler komponenter drar du de komponenter du vill dela från den vänstra panelen till släppzonen **[!UICONTROL Curate components]** för datavyn.
 1. Välj **[!UICONTROL Done]**.
 
-Du kan också använda kurering från menyn [!UICONTROL Share] genom att välja **[!UICONTROL Curate and Share]**. Med det här alternativet kurformas projektet automatiskt till de komponenter som används i projektet. Du kan lägga till ytterligare komponenter enligt stegen ovan.
 
 ![](assets/curation-field.png)
 
@@ -52,7 +51,7 @@ Så här tar du bort projektstrukturering och återställer alla komponenter i d
 
 ## Vuxen rapportsvitens urval
 
-Om du vill använda kurering på rapportsvitnivå, så att den tillämpas på många projekt samtidigt, kan du [strukturera komponenter i en virtuell rapportserie](https://experienceleague.adobe.com/sv/docs/analytics/components/virtual-report-suites/vrs-components).
+Om du vill använda kurering på rapportsvitnivå, så att den tillämpas på många projekt samtidigt, kan du [strukturera komponenter i en virtuell rapportserie](https://experienceleague.adobe.com/en/docs/analytics/components/virtual-report-suites/vrs-components).
 
 >[!NOTE]
 >
@@ -72,6 +71,6 @@ Obs! Roller som inte är administratörsvy har inte åtkomst till den vänstra l
 
 | Kurvtyp | Administratörer | Projektägare eller redigeringsroll som inte är administratör | Dubblettroll som inte är administratör |
 |---|---|---|---|
-| Kuraterad virtuell rapportsvit | Alla komponenter i den virtuella rapportsviten som inte är förvaltade | Icke-förvaltade virtuella rapportsvitkomponenter som den här rollen äger eller som har delats med dem | Icke-förvaltade virtuella rapportsvitkomponenter som den här rollen äger eller som har delats med dem |
-| Kuraterat projekt | Alla projektkomponenter som inte är kuraterade | Alla projektkomponenter som inte är kuraterade | Ej förvaltade projektkomponenter som den här rollen äger eller som har delats med dem |
-| Kuraterat projekt i en Curated Virtual Report Suite | Alla komponenter som inte är förvaltade, visas under **[!UICONTROL Non-Curated Project Components]** och **[!UICONTROL Non-Curated Virtual report suite components]** | Alla icke-förvaltade projektkomponenter OCH icke-förvaltade virtuella rapportsvitkomponenter som den här rollen äger eller som har delats med dem | Virtuellt rapportpaket och projektkomponenter som den här rollen äger eller som har delats med dem är inte förvaltade |
+| **Aktuell virtuell rapportserie** | Alla komponenter i den virtuella rapportsviten som inte är förvaltade | Icke-förvaltade virtuella rapportsvitkomponenter som den här rollen äger eller som har delats med dem | Icke-förvaltade virtuella rapportsvitkomponenter som den här rollen äger eller som har delats med dem |
+| **Kuraterat projekt** | Alla projektkomponenter som inte är kuraterade | Alla projektkomponenter som inte är kuraterade | Ej förvaltade projektkomponenter som den här rollen äger eller som har delats med dem |
+| **Kuraterat projekt i en kuraterad virtuell rapportsserie** | Alla komponenter som inte är förvaltade, visas under **[!UICONTROL Non-Curated Project Components]** och **[!UICONTROL Non-Curated Virtual report suite components]** | Alla icke-förvaltade projektkomponenter OCH icke-förvaltade virtuella rapportsvitkomponenter som den här rollen äger eller som har delats med dem | Virtuellt rapportpaket och projektkomponenter som den här rollen äger eller som har delats med dem är inte förvaltade |
