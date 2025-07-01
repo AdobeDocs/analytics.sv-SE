@@ -4,9 +4,9 @@ audience: end-user
 user-guide-title: Handbok om Analytics-verktyg
 breadcrumb-title: Användarhandbok om verktyg
 user-guide-description: Lär dig hur du använder verktyg i Analytics, inklusive Analysis Workspace, Analytics Dashboards, Report Builder, Legacy Report Builder och Activity Map.
-source-git-commit: 41d067ab852f4eb5c4a1368ade364fdb706bb9d9
+source-git-commit: e478da9ae80e5534fcfd77ced3864d7f31ef748d
 workflow-type: tm+mt
-source-wordcount: '896'
+source-wordcount: '892'
 ht-degree: 8%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 8%
 # Adobe Analytics Tools Guide {#analyze}
 
 + [Handbok om Analytics-verktyg](home.md)
-+ [Versionsinformation för analyser](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html?lang=sv-SE)
++ [Versionsinformation för analyser](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html)
 + Kom igång med Adobe Analytics {#admin-overview}
    + [Analytics - översikt](get-started/analytics-overview.md)
    + [Kom igång (efter roll)](get-started/get-started-by-role.md)
@@ -131,14 +131,14 @@ ht-degree: 8%
          + [Översikt](analysis-workspace/c-panels/c-segment-comparison/segment-comparison.md)
          + [Användningsexempel](analysis-workspace/c-panels/c-segment-comparison/segment-compare-use-cases.md)
          + [Statistiska tester som används](analysis-workspace/c-panels/c-segment-comparison/statistical-test.md)
-   + Kuratera och dela projekt {#curate-share}
+   + Kuratera och dela {#curate-share}
       + [Översikt](analysis-workspace/curate-share/send-schedule-files.md)
       + [Kuratprojekt](analysis-workspace/curate-share/curate.md)
       + [Dela projekt](analysis-workspace/curate-share/share-projects.md)
-      + [Skapa delningsbara länkar](analysis-workspace/curate-share/shareable-links.md)
+      + [Delningsbara länkar](analysis-workspace/curate-share/shareable-links.md)
       + [Skrivskyddade projekt](analysis-workspace/curate-share/view-only-projects.md)
-      + [Hämta projekt](analysis-workspace/curate-share/download-send.md)
-      + [Skicka och schemalägg projekt](analysis-workspace/curate-share/t-schedule-report.md)
+      + [Ladda ned](analysis-workspace/curate-share/download-send.md)
+      + [Skicka och schemalägg](analysis-workspace/curate-share/t-schedule-report.md)
    + Tillskrivning {#attribution}
       + [Attributionsöversikt](analysis-workspace/attribution/overview.md)
       + [Attributmodeller och uppslagsfönster](analysis-workspace/attribution/models.md)
