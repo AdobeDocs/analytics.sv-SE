@@ -5,9 +5,9 @@ keywords: Analysis Workspace;Segment IQ
 feature: Segmentation
 role: User, Admin
 exl-id: 1f5df6fb-1e9f-4b8f-885c-bf9e68d88c89
-source-git-commit: 978bd8642011dd2c8e43564c90303f194689a64e
+source-git-commit: 810e52260443ccc076e07b8d638563d56db9956e
 workflow-type: tm+mt
-source-wordcount: '511'
+source-wordcount: '506'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="workspace_segmentcomparison_button"
 >title="Segmentjämförelse"
->abstract="Jämför snabbt två segment över alla datapunkter för att automatiskt hitta relevanta skillnader."
+>abstract="Jämför snabbt två segment över alla datapunkter för att hitta relevanta skillnader automatiskt."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -28,16 +28,16 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="workspace_segmentcomparison_panel"
 >title="Panelen Segmentjämförelse"
->abstract="Jämför snabbt två segment över alla datapunkter för att automatiskt hitta relevanta skillnader.<br/><br/>**Parametrar &#x200B;**<br/>**Lägg till ett segment**: Det första segment som du vill analysera.<br/>**Jämför med**: Det andra segmentet som du vill jämföra med. Detta fylls automatiskt i med *Alla andra* som är inverterad till ditt första segment. Om du vill kan du ersätta den med ett annat segment.<br/>**Avancerade inställningar**: Möjligheten att utesluta komponenter från analysen i segmentjämförelsen."
+>abstract="Jämför snabbt två segment över alla datapunkter för att hitta relevanta skillnader automatiskt.<br/><br/>**Parametrar **<br/>**Lägg till ett segment**: Det första segment som du vill analysera.<br/>**Jämför med**: Det andra segmentet som du vill jämföra med, som automatiskt fylls i med *Alla andra* (inverterat för det första segmentet). Du kan ersätta *Alla andra* med ett annat segment om du vill.<br/>**Avancerade inställningar**: Möjligheten att utesluta komponenter från analysen i segmentjämförelsen."
 <!-- markdownlint-enable MD034 -->
 
 >[!BEGINSHADEBOX]
 
-_I den här artikeln beskrivs panelen Segmentjämförelse i_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**._<br/>_Det finns ingen motsvarande panel i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._
+_I den här artikeln beskrivs panelen Segmentjämförelse i_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._<br/>_Det finns ingen motsvarande panel i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._
 
 >[!ENDSHADEBOX]
 
-Panelen Segmentjämförelse är en verktygsdel av [Segmentanalys](../../segment-iq.md) som identifierar de mest statistiskt signifikanta skillnaderna mellan ett obegränsat antal segment. Funktionen itererar genom en automatisk analys av alla dimensioner och mätvärden som du har tillgång till. Den identifierar automatiskt de viktigaste egenskaperna hos de målgruppssegment som driver företagets nyckeltal och låter er se hur mycket som överlappar alla segment.
+Panelen Segmentjämförelse visar de mest statistiskt signifikanta skillnaderna mellan ett obegränsat antal segment. Funktionen itererar genom en automatisk analys av alla dimensioner och mätvärden som du har tillgång till. Den identifierar automatiskt de viktigaste egenskaperna hos de målgruppssegment som driver företagets nyckeltal och låter er se hur många segment som överlappar varandra.
 
 
 >[!BEGINSHADEBOX]
@@ -77,16 +77,16 @@ Välj **[!UICONTROL Build]** om du vill skapa panelen.
 
 ### Panelutdata
 
-När Adobe Analytics har analyserat de två önskade segmenten visar utdatapanelerna resultat via flera visualiseringar:
+När Adobe Analytics har analyserat de två önskade segmenten visar utdatapanelerna resultatet genom flera visualiseringar:
 
 ![Jämförelse av panelutdatasegment](assets/segment-comparison-output.png)
 
 | Visualisering | Beskrivning |
 |---|---|
 | **[!UICONTROL Size and overlap]** | Illustrerar med en [Vennn](/help/analyze/analysis-workspace/visualizations/venn.md)-visualisering de jämförande storlekarna för varje markerat segment och hur mycket de överlappar varandra. |
-| **[!UICONTROL Unique visitors for 1st segment]** | En [sammanfattning](/help/analyze/analysis-workspace/visualizations/summary-number-change.md) som visar unika besökare för det första segmentet (i exemplet med enkelsidiga besök) |
+| **[!UICONTROL Unique visitors for 1st segment]** | En [sammanfattningsbild](/help/analyze/analysis-workspace/visualizations/summary-number-change.md) som visar unika besökare för det första segmentet (i exemplet med enkelsidiga besök) |
 | **[!UICONTROL Unique visitors for 2nd segment]** | En [sammanfattningsbild](/help/analyze/analysis-workspace/visualizations/summary-number-change.md) som visar unika besökare för det andra segmentet (i exemplet med förstagångsbesök) |
-| **[!UICONTROL Top metrics agains Segments]** | En [friformstabell](/help/analyze/analysis-workspace/visualizations/freeform-table/freeform-table.md) som visar toppstatistik för de valda segmenten. |
+| **[!UICONTROL Top metrics against Segments]** | En [friformstabell](/help/analyze/analysis-workspace/visualizations/freeform-table/freeform-table.md) som visar toppstatistik för de valda segmenten. |
 | **[!UICONTROL Metric over time by Segment]** | En [Line](/help/analyze/analysis-workspace/visualizations/line.md)-visualisering som visar mätvärden över tid för de valda segmenten. |
 | **[!UICONTROL Top dimension items against Segments]** | En [friformstabell](/help/analyze/analysis-workspace/visualizations/freeform-table/freeform-table.md) som visar de blandade dimensionsobjekten för de valda segmenten. |
 | **[!UICONTROL Dimension items by Segments]** | En [vågrät fältvisualisering](/help/analyze/analysis-workspace/visualizations/horizontal-bar.md) som visar dimensionsobjekten efter segment. |
