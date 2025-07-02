@@ -28,12 +28,12 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="workspace_segmentcomparison_panel"
 >title="Panelen Segmentjämförelse"
->abstract="Jämför snabbt två segment över alla datapunkter för att hitta relevanta skillnader automatiskt.<br/><br/>**Parametrar **<br/>**Lägg till ett segment**: Det första segment som du vill analysera.<br/>**Jämför med**: Det andra segmentet som du vill jämföra med, som automatiskt fylls i med *Alla andra* (inverterat för det första segmentet). Du kan ersätta *Alla andra* med ett annat segment om du vill.<br/>**Avancerade inställningar**: Möjligheten att utesluta komponenter från analysen i segmentjämförelsen."
+>abstract="Jämför snabbt två segment över alla datapunkter för att hitta relevanta skillnader automatiskt.<br/><br/>**Parametrar &#x200B;**<br/>**Lägg till ett segment**: Det första segment som du vill analysera.<br/>**Jämför med**: Det andra segmentet som du vill jämföra med, som automatiskt fylls i med *Alla andra* (inverterat för det första segmentet). Du kan ersätta *Alla andra* med ett annat segment om du vill.<br/>**Avancerade inställningar**: Möjligheten att utesluta komponenter från analysen i segmentjämförelsen."
 <!-- markdownlint-enable MD034 -->
 
 >[!BEGINSHADEBOX]
 
-_I den här artikeln beskrivs panelen Segmentjämförelse i_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._<br/>_Det finns ingen motsvarande panel i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._
+_I den här artikeln beskrivs panelen Segmentjämförelse i_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**._<br/>_Det finns ingen motsvarande panel i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._
 
 >[!ENDSHADEBOX]
 
