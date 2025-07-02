@@ -4,17 +4,17 @@ audience: end-user
 user-guide-title: Handbok om Analytics-verktyg
 breadcrumb-title: Användarhandbok om verktyg
 user-guide-description: Lär dig hur du använder verktyg i Analytics, inklusive Analysis Workspace, Analytics Dashboards, Report Builder, Legacy Report Builder och Activity Map.
-source-git-commit: e478da9ae80e5534fcfd77ced3864d7f31ef748d
+source-git-commit: ff38740116ac6f12033ebdc17cffa3250a30f3f7
 workflow-type: tm+mt
-source-wordcount: '892'
-ht-degree: 8%
+source-wordcount: '870'
+ht-degree: 9%
 
 ---
 
 # Adobe Analytics Tools Guide {#analyze}
 
 + [Handbok om Analytics-verktyg](home.md)
-+ [Versionsinformation för analyser](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html?lang=sv-SE)
++ [Versionsinformation för analyser](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html)
 + Kom igång med Adobe Analytics {#admin-overview}
    + [Analytics - översikt](get-started/analytics-overview.md)
    + [Kom igång (efter roll)](get-started/get-started-by-role.md)
@@ -46,24 +46,24 @@ ht-degree: 8%
       + [Använd mallar](analysis-workspace/templates/use-templates.md)
       + [Skapa mallar](analysis-workspace/templates/create-templates.md)
    + Komponenter {#components}
-      + [Komponenter - översikt](analysis-workspace/components/analysis-workspace-components.md)
-      + [Använda komponenter i Workspace](analysis-workspace/components/use-components-in-workspace.md)
+      + [Översikt](analysis-workspace/components/analysis-workspace-components.md)
+      + [Använda komponenter](analysis-workspace/components/use-components-in-workspace.md)
       + [Lägga till komponentbeskrivningar](analysis-workspace/components/add-component-descriptions.md)
       + Anteckningar {#annotations}
-         + [Översikt över anteckningar](analysis-workspace/components/annotations/overview.md)
+         + [Översikt](analysis-workspace/components/annotations/overview.md)
          + [Skapa anteckningar](analysis-workspace/components/annotations/create-annotations.md)
          + [Hantera anteckningar](analysis-workspace/components/annotations/manage-annotations.md)
          + [Visa anteckningar](analysis-workspace/components/annotations/view-annotations.md)
-         + [Mobilanteckningar](analysis-workspace/components/annotations/mobile-annotations.md)
+         + [Mobil styrkortsanteckning](analysis-workspace/components/annotations/mobile-annotations.md)
       + Mått {#dimensions}
          + [Förhandsvisa dimensioner](analysis-workspace/components/dimensions/view-dimensions.md)
          + [Dela upp dimensioner](analysis-workspace/components/dimensions/t-breakdown-fa.md)
          + [Tidsdelningsdimensioner](analysis-workspace/components/dimensions/time-parting-dimensions.md)
       + [Mätvärden](analysis-workspace/components/apply-create-metrics.md)
       + Segment {#segments}
-         + [Skapa segment](analysis-workspace/components/segments/t-freeform-project-segment.md)
+         + [Översikt](analysis-workspace/components/segments/t-freeform-project-segment.md)
          + [Snabbsegment](analysis-workspace/components/segments/quick-segments.md)
-      + Kalender och datumintervall {#calendar-date-ranges}
+      + Datumintervall {#calendar-date-ranges}
          + [Översikt](analysis-workspace/components/calendar-date-ranges/calendar.md)
          + [Skapa datumintervall](analysis-workspace/components/calendar-date-ranges/create.md)
          + [Hantera dataintervall](analysis-workspace/components/calendar-date-ranges/manage.md)
@@ -141,26 +141,26 @@ ht-degree: 8%
       + [Skicka och schemalägg](analysis-workspace/curate-share/t-schedule-report.md)
    + Tillskrivning {#attribution}
       + [Attributionsöversikt](analysis-workspace/attribution/overview.md)
-      + [Attributmodeller och uppslagsfönster](analysis-workspace/attribution/models.md)
+      + [Modell-, behållare- och uppslagsfönster](analysis-workspace/attribution/models.md)
       + [Algoritmisk attribuering](analysis-workspace/attribution/algorithmic.md)
-      + [Bästa praxis för attribuering](analysis-workspace/attribution/best-practices.md)
+      + [God praxis](analysis-workspace/attribution/best-practices.md)
       + [Vanliga frågor och svar](analysis-workspace/attribution/faq.md)
-   + [Resa-IQ](analysis-workspace/journey-iq.md)
-   + [Segmentanalys](analysis-workspace/segment-iq.md)
+   + [Resehantering](analysis-workspace/journey-iq.md)
+   + [Segmentjämförelse](analysis-workspace/segment-iq.md)
    + Avvikelseidentifiering {#anomaly-detection}
-      + [Översikt över avvikelseidentifiering](analysis-workspace/c-anomaly-detection/anomaly-detection.md)
-      + [Visa avvikelser i Analysis Workspace](analysis-workspace/c-anomaly-detection/view-anomalies.md)
+      + [Översikt](analysis-workspace/c-anomaly-detection/anomaly-detection.md)
+      + [Visa avvikelser](analysis-workspace/c-anomaly-detection/view-anomalies.md)
       + [Inaktivera avvikelseidentifiering](analysis-workspace/c-anomaly-detection/anomaly-detection-turnoff.md)
-      + [Kör bidragsanalys](analysis-workspace/c-anomaly-detection/run-contribution-analysis.md)
-      + [Statistiska tekniker som används för avvikelseidentifiering](analysis-workspace/c-anomaly-detection/statistics-anomaly-detection.md)
+      + [Kör tilläggsanalys](analysis-workspace/c-anomaly-detection/run-contribution-analysis.md)
+      + [Statistisk teknik](analysis-workspace/c-anomaly-detection/statistics-anomaly-detection.md)
    + [Användarinställningar](analysis-workspace/user-preferences.md)
    + Vanliga frågor om Workspace {#workspace-faq}
       + [Frågor och svar](analysis-workspace/workspace-faq/faq.md)
-      + [Optimera Analysis Workspace prestanda](analysis-workspace/workspace-faq/optimizing-performance.md)
-      + [Felmeddelanden](analysis-workspace/workspace-faq/error-messages.md)
-      + [Analysis Workspace begränsningar](analysis-workspace/workspace-faq/aw-limitations.md)
+      + [Optimera prestanda](analysis-workspace/workspace-faq/optimizing-performance.md)
+      + [Fel och felsökning](analysis-workspace/workspace-faq/error-messages.md)
+      + [Begränsningar](analysis-workspace/workspace-faq/aw-limitations.md)
       + [Administrationskrav](analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
-      + [Tillgänglighet i Analysis Workspace](analysis-workspace/workspace-faq/aw-accessibility.md)
+      + [Tillgänglighet](analysis-workspace/workspace-faq/aw-accessibility.md)
 + Report Builder {#report-builder}
    + [Report Builder - översikt](report-builder/rb-overview.md)
    + [Report Builder Setup](report-builder/report-builder-setup.md)

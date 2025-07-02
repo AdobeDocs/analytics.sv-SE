@@ -3,10 +3,10 @@ title: Översikt över mätvärden
 description: Visa kvantiteter för dimensionsobjekt eller data över tid.
 feature: Metrics
 exl-id: 8dda3bc4-ffac-4407-896f-6064727d099c
-source-git-commit: d095628e94a45221815b1d08e35132de09f5ed8f
+source-git-commit: ff38740116ac6f12033ebdc17cffa3250a30f3f7
 workflow-type: tm+mt
-source-wordcount: '208'
-ht-degree: 1%
+source-wordcount: '217'
+ht-degree: 3%
 
 ---
 
@@ -14,13 +14,15 @@ ht-degree: 1%
 
 Med hjälp av mätvärden kan du kvantifiera dimensionsobjekt, t.ex. vilka sidor på webbplatsen som har flest sidvyer. Ni kan också trenda mätvärden över tiden, t.ex. för att se hur många beställningar besökarna gör på er webbplats varje dag. En grundläggande rapport visar rader med strängvärden (dimension) mot en kolumn med numeriska värden (metrisk).
 
-Om du t.ex. kombinerat siddimensionen med Visits-måttet får du en rankad rapport som visar dina mest besökta sidor:
+Om du till exempel kombinerar dimensionen **[!UICONTROL Page]** med måttet **[!UICONTROL Visits]** får du en rankad rapport som visar dina populäraste sidor:
 
-| `Page` | `Visits` |
-| --- | --- |
-| `Home page` | `800` |
-| `Product page` | `500` |
-| `Purchase page` | `100` |
+| Sida | Besök |
+| --- | ---: |
+| Startsida | 800 |
+| Produktsida | 500 |
+| Inköpssida | 100 |
+
+{style="table-layout:fixed"}
 
 Om du inte kan hitta hjälpsidan för ett givet mätresultat är det troligtvis antingen en [anpassad händelse](custom-events.md) eller ett [beräknat mått](../c-calcmetrics/cm-overview.md).
 

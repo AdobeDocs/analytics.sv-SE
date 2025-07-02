@@ -1,12 +1,12 @@
 ---
 title: Visa anteckningar
-description: Visa anteckningar i Workspace.
+description: Visa anteckningar i Analysis Workspace.
 role: User, Admin
 feature: Annotations
 exl-id: 52b179fd-d9a4-4119-a3c6-f6a36f24f8ea
-source-git-commit: d85e6990998e3c153ef969d8dc7f3a4835f683bf
+source-git-commit: ff38740116ac6f12033ebdc17cffa3250a30f3f7
 workflow-type: tm+mt
-source-wordcount: '215'
+source-wordcount: '216'
 ht-degree: 1%
 
 ---
@@ -19,8 +19,8 @@ Anteckningarna visas något annorlunda beroende på var de visas och om de strä
 
 | Visualisering<br/>Typ | Beskrivning |
 | --- | --- |
-| **Rad &#x200B;**<br/>**En dag** | När du väljer ![Anteckna](/help/assets/icons/Annotate.svg) i en radvisualisering visas ett popup-fönster med anteckningsinformationen.<br/>![Anteckning en dag](assets/annotation-single-day.png)<br/>Om du vill redigera anteckningen i [Anteckningsverktyget](create-annotations.md#annotation-builder) väljer du ![Redigera](/help/assets/icons/Edit.svg). Om du vill ta bort anteckningen väljer du ![Ta bort](/help/assets/icons/Delete.svg). |
-| **Rad &#x200B;**<br/>**Datumintervall** | När du väljer ![AnnotateRange](/help/assets/icons/AnnotateRange.svg) visas ett popup-fönster med anteckningsinformationen och en rad längst ned som anger datumintervallet.<br/>![Anteckningsintervall](assets/annotation-range.png)Om du vill redigera anteckningen i [Anteckningsverktyget](create-annotations.md#annotation-builder) väljer du ![Redigera](/help/assets/icons/Edit.svg). Om du vill ta bort anteckningen väljer du ![Ta bort](/help/assets/icons/Delete.svg). |
+| **Rad **<br/>**En dag** | När du väljer ![Anteckna](/help/assets/icons/Annotate.svg) i en radvisualisering visas ett popup-fönster med anteckningsinformationen.<br/>![Anteckning en dag](assets/annotation-single-day.png)<br/>Om du vill redigera anteckningen i [Anteckningsverktyget](create-annotations.md#annotation-builder) väljer du ![Redigera](/help/assets/icons/Edit.svg). Om du vill ta bort anteckningen väljer du ![Ta bort](/help/assets/icons/Delete.svg). |
+| **Rad **<br/>**Datumintervall** | När du väljer ![AnnotateRange](/help/assets/icons/AnnotateRange.svg) visas ett popup-fönster med anteckningsinformationen och en rad längst ned som anger datumintervallet.<br/>![Anteckningsintervall](assets/annotation-range.png)Om du vill redigera anteckningen i [Anteckningsverktyget](create-annotations.md#annotation-builder) väljer du ![Redigera](/help/assets/icons/Edit.svg). Om du vill ta bort anteckningen väljer du ![Ta bort](/help/assets/icons/Delete.svg). |
 | **Frihandstabell** | I en Freeform-tabell kan du komma åt alla anteckningar från anteckningsknappen längst upp till höger i visualiseringen. Välj ![Anteckna](/help/assets/icons/Annotate.svg) om du vill se en (rullningslista) med alla anteckningar.<br/>![Anteckningstabell](assets/annotations-table.png)<br/>För varje anteckning kan du välja ![Redigera](/help/assets/icons/Edit.svg) om du vill redigera anteckningen i [Anteckningsverktyget](create-annotations.md#annotation-builder) och ![Ta bort](/help/assets/icons/Delete.svg) om du vill ta bort anteckningen. |
 
 {style="table-layout:auto"}

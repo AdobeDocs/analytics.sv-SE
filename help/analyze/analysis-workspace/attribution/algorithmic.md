@@ -1,12 +1,12 @@
 ---
 title: Algoritmisk attribuering
-description: Information om algoritmisk attribueringsmodell.
+description: Förstå detaljerna om den algoritmiska attribueringsmodellen.
 feature: Attribution
 role: User, Admin
 exl-id: dd2b2a5b-9c36-4534-999f-f96604f29eab
-source-git-commit: 8f7c6a0d1477b599b05aeb7b74c4ee96531d294d
+source-git-commit: d37fa0aff0b1bbe196b943bc26e86b1e79936184
 workflow-type: tm+mt
-source-wordcount: '276'
+source-wordcount: '278'
 ht-degree: 0%
 
 ---

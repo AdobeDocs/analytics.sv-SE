@@ -4,16 +4,16 @@ title: Visa avvikelser i Analysis Workspace
 feature: Anomaly Detection
 role: User, Admin
 exl-id: 32edc7f4-c9b9-472a-b328-246ea5b54d07
-source-git-commit: 8f7c6a0d1477b599b05aeb7b74c4ee96531d294d
+source-git-commit: d37fa0aff0b1bbe196b943bc26e86b1e79936184
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: '440'
 ht-degree: 0%
 
 ---
 
-# Visa avvikelser i Analysis Workspace
+# Visa avvikelser
 
-Du kan visa avvikelser i en tabell eller i ett linjediagram.
+Du kan visa avvikelser i Analysis Workspace i en tabell eller i ett linjediagram.
 
 ## Visa avvikelser i en tabell {#section_869A87B92B574A38B017A980ED8A29C5}
 
@@ -30,6 +30,7 @@ Du kan visa avvikelser i en friformstabell i en tidsserie.
    Den **färgade lodräta linjen** i varje rad ➋ anger det förväntade värdet. Det **färgade skuggade området** i varje rad ➊ anger det faktiska värdet. Hur raden (förväntat värde) jämförs med det skuggade området (faktiskt värde) avgör om det finns någon avvikelse. (En observation anses vara onormal baserat på de avancerade statistiska tekniker som beskrivs i [Statistiska tekniker som används vid avvikelseidentifiering](/help/analyze/analysis-workspace/c-anomaly-detection/statistics-anomaly-detection.md).)
 
 1. Välj ◥ i det övre högra hörnet av en rad om du vill visa information om avvikelsen. Detta visar i vilken utsträckning (i procent) det faktiska värdet avviker antingen över eller under det förväntade värdet.
+1. Välj [Öppna bidragsanalys](run-contribution-analysis.md) för att starta bidragsanalysen.
 
 ## Visa avvikelser i ett linjediagram
 

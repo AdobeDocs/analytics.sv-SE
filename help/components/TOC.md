@@ -4,9 +4,9 @@ audience: end-user
 user-guide-title: Komponenthandbok för Analytics
 breadcrumb-title: Användarhandbok om komponenter
 user-guide-description: Hantera data med komponenter som segment, beräknade värden, virtuella rapportsviter, marknadsföringskanaler och klassificeringar. Lär dig mer om Analytics över flera enheter.
-source-git-commit: d85e6990998e3c153ef969d8dc7f3a4835f683bf
+source-git-commit: ff38740116ac6f12033ebdc17cffa3250a30f3f7
 workflow-type: tm+mt
-source-wordcount: '773'
+source-wordcount: '767'
 ht-degree: 7%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 7%
 # [!DNL Adobe Analytics] Komponentguide {#components}
 
 + [Komponenthandbok för Analytics](home.md)
-+ [Versionsinformation för analyser](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html?lang=sv-SE)
++ [Versionsinformation för analyser](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html)
 + Mått {#dimensions}
    + [Översikt över dimensioner](dimensions/overview.md)
    + [Dimension-kompatibilitet](dimensions/compatibility.md)
@@ -179,7 +179,7 @@ ht-degree: 7%
    + [Om segment](segmentation/seg-overview.md)
    + [Om segmentbehållare](segmentation/seg-containers.md)
    + [Segmenteringsfunktioner i Analysis Workspace](segmentation/segmentation-in-analysis-workspace.md)
-   + Arbetsflöde för segmentering {#segmentation-workflow}
+   + Arbetsflöde {#segmentation-workflow}
       + [Översikt](segmentation/segmentation-workflow/seg-workflow.md)
       + [Planera segment](segmentation/segmentation-workflow/seg-plan.md)
       + [Skapa signaturer](segmentation/segmentation-workflow/seg-create.md)
@@ -196,7 +196,7 @@ ht-degree: 7%
       + [Hantera segment](segmentation/segmentation-workflow/seg-manage.md)
       + [Publicera segment i Experience Cloud](segmentation/segmentation-workflow/seg-publish.md)
       + [Använd segment](segmentation/segmentation-workflow/t-seg-apply.md)
-   + Segmentreferens {#segment-reference}
+   + Referens {#segment-reference}
       + [Operatorer](segmentation/seg-reference/seg-operators.md)
       + [Data Warehouse segmentkompatibilitet](segmentation/seg-reference/seg-compatibility.md)
       + [Segmenträttigheter efter roll](segmentation/seg-reference/seg-rights.md)
@@ -206,7 +206,7 @@ ht-degree: 7%
 + Beräknade mått {#calculated-metrics}
    + [Översikt](c-calcmetrics/cm-overview.md)
    + [Instruktionsfilmer](c-calcmetrics/cm-videos.md)
-   + Arbetsflöde för beräknade mätvärden {#calcmetric-workflow}
+   + Arbetsflöde {#calcmetric-workflow}
       + [Skapa beräknade mått](c-calcmetrics/c-workflow/cm-workflow/cm-workflow.md)
       + [Hitta mätvärden](c-calcmetrics/c-workflow/cm-workflow/cm-finding.md)
       + [Bygg beräknade värden](c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-build-metrics.md)
@@ -225,7 +225,7 @@ ht-degree: 7%
       + [Dela beräknade värden](c-calcmetrics/c-workflow/cm-workflow/cm-sharing.md)
       + [Kopiera beräknade värden](c-calcmetrics/c-workflow/cm-workflow/cm-copy.md)
       + [Hantera beräknade värden](c-calcmetrics/c-workflow/cm-workflow/cm-manager.md)
-   + Metrisk referens {#calcmetrics-reference}
+   + Referens {#calcmetrics-reference}
       + [Grundfunktioner](c-calcmetrics/cm-reference/cm-functions.md)
       + [Avancerade funktioner](c-calcmetrics/cm-reference/cm-adv-functions.md)
       + [Mätkompatibilitet](c-calcmetrics/cm-compatibility.md)
@@ -240,7 +240,7 @@ ht-degree: 7%
    + [A4T-överväganden](vrs/vrs-a4t.md)
    + [Vanliga frågor om virtuella rapportsviter](vrs/vrs-faq.md)
    + [Virtuella rapportsviter och taggningsfrågor för globala/flera programsviter](vrs/vrs-considerations.md)
-   + Arbetsflöde för virtuella rapportsviter {#vrs-workflow}
+   + Arbetsflöde {#vrs-workflow}
       + [Arbetsflöde för virtuella rapportsviter](vrs/c-workflow-vrs/vrs-workflow.md)
       + [Skapa virtuella rapportsviter](vrs/c-workflow-vrs/vrs-create.md)
       + [Hantera virtuella rapportsviter](vrs/c-workflow-vrs/vrs-manage.md)
@@ -256,8 +256,8 @@ ht-degree: 7%
    + [Vanliga frågor om enhetsövergripande analys](cda/faq.md)
 + Aviseringar {#alerts}
    + [Översikt](c-alerts/intellligent-alerts.md)
-   + [Skapa](c-alerts/alert-builder.md)
-   + [Hantera](c-alerts/alert-manager.md)
+   + [Skapa aviseringar](c-alerts/alert-builder.md)
+   + [Hantera aviseringar](c-alerts/alert-manager.md)
    + [Användningsexempel](c-alerts/alerts-use-cases.md)
 + Klassificeringar {#classifications}
    + [Klassificeringsöversikt](classifications/classifications-overview.md)

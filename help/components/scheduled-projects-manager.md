@@ -1,11 +1,11 @@
 ---
-description: Se och hantera schemalagda rapporter i hela organisationen.
-title: Schemalagd projektledare
+description: Lär dig hantera schemalagda projekt.
+title: Schemalagda projekt
 feature: Admin Tools
 exl-id: 8bc8d983-f680-48fa-8483-694c87a9ae4c
-source-git-commit: d4d0eeac4f1f29e4c68e80b6fa0fe987a1fb32b9
+source-git-commit: ff38740116ac6f12033ebdc17cffa3250a30f3f7
 workflow-type: tm+mt
-source-wordcount: '734'
+source-wordcount: '731'
 ht-degree: 0%
 
 ---

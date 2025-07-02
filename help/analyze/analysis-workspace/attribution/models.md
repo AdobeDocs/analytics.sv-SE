@@ -1,12 +1,12 @@
 ---
-title: Attributmodeller och uppslagsfönster
+title: Attributionsmodeller, behållare och Lookback-fönster
 description: Hur olika typer av attribuering delar upp kredit mellan dimensionsposter.
 feature: Attribution
 role: User, Admin
 exl-id: f36de41e-1c53-477d-b326-528fbd4ec9ec
-source-git-commit: 8f7c6a0d1477b599b05aeb7b74c4ee96531d294d
+source-git-commit: d37fa0aff0b1bbe196b943bc26e86b1e79936184
 workflow-type: tm+mt
-source-wordcount: '94'
+source-wordcount: '95'
 ht-degree: 0%
 
 ---

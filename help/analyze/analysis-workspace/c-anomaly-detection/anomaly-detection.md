@@ -1,12 +1,12 @@
 ---
-description: Ni kan visa och analysera dataavvikelser i sitt sammanhang, inom Analysis Workspace.
+description: Förstå hur ni kan visa och analysera dataavvikelser i sitt sammanhang, inom Analysis Workspace.
 title: Översikt över avvikelseidentifiering
 feature: Anomaly Detection
 role: User, Admin
 exl-id: b1625206-c774-40ef-9d92-25ee8ff1478d
-source-git-commit: 8f7c6a0d1477b599b05aeb7b74c4ee96531d294d
+source-git-commit: d37fa0aff0b1bbe196b943bc26e86b1e79936184
 workflow-type: tm+mt
-source-wordcount: '1282'
+source-wordcount: '1285'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,7 @@ Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysidentifieri
 >
 >Adobe Analytics Select- och Adobe Analytics Foundation-kunder har endast åtkomst till *daglig granularitet* för avvikelseidentifiering i Workspace. Mer information finns i [Berättiganden för avvikelseidentifiering och bidragsanalys](#anomaly-detection-and-contribution-analysis-entitlements).
 
-## Avvikelseidentifiering
+## Analysidentifiering
 
 Analysidentifiering är en statistisk metod för att fastställa hur ett givet mätresultat har ändrats i förhållande till tidigare data.
 
@@ -41,7 +41,7 @@ Exempel på avvikelser du kan undersöka är:
 * Inslag i videobufferthändelser
 * Taggar i låga videobithastigheter
 
-Både avvikelseidentifiering och [bidragsanalys](https://experienceleague.adobe.com/sv/docs/analytics/analyze/analysis-workspace/anomaly-detection/anomaly-detection) är centrala arbetsflöden i Analysis Workspace. Du kan köra Contribute Analysis mot eventuella avvikelser per dag och bädda in resultatet i ditt Analysis Workspace-projekt.
+Både avvikelseidentifiering och [bidragsanalys](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/anomaly-detection/anomaly-detection) är centrala arbetsflöden i Analysis Workspace. Du kan köra Contribute Analysis mot eventuella avvikelser per dag och bädda in resultatet i ditt Analysis Workspace-projekt.
 
 Analysis Workspace avvikelseavkänningsalgoritm innehåller
 
@@ -90,17 +90,17 @@ Alla kunder med ett Contribute Analysis-berättigande kan köra en fullständig 
 
 Antalet körningar per företag begränsas av månatliga tokens som beviljas baserat på den Adobe Analytics-produkt som ditt företag har köpt. Antalet körningar per företag inkluderar möjligheten att begränsa åtkomst till bidragsanalys för att undvika tokenmissbruk.
 
-## Frågor och svar {#section_11D0431AD2014B96AB9561CA66A367CE}
+## Frågor och svar
 
 | Fråga | Svar |
 | --- | --- |
 | Varför introducerade Adobe tokens? | Contribute Analysis har varit en av de viktigaste funktionerna i Adobe Analytics. Med ett litet antal fullständiga körningar per månad (i stället för bara tre dimensioner för vissa Analytics-produkter) kan ni se vad en obegränsad fullständig bidragsanalys kan göra för er. |
 | Hur fungerar tokens i bidragsanalys? Kostar det en token att läsa in ett projekt med en befintlig bidragsanalys, eller bara när ett helt nytt projekt körs? | Varje inloggningsföretag (inte varje användare) får ett visst antal tokens per månad, vilket gör att du kan köra en&quot;fullständig&quot; bidragsanalys i Analysis Workspace.  Varje gång du genererar en ny bidragsanalys betalar du en token. Att läsa in projekt med bidragsanalyser som körs i förväg kostar ingen token. |
 | Vad gör jag om mitt företag inte är det och vill köra ytterligare bidragsanalyser? | Du kan uppgradera till en annan Adobe Analytics-produkt, till exempel från Standard (2 tokens/månad) till Ultimate (20 tokens/månad). Du kan inte köpa fler tokens. Du måste uppgradera inom det befintliga paketeringsramverket. |
-| Hur begränsar jag åtkomsten till bidragsanalys? | Som standard har bara administratörer tillgång till att köra Contribute Analyses. Administratörer kan dock ge andra användare åtkomst genom att skapa en behörighetsgrupp i [Adobe Admin Console](https://experienceleague.adobe.com/sv/docs/analytics/admin/admin-console/home) . Ge tillstånd att använda Contribute Analysis endast till användare som har en legitim anledning att använda den och som är betrodda att inte missbruka sin åtkomst. Behörigheten anropas [!UICONTROL Contribution Analysis] under [!UICONTROL Report Suite Tools]. [Läs mer](https://experienceleague.adobe.com/sv/docs/analytics/admin/admin-console/permissions/report-suite-tools) |
+| Hur begränsar jag åtkomsten till bidragsanalys? | Som standard har bara administratörer tillgång till att köra Contribute Analyses. Administratörer kan dock ge andra användare åtkomst genom att skapa en behörighetsgrupp i [Adobe Admin Console](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-console/home) . Ge tillstånd att använda Contribute Analysis endast till användare som har en legitim anledning att använda den och som är betrodda att inte missbruka sin åtkomst. Behörigheten anropas [!UICONTROL Contribution Analysis] under [!UICONTROL Report Suite Tools]. [Läs mer](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-console/permissions/report-suite-tools) |
 | Hur vet jag hur många tokens mitt företag har rätt till per månad och hur många tokens mitt företag har använt under den aktuella månaden? | Gå till [!UICONTROL Admin] > [!UICONTROL All admin] >[!UICONTROL Company settings Home] >[!UICONTROL View Feature Access Levels]. Titta under<ul><li>Bidragsanalys: Antal månatliga användningstoken</li><li>Bidragsanalys: Antal användningstoken som använts den här månaden</li></ul> |
 
-## Anomaldetekterings- och bidragsanalysrättigheter {#section_9278D58F21A840AA9B1ED1BD07A1EF0A}
+## Anomaldetekterings- och bidragsanalysrättigheter
 
 Nedan finns en lista med detaljerade berättiganden för avvikelseidentifiering och bidragsanalys i Analysis Workspace.
 
@@ -134,7 +134,7 @@ Nedan finns en lista med detaljerade berättiganden för avvikelseidentifiering 
    <td colname="col3"> <p>20 tokens per månad </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>+Predictive Workbench </p> </td> 
+   <td colname="col1"> <p>Predictive Workbench-tillägg </p> </td> 
    <td colname="col2"> <p>Ja </p> </td> 
    <td colname="col3"> <p>Obegränsat antal token </p> </td> 
   </tr> 

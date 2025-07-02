@@ -1,12 +1,12 @@
 ---
-title: Attributionsöversikt
-description: Konceptet för att attribuera kredit för en lyckad händelse till flera dimensionsobjekt.
+title: Attribution Overview
+description: Läs mer om konceptet att attribuera krediter för en lyckad händelse till flera dimensionsobjekt.
 feature: Attribution
 role: User, Admin
 exl-id: 47a3523b-d9eb-4272-84b8-090b921cba13
-source-git-commit: 8f7c6a0d1477b599b05aeb7b74c4ee96531d294d
+source-git-commit: d37fa0aff0b1bbe196b943bc26e86b1e79936184
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '489'
 ht-degree: 28%
 
 ---
@@ -81,4 +81,4 @@ Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Lägga till jämf
 
 ## Adobe Analytics-verktyg som inte stöder attribuering
 
-Verktyg som inte har stöd för API:t för Analytics 2.0, som Report Builder, saknar stöd för Attribution.
+Verktyg som inte stöder API:t för Analytics 2.0, som [Äldre Report Builder](/help/analyze/legacy-report-builder/home.md), saknar stöd för Attribution.

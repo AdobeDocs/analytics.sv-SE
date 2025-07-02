@@ -1,35 +1,32 @@
 ---
-description: Använd exempel för att skapa och hantera aviseringar.
-title: Varningar - användningsfall
+description: Granska vissa användningsexempel för att skapa och hantera aviseringar.
+title: Användningsexempel för aviseringar
 feature: Alerts
 exl-id: 81c47b62-a57e-4ee4-8043-3e3290e44269
-source-git-commit: 815e50e30fa6a0bce1bf78f33843070f96f52de8
+source-git-commit: 3d15bd941cb8eaf20b8ae9f1ffa1dbfd403b2bfa
 workflow-type: tm+mt
-source-wordcount: '66'
+source-wordcount: '110'
 ht-degree: 0%
 
 ---
 
-# Varningar - användningsfall
+# Användningsfall för avisering
 
-Du kan skapa aviseringar enligt beskrivningen i [Skapa aviseringar](/help/components/c-alerts/alert-builder.md).
+Du kan skapa aviseringar enligt beskrivningen i [Skapa aviseringar](alert-builder.md).
 
 I följande avsnitt visas exempel på användningsområden som du kan använda när du skapar varningar.
 
-## Skapa en enkel avisering filtrerad av två segment {#section_2E96FFFA93D44F7D8DBCEC97203204AA}
+## Filtrera aviseringar
 
-<!-- 
+Du kan skapa enkla varningar med hjälp av segment. Du kan till exempel definiera en avisering om antalet sessioner för personer som besöker hemsidan via en mobilappssession.
 
-Update screenshots for better readability.
 
- -->
-
-![](assets/alerts_example1.png)
+![](assets/alerts-example1.png)
 
 
 
-## Konsolidera (hög) aviseringar i stället för att skapa flera aviseringar {#section_B27B0856BA104B9FB6D0BBB317633F18}
+## Stapla aviseringar
 
-Med staplingsmeddelanden kan du vara säker på att varningar kombineras och du inte får ett antal separata varningar.
+Du kan konsolidera (stapla) aviseringar i stället för att skapa flera aviseringar. Med staplingsmeddelanden kan du vara säker på att varningar kombineras och du inte får ett antal separata varningar. I exemplet nedan skickas en avisering när någon av måtttrösklarna aktiveras.
 
-![](assets/alerts_example2.png)
+![](assets/alerts-example2.png)

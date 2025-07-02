@@ -1,12 +1,12 @@
 ---
-description: Lär dig lägga till komponenter i ett projekt i Analysis Workspace
+description: Lär dig använda komponenter i ett projekt i Analysis Workspace
 title: Använda komponenter i Analysis Workspace
 feature: Workspace Basics
 role: User, Admin
 exl-id: fb56e794-67e3-4f85-960e-b90684300fa0
-source-git-commit: 74ef4e73b6ed1e2a4ad498e2314af704acb6d8cb
+source-git-commit: 24dd47e995523aedba1385ee8882af5e11c7b128
 workflow-type: tm+mt
-source-wordcount: '945'
+source-wordcount: '950'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Mer information om vilka typer av komponenter du kan lägga till finns i [kompon
 1. Bläddra till eller sök efter komponenten som du vill lägga till och dra den sedan till en panel eller visualisering i projektet.
 
 1. Du kan också dra en komponent till segmentets släppzon i ett panelhuvud. Den här dra-och-släpp-funktionen definierar komponenten som ett segment och tillämpar segmentet på allt innehåll på panelen.
-Mer information om hur du kan använda segmentsläppzonen på en panel för att segmentera panelen finns i [Släppzon](/help/analyze/analysis-workspace/c-panels/panels.md#drop-zone) i [Panelöversikt](/help/analyze/analysis-workspace/c-panels/panels.md).
+Mer information om hur du kan använda segmentsläppzonen på en panel för att segmentera panelen finns i [släppzonen](/help/analyze/analysis-workspace/c-panels/panels.md#drop-zone) i [Panelöversikt](/help/analyze/analysis-workspace/c-panels/panels.md).
 
 1. Mer detaljerad information finns i följande avsnitt:
 
@@ -97,7 +97,7 @@ Du kan använda segment i Analysis Workspace på något av följande sätt:
 
 * Lägga till segment i en panel
 När du lägger till segment på en panel används segmenten på allt innehåll på panelen.
-Mer information om hur du kan använda segmentsläppzonen på en panel för att segmentera panelen finns i [Släppzon](/help/analyze/analysis-workspace/c-panels/panels.md#drop-zone) i [Panelöversikt](/help/analyze/analysis-workspace/c-panels/panels.md).
+Mer information om hur du kan använda segmentsläppzonen på en panel för att segmentera panelen finns i [släppzonen](/help/analyze/analysis-workspace/c-panels/panels.md#drop-zone) i [Panelöversikt](/help/analyze/analysis-workspace/c-panels/panels.md).
 
 * Lägga till segment i en visualisering
 När du lägger till segment i en kolumn i en frihandstabell används segmenten på allt innehåll i tabellkolumnen. Du kan också lägga till segment som en del av en utfallsvisualisering.
@@ -108,13 +108,13 @@ När du definierar komponenter som [beräknade mätvärden](/help/components/c-c
 
 ### Lägga till datumintervall i ett projekt
 
-[Datumintervall](/help/analyze/analysis-workspace/components/calendar-date-ranges/calendar.md) bestämmer tidsramen för rapportering i Analysis Workspace, och kan tillämpas på en eller flera paneler i ett projekt och även på vissa visualiseringar (till exempel frihandstabellen).
+[Datumintervall](/help/analyze/analysis-workspace/components/calendar-date-ranges/calendar.md) bestämmer tidsramen för rapportering i Analysis Workspace. Och ett dataintervall kan tillämpas på paneler i ett projekt och även på vissa visualiseringar (som Frihand-tabellen).
 
 Varje panel innehåller som standard ett datumintervall. Det finns flera sätt att uppdatera ett datumintervall för en panel. Ett sätt att uppdatera ett datumintervall för en panel i Analysis Workspace är att dra en datumintervallkomponent från den vänstra panelen:
 
 1. Du kan också lägga till ett datumintervall i ditt projekt i Analysis Workspace, enligt beskrivningen i [Lägg till komponenter i ett projekt](#add-components-to-a-project).
 
-1. Dra och släpp ett datumintervall från den vänstra panelen till:
+1. Dra och släpp ett datumintervall från den vänstra panelen på:
 
    * Det aktuella datumintervallet för att ändra datumintervallet för panelen.
 
@@ -126,7 +126,7 @@ Mer information om hur du använder och hanterar datumintervall i Analysis Works
 
 ## Komponentinformation
 
-Du kan hovra över valfri komponent om du vill visa ![mer information](/help/assets/icons/InfoOutline.svg). När det här alternativet är markerat visas ett popup-fönster med ytterligare information om komponenten.
+Du kan hovra över valfri komponent om du vill visa ![mer information](/help/assets/icons/InfoOutline.svg). När du väljer ![InfoOutline](/help/assets/icons/InfoOutline.svg) visas ett popup-fönster med ytterligare information om komponenten.
 
 ![Komponentinformation](assets/component-info.png)
 

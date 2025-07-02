@@ -1,9 +1,10 @@
 ---
 title: Hantera datumintervall
-description: Dela, byta namn på eller ta bort datumintervall i Analysis Workspace.
+description: Lär dig hantera datumintervall i Analysis Workspace.
 feature: Date Ranges
 role: User
-source-git-commit: e937b63c9409d75875e3d0c8b46a89024c093ebe
+exl-id: 48cda13f-ec4d-43fa-be24-51e2ab6044dd
+source-git-commit: ff38740116ac6f12033ebdc17cffa3250a30f3f7
 workflow-type: tm+mt
 source-wordcount: '558'
 ht-degree: 0%

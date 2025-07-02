@@ -5,32 +5,32 @@ keywords: Segmentanalys
 feature: Segmentation
 role: User, Admin
 exl-id: d7c02e5c-5313-4e12-86cb-d483644ccbc7
-source-git-commit: 978bd8642011dd2c8e43564c90303f194689a64e
+source-git-commit: 24dd47e995523aedba1385ee8882af5e11c7b128
 workflow-type: tm+mt
-source-wordcount: '851'
+source-wordcount: '850'
 ht-degree: 0%
 
 ---
 
 # Användningsexempel för segmentjämförelse
 
-Panelen för segmentjämförelse är en vanlig funktion i Analysis Workspace. Kunderna hittar ofta nya sätt att få insikter med den. Nedan följer ett flertal exempel på lyckad användning.
+Panelen för segmentjämförelse används ofta i Analysis Workspace. Kunderna hittar ofta nya sätt att få insikter med den. Nedan följer ett flertal exempel på lyckad användning.
 
 ## Användningsfall 1: jämför mobil- och datorimplementeringar
 
-> *&quot;Vi jämförde träffar från en plats till en annan och hittade snabbt ett antal inkonsekvenser i taggningen. På det här sättet undviker vi dataproblem före produktlanseringen.&quot;*
+> *&quot;Du jämförde träffar från en plats till en annan och hittade snabbt ett antal inkonsekvenser i taggningen. På så sätt undviker du dataproblem innan produkten släpptes.&quot;*
 
-En produktchef som ansvarar för en mobilwebbplats och en stationär webbplats har till uppgift att se till att taggarna är desamma på både mobiler och datorer. För att vara säker på att han inte hade missat något viktigt använde han segmentjämförelsepanelen för att jämföra träffar från mobilsajten till träffar från sajten. Han märkte att det inte fanns några utcheckningshändelser på mobilwebbplatsen och fick rätt taggar innan mobilsajten släpptes. Det ledde till att produktchefen undvek en datakatris eftersom mobilsajten inte hade registrerat några konverteringar.
+Du ansvarar för en mobilwebbplats och en stationär webbplats och ser till att taggarna är desamma på både mobiler och datorer. För att vara säker på att du inte missar något viktigt kan du använda panelen för segmentjämförelse för att jämföra träffar från mobilsajten till träffar som kommer från sajten. Du märker att det inte finns några utcheckningshändelser på mobilwebbplatsen och att du får rätt taggar på plats innan den mobila webbplatsen släpps. Det innebär att du kan förhindra ett datahaveri på grund av att mobilwebbplatsen inte spelar in några konverteringar.
 
 | Segment 1 | Segment 2 |
 |--- |--- |
 | Träffbehållare där mobilenhetstypen är en mobil telefon eller surfplatta | Alla andra |
 
-## Exempel 2: jämför kunder som använder en viss funktion med dem som inte gör det
+## Exempel 2: jämför kunder som använder en viss funktion med kunder som inte gör det
 
-> *&quot;Vi hittade att kunder som använde vår produktjämförelsefunktion var 10 % mer benägna att konvertera. Vi flyttade det högst upp på sidan och ökade beställningarna med 4 %!&quot;*
+> *&quot;Det var 10 % mer sannolikt att kunder som använde funktionen för produktjämförelse konverterades. Du flyttade produktjämförelsen högst upp på sidan och ökade beställningarna med 4 %!&quot;*
 
-Ett webboptimeringsteam inom detaljhandeln ville förstå de användare som interagerade med en produktjämförelsefunktion som de nyligen släppt. De använde panelen för segmentjämförelse för att jämföra användare som använde produktjämförelsen med alla andra på webbplatsen. De identifierade snabbt flera viktiga skillnader, bland annat det faktum att dessa användare hade 10 % större sannolikhet att köpa en produkt. Webbplatsoptimeringsteamet bestämde sig för att testa produktjämförelsefunktionen tydligare överst på sidan.
+Ett webboptimeringsteam inom detaljhandeln vill bättre förstå de användare som interagerar med en produktjämförelsefunktion som de nyligen släppt. De använder segmentjämförelsepanelen för att jämföra användare som använder produktjämförelsefunktionen med alla andra på webbplatsen. De identifierar snabbt flera viktiga skillnader, bland annat det faktum att det är 10 % mer sannolikt att dessa användare köper en produkt. Webboptimeringsteamet bestämmer sig för att testa produktjämförelsefunktionen mer framträdande överst på sidan.
 
 | Segment 1 | Segment 2 |
 |--- |--- |
@@ -38,9 +38,9 @@ Ett webboptimeringsteam inom detaljhandeln ville förstå de användare som inte
 
 ## Använd fall 3: jämför besökare på nyhetssajten med besökare på andra sajter
 
-> *&quot;Vi upptäckte att det var dubbelt så troligt att besökare i vår nyhetssektion tittade på videoannonser, så vi lade till fler videoalternativ i den delen. Vi fick en 7-procentig ökning av antalet visade videoannonser!&quot;*
+> *&quot;Du upptäckte att besökare i nyhetssektionen hade dubbelt så stor chans att titta på videoannonser, så du har lagt till fler videoalternativ i det avsnittet. Du fick en 7-procentig ökning av antalet visade videoannonser!&quot;*
 
-Ett stort medieförlag tittade på olika sätt att förbättra innehållsengagemanget för målgrupperna i sin nyhetssektion. De skapade ett segment med besökare som hade besökt News site section för att bättre förstå nyhetspubliken. De märkte omedelbart att det var dubbelt så troligt att de här användarna tittade på videobrev än besökare på andra webbplatsavsnitt. Videoteamet har sammanställt ett rekommenderat videoavsnitt på nyhetssidan och uppnått en 7-procentig ökning av antalet visade videoannonser.
+Ett stort mediepubliceringsföretag undersöker olika sätt att förbättra innehållsengagemanget för målgrupperna i sin nyhetssektion. De skapar ett segment med besökare som besöker News site section för att bättre förstå nyhetspubliken. De märker omedelbart att det är dubbelt så troligt att de här användarna ser videoannonser som besökare på andra webbplatsavsnitt. Videoteamet har sammanställt ett rekommenderat videoavsnitt på nyhetssidan och når en 7-procentig ökning av antalet visade videoannonser.
 
 | Segment 1 | Segment 2 |
 |--- |--- |
@@ -48,9 +48,9 @@ Ett stort medieförlag tittade på olika sätt att förbättra innehållsengagem
 
 ## Använd fall 4: jämför besökare från betald sökning med alla andra
 
-> *&quot;Besökare som kom till vår webbplats från sökmotorer var tre gånger mer benägna att sälja mer än alla andra. Vi ökade våra utgifter för specifika nyckelord som ett resultat och fick en 56-procentig ökning av antalet merförsäljning.&quot;*
+> *&quot;Besökare som kom till din webbplats från sökmotorer var tre gånger mer benägna att sälja mer än alla andra. Som ett resultat av detta ökade du din investering i specifika nyckelord och fick en 56-procentig ökning av antalet merförsäljning.&quot;*
 
-Ett stort B2B-företag ville förstå vilken typ av trafik som betalsökningsnyckelord tog med till deras webbplats. Betalda sökningar hade inte lett till så många konverteringar direkt, och marknadsföringschefen ansåg att budgeten för den hade minskat. Marknadsföringsteamet skapade ett segment med besökare som kom till webbplatsen via betalsökningar och jämförde dem med alla andra besökare med segmentjämförelsepanelen. De upptäckte att även om dessa besökare inte hade så stor chans att konvertera direkt, var sannolikheten att sälja in en tjänst som köpts tidigare tre gånger större. Marknadsföringsteamet fokuserade sin budget bara på merförsäljningsrelaterade nyckelord och fick en 56-procentig ökning av antalet servicemerförsäljning.
+Ett stort B2B-tjänsteföretag vill förstå vilken typ av trafik som betalsökningsnyckelord tar med till deras webbplats. Betalsökning har inte lett till många direkta konverteringar, och marknadsföringschefen anser att budgeten för den har minskat. Marknadsföringsteamet skapar ett segment med besökare som kommer till webbplatsen via betalsökningar och jämför det segmentet med alla andra besökare via segmentjämförelsepanelen. De upptäcker att även om dessa besökare inte är lika benägna att konvertera direkt, är sannolikheten för att de ska sälja in en tidigare köpt tjänst tre gånger större. Marknadsföringsteamet fokuserar sin budget på enbart merförsäljningsrelaterade nyckelord och ser en 56-procentig ökning av antalet servicemerförsäljning.
 
 | Segment 1 | Segment 2 |
 |--- |--- |
@@ -58,9 +58,9 @@ Ett stort B2B-företag ville förstå vilken typ av trafik som betalsökningsnyc
 
 ## Använd fall 5: jämför Fitbit-köpare med alla andra
 
-> *&quot;Det var sex gånger större sannolikhet att personer som köper Fitbit skulle få ett meddelande om att de inte är i lager än alla andra, så vi beställde snabbt fler Fitbit och undviker att förlora i lager!&quot;*
+> *&quot;Du upptäckte att det var sex gånger mer sannolikt att personer som köpte Fitbit skulle få ett meddelande om att de inte fanns i lager än alla andra. Du beställde snabbt fler Fitbit och kunde inte få slut på lager!*
 
-**Scenario:** En stor onlinebutik var intresserad av hur en av de hetaste semesterprodukterna - Fitbit - sålde och vad som gjorde Fitbit-köpare unika bland andra kunder. Marknadsföringsteamet kunde bara högerklicka på &quot;Fitbit&quot;-posten i sin produktrapport och snabbt köra en segmentanalys. Det de fann var att användare som köpte Fitbit var 6 gånger mer benägna att få ett &quot;out of stock&quot;-meddelande än någon annan kund. Efter ytterligare analyser kunde marknadsföringsteamet dirigera dessa besökare till deras tegelhus medan de väntade på sin inköpsavdelning för att beställa fler Fitbit till leverans. Det ledde till att handlaren undvek mer&quot;obefintliga&quot; meddelanden och kunde tillgodose mer av efterfrågan på semester.
+**Scenario:** En stor onlinebutik är intresserad av hur en av de hetaste semesterprodukterna - Fitbit - säljer och vad som gör Fitbit-köpare unika bland andra kunder. Marknadsföringsteamet kan välja Fitbit-radartikel i sin produktrapport och snabbt köra en segmentjämförelseanalys på snabbmenyn. Det de upptäcker är att användare som köper Fitbit 6 gånger är mer benägna att få ett meddelande om att de inte är i lager än någon annan kund. Efter ytterligare analyser kan marknadsföringsteamet dirigera dessa besökare till sina tegelhus och murbruk medan de väntar på sin inköpsavdelning för att beställa fler Fitbit till leverans. Det innebär att handlaren undviker fler&quot;lagerutskick&quot; och kan tillgodose mer av efterfrågan på semester.
 
 | Segment 1 | Segment 2 |
 |--- |--- |

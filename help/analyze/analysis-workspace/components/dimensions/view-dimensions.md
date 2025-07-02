@@ -1,17 +1,17 @@
 ---
-description: Visa de översta värdena för en dimension innan du använder den i ett projekt.
-title: Förhandsvisa dimensioner
+description: Lär dig hur du visar detaljer och de viktigaste värdena för en dimension i Analysis Workspace.
+title: Förhandsgranska dimensioner
 feature: Dimensions
 role: User, Admin
 exl-id: 897edc76-6744-4d8c-ab0e-20672838f7b3
-source-git-commit: a629b2be66d9458bf10872a95aaec739aed9d791
+source-git-commit: ff38740116ac6f12033ebdc17cffa3250a30f3f7
 workflow-type: tm+mt
-source-wordcount: '101'
+source-wordcount: '100'
 ht-degree: 0%
 
 ---
 
-# Förhandsgranska dimensioner i Analysis Workspace
+# Förhandsvisa dimensioner
 
 Du kan använda [komponentinformationen](/help/analyze/analysis-workspace/components/use-components-in-workspace.md#component-info) för en komponent om du vill visa de översta objekten för en dimension.
 

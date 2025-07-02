@@ -1,11 +1,11 @@
 ---
 title: Bästa praxis för attribuering
-description: Vilka är de bästa sätten att besluta om en attribueringsmodell?
+description: Förstå de bästa sätten att avgöra vilken attribueringsmodell som ska användas.
 feature: Attribution
 exl-id: 92c6039c-f950-4746-8b34-ba18be258c08
-source-git-commit: 8f7c6a0d1477b599b05aeb7b74c4ee96531d294d
+source-git-commit: d37fa0aff0b1bbe196b943bc26e86b1e79936184
 workflow-type: tm+mt
-source-wordcount: '421'
+source-wordcount: '422'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Hur ni väljer rätt attribueringsmodell för er organisation beror på ett anta
 >[!NOTE]
 >Denna analys måste ske innan du väljer en attribueringsmodell.
 
-Den här fasen består till att börja med av att förstå kundbeteende och definiera konverteringsmått. Baserat på konverteringsstatistik kan verktyg som [Dataflöden](https://experienceleague.adobe.com/sv/docs/analytics/export/analytics-data-feed/data-feed-overview) (för rådata) eller Analysis Workspace underlätta din förståelse av
+Den här fasen består till att börja med av att förstå kundbeteende och definiera konverteringsmått. Baserat på konverteringsstatistik kan verktyg som [Dataflöden](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-overview) (för rådata) eller Analysis Workspace underlätta din förståelse av
 
 * Antalet kunder som rör olika marknadsföringskanaler innan de konverterar
 * Andelen/fördelningen av dessa beteenden
@@ -53,7 +53,7 @@ I det här fallet använder du den [omvända J-formade attribueringsmodellen](/h
 
 Anta att din hypotes är: *&quot;I en viss bransch (t.ex. resebranschen) är attribueringsfönstret 60 eller 90 dagar, inte 30 dagar, eftersom kunderna gör en massa efterforskningar innan de köper en produkt.*&quot;
 
-I det här fallet ändrar du [uppslagsfönstret](https://experienceleague.adobe.com/sv/docs/analytics/analyze/analysis-workspace/attribution/models) till 90 dagar.
+I det här fallet ändrar du [uppslagsfönstret](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/attribution/models) till 90 dagar.
 
 ## Använd algoritmisk attribuering
 
@@ -63,4 +63,4 @@ Om du ännu inte har någon attribueringsmodell som ger tillfredsställande svar
 
 * Du kan behöva använda en datavetare istället för att förlita dig på Analysis Workspace.
 * Du kan lita på rådata, som i Adobe dataflöden.
-* Du kan till exempel använda [Customer Journey Analytics](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-overview/cja-b2c-overview/cja-overview) om du vill ta hänsyn till dina Impressions-data.
+* Du kan till exempel använda [Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2c-overview/cja-overview) om du vill ta hänsyn till dina Impressions-data.

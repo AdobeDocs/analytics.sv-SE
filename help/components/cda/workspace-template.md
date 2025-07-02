@@ -4,7 +4,7 @@ description: Beskriver varje fält i CDA-mallen i Analysis Workspace.
 exl-id: 293001ff-bf7b-4de8-b175-7c2c17d1794d
 feature: CDA
 role: Admin
-source-git-commit: cfa5cc02ba3a7349b51a904f29bab533c0f1c603
+source-git-commit: d37fa0aff0b1bbe196b943bc26e86b1e79936184
 workflow-type: tm+mt
 source-wordcount: '375'
 ht-degree: 0%
@@ -29,11 +29,11 @@ Ett Analysis Workspace-projekt som innehåller flera paneler skapas. Överst vis
 
 * **Identifiering av användare**: Visar hur ofta besökare på din webbplats identifieras med metoder som baseras på enhetsövergripande analys.
 * **Mäta målgruppsstorlek**: Visar en jämförelse mellan Unika enheter och Personer. Andelen av dessa två tal kallas för komprimering mellan enheter, ett beräknat mått som visas på den här panelen. Detta komprimeringsmått är beroende av ett stort antal faktorer:
-   * Inloggningsfrekvens: Ju fler användare loggar in på din webbplats, desto fler Adobe kan identifiera och sätta ihop besökare på olika enheter. Platser med låg inloggningshastighet har också låg komprimeringshastighet.
+   * Inloggningsfrekvens: Ju fler användare loggar in på er webbplats, desto mer kan Adobe identifiera och sätta ihop besökare på olika enheter. Platser med låg inloggningshastighet har också låg komprimeringshastighet.
    * Experience Cloud ID-täckning: Endast besökare med ett ECID kan sammanfogas. En lägre andel besökare på er webbplats som använder ett ECID-kort motsvarar lägre komprimeringsgrader.
    * Användning av flera enheter: Om besökare på platsen inte använder flera enheter kan du se lägre komprimeringsgrader.
    * Rapporteringsnoggrannhet: Komprimering per dag är vanligtvis mindre än komprimering per månad eller år. Risken för att en individ ska använda flera enheter blir mindre inom en dag än under en hel månad. Segmentering, filtrering eller användning av nedbrytningsdimensioner kan också ge en lägre komprimeringsgrad.
 * **Personbaserade segment**: Innehåller en segmentlistruta där du kan visa enhetsspecifika data. Den här panelen uppmuntrar till experimenterande med segment för att se hur rapporter påverkas om du inkluderar eller utesluter enhetstyper.
 * **Analyserar enhetsövergripande resa**: Tillhandahåller flödes- och utfallsrapporter baserat på enhetstyp.
-* **Tilldelning över flera enheter**: Kombinera funktionerna för reseersättning och attribuering.
+* **Attribuering över flera enheter**: Kombinera funktionerna för analys och attribuering mellan olika enheter.
 * **Andra tips och tricks**: Användbara ämnen om CDA som gör att du kan få ut mer av att använda det.
