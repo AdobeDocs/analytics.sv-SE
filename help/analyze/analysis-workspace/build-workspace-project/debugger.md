@@ -4,9 +4,10 @@ keywords: Analysis Workspace
 feature: Workspace Basics
 title: Felsökning av projekt
 role: User
-source-git-commit: e7aaafc95f60c71744cfeb3c59310d8ba2ea2576
+exl-id: 7a3a195e-d4f3-4fc8-90f9-507964052c9b
+source-git-commit: b6509693440f00a0c93668109daa7e7f3786f39c
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: '406'
 ht-degree: 0%
 
 ---
@@ -54,7 +55,7 @@ Så här använder du felsökaren för en viss visualisering:
 
    * **[!UICONTROL Request timestamp]**
    * **[!UICONTROL Response timestamp]**
-   * **[!UICONTROL &#x200B; Request time]**
+   * **[!UICONTROL Request time]**
    * **[!UICONTROL Queue time]**
    * **[!UICONTROL Server processing time]**
    * **[!UICONTROL Lookup time]**
@@ -74,7 +75,7 @@ Så här använder du felsökaren för en viss visualisering:
    * JSON (svar)
    * Lätt begäran
 
-1. Använd ![Kopiera](/help/assets/icons/Copy.svg) **[!UICONTROL Copy to clipboard]**&#x200B;d under **[!UICONTROL cURL Request]** för att kopiera begäran till Urklipp.
+1. Använd ![Kopiera](/help/assets/icons/Copy.svg) **[!UICONTROL Copy to clipboard]** under **[!UICONTROL cURL Request]** för att kopiera begäran till Urklipp.
 1. Håll markören över något av textområdena **[!UICONTROL Request]** eller **[!UICONTROL Response]** som ska visas och välj ![Kopiera](/help/assets/icons/Copy.svg) **[!UICONTROL Copy to clipboard]** för att kopiera innehållet i textområdet (XML eller JSON) till Urklipp.
 
 1. Utbyt den information du har kopierat och vilken Adobe Support har begärt för att felsöka visualiseringarna i ditt Analysis Workspace-projekt.
@@ -95,6 +96,3 @@ Så här inaktiverar du felsökaren:
 1. Välj **[!UICONTROL Help]** > **[!UICONTROL Disable debugger]** på Analysis Workspace projektmeny.
 1. Välj **[!UICONTROL OK]** i dialogrutan **[!UICONTROL Disable debugger]**.
 1. Bekräfta när webbläsaren uppmanar dig att läsa in sidan eller webbplatsen igen.
-
-
-
