@@ -1,13 +1,13 @@
 ---
-description: Lär dig hur du använder flödesvisualisering i en Analysis Workspace.
+description: Lär dig hur du använder flödesvisualisering i Analysis Workspace.
 title: Flödesöversikt
 uuid: fc22b573-2d18-4c29-866c-f317c920d27a
 feature: Visualizations
 role: User, Admin
 exl-id: 3a7d1552-7fae-41ae-8ca5-89800d05d3d4
-source-git-commit: 978bd8642011dd2c8e43564c90303f194689a64e
+source-git-commit: bf8bc40e3ec325e8e70081955fb533eee66a1734
 workflow-type: tm+mt
-source-wordcount: '295'
+source-wordcount: '294'
 ht-degree: 0%
 
 ---
@@ -24,14 +24,14 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="workspace_flow_panel"
 >title="Flöde"
->abstract="Analysera besöksflödet eller besökarna från en kontaktyta till nästa.<br/><br/>**Parametrar &#x200B;**<br/>**Börjar med**: Lägg till en dimension, dimensionsobjekt eller mätvärden för att se de högsta kontaktytorna efter förekomsten av den markerade komponenten.<br/>**Innehåller**: Lägg till en dimension eller ett dimensionsobjekt om du vill visa de övre kontaktytorna före och efter förekomsten av den markerade komponenten.<br/>**Slutar med**: Lägg till en dimension, dimensionsobjekt eller mätvärde för att se de övre kontaktytorna innan den valda komponenten finns.<br/>**Målningsdimension**: Lägg till en dimension som ska användas som vägleda till eller gå från den markerade komponenten."
+>abstract="Analysera besöksflödet eller besökarna från en kontaktyta till nästa.<br/><br/>**Parametrar **<br/>**Börjar med**: Lägg till en dimension, dimensionsobjekt eller mätvärden för att se de högsta kontaktytorna efter förekomsten av den markerade komponenten.<br/>**Innehåller**: Lägg till en dimension eller ett dimensionsobjekt om du vill visa de övre kontaktytorna före och efter förekomsten av den markerade komponenten.<br/>**Slutar med**: Lägg till en dimension, dimensionsobjekt eller mätvärde för att se de övre kontaktytorna innan den valda komponenten finns.<br/>**Målningsdimension**: Lägg till en dimension som ska användas som vägleda till eller gå från den markerade komponenten."
 
 <!-- markdownlint-enable MD034 -->
 
 
 >[!BEGINSHADEBOX]
 
-_I den här artikeln dokumenteras Flödesvisualiseringen i_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**._<br/>_Se [Flow](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-workspace/visualizations/flow/flow) för_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**-versionen av den här artikeln._
+_I den här artikeln dokumenteras Flödesvisualiseringen i_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._<br/>_Se [Flow](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/flow/flow) för_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**-versionen av den här artikeln._
 
 >[!ENDSHADEBOX]
 

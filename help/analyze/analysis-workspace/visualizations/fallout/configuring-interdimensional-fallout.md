@@ -1,12 +1,12 @@
 ---
-description: Se hur man med hjälp av bortfallsvisualiseringen i Analysis Workspace kan blanda och matcha mått och mätvärden som kontaktytor i flöden och arbetsflöden. Förstå hur detta ger större flexibilitet när det gäller att definiera de användarsteg som du vill undersöka.
+description: Lär dig hur du med hjälp av bortfallsvisualiseringen i Analysis Workspace kan blanda och matcha mått och mätvärden som kontaktytor i flöden och arbetsflöden. Förstå hur detta ger större flexibilitet när det gäller att definiera de användarsteg som du vill undersöka.
 title: Avvikelse mellan dimensioner
 feature: Visualizations
 role: User, Admin
 exl-id: 12de8e52-02c1-4e11-b530-48294f201fe0
-source-git-commit: f258a1150a4bee11f5922d058930dc38b1ddfa14
+source-git-commit: bf8bc40e3ec325e8e70081955fb533eee66a1734
 workflow-type: tm+mt
-source-wordcount: '276'
+source-wordcount: '275'
 ht-degree: 0%
 
 ---

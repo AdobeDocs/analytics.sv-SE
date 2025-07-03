@@ -1,11 +1,11 @@
 ---
-description: Använd kartvisualisering för att rita data på en geografisk kartvisualisering
+description: Använd kartvisualisering för att rita data på en geografisk kartvyalisering.
 title: Karta
 uuid: 6038f336-62a3-4efa-8316-4d7792468db3
 feature: Visualizations
 role: User, Admin
 exl-id: a60544b4-27b6-413a-96ce-ab9487594422
-source-git-commit: 978bd8642011dd2c8e43564c90303f194689a64e
+source-git-commit: bf8bc40e3ec325e8e70081955fb533eee66a1734
 workflow-type: tm+mt
 source-wordcount: '659'
 ht-degree: 0%
@@ -46,7 +46,7 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-_I den här artikeln beskrivs kartvisualiseringen i_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**._<br/>_Det finns för närvarande ingen kartvisualisering tillgänglig i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._
+_I den här artikeln beskrivs kartvisualiseringen i_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._<br/>_Det finns för närvarande ingen kartvisualisering tillgänglig i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._
 
 >[!ENDSHADEBOX]
 
@@ -63,7 +63,7 @@ _I den här artikeln beskrivs kartvisualiseringen i_ ![AdobeAnalytics](/help/ass
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Mappningsvisualisering i Analysis Workspace](https://video.tv.adobe.com/v/23559/?quality=12){target=&#34;_blank&#34;} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Mappningsvisualisering i Analysis Workspace](https://video.tv.adobe.com/v/23559/?quality=12){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 

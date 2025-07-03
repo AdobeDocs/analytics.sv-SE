@@ -1,17 +1,17 @@
 ---
 description: Lär dig filtrera och sortera frihandstabeller i Analysis Workspace.
-title: Filtrera och sortera tabeller
+title: Filtrera och ordna
 feature: Freeform Tables
 role: User, Admin
 exl-id: 15fea9e2-f8d8-4489-9a44-e74a351b8f36
-source-git-commit: f258a1150a4bee11f5922d058930dc38b1ddfa14
+source-git-commit: bf8bc40e3ec325e8e70081955fb533eee66a1734
 workflow-type: tm+mt
-source-wordcount: '806'
+source-wordcount: '803'
 ht-degree: 0%
 
 ---
 
-# Filtrera och sortera tabeller på frihand
+# Filter och sortering
 
 Frihandstabeller i Analysis Workspace är grunden för interaktiv dataanalys. De kan därför innehålla tusentals rader med information. Filtrering och sortering av data kan vara en viktig del av att effektivt kunna hitta den viktigaste informationen.
 

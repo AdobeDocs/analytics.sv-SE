@@ -4,9 +4,9 @@ audience: end-user
 user-guide-title: Handbok om Analytics-verktyg
 breadcrumb-title: Användarhandbok om verktyg
 user-guide-description: Lär dig hur du använder verktyg i Analytics, inklusive Analysis Workspace, Analytics Dashboards, Report Builder, Legacy Report Builder och Activity Map.
-source-git-commit: ff38740116ac6f12033ebdc17cffa3250a30f3f7
+source-git-commit: bf8bc40e3ec325e8e70081955fb533eee66a1734
 workflow-type: tm+mt
-source-wordcount: '870'
+source-wordcount: '868'
 ht-degree: 9%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 9%
 # Adobe Analytics Tools Guide {#analyze}
 
 + [Handbok om Analytics-verktyg](home.md)
-+ [Versionsinformation för analyser](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html?lang=sv-SE)
++ [Versionsinformation för analyser](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html)
 + Kom igång med Adobe Analytics {#admin-overview}
    + [Analytics - översikt](get-started/analytics-overview.md)
    + [Kom igång (efter roll)](get-started/get-started-by-role.md)
@@ -34,7 +34,7 @@ ht-degree: 9%
       + [Spara projekt](analysis-workspace/build-workspace-project/save-projects.md)
       + [Innehållsförteckning](/help/analyze/analysis-workspace/build-workspace-project/project-table-of-contents.md)
       + Mappar i Workspace {#workspace-folders}
-         + [Översikt över mappar](analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
+         + [Översikt](analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
          + [Skapa mappar](analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)
          + [Hantera mappar](analysis-workspace/build-workspace-project/workspace-folders/manage-folders.md)
          + [Lägga till eller flytta projekt](analysis-workspace/build-workspace-project/workspace-folders/add-projects.md)
@@ -42,9 +42,10 @@ ht-degree: 9%
       + [Snabbtangenter](analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
       + [Färgpaletter](analysis-workspace/build-workspace-project/color-palettes.md)
       + [Visa densitet](analysis-workspace/build-workspace-project/view-density.md)
+      + [Debugger](analysis-workspace/build-workspace-project/debugger.md)
    + Mallar {#templates}
       + [Använd mallar](analysis-workspace/templates/use-templates.md)
-      + [Skapa mallar](analysis-workspace/templates/create-templates.md)
+      + [Skapa och hantera mallar](analysis-workspace/templates/create-templates.md)
    + Komponenter {#components}
       + [Översikt](analysis-workspace/components/analysis-workspace-components.md)
       + [Använda komponenter](analysis-workspace/components/use-components-in-workspace.md)
@@ -99,8 +100,8 @@ ht-degree: 9%
          + [Översikt](analysis-workspace/visualizations/c-flow/flow.md)
          + [Konfigurera](analysis-workspace/visualizations/c-flow/create-flow.md)
          + [Flerdimensionella flöden](analysis-workspace/visualizations/c-flow/multi-dimensional-flow.md)
-      + [Område och område staplade](analysis-workspace/visualizations/area.md)
-      + [Stolpstreck och stapel](analysis-workspace/visualizations/bar.md)
+      + [Yta (staplad)](analysis-workspace/visualizations/area.md)
+      + [Stapel (staplad)](analysis-workspace/visualizations/bar.md)
       + [Punkt](analysis-workspace/visualizations/bullet-graph.md)
       + [Kombination](analysis-workspace/visualizations/combo-charts.md)
       + [Munk](analysis-workspace/visualizations/donut.md)

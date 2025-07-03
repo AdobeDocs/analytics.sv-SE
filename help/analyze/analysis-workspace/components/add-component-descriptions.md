@@ -1,12 +1,12 @@
 ---
-description: Administratörer kan lägga till beskrivningar för komponenter i en rapportserie eller med hjälp av dataordlistan.
-title: Lägg till komponentbeskrivningar
+description: Lär dig hur administratörer kan lägga till beskrivningar i komponenter med hjälp av en rapportsvit eller dataordlistan.
+title: Lägga till komponentbeskrivningar
 feature: Components
 role: Admin
 exl-id: db36ee4a-66e2-45d1-8b7a-49570b5fce93
-source-git-commit: 3d15bd941cb8eaf20b8ae9f1ffa1dbfd403b2bfa
+source-git-commit: bf8bc40e3ec325e8e70081955fb533eee66a1734
 workflow-type: tm+mt
-source-wordcount: '219'
+source-wordcount: '220'
 ht-degree: 0%
 
 ---
@@ -47,5 +47,5 @@ Allmän information om dataordlistan finns i [Översikt över dataordlistan](/he
 >[!MORELIKETHIS]
 >
 >[Rapportkomponentinställningar](/help/components/vrs/vrs-components.md)
->&#x200B;>[Data dictionary-komponentposter ](/help/analyze/analysis-workspace/components/data-dictionary/edit-entries-data-dictionary.md)
+>>[Data dictionary-komponentposter ](/help/analyze/analysis-workspace/components/data-dictionary/edit-entries-data-dictionary.md)
 >

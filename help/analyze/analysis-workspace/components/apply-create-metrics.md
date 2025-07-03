@@ -1,10 +1,10 @@
 ---
-description: Lär dig vilka mätvärden som är och hur du använder mätvärden i Adobe Analytics.
+description: Lär dig vilka mätvärden som är och hur du använder mätvärden på arbetsytan för analyser.
 title: Mätvärden
 feature: Metrics
 role: User, Admin
 exl-id: 0a5dc709-c4e8-412a-a6cf-37b85d811f65
-source-git-commit: 24dd47e995523aedba1385ee8882af5e11c7b128
+source-git-commit: bf8bc40e3ec325e8e70081955fb533eee66a1734
 workflow-type: tm+mt
 source-wordcount: '838'
 ht-degree: 0%
@@ -101,7 +101,7 @@ Så här skapar du ett beräknat mått för ett enskilt projekt:
 
    * [!UICONTROL **Procentuell ändring**]: Skapar en ny kolumn som visar procentändringen mellan de två markerade kolumnerna.
 
-[Beräknade mått: Mätvärden utan implementering](https://experienceleague.adobe.com/sv/docs/analytics-learn/tutorials/components/calculated-metrics/calculated-metrics-implementationless-metrics) (3:42)
+[Beräknade mått: Mätvärden utan implementering](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/components/calculated-metrics/calculated-metrics-implementationless-metrics) (3:42)
 
 
 ## Jämför mätvärden med olika attribueringsmodeller

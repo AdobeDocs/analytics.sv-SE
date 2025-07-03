@@ -4,7 +4,7 @@ title: Konfigurera en flödesvisualisering
 feature: Visualizations
 role: User, Admin
 exl-id: c2fdcc96-81ac-4d3b-b255-ff805b6ff0ea
-source-git-commit: 978bd8642011dd2c8e43564c90303f194689a64e
+source-git-commit: bf8bc40e3ec325e8e70081955fb533eee66a1734
 workflow-type: tm+mt
 source-wordcount: '1545'
 ht-degree: 0%
@@ -108,7 +108,7 @@ Du kan konfigurera början eller slutet av sökvägen som du är intresserad av.
    | **[!UICONTROL Limit to first/last occurrence]** | Begränsa banor till banor som börjar eller slutar med den första eller sista förekomsten av en dimension, artikel eller mätvärde. Mer information finns i [Begränsa till första/sista förekomsten](#example-scenario-for-limit-to-firstlast-occurrence). |
    | **[!UICONTROL Number of columns]** | Antalet kolumner som du vill ha i flödesdiagrammet. Du kan ange högst fem kolumner. |
    | **[!UICONTROL Items expanded per column]** | Antalet objekt som du vill ha i varje kolumn. Du kan ange högst 10 objekt utökade per kolumn. |
-   | **[!UICONTROL Flow container]** | Du kan växla mellan **[!UICONTROL Sessions]** och **[!UICONTROL Person]** för att analysera målningen. Dessa inställningar hjälper dig att förstå en persons engagemang på personnivå (mellan sessioner) eller begränsa analysen till en enda session. |
+   | **[!UICONTROL Flow container]** | Du kan växla mellan **[!UICONTROL Visit]** och **[!UICONTROL Visitor]** för att analysera målningen. Dessa inställningar hjälper er att förstå besökarens engagemang på besökarnivå (mellan besök) eller begränsa analysen till ett enda besök. |
 
    >[!IMPORTANT]
    >
@@ -173,7 +173,7 @@ Använd en snabbmeny på en nod i flödesvisualiseringen med följande alternati
 | **[!UICONTROL Exclude item]** eller **[!UICONTROL Restore excluded items]** | Tar bort en specifik nod från kolumnen och skapar den automatiskt som ett filter överst i kolumnen. Om du vill återställa det uteslutna objektet väljer du **[!UICONTROL Restore Excluded Item]** på snabbmenyn. Du kan också öppna filtret längst upp i kolumnen och ta bort rutan med det objekt du just uteslutit. |
 | **[!UICONTROL Trend]** | Skapa ett trenddiagram för noden. |
 | **[!UICONTROL Show next column]** / **[!UICONTROL Show previous column]** | Visar nästa (höger) eller föregående (vänster) kolumn i visualiseringen. |
-| **[!UICONTROL Hide colum]**&#x200B;n | Döljer den markerade kolumnen från visualiseringen. |
+| **[!UICONTROL Hide colum]**n | Döljer den markerade kolumnen från visualiseringen. |
 | **[!UICONTROL Expand entire column]** | Expandera en kolumn om du vill visa alla noder. Som standard visas bara de fem översta noderna. |
 | **[!UICONTROL Create audience from selection]** | Skapar en målgrupp baserat på den markerade kolumnen. |
 | **[!UICONTROL Collapse entire column]** | Dölj alla noder i en kolumn. |
@@ -195,15 +195,15 @@ I exemplet nedan inkluderas **alla** förekomster av *huvudkategorin för produk
 
   I exemplet nedan inkluderas bara de **sista** förekomsterna av *huvudkategorin för produkten* och *Lägg i kundvagnen* i varje steg i flödet.
   ![Lint, start](assets/limitonlast.png)
-* Serien som används skiljer sig åt beroende på behållaren. Om du använder behållaren **[!UICONTROL Person]** är händelserierna sessionen. Om du använder behållaren **[!UICONTROL Session]** är händelserierna alla händelser för en viss användare i det angivna datumintervallet.
+* Serien som används skiljer sig åt beroende på behållaren. Om du använder behållaren **[!UICONTROL Visitor]** är händelserierna besöken. Om du använder behållaren **[!UICONTROL Visitor]** är händelserierna alla träffar för en viss användare i det angivna datumintervallet.
 * Alternativet **[!UICONTROL Limit to first/last occurrence]** kan konfigureras i de avancerade inställningarna när du använder ett mått eller ett Dimension-objekt i fälten **[!UICONTROL Starts with]** eller **[!UICONTROL Ends with]**.
 
 
 >[!MORELIKETHIS]
 >
 >[Lägg till en visualisering på en panel](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
->&#x200B;>[Visualiseringsinställningar](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
->&#x200B;>[Snabbmenyn Visualisering ](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>>[Visualiseringsinställningar](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>>[Snabbmenyn Visualisering ](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >
 
 

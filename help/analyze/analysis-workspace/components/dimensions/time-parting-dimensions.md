@@ -1,24 +1,24 @@
 ---
-description: Lär dig mer om hur tidsdelningsdimensioner tar tidsstämpeln för insamlade händelser och delar upp den i mer meningsfulla dimensioner, till exempel Timme på dagen eller Veckodag.
+description: Lär dig mer om hur tidsdelningsdimensioner tar tidsstämpeln för insamlade händelser och delar upp dessa händelser i mer meningsfulla dimensioner, som t.ex. Timme på dagen eller Veckodag.
 title: Tidsdelningsdimensioner
 feature: Dimensions
 role: User, Admin
 exl-id: 92fbcc1e-1f7f-405a-8ad1-199fb7ba505e
-source-git-commit: ff38740116ac6f12033ebdc17cffa3250a30f3f7
+source-git-commit: bf8bc40e3ec325e8e70081955fb533eee66a1734
 workflow-type: tm+mt
-source-wordcount: '238'
+source-wordcount: '239'
 ht-degree: 0%
 
 ---
 
 # Tidsdelningsdimensioner
 
-Tidsdelning innebär att tidsstämpeln för insamlade träffar delas i mer meningsfulla dimensioner, till exempel&quot;Dagens timme&quot; eller&quot;Veckodag&quot;.
+Tidsdelning innebär att tidsstämpeln för insamlade träffar delas i mer meningsfulla dimensioner, till exempel **Timme på dagen** eller **Dag på veckan**.
 
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Time=dela dimensioner](https://video.tv.adobe.com/v/23727?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Tidsdelningsdimensioner](https://video.tv.adobe.com/v/23727?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 
@@ -32,7 +32,7 @@ Tidsdelningsdimensionerna baseras på tidszonen för rapportsviten eller den vir
 
 >[!NOTE]
 >
->Tidsdelningsdimensioner är bara tillgängliga i Analysis Workspace. Om du vill använda tidsdelningsdimensioner i andra Analytics-lösningar kan du implementera plugin-programmet [getTimeParting](https://experienceleague.adobe.com/docs/analytics/implementation/vars/plugins/gettimeparting.html?lang=sv-SE).
+>Tidsdelningsdimensioner är bara tillgängliga i Analysis Workspace. Om du vill använda tidsdelningsdimensioner i andra Analytics-lösningar kan du implementera plugin-programmet [getTimeParting](https://experienceleague.adobe.com/docs/analytics/implementation/vars/plugins/gettimeparting.html).
 
 Tidsdelningsdimensioner i Analysis Workspace är:
 

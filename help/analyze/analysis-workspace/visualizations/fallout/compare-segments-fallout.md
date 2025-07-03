@@ -5,9 +5,9 @@ title: Använd segment i bortfallsanalys
 feature: Visualizations
 role: User, Admin
 exl-id: 2177cd09-5a27-4295-8414-580cf53062cb
-source-git-commit: 978bd8642011dd2c8e43564c90303f194689a64e
+source-git-commit: bf8bc40e3ec325e8e70081955fb533eee66a1734
 workflow-type: tm+mt
-source-wordcount: '433'
+source-wordcount: '441'
 ht-degree: 0%
 
 ---
@@ -25,29 +25,29 @@ Du kan skapa segment från en kontaktyta, lägga till segment som kontaktyta och
 >* Använda ett besöksbaserat segment som kontaktyta i en snabbutfallsvisualisering.
 >
 
-## Skapa ett segment från en kontaktyta {#section_915E8FBF35CD4F34828F860C1CCC2272}
+## Skapa ett segment från en kontaktyta
 
 1. Skapa ett segment från en viss kontaktyta som du är särskilt intresserad av och som kan vara användbar för andra rapporter. Det gör du genom att högerklicka på kontaktytan och välja **[!UICONTROL Create segment from touchpoint]**.
 
-   ![](assets/segment-from-touchpoint.png)
+   ![](assets/fallout-createsegment.png)
 
    Segmentbyggaren öppnas, ifyllt med det fördefinierade sekventiella segmentet som matchar den kontaktyta du valde:
 
-   ![](assets/segment-builder.png)
+   ![](assets/fallout-definesegment.png)
 
 1. Ge segmentet en rubrik och beskrivning och spara det.
 
-   Du kan nu använda det här segmentet i vilken rapport som helst.
+   Du kan nu använda det här segmentet i vilket projekt som helst.
 
-## Lägga till ett segment som kontaktyta {#section_17611C1A07444BE891DC21EE8FC03EFC}
+## Lägga till ett segment som kontaktyta
 
-Om du till exempel vill se hur användarna i USA trendar och påverkar utfallet drar du bara segmentet för användare i USA till utfallet:
+Om du till exempel vill se hur mobilappen når trenden och påverkar utfallet drar du bara segmentet för mobilappträffar till utfallet:
 
 ![](assets/segment-touchpoint.png)
 
-Du kan också skapa en OCH-kontaktyta genom att dra användarsegmentet i USA till en annan kontrollpunkt.
+Du kan också skapa en AND-kontaktyta genom att dra segmentet för mobilappsträffar till en annan kontrollpunkt.
 
-## Jämför segment i utfall {#section_E0B761A69B1545908B52E05379277B56}
+## Jämför segment i utfall
 
 Du kan jämföra ett obegränsat antal segment i utfallsvisualiseringen. (Observera att det i videon nedan står att du kan jämföra upp till tre segment, vilket är fel.)
 
@@ -59,13 +59,11 @@ Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Jämför segment 
 >[!ENDSHADEBOX]
 
 
-1. Markera de segment som du vill jämföra i fältet [!UICONTROL Segments] till vänster. I vårt exempel har vi valt två segment: Användare i USA och Användare utanför USA.
-1. Dra dem till segmentsläppzonen längst upp.
+1. Markera de segment som du vill jämföra på panelen [!UICONTROL Segment] till vänster. I exemplet I exemplet är två segment markerade: **[!UICONTROL iOS]** och **[!UICONTROL Android]**.
+1. Du drar de tre segmenten till segmentsläppzonen högst upp i visualiseringen.
 
-   ![](assets/segment-drop.png)
+   ![](assets/segment-compare.png)
 
-1. Valfritt: Du kan behålla &quot;Alla besök&quot; som standardbehållare eller ta bort den.
+1. Valfritt: Du kan behålla *Alla personer* som standardbehållare eller ta bort behållaren.
 
-   ![](assets/seg-compare.png)
-
-1. Du kan nu jämföra utfallet mellan de två segmenten, till exempel var ett segment presterar bättre än ett annat, eller andra insikter.
+1. Du kan nu jämföra utfallet för de tre segmenten, till exempel var ett segment presterar bättre än ett annat, eller andra insikter.

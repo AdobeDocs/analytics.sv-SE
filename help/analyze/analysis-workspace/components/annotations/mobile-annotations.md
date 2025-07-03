@@ -1,13 +1,13 @@
 ---
-title: Mobilanteckningar
-description: Lär dig hur du visar kommentarer i Mobile Scorecards.
+title: Mobil styrkortsanteckning
+description: Lär dig hur du visar kommentarer i mobilstyrkort.
 role: User, Admin
 solution: Analytics
 feature: Components
 exl-id: d8212ab1-d639-41b5-b28e-da580a3628b0
-source-git-commit: ff38740116ac6f12033ebdc17cffa3250a30f3f7
+source-git-commit: bf8bc40e3ec325e8e70081955fb533eee66a1734
 workflow-type: tm+mt
-source-wordcount: '295'
+source-wordcount: '297'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Mobil styrkortsanteckning
 
-Du kan visa anteckningar som har skapats i Workspace i Mobile Scorecards. Anteckningar i mobilstyrkort gör att ni kan dela kontextuella datanunkter och insikter om er organisation och era kampanjer.
+Du kan visa anteckningar som har skapats i Analysis Workspace i Mobile Scorecards. Anteckningar i mobilstyrkort gör att ni kan dela kontextuella datanunkter och insikter om er organisation och era kampanjer.
 
 
 ## Visa anteckningar i Mobile-styrkort

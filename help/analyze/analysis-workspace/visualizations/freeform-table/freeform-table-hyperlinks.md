@@ -1,12 +1,12 @@
 ---
-title: Skapa hyperlänkar för dimensioner i en friformstabell
+title: Skapa hyperlänkar
 description: Lär dig hur du skapar hyperlänkar för dimensionsobjekt i en frihandstabell i Analysis Workspace.
 feature: Freeform Tables
 role: User, Admin
 exl-id: df846a73-e3e3-4376-844e-48153a20e5d6
-source-git-commit: f258a1150a4bee11f5922d058930dc38b1ddfa14
+source-git-commit: bf8bc40e3ec325e8e70081955fb533eee66a1734
 workflow-type: tm+mt
-source-wordcount: '1590'
+source-wordcount: '1584'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Den här funktionen är särskilt användbar när du skapar hyperlänkar för f�
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Hyperlänkar för dimension](https://video.tv.adobe.com/v/3445786?quality=12&learn=on&captions=swe){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Hyperlänkar för dimension](https://video.tv.adobe.com/v/3430411?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 

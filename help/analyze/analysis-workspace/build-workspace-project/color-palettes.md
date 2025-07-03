@@ -1,17 +1,17 @@
 ---
 description: Lär dig använda färgpaletten för visualisering i Analysis Workspace.
-title: Visualiseringsfärgpalett
+title: Visualiseringsfärgpaletter
 feature: Workspace Basics
 role: User, Admin
 exl-id: 7e426423-5475-44cc-9e78-74c0da5b93f8
-source-git-commit: f258a1150a4bee11f5922d058930dc38b1ddfa14
+source-git-commit: bf8bc40e3ec325e8e70081955fb533eee66a1734
 workflow-type: tm+mt
 source-wordcount: '201'
 ht-degree: 1%
 
 ---
 
-# Visualiseringsfärgpalett {#visualization-color-palette}
+# Visualiseringsfärgpaletter {#visualization-color-palette}
 
 <!-- markdownlint-disable MD034 -->
 
