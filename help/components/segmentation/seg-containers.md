@@ -47,7 +47,7 @@ Med varje behållare kan du rapportera över en besökares historik, interaktion
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Segmentbehållare](https://video.tv.adobe.com/v/25401?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Segmentbehållare](https://video.tv.adobe.com/v/3429102?quality=12&learn=on&captions=swe){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 
