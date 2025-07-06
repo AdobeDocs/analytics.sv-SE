@@ -99,4 +99,4 @@ Alla segment som skapats i segmentverktyget är inte kompatibla med [!DNL Data W
  </tbody> 
 </table>
 
-*Obs! Data Warehouse stöder inte alla fall där en `exclusion` - eller `without` -behållare används när `AND/OR` används. När du använder en sådan kombination stöds endast de segment som kan skrivas om som `A AND NOT B` (eller **include this property**och **exclude this property**) i Data Warehouse.*
+*Obs! Data Warehouse stöder inte alla fall där en `exclusion` - eller `without` -behållare används när `AND/OR` används. När du använder en sådan kombination stöds endast de segment som kan skrivas om som `A AND NOT B` (eller **include this property**&#x200B;och **exclude this property**) i Data Warehouse.*
