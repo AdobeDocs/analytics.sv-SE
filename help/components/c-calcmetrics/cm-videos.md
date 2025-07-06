@@ -18,17 +18,17 @@ I dessa korta videoklipp får du en översikt över hur du optimerar användning
 
 >[!BEGINSHADEBOX]
 
-![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Snabbberäknade mätvärden i Analysis Workspace](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/components/calculated-metrics/quick-calculated-metrics-in-analysis-workspace.html){target="_blank"}
+![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Snabbberäknade mätvärden i Analysis Workspace](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/components/calculated-metrics/quick-calculated-metrics-in-analysis-workspace.html?lang=sv-SE){target="_blank"}
 
-![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Metrisk byggare](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/components/calculated-metrics/calculated-metrics-metric-builder.html){target="_blank"}
+![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Metrisk byggare](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/components/calculated-metrics/calculated-metrics-metric-builder.html?lang=sv-SE){target="_blank"}
 
-![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Segmenterade mätvärden](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/components/calculated-metrics/calculated-metrics-segmented-metrics.html){target="_blank"}
+![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Segmenterade mätvärden](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/components/calculated-metrics/calculated-metrics-segmented-metrics.html?lang=sv-SE){target="_blank"}
 
-![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Mätvärden utan implementering](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/components/calculated-metrics/calculated-metrics-implementationless-metrics.html){target="_blank"}
+![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Mätvärden utan implementering](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/components/calculated-metrics/calculated-metrics-implementationless-metrics.html?lang=sv-SE){target="_blank"}
 
-![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Funktioner](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/components/calculated-metrics/calculated-metrics-functions.html){target="_blank"}
+![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Funktioner](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/components/calculated-metrics/calculated-metrics-functions.html?lang=sv-SE){target="_blank"}
 
-![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Hantera dina beräknade värden](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/components/calculated-metrics/manage-your-calculated-metrics.html){target="_blank"}
+![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Hantera dina beräknade värden](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/components/calculated-metrics/manage-your-calculated-metrics.html?lang=sv-SE){target="_blank"}
 
 
 >[!ENDSHADEBOX]
