@@ -1,11 +1,11 @@
 ---
-description: På sidan Beräknade mätvärden kan du strukturera mätvärden på många olika sätt, t.ex. dela, filtrera, tagga, godkänna, kopiera, ta bort och markera som favoriter.
-title: Beräknat måttansvarig
+description: Lär dig hur du delar, filtrerar, taggar, godkänner, kopierar, tar bort beräknade värden och markerar beräknade värden som favoriter.
+title: Hantera beräknade värden
 feature: Calculated Metrics
 exl-id: 32430e77-2450-4672-9c21-255e76802a4c
-source-git-commit: 9714863374052e257e1d6349c442fc74182a0a2f
+source-git-commit: 35f2812c1a1a4eed090e04d67014fcebf88a80ec
 workflow-type: tm+mt
-source-wordcount: '859'
+source-wordcount: '854'
 ht-degree: 0%
 
 ---

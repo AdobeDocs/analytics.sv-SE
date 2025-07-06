@@ -1,11 +1,11 @@
 ---
-description: I segmenthanteraren kan du skapa ett arbetsflöde som innefattar godkännande av segment för olika programnivåer, för specifika avdelningar eller grupper, och som är förenligt med rapporteringsprinciperna.
+description: Lär dig hur du som administratör kan godkänna segment.
 title: Godkänn segment
 feature: Segmentation
 exl-id: dc56adb0-56b3-4dcb-b47b-d76b0a32ec62
-source-git-commit: 80e4a3ba4a5985563fcf02acf06997b4592261e4
+source-git-commit: 35f2812c1a1a4eed090e04d67014fcebf88a80ec
 workflow-type: tm+mt
-source-wordcount: '129'
+source-wordcount: '109'
 ht-degree: 0%
 
 ---
@@ -25,4 +25,4 @@ Så här tar du bort segment:
 1. Välj ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Unapprove]** i åtgärdsfältet.
 
 
-Du kan segmentera listan med segment efter godkända segment. Välj **[!UICONTROL Other segments]** på panelen ![Segment](/help/assets/icons/Filter.svg) **[!UICONTROL Segment]** och välj **[!UICONTROL Approved]**. Mer information finns i [Segmentera listan med segment](t-seg-filter.md).
+Du kan segmentera listan med segment efter godkända segment. Välj **[!UICONTROL Other segments]** på panelen ![Segment](/help/assets/icons/Filter.svg) **[!UICONTROL Segment]** och välj **[!UICONTROL Approved]**. Mer information finns i [Filtrera listan med segment](t-seg-filter.md).

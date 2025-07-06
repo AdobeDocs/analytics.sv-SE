@@ -1,26 +1,26 @@
 ---
-description: Beräknade och avancerade beräknade värden är anpassade mått som du kan skapa utifrån befintliga mätvärden.
-keywords: Beräknade mått;Avancerade beräknade värden
-title: Beräknade och avancerade beräknade värden
+description: Lär dig mer om beräknade mätvärden som du kan skapa utifrån befintliga mätvärden.
+keywords: Beräknade mätvärden
+title: Översikt över beräknade mätvärden
 feature: Calculated Metrics
 exl-id: 9bf8239f-cf74-4feb-85e5-d47805e90afb
-source-git-commit: d85e6990998e3c153ef969d8dc7f3a4835f683bf
+source-git-commit: 35f2812c1a1a4eed090e04d67014fcebf88a80ec
 workflow-type: tm+mt
-source-wordcount: '272'
-ht-degree: 0%
+source-wordcount: '267'
+ht-degree: 1%
 
 ---
 
 # Översikt över beräknade mätvärden
 
-Beräknade och anpassade mätvärden som ni kan skapa utifrån befintliga mätvärden.
+Beräknade värden är anpassade värden som du kan skapa utifrån befintliga mätvärden.
 
-Beräknade mätvärden är ett mycket flexibelt sätt att skapa, hantera och strukturera mätvärden. Med beräknade mätvärden kan du som marknadsförare, produktchefer och analytiker ställa frågor om data utan att behöva ändra implementeringen av [!DNL Analytics].
+Beräknade mätvärden är anpassade mätvärden som du kan skapa utifrån befintliga mätvärden. Beräknade mätvärden är ett flexibelt sätt att skapa, hantera och strukturera anpassade mätvärden som gör att ni kan analysera data utan att behöva ändra implementeringen.
 
 Beräknade mått är tillgängliga i varje [!DNL Analytics]-paket, men Adobe Analytics Foundation Pack för Experience Cloud är begränsat till grundläggande beräknade mått, inklusive [formattyper (decimal, time, percent, currency)](/help/components/c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-build-metrics.md), [allokeringsändringar (standard, linjär, deltagande osv.)](/help/components/c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/m-metric-type-alloc.md), [metriska typer (standard, total)](/help/components/c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/m-metric-type-alloc.md) och [grundläggande operatorer](c-workflow/cm-workflow/c-build-metrics/cm-build-metrics.md#operators) (lägg till, subtrahera, multiplicera och dividera).
 
 
-Mer information finns i [Adobe Analytics produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-analytics.html).
+Mer information finns i [Adobe Analytics produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-analytics.html).
 
 <!--
 Here is a comparison of calculated metrics and advanced calculated metrics capabilities: 
@@ -85,6 +85,6 @@ Here is a short overview of the [!UICONTROL Calculated metrics] tools:
 >[!MORELIKETHIS]
 >
 >[Skapa mått](/help/components/c-calcmetrics/c-workflow/cm-workflow/cm-workflow.md)
->&#x200B;>[Bygg mått ](/help/components/c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-build-metrics.md)
->&#x200B;>[Använd funktioner ](/help/components/c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-using-functions.md)
+>>[Bygg mått ](/help/components/c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-build-metrics.md)
+>>[Använd funktioner ](/help/components/c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-using-functions.md)
 >

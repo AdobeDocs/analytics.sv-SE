@@ -1,11 +1,11 @@
 ---
-description: Lär dig mer om hur du skapar beräknade mätvärden.
-title: Arbetsflöde för beräknade mätvärden
+description: Lär dig hur du skapar beräknade värden.
+title: Skapa beräknade värden
 feature: Calculated Metrics
 exl-id: b3380d6b-53b5-40af-8e23-34772d79ae26
-source-git-commit: 183f6e39fb1d14b7b29817e76da0302ba23cd5d6
+source-git-commit: 35f2812c1a1a4eed090e04d67014fcebf88a80ec
 workflow-type: tm+mt
-source-wordcount: '346'
+source-wordcount: '342'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Innan du skapar beräknade värden bör du tänka på följande arbetsflöde:
 
 | Arbetsflödesuppgift | Beskrivning |
 | --- | --- |
-| Planera beräknade värden | I synnerhet för mätvärden som kommer att bli officiellt&quot;godkända&quot; är det rimligt att beskriva vilka beräknade mätvärden som kommer att användas i stor omfattning och hur de kommer att definieras. |
+| Planera beräknade värden | I synnerhet för mätvärden som kommer att godkännas officiellt är det rimligt att planera för vilka beräknade mätvärden som ska användas och hur de ska definieras. |
 | [Bygg](c-build-metrics/cm-build-metrics.md) beräknade värden | Bygg och redigera beräknade och avancerade beräknade mätvärden för användning i [!DNL Analytics]-komponenter.  Se [exempel](c-build-metrics/cm-build-metrics.md) på hur du skapar beräknade mått. |
 | [Tagg](cm-tagging.md) beräknade mått | Märk beräknade mätvärden för enkel organisation och delning. Se hur du planerar och tilldelar taggar för enkla och avancerade sökningar och organisation. |
 | [Godkänn ](cm-approving.md) beräknade mått | Godkänn beräknade värden för att göra dem kanoniska. |

@@ -4,17 +4,17 @@ audience: end-user
 user-guide-title: Handbok om Analytics-verktyg
 breadcrumb-title: Användarhandbok om verktyg
 user-guide-description: Lär dig hur du använder verktyg i Analytics, inklusive Analysis Workspace, Analytics Dashboards, Report Builder, Legacy Report Builder och Activity Map.
-source-git-commit: bf8bc40e3ec325e8e70081955fb533eee66a1734
+source-git-commit: 35f2812c1a1a4eed090e04d67014fcebf88a80ec
 workflow-type: tm+mt
-source-wordcount: '868'
-ht-degree: 9%
+source-wordcount: '867'
+ht-degree: 10%
 
 ---
 
 # Adobe Analytics Tools Guide {#analyze}
 
 + [Handbok om Analytics-verktyg](home.md)
-+ [Versionsinformation för analyser](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html?lang=sv-SE)
++ [Versionsinformation för analyser](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html)
 + Kom igång med Adobe Analytics {#admin-overview}
    + [Analytics - översikt](get-started/analytics-overview.md)
    + [Kom igång (efter roll)](get-started/get-started-by-role.md)
@@ -118,7 +118,7 @@ ht-degree: 9%
       + [Venn](analysis-workspace/visualizations/venn.md)
    + Panel {#panels}
       + [Översikt](analysis-workspace/c-panels/panels.md)
-      + [Tom](analysis-workspace/c-panels/blank-panel.md)
+      + [Tom panel](analysis-workspace/c-panels/blank-panel.md)
       + [Analyser för Target](analysis-workspace/c-panels/a4t-panel.md)
       + [Tillskrivning](analysis-workspace/c-panels/attribution.md)
       + [Frihandsfigur](analysis-workspace/c-panels/freeform-panel.md)
@@ -136,7 +136,7 @@ ht-degree: 9%
       + [Översikt](analysis-workspace/curate-share/send-schedule-files.md)
       + [Kuratprojekt](analysis-workspace/curate-share/curate.md)
       + [Dela projekt](analysis-workspace/curate-share/share-projects.md)
-      + [Delningsbara länkar](analysis-workspace/curate-share/shareable-links.md)
+      + [Skapa delningsbara länkar](analysis-workspace/curate-share/shareable-links.md)
       + [Skrivskyddade projekt](analysis-workspace/curate-share/view-only-projects.md)
       + [Ladda ned](analysis-workspace/curate-share/download-send.md)
       + [Skicka och schemalägg](analysis-workspace/curate-share/t-schedule-report.md)
@@ -145,13 +145,12 @@ ht-degree: 9%
       + [Modell-, behållare- och uppslagsfönster](analysis-workspace/attribution/models.md)
       + [Algoritmisk attribuering](analysis-workspace/attribution/algorithmic.md)
       + [God praxis](analysis-workspace/attribution/best-practices.md)
-      + [Vanliga frågor och svar](analysis-workspace/attribution/faq.md)
+      + [Frågor och svar](analysis-workspace/attribution/faq.md)
    + [Resehantering](analysis-workspace/journey-iq.md)
    + [Segmentjämförelse](analysis-workspace/segment-iq.md)
    + Avvikelseidentifiering {#anomaly-detection}
       + [Översikt](analysis-workspace/c-anomaly-detection/anomaly-detection.md)
       + [Visa avvikelser](analysis-workspace/c-anomaly-detection/view-anomalies.md)
-      + [Inaktivera avvikelseidentifiering](analysis-workspace/c-anomaly-detection/anomaly-detection-turnoff.md)
       + [Kör tilläggsanalys](analysis-workspace/c-anomaly-detection/run-contribution-analysis.md)
       + [Statistisk teknik](analysis-workspace/c-anomaly-detection/statistics-anomaly-detection.md)
    + [Användarinställningar](analysis-workspace/user-preferences.md)
@@ -160,7 +159,7 @@ ht-degree: 9%
       + [Optimera prestanda](analysis-workspace/workspace-faq/optimizing-performance.md)
       + [Fel och felsökning](analysis-workspace/workspace-faq/error-messages.md)
       + [Begränsningar](analysis-workspace/workspace-faq/aw-limitations.md)
-      + [Administrationskrav](analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
+      + [Krav](analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
       + [Tillgänglighet](analysis-workspace/workspace-faq/aw-accessibility.md)
 + Report Builder {#report-builder}
    + [Report Builder - översikt](report-builder/rb-overview.md)

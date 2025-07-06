@@ -1,11 +1,11 @@
 ---
-description: Alla segment som skapas i segmentbyggaren är inte kompatibla med Data Warehouse. I den här tabellen visas de funktioner som stöds.
+description: Förstå varför inte alla segment som skapas i segmentbyggaren är kompatibla med Data Warehouse. Lär dig vilka funktioner som stöds.
 title: Data Warehouse segmentkompatibilitet
 feature: Segmentation
 exl-id: 66b86226-ef4c-4a1a-abe1-3c3accf419e5
-source-git-commit: 80e4a3ba4a5985563fcf02acf06997b4592261e4
+source-git-commit: 35f2812c1a1a4eed090e04d67014fcebf88a80ec
 workflow-type: tm+mt
-source-wordcount: '342'
+source-wordcount: '343'
 ht-degree: 1%
 
 ---
@@ -99,4 +99,4 @@ Alla segment som skapats i segmentverktyget är inte kompatibla med [!DNL Data W
  </tbody> 
 </table>
 
-*Obs! Data Warehouse stöder inte alla fall där en `exclusion` - eller `without` -behållare används när `AND/OR` används. När du använder en sådan kombination stöds endast de segment som kan skrivas om som `A AND NOT B` (eller **include this property**&#x200B;och **exclude this property**) i Data Warehouse.*
+*Obs! Data Warehouse stöder inte alla fall där en `exclusion` - eller `without` -behållare används när `AND/OR` används. När du använder en sådan kombination stöds endast de segment som kan skrivas om som `A AND NOT B` (eller **include this property**och **exclude this property**) i Data Warehouse.*

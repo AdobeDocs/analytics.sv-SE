@@ -4,7 +4,7 @@ keywords: segmentering;segment
 title: Segmentbehållare
 feature: Segmentation
 exl-id: f30d525b-32b7-47d5-b92d-24bf86d8a471
-source-git-commit: 80e4a3ba4a5985563fcf02acf06997b4592261e4
+source-git-commit: 35f2812c1a1a4eed090e04d67014fcebf88a80ec
 workflow-type: tm+mt
 source-wordcount: '3548'
 ht-degree: 1%
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 # Segmentbehållare
 
-Ett segment anger villkor för att filtrera en besökare baserat på besökarens attribut eller interaktioner med din plats. Om du vill ange villkor i ett segment anger du regler för att filtrera besökare baserat på besökarens egenskaper och/eller navigeringsegenskaper. Om du vill dela upp besöksdata ytterligare kan du filtrera baserat på specifika besök och/eller sidvisningsträffar för varje besökare. Segmentbyggaren har en enkel arkitektur för att skapa dessa underuppsättningar och tillämpa regler som kapslade, hierarkiska besökar-, besöks- eller träbehållare.
+Ett segment ställer in villkor för att filtrera en besökare baserat på besökarens attribut eller interaktioner med platsen. Om du vill ange villkor i ett segment anger du regler för att filtrera besökare baserat på besökarens egenskaper och/eller navigeringsegenskaper. Om du vill dela upp besöksdata ytterligare kan du filtrera baserat på specifika besök och/eller sidvisningsträffar för varje besökare. Segmentbyggaren har en enkel arkitektur för att skapa dessa underuppsättningar och tillämpa regler som kapslade, hierarkiska besökar-, besöks- eller träbehållare.
 
 Behållararkitekturen som används i [segmentbyggaren](/help/components/segmentation/segmentation-workflow/seg-build.md) definierar:
 
@@ -47,7 +47,7 @@ Med varje behållare kan du rapportera över en besökares historik, interaktion
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Segmentbehållare](https://video.tv.adobe.com/v/3429102?quality=12&learn=on&captions=swe){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Segmentbehållare](https://video.tv.adobe.com/v/25401?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 

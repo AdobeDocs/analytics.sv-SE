@@ -1,12 +1,12 @@
 ---
-description: Kör en bidragsanalysrapport i ett Workspace-projekt.
+description: Lär dig hur du kör en bidragsanalysrapport i Analysis Workspace.
 title: Kör bidragsanalys
 role: User, Admin
 exl-id: 20d1ba8d-3e4e-4702-ae28-5eb6bf00847b
 feature: Anomaly Detection
-source-git-commit: 8f7c6a0d1477b599b05aeb7b74c4ee96531d294d
+source-git-commit: b4c1636bdc9d5be522b16f945a46beabf4f7a733
 workflow-type: tm+mt
-source-wordcount: '518'
+source-wordcount: '520'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Stegen för att köra bidragsanalys är:
    1. I en frihandstabell med daglig granularitet väljer du **[!UICONTROL Run contribution analysis]** på snabbmenyn på valfri rad. Du kan till och med köra analysen på rader som inte uppvisar några avvikelser.
    1. I en frihandstabell med daglig granularitet, på en rad som anger en avvikelse:
       1. Välj indikatorn ◥.
-      1. Välj **[!UICONTROL Open Contribution Analysis]** i dialogrutan ![Varning](/help/assets/icons/Alert.svg) **[!UICONTROL Anomaly detected]**.
+      1. Välj ![ i dialogrutan ](/help/assets/icons/Alert.svg)Varning **[!UICONTROL Anomaly detected]** **[!UICONTROL Open Contribution Analysis]**.
 
 
 

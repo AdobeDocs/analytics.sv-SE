@@ -1,12 +1,11 @@
 ---
-description: Använda segment i en rapport.
+description: Lär dig använda segment i Analysis Workspace.
 title: Använd segment
-feature: Segmentation
 role: User
 exl-id: 870026e2-a3a3-4d87-a6c2-6189098d3676
-source-git-commit: bf58da2a39e8b9fd298356f23a9bf8f6c394d3de
+source-git-commit: 35f2812c1a1a4eed090e04d67014fcebf88a80ec
 workflow-type: tm+mt
-source-wordcount: '146'
+source-wordcount: '147'
 ht-degree: 0%
 
 ---

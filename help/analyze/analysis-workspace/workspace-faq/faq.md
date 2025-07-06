@@ -1,13 +1,13 @@
 ---
-description: Vanliga frågor om Workspace
+description: Få svar på vanliga frågor om Analysis Workspace.
 title: Vanliga frågor
 feature: Workspace Basics
 role: User, Admin
 exl-id: cf7a9a73-bcbe-4bf5-b5dc-913199ab229c
-source-git-commit: d37fa0aff0b1bbe196b943bc26e86b1e79936184
+source-git-commit: 35f2812c1a1a4eed090e04d67014fcebf88a80ec
 workflow-type: tm+mt
-source-wordcount: '545'
-ht-degree: 25%
+source-wordcount: '551'
+ht-degree: 24%
 
 ---
 
@@ -26,7 +26,7 @@ Eftersom Analysis Workspace är ett rapportverktyg påverkar det inte datainsaml
 +++
 
 +++Hur många rapportsviter kan visas i ett Analysis Workspace-projekt?
-Nu kan du skapa projekt i Analysis Workspace med data från fler [flera rapportsviter](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/multiple-report-suites.html?lang=sv-SE).
+Nu kan du skapa projekt i Analysis Workspace med data från fler [flera rapportsviter](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/multiple-report-suites.html).
 +++
 
 +++Hur implementerar man Analysis Workspace?
@@ -68,7 +68,7 @@ Om du har skapat en rapport om arbetsytan men det inte finns några data kan du 
 * Kontrollera att rapportsviten är ifylld med data.
 * Om du tillämpade ett segment i rapporten kanske segmentvillkoren inte matchar några data. Prova med att ta bort segmentet eller justera segmentdefinitionen.
 * Kontrollera datumintervallet i det övre högra hörnet och se till att det har ett förväntat värde.
-* Navigera till webbplatsen och använd [Felsökning](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html?lang=sv-SE) för att verifiera att data samlas in.
+* Navigera till webbplatsen och använd [Felsökning](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html) för att verifiera att data samlas in.
 
 
 +++

@@ -1,22 +1,22 @@
 ---
-description: Läs om segmenteringsfunktionerna i Analysis Workspace.
-title: Segmenteringsfunktioner i Analysis Workspace
+description: Läs om avancerade segmenteringsfunktioner i Analysis Workspace.
+title: Avancerade funktioner
 feature: Segmentation
 exl-id: d8bf7d36-32d7-4652-b744-7cc915d94b79
-source-git-commit: 80e4a3ba4a5985563fcf02acf06997b4592261e4
+source-git-commit: 35f2812c1a1a4eed090e04d67014fcebf88a80ec
 workflow-type: tm+mt
-source-wordcount: '41'
+source-wordcount: '37'
 ht-degree: 0%
 
 ---
 
-# Segmenteringsfunktioner i Analysis Workspace
+# Avancerade funktioner
 
-Utöver [standardanvändningen av segment](/help/components/segmentation/segmentation-workflow/t-seg-apply.md) i Analysis Workspace finns följande funktioner:
+Förutom [standardanvändningen av segment](/help/components/segmentation/segmentation-workflow/t-seg-apply.md) i Analysis Workspace finns följande specifika funktioner:
 
 * [Segmentjämförelse](/help/analyze/analysis-workspace/c-panels/c-segment-comparison/segment-comparison.md)
 
-* [Använd segment i bortfallsanalys](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/fallout/compare-segments-fallout.html?lang=sv-SE)
+* [Använd segment i bortfallsanalys](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/fallout/compare-segments-fallout.html)
 
 >[!MORELIKETHIS]
 >

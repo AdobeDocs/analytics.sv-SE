@@ -1,16 +1,18 @@
 ---
-description: Felsök och åtgärda problem som rör segment.
-title: Felsökning av segmentering
+description: Lär dig hur du felsöker och åtgärdar problem som rör segment.
+title: Felsökning
 feature: Segmentation
 exl-id: ca51110e-1ba7-4182-b5b2-baf9b0c017af
-source-git-commit: d85e6990998e3c153ef969d8dc7f3a4835f683bf
+source-git-commit: 35f2812c1a1a4eed090e04d67014fcebf88a80ec
 workflow-type: tm+mt
-source-wordcount: '164'
-ht-degree: 0%
+source-wordcount: '179'
+ht-degree: 1%
 
 ---
 
-# Felsökning av segmentering
+# Felsökning
+
+I den här artikeln listas några vanliga problem med segment och hur du felsöker dessa problem.
 
 <!-- Looks like this is not part anymore of the current UI.
 

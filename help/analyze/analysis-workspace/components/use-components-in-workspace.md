@@ -1,10 +1,10 @@
 ---
 description: Lär dig använda komponenter i ett projekt i Analysis Workspace
-title: Använda komponenter i Analysis Workspace
+title: Använda komponenter i ett projekt
 feature: Workspace Basics
 role: User, Admin
 exl-id: fb56e794-67e3-4f85-960e-b90684300fa0
-source-git-commit: bf8bc40e3ec325e8e70081955fb533eee66a1734
+source-git-commit: 35f2812c1a1a4eed090e04d67014fcebf88a80ec
 workflow-type: tm+mt
 source-wordcount: '950'
 ht-degree: 0%

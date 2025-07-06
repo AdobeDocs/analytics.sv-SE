@@ -1,22 +1,22 @@
 ---
-description: Med segmentverktyget kan du jämföra och begränsa värden med hjälp av valda operatorer.
-title: Jämförelseoperatorer för segment
+description: Lär dig hur du använder operatorerna i segmentbyggaren för att jämföra och begränsa värden.
+title: Operatorer
 feature: Segmentation
 exl-id: 1ec1ff05-03a9-4151-8fcb-a72ebbce87dd
-source-git-commit: 80e4a3ba4a5985563fcf02acf06997b4592261e4
+source-git-commit: 35f2812c1a1a4eed090e04d67014fcebf88a80ec
 workflow-type: tm+mt
-source-wordcount: '1056'
+source-wordcount: '1054'
 ht-degree: 0%
 
 ---
 
 # Jämförelseoperatorer för segment
 
-Med segmentverktyget kan du jämföra och begränsa värden med hjälp av valda operatorer. Det finns tre kategorier av operatorer: Standard, Data Warehouse och Distinct Count.
+Med segmentverktyget kan du jämföra och begränsa värden med hjälp av valda operatorer. Det finns tre kategorier av operatorer: [Standard](#standard-operators), [Data Warehouse](#data-warehouse-operators) och [Distinkt antal](#distinct-count-operators).
 
 Beroende på vilken operator du väljer:
 
-* Ange ett värde
+* Du kan ange ett värde.
 * Du kan ange en del av ett värde och välja från en nedrullningsbar meny (om den är tillgänglig).
 * Välj omedelbart ett värde i listrutan (om tillgängligt).
 
@@ -46,7 +46,7 @@ Du har till exempel ett sidnamn som heter *Min coola produkt*.
 | **[!UICONTROL contains all of]** | Returnerar objekt jämfört med delsträngarna, inklusive flera värden som sammanfogats. Om du till exempel anger `Search Results` med den här operatorn för dimensionen **[!UICONTROL Page Name]** matchar *sökresultaten* och *sökresultaten*, men inte *sökresultaten* eller *resultaten* individuellt. Regeln skulle matcha *Sök* OCH *Resultat* som hittades tillsammans. Indatafältet för den här operatorn är blankstegsavgränsat (100 ord). |
 | **[!UICONTROL does not contain all of]** | Identifierar objekt jämfört med delsträngar, inklusive flera sammanfogade värden, och returnerar sedan bara objekt utan dessa värden. Om du till exempel anger `Search Results` med den här operatorn för dimensionen **[!UICONTROL Page Name]** skulle *sökresultat* och *sökresultat* identifieras (men inte *Sök* eller *Resultat* individuellt) och sedan utelämnas dessa objekt. Indatafältet för den här operatorn är blankstegsavgränsat (100 ord). |
 | **[!UICONTROL contains any of]** | Returnerar objekt jämfört med delsträngarna, inklusive flera värden som är förenade med eller oberoende av varandra. Om du till exempel anger `Search Results` med den här operatorn skulle det matcha *sökresultat*, *sökresultat*, *sökresultat* och *resultat*. Det skulle matcha antingen *Sök* ELLER *Resultat* som hittades tillsammans eller oberoende av varandra. Indatafältet för den här operatorn är blankstegsavgränsat (100 ord). |
-| **[!UICONTROL does not contain any of]** | Identifierar objekt baserat på delsträngar och returnerar sedan värden som inte innehåller dessa delsträngar. Den kan ha flera sammanfogade värden eller värden som identifieras separat. Om du till exempel anger `Search Results` för dimensionen **[!UICONTROL Page Name]** skulle det matcha *sökresultatet* s, *sökresultaten* h*, *Search* och *Results* där antingen *Search* eller *Result* hittas tillsammans eller oberoende av varandra. Då exkluderas objekt som innehåller dessa delsträngar. Indatafältet för den här operatorn är blankstegsavgränsat (100 ord). |
+| **[!UICONTROL does not contain any of]** | Identifierar objekt baserat på delsträngar och returnerar sedan värden som inte innehåller dessa delsträngar. Den kan ha flera sammanfogade värden eller värden som identifieras separat. Om du till exempel anger `Search Results` för dimensionen **[!UICONTROL Page Name]** skulle det matcha *sökresultatet* s, *resultaten av sökningen*, *sökningen* och *resultaten* där antingen *sökningen* eller *resultatet* hittas tillsammans eller oberoende av varandra. Då exkluderas objekt som innehåller dessa delsträngar. Indatafältet för den här operatorn är blankstegsavgränsat (100 ord). |
 | **[!UICONTROL starts with]** | Returnerar objekt som börjar med det angivna strängvärdet. |
 | **[!UICONTROL does not start with]** | Returnerar alla objekt som inte börjar med det angivna strängvärdet. Det här är inversen till operatorn **[!UICONTROL starts with]**. |
 | **[!UICONTROL ends with]** | Returnerar objekt som slutar med ett strängvärde angivet. |

@@ -3,7 +3,7 @@ description: Här beskrivs de steg och bästa metoder som ska följas när du pl
 title: Planera segment
 feature: Segmentation
 exl-id: ad4c6078-6f77-428e-b1f1-168f80d02668
-source-git-commit: 7a47d837eeae65f2e98123aca78029bfeb7ffe9d
+source-git-commit: 35f2812c1a1a4eed090e04d67014fcebf88a80ec
 workflow-type: tm+mt
 source-wordcount: '208'
 ht-degree: 0%

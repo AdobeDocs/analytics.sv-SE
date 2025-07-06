@@ -1,20 +1,21 @@
 ---
-title: Vanliga frågor om attribut
+title: Vanlig fråga om attribuering
 description: Få svar på vanliga frågor om attribuering.
 feature: Attribution
 role: User, Admin
 exl-id: 8e05957a-f954-4e61-aeed-cd2bd2fe11f8
-source-git-commit: 8f7c6a0d1477b599b05aeb7b74c4ee96531d294d
+source-git-commit: 35f2812c1a1a4eed090e04d67014fcebf88a80ec
 workflow-type: tm+mt
-source-wordcount: '1230'
-ht-degree: 0%
+source-wordcount: '1179'
+ht-degree: 1%
 
 ---
 
-# Vanliga frågor om attribut
+# Frågor och svar
 
+Här är svar på vanliga frågor om attribuering.
 
-++## Vad är radobjektet &quot;Inget&quot; när attribut används?
+++## Vad är radobjektet **[!UICONTROL None]** när attribuering används?
 
 Radobjektet Ingen är ett objekt som fångar upp alla konverteringar som sker utan beröringspunkter i uppslagsfönstret. Om du vill minska antalet konverteringar som tilldelats radobjektet Ingen kan du prova att använda ett anpassat uppslagsfönster med en längre uppslagsperiod.
 
@@ -44,12 +45,13 @@ I det här exemplet visar inte Tävlingsbidrag och Studsfrekvens data från 31 a
 +++
 
 
-+++## När ska jag använda besök, besökare eller anpassad attribueringssökning?
+<!-- not relevant anymore due to introduction of separation of container and lookback window 
++++## When should I use a visit, visitor, or custom attribution lookback?
 
-Vilken attribueringslookback du väljer beror på ditt användningssätt. Om konverteringen tar längre tid än ett besök rekommenderar vi besökare eller anpassat uppslag. För längre konverteringscykler är anpassade uppslagsfönster bäst eftersom de är den enda typ som kan hämta in data från före rapportfönstret.
+The choice of attribution lookback depends on your use case. If conversions typically take longer than a single visit, a visitor or custom lookback is recommended. For longer conversion cycles, custom lookback windows are best as they are the only type that can pull in data from prior to the reporting window.
 
 +++
-
+-->
 
 ++## Hur fungerar props och eVars när man använder attribuering?
 

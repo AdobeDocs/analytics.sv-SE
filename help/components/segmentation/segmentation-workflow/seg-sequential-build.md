@@ -1,11 +1,11 @@
 ---
-description: Sekventiella segment skapas med operatorn THEN i stället för AND eller OR. DÄREFTER betyder det att ett segmentvillkor är uppfyllt, följt av ett annat. Som standard identifierar ett sekventiellt segment alla matchande data och visar filtret Inkludera alla. Sekventiella segment kan filtreras ytterligare till en delmängd av matchande träffar med alternativen Endast före sekvens och Endast efter sekvens.
-title: Skapa sekventiella segment
+description: Lär dig mer om sekventiella segment som använder operatorn THEN för att definiera en sekvens av segmentvillkor.
+title: SequentialSsegments
 feature: Segmentation
 exl-id: 2ac4e6db-3111-45e5-bedf-7d9b7b1ae352
-source-git-commit: 60a13b42e8792a1a68fa447c2584894492c4a570
+source-git-commit: acc32dc1589a08c20eaf414cd6f1a760ec8e2a56
 workflow-type: tm+mt
-source-wordcount: '2307'
+source-wordcount: '2262'
 ht-degree: 1%
 
 ---
@@ -78,7 +78,7 @@ Så här använder du tidsbegränsningar för operatorn **[!UICONTROL Then]**:
 1. Välj ![Klocka](/help/assets/icons/Clock.svg).
 1. Välj **[!UICONTROL Within]** eller **[!UICONTROL After]** på snabbmenyn.
 1. Ange en tidsperiod (**[!UICONTROL Minute]**, **[!UICONTROL Hour]**, fram till **[!UICONTROL Years]**).
-1. Välj ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL *number *]**&#x200B;för att öppna ett popup-fönster där du kan skriva in eller ange ett nummer med **[!UICONTROL -]**&#x200B;eller **[!UICONTROL +]**.
+1. Välj ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL *number *]**för att öppna ett popup-fönster där du kan skriva in eller ange ett nummer med **[!UICONTROL -]**eller **[!UICONTROL +]**.
 
 Använd ![CrossSize75](/help/assets/icons/CrossSize75.svg) om du vill ta bort en tidsbegränsning.
 
@@ -97,7 +97,7 @@ Några exempel på hur du använder tidsbegränsningar.
 
 ##### operatorn [!UICONTROL After]
 
-Identifiera besökare som besökte en sida och sedan en annan sida först efter två veckor. Till exempel besökare som besökte hemsidan, men kvinnorna | Shoes page only after two week.
+Identifiera besökare som besökte en sida och sedan en annan sida först efter två veckor. Till exempel besökare som har besökt hemsidan, men kvinnorna | Shoes page only after two week.
 
 ![Sekvens efter](assets/sequence-after.png)
 
@@ -213,7 +213,7 @@ Nedan finns exempel på [!UICONTROL Exclude].
 
 #### [!UICONTROL Exclude] inom
 
-Identifiera besökare som besökt en sida, inte besökt en annan sida och sedan besökt ytterligare en sida. Du utelämnar behållaren med ![Inställning](/help/assets/icons/Setting.svg) [!UICONTROL Exclude]. En exkluderad behållare identifieras av ett tunt rött streck till vänster.
+Identifiera besökare som besökt en sida, inte besökt en annan sida och sedan besökt ytterligare en sida. Du utelämnar behållaren med ![Inställning](/help/assets/icons/Setting.svg) [!UICONTROL Exclude]. Ett tunt rött streck till vänster identifierar en utesluten behållare.
 
 ![Exkludera sekvens](assets/sequence-exclude.png)
 
@@ -273,13 +273,13 @@ Identifiera besökare som besökt en sida eller en annan sida och sedan besökt 
 
 #### [!UICONTROL Exclude] [!UICONTROL And]
 
-Identifiera besökare som besökt en sida och som då uttryckligen inte besökt en uppsättning andra sidor, men som besökt ytterligare en sida. Besökare som till exempel besökte hemsidan, besökte inte sidan Män eller Kvinnor, utan besökte sidan Kids.
+Identifiera besökare som besökt en sida och som då uttryckligen inte besökt en uppsättning andra sidor, men som besökt ytterligare en sida. Till exempel besökte besökare som besökte hemsidan och inte sidan Män eller Kvinnor, men däremot barnsidan.
 
 ![Logikgrupp exkluderad och](assets/logicgroup-exclude-and.png)
 
 #### [!UICONTROL Exclude] [!UICONTROL Or]
 
-Identifiera besökare som besökt en sida och som då uttryckligen inte besökt någon sida i en uppsättning sidor, men som besökt ännu en sida. Besökare som till exempel besökte hemsidan, besökte inte sidan Män och Kvinnor, utan besökte sidan Kids.
+Identifiera besökare som besökt en sida och som då uttryckligen inte besökt någon sida i en uppsättning sidor, men som besökt ännu en sida. Till exempel besökte besökare som besökte hemsidan och inte sidan Män och Kvinnor, men däremot barnsidan.
 
 ![Logikgrupp exkluderad och](assets/logicgroup-exclude-or.png)
 
@@ -295,11 +295,11 @@ An example of a complex sequential segment if you want to find the visitors that
 
 ## Ett exempel
 
-Det sista exemplet är att ni vill identifiera besökare som har lärt sig om en viss produktsida, utan att dessa besökare någonsin påverkas av er Empower Your Move-kampanj. Och vid sitt första besök i din webbutik tittade de på hemsidan men inte närmare på några friskvårdsprodukter (kugghjulsprodukter) från kategorin Män. Vid sitt nästa besök direkt efter det gick de till en produktsida och lade en onlinebeställning utan att gå via startsidan först.
+Det sista exemplet är att ni vill identifiera besökare som har lärt sig om en viss produktsida, utan att dessa besökare någonsin påverkas av er Empower Your Move-kampanj. Och vid sitt första besök i din webbutik tittade de på hemsidan men inte närmare på några friskvårdsprodukter (kugghjulsprodukter) från kategorin Män. Vid sitt nästa besök direkt efter det beställde de en produkt på webben utan att gå via startsidan först.
 
 
 ![Exempel på komplexa sekventiella segment](assets/sequential-complex.png)
 
 >[!MORELIKETHIS]
 >
-> * [Mastering Sequential Logic in AA &amp; CJA: Introduktion till THEN](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/mastering-sequential-logic-in-aa-amp-cja-introduction-to-then/ba-p/738131)
+> * [Mastering Sequential Logic in AA &amp; CJA: Introduction to THEN](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/mastering-sequential-logic-in-aa-amp-cja-introduction-to-then/ba-p/738131)

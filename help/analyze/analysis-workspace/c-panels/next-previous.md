@@ -1,12 +1,12 @@
 ---
-description: Lär dig hur du använder panelen Nästa eller Föregående objekt som visar nästa eller föregående dimensionsobjekt för en viss dimension.
+description: Lär dig hur du använder panelen Nästa eller Föregående objekt som visar nästa eller föregående objekt för en viss dimension.
 title: Panelen Nästa eller Föregående objekt
 feature: Panels
 role: User, Admin
 exl-id: 9f2f8134-2a38-42bb-b195-5e5601d33c4e
-source-git-commit: 978bd8642011dd2c8e43564c90303f194689a64e
+source-git-commit: b4c1636bdc9d5be522b16f945a46beabf4f7a733
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '440'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-_I den här artikeln dokumenteras panelen Nästa eller Föregående objekt i_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**._<br/>_Se [Nästa eller föregående objektpanel](https://experienceleague.adobe.com/sv/docs/analytics/analyze/analysis-workspace/panels/next-previous)) för_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**-versionen av den här artikeln._
+_I den här artikeln dokumenteras panelen Nästa eller Föregående objekt i_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._<br/>_Se [Nästa eller föregående objektpanel](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/next-previous)) för_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**-versionen av den här artikeln._
 
 >[!ENDSHADEBOX]
 
@@ -52,7 +52,7 @@ Du kan konfigurera panelen [!UICONTROL Next or previous item] med följande inda
 | **[!UICONTROL Dimension]** | Välj dimensionen som du vill utforska nästa eller föregående objekt för. |
 | **[!UICONTROL Dimension item]** | Välj den specifika dimensionsobjektet i mitten av nästa/föregående fråga. |
 | **[!UICONTROL Direction]** | Ange om du letar efter dimensionsobjektet [!UICONTROL Next] eller [!UICONTROL Previous]. |
-| **[!UICONTROL Container]** | Välj behållaren [!UICONTROL Session] eller [!UICONTROL Person] (standard) för att fastställa omfattningen för din fråga. |
+| **[!UICONTROL Container]** | Välj behållaren **[!UICONTROL Visit]** eller **[!UICONTROL Visitor]** (standard) för att fastställa omfattningen för din fråga. |
 
 {style="table-layout:auto"}
 

@@ -1,9 +1,9 @@
 ---
-description: Beskriver hur du kopierar ett segment i segmenthanteraren
+description: Förstå hur du kopierar ett segment i segmenthanteraren
 title: Kopiera segment
 feature: Segmentation
 exl-id: a7e8fd95-bb22-4961-8aac-a898faca50cd
-source-git-commit: 80e4a3ba4a5985563fcf02acf06997b4592261e4
+source-git-commit: 35f2812c1a1a4eed090e04d67014fcebf88a80ec
 workflow-type: tm+mt
 source-wordcount: '98'
 ht-degree: 0%

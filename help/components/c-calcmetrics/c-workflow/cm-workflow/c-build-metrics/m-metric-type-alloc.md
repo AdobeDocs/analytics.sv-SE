@@ -1,11 +1,11 @@
 ---
-description: Läs mer om
-title: Mättyp och attribuering
+description: Lär dig mer om mätningstyp och attribuering.
+title: Mättyp och attribut
 feature: Calculated Metrics
 exl-id: 3fb98227-e2ef-4829-ae84-812f845470ee
-source-git-commit: 07590d00341f9016ee0728970483e77cb8d38a9d
+source-git-commit: 35f2812c1a1a4eed090e04d67014fcebf88a80ec
 workflow-type: tm+mt
-source-wordcount: '562'
+source-wordcount: '566'
 ht-degree: 0%
 
 ---

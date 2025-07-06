@@ -1,11 +1,11 @@
 ---
-description: Jämförelsetabell med segment mellan administratörer och icke-administratörer.
+description: Lär dig skillnaderna mellan administratörer och icke-administratörer för att använda och hantera segment.
 title: Segmenträttigheter efter roll
 feature: Segmentation
 exl-id: 54e35663-8a8d-4064-a44c-2385e24e6e10
-source-git-commit: 80e4a3ba4a5985563fcf02acf06997b4592261e4
+source-git-commit: 35f2812c1a1a4eed090e04d67014fcebf88a80ec
 workflow-type: tm+mt
-source-wordcount: '109'
+source-wordcount: '113'
 ht-degree: 0%
 
 ---

@@ -4,9 +4,9 @@ audience: end-user
 user-guide-title: Komponenthandbok för Analytics
 breadcrumb-title: Användarhandbok om komponenter
 user-guide-description: Hantera data med komponenter som segment, beräknade värden, virtuella rapportsviter, marknadsföringskanaler och klassificeringar. Lär dig mer om Analytics över flera enheter.
-source-git-commit: ff38740116ac6f12033ebdc17cffa3250a30f3f7
+source-git-commit: 35f2812c1a1a4eed090e04d67014fcebf88a80ec
 workflow-type: tm+mt
-source-wordcount: '767'
+source-wordcount: '759'
 ht-degree: 7%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 7%
 # [!DNL Adobe Analytics] Komponentguide {#components}
 
 + [Komponenthandbok för Analytics](home.md)
-+ [Versionsinformation för analyser](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html?lang=sv-SE)
++ [Versionsinformation för analyser](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html)
 + Mått {#dimensions}
    + [Översikt över dimensioner](dimensions/overview.md)
    + [Dimension-kompatibilitet](dimensions/compatibility.md)
@@ -194,7 +194,7 @@ ht-degree: 7%
       + [Ta bort segment](segmentation/segmentation-workflow/seg-delete.md)
       + [Kopiera segment](segmentation/segmentation-workflow/seg-copy.md)
       + [Hantera segment](segmentation/segmentation-workflow/seg-manage.md)
-      + [Publicera segment i Experience Cloud](segmentation/segmentation-workflow/seg-publish.md)
+      + [Publicera segment](segmentation/segmentation-workflow/seg-publish.md)
       + [Använd segment](segmentation/segmentation-workflow/t-seg-apply.md)
    + Referens {#segment-reference}
       + [Operatorer](segmentation/seg-reference/seg-operators.md)
@@ -210,10 +210,10 @@ ht-degree: 7%
       + [Skapa beräknade mått](c-calcmetrics/c-workflow/cm-workflow/cm-workflow.md)
       + [Hitta mätvärden](c-calcmetrics/c-workflow/cm-workflow/cm-finding.md)
       + [Bygg beräknade värden](c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-build-metrics.md)
-      + [Ett enkelt beräknat mått](c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-pvv.md)
-      + [Ett mer komplext beräknat mått](c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-orders-participation.md)
-      + [Bygg ett deltagandemått](c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/participation-metric.md)
+      + [Ett enkelt exempel](c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-pvv.md)
+      + [Ett mer komplext exempel](c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-orders-participation.md)
       + [Mättyp och attribuering](c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/m-metric-type-alloc.md)
+      + [Deltagandestatistik](c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/participation-metric.md)
       + [Segmenterade mätvärden](c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/metrics-with-segments.md)
       + [Stapla och ersätta segment](c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-stack-seg.md)
       + [Filtrerade och viktade mätvärden](c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-weighted-metric.md)

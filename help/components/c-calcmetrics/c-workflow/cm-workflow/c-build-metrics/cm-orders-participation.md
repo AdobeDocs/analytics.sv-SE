@@ -1,11 +1,11 @@
 ---
-description: Beskriver hur du skapar ett mätvärde som visar vilka marknadsföringskanaler som hjälper dig att hantera beställningar. Detta kan anpassas till alla dimensioner eller framgångsrika händelser av intresse.
-title: Mätvärde för orderassistenten
+description: Beskriver hur du skapar ett mätvärde som visar vilka marknadsföringskanaler som hjälper dig att hantera beställningar.
+title: Bygg ett mer komplext beräknat mått
 feature: Calculated Metrics
 exl-id: 33cb441d-d003-408d-ba67-1bcdd0e821ff
-source-git-commit: bf58da2a39e8b9fd298356f23a9bf8f6c394d3de
+source-git-commit: 35f2812c1a1a4eed090e04d67014fcebf88a80ec
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '208'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ I den här artikeln förklaras ett mer komplext exempel på ett beräknat mått.
 
 1. Börja med att skapa ett beräknat mått enligt beskrivningen i [Build metrics](/help/components/c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-build-metrics.md).
 
-1. Ange ett namn för måttet `Assisted Orders` eller något liknande i verktyget Beräknade mått.
+1. Ange ett namn för måttet `Assisted Online Orders` eller något liknande i verktyget Beräknade mått.
 
 1. Välj **[!UICONTROL Online Orders]**-måttet från **[!UICONTROL Metrics]**-komponenterna och dra måttet till **[!UICONTROL Definition]**-området.
 
@@ -41,4 +41,4 @@ Så här använder du det beräknade måttet:
 
 1. (Valfritt) Dela mätvärdena med andra användare i organisationen, enligt beskrivningen i [Dela beräknade värden](/help/components/c-calcmetrics/c-workflow/cm-workflow/cm-sharing.md).
 
-Det här är ett enkelt sätt att se vilka marknadsföringskanaler som har hjälpt till med körorder. Du kan också högerklicka på ett mätresultat i en frihandstabell och justera attribueringsmodellen direkt i tabellen.
+Det här är ett enkelt sätt att se vilka marknadsföringskanaler som har hjälpt till med körorder. Du kan också välja ett mått i en frihandstabell och justera attribueringsmodellen direkt från tabellen på snabbmenyn.

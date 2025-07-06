@@ -1,16 +1,16 @@
 ---
-description: Segmentbyggaren har en arbetsyta där du kan dra och släppa mått, segment och händelser för att segmentera besökare baserat på behållarhierarkiens logik, regler och operatorer. Med det här integrerade utvecklingsverktyget kan du skapa och spara enkla eller komplexa segment som identifierar besökarattribut och -åtgärder för besök och sidträffar.
+description: Lär dig hur du skapar segment genom att dra och släppa mätvärden, dimensioner, segment och händelser. Lär dig hur du kan bygga och spara enkla eller komplexa segment som identifierar besökarattribut och åtgärder över besök och sidträffar.
 title: Skapa segment
 feature: Segmentation
 exl-id: 2107f301-4137-4e97-9aa7-07824b842e16
-source-git-commit: 80e4a3ba4a5985563fcf02acf06997b4592261e4
+source-git-commit: c44bffa45ab8ed29ea28b91b2b3dc51811ab25fe
 workflow-type: tm+mt
-source-wordcount: '2055'
+source-wordcount: '1743'
 ht-degree: 0%
 
 ---
 
-# Segmentbyggare {#segment-builder}
+# Skapa segment {#build-segments}
 
 >[!CONTEXTUALHELP]
 >id="components_segments_productcompatibility"
@@ -25,7 +25,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="components_filters_datapreview"
 >title="Förhandsgranska data"
->abstract="Jämför data i det här segmentet med data i datavyn. Procentandelen för förhandsgranskning baseras på det totala antalet i datavyn från de **senaste 90 dagarna**.<br><br/>Om förhandsgranskningen inte läses in kan anslutningen fortfarande återfyllas."
+>abstract="Jämför data i det här segmentet med data i rapportsviten. Procentandelen för förhandsgranskning baseras på det totala antalet från de **senaste 90 dagarna**.<br><br/>Om förhandsgranskningen inte läses in kan anslutningen fortfarande återfyllas."
 
 
 Dialogrutan **[!UICONTROL Segment builder]** används för att skapa nya eller redigera befintliga segment. Dialogrutan heter **[!UICONTROL New segment]** eller **[!UICONTROL Edit segment]** för segment som du skapar eller hanterar från [[!UICONTROL Segment]-hanteraren ](/help/components/segmentation/segmentation-workflow/seg-manage.md).
@@ -47,7 +47,7 @@ Dialogrutan **[!UICONTROL Segment builder]** används för att skapa nya eller r
    | Element | Beskrivning |
    | --- | --- |
    | **[!UICONTROL Report suite]** | Du kan välja rapportsviten för segmentet. |
-   | **[!UICONTROL Project-only segment]** | En informationsruta som förklarar att segmentet bara är synligt i det projekt där det skapas och att segmentet inte läggs till i komponentlistan. Aktivera **[!UICONTROL Make this segment available to all your projects and add it to your component list]** om du vill ändra den inställningen. Den här informationsrutan visas bara när du skapar ett [snabbsegment](seg-quick.md) och vrider snabbsegmentsinformationen till ett reguljärt segment med **[!UICONTROL Open builder]** från [!UICONTROL Quick segment]-gränssnittet. |
+   | **[!UICONTROL Project-only segment]** | En informationsruta som förklarar att segmentet bara är synligt i det projekt där det skapades. Och att segmentet inte läggs till i komponentlistan. Aktivera **[!UICONTROL Make this segment available to all your projects and add it to your component list]** om du vill ändra den inställningen. Den här informationsrutan visas bara när du skapar ett [snabbsegment](seg-quick.md) och vrider snabbsegmentsinformationen till ett reguljärt segment med **[!UICONTROL Open builder]** från [!UICONTROL Quick segment]-gränssnittet. |
    | **[!UICONTROL Title]** ![Krävs](/help/assets/icons/Required.svg) | Namnge segmentet, till exempel `Last month mobile visitors`. |
    | **[!UICONTROL Description]** | Ange en beskrivning av segmentet, till exempel `Segment to define the mobile customers for the last month`. |
    | **[!UICONTROL Tags]** | Organisera segmentet genom att skapa eller använda en eller flera taggar. Börja skriva för att hitta befintliga taggar som du kan markera. Eller tryck på **[!UICONTROL ENTER]** för att lägga till en ny tagg. Välj ![CrossSize75](/help/assets/icons/CrossSize75.svg) om du vill ta bort en tagg. |
@@ -215,7 +215,7 @@ There are several ways to access the Segment builder:
 
 * **Analytics top navigation**: Click **[!UICONTROL Analytics]** > **[!UICONTROL Components]** > **[!UICONTROL Segments]**.
 * **[!UICONTROL Analysis Workspace]**: Click **[!UICONTROL Analytics]** > **[!UICONTROL Workspace]**, open a project and click **[!UICONTROL + New]** > **[!UICONTROL Create Segment]**.
-* **[!UICONTROL Report Builder]**: [Add or edit segments in Report Builder](https://experienceleague.adobe.com/sv/docs/analytics/analyze/report-builder/work-with-segments).
+* **[!UICONTROL Report Builder]**: [Add or edit segments in Report Builder](https://experienceleague.adobe.com/en/docs/analytics/analyze/report-builder/work-with-segments).
 
 ## Builder criteria {#section_F61C4268A5974C788629399ADE1E6E7C}
 
@@ -258,7 +258,7 @@ You can add rule definitions and containers to define your segments.
 1. **[!UICONTROL Value]**: The value you entered or selected for the dimension or segment or metric.
 1. **[!UICONTROL X]**: (Delete) Lets you delete this part of the segment definition.
 1. **[!UICONTROL Experience Cloud publishing]**: Publishing an Adobe Analytics segment to the Experience Cloud lets you use the segment for marketing activity in [!DNL Audience Manager] and in other activation channels. [Learn more...](/help/components/segmentation/segmentation-workflow/seg-publish.md)
-1. **[!UICONTROL Audience library]**: Adobe's audience services manage the translation of visitor data into audience segmentation. As such, creating and managing audiences is similar to creating and using segments, with the added ability to share the audience segment to the Experience Cloud. [Learn more...](https://experienceleague.adobe.com/docs/core-services/interface/audiences/audience-library.html?lang=sv-SE)
+1. **[!UICONTROL Audience library]**: Adobe's audience services manage the translation of visitor data into audience segmentation. As such, creating and managing audiences is similar to creating and using segments, with the added ability to share the audience segment to the Experience Cloud. [Learn more...](https://experienceleague.adobe.com/docs/core-services/interface/audiences/audience-library.html)
 1. **[!UICONTROL Search]**: Searches the list of dimensions, segments, or metrics.
 1. **[!UICONTROL Dimensions]**: (List) Click the header to expand.
 1. **[!UICONTROL Metrics]**: Click the header to expand.
@@ -362,9 +362,9 @@ By using segment stacking, you can reduce your segment count to 22 and stack the
 
 ## Segmentmallar {#concept_5098446CC78D441E93B8E4D1D1EA6558}
 
-Segmentmallar finns för vanliga användningsfall för segmentering, som&quot;förstagångsbesök&quot; eller&quot;besök från mobila enheter&quot;. De är tillgängliga i Workspace-projekt och i segmentbyggaren som byggstenar för nya segment.
+Segmentmallar tillhandahålls för vanliga användningsfall för segmentering, som **[!UICONTROL First-time Visits]** eller **[!UICONTROL Visits from Mobile Devices]**. De är tillgängliga i Workspace-projekt och i segmentbyggaren som byggstenar för nya segment.
 
-Mallar betecknas med Adobe &quot;A&quot;-logotyp. Ett exempel på mallarna visas nedan:
+En Adobe-logotyp ![AdobeLogoSmall](/help/assets/icons/AdobeLogoSmall.svg) identifierar mallar. Ett exempel på de tillgängliga mallarna visas nedan:
 
 <table id="table_98B87D807E9344C9BEBF072C65D87B1B"> 
  <thead> 
@@ -376,75 +376,79 @@ Mallar betecknas med Adobe &quot;A&quot;-logotyp. Ett exempel på mallarna visas
  <tbody> 
   <tr> 
    <td colname="col1"> Abandon Cart </td> 
-   <td colname="col2">Visa data för besökare som har lagt till artiklar i sina kundvagnar men inte beställt något. I segmentdefinitionen är behållaren Besök. Regeln för detta sekventiella segment är <p> Cart Additions är inte null </p> <p>Sedan </p> <p>Order är lika med 0. </p> </td> 
+   <td colname="col2">Visa data för besökare som har lagt till artiklar i sina kundvagnar men inte beställt något. I segmentdefinitionen är behållaren Visit. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Första gången du besöker </td> 
-   <td colname="col2">Visa data för besökare som har besökt högst en [1] gång. I segmentdefinitionen är behållaren Besök. Regeln är <p>Besök Nummer är lika med 1. </p> </td> 
+   <td colname="col2">Visa data för besökare som har besökt högst en [1] gång. I segmentdefinitionen är behållaren Visit. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Icke-köpare </td> 
-   <td colname="col2">Visa data för besökare som inte har deltagit i en orderhändelse. I segmentdefinitionen är behållaren Visitor. Det här segmentet använder exkluderingslogiken. Regeln är <p>Beställningar är inte null. </p> </td> 
+   <td colname="col2">Visa data för besökare som inte har deltagit i en orderhändelse. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Besök ej enstaka sida (ej studsar) </td> 
-   <td colname="col2">Visa data för besökare som har besökt mer än en gång. I segmentdefinitionen är behållaren Visitor. Det här segmentet använder exkluderingslogiken. Regeln är <p>Enkel åtkomst är inte null. </p> </td> 
+   <td colname="col1"> Besök som inte är en sida (ej studsar) </td> 
+   <td colname="col2">Visa data för besökare som har besökt mer än en gång.</p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Betalsökning </td> 
-   <td colname="col2">Visa data från besökare från en betald sökning. I segmentdefinitionen är behållaren Besök. Regeln är <p>Betalsökning är lika med 1. </p> </td> 
+   <td colname="col2">Visa data från besökare från en betald sökning.  </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Inköpare </td> 
-   <td colname="col2">Visa data för besökare som har deltagit i en orderhändelse. I segmentdefinitionen är behållaren Visitor. Regeln är <p>Beställningar är inte null. </p> </td> 
+   <td colname="col2">Visa data för besökare som har deltagit i en orderhändelse.  </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Returbesök </td> 
-   <td colname="col2">Visa data från besökare som har besökt minst en gång. I segmentdefinitionen är behållaren Besök. Regeln är <p>Besöken är större än 1. </p> </td> 
+   <td colname="col2">Visa data från besökare som har besökt minst en gång.  </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Besök på en sida </td> 
-   <td colname="col2"> Visa data från besök där du ser ett enda sidvärde, även om du kan skicka in flera sidvisningar under besöket. Enkelsidiga besök med avslutningslänkshändelser ingår i segmentet. I segmentdefinitionen är behållaren Besök. Regeln är <p>Enkelsidiga besök motsvarar 1. </p> </td> 
+   <td colname="col2"> Visa data från besök där du ser ett enda sidvärde, även om du kan skicka in flera sidvisningar under besöket. Enkelsidiga besök med avslutningslänkshändelser ingår i segmentet.  </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Den visade produkten lades inte till i kundvagnen </td> 
-   <td colname="col2">Visa data för besökare som visade produkter men inte hade några kundvagnstillägg. I segmentdefinitionen är behållaren Besök. Regeln för detta sekventiella segment är <p>Produktvyer är inte null </p> <p>Sedan </p> <p> Cart Additions är 0. </p> </td> 
+   <td colname="col2">Visa data för besökare som visade produkter men inte hade några kundvagnstillägg.  </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Besök från Campaign </td> 
-   <td colname="col2">Visa data från besökare som refereras av kampanjer. I segmentdefinitionen är behållaren Besök. Regeln är <p>Spårningskod är inte null. </p> </td> 
+   <td colname="col2">Visa data från besökare som refereras av kampanjer. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Besök från mobila enheter </td> 
-   <td colname="col2">Visa data från besökare som använder mobila enheter. I segmentdefinitionen är behållaren Besök. Regeln är <p>Mobilenheten är inte null. </p> </td> 
+   <td colname="col2">Visa data från besökare som använder mobila enheter. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Besök från naturlig sökning </td> 
-   <td colname="col2">Visa data från besökare som inte kommer från en betald sökning. I segmentdefinitionen är behållaren Besök. Regeln är <p>Betalsökning är lika med 0. </p> </td> 
+   <td colname="col2">Visa data från besökare som inte kommer från en betald sökning.  </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Besök från icke-mobil enhet </td> 
-   <td colname="col2">Visa data från besökare som inte använder mobila enheter. I segmentdefinitionen är behållaren Besök. Det här segmentet använder exkluderingslogiken. Regeln är <p>Mobilenhetstyp är lika med mobiltelefon </p> <p>eller </p> <p>Mobilenhetstyp är lika med bärbar dator. </p> </td> 
+   <td colname="col2">Visa data från besökare som inte använder mobila enheter. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Besök från telefoner </td> 
-   <td colname="col2">Visa data från besökare som använder telefoner. I segmentdefinitionen är behållaren Besök. Regeln är <p>Enhetstypen är lika med mobiltelefonen. </p> </td> 
+   <td colname="col2">Visa data från besökare som använder telefoner.  </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Besök från sökmotorer </td> 
-   <td colname="col2">Visa data från besökare som sökmotorer refererar till. I segmentdefinitionen är behållaren Besök. Regeln är <p>Refererartyp är lika med sökmotorer. </p> </td> 
+   <td colname="col2">Visa data från besökare som sökmotorer refererar till.</td> 
   </tr> 
   <tr> 
    <td colname="col1"> Besök från sociala webbplatser </td> 
-   <td colname="col2">Visa data från besökare som hänvisas till av sociala webbplatser. I segmentdefinitionen är behållaren Besök. Regeln är <p>Refererartypen är lika med sociala nätverk. </p> </td> 
+   <td colname="col2">Visa data från besökare som hänvisas till av sociala webbplatser.</td> 
   </tr> 
   <tr> 
    <td colname="col1"> Besök från surfplattor </td> 
-   <td colname="col2">Visa data från besökare med surfplattor. I segmentdefinitionen är behållaren Besök. Regeln är <p>Enhetstyp är lika med surfplatta. </p> </td> 
+   <td colname="col2">Visa data från besökare med surfplattor.</td> 
   </tr> 
   <tr> 
    <td colname="col1"> Besök med Visitor ID Cookie </td> 
-   <td colname="col2">Visa data från besökare till er webbplats, där en beständig cookie krävs. I segmentdefinitionen är behållaren Besök. Regeln är <p>Beständig cookie är lika med 1. </p> </td> 
+   <td colname="col2">Visa data från besökare till er webbplats, där en beständig cookie krävs.</td> 
   </tr> 
  </tbody> 
 </table>
+
+Om du vill visa definitionen för varje segment använder du ![InfoOutline](/help/assets/icons/InfoOutline.svg). För mallen **[!UICONTROL iOS]**:
+
+![Definition för Adobe-mallsegment](assets/adobe-template-definition.png)

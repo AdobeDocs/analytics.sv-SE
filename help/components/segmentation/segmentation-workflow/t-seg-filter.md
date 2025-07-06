@@ -1,11 +1,11 @@
 ---
-description: Filtrera efter taggar, ägare och andra filter (Visa alla, Min, Delas med mig, Favoriter och Godkänd).
+description: Lär dig filtrera segment efter taggar, ägare och andra filter.
 title: Filtrera segment
 feature: Segmentation
 exl-id: 895366ff-0d09-4bed-811c-be4208880cc1
-source-git-commit: b96210a478c46f5d9cbf49c6288b698dc47d64fe
+source-git-commit: 35f2812c1a1a4eed090e04d67014fcebf88a80ec
 workflow-type: tm+mt
-source-wordcount: '173'
+source-wordcount: '168'
 ht-degree: 0%
 
 ---

@@ -1,11 +1,11 @@
 ---
-description: Med verktyget Beräknade mätvärden kan vem som helst skapa ett deltagandemått.
+description: Lär dig hur du skapar ett deltagandemått.
 title: Deltagandemått
 feature: Calculated Metrics
 exl-id: bef185d6-72c0-4068-80f8-57261369573f
-source-git-commit: 183f6e39fb1d14b7b29817e76da0302ba23cd5d6
+source-git-commit: 35f2812c1a1a4eed090e04d67014fcebf88a80ec
 workflow-type: tm+mt
-source-wordcount: '179'
+source-wordcount: '175'
 ht-degree: 0%
 
 ---

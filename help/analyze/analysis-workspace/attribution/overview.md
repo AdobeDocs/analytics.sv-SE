@@ -1,10 +1,10 @@
 ---
 title: Attribution Overview
-description: Läs mer om konceptet att attribuera krediter för en lyckad händelse till flera dimensionsobjekt.
+description: Lär dig mer om hur du tilldelar krediter för en lyckad händelse till flera dimensionsobjekt.
 feature: Attribution
 role: User, Admin
 exl-id: 47a3523b-d9eb-4272-84b8-090b921cba13
-source-git-commit: d37fa0aff0b1bbe196b943bc26e86b1e79936184
+source-git-commit: b4c1636bdc9d5be522b16f945a46beabf4f7a733
 workflow-type: tm+mt
 source-wordcount: '489'
 ht-degree: 28%

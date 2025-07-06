@@ -1,26 +1,26 @@
 ---
-title: Attributionsmodeller, behållare och Lookback-fönster
-description: Hur olika typer av attribuering delar upp kredit mellan dimensionsposter.
+title: Attributionskomponenter
+description: Lär dig mer om komponenterna som definierar attribuering.
 feature: Attribution
 role: User, Admin
 exl-id: f36de41e-1c53-477d-b326-528fbd4ec9ec
-source-git-commit: d37fa0aff0b1bbe196b943bc26e86b1e79936184
+source-git-commit: b4c1636bdc9d5be522b16f945a46beabf4f7a733
 workflow-type: tm+mt
-source-wordcount: '95'
+source-wordcount: '84'
 ht-degree: 0%
 
 ---
 
-# Attributionsmodeller, behållare och uppslagsfönster
+# Attributionskomponenter
 
 I Adobe Analytics ingår tre komponenter:
 
-* **Attributmodell:** Modellen beskriver distributionen av konverteringar till träffar i en grupp. Till exempel första beröringen eller sista beröringen.
-* **Behållare**: Behållaren definierar attribueringens omfång eller hur träffar ska grupperas för varje modell.
-* **Fönstret för attribueringssökning:** Uppslagsfönstret beskriver antalet dagar som ska genomsökas för den valda modellen.
+* **Attributionsmodell:** [model](#attribution-model) beskriver distributionen av konverteringar till träffar i en grupp. Till exempel första beröringen eller sista beröringen.
+* **Behållare**: [behållaren](#container) definierar attribueringens omfång eller hur träffar för varje modell ska grupperas.
+* **Fönstret för attribueringssökning:** [Uppslagsfönstret](#lookback-window) beskriver antalet dagar som ska genomsökas för den valda modellen.
 
 
-## Attributionsmodeller
+## Attributionsmodell
 
 {{attribution-models-details}}
 

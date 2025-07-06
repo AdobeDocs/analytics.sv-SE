@@ -1,10 +1,10 @@
 ---
-description: Lär dig hur du använder panelen Snabbinformation för att få hjälp med att skapa datatabeller och visualiseringar i Analysis Workspace.
+description: Lär dig hur du använder panelen Snabbinformation för att få hjälp med att skapa frihandstabeller och visualiseringar i Analysis Workspace.
 title: Panelen Snabbinsikter
 feature: Panels
 role: User, Admin
 exl-id: 29b26ec9-d410-43d6-a317-ca7587f5dd31
-source-git-commit: 978bd8642011dd2c8e43564c90303f194689a64e
+source-git-commit: b4c1636bdc9d5be522b16f945a46beabf4f7a733
 workflow-type: tm+mt
 source-wordcount: '1066'
 ht-degree: 1%
@@ -25,7 +25,7 @@ ht-degree: 1%
 
 >[!BEGINSHADEBOX]
 
-_I den här artikeln beskrivs panelen Snabbinsikter i_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**._<br/>_Se [Panelen Snabbinsikter](https://experienceleague.adobe.com/sv/docs/analytics/analyze/analysis-workspace/panels/quickinsight)) för_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**-versionen av den här artikeln._
+_I den här artikeln beskrivs panelen Snabbinsikter i_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._<br/>_Se [Panelen Snabbinsikter](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/quickinsight)) för_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**-versionen av den här artikeln._
 
 >[!ENDSHADEBOX]
 
@@ -40,7 +40,7 @@ När du börjar använda [!UICONTROL Analysis Workspace] kanske du undrar:
 * var ett filter ska skapas,
 * med mera.
 
-För att hjälpa till med dessa frågor använder [!UICONTROL Quick insights] en algoritm som ger dig de populäraste dimensionerna, måtten, segmenten och datumintervallen som ditt företag använder. Den här algoritmen baseras på ditt företags användning av datakomponenter i [!UICONTROL Analysis Workspace]. Du ser faktiskt mått, mått och segment som taggats med [!UICONTROL POPULAR] i listrutan, vilket visas här:
+[!UICONTROL Quick insights] använder en algoritm som ger dig de populäraste dimensionerna, måtten, segmenten och datumintervallen som ditt företag använder för att hjälpa dig med de här frågorna. Den här algoritmen baseras på ditt företags användning av datakomponenter i [!UICONTROL Analysis Workspace]. Du ser faktiskt mått, mått och segment som taggats med [!UICONTROL POPULAR] i listrutan, vilket visas här:
 
 ![Panelen Snabbinsikter.](assets/popular-tag.png)
 
@@ -59,10 +59,10 @@ Nedan följer några grundläggande termer som du måste känna till. Varje data
 |---|---|
 | **[!UICONTROL Dimension]** | Dimensioner är beskrivningar eller egenskaper för mätdata som kan visas, delas upp och jämföras i ett projekt. De är icke-numeriska värden och datum som delas upp i dimensionsobjekt. *webbläsare* eller *sida* är till exempel en dimension. |
 | **[!UICONTROL Dimension item]** | Dimension-artiklar är enskilda värden för en dimension. Dimensionsobjekten för webbläsardimensionen är till exempel *Chrome*, *Firefox*, *Edge* eller andra. |
-| **[!UICONTROL Metric]** | Mätvärden är kvantitativ information om personaktivitet, t.ex. vyer, klickningar, omladdningar, genomsnittlig tid, enheter, order, intäkter och så vidare. |
+| **[!UICONTROL Metric]** | Mätvärden är kvantitativ information om besökaraktivitet, t.ex. visningar, klickningar, omladdningar, genomsnittlig tid, enheter, order, intäkter och så vidare. |
 | **[!UICONTROL Visualization]** | Workspace erbjuder [ett antal visualiseringar](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md) för att skapa visuella representationer av dina data. t.ex. stapeldiagram, mundiagram, histogram, linjediagram, kartor, punktdiagram med mera. |
 | **[!UICONTROL Dimension Breakdown]** | En dimensionsuppdelning är ett sätt att dela upp en dimension efter andra dimensioner. Du kan till exempel bryta ned USA:s mobilenheter för att få mobilenhetsbesök per delstat. Eller så kan ni bryta ned mobila enheter efter mobilenhetstyper, efter regioner, efter interna kampanjer med mera. |
-| **[!UICONTROL Segments]** | Med segment kan du identifiera delmängder av personer baserat på egenskaper eller webbplatsinteraktioner. Du kan till exempel skapa [!UICONTROL Visitor] segment baserat på <li>attribut: webbläsartyp, enhet, antal besök, land, kön eller</li><li>interaktioner: kampanjer, nyckelordssökning, sökmotor eller</li><li>avslutar och lämnar: besökare från Facebook, en definierad landningssida, hänvisande domän, eller</li><li> anpassade variabler: formulärfält, definierade kategorier, kund-ID. |
+| **[!UICONTROL Segments]** | Med segment kan du identifiera undergrupper av besökare baserat på egenskaper eller webbplatsinteraktioner. Du kan till exempel skapa [!UICONTROL Visitor] segment baserat på <li>attribut: webbläsartyp, enhet, antal besök, land, kön eller</li><li>interaktioner: kampanjer, nyckelordssökning, sökmotor eller</li><li>avslutar och lämnar: besökare från Facebook, en definierad landningssida, hänvisande domän, eller</li><li> anpassade variabler: formulärfält, definierade kategorier, kund-ID. |
 
 ## Använd
 
@@ -94,7 +94,7 @@ Du kan ange byggblocken på tre sätt:
 
 * Dra och släpp komponenter från den vänstra panelen.
 * Börja skriva i ett av byggblocksfälten. När indata påträffas fylls byggblocksfältet automatiskt i med möjliga värden.
-* Ange en listruta för byggblock (till exempel `Country` i **[!UICONTROL Analyze]**) och sök i listan med möjliga värden (med ![Sparrhöger](/help/assets/icons/ChevronRight.svg)) efter det värde du vill använda (till exempel **[!UICONTROL Country code]**).
+* Ange en listruta för byggblock (till exempel **[!UICONTROL Country]** i **[!UICONTROL Analyze]**) och sök i listan med möjliga värden (med ![Sparrhöger](/help/assets/icons/ChevronRight.svg)) efter det värde du vill använda (till exempel **[!UICONTROL Country code]**).
 
 Välj **[!UICONTROL Clear]** om du vill rensa alla inmatningsfält.
 

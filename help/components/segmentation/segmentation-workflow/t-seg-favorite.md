@@ -1,11 +1,11 @@
 ---
-description: Att markera segment som favoriter är ett annat sätt att ordna dem så att de blir lätta att använda.
+description: Lär dig hur du markerar segment som favoriter som ett annat sätt att organisera segment så att de blir lätta att använda.
 title: Markera segment som favoriter
 feature: Segmentation
 exl-id: 7586066c-b6bc-4e24-9946-0983bb34dc3f
-source-git-commit: 842f4226572ac38d01ddf16ad0b9991abbd3e906
+source-git-commit: 35f2812c1a1a4eed090e04d67014fcebf88a80ec
 workflow-type: tm+mt
-source-wordcount: '92'
+source-wordcount: '95'
 ht-degree: 0%
 
 ---

@@ -1,10 +1,10 @@
 ---
-description: Använd snabbsegment i Analysis Workspace för Adobe Analytics
+description: Lär dig använda snabbsegment i Analysis Workspace.
 title: Snabbsegment
 feature: Segmentation
 role: User
 exl-id: ce487fa0-dd81-44e4-a684-90979afaeb07
-source-git-commit: d85e6990998e3c153ef969d8dc7f3a4835f683bf
+source-git-commit: 35f2812c1a1a4eed090e04d67014fcebf88a80ec
 workflow-type: tm+mt
 source-wordcount: '1096'
 ht-degree: 0%

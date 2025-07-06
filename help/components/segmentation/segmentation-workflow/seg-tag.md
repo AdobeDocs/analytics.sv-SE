@@ -1,9 +1,9 @@
 ---
-description: I segmenthanteraren kan du ordna segment med taggning.
+description: Lär dig hur du märker segment så att du kan ordna dem.
 title: Tagga segment
 feature: Segmentation
 exl-id: 2c838bb1-3fab-467a-9a1d-54c7c5a3b49e
-source-git-commit: 80e4a3ba4a5985563fcf02acf06997b4592261e4
+source-git-commit: 35f2812c1a1a4eed090e04d67014fcebf88a80ec
 workflow-type: tm+mt
 source-wordcount: '190'
 ht-degree: 0%
