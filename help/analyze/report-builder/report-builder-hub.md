@@ -1,14 +1,14 @@
 ---
 title: Vad är Report Builder Hub i Adobe Analytics?
-description: Beskriver komponenterna för Report Builder Hub
+description: Beskriver Report Builder Hub-komponenterna
 role: User
 feature: Report Builder
 type: Documentation
 solution: Analytics
 exl-id: e18381ea-b7d4-4d7a-9ded-23b2d06fa204
-source-git-commit: 4e75b83e812acf3e17bb4f910831a2f88507aa27
+source-git-commit: d3d74042f6c282db490483393f4b58cddd6b1525
 workflow-type: tm+mt
-source-wordcount: '519'
+source-wordcount: '485'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 Använd Report Builder nav för att skapa, uppdatera, ta bort och hantera datablock.
 
-Navet på Report Builder innehåller knapparna Skapa, Hantera och Schemalägg, KOMMANDON och SNABBREDIGERINGSPANELEN.
+Report Builder-hubben innehåller knapparna Skapa, Hantera och Schemalägg, KOMMANDON och QUICK EDIT-panelen.
 
 <img src="./assets/hub51.png" alt="Report Builder Hub"/>
 
@@ -25,10 +25,6 @@ Navet på Report Builder innehåller knapparna Skapa, Hantera och Schemalägg, K
 ## Knapparna Skapa, Hantera och Schemalägg
 
 Använd knapparna Skapa, Hantera och Schemalägg för att skapa nya datablock, hantera befintliga datablock eller schemaläggningsdatabaser.
-
->[!NOTE]
->
->Arbetsboksplanering för den här versionen av Report Builder på Adobe Analytics har ännu inte släppts, men kommer att vara tillgänglig i början av 2025. Nu kan du komma igång med arbetsböcker som inte kräver schemaläggning.
 
 ## KOMMANDON
 
@@ -48,7 +44,7 @@ Använd KOMMANDON-panelen för att komma åt kommandon som är kompatibla med de
 
 ## SNABBREDIGERING, panel
 
-När du markerar ett eller flera datablock i ett kalkylblad visas panelen QUICK EDIT i Report Builder. Du kan använda panelen QUICK EDIT för att ändra parametrar i ett enda datablock eller för att ändra parametrar i flera datablock samtidigt.
+När du markerar ett eller flera datablock i ett kalkylblad visas panelen SNABBREDIGERING i Report Builder. Du kan använda panelen QUICK EDIT för att ändra parametrar i ett enda datablock eller för att ändra parametrar i flera datablock samtidigt.
 
 ![Panelen Snabbredigering i Report Builder](./assets/hub2.png)
 
@@ -62,7 +58,7 @@ När du ändrar rapportsviten antar alla datablock i urvalet den nya rapportsvit
 
 Om du vill ändra rapportsviten väljer du en ny rapportserie i listrutan.
 
-![Navet Report Builder visar listrutan för rapportsviten.](./assets/image16.png)
+![Report Builder-hubben visar listrutan för rapportsviten.](./assets/image16.png)
 
 ### Datumintervall
 
