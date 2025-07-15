@@ -4,18 +4,18 @@ audience: admin
 user-guide-title: Administratörshandbok för Analytics
 breadcrumb-title: Användarhandbok om Admin
 user-guide-description: Lär dig mer om administrationsåtgärder i Analytics, som att hantera användare och produkter i Experience Cloud Admin Console, konfigurera rapportsviter med mera.
-source-git-commit: 5b4017bf7ce3f61b365829d058f820b48622d482
+source-git-commit: 0bed2622f54bf2f46aa57dbfad7bd55a61d6c7d0
 workflow-type: tm+mt
-source-wordcount: '615'
-ht-degree: 14%
+source-wordcount: '514'
+ht-degree: 12%
 
 ---
 
 
-# Administratörshandbok för Adobe Analytics {#admin}
+# Adobe Analytics Admin Guide {#admin}
 
 + [Administratörshandbok för Analytics](home.md)
-+ [Versionsinformation för analyser](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html?lang=sv-SE)
++ [Versionsinformation för analyser](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html)
 + Adobe Admin Console {#admin-console}
    + [Översikt](admin-console/home.md)
    + [Adobe Analytics första administrationshandbok](admin-console/first-admin-guide.md)
@@ -25,9 +25,9 @@ ht-degree: 14%
       + [Produktprofilbehörigheter för Report Suite-verktyg](admin-console/permissions/report-suite-tools.md)
       + [Produktprofilbehörigheter för analysverktyg](admin-console/permissions/analytics-tools.md)
 + Administratörsverktyg för analyser {#admin-tools}
-   + [Översikt över administratörsverktyg](admin/c-admin-tools.md)
-   + [Kodhanterare](admin/code-manager-admin.md)
-   + [Inventering av analyser](admin/analytics-inventory.md)
+   + [Översikt över administrationsverktyg](admin/c-admin-tools.md)
+   + [Kodhanteraren](admin/code-manager-admin.md)
+   + [Analysinventering](admin/analytics-inventory.md)
    + [Datakällor](admin/data-sources.md)
    + [Exkludera efter IP-adress](admin/exclude-ip.md)
    + [Loggar](admin/logs.md)
@@ -38,59 +38,45 @@ ht-degree: 14%
    + Komponentmigrering {#component-migration}
       + [Förbered för migrering](admin/component-migration/prepare-component-migration.md)
       + [Arbetsflöde för migrering](admin/component-migration/component-migration.md)
-   + Report Suite-hanteraren {#manage-report-suites}
+   + Report Suite-hanterare {#manage-report-suites}
       + Redigera inställningar för en rapportserie {#edit-report-suite}
          + Allmänt {#report-suite-general}
             + [Allmänna kontoinställningar](admin/c-manage-report-suites/c-edit-report-suites/general/general-acct-settings-admin.md)
             + [Interna URL-filter](admin/c-manage-report-suites/c-edit-report-suites/general/internal-url-filter-admin.md)
             + [Anpassa kalender](admin/c-manage-report-suites/c-edit-report-suites/general/custom-calendar.md)
-            + Identifiering av betald sökning {#paid-search-detection}
+            + Betalsökningsidentifiering {#paid-search-detection}
                + [Översikt över betald sökningsidentifiering](admin/c-manage-report-suites/c-edit-report-suites/general/paid-search-detection/paid-search-detection.md)
                + [Konfigurera identifiering av betald sökning](admin/c-manage-report-suites/c-edit-report-suites/general/paid-search-detection/t-paid-search-detection.md)
-            + Bearbetar regler {#c-processing-rules}
-               + [Översikt över bearbetningsregler](admin/c-manage-report-suites/c-edit-report-suites/general/c-processing-rules/processing-rules.md)
-               + Bearbetar regler {#c-processing-rules-configuration}
-                  + [Hur bearbetningsregler fungerar](admin/c-manage-report-suites/c-edit-report-suites/general/c-processing-rules/c-processing-rules-configuration/processing-rules-about.md)
-                  + [Skapa bearbetningsregler](admin/c-manage-report-suites/c-edit-report-suites/general/c-processing-rules/c-processing-rules-configuration/t-processing-rules.md)
-                  + [Visa aktiva bearbetningsregler](admin/c-manage-report-suites/c-edit-report-suites/general/c-processing-rules/c-processing-rules-configuration/t-processing-rules-view.md)
-                  + [Visa historik för bearbetningsregel](admin/c-manage-report-suites/c-edit-report-suites/general/c-processing-rules/c-processing-rules-configuration/t-processing-rule-view-history.md)
-                  + [Återställa bearbetningsregler](admin/c-manage-report-suites/c-edit-report-suites/general/c-processing-rules/c-processing-rules-configuration/t-processing-rules-restore.md)
-                  + [Kopiera bearbetningsregler till en annan rapportserie](admin/c-manage-report-suites/c-edit-report-suites/general/c-processing-rules/c-processing-rules-configuration/t-processing-rules-copy-to-rs.md)
-                  + [Dimensioner som är tillgängliga för bearbetningsregler](admin/c-manage-report-suites/c-edit-report-suites/general/c-processing-rules/processing-rule-dimensions.md)
-               + Exempel på behandlingsregler {#processing-rules-examples}
-                  + [Exempel på bearbetningsregler](admin/c-manage-report-suites/c-edit-report-suites/general/c-processing-rules/processing-rules-examples/processing-rules-examples.md)
-                  + [Fylla i ett kampanj-ID från en frågesträngsparameter](admin/c-manage-report-suites/c-edit-report-suites/general/c-processing-rules/processing-rules-examples/processing-rules-populate-campaign-id.md)
-                  + [Ange produktvyhändelsen från produktöversiktssidan](admin/c-manage-report-suites/c-edit-report-suites/general/c-processing-rules/processing-rules-examples/setting-the-product-view-event.md)
-                  + [Lägga till en underkategori genom att sammanfoga kategorin och sidnamnet](admin/c-manage-report-suites/c-edit-report-suites/general/c-processing-rules/processing-rules-examples/subcategory-concatenating.md)
-                  + [Rensa värden i en rapport](admin/c-manage-report-suites/c-edit-report-suites/general/c-processing-rules/processing-rules-examples/clean-up-values-in-a-report.md)
-                  + [Fylla i interna söktermer med en frågesträngsparameter](admin/c-manage-report-suites/c-edit-report-suites/general/c-processing-rules/processing-rules-examples/processing-rules-populating-internal-search.md)
-                  + [Kopiera en kontextdatavariabel till en eVar](admin/c-manage-report-suites/c-edit-report-suites/general/c-processing-rules/processing-rules-examples/processing-rules-copy-context-data.md)
-                  + [Ange en händelse med hjälp av en kontextdatavariabel](admin/c-manage-report-suites/c-edit-report-suites/general/c-processing-rules/processing-rules-examples/processing-rules-copy-context-data-event.md)
-                  + [Ta bort en händelse från en träff](admin/c-manage-report-suites/c-edit-report-suites/general/c-processing-rules/processing-rules-examples/processing-rules-remove-event.md)
-               + [Tips och tricks för regler](admin/c-manage-report-suites/c-edit-report-suites/general/c-processing-rules/processing-rules-tips.md)
+            + Bearbetningsregler {#processing-rules}
+               + [Översikt](admin/c-manage-report-suites/c-edit-report-suites/general/processing-rules/pr-overview.md)
+               + [Gränssnitt](admin/c-manage-report-suites/c-edit-report-suites/general/processing-rules/pr-interface.md)
+               + [Visa historik](admin/c-manage-report-suites/c-edit-report-suites/general/processing-rules/pr-view-history.md)
+               + [Kopiera regler](admin/c-manage-report-suites/c-edit-report-suites/general/processing-rules/pr-copy.md)
+               + [Tillgängliga mått och mätvärden](admin/c-manage-report-suites/c-edit-report-suites/general/processing-rules/pr-variables.md)
+               + [Användningsexempel](admin/c-manage-report-suites/c-edit-report-suites/general/processing-rules/pr-use-cases.md)
             + Punktregler {#bot-removal}
                + [Borttagning av punkt](admin/c-manage-report-suites/c-edit-report-suites/general/bot-removal/bot-removal.md)
                + [Förstå och konfigurera robotregler](admin/c-manage-report-suites/c-edit-report-suites/general/bot-removal/bot-rules.md)
                + [Vanliga robotsignaturer](admin/c-manage-report-suites/c-edit-report-suites/general/bot-removal/bot-signatures.md)
                + [Punktexkluderingsmetoder](admin/c-manage-report-suites/c-edit-report-suites/general/bot-removal/bot-exclusion-methods.md)
-            + [Inställningar för sekretess](admin/c-manage-report-suites/c-edit-report-suites/general/privacy-settings.md)
+            + [Sekretessinställningar](admin/c-manage-report-suites/c-edit-report-suites/general/privacy-settings.md)
             + [Konfiguration av tidsstämplar](admin/c-manage-report-suites/c-edit-report-suites/general/timestamp-optional.md)
             + Vidarebefordran på serversidan {#server-side-forwarding}
                + [Översikt över vidarebefordran på serversidan](admin/c-manage-report-suites/c-edit-report-suites/general/c-server-side-forwarding/ssf.md)
                + [GDPR/ePrivacy compliance och vidarebefordran på serversidan](admin/c-manage-report-suites/c-edit-report-suites/general/c-server-side-forwarding/ssf-gdpr.md)
                + [Krav för vidarebefordran på serversidan](admin/c-manage-report-suites/c-edit-report-suites/general/c-server-side-forwarding/ssf-requirements.md)
                + [Vidarebefordra data och kodreferenser på serversidan](admin/c-manage-report-suites/c-edit-report-suites/general/c-server-side-forwarding/ssf-reference.md)
-               + [Så här verifierar du implementeringen av vidarebefordran på serversidan](admin/c-manage-report-suites/c-edit-report-suites/general/c-server-side-forwarding/ssf-verify.md)
+               + [Så här verifierar du implementeringen av vidarebefordring på serversidan](admin/c-manage-report-suites/c-edit-report-suites/general/c-server-side-forwarding/ssf-verify.md)
                + [Vanliga frågor om vidarebefordran på serversidan](admin/c-manage-report-suites/c-edit-report-suites/general/c-server-side-forwarding/ssf-faq.md)
          + Trafik {#traffic-variables}
             + [Trafikvariabler](admin/c-manage-report-suites/c-edit-report-suites/c-traffic-variables/traffic-var.md)
             + [Trafikklassificeringar](admin/c-manage-report-suites/c-edit-report-suites/c-traffic-variables/traffic-classifications.md)
-            + [Beskrivningar av anpassade rapporter](admin/c-manage-report-suites/c-edit-report-suites/c-traffic-variables/custom-desc-admin.md)
+            + [Anpassade rapportbeskrivningar](admin/c-manage-report-suites/c-edit-report-suites/c-traffic-variables/custom-desc-admin.md)
          + Konvertering {#conversion-variables}
             + [Konverteringsvariabler](admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/conversion-var-admin.md)
-            + [Hitta metoder](admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/finding-methods.md)
-            + [Klassificeringar av konvertering](admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/conversion-classifications.md)
-            + Variabel för unika besökare {#unique-visitor-variable}
+            + [Sökmetoder](admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/finding-methods.md)
+            + [Konverteringsklassificeringar](admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/conversion-classifications.md)
+            + Unik besöksvariabel {#unique-visitor-variable}
                + [Ange variabeln Unik besökare](admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/unique-visitor-variable-admin/t-unique-visitor-variable.md)
                + [Användningsfall - extrahera besökar-ID:n](admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/unique-visitor-variable-admin/extract-visitorids-usecase.md)
             + [Slutförda händelser](admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/c-success-events/success-event.md)
@@ -133,8 +119,8 @@ ht-degree: 14%
          + [Ny rapportsvit - inställningar](admin/c-manage-report-suites/c-new-report-suite/new-report-suite.md)
          + [Inställningar som inte kopierats från en källrapportsserie](admin/c-manage-report-suites/c-new-report-suite/settings-not-copied-from-rs.md)
       + Rapportsvitmallar {#report-suite-templates}
-         + [Översikt över mallar för rapportsviten](admin/c-manage-report-suites/c-report-suite-templates/report-suite-templates.md)
-         + [Aggregator-portalen](admin/c-manage-report-suites/c-report-suite-templates/aggregator-portal.md)
+         + [Översikt över rapportsvitmallar](admin/c-manage-report-suites/c-report-suite-templates/report-suite-templates.md)
+         + [Aggregator-portal](admin/c-manage-report-suites/c-report-suite-templates/aggregator-portal.md)
          + [Commerce](admin/c-manage-report-suites/c-report-suite-templates/commerce-admin.md)
          + [Innehåll och media](admin/c-manage-report-suites/c-report-suite-templates/content-media.md)
          + [Standardmall](admin/c-manage-report-suites/c-report-suite-templates/default-rs-template.md)
@@ -146,16 +132,16 @@ ht-degree: 14%
       + [Översikt över företagsinställningar](admin/company/c-company-settings.md)
       + [Säkerhetshanteraren](admin/company/security-manager.md)
       + [Webbtjänster](admin/company/web-services-admin.md)
-      + [Rapporter i Report Builder](admin/company/report-builder-reports-admin.md)
+      + [Report Builder-rapporter](admin/company/report-builder-reports-admin.md)
       + [Enkel inloggning](admin/company/single-signon-admin.md)
       + [Dölj rapportsviter](admin/company/c-hide-report-suites.md)
-      + [Hantering av preferenser](admin/company/preferences-manager.md)
+      + [Inställningshanteraren](admin/company/preferences-manager.md)
       + [Väntande åtgärder](admin/company/pending-actions-admin.md)
       + [Åtkomstnivåer](admin/company/feature-access-levels.md)
-   + Sekretessmärkning för datastyrning {#data-governance}
+   + Etikettering av integritetsskydd för datahantering {#data-governance}
       + [Adobe Analytics arbetsflöde för datasekretess](admin/c-data-governance/an-gdpr-workflow.md)
       + [Frågor och svar](admin/c-data-governance/gdpr-faq.md)
-      + Dataetikett {#data-labels}
+      + Dataetiketter {#data-labels}
          + [Dataintegritetsetiketter för analyskomponenter](admin/c-data-governance/data-labeling/gdpr-labels.md)
          + [Data i etikettrapportsvit](admin/c-data-governance/data-labeling/gdpr-setup-reportsuite.md)
          + [Visa/hantera integritetsetiketter för rapportsviten](admin/c-data-governance/data-labeling/gdpr-view-settings.md)
@@ -164,15 +150,15 @@ ht-degree: 14%
          + [Namnutrymmen](admin/c-data-governance/data-labeling/gdpr-namespaces.md)
       + [Undantag för CNIL-medgivande](admin/c-data-governance/cnil-consent-exemption.md)
    + Användning av serversamtal {#server-call-usage}
-      + [Översikt över användning av serversamtal](admin/c-server-call-usage/overage-overview.md)
-      + [Visa aktuell användning av serveranrop](admin/c-server-call-usage/server-call-usage-dashboard.md)
-      + [Visa användning av rapportsviten](admin/c-server-call-usage/report-suite-usage.md)
-      + [Aviseringar om användning av serversamtal](admin/c-server-call-usage/scu-alerts.md)
+      + [Översikt över användningen av serversamtal](admin/c-server-call-usage/overage-overview.md)
+      + [Visa aktuell användning av serversamtal](admin/c-server-call-usage/server-call-usage-dashboard.md)
+      + [Visa rapportsvitanvändning](admin/c-server-call-usage/report-suite-usage.md)
+      + [Användningsvarningar för serversamtal](admin/c-server-call-usage/scu-alerts.md)
       + [Vanliga frågor om användning av serversamtal](admin/c-server-call-usage/overage-faq.md)
    + Användar- och produkthantering (äldre) {#user-product-management}
       + [Användar- och produkthantering (äldre)](admin/user-management2/user-management.md)
       + [Hantera äldre användarkonton, resurser och förfallodatum](admin/user-management2/users-assets.md)
-      + Use: Migrera användare till Adobe Admin Console {#migrate-users}
+      + Migrera användare till Adobe Admin Console {#migrate-users}
          + [Migrering av Analytics-användare till Admin Console](admin/user-management2/user-migration/c-migration-tool.md)
          + [Migrera användarkonton för Analytics för Adobe ID:n](admin/user-management2/user-migration/t-migrate-users.md)
          + [Migrera Analytics-användarkonton för Enterprise ID och Federated ID](admin/user-management2/user-migration/migrate-enterprise.md)
