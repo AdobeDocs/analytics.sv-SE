@@ -67,4 +67,4 @@ När du skapar eller redigerar bearbetningsregler ska du tänka på följande:
 
 >[!MORELIKETHIS]
 >
->![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Mappa kontextdatavariabler till utkast och eVars med bearbetningsregler](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/implementation/implementation-basics/map-contextdata-variables-into-props-and-evars-with-processing-rules){target="_blank"}
+>![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Mappa kontextdatavariabler till utkast och eVars med bearbetningsregler](https://experienceleague.adobe.com/sv/docs/analytics-learn/tutorials/implementation/implementation-basics/map-contextdata-variables-into-props-and-evars-with-processing-rules){target="_blank"}
