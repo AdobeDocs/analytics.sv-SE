@@ -175,7 +175,7 @@ Använd en snabbmeny på en nod i flödesvisualiseringen med följande alternati
 | **[!UICONTROL Exclude item]** eller **[!UICONTROL Restore excluded items]** | Tar bort en specifik nod från kolumnen och skapar den automatiskt som ett filter överst i kolumnen. Om du vill återställa det uteslutna objektet väljer du **[!UICONTROL Restore Excluded Item]** på snabbmenyn. Du kan också öppna filtret längst upp i kolumnen och ta bort rutan med det objekt du just uteslutit. |
 | **[!UICONTROL Trend]** | Skapa ett trenddiagram för noden. |
 | **[!UICONTROL Show next column]** / **[!UICONTROL Show previous column]** | Visar nästa (höger) eller föregående (vänster) kolumn i visualiseringen. |
-| **[!UICONTROL Hide colum]**n | Döljer den markerade kolumnen från visualiseringen. |
+| **[!UICONTROL Hide colum]**&#x200B;n | Döljer den markerade kolumnen från visualiseringen. |
 | **[!UICONTROL Expand entire column]** | Expandera en kolumn om du vill visa alla noder. Som standard visas bara de fem översta noderna. |
 | **[!UICONTROL Create audience from selection]** | Skapar en målgrupp baserat på den markerade kolumnen. |
 | **[!UICONTROL Collapse entire column]** | Dölj alla noder i en kolumn. |
@@ -204,8 +204,8 @@ I exemplet nedan inkluderas **alla** förekomster av *huvudkategorin för produk
 >[!MORELIKETHIS]
 >
 >[Lägg till en visualisering på en panel](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
->>[Visualiseringsinställningar](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
->>[Snabbmenyn Visualisering ](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>&#x200B;>[Visualiseringsinställningar](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>&#x200B;>[Snabbmenyn Visualisering ](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >
 
 
