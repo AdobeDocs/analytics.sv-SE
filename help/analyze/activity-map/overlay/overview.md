@@ -1,20 +1,20 @@
 ---
-description: Lär dig mer om tillägget Activity Map och hur du navigerar i gränssnittet.
+description: Lär dig mer om Activity Map-tillägget och hur du navigerar i gränssnittet.
 title: Activity Map-tilläggsgränssnitt
 uuid: f6734b60-0b77-4f50-a45a-6a6936d1524e
 feature: Activity Map
 role: User, Admin
 exl-id: 461abda1-3238-4a32-b9d3-5a57b00cf0d3
-source-git-commit: 13ad9d40ad74a8dffe05d899db54f4d77cbcc34c
+source-git-commit: 19c2c1abd7f1799598597c0e696d0b001c1ef0ea
 workflow-type: tm+mt
-source-wordcount: '574'
+source-wordcount: '575'
 ht-degree: 0%
 
 ---
 
 # Activity Map-tilläggsgränssnitt
 
-Gränssnittet för tillägget Activity Map består av två delar:
+Activity Map-tilläggsgränssnittet består av två delar:
 
 * En övre panel där du kan konfigurera tillägg och rapporter
 * En övertäckning som visar de vanligaste länkarna
@@ -22,7 +22,7 @@ Gränssnittet för tillägget Activity Map består av två delar:
 
 ## Övre panelen
 
-Den översta panelen innehåller grundläggande kontroller för övertäckningen Activity Map.
+Den översta panelen innehåller dina grundläggande kontroller för Activity Map-övertäckningen.
 
 ![Övertäckning](../assets/overlay.png)
 
@@ -46,7 +46,7 @@ Panelens sidhuvud innehåller följande inställningar:
 * **[!UICONTROL Show settings]**: Öppnar en meny för inställningar som du kan ändra (kugghjulsikon):
    * **[!UICONTROL Settings]**: Öppnar tilläggets [Inställningar](settings.md).
    * **[!UICONTROL Help]**: Öppnar dokumentationen för Experience League (den här sidan).
-   * **[!UICONTROL Adobe community]**: Öppnar [Experience League-communityn](https://experienceleaguecommunities.adobe.com/).
+   * **[!UICONTROL Adobe community]**: Öppnar [Experience League Community](https://experienceleaguecommunities.adobe.com/).
    * **[!UICONTROL About]**: Visar tilläggsversionen.
    * **[!UICONTROL Logout]**: Loggar ut dig från tillägget och kräver att du loggar in igen.
 * **[!UICONTROL Quit Activity Map]**: Stänger alla övertäckningar för tillägget (X-ikon).

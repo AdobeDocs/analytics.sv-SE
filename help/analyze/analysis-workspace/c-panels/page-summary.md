@@ -4,9 +4,9 @@ title: Panelen Sidsammanfattning
 feature: Panels
 role: User, Admin
 exl-id: f0b7cd92-17b2-452d-9aab-f78629360ab8
-source-git-commit: b4c1636bdc9d5be522b16f945a46beabf4f7a733
+source-git-commit: 19c2c1abd7f1799598597c0e696d0b001c1ef0ea
 workflow-type: tm+mt
-source-wordcount: '571'
+source-wordcount: '598'
 ht-degree: 0%
 
 ---
@@ -27,14 +27,14 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="workspace_pagesummary_panel"
 >title="Panelen Sidsammanfattning"
->abstract="Granska snabbt några av de högnivåstatistik som finns och hur man går från en viss sida till och från en viss sida.<br/><br/>**Parametrar &#x200B;**<br/>**Lägg till ett siddimensionsobjekt**: Öppna komponentfältet, leta upp siddimensionen och expandera den genom att klicka på moroten för att visa dimensionsobjekten. Dra och släpp sedan den sida du vill veta mer om i verktyget. När du har dragit och släppt dimensionsobjektet fylls rapporten automatiskt i med nyckelinformation om sidan."
+>abstract="Granska snabbt några av de högnivåstatistik som finns och hur man går från en viss sida till och från en viss sida.<br/><br/>**Parametrar **<br/>**Lägg till ett siddimensionsobjekt**: Öppna komponentfältet, leta upp siddimensionen och expandera den genom att klicka på moroten för att visa dimensionsobjekten. Dra och släpp sedan den sida du vill veta mer om i verktyget. När du har dragit och släppt dimensionsobjektet fylls rapporten automatiskt i med nyckelinformation om sidan."
 
 <!-- markdownlint-enable MD034 -->
 
 
 >[!BEGINSHADEBOX]
 
-_Den här artikeln dokumenterar panelen Sidsammanfattning i_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**._<br/>_Det finns ingen motsvarande panel i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._
+_Den här artikeln dokumenterar panelen Sidsammanfattning i_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._<br/>_Det finns ingen motsvarande panel i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._
 
 >[!ENDSHADEBOX]
 
@@ -67,7 +67,7 @@ Du kan konfigurera panelen [!UICONTROL Page summary] med följande indatainstäl
 
 | Indata | Beskrivning |
 | --- | --- |
-| **[!UICONTROL Page]** | Välj en siddimension för vilken sida du vill utforska nyckelstatistik. |
+| **[!UICONTROL Page]** | Välj en siddimension för vilken sida du vill utforska nyckelstatistik. Till exempel **[!UICONTROL home]** för att utforska statistik för hemsidan. Använd listrutan för att välja en sida eller börja skriva (till exempel `home`) för att snabbt söka efter sidor. |
 
 {style="table-layout:auto"}
 
