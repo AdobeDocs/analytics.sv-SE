@@ -22,7 +22,7 @@ Här följer en lista över alla beräknade mätvärden som tillhandahålls av A
 >
 >Ni kan:
 >
-> * Lägg till beräknade standardvärden för den direktuppspelade mediesamlingen, enligt beskrivningen i [Beräknade mått](https://experienceleague.adobe.com/docs/media-analytics/using/implementation/variables/calculated-metrics.html)
+> * Lägg till beräknade standardvärden för den direktuppspelade mediesamlingen, enligt beskrivningen i [Beräknade mått](https://experienceleague.adobe.com/docs/media-analytics/using/implementation/variables/calculated-metrics.html?lang=sv-SE)
 > * Skapa anpassade beräknade värden från befintliga mått, enligt beskrivningen i [Beräknade och avancerade beräknade värden](/help/components/c-calcmetrics/cm-overview.md).
 >
 
