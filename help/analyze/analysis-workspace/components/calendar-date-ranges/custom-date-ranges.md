@@ -5,9 +5,9 @@ title: Exempel på anpassade datumintervall
 feature: Date Ranges
 role: User, Admin
 exl-id: 586bb120-3f20-452c-9867-0b93d2e794bc
-source-git-commit: c132b21229aebea8121b156e1f4302a26b483ef5
+source-git-commit: 8cca98257aeb89226863beed69b4785166141b0c
 workflow-type: tm+mt
-source-wordcount: '113'
+source-wordcount: '112'
 ht-degree: 1%
 
 ---
@@ -33,7 +33,7 @@ Du vill definiera ett anpassat datumintervall som definierar för två månader 
 
 +++ Information
 
-Du vill definiera ett datumintervall som definierar perioden mellan den aktuella dagen för en vecka sedan och slutet av samma sista vecka. Exempel: om idag är onsdagen den 11 september 2024. Du vill ha ett datumintervall från onsdag 4 september 2024 till lördag 7 september 2024. September
+Du vill definiera ett datumintervall som definierar perioden mellan den aktuella dagen för en vecka sedan och slutet av samma sista vecka. Exempel: om idag är onsdagen den 11 september 2024. Du vill ha ett datumintervall från onsdag 4 september 2024 till lördag 7 september 2024.
 
 ![Exempel på datumintervall](assets/date-range-example.png)
 
