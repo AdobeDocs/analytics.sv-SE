@@ -1,11 +1,11 @@
 ---
-description: Adobe tillhandahåller olika beräknade värden som du kan använda. På den här sidan visas dessa mått och deras avsedda användning.
+description: Adobe tillhandahåller olika beräknade mätvärden som du kan använda. På den här sidan visas dessa mått och deras avsedda användning.
 title: Standardberäknade värden
 feature: Calculated Metrics
 exl-id: 84468e63-f967-41cd-8084-525b1b90957a
-source-git-commit: fdd66c9558f070cd760f37a39e5911f0dac22612
+source-git-commit: c132b21229aebea8121b156e1f4302a26b483ef5
 workflow-type: tm+mt
-source-wordcount: '735'
+source-wordcount: '759'
 ht-degree: 0%
 
 ---
@@ -22,8 +22,15 @@ Här följer en lista över alla beräknade mätvärden som tillhandahålls av A
 >
 >Ni kan:
 >
-> * Lägg till beräknade standardvärden för den direktuppspelade mediesamlingen, enligt beskrivningen i [Beräknade mått](https://experienceleague.adobe.com/docs/media-analytics/using/implementation/variables/calculated-metrics.html?lang=sv-SE)
+> * Lägg till beräknade standardvärden för den direktuppspelade mediesamlingen, enligt beskrivningen i [Beräknade mått](https://experienceleague.adobe.com/docs/media-analytics/using/implementation/variables/calculated-metrics.html)
 > * Skapa anpassade beräknade värden från befintliga mått, enligt beskrivningen i [Beräknade och avancerade beräknade värden](/help/components/c-calcmetrics/cm-overview.md).
+>
+
+>[!TIP]
+>
+>Använd [dataordlistan](/help/analyze/analysis-workspace/components/data-dictionary/data-dictionary-overview.md) för att mer ingående granska definitionen av ett beräknat standardmått och de enskilda komponenterna som utgör den definitionen.
+>
+
 
 
 | Namn på beräknat mätvärde | Funktion | Formel |
@@ -39,7 +46,7 @@ Här följer en lista över alla beräknade mätvärden som tillhandahålls av A
 | Konverteringsgrad | Andelen besökare som vidtagit en önskad åtgärd, t.ex. gjort ett köp. | `[Orders] / [Visits]` |
 | Ankomstfrekvens | Andelen besökare som kom in på webbplatsen på en viss sida, jämfört med det totala antalet sessioner på webbplatsen. | `[Entries] / [Visits]` |
 | Beräknade unika besökare (ITP 2.1) | För ITP-besökare (användare i Safari-webbläsare), dividera unika besökare med 2 eller mindre. Detta beräknade mätresultat förutsätter att du anger cookies med JavaScript på klientsidan (inte med en CNAME-implementering). Implementeringar som ställer in cookies med JavaScript på klientsidan påverkades från och med ITP 2.1. Mer information finns i [Förebyggande av intelligent spårning](https://webkit.org/blog/8613/intelligent-tracking-prevention-2-1/). | `[Unique Visitors (metric) with ITP Visitors (ITP 2.1, Non-CNAME implementations) segment] / [Unique Visitors metric + Non-ITP Visitors (ITP 2.1, Non-CNAME implementations) segment]` |
-| Experience Cloud ID-täckning | Andelen besökare som har ett Experience Cloud-ID. | `[Visitors with Experience Cloud ID] / [Unique Visitors]` |
+| Experience Cloud ID-täckning | Procentandel besökare som har ett Experience Cloud-ID. | `[Visitors with Experience Cloud ID] / [Unique Visitors]` |
 | Avsluta | Andelen besökare som lämnar webbplatsen efter att ha visat en viss sida. | `[Exits] / [Visits]` |
 | ITP 2.1 Unika besökare/unika besökare | Andelen unika besökare som använder en webbläsare som påverkas av ITP 2.1-cookie-begränsningar. | `[Unique Visitors metric with ITP Visitors segment] / [Unique Visitors]` |
 | Orderassistenter | Antalet gånger en kanal eller källa bidrog till kundens resa mot ett köp, men resulterade inte i det slutliga köpet. | `[Orders (Visit Participation)] - [Orders]` |

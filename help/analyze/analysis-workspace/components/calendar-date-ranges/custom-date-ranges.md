@@ -1,70 +1,101 @@
 ---
-description: Skapa anpassade datumintervall i Analysis Workspace och spara dem som tidskomponenter.
+description: Lär dig definiera anpassade datumintervall i Analysis Workspace.
 keywords: Analysis Workspace
-title: Skapa anpassade datumintervall
+title: Exempel på anpassade datumintervall
 feature: Date Ranges
 role: User, Admin
 exl-id: 586bb120-3f20-452c-9867-0b93d2e794bc
-source-git-commit: 1281bdc569c9ebc5d8daa151b19dc21710633eab
+source-git-commit: c132b21229aebea8121b156e1f4302a26b483ef5
 workflow-type: tm+mt
-source-wordcount: '429'
-ht-degree: 0%
+source-wordcount: '113'
+ht-degree: 1%
 
 ---
 
-# Skapa anpassade datumintervall
+# Exempel på anpassade datumintervall
 
-Du kan skapa anpassade datumintervall i Analysis Workspace och spara dem som tidskomponenter.
+I den här artikeln finns fler exempel på anpassade datumintervall.
 
-Mer information om hur du lägger till befintliga datumintervall i ett projekt finns i [Översikt över kalender- och datumintervall](/help/analyze/analysis-workspace/components/calendar-date-ranges/calendar.md).
 
-Så här skapar du ett anpassat datumintervall:
 
-1. I Adobe Analytics väljer du **[!UICONTROL Components]** > **[!UICONTROL Date ranges]**.
+## De senaste två månaderna sedan
 
-   ![datumintervallsida](assets/date-ranges.png)
++++ Information
 
-1. Välj [!UICONTROL **Skapa nytt datumintervall**].
+Du vill definiera ett anpassat datumintervall som definierar för två månader sedan. Du använder en av förinställningarna.
 
-1. Ange följande information i datumintervallverktyget:
+![De senaste två månaderna sedan](assets/date-range-example-simple.png)
 
-   | Alternativ | Beskrivning |
-   |---------|----------|
-   | [!UICONTROL **Titel**] | Titeln på datumintervallet som det kommer att visas när användare markerar det i Analysis Workspace. |
-   | [!UICONTROL **Beskrivning**] | En beskrivning av datumintervallet. |
-   | [!UICONTROL **Taggar**] | Eventuella taggar som du vill använda för datumintervallet. |
-   | [!UICONTROL **Datumintervall**] | Välj ett anpassat datumintervall. Som standard är de senaste 30 dagarna markerade. |
-   | [!UICONTROL **Förinställning**] | Välj från en lista med förinställda datumintervall, t.ex. [!UICONTROL **I går**], [!UICONTROL **Senaste 7 dagarna**], [!UICONTROL **Senaste 30 dagarna**] o.s.v. |
-   | [!UICONTROL **Starttid**] | Den tid på dagen som datumintervallet börjar. |
-   | [!UICONTROL **Sluttid**] | Tiden på dagen som datumintervallet slutar. |
-   | [!UICONTROL **Använd rullande datum**] | Med rullande datum kan du generera en dynamisk rapport som ser framåt eller bakåt under en angiven tidsperiod baserat på när du körde rapporten. Om du t.ex. vill rapportera alla beställningar som placerats i&quot;Senaste månaden&quot; (baserat på fältet Skapad den) och köra rapporten i december, ser du beställningar som gjorts i november. Om du körde samma rapport i januari skulle du se beställningar i december.<ul><li>**[!UICONTROL Date Preview]**: Anger vilken tidsperiod som den rullande kalendern omfattar.</li><li>**[!UICONTROL Start]**: Du kan välja mellan aktuell dag, aktuell vecka, aktuell månad, aktuellt kvartal, aktuellt år.</li><li>**[!UICONTROL End]**: Du kan välja mellan aktuell dag, aktuell vecka, aktuell månad, aktuellt kvartal, aktuellt år.</li></ul><br>Markerad som standard. |
++++
 
-1. Välj [!UICONTROL **Spara**].
 
-## Exempel: Datumintervall för&quot;två månader sedan&quot; {#section_C4109C57CB444BB2A79CC8082BD67294}
+## Rullande till slutet av sista veckan
 
-I följande anpassade datumintervall visas ett datumintervall för&quot;två månader sedan&quot;, med en visualisering av Sammanfattningsändring som visar en riktningsändring.
++++ Information
+
+Du vill definiera ett datumintervall som definierar perioden mellan den aktuella dagen för en vecka sedan och slutet av samma sista vecka. Exempel: om idag är onsdagen den 11 september 2024. Du vill ha ett datumintervall från onsdag 4 september 2024 till lördag 7 september 2024. September
+
+![Exempel på datumintervall](assets/date-range-example.png)
+
++++
+
+<!--
+
+# Create custom date ranges
+
+You can create custom date ranges in Analysis Workspace and save them as Time components. 
+
+For information about adding existing date ranges to a project, see [Calendar and date ranges overview](/help/analyze/analysis-workspace/components/calendar-date-ranges/calendar.md).
+
+To create a custom date range:
+
+ 1. In Adobe Analytics, select **[!UICONTROL Components]** > **[!UICONTROL Date ranges]**.
+
+    ![date range page](assets/date-ranges.png)
+ 
+ 1. Select [!UICONTROL **Create new date range**].
+
+ 1. In the Date range builder, specify the following information:
+    
+    |Option | Description | 
+    |---------|----------|
+    | [!UICONTROL **Title**] | The title of the date range as it will appear when users select it in Analysis Workspace. |
+    | [!UICONTROL **Description**] | A description for the date range. | 
+    | [!UICONTROL **Tags**] | Any tags you want to apply to the date range. | 
+    | [!UICONTROL **Date Range**] | Lets you pick a custom date range. By default, the last 30 days are selected. | 
+    | [!UICONTROL **Preset**] | Choose from a list of preset date ranges, such as [!UICONTROL **Yesterday**], [!UICONTROL **Last 7 days**], [!UICONTROL **Last 30 days**], and so forth. | 
+    | [!UICONTROL **Start time**] | The time of day that the date range begins. | 
+    | [!UICONTROL **End time**] | The time of day that the date range ends. | 
+    | [!UICONTROL **Use rolling dates**] | Rolling dates allow you to generate a dynamic report that looks forward or backward for a set period of time based on when you ran the report. For example, if you want to report on all Orders placed "Last Month" (based on the Created Date field) and ran that report in December, you'd see orders placed in November. If you ran that same report in January, you'd see orders placed in December.<ul><li>**[!UICONTROL Date Preview]**: Indicates what time period the rolling calendar encompasses.</li><li>**[!UICONTROL Start]**: You can choose among current day, current week, current month, current quarter, current year.</li><li>**[!UICONTROL End]**: You can choose among current day, current week, current month, current quarter, current year.</li></ul><br>Selected by default. | 
+
+ 1. Select [!UICONTROL **Save**]. 
+
+## Example: Date range for "two months ago" {#section_C4109C57CB444BB2A79CC8082BD67294}
+
+The following custom date range shows a date range for "two months ago," with a Summary Change visualization showing directional change.
 
 ![](assets/date-range-two-months-ago.png)
 
-Det anpassade datumintervallet visas högst upp på [!UICONTROL Date Range]-komponentpanelen i ditt projekt:
+The custom date range is displayed at the top of the [!UICONTROL Date Range] component panel in your project:
 
 ![](assets/date-range-panel-two-months-ago.png)
 
-Du kan dra det här anpassade datumintervallet till en kolumn tillsammans med ett anpassat, månatligt löpande datumintervall med hjälp av förinställningen Senaste månaden för en jämförelse. Lägg till en visualisering av sammanfattningsändring och välj summorna från varje kolumn för att visa riktningsändring:
+You can drag this custom date range into a column alongside a custom, monthly rolling date range using the Last Month preset for a comparison. Add a Summary Change visualization and select the totals from each column to show directional change:
 
 ![](assets/date-range-two-months-table.png)
 
-## Exempel: Använd ett 7-dagars rullande datumintervall {#section_7EF63B2E9FF54D2E9144C4F76956A8DD}
+## Example: Use a 7-day rolling date range {#section_7EF63B2E9FF54D2E9144C4F76956A8DD}
 
-Du kan skapa ett datumintervall som anger ett 7-dagars rullande fönster som slutar för en vecka sedan:
+You can create a date range that specifies a 7-day rolling window that ends one week ago:
 
 ![](assets/create_date_range.png)
 
-Använd *`rolling daily`*.
+Use *`rolling daily`*.
 
-* Startinställningarna blir *`current day minus 6 days`*.
+* The Start settings would be *`current day minus 6 days`*.
 
-* Slutinställningarna blir *`current day minus 7 days`*.
+* The End settings would be *`current day minus 7 days`*.
 
-Det här datumintervallet kan vara en komponent som du drar till en frihandstabell.
+This date range can be a component that you drag onto any freeform table.
+
+-->
