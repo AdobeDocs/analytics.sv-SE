@@ -4,9 +4,9 @@ description: Lär dig hur du använder och tolkar panelen Media Average Minute A
 feature: Panels
 role: User, Admin
 exl-id: be8371ee-8bc6-4a99-8527-dd94eab8a7f9
-source-git-commit: 978bd8642011dd2c8e43564c90303f194689a64e
+source-git-commit: c9299befa63868ce0450af9c63132738474e2371
 workflow-type: tm+mt
-source-wordcount: '1773'
+source-wordcount: '1777'
 ht-degree: 0%
 
 ---
@@ -27,13 +27,13 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="workspace_mediaaverageminuteaudience_panel"
 >title="Genomsnittlig minutmålgrupp för media"
->abstract="Visar prestandan för visst medieinnehåll eller för en anpassad tidsperiod.<br/><br/>**Allmänna parametrar &#x200B;**<br/>**Beräkna mätvärden för**: Välj det mätvärde som ska användas för panelen. Välj **Specifikt innehåll** om du vill analysera den genomsnittliga minuten-publiken för specifikt innehåll eller händelse utifrån innehållets längd. **Välj Anpassad tidsperiod** om du vill analysera hur den genomsnittliga minuten publiken ändras under en anpassad vald tidsperiod.<br/>**Rapporteringsdimension**: Välj att rapportera med **videonamn** för dimensionen **Innehåll-ID**. Endast tillgängligt när du har valt Specifikt innehåll som mätvärde.<br/>**Kornighet**: Välj granularitet för rapporten. Endast tillgängligt när du har valt Anpassad tidsperiod som mått.<br/>**Filtrera innehåll efter (valfritt)**: Välj ett specifikt program, årstid, avsnitt eller välj en anpassad dimension för att filtrera innehållet.<br/><br/>**Avancerade inställningar &#x200B;**<br/>**Tabellinställningar**: Välj om du vill visa beräkningsvärden i tabellen.<br/>**Tidsåtgång för mått**: Välj vilken tid du vill använda för beräkning av specifikt innehåll. Endast tillgängligt när du har valt Specifikt innehåll som mätvärde."
+>abstract="Visar prestandan för visst medieinnehåll eller för en anpassad tidsperiod.<br/><br/>**Allmänna parametrar **<br/>**Beräkna mätvärden för**: Välj det mätvärde som ska användas för panelen. Välj **Specifikt innehåll** om du vill analysera den genomsnittliga minuten-publiken för specifikt innehåll eller händelse utifrån innehållets längd. **Välj Anpassad tidsperiod** om du vill analysera hur den genomsnittliga minuten publiken ändras under en anpassad vald tidsperiod.<br/>**Rapporteringsdimension**: Välj att rapportera med **videonamn** för dimensionen **Innehåll-ID**. Endast tillgängligt när du har valt Specifikt innehåll som mätvärde.<br/>**Kornighet**: Välj granularitet för rapporten. Endast tillgängligt när du har valt Anpassad tidsperiod som mått.<br/>**Filtrera innehåll efter (valfritt)**: Välj ett specifikt program, årstid, avsnitt eller välj en anpassad dimension för att filtrera innehållet.<br/><br/>**Avancerade inställningar **<br/>**Tabellinställningar**: Välj om du vill visa beräkningsvärden i tabellen.<br/>**Tidsåtgång för mått**: Välj vilken tid du vill använda för beräkning av specifikt innehåll. Endast tillgängligt när du har valt Specifikt innehåll som mätvärde."
 
 <!-- markdownlint-enable MD034 -->
 
 >[!BEGINSHADEBOX]
 
-_I den här artikeln visas den genomsnittliga panelen för mediemågelpublik i **Customer Journey Analytics**.<br/>Se [Målgruppspanel i genomsnitt](https://experienceleague.adobe.com/sv/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel) för **Adobe Analytics** -versionen av den här artikeln.*
+_I den här artikeln beskrivs den genomsnittliga minuten-målgruppspanelen för media i_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**_.<br/>_Se [Målgruppspanel i genomsnitt](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/average-minute-audience-panel) för_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**-versionen av den här artikeln._
 
 >[!ENDSHADEBOX]
 
@@ -117,7 +117,7 @@ Använd de indatainställningar som beskrivs i det här avsnittet för att konfi
 
    | Alternativ | Beskrivning |
    |---------|------------|
-   | **[!UICONTROL Granularity]** | Standardgranulariteten är [!UICONTROL **5 minuter**], men du kan välja vilken granularitet som helst som används som nämnare för tidsserien under den valda tidsperioden. Om du till exempel väljer 12:00 till 12:30 med 5 minuters granularitet returneras den genomsnittliga minuten-publiken över hela halvtimmen samt sex rader med den genomsnittliga minuten-publiken för varje femminutersperiod. Dessa rader används som datapunkter för tidsseriediagrammet. |
+   | **[!UICONTROL Granularity]** | Standardgranulariteten är [!UICONTROL **5 minuter**], men du kan välja vilken granularitet som helst som används som nämnare för tidsserien under den valda tidsperioden. Om du till exempel väljer 12:00 till 12:30 pm med en 5-minuters granularitet returneras den genomsnittliga minuten-publiken över hela halvtimmen samt sex rader med den genomsnittliga minuten-publiken för varje 5-minutersperiod. Dessa rader används som datapunkter för tidsseriediagrammet. |
    | [!UICONTROL **Filtrera innehåll efter (valfritt)**] | Välj hur du vill filtrera det specifika innehållet, beroende på vilken vy du vill ha eller hur data är strukturerade. <ul>[!UICONTROL **Visa, säsong, avsnitt**]: Visar tillgängliga bildspel i listrutan, som du kan filtrera med hjälp av en sökning (eller genom att dra och släppa bildspelsnamnet från den vänstra kolumnen). Du kan avsluta markeringen där för att se alla årstiderna i programmet eller filtrera efter enskilda årstider och sedan efter enskilda avsnitt. Den här inställningen visar data för dessa program, säsonger eller avsnitt för den valda tidsperioden.</li><li>[!UICONTROL **Anpassad dimension**]: Om ditt visningsnamn finns under en anpassad dimension kan du hitta det antingen genom att söka i listrutan för dimension (valfritt) eller genom att använda den vänstra kolumnsökningen. Dimensionsobjektet fylls automatiskt baserat på det urvalet och behandlas som ett avsnitt.</li><li>[!UICONTROL **Inget**]: Visar alla videonamn som har genomsnittliga minutdata för det valda urvalet. (Det här alternativet är markerat som standard.)</li></ul> |
 
 1. Fortsätt med [Avancerade inställningar för anpassad tidsperiod](#custom-time-period-advanced-settings) om du vill konfigurera avancerade inställningar.
@@ -187,8 +187,8 @@ I den genomsnittliga minuspennan i mediemiljön används endast den genomsnittli
 >[!MORELIKETHIS]
 >
 > [Skapa en panel](/help/analyze/analysis-workspace/c-panels/panels.md#create-a-panel)
-> &#x200B;> [Panelen för samtidiga visningsprogram för media](media-concurrent-viewers.md)
-> &#x200B;> [Medieuppspelningstid för panelen ](media-playback-time-spent.md)
+> > [Panelen för samtidiga visningsprogram för media](media-concurrent-viewers.md)
+> > [Medieuppspelningstid för panelen ](media-playback-time-spent.md)
 >
 
 
