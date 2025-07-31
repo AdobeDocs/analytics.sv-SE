@@ -21,13 +21,13 @@ Data som skickas till Adobe Experience Platform Edge Network kan ha följande tr
 
 ## `xdm` objekt
 
-Följ scheman som du skapar baserat på [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv) (Experience Data Model). XDM ger flexibilitet vad gäller vilka fält som definieras som en del av händelser. Om du vill använda ett fördefinierat schema som är specifikt för Adobe Analytics kan du lägga till [Adobe Analytics ExperienceEvent-schemafältgruppen](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/event/analytics-full-extension) i ditt schema. När du har lagt till det kan du fylla i det här schemat med hjälp av objektet `xdm` i Web SDK och skicka data till en rapportserie. När data kommer till Edge Network översätts XDM-objektet till ett format som Adobe Analytics förstår.
+Följ scheman som du skapar baserat på [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv) (Experience Data Model). XDM ger flexibilitet vad gäller vilka fält som definieras som en del av händelser. Om du vill använda ett fördefinierat schema som är specifikt för Adobe Analytics kan du lägga till [Adobe Analytics ExperienceEvent-schemafältgruppen](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/field-groups/event/analytics-full-extension) i ditt schema. När du har lagt till det kan du fylla i det här schemat med hjälp av objektet `xdm` i Web SDK och skicka data till en rapportserie. När data kommer till Edge Network översätts XDM-objektet till ett format som Adobe Analytics förstår.
 
 Mer information om en fullständig referens till XDM-fält och hur de mappas till Analytics-variabler finns i [Mappning av XDM-objektvariabeln till Adobe Analytics](xdm-var-mapping.md).
 
 >[!TIP]
 >
->Om du planerar att gå över till [Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-landing) i framtiden rekommenderar Adobe att du inte använder Adobe Analytics schemafältgrupp. I stället rekommenderar Adobe [att du skapar ett eget schema](https://experienceleague.adobe.com/en/docs/analytics-platform/using/compare-aa-cja/upgrade-to-cja/schema/cja-upgrade-schema-architect) och använder datastream-mappning för att fylla i de önskade Analytics-variablerna. Den här strategin låser inte in dig i ett schema med props och eVars när du är redo att gå över till Customer Journey Analytics.
+>Om du planerar att gå över till [Customer Journey Analytics](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-landing) i framtiden rekommenderar Adobe att du inte använder Adobe Analytics schemafältgrupp. I stället rekommenderar Adobe [att du skapar ett eget schema](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/compare-aa-cja/upgrade-to-cja/schema/cja-upgrade-schema-architect) och använder datastream-mappning för att fylla i de önskade Analytics-variablerna. Den här strategin låser inte in dig i ett schema med props och eVars när du är redo att gå över till Customer Journey Analytics.
 
 ## `data` objekt
 
