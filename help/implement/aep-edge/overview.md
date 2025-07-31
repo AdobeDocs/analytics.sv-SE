@@ -4,51 +4,75 @@ description: Översikt över hur du använder XDM-data från Experience Platform
 exl-id: 7d8de761-86e3-499a-932c-eb27edd5f1a3
 feature: Implementation Basics
 role: Admin, Developer, Leader
-source-git-commit: 8e701a3da6f04ccf2d7ac3abd10c6df86feb00a7
+source-git-commit: a515927313fdc6025fb3ff8eaedf0b3742bede70
 workflow-type: tm+mt
-source-wordcount: '395'
+source-wordcount: '476'
 ht-degree: 0%
 
 ---
 
 # Implementera Adobe Analytics med Adobe Experience Platform Edge Network
 
-Med Adobe Experience Platform Edge Network kan du skicka data till flera produkter på en central plats. Edge Network vidarebefordrar lämplig information till de önskade produkterna. Med det här konceptet kan ni konsolidera implementeringsinsatser, särskilt genom att sprida flera datalösningar.
-
-Adobe erbjuder tre sätt att skicka data till Edge Network:
-
-* **[Adobe Experience Platform Web SDK](web-sdk/overview.md)**: Använd Web SDK-tillägget i Adobe Experience Platform Data Collection för att skicka data till Edge.
-* **[Adobe Experience Platform Mobile SDK](mobile-sdk/overview.md)**: Använd Mobile SDK-tillägget i Adobe Experience Platform Data Collection för att skicka data till Edge.
-* **[Adobe Experience Platform Edge Network API](api/overview.md)**: Skicka data direkt till Edge Network med ett API.
+Med Adobe Experience Platform Edge Network kan du skicka data till flera produkter på en central plats. Edge Network vidarebefordrar lämplig information till de önskade produkterna. Med det här konceptet kan ni konsolidera implementeringsinsatser, särskilt genom att sprida flera datalösningar. Adobe Analytics är en av de produkter som du kan skicka data till med Edge Network.
 
 ## Hur Adobe Analytics hanterar Edge Network data
 
-Data som skickas till Adobe Experience Platform Edge Network kan ha följande två format:
+Data som skickas till Adobe Experience Platform Edge Network kan ha följande tre format: **XDM-objekt**, **Dataobjekt** och **Kontextdata**. När en datastream skickar data till Adobe Analytics, översätts de till ett format som Adobe Analytics kan hantera.
 
-* XDM-objekt: Följ scheman baserat på [XDM (Experience Data Model)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv). XDM ger flexibilitet vad gäller vilka fält som definieras som en del av händelser. När händelser når Adobe Analytics översätts de till ett format som Adobe Analytics kan hantera.
-* Dataobjekt: Skicka data till Edge Network med specifika fält som mappats till Adobe Analytics. Edge Network identifierar förekomsten av dessa fält och vidarebefordrar dem till Adobe Analytics utan att behöva följa ett schema.
+## `xdm` objekt
 
-Edge Network använder följande logik för att avgöra vilka sidor i Adobe Analytics som visas och vilka länkhändelser som används:
+Följ scheman som du skapar baserat på [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv) (Experience Data Model). XDM ger flexibilitet vad gäller vilka fält som definieras som en del av händelser. Om du vill använda ett fördefinierat schema som är specifikt för Adobe Analytics kan du lägga till [Adobe Analytics ExperienceEvent-schemafältgruppen](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/event/analytics-full-extension) i ditt schema. När du har lagt till det kan du fylla i det här schemat med hjälp av objektet `xdm` i Web SDK och skicka data till en rapportserie. När data kommer till Edge Network översätts XDM-objektet till ett format som Adobe Analytics förstår.
 
-| XDM-nyttolasten innehåller... | Adobe Analytics... |
-|---|---|
-| `xdm.web.webPageDetails.name` eller `xdm.web.webPageDetails.URL` och nej `xdm.web.webInteraction.type` | hanterar nyttolast för en **sidvy** |
-| `xdm.eventType = web.webPageDetails.pageViews` | hanterar nyttolast för en **sidvy** |
-| `xdm.web.webInteraction.type` och (`xdm.web.webInteraction.name` eller `xdm.web.webInteraction.url`) | hanterar nyttolast för en **link-händelse** |
-| `xdm.web.webInteraction.type` och (`xdm.web.webPageDetails.name` eller `xdm.web.webPageDetails.url`) | hanterar nyttolast för en **link-händelse** <br/>Anger även `xdm.web.webPageDetails.name` och `xdm.web.webPageDetails.URL` som `null` |
-| no `xdm.web.webInteraction.type` and (no `xdm.webPageDetails.name` and no `xdm.web.webPageDetails.URL`) | släpper nyttolasten och ignorerar data |
+Mer information om en fullständig referens till XDM-fält och hur de mappas till Analytics-variabler finns i [Mappning av XDM-objektvariabeln till Adobe Analytics](xdm-var-mapping.md).
 
-{style="table-layout:auto"}
+>[!TIP]
+>
+>Om du planerar att gå över till [Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-landing) i framtiden rekommenderar Adobe att du inte använder Adobe Analytics schemafältgrupp. I stället rekommenderar Adobe [att du skapar ett eget schema](https://experienceleague.adobe.com/en/docs/analytics-platform/using/compare-aa-cja/upgrade-to-cja/schema/cja-upgrade-schema-architect) och använder datastream-mappning för att fylla i de önskade Analytics-variablerna. Den här strategin låser inte in dig i ett schema med props och eVars när du är redo att gå över till Customer Journey Analytics.
 
-Förutom att differentiera sidvyer och länkklick finns följande logik som avgör om vissa händelser kategoriseras som A4T eller ignoreras.
+## `data` objekt
 
-| XDM-nyttolasten innehåller... | Adobe Analytics... |
-| --- | --- |
-| `xdm.eventType = display` eller <br/>`xdm.eventType = decisioning.propositionDisplay` eller <br/>`xdm.eventType = personalization.request` eller <br/>`xdm.eventType = decisioning.propositionFetch` och `xdm._experience.decisioning` | behandlar nyttolast som ett **A4T**-anrop. |
-| `xdm.eventType = display` eller <br/>`xdm.eventType = decisioning.propositionDisplay` eller <br/>`xdm.eventType = personalization.request` eller <br/>`xdm.eventType = decisioning.propositionFetch` och nej `xdm._experience.decisioning` | släpper nyttolasten och ignorerar data |
-| `xdm.eventType = click` eller `xdm.eventType = decisioning.propositionInteract` och `xdm._experience.decisioning` och inte `web.webInteraction.type` | behandlar nyttolast som ett **A4T**-anrop. |
-| `xdm.eventType = click` eller `xdm.eventType = decisioning.propositionInteract` och nej `xdm._experience.decisioning` och nej `web.webInteraction.type` | släpper nyttolasten och ignorerar data. |
+Som ett alternativ till att använda objektet `xdm` kan du använda objektet `data` i stället. Dataobjektet är inriktat på implementeringar som för närvarande använder AppMeasurement, vilket gör uppgraderingen till Web SDK mycket enklare. Edge Network identifierar att det finns fält som är specifika för Adobe Analytics utan att du behöver anpassa dig till ett schema.
 
-{style="table-layout:auto"}
+Se [Variabelmappning av dataobjekt till Adobe Analytics](data-var-mapping.md) för en fullständig referens till dataobjektfält och hur de mappas till Analytics-variabler.
 
-Mer information finns i schemafältgruppen [Adobe Analytics ExperienceEvent Full Extension](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/event/analytics-full-extension.html?lang=sv-SE).
+## Sammanhangsdatavariabler
+
+Skicka data till Edge Network i valfritt format. Alla fält som inte automatiskt mappas till `xdm` eller `data` objektfält inkluderas som [kontextdatavariabler](/help/implement/vars/page-vars/contextdata.md) när de vidarebefordras till Adobe Analytics. Du måste sedan använda [Bearbetningsregler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/processing-rules/pr-overview.md) för att mappa de önskade fälten till deras respektive Analytics-variabler.
+
+Om du till exempel har ett anpassat XDM-schema som ser ut så här:
+
+```json
+{
+  "xdm": {
+    "key": "value",
+    "animal": {
+      "species": "Raven",
+      "size": "13 inches"
+    },
+    "array": [
+      "v0",
+      "v1",
+      "v2"
+    ],
+    "objectArray":[{
+      "ad1": "300x200",
+      "ad2": "60x240",
+      "ad3": "600x50"
+    }]
+  }
+}
+```
+
+Då är de här fälten de kontextdatanycklar som är tillgängliga i bearbetningsregelgränssnittet:
+
+```javascript
+a.x.key // value
+a.x.animal.species // Raven
+a.x.animal.size // 13 inches
+a.x.array.0 // v0
+a.x.array.1 // v1
+a.x.array.2 // v2
+a.x.objectarray.0.ad1 // 300x200
+a.x.objectarray.1.ad2 // 60x240
+a.x.objectarray.2.ad3 // 600x50
+```
