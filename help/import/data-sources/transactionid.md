@@ -4,9 +4,9 @@ description: Lär dig det allmänna arbetsflödet med att använda datakällor f
 feature: Data Sources
 exl-id: 5f26b15c-8d9c-46d5-860f-13fdfa21af2e
 role: Admin
-source-git-commit: e281d43204e1c5b10508661f04b880125fe8671c
+source-git-commit: 1d905aa47b4573a35012d56c0cf70fbc944bc972
 workflow-type: tm+mt
-source-wordcount: '413'
+source-wordcount: '397'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Datakällor för transaktions-ID är en variation på sammanfattningsdatakällor som gör att du kan koppla samman online- och offlinedata. Det kräver att variabeln [`transactionID`](/help/implement/vars/page-vars/transactionid.md) används i din Analytics-implementering.
 
-* Om en rad i en datakällfil innehåller ett transaktions-ID som matchar ett transaktions-ID som redan samlats in av AppMeasurementet, läggs mått och mått till i onlinesatsen.
+* Om en rad i en datakällfil innehåller ett transaktions-ID som matchar ett transaktions-ID som redan samlats in av AppMeasurement, läggs mått och mått till i onlinesatsen.
 * Om en rad i en datakällfil innehåller ett transaktions-ID som inte innehåller någon matchning behandlas raden på samma sätt som sammanfattningsdatakällor.
 
 >[!NOTE]
@@ -27,16 +27,15 @@ När du skickar en onlineträff som innehåller ett [`transactionID`](/help/impl
 Transaktions-ID-datakällor har följande egenskaper:
 
 * Onlinedata måste samlas in och behandlas först. Om en transaktions-ID-datakälla överförs innan en rapportserie bearbetar en träff som matchar transaktions-ID:t, länkas inte data.
-* Transaktions-ID:n som samlas in via AppMeasurementet går ut efter 25 månader.
+* Transaktions-ID:n som samlas in via AppMeasurement går ut efter 25 månader.
 * Datakällor som har överförts med ett transaktions-ID som har gått ut behandlas på liknande sätt som data som har överförts utan ett transaktions-ID.
-* Om samma variabel ingår i både online-träffen och transaktions-ID-datakällan används värdet från transaktions-ID-datakällan.
+* Om samma variabel ingår i både online-träffen och transaktions-ID-datakällan används värdet från transaktions-ID-datakällan i transaktionens datakälla.
 * Om en variabel ingår i en onlineträff men inte i en matchande datakällträff för transaktions-ID bevaras träffvariabeln online.
 * Om du anger samma transaktions-ID för flera onlineträffar ändras endast den första förekomsten med data från en matchande transaktions-ID-datakälla.
-* Om du anger samma transaktions-ID på flera datakällrader för samma dimensioner, används den senaste dimensionsobjektet.
 
 Exempel:
 
-1. Du skickar in en sidvy från AppMeasurementet där:
+1. Du skickar in en sidvy från AppMeasurement där:
    * `eVar1` är lika med `blue`
    * `eVar2` är lika med `water`
    * `events` är lika med `event1`
