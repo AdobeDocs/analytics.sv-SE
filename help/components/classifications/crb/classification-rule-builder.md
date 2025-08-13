@@ -18,7 +18,7 @@ I stället för att underhålla och överföra klassificeringar varje gång spå
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Klassificeringsregelbyggaren](https://video.tv.adobe.com/v/25884?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Klassificeringsregelbyggaren](https://video.tv.adobe.com/v/3434382?quality=12&learn=on&captions=swe){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 
