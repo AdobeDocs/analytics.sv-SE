@@ -63,7 +63,7 @@ Exempel på steg som beskriver hur du kan överföra underklassificeringar med r
 
    Exempel:
 
-   | Nyckel | Kanal | Kampanjkod | &amp;Kampanjkod;Hatt;Kampanjtyp | &amp;Kampanjkod;Hatt;Kampanjdirektör | ... |
+   | Nyckel | Kanal | Kampanjkod | &Kampanjkod;Hatt;Kampanjtyp | &Kampanjkod;Hatt;Kampanjdirektör | ... |
    |---|---|---|---|---|---|
    | &#42; |  | 111 | Varumärke | Suzanne |  |
    | &#42; |  | 222 | Varumärke | Frank |  |
