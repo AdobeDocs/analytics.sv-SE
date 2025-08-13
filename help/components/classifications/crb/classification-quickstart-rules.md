@@ -3,7 +3,7 @@ description: Klassificeringsreglerna söker regelbundet efter oklassificerade te
 title: Klassificeringsregler
 feature: Classifications
 exl-id: 8fe5d838-fa89-4933-a0c0-498d4e59576d
-source-git-commit: a40f30bbe8fdbf98862c4c9a05341fb63962cdd1
+source-git-commit: 4eea524bf95c9b6bc9ddc878c8c433bc1e60daee
 workflow-type: tm+mt
 source-wordcount: '1920'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Klassificeringsregler (äldre)
+
+{{classification-rulebuilder-deprecation}}
 
 Klassificeringsreglerna söker regelbundet efter oklassificerade termer. Om en regelmatchning hittas lägger reglerna automatiskt till villkoren i dina klassificeringsdatatabeller. Du kan också använda klassificeringsregler för att skriva över befintliga nycklar.
 
@@ -57,7 +59,7 @@ about_classification_rules.xml
 
 ## Viktig information om regler
 
-* Ange [gruppbehörigheter](https://experienceleague.adobe.com/docs/analytics/admin/user-product-management/user-groups/groups.html?lang=sv-SE) för klassificeringar i [!UICONTROL Admin Tools].
+* Ange [gruppbehörigheter](https://experienceleague.adobe.com/docs/analytics/admin/user-product-management/user-groups/groups.html) för klassificeringar i [!UICONTROL Admin Tools].
 
 * **Reguljära uttryck**: Hjälp finns under [Reguljära uttryck i klassificeringsregler](/help/components/classifications/crb/classification-quickstart-rules.md).
 
@@ -133,7 +135,7 @@ Konfigurera regeln på följande sätt i [!UICONTROL Rule Builder]:
 
 | Välj regeltyp | Ange matchningsvillkor | Ange klassificering | Till |
 |---|---|---|---|
-| Reguljärt uttryck | &Hatt;()+)\:(.+)\:(.+)$ | Kampanjdatum | $3 |
+| Reguljärt uttryck | &amp;Hatt;()+)\:(.+)\:(.+)$ | Kampanjdatum | $3 |
 
 **Syntax**
 

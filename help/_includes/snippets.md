@@ -1,7 +1,7 @@
 ---
-source-git-commit: f66686838b341b57256932d65e6b0dd005205b0d
+source-git-commit: 4eea524bf95c9b6bc9ddc878c8c433bc1e60daee
 workflow-type: tm+mt
-source-wordcount: '2893'
+source-wordcount: '2947'
 ht-degree: 0%
 
 ---
@@ -11,8 +11,8 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Ett nytt och smidigt [Report Builder](https://experienceleague.adobe.com/sv/docs/analytics/analyze/report-builder/rb-overview) släpptes 16 oktober 2024. Det stöds i Mac, Windows och webbläsare.
->&#x200B;>Denna äldre Report Builder-tilläggsversion fungerar fortfarande. Du kan [konvertera dina äldre arbetsböcker](https://experienceleague.adobe.com/sv/docs/analytics/analyze/report-builder/convert-workbooks) till nya Report Builder.
+>Ett nytt och smidigt [Report Builder](https://experienceleague.adobe.com/en/docs/analytics/analyze/report-builder/rb-overview) släpptes 16 oktober 2024. Det stöds i Mac, Windows och webbläsare.
+>>Denna äldre Report Builder-tilläggsversion fungerar fortfarande. Du kan [konvertera dina äldre arbetsböcker](https://experienceleague.adobe.com/en/docs/analytics/analyze/report-builder/convert-workbooks) till nya Report Builder.
 
 ## Rapporter och analyser - meddelande om att produkten har upphört att gälla {#ra-eol}
 
@@ -187,3 +187,21 @@ Använd följande information för att välja den visualisering som bäst passar
 | Tillämpat datumintervall | Beskrivning |
 |---|---|
 | ![Datumintervall](/help/assets/filter-daterange.png){width="300"} | I avsnittet Använt datumintervall kan du filtrera efter ett datumintervall som gäller för artiklarna.<ol><li>Välj ett datumintervall.</li><li>Ange ett datumintervall i kalenderpopup eller välj en av de tillgängliga förinställningarna.<br>Du kan också ange ett datumintervall direkt i datumintervallet på panelen Filter.</li></ol><ul><li>Siffrorna anger:<ul><li>**(1)**: Antalet ändrade datumintervall som har ändrats från standardförinställningar.</li><li>**5︎⃣**: Antalet datumintervall som är tillgängliga för objekten från det aktuella filtret.</li></ul> |
+
+
+## Undertryckt klassificeringsimporterare {#classification-importer-deprecation}
+
+>[!WARNING]
+>
+>Klassificeringsimporteraren är föråldrad och kan inte längre nås efter den **31 augusti 2026**. Växla till funktionen [Klassificeringsuppsättningar](/help/components/classifications/sets/overview.md) för att säkerställa fortsatt funktionalitet.
+>
+
+
+
+## Borttagning av klassificeringsregelverktyget {#classification-rulebuilder-deprecation}
+
+>[!WARNING]
+>
+>Klassificeringsregelbyggaren är föråldrad och kan inte längre nås efter den **31 augusti 2026**. Växla till funktionen [Klassificeringsuppsättningar](/help/components/classifications/sets/overview.md) för att säkerställa fortsatt funktionalitet.
+>
+

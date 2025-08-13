@@ -3,7 +3,7 @@ description: Importören låter dig ladda upp klassificeringsdata gruppvis för 
 title: Klassificeringsdatafiler
 feature: Classifications
 exl-id: aa919a03-d461-4d12-adc1-6441fb467e63
-source-git-commit: 04c626b1159be3e61569e462bf9d12957bd2a333
+source-git-commit: 4eea524bf95c9b6bc9ddc878c8c433bc1e60daee
 workflow-type: tm+mt
 source-wordcount: '1024'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Klassificeringsdatafiler (äldre)
+
+{{classification-importer-deprecation}}
 
 Importören låter dig ladda upp klassificeringsdata gruppvis för att analysera rapporter i en fil. Importen kräver ett specifikt filformat för slutförda dataöverföringar.
 
@@ -116,4 +118,4 @@ Dessutom stöder datafilen följande ytterligare rubriktexter för att identifie
 
 ## Felsöka klassificeringar
 
-* [Vanliga problem vid överföring](https://helpx.adobe.com/se/analytics/kb/common-saint-upload-issues.html): Kunskapsbasartikeln som beskriver problem som uppstår med felaktiga filformat och filinnehåll.
+* [Vanliga problem vid överföring](https://helpx.adobe.com/analytics/kb/common-saint-upload-issues.html): Kunskapsbasartikeln som beskriver problem som uppstår med felaktiga filformat och filinnehåll.

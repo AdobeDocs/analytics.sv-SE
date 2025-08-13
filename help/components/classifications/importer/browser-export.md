@@ -3,7 +3,7 @@ title: Webbläsarexport
 description: Med webbläsarexport kan du exportera dina klassificeringsdata till en tabbavgränsad fil.
 feature: Classifications
 exl-id: f4c709b2-f707-4e3c-82ba-6b43def3e698
-source-git-commit: a40f30bbe8fdbf98862c4c9a05341fb63962cdd1
+source-git-commit: 4eea524bf95c9b6bc9ddc878c8c433bc1e60daee
 workflow-type: tm+mt
 source-wordcount: '637'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Webbläsarexport (äldre)
+
+{{classification-importer-deprecation}}
 
 Med webbläsarexport kan du exportera dina klassificeringsdata till en tabbavgränsad fil.
 

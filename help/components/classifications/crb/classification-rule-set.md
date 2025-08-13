@@ -3,7 +3,7 @@ description: En regeluppsättning är en grupp klassificeringsregler för en spe
 title: Klassificeringsregeluppsättningar
 feature: Classifications
 exl-id: 5c118541-d143-4947-b693-514d7042abe6
-source-git-commit: a40f30bbe8fdbf98862c4c9a05341fb63962cdd1
+source-git-commit: 4eea524bf95c9b6bc9ddc878c8c433bc1e60daee
 workflow-type: tm+mt
 source-wordcount: '365'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Klassificeringsregeluppsättningar (äldre)
+
+{{classification-rulebuilder-deprecation}}
 
 *Den här sidan förklarar klassificeringsregeluppsättningar som en del av [klassificeringsregelbyggaren](classification-rule-builder.md). Se [Klassificeringsuppsättningar](../sets/overview.md) för den aktuella metoden för att klassificera data i Adobe Analytics.*
 

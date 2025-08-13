@@ -3,7 +3,7 @@ description: Så här överför du datafiler via FTP.
 title: FTP-import
 feature: Classifications
 exl-id: 3e93b35c-6f65-4a93-887d-d94e4d359bdc
-source-git-commit: a40f30bbe8fdbf98862c4c9a05341fb63962cdd1
+source-git-commit: 4eea524bf95c9b6bc9ddc878c8c433bc1e60daee
 workflow-type: tm+mt
 source-wordcount: '702'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # FTP-import (äldre)
+
+{{classification-importer-deprecation}}
 
 >[!IMPORTANT]
 >
@@ -54,7 +56,7 @@ Mer information om Adobe FTP-servrar finns i [FTP och sFTP](/help/export/ftp-and
 
 1. Klicka på **[!UICONTROL Admin]** > **[!UICONTROL Classification Importer]**.
 1. Klicka på **[!UICONTROL Import File]** och sedan på **[!UICONTROL FTP Import]**.
-1. Klicka på **[!UICONTROL Add New]** på fliken **[!UICONTROL Import File]**.
+1. Klicka på **[!UICONTROL Import File]** på fliken **[!UICONTROL Add New]**.
 1. Ange information om FTP-kontot:
 
    | Element | Beskrivning |

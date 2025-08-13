@@ -3,7 +3,7 @@ description: Använd importverktyget för att överföra klassificeringar till A
 title: Klassificeringsimportör - översikt
 feature: Classifications
 exl-id: b38556a2-e075-4fea-b5da-24300a62fa7f
-source-git-commit: a40f30bbe8fdbf98862c4c9a05341fb63962cdd1
+source-git-commit: 4eea524bf95c9b6bc9ddc878c8c433bc1e60daee
 workflow-type: tm+mt
 source-wordcount: '120'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Översikt över klassificeringsimporteraren (äldre)
+
+{{classification-importer-deprecation}}
 
 Använd importverktyget för att överföra klassificeringar till Adobe Analytics. Du kan också exportera data för uppdatering före en import.
 

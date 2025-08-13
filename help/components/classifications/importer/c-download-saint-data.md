@@ -3,7 +3,7 @@ description: (Valfritt) Innan du importerar klassificeringar till marknadsförin
 title: Klassificeringsmall
 feature: Classifications
 exl-id: e299509a-0c4f-4ba8-9e91-96356c386054
-source-git-commit: a40f30bbe8fdbf98862c4c9a05341fb63962cdd1
+source-git-commit: 4eea524bf95c9b6bc9ddc878c8c433bc1e60daee
 workflow-type: tm+mt
 source-wordcount: '345'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Klassificeringsmall (äldre)
+
+{{classification-importer-deprecation}}
 
 (Valfritt) Innan du importerar klassificeringar till rapporter och projekt kan du hämta en mall som hjälper dig att skapa en klassificeringsdatafil. I datafilen används de klassificeringar du vill använda som kolumnrubriker, och sedan ordnas rapportdatauppsättningen under rätt klassificeringsrubriker.
 

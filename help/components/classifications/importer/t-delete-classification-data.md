@@ -3,7 +3,7 @@ description: Steg som beskriver hur klassificeringsdata tas bort eller tas bort.
 title: Ta bort klassificeringsdata
 feature: Classifications
 exl-id: 2b156e66-3090-4048-8192-a412320e3be3
-source-git-commit: a40f30bbe8fdbf98862c4c9a05341fb63962cdd1
+source-git-commit: 4eea524bf95c9b6bc9ddc878c8c433bc1e60daee
 workflow-type: tm+mt
 source-wordcount: '354'
 ht-degree: 3%
@@ -11,6 +11,8 @@ ht-degree: 3%
 ---
 
 # Ta bort klassificeringsdata
+
+{{classification-importer-deprecation}}
 
 Ibland är det nödvändigt att ta bort klassificeringsdata efter att de har överförts. Använd antingen `~empty~` eller `~deletekey~`, beroende på vad du vill ta bort.
 

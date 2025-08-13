@@ -3,7 +3,7 @@ title: Export av klassificeringsdata via FTP
 description: FTP-export ger större flexibilitet vid nedladdning av datauppsättningar, inklusive nedladdning av data från flera rapportsviter och nedladdning av datauppsättningsfiler som är större än 50 000 datarader
 feature: Classifications
 exl-id: 6f97f0b2-1a04-407f-9df9-8715da52037d
-source-git-commit: a40f30bbe8fdbf98862c4c9a05341fb63962cdd1
+source-git-commit: 4eea524bf95c9b6bc9ddc878c8c433bc1e60daee
 workflow-type: tm+mt
 source-wordcount: '590'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # FTP-export (äldre)
+
+{{classification-importer-deprecation}}
 
 FTP-alternativet ger större flexibilitet vid nedladdning av datauppsättningar, inklusive möjligheten att hämta data från flera rapportsviter och att hämta datauppsättningsfiler som är större än 50 000 datarader. Skapa ett FTP-konto innan du hämtar klassificeringsdata via FTP.
 

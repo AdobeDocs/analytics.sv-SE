@@ -3,7 +3,7 @@ description: Du kan importera (överföra) klassificeringsdata via webbläsaren.
 title: Import av webbläsare
 feature: Classifications
 exl-id: 5bef1f6d-9b27-464d-8343-472f300a7437
-source-git-commit: a40f30bbe8fdbf98862c4c9a05341fb63962cdd1
+source-git-commit: 4eea524bf95c9b6bc9ddc878c8c433bc1e60daee
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # Webbläsarimport (äldre)
+
+{{classification-importer-deprecation}}
 
 Du kan importera (överföra) klassificeringsdata via webbläsaren. Den här metoden begränsar din överföring av klassificeringsdata till en enda rapportserie
 
