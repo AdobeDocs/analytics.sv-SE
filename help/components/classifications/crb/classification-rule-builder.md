@@ -56,4 +56,4 @@ Nedan följer några steg för att implementera klassificeringsregler:
 
 **Blogg**: Mer information om den här funktionen finns i bloggen om digital marknadsföring: [Regelbaserade klassificeringar](https://theblog.adobe.com/rule-based-classifications-part-1-making-classifications-easier/).
 
-**Video**: Visa videon [Klassificeringsöversikt](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/components/classifications/overview-of-classifications.html).
+**Video**: Visa videon [Klassificeringsöversikt](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/components/classifications/overview-of-classifications.html?lang=sv-SE).

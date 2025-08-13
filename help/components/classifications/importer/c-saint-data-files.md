@@ -118,4 +118,4 @@ Dessutom stöder datafilen följande ytterligare rubriktexter för att identifie
 
 ## Felsöka klassificeringar
 
-* [Vanliga problem vid överföring](https://helpx.adobe.com/analytics/kb/common-saint-upload-issues.html): Kunskapsbasartikeln som beskriver problem som uppstår med felaktiga filformat och filinnehåll.
+* [Vanliga problem vid överföring](https://helpx.adobe.com/se/analytics/kb/common-saint-upload-issues.html): Kunskapsbasartikeln som beskriver problem som uppstår med felaktiga filformat och filinnehåll.
