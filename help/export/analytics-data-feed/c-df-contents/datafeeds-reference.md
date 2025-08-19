@@ -410,4 +410,4 @@ Följande kolumnlista är oanvända, indragna eller innehåller inget värde i r
 >[!MORELIKETHIS]
 >
 >[Variabelmappning för XDM-objekt](/help/implement/aep-edge/xdm-var-mapping.md)
->>[Variabelmappning för dataobjekt ](/help/implement/aep-edge/data-var-mapping.md)
+>&#x200B;>[Variabelmappning för dataobjekt ](/help/implement/aep-edge/data-var-mapping.md)
