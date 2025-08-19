@@ -1,24 +1,24 @@
 ---
-title: Streaming Media och dimensioner
+title: Direktuppspelning av medietjänster och dimensioner
 description: Tillgängliga dimensioner när du aktiverar [!UICONTROL Media Ads] för en rapportserie.
 feature: Dimensions
 exl-id: 3f17bacc-8c36-499a-a863-9298e2d54370
-source-git-commit: fdd66c9558f070cd760f37a39e5911f0dac22612
+source-git-commit: 7609ecb3c34fb0bc8293fc1ecd409cfabb327295
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '452'
 ht-degree: 0%
 
 ---
 
-# Streaming Media och dimensioner
+# Direktuppspelning av medietjänster och dimensioner
 
 *Den här sidan beskriver de tillgängliga dimensionerna när du aktiverar [!UICONTROL Media Ads] för en rapportserie. Se [annonsstatistik för direktuppspelningsmedia](../metrics/sm-ads.md) för tillgängliga mått.*
 
-Med annonsdimensionerna för direktuppspelning av media får datainsamlingen extra funktioner via bibliotek för direktuppspelad mediainsamling. Användningen av de här dimensionerna kräver **[!UICONTROL Adobe Streaming Media Collection]**. Kontakta kontoteamet på Adobe för mer information.
+Direktuppspelning av medietjänster och dimensioner ger extra rapporteringsfunktioner för datainsamling via bibliotek för direktuppspelande medietjänster. Användningen av de här dimensionerna kräver **[!UICONTROL Adobe Analytics for Streaming Media Ad-on]**. Kontakta Adobe Account Team för mer information.
 
 När du aktiverar **[!UICONTROL Media Ads]** under [Medierapportering](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/media-management.md) är följande dimensioner tillgängliga:
 
-| Dimensionens namn | Beskrivning | Skickat med | Sammanhangsdatavariabel |
+| Dimension name | Beskrivning | Skickat med | Sammanhangsdatavariabel |
 | --- | --- | --- | --- |
 | Annons | Annonsens unika identifierare. | Annonsstart, annonsstängning | `a.media.ad.name` |
 | Annonsnamn (variabel) | Annonsens egna namn. Det finns också en klassificeringsdimension med namnet&quot;annonsnamn&quot;, som har ett liknande syfte. Denna dimension och klassificeringen behandlas som två olika dimensioner. | Annonsstart, annonsstängning | `a.media.ad.friendlyName` |
@@ -31,7 +31,7 @@ När du aktiverar **[!UICONTROL Media Ads]** under [Medierapportering](/help/adm
 
 {style="table-layout:auto"}
 
-Förutom ovanstående dimensioner skapar Adobe automatiskt följande klassificeringsdimensioner. Du måste överföra klassificeringsdata för att visa rapporter som använder dessa dimensioner.
+Utöver ovanstående dimensioner skapar Adobe automatiskt följande klassificeringsdimensioner. Du måste överföra klassificeringsdata för att visa rapporter som använder dessa dimensioner.
 
 | Klassificeringsnamn | Överordnad dimension | Beskrivning |
 | --- | --- | --- |
@@ -41,7 +41,7 @@ Förutom ovanstående dimensioner skapar Adobe automatiskt följande klassificer
 | Första digitala datum | [Innehåll](sm-core.md) | Det datum då innehållet först skrevs på en digital kanal eller plattform. Eftersom den här klassificeringsdimensionen är en sträng tillåts alla datumformat. Adobe rekommenderar att du använder ett konsekvent datumformat, till exempel `YYYY-MM-DD`. |
 | Annonslängd | Annons | Längden på videoannonsen, i sekunder. |
 | Annonsnamn | Annons | Annonsens egna namn. Det är klassificeringsekvivalenten för &#39;annonsnamn (variabel)&#39;. |
-| Kreativt ID | Annons | Annonspersonalens ID. |
+| CREATIVE ID | Annons | Annonspersonalens ID. |
 | Pod name | Annonsruta | Det egna namnet på annonstavlan. |
 | Pod position | Annonsruta | Annonsens förskjutning i innehållet, i sekunder. |
 

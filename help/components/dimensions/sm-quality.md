@@ -1,24 +1,24 @@
 ---
-title: Kvalitetsdimensioner för direktuppspelande media
+title: Kvalitetsdimensioner för direktuppspelande medietjänster
 description: Tillgängliga dimensioner när du aktiverar [!UICONTROL Media Quality] för en rapportserie.
 feature: Dimensions
 exl-id: e3794d8c-3c03-425d-850c-a735b579324b
-source-git-commit: fdd66c9558f070cd760f37a39e5911f0dac22612
+source-git-commit: 7609ecb3c34fb0bc8293fc1ecd409cfabb327295
 workflow-type: tm+mt
-source-wordcount: '293'
+source-wordcount: '297'
 ht-degree: 0%
 
 ---
 
-# Kvalitetsdimensioner för direktuppspelande media
+# Kvalitetsdimensioner för direktuppspelande medietjänster
 
-*Den här sidan beskriver de tillgängliga dimensionerna när du aktiverar [!UICONTROL Media Quality] för en rapportserie. Mer information finns i [Värden för direktuppspelad mediekvalitet](../metrics/sm-quality.md).*
+*Den här sidan beskriver de tillgängliga dimensionerna när du aktiverar [!UICONTROL Media Quality] för en rapportserie. Mer information finns i [Kvalitetsstatistik för direktuppspelande medietjänster](../metrics/sm-quality.md).*
 
-Dimensionerna för direktuppspelad mediakvalitet ger rapporter om kvaliteten på det innehåll som besökaren använder. Användningen av de här dimensionerna kräver [!UICONTROL Adobe Streaming Media Collection]. Kontakta kontoteamet på Adobe för mer information.
+Kvalitetsdimensioner för direktuppspelande medietjänster ger rapporter om kvaliteten på det innehåll som besökaren använder. Användningen av de här dimensionerna kräver [!UICONTROL Adobe Analytics for Streaming Media Ad-on]. Kontakta Adobe Account Team för mer information.
 
 När du aktiverar **[!UICONTROL Media Quality]** under [Medierapportering](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/media-management.md) är följande dimensioner tillgängliga:
 
-| Dimensionens namn | Beskrivning | Skickat med | Sammanhangsdatavariabel |
+| Dimensionsnamn | Beskrivning | Skickat med | Sammanhangsdatavariabel |
 | --- | --- | --- | --- |
 | Genomsnittlig bithastighet | Genomsnittlig bithastighet i 100-KBPS-intervall. Den beräknas som ett vägt genomsnitt av alla bithastighetsvärden i relation till uppspelningstiden för en viss uppspelningssession. | Stäng media | `a.media.qoe.bitrateAverageBucket` |
 | Bithastighetsändringar | Antalet bithastighetsändringar som inträffade under en uppspelningssession. | Stäng media | `a.media.qoe.bitrateChangeCount` |

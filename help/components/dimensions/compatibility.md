@@ -1,16 +1,16 @@
 ---
-title: Analytics-Dimensioners kompatibilitet
+title: Analysdimensioner - kompatibilitet
 description: Referens för analysdimensioner och rapporter.
 feature: Dimensions
 exl-id: 1884bc20-b04d-4f9a-b057-2b2fbe53190d
-source-git-commit: fd26afc166ada6b1bc1890cbcf1406345c275765
+source-git-commit: 7609ecb3c34fb0bc8293fc1ecd409cfabb327295
 workflow-type: tm+mt
-source-wordcount: '897'
+source-wordcount: '896'
 ht-degree: 6%
 
 ---
 
-# Analytics-Dimensioners kompatibilitet
+# Analysdimensioner - kompatibilitet
 
 På den här sidan visas [dimensioner](overview.md) som stöds i deras respektive Analytics-funktioner.
 
@@ -20,7 +20,7 @@ På den här sidan visas [dimensioner](overview.md) som stöds i deras respektiv
 
 ## Dimensioner som stöds i Analysis Workspace
 
-| Dimensionens namn (visas i analysgränssnittet) | Dimension-ID (används i API-begäranden) |
+| Dimension-namn (visas i analysgränssnittet) | Dimension ID (används i API-begäranden) |
 |---|---|
 | Analyser för Target | `targetraw` |
 | Målgrupps-ID | `mcaudiences` |
@@ -146,7 +146,7 @@ På den här sidan visas [dimensioner](overview.md) som stöds i deras respektiv
 
 ## Innehållsmedvetna dimensioner stöds endast i Analysis Workspace
 
-| Dimensionens namn (visas i analysgränssnittet) | Dimension-ID (används i API-begäranden) |
+| Dimension-namn (visas i analysgränssnittet) | Dimension ID (används i API-begäranden) |
 |--- |--- |
 | Activity Map XY | `clickmapxy` |
 | ID för mediesession | `videosessionid` |
@@ -157,9 +157,9 @@ På den här sidan visas [dimensioner](overview.md) som stöds i deras respektiv
 
 ## Innehållsmedvetna dimensioner som stöds av Analysis Workspace
 
-### Video (Streaming Media Collection)
+### Video (Streaming media services)
 
-| Dimensionens namn (visas i analysgränssnittet) | Dimension-ID (används i API-begäranden) |
+| Dimension-namn (visas i analysgränssnittet) | Dimension ID (används i API-begäranden) |
 |--- |--- |
 | [Innehåll](sm-core.md) | `video` |
 | [Innehållssegment](sm-core.md) | `videosegment` |
@@ -211,7 +211,7 @@ På den här sidan visas [dimensioner](overview.md) som stöds i deras respektiv
 
 Adobe Social är pensionerat.
 
-| Dimensionens namn (visas i analysgränssnittet) | Dimension-ID (används i API-begäranden) |
+| Dimension-namn (visas i analysgränssnittet) | Dimension ID (används i API-begäranden) |
 |--- |--- |
 | Villkor | `socialterm` |
 | Sociala plattformar/egenskaper | `socialcontentprovider` |
@@ -233,7 +233,7 @@ Adobe Social är pensionerat.
 
 ### Mobile SDK
 
-| Dimensionens namn (visas i analysgränssnittet) | Dimension-ID (används i API-begäranden) |
+| Dimension-namn (visas i analysgränssnittet) | Dimension ID (används i API-begäranden) |
 |--- |--- |
 | [Första startdatum](lifecycle-dimensions.md) | `mobileinstalldate` |
 | [Program-ID](lifecycle-dimensions.md) | `mobileappid` |
@@ -270,25 +270,25 @@ Adobe Social är pensionerat.
 
 ### Adobe Advertising Cloud (AMO)
 
-| Dimensionens namn (visas i analysgränssnittet) | Dimension-ID (används i API-begäranden) |
+| Dimension-namn (visas i analysgränssnittet) | Dimension ID (används i API-begäranden) |
 |--- |--- |
 | AMO EF-ID | `amo_ef_id` |
 | AMO-ID | `amo_cid` |
 
 ### Activity Map
 
-| Dimensionens namn (visas i analysgränssnittet) | Dimension-ID (används i API-begäranden) |
+| Dimension-namn (visas i analysgränssnittet) | Dimension ID (används i API-begäranden) |
 |--- |--- |
-| [Länk Activity Map efter region](activity-map-link-by-region.md) | `clickmaplinkbyregion` |
-| [Activity Map-regionen](activity-map-region.md) | `clickmapregion` |
+| [Activity Map Link By Region](activity-map-link-by-region.md) | `clickmaplinkbyregion` |
+| [Activity Map-region](activity-map-region.md) | `clickmapregion` |
 | [Activity Map Link](activity-map-link.md) | `clickmaplink` |
-| [Activity Map-sida](activity-map-page.md) | `clickmappage` |
+| [Activity Map Page](activity-map-page.md) | `clickmappage` |
 
 ### Nielsen Integration
 
 Mer information om hur du implementerar den här integreringen finns i [Nielsen-tillägget](https://exchange.adobe.com/apps/ec/101361) på Adobe Exchange.
 
-| Dimensionens namn (visas i analysgränssnittet) | Dimension-ID (används i API-begäranden) |
+| Dimension-namn (visas i analysgränssnittet) | Dimension ID (används i API-begäranden) |
 |--- |--- |
 | Nielsen Ad Model | `nielsenadmodel` |
 | Nielsen Segment C | `nielsensegmentc` |
@@ -309,7 +309,7 @@ Mer information om hur du implementerar den här integreringen finns i [Nielsen-
 
 ### Adobe Experience Manager (AEM)
 
-| Dimensionens namn (visas i analysgränssnittet) | Dimension-ID (används i API-begäranden) |
+| Dimension-namn (visas i analysgränssnittet) | Dimension ID (används i API-begäranden) |
 |--- |--- |
 | Tillgångs-ID | `aemassetid` |
 | Resurs-Source | `aemassetsource` |
@@ -319,6 +319,6 @@ Mer information om hur du implementerar den här integreringen finns i [Nielsen-
 
 ### Adobe Campaign
 
-| Dimensionens namn (visas i analysgränssnittet) | Dimension-ID (används i API-begäranden) |
+| Dimension-namn (visas i analysgränssnittet) | Dimension ID (används i API-begäranden) |
 |--- |--- |
 | Adobe Campaign Executed Delivery ID | `ac_delivery_internal_name` |

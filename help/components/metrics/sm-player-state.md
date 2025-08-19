@@ -1,18 +1,18 @@
 ---
-title: Mätvärden för spårning av direktuppspelningsstatus för mediespelare
+title: Mätvärden för spårning av spelartillstånd för direktuppspelning av medietjänster
 description: Tillgängliga mätvärden när du aktiverar [!UICONTROL Player State Tracking] för en rapportserie.
 feature: Metrics
 exl-id: 324936cc-0c7a-4710-a618-b24cc6a2c2cf
-source-git-commit: fdd66c9558f070cd760f37a39e5911f0dac22612
+source-git-commit: 7609ecb3c34fb0bc8293fc1ecd409cfabb327295
 workflow-type: tm+mt
-source-wordcount: '361'
+source-wordcount: '364'
 ht-degree: 0%
 
 ---
 
-# Mätvärden för spårning av direktuppspelningsstatus för mediespelare
+# Mätvärden för spårning av spelartillstånd för direktuppspelning av medietjänster
 
-Mätvärden för spårning av direktuppspelad mediaspelarstatus ger extra rapporteringsfunktioner för datainsamling via bibliotek för direktuppspelad mediainsamling. Användningen av dessa mått kräver **[!UICONTROL Adobe Streaming Media Collection]**. Kontakta kontoteamet på Adobe för mer information.
+Mätvärden för statusspårning för direktuppspelning av medietjänster ger ytterligare rapporteringsfunktioner för datainsamling via bibliotek för direktuppspelande medietjänster. Användningen av dessa mått kräver **[!UICONTROL Adobe Analytics for Streaming Media Ad-on]**. Kontakta Adobe Account Team för mer information.
 
 När du aktiverar **[!UICONTROL Player State Tracking]** under [Medierapportering](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/media-management.md) är följande mått tillgängliga:
 

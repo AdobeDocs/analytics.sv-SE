@@ -4,9 +4,9 @@ description: Lär dig hur du använder och tolkar panelen Media Concurrent Viewe
 feature: Panels
 role: User, Admin
 exl-id: 29575b51-e319-4156-9834-aa0b671afb31
-source-git-commit: 978bd8642011dd2c8e43564c90303f194689a64e
+source-git-commit: 7609ecb3c34fb0bc8293fc1ecd409cfabb327295
 workflow-type: tm+mt
-source-wordcount: '1194'
+source-wordcount: '1196'
 ht-degree: 0%
 
 ---
@@ -35,14 +35,14 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-_Den här artikeln visar panelen Medievisningsprogram för samtidig användning i_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics Analytics**._<br/>_Se [Panelen för visningsprogram för samtidiga media](https://experienceleague.adobe.com/sv/docs/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers) för_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**-versionen av den här artikeln._
+_Den här artikeln visar panelen Medievisningsprogram för samtidig användning i_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics Analytics**._<br/>_Se [Panelen för visningsprogram för samtidiga media](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers) för_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**-versionen av den här artikeln._
 
 >[!ENDSHADEBOX]
 
 
 >[!NOTE]
 >
->Den genomsnittliga minuten-panelen för media är endast tillgänglig för kunder som har köpt tillägget Streaming Media Collection för Adobe Analytics.
+>Den minimala målgruppspanelen för media är endast tillgänglig för kunder som har köpt Adobe Analytics for Streaming Media Add-on.
 >
 >Kontakta din Adobe-säljare eller Adobe-kontogrupp om du vill ha mer information.
 >
@@ -68,7 +68,7 @@ Så här använder du en **[!UICONTROL Media concurrent viewers]**-panel:
 
 1. Skapa en **[!UICONTROL Media concurrent viewers]**-panel. Mer information om hur du skapar en panel finns i [Skapa en panel](panels.md#create-a-panel).
 
-1. Se till att du väljer en datavy för panelen som har konfigurerade komponenter från den direktuppspelande mediesamlingen.
+1. Se till att du väljer en datavy för panelen som har komponenter konfigurerade från Adobe Analytics for Streaming Media Add-on.
 
 1. Ange [indata](#panel-input) för panelen.
 
@@ -131,8 +131,8 @@ Det finns ingen friformstabell i den här vyn.  Om du vill visa datakällan kan 
 >[!MORELIKETHIS]
 >
 >[Skapa en panel](/help/analyze/analysis-workspace/c-panels/panels.md#create-a-panel)
->&#x200B;>[Medieuppspelningstid för panelen ](media-playback-time-spent.md)
->&#x200B;>[Medie - genomsnittlig minutmålspanel](average-minute-audience-panel.md)
+>>[Medieuppspelningstid för panelen ](media-playback-time-spent.md)
+>>[Medie - genomsnittlig minutmålspanel](average-minute-audience-panel.md)
 >
 <!--
 # Media Concurrent Viewers panel

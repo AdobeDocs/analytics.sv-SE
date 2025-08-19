@@ -4,7 +4,7 @@ title: Mediehantering
 feature: Admin Tools
 uuid: a841a5a8-6d47-478d-b02b-6c1647fb04ce
 exl-id: b6dc8d93-3f89-4671-a4c3-18614667bf4e
-source-git-commit: fdd66c9558f070cd760f37a39e5911f0dac22612
+source-git-commit: 7609ecb3c34fb0bc8293fc1ecd409cfabb327295
 workflow-type: tm+mt
 source-wordcount: '209'
 ht-degree: 0%
@@ -21,7 +21,7 @@ Följande alternativ för mediehantering är tillgängliga när du redigerar en 
 
 * [!UICONTROL **Medierapportering**]
 
-  Använd de här kryssrutorna för att aktivera mått och mått som är specifika för Streaming Media Collection.
+  Använd de här kryssrutorna om du vill aktivera mått och mätvärden för direktuppspelande medietjänster.
 
    * [Mediekärndimensioner](/help/components/dimensions/sm-core.md)
    * [Media core metrics](/help/components/metrics/sm-core.md)
@@ -38,6 +38,6 @@ Följande alternativ för mediehantering är tillgängliga när du redigerar en 
 
 * [!UICONTROL **Medieklassificeringar**]
 
-  Specifika klassificeringar för dimensioner för direktuppspelad mediesamling finns på sidan [!UICONTROL Media Classifications]. De fungerar ungefär som [konverteringsklassificeringar](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/conversion-classifications.md) som är tillgängliga för konverteringsvariabler. Om du aktiverar vissa komponenter under [!UICONTROL Media Reporting] skapas klassificeringsdimensioner automatiskt. Du kan använda det här gränssnittet för att skapa egna klassificeringsdimensioner eller överföra klassificeringsdata.
+  Specifika klassificeringar för dimensioner för direktuppspelande medietjänster finns på sidan [!UICONTROL Media Classifications]. De fungerar ungefär som [konverteringsklassificeringar](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/conversion-classifications.md) som är tillgängliga för konverteringsvariabler. Om du aktiverar vissa komponenter under [!UICONTROL Media Reporting] skapas klassificeringsdimensioner automatiskt. Du kan använda det här gränssnittet för att skapa egna klassificeringsdimensioner eller överföra klassificeringsdata.
 
-Allmän information om hur du integrerar direktuppspelande mediedata i Adobe Analytics finns i [Handboken för direktuppspelande mediainsamling](https://experienceleague.adobe.com/sv/docs/media-analytics/using/media-overview).
+Allmän information om hur du integrerar direktuppspelningsmediedata i Adobe Analytics finns i [Översikt över Adobe direktuppspelningsmedietjänster](https://experienceleague.adobe.com/en/docs/media-analytics/using/media-overview).

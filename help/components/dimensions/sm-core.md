@@ -1,24 +1,24 @@
 ---
-title: Kärndimensioner för direktuppspelande media
+title: Kärndimensioner för direktuppspelande medietjänster
 description: Tillgängliga dimensioner när du aktiverar [!UICONTROL Media Core] för en rapportserie.
 feature: Dimensions
 exl-id: 1316a646-a31a-49a4-a670-d56d90dd462b
-source-git-commit: fdd66c9558f070cd760f37a39e5911f0dac22612
+source-git-commit: 7609ecb3c34fb0bc8293fc1ecd409cfabb327295
 workflow-type: tm+mt
-source-wordcount: '400'
+source-wordcount: '404'
 ht-degree: 1%
 
 ---
 
-# Kärndimensioner för direktuppspelande media
+# Kärndimensioner för direktuppspelande medietjänster
 
-*Den här sidan beskriver de tillgängliga dimensionerna när du aktiverar [!UICONTROL Media Core] för en rapportserie. Se [Streaming Media Core-statistik](../metrics/sm-core.md) för tillgängliga mått.*
+*Den här sidan beskriver de tillgängliga dimensionerna när du aktiverar [!UICONTROL Media Core] för en rapportserie. Se [Kärnstatistik för direktuppspelande medietjänster](../metrics/sm-core.md) för tillgängliga mått.*
 
-Streaming Media Core-dimensioner ger grundläggande rapporteringsfunktioner för data som samlas in via bibliotek för mediesamling. Användningen av de här dimensionerna kräver **[!UICONTROL Adobe Streaming Media Collection]**. Kontakta kontoteamet på Adobe för mer information.
+De viktigaste dimensionerna för direktuppspelande medietjänster ger grundläggande rapporteringsfunktioner för data som samlas in via bibliotek för direktuppspelande medietjänster. Användningen av de här dimensionerna kräver **[!UICONTROL Adobe Analytics for Streaming Media Ad-on]**. Kontakta Adobe Account Team för mer information.
 
 När du aktiverar **[!UICONTROL Media Core]** under [Medierapportering](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/media-management.md) är följande dimensioner tillgängliga:
 
-| Dimensionens namn | Beskrivning | Skickat med | Sammanhangsdatavariabel |
+| Dimension name | Beskrivning | Skickat med | Sammanhangsdatavariabel |
 | --- | --- | --- | --- |
 | Innehåll | Innehållets innehålls-ID. | Mediestart, stäng media | `a.media.name` |
 | Innehållskanal | Distributionsstationen eller kanalen där innehållet spelas. Alla strängvärden är giltiga. | Mediestart, stäng media | `a.media.channel` |
@@ -32,7 +32,7 @@ När du aktiverar **[!UICONTROL Media Core]** under [Medierapportering](/help/ad
 
 {style="table-layout:auto"}
 
-Förutom ovanstående dimensioner skapar Adobe automatiskt följande klassificeringsdimensioner. Du måste överföra klassificeringsdata för att visa rapporter som använder dessa dimensioner.
+Utöver ovanstående dimensioner skapar Adobe automatiskt följande klassificeringsdimensioner. Du måste överföra klassificeringsdata för att visa rapporter som använder dessa dimensioner.
 
 | Klassificeringsnamn | Överordnad dimension | Beskrivning |
 | --- | --- | --- |

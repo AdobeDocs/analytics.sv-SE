@@ -5,9 +5,9 @@ subtopic: data feeds
 title: Referens för datakolumn
 feature: Data Feeds
 exl-id: e1492147-6e7f-4921-b509-898e7efda596
-source-git-commit: adee2f1013cfd2ae231e3133b5a5327b8792bd16
+source-git-commit: 7609ecb3c34fb0bc8293fc1ecd409cfabb327295
 workflow-type: tm+mt
-source-wordcount: '3632'
+source-wordcount: '3676'
 ht-degree: 0%
 
 ---
@@ -193,50 +193,50 @@ Tidigare uppdateringar av den här tabellen finns på den här sidans [implement
 | **`va_finder_id`** | Ett numeriskt ID som identifierar dimensionen för den [första beröringskanalen](/help/components/dimensions/first-touch-channel.md). Sökningen efter detta ID finns i Marketing Channel Manager. | tinyint unsigned |
 | **`va_instance_event`** | En flagga som identifierar marknadsföringskanalen [instanser](/help/components/metrics/instances.md). | tinyint unsigned |
 | **`va_new_engagement`** | En flagga som identifierar marknadsföringskanalen [Nya engagemang](/help/components/metrics/new-engagements.md). | tinyint unsigned |
-| **`video`** | Dimensionen [Innehåll](/help/components/dimensions/sm-core.md) för direktuppspelande media. | varchar(255) |
-| **`videoad`** | Dimensionen [Ad](/help/components/dimensions/sm-ads.md) Streaming Media. | varchar(255) |
-| **`videoadinpod`** | The [Ad in pod position](/help/components/dimensions/sm-ads.md) Streaming Media dimension. | varchar(255) |
-| **`videoadlength`** | [Annonslängd (variabel)](/help/components/dimensions/sm-ads.md) för direktuppspelningsmedia. | heltal |
-| **`videoadload`** | [Ad läser in](/help/components/dimensions/sm-ads.md)-dimensionen för direktuppspelande media. | varchar(255) |
-| **`videoadname`** | [Annonsnamn (variabel)](/help/components/dimensions/sm-ads.md) för mediedimension för direktuppspelning. | varchar(255) |
-| **`videoadplayername`** | Dimensionen för direktuppspelningsmedia för [annonsspelaren](/help/components/dimensions/sm-ads.md). | varchar(255) |
-| **`videoadpod`** | Dimensionen [AdPod](/help/components/dimensions/sm-ads.md) för direktuppspelande media. | varchar(255) |
-| **`videoadvertiser`** | Dimensionen [Advertiser](/help/components/dimensions/sm-ads.md) Streaming Media. | varchar(255) |
-| **`videoaudioalbum`** | Dimensionen [Album](/help/components/dimensions/sm-audio-metadata.md) för direktuppspelande media. | varchar(255) |
-| **`videoaudioartist`** | Dimensionen [Artist](/help/components/dimensions/sm-audio-metadata.md) Streaming Media. | varchar(255) |
-| **`videoaudioauthor`** | Dimensionen [Författare](/help/components/dimensions/sm-audio-metadata.md) för direktuppspelande media. | varchar(255) |
-| **`videoaudiolabel`** | Dimensionen [Etikett](/help/components/dimensions/sm-audio-metadata.md) för direktuppspelande media. | varchar(255) |
-| **`videoaudiopublisher`** | Dimensionen [Utgivare](/help/components/dimensions/sm-audio-metadata.md) för direktuppspelande media. | varchar(255) |
-| **`videoaudiostation`** | [Station](/help/components/dimensions/sm-audio-metadata.md) för mediedirektuppspelning. | varchar(255) |
-| **`videocampaign`** | [Kampanj-ID](/help/components/dimensions/sm-ads.md) för mediedirektuppspelning. | varchar(255) |
-| **`videochannel`** | Dimensionen [Mediedirektuppspelning i innehållskanalen](/help/components/dimensions/sm-core.md). | varchar(255) |
-| **`videochapter`** | Dimensionen [Kapitel](/help/components/dimensions/sm-chapters.md) för direktuppspelande media. | varchar(255) |
-| **`videocontenttype`** | [Innehållstypen](/help/components/dimensions/sm-core.md) Direktuppspelningsmediemätningen. | varchar(255) |
-| **`videodaypart`** | [Dagdelen](/help/components/dimensions/sm-video-metadata.md) Direktuppspelande media-dimension. | varchar(255) |
-| **`videoepisode`** | [Episoden](/help/components/dimensions/sm-video-metadata.md) för mediedirektuppspelning. | varchar(255) |
-| **`videofeedtype`** | [Medieflödestypen](/help/components/dimensions/sm-video-metadata.md) Direktuppspelningsmedia-dimensionen. | varchar(255) |
-| **`videogenre`** | Dimensionen [Genre](/help/components/dimensions/sm-video-metadata.md) för direktuppspelande media. Denna dimension tillåter flera värden i samma träff, avgränsade med kommatecken. | text |
-| **`videolength`** | [Innehållslängden (variabeln)](/help/components/dimensions/sm-core.md) för direktuppspelningsmedia. | heltal |
-| **`videomvpd`** | Dimensionen [MVPD](/help/components/dimensions/sm-video-metadata.md) Streaming Media. | varchar(255) |
-| **`videoname`** | [Innehållsnamnet (variabel)](/help/components/dimensions/sm-core.md) för mediedirektuppspelning. | varchar(255) |
-| **`videonetwork`** | Dimensionen [Nätverk](/help/components/dimensions/sm-video-metadata.md) som direktuppspelar media. | varchar(255) |
-| **`videopath`** | [Mediesökvägen](/help/components/dimensions/sm-core.md) för direktuppspelande media. | varchar(100) |
-| **`videoplayername`** | [Innehållsspelarens namn](/help/components/dimensions/sm-core.md) för mediedimension för direktuppspelning. | varchar(255) |
-| **`videotime`** | Den [innehållstid som användes ](/help/components/metrics/sm-core.md) för att strömma media. | heltal |
-| **`videoqoebitrateaverageevar`** | Den [genomsnittliga bithastigheten](/help/components/dimensions/sm-quality.md) för direktuppspelningsmedia-dimensionen. | varchar(255) |
-| **`videoqoebitratechangecountevar`** | [Bithastigheten ändras](/help/components/dimensions/sm-quality.md) i dimensionen för direktuppspelande media. | varchar(255) |
-| **`videoqoebuffercountevar`** | [Bufferthändelser](/help/components/dimensions/sm-quality.md) Dimensionen för direktuppspelande media. | varchar(255) |
-| **`videoqoebuffertimeevar`** | Den [totala buffertlängden](/help/components/dimensions/sm-quality.md) för mediedimensionen för direktuppspelning. | varchar(255) |
-| **`videoqoedroppedframecountevar`** | [Släppta bildrutor](/help/components/dimensions/sm-quality.md) Direktuppspelande media-dimension. | varchar(255) |
-| **`videoqoeerrorcountevar`** | Dimensionen [Fel](/help/components/dimensions/sm-quality.md) för direktuppspelning av media. | varchar(255) |
-| **`videoqoeextneralerrors`** | [Externa fel-ID:n](/help/components/dimensions/sm-quality.md) för mediedimension för direktuppspelning. Denna dimension tillåter flera värden i samma träff. | text |
-| **`videoqoeplayersdkerrors`** | [Player SDK-fel-ID:n](/help/components/dimensions/sm-quality.md) för direktuppspelningsmedia. Denna dimension tillåter flera värden i samma träff. | text |
-| **`videoqoetimetostartevar`** | Den [tid det tar att starta](/help/components/dimensions/sm-quality.md)-dimensionen för direktuppspelande media. | varchar(255) |
-| **`videoseason`** | Dimensionen [Säsong](/help/components/dimensions/sm-video-metadata.md) för direktuppspelande media. | varchar(255) |
-| **`videosegment`** | Dimensionen för direktuppspelande media i [innehållssegmentet](/help/components/dimensions/sm-core.md). | varchar(255) |
-| **`videoshow`** | Dimensionen [Visa](/help/components/dimensions/sm-video-metadata.md) för direktuppspelande media. | varchar(255) |
-| **`videoshowtype`** | [Visa typ](/help/components/dimensions/sm-video-metadata.md) Direktuppspelningsmedia-dimensionen. | varchar(255) |
-| **`videostreamtype`** | [Direktuppspelningstypen ](/help/components/dimensions/sm-core.md) Direktuppspelningsmediemätningen. | varchar(255) |
+| **`video`** | Dimensionen [Innehåll](/help/components/dimensions/sm-core.md) för direktuppspelande medietjänster. | varchar(255) |
+| **`videoad`** | Dimensionen [Ad](/help/components/dimensions/sm-ads.md) för direktuppspelande medietjänster. | varchar(255) |
+| **`videoadinpod`** | Dimensionen [Ad in pod position](/help/components/dimensions/sm-ads.md) för direktuppspelande medietjänster. | varchar(255) |
+| **`videoadlength`** | Dimensionen [Ad length (variabel)](/help/components/dimensions/sm-ads.md) för direktuppspelande medietjänster. | heltal |
+| **`videoadload`** | [Ad läser in ](/help/components/dimensions/sm-ads.md)-dimensionen för direktuppspelande medietjänster. | varchar(255) |
+| **`videoadname`** | Dimensionen [Ad name (variabel)](/help/components/dimensions/sm-ads.md) för direktuppspelande medietjänster. | varchar(255) |
+| **`videoadplayername`** | Dimensionen för [annonsspelarnamn](/help/components/dimensions/sm-ads.md) för direktuppspelande medietjänster. | varchar(255) |
+| **`videoadpod`** | Dimensionen [Ad pod](/help/components/dimensions/sm-ads.md) för direktuppspelande medietjänster. | varchar(255) |
+| **`videoadvertiser`** | Dimensionen [Advertiser](/help/components/dimensions/sm-ads.md) för direktuppspelande medietjänster. | varchar(255) |
+| **`videoaudioalbum`** | Dimensionen [Album](/help/components/dimensions/sm-audio-metadata.md) för direktuppspelande medietjänster. | varchar(255) |
+| **`videoaudioartist`** | Dimensionen [Konstnär](/help/components/dimensions/sm-audio-metadata.md) för direktuppspelande medietjänster. | varchar(255) |
+| **`videoaudioauthor`** | Dimensionen [Författare](/help/components/dimensions/sm-audio-metadata.md) för direktuppspelande medietjänster. | varchar(255) |
+| **`videoaudiolabel`** | Dimensionen [Etikett](/help/components/dimensions/sm-audio-metadata.md) för direktuppspelande medietjänster. | varchar(255) |
+| **`videoaudiopublisher`** | Dimensionen [Utgivare](/help/components/dimensions/sm-audio-metadata.md) för direktuppspelande medietjänster. | varchar(255) |
+| **`videoaudiostation`** | Dimensionen [Station](/help/components/dimensions/sm-audio-metadata.md) för direktuppspelande medietjänster. | varchar(255) |
+| **`videocampaign`** | Dimensionen [Kampanj-ID](/help/components/dimensions/sm-ads.md) för direktuppspelande medietjänster. | varchar(255) |
+| **`videochannel`** | Dimensionen [Medietjänster för direktuppspelning i innehållskanalen](/help/components/dimensions/sm-core.md). | varchar(255) |
+| **`videochapter`** | Dimensionen [Kapitel](/help/components/dimensions/sm-chapters.md) för direktuppspelande medietjänster. | varchar(255) |
+| **`videocontenttype`** | Dimensionen för [innehållstyp](/help/components/dimensions/sm-core.md) för direktuppspelande medietjänster. | varchar(255) |
+| **`videodaypart`** | [Dagdelen](/help/components/dimensions/sm-video-metadata.md) av dimensionen för tjänster för direktuppspelning av media. | varchar(255) |
+| **`videoepisode`** | Dimensionen för [Episod](/help/components/dimensions/sm-video-metadata.md) för direktuppspelande medietjänster. | varchar(255) |
+| **`videofeedtype`** | Dimensionen för [Medieflödestyp](/help/components/dimensions/sm-video-metadata.md) för direktuppspelande medietjänster. | varchar(255) |
+| **`videogenre`** | Dimensionen [Genre](/help/components/dimensions/sm-video-metadata.md) för direktuppspelande medietjänster. Denna dimension tillåter flera värden i samma träff, avgränsade med kommatecken. | text |
+| **`videolength`** | Dimensionen [Innehållslängd (variabel)](/help/components/dimensions/sm-core.md) för direktuppspelande medietjänster. | heltal |
+| **`videomvpd`** | Dimensionen [MVPD](/help/components/dimensions/sm-video-metadata.md) för direktuppspelande medietjänster. | varchar(255) |
+| **`videoname`** | Dimensionen [Innehållsnamn (variabel)](/help/components/dimensions/sm-core.md) för direktuppspelande medietjänster. | varchar(255) |
+| **`videonetwork`** | Dimensionen [Nätverks](/help/components/dimensions/sm-video-metadata.md) för direktuppspelande medietjänster. | varchar(255) |
+| **`videopath`** | Dimensionen för [mediesökväg](/help/components/dimensions/sm-core.md) för direktuppspelning av medietjänster. | varchar(100) |
+| **`videoplayername`** | Dimensionen för [Innehållsspelarens namn](/help/components/dimensions/sm-core.md) för direktuppspelande medietjänster. | varchar(255) |
+| **`videotime`** | [Innehållstid som använts](/help/components/metrics/sm-core.md) för att strömma medietjänster. | heltal |
+| **`videoqoebitrateaverageevar`** | Den [genomsnittliga bithastigheten](/help/components/dimensions/sm-quality.md) för tjänster för direktuppspelning av media. | varchar(255) |
+| **`videoqoebitratechangecountevar`** | [Bithastigheten ändras](/help/components/dimensions/sm-quality.md) i dimensionen för direktuppspelande medietjänster. | varchar(255) |
+| **`videoqoebuffercountevar`** | Dimensionen för [Bufferthändelser](/help/components/dimensions/sm-quality.md) för direktuppspelande medietjänster. | varchar(255) |
+| **`videoqoebuffertimeevar`** | Dimensionen för [Total buffertvaraktighet](/help/components/dimensions/sm-quality.md) för direktuppspelande medietjänster. | varchar(255) |
+| **`videoqoedroppedframecountevar`** | Dimensionen för [uteslutna bildrutor](/help/components/dimensions/sm-quality.md) för direktuppspelande medietjänster. | varchar(255) |
+| **`videoqoeerrorcountevar`** | Dimensionen [Fel](/help/components/dimensions/sm-quality.md) för direktuppspelande medietjänster. | varchar(255) |
+| **`videoqoeextneralerrors`** | Dimensionen [Externa fel-ID:n](/help/components/dimensions/sm-quality.md) för direktuppspelande medietjänster. Denna dimension tillåter flera värden i samma träff. | text |
+| **`videoqoeplayersdkerrors`** | [Player SDK-fel-ID:n](/help/components/dimensions/sm-quality.md) för direktuppspelning av medietjänster. Denna dimension tillåter flera värden i samma träff. | text |
+| **`videoqoetimetostartevar`** | Den [tid det tar att starta](/help/components/dimensions/sm-quality.md)-dimensionen för direktuppspelande medietjänster. | varchar(255) |
+| **`videoseason`** | Dimensionen [Säsong](/help/components/dimensions/sm-video-metadata.md) för direktuppspelande medietjänster. | varchar(255) |
+| **`videosegment`** | Dimensionen [Innehållssegment](/help/components/dimensions/sm-core.md) för direktuppspelande medietjänster. | varchar(255) |
+| **`videoshow`** | Dimensionen [Visa](/help/components/dimensions/sm-video-metadata.md) för direktuppspelande medietjänster. | varchar(255) |
+| **`videoshowtype`** | Dimensionen för [Visa typ](/help/components/dimensions/sm-video-metadata.md) för direktuppspelande medietjänster. | varchar(255) |
+| **`videostreamtype`** | Dimensionen för [direktuppspelningstyp](/help/components/dimensions/sm-core.md) för medietjänster. | varchar(255) |
 | **`visid_high`** | Används med `visid_low` för att unikt identifiera en besökare. | bigint unsigned |
 | **`visid_low`** | Används med `visid_high` för att unikt identifiera en besökare. | bigint unsigned |
 | **`visid_new`** | En flagga som avgör om träffen innehåller ett nyligen genererat besökar-ID. | char(1) |
@@ -410,4 +410,4 @@ Följande kolumnlista är oanvända, indragna eller innehåller inget värde i r
 >[!MORELIKETHIS]
 >
 >[Variabelmappning för XDM-objekt](/help/implement/aep-edge/xdm-var-mapping.md)
->&#x200B;>[Variabelmappning för dataobjekt ](/help/implement/aep-edge/data-var-mapping.md)
+>>[Variabelmappning för dataobjekt ](/help/implement/aep-edge/data-var-mapping.md)

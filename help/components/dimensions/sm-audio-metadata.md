@@ -1,22 +1,22 @@
 ---
-title: Metadata för direktuppspelat ljud
+title: Mått på metadata för direktuppspelande medietjänster
 description: Tillgängliga dimensioner när du aktiverar [!UICONTROL Audio Metadata] för en rapportserie.
 feature: Dimensions
 exl-id: 2e4dc1e9-267b-47a2-b791-23d1e754a2c1
-source-git-commit: fdd66c9558f070cd760f37a39e5911f0dac22612
+source-git-commit: 7609ecb3c34fb0bc8293fc1ecd409cfabb327295
 workflow-type: tm+mt
-source-wordcount: '135'
+source-wordcount: '138'
 ht-degree: 1%
 
 ---
 
-# Metadata för direktuppspelat ljud
+# Mått på metadata för direktuppspelande medietjänster
 
-Med annonsdimensionerna för direktuppspelning av media får datainsamlingen extra funktioner via bibliotek för direktuppspelad mediainsamling. Användningen av de här dimensionerna kräver **[!UICONTROL Adobe Streaming Media Collection]**. Kontakta kontoteamet på Adobe för mer information.
+Direktuppspelning av medietjänster och dimensioner ger extra rapporteringsfunktioner för datainsamling via bibliotek för direktuppspelande medietjänster. Användningen av de här dimensionerna kräver **[!UICONTROL Adobe Analytics for Streaming Media Ad-on]**. Kontakta Adobe Account Team för mer information.
 
 När du aktiverar **[!UICONTROL Audio Metadata]** under [Medierapportering](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/media-management.md) är följande dimensioner tillgängliga:
 
-| Dimensionens namn | Beskrivning | Skickat med | Sammanhangsdatavariabel |
+| Dimension name | Beskrivning | Skickat med | Sammanhangsdatavariabel |
 | --- | --- | --- | --- |
 | Album | Namnet på albumet. | Mediestart, stäng media | `a.media.album` |
 | Konstnär | Namnet på artisten. | Mediestart, stäng media | `a.media.artist` |
