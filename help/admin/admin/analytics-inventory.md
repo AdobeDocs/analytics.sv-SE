@@ -40,7 +40,7 @@ Målet med Analytics-inventeringen är att hjälpa er att besvara följande frå
 
 ## Behörigheter
 
-Analysinventering är tillgängligt för användare med Adobe Analytics produktadministratörsbehörighet i [Adobe Admin Console](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-console/admin-roles-in-analytics).
+Analysinventering är tillgängligt för användare med Adobe Analytics produktadministratörsbehörighet i [Adobe Admin Console](https://experienceleague.adobe.com/sv/docs/analytics/admin/admin-console/admin-roles-in-analytics).
 
 ## Access Analytics-inventering
 
@@ -112,10 +112,10 @@ Svaren på dessa frågor ger er en bra uppfattning om vilka rapporteringsprogram
    | Förekomster (de senaste 90 dagarna) | Måttet &#39;Förekomster&#39; visar antalet träffar där en given dimension har angetts eller sparats. Hur många träffar fick den här rapportsviten de senaste 90 dagarna? |
    | Mätvärden | Hur många mätvärden definieras i denna rapportserie? |
    | Mått | Hur många dimensioner definieras i den här rapportsviten? |
-   | Analyser för mål (A4T) har aktiverats | [Dold som standard] Är den här rapportsviten aktiverad för [Analytics för mål](https://experienceleague.adobe.com/en/docs/target/using/integrate/a4t/a4t)? |
-   | Marknadsföringskanaler är aktiverade | [Dold som standard] Är den här rapportsviten aktiverad för [marknadsföringskanaler](https://experienceleague.adobe.com/en/docs/analytics/components/marketing-channels/c-getting-started-mchannel)? |
-   | Source Connector är aktiverat | Är den här rapportsviten aktiverad för [Adobe Analytics Source Connector för rapportsvitdata](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/analytics) i Adobe Experience Platform? Med andra ord, kan den här rapportsviten migreras till Customer Journey Analytics med Analytics Source Connector? |
-   | Kalendertyp | [Dold som standard] Mer information finns i [Anpassade kalendrar](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/custom-calendar#) |
+   | Analyser för mål (A4T) har aktiverats | [Dold som standard] Är den här rapportsviten aktiverad för [Analytics för mål](https://experienceleague.adobe.com/sv/docs/target/using/integrate/a4t/a4t)? |
+   | Marknadsföringskanaler är aktiverade | [Dold som standard] Är den här rapportsviten aktiverad för [marknadsföringskanaler](https://experienceleague.adobe.com/sv/docs/analytics/components/marketing-channels/c-getting-started-mchannel)? |
+   | Source Connector är aktiverat | Är den här rapportsviten aktiverad för [Adobe Analytics Source Connector för rapportsvitdata](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/connectors/adobe-applications/analytics) i Adobe Experience Platform? Med andra ord, kan den här rapportsviten migreras till Customer Journey Analytics med Analytics Source Connector? |
+   | Kalendertyp | [Dold som standard] Mer information finns i [Anpassade kalendrar](https://experienceleague.adobe.com/sv/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/custom-calendar#) |
 
 #### Analysera dimensioner
 
@@ -132,7 +132,7 @@ Den här skärmen innehåller en detaljerad vy över alla dimensioner som har de
    | ID | Dimensions-ID. |
    | Typ | Dimensionstypen. Möjliga värden är konvertering, trafik, navigering, trafikkällor, kunder, datum eller Adobe produktspecifika dimensioner som AEM, målgrupp, Adobe Campaign, mobilapp osv. |
    | Beskrivning | Alla dimensioner har inte beskrivningar. |
-   | Source Connector är aktiverat | Är den här dimensionen aktiverad för [Adobe Analytics Source Connector för rapportsvitdata](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/analytics) i Adobe Experience Platform? Med andra ord, kan den här dimensionen migreras till Customer Journey Analytics med Analytics Source Connector? |
+   | Source Connector är aktiverat | Är den här dimensionen aktiverad för [Adobe Analytics Source Connector för rapportsvitdata](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/connectors/adobe-applications/analytics) i Adobe Experience Platform? Med andra ord, kan den här dimensionen migreras till Customer Journey Analytics med Analytics Source Connector? |
 
 1. Bestäm vilka dimensioner det är praktiskt att migrera till CJA.
 
@@ -153,7 +153,7 @@ Den här skärmen innehåller en detaljerad vy över alla mått som definierats 
    | ID | Mätnings-ID. |
    | Typ | Typen av mått. Möjliga värden är konvertering, trafik, navigering, trafikkällor, kunder, datum eller Adobe produktspecifika dimensioner som AEM, målgrupp, Adobe Campaign, mobilapp osv. |
    | Beskrivning | Alla dimensioner har inte beskrivningar. |
-   | Source Connector är aktiverat | Är det här måttet aktiverat för [Adobe Analytics Source Connector för rapportsvitdata](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/analytics) i Adobe Experience Platform? Med andra ord, kan det här mätvärdet migreras till Customer Journey Analytics med Analytics Source Connector? |
+   | Source Connector är aktiverat | Är det här måttet aktiverat för [Adobe Analytics Source Connector för rapportsvitdata](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/connectors/adobe-applications/analytics) i Adobe Experience Platform? Med andra ord, kan det här mätvärdet migreras till Customer Journey Analytics med Analytics Source Connector? |
 
 1. Bestäm vilka mätvärden som är bra att migrera till CJA.
 
