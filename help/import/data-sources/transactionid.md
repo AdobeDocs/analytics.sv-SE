@@ -1,54 +1,67 @@
 ---
 title: Datakällor för transaktions-ID
-description: Lär dig det allmänna arbetsflödet med att använda datakällor för transaktions-ID.
+description: Använd lagrade värden från en onlineträff för att berika offlineträffar som delar ett transaktions-ID.
 feature: Data Sources
 exl-id: 5f26b15c-8d9c-46d5-860f-13fdfa21af2e
 role: Admin
-source-git-commit: 1d905aa47b4573a35012d56c0cf70fbc944bc972
+source-git-commit: 0a65114d598b7c6d2871a2446ad4d574b9ca44bb
 workflow-type: tm+mt
-source-wordcount: '397'
+source-wordcount: '507'
 ht-degree: 0%
 
 ---
 
 # Datakällor för transaktions-ID
 
-Datakällor för transaktions-ID är en variation på sammanfattningsdatakällor som gör att du kan koppla samman online- och offlinedata. Det kräver att variabeln [`transactionID`](/help/implement/vars/page-vars/transactionid.md) används i din Analytics-implementering.
-
-* Om en rad i en datakällfil innehåller ett transaktions-ID som matchar ett transaktions-ID som redan samlats in av AppMeasurement, läggs mått och mått till i onlinesatsen.
-* Om en rad i en datakällfil innehåller ett transaktions-ID som inte innehåller någon matchning behandlas raden på samma sätt som sammanfattningsdatakällor.
+Datakällor för transaktions-ID är en variant av sammanfattningsdatakällor som gör att du kan använda värden som sparats från en träff online på offline-rader som delar samma transaktions-ID. Detta är användbart när du registrerar en transaktion online men senare får information från ett annat system. Primära exempel är produktreturer, bokningsannulleringar eller resultat från kundtjänstinteraktioner.
 
 >[!NOTE]
 >
 >Innan du använder datakällor för transaktions-ID måste du aktivera det i [Allmänna kontoinställningar](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/general-acct-settings-admin.md) för den önskade rapportsviten.
 
-När du skickar en onlineträff som innehåller ett [`transactionID`](/help/implement/vars/page-vars/transactionid.md)-värde tar Adobe en ögonblicksbild av alla variabler som angetts eller befunnits sedan. Om ett matchande transaktions-ID som överförts via datakällor hittas knyts offline- och onlinedata ihop.
+## Så här fungerar det
+
+Konceptet med transaktions-ID kräver två delar:
+
+* **Online-träff**: Alla fullständiga Analytics-träffar skickas till en rapportsvit (AppMeasurement, Web SDK, API osv.). På den här träffen anger du implementeringsvariabeln [`transactionID`](/help/implement/vars/page-vars/transactionid.md).
+* **Offline-träff**: En rad överfördes via datakällor. Inkludera kolumnen `transactionID` i filen med ett värde som matchar en onlineträff.
+
+När du skickar en onlineträff som innehåller implementeringsvariabeln `transactionID` tar Adobe en ögonblicksbild av följande dimensioner som var inställda eller beständiga vid den tidpunkten:
+
+* [Kategori](/help/components/dimensions/category.md)
+* [Dagar före första köpet](/help/components/dimensions/days-before-first-purchase.md)
+* [Dagar sedan senaste köp](/help/components/dimensions/days-since-last-purchase.md)
+* [eVars 1-250](/help/components/dimensions/evar.md)
+* Funktionsspecifika dimensioner aktiverade i [Rapportsvitens inställningar](/help/admin/admin/c-manage-report-suites/report-suites-admin.md) som beter sig ungefär som eVars. Funktionsspecifika dimensioner som beter sig ungefär som proppar ingår inte.
+* [Listvariabler](/help/implement/vars/page-vars/list.md)
+* [Marknadsföringskanal](/help/components/dimensions/marketing-channel.md)
+* [Marknadskanalsdetaljer](/help/components/dimensions/marketing-detail.md)
+* [Mobila dimensioner](/help/components/dimensions/mobile-dimensions.md)
+* [Ursprunglig hänvisande domän](/help/components/dimensions/original-referring-domain.md)
+* [Produkt](/help/components/dimensions/product.md)
+* [Refererande domän](/help/components/dimensions/referring-domain.md)
+* [Sökmotor](/help/components/dimensions/search-engine.md)
+* [Söknyckelord](/help/components/dimensions/search-keyword.md)
+* [Spårningskod](/help/components/dimensions/tracking-code.md)
+* [Besöksnummer](/help/components/dimensions/visit-number.md)
+
+>[!NOTE]
+>
+>Mätvärden (till exempel [Beställningar](/help/components/metrics/orders.md) eller [Anpassade händelser](/help/components/metrics/custom-events.md)) ingår inte i ögonblicksbilden.
+
+När du överför en offlineträff via datakällor som innehåller ett matchande transaktions-ID läggs alla tillgängliga dimensioner i ögonblicksbilden automatiskt till på datakällraden. Om en viss dimension förekommer i både online- och offlineträffen används offlineträffvärdet.
+
+>[!IMPORTANT]
+>
+>Begreppet med datakällor för transaktions-ID hjälper bara till att fylla i datakällrader (offlineträffar). De påverkar inte eller ändrar inte onlineträffen.
+
+## Överväganden för datakälla för transaktions-ID
 
 Transaktions-ID-datakällor har följande egenskaper:
 
-* Onlinedata måste samlas in och behandlas först. Om en transaktions-ID-datakälla överförs innan en rapportserie bearbetar en träff som matchar transaktions-ID:t, länkas inte data.
-* Transaktions-ID:n som samlas in via AppMeasurement går ut efter 25 månader.
+* Onlinedata måste samlas in och behandlas först. Om en transaktions-ID-datakälla överförs innan en rapportserie bearbetar en träff som matchar detta transaktions-ID behandlas data som en sammanfattningsdatakälla.
+* Transaktions-ID:n som samlats in från onlineträffar går ut efter 25 månader.
 * Datakällor som har överförts med ett transaktions-ID som har gått ut behandlas på liknande sätt som data som har överförts utan ett transaktions-ID.
-* Om samma variabel ingår i både online-träffen och transaktions-ID-datakällan används värdet från transaktions-ID-datakällan i transaktionens datakälla.
-* Om en variabel ingår i en onlineträff men inte i en matchande datakällträff för transaktions-ID bevaras träffvariabeln online.
-* Om du anger samma transaktions-ID för flera onlineträffar ändras endast den första förekomsten med data från en matchande transaktions-ID-datakälla.
-
-Exempel:
-
-1. Du skickar in en sidvy från AppMeasurement där:
-   * `eVar1` är lika med `blue`
-   * `eVar2` är lika med `water`
-   * `events` är lika med `event1`
-   * `transactionID` är lika med `1256`
-2. När träffen har samlats in och bearbetats överför du en transaktions-ID-datakälla där:
-   * `eVar1` är lika med `yellow`
-   * `eVar3` är lika med `bird`
-   * `events` är lika med `event2`
-   * `transactionID` är lika med `1256`
-3. När datakällorna har träffats visas en rapport på arbetsytan. Data skulle visa följande:
-   * `eVar1` är lika med `yellow`
-   * `eVar2` är lika med `water`
-   * `eVar3` är lika med `bird`
-   * `events` är lika med `event2`
-
-EVar1-värdet `blue` och `event1`-måttet finns inte i rapporteringen eftersom transaktions-ID:t skrev över dessa respektive värden.
+* Om du anger samma transaktions-ID för flera onlineträffar används endast den första förekomstens&quot;ögonblicksbild&quot;. Efterföljande duplicerade transaktions-ID-onlineträffar behandlas som om de inte hade något transaktions-ID.
+* När du har fyllt i ett angivet `transactionID`-värde anses den associerade ögonblicksbilden som oföränderlig tills transaktions-ID:t upphör att gälla.
+* Om du anger samma transaktions-ID på flera datakällrader läggs alla tillgängliga dimensioner från onlineträffen till i varje offlineträff. Offlineträffar för samma transaktions-ID vet ingenting om varandra. Data skickas inte mellan offlineträffar.

@@ -4,24 +4,22 @@ description: Använd den här variabeln för att länka samman online- och offli
 feature: Appmeasurement Implementation
 exl-id: 525e90d8-99a7-4f4f-9bce-1395bf72fd8f
 role: Admin, Developer
-source-git-commit: 665bd68d7ebc08f0da02d93977ee0b583e1a28e6
+source-git-commit: fc52bfaa13f7fc93ef53aa49746d432676b3d55f
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '389'
 ht-degree: 0%
 
 ---
 
 # transactionID
 
-Variabeln `transactionID` identifierar en transaktion unikt så att träffen kan koppla till data som överförts via datakällor. Den här variabeln är värdefull när du vill använda data från andra kanaler och länka den till data som samlats in med AppMeasurement.
+Variabeln `transactionID` identifierar en transaktion unikt så att träffen kan ge dimensionsvärden till data som överförts via [datakällor för transaktions-ID](/help/import/data-sources/transactionid.md). Den här variabeln är värdefull när du vill fylla i offlinekanaldata med värden som samlats in från onlinekanaldata.
 
 >[!NOTE]
 >
 >Kontrollera att [!UICONTROL Transaction ID Storage] är aktiverat i en rapportserie innan du använder den här variabeln. Mer information finns i [Allmänna kontoinställningar](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/general-acct-settings-admin.md) i användarhandboken för Admin.
 
-När du anger `transactionID` för en träff tar Adobe en ögonblicksbild av alla analysvariabler som angetts eller sparats vid den tidpunkten. Data som överförs via datakällor med ett matchande transaktions-ID är permanent knutna till dessa variabelvärden.
-
-Adobe kommer ihåg alla transaktions-ID-värden (länkade och olänkade) i upp till 25 månader.
+När du anger `transactionID` för en träff tar Adobe en ögonblicksbild av alla analysvariabler som angetts eller sparats vid den tidpunkten. I [Datakällor för transaktions-ID](/help/import/data-sources/transactionid.md) finns en lista med dimensioner som ingår i ögonblicksbilden. Adobe kommer ihåg alla transaktions-ID-värden (länkade och olänkade) i upp till 25 månader.
 
 ## Transaktions-ID med Web SDK
 
@@ -37,7 +35,7 @@ Du kan ange transaktions-ID när du konfigurerar Analytics-tillägget (globala v
 1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med dina inloggningsuppgifter för AdobeID.
 2. Klicka på den önskade taggegenskapen.
 3. Gå till fliken [!UICONTROL Rules] och klicka sedan på önskad regel (eller skapa en regel).
-4. Klicka på en befintlig [!UICONTROL Adobe Analytics - Set Variables]-åtgärd under [!UICONTROL Actions] eller klicka på +-ikonen.
+4. Klicka på en befintlig [!UICONTROL Actions]-åtgärd under [!UICONTROL Adobe Analytics - Set Variables] eller klicka på +-ikonen.
 5. Ange Adobe Analytics i listrutan [!UICONTROL Extension] och [!UICONTROL Action Type] till [!UICONTROL Set Variables].
 6. Leta reda på avsnittet [!UICONTROL Transaction ID].
 
