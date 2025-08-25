@@ -91,7 +91,7 @@ Du kan hantera en panel på följande sätt:
 
 ## Rapportsvit
 
-Varje panel är associerad med en [rapportserie](/help/admin/admin/c-manage-report-suites/report-suites-admin.md) som identifieras av ![Data](/help/assets/icons/Data.svg) **[!UICONTROL *namnet på rapportsviten *]**i listrutan längst upp till höger på panelen.
+Varje panel är associerad med en [rapportserie](/help/admin/admin/c-manage-report-suites/report-suites-admin.md) som identifieras av ![Data](/help/assets/icons/Data.svg) **[!UICONTROL *namnet på rapportsviten *]**&#x200B;i listrutan längst upp till höger på panelen.
 
 När du skapar en ny panel baseras standardrapportsviten på rapportsviten från den panel du senast arbetade på i Analysis Workspace-projektet.
 
