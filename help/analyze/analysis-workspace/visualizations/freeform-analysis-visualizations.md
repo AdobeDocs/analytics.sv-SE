@@ -5,9 +5,9 @@ title: Visualiseringar - översikt
 feature: Visualizations
 role: User, Admin
 exl-id: b40aa942-4a08-4ff3-9895-e92f9a187b54
-source-git-commit: 599fbea7cb22e9cd0193b56fc2fb3c506bc62949
+source-git-commit: 8d9323be962b85a278a61be34f176c82e3f9b1c4
 workflow-type: tm+mt
-source-wordcount: '1430'
+source-wordcount: '1621'
 ht-degree: 1%
 
 ---
@@ -93,6 +93,21 @@ Följande visualiseringstyper finns i Analysis Workspace:
 
    * Välj **[!UICONTROL Visualize]** på snabbmenyn i en friformstabell. Välj sedan visualisering på undermenyn. Baserat på det aktuella urvalet i tabellen avgör Workspace vilken visualisering som ska erbjudas och tolkar data för att skapa den begärda visualiseringen.
 
+När du lägger till en enkel visualisering, till exempel en [rad](line.md) av [Bar](bar.md)-visualisering, används den närmaste friformstabellen som datakälla. Du kan alltid ändra [datakällan](#data-source) för dina visualiseringar.
+
+## Hantera visualiseringar
+
+Du kan hantera en visualisering när du hovrar över visualiseringen eller väljer visualiseringen.
+
+![Hantera visualisering](assets/manage-visualization.png)
+
+* Om du vill komprimera en visualisering väljer du ![SparronDown](/help/assets/icons/ChevronDown.svg).
+* Om du vill visa en komprimerad visualisering väljer du ![Sparrform](/help/assets/icons/ChevronLeft.svg).
+* Om du vill ta bort en visualisering väljer du ![CrossSize400](/help/assets/icons/CrossSize400.svg). Ångra genom att välja **[!UICONTROL Edit]** > **[!UICONTROL Undo]** (**[!UICONTROL *cmd+z *]**) |**[!UICONTROL * Ctrl+z *]**).
+* Om du vill återställa en visualisering till standardhöjden väljer du ![ImageResize](/help/assets/icons/Resize.svg).
+* Om du vill flytta en visualisering inom en panel drar och släpper du visualiseringen när en ![Flytta](/help/assets/icons/Move.svg) är synlig (vanligtvis när du för muspekaren över huvudet).
+
+
 ## Förklaring
 
 En visualiseringsförklaring hjälper dig att relatera datum i en källtabell till plottade serier i visualiseringen. Förklaringen är interaktiv - du kan markera ett förklaringsobjekt om du vill visa/dölja en serie i visualiseringen, vilket är praktiskt om du vill förenkla de data som visas.
@@ -110,6 +125,20 @@ Så här redigerar du en förklaringsetikett:
 1. Tryck på **[!UICONTROL Enter]** för att spara.
 
 
+## Inställningar
+
+Varje visualisering har sina egna inställningar. Om du vill komma åt visualiseringsinställningarna väljer du ![Inställning](/help/assets/icons/Setting.svg) **[!UICONTROL Settings]** i visualiseringshuvudet för att visa ett popup-fönster.
+
+Beroende på visualiseringen kan du konfigurera
+
+* information om källan till data för visualiseringen via fliken [**[!UICONTROL Data source]**](#data-source), och
+* inställningar för visualisering via fliken [**[!UICONTROL Settings]**](#settings-1).
+
+![Visualiseringsinställningar](assets/visualization-settings.png)
+
+### Datakälla
+
+Du kan styra vilken datakälla och vilka objekt eller positioner i datakällan som motsvarar en visualisering. Mer information finns i [Hantera datakällor](t-sync-visualization.md).
 
 ### Inställningar
 
@@ -217,8 +246,8 @@ Additional functionality for a visualziation is available by right-clicking on t
 | --- | --- |
 | Insert Copied Panel/Visualization|Lets you paste ("insert") a copied panel or visualization to another place within the project, or into a completely different project. |
 | Copy Visualization | Lets you right-click and copy a visualization, so that you can insert it to another place within the project, or into a completely different project. |
-| [Download items as CSV](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/download-send.html?lang=sv-SE&#download-items) | Download up to 50,000 dimension items for the selected dimension as a CSV. |
-| [Download data as CSV](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/download-send.html?lang=sv-SE&#download-data) | Download visualization data source as a CSV. |
+| [Download items as CSV](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/download-send.html?#download-items) | Download up to 50,000 dimension items for the selected dimension as a CSV. |
+| [Download data as CSV](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/download-send.html?#download-data) | Download visualization data source as a CSV. |
 | Duplicate Visualization | Makes an exact duplicate of the current visualization, which you can then modify. |
 | Edit Description | Add (or edit) a text description for the visualization. |
 | Get Visualization Link | Lets you direct someone to a specific visualization within a project. When the link is clicked, the recipient will be required to login before being directed to the exact visualization linked to. |

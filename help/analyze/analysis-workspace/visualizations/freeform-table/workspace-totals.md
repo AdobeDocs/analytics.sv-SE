@@ -4,9 +4,9 @@ title: Summor
 feature: Freeform Tables
 role: User, Admin
 exl-id: 883c3e44-4139-46a1-a261-e11841312465
-source-git-commit: f258a1150a4bee11f5922d058930dc38b1ddfa14
+source-git-commit: 8d9323be962b85a278a61be34f176c82e3f9b1c4
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '443'
 ht-degree: 1%
 
 ---
@@ -33,7 +33,7 @@ I frihandstabeller visas en summeringsrad på varje uppdelningsnivå och kan vis
 Under ![Inställning](/help/assets/icons/Setting.svg) **[!UICONTROL Column settings]** finns det alternativ för **[!UICONTROL Show totals]** och **[!UICONTROL Show grand total]**. Om de här inställningarna inte är markerade tas summorna bort från tabellen, vilket kan vara önskvärt om det inte går att använda summorna.
 
 
-[Statiska radsummor](/help/analyze/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md) fungerar annorlunda och styrs med ![Inställning](/help/assets/icons/Setting.svg) **[!UICONTROL Row Settings]**.
+I en friformstabell som innehåller [statiska rader](/help/analyze/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md) fungerar summorna annorlunda. Och styrs med ![Inställning](/help/assets/icons/Setting.svg) **[!UICONTROL Row Settings]**.
 
 | Alternativ | Beskrivning |
 |---|---|
