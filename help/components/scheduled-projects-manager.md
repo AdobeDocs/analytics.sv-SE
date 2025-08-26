@@ -3,9 +3,9 @@ description: Lär dig hantera schemalagda projekt.
 title: Schemalagda projekt
 feature: Admin Tools
 exl-id: 8bc8d983-f680-48fa-8483-694c87a9ae4c
-source-git-commit: ff38740116ac6f12033ebdc17cffa3250a30f3f7
+source-git-commit: 968560f8901bc593ef946278a460e502102f9f55
 workflow-type: tm+mt
-source-wordcount: '731'
+source-wordcount: '740'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ Följande är vanliga åtgärder i hanteraren för schemalagda projekt. Du kan v
 | Ikon | Åtgärd | Beskrivning |
 |:---:|---|---|
 | ![Stäng](/help/assets/icons/Close.svg) | **[!UICONTROL *x *selected]** | Välj det här alternativet om du vill avmarkera dina valda schemalagda projekt. |
-| ![Ta bort](/help/assets/icons/Delete.svg) | **[!UICONTROL Delete]** | Ta bort de valda schemalagda projekten för projektet. Projekten tas inte bort. |
+| ![Ta bort](/help/assets/icons/Delete.svg) | **[!UICONTROL Delete]** | Ta bort de valda schemalagda projekten för projektet. Projekten tas inte bort. <p>Mer information om hur du tar bort ett projekt finns i [Projektöversikt](/help/analyze/analysis-workspace/build-workspace-project/freeform-overview.md).</p> |
 | ![Etiketter](/help/assets/icons/Labels.svg) | **[!UICONTROL Tag]** | Tagga de valda schemalagda projekten. I **[!UICONTROL Tag Scheduled projects]** markerar du taggar och väljer **[!UICONTROL Save]** att spara. |
 | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | **[!UICONTROL Approve]** | Godkänn de valda schemalagda projekten. |
 | ![FileCSV](/help/assets/icons/FileCSV.svg) | **[!UICONTROL Export to CSV]** | Exportera de markerade schemalagda projekten till en fil med namnet `Export Scheduled Projects List.csv`. |
