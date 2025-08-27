@@ -3,55 +3,69 @@ description: När en rapport har många unika värden använder Adobe måttobjek
 title: Lågtrafikvärde i Adobe Analytics
 feature: Metrics, Data Configuration and Collection
 exl-id: 6c3d8258-cf75-4716-85fd-ed8520a2c9d5
-source-git-commit: f242ec6613cf046224f76f7edc7813a34c65fff8
+source-git-commit: 42d044c3c56f13a232b721ef60f64bcf622ffa9f
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '884'
 ht-degree: 0%
 
 ---
 
-# Lågtrafikvärde i Adobe Analytics
+# [!UICONTROL Low-Traffic]-värde i Adobe Analytics
 
-När en rapport har många unika värden tillhandahåller Adobe funktioner som säkerställer att de viktigaste värdena visas i rapporten. Unika variabelvärden som samlats in utöver ett visst tröskelvärde (se nedan) listas under ett dimensionsobjekt med namnet **[!UICONTROL Low-Traffic]**.
+När en dimension innehåller miljontals unika värden tillhandahåller Adobe funktioner som säkerställer att de viktigaste värdena visas i rapporten i tid. Unika värden som samlats in utöver ett visst tröskelvärde listas under ett dimensionsobjekt med namnet **[!UICONTROL Low-Traffic]**.
 
-## Så här fungerar [!UICONTROL Low-Traffic]
+Dimensionsobjektet [!UICONTROL Low-Traffic] gör det möjligt för Adobe att säkerställa att rapporter returneras i tid genom att ta överflödiga unika värden och paketera dem tillsammans.
 
-* Adobe Analytics använder två tröskelvärden för att avgöra vilka unika värden som visas i rapporter varje månad: A **[!UICONTROL low threshold]** och a **[!UICONTROL high threshold]**. Dessa tröskelvärden kan justeras av Adobe då och då. De nuvarande tröskelvärdena är:
-   * **[!UICONTROL Low threshold]**: 2 000 000 unika värden under månaden.
-   * **[!UICONTROL High threshold]**: 2 100 000 unika värden under månaden.
-* Rapporteringen påverkas inte om en variabel inte når det låga tröskelvärdet under en viss månad.
-* När en variabel når det lägsta tröskelvärdet börjar data att paketeras under ett dimensionsobjekt med namnet [!UICONTROL Low-Traffic]. Varje värde som ligger utanför detta tröskelvärde följer följande logik:
-   * Om ett värde redan visas i rapporter lägger du till det värdet som vanligt.
-   * Om ett värde ännu inte visas i rapporter lägger du till det i dimensionsobjektet [!UICONTROL Low-Traffic].
-   * Om ett värde som är paketerat under [!UICONTROL Low-Traffic] tar emot ett inflöde av trafik (vanligtvis instanser med dubbla siffror under en dag), identifierar du det som dess eget dimensionsobjekt. Instanser som samlats in före inflödet av trafik blir kvar under [!UICONTROL Low-Traffic]. Den exakta punkt där dimensionsobjektet börjar visas i rapporter har många beroenden, till exempel antalet servrar som bearbetar data för rapportsviten och tiden mellan varje dimensionsobjektsinstans.
-* Om en variabel når det höga tröskelvärdet används mer aggressiv filtrering. Unika värden kräver instanser i de tre siffrorna på en dag innan de identifieras som sina egna dimensionsobjekt.
+Observera att logiken i [!UICONTROL Low-traffic] fungerar bäst med dimensioner som har objekt som upprepas många gånger under månaden. Om dimensionsobjekten är nästan eller helt unika för varje träff når antalet unika värden tröskeln snabbt och alla efterföljande värden för månaden hamnar i [!UICONTROL Low-Traffic]-haken.
 
-Tack vare den här logiken kan Adobe optimera rapporteringsfunktionerna samtidigt som organisationen kan rapportera viktiga dimensionsobjekt som samlas in senare under månaden. Om din organisation till exempel kör en webbplats med miljontals artiklar och en ny artikel blir populär mot slutet av månaden (efter att ha överskridit båda unika tröskelvärden), kan du fortfarande analysera prestanda för den artikeln utan att den paketeras under [!UICONTROL Low-Traffic]. Den här logiken är inte avsedd att ta bort allt som får ett visst antal sidvisningar per dag eller månad.
+## Ange värden [!UICONTROL Low-Traffic]
+
+Som standard anges ett tröskelvärde på **2 000 000 unika värden** per dimension, per rapportsvit, per kalendermånad. Dimension-objekt som överskrider det här unika tröskelvärdet paketeras under [!UICONTROL Low-Traffic].
+
+* Dimension-objekt som samlats in innan tröskelvärdet nås beräknas normalt.
+* Dimension-objekt som samlats in efter att tröskelvärdet har överskridits är paketerade under [!UICONTROL Low-Traffic].
 
 >[!NOTE]
->Dimensionen [Sida](../components/dimensions/page.md) använder flera backend-kolumner som alla räknar mot unika tröskelvärden, inklusive `pagename`, `page_url`, `first_hit_pagename`, `first_hit_page_url`, `visit_pagename`, `visit_page_url` och `click_context`. Dessa backend-kolumner kan göra att [!UICONTROL Low-Traffic]-logik används långt innan antalet unika sidodimensionsobjekt i Workspace når det låga tröskelvärdet.
+>Dimensionen [Sida](../components/dimensions/page.md) använder flera backend-kolumner som alla räknar mot det unika tröskelvärdet, inklusive `pagename`, `page_url`, `first_hit_pagename`, `first_hit_page_url`, `visit_pagename`, `visit_page_url` och `click_context`. Dessa backend-kolumner kan göra att [!UICONTROL Low-Traffic]-logik används långt innan antalet unika sidodimensionsobjekt i Workspace når tröskelvärdet.
 
-Observera att lågtrafiklogik fungerar bäst med variabler som har dimensionsobjekt som upprepas många gånger under månaden. Om en variabels dimensionsobjekt är nästan eller helt unika för varje träff når variabelns antal unika värden både tröskelvärden snabbt och alla efterföljande dimensionsobjekt för månaden hamnar i lågtrafikpytsen.
+Den unika gränsen på 2 000 000 kan ändras per dimension. Se [Ändra unika tröskelvärden](#changing-unique-limit-thresholds) nedan. I slutet av en kalendermånad återställs antalet spårade unika värden globalt.
+
+## Så här kan värden kringgå [!UICONTROL Low-Traffic] efter att tröskelvärdet har överskridits
+
+Om en given dimension samlar in över 2 000 000 unika värden under en given månad, kan enskilda dimensionsobjekt återgå till att rapportera sin egen dimensionspost. Det främsta användningsområdet för den här funktionen är att tillåta rapportering av viktiga dimensionsposter som kan få en ökning av popularitet sent under månaden efter att det unika tröskelvärdet har överskridits. Om din organisation till exempel har en webbplats med miljontals artiklar och en ny artikel blir populär i slutet av månaden kan du fortfarande analysera hur den artikeln fungerar. Den här logiken är inte avsedd att ta bort allt som får ett visst antal instanser, utan snarare erbjuder en möjlighet att analysera innehåll som tar emot en ström av trafik.
+
+Kraven för att ett enskilt dimensionsobjekt ska undantas [!UICONTROL Low-Traffic] beror på många faktorer, varav många förhindrar möjligheten att beräkna ett exakt tröskelvärde:
+
+* **Antal servrar som bearbetar data för rapportsviten**: Rapporteringssviter med mer trafik kräver fler instanser av ett enskilt dimensionsobjekt för att kunna kringgås [!UICONTROL Low-Traffic].
+* **Tiden mellan varje instans av dimensionsobjektet**: Träffar som innehåller ett uppslag för dimensionsobjektet under dagen kräver fler instanser än en koncentrerad ökning av träffar.
+* **Antal unika värden för dimensionen**: Varje dimension har som standard ett andra tröskelvärde som är 2 100 000 unika värden. Om antalet unika värden i en dimension överskrider det högre tröskelvärdet tillämpas mycket mer aggressiv filtrering.
+
+Om du tar hänsyn till ovanstående faktorer kan du förvänta dig att **hundratals till tusentals** instanser för ett enskilt dimensionsobjekt kommer att komma bort [!UICONTROL Low-Traffic] om bara det första tröskelvärdet överskrids. **tusentals till tiotusentals** instanser av ett enskilt dimensionsobjekt kan komma att kringgås [!UICONTROL Low-Traffic] om det högre tröskelvärdet överskrids. Adobe garanterar inte att dimensionsobjekten på ett tillförlitligt sätt kan kringgå [!UICONTROL Low-Traffic]-bucket. Det här konceptet är vanligtvis reserverat för dimensionsartiklar med mycket stora volymer som kommer för sent under månaden.
+
+När ett dimensionsobjekt kringgår [!UICONTROL Low-Traffic]-bucket blir instanser som samlats in före inflödet av trafik kvar under [!UICONTROL Low-Traffic].
 
 ## Ändra unika gränströsklar
 
-Tröskelvärdena kan ibland ändras för varje variabel. Kontakta Adobe kundtjänst eller ditt kontoteam på Adobe för att begära denna ändring. I vilken utsträckning tröskelvärdena kan höjas beror på flera faktorer och Adobe kanske inte kan anpassa sig till tröskelökningar i samtliga fall. När du begär en ändring, inkludera:
+Tröskelgränser kan ibland ändras per dimension. Kontakta Adobe kundtjänst eller ditt kontoteam på Adobe för att begära denna ändring. I vilken utsträckning tröskelvärdena kan höjas beror på flera faktorer. Adobe garanterar inte att alla tröskelökningsbegäranden kan hanteras. När du begär en ändring, inkludera:
 
 * Rapportsvitens ID
-* Variabeln som du vill öka tröskelvärdet för
-* Både det första och det andra tröskelvärdet önskades
+* Dimensionen som du vill öka tröskelvärdet för
+* Både det första och det andra tröskelvärdet önskades:
+   * Det första tröskelvärdet (inledande spärring) är som standard **2 000 000**.
+   * Det andra tröskelvärdet (mer aggressiv filtrering) är som standard **2,100,000**.
 
-Ändringar av tröskelvärden kan påverka rapportens prestanda. Adobe rekommenderar starkt att man använder god vana vid att begära en ökning av unika värden i en variabel. Öka bara de unika gränserna för variabler som är viktiga för organisationens rapporteringsbehov.
+>[!IMPORTANT]
+>
+>Ändringar av tröskelvärden kan påverka rapportens prestanda. Adobe rekommenderar starkt att man använder god vana vid att begära en ökning av unika värden för en dimension. Öka bara de unika gränserna för dimensioner som är viktiga för organisationens rapporteringsbehov.
 
-Lågtrafiktröskelvärden visas inte i analysgränssnittet. Kontakta Adobe kundtjänst om du vill ha mer information om de befintliga tröskelvärdena.
+[!UICONTROL Low-Traffic]-trösklar visas inte i analysgränssnittet. Kontakta Adobe kundtjänst om du vill ha mer information om tröskelvärdena.
 
-## Låg trafik med komponenter och andra funktioner
+## Interaktion med andra funktioner
 
-Olika funktioner behandlar lågtrafikvärden på olika sätt.
+Olika funktioner behandlar [!UICONTROL Low-Traffic]-värden på olika sätt.
 
-* **Data Warehouse:** Det finns ingen gräns för antalet unika värden i Data Warehouse-rapporter. Dess unika arkitektur gör det möjligt att rapportera hur många unika värden som helst.
-   * I vissa begränsade scenarier kan lågtrafikvärden fortfarande förekomma. Exempel är listvariabler, listprops, eVars för försäljning och detaljdimensioner för marknadsföringskanaler.
-* **Segmentering:** Om segmentvillkoret innehåller en variabel med ett stort antal unika värden inkluderas inte värden som hämtats under lågtrafik.
-* **Klassificeringar:** Klassificeringsrapporter har också unika begränsningar. Om en klassificerings överordnade variabelvärde inkluderas under lågtrafik, klassificeras inte värdet.
-   * Lågtrafikklassificerade värden som erhållits av importören kan visas i Data Warehouse. <!-- AN-115871 -->
-   * Värden för lågtrafikklassificering som hämtats via regelbyggaren *kan inte* visas i Datan Warehouse. <!-- AN-122872 -->
+* **Data Warehouse:** I de flesta fall finns det ingen gräns för antalet unika värden i Data Warehouse-rapporter. Dess unika arkitektur gör det möjligt att rapportera hur många unika värden som helst. [!UICONTROL Low-Traffic] värden kan dock fortfarande visas i vissa begränsade scenarier. Exempel är listvariabler, listprops, eVars för försäljning och detaljdimensioner för marknadsföringskanaler.
+* **Segmentering:** Om segmentvillkoret innehåller en dimension med ett stort antal unika värden, inkluderas inte värden som hämtats under [!UICONTROL Low-Traffic].
+* **Klassificeringar:** Klassificeringsrapporter har också unika begränsningar. Om en klassificerings överordnade dimensionsobjekt ingår under [!UICONTROL Low-Traffic] klassificeras inte värdet.
+   * [!UICONTROL Low-Traffic] värden som klassificerats genom importeraren kan visas i Data Warehouse. <!-- AN-115871 -->
+   * [!UICONTROL Low-Traffic] värden som klassificerats med regelbyggaren *kan inte* visas i Data Warehouse. <!-- AN-122872 -->
