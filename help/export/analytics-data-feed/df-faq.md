@@ -53,7 +53,7 @@ Om du ser olika skiftlägesvariationer av samma värde mellan icke-post- och pos
 
 ## Filtreras robotar av administratörskonsolens robotregler i dataflöden? {#bots}
 
-Datafeeds innehåller inte bots som filtrerats av [administratörskonsolens robotregler](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/bot-removal/bot-removal.html).
+Datafeeds innehåller inte bots som filtrerats av [administratörskonsolens robotregler](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/bot-removal/bot-removal.html?lang=sv-SE).
 
 ## Varför ser jag flera `000`-värden i dataflödeskolumnen `event_list` eller `post_event_list`? {#values}
 
