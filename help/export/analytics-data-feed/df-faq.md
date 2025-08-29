@@ -4,9 +4,9 @@ keywords: Datautmatning;jobb;förkolumn;efterkolumn;skiftlägeskänslighet
 title: Vanliga frågor om dataflöden
 feature: Data Feeds
 exl-id: 1bbf62d5-1c6e-4087-9ed9-8f760cad5420
-source-git-commit: 0eef1b1269dcfbc7648127602bdfe24d4789f4b7
+source-git-commit: bac8d17de1d442484ae1cf8c038ad853343ddb6b
 workflow-type: tm+mt
-source-wordcount: '1456'
+source-wordcount: '1463'
 ht-degree: 0%
 
 ---
@@ -17,9 +17,19 @@ Vanliga frågor och svar om dataflöden.
 
 ## Måste feed-namnen vara unika?{#unique}
 
-Namnen på datafeedsfilerna består av rapportsvitens ID och datumet. Alla två flöden som är konfigurerade för samma RSID och datum har samma filnamn. Om dessa flöden levereras till samma plats, skriver en fil över den andra. Om du vill förhindra att en fil skrivs över kan du inte skapa en feed som kan skriva över en befintlig feed på samma plats.
+Adobe Analytics förhindrar inte att datafeedfiler skrivs över.
 
-Om du försöker skapa en feed när det finns en annan med samma filnamn visas ett felmeddelande. Tänk på följande tillfälliga lösningar:
+För att förhindra att dataflödesfiler skrivs över rekommenderar vi att alla datafeedfiler som skickas till samma plats har unika filnamn.
+
+Namnen på datafeedfilerna består av följande dataflödesegenskaper:
+
+* Rapportsvit-ID (RSID)
+
+* Exportdatum
+
+Alla två flöden som är konfigurerade för samma RSID och datum har samma filnamn. Om dessa flöden levereras till samma plats skriver en fil över den andra.
+
+Om du vill förhindra att en fil skrivs över bör du tänka på följande lösningar:
 
 * Ändra leveransväg
 * Ändra datumen om möjligt
@@ -31,7 +41,7 @@ Innan timdata eller dagliga data bearbetas väntar dataflödena tills alla träf
 
 ## Vad är skillnaden mellan kolumner med ett `post_`-prefix och kolumner utan ett `post_`-prefix? {#post}
 
-Kolumner utan prefixet `post_` innehåller data exakt som de skickades till datainsamlingen. Kolumner med ett `post_`-prefix innehåller värdet efter bearbetning. Exempel som kan ändra ett värde är variabelbeständighet, bearbetningsregler, VISTA-regler, valutakonvertering eller annan logik på serversidan som gäller Adobe. Adobe rekommenderar att du använder `post_`-versionen av en kolumn där det är möjligt.
+Kolumner utan prefixet `post_` innehåller data exakt som de skickades till datainsamlingen. Kolumner med ett `post_`-prefix innehåller värdet efter bearbetning. Exempel som kan ändra ett värde är variabelbeständighet, bearbetningsregler, VISTA-regler, valutakonvertering eller annan serverlogik som Adobe tillämpar. Adobe rekommenderar att du använder `post_`-versionen av en kolumn där det är möjligt.
 
 Om en kolumn inte innehåller en `post_`-version (till exempel `visit_num`) kan kolumnen betraktas som en inläggskolumn.
 
@@ -43,7 +53,7 @@ Om du ser olika skiftlägesvariationer av samma värde mellan icke-post- och pos
 
 ## Filtreras robotar av administratörskonsolens robotregler i dataflöden? {#bots}
 
-Datafeeds innehåller inte bots som filtrerats av [administratörskonsolens robotregler](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/bot-removal/bot-removal.html?lang=sv-SE).
+Datafeeds innehåller inte bots som filtrerats av [administratörskonsolens robotregler](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/bot-removal/bot-removal.html).
 
 ## Varför ser jag flera `000`-värden i dataflödeskolumnen `event_list` eller `post_event_list`? {#values}
 
@@ -53,7 +63,7 @@ Adobe rekommenderar att `hit_data.tsv` filer inte öppnas automatiskt i Microsof
 
 ## Är kolumner som `hitid_high`, `hitid_low`, `visid_high` och `visid_low` garanterat unika för träffen eller besöket? {#hitid}
 
-I nästan alla fall identifierar sammanfogningen av `hitid_high` och `hitid_low` en träff unikt. Samma koncept gäller för sammanfogningen av `visid_high` och `visid_low` för besök. Bearbetningsavvikelser kan dock i sällsynta fall leda till att två träffar delar samma träff-ID. Adobe rekommenderar att man inte skapar dataflöden som inte är flexibla och som kräver att varje träff är unik.
+I nästan alla fall identifierar sammanfogningen av `hitid_high` och `hitid_low` en träff unikt. Samma koncept gäller för sammanfogningen av `visid_high` och `visid_low` för besök. Bearbetningsavvikelser kan dock i sällsynta fall leda till att två träffar delar samma träff-ID. Adobe rekommenderar att man inte skapar dataflöden som smidigt förlitar sig på att alla träffar är unika.
 
 ## Varför saknas information i domänkolumnen för vissa bärare? {#domain}
 
@@ -67,11 +77,11 @@ Exempel: En ny datafeed skapas den 9 mars 2021 och data från 1 januari 2021 til
 
 ## Vilken inverkan har Daylight Savings på timdataflöden? {#dst}
 
-För vissa tidszoner ändras tiden två gånger per år på grund av DST-definitioner (sommartid). Datafeeds följer den tidszon som rapportsviten har konfigurerats för. Om tidszonen för rapportsviten är en som inte använder DST, fortsätter filleveransen normalt som någon annan dag. Om tidszonen för rapportsviten är en som använder DST, ändras filleveransen för den timme då tidsändringen inträffar (vanligen 02:00).
+För vissa tidszoner ändras tiden två gånger per år på grund av DST-definitioner (sommartid). Datafeeds följer den tidszon som rapportsviten har konfigurerats för. Om tidszonen för rapportsviten är en som inte använder DST, fortsätter filleveransen normalt som någon annan dag. Om tidszonen för rapportsviten är en som använder DST, ändras filleveransen för den timme då tidsändringen inträffar (vanligen 02:00).:00
 
-När man gör STD -> DST-övergångar (&quot;Spring Forward&quot;) får man bara 23 filer. Timmen som hoppas över i DST-övergången utelämnas. Om övergången till exempel sker kl. 2 får de en fil för 1:00 timme och en fil för 3:00 timme. Det finns ingen 2:00-fil eftersom den vid 2:00 STD blir 3:00 DST.
+När man gör STD -> DST-övergångar (&quot;Spring Forward&quot;) får man bara 23 filer. Timmen som hoppas över i DST-övergången utelämnas. Om övergången till exempel sker vid 2.0 får de en fil för 1:00 timme och en fil för 3:00 timme. Det finns ingen 2:00-fil eftersom den vid 2:00 STD blir 3:00 DST.
 
-När man gör DST -> STD-övergångar (&quot;Fall Back&quot;) får man 24 filer. Övergångstimmen innehåller emellertid faktiskt två timmars data. Om övergången till exempel sker klockan 2:00 fördröjs filen för 1:00 med en timme, men den innehåller data i två timmar. Den innehåller data från 1:00 DST till 2:00 STD (som skulle ha varit 3:00 DST). Nästa fil börjar klockan 2:00 STD.
+När man gör DST -> STD-övergångar (&quot;Fall Back&quot;) får man 24 filer. Övergångstimmen innehåller emellertid faktiskt två timmars data. Om övergången till exempel sker vid 2:00 am fördröjs filen för 1:00 med en timme, men den innehåller data i två timmar. Den innehåller data från 1:00 DST till 2:00 STD (som skulle ha varit 3:00 DST). Nästa fil börjar på :00 STD.
 
 ## Hur hanterar Analytics FTP-överföringsfel? {#ftp-failure}
 

@@ -3,9 +3,9 @@ title: Skapa en datafeed
 description: Lär dig hur du skapar en datafeed och om filinformationen som ska skickas till Adobe.
 feature: Data Feeds
 exl-id: 36c8a40e-6137-4836-9d4b-bebf17b932bc
-source-git-commit: b53ef727adc563e05403c50d80bbd0c48bb8a054
+source-git-commit: bac8d17de1d442484ae1cf8c038ad853343ddb6b
 workflow-type: tm+mt
-source-wordcount: '4125'
+source-wordcount: '4124'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Innan du skapar en datafeed är det viktigt att du har en grundläggande först�
 
    | Fält | Funktion |
    |---------|----------|
-   | [!UICONTROL **Namn**] | Dataflödets namn. Måste vara unikt i den valda rapportsviten och får innehålla upp till 255 tecken. |
+   | [!UICONTROL **Namn**] | Dataflödets namn. Måste vara unikt i den valda rapportsviten och får innehålla upp till 255 tecken. [Läs mer](/help/export/analytics-data-feed/df-faq.md#must-feed-names-be-unique) |
    | [!UICONTROL **Rapportsviten**] | Rapportsviten som dataflödet baseras på. Om flera dataflöden skapas för samma rapportserie måste de ha olika kolumndefinitioner. Endast källrapportsviter stöder dataflöden. Virtuella rapportsviter stöds inte. |
    | [!UICONTROL **Skicka e-post när det är klart**] | E-postadressen som ska meddelas när en feed har bearbetats. E-postadressen måste vara korrekt formaterad. |
    | [!UICONTROL **Feed-intervall**] | Välj **Dagligen** för bakåtfyllnad eller historiska data. Dagliga matningar innehåller data för en hel dag, från midnatt till midnatt i rapportsvitens tidszon. Välj **Varje timme** om du vill fortsätta med data (Daily är även tillgängligt för att fortsätta feeds om du vill). Timmatningar innehåller en timmes data. |
