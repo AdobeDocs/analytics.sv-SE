@@ -4,9 +4,9 @@ title: Activity Map - översikt
 feature: Activity Map
 role: User, Admin
 exl-id: 30a800f7-e2c8-443e-b5d4-36834ef0ba20
-source-git-commit: dee8f0a13a159f4c7902d2ccddd8848c4016b471
+source-git-commit: 24101efe2b860734c9d176ba8be8f17e26429442
 workflow-type: tm+mt
-source-wordcount: '586'
+source-wordcount: '605'
 ht-degree: 0%
 
 ---
@@ -15,15 +15,16 @@ ht-degree: 0%
 
 Adobe Analytics Activity Map är en funktion i Adobe Analytics som ger en visuell representation av användarinteraktionen på webbsidor och mobilappar. Det gör det möjligt för marknadsförare och analytiker att spåra och analysera användarinteraktioner som klickningar och rullningsbeteende. Activity Map genererar värmekartor och överläggsrapporter som visar de vanligaste elementen på en webbsida, vilket hjälper dig att optimera de digitala upplevelserna.
 
-Det här avsnittet av dokumentationen fokuserar på Activity Map-övertäckningen. Det finns dock andra viktiga saker att göra med Activity Map:
+Activity Map som koncept består av flera viktiga komponenter:
 
-* **Rapportsvitens inställning**: Activity Map måste vara aktiverat för en rapportserie. Se [Activity Map Reporting](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/activity-map.md) i inställningarna för rapportsviten.
+* **Rapportsvitens inställning**: Activity Map måste vara aktiverat för en rapportserie innan du kan börja använda den. Se [Activity Map Reporting](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/activity-map.md) i inställningarna för rapportsviten.
 * **Implementering**: De flesta Activity Map-rapporter är tillgängliga direkt. Vissa webbplatser kan dock behöva implementeras ytterligare för att få ut så mycket som möjligt av länkspårningen. Följande implementeringsvariabler är tillgängliga:
    * [`ActivityMap.linkExclusions`](/help/implement/vars/config-vars/activitymap-linkexclusions.md): Filtrera klickdata efter länknamn.
    * [`ActivityMap.regionExclusions`](/help/implement/vars/config-vars/activitymap-regionexclusions.md): Filtrera klickdata efter regionnamn.
    * [`ActivityMap.regionIDAttribute`](/help/implement/vars/config-vars/activitymap-regionidattribute.md): Ändra attributet som fyller i Activity Map regiondimension.
    * [`ActivityMap.link`](/help/implement/vars/functions/activitymap-link.md): Anpassa logiken som används i Activity Map för att fylla i Activity Map Link-dimensionen.
    * [`ActivityMap.region`](/help/implement/vars/functions/activitymap-region.md): Anpassa logiken som används i Activity Map för att fylla i Activity Map regiondimension.
+* **Övertäckning**: Ett webbläsartillägg som gör att du kan se klickdata på webbplatsen. Mer information finns i [Activity Map-tilläggsgränssnittet](overlay/overview.md).
 * **Dimensioner**: Förutom övertäckningstillägget har Activity Map flera dimensioner som du kan använda i Analysis Workspace.
    * [Activity Map Link](/help/components/dimensions/activity-map-link.md): Det länknamn som klickades på.
    * [Activity Map-region](/help/components/dimensions/activity-map-region.md): Regionnamnet som klickades på.

@@ -5,16 +5,20 @@ uuid: f6734b60-0b77-4f50-a45a-6a6936d1524e
 feature: Activity Map
 role: User, Admin
 exl-id: 461abda1-3238-4a32-b9d3-5a57b00cf0d3
-source-git-commit: 19c2c1abd7f1799598597c0e696d0b001c1ef0ea
+source-git-commit: c45e52d38f8ade19c09fa0d4d7955c3208cbe5aa
 workflow-type: tm+mt
-source-wordcount: '575'
+source-wordcount: '609'
 ht-degree: 0%
 
 ---
 
 # Activity Map-tilläggsgränssnitt
 
-Activity Map-tilläggsgränssnittet består av två delar:
+Med Activity Map-tillägget kan du visa klickdata på din webbplats. Du kan hämta tillägget genom att gå till följande sida, som innehåller en länk till webbutiken:
+
+**[!UICONTROL Tools]** > **[!UICONTROL Activity Map]** > **[!UICONTROL Download Activity Map]**
+
+När gränssnittet har installerats och aktiverats består det av flera delar:
 
 * En övre panel där du kan konfigurera tillägg och rapporter
 * En övertäckning som visar de vanligaste länkarna

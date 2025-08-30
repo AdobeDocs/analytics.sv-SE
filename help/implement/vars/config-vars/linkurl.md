@@ -4,9 +4,9 @@ description: Åsidosätt den automatiskt genererade länk-URL som AppMeasurement
 feature: Appmeasurement Implementation
 exl-id: 15d6e423-d9fc-4f84-ad39-0bd91399cde4
 role: Admin, Developer
-source-git-commit: 7176e068dd05c5589d741f3194d2ad5d795e017d
+source-git-commit: 24101efe2b860734c9d176ba8be8f17e26429442
 workflow-type: tm+mt
-source-wordcount: '190'
+source-wordcount: '204'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 När ett anrop om länkspårning skickas till Adobe identifierar AppMeasurement den URL som klickades på. Den här URL:en hjälper till att fastställa länktypen, t.ex. hämtningslänkar och avslutslänkar. Använd variabeln `linkURL` för att åsidosätta den URL som identifierats.
 
-Det finns inga dimensioner i Analysis Workspace som rapporterar om den här variabeln. Den fyller i kolumnen `page_event_var1` i [Dataflöden](/help/export/analytics-data-feed/data-feed-overview.md). Om du vill spåra URL:en för en länk som du klickat på rekommenderar Adobe att du använder en anpassad variabel, till exempel ett [utkast](../page-vars/prop.md).
+Det finns inga dimensioner i Analysis Workspace som rapporterar om den här variabeln. Den fyller i kolumnen `page_event_var1` i [Dataflöden](/help/export/analytics-data-feed/data-feed-overview.md). Om du vill spåra URL:en för en länk som du klickat på rekommenderar Adobe att du använder en anpassad variabel, till exempel ett [utkast](../page-vars/prop.md). Användning av [Activity Map](/help/analyze/activity-map/overview.md) kan effektivisera datainsamlingen för länkar som du klickar på.
 
 ## Länk-URL med Web SDK
 
