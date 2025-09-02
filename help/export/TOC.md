@@ -3,11 +3,11 @@ product: analytics
 audience: end-user
 user-guide-title: Exporthandbok för Analytics
 breadcrumb-title: Användarhandbok om export
-user-guide-description: Lär dig hur du använder Data Feeds för att exportera rådata, och hur du använder Data Warehouse för att hämta data från kalkylblad. Lär dig hur du använder FTP och SFTP för att överföra filer.
-source-git-commit: 9a2d4c582b6a3946b658924851e5b5ada2f5a7ee
+user-guide-description: Lär dig hur du använder dataflöden och Data Warehouse för att hämta data.
+source-git-commit: 9131c9ffbcf409620a67b36637367af22733b909
 workflow-type: tm+mt
-source-wordcount: '279'
-ht-degree: 23%
+source-wordcount: '262'
+ht-degree: 7%
 
 ---
 
@@ -15,13 +15,13 @@ ht-degree: 23%
 # Adobe Analytics Export Guide {#export}
 
 + [Exporthandbok för Analytics](home.md)
-+ [Versionsinformation för analyser](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html?lang=sv-SE)
-+ Analytics-datafeed {#analytics-data-feed}
++ [Versionsinformation för analyser](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html)
++ Datafeed i Analytics {#analytics-data-feed}
    + [Översikt över dataflöden](analytics-data-feed/data-feed-overview.md)
    + [Skapa en datafeed](analytics-data-feed/create-feed.md)
    + [Hantera dataflöden](analytics-data-feed/df-manage-feeds.md)
    + [Hantera datafeedjobb](analytics-data-feed/df-manage-jobs.md)
-   + Innehåll i datafeeds {#data-feed-contents}
+   + Innehåll i datafeed {#data-feed-contents}
       + [Översikt över innehåll i datafeed](analytics-data-feed/c-df-contents/datafeeds-contents.md)
       + [Beräkna mått](analytics-data-feed/c-df-contents/datafeeds-calculate.md)
       + [Referens för datakolumn](analytics-data-feed/c-df-contents/datafeeds-reference.md)
@@ -52,7 +52,7 @@ ht-degree: 23%
    + [Data Warehouse bästa praxis](data-warehouse/data-warehouse-bp.md)
 + FTP och SFTP {#ftp-and-sftp}
    + [Använd FTP och SFTP med Adobe Experience Cloud](ftp-and-sftp/ftp-overview.md)
-   + Konfigurera Adobe-värdbaserade FTP-konton {#set-up-ftp-accounts}
+   + Konfigurera FTP-konton som är värdbaserade för Adobe {#set-up-ftp-accounts}
       + [Konfigurera FTP-konton - översikt](ftp-and-sftp/c-set-up-ftp-accounts/ftp-accounts.md)
       + [Klassificeringar](ftp-and-sftp/c-set-up-ftp-accounts/ftp-saint.md)
       + [Datakällor](ftp-and-sftp/c-set-up-ftp-accounts/ftp-datasources.md)
@@ -73,6 +73,6 @@ ht-degree: 23%
       + [Skicka Adobe-data till ett externt FTP-konto med SFTP](ftp-and-sftp/c-sftp/ftp-sftp-transfer.md)
       + [Skicka Data Warehouse-förfrågningar till SFTP-servrar](ftp-and-sftp/c-sftp/ftp-sftp-dw.md)
       + [Anslut till Adobe via SFTP utan lösenord](ftp-and-sftp/c-sftp/ftp-sftp-cert-auth.md)
-+ [Analysis Workspace nedladdningar](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/download-send.html?lang=sv-SE)
++ [Analysis Workspace nedladdningar](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/download-send.html)
 + [Adobe Analytics API](https://www.adobe.io/apis/experiencecloud/analytics/docs.html)
-+ [Report Builder](https://experienceleague.adobe.com/sv/docs/analytics/analyze/report-builder/rb-overview)
++ [Report Builder](https://experienceleague.adobe.com/en/docs/analytics/analyze/report-builder/rb-overview)
