@@ -26,7 +26,7 @@ Följande funktioner erbjuder ett alternativ för att överföra data till Adobe
 
 * [Klassificeringar](/help/export/ftp-and-sftp/c-set-up-ftp-accounts/ftp-saint.md)
 
-* [Kundattribut](https://experienceleague.adobe.com/docs/core-services/interface/services/customer-attributes/attributes.html)
+* [Kundattribut](https://experienceleague.adobe.com/docs/core-services/interface/services/customer-attributes/attributes.html?lang=sv-SE)
 
 * [Dataflöden](/help/export/ftp-and-sftp/c-set-up-ftp-accounts/ftp-datafeeds.md)
 

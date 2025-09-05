@@ -15,7 +15,7 @@ ht-degree: 16%
 # Analytics Tech Notes {#technotes}
 
 + [Tekniska anteckningar för Analytics](home.md)
-+ [Versionsinformation för analyser](https://experienceleague.adobe.com/en/docs/analytics/release-notes/latest)
++ [Versionsinformation för analyser](https://experienceleague.adobe.com/sv/docs/analytics/release-notes/latest)
 + Adobe Analytics för Google Analytics {#ga-to-aa}
    + [Hjälp för användare av Adobe Analytics for Google Analytics](ga-to-aa/home.md)
    + [Konton och rapportsviter](ga-to-aa/accounts.md)

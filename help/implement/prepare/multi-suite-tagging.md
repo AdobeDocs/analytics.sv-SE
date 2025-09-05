@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Om du vill implementera taggning för flera programsviter måste du inkludera Report Suite-ID (RSID) för den globala rapportsviten och även RSID:n för de underordnade rapportsviterna i spårningskoden för dina webbsidor och appar.
 
-* För implementeringar av Adobe Experience Platform-taggar anger du var och en av rapportsviterna för [[!DNL Analytics] tillägget](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html).
+* För implementeringar av Adobe Experience Platform-taggar anger du var och en av rapportsviterna för [[!DNL Analytics] tillägget](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=sv-SE).
 
 * För tidigare implementeringar av JavaScript och SDK för mobiler, skiljer du RSID-identifierare med kommatecken och utan mellanslag (`rsid1,rsid2,rsid3` och så vidare).
 

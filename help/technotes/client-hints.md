@@ -43,7 +43,7 @@ Det här [Google-blogginlägget](https://web.dev/user-agent-client-hints/) är e
 
 +++**Hur aktiverar jag samlingen med klienttips?**
 
-Tips om låg entropi tillhandahålls automatiskt av webbläsaren och hämtas för att ta fram information om enheter och webbläsare. Nyare versioner av Web SDK (från och med 2.12.0) och AppMeasurement (från och med 2.23.0) kan konfigureras för att samla in tips med hög entropi via respektive taggtillägg eller direkt via ett konfigurationsalternativ. Se instruktionerna för [Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/user-agent-client-hints.html#enabling-high-entropy-client-hints) och [AppMeasurement](/help/implement/vars/config-vars/collecthighentropyuseragenthints.md).
+Tips om låg entropi tillhandahålls automatiskt av webbläsaren och hämtas för att ta fram information om enheter och webbläsare. Nyare versioner av Web SDK (från och med 2.12.0) och AppMeasurement (från och med 2.23.0) kan konfigureras för att samla in tips med hög entropi via respektive taggtillägg eller direkt via ett konfigurationsalternativ. Se instruktionerna för [Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/user-agent-client-hints.html?lang=sv-SE#enabling-high-entropy-client-hints) och [AppMeasurement](/help/implement/vars/config-vars/collecthighentropyuseragenthints.md).
 
 För båda biblioteken är samlingen med höga entropytips **inaktiverad som standard**.
 
@@ -109,7 +109,7 @@ Se tidslinjen [som publicerats av Google](https://blog.chromium.org/2021/09/user
 
 Enhetsinformation i rapporter hämtas från användaragenten. Vi har uppdaterat våra processer så att vi kan använda både användaragenten och klienttips där det finns tillgängliga.
 
-Återställnings-ID ([s_fid](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/analytics-ids.html)) härleds från användaragenten och IP-adressen. Detta ID används endast om en cookie inte kan anges så används inte i någon större utsträckning
+Återställnings-ID ([s_fid](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/analytics-ids.html?lang=sv-SE)) härleds från användaragenten och IP-adressen. Detta ID används endast om en cookie inte kan anges så används inte i någon större utsträckning
 
 +++
 

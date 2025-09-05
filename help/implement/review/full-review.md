@@ -17,7 +17,7 @@ Varför ska ni granska implementeringen var sjätte månad? Eftersom ni måste s
 
 ## &#x200B;1. Se till att implementeringen fortfarande är helt anpassad efter våra affärsbehov
 
-Träffa företagsägaren och/eller analytikerna för att se hur verksamhetens behov förändras. Ta reda på hur ni uppdaterar nyckeltal och mätplaner för de behov eller mätmöjligheter som för närvarande inte uppfylls av er implementering. Kom ihåg att registrera dina ändringar i din [BRD och SDR](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-a-business-requirements-document.html#implementation).
+Träffa företagsägaren och/eller analytikerna för att se hur verksamhetens behov förändras. Ta reda på hur ni uppdaterar nyckeltal och mätplaner för de behov eller mätmöjligheter som för närvarande inte uppfylls av er implementering. Kom ihåg att registrera dina ändringar i din [BRD och SDR](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-a-business-requirements-document.html?lang=sv-SE#implementation).
 
 ## &#x200B;2. Se till att mätvärdena och variablerna fortfarande fungerar bra.
 

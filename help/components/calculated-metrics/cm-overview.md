@@ -20,7 +20,7 @@ Beräknade mätvärden är anpassade mätvärden som du kan skapa utifrån befin
 Beräknade mått är tillgängliga i varje [!DNL Analytics]-paket, men Adobe Analytics Foundation Pack för Experience Cloud är begränsat till grundläggande beräknade mått, inklusive [formattyper (decimal, time, percent, currency)](/help/components/calculated-metrics/workflow/c-build-metrics/cm-build-metrics.md), [allokeringsändringar (standard, linjär, deltagande osv.)](/help/components/calculated-metrics/workflow/c-build-metrics/m-metric-type-alloc.md), [metriska typer (standard, total)](/help/components/calculated-metrics/workflow/c-build-metrics/m-metric-type-alloc.md) och [grundläggande operatorer](workflow/c-build-metrics/cm-build-metrics.md#operators) (lägg till, subtrahera, multiplicera och dividera).
 
 
-Mer information finns i [Adobe Analytics produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-analytics.html).
+Mer information finns i [Adobe Analytics produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-analytics.html).
 
 <!--
 Here is a comparison of calculated metrics and advanced calculated metrics capabilities: 

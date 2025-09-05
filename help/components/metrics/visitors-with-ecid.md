@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Besökare med Experience Cloud ID
 
-Besökarna med Experience Cloud-ID [måttet](overview.md) visar antalet unika besökare som identifieras av Adobe med hjälp av [Experience Cloud-ID-tjänsten](https://experienceleague.adobe.com/docs/id-service/using/home.html). Det här måttet är användbart om du vill jämföra med [Unika besökare](unique-visitors.md) för att se till att de flesta besökare på webbplatsen använder ID-tjänsten. Om en stor del av besökarna inte använder ID-tjänstens cookies kan det tyda på ett problem i implementeringen.
+Besökarna med Experience Cloud-ID [måttet](overview.md) visar antalet unika besökare som identifieras av Adobe med hjälp av [Experience Cloud-ID-tjänsten](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=sv-SE). Det här måttet är användbart om du vill jämföra med [Unika besökare](unique-visitors.md) för att se till att de flesta besökare på webbplatsen använder ID-tjänsten. Om en stor del av besökarna inte använder ID-tjänstens cookies kan det tyda på ett problem i implementeringen.
 
 >[!NOTE]
 >
@@ -20,7 +20,7 @@ Besökarna med Experience Cloud-ID [måttet](overview.md) visar antalet unika be
 
 ## Hur det här måttet beräknas
 
-Det här måttet är baserat på [Unika besökare](unique-visitors.md)-måttet, förutom att det endast omfattar individer som identifieras med frågesträngen `mid` (baserat på cookien [`s_ecid`](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html)).
+Det här måttet är baserat på [Unika besökare](unique-visitors.md)-måttet, förutom att det endast omfattar individer som identifieras med frågesträngen `mid` (baserat på cookien [`s_ecid`](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html?lang=sv-SE)).
 
 ## Felsöka konfigurationen av ditt Experience Cloud ID
 

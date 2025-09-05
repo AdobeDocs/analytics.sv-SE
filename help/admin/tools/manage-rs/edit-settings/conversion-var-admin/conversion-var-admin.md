@@ -20,7 +20,7 @@ Custom Insight Conversion Variable (eller eVar) placeras i Adobe-koden på utval
 
 ## Konverteringsvariabler (eVars) - översikt
 
-En videoöversikt över konverteringsvariabler finns i [Introduktion till konverteringsvariabler](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/dimensions/introduction-to-conversion-variables-evars) i självstudiehandboken för Analytics.
+En videoöversikt över konverteringsvariabler finns i [Introduktion till konverteringsvariabler](https://experienceleague.adobe.com/sv/docs/analytics-learn/tutorials/analysis-workspace/dimensions/introduction-to-conversion-variables-evars) i självstudiehandboken för Analytics.
 
 När en eVar är inställd på ett värde för en besökare kommer Adobe automatiskt ihåg det värdet tills det upphör att gälla. Alla lyckade händelser som besökaren påträffar när eVar-värdet är aktivt räknas mot eVar-värdet.
 

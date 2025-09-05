@@ -37,7 +37,7 @@ Dessa gäller inte när du skickar Adobe Analytics-data till Adobe Audience Mana
 
 +++ Hur skapar jag ett Analytics-mål i Audience Manager?
 
-Se [Konfigurera ett analysmål i Adobe Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/destinations/experience-cloud-destinations/create-analytics-destination.html).
+Se [Konfigurera ett analysmål i Adobe Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/destinations/experience-cloud-destinations/create-analytics-destination.html?lang=sv-SE).
 
 +++
 

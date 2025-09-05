@@ -43,7 +43,7 @@ Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Publicera segment
 
 * Kontrollera att rapportsviten som du sparar det här segmentet i är [aktiverad för Experience Cloud](/help/components/segmentation/segmentation-workflow/seg-publish.md). Annars kan du inte publicera den på Experience Cloud.
 * Se till att din organisation använder Experience Cloud ID:n.
-* Innan du kan publicera segment måste din administratör tilldela [!UICONTROL Segment Publishing]-behörigheten till en produktprofil i [Admin Console](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/admin-tool-experience-cloud) och lägga till dig i produktprofilen.
+* Innan du kan publicera segment måste din administratör tilldela [!UICONTROL Segment Publishing]-behörigheten till en produktprofil i [Admin Console](https://experienceleague.adobe.com/sv/docs/core-services/interface/administration/admin-tool-experience-cloud) och lägga till dig i produktprofilen.
 
 ## Överväganden
 
@@ -127,14 +127,14 @@ Följande skärmbilder visar hur du hämtar Adobe Audience Manager UUID i webbl�
 
 1. Starta Chrome Developer Tools innan du läser in en sida
 1. Läs in sidan och kontrollera Program > Cookies. Adobe Audience Manager UUID ska anges i tredjepartsprodukten
-Demdex cookie ([adobe.demdex.net](https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/reference/demdex-calls) i exemplet nedan). Fältdemonstrationen är Adobe Audience Manager UUID-uppsättningen
+Demdex cookie ([adobe.demdex.net](https://experienceleague.adobe.com/sv/docs/audience-manager/user-guide/reference/demdex-calls) i exemplet nedan). Fältdemonstrationen är Adobe Audience Manager UUID-uppsättningen
 i webbläsaren (`35721780439475290181087231320657663953` i exemplet nedan).
 
    ![Chrome Developer Tools](assets/devtools.png)
 
 ## Använd Audience Manager [!UICONTROL Visitor Profile Viewer]
 
-Adobe Audience Manager UUID i webbläsaren är som standard när [!UICONTROL Visitor Profile Viewer] läses in. Om du verifierar trait-implementeringar för andra användare anger du ett UUID i UUID-fältet och klickar på [!UICONTROL Refresh]. Mer information finns i [Visitor Profile Viewer](https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/features/visitor-profile-viewer).
+Adobe Audience Manager UUID i webbläsaren är som standard när [!UICONTROL Visitor Profile Viewer] läses in. Om du verifierar trait-implementeringar för andra användare anger du ett UUID i UUID-fältet och klickar på [!UICONTROL Refresh]. Mer information finns i [Visitor Profile Viewer](https://experienceleague.adobe.com/sv/docs/audience-manager/user-guide/features/visitor-profile-viewer).
 
 ## Visa segmentegenskaperna i [!DNL Audience Manager]
 

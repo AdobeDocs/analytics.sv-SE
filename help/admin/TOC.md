@@ -15,7 +15,7 @@ ht-degree: 10%
 # Adobe Analytics Admin Guide {#admin}
 
 + [Administratörshandbok för analyser](home.md)
-+ [Versionsinformation för analyser](https://experienceleague.adobe.com/en/docs/analytics/release-notes/latest)
++ [Versionsinformation för analyser](https://experienceleague.adobe.com/sv/docs/analytics/release-notes/latest)
 + Adobe Admin Console {#admin-console}
    + [Översikt](admin-console/home.md)
    + [Adobe Analytics första administrationshandbok](admin-console/first-admin-guide.md)

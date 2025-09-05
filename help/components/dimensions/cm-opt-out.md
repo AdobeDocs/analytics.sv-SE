@@ -28,6 +28,6 @@ Organisationen bestämmer logiken för att implementera dessa kontextdatavariabl
 
 Följande tre värden ingår i Dimension:
 
-* **`SSF`**: Besökaren avanmälde sig från [Vidarebefordran på serversidan](/help/admin/tools/manage-rs/edit-settings/general/c-server-side-forwarding/ssf.md). Dimensionsobjektet finns när kontextdatavariabeln `cm.ssf` är lika med `1`. Mer information finns i [Översikt över datasekretess](https://experienceleague.adobe.com/docs/audience-manager/user-guide/overview/data-privacy/data-privacy.html) i användarhandboken för Audience Manager. Träffen vidarebefordras inte till Adobe Audience Manager.
+* **`SSF`**: Besökaren avanmälde sig från [Vidarebefordran på serversidan](/help/admin/tools/manage-rs/edit-settings/general/c-server-side-forwarding/ssf.md). Dimensionsobjektet finns när kontextdatavariabeln `cm.ssf` är lika med `1`. Mer information finns i [Översikt över datasekretess](https://experienceleague.adobe.com/docs/audience-manager/user-guide/overview/data-privacy/data-privacy.html?lang=sv-SE) i användarhandboken för Audience Manager. Träffen vidarebefordras inte till Adobe Audience Manager.
 * **`DMP`**: Besökaren valde bort från delning till datahanteringsplattformar. Dimensionsobjektet finns när kontextdatavariabeln `opt.dmp` är lika med `N`. På samma sätt som `SSF` vidarebefordras träffen inte till Adobe Audience Manager.
 * **`SELL`**: Besökaren valde att inte dela eller sälja data till tredje part. Den här dimensionen finns när kontextdatavariabeln `opt.sell` är lika med `N`.

@@ -57,4 +57,4 @@ Nedan följer några av fördelarna med Customer Journey Analytics jämfört med
 
 * **Data för tvärrapporteringsprogram**: Befintliga implementeringar från flera datauppsättningar kan kombineras i plattformen.
 
-Mer information finns i [Customer Journey Analytics - översikt](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html).
+Mer information finns i [Customer Journey Analytics - översikt](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=sv-SE).

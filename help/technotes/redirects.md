@@ -117,7 +117,7 @@ s.pageURL="https://www.flytohawaii.example"
 
 Kör ett test för att verifiera att referenten, ursprunglig URL ( *`s_server`*) och kampanjvariabler hämtas.
 
-Dessa variabler representeras som följande parametrar i [Experience Cloud Debugger](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html).
+Dessa variabler representeras som följande parametrar i [Experience Cloud Debugger](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html?lang=sv-SE).
 
 <table id="table_5F3B987D4D514CA283F7B9F52EBC2301"> 
  <thead> 

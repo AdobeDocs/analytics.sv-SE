@@ -26,7 +26,7 @@ Denna dimension är unik eftersom den innehåller flera sätt att fylla den med 
 Om du väljer att använda ett alternativ som inbegriper geo zip:
 
 * För AppMeasurement-implementationer fungerar den här dimensionen som den ska.
-* Aktivera [!UICONTROL Geo Lookup] när [konfigurerar ett datastream](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html) för Web SDK-implementeringar.
+* Aktivera [!UICONTROL Geo Lookup] när [konfigurerar ett datastream](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=sv-SE) för Web SDK-implementeringar.
 
 ## Dimension-objekt
 

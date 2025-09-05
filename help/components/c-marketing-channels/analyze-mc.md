@@ -64,4 +64,4 @@ Med den äldre First Touch Channel och Last Touch Channel kan du få en användb
 
 ![](assets/mc-viz6.png)
 
-Lär dig mer om tabbbaserad marknadsanalys i den här videon: [Använda tabbanalys för att utforska grundläggande marknadsattribuering i Analysis Workspace](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/attribution-iq/using-cross-tab-analysis-to-explore-basic-marketing-attribution-in-analysis-workspace.html).
+Lär dig mer om tabbbaserad marknadsanalys i den här videon: [Använda tabbanalys för att utforska grundläggande marknadsattribuering i Analysis Workspace](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/attribution-iq/using-cross-tab-analysis-to-explore-basic-marketing-attribution-in-analysis-workspace.html?lang=sv-SE).

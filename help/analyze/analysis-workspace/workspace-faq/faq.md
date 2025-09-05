@@ -68,7 +68,7 @@ Om du har skapat en rapport om arbetsytan men det inte finns några data kan du 
 * Kontrollera att rapportsviten är ifylld med data.
 * Om du tillämpade ett segment i rapporten kanske segmentvillkoren inte matchar några data. Prova med att ta bort segmentet eller justera segmentdefinitionen.
 * Kontrollera datumintervallet i det övre högra hörnet och se till att det har ett förväntat värde.
-* Navigera till webbplatsen och använd [Felsökning](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html) för att verifiera att data samlas in.
+* Navigera till webbplatsen och använd [Felsökning](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html?lang=sv-SE) för att verifiera att data samlas in.
 
 
 +++

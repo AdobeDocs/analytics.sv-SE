@@ -40,4 +40,4 @@ Följande alternativ för mediehantering är tillgängliga när du redigerar en 
 
   Specifika klassificeringar för dimensioner för direktuppspelande medietjänster finns på sidan [!UICONTROL Media Classifications]. De fungerar ungefär som [konverteringsklassificeringar](/help/admin/tools/manage-rs/edit-settings/conversion-var-admin/conversion-classifications.md) som är tillgängliga för konverteringsvariabler. Om du aktiverar vissa komponenter under [!UICONTROL Media Reporting] skapas klassificeringsdimensioner automatiskt. Du kan använda det här gränssnittet för att skapa egna klassificeringsdimensioner eller överföra klassificeringsdata.
 
-Allmän information om hur du integrerar direktuppspelningsmediedata i Adobe Analytics finns i [Översikt över Adobe direktuppspelningsmedietjänster](https://experienceleague.adobe.com/en/docs/media-analytics/using/media-overview).
+Allmän information om hur du integrerar direktuppspelningsmediedata i Adobe Analytics finns i [Översikt över Adobe direktuppspelningsmedietjänster](https://experienceleague.adobe.com/sv/docs/media-analytics/using/media-overview).

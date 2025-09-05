@@ -22,6 +22,6 @@ Gör det möjligt för Analytics att samla in visningar och klickningar på [!UI
 * Lägger till nya dimensioner till tillgångsvariablerna i Analysis Workspace: Resurs-ID, Resurs-Source och Klickat resurs-ID
 * Lägger till nya dimensioner i tillgångshändelser: Resursklickningar och Resursinställningar
 
-Information som ska fyllas i finns i [dokumentationen för AEM Asset Insights](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/assets-insights.html) för fullständiga implementeringsinstruktioner.
+Information som ska fyllas i finns i [dokumentationen för AEM Asset Insights](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/assets-insights.html?lang=sv-SE) för fullständiga implementeringsinstruktioner.
 
 <!--The content in this article is duplicated with the content in the Integration guide (aem-assets-reporting.md)-->

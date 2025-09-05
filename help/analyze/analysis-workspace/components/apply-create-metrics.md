@@ -101,7 +101,7 @@ Så här skapar du ett beräknat mått för ett enskilt projekt:
 
    * [!UICONTROL **Procentuell ändring**]: Skapar en ny kolumn som visar procentändringen mellan de två markerade kolumnerna.
 
-[Beräknade mått: Mätvärden utan implementering](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/components/calculated-metrics/calculated-metrics-implementationless-metrics) (3:42)
+[Beräknade mått: Mätvärden utan implementering](https://experienceleague.adobe.com/sv/docs/analytics-learn/tutorials/components/calculated-metrics/calculated-metrics-implementationless-metrics) (3:42)
 
 
 ## Jämför mätvärden med olika attribueringsmodeller

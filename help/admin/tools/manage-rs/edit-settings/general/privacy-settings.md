@@ -15,4 +15,4 @@ ht-degree: 0%
 
 Du kan aktivera sekretessinställningar för webbläsarcookies.
 
-Se [Aktivera sekretessinställningar för webbläsarcookies](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/browser-cookie-settings.html) i användarhandboken för bastjänsterna.
+Se [Aktivera sekretessinställningar för webbläsarcookies](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/browser-cookie-settings.html?lang=sv-SE) i användarhandboken för bastjänsterna.

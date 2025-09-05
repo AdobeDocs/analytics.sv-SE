@@ -68,7 +68,7 @@ Produktadministratörsåtkomst för datainsamling i Experience Platform är näs
 
 ## Bevilja produktadministratörsåtkomst för produktprofiler
 
-Mer information om hur du tilldelar användare som produktprofiladministratörer finns i avsnittet Hantera produktprofiladministratörer i artikeln [Hantera produktprofiler för företagsanvändare](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) i användarhandboken för Enterprise.
+Mer information om hur du tilldelar användare som produktprofiladministratörer finns i avsnittet Hantera produktprofiladministratörer i artikeln [Hantera produktprofiler för företagsanvändare](https://helpx.adobe.com/se/enterprise/using/manage-product-profiles.html) i användarhandboken för Enterprise.
 
 ## Nästa steg
 

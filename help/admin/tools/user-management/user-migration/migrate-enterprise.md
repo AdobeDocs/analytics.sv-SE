@@ -25,9 +25,9 @@ För nya domäner och kataloger följer du stegen för att:
 * Konfigurera domäner
 * Länka domäner till kataloger
 
-Mer information finns i [Konfigurera ett identitetssystem](https://helpx.adobe.com/enterprise/using/set-up-identity.html).
+Mer information finns i [Konfigurera ett identitetssystem](https://helpx.adobe.com/se/enterprise/using/set-up-identity.html).
 
-Om en katalog redan har skapats i en annan organisation av en annan affärsenhet eller ett annat team följer du stegen i [katalogförtroendet](https://helpx.adobe.com/enterprise/using/set-up-identity.html#Directorytrusting) för att skapa katalogen i den organisation som du använder för Analytics.
+Om en katalog redan har skapats i en annan organisation av en annan affärsenhet eller ett annat team följer du stegen i [katalogförtroendet](https://helpx.adobe.com/se/enterprise/using/set-up-identity.html#Directorytrusting) för att skapa katalogen i den organisation som du använder för Analytics.
 
 ## Migrera användarkonton för Enterprise ID och Federated ID {#task-0cfb3e4400fd4ab58e4d9704528b05fa}
 
@@ -40,7 +40,7 @@ I den här proceduren kommer du att:
 * Jämför listorna (söker efter dubbletter så att du inte skriver över kontodata i Adobe Admin Console).
 * Överför en färdig [!DNL .csv] (från **[!UICONTROL Admin Console]** > **[!UICONTROL Users]**) med Enterprise ID- eller Federated ID-användare till Adobe Admin Console.
 
-Om du behöver migrera befintliga Adobe ID-användarkonton till en Enterprise ID eller Federated ID kontaktar du Adobe kundtjänst och begär en [bulkanvändaridentitetsväxling](https://helpx.adobe.com/enterprise/using/bulk-operations.html).
+Om du behöver migrera befintliga Adobe ID-användarkonton till en Enterprise ID eller Federated ID kontaktar du Adobe kundtjänst och begär en [bulkanvändaridentitetsväxling](https://helpx.adobe.com/se/enterprise/using/bulk-operations.html).
 
 **Så här migrerar du användarkonton**
 
@@ -73,7 +73,7 @@ Om du behöver migrera befintliga Adobe ID-användarkonton till en Enterprise ID
 
 1. I [!UICONTROL Admin Console] hämtar du en lista över Adobe Admin Console-användare:
 
-   1. Navigera till [!UICONTROL Admin Console] > **[!UICONTROL Users]** och klicka sedan på [Exportera användarlistan till CSV](https://helpx.adobe.com/enterprise/using/users.html).
+   1. Navigera till [!UICONTROL Admin Console] > **[!UICONTROL Users]** och klicka sedan på [Exportera användarlistan till CSV](https://helpx.adobe.com/se/enterprise/using/users.html).
 
       ![](/help/admin/tools/user-management/user-migration/assets/export-csv.png)
 
@@ -137,7 +137,7 @@ Om du behöver migrera befintliga Adobe ID-användarkonton till en Enterprise ID
  </tbody> 
 </table>
 
-Mer information om fälten i filen [!DNL .csv] finns i [CSV-filformat](https://helpx.adobe.com/enterprise/using/users.html).
+Mer information om fälten i filen [!DNL .csv] finns i [CSV-filformat](https://helpx.adobe.com/se/enterprise/using/users.html).
 
 >[!NOTE]
 >

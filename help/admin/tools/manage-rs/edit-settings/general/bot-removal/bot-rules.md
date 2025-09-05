@@ -23,7 +23,7 @@ Punkttrafikdata lagras i en separat databas för visning i rapporter om start- o
 
 >[!NOTE]
 >
->Adobe Experience Platform Edge Network tillhandahåller en [robotavkänningstjänst](https://experienceleague.adobe.com/docs/experience-platform/datastreams/bot-detection.html) som märker att träffar identifieras som om de kommer från bottnar. Processen för att identifiera robotar som används i Adobe Analytics är separat och refererar inte till robotpoängen som ingår i data som hämtas via Edge Network. De två systemen använder dock samma IAB-robotlista.
+>Adobe Experience Platform Edge Network tillhandahåller en [robotavkänningstjänst](https://experienceleague.adobe.com/docs/experience-platform/datastreams/bot-detection.html?lang=sv-SE) som märker att träffar identifieras som om de kommer från bottnar. Processen för att identifiera robotar som används i Adobe Analytics är separat och refererar inte till robotpoängen som ingår i data som hämtas via Edge Network. De två systemen använder dock samma IAB-robotlista.
 
 ## Uppdatera eller överföra robotregler
 

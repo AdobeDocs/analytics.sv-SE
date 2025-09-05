@@ -54,7 +54,7 @@ Att använda Web SDK-tillägget för att skicka data till Adobe Analytics har b�
 <tr>
 <td>2</td>
 <td><b>Konfigurera scheman</b>. För att standardisera datainsamlingen för användning i olika program som utnyttjar Adobe Experience Platform har Adobe skapat den öppna och offentligt dokumenterade standarden Experience Data Model (XDM).</td>
-<td><a href="https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html">Översikt över schemaanvändargränssnittet</a></td>
+<td><a href="https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html?lang=sv-SE">Översikt över schemaanvändargränssnittet</a></td>
 </tr>
 
 <tr>
@@ -66,31 +66,31 @@ Att använda Web SDK-tillägget för att skicka data till Adobe Analytics har b�
 <tr>
 <td>4</td>
 <td><b>Konfigurera en datastream</b>. En datastream representerar konfigurationen på serversidan när Adobe Experience Platform Web SDK implementeras.</td>
-<td><a href="https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html">Konfigurera ett datastream<a></td> 
+<td><a href="https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=sv-SE">Konfigurera ett datastream<a></td> 
 </tr>
 
 <tr>
 <td>5</td> 
 <td><b>Lägg till en Adobe Analytics-tjänst</b> i ditt datastream. Tjänsten styr om och hur data skickas till Adobe Analytics och till vilka rapporteringsprogram.</td>
-<td><a href="https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html#analytics">Lägg till Adobe Analytics-tjänst i ett datastream</a></td>
+<td><a href="https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=sv-SE#analytics">Lägg till Adobe Analytics-tjänst i ett datastream</a></td>
 </tr>
 
 <tr>
 <td>6</td>
 <td><b>Skapa en taggegenskap</b>. Egenskaper är överliggande behållare som används för att referera till tagghanteringsdata.</td>
-<td><a href="https://experienceleague.adobe.com/docs/experience-platform/tags/admin/companies-and-properties.html#for-web">Skapa eller konfigurera en taggegenskap för webben</a></td>
+<td><a href="https://experienceleague.adobe.com/docs/experience-platform/tags/admin/companies-and-properties.html?lang=sv-SE#for-web">Skapa eller konfigurera en taggegenskap för webben</a></td>
 </tr>
 
 <tr>
 <td>7</td> 
 <td><b>Installera och konfigurera Web SDK-tillägget</b> i taggegenskapen. Konfigurera Web SDK-tillägget för att skicka data till den dataström som konfigurerats i steg 4.</td>
-<td><a href="https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/sdk/overview.html">Adobe Experience Platform Web SDK-tillägg - översikt</a></td>
+<td><a href="https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/sdk/overview.html?lang=sv-SE">Adobe Experience Platform Web SDK-tillägg - översikt</a></td>
 </tr>
 
 <tr>
 <td>8</td>
 <td><b>Upprepa, validera och publicera</b> i produktionen. Bädda in kod för att inkludera taggegenskapen på webbplatsens sidor. Använd sedan dataelement, regler och så vidare för att anpassa implementeringen.</td>
-<td><a href="https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html#embed-code">Bädda in kod</a><br/><a href="https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html">Översikt över publicering</a></td>
+<td><a href="https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=sv-SE#embed-code">Bädda in kod</a><br/><a href="https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html?lang=sv-SE">Översikt över publicering</a></td>
 </tr>
 
 </table>

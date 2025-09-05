@@ -14,7 +14,7 @@ ht-degree: 10%
 # Adobe Analytics Tools Guide {#analyze}
 
 + [Handbok för analysverktyg](home.md)
-+ [Versionsinformation för analyser](https://experienceleague.adobe.com/en/docs/analytics/release-notes/latest)
++ [Versionsinformation för analyser](https://experienceleague.adobe.com/sv/docs/analytics/release-notes/latest)
 + Kom igång med Adobe Analytics {#admin-overview}
    + [Analytics - översikt](get-started/analytics-overview.md)
    + [Kom igång (efter roll)](get-started/get-started-by-role.md)

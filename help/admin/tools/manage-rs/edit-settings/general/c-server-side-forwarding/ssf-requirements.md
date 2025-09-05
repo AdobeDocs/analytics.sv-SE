@@ -18,11 +18,11 @@ För att implementera vidarebefordran på serversidan måste du uppfylla dessa k
 
 ## Lösningskrav
 
-Vidarebefordran på serversidan fungerar med [Analytics](https://www.adobe.com/data-analytics-cloud/analytics.html) och [Audience Manager](https://www.adobe.com/data-analytics-cloud/audience-manager.html) och/eller [Publiker](https://experienceleague.adobe.com/docs/core-services/interface/audiences/audience-library.html).
+Vidarebefordran på serversidan fungerar med [Analytics](https://www.adobe.com/data-analytics-cloud/analytics.html) och [Audience Manager](https://www.adobe.com/data-analytics-cloud/audience-manager.html) och/eller [Publiker](https://experienceleague.adobe.com/docs/core-services/interface/audiences/audience-library.html?lang=sv-SE).
 
 ## Tjänstkrav
 
-Vidarebefordran på serversidan kräver [identitetstjänsten](https://experienceleague.adobe.com/docs/id-service/using/home.html). Identitetstjänsten tillhandahåller ett universellt ID som identifierar webbplatsbesökare över alla lösningar i Experience Cloud. Du måste implementera ID-tjänsten innan vidarebefordran på serversidan fungerar.
+Vidarebefordran på serversidan kräver [identitetstjänsten](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=sv-SE). Identitetstjänsten tillhandahåller ett universellt ID som identifierar webbplatsbesökare över alla lösningar i Experience Cloud. Du måste implementera ID-tjänsten innan vidarebefordran på serversidan fungerar.
 
 ## Kodversioner
 

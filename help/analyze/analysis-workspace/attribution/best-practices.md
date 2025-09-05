@@ -63,4 +63,4 @@ Om du ännu inte har någon attribueringsmodell som ger tillfredsställande svar
 
 * Du kan behöva använda en datavetare istället för att förlita dig på Analysis Workspace.
 * Du kan lita på rådata, som i Adobe dataflöden.
-* Du kan till exempel använda [Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2c-overview/cja-overview) om du vill ta hänsyn till dina avbildningsdata.
+* Du kan till exempel använda [Customer Journey Analytics](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-overview/cja-b2c-overview/cja-overview) om du vill ta hänsyn till dina avbildningsdata.
