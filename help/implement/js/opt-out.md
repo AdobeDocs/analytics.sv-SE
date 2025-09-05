@@ -18,7 +18,7 @@ ht-degree: 0%
 >[!IMPORTANT]
 >
 > I den här artikeln beskrivs hur **Adobe Analytics-kunder som (planerar att) implementera Adobe Analytics** på sin webbplats får instruktioner om hur de kan erbjuda webbplatsanvändare avanmälningslänkar. <p><p>
-<p>-ERR:REF-NOT-FOUND-<p>-ERR:REF-NOT-FOUND-> Om du **besöker en webbplats som har implementerat Adobe Analytics** och du vill avanmäla dig **<span style="color:red">är den här artikeln INTE till dig</span>**. Se [Adobe sekretessalternativ](https://www.adobe.com/privacy/opt-out.html) för att kontrollera hur Adobe använder dina uppgifter.
+><p>-ERR:REF-NOT-FOUND-<p>-ERR:REF-NOT-FOUND-> Om du **besöker en webbplats som har implementerat Adobe Analytics** och du vill avanmäla dig **<span style="color:red">är den här artikeln INTE till dig</span>**. Se [Adobe sekretessalternativ](https://www.adobe.com/privacy/opt-out.html) för att kontrollera hur Adobe använder dina uppgifter.
 
 Vissa besökare på din webbplats föredrar att inte ha sin surfinformation med i din datauppsättning. Adobe ger besökarna möjlighet att avanmäla sig från den information de analyserar.
 

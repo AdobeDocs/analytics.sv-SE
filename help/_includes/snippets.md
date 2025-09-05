@@ -12,7 +12,7 @@ ht-degree: 0%
 >[!IMPORTANT]
 >
 >Ett nytt och smidigt [Report Builder](/help/analyze/report-builder/rb-overview.md) släpptes 16 oktober 2024. Det stöds i Mac, Windows och webbläsare.
->>Denna äldre Report Builder-tilläggsversion fungerar fortfarande. Du kan [konvertera dina äldre arbetsböcker](/help/analyze/report-builder/convert-workbooks.md) till nya Report Builder.
+>&#x200B;>Denna äldre Report Builder-tilläggsversion fungerar fortfarande. Du kan [konvertera dina äldre arbetsböcker](/help/analyze/report-builder/convert-workbooks.md) till nya Report Builder.
 
 ## Rapporter och analyser - meddelande om att produkten har upphört att gälla {#ra-eol}
 

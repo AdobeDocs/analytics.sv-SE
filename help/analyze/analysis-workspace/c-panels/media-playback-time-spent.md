@@ -34,7 +34,7 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-_I den här artikeln visas hur länge medieuppspelningen har pågått i panelen i_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._<br/>_Se [Medieuppspelningstid på panel](/help/analyze/analysis-workspace/c-panels/media-playback-time-spent.md)) för_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**-versionen av den här artikeln._
+_I den här artikeln visas hur länge medieuppspelningen har pågått i panelen i_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**._<br/>_Se [Medieuppspelningstid på panel](/help/analyze/analysis-workspace/c-panels/media-playback-time-spent.md)) för_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**-versionen av den här artikeln._
 
 >[!ENDSHADEBOX]
 
@@ -126,8 +126,8 @@ Det enda mätvärdet som kan användas i den här panelen är Använd uppspelnin
 >[!MORELIKETHIS]
 >
 >[Skapa en panel](/help//analyze/analysis-workspace/c-panels/panels.md#create-a-panel)
->>[Medie - genomsnittlig minutmålspanel](average-minute-audience-panel.md)
->>[Panelen för samtidiga visningsprogram för media](media-concurrent-viewers.md)
+>&#x200B;>[Medie - genomsnittlig minutmålspanel](average-minute-audience-panel.md)
+>&#x200B;>[Panelen för samtidiga visningsprogram för media](media-concurrent-viewers.md)
 >
 
 <!--

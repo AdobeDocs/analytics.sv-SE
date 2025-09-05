@@ -53,7 +53,7 @@ ITP-reglerna utvecklas ofta. Information om de senaste profilerna finns i Apple 
 Alla cookies från första part som har angetts av Adobe, och de relaterade JavaScript-biblioteken, påverkas av ITP-policyer:
 
 * [&quot;AMCV&quot;-cookies](https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html) har angetts av tjänstbiblioteket för Adobe Experience Cloud Visitor ID (ECID)
-* Analysen av den gamla cookien [ ](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html)&quot;s_vi&quot; när den har konfigurerats med datainsamling från första part med en CNAME
+* Analysen av den gamla cookien [&#128279;](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html)&quot;s_vi&quot; när den har konfigurerats med datainsamling från första part med en CNAME
 * Den gamla cookien [ för Analytics ](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html)&quot;s_fid&quot;, som är den reservcookie som används när s_vi inte kan anges
 
 #### Vilken inverkan har ITP på Safari för analys?
@@ -178,4 +178,4 @@ Om ditt företag påverkas av förhindrande av ITP-spårning kan du vidta följa
 >[!MORELIKETHIS]
 >
 >[Alternativ för att minska effekten av webbläsar-cookie-begränsningar](cookieless.md)
->>[Effekten av Apple nya App Tracking Transparency Framework på Adobe Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/the-impact-of-apple-s-new-app-tracking-transparency-framework-on/td-p/401833)
+>&#x200B;>[Effekten av Apple nya App Tracking Transparency Framework på Adobe Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/the-impact-of-apple-s-new-app-tracking-transparency-framework-on/td-p/401833)

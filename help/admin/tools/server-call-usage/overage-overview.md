@@ -99,7 +99,7 @@ Användarbehörighet för serveranrop beviljas automatiskt till Analytics-admini
    <td colname="col3"> 
     <ol id="ol_13A984328D264488B7045DC7521A5F55"> 
      <li id="li_ACDA518C7D184084AC1DFA7B38C67314">Logga in på Analytics via sc.omniture.com. </li> 
-     <li id="li_066D90AB071941C3869EDAFCE981707A">Navigera till <span class="ignoretag"> <span class="uicontrol"> Admin </span> &gt; <span class="uicontrol"> Alla administratörer </span> &gt; <span class="uicontrol"> Användarhantering </span> &gt; <span class="uicontrol"> Grupper </span> &gt; <span class="uicontrol"> Redigera åtkomst till alla rapporter </span> &gt; <span class="uicontrol"> Analysverktyg </span> &gt; <span class="uicontrol"> Anpassa </span> &gt; <span class="uicontrol"> användning av serveranrop </span> </span>} </li> 
+     <li id="li_066D90AB071941C3869EDAFCE981707A">Navigera till <span class="ignoretag"> <span class="uicontrol"> Admin </span> &gt; <span class="uicontrol"> Alla administratörer </span> &gt; <span class="uicontrol"> Användarhantering </span> &gt; <span class="uicontrol"> Grupper </span> &gt; <span class="uicontrol"> Redigera åtkomst till alla rapporter </span> &gt; <span class="uicontrol"> Analysverktyg </span> &gt; <span class="uicontrol"> Anpassa </span> &gt; <span class="uicontrol"> användning av serveranrop </span> </span>&rbrace; </li> 
     </ol> </td> 
    <td colname="col4"> 
     <ol id="ol_518673ED323A4C5993A3B9F4BA09E405"> 
