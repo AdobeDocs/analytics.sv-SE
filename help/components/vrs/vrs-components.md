@@ -3,9 +3,9 @@ description: Virtuella rapportsviter kan struktureras så att de inkluderar och 
 title: Komponentstrukturering för virtuell rapportserie
 feature: VRS
 exl-id: 19163829-328a-4064-b1be-8c09d1d94a0d
-source-git-commit: 08e29da4847e8ef70bd4435949e26265d770f557
+source-git-commit: fcc165536d77284e002cb2ba6b7856be1fdb3e14
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '384'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Virtuella rapportsviter kan struktureras så att de inkluderar och exkluderar ko
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Komponentkuration](https://video.tv.adobe.com/v/3425532?quality=12&learn=on&captions=swe){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Komponentkuration](https://video.tv.adobe.com/v/23544?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 
@@ -77,4 +77,4 @@ Använd komponentgrupper för att göra satsvis komponenttillägg i din virtuell
 
 ## Workspace Behavior {#section_6C32F8B642804C0097FCB14E21028D4A}
 
-Mer information om kurering i Analysis Workspace finns i [Kuratera och dela ett projekt](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/curate.html?lang=sv-SE).
+Mer information om kurering i Analysis Workspace finns i [Kuratera och dela ett projekt](/help/analyze/analysis-workspace/curate-share/curate.md).

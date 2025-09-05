@@ -3,7 +3,7 @@ title: Kärndimensioner för direktuppspelande medietjänster
 description: Tillgängliga dimensioner när du aktiverar [!UICONTROL Media Core] för en rapportserie.
 feature: Dimensions
 exl-id: 1316a646-a31a-49a4-a670-d56d90dd462b
-source-git-commit: 7609ecb3c34fb0bc8293fc1ecd409cfabb327295
+source-git-commit: a6967c7d4e1dca5491f13beccaa797167b503d6e
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 1%
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 De viktigaste dimensionerna för direktuppspelande medietjänster ger grundläggande rapporteringsfunktioner för data som samlas in via bibliotek för direktuppspelande medietjänster. Användningen av de här dimensionerna kräver **[!UICONTROL Adobe Analytics for Streaming Media Ad-on]**. Kontakta Adobe Account Team för mer information.
 
-När du aktiverar **[!UICONTROL Media Core]** under [Medierapportering](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/media-management.md) är följande dimensioner tillgängliga:
+När du aktiverar **[!UICONTROL Media Core]** under [Medierapportering](/help/admin/tools/manage-rs/edit-settings/media-management.md) är följande dimensioner tillgängliga:
 
 | Dimension name | Beskrivning | Skickat med | Sammanhangsdatavariabel |
 | --- | --- | --- | --- |

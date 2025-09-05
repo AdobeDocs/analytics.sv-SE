@@ -1,12 +1,12 @@
 ---
-description: Report Builder 5.2 har stöd för Adobe Analytics Unified Calculated Metrics. Bland andra innovationer har alla beräknade värden nu ett globalt ID - de är inte längre begränsade till ett rapportpaket.
+description: Report Builder 5.2 stöder Adobe Analytics Unified Calculated Metrics. Bland andra innovationer har alla beräknade värden nu ett globalt ID - de är inte längre begränsade till ett rapportpaket.
 title: Beräknade mått
 feature: Report Builder
 role: User, Admin
 exl-id: 462086eb-675f-443c-b3a6-b4fa390254da
-source-git-commit: fcecc8a493852f5682fd7fbd5b9bb484a850922c
+source-git-commit: 325a42c080290509309e90c9127138800d5ac496
 workflow-type: tm+mt
-source-wordcount: '396'
+source-wordcount: '395'
 ht-degree: 6%
 
 ---
@@ -19,15 +19,15 @@ Report Builder 5.2 och senare stöder Adobe Analytics beräknade värden. Alla b
 
 >[!NOTE]
 >
->Befintliga arbetsböcker kan peka på begäranden med äldre metriska ID:n. När du använder Report Builder 5.2 konverteras dessa äldre mätnings-ID:n till det nya globala ID:t. Om du delar den här arbetsboken med en användare av Report Builder v5.1 eller tidigare, kan den användaren inte se de beräknade måtten.
+>Befintliga arbetsböcker kan peka på begäranden med äldre metriska ID:n. När du använder Report Builder 5.2 konverteras dessa gamla metriska ID:n till det nya globala ID:t. Om du delar den här arbetsboken med en användare av Report Builder v5.1 eller tidigare, kan den användaren inte se de beräknade måtten.
 
-Om du vill veta mer om hur du skapar och hanterar beräknade mått med nya Calculated Metric Builder och Manager kan du läsa [Calculated Metrics](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/cm-overview.html?lang=sv-SE) Guide.
+Om du vill veta mer om hur du skapar och hanterar beräknade mått med nya Calculated Metric Builder och Manager kan du läsa [Calculated Metrics](/help/components/calculated-metrics/cm-overview.md) Guide.
 
 I steg 2 i begärandeguiden kan du filtrera och använda beräknade värden.
 
 ## Filtrera beräknade värden {#section_376E986D3E684999A7CDB08E53854159}
 
-**Filtrera** beräknade mätvärden genom att klicka på filterikonen: ![Skärmbild av filteralternativen som visar fälten Program, Användare och Projekt.](/help/admin/admin/assets/filter.png)
+**Filtrera** beräknade mätvärden genom att klicka på filterikonen: ![Skärmbild av filteralternativen som visar fälten Program, Användare och Projekt.](/help/admin/tools/assets/filter.png)
 
 Dialogrutan Avancerade filter innehåller både standardvärden och beräknade värden.
 

@@ -3,7 +3,7 @@ title: VISTA-regler i Adobe Analytics
 description: Läs mer om VISTA-regler och deras funktioner.
 exl-id: fab2acc3-b037-48f9-bb20-625ccb75b4cc
 feature: Analytics Basics
-source-git-commit: c2adf6d2e328378332cc290ba2dfd75ee6587ef6
+source-git-commit: a6967c7d4e1dca5491f13beccaa797167b503d6e
 workflow-type: tm+mt
 source-wordcount: '263'
 ht-degree: 0%
@@ -17,12 +17,12 @@ VISTA-regler är en alternativ form av anpassad dataändring som du kan använda
 Några vanliga användningsområden för VISTA-reglerna är:
 
 * Kopiera en Analytics-träff från en rapportserie till en annan, och ändra data till den kopierade rapportsviten om du vill
-* Anpassat IP-undantag som överskrider de användningsfall som erbjuds av [Uteslut av IP](/help/admin/admin/exclude-ip.md)
+* Anpassat IP-undantag som överskrider de användningsfall som erbjuds av [Uteslut av IP](/help/admin/tools/exclude-ip.md)
 * Ändra ett variabelvärde villkorligt eller globalt
 * Duplicera variabelvärden till andra variabler
 * Överför filer till en Adobe FTP-plats som kan påverka variabelvärden
 
-Många användningsexempel för VISTA-regler finns redan i [Bearbetningsregler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/processing-rules/pr-overview.md), [PUNKTSREGLER](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/bot-removal/bot-rules.md), [Virtuella rapportsviter](/help/components/vrs/vrs-about.md) eller bara när du uppdaterar din Adobe Analytics-implementering. Adobe rekommenderar endast VISTA-regler som en sista utväg.
+Många användningsexempel för VISTA-regler finns redan i [Bearbetningsregler](/help/admin/tools/manage-rs/edit-settings/general/processing-rules/pr-overview.md), [PUNKTSREGLER](/help/admin/tools/manage-rs/edit-settings/general/bot-removal/bot-rules.md), [Virtuella rapportsviter](/help/components/vrs/vrs-about.md) eller bara när du uppdaterar din Adobe Analytics-implementering. Adobe rekommenderar endast VISTA-regler som en sista utväg.
 
 >[!IMPORTANT]
 >

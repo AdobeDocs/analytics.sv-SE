@@ -3,7 +3,7 @@ title: Postnummer
 description: Besökarens postnummer.
 feature: Dimensions
 exl-id: 597619f8-a581-4491-beb2-c14b1f7b7bec
-source-git-commit: e32821dd3f30404166554b8437c508172e4764e5
+source-git-commit: a6967c7d4e1dca5491f13beccaa797167b503d6e
 workflow-type: tm+mt
 source-wordcount: '262'
 ht-degree: 0%
@@ -21,16 +21,16 @@ Denna dimension är unik eftersom den innehåller flera sätt att fylla den med 
 * Ange postnumret direkt med variabeln `zip`, eller
 * Konfigurera den för att hämta data från geopositionering.
 
-[!UICONTROL Zip option] under [Allmänna kontoinställningar](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/general-acct-settings-admin.md) styr hur du vill fylla i den här dimensionen.
+[!UICONTROL Zip option] under [Allmänna kontoinställningar](/help/admin/tools/manage-rs/edit-settings/general/general-acct-settings-admin.md) styr hur du vill fylla i den här dimensionen.
 
 Om du väljer att använda ett alternativ som inbegriper geo zip:
 
-* För implementeringar av AppMeasurement fungerar den här dimensionen som standard.
-* Aktivera [!UICONTROL Geo Lookup] när [konfigurerar ett datastream](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=sv-SE) för Web SDK-implementeringar.
+* För AppMeasurement-implementationer fungerar den här dimensionen som den ska.
+* Aktivera [!UICONTROL Geo Lookup] när [konfigurerar ett datastream](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html) för Web SDK-implementeringar.
 
-## Dimensioner
+## Dimension-objekt
 
-Dimensionen innehåller besökarens postnummer.
+I Dimension ingår besökarens postnummer.
 
 ## Postnummerländer som stöds
 

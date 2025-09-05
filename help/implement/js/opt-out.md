@@ -6,7 +6,7 @@ exl-id: 08b8c7cc-28c6-45e3-ab44-77471eea8ef1
 hide: true
 hidefromtoc: true
 role: Developer
-source-git-commit: 48f1974a0c379a4e619d9a04ae80e43cce9527c1
+source-git-commit: a6967c7d4e1dca5491f13beccaa797167b503d6e
 workflow-type: tm+mt
 source-wordcount: '579'
 ht-degree: 0%
@@ -18,17 +18,17 @@ ht-degree: 0%
 >[!IMPORTANT]
 >
 > I den här artikeln beskrivs hur **Adobe Analytics-kunder som (planerar att) implementera Adobe Analytics** på sin webbplats får instruktioner om hur de kan erbjuda webbplatsanvändare avanmälningslänkar. <p><p>
-> Om du **besöker en webbplats som har implementerat Adobe Analytics** och du vill avanmäla dig **<span style="color:red">är den här artikeln INTE till dig</span>**. Se [Sekretessalternativ för Adobe](https://www.adobe.com/privacy/opt-out.html) för att kontrollera hur Adobe använder dina uppgifter.
+<p>-ERR:REF-NOT-FOUND-<p>-ERR:REF-NOT-FOUND-> Om du **besöker en webbplats som har implementerat Adobe Analytics** och du vill avanmäla dig **<span style="color:red">är den här artikeln INTE till dig</span>**. Se [Adobe sekretessalternativ](https://www.adobe.com/privacy/opt-out.html) för att kontrollera hur Adobe använder dina uppgifter.
 
-Vissa besökare på din webbplats föredrar att inte ha sin surfinformation med i din datauppsättning. Adobe erbjuder möjlighet att ge besökare på er webbplats möjlighet att avanmäla sig från den information de analyserar.
+Vissa besökare på din webbplats föredrar att inte ha sin surfinformation med i din datauppsättning. Adobe ger besökarna möjlighet att avanmäla sig från den information de analyserar.
 
-Avanmäl länkar är ett sätt som gör att besökare på webbplatsen kan utelämna sina data från Analytics-rapporter. Länkarna är begränsade till AppMeasurementen implementeringar. Adobe rekommenderar att du använder [Adobe Experience Cloud-tjänsten ](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/optin-overview.html?lang=sv-SE) i stället. Opt-in-tjänsten är stabilare och fungerar på flera Adobe Experience Cloud-produkter, inklusive Adobe Analytics och AppMeasurement.
+Avanmäl länkar är ett sätt som gör att besökare på webbplatsen kan utelämna sina data från Analytics-rapporter. Länkarna är begränsade till AppMeasurement-implementeringar. Adobe rekommenderar att du använder [Adobe Experience Cloud-tjänsten](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/optin-overview.html) i stället. Opt-in-tjänsten är stabilare och fungerar på flera Adobe Experience Cloud-produkter, inklusive Adobe Analytics och AppMeasurement.
 
-När en besökare når en avanmälnings-URL uppmanas de att installera en avanmälnings-cookie. Om en användare väljer att inte spåras och en avanmälningscookie är inställd fortsätter AppMeasurementet att skicka data till Adobe. Dessa data behandlas dock inte och inkluderas inte i rapporter.
+När en besökare når en avanmälnings-URL uppmanas de att installera en avanmälnings-cookie. Om en användare väljer att inte spåras och en cookie för att avanmäla sig har angetts, fortsätter AppMeasurement att skicka data till Adobe. Dessa data behandlas dock inte och inkluderas inte i rapporter.
 
 >[!TIP]
 >
->Adobe erbjuder även sekretessinställningar per rapport. Se [Sekretessinställningar](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/privacy-settings.md) i användarhandboken för Admin.
+>Adobe erbjuder även sekretessinställningar per rapport. Se [Sekretessinställningar](/help/admin/tools/manage-rs/edit-settings/general/privacy-settings.md) i användarhandboken för Admin.
 
 ## URL för avanmälan
 
@@ -44,7 +44,7 @@ Avanmälningssidan för din organisation beror på variabelvärdet [`trackingSer
    1. På webbservern öppnar du filen AppMeasurement.js som används på webbplatsen i en kod- eller textredigerare.
    1. Observera variabelvärdet `trackingServer`.
 
-* Använda [Adobe Experience Cloud Debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html?lang=sv-SE):
+* Använda [Adobe Experience Cloud Debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html):
    1. Navigera till webbplatsen med Chrome webbläsare.
    1. Öppna Experience Cloud Debugger och gå till [!UICONTROL Network tab].
    1. Observera värdet [!UICONTROL Request URL - Hostname].

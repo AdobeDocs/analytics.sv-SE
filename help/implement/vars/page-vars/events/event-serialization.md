@@ -4,7 +4,7 @@ description: Ta bort dubbletter av mätvärden på webbplatsen.
 feature: Appmeasurement Implementation
 exl-id: 54de0fd7-9056-44af-bd59-b8eb55fc816e
 role: Admin, Developer
-source-git-commit: 665bd68d7ebc08f0da02d93977ee0b583e1a28e6
+source-git-commit: a6967c7d4e1dca5491f13beccaa797167b503d6e
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 0%
@@ -21,7 +21,7 @@ Händelseserialisering är processen att implementera åtgärder för att förhi
 
 ## Konfigurera händelseserialisering
 
-Du måste först ange en händelses [!UICONTROL Unique Event Recording] till [!UICONTROL Use Event ID] i inställningarna för rapportsviten. Se [Slutförda händelser](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/c-success-events/success-event.md) i användarhandboken för Admin.
+Du måste först ange en händelses [!UICONTROL Unique Event Recording] till [!UICONTROL Use Event ID] i inställningarna för rapportsviten. Se [Slutförda händelser](/help/admin/tools/manage-rs/edit-settings/conversion-var-admin/c-success-events/success-event.md) i användarhandboken för Admin.
 
 När du använder händelse-ID:n utförs borttagning av dubbletter på följande nivåer:
 
@@ -48,7 +48,7 @@ Du kan ange fältet för händelse-ID när du konfigurerar Analytics-tillägget 
 1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med dina inloggningsuppgifter för AdobeID.
 2. Klicka på den önskade taggegenskapen.
 3. Gå till fliken [!UICONTROL Rules] och klicka sedan på önskad regel (eller skapa en regel).
-4. Klicka på en befintlig [!UICONTROL Adobe Analytics - Set Variables]-åtgärd under [!UICONTROL Actions] eller klicka på +-ikonen.
+4. Klicka på en befintlig [!UICONTROL Actions]-åtgärd under [!UICONTROL Adobe Analytics - Set Variables] eller klicka på +-ikonen.
 5. Ange Adobe Analytics i listrutan [!UICONTROL Extension] och [!UICONTROL Action Type] till [!UICONTROL Set Variables].
 6. Leta upp avsnittet [!UICONTROL Events] där varje händelse innehåller ett [!UICONTROL Event ID]-fält.
 

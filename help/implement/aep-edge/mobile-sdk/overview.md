@@ -4,7 +4,7 @@ description: Använd mobiltillägget SDK i Adobe Experience Platform Data Collec
 exl-id: 516e9a1e-caa7-4f8a-ab8c-6404e9242ccb
 feature: Implementation Basics
 role: Admin, Developer, Leader
-source-git-commit: 8b585a1a05b5fcabd343da52a4b6f05fea8fd86f
+source-git-commit: a6967c7d4e1dca5491f13beccaa797167b503d6e
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 3%
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 # Implementera Adobe Analytics med Adobe Experience Platform Mobile SDK
 
-Adobe Experience Platform Mobile SDK hjälper er att driva lösningar och tjänster från Adobe Experience Cloud i era mobilappar. Det finns för Android™, iOS och olika plattformsoberoende utvecklingsramverk. Konfigurationen hanteras med Adobe Experience Platform Data Collection.
+Adobe Experience Platform Mobile SDK hjälper er att driva Adobe Experience Cloud lösningar och tjänster i era mobilappar. Det finns för Android™, iOS och olika plattformsoberoende utvecklingsramverk. Konfigurationen hanteras med Adobe Experience Platform Data Collection.
 
 >[!IMPORTANT]
 >
@@ -34,18 +34,18 @@ Adobe Experience Platform Mobile SDK hjälper er att driva lösningar och tjäns
 <tr>
 <td>1</td>
 <td>Se till att du har <b>definierat en rapportserie</b>.</td>
-<td><a href="../../../admin/admin/c-manage-report-suites/report-suites-admin.md">Report Suite Manager</a></td>
+<td><a href="../../../admin/tools/manage-rs/report-suites-admin.md">Report Suite Manager</a></td>
 </tr>
 
 <tr>
 <td>2</td>
 <td><b>Konfigurera en datastream</b>. En datastream representerar konfigurationen på serversidan när Adobe Experience Platform Web SDK implementeras.</td>
-<td><a href="https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=sv-SE">Konfigurera ett datastream<a></td> 
+<td><a href="https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html">Konfigurera ett datastream<a></td> 
 </tr>
 
 <td>3</td>
 <td><b>Lägg till en Adobe Analytics-tjänst</b> i ditt datastream. Tjänsten styr om och hur data skickas till Adobe Analytics.</td>
-<td><a href="https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=sv-SE#analytics">Lägg till Adobe Analytics-tjänst i ett datastream</a></td>
+<td><a href="https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html#analytics">Lägg till Adobe Analytics-tjänst i ett datastream</a></td>
 </tr>
 
 <tr>
@@ -55,7 +55,7 @@ Adobe Experience Platform Mobile SDK hjälper er att driva lösningar och tjäns
 
 <tr>
 <td>5</td>
-<td><b>Installera tillägget Adobe Experience Platform Edge Network</b> i egenskapen mobile tag och konfigurera datastream i tillägget.</td>
+<td><b>Installera Adobe Experience Platform Edge Network-tillägget</b> i mobiltaggegenskapen och konfigurera datastream i tillägget.</td>
 <td><a href="https://developer.adobe.com/client-sdks/documentation/edge-network/">Adobe Experience Platform Edge Network</a>
 </tr>
 
@@ -67,7 +67,7 @@ Adobe Experience Platform Mobile SDK hjälper er att driva lösningar och tjäns
 
 <tr>
 <td>7</td>
-<td><b>Implementera och testa funktioner</b> med en kombination av taggens dataelement, regler, ytterligare tillägg och SDK API-anrop i din app. Inspect, validera och felsök datainsamling och upplevelser för er mobilapplikation.</td>
+<td><b>Implementera och testa funktioner</b> med en kombination av taggens dataelement, regler, ytterligare tillägg och SDK API-anrop i din app. Inspektera, validera och felsök datainsamling och upplevelser för mobilapplikationen.</td>
 <td><a href="https://developer.adobe.com/client-sdks/documentation/user-guides/getting-started-with-platform/overview/#use-the-sample-application">Använd exempelprogrammet</a>
 </tr>
 
@@ -95,7 +95,7 @@ Adobe Experience Platform Mobile SDK hjälper er att driva lösningar och tjäns
 <tr>
 <td>1</td>
 <td>Se till att du har <b>definierat en rapportserie</b>.</td>
-<td><a href="../../../admin/admin/c-manage-report-suites/report-suites-admin.md">Report Suite Manager</a></td>
+<td><a href="../../../admin/tools/manage-rs/report-suites-admin.md">Report Suite Manager</a></td>
 </tr>
 
 <tr>
@@ -112,7 +112,7 @@ Adobe Experience Platform Mobile SDK hjälper er att driva lösningar och tjäns
 
 <tr>
 <td>4</td>
-<td><b>Implementera och testa funktioner</b> med en kombination av taggens dataelement, regler, ytterligare tillägg och SDK API-anrop i din app. Inspect, validera och felsök datainsamling och upplevelser för er mobilapplikation.</td>
+<td><b>Implementera och testa funktioner</b> med en kombination av taggens dataelement, regler, ytterligare tillägg och SDK API-anrop i din app. Inspektera, validera och felsök datainsamling och upplevelser för mobilapplikationen.</td>
 <td><a href="https://developer.adobe.com/client-sdks/documentation/user-guides/getting-started-with-platform/overview/#use-the-sample-application">Använd exempelprogrammet</a>
 </tr>
 
@@ -126,6 +126,6 @@ Adobe Experience Platform Mobile SDK hjälper er att driva lösningar och tjäns
 
 ## Ytterligare resurser
 
-- [Dokumentation för taggar](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=sv-SE#)
+- [Dokumentation för taggar](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html#)
 
 - [Mobile SDK-dokumentation](https://developer.adobe.com/client-sdks/documentation/)

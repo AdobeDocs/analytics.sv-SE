@@ -4,9 +4,9 @@ title: Segmentöversikt
 feature: Segmentation
 role: User, Admin
 exl-id: 67112e13-4d0a-4d77-be50-496c3d28779c
-source-git-commit: bf8bc40e3ec325e8e70081955fb533eee66a1734
+source-git-commit: 665319bdfc4c1599292c2e7aea45622d77a291a7
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '304'
 ht-degree: 0%
 
 ---
@@ -20,8 +20,8 @@ Du kan skapa och använda segment i Analysis Workspace och Customer Journey Anal
 | --- | --- | --- | --- |
 | Segment i komponentlista | [Skapa ett segment](/help/components/segmentation/segmentation-workflow/seg-create.md). | Alla dina Workspace-projekt | För mer komplexa segment, sekventiella segment |
 | Snabbsegment | [Skapa snabbsegment](/help/analyze/analysis-workspace/components/segments/quick-segments.md) | Endast projekt, men du kan spara och lägga till i segmentlistan. | Kan användas för segment med en regel (med dra och släpp) eller för att lägga till/redigera flera regler (genom att klicka på segmentikonen) |
-| Beräknat mätningsbaserat segment | [Bygg beräknade mätvärden](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/metrics-with-segments.html?lang=sv-SE) | Till individuellt beräknat mått | Använd segment i måttdefinitionen |
-| Virtuellt rapportsuite-baserat segment | [Virtuell Report Suite Builder](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-workflow/vrs-create.html?lang=sv-SE) | Till enskild virtuell rapportsvit | Använd segment i definitionen för den virtuella rapportsviten |
+| Beräknat mätningsbaserat segment | [Bygg beräknade mätvärden](/help/components/calculated-metrics/workflow/c-build-metrics/metrics-with-segments.md) | Till individuellt beräknat mått | Använd segment i måttdefinitionen |
+| Virtuellt rapportsuite-baserat segment | [Virtuell Report Suite Builder](/help/components/vrs/c-workflow-vrs/vrs-create.md) | Till enskild virtuell rapportsvit | Använd segment i definitionen för den virtuella rapportsviten |
 
 ## Videor
 

@@ -3,16 +3,16 @@ title: Bästa tillvägagångssätt för att implementera Adobe Analytics Marketi
 description: Uppdaterade rutiner för att använda marknadsföringskanaler med Attribution och Customer Journey Analytics
 feature: Marketing Channels
 exl-id: a0ab818d-7165-4f34-bc43-1ed8d6215800
-source-git-commit: 16fdad50b9d63bc6db07347c6ec91fb0d2df5722
+source-git-commit: a6967c7d4e1dca5491f13beccaa797167b503d6e
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '587'
 ht-degree: 0%
 
 ---
 
 # Attribuering med marknadsföringskanaler - bästa praxis
 
-[Marknadskanaler](/help/components/c-marketing-channels/c-getting-started-mchannel.md) är en värdefull och kraftfull funktion i Adobe Analytics. Den aktuella vägledningen för implementering av marknadsföringskanal formulerades när varken [Attribution](/help/analyze/analysis-workspace/attribution/overview.md) eller [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html?lang=sv-SE#cja-usecases) fanns.
+[Marknadskanaler](/help/components/c-marketing-channels/c-getting-started-mchannel.md) är en värdefull och kraftfull funktion i Adobe Analytics. Den aktuella vägledningen för implementering av marknadsföringskanal formulerades när varken [Attribution](/help/analyze/analysis-workspace/attribution/overview.md) eller [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html#cja-usecases) fanns.
 
 För att framtidssäkra implementeringen av era marknadsföringskanaler och säkerställa att det finns en konsekvens i rapporteringen med Attribution och Customer Journey Analytics, håller vi på att ta fram en uppsättning uppdaterade metodtips. Om du redan använder marknadsföringskanaler kan du välja de bästa alternativen bland dessa nya riktlinjer. Om ni inte har använt Marketing Channels tidigare rekommenderar vi att ni följer alla nya bästa metoder.
 
@@ -28,13 +28,13 @@ Vi rekommenderar att du använder [Attribution](/help/analyze/analysis-workspace
 
 * Konfigurationen av dimensionerna Marketing Channel och Marketing Channel Detail fastställer kontaktytor som ska utvärderas, som motsvarar varje instans av marknadsföringskanalen.
 * Vid mätanalys bör organisationen anpassa sig till en eller flera attribueringsmodeller. Spara anpassade mätvärden med den här modellen för enkel återanvändning.
-* Som standard tilldelas data med hjälp av Senaste beröring och inställningen för besökaravtalsperioden. Attributionsmåttsmodeller ger större kontroll över uppslagsfönstren och fler varianter, inklusive [algoritmisk attribuering](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/attribution/algorithmic.html?lang=sv-SE#analysis-workspace).
+* Som standard tilldelas data med hjälp av Senaste beröring och inställningen för besökaravtalsperioden. Attributionsmåttsmodeller ger större kontroll över uppslagsfönstren och fler varianter, inklusive [algoritmisk attribuering](/help/analyze/analysis-workspace/attribution/algorithmic.md#analysis-workspace).
 
 ## Bästa praxis nr 2: Inga kanaldefinitioner för direkt- och sessionsuppdatering
 
 Direkta och interna uppdateringskanaler/sessioner rekommenderas inte för användning med anpassade attribueringsmodeller.
 
-Vad händer om din organisation redan har Direct- och Session Refresh konfigurerat? I det här fallet rekommenderar vi att du [skapar en klassificering](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/marketing-channels/classifications-mchannel.md) för First Touch/Last Touch och låter kanalerna Direct- och Session Refresh vara oklassificerade. Den klassificerade dimensionen ger samma attribueringsresultat som om kanalerna aldrig hade konfigurerats.
+Vad händer om din organisation redan har Direct- och Session Refresh konfigurerat? I det här fallet rekommenderar vi att du [skapar en klassificering](/help/admin/tools/manage-rs/edit-settings/marketing-channels/classifications-mchannel.md) för First Touch/Last Touch och låter kanalerna Direct- och Session Refresh vara oklassificerade. Den klassificerade dimensionen ger samma attribueringsresultat som om kanalerna aldrig hade konfigurerats.
 
 ![](assets/direct-session-refresh.png)
 

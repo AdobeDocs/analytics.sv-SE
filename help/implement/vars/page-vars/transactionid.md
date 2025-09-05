@@ -4,7 +4,7 @@ description: Använd den här variabeln för att länka samman online- och offli
 feature: Appmeasurement Implementation
 exl-id: 525e90d8-99a7-4f4f-9bce-1395bf72fd8f
 role: Admin, Developer
-source-git-commit: fc52bfaa13f7fc93ef53aa49746d432676b3d55f
+source-git-commit: a6967c7d4e1dca5491f13beccaa797167b503d6e
 workflow-type: tm+mt
 source-wordcount: '389'
 ht-degree: 0%
@@ -17,7 +17,7 @@ Variabeln `transactionID` identifierar en transaktion unikt så att träffen kan
 
 >[!NOTE]
 >
->Kontrollera att [!UICONTROL Transaction ID Storage] är aktiverat i en rapportserie innan du använder den här variabeln. Mer information finns i [Allmänna kontoinställningar](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/general-acct-settings-admin.md) i användarhandboken för Admin.
+>Kontrollera att [!UICONTROL Transaction ID Storage] är aktiverat i en rapportserie innan du använder den här variabeln. Mer information finns i [Allmänna kontoinställningar](/help/admin/tools/manage-rs/edit-settings/general/general-acct-settings-admin.md) i användarhandboken för Admin.
 
 När du anger `transactionID` för en träff tar Adobe en ögonblicksbild av alla analysvariabler som angetts eller sparats vid den tidpunkten. I [Datakällor för transaktions-ID](/help/import/data-sources/transactionid.md) finns en lista med dimensioner som ingår i ögonblicksbilden. Adobe kommer ihåg alla transaktions-ID-värden (länkade och olänkade) i upp till 25 månader.
 

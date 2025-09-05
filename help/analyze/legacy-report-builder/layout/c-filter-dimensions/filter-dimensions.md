@@ -5,7 +5,7 @@ uuid: c54d5add-f278-476d-8f14-73f1c2e37671
 feature: Report Builder
 role: User, Admin
 exl-id: eded07d5-3c06-419b-92fd-1a48856ac293
-source-git-commit: fcecc8a493852f5682fd7fbd5b9bb484a850922c
+source-git-commit: e09234ca27fbf923e026aa1f2ed0ebfed636bf7c
 workflow-type: tm+mt
 source-wordcount: '446'
 ht-degree: 7%
@@ -24,7 +24,7 @@ Det valda filterformuläret fylls i baserat på det element och mått som valts 
 
 Information om filter i panelen **[!UICONTROL Most Popular Filter]** > **[!UICONTROL Define Filter]**.
 
-![Skärmbild som visar dialogrutan Definiera filter med alternativ för att filtrera efter program, användare och projekt.](/help/admin/admin/assets/filter.png)
+![Skärmbild som visar dialogrutan Definiera filter med alternativ för att filtrera efter program, användare och projekt.](/help/admin/tools/assets/filter.png)
 
 Följande tabeller innehåller exempel och information om filter:
 

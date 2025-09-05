@@ -3,7 +3,7 @@ title: Senaste beröringskanaldetalj
 description: Information om den senaste marknadsföringskanalen inom besökarens förfallotid för engagemang.
 feature: Dimensions
 exl-id: def03267-f3e5-4772-a707-5678c45eba6d
-source-git-commit: d095628e94a45221815b1d08e35132de09f5ed8f
+source-git-commit: a6967c7d4e1dca5491f13beccaa797167b503d6e
 workflow-type: tm+mt
 source-wordcount: '321'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ## Fyll den här dimensionen med data
 
-Den här dimensionen kopierar värden från andra variabler. Variabeln som används refererar till kanalvärdet inom varje [regel för bearbetning av marknadsföringskanal](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/marketing-channels/c-rules.md). När en träff matchar en regel för bearbetning av marknadsföringskanal ställs dimensionen [Senaste beröringskanal](last-touch-channel.md) in på kanalnamnet, och den här dimensionen ställs in på kanalvärdet som angetts i regeln.
+Den här dimensionen kopierar värden från andra variabler. Variabeln som används refererar till kanalvärdet inom varje [regel för bearbetning av marknadsföringskanal](/help/admin/tools/manage-rs/edit-settings/marketing-channels/c-rules.md). När en träff matchar en regel för bearbetning av marknadsföringskanal ställs dimensionen [Senaste beröringskanal](last-touch-channel.md) in på kanalnamnet, och den här dimensionen ställs in på kanalvärdet som angetts i regeln.
 
 Om du vill ställa in dimensionen på ett specifikt värde måste du utföra följande steg:
 
@@ -25,8 +25,8 @@ Om du vill ställa in dimensionen på ett specifikt värde måste du utföra fö
 * Välj önskat värde i listrutan under [!UICONTROL Set the channel's value] i regeln för bearbetning av marknadsföringskanal.
 * Besökarens träff på webbplatsen måste matcha de villkor som anges i regeln för bearbetning av marknadsföringskanal.
 
-## Dimensioner
+## Dimension-objekt
 
-Dimensioner beror på vilket kanalvärde som anges i listrutan för den tillämpliga regeln för hantering av marknadsföringskanaler. Om du t.ex. anger kanalens värde som &quot;Sidadress&quot;, inkluderar dimensionsobjekten sidadresser på din webbplats. Om du anger kanalens värde till Referensdomän inkluderar dimensionsobjekten domäner som besökare klickade igenom för att komma till din webbplats. Denna dimension samlar alla detaljdimensionsobjekt, oavsett vilken kanal de finns i.
+Dimension-objekt beror på vilket kanalvärde som anges i listrutan för den tillämpliga regeln för hantering av marknadsföringskanaler. Om du t.ex. anger kanalens värde som &quot;Sidadress&quot;, inkluderar dimensionsobjekten sidadresser på din webbplats. Om du anger kanalens värde till Referensdomän inkluderar dimensionsobjekten domäner som besökare klickade igenom för att komma till din webbplats. Denna dimension samlar alla detaljdimensionsobjekt, oavsett vilken kanal de finns i.
 
-Adobe rekommenderar att kanalvärden för marknadsföringskanalen ställs in för att få kunskap om kanaldetaljer.
+Adobe rekommenderar att du ställer in kanalvärden för marknadsföringskanalen för att få information om kanaldetaljer.

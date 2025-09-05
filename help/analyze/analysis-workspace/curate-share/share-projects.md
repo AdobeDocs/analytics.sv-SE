@@ -5,9 +5,9 @@ title: Dela projekt
 feature: Curate and Share
 role: User, Admin
 exl-id: da106eb1-7f5c-469a-a8aa-8497fc3706dc
-source-git-commit: 41d067ab852f4eb5c4a1368ade364fdb706bb9d9
+source-git-commit: a6967c7d4e1dca5491f13beccaa797167b503d6e
 workflow-type: tm+mt
-source-wordcount: '1891'
+source-wordcount: '1889'
 ht-degree: 0%
 
 ---
@@ -60,9 +60,9 @@ Du kan dela en specifik roll med användare eller grupper eller dela en länk.
 
 När du delar en specifik projektroll med användare och grupper i organisationen bör du tänka på följande:
 
-* Projektroller (**[!UICONTROL Edit original]**, **[!UICONTROL Edit copy]** och **[!UICONTROL Read only]**) är kopplade till användaren och ett specifikt projekt-ID. Projektroller är oberoende av användarbehörigheter som hanteras i [Adobe Experience Cloud Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html?lang=sv-SE).
+* Projektroller (**[!UICONTROL Edit original]**, **[!UICONTROL Edit copy]** och **[!UICONTROL Read only]**) är kopplade till användaren och ett specifikt projekt-ID. Projektroller är oberoende av användarbehörigheter som hanteras i [Adobe Experience Cloud Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html).
 
-* I Adobe Analytics definieras grupper av produktprofiler i [Adobe Experience Cloud Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html?lang=sv-SE). Administratörer kan dela till vilken grupp som helst, inklusive&quot;Alla&quot;. Icke-administratörer kan dela till alla grupper som de är medlemmar i, med undantag för&quot;Alla&quot;.
+* I Adobe Analytics definieras grupper av produktprofiler i [Adobe Experience Cloud Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html). Administratörer kan dela till vilken grupp som helst, inklusive&quot;Alla&quot;. Icke-administratörer kan dela till alla grupper som de är medlemmar i, med undantag för&quot;Alla&quot;.
 
 * En användare som placeras i flera roller får alltid den högsta upplevelsen. Detta kan inträffa om en användare läggs till både som en individ och som en del av en grupp. Om en användare till exempel får rollen **[!UICONTROL Edit original]** som individ och rollen **[!UICONTROL Read only]** som medlem i en grupp får han/hon en **[!UICONTROL Edit original]**-projekterfarenhet.
 
@@ -107,7 +107,7 @@ Om det finns ändringar som inte har sparats uppmanas du att spara projektet fö
 
    eller
 
-   Välj **[!UICONTROL Curate and Share]** om du vill använda projektkurering automatiskt. (Om projektet redan har delats väljer du **[!UICONTROL Curate & Update]**.) Läs mer om [projekturval](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/curate.html?lang=sv-SE).
+   Välj **[!UICONTROL Curate and Share]** om du vill använda projektkurering automatiskt. (Om projektet redan har delats väljer du **[!UICONTROL Curate & Update]**.) Läs mer om [projekturval](/help/analyze/analysis-workspace/curate-share/curate.md).
 
 ## Dela en länk till ett projekt
 
@@ -115,7 +115,7 @@ Tänk på följande när du delar en länk enligt beskrivningen i det här avsni
 
 * Mottagare som använder länken måste logga in på Adobe Analytics innan de kan komma åt projektet.
 
-* Om en mottagare inte har tilldelats en roll och får en [delbar länk](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/shareable-links.html?lang=sv-SE) till projektet får de som standard en roll. Administratörer får **[!UICONTROL Edit original]** och icke-administratörer får **[!UICONTROL Edit copy]**.
+* Om en mottagare inte har tilldelats en roll och får en [delbar länk](/help/analyze/analysis-workspace/curate-share/shareable-links.md) till projektet får de som standard en roll. Administratörer får **[!UICONTROL Edit original]** och icke-administratörer får **[!UICONTROL Edit copy]**.
 
 Så här delar du projektlänken med användare i din organisation:
 
@@ -157,7 +157,7 @@ Du kan ge [skrivskyddad åtkomst](/help/analyze/analysis-workspace/curate-share/
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dela en länk med vem som helst](https://video.tv.adobe.com/v/3452456?quality=12&learn=on&captions=swe){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dela en länk med vem som helst](https://video.tv.adobe.com/v/3420093?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 
@@ -176,7 +176,7 @@ Så här delar du ett Analysis Workspace-projekt med personer som inte har tillg
 
    Om du väljer det här alternativet skapas en länk till projektet som kan delas med alla. Du kan när som helst inaktivera åtkomsten till projektet genom att inaktivera det här alternativet.
 
-   Ägaren till projektet är också ägare till den här länken. Länkägarskap kan endast överföras till en annan användare när projektägarskap överförs, vilket beskrivs i [Överför användarresurser eller ange kontots förfallodatum](/help/admin/admin/user-management2/users-assets.md) i handboken för Analytics-administratörer.
+   Ägaren till projektet är också ägare till den här länken. Länkägarskap kan endast överföras till en annan användare när projektägarskap överförs, vilket beskrivs i [Överför användarresurser eller ange kontots förfallodatum](/help/admin/tools/user-management/users-assets.md) i handboken för Analytics-administratörer.
 
 1. Välj om du vill aktivera följande säkerhetsalternativ (det här alternativet kan styras av Analytics-administratören):
 
@@ -190,7 +190,7 @@ Så här delar du ett Analysis Workspace-projekt med personer som inte har tillg
 
       * Om det här alternativet är aktiverat och nedtonat kräver din Analytics-administratör Experience Cloud-autentisering för alla som använder Analysis Workspace-projekt.
 
-1. Klicka på ikonen **Kopiera länk** ![Kopiera länkikon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Link_18_N.svg) bredvid fältet **[!UICONTROL Share with anyone (no login required)]** för att kopiera länken till systemets Urklipp.
+1. Klicka på ikonen **[!UICONTROL Share with anyone (no login required)]** Kopiera länk **** Kopiera länkikon![ bredvid fältet ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Link_18_N.svg) för att kopiera länken till systemets Urklipp.
 
 1. Dela länken med de personer som du vill ska ha tillgång till projektet. Du kan till exempel klistra in länken i ett e-postmeddelande.
 

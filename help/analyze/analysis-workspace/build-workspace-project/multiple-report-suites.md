@@ -4,9 +4,9 @@ description: Lär dig hur du arbetar med flera rapportsviter i ett Analysis Work
 feature: Workspace Basics
 role: User, Admin
 exl-id: 0429ddd9-935f-44ef-ae1e-97bb02e6e2df
-source-git-commit: f258a1150a4bee11f5922d058930dc38b1ddfa14
+source-git-commit: 665319bdfc4c1599292c2e7aea45622d77a291a7
 workflow-type: tm+mt
-source-wordcount: '434'
+source-wordcount: '431'
 ht-degree: 0%
 
 ---
@@ -71,6 +71,6 @@ Den aktiva panelen känns igen av den ljusblå kanten runt den. Välj bara den p
 
 1. (Valfritt) Du kan också gå till andra komponentbyggare i Analytics och se till att de nu visar en etikett för rapportsviten som anger
 
-   * Var ett segment skapas: [Segmentbyggare](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-build.html?lang=sv-SE).
-   * Där ett beräknat mått skapas: [Beräknad metrisk byggare](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html?lang=sv-SE).
-   * Var en avisering byggs: [Varningsbyggaren](https://experienceleague.adobe.com/docs/analytics/components/alerts/alert-builder.html?lang=sv-SE).
+   * Var ett segment skapas: [Segmentbyggare](/help/components/segmentation/segmentation-workflow/seg-build.md).
+   * Där ett beräknat mått skapas: [Beräknad metrisk byggare](/help/components/calculated-metrics/workflow/c-build-metrics/cm-build-metrics.md).
+   * Var en avisering byggs: [Varningsbyggaren](/help/components/alerts/alert-builder.md).

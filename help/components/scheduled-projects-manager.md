@@ -3,7 +3,7 @@ description: Lär dig hantera schemalagda projekt.
 title: Schemalagda projekt
 feature: Admin Tools
 exl-id: 8bc8d983-f680-48fa-8483-694c87a9ae4c
-source-git-commit: 968560f8901bc593ef946278a460e502102f9f55
+source-git-commit: e09234ca27fbf923e026aa1f2ed0ebfed636bf7c
 workflow-type: tm+mt
 source-wordcount: '740'
 ht-degree: 0%
@@ -35,8 +35,8 @@ Listan ➊ med schemalagda projekt visar kolumner för:
 | **[!UICONTROL Frequency]** | Hur ofta du vill att schemaprojektet ska skickas till en eller flera mottagare. |
 | **[!UICONTROL Execution Time]** | Vid vilken tidpunkt på dagen det här schemalagda projektet skickas. |
 | **[!UICONTROL Number of Queries]** | Antalet frågor mot det här projektet. |
-| **[!UICONTROL Longest Date Range]** | Det längsta datumintervallet som har definierats för det schemalagda projektet. Det här värdet kan vara relevant för att undersöka prestandaproblem. Mer information finns i [Rapportera aktivitetshanteraren](/help/admin/admin/reporting-activity-manager/reporting-activity-overview.md). |
-| **[!UICONTROL Number of queries]** | Antalet frågor som har körts för det schemalagda projektet. Det här värdet kan vara relevant för att undersöka prestandaproblem. Mer information finns i [Rapportera aktivitetshanteraren](/help/admin/admin/reporting-activity-manager/reporting-activity-overview.md). |
+| **[!UICONTROL Longest Date Range]** | Det längsta datumintervallet som har definierats för det schemalagda projektet. Det här värdet kan vara relevant för att undersöka prestandaproblem. Mer information finns i [Rapportera aktivitetshanteraren](/help/admin/tools/reporting-activity-manager/reporting-activity-overview.md). |
+| **[!UICONTROL Number of queries]** | Antalet frågor som har körts för det schemalagda projektet. Det här värdet kan vara relevant för att undersöka prestandaproblem. Mer information finns i [Rapportera aktivitetshanteraren](/help/admin/tools/reporting-activity-manager/reporting-activity-overview.md). |
 
 
 Du kan använda ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) för att konfigurera vilka kolumner som ska visas.

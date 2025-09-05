@@ -4,9 +4,9 @@ short-description: Lär dig viktiga funktioner, vanliga användningsexempel och 
 title: Adobe Analytics - översikt
 feature: Analytics Basics
 exl-id: ac8c00a7-3652-4ac4-a294-5b626472215c
-source-git-commit: 08e29da4847e8ef70bd4435949e26265d770f557
+source-git-commit: fcc165536d77284e002cb2ba6b7856be1fdb3e14
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '458'
 ht-degree: 11%
 
 ---
@@ -41,13 +41,13 @@ Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Introduktion till
 >[!ENDSHADEBOX]
 
 
-Mer information om vilket verktyg som ska användas finns i [Vilket Adobe Analytics-verktyg ska jag använda?](https://experienceleague.adobe.com/docs/analytics/analyze/admin-overview/which-analytics-tool.html?lang=sv-SE).
+Mer information om vilket verktyg som ska användas finns i [Vilket Adobe Analytics-verktyg ska jag använda?](/help/analyze/get-started/which-analytics-tool.md).
 
-## Gå längre med Customer Journey Analytics
+## Gå ett steg längre med Customer Journey Analytics
 
 Customer Journey Analytics är Adobe nästa generation av Analytics-lösning som gör att ni kan använda kraften i Analysis Workspace med data från Adobe Experience Platform. Den kan bryta ned, filtrera, ställa frågor och visualisera årens datavärde och kombineras med plattformens möjlighet att lagra alla typer av datamappningar och datatyper.
 
-Nedan följer några av fördelarna med Customer Journey Analytics framför Adobe Analytics:
+Nedan följer några av fördelarna med Customer Journey Analytics jämfört med Adobe Analytics:
 
 * **Obegränsade variabler och händelser**: Begreppen eVars, props och events finns inte längre. Data fokuseras främst på dimensioner och mätvärden. Datauppsättningar kan ha ett obegränsat antal unika mått och mätvärden.
 
@@ -57,4 +57,4 @@ Nedan följer några av fördelarna med Customer Journey Analytics framför Adob
 
 * **Data för tvärrapporteringsprogram**: Befintliga implementeringar från flera datauppsättningar kan kombineras i plattformen.
 
-Mer information finns i [Översikt över Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=sv-SE).
+Mer information finns i [Customer Journey Analytics - översikt](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html).

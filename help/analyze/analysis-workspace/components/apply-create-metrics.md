@@ -4,7 +4,7 @@ title: Mätvärden
 feature: Metrics
 role: User, Admin
 exl-id: 0a5dc709-c4e8-412a-a6cf-37b85d811f65
-source-git-commit: bf8bc40e3ec325e8e70081955fb533eee66a1734
+source-git-commit: 665319bdfc4c1599292c2e7aea45622d77a291a7
 workflow-type: tm+mt
 source-wordcount: '838'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Adobe erbjuder flera typer av mätvärden som kan användas i Analysis Workspace
 
 * **Standardmått**: De flesta mätvärden som du använder i projekt är standardvärden. Exempel är [Sidvyer](/help/components/metrics/page-views.md), [Intäkter](/help/components/metrics/revenue.md) eller [Anpassade händelser](/help/components/metrics/custom-events.md). Mer information finns i [Metrisk översikt](/help/components/metrics/overview.md) i användarhandboken för komponenter.
 
-* **Beräknade mått** ![Beräkna](/help/assets/icons/Calculator.svg): Användardefinierade mått som baseras på standardvärden, statiska tal eller algoritmiska funktioner. Användardefinierade beräknade värden visar en räkneikon i listan över tillgängliga komponenter. Mer information finns i [Översikt över beräknade mått](/help/components/c-calcmetrics/cm-overview.md) i användarhandboken för komponenter.
+* **Beräknade mått** ![Beräkna](/help/assets/icons/Calculator.svg): Användardefinierade mått som baseras på standardvärden, statiska tal eller algoritmiska funktioner. Användardefinierade beräknade värden visar en räkneikon i listan över tillgängliga komponenter. Mer information finns i [Översikt över beräknade mått](/help/components/calculated-metrics/cm-overview.md) i användarhandboken för komponenter.
 
 * **Beräknade måttmallar** ![AdobeLogoSmall](/help/assets/icons/AdobeLogoSmall.svg): Adobe-definierade mätvärden som fungerar ungefär som beräknade mätvärden. Du kan använda dem som de är i Workspace-projekt eller spara en kopia för att anpassa dess logik. Mallar för beräknade mätvärden visar en Adobe-ikon i listan över tillgängliga komponenter.
 
@@ -54,7 +54,7 @@ Det finns flera sätt att skapa beräknade mått. Den metod du väljer avgör om
 
 ### Skapa beräknade mätvärden för alla projekt
 
-Du kan använda verktyget [calculate metric builder](/help/components/c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-build-metrics.md) för att [skapa beräknade mått](/help/components/c-calcmetrics/c-workflow/cm-workflow/cm-workflow.md). När de skapas på det här sättet är beräknade värden tillgängliga i komponentlistan och kan användas i projekt i hela organisationen.
+Du kan använda verktyget [calculate metric builder](/help/components/calculated-metrics/workflow/c-build-metrics/cm-build-metrics.md) för att [skapa beräknade mått](/help/components/calculated-metrics/workflow/cm-workflow.md). När de skapas på det här sättet är beräknade värden tillgängliga i komponentlistan och kan användas i projekt i hela organisationen.
 
 
 ### Skapa beräknade mätvärden för ett enskilt projekt
@@ -79,15 +79,15 @@ Så här skapar du ett beräknat mått för ett enskilt projekt:
 
    När en kolumn är markerad är följande alternativ tillgängliga:
 
-   * [!UICONTROL **Medel**]: Skapar en ny kolumn som visar medelvärdet i uppsättningen med dimensionselement för kolumnen. Kolumnvärdena använder funktionen [Medel](/help/components/c-calcmetrics/cm-reference/cm-functions.md#mean).
+   * [!UICONTROL **Medel**]: Skapar en ny kolumn som visar medelvärdet i uppsättningen med dimensionselement för kolumnen. Kolumnvärdena använder funktionen [Medel](/help/components/calculated-metrics/cm-reference/cm-functions.md#mean).
 
-   * [!UICONTROL **Median**]: Skapar en ny kolumn som visar medianvärdet i uppsättningen med dimensionselement för kolumnen. Kolumnvärdena använder funktionen [Median](/help/components/c-calcmetrics/cm-reference/cm-functions.md#median).
+   * [!UICONTROL **Median**]: Skapar en ny kolumn som visar medianvärdet i uppsättningen med dimensionselement för kolumnen. Kolumnvärdena använder funktionen [Median](/help/components/calculated-metrics/cm-reference/cm-functions.md#median).
 
-   * [!UICONTROL **Kolumn max**]: Skapar en ny kolumn som visar det största värdet i uppsättningen med dimensionselement för kolumnen. Kolumnvärdena använder funktionen [Kolumnmaximum](/help/components/c-calcmetrics/cm-reference/cm-functions.md#column-maximum).
+   * [!UICONTROL **Kolumn max**]: Skapar en ny kolumn som visar det största värdet i uppsättningen med dimensionselement för kolumnen. Kolumnvärdena använder funktionen [Kolumnmaximum](/help/components/calculated-metrics/cm-reference/cm-functions.md#column-maximum).
 
-   * [!UICONTROL **Kolumn min**]: Skapar en ny kolumn som visar det minsta värdet i uppsättningen med dimensionselement för kolumnen. Kolumnvärdena använder funktionen [Kolumnminimum](/help/components/c-calcmetrics/cm-reference/cm-functions.md#column-minimum).
+   * [!UICONTROL **Kolumn min**]: Skapar en ny kolumn som visar det minsta värdet i uppsättningen med dimensionselement för kolumnen. Kolumnvärdena använder funktionen [Kolumnminimum](/help/components/calculated-metrics/cm-reference/cm-functions.md#column-minimum).
 
-   * [!UICONTROL **Kolumnsumma**]: Skapar en ny kolumn som lägger till alla numeriska värden för ett mått i en kolumn (över elementen i en dimension). Kolumnvärdena använder funktionen [Kolumnsumma](/help/components/c-calcmetrics/cm-reference/cm-functions.md#column-sum).
+   * [!UICONTROL **Kolumnsumma**]: Skapar en ny kolumn som lägger till alla numeriska värden för ett mått i en kolumn (över elementen i en dimension). Kolumnvärdena använder funktionen [Kolumnsumma](/help/components/calculated-metrics/cm-reference/cm-functions.md#column-sum).
 
    När två kolumner är markerade är följande alternativ tillgängliga:
 
@@ -101,7 +101,7 @@ Så här skapar du ett beräknat mått för ett enskilt projekt:
 
    * [!UICONTROL **Procentuell ändring**]: Skapar en ny kolumn som visar procentändringen mellan de två markerade kolumnerna.
 
-[Beräknade mått: Mätvärden utan implementering](https://experienceleague.adobe.com/sv/docs/analytics-learn/tutorials/components/calculated-metrics/calculated-metrics-implementationless-metrics) (3:42)
+[Beräknade mått: Mätvärden utan implementering](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/components/calculated-metrics/calculated-metrics-implementationless-metrics) (3:42)
 
 
 ## Jämför mätvärden med olika attribueringsmodeller

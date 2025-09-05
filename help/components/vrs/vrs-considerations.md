@@ -4,7 +4,7 @@ keywords: Virtual Report Suite
 title: Virtuella rapportsviter och taggar för flera programsviter
 feature: VRS
 exl-id: 7e0a1f5b-26ac-438c-b481-33669039efe5
-source-git-commit: a40f30bbe8fdbf98862c4c9a05341fb63962cdd1
+source-git-commit: a6967c7d4e1dca5491f13beccaa797167b503d6e
 workflow-type: tm+mt
 source-wordcount: '1634'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Med virtuella rapportsviter kan du visa data från en rapportserie som samlar in data från era digitala resurser, men med ett segment som används permanent.
 
-I många fall kan du använda virtuella rapportsviter för att ersätta taggning för flera programsviter. Genom att växla till virtuella rapportsviter kan du effektivt ta bort behovet av [sekundära serveranrop](/help/admin/admin/c-server-call-usage/overage-overview.md). Din organisation har t.ex. sex olika webbplatser, där alla skickar data till sina egna rapporteringsprogram samt en kombinerad global rapportserie. Varje webbplats får ett sekundärt serveranrop, ett till den enskilda varumärkesrapporten och en andra till den globala rapportsviten. I stället kan ni skicka data från alla webbplatser enbart till den globala rapportsviten och sedan använda flera virtuella rapportsviter för att separera varje varumärke.
+I många fall kan du använda virtuella rapportsviter för att ersätta taggning för flera programsviter. Genom att växla till virtuella rapportsviter kan du effektivt ta bort behovet av [sekundära serveranrop](/help/admin/tools/server-call-usage/overage-overview.md). Din organisation har t.ex. sex olika webbplatser, där alla skickar data till sina egna rapporteringsprogram samt en kombinerad global rapportserie. Varje webbplats får ett sekundärt serveranrop, ett till den enskilda varumärkesrapporten och en andra till den globala rapportsviten. I stället kan ni skicka data från alla webbplatser enbart till den globala rapportsviten och sedan använda flera virtuella rapportsviter för att separera varje varumärke.
 
 Genom att ersätta taggning för flera programsviter med en global rapportserie och Virtual Report Suite kan ni förenkla er Adobe Analytics-implementering och minska förbrukningen av serversamtal. Detta är en god praxis som vi rekommenderar. Det finns dock några viktiga begränsningar för virtuella rapportsviter att tänka på. Följande riktlinjer kan hjälpa dig att avgöra om implementering av virtuella rapportsviter som bygger på en global rapportserie är rätt strategi för dig.
 

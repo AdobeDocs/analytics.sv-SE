@@ -3,7 +3,7 @@ title: Punkter
 description: Antalet träffar som matchade båda reglerna.
 feature: Metrics
 exl-id: 94cbbee4-8455-48b1-b804-534ed8fccdc9
-source-git-commit: 9f70dbeb9dfe54897915213480f05cbdfaf920ef
+source-git-commit: a6967c7d4e1dca5491f13beccaa797167b503d6e
 workflow-type: tm+mt
 source-wordcount: '129'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Punkter
 
-[Mätvärdet ](overview.md) för &#39;Bot-förekomster&#39; visar antalet träffar som matchade [Bot-regler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/bot-removal/bot-rules.md).
+[Mätvärdet ](overview.md) för &#39;Bot-förekomster&#39; visar antalet träffar som matchade [Bot-regler](/help/admin/tools/manage-rs/edit-settings/general/bot-removal/bot-rules.md).
 
 Eftersom båda rapporterna är åtskilda från resten av rapportsvitens data fungerar dessa mått bara med följande dimensioner:
 

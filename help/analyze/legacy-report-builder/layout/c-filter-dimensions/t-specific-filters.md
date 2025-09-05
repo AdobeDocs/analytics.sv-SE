@@ -5,7 +5,7 @@ uuid: b3a8187a-3d59-4da0-abca-e933664332e3
 feature: Report Builder
 role: User, Admin
 exl-id: e5f2d67c-3add-4d51-8a76-ee3b2a6eef94
-source-git-commit: fcecc8a493852f5682fd7fbd5b9bb484a850922c
+source-git-commit: e09234ca27fbf923e026aa1f2ed0ebfed636bf7c
 workflow-type: tm+mt
 source-wordcount: '309'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Du kan söka efter specifika dimensionsobjekt genom att skapa ett filter som mat
 
 1. Skapa eller redigera en begäran och fortsätt till [!UICONTROL Request Wizard: Step 2].
 
-   ![Skärmbild som visar Filtrera efter alternativ: Program, Användare och Projekt.](/help/admin/admin/assets/filter.png)
+   ![Skärmbild som visar Filtrera efter alternativ: Program, Användare och Projekt.](/help/admin/tools/assets/filter.png)
 
 1. Klicka på länken bredvid dimensionen i rutnätet på [!UICONTROL Request Wizard: Step 2] och välj sedan **[!UICONTROL Filter]**.
 
@@ -41,5 +41,5 @@ Du kan söka efter specifika dimensionsobjekt genom att skapa ett filter som mat
 1. Om du aktiverar **[!UICONTROL From List]** markerar du alla tillgängliga listade objekt eller klickar på **[!UICONTROL Add]**.
 
    När du klickar på **[!UICONTROL Add]** visar formuläret [!UICONTROL Select From List] en lista över tillgängliga dimensionsobjekt för aktuellt datumintervall för begäran, begränsat till de första 10 000 objekten. Du kan söka bland dessa objekt eller klicka på **[!UICONTROL More ...]**, som visar [!UICONTROL Search Form], så att du kan skapa en mer detaljerad sökning efter dimensioner.
-1. Klicka på **[!UICONTROL OK]** på [!UICONTROL Select From List].
+1. Klicka på [!UICONTROL Select From List] på **[!UICONTROL OK]**.
 1. Spara det specifika filtret i formuläret [!UICONTROL Choose Page] om du vill och klicka sedan på **[!UICONTROL OK]**.

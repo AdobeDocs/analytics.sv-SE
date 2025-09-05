@@ -3,7 +3,7 @@ description: Systemkrav och en jämförelse mellan Analysis Workspace, Report Bu
 title: Produktjämförelse och krav för analyser
 exl-id: 5adc6c10-cbbb-48d5-a7ab-367cbaff5e8a
 feature: Analytics Basics
-source-git-commit: 9a2d4c582b6a3946b658924851e5b5ada2f5a7ee
+source-git-commit: 325a42c080290509309e90c9127138800d5ac496
 workflow-type: tm+mt
 source-wordcount: '340'
 ht-degree: 17%
@@ -22,14 +22,14 @@ Mer information om vilken Adobe Analytics-produkt som ska användas finns i [Vil
 | **Datagranularitet** | Sammanställd | Sammanställd | Sammanställd | Träff | Sammanställd |
 | **Experience Cloud ID (ECID) tillgängligt** | Nej | Nej | Ja | Ja | Nej |
 | **Tidsstämpel tillgänglig** | Nej | Nej | Nej | Ja | Nej |
-| **Bearbetningsnivå** | Fullt bearbetad | Fullständigt bearbetad, med separat [realtidsrapport](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/realtime/realtime.md) | Fullt bearbetad | Fullt bearbetad | Fullt bearbetad |
-| **Administratörsfilterdata ingår** <br> [Läs mer](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/bot-removal/bot-removal.md) | Nej | Ja - separat robotrapport | Nej | Nej | Nej |
+| **Bearbetningsnivå** | Fullt bearbetad | Fullständigt bearbetad, med separat [realtidsrapport](/help/admin/tools/manage-rs/edit-settings/realtime/realtime.md) | Fullt bearbetad | Fullt bearbetad | Fullt bearbetad |
+| **Administratörsfilterdata ingår** <br> [Läs mer](/help/admin/tools/manage-rs/edit-settings/general/bot-removal/bot-removal.md) | Nej | Ja - separat robotrapport | Nej | Nej | Nej |
 | **Låg trafik (Uniques-gräns) visas** <br> [Läs mer](/help/technotes/low-traffic.md) | Ja | Ja | Nej | Nej | Ja |
 | **Synlig radgräns (före sidnumrering)** | 400 | 50000 | Obegränsad | Obegränsad | 50000 |
 | **Flera rapportsviter** | [Ja](/help/analyze/analysis-workspace/build-workspace-project/multiple-report-suites.md) | Ja | Nej | Ja | Nej | Ja |
 | **Antal uppdelningar** | Obegränsad | Upp till 2 | Obegränsad | Obegränsad | Obegränsat, kör över flera frågor |
 | **Segmentering** <br> [Läs mer](/help/components/segmentation/segmentation-workflow/seg-workflow.md) | Ja | Ja | Ja, med [begränsningar](/help/components/segmentation/seg-reference/seg-compatibility.md) | Nej | Ja |
-| **Beräknade mått** <br> [Läs mer](/help/components/c-calcmetrics/cm-overview.md) | Ja, med [Attribution](/help/analyze/analysis-workspace/attribution/overview.md) | Ja, med attribuering | Ja | Nej | Ja, med [Attribution](/help/analyze/analysis-workspace/attribution/overview.md) |
+| **Beräknade mått** <br> [Läs mer](/help/components/calculated-metrics/cm-overview.md) | Ja, med [Attribution](/help/analyze/analysis-workspace/attribution/overview.md) | Ja, med attribuering | Ja | Nej | Ja, med [Attribution](/help/analyze/analysis-workspace/attribution/overview.md) |
 | **Marknadsföringskanaler** <br> [Läs mer](/help/components/c-marketing-channels/c-getting-started-mchannel.md) | Ja | Ja | Ja | Ja - [va_finder, va_close](/help/export/analytics-data-feed/c-df-contents/datafeeds-reference.md) | Ja |
 | **Kohortanalys** | [Ja](/help/analyze/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) | Ja | Nej | Nej | Nej |
 | **Attribution** | Ja, med [Attribution](/help/analyze/analysis-workspace/attribution/overview.md) | Begränsad | Nej | Nej | Ja, med [Attribution](/help/analyze/analysis-workspace/attribution/overview.md) | Nej |

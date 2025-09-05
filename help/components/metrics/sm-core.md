@@ -3,7 +3,7 @@ title: Kärnstatistik för direktuppspelande medietjänster
 description: Tillgängliga mätvärden när du aktiverar [!UICONTROL Media Core] för en rapportserie.
 feature: Metrics
 exl-id: f4ff5f84-18b6-4e67-b808-133faeaf8605
-source-git-commit: 7609ecb3c34fb0bc8293fc1ecd409cfabb327295
+source-git-commit: a6967c7d4e1dca5491f13beccaa797167b503d6e
 workflow-type: tm+mt
 source-wordcount: '522'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 De viktigaste mätvärdena för direktuppspelade medietjänster ger grundläggande rapporteringsfunktioner för data som samlas in via bibliotek för insamling av medietjänster. Användningen av dessa mått kräver **[!UICONTROL Adobe Analytics for Streaming Media Ad-on]**. Kontakta Adobe Account Team för mer information.
 
-När du aktiverar **[!UICONTROL Media Core]** under [Medierapportering](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/media-management.md) är följande mått tillgängliga:
+När du aktiverar **[!UICONTROL Media Core]** under [Medierapportering](/help/admin/tools/manage-rs/edit-settings/media-management.md) är följande mått tillgängliga:
 
 | Måttnamn | Beskrivning | Skickat med | Sammanhangsdatavariabel |
 | --- | --- | --- | --- |

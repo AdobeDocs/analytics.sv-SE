@@ -4,7 +4,7 @@ description: Lär dig implementera Adobe Analytics med JavaScript utan tagghante
 feature: Implementation Basics
 exl-id: 25b9d768-c641-4f6c-a4ae-0d6c238c4776
 role: Developer
-source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
+source-git-commit: a6967c7d4e1dca5491f13beccaa797167b503d6e
 workflow-type: tm+mt
 source-wordcount: '206'
 ht-degree: 4%
@@ -17,7 +17,7 @@ AppMeasurement för JavaScript har tidigare varit ett vanligt sätt att implemen
 
 Översikt över implementeringsuppgifterna på hög nivå:
 
-![Så här implementerar du Adobe Analytics med AppMeasurement för JavaScript, enligt beskrivningen i det här avsnittet.](../assets/appmeasurement-annotated.png)
+![Så här implementerar du Adobe Analytivs med AppMeasurement för Javascript, enligt beskrivningen i det här avsnittet.](../assets/appmeasurement-annotated.png)
 
 <table>
 
@@ -26,11 +26,11 @@ AppMeasurement för JavaScript har tidigare varit ett vanligt sätt att implemen
 </tr>
 
 <tr>
-<td>1</td><td>Kontrollera att du har <b>definierat en rapportserie</b></td><td><a href="../../admin/admin/c-manage-report-suites/report-suites-admin.md">Report Suite Manager</a></td>
+<td>1</td><td>Kontrollera att du har <b>definierat en rapportserie</b></td><td><a href="../../admin/tools/manage-rs/report-suites-admin.md">Report Suite Manager</a></td>
 </tr>
 
 <tr>
-<td>2</td><td><b>Hämta nödvändig JavaScript-kod för AppMeasurementet</b> från kodhanteraren. Zippa upp filen.</td><td><a href="../../admin/admin/code-manager-admin.md">Kodhanteraren</a></td>
+<td>2</td><td><b>Hämta nödvändig JavaScript-kod för AppMeasurement</b> från Code Manager. Zippa upp filen.</td><td><a href="../../admin/tools/code-manager-admin.md">Kodhanteraren</a></td>
 </tr>
 
 <tr>
@@ -74,7 +74,7 @@ s.events = "event1";
 </tr>
 
 <tr>
-<td>6</td><td><b>Skicka data till Adobe med <code>t()</code> method</b> när alla sidvariabler är definierade.
+<td>6</td><td><b>Skicka data till Adobe med metoden <code>t()</code> </b> när alla sidvariabler är definierade.
 
 ```js
 s.t();

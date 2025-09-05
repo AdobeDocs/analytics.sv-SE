@@ -4,7 +4,7 @@ description: Skapa ett utrymme för att anpassa hur data samlas in med hjälp av
 feature: Tags
 exl-id: ffcd8e97-4d29-489e-bc2b-88805400dad5
 role: Admin, Developer
-source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
+source-git-commit: a6967c7d4e1dca5491f13beccaa797167b503d6e
 workflow-type: tm+mt
 source-wordcount: '473'
 ht-degree: 2%
@@ -17,7 +17,7 @@ Taggar i Adobe Experience Platform gör att du kan integrera Experience Cloud-l�
 
 ## Förutsättningar
 
-[Skapa en rapportserie](/help/admin/admin/c-manage-report-suites/c-new-report-suite/t-create-a-report-suite.md): Skapa en silo för analysdata som ska samlas in.
+[Skapa en rapportserie](/help/admin/tools/manage-rs/new-rs/t-create-a-report-suite.md): Skapa en silo för analysdata som ska samlas in.
 
 ## Skapa en taggegenskap och installera viktiga tillägg
 
@@ -32,7 +32,7 @@ Egenskaper är överliggande behållare som du använder för att hantera taggar
 1. Alla inställningar, inklusive Experience Cloud organisations-ID, ska redan vara ifyllda. Klicka på **[!UICONTROL Save]**.
 1. Gå tillbaka till tilläggskatalogen, leta upp Adobe Analytics och klicka på **[!UICONTROL Install]**.
 
-Mer information finns i den fullständiga dokumentationen för [Adobe Analytics-tillägget](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=sv-SE).
+Mer information finns i den fullständiga dokumentationen för [Adobe Analytics-tillägget](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html).
 
 ## Skapa dataelement för Adobe Analytics
 
@@ -57,7 +57,7 @@ Dataelement är referenser till specifika delar av webbplatsen för att samla in
 
 ## Skapa regler för Adobe Analytics
 
-Regler mappar dataelement till Analytics-variabelvärden och avgör när dessa värden skickas till Adobe-servrar.
+Reglerna mappar dataelement till variabelvärden för Analytics och avgör när dessa värden skickas till Adobe-servrar.
 
 1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med dina inloggningsuppgifter för AdobeID.
 1. Klicka på den taggegenskap som du tänker implementera på webbplatsen.
@@ -67,7 +67,7 @@ Regler mappar dataelement till Analytics-variabelvärden och avgör när dessa v
    * Händelsetyp: Bibliotek inläst (sidan ovanpå)
    * Namn: Kärna - Bibliotek inläst (sidan överst)
 1. Klicka på **[!UICONTROL Keep Changes]**.
-1. Klicka på **[!UICONTROL Add]** under **[!UICONTROL Actions]** och ange följande inställningar:
+1. Klicka på **[!UICONTROL Actions]** under **[!UICONTROL Add]** och ange följande inställningar:
    * Tillägg: Adobe Analytics
    * Åtgärdstyp: Ange variabler
    * Sidnamn: klicka på behållarikonen och markera dataelementet `Page Name`.

@@ -5,9 +5,9 @@ title: Tidsstämplar (valfritt)
 topic-fix: Developer and implementation
 feature: Implementation Basics
 exl-id: c6a232d1-d7ce-4f21-9e8a-45703992bc6e
-source-git-commit: 59757bf8953c9cd7bc8dff89f29c13396b70696d
+source-git-commit: fcc165536d77284e002cb2ba6b7856be1fdb3e14
 workflow-type: tm+mt
-source-wordcount: '600'
+source-wordcount: '599'
 ht-degree: 0%
 
 ---
@@ -36,14 +36,14 @@ Tidsstämplar Valfria är standardinställningen för alla nya rapportsviter.
 >
 >Tidsstämplar Valfria är standardinställningen för alla nya rapportsviter som genereras från en mall. Nya rapportsviter som kopierats från en befintlig rapportserie ärver inställningar från originalet.
 
-Se [Tidsstämplar (valfritt)](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/timestamp-optional.html?lang=sv-SE) om du vill ha mer installationsinformation.
+Se [Tidsstämplar (valfritt)](/help/technotes/timestamps-optional.md) om du vill ha mer installationsinformation.
 
 ## Tidsstämplar Valfritt: Integrera tidsstämplade och tidsstämplade data {#integrate}
 
 Med funktionen Tidsstämplar (valfritt) kan du kombinera icke-tidsstämplade data med tidsstämplade data utan att data går förlorade. Offlinedata med tidsstämplar som genererats från en mobil enhet kan kombineras med live, tidstämplade data från en webbsida - eller integreras med data från vilken plattform som helst med ett tidsstämpelanrop på klientsidan.
 
 * **Tidsstämpeldata**. Tidsstämpeldata på klientsidan hämtas och skickas direkt med enhetsdata med hjälp av klientsidans tidsstämpelvariabler: Javascript på en webbsida eller med ett Mobile SDK-anrop ( [!DNL offlineEnabled=true]) i en mobilapp.
-* **Ej tidsstämpeldata**. Adobe ställer in en tidsstämpel för icke tidsstämplade data i en rapportsvit när data träffar samlingsservrarna.
+* **Ej tidsstämpeldata**. Adobe sätter en tidsstämpel på data som inte är tidsstämplade i en rapportsvit när data träffar samlingsservrarna.
 
 En rapportsvit kan ha någon av följande tidsstämpelinställningar:
 
@@ -75,7 +75,7 @@ Nedan följer god praxis och några krav och begränsningar som du bör känna t
 
 * I allmänhet måste tidsstämplar för en viss besökare eller besök anlända till Adobe i rätt kronologisk ordning.
 
-  Data som inte är i ordning kan omfatta sena data från offlinedatainsamling och sena träffar, eller osynkroniserade klockor på offline-mobilenheter. Oordnade data kan påverka tidsberäkningar negativt (t.ex. tidsåtgång), attribuering (eVarnas beständighet), antal besök/besök samt kundvägsrapporter.
+  Data som inte är i ordning kan omfatta sena data från offlinedatainsamling och sena träffar, eller osynkroniserade klockor på offline-mobilenheter. Obeställda data kan påverka tidsberäkningar negativt (t.ex. tidsåtgång), attribuering (eVar persistence), antal besök/besök samt rapporter om kundvägar.
 
 * Du bör inte använda tidsstämplar när du anger ett [s.visitorID](/help/implement/vars/config-vars/visitorid.md). Det kan leda till oordnade data.
 

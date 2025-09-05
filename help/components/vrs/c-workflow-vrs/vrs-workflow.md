@@ -4,7 +4,7 @@ keywords: Virtual Report Suite
 title: Arbetsflöde för virtuella rapportsviter
 feature: VRS
 exl-id: 6f68b5a2-04d6-4521-86d0-85c9f323d03c
-source-git-commit: 266cf18050d60f08f7e170c56453d1e1d805cb7b
+source-git-commit: a6967c7d4e1dca5491f13beccaa797167b503d6e
 workflow-type: tm+mt
 source-wordcount: '202'
 ht-degree: 0%
@@ -15,11 +15,11 @@ ht-degree: 0%
 
 En översikt över de steg som krävs för att planera och implementera virtuella rapportsviter.
 
-![](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/c-server-side-forwarding/assets/step1_icon.png) Planera din strategi för den virtuella rapportsviten.
+![](/help/admin/tools/manage-rs/edit-settings/general/c-server-side-forwarding/assets/step1_icon.png) Planera din strategi för den virtuella rapportsviten.
 
 Bekanta dig med [Global/Multi-Suite Tagging ](/help/components/vrs/vrs-considerations.md) och vanliga frågor och svar när du bestämmer dig för din strategi.
 
-![](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/c-server-side-forwarding/assets/step2_icon.png) [Skapa en virtuell rapportserie](/help/components/vrs/c-workflow-vrs/vrs-create.md) genom att tillämpa ett eller flera segment i en överordnad rapportserie.
+![](/help/admin/tools/manage-rs/edit-settings/general/c-server-side-forwarding/assets/step2_icon.png) [Skapa en virtuell rapportserie](/help/components/vrs/c-workflow-vrs/vrs-create.md) genom att tillämpa ett eller flera segment i en överordnad rapportserie.
 
 Virtuella rapportsviter skapas i Virtual Report Suites-hanteraren, som är tillgänglig via **[!UICONTROL Components]** > **[!UICONTROL Virtual report suites]**.
 
@@ -27,7 +27,7 @@ När en virtuell rapportsvit har skapats behandlas den på samma sätt som en ba
 
 Klicka på informationsikonen bredvid rapportsvitens namn för att [visa information om den](/help/components/vrs/c-workflow-vrs/vrs-view.md).
 
-![](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/c-server-side-forwarding/assets/step3_icon.png) Öppna ett projekt eller en rapport och välj en virtuell rapportsvit för att skapa en segmenterad vy av data.
+![](/help/admin/tools/manage-rs/edit-settings/general/c-server-side-forwarding/assets/step3_icon.png) Öppna ett projekt eller en rapport och välj en virtuell rapportsvit för att skapa en segmenterad vy av data.
 
 ![](assets/step4_icon.png) [Hantera](/help/components/vrs/c-workflow-vrs/vrs-manage.md) det virtuella rapportpaketet.
 

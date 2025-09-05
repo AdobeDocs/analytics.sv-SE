@@ -3,7 +3,7 @@ title: Metadata för direktuppspelande medietjänster
 description: Tillgängliga mätvärden när du aktiverar [!UICONTROL Video Metadata] för en rapportserie.
 feature: Metrics
 exl-id: b2f60a34-e139-4498-bf71-74d291759ef2
-source-git-commit: 7609ecb3c34fb0bc8293fc1ecd409cfabb327295
+source-git-commit: a6967c7d4e1dca5491f13beccaa797167b503d6e
 workflow-type: tm+mt
 source-wordcount: '111'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Metadata för direktuppspelande medietjänster ger extra rapporteringsfunktioner för datainsamling via bibliotek för direktuppspelande medietjänster. Användningen av dessa mått kräver **[!UICONTROL Adobe Analytics for Streaming Media Ad-on]**. Kontakta Adobe Account Team för mer information.
 
-När du aktiverar **[!UICONTROL Video Metadata]** under [Medierapportering](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/media-management.md) är följande mått tillgängliga:
+När du aktiverar **[!UICONTROL Video Metadata]** under [Medierapportering](/help/admin/tools/manage-rs/edit-settings/media-management.md) är följande mått tillgängliga:
 
 | Måttnamn | Beskrivning | Skickat med | Sammanhangsdatavariabel |
 | --- | --- | --- | --- |

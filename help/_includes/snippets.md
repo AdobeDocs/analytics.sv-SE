@@ -1,7 +1,7 @@
 ---
-source-git-commit: 4eea524bf95c9b6bc9ddc878c8c433bc1e60daee
+source-git-commit: fcc165536d77284e002cb2ba6b7856be1fdb3e14
 workflow-type: tm+mt
-source-wordcount: '2947'
+source-wordcount: '2945'
 ht-degree: 0%
 
 ---
@@ -11,8 +11,8 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Ett nytt och smidigt [Report Builder](https://experienceleague.adobe.com/sv/docs/analytics/analyze/report-builder/rb-overview) släpptes 16 oktober 2024. Det stöds i Mac, Windows och webbläsare.
->&#x200B;>Denna äldre Report Builder-tilläggsversion fungerar fortfarande. Du kan [konvertera dina äldre arbetsböcker](https://experienceleague.adobe.com/sv/docs/analytics/analyze/report-builder/convert-workbooks) till nya Report Builder.
+>Ett nytt och smidigt [Report Builder](/help/analyze/report-builder/rb-overview.md) släpptes 16 oktober 2024. Det stöds i Mac, Windows och webbläsare.
+>>Denna äldre Report Builder-tilläggsversion fungerar fortfarande. Du kan [konvertera dina äldre arbetsböcker](/help/analyze/report-builder/convert-workbooks.md) till nya Report Builder.
 
 ## Rapporter och analyser - meddelande om att produkten har upphört att gälla {#ra-eol}
 

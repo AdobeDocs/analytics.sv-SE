@@ -3,7 +3,7 @@ title: Felsöka tagningar och datasläppningar
 description: Läs om möjliga orsaker till varför du kan se dramatiska ökningar eller minskningar i trendrapporter.
 exl-id: 1a91f95e-818f-423d-9247-e0bb96bd0018
 feature: Curate and Share, Data Configuration and Collection
-source-git-commit: 29ab0cc535bd8f74b50428c11756bf8b446a23ab
+source-git-commit: a6967c7d4e1dca5491f13beccaa797167b503d6e
 workflow-type: tm+mt
 source-wordcount: '853'
 ht-degree: 0%
@@ -46,7 +46,7 @@ Trafiktoppar indelas i två delar: nästan dubbla data och andra orsaker.
 
 ### Andra potentiella orsaker till ökad trafik
 
-* **Spindlar eller spindlar**: Om du ser en stor plötslig ökning av trafiken är det första du behöver leta efter möjligheten att ha en spindel eller robot. Det kan ibland vara svårt att identifiera objekt eftersom de har olika sätt att köra kod på webbplatsen. Skapa en Data Warehouse-rapport med IP som dimension för att se vilka adresser som orsakar störst trafik. Du kan sedan använda antingen [Punktregler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/bot-removal/bot-rules.md) eller en VISTA-regel för att ta bort både trafik och eventuell framtida rapportering.
+* **Spindlar eller spindlar**: Om du ser en stor plötslig ökning av trafiken är det första du behöver leta efter möjligheten att ha en spindel eller robot. Det kan ibland vara svårt att identifiera objekt eftersom de har olika sätt att köra kod på webbplatsen. Skapa en Data Warehouse-rapport med IP som dimension för att se vilka adresser som orsakar störst trafik. Du kan sedan använda antingen [Punktregler](/help/admin/tools/manage-rs/edit-settings/general/bot-removal/bot-rules.md) eller en VISTA-regel för att ta bort både trafik och eventuell framtida rapportering.
 * **Lanserade kampanjer**: Marknadsföringsaktiviteter som e-postkampanjer eller optimering av sökmotorer kan potentiellt orsaka en trafiktopp på din webbplats. Trend dimensionen [Spårningskod](/help/components/dimensions/tracking-code.md) om du vill söka ytterligare. Det kan också hjälpa er att kontakta marknadsföringsteamet för att säkerställa att toppen var avsiktlig.
 * **Miljörelaterade eller indiciella orsaker**: Om en semester eller en omständighet inträffar (en viktig händelse där din plats är en känd resurs, eller om andra organisationers övriga marknadsföringssatsningar förekommer) kan trafiken öka på din plats. Det är svårt att felsöka den exakta orsaken, eftersom det finns ett nästan obegränsat antal orsaker till varför trafiken kan öka. Detta är dock några av de viktigaste skälen att avgöra så att ni kan dra nytta av dem och fatta lämpliga affärsbeslut. Att trenda dimensionen [Sida](/help/components/dimensions/page.md) eller [Referer](/help/components/dimensions/referrer.md) är troligen den bästa platsen att börja på när du ska fastställa trafikens källa.
 

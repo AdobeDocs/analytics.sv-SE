@@ -4,7 +4,7 @@ audience: end-user
 user-guide-title: Komponenthandbok för Analytics
 breadcrumb-title: Användarhandbok om komponenter
 user-guide-description: Hantera data med komponenter som segment, beräknade värden, virtuella rapportsviter, marknadsföringskanaler och klassificeringar. Lär dig mer om Analytics över flera enheter.
-source-git-commit: 35f2812c1a1a4eed090e04d67014fcebf88a80ec
+source-git-commit: edc64aeef6eb987c5533f6a14d95aca6ff29a467
 workflow-type: tm+mt
 source-wordcount: '759'
 ht-degree: 7%
@@ -14,8 +14,8 @@ ht-degree: 7%
 
 # [!DNL Adobe Analytics] Komponentguide {#components}
 
-+ [Komponenthandbok för Analytics](home.md)
-+ [Versionsinformation för analyser](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html?lang=sv-SE)
++ [Handbok för analyskomponenter](home.md)
++ [Versionsinformation för analyser](https://experienceleague.adobe.com/en/docs/analytics/release-notes/latest)
 + Mått {#dimensions}
    + [Översikt över dimensioner](dimensions/overview.md)
    + [Dimension-kompatibilitet](dimensions/compatibility.md)
@@ -202,36 +202,36 @@ ht-degree: 7%
       + [Segmenträttigheter efter roll](segmentation/seg-reference/seg-rights.md)
       + [Felsökning](segmentation/seg-reference/c-troubleshooting.md)
    + [Vanliga frågor om äldre segment](segmentation/seg-transition.md)
-   + [God praxis](segmentation/best-practices.md)
+   + [Bästa praxis](segmentation/best-practices.md)
 + Beräknade mått {#calculated-metrics}
-   + [Översikt](c-calcmetrics/cm-overview.md)
-   + [Instruktionsfilmer](c-calcmetrics/cm-videos.md)
+   + [Översikt](calculated-metrics/cm-overview.md)
+   + [Instruktionsfilmer](calculated-metrics/cm-videos.md)
    + Arbetsflöde {#calcmetric-workflow}
-      + [Skapa beräknade mått](c-calcmetrics/c-workflow/cm-workflow/cm-workflow.md)
-      + [Hitta mätvärden](c-calcmetrics/c-workflow/cm-workflow/cm-finding.md)
-      + [Bygg beräknade värden](c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-build-metrics.md)
-      + [Ett enkelt exempel](c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-pvv.md)
-      + [Ett mer komplext exempel](c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-orders-participation.md)
-      + [Mättyp och attribuering](c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/m-metric-type-alloc.md)
-      + [Deltagandestatistik](c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/participation-metric.md)
-      + [Segmenterade mätvärden](c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/metrics-with-segments.md)
-      + [Stapla och ersätta segment](c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-stack-seg.md)
-      + [Filtrerade och viktade mätvärden](c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-weighted-metric.md)
-      + [Använd funktioner](c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-using-functions.md)
-      + [Tagga beräknade värden](c-calcmetrics/c-workflow/cm-workflow/cm-tagging.md)
-      + [Filtrera beräknade värden](c-calcmetrics/c-workflow/cm-workflow/cm-filter.md)
-      + [Markera beräknade värden som favoriter](c-calcmetrics/c-workflow/cm-workflow/cm-favorite.md)
-      + [Godkänn beräknade värden](c-calcmetrics/c-workflow/cm-workflow/cm-approving.md)
-      + [Dela beräknade värden](c-calcmetrics/c-workflow/cm-workflow/cm-sharing.md)
-      + [Kopiera beräknade värden](c-calcmetrics/c-workflow/cm-workflow/cm-copy.md)
-      + [Hantera beräknade värden](c-calcmetrics/c-workflow/cm-workflow/cm-manager.md)
+      + [Skapa beräknade mått](calculated-metrics/workflow/cm-workflow.md)
+      + [Hitta mätvärden](calculated-metrics/workflow/cm-finding.md)
+      + [Bygg beräknade värden](calculated-metrics/workflow/c-build-metrics/cm-build-metrics.md)
+      + [Ett enkelt exempel](calculated-metrics/workflow/c-build-metrics/cm-pvv.md)
+      + [Ett mer komplext exempel](calculated-metrics/workflow/c-build-metrics/cm-orders-participation.md)
+      + [Mättyp och attribuering](calculated-metrics/workflow/c-build-metrics/m-metric-type-alloc.md)
+      + [Deltagandestatistik](calculated-metrics/workflow/c-build-metrics/participation-metric.md)
+      + [Segmenterade mätvärden](calculated-metrics/workflow/c-build-metrics/metrics-with-segments.md)
+      + [Stapla och ersätta segment](calculated-metrics/workflow/c-build-metrics/cm-stack-seg.md)
+      + [Filtrerade och viktade mätvärden](calculated-metrics/workflow/c-build-metrics/cm-weighted-metric.md)
+      + [Använd funktioner](calculated-metrics/workflow/c-build-metrics/cm-using-functions.md)
+      + [Tagga beräknade värden](calculated-metrics/workflow/cm-tagging.md)
+      + [Filtrera beräknade värden](calculated-metrics/workflow/cm-filter.md)
+      + [Markera beräknade värden som favoriter](calculated-metrics/workflow/cm-favorite.md)
+      + [Godkänn beräknade värden](calculated-metrics/workflow/cm-approving.md)
+      + [Dela beräknade värden](calculated-metrics/workflow/cm-sharing.md)
+      + [Kopiera beräknade värden](calculated-metrics/workflow/cm-copy.md)
+      + [Hantera beräknade värden](calculated-metrics/workflow/cm-manager.md)
    + Referens {#calcmetrics-reference}
-      + [Grundfunktioner](c-calcmetrics/cm-reference/cm-functions.md)
-      + [Avancerade funktioner](c-calcmetrics/cm-reference/cm-adv-functions.md)
-      + [Mätkompatibilitet](c-calcmetrics/cm-compatibility.md)
-      + [Rollbaserade rättigheter](c-calcmetrics/cm-role-based-rights.md)
-      + [Beräknade mätsummor](c-calcmetrics/cm-totals.md)
-      + [Standardberäknade värden](c-calcmetrics/cm-reference/default-calcmetrics.md)
+      + [Grundfunktioner](calculated-metrics/cm-reference/cm-functions.md)
+      + [Avancerade funktioner](calculated-metrics/cm-reference/cm-adv-functions.md)
+      + [Mätkompatibilitet](calculated-metrics/cm-compatibility.md)
+      + [Rollbaserade rättigheter](calculated-metrics/cm-role-based-rights.md)
+      + [Beräknade mätsummor](calculated-metrics/cm-totals.md)
+      + [Standardberäknade värden](calculated-metrics/cm-reference/default-calcmetrics.md)
 + Virtuella rapportsviter {#virtual-report-suites}
    + [Översikt över virtuella rapportsviter](vrs/vrs-about.md)
    + [Virtuell rapportsvit - komponentkurva](vrs/vrs-components.md)
@@ -255,10 +255,10 @@ ht-degree: 7%
    + [Begränsa ett virtuellt rapportpaket till vissa datum](cda/limit-vrs-date.md)
    + [Vanliga frågor om enhetsövergripande analys](cda/faq.md)
 + Aviseringar {#alerts}
-   + [Översikt](c-alerts/intellligent-alerts.md)
-   + [Skapa aviseringar](c-alerts/alert-builder.md)
-   + [Hantera aviseringar](c-alerts/alert-manager.md)
-   + [Användningsexempel](c-alerts/alerts-use-cases.md)
+   + [Översikt](alerts/alerts-overview.md)
+   + [Skapa aviseringar](alerts/alert-builder.md)
+   + [Hantera aviseringar](alerts/alert-manager.md)
+   + [Användningsexempel](alerts/alerts-use-cases.md)
 + Klassificeringar {#classifications}
    + [Klassificeringsöversikt](classifications/classifications-overview.md)
    + Klassificeringsuppsättningar {#sets}

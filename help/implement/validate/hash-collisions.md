@@ -4,7 +4,7 @@ description: Beskriver vad en hash-kollision är och hur den kan visa sig.
 feature: Implementation Basics
 exl-id: 693d5c03-4afa-4890-be4f-7dc58a1df553
 role: Admin, Developer
-source-git-commit: c2adf6d2e328378332cc290ba2dfd75ee6587ef6
+source-git-commit: a6967c7d4e1dca5491f13beccaa797167b503d6e
 workflow-type: tm+mt
 source-wordcount: '453'
 ht-degree: 0%
@@ -42,6 +42,6 @@ På samma sätt som [födelsedagsparadox](https://en.wikipedia.org/wiki/Birthday
 De flesta hash-kollisioner inträffar med två mindre vanliga värden, som inte har någon meningsfull inverkan på rapporter. Även om en hash kolliderar med ett vanligt och ovanligt värde är resultatet försumbart. I sällsynta fall där två populära värden upplever en hash-kollision är det dock möjligt att se effekten tydligt. Adobe rekommenderar följande för att minska effekten i rapporter:
 
 * **Ändra datumintervallet**: Hash-tabeller ändras varje månad. Om du ändrar datumintervallet så att det sträcker sig över en annan månad kan du ge varje värde olika hash-värden som inte kolliderar.
-* **Minska antalet unika värden**: Du kan justera implementeringen eller använda [Bearbetningsregler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/processing-rules/pr-overview.md) för att minska antalet unika värden som en dimension samlar in. Om dimensionen till exempel samlar in en URL-adress kan du ta bort frågesträngar eller protokoll.
+* **Minska antalet unika värden**: Du kan justera implementeringen eller använda [Bearbetningsregler](/help/admin/tools/manage-rs/edit-settings/general/processing-rules/pr-overview.md) för att minska antalet unika värden som en dimension samlar in. Om dimensionen till exempel samlar in en URL-adress kan du ta bort frågesträngar eller protokoll.
 
 <!-- https://wiki.corp.adobe.com/pages/viewpage.action?spaceKey=OmniArch&title=Uniques -->

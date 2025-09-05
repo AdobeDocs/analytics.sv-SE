@@ -4,7 +4,7 @@ description: Med kontextdatavariabler kan du definiera anpassade variabler på v
 feature: Appmeasurement Implementation
 exl-id: f2c747a9-1a03-4f9f-8025-9f4745403a81
 role: Admin, Developer
-source-git-commit: c2adf6d2e328378332cc290ba2dfd75ee6587ef6
+source-git-commit: a6967c7d4e1dca5491f13beccaa797167b503d6e
 workflow-type: tm+mt
 source-wordcount: '570'
 ht-degree: 0%
@@ -13,13 +13,13 @@ ht-degree: 0%
 
 # contextData
 
-Med kontextdatavariabler kan du definiera anpassade variabler på varje sida som bearbetningsregler kan läsa. I stället för att explicit tilldela värden till Analytics-variabler i koden kan du skicka data i kontextdatavariabler. Bearbetningsregler tar sedan hänsyn till variabelvärden för kontextdata och skickar dem till respektive Analytics-variabler. Se [Bearbetar regler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/processing-rules/pr-overview.md) i användarhandboken för Admin.
+Med kontextdatavariabler kan du definiera anpassade variabler på varje sida som bearbetningsregler kan läsa. I stället för att explicit tilldela värden till Analytics-variabler i koden kan du skicka data i kontextdatavariabler. Bearbetningsregler tar sedan hänsyn till variabelvärden för kontextdata och skickar dem till respektive Analytics-variabler. Se [Bearbetar regler](/help/admin/tools/manage-rs/edit-settings/general/processing-rules/pr-overview.md) i användarhandboken för Admin.
 
 Kontextdatavariabler är användbara för utvecklingsteam som samlar in data i namngivna element i stället för i numrerade variabler. I stället för att begära utvecklarteam tilldelar du till exempel sidans författare till `eVar10`, kan du begära att de tilldelar den till `s.contextData["author"]` i stället. En Analysadministratör i organisationen kan sedan skapa bearbetningsregler för att mappa kontextdatavariabler till analysvariabler för rapportering. Utvecklingsteamen skulle i slutändan bara bekymra sig om kontextdatavariabler i stället för de många sidvariabler som Adobe erbjuder.
 
 ## Sammanhangsdatavariabler med Web SDK
 
-Om du använder [**XDM-objektet**](/help/implement/aep-edge/xdm-var-mapping.md) inkluderas automatiskt alla fält som inte mappar till en Adobe Analytics-variabel som kontextdatavariabel. Du kan också ange kontextdata explicit med XDM-objektet. Du kan sedan använda [Bearbetningsregler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/processing-rules/pr-overview.md) för att tilldela kontextdatavariabeln till den önskade Analytics-variabeln.  Mer information finns i [Mappa andra XDM-fält till analysvariabler](../../aep-edge/xdm-var-mapping.md#mapping-other-xdm-fields-to-analytics-variables).
+Om du använder [**XDM-objektet**](/help/implement/aep-edge/xdm-var-mapping.md) inkluderas automatiskt alla fält som inte mappar till en Adobe Analytics-variabel som kontextdatavariabel. Du kan också ange kontextdata explicit med XDM-objektet. Du kan sedan använda [Bearbetningsregler](/help/admin/tools/manage-rs/edit-settings/general/processing-rules/pr-overview.md) för att tilldela kontextdatavariabeln till den önskade Analytics-variabeln.  Mer information finns i [Mappa andra XDM-fält till analysvariabler](../../aep-edge/xdm-var-mapping.md#mapping-other-xdm-fields-to-analytics-variables).
 
 Om du använder [**dataobjektet**](/help/implement/aep-edge/data-var-mapping.md) finns alla kontextdatavariabler i `data.__adobe.analytics.contextData` som nyckelvärdepar:
 
@@ -38,7 +38,7 @@ alloy("sendEvent", {
 });
 ```
 
-Gränssnittet [Bearbetningsregler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/processing-rules/pr-overview.md) skulle visa `example_variable` och `second_example` i tillämpliga nedrullningsbara menyer.
+Gränssnittet [Bearbetningsregler](/help/admin/tools/manage-rs/edit-settings/general/processing-rules/pr-overview.md) skulle visa `example_variable` och `second_example` i tillämpliga nedrullningsbara menyer.
 
 ## Sammanhangsdatavariabler med Adobe Analytics-tillägget
 

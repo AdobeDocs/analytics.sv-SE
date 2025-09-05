@@ -4,7 +4,7 @@ audience: end-user
 user-guide-title: Handbok om Analytics-verktyg
 breadcrumb-title: Användarhandbok om verktyg
 user-guide-description: Lär dig hur du använder verktyg i Analytics, inklusive Analysis Workspace, Analytics Dashboards, Report Builder, Legacy Report Builder och Activity Map.
-source-git-commit: 35f2812c1a1a4eed090e04d67014fcebf88a80ec
+source-git-commit: bb068d39f756c4cce06349d0bd969212e19cb33e
 workflow-type: tm+mt
 source-wordcount: '867'
 ht-degree: 10%
@@ -13,8 +13,8 @@ ht-degree: 10%
 
 # Adobe Analytics Tools Guide {#analyze}
 
-+ [Handbok om Analytics-verktyg](home.md)
-+ [Versionsinformation för analyser](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html?lang=sv-SE)
++ [Handbok för analysverktyg](home.md)
++ [Versionsinformation för analyser](https://experienceleague.adobe.com/en/docs/analytics/release-notes/latest)
 + Kom igång med Adobe Analytics {#admin-overview}
    + [Analytics - översikt](get-started/analytics-overview.md)
    + [Kom igång (efter roll)](get-started/get-started-by-role.md)
@@ -144,7 +144,7 @@ ht-degree: 10%
       + [Attributionsöversikt](analysis-workspace/attribution/overview.md)
       + [Modell-, behållare- och uppslagsfönster](analysis-workspace/attribution/models.md)
       + [Algoritmisk attribuering](analysis-workspace/attribution/algorithmic.md)
-      + [God praxis](analysis-workspace/attribution/best-practices.md)
+      + [Bästa praxis](analysis-workspace/attribution/best-practices.md)
       + [Frågor och svar](analysis-workspace/attribution/faq.md)
    + [Resehantering](analysis-workspace/journey-iq.md)
    + [Segmentjämförelse](analysis-workspace/segment-iq.md)
@@ -282,7 +282,7 @@ ht-degree: 10%
       + [Begränsningar och specifikationer](legacy-report-builder/c-publish-power-bi/specifications-limits.md)
       + [Importera data manuellt till Power BI](legacy-report-builder/c-publish-power-bi/bi-manually-import-data.md)
       + [Hämta publicerade resurser till Power BI Desktop](legacy-report-builder/c-publish-power-bi/bi-publish-to-desktop.md)
-      + [God praxis](legacy-report-builder/c-publish-power-bi/bi-best-practices.md)
+      + [Bästa praxis](legacy-report-builder/c-publish-power-bi/bi-best-practices.md)
       + [Felsökning av Power BI-integrering](legacy-report-builder/c-publish-power-bi/troubleshooting.md)
       + [Adobe Analytics innehållspaket för Power BI](legacy-report-builder/c-publish-power-bi/integration-power-bi.md)
    + [Visual Basic-makron](legacy-report-builder/vba.md)

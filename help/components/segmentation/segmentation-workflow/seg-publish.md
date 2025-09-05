@@ -3,9 +3,9 @@ description: Lär dig hur du publicerar segment för marknadsföringsaktiviteter
 title: Publicera segment
 feature: Segmentation
 exl-id: 0215f896-d3f8-42cc-ac8d-8a94b009927b
-source-git-commit: c44bffa45ab8ed29ea28b91b2b3dc51811ab25fe
+source-git-commit: fcc165536d77284e002cb2ba6b7856be1fdb3e14
 workflow-type: tm+mt
-source-wordcount: '1244'
+source-wordcount: '1242'
 ht-degree: 0%
 
 ---
@@ -41,16 +41,16 @@ Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Publicera segment
 
 ## Förutsättningar
 
-* Kontrollera att rapportsviten som du sparar det här segmentet i är [aktiverad för Experience Cloud](https://experienceleague.adobe.com/sv/docs/analytics/components/segmentation/segmentation-workflow/seg-publish). Annars kan du inte publicera den på Experience Cloud.
+* Kontrollera att rapportsviten som du sparar det här segmentet i är [aktiverad för Experience Cloud](/help/components/segmentation/segmentation-workflow/seg-publish.md). Annars kan du inte publicera den på Experience Cloud.
 * Se till att din organisation använder Experience Cloud ID:n.
-* Innan du kan publicera segment måste din administratör tilldela [!UICONTROL Segment Publishing]-behörigheten till en produktprofil i [Admin Console](https://experienceleague.adobe.com/sv/docs/core-services/interface/administration/admin-tool-experience-cloud) och lägga till dig i produktprofilen.
+* Innan du kan publicera segment måste din administratör tilldela [!UICONTROL Segment Publishing]-behörigheten till en produktprofil i [Admin Console](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/admin-tool-experience-cloud) och lägga till dig i produktprofilen.
 
 ## Överväganden
 
 * **Report Suite-begränsningar**: Du kan publicera upp till 75 segment per rapportserie. Den här gränsen gäller. Om du redan har 75 segment publicerade kan du inte publicera några ytterligare segment förrän du avpublicerar tillräckligt många segment för att komma under tröskelvärdet på 75 segment.
 * **Medlemskapsgränser**: Publiker som delas med [!DNL Experience Cloud] från Adobe Analytics får inte överstiga 20 miljoner unika medlemmar.
 * **Dataintegritet**: Målgrupperna filtreras inte baserat på autentiseringstillståndet för en besökare. En besökare kan kanske bläddra på webbplatsen i icke-autentiserade och autentiserade lägen. Åtgärder som utförs när en besökare inte är autentiserad kan ändå göra att en besökare inkluderas i en målgrupp. Granska [Adobe Experience Cloud sekretess](https://www.adobe.com/privacy/experience-cloud.html) om du vill veta mer om målgruppsdelningens konsekvenser för integriteten.
-* En diskussion om **skillnaderna mellan segment i [!DNL Adobe Analytics] och[!DNL Audience Manager]** finns i [Förstå segment i Analytics och Audience Manager](https://experienceleague.adobe.com/sv/docs/analytics/integration/audience-analytics/audience-analytics-workflow/aam-analytics-segments).
+* En diskussion om **skillnaderna mellan segment i [!DNL Adobe Analytics] och[!DNL Audience Manager]** finns i [Förstå segment i Analytics och Audience Manager](/help/integrate/c-audience-analytics/aam-analytics-segments.md).
 
 ## Tidslinje för segmentpublicering
 
@@ -127,14 +127,14 @@ Följande skärmbilder visar hur du hämtar Adobe Audience Manager UUID i webbl�
 
 1. Starta Chrome Developer Tools innan du läser in en sida
 1. Läs in sidan och kontrollera Program > Cookies. Adobe Audience Manager UUID ska anges i tredjepartsprodukten
-Demdex cookie ([adobe.demdex.net](https://experienceleague.adobe.com/sv/docs/audience-manager/user-guide/reference/demdex-calls) i exemplet nedan). Fältdemonstrationen är Adobe Audience Manager UUID-uppsättningen
+Demdex cookie ([adobe.demdex.net](https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/reference/demdex-calls) i exemplet nedan). Fältdemonstrationen är Adobe Audience Manager UUID-uppsättningen
 i webbläsaren (`35721780439475290181087231320657663953` i exemplet nedan).
 
    ![Chrome Developer Tools](assets/devtools.png)
 
 ## Använd Audience Manager [!UICONTROL Visitor Profile Viewer]
 
-Adobe Audience Manager UUID i webbläsaren är som standard när [!UICONTROL Visitor Profile Viewer] läses in. Om du verifierar trait-implementeringar för andra användare anger du ett UUID i UUID-fältet och klickar på [!UICONTROL Refresh]. Mer information finns i [Visitor Profile Viewer](https://experienceleague.adobe.com/sv/docs/audience-manager/user-guide/features/visitor-profile-viewer).
+Adobe Audience Manager UUID i webbläsaren är som standard när [!UICONTROL Visitor Profile Viewer] läses in. Om du verifierar trait-implementeringar för andra användare anger du ett UUID i UUID-fältet och klickar på [!UICONTROL Refresh]. Mer information finns i [Visitor Profile Viewer](https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/features/visitor-profile-viewer).
 
 ## Visa segmentegenskaperna i [!DNL Audience Manager]
 

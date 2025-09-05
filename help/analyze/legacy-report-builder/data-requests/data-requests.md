@@ -4,9 +4,9 @@ title: Databegäranden - Guiden Begär begäran, steg 1
 feature: Report Builder
 role: User, Admin
 exl-id: 698662a8-8b6b-4338-a315-b41cf6a9424e
-source-git-commit: ae6ffed05f5a33f032d0c7471ccdb1029154ddbd
+source-git-commit: fcc165536d77284e002cb2ba6b7856be1fdb3e14
 workflow-type: tm+mt
-source-wordcount: '379'
+source-wordcount: '378'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ I begärandeguiden: Steg 1 väljer du rapportsviten, rapporttyp, segment och kon
 
 1. **Intervallväljare**: Gör att du kan välja ett rapportpaket-ID från en cell i Excel. Se [Välj rapportsviter](/help/analyze/legacy-report-builder/data-requests/selecting-report-suites/t-select-report-suites.md).
 
-1. **Segment**: Segment är anpassade delmängder av data eller data som filtreras efter regler som du skapar. Segmenten baseras på träffar, besök och besökare. Mer information om segment finns i [segmenteringshandboken för analyser](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-home.html?lang=sv-SE).
+1. **Segment**: Segment är anpassade delmängder av data eller data som filtreras efter regler som du skapar. Segmenten baseras på träffar, besök och besökare. Mer information om segment finns i [segmenteringshandboken för analyser](/help/components/segmentation/seg-home.md).
 
    Du kan till exempel köra [!UICONTROL Pages Report] och sedan använda ett segment för förstagångsbesök.
 

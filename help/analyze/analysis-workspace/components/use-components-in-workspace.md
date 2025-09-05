@@ -4,7 +4,7 @@ title: Använda komponenter i ett projekt
 feature: Workspace Basics
 role: User, Admin
 exl-id: fb56e794-67e3-4f85-960e-b90684300fa0
-source-git-commit: 35f2812c1a1a4eed090e04d67014fcebf88a80ec
+source-git-commit: 665319bdfc4c1599292c2e7aea45622d77a291a7
 workflow-type: tm+mt
 source-wordcount: '950'
 ht-degree: 0%
@@ -46,7 +46,7 @@ Mer information om hur du kan använda segmentsläppzonen på en panel för att 
 
 ### Lägga till dimensioner i ett projekt
 
-[Dimensioner](/help/components/dimensions/overview.md) är variabler i Adobe Analytics som vanligtvis innehåller strängvärden. [Mått](/help/components/c-calcmetrics/cm-overview.md) innehåller däremot numeriska värden som är kopplade till en dimension. En grundläggande rapport visar rader med strängvärden (dimension) mot en kolumn med numeriska värden (metrisk).
+[Dimensioner](/help/components/dimensions/overview.md) är variabler i Adobe Analytics som vanligtvis innehåller strängvärden. [Mått](/help/components/calculated-metrics/cm-overview.md) innehåller däremot numeriska värden som är kopplade till en dimension. En grundläggande rapport visar rader med strängvärden (dimension) mot en kolumn med numeriska värden (metrisk).
 
 1. Börja lägga till en dimension i ditt projekt i Analysis Workspace, enligt beskrivningen i [Lägg till komponenter i ett projekt](#add-components-to-a-project).
 
@@ -103,7 +103,7 @@ Mer information om hur du kan använda segmentsläppzonen på en panel för att 
 När du lägger till segment i en kolumn i en frihandstabell används segmenten på allt innehåll i tabellkolumnen. Du kan också lägga till segment som en del av en utfallsvisualisering.
 
 * Använda segment i komponenter
-När du definierar komponenter som [beräknade mätvärden](/help/components/c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/metrics-with-segments.md), [anteckningar](/help/analyze/analysis-workspace/components/annotations/create-annotations.md#annotation-builder) eller till och med [segment](/help/components/segmentation/segmentation-workflow/seg-build.md) kan du använda segment som en del av definitionen.
+När du definierar komponenter som [beräknade mätvärden](/help/components/calculated-metrics/workflow/c-build-metrics/metrics-with-segments.md), [anteckningar](/help/analyze/analysis-workspace/components/annotations/create-annotations.md#annotation-builder) eller till och med [segment](/help/components/segmentation/segmentation-workflow/seg-build.md) kan du använda segment som en del av definitionen.
 
 
 ### Lägga till datumintervall i ett projekt
@@ -245,7 +245,7 @@ When you add segments to a column in a freeform table, the segments apply to all
 
 In the Calculated metric builder, you can apply segments within your metric definition. 
 
-For more information, see [Segmented metrics](/help/components/c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/metrics-with-segments.md).
+For more information, see [Segmented metrics](/help/components/calculated-metrics/workflow/c-build-metrics/metrics-with-segments.md).
 
 ## Add date ranges to a project
 

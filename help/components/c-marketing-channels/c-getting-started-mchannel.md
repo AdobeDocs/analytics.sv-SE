@@ -3,7 +3,7 @@ title: Kom igång med marknadsföringskanaler
 description: Lär dig mer om arbetsflödet för marknadsföringskanaler, den automatiska konfigurationen och hur du tillämpar mallrapportsvitsinställningar på flera rapportsviter.
 feature: Marketing Channels
 exl-id: 35938bf9-89ab-434f-9dc2-7a65251412ef
-source-git-commit: 2eff7656741bdba3d5d7d1f33e9261b59f8e6083
+source-git-commit: a6967c7d4e1dca5491f13beccaa797167b503d6e
 workflow-type: tm+mt
 source-wordcount: '743'
 ht-degree: 1%
@@ -14,9 +14,9 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->För att maximera effekten av marknadsföringskanaler för attribuering och Customer Journey Analytics har vi publicerat [reviderade best practices](/help/components/c-marketing-channels/mchannel-best-practices.md).
+>För att maximera effekten av marknadsföringskanaler för Attribution och Customer Journey Analytics har vi publicerat [reviderade best practices](/help/components/c-marketing-channels/mchannel-best-practices.md).
 >
->Analysadministratörer kan hantera marknadsföringskanaler för sina organisationer enligt beskrivningen i [Hantera marknadsföringskanaler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/marketing-channels/c-channels.md).
+>Analysadministratörer kan hantera marknadsföringskanaler för sina organisationer enligt beskrivningen i [Hantera marknadsföringskanaler](/help/admin/tools/manage-rs/edit-settings/marketing-channels/c-channels.md).
 
 Marknadsföringskanaler används ofta för att ge insikter om hur besökarna kommer in på er webbplats. Ni kan anpassa era regler för kanalbearbetning för marknadsföring baserat på vilka kanaler ni vill spåra och hur ni vill spåra dem.
 
@@ -41,9 +41,9 @@ En lista med rekommenderade kanaler finns i [Vanliga frågor och exempel](/help/
 
 När du har definierat vilka kanaler som ska spåras aktiverar du dem i **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]**.
 
-Se [Kanaler och regler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/marketing-channels/c-channels.md) om du vill ha viktig information om förutsättningar och begrepp.
+Se [Kanaler och regler](/help/admin/tools/manage-rs/edit-settings/marketing-channels/c-channels.md) om du vill ha viktig information om förutsättningar och begrepp.
 
-Se [Lägg till marknadsföringskanaler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/marketing-channels/c-channels.md) för proceduren.
+Se [Lägg till marknadsföringskanaler](/help/admin/tools/manage-rs/edit-settings/marketing-channels/c-channels.md) för proceduren.
 
 >[!NOTE]
 >
@@ -53,7 +53,7 @@ Se [Lägg till marknadsföringskanaler](/help/admin/admin/c-manage-report-suites
 
 När du har skapat kanaler på sidan [!UICONTROL Marketing Channel Manager] konfigurerar du reglerna så att kanalerna kan hämta och rapportera data.
 
-Se [Bearbetningsregler för marknadsföringskanaler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/marketing-channels/c-rules.md).
+Se [Bearbetningsregler för marknadsföringskanaler](/help/admin/tools/manage-rs/edit-settings/marketing-channels/c-rules.md).
 
 Om kanaler skapades i den automatiska konfigurationen definieras reglerna i dessa kanaler. Du kan ändra dem efter dina behov.
 
@@ -71,7 +71,7 @@ Så här kör du den automatiska konfigurationen av marknadsföringskanalerna.
 
    >[!NOTE]
    >
-   >Sidan [!UICONTROL Marketing Channels: Auto Setup] visas automatiskt när du öppnar kanalkonfigurationsprogram i Admin Tools. (Se [Marknadsföringskanalhanteraren](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/marketing-channels/c-channels.md).) Den här sidan visas inte om rapportsviten innehåller en eller flera marknadsföringskanaler. Du kan inte komma åt den här sidan igen om du inte väljer en annan rapportsvit som inte innehåller marknadsföringskanaler.
+   >Sidan [!UICONTROL Marketing Channels: Auto Setup] visas automatiskt när du öppnar kanalkonfigurationsprogram i Admin Tools. (Se [Marketing Channel Manager](/help/admin/tools/manage-rs/edit-settings/marketing-channels/c-channels.md).) Den här sidan visas inte om rapportsviten innehåller en eller flera marknadsföringskanaler. Du kan inte komma åt den här sidan igen om du inte väljer en annan rapportsvit som inte innehåller marknadsföringskanaler.
 
 1. Kontrollera att de kanaler som du vill skapa är markerade.
 

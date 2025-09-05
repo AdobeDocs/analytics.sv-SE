@@ -4,7 +4,7 @@ title: Implementera märkning för flera programsviter
 feature: Implementation Basics
 exl-id: c7fb0478-97e1-4367-8742-e7539f6f82e7
 role: Admin, Developer, Leader
-source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
+source-git-commit: a6967c7d4e1dca5491f13beccaa797167b503d6e
 workflow-type: tm+mt
 source-wordcount: '282'
 ht-degree: 0%
@@ -13,13 +13,13 @@ ht-degree: 0%
 
 # Implementera märkning för flera programsviter
 
-[Med taggar för flera programsviter](/help/admin/admin/c-manage-report-suites/rollup-report-suite.md) kan du skicka bildbegäranden inte bara till en global rapportserie utan även till enskilda underordnade rapportsviter så att du kan tillhandahålla delmängder av företagets globala rapportsvitsdata till olika slutanvändare.
+[Med taggar för flera programsviter](/help/admin/tools/manage-rs/rollup-report-suite.md) kan du skicka bildbegäranden inte bara till en global rapportserie utan även till enskilda underordnade rapportsviter så att du kan tillhandahålla delmängder av företagets globala rapportsvitsdata till olika slutanvändare.
 
 Om du vill implementera taggning för flera programsviter måste du inkludera Report Suite-ID (RSID) för den globala rapportsviten och även RSID:n för de underordnade rapportsviterna i spårningskoden för dina webbsidor och appar.
 
-* För implementeringar av Adobe Experience Platform-taggar anger du var och en av rapportsviterna för [[!DNL Analytics] tillägget](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=sv-SE).
+* För implementeringar av Adobe Experience Platform-taggar anger du var och en av rapportsviterna för [[!DNL Analytics] tillägget](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html).
 
-* För tidigare implementeringar av JavaScript och mobil SDK avgränsar du RSID-identifierare med kommatecken och utan blanksteg (`rsid1,rsid2,rsid3` och så vidare).
+* För tidigare implementeringar av JavaScript och SDK för mobiler, skiljer du RSID-identifierare med kommatecken och utan mellanslag (`rsid1,rsid2,rsid3` och så vidare).
 
 * För andra implementeringstyper använder du den syntax som krävs för att lista flera RSID:er.
 

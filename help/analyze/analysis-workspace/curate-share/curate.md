@@ -5,9 +5,9 @@ title: Kuratprojekt
 feature: Curate and Share
 role: User, Admin
 exl-id: 5e23be83-586a-4543-9be9-65c631b8b0b7
-source-git-commit: 41d067ab852f4eb5c4a1368ade364fdb706bb9d9
+source-git-commit: fcc165536d77284e002cb2ba6b7856be1fdb3e14
 workflow-type: tm+mt
-source-wordcount: '506'
+source-wordcount: '505'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Så här tar du bort projektstrukturering och återställer alla komponenter i d
 
 ## Vuxen rapportsvitens urval
 
-Om du vill använda kurering på rapportsvitnivå, så att den tillämpas på många projekt samtidigt, kan du [strukturera komponenter i en virtuell rapportserie](https://experienceleague.adobe.com/sv/docs/analytics/components/virtual-report-suites/vrs-components).
+Om du vill använda kurering på rapportsvitnivå, så att den tillämpas på många projekt samtidigt, kan du [strukturera komponenter i en virtuell rapportserie](/help/components/vrs/vrs-components.md).
 
 >[!NOTE]
 >

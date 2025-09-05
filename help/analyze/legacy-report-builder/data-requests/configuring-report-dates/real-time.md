@@ -5,9 +5,9 @@ uuid: eb39b4a5-fb6f-476d-9383-e5323afcc51d
 feature: Report Builder
 role: User, Admin
 exl-id: 1d46b77c-1649-4bde-a7d6-0e57a2eca1c3
-source-git-commit: aac5421b658cf06b20ca5a3d22f07ef441283753
+source-git-commit: a6967c7d4e1dca5491f13beccaa797167b503d6e
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '244'
 ht-degree: 0%
 
 ---
@@ -27,8 +27,8 @@ Ni kan:
 * Använd en anpassad händelse, varukorshändelse eller instans.
 * Visa upp till 20 timmars historik och realtidsdata.
 
-I realtid respekteras behörigheter för användare och grupper. Om du till exempel inte har rätt att se intäkter kan du inte visa en realtidsrapport som innehåller intäktsdata. eVars (konverteringsmått) stöds inte. Realtidsbehörigheter är aktiverade i [administratörsverktygen](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/real-time-reports/t-realtime-admin.html?lang=sv-SE).
+I realtid respekteras behörigheter för användare och grupper. Om du till exempel inte har rätt att se intäkter kan du inte visa en realtidsrapport som innehåller intäktsdata. eVars (konverteringsmått) stöds inte. Realtidsbehörigheter är aktiverade i [administratörsverktygen](/help/admin/tools/manage-rs/edit-settings/realtime/t-realtime-admin.md).
 
 >[!NOTE]
 >
->[!UICONTROL Real-Time Reports] är inte samma sak som funktionen [Inkludera aktuella data](https://experienceleague.adobe.com/docs/analytics/analyze/legacy-report-builder/options.html?lang=sv-SE) (datagenstid) som släpptes tidigare, vilket reducerade fördröjningen för standardrapportering genom att visa data innan den är klar.
+>[!UICONTROL Real-Time Reports] är inte samma sak som funktionen [Inkludera aktuella data](/help/analyze/legacy-report-builder/options.md) (datagenstid) som släpptes tidigare, vilket reducerade fördröjningen för standardrapportering genom att visa data innan den är klar.

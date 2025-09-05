@@ -1,10 +1,10 @@
 ---
 title: Komma igång med Activity Map
-description: Kom igång med Activity Map-övertäckningen och -dimensionerna.
+description: Kom igång med Activity Map-övertäckning och dimensioner.
 feature: Activity Map
 role: User, Admin
 exl-id: 0b2b9f3d-0c75-4eb8-9235-c9c98eb035d3
-source-git-commit: bfafc1f8eddf82b34fb45e3d6197213f0cee0d97
+source-git-commit: a6967c7d4e1dca5491f13beccaa797167b503d6e
 workflow-type: tm+mt
 source-wordcount: '774'
 ht-degree: 0%
@@ -16,27 +16,27 @@ ht-degree: 0%
 Activity Map i Adobe Analytics består av fyra huvuddelar:
 
 * **Rapportsvitens inställning**: Du måste aktivera Activity Map i rapportsvitens inställningar. När det här alternativet är aktiverat skapar rapportsviten flera reserverade variabler för Activity Map-dimensioner och mått.
-* **Implementering**: Samla in Activity Map-data på din webbplats eller egenskap. Att anpassa hur data samlas in kan förbättra kvaliteten på och upplevelsen av rapporter.
-* **Workspace-dimensioner och mått**: När implementeringen är korrekt konfigurerad kan du använda Activity Map-dimensioner och mått i Analysis Workspace.
-* **Övertäckning**: Adobe har ett webbläsartillägg för att visa data från Activity Map i webbplatsens sammanhang.
+* **Implementering**: Samla in Activity Map-data på webbplatsen eller egenskapen. Att anpassa hur data samlas in kan förbättra kvaliteten på och upplevelsen av rapporter.
+* **Workspace dimensioner och mått**: När implementeringen är korrekt konfigurerad kan du använda Activity Map dimensioner och mått i Analysis Workspace.
+* **Övertäckning**: Adobe har ett webbläsartillägg för att visa Activity Map-data på din webbplats.
 
 ## Aktivera rapportsvitsinställning
 
-Rapporteringssviten måste ha Activity Map aktiverat innan du kan börja samla in data. Om implementeringen skickar data från Activity Map till en rapportserie utan Activity Map-rapportering aktiverad, inkluderas inte data från Activity Map i träffen.
+Rapporteringssviten måste ha Activity Map-rapportering aktiverad innan du kan börja samla in data. Om implementeringen skickar data från Activity Map till en rapportserie utan att Activity Map-rapportering är aktiverat inkluderas inte data från Activity Map i träffen.
 
 **[!UICONTROL Admin]** > **[!UICONTROL Report suites]** > Välj rapportserie > **[!UICONTROL Edit settings]** > **[!UICONTROL Activity Map]** > **[!UICONTROL Activity Map reporting]** > **[!UICONTROL Enable Activity Map Reports]**
 
-Om du aktiverar Activity Map-rapporter skapas flera reserverade variabler för backend-funktionen. Mer information finns i [Activity Map Reporting](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/activity-map.md) i Adobe Analytics administratörshandbok.
+När du aktiverar Activity Map-rapporter skapas flera reserverade variabler för serverdelen. Mer information finns i [Activity Map Reporting](/help/admin/tools/manage-rs/edit-settings/activity-map.md) i administrationshandboken för Adobe Analytics.
 
 ## Kodinstallation
 
-Implementeringen måste vara korrekt konfigurerad för att skicka data från Activity Map till Adobe.
+Implementeringen måste vara korrekt konfigurerad för att skicka Activity Map-data till Adobe.
 
-+++Web SDK-taggtillägg
++++SDK-taggtillägg
 
-Datainsamlingen i Activity Map kräver **[!UICONTROL Adobe Experience Platform Web SDK]**-tillägget v2.23 eller senare. Tilläggsversioner ned till v2.16 har begränsat stöd. Dessa tidigare tilläggsversioner skickar data från Activity Map i en annan händelse än resten av dina data. Den här extra händelsen ökar antalet träffar som du skickar till Adobe Analytics eller Adobe Experience Platform.
+Activity Map datainsamling kräver tillägget **[!UICONTROL Adobe Experience Platform Web SDK]** v2.23 eller senare. Tilläggsversioner ned till v2.16 har begränsat stöd. Dessa tidigare tilläggsversioner skickar Activity Map-data i en annan händelse än resten av dina data. Den här extra händelsen ökar antalet träffar som du skickar till Adobe Analytics eller Adobe Experience Platform.
 
-Konfigurationsinställningen **[!UICONTROL Click data collection]** hanterar Activity Map-datainsamling och är vanligtvis aktiverad som standard. Du kan kontrollera att det är aktiverat i tilläggets konfigurationsinställningar:
+Konfigurationsinställningen **[!UICONTROL Click data collection]** hanterar Activity Map datainsamling och är vanligtvis aktiverad som standard. Du kan kontrollera att det är aktiverat i tilläggets konfigurationsinställningar:
 
 1. Logga in på [experience.adobe.com](https://experience.adobe.com)
 1. Välj **[!UICONTROL Data Collection]** på snabbåtkomstmenyn eller produktväljaren högst upp till höger.
@@ -48,15 +48,15 @@ Konfigurationsinställningen **[!UICONTROL Click data collection]** hanterar Act
 1. Välj **[!UICONTROL Save]**.
 1. Om det behövs kan du bygga upp ändringarna i ett bibliotek och publicera ändringarna i produktionen.
 
-Mer information finns i [Konfigurera Web SDK-taggtillägget](https://experienceleague.adobe.com/sv/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration#data-collection).
+Mer information finns i [Konfigurera SDK-taggtillägget för webben](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration#data-collection).
 
 +++
 
-+++Web SDK JavaScript-bibliotek (`alloy.js`)
++++Webbbibliotek för SDK JavaScript (`alloy.js`)
 
-Activity Map datainsamling kräver Web SDK JavaScript-biblioteket v2.20 eller senare. Biblioteksversioner ned till v2.15 har begränsat stöd. Dessa tidigare biblioteksversioner skickar data från Activity Map i en separat händelse från resten av dina data. Den här extra händelsen ökar antalet träffar som du skickar till Adobe Analytics eller Adobe Experience Platform.
+Activity Map datainsamling kräver Web SDK JavaScript Library v2.20 eller senare. Biblioteksversioner ned till v2.15 har begränsat stöd. Dessa tidigare biblioteksversioner skickar Activity Map-data vid en annan händelse än resten av dina data. Den här extra händelsen ökar antalet träffar som du skickar till Adobe Analytics eller Adobe Experience Platform.
 
-Konfigurationsvariabeln [`clickCollectionEnabled`](https://experienceleague.adobe.com/sv/docs/experience-platform/web-sdk/commands/configure/clickcollectionenabled) för Web SDK hanterar den automatiska samlingen av Activity Map-data. Den är aktiverad som standard om den inte uttryckligen är inaktiverad.
+Konfigurationsvariabeln [`clickCollectionEnabled`](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/clickcollectionenabled) för Web SDK hanterar den automatiska samlingen av Activity Map-data. Den är aktiverad som standard om den inte uttryckligen är inaktiverad.
 
 ```js
 alloy("configure", {
@@ -70,7 +70,7 @@ alloy("configure", {
 
 +++Adobe Analytics-taggtillägg
 
-Konfigurationsinställningen **[!UICONTROL Use Activity Map]** hanterar Activity Map-datainsamling och är vanligtvis aktiverad som standard. Den är tillgänglig för alla taggtillägg v1.9.0 eller senare. Du kan kontrollera att det är aktiverat i tilläggets konfigurationsinställningar:
+Konfigurationsinställningen **[!UICONTROL Use Activity Map]** hanterar Activity Map datainsamling och är vanligtvis aktiverad som standard. Den är tillgänglig för alla taggtillägg v1.9.0 eller senare. Du kan kontrollera att det är aktiverat i tilläggets konfigurationsinställningar:
 
 1. Logga in på [experience.adobe.com](https://experience.adobe.com)
 1. Välj **[!UICONTROL Data Collection]** på snabbåtkomstmenyn eller produktväljaren högst upp till höger.
@@ -82,17 +82,17 @@ Konfigurationsinställningen **[!UICONTROL Use Activity Map]** hanterar Activity
 1. Välj **[!UICONTROL Save]**.
 1. Om det behövs kan du bygga upp ändringarna i ett bibliotek och publicera ändringarna i produktionen.
 
-Mer information finns i översikten över [Adobe Analytics-tillägget](https://experienceleague.adobe.com/sv/docs/experience-platform/tags/extensions/client/analytics/overview).
+Mer information finns i översikten över [Adobe Analytics-tillägget](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/analytics/overview).
 
 +++
 
 +++Adobe Analytics JavaScript-bibliotek (`AppMeasurement.js`)
 
-Modulen Activity Map hanterar datainsamling från Activity Map och ingår i alla AppMeasurementen v1.6 eller senare. Du kan kontrollera filen `AppMeasurement.js` och se till att den ingår.
+Activity Map-modulen hanterar Activity Map datainsamling och ingår i alla AppMeasurement-bibliotek v1.6 eller senare. Du kan kontrollera filen `AppMeasurement.js` och se till att den ingår.
 
-1. Navigera till den [senaste utgåvan av Adobe Analytics-AppMeasurementet](https://github.com/adobe/appmeasurement/releases/latest) på GitHub.
-1. Hämta biblioteksfilen för det komprimerade AppMeasurementet och öppna sedan `AppMeasurement.js` som finns i den.
-1. Modulen Activity Map finns i den övre delen av filen. Kontrollera att den här modulen ingår i det AppMeasurement som används på platsen.
+1. Navigera till den [senaste Adobe Analytics AppMeasurement-versionen](https://github.com/adobe/appmeasurement/releases/latest) på GitHub.
+1. Hämta den komprimerade AppMeasurement-biblioteksfilen och öppna sedan `AppMeasurement.js` som finns inuti.
+1. Activity Map-modulen finns i den övre delen av filen. Kontrollera att den här modulen ingår i det AppMeasurement-bibliotek som används på din webbplats.
 
 +++
 
@@ -107,7 +107,7 @@ När Activity Map är aktiverat för både rapportsviten och implementeringen ka
 
 ## Hämta och installera webbläsartillägget eller tillägget
 
-Förutom de dimensioner som är tillgängliga i Analysis Workspace kan du även visa data från Activity Map som en övertäckning på din webbplats. Om du vill visa den här övertäckningen hämtar och installerar du webbläsartillägget eller tillägget Activity Map.
+Förutom de dimensioner som är tillgängliga i Analysis Workspace kan du även visa Activity Map-data som en övertäckning på din webbplats. Om du vill visa den här övertäckningen hämtar och installerar du webbläsartillägget eller tillägget för Activity Map.
 
 **[!UICONTROL Tools]** > **[!UICONTROL Activity Map]** > **[!UICONTROL Download Activity Map]**
 

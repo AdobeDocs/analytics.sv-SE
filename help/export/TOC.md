@@ -4,18 +4,18 @@ audience: end-user
 user-guide-title: Exporthandbok för Analytics
 breadcrumb-title: Användarhandbok om export
 user-guide-description: Lär dig hur du använder dataflöden och Data Warehouse för att hämta data.
-source-git-commit: 9131c9ffbcf409620a67b36637367af22733b909
+source-git-commit: bb068d39f756c4cce06349d0bd969212e19cb33e
 workflow-type: tm+mt
-source-wordcount: '262'
-ht-degree: 7%
+source-wordcount: '255'
+ht-degree: 6%
 
 ---
 
 
 # Adobe Analytics Export Guide {#export}
 
-+ [Exporthandbok för Analytics](home.md)
-+ [Versionsinformation för analyser](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html?lang=sv-SE)
++ [Exportguide för analyser](home.md)
++ [Versionsinformation för analyser](https://experienceleague.adobe.com/en/docs/analytics/release-notes/latest)
 + Datafeed i Analytics {#analytics-data-feed}
    + [Översikt över dataflöden](analytics-data-feed/data-feed-overview.md)
    + [Skapa en datafeed](analytics-data-feed/create-feed.md)
@@ -73,6 +73,4 @@ ht-degree: 7%
       + [Skicka Adobe-data till ett externt FTP-konto med SFTP](ftp-and-sftp/c-sftp/ftp-sftp-transfer.md)
       + [Skicka Data Warehouse-förfrågningar till SFTP-servrar](ftp-and-sftp/c-sftp/ftp-sftp-dw.md)
       + [Anslut till Adobe via SFTP utan lösenord](ftp-and-sftp/c-sftp/ftp-sftp-cert-auth.md)
-+ [Analysis Workspace nedladdningar](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/download-send.html?lang=sv-SE)
-+ [Adobe Analytics API](https://www.adobe.io/apis/experiencecloud/analytics/docs.html)
-+ [Report Builder](https://experienceleague.adobe.com/sv/docs/analytics/analyze/report-builder/rb-overview)
++ [Adobe Analytics API](https://developer.adobe.com/analytics-apis/docs/2.0/)

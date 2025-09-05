@@ -3,7 +3,7 @@ title: Anpassa rapporter i Adobe Analytics
 description: Lär dig hur du anpassar rapporter i Adobe Analytics
 feature: Third-party Integration
 exl-id: 8ea6ec3a-cfc6-4c14-966b-d245949451c7
-source-git-commit: 815e50e30fa6a0bce1bf78f33843070f96f52de8
+source-git-commit: 325a42c080290509309e90c9127138800d5ac496
 workflow-type: tm+mt
 source-wordcount: '565'
 ht-degree: 0%
@@ -12,13 +12,13 @@ ht-degree: 0%
 
 # Anpassa rapporter
 
-På tredjepartsplattformar som Google Analytics finns flera anpassningsalternativ tillgängliga. Med dessa anpassningar kan användare skapa kontrollpaneler, anpassade rapporter, sparade rapporter och anpassade aviseringar. Eftersom Analysis Workspace låter användare skapa rapporter från en tom arbetsyta är de flesta anpassningar inbyggda direkt i verktyget.
+På tredjepartsplattformar som Google Analytics finns flera anpassningsalternativ. Med dessa anpassningar kan användare skapa kontrollpaneler, anpassade rapporter, sparade rapporter och anpassade aviseringar. Eftersom Analysis Workspace låter användare skapa rapporter från en tom arbetsyta är de flesta anpassningar inbyggda direkt i verktyget.
 
-Den här sidan förutsätter att användaren har grundläggande kunskaper om att använda [!UICONTROL Analysis Workspace]. Se [Skapa en grundläggande rapport i Analysis Workspace för användare av Google Analytics](reports/create-report.md) om du inte redan känner till verktyget i Adobe Analytics.
+Den här sidan förutsätter att användaren har grundläggande kunskaper om att använda [!UICONTROL Analysis Workspace]. Se [Skapa en grundläggande rapport i Analysis Workspace för Google Analytics-användare](reports/create-report.md) om du ännu inte känner till verktyget i Adobe Analytics.
 
 ## Kontrollpaneler
 
-Arkitekturen [!UICONTROL Analysis Workspace] har skapats på ungefär samma sätt som för instrumentpanelswidgetar. Projekt i [!UICONTROL Analysis Workspace] är ungefär lika stora som kontrollpaneler i Google Analytics. Visualiseringar i [!UICONTROL Analysis Workspace] är den ungefärliga motsvarigheten till widgetar i Google Analytics.
+Arkitekturen [!UICONTROL Analysis Workspace] har skapats på ungefär samma sätt som för instrumentpanelswidgetar. Projekt i [!UICONTROL Analysis Workspace] motsvarar ungefär kontrollpaneler i Google Analytics. Visualiseringar i [!UICONTROL Analysis Workspace] är en ungefärlig motsvarighet till widgetar i Google Analytics.
 
 ### Lägga till innehåll i ett projekt
 
@@ -54,11 +54,11 @@ Förutom PDF erbjuder [!UICONTROL Analysis Workspace] en CSV-export.
 
 ## Anpassade rapporter
 
-När du skapar en anpassad rapport i Google Analytics liknar de fält som behövs arbetsflödet när du skapar en visualisering i arbetsytan. Definitionerna för Dimensioner, mått och filter är desamma mellan olika plattformar. I Analysis Workspace, i stället för att välja mått och mätvärden från en lista, dras mått och mätvärden till en frihandstabell.
+När du skapar en anpassad rapport i Google Analytics liknar de obligatoriska fälten arbetsflödet när du skapar en visualisering i arbetsytan. Dimensions-, Metrics- och Filter-definitionerna är lika mellan plattformarna. I Analysis Workspace, i stället för att välja mått och mätvärden från en lista, dras mått och mätvärden till en frihandstabell.
 
 ### Beräknade mått i anpassade rapporter
 
-Anpassade rapporter är ett av de få områden i Google Analytics som tillåter användning av beräknade värden. Eftersom Analysis Workspace fungerar som en arbetsyta fungerar beräknade mätvärden retroaktivt och i alla sammanhang.
+Anpassade rapporter är ett av de få områden i Google Analytics som tillåter användning av beräknade mätvärden. Eftersom Analysis Workspace fungerar som en arbetsyta fungerar beräknade mätvärden retroaktivt och i alla sammanhang.
 
 Så här skapar du ett beräknat mått:
 
@@ -68,8 +68,8 @@ Så här skapar du ett beräknat mått:
 4. När det beräknade måttet innehåller den önskade formeln klickar du på Spara för att gå tillbaka till arbetsytan.
 5. Dra det nydefinierade beräknade måttet till arbetsytan.
 
-   Läs mer om [Beräknade mått](/help/components/c-calcmetrics/cm-overview.md) i användarhandboken för komponenter.
+   Läs mer om [Beräknade mått](/help/components/calculated-metrics/cm-overview.md) i användarhandboken för komponenter.
 
 ## Anpassade aviseringar
 
-Varningar är tillgängliga på båda plattformarna. I Adobe Analytics använder du rubriknavigeringsmenyn och går till *[!UICONTROL Components]* > *[!UICONTROL Alerts]*. Mer information finns i [Översikt över aviseringar](/help/components/c-alerts/intellligent-alerts.md) i användarhandboken för komponenter.
+Varningar är tillgängliga på båda plattformarna. I Adobe Analytics använder du rubriknavigeringsmenyn och går till *[!UICONTROL Components]* > *[!UICONTROL Alerts]*. Mer information finns i [Översikt över aviseringar](/help/components/alerts/alerts-overview.md) i användarhandboken för komponenter.

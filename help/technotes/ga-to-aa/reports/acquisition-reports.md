@@ -3,7 +3,7 @@ title: Anskaffningsrapporter i Adobe Analytics
 description: Lär dig hur du skapar kundvärvningsbaserade rapporter med Analysis Workspace.
 feature: Third-party Integration
 exl-id: 2929d34b-8eb0-4105-a49c-02d536929fe0
-source-git-commit: 34ba0e09cd909951a777b0ad3da080958633f97e
+source-git-commit: a6967c7d4e1dca5491f13beccaa797167b503d6e
 workflow-type: tm+mt
 source-wordcount: '1578'
 ht-degree: 0%
@@ -20,7 +20,7 @@ I Adobe Analytics kallas dessa rapporter för **marknadsföringskanaler**. De kr
 >
 > Ställ in bearbetningsreglerna för marknadsföringskanaler för att använda dessa rapporter. Se [Komma igång med marknadsföringskanaler](/help/components/c-marketing-channels/c-getting-started-mchannel.md) för information om hur du bäst konfigurerar marknadsföringskanaler i din organisation.
 
-Den här sidan förutsätter att användaren har grundläggande kunskaper i Analysis Workspace. Se [Skapa en grundläggande rapport i Analysis Workspace för användare av Google Analytics](create-report.md) om du inte redan känner till verktyget i Adobe Analytics.
+Den här sidan förutsätter att användaren har grundläggande kunskaper i Analysis Workspace. Se [Skapa en grundläggande rapport i Analysis Workspace för Google Analytics-användare](create-report.md) om du ännu inte känner till verktyget i Adobe Analytics.
 
 ## All trafik - kanaler
 
@@ -94,7 +94,7 @@ Rapporten Nätverksreferenser visar vilka sociala nätverksdomäner som körde t
 
 Rapporten Landningssidor visar vilka sidor besökare fick ta del av efter att ha klickat på en länk via ett socialt nätverk. Dessa data är tillgängliga i Analysis Workspace med segmentet **Inmatningssida** och **Besök från sociala webbplatser**.
 
-1. Leta reda på dimensionen **Startsida** på komponentmenyn och dra den till det stora frihandstabellområdet med etiketten &#39;Släpp en Dimension här&#39;.
+1. På menyn Komponenter letar du upp dimensionen **Inmatningssida** och drar den till det stora frihandstabellområdet med etiketten &#39;Släpp en Dimension här&#39;.
 2. På menyn Komponenter letar du reda på segmentet **Besök från sociala webbplatser** och drar in det lilla området precis ovanför frihandstabellen med namnet &#39;Släpp ett segment här&#39;.
 3. Dra de önskade måtten till arbetsytan bredvid det automatiskt skapade **förekomstmåttet** . Mer information om hur du hämtar respektive mätvärde finns i [måttöversättningsguiden](common-metrics.md).
 
@@ -104,7 +104,7 @@ Rapporten Conversions visar e-handelsdata i samband med sociala nätverk. Det kr
 
 ### Socialt - plugin-program
 
-Pluginrapporten visar hur besökare interagerar med inbäddade plugin-program för sociala medier på din webbplats. Ytterligare implementering krävs för Analysis Workspace. Adobe rekommenderar att man samarbetar med en implementeringskonsult för att säkerställa att dessa data samlas in korrekt.
+Pluginrapporten visar hur besökare interagerar med inbäddade plugin-program för sociala medier på din webbplats. Ytterligare implementering krävs för Analysis Workspace. Adobe rekommenderar att du samarbetar med en implementeringskonsult för att säkerställa att dessa data samlas in korrekt.
 
 ### Socialt - användarflöde
 
@@ -112,8 +112,8 @@ Flödesrapporten Användare visar kunddata i samband med besökare som kommer vi
 
 1. Klicka på visualiseringsikonen till vänster och dra en Flow-visualisering till arbetsytan ovanför frihandstabellen
 2. Klicka på ikonen Komponenter till vänster och dra sedan segmentet **Besök från sociala webbplatser** till det lilla området precis ovanför flödesvisualiseringen med namnet &#39;Släpp ett segment här&#39;.
-3. Leta reda på dimensionen **Sidor** och klicka sedan på pilikonen för att visa sidvärden. Dimensioner är gulfärgade.
-4. Leta reda på det sidvärde du vill börja med och dra det till utrymmet&quot;Dimension or item&quot; i mitten
+3. Leta reda på dimensionen **Sidor** och klicka sedan på pilikonen för att visa sidvärden. Dimension-objekt är gulfärgade.
+4. Leta reda på det sidvärde du vill börja med och dra det till det utrymme som heter Dimension eller objekt i mitten
 5. Den här flödesrapporten är interaktiv. Klicka på något av värdena för att utöka flödena till efterföljande eller föregående sidor. Använd högerklicksmenyn för att expandera eller komprimera kolumner. Olika dimensioner kan också användas i samma flödesrapport.
 
 ## Kampanjer - alla
@@ -122,12 +122,12 @@ Kampanjrapporten är tillgänglig i Analysis Workspace med dimensionen **Spårni
 
 Det går att samla in UTM-parametrar i Adobe Analytics med hjälp av anpassade variabler (eVars). Adobe rekommenderar att du samarbetar med en implementeringskonsult för att säkerställa att spårningskodvärden samlas in korrekt i Adobe Analytics.
 
-1. Leta reda på dimensionen **Spårningskod** på komponentmenyn och dra den till det stora frihandstabellområdet med etiketten &#39;Släpp en Dimension här&#39;.
+1. Leta reda på dimensionen **Spårningskod** på menyn Komponenter och dra den till det stora frihandstabellområdet med etiketten &#39;Släpp en Dimension här&#39;.
 2. Dra de önskade måtten till arbetsytan bredvid det automatiskt skapade **förekomstmåttet** . Mer information om hur du hämtar respektive mätvärde finns i [måttöversättningsguiden](common-metrics.md).
 
 ## Kampanjer - Betalda nyckelord
 
-Rapporten med betalda nyckelord visar hur varje nyckelord fungerar när en besökare klickar på en betalsöklänk från en sökmotor. Dimensionen **Söknyckelord - betald** är tillgänglig i Analysis Workspace, men kräver en engångsinställning av betald sökidentifiering för att samla in data. Se [Betalsökningsidentifiering](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/paid-search-detection/paid-search-detection.md) i användarhandboken för administratörer för mer information om inställningarna.
+Rapporten med betalda nyckelord visar hur varje nyckelord fungerar när en besökare klickar på en betalsöklänk från en sökmotor. Dimensionen **Söknyckelord - betald** är tillgänglig i Analysis Workspace, men kräver en engångsinställning av betald sökidentifiering för att samla in data. Se [Betalsökningsidentifiering](/help/admin/tools/manage-rs/edit-settings/general/paid-search-detection/paid-search-detection.md) i användarhandboken för administratörer för mer information om inställningarna.
 
 1. Leta reda på dimensionen **Sök nyckelord - Betald** på komponentmenyn och dra den till det stora frihandstabellområdet med etiketten &#39;Släpp en Dimension här&#39;.
 2. Dra de önskade måtten till arbetsytan bredvid det automatiskt skapade **förekomstmåttet** . Mer information om hur du hämtar respektive mätvärde finns i [måttöversättningsguiden](common-metrics.md).
@@ -141,4 +141,4 @@ Rapporten med organiska nyckelord visar hur varje nyckelord fungerar när en bes
 
 ## Kostnadsanalys
 
-Den här rapporten visar besöks-, kostnads- och intäktsresultatdata för era betalda marknadsföringskanaler. Adobe tillhandahåller en dedikerad produkt som ger insikt i namnet Adobe Advertising Cloud. Om din organisation är intresserad av att använda den här produkten kontaktar du ditt Adobe-kontoteam.
+Den här rapporten visar besöks-, kostnads- och intäktsresultatdata för era betalda marknadsföringskanaler. Adobe tillhandahåller en dedikerad produkt som ger insikt i Adobe Advertising Cloud. Om din organisation är intresserad av att använda den här produkten kontaktar du ditt Adobe-kontoteam.

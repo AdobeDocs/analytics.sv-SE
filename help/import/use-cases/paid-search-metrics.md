@@ -3,10 +3,10 @@ title: Importera mått för betald sökning
 description: Steg för att konfigurera Adobe Analytics för att spåra dina betalda sökvärden (t.ex. Google Ads, Microsoft Advertising, etc.) med hjälp av datakällor.
 exl-id: b25a2a26-d277-4a51-9194-973acb425095
 feature: Data Sources
-source-git-commit: 6bedfb9b1333a442bf17cf71dad1e0883b97fd45
+source-git-commit: 665319bdfc4c1599292c2e7aea45622d77a291a7
 workflow-type: tm+mt
-source-wordcount: '1099'
-ht-degree: 0%
+source-wordcount: '1098'
+ht-degree: 1%
 
 ---
 
@@ -53,11 +53,11 @@ Du bör få ett meddelande om att dina spara har godkänts.
 
 1. Navigera till **[!UICONTROL Adobe Analytics > Admin > All admin > Data sources]**.
 1. Välj fliken **[!UICONTROL Create]** för att börja aktivera nya datakällor.
-1. Välj **[!UICONTROL Ad Campaign]** under **[!UICONTROL Select Category]**.
+1. Välj **[!UICONTROL Select Category]** under **[!UICONTROL Ad Campaign]**.
 
    ![Datakällor](assets/data-sources.png)
 
-1. Välj **[!UICONTROL Generic Pay-Per-Click Service]** under **[!UICONTROL Select Type]**.
+1. Välj **[!UICONTROL Select Type]** under **[!UICONTROL Generic Pay-Per-Click Service]**.
 1. Klicka på **[!UICONTROL Activate]**.
 [!UICONTROL Data Source Activation Wizard] visar:
 
@@ -66,7 +66,7 @@ Du bör få ett meddelande om att dina spara har godkänts.
 1. Klicka på **[!UICONTROL Next]** och ge datakällan ett namn. Det här namnet visas i Data Source Manager.
 1. Acceptera serviceavtalet och klicka på **[!UICONTROL Next]**.
 1. Välj tre standardmått: [!UICONTROL Impressions], [!UICONTROL Clicks] och [!UICONTROL Total Cost] och klicka på **[!UICONTROL Next]**.
-1. Mappa nu den här nya datakällan till anpassade händelser som vi skapade i [Slutförda händelser](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/c-success-events/success-event.md).
+1. Mappa nu den här nya datakällan till anpassade händelser som vi skapade i [Slutförda händelser](/help/admin/tools/manage-rs/edit-settings/conversion-var-admin/c-success-events/success-event.md).
 
    ![Mappning](assets/data-source-mapping.png)
 
@@ -118,7 +118,7 @@ Gå tillbaka till guiden för Data Source för instruktioner och överför filen
 
 Det kan vara praktiskt att lägga till beräknade värden när man ska fatta beslut per klick.
 
-Du kan till exempel lägga till följande [beräknade mått](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html?lang=sv-SE#calculated-metrics):
+Du kan till exempel lägga till följande [beräknade mått](/help/components/calculated-metrics/workflow/c-build-metrics/cm-build-metrics.md#calculated-metrics):
 
 | Namn | Formel | Mätningstyp | Beskrivning |
 | --- | --- | --- | --- |

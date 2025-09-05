@@ -3,7 +3,7 @@ title: Översikt över mätvärden
 description: Visa kvantiteter för dimensionsobjekt eller data över tid.
 feature: Metrics
 exl-id: 8dda3bc4-ffac-4407-896f-6064727d099c
-source-git-commit: ff38740116ac6f12033ebdc17cffa3250a30f3f7
+source-git-commit: 325a42c080290509309e90c9127138800d5ac496
 workflow-type: tm+mt
 source-wordcount: '217'
 ht-degree: 3%
@@ -24,7 +24,7 @@ Om du till exempel kombinerar dimensionen **[!UICONTROL Page]** med måttet **[!
 
 {style="table-layout:fixed"}
 
-Om du inte kan hitta hjälpsidan för ett givet mätresultat är det troligtvis antingen en [anpassad händelse](custom-events.md) eller ett [beräknat mått](../c-calcmetrics/cm-overview.md).
+Om du inte kan hitta hjälpsidan för ett givet mätresultat är det troligtvis antingen en [anpassad händelse](custom-events.md) eller ett [beräknat mått](../calculated-metrics/cm-overview.md).
 
 * Om mätvärdet är en anpassad händelse kontaktar du en Analytics-administratör i organisationen eller rapportsvitens [lösningsdesigndokument](/help/implement/prepare/solution-design.md).
 * Om måttet är ett beräknat mått klickar du på informationsikonen för att bestämma dess formel.

@@ -4,7 +4,7 @@ description: Ange variabeln events, som styr de flesta mätvärden på din webbp
 feature: Appmeasurement Implementation
 exl-id: 6ef99ee5-40c3-4ff2-a75d-c97f2e8ec1f8
 role: Admin, Developer
-source-git-commit: 665bd68d7ebc08f0da02d93977ee0b583e1a28e6
+source-git-commit: a6967c7d4e1dca5491f13beccaa797167b503d6e
 workflow-type: tm+mt
 source-wordcount: '833'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Dimensioner och mätvärden är viktiga komponenter i rapporter. Variabeln `events` ansvarar för datainsamling av många mätvärden på din webbplats. Händelser ökar vanligtvis [måtten](/help/components/metrics/overview.md) i rapporter.
 
-Innan du implementerar händelser måste du skapa och konfigurera dem under [Slutförda händelser](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/c-success-events/success-event.md) i inställningarna för rapportsviten. Om du tänker använda anpassade händelser i länkspårningsträffar kontrollerar du att [`linkTrackVars`](../../config-vars/linktrackvars.md) och [`linkTrackEvents`](../../config-vars/linktrackevents.md) har angetts korrekt.
+Innan du implementerar händelser måste du skapa och konfigurera dem under [Slutförda händelser](/help/admin/tools/manage-rs/edit-settings/conversion-var-admin/c-success-events/success-event.md) i inställningarna för rapportsviten. Om du tänker använda anpassade händelser i länkspårningsträffar kontrollerar du att [`linkTrackVars`](../../config-vars/linktrackvars.md) och [`linkTrackEvents`](../../config-vars/linktrackevents.md) har angetts korrekt.
 
 ## Evenemang som använder Web SDK
 
@@ -47,7 +47,7 @@ Du kan ange händelser antingen när du konfigurerar Analytics-tillägget (globa
 1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med dina inloggningsuppgifter för AdobeID.
 2. Klicka på den önskade taggegenskapen.
 3. Gå till fliken [!UICONTROL Rules] och klicka sedan på önskad regel (eller skapa en regel).
-4. Klicka på en befintlig [!UICONTROL Adobe Analytics - Set Variables]-åtgärd under [!UICONTROL Actions] eller klicka på +-ikonen.
+4. Klicka på en befintlig [!UICONTROL Actions]-åtgärd under [!UICONTROL Adobe Analytics - Set Variables] eller klicka på +-ikonen.
 5. Ange Adobe Analytics i listrutan [!UICONTROL Extension] och [!UICONTROL Action Type] till [!UICONTROL Set Variables].
 6. Leta reda på avsnittet [!UICONTROL Events].
 
@@ -68,7 +68,7 @@ Variabeln `s.events` är en sträng som innehåller en kommaavgränsad lista med
 * `scOpen`: Ökar måttet [&#39;Carts&#39;](/help/components/metrics/carts.md).
 * `scAdd`: Ökar måttet [&#39;Cart Additions&#39; ](/help/components/metrics/cart-additions.md).
 * `scRemove`: Ökar måttet [&#39;Cart Removals&#39;](/help/components/metrics/cart-removals.md).
-* `scView`: Ökar måttet [&#128279;](/help/components/metrics/cart-views.md) för  kundvagnsvyer.
+* `scView`: Ökar måttet [ för ](/help/components/metrics/cart-views.md) kundvagnsvyer.
 * `scCheckout`: Ökar måttet [&#39;Checkouts&#39;](/help/components/metrics/checkouts.md).
 
 >[!NOTE]
@@ -103,7 +103,7 @@ s.events = "event1=2,event2";
 
 Du kan ändra en anpassad händelse så att den använder valuta i stället för heltal. Valutahändelser konverteras automatiskt till rapportsvitens valuta om rapportsvitens valuta och variabeln `currencyCode` inte matchar. De är användbara för att beräkna fraktkostnader, rabatter eller återbetalningar. Du kan ange valutakändelser i variabeln `products` om du bara vill tilldela händelsen till den produkten.
 
-Innan du implementerar valutakändelser måste du se till att du ställer in den önskade händelsen på Currency under [Success events](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/c-success-events/success-event.md) i inställningarna för rapportsviten.
+Innan du implementerar valutakändelser måste du se till att du ställer in den önskade händelsen på Currency under [Success events](/help/admin/tools/manage-rs/edit-settings/conversion-var-admin/c-success-events/success-event.md) i inställningarna för rapportsviten.
 
 ```js
 // Send $9.99 USD in event1 using the events variable. Make sure the event type for event1 is Currency in Report suite settings
@@ -124,7 +124,7 @@ s.products = "Example category;Example product;1;0;event1=9.99";
 
 Du kan ändra en anpassad händelse och acceptera decimalvärden i stället för heltal. Numeriska händelser fungerar på ungefär samma sätt som valutakändelser, förutom att de inte använder valutakonvertering. Du kan ange numeriska händelser i variabeln `products` om du vill att händelsen bara ska vara den produkten.
 
-Innan du implementerar numeriska händelser bör du kontrollera att du har angett den önskade händelsen till Numeric under [Success events](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/c-success-events/success-event.md) i inställningarna för rapportsviten.
+Innan du implementerar numeriska händelser bör du kontrollera att du har angett den önskade händelsen till Numeric under [Success events](/help/admin/tools/manage-rs/edit-settings/conversion-var-admin/c-success-events/success-event.md) i inställningarna för rapportsviten.
 
 ```js
 // Send 4.5 in event1 using the events variable. Make sure the event type for event1 is Numeric in Report suite settings

@@ -4,7 +4,7 @@ description: Lär dig hur du kommer igång med Adobe Analytics, allmänna rollty
 feature: Admin Tools
 exl-id: 9d10716f-5b66-42dc-b288-af34da203c35
 role: Admin
-source-git-commit: a7cc0efe42ff7dc4aacc841156e25e3cab6b82f4
+source-git-commit: a6967c7d4e1dca5491f13beccaa797167b503d6e
 workflow-type: tm+mt
 source-wordcount: '1103'
 ht-degree: 0%
@@ -28,7 +28,7 @@ Tänk på följande nyckelroller när du använder Adobe Analytics:
 * **Administratörer för datainsamling:** De här användarna har fullständig åtkomst till allt i Adobe Experience Platform Data Collection, inklusive publiceringsbehörigheter, skapande av behållare och användarbehörigheter. Dessa användare behöver inte nödvändigtvis vara programmerare, men det är bra att åtminstone ha en nybörjare som känner till HTML, CSS och JavaScript. De ansvarar för att samarbeta med webbplatsägarna i din organisation för att få tag på era webbplatser. Identifiera minst en användare som är ansvarig för implementeringen av din organisation, och de kan bjuda in andra administratörer för datainsamling därifrån.
 * **Produktadministratör:** En produktadministratör hanterar en produkt i Admin Console samt användarrättigheter för den produkten.
 * **Administratörer för produktprofiler:** Dessa användare kan lägga till eller ta bort användare i en produktprofil, justera behörighetsobjekt i sin produktprofil och tilldela eller ta bort produktprofiler till användargrupper. Produktprofiladministratörer har inte fullständig åtkomst till Adobe Analytics. De är dock idealiska för gruppledare och chefer som behöver ge och hantera åtkomst till Adobe Analytics för sitt team. Mer information om produktprofiler finns i [Produktprofiler för Adobe Analytics](/help/admin/admin-console/permissions/product-profile.md).
-* **Supportadministratör**: Användarna kallas även användare som stöds och har inga ytterligare behörigheter i Analytics-gränssnittet. I stället får de ytterligare privilegier när de kommunicerar med Adobe kundtjänst. De här användarna är nästan alltid Analytics-administratörer också, eftersom det hjälper kundtjänst att felsöka problem med dem. Identifiera minst en Analytics-administratör som ansvarar för att underlätta interaktionen mellan slutanvändare och Adobe kundtjänst.
+* **Supportadministratör**: Användarna kallas även användare som stöds och har inga ytterligare behörigheter i Analytics-gränssnittet. I stället får de ytterligare behörigheter när de kommunicerar med Adobe kundtjänst. De här användarna är nästan alltid Analytics-administratörer också, eftersom det hjälper kundtjänst att felsöka problem med dem. Identifiera minst en Analytics-administratör som ansvarar för att underlätta interaktionen mellan slutanvändare och Adobe kundtjänst.
 * **Webbplatsägare:** Dessa personer eller team ansvarar för kodning och utveckling av din webbplats. De behöver inga konton, men de vill arbeta med datainsamlingsadministratörer för att hämta taggkoden och implementera den på din webbplats.
 * **Slutanvändare:** de här användarna visar vanligtvis rapporter och söker efter svar på affärsfrågor. Analysadministratörer ger dessa användare behörighet att arbeta i produkten.
 
@@ -51,7 +51,7 @@ Upprepa ovanstående steg för alla behörighetskategorier.
 
 Användaren har nu fullständig åtkomst till Adobe Analytics.
 
-## Ge produktadministratörsåtkomst för datainsamling i Experience Platform
+## Ge produktadministratörer åtkomst till datainsamling i Experience Platform
 
 Produktadministratörsåtkomst för datainsamling i Experience Platform är nästan identisk med att ge produktadministratörsåtkomst för Analytics.
 
@@ -62,23 +62,23 @@ Produktadministratörsåtkomst för datainsamling i Experience Platform är näs
 1. Klicka på ett av behörighetsposterna. Aktivera **[!UICONTROL Auto-include]** om det är tillgängligt. Om automatisk inkludering inte är tillgängligt klickar du på **[!UICONTROL Add all]**. Båda alternativen flyttar alla behörighetsobjekt till den högra kolumnen.
 1. Klicka på **[!UICONTROL Save]**. Upprepa ovanstående steg för alla behörighetskategorier.
 1. När alla behörighetskategorier har tilldelats profilen går du tillbaka till sidan Översikt genom att klicka på **[!UICONTROL Overview]** överst.
-1. Klicka på **[!UICONTROL Assign Users]** under rutan [!UICONTROL Experience Platform Launch].
+1. Klicka på [!UICONTROL Experience Platform Launch] under rutan **[!UICONTROL Assign Users]**.
 1. Ange den e-postadress som du vill ge fullständig Analytics-åtkomst till och tilldela dem den nya fullständiga administratörsåtkomstprofilen. Klicka på **[!UICONTROL Save]**.
 1. Användaren har nu fullständig åtkomst till Experience Platform Data Collection.
 
 ## Bevilja produktadministratörsåtkomst för produktprofiler
 
-Mer information om hur du tilldelar användare som produktprofiladministratörer finns i avsnittet Hantera produktprofiladministratörer i artikeln [Hantera produktprofiler för företagsanvändare](https://helpx.adobe.com/se/enterprise/using/manage-product-profiles.html) i användarhandboken för Enterprise.
+Mer information om hur du tilldelar användare som produktprofiladministratörer finns i avsnittet Hantera produktprofiladministratörer i artikeln [Hantera produktprofiler för företagsanvändare](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) i användarhandboken för Enterprise.
 
 ## Nästa steg
 
-[Skapa en rapportserie](/help/admin/admin/c-manage-report-suites/c-new-report-suite/t-create-a-report-suite.md): Låt Analytics-administratören logga in på verktyget och skapa en rapportsvit för datainsamling
+[Skapa en rapportserie](/help/admin/tools/manage-rs/new-rs/t-create-a-report-suite.md): Låt Analytics-administratören logga in på verktyget och skapa en rapportsvit för datainsamling
 
 [Skapa en analystaggegenskap](/help/implement/launch/create-analytics-property.md): Låt din Data Collection-administratör logga in på verktyget och skapa en egenskap som ska implementeras på din webbplats
 
 Innan användare kan tilldelas roller i Adobe Analytics måste en användare tilldelas som första administratör i Experience Cloud. Den första administratören kan sedan tilldela användare i organisationen andra nyckelroller, enligt beskrivningen i den här artikeln.
 
-En första administratör är startpunkten för att göra det möjligt för resten av organisationen att använda varje Experience Cloud-lösning.
+En första administratör är utgångspunkten när det gäller att göra det möjligt för resten av organisationen att använda varje Experience Cloud-lösning.
 
 När ett kontrakt har signerats
 
@@ -88,4 +88,4 @@ När ett kontrakt har signerats
 
 >[!IMPORTANT]
 >
->   Vi rekommenderar starkt att du ser till att den första administratörens kontaktinformation skickas till Adobe innan kontraktet signeras.
+>   Vi rekommenderar starkt att du ser till att den första administratörens kontaktinformation skickas till Adobe och att den är korrekt innan avtalet signeras.

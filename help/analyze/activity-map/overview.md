@@ -4,7 +4,7 @@ title: Activity Map - översikt
 feature: Activity Map
 role: User, Admin
 exl-id: 30a800f7-e2c8-443e-b5d4-36834ef0ba20
-source-git-commit: 24101efe2b860734c9d176ba8be8f17e26429442
+source-git-commit: a6967c7d4e1dca5491f13beccaa797167b503d6e
 workflow-type: tm+mt
 source-wordcount: '605'
 ht-degree: 0%
@@ -17,7 +17,7 @@ Adobe Analytics Activity Map är en funktion i Adobe Analytics som ger en visuel
 
 Activity Map som koncept består av flera viktiga komponenter:
 
-* **Rapportsvitens inställning**: Activity Map måste vara aktiverat för en rapportserie innan du kan börja använda den. Se [Activity Map Reporting](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/activity-map.md) i inställningarna för rapportsviten.
+* **Rapportsvitens inställning**: Activity Map måste vara aktiverat för en rapportserie innan du kan börja använda den. Se [Activity Map Reporting](/help/admin/tools/manage-rs/edit-settings/activity-map.md) i inställningarna för rapportsviten.
 * **Implementering**: De flesta Activity Map-rapporter är tillgängliga direkt. Vissa webbplatser kan dock behöva implementeras ytterligare för att få ut så mycket som möjligt av länkspårningen. Följande implementeringsvariabler är tillgängliga:
    * [`ActivityMap.linkExclusions`](/help/implement/vars/config-vars/activitymap-linkexclusions.md): Filtrera klickdata efter länknamn.
    * [`ActivityMap.regionExclusions`](/help/implement/vars/config-vars/activitymap-regionexclusions.md): Filtrera klickdata efter regionnamn.

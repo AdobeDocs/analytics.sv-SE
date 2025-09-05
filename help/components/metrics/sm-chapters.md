@@ -3,7 +3,7 @@ title: Kapitelstatistik för tjänster för direktuppspelning
 description: Tillgängliga mätvärden när du aktiverar [!UICONTROL Media Chapters] för en rapportserie.
 feature: Metrics
 exl-id: bef379d5-9dc9-404f-8197-1ba66d11299d
-source-git-commit: 7609ecb3c34fb0bc8293fc1ecd409cfabb327295
+source-git-commit: a6967c7d4e1dca5491f13beccaa797167b503d6e
 workflow-type: tm+mt
 source-wordcount: '130'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Kapitelmätvärden för direktuppspelande medietjänster ger ytterligare rapporteringsfunktioner för datainsamling via bibliotek för insamling av direktuppspelade medietjänster. Användningen av dessa mått kräver **[!UICONTROL Adobe Analytics for Streaming Media Ad-on]**. Kontakta Adobe Account Team för mer information.
 
-När du aktiverar **[!UICONTROL Media Chapters]** under [Medierapportering](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/media-management.md) är följande mått tillgängliga:
+När du aktiverar **[!UICONTROL Media Chapters]** under [Medierapportering](/help/admin/tools/manage-rs/edit-settings/media-management.md) är följande mått tillgängliga:
 
 | Måttnamn | Beskrivning | Skickat med | Sammanhangsdatavariabel |
 | --- | --- | --- | --- |

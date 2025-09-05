@@ -3,9 +3,9 @@ title: Bästa praxis för attribuering
 description: Förstå de bästa sätten att avgöra vilken attribueringsmodell som ska användas.
 feature: Attribution
 exl-id: 92c6039c-f950-4746-8b34-ba18be258c08
-source-git-commit: b4c1636bdc9d5be522b16f945a46beabf4f7a733
+source-git-commit: fcc165536d77284e002cb2ba6b7856be1fdb3e14
 workflow-type: tm+mt
-source-wordcount: '422'
+source-wordcount: '420'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Hur ni väljer rätt attribueringsmodell för er organisation beror på ett anta
 >[!NOTE]
 >Denna analys måste ske innan du väljer en attribueringsmodell.
 
-Den här fasen består till att börja med av att förstå kundbeteende och definiera konverteringsmått. Baserat på konverteringsstatistik kan verktyg som [Dataflöden](https://experienceleague.adobe.com/sv/docs/analytics/export/analytics-data-feed/data-feed-overview) (för rådata) eller Analysis Workspace underlätta din förståelse av
+Den här fasen består till att börja med av att förstå kundbeteende och definiera konverteringsmått. Baserat på konverteringsstatistik kan verktyg som [Dataflöden](/help/export/analytics-data-feed/data-feed-overview.md) (för rådata) eller Analysis Workspace underlätta din förståelse av
 
 * Antalet kunder som rör olika marknadsföringskanaler innan de konverterar
 * Andelen/fördelningen av dessa beteenden
@@ -53,7 +53,7 @@ I det här fallet använder du den [omvända J-formade attribueringsmodellen](/h
 
 Anta att din hypotes är: *&quot;I en viss bransch (t.ex. resebranschen) är attribueringsfönstret 60 eller 90 dagar, inte 30 dagar, eftersom kunderna gör en massa efterforskningar innan de köper en produkt.*&quot;
 
-I det här fallet ändrar du [uppslagsfönstret](https://experienceleague.adobe.com/sv/docs/analytics/analyze/analysis-workspace/attribution/models) till 90 dagar.
+I det här fallet ändrar du [uppslagsfönstret](/help/analyze/analysis-workspace/attribution/models.md) till 90 dagar.
 
 ## Använd algoritmisk attribuering
 
@@ -63,4 +63,4 @@ Om du ännu inte har någon attribueringsmodell som ger tillfredsställande svar
 
 * Du kan behöva använda en datavetare istället för att förlita dig på Analysis Workspace.
 * Du kan lita på rådata, som i Adobe dataflöden.
-* Du kan till exempel använda [Customer Journey Analytics](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-overview/cja-b2c-overview/cja-overview) om du vill ta hänsyn till dina avbildningsdata.
+* Du kan till exempel använda [Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2c-overview/cja-overview) om du vill ta hänsyn till dina avbildningsdata.

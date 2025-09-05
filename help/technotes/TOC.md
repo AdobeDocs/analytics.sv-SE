@@ -4,10 +4,10 @@ audience: all
 user-guide-title: Tekniska anteckningar för Analytics
 breadcrumb-title: Tekniska anteckningar
 user-guide-description: Bläddra i en kunskapsbas som innehåller användbara artiklar som inte tillhör ett visst verktyg eller en viss komponent i Analytics.
-source-git-commit: 5ac6da2eb53d2748e8838ef2c6334a771abc26c9
+source-git-commit: bb068d39f756c4cce06349d0bd969212e19cb33e
 workflow-type: tm+mt
-source-wordcount: '186'
-ht-degree: 24%
+source-wordcount: '206'
+ht-degree: 16%
 
 ---
 
@@ -15,7 +15,8 @@ ht-degree: 24%
 # Analytics Tech Notes {#technotes}
 
 + [Tekniska anteckningar för Analytics](home.md)
-+ Adobe Analytics för Google Analytics-användare {#ga-to-aa}
++ [Versionsinformation för analyser](https://experienceleague.adobe.com/en/docs/analytics/release-notes/latest)
++ Adobe Analytics för Google Analytics {#ga-to-aa}
    + [Hjälp för användare av Adobe Analytics for Google Analytics](ga-to-aa/home.md)
    + [Konton och rapportsviter](ga-to-aa/accounts.md)
    + [Anpassa rapportvyer](ga-to-aa/customization.md)
@@ -49,7 +50,13 @@ ht-degree: 24%
 + [Lågtrafikvärde](low-traffic.md)
 + [Migrera bearbetningsregler för mobila tjänster till Adobe Analytics](migrate-mobile.md)
 + [Stöd för flera valutor](multicurrency.md)
-+ [Sekretessöversikt](privacy-overview.md)
++ Sekretess {#privacy}
+   + [Sekretessöversikt](privacy/privacy-overview.md)
+   + [Arbetsflöde för sekretess](privacy/privacy-workflow.md)
+   + [Analyser och GDPR](privacy/gdpr.md)
+   + [Analyser och CCPA](privacy/ccpa.md)
+   + [Undantag för analys och godkännande av CNIL](privacy/cnil-consent-exemption.md)
+   + [Frågor och svar om sekretess](privacy/faq.md)
 + [Bearbetningsorder](processing-order.md)
 + [Progressiva webbprogram](pwa.md)
 + [Omdirigering och alias](redirects.md)

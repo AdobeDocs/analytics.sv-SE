@@ -4,7 +4,7 @@ keywords: Implementering av analyser
 title: Omdirigering och alias
 feature: Implementation Basics
 exl-id: 0ed2aa9b-ab42-415d-985b-2ce782b6ab51
-source-git-commit: a40f30bbe8fdbf98862c4c9a05341fb63962cdd1
+source-git-commit: fcc165536d77284e002cb2ba6b7856be1fdb3e14
 workflow-type: tm+mt
 source-wordcount: '1086'
 ht-degree: 0%
@@ -41,8 +41,8 @@ Tänk på följande hypotetiska scenario där användaren inte stöter på någo
 Omdirigeringar kan göra att webbläsaren tömmer den refererande URL:en. Tänk på följande scenario:
 
 1. Användaren pekar sin webbläsare mot `https://www.google.com` och skriver *rabattflygbiljetter* i sökfältet och klickar sedan på knappen **[!UICONTROL Search]**.
-1. Webbläsarfönstrets adressfält visar de sökord som användaren skrev in i sökfältet `https://www.google.com/search?hl=en&ie=UTF-8&q=discount+airline+tickets`. Observera att söktermerna ingår i URL-frågesträngsparametrarna som följer `https://www.google.com/search?`. Webbläsaren visar också en sida som innehåller sökresultaten, inklusive en länk till ett av dina domännamn: [!DNL https://www.flytohawaiiforfree.com/]. Den här *huvuddomänen* har konfigurerats för att dirigera om användaren till `https://www.example.com/`.
-1. Användaren klickar på länken `https://www.flytohawaiiforfree.com/` och omdirigeras av servern till huvudplatsen `https://www.example.com`. När omdirigeringen inträffar försvinner de data som är viktiga för datainsamlingen [!DNL Analytics] eftersom webbläsaren rensar den refererande URL:en. Den ursprungliga sökinformationen som användes i [!DNL Analytics]-rapporterna (till exempel [!UICONTROL Referring Domains], [!UICONTROL Search Engines], [!UICONTROL Search Keywords]) går alltså förlorad.
+1. Webbläsarfönstrets adressfält visar de sökord som användaren skrev in i sökfältet `https://www.google.com/search?hl=en&ie=UTF-8&q=discount+airline+tickets`. Observera att söktermerna ingår i URL-frågesträngsparametrarna som följer `https://www.google.com/search?`. Webbläsaren visar också en sida som innehåller sökresultaten, inklusive en länk till ett av dina domännamn: [!DNL https://www.flytohawaii.example/]. Den här *huvuddomänen* har konfigurerats för att dirigera om användaren till `https://www.example.com/`.
+1. Användaren klickar på länken `https://www.flytohawaii.example/` och omdirigeras av servern till huvudplatsen `https://www.example.com`. När omdirigeringen inträffar försvinner de data som är viktiga för datainsamlingen [!DNL Analytics] eftersom webbläsaren rensar den refererande URL:en. Den ursprungliga sökinformationen som användes i [!DNL Analytics]-rapporterna (till exempel [!UICONTROL Referring Domains], [!UICONTROL Search Engines], [!UICONTROL Search Keywords]) går alltså förlorad.
 
 ## Implementera omdirigeringar {#implement}
 
@@ -52,7 +52,7 @@ När du slutför följande steg behålls den information som den ursprungliga re
 
 ## Konfigurera referensåsidosättning av JavaScript-kod {#override}
 
-Kodfragmentet nedan visar två JavaScript-variabler, *`s_referrer`* och *`s_pageURL`*. Denna kod placeras på den slutliga landningssidan för omdirigeringen.
+Kodfragmentet nedan visar två JavaScript-variabler, `s.referrer` och `s.pageURL`. Denna kod placeras på den slutliga landningssidan för omdirigeringen.
 
 ```js
 <script language="JavaScript" src="//INSERT-DOMAIN-AND-PATH-TO-CODE-HERE/AppMeasurement.js"></script> 
@@ -101,7 +101,7 @@ Vanligtvis hämtar [!DNL Analytics] den refererande URL:en från webbläsarens [
 Den slutliga versionen av landningssidan måste därför innehålla följande kod för att korrigera de problem som introducerades i scenariot&quot;rabatterade flygbiljetter&quot;.
 
 ```js
-<script language="JavaScript" src="https://INSERT-DOMAIN-AND-PATH-TO-CODE-HERE/AppMeasurement.js"></script> 
+<script language="JavaScript" src="AppMeasurement.js"></script> 
 <script language="JavaScript"><!-- 
 /* You may give each page an identifying name, server, and channel on 
 the next lines. */ 
@@ -110,14 +110,14 @@ s.server=""
 s.campaign="" 
 s.referrer="https://www.google.com/search?hl=en&ie=UTF-8&q=discount+airline+tickets" 
 // Setting the s.pageURL variable is optional.
-s.pageURL="https://www.flytohawaiiforfree.com"
+s.pageURL="https://www.flytohawaii.example"
 ```
 
 ## Verifiera referenten med Adobe Debugger {#verify}
 
 Kör ett test för att verifiera att referenten, ursprunglig URL ( *`s_server`*) och kampanjvariabler hämtas.
 
-Dessa variabler representeras som följande parametrar i [Experience Cloud Debugger](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html?lang=sv-SE).
+Dessa variabler representeras som följande parametrar i [Experience Cloud Debugger](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html).
 
 <table id="table_5F3B987D4D514CA283F7B9F52EBC2301"> 
  <thead> 
@@ -135,8 +135,8 @@ Dessa variabler representeras som följande parametrar i [Experience Cloud Debug
   </tr> 
   <tr> 
    <td> <p>Sidans URL </p> </td> 
-   <td> <p> <span class="filepath"> https://www.flytohawaiiforfree.com </span> </p> </td> 
-   <td> <p> <span class="filepath"> g=https://www.flytohawaiiforfree.com </span> </p> <p>Det här värdet visas i DigitalPulse-felsökaren om variabeln <span class="varname"> pageURL </span> används. </p> </td> 
+   <td> <p> <span class="filepath"> https://www.flytohawaii.example </span> </p> </td> 
+   <td> <p> <span class="filepath"> g=https://www.flytohawaii.example </span> </p> <p>Det här värdet visas i DigitalPulse-felsökaren om variabeln <span class="varname"> pageURL </span> används. </p> </td> 
   </tr> 
   <tr> 
    <td> <p>URL för Ultimate landningssida </p> </td> 
@@ -157,7 +157,7 @@ t=4/8/20XX 13:34:28 4 360
 pageName=Welcome to example.com 
 r=https://ref=www.google.com/search?hl=en&ie=UTF-8&q=discount+airline+tickets 
 cc=USD 
-g=https://www.flytohawaiiforfree.com 
+g=https://www.flytohawaii.example 
 s=1280x1024 
 c=32 
 j=1.3 

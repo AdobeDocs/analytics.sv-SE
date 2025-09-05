@@ -4,9 +4,9 @@ keywords: Virtual Report Suite
 title: Skapa virtuella rapportsviter
 feature: VRS
 exl-id: 5ff6ff1a-5b99-41cc-a3a7-928197ec9ef9
-source-git-commit: 08e29da4847e8ef70bd4435949e26265d770f557
+source-git-commit: fcc165536d77284e002cb2ba6b7856be1fdb3e14
 workflow-type: tm+mt
-source-wordcount: '661'
+source-wordcount: '660'
 ht-degree: 2%
 
 ---
@@ -33,7 +33,7 @@ Definiera de här inställningarna på fliken [!UICONTROL Settings] och klicka s
 | Namn | Namnet på den virtuella rapportsviten ärvs inte från den överordnade rapportsviten och ska vara distinkt. |
 | Beskrivning | Lägg till en bra beskrivning för dina företagsanvändare. |
 | Taggar | Du kan lägga till taggar för att ordna dina rapportsviter. |
-| Source | Rapportsviten som den här virtuella rapportsviten ärver följande inställningar. De flesta tjänstenivåer och funktioner (till exempel eVar-inställningar, bearbetningsregler, klassificeringar och så vidare) ärvs. Om du vill ändra de här ärvda inställningarna för en virtuell rapportsvit måste du redigera den överordnade rapportsviten ( Admin > Rapportsviter). |
+| Källa | Rapportsviten som den här virtuella rapportsviten ärver följande inställningar. De flesta tjänstenivåer och funktioner (till exempel eVar-inställningar, bearbetningsregler, klassificeringar och så vidare) ärvs. Om du vill ändra de här ärvda inställningarna för en virtuell rapportsvit måste du redigera den överordnade rapportsviten ( Admin > Rapportsviter). |
 | Tidszon | Det är valfritt att välja en tidszon. Om du väljer en tidszon sparas den tillsammans med Virtual Report Suite. Om du inte väljer någon av dem används tidszonen för den överordnade rapportsviten.  När du redigerar en virtuell rapportsserie visas den tidszon som sparats med den virtuella rapportsviten i den nedrullningsbara väljaren. Om den virtuella rapportsviten skapades innan tidszonsstöd lades till visas den överordnade rapportsvitens tidszon i den nedrullningsbara väljaren. |
 | Segment | Du kan bara lägga till ett segment eller stapla segment.   Obs! När du staplar två segment förenas de med en AND-sats. Detta kan inte ändras till en OR-sats. När du försöker ta bort eller ändra ett segment som för närvarande används i en virtuell rapportserie visas en varning. |
 
@@ -46,7 +46,7 @@ Definiera de här inställningarna på fliken [!UICONTROL Visit Definition] och 
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Justera en besöksdefinition](https://video.tv.adobe.com/v/3428877?quality=12&learn=on&captions=swe){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Justera en besöksdefinition](https://video.tv.adobe.com/v/23545?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 
@@ -56,7 +56,7 @@ Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Justera en besök
 | Aktivera bearbetning av rapporttid | Använd rapporttidsbearbetning för att ändra standardlängden för besökstidsgränsen. De här inställningarna är icke-förstörande och gäller endast i Analysis Workspace. [Läs mer](/help/components/vrs/vrs-report-time-processing.md) |
 | Besök timeout | Definierar hur mycket inaktivitet en unik besökare måste ha innan ett nytt besök startas automatiskt. Detta påverkar besöksmått, besökssegmentbehållare och eVars som förfaller vid besök. |
 | Starta nytt besök med event | Startar en ny session när någon av de angivna händelserna utlöses, oavsett om en session har uppnått tidsgränsen eller inte. |
-| **Besöksinställningar för mobilappar** | Ändra hur besök definieras för appträffar som samlas in av Adobe Mobile SDK:er. De här inställningarna är icke-förstörande och gäller endast i Analysis Workspace. |
+| **Besöksinställningar för mobilappar** | Ändra hur besök definieras för mobilappsträffar som samlas in av Adobe SDK:er för mobiler. De här inställningarna är icke-förstörande och gäller endast i Analysis Workspace. |
 | Förhindra bakgrundstömningar från att starta ett nytt besök | Förhindrar att bakgrundstötningar startar ett nytt besök och ökar antalet besök och unika besökarmått. |
 | Starta ett nytt besök varje gång appen startas | Startar en ny session när en app startas. [Läs mer](/help/components/vrs/vrs-mobile-visit-processing.md) |
 
@@ -65,7 +65,7 @@ Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Justera en besök
 ![](assets/components.png)
 
 1. På fliken [!UICONTROL Components] markerar du kryssrutan för att tillämpa urval för att inkludera, exkludera och byta namn på komponenter för den här virtuella rapportsviten i Analysis Workspace.
-Mer information om gruppering av virtuella rapportsviter finns i [Komponentstrukturering för virtuell rapportserie](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-components.html?lang=sv-SE#virtual-report-suites).
+Mer information om gruppering av virtuella rapportsviter finns i [Komponentstrukturering för virtuell rapportserie](/help/components/vrs/vrs-components.md).
 
 1. Dra komponenter (dimensioner, mått, segment eller datumintervall) som du vill inkludera i den virtuella rapportsviten till avsnittet [!UICONTROL Included Components].
 

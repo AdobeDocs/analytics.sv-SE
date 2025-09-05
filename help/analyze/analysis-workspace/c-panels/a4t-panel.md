@@ -4,9 +4,9 @@ title: Analyser för målpanel
 feature: Panels
 role: User, Admin
 exl-id: 36bca104-37b8-43c6-b8d0-b607a9a333cc
-source-git-commit: 978bd8642011dd2c8e43564c90303f194689a64e
+source-git-commit: fcc165536d77284e002cb2ba6b7856be1fdb3e14
 workflow-type: tm+mt
-source-wordcount: '1102'
+source-wordcount: '1100'
 ht-degree: 0%
 
 ---
@@ -27,13 +27,13 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="workspace_a4t_panel"
 >title="Analyser för målpanelen"
->abstract="Analysera Target-aktiviteter och -upplevelser i Analysis Workspace.<br/><br>**Parametrar &#x200B;**<br/>**Målaktivitet**: Målaktiviteten som analyseras.<br/>**Kontrollupplevelse**: Kontrollupplevelse för den valda målaktiviteten.<br/>**Normaliserar mätvärden**: Besökare, besök eller visningar. Detta mätvärde (även kallat beräkningsmetoden) blir nämnaren för beräkningen av lyft. Det påverkar också hur data aggregeras innan konfidensberäkningen tillämpas.<br/>**Framgångsmått**: Upp till tre standardvärden (ej beräknade) för lyckade resultat som målaktiviteten ska analyseras mot."
+>abstract="Analysera Target-aktiviteter och -upplevelser i Analysis Workspace.<br/><br>**Parametrar **<br/>**Målaktivitet**: Målaktiviteten som analyseras.<br/>**Kontrollupplevelse**: Kontrollupplevelse för den valda målaktiviteten.<br/>**Normaliserar mätvärden**: Besökare, besök eller visningar. Detta mätvärde (även kallat beräkningsmetoden) blir nämnaren för beräkningen av lyft. Det påverkar också hur data aggregeras innan konfidensberäkningen tillämpas.<br/>**Framgångsmått**: Upp till tre standardvärden (ej beräknade) för lyckade resultat som målaktiviteten ska analyseras mot."
 
 <!-- markdownlint-enable MD034 -->
 
 >[!BEGINSHADEBOX]
 
-_Den här artikeln dokumenterar panelen Analytics for Target i_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**._<br/>_På [Experimentationspanelen](https://experienceleague.adobe.com/sv/docs/analytics/analyze/analysis-workspace/panels/a4t-panel) finns information om hur du jämför olika användarupplevelser, marknadsförings- och meddelandevariationer i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._
+_Den här artikeln dokumenterar panelen Analytics for Target i_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._<br/>_På [Experimentationspanelen](/help/analyze/analysis-workspace/c-panels/a4t-panel.md) finns information om hur du jämför olika användarupplevelser, marknadsförings- och meddelandevariationer i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._
 
 >[!ENDSHADEBOX]
 
@@ -85,12 +85,12 @@ I varje frihandstabell visas följande måttkolumner:
 | **[!UICONTROL Success metric]** | Det framgångsmått som valts på indatapanelen. |
 | **[!UICONTROL Conversion rate]** | Mätvärdet för lyckad/normalisering. |
 | **[!UICONTROL Lift]** | Jämför konverteringsgraden för varje upplevelse med kontrollupplevelsen. Obs! Lyft är ett *låst mätvärde* för målupplevelser. Det kan inte delas upp eller användas med andra dimensioner. |
-| **[!UICONTROL Lift (Lower)]** | Detta värde är det värsta klippet en variantupplevelse kan ha över kontrollen, med ett 95% konfidensintervall.<br>Mer information finns i [Statistiska beräkningar](https://experienceleague.adobe.com/sv/docs/target/using/reports/statistical-methodology/statistical-calculations) och Excel-filen [Slutför konfidensberäkning](https://experienceleague.adobe.com/docs/target/assets/complete_confidence_calculator.xlsx?lang=sv-SE). |
-| **[!UICONTROL Lift (Mid)]** | Detta värde representerar den mittpunktshöjning en variantupplevelse kan ha över kontrollen, med ett 95% konfidensintervall. <br>Mer information finns i [Statistiska beräkningar](https://experienceleague.adobe.com/sv/docs/target/using/reports/statistical-methodology/statistical-calculations) och Excel-filen [Slutför konfidensberäkning](https://experienceleague.adobe.com/docs/target/assets/complete_confidence_calculator.xlsx?lang=sv-SE). |
-| **[!UICONTROL Lift (Upper)]** | Detta värde representerar den bästa lyften en variantupplevelse kan ha över kontrollen, med ett 95% konfidensintervall.<br>Mer information finns i [Statistiska beräkningar](https://experienceleague.adobe.com/sv/docs/target/using/reports/statistical-methodology/statistical-calculations) och Excel-filen [Slutför konfidensberäkning](https://experienceleague.adobe.com/docs/target/assets/complete_confidence_calculator.xlsx?lang=sv-SE). |
-| **[!UICONTROL Confidence]** | Studenterna som ska testas beräknar konfidensnivån, vilket anger sannolikheten för att resultatet skulle dupliceras om testet kördes igen. Ett fast villkorsstyrt formateringsintervall på 75 %/85 %/95 % har tillämpats på måttet. Den här formateringen kan anpassas om det behövs under Kolumninställningar. Obs! Konfidensen är ett låst mått för Target Experiences. Det kan inte delas upp eller användas med andra dimensioner.<br>Mer information finns i [Statistiska beräkningar](https://experienceleague.adobe.com/sv/docs/target/using/reports/statistical-methodology/statistical-calculations) och Excel-filen [Slutför konfidensberäkning](https://experienceleague.adobe.com/docs/target/assets/complete_confidence_calculator.xlsx?lang=sv-SE). |
+| **[!UICONTROL Lift (Lower)]** | Detta värde är det värsta klippet en variantupplevelse kan ha över kontrollen, med ett 95% konfidensintervall.<br>Mer information finns i [Statistiska beräkningar](https://experienceleague.adobe.com/en/docs/target/using/reports/statistical-methodology/statistical-calculations) och Excel-filen [Slutför konfidensberäkning](https://experienceleague.adobe.com/docs/target/assets/complete_confidence_calculator.xlsx). |
+| **[!UICONTROL Lift (Mid)]** | Detta värde representerar den mittpunktshöjning en variantupplevelse kan ha över kontrollen, med ett 95% konfidensintervall. <br>Mer information finns i [Statistiska beräkningar](https://experienceleague.adobe.com/en/docs/target/using/reports/statistical-methodology/statistical-calculations) och Excel-filen [Slutför konfidensberäkning](https://experienceleague.adobe.com/docs/target/assets/complete_confidence_calculator.xlsx). |
+| **[!UICONTROL Lift (Upper)]** | Detta värde representerar den bästa lyften en variantupplevelse kan ha över kontrollen, med ett 95% konfidensintervall.<br>Mer information finns i [Statistiska beräkningar](https://experienceleague.adobe.com/en/docs/target/using/reports/statistical-methodology/statistical-calculations) och Excel-filen [Slutför konfidensberäkning](https://experienceleague.adobe.com/docs/target/assets/complete_confidence_calculator.xlsx). |
+| **[!UICONTROL Confidence]** | Studenterna som ska testas beräknar konfidensnivån, vilket anger sannolikheten för att resultatet skulle dupliceras om testet kördes igen. Ett fast villkorsstyrt formateringsintervall på 75 %/85 %/95 % har tillämpats på måttet. Den här formateringen kan anpassas om det behövs under Kolumninställningar. Obs! Konfidensen är ett låst mått för Target Experiences. Det kan inte delas upp eller användas med andra dimensioner.<br>Mer information finns i [Statistiska beräkningar](https://experienceleague.adobe.com/en/docs/target/using/reports/statistical-methodology/statistical-calculations) och Excel-filen [Slutför konfidensberäkning](https://experienceleague.adobe.com/docs/target/assets/complete_confidence_calculator.xlsx). |
 
-Precis som med andra paneler i Analysis Workspace kan du fortsätta att analysera genom att lägga till ytterligare tabeller och [visualiseringar](https://experienceleague.adobe.com/sv/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations) som hjälper dig att analysera dina Adobe Target-aktiviteter. Du kan också använda ett segment på panelnivå eller i frihandstabellen. Observera, att om du lägger till den i frihandstabellen måste du täcka över hela tabellen för att lyftnings- och förtroendeberäkningarna ska bevaras. För närvarande stöds inte kolumnnivåsegment.
+Precis som med andra paneler i Analysis Workspace kan du fortsätta att analysera genom att lägga till ytterligare tabeller och [visualiseringar](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md) som hjälper dig att analysera dina Adobe Target-aktiviteter. Du kan också använda ett segment på panelnivå eller i frihandstabellen. Observera, att om du lägger till den i frihandstabellen måste du täcka över hela tabellen för att lyftnings- och förtroendeberäkningarna ska bevaras. För närvarande stöds inte kolumnnivåsegment.
 
 Använd ![Redigera](/help/assets/icons/Edit.svg) för att konfigurera om och återskapa panelen.
 
@@ -98,12 +98,12 @@ Använd ![Redigera](/help/assets/icons/Edit.svg) för att konfigurera om och åt
 
 | Fråga | Svar |
 |---|---|
-| Vilka aktivitetstyper stöds i Analytics for Target? | [Läs mer](https://experienceleague.adobe.com/sv/docs/target/using/integrate/a4t/a4t-faq/a4t-faq-activity-setup) om vilka aktivitetstyper som stöds. |
-| Stöds beräknade mätvärden vid lyftnings- och förtroendeberäkningar? | Nej. [Läs mer](https://experienceleague.adobe.com/sv/docs/target/using/integrate/a4t/a4t-faq/a4t-faq-lift-and-confidence) om varför beräknade värden inte stöds i lyft och självförtroende. Beräknade mätvärden kan dock användas i Analytics för Target-rapportering utanför dessa mätvärden. |
-| Varför varierar unika besökare mellan Target och Analytics? | [Läs mer](https://experienceleague.adobe.com/sv/docs/target/using/integrate/a4t/a4t-faq/a4t-faq-viewing-reports) om varianterna mellan unika besökare. |
-| När jag använder ett träffsegment för en viss Target-aktivitet i min analys, varför ser jag då orelaterade upplevelser returneras? | Analytics för Target-dimensionen är en listvariabel, vilket innebär att den kan innehålla många aktiviteter (och upplevelser) samtidigt. [Läs mer](https://experienceleague.adobe.com/sv/docs/target/using/integrate/a4t/a4t-faq/a4t-faq-viewing-reports) |
-| Betyder konfidensmätningen extrema order eller används en Bonferroni-korrigering för flera erbjudanden? | Nej. [Läs mer](https://experienceleague.adobe.com/sv/docs/target/using/integrate/a4t/a4t-faq/a4t-faq-lift-and-confidence) om hur Analytics beräknar förtroendet. |
+| Vilka aktivitetstyper stöds i Analytics for Target? | [Läs mer](https://experienceleague.adobe.com/en/docs/target/using/integrate/a4t/a4t-faq/a4t-faq-activity-setup) om vilka aktivitetstyper som stöds. |
+| Stöds beräknade mätvärden vid lyftnings- och förtroendeberäkningar? | Nej. [Läs mer](https://experienceleague.adobe.com/en/docs/target/using/integrate/a4t/a4t-faq/a4t-faq-lift-and-confidence) om varför beräknade värden inte stöds i lyft och självförtroende. Beräknade mätvärden kan dock användas i Analytics för Target-rapportering utanför dessa mätvärden. |
+| Varför varierar unika besökare mellan Target och Analytics? | [Läs mer](https://experienceleague.adobe.com/en/docs/target/using/integrate/a4t/a4t-faq/a4t-faq-viewing-reports) om varianterna mellan unika besökare. |
+| När jag använder ett träffsegment för en viss Target-aktivitet i min analys, varför ser jag då orelaterade upplevelser returneras? | Analytics för Target-dimensionen är en listvariabel, vilket innebär att den kan innehålla många aktiviteter (och upplevelser) samtidigt. [Läs mer](https://experienceleague.adobe.com/en/docs/target/using/integrate/a4t/a4t-faq/a4t-faq-viewing-reports) |
+| Betyder konfidensmätningen extrema order eller används en Bonferroni-korrigering för flera erbjudanden? | Nej. [Läs mer](https://experienceleague.adobe.com/en/docs/target/using/integrate/a4t/a4t-faq/a4t-faq-lift-and-confidence) om hur Analytics beräknar förtroendet. |
 | Kan lyftnings- och tillförlitlighetsvärden användas med andra dimensioner eller uppdelningar? | Lyft och självförtroende är&quot;låsta mätvärden&quot; för Target Experiences-dimensionen eftersom de kräver en kontroll och variant som kan beräknas över. De kan därför inte delas upp eller användas med andra dimensioner. |
 | När beräknas lyft och självförtroende om? | Lyft och beräkna tryggheten igen när panelen byggs, när panelens datumintervall ändras eller när ett segment tillämpas på panelen eller tabellen. När du tillämpar ett segmentfilter på frihandstabellen måste segmentet appliceras på alla kolumner, annars uppdateras inte hissen och förtroendet inte korrekt. Segment på kolumnnivå stöds inte. |
 
-Mer information om Analytics för Target-rapportering finns på [Analytics for Target Reporting](https://experienceleague.adobe.com/sv/docs/target/using/integrate/a4t/reporting)
+Mer information om Analytics för Target-rapportering finns på [Analytics for Target Reporting](https://experienceleague.adobe.com/en/docs/target/using/integrate/a4t/reporting)

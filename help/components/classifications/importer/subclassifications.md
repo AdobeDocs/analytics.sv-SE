@@ -3,7 +3,7 @@ description: Adobe Analytics har stöd för både klassificeringsmodeller på en
 title: Underklassificeringar
 feature: Classifications
 exl-id: 3d22a8c0-743d-47f3-ba15-aaef1ebd4dff
-source-git-commit: 4eea524bf95c9b6bc9ddc878c8c433bc1e60daee
+source-git-commit: a6967c7d4e1dca5491f13beccaa797167b503d6e
 workflow-type: tm+mt
 source-wordcount: '648'
 ht-degree: 5%
@@ -18,7 +18,7 @@ Adobe Analytics har stöd för både klassificeringsmodeller på en och flera ni
 
 >[!NOTE]
 >
->Underklassificering avser möjligheten att skapa klassificeringar av klassificeringar. Detta är dock inte samma sak som [!UICONTROL Classification Hierarchy] som används för att skapa [!UICONTROL Hierarchy]-rapporter. Mer information om klassificeringshierarkier finns i [Klassificeringshierarkier](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/classification-hierarchies.md).
+>Underklassificering avser möjligheten att skapa klassificeringar av klassificeringar. Detta är dock inte samma sak som [!UICONTROL Classification Hierarchy] som används för att skapa [!UICONTROL Hierarchy]-rapporter. Mer information om klassificeringshierarkier finns i [Klassificeringshierarkier](/help/admin/tools/manage-rs/edit-settings/conversion-var-admin/classification-hierarchies.md).
 
 Exempel:
 
@@ -62,7 +62,7 @@ Exempel:
 
 ## Exempel
 
-![](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/realtime/assets/classifications.png)
+![](/help/admin/tools/manage-rs/edit-settings/realtime/assets/classifications.png)
 
 >[!NOTE]
 >

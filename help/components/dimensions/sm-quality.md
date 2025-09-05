@@ -3,7 +3,7 @@ title: Kvalitetsdimensioner för direktuppspelande medietjänster
 description: Tillgängliga dimensioner när du aktiverar [!UICONTROL Media Quality] för en rapportserie.
 feature: Dimensions
 exl-id: e3794d8c-3c03-425d-850c-a735b579324b
-source-git-commit: 7609ecb3c34fb0bc8293fc1ecd409cfabb327295
+source-git-commit: a6967c7d4e1dca5491f13beccaa797167b503d6e
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Kvalitetsdimensioner för direktuppspelande medietjänster ger rapporter om kvaliteten på det innehåll som besökaren använder. Användningen av de här dimensionerna kräver [!UICONTROL Adobe Analytics for Streaming Media Ad-on]. Kontakta Adobe Account Team för mer information.
 
-När du aktiverar **[!UICONTROL Media Quality]** under [Medierapportering](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/media-management.md) är följande dimensioner tillgängliga:
+När du aktiverar **[!UICONTROL Media Quality]** under [Medierapportering](/help/admin/tools/manage-rs/edit-settings/media-management.md) är följande dimensioner tillgängliga:
 
 | Dimensionsnamn | Beskrivning | Skickat med | Sammanhangsdatavariabel |
 | --- | --- | --- | --- |

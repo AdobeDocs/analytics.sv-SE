@@ -3,7 +3,7 @@ title: Vanliga mätvärden på andra plattformar - översättningsguide
 description: Lär dig hur du hämtar in mätdata för många vanliga rapporter med hjälp av terminologi som är mer välbekant för Google Analytics-användare.
 feature: Third-party Integration
 exl-id: e95b0530-8099-4a08-9e2b-75174546277d
-source-git-commit: c8faf29262b9b04fc426f4a26efaa8e51293f0ec
+source-git-commit: 325a42c080290509309e90c9127138800d5ac496
 workflow-type: tm+mt
 source-wordcount: '506'
 ht-degree: 0%
@@ -51,7 +51,7 @@ Om du vill lägga till flera mätvärden i en frihandstabell på arbetsytan drar
 7. Klicka på Spara för att gå tillbaka till arbetsytan.
 8. Dra det nydefinierade beräknade måttet till arbetsytan.
 
-   Läs mer om [Beräknade mått](/help/components/c-calcmetrics/cm-overview.md) i användarhandboken för komponenter.
+   Läs mer om [Beräknade mått](/help/components/calculated-metrics/cm-overview.md) i användarhandboken för komponenter.
 
 **Medel. Sessionstiden** är ungefär lika med **den tid som tillbringats per besök (sekunder)**. Läs mer om [Tid per besök](/help/components/metrics/time-spent-per-visit.md) i användarhandboken för komponenter.
 
@@ -65,4 +65,4 @@ Om du vill lägga till flera mätvärden i en frihandstabell på arbetsytan drar
 
    ![Beställningar per besök](/help/technotes/ga-to-aa/assets/orders_per_visit.png)
 
-Om implementeringen ännu inte klarar produkt- eller konverteringsdata rekommenderar Adobe att man samarbetar med en implementeringskonsult för att säkerställa datakvalitet och dataintegritet.
+Om implementeringen ännu inte klarar produkt- eller konverteringsdata rekommenderar Adobe att man samarbetar med en implementeringskonsult för att säkerställa datakvalitet och -integritet.

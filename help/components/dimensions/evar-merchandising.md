@@ -1,20 +1,20 @@
 ---
-title: eVar (marknadsdimension)
+title: eVar (marknadsföringsdimensionen)
 description: Egna variabler som är kopplade till produktdimensionen.
 feature: Dimensions
 exl-id: a7e224c4-e8ae-4b53-8051-8b5dd43ff380
-source-git-commit: d095628e94a45221815b1d08e35132de09f5ed8f
+source-git-commit: a6967c7d4e1dca5491f13beccaa797167b503d6e
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '437'
 ht-degree: 0%
 
 ---
 
-# eVar (varuexponering)
+# eVar (Merchandising)
 
 *Den här hjälpsidan beskriver hur marknadsföring av eVars fungerar som en [dimension](overview.md). Mer information om hur du implementerar eVars för marknadsföring finns i [eVar (försäljningsvariabel)](/help/implement/vars/page-vars/evar-merchandising.md) i användarhandboken för implementering.*
 
-En detaljerad diskussion om hur eVars marknadsförs finns i [Merchandising eVars and product finding methods](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/conversion-variables/merchandising-evars.html?lang=sv-SE).
+En detaljerad diskussion om hur eVars marknadsförs finns i [Merchandising eVars and product finding methods](/help/admin/tools/manage-rs/edit-settings/conversion-var-admin/merchandising-evars.md).
 
 När ni mäter framgångarna med externa kampanjer eller externa söktermer vill ni vanligtvis ha ett enda värde för att ta emot poäng för alla framgångshändelser som inträffar. Om en kund t.ex. klickar på en länk i en e-postkampanj för att besöka webbplatsen, bör alla inköp som görs som ett resultat tillskrivas kampanjen.
 
@@ -26,7 +26,7 @@ Före utcheckningen söker kunden efter `"winter coat"` och lägger sedan till e
 
 ![Kodexempel](assets/merch-example-coat.png)
 
-När besökaren har slutfört det här köpet får du en intern sökning efter `"winter coat"` som har krediterats med köpet av ett par glasögon (förutsatt att eVarna använder standardallokeringen för&quot;Senaste&quot;). Bra för `"winter coat"`, men dåligt för marknadsföringsbeslut:
+När besökaren har slutfört det här köpet får du en intern sökning efter `"winter coat"` som har krediterats med köpet av ett par glasögon (under förutsättning att eVar använder standardallokeringen för&quot;Senaste&quot;). Bra för `"winter coat"`, men dåligt för marknadsföringsbeslut:
 
 | Intern sökterm | Intäkter |
 |---|---|
@@ -34,9 +34,9 @@ När besökaren har slutfört det här köpet får du en intern sökning efter `
 
 ## Hur variabler för marknadsföring löser det här problemet
 
-Med eVars kan du tilldela en eVar det aktuella värdet när en lyckad händelse inträffar. Detta värde är kopplat till den produkten även om ett eller flera nya värden senare anges för den aktuella eVarna.
+Med Merchandising eVars kan du tilldela en produkt det aktuella värdet av en eVar när en lyckad händelse inträffar. Det här värdet är kopplat till den produkten även om ett eller flera nya värden senare anges för just den eVar.
 
-Om du har aktiverat varuexponering för eVarna i det föregående exemplet är söktermen `"goggles"` knuten till snöglasen och söktermen `"winter coat"` är knuten till jackan. Merchandising eVars tilldelar intäkter på produktnivå, så varje term får en uppskattning av intäktsbeloppet för den produkt som termen var kopplad till:
+Om marknadsföring är aktiverat för eVar i det föregående exemplet är söktermen `"goggles"` kopplad till snöglasen och söktermen `"winter coat"` är kopplad till jackan. Merchandising eVars tilldelar intäkter på produktnivå, så varje term får en uppskattning av intäktsbeloppet för den produkt som termen var kopplad till:
 
 | Intern sökterm | Intäkter |
 |---|---|
@@ -50,8 +50,8 @@ Se [Merchandising eVars](/help/implement/vars/page-vars/evar-merchandising.md) f
 Måttet [Instanser](../metrics/instances.md) rekommenderas inte för användning på försäljningsvariabler.
 
 * För variabler som används i produktsyntax ökas inte antalet instanser alls.
-* För marknadsföringsvariabler som använder syntax för konverteringsvariabler räknas instanser varje gång eVarna ställs in. Det attribut till dimensionsobjektet `"None"` såvida inte allt av följande inträffar i samma träff:
-   * EVarna för varuexponering anges med ett värde.
+* För variabler som används för konvertering av variabelsyntax räknas instanser varje gång eVar anges. Det attribut till dimensionsobjektet `"None"` såvida inte allt av följande inträffar i samma träff:
+   * Försäljningen av eVar har ett värde.
    * Variabeln `products` definieras med ett värde.
    * En bindningshändelse har angetts.
 

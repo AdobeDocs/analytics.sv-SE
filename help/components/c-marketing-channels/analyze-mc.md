@@ -3,7 +3,7 @@ title: Analysera marknadsföringskanaler
 description: Lär dig hur du använder dimensionerna för marknadsföringskanaler i Workspace.
 feature: Marketing Channels
 exl-id: 7030e41a-4e92-45c7-9725-66a3ef019313
-source-git-commit: 16fdad50b9d63bc6db07347c6ec91fb0d2df5722
+source-git-commit: a6967c7d4e1dca5491f13beccaa797167b503d6e
 workflow-type: tm+mt
 source-wordcount: '405'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 >
 >För att maximera effekten av marknadsföringskanaler för Attribution och Adobe Analytics har vi publicerat [reviderade best practices](/help/components/c-marketing-channels/mchannel-best-practices.md).
 >
->Analysadministratörer kan hantera marknadsföringskanaler för sina organisationer enligt beskrivningen i [Hantera marknadsföringskanaler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/marketing-channels/c-channels.md).
+>Analysadministratörer kan hantera marknadsföringskanaler för sina organisationer enligt beskrivningen i [Hantera marknadsföringskanaler](/help/admin/tools/manage-rs/edit-settings/marketing-channels/c-channels.md).
 
 Ni vill antagligen veta vilka av era marknadsföringskanaler som är mest effektiva och med vilka ni kan inrikta er bättre och få bättre avkastning på era marknadsföringsinvesteringar. I Adobe Analytics är Marketing Channel-kanalens mått och mätvärden i Workspace ett av de verktyg som kan hjälpa er att spåra hur olika kanaler påverkar era order, intäkter osv. och ge er användbara kanalinsikter. Här är de mått och mätvärden du kan använda för marknadsföringskanaler:
 
@@ -64,4 +64,4 @@ Med den äldre First Touch Channel och Last Touch Channel kan du få en användb
 
 ![](assets/mc-viz6.png)
 
-Lär dig mer om tabbbaserad marknadsanalys i den här videon: [Använda tabbanalys för att utforska grundläggande marknadsattribuering i Analysis Workspace](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/attribution-iq/using-cross-tab-analysis-to-explore-basic-marketing-attribution-in-analysis-workspace.html?lang=sv-SE).
+Lär dig mer om tabbbaserad marknadsanalys i den här videon: [Använda tabbanalys för att utforska grundläggande marknadsattribuering i Analysis Workspace](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/attribution-iq/using-cross-tab-analysis-to-explore-basic-marketing-attribution-in-analysis-workspace.html).

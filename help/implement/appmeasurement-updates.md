@@ -4,9 +4,9 @@ description: Versionsinformation för AppMeasurement för JavaScript.
 feature: Appmeasurement Implementation
 exl-id: 80b935f0-3ec5-4ffa-9858-f83ae9a6b763
 role: Admin, Developer, Leader, User
-source-git-commit: 886c6070936275cf1df269a951b87d041fcf7b8c
+source-git-commit: a6967c7d4e1dca5491f13beccaa797167b503d6e
 workflow-type: tm+mt
-source-wordcount: '2726'
+source-wordcount: '2725'
 ht-degree: 3%
 
 ---
@@ -71,7 +71,7 @@ Releasedatum: **11 oktober 2021**
 
 Releasedatum: **7 september 2021**
 
-* Den här uppdateringen gör att `opt.dmp` och `opt.sell` alltid inkluderas när länkar spåras. Mer information finns i [Sekretessrapporteringen](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/privacy-reporting.md) i användarhandboken för Admin.
+* Den här uppdateringen gör att `opt.dmp` och `opt.sell` alltid inkluderas när länkar spåras. Mer information finns i [Sekretessrapporteringen](/help/admin/tools/manage-rs/edit-settings/privacy-reporting.md) i användarhandboken för Admin.
 
 ## Version 2.22.1
 
@@ -424,7 +424,7 @@ Releasedatum: **18 september 2014**
 
   >[!IMPORTANT]
   >
-  >För att ett [!DNL Analytics]-anrop ska kunna använda metoden POST i stället för GET i [!DNL AppMeasurement] (en metod för att lösa [trunkerade URL:er i IE](https://helpx.adobe.com/se/analytics/kb/shortening-image-request-urls.html)) måste du använda den senaste implementeringen av Visitor ID-tjänsten för Experience Cloud.
+  >För att ett [!DNL Analytics]-anrop ska kunna använda metoden POST i stället för GET i [!DNL AppMeasurement] (en metod för att lösa [trunkerade URL:er i IE](https://helpx.adobe.com/analytics/kb/shortening-image-request-urls.html)) måste du använda den senaste implementeringen av Visitor ID-tjänsten för Experience Cloud.
 
 ## Version 1.4
 
@@ -455,7 +455,7 @@ Releasedatum: **22 maj 2014**
 
 Releasedatum: **17 april 2014**
 
-* Stöd för [Experience Cloud Visitor ID-tjänsten](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=sv-SE).
+* Stöd för [Experience Cloud Visitor ID-tjänsten](https://experienceleague.adobe.com/docs/id-service/using/home.html).
 
 ## Version 1.2.4
 
@@ -485,8 +485,8 @@ Releasedatum: **15 november 2013**
 
 Releasedatum: **14 november 2013**
 
-* Stöd för [Heartbeat-videomätning](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=sv-SE) har lagts till.
-* `VisitorAPI.js` lades till för att stödja [besökar-ID-tjänsten](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=sv-SE).
+* Stöd för [Heartbeat-videomätning](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html) har lagts till.
+* `VisitorAPI.js` lades till för att stödja [besökar-ID-tjänsten](https://experienceleague.adobe.com/docs/id-service/using/home.html).
 
 ## Version 1.1.1
 

@@ -3,7 +3,7 @@ title: Godkännande av annonsplattform
 description: Se konfigurationen för annonsmedgivande för tredjeparts annonsleverantörer.
 feature: Dimensions
 exl-id: bf63112d-7d20-4e35-9a59-5be21135ae51
-source-git-commit: 5df5cffbb6abf712cb36fd807ef54b8ebaae1c73
+source-git-commit: a6967c7d4e1dca5491f13beccaa797167b503d6e
 workflow-type: tm+mt
 source-wordcount: '328'
 ht-degree: 0%
@@ -51,11 +51,11 @@ Tecken efter det första och andra tecknet ignoreras.
 
 Du kan använda insamlade data för annonsgodkännande:
 
-* Datafeeds: Information om annonsmedgivande finns tillgänglig i kolumnen `dataprivacydmaconsent` [2&rbrace;.](/help/export/analytics-data-feed/c-df-contents/datafeeds-reference.md)
-* Data Warehouse-rapporter: annonsmedgivandedata är tillgängliga med dimensionen **[!UICONTROL Ad Platform Consent]**.
+* Datafeeds: Information om annonsmedgivande finns tillgänglig i kolumnen `dataprivacydmaconsent` [2}.](/help/export/analytics-data-feed/c-df-contents/datafeeds-reference.md)
+* Data Warehouse-rapporter: data för annonsmedgivande är tillgängliga med dimensionen **[!UICONTROL Ad Platform Consent]**.
 
 Organisationen bestämmer logiken för att implementera den här kontextdatavariabeln. Värdet finns inte kvar efter den träff det är aktiverat, så du måste ange kontextdatavariabeln på varje sida.
 
-När du skickar annonsdata från Adobe Analytics via Adobe Advertising som konverteringsevenemang till Google, konsultera Adobe Advertising-teamet för att få hjälp med integreringen.
+När du skickar annonsdata från Adobe Analytics via Adobe Advertising som konverteringsevenemang till Google kontaktar du Adobe Advertising team för att få hjälp med integreringen.
 
-Mer information finns i [Sekretessrapportering](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/privacy-reporting.md).
+Mer information finns i [Sekretessrapportering](/help/admin/tools/manage-rs/edit-settings/privacy-reporting.md).

@@ -4,7 +4,7 @@ description: Använd variabeln linkInternalFilters om du vill ha hjälp med auto
 feature: Appmeasurement Implementation
 exl-id: eaa6e64a-ebd5-4e6b-913f-1a6c315579c8
 role: Admin, Developer
-source-git-commit: 665bd68d7ebc08f0da02d93977ee0b583e1a28e6
+source-git-commit: a6967c7d4e1dca5491f13beccaa797167b503d6e
 workflow-type: tm+mt
 source-wordcount: '412'
 ht-degree: 0%
@@ -23,13 +23,13 @@ Aktivitetskartan använder den här variabeln för att avgöra vilka länkar som
 
 >[!NOTE]
 >
->`linkInternalFilters` och [ interna URL-filter ](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/internal-url-filter-admin.md) är separata funktioner som fyller olika syften. Variabeln `linkInternalFilters` fungerar specifikt för att avsluta länkspårning. Interna URL-filter är en administratörsinställning som hjälper dig med trafikkällans dimensioner, som Referensdomän.
+>`linkInternalFilters` och [ interna URL-filter ](/help/admin/tools/manage-rs/edit-settings/general/internal-url-filter-admin.md) är separata funktioner som fyller olika syften. Variabeln `linkInternalFilters` fungerar specifikt för att avsluta länkspårning. Interna URL-filter är en administratörsinställning som hjälper dig med trafikkällans dimensioner, som Referensdomän.
 
 ## Avsluta länkar i SDK för webben
 
 Länkar kvalificeras automatiskt som en avslutningslänk om länkmåldomänen skiljer sig från den aktuella `window.location.hostname`. SDK för webben innehåller inga konfigurationsvariabler som kan ändra automatisk avslutningslänksidentifiering. Om du behöver anpassa domänerna som kvalificerar som en avslutningslänk kan du använda anpassad logik i `onBeforeEventSend`-återanropet.
 
-Mer information finns i [Automatisk länkspårning](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/track-links.html?lang=sv-SE#automaticLinkTracking) i dokumentationen för Web SDK.
+Mer information finns i [Automatisk länkspårning](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/track-links.html#automaticLinkTracking) i dokumentationen för Web SDK.
 
 ## Utgående länkar - Spåra aldrig med Adobe Analytics-tillägget
 

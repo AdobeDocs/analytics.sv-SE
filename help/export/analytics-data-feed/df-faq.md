@@ -4,9 +4,9 @@ keywords: Datautmatning;jobb;förkolumn;efterkolumn;skiftlägeskänslighet
 title: Vanliga frågor om dataflöden
 feature: Data Feeds
 exl-id: 1bbf62d5-1c6e-4087-9ed9-8f760cad5420
-source-git-commit: bac8d17de1d442484ae1cf8c038ad853343ddb6b
+source-git-commit: a6967c7d4e1dca5491f13beccaa797167b503d6e
 workflow-type: tm+mt
-source-wordcount: '1463'
+source-wordcount: '1462'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ Om du ser olika skiftlägesvariationer av samma värde mellan icke-post- och pos
 
 ## Filtreras robotar av administratörskonsolens robotregler i dataflöden? {#bots}
 
-Datafeeds innehåller inte bots som filtrerats av [administratörskonsolens robotregler](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/bot-removal/bot-removal.html?lang=sv-SE).
+Datafeeds innehåller inte bots som filtrerats av [administratörskonsolens robotregler](/help/admin/tools/manage-rs/edit-settings/general/bot-removal/bot-removal.md).
 
 ## Varför ser jag flera `000`-värden i dataflödeskolumnen `event_list` eller `post_event_list`? {#values}
 

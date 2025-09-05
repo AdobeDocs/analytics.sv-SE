@@ -1,12 +1,12 @@
 ---
 description: Svar på frågor du kan ha när du implementerar Audience Analytics.
 solution: Experience Cloud
-title: Frågor och svar för Audience Analytics
+title: Frågor och svar om Audience Analytics
 feature: Audience Analytics
 exl-id: 86e7967c-030c-44d6-8294-e7e6d41f6fc3
-source-git-commit: 750c4b0ffb52c3f2cf25abcd76ef149a4521109e
+source-git-commit: a6967c7d4e1dca5491f13beccaa797167b503d6e
 workflow-type: tm+mt
-source-wordcount: '1079'
+source-wordcount: '1078'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Svar på frågor du kan ha när du implementerar Audience Analytics.
 
 +++ Hur vet jag om jag har PII (Personally Identiitable Information) i mina analysdata? Och om ja, vad gör jag åt det?
 
-Om du har e-postadresser/adresser/så vidare i ett utkast eller en eVar bör du överväga att hash-koda data under insamlingen. Om ditt land anser att IP-adressen är en PII-adress, [aktiverar du IP-förfalskning](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/exclude-ip.html?lang=sv-SE). Tala med er Analytics Admin för att se vad ni samlar in. Tala med er juridiska avdelning för att se vad de anser vara PII.
+Om du har e-post/adresser/så vidare i ett utkast eller eVar bör du överväga att hash-koda data under insamlingen. Om ditt land anser att IP-adressen är en PII-adress, [aktiverar du IP-förfalskning](/help/admin/tools/exclude-ip.md). Tala med er Analytics Admin för att se vad ni samlar in. Tala med er juridiska avdelning för att se vad de anser vara PII.
 
 +++
 
@@ -27,9 +27,9 @@ Om du har e-postadresser/adresser/så vidare i ett utkast eller en eVar bör du 
 
 Dessa gäller inte när du skickar Adobe Analytics-data till Adobe Audience Manager. Fråga dig själv:
 
-* Kommer ni att dela ett Analytics-delat segment med en MCA-dimension tillbaka till Experience Cloud?
+* Kommer ni att dela ett analysdelat segment med en MCA-dimension tillbaka till Experience Cloud?
 
-* Exporterar du (t.ex. via dataflöden) ut till ett Business Intelligence-system (BI) som används för dessa ändamål?
+* Exporterar ni (t.ex. via dataflöden) till ett Business Intelligence (BI)-system som används för dessa ändamål?
 
 +++
 
@@ -37,7 +37,7 @@ Dessa gäller inte när du skickar Adobe Analytics-data till Adobe Audience Mana
 
 +++ Hur skapar jag ett Analytics-mål i Audience Manager?
 
-Se [Konfigurera ett analysmål i Adobe Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/destinations/experience-cloud-destinations/create-analytics-destination.html?lang=sv-SE).
+Se [Konfigurera ett analysmål i Adobe Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/destinations/experience-cloud-destinations/create-analytics-destination.html).
 
 +++
 
@@ -55,7 +55,7 @@ Ett Analytics-mål försvinner från ett segments målmappningsavsnitt när du v
 
 Får jag all information från Adobe Audience Manager i Analytics?
 
-Nej, endast data som är relaterade till personer som kommer till er webbplats under eller efter det att Audience Manager-målgrupper aktiverats och under/efter det att segmentet kvalificerats.
+Nej, endast data som rör personer som kommer till er webbplats under eller efter det att Audience Manager-målgrupper aktiverats och under/efter det att segmentet kvalificerats.
 
 +++
 
@@ -105,9 +105,9 @@ Du har troligtvis konflikter mellan Adobe Audience Manager sekretesskontroller m
 
 +++
 
-+++ Varför ser jag&quot;Målgruppsgräns nådd&quot; i min Analytics-rapport? (Obs! Detta kommer också att representeras som målgrupps-ID = -1 och `::max_audiences_exceeded::` i Data Warehouse)
++++ Varför ser jag&quot;Målgruppsgräns nådd&quot; i min Analytics-rapport? (Obs! Detta kommer också att representeras som Audience ID = -1 och `::max_audiences_exceeded::` i Data Warehouse)
 
-Som standard skickas alla segment som en besökare kvalificerar för till Analytics via integreringen Audience Analytics för Adobe Audience Manager. Om en besökare tillhör fler än 150 Adobe Audience Manager-segment i en enda träff skickas de **150 senast kvalificerade segmenten** till Analytics, medan den återstående listan trunkeras. En extra flagga skickas till Analytics som anger att segmentlistan trunkerades och visas som&quot;Målgruppsgräns nådd&quot; i dimensionen Målgruppsnamn och&quot;-1&quot; i dimensionen Målgrupps-ID.
+Som standard skickar Audience Analytics-integreringen för Adobe Audience Manager alla segment som en besökare kvalificerar sig för till Analytics, per besök. Om en besökare tillhör fler än 150 Adobe Audience Manager-segment i en enda träff skickas de **150 senast kvalificerade segmenten** till Analytics, medan den återstående listan trunkeras. En extra flagga skickas till Analytics som anger att segmentlistan trunkerades och visas som&quot;Målgruppsgräns nådd&quot; i dimensionen Målgruppsnamn och&quot;-1&quot; i dimensionen Målgrupps-ID.
 
 Det är osannolikt att en besökare kvalificerar sig för mer än 150 segment för en viss träff, men det kan hända en liten del av tiden. Om du upplever&quot;Målgruppsgräns nådd&quot; i din rapportering har du två alternativ:
 
@@ -133,9 +133,9 @@ Ja. I Adobe Audience Manager-målinställningarna visas endast rapportsviter som
 
 +++ Varför kan jag inte aktivera vissa rapporteringsprogram för SWF i Analytics Admin?
 
-Endast sviter som är mappade till din Experience Cloud-organisation kan aktiveras.
+Endast sviter som är mappade till din Experience Cloud Org kan aktiveras.
 
-Mer information om vanliga frågor och svar om det här avsnittet finns i [Vanliga frågor om vidarebefordran på serversidan](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/c-server-side-forwarding/ssf-faq.md).
+Mer information om vanliga frågor och svar om det här avsnittet finns i [Vanliga frågor om vidarebefordran på serversidan](/help/admin/tools/manage-rs/edit-settings/general/c-server-side-forwarding/ssf-faq.md).
 
 +++
 
@@ -155,7 +155,7 @@ Se [Förstå segment i Analytics och Audience Manager](/help/integrate/c-audienc
 
 +++ Vad är skillnaden mellan kundattribut och kunddata som är integrerade från Adobe Audience Manager?
 
-Kundattribut är inte tidsbaserade. De gäller retroaktivt och går framåt. Adobe Audience Manager-integrerade data är tidsbaserade och kan bara vidareutvecklas. Dessutom är kundattribut en söktabell för besökar-ID:n i Experience Cloud, medan Adobe Audience Manager-integreringen är data som sammanfogas i varje träff för en besökare.
+Kundattribut är inte tidsbaserade. De gäller retroaktivt och går framåt. Adobe Audience Manager-integrerade data är tidsbaserade och kan bara vidareutvecklas. Dessutom är kundattribut ett sökregister för besökar-ID:n från Experience Cloud, medan Adobe Audience Manager-integreringen är data som sammanfogas i varje träff för en besökare.
 
 +++
 

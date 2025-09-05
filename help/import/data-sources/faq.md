@@ -4,7 +4,7 @@ description: Vanliga frågor om datakällor.
 exl-id: a948dfe9-289f-43e2-a9e7-7990cf609f5c
 feature: Data Sources
 role: Admin
-source-git-commit: 667870f9575bbc03a72738771f34bf1718725d6c
+source-git-commit: a6967c7d4e1dca5491f13beccaa797167b503d6e
 workflow-type: tm+mt
 source-wordcount: '408'
 ht-degree: 0%
@@ -30,8 +30,8 @@ Data som överförs via datakällor påverkar inte [sidvisningar](/help/componen
 +++Körs data som överförs via datakällor genom ytterligare bearbetning, som bearbetningsregler?
 Nej. Data överförda via datakällor:
 
-* Går inte igenom [Bearbetar regler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/processing-rules/pr-overview.md)
-* Går inte igenom [Bearbetningsregler för marknadsföringskanaler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/marketing-channels/c-rules.md)
+* Går inte igenom [Bearbetar regler](/help/admin/tools/manage-rs/edit-settings/general/processing-rules/pr-overview.md)
+* Går inte igenom [Bearbetningsregler för marknadsföringskanaler](/help/admin/tools/manage-rs/edit-settings/marketing-channels/c-rules.md)
 * Går inte igenom [VISTA-regler](/help/technotes/vista.md)
 +++
 

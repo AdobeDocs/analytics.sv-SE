@@ -3,7 +3,7 @@ description: Använd underklassificeringar med klassificeringsregelbyggaren.
 title: Underklassificeringar och regelbyggaren
 feature: Classifications
 exl-id: 745d6149-bcb1-48ad-abbe-63a9d009fa27
-source-git-commit: 4eea524bf95c9b6bc9ddc878c8c433bc1e60daee
+source-git-commit: e09234ca27fbf923e026aa1f2ed0ebfed636bf7c
 workflow-type: tm+mt
 source-wordcount: '387'
 ht-degree: 1%
@@ -42,7 +42,7 @@ Exempel på steg som beskriver hur du kan överföra underklassificeringar med r
 
    Exempel:
 
-   ![Steginformation](/help/admin/admin/assets/sub_class_create.png)
+   ![Steginformation](/help/admin/tools/assets/sub_class_create.png)
 
 1. I [Klassifieringsregelbyggaren](/help/components/classifications/crb/classification-rule-builder.md) kan du klassificera underklassificeringsnyckeln från den ursprungliga spårningskoden.
 
@@ -63,7 +63,7 @@ Exempel på steg som beskriver hur du kan överföra underklassificeringar med r
 
    Exempel:
 
-   | Nyckel | Kanal | Kampanjkod | &Kampanjkod;Hatt;Kampanjtyp | &Kampanjkod;Hatt;Kampanjdirektör | ... |
+   | Nyckel | Kanal | Kampanjkod | &amp;Kampanjkod;Hatt;Kampanjtyp | &amp;Kampanjkod;Hatt;Kampanjdirektör | ... |
    |---|---|---|---|---|---|
    | &#42; |  | 111 | Varumärke | Suzanne |  |
    | &#42; |  | 222 | Varumärke | Frank |  |

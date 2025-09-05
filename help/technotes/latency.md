@@ -4,7 +4,7 @@ keywords: data saknas;långsam
 title: Datatillgänglighet och fördröjning
 feature: Data Configuration and Collection
 exl-id: fedef3ea-dde6-460f-90e3-1e661ed29b78
-source-git-commit: a17297af84e1f5e7fe61f886eb3906c462229087
+source-git-commit: a6967c7d4e1dca5491f13beccaa797167b503d6e
 workflow-type: tm+mt
 source-wordcount: '818'
 ht-degree: 0%
@@ -19,7 +19,7 @@ Du kan vanligtvis förvänta dig att få se fullständiga data i rapporter 2 tim
 
 Varje datainsamlingsserver hämtar in och bearbetar råanalysdata och överför sedan batchdata timvis för rapportering. Överföringsprocessen tar vanligtvis 30 minuter, så normal fördröjning för trafik som sker direkt efter den föregående överföringsprocessen är ungefär 90 minuter (60 minuter tills nästa batchöverföring sker, sedan 30 minuter för filöverföring och visning). För trafik som sker direkt före en överföring kan datalatensen vara så kort som 30 minuter (0 minuter tills nästa batchöverföring sker, sedan 30 minuter för filöverföring och visning).
 
-Vid behov kan Adobe kundtjänst aktivera 30 minuters batchvis dataöverföring (i stället för timvis) för dina mest använda rapportsviter.
+Vid behov kan Adobe kundtjänst aktivera 30 minuters batchvis överföring av data (i stället för timvis) för de mest använda rapportsviterna.
 
 ## Medarbetare till fördröjning
 
@@ -42,7 +42,7 @@ Vissa funktioner i Adobe Experience Cloud har en kort latenstid utöver den vanl
 
 Det finns flera strategier för att förhindra fördröjning eller minska återställningstiden när den inträffar:
 
-* **Meddela Adobe om förväntade trafiktoppar:** Även om det är omöjligt att förutse varje trafiktoppning på din webbplats, kan det finnas fall där du förväntar dig en betydande trafikökning. Exempel är en särskilt framgångsrik semesterperiod, eller kort efter en stor kampanjkampanj. I dessa fall kan Adobe ge er organisation möjlighet att informera oss om förväntade trafikökningar så att vi kan tilldela ytterligare bearbetningsresurser till ert rapporteringsprogram. Se [Schemalägg en trafiktoppning](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/c-traffic-management/t-traffic-schedule-spike.md) i användarhandboken för Admin om du vill veta hur du ska meddela Adobe om ökad trafik.
+* **Meddela Adobe om förväntade trafiktoppar:** Även om det är omöjligt att förutse varje trafiktoppning på din webbplats, kan det finnas fall där du förväntar dig en betydande trafikökning. Exempel är en särskilt framgångsrik semesterperiod, eller kort efter en stor kampanjkampanj. I dessa fall kan Adobe erbjuda ett sätt för er organisation att informera oss om förväntade trafikökningar så att vi kan tilldela ytterligare bearbetningsresurser till ert rapporteringsprogram. Se [Schemalägg en trafiktoppning](/help/admin/tools/manage-rs/edit-settings/c-traffic-management/t-traffic-schedule-spike.md) i användarhandboken för Admin om du vill veta hur du informerar Adobe om ökad trafik.
 * **Överväg att läsa in när du aktiverar nya funktioner:** Vissa funktioner är mer bearbetningsintensiva än andra. Ju fler funktioner som är aktiverade i en rapportserie, desto svårare är det att återställa efter fördröjning. När du aktiverar funktioner i en rapportserie bör du tänka på följande funktioner som ökar mängden data som ska bearbetas:
 
    * Implementera mer än 20 händelser på samma sida
@@ -50,8 +50,8 @@ Det finns flera strategier för att förhindra fördröjning eller minska åters
    * Mer än 20 värden i variabeln products
    * Händelseserialisering
 
-* Aktivera IAB-punktsfiltrering: [Rotfiltrering](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/bot-removal/bot-removal.md) kan minska fördröjningen avsevärt om rapportsviten används av både robotar och crawler. Vi rekommenderar att du använder IAB-robotlistan eftersom den uppdateras och underhålls av [Interactive Advertising Bureau](https://www.iab.net/about_the_iab). En användare kan anpassa sina egna robotregler för att komplettera dem från IAB.
+* Aktivera IAB-punktsfiltrering: [Rotfiltrering](/help/admin/tools/manage-rs/edit-settings/general/bot-removal/bot-removal.md) kan minska fördröjningen avsevärt om rapportsviten används av både robotar och crawler. Vi rekommenderar att du använder IAB-robotlistan eftersom den uppdateras och underhålls av [Interactive Advertising Bureau](https://www.iab.net/about_the_iab). En användare kan anpassa sina egna robotregler för att komplettera dem från IAB.
 
 ## Vad du ska göra med svarstid
 
-I de fall där fördröjning inträffar kan du vara säker på att Adobe proaktivt övervakar bearbetningsflödet och gör allt som är möjligt för att återställa bearbetningstiden till normal så snabbt som möjligt. Många latensproblem löses inom några timmar. Om du är orolig för en viss rapportserie kan en av de användare i organisationen som stöds kontakta Kundtjänst med det rapportsvit-ID som har fördröjning. Adobe kan validera latensen och informera dig när problemet förbättras och är löst.
+I de fall där fördröjning inträffar kan du vara säker på att Adobe proaktivt övervakar bearbetningsflödet och gör allt som är möjligt för att återställa bearbetningstiden till den normala så snabbt som möjligt. Många latensproblem löses inom några timmar. Om du är orolig för en viss rapportserie kan en av de användare i organisationen som stöds kontakta Kundtjänst med det rapportsvit-ID som har fördröjning. Adobe-representanten kan validera latensen och informera dig när problemet förbättras och är löst.

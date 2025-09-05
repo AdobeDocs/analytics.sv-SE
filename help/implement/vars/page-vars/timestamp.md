@@ -4,9 +4,9 @@ description: Ange tidsstämpeln manuellt.
 feature: Appmeasurement Implementation
 exl-id: 9d5ce5ef-2d84-4f65-b2e3-7aa3e219bc34
 role: Admin, Developer
-source-git-commit: 665bd68d7ebc08f0da02d93977ee0b583e1a28e6
+source-git-commit: fcc165536d77284e002cb2ba6b7856be1fdb3e14
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '266'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Variabeln `timestamp` ställer in tidsstämpeln för träffen manuellt för tids
 
 ## Tidsstämpla med Web SDK
 
-Tidsstämpeln [mappas för Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/xdm-var-mapping.html?lang=sv-SE) under XDM-fältet `xdm.timestamp`. Det här fältet har bara stöd för Unix-tid.
+Tidsstämpeln [mappas för Adobe Analytics](/help/implement/aep-edge/xdm-var-mapping.md) under XDM-fältet `xdm.timestamp`. Det här fältet har bara stöd för Unix-tid.
 
 ## Tidsstämpla med Adobe Analytics-tillägget
 

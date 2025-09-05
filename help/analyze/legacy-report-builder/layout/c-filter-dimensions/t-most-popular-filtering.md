@@ -5,7 +5,7 @@ uuid: 558fa592-41be-4e66-8705-81262afe1fc7
 feature: Report Builder
 role: User, Admin
 exl-id: 31587740-6caa-40cb-bb24-d7a15181f642
-source-git-commit: fcecc8a493852f5682fd7fbd5b9bb484a850922c
+source-git-commit: e09234ca27fbf923e026aa1f2ed0ebfed636bf7c
 workflow-type: tm+mt
 source-wordcount: '562'
 ht-degree: 0%
@@ -26,9 +26,9 @@ De flesta populära filter är uttrycksfilter som du konfigurerar med hjälp av 
 
 1. Klicka på länken bredvid dimensionen i rutnätet på [!UICONTROL Request Wizard: Step 2] och välj sedan **[!UICONTROL Filter]**.
 
-   ![Skärmbild som visar dialogrutan Definiera filter med alternativ för att filtrera efter program, användare och projekt.](/help/admin/admin/assets/filter.png)
+   ![Skärmbild som visar dialogrutan Definiera filter med alternativ för att filtrera efter program, användare och projekt.](/help/admin/tools/assets/filter.png)
 
-1. Aktivera **[!UICONTROL Most Popular]** i formuläret [!UICONTROL Choose Page] och konfigurera sedan följande alternativ:
+1. Aktivera [!UICONTROL Choose Page] i formuläret **[!UICONTROL Most Popular]** och konfigurera sedan följande alternativ:
 
    **Startrangordning:** Startrangordningen för en dimension. En standardrangordning på 1 anger den översta posten i listan över rapporterade data. För dimensionen [!UICONTROL Page] anger till exempel ett startmärke på 1 den mest begärda sidan på din plats. Du kan ange 10 eller ett annat värde som inledande rankningscell, vilket skapar en rapport som börjar med 10 som högst. Måtten ordnas i fallande ordning, så att radobjekt med störst aktivitet rapporteras först i listan. Om du behöver fler än 50 000 sidnamn i en begäran, men har tusentals sidor att rapportera på, kan du kopiera begäran och ändra startordningen för att hämta rätt data i block om 50 000.
 
@@ -55,5 +55,5 @@ De flesta populära filter är uttrycksfilter som du konfigurerar med hjälp av 
 
    ![Skärmbild av dialogrutan Definiera filter med knappen OK längst ned till höger.](assets/choose_page_02.png)
 
-1. Klicka på **[!UICONTROL Save]** i formuläret [!UICONTROL Choose Page] för att spara uttrycket.
+1. Klicka på [!UICONTROL Choose Page] i formuläret **[!UICONTROL Save]** för att spara uttrycket.
 1. Klicka på **[!UICONTROL OK]**.

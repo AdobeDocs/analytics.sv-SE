@@ -4,7 +4,7 @@ description: Anpassade variabler som du kan använda i implementeringen.
 feature: Appmeasurement Implementation
 exl-id: 0d0ff8cd-1d8c-4263-866d-e51ad66148b0
 role: Admin, Developer
-source-git-commit: 665bd68d7ebc08f0da02d93977ee0b583e1a28e6
+source-git-commit: a6967c7d4e1dca5491f13beccaa797167b503d6e
 workflow-type: tm+mt
 source-wordcount: '603'
 ht-degree: 0%
@@ -37,7 +37,7 @@ Du kan ange props antingen när du konfigurerar Analytics-tillägget (globala va
 1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med dina inloggningsuppgifter för AdobeID.
 2. Klicka på den önskade taggegenskapen.
 3. Gå till fliken [!UICONTROL Rules] och klicka sedan på önskad regel (eller skapa en regel).
-4. Klicka på en befintlig [!UICONTROL Adobe Analytics - Set Variables]-åtgärd under [!UICONTROL Actions] eller klicka på +-ikonen.
+4. Klicka på en befintlig [!UICONTROL Actions]-åtgärd under [!UICONTROL Adobe Analytics - Set Variables] eller klicka på +-ikonen.
 5. Ange Adobe Analytics i listrutan [!UICONTROL Extension] och [!UICONTROL Action Type] till [!UICONTROL Set Variables].
 6. Leta reda på avsnittet [!UICONTROL Props].
 
@@ -57,7 +57,7 @@ Listtecken är en inställning som används för att tillåta variabeln att inne
 
 ### Konfigurera listproffs
 
-Aktivera listökningar i [Trafikvariabler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/c-traffic-variables/traffic-var.md) under inställningarna för rapportsviten. Kontrollera att den önskade avgränsaren är korrekt konfigurerad. Adobe har ingen standardavgränsare.
+Aktivera listökningar i [Trafikvariabler](/help/admin/tools/manage-rs/edit-settings/c-traffic-variables/traffic-var.md) under inställningarna för rapportsviten. Kontrollera att den önskade avgränsaren är korrekt konfigurerad. Adobe har ingen standardavgränsare.
 
 >[!TIP]
 >

@@ -4,9 +4,9 @@ description: Lär dig mer om hur klienttips gradvis ersätter användaragenten s
 exl-id: e0a74daa-12a2-4999-9920-2636b061dcc8
 feature: Data Configuration and Collection
 role: Admin
-source-git-commit: 73c0210ac931f3e7f823e033a3bffdc22e159ddb
+source-git-commit: a6967c7d4e1dca5491f13beccaa797167b503d6e
 workflow-type: tm+mt
-source-wordcount: '1184'
+source-wordcount: '1174'
 ht-degree: 0%
 
 ---
@@ -25,13 +25,13 @@ Google delar upp klienttips för användaragenter i två kategorier: tips för l
 
 Från och med oktober 2022 började nya versioner av Chromium-webbläsare&quot;frysa&quot; operativsystemversionen som representerades i användaragentsträngen. Operativsystemsversionen är ett tips för hög entropi, så för att operativsystemsversionen ska vara korrekt i din rapportering måste du konfigurera ditt samlingsbibliotek så att du kan samla in dessa tips för hög entropi. Med tiden kommer annan enhetsinformation för användaragenten att frysas, vilket kräver att klienttipsen upprätthåller enhetens rapporteringsnoggrannhet.
 
-Klienttips kommer att införlivas i processen för sökning efter enheter i Analytics från och med den 27 februari 2023 och avslutas den 2 mars 2023. Både AppMeasurement och Web SDK stöder för närvarande insamling av tipsdata, men kommer inte att användas i enhetssökning förrän i mitten av februari. Som anges nedan var operativsystemsversionen fryst från och med oktober, men på grund av en gradvis utrullning och det faktum att många användaragenter redan har en fryst OS-version (se mer [här](https://experienceleague.adobe.com/docs/analytics/components/dimensions/operating-systems.html?lang=sv-SE)), uppskattar vi att detta påverkar &lt;3 % av Chrome-besökarna.
+Klienttips kommer att införlivas i processen för sökning efter enheter i Analytics från och med den 27 februari 2023 och avslutas den 2 mars 2023. Både AppMeasurement och Web SDK stöder för närvarande insamling av tipsdata, men kommer inte att användas i enhetssökning förrän i mitten av februari. Som anges nedan var operativsystemsversionen fryst från och med oktober, men på grund av en gradvis utrullning och det faktum att många användaragenter redan har en fryst OS-version (se mer [här](/help/components/dimensions/operating-systems.md)), uppskattar vi att detta påverkar &lt;3 % av Chrome-besökarna.
 
 >[!NOTE]
 >
-> Från och med januari 2023 är vissa versioner av Mac och Windows felaktigt representerade i användaragenten, men korrekt representerade i klienttips med hög entropi. Mer information finns i [Operativsystem](https://experienceleague.adobe.com/docs/analytics/components/dimensions/operating-systems.html?lang=sv-SE).
+> Från och med januari 2023 är vissa versioner av Mac och Windows felaktigt representerade i användaragenten, men korrekt representerade i klienttips med hög entropi. Mer information finns i [Operativsystem](/help/components/dimensions/operating-systems.md).
 
-Adobe Audience Manager kräver att högentropi-tips samlas in för att bevara alla funktioner. Om du använder [vidarebefordran på serversidan till Adobe Audience Manager](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf.html?lang=sv-SE) kanske du vill aktivera en samling med tips för hög entropi.
+Adobe Audience Manager kräver att högentropi-tips samlas in för att bevara alla funktioner. Om du använder [vidarebefordran på serversidan till Adobe Audience Manager](/help/admin/tools/manage-rs/edit-settings/general/c-server-side-forwarding/ssf.md) kanske du vill aktivera en samling med tips för hög entropi.
 
 ## Frågor och svar
 
@@ -43,7 +43,7 @@ Det här [Google-blogginlägget](https://web.dev/user-agent-client-hints/) är e
 
 +++**Hur aktiverar jag samlingen med klienttips?**
 
-Tips om låg entropi tillhandahålls automatiskt av webbläsaren och hämtas för att ta fram information om enheter och webbläsare. Nyare versioner av Web SDK (från och med 2.12.0) och AppMeasurement (från och med 2.23.0) kan konfigureras för att samla in tips med hög entropi via respektive taggtillägg eller direkt via ett konfigurationsalternativ. Se instruktionerna för [Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/user-agent-client-hints.html?lang=sv-SE#enabling-high-entropy-client-hints) och [AppMeasurement](https://experienceleague.adobe.com/docs/analytics/implementation/vars/config-vars/collecthighentropyuseragenthints.html?lang=sv-SE).
+Tips om låg entropi tillhandahålls automatiskt av webbläsaren och hämtas för att ta fram information om enheter och webbläsare. Nyare versioner av Web SDK (från och med 2.12.0) och AppMeasurement (från och med 2.23.0) kan konfigureras för att samla in tips med hög entropi via respektive taggtillägg eller direkt via ett konfigurationsalternativ. Se instruktionerna för [Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/user-agent-client-hints.html#enabling-high-entropy-client-hints) och [AppMeasurement](/help/implement/vars/config-vars/collecthighentropyuseragenthints.md).
 
 För båda biblioteken är samlingen med höga entropytips **inaktiverad som standard**.
 
@@ -91,15 +91,15 @@ De enhetsfält som är tillgängliga för rapportering ändras inte. De data som
 
 Dessa fält härleds direkt från användaragenten, men användaragenten kan användas för att härleda värden för andra enhetsrelaterade fält, beroende på enhetsinformationen.
 
-* [Webbläsare](https://experienceleague.adobe.com/docs/analytics/components/dimensions/browser.html?lang=sv-SE)
-* [Webbläsartyp](https://experienceleague.adobe.com/docs/analytics/components/dimensions/browser-type.html?lang=sv-SE)
-* [Operativsystem](https://experienceleague.adobe.com/docs/analytics/components/dimensions/operating-systems.html?lang=sv-SE)
-* [Operativsystemstyper](https://experienceleague.adobe.com/docs/analytics/components/dimensions/operating-system-types.html?lang=sv-SE)
-* [Mobil enhet och typ av mobil enhet](https://experienceleague.adobe.com/docs/analytics/components/dimensions/mobile-dimensions.html?lang=sv-SE)
+* [Webbläsare](/help/components/dimensions/browser.md)
+* [Typ av webbläsare](/help/components/dimensions/browser-type.md)
+* [Operativsystem](/help/components/dimensions/operating-systems.md)
+* [Operativsystemstyper](/help/components/dimensions/operating-system-types.md)
+* [Mobil enhet och typ av mobil enhet](/help/components/dimensions/mobile-dimensions.md)
 
 +++
 
-+++**Vilka delar av användaragenten &quot;fryses&quot; och när?**
++++**Vilka delar av användaragenten &quot;fryses&quot; och när?** 
 
 Se tidslinjen [som publicerats av Google](https://blog.chromium.org/2021/09/user-agent-reduction-origin-trial-and-dates.html). Detta kan komma att ändras.
 
@@ -109,7 +109,7 @@ Se tidslinjen [som publicerats av Google](https://blog.chromium.org/2021/09/user
 
 Enhetsinformation i rapporter hämtas från användaragenten. Vi har uppdaterat våra processer så att vi kan använda både användaragenten och klienttips där det finns tillgängliga.
 
-Återställnings-ID ([s_fid](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/analytics-ids.html?lang=sv-SE)) härleds från användaragenten och IP-adressen. Detta ID används endast om en cookie inte kan anges så används inte i någon större utsträckning
+Återställnings-ID ([s_fid](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/analytics-ids.html)) härleds från användaragenten och IP-adressen. Detta ID används endast om en cookie inte kan anges så används inte i någon större utsträckning
 
 +++
 
@@ -157,8 +157,8 @@ Se [schemadokumentationen](https://github.com/adobe/xdm/blob/master/components/d
 
 +++
 
-+++**Kommer Adobe Audience Manager klienttips för vidarebefordran på serversidan att stödjas?**
++++**Kommer Adobe Audience Manager klienttips för vidarebefordran på serversidan att stödjas?** 
 
-Ja. Klienttips inkluderas i de data som skickas till Adobe Audience Manager. Observera att Adobe Audience Manager kräver att högentropiska tips samlas in för att bevara alla funktioner. Om du använder [vidarebefordran på serversidan till Adobe Audience Manager](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf.html?lang=sv-SE) kanske du vill aktivera en samling med tips för hög entropi.
+Ja. Klienttips inkluderas i de data som skickas till Adobe Audience Manager. Observera att Adobe Audience Manager kräver att högentropiska tips samlas in för att bevara alla funktioner. Om du använder [vidarebefordran på serversidan till Adobe Audience Manager](/help/admin/tools/manage-rs/edit-settings/general/c-server-side-forwarding/ssf.md) kanske du vill aktivera en samling med tips för hög entropi.
 
 +++

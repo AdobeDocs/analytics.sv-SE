@@ -3,10 +3,10 @@ description: Allmän översiktsinformation om Adobe Analytics, inklusive informa
 title: Användningsexempel för analyser
 feature: Analytics Basics
 exl-id: 2b5f03f3-f9f9-46e8-b4ef-0796e6f4780a
-source-git-commit: 815e50e30fa6a0bce1bf78f33843070f96f52de8
+source-git-commit: 325a42c080290509309e90c9127138800d5ac496
 workflow-type: tm+mt
-source-wordcount: '263'
-ht-degree: 9%
+source-wordcount: '257'
+ht-degree: 10%
 
 ---
 
@@ -24,7 +24,7 @@ Adobe Analytics tillhandahåller följande komplexa segmenterings- och prediktiv
 
 * [Flödesanalys](/help/analyze/analysis-workspace/visualizations/c-flow/flow.md)
 
-* [Avancerad segmentering](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-home.html?lang=sv-SE)
+* [avancerad segmentering](/help/components/segmentation/seg-home.md)
 
 
 ## Marknadsföringsanalys
@@ -33,9 +33,7 @@ Adobe Analytics hjälper organisationer att förstå var kunderna interagerar me
 
 Följande viktiga funktioner i Adobe Analytics:
 
-* [Datainsamling för flera kanaler](https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/reporting-interface/overview-data-collection.html?lang=sv-SE)
-
-* [Integrering av offlinedata](https://experienceleague.adobe.com/docs/analytics/import/data-sources/overview.html?lang=sv-SE)
+* [Integrering av offlinedata](/help/import/data-sources/overview.md)
 
 * [Ad hoc-analys i Analysis Workspace](/help/analyze/analysis-workspace/home.md)
 
@@ -55,4 +53,4 @@ Följande viktiga funktioner i Adobe Analytics har dessa prediktiva funktioner:
 
 * [Bidragsanalys](/help/analyze/analysis-workspace/c-anomaly-detection/run-contribution-analysis.md)
 
-* [Larm](/help/components/c-alerts/intellligent-alerts.md)
+* [Aviseringar](/help/components/alerts/alerts-overview.md)
