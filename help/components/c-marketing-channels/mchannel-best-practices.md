@@ -3,16 +3,16 @@ title: Bästa tillvägagångssätt för att implementera Adobe Analytics Marketi
 description: Uppdaterade rutiner för att använda marknadsföringskanaler med Attribution och Customer Journey Analytics
 feature: Marketing Channels
 exl-id: a0ab818d-7165-4f34-bc43-1ed8d6215800
-source-git-commit: a6967c7d4e1dca5491f13beccaa797167b503d6e
+source-git-commit: ac1f85ade5b47a95329e23c740c4794a9406de02
 workflow-type: tm+mt
-source-wordcount: '587'
+source-wordcount: '653'
 ht-degree: 0%
 
 ---
 
 # Attribuering med marknadsföringskanaler - bästa praxis
 
-[Marknadskanaler](/help/components/c-marketing-channels/c-getting-started-mchannel.md) är en värdefull och kraftfull funktion i Adobe Analytics. Den aktuella vägledningen för implementering av marknadsföringskanal formulerades när varken [Attribution](/help/analyze/analysis-workspace/attribution/overview.md) eller [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html?lang=sv-SE#cja-usecases) fanns.
+[Marknadskanaler](/help/components/c-marketing-channels/c-getting-started-mchannel.md) är en värdefull och kraftfull funktion i Adobe Analytics. Den aktuella vägledningen för implementering av marknadsföringskanal formulerades när varken [Attribution](/help/analyze/analysis-workspace/attribution/overview.md) eller [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html#cja-usecases) fanns.
 
 För att framtidssäkra implementeringen av era marknadsföringskanaler och säkerställa att det finns en konsekvens i rapporteringen med Attribution och Customer Journey Analytics, håller vi på att ta fram en uppsättning uppdaterade metodtips. Om du redan använder marknadsföringskanaler kan du välja de bästa alternativen bland dessa nya riktlinjer. Om ni inte har använt Marketing Channels tidigare rekommenderar vi att ni följer alla nya bästa metoder.
 
@@ -34,9 +34,13 @@ Vi rekommenderar att du använder [Attribution](/help/analyze/analysis-workspace
 
 Direkta och interna uppdateringskanaler/sessioner rekommenderas inte för användning med anpassade attribueringsmodeller.
 
-Vad händer om din organisation redan har Direct- och Session Refresh konfigurerat? I det här fallet rekommenderar vi att du [skapar en klassificering](/help/admin/tools/manage-rs/edit-settings/marketing-channels/classifications-mchannel.md) för First Touch/Last Touch och låter kanalerna Direct- och Session Refresh vara oklassificerade. Den klassificerade dimensionen ger samma attribueringsresultat som om kanalerna aldrig hade konfigurerats.
+Vad händer om din organisation redan har Direct- och Session Refresh konfigurerat? I det här fallet rekommenderar Adobe att du [skapar en klassificering](/help/admin/tools/manage-rs/edit-settings/marketing-channels/classifications-mchannel.md) för First Touch/Last Touch och låter kanalerna Direct- och Session Refresh vara oklassificerade. Den klassificerade dimensionen ger attribueringsresultat som liknar det fall där dessa kanaler aldrig konfigurerats.
 
 ![](assets/direct-session-refresh.png)
+
+Om du inaktiverar dessa kanaler och tar bort deras regler för bearbetning av marknadsföringskanaler skiljer sig resultaten något från klassificeringsmetoden. Värdet `None` representerar besök som inte matchade några regler för bearbetning av marknadsföringskanaler. Skillnader kan uppstå när ett besök som inte matchar någon kanal följer efter ett besök som matchar en kanal.
+
+Du kan fortfarande använda anpassade attribueringsmodeller för att tillämpa bakåtsökningsfönster och attribueringsmodeller i båda fallen.
 
 ## Bästa praxis nr 3: Aktivera åsidosättning av sista-beröringskanal för alla kanaler
 
