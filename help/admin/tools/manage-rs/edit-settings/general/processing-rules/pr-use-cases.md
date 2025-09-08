@@ -5,10 +5,10 @@ title: Användningsfall för bearbetningsregler
 feature: Processing Rules
 role: Admin
 exl-id: 914a0d31-d256-456e-a44a-008490e86a23
-source-git-commit: a6967c7d4e1dca5491f13beccaa797167b503d6e
+source-git-commit: 0616f35599fd40ee8b88f7809f943bb11a84429b
 workflow-type: tm+mt
 source-wordcount: '770'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -27,6 +27,7 @@ Listan [!UICONTROL Context Variables] innehåller alla variabler som har skickat
 I följande exempel används kontextdatavariabeln `search_term` och dess värde placeras i eVar3:
 
 | Regeluppsättning | Värde |
+| --- | --- |
 | Villkor | `search_term` (kontextdata) har angetts |
 | Åtgärd | [!UICONTROL Overwrite value of] eVar3 med `search_term` (kontextdata) |
 
@@ -37,8 +38,9 @@ Exemplet ovan fungerar bra när det bara finns ett fåtal eVars att fylla i. Om 
 I följande exempel fylls flera variabler i med varierande kontextdatavariabler. En åtgärd innehåller även en villkorssats:
 
 | Regeluppsättning | Värde |
+| --- | --- |
 | Åtgärd | [!UICONTROL Overwrite value of] eVar55 med `spa.billing_customer_name` (kontextdata) |
-| Åtgärd | [!UICONTROL Overwrite value of] Prop7 med `testhierarchy` (kontextdata), om `testhierarchy` (kontextdata) är inställt |
+| Åtgärd | [!UICONTROL Overwrite value of] Prop7 med `testhierarchy` (kontextdata), om `testhierarchy` (kontextdata) har angetts |
 | Åtgärd | [!UICONTROL Overwrite value of] eVar8 med `spa.ims_org` (kontextdata) |
 
 ![Skärmbild av bearbetningsregelgränssnittet som visar hur du ställer in ett värde på ett villkor](assets/add-conditional.png)
