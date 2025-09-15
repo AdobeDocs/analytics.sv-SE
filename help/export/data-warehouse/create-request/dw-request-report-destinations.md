@@ -1,20 +1,20 @@
 ---
-description: Steg som beskriver hur du skapar en begäran om Data Warehouse.
+description: Steg som beskriver hur du skapar en Data Warehouse-begäran.
 title: Konfigurera ett rapportmål för en Data Warehouse-begäran
 feature: Data Warehouse
 exl-id: 3c7faea3-4d90-4274-88f3-e9337c94155f
-source-git-commit: d213befd0fd8d530d95b8d3ac3c4f3b808558244
+source-git-commit: f0a5f72667fd6fc7847ede82d5196d9159fc558c
 workflow-type: tm+mt
-source-wordcount: '1967'
+source-wordcount: '1977'
 ht-degree: 0%
 
 ---
 
 # Konfigurera ett rapportmål för en Data Warehouse-begäran
 
-Det finns olika konfigurationsalternativ tillgängliga när du skapar en Data Warehouse. Följande information beskriver hur du konfigurerar ett rapportmål för begäran.
+Det finns olika konfigurationsalternativ tillgängliga när du skapar en Data Warehouse-begäran. Följande information beskriver hur du konfigurerar ett rapportmål för begäran.
 
-Mer information om hur du börjar skapa en begäran och länkar till andra viktiga konfigurationsalternativ finns i [Skapa en begäran om Data Warehouse](/help/export/data-warehouse/create-request/t-dw-create-request.md).
+Mer information om hur du börjar skapa en begäran och länkar till andra viktiga konfigurationsalternativ finns i [Skapa en Data Warehouse-begäran](/help/export/data-warehouse/create-request/t-dw-create-request.md).
 
 >[!NOTE]
 >
@@ -34,13 +34,13 @@ Mer information om hur du börjar skapa en begäran och länkar till andra vikti
 >
 >* Du kan redigera alla platser som du skapar från platshanteraren i [Komponenter > Platser](/help/components/locations/configure-import-accounts.md)
 
-Så här konfigurerar du målet dit Data Warehouse-rapporter skickas:
+Så här konfigurerar du målet dit Data Warehouse-rapporter ska skickas:
 
 1. Om du inte redan har gjort det börjar du skapa en begäran i Adobe Analytics genom att välja **[!UICONTROL Tools]** > **[!UICONTROL Data Warehouse]** > [!UICONTROL **Lägg till**].
 
-   Mer information finns i [Skapa en begäran om Data Warehouse](/help/export/data-warehouse/create-request/t-dw-create-request.md).
+   Mer information finns i [Skapa en Data Warehouse-förfrågan](/help/export/data-warehouse/create-request/t-dw-create-request.md).
 
-1. Markera fliken [!UICONTROL **Rapportmål**] på sidan Ny Data Warehouse.
+1. På sidan Ny begäran från Data Warehouse väljer du fliken [!UICONTROL **Rapportmål**].
 
    ![Fliken Rapportmål](assets/dw-report-destination.png)
 
@@ -83,13 +83,15 @@ Så här konfigurerar du målet dit Data Warehouse-rapporter skickas:
 
       **Kontotyper**
 
-      +++Amazon S3 Roll ARN
+      +++Amazon S3 Role ARN
+
+      **OBS!** När du använder Amazon S3 med Data Warehouse stöds endast SSE-S3-kryptering.
 
       Om du vill konfigurera ett Amazon S3 Role ARN-konto anger du följande information:
 
       | Fält | Funktion |
       |---------|----------|
-      | [!UICONTROL **Roll-ARN**] | Du måste ange en roll-ARN (Amazon Resource Name) som Adobe kan använda för att få åtkomst till Amazon S3-kontot. För att göra detta skapar du en IAM-behörighetsprincip för källkontot, kopplar principen till en användare och skapar sedan en roll för målkontot. Mer information finns i [den här AWS-dokumentationen](https://aws.amazon.com/premiumsupport/knowledge-center/cross-account-access-iam/). |
+      | [!UICONTROL **Roll-ARN**] | Du måste ange ett ROLL-ARN (Amazon Resource Name) som Adobe kan använda för att få åtkomst till Amazon S3-kontot. För att göra detta skapar du en IAM-behörighetsprincip för källkontot, kopplar principen till en användare och skapar sedan en roll för målkontot. Mer information finns i [den här AWS-dokumentationen](https://aws.amazon.com/premiumsupport/knowledge-center/cross-account-access-iam/). |
 
       {style="table-layout:auto"}
 
@@ -121,7 +123,7 @@ Så här konfigurerar du målet dit Data Warehouse-rapporter skickas:
 
       {style="table-layout:auto"}
 
-      +++
+      +++   
 
       +++Azure RBAC
 
@@ -153,7 +155,7 @@ Så här konfigurerar du målet dit Data Warehouse-rapporter skickas:
 
       +++
 
-1. Fortsätt konfigurera din Data Warehouse-förfrågan på fliken [!UICONTROL **Rapportalternativ**]. Mer information finns i [Konfigurera rapportalternativ för en Data Warehouse](/help/export/data-warehouse/create-request/dw-request-report-options.md).
+1. Fortsätt konfigurera din Data Warehouse-begäran på fliken [!UICONTROL **Rapportalternativ**]. Mer information finns i [Konfigurera rapportalternativ för en Data Warehouse-begäran](/help/export/data-warehouse/create-request/dw-request-report-options.md).
 
 ## Äldre kontotyper
 
@@ -165,7 +167,7 @@ Följande information innehåller konfigurationsinformation för var och en av d
 
 ### FTP
 
-Data dist.lagerdata kan levereras till en FTP-plats som är värd för Adobe eller kund. Kräver FTP-värd, användarnamn och lösenord. Använd sökvägsfältet för att placera feed-filer i en mapp. Mappar måste redan finnas. Flöden genererar ett fel om den angivna sökvägen inte finns.
+Data dist.lagerdata kan levereras till en Adobe- eller kundvärd för FTP-plats. Kräver FTP-värd, användarnamn och lösenord. Använd sökvägsfältet för att placera feed-filer i en mapp. Mappar måste redan finnas. Flöden genererar ett fel om den angivna sökvägen inte finns.
 
 Använd följande information när du fyller i de tillgängliga fälten:
 

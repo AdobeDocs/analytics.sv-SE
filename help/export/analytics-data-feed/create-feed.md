@@ -3,9 +3,9 @@ title: Skapa en datafeed
 description: Lär dig hur du skapar en datafeed och om filinformationen som ska skickas till Adobe.
 feature: Data Feeds
 exl-id: 36c8a40e-6137-4836-9d4b-bebf17b932bc
-source-git-commit: bac8d17de1d442484ae1cf8c038ad853343ddb6b
+source-git-commit: f0a5f72667fd6fc7847ede82d5196d9159fc558c
 workflow-type: tm+mt
-source-wordcount: '4124'
+source-wordcount: '4136'
 ht-degree: 0%
 
 ---
@@ -69,6 +69,8 @@ Innan du skapar en datafeed är det viktigt att du har en grundläggande först�
    Du kan skicka feeds direkt till Amazon S3-butiker. Den här måltypen kräver endast ditt Amazon S3-konto och platsen (bucket).
 
    Adobe Analytics använder kontoautentisering för att överföra filer från Adobe Analytics till den angivna platsen i din Amazon S3-instans.
+
+   När du använder Amazon S3 med dataflöden stöds endast SSE-S3-kryptering.
 
    Så här konfigurerar du en Amazon S3-bucket som mål för en datafeed:
 

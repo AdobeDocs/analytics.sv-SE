@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: Konfigurera molnimport- och exportkonton
 feature: Classifications
 exl-id: 40d3d3f1-1047-4c37-8caf-6b0aabaa590a
-source-git-commit: 5c02b46a7757e07a23505dc8e3dc21b6353aa9e2
+source-git-commit: f0a5f72667fd6fc7847ede82d5196d9159fc558c
 workflow-type: tm+mt
-source-wordcount: '1475'
+source-wordcount: '1488'
 ht-degree: 0%
 
 ---
@@ -61,7 +61,9 @@ Så här konfigurerar du ett molnimport- eller exportkonto:
 
    **Kontotyper**
 
-   +++Amazon S3 Roll ARN
+   +++Amazon S3 Role ARN
+
+   **Obs!** När du använder Amazon S3 med datafeeds och Data Warehouse stöds endast SSE-S3-kryptering.
 
    Om du vill konfigurera ett Amazon S3 Role ARN-konto anger du följande information:
 
@@ -99,7 +101,7 @@ Så här konfigurerar du ett molnimport- eller exportkonto:
 
    {style="table-layout:auto"}
 
-   +++
+   +++   
 
    +++Azure RBAC
 
