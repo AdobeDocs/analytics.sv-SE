@@ -3,9 +3,9 @@ description: Beskriver hur du migrerar komponenter och projekt från Adobe Analy
 title: Migrera komponenter och projekt från Adobe Analytics till Customer Journey Analytics
 feature: Admin Tools
 exl-id: 49c7e47a-464b-4465-9b30-d77f886ca6dc
-source-git-commit: e09234ca27fbf923e026aa1f2ed0ebfed636bf7c
+source-git-commit: ec4475cdd8f0c3e89f528bd60155caa1ca3f0645
 workflow-type: tm+mt
-source-wordcount: '1511'
+source-wordcount: '1635'
 ht-degree: 0%
 
 ---
@@ -39,39 +39,53 @@ Gör dessutom en [Adobe Analytics-inventering](/help/admin/tools/analytics-inven
 
 ## Migrera Adobe Analytics-projekt till Customer Journey Analytics
 
->[!IMPORTANT]
+>[!NOTE]
 >
 >Innan du migrerar några projekt till Customer Journey Analytics enligt beskrivningen i det här avsnittet bör du lära dig mer om hur du migrerar projekt i [Förbered för att migrera komponenter och projekt från Adobe Analytics till Customer Journey Analytics](/help/admin/tools/component-migration/prepare-component-migration.md).
 >
->**Alla dimensioner eller mätvärden som du mappar är permanenta, både för det här projektet och för alla framtida projekt som migreras i hela IMS-organisationen, oavsett vilken användare som utför migreringen. Dessa mappningar kan inte ändras eller ångras förutom genom att kontakta kundtjänst.**
+>**Alla dimensioner eller mått som du mappar gäller för det här projektet och för alla framtida projekt i hela IMS-organisationen, oavsett vilken användare som utför migreringen. Dessa mappningar kan uppdateras när framtida projekt migreras.**
 
 1. I Adobe Analytics väljer du fliken [!UICONTROL **Admin**] och sedan [!UICONTROL **All admin**].
 
 1. Välj [!UICONTROL **Komponentmigrering**] under [!UICONTROL **Datakonfiguration och samling**].
 
-1. Leta reda på det projekt som du vill migrera. Du kan filtrera, sortera och söka i projektlistan.
+1. Leta reda på varje projekt som du vill migrera. Du kan filtrera, sortera och söka i projektlistan.
 
    Som standard visas endast projekt som delas med dig. Om du vill visa alla projekt i organisationen väljer du ikonen **Filter** , expanderar [!UICONTROL **Andra filter**] och väljer [!UICONTROL **Visa alla**] . (Mer information om filtrering, sortering och sökning i projektlistan finns i [Filtrera, sortera och söka i listan med projekt](#filter-sort-and-search-the-list-of-projects).)
 
-1. För musen över projektet som du vill migrera och välj sedan ikonen **Migrera** ![Migrera projekt](assets/migrate.svg) .
+1. (Villkorligt) Om du vill migrera flera projekt samtidigt markerar du kryssrutan till vänster om varje projekt som du vill migrera och väljer sedan [!UICONTROL **Migrera till Customer Journey Analytics**].
 
-   eller
+   Tänk på följande när du migrerar flera projekt:
 
-   Välj det projekt som du vill migrera och välj sedan [!UICONTROL **Migrera till Customer Journey Analytics**].
+   * Du kan välja upp till 20 projekt att migrera samtidigt.
 
-   Du kan bara välja ett projekt åt gången för migrering.
+   * Migreringsstatusen måste vara densamma för alla projekt som du migrerar.
+
+     Om du till exempel väljer ett projekt som ska migreras och har migreringsstatusen **[!UICONTROL Not started]**, kan du inte välja ett annat projekt som har migreringsstatusen **[!UICONTROL Failed]**.
+
+   * Du måste ange samma projektägare för alla projekt som du migrerar.
+
+   * Dimensioner och mätvärden måste mappas till samma datavy för alla projekt som du migrerar.
 
    Dialogrutan [!UICONTROL **Migrera project_name till Customer Journey Analytics**] visas.
 
    <!-- add screenshot -->
 
-1. I fältet [!UICONTROL **Projektägare**] börjar du skriva namnet på den användare som du vill ange som projektägare i Customer Journey Analytics och väljer sedan namnet i listrutan.
+1. (Villkorligt) Om du vill migrera ett enskilt projekt för du musen över det projekt som du vill migrera och väljer sedan ikonen **Migrera** ![Migrera projekt](assets/migrate.svg) .
 
-   Ägaren som du anger har fullständig behörighet till projektet. Ägaren måste vara administratör i Customer Journey Analytics. Du kan ändra ägarskapet för projektet i ett senare steg.
+   Dialogrutan [!UICONTROL **Migrera project_name till Customer Journey Analytics**] visas.
+
+   <!-- add screenshot -->
+
+1. I fältet [!UICONTROL **Projektägare**] börjar du skriva namnet på den användare som du vill ange som ägare till de projekt som migreras i Customer Journey Analytics och väljer sedan namnet i listrutan.
+
+   Ägaren som du anger har fullständig hanteringsbehörighet för de migrerade projekten. Ägaren måste vara administratör i Customer Journey Analytics. Du kan ändra ägarskapet för projekten i ett senare steg.
 
 1. Välj en rapportsvit i [!UICONTROL **Kartschemat för rapportsviter**].
 
-1. I listrutan [!UICONTROL **Datavy**] väljer du den datavy i Customer Journey Analytics där du vill att projektet och komponenterna ska migreras.
+1. I listrutan [!UICONTROL **Datavy**] väljer du den datavy i Customer Journey Analytics där du vill att projekten och komponenterna ska migreras.
+
+   När du migrerar flera projekt kombineras alla projekt som du migrerar till datavymappningen.
 
 1. Välj [!UICONTROL **Kartschema**].
 
@@ -117,19 +131,19 @@ Gör dessutom en [Adobe Analytics-inventering](/help/admin/tools/analytics-inven
 
    När alla dimensioner och mätvärden i Adobe Analytics rapportsserie har mappats till en dimension eller ett mätvärde i Customer Journey Analytics rapportsvit, visas en grön bockmarkering ![bockmarkering](assets/report-suite-check.png) bredvid rapportsvitens namn i [!UICONTROL **Kartschemat för rapportsviter**] .
 
-1. (Villkorligt) Om projektet som du migrerar innehåller mer än en rapportsvit väljer du en annan rapportsvit i [!UICONTROL **Kartschemat för rapportsviter**] och upprepar sedan steg 6 till steg 10. <!-- double-check that the step numbers are still correct -->
+1. (Villkorligt) Om de projekt som du migrerar innehåller mer än en rapportsvit väljer du en annan rapportsvit i [!UICONTROL **Kartschemat för rapportsviter**] och upprepar sedan steg 6 till steg 10. <!-- double-check that the step numbers are still correct -->
 
 1. Välj [!UICONTROL **Migrera**].
 
    >[!WARNING]
    >
-   >   Ett varningsmeddelande visas när du har valt [!UICONTROL **Migrera**]. Innan du fortsätter bör du vara medveten om att alla dimensioner och mätvärden som du mappar är permanenta, både för det här projektet och för alla framtida projekt som migreras i hela organisationen. Om du fortsätter går det inte att ändra de mappningar du gör.
+   >Ett varningsmeddelande visas när du har valt [!UICONTROL **Migrera**]. Innan du fortsätter bör du vara medveten om att alla dimensioner och mätvärden som du mappar gäller för det här projektet och för alla framtida projekt i hela IMS-organisationen, oavsett vilken användare som utför migreringen. Dessa mappningar kan uppdateras när du migrerar framtida projekt.
 
    När en migrering har slutförts ger sidan [!UICONTROL **Migreringsstatus**] en sammanfattning av vad som migrerades.
 
    Om migreringen misslyckas finns mer information i avsnittet [Försök igen med en misslyckad migrering](#retry-a-failed-migration) nedan.
 
-1. (Valfritt) När ett projekt har migrerats kan du överföra ägarskapet för projektet till valfri användare i Customer Journey Analytics. Mer information finns i [Överför resurser](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/tools/asset-transfer/transfer-assets) i Customer Journey Analytics Guide.
+1. (Valfritt) När projekten har migrerats kan du överföra ägarskapet för projekten till vilken användare som helst i Customer Journey Analytics. Mer information finns i [Överför resurser](https://experienceleague.adobe.com/en/docs/analytics-platform/using/tools/asset-transfer/transfer-assets) i Customer Journey Analytics Guide.
 
 ## Försök att utföra migreringen igen
 

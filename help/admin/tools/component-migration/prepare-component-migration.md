@@ -3,9 +3,9 @@ description: Beskriver de förberedelser som krävs för att förbereda migrerin
 title: Förbered migrering av komponenter och projekt från Adobe Analytics till Customer Journey Analytics
 feature: Admin Tools
 exl-id: a9ff98dc-6568-428d-a8a8-faca5bc76a29
-source-git-commit: 665319bdfc4c1599292c2e7aea45622d77a291a7
+source-git-commit: ec4475cdd8f0c3e89f528bd60155caa1ca3f0645
 workflow-type: tm+mt
-source-wordcount: '872'
+source-wordcount: '863'
 ht-degree: 1%
 
 ---
@@ -16,7 +16,7 @@ Innan någon i organisationen börjar migrera projekt enligt beskrivningen i [Mi
 
 ## Förutsättningar
 
-Innan dina projekt och tillhörande komponenter är klara att migreras måste du följa stegen i [Utveckla från Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/aa-to-cja.html?lang=sv-SE) i Adobe Customer Journey Analytics Guide. De här stegen omfattar:
+Innan dina projekt och tillhörande komponenter är klara att migreras måste du följa stegen i [Utveckla från Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/aa-to-cja.html) i Adobe Customer Journey Analytics Guide. De här stegen omfattar:
 
 1. Använd någon av följande metoder för att importera data till Adobe Experience Platform för att visa Adobe Analytics rapportsvitdata i Customer Journey Analytics:
 
@@ -27,21 +27,21 @@ Innan dina projekt och tillhörande komponenter är klara att migreras måste du
 
    * Om du vill använda Adobe Analytics källanslutning måste du:
 
-      1. [Konfigurera rapportsviter för förtäring i Adobe Experience Platform och Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/aa-data-in-cja.html?lang=sv-SE#set-up-report-suites-for-ingestion-into-the-adobe-experience-platform-and-customer-journey-analytics)
+      1. [Konfigurera rapportsviter för förtäring i Adobe Experience Platform och Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/aa-data-in-cja.html#set-up-report-suites-for-ingestion-into-the-adobe-experience-platform-and-customer-journey-analytics)
 
-      1. [Importera och använd data](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-data-ingestion/ingest-use-guides/analytics.html?lang=sv-SE)
+      1. [Importera och använd data](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-data-ingestion/ingest-use-guides/analytics.html)
 
    * Om du vill använda WebSDK måste du:
 
-      1. [Konfigurera rapportsviter för förtäring i Adobe Experience Platform och Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/aa-data-in-cja.html?lang=sv-SE#set-up-report-suites-for-ingestion-into-the-adobe-experience-platform-and-customer-journey-analytics)
+      1. [Konfigurera rapportsviter för förtäring i Adobe Experience Platform och Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/aa-data-in-cja.html#set-up-report-suites-for-ingestion-into-the-adobe-experience-platform-and-customer-journey-analytics)
 
-      1. [Infoga data via Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-data-ingestion/ingest-use-guides/edge-network/aepwebsdk.html?lang=sv-SE)
+      1. [Infoga data via Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-data-ingestion/ingest-use-guides/edge-network/aepwebsdk.html)
 
-1. Skapa en [anslutning](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/overview.html?lang=sv-SE) och [datavy](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=sv-SE) med inkapslade data.
+1. Skapa en [anslutning](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/overview.html) och [datavy](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html) med inkapslade data.
 
 1. Se till att användare i Customer Journey Analytics är tilldelade datavyer där data mappas.
 
-   Mer information finns i [Customer Journey Analytics-behörigheter i Admin Console](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-admin/cja-access-control.html?lang=sv-SE#customer-journey-analytics-permissions-in-admin-console) i [Customer Journey Analytics åtkomstkontroll](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-admin/cja-access-control.html?lang=sv-SE).
+   Mer information finns i [Customer Journey Analytics-behörigheter i Admin Console](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-admin/cja-access-control.html#customer-journey-analytics-permissions-in-admin-console) i [Customer Journey Analytics åtkomstkontroll](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-admin/cja-access-control.html).
 
    Fliken Behörigheter ingår i varje produktprofil i Admin Console. Du kan lägga till användare i specifika produktprofiler. Sedan tilldelar du rättigheter till specifika datavyer och anger vilka behörigheter användarna i en produktprofil har.
 
@@ -99,10 +99,6 @@ Följande visualiseringar och paneler stöds inte i Customer Journey Analytics. 
 
 Ta bort dessa element från Adobe Analytics-projektet innan du migrerar projektet till Customer Journey Analytics. Om en migrering misslyckas tar du bort de här elementen innan du försöker migrera igen.
 
-### Visualiseringar som inte stöds
-
-* [Karta](/help/analyze/analysis-workspace/visualizations/map-visualization.md)
-
 ### Paneler som inte stöds
 
 * [Analyser för mål (A4T)](/help/analyze/analysis-workspace/c-panels/a4t-panel.md)
@@ -119,13 +115,13 @@ Ta bort dessa element från Adobe Analytics-projektet innan du migrerar projekte
 
 ## Bestäm som organisation hur du ska mappa komponenter
 
->[!IMPORTANT]
+>[!NOTE]
 >
 >Migreringsprocessen identifierar komponenter i ditt Adobe Analytics-projekt som inte kan mappas automatiskt till komponenter i Customer Journey Analytics och gör att du kan mappa dem manuellt.
 >
->**Alla mappningar som görs i ett projekt gäller för alla framtida projekt i hela IMS-organisationen, oavsett vilken användare som utför migreringen. Dessa mappningar kan inte ändras eller ångras förutom genom att kontakta kundtjänst.**
+>**Alla mappningar som görs i ett projekt gäller för alla framtida projekt i hela IMS-organisationen, oavsett vilken användare som utför migreringen. Dessa mappningar kan uppdateras när framtida projekt migreras.**
 >
->Därför är det viktigt att organisationen bestämmer hur dimensioner och mått mappas innan några projekt migreras. På så sätt undviker du att enskilda administratörer fattar beslut i en silo när de endast överväger ett enskilt projekt.
+>Det är viktigt att organisationen bestämmer hur dimensioner och mätvärden mappas innan några projekt migreras. På så sätt undviker du att enskilda administratörer fattar beslut i en silo när de endast överväger ett enskilt projekt.
 >
 >Här följer en lista med mått och mätvärden som du måste mappa manuellt om de finns i ditt projekt. Vi rekommenderar att du granskar den här listan innan du migrerar. Om någon av dessa komponenter finns i ditt projekt, bestämmer du nu vilka Customer Journey Analytics-komponenter du ska mappa dem till.
 
