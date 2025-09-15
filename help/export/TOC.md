@@ -3,11 +3,11 @@ product: analytics
 audience: end-user
 user-guide-title: Exporthandbok för Analytics
 breadcrumb-title: Användarhandbok om export
-user-guide-description: Lär dig hur du använder dataflöden och Data Warehouse för att hämta data.
+user-guide-description: Lär dig att använda dataflöden och datalager för att hämta dataoutput.
 source-git-commit: bb068d39f756c4cce06349d0bd969212e19cb33e
 workflow-type: tm+mt
 source-wordcount: '255'
-ht-degree: 6%
+ht-degree: 11%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 6%
 # Adobe Analytics Export Guide {#export}
 
 + [Exportguide för analyser](home.md)
-+ [Versionsinformation för analyser](https://experienceleague.adobe.com/sv/docs/analytics/release-notes/latest)
++ [Versionsinformation för analyser](https://experienceleague.adobe.com/en/docs/analytics/release-notes/latest)
 + Datafeed i Analytics {#analytics-data-feed}
    + [Översikt över dataflöden](analytics-data-feed/data-feed-overview.md)
    + [Skapa en datafeed](analytics-data-feed/create-feed.md)
