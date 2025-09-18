@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Variabeln `trackingServerSecure` avgör vilken domän AppMeasurement använder för att skicka data till Adobe via HTTPS. Om den här variabeln inte är korrekt definierad kan din implementering uppleva dataförlust.
 
-Före [Adobe Experience Cloud Identity Service](https://experienceleague.adobe.com/en/docs/id-service/using/home) fastställde variabeln också var cookies från tredje part angavs. Adobe rekommenderar starkt att du använder ID-tjänsten i alla implementeringar där det är möjligt.
+Före [Adobe Experience Cloud Identity Service](https://experienceleague.adobe.com/sv/docs/id-service/using/home) fastställde variabeln också var cookies från tredje part angavs. Adobe rekommenderar starkt att du använder ID-tjänsten i alla implementeringar där det är möjligt.
 
 ## Edge domain using the Web SDK extension
 
@@ -26,7 +26,7 @@ SDK använder [!UICONTROL Edge domain] för att hantera både spårningsservern 
 1. Gå till fliken [!UICONTROL Extensions] och välj sedan knappen **[!UICONTROL Configure]** under [!UICONTROL Adobe Experience Platform Web SDK].
 1. Ange det önskade textfältet **[!UICONTROL Edge domain]**.
 
-Mer information finns i [Konfigurera Adobe Experience Platform Web SDK-tillägget](https://experienceleague.adobe.com/docs/experience-platform/edge/extension/web-sdk-extension-configuration.html) i dokumentationen för Web SDK.
+Mer information finns i [Konfigurera Adobe Experience Platform Web SDK-tillägget](https://experienceleague.adobe.com/docs/experience-platform/edge/extension/web-sdk-extension-configuration.html?lang=sv-SE) i dokumentationen för Web SDK.
 
 >[!TIP]
 >
@@ -34,7 +34,7 @@ Mer information finns i [Konfigurera Adobe Experience Platform Web SDK-tillägge
 
 ## Edge domain implementerar Web SDK manuellt
 
-Konfigurera SDK med [`edgeDomain`](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/edgedomain). Fältet är en sträng som avgör vilken domän som data ska skickas till.
+Konfigurera SDK med [`edgeDomain`](https://experienceleague.adobe.com/sv/docs/experience-platform/web-sdk/commands/configure/edgedomain). Fältet är en sträng som avgör vilken domän som data ska skickas till.
 
 ```json
 alloy("configure", {
@@ -69,8 +69,8 @@ s.trackingServerSecure = "example.data.adobedc.net";
 
 Värdet som du använder för `trackingServerSecure` (eller `edgeDomain`) beror på flera faktorer:
 
-* Ditt deltagande i det [Adobe-hanterade certifikatprogrammet](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/adobe-managed-cert)
-* Om du har [Adobe Experience Cloud Identity Service](https://experienceleague.adobe.com/en/docs/id-service/using/home) implementerad och konfigurerad korrekt
+* Ditt deltagande i det [Adobe-hanterade certifikatprogrammet](https://experienceleague.adobe.com/sv/docs/core-services/interface/data-collection/adobe-managed-cert)
+* Om du har [Adobe Experience Cloud Identity Service](https://experienceleague.adobe.com/sv/docs/id-service/using/home) implementerad och konfigurerad korrekt
 
 **Om din organisation deltar i det Adobe-hanterade certifikatprogrammet** anger du värdet till den förstapartsdomän som valdes när certifikatet konfigurerades. Vanligtvis är det här värdet en underdomän som ägs av din organisation. Exempel: `data.example.com`. CNAME-poster i organisationen omdirigerar dessa data till Adobe.
 
@@ -92,10 +92,10 @@ Adobe rekommenderar starkt att du upprätthåller denna information i ett [lösn
 
 ## Justeringar för att inte använda tjänsten för besökar-ID
 
-Adobe rekommenderar starkt att du använder [Adobe Experience Cloud Identity Service](https://experienceleague.adobe.com/en/docs/id-service/using/home) i alla implementeringar. ID-tjänsten kan implementeras på flera olika sätt:
+Adobe rekommenderar starkt att du använder [Adobe Experience Cloud Identity Service](https://experienceleague.adobe.com/sv/docs/id-service/using/home) i alla implementeringar. ID-tjänsten kan implementeras på flera olika sätt:
 
-* Manuella AppMeasurement-implementeringar använder `VisitorAPI.js` och anropar metoden `getInstance`. Mer information finns i [Implementera Experience Cloud identitetstjänst för analyser](https://experienceleague.adobe.com/en/docs/id-service/using/implementation/setup-analytics).
-* Implementeringar som använder Adobe Analytics-taggtillägget använder [Adobe Experience Cloud ID-tjänsttillägget](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/id-service/overview). När du har lagt till någon konfiguration krävs ingen ytterligare konfiguration.
+* Manuella AppMeasurement-implementeringar använder `VisitorAPI.js` och anropar metoden `getInstance`. Mer information finns i [Implementera Experience Cloud identitetstjänst för analyser](https://experienceleague.adobe.com/sv/docs/id-service/using/implementation/setup-analytics).
+* Implementeringar som använder Adobe Analytics-taggtillägget använder [Adobe Experience Cloud ID-tjänsttillägget](https://experienceleague.adobe.com/sv/docs/experience-platform/tags/extensions/client/id-service/overview). När du har lagt till någon konfiguration krävs ingen ytterligare konfiguration.
 * För implementeringar som använder någon form av Web SDK (`alloy.js` eller Web SDK-taggtillägget) har ID-tjänsten redan incheckats internt. Ingen konfiguration krävs utöver inställningen av värdet `edgeDomain`.
 
 **Om din implementering inte använder identitetstjänsten** bör du tänka på följande effekter för implementeringen:

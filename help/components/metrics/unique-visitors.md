@@ -27,9 +27,9 @@ Det här måttet räknar antalet unika besökar-ID:n för en given dimensionspos
 | Använd order | Frågeparameter (samlingsmetod) | Presentera när |
 | --- | --- | --- |
 | 1 | `vid` | Variabeln [`visitorID`](/help/implement/vars/config-vars/visitorid.md) har angetts. |
-| 2 | `aid` | Besökaren har en befintlig [`s_vi`](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html)-cookie. Ange implementeringar utan eller innan du implementerar Visitor ID-tjänsten. |
-| 3 | `mid` | Besökaren har en befintlig [`s_ecid`](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html)-cookie. Ange implementeringar med hjälp av [Adobe Experience Cloud Identity-tjänsten](https://experienceleague.adobe.com/docs/id-service/using/home.html). Adobe rekommenderar att du använder ID-tjänsten för alla implementeringar där det är möjligt. |
-| 4 | `fid` | Besökaren har en befintlig [`s_fid`](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html)-cookie, eller om `aid` och `mid` inte kunde anges av någon anledning. |
+| 2 | `aid` | Besökaren har en befintlig [`s_vi`](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html?lang=sv-SE)-cookie. Ange implementeringar utan eller innan du implementerar Visitor ID-tjänsten. |
+| 3 | `mid` | Besökaren har en befintlig [`s_ecid`](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html?lang=sv-SE)-cookie. Ange implementeringar med hjälp av [Adobe Experience Cloud Identity-tjänsten](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=sv-SE). Adobe rekommenderar att du använder ID-tjänsten för alla implementeringar där det är möjligt. |
+| 4 | `fid` | Besökaren har en befintlig [`s_fid`](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html?lang=sv-SE)-cookie, eller om `aid` och `mid` inte kunde anges av någon anledning. |
 | 5 | IP-adress, användaragent, gateway-IP-adress | Den sista utvägen för att identifiera en unik besökare om besökarens webbläsare inte accepterar cookies. |
 
 >[!NOTE]
