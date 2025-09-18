@@ -58,4 +58,4 @@ Processen med att flytta en befintlig implementering över flera webbplatser til
 >[!MORELIKETHIS]
 >
 >[Gå från taggning för flera programsviter till en global rapportserie och virtuella rapportsviter](../../components/vrs/vrs-considerations.md)
->>[Jämför sammanslagningar och globala rapportsviter ](../../admin/tools/manage-rs/rollup-report-suite.md)
+>&#x200B;>[Jämför sammanslagningar och globala rapportsviter ](../../admin/tools/manage-rs/rollup-report-suite.md)
