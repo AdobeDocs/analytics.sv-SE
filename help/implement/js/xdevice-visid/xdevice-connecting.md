@@ -1,14 +1,14 @@
 ---
-description: Identifiering av besökare på olika enheter hjälper er att koppla samman besökare på olika enheter. Identifiering av besökare på olika enheter använder variabeln besökar-ID, s.visitorID, för att associera en användare på olika enheter.
+description: Identifiering av besökare på olika enheter hjälper er att koppla samman besökare på olika enheter.
 keywords: Implementering av analyser
 subtopic: Visitors
 title: Koppla samman användare på olika enheter
 feature: Implementation Basics
 exl-id: dfe278db-01de-4bba-b07a-66d52de1dbe2
 role: Developer
-source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
+source-git-commit: e242276f931e9939081b948a9d9ef8a087e16461
 workflow-type: tm+mt
-source-wordcount: '398'
+source-wordcount: '383'
 ht-degree: 0%
 
 ---
@@ -32,4 +32,4 @@ När kunden har loggat in från varje enhet är de alla knutna till samma använ
 Genom att använda egna besökar-ID:n får du större kontroll över hur besökare identifieras, men det har sina begränsningar.
 
 * **Avduplicering av besökare är inte retroaktiv**: Om en besökare kommer åt webbplatsen för första gången autentiseras två unika besökare. En unik besökare räknas automatiskt för det generiska analys-ID:t och en annan räknas för det anpassade besökar-ID:t när de loggar in. Den här dupliceringen av unika besökare förekommer varje gång en besökare använder en ny enhet eller rensar sina cookies.
-* **Inkompatibelt med Experience Cloud ID-tjänsten**: Sedan vi introducerade besöksidentifiering på olika enheter har Adobe släppt kraftfullare och tillförlitligare sätt att spåra besökare på olika enheter. Dessa nya identifieringsmetoder är inte kompatibla med åsidosättningen av det anpassade besökar-ID:t. Om du tänker använda ID-tjänsten eller CDA (Cross-Device Analytics) rekommenderar Adobe starkt att du inte använder variabeln `visitorID`.
+* **Inkompatibelt med Experience Cloud ID-tjänsten**: Adobe har släppt kraftfullare och tillförlitligare sätt att spåra besökare på olika enheter sedan introduktionen. Dessa nya identifieringsmetoder är inte kompatibla med åsidosättningen av det anpassade besökar-ID:t. Om du tänker använda ID-tjänsten eller CDA (Cross-Device Analytics) rekommenderar Adobe starkt att du inte använder variabeln `visitorID`.

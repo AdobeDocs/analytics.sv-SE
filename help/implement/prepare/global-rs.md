@@ -4,9 +4,9 @@ description: Förstå fördelarna och kraven med att använda ett globalt rappor
 feature: Implementation Basics
 exl-id: fa949b1e-80bd-41cf-a294-c840503b568f
 role: Admin, Developer, Leader
-source-git-commit: a6967c7d4e1dca5491f13beccaa797167b503d6e
+source-git-commit: 2d5348a4a6377313f5aab229214d97a02c826939
 workflow-type: tm+mt
-source-wordcount: '854'
+source-wordcount: '851'
 ht-degree: 0%
 
 ---
@@ -43,8 +43,8 @@ Använd följande allmänna riktlinjer för att förstå hur man implementerar e
    >
    >Se till att alla anpassade variabler används på samma sätt i alla domäner. Använd inte samma eVar eller event för olika syften på alla era webbplatser.
 1. Se till att varje domän har ett datalager som förenklar datainsamlingen. Data kan fortfarande samlas in utan ett datalager, men tillförlitligheten och varaktigheten i implementeringen minskar, särskilt när sajten genomgår omformningar.
-1. Använd taggar i Adobe Experience Platform för att implementera Analytics. Olika webbplatser kommer troligtvis att kräva olika dataelement. Använd regler som är specifika för varje domän för att säkerställa att varje dataelement är korrekt ifyllt och tilldela sedan dessa dataelement till deras respektive eVars- och händelser. Se [taggöversikten](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=sv-SE).
-1. Inkludera [Adobe Experience Cloud ID-tjänsten](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=sv-SE) och använd funktionen [appendVisitorIDsTo](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/methods/appendvisitorid.html?lang=sv-SE). Den här funktionen sammanfogar besökardata när användare klickar från en domän till en annan.
+1. Använd taggar i Adobe Experience Platform för att implementera Analytics. Olika webbplatser kommer troligtvis att kräva olika dataelement. Använd regler som är specifika för varje domän för att säkerställa att varje dataelement är korrekt ifyllt och tilldela sedan dessa dataelement till deras respektive eVars- och händelser. Se [taggöversikten](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html).
+1. Inkludera [Adobe Experience Cloud ID-tjänsten](https://experienceleague.adobe.com/docs/id-service/using/home.html) och använd funktionen [`appendVisitorIDsTo`](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/methods/appendvisitorid.html). Den här funktionen sammanfogar besökardata när användare klickar från en domän till en annan.
 
 ## Ändra en befintlig implementering med en global rapportserie
 
@@ -55,7 +55,7 @@ Processen med att flytta en befintlig implementering över flera webbplatser til
 3. Följ stegen ovan (skapa en rapportsserie, samla in rapporteringskrav i ett lösningsdesigndokument och skapa ett datalager på varje webbplats). När du implementerar taggar i Adobe Experience Platform validerar du implementeringen med en utvecklingsversion av din webbplats.
 4. När du har bekräftat att implementeringen fungerar på dev, publicera taggimplementeringen på brytdatumet.
 
-## Relaterade sidor
-
-[Gå från taggning för flera programsviter till en global rapportserie och virtuella rapportsviter](../../components/vrs/vrs-considerations.md)
-[Jämföra sammanslagningar och globala rapportsviter ](../../admin/tools/manage-rs/rollup-report-suite.md)
+>[!MORELIKETHIS]
+>
+>[Gå från taggning för flera programsviter till en global rapportserie och virtuella rapportsviter](../../components/vrs/vrs-considerations.md)
+>>[Jämför sammanslagningar och globala rapportsviter ](../../admin/tools/manage-rs/rollup-report-suite.md)

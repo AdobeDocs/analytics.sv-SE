@@ -4,7 +4,7 @@ description: Förbättra tillförlitligheten när det gäller att samla in länk
 feature: Appmeasurement Implementation
 exl-id: f103deb4-f449-4325-b1a0-23e58a3c9ba0
 role: Admin, Developer
-source-git-commit: 665bd68d7ebc08f0da02d93977ee0b583e1a28e6
+source-git-commit: 325c035c0b5a9cc828be22ef7781d3b67f104476
 workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 0%
@@ -19,7 +19,7 @@ När du anropar [`t()`](t-method.md) eller [`tl()`](tl-method.md) på en efterf�
 
 >[!TIP]
 >
->Tidsstämpeln för buffrade begäranden delas med sidan som data skickas till. Om du vill ha mer precision i exakt den sekund då en buffrad begäran spelas in, kan du ställa in sidvariabeln [`timestamp`](../page-vars/timestamp.md) innan du buffrar begäran. Om du använder den här variabeln måste du se till att [Tidsstämplar (valfritt)](/help/technotes/timestamps-optional.md) är aktiverat. Om det inte är det går alla tidsstämplade träffar förlorade permanent.
+>Tidsstämpeln för buffrade begäranden delas med sidan som data skickas till. Om du vill ha mer precision i exakt den sekund då en buffrad begäran spelas in, kan du ställa in sidvariabeln [`timestamp`](../page-vars/timestamp.md) innan du buffrar begäran. Om du använder den här variabeln måste du se till att [Tidsstämplar (valfritt)](/help/admin/tools/manage-rs/edit-settings/general/timestamp-configuration.md) är aktiverat. Om det inte är det går alla tidsstämplade träffar förlorade permanent.
 
 ## Begränsningar
 

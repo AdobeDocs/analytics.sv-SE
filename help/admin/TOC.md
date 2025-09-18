@@ -4,7 +4,7 @@ audience: admin
 user-guide-title: Administratörshandbok för Analytics
 breadcrumb-title: Användarhandbok om Admin
 user-guide-description: Lär dig mer om administrationsåtgärder i Analytics, som att hantera användare och produkter i Experience Cloud Admin Console, konfigurera rapportsviter med mera.
-source-git-commit: 325a42c080290509309e90c9127138800d5ac496
+source-git-commit: 35675c2e65456a175d1516dd421b80d2af809286
 workflow-type: tm+mt
 source-wordcount: '496'
 ht-degree: 10%
@@ -15,7 +15,7 @@ ht-degree: 10%
 # Adobe Analytics Admin Guide {#admin}
 
 + [Administratörshandbok för analyser](home.md)
-+ [Versionsinformation för analyser](https://experienceleague.adobe.com/sv/docs/analytics/release-notes/latest)
++ [Versionsinformation för analyser](https://experienceleague.adobe.com/en/docs/analytics/release-notes/latest)
 + Adobe Admin Console {#admin-console}
    + [Översikt](admin-console/home.md)
    + [Adobe Analytics första administrationshandbok](admin-console/first-admin-guide.md)
@@ -60,7 +60,7 @@ ht-degree: 10%
                + [Vanliga robotsignaturer](tools/manage-rs/edit-settings/general/bot-removal/bot-signatures.md)
                + [Punktexkluderingsmetoder](tools/manage-rs/edit-settings/general/bot-removal/bot-exclusion-methods.md)
             + [Sekretessinställningar](tools/manage-rs/edit-settings/general/privacy-settings.md)
-            + [Konfiguration av tidsstämplar](tools/manage-rs/edit-settings/general/timestamp-optional.md)
+            + [Konfiguration av tidsstämplar](tools/manage-rs/edit-settings/general/timestamp-configuration.md)
             + Vidarebefordran på serversidan {#server-side-forwarding}
                + [Översikt över vidarebefordran på serversidan](tools/manage-rs/edit-settings/general/c-server-side-forwarding/ssf.md)
                + [GDPR/ePrivacy compliance och vidarebefordran på serversidan](tools/manage-rs/edit-settings/general/c-server-side-forwarding/ssf-gdpr.md)

@@ -4,10 +4,10 @@ audience: all
 user-guide-title: Tekniska anteckningar för Analytics
 breadcrumb-title: Tekniska anteckningar
 user-guide-description: Bläddra i en kunskapsbas som innehåller användbara artiklar som inte tillhör ett visst verktyg eller en viss komponent i Analytics.
-source-git-commit: bb068d39f756c4cce06349d0bd969212e19cb33e
+source-git-commit: 2d5348a4a6377313f5aab229214d97a02c826939
 workflow-type: tm+mt
-source-wordcount: '206'
-ht-degree: 16%
+source-wordcount: '204'
+ht-degree: 17%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 16%
 # Analytics Tech Notes {#technotes}
 
 + [Tekniska anteckningar för Analytics](home.md)
-+ [Versionsinformation för analyser](https://experienceleague.adobe.com/sv/docs/analytics/release-notes/latest)
++ [Versionsinformation för analyser](https://experienceleague.adobe.com/en/docs/analytics/release-notes/latest)
 + Adobe Analytics för Google Analytics {#ga-to-aa}
    + [Hjälp för användare av Adobe Analytics for Google Analytics](ga-to-aa/home.md)
    + [Konton och rapportsviter](ga-to-aa/accounts.md)
@@ -62,7 +62,6 @@ ht-degree: 16%
 + [Omdirigering och alias](redirects.md)
 + [Säkerhetsresurser](security.md)
 + [Termer som används (ordlista)](terms.md)
-+ [Tidsstämplar (valfritt)](timestamps-optional.md)
 + [Felsöka inloggning](troubleshoot-login.md)
 + [Felsök utloggning](troubleshoot-sessions.md)
 + [Ospecificerad, annan och okänd](unspecified.md)

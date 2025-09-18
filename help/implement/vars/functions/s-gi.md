@@ -4,7 +4,7 @@ description: Skapa och spåra instanser av AppMeasurement.
 feature: Appmeasurement Implementation
 exl-id: f87eff07-7e60-480b-8334-3db538c1030e
 role: Admin, Developer
-source-git-commit: 665bd68d7ebc08f0da02d93977ee0b583e1a28e6
+source-git-commit: 2d5348a4a6377313f5aab229214d97a02c826939
 workflow-type: tm+mt
 source-wordcount: '467'
 ht-degree: 0%
@@ -38,7 +38,7 @@ Följande kod läser in Web SDK och instansierar ett spårningsobjekt. Du kan an
 <script src="https://cdn1.adoberesources.net/alloy/2.6.4/alloy.min.js" async></script>
 ```
 
-Mer information finns i [Installera SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html?lang=sv-SE) i dokumentationen för Web SDK.
+Mer information finns i [Installera SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html) i dokumentationen för Web SDK.
 
 ## Instansiera ett spårningsobjekt med Adobe Analytics-tillägget
 
@@ -81,8 +81,8 @@ var s = s_gi('examplersid1');
 var z = s_gi('examplersid2');
 
 // The s object and z object contain their own independent Analytics variables simultaneously
-s.pageName = "Example page name 1";
-z.pageName = "Example page name 2";
+s.pageName = "Example page name";
+z.pageName = "An alternate page name";
 
 // Send data to the examplersid1 report suite
 s.t();

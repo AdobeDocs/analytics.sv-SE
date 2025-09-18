@@ -5,7 +5,7 @@ title: Attribution och persistence
 feature: Implementation Basics
 exl-id: 7a6305f6-c8ec-4f26-8373-45ce586bc69d
 role: Developer
-source-git-commit: 7d8df7173b3a78bcb506cc894e2b3deda003e696
+source-git-commit: e242276f931e9939081b948a9d9ef8a087e16461
 workflow-type: tm+mt
 source-wordcount: '550'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 När besökarprofiler sammanfogas efter att de har associerats med samma variabel för besökar-ID, ändras inte attribueringen i den historiska datauppsättningen.
 
-* När variabeln `s.visitorID` anges och skickas vid en träff söker Adobe efter andra besökarprofiler som har ett matchande besökar-ID.
+* När variabeln `visitorID` anges och skickas vid en träff söker Adobe efter andra besökarprofiler som har ett matchande besökar-ID.
 * Om det finns en profil används den besökarprofil som redan finns i systemet från och med den tidpunkten och den tidigare besökarprofilen används inte längre.
 * Om inget matchande besökar-ID hittas skapas en ny profil.
 
@@ -31,14 +31,14 @@ När en oautentiserad kund först kommer till er webbplats tilldelas den kunden 
 Exemplet nedan visar hur data skickas till Adobe Analytics när en kund autentiserar för första gången på den första enheten:
 
 * `eVar16` har en förfallotid på 1 dag och `evar17` förfaller vid besök.
-* Kolumnen `post_visitor_id` representerar profilen som hanteras av Adobe Analytics. Post-kolumner visas vanligtvis i dataflöden. Se [Dataflöden](/help/export/analytics-data-feed/data-feed-overview.md) i användarhandboken för Exportera.
+* Kolumnen `post_visitor_id` representerar profilen som hanteras av Adobe Analytics. Postkolumner visas vanligtvis i dataflöden. Se [Dataflöden](/help/export/analytics-data-feed/data-feed-overview.md) i användarhandboken för Exportera.
 * Kolumnerna `post_evar16` och `post_evar17` visar eVars beständighet.
-* `cust_visid` representerar en värdeuppsättning i `s.visitorID`.
+* `cust_visid` representerar en värdeuppsättning i `visitorID`.
 * Varje rad är en träff, en enda begäran som skickas till Adobe Analytics datainsamlingsservrar.
 
 ![Exempel på olika enheter ](assets/xdevice_first.jpg)
 
-På den första dataanslutningen som innehåller ett tidigare okänt `s.visitorID`-värde (`u999` ovan) skapas en ny profil. Beständiga värden från den tidigare profilen överförs till den nya profilen.
+På den första dataanslutningen som innehåller ett tidigare okänt `visitorID`-värde (`u999` ovan) skapas en ny profil. Beständiga värden från den tidigare profilen överförs till den nya profilen.
 
 * Varor som förfaller vid besök kopieras inte till den autentiserade profilen. Observera att värdet `car` ovan inte är beständigt.
 * Varor som har satts till att upphöra att gälla av andra åtgärder kopieras till den autentiserade profilen. Observera att värdet `apple` är beständigt.

@@ -4,9 +4,9 @@ title: Frågor och svar om datahantering
 feature: Data Governance
 role: Admin
 exl-id: 57399c1b-cf08-405b-8c1b-9d23e4c38716
-source-git-commit: 325a42c080290509309e90c9127138800d5ac496
+source-git-commit: 2d5348a4a6377313f5aab229214d97a02c826939
 workflow-type: tm+mt
-source-wordcount: '2042'
+source-wordcount: '2040'
 ht-degree: 38%
 
 ---
@@ -63,7 +63,7 @@ Det finns dock några sätt att testa din dataintegritet innan du kan använda d
 
 * Ett alternativ är att skapa en separat Experience Cloud-organisation som bara innehåller testrapportsviter. Använd sedan den här Experience Cloud-organisationen för att testa ditt test av datasekretess och din normala Experience Cloud-organisation för faktisk behandling av datasekretess.
 
-* Ett annat alternativ är att tilldela olika namnutrymmen till ID:n i testrapportsviterna jämfört med dem i produktionsrapportsviterna. Du kan till exempel infoga prefix för varje namnutrymme med ”qa-” i testrapportsviterna. När du skickar in begäranden om datasekretess med endast namnutrymmen med qa-prefixet, kommer dessa begäranden endast att köras mot testrapportsviterna. När du senare skickar in begäranden utan qa-prefix gäller de även för dina produktionsrapportsviter. **Detta är det rekommenderade tillvägagångssättet om du inte använder namnutrymmena visitorId, AID, ECID eller customVisitorId. Dessa namnutrymmen är hårdkodade och du kan inte ange alternativa namn för dem i testrapportsviterna.**
+* Ett annat alternativ är att tilldela olika namnutrymmen till ID:n i testrapportsviterna jämfört med dem i produktionsrapportsviterna. Du kan till exempel infoga prefix för varje namnutrymme med ”qa-” i testrapportsviterna. När du skickar in begäranden om datasekretess med endast namnutrymmen med qa-prefixet, kommer dessa begäranden endast att köras mot testrapportsviterna. När du senare skickar in begäranden utan qa-prefix gäller de även för dina produktionsrapportsviter. **Detta är det rekommenderade tillvägagångssättet om du inte använder namnutrymmena `visitorId`, AAID, ECID eller `customVisitorId`. Dessa namnutrymmen är hårdkodade och du kan inte ange alternativa namn för dem i testrapportsviterna.**
 
 +++
 

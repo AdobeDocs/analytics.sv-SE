@@ -3,9 +3,9 @@ title: Unika besökare
 description: Antalet unika besökar-ID.
 feature: Metrics
 exl-id: 56e7bad4-4802-49ac-a0f1-ae77441fc016
-source-git-commit: 93099d36a65ca2bf16fbd6342f01bfecdc8c798e
+source-git-commit: e242276f931e9939081b948a9d9ef8a087e16461
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '457'
 ht-degree: 1%
 
 ---
@@ -27,14 +27,14 @@ Det här måttet räknar antalet unika besökar-ID:n för en given dimensionspos
 | Använd order | Frågeparameter (samlingsmetod) | Presentera när |
 | --- | --- | --- |
 | 1 | `vid` | Variabeln [`visitorID`](/help/implement/vars/config-vars/visitorid.md) har angetts. |
-| 2 | `aid` | Besökaren har en befintlig [`s_vi`](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html?lang=sv-SE)-cookie. Ange implementeringar utan eller innan du implementerar Visitor ID-tjänsten. |
-| 3 | `mid` | Besökaren har en befintlig [`s_ecid`](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html?lang=sv-SE)-cookie. Ange implementeringar med hjälp av [Adobe Experience Cloud Identity-tjänsten](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=sv-SE). |
-| 4 | `fid` | Besökaren har en befintlig [`s_fid`](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html?lang=sv-SE)-cookie, eller om `aid` och `mid` inte kunde anges av någon anledning. |
+| 2 | `aid` | Besökaren har en befintlig [`s_vi`](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html)-cookie. Ange implementeringar utan eller innan du implementerar Visitor ID-tjänsten. |
+| 3 | `mid` | Besökaren har en befintlig [`s_ecid`](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html)-cookie. Ange implementeringar med hjälp av [Adobe Experience Cloud Identity-tjänsten](https://experienceleague.adobe.com/docs/id-service/using/home.html). Adobe rekommenderar att du använder ID-tjänsten för alla implementeringar där det är möjligt. |
+| 4 | `fid` | Besökaren har en befintlig [`s_fid`](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html)-cookie, eller om `aid` och `mid` inte kunde anges av någon anledning. |
 | 5 | IP-adress, användaragent, gateway-IP-adress | Den sista utvägen för att identifiera en unik besökare om besökarens webbläsare inte accepterar cookies. |
 
 >[!NOTE]
 >
->Varje besökar-ID för Analytics är knutet till en profil på Adobe-servrar. Dessa besökarprofiler tas bort efter minst 13 månaders inaktivitet, oavsett när en cookie för besöks-ID förfaller.
+>Varje besökar-ID för Analytics är knutet till en profil på Adobe servrar. Dessa besökarprofiler tas bort efter minst 13 månaders inaktivitet, oavsett när en cookie för besöks-ID förfaller.
 
 ## Beteende som påverkar antalet unika besökare
 
