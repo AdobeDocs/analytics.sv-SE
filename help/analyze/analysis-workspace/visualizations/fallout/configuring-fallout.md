@@ -4,9 +4,9 @@ title: Konfigurera en utfallsvisualisering
 feature: Visualizations
 role: User, Admin
 exl-id: 9d2a0163-a5cb-4a1c-97e9-e78a8f99aaee
-source-git-commit: f258a1150a4bee11f5922d058930dc38b1ddfa14
+source-git-commit: 75c1585f88d9d3adcf66632c52cecf2a97fa2632
 workflow-type: tm+mt
-source-wordcount: '673'
+source-wordcount: '758'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ Du kan göra målningar på dimensioner, mätvärden och segment. Anta till exem
    >
    >Flera segment förenas med AND, men flera objekt som dimensionsposter och mätvärden förenas med OR.
 
-   ![Sidan:CamerRoll eller Sida: Kamerans kontaktytor är markerade.](assets/fallout-or.png)
+   ![Sidan:CamerRoll eller sidan: Kamerans kontaktytor är markerade.](assets/fallout-or.png)
 
 1. Du kan också **begränsa enskilda kontaktytor till nästa händelse** (till skillnad från *så småningom*) i banan. Under varje kontaktyta finns det en väljare med alternativen **[!UICONTROL Eventual path]** och **[!UICONTROL Next event]**, vilket visas här:
 
@@ -50,8 +50,8 @@ Du kan göra målningar på dimensioner, mätvärden och segment. Anta till exem
 
    | Alternativ | Beskrivning |
    |---|---|
-   | **[!UICONTROL Eventual path]** (standard) | Personer räknas som *så småningom* landar på nästa sida i sökvägen, men inte nödvändigtvis på nästa händelse. |
-   | **[!UICONTROL Next event]** | Vi räknar med att landa på nästa sida i banan vid nästa händelse. |
+   | **[!UICONTROL Eventual path]** (standard) | Besökare räknas som *så småningom* landar på nästa sida i sökvägen, men inte nödvändigtvis på nästa händelse. |
+   | **[!UICONTROL Next event]** | Besökare räknas som kommer att landa på nästa sida i banan vid nästa händelse. |
 
 
 ## Inställningar
@@ -74,14 +74,14 @@ Som en del av visualiseringen finns det specifika alternativ för snabbmenyer.
 | **[!UICONTROL Trend touchpoint]** | Se trenddata för en kontaktyta i ett linjediagram med vissa fördefinierade avvikelseidentifieringsdata. |
 | **[!UICONTROL Trend touchpoint (%)]** | Trends the total fallout percentage. |
 | **[!UICONTROL Trend all touchpoints (%)]** | Trends all the touchpoint percentage in the fallout (except **[!UICONTROL All People]**, if it is included), on the same chart. |
-| **[!UICONTROL Break down fallthrough at this touchpoint]** | Se vad personer gjorde mellan två kontaktytor (den här kontaktytan och nästa kontaktyta) om de fortsatte till nästa kontaktyta. Då skapas en frihandstabell med dina mått. Du kan ersätta dimensioner och andra element i tabellen. |
-| **[!UICONTROL Break down fallout at this touchpoint]** | Se vad de som inte klarade sig igenom tratten gjorde direkt efter det valda steget. |
+| **[!UICONTROL Break down fallthrough at this touchpoint]** | Se vad besökarna gjorde mellan två kontaktytor (den här kontaktytan och nästa kontaktyta) om de fortsatte till nästa kontaktyta. Då skapas en frihandstabell med dina mått. Du kan ersätta dimensioner och andra element i tabellen. En tabell som till exempel har etiketten **[!UICONTROL Fallthrough: All Visitors > Page equals any of home]** och innehåller **[!UICONTROL Page]** som dimension och **[!UICONTROL Unique Visitors]** segmenterad av snabbsegmentet [endast för projekt](/help/components/segmentation/segmentation-workflow/seg-quick.md) **[!UICONTROL Fallthrough: All Visitors > Page equals any of home]** som måttenhet. Inspektera segmentet för att förstå hur grundsegmentet bestäms. |
+| **[!UICONTROL Break down fallout at this touchpoint]** | Se vad besökare som inte klarade sig igenom tratten gjorde direkt efter det valda steget. Då skapas en frihandstabell med dina mått. Du kan ersätta dimensioner och andra element i tabellen. En tabell som till exempel har etiketten **[!UICONTROL Fallout: All Visitors > Page equals any of home]** och innehåller **[!UICONTROL Page]** som dimension och **[!UICONTROL Unique Visitors]** segmenterad av snabbsegmentet [endast för projekt](/help/components/segmentation/segmentation-workflow/seg-quick.md) **[!UICONTROL Fallthrough: All Visitors > Page equals any of home]** som måttenhet. Kontrollera segmentet för att förstå hur utfallssegmentet bestäms. |
 | **[!UICONTROL Create segment from touchpoint]** | Skapa ett nytt segment från den markerade kontaktytan. |
 
 >[!MORELIKETHIS]
 >
 >[Lägg till en visualisering på en panel](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
->&#x200B;>[Visualiseringsinställningar](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
->&#x200B;>[Snabbmenyn Visualisering ](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>>[Visualiseringsinställningar](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>>[Snabbmenyn Visualisering ](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >
 
