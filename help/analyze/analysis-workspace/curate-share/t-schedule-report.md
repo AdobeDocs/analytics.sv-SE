@@ -5,18 +5,22 @@ title: Skicka och schemalägg projekt
 feature: Curate and Share
 role: User, Admin
 exl-id: 2d6854f7-8954-4d55-b2be-25981cfb348b
-source-git-commit: e478da9ae80e5534fcfd77ced3864d7f31ef748d
+source-git-commit: 61fcafa0e2e6cb71d9b594984e9a0c71a76c13e4
 workflow-type: tm+mt
-source-wordcount: '368'
+source-wordcount: '374'
 ht-degree: 1%
 
 ---
 
 # Skicka och schemalägg projekt
 
-Du kan skicka Adobe Analytics-projekt som filer till utvalda användare via e-post. Du kan skicka filer för hand eller konfigurera filer som ska skickas enligt ett schema. Filer kan skickas i CSV- eller PDF-format.
+Du kan skicka Adobe Analytics-projekt som filer till utvalda användare via e-post. Du kan skicka filer för hand eller konfigurera filer som ska skickas enligt ett schema.
 
-Alla märkord som används i projektet används automatiskt vid exporten.
+Tänk på följande när du skickar filer:
+
+* Filer kan skickas i CSV- eller PDF-format.
+
+* Alla märkord som används i projektet används automatiskt vid exporten.
 
 Det finns även andra metoder för att exportera Adobe Analytics-data, vilket beskrivs i [Översikt över export](/help/export/home.md).
 
@@ -38,7 +42,7 @@ Så här skickar du en fil ad hoc till mottagarna via e-post:
 
 ## Schemalägg filexport {#schedule}
 
-Skicka en fil enligt ett schema till mottagarna via e-post
+Så här skickar du en fil enligt ett schema till mottagarna via e-post:
 
 1. Välj **[!UICONTROL Share]>[!UICONTROL Schedule file export]**.
 1. Ange filtyp:
