@@ -4,10 +4,10 @@ audience: admin
 user-guide-title: Administratörshandbok för Analytics
 breadcrumb-title: Användarhandbok om Admin
 user-guide-description: Lär dig mer om administrationsåtgärder i Analytics, som att hantera användare och produkter i Experience Cloud Admin Console, konfigurera rapportsviter med mera.
-source-git-commit: 35675c2e65456a175d1516dd421b80d2af809286
+source-git-commit: 77795002cc4a360ed8aad8e1fe4882f1fe16f6ae
 workflow-type: tm+mt
-source-wordcount: '496'
-ht-degree: 10%
+source-wordcount: '491'
+ht-degree: 11%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 10%
 # Adobe Analytics Admin Guide {#admin}
 
 + [Administratörshandbok för analyser](home.md)
-+ [Versionsinformation för analyser](https://experienceleague.adobe.com/sv/docs/analytics/release-notes/latest)
++ [Versionsinformation för analyser](https://experienceleague.adobe.com/en/docs/analytics/release-notes/latest)
 + Adobe Admin Console {#admin-console}
    + [Översikt](admin-console/home.md)
    + [Adobe Analytics första administrationshandbok](admin-console/first-admin-guide.md)
@@ -160,6 +160,4 @@ ht-degree: 10%
          + [Migrera Analytics-användarkonton för Enterprise ID och Federated ID](tools/user-management/user-migration/migrate-enterprise.md)
          + [Inaktivera äldre inloggningar](tools/user-management/user-migration/t-disable-legacy-login.md)
          + [API:er som påverkas av migreringen](tools/user-management/user-migration/developer.md)
-+ [Admin-API](c-admin-api/c-admin-api.md)
-+ [Vanliga frågor om Adobe Analytics 1.4 API EOL](c-admin-api/c-admin-14-api-eol.md)
-
++ [Admin-API](https://developer.adobe.com/analytics-apis/docs/2.0/)
