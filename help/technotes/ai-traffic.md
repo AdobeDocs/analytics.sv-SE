@@ -50,7 +50,7 @@ Du kan använda referensdimensionen i Analysis Workspace för att analysera föl
 
 * Byråbaserade arbetsflöden
 
-Referenttypsdimensionen innehåller dimensionsobjektet [Konversationsverktyg för AI ](/help/components/dimensions/referrer-type.md#conversational-ai-tools). Dimensionsobjektet innehåller en fördefinierad lista med AI-chattbotar.
+Referenttypsdimensionen innehåller dimensionsobjektet [Konversationsverktyg för AI &#x200B;](/help/components/dimensions/referrer-type.md#conversational-ai-tools). Dimensionsobjektet innehåller en fördefinierad lista med AI-chattbotar.
 
 Mer information finns i [Referenstyp](/help/components/dimensions/referrer-type.md).
 
