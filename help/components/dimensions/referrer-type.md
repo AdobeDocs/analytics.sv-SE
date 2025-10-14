@@ -3,9 +3,9 @@ title: Referenstyp
 description: Vilken typ av referent det är, beroende på varifrån besökaren kom.
 feature: Dimensions
 exl-id: a6cfcbf4-cd08-4e7f-8e86-47488ceb0ea3
-source-git-commit: a6967c7d4e1dca5491f13beccaa797167b503d6e
+source-git-commit: 400f0170f13e95c401f3c4c329d23d63dcd70443
 workflow-type: tm+mt
-source-wordcount: '423'
+source-wordcount: '500'
 ht-degree: 0%
 
 ---
@@ -24,10 +24,34 @@ Bland Dimension-objekten finns typen av referent för träffen. Specifika värde
 
 * **Typed/Bookmarked**: Det finns inga referensdata för träffen.
 * **Sökmotorer**: Referenten kom från en identifierad sökmotor som innehåller en nyckelordsfrågesträng.
+* **Konversella AI-verktyg**: Referenten kom från ett känt konversationsverktyg.
 * **Sociala nätverk:**: Referensdata tillhörde ett socialt nätverk som känns igen av Adobe.
 * **Andra webbplatser**: Referensdata tillhör inte en sökmotor eller ett socialt nätverk som Adobe känner igen.
+* **Ingen JavaScript**: Referenten kom från en webbläsare som inte hade JavaScript aktiverat.
 * **Hårddisk**: Referenten kom från en lokal kopia av en webbsida på besökarens hårddisk.
 * **E-post**: Referenten kom från en URL med protokollet `imap://` eller `mail://`. Inkluderar inte e-posttjänster online eftersom dessa vanligtvis använder protokollet `https://`.
+
+### AI-verktyg för konversation
+
+Följande lista refererar till uppslagstabellen&quot;Conversational AI tools&quot; som används i Adobe. Adobe tillhandahåller den här listan som en tjänst åt Adobe Analytics kunder. Om du vill rekommendera Adobe att lägga till en domän i den här listan ska du be en supportrepresentant i din organisation kontakta Kundtjänst.
+
+* `https://chatgpt.com`
+* `https://chat.com`
+* `https://chat.openai.com`
+* `https://gemini.google.com`
+* `https://copilot.microsoft.com`
+* `https://m365.cloud.microsoft`
+* `https://perplexity.ai`
+* `https://labs.perplexity.ai`
+* `https://playground.perplexity.ai`
+* `https://claude.ai`
+* `https://grok.com`
+* `https://komo.ai`
+* `https://phind.com`
+* `https://poe.com`
+* `https://blackbox.ai`
+* `https://chat.mistral.ai`
+* `https://meta.ai`
 
 ### Sociala nätverk
 

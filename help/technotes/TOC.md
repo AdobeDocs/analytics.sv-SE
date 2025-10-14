@@ -4,10 +4,10 @@ audience: all
 user-guide-title: Tekniska anteckningar för Analytics
 breadcrumb-title: Tekniska anteckningar
 user-guide-description: Bläddra i en kunskapsbas som innehåller användbara artiklar som inte tillhör ett visst verktyg eller en viss komponent i Analytics.
-source-git-commit: 2d5348a4a6377313f5aab229214d97a02c826939
+source-git-commit: f6007b40ebd7ec681a340d1005149e8bd0a89742
 workflow-type: tm+mt
-source-wordcount: '204'
-ht-degree: 17%
+source-wordcount: '207'
+ht-degree: 16%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 17%
 # Analytics Tech Notes {#technotes}
 
 + [Tekniska anteckningar för Analytics](home.md)
-+ [Versionsinformation för analyser](https://experienceleague.adobe.com/sv/docs/analytics/release-notes/latest)
++ [Versionsinformation för analyser](https://experienceleague.adobe.com/en/docs/analytics/release-notes/latest)
 + Adobe Analytics för Google Analytics {#ga-to-aa}
    + [Hjälp för användare av Adobe Analytics for Google Analytics](ga-to-aa/home.md)
    + [Konton och rapportsviter](ga-to-aa/accounts.md)
@@ -31,6 +31,7 @@ ht-degree: 17%
    + [Frågor och svar](ga-to-aa/faq.md)
    + [Bearbetningsskillnader mellan plattformar](ga-to-aa/processing-differences.md)
    + [Jämför data med tredjepartsprodukter](ga-to-aa/compare-data.md)
++ [Analysera AI-trafik](/help/technotes/ai-traffic.md)
 + Analysera data som påverkas av händelser {#event}
    + [Analysera data som påverkas av händelser - översikt](event/overview.md)
    + [Felsöka tagningar/fall i data](event/spikes-drops.md)
