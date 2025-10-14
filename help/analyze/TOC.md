@@ -4,9 +4,9 @@ audience: end-user
 user-guide-title: Handbok om Analytics-verktyg
 breadcrumb-title: Användarhandbok om verktyg
 user-guide-description: Lär dig hur du använder verktyg i Analytics, inklusive Analysis Workspace, Analytics Dashboards, Report Builder, Legacy Report Builder och Activity Map.
-source-git-commit: bb068d39f756c4cce06349d0bd969212e19cb33e
+source-git-commit: 49b740f4bfd7d1177a307daba00be0006d7fa792
 workflow-type: tm+mt
-source-wordcount: '867'
+source-wordcount: '870'
 ht-degree: 10%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 10%
 # Adobe Analytics Tools Guide {#analyze}
 
 + [Handbok för analysverktyg](home.md)
-+ [Versionsinformation för analyser](https://experienceleague.adobe.com/sv/docs/analytics/release-notes/latest)
++ [Versionsinformation för analyser](https://experienceleague.adobe.com/en/docs/analytics/release-notes/latest)
 + Kom igång med Adobe Analytics {#admin-overview}
    + [Analytics - översikt](get-started/analytics-overview.md)
    + [Kom igång (efter roll)](get-started/get-started-by-role.md)
@@ -81,12 +81,13 @@ ht-degree: 10%
       + Frihandsregister {#freeform-table}
          + [Översikt](analysis-workspace/visualizations/freeform-table/freeform-table.md)
          + [Skapa hyperlänkar](/help/analyze/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md)
+         + [Visa trenddata](/help/analyze/analysis-workspace/visualizations/freeform-table/freeform-table-trended-data.md)
+         + [Filter och sortering](analysis-workspace/visualizations/freeform-table/filter-and-sort.md)
+         + [Summor](analysis-workspace/visualizations/freeform-table/workspace-totals.md)
          + Kolumn- och radinställningar {#column-row-settings}
             + [Kolumninställningar](analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)
             + [Radinställningar](analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)
             + [Dynamiska och statiska objekt](analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)
-         + [Filter och sortering](analysis-workspace/visualizations/freeform-table/filter-and-sort.md)
-         + [Summor](analysis-workspace/visualizations/freeform-table/workspace-totals.md)
       + Kohortabell {#cohort-table}
          + [Översikt](analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
          + [Konfigurera](analysis-workspace/visualizations/cohort-table/t-cohort.md)

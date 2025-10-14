@@ -4,9 +4,9 @@ title: Filtrera och ordna
 feature: Freeform Tables
 role: User, Admin
 exl-id: 15fea9e2-f8d8-4489-9a44-e74a351b8f36
-source-git-commit: bf8bc40e3ec325e8e70081955fb533eee66a1734
+source-git-commit: 3daac356a1d3f90572ab8b627dfeedfc6575cbbc
 workflow-type: tm+mt
-source-wordcount: '803'
+source-wordcount: '1094'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,6 @@ ht-degree: 0%
 # Filter och sortering
 
 Frihandstabeller i Analysis Workspace är grunden för interaktiv dataanalys. De kan därför innehålla tusentals rader med information. Filtrering och sortering av data kan vara en viktig del av att effektivt kunna hitta den viktigaste informationen.
-
 
 ## Filtrera tabeller
 
@@ -26,9 +25,9 @@ Med filter i Analysis Workspace hittar du den viktigaste informationen.
 
 Du kan använda flera metoder för att filtrera rader från en frihandstabell.
 
-- Exkludera specifika rader från en tabell
-- Använda filter på en tabell
-- Använda målgruppsfilter
+* Exkludera specifika rader från en tabell
+* Använda filter på en tabell
+* Använda segmentfilter
 
 Läs om hur varje metod påverkar [registersummor för frihand](/help/analyze/analysis-workspace/visualizations/freeform-table/workspace-totals.md).
 
@@ -90,6 +89,38 @@ Så här filtrerar du data i frihandstabeller:
    | [!UICONTROL **Uteslut alltid objekt**] | Ange namnet på alla objekt som du vill utesluta från filtrerade data. |
 
 1. Välj **[!UICONTROL Apply]** om du vill filtrera data. Välj **[!UICONTROL Clear]** om du vill rensa alla indata. Välj **[!UICONTROL Cancel]** om du vill avbryta och stänga dialogrutan. <br/>En färgad ![Filter](/help/assets/icons/FilterColored.svg) **Filter** -ikon anger och visar information när ett filter används i tabellen.
+
+### Inkludera filtervillkor i trenddata i miniatyrbilder och linjevisualiseringar {#include-filter-criteria}
+
+Alla sökfiltervillkor som tillämpas på tabelldimensionen i en frihandstabell tas alltid med i miniatyrbilder.
+
+Förutom miniatyrbilder kan du konfigurera filtervillkor som ska inkluderas i visningen av anslutna rader. (Som standard inkluderas inte filtervillkor i radvisualiseringar. Radvisualiseringar visar data för raden som är markerad i den anslutna tabellen. Om ingen rad är markerad visas endast data för den första dimensionen i den anslutna tabellen.)
+
+Mer information om miniatyrdiagram och linjevisualiseringar finns i [Visa trenddata för en frihandstabell](/help/analyze/analysis-workspace/visualizations/freeform-table/freeform-table-trended-data.md).
+
+#### Konfigurera radvisualiseringar för att inkludera filtervillkor
+
+1. Markera miniatyrdiagrammet i kolumnrubriken för mått.
+
+   När miniatyrdiagramcellen är markerad visas den som mörkgrå. Detta anger att filtervillkor ingår i den anslutna linjens visualisering. Filtervillkoren används som ett segment i kolumnen. <!--show how to see it? Show what the segment looks like when it's applied? -->
+
+   ![miniatyrdiagram markerat](assets/table-sparkline-selected.png)
+
+#### Förstå när kolumnsummor kan vara felaktiga
+
+Kolumnsummorna kanske inte är exakta i följande scenarier:
+
+* När statiska komponenter används i den vänstra kolumnen och [kolumnsummor beräknas som summan av raderna](/help/analyze/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)
+
+  Om radobjekt innehåller överlappande data i det här scenariot blir kolumnsummorna felaktiga.
+
+  Om du till exempel lägger till statiska segment i den vänstra kolumnen och sedan lägger till Användare som ett mått i den högra kolumnen, kan vissa av dessa användare ingå i mer än ett av de statiska segmenten. I det här fallet deduplicerar inte Workspace användarna för varje statiskt segment. Detta kan leda till ett större antal användare, eftersom vissa användare kan räknas mer än en gång.
+
+* När flervärdesdimensioner används
+
+>[!NOTE]
+>
+>Miniatyrdiagrammet och linjediagrammet återspeglar fortfarande de exakta summorna i dessa scenarier.
 
 
 ## Sortera tabeller

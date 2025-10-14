@@ -5,9 +5,9 @@ uuid: 0508ff29-43fe-4f3a-a5f7-051869271b55
 feature: Visualizations
 role: User, Admin
 exl-id: d177b39f-add7-4011-977a-1bdf3a9368cb
-source-git-commit: bf8bc40e3ec325e8e70081955fb533eee66a1734
+source-git-commit: 9035ea758a5e84812460c042685eae954303cc8a
 workflow-type: tm+mt
-source-wordcount: '508'
+source-wordcount: '509'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-_I den här artikeln dokumenteras linjevisualisering i_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**._<br/>_Se [Line](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-workspace/visualizations/line) för_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**-versionen av den här artikeln._
+_I den här artikeln dokumenteras linjevisualisering i_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._<br/>_Se [Line](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/line) för_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**-versionen av den här artikeln._
 
 >[!ENDSHADEBOX]
 
@@ -43,13 +43,7 @@ Som en del av [visualiseringsinställningarna](freeform-analysis-visualizations.
 |---|---|
 | **[!UICONTROL Granularity]** | Välj i listrutan för granularitet om du vill ändra en anpassad visualisering från dag till vecka till månad, osv. Granulariteten uppdateras också i datakälltabellen. |
 | **[!UICONTROL Show min]** <br/>**[!UICONTROL Show max]** | Du kan täcka över en etikett för minsta och högsta värde för att markera minimi- och maximivärdena i ett mätresultat. min/max-värdena härleds från de synliga datapunkterna i visualiseringen, inte från hela uppsättningen värden inom en dimension.<br/>![En övertäckning med etiketten för minsta och högsta värde.](assets/min-max-labels.png) |
-| **[!UICONTROL Show trendline]** | Du kan välja att lägga till en regression eller en glidande medeltrendlinje i linjeserien. Trendlinjer hjälper till att beskriva ett tydligare mönster i data. Välj en modell i listan när det är markerat. I [Modeller](#models) finns en översikt och en beskrivning av tillgängliga modeller.<br/>![Linjär trendlinje](assets/show-linear-trendline.png). |
-
->[!TIP]
->
->Vi rekommenderar att trendlinjer tillämpas på data som inte innehåller dagens (partiella data) eller framtida datum. Idag eller i framtiden skevas trendlinjen. Om du behöver ta med framtida datum tar du dock bort nollor från data för att undvika skevning för dessa dagar. Gå till visualiseringens datakälltabell, välj måttkolumnen och aktivera **[!UICONTROL Column Settings]** > **[!UICONTROL Interpret zero as no value]**.
-
-
+| **[!UICONTROL Show trendline]** | Du kan välja att lägga till en regression eller en glidande medeltrendlinje i linjeserien. Trendlinjer hjälper till att beskriva ett tydligare mönster i data. Välj en modell i listan när det är markerat. I [Modeller](#models) finns en översikt och en beskrivning av tillgängliga modeller.<br/>![Linjär trendlinje](assets/show-linear-trendline.png).<p>**TIP** Vi rekommenderar att trendlinjer tillämpas på data som inte innehåller dagens (partiella data) eller framtida datum. Idag eller i framtiden skevas trendlinjen. Om du behöver ta med framtida datum tar du dock bort nollor från data för att undvika skevning för dessa dagar. Gå till visualiseringens datakälltabell, välj måttkolumnen och aktivera **[!UICONTROL Column Settings]** > **[!UICONTROL Interpret zero as no value]**.</p> |
 
 ### Models
 
@@ -67,7 +61,7 @@ Alla trendlinjer för regressionsmodellen passas in med vanliga minsta fyrkanter
 >[!MORELIKETHIS]
 >
 >[Lägg till en visualisering på en panel](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
->&#x200B;>[Visualiseringsinställningar](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
->&#x200B;>[Snabbmenyn Visualisering &#x200B;](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>>[Visualiseringsinställningar](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>>[Snabbmenyn Visualisering ](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >
 
