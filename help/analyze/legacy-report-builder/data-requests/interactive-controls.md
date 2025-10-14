@@ -38,7 +38,7 @@ Interaktiva kontroller skapades som svar på ett gemensamt arbetsflöde där ana
 1. I steg 1 i begärandeguiden väljer du till exempel rapporten **[!UICONTROL Page]**.
 1. Klicka på ikonen **[!UICONTROL Control Settings]** bredvid listrutan **[!UICONTROL Commonly Used Dates]**:
 
-   ![Skärmbild av begärandeguiden Steg 1 som markerar ikonen Kontrollinställningar. ](assets/date_range_control.png)
+   ![Skärmbild av begärandeguiden Steg 1 som markerar ikonen Kontrollinställningar. &#x200B;](assets/date_range_control.png)
 
 1. I dialogrutan Kontrollinställningar markerar du alla datumintervallobjekt som du vill ska visas i den interaktiva kontrollen. Ange dessutom kontrollens placering i den övre vänstra cellen.
 

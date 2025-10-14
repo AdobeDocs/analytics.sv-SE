@@ -47,5 +47,5 @@ Allmän information om dataordlistan finns i [Översikt över dataordlistan](/he
 >[!MORELIKETHIS]
 >
 >[Rapportkomponentinställningar](/help/components/vrs/vrs-components.md)
->&#x200B;>[Data dictionary-komponentposter ](/help/analyze/analysis-workspace/components/data-dictionary/edit-entries-data-dictionary.md)
+>&#x200B;>[Data dictionary-komponentposter &#x200B;](/help/analyze/analysis-workspace/components/data-dictionary/edit-entries-data-dictionary.md)
 >

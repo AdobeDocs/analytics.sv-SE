@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Veckodag/vecka
 
-Dimensionen [ för veckodag/helg ](overview.md)ger information om huruvida träffen inträffade under en veckodag (måndag-fredag) eller helg (lördag-söndag). Tid för träffen baseras på [rapportsvitens tidszon](/help/admin/tools/manage-rs/edit-settings/general/general-acct-settings-admin.md).
+Dimensionen [&#x200B; för veckodag/helg &#x200B;](overview.md)ger information om huruvida träffen inträffade under en veckodag (måndag-fredag) eller helg (lördag-söndag). Tid för träffen baseras på [rapportsvitens tidszon](/help/admin/tools/manage-rs/edit-settings/general/general-acct-settings-admin.md).
 
 ## Fyll den här dimensionen med data
 

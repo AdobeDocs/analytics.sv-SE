@@ -16,7 +16,7 @@ Java-funktionen aktiverad [dimension](overview.md) avgör om webbläsaren vid de
 
 ## Fyll den här dimensionen med data
 
-Den här dimensionen hämtar data från [`v`-frågesträngen ](/help/implement/validate/query-parameters.md) i bildbegäranden. AppMeasurementet samlar in dessa data genom att identifiera om Java är aktiverat i webbläsaren. Om du använder ett AppMeasurementen bibliotek (till exempel via taggar i Adobe Experience Platform) fungerar den här dimensionen automatiskt. Om du använder en datainsamlingsmetod utanför AppMeasurementet (till exempel via API:t) måste du ta med frågesträngsparametern `v` som innehåller&quot;Y&quot; eller&quot;N&quot; om du vill använda den här dimensionen.
+Den här dimensionen hämtar data från [`v`-frågesträngen &#x200B;](/help/implement/validate/query-parameters.md) i bildbegäranden. AppMeasurementet samlar in dessa data genom att identifiera om Java är aktiverat i webbläsaren. Om du använder ett AppMeasurementen bibliotek (till exempel via taggar i Adobe Experience Platform) fungerar den här dimensionen automatiskt. Om du använder en datainsamlingsmetod utanför AppMeasurementet (till exempel via API:t) måste du ta med frågesträngsparametern `v` som innehåller&quot;Y&quot; eller&quot;N&quot; om du vill använda den här dimensionen.
 
 ## Dimensioner
 

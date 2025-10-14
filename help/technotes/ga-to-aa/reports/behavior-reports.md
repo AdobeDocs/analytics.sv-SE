@@ -65,7 +65,7 @@ Adobe rekommenderar att du använder måttet **Visits** för den här dimensione
 
 Platshastighetsrapporter visar hur snabbt sidorna läses in och visar möjligheter att öka sidans laddningstider.
 
-Den här funktionen kräver ytterligare implementering på båda plattformarna. Adobe rekommenderar att du samarbetar med en implementeringskonsult för att se till att dessa data är korrekt konfigurerade för Analysis Workspace. Plugin-programmet [getPageLoadTime ](/help/implement/vars/plugins/getpageloadtime.md) tilldelas vanligtvis till en eVar för att hämta prestandadata i Adobe Analytics.
+Den här funktionen kräver ytterligare implementering på båda plattformarna. Adobe rekommenderar att du samarbetar med en implementeringskonsult för att se till att dessa data är korrekt konfigurerade för Analysis Workspace. Plugin-programmet [getPageLoadTime &#x200B;](/help/implement/vars/plugins/getpageloadtime.md) tilldelas vanligtvis till en eVar för att hämta prestandadata i Adobe Analytics.
 
 ## Webbplatssökningsrapporter
 

@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # ActivityMap.regionExclusions
 
-Med variabeln `ActivityMap.regionExclusions` kan du selektivt filtrera eller exkludera Activity Map-data baserat på dimensionsobjekten som samlats in i dimensionen för [ Activity Map-regionen ](/help/components/dimensions/activity-map-region.md).
+Med variabeln `ActivityMap.regionExclusions` kan du selektivt filtrera eller exkludera Activity Map-data baserat på dimensionsobjekten som samlats in i dimensionen för [&#x200B; Activity Map-regionen &#x200B;](/help/components/dimensions/activity-map-region.md).
 
 ## Regionundantag i Web SDK-tillägget
 

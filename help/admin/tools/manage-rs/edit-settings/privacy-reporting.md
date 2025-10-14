@@ -12,7 +12,7 @@ ht-degree: 1%
 
 # Sekretessrapportering
 
-Med sekretessrapportering kan du aktivera dimensionerna [Medgivandehantering, ](/help/components/dimensions/cm-opt-in.md), [Medgivandehantering, avanmälan](/help/components/dimensions/cm-opt-out.md) och [Godkännande av annonsplattform](/help/components//dimensions/ad-consent.md) för rapportering.
+Med sekretessrapportering kan du aktivera dimensionerna [Medgivandehantering, &#x200B;](/help/components/dimensions/cm-opt-in.md), [Medgivandehantering, avanmälan](/help/components/dimensions/cm-opt-out.md) och [Godkännande av annonsplattform](/help/components//dimensions/ad-consent.md) för rapportering.
 
 >[!NOTE]
 >

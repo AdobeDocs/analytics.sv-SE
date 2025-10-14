@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Beställningar per besök
 
-[Mätvärdet ](overview.md) för beställningar per besök visar förhållandet mellan beställningar som besökare gjort och det totala antalet besök på webbplatsen. Du kan använda det här måttet för att förstå konverteringsgraden för din webbplats.
+[Mätvärdet &#x200B;](overview.md) för beställningar per besök visar förhållandet mellan beställningar som besökare gjort och det totala antalet besök på webbplatsen. Du kan använda det här måttet för att förstå konverteringsgraden för din webbplats.
 
 ## Hur det här måttet beräknas
 

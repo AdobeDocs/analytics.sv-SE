@@ -29,11 +29,11 @@ Se [Så här implementerar du Adobe Analytics med tillägget Adobe Experience Pl
 
 * **Web SDK**: Du kan läsa in Web SDK-bibliotek manuellt på webbplatsen om du inte vill använda Adobe Experience Platform Data Collection. Referera till Web SDK-biblioteket (`alloy.js`) på varje sida och skicka önskade spårningsanrop till Adobe Experience Platform **Edge Network** i ett format som passar din organisation. Edge Network vidarebefordrar dessa data till Adobe Analytics.
   ![SDK för webben](./assets/websdk-implementation.png)
-Mer information finns i [ Så här implementerar du Adobe Analytics med Adobe Experience Platform Web SDK ](./aep-edge/overview.md) .
+Mer information finns i [&#x200B; Så här implementerar du Adobe Analytics med Adobe Experience Platform Web SDK &#x200B;](./aep-edge/overview.md) .
 
 * **Analystillägg**: Lägg till **Adobe Analytics-tillägget** i Adobe Experience Platform Data Collection **Tags** och placera sedan en inläsartagg på varje sida. Taggen skickar data direkt till Adobe Analytics. Använd den här implementeringsmetoden om du vill att taggar ska vara praktiska, men inte använda Edge Network-infrastrukturen.
   ![Adobe Analytics-tillägg](./assets/analytics-extension-implementation.png)
-Mer information finns i [ Så här implementerar du Adobe Analytics med Analytics-tillägget ](launch/overview.md) .
+Mer information finns i [&#x200B; Så här implementerar du Adobe Analytics med Analytics-tillägget &#x200B;](launch/overview.md) .
 
 * **Äldre JavaScript:** Den gamla, manuella metoden för att implementera Adobe Analytics. Referera till AppMeasurement-biblioteket (`AppMeasurement.js`) på varje sida och ange variabler och inställningar i JavaScript.
   ![Så här implementerar du Adobe Analytics med äldre JavaScript](./assets/appmeasurement-implementation.png)
@@ -54,11 +54,11 @@ För att implementera Adobe Analytics serversida finns följande alternativ:
 
 * **Edge Network API**: Du implementerar kod på servern som använder Adobe Experience Platform Edge Network API för att kommunicera med Adobe Analytics via en datastream.
   ![Implementering på serversidan](assets/edge-network-server-api.svg)
-Mer information finns i [ Implementera Adobe Analytics med API:t för Adobe Experience Platform Edge Network ](/help/implement/aep-edge/api/overview.md) .
+Mer information finns i [&#x200B; Implementera Adobe Analytics med API:t för Adobe Experience Platform Edge Network &#x200B;](/help/implement/aep-edge/api/overview.md) .
 
 * **(Bulk) API:t för datainfogning**: Du använder API:erna för datainmatning i Adobe Analytics (Bulk) för att samla in data på serversidan direkt till Adobe Analytics.
   ![API:er för datainfogning](assets/analytics-apis.png)
-Mer information finns i [ API för datainfogning ](../import/c-data-insertion-api/c-data-insertion-api.md) .
+Mer information finns i [&#x200B; API för datainfogning &#x200B;](../import/c-data-insertion-api/c-data-insertion-api.md) .
 
 ## Implementeringsmetoder för mobilappar
 
@@ -91,7 +91,7 @@ Följande implementeringsmetoder är tillgängliga för din **mobilapp**:
 
 ## Viktiga Analytics-resurser
 
-* [Kontakta kundtjänst](https://experienceleague.adobe.com/sv?support-solution=Analytics&amp;lang=sv#support)
+* [Kontakta kundtjänst](https://experienceleague.adobe.com/sv?support-solution=Analytics&lang=sv#support)
 * [Adobe Analytics Community på Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community)
 * [Adobe Analytics-resurser](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-resources/m-p/276666)
 * [Senaste versionsinformation](../release-notes/latest.md)

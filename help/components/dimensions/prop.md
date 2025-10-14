@@ -24,7 +24,7 @@ Om du har ett [lösningsdesigndokument](/help/implement/prepare/solution-design.
 
 ## Fylla i uttryck med data
 
-Varje utkast samlar in data från [`c1` - `c75` frågesträngen ](/help/implement/validate/query-parameters.md) i bildbegäranden. Frågesträngsparametern `c1` samlar till exempel in data för prop1, medan frågesträngsparametern `c68` samlar in data för prop68.
+Varje utkast samlar in data från [`c1` - `c75` frågesträngen &#x200B;](/help/implement/validate/query-parameters.md) i bildbegäranden. Frågesträngsparametern `c1` samlar till exempel in data för prop1, medan frågesträngsparametern `c68` samlar in data för prop68.
 
 AppMeasurementet, som kompilerar JavaScript-variabler till en bildbegäran för datainsamling, använder variablerna `prop1` - `prop75`. Mer information om implementeringsriktlinjer finns i [prop](/help/implement/vars/page-vars/prop.md) i Implementeringsanvändarhandboken.
 

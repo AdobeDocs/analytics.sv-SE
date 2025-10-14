@@ -13,7 +13,7 @@ ht-degree: 3%
 
 # Frågeparametrar för datainsamling
 
-I följande tabell visas alla frågesträngsparametrar som Adobe använder i bildbegäranden. Den här informationen kan användas vid felsökning med [Packet analyzers](packet-monitor.md), när [hårdkodar en bild ](../other/hardcoded.md) eller när [dynamiska variabler](../vars/page-vars/dynamic-variables.md) används.
+I följande tabell visas alla frågesträngsparametrar som Adobe använder i bildbegäranden. Den här informationen kan användas vid felsökning med [Packet analyzers](packet-monitor.md), när [hårdkodar en bild &#x200B;](../other/hardcoded.md) eller när [dynamiska variabler](../vars/page-vars/dynamic-variables.md) används.
 
 | Parameter | Analysimplementeringsvariabel | Beskrivning |
 | --- | --- | --- |

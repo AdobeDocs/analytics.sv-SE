@@ -84,7 +84,7 @@ Kontrollera alltid om ett värde är tomt eller innehåller det förväntade vä
 | Villkor | [!UICONTROL Query String Parameter] `q` [!UICONTROL Is Set] |
 | Åtgärd | [!UICONTROL Overwrite value of] Interna söktermer med [!UICONTROL Query String Parameter] `q` |
 
-![Skärmbild av bearbetningsregelgränssnittet som visar logik för intern sökterm ](assets/populate-internal-search-terms.png)
+![Skärmbild av bearbetningsregelgränssnittet som visar logik för intern sökterm &#x200B;](assets/populate-internal-search-terms.png)
 
 +++
 

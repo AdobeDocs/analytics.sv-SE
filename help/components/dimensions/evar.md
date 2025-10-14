@@ -26,7 +26,7 @@ Det (övre eller nedre) skiftläge som används i rapporter baseras på det för
 
 ## Fyll i eVars med data
 
-Varje eVar samlar in data från [`v1` - `v250` frågesträngen ](/help/implement/validate/query-parameters.md) i bildbegäranden. Frågesträngsparametern `v1` samlar till exempel in data för eVar1, medan frågesträngsparametern `v222` samlar in data för eVar22.
+Varje eVar samlar in data från [`v1` - `v250` frågesträngen &#x200B;](/help/implement/validate/query-parameters.md) i bildbegäranden. Frågesträngsparametern `v1` samlar till exempel in data för eVar1, medan frågesträngsparametern `v222` samlar in data för eVar22.
 
 AppMeasurement, som kompilerar JavaScript-variabler till en bildbegäran för datainsamling, använder variablerna `eVar1` - `eVar250`. Se [eVar](/help/implement/vars/page-vars/evar.md) i användarhandboken för implementering för implementeringsriktlinjer.
 

@@ -16,7 +16,7 @@ Activity Map Link By Region [dimension](overview.md) visar en sammanfogning av [
 
 ## Fyll den här dimensionen med data
 
-Den här dimensionen hämtar data från [kontextdatavariablerna ](/help/implement/vars/page-vars/contextdata.md) `c.a.activitymap.link` och `c.a.activitymap.region`. Dessa två värden är sammanfogade och avgränsade med en pipe (`|`). Om implementeringen använder [Activity Map](/help/analyze/activity-map/overview.md) samlar dessa kontextdatavariabler automatiskt in data när någon klickar på länkar.
+Den här dimensionen hämtar data från [kontextdatavariablerna &#x200B;](/help/implement/vars/page-vars/contextdata.md) `c.a.activitymap.link` och `c.a.activitymap.region`. Dessa två värden är sammanfogade och avgränsade med en pipe (`|`). Om implementeringen använder [Activity Map](/help/analyze/activity-map/overview.md) samlar dessa kontextdatavariabler automatiskt in data när någon klickar på länkar.
 
 ## Dimensioner
 

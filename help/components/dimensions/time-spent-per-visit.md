@@ -26,9 +26,9 @@ Dessa dimensioner är värdefulla när ni vill förstå hur länge besökarna in
 >
 >Tidsåtgången kräver minst två träffar vid ett besök för att mäta tiden. Besök som består av en enda träff visas inte i den här dimensionen.
 
-Denna dimension är besöksbaserad, vilket innebär att värdet gäller för alla träffar inom besöket och inte ändras. Jämför den här dimensionen med [Den tid som har ägnats åt sidan ](time-spent-on-page.md), som är en träffbaserad dimension.
+Denna dimension är besöksbaserad, vilket innebär att värdet gäller för alla träffar inom besöket och inte ändras. Jämför den här dimensionen med [Den tid som har ägnats åt sidan &#x200B;](time-spent-on-page.md), som är en träffbaserad dimension.
 
-Den här dimensionen är relaterad till [Genomsnittlig tid på webbplatsen ](../metrics/average-time-on-site.md) och [Tid per besök](../metrics/time-spent-per-visit.md).
+Den här dimensionen är relaterad till [Genomsnittlig tid på webbplatsen &#x200B;](../metrics/average-time-on-site.md) och [Tid per besök](../metrics/time-spent-per-visit.md).
 
 ## Fyll den här dimensionen med data
 

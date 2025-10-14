@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Vyer
 
-I kundvagnsvyn [anger ](overview.md) hur många gånger en besökare har visat sin kundvagn. Detta mått är användbart när du vill förstå den del av konverteringstratten där kunderna ser innehållet i sina varukorgar.
+I kundvagnsvyn [anger &#x200B;](overview.md) hur många gånger en besökare har visat sin kundvagn. Detta mått är användbart när du vill förstå den del av konverteringstratten där kunderna ser innehållet i sina varukorgar.
 
 ## Hur det här måttet beräknas
 

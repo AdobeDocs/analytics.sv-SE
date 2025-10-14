@@ -21,7 +21,7 @@ Både standardfiltermetoder och anpassade robotfiltermetoder stöds i **[!UICONT
 
 | Regeltyp | Beskrivning |
 |--- |--- |
-| Standard IAB-robotregler | Om du väljer **[!UICONTROL Enable IAB Bot Filtering Rules]** används [IAB:s ](https://www.iab.com/) (International Advertising Bureau&#39;s) internationella spindlar och bottenlista för att ta bort robottrafik. De flesta kunder väljer det här alternativet till ett minimum. |
+| Standard IAB-robotregler | Om du väljer **[!UICONTROL Enable IAB Bot Filtering Rules]** används [IAB:s &#x200B;](https://www.iab.com/) (International Advertising Bureau&#39;s) internationella spindlar och bottenlista för att ta bort robottrafik. De flesta kunder väljer det här alternativet till ett minimum. |
 | Anpassade robotregler | Du kan definiera och lägga till anpassade robotregler baserat på användaragenter, IP-adresser eller IP-intervall. |
 
 Mer information finns i [Förstå och konfigurera robotregler](/help/admin/tools/manage-rs/edit-settings/general/bot-removal/bot-rules.md).
@@ -87,7 +87,7 @@ Ställ in minst en månatlig påminnelse för att identifiera och filtrera nya r
 
 >[!MORELIKETHIS]
 >
->* [Bättre blockering av punkter (del 1): Grunderna ](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/better-bot-blocking-part-1-the-basics/ba-p/715839)
+>* [Bättre blockering av punkter (del 1): Grunderna &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/better-bot-blocking-part-1-the-basics/ba-p/715839)
 >* [Bättre Bot Blocking (Part 2): Identifying Bots and Leveraging CIDR.](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/better-bot-blocking-part-2-identifying-bots-and-leveraging-cidr/ba-p/722132)
 >* [Bättre benblockering (del 3): Träffguvernören](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/better-bot-blocking-part-3-the-hit-governor/ba-p/727051)
 

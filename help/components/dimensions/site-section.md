@@ -18,7 +18,7 @@ Dimensionen är relaterad till dimensionerna [Sida](page.md) och [Server](server
 
 ## Fyll den här dimensionen med data
 
-Den här dimensionen hämtar data från [`ch`-frågesträngen ](/help/implement/validate/query-parameters.md) i bildbegäranden. AppMeasurementet samlar in dessa data med variabeln [`channel`](/help/implement/vars/page-vars/channel.md).
+Den här dimensionen hämtar data från [`ch`-frågesträngen &#x200B;](/help/implement/validate/query-parameters.md) i bildbegäranden. AppMeasurementet samlar in dessa data med variabeln [`channel`](/help/implement/vars/page-vars/channel.md).
 
 ## Dimensioner
 

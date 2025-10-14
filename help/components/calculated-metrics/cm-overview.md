@@ -85,6 +85,6 @@ Here is a short overview of the [!UICONTROL Calculated metrics] tools:
 >[!MORELIKETHIS]
 >
 >[Skapa mått](/help/components/calculated-metrics/workflow/cm-workflow.md)
->&#x200B;>[Bygg mått ](/help/components/calculated-metrics/workflow/c-build-metrics/cm-build-metrics.md)
->&#x200B;>[Använd funktioner ](/help/components/calculated-metrics/workflow/c-build-metrics/cm-using-functions.md)
+>&#x200B;>[Bygg mått &#x200B;](/help/components/calculated-metrics/workflow/c-build-metrics/cm-build-metrics.md)
+>&#x200B;>[Använd funktioner &#x200B;](/help/components/calculated-metrics/workflow/c-build-metrics/cm-using-functions.md)
 >

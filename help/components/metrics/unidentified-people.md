@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Oidentifierade personer
 
-[Måttet ](overview.md) för oidentifierade personer är ett [korsenhetsanalys](../cda/overview.md) som räknar antalet besökare som CDA inte kunde identifiera.
+[Måttet &#x200B;](overview.md) för oidentifierade personer är ett [korsenhetsanalys](../cda/overview.md) som räknar antalet besökare som CDA inte kunde identifiera.
 
 ## Hur det här måttet beräknas
 

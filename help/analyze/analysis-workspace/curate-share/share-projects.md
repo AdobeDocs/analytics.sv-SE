@@ -190,7 +190,7 @@ Så här delar du ett Analysis Workspace-projekt med personer som inte har tillg
 
       * Om det här alternativet är aktiverat och nedtonat kräver din Analytics-administratör Experience Cloud-autentisering för alla som använder Analysis Workspace-projekt.
 
-1. Klicka på ikonen **[!UICONTROL Share with anyone (no login required)]** Kopiera länk **&#x200B;**&#x200B;Kopiera länkikon![ bredvid fältet ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Link_18_N.svg) för att kopiera länken till systemets Urklipp.
+1. Klicka på ikonen **[!UICONTROL Share with anyone (no login required)]** Kopiera länk **&#x200B;**&#x200B;Kopiera länkikon![&#x200B; bredvid fältet &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Link_18_N.svg) för att kopiera länken till systemets Urklipp.
 
 1. Dela länken med de personer som du vill ska ha tillgång till projektet. Du kan till exempel klistra in länken i ett e-postmeddelande.
 

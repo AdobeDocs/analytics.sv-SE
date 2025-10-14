@@ -16,7 +16,7 @@ Sidan Activity Map [dimension](overview.md) visar den sida som en besökare var 
 
 ## Fyll den här dimensionen med data
 
-Den här dimensionen hämtar data från [kontextdatavariabeln ](/help/implement/vars/page-vars/contextdata.md) `c.a.activitymap.page`. Om implementeringen använder [Activity Map](/help/analyze/activity-map/overview.md) samlar den här kontextdatavariabeln automatiskt in data när någon klickar på länkar.
+Den här dimensionen hämtar data från [kontextdatavariabeln &#x200B;](/help/implement/vars/page-vars/contextdata.md) `c.a.activitymap.page`. Om implementeringen använder [Activity Map](/help/analyze/activity-map/overview.md) samlar den här kontextdatavariabeln automatiskt in data när någon klickar på länkar.
 
 För en viss länk som du klickade på samlar den här kontextdatavariabeln in värdet i dimensionen [Sida](page.md). Om siddimensionen inte innehåller något värde används dimensionen [Sida-URL](page-url.md) i stället (på samma sätt som siddimensionens reservvärde). Activity Map data skickas vanligtvis vid nästa träff efter att en länk klickats. Med den här dimensionen kan du bestämma sidvärdet när någon klickar på länken, i stället för sidvärdet när data skickades.
 

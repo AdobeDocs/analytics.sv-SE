@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Läs in igen
 
-[Måttet ](overview.md) för att läsa in igen visar hur många gånger ett dimensionsobjekt fanns under en omläsning. En besökare som uppdaterar sin webbläsare är det vanligaste sättet att utlösa en omladdning.
+[Måttet &#x200B;](overview.md) för att läsa in igen visar hur många gånger ett dimensionsobjekt fanns under en omläsning. En besökare som uppdaterar sin webbläsare är det vanligaste sättet att utlösa en omladdning.
 
 ## Hur det här måttet beräknas
 

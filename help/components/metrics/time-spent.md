@@ -12,7 +12,7 @@ ht-degree: 4%
 
 # Tidsåtgång - översikt
 
-Olika [!UICONTROL 'time spent'] [mått ](overview.md) och dimensioner erbjuds för alla Adobe Analytics-produkter. Den här sidan kan hjälpa dig att tolka den dimension eller det mått som du vill ha.
+Olika [!UICONTROL 'time spent'] [mått &#x200B;](overview.md) och dimensioner erbjuds för alla Adobe Analytics-produkter. Den här sidan kan hjälpa dig att tolka den dimension eller det mått som du vill ha.
 
 ## Mätvärden för hur lång tid som har tillbringats
 

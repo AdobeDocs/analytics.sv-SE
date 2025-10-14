@@ -29,7 +29,7 @@ Stegen för att köra bidragsanalys är:
    1. I en frihandstabell med daglig granularitet väljer du **[!UICONTROL Run contribution analysis]** på snabbmenyn på valfri rad. Du kan till och med köra analysen på rader som inte uppvisar några avvikelser.
    1. I en frihandstabell med daglig granularitet, på en rad som anger en avvikelse:
       1. Välj indikatorn ◥.
-      1. Välj ![ i dialogrutan ](/help/assets/icons/Alert.svg)Varning **[!UICONTROL Anomaly detected]** **[!UICONTROL Open Contribution Analysis]**.
+      1. Välj ![&#x200B; i dialogrutan &#x200B;](/help/assets/icons/Alert.svg)Varning **[!UICONTROL Anomaly detected]** **[!UICONTROL Open Contribution Analysis]**.
 
 
 
@@ -47,7 +47,7 @@ Stegen för att köra bidragsanalys är:
 
    ![Panelen för bidragsanalys](assets/contribution-analysis.png)
 
-   * En [sammanfattning av ](/help/analyze/analysis-workspace/visualizations/summary-number-change.md)-visualisering.
+   * En [sammanfattning av &#x200B;](/help/analyze/analysis-workspace/visualizations/summary-number-change.md)-visualisering.
    * En månatlig [rad](/help/analyze/analysis-workspace/visualizations/line.md)-visualisering har trendats.
    * En **[!UICONTROL Top Items]** [friformstabell](/help/analyze/analysis-workspace/visualizations/freeform-table/freeform-table.md) som visar vilka av de översta objekten som bidrar till avvikelsen, sorterat efter [bidragspoäng](/help/analyze/analysis-workspace/c-anomaly-detection/anomaly-detection.md#contribution-analysis). De extra kolumnerna visar det aktuella måttet och ett **[!UICONTROL Unique Visitors]**-mått som anger kontext.
 

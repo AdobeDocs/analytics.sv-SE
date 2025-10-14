@@ -49,7 +49,7 @@ Det snabbaste sättet att skapa en tabell är att släppa komponenter direkt i e
 
 Om du vill lägga till flera komponenter i tabellen först och sedan återge data kan du välja **[!UICONTROL Enable table builder]**. När verktyget är aktiverat kan du dra och släppa dimensioner, uppdelningar, mätvärden och filter för att skapa tabeller som besvarar mer komplexa frågor. Data uppdateras när du har valt **[!UICONTROL Build]**.
 
-![En frihandstabellbyggare som visar ](assets/table-builder.png)
+![En frihandstabellbyggare som visar &#x200B;](assets/table-builder.png)
 
 ## Interaktioner
 
@@ -136,7 +136,7 @@ Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Totalvärden för
 >
 >[Lägg till en visualisering på en panel](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
 >&#x200B;>[Visualiseringsinställningar](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
->&#x200B;>[Snabbmenyn Visualisering ](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>&#x200B;>[Snabbmenyn Visualisering &#x200B;](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >
 
 

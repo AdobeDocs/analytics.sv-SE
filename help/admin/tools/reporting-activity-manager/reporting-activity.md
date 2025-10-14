@@ -47,7 +47,7 @@ Mer information om Reporting Activity Manager, inklusive viktiga fördelar och b
 
    * Använd sökfältet för att söka efter en specifik rapportsserie. Börja skriva rapportsvitens namn eller ID och listan över rapportsviter uppdateras medan du skriver.
 
-   * Välj ikonen [!UICONTROL **Filter**] ![Filter ](assets/filter-icon.png) för att expandera listan med filteralternativ. Du kan filtrera efter [!UICONTROL **Favoriter**] eller [!UICONTROL **Status**].
+   * Välj ikonen [!UICONTROL **Filter**] ![Filter &#x200B;](assets/filter-icon.png) för att expandera listan med filteralternativ. Du kan filtrera efter [!UICONTROL **Favoriter**] eller [!UICONTROL **Status**].
 
      Om du vill markera en rapportserie som favorit väljer du stjärnikonen till vänster om rapportsvitens namn.
 
@@ -146,7 +146,7 @@ Tänk på följande när du visar tabellen:
 
    * Använd sökfältet för att söka efter en viss anslutning. Börja skriva anslutningsnamnet eller ID:t och listan över anslutningar som uppdateras medan du skriver.
 
-   * Välj ikonen [!UICONTROL **Filter**] ![Filter ](assets/filter-icon.png) för att expandera listan med filteralternativ. Du kan filtrera efter [!UICONTROL **Status**], [!UICONTROL **Komplexitet**], [!UICONTROL **Program**], [!UICONTROL **Användare**] eller [!UICONTROL **Projekt**].
+   * Välj ikonen [!UICONTROL **Filter**] ![Filter &#x200B;](assets/filter-icon.png) för att expandera listan med filteralternativ. Du kan filtrera efter [!UICONTROL **Status**], [!UICONTROL **Komplexitet**], [!UICONTROL **Program**], [!UICONTROL **Användare**] eller [!UICONTROL **Projekt**].
 
    * Du kan välja [!UICONTROL **Dölj diagram**] om du bara vill visa tabellen.
 

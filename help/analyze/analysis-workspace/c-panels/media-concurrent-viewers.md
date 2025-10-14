@@ -131,7 +131,7 @@ Det finns ingen friformstabell i den här vyn.  Om du vill visa datakällan kan 
 >[!MORELIKETHIS]
 >
 >[Skapa en panel](/help/analyze/analysis-workspace/c-panels/panels.md#create-a-panel)
->&#x200B;>[Medieuppspelningstid för panelen ](media-playback-time-spent.md)
+>&#x200B;>[Medieuppspelningstid för panelen &#x200B;](media-playback-time-spent.md)
 >&#x200B;>[Medie - genomsnittlig minutmålspanel](average-minute-audience-panel.md)
 >
 <!--

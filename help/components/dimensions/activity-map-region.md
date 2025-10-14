@@ -16,7 +16,7 @@ Activity Map-regionen [dimension](overview.md) visar de områden på din webbpla
 
 ## Fyll den här dimensionen med data
 
-Den här dimensionen hämtar data från [kontextdatavariabeln ](/help/implement/vars/page-vars/contextdata.md) `c.a.activitymap.region`. Om implementeringen använder [Activity Map](/help/analyze/activity-map/overview.md) samlar den här kontextdatavariabeln automatiskt in data när någon klickar på länkar.
+Den här dimensionen hämtar data från [kontextdatavariabeln &#x200B;](/help/implement/vars/page-vars/contextdata.md) `c.a.activitymap.region`. Om implementeringen använder [Activity Map](/help/analyze/activity-map/overview.md) samlar den här kontextdatavariabeln automatiskt in data när någon klickar på länkar.
 
 Kontrollera det överordnade DOM-elementet för en viss länk som du klickade på (i ordning) för följande (i ordning):
 

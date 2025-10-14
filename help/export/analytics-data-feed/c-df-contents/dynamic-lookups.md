@@ -38,14 +38,14 @@ När din datafeed uppfyller kraven för kolumninkludering och exkludering kontak
 Kolumnrubrikerna för de här sökfilerna ändras inte över tid, så rubrikerna tas inte med i varje dataflödesfil. Använd de här kolumnrubrikerna som referens eller hämta deras respektive `.tsv`-fil.
 
 +++**Transportföretagets namn**
-Ladda ned [ operator_headers.tsv ](assets/carrier_headers.tsv) eller referera till rubrikerna nedan.
+Ladda ned [&#x200B; operator_headers.tsv &#x200B;](assets/carrier_headers.tsv) eller referera till rubrikerna nedan.
 
 `carrier`
 `Carrier Name`
 +++
 
 +++**Mobilattribut**
-Hämta [ mobile_attributes_headers.tsv ](assets/mobile_attributes_headers.tsv) eller referera till rubrikerna nedan.
+Hämta [&#x200B; mobile_attributes_headers.tsv &#x200B;](assets/mobile_attributes_headers.tsv) eller referera till rubrikerna nedan.
 
 `mobile_id`
 `Manufacturer`
@@ -100,7 +100,7 @@ Hämta [ mobile_attributes_headers.tsv ](assets/mobile_attributes_headers.tsv) e
 +++
 
 +++**Operativsystemtyp**
-Hämta [ operating_system_type_headers.tsv ](assets/operating_system_type_headers.tsv) eller referera till rubrikerna nedan.
+Hämta [&#x200B; operating_system_type_headers.tsv &#x200B;](assets/operating_system_type_headers.tsv) eller referera till rubrikerna nedan.
 
 `os`
 `Operating System Type`

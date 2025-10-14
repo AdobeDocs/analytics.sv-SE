@@ -34,7 +34,7 @@ Så här skapar du en rapport för en begäran om Data Warehouse:
 
 1. Dra segment, mätvärden och mått till verktyget. Rapporten som du skapar avgör vilka data som inkluderas i Datan Warehouse.
 
-1. Fortsätt konfigurera din Data Warehouse-förfrågan på fliken [!UICONTROL **Rapportmål**]. Mer information finns i [Konfigurera ett rapportmål för en Data Warehouse ](/help/export/data-warehouse/create-request/dw-request-report-destinations.md).
+1. Fortsätt konfigurera din Data Warehouse-förfrågan på fliken [!UICONTROL **Rapportmål**]. Mer information finns i [Konfigurera ett rapportmål för en Data Warehouse &#x200B;](/help/export/data-warehouse/create-request/dw-request-report-destinations.md).
 
 <!--
 

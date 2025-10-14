@@ -24,7 +24,7 @@ Webbläsardimensionerna är alltid mindre än skärmupplösningen eftersom webbl
 
 ## Fyll den här dimensionen med data
 
-Den här dimensionen hämtar data från [`s`-frågesträngen ](/help/implement/validate/query-parameters.md) i bildbegäranden. AppMeasurement samlar in dessa data med JavaScript-variabeln `screen.width` och `screen.height` i webbläsaren. Om du använder ett AppMeasurement-bibliotek (till exempel via taggar i Adobe Experience Platform) fungerar den här dimensionen som standard.
+Den här dimensionen hämtar data från [`s`-frågesträngen &#x200B;](/help/implement/validate/query-parameters.md) i bildbegäranden. AppMeasurement samlar in dessa data med JavaScript-variabeln `screen.width` och `screen.height` i webbläsaren. Om du använder ett AppMeasurement-bibliotek (till exempel via taggar i Adobe Experience Platform) fungerar den här dimensionen som standard.
 
 Om du använder en datainsamlingsmetod utanför AppMeasurement (till exempel via API:t) måste du ta med frågesträngsparametern `s` i bildbegäranden. Om frågesträngen `s` saknas eller om ett datainsamlingsbibliotek annars inte kan samla in skärmupplösning, listas dessa data under [!UICONTROL `Not Specified`].
 

@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Analytikerna kan tillbringa många timmar eller till och med dagar på att leta efter relevanta skillnader mellan olika segment i organisationens mått och mått. Denna analys är tidskrävande och tidskrävande. Och ni kanske missar en viktig skillnad för ett segment som kan göra stor skillnad för er riktade marknadsföring.
 
-[Segmentjämförelsen använder exempel ](c-panels/c-segment-comparison/segment-compare-use-cases.md) för verkliga scenarier och hjälper organisationer att få värdefulla insikter om segment och hur de jämför.
+[Segmentjämförelsen använder exempel &#x200B;](c-panels/c-segment-comparison/segment-compare-use-cases.md) för verkliga scenarier och hjälper organisationer att få värdefulla insikter om segment och hur de jämför.
 
 Funktionerna för segmentjämförelsen är:
 

@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # ActivityMap.regionIDAttribute
 
-Variabeln `ActivityMap.regionIDAttribute` gör att du kan ändra attributet som Activity Map letar efter när du fastställer dimensionen för [ Activity Map-regionen ](/help/components/dimensions/activity-map-region.md) . Om din webbplats är strukturerad på ett sätt som gör attributet `id` mindre användbart för Activity Map-regionen kan du ställa in den här variabeln så att den tittar på ett annat attribut.
+Variabeln `ActivityMap.regionIDAttribute` gör att du kan ändra attributet som Activity Map letar efter när du fastställer dimensionen för [&#x200B; Activity Map-regionen &#x200B;](/help/components/dimensions/activity-map-region.md) . Om din webbplats är strukturerad på ett sätt som gör attributet `id` mindre användbart för Activity Map-regionen kan du ställa in den här variabeln så att den tittar på ett annat attribut.
 
 ## Region-ID-attribut i Web SDK-tillägget
 
@@ -42,7 +42,7 @@ Det finns inget dedikerat fält i Adobe Analytics-tillägget som kan använda de
 
 ## s.ActivityMap.regionIDAttribute med AppMeasurement
 
-Variabeln `s.ActivityMap.regionIDAttribute` är en sträng som representerar attributet som avgör dimensionen för [ Activity Map-regionen ](/help/components/dimensions/activity-map-region.md). Den här variabeln är inställd på `id` som standard. Om du ändrar den här variabeln letar Activity Map inte längre efter attributet `id`, men söker fortfarande efter andra villkor för att avgöra område (till exempel semantiska element).
+Variabeln `s.ActivityMap.regionIDAttribute` är en sträng som representerar attributet som avgör dimensionen för [&#x200B; Activity Map-regionen &#x200B;](/help/components/dimensions/activity-map-region.md). Den här variabeln är inställd på `id` som standard. Om du ändrar den här variabeln letar Activity Map inte längre efter attributet `id`, men söker fortfarande efter andra villkor för att avgöra område (till exempel semantiska element).
 
 ```html
 <script>

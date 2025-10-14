@@ -23,7 +23,7 @@ Aktivitetskartan använder den här variabeln för att avgöra vilka länkar som
 
 >[!NOTE]
 >
->`linkInternalFilters` och [ interna URL-filter ](/help/admin/tools/manage-rs/edit-settings/general/internal-url-filter-admin.md) är separata funktioner som fyller olika syften. Variabeln `linkInternalFilters` fungerar specifikt för att avsluta länkspårning. Interna URL-filter är en administratörsinställning som hjälper dig med trafikkällans dimensioner, som Referensdomän.
+>`linkInternalFilters` och [&#x200B; interna URL-filter &#x200B;](/help/admin/tools/manage-rs/edit-settings/general/internal-url-filter-admin.md) är separata funktioner som fyller olika syften. Variabeln `linkInternalFilters` fungerar specifikt för att avsluta länkspårning. Interna URL-filter är en administratörsinställning som hjälper dig med trafikkällans dimensioner, som Referensdomän.
 
 ## Avsluta länkar i SDK för webben
 

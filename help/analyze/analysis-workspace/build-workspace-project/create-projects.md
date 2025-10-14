@@ -34,12 +34,12 @@ Nu när du har skapat ett tomt Workspace-projekt måste du känna till användar
 * Lägg till [paneler](/help/analyze/analysis-workspace/c-panels/panels.md) i ditt projekt. Till exempel **[!DNL Example Panel]** ➊.
 
 * Lägg till [visualiseringar](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md) på panelerna. Exempel:
-   * **[!DNL Line]** [Radvisualisering ](/help/analyze/analysis-workspace/visualizations/line.md) ➋
+   * **[!DNL Line]** [Radvisualisering &#x200B;](/help/analyze/analysis-workspace/visualizations/line.md) ➋
    * **[!DNL US States]** [Visualisering av frihandstabell](/help/analyze/analysis-workspace/visualizations/freeform-table/freeform-table.md) ➌
 * Lägg till [komponenter](/help/analyze/analysis-workspace/components/analysis-workspace-components.md) i dina visualiseringar. Exempel:
    * **[!DNL US States]** [dimension](/help/components/dimensions/overview.md) ➍
    * **[!DNL Unique Visitors]** [metrisk](/help/analyze/analysis-workspace/components/apply-create-metrics.md) ➎
-   * **[!DNL Average Revenue Per Order]** [beräknat mått ](/help/components/calculated-metrics/cm-overview.md) ➏
+   * **[!DNL Average Revenue Per Order]** [beräknat mått &#x200B;](/help/components/calculated-metrics/cm-overview.md) ➏
    * **[!DNL Visits from Mobile Devices]** [segment](/help/components/segmentation/seg-overview.md) ➐
    * **[!DNL Last Month]** [datumintervall](/help/analyze/analysis-workspace/components/calendar-date-ranges/calendar.md) ➑
    * **[!DNL Example]** [anteckning](/help/analyze/analysis-workspace/components/annotations/overview.md) ➒

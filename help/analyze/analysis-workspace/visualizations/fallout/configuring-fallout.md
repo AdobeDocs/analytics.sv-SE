@@ -46,7 +46,7 @@ Du kan göra målningar på dimensioner, mätvärden och segment. Anta till exem
 
 1. Du kan också **begränsa enskilda kontaktytor till nästa händelse** (till skillnad från *så småningom*) i banan. Under varje kontaktyta finns det en väljare med alternativen **[!UICONTROL Eventual path]** och **[!UICONTROL Next event]**, vilket visas här:
 
-   ![Vyn Alla besök visar alternativet för eventuell sökväg markerat. ](assets/fallout-nexthit.png)
+   ![Vyn Alla besök visar alternativet för eventuell sökväg markerat. &#x200B;](assets/fallout-nexthit.png)
 
    | Alternativ | Beskrivning |
    |---|---|
@@ -82,6 +82,6 @@ Som en del av visualiseringen finns det specifika alternativ för snabbmenyer.
 >
 >[Lägg till en visualisering på en panel](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
 >&#x200B;>[Visualiseringsinställningar](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
->&#x200B;>[Snabbmenyn Visualisering ](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>&#x200B;>[Snabbmenyn Visualisering &#x200B;](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >
 

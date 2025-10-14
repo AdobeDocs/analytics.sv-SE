@@ -36,6 +36,6 @@ Så här använder du en **[!UICONTROL Freeform panel]**:
 >[!MORELIKETHIS]
 >
 >[Skapa en panel](/help/analyze/analysis-workspace/c-panels/panels.md#create-a-panel)
->&#x200B;>[Guide för analyskomponenter ](/help/components/home.md)
->&#x200B;>[Visualisering av frihandstabell ](/help/analyze/analysis-workspace/visualizations/freeform-table/freeform-table.md)
+>&#x200B;>[Guide för analyskomponenter &#x200B;](/help/components/home.md)
+>&#x200B;>[Visualisering av frihandstabell &#x200B;](/help/analyze/analysis-workspace/visualizations/freeform-table/freeform-table.md)
 >

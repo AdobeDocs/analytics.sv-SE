@@ -80,7 +80,7 @@ Tidigare uppdateringar av den här tabellen finns på den här sidans [implement
 | `xdm._experience.analytics.event1to100.`<br/>`event1.value`<br/>`[...]`<br/>`xdm._experience.analytics.event901to1000.`<br/>`event1000.value` | Ökar respektive [anpassade händelser](/help/components/metrics/custom-events.md)-mått med önskad mängd. Varje händelse finns i dess överordnade 100-grupp. Fältet för `event567` är till exempel `xdm._experience.analytics.event501to600.event567.value`. |
 | `xdm.identityMap.ECID[0].id` | [Adobe Experience Cloud ID för identitetstjänst](https://experienceleague.adobe.com/sv/docs/id-service/using/home). |
 | `xdm.marketing.trackingCode` | Anger dimensionen [Spårningskod](/help/components/dimensions/tracking-code.md). |
-| `xdm.media.mediaTimed.completes.value` | Mätvärdet [Slutför ](https://experienceleague.adobe.com/sv/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-complete) för direktuppspelningstjänster. |
+| `xdm.media.mediaTimed.completes.value` | Mätvärdet [Slutför &#x200B;](https://experienceleague.adobe.com/sv/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-complete) för direktuppspelningstjänster. |
 | `xdm.media.mediaTimed.dropBeforeStart.value` | `a.media.view`, `a.media.timePlayed`, `a.media.play` |
 | `xdm.media.mediaTimed.federated.value` | Mätvärdet [Federated data](https://experienceleague.adobe.com/sv/docs/media-analytics/using/implementation/variables/audio-video-parameters#federated-data) för direktuppspelningstjänster. |
 | `xdm.media.mediaTimed.firstQuartiles.value` | Mätvärdet [Tjugofem % Progress Marker](https://experienceleague.adobe.com/sv/docs/media-analytics/using/implementation/variables/audio-video-parameters#twenty-five--progress-marker) för direktuppspelningstjänster. |
@@ -118,7 +118,7 @@ Tidigare uppdateringar av den här tabellen finns på den här sidans [implement
 | `xdm.placeContext.geo._schema.latitude` | Besökarens latitud. Hjälper dig att ange [dimensioner för mobil livscykelplacering](/help/components/dimensions/lifecycle-dimensions.md). |
 | `xdm.placeContext.geo._schema.longitude` | Besökarens longitud. Hjälper dig att ange [dimensioner för mobil livscykelplacering](/help/components/dimensions/lifecycle-dimensions.md). |
 | `xdm.placeContext.geo.postalCode` | Dimensionen [Postnummer](/help/components/dimensions/zip-code.md). |
-| `xdm.placeContext.geo.stateProvince` | Dimensionen [USA ](/help/components/dimensions/us-states.md). |
+| `xdm.placeContext.geo.stateProvince` | Dimensionen [USA &#x200B;](/help/components/dimensions/us-states.md). |
 | `xdm.placeContext.localTime` | Visas som `t_time_info` i [Dataflöden](/help/export/analytics-data-feed/c-df-contents/datafeeds-reference.md). |
 | `xdm.productListItems[]._experience.analytics.`<br/>`customDimensions.eVars.eVar1`<br/>`[...]`<br/>`xdm.productListItems[]._experience.analytics.`<br/>`customDimensions.eVars.eVar250` | Tillämpar [produktsyntax](../vars/page-vars/products.md) för eVars. |
 | `xdm.productListItems[]._experience.analytics.`<br/>`event1to100.event1.value`<br/>`[...]`<br/>`xdm.productListItems[]._experience.analytics.`<br/>`event901-1000.event1000.value` | Tillämpar [produktsyntax](../vars/page-vars/products.md) för händelser. |

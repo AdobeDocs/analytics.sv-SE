@@ -20,7 +20,7 @@ Hierarkier är anpassade variabler som du kan använda hur du vill. De finns int
 
 ## Fylla i hierarkier med data
 
-Varje hierarki samlar in data från [`h1` - `h5` frågesträngen ](/help/implement/validate/query-parameters.md) i bildbegäranden. Frågesträngsparametern `h1` samlar till exempel in data för hierarki 1, medan frågesträngsparametern `h4` samlar in data för hierarki 4.
+Varje hierarki samlar in data från [`h1` - `h5` frågesträngen &#x200B;](/help/implement/validate/query-parameters.md) i bildbegäranden. Frågesträngsparametern `h1` samlar till exempel in data för hierarki 1, medan frågesträngsparametern `h4` samlar in data för hierarki 4.
 
 AppMeasurementet, som kompilerar JavaScript-variabler till en bildbegäran för datainsamling, använder variablerna `hier1` - `hier5`. Mer information om implementeringsriktlinjer finns i [hier](/help/implement/vars/page-vars/hier.md) i Implementeringsanvändarhandboken.
 

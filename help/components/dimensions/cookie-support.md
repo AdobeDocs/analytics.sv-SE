@@ -16,7 +16,7 @@ Cookie-stödet [dimension](overview.md) rapporterar om webbläsaren stöder cook
 
 ## Fyll den här dimensionen med data
 
-Den här dimensionen samlar in data från [`k`-frågesträngen ](/help/implement/validate/query-parameters.md) i bildbegäranden. AppMeasurementet försöker ange en cookie med namnet `s_cc` och identifierar sedan om cookien finns. Resultatet är frågesträngsparametervärdet `Y` (om webbläsaren stöder och har aktiverat cookies) eller `N` (om webbläsaren har inaktiverat cookies). Om du använder AppMeasurement (till exempel via taggar i Adobe Experience Platform) fungerar den här dimensionen automatiskt. Om du använder en datainsamlingsmetod utanför AppMeasurementet (till exempel via API:t), måste du ta med frågesträngsparametern `k` för varje träff med värdet `Y` eller `N`.
+Den här dimensionen samlar in data från [`k`-frågesträngen &#x200B;](/help/implement/validate/query-parameters.md) i bildbegäranden. AppMeasurementet försöker ange en cookie med namnet `s_cc` och identifierar sedan om cookien finns. Resultatet är frågesträngsparametervärdet `Y` (om webbläsaren stöder och har aktiverat cookies) eller `N` (om webbläsaren har inaktiverat cookies). Om du använder AppMeasurement (till exempel via taggar i Adobe Experience Platform) fungerar den här dimensionen automatiskt. Om du använder en datainsamlingsmetod utanför AppMeasurementet (till exempel via API:t), måste du ta med frågesträngsparametern `k` för varje träff med värdet `Y` eller `N`.
 
 ## Dimensioner
 

@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Sökningar
 
-[Måttet ](overview.md) för sökningar visar antalet träffar som matchar Adobe externa sökidentifiering. Det här måttet är användbart när du vill titta på dimensionsobjekt som inte är sökningsdimensioner och se hur de bidrog till sökmotortrafiken.
+[Måttet &#x200B;](overview.md) för sökningar visar antalet träffar som matchar Adobe externa sökidentifiering. Det här måttet är användbart när du vill titta på dimensionsobjekt som inte är sökningsdimensioner och se hur de bidrog till sökmotortrafiken.
 
 ## Hur det här måttet beräknas
 

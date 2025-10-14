@@ -20,7 +20,7 @@ Sidans URL-adress [dimension](overview.md) visar URL-adresserna på din webbplat
 
 ## Fyll den här dimensionen med data
 
-Den här dimensionen hämtar data från [`g` och `-g` frågesträngar ](/help/implement/validate/query-parameters.md) i [sidvisningsanrop (`t()`)](/help/implement/vars/functions/t-method.md). [Länkspårningsanrop (`tl()`)](/help/implement/vars/functions/tl-method.md) tar alltid bort den här dimensionen, även om frågesträngen `g` finns.
+Den här dimensionen hämtar data från [`g` och `-g` frågesträngar &#x200B;](/help/implement/validate/query-parameters.md) i [sidvisningsanrop (`t()`)](/help/implement/vars/functions/t-method.md). [Länkspårningsanrop (`tl()`)](/help/implement/vars/functions/tl-method.md) tar alltid bort den här dimensionen, även om frågesträngen `g` finns.
 
 Ibland är URL-adresser längre än 255 byte. AppMeasurementet använder frågesträngsparametern `g` för de första 255 byten i URL:en i bildbegäranden. Om en URL är längre än 255 byte lagras resten av URL:en i frågesträngsparametern `-g`. Protokoll- och frågesträngar i URL:en ingår i den här variabeln.
 

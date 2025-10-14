@@ -54,7 +54,7 @@ Alla cookies från första part som har angetts av Adobe, och de relaterade Java
 
 * [&quot;AMCV&quot;-cookies](https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html?lang=sv-SE) har angetts av tjänstbiblioteket för Adobe Experience Cloud Visitor ID (ECID)
 * Analysen av den gamla cookien [&#128279;](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html?lang=sv-SE)&quot;s_vi&quot; när den har konfigurerats med datainsamling från första part med en CNAME
-* Den gamla cookien [ för Analytics ](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html?lang=sv-SE)&quot;s_fid&quot;, som är den reservcookie som används när s_vi inte kan anges
+* Den gamla cookien [&#x200B; för Analytics &#x200B;](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html?lang=sv-SE)&quot;s_fid&quot;, som är den reservcookie som används när s_vi inte kan anges
 
 #### Vilken inverkan har ITP på Safari för analys?
 

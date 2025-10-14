@@ -16,7 +16,7 @@ Färgdjupet [dimension](overview.md) visar hur många färger enheten stöder. D
 
 ## Fyll den här dimensionen med data
 
-Den här dimensionen refererar till en uppslagstabell och översätter bitvärdet till ett mer läsbart format. Den samlar in data från frågesträngen [`c` ](/help/implement/validate/query-parameters.md) i bildbegäranden. AppMeasurementet använder variabeln `screen.colorDepth` för att fylla i frågesträngen för bildbegäran. Om du använder AppMeasurement (till exempel via taggar i Adobe Experience Platform) fungerar den här dimensionen automatiskt. Om du använder en datainsamlingsmetod utanför AppMeasurementet (till exempel via API:t), måste du ta med frågesträngsparametern `c` för varje träff med ett giltigt bitvärde.
+Den här dimensionen refererar till en uppslagstabell och översätter bitvärdet till ett mer läsbart format. Den samlar in data från frågesträngen [`c` &#x200B;](/help/implement/validate/query-parameters.md) i bildbegäranden. AppMeasurementet använder variabeln `screen.colorDepth` för att fylla i frågesträngen för bildbegäran. Om du använder AppMeasurement (till exempel via taggar i Adobe Experience Platform) fungerar den här dimensionen automatiskt. Om du använder en datainsamlingsmetod utanför AppMeasurementet (till exempel via API:t), måste du ta med frågesträngsparametern `c` för varje träff med ett giltigt bitvärde.
 
 ## Dimensioner
 

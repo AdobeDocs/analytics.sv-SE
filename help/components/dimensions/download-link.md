@@ -20,7 +20,7 @@ Hämtningslänken [dimension](overview.md) rapporterar namnen på hämtningslän
 
 ## Fyll den här dimensionen med data
 
-Den här dimensionen samlar in data från [`pev2`-frågesträngen ](/help/implement/validate/query-parameters.md) i bildbegäranden för träffar som också har frågesträngen `pe` med värdet `lnk_d`. Om frågesträngen `pe` har ett annat värde i träffen samlar dimensionen inte in data. Den maximala längden för den här dimensionen är 100 byte.
+Den här dimensionen samlar in data från [`pev2`-frågesträngen &#x200B;](/help/implement/validate/query-parameters.md) i bildbegäranden för träffar som också har frågesträngen `pe` med värdet `lnk_d`. Om frågesträngen `pe` har ett annat värde i träffen samlar dimensionen inte in data. Den maximala längden för den här dimensionen är 100 byte.
 
 Om du vill skicka data till den här dimensionen med AppMeasurement skickar du en [`tl()`](/help/implement/vars/functions/tl-method.md)-bildbegäran med ett länktypsargument på `"d"`. Fyll i länknamnsargumentet med det önskade värdet:
 

@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # ActivityMap.linkExclusions
 
-Med variabeln `ActivityMap.linkExclusions` kan du selektivt filtrera eller exkludera Activity Map-data baserat på texten i dimensionen [ Activity Map Link](/help/components/dimensions/activity-map-link.md) .
+Med variabeln `ActivityMap.linkExclusions` kan du selektivt filtrera eller exkludera Activity Map-data baserat på texten i dimensionen [&#x200B; Activity Map Link](/help/components/dimensions/activity-map-link.md) .
 
 ## Länkundantag i Web SDK-tillägget
 

@@ -16,7 +16,7 @@ Anslutningstypen [dimension](overview.md) visar hur besökaren är ansluten till
 
 ## Fyll den här dimensionen med data
 
-Den här dimensionen använder en kombination av [`ct`-frågesträngen ](/help/implement/validate/query-parameters.md) och serverlogiken i Adobe. Adobe använder följande regler för att fastställa sitt värde:
+Den här dimensionen använder en kombination av [`ct`-frågesträngen &#x200B;](/help/implement/validate/query-parameters.md) och serverlogiken i Adobe. Adobe använder följande regler för att fastställa sitt värde:
 
 1. Om frågesträngen `ct` är lika med `"modem"` anger du dimensionsobjektet till `"Modem"`. AppMeasurementet samlar bara in dessa data i Internet Explorer-webbläsare som inte stöds, vilket gör det här dimensionsobjektet mindre vanligt.
 1. Kontrollera träffens IP-adress och referera den till en uppslagstabell som är intern för Adobe. Om IP-adressen kommer från en mobiloperatör anger du dimensionsobjektet till `"Mobile Carrier"`.

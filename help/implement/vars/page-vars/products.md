@@ -17,7 +17,7 @@ Variabeln `products` spårar produkter och egenskaper som är kopplade till dem.
 
 >[!NOTE]
 >
->Om den här variabeln anges i en träff utan variabeln [`events`](events/events-overview.md) ökas måttet för [ produktvyer ](/help/components/metrics/product-views.md) med 1. Se till att du anger lämpliga händelser för varje träff med variabeln `products`.
+>Om den här variabeln anges i en träff utan variabeln [`events`](events/events-overview.md) ökas måttet för [&#x200B; produktvyer &#x200B;](/help/components/metrics/product-views.md) med 1. Se till att du anger lämpliga händelser för varje träff med variabeln `products`.
 
 ## Produkter som använder Web SDK
 

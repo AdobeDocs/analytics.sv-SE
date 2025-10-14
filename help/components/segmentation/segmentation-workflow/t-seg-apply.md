@@ -20,7 +20,7 @@ Om du vill använda segment i hela Analysis Workspace drar du bara ett eller fle
 * En kolumn i en [friformstabell](/help/analyze/analysis-workspace/visualizations/freeform-table/freeform-table.md) i Analysis Workspace som lägger till eller ersätter en kolumn, eller som startar ett filter.
 * Konfigurationspaneler för visualisering eller paneler som gör det möjligt att släppa segment. I en [segmentjämförelsepanel](/help/analyze/analysis-workspace/c-panels/c-segment-comparison/segment-comparison.md) eller [nyckelmätningsvisualisering](/help/analyze/analysis-workspace/visualizations/key-metric.md)
 * Definitionsbyggaren [för ett segment](/help/components/segmentation/segmentation-workflow/seg-build.md#definition-builder), så du tar med ett segment i segmentdefinitionen.
-* Definitionsbyggaren [ för ett beräknat mått ](/help/components/calculated-metrics/workflow/c-build-metrics/cm-build-metrics.md#definition-builder), så du inkluderar ett segment i din beräknade måttdefinition.
+* Definitionsbyggaren [&#x200B; för ett beräknat mått &#x200B;](/help/components/calculated-metrics/workflow/c-build-metrics/cm-build-metrics.md#definition-builder), så du inkluderar ett segment i din beräknade måttdefinition.
 
 <!--
 How to apply one or more segments to a report from the segment rail.

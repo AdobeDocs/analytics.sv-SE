@@ -18,7 +18,7 @@ Så här konfigurerar du betald sökidentifiering:
 1. Klicka på **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]** för att öppna [!UICONTROL Report Suite Manager].
 1. Välj en rapportsvit.
 1. Klicka på **[!UICONTROL Edit Settings]** > **[!UICONTROL General]** > **[!UICONTROL Paid Search Detection]**.
-1. Konfigurera fälten som beskrivs i [!UICONTROL Paid Search Detection]Betald sökidentifiering - beskrivningar[ på sidan ](/help/admin/tools/manage-rs/edit-settings/general/paid-search-detection/paid-search-detection.md#section_0C2CFA0AF77B47098BE37CB024665D0D).
+1. Konfigurera fälten som beskrivs i [!UICONTROL Paid Search Detection]Betald sökidentifiering - beskrivningar[&#x200B; på sidan &#x200B;](/help/admin/tools/manage-rs/edit-settings/general/paid-search-detection/paid-search-detection.md#section_0C2CFA0AF77B47098BE37CB024665D0D).
 1. Klicka på **[!UICONTROL Add]**.
 
 Listan [!UICONTROL Current Paid Search Detection Rules] visar aktuella regler för identifiering av betald sökning.

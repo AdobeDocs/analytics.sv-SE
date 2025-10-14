@@ -27,7 +27,7 @@ Beskriver hur du kan hämta Report Builder-publicerade mediefiler till Power BI 
 I uppdateringen av Power BI Desktop från april 2017 släppte Microsoft möjligheten att ansluta till datauppsättningar i tjänsten Power BI. Med den här funktionen kan du skapa nya rapporter med befintliga datauppsättningar som du redan har publicerat i molnet. Du kan använda den här funktionen för att samarbeta bättre och minska antalet dubbletter i teamet.
 
 1. I Power BI Desktop går du till **[!UICONTROL File]** > **[!UICONTROL Options and settings]** > **[!UICONTROL Options]** > **[!UICONTROL Preview features.]**
-1. Aktivera **[!UICONTROL Power BI Service Live Connection]** och klicka på **[!UICONTROL OK]**. ![Klicka på Power BI Service Live Connection och klicka sedan på OK. ](assets/bi-preview-features.png)
+1. Aktivera **[!UICONTROL Power BI Service Live Connection]** och klicka på **[!UICONTROL OK]**. ![Klicka på Power BI Service Live Connection och klicka sedan på OK. &#x200B;](assets/bi-preview-features.png)
 
 1. Starta om Power BI Desktop.
 1. När du har startat om skrivbordet går du till **[!UICONTROL Home]** > **[!UICONTROL Get Data]** > **[!UICONTROL More...]**.

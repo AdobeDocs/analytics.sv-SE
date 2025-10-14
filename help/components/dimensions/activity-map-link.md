@@ -18,7 +18,7 @@ Activity Map Link [dimension](overview.md) visar de mest populära länkarna som
 
 ## Fyll den här dimensionen med data
 
-Den här dimensionen hämtar data från [kontextdatavariabeln ](/help/implement/vars/page-vars/contextdata.md) `c.a.activitymap.link`. Om implementeringen använder [Activity Map](/help/analyze/activity-map/overview.md) samlar den här kontextdatavariabeln automatiskt in data när någon klickar på länkar.
+Den här dimensionen hämtar data från [kontextdatavariabeln &#x200B;](/help/implement/vars/page-vars/contextdata.md) `c.a.activitymap.link`. Om implementeringen använder [Activity Map](/help/analyze/activity-map/overview.md) samlar den här kontextdatavariabeln automatiskt in data när någon klickar på länkar.
 
 För en viss länk som du klickade på söker Activity Map efter följande (i ordning):
 

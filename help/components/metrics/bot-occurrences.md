@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Punkter
 
-[Mätvärdet ](overview.md) för &#39;Bot-förekomster&#39; visar antalet träffar som matchade [Bot-regler](/help/admin/tools/manage-rs/edit-settings/general/bot-removal/bot-rules.md).
+[Mätvärdet &#x200B;](overview.md) för &#39;Bot-förekomster&#39; visar antalet träffar som matchade [Bot-regler](/help/admin/tools/manage-rs/edit-settings/general/bot-removal/bot-rules.md).
 
 Eftersom båda rapporterna är åtskilda från resten av rapportsvitens data fungerar dessa mått bara med följande dimensioner:
 
@@ -24,4 +24,4 @@ Om du använder någon annan dimension med det här måttet returneras inga data
 
 ## Hur det här måttet beräknas
 
-Adobe kontrollerar varje träff för att se om det matchar båda reglerna som din organisation har konfigurerat. Om en given träff matchar en robotregel, utesluts träffen från rapporteringen och detta mätvärde ökar med ett. Det här måttet innehåller både sidvyer ([`t()`](/help/implement/vars/functions/t-method.md)) och länkspårningsträffar ([`tl()`](/help/implement/vars/functions/tl-method.md)), medan [Bot-sidvyer ](bot-page-views.md) inte innehåller länkspårningsträffar.
+Adobe kontrollerar varje träff för att se om det matchar båda reglerna som din organisation har konfigurerat. Om en given träff matchar en robotregel, utesluts träffen från rapporteringen och detta mätvärde ökar med ett. Det här måttet innehåller både sidvyer ([`t()`](/help/implement/vars/functions/t-method.md)) och länkspårningsträffar ([`tl()`](/help/implement/vars/functions/tl-method.md)), medan [Bot-sidvyer &#x200B;](bot-page-views.md) inte innehåller länkspårningsträffar.

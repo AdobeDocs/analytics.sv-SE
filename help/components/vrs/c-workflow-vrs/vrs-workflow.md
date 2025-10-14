@@ -17,7 +17,7 @@ En översikt över de steg som krävs för att planera och implementera virtuell
 
 ![](/help/admin/tools/manage-rs/edit-settings/general/c-server-side-forwarding/assets/step1_icon.png) Planera din strategi för den virtuella rapportsviten.
 
-Bekanta dig med [Global/Multi-Suite Tagging ](/help/components/vrs/vrs-considerations.md) och vanliga frågor och svar när du bestämmer dig för din strategi.
+Bekanta dig med [Global/Multi-Suite Tagging &#x200B;](/help/components/vrs/vrs-considerations.md) och vanliga frågor och svar när du bestämmer dig för din strategi.
 
 ![](/help/admin/tools/manage-rs/edit-settings/general/c-server-side-forwarding/assets/step2_icon.png) [Skapa en virtuell rapportserie](/help/components/vrs/c-workflow-vrs/vrs-create.md) genom att tillämpa ett eller flera segment i en överordnad rapportserie.
 

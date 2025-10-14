@@ -184,7 +184,7 @@ Med statiska rullgardinssegment kan du interagera med data på ett kontrollerat 
 
 Statiska rullgardinssegment kan också användas för att konsolidera många projekt till ett. Om du till exempel har många versioner av samma projekt med olika landssegment tillämpade, kan du konsolidera alla versioner till ett enda projekt och lägga till ett nedrullningsbart landssegment.
 
-![Statiska nedrullningsbara segment med filtret &quot;Direkt&quot; för marknadskanalen markerat. ](assets/dropdown-filter-intro.png)
+![Statiska nedrullningsbara segment med filtret &quot;Direkt&quot; för marknadskanalen markerat. &#x200B;](assets/dropdown-filter-intro.png)
 
 ##### Skapa statiska rullgardinssegment
 

@@ -36,7 +36,7 @@ Exemplet nedan visar hur data skickas till Adobe Analytics när en kund autentis
 * `cust_visid` representerar en värdeuppsättning i `visitorID`.
 * Varje rad är en träff, en enda begäran som skickas till Adobe Analytics datainsamlingsservrar.
 
-![Exempel på olika enheter ](assets/xdevice_first.jpg)
+![Exempel på olika enheter &#x200B;](assets/xdevice_first.jpg)
 
 På den första dataanslutningen som innehåller ett tidigare okänt `visitorID`-värde (`u999` ovan) skapas en ny profil. Beständiga värden från den tidigare profilen överförs till den nya profilen.
 

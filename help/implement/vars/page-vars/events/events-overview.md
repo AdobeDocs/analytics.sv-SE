@@ -66,9 +66,9 @@ Variabeln `s.events` är en sträng som innehåller en kommaavgränsad lista med
 * `purchase`: Ökar måttet [&#39;Orders&#39;](/help/components/metrics/orders.md) med 1 och tar värden som anges i variabeln `products` för att beräkna [&#39;Units&#39;](/help/components/metrics/units.md) och [&#39;Revenue&#39;](/help/components/metrics/revenue.md). Mer information finns i [köphändelse](event-purchase.md).
 * `prodView`: Ökar måttet för [&#39;Produktvyer&#39;](/help/components/metrics/product-views.md).
 * `scOpen`: Ökar måttet [&#39;Carts&#39;](/help/components/metrics/carts.md).
-* `scAdd`: Ökar måttet [&#39;Cart Additions&#39; ](/help/components/metrics/cart-additions.md).
+* `scAdd`: Ökar måttet [&#39;Cart Additions&#39; &#x200B;](/help/components/metrics/cart-additions.md).
 * `scRemove`: Ökar måttet [&#39;Cart Removals&#39;](/help/components/metrics/cart-removals.md).
-* `scView`: Ökar måttet [ för ](/help/components/metrics/cart-views.md) kundvagnsvyer.
+* `scView`: Ökar måttet [&#x200B; för &#x200B;](/help/components/metrics/cart-views.md) kundvagnsvyer.
 * `scCheckout`: Ökar måttet [&#39;Checkouts&#39;](/help/components/metrics/checkouts.md).
 
 >[!NOTE]

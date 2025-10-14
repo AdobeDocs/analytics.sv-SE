@@ -18,7 +18,7 @@ Dimensionen är relaterad till dimensionerna [Webbplatsavsnitt](site-section.md)
 
 ## Fyll den här dimensionen med data
 
-Den här dimensionen hämtar data från [`pageName`-frågesträngen ](/help/implement/validate/query-parameters.md) i [sidvisningsanrop (`t()`)](/help/implement/vars/functions/t-method.md). [Länkspårningsanrop (`tl()`)](/help/implement/vars/functions/tl-method.md) tar alltid bort den här dimensionen, även om frågesträngen `pageName` finns.
+Den här dimensionen hämtar data från [`pageName`-frågesträngen &#x200B;](/help/implement/validate/query-parameters.md) i [sidvisningsanrop (`t()`)](/help/implement/vars/functions/t-method.md). [Länkspårningsanrop (`tl()`)](/help/implement/vars/functions/tl-method.md) tar alltid bort den här dimensionen, även om frågesträngen `pageName` finns.
 
 AppMeasurementet samlar in dessa data med variabeln [`pageName`](/help/implement/vars/page-vars/pagename.md). Om variabeln `pageName` inte är inställd återgår den här dimensionen till att använda variabeln [`pageURL`](/help/implement/vars/page-vars/pageurl.md).
 

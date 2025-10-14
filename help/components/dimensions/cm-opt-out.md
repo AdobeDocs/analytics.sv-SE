@@ -19,8 +19,8 @@ Medgivandehanteringsavanmälan [dimension](overview.md) visar vilka sekretessins
 Den här dimensionen samlar in data från följande [kontextdatavariabler](/help/implement/vars/page-vars/contextdata.md):
 
 * `contextData.['cm.ssf']` när värdet är `1`. Om `cm.ssf` är lika med `0` eller är tom händer ingenting.
-* `contextData.['opt.dmp']` när värdet är `N`. Om `opt.dmp` är lika med `Y` fylls dimensionen [Medgivandehantering ](cm-opt-in.md) i istället.
-* `contextData.['opt.sell']` när värdet är `N`. Om `opt.sell` är lika med `Y` fylls dimensionen [Medgivandehantering ](cm-opt-in.md) i istället.
+* `contextData.['opt.dmp']` när värdet är `N`. Om `opt.dmp` är lika med `Y` fylls dimensionen [Medgivandehantering &#x200B;](cm-opt-in.md) i istället.
+* `contextData.['opt.sell']` när värdet är `N`. Om `opt.sell` är lika med `Y` fylls dimensionen [Medgivandehantering &#x200B;](cm-opt-in.md) i istället.
 
 Organisationen bestämmer logiken för att implementera dessa kontextdatavariabler. De finns inte kvar efter den träff som de är inställda på, så du måste ange varje kontextdatavariabel på varje sida.
 

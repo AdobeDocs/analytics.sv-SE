@@ -88,6 +88,6 @@ Bearbetningsregler kan ange händelser men kan inte läsa dem som villkor. Stäl
 | **Vyer för kundvagn** | Endast skrivning | [Cart-vyerna](/help/components/metrics/cart-views.md) visar måttet. |
 | **Utcheckningar** | Endast skrivning | Måttet [Utcheckningar](/help/components/metrics/checkouts.md). |
 | **Kundtillägg** | Endast skrivning | Måttet [Cart har lagts till](/help/components/metrics/cart-additions.md). |
-| **Ta bort kundvagn** | Endast skrivning | [Cart tar bort ](/help/components/metrics/cart-removals.md)-måttet. |
+| **Ta bort kundvagn** | Endast skrivning | [Cart tar bort &#x200B;](/help/components/metrics/cart-removals.md)-måttet. |
 | **Event 1-1000** | Endast skrivning | [Anpassade händelser](/help/components/metrics/custom-events.md). |
 | **Produktvyer** | Endast skrivning | Mätvärdet för [produktvisningar](/help/components/metrics/product-views.md). |

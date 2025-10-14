@@ -18,7 +18,7 @@ Det är vanligt att lägga till spårningskodfrågesträngar i e-postmeddelanden
 
 ## Fyll den här dimensionen med data
 
-Den här dimensionen hämtar data från [`v0`-frågesträngen ](/help/implement/validate/query-parameters.md) i bildbegäranden. AppMeasurementet samlar in dessa data med variabeln [`campaign`](/help/implement/vars/page-vars/campaign.md).
+Den här dimensionen hämtar data från [`v0`-frågesträngen &#x200B;](/help/implement/validate/query-parameters.md) i bildbegäranden. AppMeasurementet samlar in dessa data med variabeln [`campaign`](/help/implement/vars/page-vars/campaign.md).
 
 ## Dimensioner
 

@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Tid per besökare (sekunder)
 
-[!UICONTROL Time spent per visitor (seconds)] [Måttet ](overview.md) visar den genomsnittliga tiden som besökare interagerar med ett visst dimensionsobjekt under en besökares hela livstid.
+[!UICONTROL Time spent per visitor (seconds)] [Måttet &#x200B;](overview.md) visar den genomsnittliga tiden som besökare interagerar med ett visst dimensionsobjekt under en besökares hela livstid.
 
 Det här måttet är inte tillgängligt i Data Warehouse på grund av dess olika bearbetningsarkitektur.
 

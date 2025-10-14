@@ -74,7 +74,7 @@ Mer information om hur du redigerar en plats finns i [Konfigurera platser för m
 >
 >Om en plats tas bort kommer eventuella dataflödesfiler, Data Warehouse-rapporter eller klassificeringsscheman som är associerade med den borttagna platsen inte att fungera nästa gång de används.
 >
->Om du tar bort en plats bör du [redigera dina datafeeds](/help/export/analytics-data-feed/create-feed.md), [Data Warehouse-rapporter](/help/export/data-warehouse/create-request/dw-request-report-destinations.md) och [klassificeringsuppsättningar ](/help/components/classifications/sets/manage/schema.md) om du vill använda en funktionsplats.
+>Om du tar bort en plats bör du [redigera dina datafeeds](/help/export/analytics-data-feed/create-feed.md), [Data Warehouse-rapporter](/help/export/data-warehouse/create-request/dw-request-report-destinations.md) och [klassificeringsuppsättningar &#x200B;](/help/components/classifications/sets/manage/schema.md) om du vill använda en funktionsplats.
 
 En plats kan bara tas bort av den användare som skapade den eller av en systemadministratör.
 

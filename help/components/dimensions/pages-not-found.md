@@ -21,7 +21,7 @@ Dimensionen &quot;Sidor som inte hittas&quot; visar URL:er som innehåller ett f
 
 ## Fyll den här dimensionen med data
 
-Den här dimensionen hämtar data från [`pageType` och `g` frågesträngar ](/help/implement/validate/query-parameters.md) i bildbegäranden. Om frågesträngen `pageType` är lika med `errorPage` spelas frågesträngen `g` in. AppMeasurement samlar in dessa data med variabeln [`pageType`](/help/implement/vars/page-vars/pagetype.md). Om variabeln `pageType` inte är definierad eller inställd på något annat än `errorPage` samlas inga data för den här dimensionen in.
+Den här dimensionen hämtar data från [`pageType` och `g` frågesträngar &#x200B;](/help/implement/validate/query-parameters.md) i bildbegäranden. Om frågesträngen `pageType` är lika med `errorPage` spelas frågesträngen `g` in. AppMeasurement samlar in dessa data med variabeln [`pageType`](/help/implement/vars/page-vars/pagetype.md). Om variabeln `pageType` inte är definierad eller inställd på något annat än `errorPage` samlas inga data för den här dimensionen in.
 
 ## Dimension-objekt
 
