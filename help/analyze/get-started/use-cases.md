@@ -14,7 +14,7 @@ ht-degree: 10%
 
 Nedan följer några av de viktigaste sätten som Adobe Analytics kan hjälpa företag att få viktiga insikter för att bättre kunna betjäna sina kunder.
 
-Mer information om fördelarna med Adobe Analytics finns på [Adobe Analytics produktsida](https://business.adobe.com/products/analytics/adobe-analytics.html).
+Mer information om fördelarna med Adobe Analytics finns på [Adobe Analytics produktsida](https://business.adobe.com/se/products/analytics/adobe-analytics.html).
 
 ## Webbanalys
 

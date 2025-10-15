@@ -39,7 +39,7 @@ Med Adobe Experience Platform Web SDK kan du välja att ställa in och hantera e
 
 ## Mer information
 
-Mer information om hur ditt företag kan gå över från cookies från tredje part finns i [Förvärva och hålla kunderna i en cookiefri värld med Adobe](https://business.adobe.com/solutions/cookieless.html) och i detalj [Tänk bortom cookie-filen från tredje part: En fullständig guide till en värld utan cookies från tredje part](https://business.adobe.com/content/dam/www/us/en/pdfs/Adobe_Thinking_Beyond_the_Third_Party_Cookie.pdf).&quot;
+Mer information om hur ditt företag kan gå över från cookies från tredje part finns i [Förvärva och hålla kunderna i en cookiefri värld med Adobe](https://business.adobe.com/se/solutions/cookieless.html) och i detalj [Tänk bortom cookie-filen från tredje part: En fullständig guide till en värld utan cookies från tredje part](https://business.adobe.com/content/dam/www/us/en/pdfs/Adobe_Thinking_Beyond_the_Third_Party_Cookie.pdf).&quot;
 
 >[!MORELIKETHIS]
 >

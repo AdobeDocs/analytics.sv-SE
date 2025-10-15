@@ -20,7 +20,7 @@ Om din organisation vill följa upp resultatet och klickfrekvens för marknadsf�
 1. [Konfigurera eller justera implementeringen av Adobe Analytics så att den inkluderar spårningskod](#include-campaign-variables-in-your-implementation)
 1. [Visa rapporter i Analysis Workspace](#view-the-reports-in-analysis-workspace)
 
-[Adobe Campaign](https://business.adobe.com/products/campaign/adobe-campaign.html) kan hjälpa er att förenkla vart och ett av dessa steg för att få ut så mycket som möjligt av er marknadsföring. Kontakta din säljare på Adobe för mer information.
+[Adobe Campaign](https://business.adobe.com/se/products/campaign/adobe-campaign.html) kan hjälpa er att förenkla vart och ett av dessa steg för att få ut så mycket som möjligt av er marknadsföring. Kontakta din säljare på Adobe för mer information.
 
 ## Upprätta en process för att generera spårningskod
 

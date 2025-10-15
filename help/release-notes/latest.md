@@ -60,4 +60,4 @@ De senaste uppdateringarna för AppMeasurement finns i [AppMeasurement versionsi
 * [Information om föregående version för 2025](/help/release-notes/2025.md)
 * [Versionsinformation för Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/releases/latest.html?lang=sv-SE)
 * [Versionsinformation för direktuppspelande medietjänster](https://experienceleague.adobe.com/docs/media-analytics/using/additional-resources/release-notes.html?lang=sv-SE)
-* Den senaste releaseuppdateringen för [Adobe Experience Cloud-produkter](https://business.adobe.com/products/adobe-experience-cloud-products.html)
+* Den senaste releaseuppdateringen för [Adobe Experience Cloud-produkter](https://business.adobe.com/se/products/adobe-experience-cloud-products.html)
