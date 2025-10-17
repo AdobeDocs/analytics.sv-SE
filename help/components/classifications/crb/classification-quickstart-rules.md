@@ -3,7 +3,7 @@ description: Klassificeringsreglerna söker regelbundet efter oklassificerade te
 title: Klassificeringsregler
 feature: Classifications
 exl-id: 8fe5d838-fa89-4933-a0c0-498d4e59576d
-source-git-commit: fcc165536d77284e002cb2ba6b7856be1fdb3e14
+source-git-commit: 39e4575fe059621c56d6531ab7d26898913188b8
 workflow-type: tm+mt
 source-wordcount: '1913'
 ht-degree: 0%
@@ -133,14 +133,14 @@ Konfigurera regeln på följande sätt i [!UICONTROL Rule Builder]:
 
 | Välj regeltyp | Ange matchningsvillkor | Ange klassificering | Till |
 |---|---|---|---|
-| Reguljärt uttryck | &Hatt;()+)\:(.+)\:(.+)$ | Kampanjdatum | $3 |
+| Reguljärt uttryck | &amp;Hatt;()+)\:(.+)\:(.+)$ | Kampanjdatum | $3 |
 
 **Syntax**
 
 | Reguljärt uttryck | Sträng eller Matcha resultat | Motsvarande Matcha grupper |
 |--- |--- |--- |
 | `^(.+)\:(.+)\:(.+)$` | `em:JuneSale:20XX0601` | `$0`: `em:JuneSale:20XX0601` `$1`: em `$2`: JuniSale `$3`: 20XX0601 |
-| Skapar syntaxen | `^` = startar raden () = grupperar tecken och låter dig extrahera matchande tecken inom parentes.  `(.+)` = hämtar ett ( . ) och ( + ) eller fler \ = början av en sträng.  `$` = anger att föregående tecken (eller teckengrupp) är det sista tecknet på raden. |
+| Skapar syntaxen | `^` = startar raden () = grupperar tecken och låter dig extrahera matchande tecken inom parentes.  `(.+)` = hämtar ett ( . ) och ( + ) eller fler \ = början av en sträng.  `$` = anger att föregående tecken (eller teckengrupp) är det sista tecknet på raden. | |
 
 I [Reguljära uttryck - referenstabell](/help/components/classifications/crb/classification-quickstart-rules.md) finns information om vad tecknen i ett reguljärt uttryck betyder.
 
