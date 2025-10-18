@@ -24,9 +24,9 @@ När Adobe får en träff utförs följande kontroller i rätt ordning. Om det f
 | Order som används | Frågeparameter | Visas när |
 |---|---|---|
 | **1<sup>st</sup>** | `vid` | Variabeln [`visitorID`](/help/implement/vars/config-vars/visitorid.md) har angetts. |
-| **2<sup>nd</sup>** | `aid` | Besökaren har en befintlig [`s_vi`](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html)-cookie. Ange implementeringar utan eller innan du implementerar Visitor ID-tjänsten. |
-| **3<sup>rd</sup>** | `mid` | Besökaren har en befintlig [`s_ecid`](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html)-cookie. Ange implementeringar med hjälp av [Adobe Experience Cloud Identity-tjänsten](https://experienceleague.adobe.com/docs/id-service/using/home.html). Adobe rekommenderar att du använder ID-tjänsten för alla implementeringar där det är möjligt. |
-| **4<sup>th</sup>** | `fid` | Besökaren har en befintlig [`s_fid`](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html)-cookie, eller om `aid` och `mid` inte kunde anges av någon anledning. |
+| **2<sup>nd</sup>** | `aid` | Besökaren har en befintlig [`s_vi`](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html?lang=sv-SE)-cookie. Ange implementeringar utan eller innan du implementerar Visitor ID-tjänsten. |
+| **3<sup>rd</sup>** | `mid` | Besökaren har en befintlig [`s_ecid`](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html?lang=sv-SE)-cookie. Ange implementeringar med hjälp av [Adobe Experience Cloud Identity-tjänsten](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=sv-SE). Adobe rekommenderar att du använder ID-tjänsten för alla implementeringar där det är möjligt. |
+| **4<sup>th</sup>** | `fid` | Besökaren har en befintlig [`s_fid`](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html?lang=sv-SE)-cookie, eller om `aid` och `mid` inte kunde anges av någon anledning. |
 | **5<sup>th</sup>** | IP-adress, användaragent, gateway-IP-adress | Används som en sista utväg för att identifiera en unik besökare om besökarens webbläsare inte accepterar cookies. |
 
 ## Beteende som påverkar antalet unika besökare
@@ -40,7 +40,7 @@ Unika besöksidentifierare lagras vanligtvis i en webbläsarcookie. En ny unik b
 * Besöker webbplatsen på olika enheter. En unik besökare räknas per enhet.
 * Besök webbplatsen efter mer än 13 månaders inaktivitet.
 
-Använd [Stitching](https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/overview) i Customer Journey Analytics för att identifiera samma person i flera webbläsare eller på flera enheter.
+Använd [Stitching](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/stitching/overview) i Customer Journey Analytics för att identifiera samma person i flera webbläsare eller på flera enheter.
 
 ## Beteende som inte påverkar antalet unika besökare
 
