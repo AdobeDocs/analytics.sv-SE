@@ -30,7 +30,7 @@ Om du koordinerar distributionen av Visitor ID-tjänsten i alla delar av webbpla
 
 I vissa implementeringar av äldre besökar-ID för Analytics kan&quot;användarvänliga cookies från tredje part&quot; användas, där två domäner delar samma besökares cookie på en gemensam domän som `data.example.com`. Eftersom egna cookies från tredje part fortfarande är cookies från tredje part, avvisar de flesta moderna webbläsare dem, vilket gör att Analytics förlitar sig på ett reservID (`fid`) för besökaridentifiering. Genom att gå till ID-tjänsten kan alla domäner ange cookie-filen `AMCV` i en förstapartskontext, vilket ökar deras möjlighet att behålla ett besökar-ID.
 
-Även om besökar-ID-tjänsten försöker ange en tredjeparts-cookie för domänövergripande spårning ([`demdex`-cookien ](https://experienceleague.adobe.com/en/docs/id-service/using/intro/cookies)), avvisas den ofta av de flesta moderna webbläsare. Överväg att använda metoden [`appendVisitorIDsTo`](https://experienceleague.adobe.com/en/docs/id-service/using/id-service-api/methods/appendvisitorid) för att skicka Experience Cloud ID:n mellan domäner som du äger.
+Även om besökar-ID-tjänsten försöker ange en tredjeparts-cookie för domänövergripande spårning ([`demdex`-cookien &#x200B;](https://experienceleague.adobe.com/en/docs/id-service/using/intro/cookies)), avvisas den ofta av de flesta moderna webbläsare. Överväg att använda metoden [`appendVisitorIDsTo`](https://experienceleague.adobe.com/en/docs/id-service/using/id-service-api/methods/appendvisitorid) för att skicka Experience Cloud ID:n mellan domäner som du äger.
 
 ## Spårning på serversidan
 
