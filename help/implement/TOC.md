@@ -4,9 +4,9 @@ audience: all
 user-guide-title: Implementeringshandbok för Analytics
 breadcrumb-title: Implementeringshandbok
 user-guide-description: Lär dig hur du implementerar Adobe Analytics. Anpassa vilka data som samlas in för att få ut så mycket som möjligt av Analytics-data.
-source-git-commit: bb068d39f756c4cce06349d0bd969212e19cb33e
+source-git-commit: 3055a76f797438be71e82ea8f73800dc82ff4805
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '461'
 ht-degree: 7%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 7%
 # Adobe Analytics Implementeringshandbok {#implementation}
 
 + [Implementeringshandbok för analyser](home.md)
-+ [Versionsinformation för analyser](https://experienceleague.adobe.com/sv/docs/analytics/release-notes/latest)
++ [Versionsinformation för analyser](https://experienceleague.adobe.com/en/docs/analytics/release-notes/latest)
 + [Versionsinformation för AppMeasurement](appmeasurement-updates.md)
 + Analysvariabler, funktioner och metoder {#vars}
    + [Översikt](vars/overview.md)
@@ -131,6 +131,14 @@ ht-degree: 7%
       + [pt](vars/plugins/pt-plugin.md)
       + [removeFromList](vars/plugins/removefromlist.md)
    + [Integrera modul](vars/integrate.md)
++ Besökaridentifiering {#id}
+   + [Översikt](id/overview.md)
+   + [Använda AppMeasurement](id/appmeasurement.md)
+   + [Använda Analytics-tillägg](id/analytics-extension.md)
+   + [Använda Web SDK (gammal)](id/alloy.md)
+   + [Använda Web SDK-tillägg](id/web-sdk-extension.md)
+   + [Migrerar till besökar-ID-tjänsten](id/migration.md)
+   + [Spåra olika implementeringstyper](id/cross-type-implementation.md)
 + Förbered implementering av Adobe Analytics {#prepare}
    + [Skapa ett datalager](prepare/data-layer.md)
    + [Jämför implementeringsmetoder](prepare/comparison.md)
@@ -188,7 +196,6 @@ ht-degree: 7%
 + [Implementera analyser på mobila enheter](mobile-device-sdk.md)
 + Användningsexempel för implementering {#use-cases}
    + [Använda AppMeasurement med iFrames](use-cases/iframe.md)
-   + [Spåra olika implementeringstyper](use-cases/cross-type-implementation.md)
    + [Arbetsflöde för kampanjspårning](use-cases/campaign-tracking.md)
 + Validera implementeringen {#validate}
    + [Äldre Adobe Experience Cloud-felsökning](validate/debugger.md)
