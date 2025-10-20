@@ -1,7 +1,7 @@
 ---
 title: Överväganden om migrering av Visiter ID-tjänst för Adobe Analytics
 description: En översikt över hur Adobe Analytics interagerar med besökar-ID-tjänsten.
-source-git-commit: 3055a76f797438be71e82ea8f73800dc82ff4805
+source-git-commit: 779ba5b0a1d71467aaaf3872fd707cc323ae8af2
 workflow-type: tm+mt
 source-wordcount: '531'
 ht-degree: 0%
@@ -24,14 +24,14 @@ Eftersom AppMeasurement har en egen metod för att identifiera besökare kan vis
 
 Om du har flera implementeringar som skickar data till samma rapportserie och du bara kan implementera tjänsten för besöks-ID för vissa implementeringar, rekommenderar Adobe att du konfigurerar en respitperiod. Om till exempel supportavsnittet på din plats hanteras av en separat taggningslösning, kan du ha använt Visitor ID-tjänsten på resten av din plats före supportavsnittet. Utan någon respitperiod får nya besökare som visar supportavsnittet ett gammalt besökar-ID för Analytics, vilket gör att två separata besökare räknas. Med en respitperiod utfärdar besökar-ID-tjänsten både ett Experience Cloud-ID (`mid`) och ett äldre Analytics-besökar-ID (`aid`) så att områden på webbplatsen utan ID-tjänsten fortsätter att identifiera besökare konsekvent.
 
-Om du koordinerar distributionen av Visitor ID-tjänsten i alla delar av webbplatsen behöver du ingen respitperiod. Kontakta [Adobe kundtjänst](https://helpx.adobe.com/se/marketing-cloud/contact-support.html) om du vill konfigurera en respitperiod.
+Om du koordinerar distributionen av Visitor ID-tjänsten i alla delar av webbplatsen behöver du ingen respitperiod. Kontakta [Adobe kundtjänst](https://helpx.adobe.com/marketing-cloud/contact-support.html) om du vill konfigurera en respitperiod.
 
 ## Spårning mellan domäner
 
-I vissa implementeringar av äldre besökar-ID för Analytics kan&quot;användarvänliga cookies från tredje part&quot; användas, där två domäner delar samma besökares cookie på en gemensam domän som `data.example.com`. Eftersom egna cookies från tredje part fortfarande är cookies från tredje part, avvisar de flesta moderna webbläsare dem, vilket gör att Analytics förlitar sig på ett reservID (`fid`) för besökaridentifiering. Genom att gå till ID-tjänsten kan alla domäner ange cookie-filen `AMCV` i en förstapartskontext, vilket ökar deras möjlighet att behålla ett besökar-ID.
+I vissa implementeringar av äldre besökar-ID för Analytics kan&quot;användarvänliga cookies från tredje part&quot; användas, där två domäner delar samma besökares cookie på en gemensam domän som `data.example.com`. Eftersom egna cookies från tredje part fortfarande är cookies från tredje part, avvisar många moderna webbläsare dem, vilket gör att Analytics förlitar sig på ett reservID (`fid`) för besökaridentifiering. Genom att gå till ID-tjänsten kan alla domäner ange cookie-filen `AMCV` i en förstapartskontext, vilket ökar deras möjlighet att behålla ett besökar-ID.
 
-Även om besökar-ID-tjänsten försöker ange en tredjeparts-cookie för domänövergripande spårning ([`demdex`-cookien &#x200B;](https://experienceleague.adobe.com/sv/docs/id-service/using/intro/cookies)), avvisas den ofta av de flesta moderna webbläsare. Överväg att använda metoden [`appendVisitorIDsTo`](https://experienceleague.adobe.com/sv/docs/id-service/using/id-service-api/methods/appendvisitorid) för att skicka Experience Cloud ID:n mellan domäner som du äger.
+Även om besökar-ID-tjänsten försöker ange en tredjeparts-cookie för korsdomänsspårning ( [`demdex` cookie ](https://experienceleague.adobe.com/en/docs/id-service/using/intro/cookies) ), avvisas den ofta av moderna webbläsare. Överväg att använda metoden [`appendVisitorIDsTo`](https://experienceleague.adobe.com/en/docs/id-service/using/id-service-api/methods/appendvisitorid) för att skicka en besökares Experience Cloud-ID (`mid`) mellan domäner som du äger.
 
 ## Spårning på serversidan
 
-Du kan anropa [`getMarketingCloudVisitorID`](https://experienceleague.adobe.com/sv/docs/id-service/using/id-service-api/methods/getmcvid) för att hämta Experience Cloud-id:t (`mid`) och [`getAnalyticsVisitorID`](https://experienceleague.adobe.com/sv/docs/id-service/using/id-service-api/methods/getanalyticsvisitorid) för att hämta det äldre analys-ID:t (`aid`). Adobe rekommenderar att du kontrollerar båda för att bevara logiken för besökaridentifiering.
+Du kan anropa [`getMarketingCloudVisitorID`](https://experienceleague.adobe.com/en/docs/id-service/using/id-service-api/methods/getmcvid) för att hämta Experience Cloud-id:t (`mid`) och [`getAnalyticsVisitorID`](https://experienceleague.adobe.com/en/docs/id-service/using/id-service-api/methods/getanalyticsvisitorid) för att hämta det äldre analys-ID:t (`aid`). Adobe rekommenderar att du kontrollerar båda för att bevara logiken för besökaridentifiering.

@@ -1,24 +1,24 @@
 ---
 title: Besökaridentifiering med AppMeasurement
 description: Identifiera besökare korrekt när ni implementerar Adobe Analytics med AppMeasurement.
-source-git-commit: 5bd1914dc52c664348f30793761f0fc347343156
+source-git-commit: 779ba5b0a1d71467aaaf3872fd707cc323ae8af2
 workflow-type: tm+mt
-source-wordcount: '484'
+source-wordcount: '470'
 ht-degree: 0%
 
 ---
 
 # Besökaridentifiering med AppMeasurement
 
-AppMeasurement är Adobe Analytics gamla JavaScript-bibliotek för datainsamling. Även om AppMeasurement i sig själv erbjuder ett inbyggt sätt att identifiera besökare, avvisar många moderna webbläsare de cookies som de försöker ange. Adobe rekommenderar starkt att du använder Adobe Experience Cloud Visitor ID Service i alla implementeringar för att uppfylla moderna webbläsarsekretessstandarder. Alla versioner av AppMeasurement medföljer `VisitorAPI.js`, det JavaScript-bibliotek som användes för att implementera Visitor ID-tjänsten.
+AppMeasurement är Adobe Analytics gamla JavaScript-bibliotek för datainsamling. Även om AppMeasurement i sig själv erbjuder ett inbyggt sätt att identifiera besökare, avvisar många moderna webbläsare de cookies från tredje part som det försöker ange. Adobe rekommenderar starkt att du använder Adobe Experience Cloud Visitor ID Service i alla implementeringar för att uppfylla moderna webbläsarsekretessstandarder. Alla versioner av AppMeasurement medföljer `VisitorAPI.js`, det JavaScript-bibliotek som användes för att implementera Visitor ID-tjänsten.
 
 ## Identifiera besökare med hjälp av besökar-ID-tjänsten (rekommenderas)
 
-Använd det här avsnittet för att skapa en grundläggande integrering mellan Adobe Analytics och Visitor ID-tjänsten. Kontrollera att du är förberedd med följande:
+Kontrollera att du är förberedd med följande:
 
 * Hämta den [senaste versionen av AppMeasurement](https://github.com/adobe/appmeasurement). Det hämtade biblioteket innehåller både `AppMeasurement.js` och `VisitorAPI.js`.
 * En [rapportsvit-ID](/help/admin/tools/manage-rs/new-rs/new-report-suite.md) för utveckling.
-* Den önskade domänen för [`trackingServerSecure`](/help/implement/vars/config-vars/trackingserversecure.md).
+* Den önskade kantdomänen för [`trackingServerSecure`](/help/implement/vars/config-vars/trackingserversecure.md).
 * Ditt IMS-organisations-ID:
    1. Logga in på [experience.adobe.com](https://experience.adobe.com) med dina Adobe ID-inloggningsuppgifter.
    1. Tryck på `[Cmd]` + `[I]` (iOS) eller `[Ctrl]` + `[I]` (Windows) någonstans i Experience Cloud-gränssnittet.
@@ -26,7 +26,7 @@ Använd det här avsnittet för att skapa en grundläggande integrering mellan A
    1. Utöka den önskade IMS-organisationen.
    1. Leta reda på fältet **[!UICONTROL ID]**.
 
-När du har tillgång till resurserna ovan kan du se följande grundläggande exempelsida som innehåller de minsta anrop som krävs för att skicka data till Adobe Analytics:
+När du har resurserna ovan innehåller följande grundläggande exempelsida de minsta anrop som krävs för att skicka data till Adobe Analytics:
 
 ```html
 <html>
@@ -50,10 +50,12 @@ När du har tillgång till resurserna ovan kan du se följande grundläggande ex
 
 >[!TIP]
 >
->Du kan spåra om en träff använder tjänsten för besökar-ID genom att tilldela förekomsten av `Visitor` till en anpassad variabel:
+>Du kan spåra om en träff använder tjänsten för besökar-ID genom att tilldela förekomsten av `Visitor` till en anpassad variabel i [`doPlugins`](/help/implement/vars/functions/doplugins.md):
 >
 >```js
->s.prop1 = typeof(Visitor) != "undefined" ? "VisitorAPI Present" : "VisitorAPI Missing";
+>s.doPlugins = function() {
+>   s.prop1 = typeof(Visitor) != "undefined" ? "VisitorAPI present" : "VisitorAPI missing";
+>};
 >```
 
 ## Identifiera besökare med hjälp av cookien `s_vi` (rekommenderas inte)
@@ -62,10 +64,10 @@ När du har tillgång till resurserna ovan kan du se följande grundläggande ex
 >
 >Adobe rekommenderar att du inte använder den här metoden för att identifiera besökare.
 
-Om din organisation inte använder besökar-ID-tjänsten använder AppMeasurement en egen form av besökaridentifiering. När en besökare kommer till din webbplats för första gången söker biblioteket efter en [`s_vi`](https://experienceleague.adobe.com/sv/docs/core-services/interface/data-collection/cookies/analytics)-cookie. Den här cookien är inställd på domänmatchande [`trackingServerSecure`](/help/implement/vars/config-vars/trackingserversecure.md) (för HTTPS) eller [`trackingServer`](/help/implement/vars/config-vars/trackingserver.md) (för HTTP).
+Om din organisation inte använder besökar-ID-tjänsten använder AppMeasurement en egen form av besökaridentifiering. När en besökare kommer till din webbplats för första gången söker biblioteket efter en [`s_vi`](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/cookies/analytics)-cookie. Den här cookien är inställd på domänmatchande [`trackingServerSecure`](/help/implement/vars/config-vars/trackingserversecure.md) (för HTTPS) eller [`trackingServer`](/help/implement/vars/config-vars/trackingserver.md) (för HTTP).
 
-* Om du deltar i det [hanterade certifikatprogrammet](https://experienceleague.adobe.com/sv/docs/core-services/interface/data-collection/adobe-managed-cert) är din spårningsserver vanligtvis en förstapartsdomän, vilket gör `s_vi` cookies från första part.
-* Om du inte deltar i det hanterade certifikatprogrammet är spårningsservern vanligtvis en underdomän till `adobedc.net`, `omtrdc.net` eller `2o7.net`, vilket gör `s_vi`-cookien till en cookie från tredje part. På grund av moderna sekretessrutiner för webbläsare avvisas cookies från tredje part av de flesta webbläsare. När den har avvisats försöker AppMeasurement ange en cookie för återfall (`fid`) för första part i stället.
+* Om du deltar i det [hanterade certifikatprogrammet](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/adobe-managed-cert) är din spårningsserver vanligtvis en förstapartsdomän, vilket gör `s_vi` cookies från första part.
+* Om du inte deltar i det hanterade certifikatprogrammet är spårningsservern vanligtvis en underdomän till `adobedc.net`, `omtrdc.net` eller `2o7.net`, vilket gör `s_vi`-cookien till en cookie från tredje part. På grund av moderna webbläsarsekretessstandarder avvisas cookies från tredje part av de flesta webbläsare. När den har avvisats försöker AppMeasurement ange en cookie för återfall (`fid`) för första part i stället.
 
 Om du har angett `trackingServerSecure` korrekt krävs inga ytterligare åtgärder för besöksidentifiering.
 

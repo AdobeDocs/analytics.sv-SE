@@ -1,7 +1,7 @@
 ---
 title: Identifiering av besökare med hjälp av taggtillägget Adobe Analytics
 description: Identifiera besökare korrekt när du implementerar Adobe Analytics-taggtillägget.
-source-git-commit: 5bd1914dc52c664348f30793761f0fc347343156
+source-git-commit: 779ba5b0a1d71467aaaf3872fd707cc323ae8af2
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 0%
@@ -30,10 +30,10 @@ Taggtillägget hämtar automatiskt ditt IMS-org-ID, så ingen ytterligare konfig
 >
 >Adobe rekommenderar att du inte använder den här metoden för att identifiera besökare.
 
-Om din organisation inte använder tillägget Service Tag-nummer för Visitor ID använder Adobe Analytics-taggtillägget sin egen form av besökaridentifiering. När en besökare kommer till din webbplats för första gången söker tillägget efter en [`s_vi`](https://experienceleague.adobe.com/sv/docs/core-services/interface/data-collection/cookies/analytics)-cookie. Den här cookie-filen anges till den domän som matchar **[!UICONTROL SSL Tracking Server]** (för HTTPS) eller **[!UICONTROL Tracking Server]** (för HTTP) när [taggtillägget &#x200B;](https://experienceleague.adobe.com/sv/docs/experience-platform/tags/extensions/client/analytics/overview) konfigureras.
+Om din organisation inte använder tillägget Service Tag-nummer för Visitor ID använder Adobe Analytics-taggtillägget sin egen form av besökaridentifiering. När en besökare kommer till din webbplats för första gången söker tillägget efter en [`s_vi`](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/cookies/analytics)-cookie. Den här cookie-filen anges till den domän som matchar **[!UICONTROL SSL Tracking Server]** (för HTTPS) eller **[!UICONTROL Tracking Server]** (för HTTP) när [taggtillägget ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/analytics/overview) konfigureras.
 
-* Om du deltar i det [hanterade certifikatprogrammet](https://experienceleague.adobe.com/sv/docs/core-services/interface/data-collection/adobe-managed-cert) är din spårningsserver vanligtvis en förstapartsdomän, vilket gör `s_vi` cookies från första part.
-* Om du inte deltar i det hanterade certifikatprogrammet är spårningsservern vanligtvis en underdomän till `adobedc.net`, `omtrdc.net` eller `2o7.net`, vilket gör `s_vi`-cookien till en cookie från tredje part. På grund av moderna sekretessrutiner för webbläsare avvisas cookies från tredje part av de flesta webbläsare. När den har avvisats försöker AppMeasurement ange en cookie för återfall (`fid`) för första part i stället.
+* Om du deltar i det [hanterade certifikatprogrammet](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/adobe-managed-cert) är din spårningsserver vanligtvis en förstapartsdomän, vilket gör `s_vi` cookies från första part.
+* Om du inte deltar i det hanterade certifikatprogrammet är spårningsservern vanligtvis en underdomän till `adobedc.net`, `omtrdc.net` eller `2o7.net`, vilket gör `s_vi`-cookien till en cookie från tredje part. På grund av moderna webbläsarsekretessstandarder avvisas cookies från tredje part av de flesta webbläsare. När den har avvisats försöker AppMeasurement ange en cookie för återfall (`fid`) för första part i stället.
 
 Om du har angett [!UICONTROL SSL Tracking Server] korrekt krävs inga ytterligare åtgärder för besöksidentifiering.
 
