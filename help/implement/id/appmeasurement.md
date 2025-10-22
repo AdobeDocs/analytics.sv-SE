@@ -1,9 +1,9 @@
 ---
 title: Besökaridentifiering med AppMeasurement
 description: Identifiera besökare korrekt när ni implementerar Adobe Analytics med AppMeasurement.
-source-git-commit: 779ba5b0a1d71467aaaf3872fd707cc323ae8af2
+source-git-commit: 98e9dc4932bd23d3e0b632705945f56c243750c5
 workflow-type: tm+mt
-source-wordcount: '470'
+source-wordcount: '473'
 ht-degree: 0%
 
 ---
@@ -64,9 +64,9 @@ När du har resurserna ovan innehåller följande grundläggande exempelsida de 
 >
 >Adobe rekommenderar att du inte använder den här metoden för att identifiera besökare.
 
-Om din organisation inte använder besökar-ID-tjänsten använder AppMeasurement en egen form av besökaridentifiering. När en besökare kommer till din webbplats för första gången söker biblioteket efter en [`s_vi`](https://experienceleague.adobe.com/sv/docs/core-services/interface/data-collection/cookies/analytics)-cookie. Den här cookien är inställd på domänmatchande [`trackingServerSecure`](/help/implement/vars/config-vars/trackingserversecure.md) (för HTTPS) eller [`trackingServer`](/help/implement/vars/config-vars/trackingserver.md) (för HTTP).
+Om din organisation inte använder besökar-ID-tjänsten använder AppMeasurement en egen form av besökaridentifiering. När en besökare kommer till din webbplats för första gången söker biblioteket efter en [`s_vi`](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/cookies/analytics)-cookie. Den här cookien är inställd på domänmatchande [`trackingServerSecure`](/help/implement/vars/config-vars/trackingserversecure.md) (för HTTPS) eller [`trackingServer`](/help/implement/vars/config-vars/trackingserver.md) (för HTTP).
 
-* Om du deltar i det [hanterade certifikatprogrammet](https://experienceleague.adobe.com/sv/docs/core-services/interface/data-collection/adobe-managed-cert) är din spårningsserver vanligtvis en förstapartsdomän, vilket gör `s_vi` cookies från första part.
+* Om du deltar i det [hanterade certifikatprogrammet](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/adobe-managed-cert) är din spårningsserver vanligtvis en förstapartsdomän, vilket gör `s_vi` cookies från första part.
 * Om du inte deltar i det hanterade certifikatprogrammet är spårningsservern vanligtvis en underdomän till `adobedc.net`, `omtrdc.net` eller `2o7.net`, vilket gör `s_vi`-cookien till en cookie från tredje part. På grund av moderna webbläsarsekretessstandarder avvisas cookies från tredje part av de flesta webbläsare. När den har avvisats försöker AppMeasurement ange en cookie för återfall (`fid`) för första part i stället.
 
 Om du har angett `trackingServerSecure` korrekt krävs inga ytterligare åtgärder för besöksidentifiering.
@@ -82,7 +82,7 @@ Om du använder variabeln [`visitorID`](/help/implement/vars/config-vars/visitor
 * Varje träff måste innehålla samma `visitorID`-värde för att räknas som en enskild besökare.
    * Alla träffar som inte innehåller `visitorID` försöker automatiskt att använda en annan metod för identifiering av besökare, och behandlar dem som separata besökare.
    * Alla träffar som innehåller ett annat `visitorID`-värde än en tidigare träff behandlas som separata besökare.
-   * Adobe erbjuder inget sätt att sammanfoga träffar med olika besökar-ID:n.
+   * Adobe erbjuder inget sätt att sy ihop träffar med olika besökar-ID:n i Adobe Analytics.
 * Delade målgrupper, Analytics for Target och Customer-attribut stöds inte för besökare som identifieras med `visitorID`.
 
 Se [`visitorID`](/help/implement/vars/config-vars/visitorid.md) för implementeringsinstruktioner med den här variabeln.

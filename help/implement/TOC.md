@@ -4,7 +4,7 @@ audience: all
 user-guide-title: Implementeringshandbok för Analytics
 breadcrumb-title: Implementeringshandbok
 user-guide-description: Lär dig hur du implementerar Adobe Analytics. Anpassa vilka data som samlas in för att få ut så mycket som möjligt av Analytics-data.
-source-git-commit: 3055a76f797438be71e82ea8f73800dc82ff4805
+source-git-commit: 98e9dc4932bd23d3e0b632705945f56c243750c5
 workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 7%
@@ -15,7 +15,7 @@ ht-degree: 7%
 # Adobe Analytics Implementeringshandbok {#implementation}
 
 + [Implementeringshandbok för analyser](home.md)
-+ [Versionsinformation för analyser](https://experienceleague.adobe.com/sv/docs/analytics/release-notes/latest)
++ [Versionsinformation för analyser](https://experienceleague.adobe.com/en/docs/analytics/release-notes/latest)
 + [Versionsinformation för AppMeasurement](appmeasurement-updates.md)
 + Analysvariabler, funktioner och metoder {#vars}
    + [Översikt](vars/overview.md)
@@ -133,10 +133,10 @@ ht-degree: 7%
    + [Integrera modul](vars/integrate.md)
 + Besökaridentifiering {#id}
    + [Översikt](id/overview.md)
-   + [Använda AppMeasurement](id/appmeasurement.md)
-   + [Använda Analytics-tillägg](id/analytics-extension.md)
-   + [Använda Web SDK (gammal)](id/alloy.md)
    + [Använda Web SDK-tillägg](id/web-sdk-extension.md)
+   + [Använda Web SDK (gammal)](id/alloy.md)
+   + [Använda Analytics-tillägg](id/analytics-extension.md)
+   + [Använda AppMeasurement](id/appmeasurement.md)
    + [Migrerar till besökar-ID-tjänsten](id/migration.md)
    + [Spåra olika implementeringstyper](id/cross-type-implementation.md)
 + Förbered implementering av Adobe Analytics {#prepare}

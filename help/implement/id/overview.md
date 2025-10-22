@@ -1,9 +1,9 @@
 ---
 title: Besökaridentifiering i Adobe Analytics
 description: Lär dig identifiera besökare i Adobe Analytics med hjälp av de senaste metodtips.
-source-git-commit: 779ba5b0a1d71467aaaf3872fd707cc323ae8af2
+source-git-commit: 98e9dc4932bd23d3e0b632705945f56c243750c5
 workflow-type: tm+mt
-source-wordcount: '509'
+source-wordcount: '572'
 ht-degree: 0%
 
 ---
@@ -19,15 +19,17 @@ Besökaridentifieringen i Adobe Analytics består av följande komponenter:
 
 ## Adobe Analytics identifieringsordning för operationer
 
-När Adobe får en träff utförs följande kontroller i rätt ordning. Om det finns en viss egenskap använder Adobe den identifieraren för träffen. Om det finns flera identifierare i en träff används bara den första metoden.
+När Adobe får en träff utförs följande kontroller i rätt ordning. Om det finns en viss egenskap använder Adobe den identifieraren för träffen. Om det finns flera identifierare i en träff används bara den första metoden. Observera att ordningen inte återspeglar ordningen som Adobe rekommenderar att besökare identifieras i.
 
 | Order som används | Frågeparameter | Visas när |
 |---|---|---|
 | **1<sup>st</sup>** | `vid` | Variabeln [`visitorID`](/help/implement/vars/config-vars/visitorid.md) har angetts. |
-| **2<sup>nd</sup>** | `aid` | Besökaren har en befintlig [`s_vi`](https://experienceleague.adobe.com/sv/docs/core-services/interface/data-collection/cookies/analytics)-cookie. Ange implementeringar utan eller innan du implementerar Visitor ID-tjänsten. |
-| **3<sup>rd</sup>** | `mid` | Besökaren har en befintlig [`s_ecid`](https://experienceleague.adobe.com/sv/docs/core-services/interface/data-collection/cookies/analytics)-cookie. Ange implementeringar med hjälp av [Adobe Experience Cloud Identity-tjänsten](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=sv-SE). Adobe rekommenderar att du använder ID-tjänsten för alla implementeringar där det är möjligt. |
-| **4<sup>th</sup>** | `fid` | Besökaren har en befintlig [`s_fid`](https://experienceleague.adobe.com/sv/docs/core-services/interface/data-collection/cookies/analytics)-cookie, eller om `aid` och `mid` inte kunde anges av någon anledning. |
-| **5<sup>th</sup>** | IP-adress, användaragent, gateway-IP-adress | Används som en sista utväg för att identifiera en unik besökare om besökarens webbläsare inte accepterar cookies. |
+| **2<sup>nd</sup>** | `aid` | Besökaren har en befintlig [`s_vi`](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/cookies/analytics)-cookie. Ange implementeringar utan eller innan du implementerar Visitor ID-tjänsten. |
+| **3<sup>rd</sup>** | `mid` | Besökaren har en befintlig [`s_ecid`](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/cookies/analytics)-cookie. Ange implementeringar med hjälp av [Adobe Experience Cloud Identity-tjänsten](https://experienceleague.adobe.com/docs/id-service/using/home.html). Adobe rekommenderar att du använder ID-tjänsten för alla implementeringar där det är möjligt. |
+| **4<sup>th</sup>** | `fid` | Besökaren har en befintlig [`s_fid`](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/cookies/analytics)-cookie. AppMeasurement genererar automatiskt ett reserv-ID om `aid` och `mid` inte kan anges av någon anledning. |
+| **5<sup>th</sup>** | IP-adress + användaragent | Används som en sista utväg för att identifiera en unik besökare om besökarens webbläsare inte accepterar cookies. Ett hashas-besökar-ID genereras före [IP-förfalskning](/help/admin/tools/manage-rs/edit-settings/general/general-acct-settings-admin.md). Om IP-adressen inte är tillgänglig används annan IP-information (till exempel gateway-IP) i stället. |
+
+Det valda besökar-ID:t hashas och blir sedan deras identifierare på serversidan. Den här identifieraren på serversidan är tillgänglig som `visid_high` + `visid_low` i [Dataflöden](/help/export/analytics-data-feed/data-feed-overview.md).
 
 ## Beteende som påverkar antalet unika besökare
 
@@ -40,7 +42,7 @@ Unika besöksidentifierare lagras vanligtvis i en webbläsarcookie. En ny unik b
 * Besöker webbplatsen på olika enheter. En unik besökare räknas per enhet.
 * Besök webbplatsen efter mer än 13 månaders inaktivitet.
 
-Använd [Stitching](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/stitching/overview) i Customer Journey Analytics för att identifiera samma person i flera webbläsare eller på flera enheter.
+Använd [Stitching](https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/overview) i Customer Journey Analytics för att identifiera samma person i flera webbläsare eller på flera enheter.
 
 ## Beteende som inte påverkar antalet unika besökare
 
