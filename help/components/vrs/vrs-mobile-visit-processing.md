@@ -3,7 +3,7 @@ description: Sammanhangsberoende sessioner i virtuella rapportsviter förändrar
 title: Sammanhangsberoende sessioner
 feature: VRS
 exl-id: 5e969256-3389-434e-a989-ebfb126858ef
-source-git-commit: b9919c43b0232de1f8cb473d760bc013f4bc01f8
+source-git-commit: 50f04ed366bf973fac43a29d6291afb017eb1f85
 workflow-type: tm+mt
 source-wordcount: '1577'
 ht-degree: 0%
@@ -19,7 +19,7 @@ Ni kan definiera ett besök som ni vill utan att ändra underliggande data, så 
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Kontextmedvetna sessioner](https://video.tv.adobe.com/v/3428877?quality=12&learn=on&captions=swe){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Kontextmedvetna sessioner](https://video.tv.adobe.com/v/23545?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 
@@ -30,7 +30,7 @@ Med Adobe Analytics datainsamlingsprocess kan du ange en frågesträngsparameter
 
 ## Bearbetning av bakgrundsträff
 
-En bakgrundsträff är en typ av träff som skickas till Analytics från Adobe Mobile SDK version 4.13.6 och senare när appen gör en spårningsbegäran i bakgrundsläge. Typiska exempel på detta är:
+En bakgrundträff är en typ av träff som skickas till Analytics från Adobe Mobile SDK version 4.13.6 och senare när appen gör en spårningsbegäran i bakgrundsläge. Typiska exempel på detta är:
 
 * Data som skickas under en geofästning
 * En push-meddelandeinteraktion
@@ -101,7 +101,7 @@ Om *t1* och *t2* är större än den konfigurerade tidsgränsen för den virtuel
 
 ![](assets/nogoodexample3-2.jpg)
 
-Om *t1* är mindre än tidsgränsen och *t2* är mindre än tidsgränsen (som i föregående exempel) inkluderas även bakgrundsträffen vid det första besöket:
+Om *t1* är mindre än tidsgränsen och *t2* är större än tidsgränsen (som i våra tidigare exempel), skulle även bakgrundsträffen ingå i det första besöket:
 
 ![](assets/nogoodexample3-3.jpg)
 
