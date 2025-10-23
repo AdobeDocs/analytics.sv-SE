@@ -4,9 +4,9 @@ description: Översikt över hur du använder XDM-data från Experience Platform
 exl-id: 7d8de761-86e3-499a-932c-eb27edd5f1a3
 feature: Implementation Basics
 role: Admin, Developer, Leader
-source-git-commit: a6967c7d4e1dca5491f13beccaa797167b503d6e
+source-git-commit: 9845f1bc73b6cf5fd932c6896a50379ddd008c20
 workflow-type: tm+mt
-source-wordcount: '510'
+source-wordcount: '550'
 ht-degree: 0%
 
 ---
@@ -23,13 +23,13 @@ Data som skickas till Adobe Experience Platform Edge Network kan ha följande tr
 
 ## `xdm` objekt
 
-Följ scheman som du skapar baserat på [XDM](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/home) (Experience Data Model). XDM ger flexibilitet vad gäller vilka fält som definieras som en del av händelser. Om du vill använda ett fördefinierat schema som är specifikt för Adobe Analytics kan du lägga till [Adobe Analytics ExperienceEvent-schemafältgruppen](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/field-groups/event/analytics-full-extension) i ditt schema. När du har lagt till det kan du fylla i det här schemat med hjälp av objektet `xdm` i Web SDK och skicka data till en rapportserie. När data kommer till Edge Network översätts XDM-objektet till ett format som Adobe Analytics förstår.
+Följ scheman som du skapar baserat på [XDM](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home) (Experience Data Model). XDM ger flexibilitet vad gäller vilka fält som definieras som en del av händelser. Om du vill använda ett fördefinierat schema som är specifikt för Adobe Analytics kan du lägga till [Adobe Analytics ExperienceEvent-schemafältgruppen](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/event/analytics-full-extension) i ditt schema. När du har lagt till det kan du fylla i det här schemat med hjälp av objektet `xdm` i Web SDK och skicka data till en rapportserie. När data kommer till Edge Network översätts XDM-objektet till ett format som Adobe Analytics förstår.
 
 Mer information om en fullständig referens till XDM-fält och hur de mappas till Analytics-variabler finns i [Mappning av XDM-objektvariabeln till Adobe Analytics](xdm-var-mapping.md).
 
 >[!TIP]
 >
->Om du planerar att gå över till [Customer Journey Analytics](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-landing) i framtiden rekommenderar Adobe att du inte använder Adobe Analytics schemafältgrupp. I stället rekommenderar Adobe [att du skapar ett eget schema](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/compare-aa-cja/upgrade-to-cja/schema/cja-upgrade-schema-architect) och använder datastream-mappning för att fylla i de önskade Analytics-variablerna. Den här strategin låser inte in dig i ett schema med props och eVars när du är redo att gå över till Customer Journey Analytics.
+>Om du planerar att gå över till [Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-landing) i framtiden rekommenderar Adobe att du inte använder Adobe Analytics schemafältgrupp. I stället rekommenderar Adobe [att du skapar ett eget schema](https://experienceleague.adobe.com/en/docs/analytics-platform/using/compare-aa-cja/upgrade-to-cja/schema/cja-upgrade-schema-architect) och använder datastream-mappning för att fylla i de önskade Analytics-variablerna. Den här strategin låser inte in dig i ett schema med props och eVars när du är redo att gå över till Customer Journey Analytics.
 
 ## `data` objekt
 
@@ -78,3 +78,5 @@ a.x.objectarray.0.ad1 // 300x200
 a.x.objectarray.1.ad2 // 60x240
 a.x.objectarray.2.ad3 // 600x50
 ```
+
+Den maximala storleken för en given variabelnyttolast för kontextdata (inklusive nycklar och värden) är 32 kB. Du kan minska nyttolastens storlek genom att justera relevanta fält så att de känns igen av Adobe Analytics i [`xdm`](xdm-var-mapping.md) - eller [`data`](data-var-mapping.md) -objekten.

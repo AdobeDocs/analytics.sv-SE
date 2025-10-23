@@ -4,9 +4,9 @@ description: Med kontextdatavariabler kan du definiera anpassade variabler på v
 feature: Appmeasurement Implementation
 exl-id: f2c747a9-1a03-4f9f-8025-9f4745403a81
 role: Admin, Developer
-source-git-commit: a6967c7d4e1dca5491f13beccaa797167b503d6e
+source-git-commit: 9845f1bc73b6cf5fd932c6896a50379ddd008c20
 workflow-type: tm+mt
-source-wordcount: '570'
+source-wordcount: '588'
 ht-degree: 0%
 
 ---
@@ -16,6 +16,8 @@ ht-degree: 0%
 Med kontextdatavariabler kan du definiera anpassade variabler på varje sida som bearbetningsregler kan läsa. I stället för att explicit tilldela värden till Analytics-variabler i koden kan du skicka data i kontextdatavariabler. Bearbetningsregler tar sedan hänsyn till variabelvärden för kontextdata och skickar dem till respektive Analytics-variabler. Se [Bearbetar regler](/help/admin/tools/manage-rs/edit-settings/general/processing-rules/pr-overview.md) i användarhandboken för Admin.
 
 Kontextdatavariabler är användbara för utvecklingsteam som samlar in data i namngivna element i stället för i numrerade variabler. I stället för att begära utvecklarteam tilldelar du till exempel sidans författare till `eVar10`, kan du begära att de tilldelar den till `s.contextData["author"]` i stället. En Analysadministratör i organisationen kan sedan skapa bearbetningsregler för att mappa kontextdatavariabler till analysvariabler för rapportering. Utvecklingsteamen skulle i slutändan bara bekymra sig om kontextdatavariabler i stället för de många sidvariabler som Adobe erbjuder.
+
+Den maximala storleken för alla sammanhangsdatavariabler (inklusive nycklar och värden) är 32 kB.
 
 ## Sammanhangsdatavariabler med Web SDK
 
@@ -54,7 +56,7 @@ s.contextData["example_variable"] = "Example value";
 ```
 
 * Giltiga kontextdatavariabler innehåller endast alfanumeriska tecken, understreck och punkter. Adobe garanterar inte datainsamling i bearbetningsregler om du inkluderar andra tecken, t.ex. bindestreck.
-* Starta inte kontextdatavariabler med `"a."`. Prefixet är reserverat och används av Adobe. Använd till exempel inte `s.contextData["a.InstallEvent"]`.
+* Starta inte kontextdatavariabler med prefixet `"a."`. Prefixet är reserverat och används av Adobe. Använd till exempel inte `s.contextData["a.InstallEvent"]`.
 * Sammanhangsdatavariabler är inte skiftlägeskänsliga. Variablerna `s.contextData["example"]` och `s.contextData["EXAMPLE"]` är identiska.
 * En enskild nyckel får inte innehålla mer än ett värde. Om du vill använda kontextdatavariabler för flervärdesvariabler sammanfogar du alla värden med en avgränsare (vanligtvis ett komma) och skickar dem antingen till en [listprop](prop.md#list-props) eller en [listvariabel](list.md) med bearbetningsregler.
 
