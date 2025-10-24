@@ -18,7 +18,7 @@ Alla Analytics-plattformar har olika sätt att samla in, hantera och lagra data.
 
 Om din organisation är mån om att få historisk information överförd till Adobe kontaktar du ditt kontoteam för Adobe. En implementeringskonsult kan samarbeta med organisationen för att översätta en Google Analytics-dataexport till en datakälla som kan importeras av Adobes datainsamlingsservrar.
 
-För att kunna flytta över historiska data rekommenderar vi att du använder [Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview) som kan ta in valfri datakälla i flera kanaler.
+För att kunna flytta över historiska data rekommenderar vi att du använder [Customer Journey Analytics](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-overview/cja-overview) som kan ta in valfri datakälla i flera kanaler.
 
 **Jag är van vid en listruta för segmentering i många av mina rapporter. Hur återskapar jag det i [!UICONTROL Analysis Workspace]?**
 
