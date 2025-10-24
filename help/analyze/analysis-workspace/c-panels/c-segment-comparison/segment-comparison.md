@@ -5,7 +5,7 @@ keywords: Analysis Workspace;Segment IQ
 feature: Segmentation
 role: User, Admin
 exl-id: 1f5df6fb-1e9f-4b8f-885c-bf9e68d88c89
-source-git-commit: b4c1636bdc9d5be522b16f945a46beabf4f7a733
+source-git-commit: 3324d04af41b5de1e42c6ec3958e17fc0fadd0df
 workflow-type: tm+mt
 source-wordcount: '510'
 ht-degree: 0%
@@ -28,12 +28,12 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="workspace_segmentcomparison_panel"
 >title="Panelen Segmentjämförelse"
->abstract="Jämför snabbt två segment över alla datapunkter för att hitta relevanta skillnader automatiskt.<br/><br/>**Parametrar &#x200B;**<br/>**Lägg till ett segment**: Det första segment som du vill analysera.<br/>**Jämför med**: Det andra segmentet som du vill jämföra med, som automatiskt fylls i med *Alla andra* (inverterat för det första segmentet). Du kan ersätta *Alla andra* med ett annat segment om du vill.<br/>**Avancerade inställningar**: Möjligheten att utesluta komponenter från analysen i segmentjämförelsen."
+>abstract="Jämför snabbt två segment över alla datapunkter för att hitta relevanta skillnader automatiskt.<br/><br/>**Parametrar **<br/>**Lägg till ett segment**: Det första segment som du vill analysera.<br/>**Jämför med**: Det andra segmentet som du vill jämföra med, som automatiskt fylls i med *Alla andra* (inverterat för det första segmentet). Du kan ersätta *Alla andra* med ett annat segment om du vill.<br/>**Avancerade inställningar**: Möjligheten att utesluta komponenter från analysen i segmentjämförelsen."
 <!-- markdownlint-enable MD034 -->
 
 >[!BEGINSHADEBOX]
 
-_I den här artikeln beskrivs panelen Segmentjämförelse i_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**._<br/>_Det finns ingen motsvarande panel i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._
+_I den här artikeln beskrivs panelen Segmentjämförelse i_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._<br/>_Det finns ingen motsvarande panel i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._
 
 >[!ENDSHADEBOX]
 
@@ -50,9 +50,9 @@ Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Segmentjämförel
 
 ## Använd
 
-Så här använder du en **[!UICONTROL Attribution]**-panel:
+Så här använder du en **[!UICONTROL Segment comparison]**-panel:
 
-1. Skapa en **[!UICONTROL Attribution]**-panel. Mer information om hur du skapar en panel finns i [Skapa en panel](../panels.md#create-a-panel).
+1. Skapa en **[!UICONTROL Segment comparison]**-panel. Mer information om hur du skapar en panel finns i [Skapa en panel](../panels.md#create-a-panel).
 
 1. Ange [indata](#panel-input) för panelen.
 
