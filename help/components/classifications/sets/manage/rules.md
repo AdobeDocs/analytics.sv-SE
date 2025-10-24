@@ -15,7 +15,7 @@ ht-degree: 0%
 >[!IMPORTANT]
 >
 >Klassificeringsuppsättningar har ännu inte stöd för regler. Regelfunktioner läggs till i gränssnittet för klassificeringsuppsättningar innan funktionen för att skapa äldre regler blir otillgänglig.
->>Om du behöver regler för klassificeringar kan du fortsätta använda [funktionen för klassningsregelbyggaren](/help/components/classifications/crb/classification-rule-builder.md).
+>&#x200B;>Om du behöver regler för klassificeringar kan du fortsätta använda [funktionen för klassningsregelbyggaren](/help/components/classifications/crb/classification-rule-builder.md).
 
 
 <!--
