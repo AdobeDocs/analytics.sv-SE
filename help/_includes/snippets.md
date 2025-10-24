@@ -1,7 +1,7 @@
 ---
-source-git-commit: fcc165536d77284e002cb2ba6b7856be1fdb3e14
+source-git-commit: 399902152f4882e3953dbb67dd51fd12f46ef773
 workflow-type: tm+mt
-source-wordcount: '2945'
+source-wordcount: '2975'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 >[!IMPORTANT]
 >
 >Ett nytt och smidigt [Report Builder](/help/analyze/report-builder/rb-overview.md) släpptes 16 oktober 2024. Det stöds i Mac, Windows och webbläsare.
->&#x200B;>Denna äldre Report Builder-tilläggsversion fungerar fortfarande. Du kan [konvertera dina äldre arbetsböcker](/help/analyze/report-builder/convert-workbooks.md) till nya Report Builder.
+>>Denna äldre Report Builder-tilläggsversion fungerar fortfarande. Du kan [konvertera dina äldre arbetsböcker](/help/analyze/report-builder/convert-workbooks.md) till nya Report Builder.
 
 ## Rapporter och analyser - meddelande om att produkten har upphört att gälla {#ra-eol}
 
@@ -87,13 +87,14 @@ En attribueringsmodell avgör vilka dimensionsobjekt som får kredit för ett m�
 
 En attribueringsbehållare definierar det önskade omfånget för attribueringen. Möjliga alternativ är:
 
-* **Besök**: Kontrollerar konverteringar från besöksbehållarens omfattning.
+* **Besök**: Kontrollerar konverteringar från besöksbehållarens omfattning. När **[!UICONTROL Visit]** har valts ställs fönstret [Attribution Lookback ](#atribution-lookback-window) automatiskt in på **[!UICONTROL Reporting window]** och kan inte ändras.
 * **Besökare**: Kontrollerar konverteringar från besökarbehållarens omfång.
 
 ## Fönstret Tilldelningssökning {#attribution-lookback-window}
 
 Ett uppslagsfönster är den tid som en konvertering bör titta tillbaka för att inkludera beröringspunkter. Om ett dimensionsobjekt anges utanför uppslagsfönstret inkluderas inte värdet i någon attribueringsberäkning.
 
+* **[!UICONTROL Reporting window]**: Återställer till början av rapportfönstret från när konverteringen inträffade.
 * **14 dagar**: Kan synkroniseras upp till 14 dagar från när konverteringen gjordes.
 * **30 dagar**: Kan synkroniseras upp till 30 dagar från när konverteringen gjordes.
 * **60 dagar**: Kan synkroniseras upp till 60 dagar från när konverteringen gjordes.
@@ -149,7 +150,7 @@ Använd följande information för att välja den visualisering som bäst passar
 
 | Taggar | Beskrivning |
 |---|---|
-| ![Taggar](/help/assets/filter-tag.png){width="300"} | I avsnittet **[!UICONTROL Tags]** kan du filtrera efter taggar. <ul><li>Du kan ![söka efter &#x200B;](/help/assets/icons/Search.svg) *söktaggar* om du vill söka efter taggar som du kan använda för att filtrera.</li><li>Du kan markera flera taggar. Vilka märkord som är tillgängliga beror på vilka markeringar du har gjort i andra avsnitt på filterpanelen.</li><li>Siffrorna anger:<ul><li>**(1)**: Antalet markerade taggar (om en eller flera taggar har valts).</li><li>**2︎⃣**: Antalet tillgängliga taggar för objekten som är resultatet av det aktuella filtret.</li><li>7︎⃣: Antalet objekt som är associerade med den specifika taggen.</li></ul></li></ul> |
+| ![Taggar](/help/assets/filter-tag.png){width="300"} | I avsnittet **[!UICONTROL Tags]** kan du filtrera efter taggar. <ul><li>Du kan ![söka efter ](/help/assets/icons/Search.svg) *söktaggar* om du vill söka efter taggar som du kan använda för att filtrera.</li><li>Du kan markera flera taggar. Vilka märkord som är tillgängliga beror på vilka markeringar du har gjort i andra avsnitt på filterpanelen.</li><li>Siffrorna anger:<ul><li>**(1)**: Antalet markerade taggar (om en eller flera taggar har valts).</li><li>**2︎⃣**: Antalet tillgängliga taggar för objekten som är resultatet av det aktuella filtret.</li><li>7︎⃣: Antalet objekt som är associerade med den specifika taggen.</li></ul></li></ul> |
 
 
 ## Filteravsnitt för rapportsviten {#reportsuitefiltersection}
