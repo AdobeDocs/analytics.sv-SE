@@ -1,21 +1,22 @@
 ---
-description: Filformat som stöds av klassificeringsuppsättningar
+description: Förstå de olika filformat som klassificeringsgrupper stöder
 title: Filformat för klassificeringsuppsättning
 feature: Classifications
-source-git-commit: 2d9eb9179ace40a8d333883cea78dd67329078ab
+exl-id: f3d429be-99d5-449e-952e-56043b109411
+source-git-commit: 77599d015ba227be25b7ebff82ecd609fa45a756
 workflow-type: tm+mt
-source-wordcount: '1023'
+source-wordcount: '1038'
 ht-degree: 0%
 
 ---
 
 # Filformat för klassificeringsuppsättning
 
-Klassificeringsuppsättningar har stöd för flera filformat för massöverföring av klassificeringsdata. Varje format har specifika krav för slutförda dataöverföringar.
+Klassificeringsuppsättningar har stöd för flera filformat för överföring av klassificeringsdata. Varje format har specifika krav för slutförda dataöverföringar.
 
-När filen är korrekt formaterad enligt dessa specifikationer kan du överföra den via gränssnittet Klassificeringsuppsättningar eller API:t. Detaljerade överföringsanvisningar:
+När filen är korrekt formaterad enligt dessa specifikationer kan du överföra data via gränssnittet Klassificeringsuppsättningar eller API. Detaljerade överföringsanvisningar:
 
-* **Webbläsaröverföring**: Se [Schema](manage/schema.md)
+* **Webbläsaröverföring**: Se [Överför](manage/schema.md#upload) i gränssnittet [Schema](manage/schema.md) för en klassificeringsgrupp.
 * **API-överföring**: Se [API för analysklassificeringar](https://developer.adobe.com/analytics-apis/docs/2.0/guides/endpoints/classifications/)
 
 Klassificeringsuppsättningar har stöd för följande filformat:
@@ -32,7 +33,7 @@ Alla filformat måste uppfylla följande krav:
 * **Teckengränser**: Enskilda klassificeringsvärden har en maxgräns på 255 byte.
 * **Nyckelkrav**: Nyckelvärden får inte vara tomma eller bara innehålla blanksteg. Om det finns dubblettnycklar används den sista förekomsten.
 
-+++**JSON-formatinformation**
++++ JSON-formatinformation
 
 JSON-filformatet följer konventioner för JSON-rader (JSONL). Filen måste innehålla ett JSON-objekt per rad, där varje objekt representerar en enda klassificeringspost.
 
@@ -76,7 +77,7 @@ Alla JSON-fältnamn (`key`, `data`, `action`, `enc`) är skiftlägeskänsliga oc
 {"key": "product789", "action": "delete-field", "data": {"Brand": null, "Category": null}}
 ```
 
-**Ta bort hela nyckeln:**
+**Ta bort en hel nyckel:**
 
 ```json
 {"key": "product999", "action": "delete-key"}
@@ -92,7 +93,7 @@ Alla JSON-fältnamn (`key`, `data`, `action`, `enc`) är skiftlägeskänsliga oc
 
 +++
 
-+++**CSV-formatinformation**
++++ Information om CSV-format
 
 CSV-filer (kommaseparerade värden) avgränsar klassificeringsdatafält med kommatecken.
 
@@ -114,7 +115,7 @@ product456,"Running Shoes",Brand B,Sports,79.99
 product789,"Winter Jacket",Brand C,Clothing,149.99
 ```
 
-**Ta bort hela nyckeln:**
+**Ta bort en hel nyckel:**
 
 ```csv
 Key,Product Name,Brand,Category,Price
@@ -131,31 +132,32 @@ product456,,~empty~,~empty~,79.99
 
 ### CSV-formateringsregler
 
-* Fält som innehåller kommatecken måste omslutas av citattecken
-* Fält som innehåller dubbla citattecken måste escape-citattecken genom att dubblera dem (`""`)
-* Tomma fält representerar null-värden för den klassificeringen
-* Radavstånd och avslutande blanksteg runt fält trimmas automatiskt
-* Specialtecken (tabbar, nya rader) i citattecken bevaras
+* Fält som innehåller kommatecken måste omslutas av citattecken.
+* Fält som innehåller dubbla citattecken måste undvika citattecken genom att dubblera dem (`""`).
+* Tomma fält representerar null-värden för den klassificeringen.
+* Radavstånd och avslutande blanksteg runt fält trimmas automatiskt.
+* Specialtecken (tabbar, nya rader) i citattecken bevaras.
 
 **Ta bort åtgärder:**
+
 * Använd `~deletekey~` i alla fält för att ta bort hela nyckeln och alla dess klassificeringsdata
 * Använd `~empty~` i specifika fält om du bara vill ta bort dessa klassificeringsvärden (övriga fält förblir oförändrade)
 * När du använder `~empty~` kan du blanda borttagningar med uppdateringar i samma fil
 
 +++
 
-+++**Information om TSV-/TAB-format**
++++ Formatinformation för TSV och TAB
 
 I TSV- (Tab-Separated Values) och TABB-filer används tabbtecken för att skilja klassificeringsdatafält åt.
 
-### Struktur för TSV/TAB
+### Strukturen för TSV och TAB
 
-* **Rubrikrad**: Den första raden måste innehålla kolumnrubriker och den första kolumnen måste vara nyckelkolumn. Efterföljande kolumner ska matcha namn i ditt klassificeringsschema
-* **Datarader**: Varje efterföljande rad innehåller klassificeringsdata
-* **Avgränsare**: Fält avgränsas med tabbtecken (`\t`)
-* **Citat**: I allmänhet behövs ingen offert, men vissa implementeringar stöder citattecken
+* **Rubrikrad**: Den första raden måste innehålla kolumnrubriker och den första kolumnen måste vara nyckelkolumn. Efterföljande kolumner ska matcha namn i ditt klassificeringsschema.
+* **Datarader**: Varje efterföljande rad innehåller klassificeringsdata.
+* **Avgränsare**: Fält avgränsas med tabbtecken (`\t`).
+* **Citat**: I allmänhet behövs ingen offert, men vissa implementeringar stöder citattecken.
 
-### Exempel på TSV/TAB
+### Exempel på TSV och TAB
 
 **Grundläggande klassificeringsdata:**
 
@@ -166,7 +168,7 @@ product456    Running Shoes    Brand B    Sports    79.99
 product789    Winter Jacket    Brand C    Clothing    149.99
 ```
 
-**Ta bort hela nyckeln:**
+**Ta bort en hel nyckel:**
 
 ```tsv
 Key    Product Name    Brand    Category    Price
@@ -183,16 +185,17 @@ product456        ~empty~    ~empty~    79.99
 
 ### Formateringsregler för TSV/TAB
 
-* Fält avgränsas med enkla tabbtecken
-* Tomma fält (sammanhängande flikar) representerar null-värden
-* Normalt krävs ingen specialoffert
-* Radavstånd och avslutande blanksteg bevaras
-* Radmatningstecken i fält bör undvikas
+* Fält avgränsas med enkla tabbtecken.
+* Tomma fält (på varandra följande flikar) representerar null-värden.
+* Normalt behövs ingen specialoffert.
+* Radavstånd och avslutande blanksteg bevaras.
+* Tidslinjetecken i fält bör undvikas.
 
 **Ta bort åtgärder:**
-* Använd `~deletekey~` i alla fält för att ta bort hela nyckeln och alla dess klassificeringsdata
-* Använd `~empty~` i specifika fält om du bara vill ta bort dessa klassificeringsvärden (övriga fält förblir oförändrade)
-* När du använder `~empty~` kan du blanda borttagningar med uppdateringar i samma fil
+
+* Använd `~deletekey~` i vilket fält som helst för att ta bort hela nyckeln och alla dess klassificeringsdata.
+* Använd `~empty~` i specifika fält om du bara vill ta bort dessa klassificeringsvärden (lämnar andra fält intakta).
+* När du använder `~empty~` kan du blanda borttagningar med uppdateringar i samma fil.
 
 +++
 
@@ -202,31 +205,31 @@ Vanliga problem och lösningar vid överföring:
 
 ### Allmänna filformatsfel
 
-* **Ogiltigt filformat**: Kontrollera att filtillägget matchar innehållsformatet (.json, .csv, .tsv eller .tab).
-* **&quot;Okänt huvud&quot;**: Kolumnnamn måste matcha klassificeringsmängdens schema (gäller för alla format).
+* **Ogiltigt filformat**: Verifiera att filtillägget matchar innehållsformatet (`.json`, `.csv`, `.tsv` eller `.tab`).
+* **Okänt huvud**: Kolumnnamn måste matcha ditt klassificeringsmängdsschema (gäller för alla format).
 
-### CSV/TSV-specifika fel
+### CSV- och TSV-specifika fel
 
-* **&quot;Första kolumnen måste vara nyckeln&quot;**: Kontrollera att CSV/TSV-filen har en korrekt rubrikrad med nyckelkolumnen först.
-* **&quot;Minst två rubrikobjekt krävs&quot;**: CSV-/TSV-filer måste ha minst en nyckelkolumn och en klassificeringskolumn.
-* **&quot;Den första huvudkolumnen måste heta Key&quot;**: Den första kolumnrubriken måste vara exakt Key (versalt K, skiftlägeskänsligt).
-* **&quot;Tomma rubriker tillåts inte&quot;**: Alla CSV-/TSV-kolumnrubriker måste ha namn.
-* **&quot;Antalet kolumner matchade inte rubrikerna&quot;**: Varje CSV/TSV-datarad måste ha samma antal fält som rubrikraden.
-* **&quot;Felaktigt dokument&quot;**: Kontrollera CSV-citering, rätt tabbseparation i TSV-filer osv.
+* **Den första kolumnen måste vara nyckeln**: Kontrollera att CSV- eller TSV-filen har en korrekt rubrikrad med nyckelkolumnen först.
+* **Minst två rubrikobjekt krävs**: CSV- eller TSV-filer måste ha minst en `Key`-kolumn och en klassificeringskolumn.
+* **Den första rubrikkolumnen måste heta Key**: Den första kolumnrubriken måste vara exakt `Key` (versalt `K`, skiftlägeskänsligt).
+* **Tomma rubriker tillåts inte**: Alla CSV-/TSV-kolumnrubriker måste ha namn.
+* **Antalet kolumner matchade inte rubrikerna**: Varje CSV- eller TSV-datarad måste ha samma antal fält som rubrikraden.
+* **&quot;Felformaterat dokument**: Kontrollera CSV-citat, rätt tabbseparation i TSV-filer med mera.
 
 ### JSON-specifika fel
 
-* **&quot;Key is a required field&quot;**: All JSON records must have a non-empty `"key"` field (lowercase, case-sensitive).
-* **&quot;Data är ett obligatoriskt fält när action=update används&quot;**: JSON-uppdateringsåtgärder måste innehålla ett `"data"`-fält.
-* **&quot;Data är ett obligatoriskt fält när åtgärd=delete-field&quot;** används: JSON delete-field-åtgärder måste ange vilka fält som ska tas bort i fältet `"data"`.
-* **&quot;Data får inte finnas när action=delete-key&quot;** används: JSON delete-key-åtgärder kan inte innehålla ett `"data"`-fält.
-* **&quot;Kodning som inte stöds&quot;**: Använd bara kodningsvärden som stöds i fältet `"enc"` (utf8, UTF8, latin1, LATIN1).
+* **Nyckeln är ett obligatoriskt fält**: Alla JSON-poster måste ha ett `"key"`-fält som inte är tomt (skiftlägeskänsligt).
+* **Data är ett obligatoriskt fält när åtgärd=uppdatering** används: JSON-uppdateringsåtgärder måste innehålla ett `"data"`-fält.
+* **Data är ett obligatoriskt fält när åtgärd=delete-field** används: JSON delete-field-åtgärder måste ange vilka fält som ska tas bort i fältet `"data"`.
+* **Data får inte finnas när action=delete-key** används: JSON delete-key-åtgärder kan inte innehålla ett `"data"`-fält.
+* **Kodning som inte stöds**: Använd bara kodningsvärden som stöds i fältet `"enc"` (`utf8`, `UTF8`, `latin1`, `LATIN1`).
 * **Ogiltig JSON-syntax**: Kontrollera att JSON-filen är korrekt formaterad enligt JSONL-konventioner. Kontrollera också om det finns allmän JSON-formatering, saknade citattecken, kommatecken, hakparenteser osv.
 
 ### Storleksbegränsningsfel
 
-* **&quot;Nyckeln överskrider maxstorleken&quot;**: Enskilda nycklar får inte överskrida 255 byte.
-* **&quot;Kolumnvärdet överskrider maxstorleken&quot;**: Enskilda klassificeringsvärden får inte överskrida 255 byte.
+* **Nyckeln överskrider maxstorleken**: Enskilda nycklar får inte överskrida 255 byte.
+* **Kolumnvärdet överskrider maxstorleken**: Enskilda klassificeringsvärden får inte överskrida 255 byte.
 
 ## Bästa praxis
 

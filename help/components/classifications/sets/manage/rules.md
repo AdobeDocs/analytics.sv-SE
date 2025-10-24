@@ -1,51 +1,60 @@
 ---
 title: Klassificeringsuppsättningsregler
-description: Visa och redigera regler för en enskild klassificeringsgrupp.
+description: Lär dig hur du visar och redigerar regler för en klassificeringsuppsättning.
 exl-id: 1ccb6a20-1993-4fd3-90eb-9154d12d0ec7
 feature: Classifications
-source-git-commit: de12253f6db798f49d0cae34bf9cb6b7a3de17db
+source-git-commit: 77599d015ba227be25b7ebff82ecd609fa45a756
 workflow-type: tm+mt
-source-wordcount: '428'
+source-wordcount: '56'
 ht-degree: 0%
 
 ---
 
 # Klassificeringsuppsättningsregler
 
-Klassificeringsuppsättningsregler gör att du automatiskt kan klassificera värden baserat på värdet som variabeln är inställd på. Dessa regler gäller för alla inkommande variabelvärden för alla prenumerationer av klassificeringsuppsättningen.
+>[!IMPORTANT]
+>
+>Klassificeringsuppsättningar har ännu inte stöd för regler. Regelfunktioner läggs till i gränssnittet för klassificeringsuppsättningar innan funktionen för att skapa äldre regler blir otillgänglig.
+>>Om du behöver regler för klassificeringar kan du fortsätta använda [funktionen för klassningsregelbyggaren](/help/components/classifications/crb/classification-rule-builder.md).
 
-**[!UICONTROL Components]** > **[!UICONTROL Classification sets]** > **[!UICONTROL Sets]** > Klicka på önskat namn på klassificeringsmängden > **[!UICONTROL Rules]**
 
-![regler för klassificeringsuppsättning, användargränssnitt](../../assets/csets-rules.png)
+<!--
+Classification set rules allow you to automatically classify values based on the value that the variable is set to. These rules apply to all incoming variable values for all subscriptions of the classification set.
 
-## Regelinställningar
+**[!UICONTROL Components]** > **[!UICONTROL Classification sets]** > **[!UICONTROL Sets]** > Click the desired classification set name > **[!UICONTROL Rules]**
 
-Inställningar som gäller för hela uppsättningen regler.
+![classification set rules UI](../../assets/csets-rules.png)
 
-* **[!UICONTROL Rules overwrite]**: Anger beteendet för alla regler i fall där det finns ett klassificeringsvärde.
-   * **[!UICONTROL Apply to all values]**: Om en regel matchar skriver du alltid över klassificeringsvärdet.
-   * **[!UICONTROL Apply only to unset values]**: Om en regel matchar skriver du bara klassificeringsvärdet om det är tomt. Om det finns ett klassificeringsvärde gör du ingenting.
-* **[!UICONTROL Lookback window]**: När den här regeln aktiveras körs alla regler mot alla unika värden som visas i det uppslagsfönster som anges här.
+## Rule settings
 
-## Regler
+Settings that apply to the entire set of rules.
 
-En lista med regler som körs för varje unikt värde.
+* **[!UICONTROL Rules overwrite]**: Determines the behavior of all rules in cases where a classification value exists.
+  * **[!UICONTROL Apply to all values]**: If a rule matches, always overwrite the classification value.
+  * **[!UICONTROL Apply only to unset values]**: If a rule matches, only write the classification value if it is blank. If a classification value exists, do nothing.
+* **[!UICONTROL Lookback window]**: When this rule is activated, all rules run against all unique values seen within the lookback window set here.
 
-* **[!UICONTROL Search]**: En sökruta där du kan filtrera regler efter matchningskriterier.
-* **[!UICONTROL Add rule]**: Lägger till en tom rad i regeltabellen.
-* **[!UICONTROL Test rule set]**: Öppnar ett testgränssnitt där du kan validera dina regler. Till vänster kan du skriva nyckelvärden manuellt eller dra och släppa en klassificeringsfil för att importera många värden att testa mot. Till höger finns en tabell som visar preliminära resultat av vilka klassificerade värden som skulle se ut om regeluppsättningen aktiverades. Eftersom det här gränssnittet bara är till för validering klassificeras inga värden.
+## Rules
 
-Markera en eller flera regler genom att klicka i kryssrutan bredvid önskad regel. Om du väljer en regel visas följande alternativ:
+A list of rules that run for each unique value.
 
-* **[!UICONTROL Delete]**: Tar bort raden från regeltabellen.
-* **[!UICONTROL Duplicate]**: Kopierar de markerade raderna till nya rader i regeltabellen.
+* **[!UICONTROL Search]**: A search box that allows you to filter rules by match criteria.
+* **[!UICONTROL Add rule]**: Adds a blank row to the rule table.
+* **[!UICONTROL Test rule set]**: Brings up a test UI that allows you to validate your rules. On the left, you can manually type key values, or you can drag and drop a classification file to import many values to test against. On the right is a table that shows preliminary results of what classified values would look like if the rule set was activated. Since this interface is only for validation, no values are classified.
 
-## Regelregister
+Select one or more rules by clicking the checkbox next to the desired rule. Selecting a rule reveals the following options:
 
-Regeltabellen är lodrätt uppdelad i två huvuddelar: matchande villkor och klassificeringsåtgärd. Varje rad (en enskild regel) innehåller ett matchande villkor och en klassificeringsåtgärd.
+* **[!UICONTROL Delete]**: Deletes the row from the rule table.
+* **[!UICONTROL Duplicate]**: Copies the selected rows to new rows in the rule table.
 
-* **Regelnummer**: Reglerna körs i samma ordning som du konfigurerar regeltabellen. Om [!UICONTROL Rules overwrite] är inställt på [!UICONTROL Apply to all values] skriver den senaste matchande regeln över alla tidigare regler för samma klassificeringsdimension. Om [!UICONTROL Rules overwrite] är inställt på [!UICONTROL Apply to only unset values] gäller den första regeln som anger ett klassificeringsvärde.
-* **[!UICONTROL Select rule type]**: Regelvillkoren. Alternativen är [!UICONTROL Contains], [!UICONTROL Ends with], [!UICONTROL Regular expression], [!UICONTROL Regular expression] och [!UICONTROL Starts with].
-* **[!UICONTROL Enter match criteria]**: Textsträngen som ska matchas. Om du väljer [!UICONTROL Regular expression] som regeltyp visas en övertäckning där du kan ange värdet, testa det reguljära uttrycket och ange exempelsyntax.
-* **[!UICONTROL Set classification]**: En listruta som anger den klassificeringsdimension som du vill tilldela ett värde till. Giltiga alternativ innehåller element i ditt [schema](schema.md).
-* **[!UICONTROL To]**: Textsträngen som det klassificerade värdet ska anges till. Om regeltypen är [!UICONTROL Regular expression] kan du inkludera en kombination av text och matchningsgrupper.
+## Rule table
+
+The rule table is separated vertically into two main parts: matching condition and classification action. Each row (an individual rule) contains a matching condition and a classification action.
+
+* **Rule number**: Rules run in the same order that you configure the rule table. If [!UICONTROL Rules overwrite] is set to [!UICONTROL Apply to all values], the last matching rule overwrites any previous rules for the same classification dimension. If [!UICONTROL Rules overwrite] is set to [!UICONTROL Apply to only unset values], the first rule that sets a classification value applies.
+* **[!UICONTROL Select rule type]**: The rule criteria. Options include [!UICONTROL Contains], [!UICONTROL Ends with], [!UICONTROL Regular expression], [!UICONTROL Regular expression], and [!UICONTROL Starts with].
+* **[!UICONTROL Enter match criteria]**: The text string to match. If you select [!UICONTROL Regular expression] as the rule type, an overlay appears that lets you enter the value, test the regular expression, and provides sample syntax.
+* **[!UICONTROL Set classification]**: A drop-down list that sets the classification dimension that you want to assign a value to. Valid options include elements in your [schema](schema.md).
+* **[!UICONTROL To]**: The text string to set the classified value to. If the rule type is [!UICONTROL Regular expression], you can include a combination of text and match groups.
+
+-->
