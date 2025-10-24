@@ -1,5 +1,5 @@
 ---
-source-git-commit: 399902152f4882e3953dbb67dd51fd12f46ef773
+source-git-commit: d6e51ae2668bc25edea76640cdd97abef184fa3e
 workflow-type: tm+mt
 source-wordcount: '2975'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 >[!IMPORTANT]
 >
 >Ett nytt och smidigt [Report Builder](/help/analyze/report-builder/rb-overview.md) släpptes 16 oktober 2024. Det stöds i Mac, Windows och webbläsare.
->&#x200B;>Denna äldre Report Builder-tilläggsversion fungerar fortfarande. Du kan [konvertera dina äldre arbetsböcker](/help/analyze/report-builder/convert-workbooks.md) till nya Report Builder.
+>>Denna äldre Report Builder-tilläggsversion fungerar fortfarande. Du kan [konvertera dina äldre arbetsböcker](/help/analyze/report-builder/convert-workbooks.md) till nya Report Builder.
 
 ## Rapporter och analyser - meddelande om att produkten har upphört att gälla {#ra-eol}
 
@@ -87,7 +87,7 @@ En attribueringsmodell avgör vilka dimensionsobjekt som får kredit för ett m�
 
 En attribueringsbehållare definierar det önskade omfånget för attribueringen. Möjliga alternativ är:
 
-* **Besök**: Kontrollerar konverteringar från besöksbehållarens omfattning. När **[!UICONTROL Visit]** har valts ställs fönstret [Attribution Lookback &#x200B;](#atribution-lookback-window) automatiskt in på **[!UICONTROL Reporting window]** och kan inte ändras.
+* **Besök**: Kontrollerar konverteringar från besöksbehållarens omfattning. När **[!UICONTROL Visit]** har valts ställs fönstret [Attribution Lookback ](#atribution-lookback-window) automatiskt in på **[!UICONTROL Reporting window]** och kan inte ändras.
 * **Besökare**: Kontrollerar konverteringar från besökarbehållarens omfång.
 
 ## Fönstret Tilldelningssökning {#attribution-lookback-window}
@@ -113,9 +113,9 @@ Beroende på din attribueringsmodell får behållare och kanaler olika krediter.
 
 | Modell | Behållare | Fönstret Lookback | Förklaring |
 |---|---|---|---|
-| Första beröringen | Besök | 30 dagar | Attribution tittar bara på det tredje besöket. Mellan e-post och visning var e-post först, så e-post får 100 % rabatt på 50 USD. |
+| Första beröringen | Besök | Rapportfönster | Attribution tittar bara på det tredje besöket. Mellan e-post och visning var e-post först, så e-post får 100 % rabatt på 50 USD. |
 | Första beröringen | Besökare | 30 dagar | Attribution tittar på alla tre besök. Betalsökning var först, så den får 100 % rabatt på 50 USD. |
-| Linjär | Besök | 30 dagar | Krediten delas mellan e-post och disposition. Båda dessa kanaler får 25 krediter. |
+| Linjär | Besök | Rapportfönster | Krediten delas mellan e-post och disposition. Båda dessa kanaler får 25 krediter. |
 | Linjär | Besökare | 30 dagar | Krediten delas mellan betalsökningar, sociala medier, e-post och displayannonser. Varje kanal får 12,50 dollar i rabatt för detta inköp. |
 | J-formad | Besökare | 30 dagar | Krediten delas mellan betalsökningar, sociala medier, e-post och displayannonser.<ul><li>60 % kredit ges för 30 dollar.</li><li>20 % kredit ges till betald sökning för 10 dollar.</li><li>De återstående 20 % är uppdelade i sociala medier och e-post, vilket ger 5 USD till var och en.</li></ul> |
 | Tidsminskning | Besökare | 30 dagar | <ul><li>Mellanrum på noll dagar mellan visning och konvertering. `2^(-0/7) = 1`</li><li>Mellanrum på noll dagar mellan e-postens kontaktpunkt och konvertering. `2^(-0/7) = 1`</li><li>Ett mellanrum på sex dagar mellan social kontaktyta och konvertering. `2^(-6/7) = 0.552`</li><li>Mellanrum på nio dagar mellan betald sökningspunkt och konvertering. `2^(-9/7) = 0.41`</li>Normalisering av dessa värden ger följande resultat:<ul><li>Bildskärm: 33,8 %, får 16,88 USD</li><li>E-post: 33,8 % får 16,88 USD</li><li>Socialt: 18,6 %, får 9,32 USD</li><li>Betalsökning: 13,8 %, får 6,92 USD</li></ul></li></ul> |
@@ -150,7 +150,7 @@ Använd följande information för att välja den visualisering som bäst passar
 
 | Taggar | Beskrivning |
 |---|---|
-| ![Taggar](/help/assets/filter-tag.png){width="300"} | I avsnittet **[!UICONTROL Tags]** kan du filtrera efter taggar. <ul><li>Du kan ![söka efter &#x200B;](/help/assets/icons/Search.svg) *söktaggar* om du vill söka efter taggar som du kan använda för att filtrera.</li><li>Du kan markera flera taggar. Vilka märkord som är tillgängliga beror på vilka markeringar du har gjort i andra avsnitt på filterpanelen.</li><li>Siffrorna anger:<ul><li>**(1)**: Antalet markerade taggar (om en eller flera taggar har valts).</li><li>**2︎⃣**: Antalet tillgängliga taggar för objekten som är resultatet av det aktuella filtret.</li><li>7︎⃣: Antalet objekt som är associerade med den specifika taggen.</li></ul></li></ul> |
+| ![Taggar](/help/assets/filter-tag.png){width="300"} | I avsnittet **[!UICONTROL Tags]** kan du filtrera efter taggar. <ul><li>Du kan ![söka efter ](/help/assets/icons/Search.svg) *söktaggar* om du vill söka efter taggar som du kan använda för att filtrera.</li><li>Du kan markera flera taggar. Vilka märkord som är tillgängliga beror på vilka markeringar du har gjort i andra avsnitt på filterpanelen.</li><li>Siffrorna anger:<ul><li>**(1)**: Antalet markerade taggar (om en eller flera taggar har valts).</li><li>**2︎⃣**: Antalet tillgängliga taggar för objekten som är resultatet av det aktuella filtret.</li><li>7︎⃣: Antalet objekt som är associerade med den specifika taggen.</li></ul></li></ul> |
 
 
 ## Filteravsnitt för rapportsviten {#reportsuitefiltersection}
