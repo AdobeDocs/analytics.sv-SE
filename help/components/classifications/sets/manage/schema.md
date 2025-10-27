@@ -3,9 +3,9 @@ title: Schema för klassificeringsuppsättning
 description: Lär dig hur du visar och redigerar schemat för en enskild klassificeringsuppsättning.
 exl-id: 4a7c5bfe-ff2b-4380-af46-435801d73c1e
 feature: Classifications
-source-git-commit: 2ced7cd61c4119347be2ef0fba9b8d60ee6c4df2
+source-git-commit: ec49a5fd5771e4ca0a35ead681b556336bbc7031
 workflow-type: tm+mt
-source-wordcount: '1224'
+source-wordcount: '1241'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Så här redigerar du schemat för en klassificeringsuppsättning:
 1. Välj **[!UICONTROL Components]** i Adobe Analytics övre menyrad och välj sedan **[!UICONTROL Classification sets]**.
 1. I **[!UICONTROL Classification Sets]** väljer du fliken **[!UICONTROL Classification Sets]**.
 1. I hanteraren för **[!UICONTROL Classifications Sets]** väljer du den klassificeringsgrupp som du vill redigera schemat för.
-1. Välj fliken **[!UICONTROL Classification Set: _i dialogrutan_]** klassificeringsuppsättning **[!UICONTROL Schema]**. Fliken består av följande gränssnittselement:
+1. Välj fliken **[!UICONTROL Classification Set: _i dialogrutan_]** klassificeringsuppsättningsnamn **[!UICONTROL Schema]**. Fliken består av följande gränssnittselement:
 
    ![Klassificeringsuppsättningar - schema](assets/classification-sets-schema.png)
 
@@ -36,7 +36,7 @@ Listan med klassificeringar har följande kolumner:
 | Kolumn | Beskrivning |
 |---|---|
 | **[!UICONTROL Classification Name]** | Namnet som du angav för klassificeringen. |
-| **[!UICONTROL Identity Name]** | Det härledda namnet av systemet för klassificeringen. |
+| **[!UICONTROL Identity Name]** | Det härledda namnet av systemet för klassificeringen. Detta är ett skrivskyddat värde och du kan använda identitetsnamnet |
 | **[!UICONTROL Classified By]** | Om det används, en länk till den uppslagsklassificeringsuppsättning som används för att klassificera den här klassificeringen. |
 
 
@@ -54,7 +54,7 @@ Följande åtgärder är tillgängliga som knappar högst upp i klassificeringsl
 | ![UploadToCloud](/help/assets/icons/UploadToCloud.svg) | **[!UICONTROL Upload]** | [Överför en JSON-, CSV-, TSV- eller TAB-fil](#upload). |
 | ![Hämta](/help/assets/icons/Download.svg) | **[!UICONTROL Download]** | [Hämta klassificeringsdata](#download). |
 | ![Dokumentfragment](/help/assets/icons/DocumentFragment.svg) | **[!UICONTROL Template]** | [Hämta en mall](#template) för klassificeringsdata. |
-| ![Historik](/help/assets/icons/History.svg) | **[!UICONTROL Job History]** | Visa jobbhanteraren [&#x200B; för klassificeringsuppsättningen, filtrerad för den valda klassificeringsuppsättningen.](/help/components/classifications/sets/job-manager.md) |
+| ![Historik](/help/assets/icons/History.svg) | **[!UICONTROL Job History]** | Visa jobbhanteraren [ för klassificeringsuppsättningen, filtrerad för den valda klassificeringsuppsättningen.](/help/components/classifications/sets/job-manager.md) |
 | ![Kugghjul](/help/assets/icons/Gear.svg) | **[!UICONTROL Automate]** | [Automatisera inmatningen av klassificeringsdata](#automate) med hjälp av en molnplats. |
 
 
@@ -64,7 +64,7 @@ Om du vill lägga till en ny klassificering väljer du ![Lägg till](/help/asset
 
 ![Klassificeringsuppsättningar - Lägg till klassificering i schema](assets/classification-sets-schema-add-classification.png)
 
-I dialogrutan **[!UICONTROL Add a new classification for _klassificeringsuppsättning_]** anger du **[!UICONTROL Classification Name]** och väljer **[!UICONTROL Add]**. Klassificeringen läggs till i listan.
+Ange **[!UICONTROL Add a new classification for _och välj_]** i dialogrutan **[!UICONTROL Classification Name]** klassificeringsuppsättningsnamn **[!UICONTROL Add]**. Klassificeringen läggs till i listan.
 
 
 
@@ -104,7 +104,7 @@ Om du vill hämta klassificeringsdata väljer du ![Hämta](/help/assets/icons/Do
 
 ![Klassificeringsuppsättningar - Schema hämtar klassificeringsdata](assets/classification-sets-schema-download-file.png)
 
-I dialogrutan **[!UICONTROL Download data for _klassificeringsuppsättning_]**:
+I dialogrutan **[!UICONTROL Download data for _klassificeringsuppsättningsnamn_]**:
 
 1. Ange antalet **[!UICONTROL Rows]** som du vill hämta. Till exempel: `10000`.
 1. Ange start- och slutdata för **[!UICONTROL Download Rows Received Between]** om du vill välja den period som du vill hämta rader med klassificeringsdata för. Du kan också använda ![Kalender](/help/assets/icons/Calendar.svg) om du vill använda en kalender-popup för att markera perioden.
@@ -134,7 +134,7 @@ Om du vill hämta en mall för klassificeringsdata väljer du ![DocumentFragment
 
 ![Schema för klassificeringsuppsättningar - Hämta mall](assets/classification-sets-schema-download-template.png)
 
-I dialogrutan **[!UICONTROL Download template for _klassificeringsuppsättning_]**:
+I dialogrutan **[!UICONTROL Download template for _klassificeringsuppsättningsnamn_]**:
 
 1. Om du vill välja [filformat](/help/components/classifications/sets/data-files.md#general-file-requirements) för de hämtade klassificeringsdata väljer du ett alternativ i listrutan **[!UICONTROL File Format]** . Alternativ:
 
@@ -155,9 +155,9 @@ Om du vill automatisera intaget av klassificering väljer du ![Kugghjul](/help/a
 
 ![Schema för klassificeringsuppsättningar - Automatisera](assets/classification-sets-schema-automate.png)
 
-I dialogrutan **[!UICONTROL Associate / Update Ingest Location for _klassificeringsuppsättning_]**:
+I dialogrutan **[!UICONTROL Associate / Update Ingest Location for _klassificeringsuppsättningsnamn_]**:
 
-1. Välj en molnplats genom att välja ett alternativ från **[!UICONTROL Location Account]**. Endast [platskonton för kontotyper som stöds som tillåter import av klassificeringsdata](https://experienceleague.adobe.com/sv/docs/analytics/components/locations/configure-import-accounts) visas. Välj **[!UICONTROL New account]** om du vill skapa ett nytt konto.
+1. Välj en molnplats genom att välja ett alternativ från **[!UICONTROL Location Account]**. Endast [platskonton för kontotyper som stöds som tillåter import av klassificeringsdata](https://experienceleague.adobe.com/en/docs/analytics/components/locations/configure-import-accounts) visas. Välj **[!UICONTROL New account]** om du vill skapa ett nytt konto.
 1. Välj en plats genom att välja ett alternativ från **[!UICONTROL Location]**. Endast platserna för valda kontotyper för import av klassificeringsdata visas. Välj **[!UICONTROL New location]** om du vill skapa en ny plats.
 
    >[!IMPORTANT]
@@ -179,7 +179,7 @@ I dialogrutan **[!UICONTROL Associate / Update Ingest Location for _klassificeri
 
 1. Om du vill meddela användare om slutförandet av importen anger du e-postadresser, avgränsade med kommatecken, för **[!UICONTROL Email(s) to notify when ingest jobs completes (comma separated)]**.
 1. Välj **[!UICONTROL Validate]**. Anslutningen till molnplatsen verifieras.
-1. Om valideringen lyckas visas ett popup-meddelande som visar ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Location validation successful. Connection to cloud storage verified.]**<br/>Välj **[!UICONTROL Save]**&#x200B;om du har skapat anslutningen till molnanslutningen. Annars väljer du **[!UICONTROL Update]**. Eller välj **[!UICONTROL Cancel]**&#x200B;om du vill avbryta konfigurationen av molnplatsen.
+1. Om valideringen lyckas visas ett popup-meddelande som visar ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Location validation successful. Connection to cloud storage verified.]**<br/>Välj **[!UICONTROL Save]**om du har skapat anslutningen till molnanslutningen. Annars väljer du **[!UICONTROL Update]**. Eller välj **[!UICONTROL Cancel]**om du vill avbryta konfigurationen av molnplatsen.
 
 När du överför filer till molnplatsen identifieras filen och skickas som ett importjobb inom 15 minuter. Resultatet av det importjobbet rapporteras i jobbhanteraren [för klassificeringar](/help/components/classifications/sets/job-manager.md). Om du har lagts till i listan över användare för att meddela att importen har slutförts, får du även e-postmeddelanden.
 
@@ -190,14 +190,14 @@ Exempel:
 
 ## Åtgärdsfält
 
-Åtgärdsfältet visar åtgärder som är tillgängliga för den valda klassificeringsuppsättningen. Tillgängliga alternativ är:
+Åtgärdsfältet visar åtgärder som är tillgängliga för den valda klassificeringen. Tillgängliga alternativ är:
 
 | Ikon | Åtgärd | Beskrivning |
 |---|---|---|
 | ![Bläddra](/help/assets/icons/Browse.svg) | **[!UICONTROL Add Lookup]** | Lägg till en klassificeringsuppsättning som en sökning (underklassificering).<br/>I tabellen **[!UICONTROL Attach lookup]**: <ol><li>Välj en uppslagsklassificering i listrutan **[!UICONTROL Classification Name]**.</li><li>Välj **[!UICONTROL Add]**.</li></ol>Uppslagsklassificeringen läggs till i klassificeringen och listas i kolumnen **[!UICONTROL Classified by]** med hjälp av det interna ID:t. |
 | ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) | **[!UICONTROL Remove Lookup]** | Ta bort en klassificeringsuppsättning som en sökning. Om du vill ta bort sökningen permanent från klassificeringen väljer du **[!UICONTROL Remove _i bekräftelsedialogrutan för _klassificeringsuppsättningen_ från_]** klassificeringen **[!UICONTROL Delete]**. |
-| ![Byt namn](/help/assets/icons/Rename.svg) | **[!UICONTROL Rename]** | Byt namn på en klassificering. I dialogrutan **[!UICONTROL Rename: _klassificering_]** anger du ett nytt namn och väljer **[!UICONTROL Rename]**. |
-| ![Ta bort](/help/assets/icons/Delete.svg) | **[!UICONTROL Delete]** | Ta bort en klassificeringsgrupp. Dialogrutan **[!UICONTROL Delete _Klassificering_]** visas. Välj **[!UICONTROL Delete]** om du vill ta bort klassificeringsuppsättningen. |
+| ![Byt namn](/help/assets/icons/Rename.svg) | **[!UICONTROL Rename]** | Byt namn på **[!UICONTROL Classification Name]** för en klassificering. I dialogrutan **[!UICONTROL Rename: _klassificeringsnamn_]** anger du ett nytt namn och väljer **[!UICONTROL Rename]**. |
+| ![Ta bort](/help/assets/icons/Delete.svg) | **[!UICONTROL Delete]** | Ta bort en klassificering. Dialogrutan **[!UICONTROL Delete _Klassificeringsnamn_]** visas. Välj **[!UICONTROL Delete]** om du vill ta bort klassificeringen. |
 
 
 <!--

@@ -3,7 +3,7 @@ title: Hantera klassificeringsuppsättningar
 description: Hantera klassificeringsgrupper i Adobe Analytics.
 exl-id: b1a6721b-8e5d-4ee6-af6b-cda31c9f8b00
 feature: Classifications
-source-git-commit: 2ced7cd61c4119347be2ef0fba9b8d60ee6c4df2
+source-git-commit: ec49a5fd5771e4ca0a35ead681b556336bbc7031
 workflow-type: tm+mt
 source-wordcount: '569'
 ht-degree: 0%
@@ -32,7 +32,7 @@ I listan **[!UICONTROL Classification Sets]** ➊ visas alla klassificeringsupps
 
 | Kolumn | Beskrivning |
 |---|---|
-| **[!UICONTROL Classification Set]** | Klassificeringsuppsättningens titel. Välj titeln för att [redigera klassificeringsmängden](create.md#edit-a-classification-set). |
+| **[!UICONTROL Classification Set]** | Klassificeringsuppsättningens namn. Markera namnet för att [redigera klassificeringsmängden](create.md#edit-a-classification-set). |
 | **[!UICONTROL Subscriptions]** | Antalet prenumerationer som klassificeringsmängden gäller för. |
 | **[!UICONTROL Classifications]** | Antalet klassificeringsdimensioner som klassificeringsuppsättningen innehåller. |
 | **[!UICONTROL Automated]** | Är klassificeringsuppsättningen konfigurerad att importera data från en molnplats automatiskt eller inte? Den här automatiseringen kan konfigureras som en del av schemat för [klassificeringsuppsättningar](schema.md). |
@@ -67,7 +67,7 @@ När du väljer en eller flera klassificeringsuppsättningar i listan med klassi
 | ![Redigera](/help/assets/icons/Edit.svg) | **[!UICONTROL Edit]** | [Redigera klassificeringsuppsättningen](create.md#edit-a-classification-set) i klassificeringsuppsättningsverktyget. |
 | ![Byt namn](/help/assets/icons/Rename.svg) | **[!UICONTROL Rename]** | Byt namn på en klassificeringsuppsättning.<br/>I dialogrutan **[!UICONTROL Rename: _Klassificeringsuppsättning_]** anger du ett nytt namn och väljer **[!UICONTROL Rename]**. |
 | ![Sammanfoga](/help/assets/icons/Merge.svg) | **[!UICONTROL Consolidate]** | [Konsolidera klassificeringsgrupper](/help/components/classifications/sets/consolidations/manage.md). |
-| ![Ta bort](/help/assets/icons/Delete.svg) | **[!UICONTROL Delete]** | Ta bort en klassificeringsgrupp.<br/>Klassificeringsuppsättningen **[!UICONTROL Delete _2?_Dialogrutan]**&#x200B;visas. Det går inte att ångra en borttagning av en klassificeringsuppsättning. Alla schemalagda projekt eller konsolideringar som använder den här klassificeringsuppsättningen fortsätter att använda definitionen för den här klassificeringsuppsättningen tills du sparar om de schemalagda projekten eller validerar de schemalagda konsolideringarna på nytt. Välj **[!UICONTROL Delete]**&#x200B;om du vill ta bort klassificeringsuppsättningen. |
+| ![Ta bort](/help/assets/icons/Delete.svg) | **[!UICONTROL Delete]** | Ta bort en klassificeringsgrupp.<br/>Klassificeringsuppsättningen **[!UICONTROL Delete _2?_Dialogrutan]**visas. Det går inte att ångra en borttagning av en klassificeringsuppsättning. Alla schemalagda projekt eller konsolideringar som använder den här klassificeringsuppsättningen fortsätter att använda definitionen för den här klassificeringsuppsättningen tills du sparar om de schemalagda projekten eller validerar de schemalagda konsolideringarna på nytt. Välj **[!UICONTROL Delete]**om du vill ta bort klassificeringsuppsättningen. |
 | ![Etikett](/help/assets/icons/Label.svg) | **[!UICONTROL Tag]** | Tagga klassificeringsuppsättningen.<br/>I dialogrutan **[!UICONTROL Tag: _klassificeringsuppsättning_]** väljer du en eller flera taggar i listrutan **[!UICONTROL Tags]** för att lägga till taggar. Eller ange en eller flera nya taggar. Använd ![CrossSize100](/help/assets/icons/CrossSize100.svg) för att ta bort en tagg. <br/>Välj **[!UICONTROL Save]** om du vill spara taggarna. |
 
 

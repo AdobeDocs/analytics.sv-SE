@@ -3,9 +3,9 @@ title: Översikt över klassificeringsuppsättningar
 description: Lär dig hur du använder klassificeringsuppsättningar för att hantera klassificeringsdata. Förstå hur klassificeringsuppsättningar skiljer sig från äldre klassificeringar.
 exl-id: a139b298-1188-42ce-b52f-c71e0ff7c4e3
 feature: Classifications
-source-git-commit: 77599d015ba227be25b7ebff82ecd609fa45a756
+source-git-commit: ec49a5fd5771e4ca0a35ead681b556336bbc7031
 workflow-type: tm+mt
-source-wordcount: '737'
+source-wordcount: '779'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ I äldre klassificeringar är varje klassificering direkt kopplad till en rappor
 
 ![Äldre klassificering](manage/assets/classifications-legacy.svg)
 
-I klassificeringsuppsättningar definierar du prenumerationer på rapportsviter och viktiga dimensionskombinationer. En produktkatalogklassificering som gäller för flera rapportsviter behöver du till exempel bara definiera en gång som en klassificeringsuppsättning. Och inom den klassificeringen konfigurerar du flera rapportsviter och viktiga dimensionskombinationer för att prenumerera på den klassificeringen.
+I klassificeringsuppsättningar definierar du prenumerationer på rapportsviter och viktiga dimensionskombinationer. En produktkatalogsklassificering som gäller för flera rapportsviter och som baseras på en produktdimension (SKU) behöver du bara definiera en gång som en klassificeringsuppsättning. Och inom den klassificeringen konfigurerar du flera rapportsviter och viktiga dimensionskombinationer för att prenumerera på den klassificeringen.
 
 ![Klassificeringsuppsättningar](manage/assets/classifications-sets.svg)
 
@@ -42,7 +42,7 @@ Klassificeringsuppsättningar består av tre funktionsområden:
 Arbetsflödet för klassificeringsuppsättningar omfattar vanligtvis följande steg:
 
 1. Ta en titt på vilken rapportserie och vilka dimensionskombinationer du vill skapa en klassificeringsuppsättning för. Ett exempel är att definiera en produktklassificeringsuppsättning som du skapar för alla rapportsviter där du vill klassificera produkter med mer information. Exempel: information som kategori och färg.
-1. [Skapa en klassificeringsuppsättning](/help/components/classifications/sets/manage/create.md) med prenumerationer för en eller flera rapportsviter och dimensionskombinationer som identifierar produkter. Exempel:
+1. [Skapa en klassificeringsuppsättning](/help/components/classifications/sets/manage/create.md) med prenumerationer för en eller flera rapportsviter och viktiga dimensionskombinationer som identifierar produkter. Exempel:
 
    | Report Suite | Viktiga Dimension |
    |---|---|
@@ -77,13 +77,15 @@ Arbetsflödet för klassificeringsuppsättningar omfattar vanligtvis följande s
    Adobe and MGM Tee - Charcoal,Women,Charcoal
    ```
 
+I klassificeringsdatafilen refererar du till nyckeldimensionen för varje rapportserie (till exempel: **[!UICONTROL Product ID]** och **[!UICONTROL Product SKU]**) med `Key`. Och du refererar till varje klassificering med **[!UICONTROL Classification Name]** (till exempel `Category` eller `Color`).
+
 1. [Överför](/help/components/classifications/sets/manage/schema.md#upload) filen som innehåller klassificeringsdata till klassificeringsmängdens schema.
 
 1. [Automatisera](/help/components/classifications/sets/manage/schema.md#automate) uppdateringsprocessen för din produktkatalog som du vill ska återspeglas i klassificeringsdata genom att använda en molnplats.
 
 1. [Hämta](/help/components/classifications/sets/manage/schema.md#download) dina klassificeringsdata för att validera innehållet.
 
-1. [Granska jobbhistoriken](/help/components/classifications/sets/job-manager.md) för att se dina åtgärder (import, export med mera) för klassificeringar.
+1. [Granska jobbhistoriken](/help/components/classifications/sets/job-manager.md) för att se resultaten av dina åtgärder (överföring, hämtning, mall med mera) för klassificeringar.
 1. Om du har flera liknande klassificeringsuppsättningar som ett resultat av en migrering från de äldre klassificeringsfunktionerna [konsoliderar](consolidations/manage.md) dessa klassificeringsuppsättningar.
 
 
@@ -94,7 +96,7 @@ Den serverdelsarkitektur som lanserats med klassificeringsuppsättningar innehå
 
 * Minskad bearbetningstid (från 72 till 24 timmar).
 * Ett omdesignat användargränssnitt för att hantera klassificeringar.
-* Alternativet att använda klassificeringsdata i Adobe Experience Platform via [Adobe Analytics-källkopplingen för klassificeringsdata](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/connectors/adobe-applications/classifications).
+* Alternativet att använda klassificeringsdata i Adobe Experience Platform via [Adobe Analytics-källkopplingen för klassificeringsdata](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/classifications).
 
 Den serverdelsarkitektur som lanserats med klassificeringsuppsättningar innehåller också flera ändringar:
 

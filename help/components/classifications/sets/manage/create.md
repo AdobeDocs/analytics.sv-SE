@@ -3,9 +3,9 @@ title: Skapa klassificeringsuppsättningar
 description: Lär dig hur du skapar en klassificeringsuppsättning i Tillgängliga fält och beskrivningar.
 exl-id: 6d692d90-8cc7-4306-a780-58d03db45be8
 feature: Classifications
-source-git-commit: 2ced7cd61c4119347be2ef0fba9b8d60ee6c4df2
+source-git-commit: ec49a5fd5771e4ca0a35ead681b556336bbc7031
 workflow-type: tm+mt
-source-wordcount: '375'
+source-wordcount: '387'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,10 @@ Så här skapar du en klassificeringsuppsättning:
 
          * Välj ![CrossSize400](/help/assets/icons/CrossSize400.svg) om du vill ta bort en kombination av **[!UICONTROL Report Suite]** och **[!UICONTROL Key Dimension]**.
 
-        Om du lägger till en kombination av **[!UICONTROL Report Suite]** och **[!UICONTROL Key Dimension]** som redan finns i en annan klassificeringsuppsättning visas en röd varning under kombinationen. Du kan välja **[!UICONTROL Add to existing]** om du vill öppna den andra klassificeringsuppsättningen och [lägga till klassificeringar i schemat](schema.md) för den andra klassificeringsuppsättningen, eller ändra dimensionen.
+        Om du lägger till en **[!UICONTROL Report Suite]**- och **[!UICONTROL Key Dimension]**-kombination som redan finns i en annan klassificeringsuppsättning visas ett rött färgat meddelande under kombinationen.
+Ni kan:
+         * Välj **[!UICONTROL Add to existing]** om du vill öppna den andra klassificeringsuppsättningen och [lägga till klassificeringar i schemat ](schema.md) för den andra klassificeringsuppsättningen.
+         * Ändra **[!UICONTROL Report Suite]** och **[!UICONTROL Key Dimension]** till en kombination som inte redan prenumererar på en annan klassificeringsuppsättning.
       * **[!UICONTROL Lookup]**. En uppslagstabell kallas vanligen för underklassificeringar eller underklassificeringar och är en klassificering av en primär klassificering. En sökning är metadata om ett klassificeringsvärde i stället för den ursprungliga dimensionen. En *Produkt*-dimension kan till exempel ha en primär klassificering av *Färgkod*. En uppslagstabell med *färgnamn* kan sedan bifogas till *färgkoden* för att förklara varje färgkod.
 1. Välj **[!UICONTROL Save]** om du vill spara klassificeringsuppsättningen. Välj **[!UICONTROL Cancel]** om du vill avbryta definitionen.
 1. Om du vill definiera schemat för klassificeringsuppsättningen väljer du den nya klassificeringsuppsättningen i hanteraren **[!UICONTROL Classification Sets]** och [redigerar klassificeringsuppsättningen](#edit-a-classification-set).
@@ -46,8 +49,8 @@ Så här redigerar du en klassificeringsuppsättning:
 
 1. Välj **[!UICONTROL Components]** i Adobe Analytics övre menyrad och välj sedan **[!UICONTROL Classification sets]**.
 1. I **[!UICONTROL Classification Sets]** väljer du fliken **[!UICONTROL Classification Sets]**.
-1. Välj titeln på din klassificeringsgrupp.
-1. I dialogrutan **[!UICONTROL Classification Set: _Klassificeringsuppsättningens titel_]** kan du definiera [inställningarna](settings.md) och [schemat](schema.md) för klassificeringsuppsättningen.
+1. Välj namnet på din klassificeringsgrupp.
+1. I dialogrutan **[!UICONTROL Classification Set: _klassificeringsuppsättningsnamn_]** kan du definiera [inställningarna](settings.md) och [schemat](schema.md) för klassificeringsuppsättningen.
 1. När du är klar väljer du **[!UICONTROL Save]** för att spara ändringarna. Välj **[!UICONTROL Cancel]** om du vill avbryta.
 
 
