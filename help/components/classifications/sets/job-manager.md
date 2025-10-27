@@ -3,9 +3,9 @@ title: Klassificeringsjobbshanteraren
 description: Lär dig hur du visar aktuella och slutförda klassificeringsjobb som genereras från klassificeringsuppsättningar.
 exl-id: 0470e131-79c6-4906-85f0-530d360ac227
 feature: Classifications
-source-git-commit: 77599d015ba227be25b7ebff82ecd609fa45a756
+source-git-commit: 2ced7cd61c4119347be2ef0fba9b8d60ee6c4df2
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '565'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,8 @@ Klassificeringsjobbhanteraren visar aktuella och slutförda klassificeringsjobb 
 
 Så här visar och agerar du på klassificeringsjobb:
 
-1. Välj **[!UICONTROL Components]** i huvudgränssnittet och välj sedan **[!UICONTROL Classification sets]**.
+
+1. Välj **[!UICONTROL Components]** i Adobe Analytics övre menyrad och välj sedan **[!UICONTROL Classification sets]**.
 1. I **[!UICONTROL Classification Sets]** väljer du fliken **[!UICONTROL Jobs]**.
 
 ## Hanterare för klassificeringsjobb
@@ -36,7 +37,7 @@ Hanteraren **[!UICONTROL Classification Sets - Jobs]** har följande gränssnitt
 | **[!UICONTROL Job Id]** | Identifieraren för klassificeringsjobbet. |
 | **[!UICONTROL Classification Set]** | Klassificeringsuppsättningen som är associerad med klassificeringsjobbet. |
 | **[!UICONTROL Size]** | Storleken på filen som exporterades eller importerades som en del av klassificeringsjobbet. |
-| **[!UICONTROL Status]** | Klassificeringsjobbets status. Möjliga värden är: **[!UICONTROL Created]**, **[!UICONTROL Queued]**, **[!UICONTROL Validated]**, **[!UICONTROL Failed validation]**, **[!UICONTROL Processing]**, **[!UICONTROL Done processing]**, **[!UICONTROL Failed processing]**, **[!UICONTROL Completed]** eller **[!UICONTROL Progress]**. |
+| **[!UICONTROL Status]** | Klassificeringsjobbets status. Möjliga värden är: **[!UICONTROL Created]**, **[!UICONTROL Queued]**, **[!UICONTROL Validated]**, **[!UICONTROL Failed validation]**, **[!UICONTROL Processing]**, **[!UICONTROL Done processing]**, **[!UICONTROL Failed processing]**, **[!UICONTROL Completed]** eller **[!UICONTROL Progress]**. Om den visas för du markören över aviseringen ![Varning](/help/assets/icons/Alert.svg) för att visa ytterligare information. |
 | **[!UICONTROL File Name]** | Identifierar namnet eller funktionaliteten som används för att importera eller exportera filen som en del av klassificeringsjobbet. Möjliga värden är: <ul><li>*inget värde*</li><li>Namnet på filen som bearbetas som en del av klassificeringsjobbet.</li><li>**[!UICONTROL SAINT Export]**: Jobbet är en export från det [gamla klassificeringsgränssnittet](/help/components/classifications/importer/c-working-with-saint.md).</li><li>**[!UICONTROL export for _klassificeringsuppsättningen _vid_timestamp_]**: Jobbet är en hämtning från gränssnittet [schema](manage/schema.md#download).</li></ul> |
 | **[!UICONTROL Job Type]** | Typ av klassificeringsjobb. Möjliga värden är: **[!UICONTROL Import]** eller **[!UICONTROL Export]**. |
 | **[!UICONTROL Source]** | Källan till klassificeringsjobbet. Möjliga värden är: **[!UICONTROL Web API]**, **[!UICONTROL Direct API Upload]**, **[!UICONTROL Adobe]**, **[!UICONTROL SAINT]** eller **[!UICONTROL Unknown]**. |

@@ -3,9 +3,9 @@ title: Inställningar för klassificeringsuppsättning
 description: Lär dig hur du skapar eller redigerar en klassificeringsuppsättning.
 exl-id: abf00508-5dde-4669-bf94-5eb4754888cc
 feature: Classifications
-source-git-commit: 23c9dc5cada8b1e9ad2898044a65da766a6334e9
+source-git-commit: 2ced7cd61c4119347be2ef0fba9b8d60ee6c4df2
 workflow-type: tm+mt
-source-wordcount: '150'
+source-wordcount: '164'
 ht-degree: 0%
 
 ---
@@ -16,6 +16,9 @@ Du kan redigera de ursprungliga inställningarna för en klassificeringsuppsätt
 
 Så här redigerar du inställningarna för en klassificeringsuppsättning:
 
+
+1. Välj **[!UICONTROL Components]** i Adobe Analytics övre menyrad och välj sedan **[!UICONTROL Classification sets]**.
+1. I **[!UICONTROL Classification Sets]** väljer du fliken **[!UICONTROL Classification Sets]**.
 1. I hanteraren för **[!UICONTROL Classifications Sets]** väljer du den klassificeringsgrupp som du vill redigera schemat för.
 1. Välj fliken **[!UICONTROL Classification Set: _i dialogrutan_]** klassificeringsuppsättning **[!UICONTROL Settings]**.
 

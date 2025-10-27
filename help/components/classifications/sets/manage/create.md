@@ -3,9 +3,9 @@ title: Skapa klassificeringsuppsättningar
 description: Lär dig hur du skapar en klassificeringsuppsättning i Tillgängliga fält och beskrivningar.
 exl-id: 6d692d90-8cc7-4306-a780-58d03db45be8
 feature: Classifications
-source-git-commit: 77599d015ba227be25b7ebff82ecd609fa45a756
+source-git-commit: 2ced7cd61c4119347be2ef0fba9b8d60ee6c4df2
 workflow-type: tm+mt
-source-wordcount: '377'
+source-wordcount: '375'
 ht-degree: 0%
 
 ---
@@ -16,9 +16,9 @@ Du [skapar](#create-a-classification-set) och [redigerar](#edit-a-classification
 
 ## Skapa en klassificeringsuppsättning
 
-Så här skapar du en klassificeringsuppsättning i huvudgränssnittet:
+Så här skapar du en klassificeringsuppsättning:
 
-1. Välj **[!UICONTROL Components]** i huvudgränssnittet och välj sedan **[!UICONTROL Classification sets]**.
+1. Välj **[!UICONTROL Components]** i Adobe Analytics övre menyrad och välj sedan **[!UICONTROL Classification sets]**.
 1. I **[!UICONTROL Classification Sets]** väljer du fliken **[!UICONTROL Classification Sets]**.
 1. Välj ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL New]**.
 1. I dialogrutan **[!UICONTROL Add New Classification Set]**:
@@ -42,9 +42,9 @@ Så här skapar du en klassificeringsuppsättning i huvudgränssnittet:
 
 ## Redigera en klassificeringsuppsättning
 
-Så här redigerar du en klassificeringsuppsättning i huvudgränssnittet:
+Så här redigerar du en klassificeringsuppsättning:
 
-1. Välj **[!UICONTROL Components]** i huvudgränssnittet och välj sedan **[!UICONTROL Classification sets]**.
+1. Välj **[!UICONTROL Components]** i Adobe Analytics övre menyrad och välj sedan **[!UICONTROL Classification sets]**.
 1. I **[!UICONTROL Classification Sets]** väljer du fliken **[!UICONTROL Classification Sets]**.
 1. Välj titeln på din klassificeringsgrupp.
 1. I dialogrutan **[!UICONTROL Classification Set: _Klassificeringsuppsättningens titel_]** kan du definiera [inställningarna](settings.md) och [schemat](schema.md) för klassificeringsuppsättningen.

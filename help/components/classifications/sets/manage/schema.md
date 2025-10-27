@@ -3,9 +3,9 @@ title: Schema för klassificeringsuppsättning
 description: Lär dig hur du visar och redigerar schemat för en enskild klassificeringsuppsättning.
 exl-id: 4a7c5bfe-ff2b-4380-af46-435801d73c1e
 feature: Classifications
-source-git-commit: 23c9dc5cada8b1e9ad2898044a65da766a6334e9
+source-git-commit: 2ced7cd61c4119347be2ef0fba9b8d60ee6c4df2
 workflow-type: tm+mt
-source-wordcount: '1106'
+source-wordcount: '1224'
 ht-degree: 0%
 
 ---
@@ -16,6 +16,9 @@ Schemat är den lista med klassificeringar som du vill tillämpa på de nyckeldi
 
 Så här redigerar du schemat för en klassificeringsuppsättning:
 
+
+1. Välj **[!UICONTROL Components]** i Adobe Analytics övre menyrad och välj sedan **[!UICONTROL Classification sets]**.
+1. I **[!UICONTROL Classification Sets]** väljer du fliken **[!UICONTROL Classification Sets]**.
 1. I hanteraren för **[!UICONTROL Classifications Sets]** väljer du den klassificeringsgrupp som du vill redigera schemat för.
 1. Välj fliken **[!UICONTROL Classification Set: _i dialogrutan_]** klassificeringsuppsättning **[!UICONTROL Schema]**. Fliken består av följande gränssnittselement:
 
@@ -51,7 +54,7 @@ Följande åtgärder är tillgängliga som knappar högst upp i klassificeringsl
 | ![UploadToCloud](/help/assets/icons/UploadToCloud.svg) | **[!UICONTROL Upload]** | [Överför en JSON-, CSV-, TSV- eller TAB-fil](#upload). |
 | ![Hämta](/help/assets/icons/Download.svg) | **[!UICONTROL Download]** | [Hämta klassificeringsdata](#download). |
 | ![Dokumentfragment](/help/assets/icons/DocumentFragment.svg) | **[!UICONTROL Template]** | [Hämta en mall](#template) för klassificeringsdata. |
-| ![Historik](/help/assets/icons/History.svg) | **[!UICONTROL Job History]** | Visa jobbhanteraren [&#x200B; för klassificeringsuppsättningen, filtrerad för den valda klassificeringsuppsättningen.](/help/components/classifications/sets/job-manager.md) |
+| ![Historik](/help/assets/icons/History.svg) | **[!UICONTROL Job History]** | Visa jobbhanteraren [ för klassificeringsuppsättningen, filtrerad för den valda klassificeringsuppsättningen.](/help/components/classifications/sets/job-manager.md) |
 | ![Kugghjul](/help/assets/icons/Gear.svg) | **[!UICONTROL Automate]** | [Automatisera inmatningen av klassificeringsdata](#automate) med hjälp av en molnplats. |
 
 
@@ -108,7 +111,7 @@ I dialogrutan **[!UICONTROL Download data for _klassificeringsuppsättning_]**:
 1. Välj ett alternativ från **[!UICONTROL Data Returned]** om du vill välja vilka data som ska returneras.
 
    * **[!UICONTROL All values]** returnerar alla värden för aktuella klassificeringsdata.
-   * **[!UICONTROL Any columns empty]** returnerar en kolumn med nyckelvärden för befintliga klassificeringsdata. Och kolumner utan värde för klassificeringsdata som det inte finns något värde för.
+   * **[!UICONTROL Any columns empty]** returnerar en kolumn med nyckelvärden för befintliga klassificeringsdata. Och kolumner utan värde för klassificeringsdata som saknar värden.
    * **[!UICONTROL All columns empty]** returnerar en nyckelkolumn med värden för befintliga klassificeringsdata. Och kolumner utan värde för klassificeringsdata.
 1. Om du vill välja [filformat](/help/components/classifications/sets/data-files.md#general-file-requirements) för de hämtade klassificeringsdata väljer du ett alternativ i listrutan **[!UICONTROL File Format]** . Alternativ:
 
@@ -122,7 +125,7 @@ I dialogrutan **[!UICONTROL Download data for _klassificeringsuppsättning_]**:
    * **[!UICONTROL Latin-1]**.
 
 
-1. Välj **[!UICONTROL Download]** om du vill hämta klassificeringsdata. Du hittar den hämtade filen i webbläsarens standardkatalog för hämtning, och filen heter <code><i>Klassificeringsuppsättning</i>.<i>json</i>|<i>csv</i>|<i>tsv</i></code>. Om filen redan finns, sekvensnummer <code>(<i>x</i>)</code> läggs till i filnamnet.<br/>Om du har angett alternativ som inte returnerar några data visas en **[!UICONTROL Notice]**-dialogruta som informerar dig om att ändra alternativen för datumintervall och returnerade data.
+1. Välj **[!UICONTROL Download]** om du vill hämta klassificeringsdata. Du hittar den hämtade filen i webbläsarens standardkatalog för hämtning, och filen heter <code><i>Klassificeringsuppsättning</i>.<i>json</i>|<i>csv</i>|<i>tsv</i></code>. Om filen redan finns, sekvensnummer <code>(<i>x</i>)</code> läggs till i filnamnet.<br/>Om du har angett alternativ som inte returnerar några data visas en **[!UICONTROL Notice]**-dialogruta där du kan ange alternativ för datumintervall och returnerade data.
 
 
 ### Mall
@@ -154,9 +157,15 @@ Om du vill automatisera intaget av klassificering väljer du ![Kugghjul](/help/a
 
 I dialogrutan **[!UICONTROL Associate / Update Ingest Location for _klassificeringsuppsättning_]**:
 
-1. Välj en molnplats genom att välja ett alternativ från **[!UICONTROL Location Account]**. Endast [platskonton för kontotyper som stöds som tillåter import av klassificeringsdata](https://experienceleague.adobe.com/sv/docs/analytics/components/locations/configure-import-accounts) visas. Välj **[!UICONTROL New account]** om du vill skapa ett nytt konto.
+1. Välj en molnplats genom att välja ett alternativ från **[!UICONTROL Location Account]**. Endast [platskonton för kontotyper som stöds som tillåter import av klassificeringsdata](https://experienceleague.adobe.com/en/docs/analytics/components/locations/configure-import-accounts) visas. Välj **[!UICONTROL New account]** om du vill skapa ett nytt konto.
 1. Välj en plats genom att välja ett alternativ från **[!UICONTROL Location]**. Endast platserna för valda kontotyper för import av klassificeringsdata visas. Välj **[!UICONTROL New location]** om du vill skapa en ny plats.
-1. Välj ett alternativ från **[!UICONTROL List delimiter]** om du vill välja en avgränsare. Alternativen är:
+
+   >[!IMPORTANT]
+   >
+   >Platsen som du skapar eller väljer bör innehålla en **[!UICONTROL Prefix]** (mapp) i **[!UICONTROL Bucket]** som värd för klassificeringsdatafilerna. En mapp med namnet `files`. De flesta molnplatser fungerar inte med värdfiler som finns i roten av en bucket.
+   >
+
+1. Om du vill välja en avgränsare väljer du ett alternativ i listrutan **[!UICONTROL List delimiter]**. Alternativen är:
    * **[!UICONTROL Comma ,]**
    * **[!UICONTROL Semicolon ;]**
    * **[!UICONTROL Colon :]**
@@ -170,7 +179,13 @@ I dialogrutan **[!UICONTROL Associate / Update Ingest Location for _klassificeri
 
 1. Om du vill meddela användare om slutförandet av importen anger du e-postadresser, avgränsade med kommatecken, för **[!UICONTROL Email(s) to notify when ingest jobs completes (comma separated)]**.
 1. Välj **[!UICONTROL Validate]**. Anslutningen till molnplatsen verifieras.
-1. Om valideringen lyckas visas ett popup-meddelande som visar ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Location validation successful. Connection to cloud storage verified.]**<br/>Välj **[!UICONTROL Save]**&#x200B;om du har skapat anslutningen till molnanslutningen. Annars väljer du **[!UICONTROL Update]**. Eller välj **[!UICONTROL Cancel]**&#x200B;om du vill avbryta konfigurationen av molnplatsen.
+1. Om valideringen lyckas visas ett popup-meddelande som visar ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Location validation successful. Connection to cloud storage verified.]**<br/>Välj **[!UICONTROL Save]**om du har skapat anslutningen till molnanslutningen. Annars väljer du **[!UICONTROL Update]**. Eller välj **[!UICONTROL Cancel]**om du vill avbryta konfigurationen av molnplatsen.
+
+När du överför filer till molnplatsen identifieras filen och skickas som ett importjobb inom 15 minuter. Resultatet av det importjobbet rapporteras i jobbhanteraren [för klassificeringar](/help/components/classifications/sets/job-manager.md). Om du har lagts till i listan över användare för att meddela att importen har slutförts, får du även e-postmeddelanden.
+
+Exempel:
+
+![Klassificeringsuppsättningar - e-post för jobbvalidering](assets/job-failed-validation.png){width="400"}
 
 
 ## Åtgärdsfält

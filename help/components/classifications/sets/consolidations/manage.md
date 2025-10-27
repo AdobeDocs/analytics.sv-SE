@@ -3,9 +3,9 @@ title: Hantera konsolideringar av klassificeringsuppsättningar
 description: Lär dig hur du konsoliderar en eller flera klassificeringsuppsättningar till en enda klassificeringsuppsättning.
 exl-id: 0be97ca4-56c3-4642-9347-924812e88e8c
 feature: Classifications
-source-git-commit: 77599d015ba227be25b7ebff82ecd609fa45a756
+source-git-commit: 2ced7cd61c4119347be2ef0fba9b8d60ee6c4df2
 workflow-type: tm+mt
-source-wordcount: '530'
+source-wordcount: '533'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Du måste ha produktadministratörsåtkomst för Adobe Analytics för att kunna 
 
 Så här hanterar du klassificeringskonsolideringar:
 
-1. Välj **[!UICONTROL Components]** i huvudgränssnittet och välj sedan **[!UICONTROL Classification sets]**.
+1. Välj **[!UICONTROL Components]** i Adobe Analytics övre menyrad och välj sedan **[!UICONTROL Classification sets]**.
 1. I **[!UICONTROL Classification Sets]** väljer du fliken **[!UICONTROL Consolidations]**.
 
 
