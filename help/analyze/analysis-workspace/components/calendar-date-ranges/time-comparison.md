@@ -4,9 +4,9 @@ title: Datumjämförelse
 feature: Date Ranges
 role: User, Admin
 exl-id: ea7a42ef-89de-4f70-b468-8a5cf69fea05
-source-git-commit: 3d15bd941cb8eaf20b8ae9f1ffa1dbfd403b2bfa
+source-git-commit: 27ec105290ea4d093251fc6cf537d57a94015403
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: '673'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,11 @@ Med datumjämförelsen i Analysis Workspace kan du ta vilken kolumn som helst so
 Analysen kräver ett sammanhang, och ofta tillhandahålls detta sammanhang av en tidigare tidsperiod. Frågan *Hur mycket bättre eller sämre gör du nu jämfört med den här gången förra året?* är grundläggande för att förstå din verksamhet. Datumjämförelse innehåller automatiskt en *differenskolumn*, som visar den procentuella ändringen jämfört med en angiven tidsperiod.
 
 1. Skapa en [frihandstabell](/help/analyze/analysis-workspace/visualizations/freeform-table/freeform-table.md) med alla mått och mått som du vill jämföra under en tidsperiod.
+1. Ställ in tidsperioden på panelen eller kolumnen för att bestämma tidsramen för jämförelsen och om det är en rullande eller fast tidsjämförelse.
+
+   Om du vill skapa en jämförelse av rullande tid anger du panelens eller kolumnens datumintervall till ett rullande datumintervall (till exempel **[!UICONTROL Last 7 days]**, **[!UICONTROL Last 30 days]**).
+
+   Om du vill skapa en tidsjämförelse ställer du in ett anpassat datumintervall för panelen eller kolumnen.
 1. Öppna snabbmenyn för en tabellrad och välj **[!UICONTROL Compare time periods]**.
 
    ![Tabellrad med Jämför tidsperioder markerad](assets/compare-time.png)
