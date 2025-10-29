@@ -4,7 +4,7 @@ audience: admin
 user-guide-title: Administratörshandbok för Analytics
 breadcrumb-title: Användarhandbok om Admin
 user-guide-description: Lär dig mer om administrationsåtgärder i Analytics, som att hantera användare och produkter i Experience Cloud Admin Console, konfigurera rapportsviter med mera.
-source-git-commit: 77795002cc4a360ed8aad8e1fe4882f1fe16f6ae
+source-git-commit: e934de3938f013067d6bbd6b516b0444b0c9f782
 workflow-type: tm+mt
 source-wordcount: '491'
 ht-degree: 11%
@@ -15,7 +15,7 @@ ht-degree: 11%
 # Adobe Analytics Admin Guide {#admin}
 
 + [Administratörshandbok för analyser](home.md)
-+ [Versionsinformation för analyser](https://experienceleague.adobe.com/sv/docs/analytics/release-notes/latest)
++ [Versionsinformation för analyser](https://experienceleague.adobe.com/en/docs/analytics/release-notes/latest)
 + Adobe Admin Console {#admin-console}
    + [Översikt](admin-console/home.md)
    + [Adobe Analytics första administrationshandbok](admin-console/first-admin-guide.md)
@@ -85,7 +85,7 @@ ht-degree: 11%
             + [Marknadsförande eVars](tools/manage-rs/edit-settings/conversion-var-admin/merchandising-evars.md)
          + Marknadsföringskanaler {#marketing-channels}
             + [Marknadsföringskanalhanterare](tools/manage-rs/edit-settings/marketing-channels/c-channels.md)
-            + [Bearbetningsregler för marknadsföringskanal](tools/manage-rs/edit-settings/marketing-channels/c-rules.md)
+            + [Bearbetningsregler för marknadsföringskanal](tools/manage-rs/edit-settings/marketing-channels/mc-proc-rules.md)
             + [Klassificeringar av marknadsföringskanaler](tools/manage-rs/edit-settings/marketing-channels/classifications-mchannel.md)
             + [Utgångsdatum för marknadsföringskanal](tools/manage-rs/edit-settings/marketing-channels/visitor-engagement.md)
          + Trafikhantering {#traffic-management}

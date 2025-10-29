@@ -5,7 +5,7 @@ title: Hantera marknadsföringskanaler
 feature: Marketing Channels
 exl-id: a768a4c2-f922-4d96-a9fb-78a1dfac04d8
 role: Admin
-source-git-commit: a6967c7d4e1dca5491f13beccaa797167b503d6e
+source-git-commit: e934de3938f013067d6bbd6b516b0444b0c9f782
 workflow-type: tm+mt
 source-wordcount: '701'
 ht-degree: 0%
@@ -24,12 +24,12 @@ ht-degree: 0%
 
 Lägg till eller aktivera marknadsföringskanaler i Marketing Channel Manager. För rapportsviter som inte har några marknadsföringskanaler kan du med en automatisk inställning skapa flera kanaler åt dig, tillsammans med deras regler. Du kan redigera fördefinierade kanaler efter dina behov eller skapa egna (upp till totalt 25).
 
-Att lägga till kanaler på sidan [!UICONTROL Marketing Channels] görs oberoende av hur regler skapas på sidan [Bearbetningsregler för marknadsföringskanaler](/help/admin/tools/manage-rs/edit-settings/marketing-channels/c-rules.md). Du kopplar regler till kanaler när du skapar regeln.
+Att lägga till kanaler på sidan [!UICONTROL Marketing Channels] görs oberoende av hur regler skapas på sidan [Bearbetningsregler för marknadsföringskanaler](/help/admin/tools/manage-rs/edit-settings/marketing-channels/mc-proc-rules.md). Du kopplar regler till kanaler när du skapar regeln.
 
 Här följer riktlinjer för hur du skapar kanaler:
 
 * Planera i förväg genom att skapa en lista över alla era kanaler, så att alla era besökarträffar kategoriseras i rätt kanal.
-* Inkludera kanaler för kategorierna av [interna](/help/admin/tools/manage-rs/edit-settings/marketing-channels/c-rules.md) träffar.
+* Inkludera kanaler för kategorierna av [interna](/help/admin/tools/manage-rs/edit-settings/marketing-channels/mc-proc-rules.md) träffar.
 * Inkludera en&quot;övriga kampanjer&quot;-kanal som kan användas som en catch-all-kanal och placeras efter betalda kanaler och före organiska kanaler.
 
 
@@ -65,7 +65,7 @@ Lägg till marknadsföringskanaler i Marketing Channel Manager.
 1. Klicka på **[!UICONTROL Save.]**
 1. Klicka på **[!UICONTROL Marketing Channel Processing Rules]** om du vill konfigurera regler för kanalen.
 
-   Se [Skapa bearbetningsregler för marknadsföringskanaler](/help/admin/tools/manage-rs/edit-settings/marketing-channels/c-rules.md).
+   Se [Skapa bearbetningsregler för marknadsföringskanaler](/help/admin/tools/manage-rs/edit-settings/marketing-channels/mc-proc-rules.md).
 
 ## Använda kanalinställningar {#mktg-channel-mgr}
 
@@ -89,7 +89,7 @@ Det är bäst att avmarkera alternativet för att åsidosätta sista-beröringen
 
 Skapa kanalerna och de underliggande reglerna som bearbetar data innan kanaler och kanaldata kan visas i rapporten. Du kan också ange hur länge du vill att [besökarperioden](/help/admin/tools/manage-rs/edit-settings/marketing-channels/visitor-engagement.md) ska vara.
 
-Adobe tillhandahåller flera fördefinierade kanaler under en [automatisk konfiguration](/help/components/c-marketing-channels/c-getting-started-mchannel.md) som du kan redigera efter behov. Du kan dessutom ändra den här konfigurationen och definiera anpassade regler i [Bearbetningsregler för marknadsföringskanaler](/help/admin/tools/manage-rs/edit-settings/marketing-channels/c-rules.md).
+Adobe tillhandahåller flera fördefinierade kanaler under en [automatisk konfiguration](/help/components/c-marketing-channels/c-getting-started-mchannel.md) som du kan redigera efter behov. Du kan dessutom ändra den här konfigurationen och definiera anpassade regler i [Bearbetningsregler för marknadsföringskanaler](/help/admin/tools/manage-rs/edit-settings/marketing-channels/mc-proc-rules.md).
 
 >[!NOTE]
 >

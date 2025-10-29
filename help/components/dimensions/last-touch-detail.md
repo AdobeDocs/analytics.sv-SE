@@ -3,7 +3,7 @@ title: Senaste beröringskanaldetalj
 description: Information om den senaste marknadsföringskanalen inom besökarens förfallotid för engagemang.
 feature: Dimensions
 exl-id: def03267-f3e5-4772-a707-5678c45eba6d
-source-git-commit: a6967c7d4e1dca5491f13beccaa797167b503d6e
+source-git-commit: e934de3938f013067d6bbd6b516b0444b0c9f782
 workflow-type: tm+mt
 source-wordcount: '321'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ## Fyll den här dimensionen med data
 
-Den här dimensionen kopierar värden från andra variabler. Variabeln som används refererar till kanalvärdet inom varje [regel för bearbetning av marknadsföringskanal](/help/admin/tools/manage-rs/edit-settings/marketing-channels/c-rules.md). När en träff matchar en regel för bearbetning av marknadsföringskanal ställs dimensionen [Senaste beröringskanal](last-touch-channel.md) in på kanalnamnet, och den här dimensionen ställs in på kanalvärdet som angetts i regeln.
+Den här dimensionen kopierar värden från andra variabler. Variabeln som används refererar till kanalvärdet inom varje [regel för bearbetning av marknadsföringskanal](/help/admin/tools/manage-rs/edit-settings/marketing-channels/mc-proc-rules.md). När en träff matchar en regel för bearbetning av marknadsföringskanal ställs dimensionen [Senaste beröringskanal](last-touch-channel.md) in på kanalnamnet, och den här dimensionen ställs in på kanalvärdet som angetts i regeln.
 
 Om du vill ställa in dimensionen på ett specifikt värde måste du utföra följande steg:
 

@@ -3,7 +3,7 @@ title: Kom igång med marknadsföringskanaler
 description: Lär dig mer om arbetsflödet för marknadsföringskanaler, den automatiska konfigurationen och hur du tillämpar mallrapportsvitsinställningar på flera rapportsviter.
 feature: Marketing Channels
 exl-id: 35938bf9-89ab-434f-9dc2-7a65251412ef
-source-git-commit: a6967c7d4e1dca5491f13beccaa797167b503d6e
+source-git-commit: e934de3938f013067d6bbd6b516b0444b0c9f782
 workflow-type: tm+mt
 source-wordcount: '743'
 ht-degree: 1%
@@ -53,7 +53,7 @@ Se [Lägg till marknadsföringskanaler](/help/admin/tools/manage-rs/edit-setting
 
 När du har skapat kanaler på sidan [!UICONTROL Marketing Channel Manager] konfigurerar du reglerna så att kanalerna kan hämta och rapportera data.
 
-Se [Bearbetningsregler för marknadsföringskanaler](/help/admin/tools/manage-rs/edit-settings/marketing-channels/c-rules.md).
+Se [Bearbetningsregler för marknadsföringskanaler](/help/admin/tools/manage-rs/edit-settings/marketing-channels/mc-proc-rules.md).
 
 Om kanaler skapades i den automatiska konfigurationen definieras reglerna i dessa kanaler. Du kan ändra dem efter dina behov.
 

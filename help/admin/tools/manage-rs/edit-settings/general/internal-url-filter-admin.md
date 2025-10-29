@@ -4,7 +4,7 @@ title: Interna URL-filter
 feature: Admin Tools
 uuid: 70868edb-208d-4dad-9401-70967468d40c
 exl-id: fa387da2-e9be-47c0-9c4e-edd75af1f05a
-source-git-commit: a6967c7d4e1dca5491f13beccaa797167b503d6e
+source-git-commit: e934de3938f013067d6bbd6b516b0444b0c9f782
 workflow-type: tm+mt
 source-wordcount: '202'
 ht-degree: 0%
@@ -20,7 +20,7 @@ Med hjälp av interna URL-filter kan du identifiera de referenser som du anser v
 
 En hänvisare, eller hänvisande sida, är vanligtvis den sida från vilken en besökare har angett webbplatsen. För att undvika att skevas kan du filtrera bort interna referenser. Dimensioner som är beroende av interna URL-filter är bland annat [Referent](/help/components/dimensions/referrer.md), [Refererande domän](/help/components/dimensions/referring-domain.md), [Marknadskanaler](/help/components/dimensions/marketing-channel.md) och andra trafikkällans dimensioner.
 
-[Bearbetningsreglerna för marknadsföringskanaler](../marketing-channels/c-rules.md) anger [!UICONTROL Matches internal URL filters] som möjliga regelvillkor.
+[Bearbetningsreglerna för marknadsföringskanaler](../marketing-channels/mc-proc-rules.md) anger [!UICONTROL Matches internal URL filters] som möjliga regelvillkor.
 
 >[!IMPORTANT]
 >

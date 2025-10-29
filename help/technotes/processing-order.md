@@ -3,7 +3,7 @@ title: Bearbetningsordning för data i Adobe Analytics
 description: Lär dig ordningen på komponenter och tjänster som bearbetar data i Adobe Analytics.
 exl-id: a8dc9c12-07d3-4dc8-b2df-136f7a7a1e77
 feature: Data Configuration and Collection
-source-git-commit: a6967c7d4e1dca5491f13beccaa797167b503d6e
+source-git-commit: e934de3938f013067d6bbd6b516b0444b0c9f782
 workflow-type: tm+mt
 source-wordcount: '585'
 ht-degree: 0%
@@ -35,7 +35,7 @@ När data kommer till Adobe Analytics kan du justera data efter behov med följa
 3. [**Punktregler**](/help/admin/tools/manage-rs/edit-settings/general/bot-removal/bot-rules.md): Använd standard- eller anpassad robotfiltrering för att exkludera data från rapportering.
 4. [**Bearbetar regler**](/help/admin/tools/manage-rs/edit-settings/general/processing-rules/pr-overview.md): Anpassade regler som din organisation har tillämpat på dina data. Inkluderar mappningen av [kontextdatavariabler](/help/implement/vars/page-vars/contextdata.md) till respektive variabel.
 5. **VISTA-regler**: Anpassade flexibla regler som tillämpas på dina data av en Adobe-konsult. VISTA-regler kan köras före eller efter att regler bearbetas, beroende på organisationens behov. De flesta VISTA-regler körs vanligtvis efter bearbetningsregler, men varje organisation har konfigurerats på olika sätt. Kontakta Adobe Account Team om du vill ha mer information om befintliga VISTA-regler.
-6. [**Bearbetningsregler för marknadsföringskanaler**](/help/admin/tools/manage-rs/edit-settings/marketing-channels/c-rules.md): Du kan använda [Bearbetningsregler](/help/admin/tools/manage-rs/edit-settings/general/processing-rules/pr-overview.md) för att förbereda data för användning i regler för bearbetning av marknadsföringskanaler.
+6. [**Bearbetningsregler för marknadsföringskanaler**](/help/admin/tools/manage-rs/edit-settings/marketing-channels/mc-proc-rules.md): Du kan använda [Bearbetningsregler](/help/admin/tools/manage-rs/edit-settings/general/processing-rules/pr-overview.md) för att förbereda data för användning i regler för bearbetning av marknadsföringskanaler.
 7. **Geoplatsdata**: Dimensioner som förlitar sig på IP-adresssökning (till exempel dimensionen [Länder](/help/components/dimensions/countries.md)) fylls i.
 8. [**IP-förfalskning**](/help/admin/tools/manage-rs/edit-settings/general/general-acct-settings-admin.md): Om din organisation har valt att dölja IP-adresser i rådata utförs detta när alla andra bearbetningsfunktioner har slutförts.
 
