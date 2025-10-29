@@ -15,7 +15,7 @@ ht-degree: 0%
 
 _Den här sidan refererar till bearbetningsregler som tilldelar en marknadsföringskanal till en träff. Se [Bearbetningsregler](../general/processing-rules/pr-overview.md) för en funktion som gör att du kan justera hur data samlas in._
 
-Med bearbetningsregler för marknadsföringskanaler kan du skapa logik som bestämmer värdet för dimensionerna [Marknadskanal](/help/components/dimensions/marketing-channel.md) och [Marknadskanal ](/help/components/dimensions/marketing-detail.md) . Använd [Marketing Channel Manager](c-channels.md) för att avgöra vilka marknadsföringskanaler du använder och använd sedan bearbetningsregler för att avgöra hur varje kanal är inställd.
+Med bearbetningsregler för marknadsföringskanaler kan du skapa logik som bestämmer värdet för dimensionerna [Marknadskanal](/help/components/dimensions/marketing-channel.md) och [Marknadskanal &#x200B;](/help/components/dimensions/marketing-detail.md) . Använd [Marketing Channel Manager](c-channels.md) för att avgöra vilka marknadsföringskanaler du använder och använd sedan bearbetningsregler för att avgöra hur varje kanal är inställd.
 
 ![Marknadsföringskanalbucklar](assets/buckets_2.png)
 
