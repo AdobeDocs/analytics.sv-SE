@@ -3,9 +3,9 @@ title: VISTA-regler i Adobe Analytics
 description: Läs mer om VISTA-regler och deras funktioner.
 exl-id: fab2acc3-b037-48f9-bb20-625ccb75b4cc
 feature: Analytics Basics
-source-git-commit: a6967c7d4e1dca5491f13beccaa797167b503d6e
+source-git-commit: b1c22031b9254ff077dfdc04ab90ab231b504299
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '354'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,13 @@ Många användningsexempel för VISTA-regler finns redan i [Bearbetningsregler](
 
 >[!IMPORTANT]
 >
->VISTA-reglerna kräver ett betalt avtal mellan er organisation och Adobe Professional Services. Kontakta Adobe Account Team om du vill skapa eller uppdatera en VISTA-regel.
+>Implementering och konfigurering av VISTA-regler kräver ett betalt avtal mellan din organisation och Adobe Professional Services. Kontakta Adobe Account Team om du vill skapa eller uppdatera en VISTA-regel.
+>
+>Observera:
+>
+>* Skapande av VISTA-regel inkluderar endast den inledande implementeringen. Löpande underhåll eller uppdateringar av VISTA-regler kräver ett separat betalt åtagande.
+>
+>* VISTA-reglerna bygger på specifika villkor i dina data. Om du till exempel ändrar implementeringen av Adobe Analytics, datatyperna eller längden på strängar som samlas in, ändringar av tabellerna som används för DB VISTA eller andra ändringar av indatamönster kan det leda till att en VISTA-regel slutar fungera som förväntat. Adobe rekommenderar att du regelbundet granskar VISTA-reglerna för att avgöra om uppdateringar eller borttagning behövs.
 
 ## Skapa en VISTA-regel {#create}
 
