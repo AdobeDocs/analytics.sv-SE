@@ -5,9 +5,9 @@ subtopic: data feeds
 title: Referens för datakolumn
 feature: Data Feeds
 exl-id: e1492147-6e7f-4921-b509-898e7efda596
-source-git-commit: 8866608bc6d4e31c876c08894a90bfb982a7d19e
+source-git-commit: 25a50bafe355443e52969f24922ce4a40742e338
 workflow-type: tm+mt
-source-wordcount: '3670'
+source-wordcount: '3680'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Använd den här sidan om du vill veta vilka data som finns i varje kolumn. De f
 >
 >De flesta kolumner innehåller en liknande kolumn med prefixet `post_`. Bokför kolumner innehåller värden efter serversidans logik, bearbetningsregler och VISTA-regler. Adobe rekommenderar att du i de flesta fall använder inläggskolumner. Mer information finns i [Vanliga frågor om dataflöden](../df-faq.md).
 
-Tidigare uppdateringar av den här tabellen finns på den här sidans [implementeringshistorik på GitHub](https://github.com/AdobeDocs/analytics.sv-SE/commits/main/help/export/analytics-data-feed/c-df-contents/datafeeds-reference.md).
+Tidigare uppdateringar av den här tabellen finns på den här sidans [implementeringshistorik på GitHub](https://github.com/AdobeDocs/analytics.en/commits/main/help/export/analytics-data-feed/c-df-contents/datafeeds-reference.md).
 
 | Kolumnnamn | Kolumnbeskrivning | Datatyp |
 | --- | --- | --- |
@@ -164,8 +164,8 @@ Tidigare uppdateringar av den här tabellen finns på den här sidans [implement
 | **`prop1`** - `prop75` | Anpassade trafikvariabler 1-75. Används i måtten [Prop](/help/components/dimensions/prop.md). | varchar(100) |
 | **`purchaseid`** | Unik identifierare för ett köp, enligt inställningen med variabeln [`purchaseID`](/help/implement/vars/page-vars/purchaseid.md). Används av kolumnen `duplicate_purchase`. | char(20) |
 | **`quarterly_visitor`** | En flagga som avgör om träffen är en ny kvartalsbesökare. | tinyint unsigned |
-| **`ref_domain`** | Dimensionen [Referensdomän &#x200B;](/help/components/dimensions/referring-domain.md). Baserat på kolumnen `referrer`. | varchar(100) |
-| **`ref_type`** | Ett numeriskt ID som representerar typen av hänvisning för träffen. Används i dimensionen [Referenstyp](/help/components/dimensions/referrer-type.md). <ul><li>Inuti din webbplats</li><li>Andra webbplatser</li> <li>Sökmotorer</li> <li> AI-verktyg för konversation</li><li>Hårddisk</li> <li>USENET</li> <li>Typed/Bookmarked (ingen referent)</li> <li>E-post</li> <li>Ingen JavaScript</li> <li>Sociala nätverk</li></ul> | tinyint unsigned |
+| **`ref_domain`** | Dimensionen [Referensdomän ](/help/components/dimensions/referring-domain.md). Baserat på kolumnen `referrer`. | varchar(100) |
+| **`ref_type`** | Ett numeriskt ID som representerar typen av hänvisning för träffen. Används i dimensionen [Referenstyp](/help/components/dimensions/referrer-type.md). <p>1: Inuti din webbplats</p><p>2: Andra webbplatser</p> <p>3: Sökmotorer</p> <p>4: hårddisk</p> <p>5: USENET</p> <p>6: Typed/Bookmarked (ingen referent)</p> <p>7: E-post</p> <p>8: Ingen JavaScript</p> <p>9: Sociala nätverk</p><p>10: Konversationsbaserade AI-verktyg</p> | tinyint unsigned |
 | **`referrer`** | Dimensionen [Referent](/help/components/dimensions/referrer.md). Observera att medan `referrer` använder datatypen varchar(255) använder `post_referrer` datatypen varchar(244). | varchar(255) |
 | **`resolution`** | Ett numeriskt ID som representerar bildskärmens upplösning. Används i dimensionen [Bildskärmsupplösning](/help/components/dimensions/monitor-resolution.md). Använder `resolution.tsv`-uppslagstabell. | smallint unsigned |
 | **`s_kwcid`** | Nyckelord-ID som används i Adobe Advertising-integreringar. | varchar(255) |
@@ -197,7 +197,7 @@ Tidigare uppdateringar av den här tabellen finns på den här sidans [implement
 | **`videoad`** | Dimensionen [Ad](/help/components/dimensions/sm-ads.md) för direktuppspelande medietjänster. | varchar(255) |
 | **`videoadinpod`** | Dimensionen [Ad in pod position](/help/components/dimensions/sm-ads.md) för direktuppspelande medietjänster. | varchar(255) |
 | **`videoadlength`** | Dimensionen [Ad length (variabel)](/help/components/dimensions/sm-ads.md) för direktuppspelande medietjänster. | heltal |
-| **`videoadload`** | [Ad läser in &#x200B;](/help/components/dimensions/sm-ads.md)-dimensionen för direktuppspelande medietjänster. | varchar(255) |
+| **`videoadload`** | [Ad läser in ](/help/components/dimensions/sm-ads.md)-dimensionen för direktuppspelande medietjänster. | varchar(255) |
 | **`videoadname`** | Dimensionen [Ad name (variabel)](/help/components/dimensions/sm-ads.md) för direktuppspelande medietjänster. | varchar(255) |
 | **`videoadplayername`** | Dimensionen för [annonsspelarnamn](/help/components/dimensions/sm-ads.md) för direktuppspelande medietjänster. | varchar(255) |
 | **`videoadpod`** | Dimensionen [Ad pod](/help/components/dimensions/sm-ads.md) för direktuppspelande medietjänster. | varchar(255) |
@@ -410,4 +410,4 @@ Följande kolumnlista är oanvända, indragna eller innehåller inget värde i r
 >[!MORELIKETHIS]
 >
 >[Variabelmappning för XDM-objekt](/help/implement/aep-edge/xdm-var-mapping.md)
->[Variabelmappning för dataobjekt &#x200B;](/help/implement/aep-edge/data-var-mapping.md)
+>[Variabelmappning för dataobjekt ](/help/implement/aep-edge/data-var-mapping.md)
