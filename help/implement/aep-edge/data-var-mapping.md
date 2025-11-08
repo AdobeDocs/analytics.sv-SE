@@ -25,7 +25,7 @@ Vissa dataobjektfält har också stöd för sina respektive [frågeparametervär
 
 ## Mappning av dataobjektfält
 
-Tidigare uppdateringar av den här tabellen finns på den här sidans [implementeringshistorik på GitHub](https://github.com/AdobeDocs/analytics.en/commits/main/help/implement/aep-edge/data-var-mapping.md). På samma sätt som för AppMeasurement är alla dataobjektfält skiftlägeskänsliga.
+Tidigare uppdateringar av den här tabellen finns på den här sidans [implementeringshistorik på GitHub](https://github.com/AdobeDocs/analytics.sv-SE/commits/main/help/implement/aep-edge/data-var-mapping.md). På samma sätt som för AppMeasurement är alla dataobjektfält skiftlägeskänsliga.
 
 | Sökväg till dataobjektfält | Analysvariabel och beskrivning |
 | --- | --- |

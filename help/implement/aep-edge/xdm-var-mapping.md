@@ -23,7 +23,7 @@ De flesta XDM-objektfält i den här tabellen sammanfaller med ett [dataobjektf�
 
 ## Mappning av XDM-objektfält
 
-Tidigare uppdateringar av den här tabellen finns på den här sidans [implementeringshistorik på GitHub](https://github.com/AdobeDocs/analytics.en/commits/main/help/implement/aep-edge/xdm-var-mapping.md).
+Tidigare uppdateringar av den här tabellen finns på den här sidans [implementeringshistorik på GitHub](https://github.com/AdobeDocs/analytics.sv-SE/commits/main/help/implement/aep-edge/xdm-var-mapping.md).
 
 | Sökväg till XDM-fält | Analysvariabel och beskrivning |
 | --- | --- |
