@@ -3,7 +3,7 @@ description: Både Analytics och Audience Manager använder segment. Ett Analyti
 title: Förstå segment i Analytics och Audience Manager
 feature: Audience Analytics
 exl-id: 2bc662e7-7552-41e1-9d4a-bc7aa81b8c1d
-source-git-commit: fcc165536d77284e002cb2ba6b7856be1fdb3e14
+source-git-commit: 936644c719f46a1327c8a5aa247ed69a14d3da1e
 workflow-type: tm+mt
 source-wordcount: '719'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Audience Manager segmentmedlemskap är smidigt. Användare kan ange eller ta bor
 
 Ett Audience Manager-segment betecknas som en målgrupp i Analytics.
 
-Mer information finns i [Trait and Segment Population Data in Segment Builder](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/segments/segment-builder-data.html?lang=sv-SE) och [Signals, Traits och Segments](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/signal-trait-segment.html?lang=sv-SE).
+Mer information finns i [Trait and Segment Population Data in Segment Builder](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/segments/segment-builder-data.html) och [Signals, Traits och Segments](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/signal-trait-segment.html).
 
 ## Analyssegment {#analytics-segments}
 

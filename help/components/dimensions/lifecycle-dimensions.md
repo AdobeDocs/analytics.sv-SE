@@ -3,20 +3,20 @@ title: Dimensioner för mobil livscykel
 description: Dimensioner baserade på data som samlats in med Mobile SDK.
 feature: Dimensions
 exl-id: b7ba45d7-7d30-48a3-a747-ea9fbb253abb
-source-git-commit: 4c472d9a99f15ed253b68124aa31bdc88554d9a5
+source-git-commit: 936644c719f46a1327c8a5aa247ed69a14d3da1e
 workflow-type: tm+mt
-source-wordcount: '103'
-ht-degree: 0%
+source-wordcount: '96'
+ht-degree: 1%
 
 ---
 
 # Dimensioner för mobil livscykel
 
-*Sidreferensdata som ofta spåras via Adobe Experience Platform Mobile SDK. Information om mobila enheter med användaragenten finns i [Dimensioner för mobilsökning](mobile-dimensions.md). Information om mätvärden som spåras med Mobile SDK finns i [Mobila livscykelvärden](../metrics/lifecycle-metrics.md).*
+*Sidreferensdata som ofta spåras via Adobe Experience Platform Mobile SDK. Information om mobila enheter med användaragenten finns i [Dimensioner för mobilsökning](mobile-dimensions.md). Mätvärden som spåras med Mobile SDK finns i [Mobila livscykelvärden](../metrics/lifecycle-metrics.md).*
 
 | Namn på livscykeldimension | Beskrivning | Sammanhangsdatavariabel |
 | --- | --- | --- |
-| [!UICONTROL First Launch Date] | | TBD |
+| [!UICONTROL First Launch Date] | | |
 | [!UICONTROL Device Name (SDK)] | | `a.DeviceName` |
 | [!UICONTROL Operating System Version (SDK)] | | `a.OSVersion` |
 | [!UICONTROL Resolution (SDK)] | | `a.Resolution` |
@@ -33,16 +33,16 @@ ht-degree: 0%
 | [!UICONTROL Distance to Point of Interest Center] | | `a.loc.dist` |
 | [!UICONTROL Launch Number] | | `a.Launches` |
 | [!UICONTROL Days Since First Use] | | `a.DaysSinceFirstUse` |
-| [!UICONTROL Action Name] | | TBD |
+| [!UICONTROL Action Name] | | |
 | [!UICONTROL Lifetime Value (evar)] | | `a.ltv.amount` |
-| [!UICONTROL Beacon Major] | | TBD |
-| [!UICONTROL Beacon Minor] | | TBD |
-| [!UICONTROL Beacon UUID] | | TBD |
-| [!UICONTROL Beacon Proximity] | | TBD |
+| [!UICONTROL Beacon Major] | | |
+| [!UICONTROL Beacon Minor] | | |
+| [!UICONTROL Beacon UUID] | | |
+| [!UICONTROL Beacon Proximity] | | |
 | [!UICONTROL Days Since Last Use] | | `a.DaysSinceFirstUse` |
 | [!UICONTROL Hour of Day (SDK)] | | `a.HourOfDay` |
 | [!UICONTROL Day of Week (SDK)] | | `a.DayOfWeek` |
-| [!UICONTROL Point of Interest ID] | | TBD |
+| [!UICONTROL Point of Interest ID] | | |
 
 {style="table-layout:auto"}
 

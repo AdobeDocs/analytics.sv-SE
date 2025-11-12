@@ -4,7 +4,7 @@ title: GDPR/ePrivacy compliance och vidarebefordran på serversidan
 feature: Report Suite Settings
 exl-id: 54e43a16-8f15-4ee8-9aa2-579af30be2c9
 role: Admin
-source-git-commit: a6967c7d4e1dca5491f13beccaa797167b503d6e
+source-git-commit: 936644c719f46a1327c8a5aa247ed69a14d3da1e
 workflow-type: tm+mt
 source-wordcount: '549'
 ht-degree: 0%
@@ -29,8 +29,8 @@ Följ de här stegen beroende på vilken implementeringsmetod du använder.
 
 | Implementeringsmetod | Steg |
 |--- |--- |
-| Taggar i Adobe Experience Platform | Om du har Adobe Analytics-tillägget installerat lägger du till följande kontextdatavariabeldefinition i den anpassade kodredigeraren i åtgärdskonfigurationen för en regel: <br/>`s.contextData['cm.ssf']&nbsp;=&nbsp;'1' ` <br/>Obs! Definiera kontextdatavariabeln och ange den till 1 om kunden inte samtycker till riktad marknadsföring. Ställ in variabeln `contextdata` på *0* för kunder som samtyckte till riktad marknadsföring. |
-| AppMeasurement | Lägg till definitionen av kontextdatavariabeln i filen AppMeasurement.js: <br/>`s.contextData['cm.ssf']&nbsp;=&nbsp;'1' ` <br/>Obs! Definiera kontextdatavariabeln och ange den till 1 om en kund inte samtycker till riktad marknadsföring. Ställ in kontextdatavariabeln på 0 för kunder som samtyckte till riktad marknadsföring. |
+| Taggar i Adobe Experience Platform | Om du har Adobe Analytics-tillägget installerat lägger du till följande kontextdatavariabeldefinition i den anpassade kodredigeraren i åtgärdskonfigurationen för en regel: <br/>`s.contextData['cm.ssf'] = '1'` <br/>Obs! Definiera kontextdatavariabeln och ange den till 1 om kunden inte samtycker till riktad marknadsföring. Ställ in variabeln `contextdata` på *0* för kunder som samtyckte till riktad marknadsföring. |
+| AppMeasurement | Lägg till definitionen av kontextdatavariabeln i filen AppMeasurement.js: <br/>`s.contextData['cm.ssf'] = '1'` <br/>Obs! Definiera kontextdatavariabeln och ange den till 1 om en kund inte samtycker till riktad marknadsföring. Ställ in kontextdatavariabeln på 0 för kunder som samtyckte till riktad marknadsföring. |
 
 ## Rapportering (valfritt) {#section_6AD4028EC11C4DABA2A34469DDC99E89}
 
