@@ -3,9 +3,9 @@ title: Dynamiska sökningar
 description: Lär dig mer om vad dynamiska sökningar är och hur du aktiverar dem. Innefattar bärare, mobilattribut och operativsystemstyper.
 exl-id: 12327239-06a2-4092-b27d-b94da39abf30
 feature: Data Feeds
-source-git-commit: 6b8366b451be1612331f517ee80fd57744deafdc
+source-git-commit: 705a1716ed0205594fc6c75023c8805024ce7df7
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '306'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,16 @@ Med dynamiska sökningar kan du ta emot ytterligare sökfiler i din datafeed som
 * **Mobilattribut**: Tillhandahåller ytterligare kontext för kolumnen `mobile_id`, inklusive alla funktioner som spåras för varje mobil enhet. Det inkluderade filnamnet är `mobile_attributes.tsv`.
 * **Operativsystemtyp**: Anger en alternativ kontext för kolumnen `os`. I både `operating_systems.tsv` och `operating_system_type.tsv` används kolumnen `os` som nyckel, men bara `operating_system_type.tsv` är en dynamisk sökning.
 
-## Aktivera dynamiska sökningar
+## Aktivera dynamiska sökningar {#enable-dynamic-lookups}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aa_datafeed_dynamic_lookups"
+>title="Aktivera dynamiska sökningar"
+>abstract="Välj det här alternativet om du vill få fler sökfiler i din datafeed som annars inte är tillgängliga. Med den här inställningen kan följande uppslagstabeller skickas med varje dataflödesfil:<ul><li>Transportföretagets namn</li><li>Mobilattribut</li><li>Operativsystemtyp</li></ul>"
+
+<!-- markdownlint-enable MD034 -->
 
 Om du vill få de uppslagsfiler som nämns måste du uppfylla följande krav:
 
@@ -38,14 +47,14 @@ När din datafeed uppfyller kraven för kolumninkludering och exkludering kontak
 Kolumnrubrikerna för de här sökfilerna ändras inte över tid, så rubrikerna tas inte med i varje dataflödesfil. Använd de här kolumnrubrikerna som referens eller hämta deras respektive `.tsv`-fil.
 
 +++**Transportföretagets namn**
-Ladda ned [&#x200B; operator_headers.tsv &#x200B;](assets/carrier_headers.tsv) eller referera till rubrikerna nedan.
+Hämta [operator_headers.tsv](assets/carrier_headers.tsv) eller referera till rubrikerna nedan.
 
 `carrier`
 `Carrier Name`
 +++
 
 +++**Mobilattribut**
-Hämta [&#x200B; mobile_attributes_headers.tsv &#x200B;](assets/mobile_attributes_headers.tsv) eller referera till rubrikerna nedan.
+Hämta [mobile_attributes_headers.tsv](assets/mobile_attributes_headers.tsv) eller referera till rubrikerna nedan.
 
 `mobile_id`
 `Manufacturer`
@@ -100,7 +109,7 @@ Hämta [&#x200B; mobile_attributes_headers.tsv &#x200B;](assets/mobile_attribute
 +++
 
 +++**Operativsystemtyp**
-Hämta [&#x200B; operating_system_type_headers.tsv &#x200B;](assets/operating_system_type_headers.tsv) eller referera till rubrikerna nedan.
+Hämta [operating_system_type_headers.tsv](assets/operating_system_type_headers.tsv) eller referera till rubrikerna nedan.
 
 `os`
 `Operating System Type`

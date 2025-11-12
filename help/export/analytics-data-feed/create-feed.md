@@ -3,9 +3,9 @@ title: Skapa en datafeed
 description: Lär dig hur du skapar en datafeed och om filinformationen som ska skickas till Adobe.
 feature: Data Feeds
 exl-id: 36c8a40e-6137-4836-9d4b-bebf17b932bc
-source-git-commit: f0a5f72667fd6fc7847ede82d5196d9159fc558c
+source-git-commit: af3583bb7dfc2fce083a41432680ef3933eb9582
 workflow-type: tm+mt
-source-wordcount: '4136'
+source-wordcount: '4223'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,25 @@ När du skapar en datafeed får du följande från Adobe:
 
 Innan du skapar en datafeed är det viktigt att du har en grundläggande förståelse för dataflöden och att du ser till att alla krav uppfylls. Mer information finns i [Översikt över dataflöden](data-feed-overview.md).
 
-## Skapa och konfigurera en datafeed
+## Skapa och konfigurera en datafeed {#create-and-configure-data-feed}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aa_datafeed_os_strings"
+>title="Ersätt strängar för operativsystem"
+>abstract="Med det här alternativet rensas utdata genom att följande strängsekvenser som är inbäddade i kunddata identifieras och ersätts med ett blanksteg: <br/>Windows: CRLF, CR eller TAB<br/>Mac och Linux: \n, \r eller \t"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aa_datafeed_export_file"
+>title="Manifest"
+>abstract="Välj om du vill inkludera en manifestfil för varje datafeed-leverans. Manifestfilerna innehåller information för varje inkluderad fil i dataflödet. När du skickar data för datafeed i ett enskilt paket kan du även välja att inkludera en färdig fil, men manifestfiler rekommenderas. "
+
+<!-- markdownlint-enable MD034 -->
 
 1. Logga in på [experiencecloud.adobe.com](https://experiencecloud.adobe.com) med inloggningsuppgifterna för ditt Adobe ID.
 1. Markera ikonen med nio kvadrater i det övre högra hörnet och välj sedan [!UICONTROL **Analytics**].
