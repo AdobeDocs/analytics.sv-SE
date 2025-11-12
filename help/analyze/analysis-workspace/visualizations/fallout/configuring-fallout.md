@@ -4,7 +4,7 @@ title: Konfigurera en utfallsvisualisering
 feature: Visualizations
 role: User, Admin
 exl-id: 9d2a0163-a5cb-4a1c-97e9-e78a8f99aaee
-source-git-commit: 75c1585f88d9d3adcf66632c52cecf2a97fa2632
+source-git-commit: ca84a5f807545d7196e2e0e90d3209c32d3fd789
 workflow-type: tm+mt
 source-wordcount: '758'
 ht-degree: 0%
@@ -46,7 +46,7 @@ Du kan göra målningar på dimensioner, mätvärden och segment. Anta till exem
 
 1. Du kan också **begränsa enskilda kontaktytor till nästa händelse** (till skillnad från *så småningom*) i banan. Under varje kontaktyta finns det en väljare med alternativen **[!UICONTROL Eventual path]** och **[!UICONTROL Next event]**, vilket visas här:
 
-   ![Vyn Alla besök visar alternativet för eventuell sökväg markerat. &#x200B;](assets/fallout-nexthit.png)
+   ![Vyn Alla besök visar alternativet för eventuell sökväg markerat. ](assets/fallout-nexthit.png)
 
    | Alternativ | Beskrivning |
    |---|---|
@@ -81,7 +81,7 @@ Som en del av visualiseringen finns det specifika alternativ för snabbmenyer.
 >[!MORELIKETHIS]
 >
 >[Lägg till en visualisering på en panel](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
->&#x200B;>[Visualiseringsinställningar](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
->&#x200B;>[Snabbmenyn Visualisering &#x200B;](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>[Visualiseringsinställningar](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>[Snabbmenyn Visualisering ](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >
 

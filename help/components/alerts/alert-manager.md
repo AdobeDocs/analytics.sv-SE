@@ -3,7 +3,7 @@ description: Lär dig hur du hanterar aviseringar.
 title: Hantera aviseringar
 feature: Alerts
 exl-id: 3408c79f-3d85-44b9-8fca-ce956853dfa4
-source-git-commit: 665319bdfc4c1599292c2e7aea45622d77a291a7
+source-git-commit: ca84a5f807545d7196e2e0e90d3209c32d3fd789
 workflow-type: tm+mt
 source-wordcount: '562'
 ht-degree: 0%
@@ -178,10 +178,10 @@ To manage existing alerts in the Alerts manager:
 
 1. In the action bar, select any of the following options:
 
-   | Action | Function | 
+   | Action | Function |
    |---------|----------|
-   | [!UICONTROL **Tag**] | Apply a tag to an alert. This helps you to organize alerts for ease of use. | 
-   | [!UICONTROL **Delete**] | Deletes the alert. | 
+   | [!UICONTROL **Tag**] | Apply a tag to an alert. This helps you to organize alerts for ease of use. |
+   | [!UICONTROL **Delete**] | Deletes the alert. |
    | [!UICONTROL **Rename**] | Renames the alert. |
    | [!UICONTROL **Approve**] | Mark the alert as Approved. |
    | [!UICONTROL **Copy**] | Creates a copy (duplicate) of the alert. |
@@ -230,7 +230,7 @@ To configure the visible columns in the Alerts manager:
    | Title and description | These values are provided in the Alert builder. To edit the title and description, select the title link to open the Alert builder.  |
    | Favorites  | Displays star icons next to each alert, allowing you to mark alerts as favorites. |
    | Type | Shows whether the alert is an Analytics data alert or a Server call usage alert. |
-   | Enabled | Shows whether the alert is currently enabled or disabled. | 
+   | Enabled | Shows whether the alert is currently enabled or disabled. |
    | Report suite | Indicates in which report suite the alert was last saved.  |
    | Owner | Indicates who owns the alert. As a non-admin, you can see only alerts you own or those that were shared with you.  |
    | Tags | Shows tags that were applied to the alert, either by you or by people who shared the alert with you.  |

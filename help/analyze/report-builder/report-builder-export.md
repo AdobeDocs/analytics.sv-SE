@@ -6,7 +6,7 @@ feature: Report Builder
 type: Documentation
 solution: Analytics
 exl-id: 5829482b-3a5e-416b-9c82-404face30b29
-source-git-commit: ecb08c3d9dfe7394ecff5415c08be7a38b0cba6a
+source-git-commit: ca84a5f807545d7196e2e0e90d3209c32d3fd789
 workflow-type: tm+mt
 source-wordcount: '1212'
 ht-degree: 0%

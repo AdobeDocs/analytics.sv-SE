@@ -4,7 +4,7 @@ title: Paneler - översikt
 feature: Panels
 role: User, Admin
 exl-id: dd1a3c40-8b5b-47dd-86d9-da766575ee46
-source-git-commit: a6967c7d4e1dca5491f13beccaa797167b503d6e
+source-git-commit: ca84a5f807545d7196e2e0e90d3209c32d3fd789
 workflow-type: tm+mt
 source-wordcount: '2101'
 ht-degree: 1%
@@ -91,7 +91,7 @@ Du kan hantera en panel på följande sätt:
 
 ## Rapportsvit
 
-Varje panel är associerad med en [rapportserie](/help/admin/tools/manage-rs/report-suites-admin.md) som identifieras av ![Data](/help/assets/icons/Data.svg) **[!UICONTROL *namnet på rapportsviten *]**&#x200B;i listrutan längst upp till höger på panelen.
+Varje panel är associerad med en [rapportserie](/help/admin/tools/manage-rs/report-suites-admin.md) som identifieras av ![Data](/help/assets/icons/Data.svg) **[!UICONTROL *namnet på rapportsviten *]**i listrutan längst upp till höger på panelen.
 
 När du skapar en ny panel baseras standardrapportsviten på rapportsviten från den panel du senast arbetade på i Analysis Workspace-projektet.
 
@@ -184,7 +184,7 @@ Med statiska rullgardinssegment kan du interagera med data på ett kontrollerat 
 
 Statiska rullgardinssegment kan också användas för att konsolidera många projekt till ett. Om du till exempel har många versioner av samma projekt med olika landssegment tillämpade, kan du konsolidera alla versioner till ett enda projekt och lägga till ett nedrullningsbart landssegment.
 
-![Statiska nedrullningsbara segment med filtret &quot;Direkt&quot; för marknadskanalen markerat. &#x200B;](assets/dropdown-filter-intro.png)
+![Statiska nedrullningsbara segment med filtret &quot;Direkt&quot; för marknadskanalen markerat. ](assets/dropdown-filter-intro.png)
 
 ##### Skapa statiska rullgardinssegment
 
@@ -348,7 +348,7 @@ Right-clicking a drop-down segment provides the following options:
 * **[!UICONTROL Add label]**: When you add a drop-down segment to a project, a label is automatically set to the component name. If you delete the label, you can add it again with this option.
 * **[!UICONTROL Require selection]**: Requires that a segment is set on the panel. 
 
-[Watch the video](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-panels-to-organize-your-analysis-workspace-projects.html?lang=sv-SE) to learn more about how to add drop-down filters to your project.
+[Watch the video](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-panels-to-organize-your-analysis-workspace-projects.html) to learn more about how to add drop-down filters to your project.
 
 #### Use static drop-down segments
 

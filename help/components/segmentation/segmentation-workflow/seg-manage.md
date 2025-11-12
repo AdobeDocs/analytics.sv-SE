@@ -3,7 +3,7 @@ description: Lär dig hur du använder segmenthanteraren för att hantera segmen
 title: Hantera segment
 feature: Segmentation
 exl-id: be182a55-23cb-415f-a7d0-3c1efeead1a1
-source-git-commit: 35f2812c1a1a4eed090e04d67014fcebf88a80ec
+source-git-commit: ca84a5f807545d7196e2e0e90d3209c32d3fd789
 workflow-type: tm+mt
 source-wordcount: '526'
 ht-degree: 0%
@@ -34,7 +34,7 @@ Segmenthanteraren har följande gränssnittselement:
 Segmentlistan ➊ visar alla segment som du äger, de segment som har omfattats av alla dina projekt och de segment som har delats med dig. Listan innehåller följande kolumner:
 
 | Kolumn | Beskrivning |
-| --- | --- | 
+| --- | --- |
 | ![StarOutline](/help/assets/icons/StarOutline.svg) | Välj om du vill gynna ![Star](/help/assets/icons/Star.svg) eller ![StarOutline](/help/assets/icons/StarOutline.svg) ett segment. Se [Markera segment som favorit](t-seg-favorite.md) |
 | **[!UICONTROL Title and description]** | Om du vill redigera segmentet markerar du titellänken, som öppnar [segmentverktyget](seg-build.md). Ett delat segment anges med ![Dela](/help/assets/icons/ShareAlt.svg). |
 | **[!UICONTROL Report suitew]** | Rapportsviten som det här segmentet gäller för. |
@@ -55,7 +55,7 @@ Du kan vidta åtgärder för segment med åtgärdsfältet ➋. Åtgärdsfältet 
 | ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** | Lägg till ett annat segment med hjälp av [segmentverktyget](seg-build.md). |
 | ![Sök](/help/assets/icons/Search.svg) [!UICONTROL *Sök efter titel*] | Om inget segment är markerat i listan söker du efter segment med det här sökfältet. |
 | ![Etikett](/help/assets/icons/Label.svg) **[!UICONTROL Tag]** | Tagga de markerade segmenten. I dialogrutan **[!UICONTROL Tag Segment]** markerar eller avmarkerar du taggarna för de markerade segmenten. Välj **[!UICONTROL Save]** om du vill spara taggarna för de valda segmenten. Mer information finns i [Tagga segment](seg-tag.md). |
-| ![Dela](/help/assets/icons/ShareAlt.svg) **[!UICONTROL Share]** | Dela de markerade segmenten. I dialogrutan **[!UICONTROL Share Segment]** kan du ![&#x200B; söka &#x200B;](/help/assets/icons/Search.svg) *söka efter enskilda personer eller grupper* eller välja **[!UICONTROL Organization]** eller **[!UICONTROL Groups]**. Välj **[!UICONTROL Save]** om du vill spara delningsinformation för de valda segmenten. Mer information finns i [Dela segment](t-seg-share.md). |
+| ![Dela](/help/assets/icons/ShareAlt.svg) **[!UICONTROL Share]** | Dela de markerade segmenten. I dialogrutan **[!UICONTROL Share Segment]** kan du ![ söka ](/help/assets/icons/Search.svg) *söka efter enskilda personer eller grupper* eller välja **[!UICONTROL Organization]** eller **[!UICONTROL Groups]**. Välj **[!UICONTROL Save]** om du vill spara delningsinformation för de valda segmenten. Mer information finns i [Dela segment](t-seg-share.md). |
 | ![Ta bort](/help/assets/icons/Delete.svg) **[!UICONTROL Delete]** | Ta bort markerade segment. Du uppmanas att bekräfta åtgärden. |
 | ![Redigera](/help/assets/icons/Edit.svg) **[!UICONTROL Rename]** | Byt namn på ett enskilt markerat segment. När du har markerat det här alternativet kan du byta namn på segmentet. |
 | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Approve]** | Godkänn de markerade segmenten. Mer information finns i [Godkänn segment](seg-approve.md). |
@@ -137,6 +137,6 @@ To configure the visible columns in the Segment manager:
 
 ## How-To Video {#section_B3C5DA22DC5248DBA17C56E03DA2D4F2}
 
-This [Adobe Analytics video](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/components/segmentation/segment-management-and-sharing.html?lang=sv-SE) gives a short overview of how to use the Segment manager.
+This [Adobe Analytics video](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/components/segmentation/segment-management-and-sharing.html) gives a short overview of how to use the Segment manager.
 
 -->

@@ -5,7 +5,7 @@ uuid: f6d8c90f-e185-4d60-8035-f20f74bfcd89
 feature: Report Builder
 role: User, Admin
 exl-id: 6aaadaa8-d68f-4a03-8838-53a61b152e31
-source-git-commit: fcecc8a493852f5682fd7fbd5b9bb484a850922c
+source-git-commit: ca84a5f807545d7196e2e0e90d3209c32d3fd789
 workflow-type: tm+mt
 source-wordcount: '948'
 ht-degree: 0%
@@ -22,7 +22,7 @@ Du kan till exempel schemalägga att arbetsböcker ska levereras omedelbart elle
 
 >[!NOTE]
 >
->Du måste ha Excel 2007 eller kompatibilitetspaketet installerat för att kunna schemalägga en arbetsbok. Du kan ha högst 10 schemalagda arbetsböcker per licens för Report Builder. Du kan dock öka antalet genom att subtrahera från andra licenser. Gå till **[!UICONTROL Admin]** > **[!UICONTROL All admin]** > **[!UICONTROL Company settings]** > **[!UICONTROL Report Builder Reports]** om du vill göra det. En arbetsbok som har schemalagts (eller överförts till arbetsboksbiblioteket) och som inte har ändrats (uppdaterats, ersatts) på mer än 28 månader kommer att tas bort.
+>Du måste ha Excel 2007 eller kompatibilitetspaketet installerat för att kunna schemalägga en arbetsbok. Du kan ha högst tio schemalagda arbetsböcker per Report Builder-licens. Du kan dock öka antalet genom att subtrahera från andra licenser. Gå till **[!UICONTROL Admin]** > **[!UICONTROL All admin]** > **[!UICONTROL Company settings]** > **[!UICONTROL Report Builder Reports]** om du vill göra det. En arbetsbok som har schemalagts (eller överförts till arbetsboksbiblioteket) och som inte har ändrats (uppdaterats, ersatts) på mer än 28 månader kommer att tas bort.
 
 >[!NOTE]
 >
@@ -37,10 +37,10 @@ Du kan till exempel schemalägga att arbetsböcker ska levereras omedelbart elle
 ## Schemalägg en arbetsbok
 
 1. Generera och spara en arbetsbok.
-1. Klicka på **[!UICONTROL Schedule]** i verktygsfältet Report Builder.
+1. Klicka på **[!UICONTROL Schedule]** i verktygsfältet i Report Builder.
 
    Fliken [!UICONTROL Scheduled Reports] sammanfattar alla uppgifter som du har skapat samt antalet återstående uppgifter.
-1. Klicka på **[!UICONTROL New]** på fliken **[!UICONTROL Scheduled Reports]**. I guiden Grundläggande schemaläggning visas de alternativ som används för att definiera den schemalagda rapporten.
+1. Klicka på **[!UICONTROL Scheduled Reports]** på fliken **[!UICONTROL New]**. I guiden Grundläggande schemaläggning visas de alternativ som används för att definiera den schemalagda rapporten.
 
    ![Skärmbild som visar guiden Grundläggande schemaläggning.](assets/simple-schedule-wizard.png)
 
@@ -53,7 +53,7 @@ Du kan till exempel schemalägga att arbetsböcker ska levereras omedelbart elle
 | Anpassa | Här kan du anpassa datumformatet. |
 | Till | Visar adressboken i Outlook, om tillämpligt. |
 | Skicka till: E-post | E-postmottagaren för arbetsboken. |
-| Power BI | Mer information finns i [Publish Workbook till Microsoft Power BI](/help/analyze/legacy-report-builder/c-publish-power-bi/integration-power-bi.md). |
+| Power BI | Mer information finns i [Publicera arbetsbok till Microsoft Power BI](/help/analyze/legacy-report-builder/c-publish-power-bi/integration-power-bi.md). |
 | Ämne | En användardefinierad beskrivning. |
 | Schemaläggning | Här kan du ange när arbetsboken ska skickas. (Omedelbart, varje timme, varje dag, varje vecka, varje månad och varje år.) |
 
@@ -72,8 +72,8 @@ Du kan till exempel schemalägga att arbetsböcker ska levereras omedelbart elle
 | Filmål | Anger e-post eller FTP. Alternativen på sidan ändras beroende på vad du väljer. För FTP måste du se till att värden är tillgänglig externt. |
 | Språk för filinnehåll | Anger det språk som du vill använda för omslagsbrevet. Du kan välja kinesiska (förenklad eller traditionell), tyska, franska, japanska, koreanska, portugisiska (Brasilien) eller spanska. |
 | **Fliken Publiceringsalternativ** |  |
-| Publicera på Power BI | <ul><li>Publish Workbook till Power BI</li><li>Publish Alla Report Builder begär som Power BI-datauppsättningar</li><li>Publish Alla formaterade tabeller som Power BI-datauppsättningar</li></ul> |
-| Ange etiketten för den här Power BIET som | Etikettinformation |
+| Publicera till Power BI | <ul><li>Publicera arbetsbok till Power BI</li><li>Publicera alla Report Builder-begäranden som Power BI-datauppsättningar</li><li>Publicera alla formaterade tabeller som Power BI-datauppsättningar</li></ul> |
+| Märk den här Power BI-rapporten som | Etikettinformation |
 
 1. Klicka på **[!UICONTROL OK]** och sedan på **[!UICONTROL Exit]**.
 

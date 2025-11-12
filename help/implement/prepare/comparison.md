@@ -4,7 +4,7 @@ description: Se fördelarna med varje metod som skickar data till Adobe Analytic
 exl-id: 19353255-6356-4426-a2ef-5a2672a00eca
 feature: Implementation Basics
 role: Admin, Developer, Leader
-source-git-commit: 8e701a3da6f04ccf2d7ac3abd10c6df86feb00a7
+source-git-commit: ca84a5f807545d7196e2e0e90d3209c32d3fd789
 workflow-type: tm+mt
 source-wordcount: '490'
 ht-degree: 0%
@@ -31,7 +31,7 @@ Jämför de olika metoderna för att implementera Adobe Analytics med varandra. 
 
 >[!CAUTION]
 >
->Stöd för version 4 Mobile SDK upphörde den 31 augusti 2021. Mer information finns i [Vanliga frågor och svar om Adobe Mobile Services](https://experienceleague.adobe.com/docs/discontinued/using/mobile-services.html?lang=sv-SE).
+>Stöd för version 4 Mobile SDK upphörde den 31 augusti 2021. Mer information finns i [Vanliga frågor och svar om Adobe Mobile Services](https://experienceleague.adobe.com/docs/discontinued/using/mobile-services.html).
 
 
 | | [Mobile SDK](/help/implement/aep-edge/mobile-sdk/overview.md) | [Edge Network API](/help/implement/aep-edge/api/overview.md) |

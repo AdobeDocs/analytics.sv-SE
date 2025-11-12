@@ -4,7 +4,7 @@ description: Lär dig hantera datumintervall i Analysis Workspace.
 feature: Date Ranges
 role: User
 exl-id: 48cda13f-ec4d-43fa-be24-51e2ab6044dd
-source-git-commit: ff38740116ac6f12033ebdc17cffa3250a30f3f7
+source-git-commit: ca84a5f807545d7196e2e0e90d3209c32d3fd789
 workflow-type: tm+mt
 source-wordcount: '558'
 ht-degree: 0%
@@ -30,7 +30,7 @@ Hanteraren för datumintervall har följande gränssnittselement:
 I datumintervalllistan ➊ visas alla datumintervall. Listan innehåller följande kolumner:
 
 | Kolumn | Beskrivning |
-| --- | --- | 
+| --- | --- |
 | ![StarOutline](/help/assets/icons/StarOutline.svg) | Välj om du vill prioritera ![Star](/help/assets/icons/Star.svg) eller ![StarOutline](/help/assets/icons/StarOutline.svg) ett datumintervall. |
 | **[!UICONTROL Title and description]** | Om du vill redigera titeln och beskrivningen markerar du titellänken, som öppnar [datumintervallsverktyget](create.md#date-range-builder). |
 | **[!UICONTROL Owner]** | Ägaren till datumintervallet. |
@@ -51,7 +51,7 @@ Du kan utföra åtgärder för datumintervall med åtgärdsfältet ➋. Åtgärd
 | ![AddCircle](/help/assets/icons/AddCircle.svg) | **[!UICONTROL Add]** | Lägg till ett annat datumintervall med hjälp av [datumintervallverktyget](create.md#date-range-builder). |
 | ![Sök](/help/assets/icons/Search.svg) | [!UICONTROL *Sök efter titel*] | Om inget datumintervall är markerat i listan söker du efter datumintervall med det här sökfältet. |
 | ![Etikett](/help/assets/icons/Label.svg) | **[!UICONTROL Tag]** | Tagga de markerade datumintervallen. I dialogrutan **[!UICONTROL Tag Date range]** markerar eller avmarkerar du taggarna för de markerade datumintervallen. Välj **[!UICONTROL Save]** om du vill spara taggarna för de valda datumintervallen. |
-| ![Dela](/help/assets/icons/ShareAlt.svg) | **[!UICONTROL Share]** | Dela de markerade datumintervallen. I dialogrutan **[!UICONTROL Share Date range]** kan du ![&#x200B; söka &#x200B;](/help/assets/icons/Search.svg) *söka efter enskilda personer eller grupper* eller välja **[!UICONTROL Organization]** eller **[!UICONTROL Groups]**. Välj **[!UICONTROL Save]** om du vill spara delningsinformation för de valda datumintervallen. |
+| ![Dela](/help/assets/icons/ShareAlt.svg) | **[!UICONTROL Share]** | Dela de markerade datumintervallen. I dialogrutan **[!UICONTROL Share Date range]** kan du ![ söka ](/help/assets/icons/Search.svg) *söka efter enskilda personer eller grupper* eller välja **[!UICONTROL Organization]** eller **[!UICONTROL Groups]**. Välj **[!UICONTROL Save]** om du vill spara delningsinformation för de valda datumintervallen. |
 | ![Ta bort](/help/assets/icons/Delete.svg) | **[!UICONTROL Delete]** | Ta bort de markerade datumintervallen. Du uppmanas att bekräfta åtgärden. |
 | ![Redigera](/help/assets/icons/Edit.svg) | **[!UICONTROL Rename]** | Byt namn på ett enstaka markerat datumintervall. När du har markerat det här alternativet kan du byta namn på datumintervallet. |
 | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | **[!UICONTROL Approve]** | Godkänn de valda datumintervallen. |

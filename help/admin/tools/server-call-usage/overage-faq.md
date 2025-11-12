@@ -4,7 +4,7 @@ title: Vanliga frågor om användning av serversamtal
 feature: Server Call Usage
 exl-id: a660542c-9389-4608-bc25-49831c21ceb7
 role: Admin
-source-git-commit: a6967c7d4e1dca5491f13beccaa797167b503d6e
+source-git-commit: ca84a5f807545d7196e2e0e90d3209c32d3fd789
 workflow-type: tm+mt
 source-wordcount: '648'
 ht-degree: 0%

@@ -5,7 +5,7 @@ title: Hantera datakällor
 feature: Visualizations
 role: User, Admin
 exl-id: 0500b27a-032e-4dc8-98b7-58519ef59368
-source-git-commit: f258a1150a4bee11f5922d058930dc38b1ddfa14
+source-git-commit: ca84a5f807545d7196e2e0e90d3209c32d3fd789
 workflow-type: tm+mt
 source-wordcount: '421'
 ht-degree: 0%

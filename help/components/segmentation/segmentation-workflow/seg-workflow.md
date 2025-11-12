@@ -3,7 +3,7 @@ description: Lär dig mer om ett föreslaget arbetsflöde för att skapa segment
 title: Översikt över segmenteringsarbetsflöde
 feature: Segmentation
 exl-id: 2ed6e327-d69d-4cdb-9b87-99ebebc37e2c
-source-git-commit: 35f2812c1a1a4eed090e04d67014fcebf88a80ec
+source-git-commit: ca84a5f807545d7196e2e0e90d3209c32d3fd789
 workflow-type: tm+mt
 source-wordcount: '266'
 ht-degree: 7%

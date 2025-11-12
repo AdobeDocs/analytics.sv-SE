@@ -3,7 +3,7 @@ description: Beskriver hur du migrerar komponenter och projekt från Adobe Analy
 title: Migrera komponenter och projekt från Adobe Analytics till Customer Journey Analytics
 feature: Admin Tools
 exl-id: 49c7e47a-464b-4465-9b30-d77f886ca6dc
-source-git-commit: ec4475cdd8f0c3e89f528bd60155caa1ca3f0645
+source-git-commit: ca84a5f807545d7196e2e0e90d3209c32d3fd789
 workflow-type: tm+mt
 source-wordcount: '1635'
 ht-degree: 0%
@@ -143,7 +143,7 @@ Gör dessutom en [Adobe Analytics-inventering](/help/admin/tools/analytics-inven
 
    Om migreringen misslyckas finns mer information i avsnittet [Försök igen med en misslyckad migrering](#retry-a-failed-migration) nedan.
 
-1. (Valfritt) När projekten har migrerats kan du överföra ägarskapet för projekten till vilken användare som helst i Customer Journey Analytics. Mer information finns i [Överför resurser](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/tools/asset-transfer/transfer-assets) i Customer Journey Analytics Guide.
+1. (Valfritt) När projekten har migrerats kan du överföra ägarskapet för projekten till vilken användare som helst i Customer Journey Analytics. Mer information finns i [Överför resurser](https://experienceleague.adobe.com/en/docs/analytics-platform/using/tools/asset-transfer/transfer-assets) i Customer Journey Analytics Guide.
 
 ## Försök att utföra migreringen igen
 

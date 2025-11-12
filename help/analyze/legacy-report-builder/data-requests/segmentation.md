@@ -4,7 +4,7 @@ title: Hantera segment (Report Builder)
 feature: Report Builder
 role: User, Admin
 exl-id: c4ad89e0-91c9-47e1-a226-69d82fdb8918
-source-git-commit: fcc165536d77284e002cb2ba6b7856be1fdb3e14
+source-git-commit: ca84a5f807545d7196e2e0e90d3209c32d3fd789
 workflow-type: tm+mt
 source-wordcount: '935'
 ht-degree: 0%
@@ -52,7 +52,7 @@ Du kan ha specifika kombinationer av rapportdimensioner som du vill omvandla til
 1. Gå tillbaka till Report Builder och klicka på ikonen Uppdatera för att uppdatera listan med segment.
 1. Du kan nu använda det här segmentet.
 
-## Söka efter och använda segment {#search}
+## Söka efter och använda segment
 
 Alla segment som har skapats i Rapporter och analyser (som nu slutar gälla), Report Builder eller Data Warehouse visas i den här segmentlistan. Om du vill uppdatera listan klickar du på ikonen Uppdatera ![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg).
 

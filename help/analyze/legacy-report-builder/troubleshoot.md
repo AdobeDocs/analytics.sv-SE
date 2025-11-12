@@ -1,14 +1,14 @@
 ---
-description: Lär dig hur du kan optimera leveransen till Report Builder och en lista över felmeddelanden som kan visas.
+description: Lär dig hur du kan optimera leveransen av Report Builder och en lista med felmeddelanden som kan visas.
 title: Felsökning och bästa praxis för Report Builder
 uuid: 36a08143-dc78-40f5-9ce9-7d16980aa27b
 feature: Report Builder
 role: User, Admin
 exl-id: 41a640ce-2316-439b-b3ba-f0bace9af268
-source-git-commit: fcecc8a493852f5682fd7fbd5b9bb484a850922c
+source-git-commit: ca84a5f807545d7196e2e0e90d3209c32d3fd789
 workflow-type: tm+mt
 source-wordcount: '1403'
-ht-degree: 54%
+ht-degree: 52%
 
 ---
 
@@ -41,11 +41,11 @@ Report Builder kräver autentisering för att skapa dataförfrågningar från di
    * Logga in på Analytics med samma inloggningsföretag för att säkerställa att det är korrekt. Om du inte kan logga in med dessa uppgifter kontaktar du någon av organisationens administratörer för att få rätt inloggningsföretag.
 * **Brandvägg**: Report Builder använder portarna 80 och 443. Se till att portarna tillåts via organisationens brandvägg. Se även Adobes interna IP-adresser för ytterligare undantag för brandväggar.
 
-## Recommendations för optimering av begäranden {#section_33EF919255BF46CD97105D8ACB43573F}
+## Rekommendationer för optimering av begäranden {#section_33EF919255BF46CD97105D8ACB43573F}
 
 Följande faktorer kan göra begäran mer komplex och leda till långsammare behandling.
 
-* **Faktorer som kan göra leveranser långsammare**: För många bokmärken, instrumentpaneler och arbetsböcker från Report Builder har schemalagts inom några timmar. Överväg också att alltför många Report Builder-arbetsböcker har schemalagts ungefär samtidigt. När detta inträffar blir rapport-API-kön eftersläpad.
+* **Faktorer som kan göra leveranser långsammare**: För många bokmärken, instrumentpaneler och Report Builder-arbetsböcker har schemalagts inom några timmar. Överväg också att alltför många Report Builder-arbetsböcker har schemalagts ungefär samtidigt. När detta inträffar blir rapport-API-kön eftersläpad.
 * **Faktorer som kan göra arbetsbokens körningsmiljö långsammare**: Betydande ökning av klassificeringar eller ökning av datumintervallet för begäran över tid.
 * **Orsaker som orsakar leveransfel för arbetsböcker**: Komplexa Excel-formler i en arbetsbok, särskilt sådana som innehåller datum och tid.
 * **Celler som returnerar 0s (inga värden)**: En apostrof eller ett enkelt citattecken i Excel-kalkylbladsnamnet gör att Report Builder inte returnerar några värden. (Detta är en Microsoft Excel-begränsning.)
@@ -54,19 +54,19 @@ Följande faktorer kan göra begäran mer komplex och leda till långsammare beh
   | Inställning | Snabbare prestanda | Långsammare prestanda |
   |--- |--- |--- |
   | Uppdelningar och uppdelningsordning | Få | Många |
-  |  | Exempel: Om du delar upp efter A-Z ska antalet objekt för A alltid vara mindre än antalet objekt för Z. Om det är motsatsen kan begärandetiden öka avsevärt. |
+  |  | Exempel: Om du delar upp efter A-Z ska antalet objekt för A alltid vara mindre än antalet objekt för Z. Om det är motsatsen kan begärandetiden öka avsevärt. |  |
   | Datumintervall | Litet intervall | Stort intervall |
   | Filtrering | Specifik filtrering | Mest populära filtrering |
   | Kornighet | Sammanställd | Varje timme<ul><li>Dagligen</li><li>Veckovis</li><li>Månadsvis</li><li>Kvartalsvis</li><li>Årlig</li></ul> |
   | Antal poster | Liten datauppsättning | Stor datauppsättning |
 
-* **Schemaläggningstid**: Starkare schemaläggning över en 24-timmarsperiod (se tabellen nedan). Befintliga bokmärken, instrumentpaneler och arbetsböcker i Report Builder som är schemalagda att avslutas kan orsaka förseningar. Schemalägg större och mer komplexa begäranden på morgonen för att möjliggöra manuella körningar och uppdateringar under arbetsdagen.
+* **Schemaläggningstid**: Starkare schemaläggning över en 24-timmarsperiod (se tabellen nedan). Befintliga bokmärken, instrumentpaneler och Report Builder-arbetsböcker som är schemalagda att avslutas kan orsaka förseningar. Schemalägg större och mer komplexa begäranden på morgonen för att möjliggöra manuella körningar och uppdateringar under arbetsdagen.
 
   | Schemaläggningstid | 01:00 - 02:00 | 02:00 - 07:00 | 07:00 - 18:00. | 18:00 - Midnatt |
   |--- |--- |--- |--- |--- |
   | Report Builder-användning | Tyst | Mycket upptagen | Användning på klientsidan.<br>Många användare som uppdaterar lokalt och begär att få skicka direkt.<br>Kontrollera också om API-kön är rensad när en tidsgräns för schemalagda arbetsböcker överskrids. | Inte upptagen |
 
-* **Timeout**: Alla schemalagda rapporter inträffar efter fyra timmar. Systemet försöker schemalägga ytterligare tre gånger, vilket kan leda till ett fel. (I allmänhet tar det längre tid att köra datauppsättningen ju större den är.) Detta märks i [!DNL Analytics] rapportering och i Report Builder:
+* **Timeout**: Alla schemalagda rapporter inträffar efter fyra timmar. Systemet försöker schemalägga ytterligare tre gånger, vilket kan leda till ett fel. (I allmänhet tar det längre tid att köra datauppsättningen, ju större den är.) Dessa kan ses i [!DNL Analytics]-rapporter och Report Builder:
 
 ## Exempel på felmeddelandebeskrivningar {#section_3DF3A1EEDAD149CB941BEABEF948A4A5}
 
@@ -76,7 +76,7 @@ I det här avsnittet finns ett exempel på en lista med felmeddelanden som kan v
 >
 >Detta är ett exempel på felmeddelanden och inte en fullständig lista. Kontakta administratören om du vill ha mer information om hur du löser fel.
 
-* **Den här funktionen kan bara användas på en öppen arbetsbok.**: Om inga arbetsböcker (kalkylbladsdokument) är öppna i Excel och du klickar på en av ikonerna i verktygsfältet Report Builder visas det här meddelandet. Dessutom inaktiveras verktygsfältet tills du öppnar ett kalkylblad. Du kan dock klicka på ikonen för onlinehjälp medan verktygsfältet fortfarande är aktiverat utan att detta fel uppstår.
+* **Den här funktionen kan bara användas på en öppen arbetsbok.**: Om inga arbetsböcker (kalkylbladsdokument) är öppna i Excel och du klickar på en av ikonerna i verktygsfältet i Report Builder visas det här meddelandet. Dessutom inaktiveras verktygsfältet tills du öppnar ett kalkylblad. Du kan dock klicka på ikonen för onlinehjälp medan verktygsfältet fortfarande är aktiverat utan att detta fel uppstår.
 * **Du måste först avsluta [!UICONTROL Request Wizard] innan du aktiverar [!UICONTROL Request Manager].**: När [!UICONTROL Request Manager] och [!UICONTROL Request Wizard] är länkade funktionellt går det inte att börja arbeta med [!UICONTROL Request Manager] innan åtgärder som har vidtagits i [!UICONTROL Request Wizard] har slutförts eller avbrutits.
 * **Det finns ingen begäran associerad med det här intervallet.**: Det här felmeddelandet visas om du klickar på knappen [!UICONTROL From Sheet] i [!UICONTROL Request Manager] när en cell i kalkylbladet inte innehåller några begäranden. Om du vill identifiera vilka celler i kalkylbladet som innehåller begäranden klickar du på de enskilda begärandena som visas i tabellen i [!UICONTROL Request Manager]. Om en begäran är kopplad till celler, visas cellerna som markerade när begäran är markerad i tabellen.
 * **Det markerade intervallet är inte giltigt. Välj ett annat intervall.**: Om en cell i kalkylbladet är markerad och redan har en begäran mappad till den, inträffar det här felet. Du kan antingen ta bort den begäran som är kopplad till cellerna eller välja ett annat cellintervall att mappa. När du vill ta bort celler är det viktigt att leta reda på celler som innehåller begäranden och ta bort begäran innan cellerna tas bort (rader eller kolumner tas bort).
@@ -87,5 +87,5 @@ I det här avsnittet finns ett exempel på en lista med felmeddelanden som kan v
    2. Zippa upp innehållet och öppna mappen `/xl/`.
    3. Ta bort `calcChain.xml`.
    4. Zippa upp innehållet igen och ändra filnamnstillägget tillbaka till `.xlsx`.
-   5. Öppna arbetsboken i Excel och uppdatera alla förfrågningar från Report Builder.
+   5. Öppna arbetsboken i Excel och uppdatera alla Report Builder-begäranden.
 * **Excel-celler som är associerade med indatafilter eller utdataområde kan ha tagits bort**: Report Builder använder Excel-namn för att bifoga dataförfrågningar till celler. Om du tar bort Excel-namn från Names Manager visas det här felet. Begäranden kan inte återställas om Excel-namn tas bort. Om arbetsboken har schemalagts kan du antingen hämta en kopia från schemaläggningshanteraren eller öppna tidigare levererade kopior av arbetsboken.

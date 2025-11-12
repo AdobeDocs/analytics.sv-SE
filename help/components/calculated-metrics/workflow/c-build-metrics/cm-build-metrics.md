@@ -3,7 +3,7 @@ description: Lär dig mer om det beräknade mätverktyget som ger en arbetsyta d
 title: Bygg mått
 feature: Calculated Metrics
 exl-id: 12bb3734-e25d-4c67-8c62-e1226d9aef94
-source-git-commit: 665319bdfc4c1599292c2e7aea45622d77a291a7
+source-git-commit: ca84a5f807545d7196e2e0e90d3209c32d3fd789
 workflow-type: tm+mt
 source-wordcount: '1338'
 ht-degree: 0%
@@ -20,7 +20,7 @@ Du kan använda verktyget för beräknade mätvärden för att skapa eller redig
 
 ## Områden för verktyget för beräknade mätvärden
 
-Dialogrutan **[!UICONTROL Calculated metric builder]** används för att skapa nya eller redigera befintliga beräknade värden. Dialogrutan heter **[!UICONTROL New calculated metric]** eller **[!UICONTROL Edit calculated metric]** för mått som du skapar eller hanterar från [[!UICONTROL Calculated metrics]-hanteraren &#x200B;](../cm-manager.md).
+Dialogrutan **[!UICONTROL Calculated metric builder]** används för att skapa nya eller redigera befintliga beräknade värden. Dialogrutan heter **[!UICONTROL New calculated metric]** eller **[!UICONTROL Edit calculated metric]** för mått som du skapar eller hanterar från [[!UICONTROL Calculated metrics]-hanteraren ](../cm-manager.md).
 
 >[!BEGINTABS]
 
@@ -186,7 +186,7 @@ Om du vill ta bort en behållare väljer du ![Stäng](/help/assets/icons/Close.s
 >[!MORELIKETHIS]
 >
 >[Använda funktioner](cm-using-functions.md)
->&#x200B;>[Segment](/help/components/segmentation/seg-overview.md)
+>[Segment](/help/components/segmentation/seg-overview.md)
 >
 
 

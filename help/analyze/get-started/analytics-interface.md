@@ -3,7 +3,7 @@ description: Allmän översiktsinformation om Adobe Analytics, inklusive informa
 title: Förstå analysgränssnittet
 feature: Analytics Basics
 exl-id: 61ae6aa6-96e4-4794-8ce3-0d6e0ec47e0a
-source-git-commit: 325a42c080290509309e90c9127138800d5ac496
+source-git-commit: ca84a5f807545d7196e2e0e90d3209c32d3fd789
 workflow-type: tm+mt
 source-wordcount: '1969'
 ht-degree: 5%
@@ -74,7 +74,7 @@ Fliken [!UICONTROL Components] innehåller funktioner som hjälper dig att finju
    |---------|----------|----------|
    | Data Warehouse | Data Warehouse avser kopian av Analytics-data för lagring och anpassade rapporter, som du kan köra genom att filtrera data. <p>Med Hanteraren för begäran kan du visa, duplicera och prioritera om begäranden.</p> | [Hantera Data Warehouse-förfrågningar](/help/export/data-warehouse/data-warehouse-requests-manage.md) |
    | Activity Map | Activity Map är utformat för att rangordna länkaktivitet med hjälp av visuella överlägg och tillhandahålla en instrumentpanel med realtidsanalyser för att övervaka målgruppernas engagemang på era webbsidor. Ni kan skapa olika vyer för att visuellt identifiera kundaktivitetens acceleration, kvantifiera marknadsföringssatsningar och agera utifrån målgruppens behov och beteenden. | [Översikt över Activity Map](/help/analyze/activity-map/overview.md) |
-   | Klassiska rekommendationer | Rekommendationer är en Adobe Target-funktion som automatiskt visar produkter, tjänster eller innehåll som kan intressera besökarna baserat på tidigare användaraktivitet, önskemål eller andra kriterier. | [Rekommendationer](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations.html?lang=sv-SE) |
+   | Klassiska rekommendationer | Rekommendationer är en Adobe Target-funktion som automatiskt visar produkter, tjänster eller innehåll som kan intressera besökarna baserat på tidigare användaraktivitet, önskemål eller andra kriterier. | [Rekommendationer](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations.html) |
    | Sök och marknadsför | Den här funktionen stöds inte längre. |  |
    | Mobiltjänster | Den här funktionen stöds inte längre. |  |
    | Kontrollpaneler för analyser (mobilapp) | Appen Adobe Analytics dashboards ger dig alltid insikter från Adobe Analytics. Via appen kan användarna visa intuitiva styrkort som du skapar med hjälp av Adobe Analytics datorgränssnitt. | Adobe Analytics-appen för kontrollpaneler i iOS App Store eller Google Play Store |

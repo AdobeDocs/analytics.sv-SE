@@ -4,7 +4,7 @@ title: Exempel på etiketter
 feature: Data Governance
 role: Admin
 exl-id: 9bea8636-c79c-4998-8952-7c66d31226e3
-source-git-commit: 325a42c080290509309e90c9127138800d5ac496
+source-git-commit: 0b8b9d0067c183bfeb13816f942b3726ac66d08c
 workflow-type: tm+mt
 source-wordcount: '723'
 ht-degree: 57%
@@ -42,12 +42,13 @@ Sammanfattningsfilen innehåller till exempel värdena som anges i tabellen neda
 <table>
   <tr>
     <th colspan="2" style="text-align:center">API-värden</th>
-    <th rowspan="2">Sammanfattning<br/>av filtyp<br/> returnerades</th>
+    <th>Sammanfattning<br/>av filtyp<br/> returnerades</th>
     <th colspan="5" style="text-align:center">Data i sammanfattad åtkomstfil</th>
   </tr>
   <tr>
     <th>Namnutrymme/ID</th>
     <th>expandIDs</th>
+    <th></th>
     <th>MyProp1</th>
     <th>Besökar-ID</th>
     <th>MyEvar1</th>

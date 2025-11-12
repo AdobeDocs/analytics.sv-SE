@@ -4,7 +4,7 @@ title: Översikt över datumintervall
 feature: Date Ranges
 role: User, Admin
 exl-id: fbf4bc18-65ba-4e39-96c1-4c41a8e3baa9
-source-git-commit: ff38740116ac6f12033ebdc17cffa3250a30f3f7
+source-git-commit: ca84a5f807545d7196e2e0e90d3209c32d3fd789
 workflow-type: tm+mt
 source-wordcount: '513'
 ht-degree: 0%
@@ -38,8 +38,8 @@ Du kan också använda ett datumintervall i en frihandstabell som ett mått elle
 Du använder ett datumintervall på samma sätt som du [använder valfri komponent](/help/analyze/analysis-workspace/components/analysis-workspace-components.md#analysis-workspace-components). Du drar datumintervallet från komponentpanelen ![Kalender](/help/assets/icons/Calendar.svg) **[!UICONTROL Date ranges]** och släpper komponenten på:
 
 - **[!UICONTROL Calendar]**: Du ![Växlar](/help/assets/icons/Switch.svg) **[!UICONTROL Replace]** den aktuella kalenderkonfigurationen med datumintervallet.
-- **Kolumnrubrik för mått**: Du ![Växlar](/help/assets/icons/Switch.svg) **[!UICONTROL Replace]** måttet, ![Lägg till &#x200B;](/help/assets/icons/Add.svg)**[!UICONTROL Add]**&#x200B;datumintervallet som ett mått eller ![Filter](/help/assets/icons/Filter.svg)**[!UICONTROL Filter]**&#x200B;måttet med datumintervallkomponenten.
-- **Dimension kolumnrubrik**: ![Byt](/help/assets/icons/Switch.svg) **[!UICONTROL Replace]** de aktuella dimensionerna. Den nya dimensionen är nu **[!UICONTROL Date ranges]**. När dimensionen är datumintervall kan du ![lägga till &#x200B;](/help/assets/icons/Add.svg)**[!UICONTROL Add]**&#x200B;ytterligare datumintervall som dimensionsobjekt.
+- **Kolumnrubrik för mått**: Du ![Växlar](/help/assets/icons/Switch.svg) **[!UICONTROL Replace]** måttet, ![Lägg till ](/help/assets/icons/Add.svg)**[!UICONTROL Add]**datumintervallet som ett mått eller ![Filter](/help/assets/icons/Filter.svg)**[!UICONTROL Filter]**måttet med datumintervallkomponenten.
+- **Dimension kolumnrubrik**: ![Byt](/help/assets/icons/Switch.svg) **[!UICONTROL Replace]** de aktuella dimensionerna. Den nya dimensionen är nu **[!UICONTROL Date ranges]**. När dimensionen är datumintervall kan du ![lägga till ](/help/assets/icons/Add.svg)**[!UICONTROL Add]**ytterligare datumintervall som dimensionsobjekt.
 - **Dimension-objekt**: Du ![Bryter ned](/help/assets/icons/Breakdown.svg) **[!UICONTROL Breakdown]** det specifika dimensionsobjektet efter datumintervallet.
 
 Du kan också lägga till en datumintervallkolumn direkt i en visualisering av en frihandsfigur:
@@ -112,7 +112,7 @@ The first click on a calendar starts a date range selection. The second click co
 
 You can also drag dates (and time dimensions) into a Workspace project. You can select specific days, weeks, months, years, or a rolling date.
 
-[Using Date Ranges and Calendar in Analysis Workspace](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/calendar-and-date-ranges/using-dates-in-analysis-workspace.html?lang=sv-SE) (4:07)
+[Using Date Ranges and Calendar in Analysis Workspace](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/calendar-and-date-ranges/using-dates-in-analysis-workspace.html) (4:07)
 
 | Setting | Description |
 |--- |--- |

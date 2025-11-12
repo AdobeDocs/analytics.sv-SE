@@ -4,7 +4,7 @@ title: Adobe Analytics landningssida
 role: User, Admin
 feature: Analytics Basics
 exl-id: 0a2fb778-491a-4dc3-aae4-afadb3ab1a1e
-source-git-commit: fcc165536d77284e002cb2ba6b7856be1fdb3e14
+source-git-commit: ca84a5f807545d7196e2e0e90d3209c32d3fd789
 workflow-type: tm+mt
 source-wordcount: '1415'
 ht-degree: 0%
@@ -80,7 +80,7 @@ De tillgängliga kolumnerna är:
 | [!UICONTROL Open release notes] | Öppnar Adobe Analytics-delen av den senaste versionsinformationen för Adobe Experience Cloud. |
 | Filterikon | Filter efter taggar, rapportsviter, ägare, typer och andra filter (Min, Delad med mig, Favoriter och Godkänd) |
 | Sökfältet | Söker igenom alla kolumner i tabellen. |
-| Markeringsruta | Väljer ett eller flera projekt för att visa de projekthanteringsåtgärder som du kan utföra: **Ta bort**, **Dela**, **Byt namn**, **Kopiera**, **Ta bort**, **Flytta uppåt**, **Flytta nedåt**, **Tagg** 6&rbrace;Godkänn **,** Exportera CSV **och** Flytta till **.** Du kanske inte har behörighet att utföra alla listade åtgärder. |
+| Markeringsruta | Väljer ett eller flera projekt för att visa de projekthanteringsåtgärder som du kan utföra: **Ta bort**, **Dela**, **Byt namn**, **Kopiera**, **Ta bort**, **Flytta uppåt**, **Flytta nedåt**, **Tagg** 6}Godkänn **,** Exportera CSV **och** Flytta till **.** Du kanske inte har behörighet att utföra alla listade åtgärder. |
 | [!UICONTROL Favorites] | Lägger till en stjärna bredvid ett favoritprojekt eller en mapp som kan användas som filter. |
 | [!UICONTROL Name] | Identifierar namnet på projektet. |
 | Fäst ikon | Fäster objekt så att de alltid visas högst upp i listan, men du kan ändra ordningen genom att flytta dem uppåt eller nedåt i den ordning som de visas. Använd ellipsalternativmenyn och välj **Flytta upp** eller **Flytta ned** i listan. |

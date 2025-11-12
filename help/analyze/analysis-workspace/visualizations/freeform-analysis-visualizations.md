@@ -5,7 +5,7 @@ title: Visualiseringar - översikt
 feature: Visualizations
 role: User, Admin
 exl-id: b40aa942-4a08-4ff3-9895-e92f9a187b54
-source-git-commit: fcc165536d77284e002cb2ba6b7856be1fdb3e14
+source-git-commit: ca84a5f807545d7196e2e0e90d3209c32d3fd789
 workflow-type: tm+mt
 source-wordcount: '1621'
 ht-degree: 1%
@@ -22,7 +22,7 @@ Följande visualiseringstyper finns i Analysis Workspace:
 
 
 | Ikon | Namn | Beskrivning |
-| :---: | --- | ---| 
+| :---: | --- | ---|
 | ![GraphArea](/help/assets/icons/GraphArea.svg) | [Område](/help/analyze/analysis-workspace/visualizations/area.md) | En områdesgraf visualisering. Som ett linjediagram, men med ett färgat område under linjen. Använd ett ytdiagram när du har flera mätvärden och vill visualisera området som uttrycks genom skärningspunkten för två eller flera mätvärden. |
 | ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) | [Bar](/help/analyze/analysis-workspace/visualizations/bar.md) | En stapeldiagramvisualisering med lodräta staplar som representerar olika värden över en eller flera mätvärden. |
 | ![GraphBarVertical](/help/assets/icons/GraphBarVerticalStacked.svg) | [Stapel staplad](/help/analyze/analysis-workspace/visualizations/bar.md) | En staplad stapeldiagramvisualisering med lodräta staplar som representerar olika värden över ett eller flera mätvärden. |

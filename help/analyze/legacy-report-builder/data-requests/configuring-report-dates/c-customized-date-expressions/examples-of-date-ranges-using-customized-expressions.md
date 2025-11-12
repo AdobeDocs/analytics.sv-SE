@@ -5,9 +5,9 @@ uuid: 3f46816d-9eee-4b2d-83be-bf1c9fb97fcf
 feature: Report Builder
 role: User, Admin
 exl-id: d936dd4e-d330-4ed9-a979-3273397d7d92
-source-git-commit: ae6ffed05f5a33f032d0c7471ccdb1029154ddbd
+source-git-commit: ca84a5f807545d7196e2e0e90d3209c32d3fd789
 workflow-type: tm+mt
-source-wordcount: '421'
+source-wordcount: '389'
 ht-degree: 1%
 
 ---
@@ -22,13 +22,13 @@ I tabellen antas dagens datum vara måndag, 10 november 2011, med den gregorians
 
 | Exempel | Datumintervall | Anpassa uttryck | Rapportens datumintervall |
 |---|---|---|---|
-|  | | **Från** | **Till** | |
-| 1 | För två veckor sedan | cw-2w | cw-1w-1d | 26 okt till 1 nov |
-| 2 | De första 3 dagarna i den femte månaden i det senaste året | cy-1y+4m | cy-1y+4m+2d | 1 maj-3 maj 2010 |
-| 3 | En hel vecka med början för 4 veckor sedan | cw-4w | cw-3w-1d | 12 okt till 18 okt |
-| 4 | Senaste veckan föregående år | cw-53w | cw-52w-1d | 9 nov 2010-9 nov |
-| 5 | En månad med början för 2 månader sedan | cm-2m | cm-1m-1d | 1 sept till 30 sept |
-| 6 | För 12 månader sedan föregående år | cm-12m | cm-11m-1d | 1 nov till 30 nov 2010 |
+|  | | **Från** | **Till** |
+| 1 | För två veckor sedan | `cw-2w  \| cw-1w-1d` | 26 okt till 1 nov |
+| 2 | De första 3 dagarna i den femte månaden i det senaste året | `cy-1y+4m  \| cy-1y+4m+2d` | 1 maj-3 maj 2010 |
+| 3 | En hel vecka med början för 4 veckor sedan | `cw-4w  \| cw-3w-1d` | 12 okt till 18 okt |
+| 4 | Senaste veckan föregående år | `cw-53w  \| cw-52w-1d` | 9 nov 2010-9 nov |
+| 5 | En månad med början för 2 månader sedan | `cm-2m  \| cm-1m-1d` | 1 sept till 30 sept |
+| 6 | För 12 månader sedan föregående år | `cm-12m  \| cm-11m-1d` | 1 nov till 30 nov 2010 |
 
 ## Kommentarer till exempel {#section_37801B0D6D364ABAA8DCE3A4C0123B2C}
 

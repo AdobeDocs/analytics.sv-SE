@@ -4,7 +4,7 @@ title: Filtrera och ordna
 feature: Freeform Tables
 role: User, Admin
 exl-id: 15fea9e2-f8d8-4489-9a44-e74a351b8f36
-source-git-commit: 3daac356a1d3f90572ab8b627dfeedfc6575cbbc
+source-git-commit: ca84a5f807545d7196e2e0e90d3209c32d3fd789
 workflow-type: tm+mt
 source-wordcount: '1094'
 ht-degree: 0%

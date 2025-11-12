@@ -5,7 +5,7 @@ title: Success events overview
 feature: Metrics
 role: Admin
 exl-id: d52a691a-8124-4601-932f-d6d2d0a7842b
-source-git-commit: 665319bdfc4c1599292c2e7aea45622d77a291a7
+source-git-commit: ca84a5f807545d7196e2e0e90d3209c32d3fd789
 workflow-type: tm+mt
 source-wordcount: '924'
 ht-degree: 1%
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 Slutförda händelser (kallas även konverteringshändelser eller anpassade händelser) är åtgärder som kan spåras. Du avgör vilken händelse som lyckas. Om en besökare till exempel köper ett objekt kan köphändelsen betraktas som en lyckad händelse.
 
-En videoöversikt över lyckade händelser finns i [Introduktion till konverteringshändelser](https://experienceleague.adobe.com/sv/docs/analytics-learn/tutorials/analysis-workspace/metrics/introduction-to-conversion-events) i självstudiekurserna för Analytics.
+En videoöversikt över lyckade händelser finns i [Introduktion till konverteringshändelser](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/metrics/introduction-to-conversion-events) i självstudiekurserna för Analytics.
 
 ## Exempel på lyckade händelser
 
@@ -71,7 +71,7 @@ Så här konfigurerar du lyckade händelser:
    | Inställning | Synlig i | Inte synlig i |
    |---------|----------|---------|
    | [!UICONTROL **Visas överallt**] | <ul><li>Analysis Workspace</li><li>Segment Builder</li><li>Beräknad metrisk Builder</li></ul> | Ej tillämpligt |
-   | [!UICONTROL **Builders**] | <ul><li>Segment Builder</li><li>Beräknad metrisk Builder</li><li>Analysis Workspace</li></ul> |
+   | [!UICONTROL **Builders**] | <ul><li>Segment Builder</li><li>Beräknad metrisk Builder</li><li>Analysis Workspace</li></ul> |  |
    | [!UICONTROL **Dold överallt**] | Ej tillämpligt | <ul><li>Analysis Workspace</li><li>Segment Builder</li><li>Beräknad metrisk Builder</li></ul> |
 
 1. Markera kryssrutan i kolumnen [!UICONTROL **Beskrivning**] och ange sedan en beskrivning.

@@ -4,7 +4,7 @@ title: Hantera Analytics-användare och -resurser
 feature: Admin Tools
 exl-id: 849a8279-4850-4458-bdd2-85052a17ee21
 role: Admin
-source-git-commit: a6967c7d4e1dca5491f13beccaa797167b503d6e
+source-git-commit: ca84a5f807545d7196e2e0e90d3209c32d3fd789
 workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 0%

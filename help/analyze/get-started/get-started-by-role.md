@@ -3,7 +3,7 @@ description: Allmän översiktsinformation om Adobe Analytics, inklusive informa
 title: Kom igång för administratörer, analytiker, slutanvändare och utvecklare
 feature: Analytics Basics
 exl-id: 11800de5-224a-4bd2-8cb1-a6318925db71
-source-git-commit: 665319bdfc4c1599292c2e7aea45622d77a291a7
+source-git-commit: ca84a5f807545d7196e2e0e90d3209c32d3fd789
 workflow-type: tm+mt
 source-wordcount: '1672'
 ht-degree: 5%
@@ -79,7 +79,7 @@ Analysadministratörer bör utföra följande uppgifter innan de gör Adobe Anal
 | Bidragsanalys | Contribute Analysis avslöjar dolda mönster i era data för att förklara statistiska avvikelser och identifiera korrelationer bakom oväntade kundaktiviteter, obundna värden och plötsliga toppar eller dalar för valda mätvärden över konvergerande målgruppssegment. | [Översikt över bidragsanalys](/help/analyze/analysis-workspace/c-anomaly-detection/anomaly-detection.md#contribution-analysis) |
 | Analyssegmentering | Gör att ni kan skapa, hantera, dela och tillämpa kraftfulla, fokuserade målgruppssegment i era rapporter med hjälp av Analytics-funktionerna, Adobe Experience Cloud, Adobe Target och andra integrerade Adobe-produkter. | [Analytics-segmentering](/help/components/segmentation/seg-home.md) |
 | Publicera målgrupper på Audience Manager | Adobe Audience Manager är en kraftfull datahanteringsplattform som hjälper er att skapa unika målgruppsprofiler från dataintegreringar från första part, andra part (partner) och tredje part. | [Audience Analytics - översikt](/help/integrate/c-audience-analytics/mc-audiences-aam.md) |
-| Integreringar | Du kan visa information från andra program i Adobe Analytics. <p>Nedan följer några vanliga integreringar:</p><ul><li><a href="/help/analyze/analysis-workspace/c-panels/a4t-panel.md">Analyser för mål</a></li><li><a href="https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=sv-SE">Direktuppspelande medietjänster</a></li> | [Analytics-integrering](/help/integrate/home.md) |
+| Integreringar | Du kan visa information från andra program i Adobe Analytics. <p>Nedan följer några vanliga integreringar:</p><ul><li><a href="/help/analyze/analysis-workspace/c-panels/a4t-panel.md">Analyser för mål</a></li><li><a href="https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html">Direktuppspelande medietjänster</a></li> | [Analytics-integrering](/help/integrate/home.md) |
 
 {style="table-layout:auto"}
 

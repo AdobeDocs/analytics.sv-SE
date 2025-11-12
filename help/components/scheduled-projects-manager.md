@@ -3,7 +3,7 @@ description: Lär dig hantera schemalagda projekt.
 title: Schemalagda projekt
 feature: Admin Tools
 exl-id: 8bc8d983-f680-48fa-8483-694c87a9ae4c
-source-git-commit: e09234ca27fbf923e026aa1f2ed0ebfed636bf7c
+source-git-commit: ca84a5f807545d7196e2e0e90d3209c32d3fd789
 workflow-type: tm+mt
 source-wordcount: '740'
 ht-degree: 0%
@@ -124,7 +124,7 @@ To modify a scheduled project
 | [!UICONTROL Expiration date] | For any scheduled project frequency, you can set the expiration date for up to one year in the future. |
 | [!UICONTROL Frequency] | How often you want to have this schedule project sent to the recipient(s). |
 | [!UICONTROL Execution time] | At what time of day this scheduled project gets sent. |
-| [!UICONTROL Number of queries] | The number of queries against this project. | 
+| [!UICONTROL Number of queries] | The number of queries against this project. |
 
 ## Common actions
 

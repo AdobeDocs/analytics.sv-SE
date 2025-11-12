@@ -1,31 +1,31 @@
 ---
-description: Lär dig hur du visar, duplicerar och prioriterar om Data Warehouse.
-title: Hantera förfrågningar från Data Warehouse
+description: Lär dig hur du visar, duplicerar och prioriterar om Data Warehouse-förfrågningar.
+title: Hantera Data Warehouse-förfrågningar
 feature: Data Warehouse
 uuid: cdeb764f-56f9-43ec-9228-8ed5a2b58909
 exl-id: a399d366-8402-4f4f-9b9f-14b218cd074a
-source-git-commit: d929e97a9d9623a8255f16729177d812d59cec05
+source-git-commit: ca84a5f807545d7196e2e0e90d3209c32d3fd789
 workflow-type: tm+mt
 source-wordcount: '1148'
 ht-degree: 0%
 
 ---
 
-# Hantera förfrågningar från Data Warehouse
+# Hantera Data Warehouse-förfrågningar
 
-Du kan visa och hantera förfrågningar från Data Warehouse som du har gjort. Endast administratörer kan visa och hantera förfrågningar som gjorts av andra användare i organisationen.
+Du kan visa och hantera Data Warehouse-begäranden som du har gjort. Endast administratörer kan visa och hantera förfrågningar som gjorts av andra användare i organisationen.
 
 I följande avsnitt beskrivs aktiviteter som du kan utföra när du hanterar begäranden.
 
 ## Visa förfrågningar
 
-Som standard kan du bara visa de begäranden som du skapar, såvida inte användare har valt att göra sina förfrågningar synliga för andra i organisationen (vilket beskrivs i [Datans Warehouse allmänna inställningar](/help/export/data-warehouse/create-request/dw-general-settings.md)). Systemadministratörer kan visa alla begäranden.
+Som standard kan du bara visa de förfrågningar du skapar, såvida inte användarna har valt att göra deras förfrågningar synliga för andra i organisationen (vilket beskrivs i [Data Warehouse begär allmänna inställningar](/help/export/data-warehouse/create-request/dw-general-settings.md)). Systemadministratörer kan visa alla begäranden.
 
 Så här visar du förfrågningar från Data Warehouse:
 
 1. I Adobe Analytics väljer du [!UICONTROL **Verktyg**] > [!UICONTROL **Data Warehouse**].
 
-   På sidan Data Warehouse visas alla förfrågningar som du har gjort. Data visas i varje kolumn. Du kan [konfigurera vilka kolumner &#x200B;](#configure-columns) som ska visas.
+   På Data Warehouse-sidan visas alla förfrågningar du har gjort. Data visas i varje kolumn. Du kan [konfigurera vilka kolumner ](#configure-columns) som ska visas.
 
    <!-- add screenshot of main page -->
 
@@ -35,7 +35,7 @@ Så här visar du förfrågningar från Data Warehouse:
 
    * När en begäran började bearbetas
 
-   * Begränsad hastighet: För många begäranden om Data Warehouse körs i organisationen. Begäran pausas tills andra dataförfrågningar har slutförts.
+   * Begränsad hastighet: Din organisation kör för många Data Warehouse-begäranden. Begäran pausas tills andra dataförfrågningar har slutförts.
 
 ## Redigera begäranden
 
@@ -51,7 +51,7 @@ Så här redigerar du en schemalagd begäran:
 
 1. I Adobe Analytics väljer du [!UICONTROL **Verktyg**] > [!UICONTROL **Data Warehouse**].
 
-1. Markera den begäran som du vill redigera på sidan Data Warehouse.
+1. På Data Warehouse-sidan markerar du den begäran som du vill redigera.
 
    ![Hantera en begäran](assets/dw-manage-request.png)
 
@@ -59,23 +59,23 @@ Så här redigerar du en schemalagd begäran:
 
 1. Redigera begäran efter behov. Det går inte att redigera nedtonade konfigurationsalternativ.
 
-   Mer information om varje konfigurationsalternativ finns i [Skapa en begäran om Data Warehouse](/help/export/data-warehouse/create-request/t-dw-create-request.md).
+   Mer information om varje konfigurationsalternativ finns i [Skapa en Data Warehouse-förfrågan](/help/export/data-warehouse/create-request/t-dw-create-request.md).
 
 1. Välj [!UICONTROL **Spara ändringar**].
 
 ## Visa historiken för en begäran
 
-Du kan visa historiken för alla förfrågningar om Data Warehouse som du har gjort.
+Du kan visa historiken för alla Data Warehouse-förfrågningar du har gjort.
 
 1. I Adobe Analytics väljer du [!UICONTROL **Verktyg**] > [!UICONTROL **Data Warehouse**].
 
-1. På sidan Data Warehouse markerar du den begäran vars historik du vill visa.
+1. På Data Warehouse-sidan väljer du den begäran vars historik du vill visa.
 
    ![Hantera en begäran](assets/dw-manage-request.png)
 
 1. Välj [!UICONTROL **Visa historik**].
 
-   Sidan [!UICONTROL **Visa förfrågan om Data Warehouse**] visar en lista över enskilda rapportleveranser som är associerade med begäran.
+   Sidan [!UICONTROL **Visa Data Warehouse-förfrågan**] visar en lista över enskilda rapportleveranser som är associerade med begäran.
 
    Välj ikonen **Konfigurera kolumn** ![Konfigurera kolumn-ikon](assets/configure-column-icon.png) om du vill dölja kolumner eller visa kolumner som inte visas som standard.
 
@@ -92,15 +92,15 @@ Du kan visa historiken för alla förfrågningar om Data Warehouse som du har gj
    | [!UICONTROL **Status**] | Status för rapportleveransen. Möjliga statusar är:<ul><li>[!UICONTROL **Skapad**]: Rapporten skapades men har ännu inte bearbetats.</li><li>[!UICONTROL **Väntande**]: Rapporten väntar på att bearbetas.</li><li>[!UICONTROL **Bearbetar**]: Rapporten bearbetas för närvarande.</li><li>[!UICONTROL **Slutförd**]: Rapporten har slutförts och är nu tillgänglig.</li><li>[!UICONTROL **Schemalagd**]: Rapporten har schemalagts men har inte startats ännu.</li><li>[!UICONTROL **Avbruten**]: Rapporten avbröts av användaren.</li><li>[!UICONTROL **Fel - Bearbetar**:] Rapporten påträffade ett fel och kunde inte bearbetas.</li><li>[!UICONTROL **Fel - Det gick inte att skicka**]: Rapporten genererades men kunde inte levereras. Kontrollera [konfigurationen för ditt mål](/help/export/data-warehouse/create-request/dw-request-report-destinations.md) och skicka sedan rapporten igen.</li></ul>. |
    | [!UICONTROL **Från**] | Startdatumet för den övergripande tidsramen som ingår i rapporten.<p>Detta visas i rapportsvitens tidszon.</p> |
    | [!UICONTROL **Till**] | Slutdatumet för den övergripande tidsramen som ingår i rapporten. <p>Detta visas i rapportsvitens tidszon.</p> |
-   | [!UICONTROL **ID för äldre begäran**] | Det ID som används för att identifiera en rapport i det äldre Datan Warehouse. Detta ID kan behövas när du kontaktar Adobe kundtjänst. |
-   | [!UICONTROL **Rapport-ID**] | Det ID som används för att identifiera en rapport i det aktuella Datan Warehouse. Detta ID kan behövas när du kontaktar Adobe kundtjänst. |
+   | [!UICONTROL **ID för äldre begäran**] | Det ID som används för att identifiera en rapport i det äldre Data Warehouse-gränssnittet. Detta ID kan behövas när du kontaktar Adobe kundtjänst. |
+   | [!UICONTROL **Rapport-ID**] | Det ID som används för att identifiera en rapport i det aktuella Data Warehouse-gränssnittet. Detta ID kan behövas när du kontaktar Adobe kundtjänst. |
 
 
 1. Välj en rapportleverans och välj sedan något av följande alternativ:
 
    | Alternativ | Funktion |
    |---------|----------|
-   | [!UICONTROL **Målinformation**] | Visar konto- och platsinformation som är associerad med begäran. Det här är kontot och platsen som konfigurerades tidigare, enligt beskrivningen i [Konfigurera ett rapportmål för en Data Warehouse](/help/export/data-warehouse/create-request/dw-request-report-destinations.md). |
+   | [!UICONTROL **Målinformation**] | Visar konto- och platsinformation som är associerad med begäran. Detta är kontot och platsen som konfigurerades tidigare, enligt beskrivningen i [Konfigurera ett rapportmål för en Data Warehouse-begäran](/help/export/data-warehouse/create-request/dw-request-report-destinations.md). |
    | [!UICONTROL **Avbryt rapport**] | Avbryter rapporten. Du kan inte avbryta rapporter som har statusen [!UICONTROL **Slutförd**] eller [!UICONTROL **Avbruten**]. |
    | [!UICONTROL **Kör rapporten igen**] | Kör rapporten igen med data som de var när den ursprungligen skickades. Du kan köra en rapport som har någon av följande statusar igen: [!UICONTROL **Avbrutet**], [!UICONTROL **Slutfört**], [!UICONTROL **Fel - Bearbetning**] eller [!UICONTROL **Fel - Det gick inte att skicka**]. |
    | [!UICONTROL **Skicka om rapport**] | Skickar rapportfilen som tidigare har skapats igen. Du kan skicka om en rapport som har någon av följande statusar: [!UICONTROL **Slutförd**] eller [!UICONTROL **Fel - Det gick inte att skicka**]. |
@@ -111,17 +111,17 @@ När du kopierar en begäran kopieras alla konfigurationsalternativ från den ur
 
 1. I Adobe Analytics väljer du [!UICONTROL **Verktyg**] > [!UICONTROL **Data Warehouse**].
 
-1. Markera den begäran du vill kopiera på sidan Data Warehouse.
+1. På Data Warehouse-sidan markerar du den begäran som du vill kopiera.
 
    ![Hantera en begäran](assets/dw-manage-request.png)
 
 1. Välj [!UICONTROL **Kopiera**].
 
-   Sidan med begäran om att kopiera Data Warehouse visas. Alla konfigurationsalternativ kopieras från den ursprungliga begäran.
+   Sidan Kopiera Data Warehouse-begäran visas. Alla konfigurationsalternativ kopieras från den ursprungliga begäran.
 
 1. Uppdatera alla konfigurationsalternativ som är associerade med begäran.
 
-   Mer information om varje konfigurationsalternativ finns i [Skapa en begäran om Data Warehouse](/help/export/data-warehouse/create-request/t-dw-create-request.md).
+   Mer information om varje konfigurationsalternativ finns i [Skapa en Data Warehouse-förfrågan](/help/export/data-warehouse/create-request/t-dw-create-request.md).
 
 1. Välj [!UICONTROL **Spara ändringar**].
 
@@ -133,7 +133,7 @@ Så här avbryter du en schemalagd begäran:
 
 1. I Adobe Analytics väljer du [!UICONTROL **Verktyg**] > [!UICONTROL **Data Warehouse**].
 
-1. Markera den begäran som du vill redigera på sidan Data Warehouse.
+1. På Data Warehouse-sidan markerar du den begäran som du vill redigera.
 
    ![Hantera en begäran](assets/dw-manage-request.png)
 
@@ -145,7 +145,7 @@ Så här avbryter du en schemalagd begäran:
 
 Du kan konfigurera vilken information som ska visas för varje begäran genom att lägga till eller ta bort kolumner.
 
-1. Markera ikonen **Konfigurera kolumner** i det övre högra hörnet på Datan Warehouse.
+1. Markera ikonen **Konfigurera kolumner** i det övre högra hörnet på Data Warehouse-sidan.
 
    ![Konfigurera kolumner](assets/dw-configure-columns.png)
 
@@ -161,11 +161,11 @@ Du kan konfigurera vilken information som ska visas för varje begäran genom at
 
    {style="table-layout:auto"}
 
-1. Kontrollera att alla kolumner som du vill visa är markerade. Markerade kolumner visas på Datan Warehouse och visar relevant information.
+1. Kontrollera att alla kolumner som du vill visa är markerade. Markerade kolumner visas på Data Warehouse-sidan och visar relevant information.
 
 ## Filtrera och sortera förfrågningar
 
-1. Markera ikonen **Filter** i den vänstra listen på Datan Warehouse.
+1. Markera ikonen **Filter** i den vänstra listen på Data Warehouse-sidan.
 
    ![Filterförfrågningar](assets/dw-filter.png)
 
@@ -173,6 +173,6 @@ Du kan konfigurera vilken information som ska visas för varje begäran genom at
 
 ## Sök efter förfrågningar
 
-1. I sökfältet högst upp på sidan Data Warehouse anger du det begärandenamn som du vill visa.
+1. I sökfältet högst upp på Data Warehouse-sidan anger du det begärandenamn som du vill visa.
 
    Förfrågningar filtreras när du skriver.

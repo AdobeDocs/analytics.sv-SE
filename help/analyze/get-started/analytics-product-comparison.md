@@ -3,9 +3,9 @@ description: Systemkrav och en jämförelse mellan Analysis Workspace, Report Bu
 title: Produktjämförelse och krav för analyser
 exl-id: 5adc6c10-cbbb-48d5-a7ab-367cbaff5e8a
 feature: Analytics Basics
-source-git-commit: 325a42c080290509309e90c9127138800d5ac496
+source-git-commit: ca84a5f807545d7196e2e0e90d3209c32d3fd789
 workflow-type: tm+mt
-source-wordcount: '340'
+source-wordcount: '338'
 ht-degree: 17%
 
 ---
@@ -26,13 +26,13 @@ Mer information om vilken Adobe Analytics-produkt som ska användas finns i [Vil
 | **Administratörsfilterdata ingår** <br> [Läs mer](/help/admin/tools/manage-rs/edit-settings/general/bot-removal/bot-removal.md) | Nej | Ja - separat robotrapport | Nej | Nej | Nej |
 | **Låg trafik (Uniques-gräns) visas** <br> [Läs mer](/help/technotes/low-traffic.md) | Ja | Ja | Nej | Nej | Ja |
 | **Synlig radgräns (före sidnumrering)** | 400 | 50000 | Obegränsad | Obegränsad | 50000 |
-| **Flera rapportsviter** | [Ja](/help/analyze/analysis-workspace/build-workspace-project/multiple-report-suites.md) | Ja | Nej | Ja | Nej | Ja |
+| **Flera rapportsviter** | [Ja](/help/analyze/analysis-workspace/build-workspace-project/multiple-report-suites.md) | Ja | Nej | Ja | Nej |
 | **Antal uppdelningar** | Obegränsad | Upp till 2 | Obegränsad | Obegränsad | Obegränsat, kör över flera frågor |
 | **Segmentering** <br> [Läs mer](/help/components/segmentation/segmentation-workflow/seg-workflow.md) | Ja | Ja | Ja, med [begränsningar](/help/components/segmentation/seg-reference/seg-compatibility.md) | Nej | Ja |
 | **Beräknade mått** <br> [Läs mer](/help/components/calculated-metrics/cm-overview.md) | Ja, med [Attribution](/help/analyze/analysis-workspace/attribution/overview.md) | Ja, med attribuering | Ja | Nej | Ja, med [Attribution](/help/analyze/analysis-workspace/attribution/overview.md) |
 | **Marknadsföringskanaler** <br> [Läs mer](/help/components/c-marketing-channels/c-getting-started-mchannel.md) | Ja | Ja | Ja | Ja - [va_finder, va_close](/help/export/analytics-data-feed/c-df-contents/datafeeds-reference.md) | Ja |
 | **Kohortanalys** | [Ja](/help/analyze/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) | Ja | Nej | Nej | Nej |
-| **Attribution** | Ja, med [Attribution](/help/analyze/analysis-workspace/attribution/overview.md) | Begränsad | Nej | Nej | Ja, med [Attribution](/help/analyze/analysis-workspace/attribution/overview.md) | Nej |
+| **Attribution** | Ja, med [Attribution](/help/analyze/analysis-workspace/attribution/overview.md) | Begränsad | Nej | Nej | Ja, med [Attribution](/help/analyze/analysis-workspace/attribution/overview.md) |
 | **Kuration** <br> [Läs mer](/help/analyze/analysis-workspace/curate-share/curate.md) | Ja - Project och Virtual Report Suite | Nej | Nej | Nej | Ja - endast Virtual Report Suite |
 | **Projektdelning** <br> [Läs mer](/help/analyze/analysis-workspace/curate-share/share-projects.md) | Ja, med projektroller | Ja | Nej | Nej | Nej |
 | **Schemalagd leverans** | Ja | Ja | Ja | Ja | Nej |

@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: Konfigurera platser för molnimport och -export
 feature: Classifications
 exl-id: 55179868-6228-44ff-835c-f4a7b38e929b
-source-git-commit: d64a3d02ec670133a32829fc0d2ad589068a193e
+source-git-commit: ca84a5f807545d7196e2e0e90d3209c32d3fd789
 workflow-type: tm+mt
-source-wordcount: '1694'
+source-wordcount: '1691'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Mer information om hur du visar och tar bort befintliga platser finns i [Platsha
 
 1. I Adobe Analytics väljer du [!UICONTROL **Komponenter**] > [!UICONTROL **Platser**].
 
-1. Välj fliken [!UICONTROL **Platser**] på sidan [!UICONTROL Locations].
+1. Välj fliken [!UICONTROL Locations]Platser [!UICONTROL **på sidan**].
 
 1. (Villkorligt) Om du är systemadministratör kan du aktivera alternativet [!UICONTROL **Visa platser för alla användare**] om du vill visa platser som har skapats av alla användare i organisationen.
    ![visa platser för alla användare](assets/locations-all-users.png)
