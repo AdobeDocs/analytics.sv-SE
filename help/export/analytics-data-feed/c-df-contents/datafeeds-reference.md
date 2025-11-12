@@ -26,7 +26,7 @@ Använd den här sidan om du vill veta vilka data som finns i varje kolumn. De f
 >
 >De flesta kolumner innehåller en liknande kolumn med prefixet `post_`. Bokför kolumner innehåller värden efter serversidans logik, bearbetningsregler och VISTA-regler. Adobe rekommenderar att du i de flesta fall använder inläggskolumner. Mer information finns i [Vanliga frågor om dataflöden](../df-faq.md).
 
-Tidigare uppdateringar av den här tabellen finns på den här sidans [implementeringshistorik på GitHub](https://github.com/AdobeDocs/analytics.en/commits/main/help/export/analytics-data-feed/c-df-contents/datafeeds-reference.md).
+Tidigare uppdateringar av den här tabellen finns på den här sidans [implementeringshistorik på GitHub](https://github.com/AdobeDocs/analytics.sv-SE/commits/main/help/export/analytics-data-feed/c-df-contents/datafeeds-reference.md).
 
 | Kolumnnamn | Kolumnbeskrivning | Datatyp |
 | --- | --- | --- |
