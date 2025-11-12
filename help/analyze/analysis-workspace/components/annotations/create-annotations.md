@@ -46,7 +46,7 @@ Om du vill definiera anteckningen använder du [[!UICONTROL Annotation builder]]
 
 
 
-Dialogrutan **[!UICONTROL Annotations builder]** används för att skapa nya eller redigera befintliga anteckningar. Dialogrutan heter **[!UICONTROL New annotation]** eller **[!UICONTROL Edit annotation]** för anteckningar som du skapar eller hanterar från [[!UICONTROL Annotations]-hanteraren ](/help/analyze/analysis-workspace/components/annotations/manage-annotations.md).
+Dialogrutan **[!UICONTROL Annotations builder]** används för att skapa nya eller redigera befintliga anteckningar. Dialogrutan heter **[!UICONTROL New annotation]** eller **[!UICONTROL Edit annotation]** för anteckningar som du skapar eller hanterar från [[!UICONTROL Annotations]-hanteraren &#x200B;](/help/analyze/analysis-workspace/components/annotations/manage-annotations.md).
 
 
 >[!BEGINTABS]

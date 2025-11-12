@@ -91,7 +91,7 @@ Du kan hantera en panel på följande sätt:
 
 ## Rapportsvit
 
-Varje panel är associerad med en [rapportserie](/help/admin/tools/manage-rs/report-suites-admin.md) som identifieras av ![Data](/help/assets/icons/Data.svg) **[!UICONTROL *namnet på rapportsviten *]**i listrutan längst upp till höger på panelen.
+Varje panel är associerad med en [rapportserie](/help/admin/tools/manage-rs/report-suites-admin.md) som identifieras av ![Data](/help/assets/icons/Data.svg) **[!UICONTROL *namnet på rapportsviten *]**&#x200B;i listrutan längst upp till höger på panelen.
 
 När du skapar en ny panel baseras standardrapportsviten på rapportsviten från den panel du senast arbetade på i Analysis Workspace-projektet.
 
@@ -184,7 +184,7 @@ Med statiska rullgardinssegment kan du interagera med data på ett kontrollerat 
 
 Statiska rullgardinssegment kan också användas för att konsolidera många projekt till ett. Om du till exempel har många versioner av samma projekt med olika landssegment tillämpade, kan du konsolidera alla versioner till ett enda projekt och lägga till ett nedrullningsbart landssegment.
 
-![Statiska nedrullningsbara segment med filtret &quot;Direkt&quot; för marknadskanalen markerat. ](assets/dropdown-filter-intro.png)
+![Statiska nedrullningsbara segment med filtret &quot;Direkt&quot; för marknadskanalen markerat. &#x200B;](assets/dropdown-filter-intro.png)
 
 ##### Skapa statiska rullgardinssegment
 

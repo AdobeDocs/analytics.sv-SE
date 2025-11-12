@@ -41,7 +41,7 @@ Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Söka efter och s
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Rullande datumintervall i segment ](https://video.tv.adobe.com/v/25403?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Rullande datumintervall i segment &#x200B;](https://video.tv.adobe.com/v/25403?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 

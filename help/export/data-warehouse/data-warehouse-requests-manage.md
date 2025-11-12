@@ -25,7 +25,7 @@ Så här visar du förfrågningar från Data Warehouse:
 
 1. I Adobe Analytics väljer du [!UICONTROL **Verktyg**] > [!UICONTROL **Data Warehouse**].
 
-   På Data Warehouse-sidan visas alla förfrågningar du har gjort. Data visas i varje kolumn. Du kan [konfigurera vilka kolumner ](#configure-columns) som ska visas.
+   På Data Warehouse-sidan visas alla förfrågningar du har gjort. Data visas i varje kolumn. Du kan [konfigurera vilka kolumner &#x200B;](#configure-columns) som ska visas.
 
    <!-- add screenshot of main page -->
 

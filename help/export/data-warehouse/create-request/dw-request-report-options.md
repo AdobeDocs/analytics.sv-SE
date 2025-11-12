@@ -30,7 +30,7 @@ Så här konfigurerar du rapportalternativ för en Data Warehouse-begäran:
 
    | Alternativ | Funktion |
    |---------|----------|
-   | [!UICONTROL **Filnamn**] | Identifierar rapporten. <p>Om något av följande specialtecken används i filnamnet kan begäran inte sparas: <code>! &quot; # $ &amp; &#39; ( ) * + , / : ; > = &lt; ? @ [ ] \ ^ ` { } \| ~</code> </p><p>Tecknet % kan bara användas om det följs av R, rsid eller id enligt följande: <code>%R</code>, <code>%rsid</code>och <code>%id</code>.</p> |
+   | [!UICONTROL **Filnamn**] | Identifierar rapporten. <p>Om något av följande specialtecken används i filnamnet kan begäran inte sparas: <code>! &quot; # $ &amp; &#39; ( ) * + , / : ; > = &lt; ? @ [ ] \ ^ &grave; { } \| ~</code> </p><p>Tecknet % kan bara användas om det följs av R, rsid eller id enligt följande: <code>%R</code>, <code>%rsid</code>och <code>%id</code>.</p> |
    | [!UICONTROL **Lägg till rapportdatumintervall i filnamn**] | Lägger till datumintervallet i rapportfilens namn. <p>Om du till exempel begär data från 1 maj till 7 maj 2024 inkluderar filnamnet datumintervallet 20240501 - 20240507.</p> |
    | [!UICONTROL **CSV**] | Levererar rapporter i ett CSV-filformat för att visa data i ett kalkylblad. |
    | [!UICONTROL **Tableau (TDE)**] | Levererar rapporter i ett TDE-filformat (Tableau Data Extract) som kan användas för att visualisera data och lager i ytterligare data i Tableau. |
