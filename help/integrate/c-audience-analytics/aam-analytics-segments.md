@@ -27,7 +27,7 @@ Audience Manager segmentmedlemskap är smidigt. Användare kan ange eller ta bor
 
 Ett Audience Manager-segment betecknas som en målgrupp i Analytics.
 
-Mer information finns i [Trait and Segment Population Data in Segment Builder](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/segments/segment-builder-data.html) och [Signals, Traits och Segments](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/signal-trait-segment.html).
+Mer information finns i [Trait and Segment Population Data in Segment Builder](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/segments/segment-builder-data.html?lang=sv-SE) och [Signals, Traits och Segments](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/signal-trait-segment.html?lang=sv-SE).
 
 ## Analyssegment {#analytics-segments}
 
