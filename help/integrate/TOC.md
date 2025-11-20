@@ -15,12 +15,12 @@ ht-degree: 23%
 # Adobe Analytics Integreringshandbok {#integration}
 
 + [Integreringsguide för analyser](home.md)
-+ [Versionsinformation för analyser](https://experienceleague.adobe.com/en/docs/analytics/release-notes/latest)
++ [Versionsinformation för analyser](https://experienceleague.adobe.com/sv/docs/analytics/release-notes/latest)
 + Audience Analytics {#audience-analytics}
    + [Audience Analytics - översikt](c-audience-analytics/mc-audiences-aam.md)
    + Audience Analytics arbetsflöde {#audience-analytics-workflow}
       + [Översikt över arbetsflödet](c-audience-analytics/c-workflow/audiences-workflow.md)
-      + [Skapa analysmål - Adobe Audience Manager Guide](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/destinations/experience-cloud-destinations/create-analytics-destination.html)
+      + [Skapa analysmål - Adobe Audience Manager Guide](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/destinations/experience-cloud-destinations/create-analytics-destination.html?lang=sv-SE)
       + [Använd målgruppsdata i Analytics](c-audience-analytics/c-workflow/use-audience-data-analytics.md)
       + [Användningsexempel för Audience Analytics](c-audience-analytics/aam-audience-use-cases.md)
       + [Vanliga frågor](c-audience-analytics/mc-audiences-faqs.md)
@@ -38,8 +38,8 @@ ht-degree: 23%
       + [Hantera annonskonton](c-advertising-analytics/c-adanalytics-workflow/aa-manage-ad-accounts.md)
       + [Felsöka Advertising Analytics](c-advertising-analytics/c-adanalytics-workflow/aa-troubleshooting.md)
    + [Vanliga frågor](c-advertising-analytics/aa-faq.md)
-+ [Adobe Analytics för Advertising Cloud](https://experienceleague.adobe.com/docs/advertising-cloud/integrations/analytics/overview.html)
-+ [Adobe Analytics för mål - A4T](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html)
++ [Adobe Analytics för Advertising Cloud](https://experienceleague.adobe.com/docs/advertising-cloud/integrations/analytics/overview.html?lang=sv-SE)
++ [Adobe Analytics för mål - A4T](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=sv-SE)
 + [Adobe Campaign-rapportering i Adobe Analytics](adobe-campaign.md)
 + [Integrera Adobe Analytics-data med Adobe Campaign Classic](analytics-to-campaign-classic.md)
 + [AEM Assets-rapportering](aem-assets-reporting.md)
