@@ -15,7 +15,7 @@ ht-degree: 11%
 # Adobe Analytics Export Guide {#export}
 
 + [Exportguide för analyser](home.md)
-+ [Versionsinformation för analyser](https://experienceleague.adobe.com/sv/docs/analytics/release-notes/latest)
++ [Versionsinformation för analyser](https://experienceleague.adobe.com/en/docs/analytics/release-notes/latest)
 + Datafeed i Analytics {#analytics-data-feed}
    + [Översikt över dataflöden](analytics-data-feed/data-feed-overview.md)
    + [Skapa en datafeed](analytics-data-feed/create-feed.md)

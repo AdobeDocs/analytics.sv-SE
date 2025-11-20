@@ -15,7 +15,7 @@ ht-degree: 7%
 # Adobe Analytics Implementeringshandbok {#implementation}
 
 + [Implementeringshandbok för analyser](home.md)
-+ [Versionsinformation för analyser](https://experienceleague.adobe.com/sv/docs/analytics/release-notes/latest)
++ [Versionsinformation för analyser](https://experienceleague.adobe.com/en/docs/analytics/release-notes/latest)
 + [Versionsinformation för AppMeasurement](appmeasurement-updates.md)
 + Analysvariabler, funktioner och metoder {#vars}
    + [Översikt](vars/overview.md)

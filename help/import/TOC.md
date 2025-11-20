@@ -15,7 +15,7 @@ ht-degree: 48%
 # Adobe Analytics Import Guide {#import}
 
 + [Importguide för Analytics](home.md)
-+ [Versionsinformation för analyser](https://experienceleague.adobe.com/sv/docs/analytics/release-notes/latest)
++ [Versionsinformation för analyser](https://experienceleague.adobe.com/en/docs/analytics/release-notes/latest)
 + Datakällor {#data-sources}
    + [Översikt](data-sources/overview.md)
    + [Komma igång](data-sources/getting-started.md)
