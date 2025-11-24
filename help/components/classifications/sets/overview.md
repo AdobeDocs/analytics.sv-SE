@@ -3,7 +3,7 @@ title: Översikt över klassificeringsuppsättningar
 description: Lär dig hur du använder klassificeringsuppsättningar för att hantera klassificeringsdata. Förstå hur klassificeringsuppsättningar skiljer sig från äldre klassificeringar.
 exl-id: a139b298-1188-42ce-b52f-c71e0ff7c4e3
 feature: Classifications
-source-git-commit: ec49a5fd5771e4ca0a35ead681b556336bbc7031
+source-git-commit: 7d4471be41522d385406574e4f00c31e0704ce27
 workflow-type: tm+mt
 source-wordcount: '779'
 ht-degree: 0%
@@ -77,7 +77,7 @@ Arbetsflödet för klassificeringsuppsättningar omfattar vanligtvis följande s
    Adobe and MGM Tee - Charcoal,Women,Charcoal
    ```
 
-I klassificeringsdatafilen refererar du till nyckeldimensionen för varje rapportserie (till exempel: **[!UICONTROL Product ID]** och **[!UICONTROL Product SKU]**) med `Key`. Och du refererar till varje klassificering med **[!UICONTROL Classification Name]** (till exempel `Category` eller `Color`).
+   I klassificeringsdatafilen refererar du till nyckeldimensionen för varje rapportserie (till exempel: **[!UICONTROL Product ID]** och **[!UICONTROL Product SKU]**) med `Key`. Och du refererar till varje klassificering med **[!UICONTROL Classification Name]** (till exempel `Category` eller `Color`).
 
 1. [Överför](/help/components/classifications/sets/manage/schema.md#upload) filen som innehåller klassificeringsdata till klassificeringsmängdens schema.
 
@@ -96,7 +96,7 @@ Den serverdelsarkitektur som lanserats med klassificeringsuppsättningar innehå
 
 * Minskad bearbetningstid (från 72 till 24 timmar).
 * Ett omdesignat användargränssnitt för att hantera klassificeringar.
-* Alternativet att använda klassificeringsdata i Adobe Experience Platform via [Adobe Analytics-källkopplingen för klassificeringsdata](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/connectors/adobe-applications/classifications).
+* Alternativet att använda klassificeringsdata i Adobe Experience Platform via [Adobe Analytics-källkopplingen för klassificeringsdata](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/classifications).
 
 Den serverdelsarkitektur som lanserats med klassificeringsuppsättningar innehåller också flera ändringar:
 
