@@ -54,7 +54,7 @@ Följande åtgärder är tillgängliga som knappar högst upp i klassificeringsl
 | ![UploadToCloud](/help/assets/icons/UploadToCloud.svg) | **[!UICONTROL Upload]** | [Överför en JSON-, CSV-, TSV- eller TAB-fil](#upload). |
 | ![Hämta](/help/assets/icons/Download.svg) | **[!UICONTROL Download]** | [Hämta klassificeringsdata](#download). |
 | ![Dokumentfragment](/help/assets/icons/DocumentFragment.svg) | **[!UICONTROL Template]** | [Hämta en mall](#template) för klassificeringsdata. |
-| ![Historik](/help/assets/icons/History.svg) | **[!UICONTROL Job History]** | Visa jobbhanteraren [ för klassificeringsuppsättningen, filtrerad för den valda klassificeringsuppsättningen.](/help/components/classifications/sets/job-manager.md) |
+| ![Historik](/help/assets/icons/History.svg) | **[!UICONTROL Job History]** | Visa jobbhanteraren [&#x200B; för klassificeringsuppsättningen, filtrerad för den valda klassificeringsuppsättningen.](/help/components/classifications/sets/job-manager.md) |
 | ![Kugghjul](/help/assets/icons/Gear.svg) | **[!UICONTROL Automate]** | [Automatisera inmatningen av klassificeringsdata](#automate) med hjälp av en molnplats. |
 
 
@@ -194,7 +194,7 @@ I dialogrutan **[!UICONTROL Associate / Update Ingest Location for _klassificeri
 
 1. Om du vill meddela användare om slutförandet av importen anger du e-postadresser, avgränsade med kommatecken, för **[!UICONTROL Email(s) to notify when ingest jobs completes (comma separated)]**.
 1. Välj **[!UICONTROL Validate]**. Anslutningen till molnplatsen verifieras.
-1. Om valideringen lyckas visas ett popup-meddelande som visar ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Location validation successful. Connection to cloud storage verified.]**<br/>Välj **[!UICONTROL Save]**om du har skapat anslutningen till molnanslutningen. Annars väljer du **[!UICONTROL Update]**. Eller välj **[!UICONTROL Cancel]**om du vill avbryta konfigurationen av molnplatsen.
+1. Om valideringen lyckas visas ett popup-meddelande som visar ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Location validation successful. Connection to cloud storage verified.]**<br/>Välj **[!UICONTROL Save]**&#x200B;om du har skapat anslutningen till molnanslutningen. Annars väljer du **[!UICONTROL Update]**. Eller välj **[!UICONTROL Cancel]**&#x200B;om du vill avbryta konfigurationen av molnplatsen.
 
 När du överför filer till molnplatsen identifieras filen och skickas som ett importjobb inom 15 minuter. Resultatet av det importjobbet rapporteras i jobbhanteraren [för klassificeringar](/help/components/classifications/sets/job-manager.md). Om du har lagts till i listan över användare för att meddela att importen har slutförts, får du även e-postmeddelanden.
 
