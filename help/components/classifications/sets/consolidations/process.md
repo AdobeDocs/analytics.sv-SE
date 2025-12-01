@@ -3,24 +3,31 @@ title: Skapa och redigera klassificeringskonsolisioner
 description: Beskriver hur du skapar, validerar, kör, godkänner och avbryter klassificeringskonsolideringar.
 exl-id: f36bcbcb-0ed0-44a7-a6a9-b28fd244fb27
 feature: Classifications
-source-git-commit: ec49a5fd5771e4ca0a35ead681b556336bbc7031
+source-git-commit: f34072ec42d62cef0a3e1fd4d63f6f39693cf0fd
 workflow-type: tm+mt
-source-wordcount: '738'
+source-wordcount: '904'
 ht-degree: 0%
 
 ---
 
 # Skapa och redigera klassificeringskonsolideringar
 
-Konsolideringar av klassificeringsuppsättningar gör att du kan ta klassificeringar från flera datauppsättningar och kombinera dem till en. Använd det här gränssnittet för att skapa en konsolidering av klassificeringsuppsättningar från början till slut. Det här gränssnittet är mest värdefullt för organisationer som går från äldre klassificeringar till klassificeringsuppsättningar. De flesta organisationer som använder klassificeringsuppsättningar behöver troligen inte använda det här konsolideringsarbetsflödet.
+Med en konsolidering av klassificeringsuppsättningar kan du ta klassificeringar från flera klassificeringsuppsättningar och kombinera dem till en. Använd det här gränssnittet för att skapa en konsolidering av klassificeringsuppsättningar från början till slut. Det här gränssnittet är mest värdefullt för organisationer som går från äldre klassificeringar till klassificeringsuppsättningar. Organisationer som använder klassificeringsuppsättningar behöver inte använda det här konsolideringsarbetsflödet.
 
-## Skapa en konsolidering
+## Skapa en konsolidering {#create-a-consolidation}
+
+
+>[!CONTEXTUALHELP]
+>id="classificationsets_consolidation_setpriority"
+>title="Klassificeringsuppsättningsprioritet"
+>abstract="![Nyckel](/help/assets/icons/Key.svg) *klassificeringsuppsättningen* är basklassificeringsuppsättningen och definierar det övergripande schemat och har företräde i sammanslagningskonflikter. De andra klassificeringsuppsättningarna tillämpas uppifrån och ned."
+
 
 Så här skapar du en klassificeringskonsolidering i Adobe Analytics huvudgränssnitt:
 
 1. Välj **[!UICONTROL Classification sets]** på menyn **[!UICONTROL Components]**.
 1. Välj fliken **[!UICONTROL Classification Sets]** i hanteraren för **[!UICONTROL Consolidations]**.
-1. Välj **[!UICONTROL Classification Sets - Consolidations]** AddCircle![&#x200B; &#x200B;](/help/assets/icons/AddCircle.svg) i hanteraren för **[!UICONTROL New]**.
+1. Välj **[!UICONTROL Classification Sets - Consolidations]** AddCircle![ ](/help/assets/icons/AddCircle.svg) i hanteraren för **[!UICONTROL New]**.
 1. I dialogrutan **[!UICONTROL New Consolidation]**
 
    ![Klassificeringsuppsättningar - ny konsolidering](assets/classifications-sets-consolidations-new.png)
@@ -29,11 +36,13 @@ Så här skapar du en klassificeringskonsolidering i Adobe Analytics huvudgräns
    1. Ange en eller flera e-postadresser (kommaavgränsade) i **[!UICONTROL Notify of issues]**. E-postmeddelanden skickas till de här användarna om problem uppstår.
    1. Välj en klassificeringsuppsättning i listrutan **[!UICONTROL Classification Set To Match]**.
 
-      Den vänstra listan **[!UICONTROL Source Classification Set]** är ifylld med klassificeringsuppsättningar som liknar den valda klassificeringslistan och som är tillgängliga för konsolidering.
+      Den vänstra listan **[!UICONTROL Source Classification Set]** är ifylld med klassificeringsuppsättningar som liknar den valda klassificeringslistan och som är tillgängliga för konsolidering. Den högra listan fylls i automatiskt med den valda ![Key](/help/assets/icons/Key.svg)-klassificeringsuppsättningen. Basuppsättningen definierade det övergripande schemat och har alltid företräde vid sammanslagningskonflikter.
 
-   1. Välj de klassificeringsuppsättningar som du vill konsolidera i den vänstra listan och släpp de markerade uppsättningarna i den högra listan under den markerade ![Key](/help/assets/icons/Key.svg) **[!UICONTROL _klassificeringsuppsättningen_]**.
+   1. Välj de klassificeringsuppsättningar som du vill konsolidera i den vänstra listan och släpp de markerade uppsättningarna i den högra listan under den valda ![Key](/help/assets/icons/Key.svg) base **[!UICONTROL _klassificeringsuppsättningen_]**.
 
-      Du kan flytta enskilda och markerade klassificeringsuppsättningar i listan. Du kan också ersätta ![Key](/help/assets/icons/Key.svg) **[!UICONTROL _klassificeringsuppsättningen_]** med en vald klassificeringsuppsättning genom att dra och släppa.
+      De ytterligare klassificeringsuppsättningarna konsolideras i stigande ordning när du kör konsolideringen. Om en nyckel finns i flera ytterligare uppsättningar används värdet för nyckeln från den övre rangordningsklassen. Om det finns en nyckel både i basuppsättningen ![Key](/help/assets/icons/Key.svg) och i alla andra uppsättningar används värdet från basuppsättningen.
+
+      Om du vill hantera vilka värden för nycklar som ska användas, flyttar du enskilda och valda klassificeringsuppsättningar i listan genom att dra och släppa. Du kan också ersätta ![Key](/help/assets/icons/Key.svg) **[!UICONTROL _klassificeringsuppsättningen_]** med en vald klassificeringsuppsättning genom att dra och släppa.
 
    1. Välj **[!UICONTROL Save]** om du vill spara klassificeringskonsolideringen. Välj **[!UICONTROL Cancel]** om du vill avbryta.
 
@@ -96,7 +105,7 @@ Så här validerar du klassificeringskonsolideringen:
 
 1. Konfigurera om konsolideringen med samma dra och släpp-gränssnitt som du använde för att skapa konsolideringen.
 1. Välj ![bock](/help/assets/icons/Checkmark.svg) **[!UICONTROL Re-Validate]**. Valideringen säkerställer att varje enskild klassificeringsuppsättning är giltig för denna konsolidering. När det är klart visas ett popup-meddelande: ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Successfully submitted consolidation for validation!]**
-1. Stäng dialogrutan genom att välja ![CrossSize400](/help/assets/icons/CrossSize400.svg). Eller välj ![Spela upp](/help/assets/icons/Play.svg) Kör för att köra konsolideringen eller ![Avbryt](/help/assets/icons/Cancel.svg) för att avbryta klassificeringen.
+1. Stäng dialogrutan genom att välja ![CrossSize400](/help/assets/icons/CrossSize400.svg). Eller välj ![Spela upp](/help/assets/icons/Play.svg) **[!UICONTROL Run]** om du vill köra konsolideringen eller ![Avbryt](/help/assets/icons/Cancel.svg) **[!UICONTROL Cancel]** om du vill avbryta klassificeringen.
 
 
 
@@ -115,9 +124,20 @@ Så här kör du en klassificeringskonsolidering:
 1. Stäng dialogrutan genom att välja ![CrossSize400](/help/assets/icons/CrossSize400.svg).
 
 
-### Godkänn
+### Godkänn {#approve}
 
-När en klassificeringskonsolidering har körts är konsolideringsstatusen **[!UICONTROL Waiting for Approval]**. Godkännandet av en klassificeringskonsolidering ersätter de enskilda klassificeringsuppsättningarna med den konsoliderade klassificeringsuppsättningen och de enskilda klassificeringsuppsättningarna tas bort.
+
+>[!CONTEXTUALHELP]
+>id="classificationsets_consolidations_mismatch"
+>title="Felmatchning"
+>abstract="Procentvärdet för nyckelmatchningar matchar inte när värdet i den konsoliderade klassificeringsuppsättningen inte matchar källklassificeringsuppsättningen."
+
+>[!CONTEXTUALHELP]
+>id="classificationsets_consolidations_absent"
+>title="Frånvarande"
+>abstract="Procentandelen nycklar i den konsoliderade klassificeringsuppsättningen, men inte i källklassificeringsuppsättningen."
+
+När en klassificeringskonsolidering har körts är konsolideringsstatusen ![StatusOrange](/help/assets/icons/StatusOrange.svg) **[!UICONTROL Waiting for Approval]**. Godkännandet av en klassificeringskonsolidering ersätter de enskilda klassificeringsuppsättningarna med den konsoliderade klassificeringsuppsättningen och de enskilda klassificeringsuppsättningarna tas bort.
 
 ![Klassificeringsuppsättningar - Konsolidering väntar på godkännande](assets/classifications-sets-consolidations-waitingforapproval.png)
 
@@ -127,7 +147,7 @@ Så här godkänner du en konsolidering av klassificeringsuppsättningar:
 
    * **[!UICONTROL Classification Set Name]**: Namnet på klassificeringsuppsättningen.
    * **[!UICONTROL Mismatch]**: Procentandelen rader där nyckelvärden inte matchar källklassificeringsuppsättningen. Om felmatchningsprocenten är hög kan felmatchningen vara en indikation på att klassificeringsdata är för olika. Kontrollera att de valda klassificeringsuppsättningarna har liknande klassificeringsdata.
-   * **[!UICONTROL Absent]**: Procentandelen rader där nyckelvärden finns i klassificeringsuppsättningen ![&#x200B; Key](/help/assets/icons/Key.svg) men inte i källklassificeringsuppsättningen. Alla rader som inte finns läggs till i den konsoliderade klassificeringsuppsättningen.
+   * **[!UICONTROL Absent]**: Procentandelen rader där nyckelvärden finns i klassificeringsuppsättningen ![ Key](/help/assets/icons/Key.svg) men inte i källklassificeringsuppsättningen. Alla rader som inte finns läggs till i den konsoliderade klassificeringsuppsättningen.
 
 1. Om klassificeringskonsolideringen är klar för godkännande väljer du ![bock](/help/assets/icons/Checkmark.svg) **[!UICONTROL Approve]**. En **[!UICONTROL Approve Consolidation?]**-dialogruta ber om bekräftelse. Välj **[!UICONTROL Approve]** för att godkänna konsolideringen. Välj **[!UICONTROL Cancel]** om du vill avbryta.
 

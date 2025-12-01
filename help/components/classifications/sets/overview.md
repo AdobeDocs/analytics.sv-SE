@@ -3,9 +3,9 @@ title: Översikt över klassificeringsuppsättningar
 description: Lär dig hur du använder klassificeringsuppsättningar för att hantera klassificeringsdata. Förstå hur klassificeringsuppsättningar skiljer sig från äldre klassificeringar.
 exl-id: a139b298-1188-42ce-b52f-c71e0ff7c4e3
 feature: Classifications
-source-git-commit: 7d4471be41522d385406574e4f00c31e0704ce27
+source-git-commit: b3616a8667ce35dbfd856244a24b8b552528946c
 workflow-type: tm+mt
-source-wordcount: '779'
+source-wordcount: '929'
 ht-degree: 0%
 
 ---
@@ -17,15 +17,28 @@ Klassificeringsuppsättningar har ett enda gränssnitt för att hantera klassifi
 
 ## Klassificeringsuppsättningar jämfört med äldre klassificeringar
 
-Den största skillnaden mellan klassificeringsuppsättningar och äldre klassificeringar är relationen mellan klassificeringarna och en rapportserie.
+Den största skillnaden mellan klassificeringsuppsättningar och äldre klassificeringar är klassificeringsuppsättningar som kombinerar alla funktioner i ett gränssnitt där äldre klassificeringar är beroende av tre gränssnitt.
 
-I äldre klassificeringar är varje klassificering direkt kopplad till en rapportserie. Mycket liknande klassificeringar (till exempel för en produktkatalog) replikeras när de används i flera rapportsviter.
+### Äldre klassificeringar
 
-![Äldre klassificering](manage/assets/classifications-legacy.svg)
+![Äldre klassificering](./assets/classifications-legacy.svg)
 
-I klassificeringsuppsättningar definierar du prenumerationer på rapportsviter och viktiga dimensionskombinationer. En produktkatalogsklassificering som gäller för flera rapportsviter och som baseras på en produktdimension (SKU) behöver du bara definiera en gång som en klassificeringsuppsättning. Och inom den klassificeringen konfigurerar du flera rapportsviter och viktiga dimensionskombinationer för att prenumerera på den klassificeringen.
+I äldre klassificeringar har klassificeringarna ![Schema](/help/assets/icons2/Schema.svg) (som för trafik, konverteringar, marknadsföringskanaler och mer) sin egen dimension (nyckel ![Key](/help/assets/icons2/Key.svg)). Du definierar dessa klassificeringar som en del av inställningarna för [rapportsviten](/help/admin/tools/manage-rs/edit-settings/conversion-var-admin/conversion-classifications.md).
 
-![Klassificeringsuppsättningar](manage/assets/classifications-sets.svg)
+Du definierar reglerna ![BidRule](/help/assets/icons/BidRule.svg) separat i regeluppsättningar som en del av gränssnittet för [klassificeringsregelbyggaren](/help/components/classifications/crb/classification-rule-builder.md). I det gränssnittet kopplar du en regeluppsättning till en eller flera rapportsviter.
+
+Du använder [klassificeringsimporteraren](/help/components/classifications/importer/c-working-with-saint.md) för att hämta en mall ![DocumentFragment](/help/assets/icons/DocumentFragment.svg), för att importera ![UploadToCloud](/help/assets/icons/UploadToCloud.svg)-klassificeringar till eller exportera ![Download](/help/assets/icons/Download.svg)-klassificeringar från en kombination av rapportsvitar och nycklar (datauppsättning).
+
+
+### Klassificeringsuppsättningar
+
+![Klassificeringsuppsättningar](./assets/classifications-sets.svg)
+
+Klassificeringsuppsättningar kombinerar alla äldre klassificeringsgränssnitt till ett. Varje klassificeringsgrupp definierar:
+
+* En eller flera prenumerationer, som är kombinationen av en rapportserie ![Data](/help/assets/icons2/Data.svg) och dimensionen ![Key](/help/assets/icons2/Key.svg) (key), som du vill klassificera. Om du vill klassificera produkter som baseras på en produkt-SKU kan du definiera alla rapportsviter med en tillämplig produkt-SKU-dimension. Och du behöver inte replikera klassificeringar mellan olika rapportsviter som i det gamla klassificeringsgränssnittet.
+* En lista med klassificeringarna ![Schema](/help/assets/icons2/Schema.svg) (schema) för nyckeln. För produktklassificeringar kan du till exempel ange kategori, färg, storlek, kön och mer. När du har definierat dina klassificeringar kan du hämta en mall för ![DocumentFragment](/help/assets/icons/DocumentFragment.svg), överföra ![UploadToCloud](/help/assets/icons/UploadToCloud.svg), hämta ![Download](/help/assets/icons/Download.svg) klassificeringsdata och mycket mer.
+* En eller flera av reglerna ![BidRule](/help/assets/icons/BidRule.svg) som stöder klassificeringarna.
 
 
 Om du vill komma åt **[!UICONTROL Classification sets]** från menyn **[!UICONTROL Components]** i Adobe Analytics-gränssnittet måste du vara produktadministratör eller tillhöra en produktprofil som innehåller behörighetsobjektet [!UICONTROL Report Suite Tools] > [!UICONTROL Classifications] . Observera att äldre klassificeringsgränssnitt är tillgängliga på menyn **[!UICONTROL Admin]**.
@@ -81,6 +94,8 @@ Arbetsflödet för klassificeringsuppsättningar omfattar vanligtvis följande s
 
 1. [Överför](/help/components/classifications/sets/manage/schema.md#upload) filen som innehåller klassificeringsdata till klassificeringsmängdens schema.
 
+1. Konfigurera [regler](manage/rules.md) för automatisk klassificering av inkommande data och data från det förflutna.
+
 1. [Automatisera](/help/components/classifications/sets/manage/schema.md#automate) uppdateringsprocessen för din produktkatalog som du vill ska återspeglas i klassificeringsdata genom att använda en molnplats.
 
 1. [Hämta](/help/components/classifications/sets/manage/schema.md#download) dina klassificeringsdata för att validera innehållet.
@@ -96,7 +111,7 @@ Den serverdelsarkitektur som lanserats med klassificeringsuppsättningar innehå
 
 * Minskad bearbetningstid (från 72 till 24 timmar).
 * Ett omdesignat användargränssnitt för att hantera klassificeringar.
-* Alternativet att använda klassificeringsdata i Adobe Experience Platform via [Adobe Analytics-källkopplingen för klassificeringsdata](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/connectors/adobe-applications/classifications).
+* Alternativet att använda klassificeringsdata i Adobe Experience Platform via [Adobe Analytics-källkopplingen för klassificeringsdata](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/classifications).
 
 Den serverdelsarkitektur som lanserats med klassificeringsuppsättningar innehåller också flera ändringar:
 
