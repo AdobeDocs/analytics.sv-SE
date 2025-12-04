@@ -3,14 +3,23 @@ title: Sena träffar
 description: Lär dig hur dataflöden behandlar sena träffar.
 feature: Data Feeds
 exl-id: c99a702b-2aaa-47a6-958a-1e5ab66961ba
-source-git-commit: 81cbb115d50e1f55a67aac8b107749d0a5a5928b
+source-git-commit: 5816868d3899d2938330471d1e59757141b16c69
 workflow-type: tm+mt
-source-wordcount: '301'
+source-wordcount: '363'
 ht-degree: 0%
 
 ---
 
-# Sena träffar
+# Sena träffar {#late-arriving-hits}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aa_datafeed_late_hits"
+>title="Tillåt sena träffar"
+>abstract="Välj det här alternativet om du vill inkludera data som har kommit efter att dataflödesjobbet har slutfört databearbetningen inom den angivna rapporteringsfrekvensen (dag, timme eller var 15:e minut). När det här alternativet är aktiverat tittar dataflödet varje gång data bearbetas i de senaste träffar som inträffat och grupperar dem i nästa dataflödesfil som skickas."
+
+<!-- markdownlint-enable MD034 -->
 
 Historiska data kan komma när ett datafeedjobb har avslutat bearbetningen för en viss timme eller dag, till exempel genom tidsstämplade träffar eller datakällor. Sena träffar är en anpassning av backend-funktionen som tillhandahålls av Adobe för att hjälpa till att inkludera dessa data i dataflöden.
 
