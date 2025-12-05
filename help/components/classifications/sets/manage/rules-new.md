@@ -4,9 +4,9 @@ description: Lär dig hur du använder regler för klassificeringsuppsättningar
 feature: Classifications
 hide: true
 hidefromtoc: true
-source-git-commit: bccb3409875336a092ab641ad69b866b43621984
+source-git-commit: 9192849bf9fd9a72d2ad7ae2f9727a13201a2a33
 workflow-type: tm+mt
-source-wordcount: '1448'
+source-wordcount: '1494'
 ht-degree: 0%
 
 ---
@@ -96,7 +96,17 @@ Ange ett värde för **[!UICONTROL Starts With]**. Till exempel: `em`.
 
 Du vill definiera en regel som automatiskt tilldelar `Email` som ett värde till **[!UICONTROL Channel]**-klassificeringen när värdet för nyckeldimensionens interna kampanj börjar med `em` (till exempel: `em:FY2025:Summer Sale`).
 
+>[!BEGINTABS]
+
+>[!TAB Regel]
+
 ![Regel - börjar med](assets/rule-startswith.png)
+
+>[!TAB Testresultat]
+
+![Regel - börjar med testresultat](assets/rule-startswith-test.png)
+
+>[!ENDTABS]
 
 +++
 
@@ -110,13 +120,23 @@ Ställer in en klassificering baserat på ett specifikt värde som nyckeldimensi
 
 #### Nödvändiga indata
 
-Ange ett värde för **[!UICONTROL Ends With]**. Till exempel: `Sale`.
+Ange ett värde för **[!UICONTROL Ends With]**. Till exempel: `2025`.
 
 #### Använd skiftläge
 
-Du vill definiera en regel som automatiskt tilldelar `Sale` som ett värde till **[!UICONTROL Type]**-klassificeringen när värdet för den interna nyckeldimensionen innehåller `Sale` (till exempel: `em:FY2025:Summer Sale`).
+Du vill definiera en regel som automatiskt tilldelar `2025` som ett värde till **[!UICONTROL Year]**-klassificeringen när värdet för den interna nyckeldimensionen innehåller `2025` (till exempel: `em:Summer Sale:FY2025`).
+
+>[!BEGINTABS]
+
+>[!TAB Regel]
 
 ![Regel - slutar med](assets/rule-endswith.png)
+
+>[!TAB Testresultat]
+
+![Regel - slutar med testresultat](assets/rule-endswith-test.png)
+
+>[!ENDTABS]
 
 +++
 
@@ -129,13 +149,24 @@ Ställer in en klassificering baserat på ett specifikt värde som nyckeldimensi
 
 #### Nödvändiga indata
 
-Ange ett värde för **[!UICONTROL Contains]**. Till exempel: `2025`.
+Ange ett värde för **[!UICONTROL Contains]**. Till exempel: `Winter`.
 
 #### Använd skiftläge
 
-Du vill definiera en regel som automatiskt tilldelar `2025` som ett värde till **[!UICONTROL Year]**-klassificeringen när värdet för nyckeldimensionens interna kampanj slutar med `2025` (till exempel: `em:FY2025:Summer Sale`).
+Du vill definiera en regel som automatiskt tilldelar `Winter Sale` som ett värde till **[!UICONTROL Type]**-klassificeringen när värdet för den interna nyckeldimensionen innehåller `Winter` (till exempel: `fb:Winter:FY2024`).
+
+
+>[!BEGINTABS]
+
+>[!TAB Regel]
 
 ![Regel - innehåller](assets/rule-contains.png)
+
+>[!TAB Testresultat]
+
+![Regel - innehåller resultat](assets/rule-contains-test.png)
+
+>[!ENDTABS]
 
 +++
 
@@ -152,9 +183,20 @@ Ange ett värde för **[!UICONTROL Match]**. Till exempel: `em:FY2025:Summer`.
 
 #### Använd skiftläge
 
-Du vill definiera en regel som automatiskt tilldelar `2025 Summer Email` som ett värde till **[!UICONTROL Type]**-klassificeringen när värdet för nyckeldimensionens interna kampanj matchar `em:FY2025:Summer`.
+Du vill definiera en regel som automatiskt tilldelar `Email` som ett värde till **[!UICONTROL Channel]**-klassificeringen, `Summer Sale` som ett värde till **[!UICONTROL Type]**-klassificeringen och `2025` till **[!UICONTROL Year]**-klassificeringen när värdet för nyckeldimensionens interna kampanj matchar `em:FY2025:Summer`.
+
+
+>[!BEGINTABS]
+
+>[!TAB Regel]
 
 ![Regel - träffar](assets/rule-match.png)
+
+>[!TAB Testresultat]
+
+![Regel - träffar](assets/rule-match.png)
+
+>[!ENDTABS]
 
 +++
 
@@ -167,13 +209,23 @@ Ställer in en eller flera klassificeringar baserat på ett reguljärt uttryck s
 
 #### Nödvändiga indata
 
-Ange ett värde för **[!UICONTROL Regular Expression]**. Till exempel: `^(.+)\:(.+)\:(.+)$`.
+Ange ett värde för **[!UICONTROL Regular Expression]**. Till exempel: `^(.+)\:(.+)\:FY(.+)$`.
 
 #### Använd skiftläge
 
-Du vill definiera en regel som automatiskt tilldelar värden till klassificeringarna **[!UICONTROL Channel]**, **[!UICONTROL Type]** och **[!UICONTROL Year]** genom att tillämpa det reguljära uttrycket `^(.+)\:(.+)\:(.+)$` och använda matchningsgrupper (`$1`, `$2` och `$3`) på värdena för nyckeldimensionens interna kampanj.
+Du vill definiera en regel som automatiskt tilldelar värden till klassificeringarna **[!UICONTROL Channel]**, **[!UICONTROL Type]** och **[!UICONTROL Year]** genom att tillämpa det reguljära uttrycket `^(.+)\:(.+)\:FY(.+)$` och använda matchningsgrupper (`$1`, `$2` och `$3`) på värdena för nyckeldimensionens interna kampanj.
+
+>[!BEGINTABS]
+
+>[!TAB Regel]
 
 ![Regel - reguljärt uttryck](assets/rule-regex.png)
+
+>[!TAB Testresultat]
+
+![Regel - Testresultat för reguljära uttryck](assets/rule-regex-test.png)
+
+>[!ENDTABS]
 
 
 #### Referenstabell {#section_0211DCB1760042099CCD3ED7A665D716}
