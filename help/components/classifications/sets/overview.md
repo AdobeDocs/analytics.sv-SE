@@ -3,7 +3,7 @@ title: Översikt över klassificeringsuppsättningar
 description: Lär dig hur du använder klassificeringsuppsättningar för att hantera klassificeringsdata. Förstå hur klassificeringsuppsättningar skiljer sig från äldre klassificeringar.
 exl-id: a139b298-1188-42ce-b52f-c71e0ff7c4e3
 feature: Classifications
-source-git-commit: b3616a8667ce35dbfd856244a24b8b552528946c
+source-git-commit: 5256319752fb6521ef86c1dde9d3624689879ecb
 workflow-type: tm+mt
 source-wordcount: '929'
 ht-degree: 0%
@@ -21,13 +21,14 @@ Den största skillnaden mellan klassificeringsuppsättningar och äldre klassifi
 
 ### Äldre klassificeringar
 
-![Äldre klassificering](./assets/classifications-legacy.svg)
+![Äldre klassificering](/help/components/classifications/sets/assets/classifications-legacy.svg)
 
 I äldre klassificeringar har klassificeringarna ![Schema](/help/assets/icons2/Schema.svg) (som för trafik, konverteringar, marknadsföringskanaler och mer) sin egen dimension (nyckel ![Key](/help/assets/icons2/Key.svg)). Du definierar dessa klassificeringar som en del av inställningarna för [rapportsviten](/help/admin/tools/manage-rs/edit-settings/conversion-var-admin/conversion-classifications.md).
 
 Du definierar reglerna ![BidRule](/help/assets/icons/BidRule.svg) separat i regeluppsättningar som en del av gränssnittet för [klassificeringsregelbyggaren](/help/components/classifications/crb/classification-rule-builder.md). I det gränssnittet kopplar du en regeluppsättning till en eller flera rapportsviter.
 
 Du använder [klassificeringsimporteraren](/help/components/classifications/importer/c-working-with-saint.md) för att hämta en mall ![DocumentFragment](/help/assets/icons/DocumentFragment.svg), för att importera ![UploadToCloud](/help/assets/icons/UploadToCloud.svg)-klassificeringar till eller exportera ![Download](/help/assets/icons/Download.svg)-klassificeringar från en kombination av rapportsvitar och nycklar (datauppsättning).
+
 
 
 ### Klassificeringsuppsättningar
@@ -111,7 +112,7 @@ Den serverdelsarkitektur som lanserats med klassificeringsuppsättningar innehå
 
 * Minskad bearbetningstid (från 72 till 24 timmar).
 * Ett omdesignat användargränssnitt för att hantera klassificeringar.
-* Alternativet att använda klassificeringsdata i Adobe Experience Platform via [Adobe Analytics-källkopplingen för klassificeringsdata](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/connectors/adobe-applications/classifications).
+* Alternativet att använda klassificeringsdata i Adobe Experience Platform via [Adobe Analytics-källkopplingen för klassificeringsdata](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/classifications).
 
 Den serverdelsarkitektur som lanserats med klassificeringsuppsättningar innehåller också flera ändringar:
 
