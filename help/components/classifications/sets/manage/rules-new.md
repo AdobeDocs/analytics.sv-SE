@@ -4,9 +4,9 @@ description: Lär dig hur du använder regler för klassificeringsuppsättningar
 feature: Classifications
 hide: true
 hidefromtoc: true
-source-git-commit: badd606b708778f7f839756c6de7b6118d366a67
+source-git-commit: 6ae2bbd1ea268524f852fecda88e9d2e237d496a
 workflow-type: tm+mt
-source-wordcount: '1572'
+source-wordcount: '1573'
 ht-degree: 0%
 
 ---
@@ -233,10 +233,14 @@ Du vill definiera en regel för att tilldela värden till klassificeringarna **[
 
 >[!ENDTABS]
 
++++
+
 
 ### Dela
 
 Delar nyckeldimensionsvärdet, baserat på en token, till en eller flera klassificeringar.
+
++++ Information
 
 #### Nödvändiga indata
 
@@ -257,6 +261,8 @@ Du vill definiera en regel som delar värdena för nyckeldimensionens interna ka
 ![Regel - Dela testresultat](assets/rule-split-test.png)
 
 >[!ENDTABS]
+
++++
 
 
 #### Referenstabell {#section_0211DCB1760042099CCD3ED7A665D716}
