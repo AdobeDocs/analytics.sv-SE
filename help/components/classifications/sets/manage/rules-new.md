@@ -4,9 +4,9 @@ description: Lär dig hur du använder regler för klassificeringsuppsättningar
 feature: Classifications
 hide: true
 hidefromtoc: true
-source-git-commit: 9192849bf9fd9a72d2ad7ae2f9727a13201a2a33
+source-git-commit: badd606b708778f7f839756c6de7b6118d366a67
 workflow-type: tm+mt
-source-wordcount: '1494'
+source-wordcount: '1572'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Du använder regler för att stödja automatiska klassificeringar i scenarier där nyckeldimensionen ständigt ändras. Uppdateringen av klassificeringar genom överföring eller automatisering blir en besvärlig process eller försenar en korrekt klassificering för nya dimensionsvärden. Exempel: interna kampanjer, spårningskoder eller SKU:er för produkter. Dimensionen måste innehålla värden som gör att du kan tillämpa en eller flera regler så att du kan härleda klassificeringsdata från värdena.
 
-Du definierar regler inom ramen för en klassificeringsuppsättning, vilket innebär att regler tillämpas (när de aktiveras) på alla rapportsviter och nyckeldimensionskombinationer som prenumererar på klassificeringsuppsättningen. Den här implementeringen skiljer sig något från hur den äldre funktionen för att skapa klassificeringsregler fungerar. I klassregelmappen definierar du en eller flera regler som en del av en regeluppsättning separat och kopplar sedan regeluppsättningen till en eller flera rapportsviter. I det nya gränssnittet kallas reglerna i klassificeringsuppsättningen även för regeluppsättning, men definieras i samma gränssnitt där du konfigurerar andra attribut för klassificeringsuppsättningar.
+Du definierar regler inom en klassificeringsuppsättnings kontext. Det här sammanhanget innebär att regler tillämpas (när de aktiveras) på alla kombinationer av rapportsviter och nyckeldimensioner som prenumererar på klassificeringsuppsättningen. Den här implementeringen skiljer sig något från hur den äldre funktionen för att skapa klassificeringsregler fungerar. I verktyget Klassificeringsregel definierar du en eller flera regler som en del av en regeluppsättning separat och kopplar sedan regeluppsättningen till en eller flera rapportsviter. I det nya gränssnittet kallas reglerna i klassificeringsuppsättningen också för regeluppsättning. Regeluppsättningarna definieras dock i samma gränssnitt där du konfigurerar andra attribut för klassificeringsuppsättningar.
 
 
 Så här definierar du en regeluppsättning för en klassificeringsuppsättning:
@@ -26,7 +26,7 @@ Så här definierar du en regeluppsättning för en klassificeringsuppsättning:
 1. I hanteraren för **[!UICONTROL Classifications Sets]** väljer du den klassificeringsuppsättning som du vill definiera reglerna för.
 1. Välj fliken **[!UICONTROL Classification Set: _i dialogrutan_]** klassificeringsuppsättningsnamn **[!UICONTROL Rules]**.
 
-   * Om du använder gränssnittet **[!UICONTROL Rules]** för första gången för en klassificeringsuppsättning, eller om du hittills har beslutat att fortsätta använda det äldre gränssnittet för regelbyggaren, visas en dialogruta där du kan välja hur du vill komma igång. Alternativen är:
+   * Om du använder gränssnittet **[!UICONTROL Rules]** för första gången för en klassificeringsuppsättning, eller hittills har beslutat att fortsätta använda det äldre gränssnittet för regelbyggaren, visas en dialogruta där du kan välja hur du vill komma igång. Alternativen är:
 
       * **Migrera befintliga regler**. Importera dina aktuella klassificeringsregler och fortsätt arbeta med dessa regler i det nya gränssnittet. De befintliga reglerna bevaras och konverteras till det nya formatet.
          * Välj **[!UICONTROL Migrate rules]** om du vill fortsätta.
@@ -37,7 +37,7 @@ Så här definierar du en regeluppsättning för en klassificeringsuppsättning:
       * **Börja om**. Skapa nya klassificeringsregler från grunden med nya regelverktyget. Välj det här alternativet om du vill designa om klassificeringslogiken eller börja om från början med nya klassificeringsregler.
          * Välj **[!UICONTROL Create new rules]** om du vill fortsätta.
          * Läs vad en ny start innebär i dialogrutan **[!UICONTROL Confirm start fresh]**.
-            * Välj **[!UICONTROL Start fresh]** om du vill konfigurera en ny start och ignorera befintliga regler. Använd gränssnittet [Regeluppsättning](#rule-set-interface) för att skapa nya regler.
+            * Välj **[!UICONTROL Start fresh]** om du vill bekräfta en ny start och ignorera eventuella befintliga regler. Använd gränssnittet [Regeluppsättning](#rule-set-interface) för att skapa nya regler.
             * Välj **[!UICONTROL Cancel]** om du vill avbryta.
 
 
@@ -48,9 +48,15 @@ Så här definierar du en regeluppsättning för en klassificeringsuppsättning:
 
 
 
-## Regeluppsättningsgränssnitt
+## Regeluppsättningsgränssnitt {#rule-set-interface}
 
-När du skapar eller redigerar regler använder du gränssnittet Regeluppsättning.
+>[!CONTEXTUALHELP]
+>id="classificationsets_rules_samplekeys"
+>title="Exempelnycklar"
+>abstract="Skriv eller klistra in testtangenter för att testa regeluppsättningen. Varje rad är ett separat nyckelvärde. Välj **[!UICONTROL Test Ruleset]** om du vill visa en dialogruta med resultaten."
+
+
+Om du vill skapa eller redigera regler använder du gränssnittet Regeluppsättning.
 
 ![Gränssnitt för regeluppsättning](assets/rulesets-ui.png)
 
@@ -72,7 +78,7 @@ Du definierar varje enskild regel i regeluppsättningen i regelgränssnittet. Gr
 | | Beskrivning |
 |---|---|
 | 1 | Namnet på den valda funktionen och de indata som har angetts för funktionen. |
-| 2 | Indata för den valda funktionen. Indata beror på den valda funktionen. För funktionen Reguljärt uttryck är indata ett reguljärt uttryck och för funktionen Dela är indata en token. Ange lämplig inmatning för den specifika funktionen. `^(.+)\:(.+)\:(.+)$` för ett reguljärt uttryck som identifierar tre klassificeringar i en intern kampanjkod. |
+| 2 | Indata för den valda funktionen. Indata beror på den valda funktionen. För funktionen **[!UICONTROL Regular expression]** är indata till exempel ett reguljärt uttryck. Och för funktionen **[!UICONTROL Split]** är indata en token. Ange lämplig inmatning för den specifika funktionen. `^(.+)\:(.+)\:(.+)$` för ett reguljärt uttryck som identifierar tre klassificeringar i en intern kampanjkod. |
 | 3 | Varje åtgärd ställer in en specifik klassificering till ett värde. <br/>Välj en klassificering i listrutan **[!UICONTROL Set Classification]** och ange ett värde för **[!UICONTROL to]**. <br/>Använd ![CrossSize400](/help/assets/icons/CrossSize400.svg) om du vill ta bort en åtgärd från listan. |
 | 4 | Välj ![Lägg till](/help/assets/icons/Add.svg) **[!UICONTROL Add operation]** om du vill lägga till ytterligare en åtgärd i funktionen. |
 | 5 | Välj ![SparrrNed](/help/assets/icons2/ChevronDown.svg) om du vill komprimera regeln. Välj ![Sparrvänster](/help/assets/icons/ChevronLeft.svg) om du vill expandera regeln.<br/>Markera ![CrossSize400](/help/assets/icons/CrossSize400.svg) om du vill ta bort regeln. |
@@ -94,7 +100,7 @@ Ange ett värde för **[!UICONTROL Starts With]**. Till exempel: `em`.
 
 #### Använd skiftläge
 
-Du vill definiera en regel som automatiskt tilldelar `Email` som ett värde till **[!UICONTROL Channel]**-klassificeringen när värdet för nyckeldimensionens interna kampanj börjar med `em` (till exempel: `em:FY2025:Summer Sale`).
+Du vill definiera en regel som ska tilldelas `Email` som värde för **[!UICONTROL Channel]**-klassificeringen när värdet för nyckeldimensionens interna kampanj börjar med `em` (till exempel: `em:FY2025:Summer Sale`).
 
 >[!BEGINTABS]
 
@@ -124,7 +130,7 @@ Ange ett värde för **[!UICONTROL Ends With]**. Till exempel: `2025`.
 
 #### Använd skiftläge
 
-Du vill definiera en regel som automatiskt tilldelar `2025` som ett värde till **[!UICONTROL Year]**-klassificeringen när värdet för den interna nyckeldimensionen innehåller `2025` (till exempel: `em:Summer Sale:FY2025`).
+Du vill definiera en regel som ska tilldelas `2025` som värde till **[!UICONTROL Year]**-klassificeringen när värdet för den interna nyckeldimensionen innehåller `2025` (till exempel: `em:Summer Sale:FY2025`).
 
 >[!BEGINTABS]
 
@@ -153,7 +159,7 @@ Ange ett värde för **[!UICONTROL Contains]**. Till exempel: `Winter`.
 
 #### Använd skiftläge
 
-Du vill definiera en regel som automatiskt tilldelar `Winter Sale` som ett värde till **[!UICONTROL Type]**-klassificeringen när värdet för den interna nyckeldimensionen innehåller `Winter` (till exempel: `fb:Winter:FY2024`).
+Du vill definiera en regel för att tilldela `Winter Sale` som ett värde till **[!UICONTROL Type]**-klassificeringen när värdet för den interna nyckeldimensionen innehåller `Winter` (till exempel: `fb:Winter:FY2024`).
 
 
 >[!BEGINTABS]
@@ -171,30 +177,30 @@ Du vill definiera en regel som automatiskt tilldelar `Winter Sale` som ett värd
 +++
 
 
-### Matcha
+### Matchar
 
-Ställer in en klassificering baserat på ett specifikt värde som nyckeldimensionens matchningar.
+Ställer in en klassificering baserat på ett specifikt värde som matchar nyckeldimensionsvärdet.
 
 +++ Information 
 
 #### Nödvändiga indata
 
-Ange ett värde för **[!UICONTROL Match]**. Till exempel: `em:FY2025:Summer`.
+Ange ett värde för **[!UICONTROL Matches]**. Till exempel: `em:Summer:2025`.
 
 #### Använd skiftläge
 
-Du vill definiera en regel som automatiskt tilldelar `Email` som ett värde till **[!UICONTROL Channel]**-klassificeringen, `Summer Sale` som ett värde till **[!UICONTROL Type]**-klassificeringen och `2025` till **[!UICONTROL Year]**-klassificeringen när värdet för nyckeldimensionens interna kampanj matchar `em:FY2025:Summer`.
+Du vill definiera en regel för att tilldela `Email` som ett värde till **[!UICONTROL Channel]**-klassificeringen, `Summer Sale` som ett värde till **[!UICONTROL Type]**-klassificeringen och `2025` till **[!UICONTROL Year]**-klassificeringen. Men bara när värdet för nyckeldimensionens interna kampanj matchar `em:Summer:2025`.
 
 
 >[!BEGINTABS]
 
 >[!TAB Regel]
 
-![Regel - träffar](assets/rule-match.png)
+![Regel - träffar](assets/rule-matches.png)
 
 >[!TAB Testresultat]
 
-![Regel - träffar](assets/rule-match.png)
+![Regel - träffar](assets/rule-matches-test.png)
 
 >[!ENDTABS]
 
@@ -213,7 +219,7 @@ Ange ett värde för **[!UICONTROL Regular Expression]**. Till exempel: `^(.+)\:
 
 #### Använd skiftläge
 
-Du vill definiera en regel som automatiskt tilldelar värden till klassificeringarna **[!UICONTROL Channel]**, **[!UICONTROL Type]** och **[!UICONTROL Year]** genom att tillämpa det reguljära uttrycket `^(.+)\:(.+)\:FY(.+)$` och använda matchningsgrupper (`$1`, `$2` och `$3`) på värdena för nyckeldimensionens interna kampanj.
+Du vill definiera en regel för att tilldela värden till klassificeringarna **[!UICONTROL Channel]**, **[!UICONTROL Type]** och **[!UICONTROL Year]** genom att tillämpa det reguljära uttrycket `^(.+)\:(.+)\:FY(.+)$` och använda matchningsgrupper (`$1`, `$2` och `$3`) på värdena för nyckeldimensionens interna kampanj.
 
 >[!BEGINTABS]
 
@@ -228,12 +234,37 @@ Du vill definiera en regel som automatiskt tilldelar värden till klassificering
 >[!ENDTABS]
 
 
+### Dela
+
+Delar nyckeldimensionsvärdet, baserat på en token, till en eller flera klassificeringar.
+
+#### Nödvändiga indata
+
+Ange ett värde för **[!UICONTROL Split]**. Till exempel: `:`.
+
+#### Använd skiftläge
+
+Du vill definiera en regel som delar värdena för nyckeldimensionens interna kampanj till klassificeringarna **[!UICONTROL Channel]**, **[!UICONTROL Type]** och **[!UICONTROL Year]** baserat på `:` **[!UICONTROL Token]**.
+
+>[!BEGINTABS]
+
+>[!TAB Regel]
+
+![Regel - Dela](assets/rule-split.png)
+
+>[!TAB Testresultat]
+
+![Regel - Dela testresultat](assets/rule-split-test.png)
+
+>[!ENDTABS]
+
+
 #### Referenstabell {#section_0211DCB1760042099CCD3ED7A665D716}
 
 | Reguljärt uttryck | Beskrivning |
 |---|---|
-| `(?ms)` | Matchar hela det reguljära uttrycket mot flerradiga indata, vilket tillåter . jokertecken som matchar alla radmatningstecken |
-| `(?i)` | Gör hela det reguljära uttryckets skiftläge okänsligt |
+| `(?ms)` | Matcha hela det reguljära uttrycket mot flerradiga indata, så att jokertecknet `.` matchar alla radmatningstecken |
+| `(?i)` | Matcha hela det reguljära uttrycket så att det inte är skiftlägeskänsligt |
 | `[abc]` | Ett enda tecken: a, b eller c |
 | `[^abc]` | Ett enda tecken förutom: a, b eller c |
 | `[a-z]` | Ett enskilt tecken i intervallet a-z |
@@ -264,9 +295,14 @@ Du vill definiera en regel som automatiskt tilldelar värden till klassificering
 
 ## Regelprioritet
 
-Om ett nyckeldimensionsvärde matchas mot flera regler, och regeluppsättningarna innehåller regler med samma Set Classification-åtgärd, bestämmer den sista regeln värdet för klassificeringen. Därför bör du rangordna den viktigaste åtgärden Ange klassificering som en del av den sista regeln i regeluppsättningen.
+Den sista regeln bestämmer värdet för klassificeringen om:
 
-Om du skapar flera regler som inte delar samma Set Classification-åtgärd spelar bearbetningsordningen ingen roll.
+* Ett nyckeldimensionsvärde matchas mot flera regler.
+* Regeluppsättningen innehåller regler med samma **[!UICONTROL Set Classification]**-åtgärd.
+
+Du bör rangordna den viktigaste **[!UICONTROL Set Classification]**-åtgärden som en del av den sista regeln i regeluppsättningen.
+
+Om du skapar flera regler som inte delar samma **[!UICONTROL Set Classification]**-åtgärd spelar bearbetningsordningen ingen roll.
 
 
 ### Exempel
