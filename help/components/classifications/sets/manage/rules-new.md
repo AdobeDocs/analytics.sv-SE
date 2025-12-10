@@ -4,9 +4,9 @@ description: Lär dig hur du använder regler för klassificeringsuppsättningar
 feature: Classifications
 hide: true
 hidefromtoc: true
-source-git-commit: 6ae2bbd1ea268524f852fecda88e9d2e237d496a
+source-git-commit: 5976beb63d84bf35c998e04df6884fa78dff7c6a
 workflow-type: tm+mt
-source-wordcount: '1573'
+source-wordcount: '1564'
 ht-degree: 0%
 
 ---
@@ -296,7 +296,6 @@ Du vill definiera en regel som delar värdena för nyckeldimensionens interna ka
 | `a{3,}` | 3 eller fler av en |
 | `a{3,6}` | Mellan 3 och 6 i en |
 
-+++
 
 
 ## Regelprioritet
@@ -313,11 +312,22 @@ Om du skapar flera regler som inte delar samma **[!UICONTROL Set Classification]
 
 ### Exempel
 
-Du vill klassificera med klassificeringen **[!UICONTROL Type]** hur användare söker efter en idrottare med söksträngen som nyckeldimension. Använd till exempel den här regeluppsättningen:
+Du vill klassificera med klassificeringen **[!UICONTROL Type]** hur användare söker efter ett team, en generisk typ eller en spelare med söksträngen som nyckeldimension. Om du till exempel använder den här regeluppsättningen:
 
-![Regelprioritet](assets/rule-priority.png)
++++ Information
 
-* När en användare söker efter `Cowboys Fantasy Tony Romo` klassificeras `Romo` som **[!UICONTROL Type]**.
-* När en användare söker efter `Cowboys Fantasy Tony Romeo` klassificeras `Fantasy` som **[!UICONTROL Type]**.
-* När en användare söker efter `Cowboys vs. Broncos` klassificeras `Team` som **[!UICONTROL Type]**.
+
+>[!BEGINTABS]
+
+>[!TAB Regel]
+
+![Regel - prioritet](assets/rule-priority.png)
+
+>[!TAB Testresultat]
+
+![Regel - resultat av prioritetstest](assets/rule-priority-test.png)
+
+>[!ENDTABS]
+
++++ 
 
