@@ -48,7 +48,7 @@ Konfigurationsinställningen **[!UICONTROL Click data collection]** hanterar Act
 1. Välj **[!UICONTROL Save]**.
 1. Om det behövs kan du bygga upp ändringarna i ett bibliotek och publicera ändringarna i produktionen.
 
-Mer information finns i [Konfigurera SDK-taggtillägget för webben](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration#data-collection).
+Mer information finns i [Konfigurera SDK-taggtillägget för webben](https://experienceleague.adobe.com/sv/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration#data-collection).
 
 +++
 
@@ -56,7 +56,7 @@ Mer information finns i [Konfigurera SDK-taggtillägget för webben](https://exp
 
 Activity Map datainsamling kräver Web SDK JavaScript Library v2.20 eller senare. Biblioteksversioner ned till v2.15 har begränsat stöd. Dessa tidigare biblioteksversioner skickar Activity Map-data vid en annan händelse än resten av dina data. Den här extra händelsen ökar antalet träffar som du skickar till Adobe Analytics eller Adobe Experience Platform.
 
-Konfigurationsvariabeln [`clickCollectionEnabled`](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/clickcollectionenabled) för Web SDK hanterar den automatiska samlingen av Activity Map-data. Den är aktiverad som standard om den inte uttryckligen är inaktiverad.
+Konfigurationsvariabeln [`clickCollectionEnabled`](https://experienceleague.adobe.com/sv/docs/experience-platform/web-sdk/commands/configure/clickcollectionenabled) för Web SDK hanterar den automatiska samlingen av Activity Map-data. Den är aktiverad som standard om den inte uttryckligen är inaktiverad.
 
 ```js
 alloy("configure", {
@@ -82,7 +82,7 @@ Konfigurationsinställningen **[!UICONTROL Use Activity Map]** hanterar Activity
 1. Välj **[!UICONTROL Save]**.
 1. Om det behövs kan du bygga upp ändringarna i ett bibliotek och publicera ändringarna i produktionen.
 
-Mer information finns i översikten över [Adobe Analytics-tillägget](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/analytics/overview).
+Mer information finns i översikten över [Adobe Analytics-tillägget](https://experienceleague.adobe.com/sv/docs/experience-platform/tags/extensions/client/analytics/overview).
 
 +++
 
