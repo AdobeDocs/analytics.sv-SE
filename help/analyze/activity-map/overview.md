@@ -4,9 +4,9 @@ title: Activity Map - översikt
 feature: Activity Map
 role: User, Admin
 exl-id: 30a800f7-e2c8-443e-b5d4-36834ef0ba20
-source-git-commit: a6967c7d4e1dca5491f13beccaa797167b503d6e
+source-git-commit: a7670fcda3e8e6af0c036c8b263746e142278255
 workflow-type: tm+mt
-source-wordcount: '605'
+source-wordcount: '623'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Activity Map som koncept består av flera viktiga komponenter:
    * [`ActivityMap.regionIDAttribute`](/help/implement/vars/config-vars/activitymap-regionidattribute.md): Ändra attributet som fyller i Activity Map regiondimension.
    * [`ActivityMap.link`](/help/implement/vars/functions/activitymap-link.md): Anpassa logiken som används i Activity Map för att fylla i Activity Map Link-dimensionen.
    * [`ActivityMap.region`](/help/implement/vars/functions/activitymap-region.md): Anpassa logiken som används i Activity Map för att fylla i Activity Map regiondimension.
-* **Övertäckning**: Ett webbläsartillägg som gör att du kan se klickdata på webbplatsen. Mer information finns i [Activity Map-tilläggsgränssnittet](overlay/overview.md).
+* **Övertäckning**: Ett webbläsartillägg som gör att du kan se klickdata på webbplatsen. Mer information finns i [Activity Map-tilläggsgränssnittet](overlay/overview.md). Den här funktionen är inte tillgänglig för Web SDK-implementeringar.
 * **Dimensioner**: Förutom övertäckningstillägget har Activity Map flera dimensioner som du kan använda i Analysis Workspace.
    * [Activity Map Link](/help/components/dimensions/activity-map-link.md): Det länknamn som klickades på.
    * [Activity Map-region](/help/components/dimensions/activity-map-region.md): Regionnamnet som klickades på.
@@ -37,7 +37,7 @@ Activity Map som koncept består av flera viktiga komponenter:
 
 * **Värmekartor**: Activity Map genererar värmekartor som visar de mest klickade eller interaktiva områdena på en webbsida. Värmekartor använder färgkodning för att representera engagemangsnivån, vilket gör att du kan identifiera hotspot-områden och prioritera uppmärksamhet för högkvalitativa områden. Den här informationen kan vara värdefull när du vill optimera knappar, länkar, formulär eller andra interaktiva element i call-to-action.
 
-* **Överläggsrapporter**: Överläggsrapporter i Activity Map innehåller detaljerade klickvärden för specifika element på en webbsida. Genom att förstå klickfrekvensen och engagemangsnivåerna för enskilda element kan ni finjustera design- och innehållsstrategierna för att förbättra användarupplevelserna.
+* **Överläggsrapporter**: Överläggsrapporter i Activity Map innehåller detaljerade klickvärden för specifika element på en webbsida. Genom att förstå klickfrekvensen och engagemangsnivåerna för enskilda element kan ni finjustera design- och innehållsstrategierna för att förbättra användarupplevelserna. Den här funktionen är inte tillgänglig för Web SDK-implementeringar.
 
 * **Segmentanalys**: Du kan analysera användarbeteenden baserat på olika segment, t.ex. trafikkällor, demografiska data eller personas. Genom att segmentera data kan ni identifiera värdefulla insikter i specifika användargrupper, vilket möjliggör personaliserade upplevelser och riktade marknadsföringsstrategier.
 

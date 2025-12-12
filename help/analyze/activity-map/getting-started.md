@@ -4,9 +4,9 @@ description: Kom igång med Activity Map-övertäckning och dimensioner.
 feature: Activity Map
 role: User, Admin
 exl-id: 0b2b9f3d-0c75-4eb8-9235-c9c98eb035d3
-source-git-commit: a6967c7d4e1dca5491f13beccaa797167b503d6e
+source-git-commit: a7670fcda3e8e6af0c036c8b263746e142278255
 workflow-type: tm+mt
-source-wordcount: '774'
+source-wordcount: '799'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Activity Map i Adobe Analytics består av fyra huvuddelar:
 * **Rapportsvitens inställning**: Du måste aktivera Activity Map i rapportsvitens inställningar. När det här alternativet är aktiverat skapar rapportsviten flera reserverade variabler för Activity Map-dimensioner och mått.
 * **Implementering**: Samla in Activity Map-data på webbplatsen eller egenskapen. Att anpassa hur data samlas in kan förbättra kvaliteten på och upplevelsen av rapporter.
 * **Workspace dimensioner och mått**: När implementeringen är korrekt konfigurerad kan du använda Activity Map dimensioner och mått i Analysis Workspace.
-* **Övertäckning**: Adobe har ett webbläsartillägg för att visa Activity Map-data på din webbplats.
+* **Övertäckning**: Adobe har ett webbläsartillägg för att visa Activity Map-data på din webbplats. Den här funktionen är inte tillgänglig för Web SDK-implementeringar.
 
 ## Aktivera rapportsvitsinställning
 
@@ -30,7 +30,7 @@ När du aktiverar Activity Map-rapporter skapas flera reserverade variabler för
 
 ## Kodinstallation
 
-Implementeringen måste vara korrekt konfigurerad för att skicka Activity Map-data till Adobe.
+Implementeringen måste vara korrekt konfigurerad för att skicka Activity Map-data till Adobe. Tillägget för övertäckningsläsaren är inte tillgängligt när Adobe Analytics implementeras med Web SDK.
 
 +++SDK-taggtillägg
 
@@ -48,7 +48,7 @@ Konfigurationsinställningen **[!UICONTROL Click data collection]** hanterar Act
 1. Välj **[!UICONTROL Save]**.
 1. Om det behövs kan du bygga upp ändringarna i ett bibliotek och publicera ändringarna i produktionen.
 
-Mer information finns i [Konfigurera SDK-taggtillägget för webben](https://experienceleague.adobe.com/sv/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration#data-collection).
+Mer information finns i [Konfigurera SDK-taggtillägget för webben](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration#data-collection).
 
 +++
 
@@ -56,7 +56,7 @@ Mer information finns i [Konfigurera SDK-taggtillägget för webben](https://exp
 
 Activity Map datainsamling kräver Web SDK JavaScript Library v2.20 eller senare. Biblioteksversioner ned till v2.15 har begränsat stöd. Dessa tidigare biblioteksversioner skickar Activity Map-data vid en annan händelse än resten av dina data. Den här extra händelsen ökar antalet träffar som du skickar till Adobe Analytics eller Adobe Experience Platform.
 
-Konfigurationsvariabeln [`clickCollectionEnabled`](https://experienceleague.adobe.com/sv/docs/experience-platform/web-sdk/commands/configure/clickcollectionenabled) för Web SDK hanterar den automatiska samlingen av Activity Map-data. Den är aktiverad som standard om den inte uttryckligen är inaktiverad.
+Konfigurationsvariabeln [`clickCollectionEnabled`](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/clickcollectionenabled) för Web SDK hanterar den automatiska samlingen av Activity Map-data. Den är aktiverad som standard om den inte uttryckligen är inaktiverad.
 
 ```js
 alloy("configure", {
@@ -82,7 +82,7 @@ Konfigurationsinställningen **[!UICONTROL Use Activity Map]** hanterar Activity
 1. Välj **[!UICONTROL Save]**.
 1. Om det behövs kan du bygga upp ändringarna i ett bibliotek och publicera ändringarna i produktionen.
 
-Mer information finns i översikten över [Adobe Analytics-tillägget](https://experienceleague.adobe.com/sv/docs/experience-platform/tags/extensions/client/analytics/overview).
+Mer information finns i översikten över [Adobe Analytics-tillägget](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/analytics/overview).
 
 +++
 
