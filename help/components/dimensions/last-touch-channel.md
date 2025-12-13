@@ -3,9 +3,9 @@ title: Senaste beröringskanal
 description: Den senaste marknadsföringskanalen inom besökarens förfallodatum för engagemang.
 feature: Dimensions
 exl-id: 62a47de5-ee1a-4394-aa63-75cdda92ba6a
-source-git-commit: a6967c7d4e1dca5491f13beccaa797167b503d6e
+source-git-commit: 31c3f83f1142a4ba92a390e35ca8dcae66dfa660
 workflow-type: tm+mt
-source-wordcount: '252'
+source-wordcount: '336'
 ht-degree: 0%
 
 ---
@@ -25,6 +25,10 @@ Om du vill ställa in dimensionen på ett specifikt värde måste du utföra fö
 * Ange önskat dimensionsobjekt som en kanal i Marketing Channel Manager under Rapportsvitens inställningar.
 * Ange en bearbetningsregel för marknadsföringskanal som innehåller de önskade villkoren för träffen.
 * Besökarens träff på webbplatsen måste matcha de villkor som anges i regeln för bearbetning av marknadsföringskanal.
+
+>[!TIP]
+>
+>Om du använder den här dimensionen med mätvärden som använder [deltagarattribuering](/help/analyze/analysis-workspace/attribution/models.md) kan krediteringen tilldelas `None` när andra attribueringsmodeller inte gör det. Deltagandestatistik kräver en marknadsföringskanal [instans](../metrics/instances.md) i rapporteringsfönstret för att få kredit. Om marknadsföringskanalen ursprungligen ställdes in utanför rapporteringsfönstret och bara det bestående värdet finns inuti rapporteringsfönstret, är det `None` som attribuerar medverkandemåttskrediten. Andra attribueringsmodeller tilldelar kredit till det beständiga värdet. Om du vill undvika attribuering till `None` i det här scenariot bör du använda en attribueringsmodell som inte ingår.
 
 ## Dimension-objekt
 
