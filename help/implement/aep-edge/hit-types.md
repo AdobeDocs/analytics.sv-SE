@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Edge Network händelsetyper i Adobe Analytics
 
-Adobe Analytics behandlar träffar på olika sätt beroende på vilka funktioner du anropar i AppMeasurement. [`s.t`](/help/implement/vars/functions/t-method.md) och [`s.tl`](/help/implement/vars/functions/tl-method.md) inkluderar eller utelämnar till exempel vissa dimensioner och stegvisa [sidvyer](/help/components/metrics/page-views.md) på ett annat sätt. Adobe Experience Platform innehåller bara kommandot [`sendEvent`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/sendevent/overview). Specifika egenskaper i nyttolasten [`xdm`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/sendevent/xdm) eller [`data`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/sendevent/data) avgör hur data tolkas i Adobe Analytics.
+Adobe Analytics behandlar träffar på olika sätt beroende på vilka funktioner du anropar i AppMeasurement. [`s.t`](/help/implement/vars/functions/t-method.md) och [`s.tl`](/help/implement/vars/functions/tl-method.md) inkluderar eller utelämnar till exempel vissa dimensioner och stegvisa [sidvyer](/help/components/metrics/page-views.md) på ett annat sätt. Adobe Experience Platform innehåller bara kommandot [`sendEvent`](https://experienceleague.adobe.com/sv/docs/experience-platform/collection/js/commands/sendevent/overview). Specifika egenskaper i nyttolasten [`xdm`](https://experienceleague.adobe.com/sv/docs/experience-platform/collection/js/commands/sendevent/xdm) eller [`data`](https://experienceleague.adobe.com/sv/docs/experience-platform/collection/js/commands/sendevent/data) avgör hur data tolkas i Adobe Analytics.
 
 Edge Network använder följande logik för att fastställa Adobe Analytics [sidvisningar](/help/components/metrics/page-views.md) och [länkhändelser](/help/components/metrics/page-events.md):
 
@@ -29,7 +29,7 @@ Edge Network använder följande logik för att fastställa Adobe Analytics [sid
 
 >[!TIP]
 >
->XDM-fältnamn i nyttolasten är skiftlägeskänsliga (till exempel `webPageDetails.URL`). Fältet `xdm.eventType` är ett strängvärde med en egen uppsättning godkända värden, och skiftläget i dessa värden kanske inte matchar XDM-fältnamn. Godkända värden finns i fältet `eventType` i klassen [XDM ExperienceEvent](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/experienceevent#eventType).
+>XDM-fältnamn i nyttolasten är skiftlägeskänsliga (till exempel `webPageDetails.URL`). Fältet `xdm.eventType` är ett strängvärde med en egen uppsättning godkända värden, och skiftläget i dessa värden kanske inte matchar XDM-fältnamn. Godkända värden finns i fältet `eventType` i klassen [XDM ExperienceEvent](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/classes/experienceevent#eventType).
 
 +++Minimal sidvy med `xdm` fält
 
@@ -193,4 +193,4 @@ Förutom att differentiera sidvyer och länkhändelser avgör följande logik om
 
 +++
 
-Mer information finns i schemafältgruppen [Adobe Analytics ExperienceEvent Full Extension](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/event/analytics-full-extension).
+Mer information finns i schemafältgruppen [Adobe Analytics ExperienceEvent Full Extension](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/field-groups/event/analytics-full-extension).
