@@ -4,9 +4,9 @@ description: Lär dig hur du använder regler för klassificeringsuppsättningar
 feature: Classifications
 hide: true
 hidefromtoc: true
-source-git-commit: 5976beb63d84bf35c998e04df6884fa78dff7c6a
+source-git-commit: 0f80bb314c8e041a98af26734d56ab364c23a49b
 workflow-type: tm+mt
-source-wordcount: '1564'
+source-wordcount: '1565'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,11 @@ Så här definierar du en regeluppsättning för en klassificeringsuppsättning:
 1. I hanteraren för **[!UICONTROL Classifications Sets]** väljer du den klassificeringsuppsättning som du vill definiera reglerna för.
 1. Välj fliken **[!UICONTROL Classification Set: _i dialogrutan_]** klassificeringsuppsättningsnamn **[!UICONTROL Rules]**.
 
-   * Om du använder gränssnittet **[!UICONTROL Rules]** för första gången för en klassificeringsuppsättning, eller hittills har beslutat att fortsätta använda det äldre gränssnittet för regelbyggaren, visas en dialogruta där du kan välja hur du vill komma igång. Alternativen är:
+   * Om du använder gränssnittet **[!UICONTROL Rules]** för första gången för en klassificeringsuppsättning, eller hittills har beslutat att fortsätta använda det äldre gränssnittet för regelbyggaren, visas en dialogruta där du kan välja hur du vill komma igång.
+
+     ![Regelmigrering](assets/rules-migration.png)
+
+     Alternativen är:
 
       * **Migrera befintliga regler**. Importera dina aktuella klassificeringsregler och fortsätt arbeta med dessa regler i det nya gränssnittet. De befintliga reglerna bevaras och konverteras till det nya formatet.
          * Välj **[!UICONTROL Migrate rules]** om du vill fortsätta.

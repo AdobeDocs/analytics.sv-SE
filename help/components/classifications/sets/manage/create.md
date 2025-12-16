@@ -3,9 +3,9 @@ title: Skapa klassificeringsuppsättningar
 description: Lär dig hur du skapar en klassificeringsuppsättning i Tillgängliga fält och beskrivningar.
 exl-id: 6d692d90-8cc7-4306-a780-58d03db45be8
 feature: Classifications
-source-git-commit: ec49a5fd5771e4ca0a35ead681b556336bbc7031
+source-git-commit: 0f80bb314c8e041a98af26734d56ab364c23a49b
 workflow-type: tm+mt
-source-wordcount: '387'
+source-wordcount: '384'
 ht-degree: 0%
 
 ---
@@ -34,9 +34,9 @@ Så här skapar du en klassificeringsuppsättning:
 
          * Välj ![CrossSize400](/help/assets/icons/CrossSize400.svg) om du vill ta bort en kombination av **[!UICONTROL Report Suite]** och **[!UICONTROL Key Dimension]**.
 
-        Om du lägger till en **[!UICONTROL Report Suite]**- och **[!UICONTROL Key Dimension]**-kombination som redan finns i en annan klassificeringsuppsättning visas ett rött färgat meddelande under kombinationen.
+        Om du lägger till en **[!UICONTROL Report Suite]**- och **[!UICONTROL Key Dimension]**-kombination som redan finns i en annan klassificeringsuppsättning visas ett rött färgat meddelande.
 Ni kan:
-         * Välj **[!UICONTROL Add to existing]** om du vill öppna den andra klassificeringsuppsättningen och [lägga till klassificeringar i schemat &#x200B;](schema.md) för den andra klassificeringsuppsättningen.
+         * Välj **[!UICONTROL Add to existing]** om du vill öppna den andra klassificeringsuppsättningen och [lägga till klassificeringar i schemat ](schema.md) för den andra klassificeringsuppsättningen.
          * Ändra **[!UICONTROL Report Suite]** och **[!UICONTROL Key Dimension]** till en kombination som inte redan prenumererar på en annan klassificeringsuppsättning.
       * **[!UICONTROL Lookup]**. En uppslagstabell kallas vanligen för underklassificeringar eller underklassificeringar och är en klassificering av en primär klassificering. En sökning är metadata om ett klassificeringsvärde i stället för den ursprungliga dimensionen. En *Produkt*-dimension kan till exempel ha en primär klassificering av *Färgkod*. En uppslagstabell med *färgnamn* kan sedan bifogas till *färgkoden* för att förklara varje färgkod.
 1. Välj **[!UICONTROL Save]** om du vill spara klassificeringsuppsättningen. Välj **[!UICONTROL Cancel]** om du vill avbryta definitionen.

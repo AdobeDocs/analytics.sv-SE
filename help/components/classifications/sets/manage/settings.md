@@ -3,9 +3,9 @@ title: Inställningar för klassificeringsuppsättning
 description: Lär dig hur du skapar eller redigerar en klassificeringsuppsättning.
 exl-id: abf00508-5dde-4669-bf94-5eb4754888cc
 feature: Classifications
-source-git-commit: 2ced7cd61c4119347be2ef0fba9b8d60ee6c4df2
+source-git-commit: 0f80bb314c8e041a98af26734d56ab364c23a49b
 workflow-type: tm+mt
-source-wordcount: '164'
+source-wordcount: '166'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Så här redigerar du inställningarna för en klassificeringsuppsättning:
 
    1. Redigera **[!UICONTROL Name]**.
    1. Redigera en **[!UICONTROL Description (optional)]**.
-   1. Redigera listan med e-postadresser (kommaavgränsare) i **[!UICONTROL Notify of issues]**. Dessa användare meddelas via e-post om eventuella problem.
+   1. Redigera listan med e-postadresser (kommaavgränsade) i **[!UICONTROL Notify of issues]**. Dessa användare får ett e-postmeddelande när en eller flera problem uppstår.
    1. Lägg till en eller flera **[!UICONTROL Tags (optional)]** i klassificeringsuppsättningen. Välj en befintlig tagg i listrutan **[!UICONTROL Tags]** eller ange en ny tagg. Använd ![CrossSize100](/help/assets/icons/CrossSize100.svg) för att ta bort en tagg.
    1. Redigera **[!UICONTROL Subscriptions]**.
       * Du kan definiera flera **[!UICONTROL Report Suite]**- och **[!UICONTROL Dimension]**-kombinationer till en klassificeringsuppsättning.

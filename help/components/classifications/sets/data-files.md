@@ -3,9 +3,9 @@ description: Förstå de olika filformat som klassificeringsgrupper stöder
 title: Filformat för klassificeringsuppsättning
 feature: Classifications
 exl-id: f3d429be-99d5-449e-952e-56043b109411
-source-git-commit: 77599d015ba227be25b7ebff82ecd609fa45a756
+source-git-commit: 0f80bb314c8e041a98af26734d56ab364c23a49b
 workflow-type: tm+mt
-source-wordcount: '1038'
+source-wordcount: '1088'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Klassificeringsuppsättningar har stöd för följande filformat:
 
 * **JSON**: JavaScript Object Notation-filer med strukturerade data
 * **CSV**: Kommaavgränsade värdefiler
-* **TSV/TAB**: Tabbseparerade värdefiler
+* **TSV eller TAB**: Tabbseparerade värdefiler
 
 ## Allmänna filkrav
 
@@ -39,7 +39,7 @@ JSON-filformatet följer konventioner för JSON-rader (JSONL). Filen måste inne
 
 >[!NOTE]
 >
->Trots följande konventioner för JSON-rader använder du filtillägget `.json` för alla överföringar. Användning av tillägget `.jsonl` kan orsaka fel.
+>Trots att du följer konventionerna för JSON-rader använder du filtillägget `.json` för alla överföringar. Användning av tillägget `.jsonl` kan orsaka fel.
 
 ### JSON-struktur
 
@@ -48,7 +48,7 @@ Varje JSON-objekt måste innehålla:
 * `key` (obligatoriskt): Unik identifierare för klassificeringsposten
 * `data` (krävs för uppdateringar): Ett objekt som innehåller klassificeringskolumnnamn och deras värden
 * `action` (valfritt): Den åtgärd som ska utföras. Följande värden stöds:
-   * `update` (standard)
+   * `update` (standardåtgärden när ingen åtgärd har angetts)
    * `delete-field`
    * `delete-key`
 * `enc` (valfritt): Datakodningsspecifikation. Följande värden stöds:
@@ -57,32 +57,6 @@ Varje JSON-objekt måste innehålla:
 
 Alla JSON-fältnamn (`key`, `data`, `action`, `enc`) är skiftlägeskänsliga och måste skrivas med gemener.
 
-### JSON-exempel
-
-**Grundläggande uppdateringspost:**
-
-```json
-{"key": "product123", "data": {"Product Name": "Basketball Shoes", "Brand": "Brand A", "Category": "Sports"}}
-```
-
-**Uppdatering med angiven kodning:**
-
-```json
-{"key": "product456", "enc": "utf8", "data": {"Product Name": "Running Shoes", "Brand": "Brand B"}}
-```
-
-**Ta bort specifika fält:**
-
-```json
-{"key": "product789", "action": "delete-field", "data": {"Brand": null, "Category": null}}
-```
-
-**Ta bort en hel nyckel:**
-
-```json
-{"key": "product999", "action": "delete-key"}
-```
-
 ### JSON-valideringsregler
 
 * Fältet `key` är obligatoriskt och får inte vara null eller tomt.
@@ -90,6 +64,35 @@ Alla JSON-fältnamn (`key`, `data`, `action`, `enc`) är skiftlägeskänsliga oc
 * För `delete-field`-åtgärder måste fältet `data` innehålla de fält som ska tas bort.
 * Fältet `delete-key` får inte finnas för `data`-åtgärder.
 * Kodningsvärden som stöds är inte skiftlägeskänsliga och innehåller standardnamn på teckenuppsättningar.
+
+### JSON-exempel
+
+Några exempel på JSON-poster i en JSON-fil.
+
+#### Grundläggande uppdateringspost
+
+```json
+{"key": "product123", "data": {"Product Name": "Basketball Shoes", "Brand": "Brand A", "Category": "Sports"}}
+```
+
+#### Uppdatera med angiven kodning
+
+```json
+{"key": "product456", "enc": "utf8", "data": {"Product Name": "Running Shoes", "Brand": "Brand B"}}
+```
+
+#### Ta bort specifika fält
+
+```json
+{"key": "product789", "action": "delete-field", "data": {"Brand": null, "Category": null}}
+```
+
+#### Ta bort en hel nyckel
+
+```json
+{"key": "product999", "action": "delete-key"}
+```
+
 
 +++
 
@@ -104,32 +107,6 @@ CSV-filer (kommaseparerade värden) avgränsar klassificeringsdatafält med komm
 * **Avgränsare**: Fält avgränsas med kommatecken
 * **Citat**: Fält som innehåller kommatecken, citattecken eller radmatningar ska omslutas av citattecken
 
-### CSV-exempel
-
-**Grundläggande klassificeringsdata:**
-
-```csv
-Key,Product Name,Brand,Category,Price
-product123,"Basketball Shoes",Brand A,Sports,89.99
-product456,"Running Shoes",Brand B,Sports,79.99
-product789,"Winter Jacket",Brand C,Clothing,149.99
-```
-
-**Ta bort en hel nyckel:**
-
-```csv
-Key,Product Name,Brand,Category,Price
-product999,~deletekey~,,,
-```
-
-**Ta bort specifika fält (blandat med uppdateringar):**
-
-```csv
-Key,Product Name,Brand,Category,Price
-product123,"Updated Product Name",Brand A,Sports,89.99
-product456,,~empty~,~empty~,79.99
-```
-
 ### CSV-formateringsregler
 
 * Fält som innehåller kommatecken måste omslutas av citattecken.
@@ -138,11 +115,39 @@ product456,,~empty~,~empty~,79.99
 * Radavstånd och avslutande blanksteg runt fält trimmas automatiskt.
 * Specialtecken (tabbar, nya rader) i citattecken bevaras.
 
-**Ta bort åtgärder:**
+### CSV-borttagningsåtgärder
 
 * Använd `~deletekey~` i alla fält för att ta bort hela nyckeln och alla dess klassificeringsdata
 * Använd `~empty~` i specifika fält om du bara vill ta bort dessa klassificeringsvärden (övriga fält förblir oförändrade)
 * När du använder `~empty~` kan du blanda borttagningar med uppdateringar i samma fil
+
+### CSV-exempel
+
+Några exempel på CSV-poster i en CSV-fil.
+
+#### Grundläggande klassificeringsdata
+
+```csv
+Key,Product Name,Brand,Category,Price
+product123,"Basketball Shoes",Brand A,Sports,89.99
+product456,"Running Shoes",Brand B,Sports,79.99
+product789,"Winter Jacket",Brand C,Clothing,149.99
+```
+
+#### Ta bort en hel nyckel
+
+```csv
+Key,Product Name,Brand,Category,Price
+product999,~deletekey~,,,
+```
+
+#### Ta bort specifika fält (blandat med uppdateringar)
+
+```csv
+Key,Product Name,Brand,Category,Price
+product123,"Updated Product Name",Brand A,Sports,89.99
+product456,,~empty~,~empty~,79.99
+```
 
 +++
 
@@ -157,9 +162,25 @@ I TSV- (Tab-Separated Values) och TABB-filer används tabbtecken för att skilja
 * **Avgränsare**: Fält avgränsas med tabbtecken (`\t`).
 * **Citat**: I allmänhet behövs ingen offert, men vissa implementeringar stöder citattecken.
 
+### Formateringsregler för TSV och TAB
+
+* Fält avgränsas med enkla tabbtecken.
+* Tomma fält (på varandra följande flikar) representerar null-värden.
+* Normalt behövs ingen specialoffert.
+* Radavstånd och avslutande blanksteg bevaras.
+* Tidslinjetecken i fält bör undvikas.
+
+### Åtgärder för att ta bort TSV och TABB
+
+* Använd `~deletekey~` i vilket fält som helst för att ta bort hela nyckeln och alla dess klassificeringsdata.
+* Använd `~empty~` i specifika fält om du bara vill ta bort dessa klassificeringsvärden (lämnar andra fält intakta).
+* När du använder `~empty~` kan du blanda borttagningar med uppdateringar i samma fil.
+
 ### Exempel på TSV och TAB
 
-**Grundläggande klassificeringsdata:**
+Några exempel på TSV- eller TAB-avgränsade poster i en TSV- eller TAB-fil.
+
+#### Grundläggande klassificeringsdata
 
 ```tsv
 Key    Product Name    Brand    Category    Price
@@ -168,14 +189,14 @@ product456    Running Shoes    Brand B    Sports    79.99
 product789    Winter Jacket    Brand C    Clothing    149.99
 ```
 
-**Ta bort en hel nyckel:**
+#### Ta bort en hel nyckel
 
 ```tsv
 Key    Product Name    Brand    Category    Price
 product999    ~deletekey~            
 ```
 
-**Ta bort specifika fält (blandat med uppdateringar):**
+#### Ta bort specifika fält (blandat med uppdateringar)
 
 ```tsv
 Key    Product Name    Brand    Category    Price
@@ -183,30 +204,26 @@ product123    Updated Product Name    Brand A    Sports    89.99
 product456        ~empty~    ~empty~    79.99
 ```
 
-### Formateringsregler för TSV/TAB
-
-* Fält avgränsas med enkla tabbtecken.
-* Tomma fält (på varandra följande flikar) representerar null-värden.
-* Normalt behövs ingen specialoffert.
-* Radavstånd och avslutande blanksteg bevaras.
-* Tidslinjetecken i fält bör undvikas.
-
-**Ta bort åtgärder:**
-
-* Använd `~deletekey~` i vilket fält som helst för att ta bort hela nyckeln och alla dess klassificeringsdata.
-* Använd `~empty~` i specifika fält om du bara vill ta bort dessa klassificeringsvärden (lämnar andra fält intakta).
-* När du använder `~empty~` kan du blanda borttagningar med uppdateringar i samma fil.
-
 +++
 
 ## Felhantering
 
-Vanliga problem och lösningar vid överföring:
+Vanliga problem och lösningar vid överföring av filer:
 
 ### Allmänna filformatsfel
 
 * **Ogiltigt filformat**: Verifiera att filtillägget matchar innehållsformatet (`.json`, `.csv`, `.tsv` eller `.tab`).
 * **Okänt huvud**: Kolumnnamn måste matcha ditt klassificeringsmängdsschema (gäller för alla format).
+
+### JSON-specifika fel
+
+* **Nyckeln är ett obligatoriskt fält**: Alla JSON-poster måste ha ett `"key"`-fält som inte är tomt (skiftlägeskänsligt).
+* **Data är ett obligatoriskt fält när åtgärd=uppdatering** används: JSON-uppdateringsåtgärder måste innehålla ett `"data"`-fält.
+* **Data är ett obligatoriskt fält när åtgärd=delete-field** används: JSON delete-field-åtgärder måste ange vilka fält som ska tas bort i fältet `"data"`.
+* **Data får inte finnas när action=delete-key** används: JSON delete-key-åtgärder kan inte innehålla ett `"data"`-fält.
+* **Kodning som inte stöds**: Använd bara kodningsvärden som stöds i fältet `"enc"` (`utf8`, `UTF8`, `latin1`, `LATIN1`).
+* **Ogiltig JSON-syntax**: Kontrollera att JSON-filen är korrekt formaterad enligt JSONL-konventioner. Kontrollera också om det finns allmän JSON-formatering, saknade citattecken, kommatecken, hakparenteser osv.
+
 
 ### CSV- och TSV-specifika fel
 
@@ -217,14 +234,6 @@ Vanliga problem och lösningar vid överföring:
 * **Antalet kolumner matchade inte rubrikerna**: Varje CSV- eller TSV-datarad måste ha samma antal fält som rubrikraden.
 * **&quot;Felformaterat dokument**: Kontrollera CSV-citat, rätt tabbseparation i TSV-filer med mera.
 
-### JSON-specifika fel
-
-* **Nyckeln är ett obligatoriskt fält**: Alla JSON-poster måste ha ett `"key"`-fält som inte är tomt (skiftlägeskänsligt).
-* **Data är ett obligatoriskt fält när åtgärd=uppdatering** används: JSON-uppdateringsåtgärder måste innehålla ett `"data"`-fält.
-* **Data är ett obligatoriskt fält när åtgärd=delete-field** används: JSON delete-field-åtgärder måste ange vilka fält som ska tas bort i fältet `"data"`.
-* **Data får inte finnas när action=delete-key** används: JSON delete-key-åtgärder kan inte innehålla ett `"data"`-fält.
-* **Kodning som inte stöds**: Använd bara kodningsvärden som stöds i fältet `"enc"` (`utf8`, `UTF8`, `latin1`, `LATIN1`).
-* **Ogiltig JSON-syntax**: Kontrollera att JSON-filen är korrekt formaterad enligt JSONL-konventioner. Kontrollera också om det finns allmän JSON-formatering, saknade citattecken, kommatecken, hakparenteser osv.
 
 ### Storleksbegränsningsfel
 
@@ -237,4 +246,4 @@ Vanliga problem och lösningar vid överföring:
 * **Gruppbearbetning**: För stora datauppsättningar bör du dela upp dem i mindre filer.
 * **Dataverifiering**: Testa med en liten exempelfil innan du överför stora datamängder.
 * **Säkerhetskopiera**: Behåll kopior av dina källdatafiler.
-* **Inkrementella uppdateringar**: Använd JSON-format för att få exakt kontroll över uppdateringar och borttagningar av enskilda poster.
+* **Inkrementella uppdateringar**: Använd JSON-formatet för att få exakt kontroll över uppdateringar och borttagningar av enskilda poster.

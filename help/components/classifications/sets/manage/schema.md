@@ -3,9 +3,9 @@ title: Schema för klassificeringsuppsättning
 description: Lär dig hur du visar och redigerar schemat för en enskild klassificeringsuppsättning.
 exl-id: 4a7c5bfe-ff2b-4380-af46-435801d73c1e
 feature: Classifications
-source-git-commit: f34072ec42d62cef0a3e1fd4d63f6f39693cf0fd
+source-git-commit: 0f80bb314c8e041a98af26734d56ab364c23a49b
 workflow-type: tm+mt
-source-wordcount: '1299'
+source-wordcount: '1300'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Listan med klassificeringar har följande kolumner:
 | Kolumn | Beskrivning |
 |---|---|
 | **[!UICONTROL Classification Name]** | Namnet som du angav för klassificeringen. |
-| **[!UICONTROL Identity Name]** | Det härledda namnet av systemet för klassificeringen. Detta är ett skrivskyddat värde och du kan använda identitetsnamnet |
+| **[!UICONTROL Identity Name]** | Det härledda namnet av systemet för klassificeringen. Det här namnet är ett skrivskyddat värde och du kan använda identitetsnamnet |
 | **[!UICONTROL Classified By]** | Om det används, en länk till den uppslagsklassificeringsuppsättning som används för att klassificera den här klassificeringen. |
 
 
@@ -54,7 +54,7 @@ Följande åtgärder är tillgängliga som knappar högst upp i klassificeringsl
 | ![UploadToCloud](/help/assets/icons/UploadToCloud.svg) | **[!UICONTROL Upload]** | [Överför en JSON-, CSV-, TSV- eller TAB-fil](#upload). |
 | ![Hämta](/help/assets/icons/Download.svg) | **[!UICONTROL Download]** | [Hämta klassificeringsdata](#download). |
 | ![Dokumentfragment](/help/assets/icons/DocumentFragment.svg) | **[!UICONTROL Template]** | [Hämta en mall](#template) för klassificeringsdata. |
-| ![Historik](/help/assets/icons/History.svg) | **[!UICONTROL Job History]** | Visa jobbhanteraren [&#x200B; för klassificeringsuppsättningen, filtrerad för den valda klassificeringsuppsättningen.](/help/components/classifications/sets/job-manager.md) |
+| ![Historik](/help/assets/icons/History.svg) | **[!UICONTROL Job History]** | Visa jobbhanteraren [ för klassificeringsuppsättningen, filtrerad för den valda klassificeringsuppsättningen.](/help/components/classifications/sets/job-manager.md) |
 | ![Kugghjul](/help/assets/icons/Gear.svg) | **[!UICONTROL Automate]** | [Automatisera inmatningen av klassificeringsdata](#automate) med hjälp av en molnplats. |
 
 
@@ -82,7 +82,7 @@ Om du vill importera klassificeringsdata till schemat för en klassificering vä
 
    En **[!UICONTROL Schema Preview]** av filens innehåll visas. I förhandsgranskningen visas kolumnerna med data från filen. Om du vill ändra storlek på en kolumn väljer du ![SparrronDownSize300](/help/assets/icons2/ChevronDownSize300.svg) och väljer **[!UICONTROL Resize column]**. Ett handtag som gör att du kan ändra storlek på kolumnen visas.
 
-   När ingen klassificering har definierats i klassificeringsuppsättningen för en kolumn visas en varning ![Alert](/help/assets/icons/Alert.svg). Varningen förklarar att det inte finns någon klassificering i den befintliga klassificeringsschemamängden och att den kommer att skapas vid importen.
+   När ingen klassificering har definierats i klassificeringsuppsättningen för en kolumn visas en varning ![Alert](/help/assets/icons/Alert.svg). Varningen förklarar att det inte finns någon klassificering i den befintliga klassificeringsschemamängden och att den skapas vid importen.
 
 1. Välj **[!UICONTROL Overwrite data on conflict?]** om du vill skriva över aktuella klassificeringsdata med de nya importerade. Exempel:
 
@@ -156,14 +156,14 @@ I dialogrutan **[!UICONTROL Download template for _klassificeringsuppsättningsn
 >id="classificationsets_schema_automate_locationaccount"
 >title="Platskonto"
 >abstract="Lista över platskonton för kontotyper som stöder import av klassificeringsdata. Välj **[!UICONTROL New account]** om du vill skapa ett nytt platskonto."
->additional-url="https://experienceleague.adobe.com/docs/analytics/components/locations/configure-import-accounts.html?lang=sv-SE" text="Konfigurera molnimport- och exportkonton"
+>additional-url="https://experienceleague.adobe.com/docs/analytics/components/locations/configure-import-accounts.html?lang=en" text="Konfigurera molnimport- och exportkonton"
 
 
 >[!CONTEXTUALHELP]
 >id="classificationsets_schema_automate_location"
 >title="Plats"
 >abstract="Lista över platser på det valda platskontot som stöder import av klassificeringsdata. Välj **[!UICONTROL New location]** om du vill skapa en ny plats."
->additional-url="https://experienceleague.adobe.com/docs/analytics/components/locations/configure-import-locations.html?lang=sv-SE" text="Konfigurera platser för molnimport och -export"
+>additional-url="https://experienceleague.adobe.com/docs/analytics/components/locations/configure-import-locations.html?lang=en" text="Konfigurera platser för molnimport och -export"
 
 
 Om du vill automatisera intaget av klassificering väljer du ![Kugghjul](/help/assets/icons/Gear.svg) **[!UICONTROL Automate]**.
@@ -172,7 +172,7 @@ Om du vill automatisera intaget av klassificering väljer du ![Kugghjul](/help/a
 
 I dialogrutan **[!UICONTROL Associate / Update Ingest Location for _klassificeringsuppsättningsnamn_]**:
 
-1. Välj en molnplats genom att välja ett alternativ från **[!UICONTROL Location Account]**. Endast [platskonton för kontotyper som stöds som tillåter import av klassificeringsdata](https://experienceleague.adobe.com/sv/docs/analytics/components/locations/configure-import-accounts) visas. Välj **[!UICONTROL New account]** om du vill skapa ett nytt konto.
+1. Välj en molnplats genom att välja ett alternativ från **[!UICONTROL Location Account]**. Endast [platskonton för kontotyper som stöds som tillåter import av klassificeringsdata](https://experienceleague.adobe.com/en/docs/analytics/components/locations/configure-import-accounts) visas. Välj **[!UICONTROL New account]** om du vill skapa ett nytt konto.
 1. Välj en plats genom att välja ett alternativ från **[!UICONTROL Location]**. Endast platserna för valda kontotyper för import av klassificeringsdata visas. Välj **[!UICONTROL New location]** om du vill skapa en ny plats.
 
    >[!IMPORTANT]
@@ -194,7 +194,7 @@ I dialogrutan **[!UICONTROL Associate / Update Ingest Location for _klassificeri
 
 1. Om du vill meddela användare om slutförandet av importen anger du e-postadresser, avgränsade med kommatecken, för **[!UICONTROL Email(s) to notify when ingest jobs completes (comma separated)]**.
 1. Välj **[!UICONTROL Validate]**. Anslutningen till molnplatsen verifieras.
-1. Om valideringen lyckas visas ett popup-meddelande som visar ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Location validation successful. Connection to cloud storage verified.]**<br/>Välj **[!UICONTROL Save]**&#x200B;om du har skapat anslutningen till molnanslutningen. Annars väljer du **[!UICONTROL Update]**. Eller välj **[!UICONTROL Cancel]**&#x200B;om du vill avbryta konfigurationen av molnplatsen.
+1. Om valideringen lyckas visas ett popup-meddelande som visar ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Location validation successful. Connection to cloud storage verified.]**<br/>Välj **[!UICONTROL Save]**om du har skapat anslutningen till molnanslutningen. Annars väljer du **[!UICONTROL Update]**. Eller välj **[!UICONTROL Cancel]**om du vill avbryta konfigurationen av molnplatsen.
 
 När du överför filer till molnplatsen identifieras filen och skickas som ett importjobb inom 15 minuter. Resultatet av det importjobbet rapporteras i jobbhanteraren [för klassificeringar](/help/components/classifications/sets/job-manager.md). Om du har lagts till i listan över användare för att meddela att importen har slutförts, får du även e-postmeddelanden.
 
