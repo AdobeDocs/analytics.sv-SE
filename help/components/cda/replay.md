@@ -4,9 +4,9 @@ description: Förstå begreppet"replay" i enhetsövergripande analys
 exl-id: 0b7252ff-3986-4fcf-810a-438d9a51e01f
 feature: CDA
 role: Admin
-source-git-commit: f75a1f6d9f08f422595c24760796abf0f8332ddb
+source-git-commit: ad272145308d5785834d5daa93717ed140d94e18
 workflow-type: tm+mt
-source-wordcount: '491'
+source-wordcount: '488'
 ht-degree: 0%
 
 ---
@@ -34,9 +34,9 @@ Så snart en träff har samlats försöker CDA sy ihop den till kända enheter. 
 | --- | --- | --- | --- | --- | 
 | `1` | `246` | - | Bob på sin dator, oautentiserad | `1` (246) |
 | `2` | `246` | `Bob` | Bob loggar in på sitt skrivbord | `2` (246 och Bob) |
-| `3` | `3579` | - | Bob på sin mobila enhet, oautentiserad | `2` (246 och 3579) | `3` (246, Bob och 3579) |
+| `3` | `3579` | - | Bob på sin mobila enhet, oautentiserad | `3` (246, Bob och 3579) |
 | `4` | `3579` | `Bob` | Bob loggar in på mobilen | `3` (246, Bob och 3579) |
-| `5` | `246` | - | Bob kommer åt din webbplats på skrivbordet igen, oautentiserad | | `3` (246, Bob och 3579) |
+| `5` | `246` | - | Bob kommer åt din webbplats på skrivbordet igen, oautentiserad | `3` (246, Bob och 3579) |
 | `6` | `246` | `Bob` | Bob loggar in igen via skrivbordet | `3` (246, Bob och 3579) |
 | `7` | `3579` | - | Bob kommer åt din webbplats igen på mobilen | `3` (246, Bob och 3579) |
 | `8` | `3579` | `Bob` | Bob loggar in igen via mobilen | `3` (246, Bob och 3579) |
