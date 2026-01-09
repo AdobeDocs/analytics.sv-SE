@@ -34,7 +34,7 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | --- | --- |
 | **November 2025** | |
 | Viktiga överväganden om VISTA-regler | Viktiga överväganden gällande [Vista-regler](/help/technotes/vista.md) har uppdaterats. |
-| Datakolumn-ID har lagts till för konversationsbaserade AI-verktyg | [kolumnreferens-ID ](/help/export/analytics-data-feed/c-df-contents/datafeeds-reference.md) för konversationsbaserade AI-verktyg har lagts till i kolumnen ref_type. |
+| Datakolumn-ID har lagts till för konversationsbaserade AI-verktyg | [kolumnreferens-ID &#x200B;](/help/export/analytics-data-feed/c-df-contents/datafeeds-reference.md) för konversationsbaserade AI-verktyg har lagts till i kolumnen ref_type. |
 | **Oktober 2025** | |
 | Klassificeringsuppsättningar | Uppdateringar av dokumentationen för [klassificeringsuppsättningar](/help/components/classifications/sets/overview.md). |
 | Attributionskonfiguration | Ytterligare uppdateringar som återspeglar de nya attributkonfigurationsalternativen för modell-, container- och lookback-fönster. |
@@ -62,7 +62,7 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | Livesream API - klientimplementering | Använd [Livesream-klientimplementeringen](https://developer.adobe.com/analytics-apis/docs/2.0/guides/endpoints/livestream/clientcode/) för att förbruka data från Livesream. |
 | Uppdatera till klassificerings-API | Du kan nu [ta bort enskilda klassificeringsfält eller -nycklar från servern](https://developer.adobe.com/analytics-apis/docs/2.0/guides/endpoints/classifications/remove-values/). Detta är ett alternativ till att ta bort en hel klassificeringsdatamängd med metoden DELETE. |
 | **Januari 2025** |  |
-| API-referens för dataflöden | Referensen [för API:t för datafeeds ](https://adobedocs.github.io/analytics-2.0-apis/?urls.primaryName=Data%20Feeds%20APIs) är nu tillgänglig. |
+| API-referens för dataflöden | Referensen [för API:t för datafeeds &#x200B;](https://adobedocs.github.io/analytics-2.0-apis/?urls.primaryName=Data%20Feeds%20APIs) är nu tillgänglig. |
 | Ny dokumentation om schemaläggning i nya Report Builder | [Schemaläggning](/help/analyze/report-builder/schedule-reportbuilder.md) tillåter inte bara att du schemalägger nya Report Builder-arbetsböcker. Dessutom kan du hämta metadata för gamla schemalagda aktiviteter när du konverterar äldre arbetsböcker. |
 | Förbättringar av rapporter (kallas även mallar) i Analysis Workspace | Det finns nu olika förbättringar för rapporter (kallas även [mallar](/help/analyze/analysis-workspace/templates/use-templates.md)) |
 
@@ -80,7 +80,7 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | Slutförda händelser | Effektiv dokumentation om [success events](/help/admin/tools/manage-rs/edit-settings/conversion-var-admin/c-success-events/success-event.md). Uppdaterat för tydlighet och precision. |
 | Minst en kontotyp måste väljas vid hantering av platser | Tydligare är att när administratörer [begränsar de kontotyper som används för export och import](/help/components/locations/locations-manager.md#limit-the-account-types-that-are-available-to-users) måste minst en kontotyp väljas. |
 | Lagt till information om snabba beräknade mätvärden | Uppdaterad information i [Metrisk](/help/analyze/analysis-workspace/components/apply-create-metrics.md) för att förtydliga skillnaden mellan [beräknade mått som skapas i beräkningsverktyget](/help/analyze/analysis-workspace/components/apply-create-metrics.md#create-calculated-metrics-for-all-projects) och [de som skapas som snabbberäknade mätvärden i ett enskilt projekt](/help/analyze/analysis-workspace/components/apply-create-metrics.md#create-calculated-metrics-for-a-single-project). Ytterligare information om slangarna för att skapa snabba beräknade mätvärden.<p>Beräknade mätvärden som har skapats i verktyget för beräknade mätvärden är tillgängliga i komponentlistan och kan tillämpas på projekt i hela organisationen, medan beräknade mätvärden som har skapats som snabba beräknade mätvärden endast är tillgängliga i det projekt där de skapades.</p><p>Uppdaterad information i [Build metrics](/help/components/calculated-metrics/workflow/c-build-metrics/cm-build-metrics.md) för att göra liknande förtydliganden.</p> |
-| Lagt till threads.net i dimensionen &#39;Refererartyp&#39; | threads.net har lagts till i listan över sociala nätverk som används i dimensionen [ för ](/help/components/dimensions/referrer-type.md)-referenstypen. |
+| Lagt till threads.net i dimensionen &#39;Refererartyp&#39; | threads.net har lagts till i listan över sociala nätverk som används i dimensionen [&#x200B; för &#x200B;](/help/components/dimensions/referrer-type.md)-referenstypen. |
 | Uppdaterad dokumentation för hantering av dataflöden | Uppdaterad information i [Hantera dataflöden](/help/export/analytics-data-feed/df-manage-feeds.md) för att förbättra tydligheten. <p>Bland uppdateringarna finns:</p><ul><li>Skapade separata avsnitt för olika uppgifter för att göra informationen enklare att skanna och använda.</li><li>Lagt till information om förändringar i beteendet för liveflöden som återaktiveras. Dessa ändringar är för närvarande begränsade och är ännu inte tillgängliga för alla kunder.</li><li>Tillagd information som anger att dataflöden måste ha statusen Aktiv innan de kan tas bort.</li> |
 | Uppdaterade vanliga felmeddelanden | Mindre uppdateringar av de [vanliga felmeddelandena](/help/analyze/analysis-workspace/workspace-faq/error-messages.md) har gjorts. |
 | **Juni 2024** | |
@@ -176,7 +176,7 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | Implementering | Uppdaterat innehåll om hur du [implementerar Adobe Analytics för webb och mobiler](../implement/home.md). |
 | Workspace-kalendrar och datumintervall | Uppdaterat innehåll som beskriver relativa datumintervall, uppdateringar av formelberäkning och ändringar i kalendergränssnittet. Se [Om relativa paneldatumintervall](/help/analyze/analysis-workspace/components/calendar-date-ranges/calendar.md). |
 | Mobil styrkort | Nytt dokumentationsavsnitt som beskriver hur du visar och döljer datumintervall för jämförelse. Se [Visa datumintervall för jämförelse](/help/analyze/mobile-app/create-scorecard.md) i Customer Journey Analytics. |
-| 1.4 API | API:t [ för ](https://developer.adobe.com/analytics-apis/docs/1.4/)Adobe Analytics 1.4 har fått en fullständig omskrivning och har nu publicerats på Adobe Developer. |
+| 1.4 API | API:t [&#x200B; för &#x200B;](https://developer.adobe.com/analytics-apis/docs/1.4/)Adobe Analytics 1.4 har fått en fullständig omskrivning och har nu publicerats på Adobe Developer. |
 | Spåra olika implementeringstyper | Användningsexemplet [Spåra olika implementeringstyper](../implement/id/cross-type-implementation.md) har uppdaterats för att passa Experience Cloud ID-tjänsten. |
 | **Januari 2023** | |
 | Filtrera och ordna tabeller | Uppdaterat innehåll (inklusive att lägga till procedurer och förklara tillgängliga alternativ) i artikeln [Filtrera och sortera tabeller](/help/analyze/analysis-workspace/visualizations/freeform-table/filter-and-sort.md). Artikelns namn ändrades från&quot;Sidnumrering, filtrering och sortering&quot;. |
@@ -194,7 +194,7 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | Uppdatering i flera valutor | Sidorna runt [Stöd för flera valutor](/help/implement/vars/config-vars/currencycode.md) uppdateras. |
 | **Oktober 2022** |  |
 | Data Workbench | [Meddelande om upphörande av livscykel](https://experienceleague.adobe.com/docs/data-workbench/using/eol.html) |
-| Klienttips | Ny [översikt och vanliga frågor ](/help/technotes/client-hints.md). |
+| Klienttips | Ny [översikt och vanliga frågor &#x200B;](/help/technotes/client-hints.md). |
 | Sammanfattning av nyckelmått | Nytt avsnitt om visualiseringen av [Översikt över nyckeltal](/help/analyze/analysis-workspace/visualizations/key-metric.md). |
 | Klassificeringsuppsättningar | Den nya användarupplevelsen [Klassificeringsuppsättningar](/help/components/classifications/sets/overview.md) ger ett enda gränssnitt för att hantera klassificeringar och regler och förbättrar synligheten för kundägda klassificeringsdata. |
 | Mobilapp: Anpassade detaljvyer | Nytt avsnitt om [anpassade detaljvyer](/help/analyze/mobile-app/create-scorecard.md). |
