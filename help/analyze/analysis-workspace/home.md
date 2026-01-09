@@ -156,5 +156,5 @@ När du är klar med projektet och samlar in åtgärdbara insikter kan andra vil
 
 ## Ytterligare resurser {#resources}
 
-- Adobe erbjuder hundratals [självstudiekurser i Analytics-videor](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/overview).
-- Information om nya funktioner finns i [Versionsinformation för Adobe Experience Cloud](https://experienceleague.adobe.com/en/docs/release-notes/experience-cloud/current).
+- Adobe erbjuder hundratals [självstudiekurser i Analytics-videor](https://experienceleague.adobe.com/sv/docs/analytics-learn/tutorials/overview).
+- Information om nya funktioner finns i [Versionsinformation för Adobe Experience Cloud](https://experienceleague.adobe.com/sv/docs/release-notes/experience-cloud/current).

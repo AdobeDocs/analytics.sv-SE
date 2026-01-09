@@ -28,7 +28,7 @@ Med varningar kan du:
    * Förändringar i mätvärden med en viss procentandel.
    * Mätvärden som är över, under eller lika med ett specifikt värde. (endast för Adobe Analytics-kunder med ett Select-, Prime- eller Ultimate-paket)
 
-Den här [videosjälvstudien](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/data-science/intelligent-alerts) ger en grundläggande översikt över varningar.
+Den här [videosjälvstudien](https://experienceleague.adobe.com/sv/docs/analytics-learn/tutorials/data-science/intelligent-alerts) ger en grundläggande översikt över varningar.
 
 
 ## Anomalsökning efter aviseringar
