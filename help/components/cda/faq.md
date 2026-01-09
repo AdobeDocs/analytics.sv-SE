@@ -4,9 +4,9 @@ description: Vanliga frågor och svar om enhetsövergripande analys
 exl-id: 7f5529f6-eee7-4bb9-9894-b47ca6c4e9be
 feature: CDA
 role: Admin
-source-git-commit: cfa5cc02ba3a7349b51a904f29bab533c0f1c603
+source-git-commit: f75a1f6d9f08f422595c24760796abf0f8332ddb
 workflow-type: tm+mt
-source-wordcount: '1949'
+source-wordcount: '1695'
 ht-degree: 0%
 
 ---
@@ -22,14 +22,14 @@ Du kan använda en [!UICONTROL Flow]-visualisering med dimensionen för mobilenh
 
 1. Logga in på Adobe Analytics och skapa ett nytt tomt Workspace-projekt.
 2. Klicka på fliken Visualiseringar till vänster och dra en flödesvisualisering till arbetsytan till höger.
-3. Klicka på fliken Komponenter till vänster och dra dimensionen &quot;Mobilenhetstyp&quot; till mittplatsen med etiketten &quot;Dimension eller Artikel&quot;.
+3. Klicka på fliken Komponenter till vänster och dra dimensionen &quot;Mobilenhetstyp&quot; till mittplatsen med namnet &quot;Dimension eller Item&quot;.
 4. Den här flödesrapporten är interaktiv. Klicka på något av värdena för att utöka flödena till efterföljande eller föregående sidor. Använd högerklicksmenyn för att expandera eller komprimera kolumner. Olika dimensioner kan också användas i samma flödesrapport.
 
 +++
 
 +++ Kan jag se hur människor rör sig mellan olika användarupplevelser (till exempel webbläsare på stationära datorer jämfört med mobilwebbläsare jämfört med mobilappar)?
 
-I exemplet med mobilenhetstyp ovan kan du se hur människor rör sig mellan olika typer av mobila enheter och typer av stationära enheter. Du kan dock inte skilja datorwebbläsare från mobilwebbläsare. Om du vill ha den här informationen kan du skapa en anpassad variabel (till exempel ett utkast eller en eVar) som registrerar om upplevelsen inträffar i en datorwebbläsare, mobilwebbläsare eller mobilapp. Du kan sedan skapa ett flödesdiagram enligt beskrivningen ovan med den anpassade variabeln i stället för mobilenhetstypen. Den här metoden ger en något annorlunda vy över beteendet mellan olika enheter.
+I exemplet med mobilenhetstyp ovan kan du se hur människor rör sig mellan olika typer av mobila enheter och typer av stationära enheter. Du kan dock inte skilja datorwebbläsare från mobilwebbläsare. Om du vill ha den här insikten kan du skapa en anpassad variabel (till exempel ett utkast eller eVar) som registrerar om upplevelsen inträffar i en datorwebbläsare, mobilwebbläsare eller mobilapp. Du kan sedan skapa ett flödesdiagram enligt beskrivningen ovan med den anpassade variabeln i stället för mobilenhetstypen. Den här metoden ger en något annorlunda vy över beteendet mellan olika enheter.
 
 +++
 
@@ -41,13 +41,12 @@ CDA:s sammanfogning mellan enheter sker i två samtidiga processer.
 
 * Den andra processen kallas &quot;replay&quot;. Under uppspelning går CDA bakåt i tiden och återställer historiska data, där det är möjligt, inom ett angivet uppslagsfönster. Detta fönster är antingen 1 dag eller 7 dagar, beroende på hur du har begärt att CDA ska konfigureras. Under repriser försöker CDA att skicka tillbaka träffar där personen tidigare var okänd.
 
-* **Om du använder ett enhetsdiagram** behåller Adobe Device Graph-mappningar i ungefär 6 månader. Ett ECID som inte har någon aktivitet på mer än sex månader tas bort från diagrammet. Data som redan sammanfogats i CDA påverkas inte. Efterföljande träffar för detta ECID behandlas som en ny person.
 
 +++
 
 +++ Hur hanterar CDA tidstämplade träffar?
 
-Adobe behandlar tidsstämplade träffar som om de togs emot vid tidpunkten för tidsstämpeln, inte när Adobe tog emot träffen. Tidsstämplade träffar som är äldre än en månad sammanfogas aldrig eftersom de ligger utanför intervallet som används i Adobe för sammanfogning.
+Adobe behandlar tidsstämplade träffar som om de togs emot vid tidpunkten för tidsstämpeln, inte när Adobe tog emot träffen. Tidsstämplade träffar som är äldre än en månad sammanfogas aldrig eftersom de ligger utanför det intervall som Adobe använder för sammanfogning.
 
 +++
 
@@ -65,21 +64,13 @@ Kunder som redan använder ett anpassat besökar-ID kan uppgradera till CDA utan
 
 +++
 
-+++ Hur hanterar enhetsdiagrammet delade enheter?
 
-I vissa situationer är det möjligt att flera personer loggar in från samma enhet. Exempel är en delad enhet hemma, delade datorer i ett bibliotek eller en kioskdator i ett butiksuttag.
-
-* **Om du använder ett enhetsdiagram** är möjligheten att hantera delade enheter begränsad. Enhetsdiagrammet använder en algoritm för att fastställa ägarskap för ett kluster och kan ändras varje gång klustret publiceras. Användare av den delade enheten är beroende av vilket kluster de tillhör.
-* **Om du använder fältbaserad sammanfogning** åsidosätter det utkast eller den eVar som du väljer för att hjälpa till att identifiera inloggade användare andra identifierare. Delade enheter betraktas som separata personer, även om de kommer från samma enhet.
-
-+++
 
 +++ Hur hanterar CDA situationer där en person har MÅNGA enheter/ECID:n?
 
 I vissa fall kan en enskild användare associera med ett stort antal ECID. Detta kan inträffa om användaren använder många webbläsare eller appar och kan förvärras om de ofta tar bort cookies eller använder webbläsarens privata eller inkodade webbläsarläge.
 
-* **Om du använder ett enhetsdiagram** anger CDA att antalet ECID:n som är kopplade till ett visst användar-ID ska vara 50. Om ett användar-ID är kopplat till för många ECID:n antar enhetsdiagrammet att användar-ID:t är ogiltigt och tar bort klustret som är kopplat till det användar-ID:t. Användar-ID:t läggs sedan till i en blockeringslista för att förhindra att det läggs till i kluster i framtiden. Resultatet vid rapportering är att användar-ID inte sammanfogas mellan olika enheter.
-* **Om du använder fältbaserad sammanfogning** är antalet enheter irrelevanta för det prop/den eVar som du väljer för att hjälpa till att identifiera inloggade användare. En enskild användare kan tillhöra ett valfritt antal enheter utan att det påverkar CDA:s möjlighet att sammanfoga enheter.
+* **Om du använder fältbaserad sammanfogning** är antalet enheter irrelevanta för det propp/den eVar du väljer att använda för att identifiera inloggade användare. En enskild användare kan tillhöra ett valfritt antal enheter utan att det påverkar CDA:s möjlighet att sammanfoga enheter.
 
 +++
 
@@ -102,7 +93,7 @@ Se [Unika enheter](/help/components/metrics/unique-devices.md) för fler exempel
 
 +++ Kan jag inkludera CDA-värden med Adobe Analytics 2.0 API?
 
-Ja. Analysis Workspace använder 2.0-API:t för att begära data från Adobe-servrar, och du kan visa API-anrop som Adobe använder för att skapa egna rapporter:
+Ja. Analysis Workspace använder 2.0-API:t för att begära data från Adobe servrar, och du kan visa API-anrop som Adobe använder för att skapa egna rapporter:
 
 1. Gå till [!UICONTROL Help] > [!UICONTROL Enable debugger] när du är inloggad på Analysis Workspace.
 2. Klicka på felsökningsikonen i den önskade panelen och välj önskad visualisering och tid för begäran.
@@ -119,9 +110,9 @@ Ja. Om en individ skickar träffar från två separata enheter i din virtuella r
 +++ Vilket är det ultimata besökar-ID som CDA använder? Kan jag exportera den från Adobe Analytics?
 
 * **Om du använder ett enhetsdiagram** är ett anpassat ID baserat på deras kluster den primära identifieraren.
-* **Om du använder fältbaserad sammanfogning** är ett anpassat ID baserat på den profil/eVar du väljer den primära identifieraren.
+* **Om du använder fältbaserad sammanfogning** är ett anpassat ID baserat på det utkast/eVar du väljer den primära identifieraren.
 
-Båda dessa identifierare beräknas av Adobe vid den tidpunkt då rapporten körs, vilket också kallas [Rapporttidsbearbetning](../vrs/vrs-report-time-processing.md). Bearbetningen under rapporttiden innebär att den inte är kompatibel med Data Warehouse, dataflöden eller andra exportfunktioner som Adobe erbjuder.
+Båda dessa identifierare beräknas av Adobe när rapporten körs, vilket också kallas [Rapporttidsbearbetning](../vrs/vrs-report-time-processing.md). Bearbetningen under rapporttiden innebär att den inte är kompatibel med Data Warehouse, dataflöden eller andra exportfunktioner som Adobe erbjuder.
 
 +++
 
@@ -131,9 +122,9 @@ Du kan behöva byta från enhetsdiagram till fältbaserad sammanfogning eller vi
 
 +++
 
-+++ Hur hanterar Adobe unika gränser för ett prop eller en eVar som används vid fältbaserad sammanfogning?
++++ Hur hanterar Adobe unika gränser för ett propp eller eVar som används vid fältbaserad sammanfogning?
 
-CDA hämtar identifierarvariabeldimensionsobjekten innan de optimeras för rapportering. Ni behöver inte bekymra er om unika gränser för CDA. Om du däremot har försökt använda detta utkast eller eVar i ett Workspace-projekt kan du fortfarande se dimensionsobjektet [(låg trafik)](/help/technotes/low-traffic.md).
+CDA hämtar identifierarvariabeldimensionsobjekten innan de optimeras för rapportering. Ni behöver inte bekymra er om unika gränser för CDA. Om du däremot försökte använda det proffset eller eVar i ett Workspace-projekt kan du fortfarande se dimensionsobjektet [(låg trafik)](/help/technotes/low-traffic.md).
 
 +++
 
@@ -159,7 +150,7 @@ Fördelarna med att använda 1-dagars uppspelningsfönster är 1) uppspelningsom
 
 +++ Vad händer med sammanfogade data i mina virtuella CDA-rapporteringsprogram om mitt företag bestämmer sig för att nedgradera från Analytics Ultimate?
 
-Om en kund nedgraderar från Ultimate har de inte längre tillgång till sammansatta data. Alla data som tidigare sammanfogats tas bort. Detta innebär att den virtuella CDA-rapportsviten nu inte kommer att återspegla enhetssammanfogning. Data kommer att se ut ungefär som det ursprungliga osökta rapportpaketet.
+Om en kund uppgraderar från Ultimate har han eller hon inte längre tillgång till sammansatta data. Alla data som tidigare sammanfogats tas bort. Detta innebär att den virtuella CDA-rapportsviten nu inte kommer att återspegla enhetssammanfogning. Data kommer att se ut ungefär som det ursprungliga osökta rapportpaketet.
 
 +++
 
@@ -171,13 +162,13 @@ CDA använder en komplex parallell bearbetningsprocess, med flera beroende kompo
 
 +++ Varför inflateras mätvärdet &#39;Identified People&#39;?
 
-Antalet identifierade personer kan vara något högre om värdet för identifieraren prop/eVar körs i en [hash-kollision](/help/implement/validate/hash-collisions.md).
+Antalet identifierade personer kan vara något högre om ID-prop/eVar-värdet körs i en [hash-kollision](/help/implement/validate/hash-collisions.md).
 
 För fältbaserad sammanfogning är den anpassade variabeln för identifierare skiftlägeskänslig. Antalet identifierade personer kan vara betydligt högre om identifierarvärdena inte matchar gemener/VERSALER. Om till exempel `bob` och `Bob` skickas och förväntas vara samma person tolkar CDA dessa två värden som distinkta.
 
 +++
 
-+++ När jag tittar på identifieraruttrycket/eVarna, varför ser jag värden som inte är noll för mätvärdet &#39;Ej identifierade personer&#39;?
++++ När jag tittar på identifieraruttrycket/eVar, varför ser jag värden som inte är noll för mätvärdet &#39;Ej identifierade personer&#39;?
 
 Detta inträffar vanligtvis när en besökare genererar både autentiserade och oautentiserade träffar i rapportfönstret. Besökaren tillhör både &#39;Oidentifierad&#39; och &#39;Identifierad&#39; i dimensionen [Identifierad status](/help/components/dimensions/identified-state.md), vilket ger en attribuering av oidentifierade träffar till en identifierare. Det här scenariot kan ändras efter att [Replay](replay.md) har körts, beroende på återspelningsfrekvens och slutförandefrekvens.
 

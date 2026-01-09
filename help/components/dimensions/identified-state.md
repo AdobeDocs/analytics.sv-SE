@@ -1,11 +1,11 @@
 ---
 title: Identifierat läge
-description: En flagga som avgör igenkänning av enhetsdiagrammet.
+description: En flagga som bestämmer igenkänning av stygn.
 feature: Dimensions
 exl-id: 8c6e9003-96f8-460f-a490-203f67be6337
-source-git-commit: d095628e94a45221815b1d08e35132de09f5ed8f
+source-git-commit: f75a1f6d9f08f422595c24760796abf0f8332ddb
 workflow-type: tm+mt
-source-wordcount: '111'
+source-wordcount: '109'
 ht-degree: 0%
 
 ---
@@ -18,9 +18,9 @@ Det identifierade tillståndet [dimension](overview.md) är specifikt för [virt
 
 Så länge du har [Enhetsövergripande analys](../cda/overview.md) konfigurerad för en virtuell rapportsvit fungerar den här dimensionen som standard.
 
-## Dimensioner
+## Dimension-objekt
 
-Dimensionen innehåller `"Identified"` och `"Unidentified"`.
+Dimension-objekt omfattar `"Identified"` och `"Unidentified"`.
 
 * **`"Identified"`**: Träffen har mappats till en person.
 * **`"Unidentified"`**: Träffen är inte mappad till en person och kan inte mappas av någon attribueringsmetod.
