@@ -60,7 +60,7 @@ Den uppspelningstid som spenderas kan hjälpa dig att förstå:
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Medieuppspelningstiden i panelen &#x200B;](https://video.tv.adobe.com/v/338699?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Medieuppspelningstiden i panelen &#x200B;](https://video.tv.adobe.com/v/3446704?captions=swe&quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 
@@ -147,7 +147,7 @@ Playback Time Spent can help you understand:
 
 Following is a video overview of this panel:
 
->[!VIDEO](https://video.tv.adobe.com/v/338699)
+>[!VIDEO](https://video.tv.adobe.com/v/3446704?captions=swe)
 
 ## Use the Media Playback Time Spent panel
 
