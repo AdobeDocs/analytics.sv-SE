@@ -6,7 +6,7 @@ feature: Report Builder
 type: Documentation
 solution: Analytics
 exl-id: 610ce2c8-8ff6-4434-912f-3015cc56a51e
-source-git-commit: 4e75b83e812acf3e17bb4f910831a2f88507aa27
+source-git-commit: f02b660b551f5291443b8f7c5c51179a06b22eb9
 workflow-type: tm+mt
 source-wordcount: '1087'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Med alternativet **[!UICONTROL From cell]** kan du referera till datum som anges
 
 Du kan välja att exkludera idag för valfritt datumintervall.
 
-![Snabbredigeringsrutan Report Builder med kalendern markerad och Uteslut i dag markerad.](./assets/image17.png)
+![Report Builder snabbredigeringsruta med kalendern markerad och Uteslut i dag markerad.](./assets/image17.png)
 
 ## Använda kalendern
 
@@ -62,11 +62,11 @@ Välja datum med hjälp av kalendern
 
 Om du vill ange ett omvänt datumintervall klickar du först på slutdatumet och sedan på startdatumet.
 
-![Report Builder datumintervallfönster med kalendern, slutdatumet och valt startdatum.](./assets/image18.png)
+![Report Builder datumintervall visar kalendern, slutdatumet och det valda startdatumet.](./assets/image18.png)
 
 ### Listrutan Förinställning
 
-Den förinställda listrutan innehåller en standarduppsättning med förinställda datumintervall och datumintervallkomponenter för en datavy som du har sparat eller en datavy som delats med dig.
+Den förinställda listrutan innehåller en standarduppsättning med förinställda datumintervall och datumintervallkomponenter för en rapportserie som du har sparat eller en rapportserie som delats med dig.
 
 ### Rullande datum
 
@@ -76,7 +76,7 @@ Med alternativet för rullande datum kan du välja ett datumintervall med rullan
 
 1. Välj ett rullande uttryck för start- och slutdatumet.
 
-   ![Datumintervallfönstret i Report Builder visar Använd markerade rullande datum och det rullande uttrycket.](./assets/image19.png)
+   ![Report Builder datumintervallfönster visar Använd markerade rullande datum och det rullande uttrycket.](./assets/image19.png)
 
    **Början av** - Gör att du kan välja början av en dag, vecka, månad, kvartal eller år.
 
@@ -86,11 +86,11 @@ Med alternativet för rullande datum kan du välja ett datumintervall med rullan
 
 1. Välj dag, vecka, månad, kvartal eller år som rullande period.
 
-   ![Report Builder datumintervall med den aktuella dagen markerad.](./assets/image20.png)
+   ![Report Builder datumintervallfönster visar den valda dagen.](./assets/image20.png)
 
 1. Lägg till eller subtrahera dagar, veckor, månader, kvartal eller år från ditt rullande datum.
 
-   ![Report Builder datumintervall med den aktuella dagen plus 14 dagar.](./assets/image21.png)
+   ![Report Builder datumintervall visar den aktuella dagen plus 14 dagar.](./assets/image21.png)
 
 1. Klicka på Nästa för att definiera dataområdet.
 
@@ -169,7 +169,7 @@ Datumintervallet kan anges i kalkylbladsceller. Använd alternativet **Datuminte
 
 Välj alternativet **Uteslut i dag** om du vill exkludera i dag från ett valt datumintervall. Om du väljer att inkludera idag kan ofullständiga data hämtas för idag.
 
-Om du väljer det här alternativet utesluts den aktuella dagen från alla lägen för datumintervall, inklusive kalenderdatum, rullande datum och anpassade uttryck. **&#x200B;**
+Om du väljer det här alternativet utesluts den aktuella dagen från alla lägen för datumintervall, inklusive kalenderdatum, rullande datum och anpassade uttryck. ****
 
 ## Giltiga datumintervall
 

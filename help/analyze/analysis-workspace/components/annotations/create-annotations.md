@@ -4,7 +4,7 @@ description: Lär dig skapa anteckningar i Analysis Workspace.
 role: Admin
 feature: Annotations
 exl-id: 3cf9a0fd-11c9-4375-8bbe-9551ba86f86d
-source-git-commit: ca84a5f807545d7196e2e0e90d3209c32d3fd789
+source-git-commit: f02b660b551f5291443b8f7c5c51179a06b22eb9
 workflow-type: tm+mt
 source-wordcount: '783'
 ht-degree: 0%
@@ -46,7 +46,7 @@ Om du vill definiera anteckningen använder du [[!UICONTROL Annotation builder]]
 
 
 
-Dialogrutan **[!UICONTROL Annotations builder]** används för att skapa nya eller redigera befintliga anteckningar. Dialogrutan heter **[!UICONTROL New annotation]** eller **[!UICONTROL Edit annotation]** för anteckningar som du skapar eller hanterar från [[!UICONTROL Annotations]-hanteraren &#x200B;](/help/analyze/analysis-workspace/components/annotations/manage-annotations.md).
+Dialogrutan **[!UICONTROL Annotations builder]** används för att skapa nya eller redigera befintliga anteckningar. Dialogrutan heter **[!UICONTROL New annotation]** eller **[!UICONTROL Edit annotation]** för anteckningar som du skapar eller hanterar från [[!UICONTROL Annotations]-hanteraren ](/help/analyze/analysis-workspace/components/annotations/manage-annotations.md).
 
 
 >[!BEGINTABS]
@@ -73,7 +73,7 @@ Dialogrutan **[!UICONTROL Annotations builder]** används för att skapa nya ell
    | **[!UICONTROL Applied date]** ![Krävs](/help/assets/icons/Required.svg) | Välj det datum eller datumintervall som måste finnas för att anteckningen ska kunna visas. När du skapar en anteckning med kortkommandot blir anteckningen som standard ett datumintervall för endast dagen. När du skapar en anteckning med hjälp av en markering i en visualisering blir anteckningen som standard det datumintervall som baseras på datumintervallet från den panel som visualiseringen tillhör. |
    | **[!UICONTROL Color]** | Använd en färg på anteckningen. Anteckningen visas i projektet med den valda färgen. Färg kan användas för att kategorisera anteckningar, t.ex. allmänna helgdagar, externa händelser, spårningsproblem. |
    | **[!UICONTROL Scope]** | Dra och släpp mätvärden från komponentpanelen som utlöser anteckningen. Till exempel Personer, sessioner och händelser. Dra och släpp sedan de dimensioner eller segment på komponentpanelen som fungerar som segment för att bestämma om anteckningen ska visas eller inte. Om du inte anger ett omfång används anteckningen på alla dina data. <br/>Du har två alternativ:<ul><li>**[!UICONTROL Any of these metrics are present]**: Dra och släpp upp till 10 mätvärden som utlöser den anteckning som ska visas.<br/>Inkomstmåttet har till exempel slutat samla in data för ett visst datumintervall. Dra intäktsmåttet till den här rutan.</li><li>**[!UICONTROL With all of these segments]**: Dra och släpp upp till 10 dimensioner eller segment i segmentet oavsett om anteckningen visas.</li></ul><p><p>**Obs!** Alla anteckningar som används på en komponent som sedan används som en del av ett beräknat mått eller en segmentdefinition ärver INTE automatiskt anteckningen. Det önskade beräknade måttet måste också läggas till i omfångsavsnittet för att anteckningen ska kunna visas. En ny anteckning bör dock skapas för alla segment som du vill kommentera med samma information. Du kan till exempel använda en anteckning för [!UICONTROL Orders] på en viss dag. Du använder sedan [!UICONTROL Orders] i ett beräknat mått för samma datumintervall. Det nya beräknade måttet visar inte automatiskt anteckningen för order. Lägg även till det beräknade måttet i omfångsavsnittet för den anteckning som ska visas. |
-   | **[!UICONTROL Apply to all data views]** | Som standard gäller anteckningen för den ursprungliga rapportsviten. Genom att markera den här rutan kan du göra så att anteckningen gäller för alla rapportsviter i företaget. |
+   | **[!UICONTROL Apply to all report suites]** | Som standard gäller anteckningen för den ursprungliga rapportsviten. Genom att markera den här rutan kan du göra så att anteckningen gäller för alla rapportsviter i företaget. |
 
    {style="table-layout:auto"}
 

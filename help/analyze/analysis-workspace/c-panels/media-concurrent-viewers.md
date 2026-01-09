@@ -4,7 +4,7 @@ description: Lär dig hur du använder och tolkar panelen Media Concurrent Viewe
 feature: Panels
 role: User, Admin
 exl-id: 29575b51-e319-4156-9834-aa0b671afb31
-source-git-commit: fcc165536d77284e002cb2ba6b7856be1fdb3e14
+source-git-commit: f02b660b551f5291443b8f7c5c51179a06b22eb9
 workflow-type: tm+mt
 source-wordcount: '1195'
 ht-degree: 0%
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-_Den här artikeln visar panelen Medievisningsprogram för samtidig användning i_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics Analytics**._<br/>_Se [Panelen för visningsprogram för samtidiga media](/help/analyze/analysis-workspace/c-panels/media-concurrent-viewers.md) för_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**-versionen av den här artikeln._
+_Den här artikeln visar panelen Medievisningsprogram för samtidig användning i_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics Analytics**._<br/>_Se [Panelen för visningsprogram för samtidiga media](/help/analyze/analysis-workspace/c-panels/media-concurrent-viewers.md) för_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**-versionen av den här artikeln._
 
 >[!ENDSHADEBOX]
 
@@ -68,7 +68,7 @@ Så här använder du en **[!UICONTROL Media concurrent viewers]**-panel:
 
 1. Skapa en **[!UICONTROL Media concurrent viewers]**-panel. Mer information om hur du skapar en panel finns i [Skapa en panel](panels.md#create-a-panel).
 
-1. Se till att du väljer en datavy för panelen som har komponenter konfigurerade från Adobe Analytics for Streaming Media Add-on.
+1. Se till att du väljer en rapportsserie för panelen som har komponenter konfigurerade från Adobe Analytics for Streaming Media Add-on.
 
 1. Ange [indata](#panel-input) för panelen.
 
@@ -131,8 +131,8 @@ Det finns ingen friformstabell i den här vyn.  Om du vill visa datakällan kan 
 >[!MORELIKETHIS]
 >
 >[Skapa en panel](/help/analyze/analysis-workspace/c-panels/panels.md#create-a-panel)
->&#x200B;>[Medieuppspelningstid för panelen &#x200B;](media-playback-time-spent.md)
->&#x200B;>[Medie - genomsnittlig minutmålspanel](average-minute-audience-panel.md)
+>[Medieuppspelningstid för panelen ](media-playback-time-spent.md)
+>[Medie - genomsnittlig minutmålspanel](average-minute-audience-panel.md)
 >
 <!--
 # Media Concurrent Viewers panel

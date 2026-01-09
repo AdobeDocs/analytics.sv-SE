@@ -5,7 +5,7 @@ role: User, Admin
 solution: Analytics
 feature: Annotations
 exl-id: 722d7636-f619-479a-97f1-3da23e8f7f83
-source-git-commit: fcc165536d77284e002cb2ba6b7856be1fdb3e14
+source-git-commit: f02b660b551f5291443b8f7c5c51179a06b22eb9
 workflow-type: tm+mt
 source-wordcount: '298'
 ht-degree: 0%
@@ -28,7 +28,7 @@ Anteckningar kan gälla för:
 
 * Det projekt i vilket anteckningar skapas (standard) eller i alla projekt.
 
-* Datavyn där anteckningar skapas (standard) eller alla datavyer.
+* Rapportsviten där anteckningar skapas (standard) eller alla rapportsviter.
 
 Se [Skapa anteckningar](create-annotations.md) för de olika alternativ som är tillgängliga för att skapa anteckningar. Sedan skapar, ändrar och sparar du anteckningar i [Anteckningsverktyget](create-annotations.md#annotation-builder).
 

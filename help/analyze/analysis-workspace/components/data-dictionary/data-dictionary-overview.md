@@ -4,7 +4,7 @@ title: Översikt över dataordlistan
 feature: Components
 role: User, Admin
 exl-id: ecc62287-dc20-41b3-9430-f14ea9fc05e6
-source-git-commit: 74ef4e73b6ed1e2a4ad498e2314af704acb6d8cb
+source-git-commit: f02b660b551f5291443b8f7c5c51179a06b22eb9
 workflow-type: tm+mt
 source-wordcount: '563'
 ht-degree: 0%
@@ -65,11 +65,11 @@ Analysadministratörer kan använda Data Dictionary för följande syften:
 
 * Identifiera komponenter som ännu inte har godkänts.
 
-* Uppdatera komponentbeskrivningar direkt i Analysis Workspace. Alla uppdateringar som görs av komponentbeskrivningarna i datamallen återspeglas i datavyn.
+* Uppdatera komponentbeskrivningar direkt i Analysis Workspace. Alla uppdateringar som görs av komponentbeskrivningarna i Data Dictionary återspeglas i rapportsviten.
 
-  På samma sätt återspeglas alla uppdateringar av komponentbeskrivningarna i datavyn i Analysis Workspace.
+  På samma sätt återspeglas alla uppdateringar av komponentbeskrivningarna i rapportsviten i Analysis Workspace.
 
-  Mer information om hur du lägger till komponentbeskrivningar i antingen Analysis Workspace eller en datavy finns i [Lägga till komponentbeskrivningar](/help/analyze/analysis-workspace/components/add-component-descriptions.md).
+  Mer information om hur du lägger till komponentbeskrivningar i antingen Analysis Workspace eller i en rapportserie finns i [Lägg till komponentbeskrivningar](/help/analyze/analysis-workspace/components/add-component-descriptions.md).
 
 ## Åtkomst till dataordlistan
 

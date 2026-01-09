@@ -5,7 +5,7 @@ title: Kuratprojekt
 feature: Curate and Share
 role: User, Admin
 exl-id: 5e23be83-586a-4543-9be9-65c631b8b0b7
-source-git-commit: fcc165536d77284e002cb2ba6b7856be1fdb3e14
+source-git-commit: f02b660b551f5291443b8f7c5c51179a06b22eb9
 workflow-type: tm+mt
 source-wordcount: '505'
 ht-degree: 0%
@@ -32,7 +32,7 @@ Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Kuratprojekt](htt
 1. Välj **[!UICONTROL Share]** > **[!UICONTROL Curate Project Data]**.
 Komponenterna som används i projektet läggs till automatiskt.
 Om ett projekt har flera rapportsviter visas ett aktuellt släppmål för varje rapportsvit i projektet.
-1. (Valfritt) Om du vill lägga till fler komponenter drar du de komponenter du vill dela från den vänstra panelen till släppzonen **[!UICONTROL Curate components]** för datavyn.
+1. (Valfritt) Om du vill lägga till fler komponenter drar du de komponenter du vill dela från den vänstra panelen till släppzonen **[!UICONTROL Curate components]** för rapportsviten.
 1. Välj **[!UICONTROL Done]**.
 
 

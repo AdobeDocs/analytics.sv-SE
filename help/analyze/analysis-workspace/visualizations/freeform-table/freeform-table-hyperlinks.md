@@ -4,7 +4,7 @@ description: Lär dig hur du skapar hyperlänkar för dimensionsobjekt i en frih
 feature: Freeform Tables
 role: User, Admin
 exl-id: df846a73-e3e3-4376-844e-48153a20e5d6
-source-git-commit: ca84a5f807545d7196e2e0e90d3209c32d3fd789
+source-git-commit: f02b660b551f5291443b8f7c5c51179a06b22eb9
 workflow-type: tm+mt
 source-wordcount: '1584'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Den här funktionen är särskilt användbar när du skapar hyperlänkar för f�
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Hyperlänkar för dimension](https://video.tv.adobe.com/v/3445786?captions=swe&quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Hyperlänkar för dimension](https://video.tv.adobe.com/v/3430411?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 
@@ -40,7 +40,7 @@ Tänk på följande när du skapar hyperlänkar för ett eller flera dimensionso
 
 * De hyperlänkar du skapar lagras på frihandstabellen i Analysis Workspace-projektet. Hyperlänkar bevaras inte när samma dimension eller dimensionsobjekt används i en annan tabell eller i ett annat projekt.
 
-* Om du ändrar datavyn för frihandstabellen är alla hyperlänkar som har skapats för dimensioner eller dimensionsobjekt i tabellen fortfarande tillgängliga. Den här funktionen förutsätter att dimensionen fortfarande finns i datavyn.
+* Om du ändrar rapportsviten för frihandstabellen är alla hyperlänkar som har skapats för dimensioner eller dimensionsobjekt i tabellen fortfarande tillgängliga. Den här funktionen förutsätter att dimensionen fortfarande finns i rapportsviten.
 
 * URL:er kontrolleras inte om de är giltiga när du skapar hyperlänken. Om du
 
