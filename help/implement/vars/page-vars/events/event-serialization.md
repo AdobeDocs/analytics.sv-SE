@@ -4,7 +4,7 @@ description: Ta bort dubbletter av mätvärden på webbplatsen.
 feature: Appmeasurement Implementation
 exl-id: 54de0fd7-9056-44af-bd59-b8eb55fc816e
 role: Admin, Developer
-source-git-commit: a6967c7d4e1dca5491f13beccaa797167b503d6e
+source-git-commit: 7cd930ac63e0c02dbc7df2b6114d523f5ac91064
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 0%
@@ -37,7 +37,7 @@ När du använder händelse-ID:n utförs borttagning av dubbletter på följande
 
 Om du använder [**XDM-objektet**](/help/implement/aep-edge/xdm-var-mapping.md) använder händelseserialiseringen händelsens XDM-fält `id`. Den fullständiga XDM-sökvägen beror på vilken händelse du vill serialisera.
 
-Om du till exempel vill serialisera måttet för kundvagnstillägg anger du `xdm.commerce.productListAdds.id` till det önskade serialiseringsvärdet. Om du vill serialisera anpassad händelse 20 anger du `xdm._experience.analytics.event1to100.event20` till önskat serialiseringsvärde.
+Om du till exempel vill serialisera måttet för kundvagnstillägg anger du `xdm.commerce.productListAdds.id` till det önskade serialiseringsvärdet. Om du vill serialisera anpassad händelse 20 anger du `xdm._experience.analytics.event1to100.event20.id` till önskat serialiseringsvärde.
 
 Om du använder [**dataobjektet**](/help/implement/aep-edge/data-var-mapping.md) används `data.__adobe.analytics.events` för händelseserialisering, följande AppMeasurement-strängsyntax.
 
