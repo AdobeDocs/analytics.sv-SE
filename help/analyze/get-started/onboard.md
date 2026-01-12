@@ -182,7 +182,7 @@ Titta på följande videofilmer för att slutföra din introduktionsresa från A
 
 >[!VIDEO](https://video.tv.adobe.com/v/3476846/?learn=on&enablevpops)
 
-Anmäl dig till [Adobe Experience League](https://experienceleague.adobe.com/?lang=sv#home) för att få tillgång till [dokumentation](https://experienceleague.adobe.com/en/docs/analytics), [självstudiekurser](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/overview) med mera som hjälper dig att lyckas.
+Anmäl dig till [Adobe Experience League](https://experienceleague.adobe.com/sv?lang=sv#home) för att få tillgång till [dokumentation](https://experienceleague.adobe.com/sv/docs/analytics), [självstudiekurser](https://experienceleague.adobe.com/sv/docs/analytics-learn/tutorials/overview) med mera som hjälper dig att lyckas.
 
 
 ## Adobe Admin Console
@@ -201,7 +201,7 @@ Anlita [Adobe Admin Console användarhantering](https://adminconsole.adobe.com/r
 
 >[!VIDEO](https://video.tv.adobe.com/v/3476787/?learn=on&enablevpops)
 
-Anmäl dig till Adobe Experience League för att [ta fram ett supportärende, granska aktiva och tidigare ärenden](https://experienceleague.adobe.com/home#support).
+Anmäl dig till Adobe Experience League för att [ta fram ett supportärende, granska aktiva och tidigare ärenden](https://experienceleague.adobe.com/home?lang=sv-SE#support).
 
 
 ## Adobe Analytics
@@ -214,7 +214,7 @@ Din Adobe Analytics Journey börjar med att introducera rätt konfigurationer oc
 
 När du är klar med introduktionen till Adobe Analytics och dess supportplattformar bör du överväga att utforska följande resurser för att fördjupa din förståelse och förbättra dina kunskaper:
 
-1. [Introduktion till Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/intro-to-analytics/what-can-aa-do-for-me/how-adobe-analysis-workspace-can-change-your-business)
-2. [Förstå och skapa rapportsviter](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/intro-to-analytics/analytics-basics/understanding-and-creating-report-suites)
-3. [Adobe Analytics-dokumentation](https://experienceleague.adobe.com/en/docs/analytics)
-4. [Adobe Analytics självstudiekurser och videofilmer](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/overview)
+1. [Introduktion till Adobe Analytics](https://experienceleague.adobe.com/sv/docs/analytics-learn/tutorials/intro-to-analytics/what-can-aa-do-for-me/how-adobe-analysis-workspace-can-change-your-business)
+2. [Förstå och skapa rapportsviter](https://experienceleague.adobe.com/sv/docs/analytics-learn/tutorials/intro-to-analytics/analytics-basics/understanding-and-creating-report-suites)
+3. [Adobe Analytics-dokumentation](https://experienceleague.adobe.com/sv/docs/analytics)
+4. [Adobe Analytics självstudiekurser och videofilmer](https://experienceleague.adobe.com/sv/docs/analytics-learn/tutorials/overview)
