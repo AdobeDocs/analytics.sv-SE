@@ -4,9 +4,9 @@ audience: end-user
 user-guide-title: Komponenthandbok för Analytics
 breadcrumb-title: Användarhandbok om komponenter
 user-guide-description: Hantera data med komponenter som segment, beräknade värden, virtuella rapportsviter, marknadsföringskanaler och klassificeringar. Lär dig mer om Analytics över flera enheter.
-source-git-commit: 716bb0267b7e501f458c6934e81dd20c3996cabf
+source-git-commit: 3cbbcdb89009b9c53892c939ddc5c06a732b2267
 workflow-type: tm+mt
-source-wordcount: '750'
+source-wordcount: '748'
 ht-degree: 7%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 7%
 # [!DNL Adobe Analytics] Komponentguide {#components}
 
 + [Handbok för analyskomponenter](home.md)
-+ [Versionsinformation för analyser](https://experienceleague.adobe.com/sv/docs/analytics/release-notes/latest)
++ [Versionsinformation för analyser](https://experienceleague.adobe.com/en/docs/analytics/release-notes/latest)
 + Mått {#dimensions}
    + [Översikt över dimensioner](dimensions/overview.md)
    + [Dimension-kompatibilitet](dimensions/compatibility.md)
@@ -270,7 +270,6 @@ ht-degree: 7%
          + [Inställningar](classifications/sets/manage/settings.md)
          + [Schema](classifications/sets/manage/schema.md)
          + [Regler](classifications/sets/manage/rules.md)
-         + [Regler nya](classifications/sets/manage/rules-new.md)
       + [Klassificeringsjobb](classifications/sets/job-manager.md)
       + Klassificeringskonsolideringar {#consolidations}
          + [Hantera](classifications/sets/consolidations/manage.md)
