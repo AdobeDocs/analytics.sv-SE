@@ -2,9 +2,9 @@
 title: Klassificeringsuppsättningsregler
 description: Lär dig hur du använder regler för klassificeringsuppsättningar för att definiera regler för klassificeringsdata.
 feature: Classifications
-source-git-commit: 685110ea30be8b87f63a8d944902669544516667
+source-git-commit: 1a07d14d11e3353c5f45fb26463168a75fe11ddf
 workflow-type: tm+mt
-source-wordcount: '1582'
+source-wordcount: '1583'
 ht-degree: 0%
 
 ---
@@ -12,9 +12,11 @@ ht-degree: 0%
 
 # Klassificeringsuppsättningsregler
 
-Du använder regler för att stödja automatiska klassificeringar i scenarier där nyckeldimensionen ständigt ändras. Uppdateringen av klassificeringar genom överföring eller automatisering blir en besvärlig process eller försenar en korrekt klassificering för nya dimensionsvärden. Exempel: interna kampanjer, spårningskoder eller SKU:er för produkter. Dimensionen måste innehålla värden som gör att du kan tillämpa en eller flera regler så att du kan härleda klassificeringsdata från värdena.
+Du använder regler för att stödja automatiska klassificeringar i scenarier där nyckeldimensionen ständigt ändras. Uppdateringen av klassificeringar via [överföring](/help/components/classifications/sets/manage/schema.md#upload) eller [automatisering](/help/components/classifications/sets/manage/schema.md#automate) blir en besvärlig process eller försenar en korrekt klassificering för nya dimensionsvärden. Exempel: interna kampanjer, spårningskoder eller SKU:er för produkter.
 
-Du definierar regler inom en klassificeringsuppsättnings kontext. Det här sammanhanget innebär att regler tillämpas (när de aktiveras) på alla kombinationer av rapportsviter och nyckeldimensioner som prenumererar på klassificeringsuppsättningen. Den här implementeringen skiljer sig något från hur den äldre funktionen för att skapa klassificeringsregler fungerar. I verktyget Klassificeringsregel definierar du en eller flera regler som en del av en regeluppsättning separat och kopplar sedan regeluppsättningen till en eller flera rapportsviter. I det nya gränssnittet kallas reglerna i klassificeringsuppsättningen också för regeluppsättning. Regeluppsättningarna definieras dock i samma gränssnitt där du konfigurerar andra attribut för klassificeringsuppsättningar.
+Dimensionen måste innehålla värden som gör att du kan tillämpa en eller flera regler så att du kan härleda klassificeringsdata från dimensionsvärdena.
+
+Du definierar regler inom en klassificeringsuppsättnings kontext. Det här sammanhanget innebär att regler tillämpas (när de aktiveras) på alla kombinationer av rapportsviter och nyckeldimensioner som prenumererar på klassificeringsuppsättningen. Den här implementeringen skiljer sig från hur den äldre funktionen för att skapa klassificeringsregler fungerar. I verktyget Klassificeringsregel definierar du en eller flera regler som en del av en regeluppsättning separat och kopplar sedan regeluppsättningen till en eller flera rapportsviter. I det nya gränssnittet kallas reglerna i klassificeringsuppsättningen också för regeluppsättning. Regeluppsättningarna definieras dock i samma gränssnitt där du konfigurerar andra attribut för klassificeringsuppsättningar.
 
 
 Så här definierar du en regeluppsättning för en klassificeringsuppsättning:
