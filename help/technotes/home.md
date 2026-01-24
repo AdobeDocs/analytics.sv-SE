@@ -46,6 +46,6 @@ Sammanfattningsvis är Adobe Analytics en kraftfull webbanalyslösning som ger f
 ## Andra Analytics-resurser
 
 * [Kontakta kundtjänst](https://experienceleague.adobe.com/sv?support-solution=Analytics&lang=sv#support)
-* [Adobe Analytics Community på Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community)
-* [Adobe Analytics-resurser](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-resources/m-p/276666)
+* [Adobe Analytics Community på Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community?profile.language=sv)
+* [Adobe Analytics-resurser](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-resources/m-p/276666?profile.language=sv)
 * [Experience League](https://landing.adobe.com/experience-league/)

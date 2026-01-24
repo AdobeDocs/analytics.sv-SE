@@ -50,7 +50,7 @@ Panelens sidhuvud innehåller följande inställningar:
 * **[!UICONTROL Show settings]**: Öppnar en meny för inställningar som du kan ändra (kugghjulsikon):
    * **[!UICONTROL Settings]**: Öppnar tilläggets [Inställningar](settings.md).
    * **[!UICONTROL Help]**: Öppnar dokumentationen för Experience League (den här sidan).
-   * **[!UICONTROL Adobe community]**: Öppnar [Experience League Community](https://experienceleaguecommunities.adobe.com/).
+   * **[!UICONTROL Adobe community]**: Öppnar [Experience League Community](https://experienceleaguecommunities.adobe.com/?profile.language=sv).
    * **[!UICONTROL About]**: Visar tilläggsversionen.
    * **[!UICONTROL Logout]**: Loggar ut dig från tillägget och kräver att du loggar in igen.
 * **[!UICONTROL Quit Activity Map]**: Stänger alla övertäckningar för tillägget (X-ikon).

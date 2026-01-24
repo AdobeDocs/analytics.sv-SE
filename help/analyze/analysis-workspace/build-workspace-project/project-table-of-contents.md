@@ -46,7 +46,7 @@ Så här visar du innehållsförteckningen i ett projekt:
 
 >[!MORELIKETHIS]
 >
->* [Förenkla instrumentpanelsnavigeringen med den nya funktionen för innehållsförteckning i Adobe Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/simplify-dashboard-navigation-with-the-new-table-of-contents/ba-p/731284)
+>* [Förenkla instrumentpanelsnavigeringen med den nya funktionen för innehållsförteckning i Adobe Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/simplify-dashboard-navigation-with-the-new-table-of-contents/ba-p/731284?profile.language=sv)
 
 
 

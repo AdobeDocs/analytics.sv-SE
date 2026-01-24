@@ -26,7 +26,7 @@ Kom ihåg att koduppdateringar kan få oönskade konsekvenser. Du vill se till a
 * Skapa instrumentpaneler om du vill se timvisa trender för dessa viktiga mått och variabler (eller konfigurera [varningar](/help/components/alerts/alerts-overview.md) för varje mätvärde). Övervaka dem sedan i en dag eller två för att säkerställa att du får de data du förväntar dig, och att data är korrekta. Håll utkik efter inflammationspunkter. Var beredd på att åtgärda allvarliga problem omedelbart. Om du hittar avvikelser kan du ta reda på varför i datalagret, tagghanteringsreglerna och bearbetningsreglerna.
 * Kör [Analytics Health Dashboard](https://express.adobe.com/page/tnNQGNlfzta3b/) igen för att övervaka breda trender för KPI-mått och -variabler.
 
-*Mer information om hur du kontrollerar att dina mått och variabler fungerar som de ska finns i [de här tipsen](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/my-five-best-tips-for-keeping-adobe-analytics-humming/td-p/388608) från Adobe Analytics Champion Sarah Owen.*
+*Mer information om hur du kontrollerar att dina mått och variabler fungerar som de ska finns i [de här tipsen](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/my-five-best-tips-for-keeping-adobe-analytics-humming/td-p/388608?profile.language=sv) från Adobe Analytics Champion Sarah Owen.*
 
 ## &#x200B;3. Granska noggrant data från den uppdaterade delen av din webbplats
 

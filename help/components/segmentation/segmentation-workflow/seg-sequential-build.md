@@ -302,4 +302,4 @@ Det sista exemplet är att ni vill identifiera besökare som har lärt sig om en
 
 >[!MORELIKETHIS]
 >
-> * [Mastering Sequential Logic in AA &amp; CJA: Introduction to THEN](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/mastering-sequential-logic-in-aa-amp-cja-introduction-to-then/ba-p/738131)
+> * [Mastering Sequential Logic in AA &amp; CJA: Introduction to THEN](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/mastering-sequential-logic-in-aa-amp-cja-introduction-to-then/ba-p/738131?profile.language=sv)

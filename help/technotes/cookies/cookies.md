@@ -178,4 +178,4 @@ Om ditt företag påverkas av förhindrande av ITP-spårning kan du vidta följa
 >[!MORELIKETHIS]
 >
 >[Alternativ för att minska effekten av webbläsar-cookie-begränsningar](cookieless.md)
->&#x200B;>[Effekten av Apple nya App Tracking Transparency Framework på Adobe Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/the-impact-of-apple-s-new-app-tracking-transparency-framework-on/td-p/401833)
+>&#x200B;>[Effekten av Apple nya App Tracking Transparency Framework på Adobe Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/the-impact-of-apple-s-new-app-tracking-transparency-framework-on/td-p/401833?profile.language=sv)

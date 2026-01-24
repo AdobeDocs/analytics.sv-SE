@@ -87,7 +87,7 @@ Ställ in minst en månatlig påminnelse för att identifiera och filtrera nya r
 
 >[!MORELIKETHIS]
 >
->* [Bättre blockering av punkter (del 1): Grunderna &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/better-bot-blocking-part-1-the-basics/ba-p/715839)
->* [Bättre Bot Blocking (Part 2): Identifying Bots and Leveraging CIDR.](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/better-bot-blocking-part-2-identifying-bots-and-leveraging-cidr/ba-p/722132)
->* [Bättre benblockering (del 3): Träffguvernören](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/better-bot-blocking-part-3-the-hit-governor/ba-p/727051)
+>* [Bättre blockering av punkter (del 1): Grunderna &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/better-bot-blocking-part-1-the-basics/ba-p/715839?profile.language=sv)
+>* [Bättre Bot Blocking (Part 2): Identifying Bots and Leveraging CIDR.](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/better-bot-blocking-part-2-identifying-bots-and-leveraging-cidr/ba-p/722132?profile.language=sv)
+>* [Bättre benblockering (del 3): Träffguvernören](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/better-bot-blocking-part-3-the-hit-governor/ba-p/727051?profile.language=sv)
 
