@@ -3,7 +3,7 @@ description: I stället för att underhålla och överföra klassificeringar var
 title: Arbetsflöde för klassificeringsregelbyggaren
 feature: Classifications
 exl-id: cdb20dcc-0635-4d5e-9c54-f102d17a0a3d
-source-git-commit: 4eea524bf95c9b6bc9ddc878c8c433bc1e60daee
+source-git-commit: 1f97365ada0a182f743b6d920b0605232e030aec
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 0%
@@ -18,7 +18,7 @@ I stället för att underhålla och överföra klassificeringar varje gång spå
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Klassificeringsregelbyggaren](https://video.tv.adobe.com/v/3434382?quality=12&learn=on&captions=swe){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Klassificeringsregelbyggaren](https://video.tv.adobe.com/v/25884?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 
@@ -56,4 +56,5 @@ Nedan följer några steg för att implementera klassificeringsregler:
 
 **Blogg**: Mer information om den här funktionen finns i bloggen om digital marknadsföring: [Regelbaserade klassificeringar](https://theblog.adobe.com/rule-based-classifications-part-1-making-classifications-easier/).
 
-**Video**: Visa videon [Klassificeringsöversikt](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/components/classifications/overview-of-classifications.html?lang=sv-SE).
+**Video**: Visa videon [Klassificeringsöversikt](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/components/classifications/overview-of-classifications.html).
+
