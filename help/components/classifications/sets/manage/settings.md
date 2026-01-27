@@ -3,7 +3,7 @@ title: Inställningar för klassificeringsuppsättning
 description: Lär dig hur du skapar eller redigerar en klassificeringsuppsättning.
 exl-id: abf00508-5dde-4669-bf94-5eb4754888cc
 feature: Classifications
-source-git-commit: 0f80bb314c8e041a98af26734d56ab364c23a49b
+source-git-commit: 7e966bc91bb774ade739bd27cfe04447f6542746
 workflow-type: tm+mt
 source-wordcount: '166'
 ht-degree: 0%
@@ -34,7 +34,7 @@ Så här redigerar du inställningarna för en klassificeringsuppsättning:
       * Du kan definiera flera **[!UICONTROL Report Suite]**- och **[!UICONTROL Dimension]**-kombinationer till en klassificeringsuppsättning.
       * Välj ![CrossSize400](/help/assets/icons/CrossSize400.svg) om du vill ta bort en kombination av **[!UICONTROL Report Suite]** och **[!UICONTROL Key Dimension]**.
 
-      Mer information finns i [Skapa en klassificeringsuppsättning](create.md).
+      Mer information finns i [Skapa en klassificeringsuppsättning](/help/components/classifications/sets/create.md).
 
    1. Välj **[!UICONTROL Save]** om du vill spara inställningarna. Välj **[!UICONTROL Cancel]** om du vill avbryta.
 

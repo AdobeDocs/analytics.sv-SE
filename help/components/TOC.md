@@ -4,7 +4,7 @@ audience: end-user
 user-guide-title: Komponenthandbok för Analytics
 breadcrumb-title: Användarhandbok om komponenter
 user-guide-description: Hantera data med komponenter som segment, beräknade värden, virtuella rapportsviter, marknadsföringskanaler och klassificeringar. Lär dig mer om Analytics över flera enheter.
-source-git-commit: 1f97365ada0a182f743b6d920b0605232e030aec
+source-git-commit: 50700a4ee1d836516a96be3816d4c777c4172ce5
 workflow-type: tm+mt
 source-wordcount: '748'
 ht-degree: 7%
@@ -15,7 +15,7 @@ ht-degree: 7%
 # [!DNL Adobe Analytics] Komponentguide {#components}
 
 + [Handbok för analyskomponenter](home.md)
-+ [Versionsinformation för analyser](https://experienceleague.adobe.com/sv/docs/analytics/release-notes/latest)
++ [Versionsinformation för analyser](https://experienceleague.adobe.com/en/docs/analytics/release-notes/latest)
 + Mått {#dimensions}
    + [Översikt över dimensioner](dimensions/overview.md)
    + [Dimension-kompatibilitet](dimensions/compatibility.md)
@@ -264,8 +264,8 @@ ht-degree: 7%
    + Klassificeringsuppsättningar {#sets}
       + [Översikt](classifications/sets/overview.md)
       + [Datafiler](classifications/sets/data-files.md)
-      + [Skapa och redigera](classifications/sets/manage/create.md)
-      + [Hantera](classifications/sets/manage/set-manager.md)
+      + [Skapa och redigera](classifications/sets/create.md)
+      + [Hantera](classifications/sets/set-manager.md)
       + Klassificeringsuppsättning {#set}
          + [Inställningar](classifications/sets/manage/settings.md)
          + [Schema](classifications/sets/manage/schema.md)

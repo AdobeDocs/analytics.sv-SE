@@ -3,7 +3,7 @@ title: Översikt över klassificeringsuppsättningar
 description: Lär dig hur du använder klassificeringsuppsättningar för att hantera klassificeringsdata. Förstå hur klassificeringsuppsättningar skiljer sig från äldre klassificeringar.
 exl-id: a139b298-1188-42ce-b52f-c71e0ff7c4e3
 feature: Classifications
-source-git-commit: 0f80bb314c8e041a98af26734d56ab364c23a49b
+source-git-commit: d5e1432569516d13d2de30a2cb30cebb067ab783
 workflow-type: tm+mt
 source-wordcount: '929'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Översikt över klassificeringsuppsättningar
 
-Klassificeringsuppsättningar har ett enda gränssnitt för att hantera klassificeringar och regler. I det här arbetsflödet kombineras skapandet av klassificeringar i [Rapportsvitens inställningar](/help/admin/tools/manage-rs/report-suites-admin.md) med [klassificeringsimporteraren](/help/components/classifications/sets/manage/set-manager.md). Resultatet blir ett enda intuitivt gränssnitt för att skapa och hantera klassificeringsdata.
+Klassificeringsuppsättningar har ett enda gränssnitt för att hantera klassificeringar och regler. I det här arbetsflödet kombineras skapandet av klassificeringar i [Rapportsvitens inställningar](/help/admin/tools/manage-rs/report-suites-admin.md) med [klassificeringsimporteraren](/help/components/classifications/sets/set-manager.md). Resultatet blir ett enda intuitivt gränssnitt för att skapa och hantera klassificeringsdata.
 
 
 ## Klassificeringsuppsättningar jämfört med äldre klassificeringar
@@ -46,7 +46,7 @@ Om du vill komma åt **[!UICONTROL Classification sets]** från menyn **[!UICONT
 
 Klassificeringsuppsättningar består av tre funktionsområden:
 
-* [**[!UICONTROL Classification Sets]**](manage/set-manager.md): Skapa, redigera och ta bort klassificeringsgrupper.
+* [**[!UICONTROL Classification Sets]**](set-manager.md): Skapa, redigera och ta bort klassificeringsgrupper.
 * [**[!UICONTROL Jobs]**](job-manager.md): Visa statusen för klassificeringsuppsättningar för jobb.
 * [**[!UICONTROL Consolidations]**](consolidations/manage.md): Kombinera flera klassificeringsuppsättningar till en enda klassificeringsuppsättning.
 
@@ -56,7 +56,7 @@ Klassificeringsuppsättningar består av tre funktionsområden:
 Arbetsflödet för klassificeringsuppsättningar omfattar vanligtvis följande steg:
 
 1. Ta en titt på vilken rapportserie och vilka dimensionskombinationer du vill skapa en klassificeringsuppsättning för. Ett exempel är att definiera en produktklassificeringsuppsättning som du skapar för alla rapportsviter där du vill klassificera produkter med mer information. Exempel: information som kategori och färg.
-1. [Skapa en klassificeringsuppsättning](/help/components/classifications/sets/manage/create.md) med prenumerationer för en eller flera rapportsviter och viktiga dimensionskombinationer som identifierar produkter. Exempel:
+1. [Skapa en klassificeringsuppsättning](/help/components/classifications/sets/create.md) med prenumerationer för en eller flera rapportsviter och viktiga dimensionskombinationer som identifierar produkter. Exempel:
 
    | Rapportsvit | Nyckeldimension |
    |---|---|
@@ -112,7 +112,7 @@ Den serverdelsarkitektur som lanserats med klassificeringsuppsättningar innehå
 
 * Minskad bearbetningstid (från 72 till 24 timmar).
 * Ett omdesignat användargränssnitt för att hantera klassificeringar.
-* Alternativet att använda klassificeringsdata i Adobe Experience Platform via [Adobe Analytics-källkopplingen för klassificeringsdata](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/connectors/adobe-applications/classifications).
+* Alternativet att använda klassificeringsdata i Adobe Experience Platform via [Adobe Analytics-källkopplingen för klassificeringsdata](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/classifications).
 
 Den serverdelsarkitektur som lanserats med klassificeringsuppsättningar innehåller också flera ändringar:
 
