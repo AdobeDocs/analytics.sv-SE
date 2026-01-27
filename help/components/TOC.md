@@ -4,7 +4,7 @@ audience: end-user
 user-guide-title: Komponenthandbok för Analytics
 breadcrumb-title: Användarhandbok om komponenter
 user-guide-description: Hantera data med komponenter som segment, beräknade värden, virtuella rapportsviter, marknadsföringskanaler och klassificeringar. Lär dig mer om Analytics över flera enheter.
-source-git-commit: 3ea8c07117641c2defa6ef126ab1d730f187c1d2
+source-git-commit: dd0bf6090f0886c770d39ec7c2b9f8f6f27577db
 workflow-type: tm+mt
 source-wordcount: '748'
 ht-degree: 7%
@@ -15,7 +15,7 @@ ht-degree: 7%
 # [!DNL Adobe Analytics] Komponentguide {#components}
 
 + [Handbok för analyskomponenter](home.md)
-+ [Versionsinformation för analyser](https://experienceleague.adobe.com/sv/docs/analytics/release-notes/latest)
++ [Versionsinformation för analyser](https://experienceleague.adobe.com/en/docs/analytics/release-notes/latest)
 + Mått {#dimensions}
    + [Översikt över dimensioner](dimensions/overview.md)
    + [Dimension-kompatibilitet](dimensions/compatibility.md)
@@ -310,4 +310,3 @@ ht-degree: 7%
    + [Analysera marknadsföringskanaler](c-marketing-channels/analyze-mc.md)
    + [Behörigheter för marknadsföringskanaler](c-marketing-channels/c-channel-report-access.md)
    + [Vanliga frågor och exempel om marknadsföringskanaler](c-marketing-channels/c-faq.md)
-
