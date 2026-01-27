@@ -4,7 +4,7 @@ audience: end-user
 user-guide-title: Komponenthandbok för Analytics
 breadcrumb-title: Användarhandbok om komponenter
 user-guide-description: Hantera data med komponenter som segment, beräknade värden, virtuella rapportsviter, marknadsföringskanaler och klassificeringar. Lär dig mer om Analytics över flera enheter.
-source-git-commit: 3cbbcdb89009b9c53892c939ddc5c06a732b2267
+source-git-commit: 3ea8c07117641c2defa6ef126ab1d730f187c1d2
 workflow-type: tm+mt
 source-wordcount: '748'
 ht-degree: 7%
@@ -15,7 +15,7 @@ ht-degree: 7%
 # [!DNL Adobe Analytics] Komponentguide {#components}
 
 + [Handbok för analyskomponenter](home.md)
-+ [Versionsinformation för analyser](https://experienceleague.adobe.com/sv/docs/analytics/release-notes/latest)
++ [Versionsinformation för analyser](https://experienceleague.adobe.com/en/docs/analytics/release-notes/latest)
 + Mått {#dimensions}
    + [Översikt över dimensioner](dimensions/overview.md)
    + [Dimension-kompatibilitet](dimensions/compatibility.md)
@@ -264,9 +264,9 @@ ht-degree: 7%
    + Klassificeringsuppsättningar {#sets}
       + [Översikt](classifications/sets/overview.md)
       + [Datafiler](classifications/sets/data-files.md)
-      + Klassificeringsuppsättningar {#manage}
-         + [Hantera](classifications/sets/manage/set-manager.md)
-         + [Skapa och redigera](classifications/sets/manage/create.md)
+      + [Skapa och redigera](classifications/sets/manage/create.md)
+      + [Hantera](classifications/sets/manage/set-manager.md)
+      + Klassificeringsuppsättning {#set}
          + [Inställningar](classifications/sets/manage/settings.md)
          + [Schema](classifications/sets/manage/schema.md)
          + [Regler](classifications/sets/manage/rules.md)
@@ -274,25 +274,26 @@ ht-degree: 7%
       + Klassificeringskonsolideringar {#consolidations}
          + [Hantera](classifications/sets/consolidations/manage.md)
          + [Skapa och redigera](classifications/sets/consolidations/process.md)
-   + Klassificeringsregelbyggaren (äldre){#classifications-rulebuilder}
-      + [Översikt](classifications/crb/classification-rule-builder.md)
-      + [Klassificeringsregeluppsättningar](classifications/crb/classification-rule-set.md)
-      + [Klassificeringsregler](classifications/crb/classification-quickstart-rules.md)
-      + [Klassificeringsregeldefinitioner](classifications/crb/classification-rule-definitions.md)
-      + [Underklassificeringar och regelbyggaren](classifications/crb/subclassification-rule-builder.md)
-   + Klassificeringsimportör (äldre){#classifications-importer}
-      + [Översikt över klassificeringsimporteraren](classifications/importer/c-working-with-saint.md)
-      + [Klassificeringsdatafiler](classifications/importer/c-saint-data-files.md)
-      + [Ta bort klassificeringsdata](classifications/importer/t-delete-classification-data.md)
-      + [Klassificeringsmall](classifications/importer/c-download-saint-data.md)
-      + [Import av webbläsare](classifications/importer/browser-import.md)
-      + [Webbläsarexport](classifications/importer/browser-export.md)
-      + [FTP-import](classifications/importer/c-uploading-saint-data-files-via-ftp.md)
-      + [FTP-export](classifications/importer/ftp-export.md)
-      + [Bearbetningstid](classifications/importer/processing-time.md)
-      + [Underklassificeringar](classifications/importer/subclassifications.md)
-      + [Felsökning](classifications/importer/troubleshooting.md)
-      + [Vanliga frågor och svar](classifications/importer/importer-faq.md)
+   + Äldre klassificeringar {#legacy-classifications}
+      + Skapa klassificeringsregel {#classifications-rulebuilder}
+         + [Översikt](classifications/crb/classification-rule-builder.md)
+         + [Klassificeringsregeluppsättningar](classifications/crb/classification-rule-set.md)
+         + [Klassificeringsregler](classifications/crb/classification-quickstart-rules.md)
+         + [Klassificeringsregeldefinitioner](classifications/crb/classification-rule-definitions.md)
+         + [Underklassificeringar och regelbyggaren](classifications/crb/subclassification-rule-builder.md)
+      + Klassificeringsimportör {#classifications-importer}
+         + [Översikt över klassificeringsimporteraren](classifications/importer/c-working-with-saint.md)
+         + [Klassificeringsdatafiler](classifications/importer/c-saint-data-files.md)
+         + [Ta bort klassificeringsdata](classifications/importer/t-delete-classification-data.md)
+         + [Klassificeringsmall](classifications/importer/c-download-saint-data.md)
+         + [Import av webbläsare](classifications/importer/browser-import.md)
+         + [Webbläsarexport](classifications/importer/browser-export.md)
+         + [FTP-import](classifications/importer/c-uploading-saint-data-files-via-ftp.md)
+         + [FTP-export](classifications/importer/ftp-export.md)
+         + [Bearbetningstid](classifications/importer/processing-time.md)
+         + [Underklassificeringar](classifications/importer/subclassifications.md)
+         + [Felsökning](classifications/importer/troubleshooting.md)
+         + [Vanliga frågor och svar](classifications/importer/importer-faq.md)
 + Platser {#locations}
    + [Platshanteraren](/help/components/locations/locations-manager.md)
    + [Importkonton i molnet](/help/components/locations/configure-import-accounts.md)
@@ -309,3 +310,4 @@ ht-degree: 7%
    + [Analysera marknadsföringskanaler](c-marketing-channels/analyze-mc.md)
    + [Behörigheter för marknadsföringskanaler](c-marketing-channels/c-channel-report-access.md)
    + [Vanliga frågor och exempel om marknadsföringskanaler](c-marketing-channels/c-faq.md)
+
