@@ -4,7 +4,7 @@ audience: end-user
 user-guide-title: Komponenthandbok för Analytics
 breadcrumb-title: Användarhandbok om komponenter
 user-guide-description: Hantera data med komponenter som segment, beräknade värden, virtuella rapportsviter, marknadsföringskanaler och klassificeringar. Lär dig mer om Analytics över flera enheter.
-source-git-commit: ea8122bbaaea841d70ddabe677de5eaa78a10ad1
+source-git-commit: 7cc33ac36f51b9e36657a4fe84c1ae675611b56e
 workflow-type: tm+mt
 source-wordcount: '748'
 ht-degree: 7%
@@ -15,7 +15,7 @@ ht-degree: 7%
 # [!DNL Adobe Analytics] Komponentguide {#components}
 
 + [Handbok för analyskomponenter](home.md)
-+ [Versionsinformation för analyser](https://experienceleague.adobe.com/sv/docs/analytics/release-notes/latest)
++ [Versionsinformation för analyser](https://experienceleague.adobe.com/en/docs/analytics/release-notes/latest)
 + Mått {#dimensions}
    + [Översikt över dimensioner](dimensions/overview.md)
    + [Dimension-kompatibilitet](dimensions/compatibility.md)
@@ -272,8 +272,8 @@ ht-degree: 7%
          + [Regler](classifications/sets/manage/rules.md)
       + [Klassificeringsjobb](classifications/sets/job-manager.md)
       + Klassificeringskonsolideringar {#consolidations}
-         + [Hantera](classifications/sets/consolidations/manage.md)
          + [Skapa och redigera](classifications/sets/consolidations/process.md)
+         + [Hantera](classifications/sets/consolidations/manage.md)
    + Äldre klassificeringar {#legacy-classifications}
       + Skapa klassificeringsregel {#classifications-rulebuilder}
          + [Översikt](classifications/crb/classification-rule-builder.md)
