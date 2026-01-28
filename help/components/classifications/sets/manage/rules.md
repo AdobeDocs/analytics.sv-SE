@@ -2,7 +2,7 @@
 title: Klassificeringsuppsättningsregler
 description: Lär dig hur du använder regler för klassificeringsuppsättningar för att definiera regler för klassificeringsdata.
 feature: Classifications
-source-git-commit: 1a07d14d11e3353c5f45fb26463168a75fe11ddf
+source-git-commit: cfa8335008548254786e46dfe634229edad5bd54
 workflow-type: tm+mt
 source-wordcount: '1583'
 ht-degree: 0%
@@ -320,4 +320,3 @@ Du vill klassificera med klassificeringen **[!UICONTROL Type]** hur användare s
 * När en användare söker efter `Cowboys Fantasy Tony Romo` klassificeras `Romo` som **[!UICONTROL Type]**.
 * När en användare söker efter `Cowboys Fantasy Tony Romeo` klassificeras `Fantasy` som **[!UICONTROL Type]**.
 * När en användare söker efter `Cowboys vs. Broncos` klassificeras `Team` som **[!UICONTROL Type]**.
-

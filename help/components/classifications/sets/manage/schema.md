@@ -3,7 +3,7 @@ title: Schema för klassificeringsuppsättning
 description: Lär dig hur du visar och redigerar schemat för en enskild klassificeringsuppsättning.
 exl-id: 4a7c5bfe-ff2b-4380-af46-435801d73c1e
 feature: Classifications
-source-git-commit: 0f80bb314c8e041a98af26734d56ab364c23a49b
+source-git-commit: cfa8335008548254786e46dfe634229edad5bd54
 workflow-type: tm+mt
 source-wordcount: '1300'
 ht-degree: 0%
@@ -54,7 +54,7 @@ Följande åtgärder är tillgängliga som knappar högst upp i klassificeringsl
 | ![UploadToCloud](/help/assets/icons/UploadToCloud.svg) | **[!UICONTROL Upload]** | [Överför en JSON-, CSV-, TSV- eller TAB-fil](#upload). |
 | ![Hämta](/help/assets/icons/Download.svg) | **[!UICONTROL Download]** | [Hämta klassificeringsdata](#download). |
 | ![Dokumentfragment](/help/assets/icons/DocumentFragment.svg) | **[!UICONTROL Template]** | [Hämta en mall](#template) för klassificeringsdata. |
-| ![Historik](/help/assets/icons/History.svg) | **[!UICONTROL Job History]** | Visa jobbhanteraren [&#x200B; för klassificeringsuppsättningen, filtrerad för den valda klassificeringsuppsättningen.](/help/components/classifications/sets/job-manager.md) |
+| ![Historik](/help/assets/icons/History.svg) | **[!UICONTROL Job History]** | Visa jobbhanteraren [ för klassificeringsuppsättningen, filtrerad för den valda klassificeringsuppsättningen.](/help/components/classifications/sets/job-manager.md) |
 | ![Kugghjul](/help/assets/icons/Gear.svg) | **[!UICONTROL Automate]** | [Automatisera inmatningen av klassificeringsdata](#automate) med hjälp av en molnplats. |
 
 
@@ -156,14 +156,14 @@ I dialogrutan **[!UICONTROL Download template for _klassificeringsuppsättningsn
 >id="classificationsets_schema_automate_locationaccount"
 >title="Platskonto"
 >abstract="Lista över platskonton för kontotyper som stöder import av klassificeringsdata. Välj **[!UICONTROL New account]** om du vill skapa ett nytt platskonto."
->additional-url="https://experienceleague.adobe.com/docs/analytics/components/locations/configure-import-accounts.html?lang=sv-SE" text="Konfigurera molnimport- och exportkonton"
+>additional-url="https://experienceleague.adobe.com/docs/analytics/components/locations/configure-import-accounts.html?lang=en" text="Konfigurera molnimport- och exportkonton"
 
 
 >[!CONTEXTUALHELP]
 >id="classificationsets_schema_automate_location"
 >title="Plats"
 >abstract="Lista över platser på det valda platskontot som stöder import av klassificeringsdata. Välj **[!UICONTROL New location]** om du vill skapa en ny plats."
->additional-url="https://experienceleague.adobe.com/docs/analytics/components/locations/configure-import-locations.html?lang=sv-SE" text="Konfigurera platser för molnimport och -export"
+>additional-url="https://experienceleague.adobe.com/docs/analytics/components/locations/configure-import-locations.html?lang=en" text="Konfigurera platser för molnimport och -export"
 
 
 Om du vill automatisera intaget av klassificering väljer du ![Kugghjul](/help/assets/icons/Gear.svg) **[!UICONTROL Automate]**.
@@ -172,7 +172,7 @@ Om du vill automatisera intaget av klassificering väljer du ![Kugghjul](/help/a
 
 I dialogrutan **[!UICONTROL Associate / Update Ingest Location for _klassificeringsuppsättningsnamn_]**:
 
-1. Välj en molnplats genom att välja ett alternativ från **[!UICONTROL Location Account]**. Endast [platskonton för kontotyper som stöds som tillåter import av klassificeringsdata](https://experienceleague.adobe.com/sv/docs/analytics/components/locations/configure-import-accounts) visas. Välj **[!UICONTROL New account]** om du vill skapa ett nytt konto.
+1. Välj en molnplats genom att välja ett alternativ från **[!UICONTROL Location Account]**. Endast [platskonton för kontotyper som stöds som tillåter import av klassificeringsdata](https://experienceleague.adobe.com/en/docs/analytics/components/locations/configure-import-accounts) visas. Välj **[!UICONTROL New account]** om du vill skapa ett nytt konto.
 1. Välj en plats genom att välja ett alternativ från **[!UICONTROL Location]**. Endast platserna för valda kontotyper för import av klassificeringsdata visas. Välj **[!UICONTROL New location]** om du vill skapa en ny plats.
 
    >[!IMPORTANT]
@@ -194,7 +194,7 @@ I dialogrutan **[!UICONTROL Associate / Update Ingest Location for _klassificeri
 
 1. Om du vill meddela användare om slutförandet av importen anger du e-postadresser, avgränsade med kommatecken, för **[!UICONTROL Email(s) to notify when ingest jobs completes (comma separated)]**.
 1. Välj **[!UICONTROL Validate]**. Anslutningen till molnplatsen verifieras.
-1. Om valideringen lyckas visas ett popup-meddelande som visar ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Location validation successful. Connection to cloud storage verified.]**<br/>Välj **[!UICONTROL Save]**&#x200B;om du har skapat anslutningen till molnanslutningen. Annars väljer du **[!UICONTROL Update]**. Eller välj **[!UICONTROL Cancel]**&#x200B;om du vill avbryta konfigurationen av molnplatsen.
+1. Om valideringen lyckas visas ett popup-meddelande som visar ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Location validation successful. Connection to cloud storage verified.]**<br/>Välj **[!UICONTROL Save]**om du har skapat anslutningen till molnanslutningen. Annars väljer du **[!UICONTROL Update]**. Eller välj **[!UICONTROL Cancel]**om du vill avbryta konfigurationen av molnplatsen.
 
 När du överför filer till molnplatsen identifieras filen och skickas som ett importjobb inom 15 minuter. Resultatet av det importjobbet rapporteras i jobbhanteraren [för klassificeringar](/help/components/classifications/sets/job-manager.md). Om du har lagts till i listan över användare för att meddela att importen har slutförts, får du även e-postmeddelanden.
 
@@ -213,65 +213,3 @@ Exempel:
 | ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) | **[!UICONTROL Remove Lookup]** | Ta bort en klassificeringsuppsättning som en sökning. Om du vill ta bort sökningen permanent från klassificeringen väljer du **[!UICONTROL Remove _i bekräftelsedialogrutan för _klassificeringsuppsättningen_ från_]** klassificeringen **[!UICONTROL Delete]**. |
 | ![Byt namn](/help/assets/icons/Rename.svg) | **[!UICONTROL Rename]** | Byt namn på **[!UICONTROL Classification Name]** för en klassificering. I dialogrutan **[!UICONTROL Rename: _klassificeringsnamn_]** anger du ett nytt namn och väljer **[!UICONTROL Rename]**. |
 | ![Ta bort](/help/assets/icons/Delete.svg) | **[!UICONTROL Delete]** | Ta bort en klassificering. Dialogrutan **[!UICONTROL Delete _Klassificeringsnamn_]** visas. Välj **[!UICONTROL Delete]** om du vill ta bort klassificeringen. |
-
-
-<!--
-
-View currently configured classification dimensions for this classification set.
-
-**[!UICONTROL Components]** > **[!UICONTROL Classification sets]** > **[!UICONTROL Sets]** > Click the desired classification set name > **[!UICONTROL Schema]**
-
-![classification set schema UI](../../assets/classification-set-schema.png)
-
-The following buttons are available:
-
-
-* **[!UICONTROL Upload]**: Manually upload classification data for a classification dimensions. `JSON`, `CSV`, `TSV`, and `TAB` files are supported. Uploading a valid file shows a table preview of data to classify.
-  * **[!UICONTROL File encoding]**: Select the correct file encoding using this drop-down. Valid options include [!UICONTROL UTF-8] and [!UICONTROL Latin1].
-  * **[!UICONTROL List delimiter]**: Select the correct list delimiter. If using a downloaded file or template file, make sure that the [!UICONTROL List delimiter] here matches the [!UICONTROL List delimiter] when the file was downloaded.
-  * **[!UICONTROL Apply]**: Save the uploaded classification data to the classification set.
-
-  ![Classification set upload](../../assets/classification-set-upload.png)
-
-* **[!UICONTROL Download]**: Download key values and their classification columns.
-  * **[!UICONTROL Rows]**: The maximum number of rows to include in the download file.
-  * **[!UICONTROL Download rows received between]**: A calendar date picker that allows you to filter key values by when they appear in reporting. If a key value was not collected in this date range, it does not appear in the downloaded file.
-  * **[!UICONTROL Data returned]**: A drop-down list that lets you filter key values included in the downloaded file based on their associated classification data.
-    * **[!UICONTROL All classified values]**: Includes rows where classification data is included in at least one column.
-    * **[!UICONTROL All unclassified values]**: Includes rows where classification data is missing in at least one column.
-  * **[!UICONTROL File format]**: A drop-down list that determines the file format that the download file is in. Options include [!UICONTROL JSON], [!UICONTROL Comma separated values], and [!UICONTROL Excel tab separated values].
-  * **[!UICONTROL File encoding]**: A drop-down list that determines the file encoding. Options include [!UICONTROL UTF-8] and [!UICONTROL Latin1]. UTF-8 is recommended.
-
-  ![Classification set download](../../assets/classification-set-download.png)
-
-* **[!UICONTROL Template]**: Download a template file. This file is similar to the [!UICONTROL Download] button, except it does not contain any classification data or key values.
-  * **[!UICONTROL File format]**: A drop-down list that determines the file format that the template file is in. Options include [!UICONTROL Comma separated values], and [!UICONTROL Excel tab separated values].
-  * **[!UICONTROL File encoding]**: A drop-down list that determines the file encoding. Options include [!UICONTROL UTF-8] and [!UICONTROL Latin1]. UTF-8 is recommended.
-  * **[!UICONTROL List delimiters]**: A drop-down list that determines the list delimiter separating classification columns on each row.
-
-  ![Classification set template](../../assets/classification-set-template.png)
-
-* **[!UICONTROL Job history]**: A shortcut link that takes you to the [Job manager](../job-manager.md), showing jobs only for this classification set.
-* **[!UICONTROL Automate]**: Automatically ingest data from external storage locations.
-  * **[!UICONTROL Location account]**: A drop-down list showing existing location accounts that your organization has configured. If your organization hasn't already configured a location account, you can configure one by selecting [!UICONTROL **Create a new account**].
-    
-    For information about configuring the location account, see [Configure cloud import and export accounts](/help/components/locations/configure-import-accounts.md).
-
-  * **[!UICONTROL Location]**: A drop-down list showing existing locations that your organization has configured. If your organization hasn't already configured a location, you can configure one by selecting [!UICONTROL **Create a new location**]. 
-
-    For information about configuring a location, see [Configure cloud import and export locations](/help/components/locations/configure-import-locations.md). 
-
-  * **[!UICONTROL Delimiter]**: The column delimiter for uploaded files. Options include [!UICONTROL Comma], [!UICONTROL Semicolon], [!UICONTROL Colon], [!UICONTROL Vertical bar], [!UICONTROL Space], [!UICONTROL Forward slash], [!UICONTROL Backward slash], [!UICONTROL Dash], or [!UICONTROL Underscore].
-
-  * **[!UICONTROL Encoding]**: A drop-down list that determines the file encoding. Options include [!UICONTROL UTF-8] and [!UICONTROL Latin1]. UTF-8 is recommended.
-
-The following actions are available only after selecting a classification.
-
-* **Add lookup**: A lookup table is a classification of a classification. It is metadata about a classification value, rather than the variable itself. For example, the Product variable might have a classification of "color code". A lookup table of "color name" might be attached to "color code" to explain what the colors are.
-
-  ![Attach lookup table](../../assets/lookup.png)
-
-* **Rename**: Lets you rename the classification.
-
-* **Delete**: Lets you delete the classification.
--->
