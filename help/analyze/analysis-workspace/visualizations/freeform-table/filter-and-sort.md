@@ -4,14 +4,14 @@ title: Filtrera och ordna
 feature: Freeform Tables
 role: User, Admin
 exl-id: 15fea9e2-f8d8-4489-9a44-e74a351b8f36
-source-git-commit: ca84a5f807545d7196e2e0e90d3209c32d3fd789
+source-git-commit: e288365f2c984b64ae8c16ce023a7a0357a0e2b7
 workflow-type: tm+mt
-source-wordcount: '1094'
+source-wordcount: '1538'
 ht-degree: 0%
 
 ---
 
-# Filter och sortering
+# Filtrera och sortera tabeller på frihand
 
 Frihandstabeller i Analysis Workspace är grunden för interaktiv dataanalys. De kan därför innehålla tusentals rader med information. Filtrering och sortering av data kan vara en viktig del av att effektivt kunna hitta den viktigaste informationen.
 
@@ -125,6 +125,91 @@ Kolumnsummorna kanske inte är exakta i följande scenarier:
 
 ## Sortera tabeller
 
-Du kan sortera data i en Frihand-tabell efter en kolumn i Analysis Workspace som är en dimension eller ett mått. En pil visar hur data sorteras (**↓** för fallande eller **↑** för stigande).
+Du kan sortera data i en frihandstabell efter följande typer av kolumner i Analysis Workspace:
 
-![Sortering](assets/sorting.gif)
+* Alla måttkolumner
+
+* Alla dimensionskolumner (utom för strängbaserade dimensioner)
+
+Du kan till och med sortera efter flera kolumner samtidigt.
+
+Som standard sorteras dimensionerna i stigande ordning och måtten sorteras i fallande ordning.
+
+## Sortera tabeller efter en kolumn
+
+När du sorterar data för en enskild kolumn enligt beskrivningen i det här avsnittet, tas all [avancerad sortering](#sort-tables-by-multiple-columns-advanced-sorting) som tillämpas på tabellen bort.
+
+Så här sorterar du data i tabeller efter en kolumn:
+
+1. För musen över rubriken för den kolumn som du vill sortera och markera sedan ikonen **Sortera** ![Sortera](/help/assets/icons/SortOrderDown.svg) när den visas.
+
+   ![Listrutan Sortera](assets/sort-dropdown-menu.png)
+
+1. Välj **[!UICONTROL Ascending]** eller **[!UICONTROL Descending]**.
+
+   Sorteringsikonen är fortfarande synlig när sortering används på kolumnen. En pil anger hur data sorteras (![Sortera](/help/assets/icons/SortOrderUp.svg) för stigande eller ![Sortera](/help/assets/icons/SortOrderDown.svg) för fallande).
+
+## Sortera tabeller efter flera kolumner (avancerad sortering)
+
+{{release-limited-testing-section}}
+
+### Använda sortering på flera kolumner
+
+Så här sorterar du data i tabeller efter flera kolumner:
+
+1. För musen över rubriken för den kolumn som du vill sortera och markera sedan ikonen **Sortera** ![Sortera](/help/assets/icons/SortOrderDown.svg) när den visas.
+
+   ![Listrutan Sortera](assets/sort-dropdown-menu.png)
+
+1. Välj **[!UICONTROL Advanced sorting]**.
+
+   ![Dialogrutan Avancerad sortering](assets/sort-advanced-dialog.png)
+
+1. Gör något av följande i dialogrutan Avancerad sortering:
+
+   * Lägg till kolumner som ännu inte är sorterade genom att markera knappen **[!UICONTROL Add sort column]**.
+
+   * Ta bort kolumner som du inte längre vill sortera genom att markera ikonen **Ta bort** ![Ta bort](/help/assets/icons/Close.svg).
+
+   * Justera sorteringsprioriteten genom att dra kolumnerna uppåt eller nedåt i listan.
+
+     Mer information finns i [Sorteringsprioritet](#sort-priority).
+
+   * Ändra sorteringsvärdet genom att välja **[!UICONTROL Ascending]** eller **[!UICONTROL Descending]** i listrutan.
+
+   * Välj en annan kolumn genom att välja den nedrullningsbara menyn för kolumnnamn.
+
+1. Välj **[!UICONTROL Apply]**.
+
+Sorteringsikonen är fortfarande synlig när sortering används på en kolumn. En pil anger hur data sorteras (![Sortera](/help/assets/icons/SortOrderUp.svg) för stigande eller ![Sortera](/help/assets/icons/SortOrderDown.svg) för fallande).
+
+![exempel på flera sorteringar](assets/dimensions-multiple-sort.png)
+
+### Sorteringsprioritet
+
+När du sorterar data för flera kolumner sorteras data efter den prioritet som du tilldelar varje kolumn. Prioritetsnumrering visas bredvid sorteringsikonen ![sorteringsprioritet](assets/sort-priority-icon.png).
+
+Kolumnen med den primära prioriteten bestämmer huvudordningen. Kolumnen med den sekundära prioriteten bestämmer ordningen när raderna har samma värde i den primära kolumnen. Kolumnen med den högre prioriteten bestämmer ordningen när raderna har samma värde i de primära och sekundära kolumnerna och så vidare.
+
+Ta till exempel en tabell med följande kolumner:
+
+* Dag (dimension)
+
+* Sidvyer (mått)
+
+* Besök (mått)
+
+* Innehållshastighet (mått)
+
+Du kan tilldela sorteringsprioritet till varje kolumn enligt följande:
+
+| Kolumnnamn (komponent) | Komponenttyp | Sorteringsprioritet |
+|---------|----------|---------|
+| Dag | Dimension | 1 |
+| Sidvisningar | Mått | 2 |
+| Besök | Mått | 3 |
+| Innehållshastighet | Mått | 4 |
+
+Genom att tilldela varje kolumn en sorteringsprioritet kan du styra exakt hur data visas i tabellen. I det här exemplet sorteras informationen först efter dag, sedan efter sidvy, sedan efter besök och slutligen efter innehållshastighet.
+
+![exempel på flera sorteringar](assets/dimensions-multiple-sort.png)
