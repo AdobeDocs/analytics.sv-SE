@@ -4,9 +4,9 @@ audience: end-user
 user-guide-title: Komponenthandbok för Analytics
 breadcrumb-title: Användarhandbok om komponenter
 user-guide-description: Hantera data med komponenter som segment, beräknade värden, virtuella rapportsviter, marknadsföringskanaler och klassificeringar. Lär dig mer om Analytics över flera enheter.
-source-git-commit: cfa8335008548254786e46dfe634229edad5bd54
+source-git-commit: bc07745771f6e1b1228f4d77ff8e89130b90ebef
 workflow-type: tm+mt
-source-wordcount: '737'
+source-wordcount: '736'
 ht-degree: 7%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 7%
 # [!DNL Adobe Analytics] Komponentguide {#components}
 
 + [Handbok för analyskomponenter](home.md)
-+ [Versionsinformation för analyser](https://experienceleague.adobe.com/sv/docs/analytics/release-notes/latest)
++ [Versionsinformation för analyser](https://experienceleague.adobe.com/en/docs/analytics/release-notes/latest)
 + Mått {#dimensions}
    + [Översikt över dimensioner](dimensions/overview.md)
    + [Dimension-kompatibilitet](dimensions/compatibility.md)
@@ -284,7 +284,7 @@ ht-degree: 7%
       + Klassificeringsimportör {#classifications-importer}
          + [Översikt](classifications/importer/c-working-with-saint.md)
          + [Datafiler](classifications/importer/c-saint-data-files.md)
-         + [Ta bort klassificeringsdata](classifications/importer/t-delete-classification-data.md)
+         + [Ta bort data](classifications/importer/t-delete-classification-data.md)
          + [Mall](classifications/importer/c-download-saint-data.md)
          + [Import av webbläsare](classifications/importer/browser-import.md)
          + [Webbläsarexport](classifications/importer/browser-export.md)
