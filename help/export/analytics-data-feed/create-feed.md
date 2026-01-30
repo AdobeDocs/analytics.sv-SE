@@ -3,9 +3,9 @@ title: Skapa en datafeed
 description: Lär dig hur du skapar en datafeed och om filinformationen som ska skickas till Adobe.
 feature: Data Feeds
 exl-id: 36c8a40e-6137-4836-9d4b-bebf17b932bc
-source-git-commit: d78a2d683073d90b0b92db50253b3755ff909d9e
+source-git-commit: ee29f837d72cf3243e92230dbee5b379d1c6c415
 workflow-type: tm+mt
-source-wordcount: '4223'
+source-wordcount: '4253'
 ht-degree: 0%
 
 ---
@@ -36,6 +36,15 @@ Innan du skapar en datafeed är det viktigt att du har en grundläggande först�
 >id="aa_datafeed_export_file"
 >title="Manifest"
 >abstract="Välj om du vill inkludera en manifestfil för varje datafeed-leverans. Manifestfilerna innehåller information för varje inkluderad fil i dataflödet. När du skickar data för datafeed i ett enskilt paket kan du även välja att inkludera en färdig fil, men manifestfiler rekommenderas. "
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aa_datafeed_notify"
+>title="Meddela när det är klart"
+>abstract="Ange en eller flera e-postadresser dit ett meddelande ska skickas när dataflödet har skickats. Flera e-postadresser måste avgränsas med kommatecken."
 
 <!-- markdownlint-enable MD034 -->
 
