@@ -1,17 +1,17 @@
 ---
-title: XDM-objektvariabelmappning till Adobe Analytics
+title: XDM-objektfältmappning till Adobe Analytics
 description: Visa vilka XDM-fält som Edge automatiskt mappar till Analytics-variabler.
 exl-id: fbff5c38-0f04-4780-b976-023e207023c6
 feature: Implementation Basics
 role: Admin, Developer
-source-git-commit: a6967c7d4e1dca5491f13beccaa797167b503d6e
+source-git-commit: b3546e67cccc37cbdb89db2e80b3b34b2dbe417b
 workflow-type: tm+mt
-source-wordcount: '1461'
+source-wordcount: '1462'
 ht-degree: 0%
 
 ---
 
-# XDM-objektvariabelmappning till Adobe Analytics
+# XDM-objektfältmappning till Adobe Analytics
 
 Följande tabell visar de XDM-variabler som Adobe Experience Platform Edge Network automatiskt mappar till Adobe Analytics. Om du använder dessa sökvägar för XDM-fält behövs ingen ytterligare konfiguration för att skicka data till Adobe Analytics. Dessa fält ingår i fältgruppen **[!UICONTROL Adobe Analytics ExperienceEvent Template]**. Du bör använda dessa fält om du tänker skicka data till både Adobe Analytics och Adobe Experience Platform.
 
@@ -19,11 +19,11 @@ Om din organisation planerar att gå över till Customer Journey Analytics rekom
 
 ## Värdeprioriteringar
 
-De flesta XDM-objektfält i den här tabellen sammanfaller med ett [dataobjektfält](data-var-mapping.md). Om du anger både ett givet XDM-objektfält och dess respektive dataobjektfält får dataobjektfältet prioritet. Om du använder både XDM-objektfältet och dataobjektfältet rekommenderar Adobe att du ställer in anpassade händelser med dataobjektfältet. Om fältet `data.__adobe.analytics.events` finns skriver det över alla XDM-objektfält som är relaterade till handel och anpassade händelser.
+De flesta XDM-objektfält i den här tabellen motsvarar ett [mappat dataobjektfält](data-var-mapping.md). Vid intag av Adobe Analytics mappas värden först från XDM till analysvariabler. Identifierade dataobjektfält mappas sedan och ersätter tidigare angivna värden när de mappas till samma Analytics-variabel. Om `data.__adobe.analytics.events` till exempel finns, ersätter den hela uppsättningen händelser som annars skulle härledas från XDM. Händelser kombineras inte mellan båda källorna.
 
 ## Mappning av XDM-objektfält
 
-Tidigare uppdateringar av den här tabellen finns på den här sidans [implementeringshistorik på GitHub](https://github.com/AdobeDocs/analytics.sv-SE/commits/main/help/implement/aep-edge/xdm-var-mapping.md).
+Tidigare uppdateringar av den här tabellen finns på den här sidans [implementeringshistorik på GitHub](https://github.com/AdobeDocs/analytics.en/commits/main/help/implement/aep-edge/xdm-var-mapping.md).
 
 | Sökväg till XDM-fält | Analysvariabel och beskrivning |
 | --- | --- |
@@ -78,47 +78,47 @@ Tidigare uppdateringar av den här tabellen finns på den här sidans [implement
 | `xdm._experience.analytics.customDimensions.`<br/>`props.prop1`<br/>`[...]`<br/>`xdm._experience.analytics.customDimensions.`<br/>`props.prop75` | Anger respektive [Prop](/help/components/dimensions/prop.md)-dimension. |
 | `xdm._experience.analytics.event1to100.`<br/>`event1.id`<br/>`[...]`<br/>`xdm._experience.analytics.event901to1000.`<br/>`event1000.id` | Tillämpar [händelseserialisering](../vars/page-vars/events/event-serialization.md) på respektive [anpassade händelser](/help/components/metrics/custom-events.md)-mått. Varje händelse-ID finns i dess överordnade 100-grupp. Om du till exempel vill använda serialisering på `event678` använder du `xdm._experience.analytics.event601to700.event678.id`. |
 | `xdm._experience.analytics.event1to100.`<br/>`event1.value`<br/>`[...]`<br/>`xdm._experience.analytics.event901to1000.`<br/>`event1000.value` | Ökar respektive [anpassade händelser](/help/components/metrics/custom-events.md)-mått med önskad mängd. Varje händelse finns i dess överordnade 100-grupp. Fältet för `event567` är till exempel `xdm._experience.analytics.event501to600.event567.value`. |
-| `xdm.identityMap.ECID[0].id` | [Adobe Experience Cloud ID för identitetstjänst](https://experienceleague.adobe.com/sv/docs/id-service/using/home). |
+| `xdm.identityMap.ECID[0].id` | [Adobe Experience Cloud ID för identitetstjänst](https://experienceleague.adobe.com/en/docs/id-service/using/home). |
 | `xdm.marketing.trackingCode` | Anger dimensionen [Spårningskod](/help/components/dimensions/tracking-code.md). |
-| `xdm.media.mediaTimed.completes.value` | Mätvärdet [Slutför &#x200B;](https://experienceleague.adobe.com/sv/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-complete) för direktuppspelningstjänster. |
+| `xdm.media.mediaTimed.completes.value` | Mätvärdet [Slutför ](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-complete) för direktuppspelningstjänster. |
 | `xdm.media.mediaTimed.dropBeforeStart.value` | `a.media.view`, `a.media.timePlayed`, `a.media.play` |
-| `xdm.media.mediaTimed.federated.value` | Mätvärdet [Federated data](https://experienceleague.adobe.com/sv/docs/media-analytics/using/implementation/variables/audio-video-parameters#federated-data) för direktuppspelningstjänster. |
-| `xdm.media.mediaTimed.firstQuartiles.value` | Mätvärdet [Tjugofem % Progress Marker](https://experienceleague.adobe.com/sv/docs/media-analytics/using/implementation/variables/audio-video-parameters#twenty-five--progress-marker) för direktuppspelningstjänster. |
-| `xdm.media.mediaTimed.mediaSegmentView.value` | Mätvärdet för direktuppspelande medietjänster [Vyer för innehållssegment](https://experienceleague.adobe.com/sv/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-segment-views). |
-| `xdm.media.mediaTimed.midpoints.value` | Mätvärdet [Femtio % Progress Marker](https://experienceleague.adobe.com/sv/docs/media-analytics/using/implementation/variables/audio-video-parameters#progress-marker) för direktuppspelande medietjänster. |
-| `xdm.media.mediaTimed.pauseTime.value` | Mätvärdet [Total paustid](https://experienceleague.adobe.com/sv/docs/media-analytics/using/implementation/variables/audio-video-parameters#total-pause-duration) för direktuppspelande medietjänster. |
-| `xdm.media.mediaTimed.pauses.value` | Mätvärdet [Pause Events](https://experienceleague.adobe.com/sv/docs/media-analytics/using/implementation/variables/audio-video-parameters#pause-events) för direktuppspelande medietjänster. |
-| `xdm.mediaCollection.sessionDetails.assetID` | Dimensionen [Tillgångs-ID](https://experienceleague.adobe.com/sv/docs/media-analytics/using/implementation/variables/audio-video-parameters#asset-id) för direktuppspelande medietjänster. |
-| `xdm.mediaCollection.sessionDetails.friendlyName` | Dimensionen [Namn på direktuppspelande medietjänster](https://experienceleague.adobe.com/sv/docs/media-analytics/using/implementation/variables/audio-video-parameters#video-name). |
-| `xdm.mediaCollection.sessionDetails.originator` | Dimensionen [Originator](https://experienceleague.adobe.com/sv/docs/media-analytics/using/implementation/variables/audio-video-parameters#originator) för direktuppspelande medietjänster. |
-| `xdm.mediaCollection.sessionDetails.episode` | Dimensionen [Episod](https://experienceleague.adobe.com/sv/docs/media-analytics/using/implementation/variables/audio-video-parameters#episode) för direktuppspelande medietjänster. |
-| `xdm.mediaCollection.sessionDetails.genre` | Dimensionen [Genre](https://experienceleague.adobe.com/sv/docs/media-analytics/using/implementation/variables/audio-video-parameters#genre) för direktuppspelande medietjänster. |
-| `xdm.mediaCollection.sessionDetails.rating` | Dimensionen [Innehållsklassificering](https://experienceleague.adobe.com/sv/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-rating) för direktuppspelande medietjänster. |
-| `xdm.mediaCollection.sessionDetails.season` | Dimensionen [Säsong](https://experienceleague.adobe.com/sv/docs/media-analytics/using/implementation/variables/audio-video-parameters#season) för direktuppspelande medietjänster. |
-| `xdm.mediaCollection.sessionDetails.name` | Dimensionen [Innehålls-ID](https://experienceleague.adobe.com/sv/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-id) för direktuppspelande medietjänster. |
-| `xdm.mediaCollection.sessionDetails.show` | Dimensionen [Visa](https://experienceleague.adobe.com/sv/docs/media-analytics/using/implementation/variables/audio-video-parameters#show) för direktuppspelande medietjänster. |
-| `xdm.mediaCollection.sessionDetails.showType` | Dimensionen [Visa typ](https://experienceleague.adobe.com/sv/docs/media-analytics/using/implementation/variables/audio-video-parameters#show-type) för direktuppspelande medietjänster. |
-| `xdm.mediaCollection.sessionDetails.length` | Dimensionen [Längd för direktuppspelande medietjänster](https://experienceleague.adobe.com/sv/docs/media-analytics/using/implementation/variables/audio-video-parameters#video-length). |
-| `xdm.media.mediaTimed.primaryAssetViewDetails.@id` | Dimensionen [ID för mediesession](https://experienceleague.adobe.com/sv/docs/media-analytics/using/implementation/variables/audio-video-parameters#media-session-id) för direktuppspelning. |
-| `xdm.mediaCollection.sessionDetails.channel` | Dimensionen [Innehållskanal](https://experienceleague.adobe.com/sv/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-channel) för direktuppspelande medietjänster. |
-| `xdm.mediaCollection.sessionDetails.contentType` | Dimensionen [Innehållstyp](https://experienceleague.adobe.com/sv/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-type) för direktuppspelande medietjänster. |
-| `xdm.mediaCollection.sessionDetails.network` | Dimensionen [Nätverk](https://experienceleague.adobe.com/sv/docs/media-analytics/using/implementation/variables/audio-video-parameters#network) för direktuppspelande medietjänster. |
-| `xdm.media.mediaTimed.primaryAssetViewDetails.`<br/>`mediaSegmentView.value` | Dimensionen [Innehållssegment](https://experienceleague.adobe.com/sv/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-segment) för direktuppspelande medietjänster. |
-| `xdm.mediaCollection.sessionDetails.playerName` | Dimensionen [Namn på innehållsspelaren](https://experienceleague.adobe.com/sv/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-player-name) för direktuppspelande medietjänster. |
-| `xdm.mediaCollection.sessionDetails.appVersion` | Dimensionen [SDK Version](https://experienceleague.adobe.com/sv/docs/media-analytics/using/implementation/variables/audio-video-parameters#sdk-version) för direktuppspelande medietjänster. |
-| `xdm.mediaCollection.sessionDetails.feed` | Dimensionen [Medieflödestyp](https://experienceleague.adobe.com/sv/docs/media-analytics/using/implementation/variables/audio-video-parameters#media-feed-type) för direktuppspelningstjänster. |
-| `xdm.mediaCollection.sessionDetails.streamFormat` | Dimensionen [Stream Format](https://experienceleague.adobe.com/sv/docs/media-analytics/using/implementation/variables/audio-video-parameters#stream-format) för direktuppspelande medietjänster. |
-| `xdm.media.mediaTimed.progress10.value` | Mätvärdet [Tio % Progress Marker](https://experienceleague.adobe.com/sv/docs/media-analytics/using/implementation/variables/audio-video-parameters#ten--progress-marker) för direktuppspelningstjänster. |
-| `xdm.media.mediaTimed.progress95.value` | Mätvärdet för direktuppspelande medietjänster [Nittiofem % Progress Marker](https://experienceleague.adobe.com/sv/docs/media-analytics/using/implementation/variables/audio-video-parameters#ninety-five--progress-marker). |
-| `xdm.mediaCollection.sessionDetails.hasResume` | Mätvärdet för direktuppspelande medietjänster [Innehållet återupptas](https://experienceleague.adobe.com/sv/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-resumes). |
-| `xdm.media.mediaTimed.starts.value` | Mätvärdet för direktuppspelande medietjänster [Media börjar](https://experienceleague.adobe.com/sv/docs/media-analytics/using/implementation/variables/audio-video-parameters#media-starts). |
-| `xdm.media.mediaTimed.thirdQuartiles.value` | Mätvärdet [Sjuttiofem % Progress Marker](https://experienceleague.adobe.com/sv/docs/media-analytics/using/implementation/variables/audio-video-parameters#seventy-five--progress-marker) för direktuppspelningstjänster. |
-| `xdm.media.mediaTimed.timePlayed.value` | Mätvärdet för direktuppspelande medietjänster [Innehållstid tillagd](https://experienceleague.adobe.com/sv/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-time-spent). |
-| `xdm.media.mediaTimed.totalTimePlayed.value` | Mätvärdet för direktuppspelande medietjänster är [Medietid spenderad](https://experienceleague.adobe.com/sv/docs/media-analytics/using/implementation/variables/audio-video-parameters#media-time-spent). |
+| `xdm.media.mediaTimed.federated.value` | Mätvärdet [Federated data](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#federated-data) för direktuppspelningstjänster. |
+| `xdm.media.mediaTimed.firstQuartiles.value` | Mätvärdet [Tjugofem % Progress Marker](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#twenty-five--progress-marker) för direktuppspelningstjänster. |
+| `xdm.media.mediaTimed.mediaSegmentView.value` | Mätvärdet för direktuppspelande medietjänster [Vyer för innehållssegment](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-segment-views). |
+| `xdm.media.mediaTimed.midpoints.value` | Mätvärdet [Femtio % Progress Marker](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#progress-marker) för direktuppspelande medietjänster. |
+| `xdm.media.mediaTimed.pauseTime.value` | Mätvärdet [Total paustid](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#total-pause-duration) för direktuppspelande medietjänster. |
+| `xdm.media.mediaTimed.pauses.value` | Mätvärdet [Pause Events](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#pause-events) för direktuppspelande medietjänster. |
+| `xdm.mediaCollection.sessionDetails.assetID` | Dimensionen [Tillgångs-ID](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#asset-id) för direktuppspelande medietjänster. |
+| `xdm.mediaCollection.sessionDetails.friendlyName` | Dimensionen [Namn på direktuppspelande medietjänster](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#video-name). |
+| `xdm.mediaCollection.sessionDetails.originator` | Dimensionen [Originator](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#originator) för direktuppspelande medietjänster. |
+| `xdm.mediaCollection.sessionDetails.episode` | Dimensionen [Episod](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#episode) för direktuppspelande medietjänster. |
+| `xdm.mediaCollection.sessionDetails.genre` | Dimensionen [Genre](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#genre) för direktuppspelande medietjänster. |
+| `xdm.mediaCollection.sessionDetails.rating` | Dimensionen [Innehållsklassificering](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-rating) för direktuppspelande medietjänster. |
+| `xdm.mediaCollection.sessionDetails.season` | Dimensionen [Säsong](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#season) för direktuppspelande medietjänster. |
+| `xdm.mediaCollection.sessionDetails.name` | Dimensionen [Innehålls-ID](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-id) för direktuppspelande medietjänster. |
+| `xdm.mediaCollection.sessionDetails.show` | Dimensionen [Visa](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#show) för direktuppspelande medietjänster. |
+| `xdm.mediaCollection.sessionDetails.showType` | Dimensionen [Visa typ](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#show-type) för direktuppspelande medietjänster. |
+| `xdm.mediaCollection.sessionDetails.length` | Dimensionen [Längd för direktuppspelande medietjänster](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#video-length). |
+| `xdm.media.mediaTimed.primaryAssetViewDetails.@id` | Dimensionen [ID för mediesession](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#media-session-id) för direktuppspelning. |
+| `xdm.mediaCollection.sessionDetails.channel` | Dimensionen [Innehållskanal](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-channel) för direktuppspelande medietjänster. |
+| `xdm.mediaCollection.sessionDetails.contentType` | Dimensionen [Innehållstyp](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-type) för direktuppspelande medietjänster. |
+| `xdm.mediaCollection.sessionDetails.network` | Dimensionen [Nätverk](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#network) för direktuppspelande medietjänster. |
+| `xdm.media.mediaTimed.primaryAssetViewDetails.`<br/>`mediaSegmentView.value` | Dimensionen [Innehållssegment](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-segment) för direktuppspelande medietjänster. |
+| `xdm.mediaCollection.sessionDetails.playerName` | Dimensionen [Namn på innehållsspelaren](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-player-name) för direktuppspelande medietjänster. |
+| `xdm.mediaCollection.sessionDetails.appVersion` | Dimensionen [SDK Version](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#sdk-version) för direktuppspelande medietjänster. |
+| `xdm.mediaCollection.sessionDetails.feed` | Dimensionen [Medieflödestyp](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#media-feed-type) för direktuppspelningstjänster. |
+| `xdm.mediaCollection.sessionDetails.streamFormat` | Dimensionen [Stream Format](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#stream-format) för direktuppspelande medietjänster. |
+| `xdm.media.mediaTimed.progress10.value` | Mätvärdet [Tio % Progress Marker](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#ten--progress-marker) för direktuppspelningstjänster. |
+| `xdm.media.mediaTimed.progress95.value` | Mätvärdet för direktuppspelande medietjänster [Nittiofem % Progress Marker](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#ninety-five--progress-marker). |
+| `xdm.mediaCollection.sessionDetails.hasResume` | Mätvärdet för direktuppspelande medietjänster [Innehållet återupptas](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-resumes). |
+| `xdm.media.mediaTimed.starts.value` | Mätvärdet för direktuppspelande medietjänster [Media börjar](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#media-starts). |
+| `xdm.media.mediaTimed.thirdQuartiles.value` | Mätvärdet [Sjuttiofem % Progress Marker](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#seventy-five--progress-marker) för direktuppspelningstjänster. |
+| `xdm.media.mediaTimed.timePlayed.value` | Mätvärdet för direktuppspelande medietjänster [Innehållstid tillagd](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-time-spent). |
+| `xdm.media.mediaTimed.totalTimePlayed.value` | Mätvärdet för direktuppspelande medietjänster är [Medietid spenderad](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#media-time-spent). |
 | `xdm.placeContext.geo._schema.latitude` | Besökarens latitud. Hjälper dig att ange [dimensioner för mobil livscykelplacering](/help/components/dimensions/lifecycle-dimensions.md). |
 | `xdm.placeContext.geo._schema.longitude` | Besökarens longitud. Hjälper dig att ange [dimensioner för mobil livscykelplacering](/help/components/dimensions/lifecycle-dimensions.md). |
 | `xdm.placeContext.geo.postalCode` | Dimensionen [Postnummer](/help/components/dimensions/zip-code.md). |
-| `xdm.placeContext.geo.stateProvince` | Dimensionen [USA &#x200B;](/help/components/dimensions/us-states.md). |
+| `xdm.placeContext.geo.stateProvince` | Dimensionen [USA ](/help/components/dimensions/us-states.md). |
 | `xdm.placeContext.localTime` | Visas som `t_time_info` i [Dataflöden](/help/export/analytics-data-feed/c-df-contents/datafeeds-reference.md). |
 | `xdm.productListItems[]._experience.analytics.`<br/>`customDimensions.eVars.eVar1`<br/>`[...]`<br/>`xdm.productListItems[]._experience.analytics.`<br/>`customDimensions.eVars.eVar250` | Tillämpar [produktsyntax](../vars/page-vars/products.md) för eVars. |
 | `xdm.productListItems[]._experience.analytics.`<br/>`event1to100.event1.value`<br/>`[...]`<br/>`xdm.productListItems[]._experience.analytics.`<br/>`event901-1000.event1000.value` | Tillämpar [produktsyntax](../vars/page-vars/products.md) för händelser. |

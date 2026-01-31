@@ -4,7 +4,7 @@ audience: all
 user-guide-title: Implementeringshandbok för Analytics
 breadcrumb-title: Implementeringshandbok
 user-guide-description: Lär dig hur du implementerar Adobe Analytics. Anpassa vilka data som samlas in för att få ut så mycket som möjligt av Analytics-data.
-source-git-commit: 98e9dc4932bd23d3e0b632705945f56c243750c5
+source-git-commit: ae4c68f29e878101ae0b2f863823ebf20b6095cd
 workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 7%
@@ -15,7 +15,7 @@ ht-degree: 7%
 # Adobe Analytics Implementeringshandbok {#implementation}
 
 + [Implementeringshandbok för analyser](home.md)
-+ [Versionsinformation för analyser](https://experienceleague.adobe.com/sv/docs/analytics/release-notes/latest)
++ [Versionsinformation för analyser](https://experienceleague.adobe.com/en/docs/analytics/release-notes/latest)
 + [Versionsinformation för AppMeasurement](appmeasurement-updates.md)
 + Analysvariabler, funktioner och metoder {#vars}
    + [Översikt](vars/overview.md)
@@ -148,8 +148,8 @@ ht-degree: 7%
    + [Ta hand om en befintlig Adobe Analytics-implementering](prepare/existing-implementation.md)
 + Implementera analyser med Experience Platform Edge {#aep-edge}
    + [Edge - översikt](aep-edge/overview.md)
-   + [Variabelmappning för dataobjekt](aep-edge/data-var-mapping.md)
-   + [Variabelmappning för XDM-objekt](aep-edge/xdm-var-mapping.md)
+   + [Mappning av dataobjektfält](aep-edge/data-var-mapping.md)
+   + [Mappning av XDM-objektfält](aep-edge/xdm-var-mapping.md)
    + [Edge Network händelsetyper](aep-edge/hit-types.md)
    + Web SDK {#web-sdk}
       + [SDK - översikt](aep-edge/web-sdk/overview.md)
