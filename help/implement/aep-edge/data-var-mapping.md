@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Följande tabell visar dataobjektsfältet som Adobe Experience Platform Edge Network automatiskt mappar till Adobe Analytics. Om du använder dessa sökvägar för dataobjektfält behövs ingen ytterligare konfiguration för att skicka data till Adobe Analytics.
 
-Du bör använda dessa fält om du tänker använda Customer Journey Analytics i framtiden. Med den här implementeringsmetoden kan din organisation skicka data till Adobe med Web SDK utan att följa ett XDM-schema. När din organisation är redo att skicka data till Adobe Experience Platform kan du använda [Datastream-mappning](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep#mapping) för att peka dataobjektfält mot deras respektive XDM-fält.
+Du bör använda dessa fält om du tänker använda Customer Journey Analytics i framtiden. Med den här implementeringsmetoden kan din organisation skicka data till Adobe med Web SDK utan att följa ett XDM-schema. När din organisation är redo att skicka data till Adobe Experience Platform kan du använda [Datastream-mappning](https://experienceleague.adobe.com/sv/docs/experience-platform/datastreams/data-prep#mapping) för att peka dataobjektfält mot deras respektive XDM-fält.
 
 ## Värdeprioriteringar
 
@@ -25,7 +25,7 @@ Vissa dataobjektfält har också stöd för sina respektive [frågeparametervär
 
 ## Mappning av dataobjektfält
 
-Tidigare uppdateringar av den här tabellen finns på den här sidans [implementeringshistorik på GitHub](https://github.com/AdobeDocs/analytics.en/commits/main/help/implement/aep-edge/data-var-mapping.md). På samma sätt som för AppMeasurement-variabler är alla dataobjektfält skiftlägeskänsliga.
+Tidigare uppdateringar av den här tabellen finns på den här sidans [implementeringshistorik på GitHub](https://github.com/AdobeDocs/analytics.sv-SE/commits/main/help/implement/aep-edge/data-var-mapping.md). På samma sätt som för AppMeasurement-variabler är alla dataobjektfält skiftlägeskänsliga.
 
 | Sökväg till dataobjektfält | Analysvariabel och beskrivning |
 | --- | --- |
