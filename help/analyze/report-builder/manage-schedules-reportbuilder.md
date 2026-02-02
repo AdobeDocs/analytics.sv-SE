@@ -1,13 +1,14 @@
 ---
-title: Hantera schemalagda arbetsböcker i Report Builder i Adobe Analytics
-description: Lär dig hantera schemalagda arbetsböcker i Report Builder
+title: Hantera schemalagda arbetsböcker i Report Builder
+description: Lär dig hantera schemalagda arbetsböcker i Report Builder.
 role: User
 feature: Report Builder
 type: Documentation
 solution: Analytics
-source-git-commit: 9ece9f6fcebdf308b6218aa50ab78af4f75ee8e7
+exl-id: fc0357f7-1762-47e4-9691-5fbdb177d45b
+source-git-commit: c3fe537967473754a3b5fe88c7b383647b2c742e
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: '317'
 ht-degree: 0%
 
 ---
@@ -72,5 +73,3 @@ Använd ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) för att definier
    * Ett ![AlertRed](/help/assets/icons/AlertRed.svg) indikerar att ett fel har inträffat.
 
 Du kan också välja ![Historik](/help/assets/icons/History.svg) för en eller flera markerade arbetsböcker på fliken **[!UICONTROL Workbooks]**. Den här åtgärden visar fliken **[!UICONTROL History]** med en lista filtrerad efter din markering. Välj ![CrossSize75](/help/assets/icons/CrossSize75.svg) om du vill ta bort ett filter.
-
-

@@ -4,9 +4,9 @@ audience: end-user
 user-guide-title: Handbok om Analytics-verktyg
 breadcrumb-title: Användarhandbok om verktyg
 user-guide-description: Lär dig hur du använder verktyg i Analytics, inklusive Analysis Workspace, Analytics Dashboards, Report Builder, Legacy Report Builder och Activity Map.
-source-git-commit: 340baffc3c870ffec136a0800f71a293099e4d9f
+source-git-commit: 288ca753157a6ed388a37a1ef01481cd83191b85
 workflow-type: tm+mt
-source-wordcount: '871'
+source-wordcount: '869'
 ht-degree: 10%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 10%
 # Adobe Analytics Tools Guide {#analyze}
 
 + [Handbok för analysverktyg](home.md)
-+ [Versionsinformation för analyser](https://experienceleague.adobe.com/sv/docs/analytics/release-notes/latest)
++ [Versionsinformation för analyser](https://experienceleague.adobe.com/en/docs/analytics/release-notes/latest)
 + Kom igång med Adobe Analytics {#admin-overview}
    + [Analytics - översikt](get-started/analytics-overview.md)
    + [Onboarding](get-started/onboard.md)
@@ -177,7 +177,6 @@ ht-degree: 10%
    + [Schemalägg arbetsböcker för e-post](report-builder/schedule-reportbuilder.md)
    + [Schemalägg arbetsböcker för molnexporter](/help/analyze/report-builder/report-builder-export.md)
    + [Hantera schemalagda arbetsböcker](/help/analyze/report-builder/manage-schedules-reportbuilder.md)
-   + [Begränsade etiketter](report-builder/restricted-labels.md)
    + [Report Builder-inställningar](report-builder/report-builder-settings.md)
 + Äldre Report Builder {#legacy-report-builder}
    + [Äldre Adobe Report Builder-hjälp](legacy-report-builder/home.md)

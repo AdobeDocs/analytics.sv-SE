@@ -4,7 +4,7 @@ audience: end-user
 user-guide-title: Komponenthandbok för Analytics
 breadcrumb-title: Användarhandbok om komponenter
 user-guide-description: Hantera data med komponenter som segment, beräknade värden, virtuella rapportsviter, marknadsföringskanaler och klassificeringar. Lär dig mer om Analytics över flera enheter.
-source-git-commit: 993bef6137bbcda98cb6f09f9e8644db44e7d8cb
+source-git-commit: 6e818b5f25b5d7636513a756b534b13dd87ec35d
 workflow-type: tm+mt
 source-wordcount: '736'
 ht-degree: 7%
@@ -15,7 +15,7 @@ ht-degree: 7%
 # [!DNL Adobe Analytics] Komponentguide {#components}
 
 + [Handbok för analyskomponenter](home.md)
-+ [Versionsinformation för analyser](https://experienceleague.adobe.com/sv/docs/analytics/release-notes/latest)
++ [Versionsinformation för analyser](https://experienceleague.adobe.com/en/docs/analytics/release-notes/latest)
 + Mått {#dimensions}
    + [Översikt över dimensioner](dimensions/overview.md)
    + [Dimension-kompatibilitet](dimensions/compatibility.md)
@@ -296,8 +296,8 @@ ht-degree: 7%
          + [Vanliga frågor och svar](classifications/importer/importer-faq.md)
 + Platser {#locations}
    + [Platshanteraren](/help/components/locations/locations-manager.md)
-   + [Importkonton i molnet](/help/components/locations/configure-import-accounts.md)
-   + [Platser för molnimport](/help/components/locations/configure-import-locations.md)
+   + [Konfigurera molnkonton](/help/components/locations/configure-import-accounts.md)
+   + [Konfigurera molnplatser](/help/components/locations/configure-import-locations.md)
 + [Schemalagda projekt](scheduled-projects-manager.md)
 + [Schemalagd rapportkö](scheduled-reports-admin.md)
 + Realtidsrapportering {#real-time-reporting}

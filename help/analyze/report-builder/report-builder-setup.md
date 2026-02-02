@@ -1,20 +1,21 @@
 ---
-title: Konfigurera Report Builder i Adobe Analytics
-description: Beskriver hur du konfigurerar Report Builder i Adobe Analytics
+title: Konfigurera Report Builder
+description: Beskriver hur du konfigurerar Report Builder i Adobe Analytics.
 role: User
 feature: Report Builder
 type: Documentation
 solution: Analytics
-source-git-commit: eedabc6295f9b918e1e00b93993680e676c216c3
+exl-id: 9d0161a9-ee7b-43a9-92ad-4079cf4b9c6c
+source-git-commit: c3fe537967473754a3b5fe88c7b383647b2c742e
 workflow-type: tm+mt
-source-wordcount: '483'
+source-wordcount: '491'
 ht-degree: 0%
 
 ---
 
-# Konfigurera Report Builder
+# Report Builder Setup
 
-Du kommer snabbt åt Report Builder via Excel-tilläggsmenyn.
+I den här artikeln beskrivs kraven för att använda Report Builder för Adobe Analytics i Microsoft Excel. Och hur du installerar och konfigurerar tillägget.
 
 ## Krav
 
@@ -41,13 +42,13 @@ Report Builder för Adobe Analytics stöds av följande operativsystem och webbl
 - Stöder alla webbläsare och versioner
 
 
-## Excel-tillägg för Report Builder
+## Report Builder Excel-tillägg
 
-Du måste installera Report Builder Excel-tillägget för att kunna använda Report Builder för Adobe Analytics. När du har installerat tillägget Report Builder Excel kan du komma åt Report Builder från en öppen Excel-arbetsbok.
+Du måste installera Report Builder Excel-tillägget för att kunna använda Report Builder för Adobe Analytics. När du har installerat Report Builder Excel-tillägget kan du komma åt Report Builder från en öppen Excel-arbetsbok.
 
-### Hämta och installera tillägget Report Builder
+### Hämta och installera Report Builder-tillägget
 
-Hämta och installera tillägget Report Builder
+Så här hämtar och installerar du Report Builder-tillägget
 
 1. Starta Excel och öppna en ny arbetsbok.
 
@@ -69,17 +70,17 @@ Hämta och installera tillägget Report Builder
 
 **Om din organisation blockerar åtkomsten till Microsoft Store**
 
-Kontakta IT-avdelningen eller säkerhetsteamet och be om godkännande av tillägget Report Builder. När godkännande har beviljats väljer du fliken Administratörshanterad i dialogrutan för Office-tillägg.
+Kontakta IT-avdelningen eller säkerhetsteamet för att få Report Builder-tillägget godkänt. När godkännande har beviljats väljer du fliken Administratörshanterad i dialogrutan för Office-tillägg.
 
 ![Fliken Administratörshantering i dialogrutan Office-tillägg.](./assets/image1.png)
 
-När du har installerat tillägget Report Builder visas ikonen Report Builder i Excel-menyfliksområdet på fliken Hem.
+När du har installerat Report Builder-tillägget visas Report Builder-ikonen i Excel-menyfliksområdet på hemfliken.
 
-![Ikonen Report Builder i Excel](./assets/rb_app_icon.png)
+![Report Builder-ikonen i Excel](./assets/rb_app_icon.png)
 
-## Logga in i Report Builder
+## Logga in på Report Builder
 
-När du har installerat tillägget Report Builder for Excel för din operativplattform eller webbläsare följer du de här stegen för att logga in på Report Builder.
+När du har installerat Report Builder for Excel-tillägget för din operativplattform eller webbläsare följer du de här stegen för att logga in på Report Builder.
 
 1. Öppna en Excel-arbetsbok.
 

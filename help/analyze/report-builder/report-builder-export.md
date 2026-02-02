@@ -1,23 +1,22 @@
 ---
 title: Exportera rapporter från Report Builder
-description: Beskriver hur du exporterar data från Report Builder till säkra destinationer
+description: Lär dig hur du exporterar data från Report Builder till säkra destinationer.
 role: User, Admin
 feature: Report Builder
 type: Documentation
 solution: Analytics
 exl-id: 5829482b-3a5e-416b-9c82-404face30b29
-source-git-commit: ca84a5f807545d7196e2e0e90d3209c32d3fd789
+source-git-commit: da7b4568fcdb03ff97437879e84a1ed45749494d
 workflow-type: tm+mt
-source-wordcount: '1212'
+source-wordcount: '1200'
 ht-degree: 0%
 
 ---
 
 # Schemalägg arbetsböcker genom att exportera till molnmål
 
-Du kan exportera Adobe Analytics-arbetsböcker från Report Builder till molnleverantörer som Google, Azure och Amazon.
 
-Du kan också dela arbetsböcker med andra via e-post, vilket beskrivs i [Schemalägg arbetsböcker för delning via e-post](/help/analyze/report-builder/schedule-reportbuilder.md).
+Du kan exportera Customer Journey Analytics-arbetsböcker från Report Builder till molnleverantörer som Google, Azure och Amazon.
 
 [Fördelarna med att exportera rapporter från Report Builder till molnet](#advantages-of-exporting-to-the-cloud) är bland annat möjligheten att använda rapporter i tredjepartsverktyg eller kombinera dem med externa data.
 
@@ -33,6 +32,10 @@ Använd följande process när du exporterar arbetsböcker från Report Builder 
 
 1. [Exportera en rapport från Report Builder](#export-a-report-from-report-builder)
 
+1. Få åtkomst till data i ditt molnkonto och [Hantera exporter i Adobe](/help/components/locations/configure-import-locations.md)
+
+![Exportprocessen som beskrivs i steg 1 till 4.](assets/report-builder-export-process.png)
+
 ## Exportera en rapport från Report Builder
 
 >[!NOTE]
@@ -47,11 +50,7 @@ Så här exporterar du rapporter från Report Builder:
 
 1. Välj [!UICONTROL **Schema**].
 
-<!-- add screenshot -->
-
 1. På fliken **[!UICONTROL Workbooks]** väljer du plusikonen för att skapa ett nytt schema
-
-   ![Fliken Scheman för Report builder](assets/report-builder-schedule-cloud.png)
 
    eller
 
@@ -59,15 +58,17 @@ Så här exporterar du rapporter från Report Builder:
 
 1. Ange följande information i den högra panelen [!UICONTROL **Adobe Report Builder**] för att fortsätta skapa ett nytt schema:
 
+   ![Fliken Scheman för Report builder](assets/report-builder-schedule-cloud.png)
+
    | Fältnamn | Funktion |
    |---------|----------|
    | **[!UICONTROL File]** | Visar arbetsboksfilen som är markerad för export. Välj arbetsboksikonen ![TabellMarkera](/help/assets/icons/TableSelect.svg) bredvid filnamnet för att välja den aktuella arbetsboken om den inte redan är markerad. |
    | **[!UICONTROL Filename]** <!--should be File name --> | Gör att du kan ändra filnamnet innan du exporterar arbetsboken.<p>Arbetsbokens filnamn är som standard arbetsbokens namn</p> |
-   | **[!UICONTROL File type]** | Välj filtyp för den exporterade filen. Du kan välja Excel, PDF eller CSV.<p>När du väljer **[!UICONTROL CSV]** ska du vara medveten om att den schemalagda arbetsboken skickas som en ZIP-bilaga. Vissa e-postadministrationer kan blockera e-post med ZIP-bilagor. Du ser en varning i enlighet med detta.</p> |
-   | **[!UICONTROL Append time stamp to file name]** | Välj det här alternativet om du vill inkludera en tidsstämpel för exporten i namnet på den exporterade filen. |
+   | **[!UICONTROL File type]** | Välj filtyp för den exporterade filen. Du kan välja Excel, PDF eller CSV. <p>När du väljer **[!UICONTROL CSV]** ska du vara medveten om att den schemalagda arbetsboken skickas som en ZIP-bilaga. Vissa e-postadministrationer kan blockera e-post med ZIP-bilagor. Du ser en varning i enlighet med detta.</p> |
+   | **[!UICONTROL Append time stamp to file name]** | Välj det här alternativet om du vill lägga till en tidsstämpel till filnamnet för att identifiera vilket datum arbetsboken uppdaterades. En tidsstämpel är användbar för att se vilken version av en arbetsbok som skickades på ett visst datum. När du har markerat det här alternativet kan du välja mellan: |
    | **[!UICONTROL Filename preview]** <!--should be File name preview --> | Visar en förhandsgranskning av hur filnamnet kommer att visas efter exporten. |
    | **[!UICONTROL Password protect the workbook]** | Ange ett lösenord för att skydda den exporterade filen så att bara personer med lösenordet kan komma åt den. <p>Lösenord måste innehålla minst 8 tecken och innehålla minst 1 siffra och 1 specialtecken (till exempel `!`,`@`,`#` och `$`).</p> |
-   | **[!UICONTROL Email]** | Välj det här alternativet om du vill skicka filen till en viss e-postadress. Mer information om det här alternativet finns i [Schemalägg arbetsböcker genom delning via e-post](/help/analyze/report-builder/schedule-reportbuilder.md). |
+   | **[!UICONTROL Email]** | Välj det här alternativet om du vill skicka filen till en viss e-postadress. Mer information finns i [Schemalägg arbetsböcker genom att dela via e-post](schedule-reportbuilder.md). |
    | **[!UICONTROL Other deliveries]** | Välj det här alternativet om du vill skicka filen till ett molnkonto och använd sedan de nedrullningsbara menyerna **[!UICONTROL Account]** och **[!UICONTROL Location]** som beskrivs nedan för att välja konto och plats. |
    | **[!UICONTROL Account]** | Välj det exportkonto i molnet där du vill att data ska skickas. <p>Om du inte redan har konfigurerat ett molnkonto som du vill använda kan du konfigurera ett nytt konto:<ol><li>Välj [!UICONTROL **Lägg till konto**] och ange sedan följande information:<ul><li>[!UICONTROL **Platskontonamn**]: Ange ett namn för platskontot. Det här namnet visas när du skapar en plats </li><li>[!UICONTROL **Beskrivning av platskonto**]: Ange en kort beskrivning av kontot för att skilja det från andra konton av samma kontotyp.</li><li>**[!UICONTROL Make account available to all users in your organization]**: Välj det här alternativet om du vill tillåta andra användare i organisationen att använda kontot. Tänk på följande när du delar konton:<ul><li>Konton som du delar kan inte tas bort.</li><li>Delade konton kan bara redigeras av kontoägaren.</li><li>Vem som helst kan skapa en plats för det delade kontot.</li></ul></li><li>[!UICONTROL **Kontotyp**]: Välj den typ av molnkonto som du exporterar till. De tillgängliga kontotyperna är Amazon S3 Role ARN, Google Cloud Platform, Azure SAS och Azure RBAC.</li></ul><li>Om du vill slutföra konfigurationen av ditt konto fortsätter du med steg 6 i [Konfigurera molnimport- och exportkonton](/help/components/locations/configure-import-accounts.md) och expanderar sedan avsnittet som motsvarar den [!UICONTROL **kontotyp**] du valde. <p>Följande kontotyper är tillgängliga:</p><ul><li>Amazon S3 Role ARN</li><li>Google Cloud Platform</li><li>Azure SAS</li><li>Azure RBAC</li></ul></ol> |
    | **[!UICONTROL Location]** | Välj den plats på kontot där du vill att exportdata ska skickas.<p>Om du inte redan har konfigurerat platsen som du vill använda på kontot som du har valt kan du konfigurera en ny plats:<ol><li>Välj [!UICONTROL **Lägg till plats**] och ange sedan följande information: <ul><li>[!UICONTROL **Namn**]: Platsens namn.</li><li>[!UICONTROL **Beskrivning**]: Ange en kort beskrivning av platsen för att skilja den från andra platser på kontot.</li><li>**[!UICONTROL Make location available to all users in your organization]**: Välj det här alternativet om du vill tillåta andra användare i organisationen att använda platsen. Tänk på följande när du delar konton:<ul><li>Platser som du delar kan inte tas bort.</li><li>Delade platser kan bara redigeras av kontoägaren.</li><li>Platser kan bara delas om kontot som platsen är kopplad till också delas.</li></ul></li><li>[!UICONTROL **Platskonto**]: Välj det konto där du vill skapa platsen.</li></ul><li>Om du vill slutföra konfigurationen av din plats fortsätter du med länken nedan som motsvarar kontotypen som du valde i fältet [!UICONTROL **Platskonto**]:<ul><li>[Amazon S3-roll ARN](/help/components/locations/configure-import-locations.md#amazon-s3-role-arn)</li><li>[Google Cloud-plattform](/help/components/locations/configure-import-locations.md#google-cloud-platform)</li><li>[Azure SAS](/help/components/locations/configure-import-locations.md#azure-sas)</li><li>[Azure RBAC](/help/components/locations/configure-import-locations.md#azure-rbac)</li></ul> |
@@ -82,7 +83,6 @@ Så här exporterar du rapporter från Report Builder:
 
    Data skickas till molnkontot som du angav med den frekvens som du angav.
 
-   En bekräftelsetabell visas längst ned i Report Builder-navet och den schemalagda arbetsboken visas på fliken Arbetsböcker.
 
 ## Fördelar med att exportera till molnet
 
@@ -113,15 +113,3 @@ Kontrollera att dina datablock, din miljö och dina behörigheter uppfyller föl
 * **Datablock:** Alla datablock måste innehålla minst en komponent till en kolumn, rad eller ett värde.
 
 * **Miljö:** Kontrollera att de [IP-adresser](/help/technotes/ip-addresses.md) och [domäner](/help/technotes/domains.md) som används av Adobe Analytics tillåts via organisationens brandvägg.
-
-
-<!--
-## Manage exports
-
-After data is exported from Analysis Workspace, you can edit, re-export, duplicate, tag, or delete existing exports, as described in [Manage exports](/help/components/exports/manage-exports.md). 
-
--->
-
-## Hantera schemalagda arbetsböcker
-
-Mer information om hur du hanterar arbetsböcker som redan är schemalagda finns i [Hantera schemalagda arbetsböcker](/help/analyze/report-builder/manage-schedules-reportbuilder.md).

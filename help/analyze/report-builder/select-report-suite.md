@@ -1,13 +1,14 @@
 ---
-title: Så här väljer du en rapportserie i Report Builder
-description: Beskriver hur du väljer rapportsviter i Adobe Report Builder
+title: Välj en rapportsvit i Report Builder
+description: Lär dig hur du väljer en rapportserie i Report Builder.
 role: User
 feature: Report Builder
 type: Documentation
 solution: Analytics
-source-git-commit: 16046af6b7a78bdc4bfaf7e5ec7d05c55f2ebc01
+exl-id: 96e24d5d-78fb-4e5c-8513-c5fe221d0aeb
+source-git-commit: 6f7de360ac24261eabb46c6cfce99449261706de
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '340'
 ht-degree: 0%
 
 ---
@@ -16,39 +17,41 @@ ht-degree: 0%
 
 Du kan välja en rapportsserie i listrutan eller välja en rapportsvit från en cell och automatiskt uppdatera ditt datablock med en ny rapportsvit.
 
-**Välj rapportserie från cell**
+## Välj rapportsvit från en cell
 
-Om du väljer en rapportsserie från en cell är det enkelt att uppdatera datablock med hjälp av olika rapportsviter. Om organisationen har flera rapportsviter som är identiska eller liknar varandra i strukturen, i stället för att skapa helt nya rapporter med separata datablock, kan du uppdatera datablocken med en rapportsvit som är markerad från en cell. Detta är också användbart om du har komplicerade datablocksformat som innehåller anpassade komponenter och layouter.
+Om du väljer en rapportsserie från en cell är det enkelt att uppdatera datablock med hjälp av olika rapportsviter. I stället för att skapa helt nya rapporter med separata datablock kan du uppdatera datablocken med ett rapportpaket som är valt från en cell.
 
-Om du vill välja en rapportserie från en cell skapar du först ett datablock och tilldelar flera rapportsviter till en cell utanför datablocket. Använd sedan rapportsviten från cellpanelen för att uppdatera dina datablock från olika rapportsviter.
+Att välja en rapportsvit från en cell är praktiskt när du har:
 
-1. Skapa ett datablock.
-Mer information om hur du skapar ett datablock finns i [Skapa ett datablock](/help/analyze/report-builder/create-a-data-block.md).
+* Flera rapportsviter som liknar eller är identiska med varandra i strukturen.
+* Komplicerade datablockformat som innehåller anpassade komponenter och layouter.
 
-1. Klicka på *cellikonen* i avsnittet **[!UICONTROL report suites]**.
+Om du vill välja en rapportserie från en cell skapar du först ett datablock och tilldelar flera rapportsviter till en cell utanför datablocket. Använd sedan panelen **[!UICONTROL Report suite from cell]** för att uppdatera dina datablock från olika rapportsviter.
 
-1. Välj en cellplats för att lägga till rapportsviterna i den markerade cellen.
+1. Skapa ett datablock. Mer information om hur du skapar ett datablock finns i [Skapa ett datablock](/help/analyze/report-builder/create-a-data-block.md).
 
-   Du kan markera en cell tillräckligt långt bort från dina datablockceller så att de inte överlappar varandra.
+1. Välj ![DataViewSelector](/help/assets/icons/DataViewSelector.svg) i **[!UICONTROL Report suites]**.
 
-1. Bekräfta den markerade cellens placering.
+1. Markera en cell utanför datablocket med ![DataBlockSelector](/help/assets/icons/DataBlockSelector.svg) .
 
-1. Markera de rapportsviter som du vill tilldela cellen.
+1. Lägg till en eller flera rapportsviter från **[!UICONTROL Select report suites to add to report suite from cell]** genom att dra och släppa. Du kan också dubbelvälja en rapportserie och lägga till rapportsviten i listan **[!UICONTROL Report suites included]**.
 
-1. Klicka på **Använd**.
+   * Du kan använda ![Sök](/help/assets/icons/Search.svg) **[!UICONTROL _Välj rapportsviter_]** för att söka efter rapportsviter.
+   * Använd ![MoreSmall](/help/assets/icons/MoreSmall.svg) för att öppna en snabbmeny så att du kan flytta rapportsviter uppåt eller nedåt i listan **[!UICONTROL Report suites included]**.
+   * Använd ![CrossSize75](/help/assets/icons/CrossSize75.svg) om du vill ta bort en rapportsvit från listan **[!UICONTROL Report suites included]**.
 
-   När du är klar med ditt datablock kan du uppdatera datablocket med en annan rapportserie än den markerade cellen.
+   ![Välj en rapportserie från en cell](assets/dataviews-from-a-cell.png){zoomable="yes"}
 
-   **Ändra rapportsviten från cellen**
+1. Välj **[!UICONTROL Apply]** om du vill använda de markerade rapportsviterna i den markerade cellen.
 
-1. Klicka på rapportsvitens cellplats som du valde i steg 3.
 
-   En listruta med en lista över de rapportsviter som du valde tidigare i steg 5 visas.
+## Ändra rapportsviten från en cell
 
-1. Välj en annan rapportsvit i listrutan.
+1. Markera rapportsvitens cellplats i bladet.
+1. I Report Builder-navet väljer du länken **[!UICONTROL Report suites from cell]** i **[!UICONTROL Quick edit]**.
+1. Välj en rapportsvit i listrutan **[!UICONTROL Report suite]**.
 
-1. (Valfritt) **Välj Uppdatera datablock** vid ändring.
+   ![Ändra rapportserie från en cell](assets/change-data-view-from-cell.png){zoomable="yes"}
+1. Valfritt, välj **[!UICONTROL Refresh data block(s) upon change]**.
 
-1. Klicka på **Använd**.
-
-   Report Builder uppdaterar datablocket med den valda rapportsviten.
+1. Välj **[!UICONTROL Apply]**. Report Builder uppdaterar datablocket baserat på det valda rapportpaketet.
