@@ -20,7 +20,7 @@ Report Builder-navet är den högra rutan som visas i Excel-arbetsboken när du 
 
 Använd Report Builder nav för att skapa, uppdatera, ta bort och hantera datablock.
 
-Report Builder-hubben innehåller knapparna ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Create]**, ![ TableManage](/help/assets/icons/TableManage.svg) **[!UICONTROL Manage]** och ![Calendar](/help/assets/icons/Calendar.svg) **[!UICONTROL Schedule]** , **[!UICONTROL Commands]**-panelen och **[!UICONTROL Quick edit]**-panelen.
+Report Builder-hubben innehåller knapparna ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Create]**, ![&#x200B; TableManage](/help/assets/icons/TableManage.svg) **[!UICONTROL Manage]** och ![Calendar](/help/assets/icons/Calendar.svg) **[!UICONTROL Schedule]** , **[!UICONTROL Commands]**-panelen och **[!UICONTROL Quick edit]**-panelen.
 
 ![Report Builder-nav](assets/hub51.png){zoomable="yes"}
 
@@ -71,7 +71,7 @@ Länken **Segment** visar en sammanfattningslista över de segment som används 
 >[!MORELIKETHIS]
 >
 >[Välja en rapportsvit](select-report-suite.md)
->[Välj ett datumintervall ](select-date-range.md)
+>[Välj ett datumintervall &#x200B;](select-date-range.md)
 >[Arbeta med filter](work-with-segments.md)
 >
 

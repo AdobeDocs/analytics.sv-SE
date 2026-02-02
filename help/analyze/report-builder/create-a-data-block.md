@@ -114,9 +114,9 @@ Om du vill skapa datablocket väljer du rapportkomponenter och anpassar sedan la
 >[!MORELIKETHIS]
 >
 >[Välja en rapportsvit](select-report-suite.md)
->[Välj ett datumintervall ](select-date-range.md)
->[Filterdimensioner ](filter-dimensions.md)
->[Arbeta med segment ](work-with-segments.md)
+>[Välj ett datumintervall &#x200B;](select-date-range.md)
+>[Filterdimensioner &#x200B;](filter-dimensions.md)
+>[Arbeta med segment &#x200B;](work-with-segments.md)
 >
 
 
