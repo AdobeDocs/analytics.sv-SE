@@ -76,7 +76,7 @@ Vissa [funktioner i den äldre Report Builder stöds inte](convert-workbooks.md#
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Report Builder - översikt](https://video.tv.adobe.com/v/337569?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Report Builder - översikt](https://video.tv.adobe.com/v/3452584?captions=swe&quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 
