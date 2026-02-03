@@ -3,9 +3,9 @@ title: Översikt över klassificeringsuppsättningar
 description: Lär dig hur du använder klassificeringsuppsättningar för att hantera klassificeringsdata. Förstå hur klassificeringsuppsättningar skiljer sig från äldre klassificeringar.
 exl-id: a139b298-1188-42ce-b52f-c71e0ff7c4e3
 feature: Classifications
-source-git-commit: 8a7dd06a26e6a4ad06c224543bc7fdda33ba7aaa
+source-git-commit: e1ccd006336f10b8f843d59cfdcd220064524349
 workflow-type: tm+mt
-source-wordcount: '929'
+source-wordcount: '874'
 ht-degree: 0%
 
 ---
@@ -112,7 +112,7 @@ Den serverdelsarkitektur som lanserats med klassificeringsuppsättningar innehå
 
 * Minskad bearbetningstid (från 72 till 24 timmar).
 * Ett omdesignat användargränssnitt för att hantera klassificeringar.
-* Alternativet att använda klassificeringsdata i Adobe Experience Platform via [Adobe Analytics-källkopplingen för klassificeringsdata](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/connectors/adobe-applications/classifications).
+* Alternativet att använda klassificeringsdata i Adobe Experience Platform via [Adobe Analytics-källkopplingen för klassificeringsdata](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/classifications).
 
 Den serverdelsarkitektur som lanserats med klassificeringsuppsättningar innehåller också flera ändringar:
 
@@ -123,8 +123,3 @@ Den serverdelsarkitektur som lanserats med klassificeringsuppsättningar innehå
 >[!IMPORTANT]
 >
 >Klassificeringsuppsättningens prestanda beror huvudsakligen på antalet unika nyckelvärden som innehåller data. Var försiktig när du har variabler som innehåller ett stort antal unika värden. Speciellt när du kombinerar sådana variabler från flera rapportsviter och dimensioner till en enda klassificeringsuppsättning.
-
-## Begränsningar
-
-* Klassificeringsuppsättningar har ännu inte stöd för regler. Regelfunktioner läggs till i klassificeringsmängdens gränssnitt innan funktionen [äldre regelbyggaren](/help/components/classifications/crb/classification-rule-builder.md) blir otillgänglig.
-* Det finns ingen migrering av äldre klassificeringsregler och konfigurationer till klassificeringsuppsättningar. Ett migreringsverktyg läggs till i gränssnittet för klassificeringsuppsättningar innan de äldre klassificeringsfunktionerna blir otillgängliga.
