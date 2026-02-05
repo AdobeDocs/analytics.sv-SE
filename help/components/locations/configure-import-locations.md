@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: Konfigurera platser för molnimport och -export
 feature: Classifications
 exl-id: 55179868-6228-44ff-835c-f4a7b38e929b
-source-git-commit: ca84a5f807545d7196e2e0e90d3209c32d3fd789
+source-git-commit: 235974d1c7cbf819f846d1af887e3157d462177d
 workflow-type: tm+mt
-source-wordcount: '1691'
+source-wordcount: '1700'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,9 @@ Mer information om hur du visar och tar bort befintliga platser finns i [Platsha
    | [!UICONTROL **Gör platsen tillgänglig för alla användare i organisationen**] | Aktivera det här alternativet om du vill att andra användare i organisationen ska kunna använda platsen.<p>Tänk på följande när du delar platser:</p><ul><li>Platser som du delar kan inte tas bort.</li><li>Delade platser kan bara redigeras av ägaren till platsen.</li><li>Platser kan bara delas om kontot som platsen är kopplad till också delas.</li></ul> |
    | [!UICONTROL **Platskonto**] | Välj det platskonto där du vill skapa den här platsen. Mer information om hur du skapar ett konto finns i [Konfigurera molnimport och exportkonton](/help/components/locations/configure-import-accounts.md). |
 
-1. Om du vill slutföra formuläret för att konfigurera platsen fortsätter du med det avsnitt nedan som motsvarar kontotypen som du valde i fältet [!UICONTROL **Platskonton**]. (Ytterligare äldre kontotyper är också tillgängliga, men rekommenderas inte.)
+1. Om du vill slutföra formuläret för att konfigurera platsen fortsätter du med [Konfigurera en plats](#configure-a-location). Använd informationen i det avsnitt som motsvarar kontotypen som du valde i fältet [!UICONTROL **Platskonton**]. (Ytterligare äldre kontotyper är också tillgängliga, men rekommenderas inte.)
+
+## Konfigurera en plats
 
 ### Amazon S3 Role ARN
 

@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: Konfigurera molnimport- och exportkonton
 feature: Classifications
 exl-id: 40d3d3f1-1047-4c37-8caf-6b0aabaa590a
-source-git-commit: ca84a5f807545d7196e2e0e90d3209c32d3fd789
+source-git-commit: 5a6b1ab3c4ae81b85ec841f1816b0f34ed0df79c
 workflow-type: tm+mt
-source-wordcount: '1488'
+source-wordcount: '1582'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Du måste konfigurera Adobe Analytics med den information som krävs för att ko
 
 Mer information om hur du visar och tar bort befintliga konton finns i [Platshanteraren](/help/components/locations/locations-manager.md).
 
-Så här konfigurerar du ett molnimport- eller exportkonto:
+## Börja skapa eller redigera ett konto från kontosidan
 
 1. I Adobe Analytics väljer du [!UICONTROL **Komponenter**] > [!UICONTROL **Platser**].
 1. På sidan [!UICONTROL Locations] väljer du fliken [!UICONTROL **Platskonton**].
@@ -45,6 +45,12 @@ Så här konfigurerar du ett molnimport- eller exportkonto:
    Om du vill redigera ett befintligt konto letar du reda på det konto du vill redigera och markerar sedan knappen [!UICONTROL **Redigera information**] .
 
    Dialogrutan [!UICONTROL **Lägg till konto**] visas.
+
+1. Fortsätt med [Konfigurera ett platskonto](#configure-a-location-account).
+
+## Konfigurera ett platskonto
+
+Så här konfigurerar du ett molnimport- eller exportkonto när du har börjat skapa eller redigera det:
 
 1. Ange följande information:
 
@@ -154,7 +160,14 @@ Så här konfigurerar du ett molnimport- eller exportkonto:
 
    +++SFTP
 
-   SFTP-stöd för dataflöden finns tillgängligt. Kräver att en SFTP-värd, ett användarnamn och målplatsen innehåller en giltig offentlig RSA- eller DSA-nyckel. Du kan hämta lämplig offentlig nyckel när du skapar flödet.
+   SFTP-stöd för dataflöden finns tillgängligt. Detta kräver att en SFTP-värd, ett användarnamn och målplatsen innehåller en giltig offentlig RSA- eller DSA-nyckel. Du kan hämta lämplig offentlig nyckel när du skapar flödet.
+
+   Gör något av följande när du hämtar den offentliga RSA- eller DSA-nyckeln för dataflöden:
+
+   * Byt namn på filen som laddats ned med den offentliga nyckeln till `authorized_keys` och överför sedan filen till mappen `.ssh` på SFTP-servern.
+
+   * Om du har en befintlig `authorized_keys`-fil som redan innehåller andra nycklar lägger du till nyckeln från Adobe i den befintliga `authorized_keys`-filen, så att du inte skriver över dina befintliga nycklar.
+
 
    +++
 

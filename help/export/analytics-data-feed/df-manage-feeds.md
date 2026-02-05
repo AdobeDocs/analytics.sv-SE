@@ -3,9 +3,9 @@ title: Hantera dataflöden
 description: Lär dig navigera i dataflödesgränssnittet. Ta reda på hur du skapar, redigerar och visar en datafeed.
 feature: Data Feeds
 exl-id: 4d4f0062-e079-48ff-9464-940c6425ad54
-source-git-commit: 5bf3f561c471410e4ce1ca576ba34ea3849b0325
+source-git-commit: 0fa5d471401d78f0564887cdbf08894973bac150
 workflow-type: tm+mt
-source-wordcount: '1222'
+source-wordcount: '1243'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Med dataflödeshanteraren kan du skapa, redigera och ta bort dataflöden för di
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dataflödeshantering](https://video.tv.adobe.com/v/3428568?quality=12&learn=on&captions=swe){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dataflödeshantering](https://video.tv.adobe.com/v/25452?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 
@@ -30,11 +30,11 @@ Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dataflödeshanter
 
    Dataflöden för alla rapportsviter som du har åtkomst till visas. Om inga feeds har konfigurerats visas knappen [!UICONTROL Create New Data Feed] på sidan.
 
-   ![Dataflöden](assets/feeds.png)
+   ![Dataflödeshanteraren](assets/data-feed-manager.png)
 
 ## Skapa en datafeed
 
-Med knappen [!UICONTROL Add] kan du skapa en ny feed. Mer information finns i [Skapa en datafeed](create-feed.md).
+Med knappen **[!UICONTROL Create data feed]** kan du skapa en ny feed. Mer information finns i [Skapa en datafeed](create-feed.md).
 
 ## Redigera en datafeed
 
@@ -45,6 +45,8 @@ Med knappen [!UICONTROL Add] kan du skapa en ny feed. Mer information finns i [S
 1. Markera datafeeden i kolumnen [!UICONTROL **Feed name**].
 
 1. Gör eventuella ändringar i dataflödet.
+
+   Mer information om dataflödesalternativ finns i [Skapa och konfigurera en datafeed](/help/export/analytics-data-feed/create-feed.md#create-and-configure-a-data-feed) i [Skapa en datafeed](/help/export/analytics-data-feed/create-feed.md).
 
    När du uppdaterar avsnittet [!UICONTROL **Mål**] för en datafeed som du redigerar kan du välja ett annat konto och en annan plats att använda för den nya datafeeden i listrutorna [!UICONTROL **Konto**] och [!UICONTROL **Plats**] .
 
@@ -62,9 +64,9 @@ Med knappen [!UICONTROL Add] kan du skapa en ny feed. Mer information finns i [S
 
    * Börja skriva namnet på en feed i sökfältet. Endast de feeds som matchar visas i listan över tillgängliga feeds.
 
-   * Klicka på filterikonen längst till vänster om du vill visa eller dölja filteralternativen. Filter ordnas efter kategori. Du kan komprimera eller utöka filtreringskategorier. Markera kryssrutan bredvid de filter som du vill använda.
+   * Markera filterikonen längst till vänster om du vill visa eller dölja filteralternativen. Filter är ordnade efter kategori, inklusive **[!UICONTROL Report suites]**, **[!UICONTROL Owner]**, **[!UICONTROL Status]** och **[!UICONTROL Tags]**. Du kan komprimera eller utöka filtreringskategorier. Markera kryssrutan bredvid de filter som du vill använda.
 
-![Filter](assets/filters.png)
+     ![Filter](assets/filters.png)
 
 ## Visa dataflödesjobb
 
