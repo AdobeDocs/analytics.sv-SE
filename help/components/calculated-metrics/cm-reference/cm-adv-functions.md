@@ -4,9 +4,9 @@ description: Lär dig mer om avancerade beräkningsmätfunktioner.
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
 role: User
-source-git-commit: 936644c719f46a1327c8a5aa247ed69a14d3da1e
+source-git-commit: b04625391d5d0d6a6a8c7780115bf5b3029af3bb
 workflow-type: tm+mt
-source-wordcount: '4745'
+source-wordcount: '4537'
 ht-degree: 1%
 
 ---
@@ -228,29 +228,29 @@ CDF-Z(-3) ? 0.0013499
 | mått | Det mätvärde som du vill runda av |
 
 
-## Förtroende {#confidence}
+<!-- Only available in CJA 
 
-<!-- markdownlint-disable MD034 -->
+## Confidence {#confidence}
 
 >[!CONTEXTUALHELP]
 >id="functions-waskr-confidence"
->title="Förtroende"
->abstract="Beräkna det tidssäkra förtroendet med WASKR-metoden enligt beskrivningen i [Tidsenhetlig central gränsteori och asymptotiska konfidenssekvenser](https://arxiv.org/pdf/2103.06476)."
+>title="Confidence"
+>abstract="Calculate the any-time-valid confidence using the WASKR method as described in [Time-uniform central limit theory and asymptotic confidence sequences](https://arxiv.org/pdf/2103.06476)."
 
-<!-- markdownlint-enable MD034 -->
+![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL CONFIDENCE(normalizing-container, success-metric, control, significance-treshold)]**
 
-![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL CONFIDENCE(normalizing-container, success-metric, control, significance-treshold)]**
+Calculate the any-time-valid confidence using the WASKR method as described in [Time-uniform central limit theory and asymptotic confidence sequences](https://arxiv.org/pdf/2103.06476).
 
-Beräkna det tidssäkra förtroendet med WASKR-metoden enligt beskrivningen i [Tidsenhetlig central gränsteori och asymptotiska konfidenssekvenser](https://arxiv.org/pdf/2103.06476).
+Confidence is a probabilistic measure of how much evidence there is that a given variant is the same as the control variant. A higher confidence indicates less evidence for the assumption that control and non-control variant have equal performance. 
 
-Förtroende är ett sannolikhetsmått på hur mycket det finns belägg för att en viss variant är densamma som kontrollvarianten. Ett högre förtroende tyder inte på att kontrollvarianten och icke-kontrollvarianten har samma prestanda.
-
-| Argument | Beskrivning |
+| Argument | Description |
 | --- | --- |
-| normalizing-container | Basen (Personer, Sessioner eller Händelser) som ett test körs på. |
-| framgångsmått | Mätvärden eller mätvärden som en användare jämför varianter med. |
-| control | Den variant som alla andra varianter i experimentet jämförs med. Ange namnet på kontrollvariantens dimensionsobjekt. |
-| signifikanströskel | Tröskelvärdet i den här funktionen är inställt på 95 % som standard. |
+| normalizing-container | The basis (People, Sessions, or Events) on which a test is run. |
+| success-metric | The metric or metrics that a user is comparing variants with. |
+| control | The variant that all other variants in the experiment are being compared with. Enter the name of the control variant dimension item. |
+| significance-threshold | The threshold in this function is set to a default of 95%. |
+
+-->
 
 
 ## Förtroende (lägre) {#confidence-lower}
@@ -728,25 +728,24 @@ Mindre än eller lika med. Utdata är antingen 0 (false) eller 1 (true).
 `Metric 1 <= Metric 2`
 
 
+<!-- Only available in CJA 
 
-## Lyft (#lift)
+## Lift (#lift)
 
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-waskr-lift"
->title="Lyft"
->abstract="Höjden på kvoten jämfört med kontrollvärdet."
+>title="Lift"
+>abstract="The lift of the ratio compared to the control value."
 
-<!-- markdownlint-enable MD034 -->
 
-| Argument | Beskrivning |
+| Argument | Description |
 | --- | --- |
-| normalizing-container | Basen (Personer, Sessioner eller Händelser) som ett test körs på. |
-| framgångsmått | Mätvärden eller mätvärden som en användare jämför varianter med. |
-| control | Den variant som alla andra varianter i experimentet jämförs med. Ange namnet på kontrollvariantens dimensionsobjekt. |
+| normalizing-container | The basis (People, Sessions, or Events) on which a test is run. |
+| success-metric | The metric or metrics that a user is comparing variants with. |
+| control | The variant that all other variants in the experiment are being compared with. Enter the name of the control variant dimension item. |
 
-
+-->
 
 ## Linjär regression: Korrelationskoefficient {#linear-regression-correlation-coefficient}
 
