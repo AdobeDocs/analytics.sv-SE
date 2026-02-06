@@ -2,13 +2,13 @@
 title: Klassificeringsuppsättningsregler
 description: Lär dig hur du använder regler för klassificeringsuppsättningar för att definiera regler för klassificeringsdata.
 feature: Classifications
-source-git-commit: cfa8335008548254786e46dfe634229edad5bd54
+exl-id: 604dbd2e-decd-4b18-b170-94337e6cc71a
+source-git-commit: e37b8f3e9508ebaf673c992c03064a43559fb9cf
 workflow-type: tm+mt
 source-wordcount: '1583'
 ht-degree: 0%
 
 ---
-
 
 # Klassificeringsuppsättningsregler
 
