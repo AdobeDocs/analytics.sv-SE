@@ -4,7 +4,7 @@ solution: Experience Cloud
 title: Frågor och svar om Audience Analytics
 feature: Audience Analytics
 exl-id: 86e7967c-030c-44d6-8294-e7e6d41f6fc3
-source-git-commit: a6967c7d4e1dca5491f13beccaa797167b503d6e
+source-git-commit: 3aa8ce6af928693fd08d42be6e7dd2b939566804
 workflow-type: tm+mt
 source-wordcount: '1078'
 ht-degree: 0%
@@ -37,7 +37,7 @@ Dessa gäller inte när du skickar Adobe Analytics-data till Adobe Audience Mana
 
 +++ Hur skapar jag ett Analytics-mål i Audience Manager?
 
-Se [Konfigurera ett analysmål i Adobe Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/destinations/experience-cloud-destinations/create-analytics-destination.html?lang=sv-SE).
+Se [Konfigurera ett analysmål i Adobe Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/destinations/experience-cloud-destinations/create-analytics-destination.html).
 
 +++
 
@@ -53,7 +53,7 @@ Ett Analytics-mål försvinner från ett segments målmappningsavsnitt när du v
 
 +++
 
-Får jag all information från Adobe Audience Manager i Analytics?
++++ Får jag all information från Adobe Audience Manager i Analytics?
 
 Nej, endast data som rör personer som kommer till er webbplats under eller efter det att Audience Manager-målgrupper aktiverats och under/efter det att segmentet kvalificerats.
 
