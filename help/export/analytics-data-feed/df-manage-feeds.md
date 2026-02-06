@@ -3,9 +3,9 @@ title: Hantera dataflöden
 description: Lär dig navigera i dataflödesgränssnittet. Ta reda på hur du skapar, redigerar och visar en datafeed.
 feature: Data Feeds
 exl-id: 4d4f0062-e079-48ff-9464-940c6425ad54
-source-git-commit: 728e807764901ad2bd6834339e5e75348dd5a988
+source-git-commit: d042bdb680504fdbf0ba346e5829713e529bd543
 workflow-type: tm+mt
-source-wordcount: '1243'
+source-wordcount: '1263'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Med dataflödeshanteraren kan du skapa, redigera och ta bort dataflöden för di
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dataflödeshantering](https://video.tv.adobe.com/v/3428568?captions=swe&quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dataflödeshantering](https://video.tv.adobe.com/v/25452?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 
@@ -28,7 +28,7 @@ Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dataflödeshanter
 1. Markera ikonen med nio kvadrater i det övre högra hörnet och välj sedan [!UICONTROL **Analytics**].
 1. Gå till [!UICONTROL **Admin**] > [!UICONTROL **Dataflöden**] i det övre navigeringsfältet.
 
-   Dataflöden för alla rapportsviter som du har åtkomst till visas. Om inga feeds har konfigurerats visas knappen [!UICONTROL Create New Data Feed] på sidan.
+   Dataflöden för alla rapportsviter som du har åtkomst till visas. Om inga feeds har konfigurerats visas knappen **[!UICONTROL Create data feed]** på sidan.
 
    ![Dataflödeshanteraren](assets/data-feed-manager.png)
 
@@ -64,9 +64,11 @@ Med knappen **[!UICONTROL Create data feed]** kan du skapa en ny feed. Mer infor
 
    * Börja skriva namnet på en feed i sökfältet. Endast de feeds som matchar visas i listan över tillgängliga feeds.
 
+     ![Sök](assets/search.png)
+
    * Markera filterikonen längst till vänster om du vill visa eller dölja filteralternativen. Filter är ordnade efter kategori, inklusive **[!UICONTROL Report suites]**, **[!UICONTROL Owner]**, **[!UICONTROL Status]** och **[!UICONTROL Tags]**. Du kan komprimera eller utöka filtreringskategorier. Markera kryssrutan bredvid de filter som du vill använda.
 
-     ![Filter](assets/filters.png)
+     ![Filter](assets/jobs-filter.png)
 
 ## Visa dataflödesjobb
 
@@ -74,9 +76,7 @@ Med knappen **[!UICONTROL Create data feed]** kan du skapa en ny feed. Mer infor
 
 1. Välj fliken [!UICONTROL **Jobb**] om du vill visa enskilda jobb som var och en av dina feeds skapar.
 
-   eller
-
-   Om du vill visa jobbhistoriken för specifika dataflöden markerar du kryssrutan bredvid en datafeed och väljer sedan [!UICONTROL **Jobbhistorik**].
+1. (Valfritt) Om du vill visa jobbhistoriken för specifika dataflöden markerar du kryssrutan bredvid en datafeed och väljer sedan [!UICONTROL **Jobbhistorik**].
 
    Mer information finns i [Hantera datafeedjobb](df-manage-jobs.md).
 
@@ -86,7 +86,7 @@ Med knappen **[!UICONTROL Create data feed]** kan du skapa en ny feed. Mer infor
 
 1. Markera kryssrutan bredvid den datafeed som du vill kopiera och välj sedan [!UICONTROL **Kopiera**].
 
-   Detta gör att du [skapar en ny feed](create-feed.md) med alla inställningar för den aktuella feeden. Det här alternativet är inte synligt om mer än en datafeed har valts.
+   Detta gör att du [skapar en ny feed](create-feed.md) med alla inställningar för den aktuella feeden. Alternativet att kopiera är inte synligt om mer än en datafeed har valts.
 
    När du uppdaterar avsnittet [!UICONTROL **Mål**] för en datafeed som du kopierar kan du välja ett annat konto och en annan plats att använda för den nya datafeeden i listrutorna [!UICONTROL **Konto**] och [!UICONTROL **Plats**] .
 
@@ -96,7 +96,7 @@ Med knappen **[!UICONTROL Create data feed]** kan du skapa en ny feed. Mer infor
 
 ## Pausa en datafeed
 
-När du pausar en datafeed avbryts bearbetningen av feeden och status anges till [!UICONTROL Inactive].
+När du pausar en datafeed avbryts bearbetningen av feeden och status anges till **[!UICONTROL Inactive]**.
 
 När du återaktiverar flödet efter att ha pausat det bearbetas data under den tid som flödet pausas för återfyllningsflöden, men inte för liveflöden. Mer information finns i [Aktivera en datafeed](#activate-a-data-feed).
 
@@ -124,7 +124,7 @@ Så här aktiverar du en datafeed:
 
 ## Ta bort en datafeed
 
-När du tar bort en datafeed anges dess status till [!UICONTROL Deleted]. Dataflöden måste ha statusen Aktiv innan de kan tas bort.
+När du tar bort en datafeed anges dess status till [!UICONTROL Deleted]. Datafeeds måste ha statusen [!UICONTROL Active] innan de kan tas bort.
 
 Så här tar du bort en datafeed:
 
@@ -132,31 +132,40 @@ Så här tar du bort en datafeed:
 
 1. Markera kryssrutan bredvid den datafeed som du vill ta bort och välj sedan [!UICONTROL **Ta bort**].
 
-## Konfigurera kolumner i dataflödeshanteraren
+## Sortera och anpassa kolumner i dataflödeshanteraren
 
-Varje feed som skapas visar flera kolumner med information om den. Välj en kolumnrubrik om du vill sortera den i stigande ordning. Välj en kolumnrubrik igen om du vill sortera den i fallande ordning. Om du inte kan se en viss kolumn klickar du på kolumnikonen i det övre högra hörnet.
+Varje datafeed innehåller flera kolumner med information om feeden. Du kan sortera information i varje kolumn och anpassa de kolumner som visas.
 
-![Kolumnikon](assets/cols.jpg)
+### Sortera kolumner
 
-Följande kolumner är tillgängliga:
+Välj en kolumnrubrik om du vill sortera den i stigande ordning. Välj en kolumnrubrik igen om du vill sortera den i fallande ordning.
 
-* **Feed-namn**: Obligatorisk kolumn. Visar feed-namnet.
-* **Feed-ID**: Visar feed-ID:t, en unik identifierare.
-* **Rapportsviten**: Rapportsviten som matningsreferensdata kommer från.
-* **Rapportsvitens ID**: Rapportsvitens unika identifierare.
-* **Datakolumner**: Vilka datakolumner som är aktiva för feeden. I de flesta fall finns det för många kolumner att visa i det här formatet.
-* **Intervall**: Indikerar om matningen är timme eller dag.
-* **Måltyp**: Måltypen för feeden. Exempel: Amazon S3, GCP eller Azure.
-* **Målvärd**: Platsen där filen placeras.
-* **Ägare**: Användarkontot som skapade feeden.
-* **Status**: Status för feeden.
-   * Aktiv: Matningen är i drift.
-   * Väntande godkännande: I vissa fall måste en feed godkännas av Adobe innan den kan börja generera jobb.
-   * Borttagen: Matningen tas bort.
-   * Slutförd: Flödet har bearbetats färdigt. En ifylld feed kan redigeras, stoppas eller avbrytas.
-   * Väntande: Matningen har skapats men är ännu inte aktiv. Feeds finns kvar i detta tillstånd under en kort övergångsperiod.
-   * Inaktiv: Motsvarar ett pausat eller spärrat läge. Mer information om vad som händer med födofyllnadsflöden och livefeeds när en inaktiv feed återaktiveras finns i [Aktivera en datafeed](#activate-a-data-feed).
-* **Senast ändrad**: Det datum då feeden senast ändrades. Datum och tid visas i rapportsvitens tidszon med GMT-förskjutning.
-* **Startdatum**: Datumet för det första jobbet för denna feed. Datum och tid visas i rapportsvitens tidszon med GMT-förskjutning.
-* **Slutdatum**: Datumet för det senaste jobbet för denna feed. Pågående dataflöden har inget slutdatum.
+### Anpassa kolumner
+
+Så här justerar du synliga kolumner i tabellen:
+
+1. Markera kolumnikonen ![Kolumnikon](assets/customize-columns-icon.png) i det övre högra hörnet.
+
+1. I dialogrutan Anpassa tabell markerar du de kolumner som du vill visa och avmarkerar de kolumner som du vill dölja.
+
+   Följande kolumner är tillgängliga:
+
+   * **Feed-namn**: Obligatorisk kolumn. Visar feed-namnet.
+   * **Feed-ID**: Visar feed-ID:t, en unik identifierare.
+   * **Rapportsviten**: Rapportsviten som matningsreferensdata kommer från.
+   * **Rapportsvitens ID**: Rapportsvitens unika identifierare.
+   * **Intervall**: Indikerar om matningen är timme eller dag.
+   * **Måltyp**: Måltypen för feeden. Exempel: Amazon S3, GCP eller Azure.
+   * **Mål**: Platsen där filen placeras.
+   * **Ägare**: Användarkontot som skapade feeden.
+   * **Status**: Status för feeden.
+      * Aktiv: Matningen är i drift.
+      * Väntande godkännande: I vissa fall måste en feed godkännas av Adobe innan den kan börja generera jobb.
+      * Borttagen: Matningen tas bort.
+      * Slutförd: Flödet har bearbetats färdigt. En ifylld feed kan redigeras, stoppas eller avbrytas.
+      * Väntande: Matningen har skapats men är ännu inte aktiv. Feeds finns kvar i detta tillstånd under en kort övergångsperiod.
+      * Inaktiv: Motsvarar ett pausat eller spärrat läge. Mer information om vad som händer med födofyllnadsflöden och livefeeds när en inaktiv feed återaktiveras finns i [Aktivera en datafeed](#activate-a-data-feed).
+   * **Senast ändrad**: Det datum då feeden senast ändrades. Datum och tid visas i rapportsvitens tidszon med GMT-förskjutning.
+   * **Startdatum**: Datumet för det första jobbet för denna feed. Datum och tid visas i rapportsvitens tidszon med GMT-förskjutning.
+   * **Slutdatum**: Datumet för det senaste jobbet för denna feed. Pågående dataflöden har inget slutdatum.
 

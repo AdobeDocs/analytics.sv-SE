@@ -3,9 +3,9 @@ title: Skapa en datafeed
 description: Lär dig hur du skapar en datafeed och om filinformationen som ska skickas till Adobe.
 feature: Data Feeds
 exl-id: 36c8a40e-6137-4836-9d4b-bebf17b932bc
-source-git-commit: e37b8f3e9508ebaf673c992c03064a43559fb9cf
+source-git-commit: 9935b7ea08f5451d04431ae638ae0d24af32c07c
 workflow-type: tm+mt
-source-wordcount: '2032'
+source-wordcount: '2052'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,10 @@ ht-degree: 0%
 När du skapar en datafeed får du följande från Adobe:
 
 * Information om målet dit du vill skicka rådatafiler
+
 * De data som du vill inkludera i varje fil
+
+* Frekvensen för hur ofta dataflödet ska skickas (inklusive uppslagsfönstret om du väljer att inkludera träffar som kommer senare)
 
 Innan du skapar en datafeed är det viktigt att du har en grundläggande förståelse för dataflöden och att du ser till att alla krav uppfylls. Mer information finns i [Översikt över dataflöden](data-feed-overview.md).
 
@@ -81,7 +84,7 @@ Innan du skapar en datafeed är det viktigt att du har en grundläggande först�
    | [!UICONTROL **Ersätt strängar för operativsystem**] | När du samlar in data kan vissa tecken (till exempel nya rader) orsaka problem. Välj det här alternativet om du vill att dessa tecken ska tas bort från feed-filerna.<p>Det här alternativet identifierar följande strängsekvenser som är inbäddade i kunddata och ersätter dem med ett blanksteg:</p> <ul><li>**Windows:** CRLF, CR eller TAB</li><li>**Mac och Linux:** \n, \r eller \t</li></ul> |
    | [!UICONTROL **Aktivera dynamiska sökningar**] | Med dynamiska sökningar kan du ta emot ytterligare sökfiler i din datafeed som annars inte är tillgänglig. Med den här inställningen kan följande uppslagstabeller skickas med varje dataflödesfil:<ul><li> **Transportföretagets namn**</li><li>**Mobilattribut**</li><li>**Operativsystemtyp**</li></ul><p>Mer information finns i [Dynamiska sökningar](/help/export/analytics-data-feed/c-df-contents/dynamic-lookups.md).</p> |
    | **Tillåt sena träffar** | Historiska data kan komma när ett datafeedjobb har avslutat bearbetningen för en viss timme eller dag, till exempel genom tidsstämplade träffar eller datakällor.<p>Välj det här alternativet om du vill inkludera data som har tagits emot efter att datafeedjobbet har slutfört databearbetningen inom den angivna rapporteringsfrekvensen (vanligtvis dagligen eller timvis). När det här alternativet är aktiverat tittar dataflödet varje gång data bearbetas i de senaste träffar som inträffat och grupperar dem i nästa dataflödesfil som skickas.</p><p>Mer information finns i [Sena träffar](/help/export/analytics-data-feed/c-df-contents/late-arriving-hits.md).</p> |
-   | **Fönstret** för återsökning (för sena träffar) | Det här alternativet visas när alternativet **[!UICONTROL Allow late-arring hits]** är aktiverat. Markera uppslagsfönstret om du vill begränsa tidsramen för sena träffar. Välj **[!UICONTROL Unlimited]** om du vill tillåta alla sena träffar, oavsett hur sena de är. Du kan välja ett förinställt intervall, t.ex. **[!UICONTROL 1 hour]**, **[!UICONTROL 2 hours]**, **[!UICONTROL 1 week]**, **[!UICONTROL 2 weeks]** o.s.v. Du kan också välja **[!UICONTROL Custom lookback window]** och sedan ange ett uppslagsfönster i fältet **[!UICONTROL Custom Lookback]** som är högst 26 280 timmar. |
+   | **Fönstret** för återsökning (för sena träffar) | Det här alternativet visas när alternativet **[!UICONTROL Allow late-arriving hits]** är aktiverat. Markera uppslagsfönstret om du vill begränsa tidsramen för sena träffar. Välj **[!UICONTROL Unlimited]** om du vill tillåta alla sena träffar, oavsett hur sena de är. Du kan välja ett förinställt intervall, t.ex. **[!UICONTROL 1 hour]**, **[!UICONTROL 2 hours]**, **[!UICONTROL 1 week]**, **[!UICONTROL 2 weeks]** o.s.v. Du kan också välja **[!UICONTROL Custom lookback window]** och sedan ange ett uppslagsfönster i fältet **[!UICONTROL Custom Lookback]** som är högst 26 280 timmar. |
 
 1. I avsnittet [!UICONTROL **Datastruktur**], i fältet **[!UICONTROL Report suite]**, väljer du den källrapportsvit som innehåller de data som du vill exportera. <p>Tänk på följande när du väljer en rapportserie:</p> <ul><li>Om flera datafeeds skapas för samma rapportserie måste varje datafeed ha olika kolumndefinitioner.</li><li>Endast källrapportsviter stöder dataflöden. Virtuella rapportsviter stöds inte.</li><li>Listan med tillgängliga kolumner beror på vilket inloggningsföretag den valda rapportsviten tillhör. Om du ändrar rapportsviten kan listan med tillgängliga kolumner ändras. </li></ul>
 
@@ -135,7 +138,7 @@ Innan du skapar en datafeed är det viktigt att du har en grundläggande först�
    | Fält | Funktion |
    |---------|----------|
    | [!UICONTROL **Konto**] | Gör något av följande:<ul><li>**Använd ett befintligt konto:** Välj den nedrullningsbara menyn bredvid fältet **[!UICONTROL Account]**. Du kan också börja skriva kontonamnet och sedan välja det i listrutan. <p>Konton är bara tillgängliga för dig om du har konfigurerat dem eller om de delas med en organisation som du är en del av.</p></li><li>**Skapa ett nytt konto:** Välj **[!UICONTROL Add new]** under fältet **[!UICONTROL Account]**. Mer information om hur du konfigurerar kontot finns i [Konfigurera ett platskonto](/help/components/locations/configure-import-accounts.md#configure-a-location-account) i [Konfigurera molnimport- och exportkonton](/help/components/locations/configure-import-accounts.md).</li></ul> |
-   | [!UICONTROL **Plats**] | Gör något av följande:<ul><li>**Använd en befintlig plats:** Välj den nedrullningsbara menyn bredvid fältet **[!UICONTROL Location]**. Du kan också börja skriva platsnamnet och sedan välja det i listrutan.</li><li>**Skapa en ny plats:** Välj **[!UICONTROL Add new]** under fältet **[!UICONTROL Location]**. Mer information om hur du konfigurerar platsen finns i [Konfigurera en plats](/help/components/locations/configure-import-locations.md#configure-a-location) i [Konfigurera platser för molnimport och -export](/help/components/locations/configure-import-locations.md). |
+   | [!UICONTROL **Plats**] | Gör något av följande:<ul><li>**Använd en befintlig plats:** Välj den nedrullningsbara menyn bredvid fältet **[!UICONTROL Location]**. Du kan också börja skriva platsnamnet och sedan välja det i listrutan.</li><li>**Skapa en ny plats:** Välj **[!UICONTROL Add new]** under fältet **[!UICONTROL Location]**. Mer information om hur du konfigurerar platsen finns i [Konfigurera en plats](/help/components/locations/configure-import-locations.md#configure-a-location) i [Konfigurera platser för molnimport och -export](/help/components/locations/configure-import-locations.md).</li></ul> |
    | [!UICONTROL **Meddela när det är klart**] | Ange en eller flera e-postadresser dit ett meddelande ska skickas efter att dataflödet har skickats eller misslyckats att skicka. Flera e-postadresser måste avgränsas med kommatecken. |
 
 1. Välj **[!UICONTROL Save]**.
@@ -146,13 +149,13 @@ Med mallar kan du återanvända samma kolumner för framtida dataflöden som du 
 
 När du hanterar mallar kan du skapa nya mallar, använda mallar som redan har skapats, kopiera mallar, redigera mallar och ta bort mallar.
 
-[!UICONTROL **Admin**] > [!UICONTROL **Dataflöden**] > **[!UICONTROL Manage templates]**
+**[!UICONTROL Admin]** > **[!UICONTROL Data feeds]** > **[!UICONTROL Manage templates]**
 
 ![Hantera kolumnmallar](assets/data-feed-template-manage.png)
 
 ### Skapa en kolumnmall
 
-När du skapar flera dataflöden som använder samma kolumner bör du skapa kolumnmallar i Adobe. Alla kolumnmallar du skapar kan användas av alla i organisationen.
+När du skapar flera dataflöden som använder samma kolumner bör du skapa kolumnmallar i Adobe. Alla kolumnmallar du skapar är tillgängliga för alla i organisationen.
 
 Så här skapar du en kolumnmall:
 
