@@ -6,9 +6,9 @@ feature: Report Builder
 type: Documentation
 solution: Analytics
 exl-id: ff9011b2-fc18-456f-81dc-151b9e4fccd2
-source-git-commit: d7832dc56eb680f57a6875cf32e29fd5a8858098
+source-git-commit: 504cce24babdd8aefa5f819433139671904f2e1e
 workflow-type: tm+mt
-source-wordcount: '614'
+source-wordcount: '681'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Som en del av övergången till en ny Report Builder-funktion kan du snabbt konv
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Konvertera arbetsböcker](https://video.tv.adobe.com/v/3446186?captions=swe&quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Konvertera arbetsböcker](https://video.tv.adobe.com/v/3434957?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 
@@ -38,13 +38,7 @@ Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Konvertera arbets
 
 Om du vill öppna en äldre arbetsbok kan du:
 
-* Öppna en äldre arbetsbok direkt från den lokala datorn eller nätverket. När den äldre arbetsboken är öppen i Excel:
-
-   1. Välj ![AdobeLogoRedonWhite](/help/assets/icons/AdobeLogoRedOnWhite.svg) **[!UICONTROL Report Builder]** i menyfliksområdet i Excel.
-   1. Välj **[!UICONTROL Login]** och logga in på Report Builder.
-   1. [konvertera sedan den äldre arbetsboken](#convert-a-workbook).
-
-* Öppna en schemalagd äldre arbetsbok från fliken **[!UICONTROL Schedule]** i [Report Builder-hubben](report-builder-hub.md). Så här gör du:
+* Öppna en schemalagd äldre arbetsbok från fliken **[!UICONTROL Schedule]** i [Report Builder-hubben](report-builder-hub.md). Detta är den metod som rekommenderas för schemalagda äldre arbetsböcker. Du får alternativet att använda schemat som är associerat med den äldre arbetsboken så snart du [schemalägger den konverterade äldre arbetsboken](#schedule-a-converted-legacy-workbook).
 
    1. Öppna Excel och välj ![AdobeLogoRedonWhite](/help/assets/icons/AdobeLogoRedOnWhite.svg) **[!UICONTROL Report Builder]** i menyfliksområdet i Excel.
 
@@ -56,6 +50,13 @@ Om du vill öppna en äldre arbetsbok kan du:
       ![Äldre arbetsböcker](assets/upgrade-legacy-schedule.png)
 
    1. Välj ![SelectBox](/help/assets/icons/SelectBox.svg) för den schemalagda arbetsbok som du vill konvertera från listan och välj ![Hämta](/help/assets/icons/Download.svg). Arbetsboken hämtas och öppnas i ett nytt fönster i Excel. Du kan nu [konvertera den gamla Report Builder-arbetsboken](#convert-a--workbook).
+
+
+* Öppna en äldre arbetsbok direkt från den lokala datorn eller nätverket. När du använder den här metoden erbjuds du inte att använda det schema som kan vara kopplat till den äldre arbetsboken. <br/>När den äldre arbetsboken är öppen i Excel:
+
+   1. Välj ![AdobeLogoRedonWhite](/help/assets/icons/AdobeLogoRedOnWhite.svg) **[!UICONTROL Report Builder]** i menyfliksområdet i Excel.
+   1. Välj **[!UICONTROL Login]** och logga in på Report Builder.
+   1. [konvertera sedan den äldre arbetsboken](#convert-a-workbook).
 
 
 ## Konvertera en äldre arbetsbok
@@ -89,14 +90,14 @@ Så här konverterar du din gamla arbetsbok:
 
      ![Excel Report Builder - arbetsbok för uppgraderingsrapport](assets/upgrade-report.png)
 
-Du kan nu [hantera datablocket](/help/analyze/report-builder/manage-reportbuilder.md).
+Du kan nu [hantera datablocken](/help/analyze/report-builder/manage-reportbuilder.md) i arbetsboken. Dessa datablock är resultatet av uppgraderingen och ersätter dina tidigare förfrågningar från Report Builder.
 
 
 ## Schemalägg en konverterad äldre arbetsbok
 
 Du kan använda schemainformationen från den äldre arbetsboken som du har hämtat och öppnat från fliken **[!UICONTROL Schedule]** i Report Builder-hubben. Det här alternativet är inte tillgängligt för äldre arbetsböcker med schemainformation som du öppnar från den lokala datorn eller nätverket.
 
-1. Schemalägg en arbetsbok. Så här schemalägger du en konverterad äldre arbetsbok med ett äldre schema:
+1. Så här schemalägger du en konverterad äldre arbetsbok med ett äldre schema:
 
    * Välj **[!UICONTROL Send workbook]** från Report Builder-navet, eller
    * Välj **[!UICONTROL Schedule workbook]** på fliken **[!UICONTROL Workbooks]** som finns på fliken **[!UICONTROL Schedules]** i Report Builder.
