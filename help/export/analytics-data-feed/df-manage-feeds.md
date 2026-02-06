@@ -3,7 +3,7 @@ title: Hantera dataflöden
 description: Lär dig navigera i dataflödesgränssnittet. Ta reda på hur du skapar, redigerar och visar en datafeed.
 feature: Data Feeds
 exl-id: 4d4f0062-e079-48ff-9464-940c6425ad54
-source-git-commit: 0fa5d471401d78f0564887cdbf08894973bac150
+source-git-commit: 728e807764901ad2bd6834339e5e75348dd5a988
 workflow-type: tm+mt
 source-wordcount: '1243'
 ht-degree: 0%
@@ -17,7 +17,7 @@ Med dataflödeshanteraren kan du skapa, redigera och ta bort dataflöden för di
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dataflödeshantering](https://video.tv.adobe.com/v/3428568?captions=swe&quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dataflödeshantering](https://video.tv.adobe.com/v/25452?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 
@@ -76,7 +76,7 @@ Med knappen **[!UICONTROL Create data feed]** kan du skapa en ny feed. Mer infor
 
    eller
 
-   Om du vill visa jobb för specifika dataflöden markerar du kryssrutan bredvid en eller flera dataflöden och väljer sedan [!UICONTROL **Jobbhistorik**].
+   Om du vill visa jobbhistoriken för specifika dataflöden markerar du kryssrutan bredvid en datafeed och väljer sedan [!UICONTROL **Jobbhistorik**].
 
    Mer information finns i [Hantera datafeedjobb](df-manage-jobs.md).
 

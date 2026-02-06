@@ -3,10 +3,10 @@ title: Hantera dataflödesjobb
 description: Lär dig hur du hanterar enskilda jobb i dataflöden. Navigera i gränssnittet, använd filter och sök, och hitta kolumndefinitioner.
 feature: Data Feeds
 exl-id: b17e333e-290f-42e4-b304-1e34282237a7
-source-git-commit: 0eef1b1269dcfbc7648127602bdfe24d4789f4b7
+source-git-commit: 728e807764901ad2bd6834339e5e75348dd5a988
 workflow-type: tm+mt
-source-wordcount: '504'
-ht-degree: 0%
+source-wordcount: '801'
+ht-degree: 1%
 
 ---
 
@@ -14,49 +14,60 @@ ht-degree: 0%
 
 Jobb är enskilda uppgifter som returnerar en komprimerad fil. De skapas och styrs av feeds.
 
-Få åtkomst till jobbhantering för datafeed genom att följa dessa steg:
+Så här hanterar du dataflödesjobb:
 
-1. Logga in på [ExperienceCloud.adobe.com](https://experiencecloud.adobe.com).
-2. Klicka på menyn med nio rutnät i det övre högra hörnet och klicka sedan på [!UICONTROL Analytics].
-3. Klicka på [!UICONTROL Admin] > [!UICONTROL Data Feeds] på den översta menyn.
-4. Klicka på fliken Jobb uppe.
+1. Logga in på [experiencecloud.adobe.com](https://experiencecloud.adobe.com) med inloggningsuppgifterna för ditt Adobe ID.
 
-![Menyn Datafeed](assets/AdminMenu.png)
+1. Markera ikonen med nio kvadrater i det övre högra hörnet och välj sedan [!UICONTROL **Analytics**].
 
-## Navigera i gränssnittet
+1. Gå till [!UICONTROL **Admin**] > [!UICONTROL **Dataflöden**] i det övre navigeringsfältet.
 
-Ett datafeedjobb är en enda instans där Adobe bearbetar och returnerar en komprimerad fil för ett visst rapportfönster. Jobbhanteraren ger en förfinad vy för att se status för enskilda jobb.
+   Dataflöden för alla rapportsviter som du har åtkomst till visas. Om inga feeds har konfigurerats visas knappen [!UICONTROL Create New Data Feed] på sidan.
 
-![Jobb](assets/jobs.jpg)
+   ![Dataflödeshanteraren](assets/data-feed-manager.png)
 
-### Filter och sökning
+1. (Valfritt) Markera kryssrutan bredvid dataflödet som innehåller de jobb som du vill visa och välj sedan [!UICONTROL **Jobbhistorik**].
 
-Använd filter och sök för att hitta exakt det jobb du letar efter.
+   Mer information finns i [Visa jobbhistorik för en datafeed](#view-job-history-for-a-data-feed).
 
-Klicka på filterikonen längst till vänster om du vill visa eller dölja filteralternativen. Filter ordnas efter kategori. Klicka på avrivningen om du vill komprimera eller utöka filterkategorierna. Klicka i kryssrutan för att använda det filtret.
+## Filtrera och söka
 
-![Filter](assets/jobs-filter.jpg)
+Du kan filtrera och söka efter exakt det jobb du letar efter.
+
+Klicka på filterikonen längst till vänster om du vill visa eller dölja filteralternativen. Filter ordnas efter kategori. Klicka på avrivningen om du vill komprimera eller utöka filterkategorierna. Klicka i kryssrutan för att använda ett filter.
+
+![Filter](assets/jobs-filter.png)
 
 Använd sökning för att hitta ett jobb efter namn.
 
-![Sök](assets/search.jpg)
+![Sök](assets/search.png)
 
-### Feeds och jobb
+## Sortera och anpassa kolumner
 
-Klicka på fliken Feeds för att visa överliggande feeds som skapar dessa jobb. Se [Hantera datafeeds](df-manage-feeds.md).
+Varje jobb visar flera kolumner med information om jobbet. Du kan sortera information i varje kolumn och anpassa de kolumner som visas.
 
-### Kolumner
+### Sortera kolumner
 
-Varje jobb visar flera kolumner med information om det. Klicka på en kolumnrubrik om du vill sortera den i stigande ordning. Klicka på en kolumnrubrik igen för att sortera den i fallande ordning. Om du inte kan se en viss kolumn klickar du på kolumnikonen i det övre högra hörnet.
+Välj en kolumnrubrik om du vill sortera den i stigande ordning. Välj en kolumnrubrik igen om du vill sortera den i fallande ordning.
 
-![Kolumnikon](assets/job-cols.jpg)
+### Anpassa kolumner
 
+Så här justerar du synliga kolumner i tabellen:
+
+1. Markera kolumnikonen ![Kolumnikon](assets/customize-columns-icon.png) i det övre högra hörnet.
+
+1. I dialogrutan Anpassa tabell markerar du de kolumner som du vill visa och avmarkerar de kolumner som du vill dölja.
+
+   Följande kolumner är tillgängliga:
+
+* **Feed-namn**: Obligatorisk kolumn. Visar feed-namnet. Jobb som skapas av samma feed har samma feed-namn.
 * **Feed-ID**: Visar feed-ID:t, en unik identifierare. Jobb som skapas av samma feed har samma feed-ID.
-* **Jobb-ID**: En unik identifierare för jobbet. Alla jobb har ett annat jobb-ID.
-* **Feed-namn**: Obligatorisk kolumn. Visar feed-namnet. Jobb som skapas av samma feed har samma flödesnamn.
 * **Rapportsviten**: Rapportsviten som jobbet refererar till data från.
-* **Report Suite-ID**: Rapportsvitens unika identifierare.
-* **Starttid**: Den tidpunkt då jobbet startades. Datum och tid visas i rapportsvitens tidszon med GMT-förskjutning. Dagliga matningar börjar vanligtvis nära midnatt i rapportsvitens tidszon.
+* **Rapportsvitens ID**: Rapportsvitens unika identifierare.
+* **Intervall**: Intervallet för feeden.
+* **Måltyp**: Måltypen för feeden.
+* **Mål**: Flödets mål.
+* **Ägare**: Ägaren till feeden.
 * **Status**: Status för feeden.
    * Väntar på data: Jobbet är i drift och data för rapportfönstret samlas in.
    * Bearbetning: Jobbet skapar datafilerna och förbereder att skicka dem.
@@ -64,5 +75,66 @@ Varje jobb visar flera kolumner med information om det. Klicka på en kolumnrubr
    * Misslyckades: Jobbet slutfördes inte. Se [Felsöka datafeeds](troubleshooting.md) för att fastställa orsaken till felet.
    * Väntar på export: Data för rapportfönstret har ännu inte bearbetats fullständigt.
    * Inga data: Det finns inga data i rapportsviten för det begärda rapportfönstret.
-* **Slutförandetid**: Tiden när jobbet slutfördes. Datum och tid visas i rapportsvitens tidszon med GMT-förskjutning.
-* **Begärt datum**: Filens rapportfönster. Dagliga matningar visar vanligtvis 00:00 - 23:59 med en GMT-förskjutning, vilket anger en heldag baserat på rapportsvitens tidszon. Timmatningar visar den individuella timmen jobbet är avsett för.
+* **Senast ändrad**: Den tidpunkt då feeden senast ändrades.
+* **Startdatum**: Den tidpunkt då jobbet startades. Datum och tid visas i rapportsvitens tidszon med GMT-förskjutning. Dagliga matningar börjar vanligtvis nära midnatt i rapportsvitens tidszon.
+* **Slutdatum**: Den tidpunkt då jobbet avslutades. Datum och tid visas i rapportsvitens tidszon med GMT-förskjutning.
+
+## Visa jobbhistorik för en datafeed
+
+Du kan visa en lista över tidigare datafeedjobb för en given datafeed, tillsammans med information om varje jobb.
+
+Så här visar du jobbhistorik för en datafeed:
+
+1. I Adobe Analytics väljer du [!UICONTROL **Admin**] > [!UICONTROL **Dataflöden**].
+
+   ![Dataflödeshanteraren](assets/data-feed-manager.png)
+
+1. Markera kryssrutan bredvid den datafeed vars jobbhistorik du vill visa och välj sedan [!UICONTROL **Jobbhistorik**].
+
+   Jobbhistorik för datafeed visas, med följande information tillgänglig om varje jobb (markera kolumnikonen för att lägga till kolumner som inte är synliga som standard):
+
+   * **[!UICONTROL Request period begin]**
+
+   * **[!UICONTROL Request period end]**
+
+   * **[!UICONTROL Scheduled]**
+
+   * **[!UICONTROL Started]**
+
+   * **[!UICONTROL Finished]**
+
+   * **[!UICONTROL Run #]**
+
+   * **[!UICONTROL Status]**
+
+   * **[!UICONTROL Error code]**
+
+   * **[!UICONTROL Error message]**
+
+## Återställa datafeedjobb
+
+Du kan skicka om ett datafeedjobb om du vill skicka datafeedfilen igen med exakt samma data och bearbetning som när den ursprungligen skickades. Du kan också [bearbeta om ett datafeedjobb](#reprocess-data-feed-jobs).
+
+Så här skickar du om ett eller flera datafeedjobb:
+
+1. I Adobe Analytics väljer du [!UICONTROL **Admin**] > [!UICONTROL **Dataflöden**].
+
+1. Markera kryssrutan bredvid den datafeed som innehåller de jobb som du vill skicka om och välj sedan [!UICONTROL **Jobbhistorik**].
+
+1. Markera kryssrutan bredvid ett eller flera datafeedjobb och välj sedan **[!UICONTROL Resend]**. <!-- What does the status need to be? Error, ... -->
+
+   ![Bearbeta om datafeedjobb](assets/data-feed-job-resend.png)
+
+## Bearbeta datafeedjobb igen
+
+Du kan bearbeta om källdata för ett datafeedjobb och skicka det igen med de ombearbetade data. Du kan också [skicka om ett datafeedjobb](#resend-data-feed-jobs).
+
+Så här bearbetar du om ett eller flera datafeedjobb:
+
+1. I Adobe Analytics väljer du [!UICONTROL **Admin**] > [!UICONTROL **Dataflöden**].
+
+1. Markera kryssrutan bredvid den datafeed som innehåller de jobb som du vill bearbeta igen och välj sedan [!UICONTROL **Jobbhistorik**].
+
+1. Markera kryssrutan bredvid ett eller flera datafeedjobb och välj sedan **[!UICONTROL Reprocess]**. <!-- What does the status need to be? Error, ... -->
+
+   ![Bearbeta om datafeedjobb](assets/data-feed-job-reprocess.png)
