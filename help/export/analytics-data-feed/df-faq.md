@@ -4,9 +4,9 @@ keywords: Datautmatning;jobb;förkolumn;efterkolumn;skiftlägeskänslighet
 title: Vanliga frågor om dataflöden
 feature: Data Feeds
 exl-id: 1bbf62d5-1c6e-4087-9ed9-8f760cad5420
-source-git-commit: a6967c7d4e1dca5491f13beccaa797167b503d6e
+source-git-commit: 470ab0dfa76681d73f847ba9c2aecaf64804540c
 workflow-type: tm+mt
-source-wordcount: '1462'
+source-wordcount: '1488'
 ht-degree: 0%
 
 ---
@@ -67,21 +67,21 @@ I nästan alla fall identifierar sammanfogningen av `hitid_high` och `hitid_low`
 
 ## Varför saknas information i domänkolumnen för vissa bärare? {#domain}
 
-Vissa mobiloperatörer (som T-Mobile och O1) tillhandahåller inte längre domäninformation för omvända DNS-sökningar. Därför är dessa data inte tillgängliga för domänrapportering.
+Vissa mobiloperatörer (till exempel T-Mobile och O1) tillhandahåller inte längre domäninformation för omvända DNS-sökningar. Därför är dessa data inte tillgängliga för domänrapportering.
 
-## Varför kan jag inte extrahera&quot;timvisa&quot; filer från data som är mer än 7 dagar gamla? {#hourly}
+## Varför kan jag inte extrahera timfiler för äldre datum? {#hourly}
 
-För data som är äldre än 7 dagar kombineras en dags&quot;timvisa&quot;-filer till en enda&quot;daglig&quot; fil.
+För att optimera lagring och bearbetning konsoliderar Adobe regelbundet timexporter till dagliga filer. På grund av hur och när dessa konsolideringar körs går det inte att förutsäga hur lång tid som kommer att skrivas ut för datum som är äldre än 10 dagar. För ett givet datum kan du se en blandning av timfiler för några timmar och en konsoliderad daglig fil för andra. Data som konsolideras till en daglig fil tilldelas vanligtvis till timmen `00`, vilket kan lämna andra timmar tomma när dessa timmar begärs direkt.
 
-Exempel: En ny datafeed skapas den 9 mars 2021 och data från 1 januari 2021 till 9 mars levereras som &quot;Varje timme&quot;. Filerna&quot;Varje timme&quot; före den 2 mars 2021 kombineras dock i en enda&quot;daglig&quot; fil. Du kan bara extrahera&quot;timvisa&quot; filer från data som är mindre än 7 dagar gamla från det datum då de skapades. I detta fall från den 2 mars till den 9 mars.
+För bakåtfyllningar som är äldre än 10 dagar rekommenderar Adobe starkt att man använder daglig granularitet för att säkerställa fullständiga och förutsägbara resultat. Om du måste begära timgranularitet för äldre dagar ska du alltid inkludera timmen `00` i din begäran för att undvika att konsoliderade timdata saknas.
 
 ## Vilken inverkan har Daylight Savings på timdataflöden? {#dst}
 
-För vissa tidszoner ändras tiden två gånger per år på grund av DST-definitioner (sommartid). Datafeeds följer den tidszon som rapportsviten har konfigurerats för. Om tidszonen för rapportsviten är en som inte använder DST, fortsätter filleveransen normalt som någon annan dag. Om tidszonen för rapportsviten är en som använder DST, ändras filleveransen för den timme då tidsändringen inträffar (vanligen 02:00).:00
+För vissa tidszoner ändras tiden två gånger per år på grund av DST-definitioner (sommartid). Datafeeds följer den tidszon som rapportsviten har konfigurerats för. Om tidszonen för rapportsviten är en som inte använder DST, fortsätter filleveransen normalt som någon annan dag. Om tidszonen för rapportsviten är en som använder DST, ändras filleveransen för den timme då tidsändringen inträffar (vanligen 2:00 AM).
 
-När man gör STD -> DST-övergångar (&quot;Spring Forward&quot;) får man bara 23 filer. Timmen som hoppas över i DST-övergången utelämnas. Om övergången till exempel sker vid 2.0 får de en fil för 1:00 timme och en fil för 3:00 timme. Det finns ingen 2:00-fil eftersom den vid 2:00 STD blir 3:00 DST.
+När du gör STD -> DST-övergångar (gör en häpnadsväckande övergång) får du 23 filer. Timmen som hoppas över i DST-övergången utelämnas. Om övergången till exempel sker kl. 2 får du en fil för 1:00 timme och en fil för 3:00 timme. Det finns ingen 2:00-fil eftersom den vid 2:00 STD blir 3:00 DST.
 
-När man gör DST -> STD-övergångar (&quot;Fall Back&quot;) får man 24 filer. Övergångstimmen innehåller emellertid faktiskt två timmars data. Om övergången till exempel sker vid 2:00 am fördröjs filen för 1:00 med en timme, men den innehåller data i två timmar. Den innehåller data från 1:00 DST till 2:00 STD (som skulle ha varit 3:00 DST). Nästa fil börjar på :00 STD.
+När du gör DST -> STD-övergångar (återfall) får du 24 filer. Övergångstimmen innehåller emellertid faktiskt två timmars data. Om övergången till exempel sker på :00 förskjuts filen för :00 med en timme, men den innehåller data i två timmar. Den innehåller data från 1:00 DST till 2:00 STD (som skulle ha varit 3:00 DST). Nästa fil börjar på :00 STD.
 
 ## Hur hanterar Analytics FTP-överföringsfel? {#ftp-failure}
 
