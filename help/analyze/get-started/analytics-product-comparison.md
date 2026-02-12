@@ -3,10 +3,10 @@ description: Systemkrav och en jämförelse mellan Analysis Workspace, Report Bu
 title: Produktjämförelse och krav för analyser
 exl-id: 5adc6c10-cbbb-48d5-a7ab-367cbaff5e8a
 feature: Analytics Basics
-source-git-commit: ca84a5f807545d7196e2e0e90d3209c32d3fd789
+source-git-commit: c4cd152d021615e32a690f0591575639c3939dbc
 workflow-type: tm+mt
-source-wordcount: '338'
-ht-degree: 17%
+source-wordcount: '502'
+ht-degree: 12%
 
 ---
 
@@ -38,3 +38,4 @@ Mer information om vilken Adobe Analytics-produkt som ska användas finns i [Vil
 | **Schemalagd leverans** | Ja | Ja | Ja | Ja | Nej |
 | **Leveransmål** | E-post | E-post, FTP, SFTP, [publicera till Microsoft PowerBI](/help/analyze/legacy-report-builder/c-publish-power-bi/power-bi.md) | Amazon S3, Google Cloud Platform, Azure SAS, Azure RBAC och e-post | Amazon S3, Azure RBAC, Azure SAS och Google Cloud Platform | - |
 | **Tidsbearbetning för virtuell rapportsserie** <br> [Läs mer](/help/components/vrs/vrs-report-time-processing.md) | Ja | Nej | Nej | Nej | Ja |
+| **Geo- och teknikrapporter** | Ja <p>Mittvärden används i stället för postfält. Besök först-träffslogiken baseras på `post_cust_hit_time_gmt` i stället för på `visit_page_num=1`. Resultaten kan skilja sig från andra verktyg om IP-adressen ändras mitt på besöket, träffar tas emot i fel ordning eller besök över månadsgränserna.</p> | Ja <p>Mittvärden används i stället för postfält. Besök först-träffslogiken baseras på `post_cust_hit_time_gmt` i stället för på `visit_page_num=1`. Resultaten kan skilja sig från andra verktyg om IP-adressen ändras mitt på besöket, träffar tas emot i fel ordning eller besök över månadsgränserna.</p> | Ja <p>Använder postvärden och `visit_page_num=1` för att fastställa den första träffen av besöket. Tillämpar värdet från den första träffen på alla träffar i besöket för dessa dimensioner.</p> | Ja <p>Använder postvärden och `visit_page_num=1` för att fastställa den första träffen av besöket. Tillämpar värdet från den första träffen på alla träffar i besöket för dessa dimensioner.</p> | Ja <p>Mittvärden används i stället för postfält. Besök först-träffslogiken baseras på `post_cust_hit_time_gmt` i stället för på `visit_page_num=1`. Resultaten kan skilja sig från andra verktyg om IP-adressen ändras mitt på besöket, träffar tas emot i fel ordning eller besök över månadsgränserna.</p> |
