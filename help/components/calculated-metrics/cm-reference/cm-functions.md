@@ -4,9 +4,9 @@ description: Lär dig mer om grundläggande funktioner för beräknade värden.
 feature: Calculated Metrics
 exl-id: 63775753-337b-4dec-a3a2-a3a0ee9aac2e
 role: User
-source-git-commit: 2579f33a57b2dfaf6d63470f42286bf782675c68
+source-git-commit: b8fae74ade75473f3d3d8d43598dfb16170b209f
 workflow-type: tm+mt
-source-wordcount: '3542'
+source-wordcount: '3533'
 ht-degree: 0%
 
 ---
@@ -93,7 +93,7 @@ Returnerar det största värdet i en uppsättning dimensionselement för en måt
 
 >[!TIP]
 >
->Använd en [IF](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-adv-functions#if)-sats, till exempel **IF**(*Intäkter* = **Kolumngräns***(Inkomster*), 1, 0), för att markera det objekt som presterar bäst i din detaljnivå.
+>Använd en [IF](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-adv-functions#if)-sats, till exempel **IF**(*Intäkter* = **Kolumngräns***(Inkomster*), 1, 0), för att markera det objekt som presterar bäst i din detaljnivå.
 >
 
 ## Minsta kolumn {#column-minimum}
@@ -123,7 +123,7 @@ Returnerar det minsta värdet i en uppsättning dimensionselement för en måttk
 
 >[!TIP]
 >
->Använd en [IF](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-adv-functions#if)-sats, t.ex. **IF**(*Intäkter* = **Kolumnminimum***(Inkomster*), 1, 0), för att markera det objekt som har lägst prestanda i nedbrytningen.
+>Använd en [IF](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-adv-functions#if)-sats, t.ex. **IF**(*Intäkter* = **Kolumnminimum***(Inkomster*), 1, 0), för att markera det objekt som har lägst prestanda i nedbrytningen.
 >
 
 
@@ -205,9 +205,9 @@ Lägger till alla numeriska värden för ett mått i en kolumn (över elementen 
 |---|---|
 | mått | Exponenten som används på basen e. |
 
-**Använd skiftläge**: Höj ett tal eller ett mått till en angiven potens, till exempel dela ett värde eller tillämpa en exponentiell tillväxtfaktor. Detta är användbart när du modellerar tillväxttrender eller skalar ett mätresultat exponentiellt.
+**Använd skiftläge**: Höjer *e* till ett angivet tal eller mätvärde. Detta är användbart när du modellerar tillväxttrender eller skalar ett mätresultat exponentiellt.
 
-**I beräkningsverktyget**: Använd **Exponent** med ett mätvärde och ett energivärde. Till exempel: **Exponent**(*Besök*, ) fyrkantiga måttet *Besök*.
+**I beräkningsverktyget**: Använd **Exponent** med ett mätvärde. Till exempel: **Exponent**(*Besök*) utökar *e* till styrkan i måttet *Besök*.
 
 >[!TIP]
 >
