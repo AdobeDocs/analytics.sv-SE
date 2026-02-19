@@ -4,7 +4,7 @@ audience: end-user
 user-guide-title: Handbok om Analytics-verktyg
 breadcrumb-title: Användarhandbok om verktyg
 user-guide-description: Lär dig hur du använder verktyg i Analytics, inklusive Analysis Workspace, Analytics Dashboards, Report Builder, Legacy Report Builder och Activity Map.
-source-git-commit: 288ca753157a6ed388a37a1ef01481cd83191b85
+source-git-commit: 744376df6f8c577d41d0df4195a780912042b71b
 workflow-type: tm+mt
 source-wordcount: '869'
 ht-degree: 10%
@@ -14,7 +14,7 @@ ht-degree: 10%
 # Adobe Analytics Tools Guide {#analyze}
 
 + [Handbok för analysverktyg](home.md)
-+ [Versionsinformation för analyser](https://experienceleague.adobe.com/sv/docs/analytics/release-notes/latest)
++ [Versionsinformation för analyser](https://experienceleague.adobe.com/en/docs/analytics/release-notes/latest)
 + Kom igång med Adobe Analytics {#admin-overview}
    + [Analytics - översikt](get-started/analytics-overview.md)
    + [Onboarding](get-started/onboard.md)
@@ -112,7 +112,7 @@ ht-degree: 10%
       + [Sammanfattning av nyckelmått](analysis-workspace/visualizations/key-metric.md)
       + [Linje](analysis-workspace/visualizations/line.md)
       + [Mappa](analysis-workspace/visualizations/map-visualization.md)
-      + [Scatterplot](analysis-workspace/visualizations/scatterplot.md)
+      + [Spridning](analysis-workspace/visualizations/scatterplot.md)
       + [Avsnittshuvud](/help/analyze/analysis-workspace/visualizations/section-header.md)
       + [Sammanfattningsnummer och ändring](analysis-workspace/visualizations/summary-number-change.md)
       + [Text](analysis-workspace/visualizations/text.md)

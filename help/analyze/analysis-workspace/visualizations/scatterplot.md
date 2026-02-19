@@ -3,9 +3,9 @@ title: Spridning
 description: Lär dig hur du skapar och tolkar punktvisualiseringar i Analysis Workspace för att analysera relationer mellan dimensionsobjekt och upp till tre mätvärden.
 role: User, Admin
 exl-id: 1144ca89-645d-44aa-a820-4e7fd31912b8
-source-git-commit: 48c7fb29424948ee8142a2ce32d95cd9b52d7b85
+source-git-commit: 744376df6f8c577d41d0df4195a780912042b71b
 workflow-type: tm+mt
-source-wordcount: '235'
+source-wordcount: '230'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-_I den här artikeln dokumenteras Spridningsvisualiseringen i_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**._<br/>_Se [Spridning](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-workspace/visualizations/scatterplot) för_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**-versionen av artikeln._
+_I den här artikeln dokumenteras Spridningsvisualiseringen i_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._<br/>_Se [Spridning](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/scatterplot) för_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**-versionen av artikeln._
 
 >[!ENDSHADEBOX]
 
@@ -37,7 +37,7 @@ Visualiseringen ![GraphScatter](/help/assets/icons/GraphScatter.svg) **[!UICONTR
 * Den tredje kolumnen bestämmer punktens radie.
 * Alla efterföljande kolumner i en friformstabell ignoreras av visualisering av punktdiagram.
 
-![Exempel på punktdiagram som visar flera dimensionsobjekt &#x200B;](assets/scatter.png)
+![Exempel på punktdiagram som visar flera dimensionsobjekt ](assets/scatter.png)
 
 
 >[!BEGINSHADEBOX]
@@ -49,12 +49,12 @@ Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualisering av 
 
 >[!NOTE]
 >
->När du [konfigurerar teckenförklaringen så att den visas]&#x200B;(/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings in the spridning, visas bara teckenförklaringen när datakällan innehåller ett begränsat antal (valda) dimensionsobjekt.
+>När du [konfigurerar förklaringen att vara synlig](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings) i spridningsområdet visas förklaringen bara när datakällan innehåller ett begränsat antal (valda) dimensionsobjekt.
 
 
 >[!MORELIKETHIS]
 >
 >[Lägg till en visualisering på en panel](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
 >[Visualiseringsinställningar](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
->[Snabbmenyn Visualisering &#x200B;](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>[Snabbmenyn Visualisering ](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >
