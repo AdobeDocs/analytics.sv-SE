@@ -17,7 +17,7 @@ Adobe använder flera olika metoder för att [identifiera besökare](../../id/ov
 
 >[!IMPORTANT]
 >
->Adobe rekommenderar att du inte använder variabeln. Använd [Adobe Experience Cloud Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html) i stället.
+>Adobe rekommenderar att du inte använder variabeln. Använd [Adobe Experience Cloud Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=sv-SE) i stället.
 
 ## Så här använder Analytics `visitorID`
 
@@ -58,4 +58,4 @@ s.visitorID = "abc123";
 
 ## Besökar-ID som använder Web SDK
 
-Med Adobe Experience Platform Edge Network kan du tillhandahålla flera identifierare med hjälp av XDM:s [identitetskarta](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/overview.html#using-identitymap). Varje identitet i en identitetskarta har ett eget namnutrymme. Du kan ange vilket namnutrymme som ska användas för besökar-ID som en del av [datastream-konfigurationen](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html#analytics). När det här fältet har konfigurerats används den automatiskt som besökar-ID i Analytics när du skickar en händelse med ett värde som anges för det här namnutrymmet.
+Med Adobe Experience Platform Edge Network kan du tillhandahålla flera identifierare med hjälp av XDM:s [identitetskarta](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/overview.html?lang=sv-SE#using-identitymap). Varje identitet i en identitetskarta har ett eget namnutrymme. Du kan ange vilket namnutrymme som ska användas för besökar-ID som en del av [datastream-konfigurationen](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=sv-SE#analytics). När det här fältet har konfigurerats används den automatiskt som besökar-ID i Analytics när du skickar en händelse med ett värde som anges för det här namnutrymmet.
