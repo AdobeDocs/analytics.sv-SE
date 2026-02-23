@@ -4,9 +4,9 @@ title: Översikt över avvikelseidentifiering
 feature: Anomaly Detection
 role: User, Admin
 exl-id: b1625206-c774-40ef-9d92-25ee8ff1478d
-source-git-commit: fcc165536d77284e002cb2ba6b7856be1fdb3e14
+source-git-commit: 8b1e25b9633b6db3e49da079f7014e6b7b595474
 workflow-type: tm+mt
-source-wordcount: '1277'
+source-wordcount: '1279'
 ht-degree: 1%
 
 ---
@@ -18,7 +18,7 @@ Ni kan visa och analysera dataavvikelser i sitt sammanhang inom Analysis Workspa
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysidentifiering](https://video.tv.adobe.com/v/25444?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysidentifiering](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/data-science/anomaly-detection-in-analysis-workspace){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 
@@ -61,7 +61,7 @@ för valda mätvärden för konvergerande målgruppssegment.
 
 >[!BEGINSHADEBOX]
 
-En demonstrationsvideo finns i ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Contribute analysis](https://video.tv.adobe.com/v/25443?quality=12&learn=on){target="_blank"} .
+En demonstrationsvideo finns i ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Contribute analysis](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/data-science/contribution-analysis-workspace){target="_blank"} .
 
 >[!ENDSHADEBOX]
 
@@ -119,17 +119,17 @@ Nedan finns en lista med detaljerade berättiganden för avvikelseidentifiering 
    <td colname="col3" colsep="1"> <p>Inga variabler </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><a href="https://business.adobe.com/se/products/analytics/compare-adobe-analytics-packages.html?promoid=B4XQ3X7G&mv=other"  > Välj </a> </p> </td> 
+   <td colname="col1"> <p><a href="https://business.adobe.com/products/analytics/compare-adobe-analytics-packages.html?promoid=B4XQ3X7G&amp;mv=other"  > Välj </a> </p> </td> 
    <td colname="col2"> <p>Endast daglig granularitet </p> </td> 
    <td colname="col3"> <p>Inga variabler </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><a href="https://business.adobe.com/se/products/analytics/compare-adobe-analytics-packages.html?promoid=91BF51TR&mv=other"  > Prime </a> </p> </td> 
+   <td colname="col1"> <p><a href="https://business.adobe.com/products/analytics/compare-adobe-analytics-packages.html?promoid=91BF51TR&amp;mv=other"  > Prime </a> </p> </td> 
    <td colname="col2"> <p>Ja </p> </td> 
    <td colname="col3"> <p>10 tokens per månad </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><a href="https://business.adobe.com/se/products/analytics/compare-adobe-analytics-packages.html?promoid=8N4B5F1V&mv=other"  > Ultimate</a> </p> </td> 
+   <td colname="col1"> <p><a href="https://business.adobe.com/products/analytics/compare-adobe-analytics-packages.html?promoid=8N4B5F1V&amp;mv=other"  > Ultimate</a> </p> </td> 
    <td colname="col2"> <p>Ja </p> </td> 
    <td colname="col3"> <p>20 tokens per månad </p> </td> 
   </tr> 
@@ -154,7 +154,7 @@ Nedan finns en lista med detaljerade berättiganden för avvikelseidentifiering 
    <td colname="col3"> <p>2 variabler per månad </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Premium (fullständig, <a href="https://business.adobe.com/se/products/analytics/predictive-analytics.html"  > Predictive Intelligence</a>) </p> </td> 
+   <td colname="col1"> <p>Premium (fullständig, <a href="https://business.adobe.com/products/analytics/predictive-analytics.html"  > Predictive Intelligence</a>) </p> </td> 
    <td colname="col2"> <p>Ja </p> </td> 
    <td colname="col3"> <p>Obegränsat antal token </p> </td> 
   </tr> 

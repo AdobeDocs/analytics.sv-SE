@@ -3,9 +3,9 @@ description: Lär dig mer om sekventiella segment som använder operatorn THEN f
 title: SequentialSsegments
 feature: Segmentation
 exl-id: 2ac4e6db-3111-45e5-bedf-7d9b7b1ae352
-source-git-commit: acc32dc1589a08c20eaf414cd6f1a760ec8e2a56
+source-git-commit: 8b1e25b9633b6db3e49da079f7014e6b7b595474
 workflow-type: tm+mt
-source-wordcount: '2262'
+source-wordcount: '2263'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ Dessutom kan du begränsa sekventiella segment till en viss tidslängd, granular
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Sekventiell segmentering](https://video.tv.adobe.com/v/25405?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Sekventiell segmentering](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/components/segmentation/sequential-segmentation){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 
@@ -78,7 +78,7 @@ Så här använder du tidsbegränsningar för operatorn **[!UICONTROL Then]**:
 1. Välj ![Klocka](/help/assets/icons/Clock.svg).
 1. Välj **[!UICONTROL Within]** eller **[!UICONTROL After]** på snabbmenyn.
 1. Ange en tidsperiod (**[!UICONTROL Minute]**, **[!UICONTROL Hour]**, fram till **[!UICONTROL Years]**).
-1. Välj ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL *number *]**&#x200B;för att öppna ett popup-fönster där du kan skriva in eller ange ett nummer med **[!UICONTROL -]**&#x200B;eller **[!UICONTROL +]**.
+1. Välj ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL *number *]**för att öppna ett popup-fönster där du kan skriva in eller ange ett nummer med **[!UICONTROL -]**eller **[!UICONTROL +]**.
 
 Använd ![CrossSize75](/help/assets/icons/CrossSize75.svg) om du vill ta bort en tidsbegränsning.
 
@@ -109,7 +109,7 @@ Identifiera besökare som besökt en sida och sedan en annan inom fem minuter. T
 
 ![Sekvens inom](assets/sequence-within.png)
 
-Om en sidvy för hemsidan inträffar den 1 juni 2024, kl. 12:01, visas sidan Women | Shoes kommer att matchas så länge som sidvyn visas före 15 juni 2024 12:16.
+Om en sidvy för hemsidan inträffar den 1 juni 2024, kl. 12:01, så visas sidan Women | Shoes kommer att matchas så länge som sidvyn visas före 15 juni 2024 12 :16 .
 
 ##### Operatorn [!UICONTROL After] men [!UICONTROL Within]
 
@@ -117,7 +117,7 @@ Identifiera besökare som besökt en sida och sedan besökt en annan sida efter 
 
 ![Sekvens efter men inom](assets/sequence-afterbutwithin.png)
 
-Besökare som besöker startsidan den 1 juni 2024 och som återvänder för att besöka damerna | Shoes page after 15 juni 2019 00:01, but before juli1, 2019 eligible for the segment.
+Besökare som besöker startsidan den 1 juni 2024 och som återvänder för att besöka damerna | Shoes page after 15 juni 2019 00:01, but before 1 Juli 2019 eligible for the segment.
 
 
 ### Begränsningarna [!UICONTROL Hit], [!UICONTROL Visit] och [!UICONTROL Dimension]
@@ -159,7 +159,7 @@ Följande exempelsekvenser matchar eller matchar inte:
 
 ### [!UICONTROL Only Before Sequence] och [!UICONTROL Only After Sequence]
 
-Alternativen ![SequenceBefore](/help/assets/icons/SequenceBefore.svg) **[!UICONTROL Only Before Sequence]** och ![&#x200B; SequenceAfter](/help/assets/icons/SequenceAfter.svg) **[!UICONTROL Only After Sequence]** segmenterar data till en delmängd före eller efter den angivna sekvensen.
+Alternativen ![SequenceBefore](/help/assets/icons/SequenceBefore.svg) **[!UICONTROL Only Before Sequence]** och ![ SequenceAfter](/help/assets/icons/SequenceAfter.svg) **[!UICONTROL Only After Sequence]** segmenterar data till en delmängd före eller efter den angivna sekvensen.
 
 * ![SequenceBefore](/help/assets/icons/SequenceBefore.svg) **Endast före sekvens**: Inkluderar alla data före en sekvens och de första data i själva sekvensen. Om en sekvens visas flera gånger som en del av data, inkluderar [!UICONTROL Only Before Sequence] den första träffen av den sista förekomsten av sekvensen och alla tidigare träffar.
 * ![SequenceAfter](/help/assets/icons/SequenceAfter.svg) **Endast efter sekvens**: Inkluderar alla träffar efter en sekvens och de sista data som finns i själva sekvensen. Om en sekvens visas flera gånger som en del av data, inkluderar [!UICONTROL Only After Sequence] den senaste träffen av den första förekomsten av sekvensen och alla efterföljande träffar.
@@ -302,4 +302,4 @@ Det sista exemplet är att ni vill identifiera besökare som har lärt sig om en
 
 >[!MORELIKETHIS]
 >
-> * [Mastering Sequential Logic in AA &amp; CJA: Introduction to THEN](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/mastering-sequential-logic-in-aa-amp-cja-introduction-to-then/ba-p/738131?profile.language=sv)
+> * [Mastering Sequential Logic in AA &amp; CJA: Introduction to THEN](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/mastering-sequential-logic-in-aa-amp-cja-introduction-to-then/ba-p/738131)

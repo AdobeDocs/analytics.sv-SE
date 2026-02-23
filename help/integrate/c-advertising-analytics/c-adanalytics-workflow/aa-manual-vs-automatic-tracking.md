@@ -3,7 +3,7 @@ description: Spårningstypen avgör hur Adobe Analytics-implementeringen spårar
 title: Spårningstyp
 feature: Advertising Analytics
 exl-id: 3e2ed26f-dfb2-43ea-8eb6-e332cd10fb29
-source-git-commit: 6bedfb9b1333a442bf17cf71dad1e0883b97fd45
+source-git-commit: 8b1e25b9633b6db3e49da079f7014e6b7b595474
 workflow-type: tm+mt
 source-wordcount: '565'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Spårningstypen avgör hur Adobe Analytics-implementeringen spårar dina sökmot
 
 Here is a video overview of how to implement the Advertising Analytics tracking template:
 
->[!VIDEO](https://video.tv.adobe.com/v/23120/?quality=12)
+>[!VIDEO](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/integrations/ad-cloud/implementing-tracking-templates-into-search-engines)
 
 -->
 
@@ -37,7 +37,7 @@ Observera att du ansvarar för följande åtgärder när du konfigurerar ett sö
 
 >[!IMPORTANT]
 >
->Läs mer om huruvida du bör lägga till parametern `s_kwcid` i din [skyddsprofil för innehåll](https://experienceleague.adobe.com/sv/docs/id-service/using/reference/csp).
+>Läs mer om huruvida du bör lägga till parametern `s_kwcid` i din [skyddsprofil för innehåll](https://experienceleague.adobe.com/en/docs/id-service/using/reference/csp).
 
 ## Manuell spårning {#concept_87B28BA9E7F84BA5972F69E6F3482A33}
 
@@ -98,7 +98,7 @@ Strängen som behöver läggas till i ditt Microsoft Advertising-konto visas ned
 
 >[!IMPORTANT]
 >
->Värdet _`<Advertising Analytics ID>`_(i **bold**&#x200B;nedan) är generiskt och **måste ersättas med din specifika konto-ID-sträng**. Du kan hämta din specifika konto-ID-sträng från kontoskärmen under avsnittet Spårning.
+>Värdet _`<Advertising Analytics ID>`_(i **bold**nedan) är generiskt och **måste ersättas med din specifika konto-ID-sträng**. Du kan hämta din specifika konto-ID-sträng från kontoskärmen under avsnittet Spårning.
 
 **Spårningssträng för kampanjer:**
 

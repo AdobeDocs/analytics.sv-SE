@@ -4,9 +4,9 @@ description: Läs om Analysis Workspace, det främsta analysverktyget för Adobe
 feature: Workspace Basics
 role: User, Admin
 exl-id: de95551d-09ea-4461-9bb4-b4ef235e9cd2
-source-git-commit: f02b660b551f5291443b8f7c5c51179a06b22eb9
+source-git-commit: 8b1e25b9633b6db3e49da079f7014e6b7b595474
 workflow-type: tm+mt
-source-wordcount: '1255'
+source-wordcount: '1256'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ Med Analysis Workspace kan ni snabbt skapa analyser för att samla in insikter o
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Översikt över arbetsytan Analys](https://video.tv.adobe.com/v/26266/?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Översikt över arbetsytan Analys](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/analysis-workspace-basics/analysis-workspace-overview){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 
@@ -89,7 +89,7 @@ I tabellerna nedan finns en översikt över de tillgängliga menyerna.
 |---|---|---|---|
 | **[!UICONTROL Blank panel]** | **[!UICONTROL *opt+b *]** | **[!UICONTROL *alt+b *]** | Infoga en [tom panel](/help/analyze/analysis-workspace/c-panels/blank-panel.md). |
 | **[!UICONTROL Media concurrent viewers]** | **[!UICONTROL *opt+h *]** | **[!UICONTROL *alt-h *]** | Infoga en [panel för parallella medievyer](/help/analyze/analysis-workspace/c-panels/media-concurrent-viewers.md). |
-| **[!UICONTROL Media playback time spent]** | **[!UICONTROL *opt+i *]** | **[!UICONTROL *alt+i *]** | Infoga en [medieuppspelningstid som har använts på panelen &#x200B;](/help/analyze/analysis-workspace/c-panels/media-playback-time-spent.md). |
+| **[!UICONTROL Media playback time spent]** | **[!UICONTROL *opt+i *]** | **[!UICONTROL *alt+i *]** | Infoga en [medieuppspelningstid som har använts på panelen ](/help/analyze/analysis-workspace/c-panels/media-playback-time-spent.md). |
 | **[!UICONTROL Media average minute audience]** | **[!UICONTROL *opt+m *]** | **[!UICONTROL *alt+m *]** | Infoga en [medieminarium](/help/analyze/analysis-workspace/c-panels/average-minute-audience-panel.md)-målgruppspanel. |
 | **[!UICONTROL Attribution]** | **[!UICONTROL *opt+e *]** | **[!UICONTROL *alt+e *]** | Infoga en [attribueringspanel](/help/analyze/analysis-workspace/c-panels/attribution.md). |
 | **[!UICONTROL Freeform]** | **[!UICONTROL *opt+a *]** | **[!UICONTROL *alt+a *]** | Infoga en [friformspanel](/help/analyze/analysis-workspace/c-panels/freeform-panel.md). |
@@ -156,5 +156,5 @@ När du är klar med projektet och samlar in åtgärdbara insikter kan andra vil
 
 ## Ytterligare resurser {#resources}
 
-- Adobe erbjuder hundratals [självstudiekurser i Analytics-videor](https://experienceleague.adobe.com/sv/docs/analytics-learn/tutorials/overview).
-- Information om nya funktioner finns i [Versionsinformation för Adobe Experience Cloud](https://experienceleague.adobe.com/sv/docs/release-notes/experience-cloud/current).
+- Adobe erbjuder hundratals [självstudiekurser i Analytics-videor](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/overview).
+- Information om nya funktioner finns i [Versionsinformation för Adobe Experience Cloud](https://experienceleague.adobe.com/en/docs/release-notes/experience-cloud/current).

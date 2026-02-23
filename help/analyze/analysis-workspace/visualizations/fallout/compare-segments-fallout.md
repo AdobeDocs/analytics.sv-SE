@@ -5,9 +5,9 @@ title: Använd segment i bortfallsanalys
 feature: Visualizations
 role: User, Admin
 exl-id: 2177cd09-5a27-4295-8414-580cf53062cb
-source-git-commit: bf8bc40e3ec325e8e70081955fb533eee66a1734
+source-git-commit: 8b1e25b9633b6db3e49da079f7014e6b7b595474
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '429'
 ht-degree: 0%
 
 ---
@@ -51,12 +51,6 @@ Du kan också skapa en AND-kontaktyta genom att dra segmentet för mobilappsträ
 
 Du kan jämföra ett obegränsat antal segment i utfallsvisualiseringen. (Observera att det i videon nedan står att du kan jämföra upp till tre segment, vilket är fel.)
 
-
->[!BEGINSHADEBOX]
-
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Jämför segment i en utfallsvisualisering](https://video.tv.adobe.com/v/24046?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
-
->[!ENDSHADEBOX]
 
 
 1. Markera de segment som du vill jämföra på panelen [!UICONTROL Segment] till vänster. I exemplet I exemplet är två segment markerade: **[!UICONTROL iOS]** och **[!UICONTROL Android]**.

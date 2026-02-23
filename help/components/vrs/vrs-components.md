@@ -3,9 +3,9 @@ description: Virtuella rapportsviter kan struktureras så att de inkluderar och 
 title: Komponentstrukturering för virtuell rapportserie
 feature: VRS
 exl-id: 19163829-328a-4064-b1be-8c09d1d94a0d
-source-git-commit: fcc165536d77284e002cb2ba6b7856be1fdb3e14
+source-git-commit: 8b1e25b9633b6db3e49da079f7014e6b7b595474
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '385'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Virtuella rapportsviter kan struktureras så att de inkluderar och exkluderar ko
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Komponentkuration](https://video.tv.adobe.com/v/3425532?quality=12&learn=on&captions=swe){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Komponentkuration](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/components/virtual-report-suites/component-curation-in-virtual-report-suites){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 

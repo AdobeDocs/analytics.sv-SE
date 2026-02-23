@@ -4,9 +4,9 @@ keywords: Beräknade mätvärden
 title: Översikt över beräknade mätvärden
 feature: Calculated Metrics
 exl-id: 9bf8239f-cf74-4feb-85e5-d47805e90afb
-source-git-commit: 665319bdfc4c1599292c2e7aea45622d77a291a7
+source-git-commit: 8b1e25b9633b6db3e49da079f7014e6b7b595474
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '269'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ Beräknade mätvärden är anpassade mätvärden som du kan skapa utifrån befin
 Beräknade mått är tillgängliga i varje [!DNL Analytics]-paket, men Adobe Analytics Foundation Pack för Experience Cloud är begränsat till grundläggande beräknade mått, inklusive [formattyper (decimal, time, percent, currency)](/help/components/calculated-metrics/workflow/c-build-metrics/cm-build-metrics.md), [allokeringsändringar (standard, linjär, deltagande osv.)](/help/components/calculated-metrics/workflow/c-build-metrics/m-metric-type-alloc.md), [metriska typer (standard, total)](/help/components/calculated-metrics/workflow/c-build-metrics/m-metric-type-alloc.md) och [grundläggande operatorer](workflow/c-build-metrics/cm-build-metrics.md#operators) (lägg till, subtrahera, multiplicera och dividera).
 
 
-Mer information finns i [Adobe Analytics produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-analytics.html).
+Mer information finns i [Adobe Analytics produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-analytics.html).
 
 <!--
 Here is a comparison of calculated metrics and advanced calculated metrics capabilities: 
@@ -59,13 +59,13 @@ Vissa [!DNL Analytics]-funktioner tillåter inte användning av beräknade värd
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Beräknade mätvärden](https://video.tv.adobe.com/v/25407?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Beräknade mätvärden](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/components/calculated-metrics/calculated-metrics-implementationless-metrics){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Segmenterade beräknade mätvärden i segment](https://video.tv.adobe.com/v/25409?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Segmenterade beräknade mätvärden i segment](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/components/calculated-metrics/calculated-metrics-segmented-metrics){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 
@@ -85,6 +85,6 @@ Here is a short overview of the [!UICONTROL Calculated metrics] tools:
 >[!MORELIKETHIS]
 >
 >[Skapa mått](/help/components/calculated-metrics/workflow/cm-workflow.md)
->&#x200B;>[Bygg mått &#x200B;](/help/components/calculated-metrics/workflow/c-build-metrics/cm-build-metrics.md)
->&#x200B;>[Använd funktioner &#x200B;](/help/components/calculated-metrics/workflow/c-build-metrics/cm-using-functions.md)
+>[Bygg mått ](/help/components/calculated-metrics/workflow/c-build-metrics/cm-build-metrics.md)
+>[Använd funktioner ](/help/components/calculated-metrics/workflow/c-build-metrics/cm-using-functions.md)
 >

@@ -3,9 +3,9 @@ description: Lär dig hur du använder operatorerna i segmentbyggaren för att j
 title: Operatorer
 feature: Segmentation
 exl-id: 1ec1ff05-03a9-4151-8fcb-a72ebbce87dd
-source-git-commit: 35f2812c1a1a4eed090e04d67014fcebf88a80ec
+source-git-commit: 8b1e25b9633b6db3e49da079f7014e6b7b595474
 workflow-type: tm+mt
-source-wordcount: '1054'
+source-wordcount: '1055'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Beroende på vilken operator du väljer:
 * Du kan ange en del av ett värde och välja från en nedrullningsbar meny (om den är tillgänglig).
 * Välj omedelbart ett värde i listrutan (om tillgängligt).
 
-När du skriver ett värde för en operator som validerar tillgängliga värden, som **[!UICONTROL equals]**, och värdet inte matchar de värden som är tillgängliga för komponenten, visas en ![&#x200B; AlertRed](/help/assets/icons/AlertRed.svg) -ikon. Du kan antingen välja ett värde i listrutan eller trycka på **[!UICONTROL _Retur_]** för att ange värdet.
+När du skriver ett värde för en operator som validerar tillgängliga värden, som **[!UICONTROL equals]**, och värdet inte matchar de värden som är tillgängliga för komponenten, visas en ![ AlertRed](/help/assets/icons/AlertRed.svg) -ikon. Du kan antingen välja ett värde i listrutan eller trycka på **[!UICONTROL _Retur_]** för att ange värdet.
 
 ![Segment är lika med](assets/segment-operator-equals.png)
 
@@ -81,6 +81,6 @@ Du kan segmentera ett visst antal artiklar i en dimension. Exempel: *Besökare s
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Distinkt dimensionsantal](https://video.tv.adobe.com/v/27257?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Distinkt dimensionsantal](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/components/segmentation/segmentation-on-distinct-dimension-counts){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]

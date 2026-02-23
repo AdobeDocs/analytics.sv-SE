@@ -4,9 +4,9 @@ title: Förstå och konfigurera robotregler
 feature: Bot Removal
 role: Admin
 exl-id: 1c0009f6-2746-4ef1-8dcb-e2693617e91e
-source-git-commit: a6967c7d4e1dca5491f13beccaa797167b503d6e
+source-git-commit: 8b1e25b9633b6db3e49da079f7014e6b7b595474
 workflow-type: tm+mt
-source-wordcount: '1623'
+source-wordcount: '1624'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Punkttrafikdata lagras i en separat databas för visning i rapporter om start- o
 
 >[!NOTE]
 >
->Adobe Experience Platform Edge Network tillhandahåller en [robotavkänningstjänst](https://experienceleague.adobe.com/docs/experience-platform/datastreams/bot-detection.html?lang=sv-SE) som märker att träffar identifieras som om de kommer från bottnar. Processen för att identifiera robotar som används i Adobe Analytics är separat och refererar inte till robotpoängen som ingår i data som hämtas via Edge Network. De två systemen använder dock samma IAB-robotlista.
+>Adobe Experience Platform Edge Network tillhandahåller en [robotavkänningstjänst](https://experienceleague.adobe.com/docs/experience-platform/datastreams/bot-detection.html) som märker att träffar identifieras som om de kommer från bottnar. Processen för att identifiera robotar som används i Adobe Analytics är separat och refererar inte till robotpoängen som ingår i data som hämtas via Edge Network. De två systemen använder dock samma IAB-robotlista.
 
 ## Uppdatera eller överföra robotregler
 
@@ -34,7 +34,7 @@ Punkttrafikdata lagras i en separat databas för visning i rapporter om start- o
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Konfigurera robotregler](https://video.tv.adobe.com/v/335738/?quality=12){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Konfigurera robotregler](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/administration/manage-report-suites/configure-bot-rules-in-analytics){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 
