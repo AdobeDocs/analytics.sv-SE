@@ -15,7 +15,7 @@ ht-degree: 0%
 Arbetsflödet för att konfigurera Advertising Analytics består av följande steg:
 
 <!--
->[!VIDEO](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/integrations/ad-cloud/configuring-advertising-analytics)
+>[!VIDEO](https://experienceleague.adobe.com/sv/docs/analytics-learn/tutorials/integrations/ad-cloud/configuring-advertising-analytics)
 -->
 
 1. [Aktivera Advertising Analytics-rapportering per rapportserie](/help/integrate/c-advertising-analytics/c-adanalytics-workflow/aa-provision-rs.md). Aktiverar [!UICONTROL Advertising Analytics]-rapportering för Experience Cloud-aktiverade rapportsviter.

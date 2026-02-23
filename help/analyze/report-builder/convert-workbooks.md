@@ -24,7 +24,7 @@ Som en del av övergången till en ny Report Builder-funktion kan du snabbt konv
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Konvertera arbetsböcker](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/exporting/report-builder/upgrade-and-reschedule-workbooks){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Konvertera arbetsböcker](https://experienceleague.adobe.com/sv/docs/analytics-learn/tutorials/exporting/report-builder/upgrade-and-reschedule-workbooks){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 

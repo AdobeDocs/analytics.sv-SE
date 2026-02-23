@@ -240,7 +240,7 @@ Den här videon ger en kort översikt över vilka segmentbehållare som är och 
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Segmentbehållare](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/components/segmentation/segment-containers){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Segmentbehållare](https://experienceleague.adobe.com/sv/docs/analytics-learn/tutorials/components/segmentation/segment-containers){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 

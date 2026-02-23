@@ -17,7 +17,7 @@ Virtuella rapportsviter kan struktureras så att de inkluderar och exkluderar ko
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Komponentkuration](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/components/virtual-report-suites/component-curation-in-virtual-report-suites){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Komponentkuration](https://experienceleague.adobe.com/sv/docs/analytics-learn/tutorials/components/virtual-report-suites/component-curation-in-virtual-report-suites){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 

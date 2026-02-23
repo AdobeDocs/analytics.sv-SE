@@ -31,7 +31,7 @@ Du kan lägga till beskrivningar till komponenter i en rapportserie.
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Lägg till komponentbeskrivningar](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/intro-to-analytics/customizing-the-ui/adding-dimension-and-metric-descriptions){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Lägg till komponentbeskrivningar](https://experienceleague.adobe.com/sv/docs/analytics-learn/tutorials/intro-to-analytics/customizing-the-ui/adding-dimension-and-metric-descriptions){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 

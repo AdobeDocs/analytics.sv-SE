@@ -36,7 +36,7 @@ Följande resurser hjälper dig att förstå det grundläggande arbetsflödet f�
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Navigera i dataflödesgränssnittet](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/exporting/data-feeds/data-feeds-management-ui){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Navigera i dataflödesgränssnittet](https://experienceleague.adobe.com/sv/docs/analytics-learn/tutorials/exporting/data-feeds/data-feeds-management-ui){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 
@@ -44,6 +44,6 @@ Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Navigera i datafl
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Hitta ditt datafeed-id](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/exporting/data-feeds/find-your-data-feed-id){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Hitta ditt datafeed-id](https://experienceleague.adobe.com/sv/docs/analytics-learn/tutorials/exporting/data-feeds/find-your-data-feed-id){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]

@@ -27,4 +27,4 @@ I det här kapitlet beskrivs koncept som du behöver förstå om Analytics-speci
 
 I följande videodemonstration får du lära dig hur du lägger till en administratör i Adobe Analytics:
 
-[Lägg till en administratör i Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/administration/user-management/adding-an-administrator-to-adobe-analytics){target=_blank}
+[Lägg till en administratör i Adobe Analytics](https://experienceleague.adobe.com/sv/docs/analytics-learn/tutorials/administration/user-management/adding-an-administrator-to-adobe-analytics){target=_blank}

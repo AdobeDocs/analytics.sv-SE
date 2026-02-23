@@ -46,7 +46,7 @@ Definiera de här inställningarna på fliken [!UICONTROL Visit Definition] och 
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Justera en besöksdefinition](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/components/virtual-report-suites/context-aware-sessions-in-virtual-report-suites){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Justera en besöksdefinition](https://experienceleague.adobe.com/sv/docs/analytics-learn/tutorials/components/virtual-report-suites/context-aware-sessions-in-virtual-report-suites){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 

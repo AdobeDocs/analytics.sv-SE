@@ -47,7 +47,7 @@ Med varje behållare kan du rapportera över en besökares historik, interaktion
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Segmentbehållare](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/components/segmentation/segment-containers){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Segmentbehållare](https://experienceleague.adobe.com/sv/docs/analytics-learn/tutorials/components/segmentation/segment-containers){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 

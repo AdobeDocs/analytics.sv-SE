@@ -20,7 +20,7 @@ Med Audience Analytics-integreringen på plats kan ni införliva Adobe Audience 
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Audience Analytics](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/integrations/audience-manager/audience-analytics-integrate-aam-segments-into-analytics){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Audience Analytics](https://experienceleague.adobe.com/sv/docs/analytics-learn/tutorials/integrations/audience-manager/audience-analytics-integrate-aam-segments-into-analytics){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 
@@ -55,6 +55,6 @@ Kontrollera att följande krav är uppfyllda:
 * Du är Audience Manager-administratör.
 * Du använder identitetstjänsten v1.5 eller senare.
 * Adobe Audience Manager och Adobe Analytics rapporteringsprogram är mappade till samma Experience Cloud-organisation.
-* Du använder [vidarebefordran på serversidan](/help/admin/tools/manage-rs/edit-settings/general/c-server-side-forwarding/ssf.md) och har implementerat modulen [Målgruppshantering](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/audience-management-module.html) (ingen DIL-kod) - AppMeasurement 1.5 eller senare.
+* Du använder [vidarebefordran på serversidan](/help/admin/tools/manage-rs/edit-settings/general/c-server-side-forwarding/ssf.md) och har implementerat modulen [Målgruppshantering](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/audience-management-module.html?lang=sv-SE) (ingen DIL-kod) - AppMeasurement 1.5 eller senare.
 
 Dessa krav beskrivs i [Audience Analytics Workflow](/help/integrate/c-audience-analytics/c-workflow/audiences-workflow.md).

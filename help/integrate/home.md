@@ -21,7 +21,7 @@ Den här guiden fokuserar på att integrera flera Adobe Experience Cloud-lösnin
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analytics for Advertising Cloud](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/integrations/ad-cloud/introduction-to-the-analytics-for-advertising-cloud-dsp-integration){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analytics for Advertising Cloud](https://experienceleague.adobe.com/sv/docs/analytics-learn/tutorials/integrations/ad-cloud/introduction-to-the-analytics-for-advertising-cloud-dsp-integration){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 
@@ -45,11 +45,11 @@ Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Adobe Analytics -
 
 ## Fler användarhandböcker för Analytics
 
-[Användarhandböcker för Analytics](https://experienceleague.adobe.com/docs/analytics.html)
+[Användarhandböcker för Analytics](https://experienceleague.adobe.com/docs/analytics.html?lang=sv-SE)
 
 ## Viktiga Analytics-resurser
 
-* [Kontakta kundtjänst](https://experienceleague.adobe.com/?support-solution=Analytics&lang=sv#support)
-* [Adobe Analytics Community på Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community)
-* [Adobe Analytics-resurser](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-resources/m-p/276666)
+* [Kontakta kundtjänst](https://experienceleague.adobe.com/sv?support-solution=Analytics&lang=sv#support)
+* [Adobe Analytics Community på Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community?profile.language=sv)
+* [Adobe Analytics-resurser](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-resources/m-p/276666?profile.language=sv)
 * [Experience League](https://landing.adobe.com/experience-league/)

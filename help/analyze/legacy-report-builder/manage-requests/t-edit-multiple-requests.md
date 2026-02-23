@@ -49,4 +49,4 @@ Du kan ändra flera begäranden samtidigt, baserat på rapportsviten, segment, d
 
 Här är en video som visar processen:
 
-https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/exporting/report-builder/add-segments-to-multiple-requests-at-once-in-report-builder
+https://experienceleague.adobe.com/sv/docs/analytics-learn/tutorials/exporting/report-builder/add-segments-to-multiple-requests-at-once-in-report-builder

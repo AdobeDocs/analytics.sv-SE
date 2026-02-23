@@ -18,7 +18,7 @@ Spårningstypen avgör hur Adobe Analytics-implementeringen spårar dina sökmot
 
 Here is a video overview of how to implement the Advertising Analytics tracking template:
 
->[!VIDEO](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/integrations/ad-cloud/implementing-tracking-templates-into-search-engines)
+>[!VIDEO](https://experienceleague.adobe.com/sv/docs/analytics-learn/tutorials/integrations/ad-cloud/implementing-tracking-templates-into-search-engines)
 
 -->
 
@@ -37,7 +37,7 @@ Observera att du ansvarar för följande åtgärder när du konfigurerar ett sö
 
 >[!IMPORTANT]
 >
->Läs mer om huruvida du bör lägga till parametern `s_kwcid` i din [skyddsprofil för innehåll](https://experienceleague.adobe.com/en/docs/id-service/using/reference/csp).
+>Läs mer om huruvida du bör lägga till parametern `s_kwcid` i din [skyddsprofil för innehåll](https://experienceleague.adobe.com/sv/docs/id-service/using/reference/csp).
 
 ## Manuell spårning {#concept_87B28BA9E7F84BA5972F69E6F3482A33}
 

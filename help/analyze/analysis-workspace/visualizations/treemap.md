@@ -25,7 +25,7 @@ ht-degree: 10%
 
 >[!BEGINSHADEBOX]
 
-_I den här artikeln beskrivs Treemap-visualiseringen i_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**._<br/>_Se [Treemap](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/treemap) för_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**-versionen av den här artikeln._
+_I den här artikeln beskrivs Treemap-visualiseringen i_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**._<br/>_Se [Treemap](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-workspace/visualizations/treemap) för_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**-versionen av den här artikeln._
 
 >[!ENDSHADEBOX]
 
@@ -40,7 +40,7 @@ Med en treemap kan du se mönster som skulle vara svåra att hitta på andra sä
 
 >[!BEGINSHADEBOX]
 
-En demonstrationsvideo finns i ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Treemap-visualisering](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/visualizations/treemap-visualization){target="_blank"} .
+En demonstrationsvideo finns i ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Treemap-visualisering](https://experienceleague.adobe.com/sv/docs/analytics-learn/tutorials/analysis-workspace/visualizations/treemap-visualization){target="_blank"} .
 
 >[!ENDSHADEBOX]
 

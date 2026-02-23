@@ -19,7 +19,7 @@ Ni kan definiera ett besök som ni vill utan att ändra underliggande data, så 
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Kontextmedvetna sessioner](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/components/virtual-report-suites/context-aware-sessions-in-virtual-report-suites){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Kontextmedvetna sessioner](https://experienceleague.adobe.com/sv/docs/analytics-learn/tutorials/components/virtual-report-suites/context-aware-sessions-in-virtual-report-suites){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 
