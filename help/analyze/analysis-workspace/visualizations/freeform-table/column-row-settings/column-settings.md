@@ -57,7 +57,7 @@ Villkorsstyrd formatering tillämpar formatering på övre, mellersta och nedre 
 
 | Villkorliga formateringsalternativ | Beskrivning |
 | --- | --- |
-| **[!UICONTROL  Use percent limits]** | Ändra gränsintervallet så att det baseras på procentvärden i stället för absoluta värden. Procentgränsområdet fungerar för mått som enbart är procentbaserade (t.ex. studsfrekvens) och för mått som har ett antal och ett procentvärde (t.ex. sidvyer). |
+| **[!UICONTROL &#x200B; Use percent limits]** | Ändra gränsintervallet så att det baseras på procentvärden i stället för absoluta värden. Procentgränsområdet fungerar för mått som enbart är procentbaserade (t.ex. studsfrekvens) och för mått som har ett antal och ett procentvärde (t.ex. sidvyer). |
 | **[!UICONTROL Auto-generated]** | Beräkna automatiskt övre/mellersta/nedre gränser baserat på data. Den övre gränsen är det största värdet i den här kolumnen. Den undre gränsen är det lägsta och mittpunkten är medelvärdet av de övre och nedre gränserna. |
 | **[!UICONTROL Custom]** | Tilldela **[!UICONTROL Upper limit]**, **[!UICONTROL Midpoint]** och **[!UICONTROL Lower limit]** manuellt. Begränsningar ger flexibilitet att avgöra när ett kolumnvärde blir bra, medelvärde eller dåligt. |
 | **[!UICONTROL Conditional formatting palette]** | Använd en förkonfigurerad färguppsättning för celler. Beroende på vilket av de fyra tillgängliga färgscheman du väljer tilldelas olika färger till höga värden, mittpunktsvärden och låga värden. <br> Om du ersätter en dimension i tabellen återställs de villkorliga formateringsgränserna. Om du ersätter ett mätvärde räknas gränserna för den kolumnen om (där ett mätvärde finns på X-axeln och ett mått på Y-axeln). |
