@@ -88,7 +88,7 @@ Så här konverterar du din gamla arbetsbok:
 
    * Välj **[!UICONTROL Download upgrade report]** om du vill hämta och öppna en ny [!DNL Excel]-arbetsbok som visar resultatet av uppgraderingen. Se ett exempel nedan.
 
-     ![Skärmbild av uppgraderingsrapporten för [!DNL Excel] Report Builder som visar migreringsrapporten ](assets/upgrade-report.png)
+     ![Skärmbild av uppgraderingsrapporten för [!DNL Excel] Report Builder som visar migreringsrapporten &#x200B;](assets/upgrade-report.png)
 
 Du kan nu [hantera datablocken](/help/analyze/report-builder/manage-reportbuilder.md) i arbetsboken. Dessa datablock är resultatet av uppgraderingen och ersätter dina tidigare förfrågningar från Report Builder.
 
@@ -104,7 +104,7 @@ Du kan använda schemainformationen från den äldre arbetsboken som du har häm
 
 1. Du kan använda schemainformationen från den äldre arbetsboken som standardinställningar för scheman.
 
-   ![Skärmbild av [!DNL Excel] Report Builder äldre schemainställningsalternativ ](assets/upgrade-legacy-schedule-convert.png)
+   ![Skärmbild av [!DNL Excel] Report Builder äldre schemainställningsalternativ &#x200B;](assets/upgrade-legacy-schedule-convert.png)
 
    * Välj **[!UICONTROL Use]** om du vill använda äldre schemadetaljer. Schemainformationen är förifylld i gränssnittet [Skicka arbetsbok](schedule-reportbuilder.md#schedule-a-workbook).
    * Välj **[!UICONTROL Don't use]** om du inte vill använda äldre schemainformation.

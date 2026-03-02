@@ -74,7 +74,7 @@ Så här hämtar och installerar du Report Builder-tillägget
 
   ![Fliken Administratörshantering i dialogrutan Office-tillägg.](./assets/image1.png)
 
-- Du kan också hämta [manifestfilen](https://reportbuilder.an.adobe.com/manifest.xml) manuellt och lagra filen i din egen IT-infrastruktur. <br/>Följ [onlinedokumentationen ](https://learn.microsoft.com/en-us/office/dev/add-ins/publish/publish) för Microsoft Office om du vill ha anvisningar om hur du installerar en Excel-manifestfil som inte kan hanteras från Microsoft Store.
+- Du kan också hämta [manifestfilen](https://reportbuilder.an.adobe.com/manifest.xml) manuellt och lagra filen i din egen IT-infrastruktur. <br/>Följ [onlinedokumentationen &#x200B;](https://learn.microsoft.com/en-us/office/dev/add-ins/publish/publish) för Microsoft Office om du vill ha anvisningar om hur du installerar en Excel-manifestfil som inte kan hanteras från Microsoft Store.
 
 När du har installerat Report Builder-tillägget visas Report Builder-ikonen i menyfliksområdet [!DNL Excel] på fliken Hem.
 
