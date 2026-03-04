@@ -4,7 +4,7 @@ title: Filtrera och ordna
 feature: Freeform Tables
 role: User, Admin
 exl-id: 15fea9e2-f8d8-4489-9a44-e74a351b8f36
-source-git-commit: e288365f2c984b64ae8c16ce023a7a0357a0e2b7
+source-git-commit: 734b76ab304c023e2b80ca30d085401e5b025849
 workflow-type: tm+mt
 source-wordcount: '1538'
 ht-degree: 0%
@@ -150,8 +150,6 @@ Så här sorterar du data i tabeller efter en kolumn:
    Sorteringsikonen är fortfarande synlig när sortering används på kolumnen. En pil anger hur data sorteras (![Sortera](/help/assets/icons/SortOrderUp.svg) för stigande eller ![Sortera](/help/assets/icons/SortOrderDown.svg) för fallande).
 
 ## Sortera tabeller efter flera kolumner (avancerad sortering)
-
-{{release-limited-testing-section}}
 
 ### Använda sortering på flera kolumner
 

@@ -4,7 +4,7 @@ description: Lär dig vilka komponenter Adobe Analytics har och hur du kan anvä
 feature: Components
 role: User, Admin
 exl-id: e2c98c77-64ee-4349-956a-3ab092e36017
-source-git-commit: 665319bdfc4c1599292c2e7aea45622d77a291a7
+source-git-commit: 734b76ab304c023e2b80ca30d085401e5b025849
 workflow-type: tm+mt
 source-wordcount: '870'
 ht-degree: 2%
@@ -110,8 +110,6 @@ Du kan söka efter, filtrera och sortera komponentlistan på den vänstra panele
 4. Du kan sortera komponentlistan enligt beskrivningen i [Sortera komponentlistan](#sort-the-component-list).
 
 ### Sortera
-
-<!-- {{release-limited-testing-section}}-->
 
 1. (Valfritt) Tillämpa eventuella filter på komponentlistan enligt beskrivningen i [Filtrera komponentlistan](#filter-the-component-list).
 
