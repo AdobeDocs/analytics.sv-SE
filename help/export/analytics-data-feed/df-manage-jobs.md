@@ -3,18 +3,27 @@ title: Hantera dataflödesjobb
 description: Lär dig hur du hanterar enskilda jobb i dataflöden. Navigera i gränssnittet, använd filter och sök, och hitta kolumndefinitioner.
 feature: Data Feeds
 exl-id: b17e333e-290f-42e4-b304-1e34282237a7
-source-git-commit: d042bdb680504fdbf0ba346e5829713e529bd543
+source-git-commit: bf0d91c65e259f789e5f55ece0735ed387b7482e
 workflow-type: tm+mt
-source-wordcount: '414'
-ht-degree: 2%
+source-wordcount: '521'
+ht-degree: 1%
 
 ---
 
-# Hantera datafeedjobb
+# Hantera datafeedjobb {#manage-data-feed-jobs}
 
 Jobb är enskilda uppgifter som genererar en komprimerad fil. De skapas och styrs av feeds.
 
 Du kan visa jobbhistoriken för varje datafeed, skicka om jobb eller bearbeta om jobb.
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aa_datafeed_job_history"
+>title="Jobbhistorik för datafeed"
+>abstract="Du kan visa en lista med dataflödesjobb för en viss datafeed från den här sidan. Sök efter jobb med Begär-ID eller Periodstartdatum för Begär. Information om varje jobb visas i tillgängliga kolumner. Du kan också skicka om ett jobb med samma data eller bearbeta om källdata för ett jobb innan du skickar om det."
+
+<!-- markdownlint-enable MD034 -->
 
 ## Visa jobbhistorik för en datafeed
 
@@ -68,6 +77,8 @@ Så här skickar du om ett eller flera datafeedjobb:
 
 1. Markera kryssrutan bredvid den datafeed som innehåller de jobb som du vill skicka om och välj sedan [!UICONTROL **Jobbhistorik**].
 
+1. (Valfritt) I sökfältet söker du efter ID för begäran eller periodens startdatum för att söka i listan över dataflödesjobb.
+
 1. Markera kryssrutan bredvid ett eller flera datafeedjobb och välj sedan **[!UICONTROL Resend]**. <!-- What does the status need to be? Error, ... -->
 
    ![Bearbeta om datafeedjobb](assets/data-feed-job-resend.png)
@@ -81,6 +92,8 @@ Så här bearbetar du om ett eller flera datafeedjobb:
 1. I Adobe Analytics väljer du [!UICONTROL **Admin**] > [!UICONTROL **Dataflöden**].
 
 1. Markera kryssrutan bredvid den datafeed som innehåller de jobb som du vill bearbeta igen och välj sedan [!UICONTROL **Jobbhistorik**].
+
+1. (Valfritt) I sökfältet söker du efter ID för begäran eller periodens startdatum för att söka i listan över dataflödesjobb.
 
 1. Markera kryssrutan bredvid ett eller flera datafeedjobb och välj sedan **[!UICONTROL Reprocess]**. <!-- What does the status need to be? Error, ... -->
 

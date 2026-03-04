@@ -3,23 +3,32 @@ title: Hantera dataflöden
 description: Lär dig navigera i dataflödesgränssnittet. Ta reda på hur du skapar, redigerar och visar en datafeed.
 feature: Data Feeds
 exl-id: 4d4f0062-e079-48ff-9464-940c6425ad54
-source-git-commit: 8b1e25b9633b6db3e49da079f7014e6b7b595474
+source-git-commit: bf0d91c65e259f789e5f55ece0735ed387b7482e
 workflow-type: tm+mt
-source-wordcount: '1264'
+source-wordcount: '1296'
 ht-degree: 0%
 
 ---
 
-# Hantera dataflöden
+# Hantera dataflöden {#manage-data-feeds}
 
 Med dataflödeshanteraren kan du skapa, redigera och ta bort dataflöden för din organisation. Om du har behörighet att komma åt dataflödeshanteraren kan du hantera dataflöden för alla rapportsviter som är synliga för dig.
 
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dataflödeshantering](https://experienceleague.adobe.com/sv/docs/analytics-learn/tutorials/exporting/data-feeds/data-feeds-management-ui){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dataflödeshantering](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/exporting/data-feeds/data-feeds-management-ui){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aa_datafeed_manager"
+>title="Hantera dataflöden"
+>abstract="Du kan visa, skapa och hantera dataflöden från den här sidan. Sök efter feeds efter namn eller ID, eller markera filterikonen om du vill visa tillgängliga filter."
+
+<!-- markdownlint-enable MD034 -->
 
 
 ## Visa dataflöden
@@ -62,7 +71,7 @@ Med knappen **[!UICONTROL Create data feed]** kan du skapa en ny feed. Mer infor
 
 1. Använd sökning eller filter för att hitta en viss feed.
 
-   * Börja skriva namnet på en feed i sökfältet. Endast de feeds som matchar visas i listan över tillgängliga feeds.
+   * Börja skriva in namnet eller ID:t för en feed i sökfältet. Endast de feeds som matchar visas i listan över tillgängliga feeds.
 
      ![Sök](assets/search.png)
 
