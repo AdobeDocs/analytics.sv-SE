@@ -42,7 +42,7 @@ Panelen Segmentjämförelse visar de mest statistiskt signifikanta skillnaderna 
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Segmentjämförelse](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/components/segmentation/segment-comparison-in-analysis-workspace){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Segmentjämförelse](https://experienceleague.adobe.com/sv/docs/analytics-learn/tutorials/components/segmentation/segment-comparison-in-analysis-workspace){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 

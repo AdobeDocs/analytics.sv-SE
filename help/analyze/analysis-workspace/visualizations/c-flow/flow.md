@@ -31,7 +31,7 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-_I den här artikeln dokumenteras Flödesvisualiseringen i_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**._<br/>_Se [Flow](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/flow/flow) för_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**-versionen av den här artikeln._
+_I den här artikeln dokumenteras Flödesvisualiseringen i_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**._<br/>_Se [Flow](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-workspace/visualizations/flow/flow) för_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**-versionen av den här artikeln._
 
 >[!ENDSHADEBOX]
 
@@ -47,7 +47,7 @@ Med visualiseringen kan du
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Flödesvisualisering](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/flow-visualization){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Flödesvisualisering](https://experienceleague.adobe.com/sv/docs/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/flow-visualization){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 
@@ -68,7 +68,7 @@ Varje kolumn kan ha olika dimensioner. Dra en dimension och släpp den i en slä
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Ytterligare funktioner i Flödesvisualisering](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/understand-your-data-fallout-flow){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Ytterligare funktioner i Flödesvisualisering](https://experienceleague.adobe.com/sv/docs/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/understand-your-data-fallout-flow){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 

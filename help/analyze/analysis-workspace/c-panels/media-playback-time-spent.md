@@ -60,7 +60,7 @@ Den uppspelningstid som spenderas kan hjälpa dig att förstå:
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Medieuppspelningstiden i panelen &#x200B;](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/media-analytics/measuring-media-analytics/media-playback-time-spent-panel){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Medieuppspelningstiden i panelen &#x200B;](https://experienceleague.adobe.com/sv/docs/analytics-learn/tutorials/media-analytics/measuring-media-analytics/media-playback-time-spent-panel){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 
@@ -147,7 +147,7 @@ Playback Time Spent can help you understand:
 
 Following is a video overview of this panel:
 
->[!VIDEO](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/media-analytics/measuring-media-analytics/media-playback-time-spent-panel)
+>[!VIDEO](https://experienceleague.adobe.com/sv/docs/analytics-learn/tutorials/media-analytics/measuring-media-analytics/media-playback-time-spent-panel)
 
 ## Use the Media Playback Time Spent panel
 
