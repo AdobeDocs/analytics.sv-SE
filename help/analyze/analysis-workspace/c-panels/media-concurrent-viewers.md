@@ -35,7 +35,7 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-_Den här artikeln visar panelen Medievisningsprogram för samtidig användning i_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics Analytics**._<br/>_Se [Panelen för visningsprogram för samtidiga media](/help/analyze/analysis-workspace/c-panels/media-concurrent-viewers.md) för_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**-versionen av den här artikeln._
+_Den här artikeln visar panelen Medievisningsprogram för samtidig användning i_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics Analytics**._<br/>_Se [Panelen för visningsprogram för samtidiga media](/help/analyze/analysis-workspace/c-panels/media-concurrent-viewers.md) för_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**-versionen av den här artikeln._
 
 >[!ENDSHADEBOX]
 
@@ -56,7 +56,7 @@ I Analysis Workspace är indikatorn för Concurrent viewers antalet unika person
 
 >[!BEGINSHADEBOX]
 
-En demonstrationsvideo finns i ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Panelen Medievisningsprogram för samtidig användning](https://experienceleague.adobe.com/sv/docs/analytics-learn/tutorials/analysis-workspace/using-panels/media-concurrent-viewers-panel-in-analysis-workspace){target="_blank"} .
+En demonstrationsvideo finns i ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Panelen Medievisningsprogram för samtidig användning](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/using-panels/media-concurrent-viewers-panel-in-analysis-workspace){target="_blank"} .
 
 >[!ENDSHADEBOX]
 
@@ -131,7 +131,7 @@ Det finns ingen friformstabell i den här vyn.  Om du vill visa datakällan kan 
 >[!MORELIKETHIS]
 >
 >[Skapa en panel](/help/analyze/analysis-workspace/c-panels/panels.md#create-a-panel)
->[Medieuppspelningstid för panelen &#x200B;](media-playback-time-spent.md)
+>[Medieuppspelningstid för panelen ](media-playback-time-spent.md)
 >[Medie - genomsnittlig minutmålspanel](average-minute-audience-panel.md)
 >
 <!--
@@ -145,7 +145,7 @@ The Media Concurrent Viewers panel enables analysis of concurrent viewers over t
 
 Here is a video overview of this panel:
 
->[!VIDEO](https://experienceleague.adobe.com/sv/docs/analytics-learn/tutorials/analysis-workspace/using-panels/media-concurrent-viewers-panel-in-analysis-workspace)
+>[!VIDEO](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/using-panels/media-concurrent-viewers-panel-in-analysis-workspace)
 
 ## Panel Inputs {#Input}
 

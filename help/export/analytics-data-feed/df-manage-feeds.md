@@ -17,7 +17,7 @@ Med dataflödeshanteraren kan du skapa, redigera och ta bort dataflöden för di
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dataflödeshantering](https://experienceleague.adobe.com/sv/docs/analytics-learn/tutorials/exporting/data-feeds/data-feeds-management-ui){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dataflödeshantering](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/exporting/data-feeds/data-feeds-management-ui){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 
