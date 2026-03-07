@@ -17,7 +17,7 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->Enhetsdiagram i enhetsövergripande analyser är [föråldrat](https://experienceleague.adobe.com/en/docs/discontinued/using/device-graph) och inte längre tillgängligt den **31 december 2025**. Växla en eventuell aktiverad virtuell rapportsvit för enhetsdiagram till den [fältbaserade metoden](/help/components/cda/field-based-stitching.md).
+>Enhetsdiagram i enhetsövergripande analyser är [föråldrat](https://experienceleague.adobe.com/sv/docs/discontinued/using/device-graph) och inte längre tillgängligt den **31 december 2025**. Växla en eventuell aktiverad virtuell rapportsvit för enhetsdiagram till den [fältbaserade metoden](/help/components/cda/field-based-stitching.md).
 >
 
 
