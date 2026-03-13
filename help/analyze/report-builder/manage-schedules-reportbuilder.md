@@ -6,9 +6,9 @@ feature: Report Builder
 type: Documentation
 solution: Analytics
 exl-id: fc0357f7-1762-47e4-9691-5fbdb177d45b
-source-git-commit: c3fe537967473754a3b5fe88c7b383647b2c742e
+source-git-commit: 6f55f750fa7243a445057dfb47d31d7cdeaed5dc
 workflow-type: tm+mt
-source-wordcount: '317'
+source-wordcount: '368'
 ht-degree: 0%
 
 ---
@@ -29,14 +29,19 @@ Du kan visa och hantera alla schemalagda arbetsböcker på fliken **[!UICONTROL 
 
 1. Välj **[!UICONTROL Schedule]** i Report Builder-hubben
 
-1. Välj fliken **[!UICONTROL Workbooks]**. Du ser en lista över alla schemalagda arbetsböcker.
+1. Välj fliken **[!UICONTROL Workbooks]**. Du ser en lista över alla schemalagda arbetsböcker. (Du kan också välja fliken **[!UICONTROL Legacy]** om du vill visa en lista över äldre arbetsböcker som behöver migreras till den nya Report Builder.)
 
    ![Schemalagd arbetsbok](assets/scheduled-workbooks.png){zoomable="yes"}
 
-   Du kan hålla muspekaren över ikonen om du vill visa statusen för en schemalagd arbetsbok.
+1. Gör något av följande:
 
-   Använd ![Sök](/help/assets/icons/Search.svg) om du vill söka efter specifika schemalagda arbetsböcker.
-Använd ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) för att definiera vilka kolumner som ska visas.
+   * Håll muspekaren över ikonen om du vill visa statusen för en schemalagd arbetsbok.
+
+   * Sök efter specifika schemalagda arbetsböcker i sökfältet ![Sök](/help/assets/icons/Search.svg).
+
+   * Välj kolumnikonen ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) för att definiera vilka kolumner som ska visas.
+
+   * Markera filterikonen ![Filterikonen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) och välj sedan [!UICONTROL **Visa alla**] för att visa alla schemalagda arbetsböcker för en viss organisation.
 
 1. Markera en eller flera arbetsböcker.
 
