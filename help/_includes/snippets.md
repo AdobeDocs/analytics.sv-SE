@@ -1,7 +1,7 @@
 ---
-source-git-commit: 611dedca3782ac0381a85230d72c2cfe0e4f67b8
+source-git-commit: e33dd7e8c67ebbc3976bddb0cdf6d0a6bae5a5ec
 workflow-type: tm+mt
-source-wordcount: '2983'
+source-wordcount: '2985'
 ht-degree: 0%
 
 ---
@@ -72,7 +72,7 @@ En attribueringsmodell avgör vilka dimensionsobjekt som får kredit för ett m�
 | ![Senaste beröring](/help/assets/icons/AttributeLastTouch.svg) | Senaste beröring | Ger 100 % uppskattning av den beröringspunkt som inträffade senast före konverteringen. Den här attribueringsmodellen är vanligtvis standardvärdet för alla mätvärden där ingen attributmodell har angetts på annat sätt. Organisationer använder vanligtvis den här modellen där tiden för konvertering är ganska kort, till exempel när interna söknyckelord analyseras. |
 | ![Första beröring](/help/assets/icons/AttributeFirstTouch.svg) | Första beröring | Ger 100 % kredit till den beröringspunkt som först ses i attribueringssökningsfönstret. Organisationer använder vanligtvis den här modellen för att förstå varumärkesmedvetenhet och kundvärvning. |
 | ![Linjär](/help/assets/icons/AttributeLinear.svg) | Linjär | Ger samma beröm till alla kontaktytor som leder till konvertering. Det är användbart när konverteringscyklerna är längre eller kräver mer frekvent kundengagemang. Organisationer använder vanligtvis den här attribueringsmodellen för att mäta hur effektiva mobilappsaviseringar är eller med prenumerationsbaserade produkter. |
-| ![Deltagande](/help/assets/icons/AttributeParticipation.svg) | deltagande | Alla unika kontaktpunkter får 100 % beröm. Eftersom varje beröringspunkt får 100 % rabatt läggs måttdata vanligtvis till mer än 100 %. Om en dimensionspost visas flera gånger som leder till en konvertering, dupliceras värdena till 100 %. Den här attribueringsmodellen är perfekt i situationer där du vill förstå vilka kontaktpunkter kunderna exponeras mest för. Medieorganisationer använder vanligtvis den här modellen för att beräkna innehållets hastighet. Butiksorganisationer använder vanligtvis den här modellen för att förstå vilka delar av deras sajt som är avgörande för konverteringen. |
+| ![Deltagande](/help/assets/icons/AttributeParticipation.svg) | Deltagande | Ger 100 % kredit för alla unika beröringspunkter. Eftersom varje beröringspunkt får 100 % rabatt läggs måttdata vanligtvis till mer än 100 %. Om en dimensionspost visas flera gånger som leder till en konvertering, dupliceras värdena till 100 %. Den här attribueringsmodellen är perfekt i situationer där du vill förstå vilka kontaktpunkter kunderna exponeras mest för. Medieorganisationer använder vanligtvis den här modellen för att beräkna innehållets hastighet. Butiksorganisationer använder vanligtvis den här modellen för att förstå vilka delar av deras sajt som är avgörande för konverteringen. |
 | ![Samma beröring](/help/assets/icons/AttributeSameTouch.svg) | Samma beröring | Ger 100 % kredit till samma händelse som konverteringen inträffade. Om en beröringspunkt inte inträffar för samma händelse som en konvertering, blockeras den under Ingen. Den här attribueringsmodellen är ibland lika med att inte ha någon attribueringsmodell alls. Det är värdefullt i scenarier där du inte vill ha värden från andra händelser som påverkar hur ett mätvärde ger kredit till dimensionsobjekt. Produkt- eller designteam kan använda den här modellen för att utvärdera hur effektiv en sida är där konverteringen sker. |
 | ![U-form](/help/assets/icons/AttributeUShaped.svg) | U Shaped | Ger 40 % uppskattning av den första interaktionen, 40 % tack vare den sista interaktionen och delar de återstående 20 % på alla beröringspunkter däremellan. Vid konvertering med en enda kontaktpunkt får du 100 % kredit. För konverteringar med två kontaktpunkter får båda 50 % rabatt. Den här attribueringsmodellen används bäst i scenarier där du värdesätter den första och den sista interaktionen mest, men inte helt vill avvisa ytterligare interaktioner däremellan. |
 | ![J-kurva](/help/assets/icons/AttributeJCurve.svg) | J-kurva | Ger 60 % kreativitet till den senaste interaktionen, 20 % tack till den första interaktionen och delar de återstående 20 % på alla kontaktpunkter däremellan. Vid konvertering med en enda kontaktpunkt får du 100 % kredit. För konverteringar med två kontaktpunkter får 75 % poäng för den senaste interaktionen och 25 % kredit ges till den första. I likhet med U-Shaped är den här attribueringsmodellen att föredra den första och sista interaktionen, men den är mer prioriterad än den sista interaktionen. |
@@ -87,7 +87,7 @@ En attribueringsmodell avgör vilka dimensionsobjekt som får kredit för ett m�
 
 En attribueringsbehållare definierar det önskade omfånget för attribueringen. Möjliga alternativ är:
 
-* **Besök**: Kontrollerar konverteringar från besöksbehållarens omfattning. När **[!UICONTROL Visit]** har valts ställs fönstret [Attribution Lookback &#x200B;](#atribution-lookback-window) automatiskt in på **[!UICONTROL Reporting window]** och kan inte ändras.
+* **Besök**: Kontrollerar konverteringar från besöksbehållarens omfattning. När **[!UICONTROL Visit]** har valts ställs fönstret [Attribution Lookback ](#atribution-lookback-window) automatiskt in på **[!UICONTROL Reporting window]** och kan inte ändras.
 * **Besökare**: Kontrollerar konverteringar från besökarbehållarens omfång.
 
 ## Fönstret Tilldelningssökning {#attribution-lookback-window}
@@ -105,9 +105,9 @@ Ett uppslagsfönster är den tid som en konvertering bör titta tillbaka för at
 
 Titta på följande exempel:
 
-1. Den 15 september kommer en besökare till er webbplats via en betald sökannons, sedan går han.
-1. Den 18 september kommer besökaren till er webbplats igen via en länk för sociala medier som de fått från en vän. De lägger till flera artiklar i kundvagnen, men köper ingenting.
-1. Den 24 september skickar marknadsföringsteamet ett e-postmeddelande med en kupong för några av artiklarna i kundvagnen. De använder kupongen, men besöker flera andra sajter för att se om det finns några andra kuponger. De hittar en till genom en displayannons och gör sedan ett köp för 50 dollar.
+1. Den 15 september kommer en besökare till din webbplats genom en betald sökannons, sedan lämnar.
+1. Den 18 september anländer besökaren till din webbplats igen via en länk till sociala medier som de fått från en vän. De lägger flera artiklar i sin vagn, men köper ingenting.
+1. Den 24 september skickar marknadsföringsteamet ett e-postmeddelande till dem med en kupong för några av artiklarna i deras kundvagn. De tillämpar kupongen, men besöka flera andra webbplatser för att se om några andra kuponger finns tillgängliga. De hittar en till genom en displayannons och gör sedan ett köp för 50 dollar.
 
 Beroende på din attribueringsmodell får behållare och kanaler olika krediter. Se tabellen nedan för exempel:
 
@@ -131,14 +131,14 @@ Använd följande information för att välja den visualisering som bäst passar
 | Funktion | Reseduk | Utfall | Flöde |
 |---------|----------|---------|---------|
 | **Fördefinierad sidsekvens** | Ja</br>Kombinerar fördefinierad och undersökande analys. Den slutliga sökvägen används när fördefinierade noder används på banan (besökare räknas så länge de till slut går från en fördefinierad nod till en annan). Nästa nod som är direkt (inte slutgiltig) kan också visas. | Ja</br>Sökvägen kan vara en slutlig sökväg eller begränsas till nästa kontaktyta | Nej |
-| **Utforska sidsekvenser (ad hoc-analys)** | Ja</br>Kombinerar fördefinierad och undersökande analys. Den slutliga sökvägen används när fördefinierade noder används på banan (besökare räknas så länge de till slut går från en fördefinierad nod till en annan). Nästa nod som är direkt (inte slutgiltig) kan också visas. | Begränsad</br>Du kan högerklicka och visa direkt utfall i en friformstabell. | Ja</br>Endast experimentell analys. Alltid inom en dimensionsinstans mellan noder. Det innebär att varje nod visar den omedelbara (inte slutliga) nästa kontaktyta längs banan. |
+| **Utforska sidsekvenser (ad hoc-analys)** | Ja</br>Kombinerar fördefinierad analys och undersökande analys. Den slutliga sökvägen används när fördefinierade noder används på banan (besökare räknas så länge de så småningom flyttar från en fördefinierad nod till en annan). Du kan även visa de närmaste noderna (inte de slutgiltiga). | Begränsad</br>Du kan högerklicka och visa direkt utfall i en friformstabell. | Ja</br>Endast experimentell analys. Alltid inom en dimensionsinstans mellan noder. Det innebär att varje nod visar den omedelbara (inte slutliga) nästa kontaktyta längs banan. |
 | **Visar var personer slutade (föll ut) och fortsatte igenom (gick igenom)** | Ja</br>Visar både fördefinierade och experimentella resor | Ja</br>Visar fördefinierade resor | Ja</br>Visar för experimentella resor |
 | **Linjära resor** | Ja | Ja | Nej |
 | **Icke-linjära resor med flera startpunkter och sökvägar** | Ja | Nej | Ja |
 | **Primärt mått** | Alla mått, inklusive beräknade värden | Endast session eller person | Endast förekomster (banvyer) |
 | **Sekundärt mått** | Ja<p>Alla mått, inklusive beräknade värden</p> | Nej | Nej |
 | **Komponentstöd i noder eller kontaktytor** | Mätvärden, dimensionsobjekt, filter och datumintervall. | Mätvärden, dimensionsobjekt, filter och datumintervall. | Endast dimensionsobjekt (utom start- och slutkontaktytan) |
-| **Jämför filter** | Nej | Ja<p>Jämför två olika filter sida vid sida i samma rapport.</p> | Nej |
+| **Jämför filter** | Nej | Ja<p>Jämföra två olika filter sida vid sida i samma rapport.</p> | Nej |
 | **Komponentinteraktion genom att dra och släppa** | Ja | Ja | Nej |
 | **Adobe Journey Optimizer-resor** | Ja</br>Öppna resor från Journey Optimizer för djupgående analyser och anpassningar | Nej | Nej |
 
@@ -150,14 +150,14 @@ Använd följande information för att välja den visualisering som bäst passar
 
 | Taggar | Beskrivning |
 |---|---|
-| ![Taggar](/help/assets/filter-tag.png){width="300"} | I avsnittet **[!UICONTROL Tags]** kan du filtrera efter taggar. <ul><li>Du kan ![söka efter &#x200B;](/help/assets/icons/Search.svg) *söktaggar* om du vill söka efter taggar som du kan använda för att filtrera.</li><li>Du kan markera flera taggar. Vilka märkord som är tillgängliga beror på vilka markeringar du har gjort i andra avsnitt på filterpanelen.</li><li>Siffrorna anger:<ul><li>**(1)**: Antalet markerade taggar (om en eller flera taggar har valts).</li><li>**2︎⃣**: Antalet tillgängliga taggar för objekten som är resultatet av det aktuella filtret.</li><li>7︎⃣: Antalet objekt som är associerade med den specifika taggen.</li></ul></li></ul> |
+| ![Taggar](/help/assets/filter-tag.png){width="300"} | I avsnittet **[!UICONTROL Tags]** kan du filtrera efter taggar. <ul><li>Du kan ![söka efter ](/help/assets/icons/Search.svg) *söktaggar* om du vill söka efter taggar som du kan använda för att filtrera.</li><li>Du kan markera flera taggar. Vilka märkord som är tillgängliga beror på vilka markeringar du har gjort i andra avsnitt på filterpanelen.</li><li>Siffrorna anger:<ul><li>**(1)**: Antalet markerade taggar (om en eller flera taggar har valts).</li><li>**2︎⃣**: Antalet tillgängliga taggar för objekten som är resultatet av det aktuella filtret.</li><li>7︎⃣: Antalet objekt som är associerade med den specifika taggen.</li></ul></li></ul> |
 
 
 ## Filteravsnitt för rapportsviten {#reportsuitefiltersection}
 
 | Rapportsvit | Beskrivning |
 |---|---|
-| ![Skicka om programsvit](/help/assets/filter-reportsuite.png){width="300"} | I avsnittet **[!UICONTROL Report suite]** kan du filtrera efter rapportgrupper. <ul><li>Du kan ![söka](/help/assets/icons/Search.svg) *Sök i rapportsviter* om du vill söka efter rapportsviter som du kan använda för att filtrera.</li><li>Du kan välja mer än en rapportserie. Vilka rapportsviter som är tillgängliga beror på vad som har gjorts i andra avsnitt på filterpanelen.</li><li>Siffrorna anger:<ul><li>**(2)**: Antalet valda rapportsviter (om en eller flera rapportsviter har valts).</li><li>**3︎⃣**: Antalet rapportsviter som är tillgängliga för objekten som är resultatet av det aktuella filtret.</li><li>4︎⃣: Antalet objekt som är associerade med den specifika rapportsviten.</li></ul></li></ul> |
+| ![Skicka om programsvit](/help/assets/filter-reportsuite.png){width="300"} | I avsnittet **[!UICONTROL Report suite]** kan du filtrera efter rapportgrupper. <ul><li>Du kan ![söka](/help/assets/icons/Search.svg) *Sök i rapportsviter* om du vill söka efter rapportsviter som du kan använda för att filtrera.</li><li>Du kan välja fler än en rapportserie. Vilka rapportsviter som är tillgängliga beror på vilka val du gör i andra avsnitt på filterpanelen.</li><li>Siffrorna visar:<ul><li>**(2)**: Antalet valda rapportsviter (om en eller flera rapportsviter har valts).</li><li>**3︎⃣**: Antalet rapportsviter som är tillgängliga för objekten som är resultatet av det aktuella filtret.</li><li>4︎⃣: Antalet objekt som är associerade med den specifika rapportsviten.</li></ul></li></ul> |
 
 ## Aktiverat statusfilteravsnitt {#enabledstatusfiltersection}
 
@@ -175,7 +175,7 @@ Använd följande information för att välja den visualisering som bäst passar
 
 | Ägare | Beskrivning |
 |---|---|
-| ![Ägare](/help/assets/filter-owners.png){width="300"} | I avsnittet **[!UICONTROL Owner]** kan du filtrera efter ägare. <ul><li>Du kan ![söka](/help/assets/icons/Search.svg) *sökägare* om du vill söka efter ägare som du kan använda för att filtrera.</li><li>Du kan välja mer än en ägare. Vilka ägare som är tillgängliga beror på vad som har gjorts i andra avsnitt på filterpanelen.</li><li>Siffrorna anger:<ul><li>**(2)**: Antalet valda ägare (om en eller flera ägare har valts).</li><li>**3︎⃣**: Antalet ägare som är tillgängliga för objekten som är resultatet av det aktuella filtret.</li><li>4︎⃣: Antalet objekt som är associerade med den specifika ägaren.</li></ul></li></ul> |
+| ![Ägare](/help/assets/filter-owners.png){width="300"} | I avsnittet **[!UICONTROL Owner]** kan du filtrera efter ägare. <ul><li>Du kan ![söka](/help/assets/icons/Search.svg) *efter ägare* för att söka efter ägare som du kan använda för att filtrera.</li><li>Du kan välja mer än en ägare. Vilka ägare som är tillgängliga beror på vilka val som görs i andra avsnitt på panelen Filter.</li><li>Siffrorna visar:<ul><li>**(2)**: Antalet valda ägare (om en eller flera ägare har valts).</li><li>**3︎⃣**: Antalet ägare som är tillgängliga för objekten som är resultatet av det aktuella filtret.</li><li>4︎⃣: Antalet objekt som är associerade med den specifika ägaren.</li></ul></li></ul> |
 
 ## Andra filteravsnitt {#otherfiltersfiltersection}
 
@@ -187,14 +187,14 @@ Använd följande information för att välja den visualisering som bäst passar
 
 | Tillämpat datumintervall | Beskrivning |
 |---|---|
-| ![Datumintervall](/help/assets/filter-daterange.png){width="300"} | I avsnittet Använt datumintervall kan du filtrera efter ett datumintervall som gäller för artiklarna.<ol><li>Välj ett datumintervall.</li><li>Ange ett datumintervall i kalenderpopup eller välj en av de tillgängliga förinställningarna.<br>Du kan också ange ett datumintervall direkt i datumintervallet på panelen Filter.</li></ol><ul><li>Siffrorna anger:<ul><li>**(1)**: Antalet ändrade datumintervall som har ändrats från standardförinställningar.</li><li>**5︎⃣**: Antalet datumintervall som är tillgängliga för objekten från det aktuella filtret.</li></ul> |
+| ![Datumintervall](/help/assets/filter-daterange.png){width="300"} | I avsnittet Använt datumintervall kan du filtrera efter ett datumintervall som gäller för artiklarna.<ol><li>Välj ett datumintervall.</li><li>Ange ett datumintervall i kalenderpopup eller välj en av de tillgängliga förinställningarna.<br>Du kan också ange ett datumintervall direkt i datumintervallet på panelen Filter.</li></ol><ul><li>Siffrorna anger:<ul><li>**(1)**: Antalet ändrade datumintervall som har ändrats från standardförinställningar.</li><li>**5︎⃣**: Antalet tillgängliga datumintervall för objekten som skapas av det aktuella filtret.</li></ul> |
 
 
-## Undertryckt klassificeringsimporterare {#classification-importer-deprecation}
+## Avskrivning från klassificeringsimportör {#classification-importer-deprecation}
 
 >[!WARNING]
 >
->Klassificeringsimporteraren kommer att bli inaktuell den **31 augusti 2026**. Växla till att använda funktionen [Klassificeringsuppsättningar](/help/components/classifications/sets/overview.md) för att säkerställa fortsatt funktionalitet.
+>Klassificeringsimportören kommer att fasas ut **31 augusti 2026**. Byt till [Klassificeringsuppsättningar](/help/components/classifications/sets/overview.md) för att säkerställa fortsatt funktionalitet.
 >
 
 
@@ -203,7 +203,7 @@ Använd följande information för att välja den visualisering som bäst passar
 
 >[!WARNING]
 >
->Klassificeringsregelbyggaren kommer att bli inaktuell den **31 augusti 2026**. Växla till [Klassificeringsuppsättningen anger regler](/help/components/classifications/sets/manage/rules.md) när den är tillgänglig för att säkerställa fortsatt funktionalitet.
+>Klassificeringsregelbyggaren tas bort **28 februari 20276**. Växla till [Klassificeringsuppsättningen anger regler](/help/components/classifications/sets/manage/rules.md) när den är tillgänglig för att säkerställa fortsatt funktionalitet.
 >
 
 
