@@ -4,7 +4,7 @@ title: Spara projekt
 feature: Workspace Basics
 role: User, Admin
 exl-id: e8206956-6e24-4a3a-8c3f-8acf1fb9d800
-source-git-commit: ca84a5f807545d7196e2e0e90d3209c32d3fd789
+source-git-commit: 50e6a09e62db60a765da05fa65089a006f103a2b
 workflow-type: tm+mt
 source-wordcount: '789'
 ht-degree: 0%
@@ -88,7 +88,8 @@ Om du vill spara ett projekt manuellt när projektet är öppet i Analysis Works
   Du kan spara projektet i en annan mapp. Det ursprungliga projektet påverkas inte.
 
 
-<!-- Cannot find this option in CJA 
+<!--
+Cannot find this option in CJA 
 | **[!UICONTROL Save as template]** | Save your project as a [custom template](/help/analyze/analysis-workspace/build-workspace-project/starter-projects.md) that becomes available to your organization under **[!UICONTROL Project > New]** |
 -->
 
@@ -113,8 +114,8 @@ Så här återställer du ett återskapat projekt:
 1. Gå till mappen **[!UICONTROL Recovered Projects (Last 7 Days)]** på Analysis Workspace startsida.
 
 <!-- 
-     ![The list of folders highlighting the Recovered Project folder.](assets/recovered-folder.png)
-  -->
+   ![The list of folders highlighting the Recovered Project folder.](assets/recovered-folder.png)
+-->
 
 1. Öppna projektet och spara det där du vill.
 
@@ -158,7 +159,8 @@ Om webbläsaren kraschar eller om sessionen avbryts uppmanas du att återställa
 För **nya**-projekt som aldrig har sparats går det inte att återställa ändringar som inte har sparats.
 
 
-<!-- Shouldn't this belong to another page?  Moved it to a new open projects page
+<!--
+Shouldn't this belong to another page?  Moved it to a new open projects page
 
 
 ## Open previously saved version
@@ -175,7 +177,6 @@ To open a previously saved version of a project:
    [!UICONTROL Timestamp] and [!UICONTROL Editor] are shown, in addition to [!UICONTROL Notes] if they were added when the [!UICONTROL Editor] saved. Versions without notes are stored for 90 days; versions with notes are stored for 1 year.
 1. Select a previous version and click **[!UICONTROL Load]**.
    The previous version then loads with a notification. The previous version does not become the current saved version of your project until you click **[!UICONTROL Save]**. If you navigate away from the loaded version, when you return, you will see the last saved version of the project.
-
 -->
 
 
@@ -271,5 +272,4 @@ To open a previous version of a project:
    [!UICONTROL Timestamp] and [!UICONTROL Editor] are shown, in addition to [!UICONTROL Notes] if they were added when the [!UICONTROL Editor] saved. Versions without notes are stored for 90 days; versions with notes are stored for 1 year.
 1. Select a previous version and click **[!UICONTROL Load]**.
    The previous version then loads with a notification. The previous version does not become the current saved version of your project until you click **[!UICONTROL Save]**. If you navigate away from the loaded version, when you return, you will see the last saved version of the project. 
-
 -->

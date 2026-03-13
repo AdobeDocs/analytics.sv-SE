@@ -4,7 +4,7 @@ title: Filtrera och ordna
 feature: Freeform Tables
 role: User, Admin
 exl-id: 15fea9e2-f8d8-4489-9a44-e74a351b8f36
-source-git-commit: 734b76ab304c023e2b80ca30d085401e5b025849
+source-git-commit: 50e6a09e62db60a765da05fa65089a006f103a2b
 workflow-type: tm+mt
 source-wordcount: '1538'
 ht-degree: 0%
@@ -45,14 +45,16 @@ Så här exkluderar du specifika rader från en friformstabell:
 
    Håll ned ***Skift*** om du vill markera ett radintervall eller håll ned ***cmd***-tangenten (på Mac) eller ***ctrl***-tangenten (på Windows) om du vill markera flera rader.
 
-<!--### Right-click > Delete selected rows
+<!--
+### Right-click > Delete selected rows
 
 Note: this option does not seem to work. AN-338422
 
 1. Select 1 or more rows. 
 1. Right-click and select **[!UICONTROL Delete Selected Rows]**. 
 
-   This action will remove the rows from the table and apply a table filter.-->
+   This action will remove the rows from the table and apply a table filter.
+-->
 
 
 ### Använda ett enkelt eller avancerat filter på en tabell

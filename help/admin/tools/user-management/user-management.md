@@ -5,7 +5,7 @@ title: Hantering av användare och produkter
 feature: Admin Tools
 exl-id: c0fbbb3a-0011-49d2-89a2-70fce11e0fb2
 role: Admin
-source-git-commit: a6967c7d4e1dca5491f13beccaa797167b503d6e
+source-git-commit: 50e6a09e62db60a765da05fa65089a006f103a2b
 workflow-type: tm+mt
 source-wordcount: '252'
 ht-degree: 0%
@@ -25,10 +25,10 @@ Hantera användare, grupper och produkter i Adobe Admin Console med Analytics.
 | Aktivitet eller resurs | Beskrivning |
 | --- | --- |
 | Migrera användar-ID:n för Analytics till Adobe Admin Console | Adobe hjälper Analytics-administratörer att migrera användar-ID:n till Adobe Admin Console. Den här insatsen sker i vågor. När det är din tur att migrera dina användare kommer Adobe att meddela Analytics-administratörer via e-post med instruktioner. Ett migreringsverktyg finns i [Användarhantering för analys](/help/admin/tools/user-management/user-migration/c-migration-tool.md) för att förenkla den här aktiviteten.<p>**Viktigt**: Den dag dina användare migreras kopieras dina tidigare behörighetsgrupper automatiskt till Adobe Admin Console. Du kan inte längre bjuda in nya användare eller skapa nya grupper i administrationsverktygen för Analytics. Granska Frågor och svar och hjälp med användarmigrering från Analytics till Adobe Admin Console för information om hur du förbereder dig för migreringen och om administrativa funktioner som påverkas. |
-| Starta Adobe Admin Console | När dina användarkonton har migrerats kan du hantera användare och produkter över alla lösningar i Adobe Admin Console. Navigera till: `https://adminconsole.adobe.com/enterprise/`. Se även [Hantera Experience Cloud-användare och -produkter](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=sv-SE). |
+| Starta Adobe Admin Console | När dina användarkonton har migrerats kan du hantera användare och produkter över alla lösningar i Adobe Admin Console. Navigera till: `https://adminconsole.adobe.com/enterprise/`. Se även [Hantera Experience Cloud-användare och -produkter](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html). |
 | Hantera Adobe Analytics produktprofiler, användare och behörigheter | Se [Analyser i Adobe Admin Console](/help/admin/admin-console/home.md). |
 
-<!---
+<!--
 ## User Management Descriptions {#section_7C19842A3D4249109A9399D4DF18DE75}
 
 The following table describes elements on the [!UICONTROL Users] tab in [!UICONTROL User Management].

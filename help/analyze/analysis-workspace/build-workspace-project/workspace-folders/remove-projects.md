@@ -4,7 +4,7 @@ keywords: Analysis Workspace
 title: Ta bort projekt
 feature: Workspace Basics
 exl-id: d2e77111-569d-4eec-8e54-863a38b9ac20
-source-git-commit: 6fad2afb2b5792b6d6fbf8d94fff37b92cc18bda
+source-git-commit: 50e6a09e62db60a765da05fa65089a006f103a2b
 workflow-type: tm+mt
 source-wordcount: '27'
 ht-degree: 7%
@@ -18,7 +18,8 @@ Se [Åtgärder i Hantera projekt](../freeform-overview.md#actions) om hur du tar
 
 
 
-<!-- Is this article still needed; not in the TOC anymore
+<!--
+Is this article still needed; not in the TOC anymore
 
 
 # Delete projects

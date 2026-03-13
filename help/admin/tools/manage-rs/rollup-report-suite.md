@@ -4,7 +4,7 @@ title: Globala rapportsviter
 feature: Report Suite Settings
 exl-id: 97bdc9bd-2212-436b-b3b4-ec518624f9e6
 role: Admin
-source-git-commit: a6967c7d4e1dca5491f13beccaa797167b503d6e
+source-git-commit: 50e6a09e62db60a765da05fa65089a006f103a2b
 workflow-type: tm+mt
 source-wordcount: '399'
 ht-degree: 0%
@@ -33,7 +33,8 @@ Du kan tillhandahålla deluppsättningar av företagets globala rapportsvitsdata
 
 Att använda virtuella rapportsviter i stället för taggning i flera sviter är ofta en bra metod, men virtuella rapportsviter har vissa begränsningar. Se [Virtuella rapportsviter och taggningsöverväganden för flera programsviter](/help/components/vrs/vrs-considerations.md) för att ta reda på vilken rapportritmetod som är det bästa valet för ditt företags behov. En detaljerad jämförelse av virtuella rapportsviter och taggningsfunktioner för flera sviter finns i [Virtuella rapportsviter jämfört med taggning för flera sviter](/help/components/vrs/vrs-about.md).
 
-<!---## Rollup reports
+<!--
+## Rollup reports
 
 >[!NOTE]
 >
@@ -73,4 +74,4 @@ Limitations of Rollup Reports {#limitations-rollups}
 
 **Supported products**: Rollups could only be used in Reports & Analytics. They are not supported in Analysis Workspace, or Data Warehouse. Global report suites can be used across all products.
 
-**Number of aggregated report suites**: Rollups only support a maximum of 40 child report suites. Global report suites can be implemented on any number of domains or apps that you own.--->
+**Number of aggregated report suites**: Rollups only support a maximum of 40 child report suites. Global report suites can be implemented on any number of domains or apps that you own.-->

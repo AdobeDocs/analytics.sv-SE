@@ -4,7 +4,7 @@ description: Lär dig hur du skapar ett datumintervall som du kan använda i Ana
 feature: Date Ranges
 role: User
 exl-id: 62ce2ca5-4df1-43bf-88ce-3c9f106f4a59
-source-git-commit: ff38740116ac6f12033ebdc17cffa3250a30f3f7
+source-git-commit: 50e6a09e62db60a765da05fa65089a006f103a2b
 workflow-type: tm+mt
 source-wordcount: '448'
 ht-degree: 0%
@@ -26,7 +26,8 @@ Vem som helst kan skapa ett anpassat datumintervall. Du kan skapa ett datuminter
 
 Om du vill definiera anteckningen använder du [[!UICONTROL Date range builder]](#annotation-builder):
 
-<!-- Should we really mention API here. If so, we can do it all over the place in the docs...
+<!--
+Should we really mention API here. If so, we can do it all over the place in the docs...
 | **Use the [Customer Journey Analytics Annotations API](https://developer.adobe.com/cja-apis/docs/endpoints/annotations/)** | The Customer Journey Analytics Annotations APIs allow you to create, update, or retrieve annotations programmatically through Adobe Developer. These APIs use the same data and methods that Adobe uses inside the product UI. |
 -->
 

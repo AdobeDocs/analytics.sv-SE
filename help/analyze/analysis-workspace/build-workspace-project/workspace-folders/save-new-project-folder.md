@@ -4,7 +4,7 @@ keywords: Analysis Workspace
 title: Spara ett nytt projekt i en mapp
 feature: Workspace Basics
 exl-id: 9719c4f7-85f1-4f12-9ee4-26565a40f0d7
-source-git-commit: f258a1150a4bee11f5922d058930dc38b1ddfa14
+source-git-commit: 50e6a09e62db60a765da05fa65089a006f103a2b
 workflow-type: tm+mt
 source-wordcount: '35'
 ht-degree: 5%
@@ -15,7 +15,8 @@ ht-degree: 5%
 
 Mer information finns i [Spara projekt](../save-projects.md#save).
 
-<!-- Not in TOC anymore; irrelevant article
+<!--
+Not in TOC anymore; irrelevant article
 
 To save a new project to a specific folder, select the folder name in the Save project dialogue window.
 

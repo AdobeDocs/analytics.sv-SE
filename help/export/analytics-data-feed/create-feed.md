@@ -3,7 +3,7 @@ title: Skapa en datafeed
 description: Lär dig hur du skapar en datafeed och om filinformationen som ska skickas till Adobe.
 feature: Data Feeds
 exl-id: 36c8a40e-6137-4836-9d4b-bebf17b932bc
-source-git-commit: 9935b7ea08f5451d04431ae638ae0d24af32c07c
+source-git-commit: 50e6a09e62db60a765da05fa65089a006f103a2b
 workflow-type: tm+mt
 source-wordcount: '2052'
 ht-degree: 0%
@@ -81,7 +81,7 @@ Innan du skapar en datafeed är det viktigt att du har en grundläggande först�
    | [!UICONTROL **Paketeringstyp**] | Välj [!UICONTROL **Flera filer**] för de flesta dataflöden. Med det här alternativet numreras data till okomprimerade 2 GB-segment. (Om alternativet [!UICONTROL **Flera filer**] har valts och okomprimerade data för rapportfönstret är mindre än 2 GB skickas en fil.) Om du väljer **En fil** skapas `hit_data.tsv` -filen i en enda, potentiellt stor fil. |
    | [!UICONTROL **Manifest**] | Välj om du vill inkludera en manifestfil för varje datafeed-leverans. <p>Du kan välja mellan följande alternativ:</p><ul><li>**[!UICONTROL Manifest file]**: Innehåller information för varje fil som ingår i dataflödet.</li><li>**[!UICONTROL Finish file (Legacy)]**: Anger att dataflödet har slutförts. Ingen annan information inkluderas. Det här alternativet är lämpligt för befintliga feeds som ursprungligen använde det här alternativet och som måste bearbetas på nytt. Det är bara tillgängligt när du skickar data från dataflöden i ett enda paket. </li><li>**[!UICONTROL None]**: Det finns ingen fil</li></ul> |
    | [!UICONTROL **Skicka manifest även när inga data finns**] | Avgör om Adobe ska leverera en [manifestfil](/help/export/analytics-data-feed/c-df-contents/datafeeds-contents.md#feed-manifest) till målet när inga data samlas in för ett feed-intervall. Om du väljer **Manifest-filen** får du en manifestfil som liknar följande när inga data samlas in:<p>`text`</p><p>`Datafeed-Manifest-Version: 1.0`</p><p>`Lookup-Files: 0`</p><p>`Data-Files: 0`</p><p> `Total-Records: 0`</p> |
-   | [!UICONTROL **Ersätt strängar för operativsystem**] | När du samlar in data kan vissa tecken (till exempel nya rader) orsaka problem. Välj det här alternativet om du vill att dessa tecken ska tas bort från feed-filerna.<p>Det här alternativet identifierar följande strängsekvenser som är inbäddade i kunddata och ersätter dem med ett blanksteg:</p> <ul><li>**Windows:** CRLF, CR eller TAB</li><li>**Mac och Linux:** \n, \r eller \t</li></ul> |
+   | [!UICONTROL **Ersätt operativsystemssträngar**] | När du samlar in data kan vissa tecken (till exempel nya rader) orsaka problem. Välj det här alternativet om du vill att dessa tecken ska tas bort från feed-filerna.<p>Det här alternativet identifierar följande strängsekvenser som är inbäddade i kunddata och ersätter dem med ett blanksteg:</p> <ul><li>**Windows:** CRLF, CR eller TAB</li><li>**Mac och Linux:** \n, \r eller \t</li></ul> |
    | [!UICONTROL **Aktivera dynamiska sökningar**] | Med dynamiska sökningar kan du ta emot ytterligare sökfiler i din datafeed som annars inte är tillgänglig. Med den här inställningen kan följande uppslagstabeller skickas med varje dataflödesfil:<ul><li> **Transportföretagets namn**</li><li>**Mobilattribut**</li><li>**Operativsystemtyp**</li></ul><p>Mer information finns i [Dynamiska sökningar](/help/export/analytics-data-feed/c-df-contents/dynamic-lookups.md).</p> |
    | **Tillåt sena träffar** | Historiska data kan komma när ett datafeedjobb har avslutat bearbetningen för en viss timme eller dag, till exempel genom tidsstämplade träffar eller datakällor.<p>Välj det här alternativet om du vill inkludera data som har tagits emot efter att datafeedjobbet har slutfört databearbetningen inom den angivna rapporteringsfrekvensen (vanligtvis dagligen eller timvis). När det här alternativet är aktiverat tittar dataflödet varje gång data bearbetas i de senaste träffar som inträffat och grupperar dem i nästa dataflödesfil som skickas.</p><p>Mer information finns i [Sena träffar](/help/export/analytics-data-feed/c-df-contents/late-arriving-hits.md).</p> |
    | **Fönstret** för återsökning (för sena träffar) | Det här alternativet visas när alternativet **[!UICONTROL Allow late-arriving hits]** är aktiverat. Markera uppslagsfönstret om du vill begränsa tidsramen för sena träffar. Välj **[!UICONTROL Unlimited]** om du vill tillåta alla sena träffar, oavsett hur sena de är. Du kan välja ett förinställt intervall, t.ex. **[!UICONTROL 1 hour]**, **[!UICONTROL 2 hours]**, **[!UICONTROL 1 week]**, **[!UICONTROL 2 weeks]** o.s.v. Du kan också välja **[!UICONTROL Custom lookback window]** och sedan ange ett uppslagsfönster i fältet **[!UICONTROL Custom Lookback]** som är högst 26 280 timmar. |
@@ -108,13 +108,13 @@ Innan du skapar en datafeed är det viktigt att du har en grundläggande först�
 
    | Fält | Funktion |
    |---------|----------|
-   | [!UICONTROL **Frekvens**] | Ange hur ofta datafeeden ska skickas. De tillgängliga alternativen fylls i dynamiskt baserat på rapportsvitens konfiguration. <p>Följande alternativ är vanliga:</p><ul><li>**Dagligen**: Feeds innehåller data för en hel dag, från midnatt till midnatt i rapportsvitens tidszon. Använd det här alternativet för bakåtfyllnad eller historiska data, eller för att fortsätta feeds.</li><li>**Varje timme**: Feeds innehåller data för en timma. Använd det här alternativet om du vill fortsätta feeds.</li></ul><p>En 15 minuters exportfrekvens är möjlig, men är inte tillgänglig som standard. För att det här alternativet ska bli tillgängligt i din miljö måste du först kontakta Adobe kundtjänst och begära att rapportsviten är konfigurerad för att stödja 15-minuters export.</p> |
-   | [!UICONTROL **Bearbetningsfördröjning**] | Välj om du vill vänta en viss tid innan du bearbetar en dataflödesfil. En fördröjning kan vara användbar för att ge mobila implementeringar möjlighet att komma online och skicka data på offlineenheter. Den kan också användas för att hantera serverprocesser i organisationen när tidigare bearbetade filer hanteras. I de flesta fall behövs ingen fördröjning. Du kan fördröja en feed med upp till 8 timmar (480 minuter) eller ännu längre om du väljer en anpassad tidsmängd (9 999 minuters fördröjning eller ungefär 1 vecka). |
-   | [!UICONTROL **Kontinuerlig feed**] | När du väljer det här alternativet tas slutdatumet bort, vilket gör att en feed kan köras på obestämd tid. När en feed har avslutat bearbetningen av historiska data väntar en feed på data för att slutföra insamlingen under en given timme eller dag. När den aktuella timmen eller dagen är slut börjar bearbetningen efter den angivna fördröjningen. |
+   | [!UICONTROL **Frekvens**] | Ange hur ofta datafeeden ska skickas. De tillgängliga alternativen fylls i dynamiskt baserat på rapportsvitens konfiguration. <p>Följande alternativ är vanliga:</p><ul><li>**Dagligen**: Feeds innehåller data för en hel dag, från midnatt till midnatt i rapportsvitens tidszon. Använd det här alternativet för bakåtfyllnad eller historiska data, eller för att fortsätta feeds.</li><li>**Timvis**: Flöden innehåller data för en timme. Använd det här alternativet för att fortsätta matningar.</li></ul><p>Det går att exportera 15 minuter, men det är inte tillgängligt som standard. För att det här alternativet ska bli tillgängligt i din miljö måste du först kontakta Adobe kundtjänst och begära att din rapportserie är konfigurerad för att stödja 15-minuters exporter.</p> |
+   | [!UICONTROL **Bearbetningsfördröjning**] | Välj om du vill vänta en viss tid innan du bearbetar en datafeedfil. En fördröjning kan vara användbar för att ge mobilimplementeringar en möjlighet för offlineenheter att vara online och skicka data. Den kan också användas för att hantera serverprocesser i organisationen när tidigare bearbetade filer hanteras. I de flesta fall behövs ingen fördröjning. Du kan fördröja ett flöde med upp till 8 timmar (480 minuter), eller ännu längre om du väljer en anpassad tid (9 999 minuters fördröjning eller ungefär 1 vecka). |
+   | [!UICONTROL **Kontinuerligt flöde**] | När du väljer det här alternativet tas slutdatumet bort, vilket gör att en feed kan köras utan tidsbegränsning. När ett flöde har slutfört bearbetningen av historiska data väntar ett flöde på att data ska samlas in under en viss timme eller dag. När den aktuella timmen eller dagen är slut börjar bearbetningen efter den angivna fördröjningen. |
    | [!UICONTROL **Startdatum**] | Ange det datum då du vill att dataflödet ska börja. Om du omedelbart vill börja bearbeta dataflöden för historiska data anger du det här datumet till ett tidigare datum när data samlas in. Startdatumet baseras på rapportsvitens tidszon. |
    | [!UICONTROL **Slutdatum**] | Ange det datum då du vill att dataflödet ska sluta. Slutdatumet baseras på rapportsvitens tidszon. |
 
-1. Konfigurera målet dit du vill att data ska skickas i avsnittet [!UICONTROL **Mål**].
+1. Konfigurera målet där du vill att data ska skickas i avsnittet [!UICONTROL **Mål**].
 
    >[!NOTE]
    >
@@ -177,17 +177,17 @@ Så här skapar du en kolumnmall:
 
 1. Gå till [!UICONTROL **Admin**] > [!UICONTROL **Dataflöden**] > **[!UICONTROL Manage templates]** i Adobe Analytics.
 
-1. Markera mallen som du vill redigera och välj sedan **[!UICONTROL Edit]**.
+1. Välj mallen som du vill redigera och välj sedan **[!UICONTROL Edit]**.
 
-1. Gör eventuella redigeringar och välj sedan **[!UICONTROL Save]**.
+1. Gör ändringarna och välj sedan **[!UICONTROL Save]**.
 
 ### Kopiera en kolumnmall
 
 1. Gå till [!UICONTROL **Admin**] > [!UICONTROL **Dataflöden**] > **[!UICONTROL Manage templates]** i Adobe Analytics.
 
-1. Markera mallen som du vill kopiera och välj sedan **[!UICONTROL Copy]**.
+1. Välj mallen som du vill kopiera och välj sedan **[!UICONTROL Copy]**.
 
-1. Ange ett namn för mallen i fältet **[!UICONTROL Template name]**.
+1. Ange ett namn på mallen i fältet **[!UICONTROL Template name]**.
 
 1. Gör eventuella ytterligare ändringar och välj sedan **[!UICONTROL Save]**.
 
@@ -201,7 +201,8 @@ Så här skapar du en kolumnmall:
 <!-- why would you want to do this? -->
 
 
-<!-- I don't think we need anything after this, but saving here just in case:
+<!--
+I don't think we need anything after this, but saving here just in case:
 
 1. In the [!UICONTROL **Feed Information**] section, complete the following fields:
    

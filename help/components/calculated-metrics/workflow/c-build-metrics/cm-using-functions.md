@@ -3,7 +3,7 @@ description: Lär dig hur du kan använda funktioner för att filtrera och sorte
 title: Använd funktioner
 feature: Calculated Metrics
 exl-id: 9d5d7589-a955-42f7-96af-0d12beddd623
-source-git-commit: 665319bdfc4c1599292c2e7aea45622d77a291a7
+source-git-commit: 50e6a09e62db60a765da05fa65089a006f103a2b
 workflow-type: tm+mt
 source-wordcount: '63'
 ht-degree: 0%
@@ -20,6 +20,7 @@ En lista över alla funktioner finns i [Grundfunktioner](/help/components/calcul
 >
 >När du inkluderar funktioner i en beräkningsformel ska du alltid använda funktionen innan du drar i mått eller segment.
 
-<!-- OUTDATED VIDEO 
+<!--
+OUTDATED VIDEO 
 Watch this [video](https://youtu.be/SSyWvomnewI) to understand the use of functions.
 -->
