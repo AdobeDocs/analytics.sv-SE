@@ -25,7 +25,7 @@ Adobe Analytics landningssida innehåller följande underflikar:
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Adobe Analytics landningssida](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/analysis-workspace-basics/navigating-the-new-landing-page){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Adobe Analytics landningssida](https://experienceleague.adobe.com/sv/docs/analytics-learn/tutorials/analysis-workspace/analysis-workspace-basics/navigating-the-new-landing-page){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 
