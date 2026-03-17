@@ -4,42 +4,50 @@ title: Adobe Analytics landningssida
 role: User, Admin
 feature: Analytics Basics
 exl-id: 0a2fb778-491a-4dc3-aae4-afadb3ab1a1e
-source-git-commit: 8b1e25b9633b6db3e49da079f7014e6b7b595474
+source-git-commit: 6b291ec1f9477bf814a26da35138449bfcb013a0
 workflow-type: tm+mt
-source-wordcount: '1416'
+source-wordcount: '1447'
 ht-degree: 0%
 
 ---
 
 # Adobe Analytics landningssida
 
-Landningssidan för Adobe Analytics sammanför både [!DNL Analysis Workspace] och [!DNL Reports & Analytics] (slutet av livscykeln) i ett enda gränssnitt och en åtkomstpunkt under paraplyet [!DNL Workspace]. Här finns en startsida för projektledaren, en mallsektion och en utbildningssektion som hjälper dig att komma igång på ett effektivare sätt.
+Adobe Analytics landningssida innehåller följande underflikar:
+
+**[!UICONTROL Projects]**: Anpassad design som kombinerar datakomponenter, tabeller och visualiseringar som du har skapat eller som någon annan har skapat och delat med dig. [!UICONTROL Projects] refererar också till tomma projekt och tomma mobilstyrkort.
+
+**[!UICONTROL Templates]**: Innehåller mallar från Adobe och eventuella mallar som är specifika för din organisation.
+
+**[!UICONTROL Learning]**: Innehåller praktiska videoutgångar, självstudiekurser och länkar till dokumentation.
+
+![En landningssida, vänster räl](assets/aa-landing-page-left-rail.png)
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Adobe Analytics landningssida](https://experienceleague.adobe.com/sv/docs/analytics-learn/tutorials/analysis-workspace/analysis-workspace-basics/navigating-the-new-landing-page){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Adobe Analytics landningssida](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/analysis-workspace-basics/navigating-the-new-landing-page){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 
+## Projekt {#navigate-projects}
 
+Avsnittet **[!UICONTROL Projects]** i den vänstra listen fungerar som startsida för fliken [!UICONTROL **Workspace**].
 
-Adobe Analytics landningssida består av följande underflikar: Projekt, Mallar och Utbildning.
+Så här kommer du åt projekt i Adobe Analytics:
+
+1. Klicka på fliken [!UICONTROL **Workspace**].
+
+1. Välj [!UICONTROL **Projekt**] i den vänstra listen.
+
+I avsnittet Projekt visas företagsmappen, eventuella personliga mappar som du har skapat, dina Workspace-projekt och Mobile Scorecards. Använd den här sidan om du vill visa, skapa och ändra mappar, projekt och mobila styrkort. Mer information finns i [Projekt](/help/analyze/analysis-workspace/build-workspace-project/freeform-overview.md).
 
 **[!UICONTROL Projects]** är anpassade designer som kombinerar datakomponenter, tabeller och visualiseringar som du har skapat eller som någon annan har skapat och delat med dig. [!UICONTROL Projects] refererar också till tomma projekt och tomma mobilstyrkort.
 
-**[!UICONTROL Templates]** innehåller mallar från Adobe och alla mallar som är specifika för din organisation.
-
-Fliken **[!UICONTROL Learning]** innehåller praktiska videoutgångar, självstudiekurser och länkar till dokumentation.
-
-## Navigera på fliken [!UICONTROL Projects] {#navigate-projects}
-
-Fliken [!UICONTROL Projects] fungerar som startsida för [!UICONTROL Workspace]. Den visar företagsmappen, eventuella personliga mappar som du har skapat, dina projekt och Mobile Scorecards. Använd den här sidan om du vill visa, skapa och ändra mappar, projekt och mobila styrkort. Mer information finns i [Om mappar i Analytics](/help/analyze/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md).
-
-![Landing all](assets/landing-all2.png)
-
 >[!NOTE]
 >
->Flera av följande inställningar finns kvar under sessionen och mellan sessionerna. Till exempel den flik du har markerat, de markerade filtren, de markerade kolumnerna och kolumnsorteringsriktningen. Sökresultaten är inte beständiga.
+>Flera av följande inställningar finns kvar mellan sessionerna. Till exempel den flik du har markerat, de markerade segmenten, de markerade kolumnerna och kolumnsorteringsriktningen. Sökresultaten kvarstår inte.
+
+Mer information finns i [Projekt](/help/analyze/analysis-workspace/build-workspace-project/freeform-overview.md).
 
 ### Anpassa tabellkolumner
 
@@ -80,7 +88,7 @@ De tillgängliga kolumnerna är:
 | [!UICONTROL Open release notes] | Öppnar Adobe Analytics-delen av den senaste versionsinformationen för Adobe Experience Cloud. |
 | Filterikon | Filter efter taggar, rapportsviter, ägare, typer och andra filter (Min, Delad med mig, Favoriter och Godkänd) |
 | Sökfältet | Söker igenom alla kolumner i tabellen. |
-| Markeringsruta | Väljer ett eller flera projekt för att visa de projekthanteringsåtgärder som du kan utföra: **Ta bort**, **Dela**, **Byt namn**, **Kopiera**, **Ta bort**, **Flytta uppåt**, **Flytta nedåt**, **Tagg** 6&rbrace;Godkänn **,** Exportera CSV **och** Flytta till **.** Du kanske inte har behörighet att utföra alla listade åtgärder. |
+| Markeringsruta | Väljer ett eller flera projekt för att visa de projekthanteringsåtgärder som du kan utföra: **Ta bort**, **Dela**, **Byt namn**, **Kopiera**, **Ta bort**, **Flytta uppåt**, **Flytta nedåt**, **Tagg** 6}Godkänn **,** Exportera CSV **och** Flytta till **.** Du kanske inte har behörighet att utföra alla listade åtgärder. |
 | [!UICONTROL Favorites] | Lägger till en stjärna bredvid ett favoritprojekt eller en mapp som kan användas som filter. |
 | [!UICONTROL Name] | Identifierar namnet på projektet. |
 | Fäst ikon | Fäster objekt så att de alltid visas högst upp i listan, men du kan ändra ordningen genom att flytta dem uppåt eller nedåt i den ordning som de visas. Använd ellipsalternativmenyn och välj **Flytta upp** eller **Flytta ned** i listan. |
@@ -89,9 +97,15 @@ De tillgängliga kolumnerna är:
 | VISA: Mappar och projekt eller alla projekt | Ändrar visningsinställningen för tabellen så att mappar och projekt visas enligt mapporganisationen **eller**, vilket visar alla dina projekt i en oordnad lista. |
 | &lt; (Bakåt-knappen) | Returnerar dig till den senaste konfigurationen av landningssidan i ett Workspace-projekt eller en rapport. Sidkonfigurationen som du hade när du lämnade landningssidan kommer att finnas kvar när du kommer tillbaka. |
 
-## Navigera på fliken [!UICONTROL Templates] {#navigate-reports}
+## Mallar {#navigate-reports}
 
-Mer information om hur du använder mallar i Adobe Analytics finns i följande resurser:
+Så här kommer du åt mallar i Adobe Analytics:
+
+1. Klicka på fliken [!UICONTROL **Workspace**].
+
+1. I avsnittet [!UICONTROL **Mallar**] till vänster kan du välja antingen Adobe-mallar eller företagsmallar.
+
+Mer information om hur du använder mallar finns i följande resurser:
 
 * [Använd mallar](/help/analyze/analysis-workspace/templates/use-templates.md)
 
@@ -120,8 +134,8 @@ På sidan Lär dig mer om nybörjare, mellanfunktioner och avancerade funktioner
 
 Användare kan ange sin favoritlandningssida.
 
-1. Gå till Analytics > [!UICONTROL Components] > [!UICONTROL Preferences] > [!UICONTROL General].
-1. Kontrollera vilken landningssida du vill använda:
+1. I Adobe Analytics väljer du [!UICONTROL **Komponenter**] > [!UICONTROL **Inställningar**] > [!UICONTROL **Allmänt**].
+1. Välj den landningssida som du föredrar.
 
    ![Ange landningssida](assets/landing-pref.png)
 
