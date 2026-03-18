@@ -4,9 +4,9 @@ description: Lär dig mer om hur klienttips gradvis ersätter användaragenten s
 exl-id: e0a74daa-12a2-4999-9920-2636b061dcc8
 feature: Data Configuration and Collection
 role: Admin
-source-git-commit: ca84a5f807545d7196e2e0e90d3209c32d3fd789
+source-git-commit: 8861dc27f9353d00ef3cf62568822c74d6e70d25
 workflow-type: tm+mt
-source-wordcount: '1174'
+source-wordcount: '1147'
 ht-degree: 0%
 
 ---
@@ -25,11 +25,7 @@ Google delar upp klienttips för användaragenter i två kategorier: tips för l
 
 Från och med oktober 2022 började nya versioner av Chromium-webbläsare&quot;frysa&quot; operativsystemversionen som representerades i användaragentsträngen. Operativsystemsversionen är ett tips för hög entropi, så för att operativsystemsversionen ska vara korrekt i din rapportering måste du konfigurera ditt samlingsbibliotek så att du kan samla in dessa tips för hög entropi. Med tiden kommer annan enhetsinformation för användaragenten att frysas, vilket kräver att klienttipsen upprätthåller enhetens rapporteringsnoggrannhet.
 
-Klienttips kommer att införlivas i processen för sökning efter enheter i Analytics från och med den 27 februari 2023 och avslutas den 2 mars 2023. Både AppMeasurement och Web SDK stöder för närvarande insamling av tipsdata, men kommer inte att användas i enhetssökning förrän i mitten av februari. Som anges nedan var operativsystemsversionen fryst från och med oktober, men på grund av en gradvis utrullning och det faktum att många användaragenter redan har en fryst OS-version (se mer [här](/help/components/dimensions/operating-systems.md)), uppskattar vi att detta påverkar &lt;3 % av Chrome-besökarna.
-
->[!NOTE]
->
-> Från och med januari 2023 är vissa versioner av Mac och Windows felaktigt representerade i användaragenten, men korrekt representerade i klienttips med hög entropi. Mer information finns i [Operativsystem](/help/components/dimensions/operating-systems.md).
+Klienttips integrerades i enhetssökningsprocessen för Analytics den 2 mars 2023. Ändringen gäller både AppMeasurement- och Web SDK-implementeringar.
 
 Adobe Audience Manager kräver att högentropi-tips samlas in för att bevara alla funktioner. Om du använder [vidarebefordran på serversidan till Adobe Audience Manager](/help/admin/tools/manage-rs/edit-settings/general/c-server-side-forwarding/ssf.md) kanske du vill aktivera en samling med tips för hög entropi.
 
@@ -43,7 +39,7 @@ Det här [Google-blogginlägget](https://web.dev/user-agent-client-hints/) är e
 
 +++**Hur aktiverar jag samlingen med klienttips?**
 
-Tips om låg entropi tillhandahålls automatiskt av webbläsaren och hämtas för att ta fram information om enheter och webbläsare. Nyare versioner av Web SDK (från och med 2.12.0) och AppMeasurement (från och med 2.23.0) kan konfigureras för att samla in tips med hög entropi via respektive taggtillägg eller direkt via ett konfigurationsalternativ. Se instruktionerna för [Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/user-agent-client-hints.html?lang=sv-SE#enabling-high-entropy-client-hints) och [AppMeasurement](/help/implement/vars/config-vars/collecthighentropyuseragenthints.md).
+Tips om låg entropi tillhandahålls automatiskt av webbläsaren och hämtas för att ta fram information om enheter och webbläsare. Nyare versioner av Web SDK (från och med 2.12.0) och AppMeasurement (från och med 2.23.0) kan konfigureras för att samla in tips med hög entropi via respektive taggtillägg eller direkt via ett konfigurationsalternativ. Se instruktionerna för [Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/user-agent-client-hints.html#enabling-high-entropy-client-hints) och [AppMeasurement](/help/implement/vars/config-vars/collecthighentropyuseragenthints.md).
 
 För båda biblioteken är samlingen med höga entropytips **inaktiverad som standard**.
 
@@ -109,7 +105,7 @@ Se tidslinjen [som publicerats av Google](https://blog.chromium.org/2021/09/user
 
 Enhetsinformation i rapporter hämtas från användaragenten. Vi har uppdaterat våra processer så att vi kan använda både användaragenten och klienttips där det finns tillgängliga.
 
-Återställnings-ID ([s_fid](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/analytics-ids.html?lang=sv-SE)) härleds från användaragenten och IP-adressen. Detta ID används endast om en cookie inte kan anges så används inte i någon större utsträckning
+Återställnings-ID ([s_fid](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/analytics-ids.html)) härleds från användaragenten och IP-adressen. Detta ID används endast om en cookie inte kan anges så används inte i någon större utsträckning
 
 +++
 
@@ -162,3 +158,10 @@ Se [schemadokumentationen](https://github.com/adobe/xdm/blob/master/components/d
 Ja. Klienttips inkluderas i de data som skickas till Adobe Audience Manager. Observera att Adobe Audience Manager kräver att högentropiska tips samlas in för att bevara alla funktioner. Om du använder [vidarebefordran på serversidan till Adobe Audience Manager](/help/admin/tools/manage-rs/edit-settings/general/c-server-side-forwarding/ssf.md) kanske du vill aktivera en samling med tips för hög entropi.
 
 +++
+
++++**Varför ser jag webbläsarversionsnumret 999.99?**
+
+Kunderna utför ibland testning med ogiltiga versionsnummer för webbläsare eller operativsystem, vilket kan vara valfritt antal över 100 000. För att undvika ett stort antal ogiltiga versionsnummer för webbläsare eller operativsystem på en viss dag, kommer alla versionsnummer som är större än 100 000 att paketeras tillsammans och vara fästa vid versionsnumret 999.99.
+
++++
+
