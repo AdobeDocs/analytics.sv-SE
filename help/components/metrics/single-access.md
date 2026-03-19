@@ -3,29 +3,39 @@ title: Enkel åtkomst
 description: Antalet gånger som en dimensionspost inte ändrades vid ett besök.
 feature: Metrics
 exl-id: 973ce835-9d6f-4ead-90c9-0b80aac82cc0
-source-git-commit: d095628e94a45221815b1d08e35132de09f5ed8f
+source-git-commit: 6d2c278c5525c89b73c39bbfcedbe644806bf989
 workflow-type: tm+mt
-source-wordcount: '339'
+source-wordcount: '439'
 ht-degree: 0%
 
 ---
 
 # Enkel åtkomst
 
-Enkel åtkomst [Mått](overview.md) visar antalet besök där dimensionsobjektet endast innehöll ett unikt värde för hela besöket. Det här måttet är användbart i samband med alla dimensioner där du vill se vilka dimensionsobjekt som stagnerar under ett besök.
+**[!UICONTROL Single access]** [Mått](overview.md) visar antalet besök där den tillämpliga rapporteringsdimensionen endast innehöll ett enda värde för ett helt besök. Det är den bredare, dimensionsspecifika versionen av [[!UICONTROL Single page visits]](single-page-visits.md). Det här måttet är användbart i samband med alla dimensioner där du vill se värdet för en dimension när den bara ställdes in en gång under ett besök.
 
 ## Hur det här måttet beräknas
 
-Det här måttet räknar antalet besök där dimensionsobjektet innehöll ett enda unikt värde. Du kan ställa in dimensionsobjektet flera gånger eller låta det finnas kvar och fortfarande räknas som en enskild åtkomst. Så snart en dimensionsuppgift ändras till ett andra unikt värde räknas inte längre besöket som en enda åtkomst.
+Definitionen av det här måttet beror på projektinställningen för [[!UICONTROL Count repeat instances]](/help/analyze/analysis-workspace/build-workspace-project/create-projects.md#project-info-settings):
 
-## Skillnad mellan Single Access och Single page visit
+* **Antal upprepande instanser aktiverade**: Räknar besök där dimensionen innehåller exakt ett värde vid ett besök. Om dimensionen kvarstår kvalificeras den inte längre som en enskild åtkomst.
+* **Antal upprepande instanser inaktiverade**: Räknar besök där dimensionen innehåller ett unikt värde. Du kan ställa in dimensionsobjektet på samma värde flera gånger eller låta det vara kvar och det räknas fortfarande som en enskild åtkomst.
 
-I samband med dimensionen [Sida](../dimensions/page.md) är enkel åtkomst och besök på en sida exakt identiska. Skillnaderna uppstår när du använder andra dimensioner.
+Oavsett [!UICONTROL Count repeat instances] kvalificerar sig besöket inte längre som en enskild åtkomst om dimensionen ändras till ett andra unikt värde. Länkspårningsanrop inkluderas i den här beräkningen om dimensionen är inställd i dem.
 
-* **Enkel åtkomst**: Visar antalet besök där den angivna dimensionsobjektet inte ändrades för hela besöket. Det är kontextuellt med den dimension som du använder i ditt projekt.
-* **Besök en sida**: Visar antalet besök där siddimensionen inte ändrades för hela besöket. Även om du använder en annan dimension i rapporten räknas besök som innehåller ett enda unikt sidodimensionsobjekt.
+## Skillnad mellan [!UICONTROL Single access] och [!UICONTROL Single page visit]
 
-Ta till exempel följande exempel på två träffbesök. Dimensionen i din rapport är [Site section](../dimensions/site-section.md).
+I samband med dimensionen [[!UICONTROL Page]](../dimensions/page.md) är [!UICONTROL Single access] och [!UICONTROL Single page visits] alltid identiska oavsett projektinställningen [!UICONTROL Count repeat instances]. Skillnaderna uppstår när du använder andra dimensioner.
 
-* En besökare träffar två sidor, men de finns båda i samma webbplatsavsnitt. Eftersom webbplatsavsnittet förblev detsamma vid besöket räknas det som en enda åtkomst. Det räknas inte som ett besök på en sida eftersom besöket innehåller mer än ett unikt sidobjekt.
-* En besökare träffar två sidor i olika delar av webbplatsen, men båda sidorna råkar ha samma namn. Besöken räknas inte som en enskild åtkomst eftersom det fanns två unika avsnittsvärden. Det räknas som ett besök på en sida eftersom det fanns ett enda unikt sidobjekt.
+* **[!UICONTROL Single access]**: Visar antalet besök där den angivna dimensionsobjektet fanns för en enskild träff. Det är kontextuellt med den dimension som du använder i ditt projekt.
+* **[!UICONTROL Single page visit]**: Visar antalet besök där dimensionen [!UICONTROL Page] fanns för en enskild träff. Även om du använder en annan dimension i rapporten räknas besök som innehåller ett enda unikt [!UICONTROL Page]-dimensionsobjekt fortfarande.
+
+Om [[!UICONTROL Count repeat instances]](/help/analyze/analysis-workspace/build-workspace-project/create-projects.md#project-info-settings) är inaktiverat ändras måttdefinitionerna något:
+
+* **Enkel åtkomst**: Visar antalet besök där den angivna dimensionsobjektet inte ändrades för hela besöket.
+* **Enkelsidigt besök**: Visar antalet besök där dimensionen [!UICONTROL Page] inte ändrades för hela besöket.
+
+Ta till exempel följande exempel på besök med två träffar. Dimensionen i rapporten är [[!UICONTROL Site section]](../dimensions/site-section.md) och [!UICONTROL Count repeat instances] är inaktiverad.
+
+* En besökare träffar två sidor, men de finns båda i samma webbplatsavsnitt. Eftersom webbplatsavsnittet förblev detsamma vid besöket räknas det som en enda åtkomst. Det räknas inte som ett enda sidbesök eftersom besöket innehåller mer än ett unikt [!UICONTROL Page]-dimensionsobjekt.
+* En besökare träffar två sidor i olika delar av webbplatsen, men båda sidorna råkar ha samma namn. Besöken räknas inte som en enskild åtkomst eftersom det fanns två unika avsnittsvärden. Det räknas som ett enda sidbesök eftersom det fanns ett enda unikt [!UICONTROL Page]-dimensionsobjekt.

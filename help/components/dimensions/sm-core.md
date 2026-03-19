@@ -3,9 +3,9 @@ title: Kärndimensioner för direktuppspelande medietjänster
 description: Tillgängliga dimensioner när du aktiverar [!UICONTROL Media Core] för en rapportserie.
 feature: Dimensions
 exl-id: 1316a646-a31a-49a4-a670-d56d90dd462b
-source-git-commit: 936644c719f46a1327c8a5aa247ed69a14d3da1e
+source-git-commit: fd82e93bd98021e124f2db6913b5e5c59797a26f
 workflow-type: tm+mt
-source-wordcount: '367'
+source-wordcount: '383'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,7 @@ När du aktiverar **[!UICONTROL Media Core]** under [Medierapportering](/help/ad
 | **[!UICONTROL Content segment]** | Intervallet som beskriver den del av innehållet som har visats, i minuter. Segmentet beräknas som min och max för spelhuvudets värden under en uppspelningssession. | Stäng media | `a.media.`<br>`segment` | `xdm.mediaReporting.`<br>`sessionDetails.segment` |
 | **[!UICONTROL Content type]** | Innehållstypen. Giltiga värden är `song`, `podcast`, `audiobook`, `radio`, `VoD`, `Live`, `Linear`, `UGC`, `DVoD` eller ett anpassat värde. | Mediestart, stäng media | `a.contentType` | `xdm.mediaCollection.`<br>`sessionDetails.contentType`<br><br>`xdm.mediaReporting.`<br>`sessionDetails.contentType` |
 | **[!UICONTROL Media path]** | Sökvägen som besökaren tog för att nå innehållet. | Mediestart | `a.media.path` | |
+| **[!UICONTROL Media session ID]** | Identifierar en instans av en innehållsström som är unik för en enskild uppspelning. | Mediestart, stäng media | `a.media.vsid` | `xdm.mediaReporting`<br>`sessionDetails.ID` |
 | **[!UICONTROL Stream type]** | Strömtypen. Giltiga värden är `audio` och `video`. | Mediestart, stäng media | `a.media.`<br>`streamType` | `xdm.mediaCollection.`<br>`sessionDetails.streamType`<br><br>`xdm.mediaReporting.`<br>`sessionDetails.streamType` |
 
 Utöver ovanstående dimensioner skapar Adobe automatiskt följande klassificeringsdimensioner. Du måste överföra klassificeringsdata för att visa rapporter som använder dessa dimensioner.

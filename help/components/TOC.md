@@ -4,10 +4,10 @@ audience: end-user
 user-guide-title: Komponenthandbok för Analytics
 breadcrumb-title: Användarhandbok om komponenter
 user-guide-description: Hantera data med komponenter som segment, beräknade värden, virtuella rapportsviter, marknadsföringskanaler och klassificeringar. Lär dig mer om Analytics över flera enheter.
-source-git-commit: 6e818b5f25b5d7636513a756b534b13dd87ec35d
+source-git-commit: 542668f462bdff5d07d5713dcab36aaa7d9b7cc5
 workflow-type: tm+mt
-source-wordcount: '736'
-ht-degree: 7%
+source-wordcount: '745'
+ht-degree: 8%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 7%
 # [!DNL Adobe Analytics] Komponentguide {#components}
 
 + [Handbok för analyskomponenter](home.md)
-+ [Versionsinformation för analyser](https://experienceleague.adobe.com/sv/docs/analytics/release-notes/latest)
++ [Versionsinformation för analyser](https://experienceleague.adobe.com/en/docs/analytics/release-notes/latest)
 + Mått {#dimensions}
    + [Översikt över dimensioner](dimensions/overview.md)
    + [Dimension-kompatibilitet](dimensions/compatibility.md)
@@ -25,6 +25,9 @@ ht-degree: 7%
    + [Activity Map](dimensions/activity-map-region.md)
    + [Godkännande av annonsplattform](dimensions/ad-consent.md)
    + [Alla söksidor rankade](dimensions/all-search-page-rank.md)
+   + [AMO-ID](dimensions/amo-id.md)
+   + [AMO EF-ID](dimensions/amo-ef-id.md)
+   + [AMO Meta Ads Click ID](dimensions/amo-meta-id.md)
    + [AM/PM](dimensions/am-pm.md)
    + [Punktnamn](dimensions/bot-name.md)
    + [Webbläsarhöjd](dimensions/browser-height.md)
@@ -120,7 +123,7 @@ ht-degree: 7%
    + [Postnummer](dimensions/zip-code.md)
 + Mätvärden {#metrics}
    + [Översikt över mätvärden](metrics/overview.md)
-   + [Antal upprepande instanser](metrics/count-repeat-instances.md)
+   + [Advertising metrics](metrics/amo-metrics.md)
    + [Genomsnittligt siddjup](metrics/average-page-depth.md)
    + [Genomsnittlig sidvisning per besök](metrics/average-page-views-per-visit.md)
    + [Genomsnittlig sessionslängd](metrics/average-session-length.md)
@@ -258,7 +261,7 @@ ht-degree: 7%
    + [Översikt](alerts/alerts-overview.md)
    + [Skapa aviseringar](alerts/alert-builder.md)
    + [Hantera aviseringar](alerts/alert-manager.md)
-   + [Användningsexempel](alerts/alerts-use-cases.md)
+   + [Användningsfall](alerts/alerts-use-cases.md)
 + Klassificeringar {#classifications}
    + [Klassificeringsöversikt](classifications/classifications-overview.md)
    + Klassificeringsuppsättningar {#sets}
