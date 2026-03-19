@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Adobe Advertising metrics
 
-Dessa mått skapas automatiskt när [Analytics för Advertising](https://experienceleague.adobe.com/en/docs/advertising/integrations/analytics/overview)-integreringen aktiveras. Mer information finns i [Adobe Advertising Metrics in Analysis Workspace](https://experienceleague.adobe.com/en/docs/advertising/integrations/analytics/data/advertising-metrics-in-analytics) i Adobe Advertising-dokumentationen.
+Dessa mått skapas automatiskt när [Analytics för Advertising](https://experienceleague.adobe.com/sv/docs/advertising/integrations/analytics/overview)-integreringen aktiveras. Mer information finns i [Adobe Advertising Metrics in Analysis Workspace](https://experienceleague.adobe.com/sv/docs/advertising/integrations/analytics/data/advertising-metrics-in-analytics) i Adobe Advertising-dokumentationen.
 
 | Mått | Beskrivning |
 | --- | --- |

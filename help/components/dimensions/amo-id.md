@@ -11,7 +11,7 @@ ht-degree: 1%
 
 # AMO-ID
 
-**[!UICONTROL AMO ID]** är en samling sammanfogade identifierare som används i Adobe Advertising-integreringar. Värden som lagras i den här dimensionen ordnas automatiskt i olika, mer läsbara klassificeringsdimensioner för användning i analysrapporter. Dimensionen skapas automatiskt när [Analytics för Advertising](https://experienceleague.adobe.com/en/docs/advertising/integrations/analytics/overview)-integreringen aktiveras.
+**[!UICONTROL AMO ID]** är en samling sammanfogade identifierare som används i Adobe Advertising-integreringar. Värden som lagras i den här dimensionen ordnas automatiskt i olika, mer läsbara klassificeringsdimensioner för användning i analysrapporter. Dimensionen skapas automatiskt när [Analytics för Advertising](https://experienceleague.adobe.com/sv/docs/advertising/integrations/analytics/overview)-integreringen aktiveras.
 
 ## Fyll den här dimensionen med data
 
@@ -133,7 +133,7 @@ AL!{user}!90!{ad id}!{source type}!!!{phrase id}
 
 ## Klassificeringar
 
-När du aktiverar integreringen [Analytics for Advertising](https://experienceleague.adobe.com/en/docs/advertising/integrations/analytics/overview) skapas följande klassificeringar automatiskt. Klassificeringsvärdena upprätthålls automatiskt av integreringen.
+När du aktiverar integreringen [Analytics for Advertising](https://experienceleague.adobe.com/sv/docs/advertising/integrations/analytics/overview) skapas följande klassificeringar automatiskt. Klassificeringsvärdena upprätthålls automatiskt av integreringen.
 
 | Klassificering | Beskrivning | DSP | Sök,<br>socialt, &amp;<br>Commerce |
 | --- | --- | :---: | :---: |

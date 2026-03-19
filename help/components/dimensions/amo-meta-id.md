@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # AMO Meta Ads Click ID
 
-**[!UICONTROL AMO Meta Ads Click ID]** är en annonsklicksidentifierare som används i Adobe Advertising-integreringar. Dimensionen skapas automatiskt när [Analytics för Advertising](https://experienceleague.adobe.com/en/docs/advertising/integrations/analytics/overview)-integreringen aktiveras. Det är i första hand användbart som en obearbetad spårningsidentifierare i stället för som en läsbar rapportdimension.
+**[!UICONTROL AMO Meta Ads Click ID]** är en annonsklicksidentifierare som används i Adobe Advertising-integreringar. Dimensionen skapas automatiskt när [Analytics för Advertising](https://experienceleague.adobe.com/sv/docs/advertising/integrations/analytics/overview)-integreringen aktiveras. Det är i första hand användbart som en obearbetad spårningsidentifierare i stället för som en läsbar rapportdimension.
 
 ## Fyll den här dimensionen med data
 

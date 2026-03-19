@@ -52,7 +52,7 @@ När förbearbetningen är klar använder flera funktioner den här delvis bearb
 Nu skickas data med medelvärde till respektive funktion:
 
 * [**API:t för direktuppspelning**](https://developer.adobe.com/analytics-apis/docs/2.0/guides/endpoints/livestream/): Anslut ett program till Adobe tjänst för direktuppspelning om du vill ha ett dataflöde när det samlas in.
-* [**Analyserar Source Connector**](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/analytics): Importera Adobe Analytics-rapportsvitsdata i en Adobe Experience Platform-datauppsättning.
+* [**Analyserar Source Connector**](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/connectors/adobe-applications/analytics): Importera Adobe Analytics-rapportsvitsdata i en Adobe Experience Platform-datauppsättning.
 * [**Realtidsrapportering**](/help/components/c-real-time-reporting/realtime.md): Tillhandahåller upp till tre konfigurerbara realtidsrapporter i Analysis Workspace.
 
 ## Bearbetning på besöks- och besöksnivå

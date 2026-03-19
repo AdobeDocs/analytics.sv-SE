@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # AMO EF-ID
 
-**[!UICONTROL AMO EF ID]** är en annonsklicksidentifierare som används i Adobe Advertising-integreringar. Det är en unik variabel som Adobe Advertising använder för att associera aktiviteter med en onlineklickning eller annonsexponering på besökarnivå. Dimensionen skapas automatiskt när [Analytics för Advertising](https://experienceleague.adobe.com/en/docs/advertising/integrations/analytics/overview)-integreringen aktiveras.
+**[!UICONTROL AMO EF ID]** är en annonsklicksidentifierare som används i Adobe Advertising-integreringar. Det är en unik variabel som Adobe Advertising använder för att associera aktiviteter med en onlineklickning eller annonsexponering på besökarnivå. Dimensionen skapas automatiskt när [Analytics för Advertising](https://experienceleague.adobe.com/sv/docs/advertising/integrations/analytics/overview)-integreringen aktiveras.
 
 ## Fyll den här dimensionen med data
 
