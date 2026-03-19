@@ -87,7 +87,7 @@ Tidigare uppdateringar av den här tabellen finns på den här sidans [implement
 | | **`geo_zip`** | Postnumret som träffen kom från, baserat på IP. Hjälper till att fylla i dimensionen [Postnummer](/help/components/dimensions/zip-code.md). Se även `zip`. | varchar(16) |
 | | **`hitid_high`** | Används med `hitid_low` för att identifiera en träff. | bigint unsigned |
 | | **`hitid_low`** | Används med `hitid_high` för att identifiera en träff. | bigint unsigned |
-| | **`hit_source`** | Källan som träffen kom från. Träffkällor 1 och 2 faktureras. <br>1: Standardbildbegäran utan tidsstämpel <br>2: Standardbildbegäran med tidsstämpel <br> 3: Överföring av Live-datakälla med tidsstämplar <br> <br>: Används inte <br>6: Överföring av allmän datakälla 6: Används inte längre; överföring av datakälla med fullständig bearbetning <br>7: Överföring av TransactionID-datakälla <br>8: Används inte längre; Tidigare versioner av Adobe Advertising-datakällor <br> 8}9: Används inte längre, Adobe Social-sammanfattningsmått <br> : Audience Manager serversidans vidarebefordran används | tinyint unsigned |
+| | **`hit_source`** | Källan som träffen kom från. Träffkällor 1 och 2 faktureras. <br>1: Standardbildbegäran utan tidsstämpel <br>2: Standardbildbegäran med tidsstämpel <br> 3: Överföring av Live-datakälla med tidsstämplar <br> <br>: Används inte <br>6: Överföring av allmän datakälla 6: Används inte längre; överföring av datakälla med fullständig bearbetning <br>7: Överföring av TransactionID-datakälla <br>8: Används inte längre; Tidigare versioner av Adobe Advertising-datakällor <br> 8&rbrace;9: Används inte längre, Adobe Social-sammanfattningsmått <br> : Audience Manager serversidans vidarebefordran används | tinyint unsigned |
 | | **`hit_time_gmt`** | Tidsstämpeln för Adobe datainsamlingsservrar tog emot träffen, baserat på UNIX®-tid. | int |
 | | **`hourly_visitor`** | En flagga som avgör om träffen är en ny timbesökare. | tinyint unsigned |
 | | **`ip`** | IPv4-adressen, baserad på HTTP-huvudet i bildbegäran. Mutuellt exklusiv för `ipv6`. Om den här kolumnen innehåller en icke-konfidentiell IP-adress är `ipv6` tom. | char(20) |
@@ -165,7 +165,7 @@ Tidigare uppdateringar av den här tabellen finns på den här sidans [implement
 | **`post_`** | **`purchaseid`** | Unik identifierare för ett köp, enligt inställningen med variabeln [`purchaseID`](/help/implement/vars/page-vars/purchaseid.md). Används av kolumnen `duplicate_purchase`. | char(20) |
 | | **`quarterly_visitor`** | En flagga som avgör om träffen är en ny kvartalsbesökare. | tinyint unsigned |
 | **`post_`** | **`referrer`** | Dimensionen [Referent](/help/components/dimensions/referrer.md). Observera att medan `referrer` använder datatypen varchar(255) använder `post_referrer` datatypen varchar(244). | varchar(255)<br>varchar(244) |
-| | **`ref_domain`** | Dimensionen [Referensdomän ](/help/components/dimensions/referring-domain.md). Baserat på kolumnen `referrer`. | varchar(100) |
+| | **`ref_domain`** | Dimensionen [Referensdomän &#x200B;](/help/components/dimensions/referring-domain.md). Baserat på kolumnen `referrer`. | varchar(100) |
 | | **`ref_type`** | Ett numeriskt ID som representerar typen av hänvisning för träffen. Används i dimensionen [Referenstyp](/help/components/dimensions/referrer-type.md).<br>1: Inuti din webbplats<br>2: Andra webbplatser<br>3: Sökmotorer<br>4: Hårddisk<br>5: USENET<br>6: Typed/Bookmarked (ingen referent)<br>7: Email<br>8: No JavaScript<br>9: Social Networks<br>10: Conversational AI tools | tinyint unsigned |
 | | **`resolution`** | Ett numeriskt ID som representerar bildskärmens upplösning. Används i dimensionen [Bildskärmsupplösning](/help/components/dimensions/monitor-resolution.md). Använder `resolution.tsv`-uppslagstabell. | smallint unsigned |
 | **`post_`** | **`search_engine`** | Ett numeriskt ID som representerar sökmotorn som refererade besökaren till din webbplats. Används i dimensionerna för [sökmotorn](/help/components/dimensions/search-engine.md). Refererar till `search_engines.tsv`-söktabellen. | smallint unsigned |
@@ -412,4 +412,4 @@ Följande kolumnlista är oanvända, indragna eller innehåller inget värde i r
 >[!MORELIKETHIS]
 >
 >[Variabelmappning för XDM-objekt](/help/implement/aep-edge/xdm-var-mapping.md)
->[Variabelmappning för dataobjekt ](/help/implement/aep-edge/data-var-mapping.md)
+>[Variabelmappning för dataobjekt &#x200B;](/help/implement/aep-edge/data-var-mapping.md)

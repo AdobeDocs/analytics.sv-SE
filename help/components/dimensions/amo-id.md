@@ -137,26 +137,26 @@ När du aktiverar integreringen [Analytics for Advertising](https://experiencele
 
 | Klassificering | Beskrivning | DSP | Sök,<br>socialt, &amp;<br>Commerce |
 | --- | --- | :---: | :---: |
-| **[!UICONTROL Account]** | Kontonamnet. | &amp;check; | &amp;check; |
-| **[!UICONTROL Ad Display URL]** | Den URL som visas i annonsen. | | &amp;check; |
-| **[!UICONTROL Ad Description]** | Annonsbeskrivningen (DSP) eller annonstexten (Search, Social, &amp; Commerce). | &amp;check; | &amp;check; |
-| **[!UICONTROL Ad Destination URL]** | Annonsens mål-URL. | | &amp;check; |
-| **[!UICONTROL Ad Group]** | Annonsgruppens namn. | | &amp;check; |
-| **[!UICONTROL Ad Platform]** | Marknadsföringens DSP-namn eller sökmotornamn. | &amp;check; | &amp;check; |
-| **[!UICONTROL Ad Title]** | Annonstypen (DSP) eller annonsrubriken (Search, Social, &amp; Commerce). | &amp;check; | &amp;check; |
-| **[!UICONTROL Ad Type]** | Annonstypen, till exempel `text`, `video`, `display` eller `native`. | &amp;check; | &amp;check; |
+| **[!UICONTROL Account]** | Kontonamnet. | &check; | &check; |
+| **[!UICONTROL Ad Display URL]** | Den URL som visas i annonsen. | | &check; |
+| **[!UICONTROL Ad Description]** | Annonsbeskrivningen (DSP) eller annonstexten (Search, Social, &amp; Commerce). | &check; | &check; |
+| **[!UICONTROL Ad Destination URL]** | Annonsens mål-URL. | | &check; |
+| **[!UICONTROL Ad Group]** | Annonsgruppens namn. | | &check; |
+| **[!UICONTROL Ad Platform]** | Marknadsföringens DSP-namn eller sökmotornamn. | &check; | &check; |
+| **[!UICONTROL Ad Title]** | Annonstypen (DSP) eller annonsrubriken (Search, Social, &amp; Commerce). | &check; | &check; |
+| **[!UICONTROL Ad Type]** | Annonstypen, till exempel `text`, `video`, `display` eller `native`. | &check; | &check; |
 | **[!UICONTROL AdCloud Attribute 1]** -<br>**[!UICONTROL AdCloud Attribute 5]** | Platshållarklassificeringar är reserverade för framtida anpassade attribut. Används inte för närvarande. | | |
-| **[!UICONTROL Campaign]** | Kampanjnamnet. | &amp;check; | &amp;check; |
-| **[!UICONTROL Creative Experience Name]** | Namnet på den kreativa upplevelse som är kopplad till annonseringsinteraktionen, som representerar en grupp kreativa variationer som används vid testning eller personalisering. | &amp;check; | |
-| **[!UICONTROL Creative Branch Name]** | Namnet på grenen i en kreativ upplevelse som representerar en specifik variation eller bana i det kreativa experimentet. | &amp;check; | |
-| **[!UICONTROL Creative Branch ID]** | Unik identifierare som tilldelats en kreativ gren i en kreativ upplevelse. | &amp;check; | |
-| **[!UICONTROL Creative Name]** | Namnet på den specifika annonsresursen som har skickats till användaren. | &amp;check; | |
-| **[!UICONTROL Creative Variant Name]** | Namnet på den specifika varianten av ett kreativt verk som används inom en kreativ upplevelse eller gren. | &amp;check; | |
-| **[!UICONTROL Keyword]** | Nyckelordet. | | &amp;check; |
-| **[!UICONTROL Keyword Match Type]** | Nyckelordet och matchningstypen. | | &amp;check; |
-| **[!UICONTROL Landing Type]** | Anger om landningssidan var en genomsiktlig eller klickbar. | &amp;check; | &amp;check; |
-| **[!UICONTROL Match Type]** | Sökmatchningstypen. | | &amp;check; |
-| **[!UICONTROL Network]** | RTB (DSP) eller annonsnätverksnamnet (Search, Social, &amp; Commerce). | &amp;check; | &amp;check; |
-| **[!UICONTROL Optimization]** | Paketnamnet (DSP) eller portföljnamnet (Sök, Socialt och Commerce). | &amp;check; | &amp;check; |
-| **[!UICONTROL Placement]** | Placeringsnamnet. | &amp;check; | |
-| **[!UICONTROL Product Target]** | Produktmålet för en produktlistad annons. | | &amp;check; |
+| **[!UICONTROL Campaign]** | Kampanjnamnet. | &check; | &check; |
+| **[!UICONTROL Creative Experience Name]** | Namnet på den kreativa upplevelse som är kopplad till annonseringsinteraktionen, som representerar en grupp kreativa variationer som används vid testning eller personalisering. | &check; | |
+| **[!UICONTROL Creative Branch Name]** | Namnet på grenen i en kreativ upplevelse som representerar en specifik variation eller bana i det kreativa experimentet. | &check; | |
+| **[!UICONTROL Creative Branch ID]** | Unik identifierare som tilldelats en kreativ gren i en kreativ upplevelse. | &check; | |
+| **[!UICONTROL Creative Name]** | Namnet på den specifika annonsresursen som har skickats till användaren. | &check; | |
+| **[!UICONTROL Creative Variant Name]** | Namnet på den specifika varianten av ett kreativt verk som används inom en kreativ upplevelse eller gren. | &check; | |
+| **[!UICONTROL Keyword]** | Nyckelordet. | | &check; |
+| **[!UICONTROL Keyword Match Type]** | Nyckelordet och matchningstypen. | | &check; |
+| **[!UICONTROL Landing Type]** | Anger om landningssidan var en genomsiktlig eller klickbar. | &check; | &check; |
+| **[!UICONTROL Match Type]** | Sökmatchningstypen. | | &check; |
+| **[!UICONTROL Network]** | RTB (DSP) eller annonsnätverksnamnet (Search, Social, &amp; Commerce). | &check; | &check; |
+| **[!UICONTROL Optimization]** | Paketnamnet (DSP) eller portföljnamnet (Sök, Socialt och Commerce). | &check; | &check; |
+| **[!UICONTROL Placement]** | Placeringsnamnet. | &check; | |
+| **[!UICONTROL Product Target]** | Produktmålet för en produktlistad annons. | | &check; |
