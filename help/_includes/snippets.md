@@ -1,7 +1,7 @@
 ---
-source-git-commit: b1a774e6f6af0c27a5e60f8f7e4c8eaf96005928
+source-git-commit: 7f7f0db4790dc7c09361dd6410591eb2e611498a
 workflow-type: tm+mt
-source-wordcount: '2983'
+source-wordcount: '3025'
 ht-degree: 0%
 
 ---
@@ -61,6 +61,9 @@ ht-degree: 0%
 >Funktionerna som beskrivs i det här avsnittet är bara tillgängliga för befintliga kunder som redan har en licens för funktionen. Funktionen erbjuds inte längre som ett tillägg till befintliga eller nya kunder.
 >
 
+## Videodemonstration - Customer Journey Analytics {#videocja}
+
+I den här videon demonstreras funktionaliteten med Customer Journey Analytics. Funktionen finns dock på liknande sätt i Adobe Analytics. Tänk på skillnaderna i terminologi mellan Adobe Analytics och Customer Journey Analytics (till exempel *besök* kontra *sessioner*).
 
 
 ## Attributionsmodeller {#attribution-models-details}
@@ -87,7 +90,7 @@ En attribueringsmodell avgör vilka dimensionsobjekt som får kredit för ett m�
 
 En attribueringsbehållare definierar det önskade omfånget för attribueringen. Möjliga alternativ är:
 
-* **Besök**: Kontrollerar konverteringar från besöksbehållarens omfattning. När **[!UICONTROL Visit]** har valts ställs fönstret [Attribution Lookback &#x200B;](#atribution-lookback-window) automatiskt in på **[!UICONTROL Reporting window]** och kan inte ändras.
+* **Besök**: Kontrollerar konverteringar från besöksbehållarens omfattning. När **[!UICONTROL Visit]** har valts ställs fönstret [Attribution Lookback ](#atribution-lookback-window) automatiskt in på **[!UICONTROL Reporting window]** och kan inte ändras.
 * **Besökare**: Kontrollerar konverteringar från besökarbehållarens omfång.
 
 ## Fönstret Tilldelningssökning {#attribution-lookback-window}
@@ -150,7 +153,7 @@ Använd följande information för att välja den visualisering som bäst passar
 
 | Taggar | Beskrivning |
 |---|---|
-| ![Taggar](/help/assets/filter-tag.png){width="300"} | I avsnittet **[!UICONTROL Tags]** kan du filtrera efter taggar. <ul><li>Du kan ![söka efter &#x200B;](/help/assets/icons/Search.svg) *söktaggar* om du vill söka efter taggar som du kan använda för att filtrera.</li><li>Du kan markera flera taggar. Vilka märkord som är tillgängliga beror på vilka markeringar du har gjort i andra avsnitt på filterpanelen.</li><li>Siffrorna anger:<ul><li>**(1)**: Antalet markerade taggar (om en eller flera taggar har valts).</li><li>**2︎⃣**: Antalet tillgängliga taggar för objekten som är resultatet av det aktuella filtret.</li><li>7︎⃣: Antalet objekt som är associerade med den specifika taggen.</li></ul></li></ul> |
+| ![Taggar](/help/assets/filter-tag.png){width="300"} | I avsnittet **[!UICONTROL Tags]** kan du filtrera efter taggar. <ul><li>Du kan ![söka efter ](/help/assets/icons/Search.svg) *söktaggar* om du vill söka efter taggar som du kan använda för att filtrera.</li><li>Du kan markera flera taggar. Vilka märkord som är tillgängliga beror på vilka markeringar du har gjort i andra avsnitt på filterpanelen.</li><li>Siffrorna anger:<ul><li>**(1)**: Antalet markerade taggar (om en eller flera taggar har valts).</li><li>**2︎⃣**: Antalet tillgängliga taggar för objekten som är resultatet av det aktuella filtret.</li><li>7︎⃣: Antalet objekt som är associerade med den specifika taggen.</li></ul></li></ul> |
 
 
 ## Filteravsnitt för rapportsviten {#reportsuitefiltersection}
