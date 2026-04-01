@@ -133,7 +133,7 @@ Konfigurera regeln på följande sätt i [!UICONTROL Rule Builder]:
 
 | Välj regeltyp | Ange matchningsvillkor | Ange klassificering | Till |
 |---|---|---|---|
-| Reguljärt uttryck | &Hatt;()+)\:(.+)\:(.+)$ | Kampanjdatum | $3 |
+| Reguljärt uttryck | &amp;Hatt;()+)\:(.+)\:(.+)$ | Kampanjdatum | $3 |
 
 **Syntax**
 
@@ -391,7 +391,7 @@ Så här validerar och aktiverar du klassificeringsregler:
 
    ![](assets/overwrite_keys.png)
 
-1. (Valfritt) Om du vill skriva över klassificeringar aktiverar du **[!UICONTROL Overwrite classifications for]** &lt;*selection*>.
+1. (Valfritt) Om du vill skriva över klassificeringar aktiverar du **[!UICONTROL Overwrite classifications for]** &lt;*markering*>.
 
    Med det här alternativet kan du skriva över befintliga klassificeringar för berörda nycklar.
 
