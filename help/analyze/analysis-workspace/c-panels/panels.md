@@ -4,9 +4,9 @@ title: Översikt över paneler i Analysis Workspace
 feature: Panels
 role: User, Admin
 exl-id: dd1a3c40-8b5b-47dd-86d9-da766575ee46
-source-git-commit: c86e1ef4a93591e7623fe5a9f2f9d92529773516
+source-git-commit: f290b859f6e41de15bc115c8f4e90b616c9a1d8c
 workflow-type: tm+mt
-source-wordcount: '2566'
+source-wordcount: '2591'
 ht-degree: 0%
 
 ---
@@ -91,7 +91,7 @@ Du kan hantera en panel på följande sätt:
 
 ## Rapportsvit
 
-Varje panel är associerad med en [rapportserie](/help/admin/tools/manage-rs/report-suites-admin.md) som identifieras av ![Data](/help/assets/icons/Data.svg) **[!UICONTROL *namnet på rapportsviten *]**&#x200B;i listrutan längst upp till höger på panelen.
+Varje panel är associerad med en [rapportserie](/help/admin/tools/manage-rs/report-suites-admin.md) som identifieras av ![Data](/help/assets/icons/Data.svg) **[!UICONTROL *namnet på rapportsviten *]**i listrutan längst upp till höger på panelen.
 
 När du skapar en ny panel baseras standardrapportsviten på rapportsviten från den panel du senast arbetade på i Analysis Workspace-projektet.
 
@@ -226,16 +226,16 @@ Du kan till exempel lägga till två dynamiska listrutor med en landsdimension o
 
 En listruta skapas för alla mått-, segment- eller datumintervallkomponenter som du släpper **när du håller ned** ⇧. Med den nedrullningsbara menyn kan du filtrera panelen baserat på de alternativ som är tillgängliga för den släppta komponenten.
 
-För alla *dimension*-komponenter som du släpper **när du håller ned** ⇧ skapas en segmentlistruta. Med den nedrullningsbara menyn kan du filtrera panelen baserat på de alternativ som är tillgängliga för de släppta dimensionsobjekten ([statisk](#static) segmentmeny) eller dimensionskomponenten ([dynamisk](#dynamic) segmentmeny). Så här konfigurerar du listrutan explicit för att filtrera med segment:
+För alla *dimension*-komponenter som du släpper **när du håller ned** ⇧ skapas en segmentlistruta. Med den nedrullningsbara menyn kan du filtrera panelen baserat på de alternativ som är tillgängliga för de släppta dimensionsobjekten ([statisk](#static) segmentmeny) eller dimensionskomponenten ([dynamisk](#dynamic) segmentmeny). Så här konfigurerar du listrutan explicit för att filtrera en panel med hjälp av segment:
 
-* Välj ![Uppdelning](/help/assets/icons/Breakdown.svg) och välj ![Filter](/help/assets/icons/Filter.svg) på snabbmenyn för komponenten ❾.
+* Välj ![Uppdelning](/help/assets/icons/Breakdown.svg) och välj ![Filter](/help/assets/icons/Filter.svg) **[!UICONTROL Segment]** | **[!UICONTROL Filters the data in the panel]** på snabbmenyn för komponenten ❾.
 
 
 #### Dela upp en panel
 
-För alla *dimension*-komponenter som du släpper **när du håller ned** ⇧ skapas en segmentlistruta. Du kan konfigurera listrutan så att den bryts ned i stället. Så här konfigurerar du den nedrullningsbara menyn explicit för att dela upp med hjälp av uppdelningar:
+För alla *dimension*-komponenter som du släpper **när du håller ned** ⇧ skapas en segmentlistruta. Du kan konfigurera den nedrullningsbara menyn så att panelen delas upp baserat på de alternativ som är tillgängliga för de släppta dimensionsobjekten ([statisk](#static) listruta för nedbrytning) eller dimensionskomponenten ([dynamisk](#dynamic) listruta för nedbrytning). Så här konfigurerar du listrutan explicit för att dela upp en panel med hjälp av uppdelningar:
 
-* Välj ![Filter](/help/assets/icons/Filter.svg) och välj ![Uppdelning](/help/assets/icons/Breakdown.svg) på snabbmenyn för komponenten ❾.
+* Välj ![Filter](/help/assets/icons/Filter.svg) och välj ![Uppdelning](/help/assets/icons/Breakdown.svg) **[!UICONTROL Breakdown]** | **[!UICONTROL Breaks down the data in the panel]** på snabbmenyn för komponenten ❾.
 
 >[!IMPORTANT]
 >
@@ -283,13 +283,13 @@ Du kan hantera komponenterna i släppzonen på följande sätt:
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Använda filter i Analysis Workspace](https://experienceleague.adobe.com/sv/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Använda filter i Analysis Workspace](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dynamiska listrutor](https://experienceleague.adobe.com/sv/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/tips-and-tricks/dynamic-drop-downs){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dynamiska listrutor](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/tips-and-tricks/dynamic-drop-downs){target="_blank"} för en demonstrationsvideo.
 
 {{videocja}}
 
