@@ -20,7 +20,7 @@ Adobe Analytics använder flera autentiseringsmetoder för att logga in:
 
 **Om du regelbundet kommer åt Analytics och slumpmässigt påträffar inloggningsproblem kan du lösa de flesta problem genom att rensa webbläsarens cookies och cache.**
 
-Ibland kan tillgänglighetsproblem påverka inloggningsförmågan. Kontrollera [status.adobe.com](https://status.adobe.com) om det finns några öppna incidenter. I annat fall använder du rätt avsnitt beroende på organisationens autentiseringsmetod.
+Ibland kan tillgänglighetsproblem påverka inloggningsförmågan. Kontrollera [status.adobe.com](https://status.adobe.com/sv-se) om det finns några öppna incidenter. I annat fall använder du rätt avsnitt beroende på organisationens autentiseringsmetod.
 
 ## Adobe ID
 

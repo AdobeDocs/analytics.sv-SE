@@ -25,7 +25,7 @@ Trafikdroppar indelas i två avsnitt: partiella data och nolldata.
 * **RapporteringsSuite-svarstid**: Ibland kan en rapportserie få [fördröjning](../latency.md) på grund av ett antal faktorer. Många latensproblem löses inom några timmar. Om du är intresserad av en viss rapportsserie kan du kontakta Adobe kundtjänst och ange den berörda rapportsvitens-ID:t.
 * **Implementeringsborttagning**: Ibland när en organisation gör implementeringsändringar eller omstrukturerar sin webbplats förbises implementeringen av Analytics. Samarbeta med utvecklare i organisationen för att implementera koden på din webbplats igen.
 * **Problem med gränssnitt/cachelagring för analyser**: I sällsynta fall innehåller webbläsarens cache ogiltiga data som gör att alla rapporter returnerar nollor. Lös problemet genom att rensa webbläsarens cookies och cache. Om det inte fungerar att rensa dina cookies/cacheminnen kan du kontakta Kundtjänst med den rapport och det datumintervall som saknas. De kan duplicera problemet och tillhandahålla ytterligare information.
-* **Analystillgänglighet**: Kontrollera [status.adobe.com](https://status.adobe.com/products/1173/) för eventuella problem med datainsamling eller databearbetning.
+* **Analystillgänglighet**: Kontrollera [status.adobe.com](https://status.adobe.com/se/products/1173/) för eventuella problem med datainsamling eller databearbetning.
 
 ### Potentiella orsaker till att data saknas delvis eller till minskad trafik
 

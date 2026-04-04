@@ -18,7 +18,7 @@ Fastställ möjliga orsaker till varför ett jobb kanske inte kan bearbetas elle
 
 Om du har en datafeed som fungerar timvis eller dagligen men som nyligen har misslyckats ska du kontrollera följande:
 
-* Använd [Adobe-statusverktyget](https://status.adobe.com/en/experience_cloud) för att avgöra om det finns schemalagda underhålls- eller tillgänglighetsproblem. Om det finns ett känt fel bearbetar Adobe automatiskt schemalagda dataflöden när tjänsten har återställts.
+* Använd [Adobe-statusverktyget](https://status.adobe.com/sv-se/experience_cloud) för att avgöra om det finns schemalagda underhålls- eller tillgänglighetsproblem. Om det finns ett känt fel bearbetar Adobe automatiskt schemalagda dataflöden när tjänsten har återställts.
 * Kontrollera att det finns tillräckligt med ledigt utrymme på FTP-platsen. Om diskutrymmet tar slut för FTP-platsen tar du bort några filer från servern för att frigöra utrymme för nya filer.
 * Om det inte finns några kända problem och FTP-platsen har tillräckligt med diskutrymme kan du skicka om datafeeden.
 
