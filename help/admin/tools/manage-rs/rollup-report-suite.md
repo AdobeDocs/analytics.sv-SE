@@ -4,7 +4,7 @@ title: Globala rapportsviter
 feature: Report Suite Settings
 exl-id: 97bdc9bd-2212-436b-b3b4-ec518624f9e6
 role: Admin
-source-git-commit: 50e6a09e62db60a765da05fa65089a006f103a2b
+source-git-commit: d876f191b2b10dd29b50fae53235e194e29ed1d1
 workflow-type: tm+mt
 source-wordcount: '399'
 ht-degree: 0%
@@ -74,4 +74,5 @@ Limitations of Rollup Reports {#limitations-rollups}
 
 **Supported products**: Rollups could only be used in Reports & Analytics. They are not supported in Analysis Workspace, or Data Warehouse. Global report suites can be used across all products.
 
-**Number of aggregated report suites**: Rollups only support a maximum of 40 child report suites. Global report suites can be implemented on any number of domains or apps that you own.-->
+**Number of aggregated report suites**: Rollups only support a maximum of 40 child report suites. Global report suites can be implemented on any number of domains or apps that you own.
+-->

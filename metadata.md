@@ -2,14 +2,16 @@
 cloud: Experience Cloud
 product: analytics
 solution: Analytics
+landing-page-name: analytics
+landing-page-breadcrumb-title: Analytics
 git-repo: https://github.com/AdobeDocs/analytics.sv-SE
 type: Documentation
 index: true
 feature-set: Analytics
 role: User, Admin
-source-git-commit: 811e321ce96aaefaeff691ed5969981a048d2c31
+source-git-commit: d876f191b2b10dd29b50fae53235e194e29ed1d1
 workflow-type: tm+mt
-source-wordcount: '111'
+source-wordcount: '109'
 ht-degree: 0%
 
 ---
@@ -27,4 +29,4 @@ Filen metadata.md innehåller metadata på postnivå som skickas till TOC.md-fil
 | getting-started-url | Länk till hjälpsidan Komma igång |
 | tutorials-url | Länka till videosjälvstudiekurser - antingen hjälpstudiekurser eller självstudiekurser på engelska |
 | mini-toc-nivåer | Anger antalet rubriknivåer som visas i den högra listen. standard är 2 |
-| git-repo | Anger platsen för den överordnad rapporten för intern användning |
+| git-repo | Anger platsen för huvudrapporten för intern användning |
