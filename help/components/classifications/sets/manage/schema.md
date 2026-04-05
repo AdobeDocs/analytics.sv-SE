@@ -156,14 +156,14 @@ I dialogrutan **[!UICONTROL Download template for _klassificeringsuppsättningsn
 >id="classificationsets_schema_automate_locationaccount"
 >title="Platskonto"
 >abstract="Lista över platskonton för kontotyper som stöder import av klassificeringsdata. Välj **[!UICONTROL New account]** om du vill skapa ett nytt platskonto."
->additional-url="https://experienceleague.adobe.com/docs/analytics/components/locations/configure-import-accounts.html?lang=en" text="Konfigurera molnimport- och exportkonton"
+>additional-url="https://experienceleague.adobe.com/docs/analytics/components/locations/configure-import-accounts.html?lang=sv-SE" text="Konfigurera molnimport- och exportkonton"
 
 
 >[!CONTEXTUALHELP]
 >id="classificationsets_schema_automate_location"
 >title="Plats"
 >abstract="Lista över platser på det valda platskontot som stöder import av klassificeringsdata. Välj **[!UICONTROL New location]** om du vill skapa en ny plats."
->additional-url="https://experienceleague.adobe.com/docs/analytics/components/locations/configure-import-locations.html?lang=en" text="Konfigurera platser för molnimport och -export"
+>additional-url="https://experienceleague.adobe.com/docs/analytics/components/locations/configure-import-locations.html?lang=sv-SE" text="Konfigurera platser för molnimport och -export"
 
 Du kan automatisera inmatningen av klassificeringsdata genom konfiguration och användning av molnkonton och molnplatser.
 
@@ -185,7 +185,7 @@ Om du vill automatisera intaget av klassificering väljer du ![Kugghjul](/help/a
 
 I dialogrutan **[!UICONTROL Associate / Update Ingest Location for _klassificeringsuppsättningsnamn_]**:
 
-1. Välj en molnplats genom att välja ett alternativ från **[!UICONTROL Location Account]**. Endast [platskonton för kontotyper som stöds som tillåter import av klassificeringsdata](https://experienceleague.adobe.com/en/docs/analytics/components/locations/configure-import-accounts) visas. Välj **[!UICONTROL New account]** om du vill skapa ett nytt konto.
+1. Välj en molnplats genom att välja ett alternativ från **[!UICONTROL Location Account]**. Endast [platskonton för kontotyper som stöds som tillåter import av klassificeringsdata](https://experienceleague.adobe.com/sv/docs/analytics/components/locations/configure-import-accounts) visas. Välj **[!UICONTROL New account]** om du vill skapa ett nytt konto.
 1. Välj en plats genom att välja ett alternativ från **[!UICONTROL Location]**. Endast platserna för valda kontotyper för import av klassificeringsdata visas. Välj **[!UICONTROL New location]** om du vill skapa en ny plats.
 
    >[!IMPORTANT]
